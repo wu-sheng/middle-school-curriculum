@@ -40,7 +40,7 @@ Xinbloom is a bilingual self-study platform for middle school students (girls), 
 - **指数、次数、角标**：所有方程和系数中的上标、下标必须使用 KaTeX 角标写法
   - 次方使用 `x^{2}` 确保指数在右上角
   - 下标使用 `a_{n}` 确保下标在右下角
-  - 系数和次数标注使用 `\underbrace{...}_{\text{...}}` 和 `\overbrace{...}^{\text{...}}`
+  - 系数和次数标注使用 `\underset{\small\text{...}}{...}` 和 `\overset{\small\text{...}}{...}`（不用 `\underbrace`/`\overbrace`，其花括号装饰线在小尺寸下显示不佳）
   - 绝对禁止用纯文本写"2次"、"x2"等，必须用 `$x^2$`
 - **分数**：使用 `\frac{a}{b}` 而非纯文本 `a/b`
 - **根号**：使用 `\sqrt{x}` 或 `\sqrt[n]{x}`，根号线段必须完整覆盖被开方数
@@ -56,19 +56,19 @@ Xinbloom is a bilingual self-study platform for middle school students (girls), 
 - **中文引号**：含中文引号 `"..."` 的字符串不能用 YAML 双引号包裹（会提前截断），必须用单引号 `'...'`
 - 每次生成或修改 YAML 后，必须运行 `node -e "yaml.load(...)"` 验证解析无误
 
-## 几何图形配图规范 / Geometry Diagram Requirements（重要）
-- **所有几何相关的概念、例题、练习题都必须配图**
+## 可视化配图规范 / Visualization Requirements（重要）
+- **尽量使用图例辅助说明**，包括但不限于：数轴、平面图形、立体图形、坐标系、几何配图、统计图表等
+- 所有涉及空间关系、位置关系、数量关系的概念，都应考虑是否需要配图
+- **需要配图的场景**：
+  - **几何章节**：所有概念、例题、练习题都必须配图（线段、角、平行线、相交线、三视图等）
+  - **坐标系章节**：坐标系示意图、象限图、点的定位图、平移示意图
+  - **数轴相关**：有理数、实数在数轴上的表示、不等式解集的数轴表示
+  - **代数章节**：方程组的图形解释（两直线交点）、不等式解集区间
+  - **统计章节**：直方图、扇形图、条形图的示例
 - 使用 SVG React 组件绘制（参考 `GeometryDiagrams.tsx` 和 `NumberLine.tsx`）
 - 在 YAML 中通过 `hasVisualization: true` 标记需要配图的概念
 - 在 `GeometryDiagrams.tsx` 的 `diagramMap` 中注册 concept ID 对应的 SVG 组件
 - LessonView 中通过 `hasGeometryDiagram(concept.id)` 自动渲染
-- 已实现的图示类型：
-  - 直线/射线/线段对比图
-  - 线段中点示意图
-  - 角的概念图（顶点、射线、弧）
-  - 角平分线示意图
-  - 余角与补角对比图
-  - 三视图（圆柱）
 - 配色约定：紫色 `#8B5CF6` 为主线条，粉色 `#EC4899` 为标注点，灰色 `#6B7280` 为文字
 
 ## 章末提升题规范 / Challenge Section Guidelines

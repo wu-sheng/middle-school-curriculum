@@ -58,6 +58,7 @@ prerequisites:
 
 concepts:
   - id: ordered-pair
+    hasVisualization: true
     title: <<有序数对/ordered pair>>
     titleEn: <<有序数对/ordered pair>>
     content: |
@@ -84,6 +85,7 @@ concepts:
       - <<有序数对/ordered pair>>s can represent positions on a plane, squares on a board, etc.
 
   - id: cartesian-coordinate-system
+    hasVisualization: true
     title: <<平面直角坐标系/Cartesian coordinate system>>
     titleEn: <<平面直角坐标系/Cartesian coordinate system>>
     content: |
@@ -156,6 +158,7 @@ concepts:
       - 'Different choices of <<坐标系/coordinate system>> will give different <<坐标/coordinates>> for the same location, but the positional relationships remain unchanged'
 
   - id: translation-and-coordinates
+    hasVisualization: true
     title: 用<<坐标/coordinates>>表示<<平移/translation>>
     titleEn: Representing <<平移/translation>> with <<坐标/coordinates>>
     content: |
