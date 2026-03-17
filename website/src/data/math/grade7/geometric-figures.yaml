@@ -754,14 +754,14 @@ summaryEn:
   - "Can express reasoning processes using proper geometric language"
 
 examPrep:
-  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
-  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
   questions:
     - number: 1
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         下列图形中，是<<立体图形/solid figure>>的是（　）
       questionEn: |
@@ -782,10 +782,10 @@ examPrep:
         <<三角形/triangle>>, <<圆/circle>>, and <<长方形/rectangle>> are all <<平面图形/plane figure>>s. Only the <<圆柱/cylinder>> occupies space and is a <<立体图形/solid figure>>.
 
     - number: 2
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         已知<<线段/line segment>> $\overline{AB} = 10$ cm，点 $C$ 是<<线段/line segment>> $\overline{AB}$ 上一点，且 $AC = 4$ cm，点 $M$ 是<<线段/line segment>> $\overline{CB}$ 的<<中点/midpoint>>，则<<线段/line segment>> $\overline{AM}$ 的长度是______ cm。
       questionEn: |
@@ -805,10 +805,10 @@ examPrep:
         This is a common exam question combining the <<中点/midpoint>> and segment addition.
 
     - number: 3
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         如果 $\angle \alpha = 56°$，那么 $\angle \alpha$ 的<<余角/complementary angle>>的<<补角/supplementary angle>>等于（　）
       questionEn: |
@@ -829,10 +829,10 @@ examPrep:
         This is a common nested "<<补角/supplementary angle>> of <<余角/complementary angle>>" problem — the key is to calculate step by step.
 
     - number: 4
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         如图，$\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，$\overrightarrow{OD}$ 是 $\angle BOC$ 的<<平分线/angle bisector>>，若 $\angle AOD = 54°$，则 $\angle AOB = $ ______°。
       questionEn: |
@@ -856,10 +856,10 @@ examPrep:
         This exam question tests double application of <<平分线/angle bisector>>s and algebraic reasoning.
 
     - number: 5
-      type: 中考解答题
+      type: 提升解答题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         已知 $\angle AOB$ 和 $\angle BOC$ 互为<<补角/supplementary angle>>，$\angle AOB$ 比 $\angle BOC$ 大 $40°$。
         (1) 求 $\angle AOB$ 和 $\angle BOC$ 的度数。

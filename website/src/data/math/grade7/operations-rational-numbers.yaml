@@ -797,14 +797,14 @@ summaryEn:
   - "Perform <<混合运算/mixed operations>> fluently: <<乘方/exponentiation>> first, then multiply/divide, finally add/subtract; parentheses first"
 
 examPrep:
-  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
-  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
   questions:
     - number: 1
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         计算 $(-1)^{2024} + (-2)^{2}$ 的结果是（　）
       questionEn: |
@@ -823,10 +823,10 @@ examPrep:
         $1 + 4 = 5$.
 
     - number: 2
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         计算 $(-36) \div 4 - (-2)^{3} = $ ______。
       questionEn: |
@@ -842,10 +842,10 @@ examPrep:
         $-9 - (-8) = -9 + 8 = -1$.
 
     - number: 3
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         用<<科学记数法/scientific notation>>表示 $135000000$，正确的是（　）
       questionEn: |
@@ -874,8 +874,8 @@ examPrep:
     - number: 4
       type: 中考计算题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         计算 $(-1)^{3} - \frac{1}{6} \times [4 - (-2)^{3}]$。
       questionEn: |
@@ -902,8 +902,8 @@ examPrep:
     - number: 5
       type: 中考应用题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         一潜水员从海平面开始下潜，每分钟下潜 $3$ 米，下潜 $4$ 分钟后又上浮 $5$ 米。
 

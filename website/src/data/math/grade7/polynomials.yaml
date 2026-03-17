@@ -99,19 +99,24 @@ concepts:
     classification:
       - name: "$3x^2$"
         nameEn: "$3x^2$"
-        examples: "<<系数/coefficient>>为 $3$，<<次数/degree>>为 $2$"
+        examples: '$\underbrace{3}_{\text{系数}} x^{\overbrace{2}^{\text{次数}}}$'
+        examplesEn: '$\underbrace{3}_{\text{coeff.}} x^{\overbrace{2}^{\text{deg.}}}$'
       - name: "$-2a^2b$"
         nameEn: "$-2a^2b$"
-        examples: "<<系数/coefficient>>为 $-2$，<<次数/degree>>为 $2+1=3$"
+        examples: '$\underbrace{-2}_{\text{系数}} a^2 b \quad$ <<次数/degree>>：$2+1=3$'
+        examplesEn: '$\underbrace{-2}_{\text{coeff.}} a^2 b \quad$ <<次数/degree>>: $2+1=3$'
       - name: "$y$"
         nameEn: "$y$"
-        examples: "<<系数/coefficient>>为 $1$，<<次数/degree>>为 $1$"
+        examples: '$\underbrace{1}_{\text{系数}} y^{\overbrace{1}^{\text{次数}}}$（$1$ 省略不写）'
+        examplesEn: '$\underbrace{1}_{\text{coeff.}} y^{\overbrace{1}^{\text{deg.}}}$ ($1$ is omitted)'
       - name: "$-x^3$"
         nameEn: "$-x^3$"
-        examples: "<<系数/coefficient>>为 $-1$，<<次数/degree>>为 $3$"
+        examples: '$\underbrace{-1}_{\text{系数}} x^{\overbrace{3}^{\text{次数}}}$（$-1$ 省略 $1$）'
+        examplesEn: '$\underbrace{-1}_{\text{coeff.}} x^{\overbrace{3}^{\text{deg.}}}$ ($1$ in $-1$ is omitted)'
       - name: "$5$"
         nameEn: "$5$"
-        examples: "<<系数/coefficient>>为 $5$，<<次数/degree>>为 $0$"
+        examples: '$\underbrace{5}_{\text{系数}}$，<<次数/degree>>为 $0$（无字母项）'
+        examplesEn: '$\underbrace{5}_{\text{coeff.}}$, <<次数/degree>> is $0$ (no letters)'
     summary: |
       特别注意：当<<系数/coefficient>>是 $1$ 或 $-1$ 时，"$1$"通常省略不写，如 $x$ 的<<系数/coefficient>>是 $1$，$-ab$ 的<<系数/coefficient>>是 $-1$。
     summaryEn: |
@@ -729,14 +734,14 @@ summaryEn:
   - "Can use <<整式/integral expression>>s to represent quantitative relationships in practical problems"
 
 examPrep:
-  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
-  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
   questions:
     - number: 1
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         下列各式中，是<<单项式/monomial>>的是（　）
       questionEn: |
@@ -759,10 +764,10 @@ examPrep:
         - $x^2 + y^2$ is a <<多项式/polynomial>>, not a <<单项式/monomial>>
 
     - number: 2
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         化简 $2(a^2 - 2a) - (2a^2 - 3a + 1) = $ ______。
       questionEn: |
@@ -782,10 +787,10 @@ examPrep:
         Note: first expand $2(a^2 - 2a) = 2a^2 - 4a$, then remove parentheses and <<合并同类项/combining like terms>>.
 
     - number: 3
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         下列运算正确的是（　）
       questionEn: |
@@ -814,10 +819,10 @@ examPrep:
         This question tests common mistakes in <<合并同类项/combining like terms>>.
 
     - number: 4
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         若 $3x^{m}y^2$ 与 $-5x^3y^{n}$ 是<<同类项/like terms>>，则 $m = $ ______，$n = $ ______。
       questionEn: |
@@ -837,10 +842,10 @@ examPrep:
         This is a common exam question that tests the conditions for <<同类项/like terms>> in reverse.
 
     - number: 5
-      type: 中考解答题
+      type: 提升解答题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         先化简，再求值：$(3x^2 - 2xy + y^2) - 2(x^2 - xy - y^2)$，其中 $x = 1$，$y = -2$。
       questionEn: |

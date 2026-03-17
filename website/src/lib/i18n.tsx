@@ -142,8 +142,8 @@ export const uiText = {
     example: "举例：",
     note: "注意：",
     guidedBy: "带你学",
-    examPrep: "中考强化",
-    examIntro: "以下题目选自各地中考真题或改编题，难度略高于课内练习，帮助你提前适应中考题型。",
+    examPrep: "章末提升",
+    examIntro: "以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。",
   },
   en: {
     learn: "Learn",
@@ -191,7 +191,7 @@ export const uiText = {
     example: "Examples:",
     note: "Note:",
     guidedBy: "guides you",
-    examPrep: "Exam Prep",
-    examIntro: "These questions are adapted from past high school entrance exams. They are slightly harder than regular exercises to help you get ready.",
+    examPrep: "Challenge",
+    examIntro: "These questions are slightly harder than regular exercises to help you consolidate and apply what you've learned in this chapter.",
   },
 };

@@ -7,6 +7,7 @@ import MathText, { MathBlock } from "./MathText";
 import { BiBlock } from "./BiText";
 import Collapsible from "./Collapsible";
 import NumberLine from "./NumberLine";
+import GeometryDiagram, { hasGeometryDiagram } from "./GeometryDiagrams";
 
 /** Render content with bilingual support: in "both" mode shows zh + en stacked */
 function ContentBlock({ obj, field, className = "", lang }: {
@@ -333,6 +334,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
             )}
 
             {concept.hasVisualization && concept.id === "number-line" && <NumberLine />}
+            {concept.hasVisualization && hasGeometryDiagram(concept.id) && <GeometryDiagram conceptId={concept.id} />}
 
             {concept.examples && (
               <div className="bg-pink-50/50 rounded-xl p-4 mb-3">

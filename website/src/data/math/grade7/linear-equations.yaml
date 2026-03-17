@@ -800,14 +800,14 @@ summaryEn:
   - "Solving real-life problems with <<方程/equation>>s: read, set <<未知数/unknown>>, set up <<方程/equation>>, solve <<方程/equation>>, <<检验/verify>> and answer"
 
 examPrep:
-  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
-  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
   questions:
     - number: 1
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         <<方程/equation>> $2x + 3 = 5$ 的<<解/solution>>是（　）
       questionEn: |
@@ -828,10 +828,10 @@ examPrep:
         <<系数化为1/reducing coefficient to 1>>: $x = 1$
 
     - number: 2
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         若 $3a + 1 = 2a + 5$，则 $a = $ ______。
       questionEn: |
@@ -847,10 +847,10 @@ examPrep:
         <<合并同类项/combining like terms>>: $a = 4$
 
     - number: 3
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         解<<方程/equation>> $\frac{x - 1}{2} = \frac{x + 1}{3}$，$x$ 的值是（　）
       questionEn: |
@@ -877,10 +877,10 @@ examPrep:
         <<检验/verify>>: left $= \frac{5-1}{2} = 2$, right $= \frac{5+1}{3} = 2$, left $=$ right.
 
     - number: 4
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         若关于 $x$ 的<<方程/equation>> $2x + a = 3$ 的<<解/solution>>是 $x = 1$，则 $a = $ ______。
       questionEn: |
@@ -896,10 +896,10 @@ examPrep:
         This exam question tests "finding a parameter given the <<解/solution>>" — reverse thinking!
 
     - number: 5
-      type: 中考解答题
+      type: 提升解答题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         某商店将一件进价为 $80$ 元的商品按进价提高 $40\%$ 标价，然后打八折（即按标价的 $80\%$）出售。求这件商品的实际售价，以及商店每件商品的利润。
       questionEn: |

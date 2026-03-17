@@ -688,14 +688,14 @@ summaryEn:
   - "Mastered writing conventions for <<代数式/algebraic expression>>s (omitting multiplication signs, numbers before letters, division as <<分数/fraction>>s, etc.)"
 
 examPrep:
-  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
-  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
   questions:
     - number: 1
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         下列式子中，是<<代数式/algebraic expression>>的是（　）
       questionEn: |
@@ -712,10 +712,10 @@ examPrep:
         $x + 1 = 2$ contains an equals sign (<<方程/equation>>), $y > 0$ contains an inequality sign, and $2 + 3 = 5$ contains an equals sign (equation). None of these are <<代数式/algebraic expression>>s. Only $3a - b$ is an <<代数式/algebraic expression>> composed of numbers, letters, and operation symbols.
 
     - number: 2
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         当 $x = -1$ 时，<<代数式/algebraic expression>> $2x^2 - x + 3$ 的值是______。
       questionEn: |
@@ -733,10 +733,10 @@ examPrep:
         Note: $(-1)^2 = 1$ and $-(-1) = +1$.
 
     - number: 3
-      type: 中考选择题
+      type: 提升选择题
       inputType: choice
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         某商店以每件 $a$ 元的进价购入一批商品，加价 $20\%$ 后标价出售。则每件商品的标价是（　）
       questionEn: |
@@ -755,10 +755,10 @@ examPrep:
         This exam question tests using <<代数式/algebraic expression>>s to express quantitative relationships in real-world problems.
 
     - number: 4
-      type: 中考填空题
+      type: 提升填空题
       inputType: blank
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         一个三位数，百位上的数字是 $a$，十位上的数字是 $b$，个位上的数字是 $c$，则这个三位数可表示为______。
       questionEn: |
@@ -774,10 +774,10 @@ examPrep:
         So the three-digit number is $100a + 10b + c$. This is a common number problem in exams.
 
     - number: 5
-      type: 中考解答题
+      type: 提升解答题
       inputType: open
-      section: 中考强化
-      sectionEn: Exam Prep
+      section: 章末提升
+      sectionEn: Challenge
       question: |
         已知 $a = 2$，$b = -3$，求<<代数式/algebraic expression>> $\frac{a^2 - b}{a + b}$ 的值。
       questionEn: |
