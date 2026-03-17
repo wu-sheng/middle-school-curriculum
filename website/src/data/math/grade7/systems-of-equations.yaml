@@ -1,0 +1,924 @@
+title: 二元一次方程组
+titleEn: Systems of Linear Equations in Two Variables
+chapter: 10
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 60-80分钟学习 + 40分钟练习
+targetAudience: 七年级下学期学生，已掌握一元一次方程的解法
+
+objectives:
+  - 理解<<二元一次方程/linear equation in two variables>>的概念，能判断一个<<方程/equation>>是否为<<二元一次方程/linear equation in two variables>>
+  - 理解<<二元一次方程组/system of linear equations in two variables>>的概念及其<<解/solution>>的含义
+  - 掌握<<代入消元法/substitution method>>，能用<<代入消元法/substitution method>>解<<二元一次方程组/system of linear equations in two variables>>
+  - 掌握<<加减消元法/elimination by addition or subtraction>>，能用<<加减消元法/elimination by addition or subtraction>>解<<二元一次方程组/system of linear equations in two variables>>
+  - 理解<<消元/elimination>>的基本思想——把"二元"转化为"一元"
+  - 能根据<<方程组/system of equations>>的特点选择合适的解法
+  - 能用<<二元一次方程组/system of linear equations in two variables>>解决简单的实际问题
+  - 能<<检验/verify>><<方程组/system of equations>>的<<解/solution>>是否正确
+objectivesEn:
+  - Understand the concept of <<二元一次方程/linear equation in two variables>> and determine whether an <<方程/equation>> is a <<二元一次方程/linear equation in two variables>>
+  - Understand the concept of a <<二元一次方程组/system of linear equations in two variables>> and the meaning of its <<解/solution>>
+  - Master the <<代入消元法/substitution method>> and use it to solve <<二元一次方程组/system of linear equations in two variables>>
+  - Master the <<加减消元法/elimination by addition or subtraction>> and use it to solve <<二元一次方程组/system of linear equations in two variables>>
+  - Understand the basic idea of <<消元/elimination>> — reducing two variables to one variable
+  - Be able to choose an appropriate method based on the characteristics of the <<方程组/system of equations>>
+  - Be able to solve simple real-life problems using <<二元一次方程组/system of linear equations in two variables>>
+  - Be able to <<检验/verify>> whether the <<解/solution>> of a <<方程组/system of equations>> is correct
+
+prerequisites:
+  title: 从一元一次方程到二元一次方程组——当一个未知数不够用时
+  titleEn: From linear equations in one variable to systems — when one unknown is not enough
+  intro: |
+    在第五章中，我们学会了用<<一元一次方程/linear equation in one variable>>来解决问题。但有些问题涉及两个<<未知数/unknown>>，用一个<<方程/equation>>很难表达完整的数量关系。
+  introEn: |
+    In Chapter 5, we learned to solve problems using <<一元一次方程/linear equation in one variable>>. However, some problems involve two <<未知数/unknown>>s, and a single <<方程/equation>> cannot fully express the quantitative relationships.
+  knownNumbers:
+    - '鸡兔同笼：笼中有鸡和兔共 $35$ 只，脚共 $94$ 只。鸡和兔各有多少只？'
+    - '甲、乙两种商品共买了 $10$ 件，共花了 $170$ 元。甲每件 $15$ 元，乙每件 $20$ 元。各买了多少件？'
+  knownNumbersEn:
+    - 'Chickens and rabbits in a cage: there are $35$ animals with $94$ legs in total. How many chickens and rabbits are there?'
+    - '$10$ items of two types cost $170$ yuan in total. Type A costs $15$ yuan each, type B costs $20$ yuan each. How many of each type were bought?'
+  canSolve:
+    - '用一元一次方程：设鸡 $x$ 只，则兔 $(35-x)$ 只，列方程 $2x + 4(35-x) = 94$'
+  canSolveEn:
+    - 'Using a linear equation in one variable: let chickens be $x$, then rabbits are $(35-x)$, set up $2x + 4(35-x) = 94$'
+  cannotSolve:
+    - 但如果直接设两个未知数会更自然——设鸡 $x$ 只、兔 $y$ 只，同时列出两个方程，这就需要学习<<二元一次方程组/system of linear equations in two variables>>
+  cannotSolveEn:
+    - 'But setting two unknowns is more natural — let chickens be $x$ and rabbits be $y$, then write two equations simultaneously. This requires learning <<二元一次方程组/system of linear equations in two variables>>'
+  conclusion: |
+    当问题涉及两个<<未知数/unknown>>时，我们可以设两个未知数，列出两个<<方程/equation>>组成**<<方程组/system of equations>>**，然后通过**<<消元/elimination>>**的方法把二元问题转化为一元问题来求解。
+  conclusionEn: |
+    When a problem involves two <<未知数/unknown>>s, we can set two unknowns, write two <<方程/equation>>s to form a **<<方程组/system of equations>>**, and then use **<<消元/elimination>>** to reduce the two-variable problem to a one-variable problem.
+
+concepts:
+  - id: linear-equation-two-variables
+    title: <<二元一次方程/linear equation in two variables>>的概念
+    titleEn: The concept of <<二元一次方程/linear equation in two variables>>
+    content: |
+      含有**两个<<未知数/unknown>>**（二元），并且每个<<未知数/unknown>>的**次数都是 $1$**（一次），这样的<<方程/equation>>叫做**<<二元一次方程/linear equation in two variables>>**。
+
+      一般形式：$ax + by = c$（其中 $a \neq 0$，$b \neq 0$）
+
+      判断标准：
+      - 含有两个<<未知数/unknown>>
+      - 每个<<未知数/unknown>>的指数都是 $1$
+      - <<未知数/unknown>>之间不能相乘（不能出现 $xy$ 项）
+    contentEn: |
+      An <<方程/equation>> that contains **two <<未知数/unknown>>s** (two variables) and the **degree of each <<未知数/unknown>> is $1$** (first degree) is called a **<<二元一次方程/linear equation in two variables>>**.
+
+      General form: $ax + by = c$ (where $a \neq 0$, $b \neq 0$)
+
+      Criteria for identification:
+      - Contains two <<未知数/unknown>>s
+      - The exponent of each <<未知数/unknown>> is $1$
+      - The <<未知数/unknown>>s cannot be multiplied together (no $xy$ term)
+    examples:
+      - "$x + y = 5$ 是<<二元一次方程/linear equation in two variables>>"
+      - "$2x - 3y = 7$ 是<<二元一次方程/linear equation in two variables>>"
+      - "$x^2 + y = 3$ 不是（$x$ 的次数为 $2$）"
+      - "$xy = 6$ 不是（含有 $xy$ 项，次数为 $2$）"
+      - "$x + y + z = 10$ 不是（有三个<<未知数/unknown>>，是三元）"
+    examplesEn:
+      - "$x + y = 5$ is a <<二元一次方程/linear equation in two variables>>"
+      - "$2x - 3y = 7$ is a <<二元一次方程/linear equation in two variables>>"
+      - "$x^2 + y = 3$ is not (the degree of $x$ is $2$)"
+      - "$xy = 6$ is not (it contains an $xy$ term, degree is $2$)"
+      - "$x + y + z = 10$ is not (three <<未知数/unknown>>s, not two)"
+    notes:
+      - '<<二元一次方程/linear equation in two variables>>有无数多个<<解/solution>>，例如 $x + y = 5$ 的<<解/solution>>有 $x=1,y=4$；$x=2,y=3$；$x=0,y=5$ 等等'
+      - 单独一个<<二元一次方程/linear equation in two variables>>无法确定唯一的<<解/solution>>，需要两个<<方程/equation>>组成<<方程组/system of equations>>
+    notesEn:
+      - 'A <<二元一次方程/linear equation in two variables>> has infinitely many <<解/solution>>s. For example, $x + y = 5$ has <<解/solution>>s $x=1,y=4$; $x=2,y=3$; $x=0,y=5$, etc.'
+      - 'A single <<二元一次方程/linear equation in two variables>> cannot determine a unique <<解/solution>>; two <<方程/equation>>s forming a <<方程组/system of equations>> are needed'
+
+  - id: system-concept
+    title: <<二元一次方程组/system of linear equations in two variables>>的概念
+    titleEn: The concept of <<二元一次方程组/system of linear equations in two variables>>
+    content: |
+      把两个含有**相同<<未知数/unknown>>**的<<二元一次方程/linear equation in two variables>>合在一起，就组成了一个**<<二元一次方程组/system of linear equations in two variables>>**。
+
+      例如：
+
+      $$\begin{cases} x + y = 5 \\ 2x - y = 1 \end{cases}$$
+
+      **<<方程组/system of equations>>的<<解/solution>>**：使<<方程组/system of equations>>中每个<<方程/equation>>都成立的一组<<未知数/unknown>>的值，叫做这个<<方程组/system of equations>>的<<解/solution>>。
+
+      上面<<方程组/system of equations>>的<<解/solution>>为：$\begin{cases} x = 2 \\ y = 3 \end{cases}$
+
+      <<检验/verify>>：代入第一个<<方程/equation>>，$2 + 3 = 5$，成立；代入第二个<<方程/equation>>，$2 \times 2 - 3 = 1$，成立。
+    contentEn: |
+      Combining two <<二元一次方程/linear equation in two variables>>s that share the **same <<未知数/unknown>>s** forms a **<<二元一次方程组/system of linear equations in two variables>>**.
+
+      For example:
+
+      $$\begin{cases} x + y = 5 \\ 2x - y = 1 \end{cases}$$
+
+      **<<解/solution>> of a <<方程组/system of equations>>**: A set of values for the <<未知数/unknown>>s that satisfies every <<方程/equation>> in the <<方程组/system of equations>> is called the <<解/solution>> of the <<方程组/system of equations>>.
+
+      The <<解/solution>> of the above <<方程组/system of equations>> is: $\begin{cases} x = 2 \\ y = 3 \end{cases}$
+
+      <<检验/verify>>: substituting into the first <<方程/equation>>, $2 + 3 = 5$, true; substituting into the second <<方程/equation>>, $2 \times 2 - 3 = 1$, true.
+    notes:
+      - '<<方程组/system of equations>>的<<解/solution>>必须同时满足每一个<<方程/equation>>，缺一不可'
+      - '用大括号 $\begin{cases} \end{cases}$ 把几个<<方程/equation>>括起来，表示它们是一个<<方程组/system of equations>>'
+    notesEn:
+      - 'The <<解/solution>> of a <<方程组/system of equations>> must satisfy every single <<方程/equation>> simultaneously'
+      - 'A brace $\begin{cases} \end{cases}$ groups several <<方程/equation>>s to indicate they form a <<方程组/system of equations>>'
+
+  - id: substitution-method
+    title: <<代入消元法/substitution method>>
+    titleEn: The <<代入消元法/substitution method>>
+    content: |
+      **<<代入消元法/substitution method>>**的基本思路：从<<方程组/system of equations>>中的一个<<方程/equation>>出发，把一个<<未知数/unknown>>用另一个<<未知数/unknown>>的<<式子/expression>>表示出来，然后代入另一个<<方程/equation>>中，从而<<消元/elimination>>，化为<<一元一次方程/linear equation in one variable>>来求解。
+
+      基本步骤：
+      1. 从一个<<方程/equation>>中把某个<<未知数/unknown>>表示为另一个<<未知数/unknown>>的<<式子/expression>>（"变形"）
+      2. 把这个<<式子/expression>>代入另一个<<方程/equation>>中（"代入"）
+      3. 解得到的<<一元一次方程/linear equation in one variable>>（"求解"）
+      4. 把求得的值回代，求另一个<<未知数/unknown>>（"回代"）
+      5. 写出<<方程组/system of equations>>的<<解/solution>>并<<检验/verify>>
+    contentEn: |
+      The basic idea of the **<<代入消元法/substitution method>>**: from one <<方程/equation>> in the <<方程组/system of equations>>, express one <<未知数/unknown>> in terms of the other, then substitute into the other <<方程/equation>> to <<消元/elimination>>, reducing it to a <<一元一次方程/linear equation in one variable>>.
+
+      Basic steps:
+      1. From one <<方程/equation>>, express one <<未知数/unknown>> in terms of the other ("transform")
+      2. Substitute this <<式子/expression>> into the other <<方程/equation>> ("substitute")
+      3. Solve the resulting <<一元一次方程/linear equation in one variable>> ("solve")
+      4. Back-substitute the obtained value to find the other <<未知数/unknown>> ("back-substitute")
+      5. Write out the <<解/solution>> of the <<方程组/system of equations>> and <<检验/verify>>
+    examples:
+      - |
+        解<<方程组/system of equations>>：$\begin{cases} y = 2x - 1 \quad \text{①} \\ 3x + 2y = 12 \quad \text{②} \end{cases}$
+
+        把①代入②：$3x + 2(2x - 1) = 12$
+        <<去括号/removing parentheses>>：$3x + 4x - 2 = 12$
+        <<合并同类项/combining like terms>>：$7x = 14$
+        $x = 2$
+        回代入①：$y = 2 \times 2 - 1 = 3$
+        所以<<解/solution>>为 $\begin{cases} x = 2 \\ y = 3 \end{cases}$
+    examplesEn:
+      - |
+        Solve the <<方程组/system of equations>>: $\begin{cases} y = 2x - 1 \quad \text{①} \\ 3x + 2y = 12 \quad \text{②} \end{cases}$
+
+        Substitute ① into ②: $3x + 2(2x - 1) = 12$
+        <<去括号/removing parentheses>>: $3x + 4x - 2 = 12$
+        <<合并同类项/combining like terms>>: $7x = 14$
+        $x = 2$
+        Back-substitute into ①: $y = 2 \times 2 - 1 = 3$
+        So the <<解/solution>> is $\begin{cases} x = 2 \\ y = 3 \end{cases}$
+    notes:
+      - 当<<方程组/system of equations>>中某个<<方程/equation>>已经是 $y = \ldots$ 或 $x = \ldots$ 的形式时，优先使用<<代入消元法/substitution method>>
+      - '选择<<系数/coefficient>>为 $1$ 或 $-1$ 的<<未知数/unknown>>来"变形"，计算更简便'
+    notesEn:
+      - 'When one <<方程/equation>> in the <<方程组/system of equations>> is already in the form $y = \ldots$ or $x = \ldots$, prefer the <<代入消元法/substitution method>>'
+      - 'Choose the <<未知数/unknown>> with <<系数/coefficient>> $1$ or $-1$ for "transforming" — this simplifies calculations'
+
+  - id: addition-subtraction-method
+    title: <<加减消元法/elimination by addition or subtraction>>
+    titleEn: The <<加减消元法/elimination by addition or subtraction>>
+    content: |
+      **<<加减消元法/elimination by addition or subtraction>>**的基本思路：当<<方程组/system of equations>>中两个<<方程/equation>>的某个<<未知数/unknown>>的<<系数/coefficient>>相同或互为相反数时，把两个<<方程/equation>>相加或相减，就能<<消元/elimination>>一个<<未知数/unknown>>。
+
+      基本步骤：
+      1. 观察两个<<方程/equation>>中<<未知数/unknown>>的<<系数/coefficient>>
+      2. 若某<<未知数/unknown>>的<<系数/coefficient>>相同，两式**相减**；若互为相反数，两式**相加**
+      3. 若<<系数/coefficient>>既不相同也不相反，先将某个<<方程/equation>>乘以适当的数，使某<<未知数/unknown>>的<<系数/coefficient>>相同或相反（"对齐<<系数/coefficient>>"）
+      4. 解得到的<<一元一次方程/linear equation in one variable>>
+      5. 回代求另一个<<未知数/unknown>>，写出<<解/solution>>并<<检验/verify>>
+    contentEn: |
+      The basic idea of the **<<加减消元法/elimination by addition or subtraction>>**: when the <<系数/coefficient>>s of one <<未知数/unknown>> in the two <<方程/equation>>s are the same or opposite, add or subtract the two <<方程/equation>>s to <<消元/elimination>> that <<未知数/unknown>>.
+
+      Basic steps:
+      1. Observe the <<系数/coefficient>>s of the <<未知数/unknown>>s in both <<方程/equation>>s
+      2. If the <<系数/coefficient>>s of one <<未知数/unknown>> are the same, **subtract** the equations; if opposite, **add** them
+      3. If the <<系数/coefficient>>s are neither the same nor opposite, multiply one <<方程/equation>> by a suitable number to align the <<系数/coefficient>>s ("align <<系数/coefficient>>s")
+      4. Solve the resulting <<一元一次方程/linear equation in one variable>>
+      5. Back-substitute to find the other <<未知数/unknown>>, write the <<解/solution>> and <<检验/verify>>
+    examples:
+      - |
+        解<<方程组/system of equations>>：$\begin{cases} 2x + 3y = 16 \quad \text{①} \\ 2x - y = 4 \quad \text{②} \end{cases}$
+
+        ① $-$ ②：$(2x + 3y) - (2x - y) = 16 - 4$
+        $4y = 12$
+        $y = 3$
+        代入②：$2x - 3 = 4$，$2x = 7$，$x = \frac{7}{2}$
+        <<解/solution>>为 $\begin{cases} x = \frac{7}{2} \\ y = 3 \end{cases}$
+    examplesEn:
+      - |
+        Solve the <<方程组/system of equations>>: $\begin{cases} 2x + 3y = 16 \quad \text{①} \\ 2x - y = 4 \quad \text{②} \end{cases}$
+
+        ① $-$ ②: $(2x + 3y) - (2x - y) = 16 - 4$
+        $4y = 12$
+        $y = 3$
+        Substitute into ②: $2x - 3 = 4$, $2x = 7$, $x = \frac{7}{2}$
+        <<解/solution>> is $\begin{cases} x = \frac{7}{2} \\ y = 3 \end{cases}$
+    notes:
+      - 当两个<<方程/equation>>中某个<<未知数/unknown>>的<<系数/coefficient>>已经相同或相反时，优先使用<<加减消元法/elimination by addition or subtraction>>
+      - '口诀："<<系数/coefficient>>相同减，<<系数/coefficient>>相反加"'
+    notesEn:
+      - 'When the <<系数/coefficient>>s of one <<未知数/unknown>> in the two <<方程/equation>>s are already the same or opposite, prefer <<加减消元法/elimination by addition or subtraction>>'
+      - 'Mnemonic: "same <<系数/coefficient>>s — subtract; opposite <<系数/coefficient>>s — add"'
+
+  - id: word-problems-systems
+    title: 用<<二元一次方程组/system of linear equations in two variables>>解决实际问题
+    titleEn: Solving real-life problems with <<二元一次方程组/system of linear equations in two variables>>
+    content: |
+      用<<方程组/system of equations>>解决实际问题的一般步骤：
+
+      1. **审题**：弄清题意，找出两个<<未知数/unknown>>和两个等量关系
+      2. **设<<未知数/unknown>>**：用 $x$、$y$ 分别表示两个要求的量
+      3. **列<<方程组/system of equations>>**：根据两个等量关系分别列出两个<<方程/equation>>
+      4. **解<<方程组/system of equations>>**：用<<代入消元法/substitution method>>或<<加减消元法/elimination by addition or subtraction>>求解
+      5. **<<检验/verify>>作答**：检查<<解/solution>>是否符合题意，写出答案
+    contentEn: |
+      General steps for solving real-life problems with <<方程组/system of equations>>:
+
+      1. **Read carefully**: Understand the problem, identify two <<未知数/unknown>>s and two equal relationships
+      2. **Set the <<未知数/unknown>>s**: Use $x$ and $y$ to represent the two quantities to be found
+      3. **Set up the <<方程组/system of equations>>**: Write two <<方程/equation>>s based on the two equal relationships
+      4. **Solve the <<方程组/system of equations>>**: Use the <<代入消元法/substitution method>> or <<加减消元法/elimination by addition or subtraction>>
+      5. **<<检验/verify>> and answer**: Check whether the <<解/solution>> fits the problem context and write the answer
+    notes:
+      - '关键在于找到**两个独立的等量关系**，一个等量关系对应一个<<方程/equation>>'
+      - 常见等量关系类型：总量关系（和、差）、比例关系、行程关系（路程=速度×时间）
+    notesEn:
+      - 'The key is finding **two independent equal relationships** — each relationship corresponds to one <<方程/equation>>'
+      - 'Common types of equal relationships: total quantity (sum, difference), proportional relationships, distance relationships (distance = speed × time)'
+
+realLife:
+  - category: 鸡兔同笼
+    categoryEn: Chickens and rabbits in a cage
+    scenario: '笼中有鸡和兔共 $35$ 只，脚共 $94$ 只'
+    scenarioEn: 'There are $35$ chickens and rabbits in a cage with $94$ legs in total'
+    equation: '$\begin{cases} x + y = 35 \\ 2x + 4y = 94 \end{cases}$'
+    solution: '鸡 $x = 23$ 只，兔 $y = 12$ 只'
+    solutionEn: '$x = 23$ chickens, $y = 12$ rabbits'
+  - category: 购物问题
+    categoryEn: Shopping problems
+    scenario: '买 $3$ 支笔和 $2$ 本笔记本共花 $19$ 元，买 $1$ 支笔和 $4$ 本笔记本共花 $17$ 元'
+    scenarioEn: 'Buying $3$ pens and $2$ notebooks costs $19$ yuan; buying $1$ pen and $4$ notebooks costs $17$ yuan'
+    equation: '$\begin{cases} 3x + 2y = 19 \\ x + 4y = 17 \end{cases}$'
+    solution: '笔 $x = 3$ 元，笔记本 $y = \frac{7}{2}$ 元'
+    solutionEn: 'Pen $x = 3$ yuan, notebook $y = \frac{7}{2}$ yuan'
+  - category: 行程问题
+    categoryEn: Distance problems
+    scenario: '甲、乙两人从相距 $50$ 千米的两地同时出发相向而行，$2$ 小时后相遇。甲的速度比乙快 $5$ 千米/时'
+    scenarioEn: 'Two people start $50$ km apart and walk toward each other, meeting after $2$ hours. Person A walks $5$ km/h faster than B'
+    equation: '$\begin{cases} 2x + 2y = 50 \\ x - y = 5 \end{cases}$'
+    solution: '甲速度 $x = 15$ 千米/时，乙速度 $y = 10$ 千米/时'
+    solutionEn: 'Speed of A: $x = 15$ km/h, speed of B: $y = 10$ km/h'
+  - category: 配比问题
+    categoryEn: Mixture problems
+    scenario: '用 $20\%$ 和 $50\%$ 的盐水配制 $600$ 克 $30\%$ 的盐水'
+    scenarioEn: 'Mix $20\%$ and $50\%$ salt solutions to make $600$ g of $30\%$ salt solution'
+    equation: '$\begin{cases} x + y = 600 \\ 0.2x + 0.5y = 600 \times 0.3 \end{cases}$'
+    solution: '$20\%$ 盐水 $x = 400$ 克，$50\%$ 盐水 $y = 200$ 克'
+    solutionEn: '$20\%$ solution $x = 400$ g, $50\%$ solution $y = 200$ g'
+
+examples:
+  - type: 1
+    title: 判断<<二元一次方程/linear equation in two variables>>
+    titleEn: Identifying <<二元一次方程/linear equation in two variables>>s
+    question: |
+      下列<<方程/equation>>中，哪些是<<二元一次方程/linear equation in two variables>>？
+      (1) $3x + 2y = 10$　(2) $x^2 + y = 5$　(3) $xy = 12$　(4) $x - 4y = 7$　(5) $x + y + z = 6$
+    questionEn: |
+      Among the following <<方程/equation>>s, which are <<二元一次方程/linear equation in two variables>>?
+      (1) $3x + 2y = 10$  (2) $x^2 + y = 5$  (3) $xy = 12$  (4) $x - 4y = 7$  (5) $x + y + z = 6$
+    steps:
+      - "(1) $3x + 2y = 10$：两个<<未知数/unknown>> $x$、$y$，次数都为 $1$，是<<二元一次方程/linear equation in two variables>>"
+      - "(2) $x^2 + y = 5$：$x$ 的次数为 $2$，不是"
+      - "(3) $xy = 12$：含 $xy$ 项，次数为 $2$，不是"
+      - "(4) $x - 4y = 7$：两个<<未知数/unknown>>，次数都为 $1$，是<<二元一次方程/linear equation in two variables>>"
+      - "(5) $x + y + z = 6$：有三个<<未知数/unknown>>，不是二元"
+    stepsEn:
+      - "(1) $3x + 2y = 10$: two <<未知数/unknown>>s $x$, $y$, both degree $1$ — it is a <<二元一次方程/linear equation in two variables>>"
+      - "(2) $x^2 + y = 5$: degree of $x$ is $2$ — not"
+      - "(3) $xy = 12$: contains $xy$ term, degree $2$ — not"
+      - "(4) $x - 4y = 7$: two <<未知数/unknown>>s, both degree $1$ — it is a <<二元一次方程/linear equation in two variables>>"
+      - "(5) $x + y + z = 6$: three <<未知数/unknown>>s, not two variables"
+    answer: "(1) 和 (4) 是<<二元一次方程/linear equation in two variables>>。"
+    answerEn: "(1) and (4) are <<二元一次方程/linear equation in two variables>>."
+
+  - type: 2
+    title: 判断<<方程组/system of equations>>的<<解/solution>>
+    titleEn: Determining the <<解/solution>> of a <<方程组/system of equations>>
+    question: |
+      判断 $\begin{cases} x = 3 \\ y = 1 \end{cases}$ 是否是<<方程组/system of equations>> $\begin{cases} x + y = 4 \\ 2x - y = 5 \end{cases}$ 的<<解/solution>>。
+    questionEn: |
+      Determine whether $\begin{cases} x = 3 \\ y = 1 \end{cases}$ is a <<解/solution>> of the <<方程组/system of equations>> $\begin{cases} x + y = 4 \\ 2x - y = 5 \end{cases}$.
+    steps:
+      - "代入第一个<<方程/equation>>：$3 + 1 = 4$，成立"
+      - "代入第二个<<方程/equation>>：$2 \\times 3 - 1 = 6 - 1 = 5$，成立"
+      - "两个<<方程/equation>>都成立，所以是<<方程组/system of equations>>的<<解/solution>>"
+    stepsEn:
+      - "Substitute into the first <<方程/equation>>: $3 + 1 = 4$, true"
+      - "Substitute into the second <<方程/equation>>: $2 \\times 3 - 1 = 6 - 1 = 5$, true"
+      - "Both <<方程/equation>>s are satisfied, so it is a <<解/solution>> of the <<方程组/system of equations>>"
+    answer: '是该<<方程组/system of equations>>的<<解/solution>>。'
+    answerEn: 'It is a <<解/solution>> of the <<方程组/system of equations>>.'
+
+  - type: 3
+    title: 用<<代入消元法/substitution method>>解<<方程组/system of equations>>（基础）
+    titleEn: Solving a <<方程组/system of equations>> by <<代入消元法/substitution method>> (basic)
+    question: |
+      用<<代入消元法/substitution method>>解<<方程组/system of equations>>：
+      $$\begin{cases} x = y + 2 \quad \text{①} \\ 3x - 2y = 9 \quad \text{②} \end{cases}$$
+    questionEn: |
+      Solve the <<方程组/system of equations>> by <<代入消元法/substitution method>>:
+      $$\begin{cases} x = y + 2 \quad \text{①} \\ 3x - 2y = 9 \quad \text{②} \end{cases}$$
+    steps:
+      - "①已经把 $x$ 表示为 $y$ 的<<式子/expression>>，直接代入②"
+      - "将①代入②：$3(y + 2) - 2y = 9$"
+      - "<<去括号/removing parentheses>>：$3y + 6 - 2y = 9$"
+      - "<<合并同类项/combining like terms>>：$y + 6 = 9$"
+      - "$y = 3$"
+      - "回代入①：$x = 3 + 2 = 5$"
+      - '<<检验/verify>>：代入①，$5 = 3 + 2 = 5$，成立；代入②，$3 \times 5 - 2 \times 3 = 15 - 6 = 9$，成立'
+    stepsEn:
+      - "① already expresses $x$ in terms of $y$, substitute directly into ②"
+      - "Substitute ① into ②: $3(y + 2) - 2y = 9$"
+      - "<<去括号/removing parentheses>>: $3y + 6 - 2y = 9$"
+      - "<<合并同类项/combining like terms>>: $y + 6 = 9$"
+      - "$y = 3$"
+      - "Back-substitute into ①: $x = 3 + 2 = 5$"
+      - '<<检验/verify>>: into ①, $5 = 3 + 2 = 5$, true; into ②, $3 \times 5 - 2 \times 3 = 15 - 6 = 9$, true'
+    answer: '$\begin{cases} x = 5 \\ y = 3 \end{cases}$'
+    answerEn: '$\begin{cases} x = 5 \\ y = 3 \end{cases}$'
+
+  - type: 4
+    title: 用<<代入消元法/substitution method>>解<<方程组/system of equations>>（需先变形）
+    titleEn: Solving a <<方程组/system of equations>> by <<代入消元法/substitution method>> (transformation needed)
+    question: |
+      用<<代入消元法/substitution method>>解<<方程组/system of equations>>：
+      $$\begin{cases} 2x + y = 7 \quad \text{①} \\ x - 2y = 1 \quad \text{②} \end{cases}$$
+    questionEn: |
+      Solve the <<方程组/system of equations>> by <<代入消元法/substitution method>>:
+      $$\begin{cases} 2x + y = 7 \quad \text{①} \\ x - 2y = 1 \quad \text{②} \end{cases}$$
+    steps:
+      - "由②得：$x = 2y + 1$ ③（选择<<系数/coefficient>>为 $1$ 的 $x$ 来变形）"
+      - "将③代入①：$2(2y + 1) + y = 7$"
+      - "<<去括号/removing parentheses>>：$4y + 2 + y = 7$"
+      - "<<合并同类项/combining like terms>>：$5y = 5$"
+      - "$y = 1$"
+      - "回代入③：$x = 2 \\times 1 + 1 = 3$"
+      - '<<检验/verify>>：代入①，$2 \times 3 + 1 = 7$，成立；代入②，$3 - 2 \times 1 = 1$，成立'
+    stepsEn:
+      - "From ②: $x = 2y + 1$ ③ (choose $x$ with <<系数/coefficient>> $1$ to transform)"
+      - "Substitute ③ into ①: $2(2y + 1) + y = 7$"
+      - "<<去括号/removing parentheses>>: $4y + 2 + y = 7$"
+      - "<<合并同类项/combining like terms>>: $5y = 5$"
+      - "$y = 1$"
+      - "Back-substitute into ③: $x = 2 \\times 1 + 1 = 3$"
+      - '<<检验/verify>>: into ①, $2 \times 3 + 1 = 7$, true; into ②, $3 - 2 \times 1 = 1$, true'
+    answer: '$\begin{cases} x = 3 \\ y = 1 \end{cases}$'
+    answerEn: '$\begin{cases} x = 3 \\ y = 1 \end{cases}$'
+
+  - type: 5
+    title: 用<<加减消元法/elimination by addition or subtraction>>解<<方程组/system of equations>>（<<系数/coefficient>>相反）
+    titleEn: Solving by <<加减消元法/elimination by addition or subtraction>> (opposite <<系数/coefficient>>s)
+    question: |
+      用<<加减消元法/elimination by addition or subtraction>>解<<方程组/system of equations>>：
+      $$\begin{cases} 3x + 2y = 14 \quad \text{①} \\ x - 2y = -2 \quad \text{②} \end{cases}$$
+    questionEn: |
+      Solve by <<加减消元法/elimination by addition or subtraction>>:
+      $$\begin{cases} 3x + 2y = 14 \quad \text{①} \\ x - 2y = -2 \quad \text{②} \end{cases}$$
+    steps:
+      - "观察：$y$ 的<<系数/coefficient>>分别为 $+2$ 和 $-2$，互为相反数，两式**相加**可消去 $y$"
+      - "① $+$ ②：$(3x + 2y) + (x - 2y) = 14 + (-2)$"
+      - "$4x = 12$"
+      - "$x = 3$"
+      - "将 $x = 3$ 代入①：$3 \\times 3 + 2y = 14$，$9 + 2y = 14$，$2y = 5$，$y = \\frac{5}{2}$"
+      - '<<检验/verify>>：代入②，$3 - 2 \times \frac{5}{2} = 3 - 5 = -2$，成立'
+    stepsEn:
+      - "Observe: the <<系数/coefficient>>s of $y$ are $+2$ and $-2$, opposites — **add** the equations to eliminate $y$"
+      - "① $+$ ②: $(3x + 2y) + (x - 2y) = 14 + (-2)$"
+      - "$4x = 12$"
+      - "$x = 3$"
+      - "Substitute $x = 3$ into ①: $3 \\times 3 + 2y = 14$, $9 + 2y = 14$, $2y = 5$, $y = \\frac{5}{2}$"
+      - '<<检验/verify>>: into ②, $3 - 2 \times \frac{5}{2} = 3 - 5 = -2$, true'
+    answer: '$\begin{cases} x = 3 \\ y = \frac{5}{2} \end{cases}$'
+    answerEn: '$\begin{cases} x = 3 \\ y = \frac{5}{2} \end{cases}$'
+
+  - type: 6
+    title: 用<<加减消元法/elimination by addition or subtraction>>解<<方程组/system of equations>>（需对齐<<系数/coefficient>>）
+    titleEn: Solving by <<加减消元法/elimination by addition or subtraction>> (aligning <<系数/coefficient>>s)
+    question: |
+      用<<加减消元法/elimination by addition or subtraction>>解<<方程组/system of equations>>：
+      $$\begin{cases} 3x + 4y = 25 \quad \text{①} \\ 5x - 2y = 7 \quad \text{②} \end{cases}$$
+    questionEn: |
+      Solve by <<加减消元法/elimination by addition or subtraction>>:
+      $$\begin{cases} 3x + 4y = 25 \quad \text{①} \\ 5x - 2y = 7 \quad \text{②} \end{cases}$$
+    steps:
+      - "观察：两个<<未知数/unknown>>的<<系数/coefficient>>既不相同也不相反，需要对齐<<系数/coefficient>>"
+      - "选择消去 $y$：将②两边乘以 $2$，得 $10x - 4y = 14$ ③"
+      - "① $+$ ③：$(3x + 4y) + (10x - 4y) = 25 + 14$"
+      - "$13x = 39$"
+      - "$x = 3$"
+      - "将 $x = 3$ 代入①：$3 \\times 3 + 4y = 25$，$9 + 4y = 25$，$4y = 16$，$y = 4$"
+      - '<<检验/verify>>：代入②，$5 \times 3 - 2 \times 4 = 15 - 8 = 7$，成立'
+    stepsEn:
+      - "Observe: the <<系数/coefficient>>s of neither <<未知数/unknown>> are the same or opposite — alignment is needed"
+      - "Choose to eliminate $y$: multiply ② by $2$ to get $10x - 4y = 14$ ③"
+      - "① $+$ ③: $(3x + 4y) + (10x - 4y) = 25 + 14$"
+      - "$13x = 39$"
+      - "$x = 3$"
+      - "Substitute $x = 3$ into ①: $3 \\times 3 + 4y = 25$, $9 + 4y = 25$, $4y = 16$, $y = 4$"
+      - '<<检验/verify>>: into ②, $5 \times 3 - 2 \times 4 = 15 - 8 = 7$, true'
+    answer: '$\begin{cases} x = 3 \\ y = 4 \end{cases}$'
+    answerEn: '$\begin{cases} x = 3 \\ y = 4 \end{cases}$'
+
+  - type: 7
+    title: 列<<二元一次方程组/system of linear equations in two variables>>解决实际问题
+    titleEn: Setting up a <<二元一次方程组/system of linear equations in two variables>> to solve a word problem
+    question: |
+      甲、乙两种糖果混合成什锦糖。甲种糖果每千克 $32$ 元，乙种糖果每千克 $20$ 元。现在要配成 $50$ 千克、每千克 $28$ 元的什锦糖。甲、乙两种糖果各需多少千克？
+    questionEn: |
+      Two types of candy, A and B, are mixed. Type A costs $32$ yuan/kg, type B costs $20$ yuan/kg. Mix $50$ kg of assorted candy costing $28$ yuan/kg. How many kg of each type are needed?
+    steps:
+      - "设甲种糖果 $x$ 千克，乙种糖果 $y$ 千克"
+      - "等量关系1（总重量）：$x + y = 50$"
+      - "等量关系2（总价格）：$32x + 20y = 28 \\times 50 = 1400$"
+      - '列<<方程组/system of equations>>：$\begin{cases} x + y = 50 \quad \text{①} \\ 32x + 20y = 1400 \quad \text{②} \end{cases}$'
+      - "由①得 $y = 50 - x$ ③"
+      - "将③代入②：$32x + 20(50 - x) = 1400$"
+      - "$32x + 1000 - 20x = 1400$"
+      - "$12x = 400$"
+      - "$x = \\frac{100}{3} \\approx 33.3$"
+      - "但实际问题中常取整数，此题 $x = \\frac{100}{3}$ 千克，$y = 50 - \\frac{100}{3} = \\frac{50}{3}$ 千克"
+      - '也可简化：①$\times 20$ 得 $20x + 20y = 1000$ ④，②$-$④：$12x = 400$，$x = \frac{100}{3}$'
+    stepsEn:
+      - "Let type A be $x$ kg, type B be $y$ kg"
+      - "Equal relationship 1 (total weight): $x + y = 50$"
+      - "Equal relationship 2 (total cost): $32x + 20y = 28 \\times 50 = 1400$"
+      - 'Set up the <<方程组/system of equations>>: $\begin{cases} x + y = 50 \quad \text{①} \\ 32x + 20y = 1400 \quad \text{②} \end{cases}$'
+      - "From ①: $y = 50 - x$ ③"
+      - "Substitute ③ into ②: $32x + 20(50 - x) = 1400$"
+      - "$32x + 1000 - 20x = 1400$"
+      - "$12x = 400$"
+      - "$x = \\frac{100}{3} \\approx 33.3$"
+      - "So $x = \\frac{100}{3}$ kg, $y = 50 - \\frac{100}{3} = \\frac{50}{3}$ kg"
+      - 'Alternatively: ①$\\times 20$ gives $20x + 20y = 1000$ ④, ②$-$④: $12x = 400$, $x = \\frac{100}{3}$'
+    answer: '甲种糖果 $\frac{100}{3}$ 千克（约 $33.3$ 千克），乙种糖果 $\frac{50}{3}$ 千克（约 $16.7$ 千克）。'
+    answerEn: 'Type A: $\frac{100}{3}$ kg (about $33.3$ kg), type B: $\frac{50}{3}$ kg (about $16.7$ kg).'
+
+commonMistakes:
+  - '<<代入消元法/substitution method>>时，代入了变形的那个<<方程/equation>>本身而不是另一个<<方程/equation>>，导致消不掉<<未知数/unknown>>'
+  - "<<加减消元法/elimination by addition or subtraction>>时，<<系数/coefficient>>相同却用了加法（应该用减法），或<<系数/coefficient>>相反却用了减法（应该用加法）"
+  - '对齐<<系数/coefficient>>时，只乘了<<方程/equation>>的一边，没有两边同时乘，导致<<等式/equality>>不成立'
+  - "回代时代入了错误的<<方程/equation>>，或代入后计算出错"
+  - '列<<方程组/system of equations>>时只找到一个等量关系，导致<<方程/equation>>不够'
+  - "解完后不<<检验/verify>>，没有发现计算错误"
+commonMistakesEn:
+  - 'In the <<代入消元法/substitution method>>, substituting into the same <<方程/equation>> that was transformed instead of the other one, so the <<未知数/unknown>> is not eliminated'
+  - "In <<加减消元法/elimination by addition or subtraction>>, using addition when <<系数/coefficient>>s are the same (should subtract), or subtraction when <<系数/coefficient>>s are opposite (should add)"
+  - 'When aligning <<系数/coefficient>>s, multiplying only one side of the <<方程/equation>> instead of both sides, breaking the <<等式/equality>>'
+  - "Back-substituting into the wrong <<方程/equation>>, or making calculation errors during back-substitution"
+  - 'When setting up the <<方程组/system of equations>>, finding only one equal relationship, resulting in too few <<方程/equation>>s'
+  - "Not <<检验/verify>>ing after solving, missing calculation errors"
+
+exercises:
+  timeGuide:
+    total: 40分钟
+    totalEn: 40 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 20分钟
+        timeEn: 20 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        含有______个<<未知数/unknown>>，并且每个<<未知数/unknown>>的次数都是______的<<方程/equation>>，叫做<<二元一次方程/linear equation in two variables>>。
+      questionEn: |
+        An <<方程/equation>> that contains ______ <<未知数/unknown>>s, and the degree of each <<未知数/unknown>> is ______, is called a <<二元一次方程/linear equation in two variables>>.
+      correctValue: "两, 1"
+      answer: "两（个）；$1$"
+      answerEn: "two; $1$"
+      explanation: |
+        <<二元一次方程/linear equation in two variables>>的定义中，"二元"指两个<<未知数/unknown>>，"一次"指最高次数为 $1$。
+      explanationEn: |
+        In the definition of <<二元一次方程/linear equation in two variables>>, "two variables" means two <<未知数/unknown>>s, and "first degree" means the highest power is $1$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<方程组/system of equations>> $\begin{cases} x + y = 8 \\ x - y = 2 \end{cases}$ 的<<解/solution>>是 $x = $ ______，$y = $ ______。
+      questionEn: |
+        The <<解/solution>> of the <<方程组/system of equations>> $\begin{cases} x + y = 8 \\ x - y = 2 \end{cases}$ is $x = $ ______, $y = $ ______.
+      correctValue: "5, 3"
+      answer: "$x = 5$，$y = 3$"
+      answerEn: "$x = 5$, $y = 3$"
+      explanation: |
+        两式相加：$2x = 10$，$x = 5$；代入第一式：$5 + y = 8$，$y = 3$。
+      explanationEn: |
+        Add the two equations: $2x = 10$, $x = 5$; substitute into the first: $5 + y = 8$, $y = 3$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<方程组/system of equations>>的基本思想是<<消元/elimination>>，即把"______元"转化为"______元"。
+      questionEn: |
+        The basic idea of solving a <<方程组/system of equations>> is <<消元/elimination>>, that is, converting "______ variables" to "______ variable."
+      correctValue: "二, 一"
+      answer: "二；一"
+      answerEn: "two; one"
+      explanation: |
+        <<消元/elimination>>的核心思想就是减少<<未知数/unknown>>的个数，把<<二元一次方程组/system of linear equations in two variables>>转化为<<一元一次方程/linear equation in one variable>>来求解。
+      explanationEn: |
+        The core idea of <<消元/elimination>> is to reduce the number of <<未知数/unknown>>s, converting a <<二元一次方程组/system of linear equations in two variables>> into a <<一元一次方程/linear equation in one variable>> to solve.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        用<<加减消元法/elimination by addition or subtraction>>解 $\begin{cases} 2x + y = 10 \\ 2x - 3y = 2 \end{cases}$，两式相减消去 $x$，得 $y = $ ______。
+      questionEn: |
+        Using <<加减消元法/elimination by addition or subtraction>> to solve $\begin{cases} 2x + y = 10 \\ 2x - 3y = 2 \end{cases}$, subtract the equations to eliminate $x$, giving $y = $ ______.
+      correctValue: "2"
+      answer: "$2$"
+      answerEn: "$2$"
+      explanation: |
+        ① $-$ ②：$(2x + y) - (2x - 3y) = 10 - 2$，$4y = 8$，$y = 2$。
+      explanationEn: |
+        ① $-$ ②: $(2x + y) - (2x - 3y) = 10 - 2$, $4y = 8$, $y = 2$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $xy + 2 = 5$ 是<<二元一次方程/linear equation in two variables>>。
+      questionEn: |
+        $xy + 2 = 5$ is a <<二元一次方程/linear equation in two variables>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $xy$ 项中两个<<未知数/unknown>>相乘，该项次数为 $2$，不满足"一次"的条件。
+      explanationEn: |
+        In the $xy$ term, two <<未知数/unknown>>s are multiplied, giving degree $2$, which does not satisfy the "first degree" condition.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $\begin{cases} x = 2 \\ y = 1 \end{cases}$ 是<<方程组/system of equations>> $\begin{cases} x + y = 3 \\ 2x + y = 6 \end{cases}$ 的<<解/solution>>。
+      questionEn: |
+        $\begin{cases} x = 2 \\ y = 1 \end{cases}$ is a <<解/solution>> of the <<方程组/system of equations>> $\begin{cases} x + y = 3 \\ 2x + y = 6 \end{cases}$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        代入第一个<<方程/equation>>：$2 + 1 = 3$，成立。代入第二个<<方程/equation>>：$2 \times 2 + 1 = 5 \neq 6$，不成立。必须同时满足两个<<方程/equation>>才是<<解/solution>>。
+      explanationEn: |
+        Substitute into the first <<方程/equation>>: $2 + 1 = 3$, true. Into the second: $2 \times 2 + 1 = 5 \neq 6$, false. Both <<方程/equation>>s must be satisfied simultaneously.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        用<<代入消元法/substitution method>>解<<方程组/system of equations>>时，应将变形后的<<式子/expression>>代入另一个<<方程/equation>>（不是变形所用的那个<<方程/equation>>）。
+      questionEn: |
+        When using the <<代入消元法/substitution method>>, the transformed <<式子/expression>> should be substituted into the other <<方程/equation>> (not the one used for the transformation).
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        如果代入变形所用的那个<<方程/equation>>，会得到恒等式（如 $0 = 0$），无法求出<<未知数/unknown>>的值。
+      explanationEn: |
+        If you substitute into the same <<方程/equation>> used for transformation, you get an identity (like $0 = 0$) and cannot determine the <<未知数/unknown>>.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        用<<加减消元法/elimination by addition or subtraction>>时，如果两个<<方程/equation>>中某<<未知数/unknown>>的<<系数/coefficient>>互为相反数，应将两个<<方程/equation>>**相加**。
+      questionEn: |
+        When using <<加减消元法/elimination by addition or subtraction>>, if the <<系数/coefficient>>s of one <<未知数/unknown>> in the two <<方程/equation>>s are opposite numbers, the two <<方程/equation>>s should be **added**.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<系数/coefficient>>互为相反数时，相加后该<<未知数/unknown>>的<<系数/coefficient>>之和为 $0$，正好消去。例如 $+3y$ 和 $-3y$ 相加为 $0$。
+      explanationEn: |
+        When <<系数/coefficient>>s are opposites, their sum is $0$ when the equations are added, eliminating that <<未知数/unknown>>. For example, $+3y$ and $-3y$ sum to $0$.
+
+    - number: 9
+      type: 解方程组题
+      inputType: open
+      section: 三、解方程组
+      sectionEn: "III. Solve the System"
+      question: |
+        用<<代入消元法/substitution method>>解<<方程组/system of equations>>：
+        $$\begin{cases} y = 3x - 1 \\ 5x + 2y = 20 \end{cases}$$
+      questionEn: |
+        Solve by <<代入消元法/substitution method>>:
+        $$\begin{cases} y = 3x - 1 \\ 5x + 2y = 20 \end{cases}$$
+      answer: |
+        将①代入②：$5x + 2(3x - 1) = 20$
+        $5x + 6x - 2 = 20$
+        $11x = 22$
+        $x = 2$
+        回代入①：$y = 3 \times 2 - 1 = 5$
+        所以 $\begin{cases} x = 2 \\ y = 5 \end{cases}$
+      answerEn: |
+        Substitute ① into ②: $5x + 2(3x - 1) = 20$
+        $5x + 6x - 2 = 20$
+        $11x = 22$
+        $x = 2$
+        Back-substitute into ①: $y = 3 \times 2 - 1 = 5$
+        So $\begin{cases} x = 2 \\ y = 5 \end{cases}$
+      explanation: |
+        ①已经是 $y = \ldots$ 的形式，直接代入②即可<<消元/elimination>>。
+      explanationEn: |
+        ① is already in the form $y = \ldots$, so substituting directly into ② achieves <<消元/elimination>>.
+
+    - number: 10
+      type: 解方程组题
+      inputType: open
+      section: 三、解方程组
+      sectionEn: "III. Solve the System"
+      question: |
+        用<<加减消元法/elimination by addition or subtraction>>解<<方程组/system of equations>>：
+        $$\begin{cases} 4x + 3y = 11 \\ 2x + 3y = 7 \end{cases}$$
+      questionEn: |
+        Solve by <<加减消元法/elimination by addition or subtraction>>:
+        $$\begin{cases} 4x + 3y = 11 \\ 2x + 3y = 7 \end{cases}$$
+      answer: |
+        $y$ 的<<系数/coefficient>>相同，两式相减：
+        ① $-$ ②：$(4x + 3y) - (2x + 3y) = 11 - 7$
+        $2x = 4$
+        $x = 2$
+        代入②：$2 \times 2 + 3y = 7$，$3y = 3$，$y = 1$
+        所以 $\begin{cases} x = 2 \\ y = 1 \end{cases}$
+      answerEn: |
+        The <<系数/coefficient>>s of $y$ are the same; subtract:
+        ① $-$ ②: $(4x + 3y) - (2x + 3y) = 11 - 7$
+        $2x = 4$
+        $x = 2$
+        Substitute into ②: $2 \times 2 + 3y = 7$, $3y = 3$, $y = 1$
+        So $\begin{cases} x = 2 \\ y = 1 \end{cases}$
+      explanation: |
+        两个<<方程/equation>>中 $y$ 的<<系数/coefficient>>都是 $3$，<<系数/coefficient>>相同用减法消去 $y$。
+      explanationEn: |
+        The <<系数/coefficient>> of $y$ is $3$ in both <<方程/equation>>s; same <<系数/coefficient>>s mean we subtract to eliminate $y$.
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 四、生活应用题
+      sectionEn: "IV. Real-Life Application"
+      question: |
+        学校组织春游，租大巴和中巴共 $5$ 辆，大巴每辆坐 $50$ 人，中巴每辆坐 $30$ 人，共坐 $190$ 人。问大巴和中巴各租了几辆？请用<<二元一次方程组/system of linear equations in two variables>>解答。
+      questionEn: |
+        A school rents $5$ buses (large and medium) for a trip. Each large bus seats $50$ people, each medium bus seats $30$ people, and $190$ people need seats. How many of each type were rented? Solve using a <<二元一次方程组/system of linear equations in two variables>>.
+      answer: |
+        设大巴 $x$ 辆，中巴 $y$ 辆。
+        $\begin{cases} x + y = 5 \quad \text{①} \\ 50x + 30y = 190 \quad \text{②} \end{cases}$
+        由①得 $y = 5 - x$ ③
+        代入②：$50x + 30(5 - x) = 190$
+        $50x + 150 - 30x = 190$
+        $20x = 40$
+        $x = 2$
+        $y = 5 - 2 = 3$
+        <<检验/verify>>：$2 + 3 = 5$，$50 \times 2 + 30 \times 3 = 100 + 90 = 190$，正确。
+        大巴 $2$ 辆，中巴 $3$ 辆。
+      answerEn: |
+        Let large buses be $x$, medium buses be $y$.
+        $\begin{cases} x + y = 5 \quad \text{①} \\ 50x + 30y = 190 \quad \text{②} \end{cases}$
+        From ①: $y = 5 - x$ ③
+        Substitute into ②: $50x + 30(5 - x) = 190$
+        $50x + 150 - 30x = 190$
+        $20x = 40$
+        $x = 2$
+        $y = 5 - 2 = 3$
+        <<检验/verify>>: $2 + 3 = 5$, $50 \times 2 + 30 \times 3 = 100 + 90 = 190$, correct.
+        $2$ large buses, $3$ medium buses.
+      explanation: |
+        两个等量关系：车辆总数为 $5$，乘客总数为 $190$。分别列出一个<<方程/equation>>。
+      explanationEn: |
+        Two equal relationships: total number of buses is $5$, total number of passengers is $190$. Each gives one <<方程/equation>>.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        甲、乙两人同时从 $A$、$B$ 两地出发相向而行。甲每小时走 $4$ 千米，乙每小时走 $6$ 千米，$3$ 小时后他们相遇。
+        (1) $A$、$B$ 两地相距多少千米？
+        (2) 相遇时甲、乙各走了多少千米？
+        请用<<二元一次方程组/system of linear equations in two variables>>解答，并<<检验/verify>>你的答案。
+      questionEn: |
+        Two people start simultaneously from locations $A$ and $B$, walking toward each other. Person A walks at $4$ km/h, person B at $6$ km/h. They meet after $3$ hours.
+        (1) What is the distance between $A$ and $B$?
+        (2) How far did each person walk before they met?
+        Solve using a <<二元一次方程组/system of linear equations in two variables>> and <<检验/verify>> your answer.
+      answer: |
+        设甲走了 $x$ 千米，乙走了 $y$ 千米。
+        等量关系1（路程与速度、时间）：$x = 4 \times 3 = 12$，$y = 6 \times 3 = 18$
+        也可以列成<<方程组/system of equations>>：
+        $\begin{cases} x + y = (4 + 6) \times 3 \quad \text{①（总路程 = 两人路程之和）} \\ x = 4 \times 3 \quad \text{②（甲的路程）} \end{cases}$
+        由②：$x = 12$
+        代入①：$12 + y = 30$，$y = 18$
+        (1) $A$、$B$ 两地相距 $x + y = 12 + 18 = 30$ 千米
+        (2) 甲走了 $12$ 千米，乙走了 $18$ 千米
+        <<检验/verify>>：$12 + 18 = 30 = (4+6) \times 3$，正确。
+      answerEn: |
+        Let person A walk $x$ km, person B walk $y$ km.
+        Set up the <<方程组/system of equations>>:
+        $\begin{cases} x + y = (4 + 6) \times 3 \quad \text{① (total distance = sum of distances)} \\ x = 4 \times 3 \quad \text{② (A's distance)} \end{cases}$
+        From ②: $x = 12$
+        Substitute into ①: $12 + y = 30$, $y = 18$
+        (1) Distance between $A$ and $B$ is $x + y = 12 + 18 = 30$ km
+        (2) Person A walked $12$ km, person B walked $18$ km
+        <<检验/verify>>: $12 + 18 = 30 = (4+6) \times 3$, correct.
+      explanation: |
+        行程问题的基本关系：路程 $=$ 速度 $\times$ 时间。相向而行时，相遇意味着两人走的总路程等于两地之间的距离。
+      explanationEn: |
+        Basic relationship in distance problems: distance $=$ speed $\times$ time. When walking toward each other, meeting means the sum of their distances equals the distance between the two locations.
+
+summary:
+  - "<<二元一次方程/linear equation in two variables>>含有两个<<未知数/unknown>>，每个<<未知数/unknown>>的次数都为 $1$"
+  - "单独一个<<二元一次方程/linear equation in two variables>>有无数多个<<解/solution>>；两个<<方程/equation>>组成<<方程组/system of equations>>后，通常能确定唯一的<<解/solution>>"
+  - "<<方程组/system of equations>>的<<解/solution>>必须同时满足每一个<<方程/equation>>"
+  - "解<<方程组/system of equations>>的核心思想是<<消元/elimination>>——把二元转化为一元"
+  - "<<消元/elimination>>有两种基本方法：<<代入消元法/substitution method>>和<<加减消元法/elimination by addition or subtraction>>"
+  - "<<代入消元法/substitution method>>适合某个<<方程/equation>>中<<未知数/unknown>>的<<系数/coefficient>>为 $1$ 或 $-1$ 的情形"
+  - "<<加减消元法/elimination by addition or subtraction>>适合某个<<未知数/unknown>>的<<系数/coefficient>>已经相同或相反的情形"
+  - "用<<方程组/system of equations>>解实际问题时，关键是找到**两个独立的等量关系**"
+  - "解完后一定要<<检验/verify>>：把<<解/solution>>代入每一个原<<方程/equation>>，看是否都成立"
+summaryEn:
+  - "A <<二元一次方程/linear equation in two variables>> contains two <<未知数/unknown>>s, each of degree $1$"
+  - "A single <<二元一次方程/linear equation in two variables>> has infinitely many <<解/solution>>s; two <<方程/equation>>s forming a <<方程组/system of equations>> usually determine a unique <<解/solution>>"
+  - "The <<解/solution>> of a <<方程组/system of equations>> must satisfy every <<方程/equation>> simultaneously"
+  - "The core idea of solving a <<方程组/system of equations>> is <<消元/elimination>> — reducing two variables to one"
+  - "There are two basic <<消元/elimination>> methods: <<代入消元法/substitution method>> and <<加减消元法/elimination by addition or subtraction>>"
+  - "The <<代入消元法/substitution method>> is best when one <<未知数/unknown>> has <<系数/coefficient>> $1$ or $-1$"
+  - "The <<加减消元法/elimination by addition or subtraction>> is best when <<系数/coefficient>>s of one <<未知数/unknown>> are already the same or opposite"
+  - "When solving real-life problems with a <<方程组/system of equations>>, the key is finding **two independent equal relationships**"
+  - "Always <<检验/verify>> after solving: substitute the <<解/solution>> into every original <<方程/equation>> to confirm they all hold"
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        若 $\begin{cases} x = 1 \\ y = 2 \end{cases}$ 是<<方程组/system of equations>> $\begin{cases} ax + by = 4 \\ ax - by = 0 \end{cases}$ 的<<解/solution>>，则 $a + b = $（　）
+      questionEn: |
+        If $\begin{cases} x = 1 \\ y = 2 \end{cases}$ is the <<解/solution>> of the <<方程组/system of equations>> $\begin{cases} ax + by = 4 \\ ax - by = 0 \end{cases}$, then $a + b = $ ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$1$", "$2$", "$3$", "$4$"]
+          correctValue: "$3$"
+      answer: "$3$"
+      answerEn: "$3$"
+      explanation: |
+        将 $x = 1$，$y = 2$ 代入<<方程组/system of equations>>：
+        $\begin{cases} a + 2b = 4 \quad \text{①} \\ a - 2b = 0 \quad \text{②} \end{cases}$
+        ① $+$ ②：$2a = 4$，$a = 2$
+        代入②：$2 - 2b = 0$，$b = 1$
+        所以 $a + b = 2 + 1 = 3$。
+        这道题考查"已知<<解/solution>>求参数"——把<<解/solution>>代入后，关于 $a$、$b$ 又得到一个新的<<方程组/system of equations>>来求解！
+      explanationEn: |
+        Substitute $x = 1$, $y = 2$ into the <<方程组/system of equations>>:
+        $\begin{cases} a + 2b = 4 \quad \text{①} \\ a - 2b = 0 \quad \text{②} \end{cases}$
+        ① $+$ ②: $2a = 4$, $a = 2$
+        Substitute into ②: $2 - 2b = 0$, $b = 1$
+        So $a + b = 2 + 1 = 3$.
+        This problem tests "finding parameters given the <<解/solution>>" — substituting the <<解/solution>> yields a new <<方程组/system of equations>> for $a$ and $b$!
+
+    - number: 2
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        解<<方程组/system of equations>>：
+        $$\begin{cases} \frac{x}{2} + \frac{y}{3} = 2 \\ \frac{x}{4} - \frac{y}{6} = \frac{1}{2} \end{cases}$$
+      questionEn: |
+        Solve the <<方程组/system of equations>>:
+        $$\begin{cases} \frac{x}{2} + \frac{y}{3} = 2 \\ \frac{x}{4} - \frac{y}{6} = \frac{1}{2} \end{cases}$$
+      answer: |
+        ①两边乘以 $6$：$3x + 2y = 12$ ③
+        ②两边乘以 $12$：$3x - 2y = 6$ ④
+        ③ $+$ ④：$6x = 18$，$x = 3$
+        代入③：$9 + 2y = 12$，$2y = 3$，$y = \frac{3}{2}$
+        <<解/solution>>为 $\begin{cases} x = 3 \\ y = \frac{3}{2} \end{cases}$
+        <<检验/verify>>：代入①，$\frac{3}{2} + \frac{1}{2} = 2$，成立；代入②，$\frac{3}{4} - \frac{1}{4} = \frac{1}{2}$，成立。
+      answerEn: |
+        Multiply ① by $6$: $3x + 2y = 12$ ③
+        Multiply ② by $12$: $3x - 2y = 6$ ④
+        ③ $+$ ④: $6x = 18$, $x = 3$
+        Substitute into ③: $9 + 2y = 12$, $2y = 3$, $y = \frac{3}{2}$
+        <<解/solution>> is $\begin{cases} x = 3 \\ y = \frac{3}{2} \end{cases}$
+        <<检验/verify>>: into ①, $\frac{3}{2} + \frac{1}{2} = 2$, true; into ②, $\frac{3}{4} - \frac{1}{4} = \frac{1}{2}$, true.
+      explanation: |
+        先<<去分母/clearing denominators>>，把含分数的<<方程/equation>>化为整数<<系数/coefficient>>的<<方程/equation>>，再用<<加减消元法/elimination by addition or subtraction>>。
+      explanationEn: |
+        First <<去分母/clearing denominators>> to convert fractional <<方程/equation>>s to integer <<系数/coefficient>>s, then apply <<加减消元法/elimination by addition or subtraction>>.
+
+    - number: 3
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        一列快车和一列慢车同时从甲、乙两站相向开出。快车每小时行 $80$ 千米，慢车每小时行 $60$ 千米。两车在途中相遇时，快车比慢车多行了 $40$ 千米。求甲、乙两站之间的距离。
+      questionEn: |
+        A fast train and a slow train depart simultaneously from stations A and B heading toward each other. The fast train travels at $80$ km/h and the slow train at $60$ km/h. When they meet, the fast train has traveled $40$ km more than the slow train. Find the distance between stations A and B.
+      answer: |
+        设相遇时快车行了 $x$ 千米，慢车行了 $y$ 千米。
+        $\begin{cases} x - y = 40 \quad \text{①（快车比慢车多行 $40$ 千米）} \\ \frac{x}{80} = \frac{y}{60} \quad \text{②（时间相同）} \end{cases}$
+        由②得 $60x = 80y$，即 $3x = 4y$，$x = \frac{4y}{3}$ ③
+        代入①：$\frac{4y}{3} - y = 40$，$\frac{y}{3} = 40$，$y = 120$
+        $x = \frac{4 \times 120}{3} = 160$
+        甲、乙两站之间的距离 $= x + y = 160 + 120 = 280$ 千米。
+        <<检验/verify>>：快车时间 $= \frac{160}{80} = 2$ 小时，慢车时间 $= \frac{120}{60} = 2$ 小时，时间相同，正确。
+      answerEn: |
+        Let the fast train travel $x$ km and the slow train travel $y$ km when they meet.
+        $\begin{cases} x - y = 40 \quad \text{① (fast train travels $40$ km more)} \\ \frac{x}{80} = \frac{y}{60} \quad \text{② (same travel time)} \end{cases}$
+        From ②: $60x = 80y$, i.e., $3x = 4y$, $x = \frac{4y}{3}$ ③
+        Substitute into ①: $\frac{4y}{3} - y = 40$, $\frac{y}{3} = 40$, $y = 120$
+        $x = \frac{4 \times 120}{3} = 160$
+        Distance between A and B $= x + y = 160 + 120 = 280$ km.
+        <<检验/verify>>: fast train time $= \frac{160}{80} = 2$ h, slow train time $= \frac{120}{60} = 2$ h, same time, correct.
+      explanation: |
+        关键隐含条件：两车**同时出发、同时相遇**，说明行驶时间相同。这就是第二个等量关系。
+      explanationEn: |
+        The key hidden condition: the trains **depart simultaneously and meet at the same time**, meaning their travel times are equal. This is the second equal relationship.
+
+    - number: 4
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知关于 $x$、$y$ 的<<方程组/system of equations>> $\begin{cases} 2x + y = k + 1 \\ x + 2y = k - 1 \end{cases}$ 的<<解/solution>>满足 $x + y = 2$，求 $k$ 的值，并求出<<方程组/system of equations>>的<<解/solution>>。
+      questionEn: |
+        Given that the <<解/solution>> of the <<方程组/system of equations>> $\begin{cases} 2x + y = k + 1 \\ x + 2y = k - 1 \end{cases}$ satisfies $x + y = 2$, find the value of $k$ and the <<解/solution>> of the <<方程组/system of equations>>.
+      answer: |
+        ① $+$ ②：$(2x + y) + (x + 2y) = (k + 1) + (k - 1)$
+        $3x + 3y = 2k$
+        $3(x + y) = 2k$
+        因为 $x + y = 2$，所以 $3 \times 2 = 2k$，$k = 3$。
+
+        原<<方程组/system of equations>>变为：$\begin{cases} 2x + y = 4 \quad \text{①} \\ x + 2y = 2 \quad \text{②} \end{cases}$
+        ① $-$ ②：$x - y = 2$ ③
+        又因为 $x + y = 2$ ④
+        ③ $+$ ④：$2x = 4$，$x = 2$
+        代入④：$y = 0$
+
+        所以 $k = 3$，<<解/solution>>为 $\begin{cases} x = 2 \\ y = 0 \end{cases}$。
+        <<检验/verify>>：$2 \times 2 + 0 = 4 = 3 + 1$，成立；$2 + 2 \times 0 = 2 = 3 - 1$，成立；$2 + 0 = 2$，成立。
+      answerEn: |
+        ① $+$ ②: $(2x + y) + (x + 2y) = (k + 1) + (k - 1)$
+        $3x + 3y = 2k$
+        $3(x + y) = 2k$
+        Since $x + y = 2$: $3 \times 2 = 2k$, $k = 3$.
+
+        The <<方程组/system of equations>> becomes: $\begin{cases} 2x + y = 4 \quad \text{①} \\ x + 2y = 2 \quad \text{②} \end{cases}$
+        ① $-$ ②: $x - y = 2$ ③
+        Combined with $x + y = 2$ ④
+        ③ $+$ ④: $2x = 4$, $x = 2$
+        From ④: $y = 0$
+
+        So $k = 3$, and the <<解/solution>> is $\begin{cases} x = 2 \\ y = 0 \end{cases}$.
+        <<检验/verify>>: $2 \times 2 + 0 = 4 = 3 + 1$, true; $2 + 0 = 2 = 3 - 1$, true; $2 + 0 = 2$, true.
+      explanation: |
+        本题考查"整体思想"：不急于分别求 $x$、$y$，而是先把两个<<方程/equation>>相加，利用 $x + y = 2$ 这个条件求出参数 $k$，再回头解<<方程组/system of equations>>。这是中考常见的"已知<<解/solution>>的条件求参数"题型。
+      explanationEn: |
+        This problem tests "holistic thinking": instead of solving for $x$ and $y$ separately right away, first add the two <<方程/equation>>s and use the condition $x + y = 2$ to find the parameter $k$, then solve the <<方程组/system of equations>>. This is a common exam problem type — "finding a parameter given a condition on the <<解/solution>>."

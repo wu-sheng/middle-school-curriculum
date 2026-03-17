@@ -300,11 +300,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
                   return (
                     <div key={i} className="flex items-center gap-2 bg-gray-50 rounded-xl px-4 py-2">
                       <span className="text-xs font-medium text-purple-500 whitespace-nowrap">
-                        {biField(clsR, "name", lang)}
+                        <MathText content={biField(clsR, "name", lang)} />
                       </span>
-                      <span className="text-base text-gray-700">
-                        <MathText content={cls.examples} />
-                      </span>
+                      <ContentBlock obj={clsR} field="examples" lang={lang} className="text-base text-gray-700" />
                     </div>
                   );
                 })}

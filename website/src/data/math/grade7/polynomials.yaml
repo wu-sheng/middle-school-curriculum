@@ -99,24 +99,24 @@ concepts:
     classification:
       - name: "$3x^2$"
         nameEn: "$3x^2$"
-        examples: '$\underbrace{3}_{\text{系数}} \overbrace{x^2}^{\text{次数}=2}$'
-        examplesEn: '$\underbrace{3}_{\text{coeff.}} \overbrace{x^2}^{\text{deg.}=2}$'
+        examples: '$\underset{\small\text{系数}}{3}\;\overset{\small\text{次数}=2}{x^2}$'
+        examplesEn: '$\underset{\small\text{coeff.}}{3}\;\overset{\small\text{deg.}=2}{x^2}$'
       - name: "$-2a^2b$"
         nameEn: "$-2a^2b$"
-        examples: '$\underbrace{-2}_{\text{系数}} a^2 b \quad$ <<次数/degree>>：$2+1=3$'
-        examplesEn: '$\underbrace{-2}_{\text{coeff.}} a^2 b \quad$ <<次数/degree>>: $2+1=3$'
+        examples: '$\underset{\small\text{系数}}{-2}\;\overset{\small\text{次数}=2+1=3}{a^2 b}$'
+        examplesEn: '$\underset{\small\text{coeff.}}{-2}\;\overset{\small\text{deg.}=2+1=3}{a^2 b}$'
       - name: "$y$"
         nameEn: "$y$"
-        examples: '$\underbrace{1}_{\text{系数}} \overbrace{y}^{\text{次数}=1}$（$1$ 省略不写）'
-        examplesEn: '$\underbrace{1}_{\text{coeff.}} \overbrace{y}^{\text{deg.}=1}$ ($1$ is omitted)'
+        examples: '$\underset{\small\text{系数}}{1}\;\overset{\small\text{次数}=1}{y}$（$1$ 省略不写）'
+        examplesEn: '$\underset{\small\text{coeff.}}{1}\;\overset{\small\text{deg.}=1}{y}$ ($1$ is omitted)'
       - name: "$-x^3$"
         nameEn: "$-x^3$"
-        examples: '$\underbrace{-1}_{\text{系数}} \overbrace{x^3}^{\text{次数}=3}$（$-1$ 省略 $1$）'
-        examplesEn: '$\underbrace{-1}_{\text{coeff.}} \overbrace{x^3}^{\text{deg.}=3}$ ($1$ in $-1$ is omitted)'
+        examples: '$\underset{\small\text{系数}}{-1}\;\overset{\small\text{次数}=3}{x^3}$（$-1$ 省略 $1$）'
+        examplesEn: '$\underset{\small\text{coeff.}}{-1}\;\overset{\small\text{deg.}=3}{x^3}$ ($1$ in $-1$ is omitted)'
       - name: "$5$"
         nameEn: "$5$"
-        examples: '$\underbrace{5}_{\text{系数}}$，<<次数/degree>>为 $0$（无字母项）'
-        examplesEn: '$\underbrace{5}_{\text{coeff.}}$, <<次数/degree>> is $0$ (no letters)'
+        examples: '$\underset{\small\text{系数}}{5}$，<<次数/degree>>为 $0$（无字母项）'
+        examplesEn: '$\underset{\small\text{coeff.}}{5}$, <<次数/degree>> is $0$ (no letters)'
     summary: |
       特别注意：当<<系数/coefficient>>是 $1$ 或 $-1$ 时，"$1$"通常省略不写，如 $x$ 的<<系数/coefficient>>是 $1$，$-ab$ 的<<系数/coefficient>>是 $-1$。
     summaryEn: |

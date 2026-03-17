@@ -1,0 +1,746 @@
+title: 平面直角坐标系
+titleEn: Cartesian Coordinate System
+chapter: 9
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 60-80分钟学习 + 40分钟练习
+targetAudience: 七年级下学期学生，已学习数轴和有理数
+
+objectives:
+  - 理解<<有序数对/ordered pair>>的概念，能用<<有序数对/ordered pair>>表示物体的位置
+  - 理解<<平面直角坐标系/Cartesian coordinate system>>的构成，知道<<x轴/x-axis>>、<<y轴/y-axis>>、<<原点/origin>>和四个<<象限/quadrant>>
+  - 能在<<平面直角坐标系/Cartesian coordinate system>>中根据<<坐标/coordinates>>确定点的位置，也能根据点的位置写出其<<坐标/coordinates>>
+  - 了解各<<象限/quadrant>>内点的<<坐标/coordinates>>的符号特征
+  - 能用<<坐标/coordinates>>表示地理位置
+  - 掌握点的<<平移/translation>>在<<坐标/coordinates>>上的变化规律
+  - 能利用<<坐标/coordinates>>描述简单图形的位置和变换
+objectivesEn:
+  - Understand the concept of <<有序数对/ordered pair>> and use <<有序数对/ordered pair>>s to represent the position of objects
+  - Understand the structure of the <<平面直角坐标系/Cartesian coordinate system>>, including the <<x轴/x-axis>>, <<y轴/y-axis>>, <<原点/origin>>, and four <<象限/quadrant>>s
+  - Be able to locate a point in the <<平面直角坐标系/Cartesian coordinate system>> given its <<坐标/coordinates>>, and write the <<坐标/coordinates>> of a given point
+  - Know the sign patterns of <<坐标/coordinates>> in each <<象限/quadrant>>
+  - Be able to use <<坐标/coordinates>> to represent geographic locations
+  - Master the rules for how <<坐标/coordinates>> change under <<平移/translation>>
+  - Be able to use <<坐标/coordinates>> to describe the position and transformation of simple figures
+
+prerequisites:
+  title: 从<<数轴/number line>>到<<平面直角坐标系/Cartesian coordinate system>>
+  titleEn: From the <<数轴/number line>> to the <<平面直角坐标系/Cartesian coordinate system>>
+  intro: |
+    在第一章中，我们学过用<<数轴/number line>>表示数。<<数轴/number line>>上的每一个点对应一个实数，一个实数也对应<<数轴/number line>>上唯一的一个点。但是，<<数轴/number line>>只有一条线，只能确定"一维"的位置。
+  introEn: |
+    In Chapter 1, we learned to represent numbers on a <<数轴/number line>>. Each point on the <<数轴/number line>> corresponds to a real number, and each real number corresponds to a unique point on the <<数轴/number line>>. However, a <<数轴/number line>> is only one line and can only determine positions in "one dimension."
+  knownNumbers:
+    - '在<<数轴/number line>>上，用一个数 $3$ 就能确定一个点的位置'
+    - '教室里，只说"第 $3$ 列"不能确定一个同学的位置，还需要知道"第几排"'
+    - '地图上标注一个城市，需要知道<<经度/longitude>>和<<纬度/latitude>>两个数'
+  knownNumbersEn:
+    - 'On a <<数轴/number line>>, a single number $3$ can determine the position of a point'
+    - 'In a classroom, saying only "column $3$" cannot determine a student''s position — we also need to know "which row"'
+    - 'To mark a city on a map, we need two numbers: <<经度/longitude>> and <<纬度/latitude>>'
+  canSolve:
+    - 在<<数轴/number line>>上确定一个点的位置（一维）
+  canSolveEn:
+    - Determine the position of a point on a <<数轴/number line>> (one dimension)
+  cannotSolve:
+    - 在平面上确定一个点的位置（二维）——需要两个数
+    - '电影院里找座位——需要知道"几排几号"'
+    - 地图上找一个地点——需要知道<<经度/longitude>>和<<纬度/latitude>>
+  cannotSolveEn:
+    - 'Determine the position of a point on a plane (two dimensions) — two numbers are needed'
+    - 'Finding a seat in a cinema — need to know "which row and which number"'
+    - 'Finding a location on a map — need to know <<经度/longitude>> and <<纬度/latitude>>'
+  conclusion: |
+    要在平面上确定一个点的位置，一个数是不够的，需要**两个数**。数学上，把这两个有顺序的数组成一个**<<有序数对/ordered pair>>**，记作 $(a, b)$。在此基础上，我们建立**<<平面直角坐标系/Cartesian coordinate system>>**，用两条互相垂直的<<数轴/number line>>来确定平面上任意一个点的位置。
+  conclusionEn: |
+    To determine the position of a point on a plane, one number is not enough — **two numbers** are needed. In mathematics, these two numbers in a specific order form an **<<有序数对/ordered pair>>**, written as $(a, b)$. Building on this, we establish the **<<平面直角坐标系/Cartesian coordinate system>>**, using two mutually perpendicular <<数轴/number line>>s to locate any point on a plane.
+
+concepts:
+  - id: ordered-pair
+    title: <<有序数对/ordered pair>>
+    titleEn: <<有序数对/ordered pair>>
+    content: |
+      用含有两个数的词来表示一个确定的位置，其中各个数表示不同的含义，我们把这种**有顺序的两个数** $a$ 与 $b$ 组成的数对，叫做**<<有序数对/ordered pair>>**，记作 $(a, b)$。
+
+      注意：<<有序数对/ordered pair>>中两个数的**顺序**不能颠倒。$(2, 3)$ 和 $(3, 2)$ 表示的是不同的位置。
+    contentEn: |
+      When we use a pair of numbers to represent a specific position, where each number has a distinct meaning, we call such a pair of numbers $a$ and $b$ **in a specific order** an **<<有序数对/ordered pair>>**, written as $(a, b)$.
+
+      Note: the **order** of the two numbers in an <<有序数对/ordered pair>> cannot be swapped. $(2, 3)$ and $(3, 2)$ represent different positions.
+    examples:
+      - '电影院座位"$5$ 排 $3$ 号"可以表示为<<有序数对/ordered pair>> $(5, 3)$'
+      - '"$5$ 排 $3$ 号"与"$3$ 排 $5$ 号"是不同的座位，即 $(5, 3) \neq (3, 5)$'
+      - '国际象棋中，棋子的位置用列字母和行数字表示，如 $(e, 4)$'
+    examplesEn:
+      - 'Cinema seat "row $5$, number $3$" can be written as <<有序数对/ordered pair>> $(5, 3)$'
+      - '"Row $5$, number $3$" and "row $3$, number $5$" are different seats, i.e., $(5, 3) \neq (3, 5)$'
+      - 'In chess, a piece''s position is described by a column letter and row number, e.g., $(e, 4)$'
+    notes:
+      - '"有序"意味着第一个数和第二个数的意义不同，不能交换'
+      - <<有序数对/ordered pair>>可以表示平面上的位置、棋盘格子等
+    notesEn:
+      - '"Ordered" means the first and second numbers have different meanings and cannot be swapped'
+      - <<有序数对/ordered pair>>s can represent positions on a plane, squares on a board, etc.
+
+  - id: cartesian-coordinate-system
+    title: <<平面直角坐标系/Cartesian coordinate system>>
+    titleEn: <<平面直角坐标系/Cartesian coordinate system>>
+    content: |
+      在平面内，两条互相垂直且有公共<<原点/origin>>的<<数轴/number line>>组成**<<平面直角坐标系/Cartesian coordinate system>>**。
+
+      - 水平方向的<<数轴/number line>>叫做**<<x轴/x-axis>>**（也叫<<横轴/horizontal axis>>），向右为正方向
+      - 竖直方向的<<数轴/number line>>叫做**<<y轴/y-axis>>**（也叫<<纵轴/vertical axis>>），向上为正方向
+      - 两条<<坐标轴/coordinate axes>>的交点叫做**<<原点/origin>>**，用字母 $O$ 表示
+
+      <<平面直角坐标系/Cartesian coordinate system>>把平面分成四个部分，分别叫做**第一<<象限/quadrant>>、第二<<象限/quadrant>>、第三<<象限/quadrant>>、第四<<象限/quadrant>>**。<<坐标轴/coordinate axes>>上的点不属于任何一个<<象限/quadrant>>。
+    contentEn: |
+      In a plane, two mutually perpendicular <<数轴/number line>>s sharing a common <<原点/origin>> form a **<<平面直角坐标系/Cartesian coordinate system>>**.
+
+      - The horizontal <<数轴/number line>> is called the **<<x轴/x-axis>>** (also called the <<横轴/horizontal axis>>), with the positive direction pointing right
+      - The vertical <<数轴/number line>> is called the **<<y轴/y-axis>>** (also called the <<纵轴/vertical axis>>), with the positive direction pointing up
+      - The intersection of the two <<坐标轴/coordinate axes>> is called the **<<原点/origin>>**, denoted by the letter $O$
+
+      The <<平面直角坐标系/Cartesian coordinate system>> divides the plane into four regions called the **first <<象限/quadrant>>, second <<象限/quadrant>>, third <<象限/quadrant>>, and fourth <<象限/quadrant>>**. Points on the <<坐标轴/coordinate axes>> do not belong to any <<象限/quadrant>>.
+    examples:
+      - '<<原点/origin>> $O$ 的<<坐标/coordinates>>是 $(0, 0)$'
+      - '点 $A(3, 2)$ 在第一<<象限/quadrant>>，$x = 3$，$y = 2$'
+      - '点 $B(-1, 4)$ 在第二<<象限/quadrant>>，$x = -1$，$y = 4$'
+      - '点 $C(-2, -3)$ 在第三<<象限/quadrant>>，$x = -2$，$y = -3$'
+      - '点 $D(5, -1)$ 在第四<<象限/quadrant>>，$x = 5$，$y = -1$'
+    examplesEn:
+      - 'The <<坐标/coordinates>> of the <<原点/origin>> $O$ are $(0, 0)$'
+      - 'Point $A(3, 2)$ is in the first <<象限/quadrant>>, with $x = 3$, $y = 2$'
+      - 'Point $B(-1, 4)$ is in the second <<象限/quadrant>>, with $x = -1$, $y = 4$'
+      - 'Point $C(-2, -3)$ is in the third <<象限/quadrant>>, with $x = -2$, $y = -3$'
+      - 'Point $D(5, -1)$ is in the fourth <<象限/quadrant>>, with $x = 5$, $y = -1$'
+    notes:
+      - '第一<<象限/quadrant>>：$(+, +)$；第二<<象限/quadrant>>：$(-, +)$；第三<<象限/quadrant>>：$(-, -)$；第四<<象限/quadrant>>：$(+, -)$'
+      - <<坐标轴/coordinate axes>>上的点不在任何<<象限/quadrant>>内
+      - 写<<坐标/coordinates>>时，先写<<横坐标/x-coordinate>>（$x$），再写<<纵坐标/y-coordinate>>（$y$）
+    notesEn:
+      - 'First <<象限/quadrant>>: $(+, +)$; second <<象限/quadrant>>: $(-, +)$; third <<象限/quadrant>>: $(-, -)$; fourth <<象限/quadrant>>: $(+, -)$'
+      - Points on the <<坐标轴/coordinate axes>> do not belong to any <<象限/quadrant>>
+      - 'When writing <<坐标/coordinates>>, write the <<横坐标/x-coordinate>> ($x$) first, then the <<纵坐标/y-coordinate>> ($y$)'
+
+  - id: coordinates-and-position
+    title: 用<<坐标/coordinates>>表示地理位置
+    titleEn: Representing geographic locations with <<坐标/coordinates>>
+    content: |
+      利用<<平面直角坐标系/Cartesian coordinate system>>可以表示地理位置。一般步骤：
+
+      1. 建立<<坐标系/coordinate system>>——选择合适的<<原点/origin>>、正方向和单位长度
+      2. 在<<坐标系/coordinate system>>中标出已知地点的位置
+      3. 用<<坐标/coordinates>>描述各地点的位置关系
+
+      地图上通常用<<经度/longitude>>和<<纬度/latitude>>来确定地球上任意一点的位置。<<经度/longitude>>相当于<<横坐标/x-coordinate>>，<<纬度/latitude>>相当于<<纵坐标/y-coordinate>>。
+    contentEn: |
+      The <<平面直角坐标系/Cartesian coordinate system>> can be used to represent geographic locations. The general steps are:
+
+      1. Set up a <<坐标系/coordinate system>> — choose a suitable <<原点/origin>>, positive directions, and unit lengths
+      2. Mark the positions of known locations in the <<坐标系/coordinate system>>
+      3. Use <<坐标/coordinates>> to describe the positional relationships among locations
+
+      On maps, <<经度/longitude>> and <<纬度/latitude>> are typically used to determine any point on Earth. <<经度/longitude>> corresponds to the <<横坐标/x-coordinate>>, and <<纬度/latitude>> corresponds to the <<纵坐标/y-coordinate>>.
+    examples:
+      - '以学校为<<原点/origin>>，向东为<<x轴/x-axis>>正方向，向北为<<y轴/y-axis>>正方向，图书馆在学校东 $200$ 米、北 $300$ 米处，记为 $(200, 300)$'
+      - '北京的地理<<坐标/coordinates>>大约是东经 $116°$、北纬 $40°$'
+    examplesEn:
+      - 'Taking the school as the <<原点/origin>>, east as the positive <<x轴/x-axis>> direction, and north as the positive <<y轴/y-axis>> direction, the library at $200$ m east and $300$ m north of the school is written as $(200, 300)$'
+      - 'Beijing''s geographic <<坐标/coordinates>> are approximately $116°$ E longitude and $40°$ N latitude'
+    notes:
+      - 建立<<坐标系/coordinate system>>时，<<原点/origin>>的选取和正方向的规定可以根据实际情况灵活确定
+      - 不同的<<坐标系/coordinate system>>选取方式会导致同一地点的<<坐标/coordinates>>不同，但位置关系不变
+    notesEn:
+      - 'When setting up a <<坐标系/coordinate system>>, the choice of <<原点/origin>> and positive directions can be flexibly determined based on the actual situation'
+      - 'Different choices of <<坐标系/coordinate system>> will give different <<坐标/coordinates>> for the same location, but the positional relationships remain unchanged'
+
+  - id: translation-and-coordinates
+    title: 用<<坐标/coordinates>>表示<<平移/translation>>
+    titleEn: Representing <<平移/translation>> with <<坐标/coordinates>>
+    content: |
+      在<<平面直角坐标系/Cartesian coordinate system>>中，将一个图形进行<<平移/translation>>时，图形上每个点的<<坐标/coordinates>>都按相同的规律变化：
+
+      - 向右<<平移/translation>> $a$ 个单位：<<横坐标/x-coordinate>>加 $a$，<<纵坐标/y-coordinate>>不变，即 $(x, y) \to (x + a, y)$
+      - 向左<<平移/translation>> $a$ 个单位：<<横坐标/x-coordinate>>减 $a$，<<纵坐标/y-coordinate>>不变，即 $(x, y) \to (x - a, y)$
+      - 向上<<平移/translation>> $b$ 个单位：<<横坐标/x-coordinate>>不变，<<纵坐标/y-coordinate>>加 $b$，即 $(x, y) \to (x, y + b)$
+      - 向下<<平移/translation>> $b$ 个单位：<<横坐标/x-coordinate>>不变，<<纵坐标/y-coordinate>>减 $b$，即 $(x, y) \to (x, y - b)$
+    contentEn: |
+      In the <<平面直角坐标系/Cartesian coordinate system>>, when a figure is <<平移/translation>>d, the <<坐标/coordinates>> of every point on the figure change according to the same rule:
+
+      - <<平移/translation>> right by $a$ units: <<横坐标/x-coordinate>> increases by $a$, <<纵坐标/y-coordinate>> unchanged, i.e., $(x, y) \to (x + a, y)$
+      - <<平移/translation>> left by $a$ units: <<横坐标/x-coordinate>> decreases by $a$, <<纵坐标/y-coordinate>> unchanged, i.e., $(x, y) \to (x - a, y)$
+      - <<平移/translation>> up by $b$ units: <<横坐标/x-coordinate>> unchanged, <<纵坐标/y-coordinate>> increases by $b$, i.e., $(x, y) \to (x, y + b)$
+      - <<平移/translation>> down by $b$ units: <<横坐标/x-coordinate>> unchanged, <<纵坐标/y-coordinate>> decreases by $b$, i.e., $(x, y) \to (x, y - b)$
+    examples:
+      - '点 $A(2, 3)$ 向右<<平移/translation>> $4$ 个单位后变为 $A''(6, 3)$'
+      - '点 $B(-1, 5)$ 向下<<平移/translation>> $3$ 个单位后变为 $B''(-1, 2)$'
+      - '三角形三个顶点 $A(1,1)$、$B(3,1)$、$C(2,4)$，整体向左<<平移/translation>> $2$ 个单位后变为 $A''(-1,1)$、$B''(1,1)$、$C''(0,4)$'
+    examplesEn:
+      - 'Point $A(2, 3)$ becomes $A''(6, 3)$ after <<平移/translation>> $4$ units to the right'
+      - 'Point $B(-1, 5)$ becomes $B''(-1, 2)$ after <<平移/translation>> $3$ units down'
+      - 'A triangle with vertices $A(1,1)$, $B(3,1)$, $C(2,4)$ becomes $A''(-1,1)$, $B''(1,1)$, $C''(0,4)$ after <<平移/translation>> $2$ units to the left'
+    notes:
+      - '口诀：左右<<平移/translation>>变<<横坐标/x-coordinate>>，上下<<平移/translation>>变<<纵坐标/y-coordinate>>；右加左减，上加下减'
+      - <<平移/translation>>不改变图形的形状和大小，只改变位置
+    notesEn:
+      - 'Mnemonic: horizontal <<平移/translation>> changes the <<横坐标/x-coordinate>>, vertical <<平移/translation>> changes the <<纵坐标/y-coordinate>>; right/up means add, left/down means subtract'
+      - <<平移/translation>> does not change the shape or size of a figure, only its position
+
+realLife:
+  - category: 电影院座位
+    categoryEn: Cinema seats
+    scenario: '电影院里用"$7$ 排 $12$ 号"来确定一个座位的位置'
+    scenarioEn: 'In a cinema, "row $7$, seat $12$" determines the location of a seat'
+    equation: '<<有序数对/ordered pair>> $(7, 12)$'
+    solution: '用两个有顺序的数唯一确定一个座位的位置'
+    solutionEn: 'Two ordered numbers uniquely determine the position of a seat'
+  - category: 国际象棋棋盘
+    categoryEn: Chess board
+    scenario: 国际象棋用列字母和行数字标记每个格子，如"$e4$"表示第 $e$ 列第 $4$ 行
+    scenarioEn: 'Chess uses a column letter and row number to mark each square, e.g., "$e4$" means column $e$, row $4$'
+    equation: '<<有序数对/ordered pair>> $(e, 4)$'
+    solution: 棋盘上每个格子的位置由列和行两个要素唯一确定
+    solutionEn: Each square on the board is uniquely determined by two elements — column and row
+  - category: 地图经纬度
+    categoryEn: Map coordinates
+    scenario: '北京的地理位置约为东经 $116°$、北纬 $40°$'
+    scenarioEn: 'Beijing''s geographic location is approximately $116°$ E, $40°$ N'
+    equation: '<<坐标/coordinates>> $(116°E, 40°N)$'
+    solution: <<经度/longitude>>和<<纬度/latitude>>构成一个<<有序数对/ordered pair>>，确定地球上一个点
+    solutionEn: <<经度/longitude>> and <<纬度/latitude>> form an <<有序数对/ordered pair>> that locates a point on Earth
+  - category: 电子地图导航
+    categoryEn: Digital map navigation
+    scenario: 手机地图中，起点和终点都用<<坐标/coordinates>>表示，导航软件据此计算路线
+    scenarioEn: 'In a mobile map, both start and end points are represented by <<坐标/coordinates>>, which the navigation software uses to calculate a route'
+    equation: '起点 $(x_1, y_1)$，终点 $(x_2, y_2)$'
+    solution: <<坐标/coordinates>>是现代导航和定位技术的基础
+    solutionEn: <<坐标/coordinates>> form the basis of modern navigation and positioning technology
+
+examples:
+  - type: 1
+    title: 用<<有序数对/ordered pair>>表示位置
+    titleEn: Representing positions with <<有序数对/ordered pair>>s
+    question: |
+      在某班的座位中，小明坐在第 $3$ 列第 $4$ 排，小红坐在第 $4$ 列第 $3$ 排。如果用<<有序数对/ordered pair>> $(列, 排)$ 表示，写出他们的位置。他们的位置相同吗？
+    questionEn: |
+      In a class seating chart, Xiao Ming sits in column $3$, row $4$, and Xiao Hong sits in column $4$, row $3$. If we use <<有序数对/ordered pair>> $(column, row)$ to represent positions, write their positions. Are their positions the same?
+    steps:
+      - '小明的位置：第 $3$ 列第 $4$ 排，用<<有序数对/ordered pair>>表示为 $(3, 4)$'
+      - '小红的位置：第 $4$ 列第 $3$ 排，用<<有序数对/ordered pair>>表示为 $(4, 3)$'
+      - '$(3, 4) \neq (4, 3)$，所以他们的位置不同'
+    stepsEn:
+      - 'Xiao Ming''s position: column $3$, row $4$, represented as <<有序数对/ordered pair>> $(3, 4)$'
+      - 'Xiao Hong''s position: column $4$, row $3$, represented as <<有序数对/ordered pair>> $(4, 3)$'
+      - '$(3, 4) \neq (4, 3)$, so their positions are different'
+    answer: '小明的位置为 $(3, 4)$，小红的位置为 $(4, 3)$，两人位置不同。'
+    answerEn: 'Xiao Ming''s position is $(3, 4)$, Xiao Hong''s position is $(4, 3)$; their positions are different.'
+
+  - type: 2
+    title: 在<<平面直角坐标系/Cartesian coordinate system>>中确定点的位置
+    titleEn: Locating points in the <<平面直角坐标系/Cartesian coordinate system>>
+    question: |
+      在<<平面直角坐标系/Cartesian coordinate system>>中，标出下列各点，并指出它们分别在第几<<象限/quadrant>>（或哪条<<坐标轴/coordinate axes>>上）：
+      $A(3, 2)$，$B(-2, 4)$，$C(-3, -1)$，$D(4, -2)$，$E(0, 3)$，$F(-2, 0)$
+    questionEn: |
+      In the <<平面直角坐标系/Cartesian coordinate system>>, plot the following points and state which <<象限/quadrant>> (or <<坐标轴/coordinate axes>>) each belongs to:
+      $A(3, 2)$, $B(-2, 4)$, $C(-3, -1)$, $D(4, -2)$, $E(0, 3)$, $F(-2, 0)$
+    steps:
+      - '$A(3, 2)$：<<横坐标/x-coordinate>>为正，<<纵坐标/y-coordinate>>为正，在第一<<象限/quadrant>>'
+      - '$B(-2, 4)$：<<横坐标/x-coordinate>>为负，<<纵坐标/y-coordinate>>为正，在第二<<象限/quadrant>>'
+      - '$C(-3, -1)$：<<横坐标/x-coordinate>>为负，<<纵坐标/y-coordinate>>为负，在第三<<象限/quadrant>>'
+      - '$D(4, -2)$：<<横坐标/x-coordinate>>为正，<<纵坐标/y-coordinate>>为负，在第四<<象限/quadrant>>'
+      - '$E(0, 3)$：<<横坐标/x-coordinate>>为 $0$，在<<y轴/y-axis>>上'
+      - '$F(-2, 0)$：<<纵坐标/y-coordinate>>为 $0$，在<<x轴/x-axis>>上'
+    stepsEn:
+      - '$A(3, 2)$: <<横坐标/x-coordinate>> positive, <<纵坐标/y-coordinate>> positive — first <<象限/quadrant>>'
+      - '$B(-2, 4)$: <<横坐标/x-coordinate>> negative, <<纵坐标/y-coordinate>> positive — second <<象限/quadrant>>'
+      - '$C(-3, -1)$: <<横坐标/x-coordinate>> negative, <<纵坐标/y-coordinate>> negative — third <<象限/quadrant>>'
+      - '$D(4, -2)$: <<横坐标/x-coordinate>> positive, <<纵坐标/y-coordinate>> negative — fourth <<象限/quadrant>>'
+      - '$E(0, 3)$: <<横坐标/x-coordinate>> is $0$ — on the <<y轴/y-axis>>'
+      - '$F(-2, 0)$: <<纵坐标/y-coordinate>> is $0$ — on the <<x轴/x-axis>>'
+    answer: '$A$ 在第一<<象限/quadrant>>，$B$ 在第二<<象限/quadrant>>，$C$ 在第三<<象限/quadrant>>，$D$ 在第四<<象限/quadrant>>，$E$ 在<<y轴/y-axis>>上，$F$ 在<<x轴/x-axis>>上。'
+    answerEn: '$A$ is in the first <<象限/quadrant>>, $B$ in the second, $C$ in the third, $D$ in the fourth, $E$ on the <<y轴/y-axis>>, $F$ on the <<x轴/x-axis>>.'
+
+  - type: 3
+    title: 各<<象限/quadrant>>内点的<<坐标/coordinates>>符号特征
+    titleEn: Sign patterns of <<坐标/coordinates>> in each <<象限/quadrant>>
+    question: |
+      点 $P(a, b)$ 在第二<<象限/quadrant>>，则 $a$ 和 $b$ 分别满足什么条件？
+    questionEn: |
+      Point $P(a, b)$ is in the second <<象限/quadrant>>. What conditions must $a$ and $b$ satisfy?
+    steps:
+      - '第二<<象限/quadrant>>在<<x轴/x-axis>>左边、<<y轴/y-axis>>上方'
+      - '<<横坐标/x-coordinate>> $a < 0$（在<<x轴/x-axis>>左边）'
+      - '<<纵坐标/y-coordinate>> $b > 0$（在<<y轴/y-axis>>上方）'
+    stepsEn:
+      - 'The second <<象限/quadrant>> is to the left of the <<x轴/x-axis>> and above the <<y轴/y-axis>>'
+      - '<<横坐标/x-coordinate>> $a < 0$ (left of the <<y轴/y-axis>>)'
+      - '<<纵坐标/y-coordinate>> $b > 0$ (above the <<x轴/x-axis>>)'
+    answer: '$a < 0$ 且 $b > 0$。'
+    answerEn: '$a < 0$ and $b > 0$.'
+
+  - type: 4
+    title: <<坐标轴/coordinate axes>>上点的特征
+    titleEn: Characteristics of points on the <<坐标轴/coordinate axes>>
+    question: |
+      已知点 $M(m + 3, 2m - 4)$ 在<<x轴/x-axis>>上，求 $m$ 的值和点 $M$ 的<<坐标/coordinates>>。
+    questionEn: |
+      Given that point $M(m + 3, 2m - 4)$ is on the <<x轴/x-axis>>, find the value of $m$ and the <<坐标/coordinates>> of $M$.
+    steps:
+      - '点在<<x轴/x-axis>>上，则其<<纵坐标/y-coordinate>>为 $0$'
+      - '所以 $2m - 4 = 0$'
+      - '解方程：$2m = 4$，$m = 2$'
+      - '<<横坐标/x-coordinate>> $= m + 3 = 2 + 3 = 5$'
+      - '点 $M$ 的<<坐标/coordinates>>为 $(5, 0)$'
+    stepsEn:
+      - 'A point on the <<x轴/x-axis>> has <<纵坐标/y-coordinate>> equal to $0$'
+      - 'So $2m - 4 = 0$'
+      - 'Solve: $2m = 4$, $m = 2$'
+      - '<<横坐标/x-coordinate>> $= m + 3 = 2 + 3 = 5$'
+      - 'The <<坐标/coordinates>> of $M$ are $(5, 0)$'
+    answer: '$m = 2$，$M(5, 0)$。'
+    answerEn: '$m = 2$, $M(5, 0)$.'
+
+  - type: 5
+    title: 用<<坐标/coordinates>>表示<<平移/translation>>
+    titleEn: Representing <<平移/translation>> using <<坐标/coordinates>>
+    question: |
+      将点 $A(2, -3)$ 先向右<<平移/translation>> $3$ 个单位，再向上<<平移/translation>> $5$ 个单位，得到点 $A'$。求 $A'$ 的<<坐标/coordinates>>。
+    questionEn: |
+      Point $A(2, -3)$ is first <<平移/translation>>d $3$ units to the right, then $5$ units up, to get point $A'$. Find the <<坐标/coordinates>> of $A'$.
+    steps:
+      - '原来的点 $A(2, -3)$'
+      - '向右<<平移/translation>> $3$ 个单位：<<横坐标/x-coordinate>>加 $3$，得 $(2 + 3, -3) = (5, -3)$'
+      - '向上<<平移/translation>> $5$ 个单位：<<纵坐标/y-coordinate>>加 $5$，得 $(5, -3 + 5) = (5, 2)$'
+    stepsEn:
+      - 'Original point $A(2, -3)$'
+      - '<<平移/translation>> $3$ units right: <<横坐标/x-coordinate>> increases by $3$, giving $(2 + 3, -3) = (5, -3)$'
+      - '<<平移/translation>> $5$ units up: <<纵坐标/y-coordinate>> increases by $5$, giving $(5, -3 + 5) = (5, 2)$'
+    answer: '$A''(5, 2)$。'
+    answerEn: '$A''(5, 2)$.'
+
+  - type: 6
+    title: 用<<坐标/coordinates>>描述图形的<<平移/translation>>
+    titleEn: Describing the <<平移/translation>> of a figure using <<坐标/coordinates>>
+    question: |
+      三角形 $ABC$ 的三个顶点分别为 $A(1, 2)$、$B(4, 2)$、$C(3, 5)$。将三角形 $ABC$ 向左<<平移/translation>> $4$ 个单位、向下<<平移/translation>> $3$ 个单位，求<<平移/translation>>后三个顶点 $A'$、$B'$、$C'$ 的<<坐标/coordinates>>。
+    questionEn: |
+      Triangle $ABC$ has vertices $A(1, 2)$, $B(4, 2)$, $C(3, 5)$. Translate triangle $ABC$ $4$ units to the left and $3$ units down. Find the <<坐标/coordinates>> of the translated vertices $A'$, $B'$, $C'$.
+    steps:
+      - '向左<<平移/translation>> $4$ 个单位：每个点的<<横坐标/x-coordinate>>减 $4$'
+      - '向下<<平移/translation>> $3$ 个单位：每个点的<<纵坐标/y-coordinate>>减 $3$'
+      - '$A(1, 2) \to A''(1-4, 2-3) = A''(-3, -1)$'
+      - '$B(4, 2) \to B''(4-4, 2-3) = B''(0, -1)$'
+      - '$C(3, 5) \to C''(3-4, 5-3) = C''(-1, 2)$'
+    stepsEn:
+      - '<<平移/translation>> $4$ units left: subtract $4$ from each <<横坐标/x-coordinate>>'
+      - '<<平移/translation>> $3$ units down: subtract $3$ from each <<纵坐标/y-coordinate>>'
+      - '$A(1, 2) \to A''(1-4, 2-3) = A''(-3, -1)$'
+      - '$B(4, 2) \to B''(4-4, 2-3) = B''(0, -1)$'
+      - '$C(3, 5) \to C''(3-4, 5-3) = C''(-1, 2)$'
+    answer: '$A''(-3, -1)$，$B''(0, -1)$，$C''(-1, 2)$。'
+    answerEn: '$A''(-3, -1)$, $B''(0, -1)$, $C''(-1, 2)$.'
+
+commonMistakes:
+  - '<<有序数对/ordered pair>>中两个数的顺序写反：例如把"第 $3$ 列第 $5$ 排"写成 $(5, 3)$ 而不是 $(3, 5)$，应先弄清约定的顺序'
+  - '<<象限/quadrant>>的编号顺序搞错：四个<<象限/quadrant>>按逆时针方向编号（从右上角开始），不是顺时针'
+  - '把<<坐标轴/coordinate axes>>上的点说成在某个<<象限/quadrant>>内：<<坐标轴/coordinate axes>>上的点不属于任何<<象限/quadrant>>'
+  - '<<平移/translation>>时搞混加减方向：向右或向上是加，向左或向下是减；记住"右加左减，上加下减"'
+  - '混淆<<横坐标/x-coordinate>>和<<纵坐标/y-coordinate>>：写点的<<坐标/coordinates>>时必须先写 $x$（<<横坐标/x-coordinate>>），再写 $y$（<<纵坐标/y-coordinate>>）'
+  - '<<平移/translation>>图形时只移动了部分顶点：<<平移/translation>>时图形的每个点都要按相同的规则变化'
+commonMistakesEn:
+  - 'Swapping the order of the two numbers in an <<有序数对/ordered pair>>: e.g., writing "column $3$, row $5$" as $(5, 3)$ instead of $(3, 5)$ — always clarify the agreed order first'
+  - 'Getting the numbering order of <<象限/quadrant>>s wrong: the four <<象限/quadrant>>s are numbered counterclockwise starting from the upper right, not clockwise'
+  - 'Saying a point on a <<坐标轴/coordinate axes>> is in a <<象限/quadrant>>: points on the <<坐标轴/coordinate axes>> do not belong to any <<象限/quadrant>>'
+  - 'Confusing the add/subtract direction during <<平移/translation>>: right or up means add, left or down means subtract; remember "right add, left subtract; up add, down subtract"'
+  - 'Confusing <<横坐标/x-coordinate>> and <<纵坐标/y-coordinate>>: when writing <<坐标/coordinates>>, always write $x$ (<<横坐标/x-coordinate>>) first, then $y$ (<<纵坐标/y-coordinate>>)'
+  - 'Only moving some vertices when <<平移/translation>>ing a figure: every point in the figure must change by the same rule'
+
+exercises:
+  timeGuide:
+    total: 40分钟
+    totalEn: 40 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 20分钟
+        timeEn: 20 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        用<<有序数对/ordered pair>>表示"第 $5$ 列第 $2$ 排"的位置：______.
+      questionEn: |
+        Use an <<有序数对/ordered pair>> to represent the position "column $5$, row $2$": ______.
+      correctValue: "(5, 2)"
+      answer: "$(5, 2)$"
+      answerEn: "$(5, 2)$"
+      explanation: |
+        约定第一个数表示列，第二个数表示排，所以"第 $5$ 列第 $2$ 排"用<<有序数对/ordered pair>>表示为 $(5, 2)$。
+      explanationEn: |
+        By convention the first number represents the column and the second the row, so "column $5$, row $2$" is written as $(5, 2)$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<平面直角坐标系/Cartesian coordinate system>>由互相垂直的两条<<数轴/number line>>组成，水平的叫______，竖直的叫______，交点叫做______。
+      questionEn: |
+        A <<平面直角坐标系/Cartesian coordinate system>> consists of two mutually perpendicular <<数轴/number line>>s. The horizontal one is called the ______, the vertical one is called the ______, and their intersection is called the ______.
+      correctValue: "x轴; y轴; 原点"
+      answer: "<<x轴/x-axis>>；<<y轴/y-axis>>；<<原点/origin>>"
+      answerEn: "<<x轴/x-axis>>; <<y轴/y-axis>>; <<原点/origin>>"
+      explanation: |
+        <<平面直角坐标系/Cartesian coordinate system>>的基本组成：<<x轴/x-axis>>（<<横轴/horizontal axis>>）、<<y轴/y-axis>>（<<纵轴/vertical axis>>）和<<原点/origin>> $O$。
+      explanationEn: |
+        The basic components of a <<平面直角坐标系/Cartesian coordinate system>>: <<x轴/x-axis>> (<<横轴/horizontal axis>>), <<y轴/y-axis>> (<<纵轴/vertical axis>>), and <<原点/origin>> $O$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        点 $P(-3, 5)$ 的<<横坐标/x-coordinate>>是______，<<纵坐标/y-coordinate>>是______，它在第______<<象限/quadrant>>。
+      questionEn: |
+        The <<横坐标/x-coordinate>> of point $P(-3, 5)$ is ______, the <<纵坐标/y-coordinate>> is ______, and it is in the ______ <<象限/quadrant>>.
+      correctValue: "-3; 5; 二"
+      answer: "$-3$；$5$；第二<<象限/quadrant>>"
+      answerEn: "$-3$; $5$; second <<象限/quadrant>>"
+      explanation: |
+        <<横坐标/x-coordinate>>为 $-3$（负），<<纵坐标/y-coordinate>>为 $5$（正），符合第二<<象限/quadrant>>的符号特征 $(-, +)$。
+      explanationEn: |
+        <<横坐标/x-coordinate>> is $-3$ (negative), <<纵坐标/y-coordinate>> is $5$ (positive), matching the sign pattern $(-, +)$ of the second <<象限/quadrant>>.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<原点/origin>>的<<坐标/coordinates>>是______。
+      questionEn: |
+        The <<坐标/coordinates>> of the <<原点/origin>> are ______.
+      correctValue: "(0, 0)"
+      answer: "$(0, 0)$"
+      answerEn: "$(0, 0)$"
+      explanation: |
+        <<原点/origin>>是两条<<坐标轴/coordinate axes>>的交点，<<横坐标/x-coordinate>>和<<纵坐标/y-coordinate>>都是 $0$。
+      explanationEn: |
+        The <<原点/origin>> is the intersection of the two <<坐标轴/coordinate axes>>, so both the <<横坐标/x-coordinate>> and <<纵坐标/y-coordinate>> are $0$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        <<有序数对/ordered pair>> $(2, 5)$ 和 $(5, 2)$ 表示的是同一个位置。
+      questionEn: |
+        The <<有序数对/ordered pair>>s $(2, 5)$ and $(5, 2)$ represent the same position.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<有序数对/ordered pair>>是"有序"的，$(2, 5)$ 和 $(5, 2)$ 中两个数的顺序不同，表示不同的位置。
+      explanationEn: |
+        <<有序数对/ordered pair>>s are "ordered." The order of the two numbers in $(2, 5)$ and $(5, 2)$ is different, so they represent different positions.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        点 $(0, -4)$ 在<<y轴/y-axis>>上。
+      questionEn: |
+        The point $(0, -4)$ is on the <<y轴/y-axis>>.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<横坐标/x-coordinate>>为 $0$ 的点在<<y轴/y-axis>>上。点 $(0, -4)$ 的<<横坐标/x-coordinate>>为 $0$，所以它在<<y轴/y-axis>>上。
+      explanationEn: |
+        A point with <<横坐标/x-coordinate>> equal to $0$ lies on the <<y轴/y-axis>>. The <<横坐标/x-coordinate>> of $(0, -4)$ is $0$, so it is on the <<y轴/y-axis>>.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        点 $(-2, 0)$ 在第二<<象限/quadrant>>。
+      questionEn: |
+        The point $(-2, 0)$ is in the second <<象限/quadrant>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        点 $(-2, 0)$ 的<<纵坐标/y-coordinate>>为 $0$，它在<<x轴/x-axis>>上，不属于任何<<象限/quadrant>>。
+      explanationEn: |
+        The <<纵坐标/y-coordinate>> of $(-2, 0)$ is $0$, so it is on the <<x轴/x-axis>> and does not belong to any <<象限/quadrant>>.
+
+    - number: 8
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        点 $P(a, b)$ 在第三<<象限/quadrant>>，则（　）
+      questionEn: |
+        Point $P(a, b)$ is in the third <<象限/quadrant>>. Then ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$a > 0, b > 0$", "$a < 0, b > 0$", "$a < 0, b < 0$", "$a > 0, b < 0$"]
+          correctValue: "$a < 0, b < 0$"
+      answer: "$a < 0, b < 0$"
+      answerEn: "$a < 0, b < 0$"
+      explanation: |
+        第三<<象限/quadrant>>的点的<<横坐标/x-coordinate>>和<<纵坐标/y-coordinate>>都为负数，即 $a < 0$，$b < 0$。
+      explanationEn: |
+        In the third <<象限/quadrant>>, both the <<横坐标/x-coordinate>> and <<纵坐标/y-coordinate>> are negative, i.e., $a < 0$ and $b < 0$.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        将点 $A(1, -2)$ 向上<<平移/translation>> $4$ 个单位后得到的点的<<坐标/coordinates>>是（　）
+      questionEn: |
+        After <<平移/translation>>ing point $A(1, -2)$ up by $4$ units, the resulting <<坐标/coordinates>> are ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$(5, -2)$", "$(1, 2)$", "$(1, -6)$", "$(-3, -2)$"]
+          correctValue: "$(1, 2)$"
+      answer: "$(1, 2)$"
+      answerEn: "$(1, 2)$"
+      explanation: |
+        向上<<平移/translation>> $4$ 个单位，<<横坐标/x-coordinate>>不变，<<纵坐标/y-coordinate>>加 $4$：$(1, -2 + 4) = (1, 2)$。
+      explanationEn: |
+        <<平移/translation>> up by $4$ units: <<横坐标/x-coordinate>> unchanged, <<纵坐标/y-coordinate>> increases by $4$: $(1, -2 + 4) = (1, 2)$.
+
+    - number: 10
+      type: 解答题
+      inputType: blank
+      section: 四、解答题
+      sectionEn: "IV. Short Answer"
+      question: |
+        已知点 $A(a - 1, 2a + 3)$ 在<<y轴/y-axis>>上，求 $a$ 的值和点 $A$ 的<<坐标/coordinates>>。
+      questionEn: |
+        Given that point $A(a - 1, 2a + 3)$ is on the <<y轴/y-axis>>, find the value of $a$ and the <<坐标/coordinates>> of $A$.
+      correctValue: "a = 1, A(0, 5)"
+      answer: "$a = 1$，$A(0, 5)$"
+      answerEn: "$a = 1$, $A(0, 5)$"
+      explanation: |
+        点在<<y轴/y-axis>>上，则<<横坐标/x-coordinate>>为 $0$，所以 $a - 1 = 0$，$a = 1$。
+        <<纵坐标/y-coordinate>> $= 2 \times 1 + 3 = 5$，点 $A$ 的<<坐标/coordinates>>为 $(0, 5)$。
+      explanationEn: |
+        A point on the <<y轴/y-axis>> has <<横坐标/x-coordinate>> equal to $0$, so $a - 1 = 0$, giving $a = 1$.
+        <<纵坐标/y-coordinate>> $= 2 \times 1 + 3 = 5$, so the <<坐标/coordinates>> of $A$ are $(0, 5)$.
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 五、生活应用题
+      sectionEn: "V. Real-Life Application"
+      question: |
+        以小明家为<<原点/origin>>，向东为<<x轴/x-axis>>正方向，向北为<<y轴/y-axis>>正方向，每个单位长度代表 $100$ 米。学校在小明家东 $300$ 米、北 $400$ 米处，公园在小明家西 $200$ 米、南 $100$ 米处。用<<坐标/coordinates>>表示学校和公园的位置。
+      questionEn: |
+        Taking Xiao Ming's home as the <<原点/origin>>, east as the positive <<x轴/x-axis>> direction, and north as the positive <<y轴/y-axis>> direction, with each unit representing $100$ meters. The school is $300$ m east and $400$ m north of his home; the park is $200$ m west and $100$ m south of his home. Write the <<坐标/coordinates>> of the school and the park.
+      answer: |
+        学校在东 $300$ 米（<<横坐标/x-coordinate>> $= 3$），北 $400$ 米（<<纵坐标/y-coordinate>> $= 4$），所以学校的<<坐标/coordinates>>是 $(3, 4)$。
+        公园在西 $200$ 米（<<横坐标/x-coordinate>> $= -2$），南 $100$ 米（<<纵坐标/y-coordinate>> $= -1$），所以公园的<<坐标/coordinates>>是 $(-2, -1)$。
+      answerEn: |
+        The school is $300$ m east (<<横坐标/x-coordinate>> $= 3$) and $400$ m north (<<纵坐标/y-coordinate>> $= 4$), so the school's <<坐标/coordinates>> are $(3, 4)$.
+        The park is $200$ m west (<<横坐标/x-coordinate>> $= -2$) and $100$ m south (<<纵坐标/y-coordinate>> $= -1$), so the park's <<坐标/coordinates>> are $(-2, -1)$.
+      explanation: |
+        向东为正则向西为负，向北为正则向南为负。注意将实际距离除以单位长度 $100$ 米得到<<坐标/coordinates>>值。
+      explanationEn: |
+        East is positive so west is negative; north is positive so south is negative. Divide the actual distance by the unit length $100$ m to get the <<坐标/coordinates>> values.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 六、综合题
+      sectionEn: "VI. Comprehensive Problem"
+      question: |
+        在<<平面直角坐标系/Cartesian coordinate system>>中，正方形 $ABCD$ 的四个顶点分别为 $A(1, 1)$、$B(4, 1)$、$C(4, 4)$、$D(1, 4)$。将正方形向右<<平移/translation>> $2$ 个单位、向下<<平移/translation>> $3$ 个单位。
+
+        (1) 求<<平移/translation>>后的四个顶点 $A'$、$B'$、$C'$、$D'$ 的<<坐标/coordinates>>。
+        (2) <<平移/translation>>后正方形的边长是否改变？说明理由。
+      questionEn: |
+        In the <<平面直角坐标系/Cartesian coordinate system>>, square $ABCD$ has vertices $A(1, 1)$, $B(4, 1)$, $C(4, 4)$, $D(1, 4)$. The square is <<平移/translation>>d $2$ units right and $3$ units down.
+
+        (1) Find the <<坐标/coordinates>> of the translated vertices $A'$, $B'$, $C'$, $D'$.
+        (2) Does the side length of the square change after <<平移/translation>>? Explain.
+      answer: |
+        (1) 向右<<平移/translation>> $2$ 个单位：<<横坐标/x-coordinate>>加 $2$；向下<<平移/translation>> $3$ 个单位：<<纵坐标/y-coordinate>>减 $3$。
+        $A(1, 1) \to A'(3, -2)$
+        $B(4, 1) \to B'(6, -2)$
+        $C(4, 4) \to C'(6, 1)$
+        $D(1, 4) \to D'(3, 1)$
+
+        (2) 边长不变。<<平移/translation>>前边长 $AB = 4 - 1 = 3$；<<平移/translation>>后边长 $A'B' = 6 - 3 = 3$。<<平移/translation>>不改变图形的形状和大小，只改变位置。
+      answerEn: |
+        (1) <<平移/translation>> $2$ units right: add $2$ to the <<横坐标/x-coordinate>>; <<平移/translation>> $3$ units down: subtract $3$ from the <<纵坐标/y-coordinate>>.
+        $A(1, 1) \to A'(3, -2)$
+        $B(4, 1) \to B'(6, -2)$
+        $C(4, 4) \to C'(6, 1)$
+        $D(1, 4) \to D'(3, 1)$
+
+        (2) The side length does not change. Before <<平移/translation>>: $AB = 4 - 1 = 3$; after <<平移/translation>>: $A'B' = 6 - 3 = 3$. <<平移/translation>> does not change the shape or size of a figure, only its position.
+      explanation: |
+        <<平移/translation>>的核心规则：每个顶点的<<横坐标/x-coordinate>>和<<纵坐标/y-coordinate>>分别按相同的规则变化。<<平移/translation>>是一种等距变换，不改变图形的形状和大小。
+      explanationEn: |
+        The core rule of <<平移/translation>>: the <<横坐标/x-coordinate>> and <<纵坐标/y-coordinate>> of every vertex change by the same rule. <<平移/translation>> is an isometric transformation that preserves shape and size.
+
+summary:
+  - "<<有序数对/ordered pair>> $(a, b)$ 是有顺序的两个数组成的数对，顺序不能颠倒"
+  - "<<平面直角坐标系/Cartesian coordinate system>>由两条互相垂直的<<数轴/number line>>（<<x轴/x-axis>>和<<y轴/y-axis>>）组成，交点为<<原点/origin>> $O$"
+  - '四个<<象限/quadrant>>的<<坐标/coordinates>>符号：第一 $(+,+)$，第二 $(-,+)$，第三 $(-,-)$，第四 $(+,-)$'
+  - "<<坐标轴/coordinate axes>>上的点不属于任何<<象限/quadrant>>：<<x轴/x-axis>>上的点<<纵坐标/y-coordinate>>为 $0$，<<y轴/y-axis>>上的点<<横坐标/x-coordinate>>为 $0$"
+  - '<<平移/translation>>规律：右加左减变<<横坐标/x-coordinate>>，上加下减变<<纵坐标/y-coordinate>>'
+  - "<<平移/translation>>不改变图形的形状和大小，只改变位置"
+  - '用<<坐标/coordinates>>可以表示地理位置，关键是确定<<原点/origin>>、正方向和单位长度'
+summaryEn:
+  - "An <<有序数对/ordered pair>> $(a, b)$ is a pair of numbers in a specific order; the order cannot be reversed"
+  - "The <<平面直角坐标系/Cartesian coordinate system>> consists of two mutually perpendicular <<数轴/number line>>s (<<x轴/x-axis>> and <<y轴/y-axis>>), intersecting at the <<原点/origin>> $O$"
+  - 'Sign patterns in the four <<象限/quadrant>>s: first $(+,+)$, second $(-,+)$, third $(-,-)$, fourth $(+,-)$'
+  - "Points on the <<坐标轴/coordinate axes>> do not belong to any <<象限/quadrant>>: points on the <<x轴/x-axis>> have <<纵坐标/y-coordinate>> $0$, points on the <<y轴/y-axis>> have <<横坐标/x-coordinate>> $0$"
+  - '<<平移/translation>> rules: right/left changes the <<横坐标/x-coordinate>> (add/subtract), up/down changes the <<纵坐标/y-coordinate>> (add/subtract)'
+  - "<<平移/translation>> does not change the shape or size of a figure, only its position"
+  - 'Using <<坐标/coordinates>> to represent geographic locations requires specifying the <<原点/origin>>, positive directions, and unit lengths'
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知点 $P(2a + 1, a - 2)$ 在第四<<象限/quadrant>>，则 $a$ 的取值范围是（　）
+      questionEn: |
+        Given that point $P(2a + 1, a - 2)$ is in the fourth <<象限/quadrant>>, the range of $a$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ['$a > -\frac{1}{2}$', '$a < 2$', '$-\frac{1}{2} < a < 2$', '$a > 2$']
+          correctValue: '$-\frac{1}{2} < a < 2$'
+      answer: '$-\frac{1}{2} < a < 2$'
+      answerEn: '$-\frac{1}{2} < a < 2$'
+      explanation: |
+        第四<<象限/quadrant>>的点满足<<横坐标/x-coordinate>>为正、<<纵坐标/y-coordinate>>为负：
+        $2a + 1 > 0$，即 $a > -\frac{1}{2}$
+        $a - 2 < 0$，即 $a < 2$
+        所以 $-\frac{1}{2} < a < 2$。
+      explanationEn: |
+        A point in the fourth <<象限/quadrant>> has positive <<横坐标/x-coordinate>> and negative <<纵坐标/y-coordinate>>:
+        $2a + 1 > 0$, i.e., $a > -\frac{1}{2}$
+        $a - 2 < 0$, i.e., $a < 2$
+        Therefore $-\frac{1}{2} < a < 2$.
+
+    - number: 2
+      type: 提升填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        点 $A(-3, 4)$ 关于<<x轴/x-axis>>对称的点的<<坐标/coordinates>>是______，关于<<y轴/y-axis>>对称的点的<<坐标/coordinates>>是______，关于<<原点/origin>>对称的点的<<坐标/coordinates>>是______。
+      questionEn: |
+        The <<坐标/coordinates>> of the point symmetric to $A(-3, 4)$ with respect to the <<x轴/x-axis>> are ______, with respect to the <<y轴/y-axis>> are ______, and with respect to the <<原点/origin>> are ______.
+      correctValue: "(-3, -4); (3, 4); (3, -4)"
+      answer: "$(-3, -4)$；$(3, 4)$；$(3, -4)$"
+      answerEn: "$(-3, -4)$; $(3, 4)$; $(3, -4)$"
+      explanation: |
+        关于<<x轴/x-axis>>对称：<<横坐标/x-coordinate>>不变，<<纵坐标/y-coordinate>>变号，即 $(-3, 4) \to (-3, -4)$。
+        关于<<y轴/y-axis>>对称：<<横坐标/x-coordinate>>变号，<<纵坐标/y-coordinate>>不变，即 $(-3, 4) \to (3, 4)$。
+        关于<<原点/origin>>对称：<<横坐标/x-coordinate>>和<<纵坐标/y-coordinate>>都变号，即 $(-3, 4) \to (3, -4)$。
+      explanationEn: |
+        Symmetric about the <<x轴/x-axis>>: <<横坐标/x-coordinate>> unchanged, <<纵坐标/y-coordinate>> negated: $(-3, 4) \to (-3, -4)$.
+        Symmetric about the <<y轴/y-axis>>: <<横坐标/x-coordinate>> negated, <<纵坐标/y-coordinate>> unchanged: $(-3, 4) \to (3, 4)$.
+        Symmetric about the <<原点/origin>>: both negated: $(-3, 4) \to (3, -4)$.
+
+    - number: 3
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        在<<平面直角坐标系/Cartesian coordinate system>>中，点 $A(1, 2)$、$B(4, 2)$、$C(4, 6)$ 是平行四边形 $ABCD$ 的三个顶点。求第四个顶点 $D$ 的<<坐标/coordinates>>。（提示：平行四边形的对角线互相平分）
+      questionEn: |
+        In the <<平面直角坐标系/Cartesian coordinate system>>, $A(1, 2)$, $B(4, 2)$, $C(4, 6)$ are three vertices of parallelogram $ABCD$. Find the <<坐标/coordinates>> of the fourth vertex $D$. (Hint: the diagonals of a parallelogram bisect each other.)
+      answer: |
+        在平行四边形 $ABCD$ 中，对角线 $AC$ 和 $BD$ 互相平分。
+        $AC$ 的中点为 $\left(\frac{1+4}{2}, \frac{2+6}{2}\right) = \left(\frac{5}{2}, 4\right)$。
+        设 $D(x, y)$，则 $BD$ 的中点为 $\left(\frac{4+x}{2}, \frac{2+y}{2}\right)$。
+        令两个中点相等：
+        $\frac{4+x}{2} = \frac{5}{2}$，解得 $x = 1$
+        $\frac{2+y}{2} = 4$，解得 $y = 6$
+        所以 $D(1, 6)$。
+      answerEn: |
+        In parallelogram $ABCD$, diagonals $AC$ and $BD$ bisect each other.
+        The midpoint of $AC$ is $\left(\frac{1+4}{2}, \frac{2+6}{2}\right) = \left(\frac{5}{2}, 4\right)$.
+        Let $D(x, y)$; the midpoint of $BD$ is $\left(\frac{4+x}{2}, \frac{2+y}{2}\right)$.
+        Setting the two midpoints equal:
+        $\frac{4+x}{2} = \frac{5}{2}$, so $x = 1$
+        $\frac{2+y}{2} = 4$, so $y = 6$
+        Therefore $D(1, 6)$.
+      explanation: |
+        本题综合考查<<坐标/coordinates>>计算和平行四边形的性质。关键是利用"对角线互相平分"这一性质，列方程求出未知顶点的<<坐标/coordinates>>。
+      explanationEn: |
+        This problem tests <<坐标/coordinates>> computation and parallelogram properties. The key is using the property that diagonals bisect each other to set up equations and find the unknown vertex.
+
+    - number: 4
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        点 $P$ 在<<x轴/x-axis>>上，且到点 $A(0, 3)$ 和点 $B(4, 0)$ 的距离之和最小。求点 $P$ 的<<坐标/coordinates>>及这个最小距离之和。
+      questionEn: |
+        Point $P$ is on the <<x轴/x-axis>>, and the sum of distances from $P$ to $A(0, 3)$ and $B(4, 0)$ is minimized. Find the <<坐标/coordinates>> of $P$ and the minimum sum of distances.
+      answer: |
+        因为 $A(0, 3)$ 在<<y轴/y-axis>>上方，$B(4, 0)$ 在<<x轴/x-axis>>上。
+        取 $A$ 关于<<x轴/x-axis>>的对称点 $A'(0, -3)$。
+        则对于<<x轴/x-axis>>上任意一点 $P$，$PA = PA'$。
+        所以 $PA + PB = PA' + PB \geq A'B$（三角不等式）。
+        当 $P$ 在线段 $A'B$ 上时取等号。
+        $A'B = \sqrt{(4-0)^2 + (0-(-3))^2} = \sqrt{16 + 9} = \sqrt{25} = 5$
+
+        线段 $A'B$ 与<<x轴/x-axis>>的交点即为点 $P$。
+        $A'(0, -3)$ 到 $B(4, 0)$ 的直线斜率为 $\frac{0-(-3)}{4-0} = \frac{3}{4}$。
+        直线方程：$y - 0 = \frac{3}{4}(x - 4)$，即 $y = \frac{3}{4}x - 3$。
+        令 $y = 0$：$\frac{3}{4}x = 3$，$x = 4$。
+        所以 $P(4, 0)$，即 $P$ 与 $B$ 重合，最小距离之和为 $5$。
+      answerEn: |
+        Since $A(0, 3)$ is above the <<x轴/x-axis>> and $B(4, 0)$ is on the <<x轴/x-axis>>.
+        Take the reflection of $A$ across the <<x轴/x-axis>>: $A'(0, -3)$.
+        For any point $P$ on the <<x轴/x-axis>>, $PA = PA'$.
+        So $PA + PB = PA' + PB \geq A'B$ (triangle inequality).
+        Equality holds when $P$ lies on segment $A'B$.
+        $A'B = \sqrt{(4-0)^2 + (0-(-3))^2} = \sqrt{16 + 9} = \sqrt{25} = 5$
+
+        Point $P$ is the intersection of segment $A'B$ with the <<x轴/x-axis>>.
+        The slope from $A'(0, -3)$ to $B(4, 0)$ is $\frac{0-(-3)}{4-0} = \frac{3}{4}$.
+        Line equation: $y = \frac{3}{4}x - 3$.
+        Setting $y = 0$: $\frac{3}{4}x = 3$, $x = 4$.
+        So $P(4, 0)$, meaning $P$ coincides with $B$, and the minimum sum of distances is $5$.
+      explanation: |
+        这是经典的"将军饮马"问题（最短路径问题）。利用<<坐标/coordinates>>中的对称性，将求最小距离之和转化为求两点之间的直线距离。本题中 $B$ 恰好在<<x轴/x-axis>>上，所以最优点 $P$ 与 $B$ 重合。
+      explanationEn: |
+        This is the classic "Horse Drinking" problem (shortest path problem). Using symmetry in <<坐标/coordinates>>, the minimization of the sum of distances is transformed into finding the straight-line distance between two points. In this problem, $B$ happens to be on the <<x轴/x-axis>>, so the optimal point $P$ coincides with $B$.

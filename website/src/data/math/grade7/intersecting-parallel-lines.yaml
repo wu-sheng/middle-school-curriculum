@@ -1,0 +1,874 @@
+title: 相交线与平行线
+titleEn: Intersecting and Parallel Lines
+chapter: 7
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 50-70分钟学习 + 35分钟练习
+targetAudience: 七年级下学期学生，已学习几何图形初步
+
+objectives:
+  - 理解<<对顶角/vertical angle>>的概念，掌握<<对顶角/vertical angle>>相等的性质
+  - 理解<<邻补角/supplementary adjacent angle>>的概念，掌握<<邻补角/supplementary adjacent angle>>互补的性质
+  - 掌握<<垂线/perpendicular line>>的概念和性质，理解<<点到直线的距离/distance from a point to a line>>
+  - 认识<<同位角/corresponding angle>>、<<内错角/alternate interior angle>>、<<同旁内角/co-interior angle>>
+  - 掌握<<平行线/parallel lines>>的判定方法和性质定理
+  - 理解<<命题/proposition>>、<<定理/theorem>>、<<证明/proof>>的基本概念，初步学会简单的几何推理
+objectivesEn:
+  - Understand the concept of <<对顶角/vertical angle>>s and master the property that <<对顶角/vertical angle>>s are equal
+  - Understand the concept of <<邻补角/supplementary adjacent angle>>s and master the property that they are supplementary
+  - Master the concept and properties of <<垂线/perpendicular line>>s, and understand <<点到直线的距离/distance from a point to a line>>
+  - Recognize <<同位角/corresponding angle>>s, <<内错角/alternate interior angle>>s, and <<同旁内角/co-interior angle>>s
+  - Master the criteria and properties of <<平行线/parallel lines>>
+  - Understand the basic concepts of <<命题/proposition>>s, <<定理/theorem>>s, and <<证明/proof>>s, and learn simple geometric reasoning
+
+prerequisites:
+  title: 从已有知识出发——两条直线相遇会怎样？
+  titleEn: "Starting from what you know — what happens when two lines meet?"
+  intro: |
+    在上一章中，我们学习了直线、射线、线段和角的基本概念。现在我们来研究两条直线的位置关系。
+  introEn: |
+    In the previous chapter, we learned the basic concepts of lines, rays, segments, and angles. Now we will study the positional relationships between two lines.
+  knownNumbers:
+    - "<<角/angle>>的概念、表示方法和度量"
+    - "<<余角/complementary angle>>和<<补角/supplementary angle>>的概念和性质"
+    - "两点确定一条<<直线/straight line>>，两点之间<<线段/line segment>>最短"
+  knownNumbersEn:
+    - "The concept, notation, and measurement of <<角/angle>>s"
+    - "The concepts and properties of <<余角/complementary angle>>s and <<补角/supplementary angle>>s"
+    - "Two points determine a <<直线/straight line>>; the <<线段/line segment>> is the shortest path between two points"
+  canSolve:
+    - 计算两个互补或互余的<<角/angle>>
+    - 用字母表示<<角/angle>>，并进行<<角/angle>>的加减运算
+    - 识别<<直角/right angle>>、<<锐角/acute angle>>、<<钝角/obtuse angle>>
+  canSolveEn:
+    - "Calculate two supplementary or complementary <<角/angle>>s"
+    - "Use letters to denote <<角/angle>>s and perform addition and subtraction of <<角/angle>>s"
+    - "Identify <<直角/right angle>>s, <<锐角/acute angle>>s, and <<钝角/obtuse angle>>s"
+  cannotSolve:
+    - 两条直线相交时形成的<<角/angle>>之间有什么特殊关系？
+    - 什么是<<垂直/perpendicular>>？<<垂线段/perpendicular segment>>有什么特殊性质？
+    - 怎样判断两条直线<<平行/parallel>>？<<平行线/parallel lines>>有什么性质？
+    - 什么是<<命题/proposition>>？怎样进行几何<<证明/proof>>？
+  cannotSolveEn:
+    - "What special relationships exist among the <<角/angle>>s formed when two lines intersect?"
+    - "What is <<垂直/perpendicular>>? What special properties does a <<垂线段/perpendicular segment>> have?"
+    - "How to determine if two lines are <<平行/parallel>>? What properties do <<平行线/parallel lines>> have?"
+    - "What is a <<命题/proposition>>? How to write a geometric <<证明/proof>>?"
+  conclusion: |
+    本章将从两条直线相交出发，研究<<对顶角/vertical angle>>、<<邻补角/supplementary adjacent angle>>、<<垂线/perpendicular line>>，再到<<平行线/parallel lines>>的判定与性质，建立系统的几何推理能力。
+  conclusionEn: |
+    This chapter starts from two intersecting lines, studies <<对顶角/vertical angle>>s, <<邻补角/supplementary adjacent angle>>s, and <<垂线/perpendicular line>>s, then moves to the criteria and properties of <<平行线/parallel lines>>, building systematic geometric reasoning skills.
+
+concepts:
+  - id: vertical-and-adjacent-angles
+    title: <<对顶角/vertical angle>>与<<邻补角/supplementary adjacent angle>>
+    titleEn: "<<对顶角/vertical angle>>s and <<邻补角/supplementary adjacent angle>>s"
+    content: |
+      两条<<直线/straight line>>相交，形成 $4$ 个<<角/angle>>。
+
+      **<<邻补角/supplementary adjacent angle>>**：
+      - 两个<<角/angle>>共用一条<<边/side>>，另一条<<边/side>>互为反向延长线，则这两个<<角/angle>>互为<<邻补角/supplementary adjacent angle>>。
+      - <<邻补角/supplementary adjacent angle>>互补，即 $\angle 1 + \angle 2 = 180°$。
+
+      **<<对顶角/vertical angle>>**：
+      - 两个<<角/angle>>的两条<<边/side>>互为反向延长线，则这两个<<角/angle>>互为<<对顶角/vertical angle>>。
+      - **<<对顶角/vertical angle>>相等**：$\angle 1 = \angle 3$，$\angle 2 = \angle 4$。
+
+      推导过程：因为 $\angle 1 + \angle 2 = 180°$，$\angle 2 + \angle 3 = 180°$，所以 $\angle 1 = \angle 3$。
+    contentEn: |
+      Two <<直线/straight line>>s intersect to form $4$ <<角/angle>>s.
+
+      **<<邻补角/supplementary adjacent angle>>s**:
+      - Two <<角/angle>>s share one <<边/side>>, and their other <<边/side>>s are opposite extensions of each other; such <<角/angle>>s are <<邻补角/supplementary adjacent angle>>s.
+      - <<邻补角/supplementary adjacent angle>>s are supplementary: $\angle 1 + \angle 2 = 180°$.
+
+      **<<对顶角/vertical angle>>s**:
+      - Two <<角/angle>>s whose <<边/side>>s are opposite extensions of each other are <<对顶角/vertical angle>>s.
+      - **<<对顶角/vertical angle>>s are equal**: $\angle 1 = \angle 3$, $\angle 2 = \angle 4$.
+
+      Derivation: Since $\angle 1 + \angle 2 = 180°$ and $\angle 2 + \angle 3 = 180°$, we get $\angle 1 = \angle 3$.
+    examples:
+      - 两条直线相交形成 $4$ 个<<角/angle>>，其中 $\angle 1 = 50°$，则 $\angle 2 = 130°$（<<邻补角/supplementary adjacent angle>>），$\angle 3 = 50°$（<<对顶角/vertical angle>>）
+      - 剪刀张开时，两个刀刃对侧的<<角/angle>>是<<对顶角/vertical angle>>，它们相等
+    examplesEn:
+      - "Two lines intersect forming $4$ <<角/angle>>s; if $\\angle 1 = 50°$, then $\\angle 2 = 130°$ (<<邻补角/supplementary adjacent angle>>), $\\angle 3 = 50°$ (<<对顶角/vertical angle>>)"
+      - "When scissors open, the <<角/angle>>s on opposite sides of the blades are <<对顶角/vertical angle>>s and are equal"
+    hasVisualization: true
+
+  - id: perpendicular-lines
+    title: <<垂线/perpendicular line>>
+    titleEn: <<垂线/perpendicular line>>s
+    content: |
+      **<<垂直/perpendicular>>的定义**：
+      - 当两条<<直线/straight line>>相交所成的<<角/angle>>中有一个是<<直角/right angle>>时，就说这两条<<直线/straight line>>互相**<<垂直/perpendicular>>**。
+      - 记作 $a \perp b$，读作「$a$ 垂直于 $b$」。交点叫做**<<垂足/foot of perpendicular>>**。
+
+      **<<垂线/perpendicular line>>的性质**：
+      1. 过一点有且只有一条<<直线/straight line>>与已知<<直线/straight line>><<垂直/perpendicular>>。
+      2. 连接<<直线/straight line>>外一点与<<直线/straight line>>上各点的所有<<线段/line segment>>中，**<<垂线段/perpendicular segment>>最短**。
+
+      **<<点到直线的距离/distance from a point to a line>>**：
+      - 从<<直线/straight line>>外一点向<<直线/straight line>>作<<垂线段/perpendicular segment>>，<<垂线段/perpendicular segment>>的长度叫做<<点到直线的距离/distance from a point to a line>>。
+    contentEn: |
+      **Definition of <<垂直/perpendicular>>**:
+      - When one of the <<角/angle>>s formed by two intersecting <<直线/straight line>>s is a <<直角/right angle>>, the two <<直线/straight line>>s are said to be **<<垂直/perpendicular>>**.
+      - Written as $a \perp b$, read as "$a$ is perpendicular to $b$." The intersection point is called the **<<垂足/foot of perpendicular>>**.
+
+      **Properties of <<垂线/perpendicular line>>s**:
+      1. Through a point, there is one and only one <<直线/straight line>> <<垂直/perpendicular>> to a given <<直线/straight line>>.
+      2. Among all <<线段/line segment>>s connecting a point outside a <<直线/straight line>> to points on that <<直线/straight line>>, the **<<垂线段/perpendicular segment>> is the shortest**.
+
+      **<<点到直线的距离/distance from a point to a line>>**:
+      - The length of the <<垂线段/perpendicular segment>> from a point outside a <<直线/straight line>> to the <<直线/straight line>> is called the <<点到直线的距离/distance from a point to a line>>.
+    examples:
+      - '如果 $a \perp b$，垂足为 $O$，则 $\angle AOB = 90°$'
+      - 从路边的房子到马路最近的距离就是<<垂线段/perpendicular segment>>的长度，即<<点到直线的距离/distance from a point to a line>>
+    examplesEn:
+      - 'If $a \perp b$ with <<垂足/foot of perpendicular>> $O$, then $\angle AOB = 90°$'
+      - "The shortest distance from a house beside a road to the road is the length of the <<垂线段/perpendicular segment>>, i.e., the <<点到直线的距离/distance from a point to a line>>"
+    hasVisualization: true
+
+  - id: angles-formed-by-transversal
+    title: <<同位角/corresponding angle>>、<<内错角/alternate interior angle>>、<<同旁内角/co-interior angle>>
+    titleEn: "<<同位角/corresponding angle>>s, <<内错角/alternate interior angle>>s, and <<同旁内角/co-interior angle>>s"
+    content: |
+      一条<<直线/straight line>>（称为<<截线/transversal>>）与两条<<直线/straight line>>相交，形成 $8$ 个<<角/angle>>。其中有三种特殊的<<角/angle>>对：
+
+      **<<同位角/corresponding angle>>**：在<<截线/transversal>>的同侧，且分别在两条被截<<直线/straight line>>的同方向（都在上方或都在下方）。形如字母「F」。
+
+      **<<内错角/alternate interior angle>>**：在<<截线/transversal>>的两侧，且都在两条被截<<直线/straight line>>之间（内部）。形如字母「Z」或「N」。
+
+      **<<同旁内角/co-interior angle>>**：在<<截线/transversal>>的同侧，且都在两条被截<<直线/straight line>>之间（内部）。形如字母「U」。
+
+      识别技巧：
+      - <<同位角/corresponding angle>>：找「F」形
+      - <<内错角/alternate interior angle>>：找「Z」形
+      - <<同旁内角/co-interior angle>>：找「U」形
+    contentEn: |
+      When a <<直线/straight line>> (called a <<截线/transversal>>) intersects two other <<直线/straight line>>s, $8$ <<角/angle>>s are formed. Among them, there are three special types of <<角/angle>> pairs:
+
+      **<<同位角/corresponding angle>>s**: On the same side of the <<截线/transversal>>, and on the same side (both above or both below) of their respective <<直线/straight line>>s. Shaped like the letter "F."
+
+      **<<内错角/alternate interior angle>>s**: On opposite sides of the <<截线/transversal>>, and both between the two <<直线/straight line>>s (interior). Shaped like the letter "Z" or "N."
+
+      **<<同旁内角/co-interior angle>>s**: On the same side of the <<截线/transversal>>, and both between the two <<直线/straight line>>s (interior). Shaped like the letter "U."
+
+      Recognition tips:
+      - <<同位角/corresponding angle>>s: look for the "F" shape
+      - <<内错角/alternate interior angle>>s: look for the "Z" shape
+      - <<同旁内角/co-interior angle>>s: look for the "U" shape
+    examples:
+      - 一条<<截线/transversal>>与两条<<直线/straight line>>相交，共有 $4$ 对<<同位角/corresponding angle>>、$2$ 对<<内错角/alternate interior angle>>、$2$ 对<<同旁内角/co-interior angle>>
+      - 在梯子与地面和墙壁组成的图形中，可以找到<<同位角/corresponding angle>>、<<内错角/alternate interior angle>>和<<同旁内角/co-interior angle>>
+    examplesEn:
+      - "A <<截线/transversal>> intersecting two <<直线/straight line>>s creates $4$ pairs of <<同位角/corresponding angle>>s, $2$ pairs of <<内错角/alternate interior angle>>s, and $2$ pairs of <<同旁内角/co-interior angle>>s"
+      - "In the figure formed by a ladder with the ground and a wall, one can find <<同位角/corresponding angle>>s, <<内错角/alternate interior angle>>s, and <<同旁内角/co-interior angle>>s"
+    hasVisualization: true
+
+  - id: criteria-for-parallel-lines
+    title: <<平行线/parallel lines>>的判定
+    titleEn: Criteria for <<平行线/parallel lines>>
+    content: |
+      在同一平面内，不相交的两条<<直线/straight line>>叫做**<<平行线/parallel lines>>**，记作 $a \parallel b$，读作「$a$ 平行于 $b$」。
+
+      **<<平行线/parallel lines>>的判定方法**（由<<角/angle>>的关系判断两条<<直线/straight line>><<平行/parallel>>）：
+
+      1. **<<同位角/corresponding angle>>相等，两<<直线/straight line>><<平行/parallel>>**
+         $$\angle 1 = \angle 5 \Rightarrow a \parallel b$$
+
+      2. **<<内错角/alternate interior angle>>相等，两<<直线/straight line>><<平行/parallel>>**
+         $$\angle 3 = \angle 5 \Rightarrow a \parallel b$$
+
+      3. **<<同旁内角/co-interior angle>>互补，两<<直线/straight line>><<平行/parallel>>**
+         $$\angle 3 + \angle 6 = 180° \Rightarrow a \parallel b$$
+
+      **平行公理**：经过<<直线/straight line>>外一点，有且只有一条<<直线/straight line>>与已知<<直线/straight line>><<平行/parallel>>。
+
+      **推论**：如果两条<<直线/straight line>>都与第三条<<直线/straight line>><<平行/parallel>>，那么这两条<<直线/straight line>>也互相<<平行/parallel>>。
+    contentEn: |
+      In the same plane, two <<直线/straight line>>s that do not intersect are called **<<平行线/parallel lines>>**, written as $a \parallel b$, read as "$a$ is parallel to $b$."
+
+      **Criteria for <<平行线/parallel lines>>** (determining two <<直线/straight line>>s are <<平行/parallel>> from <<角/angle>> relationships):
+
+      1. **If <<同位角/corresponding angle>>s are equal, the two <<直线/straight line>>s are <<平行/parallel>>**
+         $$\angle 1 = \angle 5 \Rightarrow a \parallel b$$
+
+      2. **If <<内错角/alternate interior angle>>s are equal, the two <<直线/straight line>>s are <<平行/parallel>>**
+         $$\angle 3 = \angle 5 \Rightarrow a \parallel b$$
+
+      3. **If <<同旁内角/co-interior angle>>s are supplementary, the two <<直线/straight line>>s are <<平行/parallel>>**
+         $$\angle 3 + \angle 6 = 180° \Rightarrow a \parallel b$$
+
+      **Parallel axiom**: Through a point outside a <<直线/straight line>>, there is one and only one <<直线/straight line>> <<平行/parallel>> to the given <<直线/straight line>>.
+
+      **Corollary**: If two <<直线/straight line>>s are both <<平行/parallel>> to a third <<直线/straight line>>, then these two <<直线/straight line>>s are also <<平行/parallel>> to each other.
+    examples:
+      - '如果 $\angle 1 = \angle 2$（<<同位角/corresponding angle>>），则 $a \parallel b$'
+      - '如果 $\angle 3 = \angle 4$（<<内错角/alternate interior angle>>），则 $a \parallel b$'
+      - '如果 $\angle 3 + \angle 5 = 180°$（<<同旁内角/co-interior angle>>），则 $a \parallel b$'
+    examplesEn:
+      - 'If $\angle 1 = \angle 2$ (<<同位角/corresponding angle>>s), then $a \parallel b$'
+      - 'If $\angle 3 = \angle 4$ (<<内错角/alternate interior angle>>s), then $a \parallel b$'
+      - 'If $\angle 3 + \angle 5 = 180°$ (<<同旁内角/co-interior angle>>s), then $a \parallel b$'
+    hasVisualization: true
+
+  - id: properties-of-parallel-lines
+    title: <<平行线/parallel lines>>的性质
+    titleEn: Properties of <<平行线/parallel lines>>
+    content: |
+      <<平行线/parallel lines>>的性质是判定的逆过程（已知<<平行/parallel>>，推出<<角/angle>>的关系）：
+
+      1. **两<<直线/straight line>><<平行/parallel>>，<<同位角/corresponding angle>>相等**
+         $$a \parallel b \Rightarrow \angle 1 = \angle 5$$
+
+      2. **两<<直线/straight line>><<平行/parallel>>，<<内错角/alternate interior angle>>相等**
+         $$a \parallel b \Rightarrow \angle 3 = \angle 5$$
+
+      3. **两<<直线/straight line>><<平行/parallel>>，<<同旁内角/co-interior angle>>互补**
+         $$a \parallel b \Rightarrow \angle 3 + \angle 6 = 180°$$
+
+      **判定与性质的区别**：
+      - **判定**：由<<角/angle>>的关系 → 得到<<平行/parallel>>（条件是<<角/angle>>，结论是<<平行/parallel>>）
+      - **性质**：由<<平行/parallel>> → 得到<<角/angle>>的关系（条件是<<平行/parallel>>，结论是<<角/angle>>）
+    contentEn: |
+      Properties of <<平行线/parallel lines>> are the reverse of the criteria (given <<平行/parallel>>, deduce <<角/angle>> relationships):
+
+      1. **If two <<直线/straight line>>s are <<平行/parallel>>, <<同位角/corresponding angle>>s are equal**
+         $$a \parallel b \Rightarrow \angle 1 = \angle 5$$
+
+      2. **If two <<直线/straight line>>s are <<平行/parallel>>, <<内错角/alternate interior angle>>s are equal**
+         $$a \parallel b \Rightarrow \angle 3 = \angle 5$$
+
+      3. **If two <<直线/straight line>>s are <<平行/parallel>>, <<同旁内角/co-interior angle>>s are supplementary**
+         $$a \parallel b \Rightarrow \angle 3 + \angle 6 = 180°$$
+
+      **Difference between criteria and properties**:
+      - **Criteria**: From <<角/angle>> relationships → conclude <<平行/parallel>> (condition: <<角/angle>>s; conclusion: <<平行/parallel>>)
+      - **Properties**: From <<平行/parallel>> → conclude <<角/angle>> relationships (condition: <<平行/parallel>>; conclusion: <<角/angle>>s)
+    examples:
+      - '已知 $a \parallel b$，<<截线/transversal>> $c$ 与 $a$ 的交角 $\angle 1 = 70°$，则 $\angle 1$ 的<<同位角/corresponding angle>> $= 70°$，<<内错角/alternate interior angle>> $= 70°$，<<同旁内角/co-interior angle>> $= 110°$'
+      - 铁轨的两根轨道是<<平行线/parallel lines>>，枕木是<<截线/transversal>>，因此枕木与两根轨道所成的<<同位角/corresponding angle>>相等
+    examplesEn:
+      - 'Given $a \parallel b$ and <<截线/transversal>> $c$ forming $\angle 1 = 70°$ with $a$, then the <<同位角/corresponding angle>> of $\angle 1$ $= 70°$, the <<内错角/alternate interior angle>> $= 70°$, and the <<同旁内角/co-interior angle>> $= 110°$'
+      - "Railway tracks are <<平行线/parallel lines>> and the sleepers are <<截线/transversal>>s, so the <<同位角/corresponding angle>>s formed by a sleeper and the two tracks are equal"
+    hasVisualization: true
+
+  - id: propositions-theorems-proofs
+    title: <<命题/proposition>>、<<定理/theorem>>与<<证明/proof>>
+    titleEn: "<<命题/proposition>>s, <<定理/theorem>>s, and <<证明/proof>>s"
+    content: |
+      **<<命题/proposition>>**：判断一件事情的语句叫做<<命题/proposition>>。
+
+      **<<命题/proposition>>的结构**：每个<<命题/proposition>>都由**<<条件/condition>>**（「如果」部分）和**<<结论/conclusion>>**（「那么」部分）组成。
+
+      **<<真命题/true proposition>>与<<假命题/false proposition>>**：
+      - <<真命题/true proposition>>：<<条件/condition>>成立时，<<结论/conclusion>>一定成立的<<命题/proposition>>。
+      - <<假命题/false proposition>>：<<条件/condition>>成立时，<<结论/conclusion>>不一定成立的<<命题/proposition>>。要说明一个<<命题/proposition>>是<<假命题/false proposition>>，只需举出一个**<<反例/counterexample>>**。
+
+      **<<定理/theorem>>**：经过推理证实的<<真命题/true proposition>>叫做<<定理/theorem>>。
+
+      **<<证明/proof>>**：用已知条件、<<定理/theorem>>、公理等，按照逻辑推理的方法，一步步推出<<结论/conclusion>>的过程。
+    contentEn: |
+      **<<命题/proposition>>**: A statement that makes a judgment about something is called a <<命题/proposition>>.
+
+      **Structure of a <<命题/proposition>>**: Every <<命题/proposition>> consists of a **<<条件/condition>>** (the "if" part) and a **<<结论/conclusion>>** (the "then" part).
+
+      **<<真命题/true proposition>>s and <<假命题/false proposition>>s**:
+      - <<真命题/true proposition>>: A <<命题/proposition>> whose <<结论/conclusion>> is always true when the <<条件/condition>> holds.
+      - <<假命题/false proposition>>: A <<命题/proposition>> whose <<结论/conclusion>> is not always true when the <<条件/condition>> holds. To show a <<命题/proposition>> is false, one only needs a single **<<反例/counterexample>>**.
+
+      **<<定理/theorem>>**: A <<真命题/true proposition>> that has been verified through reasoning is called a <<定理/theorem>>.
+
+      **<<证明/proof>>**: The process of deriving a <<结论/conclusion>> step by step using known conditions, <<定理/theorem>>s, axioms, and logical reasoning.
+    examples:
+      - '<<命题/proposition>>「如果两个<<角/angle>>是<<对顶角/vertical angle>>，那么它们相等」是<<真命题/true proposition>>，也是<<定理/theorem>>'
+      - '<<命题/proposition>>「如果两个<<角/angle>>互补，那么它们相等」是<<假命题/false proposition>>。<<反例/counterexample>>：$\angle 1 = 60°$，$\angle 2 = 120°$，互补但不相等'
+    examplesEn:
+      - 'The <<命题/proposition>> "If two <<角/angle>>s are <<对顶角/vertical angle>>s, then they are equal" is a <<真命题/true proposition>> and a <<定理/theorem>>'
+      - 'The <<命题/proposition>> "If two <<角/angle>>s are supplementary, then they are equal" is a <<假命题/false proposition>>. <<反例/counterexample>>: $\angle 1 = 60°$, $\angle 2 = 120°$ are supplementary but not equal'
+    hasVisualization: true
+
+realLife:
+  - category: 建筑与工程
+    categoryEn: Architecture and engineering
+    positive: "建筑工人用直角尺检验墙面是否与地面<<垂直/perpendicular>>，利用<<垂线/perpendicular line>>保证建筑结构的稳定性"
+    positiveEn: "Construction workers use a right-angle ruler to check whether a wall is <<垂直/perpendicular>> to the ground, using <<垂线/perpendicular line>>s to ensure structural stability"
+    negative: "自然界中的山坡与水平面不是<<垂直/perpendicular>>关系，不能用<<垂线/perpendicular line>>的性质直接计算坡面距离"
+    negativeEn: "A hillside in nature is not <<垂直/perpendicular>> to the horizontal plane, so the properties of <<垂线/perpendicular line>>s cannot be directly used to calculate slope distances"
+  - category: 道路交通
+    categoryEn: Roads and traffic
+    positive: "铁轨是一对<<平行线/parallel lines>>，枕木是<<截线/transversal>>，保证轨距一致"
+    positiveEn: "Railway tracks are a pair of <<平行线/parallel lines>> and the sleepers are <<截线/transversal>>s, ensuring consistent track gauge"
+    negative: "弯道处的铁轨不再<<平行/parallel>>于直线段铁轨，需要特殊设计"
+    negativeEn: "Tracks at curves are no longer <<平行/parallel>> to straight-section tracks and require special design"
+  - category: 日常生活
+    categoryEn: Daily life
+    positive: "书桌的对边是<<平行/parallel>>的，桌角是<<垂直/perpendicular>>的；格子本的横线与横线<<平行/parallel>>，横线与竖线<<垂直/perpendicular>>"
+    positiveEn: "Opposite edges of a desk are <<平行/parallel>>, and the corners are <<垂直/perpendicular>>; in graph paper, horizontal lines are <<平行/parallel>> to each other, and horizontal and vertical lines are <<垂直/perpendicular>>"
+    negative: "圆形桌面没有<<平行线/parallel lines>>和<<垂线/perpendicular line>>的概念"
+    negativeEn: "A circular tabletop has no concept of <<平行线/parallel lines>> or <<垂线/perpendicular line>>s"
+  - category: 体育运动
+    categoryEn: Sports
+    positive: "跑道的直道部分的边线是<<平行线/parallel lines>>，起跑线与边线<<垂直/perpendicular>>"
+    positiveEn: "The lane markings on the straight part of a running track are <<平行线/parallel lines>>, and the starting line is <<垂直/perpendicular>> to the lane markings"
+    negative: "弯道部分的边线是弧线而非<<直线/straight line>>，不适用<<平行线/parallel lines>>的性质"
+    negativeEn: "The lane markings at curves are arcs, not <<直线/straight line>>s, so the properties of <<平行线/parallel lines>> do not apply"
+
+examples:
+  - type: 1
+    title: <<对顶角/vertical angle>>的计算
+    titleEn: Calculating <<对顶角/vertical angle>>s
+    question: |
+      如图，直线 $AB$ 与直线 $CD$ 相交于点 $O$，$\angle AOC = 40°$。求 $\angle BOD$、$\angle AOD$、$\angle BOC$ 的度数。
+    questionEn: |
+      As shown, line $AB$ and line $CD$ intersect at point $O$, and $\angle AOC = 40°$. Find the measures of $\angle BOD$, $\angle AOD$, and $\angle BOC$.
+    steps:
+      - '$\angle AOC$ 与 $\angle BOD$ 是<<对顶角/vertical angle>>，所以 $\angle BOD = \angle AOC = 40°$'
+      - '$\angle AOC$ 与 $\angle AOD$ 是<<邻补角/supplementary adjacent angle>>，所以 $\angle AOD = 180° - \angle AOC = 180° - 40° = 140°$'
+      - '$\angle BOC$ 与 $\angle AOD$ 是<<对顶角/vertical angle>>，所以 $\angle BOC = \angle AOD = 140°$'
+    stepsEn:
+      - '$\angle AOC$ and $\angle BOD$ are <<对顶角/vertical angle>>s, so $\angle BOD = \angle AOC = 40°$'
+      - '$\angle AOC$ and $\angle AOD$ are <<邻补角/supplementary adjacent angle>>s, so $\angle AOD = 180° - \angle AOC = 180° - 40° = 140°$'
+      - '$\angle BOC$ and $\angle AOD$ are <<对顶角/vertical angle>>s, so $\angle BOC = \angle AOD = 140°$'
+    answer: '$\angle BOD = 40°$，$\angle AOD = 140°$，$\angle BOC = 140°$。'
+    answerEn: '$\angle BOD = 40°$, $\angle AOD = 140°$, $\angle BOC = 140°$.'
+
+  - type: 2
+    title: <<垂线/perpendicular line>>与<<点到直线的距离/distance from a point to a line>>
+    titleEn: <<垂线/perpendicular line>>s and <<点到直线的距离/distance from a point to a line>>
+    question: |
+      如图，点 $P$ 在直线 $l$ 外，$PA$、$PB$、$PC$ 分别是从 $P$ 到直线 $l$ 上的点 $A$、$B$、$C$ 的连线，其中 $PB \perp l$，垂足为 $B$。已知 $PA = 5$ cm，$PB = 3$ cm，$PC = 4$ cm。点 $P$ 到直线 $l$ 的距离是多少？
+    questionEn: |
+      As shown, point $P$ is outside line $l$. $PA$, $PB$, $PC$ are segments from $P$ to points $A$, $B$, $C$ on line $l$, where $PB \perp l$ with <<垂足/foot of perpendicular>> $B$. Given $PA = 5$ cm, $PB = 3$ cm, $PC = 4$ cm. What is the <<点到直线的距离/distance from a point to a line>> from $P$ to $l$?
+    steps:
+      - "因为 $PB \\perp l$，所以 $\\overline{PB}$ 是从 $P$ 到 $l$ 的<<垂线段/perpendicular segment>>"
+      - "<<点到直线的距离/distance from a point to a line>>就是<<垂线段/perpendicular segment>>的长度"
+      - "所以<<点到直线的距离/distance from a point to a line>> $= PB = 3$ cm"
+      - "注意：$PA = 5$ cm 和 $PC = 4$ cm 都大于 $PB = 3$ cm，验证了<<垂线段/perpendicular segment>>最短"
+    stepsEn:
+      - "Since $PB \\perp l$, $\\overline{PB}$ is the <<垂线段/perpendicular segment>> from $P$ to $l$"
+      - "The <<点到直线的距离/distance from a point to a line>> is the length of the <<垂线段/perpendicular segment>>"
+      - "So the <<点到直线的距离/distance from a point to a line>> $= PB = 3$ cm"
+      - "Note: $PA = 5$ cm and $PC = 4$ cm are both greater than $PB = 3$ cm, confirming that the <<垂线段/perpendicular segment>> is the shortest"
+    answer: "点 $P$ 到直线 $l$ 的距离是 $3$ cm。"
+    answerEn: "The distance from point $P$ to line $l$ is $3$ cm."
+
+  - type: 3
+    title: 识别<<同位角/corresponding angle>>、<<内错角/alternate interior angle>>、<<同旁内角/co-interior angle>>
+    titleEn: "Identifying <<同位角/corresponding angle>>s, <<内错角/alternate interior angle>>s, and <<同旁内角/co-interior angle>>s"
+    question: |
+      如图，直线 $a$、$b$ 被直线 $c$ 所截，形成 $8$ 个角。$\angle 1$ 和 $\angle 5$ 是什么角？$\angle 3$ 和 $\angle 5$ 是什么角？$\angle 3$ 和 $\angle 6$ 是什么角？
+    questionEn: |
+      As shown, lines $a$ and $b$ are cut by line $c$, forming $8$ angles. What is the relationship between $\angle 1$ and $\angle 5$? Between $\angle 3$ and $\angle 5$? Between $\angle 3$ and $\angle 6$?
+    steps:
+      - '$\angle 1$ 和 $\angle 5$ 在<<截线/transversal>> $c$ 的同侧，分别在 $a$、$b$ 的同方向，是<<同位角/corresponding angle>>'
+      - '$\angle 3$ 和 $\angle 5$ 在<<截线/transversal>> $c$ 的两侧，都在 $a$、$b$ 之间，是<<内错角/alternate interior angle>>'
+      - '$\angle 3$ 和 $\angle 6$ 在<<截线/transversal>> $c$ 的同侧，都在 $a$、$b$ 之间，是<<同旁内角/co-interior angle>>'
+    stepsEn:
+      - '$\angle 1$ and $\angle 5$ are on the same side of <<截线/transversal>> $c$ and on the same side of lines $a$ and $b$ respectively — they are <<同位角/corresponding angle>>s'
+      - '$\angle 3$ and $\angle 5$ are on opposite sides of <<截线/transversal>> $c$ and both between $a$ and $b$ — they are <<内错角/alternate interior angle>>s'
+      - '$\angle 3$ and $\angle 6$ are on the same side of <<截线/transversal>> $c$ and both between $a$ and $b$ — they are <<同旁内角/co-interior angle>>s'
+    answer: "$\\angle 1$ 和 $\\angle 5$ 是<<同位角/corresponding angle>>；$\\angle 3$ 和 $\\angle 5$ 是<<内错角/alternate interior angle>>；$\\angle 3$ 和 $\\angle 6$ 是<<同旁内角/co-interior angle>>。"
+    answerEn: "$\\angle 1$ and $\\angle 5$ are <<同位角/corresponding angle>>s; $\\angle 3$ and $\\angle 5$ are <<内错角/alternate interior angle>>s; $\\angle 3$ and $\\angle 6$ are <<同旁内角/co-interior angle>>s."
+
+  - type: 4
+    title: 利用<<平行线/parallel lines>>的判定
+    titleEn: Applying criteria for <<平行线/parallel lines>>
+    question: |
+      如图，直线 $a$、$b$ 被直线 $c$ 所截，$\angle 1 = 63°$，$\angle 2 = 63°$。$\angle 1$ 和 $\angle 2$ 是<<同位角/corresponding angle>>。判断 $a \parallel b$ 是否成立，并说明理由。
+    questionEn: |
+      As shown, lines $a$ and $b$ are cut by line $c$, $\angle 1 = 63°$, $\angle 2 = 63°$. $\angle 1$ and $\angle 2$ are <<同位角/corresponding angle>>s. Determine whether $a \parallel b$ and explain.
+    steps:
+      - '因为 $\angle 1 = \angle 2 = 63°$'
+      - '又因为 $\angle 1$ 和 $\angle 2$ 是<<同位角/corresponding angle>>'
+      - '根据「<<同位角/corresponding angle>>相等，两<<直线/straight line>><<平行/parallel>>」'
+      - '所以 $a \parallel b$'
+    stepsEn:
+      - 'Since $\angle 1 = \angle 2 = 63°$'
+      - 'And $\angle 1$ and $\angle 2$ are <<同位角/corresponding angle>>s'
+      - 'By the criterion "if <<同位角/corresponding angle>>s are equal, the two <<直线/straight line>>s are <<平行/parallel>>"'
+      - 'Therefore $a \parallel b$'
+    answer: "$a \\parallel b$。理由：<<同位角/corresponding angle>>相等，两<<直线/straight line>><<平行/parallel>>。"
+    answerEn: "$a \\parallel b$. Reason: <<同位角/corresponding angle>>s are equal, so the two <<直线/straight line>>s are <<平行/parallel>>."
+
+  - type: 5
+    title: 利用<<平行线/parallel lines>>的性质求角
+    titleEn: Using properties of <<平行线/parallel lines>> to find <<角/angle>>s
+    question: |
+      如图，$a \parallel b$，直线 $c$ 是<<截线/transversal>>，$\angle 1 = 110°$。求 $\angle 1$ 的<<同位角/corresponding angle>>、<<内错角/alternate interior angle>>和<<同旁内角/co-interior angle>>的度数。
+    questionEn: |
+      As shown, $a \parallel b$ and line $c$ is a <<截线/transversal>>, $\angle 1 = 110°$. Find the measures of the <<同位角/corresponding angle>>, <<内错角/alternate interior angle>>, and <<同旁内角/co-interior angle>> of $\angle 1$.
+    steps:
+      - '因为 $a \parallel b$，所以<<同位角/corresponding angle>>相等：$\angle 1$ 的<<同位角/corresponding angle>> $= 110°$'
+      - '因为 $a \parallel b$，所以<<内错角/alternate interior angle>>相等：$\angle 1$ 的<<内错角/alternate interior angle>> $= 110°$'
+      - '因为 $a \parallel b$，所以<<同旁内角/co-interior angle>>互补：$\angle 1$ 的<<同旁内角/co-interior angle>> $= 180° - 110° = 70°$'
+    stepsEn:
+      - 'Since $a \parallel b$, <<同位角/corresponding angle>>s are equal: the <<同位角/corresponding angle>> of $\angle 1$ $= 110°$'
+      - 'Since $a \parallel b$, <<内错角/alternate interior angle>>s are equal: the <<内错角/alternate interior angle>> of $\angle 1$ $= 110°$'
+      - 'Since $a \parallel b$, <<同旁内角/co-interior angle>>s are supplementary: the <<同旁内角/co-interior angle>> of $\angle 1$ $= 180° - 110° = 70°$'
+    answer: "<<同位角/corresponding angle>> $= 110°$，<<内错角/alternate interior angle>> $= 110°$，<<同旁内角/co-interior angle>> $= 70°$。"
+    answerEn: "<<同位角/corresponding angle>> $= 110°$, <<内错角/alternate interior angle>> $= 110°$, <<同旁内角/co-interior angle>> $= 70°$."
+
+  - type: 6
+    title: 综合运用判定与性质
+    titleEn: Combining criteria and properties of <<平行线/parallel lines>>
+    question: |
+      如图，$\angle 1 = \angle 2$，$\angle 3 = 72°$。求 $\angle 4$ 的度数。（已知 $\angle 1$ 和 $\angle 2$ 是直线 $a$、$b$ 被直线 $c$ 截得的<<内错角/alternate interior angle>>，$\angle 3$ 和 $\angle 4$ 是直线 $a$、$b$ 被直线 $d$ 截得的<<同旁内角/co-interior angle>>。）
+    questionEn: |
+      As shown, $\angle 1 = \angle 2$ and $\angle 3 = 72°$. Find $\angle 4$. ($\angle 1$ and $\angle 2$ are <<内错角/alternate interior angle>>s formed by lines $a$ and $b$ cut by line $c$; $\angle 3$ and $\angle 4$ are <<同旁内角/co-interior angle>>s formed by lines $a$ and $b$ cut by line $d$.)
+    steps:
+      - '因为 $\angle 1 = \angle 2$（<<内错角/alternate interior angle>>相等）'
+      - '所以 $a \parallel b$（<<内错角/alternate interior angle>>相等，两<<直线/straight line>><<平行/parallel>>）'
+      - '因为 $a \parallel b$，$\angle 3$ 和 $\angle 4$ 是<<同旁内角/co-interior angle>>'
+      - '所以 $\angle 3 + \angle 4 = 180°$（两<<直线/straight line>><<平行/parallel>>，<<同旁内角/co-interior angle>>互补）'
+      - '$\angle 4 = 180° - \angle 3 = 180° - 72° = 108°$'
+    stepsEn:
+      - 'Since $\angle 1 = \angle 2$ (<<内错角/alternate interior angle>>s are equal)'
+      - 'Therefore $a \parallel b$ (if <<内错角/alternate interior angle>>s are equal, the two <<直线/straight line>>s are <<平行/parallel>>)'
+      - 'Since $a \parallel b$, and $\angle 3$ and $\angle 4$ are <<同旁内角/co-interior angle>>s'
+      - 'Therefore $\angle 3 + \angle 4 = 180°$ (if two <<直线/straight line>>s are <<平行/parallel>>, <<同旁内角/co-interior angle>>s are supplementary)'
+      - '$\angle 4 = 180° - \angle 3 = 180° - 72° = 108°$'
+    answer: "$\\angle 4 = 108°$"
+    answerEn: "$\\angle 4 = 108°$"
+
+  - type: 7
+    title: <<命题/proposition>>的判断与<<反例/counterexample>>
+    titleEn: Judging <<命题/proposition>>s and finding <<反例/counterexample>>s
+    question: |
+      判断以下<<命题/proposition>>是<<真命题/true proposition>>还是<<假命题/false proposition>>：
+      (1) 如果两个<<角/angle>>是<<对顶角/vertical angle>>，那么它们相等。
+      (2) 如果两个<<角/angle>>相等，那么它们是<<对顶角/vertical angle>>。
+    questionEn: |
+      Determine whether each <<命题/proposition>> is a <<真命题/true proposition>> or a <<假命题/false proposition>>:
+      (1) If two <<角/angle>>s are <<对顶角/vertical angle>>s, then they are equal.
+      (2) If two <<角/angle>>s are equal, then they are <<对顶角/vertical angle>>s.
+    steps:
+      - "（1）这是<<对顶角/vertical angle>>的性质<<定理/theorem>>，已经证明为真。所以是<<真命题/true proposition>>。"
+      - "（2）两个<<角/angle>>相等，但不一定是<<对顶角/vertical angle>>。<<反例/counterexample>>：$\\triangle ABC$ 中，$\\angle A = 60°$，$\\angle B = 60°$，它们相等但不是<<对顶角/vertical angle>>。所以是<<假命题/false proposition>>。"
+    stepsEn:
+      - "(1) This is the property <<定理/theorem>> of <<对顶角/vertical angle>>s, already proven true. So it is a <<真命题/true proposition>>."
+      - "(2) Two <<角/angle>>s can be equal without being <<对顶角/vertical angle>>s. <<反例/counterexample>>: In $\\triangle ABC$, $\\angle A = 60°$, $\\angle B = 60°$ — they are equal but not <<对顶角/vertical angle>>s. So it is a <<假命题/false proposition>>."
+    answer: "（1）<<真命题/true proposition>>；（2）<<假命题/false proposition>>。"
+    answerEn: "(1) <<真命题/true proposition>>; (2) <<假命题/false proposition>>."
+
+commonMistakes:
+  - '<<对顶角/vertical angle>>一定相等，但相等的<<角/angle>>不一定是<<对顶角/vertical angle>>。不能由"$\angle 1 = \angle 2$"直接断定它们是<<对顶角/vertical angle>>'
+  - '<<点到直线的距离/distance from a point to a line>>是<<垂线段/perpendicular segment>>的长度，不是<<垂线/perpendicular line>>的长度。<<垂线/perpendicular line>>是<<直线/straight line>>，无限长，不能度量'
+  - '混淆<<平行线/parallel lines>>的「判定」和「性质」：判定是由<<角/angle>>推<<平行/parallel>>，性质是由<<平行/parallel>>推<<角/angle>>。方向不能反'
+  - '<<同位角/corresponding angle>>、<<内错角/alternate interior angle>>、<<同旁内角/co-interior angle>>必须是同一条<<截线/transversal>>截两条<<直线/straight line>>形成的，不能跨不同的<<截线/transversal>>配对'
+  - '<<同旁内角/co-interior angle>>互补的前提是两<<直线/straight line>><<平行/parallel>>。如果两<<直线/straight line>>不<<平行/parallel>>，<<同旁内角/co-interior angle>>不一定互补'
+  - '证明两条<<直线/straight line>><<平行/parallel>>时，要写清楚使用的是哪一条判定（<<同位角/corresponding angle>>相等 / <<内错角/alternate interior angle>>相等 / <<同旁内角/co-interior angle>>互补），不能只写"所以<<平行/parallel>>"'
+commonMistakesEn:
+  - '<<对顶角/vertical angle>>s are always equal, but equal <<角/angle>>s are not necessarily <<对顶角/vertical angle>>s. One cannot conclude "$\angle 1$ and $\angle 2$ are <<对顶角/vertical angle>>s" just from "$\angle 1 = \angle 2$"'
+  - '<<点到直线的距离/distance from a point to a line>> is the length of the <<垂线段/perpendicular segment>>, not the length of the <<垂线/perpendicular line>>. A <<垂线/perpendicular line>> is a <<直线/straight line>> of infinite length that cannot be measured'
+  - 'Confusing "criteria" and "properties" of <<平行线/parallel lines>>: criteria go from <<角/angle>>s to <<平行/parallel>>; properties go from <<平行/parallel>> to <<角/angle>>s. The direction cannot be reversed'
+  - '<<同位角/corresponding angle>>s, <<内错角/alternate interior angle>>s, and <<同旁内角/co-interior angle>>s must be formed by the same <<截线/transversal>> cutting two <<直线/straight line>>s — one cannot pair <<角/angle>>s across different <<截线/transversal>>s'
+  - '<<同旁内角/co-interior angle>>s are supplementary only when the two <<直线/straight line>>s are <<平行/parallel>>. If the lines are not <<平行/parallel>>, <<同旁内角/co-interior angle>>s are not necessarily supplementary'
+  - 'When proving two <<直线/straight line>>s are <<平行/parallel>>, clearly state which criterion is used (<<同位角/corresponding angle>>s equal / <<内错角/alternate interior angle>>s equal / <<同旁内角/co-interior angle>>s supplementary) — do not simply write "therefore <<平行/parallel>>"'
+
+exercises:
+  timeGuide:
+    total: 35分钟
+    totalEn: 35 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-7"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "8-9"
+        time: 7分钟
+        timeEn: 7 minutes
+      - range: "10-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        两条直线相交，形成 $2$ 对<<对顶角/vertical angle>>和______对<<邻补角/supplementary adjacent angle>>。
+      questionEn: |
+        Two lines intersect, forming $2$ pairs of <<对顶角/vertical angle>>s and ______ pair(s) of <<邻补角/supplementary adjacent angle>>s.
+      correctValue: "2"
+      answer: "$2$"
+      answerEn: "$2$"
+      explanation: |
+        两条直线相交形成 $4$ 个<<角/angle>>。其中有 $2$ 对<<对顶角/vertical angle>>（对面的两个<<角/angle>>），$2$ 对<<邻补角/supplementary adjacent angle>>（相邻的两个<<角/angle>>各组成一对，但注意每个<<角/angle>>有两个<<邻补角/supplementary adjacent angle>>，实际共 $4$ 对相邻关系，不过按"对"计是 $2$ 对不同的<<邻补角/supplementary adjacent angle>>对）。严格地说是 $4$ 对<<邻补角/supplementary adjacent angle>>关系，但按照教材通常的填法是 $2$ 对。
+      explanationEn: |
+        Two intersecting lines form $4$ <<角/angle>>s. There are $2$ pairs of <<对顶角/vertical angle>>s (opposite <<角/angle>>s) and $2$ pairs of <<邻补角/supplementary adjacent angle>>s (adjacent <<角/angle>>s).
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        如图，直线 $AB$ 与直线 $CD$ 相交于点 $O$，$\angle AOC = 55°$，则 $\angle BOD = $ ______°，$\angle BOC = $ ______°。
+      questionEn: |
+        As shown, line $AB$ and line $CD$ intersect at point $O$, $\angle AOC = 55°$. Then $\angle BOD = $ ______° and $\angle BOC = $ ______°.
+      correctValue: "55,125"
+      answer: "$55°$、$125°$"
+      answerEn: "$55°$, $125°$"
+      explanation: |
+        $\angle BOD$ 与 $\angle AOC$ 是<<对顶角/vertical angle>>，所以 $\angle BOD = 55°$。$\angle BOC$ 与 $\angle AOC$ 是<<邻补角/supplementary adjacent angle>>，所以 $\angle BOC = 180° - 55° = 125°$。
+      explanationEn: |
+        $\angle BOD$ and $\angle AOC$ are <<对顶角/vertical angle>>s, so $\angle BOD = 55°$. $\angle BOC$ and $\angle AOC$ are <<邻补角/supplementary adjacent angle>>s, so $\angle BOC = 180° - 55° = 125°$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        从直线外一点到这条直线的所有连线中，______最短。从直线外一点到这条直线的距离是指______的长度。
+      questionEn: |
+        Among all segments connecting a point outside a line to points on the line, the ______ is the shortest. The distance from a point to a line refers to the length of the ______.
+      correctValue: "垂线段,垂线段"
+      answer: "<<垂线段/perpendicular segment>>、<<垂线段/perpendicular segment>>"
+      answerEn: "<<垂线段/perpendicular segment>>, <<垂线段/perpendicular segment>>"
+      explanation: |
+        <<垂线段/perpendicular segment>>最短是<<垂线/perpendicular line>>的基本性质。<<点到直线的距离/distance from a point to a line>>就是<<垂线段/perpendicular segment>>的长度。
+      explanationEn: |
+        The <<垂线段/perpendicular segment>> being the shortest is a basic property of <<垂线/perpendicular line>>s. The <<点到直线的距离/distance from a point to a line>> is the length of the <<垂线段/perpendicular segment>>.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        已知 $a \parallel b$，<<截线/transversal>> $c$ 截 $a$、$b$，一对<<同旁内角/co-interior angle>>中的一个是 $65°$，则另一个是______°。
+      questionEn: |
+        Given $a \parallel b$, <<截线/transversal>> $c$ cuts $a$ and $b$. One of a pair of <<同旁内角/co-interior angle>>s is $65°$. The other is ______°.
+      correctValue: "115"
+      answer: "$115°$"
+      answerEn: "$115°$"
+      explanation: |
+        两<<直线/straight line>><<平行/parallel>>，<<同旁内角/co-interior angle>>互补，所以另一个 $= 180° - 65° = 115°$。
+      explanationEn: |
+        When two <<直线/straight line>>s are <<平行/parallel>>, <<同旁内角/co-interior angle>>s are supplementary, so the other $= 180° - 65° = 115°$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        相等的角一定是对顶角。
+      questionEn: |
+        Equal angles must be vertical angles.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<对顶角/vertical angle>>相等，但相等的<<角/angle>>不一定是<<对顶角/vertical angle>>。例如等边<<三角形/triangle>>的三个<<角/angle>>都等于 $60°$，但它们不是<<对顶角/vertical angle>>。
+      explanationEn: |
+        <<对顶角/vertical angle>>s are equal, but equal <<角/angle>>s are not necessarily <<对顶角/vertical angle>>s. For example, the three <<角/angle>>s of an equilateral <<三角形/triangle>> are all $60°$, but they are not <<对顶角/vertical angle>>s.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        过一点有且只有一条直线与已知直线垂直。
+      questionEn: |
+        Through a point, there is one and only one line perpendicular to a given line.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        这是<<垂线/perpendicular line>>的基本性质。无论这个点在已知<<直线/straight line>>上还是在<<直线/straight line>>外，过该点都有且只有一条<<垂线/perpendicular line>>。
+      explanationEn: |
+        This is a basic property of <<垂线/perpendicular line>>s. Whether the point is on or outside the given <<直线/straight line>>, there is one and only one <<垂线/perpendicular line>> through that point.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        如果两条直线被第三条直线所截，同位角相等，那么这两条直线平行。
+      questionEn: |
+        If two lines are cut by a third line and the corresponding angles are equal, then the two lines are parallel.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        这就是<<平行线/parallel lines>>判定方法之一：<<同位角/corresponding angle>>相等，两<<直线/straight line>><<平行/parallel>>。
+      explanationEn: |
+        This is one of the criteria for <<平行线/parallel lines>>: if <<同位角/corresponding angle>>s are equal, the two <<直线/straight line>>s are <<平行/parallel>>.
+
+    - number: 8
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        如图，直线 $a \parallel b$，<<截线/transversal>> $c$ 截 $a$、$b$，$\angle 1 = 75°$，则 $\angle 2$ 等于（　）
+      questionEn: |
+        As shown, $a \parallel b$, <<截线/transversal>> $c$ cuts $a$ and $b$, $\angle 1 = 75°$. Then $\angle 2$ equals ( ) (where $\angle 1$ and $\angle 2$ are <<同旁内角/co-interior angle>>s)
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "A. $75°$"
+            - "B. $105°$"
+            - "C. $115°$"
+            - "D. $85°$"
+          correctValue: "B. $105°$"
+      answer: "B"
+      answerEn: "B"
+      explanation: |
+        因为 $a \parallel b$，$\angle 1$ 和 $\angle 2$ 是<<同旁内角/co-interior angle>>，所以 $\angle 1 + \angle 2 = 180°$，即 $\angle 2 = 180° - 75° = 105°$。
+      explanationEn: |
+        Since $a \parallel b$ and $\angle 1$ and $\angle 2$ are <<同旁内角/co-interior angle>>s, $\angle 1 + \angle 2 = 180°$, so $\angle 2 = 180° - 75° = 105°$.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列<<命题/proposition>>中，是<<假命题/false proposition>>的是（　）
+      questionEn: |
+        Among the following <<命题/proposition>>s, which is a <<假命题/false proposition>>? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "A. <<对顶角/vertical angle>>相等"
+            - "B. <<垂线段/perpendicular segment>>最短"
+            - "C. 两条<<直线/straight line>>被第三条<<直线/straight line>>所截，<<同位角/corresponding angle>>相等"
+            - "D. 两<<直线/straight line>><<平行/parallel>>，<<内错角/alternate interior angle>>相等"
+          correctValue: "C. 两条<<直线/straight line>>被第三条<<直线/straight line>>所截，<<同位角/corresponding angle>>相等"
+      answer: "C"
+      answerEn: "C"
+      explanation: |
+        A、B、D 都是<<定理/theorem>>（<<真命题/true proposition>>）。C 是<<假命题/false proposition>>：只有在两条<<直线/straight line>><<平行/parallel>>时，<<同位角/corresponding angle>>才相等。如果两条<<直线/straight line>>不<<平行/parallel>>，被第三条<<直线/straight line>>所截时，<<同位角/corresponding angle>>不一定相等。
+      explanationEn: |
+        A, B, D are all <<定理/theorem>>s (<<真命题/true proposition>>s). C is a <<假命题/false proposition>>: <<同位角/corresponding angle>>s are equal only when the two <<直线/straight line>>s are <<平行/parallel>>. If the lines are not <<平行/parallel>>, the <<同位角/corresponding angle>>s are not necessarily equal.
+
+    - number: 10
+      type: 计算题
+      inputType: open
+      section: 四、计算与应用
+      sectionEn: "IV. Calculation and Application"
+      question: |
+        如图，直线 $AB$、$CD$ 相交于点 $O$，$\overrightarrow{OE}$ 是 $\angle AOC$ 的平分线，$\angle AOC = 70°$。求 $\angle BOE$ 的度数。
+      questionEn: |
+        As shown, lines $AB$ and $CD$ intersect at point $O$, $\overrightarrow{OE}$ is the <<平分线/angle bisector>> of $\angle AOC$, and $\angle AOC = 70°$. Find the measure of $\angle BOE$.
+      answer: |
+        因为 $\overrightarrow{OE}$ 是 $\angle AOC$ 的<<平分线/angle bisector>>，
+        所以 $\angle AOE = \frac{1}{2}\angle AOC = \frac{1}{2} \times 70° = 35°$
+        因为 $\angle AOE + \angle BOE = 180°$（$\angle AOE$ 和 $\angle BOE$ 是<<邻补角/supplementary adjacent angle>>，$A$、$O$、$B$ 在同一直线上）
+        所以 $\angle BOE = 180° - 35° = 145°$
+      answerEn: |
+        Since $\overrightarrow{OE}$ is the <<平分线/angle bisector>> of $\angle AOC$,
+        $\angle AOE = \frac{1}{2}\angle AOC = \frac{1}{2} \times 70° = 35°$
+        Since $\angle AOE + \angle BOE = 180°$ ($\angle AOE$ and $\angle BOE$ are <<邻补角/supplementary adjacent angle>>s, as $A$, $O$, $B$ are collinear),
+        $\angle BOE = 180° - 35° = 145°$
+      explanation: |
+        先用<<平分线/angle bisector>>求出 $\angle AOE$，再利用 $A$、$O$、$B$ 共线，$\angle AOE$ 和 $\angle BOE$ 是<<邻补角/supplementary adjacent angle>>，求 $\angle BOE$。
+      explanationEn: |
+        First use the <<平分线/angle bisector>> to find $\angle AOE$, then use the fact that $A$, $O$, $B$ are collinear and $\angle AOE$ and $\angle BOE$ are <<邻补角/supplementary adjacent angle>>s to find $\angle BOE$.
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算与应用
+      sectionEn: "IV. Calculation and Application"
+      question: |
+        如图，$AB \parallel CD$，直线 $EF$ 分别与 $AB$、$CD$ 交于点 $E$、$F$，$\angle AEF = 50°$。$\overrightarrow{FG}$ 是 $\angle EFD$ 的平分线。求 $\angle EFG$ 的度数。
+      questionEn: |
+        As shown, $AB \parallel CD$, line $EF$ intersects $AB$ and $CD$ at points $E$ and $F$ respectively, and $\angle AEF = 50°$. $\overrightarrow{FG}$ is the <<平分线/angle bisector>> of $\angle EFD$. Find $\angle EFG$.
+      answer: |
+        因为 $AB \parallel CD$，$\angle AEF$ 和 $\angle EFD$ 是<<内错角/alternate interior angle>>，
+        所以 $\angle EFD = \angle AEF = 50°$
+        因为 $\overrightarrow{FG}$ 是 $\angle EFD$ 的<<平分线/angle bisector>>，
+        所以 $\angle EFG = \frac{1}{2}\angle EFD = \frac{1}{2} \times 50° = 25°$
+      answerEn: |
+        Since $AB \parallel CD$, $\angle AEF$ and $\angle EFD$ are <<内错角/alternate interior angle>>s,
+        so $\angle EFD = \angle AEF = 50°$
+        Since $\overrightarrow{FG}$ is the <<平分线/angle bisector>> of $\angle EFD$,
+        $\angle EFG = \frac{1}{2}\angle EFD = \frac{1}{2} \times 50° = 25°$
+      explanation: |
+        先用<<平行线/parallel lines>>性质（<<内错角/alternate interior angle>>相等）求 $\angle EFD$，再用<<平分线/angle bisector>>求 $\angle EFG$。
+      explanationEn: |
+        First use the property of <<平行线/parallel lines>> (<<内错角/alternate interior angle>>s are equal) to find $\angle EFD$, then use the <<平分线/angle bisector>> to find $\angle EFG$.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        如图，$\angle 1 = 50°$，$\angle 2 = 130°$。
+        (1) 判断 $a \parallel b$ 是否成立，并说明理由。
+        (2) 如果直线 $d$ 也截 $a$、$b$，得到一对<<同位角/corresponding angle>> $\angle 3$ 和 $\angle 4$，求 $\angle 3$ 和 $\angle 4$ 的关系。
+        （已知 $\angle 1$ 和 $\angle 2$ 是直线 $a$、$b$ 被直线 $c$ 截得的<<同旁内角/co-interior angle>>。）
+      questionEn: |
+        As shown, $\angle 1 = 50°$ and $\angle 2 = 130°$.
+        (1) Determine whether $a \parallel b$ holds, and explain.
+        (2) If line $d$ also cuts $a$ and $b$, forming a pair of <<同位角/corresponding angle>>s $\angle 3$ and $\angle 4$, find the relationship between $\angle 3$ and $\angle 4$.
+        ($\angle 1$ and $\angle 2$ are <<同旁内角/co-interior angle>>s formed by lines $a$ and $b$ cut by line $c$.)
+      answer: |
+        (1) 因为 $\angle 1 + \angle 2 = 50° + 130° = 180°$，
+        又因为 $\angle 1$ 和 $\angle 2$ 是<<同旁内角/co-interior angle>>，
+        根据「<<同旁内角/co-interior angle>>互补，两<<直线/straight line>><<平行/parallel>>」，
+        所以 $a \parallel b$。
+
+        (2) 因为 $a \parallel b$，
+        根据「两<<直线/straight line>><<平行/parallel>>，<<同位角/corresponding angle>>相等」，
+        所以 $\angle 3 = \angle 4$。
+      answerEn: |
+        (1) Since $\angle 1 + \angle 2 = 50° + 130° = 180°$,
+        and $\angle 1$ and $\angle 2$ are <<同旁内角/co-interior angle>>s,
+        by "if <<同旁内角/co-interior angle>>s are supplementary, the two <<直线/straight line>>s are <<平行/parallel>>,"
+        therefore $a \parallel b$.
+
+        (2) Since $a \parallel b$,
+        by "if two <<直线/straight line>>s are <<平行/parallel>>, <<同位角/corresponding angle>>s are equal,"
+        therefore $\angle 3 = \angle 4$.
+      explanation: |
+        第 (1) 部分用<<平行线/parallel lines>>的判定（<<同旁内角/co-interior angle>>互补），第 (2) 部分用<<平行线/parallel lines>>的性质（<<同位角/corresponding angle>>相等）。综合运用了判定与性质。
+      explanationEn: |
+        Part (1) uses the criterion for <<平行线/parallel lines>> (<<同旁内角/co-interior angle>>s supplementary). Part (2) uses the property of <<平行线/parallel lines>> (<<同位角/corresponding angle>>s equal). This combines both criteria and properties.
+
+summary:
+  - 两条直线相交形成<<对顶角/vertical angle>>和<<邻补角/supplementary adjacent angle>>。<<对顶角/vertical angle>>相等，<<邻补角/supplementary adjacent angle>>互补
+  - <<垂线/perpendicular line>>的定义、性质和<<点到直线的距离/distance from a point to a line>>（<<垂线段/perpendicular segment>>最短）
+  - 一条<<截线/transversal>>截两条<<直线/straight line>>形成的三种<<角/angle>>对：<<同位角/corresponding angle>>（F形）、<<内错角/alternate interior angle>>（Z形）、<<同旁内角/co-interior angle>>（U形）
+  - <<平行线/parallel lines>>的三种判定方法：<<同位角/corresponding angle>>相等、<<内错角/alternate interior angle>>相等、<<同旁内角/co-interior angle>>互补 → 两<<直线/straight line>><<平行/parallel>>
+  - <<平行线/parallel lines>>的三条性质：两<<直线/straight line>><<平行/parallel>> → <<同位角/corresponding angle>>相等、<<内错角/alternate interior angle>>相等、<<同旁内角/co-interior angle>>互补
+  - <<命题/proposition>>由<<条件/condition>>和<<结论/conclusion>>组成；<<假命题/false proposition>>只需举<<反例/counterexample>>；经证明的<<真命题/true proposition>>叫<<定理/theorem>>
+summaryEn:
+  - "Two intersecting lines form <<对顶角/vertical angle>>s and <<邻补角/supplementary adjacent angle>>s. <<对顶角/vertical angle>>s are equal; <<邻补角/supplementary adjacent angle>>s are supplementary"
+  - "Definition and properties of <<垂线/perpendicular line>>s, and <<点到直线的距离/distance from a point to a line>> (the <<垂线段/perpendicular segment>> is the shortest)"
+  - "Three types of <<角/angle>> pairs formed when a <<截线/transversal>> cuts two <<直线/straight line>>s: <<同位角/corresponding angle>>s (F-shape), <<内错角/alternate interior angle>>s (Z-shape), <<同旁内角/co-interior angle>>s (U-shape)"
+  - "Three criteria for <<平行线/parallel lines>>: <<同位角/corresponding angle>>s equal, <<内错角/alternate interior angle>>s equal, <<同旁内角/co-interior angle>>s supplementary → two <<直线/straight line>>s are <<平行/parallel>>"
+  - "Three properties of <<平行线/parallel lines>>: two <<直线/straight line>>s <<平行/parallel>> → <<同位角/corresponding angle>>s equal, <<内错角/alternate interior angle>>s equal, <<同旁内角/co-interior angle>>s supplementary"
+  - "A <<命题/proposition>> consists of <<条件/condition>> and <<结论/conclusion>>; a <<假命题/false proposition>> needs only a <<反例/counterexample>>; a proven <<真命题/true proposition>> is called a <<定理/theorem>>"
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        如图，$AB \parallel CD$，直线 $EF$ 与 $AB$、$CD$ 分别交于点 $M$、$N$，$\angle AME = 40°$。$\overrightarrow{NP}$ 平分 $\angle MND$。则 $\angle MNP$ 等于（　）
+      questionEn: |
+        As shown, $AB \parallel CD$, line $EF$ intersects $AB$ and $CD$ at $M$ and $N$ respectively, $\angle AME = 40°$. $\overrightarrow{NP}$ bisects $\angle MND$. Then $\angle MNP$ equals ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["A. $20°$", "B. $40°$", "C. $70°$", "D. $140°$"]
+          correctValue: "A. $20°$"
+      answer: "A"
+      answerEn: "A"
+      explanation: |
+        因为 $AB \parallel CD$，$\angle AME$ 和 $\angle MND$ 是<<内错角/alternate interior angle>>，所以 $\angle MND = \angle AME = 40°$。
+        因为 $\overrightarrow{NP}$ 平分 $\angle MND$，所以 $\angle MNP = \frac{1}{2}\angle MND = \frac{1}{2} \times 40° = 20°$。
+        此题综合了<<平行线/parallel lines>>性质和<<平分线/angle bisector>>。
+      explanationEn: |
+        Since $AB \parallel CD$, $\angle AME$ and $\angle MND$ are <<内错角/alternate interior angle>>s, so $\angle MND = \angle AME = 40°$.
+        Since $\overrightarrow{NP}$ bisects $\angle MND$, $\angle MNP = \frac{1}{2}\angle MND = \frac{1}{2} \times 40° = 20°$.
+        This combines properties of <<平行线/parallel lines>> with the <<平分线/angle bisector>>.
+
+    - number: 2
+      type: 提升填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        如图，$AB \parallel CD$，$BE$ 平分 $\angle ABC$，$\angle BED = 50°$，$\angle BED$ 和 $\angle ABE$ 是直线 $BE$、$CD$ 的<<同位角/corresponding angle>>关系中 $\angle ABE$ 的<<内错角/alternate interior angle>>关系。若 $\angle ABE$ 和 $\angle BED$ 是<<内错角/alternate interior angle>>（$AB \parallel CD$ 被 $BE$ 截），则 $\angle ABC = $ ______°。
+      questionEn: |
+        As shown, $AB \parallel CD$, $BE$ bisects $\angle ABC$, and $\angle BED = 50°$. Given that $\angle ABE$ and $\angle BED$ are <<内错角/alternate interior angle>>s (formed by $AB \parallel CD$ cut by $BE$), find $\angle ABC = $ ______°.
+      correctValue: "100"
+      answer: "$100°$"
+      answerEn: "$100°$"
+      explanation: |
+        因为 $AB \parallel CD$，$\angle ABE$ 和 $\angle BED$ 是<<内错角/alternate interior angle>>，
+        所以 $\angle ABE = \angle BED = 50°$。
+        因为 $BE$ 平分 $\angle ABC$，所以 $\angle ABC = 2\angle ABE = 2 \times 50° = 100°$。
+      explanationEn: |
+        Since $AB \parallel CD$ and $\angle ABE$ and $\angle BED$ are <<内错角/alternate interior angle>>s,
+        $\angle ABE = \angle BED = 50°$.
+        Since $BE$ bisects $\angle ABC$, $\angle ABC = 2\angle ABE = 2 \times 50° = 100°$.
+
+    - number: 3
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        如图，$AB \parallel CD$，$\angle ABF = 60°$，$\angle DCE = 25°$，点 $F$ 在 $AB$、$CD$ 之间。求 $\angle BFC$ 的度数。
+        （提示：过点 $F$ 作 $FG \parallel AB$，则 $FG \parallel CD$。）
+      questionEn: |
+        As shown, $AB \parallel CD$, $\angle ABF = 60°$, $\angle DCE = 25°$, and point $F$ is between lines $AB$ and $CD$. Find $\angle BFC$.
+        (Hint: Draw $FG \parallel AB$ through point $F$, then $FG \parallel CD$.)
+      answer: |
+        过点 $F$ 作 $FG \parallel AB$。
+        因为 $AB \parallel CD$，$FG \parallel AB$，所以 $FG \parallel CD$（两条<<直线/straight line>>都与第三条<<直线/straight line>><<平行/parallel>>，则它们互相<<平行/parallel>>）。
+
+        因为 $FG \parallel AB$，$\angle ABF$ 和 $\angle BFG$ 是<<内错角/alternate interior angle>>，
+        所以 $\angle BFG = \angle ABF = 60°$。
+
+        因为 $FG \parallel CD$，$\angle DCE$ 和 $\angle CFG$ 是<<内错角/alternate interior angle>>，
+        所以 $\angle CFG = \angle DCE = 25°$。
+
+        $\angle BFC = \angle BFG + \angle CFG = 60° + 25° = 85°$
+      answerEn: |
+        Draw $FG \parallel AB$ through point $F$.
+        Since $AB \parallel CD$ and $FG \parallel AB$, we have $FG \parallel CD$ (if two <<直线/straight line>>s are both <<平行/parallel>> to a third, they are <<平行/parallel>> to each other).
+
+        Since $FG \parallel AB$, $\angle ABF$ and $\angle BFG$ are <<内错角/alternate interior angle>>s,
+        so $\angle BFG = \angle ABF = 60°$.
+
+        Since $FG \parallel CD$, $\angle DCE$ and $\angle CFG$ are <<内错角/alternate interior angle>>s,
+        so $\angle CFG = \angle DCE = 25°$.
+
+        $\angle BFC = \angle BFG + \angle CFG = 60° + 25° = 85°$
+      explanation: |
+        这是中考经典的"中间过一点作平行线"题型。通过辅助线 $FG$ 将问题转化为两个<<平行线/parallel lines>>的<<内错角/alternate interior angle>>问题。
+      explanationEn: |
+        This is a classic exam problem of "drawing a parallel line through an intermediate point." The auxiliary line $FG$ transforms the problem into two <<内错角/alternate interior angle>> problems with <<平行线/parallel lines>>.
+
+    - number: 4
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        判断以下<<命题/proposition>>的真假，若为<<假命题/false proposition>>请举<<反例/counterexample>>：
+        (1) 如果两个<<角/angle>>互补，那么它们是<<邻补角/supplementary adjacent angle>>。
+        (2) 如果 $a \parallel b$，$b \parallel c$，那么 $a \parallel c$。
+        (3) 过一点有且只有一条<<直线/straight line>>与已知<<直线/straight line>><<平行/parallel>>。
+      questionEn: |
+        Determine whether each <<命题/proposition>> is true or false. If false, give a <<反例/counterexample>>:
+        (1) If two <<角/angle>>s are supplementary, then they are <<邻补角/supplementary adjacent angle>>s.
+        (2) If $a \parallel b$ and $b \parallel c$, then $a \parallel c$.
+        (3) Through a point, there is one and only one <<直线/straight line>> <<平行/parallel>> to a given <<直线/straight line>>.
+      answer: |
+        (1) <<假命题/false proposition>>。<<反例/counterexample>>：$\angle 1 = 60°$，$\angle 2 = 120°$，它们互补，但如果它们不共用一条<<边/side>>（例如在不同位置），就不是<<邻补角/supplementary adjacent angle>>。<<邻补角/supplementary adjacent angle>>除了互补，还要求有公共<<顶点/vertex>>和公共<<边/side>>。
+
+        (2) <<真命题/true proposition>>。这是平行公理的推论：如果两条<<直线/straight line>>都与第三条<<直线/straight line>><<平行/parallel>>，那么它们也互相<<平行/parallel>>。
+
+        (3) <<假命题/false proposition>>。此<<命题/proposition>>缺少条件"该点在已知<<直线/straight line>>外"。如果该点在已知<<直线/straight line>>上，则不存在过该点与已知<<直线/straight line>><<平行/parallel>>的<<直线/straight line>>。正确说法是：过<<直线/straight line>>外一点，有且只有一条<<直线/straight line>>与已知<<直线/straight line>><<平行/parallel>>。
+      answerEn: |
+        (1) <<假命题/false proposition>>. <<反例/counterexample>>: $\angle 1 = 60°$, $\angle 2 = 120°$ are supplementary, but if they do not share a common <<边/side>> (e.g., they are at different locations), they are not <<邻补角/supplementary adjacent angle>>s. <<邻补角/supplementary adjacent angle>>s require a common <<顶点/vertex>> and a common <<边/side>> in addition to being supplementary.
+
+        (2) <<真命题/true proposition>>. This is a corollary of the parallel axiom: if two <<直线/straight line>>s are both <<平行/parallel>> to a third <<直线/straight line>>, they are <<平行/parallel>> to each other.
+
+        (3) <<假命题/false proposition>>. This <<命题/proposition>> is missing the condition "the point is outside the given <<直线/straight line>>." If the point is on the given <<直线/straight line>>, no <<直线/straight line>> through it can be <<平行/parallel>> to it. The correct statement is: through a point outside a <<直线/straight line>>, there is one and only one <<直线/straight line>> <<平行/parallel>> to the given <<直线/straight line>>.
+      explanation: |
+        本题考查对<<命题/proposition>>真假的判断能力以及严谨性。注意<<命题/proposition>>的<<条件/condition>>是否完整，举<<反例/counterexample>>时只需一个具体例子。
+      explanationEn: |
+        This problem tests the ability to judge <<命题/proposition>>s and mathematical rigor. Note whether the <<条件/condition>> of a <<命题/proposition>> is complete. When giving a <<反例/counterexample>>, one specific example suffices.

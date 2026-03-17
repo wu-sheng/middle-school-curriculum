@@ -1,0 +1,958 @@
+title: 不等式与不等式组
+titleEn: Inequalities and Systems of Inequalities
+chapter: 11
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 70-90分钟学习 + 50分钟练习
+targetAudience: 已学完一元一次方程、具备基本代数运算能力的七年级学生
+
+objectives:
+  - 理解<<不等式/inequality>>的概念，能用<<不等号/inequality sign>>表示不等关系
+  - 理解<<不等式的解/solution of an inequality>>和<<解集/solution set>>的概念，会用<<数轴/number line>>表示<<解集/solution set>>
+  - 掌握<<不等式/inequality>>的三条基本性质，特别是<<乘除负数变号/reversing the sign when multiplying or dividing by a negative number>>
+  - 会解<<一元一次不等式/linear inequality in one variable>>，并能在<<数轴/number line>>上表示<<解集/solution set>>
+  - 会解<<一元一次不等式组/system of linear inequalities in one variable>>，能求<<公共解集/common solution set>>
+  - 能用<<一元一次不等式/linear inequality in one variable>>或<<不等式组/system of inequalities>>解决简单的实际问题
+objectivesEn:
+  - Understand the concept of <<不等式/inequality>> and use <<不等号/inequality sign>>s to express unequal relationships
+  - Understand the concepts of <<不等式的解/solution of an inequality>> and <<解集/solution set>>, and represent the <<解集/solution set>> on a <<数轴/number line>>
+  - Master the three basic properties of <<不等式/inequality>>, especially <<乘除负数变号/reversing the sign when multiplying or dividing by a negative number>>
+  - Be able to solve <<一元一次不等式/linear inequality in one variable>> and represent the <<解集/solution set>> on a <<数轴/number line>>
+  - Be able to solve <<一元一次不等式组/system of linear inequalities in one variable>> and find the <<公共解集/common solution set>>
+  - Be able to solve simple real-life problems using <<一元一次不等式/linear inequality in one variable>> or <<不等式组/system of inequalities>>
+
+prerequisites:
+  title: 从<<等式/equality>>到<<不等式/inequality>>——从"相等"到"不等"
+  titleEn: 'From <<等式/equality>> to <<不等式/inequality>> — from "equal" to "unequal"'
+  intro: |
+    在第5章中，我们学习了用<<方程/equation>>表示"相等"的数量关系。但生活中还有大量"不等"的关系：
+  introEn: |
+    In Chapter 5, we learned to use <<方程/equation>>s to express "equal" quantitative relationships. But in real life, there are also many "unequal" relationships:
+  knownNumbers:
+    - '班级人数不超过 $50$ 人：$n \leq 50$'
+    - '考试成绩至少 $60$ 分才及格：$x \geq 60$'
+    - '购买 $x$ 件商品，每件 $15$ 元，总价不超过 $200$ 元：$15x \leq 200$'
+  knownNumbersEn:
+    - 'The class size is no more than $50$: $n \leq 50$'
+    - 'A test score of at least $60$ is required to pass: $x \geq 60$'
+    - 'Buying $x$ items at $15$ yuan each, the total must not exceed $200$ yuan: $15x \leq 200$'
+  canSolve:
+    - 用第5章学过的<<等式/equality>>的性质和<<移项/transposition>>方法
+    - 用<<数轴/number line>>表示数的大小关系
+  canSolveEn:
+    - Use the properties of <<等式/equality>> and <<移项/transposition>> method learned in Chapter 5
+    - Use the <<数轴/number line>> to represent the ordering of numbers
+  cannotSolve:
+    - '有多少个整数满足 $-3 < x \leq 5$？'
+    - "一辆货车载重不超过 $5$ 吨，已装 $3.2$ 吨，还能装多少？"
+    - "某商品打折后价格在 $80$ 元到 $120$ 元之间，原价可能是多少？"
+  cannotSolveEn:
+    - 'How many integers satisfy $-3 < x \leq 5$?'
+    - 'A truck can carry no more than $5$ tons. It already has $3.2$ tons loaded. How much more can it carry?'
+    - 'After a discount, the price of an item is between $80$ and $120$ yuan. What could the original price be?'
+  conclusion: |
+    这些问题都涉及"大于""小于""不超过""至少"等不等关系。数学中用**<<不等式/inequality>>**来表示这类关系，用<<不等式/inequality>>的性质来求解。<<不等式/inequality>>的解法与<<方程/equation>>类似，但有一个关键区别——**乘除负数时<<不等号/inequality sign>>要变向**。
+  conclusionEn: |
+    These problems all involve unequal relationships such as "greater than," "less than," "no more than," and "at least." In mathematics, **<<不等式/inequality>>** is used to express these relationships, and the properties of <<不等式/inequality>> are used to solve them. Solving <<不等式/inequality>> is similar to solving <<方程/equation>>s, but there is one crucial difference — **the <<不等号/inequality sign>> must be reversed when multiplying or dividing by a negative number**.
+
+concepts:
+  - id: inequality-concept
+    title: <<不等式/inequality>>的概念
+    titleEn: The concept of <<不等式/inequality>>
+    content: |
+      用<<不等号/inequality sign>>（$<$、$>$、$\leq$、$\geq$、$\neq$）连接的式子叫做**<<不等式/inequality>>**。
+
+      常用<<不等号/inequality sign>>：
+      - $<$：小于
+      - $>$：大于
+      - $\leq$：小于或等于（不大于）
+      - $\geq$：大于或等于（不小于）
+      - $\neq$：不等于
+
+      使某个<<不等式/inequality>>成立的<<未知数/unknown>>的值叫做这个<<不等式/inequality>>的**<<解/solution>>**。
+      一个<<不等式/inequality>>的所有<<解/solution>>组成的集合叫做这个<<不等式/inequality>>的**<<解集/solution set>>**。
+    contentEn: |
+      An expression connected by an <<不等号/inequality sign>> ($<$, $>$, $\leq$, $\geq$, $\neq$) is called an **<<不等式/inequality>>**.
+
+      Common <<不等号/inequality sign>>s:
+      - $<$: less than
+      - $>$: greater than
+      - $\leq$: less than or equal to (not greater than)
+      - $\geq$: greater than or equal to (not less than)
+      - $\neq$: not equal to
+
+      A value of the <<未知数/unknown>> that makes a given <<不等式/inequality>> true is called a **<<解/solution>>** of that <<不等式/inequality>>.
+      The set of all <<解/solution>>s of an <<不等式/inequality>> is called the **<<解集/solution set>>** of that <<不等式/inequality>>.
+    examples:
+      - "$x + 3 > 5$ 是<<不等式/inequality>>（用 $>$ 连接）"
+      - '$2x - 1 \\leq 7$ 是<<不等式/inequality>>（用 $\\leq$ 连接）'
+      - "$3 + 5 = 8$ 不是<<不等式/inequality>>（用的是等号）"
+      - "$x > 2$ 的<<解集/solution set>>是所有大于 $2$ 的数"
+    examplesEn:
+      - "$x + 3 > 5$ is an <<不等式/inequality>> (connected by $>$)"
+      - '$2x - 1 \\leq 7$ is an <<不等式/inequality>> (connected by $\\leq$)'
+      - "$3 + 5 = 8$ is not an <<不等式/inequality>> (it uses an equals sign)"
+      - "The <<解集/solution set>> of $x > 2$ is all numbers greater than $2$"
+    notes:
+      - "<<不等式/inequality>>的<<解集/solution set>>通常是无限多个数，不像<<方程/equation>>往往只有一个<<解/solution>>"
+      - '在<<数轴/number line>>上表示<<解集/solution set>>时，空心圆圈表示不包含该点（$<$、$>$），实心圆点表示包含该点（$\\leq$、$\\geq$）'
+    notesEn:
+      - "The <<解集/solution set>> of an <<不等式/inequality>> typically contains infinitely many numbers, unlike an <<方程/equation>> which often has only one <<解/solution>>"
+      - 'When representing the <<解集/solution set>> on a <<数轴/number line>>, an open circle means the point is not included ($<$, $>$), and a filled dot means it is included ($\\leq$, $\\geq$)'
+
+  - id: properties-of-inequality
+    title: <<不等式/inequality>>的基本性质
+    titleEn: Basic properties of <<不等式/inequality>>
+    content: |
+      <<不等式/inequality>>有三条基本性质：
+
+      **性质 1**：<<不等式/inequality>>两边同时加上（或减去）同一个数（或<<式子/expression>>），<<不等号/inequality sign>>的方向**不变**。
+      $$\text{如果 } a > b, \text{ 那么 } a + c > b + c$$
+
+      **性质 2**：<<不等式/inequality>>两边同时乘以（或除以）同一个**正数**，<<不等号/inequality sign>>的方向**不变**。
+      $$\text{如果 } a > b, \; c > 0, \text{ 那么 } ac > bc$$
+
+      **性质 3**：<<不等式/inequality>>两边同时乘以（或除以）同一个**负数**，<<不等号/inequality sign>>的方向**改变**。
+      $$\text{如果 } a > b, \; c < 0, \text{ 那么 } ac < bc$$
+    contentEn: |
+      There are three basic properties of <<不等式/inequality>>:
+
+      **Property 1**: Adding (or subtracting) the same number (or <<式子/expression>>) to both sides of an <<不等式/inequality>> does **not change** the direction of the <<不等号/inequality sign>>.
+      $$\text{If } a > b, \text{ then } a + c > b + c$$
+
+      **Property 2**: Multiplying (or dividing) both sides of an <<不等式/inequality>> by the same **positive** number does **not change** the direction of the <<不等号/inequality sign>>.
+      $$\text{If } a > b, \; c > 0, \text{ then } ac > bc$$
+
+      **Property 3**: Multiplying (or dividing) both sides of an <<不等式/inequality>> by the same **negative** number **reverses** the direction of the <<不等号/inequality sign>>.
+      $$\text{If } a > b, \; c < 0, \text{ then } ac < bc$$
+    examples:
+      - "性质 1：如果 $x - 3 > 5$，两边加 $3$，得 $x > 8$（方向不变）"
+      - "性质 2：如果 $2x > 6$，两边除以 $2$，得 $x > 3$（方向不变）"
+      - "性质 3：如果 $-3x > 6$，两边除以 $-3$，得 $x < -2$（方向改变！）"
+    examplesEn:
+      - "Property 1: If $x - 3 > 5$, add $3$ to both sides to get $x > 8$ (direction unchanged)"
+      - "Property 2: If $2x > 6$, divide both sides by $2$ to get $x > 3$ (direction unchanged)"
+      - "Property 3: If $-3x > 6$, divide both sides by $-3$ to get $x < -2$ (direction reversed!)"
+    notes:
+      - "性质 3 是<<不等式/inequality>>与<<等式/equality>>最大的区别——**乘除负数要变号**"
+      - "记口诀：**正不变，负要变**"
+    notesEn:
+      - "Property 3 is the biggest difference between <<不等式/inequality>> and <<等式/equality>> — **reverse the sign when multiplying or dividing by a negative number**"
+      - 'Remember the rule: **positive keeps, negative flips**'
+
+  - id: linear-inequality
+    title: <<一元一次不等式/linear inequality in one variable>>
+    titleEn: <<一元一次不等式/linear inequality in one variable>>
+    content: |
+      只含有**一个<<未知数/unknown>>**，<<未知数/unknown>>的**最高次数为 $1$**，且两边都是**整式**的<<不等式/inequality>>叫做**<<一元一次不等式/linear inequality in one variable>>**。
+
+      解<<一元一次不等式/linear inequality in one variable>>的步骤与解<<一元一次方程/linear equation in one variable>>类似：
+      1. **<<去分母/clearing denominators>>**：两边同乘最小公倍数
+      2. **<<去括号/removing parentheses>>**：展开括号
+      3. **<<移项/transposition>>**：含<<未知数/unknown>>的项移到一边，常数项移到另一边
+      4. **<<合并同类项/combining like terms>>**：整理两边
+      5. **<<系数化为1/reducing coefficient to 1>>**：两边除以<<未知数/unknown>>的<<系数/coefficient>>，**若<<系数/coefficient>>为负数，<<不等号/inequality sign>>要变向**
+    contentEn: |
+      An <<不等式/inequality>> that contains only **one <<未知数/unknown>>**, whose **highest power is $1$**, and whose both sides are **integral expressions** is called a **<<一元一次不等式/linear inequality in one variable>>**.
+
+      The steps for solving a <<一元一次不等式/linear inequality in one variable>> are similar to solving a <<一元一次方程/linear equation in one variable>>:
+      1. **<<去分母/clearing denominators>>**: multiply both sides by the LCM
+      2. **<<去括号/removing parentheses>>**: expand parentheses
+      3. **<<移项/transposition>>**: move terms with the <<未知数/unknown>> to one side and constants to the other
+      4. **<<合并同类项/combining like terms>>**: simplify both sides
+      5. **<<系数化为1/reducing coefficient to 1>>**: divide both sides by the <<系数/coefficient>> of the <<未知数/unknown>>; **if the <<系数/coefficient>> is negative, reverse the <<不等号/inequality sign>>**
+    examples:
+      - |
+        解<<不等式/inequality>> $2x - 3 > 5$：
+        <<移项/transposition>>：$2x > 5 + 3$
+        <<合并同类项/combining like terms>>：$2x > 8$
+        <<系数化为1/reducing coefficient to 1>>：$x > 4$（<<系数/coefficient>>为正，方向不变）
+      - |
+        解<<不等式/inequality>> $-3x + 6 \leq 0$：
+        <<移项/transposition>>：$-3x \leq -6$
+        <<系数化为1/reducing coefficient to 1>>：$x \geq 2$（<<系数/coefficient>>为负，方向改变！）
+    examplesEn:
+      - |
+        Solve the <<不等式/inequality>> $2x - 3 > 5$:
+        <<移项/transposition>>: $2x > 5 + 3$
+        <<合并同类项/combining like terms>>: $2x > 8$
+        <<系数化为1/reducing coefficient to 1>>: $x > 4$ (<<系数/coefficient>> is positive, direction unchanged)
+      - |
+        Solve the <<不等式/inequality>> $-3x + 6 \leq 0$:
+        <<移项/transposition>>: $-3x \leq -6$
+        <<系数化为1/reducing coefficient to 1>>: $x \geq 2$ (<<系数/coefficient>> is negative, direction reversed!)
+    notes:
+      - "解法步骤和解<<方程/equation>>几乎一样，唯一区别在最后一步：除以负<<系数/coefficient>>时要变号"
+      - "求出<<解集/solution set>>后，建议在<<数轴/number line>>上画出来验证"
+    notesEn:
+      - "The solving steps are almost identical to solving <<方程/equation>>s; the only difference is the last step — reverse the sign when dividing by a negative <<系数/coefficient>>"
+      - "After finding the <<解集/solution set>>, it is recommended to draw it on a <<数轴/number line>> to verify"
+
+  - id: system-of-inequalities
+    title: <<一元一次不等式组/system of linear inequalities in one variable>>
+    titleEn: <<一元一次不等式组/system of linear inequalities in one variable>>
+    content: |
+      把两个（或多个）含有同一个<<未知数/unknown>>的<<一元一次不等式/linear inequality in one variable>>合在一起，就组成一个**<<一元一次不等式组/system of linear inequalities in one variable>>**。
+
+      例如：
+      $$\begin{cases} 2x - 1 > 3 \\ x + 2 \leq 8 \end{cases}$$
+
+      解<<不等式组/system of inequalities>>的步骤：
+      1. 分别解每个<<不等式/inequality>>，求出各自的<<解集/solution set>>
+      2. 在<<数轴/number line>>上表示各个<<解集/solution set>>
+      3. 取**<<公共解集/common solution set>>**（即所有<<解集/solution set>>的公共部分）
+
+      求<<公共解集/common solution set>>的口诀：
+      - **同大取大**：两个都是 $x > a$ 的形式，取较大的
+      - **同小取小**：两个都是 $x < a$ 的形式，取较小的
+      - **大小小大取中间**：一个 $x > a$，一个 $x < b$（且 $a < b$），取 $a < x < b$
+      - **大大小小取不了**：一个 $x > a$，一个 $x < b$（且 $a > b$），无解
+    contentEn: |
+      Combining two (or more) <<一元一次不等式/linear inequality in one variable>>s that share the same <<未知数/unknown>> forms a **<<一元一次不等式组/system of linear inequalities in one variable>>**.
+
+      For example:
+      $$\begin{cases} 2x - 1 > 3 \\ x + 2 \leq 8 \end{cases}$$
+
+      Steps for solving a <<不等式组/system of inequalities>>:
+      1. Solve each <<不等式/inequality>> separately to find its <<解集/solution set>>
+      2. Represent each <<解集/solution set>> on a <<数轴/number line>>
+      3. Take the **<<公共解集/common solution set>>** (the intersection of all <<解集/solution set>>s)
+
+      Rules for finding the <<公共解集/common solution set>>:
+      - **Both "greater than" — take the larger**: if both are $x > a$ form, take the larger bound
+      - **Both "less than" — take the smaller**: if both are $x < a$ form, take the smaller bound
+      - **One greater, one less — take the middle**: if $x > a$ and $x < b$ with $a < b$, the answer is $a < x < b$
+      - **Contradictory — no solution**: if $x > a$ and $x < b$ with $a > b$, there is no solution
+    examples:
+      - |
+        解<<不等式组/system of inequalities>>
+        $$\begin{cases} 2x - 1 > 3 \\ x + 2 \leq 8 \end{cases}$$
+        解第一个：$2x > 4$，$x > 2$
+        解第二个：$x \leq 6$
+        <<公共解集/common solution set>>：$2 < x \leq 6$（大小小大取中间）
+    examplesEn:
+      - |
+        Solve the <<不等式组/system of inequalities>>
+        $$\begin{cases} 2x - 1 > 3 \\ x + 2 \leq 8 \end{cases}$$
+        Solve the first: $2x > 4$, $x > 2$
+        Solve the second: $x \leq 6$
+        <<公共解集/common solution set>>: $2 < x \leq 6$ (one greater, one less — take the middle)
+    notes:
+      - "求<<公共解集/common solution set>>时一定要在<<数轴/number line>>上画出来，找重叠部分"
+      - '注意端点是空心还是实心——取决于原<<不等式/inequality>>是严格的（$<$、$>$）还是非严格的（$\\leq$、$\\geq$）'
+    notesEn:
+      - "When finding the <<公共解集/common solution set>>, always draw on a <<数轴/number line>> and find the overlapping region"
+      - 'Pay attention to whether the endpoint is open or closed — it depends on whether the original <<不等式/inequality>> is strict ($<$, $>$) or non-strict ($\\leq$, $\\geq$)'
+
+  - id: word-problems-inequality
+    title: 实际问题与<<一元一次不等式/linear inequality in one variable>>
+    titleEn: Real-life problems and <<一元一次不等式/linear inequality in one variable>>
+    content: |
+      用<<不等式/inequality>>解实际问题的步骤与用<<方程/equation>>类似，但关键在于找**不等关系**而不是等量关系。
+
+      常见的表达不等关系的词语：
+      - "不超过""不多于""至多"→ $\leq$
+      - "不低于""不少于""至少"→ $\geq$
+      - "大于""超过""多于"→ $>$
+      - "小于""不足""少于"→ $<$
+
+      解题步骤：
+      1. **审题**：找出不等关系的关键词
+      2. **设<<未知数/unknown>>**：用 $x$ 表示要求的量
+      3. **列<<不等式/inequality>>**：根据不等关系列出<<不等式/inequality>>（或<<不等式组/system of inequalities>>）
+      4. **解<<不等式/inequality>>**：求出<<解集/solution set>>
+      5. **取合理值**：结合实际情况（如取整数、取正数等）确定答案
+    contentEn: |
+      The steps for solving real-life problems with <<不等式/inequality>> are similar to using <<方程/equation>>s, but the key is to identify the **unequal relationship** rather than an equal one.
+
+      Common phrases expressing unequal relationships:
+      - "no more than," "at most" → $\leq$
+      - "no less than," "at least" → $\geq$
+      - "greater than," "more than," "exceeds" → $>$
+      - "less than," "fewer than," "under" → $<$
+
+      Steps:
+      1. **Read carefully**: identify the keywords for the unequal relationship
+      2. **Set the <<未知数/unknown>>**: use $x$ for the quantity to be found
+      3. **Set up the <<不等式/inequality>>**: write the <<不等式/inequality>> (or <<不等式组/system of inequalities>>) based on the unequal relationship
+      4. **Solve the <<不等式/inequality>>**: find the <<解集/solution set>>
+      5. **Choose a reasonable value**: determine the answer based on practical constraints (e.g., integers, positive numbers)
+    examples:
+      - |
+        某班计划购买笔记本，每本 $3$ 元，总花费不超过 $50$ 元，最多能买多少本？
+        设买 $x$ 本，列<<不等式/inequality>>：$3x \leq 50$
+        解：$x \leq \frac{50}{3} \approx 16.67$
+        因为本数必须是整数，所以最多能买 $16$ 本。
+    examplesEn:
+      - |
+        A class plans to buy notebooks at $3$ yuan each. The total cost must not exceed $50$ yuan. At most how many can they buy?
+        Let $x$ be the number of notebooks. Set up the <<不等式/inequality>>: $3x \leq 50$
+        Solve: $x \leq \frac{50}{3} \approx 16.67$
+        Since the number of notebooks must be an integer, they can buy at most $16$.
+    notes:
+      - "实际问题中求出<<解集/solution set>>后，要根据具体情况取整或取正"
+      - "注意关键词对应的<<不等号/inequality sign>>方向"
+    notesEn:
+      - "In real-life problems, after finding the <<解集/solution set>>, round or restrict to positive values as the context requires"
+      - "Pay attention to which <<不等号/inequality sign>> direction corresponds to each keyword"
+
+realLife:
+  - category: 购物预算
+    categoryEn: Shopping budget
+    scenario: 小明带了 $100$ 元去买书，每本 $12$ 元，他最多能买几本？
+    scenarioEn: Xiao Ming has $100$ yuan to buy books at $12$ yuan each. How many can he buy at most?
+    equation: '$12x \leq 100$'
+    solution: '$x \leq 8.33$，最多买 $8$ 本'
+    solutionEn: '$x \leq 8.33$, at most $8$ books'
+  - category: 载重限制
+    categoryEn: Weight limit
+    scenario: 电梯限重 $1000$ 千克，已有 $5$ 人共重 $350$ 千克，还能载多少千克？
+    scenarioEn: An elevator has a weight limit of $1000$ kg. There are already $5$ people weighing $350$ kg total. How much more can it carry?
+    equation: '$350 + x \leq 1000$'
+    solution: '$x \leq 650$ 千克'
+    solutionEn: '$x \leq 650$ kg'
+  - category: 成绩要求
+    categoryEn: Grade requirement
+    scenario: 小红前四次考试成绩为 $85$、$90$、$78$、$92$，第五次至少考多少分才能使平均分不低于 $85$ 分？
+    scenarioEn: 'Xiao Hong scored $85$, $90$, $78$, $92$ on her first four tests. What is the minimum score on the fifth test to achieve an average of at least $85$?'
+    equation: '$\frac{85 + 90 + 78 + 92 + x}{5} \geq 85$'
+    solution: '$x \geq 80$，第五次至少考 $80$ 分'
+    solutionEn: '$x \geq 80$, at least $80$ on the fifth test'
+  - category: 出行规划
+    categoryEn: Travel planning
+    scenario: 甲、乙两地相距 $120$ 千米，某人骑车速度为每小时 $15$ 千米，他要在 $6$ 小时内到达，出发后最多休息多长时间？
+    scenarioEn: 'The distance between A and B is $120$ km. A cyclist rides at $15$ km/h and must arrive within $6$ hours. How long can he rest at most?'
+    equation: '$15(6 - t) \geq 120$'
+    solution: '$t \leq -2$（不合理说明不能休息）实际上 $6 - t \geq 8$，即骑行时间至少 $8$ 小时，$6$ 小时内无法到达即使不休息也需要 $8$ 小时'
+    solutionEn: 'Riding time needed is $\frac{120}{15} = 8$ hours $> 6$ hours, so it is impossible to arrive within $6$ hours even without resting'
+
+examples:
+  - type: 1
+    title: 用<<不等号/inequality sign>>表示不等关系
+    titleEn: Expressing unequal relationships with <<不等号/inequality sign>>s
+    question: |
+      用<<不等式/inequality>>表示下列关系：
+      (1) $a$ 是正数
+      (2) $x$ 与 $3$ 的和不大于 $7$
+      (3) $y$ 的 $2$ 倍减 $1$ 大于 $0$
+    questionEn: |
+      Express the following relationships using <<不等式/inequality>>:
+      (1) $a$ is positive
+      (2) The sum of $x$ and $3$ is no greater than $7$
+      (3) Twice $y$ minus $1$ is greater than $0$
+    steps:
+      - "(1) $a$ 是正数，即 $a$ 大于 $0$：$a > 0$"
+      - '(2) $x$ 与 $3$ 的和不大于 $7$，即小于或等于 $7$：$x + 3 \\leq 7$'
+      - "(3) $y$ 的 $2$ 倍减 $1$ 大于 $0$：$2y - 1 > 0$"
+    stepsEn:
+      - "(1) $a$ is positive, i.e., $a$ is greater than $0$: $a > 0$"
+      - '(2) The sum of $x$ and $3$ is no greater than $7$, i.e., less than or equal to $7$: $x + 3 \\leq 7$'
+      - "(3) Twice $y$ minus $1$ is greater than $0$: $2y - 1 > 0$"
+    answer: '(1) $a > 0$　(2) $x + 3 \\leq 7$　(3) $2y - 1 > 0$'
+    answerEn: '(1) $a > 0$　(2) $x + 3 \\leq 7$　(3) $2y - 1 > 0$'
+
+  - type: 2
+    title: 利用<<不等式/inequality>>的性质判断
+    titleEn: Using properties of <<不等式/inequality>> to make judgments
+    question: |
+      已知 $a > b$，用 $>$ 或 $<$ 填空：
+      (1) $a + 5$ ____ $b + 5$
+      (2) $-2a$ ____ $-2b$
+      (3) $\frac{a}{3}$ ____ $\frac{b}{3}$
+    questionEn: |
+      Given $a > b$, fill in with $>$ or $<$:
+      (1) $a + 5$ ____ $b + 5$
+      (2) $-2a$ ____ $-2b$
+      (3) $\frac{a}{3}$ ____ $\frac{b}{3}$
+    steps:
+      - "(1) 两边同加 $5$，由性质 1，方向不变：$a + 5 > b + 5$"
+      - "(2) 两边同乘 $-2$（负数），由性质 3，方向改变：$-2a < -2b$"
+      - '(3) 两边同除以 $3$（正数），由性质 2，方向不变：$\\frac{a}{3} > \\frac{b}{3}$'
+    stepsEn:
+      - "(1) Add $5$ to both sides; by Property 1, direction unchanged: $a + 5 > b + 5$"
+      - "(2) Multiply both sides by $-2$ (negative); by Property 3, direction reverses: $-2a < -2b$"
+      - '(3) Divide both sides by $3$ (positive); by Property 2, direction unchanged: $\\frac{a}{3} > \\frac{b}{3}$'
+    answer: "(1) $>$　(2) $<$　(3) $>$"
+    answerEn: "(1) $>$　(2) $<$　(3) $>$"
+
+  - type: 3
+    title: 解<<一元一次不等式/linear inequality in one variable>>（基础）
+    titleEn: Solving a <<一元一次不等式/linear inequality in one variable>> (basic)
+    question: |
+      解<<不等式/inequality>>：$3x - 6 > 0$
+    questionEn: |
+      Solve the <<不等式/inequality>>: $3x - 6 > 0$
+    steps:
+      - "<<移项/transposition>>：$3x > 6$"
+      - "<<系数化为1/reducing coefficient to 1>>：两边除以 $3$（正数，方向不变）"
+      - "$x > 2$"
+    stepsEn:
+      - "<<移项/transposition>>: $3x > 6$"
+      - "<<系数化为1/reducing coefficient to 1>>: divide both sides by $3$ (positive, direction unchanged)"
+      - "$x > 2$"
+    answer: "$x > 2$"
+    answerEn: "$x > 2$"
+
+  - type: 4
+    title: 解<<一元一次不等式/linear inequality in one variable>>（含负<<系数/coefficient>>）
+    titleEn: Solving a <<一元一次不等式/linear inequality in one variable>> (with negative <<系数/coefficient>>)
+    question: |
+      解<<不等式/inequality>>：$-2x + 4 \geq 10$
+    questionEn: |
+      Solve the <<不等式/inequality>>: $-2x + 4 \geq 10$
+    steps:
+      - '<<移项/transposition>>：$-2x \\geq 10 - 4$'
+      - '<<合并同类项/combining like terms>>：$-2x \\geq 6$'
+      - "<<系数化为1/reducing coefficient to 1>>：两边除以 $-2$（负数，方向改变！）"
+      - '$x \\leq -3$'
+    stepsEn:
+      - '<<移项/transposition>>: $-2x \\geq 10 - 4$'
+      - '<<合并同类项/combining like terms>>: $-2x \\geq 6$'
+      - "<<系数化为1/reducing coefficient to 1>>: divide both sides by $-2$ (negative, direction reverses!)"
+      - '$x \\leq -3$'
+    answer: '$x \leq -3$'
+    answerEn: '$x \leq -3$'
+
+  - type: 5
+    title: 解含分母的<<一元一次不等式/linear inequality in one variable>>
+    titleEn: Solving a <<一元一次不等式/linear inequality in one variable>> with fractions
+    question: |
+      解<<不等式/inequality>>：$\frac{x - 1}{2} > \frac{x + 1}{3}$
+    questionEn: |
+      Solve the <<不等式/inequality>>: $\frac{x - 1}{2} > \frac{x + 1}{3}$
+    steps:
+      - "<<去分母/clearing denominators>>：两边同乘 $6$（$2$ 和 $3$ 的最小公倍数）"
+      - "$3(x - 1) > 2(x + 1)$"
+      - "<<去括号/removing parentheses>>：$3x - 3 > 2x + 2$"
+      - "<<移项/transposition>>：$3x - 2x > 2 + 3$"
+      - "<<合并同类项/combining like terms>>：$x > 5$"
+    stepsEn:
+      - "<<去分母/clearing denominators>>: multiply both sides by $6$ (LCM of $2$ and $3$)"
+      - "$3(x - 1) > 2(x + 1)$"
+      - "<<去括号/removing parentheses>>: $3x - 3 > 2x + 2$"
+      - "<<移项/transposition>>: $3x - 2x > 2 + 3$"
+      - "<<合并同类项/combining like terms>>: $x > 5$"
+    answer: "$x > 5$"
+    answerEn: "$x > 5$"
+
+  - type: 6
+    title: 解<<一元一次不等式组/system of linear inequalities in one variable>>
+    titleEn: Solving a <<一元一次不等式组/system of linear inequalities in one variable>>
+    question: |
+      解<<不等式组/system of inequalities>>：
+      $$\begin{cases} 3x - 1 > 5 \\ 2x + 3 \leq 13 \end{cases}$$
+    questionEn: |
+      Solve the <<不等式组/system of inequalities>>:
+      $$\begin{cases} 3x - 1 > 5 \\ 2x + 3 \leq 13 \end{cases}$$
+    steps:
+      - "解第一个<<不等式/inequality>>：$3x > 6$，$x > 2$"
+      - '解第二个<<不等式/inequality>>：$2x \\leq 10$，$x \\leq 5$'
+      - '在<<数轴/number line>>上表示：$x > 2$ 且 $x \\leq 5$'
+      - '<<公共解集/common solution set>>：$2 < x \\leq 5$'
+    stepsEn:
+      - "Solve the first <<不等式/inequality>>: $3x > 6$, $x > 2$"
+      - 'Solve the second <<不等式/inequality>>: $2x \\leq 10$, $x \\leq 5$'
+      - 'Represent on a <<数轴/number line>>: $x > 2$ and $x \\leq 5$'
+      - '<<公共解集/common solution set>>: $2 < x \\leq 5$'
+    answer: '$2 < x \leq 5$'
+    answerEn: '$2 < x \leq 5$'
+
+  - type: 7
+    title: 用<<不等式/inequality>>解决实际问题
+    titleEn: Solving a real-life problem with <<不等式/inequality>>
+    question: |
+      某旅行社推出两种方案：方案 A 每人收费 $200$ 元；方案 B 需先交团费 $800$ 元，然后每人收费 $150$ 元。问至少多少人出行时，选方案 B 更划算？
+    questionEn: |
+      A travel agency offers two plans: Plan A charges $200$ yuan per person; Plan B requires an $800$ yuan group fee plus $150$ yuan per person. How many people are needed at minimum for Plan B to be cheaper?
+    steps:
+      - "设出行 $x$ 人"
+      - "方案 A 总费用：$200x$ 元"
+      - "方案 B 总费用：$800 + 150x$ 元"
+      - "方案 B 更划算意味着 B 的费用小于 A 的费用"
+      - "列<<不等式/inequality>>：$800 + 150x < 200x$"
+      - "<<移项/transposition>>：$800 < 200x - 150x$"
+      - "<<合并同类项/combining like terms>>：$800 < 50x$"
+      - "<<系数化为1/reducing coefficient to 1>>：$x > 16$"
+      - "因为人数是正整数，所以至少需要 $17$ 人"
+    stepsEn:
+      - "Let $x$ be the number of people"
+      - "Plan A total cost: $200x$ yuan"
+      - "Plan B total cost: $800 + 150x$ yuan"
+      - "Plan B is cheaper means B's cost is less than A's cost"
+      - "Set up the <<不等式/inequality>>: $800 + 150x < 200x$"
+      - "<<移项/transposition>>: $800 < 200x - 150x$"
+      - "<<合并同类项/combining like terms>>: $800 < 50x$"
+      - "<<系数化为1/reducing coefficient to 1>>: $x > 16$"
+      - "Since the number of people must be a positive integer, at least $17$ people are needed"
+    answer: "至少需要 $17$ 人出行时，选方案 B 更划算。"
+    answerEn: "At least $17$ people are needed for Plan B to be cheaper."
+
+commonMistakes:
+  - "解<<不等式/inequality>>时，除以负数忘记变号：例如 $-2x > 6$ 写成 $x > -3$（错误），正确应为 $x < -3$"
+  - "<<不等式组/system of inequalities>>求<<公共解集/common solution set>>时搞混口诀：应该在<<数轴/number line>>上画出来找重叠部分"
+  - '<<数轴/number line>>上空心圆圈和实心圆点搞混：$<$、$>$ 用空心，$\\leq$、$\\geq$ 用实心'
+  - '实际问题中忘记根据题意取整：例如求"最多能买几本"，$x \leq 8.33$ 应取 $8$ 而不是 $9$'
+  - '把"不大于"误解为"大于"：不大于（$\leq$）和大于（$>$）是相反的'
+  - "解<<不等式组/system of inequalities>>时只解一个<<不等式/inequality>>就写答案，忘记求<<公共解集/common solution set>>"
+commonMistakesEn:
+  - "Forgetting to reverse the sign when dividing by a negative: e.g., writing $-2x > 6$ as $x > -3$ (wrong); correct is $x < -3$"
+  - "Confusing the rules when finding the <<公共解集/common solution set>> of a <<不等式组/system of inequalities>>: always draw on a <<数轴/number line>> to find the overlapping region"
+  - 'Mixing up open circles and filled dots on the <<数轴/number line>>: use open for $<$, $>$ and filled for $\\leq$, $\\geq$'
+  - 'Forgetting to round to an integer in real-life problems: e.g., for "at most how many can be bought," $x \leq 8.33$ should give $8$, not $9$'
+  - 'Misunderstanding "no greater than" as "greater than": no greater than ($\leq$) is the opposite of greater than ($>$)'
+  - "Solving only one <<不等式/inequality>> in a <<不等式组/system of inequalities>> and writing the answer without finding the <<公共解集/common solution set>>"
+
+exercises:
+  timeGuide:
+    total: 50分钟
+    totalEn: 50 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 16分钟
+        timeEn: 16 minutes
+      - range: "9-12"
+        time: 26分钟
+        timeEn: 26 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        用<<不等式/inequality>>表示"$x$ 的 $3$ 倍大于 $12$"：______。
+      questionEn: |
+        Express "three times $x$ is greater than $12$" as an <<不等式/inequality>>: ______.
+      correctValue: "3x > 12"
+      answer: "$3x > 12$"
+      answerEn: "$3x > 12$"
+      explanation: |
+        "$x$ 的 $3$ 倍"即 $3x$，"大于 $12$"用 $>$ 表示，所以是 $3x > 12$。
+      explanationEn: |
+        "Three times $x$" is $3x$, and "greater than $12$" is expressed with $>$, so the answer is $3x > 12$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<不等式/inequality>> $x + 5 > 9$，$x$ ______ $4$。（填 $>$、$<$、$\geq$ 或 $\leq$）
+      questionEn: |
+        Solve the <<不等式/inequality>> $x + 5 > 9$. $x$ ______ $4$. (Fill in $>$, $<$, $\geq$, or $\leq$)
+      correctValue: ">"
+      answer: "$>$"
+      answerEn: "$>$"
+      explanation: |
+        $x + 5 > 9$，<<移项/transposition>>得 $x > 9 - 5$，即 $x > 4$。
+      explanationEn: |
+        $x + 5 > 9$. <<移项/transposition>>: $x > 9 - 5$, i.e., $x > 4$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        已知 $a > b$，则 $-5a$ ______ $-5b$。（填 $>$ 或 $<$）
+      questionEn: |
+        Given $a > b$, then $-5a$ ______ $-5b$. (Fill in $>$ or $<$)
+      correctValue: "<"
+      answer: "$<$"
+      answerEn: "$<$"
+      explanation: |
+        两边同乘 $-5$（负数），由<<不等式/inequality>>性质 3，<<不等号/inequality sign>>方向改变，所以 $-5a < -5b$。
+      explanationEn: |
+        Multiplying both sides by $-5$ (negative); by Property 3 of <<不等式/inequality>>, the <<不等号/inequality sign>> reverses, so $-5a < -5b$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<不等式/inequality>> $-4x \leq 12$，$x$ ______ ______。
+      questionEn: |
+        Solve the <<不等式/inequality>> $-4x \leq 12$. $x$ ______ ______.
+      correctValue: "≥ -3"
+      answer: '$x \\geq -3$'
+      answerEn: '$x \\geq -3$'
+      explanation: |
+        $-4x \leq 12$，两边除以 $-4$（负数，变号），得 $x \geq -3$。
+      explanationEn: |
+        $-4x \leq 12$. Divide both sides by $-4$ (negative, reverse sign): $x \geq -3$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        <<不等式/inequality>> $x > 3$ 的<<解集/solution set>>中，最小的整数是 $4$。
+      questionEn: |
+        In the <<解集/solution set>> of the <<不等式/inequality>> $x > 3$, the smallest integer is $4$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $x > 3$ 不包含 $3$，大于 $3$ 的最小整数是 $4$。
+      explanationEn: |
+        $x > 3$ does not include $3$. The smallest integer greater than $3$ is $4$.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        解<<不等式/inequality>> $-3x > 9$ 得 $x > -3$。
+      questionEn: |
+        Solving the <<不等式/inequality>> $-3x > 9$ gives $x > -3$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        两边除以 $-3$（负数），<<不等号/inequality sign>>方向要改变，应为 $x < -3$。
+      explanationEn: |
+        Dividing both sides by $-3$ (negative) requires reversing the <<不等号/inequality sign>>. The correct answer is $x < -3$.
+
+    - number: 7
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        <<不等式/inequality>> $2x - 1 \leq 5$ 的<<解集/solution set>>是（　）
+      questionEn: |
+        The <<解集/solution set>> of the <<不等式/inequality>> $2x - 1 \leq 5$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ['$x \\leq 2$', '$x \\geq 2$', '$x \\leq 3$', '$x \\geq 3$']
+          correctValue: '$x \\leq 3$'
+      answer: '$x \leq 3$'
+      answerEn: '$x \leq 3$'
+      explanation: |
+        $2x - 1 \leq 5$
+        <<移项/transposition>>：$2x \leq 6$
+        <<系数化为1/reducing coefficient to 1>>：$x \leq 3$
+      explanationEn: |
+        $2x - 1 \leq 5$
+        <<移项/transposition>>: $2x \leq 6$
+        <<系数化为1/reducing coefficient to 1>>: $x \leq 3$
+
+    - number: 8
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        <<不等式组/system of inequalities>> $\begin{cases} x > 1 \\ x < 4 \end{cases}$ 的<<解集/solution set>>是（　）
+      questionEn: |
+        The <<解集/solution set>> of the <<不等式组/system of inequalities>> $\begin{cases} x > 1 \\ x < 4 \end{cases}$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x > 4$", "$x < 1$", "$1 < x < 4$", "无解"]
+          correctValue: "$1 < x < 4$"
+      answer: "$1 < x < 4$"
+      answerEn: "$1 < x < 4$"
+      explanation: |
+        $x > 1$ 且 $x < 4$，大小小大取中间，<<公共解集/common solution set>>为 $1 < x < 4$。
+      explanationEn: |
+        $x > 1$ and $x < 4$; one greater and one less — take the middle. <<公共解集/common solution set>> is $1 < x < 4$.
+
+    - number: 9
+      type: 解不等式题
+      inputType: blank
+      section: 四、解不等式
+      sectionEn: "IV. Solve the Inequality"
+      question: |
+        解<<不等式/inequality>>：$5 - 3x > 2x + 15$，$x$ ______ ______。
+      questionEn: |
+        Solve the <<不等式/inequality>>: $5 - 3x > 2x + 15$. $x$ ______ ______.
+      correctValue: "< -2"
+      answer: "$x < -2$"
+      answerEn: "$x < -2$"
+      explanation: |
+        <<移项/transposition>>：$-3x - 2x > 15 - 5$
+        <<合并同类项/combining like terms>>：$-5x > 10$
+        <<系数化为1/reducing coefficient to 1>>：两边除以 $-5$（负数，变号），$x < -2$
+      explanationEn: |
+        <<移项/transposition>>: $-3x - 2x > 15 - 5$
+        <<合并同类项/combining like terms>>: $-5x > 10$
+        <<系数化为1/reducing coefficient to 1>>: divide both sides by $-5$ (negative, reverse sign), $x < -2$
+
+    - number: 10
+      type: 解不等式组题
+      inputType: blank
+      section: 五、解不等式组
+      sectionEn: "V. Solve the System of Inequalities"
+      question: |
+        解<<不等式组/system of inequalities>>：
+        $$\begin{cases} 2x + 1 > 5 \\ 4x - 3 \leq 9 \end{cases}$$
+        <<公共解集/common solution set>>：______。
+      questionEn: |
+        Solve the <<不等式组/system of inequalities>>:
+        $$\begin{cases} 2x + 1 > 5 \\ 4x - 3 \leq 9 \end{cases}$$
+        <<公共解集/common solution set>>: ______.
+      correctValue: "2 < x ≤ 3"
+      answer: '$2 < x \leq 3$'
+      answerEn: '$2 < x \leq 3$'
+      explanation: |
+        解第一个：$2x > 4$，$x > 2$
+        解第二个：$4x \leq 12$，$x \leq 3$
+        <<公共解集/common solution set>>：$2 < x \leq 3$
+      explanationEn: |
+        Solve the first: $2x > 4$, $x > 2$
+        Solve the second: $4x \leq 12$, $x \leq 3$
+        <<公共解集/common solution set>>: $2 < x \leq 3$
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 六、生活应用题
+      sectionEn: "VI. Real-Life Application"
+      question: |
+        某工厂生产一种零件，每件成本 $8$ 元，售价 $12$ 元。工厂每月固定费用为 $6000$ 元。问每月至少生产并售出多少件零件才能不亏损？
+      questionEn: |
+        A factory produces parts at a cost of $8$ yuan each and sells them for $12$ yuan each. The monthly fixed cost is $6000$ yuan. How many parts must be produced and sold per month at minimum to avoid a loss?
+      answer: |
+        设每月生产并售出 $x$ 件。
+        利润 $=$ 总收入 $-$ 总成本 $= 12x - (8x + 6000)$
+        不亏损意味着利润 $\geq 0$：
+        $12x - 8x - 6000 \geq 0$
+        $4x \geq 6000$
+        $x \geq 1500$
+        每月至少生产并售出 $1500$ 件。
+      answerEn: |
+        Let $x$ be the number of parts produced and sold per month.
+        Profit $=$ total revenue $-$ total cost $= 12x - (8x + 6000)$
+        No loss means profit $\geq 0$:
+        $12x - 8x - 6000 \geq 0$
+        $4x \geq 6000$
+        $x \geq 1500$
+        At least $1500$ parts must be produced and sold per month.
+      explanation: |
+        关键是建立不等关系：利润 $\geq 0$，即收入 $\geq$ 成本。注意总成本包括固定费用和可变成本两部分。
+      explanationEn: |
+        The key is establishing the inequality: profit $\geq 0$, i.e., revenue $\geq$ cost. Note that total cost includes both fixed and variable components.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 七、综合题
+      sectionEn: "VII. Comprehensive Problem"
+      question: |
+        小华去商店买练习本，若每本 $3$ 元则剩余 $4$ 元，若每本 $5$ 元则差 $8$ 元。问小华带了多少钱？要买多少本练习本？
+        要求：列<<不等式组/system of inequalities>>，写出解题步骤。
+      questionEn: |
+        Xiao Hua goes to a store to buy exercise books. If each costs $3$ yuan, he has $4$ yuan left over. If each costs $5$ yuan, he is $8$ yuan short. How much money does Xiao Hua have? How many exercise books does he want to buy?
+        Requirements: set up a <<不等式组/system of inequalities>> and show all steps.
+      answer: |
+        设小华要买 $x$ 本练习本。
+
+        每本 $3$ 元剩 $4$ 元，说明他带的钱为 $3x + 4$ 元。
+        每本 $5$ 元差 $8$ 元，说明 $3x + 4 < 5x$（钱不够）且 $5x - (3x + 4) \leq 8$（差的不超过 $8$ 元，即刚好差 $8$ 元或更少）。
+
+        更直接地：带了 $3x + 4$ 元。
+        每本 $5$ 元需要 $5x$ 元，差 $8$ 元说明 $5x - (3x + 4) = 8$（实际上这是方程）。
+
+        用不等式组的思路：
+        $$\begin{cases} 3x + 4 \geq 0 \text{（带的钱为正）} \\ 5x > 3x + 4 \text{（每本 $5$ 元时钱不够）} \\ 5x \leq 3x + 4 + 8 \text{（差的金额不超过 $8$ 元）} \end{cases}$$
+
+        由第二个：$2x > 4$，$x > 2$
+        由第三个：$5x \leq 3x + 12$，$2x \leq 12$，$x \leq 6$
+
+        若题意"差 $8$ 元"表示恰好差 $8$ 元：
+        $5x - (3x + 4) = 8$，$2x = 12$，$x = 6$
+        带的钱 $= 3 \times 6 + 4 = 22$ 元。
+
+        验证：买 $6$ 本，每本 $3$ 元花 $18$ 元，剩 $4$ 元 ✓；每本 $5$ 元需 $30$ 元，差 $8$ 元 ✓。
+
+        小华带了 $22$ 元，要买 $6$ 本练习本。
+      answerEn: |
+        Let $x$ be the number of exercise books.
+
+        At $3$ yuan each with $4$ yuan left over, Xiao Hua has $3x + 4$ yuan.
+        At $5$ yuan each, he is short $8$ yuan, meaning $5x - (3x + 4) = 8$.
+        $2x = 12$, $x = 6$
+        Money $= 3 \times 6 + 4 = 22$ yuan.
+
+        Verify: buying $6$ at $3$ yuan costs $18$, leaving $4$ yuan; buying $6$ at $5$ yuan costs $30$, short by $8$ yuan. Both conditions are satisfied.
+
+        Xiao Hua has $22$ yuan and wants to buy $6$ exercise books.
+      explanation: |
+        本题可以同时用<<方程/equation>>和<<不等式/inequality>>思路解决。关键是用两种购买方案分别表示小华带的钱，建立数量关系。
+      explanationEn: |
+        This problem can be solved using both <<方程/equation>> and <<不等式/inequality>> approaches. The key is expressing Xiao Hua's money in terms of both purchasing scenarios to establish the quantitative relationship.
+
+summary:
+  - '<<不等式/inequality>>是用<<不等号/inequality sign>>（$<$、$>$、$\\leq$、$\\geq$）连接的式子'
+  - "<<不等式/inequality>>的<<解集/solution set>>通常是无限多个值，可以在<<数轴/number line>>上表示"
+  - "<<不等式/inequality>>的三条基本性质中，性质 3 最关键——**乘除负数要变号**"
+  - "解<<一元一次不等式/linear inequality in one variable>>的步骤与解<<方程/equation>>相同，唯一区别是除以负<<系数/coefficient>>时<<不等号/inequality sign>>要变向"
+  - "解<<不等式组/system of inequalities>>的关键是求<<公共解集/common solution set>>：同大取大、同小取小、大小小大取中间、大大小小取不了"
+  - '在<<数轴/number line>>上，空心圆圈表示不包含端点（$<$、$>$），实心圆点表示包含端点（$\\leq$、$\\geq$）'
+  - "解实际问题时，注意关键词对应的<<不等号/inequality sign>>，以及根据实际情况取合理值（如取整）"
+summaryEn:
+  - 'An <<不等式/inequality>> is an expression connected by <<不等号/inequality sign>>s ($<$, $>$, $\\leq$, $\\geq$)'
+  - "The <<解集/solution set>> of an <<不等式/inequality>> typically has infinitely many values and can be represented on a <<数轴/number line>>"
+  - "Among the three basic properties, Property 3 is most crucial — **reverse the sign when multiplying or dividing by a negative number**"
+  - "The steps for solving a <<一元一次不等式/linear inequality in one variable>> are the same as for <<方程/equation>>s; the only difference is reversing the <<不等号/inequality sign>> when dividing by a negative <<系数/coefficient>>"
+  - 'Solving a <<不等式组/system of inequalities>> hinges on finding the <<公共解集/common solution set>>: both greater — take larger; both less — take smaller; one of each — take middle; contradictory — no solution'
+  - 'On a <<数轴/number line>>, an open circle means the endpoint is excluded ($<$, $>$); a filled dot means it is included ($\\leq$, $\\geq$)'
+  - "In real-life problems, match keywords to the correct <<不等号/inequality sign>> and choose reasonable values (e.g., rounding to integers) based on context"
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        关于 $x$ 的<<不等式/inequality>> $(a - 1)x > a - 1$ 的<<解集/solution set>>是 $x < 1$，则 $a$ 的取值范围是（　）
+      questionEn: |
+        The <<解集/solution set>> of the <<不等式/inequality>> $(a - 1)x > a - 1$ (in $x$) is $x < 1$. The range of $a$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$a > 1$", "$a < 1$", "$a = 1$", '$a \\neq 1$']
+          correctValue: "$a < 1$"
+      answer: "$a < 1$"
+      answerEn: "$a < 1$"
+      explanation: |
+        由$(a-1)x > a-1$ 得到 $x < 1$，说明两边除以 $(a-1)$ 时<<不等号/inequality sign>>方向改变了。
+        <<不等号/inequality sign>>变向说明 $a - 1 < 0$，即 $a < 1$。
+      explanationEn: |
+        From $(a-1)x > a-1$ we get $x < 1$, which means dividing both sides by $(a-1)$ reversed the <<不等号/inequality sign>>.
+        The sign reversal means $a - 1 < 0$, i.e., $a < 1$.
+
+    - number: 2
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        解<<不等式组/system of inequalities>>，并求出<<解集/solution set>>中所有整数的和。
+        $$\begin{cases} 3(x - 1) < 4x \\ \frac{x + 5}{2} \geq x + 2 \end{cases}$$
+      questionEn: |
+        Solve the <<不等式组/system of inequalities>> and find the sum of all integers in the <<解集/solution set>>.
+        $$\begin{cases} 3(x - 1) < 4x \\ \frac{x + 5}{2} \geq x + 2 \end{cases}$$
+      answer: |
+        解第一个<<不等式/inequality>>：
+        $3x - 3 < 4x$
+        $-3 < 4x - 3x$
+        $-3 < x$，即 $x > -3$
+
+        解第二个<<不等式/inequality>>：
+        两边乘 $2$：$x + 5 \geq 2x + 4$
+        $5 - 4 \geq 2x - x$
+        $1 \geq x$，即 $x \leq 1$
+
+        <<公共解集/common solution set>>：$-3 < x \leq 1$
+
+        <<解集/solution set>>中的整数：$-2, -1, 0, 1$
+        整数之和 $= -2 + (-1) + 0 + 1 = -2$
+      answerEn: |
+        Solve the first <<不等式/inequality>>:
+        $3x - 3 < 4x$
+        $-3 < x$, i.e., $x > -3$
+
+        Solve the second <<不等式/inequality>>:
+        Multiply both sides by $2$: $x + 5 \geq 2x + 4$
+        $1 \geq x$, i.e., $x \leq 1$
+
+        <<公共解集/common solution set>>: $-3 < x \leq 1$
+
+        Integers in the <<解集/solution set>>: $-2, -1, 0, 1$
+        Sum of integers $= -2 + (-1) + 0 + 1 = -2$
+      explanation: |
+        本题综合考查<<不等式组/system of inequalities>>的解法和在<<解集/solution set>>中列举整数。注意 $x > -3$ 不包含 $-3$，$x \leq 1$ 包含 $1$。
+      explanationEn: |
+        This problem tests solving a <<不等式组/system of inequalities>> and enumerating integers in the <<解集/solution set>>. Note that $x > -3$ excludes $-3$, while $x \leq 1$ includes $1$.
+
+    - number: 3
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        某商店购进一批商品，每件进价 $40$ 元。根据市场调查，售价定在 $40$ 元至 $70$ 元之间（含端点），每件利润不低于 $5$ 元且不超过进价的 $50\%$。求每件商品的售价范围。
+      questionEn: |
+        A store purchases goods at $40$ yuan each. Based on market research, the selling price should be between $40$ and $70$ yuan (inclusive). The profit per item must be at least $5$ yuan and no more than $50\%$ of the cost price. Find the range of selling prices.
+      answer: |
+        设售价为 $x$ 元，利润 $= x - 40$ 元。
+
+        条件 1：售价范围 $40 \leq x \leq 70$
+        条件 2：利润不低于 $5$ 元，即 $x - 40 \geq 5$，$x \geq 45$
+        条件 3：利润不超过进价的 $50\%$，即 $x - 40 \leq 40 \times 50\% = 20$，$x \leq 60$
+
+        综合三个条件：
+        $$\begin{cases} 40 \leq x \leq 70 \\ x \geq 45 \\ x \leq 60 \end{cases}$$
+
+        取公共部分：$45 \leq x \leq 60$
+
+        每件商品的售价范围是 $45$ 元到 $60$ 元。
+      answerEn: |
+        Let the selling price be $x$ yuan. Profit $= x - 40$ yuan.
+
+        Condition 1: price range $40 \leq x \leq 70$
+        Condition 2: profit at least $5$ yuan, i.e., $x - 40 \geq 5$, so $x \geq 45$
+        Condition 3: profit no more than $50\%$ of cost, i.e., $x - 40 \leq 20$, so $x \leq 60$
+
+        Combining all three conditions:
+        $$\begin{cases} 40 \leq x \leq 70 \\ x \geq 45 \\ x \leq 60 \end{cases}$$
+
+        Taking the intersection: $45 \leq x \leq 60$
+
+        The selling price per item ranges from $45$ to $60$ yuan.
+      explanation: |
+        本题需要同时满足多个不等条件，转化为一个<<不等式组/system of inequalities>>。关键是将每个文字条件准确地翻译为<<不等式/inequality>>，然后求<<公共解集/common solution set>>。
+      explanationEn: |
+        This problem requires satisfying multiple inequality conditions simultaneously, forming a <<不等式组/system of inequalities>>. The key is accurately translating each verbal condition into an <<不等式/inequality>>, then finding the <<公共解集/common solution set>>.
+
+    - number: 4
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        若关于 $x$ 的<<不等式组/system of inequalities>>
+        $$\begin{cases} x - a \leq 0 \\ 2x - b > 0 \end{cases}$$
+        的<<解集/solution set>>为 $1 < x \leq 3$，求 $a + b$ 的值。
+      questionEn: |
+        If the <<解集/solution set>> of the <<不等式组/system of inequalities>>
+        $$\begin{cases} x - a \leq 0 \\ 2x - b > 0 \end{cases}$$
+        is $1 < x \leq 3$, find the value of $a + b$.
+      answer: |
+        由第一个<<不等式/inequality>>：$x \leq a$
+        由第二个<<不等式/inequality>>：$2x > b$，$x > \frac{b}{2}$
+
+        <<公共解集/common solution set>>为 $\frac{b}{2} < x \leq a$
+
+        对比已知<<解集/solution set>> $1 < x \leq 3$：
+        $\frac{b}{2} = 1$，所以 $b = 2$
+        $a = 3$
+
+        $a + b = 3 + 2 = 5$
+      answerEn: |
+        From the first <<不等式/inequality>>: $x \leq a$
+        From the second <<不等式/inequality>>: $2x > b$, $x > \frac{b}{2}$
+
+        <<公共解集/common solution set>> is $\frac{b}{2} < x \leq a$
+
+        Comparing with the given <<解集/solution set>> $1 < x \leq 3$:
+        $\frac{b}{2} = 1$, so $b = 2$
+        $a = 3$
+
+        $a + b = 3 + 2 = 5$
+      explanation: |
+        这道中考题考查逆向思维——由<<解集/solution set>>反推参数。先分别解两个<<不等式/inequality>>得到含参数的<<解集/solution set>>，再与已知<<解集/solution set>>对比，确定参数的值。
+      explanationEn: |
+        This exam question tests reverse thinking — deducing parameters from the <<解集/solution set>>. First solve each <<不等式/inequality>> to get <<解集/solution set>>s containing parameters, then compare with the given <<解集/solution set>> to determine the parameter values.

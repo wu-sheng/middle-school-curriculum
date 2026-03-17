@@ -1,0 +1,850 @@
+title: 实数
+titleEn: Real Numbers
+chapter: 8
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 50-70分钟学习 + 30分钟练习
+targetAudience: 七年级下学期学生，已学过有理数和代数运算
+
+objectives:
+  - 理解<<算术平方根/arithmetic square root>>和<<平方根/square root>>的概念，会用根号表示
+  - 理解<<开平方/extracting square root>>与<<平方/squaring>>互为逆运算
+  - 理解<<立方根/cube root>>的概念，掌握<<开立方/extracting cube root>>运算
+  - 了解<<无理数/irrational number>>的概念，能判断一个数是<<有理数/rational number>>还是<<无理数/irrational number>>
+  - 了解<<实数/real number>>的分类，知道<<有理数/rational number>>和<<无理数/irrational number>>统称为<<实数/real number>>
+  - 掌握<<实数/real number>>的<<相反数/opposite number>>、<<绝对值/absolute value>>、<<倒数/reciprocal>>等性质
+  - 理解<<实数/real number>>与<<数轴/number line>>上的点一一对应
+  - 能利用<<平方根/square root>>和<<立方根/cube root>>解决简单的实际问题
+objectivesEn:
+  - Understand the concepts of <<算术平方根/arithmetic square root>> and <<平方根/square root>>, and express them using the radical sign
+  - Understand that <<开平方/extracting square root>> and <<平方/squaring>> are inverse operations
+  - Understand the concept of <<立方根/cube root>> and master the <<开立方/extracting cube root>> operation
+  - Know the concept of <<无理数/irrational number>> and be able to determine whether a number is a <<有理数/rational number>> or an <<无理数/irrational number>>
+  - Know the classification of <<实数/real number>>s, understanding that <<有理数/rational number>>s and <<无理数/irrational number>>s are collectively called <<实数/real number>>s
+  - Master the properties of <<实数/real number>>s including <<相反数/opposite number>>, <<绝对值/absolute value>>, and <<倒数/reciprocal>>
+  - Understand the one-to-one correspondence between <<实数/real number>>s and points on the <<数轴/number line>>
+  - Be able to use <<平方根/square root>>s and <<立方根/cube root>>s to solve simple real-life problems
+
+prerequisites:
+  title: 从有理数出发——为什么需要新的数？
+  titleEn: 'Starting from rational numbers — why do we need new numbers?'
+  intro: |
+    在第1章中，我们学过<<有理数/rational number>>，即所有<<整数/integer>>和<<分数/fraction>>。
+    但有些问题仅用<<有理数/rational number>>无法解决：
+  introEn: |
+    In Chapter 1, we learned about <<有理数/rational number>>s, which include all <<整数/integer>>s and <<分数/fraction>>s.
+    However, some problems cannot be solved using only <<有理数/rational number>>s:
+  motivatingProblems:
+    - '一个正方形的面积为 $2$ 平方米，它的边长是多少？即求 $x^2 = 2$ 的正数解。'
+    - '一个正方体的体积是 $5$ 立方厘米，它的棱长是多少？即求 $x^3 = 5$ 的解。'
+  motivatingProblemsEn:
+    - 'A square has an area of $2$ square meters. What is its side length? That is, find the positive solution of $x^2 = 2$.'
+    - 'A cube has a volume of $5$ cubic centimeters. What is its edge length? That is, find the solution of $x^3 = 5$.'
+  conclusion: |
+    这些问题的答案无法用<<分数/fraction>>或有限<<小数/decimal>>表示，于是数学引入了**<<平方根/square root>>**和**<<立方根/cube root>>**的概念，并由此引出**<<无理数/irrational number>>**和**<<实数/real number>>**。
+  conclusionEn: |
+    The answers to these problems cannot be expressed as <<分数/fraction>>s or finite <<小数/decimal>>s, so mathematics introduced the concepts of **<<平方根/square root>>** and **<<立方根/cube root>>**, which lead to **<<无理数/irrational number>>s** and **<<实数/real number>>s**.
+
+concepts:
+  - id: square-root
+    title: <<平方根/square root>>与<<算术平方根/arithmetic square root>>
+    titleEn: <<平方根/square root>> and <<算术平方根/arithmetic square root>>
+    content: |
+      如果一个数 $x$ 的平方等于 $a$，即 $x^2 = a$，那么 $x$ 叫做 $a$ 的**<<平方根/square root>>**（也叫**二次方根**）。
+
+      - 正数 $a$ 有两个<<平方根/square root>>：一个正的 $\sqrt{a}$，一个负的 $-\sqrt{a}$，合写为 $\pm\sqrt{a}$
+      - $0$ 的<<平方根/square root>>是 $0$
+      - 负数没有<<平方根/square root>>
+
+      正数 $a$ 的正的<<平方根/square root>> $\sqrt{a}$，叫做 $a$ 的**<<算术平方根/arithmetic square root>>**。
+
+      求一个数的<<平方根/square root>>的运算叫做**<<开平方/extracting square root>>**，它与**<<平方/squaring>>**互为逆运算。
+    contentEn: |
+      If the square of a number $x$ equals $a$, i.e., $x^2 = a$, then $x$ is called a **<<平方根/square root>>** of $a$ (also called a second root).
+
+      - A positive number $a$ has two <<平方根/square root>>s: a positive one $\sqrt{a}$ and a negative one $-\sqrt{a}$, written together as $\pm\sqrt{a}$
+      - The <<平方根/square root>> of $0$ is $0$
+      - Negative numbers have no <<平方根/square root>>
+
+      The positive <<平方根/square root>> $\sqrt{a}$ of a positive number $a$ is called the **<<算术平方根/arithmetic square root>>** of $a$.
+
+      The operation of finding the <<平方根/square root>> of a number is called **<<开平方/extracting square root>>**, and it is the inverse operation of **<<平方/squaring>>**.
+    examples:
+      - '$9$ 的<<平方根/square root>>是 $\pm 3$，因为 $3^2 = 9$ 且 $(-3)^2 = 9$'
+      - '$9$ 的<<算术平方根/arithmetic square root>>是 $3$，记作 $\sqrt{9} = 3$'
+      - '$0$ 的<<平方根/square root>>是 $0$，即 $\sqrt{0} = 0$'
+      - '$\sqrt{2} \approx 1.414$，$2$ 的<<平方根/square root>>为 $\pm\sqrt{2}$'
+    examplesEn:
+      - 'The <<平方根/square root>>s of $9$ are $\pm 3$, because $3^2 = 9$ and $(-3)^2 = 9$'
+      - 'The <<算术平方根/arithmetic square root>> of $9$ is $3$, written as $\sqrt{9} = 3$'
+      - 'The <<平方根/square root>> of $0$ is $0$, i.e., $\sqrt{0} = 0$'
+      - '$\sqrt{2} \approx 1.414$; the <<平方根/square root>>s of $2$ are $\pm\sqrt{2}$'
+    notes:
+      - '被开方数 $a$ 必须 $\geq 0$'
+      - '<<算术平方根/arithmetic square root>> $\sqrt{a} \geq 0$，结果永远非负'
+      - '$\sqrt{a^2} = |a|$，不能直接写成 $a$'
+    notesEn:
+      - 'The radicand $a$ must satisfy $a \geq 0$'
+      - 'The <<算术平方根/arithmetic square root>> $\sqrt{a} \geq 0$; the result is always non-negative'
+      - '$\sqrt{a^2} = |a|$; it cannot be written directly as $a$'
+
+  - id: cube-root
+    title: <<立方根/cube root>>
+    titleEn: <<立方根/cube root>>
+    content: |
+      如果一个数 $x$ 的立方等于 $a$，即 $x^3 = a$，那么 $x$ 叫做 $a$ 的**<<立方根/cube root>>**（也叫**三次方根**），记作 $\sqrt[3]{a}$。
+
+      - 正数的<<立方根/cube root>>是正数
+      - 负数的<<立方根/cube root>>是负数
+      - $0$ 的<<立方根/cube root>>是 $0$
+
+      求一个数的<<立方根/cube root>>的运算叫做**<<开立方/extracting cube root>>**。
+    contentEn: |
+      If the cube of a number $x$ equals $a$, i.e., $x^3 = a$, then $x$ is called the **<<立方根/cube root>>** of $a$ (also called a third root), written as $\sqrt[3]{a}$.
+
+      - The <<立方根/cube root>> of a positive number is positive
+      - The <<立方根/cube root>> of a negative number is negative
+      - The <<立方根/cube root>> of $0$ is $0$
+
+      The operation of finding the <<立方根/cube root>> of a number is called **<<开立方/extracting cube root>>**.
+    examples:
+      - '$\sqrt[3]{8} = 2$，因为 $2^3 = 8$'
+      - '$\sqrt[3]{-27} = -3$，因为 $(-3)^3 = -27$'
+      - '$\sqrt[3]{0} = 0$'
+      - '$\sqrt[3]{-1} = -1$'
+    examplesEn:
+      - '$\sqrt[3]{8} = 2$, because $2^3 = 8$'
+      - '$\sqrt[3]{-27} = -3$, because $(-3)^3 = -27$'
+      - '$\sqrt[3]{0} = 0$'
+      - '$\sqrt[3]{-1} = -1$'
+    notes:
+      - 每个数都有唯一的<<立方根/cube root>>（不像<<平方根/square root>>有两个）
+      - 负数也可以开立方，这一点与<<平方根/square root>>不同
+    notesEn:
+      - 'Every number has exactly one <<立方根/cube root>> (unlike <<平方根/square root>> which has two)'
+      - 'Negative numbers also have <<立方根/cube root>>s, which differs from <<平方根/square root>>s'
+
+  - id: irrational-numbers
+    title: <<无理数/irrational number>>
+    titleEn: <<无理数/irrational number>>
+    content: |
+      **<<无理数/irrational number>>**是无限不循环<<小数/decimal>>。
+
+      常见的<<无理数/irrational number>>有：
+      - 含根号的数（开方开不尽的），如 $\sqrt{2}$、$\sqrt{3}$、$\sqrt[3]{2}$
+      - 圆周率 $\pi = 3.14159\ldots$
+      - 人为构造的无限不循环<<小数/decimal>>，如 $0.1010010001\ldots$
+
+      **判断方法**：如果一个数不能表示为两个<<整数/integer>>之比 $\frac{p}{q}$（$q \neq 0$），则它是<<无理数/irrational number>>。
+    contentEn: |
+      An **<<无理数/irrational number>>** is an infinite non-repeating <<小数/decimal>>.
+
+      Common <<无理数/irrational number>>s include:
+      - Numbers with radical signs (roots that cannot be simplified to rational numbers), such as $\sqrt{2}$, $\sqrt{3}$, $\sqrt[3]{2}$
+      - Pi: $\pi = 3.14159\ldots$
+      - Artificially constructed infinite non-repeating <<小数/decimal>>s, such as $0.1010010001\ldots$
+
+      **How to determine**: If a number cannot be expressed as a ratio of two <<整数/integer>>s $\frac{p}{q}$ ($q \neq 0$), then it is an <<无理数/irrational number>>.
+    examples:
+      - '$\sqrt{2}$ 是<<无理数/irrational number>>，因为 $\sqrt{2} = 1.41421356\ldots$ 是无限不循环<<小数/decimal>>'
+      - '$\pi$ 是<<无理数/irrational number>>'
+      - '$\sqrt{4} = 2$，是<<有理数/rational number>>，不是<<无理数/irrational number>>'
+      - '$0.333\ldots = \frac{1}{3}$，是无限循环<<小数/decimal>>，属于<<有理数/rational number>>'
+    examplesEn:
+      - '$\sqrt{2}$ is an <<无理数/irrational number>> because $\sqrt{2} = 1.41421356\ldots$ is an infinite non-repeating <<小数/decimal>>'
+      - '$\pi$ is an <<无理数/irrational number>>'
+      - '$\sqrt{4} = 2$, which is a <<有理数/rational number>>, not an <<无理数/irrational number>>'
+      - '$0.333\ldots = \frac{1}{3}$, which is an infinite repeating <<小数/decimal>> and belongs to <<有理数/rational number>>s'
+
+  - id: real-number-system
+    title: <<实数/real number>>的分类
+    titleEn: Classification of <<实数/real number>>s
+    content: |
+      **<<有理数/rational number>>**和**<<无理数/irrational number>>**统称为**<<实数/real number>>**。
+
+      <<实数/real number>>的分类如下：
+    contentEn: |
+      **<<有理数/rational number>>s** and **<<无理数/irrational number>>s** are collectively called **<<实数/real number>>s**.
+
+      The classification of <<实数/real number>>s is as follows:
+    classification:
+      - name: <<有理数/rational number>>
+        nameEn: <<有理数/rational number>>
+        children:
+          - name: <<整数/integer>>
+            nameEn: <<整数/integer>>
+            examples: '$\ldots, -2, -1, 0, 1, 2, \ldots$'
+          - name: <<分数/fraction>>
+            nameEn: <<分数/fraction>>
+            examples: '$\frac{1}{2}, -\frac{3}{4}, 0.75, -2.5$'
+      - name: <<无理数/irrational number>>
+        nameEn: <<无理数/irrational number>>
+        children:
+          - name: 正<<无理数/irrational number>>
+            nameEn: Positive <<无理数/irrational number>>
+            examples: '$\sqrt{2}, \pi, \sqrt[3]{5}$'
+          - name: 负<<无理数/irrational number>>
+            nameEn: Negative <<无理数/irrational number>>
+            examples: '$-\sqrt{3}, -\pi$'
+    properties:
+      - <<实数/real number>>的<<相反数/opposite number>>：$a$ 的<<相反数/opposite number>>是 $-a$，$0$ 的<<相反数/opposite number>>是 $0$
+      - <<实数/real number>>的<<绝对值/absolute value>>：正数的<<绝对值/absolute value>>是它本身，负数的<<绝对值/absolute value>>是它的<<相反数/opposite number>>，$0$ 的<<绝对值/absolute value>>是 $0$
+      - <<实数/real number>>的<<倒数/reciprocal>>：非零实数 $a$ 的<<倒数/reciprocal>>是 $\frac{1}{a}$，$0$ 没有<<倒数/reciprocal>>
+    propertiesEn:
+      - '<<相反数/opposite number>> of a <<实数/real number>>: the <<相反数/opposite number>> of $a$ is $-a$; the <<相反数/opposite number>> of $0$ is $0$'
+      - '<<绝对值/absolute value>> of a <<实数/real number>>: the <<绝对值/absolute value>> of a positive number is itself, the <<绝对值/absolute value>> of a negative number is its <<相反数/opposite number>>, and the <<绝对值/absolute value>> of $0$ is $0$'
+      - '<<倒数/reciprocal>> of a <<实数/real number>>: the <<倒数/reciprocal>> of a non-zero real number $a$ is $\frac{1}{a}$; $0$ has no <<倒数/reciprocal>>'
+
+  - id: real-numbers-and-number-line
+    title: <<实数/real number>>与<<数轴/number line>>
+    titleEn: <<实数/real number>>s and the <<数轴/number line>>
+    content: |
+      每一个<<实数/real number>>都可以用<<数轴/number line>>上的一个点来表示；反过来，<<数轴/number line>>上的每一个点都对应一个<<实数/real number>>。
+
+      也就是说，<<实数/real number>>与<<数轴/number line>>上的点**一一对应**。
+
+      在第1章中，我们知道<<有理数/rational number>>可以在<<数轴/number line>>上表示。现在有了<<无理数/irrational number>>，<<数轴/number line>>上的每一个点都有了对应的数——正是<<实数/real number>>填满了<<数轴/number line>>上所有的"空隙"。
+    contentEn: |
+      Every <<实数/real number>> can be represented by a point on the <<数轴/number line>>; conversely, every point on the <<数轴/number line>> corresponds to a <<实数/real number>>.
+
+      In other words, <<实数/real number>>s and points on the <<数轴/number line>> are in **one-to-one correspondence**.
+
+      In Chapter 1, we learned that <<有理数/rational number>>s can be represented on the <<数轴/number line>>. Now with <<无理数/irrational number>>s, every point on the <<数轴/number line>> has a corresponding number — it is precisely the <<实数/real number>>s that fill all the "gaps" on the <<数轴/number line>>.
+    examples:
+      - '$\sqrt{2}$ 在<<数轴/number line>>上的位置大约在 $1$ 和 $2$ 之间（$\sqrt{2} \approx 1.414$）'
+      - '$\pi$ 在<<数轴/number line>>上的位置大约在 $3$ 和 $4$ 之间（$\pi \approx 3.14$）'
+      - '$-\sqrt{5}$ 在<<数轴/number line>>上的位置大约在 $-3$ 和 $-2$ 之间（$-\sqrt{5} \approx -2.236$）'
+    examplesEn:
+      - '$\sqrt{2}$ is located on the <<数轴/number line>> approximately between $1$ and $2$ ($\sqrt{2} \approx 1.414$)'
+      - '$\pi$ is located on the <<数轴/number line>> approximately between $3$ and $4$ ($\pi \approx 3.14$)'
+      - '$-\sqrt{5}$ is located on the <<数轴/number line>> approximately between $-3$ and $-2$ ($-\sqrt{5} \approx -2.236$)'
+
+realLife:
+  - category: 建筑与工程
+    categoryEn: Architecture and Engineering
+    description: '铺正方形地砖时，已知地砖面积为 $2$ 平方米，则边长为 $\sqrt{2} \approx 1.414$ 米'
+    descriptionEn: 'When laying square tiles, if the area of a tile is $2$ square meters, the side length is $\sqrt{2} \approx 1.414$ meters'
+  - category: 测量与计算
+    categoryEn: Measurement and Calculation
+    description: '等腰直角三角形的斜边长度：两直角边长为 $1$ 时，斜边长为 $\sqrt{1^2 + 1^2} = \sqrt{2}$'
+    descriptionEn: 'Hypotenuse of an isosceles right triangle: when both legs have length $1$, the hypotenuse is $\sqrt{1^2 + 1^2} = \sqrt{2}$'
+  - category: 包装设计
+    categoryEn: Packaging Design
+    description: '要制作一个体积为 $10$ 立方厘米的正方体盒子，棱长为 $\sqrt[3]{10} \approx 2.154$ 厘米'
+    descriptionEn: 'To make a cubic box with a volume of $10$ cubic centimeters, the edge length is $\sqrt[3]{10} \approx 2.154$ centimeters'
+  - category: 圆的计算
+    categoryEn: Calculations Involving Circles
+    description: '圆的周长和面积计算都用到<<无理数/irrational number>> $\pi$，如半径为 $r$ 的圆周长为 $2\pi r$'
+    descriptionEn: 'Calculations of the circumference and area of circles use the <<无理数/irrational number>> $\pi$; for example, the circumference of a circle with radius $r$ is $2\pi r$'
+
+examples:
+  - type: 1
+    title: 求<<算术平方根/arithmetic square root>>
+    titleEn: Finding the <<算术平方根/arithmetic square root>>
+    question: |
+      求下列各数的<<算术平方根/arithmetic square root>>：$25$，$\frac{9}{16}$，$0.01$。
+    questionEn: |
+      Find the <<算术平方根/arithmetic square root>> of each number: $25$, $\frac{9}{16}$, $0.01$.
+    steps:
+      - '因为 $5^2 = 25$，所以 $\sqrt{25} = 5$'
+      - '因为 $\left(\frac{3}{4}\right)^2 = \frac{9}{16}$，所以 $\sqrt{\frac{9}{16}} = \frac{3}{4}$'
+      - '因为 $0.1^2 = 0.01$，所以 $\sqrt{0.01} = 0.1$'
+    stepsEn:
+      - 'Since $5^2 = 25$, we have $\sqrt{25} = 5$'
+      - 'Since $\left(\frac{3}{4}\right)^2 = \frac{9}{16}$, we have $\sqrt{\frac{9}{16}} = \frac{3}{4}$'
+      - 'Since $0.1^2 = 0.01$, we have $\sqrt{0.01} = 0.1$'
+    answer: '$\sqrt{25} = 5$，$\sqrt{\frac{9}{16}} = \frac{3}{4}$，$\sqrt{0.01} = 0.1$'
+    answerEn: '$\sqrt{25} = 5$, $\sqrt{\frac{9}{16}} = \frac{3}{4}$, $\sqrt{0.01} = 0.1$'
+
+  - type: 2
+    title: 求一个数的<<平方根/square root>>
+    titleEn: Finding the <<平方根/square root>>s of a number
+    question: |
+      求 $36$ 的<<平方根/square root>>。
+    questionEn: |
+      Find the <<平方根/square root>>s of $36$.
+    steps:
+      - '因为 $6^2 = 36$，$(-6)^2 = 36$'
+      - '所以 $36$ 的<<平方根/square root>>是 $\pm 6$'
+    stepsEn:
+      - 'Since $6^2 = 36$ and $(-6)^2 = 36$'
+      - 'The <<平方根/square root>>s of $36$ are $\pm 6$'
+    answer: '$36$ 的<<平方根/square root>>是 $\pm 6$，即 $\pm\sqrt{36} = \pm 6$'
+    answerEn: 'The <<平方根/square root>>s of $36$ are $\pm 6$, i.e., $\pm\sqrt{36} = \pm 6$'
+
+  - type: 3
+    title: 求<<立方根/cube root>>
+    titleEn: Finding the <<立方根/cube root>>
+    question: |
+      求下列各数的<<立方根/cube root>>：$64$，$-125$，$\frac{1}{8}$。
+    questionEn: |
+      Find the <<立方根/cube root>> of each number: $64$, $-125$, $\frac{1}{8}$.
+    steps:
+      - '因为 $4^3 = 64$，所以 $\sqrt[3]{64} = 4$'
+      - '因为 $(-5)^3 = -125$，所以 $\sqrt[3]{-125} = -5$'
+      - '因为 $\left(\frac{1}{2}\right)^3 = \frac{1}{8}$，所以 $\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$'
+    stepsEn:
+      - 'Since $4^3 = 64$, we have $\sqrt[3]{64} = 4$'
+      - 'Since $(-5)^3 = -125$, we have $\sqrt[3]{-125} = -5$'
+      - 'Since $\left(\frac{1}{2}\right)^3 = \frac{1}{8}$, we have $\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$'
+    answer: '$\sqrt[3]{64} = 4$，$\sqrt[3]{-125} = -5$，$\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$'
+    answerEn: '$\sqrt[3]{64} = 4$, $\sqrt[3]{-125} = -5$, $\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$'
+
+  - type: 4
+    title: 判断<<有理数/rational number>>与<<无理数/irrational number>>
+    titleEn: Identifying <<有理数/rational number>>s and <<无理数/irrational number>>s
+    question: |
+      判断下列各数中哪些是<<有理数/rational number>>，哪些是<<无理数/irrational number>>：
+
+      $$\sqrt{9},\quad \sqrt{5},\quad -\pi,\quad 0.333\ldots,\quad \sqrt[3]{-8},\quad 0.1010010001\ldots$$
+    questionEn: |
+      Determine which of the following are <<有理数/rational number>>s and which are <<无理数/irrational number>>s:
+
+      $$\sqrt{9},\quad \sqrt{5},\quad -\pi,\quad 0.333\ldots,\quad \sqrt[3]{-8},\quad 0.1010010001\ldots$$
+    steps:
+      - '$\sqrt{9} = 3$，是<<有理数/rational number>>'
+      - '$\sqrt{5} = 2.2360679\ldots$，是无限不循环<<小数/decimal>>，是<<无理数/irrational number>>'
+      - '$-\pi$，是无限不循环<<小数/decimal>>，是<<无理数/irrational number>>'
+      - '$0.333\ldots = \frac{1}{3}$，是无限循环<<小数/decimal>>，是<<有理数/rational number>>'
+      - '$\sqrt[3]{-8} = -2$，是<<有理数/rational number>>'
+      - '$0.1010010001\ldots$ 是无限不循环<<小数/decimal>>，是<<无理数/irrational number>>'
+    stepsEn:
+      - '$\sqrt{9} = 3$, which is a <<有理数/rational number>>'
+      - '$\sqrt{5} = 2.2360679\ldots$, which is an infinite non-repeating <<小数/decimal>> and thus an <<无理数/irrational number>>'
+      - '$-\pi$ is an infinite non-repeating <<小数/decimal>> and thus an <<无理数/irrational number>>'
+      - '$0.333\ldots = \frac{1}{3}$, which is an infinite repeating <<小数/decimal>> and thus a <<有理数/rational number>>'
+      - '$\sqrt[3]{-8} = -2$, which is a <<有理数/rational number>>'
+      - '$0.1010010001\ldots$ is an infinite non-repeating <<小数/decimal>> and thus an <<无理数/irrational number>>'
+    answer: |
+      <<有理数/rational number>>：$\sqrt{9}$、$0.333\ldots$、$\sqrt[3]{-8}$
+
+      <<无理数/irrational number>>：$\sqrt{5}$、$-\pi$、$0.1010010001\ldots$
+    answerEn: |
+      <<有理数/rational number>>s: $\sqrt{9}$, $0.333\ldots$, $\sqrt[3]{-8}$
+
+      <<无理数/irrational number>>s: $\sqrt{5}$, $-\pi$, $0.1010010001\ldots$
+
+  - type: 5
+    title: 求<<实数/real number>>的<<相反数/opposite number>>和<<绝对值/absolute value>>
+    titleEn: Finding the <<相反数/opposite number>> and <<绝对值/absolute value>> of <<实数/real number>>s
+    question: |
+      求 $-\sqrt{3}$ 的<<相反数/opposite number>>和<<绝对值/absolute value>>。
+    questionEn: |
+      Find the <<相反数/opposite number>> and <<绝对值/absolute value>> of $-\sqrt{3}$.
+    steps:
+      - '$-\sqrt{3}$ 的<<相反数/opposite number>>：改变符号，得 $\sqrt{3}$'
+      - '$-\sqrt{3}$ 的<<绝对值/absolute value>>：$-\sqrt{3} < 0$，所以 $|-\sqrt{3}| = \sqrt{3}$'
+    stepsEn:
+      - 'The <<相反数/opposite number>> of $-\sqrt{3}$: change the sign to get $\sqrt{3}$'
+      - 'The <<绝对值/absolute value>> of $-\sqrt{3}$: since $-\sqrt{3} < 0$, we have $|-\sqrt{3}| = \sqrt{3}$'
+    answer: '<<相反数/opposite number>>为 $\sqrt{3}$，<<绝对值/absolute value>>为 $\sqrt{3}$'
+    answerEn: 'The <<相反数/opposite number>> is $\sqrt{3}$, and the <<绝对值/absolute value>> is $\sqrt{3}$'
+
+  - type: 6
+    title: 利用<<平方根/square root>>解方程
+    titleEn: Solving equations using <<平方根/square root>>s
+    question: |
+      求方程 $x^2 = 49$ 的解。
+    questionEn: |
+      Solve the equation $x^2 = 49$.
+    steps:
+      - '$x^2 = 49$，即 $x$ 是 $49$ 的<<平方根/square root>>'
+      - '因为 $7^2 = 49$ 且 $(-7)^2 = 49$'
+      - '所以 $x = \pm 7$'
+    stepsEn:
+      - '$x^2 = 49$, meaning $x$ is a <<平方根/square root>> of $49$'
+      - 'Since $7^2 = 49$ and $(-7)^2 = 49$'
+      - 'Therefore $x = \pm 7$'
+    answer: '$x = \pm 7$'
+    answerEn: '$x = \pm 7$'
+
+  - type: 7
+    title: 利用<<立方根/cube root>>解实际问题
+    titleEn: Solving real-life problems using <<立方根/cube root>>s
+    question: |
+      一个正方体容器的体积为 $216$ 立方厘米，求它的棱长。
+    questionEn: |
+      A cubic container has a volume of $216$ cubic centimeters. Find its edge length.
+    steps:
+      - '设正方体的棱长为 $a$ 厘米，则 $a^3 = 216$'
+      - '所以 $a = \sqrt[3]{216}$'
+      - '因为 $6^3 = 216$'
+      - '所以 $a = 6$'
+    stepsEn:
+      - 'Let the edge length of the cube be $a$ cm, then $a^3 = 216$'
+      - 'So $a = \sqrt[3]{216}$'
+      - 'Since $6^3 = 216$'
+      - 'Therefore $a = 6$'
+    answer: '正方体的棱长为 $6$ 厘米。'
+    answerEn: 'The edge length of the cube is $6$ centimeters.'
+
+commonMistakes:
+  - '混淆<<平方根/square root>>和<<算术平方根/arithmetic square root>>：$9$ 的<<平方根/square root>>是 $\pm 3$，而<<算术平方根/arithmetic square root>>是 $3$，不要把 $\sqrt{9}$ 写成 $\pm 3$'
+  - '认为负数也有<<平方根/square root>>：$\sqrt{-4}$ 没有意义（在实数范围内），被开方数不能为负'
+  - '把 $\sqrt{a^2}$ 直接写成 $a$：应该是 $\sqrt{a^2} = |a|$。例如 $\sqrt{(-3)^2} = |-3| = 3$，不是 $-3$'
+  - '混淆<<有理数/rational number>>和<<无理数/irrational number>>：$\sqrt{4} = 2$ 是<<有理数/rational number>>，而 $\sqrt{2}$ 是<<无理数/irrational number>>；带根号不一定是<<无理数/irrational number>>'
+  - '认为 $\pi = 3.14$：$3.14$ 只是 $\pi$ 的近似值，$\pi$ 本身是<<无理数/irrational number>>，$3.14$ 是<<有理数/rational number>>'
+  - '忘记<<立方根/cube root>>保留负号：$\sqrt[3]{-8} = -2$，不是 $2$'
+commonMistakesEn:
+  - 'Confusing <<平方根/square root>> with <<算术平方根/arithmetic square root>>: the <<平方根/square root>>s of $9$ are $\pm 3$, but the <<算术平方根/arithmetic square root>> is $3$; do not write $\sqrt{9}$ as $\pm 3$'
+  - 'Thinking negative numbers have <<平方根/square root>>s: $\sqrt{-4}$ is undefined (in the real number system); the radicand cannot be negative'
+  - 'Writing $\sqrt{a^2}$ directly as $a$: it should be $\sqrt{a^2} = |a|$. For example, $\sqrt{(-3)^2} = |-3| = 3$, not $-3$'
+  - 'Confusing <<有理数/rational number>>s and <<无理数/irrational number>>s: $\sqrt{4} = 2$ is a <<有理数/rational number>>, while $\sqrt{2}$ is an <<无理数/irrational number>>; having a radical sign does not necessarily make a number irrational'
+  - 'Thinking $\pi = 3.14$: $3.14$ is only an approximation of $\pi$; $\pi$ itself is an <<无理数/irrational number>>, while $3.14$ is a <<有理数/rational number>>'
+  - 'Forgetting the negative sign for <<立方根/cube root>>s: $\sqrt[3]{-8} = -2$, not $2$'
+
+exercises:
+  timeGuide:
+    total: 35分钟
+    totalEn: 35 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 15分钟
+        timeEn: 15 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $49$ 的<<算术平方根/arithmetic square root>>是 ______。
+      questionEn: |
+        The <<算术平方根/arithmetic square root>> of $49$ is ______.
+      correctValue: "7"
+      answer: '$7$'
+      answerEn: '$7$'
+      explanation: |
+        因为 $7^2 = 49$ 且 $7 > 0$，所以 $\sqrt{49} = 7$。
+      explanationEn: |
+        Since $7^2 = 49$ and $7 > 0$, we have $\sqrt{49} = 7$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $81$ 的<<平方根/square root>>是 ______。
+      questionEn: |
+        The <<平方根/square root>>s of $81$ are ______.
+      correctValue: "±9"
+      answer: '$\pm 9$'
+      answerEn: '$\pm 9$'
+      explanation: |
+        因为 $9^2 = 81$ 且 $(-9)^2 = 81$，所以 $81$ 的<<平方根/square root>>是 $\pm 9$。
+      explanationEn: |
+        Since $9^2 = 81$ and $(-9)^2 = 81$, the <<平方根/square root>>s of $81$ are $\pm 9$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $\sqrt[3]{-64} = $ ______。
+      questionEn: |
+        $\sqrt[3]{-64} = $ ______.
+      correctValue: "-4"
+      answer: '$-4$'
+      answerEn: '$-4$'
+      explanation: |
+        因为 $(-4)^3 = -64$，所以 $\sqrt[3]{-64} = -4$。
+      explanationEn: |
+        Since $(-4)^3 = -64$, we have $\sqrt[3]{-64} = -4$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $-\sqrt{3}$ 的<<相反数/opposite number>>是 ______，<<绝对值/absolute value>>是 ______。
+      questionEn: |
+        The <<相反数/opposite number>> of $-\sqrt{3}$ is ______, and the <<绝对值/absolute value>> is ______.
+      correctValue: "√3, √3"
+      answer: '$\sqrt{3}$，$\sqrt{3}$'
+      answerEn: '$\sqrt{3}$, $\sqrt{3}$'
+      explanation: |
+        <<相反数/opposite number>>改变符号：$-\sqrt{3}$ 的<<相反数/opposite number>>是 $\sqrt{3}$。<<绝对值/absolute value>>去掉负号：$|-\sqrt{3}| = \sqrt{3}$。
+      explanationEn: |
+        The <<相反数/opposite number>> changes the sign: the <<相反数/opposite number>> of $-\sqrt{3}$ is $\sqrt{3}$. The <<绝对值/absolute value>> removes the negative sign: $|-\sqrt{3}| = \sqrt{3}$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        $\sqrt{16}$ 的值是 $\pm 4$。
+      questionEn: |
+        The value of $\sqrt{16}$ is $\pm 4$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $\sqrt{16}$ 表示 $16$ 的<<算术平方根/arithmetic square root>>，结果为 $4$（非负），不是 $\pm 4$。$16$ 的<<平方根/square root>>才是 $\pm 4$。
+      explanationEn: |
+        $\sqrt{16}$ denotes the <<算术平方根/arithmetic square root>> of $16$, which is $4$ (non-negative), not $\pm 4$. The <<平方根/square root>>s of $16$ are $\pm 4$.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        $\pi$ 是<<无理数/irrational number>>。
+      questionEn: |
+        $\pi$ is an <<无理数/irrational number>>.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $\pi = 3.14159265\ldots$ 是无限不循环<<小数/decimal>>，不能表示为两个<<整数/integer>>之比，所以是<<无理数/irrational number>>。
+      explanationEn: |
+        $\pi = 3.14159265\ldots$ is an infinite non-repeating <<小数/decimal>> that cannot be expressed as a ratio of two <<整数/integer>>s, so it is an <<无理数/irrational number>>.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        负数没有<<立方根/cube root>>。
+      questionEn: |
+        Negative numbers have no <<立方根/cube root>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        负数有<<立方根/cube root>>，且其<<立方根/cube root>>也是负数。例如 $\sqrt[3]{-8} = -2$。负数没有<<平方根/square root>>，但有<<立方根/cube root>>。
+      explanationEn: |
+        Negative numbers do have <<立方根/cube root>>s, and their <<立方根/cube root>>s are also negative. For example, $\sqrt[3]{-8} = -2$. Negative numbers have no <<平方根/square root>>s, but they do have <<立方根/cube root>>s.
+
+    - number: 8
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: 'III. Multiple Choice'
+      question: |
+        下列各数中，是<<无理数/irrational number>>的是（　）
+      questionEn: |
+        Among the following numbers, which one is an <<无理数/irrational number>>? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '$\sqrt{25}$'
+            - '$\frac{22}{7}$'
+            - '$\sqrt{7}$'
+            - '$\sqrt[3]{27}$'
+          correctValue: '$\sqrt{7}$'
+      answer: '$\sqrt{7}$'
+      answerEn: '$\sqrt{7}$'
+      explanation: |
+        $\sqrt{25} = 5$（<<有理数/rational number>>），$\frac{22}{7}$ 是<<分数/fraction>>（<<有理数/rational number>>），$\sqrt[3]{27} = 3$（<<有理数/rational number>>）。只有 $\sqrt{7}$ 是无限不循环<<小数/decimal>>，属于<<无理数/irrational number>>。
+      explanationEn: |
+        $\sqrt{25} = 5$ (<<有理数/rational number>>), $\frac{22}{7}$ is a <<分数/fraction>> (<<有理数/rational number>>), $\sqrt[3]{27} = 3$ (<<有理数/rational number>>). Only $\sqrt{7}$ is an infinite non-repeating <<小数/decimal>>, making it an <<无理数/irrational number>>.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: 'III. Multiple Choice'
+      question: |
+        $\sqrt{(-5)^2}$ 的值是（　）
+      questionEn: |
+        The value of $\sqrt{(-5)^2}$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '$5$'
+            - '$-5$'
+            - '$\pm 5$'
+            - '$25$'
+          correctValue: '$5$'
+      answer: '$5$'
+      answerEn: '$5$'
+      explanation: |
+        $\sqrt{(-5)^2} = \sqrt{25} = 5$。也可以用公式 $\sqrt{a^2} = |a|$，所以 $\sqrt{(-5)^2} = |-5| = 5$。
+      explanationEn: |
+        $\sqrt{(-5)^2} = \sqrt{25} = 5$. Alternatively, using the formula $\sqrt{a^2} = |a|$, we get $\sqrt{(-5)^2} = |-5| = 5$.
+
+    - number: 10
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Computation'
+      question: |
+        计算下列各式的值：
+
+        (1) $\sqrt{144}$　　(2) $\sqrt[3]{-1000}$　　(3) $\sqrt{\frac{4}{9}}$
+      questionEn: |
+        Calculate the value of each expression:
+
+        (1) $\sqrt{144}$　　(2) $\sqrt[3]{-1000}$　　(3) $\sqrt{\frac{4}{9}}$
+      answer: |
+        (1) $\sqrt{144} = 12$（因为 $12^2 = 144$）
+
+        (2) $\sqrt[3]{-1000} = -10$（因为 $(-10)^3 = -1000$）
+
+        (3) $\sqrt{\frac{4}{9}} = \frac{2}{3}$（因为 $\left(\frac{2}{3}\right)^2 = \frac{4}{9}$）
+      answerEn: |
+        (1) $\sqrt{144} = 12$ (since $12^2 = 144$)
+
+        (2) $\sqrt[3]{-1000} = -10$ (since $(-10)^3 = -1000$)
+
+        (3) $\sqrt{\frac{4}{9}} = \frac{2}{3}$ (since $\left(\frac{2}{3}\right)^2 = \frac{4}{9}$)
+      explanation: |
+        (1) 找到平方等于 $144$ 的正数：$12^2 = 144$
+
+        (2) 找到立方等于 $-1000$ 的数：$(-10)^3 = -1000$
+
+        (3) 找到平方等于 $\frac{4}{9}$ 的正数：$\left(\frac{2}{3}\right)^2 = \frac{4}{9}$
+      explanationEn: |
+        (1) Find the positive number whose square is $144$: $12^2 = 144$
+
+        (2) Find the number whose cube is $-1000$: $(-10)^3 = -1000$
+
+        (3) Find the positive number whose square is $\frac{4}{9}$: $\left(\frac{2}{3}\right)^2 = \frac{4}{9}$
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Computation'
+      question: |
+        求满足下列条件的 $x$：
+
+        (1) $x^2 = \frac{25}{4}$　　(2) $x^3 = -216$
+      questionEn: |
+        Find $x$ that satisfies the following conditions:
+
+        (1) $x^2 = \frac{25}{4}$　　(2) $x^3 = -216$
+      answer: |
+        (1) $x$ 是 $\frac{25}{4}$ 的<<平方根/square root>>，所以 $x = \pm\sqrt{\frac{25}{4}} = \pm\frac{5}{2}$
+
+        (2) $x$ 是 $-216$ 的<<立方根/cube root>>，所以 $x = \sqrt[3]{-216} = -6$
+      answerEn: |
+        (1) $x$ is a <<平方根/square root>> of $\frac{25}{4}$, so $x = \pm\sqrt{\frac{25}{4}} = \pm\frac{5}{2}$
+
+        (2) $x$ is the <<立方根/cube root>> of $-216$, so $x = \sqrt[3]{-216} = -6$
+      explanation: |
+        (1) $x^2 = \frac{25}{4}$，对两边<<开平方/extracting square root>>，得 $x = \pm\frac{5}{2}$
+
+        (2) $x^3 = -216$，对两边<<开立方/extracting cube root>>，因为 $(-6)^3 = -216$，得 $x = -6$
+      explanationEn: |
+        (1) $x^2 = \frac{25}{4}$; <<开平方/extracting square root>> on both sides gives $x = \pm\frac{5}{2}$
+
+        (2) $x^3 = -216$; <<开立方/extracting cube root>> on both sides gives $x = -6$ since $(-6)^3 = -216$
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: 'V. Comprehensive Problem'
+      question: |
+        将下列各数分别填入对应的集合中：
+
+        $$\sqrt{3},\quad -5,\quad 0,\quad \frac{2}{3},\quad -\sqrt{2},\quad \pi,\quad \sqrt{16},\quad -0.5$$
+
+        <<有理数/rational number>>集合：$\{$______$\}$
+
+        <<无理数/irrational number>>集合：$\{$______$\}$
+      questionEn: |
+        Place each of the following numbers into the correct set:
+
+        $$\sqrt{3},\quad -5,\quad 0,\quad \frac{2}{3},\quad -\sqrt{2},\quad \pi,\quad \sqrt{16},\quad -0.5$$
+
+        <<有理数/rational number>> set: $\{$______$\}$
+
+        <<无理数/irrational number>> set: $\{$______$\}$
+      answer: |
+        <<有理数/rational number>>集合：$\{-5,\ 0,\ \frac{2}{3},\ \sqrt{16},\ -0.5\}$
+
+        <<无理数/irrational number>>集合：$\{\sqrt{3},\ -\sqrt{2},\ \pi\}$
+      answerEn: |
+        <<有理数/rational number>> set: $\{-5,\ 0,\ \frac{2}{3},\ \sqrt{16},\ -0.5\}$
+
+        <<无理数/irrational number>> set: $\{\sqrt{3},\ -\sqrt{2},\ \pi\}$
+      explanation: |
+        - $\sqrt{3}$：无限不循环<<小数/decimal>>，<<无理数/irrational number>>
+        - $-5$：<<整数/integer>>，<<有理数/rational number>>
+        - $0$：<<整数/integer>>，<<有理数/rational number>>
+        - $\frac{2}{3}$：<<分数/fraction>>，<<有理数/rational number>>
+        - $-\sqrt{2}$：无限不循环<<小数/decimal>>，<<无理数/irrational number>>
+        - $\pi$：无限不循环<<小数/decimal>>，<<无理数/irrational number>>
+        - $\sqrt{16} = 4$：<<整数/integer>>，<<有理数/rational number>>
+        - $-0.5$：有限<<小数/decimal>>，<<有理数/rational number>>
+      explanationEn: |
+        - $\sqrt{3}$: infinite non-repeating <<小数/decimal>>, <<无理数/irrational number>>
+        - $-5$: <<整数/integer>>, <<有理数/rational number>>
+        - $0$: <<整数/integer>>, <<有理数/rational number>>
+        - $\frac{2}{3}$: <<分数/fraction>>, <<有理数/rational number>>
+        - $-\sqrt{2}$: infinite non-repeating <<小数/decimal>>, <<无理数/irrational number>>
+        - $\pi$: infinite non-repeating <<小数/decimal>>, <<无理数/irrational number>>
+        - $\sqrt{16} = 4$: <<整数/integer>>, <<有理数/rational number>>
+        - $-0.5$: finite <<小数/decimal>>, <<有理数/rational number>>
+
+summary:
+  - 正数 $a$ 有两个<<平方根/square root>>：$\pm\sqrt{a}$；<<算术平方根/arithmetic square root>> $\sqrt{a} \geq 0$
+  - $0$ 的<<平方根/square root>>是 $0$，负数没有<<平方根/square root>>
+  - 每个实数都有唯一的<<立方根/cube root>>，负数的<<立方根/cube root>>是负数
+  - <<无理数/irrational number>>是无限不循环<<小数/decimal>>，不能表示为 $\frac{p}{q}$ 的形式
+  - <<有理数/rational number>>和<<无理数/irrational number>>统称为<<实数/real number>>
+  - <<实数/real number>>与<<数轴/number line>>上的点一一对应
+  - <<实数/real number>>也有<<相反数/opposite number>>、<<绝对值/absolute value>>、<<倒数/reciprocal>>，运算法则与<<有理数/rational number>>相同
+summaryEn:
+  - 'A positive number $a$ has two <<平方根/square root>>s: $\pm\sqrt{a}$; the <<算术平方根/arithmetic square root>> $\sqrt{a} \geq 0$'
+  - 'The <<平方根/square root>> of $0$ is $0$; negative numbers have no <<平方根/square root>>s'
+  - 'Every real number has a unique <<立方根/cube root>>; the <<立方根/cube root>> of a negative number is negative'
+  - '<<无理数/irrational number>>s are infinite non-repeating <<小数/decimal>>s that cannot be expressed in the form $\frac{p}{q}$'
+  - '<<有理数/rational number>>s and <<无理数/irrational number>>s are collectively called <<实数/real number>>s'
+  - '<<实数/real number>>s and points on the <<数轴/number line>> are in one-to-one correspondence'
+  - '<<实数/real number>>s also have <<相反数/opposite number>>s, <<绝对值/absolute value>>s, and <<倒数/reciprocal>>s, with the same rules as <<有理数/rational number>>s'
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: 'These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter.'
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        下列说法正确的是（　）
+      questionEn: |
+        Which of the following statements is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '无限<<小数/decimal>>都是<<无理数/irrational number>>'
+            - '<<无理数/irrational number>>都是无限<<小数/decimal>>'
+            - '带根号的数都是<<无理数/irrational number>>'
+            - '$\frac{22}{7}$ 是<<无理数/irrational number>>'
+          correctValue: '<<无理数/irrational number>>都是无限<<小数/decimal>>'
+      answer: '<<无理数/irrational number>>都是无限<<小数/decimal>>'
+      answerEn: 'All <<无理数/irrational number>>s are infinite <<小数/decimal>>s'
+      explanation: |
+        A 错：无限循环<<小数/decimal>>（如 $0.333\ldots$）是<<有理数/rational number>>，不是<<无理数/irrational number>>。
+        B 对：<<无理数/irrational number>>的定义就是无限不循环<<小数/decimal>>，它们确实都是无限<<小数/decimal>>。
+        C 错：$\sqrt{4} = 2$ 带根号但是<<有理数/rational number>>。
+        D 错：$\frac{22}{7}$ 是<<分数/fraction>>，属于<<有理数/rational number>>。
+      explanationEn: |
+        A is wrong: infinite repeating <<小数/decimal>>s (like $0.333\ldots$) are <<有理数/rational number>>s, not <<无理数/irrational number>>s.
+        B is correct: by definition, <<无理数/irrational number>>s are infinite non-repeating <<小数/decimal>>s, so they are indeed all infinite <<小数/decimal>>s.
+        C is wrong: $\sqrt{4} = 2$ has a radical sign but is a <<有理数/rational number>>.
+        D is wrong: $\frac{22}{7}$ is a <<分数/fraction>> and thus a <<有理数/rational number>>.
+
+    - number: 2
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知 $\sqrt{a - 1} + |b + 2| = 0$，求 $a + b$ 的值。
+      questionEn: |
+        Given $\sqrt{a - 1} + |b + 2| = 0$, find the value of $a + b$.
+      answer: '$a + b = -1$'
+      answerEn: '$a + b = -1$'
+      explanation: |
+        因为 $\sqrt{a - 1} \geq 0$ 且 $|b + 2| \geq 0$，而它们的和为 $0$，所以两项必须都等于 $0$：
+
+        $$\sqrt{a - 1} = 0 \implies a - 1 = 0 \implies a = 1$$
+
+        $$|b + 2| = 0 \implies b + 2 = 0 \implies b = -2$$
+
+        所以 $a + b = 1 + (-2) = -1$。
+
+        **关键思路**：两个非负数之和为 $0$，则每个数都为 $0$。
+      explanationEn: |
+        Since $\sqrt{a - 1} \geq 0$ and $|b + 2| \geq 0$, and their sum equals $0$, both terms must equal $0$:
+
+        $$\sqrt{a - 1} = 0 \implies a - 1 = 0 \implies a = 1$$
+
+        $$|b + 2| = 0 \implies b + 2 = 0 \implies b = -2$$
+
+        Therefore $a + b = 1 + (-2) = -1$.
+
+        **Key idea**: if the sum of two non-negative numbers is $0$, then each number must be $0$.
+
+    - number: 3
+      type: 提升填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知 $x$ 是 $\sqrt{5}$ 的整数部分，$y$ 是 $\sqrt{5}$ 的小数部分，则 $x + y$ 的值是 ______。
+      questionEn: |
+        If $x$ is the integer part of $\sqrt{5}$ and $y$ is the decimal part of $\sqrt{5}$, then the value of $x + y$ is ______.
+      correctValue: "√5"
+      answer: '$\sqrt{5}$'
+      answerEn: '$\sqrt{5}$'
+      explanation: |
+        因为 $2^2 = 4 < 5 < 9 = 3^2$，所以 $2 < \sqrt{5} < 3$。
+
+        $\sqrt{5}$ 的整数部分 $x = 2$，小数部分 $y = \sqrt{5} - 2$。
+
+        所以 $x + y = 2 + (\sqrt{5} - 2) = \sqrt{5}$。
+
+        **关键思路**：整数部分 + 小数部分 = 原数本身。
+      explanationEn: |
+        Since $2^2 = 4 < 5 < 9 = 3^2$, we have $2 < \sqrt{5} < 3$.
+
+        The integer part of $\sqrt{5}$ is $x = 2$, and the decimal part is $y = \sqrt{5} - 2$.
+
+        Therefore $x + y = 2 + (\sqrt{5} - 2) = \sqrt{5}$.
+
+        **Key idea**: integer part + decimal part = the original number itself.
+
+    - number: 4
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        在<<数轴/number line>>上，点 A 表示 $1$，点 B 表示 $\sqrt{2} + 1$。
+
+        (1) 求 A、B 两点之间的距离。
+        (2) 如果点 C 在 A、B 之间且 AC = $\frac{1}{2}$ AB，求点 C 表示的数。
+      questionEn: |
+        On the <<数轴/number line>>, point A represents $1$ and point B represents $\sqrt{2} + 1$.
+
+        (1) Find the distance between points A and B.
+        (2) If point C is between A and B with AC = $\frac{1}{2}$ AB, find the number represented by point C.
+      answer: |
+        (1) AB $= (\sqrt{2} + 1) - 1 = \sqrt{2}$
+
+        (2) AC $= \frac{1}{2} \times \sqrt{2} = \frac{\sqrt{2}}{2}$
+
+        点 C 在 A 的右侧，所以 C 表示的数为 $1 + \frac{\sqrt{2}}{2}$。
+      answerEn: |
+        (1) AB $= (\sqrt{2} + 1) - 1 = \sqrt{2}$
+
+        (2) AC $= \frac{1}{2} \times \sqrt{2} = \frac{\sqrt{2}}{2}$
+
+        Point C is to the right of A, so C represents the number $1 + \frac{\sqrt{2}}{2}$.
+      explanation: |
+        (1) 在<<数轴/number line>>上两点间距离等于两数之差的<<绝对值/absolute value>>：
+        $$AB = |(\sqrt{2} + 1) - 1| = |\sqrt{2}| = \sqrt{2}$$
+
+        (2) 由 AC $= \frac{1}{2}$ AB $= \frac{\sqrt{2}}{2}$，且 C 在 A、B 之间（即在 A 的右侧），
+        所以点 C 表示的数为 $1 + \frac{\sqrt{2}}{2}$。
+
+        此题综合了<<实数/real number>>在<<数轴/number line>>上的表示和距离计算。
+      explanationEn: |
+        (1) The distance between two points on the <<数轴/number line>> equals the <<绝对值/absolute value>> of the difference:
+        $$AB = |(\sqrt{2} + 1) - 1| = |\sqrt{2}| = \sqrt{2}$$
+
+        (2) Since AC $= \frac{1}{2}$ AB $= \frac{\sqrt{2}}{2}$, and C is between A and B (to the right of A),
+        the number represented by point C is $1 + \frac{\sqrt{2}}{2}$.
+
+        This problem combines the representation of <<实数/real number>>s on the <<数轴/number line>> with distance calculation.

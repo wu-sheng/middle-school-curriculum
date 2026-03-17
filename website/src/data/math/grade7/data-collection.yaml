@@ -1,0 +1,965 @@
+title: 数据的收集、整理与描述
+titleEn: "Data Collection, Organization, and Representation"
+chapter: 12
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 50-70分钟学习 + 30分钟练习
+targetAudience: 七年级下学期学生，已掌握小学阶段条形图和扇形图的基本知识
+
+objectives:
+  - 理解<<全面调查/census>>和<<抽样调查/sampling survey>>的概念，能区分它们的适用场景
+  - 掌握<<总体/population>>、<<个体/individual>>、<<样本/sample>>、<<样本容量/sample size>>等基本概念
+  - 能设计简单的调查问卷，收集数据并进行整理
+  - 掌握<<频数/frequency>>和<<频率/relative frequency>>的概念及计算方法
+  - 能制作<<频数分布表/frequency distribution table>>并正确分组
+  - 能绘制和阅读<<频数分布直方图/frequency distribution histogram>>
+  - 能综合运用<<条形图/bar chart>>、<<扇形图/pie chart>>和<<直方图/histogram>>描述数据
+objectivesEn:
+  - Understand the concepts of <<全面调查/census>> and <<抽样调查/sampling survey>>, and distinguish their applicable scenarios
+  - Master the basic concepts of <<总体/population>>, <<个体/individual>>, <<样本/sample>>, and <<样本容量/sample size>>
+  - Be able to design simple questionnaires, collect data, and organize it
+  - Master the concepts and calculation methods of <<频数/frequency>> and <<频率/relative frequency>>
+  - Be able to create a <<频数分布表/frequency distribution table>> with correct grouping
+  - Be able to draw and read <<频数分布直方图/frequency distribution histogram>>s
+  - Be able to comprehensively use <<条形图/bar chart>>s, <<扇形图/pie chart>>s, and <<直方图/histogram>>s to describe data
+
+prerequisites:
+  title: 从小学知识出发——从简单统计图到数据分析
+  titleEn: "Starting from elementary school knowledge — from simple statistical charts to data analysis"
+  intro: |
+    小学里，我们已经学过用统计图来表示数据：
+  introEn: |
+    In elementary school, we have already learned to use statistical charts to represent data:
+  knownNumbers:
+    - 用<<条形图/bar chart>>表示各类数据的多少
+    - 用<<扇形图/pie chart>>表示各部分占总体的百分比
+    - 用折线图表示数据随时间的变化趋势
+  knownNumbersEn:
+    - "Use <<条形图/bar chart>>s to show the quantity of each category"
+    - "Use <<扇形图/pie chart>>s to show the percentage of each part relative to the whole"
+    - "Use line charts to show the trend of data over time"
+  canSolve:
+    - 读懂简单的<<条形图/bar chart>>和<<扇形图/pie chart>>
+    - 从图表中读出具体数据
+    - 根据已知数据画简单的统计图
+  canSolveEn:
+    - Read simple <<条形图/bar chart>>s and <<扇形图/pie chart>>s
+    - Extract specific data from charts
+    - Draw simple statistical charts based on known data
+  cannotSolve:
+    - '"要了解全校1200名同学的视力情况，需要逐一检查吗？"'
+    - '"什么是<<总体/population>>和<<样本/sample>>？"'
+    - '"<<频率/relative frequency>>和<<频数/frequency>>有什么区别？"'
+    - '"如何制作<<频数分布直方图/frequency distribution histogram>>？"'
+  cannotSolveEn:
+    - '"To understand the eyesight of all 1200 students in a school, do we need to check each one?"'
+    - '"What are <<总体/population>> and <<样本/sample>>?"'
+    - '"What is the difference between <<频率/relative frequency>> and <<频数/frequency>>?"'
+    - '"How do we create a <<频数分布直方图/frequency distribution histogram>>?"'
+  conclusion: |
+    为了更科学地收集和分析数据，数学里引入了**<<统计调查/statistical survey>>**的方法，学习如何选择合适的调查方式，并用**<<频数分布直方图/frequency distribution histogram>>**等工具更精确地描述数据特征。
+  conclusionEn: |
+    To collect and analyze data more scientifically, mathematics introduces **<<统计调查/statistical survey>>** methods, teaches how to choose appropriate survey approaches, and uses tools like **<<频数分布直方图/frequency distribution histogram>>s** to describe data characteristics more precisely.
+
+concepts:
+  - id: statistical-survey
+    title: <<统计调查/statistical survey>>
+    titleEn: <<统计调查/statistical survey>>
+    content: |
+      收集数据的常用方式是**<<统计调查/statistical survey>>**，分为两种：
+
+      - **<<全面调查/census>>**（普查）：对<<总体/population>>中的**每一个**<<个体/individual>>都进行调查
+      - **<<抽样调查/sampling survey>>**：从<<总体/population>>中抽取**一部分**<<个体/individual>>进行调查，用<<样本/sample>>的情况来估计<<总体/population>>的情况
+    contentEn: |
+      A common method for collecting data is a **<<统计调查/statistical survey>>**, which comes in two types:
+
+      - **<<全面调查/census>>**: surveying **every** <<个体/individual>> in the <<总体/population>>
+      - **<<抽样调查/sampling survey>>**: selecting **a portion** of <<个体/individual>>s from the <<总体/population>> for investigation, and using the <<样本/sample>> to estimate the characteristics of the <<总体/population>>
+    examples:
+      - '<<全面调查/census>>的例子：人口普查——对全国每一个人进行登记调查'
+      - '<<全面调查/census>>的例子：期末考试——全班每个同学都参加考试'
+      - '<<抽样调查/sampling survey>>的例子：检查一批灯泡的寿命——只能抽取部分灯泡进行测试（检测具有破坏性）'
+      - '<<抽样调查/sampling survey>>的例子：了解全市中学生的课外阅读情况——从各校抽取部分学生调查'
+    examplesEn:
+      - "<<全面调查/census>> example: population census — registering and surveying every person in the country"
+      - "<<全面调查/census>> example: final exam — every student in the class takes the exam"
+      - "<<抽样调查/sampling survey>> example: testing the lifespan of a batch of light bulbs — only some bulbs can be tested (the test is destructive)"
+      - "<<抽样调查/sampling survey>> example: understanding extracurricular reading habits of middle school students in a city — surveying selected students from various schools"
+    notes:
+      - '当<<总体/population>>中<<个体/individual>>数量太大，或调查具有破坏性时，应选择<<抽样调查/sampling survey>>'
+      - '<<抽样调查/sampling survey>>的关键是<<样本/sample>>要具有**代表性**，抽取方式要**随机**'
+      - '<<全面调查/census>>结果精确，但耗时耗力；<<抽样调查/sampling survey>>省时省力，但结果是估计值'
+    notesEn:
+      - "When the number of <<个体/individual>>s in the <<总体/population>> is too large, or the survey is destructive, choose <<抽样调查/sampling survey>>"
+      - "The key to <<抽样调查/sampling survey>> is that the <<样本/sample>> must be **representative** and the selection method must be **random**"
+      - "<<全面调查/census>> gives precise results but is time-consuming; <<抽样调查/sampling survey>> saves time but yields estimates"
+
+  - id: population-sample
+    title: <<总体/population>>、<<个体/individual>>、<<样本/sample>>与<<样本容量/sample size>>
+    titleEn: "<<总体/population>>, <<个体/individual>>, <<样本/sample>>, and <<样本容量/sample size>>"
+    content: |
+      - **<<总体/population>>**：所要考察的对象的**全体**
+      - **<<个体/individual>>**：组成<<总体/population>>的**每一个**考察对象
+      - **<<样本/sample>>**：从<<总体/population>>中抽取的**一部分**<<个体/individual>>
+      - **<<样本容量/sample size>>**：<<样本/sample>>中<<个体/individual>>的**数目**（没有单位）
+    contentEn: |
+      - **<<总体/population>>**: the **entire collection** of objects to be investigated
+      - **<<个体/individual>>**: **each** object that makes up the <<总体/population>>
+      - **<<样本/sample>>**: **a portion** of <<个体/individual>>s drawn from the <<总体/population>>
+      - **<<样本容量/sample size>>**: the **number** of <<个体/individual>>s in the <<样本/sample>> (no units)
+    examples:
+      - '为了了解全校1200名学生的视力情况，抽查了200名学生的视力：<<总体/population>>是全校1200名学生的视力情况，<<个体/individual>>是每一名学生的视力情况，<<样本/sample>>是抽取的200名学生的视力情况，<<样本容量/sample size>>是200'
+    examplesEn:
+      - "To understand the eyesight of all 1200 students in a school, 200 students' eyesight was sampled: the <<总体/population>> is the eyesight of all 1200 students, the <<个体/individual>> is each student's eyesight, the <<样本/sample>> is the eyesight of the 200 selected students, and the <<样本容量/sample size>> is 200"
+    notes:
+      - '<<总体/population>>和<<个体/individual>>指的是所关心的**某种量**（如视力），不是对象本身（如学生）'
+      - '<<样本容量/sample size>>是一个数，没有单位，不能写成"200名"或"200人"'
+    notesEn:
+      - "<<总体/population>> and <<个体/individual>> refer to the **specific quantity** of interest (e.g., eyesight), not the objects themselves (e.g., students)"
+      - "<<样本容量/sample size>> is a number with no units — do not write \"200 students\" or \"200 people\""
+
+  - id: frequency-and-relative-frequency
+    title: <<频数/frequency>>与<<频率/relative frequency>>
+    titleEn: <<频数/frequency>> and <<频率/relative frequency>>
+    content: |
+      对数据进行分组整理时：
+
+      - **<<频数/frequency>>**：每个分组中数据出现的**次数**
+      - **<<频率/relative frequency>>**：每个分组的<<频数/frequency>>与数据总数的**比值**
+
+      计算公式：$<<频率/relative frequency>> = \dfrac{<<频数/frequency>>}{数据总数}$
+
+      所有组的<<频率/relative frequency>>之和等于 $1$。
+    contentEn: |
+      When organizing data into groups:
+
+      - **<<频数/frequency>>**: the **number of times** data appears in each group
+      - **<<频率/relative frequency>>**: the **ratio** of the <<频数/frequency>> of each group to the total number of data points
+
+      Formula: $\text{relative frequency} = \dfrac{\text{frequency}}{\text{total number of data points}}$
+
+      The sum of <<频率/relative frequency>> values across all groups equals $1$.
+    examples:
+      - '某班40名同学的数学成绩分组后，$[80, 90)$ 分数段有12人，则该段的<<频数/frequency>>为12，<<频率/relative frequency>>为 $\dfrac{12}{40} = 0.3$'
+    examplesEn:
+      - "After grouping the math scores of 40 students in a class, the $[80, 90)$ score range has 12 students, so the <<频数/frequency>> of this range is 12 and the <<频率/relative frequency>> is $\\dfrac{12}{40} = 0.3$"
+    notes:
+      - '<<频数/frequency>>是整数，<<频率/relative frequency>>是小数或分数'
+      - '所有组的<<频数/frequency>>之和 $=$ 数据总数'
+      - '所有组的<<频率/relative frequency>>之和 $= 1$（可用于检验计算是否正确）'
+      - '<<频率/relative frequency>>反映了各组数据在总体中所占的比例'
+    notesEn:
+      - "<<频数/frequency>> is an integer; <<频率/relative frequency>> is a decimal or fraction"
+      - "The sum of all <<频数/frequency>> values $=$ the total number of data points"
+      - "The sum of all <<频率/relative frequency>> values $= 1$ (useful for checking calculations)"
+      - "<<频率/relative frequency>> reflects the proportion of each group's data in the total"
+
+  - id: frequency-distribution-table
+    title: <<频数分布表/frequency distribution table>>
+    titleEn: <<频数分布表/frequency distribution table>>
+    content: |
+      制作<<频数分布表/frequency distribution table>>的步骤：
+
+      1. **确定数据的范围**：找出最大值和最小值，计算极差（最大值 $-$ 最小值）
+      2. **决定分组**：一般分 $5$ 到 $8$ 组，组距 $= \dfrac{\text{极差}}{\text{组数}}$（取整）
+      3. **列出各组区间**：通常用左闭右开区间 $[a, b)$
+      4. **统计各组<<频数/frequency>>**：用"画正字"法逐一计数
+      5. **计算各组<<频率/relative frequency>>**
+    contentEn: |
+      Steps for creating a <<频数分布表/frequency distribution table>>:
+
+      1. **Determine the data range**: find the maximum and minimum values, calculate the range (maximum $-$ minimum)
+      2. **Decide on groups**: usually $5$ to $8$ groups; class width $= \dfrac{\text{range}}{\text{number of groups}}$ (round as needed)
+      3. **List the intervals for each group**: typically use left-closed, right-open intervals $[a, b)$
+      4. **Count the <<频数/frequency>> for each group**: tally one by one using tally marks
+      5. **Calculate the <<频率/relative frequency>> for each group**
+    examples:
+      - '若数据的最大值为97，最小值为51，极差为 $97 - 51 = 46$，分为5组，则组距约为 $\dfrac{46}{5} = 9.2$，可取组距为10，分组为 $[50, 60)$、$[60, 70)$、$[70, 80)$、$[80, 90)$、$[90, 100]$'
+    examplesEn:
+      - 'If the maximum value is 97 and the minimum is 51, the range is $97 - 51 = 46$. Dividing into 5 groups, the class width is approximately $\dfrac{46}{5} = 9.2$, so we can use a class width of 10, with groups $[50, 60)$, $[60, 70)$, $[70, 80)$, $[80, 90)$, $[90, 100]$'
+    notes:
+      - '最后一组通常写成闭区间 $[a, b]$，以包含最大值'
+      - '组距应相等，各组区间不重叠、不遗漏'
+      - '制表完成后，检查所有<<频数/frequency>>之和是否等于数据总数'
+    notesEn:
+      - "The last group is usually written as a closed interval $[a, b]$ to include the maximum value"
+      - "Class widths should be equal; intervals should not overlap or leave gaps"
+      - "After completing the table, check that the sum of all <<频数/frequency>> values equals the total number of data points"
+
+  - id: histogram
+    title: <<频数分布直方图/frequency distribution histogram>>
+    titleEn: <<频数分布直方图/frequency distribution histogram>>
+    content: |
+      **<<频数分布直方图/frequency distribution histogram>>**是用矩形的面积（或高度）来表示各组<<频数/frequency>>的统计图。
+
+      绘制步骤：
+      1. 画出横轴和纵轴。横轴表示数据的分组区间，纵轴表示<<频数/frequency>>（或 $\dfrac{\text{<<频数/frequency>>}}{\text{组距}}$）
+      2. 以各组区间为底，<<频数/frequency>>为高，画出矩形
+      3. 各矩形之间**没有间隔**（与<<条形图/bar chart>>的区别）
+
+      与<<条形图/bar chart>>的区别：
+      - <<条形图/bar chart>>表示离散的分类数据，各条形之间有间隔
+      - <<直方图/histogram>>表示连续的数值数据，各矩形之间无间隔
+    contentEn: |
+      A **<<频数分布直方图/frequency distribution histogram>>** is a statistical chart that uses the area (or height) of rectangles to represent the <<频数/frequency>> of each group.
+
+      Drawing steps:
+      1. Draw the horizontal and vertical axes. The horizontal axis represents the data group intervals; the vertical axis represents <<频数/frequency>> (or $\dfrac{\text{frequency}}{\text{class width}}$)
+      2. Using each group interval as the base and <<频数/frequency>> as the height, draw rectangles
+      3. There are **no gaps** between rectangles (this is the difference from a <<条形图/bar chart>>)
+
+      Difference from a <<条形图/bar chart>>:
+      - A <<条形图/bar chart>> represents discrete categorical data, with gaps between bars
+      - A <<直方图/histogram>> represents continuous numerical data, with no gaps between rectangles
+    notes:
+      - '<<直方图/histogram>>中，每个矩形的宽度相同（等于组距）'
+      - '<<直方图/histogram>>适合展示数据的分布情况，能直观看出数据集中在哪个范围'
+      - '<<频率/relative frequency>>直方图中，纵轴为 $\dfrac{\text{<<频率/relative frequency>>}}{\text{组距}}$，所有矩形面积之和为 $1$'
+    notesEn:
+      - "In a <<直方图/histogram>>, each rectangle has the same width (equal to the class width)"
+      - "<<直方图/histogram>>s are suitable for showing data distribution and can visually show where data is concentrated"
+      - 'In a <<频率/relative frequency>> histogram, the vertical axis is $\dfrac{\text{relative frequency}}{\text{class width}}$, and the total area of all rectangles equals $1$'
+
+realLife:
+  - category: 班级调查
+    categoryEn: Class survey
+    positive: '对全班同学进行"最喜欢的运动"调查，统计各运动的人数，用<<条形图/bar chart>>展示结果'
+    positiveEn: 'Survey the entire class on "favorite sport," count the number of students for each sport, and display the results using a <<条形图/bar chart>>'
+    negative: '不能仅问几个好朋友就代表全班意见——<<样本/sample>>必须具有代表性'
+    negativeEn: 'Asking only a few close friends cannot represent the whole class — the <<样本/sample>> must be representative'
+  - category: 天气数据
+    categoryEn: Weather data
+    positive: '收集某城市一年365天的日最高气温，制作<<频数分布直方图/frequency distribution histogram>>，分析气温分布特征'
+    positiveEn: 'Collect the daily high temperature for all 365 days in a city, create a <<频数分布直方图/frequency distribution histogram>>, and analyze the temperature distribution'
+    negative: '仅用一周的气温数据来代表全年气候特征，<<样本容量/sample size>>太小，不具有代表性'
+    negativeEn: 'Using only one week of temperature data to represent the annual climate is unreliable — the <<样本容量/sample size>> is too small and not representative'
+  - category: 体育统计
+    categoryEn: Sports statistics
+    positive: '统计全班同学的立定跳远成绩，分组制作<<频数分布表/frequency distribution table>>和<<直方图/histogram>>，了解成绩分布'
+    positiveEn: 'Record the standing long jump results of the entire class, create a <<频数分布表/frequency distribution table>> and <<直方图/histogram>> by grouping, to understand the score distribution'
+    negative: '将不同年级的成绩混在一起分析，没有按合理标准分组，结论不可靠'
+    negativeEn: 'Mixing scores from different grades together for analysis without grouping by reasonable criteria leads to unreliable conclusions'
+  - category: 消费调查
+    categoryEn: Consumer survey
+    positive: '调查全校同学每月零花钱的金额，用<<扇形图/pie chart>>展示各消费区间的占比'
+    positiveEn: 'Survey the monthly pocket money of all students in the school, and use a <<扇形图/pie chart>> to show the proportion of each spending range'
+    negative: '只在学校门口的文具店调查消费习惯，调查地点单一导致<<样本/sample>>有偏'
+    negativeEn: 'Surveying spending habits only at the stationery shop by the school gate results in a biased <<样本/sample>> due to the single survey location'
+
+examples:
+  - type: 1
+    title: 判断调查方式
+    titleEn: Determining the survey method
+    question: |
+      下列调查中，哪些适合用<<全面调查/census>>，哪些适合用<<抽样调查/sampling survey>>？
+      （1）了解全班同学的年龄
+      （2）了解一批炮弹的杀伤半径
+      （3）了解全国中学生的近视率
+      （4）检查某位同学的作业完成情况
+    questionEn: |
+      In the following surveys, which are suitable for <<全面调查/census>> and which for <<抽样调查/sampling survey>>?
+      (1) Finding out the ages of all classmates
+      (2) Determining the kill radius of a batch of shells
+      (3) Determining the myopia rate of all middle school students nationwide
+      (4) Checking whether a specific student has completed homework
+    steps:
+      - '（1）全班人数少，可以逐一调查，适合<<全面调查/census>>'
+      - '（2）测试炮弹具有破坏性，不能全部测试，适合<<抽样调查/sampling survey>>'
+      - '（3）全国中学生人数庞大，无法逐一调查，适合<<抽样调查/sampling survey>>'
+      - '（4）只检查一个人，直接查看即可，适合<<全面调查/census>>'
+    stepsEn:
+      - "(1) The class size is small, so each person can be surveyed — suitable for <<全面调查/census>>"
+      - "(2) Testing shells is destructive, so not all can be tested — suitable for <<抽样调查/sampling survey>>"
+      - "(3) The number of middle school students nationwide is enormous, making individual surveys impractical — suitable for <<抽样调查/sampling survey>>"
+      - "(4) Only one person needs to be checked — suitable for <<全面调查/census>>"
+    answer: '（1）<<全面调查/census>>；（2）<<抽样调查/sampling survey>>；（3）<<抽样调查/sampling survey>>；（4）<<全面调查/census>>。'
+    answerEn: "(1) <<全面调查/census>>; (2) <<抽样调查/sampling survey>>; (3) <<抽样调查/sampling survey>>; (4) <<全面调查/census>>."
+
+  - type: 2
+    title: 辨析<<总体/population>>、<<个体/individual>>、<<样本/sample>>和<<样本容量/sample size>>
+    titleEn: "Identifying <<总体/population>>, <<个体/individual>>, <<样本/sample>>, and <<样本容量/sample size>>"
+    question: |
+      为了了解某校1500名学生的课外阅读时间，随机抽取了150名学生进行调查。指出这个问题中的<<总体/population>>、<<个体/individual>>、<<样本/sample>>和<<样本容量/sample size>>。
+    questionEn: |
+      To understand the extracurricular reading time of 1500 students in a school, 150 students were randomly selected for a survey. Identify the <<总体/population>>, <<个体/individual>>, <<样本/sample>>, and <<样本容量/sample size>> in this problem.
+    steps:
+      - '<<总体/population>>：某校1500名学生的课外阅读时间'
+      - '<<个体/individual>>：每一名学生的课外阅读时间'
+      - '<<样本/sample>>：抽取的150名学生的课外阅读时间'
+      - '<<样本容量/sample size>>：150（注意没有单位）'
+    stepsEn:
+      - "<<总体/population>>: the extracurricular reading time of all 1500 students in the school"
+      - "<<个体/individual>>: the extracurricular reading time of each student"
+      - "<<样本/sample>>: the extracurricular reading time of the 150 selected students"
+      - "<<样本容量/sample size>>: 150 (note: no units)"
+    answer: '<<总体/population>>是全校1500名学生的课外阅读时间；<<个体/individual>>是每一名学生的课外阅读时间；<<样本/sample>>是被抽取的150名学生的课外阅读时间；<<样本容量/sample size>>是150。'
+    answerEn: "The <<总体/population>> is the extracurricular reading time of all 1500 students; the <<个体/individual>> is each student's reading time; the <<样本/sample>> is the reading time of the 150 selected students; the <<样本容量/sample size>> is 150."
+
+  - type: 3
+    title: 计算<<频数/frequency>>和<<频率/relative frequency>>
+    titleEn: Calculating <<频数/frequency>> and <<频率/relative frequency>>
+    question: |
+      某班50名同学的数学考试成绩分组如下，请完成<<频数分布表/frequency distribution table>>：
+
+      | 分数段 | <<频数/frequency>> | <<频率/relative frequency>> |
+      |--------|---------|---------|
+      | $[50, 60)$ | 4 | ? |
+      | $[60, 70)$ | 8 | ? |
+      | $[70, 80)$ | 15 | ? |
+      | $[80, 90)$ | 18 | ? |
+      | $[90, 100]$ | 5 | ? |
+      | 合计 | 50 | ? |
+    questionEn: |
+      The math test scores of 50 students in a class are grouped as follows. Complete the <<频数分布表/frequency distribution table>>:
+
+      | Score range | <<频数/frequency>> | <<频率/relative frequency>> |
+      |-------------|---------|---------|
+      | $[50, 60)$ | 4 | ? |
+      | $[60, 70)$ | 8 | ? |
+      | $[70, 80)$ | 15 | ? |
+      | $[80, 90)$ | 18 | ? |
+      | $[90, 100]$ | 5 | ? |
+      | Total | 50 | ? |
+    steps:
+      - '$[50, 60)$ 的<<频率/relative frequency>> $= \dfrac{4}{50} = 0.08$'
+      - '$[60, 70)$ 的<<频率/relative frequency>> $= \dfrac{8}{50} = 0.16$'
+      - '$[70, 80)$ 的<<频率/relative frequency>> $= \dfrac{15}{50} = 0.30$'
+      - '$[80, 90)$ 的<<频率/relative frequency>> $= \dfrac{18}{50} = 0.36$'
+      - '$[90, 100]$ 的<<频率/relative frequency>> $= \dfrac{5}{50} = 0.10$'
+      - '验证：$0.08 + 0.16 + 0.30 + 0.36 + 0.10 = 1.00$ ✓'
+    stepsEn:
+      - '<<频率/relative frequency>> of $[50, 60)$: $\dfrac{4}{50} = 0.08$'
+      - '<<频率/relative frequency>> of $[60, 70)$: $\dfrac{8}{50} = 0.16$'
+      - '<<频率/relative frequency>> of $[70, 80)$: $\dfrac{15}{50} = 0.30$'
+      - '<<频率/relative frequency>> of $[80, 90)$: $\dfrac{18}{50} = 0.36$'
+      - '<<频率/relative frequency>> of $[90, 100]$: $\dfrac{5}{50} = 0.10$'
+      - 'Verification: $0.08 + 0.16 + 0.30 + 0.36 + 0.10 = 1.00$ ✓'
+    answer: '各组<<频率/relative frequency>>依次为 $0.08$、$0.16$、$0.30$、$0.36$、$0.10$，合计为 $1$。成绩主要集中在 $[70, 90)$ 分数段。'
+    answerEn: 'The <<频率/relative frequency>> values are $0.08$, $0.16$, $0.30$, $0.36$, $0.10$ respectively, totaling $1$. Scores are mainly concentrated in the $[70, 90)$ range.'
+
+  - type: 4
+    title: 根据<<频数分布直方图/frequency distribution histogram>>分析数据
+    titleEn: Analyzing data from a <<频数分布直方图/frequency distribution histogram>>
+    question: |
+      下图是某校七年级100名学生每天锻炼时间的<<频数分布直方图/frequency distribution histogram>>（单位：分钟）。已知各组<<频数/frequency>>分别为：$[0, 10)$ 组10人，$[10, 20)$ 组25人，$[20, 30)$ 组35人，$[30, 40)$ 组20人，$[40, 50]$ 组10人。
+
+      （1）哪个时间段的学生人数最多？
+      （2）每天锻炼时间不少于20分钟的学生有多少人？占比多少？
+    questionEn: |
+      The following is a <<频数分布直方图/frequency distribution histogram>> of daily exercise time (in minutes) for 100 seventh-grade students. The <<频数/frequency>> for each group is: $[0, 10)$: 10, $[10, 20)$: 25, $[20, 30)$: 35, $[30, 40)$: 20, $[40, 50]$: 10.
+
+      (1) Which time range has the most students?
+      (2) How many students exercise at least 20 minutes per day? What is the proportion?
+    steps:
+      - '（1）比较各组<<频数/frequency>>：10、25、35、20、10，最大的是 $[20, 30)$ 组，有35人'
+      - '（2）锻炼时间不少于20分钟的包括：$[20, 30)$、$[30, 40)$、$[40, 50]$ 三组'
+      - '人数：$35 + 20 + 10 = 65$ 人'
+      - '占比：$\dfrac{65}{100} = 0.65 = 65\%$'
+    stepsEn:
+      - "(1) Comparing <<频数/frequency>> values: 10, 25, 35, 20, 10. The largest is the $[20, 30)$ group with 35 students"
+      - "(2) Students exercising at least 20 minutes include the $[20, 30)$, $[30, 40)$, and $[40, 50]$ groups"
+      - "Number of students: $35 + 20 + 10 = 65$"
+      - 'Proportion: $\dfrac{65}{100} = 0.65 = 65\%$'
+    answer: '（1）$[20, 30)$ 分钟段学生人数最多，有35人。（2）锻炼时间不少于20分钟的有65人，占总人数的 $65\%$。'
+    answerEn: "(1) The $[20, 30)$ minute range has the most students, with 35. (2) 65 students exercise at least 20 minutes, accounting for $65\\%$ of the total."
+
+  - type: 5
+    title: 由<<频率/relative frequency>>反求<<频数/frequency>>
+    titleEn: Finding <<频数/frequency>> from <<频率/relative frequency>>
+    question: |
+      在一次抽样调查中，共调查了200人。某个分组的<<频率/relative frequency>>为 $0.15$，求该组的<<频数/frequency>>。
+    questionEn: |
+      In a sampling survey of 200 people, a certain group has a <<频率/relative frequency>> of $0.15$. Find the <<频数/frequency>> of this group.
+    steps:
+      - '由 $<<频率/relative frequency>> = \dfrac{<<频数/frequency>>}{总数}$ 可得'
+      - '$<<频数/frequency>> = <<频率/relative frequency>> \times 总数 = 0.15 \times 200 = 30$'
+    stepsEn:
+      - 'From $\text{relative frequency} = \dfrac{\text{frequency}}{\text{total}}$, we get'
+      - '$\text{frequency} = \text{relative frequency} \times \text{total} = 0.15 \times 200 = 30$'
+    answer: '该组的<<频数/frequency>>为30。'
+    answerEn: "The <<频数/frequency>> of this group is 30."
+
+  - type: 6
+    title: 选择合适的统计图
+    titleEn: Choosing the appropriate statistical chart
+    question: |
+      下列情境中，分别适合用哪种统计图？
+      （1）展示某班同学最喜欢的学科的人数
+      （2）展示某家庭月支出各项费用的占比
+      （3）展示某班同学身高的分布情况
+    questionEn: |
+      Which type of statistical chart is most appropriate for each of the following scenarios?
+      (1) Showing the number of students in a class who prefer each subject
+      (2) Showing the proportion of each category in a family's monthly expenses
+      (3) Showing the distribution of heights of students in a class
+    steps:
+      - '（1）各学科是离散的类别，比较人数多少，适合用**<<条形图/bar chart>>**'
+      - '（2）展示各部分占总体的百分比，适合用**<<扇形图/pie chart>>**'
+      - '（3）身高是连续型数据，需要分组展示分布情况，适合用**<<频数分布直方图/frequency distribution histogram>>**'
+    stepsEn:
+      - "(1) Subjects are discrete categories, and we compare counts — suitable for a **<<条形图/bar chart>>**"
+      - "(2) Showing the percentage of each part relative to the whole — suitable for a **<<扇形图/pie chart>>**"
+      - "(3) Height is continuous data that needs to be grouped to show distribution — suitable for a **<<频数分布直方图/frequency distribution histogram>>**"
+    answer: '（1）<<条形图/bar chart>>；（2）<<扇形图/pie chart>>；（3）<<频数分布直方图/frequency distribution histogram>>。'
+    answerEn: "(1) <<条形图/bar chart>>; (2) <<扇形图/pie chart>>; (3) <<频数分布直方图/frequency distribution histogram>>."
+
+commonMistakes:
+  - '混淆<<总体/population>>和<<样本/sample>>：<<总体/population>>是所关心的量的全体，不是对象本身。例如"全校学生的视力情况"是<<总体/population>>，不能说"全校学生"是<<总体/population>>'
+  - '给<<样本容量/sample size>>加单位：<<样本容量/sample size>>只是一个数，不能写成"200人"，应写成"200"'
+  - '<<频率/relative frequency>>计算错误：用<<频数/frequency>>除以总数后结果应在 $0$ 到 $1$ 之间，若结果大于 $1$ 则说明计算有误'
+  - '制作<<频数分布直方图/frequency distribution histogram>>时各矩形之间留了间隔：<<直方图/histogram>>的矩形之间不应有间隔（与<<条形图/bar chart>>不同）'
+  - '分组时区间重叠或遗漏：例如分为 $[60, 70]$ 和 $[70, 80]$ 会导致70被重复计数，应使用 $[60, 70)$ 和 $[70, 80)$'
+  - '忘记验证所有<<频率/relative frequency>>之和是否为 $1$：这是检查<<频数分布表/frequency distribution table>>正确性的重要手段'
+commonMistakesEn:
+  - 'Confusing <<总体/population>> and <<样本/sample>>: the <<总体/population>> refers to the entire set of the quantity of interest, not the objects themselves. For example, "the eyesight of all students in the school" is the <<总体/population>>, not "all students in the school"'
+  - 'Adding units to <<样本容量/sample size>>: <<样本容量/sample size>> is just a number — do not write "200 people"; write "200"'
+  - '<<频率/relative frequency>> calculation error: the result of dividing <<频数/frequency>> by the total should be between $0$ and $1$; if it exceeds $1$, the calculation is wrong'
+  - 'Leaving gaps between rectangles in a <<频数分布直方图/frequency distribution histogram>>: there should be no gaps in a <<直方图/histogram>> (unlike a <<条形图/bar chart>>)'
+  - 'Overlapping or missing intervals when grouping: for example, $[60, 70]$ and $[70, 80]$ would double-count 70; use $[60, 70)$ and $[70, 80)$ instead'
+  - 'Forgetting to verify that all <<频率/relative frequency>> values sum to $1$: this is an important way to check the correctness of a <<频数分布表/frequency distribution table>>'
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "9-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        对<<总体/population>>中的每一个<<个体/individual>>都进行调查，这种调查叫做______。
+      questionEn: |
+        A survey that investigates every <<个体/individual>> in the <<总体/population>> is called a ______.
+      correctValue: 全面调查
+      answer: <<全面调查/census>>
+      answerEn: <<全面调查/census>>
+      explanation: |
+        对<<总体/population>>中每一个<<个体/individual>>逐一调查的方式叫做<<全面调查/census>>（普查）。
+      explanationEn: |
+        A survey that investigates each <<个体/individual>> in the <<总体/population>> one by one is called a <<全面调查/census>>.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        为了了解全市50000名初中生的视力情况，抽取了1000名学生进行检测。这个问题中，<<样本容量/sample size>>是______。
+      questionEn: |
+        To understand the eyesight of 50000 middle school students in a city, 1000 students were selected for testing. In this problem, the <<样本容量/sample size>> is ______.
+      correctValue: "1000"
+      answer: "1000"
+      answerEn: "1000"
+      explanation: |
+        <<样本容量/sample size>>是<<样本/sample>>中<<个体/individual>>的数目，即1000。注意<<样本容量/sample size>>没有单位。
+      explanationEn: |
+        The <<样本容量/sample size>> is the number of <<个体/individual>>s in the <<样本/sample>>, which is 1000. Note that <<样本容量/sample size>> has no units.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        某组的<<频数/frequency>>为12，数据总数为60，则该组的<<频率/relative frequency>>为______。
+      questionEn: |
+        If the <<频数/frequency>> of a group is 12 and the total number of data points is 60, then the <<频率/relative frequency>> of this group is ______.
+      correctValue: "0.2"
+      answer: "$0.2$"
+      answerEn: "$0.2$"
+      explanation: |
+        $<<频率/relative frequency>> = \dfrac{<<频数/frequency>>}{总数} = \dfrac{12}{60} = 0.2$。
+      explanationEn: |
+        $\text{Relative frequency} = \dfrac{\text{frequency}}{\text{total}} = \dfrac{12}{60} = 0.2$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        一组数据的最大值为98，最小值为42，若取组距为10，则至少应分为______组。
+      questionEn: |
+        If the maximum value of a data set is 98 and the minimum is 42, and the class width is 10, then the data should be divided into at least ______ groups.
+      correctValue: "6"
+      answer: "6"
+      answerEn: "6"
+      explanation: |
+        极差 $= 98 - 42 = 56$。组数 $= \dfrac{56}{10} = 5.6$，向上取整为 $6$ 组。
+      explanationEn: |
+        Range $= 98 - 42 = 56$. Number of groups $= \dfrac{56}{10} = 5.6$, rounded up to $6$ groups.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        要了解一批灯泡的使用寿命，应采用<<全面调查/census>>。
+      questionEn: |
+        To determine the lifespan of a batch of light bulbs, a <<全面调查/census>> should be used.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        检测灯泡寿命是破坏性试验，不能对每个灯泡都进行检测，应采用<<抽样调查/sampling survey>>。
+      explanationEn: |
+        Testing the lifespan of light bulbs is a destructive test. Not every bulb can be tested, so <<抽样调查/sampling survey>> should be used.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        在<<频数分布直方图/frequency distribution histogram>>中，各矩形之间应留有间隔。
+      questionEn: |
+        In a <<频数分布直方图/frequency distribution histogram>>, there should be gaps between the rectangles.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<频数分布直方图/frequency distribution histogram>>中的矩形之间没有间隔，这是它与<<条形图/bar chart>>的重要区别。
+      explanationEn: |
+        There are no gaps between rectangles in a <<频数分布直方图/frequency distribution histogram>>. This is a key difference from a <<条形图/bar chart>>.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        所有<<频率/relative frequency>>之和等于 $1$。
+      questionEn: |
+        The sum of all <<频率/relative frequency>> values equals $1$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        因为所有<<频数/frequency>>之和等于数据总数，所以所有<<频率/relative frequency>>之和 $= \dfrac{\text{所有<<频数/frequency>>之和}}{\text{总数}} = \dfrac{\text{总数}}{\text{总数}} = 1$。
+      explanationEn: |
+        Since the sum of all <<频数/frequency>> values equals the total number of data points, the sum of all <<频率/relative frequency>> values $= \dfrac{\text{sum of all frequencies}}{\text{total}} = \dfrac{\text{total}}{\text{total}} = 1$.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        为了了解全校2000名学生的身高情况，抽取了100名学生进行测量，则<<总体/population>>是全校2000名学生。
+      questionEn: |
+        To understand the height of 2000 students in a school, 100 students were selected for measurement. The <<总体/population>> is the 2000 students in the school.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<总体/population>>是全校2000名学生的**身高**，不是学生本身。<<总体/population>>指的是所关心的那个量的全体。
+      explanationEn: |
+        The <<总体/population>> is the **height** of all 2000 students, not the students themselves. The <<总体/population>> refers to the entire set of the quantity of interest.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列调查中，适合用<<抽样调查/sampling survey>>的是（　）
+      questionEn: |
+        Among the following surveys, the one suitable for <<抽样调查/sampling survey>> is ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - 调查某班同学的出勤情况
+            - 调查某市中学生的睡眠时间
+            - 调查医院手术前病人的血型
+            - 调查神舟飞船零部件的质量
+          correctValue: 调查某市中学生的睡眠时间
+      answer: 调查某市中学生的睡眠时间
+      answerEn: Surveying the sleep time of middle school students in a city
+      explanation: |
+        - A: 一个班人数少，可以<<全面调查/census>>
+        - B: 全市中学生数量庞大，适合<<抽样调查/sampling survey>> ✓
+        - C: 手术前必须对每位病人逐一检查血型，需要<<全面调查/census>>
+        - D: 飞船零部件关系到生命安全，必须逐一检查，需要<<全面调查/census>>
+      explanationEn: |
+        - A: A single class has few students, suitable for <<全面调查/census>>
+        - B: There are too many middle school students in a city — suitable for <<抽样调查/sampling survey>> ✓
+        - C: Blood type must be checked for each patient before surgery — requires <<全面调查/census>>
+        - D: Spacecraft parts are critical to safety and must be checked individually — requires <<全面调查/census>>
+
+    - number: 10
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        在<<频数分布直方图/frequency distribution histogram>>中，<<频数/frequency>>最大的那一组表示（　）
+      questionEn: |
+        In a <<频数分布直方图/frequency distribution histogram>>, the group with the largest <<频数/frequency>> indicates ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - 该组的数据值最大
+            - 该组中落入的数据个数最多
+            - 该组的组距最大
+            - 该组的数据最准确
+          correctValue: 该组中落入的数据个数最多
+      answer: 该组中落入的数据个数最多
+      answerEn: The most data points fall into this group
+      explanation: |
+        <<频数/frequency>>表示落入该组的数据个数。<<频数/frequency>>最大说明该区间内的数据最多，反映了数据的集中趋势，但并不意味着数值最大或最准确。
+      explanationEn: |
+        <<频数/frequency>> represents the number of data points falling into that group. The largest <<频数/frequency>> means the most data points are in that interval, reflecting the concentration trend of the data, but it does not mean the values are the largest or most accurate.
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: "IV. Calculation"
+      question: |
+        某校对40名学生的每日上网时间（单位：分钟）进行了调查，部分<<频数分布表/frequency distribution table>>如下：
+
+        | 上网时间 | <<频数/frequency>> | <<频率/relative frequency>> |
+        |----------|---------|---------|
+        | $[0, 30)$ | 6 | $a$ |
+        | $[30, 60)$ | 14 | 0.35 |
+        | $[60, 90)$ | $b$ | 0.30 |
+        | $[90, 120]$ | 8 | $c$ |
+
+        求 $a$、$b$、$c$ 的值。
+      questionEn: |
+        A school surveyed the daily internet usage time (in minutes) of 40 students. A partial <<频数分布表/frequency distribution table>> is shown below:
+
+        | Internet time | <<频数/frequency>> | <<频率/relative frequency>> |
+        |---------------|---------|---------|
+        | $[0, 30)$ | 6 | $a$ |
+        | $[30, 60)$ | 14 | 0.35 |
+        | $[60, 90)$ | $b$ | 0.30 |
+        | $[90, 120]$ | 8 | $c$ |
+
+        Find the values of $a$, $b$, and $c$.
+      answer: |
+        $a = \dfrac{6}{40} = 0.15$
+
+        $b = 0.30 \times 40 = 12$
+
+        $c = \dfrac{8}{40} = 0.20$
+
+        验证：$6 + 14 + 12 + 8 = 40$ ✓
+        验证：$0.15 + 0.35 + 0.30 + 0.20 = 1.00$ ✓
+      answerEn: |
+        $a = \dfrac{6}{40} = 0.15$
+
+        $b = 0.30 \times 40 = 12$
+
+        $c = \dfrac{8}{40} = 0.20$
+
+        Verification: $6 + 14 + 12 + 8 = 40$ ✓
+        Verification: $0.15 + 0.35 + 0.30 + 0.20 = 1.00$ ✓
+      explanation: |
+        利用 $<<频率/relative frequency>> = \dfrac{<<频数/frequency>>}{总数}$ 这一关系，已知其中两个量就可以求第三个量。完成后用<<频数/frequency>>之和与<<频率/relative frequency>>之和分别验证。
+      explanationEn: |
+        Using the relationship $\text{relative frequency} = \dfrac{\text{frequency}}{\text{total}}$, knowing any two of the three values allows you to find the third. After completion, verify by checking that <<频数/frequency>> values sum to the total and <<频率/relative frequency>> values sum to $1$.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        某班40名同学的立定跳远成绩（单位：厘米）如下：
+
+        155, 160, 165, 170, 158, 172, 180, 185, 175, 168,
+        190, 162, 178, 195, 188, 173, 167, 182, 176, 163,
+        171, 186, 169, 192, 177, 164, 183, 174, 161, 179,
+        187, 166, 193, 181, 170, 175, 184, 168, 191, 176
+
+        （1）以 $10$ 厘米为组距，将数据分组并制作<<频数分布表/frequency distribution table>>。
+        （2）根据<<频数分布表/frequency distribution table>>，指出成绩主要集中在哪个区间。
+      questionEn: |
+        The standing long jump results (in cm) of 40 students in a class are as follows:
+
+        155, 160, 165, 170, 158, 172, 180, 185, 175, 168,
+        190, 162, 178, 195, 188, 173, 167, 182, 176, 163,
+        171, 186, 169, 192, 177, 164, 183, 174, 161, 179,
+        187, 166, 193, 181, 170, 175, 184, 168, 191, 176
+
+        (1) Using a class width of $10$ cm, group the data and create a <<频数分布表/frequency distribution table>>.
+        (2) Based on the <<频数分布表/frequency distribution table>>, identify the interval where scores are mainly concentrated.
+      answer: |
+        （1）最小值155，最大值195，极差 $= 195 - 155 = 40$，组距10，分4组。
+
+        | 成绩（厘米） | <<频数/frequency>> | <<频率/relative frequency>> |
+        |-------------|---------|---------|
+        | $[155, 165)$ | 7 | 0.175 |
+        | $[165, 175)$ | 12 | 0.300 |
+        | $[175, 185)$ | 12 | 0.300 |
+        | $[185, 195]$ | 9 | 0.225 |
+        | 合计 | 40 | 1.000 |
+
+        （2）成绩主要集中在 $[165, 185)$ 厘米区间，共24人，占 $60\%$。
+      answerEn: |
+        (1) Minimum 155, maximum 195, range $= 195 - 155 = 40$, class width 10, 4 groups.
+
+        | Score (cm) | <<频数/frequency>> | <<频率/relative frequency>> |
+        |------------|---------|---------|
+        | $[155, 165)$ | 7 | 0.175 |
+        | $[165, 175)$ | 12 | 0.300 |
+        | $[175, 185)$ | 12 | 0.300 |
+        | $[185, 195]$ | 9 | 0.225 |
+        | Total | 40 | 1.000 |
+
+        (2) Scores are mainly concentrated in the $[165, 185)$ cm range, with 24 students, accounting for $60\%$.
+      explanation: |
+        制作<<频数分布表/frequency distribution table>>的关键步骤：先求极差确定分组范围，再用"画正字"法统计各组<<频数/frequency>>，最后计算<<频率/relative frequency>>并验证总和。
+      explanationEn: |
+        Key steps for creating a <<频数分布表/frequency distribution table>>: first find the range to determine the grouping, then use tally marks to count the <<频数/frequency>> for each group, and finally calculate the <<频率/relative frequency>> and verify the totals.
+
+summary:
+  - '理解了<<全面调查/census>>和<<抽样调查/sampling survey>>的区别，能根据实际情况选择合适的调查方式'
+  - '掌握了<<总体/population>>、<<个体/individual>>、<<样本/sample>>和<<样本容量/sample size>>四个基本概念'
+  - '掌握了<<频数/frequency>>和<<频率/relative frequency>>的概念及其关系：$<<频率/relative frequency>> = \dfrac{<<频数/frequency>>}{总数}$'
+  - '学会了制作<<频数分布表/frequency distribution table>>的完整步骤：求极差、定组距、分组、统计<<频数/frequency>>、计算<<频率/relative frequency>>'
+  - '学会了绘制和阅读<<频数分布直方图/frequency distribution histogram>>，能从中分析数据的分布特征'
+  - '能区分<<条形图/bar chart>>、<<扇形图/pie chart>>和<<直方图/histogram>>的适用场景'
+summaryEn:
+  - 'Understood the difference between <<全面调查/census>> and <<抽样调查/sampling survey>>, and can choose the appropriate method based on the situation'
+  - 'Mastered the four basic concepts: <<总体/population>>, <<个体/individual>>, <<样本/sample>>, and <<样本容量/sample size>>'
+  - 'Mastered the concepts of <<频数/frequency>> and <<频率/relative frequency>> and their relationship: $\text{relative frequency} = \dfrac{\text{frequency}}{\text{total}}$'
+  - 'Learned the complete steps for creating a <<频数分布表/frequency distribution table>>: find the range, determine class width, group data, count <<频数/frequency>>, and calculate <<频率/relative frequency>>'
+  - 'Learned to draw and read <<频数分布直方图/frequency distribution histogram>>s and analyze data distribution characteristics from them'
+  - 'Can distinguish the applicable scenarios for <<条形图/bar chart>>s, <<扇形图/pie chart>>s, and <<直方图/histogram>>s'
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
+  introEn: "These questions are slightly harder than regular exercises to help you consolidate and apply what you have learned in this chapter."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        下列说法正确的是（　）
+      questionEn: |
+        Which of the following statements is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '为了了解全国中学生的心理健康状况，应采用<<全面调查/census>>'
+            - '<<抽样调查/sampling survey>>的结果比<<全面调查/census>>更准确'
+            - '<<抽样调查/sampling survey>>中，<<样本/sample>>的选取要具有随机性和代表性'
+            - '<<样本容量/sample size>>越大，调查结果越好，所以应尽可能增大<<样本容量/sample size>>'
+          correctValue: '<<抽样调查/sampling survey>>中，<<样本/sample>>的选取要具有随机性和代表性'
+      answer: '<<抽样调查/sampling survey>>中，<<样本/sample>>的选取要具有随机性和代表性'
+      answerEn: "In a <<抽样调查/sampling survey>>, the selection of the <<样本/sample>> must be random and representative"
+      explanation: |
+        - A：全国中学生数量庞大，应采用<<抽样调查/sampling survey>>，不是<<全面调查/census>>
+        - B：<<全面调查/census>>的结果更精确，<<抽样调查/sampling survey>>是估计值
+        - C：正确。<<样本/sample>>必须随机且有代表性，否则结论会有偏差 ✓
+        - D：<<样本容量/sample size>>越大成本越高，应在代表性和可行性之间平衡
+      explanationEn: |
+        - A: The number of middle school students nationwide is huge — <<抽样调查/sampling survey>> should be used, not <<全面调查/census>>
+        - B: <<全面调查/census>> results are more precise; <<抽样调查/sampling survey>> provides estimates
+        - C: Correct. The <<样本/sample>> must be random and representative; otherwise conclusions will be biased ✓
+        - D: A larger <<样本容量/sample size>> costs more; balance between representativeness and feasibility is needed
+
+    - number: 2
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        某校对500名学生进行体重调查，部分<<频数分布表/frequency distribution table>>如下：
+
+        | 体重（千克） | <<频数/frequency>> | <<频率/relative frequency>> |
+        |-------------|---------|---------|
+        | $[30, 35)$ | 25 | $a$ |
+        | $[35, 40)$ | $b$ | 0.30 |
+        | $[40, 45)$ | 175 | $c$ |
+        | $[45, 50)$ | $d$ | 0.15 |
+        | $[50, 55]$ | 50 | 0.10 |
+
+        （1）求 $a$、$b$、$c$、$d$ 的值。
+        （2）体重在哪个区间的学生最多？
+        （3）体重不足40千克的学生占比多少？
+      questionEn: |
+        A school surveyed the weight of 500 students. A partial <<频数分布表/frequency distribution table>> is shown below:
+
+        | Weight (kg) | <<频数/frequency>> | <<频率/relative frequency>> |
+        |-------------|---------|---------|
+        | $[30, 35)$ | 25 | $a$ |
+        | $[35, 40)$ | $b$ | 0.30 |
+        | $[40, 45)$ | 175 | $c$ |
+        | $[45, 50)$ | $d$ | 0.15 |
+        | $[50, 55]$ | 50 | 0.10 |
+
+        (1) Find the values of $a$, $b$, $c$, and $d$.
+        (2) Which weight interval has the most students?
+        (3) What proportion of students weigh less than 40 kg?
+      answer: |
+        （1）
+        $a = \dfrac{25}{500} = 0.05$
+
+        $b = 0.30 \times 500 = 150$
+
+        $c = \dfrac{175}{500} = 0.35$
+
+        $d = 0.15 \times 500 = 75$
+
+        验证：$25 + 150 + 175 + 75 + 50 = 475 + 25 = 500$ ✓
+        验证：$0.05 + 0.30 + 0.35 + 0.15 + 0.10 = 0.95 + 0.05 = 1.00$ ✓
+
+        （2）$[40, 45)$ 区间的<<频数/frequency>>最大，为175人，该区间学生最多。
+
+        （3）体重不足40千克的学生人数为 $25 + 150 = 175$ 人，占比 $= \dfrac{175}{500} = 0.35 = 35\%$。
+      answerEn: |
+        (1)
+        $a = \dfrac{25}{500} = 0.05$
+
+        $b = 0.30 \times 500 = 150$
+
+        $c = \dfrac{175}{500} = 0.35$
+
+        $d = 0.15 \times 500 = 75$
+
+        Verification: $25 + 150 + 175 + 75 + 50 = 500$ ✓
+        Verification: $0.05 + 0.30 + 0.35 + 0.15 + 0.10 = 1.00$ ✓
+
+        (2) The $[40, 45)$ interval has the largest <<频数/frequency>> of 175 students.
+
+        (3) Students weighing less than 40 kg: $25 + 150 = 175$; proportion $= \dfrac{175}{500} = 0.35 = 35\%$.
+      explanation: |
+        综合运用<<频数/frequency>>和<<频率/relative frequency>>的关系，灵活求解未知量。注意用两种方式验证结果的正确性。
+      explanationEn: |
+        Comprehensively apply the relationship between <<频数/frequency>> and <<频率/relative frequency>> to solve for unknowns flexibly. Verify correctness using both methods.
+
+    - number: 3
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        为了了解某社区居民的日均用水量，随机抽取了50户居民进行调查，得到如下<<频数分布表/frequency distribution table>>：
+
+        | 日均用水量（吨） | <<频数/frequency>> |
+        |-----------------|---------|
+        | $[0, 0.5)$ | 5 |
+        | $[0.5, 1)$ | 12 |
+        | $[1, 1.5)$ | 18 |
+        | $[1.5, 2)$ | 10 |
+        | $[2, 2.5]$ | 5 |
+
+        （1）计算各组的<<频率/relative frequency>>。
+        （2）若该社区共有2000户居民，估计日均用水量不少于1吨的户数。
+      questionEn: |
+        To understand the daily water consumption of residents in a community, 50 households were randomly selected for a survey, yielding the following <<频数分布表/frequency distribution table>>:
+
+        | Daily water usage (tons) | <<频数/frequency>> |
+        |-------------------------|---------|
+        | $[0, 0.5)$ | 5 |
+        | $[0.5, 1)$ | 12 |
+        | $[1, 1.5)$ | 18 |
+        | $[1.5, 2)$ | 10 |
+        | $[2, 2.5]$ | 5 |
+
+        (1) Calculate the <<频率/relative frequency>> for each group.
+        (2) If the community has 2000 households, estimate the number of households with daily water usage of at least 1 ton.
+      answer: |
+        （1）各组<<频率/relative frequency>>：
+        $[0, 0.5)$：$\dfrac{5}{50} = 0.10$
+        $[0.5, 1)$：$\dfrac{12}{50} = 0.24$
+        $[1, 1.5)$：$\dfrac{18}{50} = 0.36$
+        $[1.5, 2)$：$\dfrac{10}{50} = 0.20$
+        $[2, 2.5]$：$\dfrac{5}{50} = 0.10$
+
+        验证：$0.10 + 0.24 + 0.36 + 0.20 + 0.10 = 1.00$ ✓
+
+        （2）日均用水量不少于1吨的<<频率/relative frequency>>为 $0.36 + 0.20 + 0.10 = 0.66$
+        估计户数 $= 2000 \times 0.66 = 1320$ 户。
+      answerEn: |
+        (1) <<频率/relative frequency>> for each group:
+        $[0, 0.5)$: $\dfrac{5}{50} = 0.10$
+        $[0.5, 1)$: $\dfrac{12}{50} = 0.24$
+        $[1, 1.5)$: $\dfrac{18}{50} = 0.36$
+        $[1.5, 2)$: $\dfrac{10}{50} = 0.20$
+        $[2, 2.5]$: $\dfrac{5}{50} = 0.10$
+
+        Verification: $0.10 + 0.24 + 0.36 + 0.20 + 0.10 = 1.00$ ✓
+
+        (2) The <<频率/relative frequency>> for daily usage of at least 1 ton is $0.36 + 0.20 + 0.10 = 0.66$.
+        Estimated number of households $= 2000 \times 0.66 = 1320$.
+      explanation: |
+        这道题体现了<<抽样调查/sampling survey>>的核心思想：用<<样本/sample>>的<<频率/relative frequency>>来估计<<总体/population>>的情况。<<样本/sample>>中的比例可以推广到<<总体/population>>。
+      explanationEn: |
+        This problem demonstrates the core idea of <<抽样调查/sampling survey>>: using the <<频率/relative frequency>> of the <<样本/sample>> to estimate the characteristics of the <<总体/population>>. The proportion in the <<样本/sample>> can be extended to the <<总体/population>>.
+
+    - number: 4
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        甲、乙两家工厂各随机抽取了20件产品，测量其长度（单位：毫米），整理后得到如下<<频数分布表/frequency distribution table>>：
+
+        | 长度 | 甲厂<<频数/frequency>> | 乙厂<<频数/frequency>> |
+        |------|---------|---------|
+        | $[48, 49)$ | 1 | 3 |
+        | $[49, 50)$ | 3 | 4 |
+        | $[50, 51)$ | 12 | 7 |
+        | $[51, 52)$ | 3 | 4 |
+        | $[52, 53]$ | 1 | 2 |
+
+        （1）分别计算两厂各组的<<频率/relative frequency>>。
+        （2）哪家工厂的产品质量更稳定？请说明理由。
+      questionEn: |
+        Factories A and B each randomly selected 20 products and measured their lengths (in mm). The results are organized in the following <<频数分布表/frequency distribution table>>:
+
+        | Length | Factory A <<频数/frequency>> | Factory B <<频数/frequency>> |
+        |--------|---------|---------|
+        | $[48, 49)$ | 1 | 3 |
+        | $[49, 50)$ | 3 | 4 |
+        | $[50, 51)$ | 12 | 7 |
+        | $[51, 52)$ | 3 | 4 |
+        | $[52, 53]$ | 1 | 2 |
+
+        (1) Calculate the <<频率/relative frequency>> for each group in both factories.
+        (2) Which factory produces more stable products? Explain your reasoning.
+      answer: |
+        （1）
+        甲厂<<频率/relative frequency>>：$0.05$、$0.15$、$0.60$、$0.15$、$0.05$
+        乙厂<<频率/relative frequency>>：$0.15$、$0.20$、$0.35$、$0.20$、$0.10$
+
+        （2）甲厂产品质量更稳定。
+
+        理由：甲厂 $[50, 51)$ 区间的<<频率/relative frequency>>为 $0.60$，即 $60\%$ 的产品集中在这一区间，数据较为集中。而乙厂同一区间的<<频率/relative frequency>>仅为 $0.35$，数据较为分散。
+
+        甲厂产品长度集中在标准值附近，波动较小，质量更稳定。
+      answerEn: |
+        (1)
+        Factory A <<频率/relative frequency>>: $0.05$, $0.15$, $0.60$, $0.15$, $0.05$
+        Factory B <<频率/relative frequency>>: $0.15$, $0.20$, $0.35$, $0.20$, $0.10$
+
+        (2) Factory A has more stable product quality.
+
+        Reasoning: Factory A has a <<频率/relative frequency>> of $0.60$ in the $[50, 51)$ interval, meaning $60\%$ of products are concentrated in this range, showing more concentrated data. Factory B has only $0.35$ in the same interval, with more dispersed data.
+
+        Factory A's product lengths are concentrated near the standard value with less variation, indicating more stable quality.
+      explanation: |
+        这道中考提升题综合考查了<<频数分布表/frequency distribution table>>的制作与数据分析能力。比较两组数据的分布特征时，关注数据的集中程度是关键——数据越集中，波动越小，质量越稳定。
+      explanationEn: |
+        This advanced exam question comprehensively tests the ability to create <<频数分布表/frequency distribution table>>s and analyze data. When comparing the distribution characteristics of two data sets, the key is to focus on how concentrated the data is — more concentrated data means less variation and more stable quality.
