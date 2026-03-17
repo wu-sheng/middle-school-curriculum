@@ -30,17 +30,35 @@ prerequisites:
   title: 从有理数出发——为什么需要新的数？
   titleEn: 'Starting from rational numbers — why do we need new numbers?'
   intro: |
-    在第1章中，我们学过<<有理数/rational number>>，即所有<<整数/integer>>和<<分数/fraction>>。
-    但有些问题仅用<<有理数/rational number>>无法解决：
+    在第1章中，我们学过<<有理数/rational number>>，包括<<整数/integer>>和<<分数/fraction>>。
   introEn: |
-    In Chapter 1, we learned about <<有理数/rational number>>s, which include all <<整数/integer>>s and <<分数/fraction>>s.
-    However, some problems cannot be solved using only <<有理数/rational number>>s:
-  motivatingProblems:
-    - '一个正方形的面积为 $2$ 平方米，它的边长是多少？即求 $x^2 = 2$ 的正数解。'
-    - '一个正方体的体积是 $5$ 立方厘米，它的棱长是多少？即求 $x^3 = 5$ 的解。'
-  motivatingProblemsEn:
-    - 'A square has an area of $2$ square meters. What is its side length? That is, find the positive solution of $x^2 = 2$.'
-    - 'A cube has a volume of $5$ cubic centimeters. What is its edge length? That is, find the solution of $x^3 = 5$.'
+    In Chapter 1, we learned about <<有理数/rational number>>s, including <<整数/integer>>s and <<分数/fraction>>s.
+  knownNumbers:
+    - '<<整数/integer>>：$\ldots, -2, -1, 0, 1, 2, \ldots$'
+    - '<<分数/fraction>>（<<小数/decimal>>）：$\frac{1}{2}$、$-0.75$、$3.14$ 等'
+    - '它们统称为<<有理数/rational number>>'
+  knownNumbersEn:
+    - '<<整数/integer>>s: $\ldots, -2, -1, 0, 1, 2, \ldots$'
+    - '<<分数/fraction>>s (<<小数/decimal>>s): $\frac{1}{2}$, $-0.75$, $3.14$, etc.'
+    - 'They are collectively called <<有理数/rational number>>s'
+  canSolve:
+    - '$x + 3 = 5$ → $x = 2$'
+    - '$2x = 7$ → $x = 3.5$'
+    - '面积为 $9$ 的正方形边长为 $3$'
+  canSolveEn:
+    - '$x + 3 = 5$ → $x = 2$'
+    - '$2x = 7$ → $x = 3.5$'
+    - 'A square with area $9$ has side length $3$'
+  cannotSolve:
+    - '面积为 $2$ 的正方形，边长是多少？即 $x^2 = 2$'
+    - '体积为 $5$ 的正方体，棱长是多少？即 $x^3 = 5$'
+    - '$\sqrt{2}$ 无法写成<<分数/fraction>>，也不是有限<<小数/decimal>>'
+    - '圆的<<周长/circumference>>公式中的 $\pi$ 也不是<<有理数/rational number>>'
+  cannotSolveEn:
+    - 'A square with area $2$ — what is its side length? i.e., $x^2 = 2$'
+    - 'A cube with volume $5$ — what is its edge length? i.e., $x^3 = 5$'
+    - '$\sqrt{2}$ cannot be written as a <<分数/fraction>> or a finite <<小数/decimal>>'
+    - '$\pi$ in the <<周长/circumference>> formula is also not a <<有理数/rational number>>'
   conclusion: |
     这些问题的答案无法用<<分数/fraction>>或有限<<小数/decimal>>表示，于是数学引入了**<<平方根/square root>>**和**<<立方根/cube root>>**的概念，并由此引出**<<无理数/irrational number>>**和**<<实数/real number>>**。
   conclusionEn: |
