@@ -1,0 +1,936 @@
+title: 一元一次方程
+titleEn: Linear Equations in One Variable
+chapter: 5
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 60-80分钟学习 + 40分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 理解<<方程/equation>>和<<等式/equality>>的概念，知道它们与"算式"有什么不同
+  - 掌握<<等式/equality>>的基本性质，并能用它来变形<<等式/equality>>
+  - 理解<<一元一次方程/linear equation in one variable>>的含义，能判断一个<<方程/equation>>是不是<<一元一次方程/linear equation in one variable>>
+  - 掌握解<<一元一次方程/linear equation in one variable>>的基本步骤：<<去分母/clearing denominators>>、<<去括号/removing parentheses>>、<<移项/transposition>>、<<合并同类项/combining like terms>>、<<系数化为1/reducing coefficient to 1>>
+  - 能<<检验/verify>><<方程/equation>>的<<解/solution>>是否正确
+  - 能用<<一元一次方程/linear equation in one variable>>解决简单的实际问题
+objectivesEn:
+  - Understand the concepts of <<方程/equation>> and <<等式/equality>>, and know how they differ from arithmetic expressions
+  - Master the basic properties of <<等式/equality>> and use them to transform <<等式/equality>>
+  - Understand the meaning of <<一元一次方程/linear equation in one variable>> and determine whether an <<方程/equation>> is a <<一元一次方程/linear equation in one variable>>
+  - "Master the basic steps for solving <<一元一次方程/linear equation in one variable>>: <<去分母/clearing denominators>>, <<去括号/removing parentheses>>, <<移项/transposition>>, <<合并同类项/combining like terms>>, <<系数化为1/reducing coefficient to 1>>"
+  - Be able to <<检验/verify>> whether a <<解/solution>> to an <<方程/equation>> is correct
+  - Be able to solve simple real-life problems using <<一元一次方程/linear equation in one variable>>
+
+prerequisites:
+  title: 从小学知识出发——从"猜数"到"列<<方程/equation>>"
+  titleEn: "Starting from elementary school knowledge — from \"guess the number\" to \"setting up <<方程/equation>>s\""
+  intro: |
+    小学里，我们经常遇到这类问题：
+  introEn: |
+    In elementary school, we often encountered problems like these:
+  knownNumbers:
+    - "一个数加上 $5$ 等于 $12$，这个数是多少？"
+    - "妈妈买了一些苹果，吃了 $3$ 个后还剩 $7$ 个，妈妈买了几个？"
+    - "$\\square + 8 = 15$，$\\square$ 里填什么？"
+  knownNumbersEn:
+    - "A number plus $5$ equals $12$. What is the number?"
+    - "Mom bought some apples. After eating $3$, there were $7$ left. How many did Mom buy?"
+    - "$\\square + 8 = 15$, what goes in $\\square$?"
+  canSolve:
+    - 用"倒推法"：$12 - 5 = 7$
+    - 用"凑数法"：$7 + 3 = 10$
+  canSolveEn:
+    - "Using \"working backwards\": $12 - 5 = 7$"
+    - "Using \"guess and check\": $7 + 3 = 10$"
+  cannotSolve:
+    - 小明今年的年龄是爸爸年龄的 $\frac{1}{3}$ 少 $2$ 岁，爸爸今年 $39$ 岁，小明今年几岁？
+    - 一件商品打八折后售价为 $120$ 元，原价是多少？
+    - 甲、乙两人从两地同时出发相向而行，甲每小时走 $4$ 千米，乙每小时走 $6$ 千米，$3$ 小时后相遇，两地相距多少千米？
+  cannotSolveEn:
+    - "Xiao Ming's age this year is $\\frac{1}{3}$ of his father's age minus $2$. His father is $39$ this year. How old is Xiao Ming?"
+    - "An item is sold at $120$ yuan after a $20\\%$ discount. What was the original price?"
+    - "Two people start from two locations walking toward each other. Person A walks $4$ km/h, person B walks $6$ km/h. They meet after $3$ hours. How far apart are the two locations?"
+  conclusion: |
+    当问题变得复杂时，"倒推法"和"凑数法"就不够用了。数学里引入了**<<方程/equation>>**——用一个含有<<未知数/unknown>>的<<等式/equality>>来表示数量关系，然后通过规则把<<未知数/unknown>>求出来。
+  conclusionEn: |
+    When problems become complex, "working backwards" and "guess and check" are no longer sufficient. Mathematics introduced the **<<方程/equation>>** — using an <<等式/equality>> containing an <<未知数/unknown>> to express the quantitative relationship, then finding the <<未知数/unknown>> through rules.
+
+concepts:
+  - id: equation-concept
+    title: <<方程/equation>>的概念
+    titleEn: The concept of <<方程/equation>>
+    content: |
+      含有<<未知数/unknown>>的<<等式/equality>>叫做**<<方程/equation>>**。
+
+      <<方程/equation>>有两个关键要素：
+      - 必须是<<等式/equality>>（有等号 $=$）
+      - 必须含有<<未知数/unknown>>（如 $x$、$y$ 等字母）
+    contentEn: |
+      An <<等式/equality>> that contains an <<未知数/unknown>> is called an **<<方程/equation>>**.
+
+      An <<方程/equation>> has two key elements:
+      - It must be an <<等式/equality>> (has an equals sign $=$)
+      - It must contain an <<未知数/unknown>> (a letter such as $x$, $y$, etc.)
+    examples:
+      - "$x + 5 = 12$ 是<<方程/equation>>（有等号，有<<未知数/unknown>> $x$）"
+      - "$3 + 5 = 8$ 不是<<方程/equation>>（虽然是<<等式/equality>>，但没有<<未知数/unknown>>）"
+      - "$2x + 1$ 不是<<方程/equation>>（虽然有<<未知数/unknown>>，但没有等号）"
+      - "$2x - 3 > 5$ 不是<<方程/equation>>（不是<<等式/equality>>，而是不等式）"
+    examplesEn:
+      - "$x + 5 = 12$ is an <<方程/equation>> (has an equals sign and an <<未知数/unknown>> $x$)"
+      - "$3 + 5 = 8$ is not an <<方程/equation>> (it is an <<等式/equality>> but has no <<未知数/unknown>>)"
+      - "$2x + 1$ is not an <<方程/equation>> (it has an <<未知数/unknown>> but no equals sign)"
+      - "$2x - 3 > 5$ is not an <<方程/equation>> (it is an inequality, not an <<等式/equality>>)"
+    notes:
+      - "<<方程/equation>> = <<等式/equality>> + <<未知数/unknown>>，二者缺一不可"
+      - 字母通常用 $x$ 表示<<未知数/unknown>>，但用 $y$、$a$、$m$ 等也可以
+    notesEn:
+      - "<<方程/equation>> = <<等式/equality>> + <<未知数/unknown>>; both are required"
+      - "The letter $x$ is commonly used for the <<未知数/unknown>>, but $y$, $a$, $m$, etc. are also acceptable"
+
+  - id: properties-of-equality
+    title: <<等式/equality>>的性质
+    titleEn: Properties of <<等式/equality>>
+    content: |
+      <<等式/equality>>有两条重要性质，它们是解<<方程/equation>>的基础：
+
+      **性质 1**：<<等式/equality>>两边同时加上（或减去）同一个数或<<式子/expression>>，结果仍是<<等式/equality>>。
+      如果 $a = b$，那么 $a + c = b + c$，$a - c = b - c$
+
+      **性质 2**：<<等式/equality>>两边同时乘以（或除以）同一个不为 $0$ 的数，结果仍是<<等式/equality>>。
+      如果 $a = b$，那么 $a \times c = b \times c$，$\frac{a}{c} = \frac{b}{c}$（$c \neq 0$）
+    contentEn: |
+      <<等式/equality>> has two important properties that form the foundation for solving <<方程/equation>>s:
+
+      **Property 1**: Adding (or subtracting) the same number or <<式子/expression>> to both sides of an <<等式/equality>> results in a new <<等式/equality>>.
+      If $a = b$, then $a + c = b + c$, $a - c = b - c$
+
+      **Property 2**: Multiplying (or dividing) both sides of an <<等式/equality>> by the same nonzero number results in a new <<等式/equality>>.
+      If $a = b$, then $a \times c = b \times c$, $\frac{a}{c} = \frac{b}{c}$ ($c \neq 0$)
+    examples:
+      - "如果 $x + 3 = 7$，两边同时减去 $3$，得 $x = 4$"
+      - "如果 $2x = 10$，两边同时除以 $2$，得 $x = 5$"
+    examplesEn:
+      - "If $x + 3 = 7$, subtract $3$ from both sides to get $x = 4$"
+      - "If $2x = 10$, divide both sides by $2$ to get $x = 5$"
+    notes:
+      - 性质 2 中除数不能为 $0$，这一点要特别注意
+    notesEn:
+      - "In property 2, the divisor cannot be $0$ — pay special attention to this"
+
+  - id: linear-equation-definition
+    title: <<一元一次方程/linear equation in one variable>>的概念
+    titleEn: The concept of <<一元一次方程/linear equation in one variable>>
+    content: |
+      只含有**一个<<未知数/unknown>>**（一元），并且<<未知数/unknown>>的**最高次数是 $1$**（一次），这样的<<方程/equation>>叫做**<<一元一次方程/linear equation in one variable>>**。
+
+      判断标准：
+      - 只有一个<<未知数/unknown>>
+      - <<未知数/unknown>>的指数是 $1$（不能出现 $x^2$、$x^3$ 等）
+      - 分母中不含<<未知数/unknown>>
+    contentEn: |
+      An <<方程/equation>> that contains only **one <<未知数/unknown>>** (one variable) and the **highest power of the <<未知数/unknown>> is $1$** (first degree) is called a **<<一元一次方程/linear equation in one variable>>**.
+
+      Criteria for identification:
+      - Only one <<未知数/unknown>>
+      - The exponent of the <<未知数/unknown>> is $1$ (no $x^2$, $x^3$, etc.)
+      - The <<未知数/unknown>> does not appear in a denominator
+    examples:
+      - "$3x + 2 = 8$ 是<<一元一次方程/linear equation in one variable>>"
+      - "$x^2 + 1 = 5$ 不是（<<未知数/unknown>>的次数是 $2$）"
+      - "$x + y = 3$ 不是（有两个<<未知数/unknown>>）"
+      - "$\\frac{1}{x} = 2$ 不是（<<未知数/unknown>>在分母中）"
+    examplesEn:
+      - "$3x + 2 = 8$ is a <<一元一次方程/linear equation in one variable>>"
+      - "$x^2 + 1 = 5$ is not (the power of the <<未知数/unknown>> is $2$)"
+      - "$x + y = 3$ is not (there are two <<未知数/unknown>>s)"
+      - "$\\frac{1}{x} = 2$ is not (the <<未知数/unknown>> is in the denominator)"
+
+  - id: solving-steps
+    title: 解<<一元一次方程/linear equation in one variable>>的基本步骤
+    titleEn: Basic steps for solving <<一元一次方程/linear equation in one variable>>
+    content: |
+      解<<一元一次方程/linear equation in one variable>>的一般步骤如下：
+
+      **第一步：<<去分母/clearing denominators>>**
+      <<等式/equality>>两边同时乘以各分母的最小公倍数。
+
+      **第二步：<<去括号/removing parentheses>>**
+      利用分配律展开括号，注意括号前面的符号。
+
+      **第三步：<<移项/transposition>>**
+      把含<<未知数/unknown>>的项移到<<等式/equality>>的一边，常数项移到另一边。**移项要变号！**
+
+      **第四步：<<合并同类项/combining like terms>>**
+      分别合并两边的<<同类项/like terms>>。
+
+      **第五步：<<系数化为1/reducing coefficient to 1>>**
+      <<等式/equality>>两边同时除以<<未知数/unknown>>的<<系数/coefficient>>。
+    contentEn: |
+      The general steps for solving a <<一元一次方程/linear equation in one variable>> are:
+
+      **Step 1: <<去分母/clearing denominators>>**
+      Multiply both sides of the <<等式/equality>> by the least common multiple of all denominators.
+
+      **Step 2: <<去括号/removing parentheses>>**
+      Use the distributive law to expand parentheses, paying attention to the sign in front of parentheses.
+
+      **Step 3: <<移项/transposition>>**
+      Move terms with the <<未知数/unknown>> to one side of the <<等式/equality>> and constant terms to the other side. **Transposing requires changing the sign!**
+
+      **Step 4: <<合并同类项/combining like terms>>**
+      Combine <<同类项/like terms>> on each side separately.
+
+      **Step 5: <<系数化为1/reducing coefficient to 1>>**
+      Divide both sides of the <<等式/equality>> by the <<系数/coefficient>> of the <<未知数/unknown>>.
+    examples:
+      - |
+        解<<方程/equation>> $3x + 2 = 8$：
+        <<移项/transposition>>：$3x = 8 - 2$
+        <<合并同类项/combining like terms>>：$3x = 6$
+        <<系数化为1/reducing coefficient to 1>>：$x = 2$
+    examplesEn:
+      - |
+        Solve the <<方程/equation>> $3x + 2 = 8$:
+        <<移项/transposition>>: $3x = 8 - 2$
+        <<合并同类项/combining like terms>>: $3x = 6$
+        <<系数化为1/reducing coefficient to 1>>: $x = 2$
+    notes:
+      - 不是每道题都需要全部五步，有些步骤可以跳过
+      - <<移项/transposition>>时一定要变号，这是最容易出错的地方
+    notesEn:
+      - "Not every problem requires all five steps; some steps can be skipped"
+      - "Always change the sign when <<移项/transposition>>; this is the most common source of errors"
+
+  - id: transposition
+    title: <<移项/transposition>>
+    titleEn: <<移项/transposition>>
+    content: |
+      **<<移项/transposition>>**就是把<<方程/equation>>中的某一项从等号的一边移到另一边，**移项时要改变符号**。
+
+      <<移项/transposition>>的本质其实是<<等式/equality>>性质 1 的简便写法：
+      - 把 $+3$ 从左边移到右边，变成 $-3$
+      - 把 $-5$ 从右边移到左边，变成 $+5$
+    contentEn: |
+      **<<移项/transposition>>** means moving a term from one side of the equals sign to the other, **changing the sign when transposing**.
+
+      <<移项/transposition>> is essentially a shorthand for property 1 of <<等式/equality>>:
+      - Moving $+3$ from the left side to the right side changes it to $-3$
+      - Moving $-5$ from the right side to the left side changes it to $+5$
+    examples:
+      - "$x + 3 = 7$ <<移项/transposition>>得 $x = 7 - 3$，即 $x = 4$"
+      - "$x - 5 = 2$ <<移项/transposition>>得 $x = 2 + 5$，即 $x = 7$"
+      - "$2x = x + 6$ <<移项/transposition>>得 $2x - x = 6$，即 $x = 6$"
+    examplesEn:
+      - "$x + 3 = 7$, after <<移项/transposition>>: $x = 7 - 3$, so $x = 4$"
+      - "$x - 5 = 2$, after <<移项/transposition>>: $x = 2 + 5$, so $x = 7$"
+      - "$2x = x + 6$, after <<移项/transposition>>: $2x - x = 6$, so $x = 6$"
+    notes:
+      - "记口诀：**移项变号**"
+      - 移的是"项"（带符号的整体），不是单个数字
+    notesEn:
+      - "Remember the rule: **change the sign when transposing**"
+      - "What moves is the \"term\" (the whole expression with its sign), not just the number"
+
+  - id: verify-solution
+    title: <<检验/verify>><<方程/equation>>的<<解/solution>>
+    titleEn: <<检验/verify>>ing the <<解/solution>> of an <<方程/equation>>
+    content: |
+      求出<<方程/equation>>的<<解/solution>>后，应该把<<解/solution>>代入原<<方程/equation>>验算，看等号两边是否相等。
+
+      <<检验/verify>>步骤：
+      1. 把求得的<<解/solution>>代入原<<方程/equation>>的左边，算出结果
+      2. 把求得的<<解/solution>>代入原<<方程/equation>>的右边，算出结果
+      3. 如果左边 $=$ 右边，则<<解/solution>>正确
+    contentEn: |
+      After finding the <<解/solution>> of an <<方程/equation>>, you should substitute the <<解/solution>> back into the original <<方程/equation>> to verify that both sides are equal.
+
+      <<检验/verify>> steps:
+      1. Substitute the obtained <<解/solution>> into the left side of the original <<方程/equation>> and calculate the result
+      2. Substitute the obtained <<解/solution>> into the right side of the original <<方程/equation>> and calculate the result
+      3. If left side $=$ right side, then the <<解/solution>> is correct
+    examples:
+      - |
+        <<检验/verify>> $x = 2$ 是否是<<方程/equation>> $3x + 2 = 8$ 的<<解/solution>>：
+        左边 $= 3 \times 2 + 2 = 8$
+        右边 $= 8$
+        左边 $=$ 右边，所以 $x = 2$ 是原<<方程/equation>>的<<解/solution>>。
+    examplesEn:
+      - |
+        <<检验/verify>> whether $x = 2$ is a <<解/solution>> of the <<方程/equation>> $3x + 2 = 8$:
+        Left side $= 3 \times 2 + 2 = 8$
+        Right side $= 8$
+        Left side $=$ right side, so $x = 2$ is a <<解/solution>> of the original <<方程/equation>>.
+
+  - id: word-problems
+    title: 用<<一元一次方程/linear equation in one variable>>解决实际问题
+    titleEn: Solving real-life problems with <<一元一次方程/linear equation in one variable>>
+    content: |
+      用<<方程/equation>>解决实际问题的一般步骤：
+
+      1. **审题**：弄清题意，找出已知量和<<未知数/unknown>>
+      2. **设<<未知数/unknown>>**：用 $x$ 表示要求的量
+      3. **列<<方程/equation>>**：根据题目中的等量关系列出<<方程/equation>>
+      4. **解<<方程/equation>>**：按照解<<一元一次方程/linear equation in one variable>>的步骤求解
+      5. **<<检验/verify>>作答**：检查<<解/solution>>是否符合题意，写出答案
+    contentEn: |
+      General steps for solving real-life problems with <<方程/equation>>s:
+
+      1. **Read carefully**: Understand the problem, identify known quantities and the <<未知数/unknown>>
+      2. **Set the <<未知数/unknown>>**: Use $x$ to represent the quantity to be found
+      3. **Set up the <<方程/equation>>**: Write the <<方程/equation>> based on the equal relationship in the problem
+      4. **Solve the <<方程/equation>>**: Follow the steps for solving a <<一元一次方程/linear equation in one variable>>
+      5. **<<检验/verify>> and answer**: Check whether the <<解/solution>> fits the problem context, then write the answer
+    examples:
+      - |
+        小明比小红大 $3$ 岁，两人年龄之和为 $25$ 岁。问小明和小红各几岁？
+        设小红 $x$ 岁，则小明 $(x + 3)$ 岁。
+        列<<方程/equation>>：$x + (x + 3) = 25$
+        解：$2x + 3 = 25$，$2x = 22$，$x = 11$
+        所以小红 $11$ 岁，小明 $14$ 岁。
+    examplesEn:
+      - |
+        Xiao Ming is $3$ years older than Xiao Hong. The sum of their ages is $25$. How old are they?
+        Let Xiao Hong be $x$ years old, then Xiao Ming is $(x + 3)$ years old.
+        Set up the <<方程/equation>>: $x + (x + 3) = 25$
+        Solve: $2x + 3 = 25$, $2x = 22$, $x = 11$
+        So Xiao Hong is $11$ years old and Xiao Ming is $14$ years old.
+
+realLife:
+  - category: 购物打折
+    categoryEn: Shopping discounts
+    scenario: 一件衣服打八折后售价 $160$ 元
+    scenarioEn: "A piece of clothing is sold for $160$ yuan after a $20\\%$ discount"
+    equation: "$0.8x = 160$"
+    solution: "原价 $x = 200$ 元"
+    solutionEn: "Original price $x = 200$ yuan"
+  - category: 行程问题
+    categoryEn: Distance problems
+    scenario: 小明骑车每小时 $12$ 千米，出发 $t$ 小时后走了 $36$ 千米
+    scenarioEn: "Xiao Ming cycles at $12$ km/h. After $t$ hours he has traveled $36$ km"
+    equation: "$12t = 36$"
+    solution: "$t = 3$ 小时"
+    solutionEn: "$t = 3$ hours"
+  - category: 工资计算
+    categoryEn: Salary calculation
+    scenario: 小李月薪的 $\frac{1}{5}$ 用于房租，房租为 $1200$ 元
+    scenarioEn: "Xiao Li spends $\\frac{1}{5}$ of his monthly salary on rent, which is $1200$ yuan"
+    equation: "$\\frac{x}{5} = 1200$"
+    solution: "月薪 $x = 6000$ 元"
+    solutionEn: "Monthly salary $x = 6000$ yuan"
+  - category: 年龄问题
+    categoryEn: Age problems
+    scenario: 妈妈比小华大 $26$ 岁，妈妈的年龄是小华的 $3$ 倍
+    scenarioEn: "Mom is $26$ years older than Xiao Hua, and Mom's age is $3$ times Xiao Hua's age"
+    equation: "$3x = x + 26$"
+    solution: "小华 $x = 13$ 岁，妈妈 $39$ 岁"
+    solutionEn: "Xiao Hua is $x = 13$ years old, Mom is $39$ years old"
+
+examples:
+  - type: 1
+    title: 判断哪些是<<方程/equation>>
+    titleEn: Identifying which are <<方程/equation>>s
+    question: |
+      下列各式中，哪些是<<方程/equation>>？
+      (1) $2x + 1 = 5$　(2) $3 + 7 = 10$　(3) $4x - 1$　(4) $y^2 = 9$
+    questionEn: |
+      Among the following, which are <<方程/equation>>s?
+      (1) $2x + 1 = 5$  (2) $3 + 7 = 10$  (3) $4x - 1$  (4) $y^2 = 9$
+    steps:
+      - "(1) $2x + 1 = 5$：有等号、有<<未知数/unknown>> $x$，是<<方程/equation>>"
+      - "(2) $3 + 7 = 10$：有等号，但没有<<未知数/unknown>>，不是<<方程/equation>>"
+      - "(3) $4x - 1$：有<<未知数/unknown>>，但没有等号，不是<<方程/equation>>"
+      - "(4) $y^2 = 9$：有等号、有<<未知数/unknown>> $y$，是<<方程/equation>>"
+    stepsEn:
+      - "(1) $2x + 1 = 5$: has an equals sign and an <<未知数/unknown>> $x$ — it is an <<方程/equation>>"
+      - "(2) $3 + 7 = 10$: has an equals sign but no <<未知数/unknown>> — it is not an <<方程/equation>>"
+      - "(3) $4x - 1$: has an <<未知数/unknown>> but no equals sign — it is not an <<方程/equation>>"
+      - "(4) $y^2 = 9$: has an equals sign and an <<未知数/unknown>> $y$ — it is an <<方程/equation>>"
+    answer: "(1) 和 (4) 是<<方程/equation>>。"
+    answerEn: "(1) and (4) are <<方程/equation>>s."
+
+  - type: 2
+    title: 判断是否为<<一元一次方程/linear equation in one variable>>
+    titleEn: Determining whether it is a <<一元一次方程/linear equation in one variable>>
+    question: |
+      下列<<方程/equation>>中，哪些是<<一元一次方程/linear equation in one variable>>？
+      (1) $5x - 3 = 12$　(2) $x^2 = 4$　(3) $x + y = 6$　(4) $\frac{2}{x} = 1$
+    questionEn: |
+      Among the following <<方程/equation>>s, which are <<一元一次方程/linear equation in one variable>>?
+      (1) $5x - 3 = 12$  (2) $x^2 = 4$  (3) $x + y = 6$  (4) $\frac{2}{x} = 1$
+    steps:
+      - "(1) $5x - 3 = 12$：一个<<未知数/unknown>> $x$，最高次数为 $1$，是<<一元一次方程/linear equation in one variable>>"
+      - "(2) $x^2 = 4$：<<未知数/unknown>>的次数为 $2$，不是<<一元一次方程/linear equation in one variable>>"
+      - "(3) $x + y = 6$：有两个<<未知数/unknown>>，不是<<一元一次方程/linear equation in one variable>>"
+      - "(4) $\\frac{2}{x} = 1$：<<未知数/unknown>>在分母中，不是<<一元一次方程/linear equation in one variable>>"
+    stepsEn:
+      - "(1) $5x - 3 = 12$: one <<未知数/unknown>> $x$ with highest power $1$ — it is a <<一元一次方程/linear equation in one variable>>"
+      - "(2) $x^2 = 4$: the power of the <<未知数/unknown>> is $2$ — not a <<一元一次方程/linear equation in one variable>>"
+      - "(3) $x + y = 6$: has two <<未知数/unknown>>s — not a <<一元一次方程/linear equation in one variable>>"
+      - "(4) $\\frac{2}{x} = 1$: the <<未知数/unknown>> is in the denominator — not a <<一元一次方程/linear equation in one variable>>"
+    answer: "只有 (1) 是<<一元一次方程/linear equation in one variable>>。"
+    answerEn: "Only (1) is a <<一元一次方程/linear equation in one variable>>."
+
+  - type: 3
+    title: 用<<等式/equality>>的性质解简单<<方程/equation>>
+    titleEn: Solving a simple <<方程/equation>> using properties of <<等式/equality>>
+    question: |
+      解<<方程/equation>>：$x + 7 = 15$
+    questionEn: |
+      Solve the <<方程/equation>>: $x + 7 = 15$
+    steps:
+      - "<<等式/equality>>两边同时减去 $7$"
+      - "$x + 7 - 7 = 15 - 7$"
+      - "$x = 8$"
+    stepsEn:
+      - "Subtract $7$ from both sides of the <<等式/equality>>"
+      - "$x + 7 - 7 = 15 - 7$"
+      - "$x = 8$"
+    answer: "$x = 8$"
+    answerEn: "$x = 8$"
+
+  - type: 4
+    title: 用<<移项/transposition>>解<<方程/equation>>
+    titleEn: Solving an <<方程/equation>> using <<移项/transposition>>
+    question: |
+      解<<方程/equation>>：$5x - 2 = 3x + 6$
+    questionEn: |
+      Solve the <<方程/equation>>: $5x - 2 = 3x + 6$
+    steps:
+      - "<<移项/transposition>>：把 $3x$ 移到左边（变号），$-2$ 移到右边（变号）"
+      - "$5x - 3x = 6 + 2$"
+      - "<<合并同类项/combining like terms>>：$2x = 8$"
+      - "<<系数化为1/reducing coefficient to 1>>：$x = 4$"
+    stepsEn:
+      - "<<移项/transposition>>: move $3x$ to the left (change sign), move $-2$ to the right (change sign)"
+      - "$5x - 3x = 6 + 2$"
+      - "<<合并同类项/combining like terms>>: $2x = 8$"
+      - "<<系数化为1/reducing coefficient to 1>>: $x = 4$"
+    answer: "$x = 4$"
+    answerEn: "$x = 4$"
+
+  - type: 5
+    title: 含括号的<<方程/equation>>
+    titleEn: <<方程/equation>> with parentheses
+    question: |
+      解<<方程/equation>>：$3(x + 2) = 15$
+    questionEn: |
+      Solve the <<方程/equation>>: $3(x + 2) = 15$
+    steps:
+      - "<<去括号/removing parentheses>>：$3x + 6 = 15$"
+      - "<<移项/transposition>>：$3x = 15 - 6$"
+      - "<<合并同类项/combining like terms>>：$3x = 9$"
+      - "<<系数化为1/reducing coefficient to 1>>：$x = 3$"
+    stepsEn:
+      - "<<去括号/removing parentheses>>: $3x + 6 = 15$"
+      - "<<移项/transposition>>: $3x = 15 - 6$"
+      - "<<合并同类项/combining like terms>>: $3x = 9$"
+      - "<<系数化为1/reducing coefficient to 1>>: $x = 3$"
+    answer: "$x = 3$"
+    answerEn: "$x = 3$"
+
+  - type: 6
+    title: 含分母的<<方程/equation>>
+    titleEn: <<方程/equation>> with fractions
+    question: |
+      解<<方程/equation>>：$\frac{x}{2} + 1 = \frac{x}{3} + 3$
+    questionEn: |
+      Solve the <<方程/equation>>: $\frac{x}{2} + 1 = \frac{x}{3} + 3$
+    steps:
+      - "<<去分母/clearing denominators>>：两边同时乘以 $6$（$2$ 和 $3$ 的最小公倍数）"
+      - "$6 \\times \\frac{x}{2} + 6 \\times 1 = 6 \\times \\frac{x}{3} + 6 \\times 3$"
+      - "$3x + 6 = 2x + 18$"
+      - "<<移项/transposition>>：$3x - 2x = 18 - 6$"
+      - "<<合并同类项/combining like terms>>：$x = 12$"
+    stepsEn:
+      - "<<去分母/clearing denominators>>: multiply both sides by $6$ (the LCM of $2$ and $3$)"
+      - "$6 \\times \\frac{x}{2} + 6 \\times 1 = 6 \\times \\frac{x}{3} + 6 \\times 3$"
+      - "$3x + 6 = 2x + 18$"
+      - "<<移项/transposition>>: $3x - 2x = 18 - 6$"
+      - "<<合并同类项/combining like terms>>: $x = 12$"
+    answer: "$x = 12$"
+    answerEn: "$x = 12$"
+
+  - type: 7
+    title: <<检验/verify>><<方程/equation>>的<<解/solution>>
+    titleEn: <<检验/verify>>ing the <<解/solution>> of an <<方程/equation>>
+    question: |
+      检验 $x = 4$ 是否是<<方程/equation>> $5x - 2 = 3x + 6$ 的<<解/solution>>。
+    questionEn: |
+      Verify whether $x = 4$ is a <<解/solution>> of the <<方程/equation>> $5x - 2 = 3x + 6$.
+    steps:
+      - "把 $x = 4$ 代入左边：$5 \\times 4 - 2 = 20 - 2 = 18$"
+      - "把 $x = 4$ 代入右边：$3 \\times 4 + 6 = 12 + 6 = 18$"
+      - "左边 $= 18$，右边 $= 18$，左边 $=$ 右边"
+    stepsEn:
+      - "Substitute $x = 4$ into the left side: $5 \\times 4 - 2 = 20 - 2 = 18$"
+      - "Substitute $x = 4$ into the right side: $3 \\times 4 + 6 = 12 + 6 = 18$"
+      - "Left side $= 18$, right side $= 18$, left side $=$ right side"
+    answer: "$x = 4$ 是原<<方程/equation>>的<<解/solution>>。"
+    answerEn: "$x = 4$ is a <<解/solution>> of the original <<方程/equation>>."
+
+  - type: 8
+    title: 用<<一元一次方程/linear equation in one variable>>解决实际问题
+    titleEn: Solving a real-life problem with a <<一元一次方程/linear equation in one variable>>
+    question: |
+      一根绳子总长 $56$ 厘米，剪成两段，其中一段比另一段长 $8$ 厘米。求两段绳子各长多少厘米？
+    questionEn: |
+      A rope is $56$ cm long in total. It is cut into two pieces, and one piece is $8$ cm longer than the other. Find the length of each piece.
+    steps:
+      - "设较短的一段为 $x$ 厘米，则较长的一段为 $(x + 8)$ 厘米"
+      - "等量关系：短段 + 长段 = 总长"
+      - "列<<方程/equation>>：$x + (x + 8) = 56$"
+      - "<<去括号/removing parentheses>>：$x + x + 8 = 56$"
+      - "<<合并同类项/combining like terms>>：$2x + 8 = 56$"
+      - "<<移项/transposition>>：$2x = 56 - 8 = 48$"
+      - "<<系数化为1/reducing coefficient to 1>>：$x = 24$"
+      - "所以较短的一段 $24$ 厘米，较长的一段 $24 + 8 = 32$ 厘米"
+    stepsEn:
+      - "Let the shorter piece be $x$ cm, then the longer piece is $(x + 8)$ cm"
+      - "Equal relationship: short piece + long piece = total length"
+      - "Set up the <<方程/equation>>: $x + (x + 8) = 56$"
+      - "<<去括号/removing parentheses>>: $x + x + 8 = 56$"
+      - "<<合并同类项/combining like terms>>: $2x + 8 = 56$"
+      - "<<移项/transposition>>: $2x = 56 - 8 = 48$"
+      - "<<系数化为1/reducing coefficient to 1>>: $x = 24$"
+      - "So the shorter piece is $24$ cm, the longer piece is $24 + 8 = 32$ cm"
+    answer: "较短的一段 $24$ 厘米，较长的一段 $32$ 厘米。"
+    answerEn: "The shorter piece is $24$ cm, the longer piece is $32$ cm."
+
+commonMistakes:
+  - "<<移项/transposition>>忘记变号：例如把 $x + 3 = 7$ 写成 $x = 7 + 3$（错误），正确应为 $x = 7 - 3 = 4$"
+  - "<<去括号/removing parentheses>>时漏乘括号中的某一项：例如 $2(x + 3)$ 只展开成 $2x + 3$（错误），正确应为 $2x + 6$"
+  - "<<去分母/clearing denominators>>时漏乘没有分母的项：例如 $\\frac{x}{2} + 1 = 3$ 两边乘 $2$ 时忘记把 $1$ 也乘以 $2$"
+  - "括号前面是负号时去括号出错：例如 $-(x - 3)$ 应该变成 $-x + 3$，而不是 $-x - 3$"
+  - "解完<<方程/equation>>后不<<检验/verify>>，导致计算错误未发现"
+  - "列<<方程/equation>>时等量关系找错，导致<<方程/equation>>本身就不对"
+commonMistakesEn:
+  - "Forgetting to change the sign when <<移项/transposition>>: e.g., writing $x + 3 = 7$ as $x = 7 + 3$ (wrong); correct is $x = 7 - 3 = 4$"
+  - "Missing a term inside parentheses when <<去括号/removing parentheses>>: e.g., expanding $2(x + 3)$ as $2x + 3$ (wrong); correct is $2x + 6$"
+  - "Forgetting to multiply a term without a denominator when <<去分母/clearing denominators>>: e.g., in $\\frac{x}{2} + 1 = 3$, forgetting to multiply $1$ by $2$ when multiplying both sides by $2$"
+  - "Errors when <<去括号/removing parentheses>> with a negative sign in front: e.g., $-(x - 3)$ should become $-x + 3$, not $-x - 3$"
+  - "Not <<检验/verify>>ing after solving, causing undetected calculation errors"
+  - "Setting up the wrong equal relationship when writing the <<方程/equation>>, leading to an incorrect <<方程/equation>> from the start"
+
+exercises:
+  timeGuide:
+    total: 40分钟
+    totalEn: 40 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 20分钟
+        timeEn: 20 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        含有<<未知数/unknown>>的______叫做<<方程/equation>>。
+      questionEn: |
+        An ______ that contains an <<未知数/unknown>> is called an <<方程/equation>>.
+      correctValue: "等式"
+      answer: "等式"
+      answerEn: "equality"
+      explanation: |
+        <<方程/equation>>的定义：含有<<未知数/unknown>>的<<等式/equality>>叫做<<方程/equation>>。
+      explanationEn: |
+        Definition of an <<方程/equation>>: an <<等式/equality>> containing an <<未知数/unknown>> is called an <<方程/equation>>.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<方程/equation>> $x + 9 = 16$，$x = $ ______。
+      questionEn: |
+        Solve the <<方程/equation>> $x + 9 = 16$, $x = $ ______.
+      correctValue: "7"
+      answer: "$7$"
+      answerEn: "$7$"
+      explanation: |
+        <<移项/transposition>>：$x = 16 - 9 = 7$。
+      explanationEn: |
+        <<移项/transposition>>: $x = 16 - 9 = 7$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<方程/equation>> $4x = 20$，$x = $ ______。
+      questionEn: |
+        Solve the <<方程/equation>> $4x = 20$, $x = $ ______.
+      correctValue: "5"
+      answer: "$5$"
+      answerEn: "$5$"
+      explanation: |
+        <<系数化为1/reducing coefficient to 1>>：两边同时除以 $4$，$x = 5$。
+      explanationEn: |
+        <<系数化为1/reducing coefficient to 1>>: divide both sides by $4$, $x = 5$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        解<<方程/equation>> $3x - 5 = x + 7$，$x = $ ______。
+      questionEn: |
+        Solve the <<方程/equation>> $3x - 5 = x + 7$, $x = $ ______.
+      correctValue: "6"
+      answer: "$6$"
+      answerEn: "$6$"
+      explanation: |
+        <<移项/transposition>>：$3x - x = 7 + 5$，$2x = 12$，$x = 6$。
+      explanationEn: |
+        <<移项/transposition>>: $3x - x = 7 + 5$, $2x = 12$, $x = 6$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $2x + 3$ 是一个<<方程/equation>>。
+      questionEn: |
+        $2x + 3$ is an <<方程/equation>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $2x + 3$ 没有等号，只是一个<<式子/expression>>，不是<<方程/equation>>。
+      explanationEn: |
+        $2x + 3$ has no equals sign; it is merely an <<式子/expression>>, not an <<方程/equation>>.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        <<移项/transposition>>时，移动的项要变号。
+      questionEn: |
+        When performing <<移项/transposition>>, the transposed term must change its sign.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<移项/transposition>>的本质是<<等式/equality>>两边同时加上或减去同一个数，所以移过去的项要变号。
+      explanationEn: |
+        The essence of <<移项/transposition>> is adding or subtracting the same number from both sides of the <<等式/equality>>, so the transposed term must change its sign.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $x^2 + 1 = 10$ 是<<一元一次方程/linear equation in one variable>>。
+      questionEn: |
+        $x^2 + 1 = 10$ is a <<一元一次方程/linear equation in one variable>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<未知数/unknown>>的最高次数为 $2$，不是 $1$，所以不是<<一元一次方程/linear equation in one variable>>。
+      explanationEn: |
+        The highest power of the <<未知数/unknown>> is $2$, not $1$, so it is not a <<一元一次方程/linear equation in one variable>>.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $x = 3$ 是<<方程/equation>> $2x + 1 = 7$ 的<<解/solution>>。
+      questionEn: |
+        $x = 3$ is a <<解/solution>> of the <<方程/equation>> $2x + 1 = 7$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<检验/verify>>：左边 $= 2 \times 3 + 1 = 7$，右边 $= 7$，左边 $=$ 右边，所以 $x = 3$ 是<<解/solution>>。
+      explanationEn: |
+        <<检验/verify>>: left side $= 2 \times 3 + 1 = 7$, right side $= 7$, left $=$ right, so $x = 3$ is a <<解/solution>>.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列<<方程/equation>>中，是<<一元一次方程/linear equation in one variable>>的是（　）
+      questionEn: |
+        Among the following <<方程/equation>>s, which is a <<一元一次方程/linear equation in one variable>>? ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x + y = 5$", "$x^2 = 9$", "$7x - 1 = 2x + 4$", "$\\frac{3}{x} = 6$"]
+          correctValue: "$7x - 1 = 2x + 4$"
+      answer: "$7x - 1 = 2x + 4$"
+      answerEn: "$7x - 1 = 2x + 4$"
+      explanation: |
+        - $x + y = 5$ 有两个<<未知数/unknown>>，不是一元
+        - $x^2 = 9$ 的<<未知数/unknown>>次数为 $2$，不是一次
+        - $7x - 1 = 2x + 4$ 只有一个<<未知数/unknown>> $x$，最高次数为 $1$，是<<一元一次方程/linear equation in one variable>>
+        - $\frac{3}{x} = 6$ 的<<未知数/unknown>>在分母中，不是<<一元一次方程/linear equation in one variable>>
+      explanationEn: |
+        - $x + y = 5$ has two <<未知数/unknown>>s, not one variable
+        - $x^2 = 9$ has <<未知数/unknown>> power $2$, not first degree
+        - $7x - 1 = 2x + 4$ has only one <<未知数/unknown>> $x$ with highest power $1$ — it is a <<一元一次方程/linear equation in one variable>>
+        - $\frac{3}{x} = 6$ has the <<未知数/unknown>> in the denominator, not a <<一元一次方程/linear equation in one variable>>
+
+    - number: 10
+      type: 解方程题
+      inputType: blank
+      section: 四、解方程
+      sectionEn: "IV. Solve the Equation"
+      question: |
+        解<<方程/equation>>：$2(x - 3) + 5 = 3x - 4$，$x = $ ______。
+      questionEn: |
+        Solve the <<方程/equation>>: $2(x - 3) + 5 = 3x - 4$, $x = $ ______.
+      correctValue: "3"
+      answer: "$3$"
+      answerEn: "$3$"
+      explanation: |
+        <<去括号/removing parentheses>>：$2x - 6 + 5 = 3x - 4$
+        整理：$2x - 1 = 3x - 4$
+        <<移项/transposition>>：$2x - 3x = -4 + 1$
+        <<合并同类项/combining like terms>>：$-x = -3$
+        <<系数化为1/reducing coefficient to 1>>：$x = 3$
+      explanationEn: |
+        <<去括号/removing parentheses>>: $2x - 6 + 5 = 3x - 4$
+        Simplify: $2x - 1 = 3x - 4$
+        <<移项/transposition>>: $2x - 3x = -4 + 1$
+        <<合并同类项/combining like terms>>: $-x = -3$
+        <<系数化为1/reducing coefficient to 1>>: $x = 3$
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 五、生活应用题
+      sectionEn: "V. Real-Life Application"
+      question: |
+        小明有一些糖果，他给了弟弟 $8$ 颗后，自己还剩 $15$ 颗。小明原来有多少颗糖果？请列<<一元一次方程/linear equation in one variable>>解答。
+      questionEn: |
+        Xiao Ming has some candies. After giving $8$ to his brother, he has $15$ left. How many candies did Xiao Ming originally have? Set up and solve a <<一元一次方程/linear equation in one variable>>.
+      answer: |
+        设小明原来有 $x$ 颗糖果。
+        列<<方程/equation>>：$x - 8 = 15$
+        <<移项/transposition>>：$x = 15 + 8 = 23$
+        小明原来有 $23$ 颗糖果。
+      answerEn: |
+        Let Xiao Ming originally have $x$ candies.
+        Set up the <<方程/equation>>: $x - 8 = 15$
+        <<移项/transposition>>: $x = 15 + 8 = 23$
+        Xiao Ming originally had $23$ candies.
+      explanation: |
+        "原来的量 - 给出的量 = 剩余的量"是等量关系。设<<未知数/unknown>>后直接列<<方程/equation>>即可。
+      explanationEn: |
+        "Original amount - given amount = remaining amount" is the equal relationship. Set the <<未知数/unknown>> and write the <<方程/equation>> directly.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 六、综合题
+      sectionEn: "VI. Comprehensive Problem"
+      question: |
+        甲、乙两个仓库共存粮食 $420$ 吨。如果从甲仓库运 $30$ 吨到乙仓库，则甲、乙两个仓库的粮食一样多。求甲、乙两个仓库原来各有多少吨粮食？
+
+        要求：列<<方程/equation>>，写出解题步骤，并<<检验/verify>>你的答案。
+      questionEn: |
+        Warehouses A and B together store $420$ tons of grain. If $30$ tons are moved from A to B, both warehouses have the same amount. How much grain did each warehouse originally have?
+
+        Requirements: set up an <<方程/equation>>, show all steps, and <<检验/verify>> your answer.
+      answer: |
+        设甲仓库原来有 $x$ 吨粮食，则乙仓库有 $(420 - x)$ 吨。
+        运 $30$ 吨后：甲有 $(x - 30)$ 吨，乙有 $(420 - x + 30)$ 吨。
+        等量关系：运完后甲 = 运完后乙
+        列<<方程/equation>>：$x - 30 = 420 - x + 30$
+        整理：$x - 30 = 450 - x$
+        <<移项/transposition>>：$x + x = 450 + 30$
+        <<合并同类项/combining like terms>>：$2x = 480$
+        <<系数化为1/reducing coefficient to 1>>：$x = 240$
+        所以甲仓库原来有 $240$ 吨，乙仓库有 $420 - 240 = 180$ 吨。
+
+        <<检验/verify>>：从甲运 $30$ 吨后，甲剩 $210$ 吨，乙有 $180 + 30 = 210$ 吨，甲 $=$ 乙，正确。
+      answerEn: |
+        Let warehouse A originally have $x$ tons, then B has $(420 - x)$ tons.
+        After moving $30$ tons: A has $(x - 30)$ tons, B has $(420 - x + 30)$ tons.
+        Equal relationship: A after transfer = B after transfer
+        Set up the <<方程/equation>>: $x - 30 = 420 - x + 30$
+        Simplify: $x - 30 = 450 - x$
+        <<移项/transposition>>: $x + x = 450 + 30$
+        <<合并同类项/combining like terms>>: $2x = 480$
+        <<系数化为1/reducing coefficient to 1>>: $x = 240$
+        So warehouse A originally had $240$ tons, warehouse B had $420 - 240 = 180$ tons.
+
+        <<检验/verify>>: After moving $30$ tons from A, A has $210$ tons, B has $180 + 30 = 210$ tons. A $=$ B, correct.
+      explanation: |
+        本题关键是找到等量关系："运完后两个仓库一样多"。设好<<未知数/unknown>>后，用两种方式分别表示运完后甲和乙的粮食量，令它们相等即可。
+      explanationEn: |
+        The key to this problem is identifying the equal relationship: "after transfer, both warehouses have the same amount." After setting the <<未知数/unknown>>, express the grain amounts in both warehouses after the transfer in two ways, and set them equal.
+
+summary:
+  - "<<方程/equation>>是含有<<未知数/unknown>>的<<等式/equality>>，必须同时具备等号和<<未知数/unknown>>"
+  - "<<等式/equality>>的两条性质是解<<方程/equation>>的理论基础"
+  - "<<一元一次方程/linear equation in one variable>>只含一个<<未知数/unknown>>，且<<未知数/unknown>>的最高次数为 $1$"
+  - "解<<方程/equation>>的五步法：<<去分母/clearing denominators>>、<<去括号/removing parentheses>>、<<移项/transposition>>、<<合并同类项/combining like terms>>、<<系数化为1/reducing coefficient to 1>>"
+  - "<<移项/transposition>>一定要变号，这是最常出错的地方"
+  - "解完<<方程/equation>>后要养成<<检验/verify>>的习惯"
+  - "用<<方程/equation>>解实际问题：审题、设<<未知数/unknown>>、列<<方程/equation>>、解<<方程/equation>>、<<检验/verify>>作答"
+summaryEn:
+  - "An <<方程/equation>> is an <<等式/equality>> containing an <<未知数/unknown>>; it must have both an equals sign and an <<未知数/unknown>>"
+  - "The two properties of <<等式/equality>> form the theoretical basis for solving <<方程/equation>>s"
+  - "A <<一元一次方程/linear equation in one variable>> has only one <<未知数/unknown>> with highest power $1$"
+  - "Five-step method for solving: <<去分母/clearing denominators>>, <<去括号/removing parentheses>>, <<移项/transposition>>, <<合并同类项/combining like terms>>, <<系数化为1/reducing coefficient to 1>>"
+  - "Always change the sign when <<移项/transposition>> — this is the most common mistake"
+  - "Develop the habit of <<检验/verify>>ing after solving an <<方程/equation>>"
+  - "Solving real-life problems with <<方程/equation>>s: read, set <<未知数/unknown>>, set up <<方程/equation>>, solve <<方程/equation>>, <<检验/verify>> and answer"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        <<方程/equation>> $2x + 3 = 5$ 的<<解/solution>>是（　）
+      questionEn: |
+        The <<解/solution>> of the <<方程/equation>> $2x + 3 = 5$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x = 1$", "$x = 2$", "$x = -1$", "$x = 4$"]
+          correctValue: "$x = 1$"
+      answer: "$x = 1$"
+      answerEn: "$x = 1$"
+      explanation: |
+        $2x + 3 = 5$
+        <<移项/transposition>>：$2x = 5 - 3 = 2$
+        <<系数化为1/reducing coefficient to 1>>：$x = 1$
+      explanationEn: |
+        $2x + 3 = 5$
+        <<移项/transposition>>: $2x = 5 - 3 = 2$
+        <<系数化为1/reducing coefficient to 1>>: $x = 1$
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        若 $3a + 1 = 2a + 5$，则 $a = $ ______。
+      questionEn: |
+        If $3a + 1 = 2a + 5$, then $a = $ ______.
+      correctValue: "4"
+      answer: "$4$"
+      answerEn: "$4$"
+      explanation: |
+        <<移项/transposition>>：$3a - 2a = 5 - 1$
+        <<合并同类项/combining like terms>>：$a = 4$
+      explanationEn: |
+        <<移项/transposition>>: $3a - 2a = 5 - 1$
+        <<合并同类项/combining like terms>>: $a = 4$
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        解<<方程/equation>> $\frac{x - 1}{2} = \frac{x + 1}{3}$，$x$ 的值是（　）
+      questionEn: |
+        Solve the <<方程/equation>> $\frac{x - 1}{2} = \frac{x + 1}{3}$. The value of $x$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x = 5$", "$x = -5$", "$x = 3$", "$x = -3$"]
+          correctValue: "$x = 5$"
+      answer: "$x = 5$"
+      answerEn: "$x = 5$"
+      explanation: |
+        <<去分母/clearing denominators>>：两边同时乘以 $6$
+        $3(x - 1) = 2(x + 1)$
+        <<去括号/removing parentheses>>：$3x - 3 = 2x + 2$
+        <<移项/transposition>>：$3x - 2x = 2 + 3$
+        $x = 5$
+        <<检验/verify>>：左边 $= \frac{5-1}{2} = 2$，右边 $= \frac{5+1}{3} = 2$，左边 $=$ 右边。
+      explanationEn: |
+        <<去分母/clearing denominators>>: multiply both sides by $6$
+        $3(x - 1) = 2(x + 1)$
+        <<去括号/removing parentheses>>: $3x - 3 = 2x + 2$
+        <<移项/transposition>>: $3x - 2x = 2 + 3$
+        $x = 5$
+        <<检验/verify>>: left $= \frac{5-1}{2} = 2$, right $= \frac{5+1}{3} = 2$, left $=$ right.
+
+    - number: 4
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        若关于 $x$ 的<<方程/equation>> $2x + a = 3$ 的<<解/solution>>是 $x = 1$，则 $a = $ ______。
+      questionEn: |
+        If the <<解/solution>> of the <<方程/equation>> $2x + a = 3$ (in terms of $x$) is $x = 1$, then $a = $ ______.
+      correctValue: "1"
+      answer: "$1$"
+      answerEn: "$1$"
+      explanation: |
+        把 $x = 1$ 代入<<方程/equation>>：$2 \times 1 + a = 3$，$2 + a = 3$，$a = 1$。
+        这道中考题考查的是"已知<<解/solution>>求参数"——反向思维！
+      explanationEn: |
+        Substitute $x = 1$ into the <<方程/equation>>: $2 \times 1 + a = 3$, $2 + a = 3$, $a = 1$.
+        This exam question tests "finding a parameter given the <<解/solution>>" — reverse thinking!
+
+    - number: 5
+      type: 中考解答题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        某商店将一件进价为 $80$ 元的商品按进价提高 $40\%$ 标价，然后打八折（即按标价的 $80\%$）出售。求这件商品的实际售价，以及商店每件商品的利润。
+      questionEn: |
+        A store marks up an item with a cost price of $80$ yuan by $40\%$, then sells it at a $20\%$ discount (i.e., $80\%$ of the marked price). Find the actual selling price and the profit per item.
+      answer: |
+        标价 $= 80 \times (1 + 40\%) = 80 \times 1.4 = 112$ 元
+        实际售价 $= 112 \times 80\% = 112 \times 0.8 = 89.6$ 元
+        利润 $=$ 实际售价 $-$ 进价 $= 89.6 - 80 = 9.6$ 元
+
+        也可以用<<方程/equation>>的思路：设实际售价为 $x$ 元
+        $x = 80 \times 1.4 \times 0.8$
+        $x = 89.6$
+        利润 $= 89.6 - 80 = 9.6$ 元
+      answerEn: |
+        Marked price $= 80 \times (1 + 40\%) = 80 \times 1.4 = 112$ yuan
+        Actual selling price $= 112 \times 80\% = 112 \times 0.8 = 89.6$ yuan
+        Profit $=$ selling price $-$ cost price $= 89.6 - 80 = 9.6$ yuan
+
+        Alternatively, using the <<方程/equation>> approach: let the actual selling price be $x$ yuan
+        $x = 80 \times 1.4 \times 0.8$
+        $x = 89.6$
+        Profit $= 89.6 - 80 = 9.6$ yuan
+      explanation: |
+        这道中考题考查商品利润问题，核心关系是：
+        - 标价 $=$ 进价 $\times (1 +$ 提价百分比$)$
+        - 售价 $=$ 标价 $\times$ 折扣
+        - 利润 $=$ 售价 $-$ 进价
+        这类题在中考中出现频率非常高，要熟练掌握"进价、标价、售价、利润"四个量之间的关系。
+      explanationEn: |
+        This exam question tests the profit problem. The key relationships are:
+        - Marked price $=$ cost price $\times (1 +$ markup percentage$)$
+        - Selling price $=$ marked price $\times$ discount
+        - Profit $=$ selling price $-$ cost price
+        This type of question appears very frequently in entrance exams. Master the relationships among "cost price, marked price, selling price, and profit."

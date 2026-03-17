@@ -1,0 +1,178 @@
+subjects:
+  - id: math
+    name: 数学
+    nameEn: Mathematics
+    icon: "📐"
+    grades:
+      - id: grade7
+        name: 七年级
+        nameEn: Grade 7
+        description: 初一数学，依据人教版（2024版上册 / 2025春版下册）
+        semesters:
+          - id: semester1
+            name: 上学期
+            nameEn: Semester 1
+            version: 七年级数学上册（2024年版）
+            chapters:
+              - id: rational-numbers
+                number: 1
+                name: 有理数
+                nameEn: Rational Numbers
+                hasContent: true
+                topics:
+                  - 正数、负数、零的意义
+                  - 有理数的概念与分类
+                  - 数轴的建立与点的表示
+                  - 相反数的概念
+                  - 绝对值的意义与几何解释
+                  - 有理数大小比较
+                  - 用数轴分析大小规律
+                topicsEn:
+                  - Meaning of positive numbers, negative numbers, and zero
+                  - Concept and classification of rational numbers
+                  - Number line and locating points
+                  - Opposite numbers
+                  - Absolute value and its geometric meaning
+                  - Comparing rational numbers
+                  - Using the number line to compare values
+              - id: operations-rational-numbers
+                number: 2
+                name: 有理数的运算
+                nameEn: Operations with Rational Numbers
+                hasContent: true
+                topics:
+                  - 有理数加法法则
+                  - 有理数减法及转化为加法
+                  - 有理数乘法法则
+                  - 有理数除法法则
+                  - 乘方的意义
+                  - 科学记数法
+                  - 近似数与精确度的初步认识
+                  - 含加减乘除与乘方的混合运算顺序
+                  - 综合与实践：进位制的认识与探究
+              - id: algebraic-expressions
+                number: 3
+                name: 代数式
+                nameEn: Algebraic Expressions
+                hasContent: true
+                topics:
+                  - 用字母表示数
+                  - 代数式的概念
+                  - 列代数式
+                  - 代数式的值
+                  - 从文字语言到代数语言的转化
+              - id: polynomials
+                number: 4
+                name: 整式的加减
+                nameEn: Addition and Subtraction of Polynomials
+                hasContent: true
+                topics:
+                  - 单项式、多项式、整式的概念
+                  - 项、系数、次数
+                  - 同类项的识别
+                  - 合并同类项
+                  - 整式加法与减法
+                  - 用整式表示数量关系
+              - id: linear-equations
+                number: 5
+                name: 一元一次方程
+                nameEn: Linear Equations in One Variable
+                hasContent: true
+                topics:
+                  - 方程的概念
+                  - 等式的性质
+                  - 一元一次方程的概念
+                  - 解一元一次方程的基本步骤
+                  - 去分母、去括号、移项、合并同类项
+                  - 检验方程的解
+                  - 用一元一次方程解决实际问题
+              - id: geometric-figures
+                number: 6
+                name: 几何图形初步
+                nameEn: Introduction to Geometric Figures
+                hasContent: true
+                topics:
+                  - 立体图形与平面图形
+                  - 点、线、面、体的初步认识
+                  - 直线、射线、线段的概念与表示
+                  - 线段的比较与运算
+                  - 角的概念与表示
+                  - 角的比较与运算
+                  - 余角、补角
+                  - 基本作图与几何语言表达
+                  - 综合与实践：设计学校田径运动会比赛场地
+          - id: semester2
+            name: 下学期
+            nameEn: Semester 2
+            version: 七年级数学下册（2025春版）
+            chapters:
+              - id: intersecting-parallel-lines
+                number: 7
+                name: 相交线与平行线
+                nameEn: Intersecting and Parallel Lines
+                hasContent: false
+                topics:
+                  - 相交线
+                  - 平行线及其判定
+                  - 平行线的性质
+              - id: real-numbers
+                number: 8
+                name: 实数
+                nameEn: Real Numbers
+                hasContent: false
+                topics:
+                  - 平方根
+                  - 立方根
+                  - 实数的概念
+              - id: coordinate-system
+                number: 9
+                name: 平面直角坐标系
+                nameEn: Cartesian Coordinate System
+                hasContent: false
+                topics:
+                  - 有序数对
+                  - 平面直角坐标系
+              - id: systems-of-equations
+                number: 10
+                name: 二元一次方程组
+                nameEn: Systems of Linear Equations in Two Variables
+                hasContent: false
+                topics:
+                  - 二元一次方程组的概念
+                  - 消元法解方程组
+                  - 实际问题与方程组
+              - id: inequalities
+                number: 11
+                name: 不等式与不等式组
+                nameEn: Inequalities and Systems of Inequalities
+                hasContent: false
+                topics:
+                  - 不等式及其解集
+                  - 一元一次不等式
+                  - 一元一次不等式组
+              - id: data-collection
+                number: 12
+                name: 数据的收集、整理与描述
+                nameEn: Data Collection, Organization, and Representation
+                hasContent: false
+                topics:
+                  - 统计调查
+                  - 直方图
+
+  - id: physics
+    name: 物理
+    nameEn: Physics
+    icon: "⚡"
+    grades: []
+
+  - id: chemistry
+    name: 化学
+    nameEn: Chemistry
+    icon: "🧪"
+    grades: []
+
+  - id: biology
+    name: 生物
+    nameEn: Biology
+    icon: "🌱"
+    grades: []

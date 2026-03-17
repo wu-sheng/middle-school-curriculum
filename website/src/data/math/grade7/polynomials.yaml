@@ -1,0 +1,875 @@
+title: 整式的加减
+titleEn: Addition and Subtraction of Polynomials
+chapter: 4
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 50-70分钟学习 + 30分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 理解<<单项式/monomial>>、<<多项式/polynomial>>、<<整式/integral expression>>的概念
+  - 能正确识别<<单项式/monomial>>的<<系数/coefficient>>和<<次数/degree>>
+  - 能判断两个<<项/term>>是否为<<同类项/like terms>>
+  - 掌握<<合并同类项/combining like terms>>的方法
+  - 能进行简单的<<整式/integral expression>>加法与减法运算
+  - 能用<<整式/integral expression>>表示实际问题中的数量关系
+objectivesEn:
+  - Understand the concepts of <<单项式/monomial>>, <<多项式/polynomial>>, and <<整式/integral expression>>
+  - Be able to correctly identify the <<系数/coefficient>> and <<次数/degree>> of a <<单项式/monomial>>
+  - Be able to determine whether two <<项/term>>s are <<同类项/like terms>>
+  - Master the method of <<合并同类项/combining like terms>>
+  - Be able to perform simple addition and subtraction of <<整式/integral expression>>s
+  - Be able to use <<整式/integral expression>>s to represent quantitative relationships in real-life problems
+
+prerequisites:
+  title: 从小学知识出发——从数到"含字母的式子"
+  titleEn: "Starting from elementary school knowledge — from numbers to \"expressions with letters\""
+  intro: |
+    小学里，我们已经见过用字母表示数：
+  introEn: |
+    In elementary school, we have already seen letters used to represent numbers:
+  knownNumbers:
+    - 长方形面积 $= a \times b$
+    - 速度公式 $v = \frac{s}{t}$
+    - 用 $n$ 表示一个未知数
+  knownNumbersEn:
+    - "Area of a rectangle $= a \\times b$"
+    - "Speed formula $v = \\frac{s}{t}$"
+    - "Using $n$ to represent an unknown number"
+  canSolve:
+    - 用字母代替具体数字
+    - 写出简单的含字母的式子，如 $2a$、$3b + 1$
+    - 代入具体数值计算结果
+  canSolveEn:
+    - Use letters to replace specific numbers
+    - "Write simple expressions with letters, such as $2a$, $3b + 1$"
+    - Substitute specific values to calculate results
+  cannotSolve:
+    - "$3x^2 + 2x - 1$ 这样的式子叫什么？"
+    - "怎么化简 $5a + 3a$？"
+    - "$2x^2 + 3x - x^2 + x$ 结果是多少？"
+    - "$(3a + 2b) - (a - b)$ 怎么去括号？"
+  cannotSolveEn:
+    - "What is an expression like $3x^2 + 2x - 1$ called?"
+    - "How do we simplify $5a + 3a$?"
+    - "What is the result of $2x^2 + 3x - x^2 + x$?"
+    - "How do we remove parentheses in $(3a + 2b) - (a - b)$?"
+  conclusion: |
+    为了更准确地描述数量关系并进行运算，数学里引入了**<<整式/integral expression>>**的概念，并学习如何对它们进行加减运算。
+  conclusionEn: |
+    To describe quantitative relationships more precisely and perform operations, mathematics introduced the concept of **<<整式/integral expression>>s** and teaches us how to add and subtract them.
+
+concepts:
+  - id: monomial
+    title: <<单项式/monomial>>
+    titleEn: <<单项式/monomial>>
+    content: |
+      由数与字母的**乘积**组成的式子叫做**<<单项式/monomial>>**。单独的一个数或一个字母也是<<单项式/monomial>>。
+    contentEn: |
+      An expression consisting of the **product** of numbers and letters is called a **<<单项式/monomial>>**. A single number or a single letter is also a <<单项式/monomial>>.
+    examples:
+      - "$3x$ 是<<单项式/monomial>>（数 $3$ 与字母 $x$ 的乘积）"
+      - "$-2a^2b$ 是<<单项式/monomial>>（数 $-2$ 与 $a^2$ 和 $b$ 的乘积）"
+      - "$5$ 是<<单项式/monomial>>（单独一个数）"
+      - "$y$ 是<<单项式/monomial>>（单独一个字母）"
+    examplesEn:
+      - "$3x$ is a <<单项式/monomial>> (the product of the number $3$ and the letter $x$)"
+      - "$-2a^2b$ is a <<单项式/monomial>> (the product of $-2$, $a^2$, and $b$)"
+      - "$5$ is a <<单项式/monomial>> (a single number)"
+      - "$y$ is a <<单项式/monomial>> (a single letter)"
+    notes:
+      - "<<单项式/monomial>>中不含加号或减号（分隔不同<<项/term>>的加减号）"
+      - "像 $\\frac{x}{3}$ 可以看作 $\\frac{1}{3}x$，也是<<单项式/monomial>>"
+      - "像 $\\frac{3}{x}$ 不是<<单项式/monomial>>，因为字母在分母上"
+    notesEn:
+      - "A <<单项式/monomial>> does not contain addition or subtraction signs (that separate different <<项/term>>s)"
+      - "$\\frac{x}{3}$ can be viewed as $\\frac{1}{3}x$, which is also a <<单项式/monomial>>"
+      - "$\\frac{3}{x}$ is not a <<单项式/monomial>> because the letter is in the denominator"
+
+  - id: coefficient-and-degree
+    title: <<单项式/monomial>>的<<系数/coefficient>>与<<次数/degree>>
+    titleEn: "<<系数/coefficient>> and <<次数/degree>> of a <<单项式/monomial>>"
+    content: |
+      - <<单项式/monomial>>中的**数字因数**叫做这个<<单项式/monomial>>的**<<系数/coefficient>>**
+      - <<单项式/monomial>>中**所有字母的指数之和**叫做这个<<单项式/monomial>>的**<<次数/degree>>**
+    contentEn: |
+      - The **numerical factor** in a <<单项式/monomial>> is called the **<<系数/coefficient>>** of that <<单项式/monomial>>
+      - The **sum of the exponents of all letters** in a <<单项式/monomial>> is called the **<<次数/degree>>** of that <<单项式/monomial>>
+    classification:
+      - name: "$3x^2$"
+        nameEn: "$3x^2$"
+        examples: "<<系数/coefficient>>为 $3$，<<次数/degree>>为 $2$"
+      - name: "$-2a^2b$"
+        nameEn: "$-2a^2b$"
+        examples: "<<系数/coefficient>>为 $-2$，<<次数/degree>>为 $2+1=3$"
+      - name: "$y$"
+        nameEn: "$y$"
+        examples: "<<系数/coefficient>>为 $1$，<<次数/degree>>为 $1$"
+      - name: "$-x^3$"
+        nameEn: "$-x^3$"
+        examples: "<<系数/coefficient>>为 $-1$，<<次数/degree>>为 $3$"
+      - name: "$5$"
+        nameEn: "$5$"
+        examples: "<<系数/coefficient>>为 $5$，<<次数/degree>>为 $0$"
+    summary: |
+      特别注意：当<<系数/coefficient>>是 $1$ 或 $-1$ 时，"$1$"通常省略不写，如 $x$ 的<<系数/coefficient>>是 $1$，$-ab$ 的<<系数/coefficient>>是 $-1$。
+    summaryEn: |
+      Special note: when the <<系数/coefficient>> is $1$ or $-1$, the "$1$" is usually omitted. For example, the <<系数/coefficient>> of $x$ is $1$, and the <<系数/coefficient>> of $-ab$ is $-1$.
+
+  - id: polynomial
+    title: <<多项式/polynomial>>
+    titleEn: <<多项式/polynomial>>
+    content: |
+      几个<<单项式/monomial>>的**和**叫做**<<多项式/polynomial>>**。
+
+      - <<多项式/polynomial>>中每个<<单项式/monomial>>叫做<<多项式/polynomial>>的一个**<<项/term>>**
+      - 不含字母的<<项/term>>叫做**<<常数项/constant term>>**
+      - <<多项式/polynomial>>中<<次数/degree>>最高的<<项/term>>的<<次数/degree>>，就是这个<<多项式/polynomial>>的**<<次数/degree>>**
+    contentEn: |
+      The **sum** of several <<单项式/monomial>>s is called a **<<多项式/polynomial>>**.
+
+      - Each <<单项式/monomial>> in a <<多项式/polynomial>> is called a **<<项/term>>** of the <<多项式/polynomial>>
+      - A <<项/term>> without letters is called a **<<常数项/constant term>>**
+      - The <<次数/degree>> of the <<项/term>> with the highest <<次数/degree>> in a <<多项式/polynomial>> is the **<<次数/degree>>** of the <<多项式/polynomial>>
+    examples:
+      - "$3x^2 + 2x - 1$ 是二次三项式：<<项/term>>为 $3x^2$、$2x$、$-1$；<<常数项/constant term>>为 $-1$；<<次数/degree>>为 $2$"
+      - "$a + b$ 是一次二项式：<<项/term>>为 $a$、$b$；<<次数/degree>>为 $1$"
+      - "$x^3 - 4x + 7$ 是三次三项式：<<项/term>>为 $x^3$、$-4x$、$7$；<<常数项/constant term>>为 $7$；<<次数/degree>>为 $3$"
+    examplesEn:
+      - "$3x^2 + 2x - 1$ is a quadratic trinomial: <<项/term>>s are $3x^2$, $2x$, $-1$; <<常数项/constant term>> is $-1$; <<次数/degree>> is $2$"
+      - "$a + b$ is a linear binomial: <<项/term>>s are $a$, $b$; <<次数/degree>> is $1$"
+      - "$x^3 - 4x + 7$ is a cubic trinomial: <<项/term>>s are $x^3$, $-4x$, $7$; <<常数项/constant term>> is $7$; <<次数/degree>> is $3$"
+    notes:
+      - "注意：$2x - 1$ 可以看作 $2x + (-1)$，所以 $-1$ 也是一个<<项/term>>"
+      - "<<多项式/polynomial>>的每一个<<项/term>>都包含它前面的符号"
+    notesEn:
+      - "Note: $2x - 1$ can be viewed as $2x + (-1)$, so $-1$ is also a <<项/term>>"
+      - "Each <<项/term>> in a <<多项式/polynomial>> includes the sign in front of it"
+
+  - id: integral-expression
+    title: <<整式/integral expression>>
+    titleEn: <<整式/integral expression>>
+    content: |
+      **<<单项式/monomial>>**和**<<多项式/polynomial>>**统称为**<<整式/integral expression>>**。
+    contentEn: |
+      **<<单项式/monomial>>s** and **<<多项式/polynomial>>s** are collectively called **<<整式/integral expression>>s**.
+    examples:
+      - "<<单项式/monomial>>：$3x$、$-2a^2b$、$5$"
+      - "<<多项式/polynomial>>：$x + 1$、$3a^2 - 2a + 5$"
+      - "以上都是<<整式/integral expression>>"
+    examplesEn:
+      - "<<单项式/monomial>>s: $3x$, $-2a^2b$, $5$"
+      - "<<多项式/polynomial>>s: $x + 1$, $3a^2 - 2a + 5$"
+      - "All of the above are <<整式/integral expression>>s"
+    notes:
+      - "含有除以字母运算的式子（如 $\\frac{3}{x}$）不是<<整式/integral expression>>"
+    notesEn:
+      - "Expressions involving division by a letter (such as $\\frac{3}{x}$) are not <<整式/integral expression>>s"
+
+  - id: like-terms
+    title: <<同类项/like terms>>
+    titleEn: <<同类项/like terms>>
+    content: |
+      所含**字母相同**，并且**相同字母的指数也分别相同**的<<项/term>>叫做**<<同类项/like terms>>**。
+
+      判断<<同类项/like terms>>的两个条件：
+      1. 字母相同
+      2. 相同字母的指数分别相同
+    contentEn: |
+      <<项/term>>s that contain the **same letters** with the **same exponents for each corresponding letter** are called **<<同类项/like terms>>**.
+
+      Two conditions for identifying <<同类项/like terms>>:
+      1. The letters are the same
+      2. The exponents of corresponding letters are the same
+    examples:
+      - "$3x^2$ 和 $-5x^2$ 是<<同类项/like terms>>（都含 $x^2$）"
+      - "$2ab$ 和 $-ab$ 是<<同类项/like terms>>（都含 $ab$）"
+      - "$4x^2y$ 和 $-x^2y$ 是<<同类项/like terms>>（都含 $x^2y$）"
+      - "$3x$ 和 $3x^2$ **不是**<<同类项/like terms>>（$x$ 的指数不同）"
+      - "$2ab$ 和 $2ac$ **不是**<<同类项/like terms>>（字母不完全相同）"
+      - 所有的<<常数项/constant term>>都是<<同类项/like terms>>
+    examplesEn:
+      - "$3x^2$ and $-5x^2$ are <<同类项/like terms>> (both contain $x^2$)"
+      - "$2ab$ and $-ab$ are <<同类项/like terms>> (both contain $ab$)"
+      - "$4x^2y$ and $-x^2y$ are <<同类项/like terms>> (both contain $x^2y$)"
+      - "$3x$ and $3x^2$ are **not** <<同类项/like terms>> (the exponent of $x$ differs)"
+      - "$2ab$ and $2ac$ are **not** <<同类项/like terms>> (the letters are not exactly the same)"
+      - "All <<常数项/constant term>>s are <<同类项/like terms>>"
+    notes:
+      - "<<同类项/like terms>>与<<系数/coefficient>>无关，只看字母和指数"
+      - "字母的顺序不影响判断：$3ab$ 和 $5ba$ 是<<同类项/like terms>>"
+    notesEn:
+      - "<<同类项/like terms>> have nothing to do with the <<系数/coefficient>> — only the letters and exponents matter"
+      - "The order of letters does not matter: $3ab$ and $5ba$ are <<同类项/like terms>>"
+
+  - id: combining-like-terms
+    title: <<合并同类项/combining like terms>>
+    titleEn: <<合并同类项/combining like terms>>
+    content: |
+      把<<同类项/like terms>>合并成一个<<项/term>>，叫做**<<合并同类项/combining like terms>>**。
+
+      法则：<<同类项/like terms>>的<<系数/coefficient>>相加，字母和字母的指数不变。
+    contentEn: |
+      Merging <<同类项/like terms>> into a single <<项/term>> is called **<<合并同类项/combining like terms>>**.
+
+      Rule: Add the <<系数/coefficient>>s of the <<同类项/like terms>>; the letters and their exponents remain unchanged.
+    examples:
+      - "$3x + 5x = (3+5)x = 8x$"
+      - "$4a^2 - a^2 = (4-1)a^2 = 3a^2$"
+      - "$2xy + (-3xy) = (2+(-3))xy = -xy$"
+      - "$7 + (-3) = 4$（<<常数项/constant term>>合并）"
+    examplesEn:
+      - "$3x + 5x = (3+5)x = 8x$"
+      - "$4a^2 - a^2 = (4-1)a^2 = 3a^2$"
+      - "$2xy + (-3xy) = (2+(-3))xy = -xy$"
+      - "$7 + (-3) = 4$ (combining <<常数项/constant term>>s)"
+    notes:
+      - "不是<<同类项/like terms>>的<<项/term>>不能合并"
+      - "合并后字母部分保持不变，不要改变字母的指数"
+    notesEn:
+      - "<<项/term>>s that are not <<同类项/like terms>> cannot be combined"
+      - "After combining, the letter part stays the same — do not change the exponents"
+
+  - id: addition-subtraction
+    title: <<整式/integral expression>>的加法与减法
+    titleEn: Addition and subtraction of <<整式/integral expression>>s
+    content: |
+      <<整式/integral expression>>的加减运算步骤：
+      1. 如果有括号，先**去括号**
+      2. 再**<<合并同类项/combining like terms>>**
+
+      去括号法则：
+      - 括号前是"$+$"号：去括号后，括号内各<<项/term>>的符号**不变**
+      - 括号前是"$-$"号：去括号后，括号内各<<项/term>>的符号**全部取反**
+    contentEn: |
+      Steps for addition and subtraction of <<整式/integral expression>>s:
+      1. If there are parentheses, first **remove the parentheses**
+      2. Then **<<合并同类项/combining like terms>>**
+
+      Rules for removing parentheses:
+      - If the sign before the parentheses is "$+$": after removing, the signs of all <<项/term>>s inside **remain unchanged**
+      - If the sign before the parentheses is "$-$": after removing, the signs of all <<项/term>>s inside **are all reversed**
+    examples:
+      - "$(3a + 2b) + (a - b) = 3a + 2b + a - b = 4a + b$"
+      - "$(3a + 2b) - (a - b) = 3a + 2b - a + b = 2a + 3b$"
+      - "$(2x^2 + 3x) - (x^2 - x + 1) = 2x^2 + 3x - x^2 + x - 1 = x^2 + 4x - 1$"
+    examplesEn:
+      - "$(3a + 2b) + (a - b) = 3a + 2b + a - b = 4a + b$"
+      - "$(3a + 2b) - (a - b) = 3a + 2b - a + b = 2a + 3b$"
+      - "$(2x^2 + 3x) - (x^2 - x + 1) = 2x^2 + 3x - x^2 + x - 1 = x^2 + 4x - 1$"
+    notes:
+      - "去括号时，最容易出错的是**括号前为减号时忘记变号**"
+      - "减号要变每一个<<项/term>>的符号，不能只变第一个"
+    notesEn:
+      - "The most common mistake when removing parentheses is **forgetting to change signs when the sign before the parentheses is a minus**"
+      - "The minus sign changes the sign of every <<项/term>> inside — not just the first one"
+
+  - id: representing-quantities
+    title: 用<<整式/integral expression>>表示数量关系
+    titleEn: Using <<整式/integral expression>>s to represent quantitative relationships
+    content: |
+      在实际问题中，常常需要用<<整式/integral expression>>来表示数量关系，再通过加减运算求解。
+    contentEn: |
+      In practical problems, <<整式/integral expression>>s are often used to represent quantitative relationships, and then solved through addition and subtraction operations.
+    examples:
+      - "一本书 $a$ 元，买 $3$ 本花了 $3a$ 元"
+      - "长方形的长为 $(2x+1)$ 厘米，宽为 $(x-1)$ 厘米，周长为 $2(2x+1) + 2(x-1) = 6x$ 厘米"
+      - "哥哥有 $(3n+5)$ 元，弟弟有 $(2n-1)$ 元，两人一共有 $(3n+5)+(2n-1) = 5n+4$ 元"
+    examplesEn:
+      - "A book costs $a$ yuan; buying $3$ books costs $3a$ yuan"
+      - "A rectangle has length $(2x+1)$ cm and width $(x-1)$ cm; its perimeter is $2(2x+1) + 2(x-1) = 6x$ cm"
+      - "The older brother has $(3n+5)$ yuan and the younger brother has $(2n-1)$ yuan; together they have $(3n+5)+(2n-1) = 5n+4$ yuan"
+
+realLife:
+  - category: 购物
+    categoryEn: Shopping
+    positive: "一件上衣 $a$ 元，一条裤子 $b$ 元，总价为 $(a + b)$ 元"
+    positiveEn: "A shirt costs $a$ yuan and pants cost $b$ yuan; the total is $(a + b)$ yuan"
+    negative: "用 $100$ 元买了 $x$ 元的文具，找零 $(100 - x)$ 元"
+    negativeEn: "Paying $100$ yuan for stationery costing $x$ yuan; the change is $(100 - x)$ yuan"
+  - category: 行程问题
+    categoryEn: Distance problems
+    positive: "速度为 $v$，行驶 $t$ 小时，路程为 $vt$"
+    positiveEn: "At speed $v$, traveling for $t$ hours, the distance is $vt$"
+    negative: "全程 $s$ 千米，已走 $vt$ 千米，剩余 $(s - vt)$ 千米"
+    negativeEn: "The total distance is $s$ km; after traveling $vt$ km, the remaining distance is $(s - vt)$ km"
+  - category: 面积计算
+    categoryEn: Area calculations
+    positive: "正方形边长为 $a$，面积为 $a^2$"
+    positiveEn: "A square with side length $a$ has area $a^2$"
+    negative: "一块长 $a$、宽 $b$ 的木板，挖去一个边长 $c$ 的正方形洞，剩余面积为 $(ab - c^2)$"
+    negativeEn: "A board of length $a$ and width $b$ with a square hole of side $c$ cut out has remaining area $(ab - c^2)$"
+  - category: 年龄问题
+    categoryEn: Age problems
+    positive: "小明今年 $n$ 岁，$3$ 年后是 $(n+3)$ 岁"
+    positiveEn: "Xiao Ming is $n$ years old now; in $3$ years he will be $(n+3)$ years old"
+    negative: "爸爸今年 $(3n+2)$ 岁，小明今年 $n$ 岁，爸爸比小明大 $(3n+2) - n = (2n+2)$ 岁"
+    negativeEn: "Dad is $(3n+2)$ years old and Xiao Ming is $n$ years old; Dad is $(3n+2) - n = (2n+2)$ years older"
+
+examples:
+  - type: 1
+    title: 识别<<单项式/monomial>>和<<多项式/polynomial>>
+    titleEn: Identifying <<单项式/monomial>>s and <<多项式/polynomial>>s
+    question: |
+      判断下列各式哪些是<<单项式/monomial>>，哪些是<<多项式/polynomial>>：$5x$、$3a - 2b$、$-7$、$x^2 + x + 1$、$\frac{2}{3}m^2n$。
+    questionEn: |
+      Determine which of the following are <<单项式/monomial>>s and which are <<多项式/polynomial>>s: $5x$, $3a - 2b$, $-7$, $x^2 + x + 1$, $\frac{2}{3}m^2n$.
+    steps:
+      - "$5x$ 是数与字母的乘积，是<<单项式/monomial>>"
+      - "$3a - 2b$ 是两个<<单项式/monomial>>的和，是<<多项式/polynomial>>（二项式）"
+      - "$-7$ 是单独的一个数，是<<单项式/monomial>>"
+      - "$x^2 + x + 1$ 是三个<<单项式/monomial>>的和，是<<多项式/polynomial>>（三项式）"
+      - "$\\frac{2}{3}m^2n$ 是数与字母的乘积，是<<单项式/monomial>>"
+    stepsEn:
+      - "$5x$ is the product of a number and a letter — it is a <<单项式/monomial>>"
+      - "$3a - 2b$ is the sum of two <<单项式/monomial>>s — it is a <<多项式/polynomial>> (binomial)"
+      - "$-7$ is a single number — it is a <<单项式/monomial>>"
+      - "$x^2 + x + 1$ is the sum of three <<单项式/monomial>>s — it is a <<多项式/polynomial>> (trinomial)"
+      - "$\\frac{2}{3}m^2n$ is the product of a number and letters — it is a <<单项式/monomial>>"
+    answer: "<<单项式/monomial>>：$5x$、$-7$、$\\frac{2}{3}m^2n$；<<多项式/polynomial>>：$3a-2b$、$x^2+x+1$。"
+    answerEn: "<<单项式/monomial>>s: $5x$, $-7$, $\\frac{2}{3}m^2n$; <<多项式/polynomial>>s: $3a-2b$, $x^2+x+1$."
+
+  - type: 2
+    title: 求<<单项式/monomial>>的<<系数/coefficient>>和<<次数/degree>>
+    titleEn: "Finding the <<系数/coefficient>> and <<次数/degree>> of a <<单项式/monomial>>"
+    question: |
+      指出<<单项式/monomial>> $-3x^2y$ 的<<系数/coefficient>>和<<次数/degree>>。
+    questionEn: |
+      State the <<系数/coefficient>> and <<次数/degree>> of the <<单项式/monomial>> $-3x^2y$.
+    steps:
+      - "<<系数/coefficient>>是数字因数部分：$-3$"
+      - "<<次数/degree>>是所有字母指数之和：$x$ 的指数为 $2$，$y$ 的指数为 $1$，所以<<次数/degree>>为 $2 + 1 = 3$"
+    stepsEn:
+      - "The <<系数/coefficient>> is the numerical factor: $-3$"
+      - "The <<次数/degree>> is the sum of all letter exponents: the exponent of $x$ is $2$, the exponent of $y$ is $1$, so the <<次数/degree>> is $2 + 1 = 3$"
+    answer: "<<系数/coefficient>>为 $-3$，<<次数/degree>>为 $3$。"
+    answerEn: "The <<系数/coefficient>> is $-3$ and the <<次数/degree>> is $3$."
+
+  - type: 3
+    title: 判断<<同类项/like terms>>
+    titleEn: Identifying <<同类项/like terms>>
+    question: |
+      判断下列哪些是<<同类项/like terms>>：$3a^2b$、$-a^2b$、$2ab^2$、$5a^2b$。
+    questionEn: |
+      Determine which of the following are <<同类项/like terms>>: $3a^2b$, $-a^2b$, $2ab^2$, $5a^2b$.
+    steps:
+      - "$3a^2b$、$-a^2b$、$5a^2b$ 都含有 $a^2b$（$a$ 的指数为 $2$，$b$ 的指数为 $1$），它们是<<同类项/like terms>>"
+      - "$2ab^2$ 含有 $ab^2$（$a$ 的指数为 $1$，$b$ 的指数为 $2$），与上面三个不是<<同类项/like terms>>"
+    stepsEn:
+      - "$3a^2b$, $-a^2b$, and $5a^2b$ all contain $a^2b$ (exponent of $a$ is $2$, exponent of $b$ is $1$) — they are <<同类项/like terms>>"
+      - "$2ab^2$ contains $ab^2$ (exponent of $a$ is $1$, exponent of $b$ is $2$) — it is not a <<同类项/like terms>> with the other three"
+    answer: "$3a^2b$、$-a^2b$、$5a^2b$ 互为<<同类项/like terms>>。$2ab^2$ 与它们不是<<同类项/like terms>>。"
+    answerEn: "$3a^2b$, $-a^2b$, and $5a^2b$ are <<同类项/like terms>> with each other. $2ab^2$ is not a <<同类项/like terms>> with them."
+
+  - type: 4
+    title: <<合并同类项/combining like terms>>
+    titleEn: <<合并同类项/combining like terms>>
+    question: |
+      化简：$5x^2 + 3x - 2x^2 + x - 4$。
+    questionEn: |
+      Simplify: $5x^2 + 3x - 2x^2 + x - 4$.
+    steps:
+      - "找<<同类项/like terms>>：$5x^2$ 和 $-2x^2$；$3x$ 和 $x$；$-4$ 是<<常数项/constant term>>"
+      - "合并 $x^2$ 项：$5x^2 + (-2x^2) = (5-2)x^2 = 3x^2$"
+      - "合并 $x$ 项：$3x + x = (3+1)x = 4x$"
+      - "<<常数项/constant term>>：$-4$"
+      - "结果：$3x^2 + 4x - 4$"
+    stepsEn:
+      - "Find <<同类项/like terms>>: $5x^2$ and $-2x^2$; $3x$ and $x$; $-4$ is the <<常数项/constant term>>"
+      - "Combine $x^2$ <<项/term>>s: $5x^2 + (-2x^2) = (5-2)x^2 = 3x^2$"
+      - "Combine $x$ <<项/term>>s: $3x + x = (3+1)x = 4x$"
+      - "<<常数项/constant term>>: $-4$"
+      - "Result: $3x^2 + 4x - 4$"
+    answer: "$3x^2 + 4x - 4$"
+    answerEn: "$3x^2 + 4x - 4$"
+
+  - type: 5
+    title: <<整式/integral expression>>的减法（去括号）
+    titleEn: Subtraction of <<整式/integral expression>>s (removing parentheses)
+    question: |
+      计算：$(4a + 3b) - (2a - b)$。
+    questionEn: |
+      Calculate: $(4a + 3b) - (2a - b)$.
+    steps:
+      - "去括号：括号前是减号，括号内每个<<项/term>>的符号取反"
+      - "$= 4a + 3b - 2a + b$"
+      - "<<合并同类项/combining like terms>>：$(4a - 2a) + (3b + b) = 2a + 4b$"
+    stepsEn:
+      - "Remove parentheses: the sign before the parentheses is minus, so reverse the sign of every <<项/term>> inside"
+      - "$= 4a + 3b - 2a + b$"
+      - "<<合并同类项/combining like terms>>: $(4a - 2a) + (3b + b) = 2a + 4b$"
+    answer: "$2a + 4b$"
+    answerEn: "$2a + 4b$"
+
+  - type: 6
+    title: <<整式/integral expression>>加减的综合运算
+    titleEn: Comprehensive addition and subtraction of <<整式/integral expression>>s
+    question: |
+      化简：$(2x^2 - 3x + 1) + (x^2 + 5x - 4) - (x^2 - 2x + 3)$。
+    questionEn: |
+      Simplify: $(2x^2 - 3x + 1) + (x^2 + 5x - 4) - (x^2 - 2x + 3)$.
+    steps:
+      - "去括号：第一个括号前为 $+$（可省略），符号不变；第二个括号前为 $+$，符号不变；第三个括号前为 $-$，符号全部取反"
+      - "$= 2x^2 - 3x + 1 + x^2 + 5x - 4 - x^2 + 2x - 3$"
+      - "合并 $x^2$ 项：$2x^2 + x^2 - x^2 = 2x^2$"
+      - "合并 $x$ 项：$-3x + 5x + 2x = 4x$"
+      - "合并<<常数项/constant term>>：$1 - 4 - 3 = -6$"
+      - "结果：$2x^2 + 4x - 6$"
+    stepsEn:
+      - "Remove parentheses: the first parentheses have $+$ (can be omitted), signs unchanged; the second have $+$, signs unchanged; the third has $-$, all signs reversed"
+      - "$= 2x^2 - 3x + 1 + x^2 + 5x - 4 - x^2 + 2x - 3$"
+      - "Combine $x^2$ <<项/term>>s: $2x^2 + x^2 - x^2 = 2x^2$"
+      - "Combine $x$ <<项/term>>s: $-3x + 5x + 2x = 4x$"
+      - "Combine <<常数项/constant term>>s: $1 - 4 - 3 = -6$"
+      - "Result: $2x^2 + 4x - 6$"
+    answer: "$2x^2 + 4x - 6$"
+    answerEn: "$2x^2 + 4x - 6$"
+
+  - type: 7
+    title: 用<<整式/integral expression>>表示数量关系
+    titleEn: Using <<整式/integral expression>>s to represent quantitative relationships
+    question: |
+      小明买了 $3$ 支钢笔，每支 $a$ 元，又买了 $5$ 本练习本，每本 $b$ 元。请用<<整式/integral expression>>表示总花费，并在 $a = 8$、$b = 2$ 时求出总花费。
+    questionEn: |
+      Xiao Ming bought $3$ pens at $a$ yuan each and $5$ notebooks at $b$ yuan each. Express the total cost as an <<整式/integral expression>>, and find the total cost when $a = 8$ and $b = 2$.
+    steps:
+      - "钢笔花费：$3a$ 元"
+      - "练习本花费：$5b$ 元"
+      - "总花费：$(3a + 5b)$ 元"
+      - "代入 $a = 8$，$b = 2$：$3 \\times 8 + 5 \\times 2 = 24 + 10 = 34$ 元"
+    stepsEn:
+      - "Pen cost: $3a$ yuan"
+      - "Notebook cost: $5b$ yuan"
+      - "Total cost: $(3a + 5b)$ yuan"
+      - "Substituting $a = 8$, $b = 2$: $3 \\times 8 + 5 \\times 2 = 24 + 10 = 34$ yuan"
+    answer: "总花费为 $(3a + 5b)$ 元。当 $a=8$、$b=2$ 时，总花费为 $34$ 元。"
+    answerEn: "The total cost is $(3a + 5b)$ yuan. When $a=8$ and $b=2$, the total cost is $34$ yuan."
+
+commonMistakes:
+  - "把<<系数/coefficient>>为 $1$ 或 $-1$ 的情况搞错：$x$ 的<<系数/coefficient>>是 $1$，不是 $0$；$-y$ 的<<系数/coefficient>>是 $-1$，不是 $1$"
+  - "混淆<<单项式/monomial>>的<<次数/degree>>和<<系数/coefficient>>：$-3x^2y$ 的<<次数/degree>>是 $3$（指数之和），不是 $2$"
+  - "把不是<<同类项/like terms>>的<<项/term>>合并：$3x^2$ 和 $3x$ 不是<<同类项/like terms>>，不能合并成 $6x^2$ 或 $6x$"
+  - "去括号时只变了第一个<<项/term>>的符号：$(a - b)$ 前面加减号，应变为 $-a + b$，不是 $-a - b$"
+  - "<<合并同类项/combining like terms>>时改变了字母部分：$3x^2 + 5x^2 = 8x^2$，不是 $8x^4$"
+  - "忘记<<常数项/constant term>>也要参与运算"
+commonMistakesEn:
+  - "Getting confused when the <<系数/coefficient>> is $1$ or $-1$: the <<系数/coefficient>> of $x$ is $1$, not $0$; the <<系数/coefficient>> of $-y$ is $-1$, not $1$"
+  - "Confusing the <<次数/degree>> and <<系数/coefficient>> of a <<单项式/monomial>>: the <<次数/degree>> of $-3x^2y$ is $3$ (sum of exponents), not $2$"
+  - "Combining <<项/term>>s that are not <<同类项/like terms>>: $3x^2$ and $3x$ are not <<同类项/like terms>> and cannot be combined into $6x^2$ or $6x$"
+  - "Only changing the sign of the first <<项/term>> when removing parentheses: with a minus sign before $(a - b)$, it becomes $-a + b$, not $-a - b$"
+  - "Changing the letter part when <<合并同类项/combining like terms>>: $3x^2 + 5x^2 = 8x^2$, not $8x^4$"
+  - "Forgetting that <<常数项/constant term>>s also need to be included in the calculation"
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "9-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<单项式/monomial>> $-5x^3$ 的<<系数/coefficient>>是______，<<次数/degree>>是______。
+      questionEn: |
+        The <<系数/coefficient>> of the <<单项式/monomial>> $-5x^3$ is ______, and the <<次数/degree>> is ______.
+      correctValue: "-5, 3"
+      answer: "<<系数/coefficient>>为 $-5$，<<次数/degree>>为 $3$"
+      answerEn: "The <<系数/coefficient>> is $-5$ and the <<次数/degree>> is $3$"
+      explanation: |
+        数字因数 $-5$ 是<<系数/coefficient>>，$x$ 的指数 $3$ 就是<<次数/degree>>。
+      explanationEn: |
+        The numerical factor $-5$ is the <<系数/coefficient>>, and the exponent of $x$, which is $3$, is the <<次数/degree>>.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<多项式/polynomial>> $2x^2 - 3x + 7$ 的<<次数/degree>>是______，<<常数项/constant term>>是______。
+      questionEn: |
+        The <<次数/degree>> of the <<多项式/polynomial>> $2x^2 - 3x + 7$ is ______, and the <<常数项/constant term>> is ______.
+      correctValue: "2, 7"
+      answer: "<<次数/degree>>为 $2$，<<常数项/constant term>>为 $7$"
+      answerEn: "The <<次数/degree>> is $2$ and the <<常数项/constant term>> is $7$"
+      explanation: |
+        <<次数/degree>>最高的<<项/term>>是 $2x^2$（二次），所以<<多项式/polynomial>>的<<次数/degree>>是 $2$。不含字母的<<项/term>> $7$ 是<<常数项/constant term>>。
+      explanationEn: |
+        The <<项/term>> with the highest <<次数/degree>> is $2x^2$ (degree $2$), so the <<多项式/polynomial>> has <<次数/degree>> $2$. The <<项/term>> without letters, $7$, is the <<常数项/constant term>>.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $3a + 5a = $ ______。
+      questionEn: |
+        $3a + 5a = $ ______.
+      correctValue: "8a"
+      answer: "$8a$"
+      answerEn: "$8a$"
+      explanation: |
+        $3a$ 和 $5a$ 是<<同类项/like terms>>，<<系数/coefficient>>相加：$(3+5)a = 8a$。
+      explanationEn: |
+        $3a$ and $5a$ are <<同类项/like terms>>; add the <<系数/coefficient>>s: $(3+5)a = 8a$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        化简 $4x^2 - x^2 + 2x - 2x = $ ______。
+      questionEn: |
+        Simplify $4x^2 - x^2 + 2x - 2x = $ ______.
+      correctValue: "3x^2"
+      answer: "$3x^2$"
+      answerEn: "$3x^2$"
+      explanation: |
+        合并 $x^2$ 项：$4x^2 - x^2 = 3x^2$。合并 $x$ 项：$2x - 2x = 0$。结果为 $3x^2$。
+      explanationEn: |
+        Combine $x^2$ <<项/term>>s: $4x^2 - x^2 = 3x^2$. Combine $x$ <<项/term>>s: $2x - 2x = 0$. The result is $3x^2$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $3ab$ 和 $3a^2b$ 是<<同类项/like terms>>。
+      questionEn: |
+        $3ab$ and $3a^2b$ are <<同类项/like terms>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        虽然都含有字母 $a$ 和 $b$，但 $a$ 的指数不同（$1$ 和 $2$），所以不是<<同类项/like terms>>。
+      explanationEn: |
+        Although both contain the letters $a$ and $b$, the exponent of $a$ differs ($1$ vs. $2$), so they are not <<同类项/like terms>>.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        <<单项式/monomial>> $-y$ 的<<系数/coefficient>>是 $-1$。
+      questionEn: |
+        The <<系数/coefficient>> of the <<单项式/monomial>> $-y$ is $-1$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $-y = -1 \times y$，所以<<系数/coefficient>>是 $-1$。
+      explanationEn: |
+        $-y = -1 \times y$, so the <<系数/coefficient>> is $-1$.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $\frac{5}{a}$ 是<<单项式/monomial>>。
+      questionEn: |
+        $\frac{5}{a}$ is a <<单项式/monomial>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        字母 $a$ 在分母上，不符合<<单项式/monomial>>的定义。<<单项式/monomial>>要求字母只能在分子或整体中出现。
+      explanationEn: |
+        The letter $a$ is in the denominator, which does not meet the definition of a <<单项式/monomial>>. A <<单项式/monomial>> requires that letters only appear in the numerator or as a whole.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $(3x + 2) - (x - 1) = 2x + 1$。
+      questionEn: |
+        $(3x + 2) - (x - 1) = 2x + 1$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        去括号：$3x + 2 - x + 1 = 2x + 3$，不是 $2x + 1$。减号要使括号内每一个<<项/term>>的符号都取反。
+      explanationEn: |
+        Removing parentheses: $3x + 2 - x + 1 = 2x + 3$, not $2x + 1$. The minus sign reverses the sign of every <<项/term>> inside the parentheses.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列各组中，是<<同类项/like terms>>的一组是（　）
+      questionEn: |
+        Among the following groups, the one that consists of <<同类项/like terms>> is ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "$2a$ 和 $2b$"
+            - "$3x^2y$ 和 $-x^2y$"
+            - "$5ab$ 和 $5a^2b$"
+            - "$m$ 和 $m^2$"
+          correctValue: "$3x^2y$ 和 $-x^2y$"
+      answer: "$3x^2y$ 和 $-x^2y$"
+      answerEn: "$3x^2y$ and $-x^2y$"
+      explanation: |
+        - A: 字母不同（$a$ 和 $b$），不是<<同类项/like terms>>
+        - B: 都含 $x^2y$，字母相同、指数分别相同，是<<同类项/like terms>> ✓
+        - C: $a$ 的指数不同（$1$ 和 $2$），不是<<同类项/like terms>>
+        - D: $m$ 的指数不同（$1$ 和 $2$），不是<<同类项/like terms>>
+      explanationEn: |
+        - A: Different letters ($a$ vs. $b$) — not <<同类项/like terms>>
+        - B: Both contain $x^2y$ with the same letters and exponents — they are <<同类项/like terms>> ✓
+        - C: The exponent of $a$ differs ($1$ vs. $2$) — not <<同类项/like terms>>
+        - D: The exponent of $m$ differs ($1$ vs. $2$) — not <<同类项/like terms>>
+
+    - number: 10
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: "IV. Calculation"
+      question: |
+        化简：$(5a^2 - 3a + 2) + (a^2 + 4a - 6)$。
+      questionEn: |
+        Simplify: $(5a^2 - 3a + 2) + (a^2 + 4a - 6)$.
+      answer: |
+        $= 5a^2 - 3a + 2 + a^2 + 4a - 6$
+        $= (5a^2 + a^2) + (-3a + 4a) + (2 - 6)$
+        $= 6a^2 + a - 4$
+      answerEn: |
+        $= 5a^2 - 3a + 2 + a^2 + 4a - 6$
+        $= (5a^2 + a^2) + (-3a + 4a) + (2 - 6)$
+        $= 6a^2 + a - 4$
+      explanation: |
+        加法去括号后符号不变，然后<<合并同类项/combining like terms>>即可。
+      explanationEn: |
+        When removing parentheses for addition, signs remain unchanged; then <<合并同类项/combining like terms>>.
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: "IV. Calculation"
+      question: |
+        化简：$(3x^2 + 2x - 5) - (x^2 - 4x + 3)$。
+      questionEn: |
+        Simplify: $(3x^2 + 2x - 5) - (x^2 - 4x + 3)$.
+      answer: |
+        $= 3x^2 + 2x - 5 - x^2 + 4x - 3$
+        $= (3x^2 - x^2) + (2x + 4x) + (-5 - 3)$
+        $= 2x^2 + 6x - 8$
+      answerEn: |
+        $= 3x^2 + 2x - 5 - x^2 + 4x - 3$
+        $= (3x^2 - x^2) + (2x + 4x) + (-5 - 3)$
+        $= 2x^2 + 6x - 8$
+      explanation: |
+        减法去括号时，第二个括号内每一个<<项/term>>的符号都要取反：$x^2$ 变为 $-x^2$，$-4x$ 变为 $+4x$，$+3$ 变为 $-3$。
+      explanationEn: |
+        When removing parentheses for subtraction, reverse the sign of every <<项/term>> in the second parentheses: $x^2$ becomes $-x^2$, $-4x$ becomes $+4x$, $+3$ becomes $-3$.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        一块长方形菜地，长为 $(3x + 2)$ 米，宽为 $(x + 1)$ 米。
+
+        （1）用<<整式/integral expression>>表示这块菜地的周长。
+        （2）当 $x = 4$ 时，求菜地的周长。
+      questionEn: |
+        A rectangular vegetable garden has length $(3x + 2)$ meters and width $(x + 1)$ meters.
+
+        (1) Express the perimeter of this garden as an <<整式/integral expression>>.
+        (2) When $x = 4$, find the perimeter of the garden.
+      answer: |
+        （1）周长 $= 2(3x+2) + 2(x+1) = 6x + 4 + 2x + 2 = 8x + 6$（米）
+        （2）当 $x = 4$ 时：$8 \times 4 + 6 = 32 + 6 = 38$（米）
+      answerEn: |
+        (1) Perimeter $= 2(3x+2) + 2(x+1) = 6x + 4 + 2x + 2 = 8x + 6$ (meters)
+        (2) When $x = 4$: $8 \times 4 + 6 = 32 + 6 = 38$ (meters)
+      explanation: |
+        长方形周长公式：周长 $= 2 \times$ 长 $+ 2 \times$ 宽。先列出<<整式/integral expression>>并化简，再代入具体数值计算。
+      explanationEn: |
+        Rectangle perimeter formula: perimeter $= 2 \times$ length $+ 2 \times$ width. First write the <<整式/integral expression>> and simplify, then substitute the specific value to calculate.
+
+summary:
+  - "理解了<<单项式/monomial>>和<<多项式/polynomial>>的概念，知道它们统称为<<整式/integral expression>>"
+  - "能正确识别<<单项式/monomial>>的<<系数/coefficient>>和<<次数/degree>>"
+  - "掌握了<<同类项/like terms>>的判断条件：字母相同，相同字母的指数分别相同"
+  - "学会了<<合并同类项/combining like terms>>的方法：<<系数/coefficient>>相加，字母和指数不变"
+  - "掌握了去括号法则，能正确进行<<整式/integral expression>>的加减运算"
+  - "能用<<整式/integral expression>>表示实际问题中的数量关系"
+summaryEn:
+  - "Understood the concepts of <<单项式/monomial>> and <<多项式/polynomial>>, and know they are collectively called <<整式/integral expression>>s"
+  - "Can correctly identify the <<系数/coefficient>> and <<次数/degree>> of a <<单项式/monomial>>"
+  - "Mastered the conditions for identifying <<同类项/like terms>>: same letters with the same exponents for each corresponding letter"
+  - "Learned the method of <<合并同类项/combining like terms>>: add the <<系数/coefficient>>s while keeping letters and exponents unchanged"
+  - "Mastered the rules for removing parentheses and can correctly perform addition and subtraction of <<整式/integral expression>>s"
+  - "Can use <<整式/integral expression>>s to represent quantitative relationships in practical problems"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        下列各式中，是<<单项式/monomial>>的是（　）
+      questionEn: |
+        Among the following expressions, the one that is a <<单项式/monomial>> is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x + 1$", "$\\frac{1}{x}$", "$-2x^2y$", "$x^2 + y^2$"]
+          correctValue: "$-2x^2y$"
+      answer: "$-2x^2y$"
+      answerEn: "$-2x^2y$"
+      explanation: |
+        - $x + 1$ 是<<多项式/polynomial>>，不是<<单项式/monomial>>
+        - $\frac{1}{x}$ 字母在分母上，不是<<整式/integral expression>>，更不是<<单项式/monomial>>
+        - $-2x^2y$ 是数与字母的乘积，是<<单项式/monomial>> ✓
+        - $x^2 + y^2$ 是<<多项式/polynomial>>，不是<<单项式/monomial>>
+      explanationEn: |
+        - $x + 1$ is a <<多项式/polynomial>>, not a <<单项式/monomial>>
+        - $\frac{1}{x}$ has the letter in the denominator — not an <<整式/integral expression>>, let alone a <<单项式/monomial>>
+        - $-2x^2y$ is the product of a number and letters — it is a <<单项式/monomial>> ✓
+        - $x^2 + y^2$ is a <<多项式/polynomial>>, not a <<单项式/monomial>>
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        化简 $2(a^2 - 2a) - (2a^2 - 3a + 1) = $ ______。
+      questionEn: |
+        Simplify $2(a^2 - 2a) - (2a^2 - 3a + 1) = $ ______.
+      correctValue: "-a-1"
+      answer: "$-a - 1$"
+      answerEn: "$-a - 1$"
+      explanation: |
+        $= 2a^2 - 4a - 2a^2 + 3a - 1$
+        $= (2a^2 - 2a^2) + (-4a + 3a) + (-1)$
+        $= -a - 1$
+        注意：先展开 $2(a^2 - 2a) = 2a^2 - 4a$，再去括号并<<合并同类项/combining like terms>>。
+      explanationEn: |
+        $= 2a^2 - 4a - 2a^2 + 3a - 1$
+        $= (2a^2 - 2a^2) + (-4a + 3a) + (-1)$
+        $= -a - 1$
+        Note: first expand $2(a^2 - 2a) = 2a^2 - 4a$, then remove parentheses and <<合并同类项/combining like terms>>.
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        下列运算正确的是（　）
+      questionEn: |
+        Which of the following operations is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "$3a + 2b = 5ab$"
+            - "$5x^2 - 2x^2 = 3$"
+            - "$4a^2 - a^2 = 3a^2$"
+            - "$3x + 2x = 5x^2$"
+          correctValue: "$4a^2 - a^2 = 3a^2$"
+      answer: "$4a^2 - a^2 = 3a^2$"
+      answerEn: "$4a^2 - a^2 = 3a^2$"
+      explanation: |
+        - A: $3a$ 和 $2b$ 不是<<同类项/like terms>>，不能合并
+        - B: <<系数/coefficient>>相减，字母部分不变，应为 $3x^2$，不是 $3$
+        - C: $(4-1)a^2 = 3a^2$，正确 ✓
+        - D: $3x + 2x = 5x$，不是 $5x^2$
+        这道题考查<<合并同类项/combining like terms>>的常见错误。
+      explanationEn: |
+        - A: $3a$ and $2b$ are not <<同类项/like terms>> and cannot be combined
+        - B: Subtract <<系数/coefficient>>s and keep the letter part; it should be $3x^2$, not $3$
+        - C: $(4-1)a^2 = 3a^2$ — correct ✓
+        - D: $3x + 2x = 5x$, not $5x^2$
+        This question tests common mistakes in <<合并同类项/combining like terms>>.
+
+    - number: 4
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        若 $3x^{m}y^2$ 与 $-5x^3y^{n}$ 是<<同类项/like terms>>，则 $m = $ ______，$n = $ ______。
+      questionEn: |
+        If $3x^{m}y^2$ and $-5x^3y^{n}$ are <<同类项/like terms>>, then $m = $ ______ and $n = $ ______.
+      correctValue: "3, 2"
+      answer: "$m = 3$，$n = 2$"
+      answerEn: "$m = 3$ and $n = 2$"
+      explanation: |
+        <<同类项/like terms>>要求相同字母的指数分别相同。
+        $x$ 的指数：$m = 3$
+        $y$ 的指数：$2 = n$，所以 $n = 2$
+        这是中考常见的"逆向考查<<同类项/like terms>>条件"题型。
+      explanationEn: |
+        <<同类项/like terms>> require the exponents of the same letters to be equal.
+        Exponent of $x$: $m = 3$
+        Exponent of $y$: $2 = n$, so $n = 2$
+        This is a common exam question that tests the conditions for <<同类项/like terms>> in reverse.
+
+    - number: 5
+      type: 中考解答题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        先化简，再求值：$(3x^2 - 2xy + y^2) - 2(x^2 - xy - y^2)$，其中 $x = 1$，$y = -2$。
+      questionEn: |
+        First simplify, then evaluate: $(3x^2 - 2xy + y^2) - 2(x^2 - xy - y^2)$, where $x = 1$ and $y = -2$.
+      answer: |
+        化简：
+        $= 3x^2 - 2xy + y^2 - 2x^2 + 2xy + 2y^2$
+        $= (3x^2 - 2x^2) + (-2xy + 2xy) + (y^2 + 2y^2)$
+        $= x^2 + 3y^2$
+
+        代入 $x = 1$，$y = -2$：
+        $= 1^2 + 3 \times (-2)^2 = 1 + 3 \times 4 = 1 + 12 = 13$
+      answerEn: |
+        Simplify:
+        $= 3x^2 - 2xy + y^2 - 2x^2 + 2xy + 2y^2$
+        $= (3x^2 - 2x^2) + (-2xy + 2xy) + (y^2 + 2y^2)$
+        $= x^2 + 3y^2$
+
+        Substitute $x = 1$, $y = -2$:
+        $= 1^2 + 3 \times (-2)^2 = 1 + 3 \times 4 = 1 + 12 = 13$
+      explanation: |
+        这道中考题考查"先化简再求值"的综合能力。
+        关键步骤：
+        1. 先展开 $-2(x^2 - xy - y^2) = -2x^2 + 2xy + 2y^2$
+        2. 去括号后<<合并同类项/combining like terms>>，注意 $-2xy + 2xy = 0$ 恰好消掉
+        3. 化简后再代入数值计算，**切忌先代入后化简**，那样更容易出错
+      explanationEn: |
+        This exam question tests the comprehensive ability of "simplify first, then evaluate."
+        Key steps:
+        1. First expand $-2(x^2 - xy - y^2) = -2x^2 + 2xy + 2y^2$
+        2. After removing parentheses, <<合并同类项/combining like terms>>; note that $-2xy + 2xy = 0$ cancels out
+        3. Simplify first, then substitute values — **never substitute before simplifying**, as that leads to more errors

@@ -1,0 +1,938 @@
+title: 有理数的运算
+titleEn: Operations with Rational Numbers
+chapter: 2
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 60-90分钟学习 + 40分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 掌握<<有理数/rational number>><<加法/addition>>法则，能熟练进行<<有理数/rational number>><<加法/addition>>运算
+  - 理解<<有理数/rational number>><<减法/subtraction>>可以转化为<<加法/addition>>，并熟练计算
+  - 掌握<<有理数/rational number>><<乘法/multiplication>>法则，理解符号确定规律
+  - 掌握<<有理数/rational number>><<除法/division>>法则，能转化为<<乘法/multiplication>>计算
+  - 理解<<乘方/exponentiation>>的意义，能进行简单的<<乘方/exponentiation>>运算
+  - 会用<<科学记数法/scientific notation>>表示较大的数
+  - 了解<<近似数/approximate number>>与<<精确度/accuracy>>的概念
+  - 掌握<<有理数/rational number>><<混合运算/mixed operations>>的运算顺序
+objectivesEn:
+  - Master the rules of <<有理数/rational number>> <<加法/addition>> and perform calculations fluently
+  - Understand that <<有理数/rational number>> <<减法/subtraction>> can be converted to <<加法/addition>>, and calculate fluently
+  - Master the rules of <<有理数/rational number>> <<乘法/multiplication>> and understand sign determination
+  - Master the rules of <<有理数/rational number>> <<除法/division>> and convert to <<乘法/multiplication>>
+  - Understand the meaning of <<乘方/exponentiation>> and perform simple <<乘方/exponentiation>> calculations
+  - Be able to express large numbers using <<科学记数法/scientific notation>>
+  - Understand the concepts of <<近似数/approximate number>> and <<精确度/accuracy>>
+  - Master the order of <<有理数/rational number>> <<混合运算/mixed operations>>
+
+prerequisites:
+  title: 从小学知识出发——运算的新挑战
+  titleEn: "Starting from elementary school knowledge — new challenges in operations"
+  intro: |
+    小学里，我们已经学会了<<加法/addition>>、<<减法/subtraction>>、<<乘法/multiplication>>、<<除法/division>>这四种运算，比如：
+  introEn: |
+    In elementary school, we already learned the four operations: <<加法/addition>>, <<减法/subtraction>>, <<乘法/multiplication>>, and <<除法/division>>. For example:
+  knownNumbers:
+    - $3 + 5 = 8$
+    - $10 - 4 = 6$
+    - $6 \times 7 = 42$
+    - $20 \div 5 = 4$
+  knownNumbersEn:
+    - $3 + 5 = 8$
+    - $10 - 4 = 6$
+    - $6 \times 7 = 42$
+    - $20 \div 5 = 4$
+  canSolve:
+    - 妈妈给了 $10$ 元，爸爸又给了 $5$ 元，一共多少元？
+    - 一块蛋糕 $8$ 元，买 $3$ 块要多少钱？
+    - $24$ 颗糖平均分给 $6$ 个小朋友，每人几颗？
+  canSolveEn:
+    - Mom gave $10$ yuan and Dad gave another $5$ yuan. How much in total?
+    - A cake costs $8$ yuan. How much for $3$ cakes?
+    - $24$ candies are shared equally among $6$ children. How many does each get?
+  cannotSolve:
+    - 白天气温 $5℃$，晚上降到 $-3℃$，温差是多少？
+    - 电梯从地下 $2$ 层上升 $5$ 层，到了第几层？
+    - 一个细菌每小时增殖 $2$ 倍，$10$ 小时后有多少个？
+    - 太阳到地球的距离约 $150000000$ 千米，怎么简洁地写？
+  cannotSolveEn:
+    - "The daytime temperature is $5℃$ and drops to $-3℃$ at night. What is the temperature difference?"
+    - "The elevator goes up $5$ floors from basement level $2$. What floor does it reach?"
+    - "A bacterium doubles every hour. How many are there after $10$ hours?"
+    - "The distance from the Sun to Earth is about $150000000$ km. How to write it concisely?"
+  conclusion: |
+    引入<<负数/negative number>>之后，我们需要学会带有<<负数/negative number>>的<<加法/addition>>、<<减法/subtraction>>、<<乘法/multiplication>>、<<除法/division>>以及<<乘方/exponentiation>>运算，这就是本章的核心内容。
+  conclusionEn: |
+    After introducing <<负数/negative number>>s, we need to learn <<加法/addition>>, <<减法/subtraction>>, <<乘法/multiplication>>, <<除法/division>>, and <<乘方/exponentiation>> involving <<负数/negative number>>s. This is the core content of this chapter.
+
+concepts:
+  - id: addition-rules
+    title: <<有理数/rational number>>的<<加法/addition>>法则
+    titleEn: Rules for <<有理数/rational number>> <<加法/addition>>
+    content: |
+      <<有理数/rational number>><<加法/addition>>法则：
+      - **同号相加**：取相同的符号，并把<<绝对值/absolute value>>相加
+      - **异号相加**：取<<绝对值/absolute value>>较大的数的符号，并用较大的<<绝对值/absolute value>>减去较小的<<绝对值/absolute value>>
+      - **一个数加 $0$**：仍得这个数
+    contentEn: |
+      Rules for <<有理数/rational number>> <<加法/addition>>:
+      - **Adding numbers with the same sign**: Keep the common sign and add the <<绝对值/absolute value>>s
+      - **Adding numbers with different signs**: Take the sign of the number with the larger <<绝对值/absolute value>>, and subtract the smaller <<绝对值/absolute value>> from the larger one
+      - **Adding $0$ to a number**: The result is the number itself
+    examples:
+      - "同号相加：$(-3) + (-5) = -(3 + 5) = -8$"
+      - "异号相加：$(-7) + 4 = -(7 - 4) = -3$"
+      - "异号相加：$8 + (-3) = +(8 - 3) = 5$"
+      - "互为<<相反数/opposite number>>：$5 + (-5) = 0$"
+      - "加零：$(-6) + 0 = -6$"
+    examplesEn:
+      - "Same signs: $(-3) + (-5) = -(3 + 5) = -8$"
+      - "Different signs: $(-7) + 4 = -(7 - 4) = -3$"
+      - "Different signs: $8 + (-3) = +(8 - 3) = 5$"
+      - "<<相反数/opposite number>>s: $5 + (-5) = 0$"
+      - "Adding zero: $(-6) + 0 = -6$"
+    notes:
+      - "<<加法/addition>>交换律仍然成立：$a + b = b + a$"
+      - "<<加法/addition>>结合律仍然成立：$(a + b) + c = a + (b + c)$"
+    notesEn:
+      - "The commutative law of <<加法/addition>> still holds: $a + b = b + a$"
+      - "The associative law of <<加法/addition>> still holds: $(a + b) + c = a + (b + c)$"
+
+  - id: subtraction-rules
+    title: <<有理数/rational number>>的<<减法/subtraction>>法则
+    titleEn: Rules for <<有理数/rational number>> <<减法/subtraction>>
+    content: |
+      **核心思想：减去一个数，等于加上它的<<相反数/opposite number>>。**
+
+      公式：$a - b = a + (-b)$
+
+      也就是说，所有<<减法/subtraction>>都可以转化为<<加法/addition>>！
+    contentEn: |
+      **Core idea: Subtracting a number is the same as adding its <<相反数/opposite number>>.**
+
+      Formula: $a - b = a + (-b)$
+
+      In other words, all <<减法/subtraction>> can be converted to <<加法/addition>>!
+    examples:
+      - "$5 - 8 = 5 + (-8) = -3$"
+      - "$(-3) - 5 = (-3) + (-5) = -8$"
+      - "$(-4) - (-9) = (-4) + 9 = 5$"
+      - "$0 - 6 = 0 + (-6) = -6$"
+    examplesEn:
+      - "$5 - 8 = 5 + (-8) = -3$"
+      - "$(-3) - 5 = (-3) + (-5) = -8$"
+      - "$(-4) - (-9) = (-4) + 9 = 5$"
+      - "$0 - 6 = 0 + (-6) = -6$"
+    notes:
+      - "\"减负得正\"：减去一个<<负数/negative number>>，相当于加上一个<<正数/positive number>>"
+      - 转化为<<加法/addition>>后，可以利用<<加法/addition>>交换律和结合律简化计算
+    notesEn:
+      - "\"Subtracting a negative gives a positive\": subtracting a <<负数/negative number>> is like adding a <<正数/positive number>>"
+      - "After converting to <<加法/addition>>, you can use the commutative and associative laws to simplify"
+
+  - id: multiplication-rules
+    title: <<有理数/rational number>>的<<乘法/multiplication>>法则
+    titleEn: Rules for <<有理数/rational number>> <<乘法/multiplication>>
+    content: |
+      <<有理数/rational number>><<乘法/multiplication>>法则：
+      - **同号得正**：两个<<正数/positive number>>或两个<<负数/negative number>>相乘，结果为<<正数/positive number>>
+      - **异号得负**：一个<<正数/positive number>>和一个<<负数/negative number>>相乘，结果为<<负数/negative number>>
+      - **任何数与 $0$ 相乘**：结果为 $0$
+
+      先确定符号，再计算<<绝对值/absolute value>>的乘积。
+    contentEn: |
+      Rules for <<有理数/rational number>> <<乘法/multiplication>>:
+      - **Same signs give positive**: Two <<正数/positive number>>s or two <<负数/negative number>>s multiplied give a <<正数/positive number>>
+      - **Different signs give negative**: A <<正数/positive number>> and a <<负数/negative number>> multiplied give a <<负数/negative number>>
+      - **Any number times $0$**: The result is $0$
+
+      First determine the sign, then calculate the product of the <<绝对值/absolute value>>s.
+    examples:
+      - '同号得正：$(-4) \times (-3) = +12 = 12$'
+      - '异号得负：$(-5) \times 6 = -30$'
+      - '乘零：$(-100) \times 0 = 0$'
+    examplesEn:
+      - "Same signs give positive: $(-4) \\times (-3) = +12 = 12$"
+      - "Different signs give negative: $(-5) \\times 6 = -30$"
+      - "Multiplying by zero: $(-100) \\times 0 = 0$"
+    notes:
+      - '<<乘法/multiplication>>交换律：$a \times b = b \times a$'
+      - '<<乘法/multiplication>>结合律：$(a \times b) \times c = a \times (b \times c)$'
+      - '<<乘法/multiplication>>对<<加法/addition>>的分配律：$a \times (b + c) = a \times b + a \times c$'
+      - 多个数相乘时，先数<<负数/negative number>>的个数——偶数个<<负数/negative number>>结果为正，奇数个<<负数/negative number>>结果为负
+    notesEn:
+      - "Commutative law: $a \\times b = b \\times a$"
+      - "Associative law: $(a \\times b) \\times c = a \\times (b \\times c)$"
+      - "Distributive law: $a \\times (b + c) = a \\times b + a \\times c$"
+      - "When multiplying several numbers, count the <<负数/negative number>>s — an even count gives positive, an odd count gives negative"
+
+  - id: division-rules
+    title: <<有理数/rational number>>的<<除法/division>>法则
+    titleEn: Rules for <<有理数/rational number>> <<除法/division>>
+    content: |
+      <<有理数/rational number>><<除法/division>>法则：
+      - 除以一个不等于 $0$ 的数，等于乘以这个数的**<<倒数/reciprocal>>**
+      - 符号规律与<<乘法/multiplication>>相同：同号得正，异号得负
+      - $0$ 除以任何非零数，结果为 $0$
+      - **$0$ 不能作除数！**
+
+      公式：$a \div b = a \times \frac{1}{b}$（$b \neq 0$）
+    contentEn: |
+      Rules for <<有理数/rational number>> <<除法/division>>:
+      - Dividing by a nonzero number equals multiplying by its **<<倒数/reciprocal>>**
+      - Sign rules are the same as <<乘法/multiplication>>: same signs give positive, different signs give negative
+      - $0$ divided by any nonzero number is $0$
+      - **$0$ cannot be a divisor!**
+
+      Formula: $a \div b = a \times \frac{1}{b}$ ($b \neq 0$)
+    examples:
+      - '$(-12) \div 4 = -3$'
+      - '$(-20) \div (-5) = 4$'
+      - '$(-3) \div \frac{1}{2} = (-3) \times 2 = -6$'
+      - '$0 \div (-7) = 0$'
+    examplesEn:
+      - "$(-12) \\div 4 = -3$"
+      - "$(-20) \\div (-5) = 4$"
+      - "$(-3) \\div \\frac{1}{2} = (-3) \\times 2 = -6$"
+      - "$0 \\div (-7) = 0$"
+
+  - id: exponentiation
+    title: <<乘方/exponentiation>>
+    titleEn: <<乘方/exponentiation>>
+    content: |
+      $n$ 个相同的因数 $a$ 相乘，记作 $a^{n}$，读作"$a$ 的 $n$ 次方"。
+
+      其中 $a$ 叫做<<底数/base>>，$n$ 叫做<<指数/exponent>>，结果叫做<<幂/power>>。
+
+      特别地：$a^{1} = a$。
+    contentEn: |
+      Multiplying $n$ identical factors of $a$ is written as $a^{n}$, read as "$a$ to the $n$th power."
+
+      Here, $a$ is called the <<底数/base>>, $n$ is called the <<指数/exponent>>, and the result is called the <<幂/power>>.
+
+      In particular: $a^{1} = a$.
+    examples:
+      - "$(-2)^{3} = (-2) \\times (-2) \\times (-2) = -8$"
+      - "$(-3)^{2} = (-3) \\times (-3) = 9$"
+      - "$-3^{2} = -(3 \\times 3) = -9$（注意：这里只对 $3$ 求平方，负号不在括号里）"
+      - "$(-1)^{100} = 1$（偶数个负号，结果为正）"
+      - "$(-1)^{99} = -1$（奇数个负号，结果为负）"
+    examplesEn:
+      - "$(-2)^{3} = (-2) \\times (-2) \\times (-2) = -8$"
+      - "$(-3)^{2} = (-3) \\times (-3) = 9$"
+      - "$-3^{2} = -(3 \\times 3) = -9$ (Note: only $3$ is squared; the negative sign is outside the parentheses)"
+      - "$(-1)^{100} = 1$ (even number of negatives, result is positive)"
+      - "$(-1)^{99} = -1$ (odd number of negatives, result is negative)"
+    notes:
+      - "<<负数/negative number>>的偶次<<幂/power>>是<<正数/positive number>>，<<负数/negative number>>的奇次<<幂/power>>是<<负数/negative number>>"
+      - "$(-a)^{2}$ 和 $-a^{2}$ 意义不同！前者是 $a^{2}$，后者是 $-a^{2}$"
+    notesEn:
+      - "An even <<幂/power>> of a <<负数/negative number>> is a <<正数/positive number>>; an odd <<幂/power>> of a <<负数/negative number>> is a <<负数/negative number>>"
+      - "$(-a)^{2}$ and $-a^{2}$ have different meanings! The former is $a^{2}$, the latter is $-a^{2}$"
+
+  - id: scientific-notation
+    title: <<科学记数法/scientific notation>>
+    titleEn: <<科学记数法/scientific notation>>
+    content: |
+      把一个大于 $10$ 的数写成 $a \times 10^{n}$ 的形式，其中 $1 \leq a < 10$，$n$ 是<<正整数/positive integer>>。
+
+      这种记数方法叫做<<科学记数法/scientific notation>>。
+
+      确定 $n$ 的方法：$n$ 等于原数的<<整数/integer>>部分的位数减 $1$。
+    contentEn: |
+      Writing a number greater than $10$ in the form $a \times 10^{n}$, where $1 \leq a < 10$ and $n$ is a <<正整数/positive integer>>.
+
+      This notation is called <<科学记数法/scientific notation>>.
+
+      How to determine $n$: $n$ equals the number of digits in the integer part minus $1$.
+    examples:
+      - "$300000 = 3 \\times 10^{5}$"
+      - "$56000000 = 5.6 \\times 10^{7}$"
+      - "$1230000 = 1.23 \\times 10^{6}$"
+      - "全球人口约 $8000000000 = 8 \\times 10^{9}$"
+    examplesEn:
+      - "$300000 = 3 \\times 10^{5}$"
+      - "$56000000 = 5.6 \\times 10^{7}$"
+      - "$1230000 = 1.23 \\times 10^{6}$"
+      - "World population is about $8000000000 = 8 \\times 10^{9}$"
+
+  - id: approximation-accuracy
+    title: <<近似数/approximate number>>与<<精确度/accuracy>>
+    titleEn: <<近似数/approximate number>> and <<精确度/accuracy>>
+    content: |
+      生活中很多数据是近似的，不是精确的。
+
+      **<<近似数/approximate number>>**：与实际数据接近但不完全相等的数。
+
+      **<<精确度/accuracy>>**：一个<<近似数/approximate number>>四舍五入到哪一位，就说它精确到哪一位。
+
+      **<<有效数字/significant figure>>**：从左边第一个不为零的数字起，到精确到的数位止，所有的数字都是<<有效数字/significant figure>>。
+    contentEn: |
+      Many numbers in daily life are approximate, not exact.
+
+      **<<近似数/approximate number>>**: A number that is close to but not exactly equal to the actual value.
+
+      **<<精确度/accuracy>>**: When an <<近似数/approximate number>> is rounded to a certain digit, we say it is accurate to that digit.
+
+      **<<有效数字/significant figure>>**: Starting from the first nonzero digit on the left, all digits up to and including the digit that was rounded to are <<有效数字/significant figure>>s.
+    examples:
+      - "$3.14$ 精确到百分位，有 $3$ 个<<有效数字/significant figure>>：$3$、$1$、$4$"
+      - "$2.0 \\times 10^{4}$ 精确到千位，有 $2$ 个<<有效数字/significant figure>>：$2$、$0$"
+      - "$0.0258$ 精确到万分位，有 $3$ 个<<有效数字/significant figure>>：$2$、$5$、$8$"
+    examplesEn:
+      - "$3.14$ is accurate to the hundredths place, with $3$ <<有效数字/significant figure>>s: $3$, $1$, $4$"
+      - "$2.0 \\times 10^{4}$ is accurate to the thousands place, with $2$ <<有效数字/significant figure>>s: $2$, $0$"
+      - "$0.0258$ is accurate to the ten-thousandths place, with $3$ <<有效数字/significant figure>>s: $2$, $5$, $8$"
+
+  - id: order-of-operations
+    title: <<有理数/rational number>>的<<混合运算/mixed operations>>
+    titleEn: <<有理数/rational number>> <<混合运算/mixed operations>>
+    content: |
+      运算顺序（与小学一致，增加了<<乘方/exponentiation>>）：
+      1. 先算<<乘方/exponentiation>>
+      2. 再算<<乘法/multiplication>>和<<除法/division>>（从左到右）
+      3. 最后算<<加法/addition>>和<<减法/subtraction>>（从左到右）
+      4. 有括号的，先算括号里面的（小括号 → 中括号 → 大括号）
+    contentEn: |
+      Order of operations (same as elementary school, with <<乘方/exponentiation>> added):
+      1. First calculate <<乘方/exponentiation>>
+      2. Then <<乘法/multiplication>> and <<除法/division>> (left to right)
+      3. Finally <<加法/addition>> and <<减法/subtraction>> (left to right)
+      4. Parentheses first (parentheses → brackets → braces)
+    examples:
+      - "$(-2)^{3} + 3 \\times (-4) = -8 + (-12) = -20$"
+      - "$10 - 2 \\times (-3)^{2} = 10 - 2 \\times 9 = 10 - 18 = -8$"
+      - "$(-6) \\div 2 + (-3) \\times 4 = -3 + (-12) = -15$"
+    examplesEn:
+      - "$(-2)^{3} + 3 \\times (-4) = -8 + (-12) = -20$"
+      - "$10 - 2 \\times (-3)^{2} = 10 - 2 \\times 9 = 10 - 18 = -8$"
+      - "$(-6) \\div 2 + (-3) \\times 4 = -3 + (-12) = -15$"
+
+realLife:
+  - category: 温度变化
+    categoryEn: Temperature change
+    positive: "白天 $5℃$ 升高 $3℃$：$5 + 3 = 8℃$"
+    positiveEn: "$5℃$ during the day rises by $3℃$: $5 + 3 = 8℃$"
+    negative: "白天 $5℃$ 降低 $8℃$：$5 + (-8) = -3℃$"
+    negativeEn: "$5℃$ during the day drops by $8℃$: $5 + (-8) = -3℃$"
+  - category: 电梯升降
+    categoryEn: Elevator movement
+    positive: "从地下 $2$ 层上升 $5$ 层：$(-2) + 5 = 3$，到第 $3$ 层"
+    positiveEn: "Going up $5$ floors from basement $2$: $(-2) + 5 = 3$, reaching floor $3$"
+    negative: "从第 $3$ 层下降 $6$ 层：$3 + (-6) = -3$，到地下 $3$ 层"
+    negativeEn: "Going down $6$ floors from floor $3$: $3 + (-6) = -3$, reaching basement $3$"
+  - category: 账户收支
+    categoryEn: Account transactions
+    positive: "存入 $200$ 元后又支出 $350$ 元：$200 + (-350) = -150$，透支 $150$ 元"
+    positiveEn: "Depositing $200$ yuan then spending $350$ yuan: $200 + (-350) = -150$, overdrawn by $150$ yuan"
+    negative: "一周收入 $+500$、$-120$、$+300$、$-80$ 元，净收入：$500 + (-120) + 300 + (-80) = 600$ 元"
+    negativeEn: "Weekly income of $+500$, $-120$, $+300$, $-80$ yuan. Net: $500 + (-120) + 300 + (-80) = 600$ yuan"
+  - category: 科学记数
+    categoryEn: Scientific notation
+    positive: "光速约 $300000$ 千米/秒 $= 3 \\times 10^{5}$ 千米/秒"
+    positiveEn: "Speed of light is about $300000$ km/s $= 3 \\times 10^{5}$ km/s"
+    negative: "地球到太阳约 $1.5 \\times 10^{8}$ 千米"
+    negativeEn: "Earth to Sun is about $1.5 \\times 10^{8}$ km"
+
+examples:
+  - type: 1
+    title: 同号<<有理数/rational number>><<加法/addition>>
+    titleEn: Adding <<有理数/rational number>>s with the same sign
+    question: |
+      计算 $(-8) + (-5)$。
+    questionEn: |
+      Calculate $(-8) + (-5)$.
+    steps:
+      - 两个<<负数/negative number>>相加，符号取负号
+      - <<绝对值/absolute value>>相加：$8 + 5 = 13$
+      - "结果：$(-8) + (-5) = -13$"
+    stepsEn:
+      - "Adding two <<负数/negative number>>s: the sign is negative"
+      - "Add the <<绝对值/absolute value>>s: $8 + 5 = 13$"
+      - "Result: $(-8) + (-5) = -13$"
+    answer: "$(-8) + (-5) = -13$"
+    answerEn: "$(-8) + (-5) = -13$"
+
+  - type: 2
+    title: 异号<<有理数/rational number>><<加法/addition>>
+    titleEn: Adding <<有理数/rational number>>s with different signs
+    question: |
+      计算 $(-12) + 7$。
+    questionEn: |
+      Calculate $(-12) + 7$.
+    steps:
+      - 异号相加，取<<绝对值/absolute value>>较大的数的符号
+      - "$|-12| = 12 > |7| = 7$，所以结果取负号"
+      - "<<绝对值/absolute value>>相减：$12 - 7 = 5$"
+      - "结果：$(-12) + 7 = -5$"
+    stepsEn:
+      - "Different signs: take the sign of the number with the larger <<绝对值/absolute value>>"
+      - "$|-12| = 12 > |7| = 7$, so the result is negative"
+      - "Subtract <<绝对值/absolute value>>s: $12 - 7 = 5$"
+      - "Result: $(-12) + 7 = -5$"
+    answer: "$(-12) + 7 = -5$"
+    answerEn: "$(-12) + 7 = -5$"
+
+  - type: 3
+    title: <<减法/subtraction>>转化为<<加法/addition>>
+    titleEn: Converting <<减法/subtraction>> to <<加法/addition>>
+    question: |
+      计算 $(-4) - (-9)$。
+    questionEn: |
+      Calculate $(-4) - (-9)$.
+    steps:
+      - "<<减法/subtraction>>转化为<<加法/addition>>：减去 $-9$，等于加上 $9$"
+      - "$(-4) - (-9) = (-4) + 9$"
+      - 异号相加，$|9| > |-4|$，取正号
+      - "$9 - 4 = 5$"
+    stepsEn:
+      - "Convert <<减法/subtraction>> to <<加法/addition>>: subtracting $-9$ equals adding $9$"
+      - "$(-4) - (-9) = (-4) + 9$"
+      - "Different signs, $|9| > |-4|$, take positive sign"
+      - "$9 - 4 = 5$"
+    answer: "$(-4) - (-9) = 5$"
+    answerEn: "$(-4) - (-9) = 5$"
+
+  - type: 4
+    title: <<有理数/rational number>><<乘法/multiplication>>
+    titleEn: <<有理数/rational number>> <<乘法/multiplication>>
+    question: |
+      计算 $(-6) \times (-\frac{2}{3})$。
+    questionEn: |
+      Calculate $(-6) \times (-\frac{2}{3})$.
+    steps:
+      - 同号得正，结果为<<正数/positive number>>
+      - "计算<<绝对值/absolute value>>：$6 \\times \\frac{2}{3} = \\frac{6 \\times 2}{3} = \\frac{12}{3} = 4$"
+    stepsEn:
+      - "Same signs give positive result"
+      - "Calculate <<绝对值/absolute value>>s: $6 \\times \\frac{2}{3} = \\frac{6 \\times 2}{3} = \\frac{12}{3} = 4$"
+    answer: "$(-6) \\times (-\\frac{2}{3}) = 4$"
+    answerEn: "$(-6) \\times (-\\frac{2}{3}) = 4$"
+
+  - type: 5
+    title: <<除法/division>>转化为<<乘法/multiplication>>
+    titleEn: Converting <<除法/division>> to <<乘法/multiplication>>
+    question: |
+      计算 $(-15) \div (-\frac{3}{5})$。
+    questionEn: |
+      Calculate $(-15) \div (-\frac{3}{5})$.
+    steps:
+      - "<<除法/division>>转化为<<乘法/multiplication>>：除以 $-\\frac{3}{5}$，等于乘以它的<<倒数/reciprocal>> $-\\frac{5}{3}$"
+      - "$(-15) \\div (-\\frac{3}{5}) = (-15) \\times (-\\frac{5}{3})$"
+      - 同号得正
+      - "$15 \\times \\frac{5}{3} = \\frac{75}{3} = 25$"
+    stepsEn:
+      - "Convert <<除法/division>> to <<乘法/multiplication>>: dividing by $-\\frac{3}{5}$ equals multiplying by its <<倒数/reciprocal>> $-\\frac{5}{3}$"
+      - "$(-15) \\div (-\\frac{3}{5}) = (-15) \\times (-\\frac{5}{3})$"
+      - "Same signs give positive"
+      - "$15 \\times \\frac{5}{3} = \\frac{75}{3} = 25$"
+    answer: "$(-15) \\div (-\\frac{3}{5}) = 25$"
+    answerEn: "$(-15) \\div (-\\frac{3}{5}) = 25$"
+
+  - type: 6
+    title: <<乘方/exponentiation>>运算
+    titleEn: <<乘方/exponentiation>> calculation
+    question: |
+      计算 $(-2)^{4}$ 和 $-2^{4}$。
+    questionEn: |
+      Calculate $(-2)^{4}$ and $-2^{4}$.
+    steps:
+      - "$(-2)^{4} = (-2) \\times (-2) \\times (-2) \\times (-2)$"
+      - "$4$ 个<<负数/negative number>>相乘（偶数个），结果为正"
+      - "$(-2)^{4} = 16$"
+      - '$-2^{4}$ 表示"$2^{4}$ 的<<相反数/opposite number>>"，即 $-(2^{4})$'
+      - "$-2^{4} = -16$"
+    stepsEn:
+      - "$(-2)^{4} = (-2) \\times (-2) \\times (-2) \\times (-2)$"
+      - "$4$ <<负数/negative number>>s multiplied (even count), result is positive"
+      - "$(-2)^{4} = 16$"
+      - "$-2^{4}$ means \"the <<相反数/opposite number>> of $2^{4}$\", i.e., $-(2^{4})$"
+      - "$-2^{4} = -16$"
+    answer: "$(-2)^{4} = 16$，$-2^{4} = -16$"
+    answerEn: "$(-2)^{4} = 16$, $-2^{4} = -16$"
+
+  - type: 7
+    title: <<科学记数法/scientific notation>>
+    titleEn: <<科学记数法/scientific notation>>
+    question: |
+      用<<科学记数法/scientific notation>>表示 $23500000$。
+    questionEn: |
+      Express $23500000$ in <<科学记数法/scientific notation>>.
+    steps:
+      - "把小数点移到第一个非零数字后面：$2.35$"
+      - "原数的<<整数/integer>>部分有 $8$ 位数字"
+      - "所以 $n = 8 - 1 = 7$"
+    stepsEn:
+      - "Move the decimal point after the first nonzero digit: $2.35$"
+      - "The integer part of the original number has $8$ digits"
+      - "So $n = 8 - 1 = 7$"
+    answer: "$23500000 = 2.35 \\times 10^{7}$"
+    answerEn: "$23500000 = 2.35 \\times 10^{7}$"
+
+  - type: 8
+    title: <<混合运算/mixed operations>>
+    titleEn: <<混合运算/mixed operations>>
+    question: |
+      计算 $(-3)^{2} \times 2 - (-4) \div 2$。
+    questionEn: |
+      Calculate $(-3)^{2} \times 2 - (-4) \div 2$.
+    steps:
+      - "第一步，先算<<乘方/exponentiation>>：$(-3)^{2} = 9$"
+      - "第二步，再算<<乘法/multiplication>>和<<除法/division>>：$9 \\times 2 = 18$，$(-4) \\div 2 = -2$"
+      - "第三步，最后算<<减法/subtraction>>：$18 - (-2) = 18 + 2 = 20$"
+    stepsEn:
+      - "Step 1: Calculate <<乘方/exponentiation>> first: $(-3)^{2} = 9$"
+      - "Step 2: Then <<乘法/multiplication>> and <<除法/division>>: $9 \\times 2 = 18$, $(-4) \\div 2 = -2$"
+      - "Step 3: Finally <<减法/subtraction>>: $18 - (-2) = 18 + 2 = 20$"
+    answer: "$(-3)^{2} \\times 2 - (-4) \\div 2 = 20$"
+    answerEn: "$(-3)^{2} \\times 2 - (-4) \\div 2 = 20$"
+
+commonMistakes:
+  - "异号相加时搞反符号：$(-7) + 3$ 的结果符号应取<<绝对值/absolute value>>大的那个（$7 > 3$，取负），正确答案是 $-4$，不是 $4$"
+  - "\"减负得正\"记混：$5 - (-3) = 5 + 3 = 8$，不是 $5 - 3 = 2$"
+  - "<<乘法/multiplication>>符号判断错误：$(-2) \\times (-3) = 6$（同号得正），不是 $-6$"
+  - "$(-a)^{2}$ 与 $-a^{2}$ 混淆：$(-3)^{2} = 9$，但 $-3^{2} = -9$，括号的位置至关重要"
+  - "<<科学记数法/scientific notation>>中 $a$ 的范围弄错：$a$ 必须满足 $1 \\leq a < 10$，所以 $56000000$ 应写成 $5.6 \\times 10^{7}$，不是 $56 \\times 10^{6}$"
+  - "<<混合运算/mixed operations>>顺序搞错：先<<乘方/exponentiation>>，再乘除，最后加减；不能从左到右一路算"
+commonMistakesEn:
+  - "Getting the sign wrong when adding different signs: $(-7) + 3$ should take the sign of the larger <<绝对值/absolute value>> ($7 > 3$, take negative), correct answer is $-4$, not $4$"
+  - "Confusing \"subtracting a negative\": $5 - (-3) = 5 + 3 = 8$, not $5 - 3 = 2$"
+  - "Wrong sign in <<乘法/multiplication>>: $(-2) \\times (-3) = 6$ (same signs give positive), not $-6$"
+  - "Confusing $(-a)^{2}$ with $-a^{2}$: $(-3)^{2} = 9$, but $-3^{2} = -9$. The position of parentheses is crucial"
+  - "Wrong range of $a$ in <<科学记数法/scientific notation>>: $a$ must satisfy $1 \\leq a < 10$, so $56000000$ should be $5.6 \\times 10^{7}$, not $56 \\times 10^{6}$"
+  - "Wrong order in <<混合运算/mixed operations>>: <<乘方/exponentiation>> first, then multiply/divide, finally add/subtract; do not just calculate left to right"
+
+exercises:
+  timeGuide:
+    total: 40分钟
+    totalEn: 40 minutes
+    sections:
+      - range: "1-4"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 18分钟
+        timeEn: 18 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $(-9) + 4 = $ ______。
+      questionEn: |
+        $(-9) + 4 = $ ______.
+      correctValue: "-5"
+      answer: "$-5$"
+      answerEn: "$-5$"
+      explanation: |
+        异号相加，$|-9| = 9 > |4| = 4$，取负号，$9 - 4 = 5$，所以结果是 $-5$。
+      explanationEn: |
+        Different signs: $|-9| = 9 > |4| = 4$, take negative sign, $9 - 4 = 5$, so the result is $-5$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $(-6) - (-10) = $ ______。
+      questionEn: |
+        $(-6) - (-10) = $ ______.
+      correctValue: "4"
+      answer: "$4$"
+      answerEn: "$4$"
+      explanation: |
+        <<减法/subtraction>>转化为<<加法/addition>>：$(-6) - (-10) = (-6) + 10 = 4$。
+      explanationEn: |
+        Convert <<减法/subtraction>> to <<加法/addition>>: $(-6) - (-10) = (-6) + 10 = 4$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $(-5) \times (-8) = $ ______。
+      questionEn: |
+        $(-5) \times (-8) = $ ______.
+      correctValue: "40"
+      answer: "$40$"
+      answerEn: "$40$"
+      explanation: |
+        同号得正：$(-5) \times (-8) = +(5 \times 8) = 40$。
+      explanationEn: |
+        Same signs give positive: $(-5) \times (-8) = +(5 \times 8) = 40$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        用<<科学记数法/scientific notation>>表示 $91200000 = $ ______。
+      questionEn: |
+        Express $91200000$ in <<科学记数法/scientific notation>>: $91200000 = $ ______.
+      correctValue: "9.12*10^7"
+      answer: "$9.12 \\times 10^{7}$"
+      answerEn: "$9.12 \\times 10^{7}$"
+      explanation: |
+        $91200000$ 的<<整数/integer>>部分有 $8$ 位，$n = 8 - 1 = 7$，$a = 9.12$。
+      explanationEn: |
+        $91200000$ has $8$ digits in its integer part, $n = 8 - 1 = 7$, $a = 9.12$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $(-2)^{3} = -8$。
+      questionEn: |
+        $(-2)^{3} = -8$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $(-2)^{3} = (-2) \times (-2) \times (-2) = 4 \times (-2) = -8$。<<负数/negative number>>的奇次<<幂/power>>为<<负数/negative number>>。
+      explanationEn: |
+        $(-2)^{3} = (-2) \times (-2) \times (-2) = 4 \times (-2) = -8$. An odd <<幂/power>> of a <<负数/negative number>> is <<负数/negative number>>.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $-5^{2} = 25$。
+      questionEn: |
+        $-5^{2} = 25$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $-5^{2} = -(5^{2}) = -25$，不是 $25$。只有 $(-5)^{2} = 25$。
+      explanationEn: |
+        $-5^{2} = -(5^{2}) = -25$, not $25$. Only $(-5)^{2} = 25$.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $0$ 除以任何数都等于 $0$。
+      questionEn: |
+        $0$ divided by any number equals $0$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        应该是"$0$ 除以任何**非零**数都等于 $0$"。$0$ 不能作除数。
+      explanationEn: |
+        It should be "$0$ divided by any **nonzero** number equals $0$." $0$ cannot be a divisor.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $3.5 \times 10^{5}$ 表示 $350000$。
+      questionEn: |
+        $3.5 \times 10^{5}$ represents $350000$.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $3.5 \times 10^{5} = 3.5 \times 100000 = 350000$。
+      explanationEn: |
+        $3.5 \times 10^{5} = 3.5 \times 100000 = 350000$.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        计算 $(-3) \times 4 + (-2) \times (-5)$ 的结果是（　）
+      questionEn: |
+        The result of $(-3) \times 4 + (-2) \times (-5)$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$-22$", "$-2$", "$2$", "$22$"]
+          correctValue: "$-2$"
+      answer: "$-2$"
+      answerEn: "$-2$"
+      explanation: |
+        先算<<乘法/multiplication>>：$(-3) \times 4 = -12$，$(-2) \times (-5) = 10$。
+        再算<<加法/addition>>：$-12 + 10 = -2$。
+      explanationEn: |
+        First <<乘法/multiplication>>: $(-3) \times 4 = -12$, $(-2) \times (-5) = 10$.
+        Then <<加法/addition>>: $-12 + 10 = -2$.
+
+    - number: 10
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列运算正确的是（　）
+      questionEn: |
+        Which of the following calculations is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "$(-2)^{3} = 6$"
+            - "$(-1)^{2022} = -1$"
+            - "$(-4) \\times (-3) = -12$"
+            - "$(-1)^{2023} = -1$"
+          correctValue: "$(-1)^{2023} = -1$"
+      answer: "$(-1)^{2023} = -1$"
+      answerEn: "$(-1)^{2023} = -1$"
+      explanation: |
+        逐一检验：
+        - $(-2)^{3} = -8$，不是 $6$
+        - $(-1)^{2022} = 1$（偶次<<幂/power>>为正），不是 $-1$
+        - $(-4) \times (-3) = 12$（同号得正），不是 $-12$
+        - $(-1)^{2023} = -1$（奇次<<幂/power>>为负）✓
+      explanationEn: |
+        Check each:
+        - $(-2)^{3} = -8$, not $6$
+        - $(-1)^{2022} = 1$ (even <<幂/power>> is positive), not $-1$
+        - $(-4) \times (-3) = 12$ (same signs give positive), not $-12$
+        - $(-1)^{2023} = -1$ (odd <<幂/power>> is negative) ✓
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: "IV. Calculation"
+      question: |
+        计算 $(-2)^{3} + (-3) \times [(-4) + 2]$。
+      questionEn: |
+        Calculate $(-2)^{3} + (-3) \times [(-4) + 2]$.
+      answer: |
+        $(-2)^{3} + (-3) \times [(-4) + 2]$
+        $= -8 + (-3) \times (-2)$
+        $= -8 + 6$
+        $= -2$
+      answerEn: |
+        $(-2)^{3} + (-3) \times [(-4) + 2]$
+        $= -8 + (-3) \times (-2)$
+        $= -8 + 6$
+        $= -2$
+      explanation: |
+        运算顺序：先算<<乘方/exponentiation>> $(-2)^{3} = -8$，再算括号 $(-4) + 2 = -2$，再算<<乘法/multiplication>> $(-3) \times (-2) = 6$，最后<<加法/addition>> $-8 + 6 = -2$。
+      explanationEn: |
+        Order: first <<乘方/exponentiation>> $(-2)^{3} = -8$, then parentheses $(-4) + 2 = -2$, then <<乘法/multiplication>> $(-3) \times (-2) = 6$, finally <<加法/addition>> $-8 + 6 = -2$.
+
+    - number: 12
+      type: 综合应用题
+      inputType: open
+      section: 五、综合应用题
+      sectionEn: "V. Comprehensive Application"
+      question: |
+        某商店一周内每天的盈亏情况如下（盈利为正，亏损为负，单位：元）：
+        $+120$，$-80$，$+200$，$+150$，$-60$，$-40$，$+310$。
+
+        （1）这一周总的盈亏情况如何？
+        （2）平均每天盈亏多少元？
+      questionEn: |
+        A store's daily profit/loss for a week is as follows (profit is positive, loss is negative, unit: yuan):
+        $+120$, $-80$, $+200$, $+150$, $-60$, $-40$, $+310$.
+
+        (1) What is the total profit/loss for this week?
+        (2) What is the average daily profit/loss?
+      answer: |
+        （1）总盈亏：
+        $120 + (-80) + 200 + 150 + (-60) + (-40) + 310$
+        $= (120 + 200 + 150 + 310) + [(-80) + (-60) + (-40)]$
+        $= 780 + (-180)$
+        $= 600$（元）
+        这一周总共盈利 $600$ 元。
+
+        （2）平均每天盈亏：
+        $600 \div 7 \approx 85.7$（元）
+        平均每天盈利约 $85.7$ 元。
+      answerEn: |
+        (1) Total profit/loss:
+        $120 + (-80) + 200 + 150 + (-60) + (-40) + 310$
+        $= (120 + 200 + 150 + 310) + [(-80) + (-60) + (-40)]$
+        $= 780 + (-180)$
+        $= 600$ (yuan)
+        Total profit for the week is $600$ yuan.
+
+        (2) Average daily profit/loss:
+        $600 \div 7 \approx 85.7$ (yuan)
+        Average daily profit is about $85.7$ yuan.
+      explanation: |
+        利用<<加法/addition>>交换律和结合律，把<<正数/positive number>>和<<负数/negative number>>分组计算更方便。
+      explanationEn: |
+        Using the commutative and associative laws of <<加法/addition>>, grouping <<正数/positive number>>s and <<负数/negative number>>s makes calculation easier.
+
+summary:
+  - "掌握<<有理数/rational number>><<加法/addition>>法则：同号相加取相同符号加<<绝对值/absolute value>>，异号相加取<<绝对值/absolute value>>大的符号减<<绝对值/absolute value>>"
+  - "理解<<减法/subtraction>>转化为<<加法/addition>>的方法：$a - b = a + (-b)$"
+  - "掌握<<乘法/multiplication>>符号法则：同号得正，异号得负"
+  - "掌握<<除法/division>>转化为<<乘法/multiplication>>的方法：除以一个数等于乘以它的<<倒数/reciprocal>>"
+  - "理解<<乘方/exponentiation>>的意义，区分 $(-a)^{n}$ 与 $-a^{n}$"
+  - "能用<<科学记数法/scientific notation>>表示大数"
+  - "了解<<近似数/approximate number>>、<<有效数字/significant figure>>和<<精确度/accuracy>>的概念"
+  - "熟练进行<<混合运算/mixed operations>>：先<<乘方/exponentiation>>，再乘除，最后加减，有括号先算括号"
+summaryEn:
+  - "Master <<有理数/rational number>> <<加法/addition>> rules: same signs — keep sign and add <<绝对值/absolute value>>s; different signs — take sign of larger <<绝对值/absolute value>> and subtract"
+  - "Understand converting <<减法/subtraction>> to <<加法/addition>>: $a - b = a + (-b)$"
+  - "Master <<乘法/multiplication>> sign rules: same signs give positive, different signs give negative"
+  - "Master converting <<除法/division>> to <<乘法/multiplication>>: dividing by a number equals multiplying by its <<倒数/reciprocal>>"
+  - "Understand the meaning of <<乘方/exponentiation>> and distinguish $(-a)^{n}$ from $-a^{n}$"
+  - "Be able to express large numbers using <<科学记数法/scientific notation>>"
+  - "Understand the concepts of <<近似数/approximate number>>, <<有效数字/significant figure>>, and <<精确度/accuracy>>"
+  - "Perform <<混合运算/mixed operations>> fluently: <<乘方/exponentiation>> first, then multiply/divide, finally add/subtract; parentheses first"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        计算 $(-1)^{2024} + (-2)^{2}$ 的结果是（　）
+      questionEn: |
+        The result of $(-1)^{2024} + (-2)^{2}$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$3$", "$5$", "$-3$", "$-5$"]
+          correctValue: "$5$"
+      answer: "$5$"
+      answerEn: "$5$"
+      explanation: |
+        $(-1)^{2024} = 1$（偶次<<幂/power>>为正），$(-2)^{2} = 4$。
+        $1 + 4 = 5$。
+      explanationEn: |
+        $(-1)^{2024} = 1$ (even <<幂/power>> is positive), $(-2)^{2} = 4$.
+        $1 + 4 = 5$.
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        计算 $(-36) \div 4 - (-2)^{3} = $ ______。
+      questionEn: |
+        Calculate $(-36) \div 4 - (-2)^{3} = $ ______.
+      correctValue: "-1"
+      answer: "$-1$"
+      answerEn: "$-1$"
+      explanation: |
+        $(-36) \div 4 = -9$，$(-2)^{3} = -8$。
+        $-9 - (-8) = -9 + 8 = -1$。
+      explanationEn: |
+        $(-36) \div 4 = -9$, $(-2)^{3} = -8$.
+        $-9 - (-8) = -9 + 8 = -1$.
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        用<<科学记数法/scientific notation>>表示 $135000000$，正确的是（　）
+      questionEn: |
+        Which is the correct <<科学记数法/scientific notation>> for $135000000$? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "$13.5 \\times 10^{7}$"
+            - "$1.35 \\times 10^{8}$"
+            - "$1.35 \\times 10^{7}$"
+            - "$0.135 \\times 10^{9}$"
+          correctValue: "$1.35 \\times 10^{8}$"
+      answer: "$1.35 \\times 10^{8}$"
+      answerEn: "$1.35 \\times 10^{8}$"
+      explanation: |
+        $135000000$ 的<<整数/integer>>部分有 $9$ 位，$n = 9 - 1 = 8$。
+        $a = 1.35$（必须满足 $1 \leq a < 10$）。
+        所以 $135000000 = 1.35 \times 10^{8}$。
+        注意：$13.5 \times 10^{7}$ 不对，因为 $13.5 \geq 10$。
+      explanationEn: |
+        $135000000$ has $9$ digits in its integer part, $n = 9 - 1 = 8$.
+        $a = 1.35$ (must satisfy $1 \leq a < 10$).
+        So $135000000 = 1.35 \times 10^{8}$.
+        Note: $13.5 \times 10^{7}$ is wrong because $13.5 \geq 10$.
+
+    - number: 4
+      type: 中考计算题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        计算 $(-1)^{3} - \frac{1}{6} \times [4 - (-2)^{3}]$。
+      questionEn: |
+        Calculate $(-1)^{3} - \frac{1}{6} \times [4 - (-2)^{3}]$.
+      answer: |
+        $(-1)^{3} - \frac{1}{6} \times [4 - (-2)^{3}]$
+        $= -1 - \frac{1}{6} \times [4 - (-8)]$
+        $= -1 - \frac{1}{6} \times 12$
+        $= -1 - 2$
+        $= -3$
+      answerEn: |
+        $(-1)^{3} - \frac{1}{6} \times [4 - (-2)^{3}]$
+        $= -1 - \frac{1}{6} \times [4 - (-8)]$
+        $= -1 - \frac{1}{6} \times 12$
+        $= -1 - 2$
+        $= -3$
+      explanation: |
+        运算顺序：先<<乘方/exponentiation>>（$(-1)^{3} = -1$，$(-2)^{3} = -8$），再算中括号内（$4 - (-8) = 12$），再<<乘法/multiplication>>（$\frac{1}{6} \times 12 = 2$），最后<<减法/subtraction>>（$-1 - 2 = -3$）。
+        这是中考常见的<<混合运算/mixed operations>>题型，关键是不要搞错运算顺序和符号。
+      explanationEn: |
+        Order: <<乘方/exponentiation>> first ($(-1)^{3} = -1$, $(-2)^{3} = -8$), then inside brackets ($4 - (-8) = 12$), then <<乘法/multiplication>> ($\frac{1}{6} \times 12 = 2$), finally <<减法/subtraction>> ($-1 - 2 = -3$).
+        This is a common <<混合运算/mixed operations>> exam question. The key is getting the order and signs right.
+
+    - number: 5
+      type: 中考应用题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        一潜水员从海平面开始下潜，每分钟下潜 $3$ 米，下潜 $4$ 分钟后又上浮 $5$ 米。
+
+        （1）用<<有理数/rational number>>运算表示潜水员最终所处位置（以海平面为基准，向下为负）。
+        （2）如果潜水员最终要到达海平面以下 $15$ 米处，还需要再下潜多少米？
+      questionEn: |
+        A diver starts from sea level, descending $3$ meters per minute. After descending for $4$ minutes, the diver ascends $5$ meters.
+
+        (1) Use <<有理数/rational number>> operations to express the diver's final position (sea level as baseline, downward is negative).
+        (2) If the diver needs to reach $15$ meters below sea level, how many more meters must the diver descend?
+      answer: |
+        （1）下潜 $4$ 分钟：$(-3) \times 4 = -12$（米），
+        然后上浮 $5$ 米：$-12 + 5 = -7$（米）。
+        潜水员在海平面以下 $7$ 米处。
+
+        （2）目标位置：$-15$ 米，当前位置：$-7$ 米。
+        还需下潜：$-15 - (-7) = -15 + 7 = -8$（米）。
+        还需要再下潜 $8$ 米。
+      answerEn: |
+        (1) Descending for $4$ minutes: $(-3) \times 4 = -12$ (m),
+        then ascending $5$ m: $-12 + 5 = -7$ (m).
+        The diver is $7$ meters below sea level.
+
+        (2) Target: $-15$ m, current: $-7$ m.
+        More descent needed: $-15 - (-7) = -15 + 7 = -8$ (m).
+        The diver needs to descend $8$ more meters.
+      explanation: |
+        本题综合考查了<<有理数/rational number>>的<<乘法/multiplication>>（下潜速度 $\times$ 时间）、<<加法/addition>>（上浮）、<<减法/subtraction>>（求差距）。
+        中考应用题常把实际情境转化为<<有理数/rational number>>运算，关键是正确设定正负方向。
+      explanationEn: |
+        This problem tests <<有理数/rational number>> <<乘法/multiplication>> (descent speed times time), <<加法/addition>> (ascending), and <<减法/subtraction>> (finding the gap).
+        Exam application problems often convert real situations into <<有理数/rational number>> operations. The key is correctly defining positive and negative directions.

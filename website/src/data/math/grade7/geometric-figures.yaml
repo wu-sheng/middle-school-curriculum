@@ -1,0 +1,894 @@
+title: 几何图形初步
+titleEn: Introduction to Geometric Figures
+chapter: 6
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 45-60分钟学习 + 30分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 认识<<立体图形/solid figure>>和<<平面图形/plane figure>>，了解它们之间的关系
+  - 理解<<点/point>>、<<线/line>>、<<面/surface>>、<<体/solid>>的基本概念
+  - 掌握<<直线/straight line>>、<<射线/ray>>、<<线段/line segment>>的概念、表示方法和区别
+  - 学会比较<<线段/line segment>>的长短，理解<<线段/line segment>>的中点
+  - 掌握<<角/angle>>的概念、表示方法，能进行<<角/angle>>的比较和运算
+  - 理解<<余角/complementary angle>>和<<补角/supplementary angle>>的概念及性质
+objectivesEn:
+  - Recognize <<立体图形/solid figure>>s and <<平面图形/plane figure>>s, and understand their relationship
+  - Understand the basic concepts of <<点/point>>, <<线/line>>, <<面/surface>>, and <<体/solid>>
+  - Master the concepts, notation, and differences of <<直线/straight line>>, <<射线/ray>>, and <<线段/line segment>>
+  - Learn to compare the lengths of <<线段/line segment>>s and understand the <<中点/midpoint>> of a <<线段/line segment>>
+  - Master the concept and notation of <<角/angle>>s, and be able to compare and calculate <<角/angle>>s
+  - Understand the concepts and properties of <<余角/complementary angle>>s and <<补角/supplementary angle>>s
+
+prerequisites:
+  title: 从小学知识出发——几何图形在哪里？
+  titleEn: "Starting from elementary school knowledge — where are geometric figures?"
+  intro: |
+    小学里，我们已经认识了一些图形：
+  introEn: |
+    In elementary school, we already learned about some figures:
+  knownNumbers:
+    - "<<长方形/rectangle>>、<<正方形/square>>、<<三角形/triangle>>、<<圆/circle>>等<<平面图形/plane figure>>"
+    - "<<长方体/cuboid>>、<<正方体/cube>>、<<圆柱/cylinder>>、<<圆锥/cone>>等<<立体图形/solid figure>>"
+    - 用尺子量长度，用量角器量<<角/angle>>
+  knownNumbersEn:
+    - "<<平面图形/plane figure>>s such as <<长方形/rectangle>>, <<正方形/square>>, <<三角形/triangle>>, <<圆/circle>>"
+    - "<<立体图形/solid figure>>s such as <<长方体/cuboid>>, <<正方体/cube>>, <<圆柱/cylinder>>, <<圆锥/cone>>"
+    - "Measuring length with a ruler and measuring <<角/angle>>s with a protractor"
+  canSolve:
+    - 识别一个图形是<<三角形/triangle>>还是<<长方形/rectangle>>
+    - 用量角器量出一个<<角/angle>>是 $90°$
+    - 知道<<正方体/cube>>有 $6$ 个面、$8$ 个顶点、$12$ 条棱
+  canSolveEn:
+    - "Identify whether a figure is a <<三角形/triangle>> or a <<长方形/rectangle>>"
+    - "Use a protractor to measure that an <<角/angle>> is $90°$"
+    - "Know that a <<正方体/cube>> has $6$ faces, $8$ vertices, and $12$ edges"
+  cannotSolve:
+    - 为什么"两点之间，<<线段/line segment>>最短"？
+    - 怎样用字母规范地表示一条<<直线/straight line>>、<<射线/ray>>或<<线段/line segment>>？
+    - 如果两个<<角/angle>>的和是 $90°$ 或 $180°$，有什么特殊性质？
+    - 怎样用几何语言严谨地描述和证明？
+  cannotSolveEn:
+    - "Why is a <<线段/line segment>> the shortest path between two points?"
+    - "How to properly use letters to denote a <<直线/straight line>>, <<射线/ray>>, or <<线段/line segment>>?"
+    - "If the sum of two <<角/angle>>s is $90°$ or $180°$, what special properties exist?"
+    - "How to describe and prove things rigorously using geometric language?"
+  conclusion: |
+    七年级的几何学习，就是要用更严谨的**数学语言**来描述这些图形，学会**推理**和**计算**。
+  conclusionEn: |
+    Geometry in Grade 7 is about using more rigorous **mathematical language** to describe these figures, and learning to **reason** and **calculate**.
+
+concepts:
+  - id: solid-and-plane-figures
+    title: <<立体图形/solid figure>>与<<平面图形/plane figure>>
+    titleEn: "<<立体图形/solid figure>>s and <<平面图形/plane figure>>s"
+    content: |
+      我们周围的物体都可以看作几何图形。
+      - **<<立体图形/solid figure>>**：占据空间的图形，如<<长方体/cuboid>>、<<圆柱/cylinder>>、<<球/sphere>>、<<棱锥/pyramid>>等。
+      - **<<平面图形/plane figure>>**：在同一平面内的图形，如<<三角形/triangle>>、<<长方形/rectangle>>、<<圆/circle>>等。
+      - <<立体图形/solid figure>>从不同方向看，可以得到不同的<<平面图形/plane figure>>（即**三视图**）。
+    contentEn: |
+      Objects around us can all be viewed as geometric figures.
+      - **<<立体图形/solid figure>>s**: Figures that occupy space, such as <<长方体/cuboid>>s, <<圆柱/cylinder>>s, <<球/sphere>>s, <<棱锥/pyramid>>s, etc.
+      - **<<平面图形/plane figure>>s**: Figures in the same plane, such as <<三角形/triangle>>s, <<长方形/rectangle>>s, <<圆/circle>>s, etc.
+      - Viewing a <<立体图形/solid figure>> from different directions gives different <<平面图形/plane figure>>s (called **three views**).
+    examples:
+      - 一个<<圆柱/cylinder>>从正面看是一个<<长方形/rectangle>>，从上面看是一个<<圆/circle>>
+      - 一个<<球/sphere>>从任何方向看都是一个<<圆/circle>>
+      - 一个<<正方体/cube>>的展开图是由 $6$ 个<<正方形/square>>组成的
+    examplesEn:
+      - "A <<圆柱/cylinder>> looks like a <<长方形/rectangle>> from the front and a <<圆/circle>> from above"
+      - "A <<球/sphere>> looks like a <<圆/circle>> from any direction"
+      - "The net of a <<正方体/cube>> is composed of $6$ <<正方形/square>>s"
+    hasVisualization: true
+
+  - id: point-line-surface-solid
+    title: <<点/point>>、<<线/line>>、<<面/surface>>、<<体/solid>>
+    titleEn: "<<点/point>>, <<线/line>>, <<面/surface>>, and <<体/solid>>"
+    content: |
+      几何图形都是由<<点/point>>、<<线/line>>、<<面/surface>>、<<体/solid>>组成的。
+      - **<<点/point>>**：没有大小，只有位置。两条<<线/line>>相交得到一个<<点/point>>。
+      - **<<线/line>>**：没有宽度，只有长度方向。两个<<面/surface>>相交得到一条<<线/line>>。
+      - **<<面/surface>>**：没有厚度，有长和宽。<<面/surface>>有<<平面/flat surface>>和<<曲面/curved surface>>之分。
+      - **<<体/solid>>**：有长、宽、高，占据空间。
+    contentEn: |
+      Geometric figures are all composed of <<点/point>>s, <<线/line>>s, <<面/surface>>s, and <<体/solid>>s.
+      - **<<点/point>>**: Has no size, only position. Two <<线/line>>s intersect to form a <<点/point>>.
+      - **<<线/line>>**: Has no width, only direction and length. Two <<面/surface>>s intersect to form a <<线/line>>.
+      - **<<面/surface>>**: Has no thickness, only length and width. <<面/surface>>s can be <<平面/flat surface>>s or <<曲面/curved surface>>s.
+      - **<<体/solid>>**: Has length, width, and height, and occupies space.
+    examples:
+      - "<<长方体/cuboid>>有 $8$ 个顶点（<<点/point>>）、$12$ 条棱（<<线/line>>）、$6$ 个面（<<面/surface>>）"
+      - 笔尖在纸上点一下形成一个<<点/point>>
+      - 两面墙交接的地方形成一条<<线/line>>
+    examplesEn:
+      - "A <<长方体/cuboid>> has $8$ vertices (<<点/point>>s), $12$ edges (<<线/line>>s), and $6$ faces (<<面/surface>>s)"
+      - "A pen tip touching paper forms a <<点/point>>"
+      - "Where two walls meet forms a <<线/line>>"
+
+  - id: line-ray-segment
+    title: <<直线/straight line>>、<<射线/ray>>、<<线段/line segment>>
+    titleEn: "<<直线/straight line>>, <<射线/ray>>, and <<线段/line segment>>"
+    content: |
+      这三种都是"直的线"，区别在于**端点个数**和**是否可以延伸**：
+      - **<<直线/straight line>>**：没有端点，向两个方向无限延伸。经过两点 $A$、$B$，可以记作<<直线/straight line>> $AB$ 或<<直线/straight line>> $l$。
+      - **<<射线/ray>>**：有 $1$ 个端点，向一个方向无限延伸。从端点 $O$ 经过点 $A$，记作<<射线/ray>> $\overrightarrow{OA}$（端点写在前面）。
+      - **<<线段/line segment>>**：有 $2$ 个端点，不能延伸，有确定的长度。连接 $A$、$B$ 两点的<<线段/line segment>>记作 $\overline{AB}$（或<<线段/line segment>> $AB$）。
+    contentEn: |
+      These three are all "straight lines," distinguished by **number of endpoints** and **whether they extend**:
+      - **<<直线/straight line>>**: No endpoints, extends infinitely in both directions. Through points $A$ and $B$, written as <<直线/straight line>> $AB$ or <<直线/straight line>> $l$.
+      - **<<射线/ray>>**: Has $1$ endpoint, extends infinitely in one direction. From endpoint $O$ through point $A$, written as <<射线/ray>> $\overrightarrow{OA}$ (endpoint written first).
+      - **<<线段/line segment>>**: Has $2$ endpoints, cannot extend, has a definite length. The <<线段/line segment>> connecting $A$ and $B$ is written as $\overline{AB}$ (or <<线段/line segment>> $AB$).
+    classification:
+      - name: <<直线/straight line>>
+        nameEn: <<直线/straight line>>
+        examples: "无端点，向两方延伸，不可度量长度"
+      - name: <<射线/ray>>
+        nameEn: <<射线/ray>>
+        examples: "$1$ 个端点，向一方延伸，不可度量长度"
+      - name: <<线段/line segment>>
+        nameEn: <<线段/line segment>>
+        examples: "$2$ 个端点，不能延伸，可以度量长度"
+    notes:
+      - "经过两点有且只有一条<<直线/straight line>>（两点确定一条<<直线/straight line>>）"
+      - "两点之间，<<线段/line segment>>最短（<<线段/line segment>>的基本性质）"
+      - "两点之间的距离就是连接这两点的<<线段/line segment>>的长度"
+    notesEn:
+      - "Through two points, there is one and only one <<直线/straight line>> (two points determine a <<直线/straight line>>)"
+      - "Between two points, the <<线段/line segment>> is the shortest path (basic property of <<线段/line segment>>s)"
+      - "The distance between two points is the length of the <<线段/line segment>> connecting them"
+    hasVisualization: true
+
+  - id: segment-comparison
+    title: <<线段/line segment>>的比较与运算
+    titleEn: Comparison and operations of <<线段/line segment>>s
+    content: |
+      **比较<<线段/line segment>>长短**的两种方法：
+      1. **度量法**：用尺子分别量出长度，再比较数值。
+      2. **叠合法**：把一条<<线段/line segment>>移到另一条上，使一个端点重合，看另一端的位置。
+
+      **<<线段/line segment>>的<<中点/midpoint>>**：
+      - 如果点 $C$ 在<<线段/line segment>> $\overline{AB}$ 上，且 $AC = CB = \frac{1}{2}AB$，则点 $C$ 是<<线段/line segment>> $\overline{AB}$ 的<<中点/midpoint>>。
+
+      **<<线段/line segment>>的和与差**：
+      - 如果点 $C$ 在<<线段/line segment>> $\overline{AB}$ 上，则 $AC + CB = AB$，即 $CB = AB - AC$。
+    contentEn: |
+      **Two methods for comparing <<线段/line segment>> lengths**:
+      1. **Measurement method**: Measure each length with a ruler, then compare the values.
+      2. **Superposition method**: Move one <<线段/line segment>> onto another, align one endpoint, and check the other endpoint's position.
+
+      **<<中点/midpoint>> of a <<线段/line segment>>**:
+      - If point $C$ is on <<线段/line segment>> $\overline{AB}$, and $AC = CB = \frac{1}{2}AB$, then point $C$ is the <<中点/midpoint>> of <<线段/line segment>> $\overline{AB}$.
+
+      **Sum and difference of <<线段/line segment>>s**:
+      - If point $C$ is on <<线段/line segment>> $\overline{AB}$, then $AC + CB = AB$, i.e., $CB = AB - AC$.
+    examples:
+      - '已知<<线段/line segment>> $\overline{AB} = 10$ cm，点 $C$ 是<<线段/line segment>> $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = CB = 5$ cm'
+      - '点 $C$ 在<<线段/line segment>> $\overline{AB}$ 上，$AC = 3$ cm，$CB = 4$ cm，则 $AB = AC + CB = 7$ cm'
+    examplesEn:
+      - "Given <<线段/line segment>> $\\overline{AB} = 10$ cm, point $C$ is the <<中点/midpoint>> of $\\overline{AB}$, then $AC = CB = 5$ cm"
+      - "Point $C$ is on <<线段/line segment>> $\\overline{AB}$, $AC = 3$ cm, $CB = 4$ cm, then $AB = AC + CB = 7$ cm"
+    hasVisualization: true
+
+  - id: angle-concept
+    title: <<角/angle>>的概念与表示
+    titleEn: Concept and notation of <<角/angle>>s
+    content: |
+      **<<角/angle>>的定义**：
+      - 定义一：从同一个<<点/point>>出发的两条<<射线/ray>>所组成的图形叫做<<角/angle>>。这个<<点/point>>叫做<<角/angle>>的**<<顶点/vertex>>**，两条<<射线/ray>>叫做<<角/angle>>的**<<边/side>>**。
+      - 定义二：一条<<射线/ray>>绕着它的端点旋转而形成的图形叫做<<角/angle>>。
+
+      **<<角/angle>>的表示方法**：
+      - 用三个字母表示：$\angle AOB$（<<顶点/vertex>>字母写在中间）
+      - 用一个字母表示：$\angle O$（当<<顶点/vertex>>处只有一个<<角/angle>>时）
+      - 用数字编号表示：$\angle 1$、$\angle 2$
+
+      **<<角/angle>>的度量单位**：
+      - $1$ 周角 $= 360°$
+      - $1$ 平角 $= 180°$
+      - $1°= 60'$（$1$ 度 $= 60$ 分）
+      - $1' = 60''$（$1$ 分 $= 60$ 秒）
+    contentEn: |
+      **Definition of an <<角/angle>>**:
+      - Definition 1: A figure formed by two <<射线/ray>>s starting from the same <<点/point>> is called an <<角/angle>>. This <<点/point>> is called the **<<顶点/vertex>>** of the <<角/angle>>, and the two <<射线/ray>>s are called the **<<边/side>>s** of the <<角/angle>>.
+      - Definition 2: A figure formed by a <<射线/ray>> rotating around its endpoint is called an <<角/angle>>.
+
+      **Notation for <<角/angle>>s**:
+      - Using three letters: $\angle AOB$ (the <<顶点/vertex>> letter is written in the middle)
+      - Using one letter: $\angle O$ (when there is only one <<角/angle>> at the <<顶点/vertex>>)
+      - Using numbers: $\angle 1$, $\angle 2$
+
+      **Units of <<角/angle>> measurement**:
+      - $1$ full rotation $= 360°$
+      - $1$ straight <<角/angle>> $= 180°$
+      - $1° = 60'$ ($1$ degree $= 60$ minutes)
+      - $1' = 60''$ ($1$ minute $= 60$ seconds)
+    hasVisualization: true
+
+  - id: angle-comparison
+    title: <<角/angle>>的比较与运算
+    titleEn: Comparison and operations of <<角/angle>>s
+    content: |
+      **比较<<角/angle>>的大小**：
+      1. **度量法**：用量角器分别量出度数，再比较。
+      2. **叠合法**：把两个<<角/angle>>的<<顶点/vertex>>和一条<<边/side>>重合，看另一条<<边/side>>的位置。
+
+      **<<角/angle>>的<<平分线/angle bisector>>**：
+      - 从<<角/angle>>的<<顶点/vertex>>出发的一条<<射线/ray>>，如果把这个<<角/angle>>分成两个相等的<<角/angle>>，那么这条<<射线/ray>>叫做这个<<角/angle>>的<<平分线/angle bisector>>。
+      - 如果 $\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，则 $\angle AOC = \angle COB = \frac{1}{2}\angle AOB$。
+
+      **<<角/angle>>的和与差**：
+      - 如果<<射线/ray>> $\overrightarrow{OC}$ 在 $\angle AOB$ 的内部，则 $\angle AOC + \angle COB = \angle AOB$。
+    contentEn: |
+      **Comparing <<角/angle>>s**:
+      1. **Measurement method**: Measure each <<角/angle>> with a protractor, then compare.
+      2. **Superposition method**: Align the <<顶点/vertex>>es and one <<边/side>> of two <<角/angle>>s, then check the position of the other <<边/side>>.
+
+      **<<平分线/angle bisector>>**:
+      - A <<射线/ray>> from the <<顶点/vertex>> of an <<角/angle>> that divides it into two equal <<角/angle>>s is called the <<平分线/angle bisector>>.
+      - If $\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\angle AOB$, then $\angle AOC = \angle COB = \frac{1}{2}\angle AOB$.
+
+      **Sum and difference of <<角/angle>>s**:
+      - If <<射线/ray>> $\overrightarrow{OC}$ is inside $\angle AOB$, then $\angle AOC + \angle COB = \angle AOB$.
+    examples:
+      - "已知 $\\angle AOB = 70°$，$\\overrightarrow{OC}$ 是 $\\angle AOB$ 的<<平分线/angle bisector>>，则 $\\angle AOC = \\angle COB = 35°$"
+      - "<<射线/ray>> $\\overrightarrow{OC}$ 在 $\\angle AOB$ 内部，$\\angle AOC = 25°$，$\\angle COB = 40°$，则 $\\angle AOB = 25° + 40° = 65°$"
+    examplesEn:
+      - "Given $\\angle AOB = 70°$, and $\\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\\angle AOB$, then $\\angle AOC = \\angle COB = 35°$"
+      - "<<射线/ray>> $\\overrightarrow{OC}$ is inside $\\angle AOB$, $\\angle AOC = 25°$, $\\angle COB = 40°$, then $\\angle AOB = 25° + 40° = 65°$"
+    hasVisualization: true
+
+  - id: complementary-supplementary
+    title: <<余角/complementary angle>>与<<补角/supplementary angle>>
+    titleEn: "<<余角/complementary angle>>s and <<补角/supplementary angle>>s"
+    content: |
+      **<<余角/complementary angle>>**：
+      - 如果两个<<角/angle>>的和等于 $90°$（即一个<<直角/right angle>>），那么这两个<<角/angle>>互为**<<余角/complementary angle>>**。
+      - 用式子表示：$\angle 1 + \angle 2 = 90°$，则 $\angle 1$ 和 $\angle 2$ 互余。
+
+      **<<补角/supplementary angle>>**：
+      - 如果两个<<角/angle>>的和等于 $180°$（即一个<<平角/straight angle>>），那么这两个<<角/angle>>互为**<<补角/supplementary angle>>**。
+      - 用式子表示：$\angle 1 + \angle 2 = 180°$，则 $\angle 1$ 和 $\angle 2$ 互补。
+
+      **重要性质**：
+      - 同角（或等角）的<<余角/complementary angle>>相等
+      - 同角（或等角）的<<补角/supplementary angle>>相等
+    contentEn: |
+      **<<余角/complementary angle>>s**:
+      - If the sum of two <<角/angle>>s equals $90°$ (a <<直角/right angle>>), then these two <<角/angle>>s are **<<余角/complementary angle>>s** of each other.
+      - In formula: $\angle 1 + \angle 2 = 90°$, then $\angle 1$ and $\angle 2$ are complementary.
+
+      **<<补角/supplementary angle>>s**:
+      - If the sum of two <<角/angle>>s equals $180°$ (a <<平角/straight angle>>), then these two <<角/angle>>s are **<<补角/supplementary angle>>s** of each other.
+      - In formula: $\angle 1 + \angle 2 = 180°$, then $\angle 1$ and $\angle 2$ are supplementary.
+
+      **Important properties**:
+      - <<余角/complementary angle>>s of the same <<角/angle>> (or equal <<角/angle>>s) are equal
+      - <<补角/supplementary angle>>s of the same <<角/angle>> (or equal <<角/angle>>s) are equal
+    examples:
+      - "如果 $\\angle 1 = 35°$，则 $\\angle 1$ 的<<余角/complementary angle>> $= 90° - 35° = 55°$，$\\angle 1$ 的<<补角/supplementary angle>> $= 180° - 35° = 145°$"
+      - "已知 $\\angle A = \\angle B$，$\\angle C$ 是 $\\angle A$ 的<<余角/complementary angle>>，$\\angle D$ 是 $\\angle B$ 的<<余角/complementary angle>>，则 $\\angle C = \\angle D$"
+    examplesEn:
+      - "If $\\angle 1 = 35°$, then the <<余角/complementary angle>> of $\\angle 1$ $= 90° - 35° = 55°$, and the <<补角/supplementary angle>> of $\\angle 1$ $= 180° - 35° = 145°$"
+      - "Given $\\angle A = \\angle B$, $\\angle C$ is the <<余角/complementary angle>> of $\\angle A$, $\\angle D$ is the <<余角/complementary angle>> of $\\angle B$, then $\\angle C = \\angle D$"
+
+  - id: geometric-language
+    title: 基本作图与几何语言
+    titleEn: Basic constructions and geometric language
+    content: |
+      几何中常用的基本作图有：
+      1. **画一条<<线段/line segment>>等于已知<<线段/line segment>>**
+      2. **画一个<<角/angle>>等于已知<<角/angle>>**
+      3. **画<<线段/line segment>>的<<中点/midpoint>>**
+      4. **画<<角/angle>>的<<平分线/angle bisector>>**
+
+      **几何语言表达**：
+      - "因为……所以……"是几何推理的基本格式。
+      - 例："因为 $\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，所以 $\angle AOC = \angle COB = \frac{1}{2}\angle AOB$。"
+      - 学会把文字条件翻译成数学符号，把数学符号翻译成文字。
+    contentEn: |
+      Common basic constructions in geometry:
+      1. **Draw a <<线段/line segment>> equal to a given <<线段/line segment>>**
+      2. **Draw an <<角/angle>> equal to a given <<角/angle>>**
+      3. **Draw the <<中点/midpoint>> of a <<线段/line segment>>**
+      4. **Draw the <<平分线/angle bisector>> of an <<角/angle>>**
+
+      **Geometric language**:
+      - "Because ... therefore ..." is the basic format of geometric reasoning.
+      - Example: "Because $\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\angle AOB$, therefore $\angle AOC = \angle COB = \frac{1}{2}\angle AOB$."
+      - Learn to translate verbal conditions into mathematical symbols, and mathematical symbols into words.
+
+realLife:
+  - category: 建筑
+    categoryEn: Architecture
+    positive: "建筑物的墙面是<<平面/flat surface>>，柱子可以看作<<圆柱/cylinder>>"
+    positiveEn: "The wall of a building is a <<平面/flat surface>>, and a pillar can be seen as a <<圆柱/cylinder>>"
+    negative: "弯曲的拱门不是<<平面图形/plane figure>>，而是<<曲面/curved surface>>"
+    negativeEn: "A curved arch is not a <<平面图形/plane figure>> but a <<曲面/curved surface>>"
+  - category: 道路交通
+    categoryEn: Roads and traffic
+    positive: "两条道路的交叉口形成了<<角/angle>>，红绿灯的朝向就是<<射线/ray>>的方向"
+    positiveEn: "An intersection of two roads forms an <<角/angle>>, and the direction of a traffic light is the direction of a <<射线/ray>>"
+    negative: "弯道不是<<直线/straight line>>，而是曲线"
+    negativeEn: "A curved road is not a <<直线/straight line>> but a curve"
+  - category: 体育运动
+    categoryEn: Sports
+    positive: "足球场上的角球区标线就是<<射线/ray>>，百米跑道上两点之间的直线距离就是<<线段/line segment>>的长度"
+    positiveEn: "The corner kick marking on a soccer field is a <<射线/ray>>, and the straight-line distance between two points on a $100$-meter track is the length of a <<线段/line segment>>"
+    negative: "环形跑道不是<<线段/line segment>>，而是曲线"
+    negativeEn: "A circular track is not a <<线段/line segment>> but a curve"
+  - category: 日常生活
+    categoryEn: Daily life
+    positive: "张开的剪刀两个刀刃形成一个<<角/angle>>，钟表上时针和分针也构成<<角/angle>>"
+    positiveEn: "The two blades of an open pair of scissors form an <<角/angle>>, and the hour and minute hands on a clock also form an <<角/angle>>"
+    negative: "张开的扇子不是一个标准的<<角/angle>>，因为扇面是曲面"
+    negativeEn: "An open fan is not a standard <<角/angle>> because the fan surface is curved"
+
+examples:
+  - type: 1
+    title: 识别<<立体图形/solid figure>>的三视图
+    titleEn: Identifying three views of <<立体图形/solid figure>>s
+    question: |
+      一个<<圆柱/cylinder>>从正面看是什么图形？从上面看呢？
+    questionEn: |
+      What figure does a <<圆柱/cylinder>> look like from the front? From above?
+    steps:
+      - "从正面看<<圆柱/cylinder>>，看到的轮廓是一个<<长方形/rectangle>>"
+      - "从上面看<<圆柱/cylinder>>，看到的轮廓是一个<<圆/circle>>"
+    stepsEn:
+      - "Viewing a <<圆柱/cylinder>> from the front, the outline is a <<长方形/rectangle>>"
+      - "Viewing a <<圆柱/cylinder>> from above, the outline is a <<圆/circle>>"
+    answer: "从正面看是<<长方形/rectangle>>，从上面看是<<圆/circle>>。"
+    answerEn: "From the front it is a <<长方形/rectangle>>, from above it is a <<圆/circle>>."
+
+  - type: 2
+    title: 用字母表示<<直线/straight line>>、<<射线/ray>>、<<线段/line segment>>
+    titleEn: Using letters to denote <<直线/straight line>>, <<射线/ray>>, and <<线段/line segment>>
+    question: |
+      如图，直线上有三个点 $A$、$B$、$C$（$B$ 在 $A$、$C$ 之间）。请写出图中所有的<<线段/line segment>>和<<射线/ray>>（以 $A$ 为端点的）。
+    questionEn: |
+      Given three points $A$, $B$, $C$ on a straight line ($B$ is between $A$ and $C$). List all the <<线段/line segment>>s and all the <<射线/ray>>s with endpoint $A$.
+    steps:
+      - "<<线段/line segment>>：$\\overline{AB}$、$\\overline{BC}$、$\\overline{AC}$，共 $3$ 条"
+      - "以 $A$ 为端点的<<射线/ray>>：$\\overrightarrow{AB}$（即 $\\overrightarrow{AC}$，同一条）、$\\overrightarrow{A}$ 沿反方向（即 $A$ 反向延长的<<射线/ray>>），共 $2$ 条"
+    stepsEn:
+      - "<<线段/line segment>>s: $\\overline{AB}$, $\\overline{BC}$, $\\overline{AC}$, a total of $3$"
+      - "<<射线/ray>>s with endpoint $A$: $\\overrightarrow{AB}$ (same as $\\overrightarrow{AC}$, since $B$ and $C$ are on the same side), and the <<射线/ray>> in the opposite direction from $A$, a total of $2$"
+    answer: "<<线段/line segment>>有 $3$ 条：$\\overline{AB}$、$\\overline{BC}$、$\\overline{AC}$。以 $A$ 为端点的<<射线/ray>>有 $2$ 条。"
+    answerEn: "There are $3$ <<线段/line segment>>s: $\\overline{AB}$, $\\overline{BC}$, $\\overline{AC}$. There are $2$ <<射线/ray>>s with endpoint $A$."
+
+  - type: 3
+    title: 利用"两点之间<<线段/line segment>>最短"解题
+    titleEn: "Using 'the <<线段/line segment>> is the shortest path between two points'"
+    question: |
+      要从公路旁的村庄 $A$ 修一条最短的路到公路 $l$，应该怎么修？
+    questionEn: |
+      To build the shortest road from village $A$ beside a highway $l$ to the highway, how should it be built?
+    steps:
+      - 从点 $A$ 向<<直线/straight line>> $l$ 作垂线段
+      - '由"两点之间<<线段/line segment>>最短"和"垂线段最短"可知，<<垂线段/perpendicular segment>>是从点 $A$ 到<<直线/straight line>> $l$ 的最短路径'
+    stepsEn:
+      - "Draw a <<垂线段/perpendicular segment>> from point $A$ to <<直线/straight line>> $l$"
+      - "By 'the <<线段/line segment>> is the shortest path between two points' and 'the <<垂线段/perpendicular segment>> is the shortest,' the <<垂线段/perpendicular segment>> is the shortest path from $A$ to $l$"
+    answer: "从 $A$ 向公路 $l$ 作<<垂线段/perpendicular segment>>，即 $A$ 到公路的垂直距离就是最短路线。"
+    answerEn: "Draw a <<垂线段/perpendicular segment>> from $A$ to highway $l$; the perpendicular distance from $A$ to the highway is the shortest route."
+
+  - type: 4
+    title: <<线段/line segment>>的<<中点/midpoint>>计算
+    titleEn: Calculating the <<中点/midpoint>> of a <<线段/line segment>>
+    question: |
+      已知<<线段/line segment>> $\overline{AB} = 8$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，点 $D$ 是 $\overline{CB}$ 的<<中点/midpoint>>。求 $\overline{AD}$ 的长度。
+    questionEn: |
+      Given <<线段/line segment>> $\overline{AB} = 8$ cm, point $C$ is the <<中点/midpoint>> of $\overline{AB}$, and point $D$ is the <<中点/midpoint>> of $\overline{CB}$. Find the length of $\overline{AD}$.
+    steps:
+      - "因为 $C$ 是 $\\overline{AB}$ 的<<中点/midpoint>>，所以 $AC = CB = \\frac{1}{2} \\times 8 = 4$ cm"
+      - "因为 $D$ 是 $\\overline{CB}$ 的<<中点/midpoint>>，所以 $CD = DB = \\frac{1}{2} \\times 4 = 2$ cm"
+      - "$AD = AC + CD = 4 + 2 = 6$ cm"
+    stepsEn:
+      - "Since $C$ is the <<中点/midpoint>> of $\\overline{AB}$, $AC = CB = \\frac{1}{2} \\times 8 = 4$ cm"
+      - "Since $D$ is the <<中点/midpoint>> of $\\overline{CB}$, $CD = DB = \\frac{1}{2} \\times 4 = 2$ cm"
+      - "$AD = AC + CD = 4 + 2 = 6$ cm"
+    answer: "$\\overline{AD} = 6$ cm"
+    answerEn: "$\\overline{AD} = 6$ cm"
+
+  - type: 5
+    title: <<角/angle>>的表示和计算
+    titleEn: Notation and calculation of <<角/angle>>s
+    question: |
+      如图，$\overrightarrow{OC}$ 在 $\angle AOB$ 内部，$\angle AOC = 28°$，$\angle BOC = 17°$。求 $\angle AOB$ 的度数。
+    questionEn: |
+      As shown, $\overrightarrow{OC}$ is inside $\angle AOB$, $\angle AOC = 28°$, $\angle BOC = 17°$. Find the measure of $\angle AOB$.
+    steps:
+      - "因为<<射线/ray>> $\\overrightarrow{OC}$ 在 $\\angle AOB$ 的内部"
+      - "所以 $\\angle AOB = \\angle AOC + \\angle COB = 28° + 17° = 45°$"
+    stepsEn:
+      - "Since <<射线/ray>> $\\overrightarrow{OC}$ is inside $\\angle AOB$"
+      - "Therefore $\\angle AOB = \\angle AOC + \\angle COB = 28° + 17° = 45°$"
+    answer: "$\\angle AOB = 45°$"
+    answerEn: "$\\angle AOB = 45°$"
+
+  - type: 6
+    title: <<角/angle>>的<<平分线/angle bisector>>
+    titleEn: <<平分线/angle bisector>> of an <<角/angle>>
+    question: |
+      已知 $\angle AOB = 76°$，$\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>。求 $\angle AOC$ 的度数。
+    questionEn: |
+      Given $\angle AOB = 76°$, and $\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\angle AOB$. Find the measure of $\angle AOC$.
+    steps:
+      - "因为 $\\overrightarrow{OC}$ 是 $\\angle AOB$ 的<<平分线/angle bisector>>"
+      - "所以 $\\angle AOC = \\frac{1}{2}\\angle AOB = \\frac{1}{2} \\times 76° = 38°$"
+    stepsEn:
+      - "Since $\\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\\angle AOB$"
+      - "Therefore $\\angle AOC = \\frac{1}{2}\\angle AOB = \\frac{1}{2} \\times 76° = 38°$"
+    answer: "$\\angle AOC = 38°$"
+    answerEn: "$\\angle AOC = 38°$"
+
+  - type: 7
+    title: <<余角/complementary angle>>和<<补角/supplementary angle>>的计算
+    titleEn: Calculating <<余角/complementary angle>>s and <<补角/supplementary angle>>s
+    question: |
+      一个<<角/angle>>的<<补角/supplementary angle>>比它的<<余角/complementary angle>>大多少度？
+    questionEn: |
+      How many degrees larger is the <<补角/supplementary angle>> of an <<角/angle>> than its <<余角/complementary angle>>?
+    steps:
+      - "设这个<<角/angle>>为 $\\angle \\alpha$"
+      - "它的<<余角/complementary angle>>为 $90° - \\angle \\alpha$"
+      - "它的<<补角/supplementary angle>>为 $180° - \\angle \\alpha$"
+      - "差 $= (180° - \\angle \\alpha) - (90° - \\angle \\alpha) = 180° - \\angle \\alpha - 90° + \\angle \\alpha = 90°$"
+    stepsEn:
+      - "Let the <<角/angle>> be $\\angle \\alpha$"
+      - "Its <<余角/complementary angle>> is $90° - \\angle \\alpha$"
+      - "Its <<补角/supplementary angle>> is $180° - \\angle \\alpha$"
+      - "Difference $= (180° - \\angle \\alpha) - (90° - \\angle \\alpha) = 180° - \\angle \\alpha - 90° + \\angle \\alpha = 90°$"
+    answer: "一个<<角/angle>>的<<补角/supplementary angle>>比它的<<余角/complementary angle>>大 $90°$。这个结论与<<角/angle>>的大小无关。"
+    answerEn: "The <<补角/supplementary angle>> of an <<角/angle>> is always $90°$ larger than its <<余角/complementary angle>>. This conclusion is independent of the size of the <<角/angle>>."
+
+  - type: 8
+    title: 度分秒的换算
+    titleEn: Converting degrees, minutes, and seconds
+    question: |
+      把 $35°24'$ 与 $18°48'$ 相加。
+    questionEn: |
+      Add $35°24'$ and $18°48'$.
+    steps:
+      - "先加分：$24' + 48' = 72' = 1°12'$"
+      - "再加度：$35° + 18° = 53°$"
+      - "合在一起：$53° + 1°12' = 54°12'$"
+    stepsEn:
+      - "First add the minutes: $24' + 48' = 72' = 1°12'$"
+      - "Then add the degrees: $35° + 18° = 53°$"
+      - "Combine: $53° + 1°12' = 54°12'$"
+    answer: "$35°24' + 18°48' = 54°12'$"
+    answerEn: "$35°24' + 18°48' = 54°12'$"
+
+commonMistakes:
+  - "<<射线/ray>>的表示中端点要写在前面：$\\overrightarrow{OA}$ 和 $\\overrightarrow{AO}$ 是不同的<<射线/ray>>，端点不同"
+  - '<<直线/straight line>>没有长度，不能说"<<直线/straight line>> $AB$ 的长度"；只有<<线段/line segment>>才有长度'
+  - "<<角/angle>>的表示 $\\angle AOB$ 中，<<顶点/vertex>>字母 $O$ 一定要写在中间，不能写成 $\\angle ABO$"
+  - '<<余角/complementary angle>>和<<补角/supplementary angle>>是两个<<角/angle>>之间的关系，不能说"一个<<角/angle>>是<<余角/complementary angle>>"，要说"两个<<角/angle>>互为<<余角/complementary angle>>"'
+  - "度分秒进率不是 $100$，而是 $60$：$1° = 60'$，$1' = 60''$，计算时注意进位和借位"
+  - '不要把<<线段/line segment>>的<<中点/midpoint>>理解为"中间的一个点就行"，必须满足 $AC = CB$ 才是<<中点/midpoint>>'
+commonMistakesEn:
+  - "In <<射线/ray>> notation, the endpoint must be written first: $\\overrightarrow{OA}$ and $\\overrightarrow{AO}$ are different <<射线/ray>>s with different endpoints"
+  - "A <<直线/straight line>> has no length — you cannot say 'the length of <<直线/straight line>> $AB$'; only <<线段/line segment>>s have length"
+  - "In the notation $\\angle AOB$, the <<顶点/vertex>> letter $O$ must be in the middle — do not write $\\angle ABO$"
+  - "<<余角/complementary angle>> and <<补角/supplementary angle>> describe a relationship between two <<角/angle>>s — do not say 'an <<角/angle>> is a <<余角/complementary angle>>', but rather 'two <<角/angle>>s are <<余角/complementary angle>>s of each other'"
+  - "The conversion rate for degrees, minutes, seconds is $60$, not $100$: $1° = 60'$, $1' = 60''$ — pay attention to carrying and borrowing in calculations"
+  - "The <<中点/midpoint>> of a <<线段/line segment>> is not just 'any point in the middle'; it must satisfy $AC = CB$ to be the <<中点/midpoint>>"
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "9-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        <<直线/straight line>>有______个端点，<<射线/ray>>有______个端点，<<线段/line segment>>有______个端点。
+      questionEn: |
+        A <<直线/straight line>> has ______ endpoint(s), a <<射线/ray>> has ______ endpoint(s), a <<线段/line segment>> has ______ endpoint(s).
+      correctValue: "0,1,2"
+      answer: "$0$、$1$、$2$"
+      answerEn: "$0$, $1$, $2$"
+      explanation: |
+        <<直线/straight line>>向两端无限延伸，没有端点；<<射线/ray>>有一个端点，向一个方向延伸；<<线段/line segment>>有两个端点。
+      explanationEn: |
+        A <<直线/straight line>> extends infinitely in both directions with no endpoints; a <<射线/ray>> has one endpoint and extends in one direction; a <<线段/line segment>> has two endpoints.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        已知<<线段/line segment>> $\overline{AB} = 12$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = $ ______ cm。
+      questionEn: |
+        Given <<线段/line segment>> $\overline{AB} = 12$ cm, and point $C$ is the <<中点/midpoint>> of $\overline{AB}$, then $AC = $ ______ cm.
+      correctValue: "6"
+      answer: "$6$"
+      answerEn: "$6$"
+      explanation: |
+        因为 $C$ 是<<中点/midpoint>>，所以 $AC = \frac{1}{2}AB = \frac{1}{2} \times 12 = 6$ cm。
+      explanationEn: |
+        Since $C$ is the <<中点/midpoint>>, $AC = \frac{1}{2}AB = \frac{1}{2} \times 12 = 6$ cm.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $40°$ 的<<余角/complementary angle>>是______°，$40°$ 的<<补角/supplementary angle>>是______°。
+      questionEn: |
+        The <<余角/complementary angle>> of $40°$ is ______°, and the <<补角/supplementary angle>> of $40°$ is ______°.
+      correctValue: "50,140"
+      answer: "$50°$、$140°$"
+      answerEn: "$50°$, $140°$"
+      explanation: |
+        <<余角/complementary angle>> $= 90° - 40° = 50°$；<<补角/supplementary angle>> $= 180° - 40° = 140°$。
+      explanationEn: |
+        <<余角/complementary angle>> $= 90° - 40° = 50°$; <<补角/supplementary angle>> $= 180° - 40° = 140°$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        已知 $\angle AOB = 90°$，$\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，则 $\angle AOC = $ ______°。
+      questionEn: |
+        Given $\angle AOB = 90°$ and $\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\angle AOB$, then $\angle AOC = $ ______°.
+      correctValue: "45"
+      answer: "$45°$"
+      answerEn: "$45°$"
+      explanation: |
+        <<平分线/angle bisector>>把<<角/angle>>分成两个相等的<<角/angle>>，所以 $\angle AOC = \frac{1}{2} \times 90° = 45°$。
+      explanationEn: |
+        The <<平分线/angle bisector>> divides the <<角/angle>> into two equal <<角/angle>>s, so $\angle AOC = \frac{1}{2} \times 90° = 45°$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        经过两个点可以画无数条<<直线/straight line>>。
+      questionEn: |
+        Through two points, you can draw infinitely many <<直线/straight line>>s.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        经过两个点有且只有一条<<直线/straight line>>。这是<<直线/straight line>>的基本公理。
+      explanationEn: |
+        Through two points, there is one and only one <<直线/straight line>>. This is a basic axiom of <<直线/straight line>>s.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        <<射线/ray>> $\overrightarrow{AB}$ 和<<射线/ray>> $\overrightarrow{BA}$ 是同一条<<射线/ray>>。
+      questionEn: |
+        <<射线/ray>> $\overrightarrow{AB}$ and <<射线/ray>> $\overrightarrow{BA}$ are the same <<射线/ray>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $\overrightarrow{AB}$ 的端点是 $A$，$\overrightarrow{BA}$ 的端点是 $B$，它们端点不同、方向也可能不同，所以是不同的<<射线/ray>>。
+      explanationEn: |
+        $\overrightarrow{AB}$ has endpoint $A$, while $\overrightarrow{BA}$ has endpoint $B$. They have different endpoints and possibly different directions, so they are different <<射线/ray>>s.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        如果 $\angle 1 + \angle 2 = 90°$，那么 $\angle 1$ 和 $\angle 2$ 互为<<余角/complementary angle>>。
+      questionEn: |
+        If $\angle 1 + \angle 2 = 90°$, then $\angle 1$ and $\angle 2$ are <<余角/complementary angle>>s of each other.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<余角/complementary angle>>的定义就是两个<<角/angle>>的和等于 $90°$，与这两个<<角/angle>>是否相邻无关。
+      explanationEn: |
+        The definition of <<余角/complementary angle>>s is that the sum of two <<角/angle>>s equals $90°$, regardless of whether they are adjacent.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        两点之间，<<直线/straight line>>最短。
+      questionEn: |
+        Between two points, the <<直线/straight line>> is the shortest.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        正确说法是"两点之间，<<线段/line segment>>最短"。<<直线/straight line>>是无限延伸的，没有"长度"可言。
+      explanationEn: |
+        The correct statement is "between two points, the <<线段/line segment>> is the shortest." A <<直线/straight line>> extends infinitely and has no measurable "length."
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下列说法正确的是（　）
+      questionEn: |
+        Which of the following statements is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "A. <<线段/line segment>> $AB$ 和<<线段/line segment>> $BA$ 是不同的<<线段/line segment>>"
+            - "B. <<射线/ray>> $\\overrightarrow{OA}$ 和<<射线/ray>> $\\overrightarrow{OB}$ 一定是不同的<<射线/ray>>"
+            - "C. <<直线/straight line>>没有端点，可以度量长度"
+            - "D. 经过一个点可以画无数条<<直线/straight line>>"
+          correctValue: "D. 经过一个点可以画无数条<<直线/straight line>>"
+      answer: "D"
+      answerEn: "D"
+      explanation: |
+        A 错：<<线段/line segment>> $AB$ 和<<线段/line segment>> $BA$ 是同一条<<线段/line segment>>（两个端点相同）。
+        B 错：如果 $A$、$O$、$B$ 三点在同一条<<直线/straight line>>上且 $A$、$B$ 在 $O$ 的同侧，则 $\overrightarrow{OA}$ 和 $\overrightarrow{OB}$ 可能是同一条<<射线/ray>>。
+        C 错：<<直线/straight line>>无限延伸，不能度量长度。
+        D 对：经过一个点可以画无数条<<直线/straight line>>。
+      explanationEn: |
+        A is wrong: <<线段/line segment>> $AB$ and <<线段/line segment>> $BA$ are the same (same two endpoints).
+        B is wrong: If $A$, $O$, $B$ are collinear with $A$ and $B$ on the same side of $O$, then $\overrightarrow{OA}$ and $\overrightarrow{OB}$ could be the same <<射线/ray>>.
+        C is wrong: A <<直线/straight line>> extends infinitely and its length cannot be measured.
+        D is correct: Through one point, infinitely many <<直线/straight line>>s can be drawn.
+
+    - number: 10
+      type: 计算题
+      inputType: open
+      section: 四、计算与应用
+      sectionEn: "IV. Calculation and Application"
+      question: |
+        已知点 $C$ 在<<线段/line segment>> $\overline{AB}$ 上，$AC = 5$ cm，$CB = 3$ cm。点 $D$ 是<<线段/line segment>> $\overline{AB}$ 的<<中点/midpoint>>。求 $CD$ 的长度。
+      questionEn: |
+        Point $C$ is on <<线段/line segment>> $\overline{AB}$, $AC = 5$ cm, $CB = 3$ cm. Point $D$ is the <<中点/midpoint>> of $\overline{AB}$. Find the length of $CD$.
+      answer: |
+        $AB = AC + CB = 5 + 3 = 8$ cm
+        因为 $D$ 是<<中点/midpoint>>，$AD = \frac{1}{2}AB = 4$ cm
+        $CD = AC - AD = 5 - 4 = 1$ cm
+      answerEn: |
+        $AB = AC + CB = 5 + 3 = 8$ cm
+        Since $D$ is the <<中点/midpoint>>, $AD = \frac{1}{2}AB = 4$ cm
+        $CD = AC - AD = 5 - 4 = 1$ cm
+      explanation: |
+        先求出 $AB$ 的总长，再利用<<中点/midpoint>>求出 $AD$，最后用 $AC$ 和 $AD$ 的差得到 $CD$。
+      explanationEn: |
+        First find the total length of $AB$, then use the <<中点/midpoint>> to find $AD$, and finally the difference between $AC$ and $AD$ gives $CD$.
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算与应用
+      sectionEn: "IV. Calculation and Application"
+      question: |
+        如图，$\overrightarrow{OC}$ 在 $\angle AOB$ 内部，$\angle AOB = 100°$，$\angle AOC = 40°$。$\overrightarrow{OD}$ 是 $\angle BOC$ 的<<平分线/angle bisector>>。求 $\angle AOD$ 的度数。
+      questionEn: |
+        As shown, $\overrightarrow{OC}$ is inside $\angle AOB$, $\angle AOB = 100°$, $\angle AOC = 40°$. $\overrightarrow{OD}$ is the <<平分线/angle bisector>> of $\angle BOC$. Find the measure of $\angle AOD$.
+      answer: |
+        $\angle BOC = \angle AOB - \angle AOC = 100° - 40° = 60°$
+        因为 $\overrightarrow{OD}$ 是 $\angle BOC$ 的<<平分线/angle bisector>>，
+        $\angle COD = \frac{1}{2}\angle BOC = \frac{1}{2} \times 60° = 30°$
+        $\angle AOD = \angle AOC + \angle COD = 40° + 30° = 70°$
+      answerEn: |
+        $\angle BOC = \angle AOB - \angle AOC = 100° - 40° = 60°$
+        Since $\overrightarrow{OD}$ is the <<平分线/angle bisector>> of $\angle BOC$,
+        $\angle COD = \frac{1}{2}\angle BOC = \frac{1}{2} \times 60° = 30°$
+        $\angle AOD = \angle AOC + \angle COD = 40° + 30° = 70°$
+      explanation: |
+        先求 $\angle BOC$，再利用<<平分线/angle bisector>>求 $\angle COD$，最后利用<<角/angle>>的加法求 $\angle AOD$。
+      explanationEn: |
+        First find $\angle BOC$, then use the <<平分线/angle bisector>> to find $\angle COD$, and finally use <<角/angle>> addition to find $\angle AOD$.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        已知 $\angle \alpha = 36°$。
+        (1) 求 $\angle \alpha$ 的<<余角/complementary angle>>。
+        (2) 求 $\angle \alpha$ 的<<补角/supplementary angle>>。
+        (3) $\angle \alpha$ 的<<补角/supplementary angle>>是它的<<余角/complementary angle>>的几倍？
+      questionEn: |
+        Given $\angle \alpha = 36°$.
+        (1) Find the <<余角/complementary angle>> of $\angle \alpha$.
+        (2) Find the <<补角/supplementary angle>> of $\angle \alpha$.
+        (3) How many times is the <<补角/supplementary angle>> of $\angle \alpha$ compared to its <<余角/complementary angle>>?
+      answer: |
+        (1) <<余角/complementary angle>> $= 90° - 36° = 54°$
+        (2) <<补角/supplementary angle>> $= 180° - 36° = 144°$
+        (3) $144° \div 54° = \frac{144}{54} = \frac{8}{3}$，即<<补角/supplementary angle>>是<<余角/complementary angle>>的 $\frac{8}{3}$ 倍。
+      answerEn: |
+        (1) <<余角/complementary angle>> $= 90° - 36° = 54°$
+        (2) <<补角/supplementary angle>> $= 180° - 36° = 144°$
+        (3) $144° \div 54° = \frac{144}{54} = \frac{8}{3}$, so the <<补角/supplementary angle>> is $\frac{8}{3}$ times the <<余角/complementary angle>>.
+      explanation: |
+        利用<<余角/complementary angle>>和<<补角/supplementary angle>>的定义分别计算，然后求比值。
+      explanationEn: |
+        Use the definitions of <<余角/complementary angle>> and <<补角/supplementary angle>> to calculate, then find the ratio.
+
+summary:
+  - 能区分<<立体图形/solid figure>>和<<平面图形/plane figure>>，知道<<立体图形/solid figure>>的三视图
+  - 理解<<点/point>>、<<线/line>>、<<面/surface>>、<<体/solid>>之间的关系
+  - 能正确表示和区分<<直线/straight line>>、<<射线/ray>>和<<线段/line segment>>
+  - 掌握"两点确定一条<<直线/straight line>>"和"两点之间<<线段/line segment>>最短"
+  - 能利用<<线段/line segment>>的<<中点/midpoint>>进行计算
+  - 能正确表示<<角/angle>>，并进行<<角/angle>>的加减运算
+  - 理解<<余角/complementary angle>>和<<补角/supplementary angle>>的概念和性质
+  - 能用几何语言规范地表达推理过程
+summaryEn:
+  - "Can distinguish <<立体图形/solid figure>>s from <<平面图形/plane figure>>s and know the three views of <<立体图形/solid figure>>s"
+  - "Understand the relationships among <<点/point>>s, <<线/line>>s, <<面/surface>>s, and <<体/solid>>s"
+  - "Can correctly denote and distinguish <<直线/straight line>>s, <<射线/ray>>s, and <<线段/line segment>>s"
+  - "Master 'two points determine a <<直线/straight line>>' and 'the <<线段/line segment>> is the shortest path between two points'"
+  - "Can perform calculations using the <<中点/midpoint>> of a <<线段/line segment>>"
+  - "Can correctly denote <<角/angle>>s and perform addition and subtraction of <<角/angle>>s"
+  - "Understand the concepts and properties of <<余角/complementary angle>>s and <<补角/supplementary angle>>s"
+  - "Can express reasoning processes using proper geometric language"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        下列图形中，是<<立体图形/solid figure>>的是（　）
+      questionEn: |
+        Among the following figures, which is a <<立体图形/solid figure>>? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - "A. <<三角形/triangle>>"
+            - "B. <<圆/circle>>"
+            - "C. <<长方形/rectangle>>"
+            - "D. <<圆柱/cylinder>>"
+          correctValue: "D. <<圆柱/cylinder>>"
+      answer: "D"
+      answerEn: "D"
+      explanation: |
+        <<三角形/triangle>>、<<圆/circle>>、<<长方形/rectangle>>都是<<平面图形/plane figure>>，只有<<圆柱/cylinder>>占据空间，是<<立体图形/solid figure>>。
+      explanationEn: |
+        <<三角形/triangle>>, <<圆/circle>>, and <<长方形/rectangle>> are all <<平面图形/plane figure>>s. Only the <<圆柱/cylinder>> occupies space and is a <<立体图形/solid figure>>.
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        已知<<线段/line segment>> $\overline{AB} = 10$ cm，点 $C$ 是<<线段/line segment>> $\overline{AB}$ 上一点，且 $AC = 4$ cm，点 $M$ 是<<线段/line segment>> $\overline{CB}$ 的<<中点/midpoint>>，则<<线段/line segment>> $\overline{AM}$ 的长度是______ cm。
+      questionEn: |
+        Given <<线段/line segment>> $\overline{AB} = 10$ cm, point $C$ is on $\overline{AB}$ with $AC = 4$ cm, and point $M$ is the <<中点/midpoint>> of $\overline{CB}$. The length of $\overline{AM}$ is ______ cm.
+      correctValue: "7"
+      answer: "$7$"
+      answerEn: "$7$"
+      explanation: |
+        $CB = AB - AC = 10 - 4 = 6$ cm
+        $M$ 是 $\overline{CB}$ 的<<中点/midpoint>>，所以 $CM = \frac{1}{2} \times 6 = 3$ cm
+        $AM = AC + CM = 4 + 3 = 7$ cm
+        中考常考<<线段/line segment>>的<<中点/midpoint>>与线段加法的综合运用。
+      explanationEn: |
+        $CB = AB - AC = 10 - 4 = 6$ cm
+        $M$ is the <<中点/midpoint>> of $\overline{CB}$, so $CM = \frac{1}{2} \times 6 = 3$ cm
+        $AM = AC + CM = 4 + 3 = 7$ cm
+        This is a common exam question combining the <<中点/midpoint>> and segment addition.
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        如果 $\angle \alpha = 56°$，那么 $\angle \alpha$ 的<<余角/complementary angle>>的<<补角/supplementary angle>>等于（　）
+      questionEn: |
+        If $\angle \alpha = 56°$, then the <<补角/supplementary angle>> of the <<余角/complementary angle>> of $\angle \alpha$ equals ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$34°$", "$124°$", "$146°$", "$56°$"]
+          correctValue: "$146°$"
+      answer: "$146°$"
+      answerEn: "$146°$"
+      explanation: |
+        $\angle \alpha$ 的<<余角/complementary angle>> $= 90° - 56° = 34°$
+        $34°$ 的<<补角/supplementary angle>> $= 180° - 34° = 146°$
+        这是中考常见的"<<余角/complementary angle>>的<<补角/supplementary angle>>"嵌套问题，关键是分步计算不要混淆。
+      explanationEn: |
+        <<余角/complementary angle>> of $\angle \alpha$ $= 90° - 56° = 34°$
+        <<补角/supplementary angle>> of $34°$ $= 180° - 34° = 146°$
+        This is a common nested "<<补角/supplementary angle>> of <<余角/complementary angle>>" problem — the key is to calculate step by step.
+
+    - number: 4
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        如图，$\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，$\overrightarrow{OD}$ 是 $\angle BOC$ 的<<平分线/angle bisector>>，若 $\angle AOD = 54°$，则 $\angle AOB = $ ______°。
+      questionEn: |
+        As shown, $\overrightarrow{OC}$ is the <<平分线/angle bisector>> of $\angle AOB$, and $\overrightarrow{OD}$ is the <<平分线/angle bisector>> of $\angle BOC$. If $\angle AOD = 54°$, then $\angle AOB = $ ______°.
+      correctValue: "72"
+      answer: "$72°$"
+      answerEn: "$72°$"
+      explanation: |
+        设 $\angle AOB = x$。
+        因为 $\overrightarrow{OC}$ 是 $\angle AOB$ 的<<平分线/angle bisector>>，所以 $\angle AOC = \frac{x}{2}$，$\angle BOC = \frac{x}{2}$。
+        因为 $\overrightarrow{OD}$ 是 $\angle BOC$ 的<<平分线/angle bisector>>，所以 $\angle COD = \frac{1}{2} \cdot \frac{x}{2} = \frac{x}{4}$。
+        $\angle AOD = \angle AOC + \angle COD = \frac{x}{2} + \frac{x}{4} = \frac{3x}{4}$
+        由 $\frac{3x}{4} = 54°$，解得 $x = 72°$。
+        这道中考题考查<<平分线/angle bisector>>的两次应用和方程思想。
+      explanationEn: |
+        Let $\angle AOB = x$.
+        Since $\overrightarrow{OC}$ bisects $\angle AOB$: $\angle AOC = \frac{x}{2}$, $\angle BOC = \frac{x}{2}$.
+        Since $\overrightarrow{OD}$ bisects $\angle BOC$: $\angle COD = \frac{x}{4}$.
+        $\angle AOD = \angle AOC + \angle COD = \frac{x}{2} + \frac{x}{4} = \frac{3x}{4}$
+        From $\frac{3x}{4} = 54°$, we get $x = 72°$.
+        This exam question tests double application of <<平分线/angle bisector>>s and algebraic reasoning.
+
+    - number: 5
+      type: 中考解答题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        已知 $\angle AOB$ 和 $\angle BOC$ 互为<<补角/supplementary angle>>，$\angle AOB$ 比 $\angle BOC$ 大 $40°$。
+        (1) 求 $\angle AOB$ 和 $\angle BOC$ 的度数。
+        (2) 求 $\angle AOB$ 的<<余角/complementary angle>>。
+      questionEn: |
+        Given that $\angle AOB$ and $\angle BOC$ are <<补角/supplementary angle>>s of each other, and $\angle AOB$ is $40°$ larger than $\angle BOC$.
+        (1) Find the measures of $\angle AOB$ and $\angle BOC$.
+        (2) Find the <<余角/complementary angle>> of $\angle AOB$.
+      answer: |
+        (1) 设 $\angle BOC = x°$，则 $\angle AOB = (x + 40)°$。
+        因为互为<<补角/supplementary angle>>：$x + (x + 40) = 180$
+        $2x + 40 = 180$
+        $2x = 140$
+        $x = 70$
+        所以 $\angle BOC = 70°$，$\angle AOB = 110°$。
+
+        (2) $\angle AOB = 110° > 90°$，所以 $\angle AOB$ 没有<<余角/complementary angle>>（只有小于 $90°$ 的<<角/angle>>才有<<余角/complementary angle>>）。
+      answerEn: |
+        (1) Let $\angle BOC = x°$, then $\angle AOB = (x + 40)°$.
+        Since they are <<补角/supplementary angle>>s: $x + (x + 40) = 180$
+        $2x + 40 = 180$
+        $2x = 140$
+        $x = 70$
+        So $\angle BOC = 70°$, $\angle AOB = 110°$.
+
+        (2) $\angle AOB = 110° > 90°$, so $\angle AOB$ has no <<余角/complementary angle>> (only <<角/angle>>s less than $90°$ have <<余角/complementary angle>>s).
+      explanation: |
+        第 (1) 题用方程求解互补的两个<<角/angle>>，是中考最常考的题型之一。
+        第 (2) 题是一个"陷阱"：<<余角/complementary angle>>要求两个<<角/angle>>的和是 $90°$，如果一个<<角/angle>>本身就大于 $90°$，则不存在<<余角/complementary angle>>。
+      explanationEn: |
+        Part (1) uses equations to solve for two <<补角/supplementary angle>>s — one of the most common exam question types.
+        Part (2) is a "trap": <<余角/complementary angle>>s require the sum to be $90°$. If an <<角/angle>> is already greater than $90°$, it has no <<余角/complementary angle>>.

@@ -1,0 +1,800 @@
+title: 代数式
+titleEn: Algebraic Expressions
+chapter: 3
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 45-60分钟学习 + 30分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 理解<<用字母表示数/using letters to represent numbers>>的意义
+  - 掌握<<代数式/algebraic expression>>的概念，能区分<<代数式/algebraic expression>>和非<<代数式/algebraic expression>>
+  - 能把文字语言翻译成<<代数式/algebraic expression>>（<<列代数式/writing algebraic expressions>>）
+  - 能根据给定的<<变量/variable>>的值，求出<<代数式/algebraic expression>>的值
+  - 理解从文字语言到<<代数语言/algebraic language>>的转化过程
+objectivesEn:
+  - Understand the meaning of <<用字母表示数/using letters to represent numbers>>
+  - Master the concept of <<代数式/algebraic expression>>s and distinguish <<代数式/algebraic expression>>s from non-<<代数式/algebraic expression>>s
+  - Be able to translate word descriptions into <<代数式/algebraic expression>>s (<<列代数式/writing algebraic expressions>>)
+  - Be able to find the value of an <<代数式/algebraic expression>> given specific values of <<变量/variable>>s
+  - Understand the process of converting from verbal language to <<代数语言/algebraic language>>
+
+prerequisites:
+  title: 从小学知识出发——字母可以代替数？
+  titleEn: "Starting from elementary school knowledge — can letters replace numbers?"
+  intro: |
+    小学里，我们经常用具体的数做计算。但有时候，我们已经接触过用字母代替数的情况：
+  introEn: |
+    In elementary school, we usually calculate with specific numbers. But sometimes, we have already encountered cases where letters replace numbers:
+  knownNumbers:
+    - '长方形面积公式：$S = a \times b$'
+    - "正方形周长公式：$C = 4a$"
+    - "路程公式：$s = vt$"
+  knownNumbersEn:
+    - "Rectangle area formula: $S = a \\times b$"
+    - "Square perimeter formula: $C = 4a$"
+    - "Distance formula: $s = vt$"
+  canSolve:
+    - 长 $5$ 米、宽 $3$ 米的长方形面积是 $5 \times 3 = 15$ 平方米
+    - 边长 $4$ 厘米的正方形周长是 $4 \times 4 = 16$ 厘米
+    - 速度 $60$ 千米/时、行驶 $2$ 小时的路程是 $60 \times 2 = 120$ 千米
+  canSolveEn:
+    - "A rectangle with length $5$ m and width $3$ m has area $5 \\times 3 = 15$ square meters"
+    - "A square with side length $4$ cm has perimeter $4 \\times 4 = 16$ cm"
+    - "At speed $60$ km/h for $2$ hours, the distance is $60 \\times 2 = 120$ km"
+  cannotSolve:
+    - 一支笔 $a$ 元，买 $3$ 支要多少钱？
+    - 小明今年 $x$ 岁，爸爸比他大 $28$ 岁，爸爸多少岁？
+    - 一个数的 $2$ 倍再加上 $5$，结果怎么表示？
+    - 一块长方形菜地长 $a$ 米、宽 $b$ 米，面积怎么写？
+  cannotSolveEn:
+    - "A pen costs $a$ yuan, how much do $3$ pens cost?"
+    - "Xiao Ming is $x$ years old, his dad is $28$ years older — how old is his dad?"
+    - "Double a number and add $5$ — how do we express the result?"
+    - "A rectangular garden is $a$ meters long and $b$ meters wide — how do we write the area?"
+  conclusion: |
+    当数值还不确定时，我们可以用**字母**来代替未知的数，写出含有字母的式子，这就是**<<代数式/algebraic expression>>**的基本思想。
+  conclusionEn: |
+    When the value is not yet determined, we can use **letters** to replace the unknown numbers and write expressions containing letters — this is the basic idea of **<<代数式/algebraic expression>>s**.
+
+concepts:
+  - id: letters-for-numbers
+    title: <<用字母表示数/using letters to represent numbers>>
+    titleEn: <<用字母表示数/using letters to represent numbers>>
+    content: |
+      在数学中，我们常常用字母 $a$、$b$、$x$、$y$ 等来表示数。字母可以代表：
+      - 一个**确定但暂时不知道**的数
+      - 一个**可以变化**的数（<<变量/variable>>）
+    contentEn: |
+      In mathematics, we often use letters such as $a$, $b$, $x$, $y$ to represent numbers. Letters can stand for:
+      - A number that is **specific but temporarily unknown**
+      - A number that **can change** (a <<变量/variable>>)
+    examples:
+      - 一支铅笔 $a$ 元，$5$ 支铅笔就是 $5a$ 元
+      - 小明今年 $n$ 岁，$3$ 年后就是 $(n+3)$ 岁
+      - 一个数 $x$ 的 $2$ 倍是 $2x$
+    examplesEn:
+      - "A pencil costs $a$ yuan, so $5$ pencils cost $5a$ yuan"
+      - "Xiao Ming is $n$ years old this year, so in $3$ years he will be $(n+3)$ years old"
+      - "Twice a number $x$ is $2x$"
+    notes:
+      - 字母和数字相乘时，乘号可以省略或写成"$\cdot$"，如 $a \times 5$ 写成 $5a$
+      - 数字写在字母前面，如写 $5a$ 而不是 $a5$
+      - '"$1$ 乘以字母"的 $1$ 通常省略，如 $1 \times a$ 写成 $a$'
+    notesEn:
+      - "When a letter is multiplied by a number, the multiplication sign can be omitted or written as \"$\\cdot$\", e.g., $a \\times 5$ is written as $5a$"
+      - "The number is written before the letter, e.g., $5a$ not $a5$"
+      - "The $1$ in \"$1$ times a letter\" is usually omitted, e.g., $1 \\times a$ is written as $a$"
+
+  - id: algebraic-expression-concept
+    title: <<代数式/algebraic expression>>的概念
+    titleEn: The concept of <<代数式/algebraic expression>>
+    content: |
+      由**数**、**字母**和**运算符号**（加、减、乘、除、乘方）组成的式子叫做**<<代数式/algebraic expression>>**。
+      单独一个数或单独一个字母也是<<代数式/algebraic expression>>。
+
+      注意：<<代数式/algebraic expression>>中**不含等号或不等号**。
+    contentEn: |
+      An expression made up of **numbers**, **letters**, and **operation symbols** (addition, subtraction, multiplication, division, exponentiation) is called an **<<代数式/algebraic expression>>**.
+      A single number or a single letter is also an <<代数式/algebraic expression>>.
+
+      Note: An <<代数式/algebraic expression>> **does not contain equals signs or inequality signs**.
+    examples:
+      - "$3a + 2$ 是<<代数式/algebraic expression>>"
+      - "$\\frac{x}{5}$ 是<<代数式/algebraic expression>>"
+      - "$a^2 - 2b + 1$ 是<<代数式/algebraic expression>>"
+      - "$7$ 是<<代数式/algebraic expression>>（单独一个数）"
+      - "$y$ 是<<代数式/algebraic expression>>（单独一个字母）"
+    examplesEn:
+      - "$3a + 2$ is an <<代数式/algebraic expression>>"
+      - "$\\frac{x}{5}$ is an <<代数式/algebraic expression>>"
+      - "$a^2 - 2b + 1$ is an <<代数式/algebraic expression>>"
+      - "$7$ is an <<代数式/algebraic expression>> (a single number)"
+      - "$y$ is an <<代数式/algebraic expression>> (a single letter)"
+    notes:
+      - "$2x + 1 = 5$ 不是<<代数式/algebraic expression>>，因为含有等号（它是<<方程/equation>>）"
+      - "$x > 3$ 也不是<<代数式/algebraic expression>>，因为含有不等号"
+    notesEn:
+      - "$2x + 1 = 5$ is not an <<代数式/algebraic expression>> because it contains an equals sign (it is an <<方程/equation>>)"
+      - "$x > 3$ is also not an <<代数式/algebraic expression>> because it contains an inequality sign"
+
+  - id: writing-algebraic-expressions
+    title: <<列代数式/writing algebraic expressions>>
+    titleEn: <<列代数式/writing algebraic expressions>>
+    content: |
+      把文字语言翻译成含有字母的数学式子，叫做**<<列代数式/writing algebraic expressions>>**。
+
+      常见的文字表达与对应的<<代数式/algebraic expression>>：
+    contentEn: |
+      Translating word descriptions into mathematical expressions containing letters is called **<<列代数式/writing algebraic expressions>>**.
+
+      Common word expressions and their corresponding <<代数式/algebraic expression>>s:
+    translation:
+      - verbal: "$a$ 与 $b$ 的和"
+        verbalEn: "The sum of $a$ and $b$"
+        expression: "$a + b$"
+      - verbal: "$a$ 与 $b$ 的差"
+        verbalEn: "The difference of $a$ and $b$"
+        expression: "$a - b$"
+      - verbal: "$a$ 的 $3$ 倍"
+        verbalEn: "$3$ times $a$"
+        expression: "$3a$"
+      - verbal: "$a$ 的平方"
+        verbalEn: "The square of $a$"
+        expression: "$a^2$"
+      - verbal: "$a$ 与 $b$ 的积的一半"
+        verbalEn: "Half of the product of $a$ and $b$"
+        expression: "$\\frac{ab}{2}$"
+      - verbal: "$x$ 的 $2$ 倍与 $3$ 的和"
+        verbalEn: "The sum of twice $x$ and $3$"
+        expression: "$2x + 3$"
+    notes:
+      - 注意"和""差""积""商"等关键词对应不同运算
+      - 含有"的几倍""的几分之几"时要用乘法或除法
+      - 注意先算什么后算什么，必要时加括号
+    notesEn:
+      - "Pay attention to keywords like \"sum\", \"difference\", \"product\", \"quotient\" which correspond to different operations"
+      - "Phrases like \"times\" or \"fraction of\" require multiplication or division"
+      - "Pay attention to the order of operations; add parentheses when necessary"
+
+  - id: value-of-expression
+    title: <<代数式的值/value of an algebraic expression>>
+    titleEn: <<代数式的值/value of an algebraic expression>>
+    content: |
+      用**具体的数**代替<<代数式/algebraic expression>>中的字母，按照运算顺序计算出的结果，叫做<<代数式/algebraic expression>>的值。
+
+      求<<代数式/algebraic expression>>的值的步骤：
+      1. 把字母用给定的数替换
+      2. 按运算顺序计算
+    contentEn: |
+      Replacing the letters in an <<代数式/algebraic expression>> with **specific numbers** and calculating the result according to the order of operations gives the value of the <<代数式/algebraic expression>>.
+
+      Steps to find the value of an <<代数式/algebraic expression>>:
+      1. Replace the letters with the given numbers
+      2. Calculate following the order of operations
+    examples:
+      - "当 $a = 3$ 时，$2a + 1 = 2 \\times 3 + 1 = 7$"
+      - "当 $x = -2$ 时，$x^2 + 3x = (-2)^2 + 3 \\times (-2) = 4 - 6 = -2$"
+      - "当 $a = 4$，$b = 5$ 时，$\\frac{ab}{2} = \\frac{4 \\times 5}{2} = 10$"
+    examplesEn:
+      - "When $a = 3$, $2a + 1 = 2 \\times 3 + 1 = 7$"
+      - "When $x = -2$, $x^2 + 3x = (-2)^2 + 3 \\times (-2) = 4 - 6 = -2$"
+      - "When $a = 4$ and $b = 5$, $\\frac{ab}{2} = \\frac{4 \\times 5}{2} = 10$"
+    notes:
+      - 代入<<负数/negative number>>时，一定要加括号，如 $x = -2$ 代入 $x^2$ 要写成 $(-2)^2$
+      - 注意运算顺序：先乘方，再乘除，最后加减
+    notesEn:
+      - "When substituting a <<负数/negative number>>, always add parentheses — e.g., substituting $x = -2$ into $x^2$ must be written as $(-2)^2$"
+      - "Follow the order of operations: exponentiation first, then multiplication/division, then addition/subtraction"
+
+  - id: verbal-to-algebraic
+    title: 从文字语言到<<代数语言/algebraic language>>
+    titleEn: "From verbal language to <<代数语言/algebraic language>>"
+    content: |
+      生活中有很多规律可以用<<代数式/algebraic expression>>来概括：
+      - 文字语言描述"某个规律"
+      - 用字母代替其中的未知量
+      - 写出<<代数式/algebraic expression>>
+
+      这就是从**文字语言**到**<<代数语言/algebraic language>>**的转化。
+    contentEn: |
+      Many patterns in life can be summarized using <<代数式/algebraic expression>>s:
+      - Describe "a certain pattern" in words
+      - Replace the unknowns with letters
+      - Write the <<代数式/algebraic expression>>
+
+      This is the conversion from **verbal language** to **<<代数语言/algebraic language>>**.
+    examples:
+      - "连续三个<<整数/integer>>中，中间的数是 $n$，则三个数分别是 $n-1$、$n$、$n+1$，它们的和是 $3n$"
+      - "一个两位数，十位上的数字是 $a$，个位上的数字是 $b$，则这个两位数是 $10a + b$"
+      - "一本书共 $m$ 页，已经看了 $5$ 天，每天看 $p$ 页，还剩 $(m - 5p)$ 页"
+    examplesEn:
+      - "Among three consecutive <<整数/integer>>s, if the middle one is $n$, then the three numbers are $n-1$, $n$, $n+1$, and their sum is $3n$"
+      - "A two-digit number with digit $a$ in the tens place and digit $b$ in the ones place is $10a + b$"
+      - "A book has $m$ pages total; after reading $p$ pages per day for $5$ days, there are $(m - 5p)$ pages left"
+    notes:
+      - 这种转化能力是学习<<方程/equation>>和<<函数/function>>的重要基础
+      - 关键是找准"谁是未知量"，然后用字母表示它
+    notesEn:
+      - "This translation skill is an important foundation for learning <<方程/equation>>s and <<函数/function>>s"
+      - "The key is to identify \"what is the unknown\" and then represent it with a letter"
+
+  - id: conventions
+    title: <<代数式/algebraic expression>>的书写规范
+    titleEn: Writing conventions for <<代数式/algebraic expression>>s
+    content: |
+      书写<<代数式/algebraic expression>>时，有一些约定俗成的规范：
+    contentEn: |
+      When writing <<代数式/algebraic expression>>s, there are some standard conventions:
+    rules:
+      - 数字与字母相乘，省略乘号，数字写在字母前面，如 $5 \times a$ 写成 $5a$
+      - 字母与字母相乘，省略乘号，通常按字母顺序排列，如 $a \times b$ 写成 $ab$
+      - 除法通常用<<分数/fraction>>线表示，如 $a \div 3$ 写成 $\frac{a}{3}$
+      - 带分数要改写成假分数，如 $2\frac{1}{3}a$ 应写成 $\frac{7}{3}a$
+      - "<<代数式/algebraic expression>>的值带单位时，单位写在整个式子后面"
+    rulesEn:
+      - "When multiplying a number and a letter, omit the multiplication sign and write the number first, e.g., $5 \\times a$ becomes $5a$"
+      - "When multiplying letters, omit the multiplication sign and arrange alphabetically, e.g., $a \\times b$ becomes $ab$"
+      - "Division is usually written as a <<分数/fraction>>, e.g., $a \\div 3$ becomes $\\frac{a}{3}$"
+      - "Mixed numbers should be converted to improper fractions, e.g., $2\\frac{1}{3}a$ should be written as $\\frac{7}{3}a$"
+      - "When the value of an <<代数式/algebraic expression>> has a unit, the unit is written after the entire expression"
+
+realLife:
+  - category: 购物
+    categoryEn: Shopping
+    description: "一件衣服 $a$ 元，打八折后的价格"
+    descriptionEn: "A piece of clothing costs $a$ yuan; the price after a 20% discount"
+    expression: "$0.8a$ 元"
+    expressionEn: "$0.8a$ yuan"
+  - category: 行程
+    categoryEn: Travel
+    description: "以 $v$ 千米/时的速度行驶 $t$ 小时后的路程"
+    descriptionEn: "Distance after traveling at $v$ km/h for $t$ hours"
+    expression: "$vt$ 千米"
+    expressionEn: "$vt$ km"
+  - category: 储蓄
+    categoryEn: Savings
+    description: "小明有 $m$ 元，每天存 $n$ 元，$d$ 天后共有多少钱"
+    descriptionEn: "Xiao Ming has $m$ yuan and saves $n$ yuan per day; how much after $d$ days"
+    expression: "$(m + nd)$ 元"
+    expressionEn: "$(m + nd)$ yuan"
+  - category: 年龄
+    categoryEn: Age
+    description: "哥哥今年 $a$ 岁，弟弟比哥哥小 $5$ 岁，弟弟的年龄"
+    descriptionEn: "The older brother is $a$ years old; the younger brother is $5$ years younger"
+    expression: "$(a - 5)$ 岁"
+    expressionEn: "$(a - 5)$ years old"
+
+examples:
+  - type: 1
+    title: <<用字母表示数/using letters to represent numbers>>
+    titleEn: <<用字母表示数/using letters to represent numbers>>
+    question: |
+      一个长方形的长是 $a$ 厘米，宽是 $b$ 厘米，请用<<代数式/algebraic expression>>表示它的周长和面积。
+    questionEn: |
+      A rectangle has length $a$ cm and width $b$ cm. Express its perimeter and area using <<代数式/algebraic expression>>s.
+    steps:
+      - "长方形周长 $=$ 长 $\\times 2 +$ 宽 $\\times 2 = 2(a + b)$"
+      - "长方形面积 $=$ 长 $\\times$ 宽 $= ab$"
+    stepsEn:
+      - "Perimeter of rectangle $=$ length $\\times 2 +$ width $\\times 2 = 2(a + b)$"
+      - "Area of rectangle $=$ length $\\times$ width $= ab$"
+    answer: "周长为 $2(a + b)$ 厘米，面积为 $ab$ 平方厘米。"
+    answerEn: "The perimeter is $2(a + b)$ cm, and the area is $ab$ square cm."
+
+  - type: 2
+    title: 判断是否为<<代数式/algebraic expression>>
+    titleEn: Determining whether something is an <<代数式/algebraic expression>>
+    question: |
+      下列式子中，哪些是<<代数式/algebraic expression>>？
+      $3x + 1$，$2a = 6$，$\frac{y}{4}$，$m > 0$，$-5$，$b^2 - 3b + 1$
+    questionEn: |
+      Among the following expressions, which are <<代数式/algebraic expression>>s?
+      $3x + 1$, $2a = 6$, $\frac{y}{4}$, $m > 0$, $-5$, $b^2 - 3b + 1$
+    steps:
+      - "$3x + 1$ ：由数、字母和运算符号组成，是<<代数式/algebraic expression>>"
+      - "$2a = 6$ ：含有等号，不是<<代数式/algebraic expression>>（是<<方程/equation>>）"
+      - "$\\frac{y}{4}$ ：由字母和除法组成，是<<代数式/algebraic expression>>"
+      - "$m > 0$ ：含有不等号，不是<<代数式/algebraic expression>>"
+      - "$-5$ ：单独一个数也是<<代数式/algebraic expression>>"
+      - "$b^2 - 3b + 1$ ：由数、字母和运算符号组成，是<<代数式/algebraic expression>>"
+    stepsEn:
+      - "$3x + 1$: made of numbers, letters, and operation symbols — it is an <<代数式/algebraic expression>>"
+      - "$2a = 6$: contains an equals sign — not an <<代数式/algebraic expression>> (it is an <<方程/equation>>)"
+      - "$\\frac{y}{4}$: made of a letter and division — it is an <<代数式/algebraic expression>>"
+      - "$m > 0$: contains an inequality sign — not an <<代数式/algebraic expression>>"
+      - "$-5$: a single number is also an <<代数式/algebraic expression>>"
+      - "$b^2 - 3b + 1$: made of numbers, letters, and operation symbols — it is an <<代数式/algebraic expression>>"
+    answer: "$3x + 1$、$\\frac{y}{4}$、$-5$、$b^2 - 3b + 1$ 是<<代数式/algebraic expression>>。"
+    answerEn: "$3x + 1$, $\\frac{y}{4}$, $-5$, and $b^2 - 3b + 1$ are <<代数式/algebraic expression>>s."
+
+  - type: 3
+    title: <<列代数式/writing algebraic expressions>>（基础）
+    titleEn: <<列代数式/writing algebraic expressions>> (basic)
+    question: |
+      用<<代数式/algebraic expression>>表示：$x$ 的 $3$ 倍减去 $7$ 的差。
+    questionEn: |
+      Write an <<代数式/algebraic expression>> for: the difference of $3$ times $x$ and $7$.
+    steps:
+      - "$x$ 的 $3$ 倍是 $3x$"
+      - "减去 $7$ 的差是 $3x - 7$"
+    stepsEn:
+      - "$3$ times $x$ is $3x$"
+      - "The difference when subtracting $7$ is $3x - 7$"
+    answer: "$3x - 7$"
+    answerEn: "$3x - 7$"
+
+  - type: 4
+    title: <<列代数式/writing algebraic expressions>>（需要括号）
+    titleEn: <<列代数式/writing algebraic expressions>> (requiring parentheses)
+    question: |
+      用<<代数式/algebraic expression>>表示：$a$ 与 $b$ 的和的 $2$ 倍。
+    questionEn: |
+      Write an <<代数式/algebraic expression>> for: twice the sum of $a$ and $b$.
+    steps:
+      - "$a$ 与 $b$ 的和是 $a + b$"
+      - "和的 $2$ 倍，要先算和，所以加括号：$2(a + b)$"
+    stepsEn:
+      - "The sum of $a$ and $b$ is $a + b$"
+      - "Twice the sum — we must compute the sum first, so add parentheses: $2(a + b)$"
+    answer: "$2(a + b)$"
+    answerEn: "$2(a + b)$"
+
+  - type: 5
+    title: 求<<代数式的值/value of an algebraic expression>>
+    titleEn: Finding the <<代数式的值/value of an algebraic expression>>
+    question: |
+      当 $a = 3$，$b = -2$ 时，求 $2a^2 - 3b$ 的值。
+    questionEn: |
+      When $a = 3$ and $b = -2$, find the value of $2a^2 - 3b$.
+    steps:
+      - "将 $a = 3$，$b = -2$ 代入"
+      - "$2a^2 - 3b = 2 \\times 3^2 - 3 \\times (-2)$"
+      - "$= 2 \\times 9 - (-6)$"
+      - "$= 18 + 6$"
+      - "$= 24$"
+    stepsEn:
+      - "Substitute $a = 3$ and $b = -2$"
+      - "$2a^2 - 3b = 2 \\times 3^2 - 3 \\times (-2)$"
+      - "$= 2 \\times 9 - (-6)$"
+      - "$= 18 + 6$"
+      - "$= 24$"
+    answer: "$2a^2 - 3b = 24$"
+    answerEn: "$2a^2 - 3b = 24$"
+
+  - type: 6
+    title: 从文字语言到<<代数语言/algebraic language>>
+    titleEn: "From verbal language to <<代数语言/algebraic language>>"
+    question: |
+      一本故事书共 $n$ 页，小红每天读 $8$ 页，读了 $d$ 天后，还剩多少页没读？
+    questionEn: |
+      A storybook has $n$ pages. Xiao Hong reads $8$ pages per day. After $d$ days, how many pages are left unread?
+    steps:
+      - "每天读 $8$ 页，$d$ 天共读了 $8d$ 页"
+      - "还剩下的页数 $= n - 8d$"
+    stepsEn:
+      - "Reading $8$ pages per day, after $d$ days she has read $8d$ pages"
+      - "Pages remaining $= n - 8d$"
+    answer: "还剩 $(n - 8d)$ 页。"
+    answerEn: "There are $(n - 8d)$ pages left."
+
+  - type: 7
+    title: 两位数的<<代数式/algebraic expression>>表示
+    titleEn: "Expressing a two-digit number as an <<代数式/algebraic expression>>"
+    question: |
+      一个两位数，十位上的数字是 $a$，个位上的数字是 $b$，用<<代数式/algebraic expression>>表示这个两位数。
+    questionEn: |
+      A two-digit number has digit $a$ in the tens place and digit $b$ in the ones place. Express this two-digit number as an <<代数式/algebraic expression>>.
+    steps:
+      - "十位上的 $a$ 表示 $a$ 个十，即 $10a$"
+      - "个位上的 $b$ 表示 $b$ 个一，即 $b$"
+      - "这个两位数就是 $10a + b$"
+    stepsEn:
+      - "The digit $a$ in the tens place represents $a$ tens, i.e., $10a$"
+      - "The digit $b$ in the ones place represents $b$ ones, i.e., $b$"
+      - "So the two-digit number is $10a + b$"
+    answer: "$10a + b$"
+    answerEn: "$10a + b$"
+
+commonMistakes:
+  - "乘号省略后把 $a \\times 5$ 写成 $a5$，正确写法是 $5a$（数字在前）"
+  - "把 $a \\div 3$ 写成 $a \\div 3$ 而不是 $\\frac{a}{3}$，<<代数式/algebraic expression>>中除法应写成<<分数/fraction>>形式"
+  - "代入<<负数/negative number>>时忘记加括号，如 $x = -3$ 代入 $x^2$，错写成 $-3^2 = -9$，正确应为 $(-3)^2 = 9$"
+  - '列<<代数式/algebraic expression>>时搞混运算顺序，如把"$a$ 与 $b$ 的和的平方"写成 $a + b^2$，正确应为 $(a+b)^2$'
+  - "以为含等号的式子也是<<代数式/algebraic expression>>，如 $2x + 1 = 5$ 不是<<代数式/algebraic expression>>，而是<<方程/equation>>"
+  - "忘记带分数要改写为假分数，如 $2\\frac{1}{3}x$ 应写成 $\\frac{7}{3}x$"
+commonMistakesEn:
+  - "After omitting the multiplication sign, writing $a \\times 5$ as $a5$ instead of $5a$ (the number should come first)"
+  - "Writing $a \\div 3$ as $a \\div 3$ instead of $\\frac{a}{3}$ — in <<代数式/algebraic expression>>s, division should be written in <<分数/fraction>> form"
+  - "Forgetting to add parentheses when substituting a <<负数/negative number>>, e.g., substituting $x = -3$ into $x^2$ and incorrectly writing $-3^2 = -9$ instead of $(-3)^2 = 9$"
+  - "Confusing the order of operations when writing <<代数式/algebraic expression>>s, e.g., writing \"the square of the sum of $a$ and $b$\" as $a + b^2$ instead of $(a+b)^2$"
+  - "Thinking expressions with equals signs are also <<代数式/algebraic expression>>s — $2x + 1 = 5$ is not an <<代数式/algebraic expression>> but an <<方程/equation>>"
+  - "Forgetting to convert mixed numbers to improper fractions, e.g., $2\\frac{1}{3}x$ should be written as $\\frac{7}{3}x$"
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "9-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        一支笔 $a$ 元，买 $4$ 支笔需要 ______ 元。
+      questionEn: |
+        A pen costs $a$ yuan. Buying $4$ pens costs ______ yuan.
+      correctValue: "4a"
+      answer: "$4a$"
+      answerEn: "$4a$"
+      explanation: |
+        $4$ 支笔的总价是 $a \times 4 = 4a$ 元。注意数字写在字母前面。
+      explanationEn: |
+        The total price of $4$ pens is $a \times 4 = 4a$ yuan. Note that the number is written before the letter.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        小明今年 $x$ 岁，爸爸的年龄比小明大 $26$ 岁，爸爸今年 ______ 岁。
+      questionEn: |
+        Xiao Ming is $x$ years old this year. His dad is $26$ years older. His dad is ______ years old.
+      correctValue: "x+26"
+      answer: "$(x + 26)$"
+      answerEn: "$(x + 26)$"
+      explanation: |
+        爸爸比小明大 $26$ 岁，所以爸爸的年龄是 $x + 26$。
+      explanationEn: |
+        Dad is $26$ years older than Xiao Ming, so Dad's age is $x + 26$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        当 $x = 5$ 时，$3x + 2 = $ ______。
+      questionEn: |
+        When $x = 5$, $3x + 2 = $ ______.
+      correctValue: "17"
+      answer: "$17$"
+      answerEn: "$17$"
+      explanation: |
+        将 $x = 5$ 代入：$3 \times 5 + 2 = 15 + 2 = 17$。
+      explanationEn: |
+        Substituting $x = 5$: $3 \times 5 + 2 = 15 + 2 = 17$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        当 $a = -2$ 时，$a^2 + 4a = $ ______。
+      questionEn: |
+        When $a = -2$, $a^2 + 4a = $ ______.
+      correctValue: "-4"
+      answer: "$-4$"
+      answerEn: "$-4$"
+      explanation: |
+        将 $a = -2$ 代入：$(-2)^2 + 4 \times (-2) = 4 - 8 = -4$。注意代入<<负数/negative number>>要加括号。
+      explanationEn: |
+        Substituting $a = -2$: $(-2)^2 + 4 \times (-2) = 4 - 8 = -4$. Remember to use parentheses when substituting a <<负数/negative number>>.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $2x + 1 = 7$ 是一个<<代数式/algebraic expression>>。
+      questionEn: |
+        $2x + 1 = 7$ is an <<代数式/algebraic expression>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        含有等号的式子是<<方程/equation>>，不是<<代数式/algebraic expression>>。
+      explanationEn: |
+        An expression containing an equals sign is an <<方程/equation>>, not an <<代数式/algebraic expression>>.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        单独一个数字 $8$ 也是<<代数式/algebraic expression>>。
+      questionEn: |
+        The single number $8$ by itself is also an <<代数式/algebraic expression>>.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        单独一个数或者单独一个字母都是<<代数式/algebraic expression>>。
+      explanationEn: |
+        A single number or a single letter is also an <<代数式/algebraic expression>>.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        "$a$ 与 $b$ 的和的平方"应写为 $a + b^2$。
+      questionEn: |
+        "The square of the sum of $a$ and $b$" should be written as $a + b^2$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        "$a$ 与 $b$ 的和"是 $a + b$，"和的平方"是对整个和求平方，应写为 $(a+b)^2$，而不是 $a + b^2$。
+      explanationEn: |
+        "The sum of $a$ and $b$" is $a + b$; "the square of the sum" means squaring the entire sum, so it should be $(a+b)^2$, not $a + b^2$.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $a \div 5$ 在<<代数式/algebraic expression>>中应写成 $\frac{a}{5}$。
+      questionEn: |
+        $a \div 5$ should be written as $\frac{a}{5}$ in an <<代数式/algebraic expression>>.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        <<代数式/algebraic expression>>的书写规范要求除法用<<分数/fraction>>形式表示。
+      explanationEn: |
+        The writing conventions for <<代数式/algebraic expression>>s require division to be expressed in <<分数/fraction>> form.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        下面哪一个是"$x$ 的 $2$ 倍与 $y$ 的差"的正确表示？
+      questionEn: |
+        Which of the following correctly represents "the difference of twice $x$ and $y$"?
+      subInputs:
+        - prompt: 选择答案
+          options: ["$2(x - y)$", "$2x - y$", "$x - 2y$", "$2xy$"]
+          correctValue: "$2x - y$"
+      answer: "$2x - y$"
+      answerEn: "$2x - y$"
+      explanation: |
+        "$x$ 的 $2$ 倍"是 $2x$，"与 $y$ 的差"是减去 $y$，所以结果是 $2x - y$。
+      explanationEn: |
+        "Twice $x$" is $2x$, and "the difference with $y$" means subtracting $y$, so the result is $2x - y$.
+
+    - number: 10
+      type: 列代数式
+      inputType: open
+      section: 四、列代数式
+      sectionEn: "IV. Write Algebraic Expressions"
+      question: |
+        一块长方形菜地，长是 $a$ 米，宽比长少 $3$ 米。
+        (1) 用<<代数式/algebraic expression>>表示菜地的宽。
+        (2) 用<<代数式/algebraic expression>>表示菜地的面积。
+        (3) 当 $a = 10$ 时，求菜地的面积。
+      questionEn: |
+        A rectangular vegetable garden has length $a$ meters, and its width is $3$ meters less than its length.
+        (1) Express the width using an <<代数式/algebraic expression>>.
+        (2) Express the area using an <<代数式/algebraic expression>>.
+        (3) When $a = 10$, find the area of the garden.
+      answer: |
+        (1) 宽为 $(a - 3)$ 米
+        (2) 面积为 $a(a - 3)$ 平方米
+        (3) 当 $a = 10$ 时，面积 $= 10 \times (10 - 3) = 10 \times 7 = 70$ 平方米
+      answerEn: |
+        (1) The width is $(a - 3)$ meters
+        (2) The area is $a(a - 3)$ square meters
+        (3) When $a = 10$, the area $= 10 \times (10 - 3) = 10 \times 7 = 70$ square meters
+      explanation: |
+        宽比长少 $3$ 米，所以宽是 $a - 3$。面积等于长乘宽，即 $a(a-3)$。代入 $a = 10$ 计算即可。
+      explanationEn: |
+        The width is $3$ meters less than the length, so the width is $a - 3$. Area equals length times width, which is $a(a-3)$. Substitute $a = 10$ to calculate.
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 五、生活应用题
+      sectionEn: "V. Real-Life Application"
+      question: |
+        小华存了 $m$ 元钱，他每周花 $15$ 元买文具。
+        (1) 用<<代数式/algebraic expression>>表示 $n$ 周后剩余的钱。
+        (2) 如果 $m = 200$，$n = 6$，还剩多少钱？
+      questionEn: |
+        Xiao Hua saved $m$ yuan. He spends $15$ yuan per week on stationery.
+        (1) Express the money remaining after $n$ weeks using an <<代数式/algebraic expression>>.
+        (2) If $m = 200$ and $n = 6$, how much money is left?
+      answer: |
+        (1) $n$ 周花费 $15n$ 元，剩余 $(m - 15n)$ 元
+        (2) 代入 $m = 200$，$n = 6$：$200 - 15 \times 6 = 200 - 90 = 110$ 元
+      answerEn: |
+        (1) In $n$ weeks, $15n$ yuan is spent, leaving $(m - 15n)$ yuan
+        (2) Substituting $m = 200$ and $n = 6$: $200 - 15 \times 6 = 200 - 90 = 110$ yuan
+      explanation: |
+        每周花 $15$ 元，$n$ 周共花 $15n$ 元，从总钱数 $m$ 中减去就是剩余的钱。
+      explanationEn: |
+        Spending $15$ yuan per week, $n$ weeks cost $15n$ yuan. Subtract from the total $m$ to get the remaining amount.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 六、综合题
+      sectionEn: "VI. Comprehensive Problem"
+      question: |
+        连续三个<<整数/integer>>中，最小的一个是 $n$。
+        (1) 用<<代数式/algebraic expression>>分别表示这三个数。
+        (2) 用<<代数式/algebraic expression>>表示这三个数的和。
+        (3) 当 $n = 20$ 时，验证三个数的和等于中间那个数的 $3$ 倍。
+      questionEn: |
+        Among three consecutive <<整数/integer>>s, the smallest one is $n$.
+        (1) Express each of the three numbers using <<代数式/algebraic expression>>s.
+        (2) Express the sum of the three numbers using an <<代数式/algebraic expression>>.
+        (3) When $n = 20$, verify that the sum of the three numbers equals $3$ times the middle number.
+      answer: |
+        (1) 三个数分别是 $n$、$n+1$、$n+2$
+        (2) 三个数的和 $= n + (n+1) + (n+2) = 3n + 3$
+        (3) 当 $n = 20$ 时：
+            - 三个数为 $20$、$21$、$22$
+            - 和 $= 3 \times 20 + 3 = 63$
+            - 中间数的 $3$ 倍 $= 3 \times 21 = 63$
+            - 两者相等，验证成立
+      answerEn: |
+        (1) The three numbers are $n$, $n+1$, $n+2$
+        (2) Their sum $= n + (n+1) + (n+2) = 3n + 3$
+        (3) When $n = 20$:
+            - The three numbers are $20$, $21$, $22$
+            - Sum $= 3 \times 20 + 3 = 63$
+            - $3$ times the middle number $= 3 \times 21 = 63$
+            - They are equal, verification complete
+      explanation: |
+        连续三个<<整数/integer>>相邻差为 $1$，所以是 $n$、$n+1$、$n+2$。它们的和可以化简为 $3n+3 = 3(n+1)$，恰好是中间那个数 $(n+1)$ 的 $3$ 倍。这个规律对任意<<整数/integer>> $n$ 都成立。
+      explanationEn: |
+        Three consecutive <<整数/integer>>s differ by $1$, so they are $n$, $n+1$, $n+2$. Their sum simplifies to $3n+3 = 3(n+1)$, which is exactly $3$ times the middle number $(n+1)$. This pattern holds for any <<整数/integer>> $n$.
+
+summary:
+  - "理解了<<用字母表示数/using letters to represent numbers>>的意义，字母可以代替未知或可变的数"
+  - "掌握了<<代数式/algebraic expression>>的概念：由数、字母和运算符号组成，不含等号或不等号"
+  - "能把文字语言翻译成<<代数式/algebraic expression>>（<<列代数式/writing algebraic expressions>>）"
+  - "能把数代入<<代数式/algebraic expression>>求值，注意<<负数/negative number>>代入要加括号"
+  - "能用<<代数式/algebraic expression>>表示生活中的数量关系"
+  - "掌握了<<代数式/algebraic expression>>的书写规范（乘号省略、数字在前、除法写<<分数/fraction>>等）"
+summaryEn:
+  - "Understood the meaning of <<用字母表示数/using letters to represent numbers>> — letters can replace unknown or variable numbers"
+  - "Mastered the concept of <<代数式/algebraic expression>>: composed of numbers, letters, and operation symbols, without equals or inequality signs"
+  - "Can translate word descriptions into <<代数式/algebraic expression>>s (<<列代数式/writing algebraic expressions>>)"
+  - "Can substitute numbers into an <<代数式/algebraic expression>> to find its value, remembering parentheses for <<负数/negative number>>s"
+  - "Can use <<代数式/algebraic expression>>s to express quantitative relationships in daily life"
+  - "Mastered writing conventions for <<代数式/algebraic expression>>s (omitting multiplication signs, numbers before letters, division as <<分数/fraction>>s, etc.)"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        下列式子中，是<<代数式/algebraic expression>>的是（　）
+      questionEn: |
+        Among the following expressions, the one that is an <<代数式/algebraic expression>> is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$x + 1 = 2$", "$3a - b$", "$y > 0$", "$2 + 3 = 5$"]
+          correctValue: "$3a - b$"
+      answer: "$3a - b$"
+      answerEn: "$3a - b$"
+      explanation: |
+        $x + 1 = 2$ 含等号（<<方程/equation>>），$y > 0$ 含不等号，$2 + 3 = 5$ 含等号（等式），它们都不是<<代数式/algebraic expression>>。只有 $3a - b$ 是由数、字母和运算符号组成的<<代数式/algebraic expression>>。
+      explanationEn: |
+        $x + 1 = 2$ contains an equals sign (<<方程/equation>>), $y > 0$ contains an inequality sign, and $2 + 3 = 5$ contains an equals sign (equation). None of these are <<代数式/algebraic expression>>s. Only $3a - b$ is an <<代数式/algebraic expression>> composed of numbers, letters, and operation symbols.
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        当 $x = -1$ 时，<<代数式/algebraic expression>> $2x^2 - x + 3$ 的值是______。
+      questionEn: |
+        When $x = -1$, the value of the <<代数式/algebraic expression>> $2x^2 - x + 3$ is ______.
+      correctValue: "6"
+      answer: "$6$"
+      answerEn: "$6$"
+      explanation: |
+        代入 $x = -1$：
+        $2(-1)^2 - (-1) + 3 = 2 \times 1 + 1 + 3 = 2 + 1 + 3 = 6$
+        注意：$(-1)^2 = 1$，$-(-1) = +1$。
+      explanationEn: |
+        Substituting $x = -1$:
+        $2(-1)^2 - (-1) + 3 = 2 \times 1 + 1 + 3 = 2 + 1 + 3 = 6$
+        Note: $(-1)^2 = 1$ and $-(-1) = +1$.
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        某商店以每件 $a$ 元的进价购入一批商品，加价 $20\%$ 后标价出售。则每件商品的标价是（　）
+      questionEn: |
+        A store purchases goods at $a$ yuan per item and marks them up by $20\%$. The marked price per item is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$0.2a$", "$20a$", "$a + 0.2$", "$1.2a$"]
+          correctValue: "$1.2a$"
+      answer: "$1.2a$"
+      answerEn: "$1.2a$"
+      explanation: |
+        加价 $20\%$ 即标价 $= a + a \times 20\% = a + 0.2a = 1.2a$。
+        这道中考题考查用<<代数式/algebraic expression>>表示实际问题中的数量关系。
+      explanationEn: |
+        A $20\%$ markup means the marked price $= a + a \times 20\% = a + 0.2a = 1.2a$.
+        This exam question tests using <<代数式/algebraic expression>>s to express quantitative relationships in real-world problems.
+
+    - number: 4
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        一个三位数，百位上的数字是 $a$，十位上的数字是 $b$，个位上的数字是 $c$，则这个三位数可表示为______。
+      questionEn: |
+        A three-digit number has digit $a$ in the hundreds place, $b$ in the tens place, and $c$ in the ones place. This three-digit number can be expressed as ______.
+      correctValue: "100a+10b+c"
+      answer: "$100a + 10b + c$"
+      answerEn: "$100a + 10b + c$"
+      explanation: |
+        百位上的 $a$ 表示 $a$ 个百，即 $100a$；十位上的 $b$ 表示 $b$ 个十，即 $10b$；个位上的 $c$ 表示 $c$ 个一。
+        所以这个三位数是 $100a + 10b + c$。这是中考常见的数字问题。
+      explanationEn: |
+        Digit $a$ in the hundreds place represents $100a$; digit $b$ in the tens place represents $10b$; digit $c$ in the ones place represents $c$.
+        So the three-digit number is $100a + 10b + c$. This is a common number problem in exams.
+
+    - number: 5
+      type: 中考解答题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        已知 $a = 2$，$b = -3$，求<<代数式/algebraic expression>> $\frac{a^2 - b}{a + b}$ 的值。
+      questionEn: |
+        Given $a = 2$ and $b = -3$, find the value of the <<代数式/algebraic expression>> $\frac{a^2 - b}{a + b}$.
+      answer: |
+        代入 $a = 2$，$b = -3$：
+
+        $\frac{a^2 - b}{a + b} = \frac{2^2 - (-3)}{2 + (-3)} = \frac{4 + 3}{2 - 3} = \frac{7}{-1} = -7$
+      answerEn: |
+        Substituting $a = 2$ and $b = -3$:
+
+        $\frac{a^2 - b}{a + b} = \frac{2^2 - (-3)}{2 + (-3)} = \frac{4 + 3}{2 - 3} = \frac{7}{-1} = -7$
+      explanation: |
+        这道中考题综合考查了<<代数式/algebraic expression>>求值、<<负数/negative number>>运算和<<分数/fraction>>运算。
+        关键步骤：$-(-3) = +3$，以及分母 $2 + (-3) = -1$。
+        注意代入<<负数/negative number>>时要加括号，避免符号错误。
+      explanationEn: |
+        This exam question tests evaluating <<代数式/algebraic expression>>s, <<负数/negative number>> operations, and <<分数/fraction>> operations.
+        Key steps: $-(-3) = +3$, and the denominator $2 + (-3) = -1$.
+        Remember to use parentheses when substituting <<负数/negative number>>s to avoid sign errors.

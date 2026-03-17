@@ -1,0 +1,796 @@
+title: 有理数
+titleEn: Rational Numbers
+chapter: 1
+subject: math
+grade: grade7
+semester: semester1
+estimatedTime: 45-60分钟学习 + 30分钟练习
+targetAudience: 刚小学毕业、准备进入七年级的学生
+
+objectives:
+  - 知道为什么要学<<负数/negative number>>
+  - 理解<<正数/positive number>>、<<负数/negative number>>、<<零/zero>>、<<有理数/rational number>>、<<相反数/opposite number>>、<<绝对值/absolute value>>、<<数轴/number line>>这些基本概念
+  - 能把生活中的"上升、下降、收入、支出、海拔、温度"等情况用<<有理数/rational number>>表示
+  - 能在<<数轴/number line>>上表示数，并比较<<有理数/rational number>>的大小
+objectivesEn:
+  - Know why we need to learn <<负数/negative number>>s
+  - Understand basic concepts such as <<正数/positive number>>, <<负数/negative number>>, <<零/zero>>, <<有理数/rational number>>, <<相反数/opposite number>>, <<绝对值/absolute value>>, and <<数轴/number line>>
+  - Be able to represent real-life situations like "rise, fall, income, expense, altitude, temperature" using <<有理数/rational number>>s
+  - Be able to represent numbers on the <<数轴/number line>> and compare the size of <<有理数/rational number>>s
+
+prerequisites:
+  title: 从小学知识出发——为什么要学<<负数/negative number>>？
+  titleEn: "Starting from elementary school knowledge — why do we need to learn <<负数/negative number>>s?"
+  intro: |
+    小学里，我们最常见的是这些数：
+  introEn: |
+    In elementary school, the most common numbers we see are:
+  knownNumbers:
+    - $0$
+    - $1, 2, 3, 4 \ldots$
+    - <<分数/fraction>>和<<小数/decimal>>，比如 $\frac{1}{2}$、$0.8$
+  knownNumbersEn:
+    - $0$
+    - $1, 2, 3, 4 \ldots$
+    - <<分数/fraction>>s and <<小数/decimal>>s, such as $\frac{1}{2}$, $0.8$
+  canSolve:
+    - 一本书 $12$ 元
+    - 一根绳子长 $3.5$ 米
+    - 一个蛋糕吃了 $\frac{1}{4}$
+  canSolveEn:
+    - A book costs $12$ yuan
+    - A rope is $3.5$ meters long
+    - "$\\frac{1}{4}$ of a cake was eaten"
+  cannotSolve:
+    - 今天气温降到**零下 $3$ 摄氏度**
+    - 银行卡比昨天少了 $20$ 元
+    - 电梯到了**地下 $2$ 层**
+    - 潜水员在海平面**下 $8$ 米**
+  cannotSolveEn:
+    - "Today's temperature dropped to **$3$ degrees below <<零/zero>>**"
+    - The bank card balance decreased by $20$ yuan from yesterday
+    - The elevator went to **basement level $2$**
+    - The diver is **$8$ meters below sea level**
+  conclusion: |
+    为了表示"比基准低""向反方向变化""减少了多少"，数学里引入了**<<负数/negative number>>**。
+  conclusionEn: |
+    To express "below the baseline," "change in the opposite direction," or "how much decreased," mathematics introduced the **<<负数/negative number>>**.
+
+concepts:
+  - id: positive-negative-zero
+    title: <<正数/positive number>>、<<负数/negative number>>、<<零/zero>>
+    titleEn: "<<正数/positive number>>, <<负数/negative number>>, and <<零/zero>>"
+    content: |
+      规定一个基准后：
+      - 高于基准、增加、向上，可以记作**<<正数/positive number>>**
+      - 低于基准、减少、向下，可以记作**<<负数/negative number>>**
+      - 正好在基准上，记作 $0$
+    contentEn: |
+      After setting a baseline:
+      - Above the baseline, increasing, or upward, can be written as a **<<正数/positive number>>**
+      - Below the baseline, decreasing, or downward, can be written as a **<<负数/negative number>>**
+      - Exactly at the baseline, written as $0$
+    examples:
+      - 海平面以上 $12$ 米，记作 $+12$ 米，也可以直接写成 $12$ 米
+      - 海平面以下 $5$ 米，记作 $-5$ 米
+      - 气温 $0$ 摄氏度，记作 $0℃$
+    examplesEn:
+      - "$12$ meters above sea level is written as $+12$ m, or simply $12$ m"
+      - "$5$ meters below sea level is written as $-5$ m"
+      - "A temperature of $0$ degrees Celsius is written as $0℃$"
+    notes:
+      - <<正数/positive number>>前面的 $+$ 常常省略不写
+      - <<负数/negative number>>前面的 $-$ 不能省略
+    notesEn:
+      - "The $+$ sign before a <<正数/positive number>> is often omitted"
+      - "The $-$ sign before a <<负数/negative number>> cannot be omitted"
+
+  - id: rational-numbers
+    title: <<有理数/rational number>>
+    titleEn: <<有理数/rational number>>
+    content: |
+      **<<整数/integer>>**和**<<分数/fraction>>**统称为**<<有理数/rational number>>**。
+
+      <<有理数/rational number>>包括：
+    contentEn: |
+      **<<整数/integer>>s** and **<<分数/fraction>>s** are collectively called **<<有理数/rational number>>s**.
+
+      <<有理数/rational number>>s include:
+    classification:
+      - name: 正<<整数/integer>>
+        nameEn: Positive <<整数/integer>>
+        examples: "$1, 2, 10$"
+      - name: 负<<整数/integer>>
+        nameEn: Negative <<整数/integer>>
+        examples: "$-1, -2, -10$"
+      - name: <<零/zero>>
+        nameEn: <<零/zero>>
+        examples: "$0$"
+      - name: 正<<分数/fraction>>和正<<小数/decimal>>
+        nameEn: Positive <<分数/fraction>>s and positive <<小数/decimal>>s
+        examples: "$\\frac{1}{2}, 0.3, 2.5$"
+      - name: 负<<分数/fraction>>和负<<小数/decimal>>
+        nameEn: Negative <<分数/fraction>>s and negative <<小数/decimal>>s
+        examples: "$-\\frac{1}{2}, -0.3, -2.5$"
+    summary: |
+      你现在可以先把它理解为：能写成<<整数/integer>>、<<分数/fraction>>或有限<<小数/decimal>>形式的这些常见数，都属于现在要学的范围。
+    summaryEn: |
+      For now, you can understand it as: common numbers that can be written as <<整数/integer>>s, <<分数/fraction>>s, or finite <<小数/decimal>>s all belong to the scope we are studying.
+
+  - id: number-line
+    title: <<数轴/number line>>
+    titleEn: <<数轴/number line>>
+    content: |
+      <<数轴/number line>>是一条规定了**<<原点/origin>>**、**<<正方向/positive direction>>**、**<<单位长度/unit length>>**的直线。
+    contentEn: |
+      A <<数轴/number line>> is a straight line with a defined **<<原点/origin>>**, **<<正方向/positive direction>>**, and **<<单位长度/unit length>>**.
+    rules:
+      - <<原点/origin>>记作 $0$
+      - 向右是<<正方向/positive direction>>
+      - 每一小段表示 $1$ 个<<单位长度/unit length>>
+    rulesEn:
+      - "The <<原点/origin>> is marked as $0$"
+      - "The <<正方向/positive direction>> points to the right"
+      - "Each small segment represents $1$ <<单位长度/unit length>>"
+    purposes:
+      - 表示数的位置
+      - 比较数的大小
+      - 观察数与数之间的距离
+    purposesEn:
+      - Represent the position of numbers
+      - Compare the size of numbers
+      - Observe the distance between numbers
+    hasVisualization: true
+
+  - id: opposite-numbers
+    title: <<相反数/opposite number>>
+    titleEn: <<相反数/opposite number>>
+    content: |
+      只有**符号不同，数字部分相同**的两个数互为<<相反数/opposite number>>。
+    contentEn: |
+      Two numbers that have **different signs but the same numerical part** are <<相反数/opposite number>>s of each other.
+    examples:
+      - "$5$ 和 $-5$ 互为<<相反数/opposite number>>"
+      - "$2.5$ 和 $-2.5$ 互为<<相反数/opposite number>>"
+      - "$0$ 的<<相反数/opposite number>>是 $0$"
+    examplesEn:
+      - "$5$ and $-5$ are <<相反数/opposite number>>s of each other"
+      - "$2.5$ and $-2.5$ are <<相反数/opposite number>>s of each other"
+      - "The <<相反数/opposite number>> of $0$ is $0$"
+
+  - id: absolute-value
+    title: <<绝对值/absolute value>>
+    titleEn: <<绝对值/absolute value>>
+    content: |
+      一个数的<<绝对值/absolute value>>，表示这个数对应的点到<<原点/origin>>的距离。
+    contentEn: |
+      The <<绝对值/absolute value>> of a number represents the distance from the point corresponding to that number to the <<原点/origin>>.
+    examples:
+      - "$|5| = 5$"
+      - "$|-5| = 5$"
+      - "$|0| = 0$"
+    rules:
+      - <<正数/positive number>>的<<绝对值/absolute value>>是它本身
+      - <<负数/negative number>>的<<绝对值/absolute value>>是去掉负号后的数
+      - $0$ 的<<绝对值/absolute value>>还是 $0$
+    rulesEn:
+      - "The <<绝对值/absolute value>> of a <<正数/positive number>> is the number itself"
+      - "The <<绝对值/absolute value>> of a <<负数/negative number>> is the number with the negative sign removed"
+      - "The <<绝对值/absolute value>> of $0$ is still $0$"
+
+  - id: comparing
+    title: <<有理数/rational number>>的大小比较
+    titleEn: Comparing the size of <<有理数/rational number>>s
+    content: |
+      比较大小规律：
+    contentEn: |
+      Rules for comparing sizes:
+    rules:
+      - <<正数/positive number>>都大于 $0$
+      - $0$ 大于<<负数/negative number>>
+      - 两个<<正数/positive number>>比较，数字大的那个大
+      - 两个<<负数/negative number>>比较，**离 $0$ 近的那个反而大**
+    rulesEn:
+      - All <<正数/positive number>>s are greater than $0$
+      - $0$ is greater than any <<负数/negative number>>
+      - "When comparing two <<正数/positive number>>s, the one with the larger numerical value is greater"
+      - "When comparing two <<负数/negative number>>s, **the one closer to $0$ is actually greater**"
+    examples:
+      - "$3 > -2$"
+      - "$0 > -7$"
+      - "$-2 > -5$"
+    explanation: |
+      为什么 $-2 > -5$？因为在<<数轴/number line>>上，$-2$ 在 $-5$ 的右边；<<数轴/number line>>上右边的数总比左边大。
+    explanationEn: |
+      Why is $-2 > -5$? Because on the <<数轴/number line>>, $-2$ is to the right of $-5$; on the <<数轴/number line>>, the number on the right is always greater than the one on the left.
+
+realLife:
+  - category: 温度
+    categoryEn: Temperature
+    positive: 零上 $6℃$ 记作 $+6℃$
+    positiveEn: "$6℃$ above <<零/zero>> is written as $+6℃$"
+    negative: 零下 $4℃$ 记作 $-4℃$
+    negativeEn: "$4℃$ below <<零/zero>> is written as $-4℃$"
+  - category: 电梯楼层
+    categoryEn: Elevator floors
+    positive: 地上 $8$ 层可以记作 $8$
+    positiveEn: "Floor $8$ above ground can be written as $8$"
+    negative: 地下 $2$ 层可以记作 $-2$
+    negativeEn: "Basement level $2$ can be written as $-2$"
+  - category: 收入和支出
+    categoryEn: Income and expenses
+    positive: 收到压岁钱 $200$ 元，记作 $+200$
+    positiveEn: "Receiving $200$ yuan as gift money is written as $+200$"
+    negative: 买文具花了 $35$ 元，记作 $-35$
+    negativeEn: "Spending $35$ yuan on stationery is written as $-35$"
+  - category: 海拔
+    categoryEn: Altitude
+    positive: 山顶高出海平面 $1200$ 米，记作 $+1200$
+    positiveEn: "A mountain peak $1200$ meters above sea level is written as $+1200$"
+    negative: 某地低于海平面 $154$ 米，记作 $-154$
+    negativeEn: "A location $154$ meters below sea level is written as $-154$"
+
+examples:
+  - type: 1
+    title: 判断生活情境中的<<正数/positive number>><<负数/negative number>>
+    titleEn: Identifying <<正数/positive number>>s and <<负数/negative number>>s in real-life situations
+    question: |
+      如果把"高于标准水位"记作正，那么"低于标准水位 $0.8$ 米"应记作什么数？
+    questionEn: |
+      If "above the standard water level" is recorded as positive, what number should "below the standard water level by $0.8$ meters" be recorded as?
+    steps:
+      - '"低于"表示在基准以下，应该用<<负数/negative number>>表示'
+      - 所以记作 $-0.8$ 米
+    stepsEn:
+      - '"Below" means under the baseline, so it should be expressed as a <<负数/negative number>>'
+      - Therefore, it is written as $-0.8$ m
+    answer: '$-0.8$ 米'
+    answerEn: '$-0.8$ m'
+
+  - type: 2
+    title: 判断一个数是不是<<有理数/rational number>>
+    titleEn: Determining whether a number is a <<有理数/rational number>>
+    question: |
+      $-3$、$0$、$\frac{1}{4}$、$2.6$ 这几个数是不是<<有理数/rational number>>？
+    questionEn: |
+      Are the numbers $-3$, $0$, $\frac{1}{4}$, and $2.6$ <<有理数/rational number>>s?
+    steps:
+      - "$-3$ 是<<整数/integer>>，是<<有理数/rational number>>"
+      - "$0$ 是<<整数/integer>>，是<<有理数/rational number>>"
+      - "$\\frac{1}{4}$ 是<<分数/fraction>>，是<<有理数/rational number>>"
+      - "$2.6$ 可以看作<<分数/fraction>> $\\frac{26}{10}$，也是<<有理数/rational number>>"
+    stepsEn:
+      - "$-3$ is an <<整数/integer>>, so it is a <<有理数/rational number>>"
+      - "$0$ is an <<整数/integer>>, so it is a <<有理数/rational number>>"
+      - "$\\frac{1}{4}$ is a <<分数/fraction>>, so it is a <<有理数/rational number>>"
+      - "$2.6$ can be expressed as the <<分数/fraction>> $\\frac{26}{10}$, so it is also a <<有理数/rational number>>"
+    answer: "这四个数都是<<有理数/rational number>>。"
+    answerEn: "All four numbers are <<有理数/rational number>>s."
+
+  - type: 3
+    title: 在<<数轴/number line>>上排列数
+    titleEn: Arranging numbers on the <<数轴/number line>>
+    question: |
+      请把 $2$、$-3$、$0$ 这三个数在<<数轴/number line>>上标出来，并从小到大排列。
+    questionEn: |
+      Please mark the three numbers $2$, $-3$, and $0$ on the <<数轴/number line>>, and arrange them from smallest to largest.
+    steps:
+      - 先画出<<数轴/number line>>，找到<<原点/origin>> $0$
+      - $-3$ 在 $0$ 的左边，向左数 $3$ 格
+      - $2$ 在 $0$ 的右边，向右数 $2$ 格
+      - 在<<数轴/number line>>上标出它们的位置如下图
+    stepsEn:
+      - "First draw the <<数轴/number line>> and locate the <<原点/origin>> $0$"
+      - "$-3$ is to the left of $0$, count $3$ units to the left"
+      - "$2$ is to the right of $0$, count $2$ units to the right"
+      - Mark their positions on the <<数轴/number line>> as shown below
+    stepsNumberLine:
+      points: [-3, 0, 2]
+      min: -5
+      max: 5
+    answer: "从小到大排列：$-3 < 0 < 2$。"
+    answerEn: "Arranged from smallest to largest: $-3 < 0 < 2$."
+
+  - type: 4
+    title: 求<<相反数/opposite number>>
+    titleEn: Finding the <<相反数/opposite number>>
+    question: |
+      $-7$ 的<<相反数/opposite number>>是什么？
+    questionEn: |
+      What is the <<相反数/opposite number>> of $-7$?
+    steps:
+      - <<相反数/opposite number>>只改变符号，不改变数字部分
+    stepsEn:
+      - "The <<相反数/opposite number>> only changes the sign, not the numerical part"
+    answer: "$-7$ 的<<相反数/opposite number>>是 $7$。"
+    answerEn: "The <<相反数/opposite number>> of $-7$ is $7$."
+
+  - type: 5
+    title: 求<<绝对值/absolute value>>
+    titleEn: Finding the <<绝对值/absolute value>>
+    question: |
+      $|-9|$ 等于多少？
+    questionEn: |
+      What is $|-9|$ equal to?
+    steps:
+      - <<绝对值/absolute value>>表示到<<原点/origin>>的距离，距离不能是<<负数/negative number>>
+    stepsEn:
+      - "<<绝对值/absolute value>> represents the distance to the <<原点/origin>>; distance cannot be a <<负数/negative number>>"
+    answer: "$|-9| = 9$"
+    answerEn: "$|-9| = 9$"
+
+  - type: 6
+    title: 比较大小
+    titleEn: Comparing sizes
+    question: |
+      比较 $-4$ 和 $1$ 的大小。
+    questionEn: |
+      Compare $-4$ and $1$.
+    steps:
+      - 任何<<负数/negative number>>都小于<<正数/positive number>>
+    stepsEn:
+      - "Any <<负数/negative number>> is less than any <<正数/positive number>>"
+    answer: "$-4 < 1$"
+    answerEn: "$-4 < 1$"
+
+  - type: 7
+    title: 比较两个<<负数/negative number>>的大小
+    titleEn: Comparing two <<负数/negative number>>s
+    question: |
+      比较 $-3$ 和 $-8$ 的大小。
+    questionEn: |
+      Compare $-3$ and $-8$.
+    steps:
+      - 两个<<负数/negative number>>比较，离 $0$ 近的数更大
+      - "$-3$ 比 $-8$ 更靠近 $0$"
+    stepsEn:
+      - "When comparing two <<负数/negative number>>s, the one closer to $0$ is greater"
+      - "$-3$ is closer to $0$ than $-8$"
+    answer: "$-3 > -8$"
+    answerEn: "$-3 > -8$"
+
+commonMistakes:
+  - 不要把负号看丢：$-5$ 和 $5$ 完全不是同一个数
+  - $0$ 既不是<<正数/positive number>>，也不是<<负数/negative number>>
+  - <<相反数/opposite number>>不是"变大"或"变小"，而是"换方向"
+  - <<绝对值/absolute value>>不是"去掉两边竖线直接照抄符号"，比如 $|-6|$ 不是 $-6$，而是 $6$
+  - 比较两个<<负数/negative number>>时，不是数字大的那个大，而是离 $0$ 近的那个大
+commonMistakesEn:
+  - "Don't lose the negative sign: $-5$ and $5$ are completely different numbers"
+  - "$0$ is neither a <<正数/positive number>> nor a <<负数/negative number>>"
+  - "<<相反数/opposite number>> does not mean \"getting bigger\" or \"getting smaller\" — it means \"changing direction\""
+  - "<<绝对值/absolute value>> does not mean \"remove the bars and copy the sign directly\" — for example, $|-6|$ is not $-6$, but $6$"
+  - "When comparing two <<负数/negative number>>s, the one with the larger digit is not necessarily greater — the one closer to $0$ is greater"
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: "1-4"
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: "5-8"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "9-12"
+        time: 12分钟
+        timeEn: 12 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        如果把"向东走 $3$ 米"记作 $+3$ 米，那么"向西走 $5$ 米"记作 ______ 米。
+      questionEn: |
+        If "walking $3$ meters east" is recorded as $+3$ m, then "walking $5$ meters west" is recorded as ______ m.
+      correctValue: "-5"
+      answer: "$-5$"
+      answerEn: "$-5$"
+      explanation: |
+        "向西"与"向东"方向相反，所以要用<<负数/negative number>>表示。
+      explanationEn: |
+        "West" is the opposite direction of "east," so it should be expressed as a <<负数/negative number>>.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        零下 $7℃$ 记作 ______℃。
+      questionEn: |
+        $7℃$ below <<零/zero>> is written as ______℃.
+      correctValue: "-7"
+      answer: "$-7$"
+      answerEn: "$-7$"
+      explanation: |
+        "零下"表示低于 $0℃$，所以写成 $-7℃$。
+      explanationEn: |
+        "Below <<零/zero>>" means lower than $0℃$, so it is written as $-7℃$.
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $6$ 的<<相反数/opposite number>>是 ______。
+      questionEn: |
+        The <<相反数/opposite number>> of $6$ is ______.
+      correctValue: "-6"
+      answer: "$-6$"
+      answerEn: "$-6$"
+      explanation: |
+        <<相反数/opposite number>>只改变符号，所以 $6$ 的<<相反数/opposite number>>是 $-6$。
+      explanationEn: |
+        The <<相反数/opposite number>> only changes the sign, so the <<相反数/opposite number>> of $6$ is $-6$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        $|-12| = $ ______。
+      questionEn: |
+        $|-12| = $ ______.
+      correctValue: "12"
+      answer: "$12$"
+      answerEn: "$12$"
+      explanation: |
+        <<绝对值/absolute value>>表示距离，不能是<<负数/negative number>>，所以 $|-12| = 12$。
+      explanationEn: |
+        <<绝对值/absolute value>> represents distance, which cannot be a <<负数/negative number>>, so $|-12| = 12$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $0$ 是<<正数/positive number>>。
+      questionEn: |
+        $0$ is a <<正数/positive number>>.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $0$ 既不是<<正数/positive number>>，也不是<<负数/negative number>>。
+      explanationEn: |
+        $0$ is neither a <<正数/positive number>> nor a <<负数/negative number>>.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $-4.5$ 是<<有理数/rational number>>。
+      questionEn: |
+        $-4.5$ is a <<有理数/rational number>>.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $-4.5$ 是负<<小数/decimal>>，属于<<有理数/rational number>>。
+      explanationEn: |
+        $-4.5$ is a negative <<小数/decimal>>, which is a <<有理数/rational number>>.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $3$ 和 $-3$ 互为<<相反数/opposite number>>。
+      questionEn: |
+        $3$ and $-3$ are <<相反数/opposite number>>s of each other.
+      correctValue: "对"
+      answer: "对"
+      answerEn: "True"
+      explanation: |
+        $3$ 和 $-3$ 数字部分相同，符号相反，所以互为<<相反数/opposite number>>。
+      explanationEn: |
+        $3$ and $-3$ have the same numerical part but opposite signs, so they are <<相反数/opposite number>>s of each other.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $|-8| = -8$。
+      questionEn: |
+        $|-8| = -8$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        <<绝对值/absolute value>>表示距离，$|-8| = 8$，不是 $-8$。
+      explanationEn: |
+        <<绝对值/absolute value>> represents distance, so $|-8| = 8$, not $-8$.
+
+    - number: 9
+      type: 比较大小
+      inputType: choice
+      section: 三、比较大小
+      sectionEn: "III. Compare Sizes"
+      question: |
+        在 $>$、$<$、$=$ 中选合适的符号填空。
+      questionEn: |
+        Choose the appropriate symbol from $>$, $<$, $=$ to fill in the blanks.
+      subInputs:
+        - prompt: "$-2 \\underline{\\quad} 5$"
+          options: [">", "<", "="]
+          correctValue: "<"
+        - prompt: "$0 \\underline{\\quad} -9$"
+          options: [">", "<", "="]
+          correctValue: ">"
+        - prompt: "$-6 \\underline{\\quad} -1$"
+          options: [">", "<", "="]
+          correctValue: "<"
+      answer: |
+        - $-2 < 5$
+        - $0 > -9$
+        - $-6 < -1$
+      answerEn: |
+        - $-2 < 5$
+        - $0 > -9$
+        - $-6 < -1$
+      explanation: |
+        - <<负数/negative number>>小于<<正数/positive number>>
+        - $0$ 大于任何<<负数/negative number>>
+        - 两个<<负数/negative number>>比较时，离 $0$ 更近的更大，所以 $-1$ 比 $-6$ 大
+      explanationEn: |
+        - A <<负数/negative number>> is less than a <<正数/positive number>>
+        - $0$ is greater than any <<负数/negative number>>
+        - When comparing two <<负数/negative number>>s, the one closer to $0$ is greater, so $-1$ is greater than $-6$
+
+    - number: 10
+      type: 生活应用题
+      inputType: open
+      section: 四、生活应用题
+      sectionEn: "IV. Real-Life Application"
+      question: |
+        某地中午气温是 $4℃$，夜里下降到零下 $3℃$。请分别用<<有理数/rational number>>表示这两个温度。
+      questionEn: |
+        At a certain location, the noon temperature is $4℃$ and the nighttime temperature drops to $3℃$ below <<零/zero>>. Please express these two temperatures using <<有理数/rational number>>s.
+      answer: |
+        - 中午气温：$+4℃$（或 $4℃$）
+        - 夜里气温：$-3℃$
+      answerEn: |
+        - Noon temperature: $+4℃$ (or $4℃$)
+        - Nighttime temperature: $-3℃$
+      explanation: |
+        零上用<<正数/positive number>>表示，零下用<<负数/negative number>>表示。
+      explanationEn: |
+        Above <<零/zero>> is expressed with a <<正数/positive number>>, below <<零/zero>> is expressed with a <<负数/negative number>>.
+
+    - number: 11
+      type: 生活应用题
+      inputType: open
+      section: 四、生活应用题
+      sectionEn: "IV. Real-Life Application"
+      question: |
+        小明把家里本周零花钱变化记录如下：
+        - 爸爸奖励 $20$ 元
+        - 买笔花了 $6$ 元
+        - 买练习本花了 $4$ 元
+
+        请分别用正<<负数/negative number>>表示这三次变化。
+      questionEn: |
+        Xiao Ming recorded the following changes in his weekly allowance at home:
+        - Dad rewarded him $20$ yuan
+        - Bought a pen for $6$ yuan
+        - Bought a workbook for $4$ yuan
+
+        Please express these three changes using <<正数/positive number>>s and <<负数/negative number>>s.
+      answer: |
+        - 爸爸奖励 $20$ 元：$+20$
+        - 买笔花了 $6$ 元：$-6$
+        - 买练习本花了 $4$ 元：$-4$
+      answerEn: |
+        - Dad rewarded $20$ yuan: $+20$
+        - Bought a pen for $6$ yuan: $-6$
+        - Bought a workbook for $4$ yuan: $-4$
+      explanation: |
+        收入记正，支出记负。
+      explanationEn: |
+        Income is recorded as positive, expenses as negative.
+
+    - number: 12
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: "V. Comprehensive Problem"
+      question: |
+        在<<数轴/number line>>上，点 A 表示 $-4$，点 B 表示 $2$，点 C 表示 $0$。
+
+        回答下面问题：
+        - 哪个点表示的数最大？
+        - 哪个点表示的数最小？
+        - 点 A 表示的数的<<相反数/opposite number>>是多少？
+        - 点 B 表示的数的<<绝对值/absolute value>>是多少？
+      questionEn: |
+        On the <<数轴/number line>>, point A represents $-4$, point B represents $2$, and point C represents $0$.
+
+        Answer the following questions:
+        - Which point represents the largest number?
+        - Which point represents the smallest number?
+        - What is the <<相反数/opposite number>> of the number represented by point A?
+        - What is the <<绝对值/absolute value>> of the number represented by point B?
+      numberLine:
+        points:
+          - value: -4
+            label: A
+          - value: 0
+            label: C
+          - value: 2
+            label: B
+        min: -5
+        max: 5
+      answer: |
+        - 最大的是点 B（$2$）
+        - 最小的是点 A（$-4$）
+        - 点 A 表示的数的<<相反数/opposite number>>是 $4$
+        - 点 B 表示的数的<<绝对值/absolute value>>是 $2$
+      answerEn: |
+        - The largest is point B ($2$)
+        - The smallest is point A ($-4$)
+        - The <<相反数/opposite number>> of the number represented by point A is $4$
+        - The <<绝对值/absolute value>> of the number represented by point B is $2$
+      explanation: |
+        - 在<<数轴/number line>>上，越靠右的数越大，所以 $2$ 最大
+        - $-4$ 最靠左，所以最小
+        - $-4$ 的<<相反数/opposite number>>是 $4$
+        - $|2| = 2$
+      explanationEn: |
+        - On the <<数轴/number line>>, numbers further to the right are larger, so $2$ is the largest
+        - $-4$ is furthest to the left, so it is the smallest
+        - The <<相反数/opposite number>> of $-4$ is $4$
+        - $|2| = 2$
+
+summary:
+  - 能说清什么是<<正数/positive number>>、<<负数/negative number>>、<<零/zero>>
+  - 能举出生活中使用<<负数/negative number>>的例子
+  - 能判断一个常见数是不是<<有理数/rational number>>
+  - 能在<<数轴/number line>>上表示简单的<<有理数/rational number>>
+  - 能求一个数的<<相反数/opposite number>>和<<绝对值/absolute value>>
+  - 能比较两个<<有理数/rational number>>的大小
+summaryEn:
+  - "Can explain what <<正数/positive number>>s, <<负数/negative number>>s, and <<零/zero>> are"
+  - "Can give examples of using <<负数/negative number>>s in real life"
+  - "Can determine whether a common number is a <<有理数/rational number>>"
+  - "Can represent simple <<有理数/rational number>>s on the <<数轴/number line>>"
+  - "Can find the <<相反数/opposite number>> and <<绝对值/absolute value>> of a number"
+  - "Can compare the size of two <<有理数/rational number>>s"
+
+examPrep:
+  intro: 以下题目改编自各地中考真题，帮助你提前感受中考题型和难度。
+  introEn: "The following questions are adapted from past high school entrance exams to help you get familiar with exam formats."
+  questions:
+    - number: 1
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        如果收入 $500$ 元记作 $+500$ 元，那么支出 $200$ 元应记作（　）
+      questionEn: |
+        If receiving $500$ yuan is written as $+500$ yuan, then spending $200$ yuan should be written as ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$+200$", "$-200$", "$+700$", "$-700$"]
+          correctValue: "$-200$"
+      answer: "$-200$"
+      answerEn: "$-200$"
+      explanation: |
+        收入和支出是一对相反意义的量。收入 $500$ 元记作 $+500$ 元，所以支出 $200$ 元应记作 $-200$ 元。
+      explanationEn: |
+        Income and expense are opposite quantities. If receiving $500$ yuan is $+500$, then spending $200$ yuan is $-200$.
+
+    - number: 2
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        $-3$ 的<<相反数/opposite number>>是______。
+      questionEn: |
+        The <<相反数/opposite number>> of $-3$ is ______.
+      correctValue: "3"
+      answer: "$3$"
+      answerEn: "$3$"
+      explanation: |
+        <<相反数/opposite number>>就是符号相反、数字部分相同的数。$-3$ 的<<相反数/opposite number>>是 $3$。
+      explanationEn: |
+        The <<相反数/opposite number>> has the opposite sign but the same numerical value. The <<相反数/opposite number>> of $-3$ is $3$.
+
+    - number: 3
+      type: 中考选择题
+      inputType: choice
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        在<<数轴/number line>>上，与表示 $-1$ 的点距离为 $3$ 个<<单位长度/unit length>>的点表示的数是（　）
+      questionEn: |
+        On the <<数轴/number line>>, the number(s) represented by the point(s) that are $3$ <<单位长度/unit length>>s from the point $-1$ is/are ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$2$", "$-4$", "$2$ 或 $-4$", "$4$ 或 $-2$"]
+          correctValue: "$2$ 或 $-4$"
+      answer: "$2$ 或 $-4$"
+      answerEn: "$2$ or $-4$"
+      explanation: |
+        在<<数轴/number line>>上，距离 $-1$ 有 $3$ 个<<单位长度/unit length>>的点有两个方向：
+        - 向右：$-1 + 3 = 2$
+        - 向左：$-1 - 3 = -4$
+        所以答案是 $2$ 或 $-4$。
+        这道中考题的关键是**不要漏掉另一个方向**！
+      explanationEn: |
+        On the <<数轴/number line>>, points $3$ <<单位长度/unit length>>s from $-1$ lie in two directions:
+        - Right: $-1 + 3 = 2$
+        - Left: $-1 - 3 = -4$
+        So the answer is $2$ or $-4$.
+        The key to this exam question is **don't forget the other direction**!
+
+    - number: 4
+      type: 中考填空题
+      inputType: blank
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        已知 $|a| = 5$，$|b| = 3$，且 $a > b$，则 $a - b$ 的值是______。
+      questionEn: |
+        Given $|a| = 5$, $|b| = 3$, and $a > b$, find the value of $a - b$: ______.
+      correctValue: "2或8"
+      answer: "$2$ 或 $8$"
+      answerEn: "$2$ or $8$"
+      explanation: |
+        $|a| = 5$，所以 $a = 5$ 或 $a = -5$
+        $|b| = 3$，所以 $b = 3$ 或 $b = -3$
+        又因为 $a > b$，排除不满足的组合：
+        - $a = 5, b = 3$：$a - b = 2$ ✓
+        - $a = 5, b = -3$：$a - b = 8$ ✓
+        - $a = -5, b = -3$：$a > b$ 不成立（$-5 < -3$），排除
+        - $a = -5, b = 3$：$a > b$ 不成立，排除
+        所以 $a - b = 2$ 或 $8$。
+      explanationEn: |
+        $|a| = 5$, so $a = 5$ or $a = -5$
+        $|b| = 3$, so $b = 3$ or $b = -3$
+        Since $a > b$, we eliminate combinations that don't satisfy:
+        - $a = 5, b = 3$: $a - b = 2$ ✓
+        - $a = 5, b = -3$: $a - b = 8$ ✓
+        - $a = -5, b = -3$: $a > b$ fails ($-5 < -3$), eliminated
+        - $a = -5, b = 3$: $a > b$ fails, eliminated
+        So $a - b = 2$ or $8$.
+
+    - number: 5
+      type: 中考解答题
+      inputType: open
+      section: 中考强化
+      sectionEn: Exam Prep
+      question: |
+        某地一天中 $6$ 次测量的温度分别为（单位：℃）：$-3, -1, 0, 4, 2, -2$。
+        请你求出这一天的平均温度。
+      questionEn: |
+        The temperatures measured $6$ times in one day at a certain place are (unit: ℃): $-3, -1, 0, 4, 2, -2$.
+        Calculate the average temperature for this day.
+      answer: |
+        平均温度 $= \frac{(-3) + (-1) + 0 + 4 + 2 + (-2)}{6} = \frac{0}{6} = 0$ ℃
+      answerEn: |
+        Average temperature $= \frac{(-3) + (-1) + 0 + 4 + 2 + (-2)}{6} = \frac{0}{6} = 0$ ℃
+      explanation: |
+        这道中考题考查的是<<有理数/rational number>>的加法和平均数计算。
+        先求和：$(-3) + (-1) + 0 + 4 + 2 + (-2) = 0$
+        再除以测量次数 $6$：$0 ÷ 6 = 0$
+        所以这一天的平均温度是 $0$ ℃。
+      explanationEn: |
+        This exam question tests <<有理数/rational number>> addition and average calculation.
+        First sum: $(-3) + (-1) + 0 + 4 + 2 + (-2) = 0$
+        Then divide by the number of measurements $6$: $0 ÷ 6 = 0$
+        So the average temperature for this day is $0$ ℃.
