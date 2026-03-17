@@ -95,6 +95,30 @@ export interface LessonContent {
     introEn?: string;
     questions: ExerciseQuestion[];
   };
+  review?: string[];
+  reviewEn?: string[];
+  vocabulary?: VocabularyItem[];
+  reading?: ReadingSection;
+}
+
+export interface VocabularyItem {
+  word: string;
+  type: string;
+  meaning: string;
+  meaningEn: string;
+  examples: string[];
+  examplesEn: string[];
+  collocations?: string[];
+  synonyms?: string[];
+}
+
+export interface ReadingSection {
+  title: string;
+  titleEn: string;
+  intro?: string;
+  introEn?: string;
+  content: string[];
+  contentEn?: string[];
 }
 
 export interface ConceptSection {

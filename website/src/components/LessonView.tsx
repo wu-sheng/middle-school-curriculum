@@ -10,6 +10,7 @@ import NumberLine from "./NumberLine";
 import GeometryDiagram, { hasGeometryDiagram } from "./GeometryDiagrams";
 import SectionAnchor from "./SectionAnchor";
 import StudyTimer from "./StudyTimer";
+import AudioWord from "./AudioWord";
 
 /** Render content with bilingual support: in "both" mode shows zh + en stacked */
 function ContentBlock({ obj, field, className = "", lang }: {
@@ -134,13 +135,14 @@ interface Props {
   chapterNameEn: string;
 }
 
-type Tab = "learn" | "examples" | "exercises" | "exam";
+type Tab = "learn" | "vocabulary" | "examples" | "exercises" | "exam";
 
 /** Infer which tab a hash anchor belongs to */
 function tabForHash(hash: string): Tab | null {
   if (!hash) return null;
   const id = hash.replace(/^#/, "");
   if (id.startsWith("example-")) return "examples";
+  if (id.startsWith("vocab-")) return "vocabulary";
   if (id.startsWith("q-")) return "exercises";
   if (id.startsWith("exam-")) return "exam";
   if (["prerequisites", "reallife", "mistakes", "summary"].includes(id) || id.startsWith("concept-")) return "learn";
@@ -157,10 +159,19 @@ function questionIndexFromHash(hash: string, questions: QuizQuestion[], prefix: 
   return idx >= 0 ? idx : null;
 }
 
+type Session = 1 | 2;
+
+/** Which session does a tab belong to? */
+function sessionForTab(tab: Tab): Session {
+  if (tab === "learn" || tab === "vocabulary" || tab === "examples") return 1;
+  return 2;
+}
+
 export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Props) {
+  const [session, setSession] = useState<Session>(1);
   const [activeTab, setActiveTab] = useState<Tab>("learn");
   const { lang } = useLang();
-  const ui = getUi(lang);
+  const ui = getUi(lang) as Record<string, string>;
   const l = lesson as unknown as Record<string, unknown>;
 
   // Handle hash-based navigation on mount and hash change
@@ -169,8 +180,8 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
     if (!hash) return;
     const tab = tabForHash(hash);
     if (tab) {
+      setSession(sessionForTab(tab));
       setActiveTab(tab);
-      // Delay scroll to let the tab content render
       setTimeout(() => {
         const el = document.getElementById(hash.replace(/^#/, ""));
         el?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -184,12 +195,22 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
     return () => window.removeEventListener("hashchange", navigateToHash);
   }, [navigateToHash]);
 
-  const tabs: { key: Tab; label: string; icon: string }[] = [
-    { key: "learn", label: ui.learn, icon: "🌸" },
-    { key: "examples", label: ui.examples, icon: "🦙" },
-    { key: "exercises", label: ui.exercises, icon: "🐼" },
-    ...(lesson.examPrep ? [{ key: "exam" as Tab, label: ui.examPrep, icon: "🎯" }] : []),
+  // Switch session → jump to first tab in that session
+  const switchSession = useCallback((s: Session) => {
+    setSession(s);
+    if (s === 1) setActiveTab("learn");
+    else setActiveTab("exercises");
+  }, []);
+
+  // Build tabs for current session
+  const allTabs: { key: Tab; label: string; icon: string; session: Session }[] = [
+    { key: "learn", label: ui.learn, icon: "🌸", session: 1 },
+    ...(lesson.vocabulary ? [{ key: "vocabulary" as Tab, label: ui.vocabulary || "词汇", icon: "📖", session: 1 as Session }] : []),
+    ...(lesson.examples && lesson.examples.length > 0 ? [{ key: "examples" as Tab, label: ui.examples, icon: "🦙", session: 1 as Session }] : []),
+    ...(lesson.exercises && lesson.exercises.questions && lesson.exercises.questions.length > 0 ? [{ key: "exercises" as Tab, label: ui.exercises, icon: "🐼", session: 2 as Session }] : []),
+    ...(lesson.examPrep ? [{ key: "exam" as Tab, label: ui.examPrep, icon: "🎯", session: 2 as Session }] : []),
   ];
+  const tabs = allTabs.filter((t) => t.session === session);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
@@ -209,20 +230,47 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
         </div>
       </div>
 
-      {/* Learning objectives */}
-      <div className="bg-gradient-to-r from-pink-50/60 to-purple-50/60 rounded-2xl p-5 mb-6 border border-pink-50">
-        <h2 className="font-bold text-purple-500 mb-3 flex items-center gap-2">
-          🌸 {ui.objectives}
-        </h2>
-        <ul className="space-y-2">
-          <ContentList obj={l} field="objectives" lang={lang} renderItem={(zh, en, i) => (
-            <li key={i} className="flex items-start gap-2 text-base text-gray-700">
-              <span className="text-pink-300 mt-0.5">✦</span>
-              <BiMathText zh={zh} en={en} lang={lang} />
-            </li>
-          )} />
-        </ul>
+      {/* Session toggle */}
+      <div className="flex gap-2 mb-4">
+        {([1, 2] as Session[]).map((s) => (
+          <button
+            key={s}
+            onClick={() => switchSession(s)}
+            className={`flex-1 py-3 px-4 rounded-xl text-sm font-medium transition-all border ${
+              session === s
+                ? s === 1
+                  ? "bg-gradient-to-r from-pink-50 to-purple-50 border-purple-200 text-purple-600 shadow-sm"
+                  : "bg-gradient-to-r from-blue-50 to-indigo-50 border-indigo-200 text-indigo-600 shadow-sm"
+                : "bg-white border-gray-100 text-gray-400 hover:border-gray-200"
+            }`}
+          >
+            <span className="font-bold">{ui[`session${s}`]}</span>
+            <span className="block text-xs mt-0.5 opacity-70">{ui[`session${s}Desc`]}</span>
+          </button>
+        ))}
       </div>
+
+      {/* Learning objectives — only in session 1 */}
+      {session === 1 && (
+        <div className="bg-gradient-to-r from-pink-50/60 to-purple-50/60 rounded-2xl p-5 mb-6 border border-pink-50">
+          <h2 className="font-bold text-purple-500 mb-3 flex items-center gap-2">
+            🌸 {ui.objectives}
+          </h2>
+          <ul className="space-y-2">
+            <ContentList obj={l} field="objectives" lang={lang} renderItem={(zh, en, i) => (
+              <li key={i} className="flex items-start gap-2 text-base text-gray-700">
+                <span className="text-pink-300 mt-0.5">✦</span>
+                <BiMathText zh={zh} en={en} lang={lang} />
+              </li>
+            )} />
+          </ul>
+        </div>
+      )}
+
+      {/* Quick review card — only in session 2 */}
+      {session === 2 && lesson.review && lesson.review.length > 0 && (
+        <ReviewCard lesson={lesson} />
+      )}
 
       {/* Tab navigation */}
       <div className="flex gap-2 mb-6 bg-white rounded-xl p-1 border border-pink-50">
@@ -243,8 +291,9 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
       </div>
 
       {activeTab === "learn" && <LearnTab lesson={lesson} />}
-      {activeTab === "examples" && <ExamplesTab lesson={lesson} />}
-      {activeTab === "exercises" && (
+      {activeTab === "vocabulary" && lesson.vocabulary && <VocabularyTab lesson={lesson} />}
+      {activeTab === "examples" && lesson.examples && <ExamplesTab lesson={lesson} />}
+      {activeTab === "exercises" && lesson.exercises && (
         <QuizSection
           questions={lesson.exercises.questions}
           prefix="q"
@@ -275,6 +324,41 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   );
 }
 
+/** Quick review card shown at the start of Session 2 */
+function ReviewCard({ lesson }: { lesson: LessonContent }) {
+  const { lang } = useLang();
+  const ui = getUi(lang) as Record<string, string>;
+  const [collapsed, setCollapsed] = useState(false);
+  const lObj = lesson as unknown as Record<string, unknown>;
+
+  return (
+    <div className="bg-gradient-to-r from-blue-50/60 to-indigo-50/60 rounded-2xl p-5 mb-6 border border-indigo-100">
+      <button
+        onClick={() => setCollapsed(!collapsed)}
+        className="w-full flex items-center justify-between"
+      >
+        <h2 className="font-bold text-indigo-500 flex items-center gap-2">
+          🔄 {ui.quickReview}
+        </h2>
+        <span className={`text-indigo-300 transition-transform ${collapsed ? "" : "rotate-180"}`}>▲</span>
+      </button>
+      {!collapsed && (
+        <>
+          <p className="text-sm text-gray-500 mt-2 mb-3">{ui.quickReviewDesc}</p>
+          <ul className="space-y-2">
+            <ContentList obj={lObj} field="review" lang={lang} renderItem={(zh, en, i) => (
+              <li key={i} className="flex items-start gap-2 text-base text-gray-700">
+                <span className="text-indigo-400 mt-0.5 flex-shrink-0">✦</span>
+                <BiMathText zh={zh} en={en} lang={lang} />
+              </li>
+            )} />
+          </ul>
+        </>
+      )}
+    </div>
+  );
+}
+
 function LearnTab({ lesson }: { lesson: LessonContent }) {
   const { lang } = useLang();
   const ui = getUi(lang);
@@ -283,6 +367,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
   return (
     <div className="space-y-6">
       {/* Prerequisites */}
+      {lesson.prerequisites && (
       <section className="bg-white rounded-2xl p-6 border border-pink-50">
         <SectionAnchor id="prerequisites" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🦙 <MathText content={biField(pre, "title", lang)} />
@@ -328,9 +413,10 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
           <ContentBlock obj={pre} field="conclusion" lang={lang} className="text-base text-purple-500 font-medium" />
         </div>
       </section>
+      )}
 
       {/* Concepts */}
-      {lesson.concepts.map((concept) => {
+      {lesson.concepts && lesson.concepts.map((concept) => {
         const c = concept as unknown as Record<string, unknown>;
         return (
           <section key={concept.id} className="bg-white rounded-2xl p-6 border border-pink-50">
@@ -423,6 +509,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
       })}
 
       {/* Real life */}
+      {lesson.realLife && lesson.realLife.length > 0 && (
       <section className="bg-white rounded-2xl p-6 border border-pink-50">
         <SectionAnchor id="reallife" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🐼 {ui.realLife}
@@ -446,8 +533,10 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
           })}
         </div>
       </section>
+      )}
 
       {/* Common mistakes */}
+      {lesson.commonMistakes && lesson.commonMistakes.length > 0 && (
       <section className="bg-white rounded-2xl p-6 border border-red-100">
         <SectionAnchor id="mistakes" className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
           ⚠️ {ui.commonMistakes}
@@ -461,8 +550,10 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
           )} />
         </ul>
       </section>
+      )}
 
       {/* Summary */}
+      {lesson.summary && lesson.summary.length > 0 && (
       <section className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border border-purple-50">
         <SectionAnchor id="summary" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🌸 {ui.summary}
@@ -476,6 +567,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
           )} />
         </ul>
       </section>
+      )}
     </div>
   );
 }
@@ -888,6 +980,67 @@ function ExerciseCard({
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function VocabularyTab({ lesson }: { lesson: LessonContent }) {
+  const { lang } = useLang();
+  if (!lesson.vocabulary) return null;
+
+  return (
+    <div className="space-y-4">
+      <div className="flex items-center gap-3 text-sm text-gray-500 mb-4 bg-white rounded-xl p-3 border border-purple-50">
+        <span className="text-2xl">📖</span>
+        <p>{lang === "en" ? "Learn and practice the key vocabulary." : "考拉提示：点击喇叭听发音，掌握核心魔法词汇！"}</p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {lesson.vocabulary.map((item, i) => (
+          <div key={i} id={`vocab-${i}`} className="bg-white rounded-2xl p-5 border border-purple-100 shadow-sm scroll-mt-24">
+            <div className="flex items-center justify-between mb-3 border-b border-purple-50 pb-3">
+              <div className="flex flex-col">
+                <div className="flex items-center gap-2 text-lg">
+                  <AudioWord word={item.word} lang={lang === "en" ? "en-GB" : "en-US"} className="text-purple-600" />
+                  <span className="text-xs text-gray-400 font-mono italic px-2 py-0.5 bg-gray-50 rounded-md">{item.type}</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mb-4">
+              <ContentBlock obj={item as unknown as Record<string, unknown>} field="meaning" lang={lang} className="text-base text-gray-800 font-medium" />
+            </div>
+
+            {item.examples && (
+              <div className="bg-purple-50/50 rounded-xl p-3 mb-3">
+                <p className="text-xs text-purple-400 mb-1 font-medium">Example:</p>
+                <ul className="space-y-2">
+                  <ContentList obj={item as unknown as Record<string, unknown>} field="examples" lang={lang} renderItem={(zh, en, j) => (
+                    <li key={j} className="text-sm text-gray-600 leading-relaxed">
+                      <BiMathText zh={zh} en={en} lang={lang} />
+                    </li>
+                  )} />
+                </ul>
+              </div>
+            )}
+            
+            {(item.synonyms || item.collocations) && (
+              <div className="flex flex-wrap gap-2 mt-2">
+                {item.synonyms && item.synonyms.map((syn, j) => (
+                  <span key={`syn-${j}`} className="text-xs text-blue-500 bg-blue-50 px-2 py-1 rounded-md border border-blue-100">
+                    Synonym: {syn}
+                  </span>
+                ))}
+                {item.collocations && item.collocations.map((col, j) => (
+                  <span key={`col-${j}`} className="text-xs text-emerald-500 bg-emerald-50 px-2 py-1 rounded-md border border-emerald-100">
+                    Collocation: {col}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -98,6 +98,7 @@ export function getUi(lang: Lang) {
 export const uiText = {
   zh: {
     learn: "学习",
+    vocabulary: "核心词汇",
     examples: "题型精讲",
     exercises: "练习",
     objectives: "学习目标",
@@ -144,9 +145,16 @@ export const uiText = {
     guidedBy: "带你学",
     examPrep: "章末提升",
     examIntro: "以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。",
+    session1: "第1课时",
+    session2: "第2课时",
+    session1Desc: "概念学习 + 题型精讲",
+    session2Desc: "快速回顾 + 练习 + 章末提升",
+    quickReview: "快速回顾",
+    quickReviewDesc: "上节课的核心知识点，做题前先回顾一下：",
   },
   en: {
     learn: "Learn",
+    vocabulary: "Vocabulary",
     examples: "Worked Examples",
     exercises: "Practice",
     objectives: "Learning Objectives",
@@ -193,5 +201,11 @@ export const uiText = {
     guidedBy: "guides you",
     examPrep: "Challenge",
     examIntro: "These questions are slightly harder than regular exercises to help you consolidate and apply what you've learned in this chapter.",
+    session1: "Session 1",
+    session2: "Session 2",
+    session1Desc: "Concepts + Worked Examples",
+    session2Desc: "Quick Review + Practice + Challenge",
+    quickReview: "Quick Review",
+    quickReviewDesc: "Key points from last session — review before you practice:",
   },
 };

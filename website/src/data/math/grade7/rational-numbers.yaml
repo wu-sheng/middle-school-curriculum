@@ -4,7 +4,8 @@ chapter: 1
 subject: math
 grade: grade7
 semester: semester1
-estimatedTime: 45-60分钟学习 + 30分钟练习
+estimatedTime: 第1课时 约60分钟 · 第2课时 约50分钟
+estimatedTimeEn: "Session 1 ~60 min · Session 2 ~50 min"
 targetAudience: 刚小学毕业、准备进入七年级的学生
 
 objectives:
@@ -1066,6 +1067,21 @@ summaryEn:
   - "Can represent simple <<有理数/rational number>>s on the <<数轴/number line>>"
   - "Can find the <<相反数/opposite number>> and <<绝对值/absolute value>> of a number"
   - "Can compare the size of two <<有理数/rational number>>s"
+
+review:
+  - "$0$ 既不是<<正数/positive number>>也不是<<负数/negative number>>，但它是<<整数/integer>>，是正负数的**分界点**"
+  - "<<有理数/rational number>> = <<整数/integer>> + <<分数/fraction>>，也可按正、零、负分类"
+  - "<<数轴/number line>>三要素：<<原点/origin>>、正方向、<<单位长度/unit length>>；右边的数更大"
+  - "<<相反数/opposite number>>：$a$ 与 $-a$ 关于原点对称，$a + (-a) = 0$；$0$ 的相反数是 $0$"
+  - "<<绝对值/absolute value>>：$|a|$ 是 $a$ 到原点的距离（非负数）；$-a$ 不一定是负数！"
+  - "比较负数大小：<<绝对值/absolute value>>越大，数越小（例如 $-5 < -3$）"
+reviewEn:
+  - "$0$ is neither <<正数/positive number>> nor <<负数/negative number>>, but it IS an <<整数/integer>> — the dividing point"
+  - "<<有理数/rational number>> = <<整数/integer>>s + <<分数/fraction>>s; can also classify as positive, zero, negative"
+  - "<<数轴/number line>> has three elements: <<原点/origin>>, positive direction, <<单位长度/unit length>>; numbers to the right are larger"
+  - "<<相反数/opposite number>>: $a$ and $-a$ are symmetric about the origin, $a + (-a) = 0$; the opposite of $0$ is $0$"
+  - "<<绝对值/absolute value>>: $|a|$ is the distance from $a$ to the origin (non-negative); $-a$ is not necessarily negative!"
+  - "Comparing negatives: larger <<绝对值/absolute value>> means smaller number (e.g. $-5 < -3$)"
 
 examPrep:
   intro: 以下题目难度略高于课内练习，帮助你巩固本章知识并提升综合运用能力。
