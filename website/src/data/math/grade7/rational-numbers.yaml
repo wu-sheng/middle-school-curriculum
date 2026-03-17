@@ -61,148 +61,275 @@ concepts:
     title: <<正数/positive number>>、<<负数/negative number>>、<<零/zero>>
     titleEn: "<<正数/positive number>>, <<负数/negative number>>, and <<零/zero>>"
     content: |
-      规定一个基准后：
-      - 高于基准、增加、向上，可以记作**<<正数/positive number>>**
-      - 低于基准、减少、向下，可以记作**<<负数/negative number>>**
-      - 正好在基准上，记作 $0$
+      生活中有很多"相反意义的量"——上升与下降、收入与支出、零上与零下。为了区分这些方向相反的量，数学引入了**正号**和**负号**：
+
+      - 规定一个方向为"正"，则相反方向为"负"
+      - **<<正数/positive number>>**：大于 $0$ 的数，如 $1, 2.5, \frac{3}{4}$（正号 $+$ 通常省略不写）
+      - **<<负数/negative number>>**：小于 $0$ 的数，如 $-1, -2.5, -\frac{3}{4}$（负号 $-$ **不能省略**）
+
+      **$0$ 的特殊地位——它不是"没有"：**
+
+      $0$ 既不是<<正数/positive number>>，也不是<<负数/negative number>>，但它在数学中有多重重要含义：
+
+      - **占位符**：数字 $305$ 中的 $0$ 表示"十位上没有"，如果去掉写成 $35$ 就完全变了
+      - **基准**：$0℃$ 不是"没有温度"，而是冰水混合物的温度，是<<正数/positive number>>与<<负数/negative number>>的**分界点**
+      - **起点**：在<<数轴/number line>>上，$0$ 是<<原点/origin>>，一切度量从这里开始
+      - **分界**：$0$ 把所有数分成两大阵营——左边全是<<负数/negative number>>，右边全是<<正数/positive number>>
     contentEn: |
-      After setting a baseline:
-      - Above the baseline, increasing, or upward, can be written as a **<<正数/positive number>>**
-      - Below the baseline, decreasing, or downward, can be written as a **<<负数/negative number>>**
-      - Exactly at the baseline, written as $0$
+      In daily life, there are many "quantities with opposite meanings" — rising vs. falling, income vs. expense, above zero vs. below zero. To distinguish these opposite quantities, mathematics introduces the **positive sign** and **negative sign**:
+
+      - Designate one direction as "positive," and the opposite direction is "negative"
+      - **<<正数/positive number>>s**: numbers greater than $0$, such as $1, 2.5, \frac{3}{4}$ (the $+$ sign is usually omitted)
+      - **<<负数/negative number>>s**: numbers less than $0$, such as $-1, -2.5, -\frac{3}{4}$ (the $-$ sign **cannot be omitted**)
+
+      **The special role of $0$ — it doesn't mean "nothing":**
+
+      $0$ is neither a <<正数/positive number>> nor a <<负数/negative number>>, but it has multiple important meanings in mathematics:
+
+      - **Placeholder**: In the number $305$, the $0$ means "nothing in the tens place" — removing it to get $35$ changes the number entirely
+      - **Baseline**: $0℃$ is not "no temperature" — it is the temperature of an ice-water mixture, the **dividing point** between <<正数/positive number>>s and <<负数/negative number>>s
+      - **Starting point**: On the <<数轴/number line>>, $0$ is the <<原点/origin>> where all measurements begin
+      - **Divider**: $0$ separates all numbers into two camps — <<负数/negative number>>s on the left, <<正数/positive number>>s on the right
     examples:
-      - 海平面以上 $12$ 米，记作 $+12$ 米，也可以直接写成 $12$ 米
-      - 海平面以下 $5$ 米，记作 $-5$ 米
-      - 气温 $0$ 摄氏度，记作 $0℃$
+      - '**温度**：零上 $12℃$ 记作 $+12℃$，零下 $5℃$ 记作 $-5℃$，而 $0℃$ 是冰点——水开始结冰的温度'
+      - '**海拔**：珠穆朗玛峰海拔 $+8848.86$ 米，吐鲁番盆地海拔 $-154.31$ 米，海平面定义为 $0$ 米'
+      - '**收支**：收入 $200$ 元记作 $+200$，支出 $50$ 元记作 $-50$，收支平衡记作 $0$'
+      - '**电梯**：地上 $3$ 层记作 $+3$，地下 $2$ 层记作 $-2$，$1$ 楼（地面）就是基准 $0$'
     examplesEn:
-      - "$12$ meters above sea level is written as $+12$ m, or simply $12$ m"
-      - "$5$ meters below sea level is written as $-5$ m"
-      - "A temperature of $0$ degrees Celsius is written as $0℃$"
+      - '**Temperature**: $12℃$ above zero is written as $+12℃$, $5℃$ below zero as $-5℃$, and $0℃$ is the freezing point — the temperature at which water begins to freeze'
+      - '**Altitude**: Mount Everest is $+8848.86$ m, the Turpan Basin is $-154.31$ m, and sea level is defined as $0$ m'
+      - '**Finance**: Earning $200$ yuan is $+200$, spending $50$ yuan is $-50$, and breaking even is $0$'
+      - '**Elevator**: Floor $3$ above ground is $+3$, basement $2$ is $-2$, and the ground floor is the baseline $0$'
     notes:
-      - <<正数/positive number>>前面的 $+$ 常常省略不写
-      - <<负数/negative number>>前面的 $-$ 不能省略
+      - '**关键区分**：$0$ 既不是<<正数/positive number>>也不是<<负数/negative number>>！这是考试常考的判断题'
+      - '正负号表示的是方向，不是大小。$-100$ 虽然数字很大，但它比 $1$ 还小'
+      - '同一个数在不同基准下可正可负：$5$ 层楼在地面看是 $+5$，在 $8$ 层看就变成了"低 $3$ 层"'
     notesEn:
-      - "The $+$ sign before a <<正数/positive number>> is often omitted"
-      - "The $-$ sign before a <<负数/negative number>> cannot be omitted"
+      - '**Key distinction**: $0$ is neither a <<正数/positive number>> nor a <<负数/negative number>>! This is frequently tested in exams'
+      - 'The sign indicates direction, not magnitude. $-100$ has a large digit, but it is smaller than $1$'
+      - 'The same number can be positive or negative depending on the baseline: floor $5$ is $+5$ from the ground, but "$3$ floors below" from floor $8$'
 
   - id: rational-numbers
-    title: <<有理数/rational number>>
-    titleEn: <<有理数/rational number>>
+    title: <<有理数/rational number>>的概念与分类
+    titleEn: Concept and classification of <<有理数/rational number>>s
     content: |
-      **<<整数/integer>>**和**<<分数/fraction>>**统称为**<<有理数/rational number>>**。
+      有了<<正数/positive number>>、<<负数/negative number>>和 $0$，我们现在认识的数就丰富多了。数学上把这些数统一起来，给它们一个总称：
 
-      <<有理数/rational number>>包括：
+      **<<整数/integer>>**（包括正<<整数/integer>>、$0$、负<<整数/integer>>）和**<<分数/fraction>>**（包括正<<分数/fraction>>、负<<分数/fraction>>）统称为**<<有理数/rational number>>**。
+
+      **为什么叫"有理数"？** 因为它们都能写成两个<<整数/integer>>之比 $\frac{p}{q}$（$q \neq 0$）的形式。例如 $0.75 = \frac{3}{4}$，$-2 = \frac{-2}{1}$，$0 = \frac{0}{1}$。
+
+      **分类方式一（按正负分）：**
     contentEn: |
-      **<<整数/integer>>s** and **<<分数/fraction>>s** are collectively called **<<有理数/rational number>>s**.
+      With <<正数/positive number>>s, <<负数/negative number>>s, and $0$, we now know a much richer set of numbers. Mathematics gives them a unified name:
 
-      <<有理数/rational number>>s include:
+      **<<整数/integer>>s** (including positive <<整数/integer>>s, $0$, and negative <<整数/integer>>s) and **<<分数/fraction>>s** (including positive and negative <<分数/fraction>>s) are collectively called **<<有理数/rational number>>s**.
+
+      **Why are they called "rational numbers"?** Because they can all be written as the ratio of two <<整数/integer>>s $\frac{p}{q}$ ($q \neq 0$). For example, $0.75 = \frac{3}{4}$, $-2 = \frac{-2}{1}$, $0 = \frac{0}{1}$.
+
+      **Classification method 1 (by sign):**
     classification:
-      - name: 正<<整数/integer>>
-        nameEn: Positive <<整数/integer>>
-        examples: "$1, 2, 10$"
-      - name: 负<<整数/integer>>
-        nameEn: Negative <<整数/integer>>
-        examples: "$-1, -2, -10$"
+      - name: 正<<有理数/rational number>>
+        nameEn: Positive <<有理数/rational number>>s
+        examples: '$1, \frac{1}{2}, 0.3, 2.5, 100$'
+        examplesEn: '$1, \frac{1}{2}, 0.3, 2.5, 100$'
       - name: <<零/zero>>
         nameEn: <<零/zero>>
-        examples: "$0$"
-      - name: 正<<分数/fraction>>和正<<小数/decimal>>
-        nameEn: Positive <<分数/fraction>>s and positive <<小数/decimal>>s
-        examples: "$\\frac{1}{2}, 0.3, 2.5$"
-      - name: 负<<分数/fraction>>和负<<小数/decimal>>
-        nameEn: Negative <<分数/fraction>>s and negative <<小数/decimal>>s
-        examples: "$-\\frac{1}{2}, -0.3, -2.5$"
-    summary: |
-      你现在可以先把它理解为：能写成<<整数/integer>>、<<分数/fraction>>或有限<<小数/decimal>>形式的这些常见数，都属于现在要学的范围。
-    summaryEn: |
-      For now, you can understand it as: common numbers that can be written as <<整数/integer>>s, <<分数/fraction>>s, or finite <<小数/decimal>>s all belong to the scope we are studying.
+        examples: "$0$（独立一类，不归入正也不归入负）"
+        examplesEn: "$0$ (a separate category, neither positive nor negative)"
+      - name: 负<<有理数/rational number>>
+        nameEn: Negative <<有理数/rational number>>s
+        examples: '$-1, -\frac{1}{2}, -0.3, -2.5, -100$'
+        examplesEn: '$-1, -\frac{1}{2}, -0.3, -2.5, -100$'
+    notes:
+      - '**<<小数/decimal>>也是<<有理数/rational number>>**：有限<<小数/decimal>>（如 $0.75$）和无限循环<<小数/decimal>>（如 $0.333\ldots = \frac{1}{3}$）都能写成<<分数/fraction>>形式，所以都是<<有理数/rational number>>'
+      - '**分类方式二（按整、分）**：也可以按"<<整数/integer>>"和"<<分数/fraction>>"来分——<<整数/integer>>包括正<<整数/integer>>、$0$、负<<整数/integer>>；<<分数/fraction>>包括正<<分数/fraction>>、负<<分数/fraction>>'
+      - '**$0$ 是<<整数/integer>>**：$0$ 属于<<整数/integer>>，但不属于<<正数/positive number>>也不属于<<负数/negative number>>'
+      - '到了第 8 章学<<实数/real number>>时，你会发现有些数（如 $\sqrt{2}$、$\pi$）不能写成<<分数/fraction>>形式，它们不是<<有理数/rational number>>'
+    notesEn:
+      - '**<<小数/decimal>>s are also <<有理数/rational number>>s**: Finite <<小数/decimal>>s (e.g., $0.75$) and infinite repeating <<小数/decimal>>s (e.g., $0.333\ldots = \frac{1}{3}$) can all be written as <<分数/fraction>>s, so they are all <<有理数/rational number>>s'
+      - '**Classification method 2 (integer vs. fraction)**: You can also classify by "<<整数/integer>>s" and "<<分数/fraction>>s" — <<整数/integer>>s include positive <<整数/integer>>s, $0$, and negative <<整数/integer>>s; <<分数/fraction>>s include positive and negative <<分数/fraction>>s'
+      - '**$0$ is an <<整数/integer>>**: $0$ belongs to <<整数/integer>>s, but is neither a <<正数/positive number>> nor a <<负数/negative number>>'
+      - 'In Chapter 8 on <<实数/real number>>s, you will discover that some numbers (like $\sqrt{2}$, $\pi$) cannot be written as <<分数/fraction>>s — they are not <<有理数/rational number>>s'
 
   - id: number-line
     title: <<数轴/number line>>
     titleEn: <<数轴/number line>>
     content: |
-      <<数轴/number line>>是一条规定了**<<原点/origin>>**、**<<正方向/positive direction>>**、**<<单位长度/unit length>>**的直线。
+      <<数轴/number line>>是数学中最基本的工具之一。它把抽象的数变成了直线上看得见的点，让数的大小、距离、方向都变得直观。
+
+      画一条<<数轴/number line>>，必须具备**三个要素**（缺一不可）：
+
+      **① <<原点/origin>>**：在直线上取一个点，标上数字 $0$，这就是起点。所有正负都从这里划分。
+
+      **② <<正方向/positive direction>>**：用**箭头**指向右边。箭头指示的方向就是数越来越大的方向。
+
+      **③ <<单位长度/unit length>>**：取**相等的一小段**作为 $1$ 个单位。这个长度必须固定且统一——不能左边一格 $1$ 厘米，右边一格 $2$ 厘米。
+
+      有了这三个要素，<<数轴/number line>>上的每一个点都对应一个数，每一个<<有理数/rational number>>都能在<<数轴/number line>>上找到对应的点。
     contentEn: |
-      A <<数轴/number line>> is a straight line with a defined **<<原点/origin>>**, **<<正方向/positive direction>>**, and **<<单位长度/unit length>>**.
-    rules:
-      - <<原点/origin>>记作 $0$
-      - 向右是<<正方向/positive direction>>
-      - 每一小段表示 $1$ 个<<单位长度/unit length>>
-    rulesEn:
-      - "The <<原点/origin>> is marked as $0$"
-      - "The <<正方向/positive direction>> points to the right"
-      - "Each small segment represents $1$ <<单位长度/unit length>>"
-    purposes:
-      - 表示数的位置
-      - 比较数的大小
-      - 观察数与数之间的距离
-    purposesEn:
-      - Represent the position of numbers
-      - Compare the size of numbers
-      - Observe the distance between numbers
+      The <<数轴/number line>> is one of the most fundamental tools in mathematics. It transforms abstract numbers into visible points on a line, making the size, distance, and direction of numbers intuitive.
+
+      To draw a <<数轴/number line>>, you need **three essential elements** (all are required):
+
+      **① <<原点/origin>>**: Choose a point on the line and mark it as $0$. This is the starting point. All positive and negative values are divided from here.
+
+      **② <<正方向/positive direction>>**: An **arrow** pointing to the right. The arrow indicates the direction in which numbers increase.
+
+      **③ <<单位长度/unit length>>**: Choose **equal segments** as $1$ unit. This length must be fixed and consistent — you cannot have one unit be $1$ cm on the left and $2$ cm on the right.
+
+      With these three elements, every point on the <<数轴/number line>> corresponds to a number, and every <<有理数/rational number>> can find its corresponding point on the <<数轴/number line>>.
+    examples:
+      - '在<<数轴/number line>>上，$3$ 在<<原点/origin>>右边 $3$ 个<<单位长度/unit length>>处；$-2$ 在<<原点/origin>>左边 $2$ 个<<单位长度/unit length>>处'
+      - '$0.5$ 在 $0$ 和 $1$ 的正中间；$-1.5$ 在 $-1$ 和 $-2$ 的正中间'
+      - '<<数轴/number line>>向右延伸，数越来越大；向左延伸，数越来越小——没有尽头'
+    examplesEn:
+      - 'On the <<数轴/number line>>, $3$ is $3$ <<单位长度/unit length>>s to the right of the <<原点/origin>>; $-2$ is $2$ <<单位长度/unit length>>s to the left'
+      - '$0.5$ is exactly halfway between $0$ and $1$; $-1.5$ is exactly halfway between $-1$ and $-2$'
+      - 'The <<数轴/number line>> extends to the right (numbers get larger) and to the left (numbers get smaller) — with no end'
+    notes:
+      - '**必须有箭头**：箭头表示方向（正方向），没有箭头的直线不是<<数轴/number line>>'
+      - '**<<单位长度/unit length>>可以自选**：可以让 $1$ 格代表 $1$，也可以代表 $10$、$100$ 或 $0.5$，但整条线必须一致'
+      - '**<<数轴/number line>>的核心用途**：把"数"和"形"统一起来——这个思想叫"数形结合"，贯穿整个初中数学'
+    notesEn:
+      - '**Must have an arrow**: The arrow indicates direction (positive direction). A line without an arrow is not a <<数轴/number line>>'
+      - '**<<单位长度/unit length>> is flexible**: One grid can represent $1$, $10$, $100$, or $0.5$, but the entire line must be consistent'
+      - '**Core purpose of the <<数轴/number line>>**: Unifying "numbers" and "shapes" — this idea is called "combining numbers with shapes" and runs throughout middle school mathematics'
     hasVisualization: true
 
   - id: opposite-numbers
     title: <<相反数/opposite number>>
     titleEn: <<相反数/opposite number>>
     content: |
-      只有**符号不同，数字部分相同**的两个数互为<<相反数/opposite number>>。
+      只有**符号不同，数字部分相同**的两个数互为<<相反数/opposite number>>。用字母表示：$a$ 的<<相反数/opposite number>>是 $-a$。
+
+      **<<数轴/number line>>上的理解**：互为<<相反数/opposite number>>的两个数，分别在<<原点/origin>> $0$ 的两侧，并且到<<原点/origin>>的**距离相等**。它们关于<<原点/origin>>对称。
+
+      **求<<相反数/opposite number>>的方法**：
+      - <<正数/positive number>>的<<相反数/opposite number>>：加上负号 → $5$ 的<<相反数/opposite number>>是 $-5$
+      - <<负数/negative number>>的<<相反数/opposite number>>：去掉负号 → $-3$ 的<<相反数/opposite number>>是 $3$
+      - $0$ 的<<相反数/opposite number>>：还是 $0$（$0$ 关于自身对称）
+
+      **<<相反数/opposite number>>的重要性质**：互为<<相反数/opposite number>>的两个数相加等于 $0$，即 $a + (-a) = 0$。
     contentEn: |
-      Two numbers that have **different signs but the same numerical part** are <<相反数/opposite number>>s of each other.
+      Two numbers that have **different signs but the same numerical part** are <<相反数/opposite number>>s of each other. In algebraic notation: the <<相反数/opposite number>> of $a$ is $-a$.
+
+      **Understanding on the <<数轴/number line>>**: Two numbers that are <<相反数/opposite number>>s of each other are on opposite sides of the <<原点/origin>> $0$, and are **equidistant** from the <<原点/origin>>. They are symmetric about the <<原点/origin>>.
+
+      **How to find the <<相反数/opposite number>>**:
+      - <<相反数/opposite number>> of a <<正数/positive number>>: add a negative sign → the <<相反数/opposite number>> of $5$ is $-5$
+      - <<相反数/opposite number>> of a <<负数/negative number>>: remove the negative sign → the <<相反数/opposite number>> of $-3$ is $3$
+      - <<相反数/opposite number>> of $0$: still $0$ ($0$ is symmetric about itself)
+
+      **Key property**: The sum of two <<相反数/opposite number>>s is $0$, i.e., $a + (-a) = 0$.
     examples:
-      - "$5$ 和 $-5$ 互为<<相反数/opposite number>>"
-      - "$2.5$ 和 $-2.5$ 互为<<相反数/opposite number>>"
-      - "$0$ 的<<相反数/opposite number>>是 $0$"
+      - '$5$ 和 $-5$ 互为<<相反数/opposite number>>——在<<数轴/number line>>上，它们都距离<<原点/origin>> $5$ 个<<单位长度/unit length>>，一个在左一个在右'
+      - '$\frac{2}{3}$ 和 $-\frac{2}{3}$ 互为<<相反数/opposite number>>——小数和分数也有<<相反数/opposite number>>'
+      - '$0$ 的<<相反数/opposite number>>是 $0$——$0$ 是唯一一个<<相反数/opposite number>>等于自身的数'
+      - '生活类比：向东走 $3$ 步再向西走 $3$ 步，回到原点——$+3$ 和 $-3$ 正好"抵消"'
     examplesEn:
-      - "$5$ and $-5$ are <<相反数/opposite number>>s of each other"
-      - "$2.5$ and $-2.5$ are <<相反数/opposite number>>s of each other"
-      - "The <<相反数/opposite number>> of $0$ is $0$"
+      - '$5$ and $-5$ are <<相反数/opposite number>>s — on the <<数轴/number line>>, both are $5$ <<单位长度/unit length>>s from the <<原点/origin>>, one on each side'
+      - '$\frac{2}{3}$ and $-\frac{2}{3}$ are <<相反数/opposite number>>s — decimals and fractions also have <<相反数/opposite number>>s'
+      - 'The <<相反数/opposite number>> of $0$ is $0$ — $0$ is the only number whose <<相反数/opposite number>> equals itself'
+      - 'Real-life analogy: Walking $3$ steps east then $3$ steps west brings you back to the starting point — $+3$ and $-3$ exactly "cancel out"'
 
   - id: absolute-value
     title: <<绝对值/absolute value>>
     titleEn: <<绝对值/absolute value>>
     content: |
-      一个数的<<绝对值/absolute value>>，表示这个数对应的点到<<原点/origin>>的距离。
+      **<<绝对值/absolute value>>的几何意义**：一个数的<<绝对值/absolute value>>，就是<<数轴/number line>>上这个数对应的点到**<<原点/origin>>的距离**。
+
+      距离只说远近，不分方向，所以<<绝对值/absolute value>>**永远 $\geq 0$**（非负数）。
+
+      **记法**：数 $a$ 的<<绝对值/absolute value>>记作 $|a|$，读作"$a$ 的<<绝对值/absolute value>>"。
+
+      **分三种情况：**
+      - 当 $a > 0$（<<正数/positive number>>）时：$|a| = a$（本身就是正的，距离就是自己）
+      - 当 $a = 0$ 时：$|a| = 0$（就在<<原点/origin>>上，距离为 $0$）
+      - 当 $a < 0$（<<负数/negative number>>）时：$|a| = -a$（去掉负号，$-a$ 变成正的）
+
+      **注意**：$|-5| = -(-5) = 5$，这里 $-a$ 不是"负数"，而是"$a$ 的<<相反数/opposite number>>"。当 $a$ 本身是<<负数/negative number>>时，$-a$ 反而是<<正数/positive number>>。
     contentEn: |
-      The <<绝对值/absolute value>> of a number represents the distance from the point corresponding to that number to the <<原点/origin>>.
+      **Geometric meaning of <<绝对值/absolute value>>**: The <<绝对值/absolute value>> of a number is the **distance** from the corresponding point on the <<数轴/number line>> to the **<<原点/origin>>**.
+
+      Distance only measures how far, not the direction, so <<绝对值/absolute value>> is **always $\geq 0$** (non-negative).
+
+      **Notation**: The <<绝对值/absolute value>> of number $a$ is written as $|a|$, read as "the <<绝对值/absolute value>> of $a$."
+
+      **Three cases:**
+      - When $a > 0$ (<<正数/positive number>>): $|a| = a$ (already positive, the distance is itself)
+      - When $a = 0$: $|a| = 0$ (right at the <<原点/origin>>, distance is $0$)
+      - When $a < 0$ (<<负数/negative number>>): $|a| = -a$ (remove the negative sign; $-a$ becomes positive)
+
+      **Note**: $|-5| = -(-5) = 5$. Here, $-a$ doesn't mean "a negative number" — it means "the <<相反数/opposite number>> of $a$." When $a$ itself is a <<负数/negative number>>, $-a$ is actually a <<正数/positive number>>.
     examples:
-      - "$|5| = 5$"
-      - "$|-5| = 5$"
-      - "$|0| = 0$"
-    rules:
-      - <<正数/positive number>>的<<绝对值/absolute value>>是它本身
-      - <<负数/negative number>>的<<绝对值/absolute value>>是去掉负号后的数
-      - $0$ 的<<绝对值/absolute value>>还是 $0$
-    rulesEn:
-      - "The <<绝对值/absolute value>> of a <<正数/positive number>> is the number itself"
-      - "The <<绝对值/absolute value>> of a <<负数/negative number>> is the number with the negative sign removed"
-      - "The <<绝对值/absolute value>> of $0$ is still $0$"
+      - '$|5| = 5$——$5$ 在<<数轴/number line>>上距<<原点/origin>> $5$ 个单位'
+      - '$|-5| = 5$——$-5$ 也距<<原点/origin>> $5$ 个单位（方向不同，距离相同）'
+      - '$|0| = 0$——$0$ 就在<<原点/origin>>上，距离为零'
+      - '$|-3.7| = 3.7$，$|\frac{2}{3}| = \frac{2}{3}$——任何数的<<绝对值/absolute value>>都不会是<<负数/negative number>>'
+      - '互为<<相反数/opposite number>>的两个数，<<绝对值/absolute value>>相等：$|+8| = |-8| = 8$'
+    examplesEn:
+      - '$|5| = 5$ — $5$ is $5$ units from the <<原点/origin>> on the <<数轴/number line>>'
+      - '$|-5| = 5$ — $-5$ is also $5$ units from the <<原点/origin>> (different direction, same distance)'
+      - '$|0| = 0$ — $0$ is at the <<原点/origin>>, so the distance is zero'
+      - '$|-3.7| = 3.7$, $|\frac{2}{3}| = \frac{2}{3}$ — the <<绝对值/absolute value>> of any number is never a <<负数/negative number>>'
+      - 'Two <<相反数/opposite number>>s have equal <<绝对值/absolute value>>s: $|+8| = |-8| = 8$'
+    notes:
+      - '**最常见错误**：看到 $|-6|$ 直接写成 $-6$。记住：<<绝对值/absolute value>>=距离，距离不可能为负！'
+      - '**$|a| = -a$ 不一定是<<负数/negative number>>**：当 $a = -5$ 时，$-a = -(-5) = 5 > 0$。$-a$ 只是<<相反数/opposite number>>的意思'
+      - '<<绝对值/absolute value>>相等的两个数，要么相等，要么互为<<相反数/opposite number>>：$|a| = |b|$ 意味着 $a = b$ 或 $a = -b$'
+    notesEn:
+      - '**Most common mistake**: Seeing $|-6|$ and writing $-6$. Remember: <<绝对值/absolute value>> = distance, and distance can never be negative!'
+      - '**$|a| = -a$ is not necessarily negative**: When $a = -5$, $-a = -(-5) = 5 > 0$. $-a$ just means the <<相反数/opposite number>>'
+      - 'Two numbers with equal <<绝对值/absolute value>>s are either equal or <<相反数/opposite number>>s: $|a| = |b|$ means $a = b$ or $a = -b$'
 
   - id: comparing
     title: <<有理数/rational number>>的大小比较
     titleEn: Comparing the size of <<有理数/rational number>>s
     content: |
-      比较大小规律：
+      **<<数轴/number line>>比较法（最直观）**：在<<数轴/number line>>上，**右边的数总比左边的大**。这是最根本的比较法则，所有规则都来源于此。
+
+      由此推出的四条规则：
+
+      **① <<正数/positive number>> $>$ $0$ $>$ <<负数/negative number>>**：<<正数/positive number>>在 $0$ 右边，<<负数/negative number>>在 $0$ 左边，所以任何<<正数/positive number>>都大于 $0$，$0$ 大于任何<<负数/negative number>>。
+
+      **② 两个<<正数/positive number>>比较**：直接比数字大小即可。$7 > 3$，因为 $7$ 在 $3$ 的右边。
+
+      **③ 两个<<负数/negative number>>比较**（最容易出错！）：**<<绝对值/absolute value>>大的反而小**。为什么？因为<<绝对值/absolute value>>越大，离 $0$ 越远，在<<数轴/number line>>上越靠左，越小。
+
+      **④ 用<<绝对值/absolute value>>辅助比较**：先比<<绝对值/absolute value>>，再定大小。比如比较 $-3$ 和 $-8$：$|-3| = 3 < 8 = |-8|$，<<绝对值/absolute value>>小的<<负数/negative number>>反而更大，所以 $-3 > -8$。
     contentEn: |
-      Rules for comparing sizes:
-    rules:
-      - <<正数/positive number>>都大于 $0$
-      - $0$ 大于<<负数/negative number>>
-      - 两个<<正数/positive number>>比较，数字大的那个大
-      - 两个<<负数/negative number>>比较，**离 $0$ 近的那个反而大**
-    rulesEn:
-      - All <<正数/positive number>>s are greater than $0$
-      - $0$ is greater than any <<负数/negative number>>
-      - "When comparing two <<正数/positive number>>s, the one with the larger numerical value is greater"
-      - "When comparing two <<负数/negative number>>s, **the one closer to $0$ is actually greater**"
+      **<<数轴/number line>> comparison (most intuitive)**: On the <<数轴/number line>>, **numbers to the right are always greater than numbers to the left**. This is the most fundamental comparison rule; all other rules derive from it.
+
+      Four rules derived from this:
+
+      **① <<正数/positive number>> $>$ $0$ $>$ <<负数/negative number>>**: <<正数/positive number>>s are to the right of $0$, and <<负数/negative number>>s are to the left, so any <<正数/positive number>> is greater than $0$, and $0$ is greater than any <<负数/negative number>>.
+
+      **② Comparing two <<正数/positive number>>s**: Simply compare numerical values. $7 > 3$ because $7$ is to the right of $3$.
+
+      **③ Comparing two <<负数/negative number>>s** (most error-prone!): **The one with the larger <<绝对值/absolute value>> is actually smaller**. Why? A larger <<绝对值/absolute value>> means farther from $0$, further to the left on the <<数轴/number line>>, so it is smaller.
+
+      **④ Using <<绝对值/absolute value>> to assist comparison**: First compare <<绝对值/absolute value>>s, then determine the order. E.g., compare $-3$ and $-8$: $|-3| = 3 < 8 = |-8|$; the <<负数/negative number>> with the smaller <<绝对值/absolute value>> is actually larger, so $-3 > -8$.
     examples:
-      - "$3 > -2$"
-      - "$0 > -7$"
-      - "$-2 > -5$"
+      - '$5 > -100$——任何<<正数/positive number>>都大于任何<<负数/negative number>>，即使数字差距很大'
+      - '$0 > -0.001$——$0$ 比任何<<负数/negative number>>都大，哪怕那个<<负数/negative number>>非常接近 $0$'
+      - '$-2 > -5$——$|-2| = 2 < 5 = |-5|$，离 $0$ 更近，所以更大'
+      - '$-0.1 > -100$——不要被数字迷惑！$-0.1$ 几乎在 $0$ 旁边，$-100$ 远在左边'
+      - '排序练习：$-7 < -3 < 0 < 2 < 5$——在<<数轴/number line>>上从左到右'
+    examplesEn:
+      - '$5 > -100$ — any <<正数/positive number>> is greater than any <<负数/negative number>>, even with large numerical differences'
+      - '$0 > -0.001$ — $0$ is greater than any <<负数/negative number>>, even one very close to $0$'
+      - '$-2 > -5$ — $|-2| = 2 < 5 = |-5|$, closer to $0$, so greater'
+      - '$-0.1 > -100$ — do not be confused by the digits! $-0.1$ is almost at $0$, while $-100$ is far to the left'
+      - 'Ordering exercise: $-7 < -3 < 0 < 2 < 5$ — left to right on the <<数轴/number line>>'
     explanation: |
-      为什么 $-2 > -5$？因为在<<数轴/number line>>上，$-2$ 在 $-5$ 的右边；<<数轴/number line>>上右边的数总比左边大。
+      **生活类比**：欠债 $200$ 元（$-200$）和欠债 $50$ 元（$-50$），谁的"处境更好"？当然是欠得少的！$-50 > -200$。
+
+      **记忆口诀**：正正比数字，负负比距离（离零近的大），正负不用比（正的一定大）。
     explanationEn: |
-      Why is $-2 > -5$? Because on the <<数轴/number line>>, $-2$ is to the right of $-5$; on the <<数轴/number line>>, the number on the right is always greater than the one on the left.
+      **Real-life analogy**: Owing $200$ yuan ($-200$) versus owing $50$ yuan ($-50$) — who is in a "better situation"? Of course, the one who owes less! $-50 > -200$.
+
+      **Memory aid**: For two positives, compare digits; for two negatives, compare distance from zero (closer is greater); positive vs. negative needs no comparison (positive always wins).
 
 realLife:
   - category: 温度
@@ -235,119 +362,308 @@ examples:
     title: 判断生活情境中的<<正数/positive number>><<负数/negative number>>
     titleEn: Identifying <<正数/positive number>>s and <<负数/negative number>>s in real-life situations
     question: |
-      如果把"高于标准水位"记作正，那么"低于标准水位 $0.8$ 米"应记作什么数？
+      某水库的警戒水位为 $20$ 米。如果把"高于警戒水位"记作正，那么下面的水位应怎样记录？
+      - 高于警戒水位 $1.2$ 米
+      - 低于警戒水位 $0.8$ 米
+      - 正好在警戒水位
     questionEn: |
-      If "above the standard water level" is recorded as positive, what number should "below the standard water level by $0.8$ meters" be recorded as?
+      A reservoir has a warning water level of $20$ m. If "above warning level" is recorded as positive, how should the following levels be recorded?
+      - $1.2$ m above warning level
+      - $0.8$ m below warning level
+      - Exactly at warning level
     steps:
-      - '"低于"表示在基准以下，应该用<<负数/negative number>>表示'
-      - 所以记作 $-0.8$ 米
+      - '确定基准：警戒水位 $20$ 米是基准，对应 $0$'
+      - '高于警戒水位 $1.2$ 米——正方向，记作 $+1.2$ 米（实际水位 $21.2$ 米）'
+      - '低于警戒水位 $0.8$ 米——反方向，记作 $-0.8$ 米（实际水位 $19.2$ 米）'
+      - '正好在警戒水位——就是基准本身，记作 $0$ 米（实际水位 $20$ 米）'
+      - '**注意**：$0$ 不是"没有水位"，而是"正好达到警戒线"'
     stepsEn:
-      - '"Below" means under the baseline, so it should be expressed as a <<负数/negative number>>'
-      - Therefore, it is written as $-0.8$ m
-    answer: '$-0.8$ 米'
-    answerEn: '$-0.8$ m'
+      - 'Identify the baseline: Warning level $20$ m is the baseline, corresponding to $0$'
+      - '$1.2$ m above — positive direction, recorded as $+1.2$ m (actual level $21.2$ m)'
+      - '$0.8$ m below — opposite direction, recorded as $-0.8$ m (actual level $19.2$ m)'
+      - 'Exactly at warning level — the baseline itself, recorded as $0$ m (actual level $20$ m)'
+      - '**Note**: $0$ does not mean "no water level" — it means "exactly at the warning line"'
+    answer: '$+1.2$ 米，$-0.8$ 米，$0$ 米'
+    answerEn: '$+1.2$ m, $-0.8$ m, $0$ m'
 
   - type: 2
-    title: 判断一个数是不是<<有理数/rational number>>
-    titleEn: Determining whether a number is a <<有理数/rational number>>
+    title: $0$ 的身份辨析
+    titleEn: Understanding the identity of $0$
     question: |
-      $-3$、$0$、$\frac{1}{4}$、$2.6$ 这几个数是不是<<有理数/rational number>>？
+      判断下列说法是否正确，并说明理由：
+      (1) $0$ 是<<正数/positive number>>
+      (2) $0$ 是<<整数/integer>>
+      (3) $0$ 是<<有理数/rational number>>
+      (4) $0$ 是最小的<<整数/integer>>
     questionEn: |
-      Are the numbers $-3$, $0$, $\frac{1}{4}$, and $2.6$ <<有理数/rational number>>s?
+      Determine whether the following statements are true or false, and explain:
+      (1) $0$ is a <<正数/positive number>>
+      (2) $0$ is an <<整数/integer>>
+      (3) $0$ is a <<有理数/rational number>>
+      (4) $0$ is the smallest <<整数/integer>>
     steps:
-      - "$-3$ 是<<整数/integer>>，是<<有理数/rational number>>"
-      - "$0$ 是<<整数/integer>>，是<<有理数/rational number>>"
-      - "$\\frac{1}{4}$ 是<<分数/fraction>>，是<<有理数/rational number>>"
-      - "$2.6$ 可以看作<<分数/fraction>> $\\frac{26}{10}$，也是<<有理数/rational number>>"
+      - '(1) **错误**。$0$ 既不是<<正数/positive number>>也不是<<负数/negative number>>，它是正负的分界点'
+      - '(2) **正确**。$0$ 是<<整数/integer>>——<<整数/integer>>包括正<<整数/integer>>、零、负<<整数/integer>>三部分'
+      - '(3) **正确**。$0$ 是<<整数/integer>>，而<<整数/integer>>属于<<有理数/rational number>>，所以 $0$ 也是<<有理数/rational number>>（$0 = \frac{0}{1}$）'
+      - '(4) **错误**。<<整数/integer>>向负方向无限延伸（$-1, -2, -3, \ldots$），没有最小的<<整数/integer>>。$0$ 只是最小的**非负<<整数/integer>>**'
     stepsEn:
-      - "$-3$ is an <<整数/integer>>, so it is a <<有理数/rational number>>"
-      - "$0$ is an <<整数/integer>>, so it is a <<有理数/rational number>>"
-      - "$\\frac{1}{4}$ is a <<分数/fraction>>, so it is a <<有理数/rational number>>"
-      - "$2.6$ can be expressed as the <<分数/fraction>> $\\frac{26}{10}$, so it is also a <<有理数/rational number>>"
-    answer: "这四个数都是<<有理数/rational number>>。"
-    answerEn: "All four numbers are <<有理数/rational number>>s."
+      - '(1) **False**. $0$ is neither a <<正数/positive number>> nor a <<负数/negative number>>; it is the dividing point'
+      - '(2) **True**. $0$ is an <<整数/integer>> — <<整数/integer>>s include positive <<整数/integer>>s, zero, and negative <<整数/integer>>s'
+      - '(3) **True**. $0$ is an <<整数/integer>>, and <<整数/integer>>s are <<有理数/rational number>>s, so $0$ is also a <<有理数/rational number>> ($0 = \frac{0}{1}$)'
+      - '(4) **False**. <<整数/integer>>s extend infinitely in the negative direction ($-1, -2, -3, \ldots$), so there is no smallest <<整数/integer>>. $0$ is only the smallest **non-negative <<整数/integer>>**'
+    answer: '(1) 错，(2) 对，(3) 对，(4) 错'
+    answerEn: '(1) False, (2) True, (3) True, (4) False'
 
   - type: 3
-    title: 在<<数轴/number line>>上排列数
-    titleEn: Arranging numbers on the <<数轴/number line>>
+    title: <<有理数/rational number>>的分类
+    titleEn: Classifying <<有理数/rational number>>s
     question: |
-      请把 $2$、$-3$、$0$ 这三个数在<<数轴/number line>>上标出来，并从小到大排列。
+      把下列各数填入相应的集合中：$-5$，$\frac{3}{7}$，$0$，$-2.8$，$6$，$-\frac{1}{3}$，$0.5$
+      - 正<<整数/integer>>集合：{ }
+      - 负<<分数/fraction>>集合：{ }
+      - <<整数/integer>>集合：{ }
     questionEn: |
-      Please mark the three numbers $2$, $-3$, and $0$ on the <<数轴/number line>>, and arrange them from smallest to largest.
+      Place the following numbers into the appropriate sets: $-5$, $\frac{3}{7}$, $0$, $-2.8$, $6$, $-\frac{1}{3}$, $0.5$
+      - Positive <<整数/integer>> set: { }
+      - Negative <<分数/fraction>> set: { }
+      - <<整数/integer>> set: { }
     steps:
-      - 先画出<<数轴/number line>>，找到<<原点/origin>> $0$
-      - $-3$ 在 $0$ 的左边，向左数 $3$ 格
-      - $2$ 在 $0$ 的右边，向右数 $2$ 格
-      - 在<<数轴/number line>>上标出它们的位置如下图
+      - '先判断每个数是<<整数/integer>>还是<<分数/fraction>>，是正还是负：'
+      - '$-5$：负<<整数/integer>>；$\frac{3}{7}$：正<<分数/fraction>>；$0$：<<整数/integer>>（既不正也不负）'
+      - '$-2.8 = -\frac{14}{5}$：负<<分数/fraction>>（<<小数/decimal>>也可以是<<分数/fraction>>！）'
+      - '$6$：正<<整数/integer>>；$-\frac{1}{3}$：负<<分数/fraction>>；$0.5 = \frac{1}{2}$：正<<分数/fraction>>'
+      - '**正<<整数/integer>>集合**：$\{6\}$'
+      - '**负<<分数/fraction>>集合**：$\{-2.8, -\frac{1}{3}\}$'
+      - '**<<整数/integer>>集合**：$\{-5, 0, 6\}$——注意 $0$ 也是<<整数/integer>>！'
     stepsEn:
-      - "First draw the <<数轴/number line>> and locate the <<原点/origin>> $0$"
-      - "$-3$ is to the left of $0$, count $3$ units to the left"
-      - "$2$ is to the right of $0$, count $2$ units to the right"
-      - Mark their positions on the <<数轴/number line>> as shown below
-    stepsNumberLine:
-      points: [-3, 0, 2]
-      min: -5
-      max: 5
-    answer: "从小到大排列：$-3 < 0 < 2$。"
-    answerEn: "Arranged from smallest to largest: $-3 < 0 < 2$."
+      - 'First determine whether each number is an <<整数/integer>> or <<分数/fraction>>, positive or negative:'
+      - '$-5$: negative <<整数/integer>>; $\frac{3}{7}$: positive <<分数/fraction>>; $0$: <<整数/integer>> (neither positive nor negative)'
+      - '$-2.8 = -\frac{14}{5}$: negative <<分数/fraction>> (<<小数/decimal>>s can also be <<分数/fraction>>s!)'
+      - '$6$: positive <<整数/integer>>; $-\frac{1}{3}$: negative <<分数/fraction>>; $0.5 = \frac{1}{2}$: positive <<分数/fraction>>'
+      - '**Positive <<整数/integer>> set**: $\{6\}$'
+      - '**Negative <<分数/fraction>> set**: $\{-2.8, -\frac{1}{3}\}$'
+      - '**<<整数/integer>> set**: $\{-5, 0, 6\}$ — note that $0$ is also an <<整数/integer>>!'
+    answer: |
+      正<<整数/integer>>：$\{6\}$；负<<分数/fraction>>：$\{-2.8, -\frac{1}{3}\}$；<<整数/integer>>：$\{-5, 0, 6\}$
+    answerEn: |
+      Positive <<整数/integer>>s: $\{6\}$; Negative <<分数/fraction>>s: $\{-2.8, -\frac{1}{3}\}$; <<整数/integer>>s: $\{-5, 0, 6\}$
 
   - type: 4
-    title: 求<<相反数/opposite number>>
-    titleEn: Finding the <<相反数/opposite number>>
+    title: 在<<数轴/number line>>上表示数并排序
+    titleEn: Representing numbers on the <<数轴/number line>> and ordering them
     question: |
-      $-7$ 的<<相反数/opposite number>>是什么？
+      在<<数轴/number line>>上标出 $-4$，$1.5$，$-1$，$3$，$0$ 这五个数，并从小到大排列。
     questionEn: |
-      What is the <<相反数/opposite number>> of $-7$?
+      Mark $-4$, $1.5$, $-1$, $3$, $0$ on the <<数轴/number line>>, and arrange them from smallest to largest.
     steps:
-      - <<相反数/opposite number>>只改变符号，不改变数字部分
+      - '画出<<数轴/number line>>，标出<<原点/origin>> $0$，确定<<正方向/positive direction>>（向右）和<<单位长度/unit length>>'
+      - '$-4$ 在<<原点/origin>>左边 $4$ 个单位——是最靠左的点'
+      - '$-1$ 在<<原点/origin>>左边 $1$ 个单位'
+      - '$0$ 就是<<原点/origin>>'
+      - '$1.5$ 在<<原点/origin>>右边 $1.5$ 个单位——在 $1$ 和 $2$ 的中间'
+      - '$3$ 在<<原点/origin>>右边 $3$ 个单位——是最靠右的点'
+      - '在<<数轴/number line>>上，从左到右依次是：$-4, -1, 0, 1.5, 3$'
+      - '**规律**：<<数轴/number line>>上越靠右的数越大'
     stepsEn:
-      - "The <<相反数/opposite number>> only changes the sign, not the numerical part"
-    answer: "$-7$ 的<<相反数/opposite number>>是 $7$。"
-    answerEn: "The <<相反数/opposite number>> of $-7$ is $7$."
+      - 'Draw the <<数轴/number line>>, mark the <<原点/origin>> $0$, the <<正方向/positive direction>> (right), and the <<单位长度/unit length>>'
+      - '$-4$ is $4$ units to the left of the <<原点/origin>> — the leftmost point'
+      - '$-1$ is $1$ unit to the left of the <<原点/origin>>'
+      - '$0$ is the <<原点/origin>> itself'
+      - '$1.5$ is $1.5$ units to the right — halfway between $1$ and $2$'
+      - '$3$ is $3$ units to the right — the rightmost point'
+      - 'On the <<数轴/number line>>, from left to right: $-4, -1, 0, 1.5, 3$'
+      - '**Rule**: On the <<数轴/number line>>, numbers further right are larger'
+    stepsNumberLine:
+      points:
+        - value: -4
+        - value: -1
+        - value: 0
+        - value: 1.5
+          label: "1.5"
+        - value: 3
+      min: -5
+      max: 5
+    answer: '$-4 < -1 < 0 < 1.5 < 3$'
+    answerEn: '$-4 < -1 < 0 < 1.5 < 3$'
 
   - type: 5
-    title: 求<<绝对值/absolute value>>
-    titleEn: Finding the <<绝对值/absolute value>>
+    title: <<相反数/opposite number>>的概念与性质
+    titleEn: Concept and properties of <<相反数/opposite number>>s
     question: |
-      $|-9|$ 等于多少？
+      (1) $-7$ 的<<相反数/opposite number>>是多少？
+      (2) 一个数的<<相反数/opposite number>>是 $-3$，这个数是多少？
+      (3) 如果 $a$ 与 $b$ 互为<<相反数/opposite number>>，那么 $a + b$ 等于多少？
     questionEn: |
-      What is $|-9|$ equal to?
+      (1) What is the <<相反数/opposite number>> of $-7$?
+      (2) If the <<相反数/opposite number>> of a number is $-3$, what is the number?
+      (3) If $a$ and $b$ are <<相反数/opposite number>>s, what is $a + b$?
     steps:
-      - <<绝对值/absolute value>>表示到<<原点/origin>>的距离，距离不能是<<负数/negative number>>
+      - '(1) $-7$ 是<<负数/negative number>>，<<相反数/opposite number>>去掉负号，所以 $-7$ 的<<相反数/opposite number>>是 $7$'
+      - '(2) 反向思考：谁的<<相反数/opposite number>>是 $-3$？<<相反数/opposite number>>互换符号，所以这个数是 $3$'
+      - '    验证：$3$ 的<<相反数/opposite number>>确实是 $-3$ ✓'
+      - '(3) 互为<<相反数/opposite number>>的两个数相加等于 $0$，即 $a + b = 0$'
+      - '    例如：$5 + (-5) = 0$，$-3 + 3 = 0$。这是<<相反数/opposite number>>最重要的性质'
     stepsEn:
-      - "<<绝对值/absolute value>> represents the distance to the <<原点/origin>>; distance cannot be a <<负数/negative number>>"
-    answer: "$|-9| = 9$"
-    answerEn: "$|-9| = 9$"
+      - '(1) $-7$ is a <<负数/negative number>>; the <<相反数/opposite number>> removes the negative sign, so the <<相反数/opposite number>> of $-7$ is $7$'
+      - '(2) Reverse thinking: whose <<相反数/opposite number>> is $-3$? <<相反数/opposite number>>s swap signs, so the number is $3$'
+      - '    Verify: the <<相反数/opposite number>> of $3$ is indeed $-3$ ✓'
+      - '(3) The sum of two <<相反数/opposite number>>s equals $0$, i.e., $a + b = 0$'
+      - '    For example: $5 + (-5) = 0$, $-3 + 3 = 0$. This is the most important property of <<相反数/opposite number>>s'
+    answer: '(1) $7$；(2) $3$；(3) $a + b = 0$'
+    answerEn: '(1) $7$; (2) $3$; (3) $a + b = 0$'
 
   - type: 6
-    title: 比较大小
-    titleEn: Comparing sizes
+    title: <<绝对值/absolute value>>的分类讨论
+    titleEn: Case analysis of <<绝对值/absolute value>>
     question: |
-      比较 $-4$ 和 $1$ 的大小。
+      求下列各数的<<绝对值/absolute value>>：$|8|$，$|-3.5|$，$|0|$，$|-\frac{2}{3}|$
+
+      另外，如果 $|x| = 4$，那么 $x$ 等于多少？
     questionEn: |
-      Compare $-4$ and $1$.
+      Find the <<绝对值/absolute value>> of each: $|8|$, $|-3.5|$, $|0|$, $|-\frac{2}{3}|$
+
+      Also, if $|x| = 4$, what is $x$?
     steps:
-      - 任何<<负数/negative number>>都小于<<正数/positive number>>
+      - '$|8| = 8$——<<正数/positive number>>的<<绝对值/absolute value>>等于它本身'
+      - '$|-3.5| = 3.5$——<<负数/negative number>>的<<绝对值/absolute value>>等于去掉负号'
+      - '$|0| = 0$——$0$ 的<<绝对值/absolute value>>是 $0$'
+      - '$|-\frac{2}{3}| = \frac{2}{3}$——<<分数/fraction>>也一样，去掉负号即可'
+      - '**关键题**：$|x| = 4$ 意味着 $x$ 到<<原点/origin>>的距离是 $4$'
+      - '在<<数轴/number line>>上，距离<<原点/origin>> $4$ 个单位的点有**两个**：$4$ 和 $-4$'
+      - '所以 $x = 4$ 或 $x = -4$——**不能只写一个！**'
     stepsEn:
-      - "Any <<负数/negative number>> is less than any <<正数/positive number>>"
-    answer: "$-4 < 1$"
-    answerEn: "$-4 < 1$"
+      - '$|8| = 8$ — the <<绝对值/absolute value>> of a <<正数/positive number>> equals itself'
+      - '$|-3.5| = 3.5$ — the <<绝对值/absolute value>> of a <<负数/negative number>> is the number without the negative sign'
+      - '$|0| = 0$ — the <<绝对值/absolute value>> of $0$ is $0$'
+      - '$|-\frac{2}{3}| = \frac{2}{3}$ — same rule applies to <<分数/fraction>>s'
+      - '**Key problem**: $|x| = 4$ means the distance from $x$ to the <<原点/origin>> is $4$'
+      - 'On the <<数轴/number line>>, there are **two** points $4$ units from the <<原点/origin>>: $4$ and $-4$'
+      - 'So $x = 4$ or $x = -4$ — **do not write only one!**'
+    answer: '$|8| = 8$，$|-3.5| = 3.5$，$|0| = 0$，$|-\frac{2}{3}| = \frac{2}{3}$；$x = 4$ 或 $x = -4$'
+    answerEn: '$|8| = 8$, $|-3.5| = 3.5$, $|0| = 0$, $|-\frac{2}{3}| = \frac{2}{3}$; $x = 4$ or $x = -4$'
 
   - type: 7
-    title: 比较两个<<负数/negative number>>的大小
-    titleEn: Comparing two <<负数/negative number>>s
+    title: 比较<<有理数/rational number>>的大小
+    titleEn: Comparing <<有理数/rational number>>s
     question: |
-      比较 $-3$ 和 $-8$ 的大小。
+      用 $>$ 或 $<$ 填空：
+      (1) $-3$ ______ $2$
+      (2) $-6$ ______ $-1$
+      (3) $-0.5$ ______ $0$
+      (4) $-\frac{3}{4}$ ______ $-\frac{1}{2}$
     questionEn: |
-      Compare $-3$ and $-8$.
+      Fill in $>$ or $<$:
+      (1) $-3$ ______ $2$
+      (2) $-6$ ______ $-1$
+      (3) $-0.5$ ______ $0$
+      (4) $-\frac{3}{4}$ ______ $-\frac{1}{2}$
     steps:
-      - 两个<<负数/negative number>>比较，离 $0$ 近的数更大
-      - "$-3$ 比 $-8$ 更靠近 $0$"
+      - '(1) $-3 < 2$：<<负数/negative number>>小于<<正数/positive number>>，直接判断'
+      - '(2) $-6 < -1$：两个<<负数/negative number>>比较，用<<绝对值/absolute value>>——$|-6| = 6 > 1 = |-1|$，<<绝对值/absolute value>>大的<<负数/negative number>>反而小'
+      - '(3) $-0.5 < 0$：<<负数/negative number>>都小于 $0$'
+      - '(4) $-\frac{3}{4} < -\frac{1}{2}$：先比<<绝对值/absolute value>>：$\frac{3}{4} = 0.75 > 0.5 = \frac{1}{2}$，<<绝对值/absolute value>>大的<<负数/negative number>>更小'
+      - '**技巧**：比较<<负数/negative number>><<分数/fraction>>时，先化成<<小数/decimal>>或通分更方便'
     stepsEn:
-      - "When comparing two <<负数/negative number>>s, the one closer to $0$ is greater"
-      - "$-3$ is closer to $0$ than $-8$"
-    answer: "$-3 > -8$"
-    answerEn: "$-3 > -8$"
+      - '(1) $-3 < 2$: A <<负数/negative number>> is less than a <<正数/positive number>>'
+      - '(2) $-6 < -1$: Two <<负数/negative number>>s — use <<绝对值/absolute value>>: $|-6| = 6 > 1 = |-1|$, the <<负数/negative number>> with larger <<绝对值/absolute value>> is smaller'
+      - '(3) $-0.5 < 0$: All <<负数/negative number>>s are less than $0$'
+      - '(4) $-\frac{3}{4} < -\frac{1}{2}$: Compare <<绝对值/absolute value>>s: $\frac{3}{4} = 0.75 > 0.5 = \frac{1}{2}$, so the <<负数/negative number>> with larger <<绝对值/absolute value>> is smaller'
+      - '**Tip**: When comparing negative <<分数/fraction>>s, converting to <<小数/decimal>>s or finding a common denominator is easier'
+    answer: '(1) $<$，(2) $<$，(3) $<$，(4) $<$'
+    answerEn: '(1) $<$, (2) $<$, (3) $<$, (4) $<$'
+
+  - type: 8
+    title: <<数轴/number line>>上的距离与<<绝对值/absolute value>>
+    titleEn: Distance on the <<数轴/number line>> and <<绝对值/absolute value>>
+    question: |
+      在<<数轴/number line>>上，$A$ 点表示 $-2$，$B$ 点表示 $3$。
+      (1) $A$ 点到<<原点/origin>>的距离是多少？
+      (2) $B$ 点到<<原点/origin>>的距离是多少？
+      (3) $A$、$B$ 两点之间的距离是多少？
+    questionEn: |
+      On the <<数轴/number line>>, point $A$ represents $-2$ and point $B$ represents $3$.
+      (1) What is the distance from $A$ to the <<原点/origin>>?
+      (2) What is the distance from $B$ to the <<原点/origin>>?
+      (3) What is the distance between $A$ and $B$?
+    steps:
+      - '(1) $A$ 点到<<原点/origin>>的距离 $= |-2| = 2$（<<绝对值/absolute value>>就是到<<原点/origin>>的距离）'
+      - '(2) $B$ 点到<<原点/origin>>的距离 $= |3| = 3$'
+      - '(3) $A$ 在 $-2$，$B$ 在 $3$，它们分别在<<原点/origin>>两侧'
+      - '    $A$ 到<<原点/origin>>距离 $2$，$B$ 到<<原点/origin>>距离 $3$，所以 $AB = 2 + 3 = 5$'
+      - '    **公式**：<<数轴/number line>>上两点距离 $= |a - b|$，即 $|{-2} - 3| = |-5| = 5$'
+    stepsEn:
+      - '(1) Distance from $A$ to <<原点/origin>> $= |-2| = 2$ (<<绝对值/absolute value>> IS the distance to the <<原点/origin>>)'
+      - '(2) Distance from $B$ to <<原点/origin>> $= |3| = 3$'
+      - '(3) $A$ is at $-2$, $B$ is at $3$; they are on opposite sides of the <<原点/origin>>'
+      - '    $A$ is $2$ units from <<原点/origin>>, $B$ is $3$ units from <<原点/origin>>, so $AB = 2 + 3 = 5$'
+      - '    **Formula**: Distance between two points on the <<数轴/number line>> $= |a - b|$, i.e., $|{-2} - 3| = |-5| = 5$'
+    stepsNumberLine:
+      points:
+        - value: -2
+          label: A
+        - value: 0
+        - value: 3
+          label: B
+      min: -5
+      max: 5
+    answer: '(1) $2$；(2) $3$；(3) $5$'
+    answerEn: '(1) $2$; (2) $3$; (3) $5$'
+
+  - type: 9
+    title: 多个数的大小排序
+    titleEn: Ordering multiple numbers by size
+    question: |
+      把 $-3.5$，$2$，$0$，$-1$，$|-4|$，$-(-2)$ 从小到大排列。
+    questionEn: |
+      Arrange $-3.5$, $2$, $0$, $-1$, $|-4|$, $-(-2)$ from smallest to largest.
+    steps:
+      - '先化简：$|-4| = 4$（<<绝对值/absolute value>>），$-(-2) = 2$（<<相反数/opposite number>>）'
+      - '待排列的数变为：$-3.5, 2, 0, -1, 4, 2$'
+      - '分类：<<负数/negative number>>有 $-3.5, -1$；$0$；<<正数/positive number>>有 $2, 2, 4$'
+      - '<<负数/negative number>>排序：$-3.5 < -1$（$|-3.5| = 3.5 > 1 = |-1|$，<<绝对值/absolute value>>大的更小）'
+      - '<<正数/positive number>>排序：$2 = 2 < 4$'
+      - '合并：$-3.5 < -1 < 0 < 2 = -(-2) < |-4|$'
+    stepsEn:
+      - 'First simplify: $|-4| = 4$ (<<绝对值/absolute value>>), $-(-2) = 2$ (<<相反数/opposite number>>)'
+      - 'Numbers to order: $-3.5, 2, 0, -1, 4, 2$'
+      - 'Categorize: <<负数/negative number>>s are $-3.5, -1$; $0$; <<正数/positive number>>s are $2, 2, 4$'
+      - '<<负数/negative number>> order: $-3.5 < -1$ ($|-3.5| = 3.5 > 1 = |-1|$, larger <<绝对值/absolute value>> means smaller)'
+      - '<<正数/positive number>> order: $2 = 2 < 4$'
+      - 'Combined: $-3.5 < -1 < 0 < 2 = -(-2) < |-4|$'
+    answer: '$-3.5 < -1 < 0 < 2 = -(-2) < |-4|$'
+    answerEn: '$-3.5 < -1 < 0 < 2 = -(-2) < |-4|$'
+
+  - type: 10
+    title: 综合应用——<<相反数/opposite number>>、<<绝对值/absolute value>>与<<数轴/number line>>
+    titleEn: Comprehensive application — <<相反数/opposite number>>, <<绝对值/absolute value>>, and the <<数轴/number line>>
+    question: |
+      $a$ 是最大的负<<整数/integer>>，$b$ 是<<绝对值/absolute value>>最小的数，$c$ 是 $-5$ 的<<相反数/opposite number>>。求 $a$、$b$、$c$ 的值，并在<<数轴/number line>>上标出这三个数。
+    questionEn: |
+      $a$ is the largest negative <<整数/integer>>, $b$ is the number with the smallest <<绝对值/absolute value>>, and $c$ is the <<相反数/opposite number>> of $-5$. Find the values of $a$, $b$, $c$, and mark them on the <<数轴/number line>>.
+    steps:
+      - '**求 $a$**：负<<整数/integer>>有 $-1, -2, -3, \ldots$，越靠近 $0$ 越大，所以最大的负<<整数/integer>>是 $a = -1$'
+      - '**求 $b$**：<<绝对值/absolute value>>表示到<<原点/origin>>的距离，距离最小为 $0$，所以<<绝对值/absolute value>>最小的数是 $b = 0$'
+      - '**求 $c$**：$-5$ 的<<相反数/opposite number>>，符号取反，所以 $c = 5$'
+      - '在<<数轴/number line>>上标出 $a = -1$、$b = 0$、$c = 5$'
+      - '这道题综合考查了：负<<整数/integer>>的范围、<<绝对值/absolute value>>的几何意义、<<相反数/opposite number>>的定义'
+    stepsEn:
+      - '**Find $a$**: Negative <<整数/integer>>s are $-1, -2, -3, \ldots$; the closer to $0$, the larger, so the largest negative <<整数/integer>> is $a = -1$'
+      - '**Find $b$**: <<绝对值/absolute value>> represents distance to the <<原点/origin>>; the minimum distance is $0$, so the number with the smallest <<绝对值/absolute value>> is $b = 0$'
+      - '**Find $c$**: The <<相反数/opposite number>> of $-5$ — reverse the sign, so $c = 5$'
+      - 'Mark $a = -1$, $b = 0$, $c = 5$ on the <<数轴/number line>>'
+      - 'This problem comprehensively tests: the range of negative <<整数/integer>>s, the geometric meaning of <<绝对值/absolute value>>, and the definition of <<相反数/opposite number>>'
+    stepsNumberLine:
+      points:
+        - value: -1
+          label: a
+        - value: 0
+          label: b
+        - value: 5
+          label: c
+      min: -5
+      max: 7
+    answer: '$a = -1$，$b = 0$，$c = 5$'
+    answerEn: '$a = -1$, $b = 0$, $c = 5$'
 
 commonMistakes:
   - 不要把负号看丢：$-5$ 和 $5$ 完全不是同一个数
@@ -367,13 +683,13 @@ exercises:
     total: 30分钟
     totalEn: 30 minutes
     sections:
-      - range: "1-4"
+      - range: "1-5"
         time: 8分钟
         timeEn: 8 minutes
-      - range: "5-8"
+      - range: "6-10"
         time: 10分钟
         timeEn: 10 minutes
-      - range: "9-12"
+      - range: "11-15"
         time: 12分钟
         timeEn: 12 minutes
 
@@ -654,6 +970,88 @@ exercises:
         - The <<相反数/opposite number>> of $-4$ is $4$
         - $|2| = 2$
 
+    - number: 13
+      type: 填空题
+      inputType: blank
+      section: 六、概念辨析
+      sectionEn: "VI. Concept Analysis"
+      question: |
+        最大的负<<整数/integer>>是 ______；<<绝对值/absolute value>>最小的<<有理数/rational number>>是 ______。
+      questionEn: |
+        The largest negative <<整数/integer>> is ______; the <<有理数/rational number>> with the smallest <<绝对值/absolute value>> is ______.
+      correctValue: "-1，0"
+      answer: '$-1$，$0$'
+      answerEn: '$-1$, $0$'
+      explanation: |
+        负<<整数/integer>>有 $-1, -2, -3, \ldots$，越靠近 $0$ 越大，所以最大的负<<整数/integer>>是 $-1$。<<绝对值/absolute value>>表示到<<原点/origin>>的距离，$0$ 就在<<原点/origin>>上，距离为 $0$，所以<<绝对值/absolute value>>最小的<<有理数/rational number>>是 $0$。
+      explanationEn: |
+        Negative <<整数/integer>>s are $-1, -2, -3, \ldots$; the closer to $0$, the larger, so the largest is $-1$. <<绝对值/absolute value>> means distance to the <<原点/origin>>; $0$ is at the <<原点/origin>> with distance $0$, so $0$ has the smallest <<绝对值/absolute value>>.
+
+    - number: 14
+      type: 选择题
+      inputType: choice
+      section: 六、概念辨析
+      sectionEn: "VI. Concept Analysis"
+      question: |
+        下列说法正确的是（　）
+      questionEn: |
+        Which of the following statements is correct? ( )
+      subInputs:
+        - prompt: 选择答案
+          promptEn: Choose the answer
+          options:
+            - '$0$ 是最小的<<整数/integer>>'
+            - '$-a$ 一定是<<负数/negative number>>'
+            - '<<绝对值/absolute value>>等于本身的数只有<<正数/positive number>>'
+            - '互为<<相反数/opposite number>>的两个数之和为 $0$'
+          correctValue: '互为<<相反数/opposite number>>的两个数之和为 $0$'
+      answer: '互为<<相反数/opposite number>>的两个数之和为 $0$'
+      answerEn: 'The sum of two <<相反数/opposite number>>s is $0$'
+      explanation: |
+        逐项分析：
+        - A 错：<<整数/integer>>向负方向无限延伸，没有最小的<<整数/integer>>
+        - B 错：如果 $a = -3$，那么 $-a = 3 > 0$，$-a$ 不一定是<<负数/negative number>>
+        - C 错：$|0| = 0$，$0$ 的<<绝对值/absolute value>>也等于本身，但 $0$ 不是<<正数/positive number>>
+        - D 对：互为<<相反数/opposite number>>的两个数相加等于 $0$，如 $5 + (-5) = 0$
+      explanationEn: |
+        Analyze each option:
+        - A wrong: <<整数/integer>>s extend infinitely negative, so there is no smallest <<整数/integer>>
+        - B wrong: If $a = -3$, then $-a = 3 > 0$; $-a$ is not necessarily a <<负数/negative number>>
+        - C wrong: $|0| = 0$; the <<绝对值/absolute value>> of $0$ equals itself, but $0$ is not a <<正数/positive number>>
+        - D correct: The sum of two <<相反数/opposite number>>s is $0$, e.g., $5 + (-5) = 0$
+
+    - number: 15
+      type: 综合题
+      inputType: open
+      section: 七、综合排序
+      sectionEn: "VII. Comprehensive Ordering"
+      question: |
+        将下列各数从小到大排列：$-|-5|$，$-(-3)$，$0$，$-2$，$|{-1}|$
+      questionEn: |
+        Arrange the following from smallest to largest: $-|-5|$, $-(-3)$, $0$, $-2$, $|{-1}|$
+      answer: |
+        $-|-5| < -2 < 0 < |-1| < -(-3)$，即 $-5 < -2 < 0 < 1 < 3$
+      answerEn: |
+        $-|-5| < -2 < 0 < |-1| < -(-3)$, i.e., $-5 < -2 < 0 < 1 < 3$
+      explanation: |
+        先化简每个表达式：
+        - $-|-5| = -(5) = -5$（先求<<绝对值/absolute value>>得 $5$，再取负号）
+        - $-(-3) = 3$（$-3$ 的<<相反数/opposite number>>）
+        - $0$ 不变
+        - $-2$ 不变
+        - $|-1| = 1$（<<绝对值/absolute value>>）
+
+        再按大小排列：<<负数/negative number>> $-5 < -2$（<<绝对值/absolute value>>大的更小），然后 $0$，再是<<正数/positive number>> $1 < 3$。
+      explanationEn: |
+        First simplify each expression:
+        - $-|-5| = -(5) = -5$ (first find <<绝对值/absolute value>> to get $5$, then negate)
+        - $-(-3) = 3$ (the <<相反数/opposite number>> of $-3$)
+        - $0$ unchanged
+        - $-2$ unchanged
+        - $|-1| = 1$ (<<绝对值/absolute value>>)
+
+        Then order: <<负数/negative number>>s $-5 < -2$ (larger <<绝对值/absolute value>> means smaller), then $0$, then <<正数/positive number>>s $1 < 3$.
+
 summary:
   - 能说清什么是<<正数/positive number>>、<<负数/negative number>>、<<零/zero>>
   - 能举出生活中使用<<负数/negative number>>的例子
@@ -794,3 +1192,106 @@ examPrep:
         First sum: $(-3) + (-1) + 0 + 4 + 2 + (-2) = 0$
         Then divide by the number of measurements $6$: $0 ÷ 6 = 0$
         So the average temperature for this day is $0$ ℃.
+
+    - number: 6
+      type: 易错选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        下列说法正确的是（　）
+        A. $0$ 既不是<<正数/positive number>>也不是<<负数/negative number>>，所以 $0$ 不是<<整数/integer>>
+        B. $-a$ 一定是<<负数/negative number>>
+        C. 一个数的<<绝对值/absolute value>>一定是<<正数/positive number>>
+        D. <<相反数/opposite number>>等于本身的数只有 $0$
+      questionEn: |
+        Which of the following statements is correct? ( )
+        A. $0$ is neither <<正数/positive number>> nor <<负数/negative number>>, so $0$ is not an <<整数/integer>>
+        B. $-a$ must be a <<负数/negative number>>
+        C. The <<绝对值/absolute value>> of a number must be a <<正数/positive number>>
+        D. The only number whose <<相反数/opposite number>> equals itself is $0$
+      subInputs:
+        - prompt: 选择答案
+          options: ["A", "B", "C", "D"]
+          correctValue: "D"
+      answer: "D"
+      answerEn: "D"
+      explanation: |
+        逐项分析：
+        **A 错误**：$0$ 虽然不是正数也不是负数，但 $0$ 是<<整数/integer>>（$0$ 是非负整数的起点）。
+        **B 错误**：$-a$ 不一定是负数！当 $a < 0$ 时，$-a > 0$；当 $a = 0$ 时，$-a = 0$。$-a$ 只是 $a$ 的<<相反数/opposite number>>。
+        **C 错误**：$|0| = 0$，$0$ 不是正数，所以<<绝对值/absolute value>>不一定是正数，应该说"非负数"。
+        **D 正确**：设 $a = -a$，则 $2a = 0$，$a = 0$。只有 $0$ 的<<相反数/opposite number>>等于它本身。
+      explanationEn: |
+        Analyze each option:
+        **A is wrong**: Although $0$ is neither positive nor negative, $0$ IS an <<整数/integer>>.
+        **B is wrong**: $-a$ is not necessarily negative! When $a < 0$, $-a > 0$; when $a = 0$, $-a = 0$. $-a$ is simply the <<相反数/opposite number>> of $a$.
+        **C is wrong**: $|0| = 0$, and $0$ is not positive, so absolute value is not necessarily positive — it is "non-negative."
+        **D is correct**: If $a = -a$, then $2a = 0$, so $a = 0$. Only $0$ equals its own <<相反数/opposite number>>.
+
+    - number: 7
+      type: 易错填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        比较大小（用 $<$ 连接）：$-\frac{3}{4}$______$-\frac{2}{3}$
+      questionEn: |
+        Compare (use $<$ or $>$): $-\frac{3}{4}$______$-\frac{2}{3}$
+      correctValue: "<"
+      answer: "$-\\frac{3}{4} < -\\frac{2}{3}$"
+      answerEn: "$-\\frac{3}{4} < -\\frac{2}{3}$"
+      explanation: |
+        比较两个负分数的大小，先比较它们的<<绝对值/absolute value>>：
+        $\left|-\frac{3}{4}\right| = \frac{3}{4} = 0.75$，$\left|-\frac{2}{3}\right| = \frac{2}{3} \approx 0.667$
+        因为 $\frac{3}{4} > \frac{2}{3}$，即<<绝对值/absolute value>>更大，
+        所以原数更小：$-\frac{3}{4} < -\frac{2}{3}$
+        **易错点**：两个负数比大小，<<绝对值/absolute value>>大的反而小！不能直觉认为"$3 > 2$，所以 $-\frac{3}{4} > -\frac{2}{3}$"。
+      explanationEn: |
+        To compare two negative fractions, first compare their <<绝对值/absolute value>>s:
+        $\left|-\frac{3}{4}\right| = \frac{3}{4} = 0.75$, $\left|-\frac{2}{3}\right| = \frac{2}{3} \approx 0.667$
+        Since $\frac{3}{4} > \frac{2}{3}$ (larger <<绝对值/absolute value>>),
+        the original number is smaller: $-\frac{3}{4} < -\frac{2}{3}$
+        **Common mistake**: For two negative numbers, the one with the larger <<绝对值/absolute value>> is actually smaller!
+
+    - number: 8
+      type: 综合解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知 $a$ 是最大的负<<整数/integer>>，$b$ 的<<绝对值/absolute value>>等于 $3$，且 $b < 0$，$c$ 与 $-2$ 互为<<相反数/opposite number>>。
+        (1) 求 $a$、$b$、$c$ 的值；
+        (2) 在<<数轴/number line>>上表示 $a$、$b$、$c$，并将它们从小到大排列。
+      questionEn: |
+        Given that $a$ is the largest negative <<整数/integer>>, $|b| = 3$ and $b < 0$, and $c$ is the <<相反数/opposite number>> of $-2$.
+        (1) Find the values of $a$, $b$, and $c$.
+        (2) Plot $a$, $b$, $c$ on the <<数轴/number line>> and arrange them from smallest to largest.
+      answer: |
+        (1) $a = -1$，$b = -3$，$c = 2$
+        (2) $b < a < c$，即 $-3 < -1 < 2$
+      answerEn: |
+        (1) $a = -1$, $b = -3$, $c = 2$
+        (2) $b < a < c$, i.e., $-3 < -1 < 2$
+      explanation: |
+        **(1) 求值：**
+        - 最大的负<<整数/integer>>：负整数有 $-1, -2, -3, \ldots$，其中最大的是 $a = -1$
+        - $|b| = 3$ 且 $b < 0$：<<绝对值/absolute value>>为 $3$ 的数是 $\pm 3$，取负数得 $b = -3$
+        - $c$ 与 $-2$ 互为<<相反数/opposite number>>：$c = -(-2) = 2$
+
+        **(2) 排列：**
+        在<<数轴/number line>>上，$-3$ 在最左边，$-1$ 在 $-3$ 右边，$2$ 在最右边。
+        越靠右越大，所以 $-3 < -1 < 2$，即 $b < a < c$。
+
+        **本题综合考查**：最大负整数、绝对值方程（注意取舍条件）、相反数运算、数轴排列。
+      explanationEn: |
+        **(1) Finding values:**
+        - Largest negative <<整数/integer>>: negative integers are $-1, -2, -3, \ldots$, the largest is $a = -1$
+        - $|b| = 3$ and $b < 0$: numbers with <<绝对值/absolute value>> $3$ are $\pm 3$; since $b < 0$, $b = -3$
+        - $c$ is the <<相反数/opposite number>> of $-2$: $c = -(-2) = 2$
+
+        **(2) Ordering:**
+        On the <<数轴/number line>>, $-3$ is leftmost, $-1$ is to its right, $2$ is rightmost.
+        Further right means larger, so $-3 < -1 < 2$, i.e., $b < a < c$.
+
+        **This problem combines**: largest negative integer, absolute value equation (with selection condition), opposite number calculation, and number line ordering.

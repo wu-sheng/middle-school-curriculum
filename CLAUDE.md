@@ -78,6 +78,30 @@ Xinbloom is a bilingual self-study platform for middle school students (girls), 
 - 每章 5 题，题型混合（选择、填空、解答）
 - YAML 中 `examPrep.intro` 使用中性描述，不提"中考"
 
+## 内容深度与质量规范 / Content Depth & Quality Guidelines（重要）
+- **概念讲解必须有深度**：不能只罗列定义，必须解释"为什么"和"怎么理解"
+  - 每个概念应包含：定义 → 直观理解（几何意义/生活类比）→ 分类讨论 → 易错点
+  - 关键细节要强调，例如 $0$ 的多重含义（占位符、基准、起点、分界）
+  - 用生活化的语言和场景帮助学生建立直觉，再上升到数学表达
+- **例子要具体、多样**：每个概念至少 3-4 个不同角度的例子
+  - 包含正面例子和反面例子（"是什么"和"不是什么"）
+  - 包含生活场景例子和纯数学例子
+  - 对于容易混淆的概念，用对比例子突出区别
+- **题型精讲（examples）覆盖要全面**：
+  - 每个核心概念至少一道精讲题，题型与概念知识点对应
+  - 不仅是"基础操作"，还应包含"概念辨析"和"综合应用"类型
+  - 解题步骤要详细，体现思考过程而非直接给结果
+- **练习题（exercises）要有梯度**：
+  - 按难度递进：基础巩固 → 概念辨析 → 综合应用
+  - 覆盖所有核心知识点，不能遗漏
+  - 填空、判断、选择、解答混合搭配
+  - 总量控制在 30 分钟内完成（12-15 题）
+- **章末提升（examPrep）注重综合与易错**：
+  - 5-8 题，重点覆盖本章易错点和概念交叉点
+  - 包含"陷阱题"——看似简单但考查细节理解的题目
+  - 包含需要综合运用多个知识点的题目
+  - 题目难度高于课内练习但不超纲
+
 ## 内容结构约定 / Content Structure
 - 课程层级：学科 > 年级 > 学期 > 章节 > 知识点
 - 每个章节的学习内容存放在 `website/src/data/math/grade7/` 下的 YAML 文件中
@@ -86,11 +110,11 @@ Xinbloom is a bilingual self-study platform for middle school students (girls), 
   - `title` / `titleEn`: 标题
   - `objectives` / `objectivesEn`: 学习目标
   - `prerequisites`: 前置知识（从小学衔接）
-  - `concepts`: 概念定义与讲解（几何概念必须含 `hasVisualization: true`）
+  - `concepts`: 概念定义与讲解（几何概念必须含 `hasVisualization: true`），内容要有深度和细节
   - `realLife`: 生活实例
-  - `examples`: 题型精讲（每种类型一题）
-  - `exercises`: 练习题（30分钟内完成）
-  - `examPrep`: 章末提升题（5题）
+  - `examples`: 题型精讲（覆盖所有核心概念，每个概念至少一题）
+  - `exercises`: 练习题（12-15 题，30 分钟内，按难度递进）
+  - `examPrep`: 章末提升题（5-8 题，重点考查易错和综合）
   - `summary` / `summaryEn`: 学后总结
 - "综合与实践"活动（如进位制探究、运动会场地设计）需在 YAML 中作为独立模块落地
 
