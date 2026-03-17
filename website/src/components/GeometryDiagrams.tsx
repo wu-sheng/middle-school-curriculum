@@ -451,29 +451,53 @@ function CoordinateTranslation() {
 
 /** Diagram: vertical angles and adjacent supplementary angles */
 function VerticalAdjacentAngles() {
-  const cx = 250, cy = 110;
-  const len = 120;
+  const cx = 250, cy = 100;
+  const r = 30; // arc radius
+  // Line a: horizontal
+  // Line b: tilted ~55° from horizontal
+  const ang = 55 * Math.PI / 180;
+  const len = 130;
+  // Line a endpoints
+  const ax1 = cx - len, ay1 = cy, ax2 = cx + len, ay2 = cy;
+  // Line b endpoints (going from lower-left to upper-right)
+  const bx1 = cx - len * Math.cos(ang), by1 = cy + len * Math.sin(ang);
+  const bx2 = cx + len * Math.cos(ang), by2 = cy - len * Math.sin(ang);
+  // Arc points at radius r from center for each of the 4 rays
+  // Ray directions (angle from positive x-axis, y-down): right=0°, upper-right=-55°, left=180°, lower-left=125°
+  const p = (a: number) => ({ x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) });
+  const right = p(0);
+  const upRight = p(-ang);
+  const left = p(Math.PI);
+  const downLeft = p(Math.PI - ang);
+  // ∠1: between upper-right ray and right ray (above horizontal, right side) — acute angle
+  // ∠2: between right ray and lower-left direction of line b (below horizontal, right side) — obtuse angle
+  // ∠3: between lower-left ray and left ray (below horizontal, left side) — acute, vertical to ∠1
+  // ∠4: between left ray and upper-right direction of line b (above horizontal, left side) — obtuse, vertical to ∠2
   return (
-    <Wrapper width={500} height={240}>
-      {/* Two intersecting lines */}
-      <line x1={cx - len} y1={cy - 70} x2={cx + len} y2={cy + 70} stroke={purple} strokeWidth={2} />
-      <line x1={cx - len} y1={cy + 70} x2={cx + len} y2={cy - 70} stroke={purple} strokeWidth={2} />
+    <Wrapper width={500} height={230}>
+      {/* Line a: horizontal */}
+      <line x1={ax1} y1={ay1} x2={ax2} y2={ay2} stroke={purple} strokeWidth={2} />
+      {/* Line b: tilted */}
+      <line x1={bx1} y1={by1} x2={bx2} y2={by2} stroke={purple} strokeWidth={2} />
       <Dot x={cx} y={cy} r={4} />
-      {/* ∠1 top-right */}
-      <path d={`M ${cx},${cy - 30} A 30 30 0 0 1 ${cx + 26},${cy + 15}`} fill="none" stroke={pink} strokeWidth={1.5} />
-      <Label x={cx + 18} y={cy - 18} text="∠1" color={pink} size={12} />
-      {/* ∠2 bottom-right */}
-      <path d={`M ${cx + 26},${cy + 15} A 30 30 0 0 1 ${cx},${cy + 30}`} fill="none" stroke={amber} strokeWidth={1.5} />
-      <Label x={cx + 24} y={cy + 28} text="∠2" color={amber} size={12} />
-      {/* ∠3 bottom-left (vertical to ∠1) */}
-      <path d={`M ${cx},${cy + 30} A 30 30 0 0 1 ${cx - 26},${cy - 15}`} fill="none" stroke={pink} strokeWidth={1.5} />
-      <Label x={cx - 24} y={cy + 28} text="∠3" color={pink} size={12} />
-      {/* ∠4 top-left (vertical to ∠2) */}
-      <path d={`M ${cx - 26},${cy - 15} A 30 30 0 0 1 ${cx},${cy - 30}`} fill="none" stroke={amber} strokeWidth={1.5} />
-      <Label x={cx - 24} y={cy - 18} text="∠4" color={amber} size={12} />
+      {/* ∠1 arc: from upper-right ray to right ray (small angle, clockwise) */}
+      <path d={`M ${upRight.x},${upRight.y} A ${r} ${r} 0 0 1 ${right.x},${right.y}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={cx + 34} y={cy - 20} text="∠1" color={pink} size={13} />
+      {/* ∠2 arc: from right ray to down-left ray (large angle going clockwise below) */}
+      <path d={`M ${right.x},${right.y} A ${r} ${r} 0 0 1 ${downLeft.x},${downLeft.y}`} fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={cx + 10} y={cy + 36} text="∠2" color={amber} size={13} />
+      {/* ∠3 arc: from down-left ray to left ray (small angle, clockwise) — vertical to ∠1 */}
+      <path d={`M ${downLeft.x},${downLeft.y} A ${r} ${r} 0 0 1 ${left.x},${left.y}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={cx - 38} y={cy + 22} text="∠3" color={pink} size={13} />
+      {/* ∠4 arc: from left ray to upper-right ray (large angle going clockwise above) */}
+      <path d={`M ${left.x},${left.y} A ${r} ${r} 0 0 1 ${upRight.x},${upRight.y}`} fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={cx - 16} y={cy - 30} text="∠4" color={amber} size={13} />
+      {/* Labels for lines */}
+      <Label x={ax2 + 6} y={ay2 - 8} text="a" color={purple} size={13} anchor="start" />
+      <Label x={bx2 + 4} y={by2 - 4} text="b" color={purple} size={13} anchor="start" />
       {/* Annotations */}
-      <Label x={250} y={210} text="对顶角: ∠1 = ∠3, ∠2 = ∠4" color={purple} size={13} />
-      <Label x={250} y={230} text="邻补角: ∠1 + ∠2 = 180°" color={gray} size={12} />
+      <Label x={250} y={200} text="对顶角: ∠1 = ∠3, ∠2 = ∠4" color={purple} size={13} />
+      <Label x={250} y={220} text="邻补角: ∠1 + ∠2 = 180°" color={gray} size={12} />
     </Wrapper>
   );
 }
@@ -508,80 +532,17 @@ function PerpendicularLines() {
   );
 }
 
-/** Diagram: angles formed by a transversal cutting two parallel lines */
-function TransversalAngles() {
-  const y1 = 60, y2 = 160;
-  const tx1 = 150, ty1 = 10, tx2 = 300, ty2 = 210;
-  const slope = (tx2 - tx1) / (ty2 - ty1);
-  const ix1 = tx1 + slope * (y1 - ty1);
-  const ix2 = tx1 + slope * (y2 - ty1);
-  const arcR = 25;
-  return (
-    <Wrapper width={500} height={260}>
-      {/* Parallel lines */}
-      <line x1={60} y1={y1} x2={440} y2={y1} stroke={purple} strokeWidth={2} />
-      <line x1={60} y1={y2} x2={440} y2={y2} stroke={purple} strokeWidth={2} />
-      <Label x={445} y={y1 - 8} text="a" color={purple} size={13} anchor="start" />
-      <Label x={445} y={y2 - 8} text="b" color={purple} size={13} anchor="start" />
-      {/* Transversal */}
-      <line x1={tx1} y1={ty1} x2={tx2} y2={ty2} stroke={purple} strokeWidth={2} />
-      <Label x={tx1 - 6} y={ty1 + 4} text="c" color={purple} size={13} anchor="end" />
-      {/* Intersection dots */}
-      <Dot x={ix1} y={y1} r={4} />
-      <Dot x={ix2} y={y2} r={4} />
-      {/* Corresponding angles (同位角) — F-shape: ∠1 and ∠5 */}
-      <path d={`M ${ix1 + arcR},${y1} A ${arcR} ${arcR} 0 0 0 ${ix1 + arcR * 0.38},${y1 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix1 + 30} y={y1 - 10} text="∠1" color={pink} size={11} anchor="start" />
-      <path d={`M ${ix2 + arcR},${y2} A ${arcR} ${arcR} 0 0 0 ${ix2 + arcR * 0.38},${y2 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix2 + 30} y={y2 - 10} text="∠5" color={pink} size={11} anchor="start" />
-      {/* Alternate interior angles (内错角): ∠3 and ∠5 */}
-      <path d={`M ${ix1 - arcR},${y1} A ${arcR} ${arcR} 0 0 0 ${ix1 - arcR * 0.38},${y1 + arcR * 0.92}`} fill="none" stroke={amber} strokeWidth={2} />
-      <Label x={ix1 - 34} y={y1 + 24} text="∠3" color={amber} size={11} anchor="end" />
-      {/* Co-interior angles (同旁内角): ∠4 and ∠5 */}
-      <path d={`M ${ix1 + arcR},${y1} A ${arcR} ${arcR} 0 0 1 ${ix1 + arcR * 0.38},${y1 + arcR * 0.92}`} fill="none" stroke="#10B981" strokeWidth={2} />
-      <Label x={ix1 + 30} y={y1 + 24} text="∠4" color="#10B981" size={11} anchor="start" />
-      {/* Legend */}
-      <Label x={250} y={235} text="同位角: ∠1与∠5 (F形)　内错角: ∠3与∠5 (Z形)　同旁内角: ∠4与∠5 (U形)" color={gray} size={11} />
-    </Wrapper>
-  );
-}
-
-/** Diagram: criteria for parallel lines */
-function ParallelCriteria() {
-  const y1 = 60, y2 = 160;
-  const tx1 = 160, ty1 = 10, tx2 = 310, ty2 = 210;
-  const slope = (tx2 - tx1) / (ty2 - ty1);
-  const ix1 = tx1 + slope * (y1 - ty1);
-  const ix2 = tx1 + slope * (y2 - ty1);
-  const arcR = 22;
-  return (
-    <Wrapper width={500} height={250}>
-      {/* Two lines */}
-      <line x1={60} y1={y1} x2={420} y2={y1} stroke={purple} strokeWidth={2} />
-      <line x1={60} y1={y2} x2={420} y2={y2} stroke={purple} strokeWidth={2} />
-      <Label x={425} y={y1 + 5} text="a" color={purple} size={13} anchor="start" />
-      <Label x={425} y={y2 + 5} text="b" color={purple} size={13} anchor="start" />
-      {/* Transversal */}
-      <line x1={tx1} y1={ty1} x2={tx2} y2={ty2} stroke={purple} strokeWidth={2} />
-      <Dot x={ix1} y={y1} r={4} />
-      <Dot x={ix2} y={y2} r={4} />
-      {/* Equal corresponding angles */}
-      <path d={`M ${ix1 + arcR},${y1} A ${arcR} ${arcR} 0 0 0 ${ix1 + arcR * 0.38},${y1 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix1 + 28} y={y1 - 8} text="∠1" color={pink} size={12} anchor="start" />
-      <path d={`M ${ix2 + arcR},${y2} A ${arcR} ${arcR} 0 0 0 ${ix2 + arcR * 0.38},${y2 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix2 + 28} y={y2 - 8} text="∠2" color={pink} size={12} anchor="start" />
-      {/* Arrow marks >> on parallel lines */}
-      <Label x={330} y={y1 - 4} text="▸▸" color={amber} size={10} />
-      <Label x={330} y={y2 - 4} text="▸▸" color={amber} size={10} />
-      {/* Conclusion */}
-      <Label x={250} y={220} text="∠1 = ∠2（同位角相等）" color={pink} size={13} />
-      <Label x={250} y={240} text="→ a ∥ b（两直线平行）" color={purple} size={13} />
-    </Wrapper>
-  );
-}
-
-/** Diagram: properties of parallel lines */
-function ParallelProperties() {
+/**
+ * Shared base: two parallel lines a, b cut by transversal c.
+ * Standard 8-angle numbering (课本标准):
+ *   At line a: ∠1 (upper-right), ∠2 (upper-left), ∠3 (lower-left), ∠4 (lower-right)
+ *   At line b: ∠5 (upper-right), ∠6 (upper-left), ∠7 (lower-left), ∠8 (lower-right)
+ * Returns intersection x-coordinates and renders the base lines.
+ */
+function TwoLinesTransversal({ children, width = 500, height = 260, showParallel = false }: {
+  children: (ix1: number, y1: number, ix2: number, y2: number, arcR: number) => React.ReactNode;
+  width?: number; height?: number; showParallel?: boolean;
+}) {
   const y1 = 60, y2 = 160;
   const tx1 = 155, ty1 = 10, tx2 = 305, ty2 = 210;
   const slope = (tx2 - tx1) / (ty2 - ty1);
@@ -589,34 +550,115 @@ function ParallelProperties() {
   const ix2 = tx1 + slope * (y2 - ty1);
   const arcR = 24;
   return (
-    <Wrapper width={520} height={280}>
-      {/* Parallel lines with >> marks */}
+    <Wrapper width={width} height={height}>
       <line x1={50} y1={y1} x2={430} y2={y1} stroke={purple} strokeWidth={2} />
       <line x1={50} y1={y2} x2={430} y2={y2} stroke={purple} strokeWidth={2} />
-      <Label x={435} y={y1 + 5} text="a" color={purple} size={13} anchor="start" />
-      <Label x={435} y={y2 + 5} text="b" color={purple} size={13} anchor="start" />
-      <Label x={340} y={y1 - 4} text="▸▸" color={amber} size={10} />
-      <Label x={340} y={y2 - 4} text="▸▸" color={amber} size={10} />
-      {/* Transversal */}
+      <Label x={435} y={y1 - 8} text="a" color={purple} size={13} anchor="start" />
+      <Label x={435} y={y2 - 8} text="b" color={purple} size={13} anchor="start" />
+      {showParallel && <>
+        <Label x={340} y={y1 - 4} text="▸▸" color={amber} size={10} />
+        <Label x={340} y={y2 - 4} text="▸▸" color={amber} size={10} />
+      </>}
       <line x1={tx1} y1={ty1} x2={tx2} y2={ty2} stroke={purple} strokeWidth={2} />
+      <Label x={tx1 - 6} y={ty1 + 4} text="c" color={purple} size={13} anchor="end" />
       <Dot x={ix1} y={y1} r={4} />
       <Dot x={ix2} y={y2} r={4} />
-      {/* Corresponding angles (pink) */}
-      <path d={`M ${ix1 + arcR},${y1} A ${arcR} ${arcR} 0 0 0 ${ix1 + arcR * 0.38},${y1 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix1 + 30} y={y1 - 8} text="∠1" color={pink} size={11} anchor="start" />
-      <path d={`M ${ix2 + arcR},${y2} A ${arcR} ${arcR} 0 0 0 ${ix2 + arcR * 0.38},${y2 - arcR * 0.92}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={ix2 + 30} y={y2 - 8} text="∠2" color={pink} size={11} anchor="start" />
-      {/* Alternate interior angles (amber) */}
-      <path d={`M ${ix1 - arcR},${y1} A ${arcR} ${arcR} 0 0 0 ${ix1 - arcR * 0.38},${y1 + arcR * 0.92}`} fill="none" stroke={amber} strokeWidth={2} />
-      <Label x={ix1 - 34} y={y1 + 24} text="∠3" color={amber} size={11} anchor="end" />
-      {/* Co-interior angles (green) */}
-      <path d={`M ${ix1 + arcR},${y1} A ${arcR} ${arcR} 0 0 1 ${ix1 + arcR * 0.38},${y1 + arcR * 0.92}`} fill="none" stroke="#10B981" strokeWidth={2} />
-      <Label x={ix1 + 30} y={y1 + 24} text="∠4" color="#10B981" size={11} anchor="start" />
-      {/* Three properties */}
-      <Label x={260} y={210} text="a ∥ b →" color={purple} size={13} />
-      <Label x={260} y={230} text="同位角相等: ∠1 = ∠2　内错角相等: ∠3 = ∠2" color={gray} size={11} />
-      <Label x={260} y={250} text="同旁内角互补: ∠4 + ∠2 = 180°" color={gray} size={11} />
+      {children(ix1, y1, ix2, y2, arcR)}
     </Wrapper>
+  );
+}
+
+/* Arc helpers for the 8 standard angles at an intersection */
+function arcUpperRight(ix: number, y: number, r: number) {
+  return `M ${ix + r},${y} A ${r} ${r} 0 0 0 ${ix + r * 0.38},${y - r * 0.92}`;
+}
+function arcUpperLeft(ix: number, y: number, r: number) {
+  return `M ${ix - r * 0.38},${y - r * 0.92} A ${r} ${r} 0 0 0 ${ix - r},${y}`;
+}
+function arcLowerLeft(ix: number, y: number, r: number) {
+  return `M ${ix - r},${y} A ${r} ${r} 0 0 0 ${ix - r * 0.38},${y + r * 0.92}`;
+}
+function arcLowerRight(ix: number, y: number, r: number) {
+  return `M ${ix + r * 0.38},${y + r * 0.92} A ${r} ${r} 0 0 0 ${ix + r},${y}`;
+}
+
+/** Diagram: angles formed by a transversal cutting two parallel lines — all 8 angles */
+function TransversalAngles() {
+  return (
+    <TwoLinesTransversal width={500} height={260} showParallel>
+      {(ix1, y1, ix2, y2, r) => (<>
+        {/* Line a: ∠1 upper-right, ∠2 upper-left, ∠3 lower-left, ∠4 lower-right */}
+        <path d={arcUpperRight(ix1, y1, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix1 + 30} y={y1 - 10} text="∠1" color={pink} size={11} anchor="start" />
+        <path d={arcUpperLeft(ix1, y1, r)} fill="none" stroke={gray} strokeWidth={1} />
+        <Label x={ix1 - 30} y={y1 - 10} text="∠2" color={gray} size={10} anchor="end" />
+        <path d={arcLowerLeft(ix1, y1, r)} fill="none" stroke={amber} strokeWidth={2} />
+        <Label x={ix1 - 30} y={y1 + 24} text="∠3" color={amber} size={11} anchor="end" />
+        <path d={arcLowerRight(ix1, y1, r)} fill="none" stroke="#10B981" strokeWidth={2} />
+        <Label x={ix1 + 30} y={y1 + 24} text="∠4" color="#10B981" size={11} anchor="start" />
+        {/* Line b: ∠5 upper-right, ∠6 upper-left, ∠7 lower-left, ∠8 lower-right */}
+        <path d={arcUpperRight(ix2, y2, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix2 + 30} y={y2 - 10} text="∠5" color={pink} size={11} anchor="start" />
+        <path d={arcUpperLeft(ix2, y2, r)} fill="none" stroke={gray} strokeWidth={1} />
+        <Label x={ix2 - 30} y={y2 - 10} text="∠6" color={gray} size={10} anchor="end" />
+        <path d={arcLowerLeft(ix2, y2, r)} fill="none" stroke={gray} strokeWidth={1} />
+        <Label x={ix2 - 30} y={y2 + 24} text="∠7" color={gray} size={10} anchor="end" />
+        <path d={arcLowerRight(ix2, y2, r)} fill="none" stroke={gray} strokeWidth={1} />
+        <Label x={ix2 + 30} y={y2 + 24} text="∠8" color={gray} size={10} anchor="start" />
+        {/* Legend */}
+        <Label x={250} y={220} text="同位角(F形): ∠1与∠5　内错角(Z形): ∠3与∠5" color={gray} size={11} />
+        <Label x={250} y={240} text="同旁内角(U形): ∠4与∠5" color={gray} size={11} />
+      </>)}
+    </TwoLinesTransversal>
+  );
+}
+
+/** Diagram: criteria for parallel lines — ∠1=∠5 → a∥b */
+function ParallelCriteria() {
+  return (
+    <TwoLinesTransversal width={500} height={260}>
+      {(ix1, y1, ix2, y2, r) => (<>
+        {/* ∠1 at line a (upper-right) */}
+        <path d={arcUpperRight(ix1, y1, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix1 + 30} y={y1 - 10} text="∠1" color={pink} size={12} anchor="start" />
+        {/* ∠3 at line a (lower-left) */}
+        <path d={arcLowerLeft(ix1, y1, r)} fill="none" stroke={amber} strokeWidth={2} />
+        <Label x={ix1 - 30} y={y1 + 24} text="∠3" color={amber} size={12} anchor="end" />
+        {/* ∠5 at line b (upper-right) */}
+        <path d={arcUpperRight(ix2, y2, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix2 + 30} y={y2 - 10} text="∠5" color={pink} size={12} anchor="start" />
+        {/* Conclusion */}
+        <Label x={250} y={215} text="∠1 = ∠5（同位角相等）→ a ∥ b" color={pink} size={12} />
+        <Label x={250} y={235} text="∠3 = ∠5（内错角相等）→ a ∥ b" color={amber} size={12} />
+        <Label x={250} y={255} text="∠3 + ∠5 = 180°（同旁内角互补）→ a ∥ b" color="#10B981" size={11} />
+      </>)}
+    </TwoLinesTransversal>
+  );
+}
+
+/** Diagram: properties of parallel lines — a∥b → angle relationships */
+function ParallelProperties() {
+  return (
+    <TwoLinesTransversal width={520} height={280} showParallel>
+      {(ix1, y1, ix2, y2, r) => (<>
+        {/* ∠1 at line a (upper-right) — corresponding to ∠5 */}
+        <path d={arcUpperRight(ix1, y1, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix1 + 30} y={y1 - 10} text="∠1" color={pink} size={11} anchor="start" />
+        {/* ∠3 at line a (lower-left) — alternate interior with ∠5 */}
+        <path d={arcLowerLeft(ix1, y1, r)} fill="none" stroke={amber} strokeWidth={2} />
+        <Label x={ix1 - 30} y={y1 + 24} text="∠3" color={amber} size={11} anchor="end" />
+        {/* ∠4 at line a (lower-right) — co-interior with ∠5 */}
+        <path d={arcLowerRight(ix1, y1, r)} fill="none" stroke="#10B981" strokeWidth={2} />
+        <Label x={ix1 + 30} y={y1 + 24} text="∠4" color="#10B981" size={11} anchor="start" />
+        {/* ∠5 at line b (upper-right) */}
+        <path d={arcUpperRight(ix2, y2, r)} fill="none" stroke={pink} strokeWidth={2} />
+        <Label x={ix2 + 30} y={y2 - 10} text="∠5" color={pink} size={11} anchor="start" />
+        {/* Three properties */}
+        <Label x={260} y={215} text="a ∥ b →" color={purple} size={13} />
+        <Label x={260} y={235} text="同位角相等: ∠1 = ∠5　内错角相等: ∠3 = ∠5" color={gray} size={11} />
+        <Label x={260} y={255} text="同旁内角互补: ∠4 + ∠5 = 180°" color={gray} size={11} />
+      </>)}
+    </TwoLinesTransversal>
   );
 }
 
