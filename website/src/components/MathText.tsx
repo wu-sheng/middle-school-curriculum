@@ -73,8 +73,9 @@ function renderMathInText(text: string, lang: Lang): string {
   // 6. Convert markdown bold **...** to <strong>
   result = result.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 
-  // 7. Convert newlines to <br>
-  result = result.replace(/\n/g, "<br/>");
+  // 7. Convert newlines to <br>, but only outside HTML tags
+  //    (KaTeX SVG paths contain newlines that must be preserved)
+  result = result.replace(/\n(?![^<]*>)/g, "<br/>");
 
   return result;
 }
