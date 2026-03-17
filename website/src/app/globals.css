@@ -56,14 +56,11 @@ body {
   scroll-behavior: smooth;
 }
 
-/* iOS safe area padding for notched devices */
-main {
-  padding-bottom: env(safe-area-inset-bottom, 0);
-}
+/* iOS safe area padding for notched devices — handled below with timer bar */
 
-/* Ensure touch targets are at least 44px on mobile */
+/* Ensure touch targets are at least 44px on mobile (except compact timer bar) */
 @media (pointer: coarse) {
-  button, a {
+  button:not([data-compact]), a {
     min-height: 44px;
   }
 }
@@ -104,6 +101,21 @@ aside {
     z-index: 50;
     pointer-events: none;
   }
+}
+
+/* Timer alert bounce-in animation */
+@keyframes bounce-in {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-bounce-in {
+  animation: bounce-in 0.4s ease-out;
+}
+
+/* Leave space for the bottom timer bar + iOS safe area */
+main {
+  padding-bottom: calc(52px + env(safe-area-inset-bottom, 0px));
 }
 
 /* Custom scrollbar */
