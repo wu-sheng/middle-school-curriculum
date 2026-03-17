@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { LessonContent, NumberLineConfig } from "@/lib/loadYaml";
 import { useLang, getUi, biField, biArray, biBothArray } from "@/lib/i18n";
 import MathText, { MathBlock } from "./MathText";
@@ -8,6 +8,8 @@ import { BiBlock } from "./BiText";
 import Collapsible from "./Collapsible";
 import NumberLine from "./NumberLine";
 import GeometryDiagram, { hasGeometryDiagram } from "./GeometryDiagrams";
+import SectionAnchor from "./SectionAnchor";
+import StudyTimer from "./StudyTimer";
 
 /** Render content with bilingual support: in "both" mode shows zh + en stacked */
 function ContentBlock({ obj, field, className = "", lang }: {
@@ -134,11 +136,53 @@ interface Props {
 
 type Tab = "learn" | "examples" | "exercises" | "exam";
 
+/** Infer which tab a hash anchor belongs to */
+function tabForHash(hash: string): Tab | null {
+  if (!hash) return null;
+  const id = hash.replace(/^#/, "");
+  if (id.startsWith("example-")) return "examples";
+  if (id.startsWith("q-")) return "exercises";
+  if (id.startsWith("exam-")) return "exam";
+  if (["prerequisites", "reallife", "mistakes", "summary"].includes(id) || id.startsWith("concept-")) return "learn";
+  return null;
+}
+
+/** Extract question number from hash like "q-5" or "exam-3" */
+function questionIndexFromHash(hash: string, questions: QuizQuestion[], prefix: string): number | null {
+  const id = hash.replace(/^#/, "");
+  const expectedPrefix = `${prefix}-`;
+  if (!id.startsWith(expectedPrefix)) return null;
+  const num = parseInt(id.slice(expectedPrefix.length), 10);
+  const idx = questions.findIndex((q) => q.number === num);
+  return idx >= 0 ? idx : null;
+}
+
 export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("learn");
   const { lang } = useLang();
   const ui = getUi(lang);
   const l = lesson as unknown as Record<string, unknown>;
+
+  // Handle hash-based navigation on mount and hash change
+  const navigateToHash = useCallback(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+    const tab = tabForHash(hash);
+    if (tab) {
+      setActiveTab(tab);
+      // Delay scroll to let the tab content render
+      setTimeout(() => {
+        const el = document.getElementById(hash.replace(/^#/, ""));
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, []);
+
+  useEffect(() => {
+    navigateToHash();
+    window.addEventListener("hashchange", navigateToHash);
+    return () => window.removeEventListener("hashchange", navigateToHash);
+  }, [navigateToHash]);
 
   const tabs: { key: Tab; label: string; icon: string }[] = [
     { key: "learn", label: ui.learn, icon: "🌸" },
@@ -225,6 +269,8 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           }
         />
       )}
+
+      <StudyTimer />
     </div>
   );
 }
@@ -238,9 +284,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
     <div className="space-y-6">
       {/* Prerequisites */}
       <section className="bg-white rounded-2xl p-6 border border-pink-50">
-        <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
+        <SectionAnchor id="prerequisites" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🦙 <MathText content={biField(pre, "title", lang)} />
-        </h2>
+        </SectionAnchor>
         <ContentBlock obj={pre} field="intro" lang={lang} className="text-base text-gray-700 mb-4" />
 
         <div className="bg-green-50 rounded-xl p-4 mb-4">
@@ -288,9 +334,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
         const c = concept as unknown as Record<string, unknown>;
         return (
           <section key={concept.id} className="bg-white rounded-2xl p-6 border border-pink-50">
-            <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
+            <SectionAnchor id={`concept-${concept.id}`} className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
               📌 <MathText content={biField(c, "title", lang)} />
-            </h2>
+            </SectionAnchor>
             <ContentBlock obj={c} field="content" lang={lang} className="text-base text-gray-700 mb-4 leading-relaxed" />
 
             {concept.classification && (
@@ -378,9 +424,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
 
       {/* Real life */}
       <section className="bg-white rounded-2xl p-6 border border-pink-50">
-        <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
+        <SectionAnchor id="reallife" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🐼 {ui.realLife}
-        </h2>
+        </SectionAnchor>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {lesson.realLife.map((rl, i) => {
             const r = rl as unknown as Record<string, unknown>;
@@ -403,9 +449,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
 
       {/* Common mistakes */}
       <section className="bg-white rounded-2xl p-6 border border-red-100">
-        <h2 className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
+        <SectionAnchor id="mistakes" className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
           ⚠️ {ui.commonMistakes}
-        </h2>
+        </SectionAnchor>
         <ul className="space-y-3">
           <ContentList obj={lesson as unknown as Record<string, unknown>} field="commonMistakes" lang={lang} renderItem={(zh, en, i) => (
             <li key={i} className="flex items-start gap-3 text-base text-gray-700 bg-red-50/50 rounded-xl p-3">
@@ -418,9 +464,9 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
 
       {/* Summary */}
       <section className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border border-purple-50">
-        <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
+        <SectionAnchor id="summary" className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
           🌸 {ui.summary}
-        </h2>
+        </SectionAnchor>
         <ul className="space-y-2">
           <ContentList obj={lesson as unknown as Record<string, unknown>} field="summary" lang={lang} renderItem={(zh, en, i) => (
             <li key={i} className="flex items-start gap-2 text-base text-gray-700">
@@ -448,13 +494,13 @@ function ExamplesTab({ lesson }: { lesson: LessonContent }) {
       {lesson.examples.map((ex, i) => {
         const e = ex as unknown as Record<string, unknown>;
         return (
-          <div key={i} className="bg-white rounded-2xl p-6 border border-pink-50">
-            <div className="flex items-center gap-2 mb-3">
+          <div key={i} id={`example-${i + 1}`} className="bg-white rounded-2xl p-6 border border-pink-50 scroll-mt-24">
+            <SectionAnchor id={`example-${i + 1}-title`} as="div" className="flex items-center gap-2 mb-3">
               <span className="bg-gradient-to-r from-pink-400 to-purple-400 text-white text-xs font-bold px-3 py-1 rounded-full">
                 {ui.type} {ex.type}
               </span>
               <span className="text-sm font-medium text-gray-700"><MathText content={biField(e, "title", lang)} /></span>
-            </div>
+            </SectionAnchor>
 
             <div className="bg-gray-50 rounded-xl p-4 mb-4">
               <p className="text-xs text-gray-400 mb-1">{ui.question}：</p>
@@ -510,7 +556,13 @@ function QuizSection({
 }) {
   const { lang } = useLang();
   const ui = getUi(lang);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    if (typeof window !== "undefined") {
+      const idx = questionIndexFromHash(window.location.hash, questions, prefix);
+      return idx ?? 0;
+    }
+    return 0;
+  });
   const [graded, setGraded] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
   const currentQ = questions[currentIndex];
@@ -604,6 +656,7 @@ function QuizSection({
       <ExerciseCard
         key={`${prefix}-${currentQ.number}`}
         question={currentQ}
+        anchorId={`${prefix}-${currentQ.number}`}
         forceShowAnswer={false}
         graded={graded}
         userAnswer={answers[`${prefix}${currentQ.number}`]}
@@ -644,12 +697,14 @@ function QuizSection({
 
 function ExerciseCard({
   question,
+  anchorId,
   forceShowAnswer,
   graded,
   userAnswer,
   onAnswer,
 }: {
   question: QuizQuestion;
+  anchorId?: string;
   forceShowAnswer: boolean;
   graded: boolean;
   userAnswer?: string | string[];
@@ -679,7 +734,7 @@ function ExerciseCard({
     : "border-pink-100";
 
   return (
-    <div className={`bg-white rounded-2xl p-5 border ${borderColor} transition-colors`}>
+    <div id={anchorId} className={`bg-white rounded-2xl p-5 border ${borderColor} transition-colors scroll-mt-24`}>
       <div className="flex items-start gap-3 mb-3">
         <span className={`text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 ${
           graded && isCorrect !== null
