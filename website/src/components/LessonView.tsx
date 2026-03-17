@@ -154,10 +154,10 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
         <div className="flex items-center gap-2 text-sm text-purple-500 mb-2">
           <span>{lang === "en" ? `Ch.${chapterNumber}` : `第${chapterNumber}章`}</span>
           <span>·</span>
-          <span>{lang === "en" ? biField(l, "title", lang) : chapterNameEn}</span>
+          <span><MathText content={lang === "en" ? biField(l, "title", lang) : chapterNameEn} /></span>
         </div>
         <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent mb-3">
-          {biField(l, "title", lang)}
+          <MathText content={biField(l, "title", lang)} />
         </h1>
         <div className="flex flex-wrap gap-3 text-sm text-gray-400">
           <span>⏱ {biField(l, "estimatedTime", lang)}</span>
@@ -239,7 +239,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
       {/* Prerequisites */}
       <section className="bg-white rounded-2xl p-6 border border-pink-50">
         <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
-          🦙 {biField(pre, "title", lang)}
+          🦙 <MathText content={biField(pre, "title", lang)} />
         </h2>
         <ContentBlock obj={pre} field="intro" lang={lang} className="text-base text-gray-700 mb-4" />
 
@@ -289,7 +289,7 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
         return (
           <section key={concept.id} className="bg-white rounded-2xl p-6 border border-pink-50">
             <h2 className="text-lg font-bold text-purple-500 mb-4 flex items-center gap-2">
-              📌 {biField(c, "title", lang)}
+              📌 <MathText content={biField(c, "title", lang)} />
             </h2>
             <ContentBlock obj={c} field="content" lang={lang} className="text-base text-gray-700 mb-4 leading-relaxed" />
 
@@ -390,12 +390,12 @@ function LearnTab({ lesson }: { lesson: LessonContent }) {
               <div key={i} className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4">
                 <p className="text-sm font-medium text-purple-500 mb-2">{biField(r, "category", lang)}</p>
                 <div className="space-y-1 text-base text-gray-700">
-                  <p><span className="text-green-500 mr-1">+</span>
+                  <div><span className="text-green-500 mr-1">+</span>
                     <ContentBlock obj={r} field="positive" lang={lang} className="inline" />
-                  </p>
-                  <p><span className="text-red-400 mr-1">−</span>
+                  </div>
+                  <div><span className="text-red-400 mr-1">−</span>
                     <ContentBlock obj={r} field="negative" lang={lang} className="inline" />
-                  </p>
+                  </div>
                 </div>
               </div>
             );
@@ -455,7 +455,7 @@ function ExamplesTab({ lesson }: { lesson: LessonContent }) {
               <span className="bg-gradient-to-r from-pink-400 to-purple-400 text-white text-xs font-bold px-3 py-1 rounded-full">
                 {ui.type} {ex.type}
               </span>
-              <span className="text-sm font-medium text-gray-700">{biField(e, "title", lang)}</span>
+              <span className="text-sm font-medium text-gray-700"><MathText content={biField(e, "title", lang)} /></span>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-4 mb-4">
@@ -712,7 +712,7 @@ function ExerciseCard({
               }`}
             />
             {graded && isCorrect === false && (
-              <span className="text-xs text-red-400">{ui.correctAnswer}：{question.correctValue}</span>
+              <span className="text-xs text-red-400">{ui.correctAnswer}：<MathText content={question.correctValue || ""} /></span>
             )}
           </div>
         )}
@@ -784,11 +784,11 @@ function ExerciseCard({
                             : "border-gray-200 hover:border-purple-200 text-gray-500"
                         }`}
                       >
-                        {opt}
+                        <MathText content={opt} />
                       </button>
                     ))}
                     {graded && subCorrect === false && (
-                      <span className="text-xs text-red-400 flex items-center">→ {si.correctValue}</span>
+                      <span className="text-xs text-red-400 flex items-center">→ <MathText content={si.correctValue} /></span>
                     )}
                   </div>
                 </div>

@@ -28,34 +28,35 @@ function Dot({ x, y, color = pink, r = 4 }: { x: number; y: number; color?: stri
 /** Diagram: straight line, ray, line segment comparison */
 function LineTypes() {
   const y1 = 40, y2 = 90, y3 = 140;
+  const labelX = 480;
   return (
     <Wrapper width={500} height={180}>
       {/* Straight line - extends both ways with arrows */}
-      <line x1={30} y1={y1} x2={470} y2={y1} stroke={purple} strokeWidth={2} />
+      <line x1={30} y1={y1} x2={370} y2={y1} stroke={purple} strokeWidth={2} />
       <polygon points={`25,${y1} 35,${y1 - 5} 35,${y1 + 5}`} fill={purple} />
-      <polygon points={`475,${y1} 465,${y1 - 5} 465,${y1 + 5}`} fill={purple} />
-      <Dot x={180} y={y1} />
-      <Dot x={320} y={y1} />
-      <Label x={180} y={y1 - 12} text="A" color={pink} />
-      <Label x={320} y={y1 - 12} text="B" color={pink} />
-      <Label x={490} y={y1 + 5} text="直线 AB" color={gray} size={12} anchor="start" />
+      <polygon points={`375,${y1} 365,${y1 - 5} 365,${y1 + 5}`} fill={purple} />
+      <Dot x={150} y={y1} />
+      <Dot x={260} y={y1} />
+      <Label x={150} y={y1 - 12} text="A" color={pink} />
+      <Label x={260} y={y1 - 12} text="B" color={pink} />
+      <Label x={labelX} y={y1 + 5} text="直线 AB" color={gray} size={12} anchor="end" />
 
       {/* Ray - one endpoint, one arrow */}
-      <Dot x={120} y={y2} r={5} />
-      <line x1={120} y1={y2} x2={470} y2={y2} stroke={purple} strokeWidth={2} />
-      <polygon points={`475,${y2} 465,${y2 - 5} 465,${y2 + 5}`} fill={purple} />
-      <Label x={120} y={y2 - 12} text="O" color={pink} />
-      <Label x={300} y={y2 - 12} text="A" color={gray} />
-      <Dot x={300} y={y2} color={gray} r={3} />
-      <Label x={490} y={y2 + 5} text="射线 OA" color={gray} size={12} anchor="start" />
+      <Dot x={80} y={y2} r={5} />
+      <line x1={80} y1={y2} x2={370} y2={y2} stroke={purple} strokeWidth={2} />
+      <polygon points={`375,${y2} 365,${y2 - 5} 365,${y2 + 5}`} fill={purple} />
+      <Label x={80} y={y2 - 12} text="O" color={pink} />
+      <Label x={240} y={y2 - 12} text="A" color={gray} />
+      <Dot x={240} y={y2} color={gray} r={3} />
+      <Label x={labelX} y={y2 + 5} text="射线 OA" color={gray} size={12} anchor="end" />
 
       {/* Line segment - two endpoints */}
-      <Dot x={150} y={y3} r={5} />
-      <Dot x={380} y={y3} r={5} />
-      <line x1={150} y1={y3} x2={380} y2={y3} stroke={purple} strokeWidth={2} />
-      <Label x={150} y={y3 - 12} text="A" color={pink} />
-      <Label x={380} y={y3 - 12} text="B" color={pink} />
-      <Label x={490} y={y3 + 5} text="线段 AB" color={gray} size={12} anchor="start" />
+      <Dot x={100} y={y3} r={5} />
+      <Dot x={310} y={y3} r={5} />
+      <line x1={100} y1={y3} x2={310} y2={y3} stroke={purple} strokeWidth={2} />
+      <Label x={100} y={y3 - 12} text="A" color={pink} />
+      <Label x={310} y={y3 - 12} text="B" color={pink} />
+      <Label x={labelX} y={y3 + 5} text="线段 AB" color={gray} size={12} anchor="end" />
     </Wrapper>
   );
 }
@@ -176,29 +177,55 @@ function AngleBisector() {
 
 /** Diagram: three views of a cylinder */
 function ThreeViews() {
+  const cx = 80, topY = 50, botY = 150, rx = 40, ry = 14;
   return (
-    <Wrapper width={480} height={200}>
+    <Wrapper width={620} height={210}>
+      {/* 3D Cylinder */}
+      <g>
+        {/* Side surface */}
+        <line x1={cx - rx} y1={topY} x2={cx - rx} y2={botY} stroke={purple} strokeWidth={2} />
+        <line x1={cx + rx} y1={topY} x2={cx + rx} y2={botY} stroke={purple} strokeWidth={2} />
+        {/* Bottom ellipse */}
+        <ellipse cx={cx} cy={botY} rx={rx} ry={ry} fill="none" stroke={purple} strokeWidth={2} />
+        {/* Top ellipse - back half dashed */}
+        <ellipse cx={cx} cy={topY} rx={rx} ry={ry} fill="none" stroke={purple} strokeWidth={2} strokeDasharray="none" />
+        <ellipse cx={cx} cy={topY} rx={rx} ry={ry} fill="none" stroke={purple} strokeWidth={1.2} strokeDasharray="4,3"
+          clipPath="url(#topBack)" />
+        <defs>
+          <clipPath id="topBack">
+            <rect x={cx - rx - 2} y={topY} width={2 * rx + 4} height={ry + 2} />
+          </clipPath>
+        </defs>
+        {/* Dashed center axis */}
+        <line x1={cx} y1={topY - ry - 5} x2={cx} y2={botY + ry + 5} stroke={gray} strokeWidth={1} strokeDasharray="3,3" />
+        <Label x={cx} y={195} text="圆柱体" color={purple} size={12} />
+      </g>
+
+      {/* Arrow from 3D to views */}
+      <line x1={135} y1={100} x2={160} y2={100} stroke={lightGray} strokeWidth={1.5} />
+      <polygon points="163,100 155,96 155,104" fill={lightGray} />
+
       {/* Front view: rectangle */}
       <g>
-        <rect x={30} y={40} width={80} height={120} fill="none" stroke={purple} strokeWidth={2} rx={2} />
-        <Label x={70} y={180} text="正视图" color={gray} size={12} />
-        <Label x={70} y={195} text="(长方形)" color={lightGray} size={10} />
+        <rect x={180} y={45} width={80} height={110} fill="none" stroke={purple} strokeWidth={2} rx={2} />
+        <Label x={220} y={175} text="正视图" color={gray} size={12} />
+        <Label x={220} y={190} text="(长方形)" color={lightGray} size={10} />
       </g>
       {/* Side view: rectangle */}
       <g>
-        <rect x={170} y={40} width={80} height={120} fill="none" stroke={purple} strokeWidth={2} rx={2} />
-        <Label x={210} y={180} text="侧视图" color={gray} size={12} />
-        <Label x={210} y={195} text="(长方形)" color={lightGray} size={10} />
+        <rect x={300} y={45} width={80} height={110} fill="none" stroke={purple} strokeWidth={2} rx={2} />
+        <Label x={340} y={175} text="侧视图" color={gray} size={12} />
+        <Label x={340} y={190} text="(长方形)" color={lightGray} size={10} />
       </g>
       {/* Top view: circle */}
       <g>
-        <circle cx={360} cy={100} r={55} fill="none" stroke={purple} strokeWidth={2} />
-        <Dot x={360} y={100} r={2} color={gray} />
-        <Label x={360} y={180} text="俯视图" color={gray} size={12} />
-        <Label x={360} y={195} text="(圆)" color={lightGray} size={10} />
+        <circle cx={490} cy={100} r={50} fill="none" stroke={purple} strokeWidth={2} />
+        <Dot x={490} y={100} r={2} color={gray} />
+        <Label x={490} y={175} text="俯视图" color={gray} size={12} />
+        <Label x={490} y={190} text="(圆)" color={lightGray} size={10} />
       </g>
       {/* Title */}
-      <Label x={240} y={20} text="圆柱的三视图" color={purple} size={14} />
+      <Label x={310} y={20} text="圆柱的三视图" color={purple} size={14} />
     </Wrapper>
   );
 }

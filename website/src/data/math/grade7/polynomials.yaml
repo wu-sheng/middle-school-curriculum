@@ -99,20 +99,20 @@ concepts:
     classification:
       - name: "$3x^2$"
         nameEn: "$3x^2$"
-        examples: '$\underbrace{3}_{\text{系数}} x^{\overbrace{2}^{\text{次数}}}$'
-        examplesEn: '$\underbrace{3}_{\text{coeff.}} x^{\overbrace{2}^{\text{deg.}}}$'
+        examples: '$\underbrace{3}_{\text{系数}} \overbrace{x^2}^{\text{次数}=2}$'
+        examplesEn: '$\underbrace{3}_{\text{coeff.}} \overbrace{x^2}^{\text{deg.}=2}$'
       - name: "$-2a^2b$"
         nameEn: "$-2a^2b$"
         examples: '$\underbrace{-2}_{\text{系数}} a^2 b \quad$ <<次数/degree>>：$2+1=3$'
         examplesEn: '$\underbrace{-2}_{\text{coeff.}} a^2 b \quad$ <<次数/degree>>: $2+1=3$'
       - name: "$y$"
         nameEn: "$y$"
-        examples: '$\underbrace{1}_{\text{系数}} y^{\overbrace{1}^{\text{次数}}}$（$1$ 省略不写）'
-        examplesEn: '$\underbrace{1}_{\text{coeff.}} y^{\overbrace{1}^{\text{deg.}}}$ ($1$ is omitted)'
+        examples: '$\underbrace{1}_{\text{系数}} \overbrace{y}^{\text{次数}=1}$（$1$ 省略不写）'
+        examplesEn: '$\underbrace{1}_{\text{coeff.}} \overbrace{y}^{\text{deg.}=1}$ ($1$ is omitted)'
       - name: "$-x^3$"
         nameEn: "$-x^3$"
-        examples: '$\underbrace{-1}_{\text{系数}} x^{\overbrace{3}^{\text{次数}}}$（$-1$ 省略 $1$）'
-        examplesEn: '$\underbrace{-1}_{\text{coeff.}} x^{\overbrace{3}^{\text{deg.}}}$ ($1$ in $-1$ is omitted)'
+        examples: '$\underbrace{-1}_{\text{系数}} \overbrace{x^3}^{\text{次数}=3}$（$-1$ 省略 $1$）'
+        examplesEn: '$\underbrace{-1}_{\text{coeff.}} \overbrace{x^3}^{\text{deg.}=3}$ ($1$ in $-1$ is omitted)'
       - name: "$5$"
         nameEn: "$5$"
         examples: '$\underbrace{5}_{\text{系数}}$，<<次数/degree>>为 $0$（无字母项）'

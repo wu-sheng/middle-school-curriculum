@@ -165,10 +165,10 @@ concepts:
       **Sum and difference of <<线段/line segment>>s**:
       - If point $C$ is on <<线段/line segment>> $\overline{AB}$, then $AC + CB = AB$, i.e., $CB = AB - AC$.
     examples:
-      - '已知<<线段/line segment>> $\overline{AB} = 10$ cm，点 $C$ 是<<线段/line segment>> $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = CB = 5$ cm'
+      - '已知<<线段/line segment>> $\overline{AB}$，$AB = 10$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = CB = 5$ cm'
       - '点 $C$ 在<<线段/line segment>> $\overline{AB}$ 上，$AC = 3$ cm，$CB = 4$ cm，则 $AB = AC + CB = 7$ cm'
     examplesEn:
-      - "Given <<线段/line segment>> $\\overline{AB} = 10$ cm, point $C$ is the <<中点/midpoint>> of $\\overline{AB}$, then $AC = CB = 5$ cm"
+      - "Given <<线段/line segment>> $\\overline{AB}$ with $AB = 10$ cm, point $C$ is the <<中点/midpoint>> of $\\overline{AB}$, then $AC = CB = 5$ cm"
       - "Point $C$ is on <<线段/line segment>> $\\overline{AB}$, $AC = 3$ cm, $CB = 4$ cm, then $AB = AC + CB = 7$ cm"
     hasVisualization: true
 
@@ -379,9 +379,9 @@ examples:
     title: <<线段/line segment>>的<<中点/midpoint>>计算
     titleEn: Calculating the <<中点/midpoint>> of a <<线段/line segment>>
     question: |
-      已知<<线段/line segment>> $\overline{AB} = 8$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，点 $D$ 是 $\overline{CB}$ 的<<中点/midpoint>>。求 $\overline{AD}$ 的长度。
+      已知<<线段/line segment>> $\overline{AB}$，$AB = 8$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，点 $D$ 是 $\overline{CB}$ 的<<中点/midpoint>>。求 $AD$ 的长度。
     questionEn: |
-      Given <<线段/line segment>> $\overline{AB} = 8$ cm, point $C$ is the <<中点/midpoint>> of $\overline{AB}$, and point $D$ is the <<中点/midpoint>> of $\overline{CB}$. Find the length of $\overline{AD}$.
+      Given <<线段/line segment>> $\overline{AB}$ with $AB = 8$ cm, point $C$ is the <<中点/midpoint>> of $\overline{AB}$, and point $D$ is the <<中点/midpoint>> of $\overline{CB}$. Find the length of $AD$.
     steps:
       - "因为 $C$ 是 $\\overline{AB}$ 的<<中点/midpoint>>，所以 $AC = CB = \\frac{1}{2} \\times 8 = 4$ cm"
       - "因为 $D$ 是 $\\overline{CB}$ 的<<中点/midpoint>>，所以 $CD = DB = \\frac{1}{2} \\times 4 = 2$ cm"
@@ -390,8 +390,8 @@ examples:
       - "Since $C$ is the <<中点/midpoint>> of $\\overline{AB}$, $AC = CB = \\frac{1}{2} \\times 8 = 4$ cm"
       - "Since $D$ is the <<中点/midpoint>> of $\\overline{CB}$, $CD = DB = \\frac{1}{2} \\times 4 = 2$ cm"
       - "$AD = AC + CD = 4 + 2 = 6$ cm"
-    answer: "$\\overline{AD} = 6$ cm"
-    answerEn: "$\\overline{AD} = 6$ cm"
+    answer: "$AD = 6$ cm"
+    answerEn: "$AD = 6$ cm"
 
   - type: 5
     title: <<角/angle>>的表示和计算
@@ -517,9 +517,9 @@ exercises:
       section: 一、填空题
       sectionEn: "I. Fill in the Blanks"
       question: |
-        已知<<线段/line segment>> $\overline{AB} = 12$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = $ ______ cm。
+        已知<<线段/line segment>> $\overline{AB}$，$AB = 12$ cm，点 $C$ 是 $\overline{AB}$ 的<<中点/midpoint>>，则 $AC = $ ______ cm。
       questionEn: |
-        Given <<线段/line segment>> $\overline{AB} = 12$ cm, and point $C$ is the <<中点/midpoint>> of $\overline{AB}$, then $AC = $ ______ cm.
+        Given <<线段/line segment>> $\overline{AB}$ with $AB = 12$ cm, and point $C$ is the <<中点/midpoint>> of $\overline{AB}$, then $AC = $ ______ cm.
       correctValue: "6"
       answer: "$6$"
       answerEn: "$6$"
@@ -642,20 +642,20 @@ exercises:
       subInputs:
         - prompt: 选择答案
           options:
-            - "A. <<线段/line segment>> $AB$ 和<<线段/line segment>> $BA$ 是不同的<<线段/line segment>>"
-            - "B. <<射线/ray>> $\\overrightarrow{OA}$ 和<<射线/ray>> $\\overrightarrow{OB}$ 一定是不同的<<射线/ray>>"
-            - "C. <<直线/straight line>>没有端点，可以度量长度"
-            - "D. 经过一个点可以画无数条<<直线/straight line>>"
-          correctValue: "D. 经过一个点可以画无数条<<直线/straight line>>"
+            - 'A. <<线段/line segment>> $\overline{AB}$ 和<<线段/line segment>> $\overline{BA}$ 是不同的<<线段/line segment>>'
+            - 'B. <<射线/ray>> $\overrightarrow{OA}$ 和<<射线/ray>> $\overrightarrow{OB}$ 一定是不同的<<射线/ray>>'
+            - 'C. <<直线/straight line>>没有端点，可以度量长度'
+            - 'D. 经过一个点可以画无数条<<直线/straight line>>'
+          correctValue: 'D. 经过一个点可以画无数条<<直线/straight line>>'
       answer: "D"
       answerEn: "D"
       explanation: |
-        A 错：<<线段/line segment>> $AB$ 和<<线段/line segment>> $BA$ 是同一条<<线段/line segment>>（两个端点相同）。
+        A 错：<<线段/line segment>> $\overline{AB}$ 和<<线段/line segment>> $\overline{BA}$ 是同一条<<线段/line segment>>（两个端点相同）。
         B 错：如果 $A$、$O$、$B$ 三点在同一条<<直线/straight line>>上且 $A$、$B$ 在 $O$ 的同侧，则 $\overrightarrow{OA}$ 和 $\overrightarrow{OB}$ 可能是同一条<<射线/ray>>。
         C 错：<<直线/straight line>>无限延伸，不能度量长度。
         D 对：经过一个点可以画无数条<<直线/straight line>>。
       explanationEn: |
-        A is wrong: <<线段/line segment>> $AB$ and <<线段/line segment>> $BA$ are the same (same two endpoints).
+        A is wrong: <<线段/line segment>> $\overline{AB}$ and <<线段/line segment>> $\overline{BA}$ are the same (same two endpoints).
         B is wrong: If $A$, $O$, $B$ are collinear with $A$ and $B$ on the same side of $O$, then $\overrightarrow{OA}$ and $\overrightarrow{OB}$ could be the same <<射线/ray>>.
         C is wrong: A <<直线/straight line>> extends infinitely and its length cannot be measured.
         D is correct: Through one point, infinitely many <<直线/straight line>>s can be drawn.
@@ -787,9 +787,9 @@ examPrep:
       section: 章末提升
       sectionEn: Challenge
       question: |
-        已知<<线段/line segment>> $\overline{AB} = 10$ cm，点 $C$ 是<<线段/line segment>> $\overline{AB}$ 上一点，且 $AC = 4$ cm，点 $M$ 是<<线段/line segment>> $\overline{CB}$ 的<<中点/midpoint>>，则<<线段/line segment>> $\overline{AM}$ 的长度是______ cm。
+        已知<<线段/line segment>> $\overline{AB}$，$AB = 10$ cm，点 $C$ 是 $\overline{AB}$ 上一点，且 $AC = 4$ cm，点 $M$ 是 $\overline{CB}$ 的<<中点/midpoint>>，则 $AM$ 的长度是______ cm。
       questionEn: |
-        Given <<线段/line segment>> $\overline{AB} = 10$ cm, point $C$ is on $\overline{AB}$ with $AC = 4$ cm, and point $M$ is the <<中点/midpoint>> of $\overline{CB}$. The length of $\overline{AM}$ is ______ cm.
+        Given <<线段/line segment>> $\overline{AB}$ with $AB = 10$ cm, point $C$ is on $\overline{AB}$ with $AC = 4$ cm, and point $M$ is the <<中点/midpoint>> of $\overline{CB}$. The length of $AM$ is ______ cm.
       correctValue: "7"
       answer: "$7$"
       answerEn: "$7$"
@@ -797,7 +797,7 @@ examPrep:
         $CB = AB - AC = 10 - 4 = 6$ cm
         $M$ 是 $\overline{CB}$ 的<<中点/midpoint>>，所以 $CM = \frac{1}{2} \times 6 = 3$ cm
         $AM = AC + CM = 4 + 3 = 7$ cm
-        中考常考<<线段/line segment>>的<<中点/midpoint>>与线段加法的综合运用。
+        本题综合运用了<<线段/line segment>>的<<中点/midpoint>>与线段加法。
       explanationEn: |
         $CB = AB - AC = 10 - 4 = 6$ cm
         $M$ is the <<中点/midpoint>> of $\overline{CB}$, so $CM = \frac{1}{2} \times 6 = 3$ cm
