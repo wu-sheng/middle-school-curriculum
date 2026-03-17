@@ -10,6 +10,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -28,8 +31,6 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: website/package-lock.json
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - run: npm ci
 
