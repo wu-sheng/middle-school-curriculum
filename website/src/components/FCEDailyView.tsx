@@ -863,9 +863,42 @@ function speakerColor(voice: string): string {
 function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyViewProps["listeningData"]; lang: string; onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
-  // Part 2 sentence-completion answers: keyed by sentence id
   const [sentenceAnswers, setSentenceAnswers] = useState<Record<string, string>>({});
   const [sentenceChecked, setSentenceChecked] = useState<Record<string, boolean>>({});
+  const scoreReportedRef = useRef(false);
+
+  // Report aggregate score when all extracts are checked
+  function reportScoreIfComplete(
+    nextChecked: Record<string, boolean>,
+    nextSentenceChecked: Record<string, boolean>
+  ) {
+    if (scoreReportedRef.current) return;
+    const allDone = listeningData.every(e => {
+      if (e.type === "sentence-completion") return !!nextSentenceChecked[e.id];
+      return !!nextChecked[e.id];
+    });
+    if (!allDone) return;
+    scoreReportedRef.current = true;
+    // Compute aggregate
+    let total = 0, correct = 0;
+    const qr: Record<string, boolean> = {};
+    for (const e of listeningData) {
+      if (e.type === "sentence-completion" && e.sentences) {
+        for (const s of e.sentences) {
+          total++;
+          const ok = (sentenceAnswers[s.id] || "").trim().toLowerCase() === s.answer.trim().toLowerCase();
+          correct += ok ? 1 : 0;
+          qr[s.id] = ok;
+        }
+      } else {
+        total++;
+        const ok = answers[e.id] === e.question.answer;
+        correct += ok ? 1 : 0;
+        qr[e.id] = ok;
+      }
+    }
+    setTimeout(() => onScore?.(correct, total, qr), 0);
+  }
 
   if (listeningData.length === 0) return <Card><p className="text-gray-400 italic">No listening exercises today.</p></Card>;
 
@@ -959,7 +992,7 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 
                 {!mcChecked ? (
                   <button
-                    onClick={() => setChecked(prev => ({ ...prev, [extract.id]: true }))}
+                    onClick={() => { const next = { ...checked, [extract.id]: true }; setChecked(next); reportScoreIfComplete(next, sentenceChecked); }}
                     className="mt-3 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Check
@@ -1016,7 +1049,7 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 
                 {!scChecked ? (
                   <button
-                    onClick={() => setSentenceChecked(prev => ({ ...prev, [extract.id]: true }))}
+                    onClick={() => { const next = { ...sentenceChecked, [extract.id]: true }; setSentenceChecked(next); reportScoreIfComplete(checked, next); }}
                     className="mt-1 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Check All
@@ -1137,7 +1170,7 @@ export default function FCEDailyView(props: DailyViewProps) {
           <VocabTab vocabData={vocabData} newIds={day.newVocab} reviewIds={day.reviewVocab} lang={lang} onScore={(s, m, qr) => handleScore("vocab", s, m, qr)} />
         )}
         {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} onScore={(s, m, qr) => handleScore("grammar", s, m, qr)} />}
-        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m, qr) => handleScore("useOfEnglish", s, m, qr)} />}
+        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m, qr) => handleScore("uoe", s, m, qr)} />}
         {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} onScore={(s, m, qr) => handleScore("listening", s, m, qr)} />}
         {activeTab === "writing" && <WritingTab data={writingData} lang={lang} />}
       </div>

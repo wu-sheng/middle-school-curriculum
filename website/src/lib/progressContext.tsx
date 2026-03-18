@@ -50,8 +50,9 @@ export interface FCEProgress {
         reading?: number;
         vocab?: number;
         grammar?: number;
-        useOfEnglish?: number;
+        uoe?: number;
         listening?: number;
+        [key: string]: number | undefined;
       };
       questionResults?: { [questionId: string]: boolean };
     };
@@ -892,8 +893,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     const day = fceProgress?.dailyCompleted?.[dayId];
     if (!day?.scores) return false;
     const s = day.scores;
-    // Completed if at least reading + grammar + useOfEnglish have scores
-    return s.reading != null && s.grammar != null && s.useOfEnglish != null;
+    // Completed if at least reading + grammar + uoe have scores
+    return s.reading != null && s.grammar != null && s.uoe != null;
   }, [fceProgress]);
 
   const getDayAverageScore = useCallback((dayId: string): number | null => {
