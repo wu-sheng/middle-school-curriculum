@@ -11,7 +11,7 @@ interface SettingsModalProps {
 
 export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
   const { lang } = useLang();
-  const { isLoggedIn, isSyncing, userName, login, logout, setUserName, progress, configInfo } = useProgress();
+  const { isLoggedIn, isSyncing, userName, login, logout, setUserName, syncNow, progress, configInfo } = useProgress();
 
   const [token, setToken] = useState("");
   const [repo, setRepo] = useState("xinbloom-progress");
@@ -43,8 +43,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     setError("");
     setConnecting(true);
     try {
-      await login(token.trim(), repo.trim());
-      if (displayName.trim()) setUserName(displayName.trim());
+      await login(token.trim(), repo.trim(), displayName.trim() || undefined);
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : String(e);
       if (msg.includes("401") || msg.toLowerCase().includes("invalid")) {
@@ -155,7 +154,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               {/* Action buttons */}
               <div className="flex gap-3">
                 <button
-                  onClick={() => login("", "")}
+                  onClick={() => syncNow()}
                   disabled={isSyncing}
                   className="flex-1 rounded-lg bg-purple-100 text-purple-700 py-2 text-sm font-medium hover:bg-purple-200 disabled:opacity-50 transition-colors"
                 >

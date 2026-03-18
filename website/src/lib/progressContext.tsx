@@ -86,9 +86,10 @@ export interface ProgressContextType {
   configInfo: { owner: string; repo: string } | null;
 
   // Actions
-  login: (token: string, repo: string) => Promise<boolean>;
+  login: (token: string, repo: string, displayName?: string) => Promise<boolean>;
   logout: () => void;
   setUserName: (name: string) => void;
+  syncNow: () => Promise<void>;
 
   // Record scores
   recordDailyScore: (
@@ -423,13 +424,24 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   // -----------------------------------------------------------------------
 
   const login = useCallback(
-    async (token: string, repo: string): Promise<boolean> => {
+    async (token: string, repo: string, displayName?: string): Promise<boolean> => {
       try {
         const owner = await fetchGitHubUser(token);
         const cfg: GitHubConfig = { token, repo, owner };
         saveGitHubConfig(cfg);
         setConfig(cfg);
         await loadFromGitHub(cfg);
+        // If display name provided and progress was just created, update it
+        if (displayName?.trim()) {
+          setUserNameState(displayName.trim());
+          setProgress((prev) => {
+            if (!prev) return prev;
+            const updated = { ...prev, userName: displayName.trim(), lastUpdated: new Date().toISOString() };
+            saveProgressLocal(updated);
+            return updated;
+          });
+          scheduleSyncProgress();
+        }
         return true;
       } catch (err) {
         console.error("[progressContext] Login failed:", err);
@@ -479,6 +491,38 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     },
     [config, scheduleSyncProgress]
   );
+
+  const syncNow = useCallback(async () => {
+    const cfg = configRef.current;
+    if (!cfg) return;
+    // Flush pending writes immediately
+    if (progressTimerRef.current) {
+      clearTimeout(progressTimerRef.current);
+      progressTimerRef.current = null;
+    }
+    if (historyTimerRef.current) {
+      clearTimeout(historyTimerRef.current);
+      historyTimerRef.current = null;
+    }
+    setIsSyncing(true);
+    try {
+      // Write current local state to GitHub first
+      const localProg = loadProgressLocal();
+      if (localProg) {
+        const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, progressShaRef.current);
+        progressShaRef.current = sha;
+      }
+      const localHist = loadHistoryLocal();
+      if (localHist) {
+        const sha = await writeProgressFile(cfg, HISTORY_FILE, localHist, historyShaRef.current);
+        historyShaRef.current = sha;
+      }
+    } catch (e) {
+      console.error("[progressContext] Sync flush failed:", e);
+    } finally {
+      setIsSyncing(false);
+    }
+  }, []);
 
   // -----------------------------------------------------------------------
   // Record helpers (shared pattern)
@@ -651,6 +695,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     login,
     logout,
     setUserName,
+    syncNow,
 
     recordDailyScore,
     recordChapterScore,

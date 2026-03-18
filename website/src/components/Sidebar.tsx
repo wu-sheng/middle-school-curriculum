@@ -311,7 +311,7 @@ export default function Sidebar({ subjects }: SidebarProps) {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 bg-white border-r border-pink-50 z-40 overflow-y-auto transition-transform lg:translate-x-0 ${
+        className={`fixed top-0 left-0 h-full w-64 bg-white border-r border-pink-50 z-40 overflow-y-auto pb-16 transition-transform lg:translate-x-0 ${
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
