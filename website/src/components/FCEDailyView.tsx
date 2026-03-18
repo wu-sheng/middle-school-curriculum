@@ -6,6 +6,7 @@ import { BiBlock, BiLabel } from "@/components/BiText";
 import Collapsible from "@/components/Collapsible";
 import AudioWord from "@/components/AudioWord";
 import { useProgress } from "@/lib/progressContext";
+import StudyTimer from "./StudyTimer";
 
 /** Inline vocab popover — click to show, click outside to dismiss */
 function VocabPopover({ word, info }: {
@@ -1142,6 +1143,8 @@ export default function FCEDailyView(props: DailyViewProps) {
           Day {day.dayOffset + 1} →
         </a>
       </div>
+
+      <StudyTimer />
     </div>
   );
 }

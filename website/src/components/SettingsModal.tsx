@@ -233,8 +233,8 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 />
                 <p className="mt-1 text-xs text-gray-400">
                   {label(
-                    "你创建的用于存储进度数据的私有仓库。",
-                    "A private repo you created to store progress data."
+                    "默认 xinbloom-progress，可免填。需提前创建此私有仓库。",
+                    "Default: xinbloom-progress. Create this private repo first."
                   )}
                 </p>
               </div>

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import TopBar from "@/components/TopBar";
 import { loadCurriculum } from "@/lib/loadYaml";
 import { I18nProvider } from "@/lib/i18n";
 import { ProgressProvider } from "@/lib/progressContext";
@@ -71,6 +72,7 @@ export default function RootLayout({
         <I18nProvider>
           <ProgressProvider>
             <Sidebar subjects={sidebarData} />
+            <TopBar />
             <main className="lg:ml-64 min-h-screen">
               {children}
             </main>
