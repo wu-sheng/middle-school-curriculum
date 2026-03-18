@@ -22,11 +22,18 @@ import {
 // Data types
 // ---------------------------------------------------------------------------
 
+export interface RecentPage {
+  path: string;
+  label: string;
+  timestamp: string;
+}
+
 export interface UserProfile {
   userName: string;
   loginMode: "github" | "local";
   lastUpdated: string;
   lastVisitedPath?: string;
+  recentPages?: RecentPage[]; // max 4, newest first
 }
 
 export interface MathProgress {
@@ -97,7 +104,9 @@ export interface ProgressContextType {
 
   // Page tracking
   recordPageVisit: (path: string) => void;
+  recordBookmark: (path: string, label: string) => void; // explicit bookmark with label
   lastVisitedPath: string | null;
+  recentPages: RecentPage[];
 
   // Record scores
   recordDailyScore: (
@@ -574,18 +583,55 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     [config, scheduleSyncDirty]
   );
 
+  function pathToLabel(p: string): string {
+    const parts = p.split("#");
+    const path = parts[0];
+    const hash = parts[1] || "";
+    const segs = path.split("/").filter(Boolean);
+    let label = "";
+    if (segs[0] === "fce" && segs[1] === "daily") label = `Day ${parseInt(segs[2]?.replace("D", "") || "0")}`;
+    else if (segs[0] === "fce" && segs[1] === "quest") label = segs[2]?.replace(/-/g, " ") || "Quest";
+    else if (segs[0] === "lesson") label = segs[segs.length - 1]?.replace(/-/g, " ") || "Lesson";
+    else label = segs[segs.length - 1] || p;
+    if (hash) {
+      const tabNames: Record<string, string> = { learn: "学习", vocab: "词汇", examples: "精讲", exercises: "练习", exam: "提升" };
+      label += ` · ${tabNames[hash] || hash}`;
+    }
+    return label;
+  }
+
+  /** Push a page to recentPages (max 4, dedup by path, newest first) */
+  function pushRecentPage(prev: UserProfile, path: string, label?: string): UserProfile {
+    const existing = prev.recentPages || [];
+    const autoLabel = label || pathToLabel(path);
+    const entry: RecentPage = { path, label: autoLabel, timestamp: new Date().toISOString() };
+    const filtered = existing.filter(p => p.path !== path);
+    const updated = [entry, ...filtered].slice(0, 4);
+    return { ...prev, lastVisitedPath: path, recentPages: updated, lastUpdated: new Date().toISOString() };
+  }
+
   const recordPageVisit = useCallback((path: string) => {
     setProfile(prev => {
       if (!prev) return prev;
-      if (prev.lastVisitedPath === path) return prev; // no change
-      const updated = { ...prev, lastVisitedPath: path, lastUpdated: new Date().toISOString() };
+      if (prev.lastVisitedPath === path) return prev;
+      const updated = pushRecentPage(prev, path);
       saveProfileLocal(updated);
       if (configRef.current) { profileDirtyRef.current = true; }
       return updated;
     });
   }, []);
 
-  /** Record current browser path as lastVisitedPath (called on meaningful engagement) */
+  const recordBookmark = useCallback((path: string, label: string) => {
+    setProfile(prev => {
+      if (!prev) return prev;
+      const updated = pushRecentPage(prev, path, label);
+      saveProfileLocal(updated);
+      if (configRef.current) { profileDirtyRef.current = true; scheduleSyncDirty(); }
+      return updated;
+    });
+  }, [scheduleSyncDirty]);
+
+  /** Record current browser path as lastVisitedPath */
   const recordCurrentPath = useCallback(() => {
     if (typeof window === "undefined") return;
     const path = window.location.pathname + window.location.hash;
@@ -934,7 +980,9 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     nextSyncIn,
 
     recordPageVisit,
+    recordBookmark,
     lastVisitedPath: profile?.lastVisitedPath || null,
+    recentPages: profile?.recentPages || [],
 
     recordDailyScore,
     recordChapterScore,

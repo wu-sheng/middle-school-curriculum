@@ -468,7 +468,7 @@ export default function FCEQuestView({ quest }: { quest: FCEQuest }) {
   // Page visit recorded by AutoRedirect after 60s
 
   return (
-    <div className="max-w-3xl mx-auto" style={{ fontSize: 16, lineHeight: 1.7 }}>
+    <div className="max-w-5xl mx-auto" style={{ fontSize: 16, lineHeight: 1.7 }}>
       {/* Header */}
       <QuestHeader quest={quest} lang={lang} />
 

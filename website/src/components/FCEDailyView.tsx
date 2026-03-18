@@ -1092,7 +1092,7 @@ export default function FCEDailyView(props: DailyViewProps) {
   const [activeTab, setActiveTab] = useState<TabKey>("reading");
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       {/* Day Header with navigation */}
       <div className="mb-6 flex items-center justify-between">
         <a
