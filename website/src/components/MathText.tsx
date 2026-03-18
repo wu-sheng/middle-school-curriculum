@@ -40,7 +40,7 @@ function renderMathInText(text: string, lang: Lang): string {
   let result = text.replace(/<<([^/]+)\/([^>]+)>>/g, (_, zh, en) => {
     const display = lang === "en" ? en : zh;
     const tooltip = lang === "en" ? zh : en;
-    return `<span class="keyword-highlight" title="${tooltip}" tabindex="0" data-zh="${zh}" data-en="${en}">${display}</span>`;
+    return `<span class="keyword-highlight" tabindex="0" data-zh="${zh}" data-en="${en}" data-tooltip="${tooltip}">${display}</span>`;
   });
 
   // 2. Handle display math $$...$$

@@ -159,6 +159,190 @@ subjects:
                   - 统计调查
                   - 直方图
 
+  - id: english
+    name: 英语
+    nameEn: English
+    icon: "📚"
+    grades:
+      - id: fce
+        name: FCE 冒险岛
+        nameEn: FCE Adventure
+        description: 面向已通过 PET 的小学高阶学习者，15 个月从 B1 进阶到 B2
+        descriptionEn: For advanced young learners who passed PET, 15-month journey from B1 to B2
+        semesters:
+          - id: phase1
+            name: 基础探索（1-5月）
+            nameEn: Foundation (Month 1-5)
+            chapters:
+              - id: Q01-magic-words
+                number: 1
+                name: 魔法变形课
+                nameEn: Magic Word Lab
+                hasContent: true
+                topics:
+                  - 前缀系列（un-, in-, dis-, mis-, over-, under-, re-, pre-）
+                  - 后缀系列（-tion, -ment, -ness, -ful, -less, -able, -ous, -ive, -ly）
+                  - 词性转换规律（名词 ↔ 动词 ↔ 形容词 ↔ 副词）
+                topicsEn:
+                  - Prefix families (un-, in-, dis-, mis-, over-, under-, re-, pre-)
+                  - Suffix families (-tion, -ment, -ness, -ful, -less, -able, -ous, -ive, -ly)
+                  - Word class conversion (noun ↔ verb ↔ adjective ↔ adverb)
+              - id: Q02-time-traveler
+                number: 2
+                name: 时间旅行者
+                nameEn: Time Traveler
+                hasContent: true
+                topics:
+                  - 12 种时态对比与选择
+                  - 过去完成时深化
+                  - 条件句 Type 0-3 与混合条件句
+                  - I wish / If only 虚拟语气
+                topicsEn:
+                  - Comparing and choosing among 12 tenses
+                  - Past perfect in depth
+                  - Conditionals Type 0-3 and mixed conditionals
+                  - I wish / If only subjunctive mood
+              - id: Q03-detective-club
+                number: 3
+                name: 侦探俱乐部
+                nameEn: Detective Club
+                hasContent: false
+                topics:
+                  - 主旨推断与细节定位
+                  - 作者态度判断
+                  - 段落逻辑衔接
+                  - 情态动词表推测（must/might/can't have）
+                topicsEn:
+                  - Main idea inference and detail location
+                  - Author attitude and purpose
+                  - Paragraph cohesion and coherence
+                  - Modal verbs for deduction (must/might/can't have)
+              - id: Q04-dragon-academy
+                number: 4
+                name: 驯龙学院
+                nameEn: Dragon Academy
+                hasContent: false
+                topics:
+                  - 主动与被动转换
+                  - 直接与间接引语
+                  - so...that / too...to / enough...to
+                  - 比较级句型与因果连接词替换
+                topicsEn:
+                  - Active and passive voice transformation
+                  - Direct and indirect speech
+                  - so...that / too...to / enough...to
+                  - Comparative structures and cause-effect connectors
+              - id: Q05-story-forge
+                number: 5
+                name: 故事锻造坊
+                nameEn: Story Forge
+                hasContent: false
+                topics:
+                  - 故事结构（Hook → 发展 → 高潮 → 结局）
+                  - 五感描写与修辞手法
+                  - 叙事时态一致性
+                  - B2 级叙事连接词
+                topicsEn:
+                  - Story structure (Hook → Rising Action → Climax → Resolution)
+                  - Sensory details and figurative language
+                  - Narrative tense consistency
+                  - B2-level narrative connectors
+          - id: phase2
+            name: 进阶挑战（6-10月）
+            nameEn: Advanced (Month 6-10)
+            chapters:
+              - id: Q06-nature-explorer
+                number: 6
+                name: 自然探索家
+                nameEn: Nature Explorer
+                hasContent: false
+                topics:
+                  - 段落衔接信号词
+                  - 指代关系追踪
+                  - 信息流逻辑（总分、因果、对比）
+                topicsEn:
+                  - Cohesion signal words
+                  - Reference tracking (this, such, the former)
+                  - Information flow (general-specific, cause-effect, compare-contrast)
+              - id: Q07-idiom-jungle
+                number: 7
+                name: 成语丛林
+                nameEn: Idiom Jungle
+                hasContent: false
+                topics:
+                  - 高频短语动词 60 个
+                  - 固定搭配 80 个（make/do, take/have）
+                  - 介词搭配与连接词完形
+                topicsEn:
+                  - 60 high-frequency phrasal verbs
+                  - 80 fixed collocations (make/do, take/have)
+                  - Preposition collocations and connectors in cloze
+              - id: Q08-world-builder
+                number: 8
+                name: 世界构建师
+                nameEn: World Builder
+                hasContent: false
+                topics:
+                  - 定语从句（限定 vs 非限定）
+                  - 状语从句与名词性从句
+                  - 分词短语作定语和状语
+                  - 句子合并练习
+                topicsEn:
+                  - Relative clauses (defining vs non-defining)
+                  - Adverbial and noun clauses
+                  - Participle phrases as modifiers
+                  - Sentence combining exercises
+              - id: Q09-review-master
+                number: 9
+                name: 书评大师
+                nameEn: Review Master
+                hasContent: false
+                topics:
+                  - Review 结构（介绍 → 概述 → 评价 → 推荐）
+                  - 评价语言与目标读者意识
+                topicsEn:
+                  - Review structure (Introduction → Summary → Opinion → Recommendation)
+                  - Evaluative language and audience awareness
+              - id: Q10-debate-arena
+                number: 10
+                name: 辩论竞技场
+                nameEn: Debate Arena
+                hasContent: false
+                topics:
+                  - 议论文结构与正反论证
+                  - 观点表达升级（I think → It could be argued that）
+                  - 举例、让步与总结技巧
+                topicsEn:
+                  - Essay structure and balanced argumentation
+                  - Upgrading opinion expressions
+                  - Exemplification, concession, and conclusion techniques
+          - id: phase3
+            name: 冲刺模拟（11-15月）
+            nameEn: Final Sprint (Month 11-15)
+            chapters:
+              - id: Q11-code-breaker
+                number: 11
+                name: 密码破译者
+                nameEn: Code Breaker
+                hasContent: false
+                topics:
+                  - Use of English Part 1-4 综合混合训练
+                  - 限时模拟与错题归类
+                topicsEn:
+                  - Use of English Part 1-4 mixed practice
+                  - Timed mock tests and error analysis
+              - id: Q12-final-quest
+                number: 12
+                name: 终极冒险
+                nameEn: Final Quest
+                hasContent: false
+                topics:
+                  - 全真模拟卷（4 套）
+                  - 分项得分分析与薄弱环节强化
+                topicsEn:
+                  - Full mock exams (4 sets)
+                  - Score breakdown and targeted revision
+
   - id: physics
     name: 物理
     nameEn: Physics

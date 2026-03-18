@@ -1,8 +1,12 @@
 # CLAUDE.md - 项目约定 / Project Conventions
 
 ## 项目概述 / Overview
-Xinbloom（欣欣绽放的学习花园）是一个面向初中生（女孩）的双语自学平台网站，基于 Node.js + Next.js 构建。
-Xinbloom is a bilingual self-study platform for middle school students (girls), built with Node.js + Next.js.
+Xinbloom（欣欣绽放的学习花园）是一个双语自学平台网站，基于 Node.js + Next.js 构建。
+目标用户：北京小学3年级学生，已自学完成小学数学和PET。
+本材料针对自学，由简入深，不专门针对竞赛或中考。
+Xinbloom is a bilingual self-study platform built with Node.js + Next.js.
+Target: a 3rd-grade primary student in Beijing who has completed primary math and PET.
+This material is for self-study, progressing from simple to complex — not aimed at math competitions or zhongkao.
 
 ## 技术栈 / Tech Stack
 - **框架**: Next.js 16 (App Router), 静态导出 (`output: "export"`)
@@ -20,6 +24,7 @@ Xinbloom is a bilingual self-study platform for middle school students (girls), 
 - 侧边栏使用分段控件（非循环按钮）切换语言
 - `BiMathText` 组件负责在 "both" 模式下正确传递 `langOverride` 给 `MathText`
 - 关键词高亮 `<<中文/English>>` 在双语模式下：中文行显示中文关键词，英文行显示英文关键词
+- **英语课程特殊规则**：在双语模式下，英语课程（FCE）的显示顺序与数学/理科课程**相反**——**英文在上**（主语言，正常大小），**中文在下**（辅助翻译，小号灰色）。这是因为英语课程的目标是沉浸式英语学习，中文仅作为辅助理解。FCE 组件中使用 `biPick` 和渲染逻辑时需注意此顺序差异。
 
 ## 双语字段约定 / Bilingual Field Convention
 - YAML 中双语字段命名约定：中文用原字段名，英文加 `En` 后缀

@@ -1,0 +1,866 @@
+id: Q02
+title: 'Time Traveler'
+titleZh: '时间旅行者'
+subtitle: 'Journey through time to master every tense!'
+subtitleZh: '穿越时空，掌握每一种时态！'
+month: 2
+fceMapping: 'Grammar foundation across all FCE papers'
+theme:
+  setting: 'A time machine that takes you to different eras'
+  settingZh: '一台带你穿越不同时代的时间机器'
+  mascot: 'Captain Chronos, the time-traveling explorer'
+  mascotZh: '时间队长 Chronos，穿越时空的探险家'
+
+lessons:
+  # ──────────────────────────────────────────────
+  # LESSON 1: Present & Past Tenses Review
+  # ──────────────────────────────────────────────
+  - id: Q02-L01
+    title: 'Present & Past Tenses Review'
+    titleZh: '现在时态与过去时态复习'
+
+    introduction: |
+      Welcome aboard the Chronos Express, time traveler! Captain Chronos is warming up
+      the time machine, and before we blast off to distant eras, we need to make sure
+      our "tense compass" is properly calibrated. Think of tenses as coordinates on a
+      time map — pick the wrong one, and you could end up in the wrong century!
+
+      Today we are visiting three time zones: the Present Zone (where things happen now
+      or happen regularly), the Past Zone (where things already happened), and the
+      In-Between Zone (where actions connect the past to the present). Each zone has
+      three settings: Simple, Continuous, and Perfect. That gives us six tenses to
+      review — like six keys on Captain Chronos's time ring.
+
+      Ready? Buckle up and let's spin the dials!
+    introductionZh: |
+      欢迎登上 Chronos 特快列车，时间旅行者！Chronos 队长正在预热时间机器，
+      在我们飞向遥远的时代之前，我们需要确保"时态罗盘"已经校准好了。
+      把时态想象成时间地图上的坐标——选错了，你可能会降落在错误的世纪！
+
+      今天我们要参观三个时间区域：现在区（事情正在发生或经常发生的地方）、
+      过去区（事情已经发生的地方）、以及过渡区（把过去和现在连接起来的地方）。
+      每个区域有三种模式：简单、进行和完成。这就给了我们六种时态要复习——
+      就像 Chronos 队长时间钥匙环上的六把钥匙。
+
+      准备好了吗？系好安全带，让我们转动刻度盘！
+
+    rules:
+      - name: 'Present Simple'
+        nameZh: '一般现在时'
+        structure: 'Subject + base verb (+ -s/-es for he/she/it)'
+        usage: 'Use for facts, habits, routines, and things that are generally true.'
+        usageZh: '用于表达事实、习惯、日常规律和普遍真理。'
+        examples:
+          - sentence: 'Captain Chronos travels through time every Monday.'
+            sentenceZh: 'Chronos 队长每周一穿越时空。'
+            highlight: 'travels'
+          - sentence: 'Dinosaurs do not live in the 21st century.'
+            sentenceZh: '恐龙不生活在21世纪。'
+            highlight: 'do not live'
+          - sentence: 'The ancient Egyptians believe that the sun god Ra sails across the sky each day.'
+            sentenceZh: '古埃及人相信太阳神拉每天驾船划过天空。'
+            highlight: 'believe / sails'
+          - sentence: 'The time machine runs on stardust fuel.'
+            sentenceZh: '时间机器靠星尘燃料运行。'
+            highlight: 'runs'
+
+      - name: 'Present Continuous'
+        nameZh: '现在进行时'
+        structure: 'Subject + am/is/are + verb-ing'
+        usage: 'Use for actions happening right now, temporary situations, or future arrangements.'
+        usageZh: '用于正在发生的动作、临时的情况或已安排好的将来计划。'
+        examples:
+          - sentence: 'Look! A pterodactyl is flying over the volcano!'
+            sentenceZh: '看！一只翼龙正在火山上方飞翔！'
+            highlight: 'is flying'
+          - sentence: 'We are exploring ancient Rome this week.'
+            sentenceZh: '这周我们正在探索古罗马。'
+            highlight: 'are exploring'
+          - sentence: 'Captain Chronos is repairing the time compass at this very moment.'
+            sentenceZh: 'Chronos 队长此刻正在修理时间罗盘。'
+            highlight: 'is repairing'
+
+      - name: 'Present Perfect'
+        nameZh: '现在完成时'
+        structure: 'Subject + have/has + past participle'
+        usage: 'Use for actions that started in the past and connect to now, or past actions with a present result. Often with "already", "yet", "just", "ever", "never", "since", "for".'
+        usageZh: '用于从过去开始一直延续到现在的动作，或者过去的动作对现在有影响。常与 already、yet、just、ever、never、since、for 连用。'
+        examples:
+          - sentence: 'I have already visited three ancient civilizations today.'
+            sentenceZh: '我今天已经参观了三个古代文明。'
+            highlight: 'have already visited'
+          - sentence: 'Captain Chronos has never traveled to the future before.'
+            sentenceZh: 'Chronos 队长以前从未穿越到未来过。'
+            highlight: 'has never traveled'
+          - sentence: 'The explorers have just discovered a hidden tomb in the pyramid.'
+            sentenceZh: '探险家们刚刚在金字塔里发现了一座隐藏的墓穴。'
+            highlight: 'have just discovered'
+
+      - name: 'Past Simple'
+        nameZh: '一般过去时'
+        structure: 'Subject + past form of verb (regular: -ed; irregular: special forms)'
+        usage: 'Use for completed actions at a specific time in the past. Often with "yesterday", "last week", "in 1066", "when I was young".'
+        usageZh: '用于在过去某个确定时间已经完成的动作。常与 yesterday、last week、in 1066、when I was young 等时间标志连用。'
+        examples:
+          - sentence: 'The astronaut landed on Mars in 2045.'
+            sentenceZh: '那位宇航员于2045年登陆了火星。'
+            highlight: 'landed'
+          - sentence: 'A mammoth chased us across the frozen lake yesterday.'
+            sentenceZh: '昨天一头猛犸象追着我们跑过了结冰的湖面。'
+            highlight: 'chased'
+          - sentence: 'The ancient Greeks built the Parthenon over 2,400 years ago.'
+            sentenceZh: '古希腊人在2400多年前建造了帕台农神庙。'
+            highlight: 'built'
+
+      - name: 'Past Continuous'
+        nameZh: '过去进行时'
+        structure: 'Subject + was/were + verb-ing'
+        usage: 'Use for actions in progress at a specific moment in the past, or background actions interrupted by another event.'
+        usageZh: '用于过去某个时刻正在进行的动作，或被另一个事件打断的背景动作。'
+        examples:
+          - sentence: 'The dinosaurs were drinking at the river when the meteor struck.'
+            sentenceZh: '当陨石撞击时，恐龙们正在河边喝水。'
+            highlight: 'were drinking'
+          - sentence: 'While the pharaoh was sleeping, thieves were sneaking into the treasury.'
+            sentenceZh: '当法老正在睡觉的时候，小偷们正在潜入国库。'
+            highlight: 'was sleeping / were sneaking'
+          - sentence: 'At 3 o''clock yesterday, we were flying over medieval castles.'
+            sentenceZh: '昨天三点钟的时候，我们正在中世纪城堡上空飞行。'
+            highlight: 'were flying'
+
+      - name: 'Present Perfect vs Past Simple — The Key Difference'
+        nameZh: '现在完成时 vs 一般过去时——关键区别'
+        structure: 'Present Perfect = past action with present relevance; Past Simple = finished past action'
+        usage: 'If you mention a specific finished time (yesterday, in 1999, last Tuesday), use Past Simple. If the time is unfinished or not mentioned, and the result matters now, use Present Perfect.'
+        usageZh: '如果提到具体的、已经结束的时间（昨天、1999年、上周二），用一般过去时。如果时间还没结束或者没有提到，而且结果与现在有关，用现在完成时。'
+        examples:
+          - sentence: 'I visited ancient Egypt last summer. (finished time → Past Simple)'
+            sentenceZh: '我去年夏天参观了古埃及。（已结束的时间 → 一般过去时）'
+            highlight: 'visited'
+          - sentence: 'I have visited ancient Egypt three times. (no specific time, total experience → Present Perfect)'
+            sentenceZh: '我去过古埃及三次了。（没有具体时间，总体经历 → 现在完成时）'
+            highlight: 'have visited'
+          - sentence: 'The spaceship broke down yesterday. vs The spaceship has broken down — we can''t leave!'
+            sentenceZh: '飞船昨天坏了。 vs 飞船坏了——我们走不了了！'
+            highlight: 'broke / has broken'
+
+    tips:
+      - 'Remember: Present Perfect is like a bridge between the past and NOW. Past Simple is a closed door to a finished moment.'
+      - 'Time-travel trick: if Captain Chronos says "I went to Rome" — the trip is over. If he says "I have been to Rome" — the experience still matters right now.'
+      - 'Stative verbs (know, believe, want, love) are almost never used in continuous forms. Don''t say "I am knowing" — say "I know".'
+      - 'Watch out for "since" (a point in time) vs "for" (a duration). "I have lived here since 2020" / "I have lived here for four years."'
+    tipsZh:
+      - '记住：现在完成时就像连接过去和现在的桥梁。一般过去时是关上的门，指向一个已经结束的时刻。'
+      - '时间旅行小窍门：如果 Chronos 队长说 "I went to Rome"——旅行结束了。如果他说 "I have been to Rome"——这段经历现在仍然很重要。'
+      - '状态动词（know, believe, want, love）几乎不用进行时。不要说 "I am knowing"——要说 "I know"。'
+      - '注意 "since"（时间点）和 "for"（时间段）的区别。"I have lived here since 2020" / "I have lived here for four years."'
+
+    practicePreview:
+      - id: Q02-L01-P01
+        question: 'Choose the correct form: "Captain Chronos _____ (explore) the Jurassic period right now."'
+        questionZh: '选择正确形式："Chronos 队长现在正在 _____ 侏罗纪时期。"'
+        answer: 'is exploring'
+        explanation: 'The action is happening "right now", so we need the Present Continuous (is/are + verb-ing).'
+        explanationZh: '动作"现在"正在发生，所以我们需要用现在进行时（is/are + 动词-ing）。'
+      - id: Q02-L01-P02
+        question: 'Choose the correct form: "I _____ (never / see) a real dinosaur before!"'
+        questionZh: '选择正确形式："我以前从来没有 _____ 过真正的恐龙！"'
+        answer: 'have never seen'
+        explanation: '"Never...before" signals a life experience up to now — use Present Perfect (have/has + past participle).'
+        explanationZh: '"never...before" 表示到目前为止的人生经历——用现在完成时（have/has + 过去分词）。'
+      - id: Q02-L01-P03
+        question: 'Past Simple or Past Continuous? "While we _____ (walk) through ancient Athens, we _____ (meet) Socrates."'
+        questionZh: '一般过去时还是过去进行时？"当我们 _____ 穿过古雅典的时候，我们 _____ 了苏格拉底。"'
+        answer: 'were walking / met'
+        explanation: 'The longer background action (walking) uses Past Continuous. The sudden event (meeting Socrates) uses Past Simple.'
+        explanationZh: '较长的背景动作（行走）用过去进行时。突然发生的事件（遇到苏格拉底）用一般过去时。'
+
+  # ──────────────────────────────────────────────
+  # LESSON 2: Past Perfect Deep Dive
+  # ──────────────────────────────────────────────
+  - id: Q02-L02
+    title: 'Past Perfect Deep Dive'
+    titleZh: '过去完成时深度探索'
+
+    introduction: |
+      Captain Chronos has a problem. He just arrived in medieval England, but he
+      realised that someone had already stolen the Crown Jewels BEFORE he got there!
+      To tell this story properly, he needs a special tense — one that lets him talk
+      about "the past before the past." Welcome to the Past Perfect zone!
+
+      Imagine you are telling a friend about your adventure yesterday. You say: "When
+      I arrived at the castle, the dragon had already flown away." See? Two past
+      events, but one happened EARLIER. The Past Perfect (had + past participle) is
+      your time-travel tool for jumping even further back within a past story.
+
+      This is one of the most important tenses for FCE, especially in stories and
+      narratives. Master it, and your writing will sound impressively polished!
+    introductionZh: |
+      Chronos 队长遇到了一个问题。他刚到达中世纪的英格兰，但他发现有人在他到达之前
+      就已经偷走了皇冠珠宝！为了正确讲述这个故事，他需要一种特殊的时态——一种能让
+      他谈论"过去之前的过去"的时态。欢迎来到过去完成时区域！
+
+      想象你正在给朋友讲述昨天的冒险。你说："当我到达城堡时，龙已经飞走了。"
+      看到了吗？两个过去的事件，但一个发生得更早。过去完成时（had + 过去分词）
+      就是你在过去的故事中跳到更早时间的时间旅行工具。
+
+      这是 FCE 考试中最重要的时态之一，尤其是在故事和叙述中。掌握了它，
+      你的写作会听起来非常精彩！
+
+    rules:
+      - name: 'Past Perfect — Form & Basic Use'
+        nameZh: '过去完成时——构成与基本用法'
+        structure: 'Subject + had + past participle'
+        usage: 'Use when you need to show that one past action happened BEFORE another past action. The "earlier" action takes Past Perfect; the "later" action takes Past Simple.'
+        usageZh: '当你需要表明一个过去的动作发生在另一个过去动作之前时使用。"更早的"动作用过去完成时；"更晚的"动作用一般过去时。'
+        examples:
+          - sentence: 'By the time we reached the pyramid, the treasure hunters had already opened the secret chamber.'
+            sentenceZh: '等我们到达金字塔的时候，寻宝者们已经打开了密室。'
+            highlight: 'had already opened'
+          - sentence: 'The volcano erupted because pressure had been building for thousands of years.'
+            sentenceZh: '火山爆发了，因为压力已经积聚了数千年。'
+            highlight: 'had been building'
+          - sentence: 'Captain Chronos realised he had left the time key in ancient Greece.'
+            sentenceZh: 'Chronos 队长意识到他把时间钥匙落在了古希腊。'
+            highlight: 'had left'
+          - sentence: 'The spaceship could not take off because the crew had forgotten to charge the engine.'
+            sentenceZh: '飞船无法起飞，因为船员们忘了给引擎充电。'
+            highlight: 'had forgotten'
+
+      - name: 'Past Perfect with Time Markers'
+        nameZh: '过去完成时与时间标志词'
+        structure: 'by the time, before, after, when, already, just, never...before, until'
+        usage: 'These time markers often signal that Past Perfect is needed. "By the time" and "before" are especially common triggers.'
+        usageZh: '这些时间标志词常常提示需要使用过去完成时。"By the time" 和 "before" 是尤其常见的触发词。'
+        examples:
+          - sentence: 'Before the Ice Age ended, many species had disappeared forever.'
+            sentenceZh: '在冰河时代结束之前，许多物种已经永远消失了。'
+            highlight: 'had disappeared'
+          - sentence: 'After the explorers had mapped the entire island, they sailed home.'
+            sentenceZh: '在探险家们绘制完整座岛屿的地图之后，他们启航回家了。'
+            highlight: 'had mapped'
+          - sentence: 'The knight had never seen a dragon until he traveled to the northern mountains.'
+            sentenceZh: '那位骑士在去北方群山之前从来没有见过龙。'
+            highlight: 'had never seen'
+
+      - name: 'Past Perfect vs Past Simple — When You DON''T Need Past Perfect'
+        nameZh: '过去完成时 vs 一般过去时——什么时候不需要过去完成时'
+        structure: 'If events are told in chronological order, Past Simple is fine for both.'
+        usage: 'You only NEED Past Perfect when you are "looking back" from a past moment to an even earlier moment. If you tell events in the order they happened, Past Simple works perfectly.'
+        usageZh: '只有当你从一个过去的时刻"回看"到更早的时刻时，才需要过去完成时。如果你按事件发生的顺序讲述，一般过去时就完全可以了。'
+        examples:
+          - sentence: 'The dinosaur roared, and then it charged at us. (chronological order → both Past Simple)'
+            sentenceZh: '恐龙吼叫了一声，然后向我们冲了过来。（按顺序 → 都用一般过去时）'
+            highlight: 'roared / charged'
+          - sentence: 'The dinosaur charged at us. It had roared just moments before. (looking back → Past Perfect)'
+            sentenceZh: '恐龙向我们冲了过来。它刚刚在片刻之前吼叫过。（回看 → 过去完成时）'
+            highlight: 'had roared'
+          - sentence: 'We arrived at the temple, sat down, and ate lunch. (three events in order → all Past Simple)'
+            sentenceZh: '我们到达了神庙，坐下来，吃了午饭。（三个按顺序发生的事件 → 都用一般过去时）'
+            highlight: 'arrived / sat / ate'
+
+      - name: 'Past Perfect Continuous'
+        nameZh: '过去完成进行时'
+        structure: 'Subject + had been + verb-ing'
+        usage: 'Use to emphasise the DURATION or ongoing nature of an action that was happening before another past event.'
+        usageZh: '用来强调在另一个过去事件之前一直在持续发生的动作的持续时间或进行状态。'
+        examples:
+          - sentence: 'The explorers were exhausted because they had been walking through the jungle for five hours.'
+            sentenceZh: '探险家们筋疲力尽，因为他们已经在丛林中走了五个小时。'
+            highlight: 'had been walking'
+          - sentence: 'When the time machine finally worked, the scientists had been trying to fix it for three years.'
+            sentenceZh: '当时间机器终于运转时，科学家们已经试图修理它三年了。'
+            highlight: 'had been trying'
+          - sentence: 'The ground was wet because it had been raining all night in prehistoric times.'
+            sentenceZh: '地面是湿的，因为史前时代下了整整一夜的雨。'
+            highlight: 'had been raining'
+
+    tips:
+      - 'Think of Past Perfect as a "flashback" in a movie. The main story is in Past Simple, and the flashback is in Past Perfect.'
+      - 'Common FCE trap: using Past Perfect when events are in order. "I woke up, had breakfast, and left" does NOT need Past Perfect — it is already chronological.'
+      - 'Signal words for Past Perfect: by the time, before, after, already, just, never...before, until then.'
+      - 'In reported speech, Past Simple often shifts to Past Perfect: He said, "I saw a dragon" → He said he had seen a dragon.'
+    tipsZh:
+      - '把过去完成时想象成电影中的"闪回"。主要故事用一般过去时，闪回用过去完成时。'
+      - '常见的 FCE 陷阱：在事件按顺序发生时使用过去完成时。"I woke up, had breakfast, and left" 不需要过去完成时——它已经是按时间顺序了。'
+      - '过去完成时的标志词：by the time, before, after, already, just, never...before, until then。'
+      - '在间接引语中，一般过去时常常变为过去完成时：He said, "I saw a dragon" → He said he had seen a dragon.'
+
+    practicePreview:
+      - id: Q02-L02-P01
+        question: 'Fill in the gap: "When the time travelers arrived in 1066, the Battle of Hastings _____ (already / begin)."'
+        questionZh: '填空："当时间旅行者到达1066年时，黑斯廷斯战役 _____ 。"'
+        answer: 'had already begun'
+        explanation: 'The battle started BEFORE the travelers arrived, so we use Past Perfect for the earlier event.'
+        explanationZh: '战役在旅行者到达之前就开始了，所以对更早的事件用过去完成时。'
+      - id: Q02-L02-P02
+        question: 'Choose the correct option: "The astronaut was tired because she _____ (work) for 12 hours without a break."'
+        questionZh: '选择正确的选项："宇航员很累，因为她 _____ 了12个小时没有休息。"'
+        answer: 'had been working'
+        explanation: 'We emphasise the duration (12 hours) of the action before the tiredness, so Past Perfect Continuous is best.'
+        explanationZh: '我们强调在疲劳之前动作的持续时间（12小时），所以过去完成进行时最合适。'
+      - id: Q02-L02-P03
+        question: 'Past Simple or Past Perfect? "The pharaoh _____ (build) the pyramid, and then he _____ (move) to a new palace."'
+        questionZh: '一般过去时还是过去完成时？"法老 _____ 了金字塔，然后他 _____ 到了新的宫殿。"'
+        answer: 'built / moved'
+        explanation: 'The events are told in chronological order (first built, then moved), so both can be Past Simple. No need for Past Perfect here!'
+        explanationZh: '事件按时间顺序讲述（先建造，后搬迁），所以两个都可以用一般过去时。这里不需要过去完成时！'
+
+  # ──────────────────────────────────────────────
+  # LESSON 3: Future Forms
+  # ──────────────────────────────────────────────
+  - id: Q02-L03
+    title: 'Future Forms'
+    titleZh: '将来时态'
+
+    introduction: |
+      Captain Chronos is spinning the dial forward this time — we are heading to the
+      FUTURE! But here is the tricky part: English has MANY ways to talk about the
+      future, and each one has a different feeling. Choosing the wrong future form is
+      like setting your time machine to the wrong coordinates — you might end up in
+      2050 instead of 2500!
+
+      In this lesson, we will explore four main ways to talk about the future: "will"
+      for predictions and instant decisions, "going to" for plans and evidence-based
+      predictions, the Present Continuous for fixed arrangements, and the Future
+      Perfect for things that will be completed by a certain time.
+
+      By the end of this lesson, you will be able to talk about any future event with
+      exactly the right tense. Captain Chronos is counting on you — the future of the
+      timeline depends on it!
+    introductionZh: |
+      Chronos 队长这次把表盘拨向了前方——我们正驶向未来！但棘手的是：英语有很多种
+      谈论未来的方式，每一种都有不同的感觉。选错了将来时态就像把时间机器设置到了
+      错误的坐标——你可能会到达2050年而不是2500年！
+
+      在这节课中，我们将探索四种主要的谈论未来的方式："will" 用于预测和即时决定，
+      "going to" 用于计划和基于证据的预测，现在进行时用于已经确定的安排，
+      以及将来完成时用于在某个时间点之前将完成的事情。
+
+      学完这节课，你将能够用恰好正确的时态谈论任何未来事件。Chronos 队长指望你
+      ——时间线的未来取决于你！
+
+    rules:
+      - name: '"Will" — Predictions, Promises, Instant Decisions'
+        nameZh: '"Will"——预测、承诺、即时决定'
+        structure: 'Subject + will + base verb'
+        usage: 'Use "will" for (1) predictions based on opinion or belief, (2) promises, (3) instant decisions made at the moment of speaking, (4) offers and requests.'
+        usageZh: '用 "will" 表示（1）基于观点或信念的预测，（2）承诺，（3）说话时做出的即时决定，（4）主动提议和请求。'
+        examples:
+          - sentence: 'I think humans will live on Mars by 2200.'
+            sentenceZh: '我认为到2200年人类将生活在火星上。'
+            highlight: 'will live'
+          - sentence: 'Don''t worry — I will protect you from the T-Rex!'
+            sentenceZh: '别担心——我会保护你不被霸王龙伤害的！'
+            highlight: 'will protect'
+          - sentence: 'Oh no, the portal is closing! I will jump through it now!'
+            sentenceZh: '哦不，传送门正在关闭！我现在就跳过去！'
+            highlight: 'will jump'
+          - sentence: 'The oracle says the volcano will erupt at midnight.'
+            sentenceZh: '神谕说火山将在午夜爆发。'
+            highlight: 'will erupt'
+
+      - name: '"Going to" — Plans and Evidence-Based Predictions'
+        nameZh: '"Going to"——计划和基于证据的预测'
+        structure: 'Subject + am/is/are + going to + base verb'
+        usage: 'Use "going to" for (1) plans or intentions decided BEFORE the moment of speaking, (2) predictions based on present evidence you can see or feel.'
+        usageZh: '用 "going to" 表示（1）在说话之前就已经决定的计划或意图，（2）基于你能看到或感受到的现有证据做出的预测。'
+        examples:
+          - sentence: 'We are going to visit the dinosaur era next Tuesday — it is all planned!'
+            sentenceZh: '我们下周二要去恐龙时代——一切都计划好了！'
+            highlight: 'are going to visit'
+          - sentence: 'Look at those dark clouds over the ancient village. It is going to rain.'
+            sentenceZh: '看古代村庄上空那些乌云。要下雨了。'
+            highlight: 'is going to rain'
+          - sentence: 'The rocket''s engines are overheating. It is going to explode!'
+            sentenceZh: '火箭的引擎过热了。它要爆炸了！'
+            highlight: 'is going to explode'
+
+      - name: 'Present Continuous for Future Arrangements'
+        nameZh: '现在进行时表示将来的安排'
+        structure: 'Subject + am/is/are + verb-ing (+ future time expression)'
+        usage: 'Use the Present Continuous for definite, fixed arrangements — often involving other people, a place, or a time that has been confirmed.'
+        usageZh: '用现在进行时表示确定的、固定的安排——通常涉及已经确认的其他人、地点或时间。'
+        examples:
+          - sentence: 'Captain Chronos is meeting the Roman Emperor at noon tomorrow.'
+            sentenceZh: 'Chronos 队长明天中午要会见罗马皇帝。'
+            highlight: 'is meeting'
+          - sentence: 'We are flying to the Ice Age on Saturday — the tickets are booked!'
+            sentenceZh: '我们周六飞往冰河时代——票已经订好了！'
+            highlight: 'are flying'
+          - sentence: 'The space crew is launching the mission next Monday at 9 AM.'
+            sentenceZh: '太空机组下周一上午9点发射任务。'
+            highlight: 'is launching'
+
+      - name: 'Future Perfect'
+        nameZh: '将来完成时'
+        structure: 'Subject + will have + past participle'
+        usage: 'Use to talk about an action that will be COMPLETED by a specific point in the future. Often used with "by", "by the time", "before".'
+        usageZh: '用来谈论在未来某个特定时间点之前将会完成的动作。常与 "by"、"by the time"、"before" 连用。'
+        examples:
+          - sentence: 'By 2100, scientists will have invented teleportation.'
+            sentenceZh: '到2100年，科学家们将会发明传送技术。'
+            highlight: 'will have invented'
+          - sentence: 'By the time you read this message, Captain Chronos will have already left for ancient China.'
+            sentenceZh: '等你读到这条消息的时候，Chronos 队长将已经出发去古代中国了。'
+            highlight: 'will have already left'
+          - sentence: 'The astronauts will have completed their Mars mission before December.'
+            sentenceZh: '宇航员们将在十二月之前完成他们的火星任务。'
+            highlight: 'will have completed'
+          - sentence: 'By next year, I will have visited every continent — including the one that sank!'
+            sentenceZh: '到明年，我将已经访问过每个大洲——包括那个沉没的！'
+            highlight: 'will have visited'
+
+    tips:
+      - '"Will" vs "going to" is one of the most tested points in FCE! Quick rule: instant decision → will; prior plan or visible evidence → going to.'
+      - 'Don''t say "I will go to the dinosaur park tomorrow — I booked it last week." That is a prior plan, so say "I am going to go" or "I am going."'
+      - 'Future Perfect is your "by then" tense. Whenever you see "by + future time", think Future Perfect.'
+      - 'Remember: "going to" for what you can SEE coming; "will" for what you THINK or BELIEVE will happen.'
+    tipsZh:
+      - '"Will" 和 "going to" 是 FCE 中最常考的考点之一！快速规则：即时决定 → will；事先计划或可见证据 → going to。'
+      - '不要说 "I will go to the dinosaur park tomorrow — I booked it last week." 那是事先的计划，所以要说 "I am going to go" 或 "I am going."'
+      - '将来完成时是你的 "到那时" 时态。每当你看到 "by + 将来时间"，就想到将来完成时。'
+      - '记住："going to" 用于你能看到即将发生的事；"will" 用于你认为或相信会发生的事。'
+
+    practicePreview:
+      - id: Q02-L03-P01
+        question: '"Will" or "going to"? "Look at the spaceship dashboard — we _____ (run) out of fuel!"'
+        questionZh: '"Will" 还是 "going to"？"看飞船的仪表盘——我们 _____ 燃料不够了！"'
+        answer: 'are going to run'
+        explanation: 'There is visible evidence (the dashboard), so we use "going to" for an evidence-based prediction.'
+        explanationZh: '有可见的证据（仪表盘），所以我们用 "going to" 来做基于证据的预测。'
+      - id: Q02-L03-P02
+        question: 'Complete: "By the year 3000, humans _____ (colonise) at least ten planets."'
+        questionZh: '填空："到3000年，人类 _____ 至少十个星球。"'
+        answer: 'will have colonised'
+        explanation: '"By the year 3000" signals a future deadline, so we use the Future Perfect (will have + past participle).'
+        explanationZh: '"到3000年" 表示一个未来的截止时间，所以我们用将来完成时（will have + 过去分词）。'
+      - id: Q02-L03-P03
+        question: 'Which future form? "Oh! I forgot to pack the time compass. I _____ (go) get it right now."'
+        questionZh: '用哪种将来时态？"哦！我忘了收拾时间罗盘。我现在就 _____ 去拿。"'
+        answer: 'will go'
+        explanation: 'This is an instant decision made at the moment of speaking — use "will".'
+        explanationZh: '这是在说话的那一刻做出的即时决定——用 "will"。'
+
+  # ──────────────────────────────────────────────
+  # LESSON 4: Conditionals Type 0-3
+  # ──────────────────────────────────────────────
+  - id: Q02-L04
+    title: 'Conditionals Type 0-3'
+    titleZh: '条件句（零到三型）'
+
+    introduction: |
+      Time traveler, imagine you are standing at a crossroads in time. Every choice
+      leads to a different future — or a different past! Conditional sentences are
+      exactly like that: "IF this happens, THEN that happens." They are the grammar
+      of possibilities, dreams, and what-ifs.
+
+      Captain Chronos uses conditionals every day. "If I press this button, the time
+      machine activates" (a fact). "If you travel back to the Ice Age, you will need
+      warm clothes" (a real possibility). "If I had a time machine... oh wait, I do!"
+      Today you will learn four types of conditionals, from rock-solid facts to
+      impossible dreams.
+
+      Each type is like a different setting on the time machine. Type 0 is for
+      universal truths. Type 1 is for likely futures. Type 2 is for imaginary
+      present situations. And Type 3? That is for changing the past — if only we
+      could!
+    introductionZh: |
+      时间旅行者，想象你站在时间的十字路口。每个选择都通向不同的未来——或不同的
+      过去！条件句就是这样的："如果这件事发生了，那么那件事就会发生。"它们是
+      可能性、梦想和假设的语法。
+
+      Chronos 队长每天都在使用条件句。"如果我按下这个按钮，时间机器就会启动"
+      （事实）。"如果你穿越回冰河时代，你需要厚衣服"（真实的可能性）。
+      "如果我有一台时间机器……哦等等，我有！"今天你将学习四种条件句类型，
+      从铁一般的事实到不可能的梦想。
+
+      每种类型就像时间机器上的不同设置。零型用于普遍真理。一型用于可能的未来。
+      二型用于想象的现在情况。三型呢？那是用来改变过去的——如果我们能的话！
+
+    rules:
+      - name: 'Type 0 — Universal Truths & Scientific Facts'
+        nameZh: '零型条件句——普遍真理和科学事实'
+        structure: 'If + present simple, present simple'
+        usage: 'Use for things that are ALWAYS true — scientific facts, natural laws, or things that always happen under certain conditions.'
+        usageZh: '用于始终为真的事情——科学事实、自然规律，或在特定条件下总是会发生的事情。'
+        examples:
+          - sentence: 'If you heat ice, it melts — even in the prehistoric era!'
+            sentenceZh: '如果你加热冰，冰就会融化——即使在史前时代！'
+            highlight: 'heat / melts'
+          - sentence: 'If a volcano erupts, lava flows down the mountain.'
+            sentenceZh: '如果火山爆发，岩浆就会沿着山坡流下。'
+            highlight: 'erupts / flows'
+          - sentence: 'If you mix hydrogen and oxygen, you get water.'
+            sentenceZh: '如果你混合氢和氧，就会得到水。'
+            highlight: 'mix / get'
+
+      - name: 'Type 1 — Real / Likely Future Possibilities'
+        nameZh: '一型条件句——真实的/可能的将来情况'
+        structure: 'If + present simple, will + base verb'
+        usage: 'Use for situations that are possible or likely to happen in the future. The condition is realistic.'
+        usageZh: '用于将来可能发生或很可能发生的情况。条件是现实的。'
+        examples:
+          - sentence: 'If you travel back to the Ice Age, you will need warm clothes.'
+            sentenceZh: '如果你穿越回冰河时代，你将需要厚衣服。'
+            highlight: 'travel / will need'
+          - sentence: 'If Captain Chronos finds the missing time key, we will be able to go home.'
+            sentenceZh: '如果 Chronos 队长找到丢失的时间钥匙，我们就能回家了。'
+            highlight: 'finds / will be able to'
+          - sentence: 'If the dinosaurs see us, they will probably chase us!'
+            sentenceZh: '如果恐龙看到我们，它们很可能会追我们！'
+            highlight: 'see / will chase'
+          - sentence: 'If you don''t repair the time machine soon, we will be stuck in ancient Rome forever.'
+            sentenceZh: '如果你不尽快修好时间机器，我们将永远困在古罗马。'
+            highlight: 'don''t repair / will be stuck'
+
+      - name: 'Type 2 — Unreal / Imaginary Present'
+        nameZh: '二型条件句——非真实的/想象的现在情况'
+        structure: 'If + past simple, would + base verb'
+        usage: 'Use for imaginary, hypothetical, or unlikely situations in the present or future. The condition is not real right now.'
+        usageZh: '用于现在或将来想象的、假设的或不太可能的情况。条件目前不是真实的。'
+        examples:
+          - sentence: 'If I had a time machine, I would visit ancient Egypt.'
+            sentenceZh: '如果我有一台时间机器，我会去参观古埃及。'
+            highlight: 'had / would visit'
+          - sentence: 'If dinosaurs still existed, scientists would study them in zoos.'
+            sentenceZh: '如果恐龙还存在的话，科学家们会在动物园里研究它们。'
+            highlight: 'existed / would study'
+          - sentence: 'If I were an ancient Greek warrior, I would fight alongside Achilles.'
+            sentenceZh: '如果我是一个古希腊战士，我会和阿喀琉斯并肩作战。'
+            highlight: 'were / would fight'
+          - sentence: 'If the time portal opened right now, I would jump through it immediately.'
+            sentenceZh: '如果时间传送门现在就打开，我会立刻跳进去。'
+            highlight: 'opened / would jump'
+
+      - name: 'Type 3 — Unreal Past (Changing History!)'
+        nameZh: '三型条件句——非真实的过去（改变历史！）'
+        structure: 'If + past perfect, would have + past participle'
+        usage: 'Use for imagining a different PAST — things that did not happen, but you are imagining what would have been different. This is about regret, alternate history, or analysing past mistakes.'
+        usageZh: '用于想象不同的过去——事情没有发生，但你在想象如果发生了会有什么不同。这关于遗憾、平行历史或分析过去的错误。'
+        examples:
+          - sentence: 'If the astronaut had checked the fuel, the rocket would not have crashed.'
+            sentenceZh: '如果宇航员检查了燃料，火箭就不会坠毁了。'
+            highlight: 'had checked / would not have crashed'
+          - sentence: 'If the ancient Romans had invented electricity, history would have been completely different.'
+            sentenceZh: '如果古罗马人发明了电，历史将会完全不同。'
+            highlight: 'had invented / would have been'
+          - sentence: 'If Captain Chronos had not pressed the red button, we would not have ended up in the Jurassic period.'
+            sentenceZh: '如果 Chronos 队长没有按下红色按钮，我们就不会到达侏罗纪时代。'
+            highlight: 'had not pressed / would not have ended up'
+          - sentence: 'If the dinosaurs had survived the meteor, mammals might not have evolved.'
+            sentenceZh: '如果恐龙在陨石撞击中幸存了下来，哺乳动物可能就不会进化了。'
+            highlight: 'had survived / might not have evolved'
+
+    tips:
+      - 'Type 2 trick: always use "were" (not "was") after "if" in formal English. "If I were a dinosaur..." (not "If I was").'
+      - 'Type 1 vs Type 2: "If it rains tomorrow, I will stay home" (realistic). "If it rained diamonds, I would collect them" (imaginary).'
+      - 'Type 3 is the "regret tense" — it is about things you CANNOT change because they are in the past.'
+      - 'In the result clause, you can use "could" or "might" instead of "would" for less certainty: "If I had a spaceship, I could/might travel to Mars."'
+    tipsZh:
+      - '二型小窍门：在正式英语中，"if" 后面总是用 "were"（不用 "was"）。"If I were a dinosaur..."（不是 "If I was"）。'
+      - '一型 vs 二型："If it rains tomorrow, I will stay home"（现实的）。"If it rained diamonds, I would collect them"（想象的）。'
+      - '三型是"遗憾时态"——它讲的是你无法改变的事情，因为它们已经在过去了。'
+      - '在结果句中，你可以用 "could" 或 "might" 代替 "would" 来表示较低的确定性："If I had a spaceship, I could/might travel to Mars."'
+
+    practicePreview:
+      - id: Q02-L04-P01
+        question: 'Which conditional type? "If you _____ (press) this lever, the time machine _____ (activate)." (It''s a fact about the machine.)'
+        questionZh: '哪种条件句？"如果你 _____ 这个杠杆，时间机器就 _____ 。"（这是关于机器的事实。）'
+        answer: 'press / activates (Type 0)'
+        explanation: 'This is a universal truth about how the machine works, so we use Type 0: If + present simple, present simple.'
+        explanationZh: '这是关于机器如何运作的普遍事实，所以我们用零型：If + 一般现在时, 一般现在时。'
+      - id: Q02-L04-P02
+        question: 'Complete: "If I _____ (be) a pharaoh, I _____ (build) the biggest pyramid in the world."'
+        questionZh: '填空："如果我 _____ 法老，我 _____ 世界上最大的金字塔。"'
+        answer: 'were / would build (Type 2)'
+        explanation: 'This is an imaginary present situation (you are not a pharaoh), so we use Type 2: If + past simple, would + base verb.'
+        explanationZh: '这是一个想象的现在情况（你不是法老），所以我们用二型：If + 一般过去时, would + 动词原形。'
+      - id: Q02-L04-P03
+        question: 'Complete: "If the explorer _____ (bring) a map, he _____ (not / get) lost in the labyrinth."'
+        questionZh: '填空："如果探险家 _____ 地图，他就 _____ 在迷宫里迷路了。"'
+        answer: 'had brought / would not have got (Type 3)'
+        explanation: 'The explorer DID get lost (past event we cannot change), so we use Type 3 to imagine a different past.'
+        explanationZh: '探险家确实迷路了（无法改变的过去事件），所以我们用三型来想象一个不同的过去。'
+
+  # ──────────────────────────────────────────────
+  # LESSON 5: Mixed Conditionals & I wish / If only
+  # ──────────────────────────────────────────────
+  - id: Q02-L05
+    title: 'Mixed Conditionals & I wish / If only'
+    titleZh: '混合条件句与 I wish / If only'
+
+    introduction: |
+      You have mastered the four types of conditionals — congratulations! But Captain
+      Chronos has one more challenge. What happens when the "if" part is about one
+      time (say, the past) but the "result" part is about a DIFFERENT time (say, now)?
+      Welcome to the world of Mixed Conditionals — the most advanced time-travel
+      grammar!
+
+      And there is more. Sometimes you do not say "if" at all. Instead, you say "I
+      wish..." or "If only..." to express regret about the past or dissatisfaction
+      with the present. These are the phrases Captain Chronos mutters when a mission
+      goes wrong: "I wish I had remembered the time key!" or "If only we could fly
+      faster!"
+
+      This lesson is like the final upgrade to your tense toolkit. After this, no
+      tense puzzle will be too tricky for you!
+    introductionZh: |
+      你已经掌握了四种条件句——恭喜！但 Chronos 队长还有一个挑战。当 "if" 的部分
+      关于一个时间（比如过去），而"结果"部分关于另一个时间（比如现在），会怎么样？
+      欢迎来到混合条件句的世界——最高级的时间旅行语法！
+
+      还有更多。有时候你根本不说 "if"。你说 "I wish..." 或 "If only..." 来表达
+      对过去的遗憾或对现在的不满。这些就是 Chronos 队长在任务出错时嘀咕的话：
+      "我真希望我记得带时间钥匙！" 或 "要是我们能飞得更快就好了！"
+
+      这节课就像是你时态工具箱的最终升级。学完之后，没有任何时态难题能难倒你！
+
+    rules:
+      - name: 'Mixed Conditional — Past Cause, Present Result'
+        nameZh: '混合条件句——过去的原因，现在的结果'
+        structure: 'If + past perfect, would + base verb'
+        usage: 'Use when a past event (that did not happen) would affect the PRESENT situation. The "if" clause is Type 3 (past), but the result clause is Type 2 (present).'
+        usageZh: '当一个过去（没有发生的）事件会影响现在的情况时使用。"if" 从句是三型（过去），但结果从句是二型（现在）。'
+        examples:
+          - sentence: 'If the ancient Egyptians had not built the pyramids, we would not have such amazing ruins to visit today.'
+            sentenceZh: '如果古埃及人没有建造金字塔，我们今天就不会有这么令人惊叹的遗迹可以参观。'
+            highlight: 'had not built / would not have'
+          - sentence: 'If Captain Chronos had not invented the time machine, we would still be stuck in one century.'
+            sentenceZh: '如果 Chronos 队长没有发明时间机器，我们现在还会困在一个世纪里。'
+            highlight: 'had not invented / would still be'
+          - sentence: 'If the dinosaurs had not gone extinct, mammals would not be the dominant species now.'
+            sentenceZh: '如果恐龙没有灭绝，哺乳动物现在就不会是优势物种。'
+            highlight: 'had not gone extinct / would not be'
+
+      - name: 'Mixed Conditional — Present Cause, Past Result'
+        nameZh: '混合条件句——现在的原因，过去的结果'
+        structure: 'If + past simple, would have + past participle'
+        usage: 'Use when a permanent present trait or situation would have changed a past event. The "if" clause is Type 2 (present/general), but the result is Type 3 (past).'
+        usageZh: '当一个永久的现在特征或情况会改变一个过去事件时使用。"if" 从句是二型（现在/一般），但结果是三型（过去）。'
+        examples:
+          - sentence: 'If I were braver, I would have touched the dinosaur egg yesterday.'
+            sentenceZh: '如果我更勇敢的话，我昨天就会摸那个恐龙蛋了。'
+            highlight: 'were / would have touched'
+          - sentence: 'If Captain Chronos spoke ancient Greek, he would have understood the oracle''s warning.'
+            sentenceZh: '如果 Chronos 队长会说古希腊语，他就能听懂神谕的警告了。'
+            highlight: 'spoke / would have understood'
+          - sentence: 'If the time machine were faster, we would have escaped the eruption in time.'
+            sentenceZh: '如果时间机器更快的话，我们就能及时逃离火山喷发了。'
+            highlight: 'were / would have escaped'
+
+      - name: 'I wish + Past Simple (Present Wishes)'
+        nameZh: 'I wish + 一般过去时（对现在的愿望）'
+        structure: 'I wish / If only + past simple'
+        usage: 'Use to express dissatisfaction with a present situation — something you want to be different RIGHT NOW but it is not.'
+        usageZh: '用来表达对现在状况的不满——你希望现在不一样，但实际上并非如此。'
+        examples:
+          - sentence: 'I wish I had a pet dinosaur.'
+            sentenceZh: '我真希望我有一只宠物恐龙。'
+            highlight: 'had'
+          - sentence: 'If only the time machine were not broken!'
+            sentenceZh: '要是时间机器没有坏就好了！'
+            highlight: 'were not broken'
+          - sentence: 'I wish I could fly like a pterodactyl.'
+            sentenceZh: '我真希望我能像翼龙一样飞翔。'
+            highlight: 'could fly'
+          - sentence: 'If only we knew the way out of this ancient maze!'
+            sentenceZh: '要是我们知道怎么走出这个古老的迷宫就好了！'
+            highlight: 'knew'
+
+      - name: 'I wish + Past Perfect (Past Regrets)'
+        nameZh: 'I wish + 过去完成时（对过去的遗憾）'
+        structure: 'I wish / If only + past perfect (had + past participle)'
+        usage: 'Use to express regret about something in the PAST that you cannot change.'
+        usageZh: '用来表达对过去无法改变的事情的遗憾。'
+        examples:
+          - sentence: 'I wish I had listened to Captain Chronos''s warning about the volcano.'
+            sentenceZh: '我真希望我听了 Chronos 队长关于火山的警告。'
+            highlight: 'had listened'
+          - sentence: 'If only the explorer had brought more water on the desert expedition!'
+            sentenceZh: '要是探险家在沙漠探险时多带些水就好了！'
+            highlight: 'had brought'
+          - sentence: 'I wish we had not opened that ancient tomb — it was cursed!'
+            sentenceZh: '我真希望我们没有打开那座古墓——它被诅咒了！'
+            highlight: 'had not opened'
+
+      - name: 'I wish + would (Complaints & Annoying Habits)'
+        nameZh: 'I wish + would（抱怨和令人烦恼的习惯）'
+        structure: 'I wish + subject + would + base verb'
+        usage: 'Use to complain about something someone else does (or does not do) that annoys you, or to express a wish for change.'
+        usageZh: '用来抱怨别人做（或不做）的让你烦恼的事情，或者表达希望改变的愿望。'
+        examples:
+          - sentence: 'I wish the time machine would stop making that terrible noise!'
+            sentenceZh: '我真希望时间机器能别再发出那种可怕的噪音了！'
+            highlight: 'would stop'
+          - sentence: 'I wish Captain Chronos would let me press the buttons sometimes!'
+            sentenceZh: '我真希望 Chronos 队长有时候能让我按按钮！'
+            highlight: 'would let'
+          - sentence: 'If only the volcano would stop erupting so we could explore the village!'
+            sentenceZh: '要是火山能停止喷发，这样我们就能探索那个村庄了！'
+            highlight: 'would stop'
+
+    tips:
+      - 'Mixed conditionals are rare but impressive. In FCE, they appear most often in the Reading and Use of English papers.'
+      - '"I wish" follows the same tense rules as Type 2 and Type 3 conditionals. Present wish = past tense. Past regret = past perfect.'
+      - 'Never say "I wish I would" about yourself — use "I wish I could" instead. "I wish + would" is for OTHER people or things.'
+      - 'Quick memory trick: "I wish" = "I want it to be different but it is not." The tense tells you WHEN: past simple = now; past perfect = then.'
+    tipsZh:
+      - '混合条件句不常见但很令人印象深刻。在 FCE 中，它们最常出现在阅读和语言运用部分。'
+      - '"I wish" 遵循和二型、三型条件句相同的时态规则。对现在的愿望 = 过去时态。对过去的遗憾 = 过去完成时。'
+      - '永远不要说 "I wish I would" 来指自己——用 "I wish I could" 代替。"I wish + would" 是用于其他人或事物的。'
+      - '快速记忆技巧："I wish" = "我想要它不同，但它不是。" 时态告诉你什么时候：一般过去时 = 现在；过去完成时 = 过去。'
+
+    practicePreview:
+      - id: Q02-L05-P01
+        question: 'Choose the correct form: "If the Romans _____ (invent) the internet, our world _____ (be) very different today."'
+        questionZh: '选择正确形式："如果罗马人 _____ 互联网，我们今天的世界 _____ 非常不同。"'
+        answer: 'had invented / would be'
+        explanation: 'Past cause (Romans did not invent), present result (our world today). This is a mixed conditional: If + past perfect, would + base verb.'
+        explanationZh: '过去的原因（罗马人没有发明），现在的结果（我们今天的世界）。这是混合条件句：If + 过去完成时, would + 动词原形。'
+      - id: Q02-L05-P02
+        question: 'Complete: "I wish I _____ (can) speak to the dinosaurs — they look so friendly!"'
+        questionZh: '填空："我真希望我 _____ 和恐龙说话——它们看起来好友好！"'
+        answer: 'could'
+        explanation: 'This is a present wish (you cannot speak to them right now), so we use "I wish" + past simple. "Can" becomes "could".'
+        explanationZh: '这是对现在的愿望（你现在不能和它们说话），所以我们用 "I wish" + 一般过去时。"Can" 变成 "could"。'
+      - id: Q02-L05-P03
+        question: 'Complete: "If only we _____ (not / forget) to charge the time machine before the trip!"'
+        questionZh: '填空："要是我们在旅行前 _____ 忘记给时间机器充电就好了！"'
+        answer: 'had not forgotten'
+        explanation: 'This is a past regret (the trip already happened and you did forget), so we use "If only" + past perfect.'
+        explanationZh: '这是对过去的遗憾（旅行已经发生了，而你确实忘了），所以我们用 "If only" + 过去完成时。'
+
+  # ──────────────────────────────────────────────
+  # LESSON 6: Tense Review — The Grand Time Tour
+  # ──────────────────────────────────────────────
+  - id: Q02-L06
+    title: 'Tense Review: The Grand Time Tour'
+    titleZh: '时态总复习：时空大巡游'
+
+    introduction: |
+      Congratulations, time traveler — you have made it to the final lesson! Captain
+      Chronos is planning the Grand Time Tour: a whirlwind trip through EVERY era, where
+      you will need EVERY tense you have learned. The past, the present, the future,
+      conditionals, wishes — all of them will be tested as you navigate through time.
+
+      Think of this lesson as your graduation exam from the Chronos Academy. The key
+      skill is not just knowing each tense — it is knowing which tense to choose when
+      several seem possible. Should you say "I was walking" or "I walked"? "I have
+      been" or "I went"? "If I had" or "If I have"? The answer always depends on the
+      context.
+
+      Captain Chronos has prepared a special challenge: a journey through six different
+      eras, each testing a different tense skill. Let us see if you can navigate every
+      time zone without a single error. The Grand Time Tour begins NOW!
+    introductionZh: |
+      恭喜你，时间旅行者——你已经来到了最后一课！Chronos 队长正在计划时空大巡游：
+      一场旋风般的穿越每个时代的旅行，你将需要用到你学过的每一种时态。过去、现在、
+      未来、条件句、愿望——所有这些都将在你穿越时空时被考验。
+
+      把这节课看作你从 Chronos 学院毕业的考试。关键技能不仅仅是知道每种时态——
+      而是在几种时态似乎都可以的时候知道选择哪一种。你应该说 "I was walking" 还是
+      "I walked"？"I have been" 还是 "I went"？"If I had" 还是 "If I have"？
+      答案总是取决于上下文。
+
+      Chronos 队长准备了一个特别的挑战：穿越六个不同的时代，每个时代考验不同的
+      时态技能。让我们看看你是否能在每个时间区域都不犯一个错误。时空大巡游现在开始！
+
+    rules:
+      - name: 'Choosing Between Past Simple and Present Perfect'
+        nameZh: '在一般过去时和现在完成时之间选择'
+        structure: 'Specific finished time → Past Simple; Unfinished time or present relevance → Present Perfect'
+        usage: 'Ask yourself: "Is the time period finished?" and "Does it matter now?" If the time is done and dusted, use Past Simple. If the result still matters or the time is not over, use Present Perfect.'
+        usageZh: '问自己："时间段结束了吗？" 和 "现在还重要吗？" 如果时间已经完全结束，用一般过去时。如果结果仍然重要或时间还没过，用现在完成时。'
+        examples:
+          - sentence: 'I visited the Colosseum last summer. (last summer = finished time → Past Simple)'
+            sentenceZh: '我去年夏天参观了斗兽场。（去年夏天 = 已结束的时间 → 一般过去时）'
+            highlight: 'visited'
+          - sentence: 'I have visited six ancient civilizations this year. (this year = not finished yet → Present Perfect)'
+            sentenceZh: '我今年已经参观了六个古代文明。（今年 = 还没结束 → 现在完成时）'
+            highlight: 'have visited'
+          - sentence: 'The explorers found the treasure. (when? → we need Past Simple with a time reference)'
+            sentenceZh: '探险家们发现了宝藏。（什么时候？→ 我们需要一般过去时加上时间参照）'
+            highlight: 'found'
+          - sentence: 'The explorers have found the treasure! (exciting news, present relevance → Present Perfect)'
+            sentenceZh: '探险家们已经发现了宝藏！（令人兴奋的消息，与现在相关 → 现在完成时）'
+            highlight: 'have found'
+
+      - name: 'Choosing Between Will and Going To'
+        nameZh: '在 Will 和 Going To 之间选择'
+        structure: 'Instant decision or opinion → will; Prior plan or visible evidence → going to'
+        usage: 'Both talk about the future, but the speaker''s attitude is different. "Will" is spontaneous or predictive. "Going to" is planned or evidence-based.'
+        usageZh: '两者都谈论未来，但说话者的态度不同。"Will" 是自发的或预测性的。"Going to" 是有计划的或基于证据的。'
+        examples:
+          - sentence: '"What are your plans for the time trip?" "We are going to explore the Aztec Empire."'
+            sentenceZh: '"你们时间旅行有什么计划？" "我们打算探索阿兹特克帝国。"'
+            highlight: 'are going to explore'
+          - sentence: '"Oh no, I forgot my helmet!" "Don''t worry, I will lend you mine."'
+            sentenceZh: '"哦不，我忘了我的头盔！" "别担心，我把我的借给你。"'
+            highlight: 'will lend'
+          - sentence: 'The sky is turning red — it is going to be a spectacular sunset over ancient Stonehenge.'
+            sentenceZh: '天空正在变红——巨石阵的古代日落将会很壮观。'
+            highlight: 'is going to be'
+
+      - name: 'Choosing the Right Conditional Type'
+        nameZh: '选择正确的条件句类型'
+        structure: 'Real future → Type 1; Imaginary now → Type 2; Different past → Type 3; Mixed time frames → Mixed'
+        usage: 'Ask yourself: "Is this situation real/possible, or imaginary/impossible?" and "What time am I talking about — now, the future, or a past that cannot change?"'
+        usageZh: '问自己："这种情况是真实/可能的，还是想象/不可能的？" 和 "我在谈论什么时间——现在、未来，还是无法改变的过去？"'
+        examples:
+          - sentence: 'If the weather is good tomorrow, we will visit the Viking village. (real possibility → Type 1)'
+            sentenceZh: '如果明天天气好，我们将参观维京村庄。（真实的可能性 → 一型）'
+            highlight: 'is / will visit'
+          - sentence: 'If I lived in ancient Rome, I would learn to be a gladiator. (imaginary → Type 2)'
+            sentenceZh: '如果我住在古罗马，我会学当角斗士。（想象 → 二型）'
+            highlight: 'lived / would learn'
+          - sentence: 'If we had taken the other portal, we would have arrived in medieval Japan. (past, cannot change → Type 3)'
+            sentenceZh: '如果我们走了另一个传送门，我们就会到达中世纪的日本了。（过去，无法改变 → 三型）'
+            highlight: 'had taken / would have arrived'
+
+      - name: 'Tense Consistency in Narratives'
+        nameZh: '叙述中的时态一致性'
+        structure: 'Choose a main narrative tense and stick with it; use other tenses only for specific reasons'
+        usage: 'In FCE story writing, the main narrative is usually in Past Simple. Use Past Continuous for background descriptions, Past Perfect for flashbacks, and dialogue can use any tense naturally.'
+        usageZh: '在 FCE 故事写作中，主要叙述通常用一般过去时。用过去进行时描述背景，过去完成时用于闪回，对话则可以自然地使用任何时态。'
+        examples:
+          - sentence: 'The wind was howling (background) when Captain Chronos opened (main event) the time portal. He had never been (flashback) to this era before.'
+            sentenceZh: '当 Chronos 队长打开（主要事件）时间传送门时，风正在呼啸（背景）。他以前从未到过（闪回）这个时代。'
+            highlight: 'was howling / opened / had never been'
+          - sentence: '"I will find the lost artifact," she promised (past narration + future in dialogue).'
+            sentenceZh: '"我会找到失落的文物，"她承诺道（过去叙述 + 对话中的将来时）。'
+            highlight: 'will find / promised'
+          - sentence: 'The volcano had been dormant for centuries (flashback). Now, smoke was rising (background) from its peak. It was going to erupt (evidence-based future).'
+            sentenceZh: '火山已经沉寂了几个世纪（闪回）。现在，烟雾正从山顶升起（背景）。它即将喷发（基于证据的未来）。'
+            highlight: 'had been / was rising / was going to erupt'
+
+    tips:
+      - 'The FCE "key word transformation" often tests your ability to switch between tense forms while keeping the same meaning. Practice rewriting sentences in different tenses.'
+      - 'In Reading papers, understanding tense shifts helps you follow the timeline of a passage. Pay attention to when the author switches from Past Simple to Past Perfect — it signals a flashback.'
+      - 'For the Writing paper: plan your tenses before you start writing. Decide on your "base tense" (usually Past Simple for stories) and only shift when there is a reason.'
+      - 'When in doubt, ask these three questions: (1) When does it happen? (2) Is it finished? (3) Is it real or imaginary? The answers will guide you to the right tense every time.'
+    tipsZh:
+      - 'FCE 的"关键词转换"题经常考你在保持相同意思的情况下切换时态形式的能力。练习用不同时态改写句子。'
+      - '在阅读题中，理解时态转换帮助你跟随文章的时间线。注意作者什么时候从一般过去时转换到过去完成时——这标志着一个闪回。'
+      - '写作题：在开始写作之前规划你的时态。决定你的"基础时态"（故事通常用一般过去时），只在有理由时才转换。'
+      - '不确定时，问这三个问题：（1）它什么时候发生？（2）它结束了吗？（3）它是真实的还是想象的？答案会每次都引导你找到正确的时态。'
+
+    practicePreview:
+      - id: Q02-L06-P01
+        question: 'Choose ALL correct tenses: "By the time the rescue team arrived, the explorers _____ (wait) for two days, but they _____ (not / give up) hope."'
+        questionZh: '选择所有正确的时态："当救援队到达时，探险家们已经 _____ 了两天，但他们没有 _____ 希望。"'
+        answer: 'had been waiting / had not given up'
+        explanation: 'Both actions happened BEFORE the rescue team arrived (past). "Waiting for two days" emphasises duration → Past Perfect Continuous. "Not giving up" is a completed state before arrival → Past Perfect.'
+        explanationZh: '两个动作都发生在救援队到达之前（过去）。"等了两天" 强调持续时间 → 过去完成进行时。"没有放弃" 是到达前的完成状态 → 过去完成时。'
+      - id: Q02-L06-P02
+        question: 'FCE-style transformation: Rewrite using "wish": "It is a shame that we cannot travel to the future."'
+        questionZh: 'FCE 风格的句型转换：用 "wish" 改写："我们不能穿越到未来，真遗憾。"'
+        answer: 'I wish we could travel to the future.'
+        explanation: 'This is a present wish (we cannot do it now). "I wish" + past simple: "cannot" becomes "could".'
+        explanationZh: '这是对现在的愿望（我们现在做不到）。"I wish" + 一般过去时："cannot" 变成 "could"。'
+      - id: Q02-L06-P03
+        question: 'Fill in with the right tenses: "If the ancient Maya _____ (not / study) the stars, they _____ (not / create) such an accurate calendar, and we _____ (not / know) so much about astronomy today."'
+        questionZh: '用正确的时态填空："如果古玛雅人 _____ 星星，他们就 _____ 如此精确的日历，而我们今天也 _____ 关于天文学的这么多知识。"'
+        answer: 'had not studied / would not have created / would not know'
+        explanation: 'This is a complex mixed conditional chain. The first two clauses are Type 3 (past cause → past result). The final clause is a mixed conditional (past cause → present result).'
+        explanationZh: '这是一个复杂的混合条件句链。前两个从句是三型（过去的原因 → 过去的结果）。最后一个从句是混合条件句（过去的原因 → 现在的结果）。'

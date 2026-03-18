@@ -1,0 +1,478 @@
+category: 'Story Writing'
+categoryZh: '故事写作'
+tasks:
+  - id: W001
+    type: story
+    title: 'The Door in the Tree'
+    titleZh: '树上的门'
+    prompt: 'Your story must begin with this sentence: ''I never expected to find a door in the old oak tree.'''
+    promptZh: '你的故事必须以这句话开头：''我从没想过会在那棵老橡树上发现一扇门。'''
+    targetWords: '140-190'
+    difficulty: 1
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe where you are and how you found the door.'
+        openingZh: '描述你在哪里，以及你是如何发现这扇门的。'
+        development: 'What happens when you open it? What do you see?'
+        developmentZh: '打开门后发生了什么？你看到了什么？'
+        climax: 'What problem or surprise do you encounter?'
+        climaxZh: '你遇到了什么问题或惊喜？'
+        resolution: 'How does the adventure end?'
+        resolutionZh: '这次冒险是怎么结束的？'
+      mustUseWords:
+        - 'Eventually'
+        - 'To my surprise'
+        - 'extraordinary'
+      mustUseStructure:
+        - 'At least one relative clause (who/which/where)'
+        - 'At least one past perfect sentence'
+      mustUseStructureZh:
+        - '至少一个定语从句（who/which/where）'
+        - '至少一个过去完成时句子'
+    selfCheckList:
+      - 'Did I use at least 3 descriptive adjectives?'
+      - 'Did I include dialogue?'
+      - 'Did I organize my story into paragraphs?'
+      - 'Are my verb tenses consistent?'
+    selfCheckListZh:
+      - '我是否使用了至少 3 个描写性形容词？'
+      - '我是否包含了对话？'
+      - '我是否把故事分了段落？'
+      - '我的动词时态是否一致？'
+    modelAnswer: |
+      I never expected to find a door in the old oak tree. It was a golden autumn afternoon, and I had been exploring the woods behind my grandmother's cottage when I noticed something extraordinary half-hidden behind thick ivy.
+
+      The door was small and wooden, with a rusty brass handle. My heart racing, I pulled it open. To my surprise, a narrow staircase spiralled downwards into soft, blue light. I stepped inside cautiously.
+
+      At the bottom, I discovered an underground garden where glowing flowers swayed without any wind. A tiny creature, who looked like a fox with silver wings, approached me. "Welcome," it whispered. "We have been waiting for someone brave."
+
+      It explained that their magical spring had dried up, and only a human child could restart it. I followed the creature to a crystal pool and dropped in a small stone, which I had picked up earlier. Water began bubbling immediately.
+
+      Eventually, I climbed back up the staircase, promising to return. When I looked back, the door had vanished — but I knew exactly where to find it again.
+    modelAnswerZh: |
+      我从没想过会在那棵老橡树上发现一扇门。那是一个金色的秋天下午，我一直在外婆小屋后面的树林里探险，突然注意到一个半隐藏在浓密常春藤后面的非凡之物。
+
+      那扇门又小又旧，有一个生锈的黄铜把手。我心跳加速，拉开了它。令我惊讶的是，一个狭窄的楼梯螺旋向下延伸，通向柔和的蓝色光芒。我小心翼翼地走了进去。
+
+      在底部，我发现了一个地下花园，发光的花朵在没有风的情况下摇曳。一个像长着银色翅膀的狐狸一样的小生物向我走来。"欢迎，"它低声说。"我们一直在等待一个勇敢的人。"
+
+      它解释说他们的魔法泉水已经干涸了，只有人类孩子才能让它重新运作。我跟着这个小生物来到一个水晶池边，投入了一块我之前捡到的小石头。水立刻开始冒泡。
+
+      最终，我沿着楼梯爬了回去，并承诺会再回来。当我回头看时，门已经消失了——但我知道在哪里能再次找到它。
+
+  - id: W002
+    type: story
+    title: 'The Talking Animal'
+    titleZh: '会说话的动物'
+    prompt: 'Your story must begin with this sentence: ''The cat on the garden wall looked straight at me and said, "Good morning."'''
+    promptZh: '你的故事必须以这句话开头：''花园墙上的猫直直地看着我，说道："早上好。"'''
+    targetWords: '140-190'
+    difficulty: 1
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the moment you hear the animal speak. How do you react?'
+        openingZh: '描述你听到动物说话的那一刻。你有什么反应？'
+        development: 'What does the animal want? Where does it take you?'
+        developmentZh: '这只动物想要什么？它带你去哪里？'
+        climax: 'What challenge or funny situation do you face together?'
+        climaxZh: '你们一起面对什么挑战或有趣的情况？'
+        resolution: 'What do you learn from the experience?'
+        resolutionZh: '你从这次经历中学到了什么？'
+      mustUseWords:
+        - 'Suddenly'
+        - 'Although'
+        - 'remarkable'
+      mustUseStructure:
+        - 'At least one piece of direct speech'
+        - 'At least one conditional sentence (If...)'
+      mustUseStructureZh:
+        - '至少一句直接引语'
+        - '至少一个条件句（If...）'
+    selfCheckList:
+      - 'Did I use at least 3 descriptive adjectives?'
+      - 'Did I include dialogue?'
+      - 'Did I organize my story into paragraphs?'
+      - 'Are my verb tenses consistent?'
+    selfCheckListZh:
+      - '我是否使用了至少 3 个描写性形容词？'
+      - '我是否包含了对话？'
+      - '我是否把故事分了段落？'
+      - '我的动词时态是否一致？'
+    modelAnswer: |
+      The cat on the garden wall looked straight at me and said, "Good morning." I dropped my cereal bowl in shock. The orange cat, who had been visiting our garden for weeks, flicked its tail impatiently.
+
+      "Don't just stand there," it continued. "I need your help. If you follow me, I'll explain everything." Although I thought I might be dreaming, curiosity won. I climbed over the wall and followed the remarkable creature down a cobblestone alley I had never noticed before.
+
+      Suddenly, we arrived at a tiny square where dozens of cats sat in a circle. "Our fountain has stopped working," my cat explained. "We need human hands to turn the old valve." In the centre stood a beautiful stone fountain covered in moss.
+
+      I knelt down and twisted the rusty valve with all my strength. Water burst out, and the cats meowed with joy. "Thank you," said my cat warmly.
+
+      I walked home smiling. The next morning, the cat was on the wall again. It just winked — but said nothing. Perhaps some secrets are better kept between friends.
+    modelAnswerZh: |
+      花园墙上的猫直直地看着我，说道："早上好。"我惊得把麦片碗掉在了地上。这只来我们花园好几个星期的橘猫不耐烦地甩了甩尾巴。
+
+      "别傻站着了，"它继续说道。"我需要你的帮助。如果你跟着我，我会解释一切。"虽然我觉得自己可能在做梦，但好奇心占了上风。我翻过墙，跟着这只非凡的生物走进了一条我从未注意过的鹅卵石小巷。
+
+      突然，我们来到了一个小广场，几十只猫围成一圈坐着。"我们的喷泉坏了，"我的猫解释道。"我们需要人类的手来转动那个旧阀门。"广场中央矗立着一座长满苔藓的美丽石头喷泉。
+
+      我跪下来，使尽全力拧那个生锈的阀门。水喷了出来，猫咪们高兴地叫了起来。"谢谢你，"我的猫温暖地说。
+
+      我笑着走回了家。第二天早上，那只猫又在墙上了。它只是眨了眨眼——但什么也没说。也许有些秘密最好还是朋友之间保守。
+
+  - id: W003
+    type: story
+    title: 'Lost in a Museum at Night'
+    titleZh: '夜晚迷失在博物馆'
+    prompt: 'Your story must begin with this sentence: ''When I heard the museum doors lock behind me, I knew I was in trouble.'''
+    promptZh: '你的故事必须以这句话开头：''当我听到博物馆的门在身后锁上时，我知道麻烦来了。'''
+    targetWords: '140-190'
+    difficulty: 1
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Explain how you got locked in the museum.'
+        openingZh: '解释你是如何被锁在博物馆里的。'
+        development: 'What do you see and hear as you explore the dark museum?'
+        developmentZh: '当你在黑暗的博物馆里探索时，你看到和听到了什么？'
+        climax: 'What strange or exciting event happens?'
+        climaxZh: '发生了什么奇怪或令人兴奋的事情？'
+        resolution: 'How do you get out? What do you think about the experience?'
+        resolutionZh: '你是如何出去的？你对这次经历有什么感想？'
+      mustUseWords:
+        - 'Meanwhile'
+        - 'In the distance'
+        - 'ancient'
+      mustUseStructure:
+        - 'At least one past continuous sentence'
+        - 'At least one exclamatory sentence'
+      mustUseStructureZh:
+        - '至少一个过去进行时句子'
+        - '至少一个感叹句'
+    selfCheckList:
+      - 'Did I use at least 3 descriptive adjectives?'
+      - 'Did I include dialogue?'
+      - 'Did I organize my story into paragraphs?'
+      - 'Are my verb tenses consistent?'
+    selfCheckListZh:
+      - '我是否使用了至少 3 个描写性形容词？'
+      - '我是否包含了对话？'
+      - '我是否把故事分了段落？'
+      - '我的动词时态是否一致？'
+    modelAnswer: |
+      When I heard the museum doors lock behind me, I knew I was in trouble. I had been reading about ancient Egypt in the library corner and completely lost track of time. Now the enormous building was dark and silent.
+
+      I switched on my phone torch and tiptoed through the dinosaur hall. The massive skeletons cast eerie shadows on the walls. In the distance, I heard a strange humming sound. My hands were trembling, but I followed the noise.
+
+      Meanwhile, the humming grew louder. I turned a corner and gasped — what an incredible sight! The ancient Egyptian room was glowing with golden light. The painted figures on the walls seemed to be moving, dancing in a silent celebration.
+
+      "Don't be afraid," said a gentle voice. A museum guide, who had also been locked in, stepped out from behind a pillar. "The special lighting system switches on automatically at midnight. Beautiful, isn't it?"
+
+      Together, we found an emergency exit. As I walked home under the stars, I decided that getting locked in a museum was the best accident I had ever had.
+    modelAnswerZh: |
+      当我听到博物馆的门在身后锁上时，我知道麻烦来了。我一直在图书角阅读关于古埃及的内容，完全忘了时间。现在这座巨大的建筑一片漆黑和寂静。
+
+      我打开手机手电筒，踮着脚穿过恐龙大厅。巨大的骨架在墙上投下诡异的影子。在远处，我听到一种奇怪的嗡嗡声。我的手在颤抖，但我还是循着声音走了过去。
+
+      与此同时，嗡嗡声越来越大。我转过一个拐角，倒吸一口气——多么不可思议的景象！古埃及展厅正散发着金色的光芒。墙上的彩绘人物似乎在动，在无声的庆典中舞蹈。
+
+      "别害怕，"一个温柔的声音说道。一位同样被锁在里面的博物馆导览员从柱子后面走了出来。"特殊的照明系统在午夜会自动开启。很美，不是吗？"
+
+      我们一起找到了紧急出口。当我在星空下走回家时，我觉得被锁在博物馆里是我经历过的最美好的意外。
+
+  - id: W004
+    type: story
+    title: 'The Message in a Bottle'
+    titleZh: '瓶中信'
+    prompt: 'Your story must begin with this sentence: ''I picked up the old glass bottle from the sand and noticed there was a message inside.'''
+    promptZh: '你的故事必须以这句话开头：''我从沙滩上捡起那个旧玻璃瓶，发现里面有一封信。'''
+    targetWords: '140-190'
+    difficulty: 1
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Where are you? Describe the beach and how you find the bottle.'
+        openingZh: '你在哪里？描述海滩以及你如何发现这个瓶子。'
+        development: 'What does the message say? What do you do next?'
+        developmentZh: '信上写了什么？你接下来做了什么？'
+        climax: 'What do you find or what happens when you follow the message?'
+        climaxZh: '当你按照信的指示行事时，你发现了什么或发生了什么？'
+        resolution: 'Who wrote the message and why? How does the story end?'
+        resolutionZh: '谁写了这封信，为什么？故事如何结束？'
+      mustUseWords:
+        - 'Immediately'
+        - 'As soon as'
+        - 'mysterious'
+      mustUseStructure:
+        - 'At least one passive voice sentence'
+        - 'At least one time clause (when/while/as soon as)'
+      mustUseStructureZh:
+        - '至少一个被动语态句子'
+        - '至少一个时间状语从句（when/while/as soon as）'
+    selfCheckList:
+      - 'Did I use at least 3 descriptive adjectives?'
+      - 'Did I include dialogue?'
+      - 'Did I organize my story into paragraphs?'
+      - 'Are my verb tenses consistent?'
+    selfCheckListZh:
+      - '我是否使用了至少 3 个描写性形容词？'
+      - '我是否包含了对话？'
+      - '我是否把故事分了段落？'
+      - '我的动词时态是否一致？'
+    modelAnswer: |
+      I picked up the old glass bottle from the sand and noticed there was a message inside. The paper was yellowed and the ink had faded, but I could still read the mysterious words: "Follow the rocks to the cave. The treasure was hidden there long ago."
+
+      Immediately, I looked along the shoreline. A row of dark rocks stretched towards the cliffs. My best friend Lily was sitting nearby, so I showed her the note. "Let's go!" she said excitedly.
+
+      As soon as we reached the cliffs, we spotted a narrow cave entrance behind the largest rock. Inside, the cave was cool and damp. We found an old wooden box covered in sand. When we opened it, we discovered dozens of beautiful seashells, each one painted with tiny pictures of ships and whales.
+
+      Then we noticed a name carved on the lid: "Captain Rose, 1923." The shells had been collected by a young sea captain over a hundred years ago.
+
+      We took the box to the local museum, where it was displayed proudly. Sometimes the best treasures are not gold — they are stories waiting to be found.
+    modelAnswerZh: |
+      我从沙滩上捡起那个旧玻璃瓶，发现里面有一封信。纸张已经泛黄，墨水也褪色了，但我仍然能读出那些神秘的文字："沿着岩石走到洞穴。宝藏很久以前就被藏在那里了。"
+
+      我立刻望向海岸线。一排黑色的岩石向悬崖延伸。我最好的朋友莉莉就坐在附近，所以我给她看了这张纸条。"我们去吧！"她兴奋地说。
+
+      我们一到悬崖，就在最大的岩石后面发现了一个狭窄的洞穴入口。洞里阴凉潮湿。我们找到了一个覆满沙子的旧木箱。打开后，我们发现了几十个美丽的贝壳，每一个上面都画着船只和鲸鱼的小图案。
+
+      然后我们注意到箱盖上刻着一个名字："罗斯船长，1923年。"这些贝壳是一百多年前一位年轻的船长收集的。
+
+      我们把箱子送到了当地的博物馆，在那里它被自豪地展出。有时候最好的宝藏不是金子——而是等待被发现的故事。
+
+  - id: W005
+    type: story
+    title: 'A Day as a Superhero'
+    titleZh: '当超级英雄的一天'
+    prompt: 'Your story must begin with this sentence: ''I woke up that morning and discovered I could fly.'''
+    promptZh: '你的故事必须以这句话开头：''那天早上我醒来，发现自己会飞了。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the moment you discover your power.'
+        openingZh: '描述你发现超能力的那一刻。'
+        development: 'How do you use your power? What do you do first?'
+        developmentZh: '你如何使用超能力？你首先做了什么？'
+        climax: 'What problem do you face? Does the power cause trouble?'
+        climaxZh: '你面对什么问题？超能力是否带来麻烦？'
+        resolution: 'What happens at the end of the day?'
+        resolutionZh: '一天结束时发生了什么？'
+      mustUseWords:
+        - 'Furthermore'
+        - 'incredible'
+        - 'exhausted'
+      mustUseStructure:
+        - 'At least two different tenses'
+        - 'At least one reported speech sentence'
+      mustUseStructureZh:
+        - '至少使用两种不同的时态'
+        - '至少一个间接引语句子'
+    selfCheckList:
+      - 'Did I create a clear problem and solution?'
+      - 'Did I describe my feelings throughout the story?'
+      - 'Did I use interesting verbs (not just said/went/got)?'
+      - 'Does my ending connect to the beginning?'
+    selfCheckListZh:
+      - '我是否创造了清晰的问题和解决方案？'
+      - '我是否在故事中描述了我的感受？'
+      - '我是否使用了有趣的动词（不只是 said/went/got）？'
+      - '我的结尾是否与开头相呼应？'
+    modelAnswer: |
+      I woke up that morning and discovered I could fly. At first, I floated just a few centimetres above my bed. Then I rose higher, bumping my head on the ceiling. It was incredible!
+
+      I sneaked out of the window and soared above the rooftops. The town looked tiny below me. Furthermore, I realised I could see everything with amazing clarity — a lost kitten on Oak Street, a child's balloon stuck in a tree, and smoke rising from a bakery.
+
+      I swooped down and rescued the kitten, freed the balloon, and told the baker that his oven was overheating. He said that I was an angel. People on the street pointed and cheered. I felt like a real superhero.
+
+      However, trouble arrived when reporters started chasing me with cameras. I flew faster, but the wind grew stronger. I was losing control. I crashed into a pond in the park, completely soaked.
+
+      By evening, I was exhausted. I crawled into bed, hoping the power would return tomorrow. But when I woke up, I was ordinary again. My mum asked why my shoes were muddy. I just smiled and said I had gone for a very long walk.
+    modelAnswerZh: |
+      那天早上我醒来，发现自己会飞了。一开始，我只是在床上方飘浮了几厘米。然后我升得更高，头撞到了天花板。太不可思议了！
+
+      我从窗户溜了出去，在屋顶上方翱翔。小镇在我下方看起来很小。此外，我发现自己能以惊人的清晰度看到一切——橡树街上一只走失的小猫，一个孩子的气球卡在树上，还有面包店冒出的烟。
+
+      我俯冲下去救了小猫，放了气球，并告诉面包师他的烤箱过热了。他说我是天使。街上的人们指着我欢呼。我感觉自己像一个真正的超级英雄。
+
+      然而，当记者开始拿着相机追我时，麻烦来了。我飞得更快，但风越来越强。我失去了控制。我一头栽进了公园的池塘里，全身湿透。
+
+      到了晚上，我精疲力竭。我爬上床，希望明天超能力会回来。但当我醒来时，我又是一个普通人了。妈妈问我为什么鞋上都是泥。我只是微笑着说我去散了一个很长的步。
+
+  - id: W006
+    type: story
+    title: 'The Mysterious Package'
+    titleZh: '神秘的包裹'
+    prompt: 'Your story must begin with this sentence: ''There was a brown package on the doorstep with no name on it — just the words "Open at midnight."'''
+    promptZh: '你的故事必须以这句话开头：''门口有一个棕色的包裹，上面没有名字——只有"午夜打开"几个字。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe finding the package and your curiosity.'
+        openingZh: '描述发现包裹以及你的好奇心。'
+        development: 'What happens when you open it at midnight?'
+        developmentZh: '午夜打开时发生了什么？'
+        climax: 'What mystery or surprise is revealed?'
+        climaxZh: '揭示了什么谜团或惊喜？'
+        resolution: 'Who sent it and why?'
+        resolutionZh: '是谁寄的，为什么？'
+      mustUseWords:
+        - 'Nevertheless'
+        - 'anxiously'
+        - 'peculiar'
+      mustUseStructure:
+        - 'At least one past perfect sentence'
+        - 'At least one question in the narrative'
+      mustUseStructureZh:
+        - '至少一个过去完成时句子'
+        - '至少一个叙述中的问句'
+    selfCheckList:
+      - 'Did I build suspense effectively?'
+      - 'Did I reveal the mystery in a satisfying way?'
+      - 'Did I use sensory details (sight, sound, touch)?'
+      - 'Is my ending surprising but logical?'
+    selfCheckListZh:
+      - '我是否有效地营造了悬念？'
+      - '我是否以令人满意的方式揭示了谜团？'
+      - '我是否使用了感官细节（视觉、听觉、触觉）？'
+      - '我的结尾是否出人意料但合乎逻辑？'
+    modelAnswer: |
+      There was a brown package on the doorstep with no name on it — just the words "Open at midnight." I carried the peculiar box to my room and placed it on my desk. It was light but something rattled inside. Who could have sent it?
+
+      I waited anxiously all evening. I had never received such a mysterious gift before. Nevertheless, when the clock struck twelve, I carefully tore off the wrapping paper. Inside was a small wooden music box with a folded note.
+
+      I opened the lid and a gentle melody filled the room. The note read: "This belonged to your great-grandmother. She wanted you to have it when you turned nine. Wind it up and listen carefully." I wound the tiny handle, and a hidden drawer popped open at the bottom.
+
+      Inside the drawer lay a faded photograph of a young woman standing beside the very oak tree in our garden. On the back, she had written: "Dream bravely, little one."
+
+      The next morning, I asked my grandmother about it. She smiled with tears in her eyes and said, "She always knew you would be special." I have kept the music box beside my bed ever since.
+    modelAnswerZh: |
+      门口有一个棕色的包裹，上面没有名字——只有"午夜打开"几个字。我把这个奇怪的盒子搬到房间，放在书桌上。它很轻，但里面有东西在响。是谁寄的呢？
+
+      我整个晚上都焦急地等待着。我以前从未收到过如此神秘的礼物。尽管如此，当时钟敲响十二点时，我小心翼翼地撕开了包装纸。里面是一个小小的木质音乐盒，还有一张折叠的纸条。
+
+      我打开盖子，一段温柔的旋律充满了房间。纸条上写着："这是你曾祖母的东西。她希望你九岁时拥有它。上好发条，仔细聆听。"我转动小把手，底部弹出了一个隐藏的抽屉。
+
+      抽屉里放着一张褪色的照片，一位年轻女子站在我们花园里那棵橡树旁。照片背面，她写道："勇敢地做梦吧，小家伙。"
+
+      第二天早上，我向外婆问起这件事。她含泪微笑着说："她一直知道你会很特别。"从那以后，我一直把音乐盒放在床头。
+
+  - id: W007
+    type: story
+    title: 'My Robot Friend'
+    titleZh: '我的机器人朋友'
+    prompt: 'Your story must begin with this sentence: ''The robot I built in my garage suddenly opened its eyes and said, "Hello, friend."'''
+    promptZh: '你的故事必须以这句话开头：''我在车库里造的机器人突然睁开了眼睛，说道："你好，朋友。"'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe building the robot and the moment it comes alive.'
+        openingZh: '描述建造机器人以及它活过来的那一刻。'
+        development: 'What do you do together? What is the robot like?'
+        developmentZh: '你们一起做什么？机器人是什么样的？'
+        climax: 'What goes wrong or what challenge do you face?'
+        climaxZh: '出了什么问题或你面对什么挑战？'
+        resolution: 'How is the problem solved?'
+        resolutionZh: '问题是如何解决的？'
+      mustUseWords:
+        - 'Unfortunately'
+        - 'brilliant'
+        - 'malfunction'
+      mustUseStructure:
+        - 'At least one comparative or superlative sentence'
+        - 'At least one sentence with "used to" or "would"'
+      mustUseStructureZh:
+        - '至少一个比较级或最高级句子'
+        - '至少一个使用 used to 或 would 的句子'
+    selfCheckList:
+      - 'Did I give the robot a personality?'
+      - 'Did I show how my character feels?'
+      - 'Did I use at least 2 linking words (however, therefore, etc.)?'
+      - 'Does the story have a clear beginning, middle, and end?'
+    selfCheckListZh:
+      - '我是否赋予了机器人个性？'
+      - '我是否展示了我的角色的感受？'
+      - '我是否使用了至少 2 个连接词（however, therefore 等）？'
+      - '故事是否有清晰的开头、中间和结尾？'
+    modelAnswer: |
+      The robot I built in my garage suddenly opened its eyes and said, "Hello, friend." I had spent months connecting wires and programming code, but I never expected it would actually work. The small silver robot, whom I named Sparky, was the most brilliant invention I had ever created.
+
+      Sparky would follow me everywhere. He helped me tidy my room, carried my school bag, and even told jokes — although his humour was worse than my dad's. He used to wait by the front door every afternoon until I came home.
+
+      Unfortunately, one rainy Tuesday, Sparky started to malfunction. His left arm spun in circles and he kept repeating "banana" for no reason. Sparks flew from his chest panel. I was terrified I would lose my friend.
+
+      I rushed him back to the garage and opened his circuits. A tiny drop of rainwater had damaged one chip. I carefully replaced it with a spare, held my breath, and pressed the restart button.
+
+      Sparky's eyes flickered open. "Did I miss anything?" he asked cheerfully. I hugged him — even though he was made of cold metal, he was the warmest friend I had ever known.
+    modelAnswerZh: |
+      我在车库里造的机器人突然睁开了眼睛，说道："你好，朋友。"我花了几个月连接电线和编写代码，但从没想到它真的会工作。这个银色的小机器人，我给它取名叫"火花"，是我造过的最棒的发明。
+
+      火花会到处跟着我。他帮我整理房间，背我的书包，甚至讲笑话——虽然他的幽默比我爸还差。他以前每天下午都会在前门等我回家。
+
+      不幸的是，一个下雨的周二，火花开始出故障了。他的左臂不停地转圈，还无缘无故地重复说"香蕉"。他的胸部面板冒出了火花。我害怕极了，怕失去我的朋友。
+
+      我赶紧把他带回车库，打开了他的电路。一小滴雨水损坏了一个芯片。我小心翼翼地用备用芯片替换了它，屏住呼吸，按下了重启键。
+
+      火花的眼睛闪烁着睁开了。"我错过什么了吗？"他开朗地问。我拥抱了他——尽管他是冷冰冰的金属做的，但他是我认识的最温暖的朋友。
+
+  - id: W008
+    type: story
+    title: 'The Last Day of Summer'
+    titleZh: '夏天的最后一天'
+    prompt: 'Your story must begin with this sentence: ''As I watched the sun set on the last day of summer, I thought about everything that had happened.'''
+    promptZh: '你的故事必须以这句话开头：''当我看着夏天最后一天的日落时，我回想起了所发生的一切。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Set the scene — where are you watching the sunset?'
+        openingZh: '设定场景——你在哪里看日落？'
+        development: 'What important memories from summer do you recall?'
+        developmentZh: '你回忆起夏天哪些重要的记忆？'
+        climax: 'What was the most significant moment of your summer?'
+        climaxZh: '你夏天最重要的时刻是什么？'
+        resolution: 'How do you feel about the new season ahead?'
+        resolutionZh: '你对即将到来的新季节有什么感受？'
+      mustUseWords:
+        - 'memorable'
+        - 'Although'
+        - 'cherish'
+      mustUseStructure:
+        - 'At least two different past tenses'
+        - 'At least one sentence expressing a future hope or plan'
+      mustUseStructureZh:
+        - '至少使用两种不同的过去时态'
+        - '至少一个表达未来希望或计划的句子'
+    selfCheckList:
+      - 'Did I use sensory details to describe the setting?'
+      - 'Did I show my emotions, not just tell them?'
+      - 'Did I create a reflective, thoughtful tone?'
+      - 'Does the ending feel complete and satisfying?'
+    selfCheckListZh:
+      - '我是否使用了感官细节来描述环境？'
+      - '我是否展示了我的情感，而不仅仅是叙述？'
+      - '我是否创造了一种反思和深思的语调？'
+      - '结尾是否感觉完整和令人满意？'
+    modelAnswer: |
+      As I watched the sun set on the last day of summer, I thought about everything that had happened. I was sitting on the wooden dock by the lake, my feet dangling in the warm water. The sky was painted in shades of orange and purple, and the air smelled of pine trees and wild flowers.
+
+      It had been the most memorable summer of my life. In June, I had learned to swim in this very lake, swallowing water and laughing. In July, my cousin and I built a treehouse that leaned slightly to the left but felt like a palace. We had spent countless afternoons there, reading books and sharing secrets.
+
+      Although I was sad that summer was ending, I knew I would cherish these memories forever. The best moment had been the night we lay on the grass counting shooting stars. I had made a wish on every single one.
+
+      A cool breeze brushed my face — autumn was already whispering. I stood up, took one last look at the golden lake, and smiled. Next summer, I planned to come back and build an even bigger treehouse. Some adventures are worth repeating.
+    modelAnswerZh: |
+      当我看着夏天最后一天的日落时，我回想起了所发生的一切。我坐在湖边的木码头上，双脚悬在温暖的水中。天空被涂成了橙色和紫色的色调，空气中弥漫着松树和野花的芬芳。
+
+      这是我人生中最难忘的夏天。六月，我就在这个湖里学会了游泳，呛着水笑个不停。七月，我和表姐建了一个略微向左倾斜但感觉像宫殿一样的树屋。我们在那里度过了无数个下午，读书和分享秘密。
+
+      虽然我很难过夏天要结束了，但我知道我会永远珍惜这些记忆。最美好的时刻是那个我们躺在草地上数流星的夜晚。我对每一颗流星都许了一个愿望。
+
+      一阵凉风拂过我的脸——秋天已经在低语。我站起来，最后看了一眼金色的湖面，微笑着。明年夏天，我打算回来建一个更大的树屋。有些冒险值得重来。

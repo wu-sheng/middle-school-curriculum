@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang, getUi, biPick, type Lang } from "@/lib/i18n";
 
 interface SidebarChapter {
@@ -39,18 +40,51 @@ interface SidebarProps {
   currentPath?: string;
 }
 
-export default function Sidebar({ subjects, currentPath }: SidebarProps) {
+export default function Sidebar({ subjects }: SidebarProps) {
   const { lang, setLang } = useLang();
   const ui = getUi(lang);
+  const currentPath = usePathname();
+
+  // Compute initial expanded sets based on current path
+  const initExpanded = useMemo(() => {
+    const subjs = new Set(["math"]);
+    const grades = new Set(["grade7"]);
+    const semesters = new Set(["semester1"]);
+    // If on FCE page, also expand english/fce
+    if (currentPath?.startsWith("/fce")) {
+      subjs.add("english");
+      grades.add("fce");
+      semesters.add("phase1");
+    }
+    // If on a math lesson, expand the relevant semester
+    if (currentPath?.startsWith("/lesson/math/grade7/")) {
+      subjs.add("math");
+      grades.add("grade7");
+      // Find which semester contains this chapter
+      const chId = currentPath.split("/").pop();
+      for (const subj of subjects) {
+        if (subj.id !== "math") continue;
+        for (const g of subj.grades) {
+          for (const sem of g.semesters) {
+            if (sem.chapters.some(ch => ch.id === chId)) {
+              semesters.add(sem.id);
+            }
+          }
+        }
+      }
+    }
+    return { subjs, grades, semesters };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(
-    new Set(["math"])
+    initExpanded.subjs
   );
   const [expandedGrades, setExpandedGrades] = useState<Set<string>>(
-    new Set(["grade7"])
+    initExpanded.grades
   );
   const [expandedSemesters, setExpandedSemesters] = useState<Set<string>>(
-    new Set(["semester1"])
+    initExpanded.semesters
   );
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -143,6 +177,34 @@ export default function Sidebar({ subjects, currentPath }: SidebarProps) {
                   </span>
                 </button>
 
+                {/* FCE overview link at grade level */}
+                {expandedGrades.has(grade.id) && subject.id === "english" && grade.id === "fce" && (
+                  <div className="ml-4 py-1">
+                    <Link
+                      href="/fce"
+                      onClick={() => setMobileOpen(false)}
+                      className={`block px-4 py-1.5 text-sm rounded-r-xl transition-colors ${
+                        currentPath === "/fce"
+                          ? "bg-gradient-to-r from-pink-50 to-purple-50 text-purple-500 font-medium border-l-2 border-purple-300"
+                          : "text-gray-500 hover:bg-gray-50 hover:text-purple-400"
+                      }`}
+                    >
+                      🏝️ {n("总览", "Overview")}
+                    </Link>
+                    <Link
+                      href="/fce/daily"
+                      onClick={() => setMobileOpen(false)}
+                      className={`block px-4 py-1.5 text-sm rounded-r-xl transition-colors ${
+                        currentPath?.startsWith("/fce/daily")
+                          ? "bg-gradient-to-r from-pink-50 to-purple-50 text-purple-500 font-medium border-l-2 border-purple-300"
+                          : "text-gray-500 hover:bg-gray-50 hover:text-purple-400"
+                      }`}
+                    >
+                      📅 {n("每日练习", "Daily Practice")}
+                    </Link>
+                  </div>
+                )}
+
                 {expandedGrades.has(grade.id) &&
                   grade.semesters.map((semester) => (
                     <div key={semester.id} className="ml-4">
@@ -174,12 +236,15 @@ export default function Sidebar({ subjects, currentPath }: SidebarProps) {
                       {expandedSemesters.has(semester.id) && (
                         <div className="ml-4 py-1">
                           {semester.chapters.map((ch) => {
+                            // English/FCE uses /fce/quest/... routes
+                            const isFce = subject.id === "english" && grade.id === "fce";
                             const href = ch.hasContent
-                              ? `/lesson/${subject.id}/${grade.id}/${ch.id}`
+                              ? isFce
+                                ? `/fce/quest/${ch.id}`
+                                : `/lesson/${subject.id}/${grade.id}/${ch.id}`
                               : "#";
                             const isActive =
-                              currentPath ===
-                              `/lesson/${subject.id}/${grade.id}/${ch.id}`;
+                              currentPath === href;
                             return (
                               <Link
                                 key={ch.id}
@@ -193,7 +258,11 @@ export default function Sidebar({ subjects, currentPath }: SidebarProps) {
                                     : "text-gray-300 cursor-not-allowed"
                                 }`}
                               >
-                                {lang === "en"
+                                {isFce
+                                  ? lang === "en"
+                                    ? `Q${ch.number} ${ch.nameEn}`
+                                    : `Q${ch.number} ${ch.name}`
+                                  : lang === "en"
                                   ? `Ch.${ch.number} ${ch.nameEn}`
                                   : `第${ch.number}章 ${ch.name}`}
                                 {!ch.hasContent && (

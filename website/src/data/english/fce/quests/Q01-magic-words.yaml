@@ -1,0 +1,988 @@
+id: Q01
+title: 'Magic Word Lab'
+titleZh: '魔法变形课'
+subtitle: 'Master the art of word transformation!'
+subtitleZh: '掌握词汇变形的魔法艺术！'
+month: 1
+fceMapping: 'Use of English Part 3 (Word Formation)'
+
+theme:
+  setting: 'A magical academy where every prefix and suffix is a spell'
+  settingZh: '一所魔法学院，每个前缀和后缀都是一道咒语'
+  mascot: 'Professor Morpho, the word-shifting wizard'
+  mascotZh: '变形教授 Morpho，精通词汇变身的巫师'
+
+objectives:
+  - 'Recognise and use common negative prefixes (un-, in-/im-/il-/ir-, dis-, mis-) to form opposites'
+  - 'Apply meaning-changing prefixes (over-, under-, re-, pre-, out-) to modify word meaning'
+  - 'Transform verbs and adjectives into nouns using suffixes (-tion/-sion, -ment, -ness, -ity, -ence/-ance)'
+  - 'Form adjectives from nouns and verbs using suffixes (-ful, -less, -able/-ible, -ous, -ive)'
+  - 'Create adverbs and verbs using suffixes (-ly, -ise/-ize, -en, -ify)'
+  - 'Convert words fluently across all four word classes (noun, verb, adjective, adverb)'
+
+objectivesZh:
+  - '识别并运用常见否定前缀（un-, in-/im-/il-/ir-, dis-, mis-）构成反义词'
+  - '运用意义变化前缀（over-, under-, re-, pre-, out-）来改变词义'
+  - '使用后缀（-tion/-sion, -ment, -ness, -ity, -ence/-ance）将动词和形容词变为名词'
+  - '使用后缀（-ful, -less, -able/-ible, -ous, -ive）将名词和动词变为形容词'
+  - '使用后缀（-ly, -ise/-ize, -en, -ify）构成副词和动词'
+  - '在四大词类（名词、动词、形容词、副词）之间灵活转换词汇'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Negative Prefixes
+  # ─────────────────────────────────────────────
+  - id: Q01-L01
+    title: 'Negative Prefixes — The Reversal Spells'
+    titleZh: '否定前缀——逆转咒语'
+
+    introduction: |
+      Welcome to your very first day at the Magic Word Academy! Professor Morpho stands at
+      the front of the classroom, his long purple robes shimmering with tiny floating letters.
+      "Today," he announces, "we shall learn the Reversal Spells — prefixes that flip a word's
+      meaning upside down, like turning a friendly dragon into an unfriendly one!"
+
+      He waves his wand, and the word "HAPPY" appears in golden light above the class.
+      With a flick, the prefix "UN-" zooms in from the left and attaches itself — and the
+      golden glow turns stormy grey. "UN-HAPPY!" the class reads aloud. The magic of
+      negation has begun.
+
+      But beware — not all Reversal Spells work the same way. Some words prefer "dis-",
+      others demand "im-" or "il-". Choosing the wrong prefix is like casting the wrong spell
+      — it simply won't work! Let's learn the rules so your spells never misfire.
+    introductionZh: |
+      欢迎来到魔法词汇学院的第一天！Morpho 教授站在教室前方，他长长的紫色法袍上
+      闪烁着无数漂浮的小字母。"今天，"他宣布道，"我们将学习逆转咒语——能把一个词
+      的意思完全翻转的前缀，就像把一条友好的龙变成一条不友好的龙！"
+
+      他挥动魔杖，"HAPPY"这个词以金色光芒出现在全班上方。他轻轻一弹，前缀"UN-"
+      从左边飞来，牢牢吸附上去——金色的光芒瞬间变成了暴风灰。"UN-HAPPY！"全班齐声
+      朗读。否定的魔法就此开始。
+
+      但要小心——不是所有的逆转咒语都一样。有些词偏爱"dis-"，有些则要求"im-"或
+      "il-"。选错前缀就像念错咒语——根本不会生效！让我们来学习规则，确保你的咒语
+      永远不会失灵。
+
+    rules:
+      - pattern: 'un-'
+        meaning: 'not, opposite of — the most common reversal spell'
+        meaningZh: '不，与……相反——最常见的逆转咒语'
+        examples:
+          - base: 'happy'
+            transformed: 'unhappy'
+            sentence: 'The unicorn was unhappy because someone had stolen its rainbow mane.'
+            sentenceZh: '独角兽很不开心，因为有人偷走了它的彩虹鬃毛。'
+          - base: 'lucky'
+            transformed: 'unlucky'
+            sentence: 'It was unlucky that the wizard dropped his wand into the enchanted lake.'
+            sentenceZh: '巫师把魔杖掉进了魔法湖里，真是太倒霉了。'
+          - base: 'comfortable'
+            transformed: 'uncomfortable'
+            sentence: 'Sitting on a dragon''s spiky back is extremely uncomfortable.'
+            sentenceZh: '坐在龙布满尖刺的背上非常不舒服。'
+          - base: 'usual'
+            transformed: 'unusual'
+            sentence: 'The astronaut spotted an unusual planet shaped like a giant doughnut.'
+            sentenceZh: '宇航员发现了一颗形状像巨大甜甜圈的奇异星球。'
+
+      - pattern: 'in- (im- before b/m/p, il- before l, ir- before r)'
+        meaning: 'not — changes form to match the first letter of the base word'
+        meaningZh: '不——根据词根首字母变换形式'
+        examples:
+          - base: 'visible'
+            transformed: 'invisible'
+            sentence: 'The wizard cast a spell to make the castle invisible to passing dragons.'
+            sentenceZh: '巫师施了一个咒语，让城堡在路过的龙眼中变得隐形。'
+          - base: 'possible'
+            transformed: 'impossible'
+            sentence: 'It seemed impossible to climb the glass mountain, but the brave knight tried anyway.'
+            sentenceZh: '攀登玻璃山看起来不可能，但勇敢的骑士还是尝试了。'
+          - base: 'legal'
+            transformed: 'illegal'
+            sentence: 'In the Fairy Kingdom, it is illegal to pick enchanted flowers without permission.'
+            sentenceZh: '在仙子王国，未经允许采摘魔法花朵是违法的。'
+          - base: 'responsible'
+            transformed: 'irresponsible'
+            sentence: 'It was irresponsible of the young dragon to breathe fire inside the library.'
+            sentenceZh: '小龙在图书馆里喷火是非常不负责任的行为。'
+
+      - pattern: 'dis-'
+        meaning: 'not, opposite of — often used with verbs and abstract adjectives'
+        meaningZh: '不，与……相反——常用于动词和抽象形容词'
+        examples:
+          - base: 'agree'
+            transformed: 'disagree'
+            sentence: 'The two wizards disagree about whether cats or owls make better magical pets.'
+            sentenceZh: '两位巫师对于猫和猫头鹰哪个更适合当魔法宠物意见不一。'
+          - base: 'appear'
+            transformed: 'disappear'
+            sentence: 'The enchanted rabbit can disappear and reappear wherever it wants.'
+            sentenceZh: '魔法兔子可以随心所欲地消失和重新出现。'
+          - base: 'honest'
+            transformed: 'dishonest'
+            sentence: 'The dishonest goblin tried to sell fake dragon scales at the market.'
+            sentenceZh: '那个不诚实的小妖精试图在市场上卖假龙鳞。'
+          - base: 'advantage'
+            transformed: 'disadvantage'
+            sentence: 'Being very small is a disadvantage when you need to reach the top shelf of spell books.'
+            sentenceZh: '当你需要够到咒语书架最上层时，个子太小就是一个劣势。'
+
+      - pattern: 'mis-'
+        meaning: 'wrongly, badly — something done incorrectly'
+        meaningZh: '错误地，糟糕地——表示做错某事'
+        examples:
+          - base: 'understand'
+            transformed: 'misunderstand'
+            sentence: 'Be careful not to misunderstand the ancient spell — saying it backwards summons a troll!'
+            sentenceZh: '注意不要误解古老的咒语——念反了会召唤出一个巨魔！'
+          - base: 'lead'
+            transformed: 'mislead'
+            sentence: 'The mischievous fairy tried to mislead the explorers into the swamp.'
+            sentenceZh: '淘气的仙子试图把探险者误导进沼泽地。'
+          - base: 'behave'
+            transformed: 'misbehave'
+            sentence: 'If the baby griffin continues to misbehave, it will not be allowed at the feast.'
+            sentenceZh: '如果小狮鹫继续调皮捣蛋，它将不被允许参加宴会。'
+
+    tips:
+      - 'Remember: im- goes before b, m, and p (impossible, imbalance, immature). Think "BMP = im-"!'
+      - 'il- only goes before l (illegal, illogical). ir- only goes before r (irregular, irresponsible).'
+      - 'dis- is common with verbs (disagree, disappear, disconnect). If you''re unsure, dis- is a safe guess for verbs.'
+      - 'mis- means "wrongly" not just "not". Misunderstand = understand wrongly, not "not understand".'
+      - 'Trap alert: "un-" does NOT work with every word! We say "impossible" not "unpossible".'
+    tipsZh:
+      - '记住：im- 用在 b、m、p 前面（impossible, imbalance, immature）。口诀："BMP 用 im-"！'
+      - 'il- 只用在 l 前面（illegal, illogical）。ir- 只用在 r 前面（irregular, irresponsible）。'
+      - 'dis- 常用于动词（disagree, disappear, disconnect）。不确定时，动词用 dis- 通常是安全的。'
+      - 'mis- 的意思是"错误地"，不是单纯的"不"。misunderstand = 理解错误，而不是"不理解"。'
+      - '陷阱提醒："un-" 不是万能的！我们说 "impossible" 而不是 "unpossible"。'
+
+    practicePreview:
+      - id: Q01-L01-P01
+        question: 'The wizard was _____ (PATIENT) and refused to wait for the slow-moving troll.'
+        questionZh: '巫师很不耐烦，拒绝等那只行动缓慢的巨魔。'
+        answer: 'impatient'
+        explanation: '"Patient" starts with P, so we use the prefix "im-" (not "un-" or "in-").'
+        explanationZh: '"Patient" 以 P 开头，所以用前缀 "im-"（不是 "un-" 或 "in-"）。'
+      - id: Q01-L01-P02
+        question: 'The explorer _____ (UNDERSTAND) the map and ended up at a dragon''s cave.'
+        questionZh: '探险者误读了地图，结果走到了一个龙穴。'
+        answer: 'misunderstood'
+        explanation: '"Mis-" means wrongly. "Misunderstood" = understood wrongly. Note the past tense form!'
+        explanationZh: '"Mis-" 表示错误地。"Misunderstood" = 理解错了。注意过去式形式！'
+      - id: Q01-L01-P03
+        question: 'Many magical creatures _____ (APPEAR) when the sun comes up.'
+        questionZh: '许多魔法生物在太阳升起时就消失了。'
+        answer: 'disappear'
+        explanation: '"Dis-" + "appear" = disappear (to stop being visible). This is one of the most common dis- words.'
+        explanationZh: '"Dis-" + "appear" = disappear（消失）。这是最常见的 dis- 前缀词之一。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Other Prefixes
+  # ─────────────────────────────────────────────
+  - id: Q01-L02
+    title: 'Other Prefixes — The Power-Up Spells'
+    titleZh: '其他前缀——增强咒语'
+
+    introduction: |
+      "Excellent work on your Reversal Spells!" Professor Morpho beams as he strides into
+      the classroom on Day Two. "But negation is only the beginning. Today we learn the
+      Power-Up Spells — prefixes that don't just flip meaning, they CHANGE it entirely!"
+
+      He pulls out a glowing orb. "Imagine you can DO something. Now imagine you can
+      OVERDO it — too much! Or REDO it — do it again! Or OUTDO someone — do it better
+      than them!" The orb flashes different colours with each prefix. "These spells give you
+      superpowers over words."
+
+      The class buzzes with excitement. Today's lesson will take them from the dungeon of
+      basic vocabulary to the tower of advanced word power. Every prefix is a new ability
+      in their word-wizard toolkit.
+    introductionZh: |
+      "逆转咒语学得很棒！"第二天，Morpho 教授笑容满面地大步走进教室。"但否定
+      只是开始。今天我们要学习增强咒语——这些前缀不只是翻转意思，它们会完全
+      改变词义！"
+
+      他拿出一个发光的水晶球。"想象你能做某件事。现在想象你做过头了——OVERDO！
+      或者再做一次——REDO！或者比别人做得更好——OUTDO！"水晶球随着每个前缀
+      闪烁着不同的颜色。"这些咒语赋予你掌控词汇的超能力。"
+
+      全班兴奋不已。今天的课程将把他们从基础词汇的地下室带到高级词汇力量的塔顶。
+      每一个前缀都是他们词汇巫师工具包里的新能力。
+
+    rules:
+      - pattern: 'over-'
+        meaning: 'too much, excessively'
+        meaningZh: '过多，过度'
+        examples:
+          - base: 'sleep'
+            transformed: 'oversleep'
+            sentence: 'The apprentice wizard overslept and missed the morning potion class.'
+            sentenceZh: '巫师学徒睡过头了，错过了早上的药水课。'
+          - base: 'react'
+            transformed: 'overreact'
+            sentence: 'Don''t overreact — the baby dragon only burnt a tiny corner of the curtain.'
+            sentenceZh: '别反应过度——小龙只是烧了窗帘的一个小角而已。'
+          - base: 'crowded'
+            transformed: 'overcrowded'
+            sentence: 'The spaceship was overcrowded with aliens trying to escape the exploding star.'
+            sentenceZh: '太空飞船里挤满了逃离爆炸恒星的外星人。'
+
+      - pattern: 'under-'
+        meaning: 'not enough, below'
+        meaningZh: '不够，低于'
+        examples:
+          - base: 'estimate'
+            transformed: 'underestimate'
+            sentence: 'Never underestimate a small fairy — they have powerful magic!'
+            sentenceZh: '永远不要低估一个小仙子——她们拥有强大的魔法！'
+          - base: 'water'
+            transformed: 'underwater'
+            sentence: 'The mermaids built an underwater city with towers made of coral.'
+            sentenceZh: '美人鱼用珊瑚建造了一座水下城市。'
+          - base: 'cooked'
+            transformed: 'undercooked'
+            sentence: 'The troll complained that his dragon egg omelette was undercooked.'
+            sentenceZh: '巨魔抱怨他的龙蛋煎饼没有煮熟。'
+
+      - pattern: 're-'
+        meaning: 'again, back'
+        meaningZh: '再次，重新'
+        examples:
+          - base: 'build'
+            transformed: 'rebuild'
+            sentence: 'After the giant stomped through the village, the elves had to rebuild every house.'
+            sentenceZh: '巨人踩过村庄后，精灵们不得不重建每一栋房屋。'
+          - base: 'appear'
+            transformed: 'reappear'
+            sentence: 'The ghost vanished through the wall, only to reappear behind the students.'
+            sentenceZh: '幽灵穿墙消失了，结果又重新出现在学生们身后。'
+          - base: 'write'
+            transformed: 'rewrite'
+            sentence: 'The princess had to rewrite her essay after the ink-eating moth destroyed it.'
+            sentenceZh: '公主不得不重写她的论文，因为墨水蛾把它给吃了。'
+          - base: 'consider'
+            transformed: 'reconsider'
+            sentence: 'The knight decided to reconsider his plan after seeing three dragons instead of one.'
+            sentenceZh: '骑士在看到三条龙而不是一条后，决定重新考虑他的计划。'
+
+      - pattern: 'pre-'
+        meaning: 'before, in advance'
+        meaningZh: '在……之前，预先'
+        examples:
+          - base: 'view'
+            transformed: 'preview'
+            sentence: 'The students got a preview of next week''s magic show — it looked amazing!'
+            sentenceZh: '学生们预览了下周的魔法表演——看起来太棒了！'
+          - base: 'historic'
+            transformed: 'prehistoric'
+            sentence: 'The time-travelling wizard landed in a prehistoric world full of dinosaurs.'
+            sentenceZh: '时间旅行的巫师降落在一个充满恐龙的史前世界。'
+          - base: 'heat'
+            transformed: 'preheat'
+            sentence: 'Always preheat the cauldron before adding magical ingredients.'
+            sentenceZh: '在加入魔法原料之前，一定要先预热大锅。'
+
+      - pattern: 'out-'
+        meaning: 'more than, better than, beyond'
+        meaningZh: '超过，胜过'
+        examples:
+          - base: 'run'
+            transformed: 'outrun'
+            sentence: 'The clever fox managed to outrun the enchanted wolves chasing it.'
+            sentenceZh: '聪明的狐狸成功跑赢了追赶它的魔法狼群。'
+          - base: 'number'
+            transformed: 'outnumber'
+            sentence: 'The goblins outnumber the elves three to one, but the elves are much stronger.'
+            sentenceZh: '地精的数量是精灵的三倍，但精灵强壮得多。'
+          - base: 'smart'
+            transformed: 'outsmart'
+            sentence: 'The young wizard managed to outsmart the ancient riddle-telling sphinx.'
+            sentenceZh: '年轻的巫师成功智胜了那只古老的谜语人面狮身像。'
+
+    tips:
+      - '"Over-" and "under-" are opposites! Overcooked (too much heat) vs undercooked (not enough heat).'
+      - '"Re-" is one of the most useful prefixes. If you can do something, you can almost always RE-do it.'
+      - '"Pre-" means BEFORE in time. Preview = view before, predict = say before (what will happen).'
+      - '"Out-" in verbs means "do better than". Outsmart = be smarter than. Outrun = run faster than.'
+      - 'Don''t confuse "overdo" (do too much) with "redo" (do again) — they sound similar but mean different things!'
+    tipsZh:
+      - '"Over-" 和 "under-" 是反义词！overcooked（煮过头）vs undercooked（没煮熟）。'
+      - '"Re-" 是最有用的前缀之一。如果你能做某事，几乎总是可以重新做（RE-do）。'
+      - '"Pre-" 表示时间上的"之前"。preview = 预览，predict = 预测（提前说会发生什么）。'
+      - '"Out-" 用在动词中表示"做得比……更好"。outsmart = 比……更聪明。outrun = 跑得比……快。'
+      - '别混淆 "overdo"（做过头）和 "redo"（重做）——它们发音相似但意思不同！'
+
+    practicePreview:
+      - id: Q01-L02-P01
+        question: 'The explorers _____ (ESTIMATE) the distance to the enchanted mountain and ran out of supplies.'
+        questionZh: '探险者低估了到魔法山的距离，补给用完了。'
+        answer: 'underestimated'
+        explanation: '"Under-" + "estimate" = underestimate (to think something is less than it really is). Past tense: underestimated.'
+        explanationZh: '"Under-" + "estimate" = underestimate（低估）。过去式：underestimated。'
+      - id: Q01-L02-P02
+        question: 'The ancient temple was so damaged that the dwarves had to _____ (BUILD) it from scratch.'
+        questionZh: '古老的神庙损毁严重，矮人们不得不从头重建。'
+        answer: 'rebuild'
+        explanation: '"Re-" means "again". Rebuild = build again. The temple needed to be constructed once more.'
+        explanationZh: '"Re-" 表示"再次"。rebuild = 重建。神庙需要再建造一次。'
+      - id: Q01-L02-P03
+        question: 'Even though the trolls _____ (NUMBER) them, the brave knights won the battle.'
+        questionZh: '尽管巨魔在数量上超过他们，勇敢的骑士们还是赢得了战斗。'
+        answer: 'outnumbered'
+        explanation: '"Out-" + "number" = outnumber (to be greater in number). Past tense: outnumbered.'
+        explanationZh: '"Out-" + "number" = outnumber（数量上超过）。过去式：outnumbered。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Noun Suffixes
+  # ─────────────────────────────────────────────
+  - id: Q01-L03
+    title: 'Noun Suffixes — The Naming Charms'
+    titleZh: '名词后缀——命名魔咒'
+
+    introduction: |
+      Professor Morpho enters the classroom carrying a large crystal jar filled with swirling
+      silver mist. "Class, last time we learned spells that go at the FRONT of words. Today
+      we flip to the other end — suffixes! These are the Naming Charms. They turn actions
+      and descriptions into THINGS you can hold, see, or talk about."
+
+      He pulls the word "CREATE" from the mist. "This is a verb — an action. But watch!"
+      He attaches "-TION" to the end, and the word transforms into a glowing orb labelled
+      "CREATION". "Now it's a noun — a thing! The act of creating becomes a creation —
+      something real, something you can point to."
+
+      "Think of it this way," he says with a wink. "Verbs are like running streams. Noun
+      suffixes are like freezing the stream into an ice sculpture. Same water, new form!"
+    introductionZh: |
+      Morpho 教授带着一个装满银色旋涡迷雾的大水晶罐走进教室。"同学们，上次我们
+      学了放在词前面的咒语。今天我们翻转到另一端——后缀！这些是命名魔咒。它们能
+      把动作和描述变成你可以握住、看到或谈论的东西。"
+
+      他从迷雾中拉出 "CREATE" 这个词。"这是一个动词——一个动作。但看好了！"
+      他把 "-TION" 接到末尾，这个词变成了一个标着 "CREATION" 的发光球体。"现在
+      它是一个名词——一个事物！创造的行为变成了一件创造物——真实存在的东西！"
+
+      "这样理解，"他眨眨眼说，"动词就像流动的小溪。名词后缀就像把小溪冻成冰雕。
+      同样的水，全新的形式！"
+
+    rules:
+      - pattern: '-tion / -sion'
+        meaning: 'turns verbs into nouns (the act or result of doing something)'
+        meaningZh: '将动词变为名词（做某事的行为或结果）'
+        examples:
+          - base: 'create'
+            transformed: 'creation'
+            sentence: 'The wizard''s latest creation was a flying carpet powered by moonlight.'
+            sentenceZh: '巫师最新的创造物是一张由月光驱动的飞毯。'
+          - base: 'educate'
+            transformed: 'education'
+            sentence: 'A good magical education includes learning about dragons, potions, and ancient runes.'
+            sentenceZh: '良好的魔法教育包括学习龙、药水和古代符文。'
+          - base: 'decide'
+            transformed: 'decision'
+            sentence: 'The fairy queen''s decision to open the forest to humans changed everything.'
+            sentenceZh: '仙子女王决定向人类开放森林，这改变了一切。'
+          - base: 'explode'
+            transformed: 'explosion'
+            sentence: 'The explosion of colours when the phoenix was reborn lit up the entire sky.'
+            sentenceZh: '凤凰重生时的色彩爆发照亮了整片天空。'
+
+      - pattern: '-ment'
+        meaning: 'turns verbs into nouns (the process or result)'
+        meaningZh: '将动词变为名词（过程或结果）'
+        examples:
+          - base: 'achieve'
+            transformed: 'achievement'
+            sentence: 'Taming a wild griffin is considered the greatest achievement for any young wizard.'
+            sentenceZh: '驯服一只野生狮鹫被认为是任何年轻巫师最伟大的成就。'
+          - base: 'improve'
+            transformed: 'improvement'
+            sentence: 'The improvement in her spell-casting was remarkable after just one week of practice.'
+            sentenceZh: '经过仅仅一周的练习，她的施法水平有了显著提升。'
+          - base: 'entertain'
+            transformed: 'entertainment'
+            sentence: 'The court jester provided entertainment for the royal dragons every evening.'
+            sentenceZh: '宫廷小丑每天晚上为皇家巨龙提供娱乐。'
+          - base: 'equip'
+            transformed: 'equipment'
+            sentence: 'Make sure you bring the right equipment for your journey through the enchanted cave.'
+            sentenceZh: '确保你带上合适的装备，穿越魔法洞穴。'
+
+      - pattern: '-ness'
+        meaning: 'turns adjectives into nouns (the quality or state of being)'
+        meaningZh: '将形容词变为名词（某种品质或状态）'
+        examples:
+          - base: 'dark'
+            transformed: 'darkness'
+            sentence: 'The darkness inside the dragon''s cave was so thick you could almost touch it.'
+            sentenceZh: '龙穴里的黑暗浓厚得仿佛可以触摸。'
+          - base: 'kind'
+            transformed: 'kindness'
+            sentence: 'The fairy rewarded the girl''s kindness by granting her three wishes.'
+            sentenceZh: '仙子为了报答女孩的善良，给了她三个愿望。'
+          - base: 'weak'
+            transformed: 'weakness'
+            sentence: 'Every dragon has a secret weakness — you just have to find it!'
+            sentenceZh: '每条龙都有一个秘密弱点——你只需要找到它！'
+          - base: 'aware'
+            transformed: 'awareness'
+            sentence: 'The elves have an incredible awareness of every creature moving through their forest.'
+            sentenceZh: '精灵们对穿越森林的每一个生物都有着不可思议的感知力。'
+
+      - pattern: '-ity'
+        meaning: 'turns adjectives into nouns (often from -ble, -ous, -al adjectives)'
+        meaningZh: '将形容词变为名词（常用于 -ble, -ous, -al 结尾的形容词）'
+        examples:
+          - base: 'able'
+            transformed: 'ability'
+            sentence: 'The young witch discovered her ability to talk to animals on her ninth birthday.'
+            sentenceZh: '小女巫在九岁生日那天发现了自己与动物交谈的能力。'
+          - base: 'creative'
+            transformed: 'creativity'
+            sentence: 'The art teacher praised the student''s creativity in designing a new magical creature.'
+            sentenceZh: '美术老师表扬了学生在设计新魔法生物时的创造力。'
+          - base: 'curious'
+            transformed: 'curiosity'
+            sentence: 'Curiosity led the cat through the enchanted mirror into a world made entirely of yarn.'
+            sentenceZh: '好奇心驱使猫咪穿过魔镜，来到了一个完全由毛线构成的世界。'
+
+      - pattern: '-ence / -ance'
+        meaning: 'turns verbs/adjectives into nouns (state or quality)'
+        meaningZh: '将动词或形容词变为名词（状态或品质）'
+        examples:
+          - base: 'confident'
+            transformed: 'confidence'
+            sentence: 'With each spell she mastered, the young witch''s confidence grew stronger.'
+            sentenceZh: '每掌握一个咒语，小女巫的信心就增强一分。'
+          - base: 'perform'
+            transformed: 'performance'
+            sentence: 'The dragon''s performance in the aerial show earned a standing ovation from the crowd.'
+            sentenceZh: '巨龙在空中表演中的精彩表现赢得了观众的起立鼓掌。'
+          - base: 'important'
+            transformed: 'importance'
+            sentence: 'Professor Morpho always stresses the importance of pronouncing spells correctly.'
+            sentenceZh: 'Morpho 教授总是强调正确念咒语的重要性。'
+          - base: 'appear'
+            transformed: 'appearance'
+            sentence: 'The sudden appearance of a golden phoenix surprised everyone at the academy.'
+            sentenceZh: '一只金色凤凰的突然出现让学院里的所有人都大吃一惊。'
+
+    tips:
+      - 'Most verbs ending in -ate become -ation nouns: create → creation, educate → education, celebrate → celebration.'
+      - 'Verbs ending in -de or -se often use -sion: decide → decision, explode → explosion, confuse → confusion.'
+      - '-ness can be added to almost ANY adjective: happy → happiness, sad → sadness, silly → silliness.'
+      - 'When adding -ity, the spelling often changes: able → ability (drop -le), curious → curiosity (drop -ous).'
+      - 'Common FCE trap: -ment vs -tion. Usually, -ment goes with shorter verbs (agree → agreement) and -tion with longer ones (communicate → communication).'
+    tipsZh:
+      - '大多数以 -ate 结尾的动词变成 -ation 名词：create → creation, educate → education, celebrate → celebration。'
+      - '以 -de 或 -se 结尾的动词常用 -sion：decide → decision, explode → explosion, confuse → confusion。'
+      - '-ness 几乎可以加到任何形容词上：happy → happiness, sad → sadness, silly → silliness。'
+      - '加 -ity 时拼写经常变化：able → ability（去掉 -le），curious → curiosity（去掉 -ous）。'
+      - '常见 FCE 陷阱：-ment 还是 -tion？通常 -ment 搭配较短的动词（agree → agreement），-tion 搭配较长的动词（communicate → communication）。'
+
+    practicePreview:
+      - id: Q01-L03-P01
+        question: 'The _____ (DARK) of the enchanted forest frightened the young travellers.'
+        questionZh: '魔法森林的黑暗让年轻的旅行者们感到害怕。'
+        answer: 'darkness'
+        explanation: 'We need a noun here (after "The"). Dark (adjective) + -ness = darkness (noun).'
+        explanationZh: '这里需要一个名词（在 "The" 之后）。dark（形容词）+ -ness = darkness（名词）。'
+      - id: Q01-L03-P02
+        question: 'Winning the spell competition was a huge _____ (ACHIEVE) for the young witch.'
+        questionZh: '赢得咒语比赛对这位年轻女巫来说是一个巨大的成就。'
+        answer: 'achievement'
+        explanation: 'We need a noun after "a huge". Achieve (verb) + -ment = achievement (noun).'
+        explanationZh: '在 "a huge" 后需要名词。achieve（动词）+ -ment = achievement（名词）。'
+      - id: Q01-L03-P03
+        question: 'The wizard was amazed by the dragon''s sudden _____ (APPEAR) in the great hall.'
+        questionZh: '巫师对巨龙在大厅的突然出现感到震惊。'
+        answer: 'appearance'
+        explanation: 'We need a noun after the possessive "dragon''s". Appear (verb) + -ance = appearance (noun).'
+        explanationZh: '在所有格 "dragon''s" 后需要名词。appear（动词）+ -ance = appearance（名词）。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Adjective Suffixes
+  # ─────────────────────────────────────────────
+  - id: Q01-L04
+    title: 'Adjective Suffixes — The Description Enchantments'
+    titleZh: '形容词后缀——描述附魔'
+
+    introduction: |
+      "Welcome back, word wizards!" Professor Morpho calls out, waving his wand to reveal
+      a shimmering tapestry on the wall. It shows a plain grey dragon. "This dragon is...
+      boring. Dull. Nothing special." The class giggles.
+
+      "But watch what happens when we add Description Enchantments!" He casts suffix after
+      suffix: the dragon becomes POWERFUL, FEARLESS, INCREDIBLE, DANGEROUS, and
+      CREATIVE — each word lighting up in a different colour on the tapestry, and with each
+      new adjective, the dragon transforms: growing wings, sprouting flames, gleaming
+      with scales of gold.
+
+      "Adjective suffixes are like painting with words," Professor Morpho explains. "They
+      turn plain nouns and verbs into vivid descriptions. A wizard without adjectives is like
+      an artist without colours — technically functional, but terribly dull!"
+    introductionZh: |
+      "欢迎回来，词汇巫师们！"Morpho 教授呼唤道，挥动魔杖在墙上展示了一幅闪闪
+      发光的挂毯。上面画着一条灰色的普通龙。"这条龙……无聊、暗淡、毫无特别之处。"
+      全班哈哈大笑。
+
+      "但看看加上描述附魔会怎样！"他一个接一个地施加后缀：龙变得 POWERFUL（强大的）、
+      FEARLESS（无畏的）、INCREDIBLE（不可思议的）、DANGEROUS（危险的）和 CREATIVE
+      （有创造力的）——每个词在挂毯上亮起不同的颜色，每添加一个新形容词，龙就发生变化：
+      长出翅膀、喷出火焰、闪耀着金色鳞片。
+
+      "形容词后缀就像用词语作画，"Morpho 教授解释道。"它们把普通的名词和动词
+      变成生动的描述。一个没有形容词的巫师就像一个没有颜色的画家——技术上能用，
+      但无比乏味！"
+
+    rules:
+      - pattern: '-ful'
+        meaning: 'full of, having a lot of'
+        meaningZh: '充满……的，有很多……的'
+        examples:
+          - base: 'power'
+            transformed: 'powerful'
+            sentence: 'The powerful sorceress could move mountains with a single word.'
+            sentenceZh: '强大的女巫只需一个词就能移山。'
+          - base: 'wonder'
+            transformed: 'wonderful'
+            sentence: 'The children had a wonderful time flying on the backs of giant eagles.'
+            sentenceZh: '孩子们骑在巨鹰背上飞行，度过了美好的时光。'
+          - base: 'beauty'
+            transformed: 'beautiful'
+            sentence: 'The mermaid''s beautiful singing could calm even the wildest ocean storms.'
+            sentenceZh: '美人鱼美丽的歌声甚至能平息最狂暴的海洋风暴。'
+          - base: 'success'
+            transformed: 'successful'
+            sentence: 'After many failed attempts, the alchemist was finally successful in turning lead into gold.'
+            sentenceZh: '经过多次失败的尝试，炼金术士终于成功地将铅变成了金子。'
+
+      - pattern: '-less'
+        meaning: 'without, lacking'
+        meaningZh: '没有……的，缺乏……的'
+        examples:
+          - base: 'fear'
+            transformed: 'fearless'
+            sentence: 'The fearless knight charged straight at the three-headed serpent.'
+            sentenceZh: '无畏的骑士直接冲向三头巨蛇。'
+          - base: 'hope'
+            transformed: 'hopeless'
+            sentence: 'The situation seemed hopeless until a friendly phoenix appeared with a healing feather.'
+            sentenceZh: '情况看起来毫无希望，直到一只友好的凤凰带着治愈之羽出现。'
+          - base: 'care'
+            transformed: 'careless'
+            sentence: 'The careless apprentice accidentally turned his teacher into a frog.'
+            sentenceZh: '粗心的学徒不小心把老师变成了青蛙。'
+          - base: 'end'
+            transformed: 'endless'
+            sentence: 'The enchanted library had endless shelves of spell books reaching up to the clouds.'
+            sentenceZh: '魔法图书馆有无尽的书架，一直延伸到云端。'
+
+      - pattern: '-able / -ible'
+        meaning: 'can be done, possible to'
+        meaningZh: '可以……的，能够……的'
+        examples:
+          - base: 'enjoy'
+            transformed: 'enjoyable'
+            sentence: 'The dragon ride was the most enjoyable part of the school trip to Magic Mountain.'
+            sentenceZh: '骑龙是去魔法山学校旅行中最令人愉快的部分。'
+          - base: 'believe'
+            transformed: 'believable'
+            sentence: 'The elf''s story about meeting a talking tree was hardly believable.'
+            sentenceZh: '精灵关于遇到一棵会说话的树的故事几乎令人难以置信。'
+          - base: 'flex'
+            transformed: 'flexible'
+            sentence: 'The flexible vine bridge swayed dangerously as the adventurers crossed the canyon.'
+            sentenceZh: '柔韧的藤蔓桥在冒险者们穿越峡谷时危险地摇晃着。'
+          - base: 'sense'
+            transformed: 'sensible'
+            sentence: 'It would be sensible to pack extra food before entering the enchanted desert.'
+            sentenceZh: '在进入魔法沙漠之前多带些食物是明智的。'
+
+      - pattern: '-ous'
+        meaning: 'having the quality of, characterised by'
+        meaningZh: '具有……性质的，以……为特征的'
+        examples:
+          - base: 'danger'
+            transformed: 'dangerous'
+            sentence: 'Exploring the volcano alone is extremely dangerous, even for experienced wizards.'
+            sentenceZh: '独自探索火山是极其危险的，即使对有经验的巫师也是如此。'
+          - base: 'fame'
+            transformed: 'famous'
+            sentence: 'The famous wizard Merlin once lived in a crystal cave beneath the mountains.'
+            sentenceZh: '著名的巫师梅林曾住在山下的水晶洞穴里。'
+          - base: 'mystery'
+            transformed: 'mysterious'
+            sentence: 'A mysterious light glowed from the deepest part of the enchanted forest.'
+            sentenceZh: '魔法森林最深处发出一道神秘的光芒。'
+          - base: 'adventure'
+            transformed: 'adventurous'
+            sentence: 'The adventurous cat explored every corner of the haunted castle.'
+            sentenceZh: '那只爱冒险的猫探索了闹鬼城堡的每一个角落。'
+
+      - pattern: '-ive'
+        meaning: 'having the nature of, tending to'
+        meaningZh: '具有……性质的，倾向于……的'
+        examples:
+          - base: 'create'
+            transformed: 'creative'
+            sentence: 'The creative witch designed a broomstick that could also serve as an umbrella.'
+            sentenceZh: '有创造力的女巫设计了一把既能飞又能当伞用的扫帚。'
+          - base: 'attract'
+            transformed: 'attractive'
+            sentence: 'The dragon found the shiny gemstones very attractive and added them to its collection.'
+            sentenceZh: '巨龙觉得闪亮的宝石很有吸引力，把它们加入了自己的收藏。'
+          - base: 'act'
+            transformed: 'active'
+            sentence: 'Baby dragons are most active at night, when they love to chase fireflies.'
+            sentenceZh: '小龙在夜间最活跃，它们喜欢追逐萤火虫。'
+          - base: 'impress'
+            transformed: 'impressive'
+            sentence: 'The wizard''s impressive fireworks display lit up the entire kingdom.'
+            sentenceZh: '巫师令人印象深刻的烟花表演照亮了整个王国。'
+
+    tips:
+      - '-ful and -less are opposites! Careful (with care) vs careless (without care). Hopeful vs hopeless.'
+      - 'Spelling trap: "beautiful" not "beautyfull" — beauty drops the Y and adds -iful. Only ONE L at the end!'
+      - '-able is more common with everyday verbs (enjoyable, comfortable). -ible is often for Latin-origin words (visible, possible).'
+      - 'When adding -ous, sometimes the base word changes: fame → famous (drop -e), mystery → mysterious (drop -y, add -ious).'
+      - 'FCE loves testing -ive words: create → creative, act → active, attract → attractive, impress → impressive.'
+    tipsZh:
+      - '-ful 和 -less 是反义词！careful（小心的）vs careless（粗心的）。hopeful（充满希望的）vs hopeless（绝望的）。'
+      - '拼写陷阱："beautiful" 不是 "beautyfull"——beauty 去掉 Y 加 -iful。结尾只有一个 L！'
+      - '-able 更常搭配日常动词（enjoyable, comfortable）。-ible 常用于拉丁语源词汇（visible, possible）。'
+      - '加 -ous 时，词根有时会变化：fame → famous（去掉 -e），mystery → mysterious（去掉 -y，加 -ious）。'
+      - 'FCE 喜欢考 -ive 词汇：create → creative, act → active, attract → attractive, impress → impressive。'
+
+    practicePreview:
+      - id: Q01-L04-P01
+        question: 'The _____ (FEAR) princess walked straight into the dragon''s lair without hesitating.'
+        questionZh: '无畏的公主毫不犹豫地径直走进了龙穴。'
+        answer: 'fearless'
+        explanation: 'Fear + -less = fearless (without fear). The princess had no fear.'
+        explanationZh: 'fear + -less = fearless（无畏的）。公主没有恐惧。'
+      - id: Q01-L04-P02
+        question: 'Be careful! This potion is extremely _____ (DANGER) if you use too much.'
+        questionZh: '小心！这瓶药水如果用太多是非常危险的。'
+        answer: 'dangerous'
+        explanation: 'Danger + -ous = dangerous. Note: we keep the "e" before adding -ous here.'
+        explanationZh: 'danger + -ous = dangerous。注意：这里在加 -ous 前保留了 "e"。'
+      - id: Q01-L04-P03
+        question: 'The wizard''s _____ (CREATE) solution to the riddle impressed everyone.'
+        questionZh: '巫师对谜语的创造性解答让每个人都印象深刻。'
+        answer: 'creative'
+        explanation: 'Create + -ive = creative (having the quality of creation). We need an adjective before the noun "solution".'
+        explanationZh: 'create + -ive = creative（有创造力的）。名词 "solution" 前需要形容词。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Adverb & Verb Suffixes
+  # ─────────────────────────────────────────────
+  - id: Q01-L05
+    title: 'Adverb & Verb Suffixes — The Action Modifiers'
+    titleZh: '副词与动词后缀——动作修饰符'
+
+    introduction: |
+      "We're nearly at the end of our suffix journey!" Professor Morpho announces proudly.
+      "Today we learn two more types of spell endings. First: the -LY charm, which turns
+      descriptions into the WAY things happen. A careful wizard casts spells carefully.
+      A quick dragon flies quickly."
+
+      He snaps his fingers and a tiny tornado of words spins around the room. "And second:
+      verb-making suffixes! These turn adjectives and nouns INTO actions. You can take
+      something SIMPLE and simplify it. Take something WIDE and widen it. Take something
+      PURE and purify it!"
+
+      The students watch in amazement as the words on the blackboard transform themselves,
+      adjectives sprouting legs and starting to dance — they've become verbs! "After today,"
+      Professor Morpho grins, "you'll be able to create ANY type of word you need. That's
+      true word magic!"
+    introductionZh: |
+      "我们的后缀之旅快到终点了！"Morpho 教授自豪地宣布。"今天我们学习两种
+      新的咒语尾缀。第一种：-LY 魔咒，它把描述变成事情发生的方式。一个小心的
+      巫师会小心地施法。一条快速的龙会快速地飞行。"
+
+      他打了个响指，一个由词语组成的小旋风在教室里旋转。"第二种：动词化后缀！
+      它们把形容词和名词变成动作。你可以把简单的东西简化（simplify），把宽的
+      东西加宽（widen），把纯净的东西净化（purify）！"
+
+      学生们惊奇地看着黑板上的词自己变形，形容词们长出了腿开始跳舞——它们变成
+      了动词！"上完今天的课，"Morpho 教授笑着说，"你们就能创造任何你需要的
+      词类了。这才是真正的词汇魔法！"
+
+    rules:
+      - pattern: '-ly'
+        meaning: 'turns adjectives into adverbs (describes how something is done)'
+        meaningZh: '将形容词变为副词（描述某事如何完成）'
+        examples:
+          - base: 'careful'
+            transformed: 'carefully'
+            sentence: 'The wizard carefully mixed the glowing ingredients into the bubbling cauldron.'
+            sentenceZh: '巫师小心翼翼地将发光的原料混入冒泡的大锅中。'
+          - base: 'quick'
+            transformed: 'quickly'
+            sentence: 'The fairy quickly darted behind the mushroom to hide from the curious troll.'
+            sentenceZh: '仙子迅速地闪到蘑菇后面，躲避好奇的巨魔。'
+          - base: 'fortunate'
+            transformed: 'fortunately'
+            sentence: 'Fortunately, the dragon was sleeping when the adventurers tiptoed past its cave.'
+            sentenceZh: '幸运的是，当冒险者们蹑手蹑脚经过龙穴时，龙正在睡觉。'
+          - base: 'complete'
+            transformed: 'completely'
+            sentence: 'The enchanted forest had completely disappeared by the time the sun rose.'
+            sentenceZh: '太阳升起时，魔法森林已经完全消失了。'
+
+      - pattern: '-ise / -ize'
+        meaning: 'turns nouns/adjectives into verbs (to make or become)'
+        meaningZh: '将名词或形容词变为动词（使成为或变成）'
+        examples:
+          - base: 'modern'
+            transformed: 'modernise'
+            sentence: 'The elf council voted to modernise their ancient tree-house city with crystal elevators.'
+            sentenceZh: '精灵议会投票决定用水晶电梯来使他们古老的树屋城市现代化。'
+          - base: 'apology'
+            transformed: 'apologise'
+            sentence: 'The dragon had to apologise after accidentally setting fire to the wizard''s hat.'
+            sentenceZh: '在不小心烧着了巫师的帽子后，龙不得不道歉。'
+          - base: 'real'
+            transformed: 'realise'
+            sentence: 'The princess didn''t realise she had magical powers until her tenth birthday.'
+            sentenceZh: '公主直到十岁生日才意识到自己拥有魔法力量。'
+          - base: 'organ'
+            transformed: 'organise'
+            sentence: 'The head fairy had to organise the annual Moonlight Festival all by herself.'
+            sentenceZh: '首席仙子不得不独自组织一年一度的月光节。'
+
+      - pattern: '-en'
+        meaning: 'turns adjectives into verbs (to make or become more)'
+        meaningZh: '将形容词变为动词（使变得更……）'
+        examples:
+          - base: 'wide'
+            transformed: 'widen'
+            sentence: 'The dwarves worked hard to widen the tunnel so the friendly giant could fit through.'
+            sentenceZh: '矮人们努力加宽隧道，好让友好的巨人能通过。'
+          - base: 'strength'
+            transformed: 'strengthen'
+            sentence: 'Drinking the magic potion will strengthen your shield spell against dark forces.'
+            sentenceZh: '喝下魔法药水将增强你的护盾咒语，抵御黑暗力量。'
+          - base: 'fright'
+            transformed: 'frighten'
+            sentence: 'The ghost tried to frighten the brave little knight, but she just laughed.'
+            sentenceZh: '幽灵试图吓唬勇敢的小骑士，但她只是笑了。'
+          - base: 'short'
+            transformed: 'shorten'
+            sentence: 'The wizard used a shrinking spell to shorten the impossibly long bridge.'
+            sentenceZh: '巫师用了一个缩小咒来缩短那座不可思议的长桥。'
+
+      - pattern: '-ify'
+        meaning: 'turns nouns/adjectives into verbs (to make or cause to be)'
+        meaningZh: '将名词或形容词变为动词（使成为）'
+        examples:
+          - base: 'simple'
+            transformed: 'simplify'
+            sentence: 'Professor Morpho tried to simplify the complicated spell so beginners could learn it.'
+            sentenceZh: 'Morpho 教授试图简化这个复杂的咒语，让初学者能学会。'
+          - base: 'identity'
+            transformed: 'identify'
+            sentence: 'Can you identify which mushroom in the enchanted garden is poisonous?'
+            sentenceZh: '你能辨认出魔法花园里哪个蘑菇是有毒的吗？'
+          - base: 'class'
+            transformed: 'classify'
+            sentence: 'The students had to classify all the magical creatures into three groups: friendly, shy, and dangerous.'
+            sentenceZh: '学生们必须将所有魔法生物分为三组：友好的、害羞的和危险的。'
+          - base: 'just'
+            transformed: 'justify'
+            sentence: 'The knight had to justify his decision to spare the dragon''s life to the angry villagers.'
+            sentenceZh: '骑士不得不向愤怒的村民们证明他放过龙的决定是正当的。'
+
+    tips:
+      - 'Spelling rule for -ly: if the adjective ends in -le, change -le to -ly (simple → simply, gentle → gently). If it ends in -y, change -y to -ily (happy → happily, easy → easily).'
+      - 'British English prefers -ise (organise, realise) while American English uses -ize (organize, realize). Both are correct in FCE!'
+      - '-en usually works with one-syllable adjectives: wide → widen, dark → darken, soft → soften. But NOT: green → greenen (wrong!).'
+      - '-ify often appears in longer, more formal words: identify, classify, justify, simplify. These are FCE favourites!'
+      - 'Trick: "true → truly" drops the E. "Whole → wholly" adds an extra L. These are irregular — memorise them!'
+    tipsZh:
+      - '-ly 拼写规则：如果形容词以 -le 结尾，改 -le 为 -ly（simple → simply, gentle → gently）。如果以 -y 结尾，改 -y 为 -ily（happy → happily, easy → easily）。'
+      - '英式英语偏好 -ise（organise, realise），美式英语用 -ize（organize, realize）。FCE 考试中两种都对！'
+      - '-en 通常用于单音节形容词：wide → widen, dark → darken, soft → soften。但不能说 green → greenen（错误！）。'
+      - '-ify 经常出现在较长、较正式的词中：identify, classify, justify, simplify。这些是 FCE 常考词！'
+      - '特殊变化："true → truly" 去掉 E。"whole → wholly" 多加一个 L。这些是不规则变化，需要记住！'
+
+    practicePreview:
+      - id: Q01-L05-P01
+        question: 'The space explorer moved _____ (CAUTIOUS) through the alien jungle, watching every step.'
+        questionZh: '太空探险者小心翼翼地穿过外星丛林，注意着每一步。'
+        answer: 'cautiously'
+        explanation: 'Cautious (adjective) + -ly = cautiously (adverb). It describes HOW she moved.'
+        explanationZh: 'cautious（形容词）+ -ly = cautiously（副词）。它描述了她移动的方式。'
+      - id: Q01-L05-P02
+        question: 'The fairy queen wanted to _____ (SIMPLE) the rules so that even the youngest pixies could understand.'
+        questionZh: '仙子女王想要简化规则，让最小的小精灵也能理解。'
+        answer: 'simplify'
+        explanation: 'Simple (adjective) → simplify (verb, using -ify suffix). Note: the -e is dropped.'
+        explanationZh: 'simple（形容词）→ simplify（动词，用 -ify 后缀）。注意：-e 被去掉了。'
+      - id: Q01-L05-P03
+        question: 'The dwarves need to _____ (WIDE) the gate so the friendly giant can enter the city.'
+        questionZh: '矮人们需要加宽大门，好让友好的巨人能进城。'
+        answer: 'widen'
+        explanation: 'Wide (adjective) + -en = widen (verb, to make wider). The -e is dropped before adding -en.'
+        explanationZh: 'wide（形容词）+ -en = widen（动词，使变宽）。加 -en 前去掉了 -e。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Word Family Mastery
+  # ─────────────────────────────────────────────
+  - id: Q01-L06
+    title: 'Word Family Mastery — The Grand Transformation'
+    titleZh: '词族精通——终极变形术'
+
+    introduction: |
+      "Congratulations!" Professor Morpho claps his hands, and fireworks of golden letters
+      explode across the ceiling. "You've learned every type of word spell — prefixes that
+      change meaning, suffixes that change word class. But a true word wizard doesn't just
+      know individual spells. They can chain them together!"
+
+      He writes "ACT" on the board. "From this one tiny word, watch what we can create."
+      His wand dances, and words bloom outward like branches of a tree: ACT → ACTION →
+      ACTIVE → ACTIVELY → REACT → REACTION → INACTIVE → INACTIVITY → OVERREACT.
+      "Nine words from ONE root! That's the power of a Word Family."
+
+      "In the FCE exam, they'll give you one word and expect you to transform it into
+      whatever the sentence needs — noun, verb, adjective, adverb, or even a negative
+      form. Today, we practise turning one word into ALL its possible forms. This is
+      the Grand Transformation — the most advanced spell in our Word Lab!"
+    introductionZh: |
+      "恭喜你们！"Morpho 教授拍拍手，金色字母的烟花在天花板上炸开。"你们已经
+      学会了每一种词汇咒语——改变意义的前缀、改变词性的后缀。但真正的词汇巫师
+      不只会单个咒语，他们还能把咒语串联起来！"
+
+      他在黑板上写下 "ACT"。"从这一个小小的词，看看我们能创造什么。"他的魔杖
+      飞舞着，词汇像大树的枝桠一样向外绽放：ACT → ACTION → ACTIVE → ACTIVELY →
+      REACT → REACTION → INACTIVE → INACTIVITY → OVERREACT。"从一个词根变出九个词！
+      这就是词族的力量。"
+
+      "在 FCE 考试中，他们会给你一个词，期望你把它变成句子需要的任何形式——
+      名词、动词、形容词、副词，甚至否定形式。今天，我们练习把一个词变成所有
+      可能的形式。这就是终极变形术——我们词汇实验室里最高级的咒语！"
+
+    rules:
+      - pattern: 'ACT family'
+        meaning: 'Complete word family built from the root "act"'
+        meaningZh: '从词根 "act" 构建的完整词族'
+        examples:
+          - base: 'act (verb)'
+            transformed: 'action (noun), active (adj), actively (adv), actor (person)'
+            sentence: 'The active young wizard took immediate action to save the village from the sleeping spell.'
+            sentenceZh: '这位活跃的年轻巫师立即采取行动，将村庄从沉睡咒语中解救出来。'
+          - base: 'act (verb)'
+            transformed: 'react (verb), reaction (noun), reactive (adj)'
+            sentence: 'The dragon''s reaction to the surprise party was to blow a massive ring of smoke.'
+            sentenceZh: '巨龙对惊喜派对的反应是吐出了一个巨大的烟圈。'
+          - base: 'act (verb)'
+            transformed: 'inactive (adj), inactivity (noun), inactively (adv)'
+            sentence: 'After weeks of inactivity, the dormant volcano suddenly erupted with magical crystals.'
+            sentenceZh: '经过数周的沉寂后，休眠的火山突然喷发出了魔法水晶。'
+          - base: 'act (verb)'
+            transformed: 'overreact (verb), interaction (noun), interactive (adj)'
+            sentence: 'The interactive map of the enchanted kingdom showed every creature in real time.'
+            sentenceZh: '魔法王国的互动地图实时显示每一个生物的位置。'
+
+      - pattern: 'CREATE family'
+        meaning: 'Complete word family built from the root "create"'
+        meaningZh: '从词根 "create" 构建的完整词族'
+        examples:
+          - base: 'create (verb)'
+            transformed: 'creation (noun), creative (adj), creatively (adv), creator (person)'
+            sentence: 'The creative inventor creatively designed a flying machine powered by dragon breath.'
+            sentenceZh: '这位有创造力的发明家创造性地设计了一台由龙息驱动的飞行器。'
+          - base: 'create (verb)'
+            transformed: 'creativity (noun, quality), recreate (verb, do again)'
+            sentence: 'It takes great creativity to recreate an ancient spell from only fragments of text.'
+            sentenceZh: '仅凭文本片段来重新创造一个古老的咒语需要极大的创造力。'
+          - base: 'create (verb)'
+            transformed: 'uncreative (adj, negative form)'
+            sentence: 'The uncreative troll could only copy other people''s ideas for building traps.'
+            sentenceZh: '没有创造力的巨魔只能抄袭别人建造陷阱的想法。'
+
+      - pattern: 'SUCCESS family'
+        meaning: 'Complete word family built from the root "succeed/success"'
+        meaningZh: '从词根 "succeed/success" 构建的完整词族'
+        examples:
+          - base: 'succeed (verb)'
+            transformed: 'success (noun), successful (adj), successfully (adv)'
+            sentence: 'The young astronaut successfully completed her first mission to the crystal planet.'
+            sentenceZh: '年轻的宇航员成功完成了她的第一次水晶星球任务。'
+          - base: 'succeed (verb)'
+            transformed: 'unsuccessful (adj), unsuccessfully (adv)'
+            sentence: 'The goblin unsuccessfully tried to sneak past the sleeping giant for the third time.'
+            sentenceZh: '小妖精第三次不成功地试图偷偷溜过沉睡的巨人。'
+          - base: 'succeed (verb)'
+            transformed: 'succession (noun), successive (adj), successor (person)'
+            sentence: 'Three successive storms battered the floating castle, but its magic held firm.'
+            sentenceZh: '三场连续的暴风雨袭击了浮空城堡，但它的魔法依然坚固。'
+
+      - pattern: 'IMAGINE family'
+        meaning: 'Complete word family built from the root "imagine"'
+        meaningZh: '从词根 "imagine" 构建的完整词族'
+        examples:
+          - base: 'imagine (verb)'
+            transformed: 'imagination (noun), imaginative (adj), imaginatively (adv)'
+            sentence: 'The imaginative storyteller described the alien world so vividly that everyone could picture it.'
+            sentenceZh: '富有想象力的故事讲述者将外星世界描述得如此生动，每个人都能想象出来。'
+          - base: 'imagine (verb)'
+            transformed: 'imaginary (adj, meaning "not real"), unimaginable (adj)'
+            sentence: 'The child had an imaginary friend — a tiny purple dragon that sat on her shoulder.'
+            sentenceZh: '这个孩子有一个想象中的朋友——一只坐在她肩膀上的紫色小龙。'
+          - base: 'imagine (verb)'
+            transformed: 'unimaginative (adj, negative)'
+            sentence: 'The unimaginative villain always used the same boring trap — a hole in the ground.'
+            sentenceZh: '那个缺乏想象力的反派总是用同一个无聊的陷阱——地上挖个洞。'
+
+      - pattern: 'DEPEND family'
+        meaning: 'Complete word family built from the root "depend"'
+        meaningZh: '从词根 "depend" 构建的完整词族'
+        examples:
+          - base: 'depend (verb)'
+            transformed: 'dependence (noun), dependent (adj), dependable (adj)'
+            sentence: 'The dependable owl always delivered the wizard''s letters on time, even in storms.'
+            sentenceZh: '这只可靠的猫头鹰总是准时送达巫师的信件，即使在暴风雨中也是如此。'
+          - base: 'depend (verb)'
+            transformed: 'independent (adj), independence (noun), independently (adv)'
+            sentence: 'The young dragon learned to fly independently, without any help from its parents.'
+            sentenceZh: '小龙学会了独立飞行，不需要父母的任何帮助。'
+          - base: 'depend (verb)'
+            transformed: 'dependable (adj), undependable (adj)'
+            sentence: 'The enchanted compass was undependable — it pointed to treasure one day and swamps the next.'
+            sentenceZh: '魔法指南针不可靠——今天指向宝藏，明天就指向沼泽。'
+
+    tips:
+      - 'In the FCE exam, always ask: "What word class does the sentence need?" Subject position = noun. Before a noun = adjective. After a verb = adverb. Is the meaning negative? Add a prefix!'
+      - 'Build a "word family tree" for every new word you learn. Start with the base word and branch out to all forms.'
+      - 'Watch for DOUBLE changes: some words need both a prefix AND a suffix change. Example: depend → independent → independently (prefix + suffix + suffix!).'
+      - 'The most common FCE word formation mistakes: forgetting the negative prefix, wrong noun suffix (-ment vs -tion), and misspelling -ful words (beautiful, NOT beautifull).'
+      - 'Practice trick: cover the answer in any FCE word formation exercise. Read the sentence, identify the word class needed, then build the word step by step.'
+      - 'Remember: some words have TWO adjective forms with different meanings! Imaginary (= not real) vs imaginative (= creative). Classic FCE trap!'
+    tipsZh:
+      - '在 FCE 考试中，永远先问："这个句子需要什么词性？"主语位置 = 名词。名词前 = 形容词。动词后 = 副词。意思是否定的？加前缀！'
+      - '为每个新学的词建立一棵"词族树"。从基本词开始，向所有形式延伸。'
+      - '注意双重变化：有些词需要同时改变前缀和后缀。例如：depend → independent → independently（前缀 + 后缀 + 后缀！）。'
+      - '最常见的 FCE 构词错误：忘记否定前缀、名词后缀用错（-ment vs -tion）、-ful 词拼写错误（beautiful，不是 beautifull）。'
+      - '练习技巧：在任何 FCE 构词练习中遮住答案。读句子，确定需要的词性，然后一步步构建单词。'
+      - '记住：有些词有两个意思不同的形容词形式！imaginary（= 不真实的）vs imaginative（= 有创造力的）。经典 FCE 陷阱！'
+
+    practicePreview:
+      - id: Q01-L06-P01
+        question: 'The witch showed great _____ (CREATIVE) when designing her underwater garden.'
+        questionZh: '女巫在设计她的水下花园时展现了极大的创造力。'
+        answer: 'creativity'
+        explanation: 'We need a noun after "great" (adjective + noun pattern). Create → creative → creativity (noun form of the quality).'
+        explanationZh: '在 "great" 后需要名词（形容词 + 名词搭配）。create → creative → creativity（表示品质的名词形式）。'
+      - id: Q01-L06-P02
+        question: 'The young dragon was finally able to live _____ (DEPEND) and find food on its own.'
+        questionZh: '小龙终于能够独立生活，自己寻找食物了。'
+        answer: 'independently'
+        explanation: 'We need an adverb to describe HOW it lives. Depend → independent (adj, with prefix in-) → independently (adverb, with -ly).'
+        explanationZh: '需要副词来描述它如何生活。depend → independent（形容词，加前缀 in-）→ independently（副词，加 -ly）。'
+      - id: Q01-L06-P03
+        question: 'The knight''s _____ (SUCCESS) attempt to cross the bridge meant he fell into the river again.'
+        questionZh: '骑士过桥失败了，这意味着他又掉进了河里。'
+        answer: 'unsuccessful'
+        explanation: 'The context shows failure ("fell into the river"), so we need the negative form. Succeed → success → successful → unsuccessful (with prefix un-).'
+        explanationZh: '上下文表明失败了（"掉进了河里"），所以需要否定形式。succeed → success → successful → unsuccessful（加前缀 un-）。'

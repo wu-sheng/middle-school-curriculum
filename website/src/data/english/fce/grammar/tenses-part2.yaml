@@ -1,0 +1,1489 @@
+category: 'Tenses (Part 2)'
+categoryZh: '时态（第二部分）'
+questions:
+  # ============================================================
+  # G0101-G0120: Future Forms (difficulty 1-2)
+  # will / going to / present continuous for future / future perfect
+  # ============================================================
+  - id: G0101
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-1]
+    context: fantasy
+    question: 'I think the spaceship _____ (arrive) by midnight.'
+    questionZh: '我觉得飞船会在午夜前 _____（到达）。'
+    answer: 'will arrive'
+    explanation: 'We use "will" for predictions based on personal belief or opinion.'
+    explanationZh: '用 will 表示基于个人信念或看法的预测。'
+    grammarPoint: 'Future - will (prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0102
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-1]
+    context: adventure
+    question: 'Look at those dark clouds! It _____ (rain) on our treasure hunt.'
+    questionZh: '看那些乌云！我们的寻宝之旅要 _____（下雨）了。'
+    answer: 'is going to rain'
+    explanation: 'We use "be going to" when there is present evidence for a future event. The dark clouds are evidence.'
+    explanationZh: '当有现在的证据预示未来事件时，用 be going to。乌云就是证据。'
+    grammarPoint: 'Future - going to (evidence-based prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0103
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-1]
+    context: science
+    question: 'Scientists believe humans _____ (live) on Mars one day.'
+    questionZh: '科学家相信人类有一天 _____（居住）在火星上。'
+    answer: 'will live'
+    explanation: '"Will" is used for general predictions about the future, especially with verbs like "believe" and "think".'
+    explanationZh: 'will 用于对未来的一般性预测，尤其搭配 believe、think 等动词。'
+    grammarPoint: 'Future - will (prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0104
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-1]
+    context: fantasy
+    question: 'The wizard has opened his spell book. He _____ (cast) a powerful spell!'
+    questionZh: '巫师打开了魔法书。他要 _____（施展）一个强大的魔法！'
+    answer: 'is going to cast'
+    explanation: 'We can see the wizard preparing, so we use "be going to" for a prediction based on what we observe now.'
+    explanationZh: '我们能看到巫师在准备，所以用 be going to 表示基于观察到的现象做出预测。'
+    grammarPoint: 'Future - going to (evidence-based prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0105
+    type: fill-blank
+    tags: [future-present-continuous, Q02, difficulty-1]
+    context: time-travel
+    question: 'We _____ (travel) back to Ancient Rome tomorrow morning.'
+    questionZh: '我们明天早上 _____（旅行）回到古罗马。'
+    answer: 'are travelling'
+    explanation: 'We use the present continuous for fixed future arrangements, especially with a definite time.'
+    explanationZh: '用现在进行时表示已确定的未来安排，尤其搭配具体时间。'
+    grammarPoint: 'Future - present continuous (arrangement)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0106
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-1]
+    context: adventure
+    question: 'Don''t worry — I _____ (help) you cross the enchanted bridge.'
+    questionZh: '别担心——我 _____（帮助）你穿过魔法桥。'
+    answer: 'will help'
+    explanation: 'We use "will" for spontaneous decisions and offers made at the moment of speaking.'
+    explanationZh: '用 will 表示说话时做出的即时决定或主动提议。'
+    grammarPoint: 'Future - will (spontaneous offer)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0107
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-1]
+    context: science
+    question: 'The robot''s battery is almost empty. It _____ (shut down) any second.'
+    questionZh: '机器人的电池快没电了。它随时要 _____（关机）。'
+    answer: 'is going to shut down'
+    explanation: 'The low battery is present evidence that the robot will shut down, so we use "be going to".'
+    explanationZh: '电池快没电是当前的证据，表明机器人即将关机，所以用 be going to。'
+    grammarPoint: 'Future - going to (evidence-based prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0108
+    type: fill-blank
+    tags: [future-present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The dragon-riding lesson _____ (start) at three o''clock this afternoon.'
+    questionZh: '骑龙课今天下午三点 _____（开始）。'
+    answer: 'is starting'
+    explanation: 'This is a scheduled arrangement with a specific time, so the present continuous is natural here.'
+    explanationZh: '这是有具体时间的既定安排，所以用现在进行时很自然。'
+    grammarPoint: 'Future - present continuous (arrangement)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0109
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-2]
+    context: time-travel
+    question: 'I promise I _____ (not/touch) anything when we visit the future.'
+    questionZh: '我保证我们参观未来时我 _____（不碰）任何东西。'
+    answer: 'will not touch'
+    explanation: 'We use "will" with promises. The negative form is "will not" (won''t).'
+    explanationZh: '用 will 搭配承诺。否定形式为 will not（won''t）。'
+    grammarPoint: 'Future - will (promise)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0110
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-2]
+    context: adventure
+    question: 'We _____ (explore) the haunted castle next weekend. We''ve already bought our tickets.'
+    questionZh: '我们下周末要去 _____（探索）闹鬼城堡。我们已经买好票了。'
+    answer: 'are going to explore'
+    explanation: 'We use "be going to" for plans and intentions that have already been decided.'
+    explanationZh: '用 be going to 表示已经决定好的计划和意图。'
+    grammarPoint: 'Future - going to (plan/intention)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0111
+    type: fill-blank
+    tags: [future-perfect, Q02, difficulty-2]
+    context: science
+    question: 'By next year, the astronaut _____ (complete) three missions to the space station.'
+    questionZh: '到明年，这位宇航员将 _____（完成）三次空间站任务。'
+    answer: 'will have completed'
+    explanation: 'The future perfect ("will have + past participle") describes something that will be finished before a future time.'
+    explanationZh: '将来完成时（will have + 过去分词）描述在未来某个时间之前将完成的事。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0112
+    type: fill-blank
+    tags: [future-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'By the time the sun sets, the elves _____ (build) a new treehouse village.'
+    questionZh: '在太阳落山之前，精灵们将 _____（建造）一个新的树屋村庄。'
+    answer: 'will have built'
+    explanation: '"By the time..." signals a deadline, so we use the future perfect to show completion before that point.'
+    explanationZh: '"By the time..." 表示一个截止时间，用将来完成时表示在那之前完成。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0113
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-1]
+    context: time-travel
+    question: 'Nobody knows what _____ (happen) if we change the past.'
+    questionZh: '没人知道如果我们改变过去会 _____（发生）什么。'
+    answer: 'will happen'
+    explanation: 'We use "will" for uncertain future events, especially after "nobody knows what..."'
+    explanationZh: '用 will 表示不确定的未来事件，尤其在 "nobody knows what..." 之后。'
+    grammarPoint: 'Future - will (uncertainty)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0114
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-2]
+    context: adventure
+    question: 'Watch out! That old rope bridge _____ (break)!'
+    questionZh: '小心！那座旧绳桥要 _____（断）了！'
+    answer: 'is going to break'
+    explanation: 'We can see the bridge is weak — there is present evidence of a future event, so we use "be going to".'
+    explanationZh: '我们能看到桥很脆弱——有当前的证据预示未来的事件，所以用 be going to。'
+    grammarPoint: 'Future - going to (evidence-based prediction)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0115
+    type: fill-blank
+    tags: [future-present-continuous, Q02, difficulty-2]
+    context: science
+    question: 'Professor Maple _____ (give) a talk about black holes at the planetarium tonight.'
+    questionZh: '梅普尔教授今晚在天文馆 _____（做）一场关于黑洞的讲座。'
+    answer: 'is giving'
+    explanation: 'This is a personal arrangement with a fixed time and place, so we use the present continuous.'
+    explanationZh: '这是有固定时间和地点的安排，所以用现在进行时。'
+    grammarPoint: 'Future - present continuous (arrangement)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0116
+    type: fill-blank
+    tags: [future-perfect, Q02, difficulty-2]
+    context: time-travel
+    question: 'By 2050, scientists _____ (invent) a real time machine — at least, I hope so!'
+    questionZh: '到2050年，科学家将 _____（发明）一台真正的时光机——至少我希望如此！'
+    answer: 'will have invented'
+    explanation: '"By 2050" sets a future deadline. The future perfect shows something completed before that deadline.'
+    explanationZh: '"到2050年"设定了一个未来的截止时间。将来完成时表示在截止时间前完成。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0117
+    type: fill-blank
+    tags: [future-will, Q02, difficulty-1]
+    context: fantasy
+    question: 'One day, I _____ (become) the greatest potion maker in the kingdom.'
+    questionZh: '总有一天，我 _____（成为）王国里最伟大的药剂师。'
+    answer: 'will become'
+    explanation: '"One day" signals a general future hope or dream. We use "will" for such predictions.'
+    explanationZh: '"One day" 表示对未来的希望或梦想。用 will 表示这类预测。'
+    grammarPoint: 'Future - will (prediction)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0118
+    type: fill-blank
+    tags: [future-going-to, Q02, difficulty-2]
+    context: adventure
+    question: 'I''ve packed my bag and studied the map. I _____ (climb) Mount Dragonfire this summer.'
+    questionZh: '我已经打包好行李、研究了地图。这个夏天我 _____（攀登）龙火山。'
+    answer: 'am going to climb'
+    explanation: 'The speaker has already prepared, showing a firm plan. We use "be going to" for decided plans.'
+    explanationZh: '说话者已经做好准备，说明是确定的计划。用 be going to 表示已决定的计划。'
+    grammarPoint: 'Future - going to (plan/intention)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0119
+    type: fill-blank
+    tags: [future-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'By the end of her training, the young witch _____ (learn) over a hundred spells.'
+    questionZh: '到训练结束时，小女巫将 _____（学会）一百多个咒语。'
+    answer: 'will have learned'
+    explanation: '"By the end of..." signals a future deadline. We use the future perfect to show accumulation up to that point.'
+    explanationZh: '"到……结束时"设定了未来截止点。用将来完成时表示到那时为止的积累。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0120
+    type: fill-blank
+    tags: [future-will, future-going-to, Q02, difficulty-2]
+    context: science
+    question: 'The rocket fuel is leaking! The launch _____ (not/go) ahead today.'
+    questionZh: '火箭燃料在泄漏！今天的发射 _____（不会进行）了。'
+    answer: 'is not going to go'
+    explanation: 'We can see evidence (the leak) that the launch will fail, so we use "be going to" for this evidence-based prediction.'
+    explanationZh: '我们能看到证据（泄漏），说明发射不会进行，所以用 be going to 表示基于证据的预测。'
+    grammarPoint: 'Future - going to (negative, evidence-based)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0121-G0130: Conditionals Type 0 (difficulty 1-2)
+  # If + present simple, present simple (general truths)
+  # ============================================================
+  - id: G0121
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: science
+    question: 'If you heat ice, it _____ (melt).'
+    questionZh: '如果你加热冰，它就 _____（融化）。'
+    answer: 'melts'
+    explanation: 'Zero conditional uses present simple in both clauses for general truths and scientific facts.'
+    explanationZh: '零条件句在两个分句中都用一般现在时，表示一般真理和科学事实。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0122
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: science
+    question: 'If you mix red and blue paint, you _____ (get) purple.'
+    questionZh: '如果你把红色和蓝色颜料混合，你 _____（得到）紫色。'
+    answer: 'get'
+    explanation: 'This is a general fact about colour mixing — zero conditional with present simple in both parts.'
+    explanationZh: '这是关于颜色混合的一般事实——零条件句，两个部分都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0123
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: fantasy
+    question: 'If a phoenix dies, it _____ (rise) again from the ashes.'
+    questionZh: '如果凤凰死了，它就会从灰烬中 _____（重生）。'
+    answer: 'rises'
+    explanation: 'In fantasy lore, this is treated as a general truth — zero conditional.'
+    explanationZh: '在奇幻传说中，这被视为一般真理——零条件句。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0124
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: science
+    question: 'Water _____ (boil) if you heat it to 100 degrees Celsius.'
+    questionZh: '如果你把水加热到100摄氏度，水就 _____（沸腾）。'
+    answer: 'boils'
+    explanation: 'A scientific fact expressed with the zero conditional. Both clauses use present simple.'
+    explanationZh: '用零条件句表达科学事实。两个分句都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0125
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: adventure
+    question: 'If you touch a cactus, it _____ (hurt).'
+    questionZh: '如果你碰仙人掌，它就 _____（扎人）。'
+    answer: 'hurts'
+    explanation: 'This is always true — a zero conditional expressing a general fact about cacti.'
+    explanationZh: '这永远是真的——零条件句表达关于仙人掌的一般事实。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0126
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-2]
+    context: science
+    question: 'If the temperature _____ (drop) below zero, the pond freezes.'
+    questionZh: '如果温度 _____（降到）零度以下，池塘就会结冰。'
+    answer: 'drops'
+    explanation: 'Zero conditional: present simple in the if-clause for a condition that is always true.'
+    explanationZh: '零条件句：if 分句用一般现在时表示始终成立的条件。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0127
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-2]
+    context: fantasy
+    question: 'Vampires _____ (turn) to dust if sunlight touches them.'
+    questionZh: '如果阳光照到吸血鬼，它们就 _____（化为）灰尘。'
+    answer: 'turn'
+    explanation: 'In fantasy, this is a permanent rule — zero conditional with present simple.'
+    explanationZh: '在奇幻世界中，这是永恒的规则——零条件句用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0128
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-2]
+    context: science
+    question: 'Plants _____ (not/grow) if they don''t get enough light.'
+    questionZh: '如果植物得不到足够的光照，它们就 _____（不生长）。'
+    answer: 'do not grow'
+    explanation: 'Zero conditional negative: "do not + base verb" in the main clause for a general truth.'
+    explanationZh: '零条件句否定形式：主句用 do not + 动词原形表示一般真理。'
+    grammarPoint: 'Zero conditional (negative)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0129
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-1]
+    context: adventure
+    question: 'If you sail too far north, you _____ (find) icebergs.'
+    questionZh: '如果你航行得太靠北，你就 _____（发现）冰山。'
+    answer: 'find'
+    explanation: 'A general truth about geography, expressed with the zero conditional.'
+    explanationZh: '关于地理的一般真理，用零条件句表达。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0130
+    type: fill-blank
+    tags: [conditional-0, Q02, difficulty-2]
+    context: science
+    question: 'If metal _____ (get) very hot, it expands.'
+    questionZh: '如果金属 _____（变得）非常热，它就会膨胀。'
+    answer: 'gets'
+    explanation: 'A scientific fact: present simple in both parts of the zero conditional.'
+    explanationZh: '科学事实：零条件句两个部分都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0131-G0140: Conditionals Type 1 (difficulty 1-2)
+  # If + present simple, will + base verb (real/possible future)
+  # ============================================================
+  - id: G0131
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-1]
+    context: fantasy
+    question: 'If the wizard finds the spell, he _____ (save) the kingdom.'
+    questionZh: '如果巫师找到咒语，他就 _____（拯救）王国。'
+    answer: 'will save'
+    explanation: 'First conditional: "If + present simple, will + base verb" for a real, possible future event.'
+    explanationZh: '第一条件句：If + 一般现在时，will + 动词原形，表示真实可能的未来事件。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0132
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-1]
+    context: time-travel
+    question: 'If we press this button, the time machine _____ (take) us to the year 3000.'
+    questionZh: '如果我们按下这个按钮，时光机就 _____（带）我们去3000年。'
+    answer: 'will take'
+    explanation: 'First conditional for a possible future result of pressing the button.'
+    explanationZh: '第一条件句表示按下按钮后可能出现的未来结果。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0133
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-1]
+    context: adventure
+    question: 'If it rains tomorrow, we _____ (not/go) on the jungle expedition.'
+    questionZh: '如果明天下雨，我们就 _____（不去）丛林探险。'
+    answer: 'will not go'
+    explanation: 'First conditional negative: "will not + base verb" in the main clause.'
+    explanationZh: '第一条件句否定形式：主句用 will not + 动词原形。'
+    grammarPoint: 'First conditional (negative)'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0134
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-2]
+    context: science
+    question: 'The experiment _____ (fail) if you don''t measure the chemicals carefully.'
+    questionZh: '如果你不仔细测量化学药品，实验就 _____（失败）。'
+    answer: 'will fail'
+    explanation: 'First conditional with the main clause first. The order of clauses can be swapped.'
+    explanationZh: '第一条件句，主句在前。两个分句的顺序可以互换。'
+    grammarPoint: 'First conditional (reversed order)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0135
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-1]
+    context: fantasy
+    question: 'If you open that treasure chest, you _____ (find) gold coins inside.'
+    questionZh: '如果你打开那个宝箱，你 _____（发现）里面有金币。'
+    answer: 'will find'
+    explanation: 'First conditional expressing a likely outcome in the future.'
+    explanationZh: '第一条件句表达未来可能的结果。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0136
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-2]
+    context: time-travel
+    question: 'If the portal _____ (open) at dawn, we will jump through it immediately.'
+    questionZh: '如果传送门在黎明时 _____（打开），我们会立刻跳进去。'
+    answer: 'opens'
+    explanation: 'In first conditional, the if-clause uses present simple, NOT "will". This is a common mistake.'
+    explanationZh: '在第一条件句中，if 分句用一般现在时，不用 will。这是常见错误。'
+    grammarPoint: 'First conditional (if-clause verb form)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0137
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-2]
+    context: adventure
+    question: 'If the pirates _____ (not/leave) by sunset, the navy will attack.'
+    questionZh: '如果海盗在日落前 _____（不离开），海军就会进攻。'
+    answer: 'do not leave'
+    explanation: 'The if-clause takes present simple, even though we mean the future. Negative: "do not + base verb".'
+    explanationZh: 'if 分句用一般现在时，即使表示未来。否定：do not + 动词原形。'
+    grammarPoint: 'First conditional (negative if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0138
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-1]
+    context: science
+    question: 'If the astronaut reaches the moon, she _____ (collect) rock samples.'
+    questionZh: '如果宇航员到达月球，她就 _____（采集）岩石样本。'
+    answer: 'will collect'
+    explanation: 'First conditional for a real possibility in the near future.'
+    explanationZh: '第一条件句表示近期真实的可能性。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0139
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-2]
+    context: fantasy
+    question: 'If you _____ (touch) the cursed mirror, something terrible will happen.'
+    questionZh: '如果你 _____（碰）被诅咒的镜子，可怕的事就会发生。'
+    answer: 'touch'
+    explanation: 'Remember: the if-clause uses present simple. "Touch" is the base form, not "will touch".'
+    explanationZh: '记住：if 分句用一般现在时。touch 是原形，不是 will touch。'
+    grammarPoint: 'First conditional (if-clause verb form)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0140
+    type: fill-blank
+    tags: [conditional-1, Q02, difficulty-2]
+    context: time-travel
+    question: 'What _____ (happen) if someone accidentally changes history?'
+    questionZh: '如果有人不小心改变了历史，_____ 会（发生）什么？'
+    answer: 'will happen'
+    explanation: 'First conditional question form: "What will happen if...?" for a real future possibility.'
+    explanationZh: '第一条件句疑问形式：What will happen if...? 表示真实的未来可能性。'
+    grammarPoint: 'First conditional (question form)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0141-G0150: Conditionals Type 2 (difficulty 2)
+  # If + past simple, would + base verb (unreal present/future)
+  # ============================================================
+  - id: G0141
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: time-travel
+    question: 'If I had a time machine, I _____ (visit) the dinosaurs.'
+    questionZh: '如果我有一台时光机，我 _____（拜访）恐龙。'
+    answer: 'would visit'
+    explanation: 'Second conditional: "If + past simple, would + base verb" for imaginary or unlikely situations.'
+    explanationZh: '第二条件句：If + 一般过去时，would + 动词原形，表示想象的或不太可能的情况。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0142
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: fantasy
+    question: 'If dragons were real, I _____ (ride) one to school every day.'
+    questionZh: '如果龙是真的，我每天 _____（骑）一条龙去上学。'
+    answer: 'would ride'
+    explanation: 'An imaginary situation — dragons are not real — so we use the second conditional.'
+    explanationZh: '这是想象的情况——龙不是真的——所以用第二条件句。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0143
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: science
+    question: 'If we _____ (live) on Jupiter, we would weigh much more.'
+    questionZh: '如果我们 _____（住）在木星上，我们的体重会重得多。'
+    answer: 'lived'
+    explanation: 'Second conditional if-clause uses past simple. We don''t live on Jupiter — it''s hypothetical.'
+    explanationZh: '第二条件句的 if 分句用一般过去时。我们不住在木星上——这是假设。'
+    grammarPoint: 'Second conditional (if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0144
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: adventure
+    question: 'If I found a magic lamp, I _____ (wish) for the power of flight.'
+    questionZh: '如果我找到一盏神灯，我 _____（许愿）要飞行的能力。'
+    answer: 'would wish'
+    explanation: 'An imaginary situation about finding a magic lamp. Second conditional with "would + base verb".'
+    explanationZh: '关于找到神灯的想象情况。第二条件句用 would + 动词原形。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0145
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: fantasy
+    question: 'If I _____ (be) a wizard, I would make all homework disappear.'
+    questionZh: '如果我 _____（是）一个巫师，我会让所有作业消失。'
+    answer: 'were'
+    explanation: 'In second conditional, we traditionally use "were" for all subjects with "be" (I were, he were, etc.).'
+    explanationZh: '在第二条件句中，be 动词传统上对所有主语都用 were（I were, he were 等）。'
+    grammarPoint: 'Second conditional (were for all subjects)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0146
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: time-travel
+    question: 'If we could travel to any century, I _____ (choose) the age of the Vikings.'
+    questionZh: '如果我们能去任何一个世纪，我 _____（选择）维京人的时代。'
+    answer: 'would choose'
+    explanation: 'Second conditional with "could" in the if-clause instead of past simple — both are possible.'
+    explanationZh: '第二条件句的 if 分句用 could 代替一般过去时——两者都可以。'
+    grammarPoint: 'Second conditional (could in if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0147
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: science
+    question: 'If the Earth _____ (not/have) a moon, the nights would be completely dark.'
+    questionZh: '如果地球 _____（没有）月亮，夜晚将一片漆黑。'
+    answer: 'did not have'
+    explanation: 'Second conditional negative: "did not + base verb" in the if-clause for an unreal present situation.'
+    explanationZh: '第二条件句否定形式：if 分句用 did not + 动词原形表示不真实的当前情况。'
+    grammarPoint: 'Second conditional (negative)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0148
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: adventure
+    question: 'She _____ (explore) the deep ocean if she had a submarine.'
+    questionZh: '如果她有一艘潜水艇，她 _____（探索）深海。'
+    answer: 'would explore'
+    explanation: 'Second conditional with reversed clause order. She does not have a submarine — it is imaginary.'
+    explanationZh: '第二条件句，分句顺序颠倒。她没有潜水艇——这是想象的。'
+    grammarPoint: 'Second conditional (reversed order)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0149
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: fantasy
+    question: 'If unicorns existed, people _____ (not/need) cars — they could ride them instead!'
+    questionZh: '如果独角兽存在，人们就 _____（不需要）汽车了——他们可以骑独角兽！'
+    answer: 'would not need'
+    explanation: 'Second conditional negative main clause: "would not + base verb".'
+    explanationZh: '第二条件句否定主句：would not + 动词原形。'
+    grammarPoint: 'Second conditional (negative main clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0150
+    type: fill-blank
+    tags: [conditional-2, Q02, difficulty-2]
+    context: science
+    question: 'What _____ you _____ (do) if you discovered a new planet?'
+    questionZh: '如果你发现了一颗新行星，你 _____（做）什么？'
+    answer: 'would ... do'
+    explanation: 'Second conditional question: "What would you do if + past simple?" for an imaginary scenario.'
+    explanationZh: '第二条件句疑问句：What would you do if + 一般过去时？用于想象的情景。'
+    grammarPoint: 'Second conditional (question form)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0151-G0160: Conditionals Type 3 (difficulty 2)
+  # If + past perfect, would have + past participle (unreal past)
+  # ============================================================
+  - id: G0151
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: adventure
+    question: 'If she had studied the map, she _____ (not/get) lost in the enchanted forest.'
+    questionZh: '如果她研究过地图，她就 _____（不会迷路）在魔法森林里。'
+    answer: 'would not have got'
+    explanation: 'Third conditional: "If + past perfect, would have + past participle" for unreal past situations. She didn''t study the map, so she got lost.'
+    explanationZh: '第三条件句：If + 过去完成时，would have + 过去分词，表示不真实的过去情况。她没有研究地图，所以迷路了。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0152
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: time-travel
+    question: 'If the time traveller had remembered the code, he _____ (open) the portal.'
+    questionZh: '如果时间旅行者记得密码，他就 _____（打开）传送门了。'
+    answer: 'would have opened'
+    explanation: 'Third conditional for a past event that did not happen. He forgot the code, so the portal stayed shut.'
+    explanationZh: '第三条件句用于没有发生的过去事件。他忘了密码，所以传送门没开。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0153
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: science
+    question: 'If the scientist _____ (check) her calculations, the rocket would have landed safely.'
+    questionZh: '如果那位科学家 _____（检查过）她的计算，火箭就能安全着陆了。'
+    answer: 'had checked'
+    explanation: 'Third conditional if-clause uses past perfect. She did not check, so the landing failed.'
+    explanationZh: '第三条件句的 if 分句用过去完成时。她没有检查，所以着陆失败了。'
+    grammarPoint: 'Third conditional (if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0154
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: fantasy
+    question: 'The dragon _____ (not/escape) if the knights had locked the cage properly.'
+    questionZh: '如果骑士们把笼子锁好了，龙就 _____（不会逃跑）。'
+    answer: 'would not have escaped'
+    explanation: 'Third conditional negative: the knights didn''t lock the cage, so the dragon escaped.'
+    explanationZh: '第三条件句否定形式：骑士们没有锁好笼子，所以龙逃跑了。'
+    grammarPoint: 'Third conditional (negative)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0155
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: adventure
+    question: 'If we had packed enough food, we _____ (not/have to) turn back from the mountain.'
+    questionZh: '如果我们带了足够的食物，我们就 _____（不必）从山上折返。'
+    answer: 'would not have had to'
+    explanation: 'Third conditional with "have to". They didn''t pack enough food, so they had to turn back.'
+    explanationZh: '第三条件句搭配 have to。他们没带够食物，所以不得不折返。'
+    grammarPoint: 'Third conditional (would not have had to)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0156
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: time-travel
+    question: 'If the explorer _____ (not/touch) the ancient artifact, the curse would not have started.'
+    questionZh: '如果探险家 _____（没有碰）那件古代文物，诅咒就不会开始。'
+    answer: 'had not touched'
+    explanation: 'Third conditional negative if-clause: "had not + past participle". The explorer did touch it.'
+    explanationZh: '第三条件句否定 if 分句：had not + 过去分词。探险家确实碰了。'
+    grammarPoint: 'Third conditional (negative if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0157
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: science
+    question: 'The experiment _____ (succeed) if the power had not gone out.'
+    questionZh: '如果没有停电，实验就 _____（成功）了。'
+    answer: 'would have succeeded'
+    explanation: 'Third conditional with reversed clause order. The power did go out, so the experiment failed.'
+    explanationZh: '第三条件句，分句顺序颠倒。确实停电了，所以实验失败了。'
+    grammarPoint: 'Third conditional (reversed order)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0158
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: fantasy
+    question: 'If the fairy _____ (grant) three wishes instead of one, the prince would have saved everyone.'
+    questionZh: '如果仙女 _____（给了）三个愿望而不是一个，王子就能拯救所有人了。'
+    answer: 'had granted'
+    explanation: 'Third conditional: past perfect in the if-clause for something that did not happen in the past.'
+    explanationZh: '第三条件句：if 分句用过去完成时表示过去没有发生的事。'
+    grammarPoint: 'Third conditional (if-clause)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0159
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: adventure
+    question: 'If we had sailed east instead of west, we _____ (discover) a completely different island.'
+    questionZh: '如果我们向东航行而不是向西，我们就 _____（发现）一座完全不同的岛屿了。'
+    answer: 'would have discovered'
+    explanation: 'Third conditional: imagining a different past decision and its result.'
+    explanationZh: '第三条件句：想象一个不同的过去决定及其结果。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0160
+    type: fill-blank
+    tags: [conditional-3, Q02, difficulty-2]
+    context: science
+    question: 'What _____ (happen) if dinosaurs had not gone extinct?'
+    questionZh: '如果恐龙没有灭绝，_____（会发生）什么？'
+    answer: 'would have happened'
+    explanation: 'Third conditional question form: "What would have happened if + past perfect?"'
+    explanationZh: '第三条件句疑问形式：What would have happened if + 过去完成时？'
+    grammarPoint: 'Third conditional (question form)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0161-G0170: Mixed Conditionals (difficulty 2-3)
+  # If + past perfect, would + base verb (past cause → present result)
+  # If + past simple, would have + past participle (present cause → past result)
+  # ============================================================
+  - id: G0161
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-2]
+    context: fantasy
+    question: 'If I had trained harder, I _____ (be) a better dragon rider now.'
+    questionZh: '如果我以前训练得更努力，我现在 _____（是）一个更好的驭龙骑士。'
+    answer: 'would be'
+    explanation: 'Mixed conditional (past → present): "If + past perfect, would + base verb". The past action affects the present.'
+    explanationZh: '混合条件句（过去→现在）：If + 过去完成时，would + 动词原形。过去的行为影响现在。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0162
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: time-travel
+    question: 'If I had fixed the time machine yesterday, we _____ (not/be) stuck in the Stone Age now.'
+    questionZh: '如果我昨天修好了时光机，我们现在就 _____（不会困在）石器时代了。'
+    answer: 'would not be'
+    explanation: 'Mixed conditional (past → present): a past failure causes a present problem.'
+    explanationZh: '混合条件句（过去→现在）：过去的失误导致了现在的问题。'
+    grammarPoint: 'Mixed conditional (past → present, negative)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0163
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: adventure
+    question: 'If she were braver, she _____ (join) the expedition to the volcano last month.'
+    questionZh: '如果她更勇敢的话，她上个月就 _____（参加）火山探险了。'
+    answer: 'would have joined'
+    explanation: 'Mixed conditional (present → past): "If + past simple, would have + past participle". A present trait affected a past decision.'
+    explanationZh: '混合条件句（现在→过去）：If + 一般过去时，would have + 过去分词。现在的特质影响了过去的决定。'
+    grammarPoint: 'Mixed conditional (present → past)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0164
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-2]
+    context: science
+    question: 'If the astronaut had eaten a good breakfast, she _____ (feel) much stronger right now.'
+    questionZh: '如果宇航员吃了一顿好早餐，她现在 _____（感觉）会好得多。'
+    answer: 'would feel'
+    explanation: 'Mixed conditional (past → present): not eating breakfast in the past affects how she feels now.'
+    explanationZh: '混合条件句（过去→现在）：过去没吃早餐影响了她现在的感觉。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0165
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: fantasy
+    question: 'If he weren''t so forgetful, he _____ (not/lose) the magic key last week.'
+    questionZh: '如果他不是那么健忘，他上周就 _____（不会弄丢）魔法钥匙。'
+    answer: 'would not have lost'
+    explanation: 'Mixed conditional (present → past): a present characteristic (forgetful) caused a past event.'
+    explanationZh: '混合条件句（现在→过去）：现在的特点（健忘）导致了过去的事件。'
+    grammarPoint: 'Mixed conditional (present → past, negative)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0166
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-2]
+    context: time-travel
+    question: 'If we had listened to the old map, we _____ (know) the way home right now.'
+    questionZh: '如果我们听从了旧地图的指引，我们现在就 _____（知道）回家的路了。'
+    answer: 'would know'
+    explanation: 'Mixed conditional (past → present): ignoring the map in the past means being lost now.'
+    explanationZh: '混合条件句（过去→现在）：过去忽略了地图导致现在迷路。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0167
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: science
+    question: 'If the professor understood computers better, she _____ (solve) the coding problem yesterday.'
+    questionZh: '如果教授更懂电脑，她昨天就 _____（解决）编程问题了。'
+    answer: 'would have solved'
+    explanation: 'Mixed conditional (present → past): a permanent lack of skill affected a past situation.'
+    explanationZh: '混合条件句（现在→过去）：持续缺乏的技能影响了过去的情况。'
+    grammarPoint: 'Mixed conditional (present → past)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0168
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: adventure
+    question: 'If the pirates had not found the treasure, they _____ (still/be) searching the ocean today.'
+    questionZh: '如果海盗们没有找到宝藏，他们今天 _____（还在）搜寻大海。'
+    answer: 'would still be'
+    explanation: 'Mixed conditional (past → present): a completed past event changed the present situation.'
+    explanationZh: '混合条件句（过去→现在）：已完成的过去事件改变了当前的状况。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0169
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-2]
+    context: fantasy
+    question: 'If the enchantress had taught me the spell, I _____ (be able to) fly right now.'
+    questionZh: '如果女巫教过我那个咒语，我现在就 _____（能够）飞了。'
+    answer: 'would be able to'
+    explanation: 'Mixed conditional (past → present): a past missed lesson affects present abilities.'
+    explanationZh: '混合条件句（过去→现在）：过去错过的课程影响了现在的能力。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0170
+    type: fill-blank
+    tags: [mixed-conditional, Q02, difficulty-3]
+    context: time-travel
+    question: 'If time travel weren''t so dangerous, we _____ (go) back to see the pyramids being built last year.'
+    questionZh: '如果时间旅行不那么危险，我们去年就 _____（去）看金字塔建造了。'
+    answer: 'would have gone'
+    explanation: 'Mixed conditional (present → past): a present general truth prevented a past action.'
+    explanationZh: '混合条件句（现在→过去）：现在的一般事实阻止了过去的行动。'
+    grammarPoint: 'Mixed conditional (present → past)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  # ============================================================
+  # G0171-G0180: I wish / If only (difficulty 2-3)
+  # I wish / If only + past simple (present unreal)
+  # I wish / If only + past perfect (past regret)
+  # I wish / If only + would (future complaint/desire)
+  # ============================================================
+  - id: G0171
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-2]
+    context: fantasy
+    question: 'I wish I _____ (know) how to fly like a dragon.'
+    questionZh: '我希望我 _____（知道）怎样像龙一样飞翔。'
+    answer: 'knew'
+    explanation: '"I wish + past simple" expresses a wish about the present that is not true. You don''t know how to fly.'
+    explanationZh: 'I wish + 一般过去时表示对当前不真实情况的愿望。你不知道怎么飞。'
+    grammarPoint: 'I wish + past simple (present unreal)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0172
+    type: fill-blank
+    tags: [if-only, Q02, difficulty-2]
+    context: adventure
+    question: 'If only we _____ (not/forget) the magic password yesterday.'
+    questionZh: '要是我们昨天 _____（没有忘记）魔法密码就好了。'
+    answer: 'had not forgotten'
+    explanation: '"If only + past perfect" expresses regret about a past action. We did forget the password.'
+    explanationZh: 'If only + 过去完成时表示对过去行为的后悔。我们确实忘了密码。'
+    grammarPoint: 'If only + past perfect (past regret)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0173
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-2]
+    context: science
+    question: 'I wish the spaceship _____ (be) faster. It takes too long to reach Mars!'
+    questionZh: '我希望飞船 _____（更快）。去火星花的时间太长了！'
+    answer: 'were'
+    explanation: '"I wish + were" for a present unreal situation. The spaceship is not fast enough.'
+    explanationZh: 'I wish + were 表示当前不真实的情况。飞船不够快。'
+    grammarPoint: 'I wish + past simple (were)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0174
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-3]
+    context: fantasy
+    question: 'I wish the wizard _____ (not/turn) my cat into a frog last night!'
+    questionZh: '我真希望巫师昨晚 _____（没有把）我的猫变成青蛙！'
+    answer: 'had not turned'
+    explanation: '"I wish + past perfect" expresses regret about something that happened in the past.'
+    explanationZh: 'I wish + 过去完成时表示对已经发生的过去事件的后悔。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0175
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-3]
+    context: time-travel
+    question: 'I wish it _____ (not/rain) every time we visit the Stone Age. It''s so annoying!'
+    questionZh: '我真希望我们每次去石器时代的时候 _____（不下雨）。太烦了！'
+    answer: 'would not rain'
+    explanation: '"I wish + would" expresses frustration about a repeated situation or desire for change.'
+    explanationZh: 'I wish + would 表示对反复出现的情况的不满或希望改变。'
+    grammarPoint: 'I wish + would (complaint about repeated events)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0176
+    type: fill-blank
+    tags: [if-only, Q02, difficulty-2]
+    context: adventure
+    question: 'If only I _____ (have) a map of this underground cave!'
+    questionZh: '要是我 _____（有）这个地下洞穴的地图就好了！'
+    answer: 'had'
+    explanation: '"If only + past simple" for a present wish. You don''t have a map right now.'
+    explanationZh: 'If only + 一般过去时表示当前的愿望。你现在没有地图。'
+    grammarPoint: 'If only + past simple (present wish)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0177
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-3]
+    context: science
+    question: 'I wish I _____ (pay) more attention during the lab safety lesson last week.'
+    questionZh: '我真希望上周实验安全课时我 _____（更认真地听讲）了。'
+    answer: 'had paid'
+    explanation: '"I wish + past perfect" for regret about a past action. You didn''t pay attention.'
+    explanationZh: 'I wish + 过去完成时表示对过去行为的后悔。你没有认真听讲。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0178
+    type: fill-blank
+    tags: [if-only, Q02, difficulty-2]
+    context: fantasy
+    question: 'If only the magic shield _____ (be) stronger!'
+    questionZh: '要是魔法护盾 _____（更坚固）就好了！'
+    answer: 'were'
+    explanation: '"If only + were" for a present wish that is not real. The shield is not strong enough.'
+    explanationZh: 'If only + were 表示不真实的当前愿望。护盾不够坚固。'
+    grammarPoint: 'If only + past simple (present wish)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0179
+    type: fill-blank
+    tags: [i-wish, Q02, difficulty-3]
+    context: adventure
+    question: 'I wish my little brother _____ (stop) following me on every adventure!'
+    questionZh: '我真希望我的小弟弟 _____（不要）每次冒险都跟着我！'
+    answer: 'would stop'
+    explanation: '"I wish + would" for annoyance or a desire for someone to change their behaviour.'
+    explanationZh: 'I wish + would 表示对他人行为的不满或希望他们改变。'
+    grammarPoint: 'I wish + would (desire for change)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0180
+    type: fill-blank
+    tags: [if-only, Q02, difficulty-3]
+    context: time-travel
+    question: 'If only we _____ (bring) warmer clothes when we travelled to the Ice Age!'
+    questionZh: '要是我们去冰河时期旅行时 _____（带了）更暖和的衣服就好了！'
+    answer: 'had brought'
+    explanation: '"If only + past perfect" for regret about a past action. You didn''t bring warm clothes.'
+    explanationZh: 'If only + 过去完成时表示对过去行为的后悔。你们没有带暖和的衣服。'
+    grammarPoint: 'If only + past perfect (past regret)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  # ============================================================
+  # G0181-G0190: Mixed Tense Review — Multiple Choice (difficulty 2-3)
+  # ============================================================
+  - id: G0181
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: time-travel
+    question: 'While the explorers _____ through the ancient temple, they found a hidden room.'
+    questionZh: '当探险者们在古庙里 _____ 的时候，他们发现了一个密室。'
+    options:
+      - 'walked'
+      - 'were walking'
+      - 'have walked'
+      - 'had walked'
+    answer: 'were walking'
+    explanation: 'Past continuous for a longer background action interrupted by a shorter one ("found").'
+    explanationZh: '过去进行时表示被较短的动作（found）打断的较长的背景动作。'
+    grammarPoint: 'Past continuous vs past simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0182
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: fantasy
+    question: 'The wizard _____ his spell book before the battle began.'
+    questionZh: '巫师在战斗开始之前 _____ 了他的魔法书。'
+    options:
+      - 'already read'
+      - 'has already read'
+      - 'had already read'
+      - 'was already reading'
+    answer: 'had already read'
+    explanation: 'Past perfect for an action completed before another past action ("before the battle began").'
+    explanationZh: '过去完成时表示在另一个过去动作（"战斗开始之前"）之前完成的动作。'
+    grammarPoint: 'Past perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0183
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: science
+    question: 'Look! The robot _____ on its own for the first time!'
+    questionZh: '看！机器人第一次自己 _____ 了！'
+    options:
+      - 'walks'
+      - 'is walking'
+      - 'has walked'
+      - 'walked'
+    answer: 'is walking'
+    explanation: '"Look!" signals something happening right now — present continuous.'
+    explanationZh: '"Look!" 表示此刻正在发生的事——现在进行时。'
+    grammarPoint: 'Present continuous (happening now)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0184
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: adventure
+    question: 'The pirate captain _____ to more than 30 islands in his life so far.'
+    questionZh: '到目前为止，海盗船长一生中 _____ 了30多个岛屿。'
+    options:
+      - 'sailed'
+      - 'has sailed'
+      - 'was sailing'
+      - 'sails'
+    answer: 'has sailed'
+    explanation: '"So far" and "in his life" signal present perfect — a life experience up to now.'
+    explanationZh: '"到目前为止"和"一生中"是现在完成时的标志——到目前为止的人生经历。'
+    grammarPoint: 'Present perfect (life experience)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0185
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-3]
+    context: time-travel
+    question: 'By this time next week, we _____ through four different centuries.'
+    questionZh: '到下周这个时候，我们将 _____ 了四个不同的世纪。'
+    options:
+      - 'will travel'
+      - 'travel'
+      - 'will have travelled'
+      - 'are travelling'
+    answer: 'will have travelled'
+    explanation: '"By this time next week" sets a future deadline — future perfect for completion before that point.'
+    explanationZh: '"到下周这个时候"设定了未来截止点——用将来完成时表示在那之前完成。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0186
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: fantasy
+    question: 'Every morning, the enchanted clock _____ a different melody.'
+    questionZh: '每天早上，魔法时钟都 _____ 一首不同的旋律。'
+    options:
+      - 'is playing'
+      - 'plays'
+      - 'has played'
+      - 'played'
+    answer: 'plays'
+    explanation: '"Every morning" signals a routine — present simple for habits and regular actions.'
+    explanationZh: '"每天早上"表示常规——一般现在时用于习惯和规律性的动作。'
+    grammarPoint: 'Present simple (routine)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0187
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-3]
+    context: science
+    question: 'The scientists _____ on the experiment for three years before they finally succeeded.'
+    questionZh: '科学家们在最终成功之前已经 _____ 这个实验三年了。'
+    options:
+      - 'worked'
+      - 'have been working'
+      - 'had been working'
+      - 'were working'
+    answer: 'had been working'
+    explanation: 'Past perfect continuous for a long action that continued up to another past event ("finally succeeded").'
+    explanationZh: '过去完成进行时表示持续到另一个过去事件（"最终成功"）之前的长时间动作。'
+    grammarPoint: 'Past perfect continuous'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0188
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-2]
+    context: adventure
+    question: 'Quick! The treasure ship _____! We need to catch it!'
+    questionZh: '快！宝藏船正在 _____！我们得追上它！'
+    options:
+      - 'leaves'
+      - 'left'
+      - 'is leaving'
+      - 'has left'
+    answer: 'is leaving'
+    explanation: '"Quick!" signals urgency about something happening right now — present continuous.'
+    explanationZh: '"Quick!" 表示对正在发生的事情的紧迫感——现在进行时。'
+    grammarPoint: 'Present continuous (in progress now)'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0189
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-3]
+    context: fantasy
+    question: 'If I _____ the enchanted forest, I would have found the golden acorn.'
+    questionZh: '如果我 _____ 了魔法森林，我就能找到金色橡果了。'
+    options:
+      - 'entered'
+      - 'had entered'
+      - 'have entered'
+      - 'would enter'
+    answer: 'had entered'
+    explanation: 'Third conditional if-clause requires past perfect: "If I had entered..., I would have found..."'
+    explanationZh: '第三条件句的 if 分句需要过去完成时：If I had entered..., I would have found...'
+    grammarPoint: 'Third conditional (if-clause)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0190
+    type: multiple-choice
+    tags: [tense-review, Q02, difficulty-3]
+    context: time-travel
+    question: 'I wish I _____ more about ancient Egypt before our trip last week.'
+    questionZh: '我真希望上周旅行之前我 _____ 更多关于古埃及的知识。'
+    options:
+      - 'knew'
+      - 'know'
+      - 'had known'
+      - 'would know'
+    answer: 'had known'
+    explanation: '"I wish + past perfect" for regret about a past event — you didn''t know enough before the trip.'
+    explanationZh: 'I wish + 过去完成时表示对过去事件的后悔——旅行前你没有了解足够多。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q02
+    difficulty: 3
+
+  # ============================================================
+  # G0191-G0200: Mixed Tense Review — Cloze Passages (difficulty 2-3)
+  # ============================================================
+  - id: G0191
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-2]
+    context: adventure
+    passage: 'The young pirate _____(1) her first ship last Tuesday. She _____(2) for this moment her whole life. Now she _____(3) across the ocean every day.'
+    passageZh: '小海盗上周二 _____(1) 了她的第一艘船。她一辈子都在 _____(2) 这一刻。现在她每天 _____(3) 穿越大海。'
+    blanks:
+      - id: G0191-1
+        answer: 'received'
+        explanation: 'Past simple for a completed action at a specific past time ("last Tuesday").'
+        explanationZh: '一般过去时表示在具体过去时间（"上周二"）完成的动作。'
+      - id: G0191-2
+        answer: 'had been waiting'
+        explanation: 'Past perfect continuous for an action that continued up to the past event of receiving the ship.'
+        explanationZh: '过去完成进行时表示持续到收到船那一刻的动作。'
+      - id: G0191-3
+        answer: 'sails'
+        explanation: 'Present simple for a current routine ("every day").'
+        explanationZh: '一般现在时表示当前的日常活动（"每天"）。'
+    grammarPoint: 'Past simple / past perfect continuous / present simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0192
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-2]
+    context: fantasy
+    passage: 'Right now, the dragon _____(1) on a pile of gold. It _____(2) there since the Middle Ages. Tomorrow, a brave knight _____(3) to wake it up.'
+    passageZh: '现在，龙正 _____(1) 在一堆金子上。自中世纪以来它就一直 _____(2) 在那里。明天，一个勇敢的骑士将 _____(3) 去唤醒它。'
+    blanks:
+      - id: G0192-1
+        answer: 'is sleeping'
+        explanation: 'Present continuous for an action happening right now ("Right now").'
+        explanationZh: '现在进行时表示此刻正在发生的动作（"现在"）。'
+      - id: G0192-2
+        answer: 'has been sleeping'
+        explanation: 'Present perfect continuous for an action that started in the past and continues to now ("since the Middle Ages").'
+        explanationZh: '现在完成进行时表示从过去开始一直持续到现在的动作（"自中世纪以来"）。'
+      - id: G0192-3
+        answer: 'is going to try'
+        explanation: '"Going to" for a planned future action — the knight has already decided.'
+        explanationZh: 'be going to 表示已计划的未来行动——骑士已经决定了。'
+    grammarPoint: 'Present continuous / present perfect continuous / going to'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0193
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: science
+    passage: 'Before the launch, the engineers _____(1) every part of the rocket twice. When the countdown _____(2), the crowd held its breath. By the time it reached orbit, it _____(3) over 2,000 kilometres.'
+    passageZh: '在发射之前，工程师们 _____(1) 了火箭的每一个部件两次。当倒计时 _____(2) 时，人群屏住了呼吸。到它进入轨道时，它已经 _____(3) 了两千多公里。'
+    blanks:
+      - id: G0193-1
+        answer: 'had checked'
+        explanation: 'Past perfect for an action completed before another past event ("Before the launch").'
+        explanationZh: '过去完成时表示在另一个过去事件（"发射之前"）之前完成的动作。'
+      - id: G0193-2
+        answer: 'began'
+        explanation: 'Past simple for a single completed past event in the narrative.'
+        explanationZh: '一般过去时表示叙述中单个完成的过去事件。'
+      - id: G0193-3
+        answer: 'had travelled'
+        explanation: 'Past perfect for an action completed before reaching orbit ("By the time...").'
+        explanationZh: '过去完成时表示在到达轨道之前完成的动作（"到……时"）。'
+    grammarPoint: 'Past perfect / past simple'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0194
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-2]
+    context: time-travel
+    passage: 'We _____(1) in ancient Greece for two hours now. I _____(2) so many amazing things already! I think we _____(3) back before dinner.'
+    passageZh: '我们到现在已经在古希腊 _____(1) 了两个小时。我已经 _____(2) 了很多惊人的东西！我想我们会在晚饭前 _____(3) 回去的。'
+    blanks:
+      - id: G0194-1
+        answer: 'have been walking'
+        explanation: 'Present perfect continuous for an action that started in the past and is still happening ("for two hours now").'
+        explanationZh: '现在完成进行时表示从过去开始到现在仍在进行的动作（"到现在两个小时"）。'
+      - id: G0194-2
+        answer: 'have seen'
+        explanation: 'Present perfect for life experiences up to now ("already").'
+        explanationZh: '现在完成时表示到目前为止的经历（"已经"）。'
+      - id: G0194-3
+        answer: 'will go'
+        explanation: '"Will" for a prediction based on belief ("I think...").'
+        explanationZh: 'will 用于基于信念的预测（"我想……"）。'
+    grammarPoint: 'Present perfect continuous / present perfect / will'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0195
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: adventure
+    passage: 'Yesterday, the young explorer _____(1) into the cave. She _____(2) anything like it before. Crystals _____(3) on every wall.'
+    passageZh: '昨天，年轻的探险家 _____(1) 了山洞。她以前从未 _____(2) 过这样的景象。每面墙上都有水晶在 _____(3)。'
+    blanks:
+      - id: G0195-1
+        answer: 'walked'
+        explanation: 'Past simple for a completed action at a specific past time ("Yesterday").'
+        explanationZh: '一般过去时表示在具体过去时间（"昨天"）完成的动作。'
+      - id: G0195-2
+        answer: 'had never seen'
+        explanation: 'Past perfect for an experience (or lack of it) before another past event.'
+        explanationZh: '过去完成时表示在另一个过去事件之前的经历（或缺乏经历）。'
+      - id: G0195-3
+        answer: 'were glowing'
+        explanation: 'Past continuous for a scene in progress when she entered — describing the background.'
+        explanationZh: '过去进行时描述她进入时正在进行的场景——描述背景。'
+    grammarPoint: 'Past simple / past perfect / past continuous'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0196
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-2]
+    context: fantasy
+    passage: 'The witch always _____(1) potions on Mondays. Today, she _____(2) a very special one. She _____(3) all the ingredients by lunchtime.'
+    passageZh: '女巫总是在周一 _____(1) 药水。今天，她正在 _____(2) 一种非常特殊的药水。她将在午餐前 _____(3) 所有材料。'
+    blanks:
+      - id: G0196-1
+        answer: 'brews'
+        explanation: 'Present simple for a regular habit ("always... on Mondays").'
+        explanationZh: '一般现在时表示规律性的习惯（"总是在周一"）。'
+      - id: G0196-2
+        answer: 'is brewing'
+        explanation: 'Present continuous for something happening right now ("Today").'
+        explanationZh: '现在进行时表示此刻正在发生的事（"今天"）。'
+      - id: G0196-3
+        answer: 'will have gathered'
+        explanation: 'Future perfect for something to be completed before a future deadline ("by lunchtime").'
+        explanationZh: '将来完成时表示在未来截止时间（"午餐前"）之前完成的事。'
+    grammarPoint: 'Present simple / present continuous / future perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0197
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: time-travel
+    passage: 'If we _____(1) the time portal yesterday, we would be home now. Instead, we _____(2) here for three days and still _____(3) how to get back.'
+    passageZh: '如果我们昨天 _____(1) 了时空传送门，我们现在就在家了。然而我们已经在这里 _____(2) 了三天，仍然不 _____(3) 怎么回去。'
+    blanks:
+      - id: G0197-1
+        answer: 'had found'
+        explanation: 'Mixed conditional (past → present): past perfect in the if-clause for an unreal past event with a present result.'
+        explanationZh: '混合条件句（过去→现在）：if 分句用过去完成时表示不真实的过去事件，影响现在的结果。'
+      - id: G0197-2
+        answer: 'have been stuck'
+        explanation: 'Present perfect for an action that started in the past and continues to now ("for three days").'
+        explanationZh: '现在完成时表示从过去开始持续到现在的状态（"三天"）。'
+      - id: G0197-3
+        answer: 'do not know'
+        explanation: 'Present simple for a current fact — they still lack the knowledge.'
+        explanationZh: '一般现在时表示当前的事实——他们仍然不知道。'
+    grammarPoint: 'Mixed conditional / present perfect / present simple'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0198
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: science
+    passage: 'The inventor _____(1) on a flying car since 2020. She believes it _____(2) ready by next summer. Right now, she _____(3) the engine for the third time.'
+    passageZh: '这位发明家从2020年起就一直在 _____(1) 飞行汽车。她相信到明年夏天它就 _____(2) 了。现在，她正在第三次 _____(3) 引擎。'
+    blanks:
+      - id: G0198-1
+        answer: 'has been working'
+        explanation: 'Present perfect continuous for an activity that started in the past and is still going on ("since 2020").'
+        explanationZh: '现在完成进行时表示从过去开始到现在仍在进行的活动（"从2020年起"）。'
+      - id: G0198-2
+        answer: 'will be'
+        explanation: '"Will" for a prediction based on personal belief ("She believes...").'
+        explanationZh: 'will 用于基于个人信念的预测（"她相信……"）。'
+      - id: G0198-3
+        answer: 'is testing'
+        explanation: 'Present continuous for an action happening at this moment ("Right now").'
+        explanationZh: '现在进行时表示此刻正在发生的动作（"现在"）。'
+    grammarPoint: 'Present perfect continuous / will / present continuous'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0199
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: fantasy
+    passage: 'The young witch _____(1) her wand for the first time last week. Since then, she _____(2) five new spells. By the end of the month, she _____(3) enough magic to enter the Academy.'
+    passageZh: '小女巫上周第一次 _____(1) 了她的魔杖。从那以后，她 _____(2) 了五个新咒语。到这个月底，她将 _____(3) 足够的魔法来进入学院。'
+    blanks:
+      - id: G0199-1
+        answer: 'used'
+        explanation: 'Past simple for a completed action at a specific past time ("last week").'
+        explanationZh: '一般过去时表示在具体过去时间（"上周"）完成的动作。'
+      - id: G0199-2
+        answer: 'has learned'
+        explanation: 'Present perfect for actions in a period from the past to now ("Since then").'
+        explanationZh: '现在完成时表示从过去到现在这段时间内的动作（"从那以后"）。'
+      - id: G0199-3
+        answer: 'will have learned'
+        explanation: 'Future perfect for something to be completed before a future deadline ("By the end of the month").'
+        explanationZh: '将来完成时表示在未来截止时间（"到这个月底"）之前完成的事。'
+    grammarPoint: 'Past simple / present perfect / future perfect'
+    relatedQuest: Q02
+    difficulty: 3
+
+  - id: G0200
+    type: cloze-passage
+    tags: [tense-review, Q02, difficulty-3]
+    context: time-travel
+    passage: 'If only I _____(1) the instruction manual before we left! Now we _____(2) through Ancient Rome with no idea how the time machine _____(3).'
+    passageZh: '要是我们出发之前我 _____(1) 了说明书就好了！现在我们正 _____(2) 穿越古罗马，完全不知道时光机 _____(3) 运作的。'
+    blanks:
+      - id: G0200-1
+        answer: 'had read'
+        explanation: '"If only + past perfect" for regret about a past action — you didn''t read the manual.'
+        explanationZh: 'If only + 过去完成时表示对过去行为的后悔——你没有读说明书。'
+      - id: G0200-2
+        answer: 'are wandering'
+        explanation: 'Present continuous for an action happening now as a result of the past mistake.'
+        explanationZh: '现在进行时表示因过去的错误而正在发生的动作。'
+      - id: G0200-3
+        answer: 'works'
+        explanation: 'Present simple for a general fact about how the machine operates.'
+        explanationZh: '一般现在时表示关于机器如何运作的一般事实。'
+    grammarPoint: 'If only + past perfect / present continuous / present simple'
+    relatedQuest: Q02
+    difficulty: 3

@@ -1,0 +1,3354 @@
+topic: "Animals & Nature"
+topicZh: "动物与自然"
+vocab:
+  - id: V0001
+    word: extraordinary
+    phonetic: '/ɪkˈstrɔːrdɪneri/'
+    partOfSpeech: adjective
+    definition: 'Very unusual or remarkable'
+    definitionZh: '非凡的，特别的'
+    exampleSentence: 'The dragon had an extraordinary ability to breathe ice instead of fire.'
+    exampleSentenceZh: '这条龙有一种非凡的能力——它能喷冰而不是喷火。'
+    wordFamily:
+      - form: extraordinarily
+        partOfSpeech: adverb
+      - form: ordinary
+        partOfSpeech: adjective
+        note: 'base form (without prefix extra-)'
+    collocations:
+      - 'extraordinary ability'
+      - 'something extraordinary'
+    synonyms: [remarkable, exceptional, incredible]
+    antonyms: [ordinary, common, typical]
+    level: 1
+    firstAppear: D001
+    reviewSchedule: [D002, D004, D008, D015, D031]
+
+  - id: V0002
+    word: remarkable
+    phonetic: '/rɪˈmɑːrkəbl/'
+    partOfSpeech: adjective
+    definition: 'Worthy of attention; striking'
+    definitionZh: '值得注意的，引人注目的'
+    exampleSentence: 'The owl showed a remarkable talent for solving the wizard''s puzzles.'
+    exampleSentenceZh: '这只猫头鹰展现了解开巫师谜题的非凡才能。'
+    wordFamily:
+      - form: remarkably
+        partOfSpeech: adverb
+      - form: remark
+        partOfSpeech: noun/verb
+    collocations:
+      - 'remarkable achievement'
+      - 'truly remarkable'
+    synonyms: [extraordinary, outstanding, impressive]
+    antonyms: [unremarkable, ordinary, average]
+    level: 1
+    firstAppear: D001
+    reviewSchedule: [D002, D004, D008, D015, D031]
+
+  - id: V0003
+    word: intelligent
+    phonetic: '/ɪnˈtelɪdʒənt/'
+    partOfSpeech: adjective
+    definition: 'Having or showing a high level of mental ability'
+    definitionZh: '聪明的，有智慧的'
+    exampleSentence: 'The dolphins were so intelligent that they could understand the mermaid''s language.'
+    exampleSentenceZh: '这些海豚非常聪明，能听懂美人鱼的语言。'
+    wordFamily:
+      - form: intelligence
+        partOfSpeech: noun
+      - form: intelligently
+        partOfSpeech: adverb
+      - form: unintelligent
+        partOfSpeech: adjective
+    collocations:
+      - 'highly intelligent'
+      - 'intelligent creature'
+    synonyms: [clever, smart, bright]
+    antonyms: [stupid, unintelligent, foolish]
+    level: 1
+    firstAppear: D001
+    reviewSchedule: [D002, D004, D008, D015, D031]
+
+  - id: V0004
+    word: curious
+    phonetic: '/ˈkjʊəriəs/'
+    partOfSpeech: adjective
+    definition: 'Eager to know or learn something'
+    definitionZh: '好奇的，求知欲强的'
+    exampleSentence: 'The curious fox followed the trail of golden footprints deep into the enchanted forest.'
+    exampleSentenceZh: '好奇的狐狸沿着金色脚印一路走进了魔法森林深处。'
+    wordFamily:
+      - form: curiosity
+        partOfSpeech: noun
+      - form: curiously
+        partOfSpeech: adverb
+    collocations:
+      - 'curious about'
+      - 'curious creature'
+    synonyms: [inquisitive, interested, eager]
+    antonyms: [indifferent, uninterested, apathetic]
+    level: 1
+    firstAppear: D001
+    reviewSchedule: [D002, D004, D008, D015, D031]
+
+  - id: V0005
+    word: fierce
+    phonetic: '/fɪəs/'
+    partOfSpeech: adjective
+    definition: 'Showing a strong and aggressive nature; powerful'
+    definitionZh: '凶猛的，猛烈的'
+    exampleSentence: 'The fierce tiger guarded the entrance to the hidden cave with glowing eyes.'
+    exampleSentenceZh: '凶猛的老虎双眼发光，守卫着隐秘洞穴的入口。'
+    wordFamily:
+      - form: fiercely
+        partOfSpeech: adverb
+      - form: fierceness
+        partOfSpeech: noun
+    collocations:
+      - 'fierce competition'
+      - 'fierce animal'
+    synonyms: [ferocious, savage, intense]
+    antonyms: [gentle, mild, tame]
+    level: 1
+    firstAppear: D001
+    reviewSchedule: [D002, D004, D008, D015, D031]
+
+  - id: V0006
+    word: gentle
+    phonetic: '/ˈdʒentl/'
+    partOfSpeech: adjective
+    definition: 'Kind, mild, and calm in nature'
+    definitionZh: '温柔的，温和的'
+    exampleSentence: 'The gentle giant whale sang a lullaby that calmed the entire ocean.'
+    exampleSentenceZh: '温柔的巨鲸唱了一首摇篮曲，让整片海洋都平静下来。'
+    wordFamily:
+      - form: gently
+        partOfSpeech: adverb
+      - form: gentleness
+        partOfSpeech: noun
+    collocations:
+      - 'gentle breeze'
+      - 'gentle creature'
+    synonyms: [kind, tender, soft]
+    antonyms: [fierce, rough, harsh]
+    level: 1
+    firstAppear: D002
+    reviewSchedule: [D003, D005, D009, D016, D032]
+
+  - id: V0007
+    word: enormous
+    phonetic: '/ɪˈnɔːrməs/'
+    partOfSpeech: adjective
+    definition: 'Very large in size, quantity, or extent'
+    definitionZh: '巨大的，庞大的'
+    exampleSentence: 'An enormous eagle with silver feathers carried the young adventurer over the mountains.'
+    exampleSentenceZh: '一只长着银色羽毛的巨鹰带着小冒险家飞越了群山。'
+    wordFamily:
+      - form: enormously
+        partOfSpeech: adverb
+      - form: enormity
+        partOfSpeech: noun
+    collocations:
+      - 'enormous size'
+      - 'enormous amount'
+    synonyms: [huge, massive, immense]
+    antonyms: [tiny, miniature, small]
+    level: 1
+    firstAppear: D002
+    reviewSchedule: [D003, D005, D009, D016, D032]
+
+  - id: V0008
+    word: tiny
+    phonetic: '/ˈtaɪni/'
+    partOfSpeech: adjective
+    definition: 'Very small'
+    definitionZh: '极小的，微小的'
+    exampleSentence: 'A tiny hummingbird carried a secret message tied to its leg.'
+    exampleSentenceZh: '一只微小的蜂鸟腿上绑着一封秘密信件。'
+    wordFamily:
+      - form: tininess
+        partOfSpeech: noun
+    collocations:
+      - 'tiny creature'
+      - 'tiny amount'
+    synonyms: [miniature, minute, little]
+    antonyms: [enormous, huge, massive]
+    level: 1
+    firstAppear: D002
+    reviewSchedule: [D003, D005, D009, D016, D032]
+
+  - id: V0009
+    word: swift
+    phonetic: '/swɪft/'
+    partOfSpeech: adjective
+    definition: 'Happening quickly or moving fast'
+    definitionZh: '迅速的，敏捷的'
+    exampleSentence: 'The swift cheetah raced across the savannah to deliver the enchanted stone.'
+    exampleSentenceZh: '敏捷的猎豹飞奔过大草原，去递送那块魔法石。'
+    wordFamily:
+      - form: swiftly
+        partOfSpeech: adverb
+      - form: swiftness
+        partOfSpeech: noun
+    collocations:
+      - 'swift movement'
+      - 'swift action'
+    synonyms: [fast, rapid, quick]
+    antonyms: [slow, sluggish, leisurely]
+    level: 1
+    firstAppear: D002
+    reviewSchedule: [D003, D005, D009, D016, D032]
+
+  - id: V0010
+    word: graceful
+    phonetic: '/ˈɡreɪsfl/'
+    partOfSpeech: adjective
+    definition: 'Moving in a smooth, attractive way'
+    definitionZh: '优雅的，优美的'
+    exampleSentence: 'The graceful swan glided across the moonlit lake like a floating feather.'
+    exampleSentenceZh: '优雅的天鹅在月光下的湖面上滑行，宛如一片漂浮的羽毛。'
+    wordFamily:
+      - form: grace
+        partOfSpeech: noun
+      - form: gracefully
+        partOfSpeech: adverb
+      - form: graceless
+        partOfSpeech: adjective
+    collocations:
+      - 'graceful movement'
+      - 'graceful dancer'
+    synonyms: [elegant, flowing, smooth]
+    antonyms: [clumsy, awkward, ungainly]
+    level: 1
+    firstAppear: D002
+    reviewSchedule: [D003, D005, D009, D016, D032]
+
+  - id: V0011
+    word: nocturnal
+    phonetic: '/nɒkˈtɜːrnl/'
+    partOfSpeech: adjective
+    definition: 'Active during the night'
+    definitionZh: '夜行的，夜间活动的'
+    exampleSentence: 'The nocturnal bat led the children through the dark tunnels with its echo calls.'
+    exampleSentenceZh: '夜行蝙蝠用回声引导孩子们穿过黑暗的隧道。'
+    wordFamily:
+      - form: nocturnally
+        partOfSpeech: adverb
+      - form: diurnal
+        partOfSpeech: adjective
+        note: 'opposite — active during the day'
+    collocations:
+      - 'nocturnal animal'
+      - 'nocturnal habits'
+    synonyms: [nighttime, night-active]
+    antonyms: [diurnal, daytime]
+    level: 2
+    firstAppear: D003
+    reviewSchedule: [D004, D006, D010, D017, D033]
+
+  - id: V0012
+    word: predator
+    phonetic: '/ˈpredətər/'
+    partOfSpeech: noun
+    definition: 'An animal that hunts and eats other animals'
+    definitionZh: '捕食者，食肉动物'
+    exampleSentence: 'The wolf was the top predator in the enchanted forest, but it only hunted shadow creatures.'
+    exampleSentenceZh: '狼是魔法森林中的顶级捕食者，但它只猎捕暗影生物。'
+    wordFamily:
+      - form: predatory
+        partOfSpeech: adjective
+      - form: predate
+        partOfSpeech: verb
+    collocations:
+      - 'top predator'
+      - 'natural predator'
+    synonyms: [hunter, carnivore]
+    antonyms: [prey, herbivore]
+    level: 2
+    firstAppear: D003
+    reviewSchedule: [D004, D006, D010, D017, D033]
+
+  - id: V0013
+    word: prey
+    phonetic: '/preɪ/'
+    partOfSpeech: noun
+    definition: 'An animal that is hunted and eaten by another animal'
+    definitionZh: '猎物，被捕食的动物'
+    exampleSentence: 'The rabbit was prey for the eagle, but the forest fairies always kept it safe.'
+    exampleSentenceZh: '兔子是老鹰的猎物，但森林仙子总是保护着它。'
+    wordFamily:
+      - form: prey (on)
+        partOfSpeech: verb
+        note: 'to hunt and eat'
+    collocations:
+      - 'prey on'
+      - 'fall prey to'
+      - 'bird of prey'
+    synonyms: [quarry, target, victim]
+    antonyms: [predator, hunter]
+    level: 2
+    firstAppear: D003
+    reviewSchedule: [D004, D006, D010, D017, D033]
+
+  - id: V0014
+    word: habitat
+    phonetic: '/ˈhæbɪtæt/'
+    partOfSpeech: noun
+    definition: 'The natural home or environment of an animal or plant'
+    definitionZh: '栖息地，生活环境'
+    exampleSentence: 'The coral reef was the perfect habitat for the magical seahorse kingdom.'
+    exampleSentenceZh: '珊瑚礁是魔法海马王国的理想栖息地。'
+    wordFamily:
+      - form: inhabit
+        partOfSpeech: verb
+      - form: inhabitant
+        partOfSpeech: noun
+      - form: habitable
+        partOfSpeech: adjective
+    collocations:
+      - 'natural habitat'
+      - 'habitat loss'
+    synonyms: [environment, home, territory]
+    antonyms: []
+    level: 2
+    firstAppear: D003
+    reviewSchedule: [D004, D006, D010, D017, D033]
+
+  - id: V0015
+    word: species
+    phonetic: '/ˈspiːʃiːz/'
+    partOfSpeech: noun
+    definition: 'A group of living things that are similar and can produce young together'
+    definitionZh: '物种，种类'
+    exampleSentence: 'The explorers found a new species of glowing butterfly deep in the jungle.'
+    exampleSentenceZh: '探险家们在丛林深处发现了一种会发光的蝴蝶新物种。'
+    wordFamily:
+      - form: specific
+        partOfSpeech: adjective
+      - form: specify
+        partOfSpeech: verb
+      - form: specification
+        partOfSpeech: noun
+    collocations:
+      - 'endangered species'
+      - 'different species'
+    synonyms: [type, kind, breed]
+    antonyms: []
+    level: 2
+    firstAppear: D003
+    reviewSchedule: [D004, D006, D010, D017, D033]
+
+  - id: V0016
+    word: survival
+    phonetic: '/sərˈvaɪvl/'
+    partOfSpeech: noun
+    definition: 'The state of continuing to live, especially despite danger'
+    definitionZh: '生存，存活'
+    exampleSentence: 'Learning to find water was essential for survival in the desert quest.'
+    exampleSentenceZh: '在沙漠探险中，学会找水对生存至关重要。'
+    wordFamily:
+      - form: survive
+        partOfSpeech: verb
+      - form: survivor
+        partOfSpeech: noun
+      - form: survivable
+        partOfSpeech: adjective
+    collocations:
+      - 'survival skills'
+      - 'fight for survival'
+    synonyms: [existence, endurance, continuation]
+    antonyms: [death, extinction, destruction]
+    level: 2
+    firstAppear: D004
+    reviewSchedule: [D005, D007, D011, D018, D034]
+
+  - id: V0017
+    word: instinct
+    phonetic: '/ˈɪnstɪŋkt/'
+    partOfSpeech: noun
+    definition: 'A natural ability or behaviour that an animal is born with'
+    definitionZh: '本能，直觉'
+    exampleSentence: 'The baby sea turtle followed its instinct and crawled straight towards the ocean.'
+    exampleSentenceZh: '小海龟凭着本能，一出生就直接爬向大海。'
+    wordFamily:
+      - form: instinctive
+        partOfSpeech: adjective
+      - form: instinctively
+        partOfSpeech: adverb
+    collocations:
+      - 'natural instinct'
+      - 'by instinct'
+      - 'survival instinct'
+    synonyms: [intuition, impulse, urge]
+    antonyms: [reason, logic, learning]
+    level: 2
+    firstAppear: D004
+    reviewSchedule: [D005, D007, D011, D018, D034]
+
+  - id: V0018
+    word: camouflage
+    phonetic: '/ˈkæməflɑːʒ/'
+    partOfSpeech: noun/verb
+    definition: 'The way an animal hides itself by looking like its surroundings'
+    definitionZh: '伪装，保护色'
+    exampleSentence: 'The chameleon used camouflage to blend in with the rainbow-coloured leaves.'
+    exampleSentenceZh: '变色龙用保护色融入了彩虹色的树叶中。'
+    wordFamily:
+      - form: camouflaged
+        partOfSpeech: adjective
+    collocations:
+      - 'natural camouflage'
+      - 'camouflage pattern'
+    synonyms: [disguise, concealment, cover]
+    antonyms: [exposure, reveal, display]
+    level: 2
+    firstAppear: D004
+    reviewSchedule: [D005, D007, D011, D018, D034]
+
+  - id: V0019
+    word: adaptation
+    phonetic: '/ˌædæpˈteɪʃn/'
+    partOfSpeech: noun
+    definition: 'A change in an animal or plant that helps it survive in its environment'
+    definitionZh: '适应，适应性变化'
+    exampleSentence: 'The polar bear''s thick fur is an adaptation to the freezing Arctic weather.'
+    exampleSentenceZh: '北极熊厚厚的皮毛是对严寒北极天气的一种适应。'
+    wordFamily:
+      - form: adapt
+        partOfSpeech: verb
+      - form: adaptable
+        partOfSpeech: adjective
+      - form: adaptive
+        partOfSpeech: adjective
+    collocations:
+      - 'remarkable adaptation'
+      - 'adaptation to'
+    synonyms: [adjustment, modification, evolution]
+    antonyms: [rigidity, inflexibility]
+    level: 2
+    firstAppear: D004
+    reviewSchedule: [D005, D007, D011, D018, D034]
+
+  - id: V0020
+    word: migration
+    phonetic: '/maɪˈɡreɪʃn/'
+    partOfSpeech: noun
+    definition: 'The regular movement of animals from one place to another with the seasons'
+    definitionZh: '迁徙，移居'
+    exampleSentence: 'Every autumn, the great migration of silver geese filled the sky with shimmering wings.'
+    exampleSentenceZh: '每年秋天，银雁大迁徙让天空布满闪闪发光的翅膀。'
+    wordFamily:
+      - form: migrate
+        partOfSpeech: verb
+      - form: migratory
+        partOfSpeech: adjective
+      - form: migrant
+        partOfSpeech: noun
+    collocations:
+      - 'annual migration'
+      - 'bird migration'
+    synonyms: [movement, journey, relocation]
+    antonyms: [settlement, residence]
+    level: 2
+    firstAppear: D004
+    reviewSchedule: [D005, D007, D011, D018, D034]
+
+  - id: V0021
+    word: hibernate
+    phonetic: '/ˈhaɪbərneɪt/'
+    partOfSpeech: verb
+    definition: 'To spend the winter in a deep sleep'
+    definitionZh: '冬眠'
+    exampleSentence: 'The magical bear would hibernate inside a crystal cave until the spring fairies woke it.'
+    exampleSentenceZh: '魔法熊会在水晶洞穴里冬眠，直到春天仙子来唤醒它。'
+    wordFamily:
+      - form: hibernation
+        partOfSpeech: noun
+      - form: hibernator
+        partOfSpeech: noun
+    collocations:
+      - 'hibernate during winter'
+      - 'deep hibernation'
+    synonyms: [sleep, rest, lie dormant]
+    antonyms: [awaken, stir, emerge]
+    level: 2
+    firstAppear: D005
+    reviewSchedule: [D006, D008, D012, D019, D035]
+
+  - id: V0022
+    word: endangered
+    phonetic: '/ɪnˈdeɪndʒərd/'
+    partOfSpeech: adjective
+    definition: 'At risk of becoming extinct; very few remaining'
+    definitionZh: '濒危的，濒临灭绝的'
+    exampleSentence: 'The endangered snow leopard was protected by the mountain guardians.'
+    exampleSentenceZh: '濒危的雪豹受到山地守护者的保护。'
+    wordFamily:
+      - form: endanger
+        partOfSpeech: verb
+      - form: danger
+        partOfSpeech: noun
+      - form: dangerous
+        partOfSpeech: adjective
+    collocations:
+      - 'endangered species'
+      - 'critically endangered'
+    synonyms: [threatened, at risk, vulnerable]
+    antonyms: [safe, thriving, abundant]
+    level: 2
+    firstAppear: D005
+    reviewSchedule: [D006, D008, D012, D019, D035]
+
+  - id: V0023
+    word: territory
+    phonetic: '/ˈterətɔːri/'
+    partOfSpeech: noun
+    definition: 'An area of land that an animal defends as its own'
+    definitionZh: '领地，领土'
+    exampleSentence: 'The lion roared loudly to warn other animals to stay out of its territory.'
+    exampleSentenceZh: '狮子大声吼叫，警告其他动物不要进入它的领地。'
+    wordFamily:
+      - form: territorial
+        partOfSpeech: adjective
+      - form: territorially
+        partOfSpeech: adverb
+    collocations:
+      - 'defend territory'
+      - 'territorial behaviour'
+    synonyms: [domain, area, region]
+    antonyms: []
+    level: 2
+    firstAppear: D005
+    reviewSchedule: [D006, D008, D012, D019, D035]
+
+  - id: V0024
+    word: offspring
+    phonetic: '/ˈɒfsprɪŋ/'
+    partOfSpeech: noun
+    definition: 'The young of an animal'
+    definitionZh: '后代，幼崽'
+    exampleSentence: 'The mother wolf carried her offspring one by one to the safety of a new den.'
+    exampleSentenceZh: '母狼把幼崽一个接一个地叼到新巢穴的安全之处。'
+    wordFamily: []
+    collocations:
+      - 'produce offspring'
+      - 'protect offspring'
+    synonyms: [young, babies, descendants]
+    antonyms: [parent, ancestor]
+    level: 2
+    firstAppear: D005
+    reviewSchedule: [D006, D008, D012, D019, D035]
+
+  - id: V0025
+    word: communication
+    phonetic: '/kəˌmjuːnɪˈkeɪʃn/'
+    partOfSpeech: noun
+    definition: 'The sharing of information between living things'
+    definitionZh: '交流，通讯'
+    exampleSentence: 'Dolphins have their own form of communication using clicks and whistles.'
+    exampleSentenceZh: '海豚有自己独特的交流方式——用咔嗒声和口哨声。'
+    wordFamily:
+      - form: communicate
+        partOfSpeech: verb
+      - form: communicative
+        partOfSpeech: adjective
+      - form: communicator
+        partOfSpeech: noun
+    collocations:
+      - 'means of communication'
+      - 'effective communication'
+    synonyms: [interaction, exchange, contact]
+    antonyms: [silence, isolation]
+    level: 2
+    firstAppear: D005
+    reviewSchedule: [D006, D008, D012, D019, D035]
+
+  - id: V0026
+    word: creature
+    phonetic: '/ˈkriːtʃər/'
+    partOfSpeech: noun
+    definition: 'A living thing, especially an animal'
+    definitionZh: '生物，动物'
+    exampleSentence: 'A strange creature with rainbow scales and tiny wings appeared at the edge of the pond.'
+    exampleSentenceZh: '一个长着彩虹鳞片和小翅膀的奇怪生物出现在池塘边。'
+    wordFamily:
+      - form: create
+        partOfSpeech: verb
+      - form: creation
+        partOfSpeech: noun
+      - form: creative
+        partOfSpeech: adjective
+    collocations:
+      - 'living creature'
+      - 'strange creature'
+      - 'magical creature'
+    synonyms: [being, animal, organism]
+    antonyms: []
+    level: 1
+    firstAppear: D006
+    reviewSchedule: [D007, D009, D013, D020, D036]
+
+  - id: V0027
+    word: magnificent
+    phonetic: '/mæɡˈnɪfɪsnt/'
+    partOfSpeech: adjective
+    definition: 'Extremely beautiful, impressive, or grand'
+    definitionZh: '壮丽的，宏伟的'
+    exampleSentence: 'The magnificent peacock spread its glittering tail feathers across the palace garden.'
+    exampleSentenceZh: '壮丽的孔雀在宫殿花园里展开了闪闪发光的尾羽。'
+    wordFamily:
+      - form: magnificence
+        partOfSpeech: noun
+      - form: magnificently
+        partOfSpeech: adverb
+    collocations:
+      - 'truly magnificent'
+      - 'magnificent sight'
+    synonyms: [splendid, grand, majestic]
+    antonyms: [unimpressive, plain, dull]
+    level: 2
+    firstAppear: D006
+    reviewSchedule: [D007, D009, D013, D020, D036]
+
+  - id: V0028
+    word: agile
+    phonetic: '/ˈædʒaɪl/'
+    partOfSpeech: adjective
+    definition: 'Able to move quickly and easily'
+    definitionZh: '敏捷的，灵活的'
+    exampleSentence: 'The agile monkey leapt from branch to branch to escape the jungle maze.'
+    exampleSentenceZh: '敏捷的猴子在树枝间跳跃，逃出了丛林迷宫。'
+    wordFamily:
+      - form: agility
+        partOfSpeech: noun
+      - form: agilely
+        partOfSpeech: adverb
+    collocations:
+      - 'agile movement'
+      - 'quick and agile'
+    synonyms: [nimble, athletic, flexible]
+    antonyms: [clumsy, stiff, slow]
+    level: 2
+    firstAppear: D006
+    reviewSchedule: [D007, D009, D013, D020, D036]
+
+  - id: V0029
+    word: observe
+    phonetic: '/əbˈzɜːrv/'
+    partOfSpeech: verb
+    definition: 'To watch carefully'
+    definitionZh: '观察，注意到'
+    exampleSentence: 'The young scientist sat quietly to observe how the ants built their tiny city.'
+    exampleSentenceZh: '小科学家静静地坐着，观察蚂蚁如何建造它们的小城市。'
+    wordFamily:
+      - form: observation
+        partOfSpeech: noun
+      - form: observer
+        partOfSpeech: noun
+      - form: observable
+        partOfSpeech: adjective
+    collocations:
+      - 'closely observe'
+      - 'observe behaviour'
+    synonyms: [watch, study, examine]
+    antonyms: [ignore, overlook, neglect]
+    level: 1
+    firstAppear: D006
+    reviewSchedule: [D007, D009, D013, D020, D036]
+
+  - id: V0030
+    word: investigate
+    phonetic: '/ɪnˈvestɪɡeɪt/'
+    partOfSpeech: verb
+    definition: 'To examine something carefully to find out the truth'
+    definitionZh: '调查，探究'
+    exampleSentence: 'The detective cat decided to investigate the mysterious footprints near the old barn.'
+    exampleSentenceZh: '侦探猫决定调查旧谷仓附近的神秘脚印。'
+    wordFamily:
+      - form: investigation
+        partOfSpeech: noun
+      - form: investigator
+        partOfSpeech: noun
+      - form: investigative
+        partOfSpeech: adjective
+    collocations:
+      - 'investigate a mystery'
+      - 'investigate further'
+    synonyms: [examine, explore, research]
+    antonyms: [ignore, disregard, neglect]
+    level: 1
+    firstAppear: D006
+    reviewSchedule: [D007, D009, D013, D020, D036]
+
+  - id: V0031
+    word: environment
+    phonetic: '/ɪnˈvaɪrənmənt/'
+    partOfSpeech: noun
+    definition: 'The natural world around us, including air, water, and land'
+    definitionZh: '环境，自然环境'
+    exampleSentence: 'The forest elves worked hard to protect their magical environment from dark spells.'
+    exampleSentenceZh: '森林精灵们努力保护他们的魔法环境免受黑暗咒语的破坏。'
+    wordFamily:
+      - form: environmental
+        partOfSpeech: adjective
+      - form: environmentally
+        partOfSpeech: adverb
+      - form: environmentalist
+        partOfSpeech: noun
+    collocations:
+      - 'natural environment'
+      - 'protect the environment'
+    synonyms: [surroundings, habitat, ecosystem]
+    antonyms: []
+    level: 1
+    firstAppear: D007
+    reviewSchedule: [D008, D010, D014, D021, D037]
+
+  - id: V0032
+    word: atmosphere
+    phonetic: '/ˈætməsfɪər/'
+    partOfSpeech: noun
+    definition: 'The layer of gases surrounding the Earth; also the feeling of a place'
+    definitionZh: '大气层；气氛'
+    exampleSentence: 'The thick atmosphere of the jungle planet made breathing feel like sipping warm soup.'
+    exampleSentenceZh: '丛林星球浓厚的大气层让呼吸感觉像在喝温热的汤。'
+    wordFamily:
+      - form: atmospheric
+        partOfSpeech: adjective
+    collocations:
+      - "Earth's atmosphere"
+      - 'friendly atmosphere'
+    synonyms: [air, sky, ambience]
+    antonyms: []
+    level: 2
+    firstAppear: D007
+    reviewSchedule: [D008, D010, D014, D021, D037]
+
+  - id: V0033
+    word: climate
+    phonetic: '/ˈklaɪmət/'
+    partOfSpeech: noun
+    definition: 'The usual weather conditions in a particular area over a long period'
+    definitionZh: '气候'
+    exampleSentence: 'The tropical climate of the island kept the enchanted garden blooming all year round.'
+    exampleSentenceZh: '岛屿的热带气候让魔法花园一年四季都在盛开。'
+    wordFamily:
+      - form: climatic
+        partOfSpeech: adjective
+      - form: climatically
+        partOfSpeech: adverb
+    collocations:
+      - 'climate change'
+      - 'tropical climate'
+    synonyms: [weather, conditions]
+    antonyms: []
+    level: 1
+    firstAppear: D007
+    reviewSchedule: [D008, D010, D014, D021, D037]
+
+  - id: V0034
+    word: temperature
+    phonetic: '/ˈtemprətʃər/'
+    partOfSpeech: noun
+    definition: 'A measure of how hot or cold something is'
+    definitionZh: '温度'
+    exampleSentence: "The temperature inside the ice dragon's cave was so low that even fire spells froze."
+    exampleSentenceZh: '冰龙洞穴里的温度低到连火焰咒语都被冻住了。'
+    wordFamily:
+      - form: temperate
+        partOfSpeech: adjective
+    collocations:
+      - 'high temperature'
+      - 'room temperature'
+    synonyms: [heat, warmth, degree]
+    antonyms: []
+    level: 1
+    firstAppear: D007
+    reviewSchedule: [D008, D010, D014, D021, D037]
+
+  - id: V0035
+    word: moisture
+    phonetic: '/ˈmɔɪstʃər/'
+    partOfSpeech: noun
+    definition: 'Small drops of water in the air, on a surface, or in the ground'
+    definitionZh: '水分，湿气'
+    exampleSentence: 'The morning moisture on the spider web made it sparkle like a diamond necklace.'
+    exampleSentenceZh: '蜘蛛网上的晨露让它闪耀得像一条钻石项链。'
+    wordFamily:
+      - form: moist
+        partOfSpeech: adjective
+      - form: moisten
+        partOfSpeech: verb
+      - form: moisturise
+        partOfSpeech: verb
+    collocations:
+      - 'moisture in the air'
+      - 'retain moisture'
+    synonyms: [dampness, humidity, wetness]
+    antonyms: [dryness, aridity]
+    level: 2
+    firstAppear: D007
+    reviewSchedule: [D008, D010, D014, D021, D037]
+
+  - id: V0036
+    word: drought
+    phonetic: '/draʊt/'
+    partOfSpeech: noun
+    definition: 'A long period with no rain'
+    definitionZh: '干旱'
+    exampleSentence: 'The terrible drought turned the once-green kingdom into a dusty wasteland.'
+    exampleSentenceZh: '可怕的干旱把曾经绿意盎然的王国变成了尘土飞扬的荒原。'
+    wordFamily: []
+    collocations:
+      - 'severe drought'
+      - 'drought conditions'
+    synonyms: [dry spell, water shortage, aridity]
+    antonyms: [flood, deluge, downpour]
+    level: 2
+    firstAppear: D008
+    reviewSchedule: [D009, D011, D015, D022, D038]
+
+  - id: V0037
+    word: flood
+    phonetic: '/flʌd/'
+    partOfSpeech: noun/verb
+    definition: 'A large amount of water covering an area that is usually dry'
+    definitionZh: '洪水；淹没'
+    exampleSentence: 'The river spirit warned the village that a great flood was coming from the mountains.'
+    exampleSentenceZh: '河神警告村民，一场大洪水即将从山上涌来。'
+    wordFamily:
+      - form: flooding
+        partOfSpeech: noun
+      - form: flooded
+        partOfSpeech: adjective
+    collocations:
+      - 'flash flood'
+      - 'flood warning'
+    synonyms: [deluge, overflow, torrent]
+    antonyms: [drought, dry spell]
+    level: 1
+    firstAppear: D008
+    reviewSchedule: [D009, D011, D015, D022, D038]
+
+  - id: V0038
+    word: ecosystem
+    phonetic: '/ˈiːkoʊsɪstəm/'
+    partOfSpeech: noun
+    definition: 'A community of living things and their environment working together'
+    definitionZh: '生态系统'
+    exampleSentence: 'The coral reef was a delicate ecosystem where every creature depended on the others.'
+    exampleSentenceZh: '珊瑚礁是一个微妙的生态系统，每个生物都互相依赖。'
+    wordFamily:
+      - form: ecological
+        partOfSpeech: adjective
+      - form: ecology
+        partOfSpeech: noun
+      - form: ecologist
+        partOfSpeech: noun
+    collocations:
+      - 'fragile ecosystem'
+      - 'marine ecosystem'
+    synonyms: [environment, biome, habitat]
+    antonyms: []
+    level: 2
+    firstAppear: D008
+    reviewSchedule: [D009, D011, D015, D022, D038]
+
+  - id: V0039
+    word: vegetation
+    phonetic: '/ˌvedʒəˈteɪʃn/'
+    partOfSpeech: noun
+    definition: 'Plants in general, especially those in a particular area'
+    definitionZh: '植被，植物'
+    exampleSentence: 'Thick vegetation covered the ancient ruins, hiding the entrance to the treasure chamber.'
+    exampleSentenceZh: '茂密的植被覆盖了古老的遗迹，隐藏了通往宝藏室的入口。'
+    wordFamily:
+      - form: vegetate
+        partOfSpeech: verb
+      - form: vegetable
+        partOfSpeech: noun
+    collocations:
+      - 'dense vegetation'
+      - 'tropical vegetation'
+    synonyms: [plants, greenery, flora]
+    antonyms: [barrenness, desert]
+    level: 2
+    firstAppear: D008
+    reviewSchedule: [D009, D011, D015, D022, D038]
+
+  - id: V0040
+    word: wilderness
+    phonetic: '/ˈwɪldərnəs/'
+    partOfSpeech: noun
+    definition: 'A wild, natural area where no people live'
+    definitionZh: '荒野，旷野'
+    exampleSentence: 'The brave explorer set off alone into the wilderness to find the legendary waterfall.'
+    exampleSentenceZh: '勇敢的探险家独自出发去荒野寻找传说中的瀑布。'
+    wordFamily:
+      - form: wild
+        partOfSpeech: adjective
+      - form: wildly
+        partOfSpeech: adverb
+      - form: wildlife
+        partOfSpeech: noun
+    collocations:
+      - 'vast wilderness'
+      - 'wilderness area'
+    synonyms: [wildland, backcountry, outback]
+    antonyms: [city, civilization, urban area]
+    level: 2
+    firstAppear: D008
+    reviewSchedule: [D009, D011, D015, D022, D038]
+
+  - id: V0041
+    word: landscape
+    phonetic: '/ˈlændskeɪp/'
+    partOfSpeech: noun
+    definition: 'A large area of land, especially in terms of its appearance'
+    definitionZh: '风景，地形'
+    exampleSentence: 'The landscape changed from green hills to golden desert as they flew on the magic carpet.'
+    exampleSentenceZh: '当他们乘坐魔毯飞行时，风景从绿色丘陵变成了金色沙漠。'
+    wordFamily:
+      - form: landscaping
+        partOfSpeech: noun
+    collocations:
+      - 'beautiful landscape'
+      - 'dramatic landscape'
+    synonyms: [scenery, terrain, vista]
+    antonyms: []
+    level: 1
+    firstAppear: D009
+    reviewSchedule: [D010, D012, D016, D023, D039]
+
+  - id: V0042
+    word: volcano
+    phonetic: '/vɒlˈkeɪnoʊ/'
+    partOfSpeech: noun
+    definition: 'A mountain with an opening through which hot melted rock and gases escape'
+    definitionZh: '火山'
+    exampleSentence: 'The ancient volcano rumbled and glowed, waking the fire salamanders from their sleep.'
+    exampleSentenceZh: '古老的火山隆隆作响并发出光芒，唤醒了沉睡中的火蝾螈。'
+    wordFamily:
+      - form: volcanic
+        partOfSpeech: adjective
+    collocations:
+      - 'active volcano'
+      - 'volcanic eruption'
+    synonyms: [mount, crater]
+    antonyms: []
+    level: 1
+    firstAppear: D009
+    reviewSchedule: [D010, D012, D016, D023, D039]
+
+  - id: V0043
+    word: earthquake
+    phonetic: '/ˈɜːrθkweɪk/'
+    partOfSpeech: noun
+    definition: 'A sudden shaking of the ground'
+    definitionZh: '地震'
+    exampleSentence: 'The earthquake shook the mountain so hard that the hidden cave entrance finally appeared.'
+    exampleSentenceZh: '地震把山体震得如此剧烈，隐藏的洞穴入口终于显现出来。'
+    wordFamily:
+      - form: quake
+        partOfSpeech: noun/verb
+    collocations:
+      - 'powerful earthquake'
+      - 'earthquake damage'
+    synonyms: [tremor, quake, seismic event]
+    antonyms: []
+    level: 1
+    firstAppear: D009
+    reviewSchedule: [D010, D012, D016, D023, D039]
+
+  - id: V0044
+    word: avalanche
+    phonetic: '/ˈævəlɑːntʃ/'
+    partOfSpeech: noun
+    definition: 'A large mass of snow and ice falling rapidly down a mountainside'
+    definitionZh: '雪崩'
+    exampleSentence: 'The noise of the avalanche echoed through the valley as snow buried the old trail.'
+    exampleSentenceZh: '雪崩的轰鸣在山谷中回荡，大雪埋没了旧小径。'
+    wordFamily: []
+    collocations:
+      - 'trigger an avalanche'
+      - 'avalanche warning'
+    synonyms: [landslide, snowslide]
+    antonyms: []
+    level: 3
+    firstAppear: D009
+    reviewSchedule: [D010, D012, D016, D023, D039]
+
+  - id: V0045
+    word: glacier
+    phonetic: '/ˈɡlæsiər/'
+    partOfSpeech: noun
+    definition: 'A huge mass of ice that moves slowly over land'
+    definitionZh: '冰川'
+    exampleSentence: 'Beneath the ancient glacier, a frozen kingdom of ice fairies lay hidden for centuries.'
+    exampleSentenceZh: '在古老的冰川下面，一个冰仙子的冰冻王国隐藏了数百年。'
+    wordFamily:
+      - form: glacial
+        partOfSpeech: adjective
+    collocations:
+      - 'melting glacier'
+      - 'glacial ice'
+    synonyms: [ice sheet, ice cap]
+    antonyms: []
+    level: 3
+    firstAppear: D009
+    reviewSchedule: [D010, D012, D016, D023, D039]
+
+  - id: V0046
+    word: coral
+    phonetic: '/ˈkɒrəl/'
+    partOfSpeech: noun
+    definition: 'A hard substance formed by tiny sea creatures, often found in warm oceans'
+    definitionZh: '珊瑚'
+    exampleSentence: 'The coral glowed in brilliant colours, forming an underwater palace for the sea princess.'
+    exampleSentenceZh: '珊瑚闪耀着绚丽的色彩，为海底公主建造了一座水下宫殿。'
+    wordFamily: []
+    collocations:
+      - 'coral reef'
+      - 'coral island'
+    synonyms: []
+    antonyms: []
+    level: 2
+    firstAppear: D010
+    reviewSchedule: [D011, D013, D017, D024, D040]
+
+  - id: V0047
+    word: current
+    phonetic: '/ˈkʌrənt/'
+    partOfSpeech: noun/adjective
+    definition: 'A flow of water or air moving in one direction; happening now'
+    definitionZh: '水流，气流；当前的'
+    exampleSentence: 'The strong ocean current carried the message bottle all the way to the mermaid city.'
+    exampleSentenceZh: '强劲的洋流把漂流瓶一直带到了美人鱼城。'
+    wordFamily:
+      - form: currently
+        partOfSpeech: adverb
+      - form: currency
+        partOfSpeech: noun
+    collocations:
+      - 'ocean current'
+      - 'current situation'
+    synonyms: [flow, stream, present]
+    antonyms: [still, past, former]
+    level: 1
+    firstAppear: D010
+    reviewSchedule: [D011, D013, D017, D024, D040]
+
+  - id: V0048
+    word: tide
+    phonetic: '/taɪd/'
+    partOfSpeech: noun
+    definition: 'The regular rise and fall of the sea level'
+    definitionZh: '潮汐'
+    exampleSentence: 'When the tide went out, a secret path of stepping stones appeared across the bay.'
+    exampleSentenceZh: '潮水退去时，一条由踏脚石组成的秘密小路出现在海湾上。'
+    wordFamily:
+      - form: tidal
+        partOfSpeech: adjective
+    collocations:
+      - 'high tide'
+      - 'low tide'
+      - 'tidal wave'
+    synonyms: [current, flow, surge]
+    antonyms: []
+    level: 2
+    firstAppear: D010
+    reviewSchedule: [D011, D013, D017, D024, D040]
+
+  - id: V0049
+    word: tropical
+    phonetic: '/ˈtrɒpɪkl/'
+    partOfSpeech: adjective
+    definition: 'Relating to the hot areas near the equator'
+    definitionZh: '热带的'
+    exampleSentence: 'The tropical island was home to parrots that could speak three languages.'
+    exampleSentenceZh: '这座热带岛屿上住着会说三种语言的鹦鹉。'
+    wordFamily:
+      - form: tropics
+        partOfSpeech: noun
+      - form: subtropical
+        partOfSpeech: adjective
+    collocations:
+      - 'tropical rainforest'
+      - 'tropical climate'
+    synonyms: [equatorial, hot, warm]
+    antonyms: [arctic, polar, frigid]
+    level: 1
+    firstAppear: D010
+    reviewSchedule: [D011, D013, D017, D024, D040]
+
+  - id: V0050
+    word: arctic
+    phonetic: '/ˈɑːrktɪk/'
+    partOfSpeech: adjective
+    definition: 'Relating to the very cold area around the North Pole'
+    definitionZh: '北极的，严寒的'
+    exampleSentence: 'The arctic fox had fur so white that it became invisible against the snow.'
+    exampleSentenceZh: '北极狐的毛皮白得在雪地里完全隐形。'
+    wordFamily:
+      - form: Antarctic
+        partOfSpeech: adjective/noun
+        note: 'opposite pole — South Pole region'
+    collocations:
+      - 'arctic weather'
+      - 'arctic conditions'
+    synonyms: [polar, freezing, icy]
+    antonyms: [tropical, equatorial, warm]
+    level: 2
+    firstAppear: D010
+    reviewSchedule: [D011, D013, D017, D024, D040]
+
+  - id: V0051
+    word: humid
+    phonetic: '/ˈhjuːmɪd/'
+    partOfSpeech: adjective
+    definition: 'Having a lot of moisture in the air; warm and damp'
+    definitionZh: '潮湿的，湿热的'
+    exampleSentence: 'The air was so humid inside the rainforest that water drops hung from every leaf.'
+    exampleSentenceZh: '雨林里的空气如此潮湿，每片叶子上都挂着水珠。'
+    wordFamily:
+      - form: humidity
+        partOfSpeech: noun
+      - form: humidify
+        partOfSpeech: verb
+    collocations:
+      - 'hot and humid'
+      - 'high humidity'
+    synonyms: [damp, muggy, sticky]
+    antonyms: [dry, arid, parched]
+    level: 2
+    firstAppear: D011
+    reviewSchedule: [D012, D014, D018, D025, D041]
+
+  - id: V0052
+    word: fertile
+    phonetic: '/ˈfɜːrtaɪl/'
+    partOfSpeech: adjective
+    definition: 'Able to produce a lot of crops or plants'
+    definitionZh: '肥沃的，富饶的'
+    exampleSentence: 'The fertile valley at the foot of the volcano grew the most magical herbs in the land.'
+    exampleSentenceZh: '火山脚下肥沃的山谷生长着全国最神奇的草药。'
+    wordFamily:
+      - form: fertility
+        partOfSpeech: noun
+      - form: fertilise
+        partOfSpeech: verb
+      - form: fertiliser
+        partOfSpeech: noun
+    collocations:
+      - 'fertile land'
+      - 'fertile soil'
+    synonyms: [productive, rich, fruitful]
+    antonyms: [barren, infertile, sterile]
+    level: 2
+    firstAppear: D011
+    reviewSchedule: [D012, D014, D018, D025, D041]
+
+  - id: V0053
+    word: barren
+    phonetic: '/ˈbærən/'
+    partOfSpeech: adjective
+    definition: 'Too dry or poor to produce plants; empty and lifeless'
+    definitionZh: '贫瘠的，荒芜的'
+    exampleSentence: 'The once-barren desert bloomed with flowers after the rain wizard cast her spell.'
+    exampleSentenceZh: '在雨巫师施法之后，曾经贫瘠的沙漠开满了鲜花。'
+    wordFamily:
+      - form: barrenness
+        partOfSpeech: noun
+    collocations:
+      - 'barren land'
+      - 'barren wasteland'
+    synonyms: [infertile, desolate, empty]
+    antonyms: [fertile, lush, productive]
+    level: 3
+    firstAppear: D011
+    reviewSchedule: [D012, D014, D018, D025, D041]
+
+  - id: V0054
+    word: pollution
+    phonetic: '/pəˈluːʃn/'
+    partOfSpeech: noun
+    definition: 'Harmful substances that damage the environment'
+    definitionZh: '污染'
+    exampleSentence: 'The water pollution from the dark factory turned the lake purple and drove away the fish.'
+    exampleSentenceZh: '黑暗工厂造成的水污染把湖水变成了紫色，赶走了所有的鱼。'
+    wordFamily:
+      - form: pollute
+        partOfSpeech: verb
+      - form: pollutant
+        partOfSpeech: noun
+      - form: polluted
+        partOfSpeech: adjective
+    collocations:
+      - 'air pollution'
+      - 'water pollution'
+    synonyms: [contamination, waste, toxins]
+    antonyms: [purity, cleanliness]
+    level: 1
+    firstAppear: D011
+    reviewSchedule: [D012, D014, D018, D025, D041]
+
+  - id: V0055
+    word: conservation
+    phonetic: '/ˌkɒnsərˈveɪʃn/'
+    partOfSpeech: noun
+    definition: 'The protection of the natural world'
+    definitionZh: '保护，保育'
+    exampleSentence: 'Thanks to conservation efforts, the golden eagles returned to nest in the enchanted valley.'
+    exampleSentenceZh: '多亏了保育工作，金雕回到了魔法山谷筑巢。'
+    wordFamily:
+      - form: conserve
+        partOfSpeech: verb
+      - form: conservationist
+        partOfSpeech: noun
+      - form: conservative
+        partOfSpeech: adjective
+    collocations:
+      - 'wildlife conservation'
+      - 'conservation area'
+    synonyms: [preservation, protection, safeguarding]
+    antonyms: [destruction, waste, exploitation]
+    level: 2
+    firstAppear: D011
+    reviewSchedule: [D012, D014, D018, D025, D041]
+
+  - id: V0056
+    word: sustainable
+    phonetic: '/səˈsteɪnəbl/'
+    partOfSpeech: adjective
+    definition: 'Able to continue without damaging the environment'
+    definitionZh: '可持续的'
+    exampleSentence: 'The tree-house village used sustainable energy from the sun and wind to power its lights.'
+    exampleSentenceZh: '树屋村庄利用太阳和风的可持续能源来供电照明。'
+    wordFamily:
+      - form: sustain
+        partOfSpeech: verb
+      - form: sustainability
+        partOfSpeech: noun
+      - form: unsustainable
+        partOfSpeech: adjective
+    collocations:
+      - 'sustainable development'
+      - 'sustainable energy'
+    synonyms: [eco-friendly, green, renewable]
+    antonyms: [unsustainable, wasteful, harmful]
+    level: 3
+    firstAppear: D012
+    reviewSchedule: [D013, D015, D019, D026, D042]
+
+  - id: V0057
+    word: renewable
+    phonetic: '/rɪˈnjuːəbl/'
+    partOfSpeech: adjective
+    definition: 'Can be replaced naturally and used again without running out'
+    definitionZh: '可再生的'
+    exampleSentence: 'The wizards switched to renewable energy, using waterfalls instead of burning dragon fire.'
+    exampleSentenceZh: '巫师们改用可再生能源，用瀑布代替燃烧龙火。'
+    wordFamily:
+      - form: renew
+        partOfSpeech: verb
+      - form: renewal
+        partOfSpeech: noun
+      - form: non-renewable
+        partOfSpeech: adjective
+    collocations:
+      - 'renewable energy'
+      - 'renewable resources'
+    synonyms: [sustainable, replenishable]
+    antonyms: [non-renewable, finite, exhaustible]
+    level: 3
+    firstAppear: D012
+    reviewSchedule: [D013, D015, D019, D026, D042]
+
+  - id: V0058
+    word: extinct
+    phonetic: '/ɪkˈstɪŋkt/'
+    partOfSpeech: adjective
+    definition: 'No longer existing; died out completely'
+    definitionZh: '灭绝的'
+    exampleSentence: 'Everyone thought the crystal phoenix was extinct, until one appeared in the mountain temple.'
+    exampleSentenceZh: '所有人都以为水晶凤凰已经灭绝了，直到一只出现在山中神殿。'
+    wordFamily:
+      - form: extinction
+        partOfSpeech: noun
+    collocations:
+      - 'become extinct'
+      - 'face extinction'
+    synonyms: [vanished, gone, wiped out]
+    antonyms: [existing, thriving, alive]
+    level: 2
+    firstAppear: D012
+    reviewSchedule: [D013, D015, D019, D026, D042]
+
+  - id: V0059
+    word: preserve
+    phonetic: '/prɪˈzɜːrv/'
+    partOfSpeech: verb
+    definition: 'To keep something safe and in good condition'
+    definitionZh: '保护，保存'
+    exampleSentence: 'The ancient spell was designed to preserve the forest for a thousand years.'
+    exampleSentenceZh: '这个古老的咒语被设计用来保护森林一千年。'
+    wordFamily:
+      - form: preservation
+        partOfSpeech: noun
+      - form: preservative
+        partOfSpeech: noun
+      - form: preserver
+        partOfSpeech: noun
+    collocations:
+      - 'preserve nature'
+      - 'well-preserved'
+    synonyms: [protect, maintain, conserve]
+    antonyms: [destroy, damage, ruin]
+    level: 1
+    firstAppear: D012
+    reviewSchedule: [D013, D015, D019, D026, D042]
+
+  - id: V0060
+    word: reef
+    phonetic: '/riːf/'
+    partOfSpeech: noun
+    definition: 'A ridge of rock, coral, or sand near the surface of the sea'
+    definitionZh: '礁石，暗礁'
+    exampleSentence: 'The underwater reef was alive with colourful fish and singing sea anemones.'
+    exampleSentenceZh: '水下礁石上布满了五彩缤纷的鱼和会唱歌的海葵。'
+    wordFamily: []
+    collocations:
+      - 'coral reef'
+      - 'barrier reef'
+    synonyms: [ridge, shoal, sandbar]
+    antonyms: []
+    level: 2
+    firstAppear: D012
+    reviewSchedule: [D013, D015, D019, D026, D042]
+
+  - id: V0061
+    word: discover
+    phonetic: '/dɪˈskʌvər/'
+    partOfSpeech: verb
+    definition: 'To find something for the first time or learn something new'
+    definitionZh: '发现'
+    exampleSentence: 'The young explorer was thrilled to discover a hidden waterfall behind the mossy rocks.'
+    exampleSentenceZh: '小探险家激动地发现了长满苔藓的岩石后面隐藏的瀑布。'
+    wordFamily:
+      - form: discovery
+        partOfSpeech: noun
+      - form: discoverer
+        partOfSpeech: noun
+    collocations:
+      - 'discover something new'
+      - 'amazing discovery'
+    synonyms: [find, uncover, reveal]
+    antonyms: [miss, overlook, conceal]
+    level: 1
+    firstAppear: D013
+    reviewSchedule: [D014, D016, D020, D027, D043]
+
+  - id: V0062
+    word: experiment
+    phonetic: '/ɪkˈsperɪmənt/'
+    partOfSpeech: noun/verb
+    definition: 'A scientific test done to find out what happens'
+    definitionZh: '实验；做实验'
+    exampleSentence: 'The young witch decided to experiment with mixing potions to create a new colour.'
+    exampleSentenceZh: '小女巫决定尝试混合药水来创造一种新颜色。'
+    wordFamily:
+      - form: experimental
+        partOfSpeech: adjective
+      - form: experimentally
+        partOfSpeech: adverb
+      - form: experimentation
+        partOfSpeech: noun
+    collocations:
+      - 'conduct an experiment'
+      - 'scientific experiment'
+    synonyms: [test, trial, investigation]
+    antonyms: []
+    level: 1
+    firstAppear: D013
+    reviewSchedule: [D014, D016, D020, D027, D043]
+
+  - id: V0063
+    word: evidence
+    phonetic: '/ˈevɪdəns/'
+    partOfSpeech: noun
+    definition: 'Facts or signs that show something is true'
+    definitionZh: '证据，迹象'
+    exampleSentence: 'The glowing footprints were evidence that a unicorn had passed through the meadow.'
+    exampleSentenceZh: '发光的脚印是独角兽曾经过这片草地的证据。'
+    wordFamily:
+      - form: evident
+        partOfSpeech: adjective
+      - form: evidently
+        partOfSpeech: adverb
+    collocations:
+      - 'clear evidence'
+      - 'scientific evidence'
+    synonyms: [proof, clue, indication]
+    antonyms: [disproof, conjecture]
+    level: 2
+    firstAppear: D013
+    reviewSchedule: [D014, D016, D020, D027, D043]
+
+  - id: V0064
+    word: hypothesis
+    phonetic: '/haɪˈpɒθəsɪs/'
+    partOfSpeech: noun
+    definition: 'An idea or explanation that you test to see if it is true'
+    definitionZh: '假设，假说'
+    exampleSentence: "Her hypothesis was that the crystal flowers only bloomed when someone sang to them."
+    exampleSentenceZh: '她的假设是，水晶花只有在有人对它们唱歌时才会绽放。'
+    wordFamily:
+      - form: hypothetical
+        partOfSpeech: adjective
+      - form: hypothetically
+        partOfSpeech: adverb
+      - form: hypothesise
+        partOfSpeech: verb
+    collocations:
+      - 'test a hypothesis'
+      - 'form a hypothesis'
+    synonyms: [theory, assumption, guess]
+    antonyms: [fact, proof, certainty]
+    level: 3
+    firstAppear: D013
+    reviewSchedule: [D014, D016, D020, D027, D043]
+
+  - id: V0065
+    word: conclusion
+    phonetic: '/kənˈkluːʒn/'
+    partOfSpeech: noun
+    definition: 'A decision or opinion reached after thinking carefully'
+    definitionZh: '结论'
+    exampleSentence: 'After studying the map for hours, she reached the conclusion that the treasure was underwater.'
+    exampleSentenceZh: '研究了几个小时的地图后，她得出结论：宝藏在水下。'
+    wordFamily:
+      - form: conclude
+        partOfSpeech: verb
+      - form: conclusive
+        partOfSpeech: adjective
+      - form: conclusively
+        partOfSpeech: adverb
+    collocations:
+      - 'reach a conclusion'
+      - 'draw a conclusion'
+    synonyms: [result, finding, judgement]
+    antonyms: [beginning, introduction, start]
+    level: 2
+    firstAppear: D013
+    reviewSchedule: [D014, D016, D020, D027, D043]
+
+  - id: V0066
+    word: analyse
+    phonetic: '/ˈænəlaɪz/'
+    partOfSpeech: verb
+    definition: 'To study something carefully to understand it'
+    definitionZh: '分析'
+    exampleSentence: 'The scientist needed to analyse the strange rock to find out if it came from another planet.'
+    exampleSentenceZh: '科学家需要分析这块奇怪的石头，看看它是否来自另一个星球。'
+    wordFamily:
+      - form: analysis
+        partOfSpeech: noun
+      - form: analyst
+        partOfSpeech: noun
+      - form: analytical
+        partOfSpeech: adjective
+    collocations:
+      - 'carefully analyse'
+      - 'analyse data'
+    synonyms: [examine, study, investigate]
+    antonyms: [ignore, neglect]
+    level: 2
+    firstAppear: D014
+    reviewSchedule: [D015, D017, D021, D028, D044]
+
+  - id: V0067
+    word: research
+    phonetic: '/rɪˈsɜːrtʃ/'
+    partOfSpeech: noun/verb
+    definition: 'Careful study to find new facts or information'
+    definitionZh: '研究；调查'
+    exampleSentence: 'Years of research finally revealed that the ancient tree could communicate through its roots.'
+    exampleSentenceZh: '多年的研究终于揭示，这棵古树可以通过根部进行交流。'
+    wordFamily:
+      - form: researcher
+        partOfSpeech: noun
+    collocations:
+      - 'scientific research'
+      - 'conduct research'
+    synonyms: [study, investigation, inquiry]
+    antonyms: []
+    level: 1
+    firstAppear: D014
+    reviewSchedule: [D015, D017, D021, D028, D044]
+
+  - id: V0068
+    word: calculate
+    phonetic: '/ˈkælkjuleɪt/'
+    partOfSpeech: verb
+    definition: 'To work out a number or amount using mathematics'
+    definitionZh: '计算'
+    exampleSentence: 'She had to calculate the exact angle to bounce the light beam into the crystal lock.'
+    exampleSentenceZh: '她必须计算出精确的角度，把光束反射进水晶锁。'
+    wordFamily:
+      - form: calculation
+        partOfSpeech: noun
+      - form: calculator
+        partOfSpeech: noun
+      - form: calculated
+        partOfSpeech: adjective
+    collocations:
+      - 'carefully calculate'
+      - 'calculate the distance'
+    synonyms: [compute, work out, figure out]
+    antonyms: [estimate, guess]
+    level: 2
+    firstAppear: D014
+    reviewSchedule: [D015, D017, D021, D028, D044]
+
+  - id: V0069
+    word: measure
+    phonetic: '/ˈmeʒər/'
+    partOfSpeech: verb/noun
+    definition: 'To find the size, length, or amount of something'
+    definitionZh: '测量；措施'
+    exampleSentence: 'They used a magical rope to measure the depth of the dragon cave.'
+    exampleSentenceZh: '他们用一根魔法绳子来测量龙洞的深度。'
+    wordFamily:
+      - form: measurement
+        partOfSpeech: noun
+      - form: measurable
+        partOfSpeech: adjective
+      - form: immeasurable
+        partOfSpeech: adjective
+    collocations:
+      - 'measure the distance'
+      - 'take measures'
+    synonyms: [gauge, assess, quantify]
+    antonyms: [estimate, guess]
+    level: 1
+    firstAppear: D014
+    reviewSchedule: [D015, D017, D021, D028, D044]
+
+  - id: V0070
+    word: significant
+    phonetic: '/sɪɡˈnɪfɪkənt/'
+    partOfSpeech: adjective
+    definition: 'Important or large enough to have an effect'
+    definitionZh: '重要的，有意义的'
+    exampleSentence: 'The discovery of the talking parrot was significant because it proved magic still existed.'
+    exampleSentenceZh: '发现会说话的鹦鹉意义重大，因为它证明了魔法仍然存在。'
+    wordFamily:
+      - form: significance
+        partOfSpeech: noun
+      - form: significantly
+        partOfSpeech: adverb
+      - form: insignificant
+        partOfSpeech: adjective
+    collocations:
+      - 'significant difference'
+      - 'significant discovery'
+    synonyms: [important, major, meaningful]
+    antonyms: [insignificant, trivial, minor]
+    level: 2
+    firstAppear: D014
+    reviewSchedule: [D015, D017, D021, D028, D044]
+
+  - id: V0071
+    word: theory
+    phonetic: '/ˈθɪəri/'
+    partOfSpeech: noun
+    definition: 'An idea used to explain why something happens'
+    definitionZh: '理论'
+    exampleSentence: "The professor's theory was that dragons flew by heating the air beneath their wings."
+    exampleSentenceZh: '教授的理论是，龙通过加热翅膀下方的空气来飞行。'
+    wordFamily:
+      - form: theoretical
+        partOfSpeech: adjective
+      - form: theoretically
+        partOfSpeech: adverb
+      - form: theorist
+        partOfSpeech: noun
+    collocations:
+      - 'scientific theory'
+      - 'in theory'
+    synonyms: [hypothesis, concept, idea]
+    antonyms: [fact, practice, reality]
+    level: 2
+    firstAppear: D015
+    reviewSchedule: [D016, D018, D022, D029, D045]
+
+  - id: V0072
+    word: phenomenon
+    phonetic: '/fəˈnɒmɪnən/'
+    partOfSpeech: noun
+    definition: 'Something that happens or exists, especially something unusual'
+    definitionZh: '现象'
+    exampleSentence: 'The glowing lake at midnight was a natural phenomenon that only happened once a year.'
+    exampleSentenceZh: '午夜发光的湖泊是一种每年只出现一次的自然现象。'
+    wordFamily:
+      - form: phenomenal
+        partOfSpeech: adjective
+      - form: phenomenally
+        partOfSpeech: adverb
+      - form: phenomena
+        partOfSpeech: noun
+        note: 'plural form'
+    collocations:
+      - 'natural phenomenon'
+      - 'strange phenomenon'
+    synonyms: [event, occurrence, marvel]
+    antonyms: []
+    level: 3
+    firstAppear: D015
+    reviewSchedule: [D016, D018, D022, D029, D045]
+
+  - id: V0073
+    word: observation
+    phonetic: '/ˌɒbzərˈveɪʃn/'
+    partOfSpeech: noun
+    definition: 'The act of watching something carefully; a comment based on what you see'
+    definitionZh: '观察；观察结果'
+    exampleSentence: 'Her careful observation of the nest revealed that the mother bird sang different songs to each chick.'
+    exampleSentenceZh: '她对鸟巢的仔细观察揭示了母鸟会对每只雏鸟唱不同的歌。'
+    wordFamily:
+      - form: observe
+        partOfSpeech: verb
+      - form: observer
+        partOfSpeech: noun
+      - form: observational
+        partOfSpeech: adjective
+    collocations:
+      - 'careful observation'
+      - 'make an observation'
+    synonyms: [study, examination, remark]
+    antonyms: [neglect, inattention]
+    level: 2
+    firstAppear: D015
+    reviewSchedule: [D016, D018, D022, D029, D045]
+
+  - id: V0074
+    word: microscope
+    phonetic: '/ˈmaɪkrəskoʊp/'
+    partOfSpeech: noun
+    definition: 'A device that makes very small things look bigger'
+    definitionZh: '显微镜'
+    exampleSentence: 'Through the microscope, they could see tiny water dragons swimming in a single drop.'
+    exampleSentenceZh: '通过显微镜，他们可以看到微小的水龙在一滴水中游泳。'
+    wordFamily:
+      - form: microscopic
+        partOfSpeech: adjective
+    collocations:
+      - 'under a microscope'
+      - 'electron microscope'
+    synonyms: [magnifier, lens]
+    antonyms: [telescope]
+    level: 2
+    firstAppear: D015
+    reviewSchedule: [D016, D018, D022, D029, D045]
+
+  - id: V0075
+    word: laboratory
+    phonetic: '/ləˈbɒrətɔːri/'
+    partOfSpeech: noun
+    definition: 'A room or building used for scientific experiments'
+    definitionZh: '实验室'
+    exampleSentence: "The wizard's laboratory was full of bubbling potions and glowing crystals."
+    exampleSentenceZh: '巫师的实验室里满是冒泡的药水和发光的水晶。'
+    wordFamily:
+      - form: lab
+        partOfSpeech: noun
+        note: 'informal short form'
+    collocations:
+      - 'science laboratory'
+      - 'laboratory equipment'
+    synonyms: [lab, workshop, research centre]
+    antonyms: []
+    level: 2
+    firstAppear: D015
+    reviewSchedule: [D016, D018, D022, D029, D045]
+
+  - id: V0076
+    word: chemical
+    phonetic: '/ˈkemɪkl/'
+    partOfSpeech: noun/adjective
+    definition: 'A substance produced by or used in chemistry'
+    definitionZh: '化学物质；化学的'
+    exampleSentence: 'The chemical reaction between the two liquids created a sparkling cloud of rainbow mist.'
+    exampleSentenceZh: '两种液体的化学反应产生了一团闪闪发光的彩虹雾。'
+    wordFamily:
+      - form: chemistry
+        partOfSpeech: noun
+      - form: chemist
+        partOfSpeech: noun
+      - form: chemically
+        partOfSpeech: adverb
+    collocations:
+      - 'chemical reaction'
+      - 'chemical substance'
+    synonyms: [substance, compound]
+    antonyms: [natural, organic]
+    level: 2
+    firstAppear: D016
+    reviewSchedule: [D017, D019, D023, D030, D046]
+
+  - id: V0077
+    word: reaction
+    phonetic: '/riˈækʃn/'
+    partOfSpeech: noun
+    definition: 'A response to something; in science, a process where substances change'
+    definitionZh: '反应'
+    exampleSentence: "The dragon's reaction to the music was surprising — it started to dance!"
+    exampleSentenceZh: '龙对音乐的反应令人惊讶——它开始跳舞了！'
+    wordFamily:
+      - form: react
+        partOfSpeech: verb
+      - form: reactive
+        partOfSpeech: adjective
+      - form: reactor
+        partOfSpeech: noun
+    collocations:
+      - 'chain reaction'
+      - 'chemical reaction'
+    synonyms: [response, reply, effect]
+    antonyms: [inaction, stillness]
+    level: 1
+    firstAppear: D016
+    reviewSchedule: [D017, D019, D023, D030, D046]
+
+  - id: V0078
+    word: element
+    phonetic: '/ˈelɪmənt/'
+    partOfSpeech: noun
+    definition: 'A basic substance that cannot be broken into simpler substances; a part of something'
+    definitionZh: '元素；要素'
+    exampleSentence: 'The wizard explained that every spell contained four elements: fire, water, earth, and air.'
+    exampleSentenceZh: '巫师解释说每个咒语都包含四种元素：火、水、土和空气。'
+    wordFamily:
+      - form: elementary
+        partOfSpeech: adjective
+      - form: elemental
+        partOfSpeech: adjective
+    collocations:
+      - 'key element'
+      - 'chemical element'
+    synonyms: [component, ingredient, factor]
+    antonyms: [whole, entirety]
+    level: 1
+    firstAppear: D016
+    reviewSchedule: [D017, D019, D023, D030, D046]
+
+  - id: V0079
+    word: energy
+    phonetic: '/ˈenərdʒi/'
+    partOfSpeech: noun
+    definition: 'The power needed to do work or make things happen'
+    definitionZh: '能量，能源'
+    exampleSentence: 'The sun provided all the energy needed to power the floating sky gardens.'
+    exampleSentenceZh: '太阳提供了驱动浮空花园所需的全部能量。'
+    wordFamily:
+      - form: energetic
+        partOfSpeech: adjective
+      - form: energetically
+        partOfSpeech: adverb
+      - form: energise
+        partOfSpeech: verb
+    collocations:
+      - 'solar energy'
+      - 'full of energy'
+    synonyms: [power, force, strength]
+    antonyms: [weakness, lethargy, exhaustion]
+    level: 1
+    firstAppear: D016
+    reviewSchedule: [D017, D019, D023, D030, D046]
+
+  - id: V0080
+    word: gravity
+    phonetic: '/ˈɡrævɪti/'
+    partOfSpeech: noun
+    definition: 'The force that pulls things towards the centre of the Earth'
+    definitionZh: '重力，引力'
+    exampleSentence: 'On the floating island, gravity was so weak that everyone bounced when they walked.'
+    exampleSentenceZh: '在浮空岛上，重力非常弱，每个人走路时都会弹跳。'
+    wordFamily:
+      - form: gravitational
+        partOfSpeech: adjective
+      - form: gravitate
+        partOfSpeech: verb
+    collocations:
+      - 'force of gravity'
+      - 'zero gravity'
+    synonyms: [pull, attraction, force]
+    antonyms: [weightlessness, levitation]
+    level: 2
+    firstAppear: D016
+    reviewSchedule: [D017, D019, D023, D030, D046]
+
+  - id: V0081
+    word: orbit
+    phonetic: '/ˈɔːrbɪt/'
+    partOfSpeech: noun/verb
+    definition: 'The curved path an object takes around a star or planet'
+    definitionZh: '轨道；绕…运行'
+    exampleSentence: 'The tiny moon took exactly seven days to orbit the enchanted planet.'
+    exampleSentenceZh: '这颗小月亮正好需要七天时间绕魔法星球运行一圈。'
+    wordFamily:
+      - form: orbital
+        partOfSpeech: adjective
+    collocations:
+      - 'orbit the Earth'
+      - 'in orbit'
+    synonyms: [revolve, circle, path]
+    antonyms: []
+    level: 2
+    firstAppear: D017
+    reviewSchedule: [D018, D020, D024, D031, D047]
+
+  - id: V0082
+    word: satellite
+    phonetic: '/ˈsætəlaɪt/'
+    partOfSpeech: noun
+    definition: 'An object in space that moves around a larger object; a man-made device sent into space'
+    definitionZh: '卫星'
+    exampleSentence: 'The satellite sent back pictures of a mysterious green patch growing on Mars.'
+    exampleSentenceZh: '卫星发回了火星上一块神秘绿色区域的照片。'
+    wordFamily: []
+    collocations:
+      - 'satellite image'
+      - 'communication satellite'
+    synonyms: [moon, spacecraft]
+    antonyms: []
+    level: 2
+    firstAppear: D017
+    reviewSchedule: [D018, D020, D024, D031, D047]
+
+  - id: V0083
+    word: astronaut
+    phonetic: '/ˈæstrənɔːt/'
+    partOfSpeech: noun
+    definition: 'A person who travels into space'
+    definitionZh: '宇航员'
+    exampleSentence: 'The astronaut floated weightlessly inside the space station, watching Earth turn below.'
+    exampleSentenceZh: '宇航员在空间站里失重漂浮，看着下方地球缓缓转动。'
+    wordFamily:
+      - form: astronomy
+        partOfSpeech: noun
+      - form: astronomer
+        partOfSpeech: noun
+      - form: astronomical
+        partOfSpeech: adjective
+    collocations:
+      - 'astronaut training'
+      - 'become an astronaut'
+    synonyms: [spaceman, cosmonaut]
+    antonyms: []
+    level: 1
+    firstAppear: D017
+    reviewSchedule: [D018, D020, D024, D031, D047]
+
+  - id: V0084
+    word: mission
+    phonetic: '/ˈmɪʃn/'
+    partOfSpeech: noun
+    definition: 'An important task or journey with a specific purpose'
+    definitionZh: '任务，使命'
+    exampleSentence: 'Their mission was to find the last remaining seed of the ancient healing tree.'
+    exampleSentenceZh: '他们的任务是找到古老治愈之树最后剩余的种子。'
+    wordFamily:
+      - form: missionary
+        partOfSpeech: noun
+    collocations:
+      - 'rescue mission'
+      - 'space mission'
+    synonyms: [task, assignment, quest]
+    antonyms: []
+    level: 1
+    firstAppear: D017
+    reviewSchedule: [D018, D020, D024, D031, D047]
+
+  - id: V0085
+    word: launch
+    phonetic: '/lɔːntʃ/'
+    partOfSpeech: verb/noun
+    definition: 'To send something into the sky or water; to start something new'
+    definitionZh: '发射；启动'
+    exampleSentence: 'They planned to launch the hot-air balloon at sunrise to fly over the sleeping volcano.'
+    exampleSentenceZh: '他们计划在日出时发射热气球，飞越沉睡的火山。'
+    wordFamily:
+      - form: launcher
+        partOfSpeech: noun
+    collocations:
+      - 'launch a rocket'
+      - 'product launch'
+    synonyms: [send, fire, start]
+    antonyms: [land, stop, end]
+    level: 1
+    firstAppear: D017
+    reviewSchedule: [D018, D020, D024, D031, D047]
+
+  - id: V0086
+    word: technology
+    phonetic: '/tekˈnɒlədʒi/'
+    partOfSpeech: noun
+    definition: 'The use of science to make tools, machines, and solve problems'
+    definitionZh: '技术，科技'
+    exampleSentence: 'The underwater city used advanced technology to create air bubbles for people to breathe.'
+    exampleSentenceZh: '水下城市使用先进的科技制造气泡供人们呼吸。'
+    wordFamily:
+      - form: technological
+        partOfSpeech: adjective
+      - form: technologically
+        partOfSpeech: adverb
+      - form: technologist
+        partOfSpeech: noun
+    collocations:
+      - 'modern technology'
+      - 'advanced technology'
+    synonyms: [innovation, engineering, science]
+    antonyms: []
+    level: 1
+    firstAppear: D018
+    reviewSchedule: [D019, D021, D025, D032, D048]
+
+  - id: V0087
+    word: innovation
+    phonetic: '/ˌɪnəˈveɪʃn/'
+    partOfSpeech: noun
+    definition: 'A new idea, method, or invention'
+    definitionZh: '创新，革新'
+    exampleSentence: 'The greatest innovation in the fairy kingdom was a bridge made entirely of woven moonlight.'
+    exampleSentenceZh: '仙子王国最伟大的创新是一座完全由月光编织而成的桥。'
+    wordFamily:
+      - form: innovate
+        partOfSpeech: verb
+      - form: innovative
+        partOfSpeech: adjective
+      - form: innovator
+        partOfSpeech: noun
+    collocations:
+      - 'technological innovation'
+      - 'drive innovation'
+    synonyms: [invention, breakthrough, novelty]
+    antonyms: [tradition, convention]
+    level: 3
+    firstAppear: D018
+    reviewSchedule: [D019, D021, D025, D032, D048]
+
+  - id: V0088
+    word: device
+    phonetic: '/dɪˈvaɪs/'
+    partOfSpeech: noun
+    definition: 'A piece of equipment made for a particular purpose'
+    definitionZh: '设备，装置'
+    exampleSentence: 'The clever inventor built a device that could translate birdsong into human words.'
+    exampleSentenceZh: '聪明的发明家建造了一个能把鸟鸣翻译成人类语言的装置。'
+    wordFamily:
+      - form: devise
+        partOfSpeech: verb
+    collocations:
+      - 'electronic device'
+      - 'useful device'
+    synonyms: [gadget, instrument, tool]
+    antonyms: []
+    level: 1
+    firstAppear: D018
+    reviewSchedule: [D019, D021, D025, D032, D048]
+
+  - id: V0089
+    word: artificial
+    phonetic: '/ˌɑːrtɪˈfɪʃl/'
+    partOfSpeech: adjective
+    definition: 'Made by people, not natural'
+    definitionZh: '人工的，人造的'
+    exampleSentence: 'The artificial lake looked so real that even the ducks were fooled.'
+    exampleSentenceZh: '这个人工湖看起来太逼真了，连鸭子都被骗了。'
+    wordFamily:
+      - form: artificially
+        partOfSpeech: adverb
+      - form: artifice
+        partOfSpeech: noun
+    collocations:
+      - 'artificial intelligence'
+      - 'artificial light'
+    synonyms: [man-made, synthetic, fake]
+    antonyms: [natural, genuine, real]
+    level: 2
+    firstAppear: D018
+    reviewSchedule: [D019, D021, D025, D032, D048]
+
+  - id: V0090
+    word: generate
+    phonetic: '/ˈdʒenəreɪt/'
+    partOfSpeech: verb
+    definition: 'To produce or create something'
+    definitionZh: '产生，发电'
+    exampleSentence: 'The magical windmill could generate enough power to light up the entire village at night.'
+    exampleSentenceZh: '魔法风车能产生足够的电力，在夜晚照亮整个村庄。'
+    wordFamily:
+      - form: generation
+        partOfSpeech: noun
+      - form: generator
+        partOfSpeech: noun
+    collocations:
+      - 'generate electricity'
+      - 'generate ideas'
+    synonyms: [produce, create, make]
+    antonyms: [consume, destroy, use up]
+    level: 2
+    firstAppear: D018
+    reviewSchedule: [D019, D021, D025, D032, D048]
+
+  - id: V0091
+    word: adventure
+    phonetic: '/ədˈventʃər/'
+    partOfSpeech: noun
+    definition: 'An exciting or unusual experience, often involving danger'
+    definitionZh: '冒险，奇遇'
+    exampleSentence: 'The greatest adventure of her life began when she found a talking map in the attic.'
+    exampleSentenceZh: '她一生中最伟大的冒险始于她在阁楼里发现了一张会说话的地图。'
+    wordFamily:
+      - form: adventurous
+        partOfSpeech: adjective
+      - form: adventurer
+        partOfSpeech: noun
+      - form: adventurously
+        partOfSpeech: adverb
+    collocations:
+      - 'exciting adventure'
+      - 'adventure story'
+    synonyms: [quest, expedition, journey]
+    antonyms: [routine, boredom]
+    level: 1
+    firstAppear: D019
+    reviewSchedule: [D020, D022, D026, D033, D049]
+
+  - id: V0092
+    word: explore
+    phonetic: '/ɪkˈsplɔːr/'
+    partOfSpeech: verb
+    definition: 'To travel through an unfamiliar area to learn about it'
+    definitionZh: '探索，探险'
+    exampleSentence: 'They decided to explore the underwater cave system using glowing jellyfish as lanterns.'
+    exampleSentenceZh: '他们决定用发光的水母当灯笼来探索水下洞穴系统。'
+    wordFamily:
+      - form: exploration
+        partOfSpeech: noun
+      - form: explorer
+        partOfSpeech: noun
+      - form: exploratory
+        partOfSpeech: adjective
+    collocations:
+      - 'explore the world'
+      - 'explore new ideas'
+    synonyms: [investigate, discover, search]
+    antonyms: [ignore, avoid, stay]
+    level: 1
+    firstAppear: D019
+    reviewSchedule: [D020, D022, D026, D033, D049]
+
+  - id: V0093
+    word: expedition
+    phonetic: '/ˌekspəˈdɪʃn/'
+    partOfSpeech: noun
+    definition: 'A long, organised journey for a special purpose'
+    definitionZh: '远征，考察'
+    exampleSentence: 'The expedition to the North Pole took three months and required twelve brave volunteers.'
+    exampleSentenceZh: '这次北极远征历时三个月，需要十二名勇敢的志愿者。'
+    wordFamily: []
+    collocations:
+      - 'scientific expedition'
+      - 'go on an expedition'
+    synonyms: [journey, voyage, trek]
+    antonyms: []
+    level: 2
+    firstAppear: D019
+    reviewSchedule: [D020, D022, D026, D033, D049]
+
+  - id: V0094
+    word: journey
+    phonetic: '/ˈdʒɜːrni/'
+    partOfSpeech: noun
+    definition: 'The act of travelling from one place to another'
+    definitionZh: '旅程，旅途'
+    exampleSentence: 'The journey through the enchanted mountains took longer than expected because the paths kept changing.'
+    exampleSentenceZh: '穿越魔法山脉的旅程比预期的要长，因为路径一直在变化。'
+    wordFamily: []
+    collocations:
+      - 'long journey'
+      - 'journey home'
+    synonyms: [trip, voyage, trek]
+    antonyms: [stay, arrival]
+    level: 1
+    firstAppear: D019
+    reviewSchedule: [D020, D022, D026, D033, D049]
+
+  - id: V0095
+    word: destination
+    phonetic: '/ˌdestɪˈneɪʃn/'
+    partOfSpeech: noun
+    definition: 'The place where someone is going to'
+    definitionZh: '目的地'
+    exampleSentence: 'Their final destination was the Crystal Tower at the edge of the world.'
+    exampleSentenceZh: '他们最终的目的地是世界边缘的水晶塔。'
+    wordFamily:
+      - form: destine
+        partOfSpeech: verb
+      - form: destiny
+        partOfSpeech: noun
+    collocations:
+      - 'final destination'
+      - 'popular destination'
+    synonyms: [goal, endpoint, target]
+    antonyms: [origin, starting point]
+    level: 2
+    firstAppear: D019
+    reviewSchedule: [D020, D022, D026, D033, D049]
+
+  - id: V0096
+    word: navigate
+    phonetic: '/ˈnævɪɡeɪt/'
+    partOfSpeech: verb
+    definition: 'To find the way to a place, especially using a map or compass'
+    definitionZh: '导航，引航'
+    exampleSentence: 'She learned to navigate through the fog by following the sound of the singing river.'
+    exampleSentenceZh: '她学会了在迷雾中循着河流的歌声导航。'
+    wordFamily:
+      - form: navigation
+        partOfSpeech: noun
+      - form: navigator
+        partOfSpeech: noun
+    collocations:
+      - 'navigate through'
+      - 'difficult to navigate'
+    synonyms: [steer, guide, direct]
+    antonyms: [wander, drift]
+    level: 2
+    firstAppear: D020
+    reviewSchedule: [D021, D023, D027, D034, D050]
+
+  - id: V0097
+    word: compass
+    phonetic: '/ˈkʌmpəs/'
+    partOfSpeech: noun
+    definition: 'A device with a magnetic needle that always points north'
+    definitionZh: '指南针，罗盘'
+    exampleSentence: 'The golden compass spun wildly whenever they got close to hidden magic.'
+    exampleSentenceZh: '每当他们接近隐藏的魔法时，金色指南针就疯狂旋转。'
+    wordFamily: []
+    collocations:
+      - 'compass direction'
+      - 'compass needle'
+    synonyms: [guide, direction finder]
+    antonyms: []
+    level: 1
+    firstAppear: D020
+    reviewSchedule: [D021, D023, D027, D034, D050]
+
+  - id: V0098
+    word: treasure
+    phonetic: '/ˈtreʒər/'
+    partOfSpeech: noun/verb
+    definition: 'Very valuable things such as gold and jewels; to value something highly'
+    definitionZh: '宝藏；珍惜'
+    exampleSentence: 'The real treasure turned out to be the friendships they made along the way.'
+    exampleSentenceZh: '真正的宝藏原来是他们一路上建立的友谊。'
+    wordFamily:
+      - form: treasured
+        partOfSpeech: adjective
+      - form: treasurer
+        partOfSpeech: noun
+    collocations:
+      - 'buried treasure'
+      - 'treasure hunt'
+    synonyms: [riches, wealth, prize]
+    antonyms: [junk, rubbish, worthless]
+    level: 1
+    firstAppear: D020
+    reviewSchedule: [D021, D023, D027, D034, D050]
+
+  - id: V0099
+    word: ancient
+    phonetic: '/ˈeɪnʃənt/'
+    partOfSpeech: adjective
+    definition: 'Very old; belonging to a time long ago'
+    definitionZh: '古老的，远古的'
+    exampleSentence: 'The ancient tree in the centre of the forest had been growing for ten thousand years.'
+    exampleSentenceZh: '森林中央的古老大树已经生长了一万年。'
+    wordFamily:
+      - form: anciently
+        partOfSpeech: adverb
+    collocations:
+      - 'ancient history'
+      - 'ancient ruins'
+    synonyms: [old, historic, prehistoric]
+    antonyms: [modern, new, recent]
+    level: 1
+    firstAppear: D020
+    reviewSchedule: [D021, D023, D027, D034, D050]
+
+  - id: V0100
+    word: mysterious
+    phonetic: '/mɪˈstɪəriəs/'
+    partOfSpeech: adjective
+    definition: 'Strange and difficult to explain or understand'
+    definitionZh: '神秘的'
+    exampleSentence: 'A mysterious light appeared in the forest every night at exactly midnight.'
+    exampleSentenceZh: '每天午夜时分，森林中都会出现一道神秘的光。'
+    wordFamily:
+      - form: mystery
+        partOfSpeech: noun
+      - form: mysteriously
+        partOfSpeech: adverb
+    collocations:
+      - 'mysterious stranger'
+      - 'mysterious disappearance'
+    synonyms: [puzzling, enigmatic, strange]
+    antonyms: [obvious, clear, explainable]
+    level: 1
+    firstAppear: D020
+    reviewSchedule: [D021, D023, D027, D034, D050]
+
+  - id: V0101
+    word: legend
+    phonetic: '/ˈledʒənd/'
+    partOfSpeech: noun
+    definition: 'A very old story from the past that may not be completely true'
+    definitionZh: '传说，传奇'
+    exampleSentence: 'According to legend, the lake was formed from the tears of a gentle giant.'
+    exampleSentenceZh: '据传说，这个湖是由一个温柔巨人的眼泪形成的。'
+    wordFamily:
+      - form: legendary
+        partOfSpeech: adjective
+    collocations:
+      - 'local legend'
+      - 'legend has it'
+    synonyms: [myth, tale, fable]
+    antonyms: [fact, history, truth]
+    level: 1
+    firstAppear: D021
+    reviewSchedule: [D022, D024, D028, D035, D051]
+
+  - id: V0102
+    word: myth
+    phonetic: '/mɪθ/'
+    partOfSpeech: noun
+    definition: 'A traditional story about gods or heroes; an untrue belief'
+    definitionZh: '神话；虚构的事'
+    exampleSentence: 'The myth about the flying horses turned out to be true when one landed in the garden.'
+    exampleSentenceZh: '关于飞马的神话被证实了——一匹飞马降落在了花园里。'
+    wordFamily:
+      - form: mythical
+        partOfSpeech: adjective
+      - form: mythology
+        partOfSpeech: noun
+      - form: mythological
+        partOfSpeech: adjective
+    collocations:
+      - 'ancient myth'
+      - 'popular myth'
+    synonyms: [legend, fable, folklore]
+    antonyms: [fact, reality, truth]
+    level: 1
+    firstAppear: D021
+    reviewSchedule: [D022, D024, D028, D035, D051]
+
+  - id: V0103
+    word: courage
+    phonetic: '/ˈkʌrɪdʒ/'
+    partOfSpeech: noun
+    definition: 'The ability to face danger or difficulty without being afraid'
+    definitionZh: '勇气'
+    exampleSentence: 'It took great courage for the little rabbit to cross the bridge over the rumbling volcano.'
+    exampleSentenceZh: '小兔子需要极大的勇气才能穿过轰鸣的火山上方的桥。'
+    wordFamily:
+      - form: courageous
+        partOfSpeech: adjective
+      - form: courageously
+        partOfSpeech: adverb
+      - form: encourage
+        partOfSpeech: verb
+    collocations:
+      - 'have the courage'
+      - 'show courage'
+    synonyms: [bravery, valour, nerve]
+    antonyms: [cowardice, fear, timidity]
+    level: 1
+    firstAppear: D021
+    reviewSchedule: [D022, D024, D028, D035, D051]
+
+  - id: V0104
+    word: brave
+    phonetic: '/breɪv/'
+    partOfSpeech: adjective
+    definition: 'Ready to face danger or pain; showing courage'
+    definitionZh: '勇敢的'
+    exampleSentence: 'The brave girl stood between the wolf and her little brother without flinching.'
+    exampleSentenceZh: '勇敢的女孩毫不退缩地站在狼和弟弟之间。'
+    wordFamily:
+      - form: bravery
+        partOfSpeech: noun
+      - form: bravely
+        partOfSpeech: adverb
+    collocations:
+      - 'brave enough'
+      - 'brave warrior'
+    synonyms: [courageous, fearless, bold]
+    antonyms: [cowardly, timid, afraid]
+    level: 1
+    firstAppear: D021
+    reviewSchedule: [D022, D024, D028, D035, D051]
+
+  - id: V0105
+    word: determined
+    phonetic: '/dɪˈtɜːrmɪnd/'
+    partOfSpeech: adjective
+    definition: 'Having a strong will to do something; not giving up'
+    definitionZh: '坚定的，有决心的'
+    exampleSentence: 'She was determined to reach the mountain top even though the storm grew stronger.'
+    exampleSentenceZh: '尽管暴风雨越来越猛烈，她仍然坚定地要到达山顶。'
+    wordFamily:
+      - form: determination
+        partOfSpeech: noun
+      - form: determine
+        partOfSpeech: verb
+    collocations:
+      - 'determined to succeed'
+      - 'fiercely determined'
+    synonyms: [resolute, persistent, firm]
+    antonyms: [hesitant, indecisive, uncertain]
+    level: 2
+    firstAppear: D021
+    reviewSchedule: [D022, D024, D028, D035, D051]
+
+  - id: V0106
+    word: challenge
+    phonetic: '/ˈtʃælɪndʒ/'
+    partOfSpeech: noun/verb
+    definition: 'Something difficult that tests your ability; to invite someone to compete'
+    definitionZh: '挑战'
+    exampleSentence: 'The biggest challenge was crossing the invisible bridge without looking down.'
+    exampleSentenceZh: '最大的挑战是不往下看地穿过隐形桥。'
+    wordFamily:
+      - form: challenging
+        partOfSpeech: adjective
+      - form: challenger
+        partOfSpeech: noun
+    collocations:
+      - 'face a challenge'
+      - 'great challenge'
+    synonyms: [test, difficulty, trial]
+    antonyms: [ease, simplicity]
+    level: 1
+    firstAppear: D022
+    reviewSchedule: [D023, D025, D029, D036, D052]
+
+  - id: V0107
+    word: obstacle
+    phonetic: '/ˈɒbstəkl/'
+    partOfSpeech: noun
+    definition: 'Something that blocks your way or makes it difficult to do something'
+    definitionZh: '障碍，阻碍'
+    exampleSentence: 'The fallen tree was just the first obstacle on the path to the hidden temple.'
+    exampleSentenceZh: '倒下的大树只是通往隐秘神殿路上的第一个障碍。'
+    wordFamily: []
+    collocations:
+      - 'overcome an obstacle'
+      - 'major obstacle'
+    synonyms: [barrier, hurdle, blockage]
+    antonyms: [aid, help, advantage]
+    level: 2
+    firstAppear: D022
+    reviewSchedule: [D023, D025, D029, D036, D052]
+
+  - id: V0108
+    word: overcome
+    phonetic: '/ˌoʊvərˈkʌm/'
+    partOfSpeech: verb
+    definition: 'To succeed in dealing with a problem or difficulty'
+    definitionZh: '克服，战胜'
+    exampleSentence: 'Together, they managed to overcome every trap the sorcerer had set.'
+    exampleSentenceZh: '他们齐心协力，成功克服了巫师设下的每一个陷阱。'
+    wordFamily: []
+    collocations:
+      - 'overcome difficulties'
+      - 'overcome fear'
+    synonyms: [defeat, conquer, master]
+    antonyms: [surrender, yield, succumb]
+    level: 2
+    firstAppear: D022
+    reviewSchedule: [D023, D025, D029, D036, D052]
+
+  - id: V0109
+    word: achievement
+    phonetic: '/əˈtʃiːvmənt/'
+    partOfSpeech: noun
+    definition: 'Something important that you have done successfully through effort'
+    definitionZh: '成就，成绩'
+    exampleSentence: 'Climbing the Ice Peak was her greatest achievement, and the view was worth every step.'
+    exampleSentenceZh: '攀登冰峰是她最大的成就，那里的景色值得每一步的努力。'
+    wordFamily:
+      - form: achieve
+        partOfSpeech: verb
+      - form: achievable
+        partOfSpeech: adjective
+      - form: achiever
+        partOfSpeech: noun
+    collocations:
+      - 'great achievement'
+      - 'sense of achievement'
+    synonyms: [accomplishment, success, feat]
+    antonyms: [failure, defeat]
+    level: 2
+    firstAppear: D022
+    reviewSchedule: [D023, D025, D029, D036, D052]
+
+  - id: V0110
+    word: triumph
+    phonetic: '/ˈtraɪʌmf/'
+    partOfSpeech: noun/verb
+    definition: 'A great victory or success'
+    definitionZh: '胜利，凯旋'
+    exampleSentence: 'The team returned in triumph after rescuing the baby phoenix from the frozen cave.'
+    exampleSentenceZh: '在从冰冻洞穴中救出凤凰宝宝后，队伍凯旋而归。'
+    wordFamily:
+      - form: triumphant
+        partOfSpeech: adjective
+      - form: triumphantly
+        partOfSpeech: adverb
+    collocations:
+      - 'moment of triumph'
+      - 'triumph over'
+    synonyms: [victory, success, win]
+    antonyms: [defeat, failure, loss]
+    level: 2
+    firstAppear: D022
+    reviewSchedule: [D023, D025, D029, D036, D052]
+
+  - id: V0111
+    word: rescue
+    phonetic: '/ˈreskjuː/'
+    partOfSpeech: verb/noun
+    definition: 'To save someone or something from danger'
+    definitionZh: '营救，救援'
+    exampleSentence: 'The dolphins formed a circle to rescue the shipwrecked sailors from the storm.'
+    exampleSentenceZh: '海豚围成一圈，从暴风雨中营救遇难的水手。'
+    wordFamily:
+      - form: rescuer
+        partOfSpeech: noun
+    collocations:
+      - 'rescue mission'
+      - 'come to the rescue'
+    synonyms: [save, recover, free]
+    antonyms: [endanger, abandon, capture]
+    level: 1
+    firstAppear: D023
+    reviewSchedule: [D024, D026, D030, D037, D053]
+
+  - id: V0112
+    word: survivor
+    phonetic: '/sərˈvaɪvər/'
+    partOfSpeech: noun
+    definition: 'A person who continues to live after a dangerous event'
+    definitionZh: '幸存者'
+    exampleSentence: 'The old turtle was the only survivor of the great storm that changed the island forever.'
+    exampleSentenceZh: '这只老海龟是那场永远改变了这座岛屿的大风暴的唯一幸存者。'
+    wordFamily:
+      - form: survive
+        partOfSpeech: verb
+      - form: survival
+        partOfSpeech: noun
+    collocations:
+      - 'sole survivor'
+      - 'storm survivor'
+    synonyms: [escapee, endurer]
+    antonyms: [victim, casualty]
+    level: 2
+    firstAppear: D023
+    reviewSchedule: [D024, D026, D030, D037, D053]
+
+  - id: V0113
+    word: danger
+    phonetic: '/ˈdeɪndʒər/'
+    partOfSpeech: noun
+    definition: 'The possibility of harm or death'
+    definitionZh: '危险'
+    exampleSentence: 'The birds sang a warning song whenever danger was approaching the forest village.'
+    exampleSentenceZh: '每当危险靠近森林村庄时，鸟儿们就唱起警告的歌。'
+    wordFamily:
+      - form: dangerous
+        partOfSpeech: adjective
+      - form: dangerously
+        partOfSpeech: adverb
+      - form: endanger
+        partOfSpeech: verb
+    collocations:
+      - 'in danger'
+      - 'sense danger'
+    synonyms: [risk, threat, peril]
+    antonyms: [safety, security, protection]
+    level: 1
+    firstAppear: D023
+    reviewSchedule: [D024, D026, D030, D037, D053]
+
+  - id: V0114
+    word: risk
+    phonetic: '/rɪsk/'
+    partOfSpeech: noun/verb
+    definition: 'The chance that something bad might happen'
+    definitionZh: '风险；冒险'
+    exampleSentence: 'She decided to risk crossing the frozen river because the bridge was too far away.'
+    exampleSentenceZh: '她决定冒险穿过结冰的河流，因为桥太远了。'
+    wordFamily:
+      - form: risky
+        partOfSpeech: adjective
+    collocations:
+      - 'take a risk'
+      - 'at risk'
+    synonyms: [danger, hazard, chance]
+    antonyms: [safety, certainty, security]
+    level: 1
+    firstAppear: D023
+    reviewSchedule: [D024, D026, D030, D037, D053]
+
+  - id: V0115
+    word: reveal
+    phonetic: '/rɪˈviːl/'
+    partOfSpeech: verb
+    definition: 'To make something known that was previously hidden'
+    definitionZh: '揭示，揭露'
+    exampleSentence: 'The rising sun would reveal the invisible writing on the ancient scroll.'
+    exampleSentenceZh: '升起的太阳将揭示古老卷轴上的隐形文字。'
+    wordFamily:
+      - form: revelation
+        partOfSpeech: noun
+      - form: revealing
+        partOfSpeech: adjective
+    collocations:
+      - 'reveal a secret'
+      - 'reveal the truth'
+    synonyms: [show, uncover, expose]
+    antonyms: [hide, conceal, cover]
+    level: 2
+    firstAppear: D023
+    reviewSchedule: [D024, D026, D030, D037, D053]
+
+  - id: V0116
+    word: hidden
+    phonetic: '/ˈhɪdn/'
+    partOfSpeech: adjective
+    definition: 'Not able to be seen; kept secret'
+    definitionZh: '隐藏的，秘密的'
+    exampleSentence: 'The hidden door behind the waterfall led to a garden filled with singing flowers.'
+    exampleSentenceZh: '瀑布后面的隐藏之门通往一个满是会唱歌的花朵的花园。'
+    wordFamily:
+      - form: hide
+        partOfSpeech: verb
+      - form: hiding
+        partOfSpeech: noun
+    collocations:
+      - 'hidden treasure'
+      - 'hidden meaning'
+    synonyms: [concealed, secret, invisible]
+    antonyms: [visible, exposed, obvious]
+    level: 1
+    firstAppear: D024
+    reviewSchedule: [D025, D027, D031, D038, D054]
+
+  - id: V0117
+    word: secret
+    phonetic: '/ˈsiːkrət/'
+    partOfSpeech: noun/adjective
+    definition: 'Something that is kept hidden from others'
+    definitionZh: '秘密；秘密的'
+    exampleSentence: 'The forest animals kept the secret of the healing spring for hundreds of years.'
+    exampleSentenceZh: '森林动物们保守了治愈之泉的秘密长达数百年。'
+    wordFamily:
+      - form: secretly
+        partOfSpeech: adverb
+      - form: secretive
+        partOfSpeech: adjective
+      - form: secrecy
+        partOfSpeech: noun
+    collocations:
+      - 'keep a secret'
+      - 'secret passage'
+    synonyms: [mystery, confidential, private]
+    antonyms: [public, open, known]
+    level: 1
+    firstAppear: D024
+    reviewSchedule: [D025, D027, D031, D038, D054]
+
+  - id: V0118
+    word: passage
+    phonetic: '/ˈpæsɪdʒ/'
+    partOfSpeech: noun
+    definition: 'A narrow way through or along something; a section of text'
+    definitionZh: '通道；段落'
+    exampleSentence: 'A narrow passage between the cliff walls led them to the sunlit valley beyond.'
+    exampleSentenceZh: '悬崖壁之间的窄小通道把他们带到了前方阳光明媚的山谷。'
+    wordFamily:
+      - form: pass
+        partOfSpeech: verb/noun
+      - form: passenger
+        partOfSpeech: noun
+    collocations:
+      - 'secret passage'
+      - 'narrow passage'
+    synonyms: [corridor, tunnel, pathway]
+    antonyms: [dead end, blockage]
+    level: 1
+    firstAppear: D024
+    reviewSchedule: [D025, D027, D031, D038, D054]
+
+  - id: V0119
+    word: quest
+    phonetic: '/kwest/'
+    partOfSpeech: noun
+    definition: 'A long search for something important'
+    definitionZh: '探索，寻求'
+    exampleSentence: 'The quest for the lost crown took the young knight across three kingdoms.'
+    exampleSentenceZh: '寻找失落王冠的探索带着年轻骑士穿越了三个王国。'
+    wordFamily: []
+    collocations:
+      - 'quest for knowledge'
+      - 'heroic quest'
+    synonyms: [search, hunt, pursuit]
+    antonyms: []
+    level: 2
+    firstAppear: D024
+    reviewSchedule: [D025, D027, D031, D038, D054]
+
+  - id: V0120
+    word: wander
+    phonetic: '/ˈwɒndər/'
+    partOfSpeech: verb
+    definition: 'To walk slowly around without a clear direction or purpose'
+    definitionZh: '漫步，闲逛'
+    exampleSentence: 'The lost deer would wander through the misty forest until the stars showed it the way home.'
+    exampleSentenceZh: '迷路的小鹿在雾蒙蒙的森林里漫步，直到星星为它指引回家的路。'
+    wordFamily:
+      - form: wanderer
+        partOfSpeech: noun
+      - form: wandering
+        partOfSpeech: adjective
+    collocations:
+      - 'wander around'
+      - 'wander through'
+    synonyms: [roam, stroll, drift]
+    antonyms: [stay, remain, settle]
+    level: 1
+    firstAppear: D024
+    reviewSchedule: [D025, D027, D031, D038, D054]
+
+  - id: V0121
+    word: enthusiastic
+    phonetic: '/ɪnˌθjuːziˈæstɪk/'
+    partOfSpeech: adjective
+    definition: 'Showing a lot of excitement and interest about something'
+    definitionZh: '热情的，热心的'
+    exampleSentence: 'The enthusiastic otter clapped its paws every time someone told a good joke.'
+    exampleSentenceZh: '热情的水獭每次听到好笑话都会拍拍爪子。'
+    wordFamily:
+      - form: enthusiasm
+        partOfSpeech: noun
+      - form: enthusiastically
+        partOfSpeech: adverb
+      - form: enthusiast
+        partOfSpeech: noun
+    collocations:
+      - 'enthusiastic about'
+      - 'enthusiastic response'
+    synonyms: [eager, keen, passionate]
+    antonyms: [indifferent, unenthusiastic, apathetic]
+    level: 2
+    firstAppear: D025
+    reviewSchedule: [D026, D028, D032, D039, D055]
+
+  - id: V0122
+    word: anxious
+    phonetic: '/ˈæŋkʃəs/'
+    partOfSpeech: adjective
+    definition: 'Feeling worried or nervous about something'
+    definitionZh: '焦虑的，不安的'
+    exampleSentence: 'The anxious squirrel kept checking the sky, worried that the eagle might return.'
+    exampleSentenceZh: '焦虑的松鼠不停地查看天空，担心老鹰可能会回来。'
+    wordFamily:
+      - form: anxiety
+        partOfSpeech: noun
+      - form: anxiously
+        partOfSpeech: adverb
+    collocations:
+      - 'anxious about'
+      - 'feel anxious'
+    synonyms: [worried, nervous, uneasy]
+    antonyms: [calm, relaxed, confident]
+    level: 2
+    firstAppear: D025
+    reviewSchedule: [D026, D028, D032, D039, D055]
+
+  - id: V0123
+    word: confident
+    phonetic: '/ˈkɒnfɪdənt/'
+    partOfSpeech: adjective
+    definition: 'Feeling sure about your own abilities'
+    definitionZh: '自信的，有信心的'
+    exampleSentence: 'After weeks of practice, the young falcon felt confident enough to fly across the canyon.'
+    exampleSentenceZh: '经过数周的练习，小猎鹰终于有信心飞越峡谷了。'
+    wordFamily:
+      - form: confidence
+        partOfSpeech: noun
+      - form: confidently
+        partOfSpeech: adverb
+      - form: overconfident
+        partOfSpeech: adjective
+    collocations:
+      - 'feel confident'
+      - 'confident in'
+    synonyms: [self-assured, certain, bold]
+    antonyms: [insecure, uncertain, doubtful]
+    level: 1
+    firstAppear: D025
+    reviewSchedule: [D026, D028, D032, D039, D055]
+
+  - id: V0124
+    word: frustrated
+    phonetic: '/frʌˈstreɪtɪd/'
+    partOfSpeech: adjective
+    definition: 'Feeling upset because you cannot do something or achieve what you want'
+    definitionZh: '沮丧的，受挫的'
+    exampleSentence: 'The frustrated cat tried again and again to catch the fish that kept slipping away.'
+    exampleSentenceZh: '沮丧的猫一次又一次地尝试抓住那条总是溜走的鱼。'
+    wordFamily:
+      - form: frustrate
+        partOfSpeech: verb
+      - form: frustration
+        partOfSpeech: noun
+      - form: frustrating
+        partOfSpeech: adjective
+    collocations:
+      - 'feel frustrated'
+      - 'deeply frustrated'
+    synonyms: [annoyed, disappointed, discouraged]
+    antonyms: [satisfied, pleased, content]
+    level: 2
+    firstAppear: D025
+    reviewSchedule: [D026, D028, D032, D039, D055]
+
+  - id: V0125
+    word: relieved
+    phonetic: '/rɪˈliːvd/'
+    partOfSpeech: adjective
+    definition: 'Feeling happy because something unpleasant has stopped or not happened'
+    definitionZh: '如释重负的，松了一口气的'
+    exampleSentence: 'Everyone was relieved when the lost baby panda was found safe and sound near the bamboo grove.'
+    exampleSentenceZh: '当走失的熊猫宝宝在竹林附近被安然无恙地找到时，大家都松了一口气。'
+    wordFamily:
+      - form: relieve
+        partOfSpeech: verb
+      - form: relief
+        partOfSpeech: noun
+    collocations:
+      - 'feel relieved'
+      - 'greatly relieved'
+    synonyms: [thankful, reassured, comforted]
+    antonyms: [worried, anxious, concerned]
+    level: 2
+    firstAppear: D025
+    reviewSchedule: [D026, D028, D032, D039, D055]
+
+  - id: V0126
+    word: astonished
+    phonetic: '/əˈstɒnɪʃt/'
+    partOfSpeech: adjective
+    definition: 'Very surprised; amazed'
+    definitionZh: '惊讶的，吃惊的'
+    exampleSentence: 'She was astonished to see her pet goldfish had grown wings overnight.'
+    exampleSentenceZh: '她惊讶地发现她的金鱼一夜之间长出了翅膀。'
+    wordFamily:
+      - form: astonish
+        partOfSpeech: verb
+      - form: astonishing
+        partOfSpeech: adjective
+      - form: astonishment
+        partOfSpeech: noun
+    collocations:
+      - 'absolutely astonished'
+      - 'astonished to find'
+    synonyms: [amazed, stunned, shocked]
+    antonyms: [unsurprised, indifferent, bored]
+    level: 2
+    firstAppear: D026
+    reviewSchedule: [D027, D029, D033, D040, D056]
+
+  - id: V0127
+    word: delighted
+    phonetic: '/dɪˈlaɪtɪd/'
+    partOfSpeech: adjective
+    definition: 'Very pleased and happy'
+    definitionZh: '高兴的，欣喜的'
+    exampleSentence: 'The children were delighted when the rainbow-coloured bird returned to their garden.'
+    exampleSentenceZh: '当彩虹色的小鸟回到他们的花园时，孩子们欣喜不已。'
+    wordFamily:
+      - form: delight
+        partOfSpeech: noun/verb
+      - form: delightful
+        partOfSpeech: adjective
+      - form: delightfully
+        partOfSpeech: adverb
+    collocations:
+      - 'absolutely delighted'
+      - 'delighted to hear'
+    synonyms: [pleased, thrilled, overjoyed]
+    antonyms: [disappointed, upset, unhappy]
+    level: 1
+    firstAppear: D026
+    reviewSchedule: [D027, D029, D033, D040, D056]
+
+  - id: V0128
+    word: terrified
+    phonetic: '/ˈterɪfaɪd/'
+    partOfSpeech: adjective
+    definition: 'Extremely frightened'
+    definitionZh: '极度害怕的，恐惧的'
+    exampleSentence: 'The terrified mouse hid behind a mushroom when the shadow of the hawk passed overhead.'
+    exampleSentenceZh: '当老鹰的影子从头顶掠过时，吓坏了的老鼠躲到了蘑菇后面。'
+    wordFamily:
+      - form: terrify
+        partOfSpeech: verb
+      - form: terrifying
+        partOfSpeech: adjective
+      - form: terror
+        partOfSpeech: noun
+    collocations:
+      - 'absolutely terrified'
+      - 'terrified of'
+    synonyms: [frightened, scared, petrified]
+    antonyms: [fearless, calm, brave]
+    level: 2
+    firstAppear: D026
+    reviewSchedule: [D027, D029, D033, D040, D056]
+
+  - id: V0129
+    word: suspicious
+    phonetic: '/səˈspɪʃəs/'
+    partOfSpeech: adjective
+    definition: 'Feeling that something is wrong or that someone cannot be trusted'
+    definitionZh: '怀疑的，可疑的'
+    exampleSentence: 'The suspicious owl watched the stranger closely, wondering why he was carrying a golden cage.'
+    exampleSentenceZh: '多疑的猫头鹰紧紧盯着那个陌生人，好奇他为什么带着一个金笼子。'
+    wordFamily:
+      - form: suspect
+        partOfSpeech: verb/noun
+      - form: suspicion
+        partOfSpeech: noun
+      - form: suspiciously
+        partOfSpeech: adverb
+    collocations:
+      - 'suspicious of'
+      - 'look suspicious'
+    synonyms: [distrustful, doubtful, wary]
+    antonyms: [trusting, unsuspecting, confident]
+    level: 2
+    firstAppear: D026
+    reviewSchedule: [D027, D029, D033, D040, D056]
+
+  - id: V0130
+    word: patient
+    phonetic: '/ˈpeɪʃnt/'
+    partOfSpeech: adjective
+    definition: 'Able to wait calmly without getting annoyed'
+    definitionZh: '耐心的'
+    exampleSentence: 'The patient heron stood perfectly still for an hour until the fish finally swam close enough.'
+    exampleSentenceZh: '耐心的苍鹭一动不动地站了一个小时，直到鱼终于游到足够近的地方。'
+    wordFamily:
+      - form: patience
+        partOfSpeech: noun
+      - form: patiently
+        partOfSpeech: adverb
+      - form: impatient
+        partOfSpeech: adjective
+    collocations:
+      - 'be patient'
+      - 'patient with'
+    synonyms: [tolerant, calm, enduring]
+    antonyms: [impatient, restless, hasty]
+    level: 1
+    firstAppear: D026
+    reviewSchedule: [D027, D029, D033, D040, D056]
+
+  - id: V0131
+    word: ambitious
+    phonetic: '/æmˈbɪʃəs/'
+    partOfSpeech: adjective
+    definition: 'Having a strong desire to succeed or achieve something great'
+    definitionZh: '有雄心的，有抱负的'
+    exampleSentence: 'The ambitious young eagle dreamed of flying higher than any bird had ever flown before.'
+    exampleSentenceZh: '雄心勃勃的小鹰梦想飞得比任何鸟都高。'
+    wordFamily:
+      - form: ambition
+        partOfSpeech: noun
+      - form: ambitiously
+        partOfSpeech: adverb
+    collocations:
+      - 'ambitious plan'
+      - 'highly ambitious'
+    synonyms: [driven, aspiring, determined]
+    antonyms: [lazy, unambitious, content]
+    level: 2
+    firstAppear: D027
+    reviewSchedule: [D028, D030, D034, D041, D057]
+
+  - id: V0132
+    word: creative
+    phonetic: '/kriˈeɪtɪv/'
+    partOfSpeech: adjective
+    definition: 'Having the ability to make new things or think of new ideas'
+    definitionZh: '有创造力的'
+    exampleSentence: 'The creative spider designed webs in the shape of stars and flowers.'
+    exampleSentenceZh: '有创造力的蜘蛛把网织成了星星和花朵的形状。'
+    wordFamily:
+      - form: creativity
+        partOfSpeech: noun
+      - form: creatively
+        partOfSpeech: adverb
+      - form: create
+        partOfSpeech: verb
+      - form: creation
+        partOfSpeech: noun
+    collocations:
+      - 'creative thinking'
+      - 'creative solution'
+    synonyms: [imaginative, inventive, original]
+    antonyms: [unimaginative, dull, uncreative]
+    level: 1
+    firstAppear: D027
+    reviewSchedule: [D028, D030, D034, D041, D057]
+
+  - id: V0133
+    word: generous
+    phonetic: '/ˈdʒenərəs/'
+    partOfSpeech: adjective
+    definition: 'Willing to give more than is expected; kind and sharing'
+    definitionZh: '慷慨的，大方的'
+    exampleSentence: 'The generous bear always shared its honey with the smaller animals in the forest.'
+    exampleSentenceZh: '慷慨的熊总是和森林里的小动物们分享它的蜂蜜。'
+    wordFamily:
+      - form: generosity
+        partOfSpeech: noun
+      - form: generously
+        partOfSpeech: adverb
+    collocations:
+      - 'generous offer'
+      - 'generous with'
+    synonyms: [giving, kind, charitable]
+    antonyms: [selfish, stingy, greedy]
+    level: 1
+    firstAppear: D027
+    reviewSchedule: [D028, D030, D034, D041, D057]
+
+  - id: V0134
+    word: selfish
+    phonetic: '/ˈselfɪʃ/'
+    partOfSpeech: adjective
+    definition: 'Caring only about yourself and not about others'
+    definitionZh: '自私的'
+    exampleSentence: 'The selfish crow kept all the shiny stones for itself and refused to share with anyone.'
+    exampleSentenceZh: '自私的乌鸦把所有闪亮的石头都留给自己，拒绝和任何人分享。'
+    wordFamily:
+      - form: selfishness
+        partOfSpeech: noun
+      - form: selfishly
+        partOfSpeech: adverb
+      - form: unselfish
+        partOfSpeech: adjective
+    collocations:
+      - 'selfish behaviour'
+      - 'selfish act'
+    synonyms: [self-centred, greedy, inconsiderate]
+    antonyms: [generous, unselfish, considerate]
+    level: 1
+    firstAppear: D027
+    reviewSchedule: [D028, D030, D034, D041, D057]
+
+  - id: V0135
+    word: responsible
+    phonetic: '/rɪˈspɒnsəbl/'
+    partOfSpeech: adjective
+    definition: 'Having a duty to take care of something; able to be trusted'
+    definitionZh: '负责任的'
+    exampleSentence: 'The responsible dolphin was put in charge of guiding the baby fish to safety every morning.'
+    exampleSentenceZh: '负责任的海豚每天早上负责引导小鱼们到安全的地方。'
+    wordFamily:
+      - form: responsibility
+        partOfSpeech: noun
+      - form: responsibly
+        partOfSpeech: adverb
+      - form: irresponsible
+        partOfSpeech: adjective
+    collocations:
+      - 'responsible for'
+      - 'responsible person'
+    synonyms: [reliable, dependable, trustworthy]
+    antonyms: [irresponsible, careless, reckless]
+    level: 2
+    firstAppear: D027
+    reviewSchedule: [D028, D030, D034, D041, D057]
+
+  - id: V0136
+    word: independent
+    phonetic: '/ˌɪndɪˈpendənt/'
+    partOfSpeech: adjective
+    definition: 'Able to do things by yourself without help from others'
+    definitionZh: '独立的'
+    exampleSentence: 'The independent cat travelled alone across three mountains to find its new home.'
+    exampleSentenceZh: '独立的猫独自穿越了三座山去寻找新家。'
+    wordFamily:
+      - form: independence
+        partOfSpeech: noun
+      - form: independently
+        partOfSpeech: adverb
+      - form: dependent
+        partOfSpeech: adjective
+    collocations:
+      - 'fiercely independent'
+      - 'become independent'
+    synonyms: [self-reliant, self-sufficient, free]
+    antonyms: [dependent, reliant, needy]
+    level: 2
+    firstAppear: D028
+    reviewSchedule: [D029, D031, D035, D042, D058]
+
+  - id: V0137
+    word: loyal
+    phonetic: '/ˈlɔɪəl/'
+    partOfSpeech: adjective
+    definition: 'Always supporting and faithful to someone or something'
+    definitionZh: '忠诚的'
+    exampleSentence: 'The loyal dog waited at the harbour every day for the sailor to return from the sea.'
+    exampleSentenceZh: '忠诚的狗每天都在港口等待水手从海上归来。'
+    wordFamily:
+      - form: loyalty
+        partOfSpeech: noun
+      - form: loyally
+        partOfSpeech: adverb
+      - form: disloyal
+        partOfSpeech: adjective
+    collocations:
+      - 'loyal friend'
+      - 'loyal to'
+    synonyms: [faithful, devoted, dedicated]
+    antonyms: [disloyal, unfaithful, treacherous]
+    level: 1
+    firstAppear: D028
+    reviewSchedule: [D029, D031, D035, D042, D058]
+
+  - id: V0138
+    word: stubborn
+    phonetic: '/ˈstʌbərn/'
+    partOfSpeech: adjective
+    definition: 'Refusing to change your mind or do what others want'
+    definitionZh: '固执的，倔强的'
+    exampleSentence: 'The stubborn mule refused to cross the bridge no matter how many carrots they offered.'
+    exampleSentenceZh: '固执的骡子无论给它多少胡萝卜都不肯过桥。'
+    wordFamily:
+      - form: stubbornly
+        partOfSpeech: adverb
+      - form: stubbornness
+        partOfSpeech: noun
+    collocations:
+      - 'stubborn refusal'
+      - 'stubborn as a mule'
+    synonyms: [obstinate, headstrong, inflexible]
+    antonyms: [flexible, cooperative, yielding]
+    level: 2
+    firstAppear: D028
+    reviewSchedule: [D029, D031, D035, D042, D058]
+
+  - id: V0139
+    word: sensitive
+    phonetic: '/ˈsensɪtɪv/'
+    partOfSpeech: adjective
+    definition: 'Quick to notice and understand feelings; easily affected'
+    definitionZh: '敏感的，体贴的'
+    exampleSentence: 'The sensitive deer could feel the vibrations of approaching footsteps from far away.'
+    exampleSentenceZh: '敏感的小鹿能从很远的地方感觉到脚步声的振动。'
+    wordFamily:
+      - form: sensitivity
+        partOfSpeech: noun
+      - form: sensitively
+        partOfSpeech: adverb
+      - form: insensitive
+        partOfSpeech: adjective
+    collocations:
+      - 'sensitive to'
+      - 'highly sensitive'
+    synonyms: [perceptive, aware, delicate]
+    antonyms: [insensitive, thick-skinned, unaware]
+    level: 2
+    firstAppear: D028
+    reviewSchedule: [D029, D031, D035, D042, D058]
+
+  - id: V0140
+    word: capable
+    phonetic: '/ˈkeɪpəbl/'
+    partOfSpeech: adjective
+    definition: 'Having the ability or qualities needed to do something'
+    definitionZh: '有能力的'
+    exampleSentence: 'The small ant proved it was capable of carrying objects ten times its own weight.'
+    exampleSentenceZh: '小蚂蚁证明了它有能力搬运自身体重十倍的物体。'
+    wordFamily:
+      - form: capability
+        partOfSpeech: noun
+      - form: capably
+        partOfSpeech: adverb
+      - form: incapable
+        partOfSpeech: adjective
+    collocations:
+      - 'capable of'
+      - 'highly capable'
+    synonyms: [able, competent, skilled]
+    antonyms: [incapable, unable, incompetent]
+    level: 2
+    firstAppear: D028
+    reviewSchedule: [D029, D031, D035, D042, D058]
+
+  - id: V0141
+    word: brilliant
+    phonetic: '/ˈbrɪliənt/'
+    partOfSpeech: adjective
+    definition: 'Extremely clever or talented; very bright'
+    definitionZh: '杰出的，才华横溢的'
+    exampleSentence: 'The brilliant inventor built a machine that could turn rain into musical notes.'
+    exampleSentenceZh: '杰出的发明家建造了一台能把雨水变成音符的机器。'
+    wordFamily:
+      - form: brilliance
+        partOfSpeech: noun
+      - form: brilliantly
+        partOfSpeech: adverb
+    collocations:
+      - 'brilliant idea'
+      - 'absolutely brilliant'
+    synonyms: [outstanding, exceptional, superb]
+    antonyms: [dull, mediocre, ordinary]
+    level: 1
+    firstAppear: D029
+    reviewSchedule: [D030, D032, D036, D043, D059]
+
+  - id: V0142
+    word: talented
+    phonetic: '/ˈtæləntɪd/'
+    partOfSpeech: adjective
+    definition: 'Having a natural ability to do something well'
+    definitionZh: '有天赋的，有才能的'
+    exampleSentence: 'The talented parrot could paint pictures with its beak that looked like real landscapes.'
+    exampleSentenceZh: '有天赋的鹦鹉能用嘴画出看起来像真实风景的画。'
+    wordFamily:
+      - form: talent
+        partOfSpeech: noun
+      - form: untalented
+        partOfSpeech: adjective
+    collocations:
+      - 'talented artist'
+      - 'naturally talented'
+    synonyms: [gifted, skilled, accomplished]
+    antonyms: [untalented, unskilled, mediocre]
+    level: 1
+    firstAppear: D029
+    reviewSchedule: [D030, D032, D036, D043, D059]
+
+  - id: V0143
+    word: persistent
+    phonetic: '/pərˈsɪstənt/'
+    partOfSpeech: adjective
+    definition: 'Continuing to try despite difficulties; not giving up'
+    definitionZh: '坚持不懈的'
+    exampleSentence: 'The persistent woodpecker tapped at the old tree for days until it found the hidden treasure inside.'
+    exampleSentenceZh: '坚持不懈的啄木鸟在老树上敲了好几天，终于找到了藏在里面的宝藏。'
+    wordFamily:
+      - form: persist
+        partOfSpeech: verb
+      - form: persistence
+        partOfSpeech: noun
+      - form: persistently
+        partOfSpeech: adverb
+    collocations:
+      - 'persistent effort'
+      - 'be persistent'
+    synonyms: [determined, tenacious, relentless]
+    antonyms: [giving up, quitting, lazy]
+    level: 2
+    firstAppear: D029
+    reviewSchedule: [D030, D032, D036, D043, D059]
+
+  - id: V0144
+    word: thoughtful
+    phonetic: '/ˈθɔːtfl/'
+    partOfSpeech: adjective
+    definition: 'Thinking carefully about others; considerate'
+    definitionZh: '体贴的，深思熟虑的'
+    exampleSentence: 'The thoughtful elephant remembered every birthday and left little gifts by each friend''s door.'
+    exampleSentenceZh: '体贴的大象记得每个生日，还在每个朋友的门口留下小礼物。'
+    wordFamily:
+      - form: thought
+        partOfSpeech: noun
+      - form: thoughtfully
+        partOfSpeech: adverb
+      - form: thoughtfulness
+        partOfSpeech: noun
+      - form: thoughtless
+        partOfSpeech: adjective
+    collocations:
+      - 'thoughtful gesture'
+      - 'thoughtful person'
+    synonyms: [considerate, caring, kind]
+    antonyms: [thoughtless, careless, inconsiderate]
+    level: 1
+    firstAppear: D029
+    reviewSchedule: [D030, D032, D036, D043, D059]
+
+  - id: V0145
+    word: compassionate
+    phonetic: '/kəmˈpæʃənət/'
+    partOfSpeech: adjective
+    definition: 'Feeling or showing deep care for the suffering of others'
+    definitionZh: '有同情心的，富有爱心的'
+    exampleSentence: 'The compassionate girl nursed the injured bird back to health over many weeks.'
+    exampleSentenceZh: '这个有爱心的女孩花了好几个星期精心照料受伤的小鸟，使它恢复了健康。'
+    wordFamily:
+      - form: compassion
+        partOfSpeech: noun
+      - form: compassionately
+        partOfSpeech: adverb
+    collocations:
+      - 'compassionate person'
+      - 'show compassion'
+    synonyms: [sympathetic, caring, empathetic]
+    antonyms: [cruel, heartless, indifferent]
+    level: 3
+    firstAppear: D029
+    reviewSchedule: [D030, D032, D036, D043, D059]
+
+  - id: V0146
+    word: optimistic
+    phonetic: '/ˌɒptɪˈmɪstɪk/'
+    partOfSpeech: adjective
+    definition: 'Expecting good things to happen; hopeful about the future'
+    definitionZh: '乐观的'
+    exampleSentence: 'Even when the sky turned dark, the optimistic robin kept singing its cheerful song.'
+    exampleSentenceZh: '即使天空变暗了，乐观的知更鸟仍然唱着欢快的歌。'
+    wordFamily:
+      - form: optimism
+        partOfSpeech: noun
+      - form: optimist
+        partOfSpeech: noun
+      - form: optimistically
+        partOfSpeech: adverb
+    collocations:
+      - 'remain optimistic'
+      - 'cautiously optimistic'
+    synonyms: [hopeful, positive, cheerful]
+    antonyms: [pessimistic, negative, hopeless]
+    level: 2
+    firstAppear: D030
+    reviewSchedule: [D031, D033, D037, D044, D060]
+
+  - id: V0147
+    word: pessimistic
+    phonetic: '/ˌpesɪˈmɪstɪk/'
+    partOfSpeech: adjective
+    definition: 'Expecting bad things to happen; seeing the worst side of things'
+    definitionZh: '悲观的'
+    exampleSentence: 'The pessimistic donkey always predicted rain, even on the sunniest of days.'
+    exampleSentenceZh: '悲观的驴子总是预测会下雨，即使是在最晴朗的日子。'
+    wordFamily:
+      - form: pessimism
+        partOfSpeech: noun
+      - form: pessimist
+        partOfSpeech: noun
+      - form: pessimistically
+        partOfSpeech: adverb
+    collocations:
+      - 'pessimistic about'
+      - 'pessimistic outlook'
+    synonyms: [negative, gloomy, hopeless]
+    antonyms: [optimistic, hopeful, positive]
+    level: 3
+    firstAppear: D030
+    reviewSchedule: [D031, D033, D037, D044, D060]
+
+  - id: V0148
+    word: courageous
+    phonetic: '/kəˈreɪdʒəs/'
+    partOfSpeech: adjective
+    definition: 'Not afraid of danger or difficult situations; showing courage'
+    definitionZh: '勇敢的，有胆量的'
+    exampleSentence: 'The courageous firefly led the other insects through the dark storm to reach safety.'
+    exampleSentenceZh: '勇敢的萤火虫带领其他昆虫穿过黑暗的风暴到达安全的地方。'
+    wordFamily:
+      - form: courage
+        partOfSpeech: noun
+      - form: courageously
+        partOfSpeech: adverb
+      - form: discourage
+        partOfSpeech: verb
+    collocations:
+      - 'courageous act'
+      - 'courageous decision'
+    synonyms: [brave, fearless, bold]
+    antonyms: [cowardly, timid, fearful]
+    level: 2
+    firstAppear: D030
+    reviewSchedule: [D031, D033, D037, D044, D060]
+
+  - id: V0149
+    word: resilient
+    phonetic: '/rɪˈzɪliənt/'
+    partOfSpeech: adjective
+    definition: 'Able to recover quickly from difficult situations'
+    definitionZh: '坚韧的，有恢复力的'
+    exampleSentence: 'The resilient little tree grew back stronger every time the storm knocked it down.'
+    exampleSentenceZh: '坚韧的小树每次被暴风雨吹倒后，都会更强壮地重新生长。'
+    wordFamily:
+      - form: resilience
+        partOfSpeech: noun
+      - form: resiliently
+        partOfSpeech: adverb
+    collocations:
+      - 'resilient spirit'
+      - 'remarkably resilient'
+    synonyms: [tough, strong, adaptable]
+    antonyms: [fragile, weak, vulnerable]
+    level: 3
+    firstAppear: D030
+    reviewSchedule: [D031, D033, D037, D044, D060]
+
+  - id: V0150
+    word: imaginative
+    phonetic: '/ɪˈmædʒɪnətɪv/'
+    partOfSpeech: adjective
+    definition: 'Having or showing new and exciting ideas; using the imagination'
+    definitionZh: '富有想象力的'
+    exampleSentence: 'The imaginative girl could look at any cloud and see a whole adventure story hidden in its shape.'
+    exampleSentenceZh: '这个富有想象力的女孩看任何一朵云，都能从它的形状里看出一整个冒险故事。'
+    wordFamily:
+      - form: imagination
+        partOfSpeech: noun
+      - form: imagine
+        partOfSpeech: verb
+      - form: imaginary
+        partOfSpeech: adjective
+      - form: imaginatively
+        partOfSpeech: adverb
+    collocations:
+      - 'imaginative ideas'
+      - 'highly imaginative'
+    synonyms: [creative, inventive, original]
+    antonyms: [unimaginative, dull, boring]
+    level: 2
+    firstAppear: D030
+    reviewSchedule: [D031, D033, D037, D044, D060]

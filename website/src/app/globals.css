@@ -36,14 +36,55 @@ body {
   color: #7e6ca8;
   font-weight: 600;
   border-bottom: 2px dashed #d4c8e8;
-  cursor: help;
+  cursor: pointer;
   transition: all 0.15s;
+  position: relative;
 }
 
-.keyword-highlight:hover {
+.keyword-highlight:hover,
+.keyword-highlight:focus {
   background: #f3eff8;
   border-radius: 2px;
   border-bottom-color: #a992c9;
+  outline: none;
+}
+
+/* Custom tooltip popover — shown on hover (desktop) and focus (tap on mobile) */
+.keyword-highlight[data-tooltip]:hover::after,
+.keyword-highlight[data-tooltip]:focus::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e9d5ff;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.12);
+  white-space: nowrap;
+  max-width: 280px;
+  white-space: normal;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* Arrow */
+.keyword-highlight[data-tooltip]:hover::before,
+.keyword-highlight[data-tooltip]:focus::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 0px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: white;
+  z-index: 51;
+  pointer-events: none;
 }
 
 /* iOS Safari: prevent tap highlight flash */
@@ -68,39 +109,6 @@ body {
 /* iOS momentum scrolling for sidebar */
 aside {
   -webkit-overflow-scrolling: touch;
-}
-
-/* Keyword highlight: tap-to-show tooltip on touch devices */
-@media (hover: none) {
-  .keyword-highlight {
-    position: relative;
-  }
-  .keyword-highlight:active {
-    background: #ede9fe;
-    border-radius: 2px;
-    border-bottom-color: #8b5cf6;
-  }
-  .keyword-highlight:focus {
-    outline: none;
-    background: #ede9fe;
-    border-radius: 2px;
-  }
-  .keyword-highlight:focus::after {
-    content: attr(title);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #1f2937;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 4px 8px;
-    border-radius: 6px;
-    white-space: nowrap;
-    z-index: 50;
-    pointer-events: none;
-  }
 }
 
 /* Timer alert bounce-in animation */

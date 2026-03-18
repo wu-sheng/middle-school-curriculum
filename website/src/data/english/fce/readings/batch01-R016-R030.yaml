@@ -1,0 +1,1762 @@
+readings:
+  # ============================================================
+  # R016-R020: Level 2, ~280 words, science/nature themes
+  # ============================================================
+
+  - id: R016
+    title: 'The Dance of the Honeybees'
+    titleZh: '蜜蜂的舞蹈'
+    level: 2
+    wordCount: 280
+    topic: science
+    tags: [Q01, month-2]
+    passage: |
+      Deep inside a busy beehive, something remarkable is happening. A honeybee
+      has just returned from a field of sunflowers, and she has important news to
+      share with her sisters. But honeybees cannot speak. So how does she tell them
+      where the food is? She dances.
+
+      Scientists discovered that honeybees use two special dances to communicate.
+      The first is called the "round dance." When flowers are close to the hive —
+      less than fifty metres away — the bee walks in small circles. This tells the
+      other bees, "There is food nearby! Go out and search for it!"
+
+      However, when the food source is far away, the bee performs a more complicated
+      dance called the "waggle dance." She moves in a figure-eight pattern while
+      shaking her body from side to side. The direction she faces during the straight
+      part of the dance shows the other bees which way to fly. The speed of her
+      waggle tells them how far they need to travel. A slower waggle means the food
+      is further away.
+
+      What makes this even more extraordinary is that the bees can understand the
+      angle of the dance in relation to the sun. Even on cloudy days, bees can
+      detect the sun's position using special cells in their eyes that sense
+      ultraviolet light.
+
+      Karl von Frisch, an Austrian scientist, spent decades studying these dances.
+      In 1973, he won the Nobel Prize for his discoveries. Thanks to his patient
+      work, we now know that honeybees have one of the most sophisticated
+      communication systems in the animal kingdom — all without saying a single word.
+    passageZh: |
+      在繁忙的蜂巢深处，一件了不起的事情正在发生。一只蜜蜂刚刚从一片向日葵田回来，
+      她有重要的消息要和姐妹们分享。但是蜜蜂不会说话。那她怎么告诉它们食物在哪里呢？
+      她用跳舞来传达信息。
+
+      科学家发现蜜蜂用两种特殊的舞蹈来交流。第一种叫做"圆圈舞"。当花朵离蜂巢很
+      近——不到五十米——蜜蜂会绕小圈行走。这告诉其他蜜蜂："附近有食物！出去找找吧！"
+
+      然而，当食物来源很远时，蜜蜂会表演一种更复杂的舞蹈，叫做"摇摆舞"。她以8字形
+      的路线移动，同时左右摇摆身体。她在舞蹈直线部分面对的方向，告诉其他蜜蜂该往哪
+      个方向飞。她摇摆的速度告诉它们需要飞多远。摇摆越慢，说明食物越远。
+
+      更令人惊叹的是，蜜蜂能够理解舞蹈角度与太阳的关系。即使在阴天，蜜蜂也能利用
+      眼睛中感应紫外光的特殊细胞来探测太阳的位置。
+
+      奥地利科学家卡尔·冯·弗里施花了几十年研究这些舞蹈。1973年，他因这些发现获得了
+      诺贝尔奖。多亏了他耐心的工作，我们现在知道蜜蜂拥有动物界最精妙的交流系统之
+      一——而这一切都不需要说一个字。
+    vocabHighlights:
+      - word: remarkable
+        ref: V0089
+      - word: sophisticated
+        ref: V0102
+      - word: complicated
+        ref: V0078
+    questions:
+      - id: R016-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The life cycle of honeybees in a beehive'
+          B: 'How honeybees use dances to share information about food'
+          C: 'Why Karl von Frisch won the Nobel Prize'
+          D: 'The difference between honeybees and other insects'
+        answer: B
+        explanation: 'The passage focuses on explaining the two types of dances honeybees use to communicate the location of food sources to other bees.'
+        explanationZh: '文章重点解释了蜜蜂用来向其他蜜蜂传达食物位置的两种舞蹈。'
+      - id: R016-Q2
+        type: detail
+        question: 'What does the "round dance" tell other bees?'
+        questionZh: '"圆圈舞"告诉其他蜜蜂什么？'
+        options:
+          A: 'That the food is far away and they need to fly for a long time'
+          B: 'That the food is nearby, less than fifty metres from the hive'
+          C: 'That there is danger near the hive'
+          D: 'That the bee is tired and needs help'
+        answer: B
+        explanation: 'The passage states that when flowers are close — less than fifty metres away — the bee performs the round dance.'
+        explanationZh: '文章指出，当花朵距离蜂巢很近——不到五十米时，蜜蜂会表演圆圈舞。'
+      - id: R016-Q3
+        type: detail
+        question: 'During the waggle dance, what does the speed of the waggle indicate?'
+        questionZh: '在摇摆舞中，摇摆的速度说明了什么？'
+        options:
+          A: 'The type of flower the bee found'
+          B: 'How many bees should go to find the food'
+          C: 'How far away the food source is'
+          D: 'The size of the food source'
+        answer: C
+        explanation: 'The passage explains that the speed of the waggle tells the bees how far they need to travel — a slower waggle means further away.'
+        explanationZh: '文章解释说，摇摆的速度告诉蜜蜂需要飞多远——摇摆越慢，说明越远。'
+      - id: R016-Q4
+        type: inference
+        question: 'What can we infer about honeybee communication from this passage?'
+        questionZh: '从这篇文章中，我们可以推断出关于蜜蜂交流的什么信息？'
+        options:
+          A: 'Honeybees are more intelligent than all other insects'
+          B: 'Honeybees can only find food on sunny days'
+          C: 'Honeybee dances carry precise and detailed information'
+          D: 'Scientists still do not understand how the dances work'
+        answer: C
+        explanation: 'The passage describes how the dances convey direction, distance, and location relative to the sun, which shows the dances carry precise and detailed information.'
+        explanationZh: '文章描述了舞蹈如何传达方向、距离和相对于太阳的位置，这说明舞蹈携带了精确而详细的信息。'
+
+  - id: R017
+    title: 'The Mystery of the Bermuda Triangle'
+    titleZh: '百慕大三角之谜'
+    level: 2
+    wordCount: 285
+    topic: science
+    tags: [Q01, month-2]
+    passage: |
+      For over a century, sailors and pilots have feared a strange region of the
+      Atlantic Ocean known as the Bermuda Triangle. This area, which stretches
+      between Miami, Bermuda, and Puerto Rico, has been linked to the mysterious
+      disappearance of ships and aircraft. But is the Bermuda Triangle truly
+      dangerous, or is it just a collection of myths?
+
+      The legend began in 1945 when five US Navy planes, called Flight 19, vanished
+      during a training exercise. The pilots reported that their compasses had
+      stopped working and they could not tell which direction was north. A rescue
+      plane sent to find them also disappeared. No wreckage was ever found.
+
+      Since then, dozens of ships and planes have reportedly gone missing in the
+      area. Some people have suggested supernatural explanations — underwater alien
+      bases, time portals, or even sea monsters. However, scientists have proposed
+      more logical theories.
+
+      One popular explanation involves methane gas. Large amounts of methane are
+      trapped beneath the ocean floor. If this gas is suddenly released, it could
+      create bubbles that reduce the water's density, causing ships to sink rapidly.
+      The gas could also affect aircraft engines if it rises into the air.
+
+      Another theory points to unusual weather patterns. The Bermuda Triangle is
+      known for sudden, violent storms that can appear without warning. These storms
+      could easily bring down small aircraft or capsize boats.
+
+      Most experts today believe that the Bermuda Triangle is not actually more
+      dangerous than any other part of the ocean. The number of accidents in this
+      area is similar to other busy shipping routes. Perhaps the real mystery is
+      why we find the idea of the Bermuda Triangle so fascinating.
+    passageZh: |
+      一个多世纪以来，水手和飞行员一直害怕大西洋上一个被称为百慕大三角的奇怪区域。
+      这片区域位于迈阿密、百慕大和波多黎各之间，与船只和飞机的神秘消失有关。但百慕
+      大三角真的危险吗，还是只是一系列神话？
+
+      传说始于1945年，五架美国海军飞机——被称为第19飞行编队——在训练中消失了。飞行
+      员报告说他们的指南针停止了工作，无法辨别哪个方向是北方。一架被派去寻找他们的
+      救援飞机也消失了。从未找到任何残骸。
+
+      从那以后，据报道有几十艘船和飞机在该地区失踪。一些人提出了超自然的解释——水下
+      外星人基地、时间传送门，甚至海怪。然而，科学家们提出了更合理的理论。
+
+      一个流行的解释涉及甲烷气体。大量的甲烷被困在海底之下。如果这种气体突然释放，
+      可能会产生气泡，降低水的密度，导致船只迅速下沉。如果气体上升到空气中，也可能
+      影响飞机引擎。
+
+      另一种理论指向异常的天气模式。百慕大三角以突然出现的猛烈风暴而闻名，这些风暴
+      可能毫无预警地出现。这些风暴很容易击落小型飞机或掀翻船只。
+
+      今天大多数专家认为，百慕大三角实际上并不比海洋的其他任何部分更危险。该地区的
+      事故数量与其他繁忙的航运路线相似。也许真正的谜团是，为什么我们觉得百慕大三角
+      的故事如此引人入胜。
+    vocabHighlights:
+      - word: vanished
+        ref: V0085
+      - word: mysterious
+        ref: V0091
+    questions:
+      - id: R017-Q1
+        type: main-idea
+        question: 'What is the main purpose of this passage?'
+        questionZh: '这篇文章的主要目的是什么？'
+        options:
+          A: 'To prove that the Bermuda Triangle is extremely dangerous'
+          B: 'To explain the mystery of the Bermuda Triangle and scientific theories about it'
+          C: 'To describe the story of Flight 19 in detail'
+          D: 'To convince readers that aliens exist under the ocean'
+        answer: B
+        explanation: 'The passage presents the Bermuda Triangle mystery and then offers scientific explanations, ultimately suggesting it may not be as dangerous as people think.'
+        explanationZh: '文章介绍了百慕大三角之谜，然后提供了科学解释，最终暗示它可能没有人们想象的那么危险。'
+      - id: R017-Q2
+        type: detail
+        question: 'What happened to the rescue plane sent to find Flight 19?'
+        questionZh: '被派去寻找第19飞行编队的救援飞机怎么了？'
+        options:
+          A: 'It found the wreckage of Flight 19'
+          B: 'It returned safely to base'
+          C: 'It also disappeared without a trace'
+          D: 'It was damaged by a storm but landed safely'
+        answer: C
+        explanation: 'The passage states that "A rescue plane sent to find them also disappeared. No wreckage was ever found."'
+        explanationZh: '文章指出"一架被派去寻找他们的救援飞机也消失了。从未找到任何残骸。"'
+      - id: R017-Q3
+        type: detail
+        question: 'According to the passage, how could methane gas cause ships to sink?'
+        questionZh: '根据文章，甲烷气体如何可能导致船只沉没？'
+        options:
+          A: 'By creating a poisonous cloud over the water'
+          B: 'By making the water freeze suddenly'
+          C: 'By creating bubbles that reduce the water density'
+          D: 'By causing an explosion on the ocean surface'
+        answer: C
+        explanation: 'The passage explains that methane gas could "create bubbles that reduce the water''s density, causing ships to sink rapidly."'
+        explanationZh: '文章解释说甲烷气体可能"产生气泡，降低水的密度，导致船只迅速下沉。"'
+      - id: R017-Q4
+        type: inference
+        question: 'What does the author most likely believe about the Bermuda Triangle?'
+        questionZh: '作者最可能对百慕大三角持什么看法？'
+        options:
+          A: 'It is the most dangerous place on Earth'
+          B: 'The supernatural explanations are probably correct'
+          C: 'Its reputation is exaggerated and it is not unusually dangerous'
+          D: 'Scientists will never understand what happens there'
+        answer: C
+        explanation: 'The final paragraph states that experts believe the area is not more dangerous than other ocean regions, and the author suggests the real mystery is why people find it so fascinating.'
+        explanationZh: '最后一段指出专家认为该地区并不比其他海域更危险，作者暗示真正的谜团是为什么人们觉得它如此引人入胜。'
+
+  - id: R018
+    title: 'Life on the International Space Station'
+    titleZh: '国际空间站上的生活'
+    level: 2
+    wordCount: 282
+    topic: science
+    tags: [Q02, month-2]
+    passage: |
+      Imagine waking up every morning and floating out of your sleeping bag. That
+      is what life is like for astronauts living on the International Space Station,
+      or ISS. This enormous structure orbits the Earth at a speed of about 28,000
+      kilometres per hour, completing one full orbit every ninety minutes.
+
+      Living in space is very different from life on Earth. Because there is almost
+      no gravity, everything floats — including the astronauts themselves. They must
+      strap themselves into sleeping bags attached to the walls so they do not drift
+      away while sleeping. Eating is also a challenge. Food comes in special packets,
+      and astronauts must be careful not to let crumbs float away, as they could
+      damage equipment.
+
+      Exercise is essential on the space station. Without gravity, astronauts' muscles
+      and bones become weaker over time. To prevent this, each crew member exercises
+      for about two hours every day using specially designed machines, including a
+      treadmill and a resistance device.
+
+      The astronauts' work involves conducting scientific experiments that cannot be
+      done on Earth. They study how plants grow without gravity, test new materials,
+      and even research how the human body changes during long space flights. These
+      experiments help scientists prepare for future missions to the Moon and Mars.
+
+      One of the most memorable parts of life on the ISS is the view. Astronauts
+      can see sixteen sunrises and sixteen sunsets every single day. Many astronauts
+      have said that looking down at our planet changed the way they think about
+      Earth. Seeing how thin the atmosphere is reminds them how precious and fragile
+      our home truly is.
+    passageZh: |
+      想象一下每天早上醒来就从睡袋里飘出来。这就是住在国际空间站（ISS）上的宇航员
+      的生活。这个巨大的结构以大约每小时28,000公里的速度绕地球运行，每九十分钟完成
+      一次完整的绕行。
+
+      在太空中的生活与地球上的生活非常不同。因为几乎没有重力，一切都会漂浮——包括宇
+      航员自己。他们必须把自己绑在固定在墙上的睡袋里，这样睡觉时就不会飘走。吃东西
+      也是一个挑战。食物装在特殊的袋子里，宇航员必须小心不要让碎屑飘走，因为碎屑可
+      能损坏设备。
+
+      在空间站上锻炼是必不可少的。没有重力的情况下，宇航员的肌肉和骨骼会随着时间变
+      弱。为了防止这种情况，每个机组成员每天使用专门设计的机器锻炼大约两个小时，包
+      括跑步机和阻力训练器。
+
+      宇航员的工作包括进行在地球上无法完成的科学实验。他们研究植物在没有重力的情况
+      下如何生长，测试新材料，甚至研究人体在长时间太空飞行中如何变化。这些实验帮助
+      科学家为未来的月球和火星任务做准备。
+
+      在国际空间站生活最令人难忘的部分之一是风景。宇航员每天可以看到十六次日出和十
+      六次日落。许多宇航员说，从太空俯瞰我们的星球改变了他们看待地球的方式。看到大
+      气层有多薄，让他们意识到我们的家园是多么珍贵和脆弱。
+    vocabHighlights:
+      - word: essential
+        ref: V0095
+      - word: fragile
+        ref: V0108
+    questions:
+      - id: R018-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The history of how the ISS was built'
+          B: 'What daily life is like for astronauts on the ISS'
+          C: 'How to become an astronaut'
+          D: 'The dangers of living in space'
+        answer: B
+        explanation: 'The passage describes various aspects of daily life on the ISS, including sleeping, eating, exercising, working, and the view.'
+        explanationZh: '文章描述了国际空间站上日常生活的各个方面，包括睡觉、吃饭、锻炼、工作和观景。'
+      - id: R018-Q2
+        type: detail
+        question: 'Why must astronauts exercise for two hours every day?'
+        questionZh: '为什么宇航员必须每天锻炼两个小时？'
+        options:
+          A: 'Because there is nothing else to do on the station'
+          B: 'Because the space station is very large and hard to move around'
+          C: 'Because without gravity, their muscles and bones become weaker'
+          D: 'Because they need to be strong enough to repair the station'
+        answer: C
+        explanation: 'The passage states that "Without gravity, astronauts'' muscles and bones become weaker over time," which is why daily exercise is essential.'
+        explanationZh: '文章指出"没有重力的情况下，宇航员的肌肉和骨骼会随着时间变弱"，这就是每天锻炼必不可少的原因。'
+      - id: R018-Q3
+        type: detail
+        question: 'How many sunrises can astronauts see each day on the ISS?'
+        questionZh: '在国际空间站上，宇航员每天能看到多少次日出？'
+        options:
+          A: 'One'
+          B: 'Two'
+          C: 'Eight'
+          D: 'Sixteen'
+        answer: D
+        explanation: 'The passage clearly states that "Astronauts can see sixteen sunrises and sixteen sunsets every single day."'
+        explanationZh: '文章明确指出"宇航员每天可以看到十六次日出和十六次日落。"'
+      - id: R018-Q4
+        type: inference
+        question: 'Why does the author mention that astronauts can see how thin the atmosphere is?'
+        questionZh: '作者为什么提到宇航员能看到大气层有多薄？'
+        options:
+          A: 'To suggest that the atmosphere might disappear soon'
+          B: 'To show that astronauts have very good eyesight'
+          C: 'To suggest that seeing Earth from space gives a new perspective on our planet'
+          D: 'To explain why astronauts feel homesick'
+        answer: C
+        explanation: 'The passage says that looking at Earth "changed the way they think about Earth" and made them realise how "precious and fragile" our home is, suggesting a new perspective.'
+        explanationZh: '文章说从太空看地球"改变了他们看待地球的方式"，让他们意识到我们的家园多么"珍贵和脆弱"，这暗示了一种新的视角。'
+
+  - id: R019
+    title: 'How Wolves Changed the Rivers'
+    titleZh: '狼如何改变了河流'
+    level: 2
+    wordCount: 283
+    topic: nature
+    tags: [Q02, month-2]
+    passage: |
+      In 1995, something extraordinary happened in Yellowstone National Park in the
+      United States. After being absent for seventy years, wolves were brought back
+      to the park. Nobody expected what happened next — the wolves changed the rivers.
+
+      Before the wolves returned, the park's elk population had grown very large.
+      The elk ate so much grass and so many young trees that the riverbanks became
+      bare. Without tree roots to hold the soil together, the banks crumbled and the
+      rivers became wide and shallow. Many animals that depended on trees and deep
+      water began to disappear.
+
+      When the wolves arrived, they hunted the elk. But more importantly, the elk
+      changed their behaviour. They stopped spending so much time near the rivers
+      and valleys, where wolves could easily catch them. Instead, they moved to
+      higher ground where they could see danger approaching.
+
+      With fewer elk eating the plants near the rivers, something amazing happened.
+      Trees and bushes began to grow again along the riverbanks. Willows, aspens,
+      and cottonwoods shot up, some growing five times taller in just six years.
+
+      The returning trees brought back other animals. Songbirds nested in the
+      branches. Beavers returned and built dams, creating pools where fish and frogs
+      could live. The tree roots strengthened the riverbanks, making the rivers
+      narrower and deeper. The channels became more fixed instead of wandering
+      across the valley floor.
+
+      Scientists call this a "trophic cascade" — when a change at the top of the
+      food chain creates a series of effects all the way down. The return of just
+      forty-one wolves transformed an entire ecosystem. It showed us that nature
+      is far more connected than we ever imagined.
+    passageZh: |
+      1995年，美国黄石国家公园发生了一件非凡的事情。在消失了七十年之后，狼被重新引
+      入了公园。没有人预料到接下来会发生什么——狼改变了河流。
+
+      在狼回来之前，公园的麋鹿数量已经变得非常多。麋鹿吃了太多的草和嫩树，河岸变
+      得光秃秃的。没有树根来固定土壤，河岸崩塌了，河流变得又宽又浅。许多依赖树木
+      和深水的动物开始消失。
+
+      当狼到来时，它们猎杀麋鹿。但更重要的是，麋鹿改变了它们的行为。它们不再花那
+      么多时间待在河边和山谷里，因为狼在那里很容易抓到它们。相反，它们移到了更高的
+      地方，在那里可以看到危险来临。
+
+      由于河边吃植物的麋鹿减少了，奇妙的事情发生了。树木和灌木开始重新在河岸生长。
+      柳树、白杨和三角叶杨迅速长高，有些在短短六年内就长到了原来的五倍高。
+
+      回归的树木带回了其他动物。鸣禽在枝头筑巢。河狸回来筑坝，创造了鱼和青蛙可以
+      生活的水塘。树根加固了河岸，使河流变窄变深。河道变得更加固定，不再在谷底四处
+      游荡。
+
+      科学家称这为"营养级联"——当食物链顶端的变化在整个链条上产生一系列影响。仅仅
+      四十一只狼的回归就改变了整个生态系统。这向我们展示了自然的联系远比我们想象的
+      要紧密得多。
+    vocabHighlights:
+      - word: extraordinary
+        ref: V0076
+      - word: transformed
+        ref: V0112
+      - word: ecosystem
+        ref: V0098
+    questions:
+      - id: R019-Q1
+        type: main-idea
+        question: 'What is the best title for this passage?'
+        questionZh: '哪个标题最适合这篇文章？'
+        options:
+          A: 'The Dangerous Wolves of Yellowstone'
+          B: 'How Wolves Created a Chain Reaction That Changed a Whole Ecosystem'
+          C: 'Why Elk Are Afraid of Rivers'
+          D: 'The History of Yellowstone National Park'
+        answer: B
+        explanation: 'The passage describes how reintroducing wolves caused a trophic cascade that affected elk behaviour, plant growth, other animals, and even the rivers themselves.'
+        explanationZh: '文章描述了重新引入狼如何引起了影响麋鹿行为、植物生长、其他动物甚至河流本身的营养级联。'
+      - id: R019-Q2
+        type: detail
+        question: 'Why did the riverbanks crumble before the wolves returned?'
+        questionZh: '为什么在狼回来之前河岸会崩塌？'
+        options:
+          A: 'Because of heavy rain and flooding'
+          B: 'Because there were too many beavers building dams'
+          C: 'Because elk had eaten the trees whose roots held the soil together'
+          D: 'Because humans had removed the trees for farming'
+        answer: C
+        explanation: 'The passage explains that elk ate so many young trees that the riverbanks became bare, and "without tree roots to hold the soil together, the banks crumbled."'
+        explanationZh: '文章解释说，麋鹿吃了太多嫩树，河岸变得光秃秃的，"没有树根来固定土壤，河岸崩塌了。"'
+      - id: R019-Q3
+        type: detail
+        question: 'What did the elk do after the wolves arrived?'
+        questionZh: '狼到来后，麋鹿做了什么？'
+        options:
+          A: 'They left Yellowstone completely'
+          B: 'They hid inside caves during the day'
+          C: 'They moved to higher ground where they could spot wolves approaching'
+          D: 'They learned to swim across the rivers to escape'
+        answer: C
+        explanation: 'The passage states the elk "moved to higher ground where they could see danger approaching."'
+        explanationZh: '文章指出麋鹿"移到了更高的地方，在那里可以看到危险来临。"'
+      - id: R019-Q4
+        type: inference
+        question: 'What lesson does this story teach us about nature?'
+        questionZh: '这个故事教给我们关于自然的什么道理？'
+        options:
+          A: 'Wolves are the most important animal in every ecosystem'
+          B: 'Humans should never interfere with nature'
+          C: 'Even a small change can have large and unexpected effects across an ecosystem'
+          D: 'Rivers always become wider over time'
+        answer: C
+        explanation: 'The passage concludes by saying that the return of just forty-one wolves "transformed an entire ecosystem" and that "nature is far more connected than we ever imagined," illustrating how small changes can have huge effects.'
+        explanationZh: '文章最后说仅仅四十一只狼的回归就"改变了整个生态系统"，"自然的联系远比我们想象的要紧密得多"，说明小变化可以产生巨大的影响。'
+
+  - id: R020
+    title: 'The Secret Life of Trees'
+    titleZh: '树木的秘密生活'
+    level: 2
+    wordCount: 286
+    topic: science
+    tags: [Q02, month-2]
+    passage: |
+      If you walk through a quiet forest, you might think that the trees around you
+      are standing alone, each one separate from the others. But beneath your feet,
+      something incredible is happening. The trees are talking to each other — through
+      an underground network of fungi.
+
+      Scientists have discovered that tree roots are connected by tiny threads of
+      fungi called mycelium. These threads spread through the soil like a vast
+      internet, linking nearly every tree in the forest. Researchers have nicknamed
+      this system the "Wood Wide Web."
+
+      Through this network, trees can share food. A tall tree with plenty of
+      sunlight can send sugars through the fungi to a smaller tree growing in the
+      shade. Mother trees — the oldest and largest in the forest — have been found
+      to send extra nutrients to their own seedlings, helping them survive in the
+      dark forest floor.
+
+      But the network does more than share food. When a tree is attacked by insects,
+      it can send chemical warning signals through the fungi. Neighbouring trees
+      receive these signals and begin producing defensive chemicals in their leaves
+      before the insects even reach them. It is as if the trees have their own
+      alarm system.
+
+      Some scientists believe that trees even share resources with sick neighbours.
+      When a tree is dying, it sometimes releases its stored nutrients into the
+      network for others to use. In this way, the forest acts less like a group
+      of individuals and more like a single, connected community.
+
+      These discoveries have changed the way many people think about forests. Trees
+      are not competing against each other for survival. Instead, they cooperate,
+      communicate, and care for one another in ways that scientists are only
+      beginning to understand.
+    passageZh: |
+      如果你走过一片安静的森林，你可能会认为周围的树木各自独立，彼此分开。但在你脚
+      下，不可思议的事情正在发生。树木正在通过地下真菌网络互相交流。
+
+      科学家发现，树根通过一种叫做菌丝的微小真菌线相连。这些线在土壤中像一个巨大
+      的互联网一样扩展，将森林中几乎每棵树都连接起来。研究人员给这个系统起了个绰
+      号叫"树木万维网"。
+
+      通过这个网络，树木可以分享食物。一棵有充足阳光的高大树木可以通过真菌向一棵
+      生长在阴影中的小树发送糖分。母树——森林中最老最大的树——被发现会向自己的幼苗
+      发送额外的营养物质，帮助它们在阴暗的林地上存活。
+
+      但这个网络不仅仅分享食物。当一棵树遭受昆虫攻击时，它可以通过真菌发送化学警
+      告信号。邻近的树木接收到这些信号后，会在昆虫到达之前就开始在叶子中产生防御
+      性化学物质。就好像树木有自己的警报系统一样。
+
+      一些科学家认为，树木甚至会与生病的邻居分享资源。当一棵树要死亡时，它有时会
+      将储存的营养物质释放到网络中供其他树木使用。这样，森林的表现不像一群个体，
+      更像一个紧密联系的社区。
+
+      这些发现改变了许多人对森林的看法。树木并不是在为生存而互相竞争。相反，它们
+      合作、交流，并以科学家才刚刚开始理解的方式互相关爱。
+    vocabHighlights:
+      - word: incredible
+        ref: V0082
+      - word: cooperate
+        ref: V0115
+    questions:
+      - id: R020-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'How fungi damage trees in forests'
+          B: 'How trees communicate and share resources through underground fungi networks'
+          C: 'Why forests are disappearing around the world'
+          D: 'The different types of trees found in forests'
+        answer: B
+        explanation: 'The passage focuses on explaining how trees use underground fungal networks to communicate, share food, send warnings, and support sick neighbours.'
+        explanationZh: '文章重点解释了树木如何利用地下真菌网络进行交流、分享食物、发送警告和支持生病的邻居。'
+      - id: R020-Q2
+        type: detail
+        question: 'What is the "Wood Wide Web"?'
+        questionZh: '"树木万维网"是什么？'
+        options:
+          A: 'A website about forests'
+          B: 'A network of underground fungal threads connecting tree roots'
+          C: 'A type of spider web found in old forests'
+          D: 'A communication device scientists placed in the soil'
+        answer: B
+        explanation: 'The passage explains that researchers nicknamed the network of mycelium threads connecting tree roots the "Wood Wide Web."'
+        explanationZh: '文章解释说，研究人员将连接树根的菌丝网络昵称为"树木万维网"。'
+      - id: R020-Q3
+        type: detail
+        question: 'What do mother trees do for their seedlings?'
+        questionZh: '母树为它们的幼苗做了什么？'
+        options:
+          A: 'They block sunlight from reaching other trees'
+          B: 'They send extra nutrients through the fungal network'
+          C: 'They grow a protective wall of roots around them'
+          D: 'They release a special scent to attract helpful insects'
+        answer: B
+        explanation: 'The passage states that mother trees "send extra nutrients to their own seedlings, helping them survive in the dark forest floor."'
+        explanationZh: '文章指出母树"向自己的幼苗发送额外的营养物质，帮助它们在阴暗的林地上存活。"'
+      - id: R020-Q4
+        type: inference
+        question: 'What does the author want readers to understand about forests?'
+        questionZh: '作者希望读者对森林有什么理解？'
+        options:
+          A: 'Forests are boring places where nothing interesting happens'
+          B: 'Trees are selfish and only care about their own survival'
+          C: 'Forests are more like cooperative communities than groups of competing individuals'
+          D: 'All forests will eventually be destroyed by insects'
+        answer: C
+        explanation: 'The final paragraph explicitly states that "trees are not competing against each other" but instead "cooperate, communicate, and care for one another," suggesting forests are cooperative communities.'
+        explanationZh: '最后一段明确指出"树木并不是在互相竞争"，而是"合作、交流，并互相关爱"，暗示森林是合作的社区。'
+
+  # ============================================================
+  # R021-R025: Level 2, ~300 words, detective/adventure themes
+  # with relative clauses in text
+  # ============================================================
+
+  - id: R021
+    title: 'The Case of the Missing Painting'
+    titleZh: '失踪画作之谜'
+    level: 2
+    wordCount: 302
+    topic: detective
+    tags: [Q02, month-2]
+    passage: |
+      Maya Chen, who was only twelve years old, had always dreamed of becoming a
+      detective. So when the school's most valuable painting disappeared from the
+      art room, she knew this was her chance.
+
+      The painting, which showed a beautiful sunset over the ocean, had been donated
+      by a famous local artist. It had hung on the wall for fifteen years. On Monday
+      morning, the art teacher, Mrs Palmer, arrived to find an empty frame and a
+      small scratch on the window ledge.
+
+      The headteacher called the police, but Maya had already started her own
+      investigation. She noticed three important clues that the adults had missed.
+      First, there were tiny flakes of blue paint on the floor beneath the window —
+      but the painting was mostly orange and red. Second, the scratch on the window
+      ledge was on the inside, not the outside, which meant the window had been
+      opened from within the school. Third, she noticed muddy footprints that led
+      not to the main entrance, but toward the science block.
+
+      Maya remembered that the science department had recently received new blue
+      paint for their display boards. She hurried to the science corridor, where
+      she found more blue paint flakes near a storage cupboard. Inside the cupboard,
+      hidden behind a stack of textbooks, was the missing painting.
+
+      But who had taken it? Maya checked the sign-out sheet for the science building
+      and found that only one person had been in the building over the weekend — Mr
+      Davis, the caretaker, who had reported a broken lock on Saturday. When
+      questioned, Mr Davis admitted he had moved the painting because he was worried
+      about a leak in the art room ceiling. He had planned to return it on Monday
+      but forgot.
+
+      The mystery was solved, and Maya became the school's youngest detective hero.
+    passageZh: |
+      玛雅·陈只有十二岁，却一直梦想成为一名侦探。所以当学校最珍贵的画作从美术室消
+      失时，她知道机会来了。
+
+      这幅画描绘了海上美丽的日落，是一位著名的当地艺术家捐赠的。它已经在墙上挂了
+      十五年。周一早上，美术老师帕尔默太太到达时，发现只剩下一个空画框，窗台上有
+      一道小划痕。
+
+      校长叫了警察，但玛雅已经开始了自己的调查。她注意到了大人们遗漏的三个重要线
+      索。首先，窗户下面的地板上有微小的蓝色油漆碎片——但那幅画主要是橙色和红色的。
+      其次，窗台上的划痕在内侧，而不是外侧，这意味着窗户是从学校内部打开的。第三，
+      她注意到泥泞的脚印不是通向大门，而是通向科学楼。
+
+      玛雅记得科学部最近收到了新的蓝色油漆用于展示板。她赶紧跑到科学楼走廊，在那
+      里她在一个储物柜附近发现了更多的蓝色油漆碎片。在储物柜里面，藏在一堆教科书
+      后面的，就是那幅失踪的画。
+
+      但是谁拿走了它？玛雅查看了科学楼的签到表，发现周末只有一个人进过这栋楼——管
+      理员戴维斯先生，他在周六报告了一个坏掉的锁。当被询问时，戴维斯先生承认他移
+      走了画，因为他担心美术室天花板漏水。他本来打算周一把画还回去，但忘了。
+
+      谜团解开了，玛雅成了学校最年轻的侦探英雄。
+    vocabHighlights:
+      - word: investigation
+        ref: V0121
+      - word: admitted
+        ref: V0130
+    questions:
+      - id: R021-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'How a famous painting was created by a local artist'
+          B: 'How a young girl used clues to solve the mystery of a missing painting'
+          C: 'Why schools should have better security for valuable items'
+          D: 'The daily life of a school caretaker'
+        answer: B
+        explanation: 'The passage tells the story of Maya solving the mystery of the missing painting by finding and following clues.'
+        explanationZh: '文章讲述了玛雅通过发现和追踪线索解开失踪画作之谜的故事。'
+      - id: R021-Q2
+        type: detail
+        question: 'What was the first clue Maya found?'
+        questionZh: '玛雅发现的第一个线索是什么？'
+        options:
+          A: 'Muddy footprints leading to the science block'
+          B: 'A broken lock on the science building'
+          C: 'Blue paint flakes on the floor, even though the painting was orange and red'
+          D: 'A scratch on the outside of the window'
+        answer: C
+        explanation: 'The passage states that Maya first noticed "tiny flakes of blue paint on the floor beneath the window — but the painting was mostly orange and red."'
+        explanationZh: '文章指出玛雅首先注意到"窗户下面地板上有微小的蓝色油漆碎片——但那幅画主要是橙色和红色的。"'
+      - id: R021-Q3
+        type: detail
+        question: 'Why had Mr Davis moved the painting?'
+        questionZh: '戴维斯先生为什么移走了画？'
+        options:
+          A: 'He wanted to sell it for money'
+          B: 'He was worried about a ceiling leak damaging it'
+          C: 'He wanted to clean and restore it'
+          D: 'He was asked by the headteacher to move it'
+        answer: B
+        explanation: 'The passage states that Mr Davis "had moved the painting because he was worried about a leak in the art room ceiling."'
+        explanationZh: '文章指出戴维斯先生"移走了画，因为他担心美术室天花板漏水。"'
+      - id: R021-Q4
+        type: inference
+        question: 'What made Maya a better detective than the adults in this story?'
+        questionZh: '在这个故事中，是什么让玛雅比大人们更擅长侦探？'
+        options:
+          A: 'She had special detective equipment'
+          B: 'She had been trained by the police'
+          C: 'She was more observant and noticed details the adults overlooked'
+          D: 'She already knew who had taken the painting'
+        answer: C
+        explanation: 'The passage mentions that Maya "noticed three important clues that the adults had missed," showing she was more observant and detail-oriented.'
+        explanationZh: '文章提到玛雅"注意到了大人们遗漏的三个重要线索"，说明她更善于观察，更注重细节。'
+
+  - id: R022
+    title: 'Atlantis — Fact or Fiction?'
+    titleZh: '亚特兰蒂斯——事实还是虚构？'
+    level: 2
+    wordCount: 298
+    topic: adventure
+    tags: [Q02, month-2]
+    passage: |
+      For thousands of years, people have been fascinated by the legend of Atlantis,
+      a powerful island civilisation that supposedly sank beneath the ocean in a
+      single day. The story, which was first told by the ancient Greek philosopher
+      Plato around 360 BC, has inspired countless explorers to search for this
+      lost city. But did Atlantis really exist?
+
+      According to Plato, Atlantis was a magnificent island located beyond the
+      "Pillars of Hercules," which most historians believe refers to the Strait of
+      Gibraltar. The island was home to an advanced civilisation with grand palaces,
+      harbours filled with ships, and rings of water that surrounded the city centre.
+      The people of Atlantis were wealthy and powerful, but they became greedy and
+      arrogant. As punishment, the gods sent earthquakes and floods that swallowed
+      the entire island.
+
+      Many researchers have tried to find a real place that could have inspired the
+      legend. One popular theory connects Atlantis to the Minoan civilisation on
+      the island of Crete, which was partially destroyed by a massive volcanic
+      eruption around 1600 BC. The eruption, which came from the nearby island of
+      Thera, created enormous tsunamis that devastated coastal cities.
+
+      Other explorers have searched for Atlantis in places as varied as Antarctica,
+      the Caribbean, and even the Sahara Desert, where satellite images have
+      revealed ancient river systems that could once have supported a great city.
+
+      However, most scholars believe that Plato invented Atlantis as a philosophical
+      story — a warning about what happens when powerful nations become too proud.
+      Whether Atlantis was real or imaginary, the legend continues to capture our
+      imagination. Perhaps that is the true power of a great story: it does not
+      need to be true to teach us something important.
+    passageZh: |
+      几千年来，人们一直对亚特兰蒂斯的传说着迷——一个据说在一天之内沉入海底的强大
+      岛屿文明。这个故事最早由古希腊哲学家柏拉图在大约公元前360年讲述，激励了无数
+      探险家去寻找这座失落的城市。但亚特兰蒂斯真的存在过吗？
+
+      根据柏拉图的描述，亚特兰蒂斯是一座位于"赫拉克勒斯之柱"之外的壮丽岛屿，大多
+      数历史学家认为那是指直布罗陀海峡。岛上是一个先进的文明，有宏伟的宫殿、满载船
+      只的港口，以及环绕城市中心的水环。亚特兰蒂斯人富有而强大，但他们变得贪婪和傲
+      慢。作为惩罚，众神降下了地震和洪水，吞没了整座岛屿。
+
+      许多研究人员试图找到一个可能启发了这一传说的真实地点。一个流行的理论将亚特兰
+      蒂斯与克里特岛上的米诺斯文明联系起来，那个文明在大约公元前1600年被一次巨大的
+      火山喷发部分摧毁。那次从附近的锡拉岛爆发的火山，产生了巨大的海啸，摧毁了沿海
+      城市。
+
+      其他探险家在各种各样的地方寻找亚特兰蒂斯，从南极洲、加勒比海到撒哈拉沙漠——
+      卫星图像在那里发现了古代河流系统，那里曾经可能支撑着一座伟大的城市。
+
+      然而，大多数学者认为柏拉图发明了亚特兰蒂斯作为一个哲学故事——警告强大的国家
+      变得太骄傲会发生什么。无论亚特兰蒂斯是真实的还是想象的，这个传说继续捕获着
+      我们的想象力。也许这就是一个伟大故事的真正力量：它不需要是真实的，也能教给
+      我们重要的东西。
+    vocabHighlights:
+      - word: fascinated
+        ref: V0086
+      - word: civilisation
+        ref: V0124
+      - word: magnificent
+        ref: V0090
+    questions:
+      - id: R022-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'A detailed description of life in ancient Greece'
+          B: 'The legend of Atlantis and the debate over whether it was real'
+          C: 'How volcanoes destroy islands in the ocean'
+          D: 'Why Plato was the greatest Greek philosopher'
+        answer: B
+        explanation: 'The passage presents the Atlantis legend, describes attempts to find it, and discusses whether it was real or a philosophical story.'
+        explanationZh: '文章介绍了亚特兰蒂斯的传说，描述了寻找它的尝试，并讨论了它是真实的还是一个哲学故事。'
+      - id: R022-Q2
+        type: detail
+        question: 'According to Plato, why was Atlantis destroyed?'
+        questionZh: '根据柏拉图的说法，亚特兰蒂斯为什么被毁灭了？'
+        options:
+          A: 'A volcanic eruption melted the island'
+          B: 'Enemy armies invaded and burned the city'
+          C: 'The gods punished the people for becoming greedy and arrogant'
+          D: 'A giant meteor struck the island from space'
+        answer: C
+        explanation: 'The passage states that "The people of Atlantis were wealthy and powerful, but they became greedy and arrogant. As punishment, the gods sent earthquakes and floods."'
+        explanationZh: '文章指出"亚特兰蒂斯人富有而强大，但他们变得贪婪和傲慢。作为惩罚，众神降下了地震和洪水。"'
+      - id: R022-Q3
+        type: detail
+        question: 'Which real civilisation is sometimes connected to the Atlantis legend?'
+        questionZh: '哪个真实的文明有时与亚特兰蒂斯传说联系在一起？'
+        options:
+          A: 'The Roman Empire'
+          B: 'The Minoan civilisation on Crete'
+          C: 'The Egyptian pharaohs'
+          D: 'The Viking settlers of Iceland'
+        answer: B
+        explanation: 'The passage mentions that "One popular theory connects Atlantis to the Minoan civilisation on the island of Crete."'
+        explanationZh: '文章提到"一个流行的理论将亚特兰蒂斯与克里特岛上的米诺斯文明联系起来。"'
+      - id: R022-Q4
+        type: inference
+        question: 'What does the author suggest about the true value of the Atlantis story?'
+        questionZh: '作者暗示亚特兰蒂斯故事的真正价值是什么？'
+        options:
+          A: 'It proves that ancient Greeks were excellent scientists'
+          B: 'It teaches an important moral lesson, regardless of whether it is true'
+          C: 'It shows that all legends are based on real events'
+          D: 'It is only useful for entertaining children'
+        answer: B
+        explanation: 'The final paragraph states that "it does not need to be true to teach us something important," suggesting the story''s value lies in its moral lesson about pride.'
+        explanationZh: '最后一段指出"它不需要是真实的，也能教给我们重要的东西"，暗示故事的价值在于它关于骄傲的道德教训。'
+
+  - id: R023
+    title: 'The Cave of Ancient Drawings'
+    titleZh: '古老洞画的洞穴'
+    level: 2
+    wordCount: 305
+    topic: adventure
+    tags: [Q02, month-2]
+    passage: |
+      It was the last day of summer camp, and twelve-year-old Lily and her friends
+      were hiking through a rocky valley that nobody had explored before. The trail,
+      which was barely visible among the tall grass, led them to the base of a steep
+      cliff. There, half-hidden behind a curtain of ivy, was the entrance to a cave.
+
+      "Should we go in?" whispered Tom, who was already reaching for his torch.
+      Lily nodded, and the three friends squeezed through the narrow opening.
+
+      Inside, the cave was surprisingly large. Their torch beams swept across the
+      walls, and suddenly Lily gasped. The walls were covered in paintings — animals,
+      handprints, and strange symbols that looked ancient. There were deer with
+      enormous antlers, bears standing on their hind legs, and what appeared to be
+      a mammoth with long curved tusks.
+
+      "These must be thousands of years old," said Aisha, who had read about cave
+      art in her history class. "People painted these during the Ice Age, using
+      natural pigments like charcoal and red ochre."
+
+      The friends explored deeper and found a chamber where the ceiling was covered
+      with dots and lines that formed patterns. Aisha suggested they might represent
+      stars and constellations — a prehistoric map of the night sky.
+
+      Lily carefully photographed everything with her phone, making sure not to
+      touch any of the paintings, which she knew could be damaged by the oils on
+      human skin. When they returned to camp, their leader immediately contacted
+      the local university.
+
+      Within a week, archaeologists arrived and confirmed that the paintings were
+      approximately 15,000 years old. The children had made one of the most
+      significant archaeological discoveries in the region. Their names were
+      published in the local newspaper, and the cave, which was named "Lily's
+      Cave," became a protected heritage site.
+    passageZh: |
+      那是夏令营的最后一天，十二岁的莉莉和她的朋友们正在一个从未有人探索过的岩石
+      山谷中徒步。小径在高高的草丛中几乎看不见，把他们带到了一面陡峭悬崖的底部。
+      在那里，半隐藏在一帘常春藤后面的，是一个洞穴的入口。
+
+      "我们应该进去吗？"汤姆低声说，他已经在伸手拿手电筒了。莉莉点了点头，三个朋
+      友挤过了狭窄的洞口。
+
+      里面的洞穴出人意料地大。他们的手电筒光束扫过墙壁，突然莉莉倒吸一口气。墙上
+      覆盖着绘画——动物、手印和看起来很古老的奇怪符号。有长着巨大鹿角的鹿，用后腿
+      站立的熊，还有看起来像长着弯曲长牙的猛犸象。
+
+      "这些一定有数千年的历史了，"艾莎说，她在历史课上读过关于洞穴艺术的内容。
+      "人们在冰河时代用木炭和赤铁矿等天然颜料画了这些。"
+
+      朋友们深入探索，发现了一个天花板上覆盖着点和线的房间，它们形成了图案。艾莎
+      认为这些可能代表星星和星座——一幅史前的夜空地图。
+
+      莉莉用手机仔细地拍下了一切，确保不触碰任何绘画，因为她知道人体皮肤上的油脂
+      可能会损坏它们。当他们回到营地时，领队立刻联系了当地大学。
+
+      不到一周，考古学家就来了，确认这些绘画大约有15,000年的历史。孩子们做出了该
+      地区最重要的考古发现之一。他们的名字被发表在当地报纸上，洞穴被命名为"莉莉
+      洞穴"，成为受保护的遗产地。
+    vocabHighlights:
+      - word: approximately
+        ref: V0100
+      - word: significant
+        ref: V0113
+    questions:
+      - id: R023-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The history of Ice Age cave paintings in Europe'
+          B: 'Three children who discovered a cave with ancient paintings during summer camp'
+          C: 'How archaeologists study prehistoric art'
+          D: 'Why caves are dangerous places for children to explore'
+        answer: B
+        explanation: 'The passage tells the story of Lily and her friends discovering a cave with ancient paintings during their last day of summer camp.'
+        explanationZh: '文章讲述了莉莉和她的朋友在夏令营最后一天发现了一个有古代绘画的洞穴的故事。'
+      - id: R023-Q2
+        type: detail
+        question: 'What animals were pictured on the cave walls?'
+        questionZh: '洞穴墙壁上画了什么动物？'
+        options:
+          A: 'Horses, dogs, and cats'
+          B: 'Deer, bears, and what appeared to be a mammoth'
+          C: 'Lions, tigers, and elephants'
+          D: 'Fish, birds, and snakes'
+        answer: B
+        explanation: 'The passage describes "deer with enormous antlers, bears standing on their hind legs, and what appeared to be a mammoth with long curved tusks."'
+        explanationZh: '文章描述了"长着巨大鹿角的鹿、用后腿站立的熊，还有看起来像长着弯曲长牙的猛犸象。"'
+      - id: R023-Q3
+        type: detail
+        question: 'Why was Lily careful not to touch the paintings?'
+        questionZh: '为什么莉莉小心地不触碰绘画？'
+        options:
+          A: 'She was afraid the paint was poisonous'
+          B: 'She thought the paintings might be cursed'
+          C: 'She knew the oils on human skin could damage them'
+          D: 'The camp leader had told her not to touch anything'
+        answer: C
+        explanation: 'The passage states that Lily made sure "not to touch any of the paintings, which she knew could be damaged by the oils on human skin."'
+        explanationZh: '文章指出莉莉确保"不触碰任何绘画，因为她知道人体皮肤上的油脂可能会损坏它们。"'
+      - id: R023-Q4
+        type: inference
+        question: 'What does the story suggest about curiosity and exploration?'
+        questionZh: '这个故事对好奇心和探索有什么启示？'
+        options:
+          A: 'Children should never explore unknown places'
+          B: 'Only trained scientists should be allowed to make discoveries'
+          C: 'Curiosity and willingness to explore can lead to important discoveries'
+          D: 'Summer camps are the best way to learn about history'
+        answer: C
+        explanation: 'The children''s willingness to explore an unknown trail and cave led to "one of the most significant archaeological discoveries in the region," showing the value of curiosity.'
+        explanationZh: '孩子们愿意探索未知的小径和洞穴，导致了"该地区最重要的考古发现之一"，展示了好奇心的价值。'
+
+  - id: R024
+    title: 'The Secret Code on the School Trip'
+    titleZh: '校园旅行中的秘密密码'
+    level: 2
+    wordCount: 308
+    topic: detective
+    tags: [Q02, month-2]
+    passage: |
+      Emma Park loved puzzles more than anything. So when her class visited an old
+      country house that had once belonged to a famous spy, she could not stop
+      looking at everything closely. While her classmates admired the grand staircase
+      and the beautiful gardens, Emma was drawn to a series of strange scratches on
+      the library wall.
+
+      The tour guide, who noticed Emma's interest, explained that the house's former
+      owner, Colonel Blackwood, had been a codebreaker during the Second World War.
+      "Some people believe he hid a secret message somewhere in this house," said
+      the guide with a smile, "but nobody has ever found it."
+
+      That was all Emma needed to hear. She took a photograph of the scratches and
+      spent the entire bus ride home studying them. The marks were arranged in groups
+      of five, which reminded her of something she had learned in her maths class —
+      a tally system. But these tallies were different. Some lines were vertical,
+      some horizontal, and some diagonal.
+
+      That evening, Emma researched military codes from the 1940s and found something
+      that matched perfectly: a pigpen cipher, which was a simple code that replaced
+      letters with geometric shapes. She carefully decoded each group of marks and
+      watched in amazement as words began to appear: "BENEATH THE THIRD STONE OF
+      THE EASTERN FIREPLACE."
+
+      Emma emailed the country house museum with her discovery. The curator, who
+      was sceptical at first, agreed to investigate. When workers lifted the third
+      stone of the eastern fireplace, they found a small metal box containing
+      Colonel Blackwood's personal diary and several documents that historians
+      described as extremely valuable.
+
+      Emma received a special award from the museum, and her photograph was placed
+      in the exhibition next to the decoded message. She had cracked a code that
+      had remained unsolved for over seventy years.
+    passageZh: |
+      艾玛·帕克比什么都喜欢解谜。所以当她的班级参观一座曾属于一位著名间谍的老乡村
+      庄园时，她忍不住仔细打量每样东西。当同学们在欣赏宏伟的楼梯和美丽的花园时，
+      艾玛被图书馆墙上一系列奇怪的刮痕吸引住了。
+
+      导游注意到了艾玛的兴趣，解释说这座房子的前任主人布莱克伍德上校曾是二战时期
+      的密码破译员。"有人相信他在这座房子里藏了一条秘密信息，"导游笑着说，"但从来
+      没有人找到过。"
+
+      这就是艾玛需要听到的。她拍下了刮痕的照片，整个回家的巴士旅程都在研究它们。
+      这些标记以五个为一组排列，让她想起了在数学课上学到的东西——计数系统。但这些
+      计数符号不同。有些线是竖的，有些是横的，有些是斜的。
+
+      那天晚上，艾玛研究了1940年代的军事密码，找到了一个完美匹配的东西：猪圈密码，
+      这是一种用几何形状替代字母的简单密码。她仔细解读了每组标记，惊奇地看着文字
+      开始出现："在东边壁炉的第三块石头下面。"
+
+      艾玛将她的发现通过电子邮件发给了乡村庄园博物馆。馆长起初持怀疑态度，但还是
+      同意调查。当工人们掀起东边壁炉的第三块石头时，他们发现了一个小金属盒，里面
+      装着布莱克伍德上校的个人日记和几份被历史学家描述为极其珍贵的文件。
+
+      艾玛获得了博物馆的特别奖，她的照片被放在展览中解码信息的旁边。她破解了一个
+      七十多年来无人能解的密码。
+    vocabHighlights:
+      - word: sceptical
+        ref: V0126
+      - word: investigate
+        ref: V0121
+    questions:
+      - id: R024-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The history of codebreaking during the Second World War'
+          B: 'A girl who decoded a secret message hidden in an old house'
+          C: 'How to visit country house museums in England'
+          D: 'The life story of Colonel Blackwood'
+        answer: B
+        explanation: 'The passage tells the story of Emma discovering mysterious scratches, decoding them using a pigpen cipher, and finding Colonel Blackwood''s hidden diary.'
+        explanationZh: '文章讲述了艾玛发现神秘刮痕、用猪圈密码解读它们、找到布莱克伍德上校隐藏日记的故事。'
+      - id: R024-Q2
+        type: detail
+        question: 'What type of code had Colonel Blackwood used?'
+        questionZh: '布莱克伍德上校使用了什么类型的密码？'
+        options:
+          A: 'Morse code using dots and dashes'
+          B: 'A pigpen cipher using geometric shapes'
+          C: 'A number-based code using Roman numerals'
+          D: 'Invisible ink that could only be seen with a special light'
+        answer: B
+        explanation: 'The passage states that Emma found it was "a pigpen cipher, which was a simple code that replaced letters with geometric shapes."'
+        explanationZh: '文章指出艾玛发现那是"猪圈密码，这是一种用几何形状替代字母的简单密码。"'
+      - id: R024-Q3
+        type: detail
+        question: 'What was hidden beneath the fireplace stone?'
+        questionZh: '壁炉石下面藏着什么？'
+        options:
+          A: 'A box of gold coins and jewellery'
+          B: 'An old map leading to buried treasure'
+          C: 'A metal box with a diary and valuable documents'
+          D: 'A secret passage leading underground'
+        answer: C
+        explanation: 'The passage states they found "a small metal box containing Colonel Blackwood''s personal diary and several documents that historians described as extremely valuable."'
+        explanationZh: '文章指出他们发现了"一个小金属盒，里面装着布莱克伍德上校的个人日记和几份被历史学家描述为极其珍贵的文件。"'
+      - id: R024-Q4
+        type: inference
+        question: 'Why was Emma able to solve a puzzle that no one else had solved for seventy years?'
+        questionZh: '为什么艾玛能解开一个七十年来没人能解开的谜？'
+        options:
+          A: 'She had a special computer that could decode messages'
+          B: 'She combined her love of puzzles with knowledge from school and her own research'
+          C: 'The tour guide gave her the answer secretly'
+          D: 'She had found the same code in a book at home'
+        answer: B
+        explanation: 'Emma used her passion for puzzles, her maths knowledge (tally system), and her evening research into military codes to crack the cipher, showing how combining different skills leads to success.'
+        explanationZh: '艾玛利用了她对解谜的热情、数学知识（计数系统）和晚间对军事密码的研究来破解密码，展示了综合不同技能如何带来成功。'
+
+  - id: R025
+    title: 'The Search for the Snow Leopard'
+    titleZh: '寻找雪豹'
+    level: 2
+    wordCount: 303
+    topic: adventure
+    tags: [Q02, month-2]
+    passage: |
+      High in the mountains of Central Asia, where the air is thin and the wind
+      howls through frozen passes, lives one of the world's most elusive creatures:
+      the snow leopard. Dr Mei Zhang, a wildlife biologist who had spent fifteen
+      years studying big cats, was leading an expedition to photograph one in the
+      wild — something very few people have ever managed to do.
+
+      Snow leopards, which are sometimes called "ghosts of the mountains," are
+      incredibly difficult to spot. Their pale grey fur, covered in dark rosette
+      patterns, blends perfectly with the rocky mountainside. They live at altitudes
+      of up to 5,500 metres and hunt mainly at dawn and dusk, when the light is dim.
+
+      Dr Zhang's team set up camp at 4,000 metres in the Tian Shan mountains of
+      Kyrgyzstan. For three weeks, they placed camera traps along mountain ridges
+      and near streams where prey animals came to drink. Every morning, the team
+      hiked for hours to check the cameras, battling freezing temperatures that
+      dropped to minus thirty degrees.
+
+      On the twenty-second day, when hope was beginning to fade, one camera captured
+      something extraordinary: a female snow leopard with two cubs walking along a
+      narrow ledge. The images showed the mother teaching her young ones how to
+      navigate the steep terrain. In one remarkable photograph, a cub was leaping
+      across a gap between two rocks while the mother watched carefully.
+
+      Dr Zhang said the photographs were among the best ever taken of snow leopards
+      in the wild. But she also shared worrying news: there are fewer than 7,000
+      snow leopards left in the world, and their habitat is shrinking due to climate
+      change. "These magnificent animals need our protection," she said. "If we do
+      not act now, future generations may only ever see them in photographs."
+    passageZh: |
+      在中亚的高山上，空气稀薄，寒风呼啸穿过冰冻的山口，生活着世界上最神出鬼没的
+      动物之一：雪豹。梅·张博士是一位研究大型猫科动物十五年的野生动物学家，她正带
+      领一个探险队在野外拍摄雪豹——很少有人能做到这一点。
+
+      雪豹有时被称为"山中幽灵"，极其难以发现。它们淡灰色的皮毛上覆盖着深色的玫瑰
+      花纹，与岩石山坡完美融合。它们生活在高达5,500米的海拔，主要在黎明和黄昏时分
+      捕猎，那时光线昏暗。
+
+      张博士的团队在吉尔吉斯斯坦天山4,000米处扎营。三个星期里，他们沿着山脊和猎
+      物来喝水的溪流附近放置了相机陷阱。每天早上，团队徒步数小时检查相机，与降至
+      零下三十度的严寒作斗争。
+
+      在第二十二天，当希望开始消退时，一台相机捕捉到了非凡的画面：一只带着两只幼
+      崽的雌性雪豹沿着狭窄的岩架行走。图像显示母亲在教小雪豹如何穿越陡峭的地形。
+      在一张令人惊叹的照片中，一只幼崽正在两块岩石之间的间隙跳跃，而母亲在一旁仔
+      细观察。
+
+      张博士说这些照片是有史以来在野外拍摄到的最好的雪豹照片之一。但她也分享了令
+      人担忧的消息：世界上只剩下不到7,000只雪豹，由于气候变化，它们的栖息地正在缩
+      小。"这些壮丽的动物需要我们的保护，"她说。"如果我们现在不采取行动，后代可能
+      只能在照片中看到它们了。"
+    vocabHighlights:
+      - word: elusive
+        ref: V0088
+      - word: habitat
+        ref: V0097
+      - word: expedition
+        ref: V0122
+    questions:
+      - id: R025-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The geography of the Tian Shan mountains'
+          B: 'A scientist''s expedition to photograph snow leopards and the challenges they face'
+          C: 'How camera traps work in wildlife research'
+          D: 'The different types of big cats in Central Asia'
+        answer: B
+        explanation: 'The passage describes Dr Zhang''s expedition to photograph snow leopards, the difficulty of finding them, and the conservation challenges they face.'
+        explanationZh: '文章描述了张博士拍摄雪豹的探险、发现它们的困难以及它们面临的保护挑战。'
+      - id: R025-Q2
+        type: detail
+        question: 'Why are snow leopards called "ghosts of the mountains"?'
+        questionZh: '为什么雪豹被称为"山中幽灵"？'
+        options:
+          A: 'Because they only come out at night'
+          B: 'Because their fur blends with the rocky mountainside, making them hard to spot'
+          C: 'Because they move completely silently'
+          D: 'Because local people believe they are supernatural beings'
+        answer: B
+        explanation: 'The passage explains that their pale grey fur "covered in dark rosette patterns, blends perfectly with the rocky mountainside," making them extremely difficult to see.'
+        explanationZh: '文章解释说它们淡灰色的皮毛"覆盖着深色的玫瑰花纹，与岩石山坡完美融合"，使它们极其难以看到。'
+      - id: R025-Q3
+        type: detail
+        question: 'How many snow leopards are left in the world?'
+        questionZh: '世界上还剩多少只雪豹？'
+        options:
+          A: 'Fewer than 700'
+          B: 'Fewer than 7,000'
+          C: 'About 15,000'
+          D: 'About 55,000'
+        answer: B
+        explanation: 'The passage states "there are fewer than 7,000 snow leopards left in the world."'
+        explanationZh: '文章指出"世界上只剩下不到7,000只雪豹。"'
+      - id: R025-Q4
+        type: inference
+        question: 'What is the author''s main purpose in the final paragraph?'
+        questionZh: '作者在最后一段的主要目的是什么？'
+        options:
+          A: 'To celebrate the success of the expedition'
+          B: 'To encourage readers to become wildlife photographers'
+          C: 'To raise awareness about the urgent need to protect snow leopards'
+          D: 'To explain how climate change affects all mountain animals'
+        answer: C
+        explanation: 'The final paragraph shifts from the expedition''s success to a warning about the declining population and shrinking habitat, urging readers to care about conservation.'
+        explanationZh: '最后一段从探险的成功转向关于种群减少和栖息地缩小的警告，敦促读者关注保护工作。'
+
+  # ============================================================
+  # R026-R030: Level 2.5, ~320 words, mixed themes
+  # longer paragraphs, more sophisticated vocabulary
+  # ============================================================
+
+  - id: R026
+    title: 'The Puzzle-Solving Octopus'
+    titleZh: '解谜的章鱼'
+    level: 2.5
+    wordCount: 318
+    topic: science
+    tags: [Q02, month-2]
+    passage: |
+      When scientists at the Seattle Aquarium placed a locked jar of shrimp inside
+      an octopus tank, they expected the experiment to take days. Instead, the
+      octopus studied the jar for a few minutes, wrapped its flexible arms around
+      the lid, and unscrewed it in under two minutes. The researchers were
+      astonished. This was no accident — the octopus had figured out how the jar
+      worked by watching the scientists open similar containers.
+
+      Octopuses are widely considered to be the most intelligent invertebrates on
+      Earth. Despite having no bones and a body made mostly of soft tissue, they
+      possess approximately 500 million neurons — roughly the same number as a dog.
+      Remarkably, about two-thirds of these neurons are located in their arms, which
+      means each arm can taste, touch, and even "think" independently.
+
+      In laboratories around the world, octopuses have demonstrated abilities that
+      were once thought to be limited to mammals and birds. They can navigate complex
+      mazes, recognise individual human faces, and use tools. In one famous
+      experiment, an octopus in New Zealand named Inky escaped from his tank by
+      squeezing through a tiny gap, crawling across the floor, and sliding down a
+      drainpipe into the ocean. The aquarium staff only discovered his escape the
+      next morning.
+
+      Perhaps most impressive is the octopus's ability to solve problems it has
+      never encountered before. Scientists have observed octopuses carrying coconut
+      shells across the ocean floor and assembling them into shelters — a behaviour
+      that requires planning and forethought, which are considered signs of advanced
+      intelligence.
+
+      However, there is a tragic side to octopus intelligence. Most species live
+      for only one to two years. This means that unlike humans, who pass knowledge
+      from generation to generation, each octopus must learn everything from scratch.
+      Scientists wonder what these extraordinary creatures could achieve if they
+      lived longer — and whether they might one day be recognised as having rights
+      similar to other intelligent animals.
+    passageZh: |
+      当西雅图水族馆的科学家把一个装着虾的密封罐放进章鱼水箱时，他们预计实验需要
+      好几天。然而，章鱼研究了罐子几分钟，用它灵活的触手缠绕住盖子，不到两分钟就
+      拧开了。研究人员惊呆了。这不是偶然——章鱼通过观察科学家打开类似容器，已经弄
+      懂了罐子的工作原理。
+
+      章鱼被广泛认为是地球上最聪明的无脊椎动物。尽管没有骨骼，身体主要由软组织组
+      成，它们拥有大约5亿个神经元——大约与一只狗的数量相同。值得注意的是，这些神经
+      元中大约三分之二位于它们的触手中，这意味着每条触手都能独立地品尝、触摸，甚
+      至"思考"。
+
+      在世界各地的实验室里，章鱼展示了曾被认为仅限于哺乳动物和鸟类的能力。它们能
+      穿越复杂的迷宫，识别不同人的面孔，还能使用工具。在一个著名的实验中，新西兰
+      一只名叫"墨水"的章鱼通过挤过一个小缝隙逃出了水箱，爬过地板，滑下排水管进入
+      了大海。水族馆工作人员第二天早上才发现它逃走了。
+
+      也许最令人印象深刻的是章鱼解决从未遇到过的问题的能力。科学家观察到章鱼在海
+      底搬运椰子壳，并将它们组装成庇护所——这种行为需要规划和预见能力，被视为高级
+      智慧的标志。
+
+      然而，章鱼的智慧也有悲剧的一面。大多数种类只能活一到两年。这意味着与人类不
+      同——人类可以将知识代代相传——每只章鱼都必须从零开始学习一切。科学家们好奇，
+      如果这些非凡的生物活得更久，它们能取得什么成就——以及它们是否有朝一日会被承
+      认拥有与其他聪明动物类似的权利。
+    vocabHighlights:
+      - word: astonished
+        ref: V0083
+      - word: demonstrate
+        ref: V0110
+      - word: approximately
+        ref: V0100
+    questions:
+      - id: R026-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'How to keep octopuses in aquariums'
+          B: 'The remarkable intelligence of octopuses and their problem-solving abilities'
+          C: 'Why octopuses are dangerous sea creatures'
+          D: 'The differences between octopuses and mammals'
+        answer: B
+        explanation: 'The passage describes multiple examples of octopus intelligence, from opening jars and escaping tanks to using tools and solving novel problems.'
+        explanationZh: '文章描述了章鱼智慧的多个例子，从打开罐子、逃出水箱到使用工具和解决新问题。'
+      - id: R026-Q2
+        type: detail
+        question: 'Where are most of an octopus''s neurons located?'
+        questionZh: '章鱼的大部分神经元位于哪里？'
+        options:
+          A: 'In their brain'
+          B: 'In their eyes'
+          C: 'In their arms'
+          D: 'In their stomach'
+        answer: C
+        explanation: 'The passage states that "about two-thirds of these neurons are located in their arms."'
+        explanationZh: '文章指出"这些神经元中大约三分之二位于它们的触手中。"'
+      - id: R026-Q3
+        type: detail
+        question: 'How did the octopus named Inky escape?'
+        questionZh: '那只名叫"墨水"的章鱼是怎么逃跑的？'
+        options:
+          A: 'It broke the glass of its tank'
+          B: 'It squeezed through a gap, crawled across the floor, and went down a drainpipe'
+          C: 'It jumped out when a worker opened the tank lid'
+          D: 'It hid inside a bucket that was carried outside'
+        answer: B
+        explanation: 'The passage describes Inky "squeezing through a tiny gap, crawling across the floor, and sliding down a drainpipe into the ocean."'
+        explanationZh: '文章描述了墨水"挤过一个小缝隙，爬过地板，滑下排水管进入了大海。"'
+      - id: R026-Q4
+        type: inference
+        question: 'Why does the author describe octopus intelligence as having "a tragic side"?'
+        questionZh: '为什么作者将章鱼的智慧描述为有"悲剧的一面"？'
+        options:
+          A: 'Because octopuses often hurt themselves while solving puzzles'
+          B: 'Because their short lifespan means each octopus must learn everything anew'
+          C: 'Because humans capture too many octopuses for research'
+          D: 'Because octopuses become sad when they are kept in tanks'
+        answer: B
+        explanation: 'The passage explains that most octopuses live only one to two years, so "each octopus must learn everything from scratch," unlike humans who pass knowledge between generations.'
+        explanationZh: '文章解释说大多数章鱼只能活一到两年，所以"每只章鱼都必须从零开始学习一切"，不像人类可以代代传递知识。'
+
+  - id: R027
+    title: 'From Jungle Beans to Candy Bars'
+    titleZh: '从丛林豆子到糖果棒'
+    level: 2.5
+    wordCount: 322
+    topic: science
+    tags: [Q02, month-2]
+    passage: |
+      The next time you bite into a chocolate bar, consider this: the journey from
+      raw cacao bean to finished chocolate is one of the most remarkable
+      transformations in the history of food. It is a story that stretches back over
+      3,000 years, beginning in the steamy rainforests of Central America.
+
+      The ancient Maya and Aztec civilisations were the first people known to use
+      cacao. However, their chocolate was nothing like what we eat today. They
+      ground roasted cacao beans into a paste, mixed it with water, chilli peppers,
+      and cornmeal, and drank it as a bitter, frothy beverage. The Aztecs valued
+      cacao so highly that they used the beans as currency — ten beans could buy
+      a rabbit, and a hundred could buy a slave.
+
+      When Spanish explorers arrived in Mexico in the sixteenth century, they
+      encountered this unusual drink and brought cacao beans back to Europe. At
+      first, Europeans found the bitter taste unpleasant, so they began adding
+      sugar and vanilla. The sweetened drink quickly became fashionable among
+      wealthy Europeans, and chocolate houses — similar to modern coffee shops —
+      appeared in London, Paris, and Amsterdam.
+
+      The real breakthrough came in 1828, when a Dutch chemist named Coenraad van
+      Houten invented a press that could separate cacao butter from the ground
+      beans. This innovation made it possible to create smooth, solid chocolate
+      for the first time. In 1847, a British company called J.S. Fry & Sons
+      produced the world's first chocolate bar by combining cacao powder, sugar,
+      and melted cacao butter.
+
+      Today, the global chocolate industry is worth over 130 billion dollars, and
+      approximately 4.7 million tonnes of cacao beans are harvested each year,
+      mainly in West Africa. Yet the basic process remains surprisingly similar to
+      what the Maya practised thousands of years ago: harvest the pods, ferment the
+      beans, dry them in the sun, and roast them to release that irresistible
+      chocolate flavour.
+    passageZh: |
+      下次你咬一口巧克力棒的时候，想想这个：从生可可豆到成品巧克力的旅程，是食品
+      历史上最了不起的转变之一。这个故事可以追溯到3,000多年前，始于中美洲闷热的
+      雨林。
+
+      古代玛雅和阿兹特克文明是已知最早使用可可的人。然而，他们的巧克力完全不像我
+      们今天吃的。他们把烘烤过的可可豆磨成糊状，与水、辣椒和玉米面混合，作为一种
+      苦涩的泡沫饮料饮用。阿兹特克人非常重视可可，甚至用可可豆当货币——十颗豆子可
+      以买一只兔子，一百颗可以买一个奴隶。
+
+      十六世纪西班牙探险家到达墨西哥时，他们遇到了这种不寻常的饮料，并把可可豆带
+      回了欧洲。起初，欧洲人觉得苦味令人不快，所以他们开始加入糖和香草。加了糖的
+      饮料迅速在富裕的欧洲人中流行起来，巧克力屋——类似于现代的咖啡店——在伦敦、巴
+      黎和阿姆斯特丹出现了。
+
+      真正的突破发生在1828年，一位名叫科恩拉德·范·豪顿的荷兰化学家发明了一种压力
+      机，可以从研磨的豆子中分离可可脂。这项创新使得首次制造出光滑固体巧克力成为
+      可能。1847年，一家名为J.S.弗莱父子公司的英国公司将可可粉、糖和融化的可可脂
+      结合在一起，生产出了世界上第一根巧克力棒。
+
+      今天，全球巧克力产业价值超过1,300亿美元，每年收获大约470万吨可可豆，主要在
+      西非。然而，基本过程与数千年前玛雅人的做法惊人地相似：收获豆荚、发酵豆子、
+      在阳光下晾晒，然后烘烤以释放那令人无法抗拒的巧克力风味。
+    vocabHighlights:
+      - word: remarkable
+        ref: V0089
+      - word: innovation
+        ref: V0134
+    questions:
+      - id: R027-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'How to make chocolate at home'
+          B: 'The history of chocolate from ancient times to the modern chocolate bar'
+          C: 'Why chocolate is unhealthy for children'
+          D: 'The economy of West African cacao farming'
+        answer: B
+        explanation: 'The passage traces the complete history of chocolate, from the Maya and Aztec civilisations through European adoption to the invention of the modern chocolate bar.'
+        explanationZh: '文章追溯了巧克力的完整历史，从玛雅和阿兹特克文明到欧洲的采用，再到现代巧克力棒的发明。'
+      - id: R027-Q2
+        type: detail
+        question: 'How did the Aztecs use cacao beans besides making drinks?'
+        questionZh: '除了制作饮料，阿兹特克人还怎样使用可可豆？'
+        options:
+          A: 'They used them as medicine'
+          B: 'They used them as currency'
+          C: 'They used them to make paint'
+          D: 'They used them as jewellery'
+        answer: B
+        explanation: 'The passage states that the Aztecs "used the beans as currency — ten beans could buy a rabbit, and a hundred could buy a slave."'
+        explanationZh: '文章指出阿兹特克人"用可可豆当货币——十颗豆子可以买一只兔子，一百颗可以买一个奴隶。"'
+      - id: R027-Q3
+        type: detail
+        question: 'What did Coenraad van Houten invent in 1828?'
+        questionZh: '科恩拉德·范·豪顿在1828年发明了什么？'
+        options:
+          A: 'The first chocolate bar'
+          B: 'A machine for roasting cacao beans'
+          C: 'A press that separated cacao butter from ground beans'
+          D: 'A recipe for adding sugar to chocolate'
+        answer: C
+        explanation: 'The passage states that van Houten "invented a press that could separate cacao butter from the ground beans."'
+        explanationZh: '文章指出范·豪顿"发明了一种压力机，可以从研磨的豆子中分离可可脂。"'
+      - id: R027-Q4
+        type: inference
+        question: 'What point does the author make in the final paragraph?'
+        questionZh: '作者在最后一段提出了什么观点？'
+        options:
+          A: 'That modern chocolate production has completely replaced ancient methods'
+          B: 'That West Africa produces too much cacao'
+          C: 'That despite the huge industry, the basic process has remained similar for thousands of years'
+          D: 'That chocolate will become more expensive in the future'
+        answer: C
+        explanation: 'The final paragraph contrasts the massive modern industry with the observation that "the basic process remains surprisingly similar to what the Maya practised thousands of years ago."'
+        explanationZh: '最后一段将庞大的现代产业与"基本过程与数千年前玛雅人的做法惊人地相似"这一观察进行了对比。'
+
+  - id: R028
+    title: 'The Time Capsule'
+    titleZh: '时间胶囊'
+    level: 2.5
+    wordCount: 321
+    topic: adventure
+    tags: [Q02, month-2]
+    passage: |
+      On a grey October morning, the entire town of Willowbrook gathered in the
+      square to witness something that had not happened in a century. Buried beneath
+      the old oak tree in the centre of the square was a copper box that had been
+      placed there exactly one hundred years ago. Today, it would finally be opened.
+
+      Mayor Hartley, who could barely contain her excitement, carefully lifted the
+      corroded lid. Inside, wrapped in oilcloth that had kept the moisture out for
+      a hundred years, were objects that told the story of a very different world.
+      There was a handwritten letter from the town's 1926 mayor, a copy of the local
+      newspaper dated 15th October 1926, three photographs of the town centre, a
+      child's drawing of a horse and cart, and a sealed glass bottle containing
+      seeds from the town's famous apple orchard.
+
+      The crowd fell silent as Mayor Hartley read the letter aloud. "To the people
+      of Willowbrook, one hundred years from now," it began. "We are a small town
+      of 800 souls. We have just received our first motor car. The children attend
+      a one-room schoolhouse, and our main industry is apple farming. We wonder
+      what your world looks like. Do you still tend the orchard? Do the children
+      still play by the river?"
+
+      Many people in the crowd were visibly moved. The photographs showed a town
+      that was both recognisable and utterly transformed. The church and the oak
+      tree were still standing, but everything else had changed — the dirt roads
+      were now paved, the horse-drawn carts replaced by cars, and the one-room
+      school was now a modern building with a computer lab.
+
+      The townspeople decided to plant the century-old apple seeds and bury a new
+      time capsule for the year 2126. This time, they included a smartphone, a USB
+      drive of family photos, a face mask from the pandemic years, and letters from
+      every child in the local school, each one beginning with: "To the people of
+      Willowbrook, one hundred years from now..."
+    passageZh: |
+      在一个灰蒙蒙的十月早晨，整个柳溪镇的人聚集在广场上，见证一件百年来从未发生
+      过的事情。广场中央老橡树下面埋着一个铜盒子，正好是一百年前放在那里的。今天，
+      它终于要被打开了。
+
+      哈特利镇长几乎抑制不住自己的激动，小心地揭开了腐蚀的盖子。里面用油布包裹着
+      ——油布已经为这些物品挡了一百年的潮气——是一些讲述着完全不同世界的物品。有一
+      封1926年镇长手写的信，一份标注日期为1926年10月15日的当地报纸，三张镇中心的
+      照片，一幅孩子画的马车图画，还有一个密封的玻璃瓶，里面装着镇上著名苹果园的
+      种子。
+
+      当哈特利镇长大声朗读那封信时，人群安静了下来。"致一百年后的柳溪镇人民，"信
+      的开头写道。"我们是一个只有800人的小镇。我们刚刚有了第一辆汽车。孩子们在一
+      间教室的学校上学，我们的主要产业是种苹果。我们想知道你们的世界是什么样的。你
+      们还在照料果园吗？孩子们还在河边玩耍吗？"
+
+      人群中许多人明显被感动了。照片展示了一个既熟悉又彻底改变了的小镇。教堂和橡
+      树还在，但其他一切都变了——土路变成了铺好的路面，马车被汽车取代，一间教室的
+      学校现在是一栋有电脑室的现代建筑。
+
+      镇民们决定种下百年前的苹果种子，并为2126年埋下一个新的时间胶囊。这次，他们
+      放入了一部智能手机、一个装满全家福的U盘、一个疫情年代的口罩，以及当地学校每
+      个孩子写的一封信，每封信都以这样开头："致一百年后的柳溪镇人民……"
+    vocabHighlights:
+      - word: witnessed
+        ref: V0128
+      - word: recognisable
+        ref: V0137
+    questions:
+      - id: R028-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'The history of apple farming in a small town'
+          B: 'The opening of a 100-year-old time capsule and what it revealed about past and present'
+          C: 'How to make a time capsule at school'
+          D: 'The life of Mayor Hartley in Willowbrook'
+        answer: B
+        explanation: 'The passage describes the opening of a century-old time capsule and the contrast between the town''s past and present, ending with a new capsule for the future.'
+        explanationZh: '文章描述了打开百年时间胶囊的过程以及小镇过去和现在的对比，最后以为未来埋下新胶囊结尾。'
+      - id: R028-Q2
+        type: detail
+        question: 'What items were found inside the time capsule?'
+        questionZh: '时间胶囊里发现了什么物品？'
+        options:
+          A: 'Gold coins, a map, and old clothing'
+          B: 'A letter, newspaper, photographs, a child''s drawing, and apple seeds'
+          C: 'Books, tools, and a clock'
+          D: 'A diary, paintings, and musical instruments'
+        answer: B
+        explanation: 'The passage lists a handwritten letter, a newspaper, three photographs, a child''s drawing, and a sealed bottle containing apple seeds.'
+        explanationZh: '文章列出了一封手写信、一份报纸、三张照片、一幅孩子的画和一个装着苹果种子的密封瓶。'
+      - id: R028-Q3
+        type: detail
+        question: 'What had the town looked like in 1926 according to the letter?'
+        questionZh: '根据信件，1926年的小镇是什么样的？'
+        options:
+          A: 'A large city with many factories and railways'
+          B: 'A small town of 800 people with apple farming and a one-room school'
+          C: 'A wealthy town with grand buildings and a university'
+          D: 'A fishing village by the coast'
+        answer: B
+        explanation: 'The letter describes a "small town of 800 souls" with "a one-room schoolhouse" whose "main industry is apple farming" and that had just received its first motor car.'
+        explanationZh: '信中描述了一个"只有800人的小镇"，有"一间教室的学校"，"主要产业是种苹果"，而且刚刚有了第一辆汽车。'
+      - id: R028-Q4
+        type: inference
+        question: 'Why did the townspeople include a face mask in the new time capsule?'
+        questionZh: '为什么镇民们在新的时间胶囊中放入了一个口罩？'
+        options:
+          A: 'Because masks are commonly used in Willowbrook'
+          B: 'Because they wanted to show future people that the town had a hospital'
+          C: 'Because it represented an important part of their era, just as the 1926 items represented theirs'
+          D: 'Because they ran out of other objects to include'
+        answer: C
+        explanation: 'Just as the 1926 capsule contained objects that told the story of that era, the face mask represents a significant experience of the current generation — the pandemic.'
+        explanationZh: '就像1926年的胶囊包含了讲述那个时代故事的物品一样，口罩代表了当代人的一个重要经历——疫情。'
+
+  - id: R029
+    title: 'Why Do We Dream?'
+    titleZh: '我们为什么会做梦？'
+    level: 2.5
+    wordCount: 319
+    topic: science
+    tags: [Q02, month-2]
+    passage: |
+      Every night, as you fall asleep, your brain begins creating a private cinema
+      just for you. Some dreams are wonderful — you might fly over mountains or
+      discover a magical world. Others are confusing or frightening. But why do we
+      dream at all? Despite decades of research, scientists still cannot fully
+      agree on the answer.
+
+      Dreams occur mainly during a stage of sleep called REM, which stands for
+      Rapid Eye Movement. During REM sleep, your eyes move quickly behind your
+      closed eyelids, your heart rate increases, and your brain becomes almost as
+      active as when you are awake. Most people experience four to six periods of
+      REM sleep each night, which means you probably have several dreams — even if
+      you cannot remember them in the morning.
+
+      One of the most widely accepted theories suggests that dreams help us process
+      emotions. When something upsetting or exciting happens during the day, your
+      brain replays these experiences during sleep, helping you make sense of your
+      feelings. This could explain why people often dream about events that worried
+      or thrilled them.
+
+      Another theory proposes that dreaming helps consolidate memories. While you
+      sleep, your brain sorts through the enormous amount of information you
+      absorbed during the day, deciding what to keep and what to discard. Some
+      researchers believe that dreams are a side effect of this sorting process —
+      like watching a librarian shuffle books into different shelves.
+
+      A more recent theory, proposed by neuroscientist Erik Hoel, suggests that
+      dreams serve as a kind of training simulation. By creating strange and
+      unexpected scenarios, your brain prepares you to handle surprising situations
+      in real life. This would explain why dreams are often bizarre and illogical —
+      the strangeness is the point.
+
+      Whatever the true purpose of dreams may be, one thing is certain: they are a
+      fundamental part of being human. People across every culture and throughout
+      all of history have wondered about their dreams — and it seems we will
+      continue wondering for some time yet.
+    passageZh: |
+      每天晚上，当你入睡时，你的大脑开始为你创建一个私人电影院。有些梦很美妙——你
+      可能飞越群山或发现一个魔法世界。有些梦令人困惑或恐惧。但我们为什么会做梦呢？
+      尽管经过了几十年的研究，科学家们仍然无法完全就答案达成一致。
+
+      梦主要发生在一个叫做REM的睡眠阶段，REM代表快速眼动。在REM睡眠期间，你的眼
+      球在闭合的眼皮后面快速运动，心率加快，大脑变得几乎和清醒时一样活跃。大多数
+      人每晚经历四到六个REM睡眠周期，这意味着你可能做了好几个梦——即使早上你记不住
+      它们。
+
+      最广泛接受的理论之一认为，梦帮助我们处理情绪。当白天发生令人不安或兴奋的事
+      情时，你的大脑在睡眠中重放这些经历，帮助你理解自己的感受。这可以解释为什么
+      人们经常梦到让他们担忧或兴奋的事件。
+
+      另一种理论提出，做梦有助于巩固记忆。当你睡觉时，你的大脑整理白天吸收的大量
+      信息，决定保留什么、丢弃什么。一些研究人员认为，梦是这个整理过程的副产品——
+      就像看着图书管理员把书分拣到不同的书架上。
+
+      一个更新的理论由神经科学家埃里克·霍尔提出，认为梦起着一种训练模拟的作用。通
+      过创建奇怪和意想不到的场景，你的大脑为你准备好应对现实生活中的突发情况。这可
+      以解释为什么梦经常是离奇和不合逻辑的——奇怪本身就是目的。
+
+      无论梦的真正目的是什么，有一件事是确定的：它们是人类的基本组成部分。每个文化
+      和整个历史中的人们都曾对自己的梦感到好奇——看起来我们还会继续好奇一段时间。
+    vocabHighlights:
+      - word: fundamental
+        ref: V0107
+      - word: theory
+        ref: V0140
+      - word: bizarre
+        ref: V0143
+    questions:
+      - id: R029-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'How to have better dreams at night'
+          B: 'Different scientific theories about why we dream'
+          C: 'The dangers of not getting enough REM sleep'
+          D: 'How dreams have been interpreted throughout history'
+        answer: B
+        explanation: 'The passage presents several scientific theories about the purpose of dreaming: processing emotions, consolidating memories, and serving as training simulations.'
+        explanationZh: '文章介绍了几种关于做梦目的的科学理论：处理情绪、巩固记忆和充当训练模拟。'
+      - id: R029-Q2
+        type: detail
+        question: 'What happens to the body during REM sleep?'
+        questionZh: 'REM睡眠期间身体会发生什么？'
+        options:
+          A: 'The body becomes completely still and the brain shuts down'
+          B: 'Eyes move quickly, heart rate increases, and the brain becomes very active'
+          C: 'Muscles grow stronger and bones repair themselves'
+          D: 'Body temperature drops significantly and breathing slows'
+        answer: B
+        explanation: 'The passage states that during REM sleep "your eyes move quickly behind your closed eyelids, your heart rate increases, and your brain becomes almost as active as when you are awake."'
+        explanationZh: '文章指出在REM睡眠期间，"你的眼球在闭合的眼皮后面快速运动，心率加快，大脑变得几乎和清醒时一样活跃。"'
+      - id: R029-Q3
+        type: detail
+        question: 'According to Erik Hoel''s theory, why are dreams often strange and illogical?'
+        questionZh: '根据埃里克·霍尔的理论，为什么梦经常是奇怪和不合逻辑的？'
+        options:
+          A: 'Because the brain is not working properly during sleep'
+          B: 'Because dreams mix up memories from different days'
+          C: 'Because the strangeness helps prepare us for unexpected real-life situations'
+          D: 'Because we cannot control what we dream about'
+        answer: C
+        explanation: 'The passage explains that according to Hoel''s theory, dreams create "strange and unexpected scenarios" to prepare the brain for surprising situations, and "the strangeness is the point."'
+        explanationZh: '文章解释说，根据霍尔的理论，梦创建"奇怪和意想不到的场景"来为大脑准备应对突发情况，"奇怪本身就是目的。"'
+      - id: R029-Q4
+        type: inference
+        question: 'What can we infer from the final paragraph?'
+        questionZh: '从最后一段我们可以推断出什么？'
+        options:
+          A: 'Scientists have recently solved the mystery of dreams'
+          B: 'People will stop dreaming in the future'
+          C: 'The question of why we dream remains partly unanswered and continues to fascinate people'
+          D: 'Only modern cultures are interested in dreams'
+        answer: C
+        explanation: 'The final paragraph says people "across every culture and throughout all of history have wondered about their dreams" and "we will continue wondering for some time yet," suggesting the mystery endures.'
+        explanationZh: '最后一段说"每个文化和整个历史中的人们都曾对自己的梦感到好奇"，"我们还会继续好奇一段时间"，暗示这个谜团仍在继续。'
+
+  - id: R030
+    title: 'The Last Dragon Keeper'
+    titleZh: '最后的守龙人'
+    level: 2.5
+    wordCount: 325
+    topic: fantasy
+    tags: [Q02, month-2]
+    passage: |
+      In the highest peaks of the Kunlun Mountains, where clouds wrapped around
+      the summits like silk scarves, there lived an old woman named Grandmother
+      Yun. The villagers in the valley below whispered that she was the last of the
+      Dragon Keepers — a line of guardians who had protected the mountain dragons
+      for over a thousand years.
+
+      Nobody had seen a dragon in living memory, and most people believed they were
+      nothing more than legends. But Grandmother Yun knew the truth. Deep inside a
+      cave behind a frozen waterfall, the last dragon in the world was sleeping. It
+      had been asleep for two hundred years, and it was her duty to watch over it
+      until the day it woke.
+
+      Every morning, Grandmother Yun climbed the steep path to the cave, carrying
+      dried herbs that she burned at the entrance. The fragrant smoke, which she
+      called "dragon's breath," kept the cave warm and protected the sleeping
+      creature from the bitter mountain cold. She checked the dragon's enormous
+      scales, each one the size of a dinner plate and shimmering with colours that
+      shifted between emerald green and deep sapphire blue.
+
+      One winter, a young girl named Lin arrived at Grandmother Yun's door, sent
+      by her parents to learn traditional medicine. The old woman recognised
+      something in Lin's eyes — the same quiet determination that every Dragon
+      Keeper had possessed. Slowly, she began teaching Lin the ancient knowledge:
+      which herbs to burn, which songs to sing at the cave entrance, and how to
+      read the subtle changes in the dragon's breathing that indicated when it
+      might finally stir.
+
+      "The dragon will wake when the world needs it most," Grandmother Yun told
+      Lin on a snowy evening. "And when it does, you must be ready." She placed a
+      jade pendant around Lin's neck — the symbol of the Dragon Keepers that had
+      been passed down through forty generations. "You are no longer just my
+      student," she whispered. "You are the next Keeper."
+    passageZh: |
+      在昆仑山的最高峰上，云朵像丝巾一样缠绕着山顶，住着一位名叫云奶奶的老妇人。
+      山谷下面的村民低声说她是最后一位守龙人——一个保护山龙超过一千年的守护者家族。
+
+      在世人的记忆中没有人见过龙，大多数人认为龙不过是传说。但云奶奶知道真相。在
+      一个冰冻瀑布后面的洞穴深处，世界上最后一条龙正在沉睡。它已经睡了两百年，而
+      她的责任就是守护它，直到它醒来的那天。
+
+      每天早上，云奶奶都会爬上通往洞穴的陡峭小路，携带着干燥的草药在洞口燃烧。那
+      芳香的烟雾，她称之为"龙息"，让洞穴保持温暖，保护沉睡的生灵免受刺骨的山间寒
+      冷。她检查龙巨大的鳞片，每一片都有餐盘那么大，闪烁着在翡翠绿和深蓝宝石色之
+      间变幻的色彩。
+
+      一个冬天，一个名叫林的小女孩来到云奶奶的门前，被父母送来学习传统医学。老妇
+      人在林的眼中认出了什么——每一位守龙人都具备的那种安静的坚定。慢慢地，她开始
+      教林古老的知识：要烧什么草药，要在洞口唱什么歌，以及如何读懂龙呼吸中微妙的
+      变化，那些变化预示着它何时可能终于要苏醒。
+
+      "当世界最需要它的时候，龙就会醒来，"云奶奶在一个雪夜告诉林。"当那一天到来时，
+      你必须做好准备。"她将一块玉坠挂在林的脖子上——这是传承了四十代的守龙人的象征。
+      "你不再只是我的学生了，"她低声说。"你是下一位守护者。"
+    vocabHighlights:
+      - word: guardian
+        ref: V0125
+      - word: determination
+        ref: V0138
+      - word: subtle
+        ref: V0146
+    questions:
+      - id: R030-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲了什么？'
+        options:
+          A: 'A scientific study of dragons in Chinese mountains'
+          B: 'An old woman who guards the last sleeping dragon and passes her duty to a young girl'
+          C: 'How to climb the Kunlun Mountains safely'
+          D: 'The history of traditional medicine in China'
+        answer: B
+        explanation: 'The passage tells the story of Grandmother Yun, the last Dragon Keeper, and how she chooses and trains Lin to become the next guardian of the sleeping dragon.'
+        explanationZh: '文章讲述了最后一位守龙人云奶奶的故事，以及她如何选择和培训林成为沉睡之龙的下一位守护者。'
+      - id: R030-Q2
+        type: detail
+        question: 'What did Grandmother Yun do every morning at the cave?'
+        questionZh: '云奶奶每天早上在洞穴里做什么？'
+        options:
+          A: 'She fed the dragon fresh meat and water'
+          B: 'She burned dried herbs to keep the cave warm and protect the dragon'
+          C: 'She read ancient books to the dragon'
+          D: 'She cleaned the dragon''s scales with a special cloth'
+        answer: B
+        explanation: 'The passage states that she "climbed the steep path to the cave, carrying dried herbs that she burned at the entrance" to keep the cave warm and protect the dragon.'
+        explanationZh: '文章指出她"爬上通往洞穴的陡峭小路，携带着干燥的草药在洞口燃烧"以保持洞穴温暖和保护龙。'
+      - id: R030-Q3
+        type: detail
+        question: 'What did the jade pendant represent?'
+        questionZh: '玉坠代表什么？'
+        options:
+          A: 'A gift from the dragon to its first keeper'
+          B: 'The symbol of the Dragon Keepers passed down through forty generations'
+          C: 'A magical object that could wake the dragon'
+          D: 'A traditional medicine charm used in the mountains'
+        answer: B
+        explanation: 'The passage describes the jade pendant as "the symbol of the Dragon Keepers that had been passed down through forty generations."'
+        explanationZh: '文章将玉坠描述为"传承了四十代的守龙人的象征。"'
+      - id: R030-Q4
+        type: inference
+        question: 'Why did Grandmother Yun choose Lin as the next Dragon Keeper?'
+        questionZh: '云奶奶为什么选择林作为下一位守龙人？'
+        options:
+          A: 'Because Lin was the only child in the village'
+          B: 'Because Lin''s parents asked Grandmother Yun to choose her'
+          C: 'Because she saw in Lin the same quiet determination that all Dragon Keepers shared'
+          D: 'Because Lin could already see the dragon in the cave'
+        answer: C
+        explanation: 'The passage says Grandmother Yun "recognised something in Lin''s eyes — the same quiet determination that every Dragon Keeper had possessed," suggesting she saw the right qualities in Lin.'
+        explanationZh: '文章说云奶奶"在林的眼中认出了什么——每一位守龙人都具备的那种安静的坚定"，暗示她在林身上看到了合适的品质。'

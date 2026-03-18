@@ -1,0 +1,1515 @@
+category: 'Word Formation'
+categoryZh: '构词法'
+fcepart: 'Use of English Part 3'
+questions:
+  # ============================================================
+  # U0501-U0525: Noun Formation (difficulty 1-2)
+  # ============================================================
+  - id: U0501
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The _____ of the dragon''s cave was truly breathtaking. (BEAUTIFUL)'
+    sentenceZh: '龙穴的 _____ 真是令人叹为观止。(BEAUTIFUL)'
+    baseWord: 'beautiful'
+    answer: 'beauty'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Remove the -ful suffix to get the noun "beauty".'
+    explanationZh: 'The 后面需要名词。去掉 -ful 后缀得到名词 beauty。'
+    grammarPoint: 'adjective → noun (-ful → base)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0502
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The wizard showed great _____ when he rescued the villagers. (BRAVE)'
+    sentenceZh: '巫师在拯救村民时表现出了极大的 _____。(BRAVE)'
+    baseWord: 'brave'
+    answer: 'bravery'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Add -ry to the adjective "brave" to form "bravery".'
+    explanationZh: 'great 后面需要名词。在形容词 brave 后加 -ry 构成名词 bravery。'
+    grammarPoint: 'adjective → noun (+ry)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0503
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ of the ancient forest amazed every traveller. (DARK)'
+    sentenceZh: '古老森林的 _____ 令每位旅行者惊叹。(DARK)'
+    baseWord: 'dark'
+    answer: 'darkness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ness to the adjective "dark" to form "darkness".'
+    explanationZh: 'The 后面需要名词。在形容词 dark 后加 -ness 构成名词 darkness。'
+    grammarPoint: 'adjective → noun (+ness)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0504
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The explorer made an important _____ in the hidden temple. (DISCOVER)'
+    sentenceZh: '探险家在隐秘的神庙中有了一个重要的 _____。(DISCOVER)'
+    baseWord: 'discover'
+    answer: 'discovery'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "an important". Change the verb "discover" to the noun "discovery" by adding -y.'
+    explanationZh: 'an important 后面需要名词。将动词 discover 变为名词 discovery，加 -y。'
+    grammarPoint: 'verb → noun (+y)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0505
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The _____ of the enchanted sword was beyond imagination. (POWERFUL)'
+    sentenceZh: '这把魔法剑的 _____ 超乎想象。(POWERFUL)'
+    baseWord: 'powerful'
+    answer: 'power'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Remove -ful from "powerful" to get the noun "power".'
+    explanationZh: 'The 后面需要名词。去掉 powerful 的 -ful 后缀得到名词 power。'
+    grammarPoint: 'adjective → noun (remove -ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0506
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ between the two rivers created a beautiful valley. (DIFFER)'
+    sentenceZh: '两条河之间的 _____ 形成了一个美丽的山谷。(DIFFER)'
+    baseWord: 'differ'
+    answer: 'difference'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ence to the verb "differ" to form "difference".'
+    explanationZh: 'The 后面需要名词。在动词 differ 后加 -ence 构成名词 difference。'
+    grammarPoint: 'verb → noun (+ence)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0507
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'With great _____, she climbed the tallest mountain in the kingdom. (DETERMINE)'
+    sentenceZh: '凭借极大的 _____，她攀登了王国中最高的山峰。(DETERMINE)'
+    baseWord: 'determine'
+    answer: 'determination'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Change "determine" to "determination" using the -ation suffix.'
+    explanationZh: 'great 后面需要名词。将 determine 变为 determination，使用 -ation 后缀。'
+    grammarPoint: 'verb → noun (+ation)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0508
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The _____ of the magical creatures filled the children with wonder. (APPEAR)'
+    sentenceZh: '神奇生物的 _____ 让孩子们充满了惊奇。(APPEAR)'
+    baseWord: 'appear'
+    answer: 'appearance'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ance to "appear" to form "appearance".'
+    explanationZh: 'The 后面需要名词。在 appear 后加 -ance 构成名词 appearance。'
+    grammarPoint: 'verb → noun (+ance)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0509
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ of the rainbow after the storm was magical. (ARRIVE)'
+    sentenceZh: '暴风雨后彩虹的 _____ 是如此神奇。(ARRIVE)'
+    baseWord: 'arrive'
+    answer: 'arrival'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "arrive" to "arrival" by replacing -e with -al.'
+    explanationZh: 'The 后面需要名词。将 arrive 去掉 -e 加 -al 变为名词 arrival。'
+    grammarPoint: 'verb → noun (-e → -al)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0510
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'She had a vivid _____ and could create entire worlds in her mind. (IMAGINE)'
+    sentenceZh: '她有着生动的 _____，能在脑海中创造出完整的世界。(IMAGINE)'
+    baseWord: 'imagine'
+    answer: 'imagination'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "a vivid". Change "imagine" to "imagination" using the -ation suffix.'
+    explanationZh: 'a vivid 后面需要名词。将 imagine 变为 imagination，使用 -ation 后缀。'
+    grammarPoint: 'verb → noun (-e → -ation)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0511
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The _____ of the treasure map led them on an incredible journey. (FIND)'
+    sentenceZh: '藏宝图的 _____ 引领他们踏上了一段不可思议的旅程。(FIND)'
+    baseWord: 'find'
+    answer: 'finding'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ing to "find" to form the noun "finding".'
+    explanationZh: 'The 后面需要名词。在 find 后加 -ing 构成名词 finding。'
+    grammarPoint: 'verb → noun (+ing)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0512
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ of the eagle soaring above the mountains was unforgettable. (FREE)'
+    sentenceZh: '老鹰在山峰上空翱翔的 _____ 令人难忘。(FREE)'
+    baseWord: 'free'
+    answer: 'freedom'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -dom to "free" to form "freedom".'
+    explanationZh: 'The 后面需要名词。在 free 后加 -dom 构成名词 freedom。'
+    grammarPoint: 'adjective → noun (+dom)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0513
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The young knight''s _____ impressed the entire kingdom. (ACHIEVE)'
+    sentenceZh: '年轻骑士的 _____ 令整个王国印象深刻。(ACHIEVE)'
+    baseWord: 'achieve'
+    answer: 'achievement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after the possessive. Add -ment to "achieve" to form "achievement".'
+    explanationZh: '所有格后面需要名词。在 achieve 后加 -ment 构成名词 achievement。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0514
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'Her _____ to complete the quest never wavered. (COMMIT)'
+    sentenceZh: '她完成任务的 _____ 从未动摇。(COMMIT)'
+    baseWord: 'commit'
+    answer: 'commitment'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "Her". Add -ment to "commit" to form "commitment".'
+    explanationZh: 'Her 后面需要名词。在 commit 后加 -ment 构成名词 commitment。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0515
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ of the sunset over the ocean took her breath away. (HAPPY)'
+    sentenceZh: '海上日落的 _____ 令她叹为观止。(HAPPY)'
+    baseWord: 'happy'
+    answer: 'happiness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "happy" to "happiness" by replacing -y with -iness.'
+    explanationZh: 'The 后面需要名词。将 happy 的 -y 变为 -iness 构成名词 happiness。'
+    grammarPoint: 'adjective → noun (-y → -iness)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0516
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The _____ of the potion required rare herbs from the enchanted forest. (PREPARE)'
+    sentenceZh: '药水的 _____ 需要来自魔法森林的稀有草药。(PREPARE)'
+    baseWord: 'prepare'
+    answer: 'preparation'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "prepare" to "preparation" using the -ation suffix.'
+    explanationZh: 'The 后面需要名词。将 prepare 变为 preparation，使用 -ation 后缀。'
+    grammarPoint: 'verb → noun (-e → -ation)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0517
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The pirate''s _____ of gold coins was hidden on a desert island. (COLLECT)'
+    sentenceZh: '海盗的金币 _____ 被藏在一座荒岛上。(COLLECT)'
+    baseWord: 'collect'
+    answer: 'collection'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after the possessive. Add -ion to "collect" to form "collection".'
+    explanationZh: '所有格后面需要名词。在 collect 后加 -ion 构成名词 collection。'
+    grammarPoint: 'verb → noun (+ion)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0518
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ of endangered animals is very important. (PROTECT)'
+    sentenceZh: '濒危动物的 _____ 非常重要。(PROTECT)'
+    baseWord: 'protect'
+    answer: 'protection'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ion to "protect" to form "protection".'
+    explanationZh: 'The 后面需要名词。在 protect 后加 -ion 构成名词 protection。'
+    grammarPoint: 'verb → noun (+ion)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0519
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The old map was of great _____ to the treasure hunters. (IMPORTANT)'
+    sentenceZh: '这张旧地图对寻宝者来说具有重大的 _____。(IMPORTANT)'
+    baseWord: 'important'
+    answer: 'importance'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Replace -ant with -ance to form "importance".'
+    explanationZh: 'great 后面需要名词。将 -ant 替换为 -ance 构成名词 importance。'
+    grammarPoint: 'adjective → noun (-ant → -ance)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0520
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The _____ of the mystery kept everyone guessing. (EXCITE)'
+    sentenceZh: '谜团的 _____ 让每个人都在猜测。(EXCITE)'
+    baseWord: 'excite'
+    answer: 'excitement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ment to "excite" to form "excitement".'
+    explanationZh: 'The 后面需要名词。在 excite 后加 -ment 构成名词 excitement。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0521
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ between the wolf and the deer was part of the natural cycle. (COMPETE)'
+    sentenceZh: '狼和鹿之间的 _____ 是自然循环的一部分。(COMPETE)'
+    baseWord: 'compete'
+    answer: 'competition'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "compete" to "competition" using the -ition suffix.'
+    explanationZh: 'The 后面需要名词。将 compete 变为 competition，使用 -ition 后缀。'
+    grammarPoint: 'verb → noun (-e → -ition)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0522
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The elf was famous for her _____ and could solve any puzzle. (INTELLIGENT)'
+    sentenceZh: '这个精灵以她的 _____ 闻名，能解开任何谜题。(INTELLIGENT)'
+    baseWord: 'intelligent'
+    answer: 'intelligence'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "her". Replace -ent with -ence to form "intelligence".'
+    explanationZh: 'her 后面需要名词。将 -ent 替换为 -ence 构成名词 intelligence。'
+    grammarPoint: 'adjective → noun (-ent → -ence)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0523
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The _____ of the old castle told stories of brave knights. (SILENT)'
+    sentenceZh: '古堡的 _____ 讲述着勇敢骑士的故事。(SILENT)'
+    baseWord: 'silent'
+    answer: 'silence'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Replace -ent with -ence to form "silence".'
+    explanationZh: 'The 后面需要名词。将 -ent 替换为 -ence 构成名词 silence。'
+    grammarPoint: 'adjective → noun (-ent → -ence)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0524
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ of the waterfall could be heard from miles away. (MOVE)'
+    sentenceZh: '瀑布的 _____ 在几英里之外就能听到。(MOVE)'
+    baseWord: 'move'
+    answer: 'movement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ment to "move" to form "movement".'
+    explanationZh: 'The 后面需要名词。在 move 后加 -ment 构成名词 movement。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0525
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The fairy queen ruled with great _____ and kindness. (WISE)'
+    sentenceZh: '仙女女王以极大的 _____ 和善良来统治。(WISE)'
+    baseWord: 'wise'
+    answer: 'wisdom'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Change "wise" to "wisdom" using the -dom suffix.'
+    explanationZh: 'great 后面需要名词。将 wise 变为 wisdom，使用 -dom 后缀。'
+    grammarPoint: 'adjective → noun (-e → -dom)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  # ============================================================
+  # U0526-U0550: Adjective Formation (difficulty 1-2)
+  # ============================================================
+  - id: U0526
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The enchanted garden was absolutely _____. (WONDER)'
+    sentenceZh: '这座魔法花园绝对是 _____ 的。(WONDER)'
+    baseWord: 'wonder'
+    answer: 'wonderful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "absolutely". Add -ful to "wonder" to form "wonderful".'
+    explanationZh: 'absolutely 后面需要形容词。在 wonder 后加 -ful 构成形容词 wonderful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0527
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The journey through the mountains was very _____. (DANGER)'
+    sentenceZh: '穿越山脉的旅程非常 _____。(DANGER)'
+    baseWord: 'danger'
+    answer: 'dangerous'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "very". Add -ous to "danger" to form "dangerous".'
+    explanationZh: 'very 后面需要形容词。在 danger 后加 -ous 构成形容词 dangerous。'
+    grammarPoint: 'noun → adjective (+ous)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0528
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The view from the cliff was truly _____. (AMAZE)'
+    sentenceZh: '悬崖上的景色真的很 _____。(AMAZE)'
+    baseWord: 'amaze'
+    answer: 'amazing'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "truly". Add -ing to "amaze" to form "amazing".'
+    explanationZh: 'truly 后面需要形容词。在 amaze 后加 -ing 构成形容词 amazing。'
+    grammarPoint: 'verb → adjective (+ing)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0529
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The witch''s spell was extremely _____. (POWER)'
+    sentenceZh: '女巫的咒语极其 _____。(POWER)'
+    baseWord: 'power'
+    answer: 'powerful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "extremely". Add -ful to "power" to form "powerful".'
+    explanationZh: 'extremely 后面需要形容词。在 power 后加 -ful 构成形容词 powerful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0530
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'It was a _____ day for sailing across the crystal lake. (CLOUD)'
+    sentenceZh: '这是一个 _____ 的日子，适合在水晶湖上航行。(CLOUD)'
+    baseWord: 'cloud'
+    answer: 'cloudless'
+    targetPartOfSpeech: adjective
+    explanation: 'The context says it was good for sailing, so we need "cloudless". Add -less to "cloud".'
+    explanationZh: '语境说适合航行，所以需要"无云的"。在 cloud 后加 -less 构成 cloudless。'
+    grammarPoint: 'noun → adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0531
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The forest was dark and _____. (MYSTERY)'
+    sentenceZh: '森林又黑又 _____。(MYSTERY)'
+    baseWord: 'mystery'
+    answer: 'mysterious'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "and" to match "dark". Change "mystery" to "mysterious" using -ious.'
+    explanationZh: '和 dark 并列，需要形容词。将 mystery 变为 mysterious，使用 -ious 后缀。'
+    grammarPoint: 'noun → adjective (-y → -ious)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0532
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The dragon''s fiery breath was incredibly _____. (DESTROY)'
+    sentenceZh: '龙的火焰气息极具 _____。(DESTROY)'
+    baseWord: 'destroy'
+    answer: 'destructive'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "incredibly". Change "destroy" to "destructive" using the -ive suffix.'
+    explanationZh: 'incredibly 后面需要形容词。将 destroy 变为 destructive，使用 -ive 后缀。'
+    grammarPoint: 'verb → adjective (+ive with spelling change)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0533
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The explorers were _____ about what lay ahead. (CURIOSITY)'
+    sentenceZh: '探险者们对前方的一切充满了 _____。(CURIOSITY)'
+    baseWord: 'curiosity'
+    answer: 'curious'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "were". Change the noun "curiosity" to the adjective "curious".'
+    explanationZh: 'were 后面需要形容词。将名词 curiosity 变为形容词 curious。'
+    grammarPoint: 'noun → adjective (-osity → -ous)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0534
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The underwater coral reef was a _____ sight. (SPECTACLE)'
+    sentenceZh: '水下珊瑚礁是一道 _____ 的景观。(SPECTACLE)'
+    baseWord: 'spectacle'
+    answer: 'spectacular'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before the noun "sight". Change "spectacle" to "spectacular" using -ular.'
+    explanationZh: '名词 sight 前需要形容词。将 spectacle 变为 spectacular，使用 -ular 后缀。'
+    grammarPoint: 'noun → adjective (-le → -ular)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0535
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The magical potion had a very _____ effect. (HARM)'
+    sentenceZh: '这种魔法药水有非常 _____ 的效果。(HARM)'
+    baseWord: 'harm'
+    answer: 'harmful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "effect". Add -ful to "harm" to form "harmful".'
+    explanationZh: '名词 effect 前需要形容词。在 harm 后加 -ful 构成形容词 harmful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0536
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The abandoned castle looked quite _____. (FRIGHT)'
+    sentenceZh: '废弃的城堡看起来相当 _____。(FRIGHT)'
+    baseWord: 'fright'
+    answer: 'frightening'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "quite". Add -ening to "fright" to form "frightening".'
+    explanationZh: 'quite 后面需要形容词。在 fright 后加 -ening 构成形容词 frightening。'
+    grammarPoint: 'noun → adjective (+ening)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0537
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ sky at dawn was painted in shades of pink and gold. (CLOUD)'
+    sentenceZh: '黎明时分 _____ 的天空被染上了粉色和金色。(CLOUD)'
+    baseWord: 'cloud'
+    answer: 'cloudy'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "sky". Add -y to "cloud" to form "cloudy".'
+    explanationZh: '名词 sky 前需要形容词。在 cloud 后加 -y 构成形容词 cloudy。'
+    grammarPoint: 'noun → adjective (+y)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0538
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The gnome was a very _____ creature and always told the truth. (RELY)'
+    sentenceZh: '这个地精是一种非常 _____ 的生物，总是说真话。(RELY)'
+    baseWord: 'rely'
+    answer: 'reliable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "very". Change "rely" to "reliable" by adding -able and changing y to i.'
+    explanationZh: 'very 后面需要形容词。将 rely 变为 reliable，-y 变 -i 加 -able。'
+    grammarPoint: 'verb → adjective (-y → -iable)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0539
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'Finding the lost city felt like an _____ dream. (END)'
+    sentenceZh: '发现失落之城感觉像一个 _____ 的梦。(END)'
+    baseWord: 'end'
+    answer: 'endless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "dream". Add -less to "end" to form "endless".'
+    explanationZh: '名词 dream 前需要形容词。在 end 后加 -less 构成形容词 endless。'
+    grammarPoint: 'noun → adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0540
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ landscape stretched as far as the eye could see. (MOUNTAIN)'
+    sentenceZh: '_____ 的地貌一直延伸到目力所及之处。(MOUNTAIN)'
+    baseWord: 'mountain'
+    answer: 'mountainous'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "landscape". Add -ous to "mountain" to form "mountainous".'
+    explanationZh: '名词 landscape 前需要形容词。在 mountain 后加 -ous 构成形容词 mountainous。'
+    grammarPoint: 'noun → adjective (+ous)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0541
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The unicorn''s horn was _____ and sparkled in the moonlight. (GOLD)'
+    sentenceZh: '独角兽的角是 _____ 的，在月光下闪闪发光。(GOLD)'
+    baseWord: 'gold'
+    answer: 'golden'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "was". Add -en to "gold" to form "golden".'
+    explanationZh: 'was 后面需要形容词。在 gold 后加 -en 构成形容词 golden。'
+    grammarPoint: 'noun → adjective (+en)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0542
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The _____ path through the jungle was full of surprises. (ADVENTURE)'
+    sentenceZh: '穿越丛林的 _____ 小路充满了惊喜。(ADVENTURE)'
+    baseWord: 'adventure'
+    answer: 'adventurous'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "path". Add -ous to "adventure" to form "adventurous".'
+    explanationZh: '名词 path 前需要形容词。在 adventure 后加 -ous 构成形容词 adventurous。'
+    grammarPoint: 'noun → adjective (+ous)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0543
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The baby deer was completely _____ and trusted everyone. (HELP)'
+    sentenceZh: '小鹿完全是 _____ 的，信任每一个人。(HELP)'
+    baseWord: 'help'
+    answer: 'helpless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "completely". Add -less to "help" to form "helpless" (without help).'
+    explanationZh: 'completely 后面需要形容词。在 help 后加 -less 构成形容词 helpless（无助的）。'
+    grammarPoint: 'noun → adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0544
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The wizard had an _____ amount of magical energy. (BELIEVE)'
+    sentenceZh: '巫师拥有 _____ 数量的魔法能量。(BELIEVE)'
+    baseWord: 'believe'
+    answer: 'unbelievable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "amount". Add un- prefix and -able suffix to form "unbelievable".'
+    explanationZh: '名词 amount 前需要形容词。加 un- 前缀和 -able 后缀构成 unbelievable。'
+    grammarPoint: 'verb → adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0545
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: adventure
+    sentence: 'The _____ bridge over the river looked ready to collapse. (WOOD)'
+    sentenceZh: '河上 _____ 的桥看起来随时要塌。(WOOD)'
+    baseWord: 'wood'
+    answer: 'wooden'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "bridge". Add -en to "wood" to form "wooden".'
+    explanationZh: '名词 bridge 前需要形容词。在 wood 后加 -en 构成形容词 wooden。'
+    grammarPoint: 'noun → adjective (+en)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0546
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ colours of the coral reef attracted many divers. (ATTRACT)'
+    sentenceZh: '珊瑚礁 _____ 的色彩吸引了许多潜水者。(ATTRACT)'
+    baseWord: 'attract'
+    answer: 'attractive'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "colours". Add -ive to "attract" to form "attractive".'
+    explanationZh: '名词 colours 前需要形容词。在 attract 后加 -ive 构成形容词 attractive。'
+    grammarPoint: 'verb → adjective (+ive)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0547
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: fantasy
+    sentence: 'The elf felt _____ when she saw the giant spider. (FEAR)'
+    sentenceZh: '精灵看到巨型蜘蛛时感到 _____。(FEAR)'
+    baseWord: 'fear'
+    answer: 'fearful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "felt". Add -ful to "fear" to form "fearful".'
+    explanationZh: 'felt 后面需要形容词。在 fear 后加 -ful 构成形容词 fearful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0548
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The _____ explorer had visited every continent. (EXPERIENCE)'
+    sentenceZh: '这位 _____ 的探险家曾游历过每个大洲。(EXPERIENCE)'
+    baseWord: 'experience'
+    answer: 'experienced'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "explorer". Add -d to "experience" to form "experienced".'
+    explanationZh: '名词 explorer 前需要形容词。在 experience 后加 -d 构成形容词 experienced。'
+    grammarPoint: 'noun → adjective (+d)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0549
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-1]
+    context: nature
+    sentence: 'The _____ river flowed gently through the green valley. (PEACE)'
+    sentenceZh: '_____ 的河流缓缓流过绿色山谷。(PEACE)'
+    baseWord: 'peace'
+    answer: 'peaceful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "river". Add -ful to "peace" to form "peaceful".'
+    explanationZh: '名词 river 前需要形容词。在 peace 后加 -ful 构成形容词 peaceful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 1
+
+  - id: U0550
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The princess was _____ for the dragon''s help. (THANK)'
+    sentenceZh: '公主对龙的帮助很 _____。(THANK)'
+    baseWord: 'thank'
+    answer: 'thankful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "was". Add -ful to "thank" to form "thankful".'
+    explanationZh: 'was 后面需要形容词。在 thank 后加 -ful 构成形容词 thankful。'
+    grammarPoint: 'noun/verb → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  # ============================================================
+  # U0551-U0575: Verb/Adverb Formation (difficulty 2)
+  # ============================================================
+  - id: U0551
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The wizard decided to _____ the old castle with new magic. (MODERN)'
+    sentenceZh: '巫师决定用新魔法 _____ 这座古堡。(MODERN)'
+    baseWord: 'modern'
+    answer: 'modernise'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -ise to "modern" to form "modernise" (make modern).'
+    explanationZh: 'to 后面需要动词原形。在 modern 后加 -ise 构成动词 modernise（使现代化）。'
+    grammarPoint: 'adjective → verb (+ise)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0552
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The knight needed to _____ his sword before the battle. (SHARP)'
+    sentenceZh: '骑士需要在战斗前 _____ 他的剑。(SHARP)'
+    baseWord: 'sharp'
+    answer: 'sharpen'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -en to "sharp" to form "sharpen" (make sharp).'
+    explanationZh: 'to 后面需要动词原形。在 sharp 后加 -en 构成动词 sharpen（使锋利）。'
+    grammarPoint: 'adjective → verb (+en)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0553
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The warm spring sun helped _____ the frozen river. (SOFT)'
+    sentenceZh: '温暖的春日阳光帮助 _____ 了冰冻的河流。(SOFT)'
+    baseWord: 'soft'
+    answer: 'soften'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "helped". Add -en to "soft" to form "soften" (make soft).'
+    explanationZh: 'helped 后面需要动词原形。在 soft 后加 -en 构成动词 soften（使软化）。'
+    grammarPoint: 'adjective → verb (+en)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0554
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The spell could _____ even the bravest warrior. (TERROR)'
+    sentenceZh: '这个咒语能 _____ 即使是最勇敢的战士。(TERROR)'
+    baseWord: 'terror'
+    answer: 'terrorise'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "could". Add -ise to "terror" to form "terrorise".'
+    explanationZh: 'could 后面需要动词原形。在 terror 后加 -ise 构成动词 terrorise。'
+    grammarPoint: 'noun → verb (+ise)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0555
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'They wanted to _____ the old map so everyone could read it. (SIMPLE)'
+    sentenceZh: '他们想 _____ 这张旧地图，让每个人都能看懂。(SIMPLE)'
+    baseWord: 'simple'
+    answer: 'simplify'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Change "simple" to "simplify" using the -ify suffix.'
+    explanationZh: 'to 后面需要动词原形。将 simple 变为 simplify，使用 -ify 后缀。'
+    grammarPoint: 'adjective → verb (-e → -ify)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0556
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The rain will _____ the dry earth in the enchanted meadow. (MOIST)'
+    sentenceZh: '雨水将 _____ 魔法草地上干燥的土壤。(MOIST)'
+    baseWord: 'moist'
+    answer: 'moisten'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "will". Add -en to "moist" to form "moisten".'
+    explanationZh: 'will 后面需要动词原形。在 moist 后加 -en 构成动词 moisten。'
+    grammarPoint: 'adjective → verb (+en)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0557
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The dark wizard tried to _____ the kingdom with fear. (WEAK)'
+    sentenceZh: '黑暗巫师试图用恐惧 _____ 这个王国。(WEAK)'
+    baseWord: 'weak'
+    answer: 'weaken'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -en to "weak" to form "weaken" (make weak).'
+    explanationZh: 'to 后面需要动词原形。在 weak 后加 -en 构成动词 weaken（使变弱）。'
+    grammarPoint: 'adjective → verb (+en)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0558
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The explorer wanted to _____ the old ruins before entering. (IDENTITY)'
+    sentenceZh: '探险家想在进入之前 _____ 这些古老的遗迹。(IDENTITY)'
+    baseWord: 'identity'
+    answer: 'identify'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Change "identity" to "identify" using the -ify suffix.'
+    explanationZh: 'to 后面需要动词原形。将 identity 变为 identify，使用 -ify 后缀。'
+    grammarPoint: 'noun → verb (-ity → -ify)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0559
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The deer moved _____ through the silent forest. (GRACE)'
+    sentenceZh: '鹿 _____ 地穿过寂静的森林。(GRACE)'
+    baseWord: 'grace'
+    answer: 'gracefully'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the deer moved. Add -fully to "grace" to form "gracefully".'
+    explanationZh: '需要副词来描述鹿如何移动。在 grace 后加 -fully 构成副词 gracefully。'
+    grammarPoint: 'noun → adverb (+fully)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0560
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The fairy _____ waved her wand and flowers appeared. (GENTLE)'
+    sentenceZh: '仙女 _____ 地挥动魔杖，花朵就出现了。(GENTLE)'
+    baseWord: 'gentle'
+    answer: 'gently'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how she waved. Change "gentle" to "gently" by replacing -e with -y.'
+    explanationZh: '需要副词来描述她如何挥动。将 gentle 的 -le 变为 -ly 构成副词 gently。'
+    grammarPoint: 'adjective → adverb (-le → -ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0561
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The captain steered the ship _____ through the stormy sea. (SKILL)'
+    sentenceZh: '船长 _____ 地驾驶船穿过暴风雨中的大海。(SKILL)'
+    baseWord: 'skill'
+    answer: 'skilfully'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the captain steered. Form "skilfully" from "skill" (+fully).'
+    explanationZh: '需要副词来描述船长如何驾驶。从 skill 构成副词 skilfully（+fully）。'
+    grammarPoint: 'noun → adverb (+fully)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0562
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The eagle flew _____ above the snow-capped mountains. (MAJESTY)'
+    sentenceZh: '老鹰 _____ 地飞翔在白雪皑皑的山峰上空。(MAJESTY)'
+    baseWord: 'majesty'
+    answer: 'majestically'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the eagle flew. Change "majesty" to "majestically" (-y → -ically).'
+    explanationZh: '需要副词来描述老鹰如何飞翔。将 majesty 变为 majestically（-y → -ically）。'
+    grammarPoint: 'noun → adverb (-y → -ically)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0563
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The potion worked _____ and the prince woke up at once. (IMMEDIATE)'
+    sentenceZh: '药水 _____ 起效，王子立刻醒了过来。(IMMEDIATE)'
+    baseWord: 'immediate'
+    answer: 'immediately'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the potion worked. Add -ly to "immediate" to form "immediately".'
+    explanationZh: '需要副词来描述药水如何起效。在 immediate 后加 -ly 构成副词 immediately。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0564
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The king wanted to _____ the trading routes between kingdoms. (STANDARD)'
+    sentenceZh: '国王想 _____ 各王国之间的贸易路线。(STANDARD)'
+    baseWord: 'standard'
+    answer: 'standardise'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -ise to "standard" to form "standardise".'
+    explanationZh: 'to 后面需要动词原形。在 standard 后加 -ise 构成动词 standardise。'
+    grammarPoint: 'noun → verb (+ise)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0565
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The butterfly landed _____ on the flower petal. (QUIET)'
+    sentenceZh: '蝴蝶 _____ 地落在花瓣上。(QUIET)'
+    baseWord: 'quiet'
+    answer: 'quietly'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the butterfly landed. Add -ly to "quiet" to form "quietly".'
+    explanationZh: '需要副词来描述蝴蝶如何降落。在 quiet 后加 -ly 构成副词 quietly。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0566
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The alchemist hoped to _____ lead into gold. (TRANSFORM)'
+    sentenceZh: '炼金术士希望把铅 _____ 成金子。(TRANSFORM)'
+    baseWord: 'transform'
+    answer: 'transform'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". "Transform" is already a verb, so no change is needed.'
+    explanationZh: 'to 后面需要动词原形。transform 本身就是动词，无需变化。'
+    grammarPoint: 'verb stays as verb (no change)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0567
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'She _____ accepted the quest to find the lost treasure. (EAGER)'
+    sentenceZh: '她 _____ 地接受了寻找失落宝藏的任务。(EAGER)'
+    baseWord: 'eager'
+    answer: 'eagerly'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how she accepted. Add -ly to "eager" to form "eagerly".'
+    explanationZh: '需要副词来描述她如何接受。在 eager 后加 -ly 构成副词 eagerly。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0568
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'Scientists work hard to _____ the habits of wild animals. (CLASS)'
+    sentenceZh: '科学家们努力 _____ 野生动物的习性。(CLASS)'
+    baseWord: 'class'
+    answer: 'classify'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -ify to "class" to form "classify".'
+    explanationZh: 'to 后面需要动词原形。在 class 后加 -ify 构成动词 classify。'
+    grammarPoint: 'noun → verb (+ify)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0569
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The dragon breathed fire _____ at the approaching army. (FIERCE)'
+    sentenceZh: '巨龙 _____ 地向逼近的军队喷火。(FIERCE)'
+    baseWord: 'fierce'
+    answer: 'fiercely'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the dragon breathed fire. Add -ly to "fierce" to form "fiercely".'
+    explanationZh: '需要副词来描述龙如何喷火。在 fierce 后加 -ly 构成副词 fiercely。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0570
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'They needed to _____ their camp before the storm arrived. (STRONG)'
+    sentenceZh: '他们需要在暴风雨来之前 _____ 他们的营地。(STRONG)'
+    baseWord: 'strong'
+    answer: 'strengthen'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -en to "strong" to form "strengthen" (make strong).'
+    explanationZh: 'to 后面需要动词原形。在 strong 后加 -en 构成动词 strengthen（使加强）。'
+    grammarPoint: 'adjective → verb (+en with th)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0571
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The fox _____ crept through the bushes to catch its prey. (SILENT)'
+    sentenceZh: '狐狸 _____ 地穿过灌木丛去捕捉猎物。(SILENT)'
+    baseWord: 'silent'
+    answer: 'silently'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the fox crept. Add -ly to "silent" to form "silently".'
+    explanationZh: '需要副词来描述狐狸如何爬行。在 silent 后加 -ly 构成副词 silently。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0572
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The potion was able to _____ the sick dragon back to health. (VITAL)'
+    sentenceZh: '药水能够使生病的龙 _____ 恢复健康。(VITAL)'
+    baseWord: 'vital'
+    answer: 'vitalise'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Add -ise to "vital" to form "vitalise" (give vitality to).'
+    explanationZh: 'to 后面需要动词原形。在 vital 后加 -ise 构成动词 vitalise（使充满活力）。'
+    grammarPoint: 'adjective → verb (+ise)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0573
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The pirate _____ guarded his treasure chest day and night. (CAREFUL)'
+    sentenceZh: '海盗日夜 _____ 地守护着他的宝箱。(CAREFUL)'
+    baseWord: 'careful'
+    answer: 'carefully'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the pirate guarded. Add -ly to "careful" to form "carefully".'
+    explanationZh: '需要副词来描述海盗如何守护。在 careful 后加 -ly 构成副词 carefully。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0574
+    type: word-formation
+    tags: [verb-suffix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The gardener used special water to _____ the magical plants. (FERTILE)'
+    sentenceZh: '园丁使用特殊的水来 _____ 这些魔法植物。(FERTILE)'
+    baseWord: 'fertile'
+    answer: 'fertilise'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb after "to". Change "fertile" to "fertilise" using the -ise suffix.'
+    explanationZh: 'to 后面需要动词原形。将 fertile 变为 fertilise，使用 -ise 后缀。'
+    grammarPoint: 'adjective → verb (-e → -ise)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0575
+    type: word-formation
+    tags: [adverb-suffix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The enchanted horse galloped _____ across the moonlit fields. (WILD)'
+    sentenceZh: '魔法马 _____ 地驰骋在月光下的田野上。(WILD)'
+    baseWord: 'wild'
+    answer: 'wildly'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to describe how the horse galloped. Add -ly to "wild" to form "wildly".'
+    explanationZh: '需要副词来描述马如何奔跑。在 wild 后加 -ly 构成副词 wildly。'
+    grammarPoint: 'adjective → adverb (+ly)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  # ============================================================
+  # U0576-U0600: Mixed/Negative Prefixes (difficulty 2-3)
+  # ============================================================
+  - id: U0576
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'It is _____ to swim in that enchanted river. (POSSIBLE)'
+    sentenceZh: '在那条魔法河里游泳是 _____ 的。(POSSIBLE)'
+    baseWord: 'possible'
+    answer: 'impossible'
+    targetPartOfSpeech: adjective
+    explanation: 'The context tells us swimming is not possible. Add the prefix im- to form "impossible".'
+    explanationZh: '语境告诉我们游泳是不可能的。加前缀 im- 构成 impossible。'
+    grammarPoint: 'negative prefix (im- before p)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0577
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The goblin''s behaviour was completely _____. (ACCEPT)'
+    sentenceZh: '地精的行为完全是 _____ 的。(ACCEPT)'
+    baseWord: 'accept'
+    answer: 'unacceptable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "not acceptable". Add un- and -able to form "unacceptable".'
+    explanationZh: '需要表示"不可接受的"的形容词。加 un- 前缀和 -able 后缀构成 unacceptable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0578
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The old bridge over the ravine was quite _____. (SAFE)'
+    sentenceZh: '峡谷上的旧桥相当 _____。(SAFE)'
+    baseWord: 'safe'
+    answer: 'unsafe'
+    targetPartOfSpeech: adjective
+    explanation: 'The context suggests danger. Add the prefix un- to "safe" to form "unsafe".'
+    explanationZh: '语境暗示危险。在 safe 前加前缀 un- 构成 unsafe。'
+    grammarPoint: 'negative prefix (un-)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0579
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The wizard cast an _____ spell that would last forever. (REVERSE)'
+    sentenceZh: '巫师施了一个将永远持续的 _____ 咒语。(REVERSE)'
+    baseWord: 'reverse'
+    answer: 'irreversible'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be reversed". Add ir- prefix and -ible suffix to form "irreversible".'
+    explanationZh: '需要表示"不可逆转的"的形容词。加 ir- 前缀和 -ible 后缀构成 irreversible。'
+    grammarPoint: 'verb → negative adjective (ir- + -ible)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0580
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'It would be _____ not to take a map on the expedition. (RESPONSIBLE)'
+    sentenceZh: '在探险中不带地图是 _____ 的。(RESPONSIBLE)'
+    baseWord: 'responsible'
+    answer: 'irresponsible'
+    targetPartOfSpeech: adjective
+    explanation: 'We need the negative form. Add ir- to "responsible" to form "irresponsible".'
+    explanationZh: '需要否定形式。在 responsible 前加 ir- 构成 irresponsible。'
+    grammarPoint: 'negative prefix (ir- before r)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0581
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: nature
+    sentence: 'It is _____ to count every star in the night sky. (COUNT)'
+    sentenceZh: '数清夜空中的每一颗星星是 _____ 的。(COUNT)'
+    baseWord: 'count'
+    answer: 'uncountable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be counted". Add un- and -able to form "uncountable".'
+    explanationZh: '需要表示"数不清的"的形容词。加 un- 前缀和 -able 后缀构成 uncountable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0582
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The invisible cloak made the thief completely _____. (DETECT)'
+    sentenceZh: '隐身斗篷使小偷完全 _____。(DETECT)'
+    baseWord: 'detect'
+    answer: 'undetectable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be detected". Add un- and -able to form "undetectable".'
+    explanationZh: '需要表示"无法被发现的"的形容词。加 un- 前缀和 -able 后缀构成 undetectable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0583
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: adventure
+    sentence: 'The code on the ancient scroll was _____. (READ)'
+    sentenceZh: '古代卷轴上的密码是 _____ 的。(READ)'
+    baseWord: 'read'
+    answer: 'unreadable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be read". Add un- and -able to form "unreadable".'
+    explanationZh: '需要表示"无法阅读的"的形容词。加 un- 前缀和 -able 后缀构成 unreadable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0584
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: nature
+    sentence: 'The _____ weather forced the climbers to turn back. (FAVOUR)'
+    sentenceZh: '_____ 的天气迫使登山者折返。(FAVOUR)'
+    baseWord: 'favour'
+    answer: 'unfavourable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Add un- and -able to "favour" to form "unfavourable".'
+    explanationZh: '需要否定形容词。在 favour 上加 un- 前缀和 -able 后缀构成 unfavourable。'
+    grammarPoint: 'noun → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0585
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: fantasy
+    sentence: 'The enchantment on the door was _____. (BREAK)'
+    sentenceZh: '门上的结界是 _____ 的。(BREAK)'
+    baseWord: 'break'
+    answer: 'unbreakable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be broken". Add un- and -able to form "unbreakable".'
+    explanationZh: '需要表示"无法打破的"的形容词。加 un- 前缀和 -able 后缀构成 unbreakable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0586
+    type: word-formation
+    tags: [mixed, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The _____ of the old captain inspired the whole crew. (LEAD)'
+    sentenceZh: '老船长的 _____ 激励了全体船员。(LEAD)'
+    baseWord: 'lead'
+    answer: 'leadership'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ership to "lead" to form "leadership".'
+    explanationZh: 'The 后面需要名词。在 lead 后加 -ership 构成名词 leadership。'
+    grammarPoint: 'verb → noun (+ership)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0587
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: nature
+    sentence: 'Cutting down the rainforest is an _____ act. (NATURE)'
+    sentenceZh: '砍伐雨林是一种 _____ 的行为。(NATURE)'
+    baseWord: 'nature'
+    answer: 'unnatural'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Change "nature" to "natural" then add un- to form "unnatural".'
+    explanationZh: '需要否定形容词。将 nature 变为 natural 再加 un- 构成 unnatural。'
+    grammarPoint: 'noun → negative adjective (un- + -al)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0588
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: fantasy
+    sentence: 'The witch lived in complete _____. She never saw anyone. (ISOLATE)'
+    sentenceZh: '女巫生活在完全的 _____ 中。她从不见任何人。(ISOLATE)'
+    baseWord: 'isolate'
+    answer: 'isolation'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "complete". Change "isolate" to "isolation" using the -ion suffix.'
+    explanationZh: 'complete 后面需要名词。将 isolate 变为 isolation，使用 -ion 后缀。'
+    grammarPoint: 'verb → noun (-e → -ion)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0589
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The _____ warrior never gave up, no matter how tired he was. (DEFEAT)'
+    sentenceZh: '这位 _____ 的战士从不放弃，无论多疲惫。(DEFEAT)'
+    baseWord: 'defeat'
+    answer: 'undefeated'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "never defeated". Add un- and -ed to form "undefeated".'
+    explanationZh: '需要表示"不败的"的形容词。加 un- 前缀和 -ed 后缀构成 undefeated。'
+    grammarPoint: 'verb → negative adjective (un- + -ed)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0590
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: nature
+    sentence: 'The pollution of the lake was _____. Nothing could fix it. (REPAIR)'
+    sentenceZh: '湖泊的污染是 _____ 的。什么都无法修复。(REPAIR)'
+    baseWord: 'repair'
+    answer: 'irreparable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "cannot be repaired". Add ir- and -able to form "irreparable".'
+    explanationZh: '需要表示"无法修复的"的形容词。加 ir- 前缀和 -able 后缀构成 irreparable。'
+    grammarPoint: 'verb → negative adjective (ir- + -able)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0591
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: fantasy
+    sentence: 'The elf''s ability to talk to animals was _____. (ORDINARY)'
+    sentenceZh: '精灵与动物交谈的能力是 _____ 的。(ORDINARY)'
+    baseWord: 'ordinary'
+    answer: 'extraordinary'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "beyond ordinary". Add the prefix extra- to form "extraordinary".'
+    explanationZh: '需要表示"非凡的"的形容词。加前缀 extra- 构成 extraordinary。'
+    grammarPoint: 'adjective → enhanced adjective (extra-)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0592
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: adventure
+    sentence: 'The explorer felt _____ when he lost his compass. (HOPE)'
+    sentenceZh: '探险家丢了指南针后感到 _____。(HOPE)'
+    baseWord: 'hope'
+    answer: 'hopeless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "without hope". Add -less to "hope" to form "hopeless".'
+    explanationZh: '需要表示"绝望的"的形容词。在 hope 后加 -less 构成 hopeless。'
+    grammarPoint: 'noun → negative adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0593
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: nature
+    sentence: 'The _____ of the rare bird made scientists very excited. (APPEAR)'
+    sentenceZh: '稀有鸟类的 _____ 让科学家们非常兴奋。(APPEAR)'
+    baseWord: 'appear'
+    answer: 'reappearance'
+    targetPartOfSpeech: noun
+    explanation: 'Context implies the bird appeared again. Add re- (again) and -ance to form "reappearance".'
+    explanationZh: '语境暗示鸟再次出现。加 re-（再次）前缀和 -ance 后缀构成 reappearance。'
+    grammarPoint: 'verb → noun (re- + -ance)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0594
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The message from the oracle was unclear and _____. (LOGIC)'
+    sentenceZh: '神谕传来的信息模糊且 _____。(LOGIC)'
+    baseWord: 'logic'
+    answer: 'illogical'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "not logical". Add il- prefix and -al suffix to form "illogical".'
+    explanationZh: '需要表示"不合逻辑的"的形容词。加 il- 前缀和 -al 后缀构成 illogical。'
+    grammarPoint: 'noun → negative adjective (il- + -al)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0595
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: adventure
+    sentence: 'The old sailor''s _____ of the sea made him the best navigator. (KNOW)'
+    sentenceZh: '老水手对大海的 _____ 使他成为最好的领航员。(KNOW)'
+    baseWord: 'know'
+    answer: 'knowledge'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after the possessive. Change "know" to "knowledge" (irregular formation).'
+    explanationZh: '所有格后面需要名词。将 know 变为 knowledge（不规则构词）。'
+    grammarPoint: 'verb → noun (irregular: know → knowledge)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0596
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: nature
+    sentence: 'The _____ hunter showed no mercy to the forest animals. (MERCY)'
+    sentenceZh: '这位 _____ 的猎人对森林里的动物毫不留情。(MERCY)'
+    baseWord: 'mercy'
+    answer: 'merciless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective meaning "without mercy". Change "mercy" to "merciless" (-y → -iless).'
+    explanationZh: '需要表示"无情的"的形容词。将 mercy 变为 merciless（-y → -iless）。'
+    grammarPoint: 'noun → negative adjective (-y → -iless)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0597
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: fantasy
+    sentence: 'The treasure was hidden in an _____ location. (KNOWN)'
+    sentenceZh: '宝藏被藏在一个 _____ 的地方。(KNOWN)'
+    baseWord: 'known'
+    answer: 'unknown'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "not known". Add the prefix un- to form "unknown".'
+    explanationZh: '需要表示"未知的"的形容词。加前缀 un- 构成 unknown。'
+    grammarPoint: 'negative prefix (un-)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0598
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: adventure
+    sentence: 'The ancient map was _____ valuable and worth millions. (PRICE)'
+    sentenceZh: '这张古老的地图 _____ 珍贵，价值连城。(PRICE)'
+    baseWord: 'price'
+    answer: 'priceless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective/adverb. "Priceless" means so valuable it has no price. Add -less to "price".'
+    explanationZh: '需要形容词。priceless 表示无价的。在 price 后加 -less。'
+    grammarPoint: 'noun → adjective (+less = without, meaning invaluable)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0599
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: nature
+    sentence: 'The damage to the ancient forest was _____. (BELIEVE)'
+    sentenceZh: '古老森林遭受的破坏是 _____ 的。(BELIEVE)'
+    baseWord: 'believe'
+    answer: 'unbelievable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "hard to believe". Add un- and -able to form "unbelievable".'
+    explanationZh: '需要表示"难以置信的"的形容词。加 un- 前缀和 -able 后缀构成 unbelievable。'
+    grammarPoint: 'verb → negative adjective (un- + -able)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0600
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: fantasy
+    sentence: 'After years of practice, the young sorceress reached _____. (PERFECT)'
+    sentenceZh: '经过多年练习，年轻的女巫达到了 _____。(PERFECT)'
+    baseWord: 'perfect'
+    answer: 'perfection'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "reached". Change "perfect" to "perfection" using the -ion suffix.'
+    explanationZh: 'reached 后面需要名词。将 perfect 变为 perfection，使用 -ion 后缀。'
+    grammarPoint: 'adjective → noun (+ion)'
+    relatedQuest: Q01
+    difficulty: 3

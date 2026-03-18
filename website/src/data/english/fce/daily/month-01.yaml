@@ -1,0 +1,272 @@
+month: 1
+quest: Q01
+days:
+  - id: D001
+    dayOffset: 1
+    reading: R001
+    newVocab: [V0001, V0002, V0003, V0004, V0005]
+    reviewVocab: []
+    grammar: [G0001, G0002, G0003, G0004, G0005]
+    useOfEnglish: [U0501, U0502, U0503, U0504, U0505]
+    writing: null
+
+  - id: D002
+    dayOffset: 2
+    reading: R001
+    newVocab: [V0006, V0007, V0008, V0009, V0010]
+    reviewVocab: [V0001, V0002, V0003, V0004, V0005]
+    grammar: [G0006, G0007, G0008, G0009, G0010]
+    useOfEnglish: [U0506, U0507, U0508, U0509, U0510]
+    writing: null
+
+  - id: D003
+    dayOffset: 3
+    reading: R002
+    newVocab: [V0011, V0012, V0013, V0014, V0015]
+    reviewVocab: [V0006, V0007, V0008, V0009, V0010]
+    grammar: [G0011, G0012, G0013, G0014, G0015]
+    useOfEnglish: [U0511, U0512, U0513, U0514, U0515]
+    writing: null
+
+  - id: D004
+    dayOffset: 4
+    reading: R002
+    newVocab: [V0016, V0017, V0018, V0019, V0020]
+    reviewVocab: [V0001, V0002, V0003, V0004, V0005]
+    grammar: [G0016, G0017, G0018, G0019, G0020]
+    useOfEnglish: [U0516, U0517, U0518, U0519, U0520]
+    writing: null
+
+  - id: D005
+    dayOffset: 5
+    reading: R003
+    newVocab: [V0021, V0022, V0023, V0024, V0025]
+    reviewVocab: [V0011, V0012, V0013, V0014, V0015]
+    grammar: [G0021, G0022, G0023, G0024, G0025]
+    useOfEnglish: [U0521, U0522, U0523, U0524, U0525]
+    writing: null
+
+  - id: D006
+    dayOffset: 6
+    reading: R003
+    newVocab: [V0026, V0027, V0028, V0029, V0030]
+    reviewVocab: [V0016, V0017, V0018, V0019, V0020]
+    grammar: [G0026, G0027, G0028, G0029, G0030]
+    useOfEnglish: [U0526, U0527, U0528, U0529, U0530]
+    writing: null
+
+  - id: D007
+    dayOffset: 7
+    reading: R004
+    newVocab: [V0031, V0032, V0033, V0034, V0035]
+    reviewVocab: [V0021, V0022, V0023, V0024, V0025]
+    grammar: [G0031, G0032, G0033, G0034, G0035]
+    useOfEnglish: [U0531, U0532, U0533, U0534, U0535]
+    writing: W001
+
+  - id: D008
+    dayOffset: 8
+    reading: R004
+    newVocab: [V0036, V0037, V0038, V0039, V0040]
+    reviewVocab: [V0001, V0002, V0003, V0004, V0005]
+    grammar: [G0036, G0037, G0038, G0039, G0040]
+    useOfEnglish: [U0536, U0537, U0538, U0539, U0540]
+    writing: null
+
+  - id: D009
+    dayOffset: 9
+    reading: R005
+    newVocab: [V0041, V0042, V0043, V0044, V0045]
+    reviewVocab: [V0026, V0027, V0028, V0029, V0030]
+    grammar: [G0041, G0042, G0043, G0044, G0045]
+    useOfEnglish: [U0541, U0542, U0543, U0544, U0545]
+    writing: null
+
+  - id: D010
+    dayOffset: 10
+    reading: R005
+    newVocab: [V0046, V0047, V0048, V0049, V0050]
+    reviewVocab: [V0031, V0032, V0033, V0034, V0035]
+    grammar: [G0046, G0047, G0048, G0049, G0050]
+    useOfEnglish: [U0546, U0547, U0548, U0549, U0550]
+    writing: null
+
+  - id: D011
+    dayOffset: 11
+    reading: R006
+    newVocab: [V0051, V0052, V0053, V0054, V0055]
+    reviewVocab: [V0036, V0037, V0038, V0039, V0040]
+    grammar: [G0051, G0052, G0053, G0054, G0055]
+    useOfEnglish: [U0551, U0552, U0553, U0554, U0555]
+    writing: null
+
+  - id: D012
+    dayOffset: 12
+    reading: R006
+    newVocab: [V0056, V0057, V0058, V0059, V0060]
+    reviewVocab: [V0041, V0042, V0043, V0044, V0045]
+    grammar: [G0056, G0057, G0058, G0059, G0060]
+    useOfEnglish: [U0556, U0557, U0558, U0559, U0560]
+    writing: null
+
+  - id: D013
+    dayOffset: 13
+    reading: R007
+    newVocab: [V0061, V0062, V0063, V0064, V0065]
+    reviewVocab: [V0046, V0047, V0048, V0049, V0050]
+    grammar: [G0061, G0062, G0063, G0064, G0065]
+    useOfEnglish: [U0561, U0562, U0563, U0564, U0565]
+    writing: null
+
+  - id: D014
+    dayOffset: 14
+    reading: R007
+    newVocab: [V0066, V0067, V0068, V0069, V0070]
+    reviewVocab: [V0006, V0007, V0008, V0009, V0010]
+    grammar: [G0066, G0067, G0068, G0069, G0070]
+    useOfEnglish: [U0566, U0567, U0568, U0569, U0570]
+    writing: W002
+
+  - id: D015
+    dayOffset: 15
+    reading: R008
+    newVocab: [V0071, V0072, V0073, V0074, V0075]
+    reviewVocab: [V0051, V0052, V0053, V0054, V0055]
+    grammar: [G0071, G0072, G0073, G0074, G0075]
+    useOfEnglish: [U0571, U0572, U0573, U0574, U0575]
+    writing: null
+
+  - id: D016
+    dayOffset: 16
+    reading: R008
+    newVocab: [V0076, V0077, V0078, V0079, V0080]
+    reviewVocab: [V0016, V0017, V0018, V0019, V0020]
+    grammar: [G0076, G0077, G0078, G0079, G0080]
+    useOfEnglish: [U0576, U0577, U0578, U0579, U0580]
+    writing: null
+
+  - id: D017
+    dayOffset: 17
+    reading: R009
+    newVocab: [V0081, V0082, V0083, V0084, V0085]
+    reviewVocab: [V0056, V0057, V0058, V0059, V0060]
+    grammar: [G0081, G0082, G0083, G0084, G0085]
+    useOfEnglish: [U0581, U0582, U0583, U0584, U0585]
+    writing: null
+
+  - id: D018
+    dayOffset: 18
+    reading: R009
+    newVocab: [V0086, V0087, V0088, V0089, V0090]
+    reviewVocab: [V0061, V0062, V0063, V0064, V0065]
+    grammar: [G0086, G0087, G0088, G0089, G0090]
+    useOfEnglish: [U0586, U0587, U0588, U0589, U0590]
+    writing: null
+
+  - id: D019
+    dayOffset: 19
+    reading: R010
+    newVocab: [V0091, V0092, V0093, V0094, V0095]
+    reviewVocab: [V0066, V0067, V0068, V0069, V0070]
+    grammar: [G0091, G0092, G0093, G0094, G0095]
+    useOfEnglish: [U0591, U0592, U0593, U0594, U0595]
+    writing: null
+
+  - id: D020
+    dayOffset: 20
+    reading: R010
+    newVocab: [V0096, V0097, V0098, V0099, V0100]
+    reviewVocab: [V0071, V0072, V0073, V0074, V0075]
+    grammar: [G0096, G0097, G0098, G0099, G0100]
+    useOfEnglish: [U0596, U0597, U0598, U0599, U0600]
+    writing: null
+
+  - id: D021
+    dayOffset: 21
+    reading: R011
+    newVocab: [V0101, V0102, V0103, V0104, V0105]
+    reviewVocab: [V0026, V0027, V0028, V0029, V0030]
+    grammar: [G0101, G0102, G0103, G0104, G0105]
+    useOfEnglish: [U0501, U0502, U0503, U0504, U0505]
+    writing: W003
+
+  - id: D022
+    dayOffset: 22
+    reading: R011
+    newVocab: [V0106, V0107, V0108, V0109, V0110]
+    reviewVocab: [V0076, V0077, V0078, V0079, V0080]
+    grammar: [G0106, G0107, G0108, G0109, G0110]
+    useOfEnglish: [U0506, U0507, U0508, U0509, U0510]
+    writing: null
+
+  - id: D023
+    dayOffset: 23
+    reading: R012
+    newVocab: [V0111, V0112, V0113, V0114, V0115]
+    reviewVocab: [V0081, V0082, V0083, V0084, V0085]
+    grammar: [G0111, G0112, G0113, G0114, G0115]
+    useOfEnglish: [U0511, U0512, U0513, U0514, U0515]
+    writing: null
+
+  - id: D024
+    dayOffset: 24
+    reading: R012
+    newVocab: [V0116, V0117, V0118, V0119, V0120]
+    reviewVocab: [V0086, V0087, V0088, V0089, V0090]
+    grammar: [G0116, G0117, G0118, G0119, G0120]
+    useOfEnglish: [U0516, U0517, U0518, U0519, U0520]
+    writing: null
+
+  - id: D025
+    dayOffset: 25
+    reading: R013
+    newVocab: [V0121, V0122, V0123, V0124, V0125]
+    reviewVocab: [V0091, V0092, V0093, V0094, V0095]
+    grammar: [G0121, G0122, G0123, G0124, G0125]
+    useOfEnglish: [U0521, U0522, U0523, U0524, U0525]
+    writing: null
+
+  - id: D026
+    dayOffset: 26
+    reading: R013
+    newVocab: [V0126, V0127, V0128, V0129, V0130]
+    reviewVocab: [V0096, V0097, V0098, V0099, V0100]
+    grammar: [G0126, G0127, G0128, G0129, G0130]
+    useOfEnglish: [U0526, U0527, U0528, U0529, U0530]
+    writing: null
+
+  - id: D027
+    dayOffset: 27
+    reading: R014
+    newVocab: [V0131, V0132, V0133, V0134, V0135]
+    reviewVocab: [V0101, V0102, V0103, V0104, V0105]
+    grammar: [G0131, G0132, G0133, G0134, G0135]
+    useOfEnglish: [U0531, U0532, U0533, U0534, U0535]
+    writing: null
+
+  - id: D028
+    dayOffset: 28
+    reading: R014
+    newVocab: [V0136, V0137, V0138, V0139, V0140]
+    reviewVocab: [V0036, V0037, V0038, V0039, V0040]
+    grammar: [G0136, G0137, G0138, G0139, G0140]
+    useOfEnglish: [U0536, U0537, U0538, U0539, U0540]
+    writing: W004
+
+  - id: D029
+    dayOffset: 29
+    reading: R015
+    newVocab: [V0141, V0142, V0143, V0144, V0145]
+    reviewVocab: [V0106, V0107, V0108, V0109, V0110]
+    grammar: [G0141, G0142, G0143, G0144, G0145]
+    useOfEnglish: [U0541, U0542, U0543, U0544, U0545]
+    writing: null
+
+  - id: D030
+    dayOffset: 30
+    reading: R015
+    newVocab: [V0146, V0147, V0148, V0149, V0150]
+    reviewVocab: [V0111, V0112, V0113, V0114, V0115]
+    grammar: [G0146, G0147, G0148, G0149, G0150]
+    useOfEnglish: [U0546, U0547, U0548, U0549, U0550]
+    writing: null

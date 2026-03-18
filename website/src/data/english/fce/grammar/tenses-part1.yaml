@@ -1,0 +1,1358 @@
+category: 'Tenses (Part 1)'
+categoryZh: '时态（第一部分）'
+questions:
+  # ============================================================
+  # G0001–G0015: Present Simple (difficulty 1)
+  # ============================================================
+  - id: G0001
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The wizard _____ (teach) potions every Monday.'
+    questionZh: '巫师每周一 _____ （教）魔药课。'
+    answer: 'teaches'
+    explanation: 'Present simple for routines. Third person singular: teach → teaches.'
+    explanationZh: '一般现在时表示习惯性动作。第三人称单数：teach → teaches。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0002
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The baby dragon _____ (eat) ten fish every day.'
+    questionZh: '小龙每天 _____ （吃）十条鱼。'
+    answer: 'eats'
+    explanation: 'Present simple for habitual actions. Third person singular: eat → eats.'
+    explanationZh: '一般现在时表示习惯性动作。第三人称单数：eat → eats。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0003
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Elves _____ (live) for thousands of years.'
+    questionZh: '精灵 _____ （活）数千年。'
+    answer: 'live'
+    explanation: 'Present simple for general facts. Plural subject "elves" takes the base form.'
+    explanationZh: '一般现在时表示客观事实。复数主语"精灵"用动词原形。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0004
+    type: multiple-choice
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The magic library _____ at sunrise every morning.'
+    questionZh: '魔法图书馆每天日出时 _____ 。'
+    options: ['open', 'opens', 'opening', 'is open']
+    answer: 'opens'
+    explanation: 'Present simple for a regular schedule. Third person singular: open → opens.'
+    explanationZh: '一般现在时表示固定时间表。第三人称单数：open → opens。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0005
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Professor Owl always _____ (fly) to the tower before class starts.'
+    questionZh: '猫头鹰教授总是在上课前 _____ （飞）到塔楼。'
+    answer: 'flies'
+    explanation: 'Present simple for routines. Fly → flies (consonant + y → ies).'
+    explanationZh: '一般现在时表示习惯。fly → flies（辅音 + y 变 ies）。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0006
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'A phoenix _____ (not/die) — it rises from the ashes.'
+    questionZh: '凤凰 _____ （不/死）——它会从灰烬中重生。'
+    answer: 'does not die'
+    explanation: 'Present simple negative with third person singular: does not + base form.'
+    explanationZh: '一般现在时否定句，第三人称单数：does not + 动词原形。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0007
+    type: multiple-choice
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: '_____ the goblins guard the treasure at night?'
+    questionZh: '哥布林晚上 _____ 守卫宝藏吗？'
+    options: ['Does', 'Do', 'Are', 'Is']
+    answer: 'Do'
+    explanation: 'Present simple question with plural subject "goblins" uses "Do".'
+    explanationZh: '一般现在时疑问句，复数主语"哥布林"用 Do。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0008
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The enchanted clock always _____ (strike) thirteen at midnight.'
+    questionZh: '魔法钟在午夜总是 _____ （敲）十三下。'
+    answer: 'strikes'
+    explanation: 'Present simple for repeated events. Third person singular: strike → strikes.'
+    explanationZh: '一般现在时表示反复发生的事。第三人称单数：strike → strikes。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0009
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'My pet dragon _____ (not/like) vegetables.'
+    questionZh: '我的宠物龙 _____ （不/喜欢）蔬菜。'
+    answer: 'does not like'
+    explanation: 'Present simple negative: does not + base form for third person singular.'
+    explanationZh: '一般现在时否定句：第三人称单数用 does not + 动词原形。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0010
+    type: multiple-choice
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Every full moon, the werewolf _____ into a wolf.'
+    questionZh: '每到满月，狼人就 _____ 变成一只狼。'
+    options: ['transform', 'transforms', 'is transforming', 'transformed']
+    answer: 'transforms'
+    explanation: 'Present simple for regular, predictable events. Third person singular adds -s.'
+    explanationZh: '一般现在时用于有规律的事件。第三人称单数加 -s。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0011
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Water _____ (freeze) at zero degrees, even in the magic kingdom.'
+    questionZh: '即使在魔法王国，水也在零度时 _____ （结冰）。'
+    answer: 'freezes'
+    explanation: 'Present simple for scientific facts. Third person singular: freeze → freezes.'
+    explanationZh: '一般现在时表示科学事实。第三人称单数：freeze → freezes。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0012
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The magic school bus _____ (leave) at eight o''clock sharp.'
+    questionZh: '魔法校车八点整 _____ （出发）。'
+    answer: 'leaves'
+    explanation: 'Present simple for timetables and schedules. Third person singular: leave → leaves.'
+    explanationZh: '一般现在时用于时间表和日程。第三人称单数：leave → leaves。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0013
+    type: multiple-choice
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Unicorns _____ in enchanted forests.'
+    questionZh: '独角兽 _____ 在魔法森林里。'
+    options: ['lives', 'live', 'living', 'is living']
+    answer: 'live'
+    explanation: 'Present simple for general facts. Plural subject "unicorns" takes the base form.'
+    explanationZh: '一般现在时表示客观事实。复数主语用动词原形。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0014
+    type: fill-blank
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The spell _____ (not/work) if you say the wrong word.'
+    questionZh: '如果你说错了咒语，这个魔法就 _____ （不/起作用）。'
+    answer: 'does not work'
+    explanation: 'Present simple negative for general truth. Does not + base form.'
+    explanationZh: '一般现在时否定句表示客观事实。does not + 动词原形。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0015
+    type: multiple-choice
+    tags: [present-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'How often _____ the dragon breathe fire?'
+    questionZh: '这条龙多久 _____ 喷一次火？'
+    options: ['do', 'does', 'is', 'has']
+    answer: 'does'
+    explanation: 'Present simple question with third person singular subject "the dragon" uses "does".'
+    explanationZh: '一般现在时疑问句，第三人称单数主语用 does。'
+    grammarPoint: 'Present Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  # ============================================================
+  # G0016–G0030: Present Continuous & Present Perfect (difficulty 1)
+  # ============================================================
+  - id: G0016
+    type: fill-blank
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'Shh! The dragon _____ (sleep) right now — don''t wake it!'
+    questionZh: '嘘！龙现在正在 _____ （睡觉）——别吵醒它！'
+    answer: 'is sleeping'
+    explanation: 'Present continuous for actions happening right now: is + verb-ing.'
+    explanationZh: '现在进行时表示此刻正在发生的动作：is + 动词-ing。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0017
+    type: fill-blank
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'Look! The fairies _____ (dance) around the mushroom ring.'
+    questionZh: '看！仙子们正在蘑菇圈旁 _____ （跳舞）。'
+    answer: 'are dancing'
+    explanation: 'Present continuous for an action happening at the moment of speaking.'
+    explanationZh: '现在进行时表示说话时正在发生的动作。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0018
+    type: multiple-choice
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The wizard _____ a new spell in his tower right now.'
+    questionZh: '巫师现在正在他的塔里 _____ 一个新咒语。'
+    options: ['creates', 'is creating', 'created', 'has created']
+    answer: 'is creating'
+    explanation: '"Right now" signals present continuous: is + verb-ing.'
+    explanationZh: '"right now"（现在）提示用现在进行时：is + 动词-ing。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0019
+    type: fill-blank
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The young witch _____ (practice) her flying this afternoon.'
+    questionZh: '小女巫今天下午正在 _____ （练习）飞行。'
+    answer: 'is practising'
+    explanation: 'Present continuous for a planned/current activity. Is + practising (British spelling).'
+    explanationZh: '现在进行时表示正在进行的活动。is + practising。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0020
+    type: fill-blank
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'Be quiet! The elves _____ (build) a secret treehouse.'
+    questionZh: '安静！精灵们正在 _____ （建造）一座秘密树屋。'
+    answer: 'are building'
+    explanation: 'Present continuous for an action in progress. Plural subject uses "are".'
+    explanationZh: '现在进行时表示正在进行的动作。复数主语用 are。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0021
+    type: multiple-choice
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'Why _____ the cauldron bubbling? Did someone add a potion?'
+    questionZh: '为什么大锅在 _____ 冒泡？有人加了魔药吗？'
+    options: ['does', 'is', 'has', 'was']
+    answer: 'is'
+    explanation: 'Present continuous question: Why is + subject + verb-ing?'
+    explanationZh: '现在进行时疑问句：Why is + 主语 + 动词-ing？'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0022
+    type: fill-blank
+    tags: [present-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The robots _____ (not/work) today because their batteries are flat.'
+    questionZh: '机器人今天 _____ （不在/工作），因为它们的电池没电了。'
+    answer: 'are not working'
+    explanation: 'Present continuous negative: are not + verb-ing.'
+    explanationZh: '现在进行时否定句：are not + 动词-ing。'
+    grammarPoint: 'Present Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0023
+    type: fill-blank
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'I _____ (never/see) a unicorn before.'
+    questionZh: '我以前 _____ （从未/看见）过独角兽。'
+    answer: 'have never seen'
+    explanation: 'Present perfect with "never" for life experience up to now.'
+    explanationZh: '现在完成时搭配 never 表示到目前为止的经历。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0024
+    type: fill-blank
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'She _____ (just/finish) reading the Book of Spells.'
+    questionZh: '她 _____ （刚/读完）了《咒语之书》。'
+    answer: 'has just finished'
+    explanation: 'Present perfect with "just" for a very recent action.'
+    explanationZh: '现在完成时搭配 just 表示刚刚完成的动作。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0025
+    type: multiple-choice
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The explorers _____ three enchanted caves so far.'
+    questionZh: '探险家们到目前为止 _____ 了三个魔法洞穴。'
+    options: ['discovered', 'have discovered', 'are discovering', 'discover']
+    answer: 'have discovered'
+    explanation: '"So far" signals present perfect for results up to now.'
+    explanationZh: '"so far"（到目前为止）提示用现在完成时表示到目前为止的结果。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0026
+    type: fill-blank
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'We _____ (already/collect) fifty magic crystals for the quest.'
+    questionZh: '我们 _____ （已经/收集）了五十颗魔法水晶用于任务。'
+    answer: 'have already collected'
+    explanation: 'Present perfect with "already" to show completion before now.'
+    explanationZh: '现在完成时搭配 already 表示到现在已经完成。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0027
+    type: fill-blank
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The robot _____ (not/learn) how to fly yet.'
+    questionZh: '机器人 _____ （还没/学会）飞行。'
+    answer: 'has not learned'
+    explanation: 'Present perfect negative with "yet" for something expected but not done.'
+    explanationZh: '现在完成时否定句搭配 yet，表示预期但尚未完成的事。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0028
+    type: multiple-choice
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: '_____ you ever ridden a flying broomstick?'
+    questionZh: '你 _____ 骑过飞天扫帚吗？'
+    options: ['Did', 'Have', 'Do', 'Are']
+    answer: 'Have'
+    explanation: 'Present perfect question for life experience: Have you ever + past participle?'
+    explanationZh: '现在完成时疑问句表示经历：Have you ever + 过去分词？'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0029
+    type: fill-blank
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The spaceship _____ (travel) to Mars three times this year.'
+    questionZh: '这艘宇宙飞船今年 _____ （去过）火星三次了。'
+    answer: 'has travelled'
+    explanation: 'Present perfect with "this year" — an unfinished time period.'
+    explanationZh: '现在完成时搭配 this year——一个尚未结束的时间段。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0030
+    type: multiple-choice
+    tags: [present-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'I _____ this potion before. It tastes like strawberries!'
+    questionZh: '我以前 _____ 过这种魔药。它尝起来像草莓！'
+    options: ['try', 'tried', 'have tried', 'am trying']
+    answer: 'have tried'
+    explanation: '"Before" with present relevance signals present perfect.'
+    explanationZh: '"before"（以前）与现在相关，提示用现在完成时。'
+    grammarPoint: 'Present Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  # ============================================================
+  # G0031–G0060: Past Simple & Past Continuous (difficulty 1-2)
+  # ============================================================
+  - id: G0031
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The knight _____ (defeat) the giant spider last night.'
+    questionZh: '骑士昨晚 _____ （打败了）巨型蜘蛛。'
+    answer: 'defeated'
+    explanation: 'Past simple for a completed action at a specific past time ("last night").'
+    explanationZh: '一般过去时表示过去某个具体时间完成的动作（"昨晚"）。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0032
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The pirates _____ (find) a treasure map on the beach yesterday.'
+    questionZh: '海盗们昨天在沙滩上 _____ （发现了）一张藏宝图。'
+    answer: 'found'
+    explanation: 'Past simple irregular verb: find → found.'
+    explanationZh: '一般过去时不规则动词：find → found。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0033
+    type: multiple-choice
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The fairy _____ her wand and the pumpkin turned into a carriage.'
+    questionZh: '仙女 _____ 了她的魔杖，南瓜就变成了马车。'
+    options: ['waves', 'waved', 'is waving', 'has waved']
+    answer: 'waved'
+    explanation: 'Past simple for a completed sequence of events in a story.'
+    explanationZh: '一般过去时用于讲述故事中已完成的连续事件。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0034
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The wizard _____ (not/remember) the secret password.'
+    questionZh: '巫师 _____ （没有/记住）秘密口令。'
+    answer: 'did not remember'
+    explanation: 'Past simple negative: did not + base form.'
+    explanationZh: '一般过去时否定句：did not + 动词原形。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0035
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The young inventor _____ (build) a rocket from old spaceship parts.'
+    questionZh: '年轻的发明家用旧飞船零件 _____ （建造了）一枚火箭。'
+    answer: 'built'
+    explanation: 'Past simple irregular verb: build → built.'
+    explanationZh: '一般过去时不规则动词：build → built。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0036
+    type: multiple-choice
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: '_____ the explorers reach the Crystal Mountain?'
+    questionZh: '探险家们 _____ 到达了水晶山吗？'
+    options: ['Do', 'Did', 'Have', 'Were']
+    answer: 'Did'
+    explanation: 'Past simple question: Did + subject + base form?'
+    explanationZh: '一般过去时疑问句：Did + 主语 + 动词原形？'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0037
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The magic carpet _____ (fly) over the mountains two days ago.'
+    questionZh: '魔法飞毯两天前 _____ （飞过了）群山。'
+    answer: 'flew'
+    explanation: 'Past simple irregular verb: fly → flew.'
+    explanationZh: '一般过去时不规则动词：fly → flew。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0038
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The dragon _____ (guard) the cave when the hero arrived.'
+    questionZh: '当英雄到达时，龙正在 _____ （守卫）洞穴。'
+    answer: 'was guarding'
+    explanation: 'Past continuous for a background action when another event happened.'
+    explanationZh: '过去进行时表示另一事件发生时正在进行的背景动作。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0039
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The students _____ (mix) potions when the teacher walked in.'
+    questionZh: '老师走进来时，学生们正在 _____ （调配）魔药。'
+    answer: 'were mixing'
+    explanation: 'Past continuous for an action in progress interrupted by a past simple event.'
+    explanationZh: '过去进行时表示被一般过去时动作打断的正在进行的动作。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0040
+    type: multiple-choice
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'While the princess _____ in the garden, a magical bird appeared.'
+    questionZh: '公主在花园里 _____ 时，一只神奇的鸟出现了。'
+    options: ['walked', 'was walking', 'walks', 'has walked']
+    answer: 'was walking'
+    explanation: '"While" + past continuous sets the background for a sudden past simple event.'
+    explanationZh: '"while" + 过去进行时为突然发生的一般过去时事件设置背景。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0041
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'While the dragon _____ (sleep), the thief _____ (steal) the golden egg.'
+    questionZh: '当龙正在 _____ （睡觉）时，小偷 _____ （偷走了）金蛋。'
+    answer: 'was sleeping, stole'
+    explanation: 'Past continuous (background) + past simple (interrupting event).'
+    explanationZh: '过去进行时（背景动作）+ 一般过去时（突然发生的事件）。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0042
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The spaceship _____ (travel) through a wormhole when the engine _____ (break) down.'
+    questionZh: '飞船正在穿越虫洞时，引擎 _____ （坏了）。'
+    answer: 'was travelling, broke'
+    explanation: 'Past continuous for the ongoing action; past simple for the sudden event.'
+    explanationZh: '过去进行时表示正在进行的动作；一般过去时表示突然发生的事件。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0043
+    type: multiple-choice
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The elves _____ songs when the storm suddenly started.'
+    questionZh: '暴风雨突然来临时，精灵们正在 _____ 歌。'
+    options: ['sang', 'were singing', 'sing', 'have sung']
+    answer: 'were singing'
+    explanation: 'Past continuous for the action in progress when the storm (past simple) interrupted.'
+    explanationZh: '过去进行时表示暴风雨（一般过去时）打断时正在进行的动作。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0044
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'At seven o''clock last night, the witch _____ (brew) a healing potion.'
+    questionZh: '昨晚七点，女巫正在 _____ （熬制）一瓶治愈药水。'
+    answer: 'was brewing'
+    explanation: 'Past continuous for an action in progress at a specific past time.'
+    explanationZh: '过去进行时表示在过去某个具体时间正在进行的动作。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0045
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'While the trolls _____ (argue), the children _____ (escape) through the back door.'
+    questionZh: '当巨魔们在 _____ （争吵）时，孩子们从后门 _____ （逃走了）。'
+    answer: 'were arguing, escaped'
+    explanation: 'Past continuous for the ongoing background; past simple for the completed action.'
+    explanationZh: '过去进行时作为背景；一般过去时表示完成的动作。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0046
+    type: multiple-choice
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The astronaut _____ on the moon and planted a flag.'
+    questionZh: '宇航员 _____ 在月球上并插了一面旗帜。'
+    options: ['lands', 'landed', 'was landing', 'has landed']
+    answer: 'landed'
+    explanation: 'Past simple for two completed, sequential actions in the past.'
+    explanationZh: '一般过去时表示过去两个连续完成的动作。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0047
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The two wizards _____ (duel) in the courtyard all morning.'
+    questionZh: '两个巫师整个上午都在庭院里 _____ （决斗）。'
+    answer: 'were duelling'
+    explanation: 'Past continuous for an extended action over a period in the past.'
+    explanationZh: '过去进行时表示过去一段时间内持续进行的动作。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0048
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'I _____ (read) my spellbook when a ghost _____ (appear) behind me.'
+    questionZh: '我正在 _____ （读）咒语书时，一个幽灵在我身后 _____ （出现了）。'
+    answer: 'was reading, appeared'
+    explanation: 'Past continuous (longer action) interrupted by past simple (sudden event).'
+    explanationZh: '过去进行时（较长的动作）被一般过去时（突然事件）打断。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0049
+    type: multiple-choice
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'When the clock struck midnight, the carriage _____ into a pumpkin.'
+    questionZh: '当钟声敲响午夜时，马车 _____ 成了南瓜。'
+    options: ['was turning', 'turned', 'turns', 'has turned']
+    answer: 'turned'
+    explanation: '"When" + past simple time marker → past simple for the main action.'
+    explanationZh: '"when" + 一般过去时时间标志 → 主要动作用一般过去时。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0050
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The scientist _____ (discover) a new planet in 2025.'
+    questionZh: '科学家在 2025 年 _____ （发现了）一颗新行星。'
+    answer: 'discovered'
+    explanation: 'Past simple with a specific year in the past.'
+    explanationZh: '一般过去时搭配过去的具体年份。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0051
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The mermaids _____ (sing) beautifully when the sailors heard them.'
+    questionZh: '水手们听到美人鱼时，她们正在 _____ （唱歌）。'
+    answer: 'were singing'
+    explanation: 'Past continuous sets the scene for the past simple action (heard).'
+    explanationZh: '过去进行时为一般过去时的动作（heard）设置场景。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0052
+    type: multiple-choice
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The goblin _____ the key while nobody _____ .'
+    questionZh: '趁没人 _____ ，哥布林 _____ 了钥匙。'
+    options:
+      - 'took / was looking'
+      - 'was taking / looked'
+      - 'takes / is looking'
+      - 'took / looked'
+    answer: 'took / was looking'
+    explanation: 'Past simple for the quick action (took); past continuous for the background state (was looking).'
+    explanationZh: '一般过去时表示短暂动作（took）；过去进行时表示背景状态（was looking）。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0053
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The gnomes _____ (dig) for treasure when they _____ (hit) an underground river.'
+    questionZh: '地精们正在 _____ （挖）宝藏时，_____ （碰到了）一条地下河。'
+    answer: 'were digging, hit'
+    explanation: 'Past continuous for the ongoing activity; past simple for the sudden discovery.'
+    explanationZh: '过去进行时表示持续的活动；一般过去时表示突然的发现。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0054
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The time traveller _____ (go) back to the year 1800.'
+    questionZh: '时间旅行者 _____ （去了）1800 年。'
+    answer: 'went'
+    explanation: 'Past simple irregular verb: go → went.'
+    explanationZh: '一般过去时不规则动词：go → went。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0055
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-1]
+    context: fantasy
+    question: 'The owl _____ (deliver) letters all night long.'
+    questionZh: '猫头鹰整晚都在 _____ （送）信。'
+    answer: 'was delivering'
+    explanation: 'Past continuous for a prolonged activity over a past time period ("all night long").'
+    explanationZh: '过去进行时表示过去一段时间内持续的活动（"整晚"）。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0056
+    type: multiple-choice
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'She _____ her homework when the magic mirror _____ to glow.'
+    questionZh: '她正在写作业时，魔镜 _____ 发光了。'
+    options:
+      - 'did / was starting'
+      - 'was doing / started'
+      - 'does / starts'
+      - 'did / started'
+    answer: 'was doing / started'
+    explanation: 'Past continuous for the ongoing action; past simple for the interruption.'
+    explanationZh: '过去进行时表示正在进行的动作；一般过去时表示打断。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0057
+    type: fill-blank
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'The dragon _____ (not/attack) the village. It only wanted food.'
+    questionZh: '龙 _____ （没有/攻击）村庄。它只是想要食物。'
+    answer: 'did not attack'
+    explanation: 'Past simple negative: did not + base form.'
+    explanationZh: '一般过去时否定句：did not + 动词原形。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0058
+    type: fill-blank
+    tags: [past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The stars _____ (shine) brightly while the children _____ (camp) in the enchanted forest.'
+    questionZh: '孩子们在魔法森林 _____ （露营）时，星星 _____ （闪耀）得很亮。'
+    answer: 'were shining, were camping'
+    explanation: 'Two past continuous actions happening at the same time (parallel activities).'
+    explanationZh: '两个过去进行时的动作同时发生（平行活动）。'
+    grammarPoint: 'Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0059
+    type: multiple-choice
+    tags: [past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'Who _____ the enchanted sword from the stone?'
+    questionZh: '谁从石头中 _____ 了魔法剑？'
+    options: ['pulls', 'pulled', 'was pulling', 'has pulled']
+    answer: 'pulled'
+    explanation: 'Past simple for a specific completed action in a legend.'
+    explanationZh: '一般过去时表示传说中某个已完成的具体动作。'
+    grammarPoint: 'Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0060
+    type: fill-blank
+    tags: [past-simple, past-continuous, Q02, difficulty-2]
+    context: fantasy
+    question: 'The robot _____ (walk) across the lab when it suddenly _____ (slip) on a puddle of potion.'
+    questionZh: '机器人正 _____ （走过）实验室时，突然在一摊药水上 _____ （滑倒了）。'
+    answer: 'was walking, slipped'
+    explanation: 'Past continuous for the ongoing action; past simple for the sudden event.'
+    explanationZh: '过去进行时表示持续动作；一般过去时表示突然事件。'
+    grammarPoint: 'Past Simple vs Past Continuous'
+    relatedQuest: Q02
+    difficulty: 2
+
+  # ============================================================
+  # G0061–G0100: Past Perfect (difficulty 1-2) — KEY for FCE
+  # ============================================================
+  - id: G0061
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'By the time they arrived, the wizard _____ (already/leave).'
+    questionZh: '等他们到达时，巫师 _____ （已经/离开了）。'
+    answer: 'had already left'
+    explanation: 'Past perfect with "by the time" for an action completed before another past event.'
+    explanationZh: '过去完成时搭配 by the time，表示在另一个过去事件之前已完成的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0062
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'After she _____ (finish) her homework, she _____ (go) outside to play.'
+    questionZh: '她 _____ （做完）作业后，_____ （出去）玩了。'
+    answer: 'had finished, went'
+    explanation: '"After" + past perfect for the earlier action; past simple for the later action.'
+    explanationZh: '"after" + 过去完成时表示较早的动作；一般过去时表示较晚的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0063
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The dragon _____ (never/see) a human before the knight came.'
+    questionZh: '在骑士来之前，龙 _____ （从未/见过）人类。'
+    answer: 'had never seen'
+    explanation: 'Past perfect with "never ... before" for experience prior to a past event.'
+    explanationZh: '过去完成时搭配 never ... before 表示在过去某事件之前的经历。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0064
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-1]
+    context: fantasy
+    question: 'When the prince arrived, the princess _____ the tower.'
+    questionZh: '王子到达时，公主已经 _____ 了高塔。'
+    options: ['left', 'had left', 'was leaving', 'leaves']
+    answer: 'had left'
+    explanation: 'Past perfect for an action completed before the prince arrived (past simple).'
+    explanationZh: '过去完成时表示在王子到达（一般过去时）之前已完成的动作。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0065
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'Before the exam started, the students _____ (study) all night.'
+    questionZh: '考试开始前，学生们 _____ （学习了）一整夜。'
+    answer: 'had studied'
+    explanation: '"Before" + past simple → past perfect for the action that happened first.'
+    explanationZh: '"before" + 一般过去时 → 过去完成时表示先发生的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0066
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The explorers were tired because they _____ (walk) for ten hours.'
+    questionZh: '探险家们很累，因为他们 _____ （走了）十个小时。'
+    answer: 'had walked'
+    explanation: 'Past perfect to explain the cause of a past state.'
+    explanationZh: '过去完成时用于解释过去状态的原因。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0067
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'She realised she _____ her magic wand at home.'
+    questionZh: '她意识到她把魔杖 _____ 在家里了。'
+    options: ['forgot', 'had forgotten', 'was forgetting', 'forgets']
+    answer: 'had forgotten'
+    explanation: 'Past perfect: the forgetting happened before the realising (past simple).'
+    explanationZh: '过去完成时：忘记发生在意识到（一般过去时）之前。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0068
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The spaceship _____ (just/land) when the alien appeared.'
+    questionZh: '外星人出现时，飞船 _____ （刚/降落）。'
+    answer: 'had just landed'
+    explanation: 'Past perfect with "just" for an action completed moments before another past event.'
+    explanationZh: '过去完成时搭配 just，表示刚刚在另一个过去事件之前完成的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0069
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'By sunset, the pirates _____ (bury) all the treasure.'
+    questionZh: '到日落时，海盗们 _____ （埋好了）所有宝藏。'
+    answer: 'had buried'
+    explanation: '"By sunset" sets a past deadline → past perfect for the completed action.'
+    explanationZh: '"by sunset"（到日落时）设定了过去的截止时间 → 过去完成时表示已完成。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0070
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'The hero could not open the door because he _____ the key.'
+    questionZh: '英雄打不开门，因为他 _____ 了钥匙。'
+    options: ['lost', 'had lost', 'was losing', 'loses']
+    answer: 'had lost'
+    explanation: 'Past perfect explains why the hero could not open the door (earlier event → result).'
+    explanationZh: '过去完成时解释英雄打不开门的原因（更早的事件 → 结果）。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0071
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'After the witch _____ (cast) the spell, the frog turned into a prince.'
+    questionZh: '女巫 _____ （施了）咒语后，青蛙变成了王子。'
+    answer: 'had cast'
+    explanation: '"After" + past perfect for the first action; past simple for the second.'
+    explanationZh: '"after" + 过去完成时表示第一个动作；一般过去时表示第二个。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0072
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'The children were happy because they _____ (solve) the puzzle at last.'
+    questionZh: '孩子们很高兴，因为他们终于 _____ （解开了）谜题。'
+    answer: 'had solved'
+    explanation: 'Past perfect for the earlier achievement that caused the past happiness.'
+    explanationZh: '过去完成时表示导致过去快乐心情的更早成就。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0073
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'Before the race began, the dragon _____ its wings three times.'
+    questionZh: '比赛开始前，龙 _____ 了三次翅膀。'
+    options: ['flapped', 'had flapped', 'was flapping', 'flaps']
+    answer: 'had flapped'
+    explanation: '"Before" + past simple → past perfect for the action that happened first.'
+    explanationZh: '"before" + 一般过去时 → 过去完成时表示先发生的动作。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0074
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The robot shut down because its battery _____ (run) out.'
+    questionZh: '机器人关机了，因为它的电池 _____ （用完了）。'
+    answer: 'had run'
+    explanation: 'Past perfect for the cause that happened before the result (shut down).'
+    explanationZh: '过去完成时表示在结果（关机）之前发生的原因。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0075
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'By the time the rescue team found them, the hikers _____ (wait) for two days.'
+    questionZh: '救援队找到他们时，徒步旅行者们已经 _____ （等了）两天了。'
+    answer: 'had waited'
+    explanation: '"By the time" + past simple → past perfect for the earlier ongoing situation.'
+    explanationZh: '"by the time" + 一般过去时 → 过去完成时表示更早的持续情况。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0076
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'The wizard was angry because someone _____ his favourite cauldron.'
+    questionZh: '巫师很生气，因为有人 _____ 了他最喜欢的大锅。'
+    options: ['broke', 'had broken', 'was breaking', 'breaks']
+    answer: 'had broken'
+    explanation: 'Past perfect explains the reason for the wizard''s anger (earlier event).'
+    explanationZh: '过去完成时解释巫师生气的原因（更早的事件）。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0077
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'Once the elf _____ (collect) all the gems, the secret door opened.'
+    questionZh: '精灵 _____ （收集完）所有宝石后，秘密之门就打开了。'
+    answer: 'had collected'
+    explanation: '"Once" + past perfect for the condition met before the result (past simple).'
+    explanationZh: '"once" + 过去完成时表示在结果（一般过去时）之前满足的条件。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0078
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'The potion _____ (already/change) colour before the witch noticed.'
+    questionZh: '在女巫注意到之前，药水 _____ （已经/变了）颜色。'
+    answer: 'had already changed'
+    explanation: 'Past perfect with "already" + "before" for an action completed prior to noticing.'
+    explanationZh: '过去完成时搭配 already + before，表示在注意到之前已完成的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0079
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'After the storm _____ , the rainbow appeared over the castle.'
+    questionZh: '暴风雨 _____ 之后，彩虹出现在城堡上空。'
+    options: ['stopped', 'had stopped', 'was stopping', 'stops']
+    answer: 'had stopped'
+    explanation: '"After" signals past perfect for the action that came first (the storm stopping).'
+    explanationZh: '"after" 提示用过去完成时表示先发生的动作（暴风雨停了）。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0080
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The detective knew who the thief was because he _____ (find) a clue.'
+    questionZh: '侦探知道小偷是谁，因为他 _____ （找到了）一条线索。'
+    answer: 'had found'
+    explanation: 'Past perfect for the discovery that happened before the knowing.'
+    explanationZh: '过去完成时表示在"知道"之前发生的发现。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0081
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'By midnight, the elves _____ (make) three hundred toys for the festival.'
+    questionZh: '到午夜时，精灵们已经 _____ （制作了）三百个玩具用于节日。'
+    answer: 'had made'
+    explanation: '"By midnight" sets a past deadline → past perfect for the completed achievement.'
+    explanationZh: '"by midnight"（到午夜）设定过去截止时间 → 过去完成时表示已完成的成就。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0082
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'When I got to the library, the magic book _____ .'
+    questionZh: '当我到达图书馆时，那本魔法书 _____ 了。'
+    options: ['disappeared', 'had disappeared', 'was disappearing', 'disappears']
+    answer: 'had disappeared'
+    explanation: 'Past perfect: the book disappeared before I got there (past simple).'
+    explanationZh: '过去完成时：书在我到达（一般过去时）之前就消失了。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0083
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The spaceship could not take off because the fuel _____ (leak) out.'
+    questionZh: '飞船无法起飞，因为燃料 _____ （泄漏了）。'
+    answer: 'had leaked'
+    explanation: 'Past perfect gives the reason (fuel leak) for the past inability to take off.'
+    explanationZh: '过去完成时给出无法起飞的原因（燃料泄漏）。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0084
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'Before the sun rose, the vampire _____ (already/return) to his coffin.'
+    questionZh: '太阳升起之前，吸血鬼 _____ （已经/回到了）他的棺材里。'
+    answer: 'had already returned'
+    explanation: '"Before" + past simple → past perfect with "already" for the earlier action.'
+    explanationZh: '"before" + 一般过去时 → 过去完成时搭配 already 表示更早的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0085
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'The knights celebrated because they _____ the dragon.'
+    questionZh: '骑士们庆祝是因为他们 _____ 了龙。'
+    options: ['defeated', 'had defeated', 'were defeating', 'defeat']
+    answer: 'had defeated'
+    explanation: 'Past perfect: the defeating happened before the celebrating.'
+    explanationZh: '过去完成时：打败龙发生在庆祝之前。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0086
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'After the rain _____ (stop), a magical rainbow bridge appeared.'
+    questionZh: '雨 _____ （停了）之后，一座神奇的彩虹桥出现了。'
+    answer: 'had stopped'
+    explanation: '"After" + past perfect for the first event; past simple for the second.'
+    explanationZh: '"after" + 过去完成时表示第一个事件；一般过去时表示第二个。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0087
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'The wizard _____ (never/fail) a spell before that day.'
+    questionZh: '在那天之前，巫师 _____ （从未/失败过）一个咒语。'
+    answer: 'had never failed'
+    explanation: 'Past perfect with "never ... before" for first-time experience prior to a past event.'
+    explanationZh: '过去完成时搭配 never ... before 表示过去某事件之前从未有过的经历。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0088
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'The children _____ to bed after they _____ their teeth.'
+    questionZh: '孩子们刷完牙后就 _____ 了。'
+    options:
+      - 'went / had brushed'
+      - 'had gone / brushed'
+      - 'go / brush'
+      - 'were going / brushed'
+    answer: 'went / had brushed'
+    explanation: 'Past simple (went) for the later action; past perfect (had brushed) for the earlier one.'
+    explanationZh: '一般过去时（went）表示较晚的动作；过去完成时（had brushed）表示较早的。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0089
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'By the time the hero reached the tower, the dragon _____ (fly) away.'
+    questionZh: '英雄到达塔楼时，龙已经 _____ （飞走了）。'
+    answer: 'had flown'
+    explanation: '"By the time" + past simple → past perfect for the earlier completed action.'
+    explanationZh: '"by the time" + 一般过去时 → 过去完成时表示更早完成的动作。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0090
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'The scientist was excited because she _____ (discover) a cure for the sleeping curse.'
+    questionZh: '科学家很兴奋，因为她 _____ （发现了）沉睡诅咒的解药。'
+    answer: 'had discovered'
+    explanation: 'Past perfect for the discovery (cause) before the excitement (result).'
+    explanationZh: '过去完成时表示发现（原因），发生在兴奋（结果）之前。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0091
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'When the bell rang, the potion _____ ready.'
+    questionZh: '铃响时，药水 _____ 准备好了。'
+    options: ['was not', 'had not been', 'is not', 'has not been']
+    answer: 'had not been'
+    explanation: 'Past perfect negative: the potion was not ready before the bell rang.'
+    explanationZh: '过去完成时否定：药水在铃响之前还没准备好。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0092
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The pirate smiled because he _____ (hide) the treasure safely.'
+    questionZh: '海盗笑了，因为他 _____ （安全地藏好了）宝藏。'
+    answer: 'had hidden'
+    explanation: 'Past perfect for the earlier action (hiding) that caused the later smile.'
+    explanationZh: '过去完成时表示较早的动作（藏宝藏），导致了后来的微笑。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0093
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'They could not cross the river because the bridge _____ (collapse) during the storm.'
+    questionZh: '他们无法过河，因为桥在暴风雨中 _____ （塌了）。'
+    answer: 'had collapsed'
+    explanation: 'Past perfect: the collapse happened before they tried to cross.'
+    explanationZh: '过去完成时：桥塌了发生在他们试图过河之前。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0094
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'After the magician _____ the rabbit from the hat, everyone clapped.'
+    questionZh: '魔术师从帽子里 _____ 兔子后，大家都鼓掌了。'
+    options: ['pulled', 'had pulled', 'was pulling', 'pulls']
+    answer: 'had pulled'
+    explanation: '"After" + past perfect for the action completed before the clapping.'
+    explanationZh: '"after" + 过去完成时表示在鼓掌之前完成的动作。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0095
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-1]
+    context: fantasy
+    question: 'The time traveller arrived in ancient Egypt, where nobody _____ (ever/see) a smartphone.'
+    questionZh: '时间旅行者来到了古埃及，那里没有人 _____ （曾经/见过）智能手机。'
+    answer: 'had ever seen'
+    explanation: 'Past perfect with "ever" to describe experience (or lack of it) before the past arrival.'
+    explanationZh: '过去完成时搭配 ever 描述过去到达之前的经历（或缺乏经历）。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 1
+
+  - id: G0096
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'Before the queen spoke, the room _____ (become) completely silent.'
+    questionZh: '在女王开口之前，房间 _____ （变得）完全安静了。'
+    answer: 'had become'
+    explanation: '"Before" + past simple → past perfect for the change that happened first.'
+    explanationZh: '"before" + 一般过去时 → 过去完成时表示先发生的变化。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0097
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'The young witch felt confident because she _____ the spell many times.'
+    questionZh: '小女巫感到自信，因为她 _____ 过这个咒语很多次。'
+    options: ['practised', 'had practised', 'was practising', 'practises']
+    answer: 'had practised'
+    explanation: 'Past perfect: the practice happened many times before she felt confident.'
+    explanationZh: '过去完成时：练习发生在她感到自信之前。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0098
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'The spaceship ran out of fuel because the crew _____ (not/check) the tank before launch.'
+    questionZh: '飞船燃料耗尽了，因为机组人员发射前 _____ （没有/检查）油箱。'
+    answer: 'had not checked'
+    explanation: 'Past perfect negative: the failure to check happened before the fuel ran out.'
+    explanationZh: '过去完成时否定：没有检查发生在燃料耗尽之前。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0099
+    type: multiple-choice
+    tags: [past-perfect, past-simple, Q02, difficulty-2]
+    context: fantasy
+    question: 'By the time the owl delivered the letter, the family _____ to a new castle.'
+    questionZh: '猫头鹰送到信时，这家人已经 _____ 到一座新城堡了。'
+    options: ['moved', 'had moved', 'were moving', 'move']
+    answer: 'had moved'
+    explanation: '"By the time" + past simple → past perfect for the completed move.'
+    explanationZh: '"by the time" + 一般过去时 → 过去完成时表示已完成的搬迁。'
+    grammarPoint: 'Past Perfect vs Past Simple'
+    relatedQuest: Q02
+    difficulty: 2
+
+  - id: G0100
+    type: fill-blank
+    tags: [past-perfect, Q02, difficulty-2]
+    context: fantasy
+    question: 'After the heroes _____ (defeat) the dark sorcerer, peace _____ (return) to the kingdom.'
+    questionZh: '英雄们 _____ （打败了）黑暗巫师后，和平 _____ （回到了）王国。'
+    answer: 'had defeated, returned'
+    explanation: '"After" + past perfect (earlier action) → past simple (later result). The heroes defeated the sorcerer first, then peace returned.'
+    explanationZh: '"after" + 过去完成时（较早的动作）→ 一般过去时（较晚的结果）。英雄们先打败巫师，然后和平回归。'
+    grammarPoint: 'Past Perfect'
+    relatedQuest: Q02
+    difficulty: 2
