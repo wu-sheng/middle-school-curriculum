@@ -865,25 +865,16 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [sentenceAnswers, setSentenceAnswers] = useState<Record<string, string>>({});
   const [sentenceChecked, setSentenceChecked] = useState<Record<string, boolean>>({});
-  const scoreReportedRef = useRef(false);
-
-  // Report aggregate score when all extracts are checked
-  function reportScoreIfComplete(
+  // Report cumulative score after each extract is checked
+  function reportCumulativeScore(
     nextChecked: Record<string, boolean>,
     nextSentenceChecked: Record<string, boolean>
   ) {
-    if (scoreReportedRef.current) return;
-    const allDone = listeningData.every(e => {
-      if (e.type === "sentence-completion") return !!nextSentenceChecked[e.id];
-      return !!nextChecked[e.id];
-    });
-    if (!allDone) return;
-    scoreReportedRef.current = true;
-    // Compute aggregate
     let total = 0, correct = 0;
     const qr: Record<string, boolean> = {};
     for (const e of listeningData) {
       if (e.type === "sentence-completion" && e.sentences) {
+        if (!nextSentenceChecked[e.id]) continue;
         for (const s of e.sentences) {
           total++;
           const ok = (sentenceAnswers[s.id] || "").trim().toLowerCase() === s.answer.trim().toLowerCase();
@@ -891,13 +882,14 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
           qr[s.id] = ok;
         }
       } else {
+        if (!nextChecked[e.id]) continue;
         total++;
         const ok = answers[e.id] === e.question.answer;
         correct += ok ? 1 : 0;
         qr[e.id] = ok;
       }
     }
-    setTimeout(() => onScore?.(correct, total, qr), 0);
+    if (total > 0) setTimeout(() => onScore?.(correct, total, qr), 0);
   }
 
   if (listeningData.length === 0) return <Card><p className="text-gray-400 italic">No listening exercises today.</p></Card>;
@@ -992,7 +984,7 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 
                 {!mcChecked ? (
                   <button
-                    onClick={() => { const next = { ...checked, [extract.id]: true }; setChecked(next); reportScoreIfComplete(next, sentenceChecked); }}
+                    onClick={() => { const next = { ...checked, [extract.id]: true }; setChecked(next); reportCumulativeScore(next, sentenceChecked); }}
                     className="mt-3 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Check
@@ -1049,7 +1041,7 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 
                 {!scChecked ? (
                   <button
-                    onClick={() => { const next = { ...sentenceChecked, [extract.id]: true }; setSentenceChecked(next); reportScoreIfComplete(checked, next); }}
+                    onClick={() => { const next = { ...sentenceChecked, [extract.id]: true }; setSentenceChecked(next); reportCumulativeScore(checked, next); }}
                     className="mt-1 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Check All
