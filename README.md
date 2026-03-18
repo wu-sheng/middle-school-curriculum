@@ -19,6 +19,8 @@
 - **数学公式**：KaTeX（支持分数、次方、开方、几何符号等）
 - **内容格式**：YAML（课程结构和学习内容）
 - **语音**：OpenAI TTS API 预生成音频（词汇发音 + 听力对话）
+- **进度追踪**：GitHub 私有仓库同步（Fine-grained PAT）或浏览器本地存储
+- **评分系统**：每题对错记录、颜色分级徽章、分数历史
 
 ### 项目结构
 ```
@@ -115,6 +117,8 @@ A bilingual open-source self-study platform for primary and middle school studen
 - **Math Rendering**: KaTeX (fractions, exponents, roots, geometry symbols)
 - **Content Format**: YAML
 - **Audio**: OpenAI TTS API for vocabulary pronunciation and listening dialogues
+- **Progress Tracking**: GitHub private repo sync (Fine-grained PAT) or browser localStorage
+- **Scoring**: Per-question right/wrong, color-coded badges, score history
 
 ### Course Progress
 

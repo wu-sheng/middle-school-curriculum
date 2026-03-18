@@ -148,15 +148,39 @@ This material is for self-study, progressing from simple to complex — not aime
 - Tailwind 动态类名必须使用完整字符串（不能拼接 `bg-${var}`），通过 theme 对象传递
 
 ## 组件架构 / Component Architecture
-- `LessonView.tsx`：主课程渲染组件，含 LearnTab、ExamplesTab、QuizSection
-- `QuizSection`：统一的练习/提升题组件，通过 `QuizTheme` 对象控制配色
+### 数学课程组件
+- `LessonView.tsx`：主课程渲染组件，含 LearnTab、ExamplesTab、QuizSection，支持 URL hash 定位课时/tab
+- `QuizSection`：统一的练习/提升题组件，通过 `QuizTheme` 对象控制配色，支持 `onScore` 回调记录成绩
 - `ContentBlock` / `ContentList`：双语内容渲染辅助组件
 - `BiMathText`：双语模式下堆叠 zh/en 的 MathText 封装
-- `MathText` / `MathBlock`：支持 `langOverride` 参数控制关键词语言
+- `MathText` / `MathBlock`：支持 `langOverride` 参数控制关键词语言，使用 CSS 自定义 tooltip（非原生 title）
 - `BiText` / `BiBlock` / `BiLabel`：通用双语文本组件
 - `GeometryDiagrams.tsx`：几何 SVG 图示组件集合
 - `NumberLine.tsx`：数轴 SVG 组件
-- `Sidebar.tsx`：侧边栏导航 + 分段式语言切换
+
+### FCE 英语课程组件
+- `FCEQuestView.tsx`：Quest 知识模块渲染，支持 Q01（构词法）和 Q02（时态）两种数据格式
+- `FCEDailyView.tsx`：每日练习 6-tab 界面（阅读/词汇/语法/词形转换/听力/写作），支持 URL hash 定位 tab
+- `DayBadge.tsx`：每日练习列表中的评分颜色徽章（绿90+/蓝75-89/黄60-74/红<60）
+- `VocabPopover`：阅读中高亮词汇的点击弹出释义卡片（替代原生 tooltip）
+- `AudioWord.tsx`：单词发音，优先播放预生成 .mp3，fallback 到 Web Speech API
+
+### 全局组件
+- `Sidebar.tsx`：侧边栏导航 + 分段式语言切换 + FCE 路由支持
+- `TopBar.tsx`：右上角用户信息栏 + 同步倒计时 + 最近访问页面下拉
+- `SettingsModal.tsx`：设置弹窗（GitHub 同步登录 / 本地模式）+ UserBadge
+- `AutoRedirect.tsx`：首页自动跳转到上次学习页面 + 60 秒延迟记录 lastVisitedPath
+- `SectionAnchor.tsx`：章节锚点，支持复制链接 + 书签功能
+- `StudyTimer.tsx`：底部学习计时条（45分钟课时 + 15分钟休息）
+- `Collapsible.tsx`：可折叠区域（answer/step/default 三种变体）
+
+### 进度追踪系统
+- `progressContext.tsx`：React Context 管理学习进度，支持 GitHub 同步和本地模式
+  - 分文件存储：`profile.json` + `math-progress.json` + `english-fce-progress.json` + `score-history.json`
+  - 每题对错记录（`questionResults`），为后续错题本功能预留
+  - 最近访问页面（`recentPages`，最多 4 条）
+  - 每 5 分钟自动同步 + 交卷后立即同步
+- `githubSync.ts`：GitHub Contents API 读写封装，支持 Fine-grained PAT 单 repo 授权
 
 ## Claude 配置约定 / Claude Settings Conventions
 - 本地允许的命令应放在 `.claude/settings.local.json` 中，而非 `.claude/settings.json`
