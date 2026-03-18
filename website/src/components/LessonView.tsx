@@ -175,8 +175,10 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   const { lang } = useLang();
   const ui = getUi(lang) as Record<string, string>;
   const l = lesson as unknown as Record<string, unknown>;
-  const { isLoggedIn, recordPageVisit } = useProgress();
+  const { isLoggedIn, recordPageVisit, recordChapterScore } = useProgress();
   const pathname = usePathname();
+  // Extract chapterId from pathname like /lesson/math/grade7/rational-numbers
+  const chapterId = pathname?.split("/").pop() || "";
 
   // Record page visit for math lessons
   useEffect(() => {
@@ -311,6 +313,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           sectionField="section"
           theme={exerciseTheme}
           icon="🐼"
+          onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "exercise", s, m) : undefined}
         />
       )}
       {activeTab === "exam" && lesson.examPrep && (
@@ -319,6 +322,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           prefix="exam"
           theme={examTheme}
           icon="🎯"
+          onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "examPrep", s, m) : undefined}
           intro={
             <div className="bg-gradient-to-r from-amber-50/60 to-orange-50/60 rounded-2xl p-5 border border-amber-100">
               <h3 className="font-bold text-amber-600 mb-2 flex items-center gap-2">
@@ -649,6 +653,7 @@ function QuizSection({
   theme,
   icon,
   intro,
+  onScore,
 }: {
   questions: QuizQuestion[];
   prefix: string;
@@ -656,6 +661,7 @@ function QuizSection({
   theme: QuizTheme;
   icon: string;
   intro?: React.ReactNode;
+  onScore?: (score: number, maxScore: number, questionResults: Record<string, boolean>) => void;
 }) {
   const { lang } = useLang();
   const ui = getUi(lang);
@@ -691,7 +697,18 @@ function QuizSection({
             {lang === "en" ? `${questions.length} questions` : `共 ${questions.length} 题`}
           </span>
           <button
-            onClick={() => setGraded(true)}
+            onClick={() => {
+              setGraded(true);
+              if (onScore) {
+                const result = getScore(questions, answers, prefix);
+                const qr: Record<string, boolean> = {};
+                questions.forEach(q => {
+                  const r = getQuestionResult(q, answers, prefix, true);
+                  if (r !== null) qr[`${prefix}${q.number}`] = r;
+                });
+                onScore(result.correct, result.total, qr);
+              }
+            }}
             className={`${theme.submitBtn} text-white text-sm font-medium px-4 py-1.5 rounded-xl hover:shadow-md transition-shadow`}
           >
             {icon} {ui.submitGrade}
