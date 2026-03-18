@@ -11,7 +11,7 @@ interface SettingsModalProps {
 
 export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
   const { lang } = useLang();
-  const { isLoggedIn, isSyncing, userName, login, loginLocal, logout, setUserName, syncNow, progress, configInfo } = useProgress();
+  const { isLoggedIn, isSyncing, userName, login, loginLocal, logout, setUserName, syncNow, profile, configInfo } = useProgress();
 
   const [token, setToken] = useState("");
   const [repo, setRepo] = useState("xinbloom-progress");
@@ -72,8 +72,8 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
   );
 
   const formatLastSync = useCallback(() => {
-    if (!progress?.lastUpdated) return biPick(lang, "从未同步", "Never synced");
-    const diff = Date.now() - new Date(progress.lastUpdated).getTime();
+    if (!profile?.lastUpdated) return biPick(lang, "从未同步", "Never synced");
+    const diff = Date.now() - new Date(profile.lastUpdated).getTime();
     const mins = Math.floor(diff / 60000);
     if (mins < 1) return biPick(lang, "刚刚同步", "Just now");
     if (mins < 60) return biPick(lang, `${mins} 分钟前`, `${mins} minute${mins > 1 ? "s" : ""} ago`);
@@ -81,7 +81,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     if (hours < 24) return biPick(lang, `${hours} 小时前`, `${hours} hour${hours > 1 ? "s" : ""} ago`);
     const days = Math.floor(hours / 24);
     return biPick(lang, `${days} 天前`, `${days} day${days > 1 ? "s" : ""} ago`);
-  }, [progress?.lastUpdated, lang]);
+  }, [profile?.lastUpdated, lang]);
 
   if (!isOpen) return null;
 
@@ -115,7 +115,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
           {isLoggedIn ? (
             /* ── Logged-in view ── */
             <>
-              {progress?.loginMode === "local" ? (
+              {profile?.loginMode === "local" ? (
                 <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-1">
                   <p className="text-amber-700 font-medium">
                     {label("本地模式", "Local Mode")}

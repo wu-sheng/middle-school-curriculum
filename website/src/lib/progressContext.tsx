@@ -22,47 +22,42 @@ import {
 // Data types
 // ---------------------------------------------------------------------------
 
-export interface SubjectProgress {
-  /** FCE Daily Practice */
+export interface UserProfile {
+  userName: string;
+  loginMode: "github" | "local";
+  lastUpdated: string;
+  lastVisitedPath?: string;
+}
+
+export interface MathProgress {
+  lastUpdated: string;
+  chapterScores: {
+    [chapterId: string]: {
+      completedAt: string;
+      exerciseScore?: number;
+      examPrepScore?: number;
+      questionResults?: { [questionId: string]: boolean };
+    };
+  };
+}
+
+export interface FCEProgress {
+  lastUpdated: string;
   dailyCompleted: {
     [dayId: string]: {
-      completedAt: string; // ISO date
+      completedAt: string;
       scores: {
-        reading?: number; // 0-100 percentage
+        reading?: number;
         vocab?: number;
         grammar?: number;
         useOfEnglish?: number;
         listening?: number;
       };
-      // Per-question results for future wrong-question review
-      questionResults?: {
-        [questionId: string]: boolean; // true = correct, false = wrong
-      };
+      questionResults?: { [questionId: string]: boolean };
     };
   };
-  /** FCE Quest completion */
   questCompleted: {
-    [questId: string]: {
-      completedAt: string;
-    };
-  };
-  /** Math chapter scores */
-  chapterScores: {
-    [chapterId: string]: {
-      completedAt: string;
-      exerciseScore?: number; // 0-100
-      examPrepScore?: number; // 0-100
-    };
-  };
-}
-
-export interface ProgressData {
-  userName: string;
-  lastUpdated: string; // ISO date
-  lastVisitedPath?: string; // last page the user was on
-  loginMode: "github" | "local";
-  subjects: {
-    [subjectId: string]: SubjectProgress;
+    [questId: string]: { completedAt: string };
   };
 }
 
@@ -84,7 +79,7 @@ export interface ScoreHistory {
 
 export interface ProgressContextType {
   // State
-  progress: ProgressData | null;
+  profile: UserProfile | null;
   scoreHistory: ScoreHistory | null;
   isLoggedIn: boolean;
   isSyncing: boolean;
@@ -137,22 +132,42 @@ export interface ProgressContextType {
 // Constants
 // ---------------------------------------------------------------------------
 
-const PROGRESS_LOCAL_KEY = "xinbloom-progress";
-const HISTORY_LOCAL_KEY = "xinbloom-score-history";
-const PROGRESS_FILE = "progress.json";
+const PROFILE_FILE = "profile.json";
+const MATH_FILE = "math-progress.json";
+const FCE_FILE = "english-fce-progress.json";
 const HISTORY_FILE = "score-history.json";
+
+const PROFILE_LOCAL_KEY = "xinbloom-profile";
+const MATH_LOCAL_KEY = "xinbloom-math-progress";
+const FCE_LOCAL_KEY = "xinbloom-fce-progress";
+const HISTORY_LOCAL_KEY = "xinbloom-score-history";
+
 const SYNC_DEBOUNCE_MS = 2000;
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
 
-function emptyProgress(userName: string, loginMode: "github" | "local" = "github"): ProgressData {
+function emptyProfile(userName: string, loginMode: "github" | "local" = "github"): UserProfile {
   return {
     userName,
-    lastUpdated: new Date().toISOString(),
     loginMode,
-    subjects: {},
+    lastUpdated: new Date().toISOString(),
+  };
+}
+
+function emptyMathProgress(): MathProgress {
+  return {
+    lastUpdated: new Date().toISOString(),
+    chapterScores: {},
+  };
+}
+
+function emptyFCEProgress(): FCEProgress {
+  return {
+    lastUpdated: new Date().toISOString(),
+    dailyCompleted: {},
+    questCompleted: {},
   };
 }
 
@@ -160,49 +175,44 @@ function emptyHistory(): ScoreHistory {
   return { entries: [] };
 }
 
-function ensureSubject(progress: ProgressData, subjectId: string): SubjectProgress {
-  if (!progress.subjects[subjectId]) {
-    progress.subjects[subjectId] = {
-      dailyCompleted: {},
-      questCompleted: {},
-      chapterScores: {},
-    };
-  }
-  return progress.subjects[subjectId];
+function saveProfileLocal(data: UserProfile): void {
+  try { localStorage.setItem(PROFILE_LOCAL_KEY, JSON.stringify(data)); } catch { /* quota exceeded */ }
+}
+function loadProfileLocal(): UserProfile | null {
+  try {
+    const raw = localStorage.getItem(PROFILE_LOCAL_KEY);
+    return raw ? (JSON.parse(raw) as UserProfile) : null;
+  } catch { return null; }
 }
 
-function saveProgressLocal(data: ProgressData): void {
+function saveMathLocal(data: MathProgress): void {
+  try { localStorage.setItem(MATH_LOCAL_KEY, JSON.stringify(data)); } catch { /* quota exceeded */ }
+}
+function loadMathLocal(): MathProgress | null {
   try {
-    localStorage.setItem(PROGRESS_LOCAL_KEY, JSON.stringify(data));
-  } catch {
-    /* quota exceeded — ignore */
-  }
+    const raw = localStorage.getItem(MATH_LOCAL_KEY);
+    return raw ? (JSON.parse(raw) as MathProgress) : null;
+  } catch { return null; }
 }
 
-function loadProgressLocal(): ProgressData | null {
+function saveFCELocal(data: FCEProgress): void {
+  try { localStorage.setItem(FCE_LOCAL_KEY, JSON.stringify(data)); } catch { /* quota exceeded */ }
+}
+function loadFCELocal(): FCEProgress | null {
   try {
-    const raw = localStorage.getItem(PROGRESS_LOCAL_KEY);
-    return raw ? (JSON.parse(raw) as ProgressData) : null;
-  } catch {
-    return null;
-  }
+    const raw = localStorage.getItem(FCE_LOCAL_KEY);
+    return raw ? (JSON.parse(raw) as FCEProgress) : null;
+  } catch { return null; }
 }
 
 function saveHistoryLocal(data: ScoreHistory): void {
-  try {
-    localStorage.setItem(HISTORY_LOCAL_KEY, JSON.stringify(data));
-  } catch {
-    /* ignore */
-  }
+  try { localStorage.setItem(HISTORY_LOCAL_KEY, JSON.stringify(data)); } catch { /* ignore */ }
 }
-
 function loadHistoryLocal(): ScoreHistory | null {
   try {
     const raw = localStorage.getItem(HISTORY_LOCAL_KEY);
     return raw ? (JSON.parse(raw) as ScoreHistory) : null;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 // ---------------------------------------------------------------------------
@@ -224,23 +234,36 @@ export function useProgress(): ProgressContextType {
 // ---------------------------------------------------------------------------
 
 export function ProgressProvider({ children }: { children: React.ReactNode }) {
-  const [progress, setProgress] = useState<ProgressData | null>(null);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
+  const [mathProgress, setMathProgress] = useState<MathProgress | null>(null);
+  const [fceProgress, setFCEProgress] = useState<FCEProgress | null>(null);
   const [scoreHistory, setScoreHistory] = useState<ScoreHistory | null>(null);
   const [config, setConfig] = useState<GitHubConfig | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [userName, setUserNameState] = useState("");
 
   // SHA tracking for conflict-free updates
-  const progressShaRef = useRef<string | null>(null);
+  const profileShaRef = useRef<string | null>(null);
+  const mathShaRef = useRef<string | null>(null);
+  const fceShaRef = useRef<string | null>(null);
   const historyShaRef = useRef<string | null>(null);
 
-  // Debounce timer refs
-  const progressTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const historyTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Dirty flags — track which files need syncing
+  const profileDirtyRef = useRef(false);
+  const mathDirtyRef = useRef(false);
+  const fceDirtyRef = useRef(false);
+  const historyDirtyRef = useRef(false);
+
+  // Single debounce timer for all files
+  const syncTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Keep a ref to latest state for async callbacks
-  const progressRef = useRef(progress);
-  progressRef.current = progress;
+  const profileRef = useRef(profile);
+  profileRef.current = profile;
+  const mathRef = useRef(mathProgress);
+  mathRef.current = mathProgress;
+  const fceRef = useRef(fceProgress);
+  fceRef.current = fceProgress;
   const historyRef = useRef(scoreHistory);
   historyRef.current = scoreHistory;
   const configRef = useRef(config);
@@ -250,104 +273,73 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   // GitHub sync helpers
   // -----------------------------------------------------------------------
 
-  const syncProgressToGitHub = useCallback(async () => {
-    const cfg = configRef.current;
-    const data = progressRef.current;
-    if (!cfg || !data) return;
-
-    setIsSyncing(true);
+  /** Write a single file to GitHub with 409-conflict retry */
+  const writeFileWithRetry = useCallback(async (
+    cfg: GitHubConfig,
+    fileName: string,
+    data: unknown,
+    shaRef: React.MutableRefObject<string | null>
+  ) => {
     try {
-      const newSha = await writeProgressFile(
-        cfg,
-        PROGRESS_FILE,
-        data,
-        progressShaRef.current
-      );
-      progressShaRef.current = newSha;
+      const newSha = await writeProgressFile(cfg, fileName, data, shaRef.current);
+      shaRef.current = newSha;
     } catch (err) {
-      console.error("[progressContext] Failed to sync progress to GitHub:", err);
-      // On 409 conflict, re-read to get latest sha, then retry once
+      console.error(`[progressContext] Failed to sync ${fileName} to GitHub:`, err);
       if (err instanceof Error && err.message.includes("409")) {
         try {
-          const remote = await readProgressFile(cfg, PROGRESS_FILE);
+          const remote = await readProgressFile(cfg, fileName);
           if (remote) {
-            progressShaRef.current = remote.sha;
-            const newSha = await writeProgressFile(
-              cfg,
-              PROGRESS_FILE,
-              data,
-              remote.sha
-            );
-            progressShaRef.current = newSha;
+            shaRef.current = remote.sha;
+            const newSha = await writeProgressFile(cfg, fileName, data, remote.sha);
+            shaRef.current = newSha;
           }
         } catch (retryErr) {
-          console.error("[progressContext] Retry also failed:", retryErr);
+          console.error(`[progressContext] ${fileName} retry also failed:`, retryErr);
         }
       }
-    } finally {
-      setIsSyncing(false);
     }
   }, []);
 
-  const syncHistoryToGitHub = useCallback(async () => {
+  /** Flush all dirty files to GitHub */
+  const flushDirtyToGitHub = useCallback(async () => {
     const cfg = configRef.current;
-    const data = historyRef.current;
-    if (!cfg || !data) return;
+    if (!cfg) return;
 
     setIsSyncing(true);
     try {
-      const newSha = await writeProgressFile(
-        cfg,
-        HISTORY_FILE,
-        data,
-        historyShaRef.current
-      );
-      historyShaRef.current = newSha;
-    } catch (err) {
-      console.error("[progressContext] Failed to sync history to GitHub:", err);
-      if (err instanceof Error && err.message.includes("409")) {
-        try {
-          const remote = await readProgressFile(cfg, HISTORY_FILE);
-          if (remote) {
-            historyShaRef.current = remote.sha;
-            const newSha = await writeProgressFile(
-              cfg,
-              HISTORY_FILE,
-              data,
-              remote.sha
-            );
-            historyShaRef.current = newSha;
-          }
-        } catch (retryErr) {
-          console.error("[progressContext] History retry also failed:", retryErr);
-        }
+      const promises: Promise<void>[] = [];
+      if (profileDirtyRef.current && profileRef.current) {
+        profileDirtyRef.current = false;
+        promises.push(writeFileWithRetry(cfg, PROFILE_FILE, profileRef.current, profileShaRef));
       }
+      if (mathDirtyRef.current && mathRef.current) {
+        mathDirtyRef.current = false;
+        promises.push(writeFileWithRetry(cfg, MATH_FILE, mathRef.current, mathShaRef));
+      }
+      if (fceDirtyRef.current && fceRef.current) {
+        fceDirtyRef.current = false;
+        promises.push(writeFileWithRetry(cfg, FCE_FILE, fceRef.current, fceShaRef));
+      }
+      if (historyDirtyRef.current && historyRef.current) {
+        historyDirtyRef.current = false;
+        promises.push(writeFileWithRetry(cfg, HISTORY_FILE, historyRef.current, historyShaRef));
+      }
+      await Promise.all(promises);
     } finally {
       setIsSyncing(false);
     }
-  }, []);
+  }, [writeFileWithRetry]);
 
-  /** Schedule a debounced sync for progress.json */
-  const scheduleSyncProgress = useCallback(() => {
-    if (progressTimerRef.current) {
-      clearTimeout(progressTimerRef.current);
+  /** Schedule a debounced sync for all dirty files */
+  const scheduleSyncDirty = useCallback(() => {
+    if (syncTimerRef.current) {
+      clearTimeout(syncTimerRef.current);
     }
-    progressTimerRef.current = setTimeout(() => {
-      progressTimerRef.current = null;
-      syncProgressToGitHub();
+    syncTimerRef.current = setTimeout(() => {
+      syncTimerRef.current = null;
+      flushDirtyToGitHub();
     }, SYNC_DEBOUNCE_MS);
-  }, [syncProgressToGitHub]);
-
-  /** Schedule a debounced sync for score-history.json */
-  const scheduleSyncHistory = useCallback(() => {
-    if (historyTimerRef.current) {
-      clearTimeout(historyTimerRef.current);
-    }
-    historyTimerRef.current = setTimeout(() => {
-      historyTimerRef.current = null;
-      syncHistoryToGitHub();
-    }, SYNC_DEBOUNCE_MS);
-  }, [syncHistoryToGitHub]);
+  }, [flushDirtyToGitHub]);
 
   // -----------------------------------------------------------------------
   // Load from GitHub
@@ -356,26 +348,63 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const loadFromGitHub = useCallback(async (cfg: GitHubConfig) => {
     setIsSyncing(true);
     try {
-      // Load progress
-      const progressResult = await readProgressFile(cfg, PROGRESS_FILE);
-      let prog: ProgressData;
-      if (progressResult) {
-        prog = progressResult.data as ProgressData;
-        progressShaRef.current = progressResult.sha;
+      // Load profile
+      const profileResult = await readProgressFile(cfg, PROFILE_FILE);
+      let prof: UserProfile;
+      if (profileResult) {
+        prof = profileResult.data as UserProfile;
+        profileShaRef.current = profileResult.sha;
       } else {
-        // First time — create initial progress file in repo
-        prog = emptyProgress(cfg.owner);
+        prof = emptyProfile(cfg.owner);
         try {
-          const sha = await writeProgressFile(cfg, PROGRESS_FILE, prog, null);
-          progressShaRef.current = sha;
+          const sha = await writeProgressFile(cfg, PROFILE_FILE, prof, null);
+          profileShaRef.current = sha;
         } catch (e) {
-          console.error("[progressContext] Failed to create initial progress.json:", e);
-          progressShaRef.current = null;
+          console.error("[progressContext] Failed to create initial profile.json:", e);
+          profileShaRef.current = null;
         }
       }
-      setProgress(prog);
-      setUserNameState(prog.userName || cfg.owner);
-      saveProgressLocal(prog);
+      setProfile(prof);
+      setUserNameState(prof.userName || cfg.owner);
+      saveProfileLocal(prof);
+
+      // Load math progress
+      const mathResult = await readProgressFile(cfg, MATH_FILE);
+      let math: MathProgress;
+      if (mathResult) {
+        math = mathResult.data as MathProgress;
+        mathShaRef.current = mathResult.sha;
+      } else {
+        math = emptyMathProgress();
+        try {
+          const sha = await writeProgressFile(cfg, MATH_FILE, math, null);
+          mathShaRef.current = sha;
+        } catch (e) {
+          console.error("[progressContext] Failed to create initial math-progress.json:", e);
+          mathShaRef.current = null;
+        }
+      }
+      setMathProgress(math);
+      saveMathLocal(math);
+
+      // Load FCE progress
+      const fceResult = await readProgressFile(cfg, FCE_FILE);
+      let fce: FCEProgress;
+      if (fceResult) {
+        fce = fceResult.data as FCEProgress;
+        fceShaRef.current = fceResult.sha;
+      } else {
+        fce = emptyFCEProgress();
+        try {
+          const sha = await writeProgressFile(cfg, FCE_FILE, fce, null);
+          fceShaRef.current = sha;
+        } catch (e) {
+          console.error("[progressContext] Failed to create initial english-fce-progress.json:", e);
+          fceShaRef.current = null;
+        }
+      }
+      setFCEProgress(fce);
+      saveFCELocal(fce);
 
       // Load score history
       const historyResult = await readProgressFile(cfg, HISTORY_FILE);
@@ -384,7 +413,6 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         hist = historyResult.data as ScoreHistory;
         historyShaRef.current = historyResult.sha;
       } else {
-        // First time — create initial history file in repo
         hist = emptyHistory();
         try {
           const sha = await writeProgressFile(cfg, HISTORY_FILE, hist, null);
@@ -399,11 +427,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     } catch (err) {
       console.error("[progressContext] Failed to load from GitHub:", err);
       // Fall back to local data
-      const localProg = loadProgressLocal();
+      const localProf = loadProfileLocal();
+      const localMath = loadMathLocal();
+      const localFCE = loadFCELocal();
       const localHist = loadHistoryLocal();
-      setProgress(localProg || emptyProgress(cfg.owner));
+      setProfile(localProf || emptyProfile(cfg.owner));
+      setMathProgress(localMath || emptyMathProgress());
+      setFCEProgress(localFCE || emptyFCEProgress());
       setScoreHistory(localHist || emptyHistory());
-      setUserNameState(localProg?.userName || cfg.owner);
+      setUserNameState(localProf?.userName || cfg.owner);
     } finally {
       setIsSyncing(false);
     }
@@ -420,22 +452,21 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       loadFromGitHub(savedConfig);
     } else {
       // Check for local-only mode
-      const localProg = loadProgressLocal();
+      const localProf = loadProfileLocal();
+      const localMath = loadMathLocal();
+      const localFCE = loadFCELocal();
       const localHist = loadHistoryLocal();
-      if (localProg) {
-        setProgress(localProg);
-        setUserNameState(localProg.userName || "");
+      if (localProf) {
+        setProfile(localProf);
+        setUserNameState(localProf.userName || "");
       }
-      if (localHist) {
-        setScoreHistory(localHist);
-      }
-      // Mark as "logged in" in local mode if data exists
-      // (handled by checking progress !== null && loginMode === "local" in isLoggedIn)
+      if (localMath) setMathProgress(localMath);
+      if (localFCE) setFCEProgress(localFCE);
+      if (localHist) setScoreHistory(localHist);
     }
-    // Cleanup debounce timers on unmount
+    // Cleanup debounce timer on unmount
     return () => {
-      if (progressTimerRef.current) clearTimeout(progressTimerRef.current);
-      if (historyTimerRef.current) clearTimeout(historyTimerRef.current);
+      if (syncTimerRef.current) clearTimeout(syncTimerRef.current);
     };
   }, [loadFromGitHub]);
 
@@ -451,16 +482,17 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         saveGitHubConfig(cfg);
         setConfig(cfg);
         await loadFromGitHub(cfg);
-        // If display name provided and progress was just created, update it
+        // If display name provided and profile was just created, update it
         if (displayName?.trim()) {
           setUserNameState(displayName.trim());
-          setProgress((prev) => {
+          setProfile((prev) => {
             if (!prev) return prev;
             const updated = { ...prev, userName: displayName.trim(), lastUpdated: new Date().toISOString() };
-            saveProgressLocal(updated);
+            saveProfileLocal(updated);
             return updated;
           });
-          scheduleSyncProgress();
+          profileDirtyRef.current = true;
+          scheduleSyncDirty();
         }
         return true;
       } catch (err) {
@@ -468,15 +500,21 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         return false;
       }
     },
-    [loadFromGitHub]
+    [loadFromGitHub, scheduleSyncDirty]
   );
 
   const loginLocal = useCallback((displayName: string) => {
-    // No GitHub config needed. Just initialize progress in localStorage.
-    const prog = emptyProgress(displayName || "Student", "local");
-    setProgress(prog);
+    // No GitHub config needed. Just initialize in localStorage.
+    const prof = emptyProfile(displayName || "Student", "local");
+    setProfile(prof);
     setUserNameState(displayName || "Student");
-    saveProgressLocal(prog);
+    saveProfileLocal(prof);
+    const math = emptyMathProgress();
+    setMathProgress(math);
+    saveMathLocal(math);
+    const fce = emptyFCEProgress();
+    setFCEProgress(fce);
+    saveFCELocal(fce);
     const hist = emptyHistory();
     setScoreHistory(hist);
     saveHistoryLocal(hist);
@@ -486,25 +524,31 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
 
   const logout = useCallback(() => {
     // Flush any pending syncs
-    if (progressTimerRef.current) {
-      clearTimeout(progressTimerRef.current);
-      progressTimerRef.current = null;
-    }
-    if (historyTimerRef.current) {
-      clearTimeout(historyTimerRef.current);
-      historyTimerRef.current = null;
+    if (syncTimerRef.current) {
+      clearTimeout(syncTimerRef.current);
+      syncTimerRef.current = null;
     }
 
     clearGitHubConfig();
     setConfig(null);
-    setProgress(null);
+    setProfile(null);
+    setMathProgress(null);
+    setFCEProgress(null);
     setScoreHistory(null);
     setUserNameState("");
-    progressShaRef.current = null;
+    profileShaRef.current = null;
+    mathShaRef.current = null;
+    fceShaRef.current = null;
     historyShaRef.current = null;
+    profileDirtyRef.current = false;
+    mathDirtyRef.current = false;
+    fceDirtyRef.current = false;
+    historyDirtyRef.current = false;
 
     try {
-      localStorage.removeItem(PROGRESS_LOCAL_KEY);
+      localStorage.removeItem(PROFILE_LOCAL_KEY);
+      localStorage.removeItem(MATH_LOCAL_KEY);
+      localStorage.removeItem(FCE_LOCAL_KEY);
       localStorage.removeItem(HISTORY_LOCAL_KEY);
       localStorage.removeItem("xinbloom-login-mode");
     } catch {
@@ -515,22 +559,25 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const setUserName = useCallback(
     (name: string) => {
       setUserNameState(name);
-      setProgress((prev) => {
+      setProfile((prev) => {
         if (!prev) return prev;
         const updated = { ...prev, userName: name, lastUpdated: new Date().toISOString() };
-        saveProgressLocal(updated);
+        saveProfileLocal(updated);
         return updated;
       });
-      if (config) scheduleSyncProgress();
+      if (config) {
+        profileDirtyRef.current = true;
+        scheduleSyncDirty();
+      }
     },
-    [config, scheduleSyncProgress]
+    [config, scheduleSyncDirty]
   );
 
   const recordPageVisit = useCallback((path: string) => {
-    setProgress(prev => {
+    setProfile(prev => {
       if (!prev) return prev;
       const updated = { ...prev, lastVisitedPath: path, lastUpdated: new Date().toISOString() };
-      saveProgressLocal(updated);
+      saveProfileLocal(updated);
       return updated;
     });
     // Don't sync to GitHub immediately for every page visit — the periodic sync will handle it
@@ -540,46 +587,87 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     const cfg = configRef.current;
     if (!cfg) return;
     // Flush pending debounced writes
-    if (progressTimerRef.current) {
-      clearTimeout(progressTimerRef.current);
-      progressTimerRef.current = null;
-    }
-    if (historyTimerRef.current) {
-      clearTimeout(historyTimerRef.current);
-      historyTimerRef.current = null;
+    if (syncTimerRef.current) {
+      clearTimeout(syncTimerRef.current);
+      syncTimerRef.current = null;
     }
     setIsSyncing(true);
     try {
-      const localProg = loadProgressLocal();
+      const localProf = loadProfileLocal();
+      const localMath = loadMathLocal();
+      const localFCE = loadFCELocal();
       const localHist = loadHistoryLocal();
 
       // Check remote for diffs before writing
-      const remoteProg = await readProgressFile(cfg, PROGRESS_FILE);
-      const remoteHist = await readProgressFile(cfg, HISTORY_FILE);
+      const [remoteProf, remoteMath, remoteFCE, remoteHist] = await Promise.all([
+        readProgressFile(cfg, PROFILE_FILE),
+        readProgressFile(cfg, MATH_FILE),
+        readProgressFile(cfg, FCE_FILE),
+        readProgressFile(cfg, HISTORY_FILE),
+      ]);
 
-      // Compare by lastUpdated — if remote is newer, pull; otherwise push
-      if (remoteProg) {
-        const remoteData = remoteProg.data as ProgressData;
+      // --- Profile: compare by lastUpdated ---
+      if (remoteProf) {
+        const remoteData = remoteProf.data as UserProfile;
         const remoteTime = new Date(remoteData?.lastUpdated || 0).getTime();
-        const localTime = new Date(localProg?.lastUpdated || 0).getTime();
+        const localTime = new Date(localProf?.lastUpdated || 0).getTime();
         if (remoteTime > localTime) {
-          // Remote is newer — pull
-          setProgress(remoteData);
+          setProfile(remoteData);
           setUserNameState(remoteData.userName || cfg.owner);
-          saveProgressLocal(remoteData);
-          progressShaRef.current = remoteProg.sha;
-        } else if (localProg && localTime > remoteTime) {
-          // Local is newer — push
-          const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, remoteProg.sha);
-          progressShaRef.current = sha;
+          saveProfileLocal(remoteData);
+          profileShaRef.current = remoteProf.sha;
+        } else if (localProf && localTime > remoteTime) {
+          const sha = await writeProgressFile(cfg, PROFILE_FILE, localProf, remoteProf.sha);
+          profileShaRef.current = sha;
         } else {
-          progressShaRef.current = remoteProg.sha;
+          profileShaRef.current = remoteProf.sha;
         }
-      } else if (localProg) {
-        const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, null);
-        progressShaRef.current = sha;
+      } else if (localProf) {
+        const sha = await writeProgressFile(cfg, PROFILE_FILE, localProf, null);
+        profileShaRef.current = sha;
       }
 
+      // --- Math progress: compare by lastUpdated ---
+      if (remoteMath) {
+        const remoteData = remoteMath.data as MathProgress;
+        const remoteTime = new Date(remoteData?.lastUpdated || 0).getTime();
+        const localTime = new Date(localMath?.lastUpdated || 0).getTime();
+        if (remoteTime > localTime) {
+          setMathProgress(remoteData);
+          saveMathLocal(remoteData);
+          mathShaRef.current = remoteMath.sha;
+        } else if (localMath && localTime > remoteTime) {
+          const sha = await writeProgressFile(cfg, MATH_FILE, localMath, remoteMath.sha);
+          mathShaRef.current = sha;
+        } else {
+          mathShaRef.current = remoteMath.sha;
+        }
+      } else if (localMath) {
+        const sha = await writeProgressFile(cfg, MATH_FILE, localMath, null);
+        mathShaRef.current = sha;
+      }
+
+      // --- FCE progress: compare by lastUpdated ---
+      if (remoteFCE) {
+        const remoteData = remoteFCE.data as FCEProgress;
+        const remoteTime = new Date(remoteData?.lastUpdated || 0).getTime();
+        const localTime = new Date(localFCE?.lastUpdated || 0).getTime();
+        if (remoteTime > localTime) {
+          setFCEProgress(remoteData);
+          saveFCELocal(remoteData);
+          fceShaRef.current = remoteFCE.sha;
+        } else if (localFCE && localTime > remoteTime) {
+          const sha = await writeProgressFile(cfg, FCE_FILE, localFCE, remoteFCE.sha);
+          fceShaRef.current = sha;
+        } else {
+          fceShaRef.current = remoteFCE.sha;
+        }
+      } else if (localFCE) {
+        const sha = await writeProgressFile(cfg, FCE_FILE, localFCE, null);
+        fceShaRef.current = sha;
+      }
+
+      // --- History: compare by entry count ---
       if (remoteHist) {
         const remoteEntries = (remoteHist.data as ScoreHistory)?.entries?.length || 0;
         const localEntries = localHist?.entries?.length || 0;
@@ -597,6 +685,12 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         const sha = await writeProgressFile(cfg, HISTORY_FILE, localHist, null);
         historyShaRef.current = sha;
       }
+
+      // Clear all dirty flags after full sync
+      profileDirtyRef.current = false;
+      mathDirtyRef.current = false;
+      fceDirtyRef.current = false;
+      historyDirtyRef.current = false;
     } catch (e) {
       console.error("[progressContext] Sync failed:", e);
     } finally {
@@ -624,24 +718,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   }, [config, syncNow]);
 
   // -----------------------------------------------------------------------
-  // Record helpers (shared pattern)
+  // Record helpers
   // -----------------------------------------------------------------------
-
-  const updateProgress = useCallback(
-    (updater: (draft: ProgressData) => void) => {
-      setProgress((prev) => {
-        const data = prev ? { ...prev } : emptyProgress(userName);
-        // Deep-clone subjects to avoid mutation
-        data.subjects = { ...data.subjects };
-        updater(data);
-        data.lastUpdated = new Date().toISOString();
-        saveProgressLocal(data);
-        return data;
-      });
-      if (configRef.current) scheduleSyncProgress();
-    },
-    [userName, scheduleSyncProgress]
-  );
 
   const appendHistory = useCallback(
     (entry: ScoreHistoryEntry) => {
@@ -651,9 +729,12 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         saveHistoryLocal(hist);
         return hist;
       });
-      if (configRef.current) scheduleSyncHistory();
+      if (configRef.current) {
+        historyDirtyRef.current = true;
+        scheduleSyncDirty();
+      }
     },
-    [scheduleSyncHistory]
+    [scheduleSyncDirty]
   );
 
   // -----------------------------------------------------------------------
@@ -665,22 +746,28 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       const pct = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
       const now = new Date().toISOString();
 
-      updateProgress((data) => {
-        const subj = ensureSubject(data, "english");
-        if (!subj.dailyCompleted[dayId]) {
-          subj.dailyCompleted[dayId] = {
-            completedAt: now,
-            scores: {},
-          };
+      setFCEProgress((prev) => {
+        const data = prev ? { ...prev, dailyCompleted: { ...prev.dailyCompleted }, questCompleted: { ...prev.questCompleted } } : emptyFCEProgress();
+        if (!data.dailyCompleted[dayId]) {
+          data.dailyCompleted[dayId] = { completedAt: now, scores: {} };
+        } else {
+          data.dailyCompleted[dayId] = { ...data.dailyCompleted[dayId], scores: { ...data.dailyCompleted[dayId].scores } };
         }
-        subj.dailyCompleted[dayId].scores[tab as keyof typeof subj.dailyCompleted[string]["scores"]] = pct;
-        subj.dailyCompleted[dayId].completedAt = now;
+        data.dailyCompleted[dayId].scores[tab as keyof typeof data.dailyCompleted[string]["scores"]] = pct;
+        data.dailyCompleted[dayId].completedAt = now;
         if (questionResults) {
-          const day = subj.dailyCompleted[dayId];
+          const day = data.dailyCompleted[dayId];
           day.questionResults = { ...(day.questionResults || {}), ...questionResults };
         }
-        data.subjects["english"] = { ...subj };
+        data.lastUpdated = now;
+        saveFCELocal(data);
+        return data;
       });
+
+      if (configRef.current) {
+        fceDirtyRef.current = true;
+        scheduleSyncDirty();
+      }
 
       appendHistory({
         id: `${dayId}-${tab}`,
@@ -693,7 +780,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       // Sync immediately after scoring
       setTimeout(() => syncNow(), 500);
     },
-    [updateProgress, appendHistory, syncNow]
+    [appendHistory, syncNow, scheduleSyncDirty]
   );
 
   const recordChapterScore = useCallback(
@@ -706,19 +793,28 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       const pct = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
       const now = new Date().toISOString();
 
-      updateProgress((data) => {
-        const subj = ensureSubject(data, "math");
-        if (!subj.chapterScores[chapterId]) {
-          subj.chapterScores[chapterId] = { completedAt: now };
+      setMathProgress((prev) => {
+        const data = prev ? { ...prev, chapterScores: { ...prev.chapterScores } } : emptyMathProgress();
+        if (!data.chapterScores[chapterId]) {
+          data.chapterScores[chapterId] = { completedAt: now };
+        } else {
+          data.chapterScores[chapterId] = { ...data.chapterScores[chapterId] };
         }
         if (type === "exercise") {
-          subj.chapterScores[chapterId].exerciseScore = pct;
+          data.chapterScores[chapterId].exerciseScore = pct;
         } else {
-          subj.chapterScores[chapterId].examPrepScore = pct;
+          data.chapterScores[chapterId].examPrepScore = pct;
         }
-        subj.chapterScores[chapterId].completedAt = now;
-        data.subjects["math"] = { ...subj };
+        data.chapterScores[chapterId].completedAt = now;
+        data.lastUpdated = now;
+        saveMathLocal(data);
+        return data;
       });
+
+      if (configRef.current) {
+        mathDirtyRef.current = true;
+        scheduleSyncDirty();
+      }
 
       appendHistory({
         id: `${chapterId}-${type}`,
@@ -730,20 +826,27 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
 
       setTimeout(() => syncNow(), 500);
     },
-    [updateProgress, appendHistory, syncNow]
+    [appendHistory, syncNow, scheduleSyncDirty]
   );
 
   const recordQuestComplete = useCallback(
     async (questId: string) => {
       const now = new Date().toISOString();
 
-      updateProgress((data) => {
-        const subj = ensureSubject(data, "english");
-        subj.questCompleted[questId] = { completedAt: now };
-        data.subjects["english"] = { ...subj };
+      setFCEProgress((prev) => {
+        const data = prev ? { ...prev, dailyCompleted: { ...prev.dailyCompleted }, questCompleted: { ...prev.questCompleted } } : emptyFCEProgress();
+        data.questCompleted[questId] = { completedAt: now };
+        data.lastUpdated = now;
+        saveFCELocal(data);
+        return data;
       });
+
+      if (configRef.current) {
+        fceDirtyRef.current = true;
+        scheduleSyncDirty();
+      }
     },
-    [updateProgress]
+    [scheduleSyncDirty]
   );
 
   // -----------------------------------------------------------------------
@@ -752,30 +855,27 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
 
   const getDailyScores = useCallback(
     (dayId: string): Record<string, number> | null => {
-      const subj = progress?.subjects?.["english"];
-      if (!subj?.dailyCompleted[dayId]) return null;
-      const scores = subj.dailyCompleted[dayId].scores;
-      // Return only defined scores
+      if (!fceProgress?.dailyCompleted[dayId]) return null;
+      const scores = fceProgress.dailyCompleted[dayId].scores;
       const result: Record<string, number> = {};
       for (const [k, v] of Object.entries(scores)) {
         if (v !== undefined) result[k] = v;
       }
       return Object.keys(result).length > 0 ? result : null;
     },
-    [progress]
+    [fceProgress]
   );
 
   const getChapterScores = useCallback(
     (
       chapterId: string
     ): { exerciseScore?: number; examPrepScore?: number } | null => {
-      const subj = progress?.subjects?.["math"];
-      if (!subj?.chapterScores[chapterId]) return null;
-      const { exerciseScore, examPrepScore } = subj.chapterScores[chapterId];
+      if (!mathProgress?.chapterScores[chapterId]) return null;
+      const { exerciseScore, examPrepScore } = mathProgress.chapterScores[chapterId];
       if (exerciseScore === undefined && examPrepScore === undefined) return null;
       return { exerciseScore, examPrepScore };
     },
-    [progress]
+    [mathProgress]
   );
 
   const getScoreHistory = useCallback(
@@ -789,31 +889,29 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const isDayCompleted = useCallback((dayId: string): boolean => {
-    const subj = progress?.subjects?.english;
-    const day = subj?.dailyCompleted?.[dayId];
+    const day = fceProgress?.dailyCompleted?.[dayId];
     if (!day?.scores) return false;
     const s = day.scores;
     // Completed if at least reading + grammar + useOfEnglish have scores
     return s.reading != null && s.grammar != null && s.useOfEnglish != null;
-  }, [progress]);
+  }, [fceProgress]);
 
   const getDayAverageScore = useCallback((dayId: string): number | null => {
-    const subj = progress?.subjects?.english;
-    const day = subj?.dailyCompleted?.[dayId];
+    const day = fceProgress?.dailyCompleted?.[dayId];
     if (!day?.scores) return null;
     const values = Object.values(day.scores).filter((v): v is number => v != null);
     if (values.length === 0) return null;
     return Math.round(values.reduce((a, b) => a + b, 0) / values.length);
-  }, [progress]);
+  }, [fceProgress]);
 
   // -----------------------------------------------------------------------
   // Context value
   // -----------------------------------------------------------------------
 
   const value: ProgressContextType = {
-    progress,
+    profile,
     scoreHistory,
-    isLoggedIn: config !== null || progress?.loginMode === "local",
+    isLoggedIn: config !== null || profile?.loginMode === "local",
     isSyncing,
     userName,
     configInfo: config ? { owner: config.owner, repo: config.repo } : null,
@@ -826,7 +924,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     nextSyncIn,
 
     recordPageVisit,
-    lastVisitedPath: progress?.lastVisitedPath || null,
+    lastVisitedPath: profile?.lastVisitedPath || null,
 
     recordDailyScore,
     recordChapterScore,
