@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { useLang, biPick } from "@/lib/i18n";
+import { useProgress } from "@/lib/progressContext";
 import { BiLabel, BiBlock } from "./BiText";
 import Collapsible from "./Collapsible";
 import AudioWord from "./AudioWord";
@@ -463,6 +465,12 @@ function LessonCard({ lesson, lang, index }: { lesson: FCELesson; lang: string; 
 
 export default function FCEQuestView({ quest }: { quest: FCEQuest }) {
   const { lang } = useLang();
+  const { isLoggedIn, recordPageVisit } = useProgress();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (isLoggedIn && pathname) recordPageVisit(pathname);
+  }, [isLoggedIn, pathname, recordPageVisit]);
 
   return (
     <div className="max-w-3xl mx-auto" style={{ fontSize: 16, lineHeight: 1.7 }}>

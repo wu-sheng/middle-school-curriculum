@@ -689,8 +689,11 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         score,
         maxScore,
       });
+
+      // Sync immediately after scoring
+      setTimeout(() => syncNow(), 500);
     },
-    [updateProgress, appendHistory]
+    [updateProgress, appendHistory, syncNow]
   );
 
   const recordChapterScore = useCallback(
@@ -724,8 +727,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         score,
         maxScore,
       });
+
+      setTimeout(() => syncNow(), 500);
     },
-    [updateProgress, appendHistory]
+    [updateProgress, appendHistory, syncNow]
   );
 
   const recordQuestComplete = useCallback(

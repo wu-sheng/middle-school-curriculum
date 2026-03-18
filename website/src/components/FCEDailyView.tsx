@@ -292,11 +292,12 @@ function ReadingTab({ data, allVocab, onScore }: { data: DailyViewProps["reading
 /*  Tab 2 : Vocabulary                                                 */
 /* ------------------------------------------------------------------ */
 
-function VocabTab({ vocabData, newIds, reviewIds, lang }: {
+function VocabTab({ vocabData, newIds, reviewIds, lang, onScore }: {
   vocabData: DailyViewProps["vocabData"];
   newIds: string[];
   reviewIds: string[];
   lang: string;
+  onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void;
 }) {
   const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({});
   const [quizGraded, setQuizGraded] = useState(false);
@@ -430,7 +431,7 @@ function VocabTab({ vocabData, newIds, reviewIds, lang }: {
             );
           })}
           {!quizGraded ? (
-            <button onClick={() => setQuizGraded(true)} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
+            <button onClick={() => { setQuizGraded(true); const qr: Record<string, boolean> = {}; const s = quizWords.reduce((acc, w) => { const ok = (quizAnswers[w.id] || "").trim().toLowerCase() === w.word.toLowerCase(); qr[w.id] = ok; return acc + (ok ? 1 : 0); }, 0); onScore?.(s, quizWords.length, qr); }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
               Check
             </button>
           ) : (
@@ -1131,7 +1132,7 @@ export default function FCEDailyView(props: DailyViewProps) {
       <div>
         {activeTab === "reading" && <ReadingTab data={readingData} lang={lang} allVocab={vocabData} onScore={(s, m, qr) => handleScore("reading", s, m, qr)} />}
         {activeTab === "vocab" && (
-          <VocabTab vocabData={vocabData} newIds={day.newVocab} reviewIds={day.reviewVocab} lang={lang} />
+          <VocabTab vocabData={vocabData} newIds={day.newVocab} reviewIds={day.reviewVocab} lang={lang} onScore={(s, m, qr) => handleScore("vocab", s, m, qr)} />
         )}
         {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} onScore={(s, m, qr) => handleScore("grammar", s, m, qr)} />}
         {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m, qr) => handleScore("useOfEnglish", s, m, qr)} />}

@@ -11,6 +11,8 @@ import GeometryDiagram, { hasGeometryDiagram } from "./GeometryDiagrams";
 import SectionAnchor from "./SectionAnchor";
 import StudyTimer from "./StudyTimer";
 import AudioWord from "./AudioWord";
+import { useProgress } from "@/lib/progressContext";
+import { usePathname } from "next/navigation";
 
 /** Render content with bilingual support: in "both" mode shows zh + en stacked */
 function ContentBlock({ obj, field, className = "", lang }: {
@@ -173,6 +175,15 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   const { lang } = useLang();
   const ui = getUi(lang) as Record<string, string>;
   const l = lesson as unknown as Record<string, unknown>;
+  const { isLoggedIn, recordPageVisit } = useProgress();
+  const pathname = usePathname();
+
+  // Record page visit for math lessons
+  useEffect(() => {
+    if (isLoggedIn && pathname) {
+      recordPageVisit(pathname);
+    }
+  }, [isLoggedIn, pathname, recordPageVisit]);
 
   // Handle hash-based navigation on mount and hash change
   const navigateToHash = useCallback(() => {
