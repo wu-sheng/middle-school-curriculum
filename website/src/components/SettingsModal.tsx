@@ -123,8 +123,8 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
         </div>
 
         <div className="px-6 py-5 space-y-5">
-          {/* Name conflict — shown above everything until resolved */}
-          {nameConflict && (
+          {/* Name conflict — shown only when logged in and conflict exists */}
+          {isLoggedIn && nameConflict && (
             <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-2">
               <p className="text-sm text-amber-700 font-medium">
                 {label("仓库中已有名称", "Name found in repository")}:
@@ -219,7 +219,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                   )}
                 </button>
                 <button
-                  onClick={() => { logout(); setToken(""); setError(""); }}
+                  onClick={() => { logout(); setToken(""); setError(""); setNameConflict(null); }}
                   className="flex-1 rounded-lg bg-gray-100 text-gray-600 py-2 text-sm font-medium hover:bg-gray-200 transition-colors"
                 >
                   {label("断开连接", "Disconnect")}
