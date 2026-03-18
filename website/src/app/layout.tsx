@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import TopBar from "@/components/TopBar";
+import AutoRedirect from "@/components/AutoRedirect";
 import { loadCurriculum } from "@/lib/loadYaml";
 import { I18nProvider } from "@/lib/i18n";
 import { ProgressProvider } from "@/lib/progressContext";
@@ -73,6 +74,7 @@ export default function RootLayout({
           <ProgressProvider>
             <Sidebar subjects={sidebarData} />
             <TopBar />
+            <AutoRedirect />
             <main className="lg:ml-64 min-h-screen">
               {children}
             </main>

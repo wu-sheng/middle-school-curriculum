@@ -1,5 +1,6 @@
 import { loadAllFceDays, loadFceDaily } from "@/lib/loadFce";
 import Link from "next/link";
+import DayBadge from "@/components/DayBadge";
 
 export default function FCEDailyListPage() {
   const allDays = loadAllFceDays();
@@ -33,9 +34,15 @@ export default function FCEDailyListPage() {
         <p className="text-sm text-gray-400 mt-1">
           Every day: Reading + Vocabulary + Grammar + Use of English. Writing on weekends.
         </p>
-        <p className="text-sm text-gray-400">
-          每天：阅读 + 词汇 + 语法 + 词形转换，周末加写作。
-        </p>
+
+        {/* Legend */}
+        <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+          <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-green-100 border border-green-300" /> 90+ ★</span>
+          <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-blue-100 border border-blue-300" /> 75-89 ✓</span>
+          <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-amber-100 border border-amber-300" /> 60-74</span>
+          <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-red-100 border border-red-300" /> &lt;60</span>
+          <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-white border border-purple-100" /> not started</span>
+        </div>
       </div>
 
       {/* Months */}
@@ -54,23 +61,14 @@ export default function FCEDailyListPage() {
           </div>
 
           <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 gap-2">
-            {group.days.map((day) => {
-              const hasWriting = !!day.writing;
-              return (
-                <Link
-                  key={day.id}
-                  href={`/fce/daily/${day.id}`}
-                  className={`aspect-square flex flex-col items-center justify-center rounded-xl text-sm font-medium border transition-colors hover:shadow-sm ${
-                    hasWriting
-                      ? "bg-gradient-to-br from-pink-50 to-purple-50 border-pink-200 text-pink-600 hover:border-pink-400"
-                      : "bg-white border-purple-100 text-purple-500 hover:border-purple-300"
-                  }`}
-                >
-                  <span className="text-base font-bold">{day.dayOffset}</span>
-                  {hasWriting && <span className="text-[10px] text-pink-400 -mt-0.5">✍️</span>}
-                </Link>
-              );
-            })}
+            {group.days.map((day) => (
+              <DayBadge
+                key={day.id}
+                dayId={day.id}
+                dayOffset={day.dayOffset}
+                hasWriting={!!day.writing}
+              />
+            ))}
           </div>
 
           <div className="mt-2 text-xs text-gray-300">

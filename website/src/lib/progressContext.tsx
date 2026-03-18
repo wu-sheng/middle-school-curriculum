@@ -34,6 +34,10 @@ export interface SubjectProgress {
         useOfEnglish?: number;
         listening?: number;
       };
+      // Per-question results for future wrong-question review
+      questionResults?: {
+        [questionId: string]: boolean; // true = correct, false = wrong
+      };
     };
   };
   /** FCE Quest completion */
@@ -55,6 +59,8 @@ export interface SubjectProgress {
 export interface ProgressData {
   userName: string;
   lastUpdated: string; // ISO date
+  lastVisitedPath?: string; // last page the user was on
+  loginMode: "github" | "local";
   subjects: {
     [subjectId: string]: SubjectProgress;
   };
@@ -87,17 +93,23 @@ export interface ProgressContextType {
 
   // Actions
   login: (token: string, repo: string, displayName?: string) => Promise<boolean>;
+  loginLocal: (displayName: string) => void; // local-only login (no GitHub)
   logout: () => void;
   setUserName: (name: string) => void;
   syncNow: () => Promise<void>;
   nextSyncIn: number; // seconds until next auto-sync (0 if not logged in)
+
+  // Page tracking
+  recordPageVisit: (path: string) => void;
+  lastVisitedPath: string | null;
 
   // Record scores
   recordDailyScore: (
     dayId: string,
     tab: string,
     score: number,
-    maxScore: number
+    maxScore: number,
+    questionResults?: Record<string, boolean>
   ) => Promise<void>;
   recordChapterScore: (
     chapterId: string,
@@ -115,6 +127,10 @@ export interface ProgressContextType {
   getScoreHistory: (
     id: string
   ) => { date: string; score: number; maxScore: number }[];
+
+  // Check if a day is fully completed (all scorable tabs have scores)
+  isDayCompleted: (dayId: string) => boolean;
+  getDayAverageScore: (dayId: string) => number | null; // average across all tabs, 0-100
 }
 
 // ---------------------------------------------------------------------------
@@ -131,10 +147,11 @@ const SYNC_DEBOUNCE_MS = 2000;
 // Helpers
 // ---------------------------------------------------------------------------
 
-function emptyProgress(userName: string): ProgressData {
+function emptyProgress(userName: string, loginMode: "github" | "local" = "github"): ProgressData {
   return {
     userName,
     lastUpdated: new Date().toISOString(),
+    loginMode,
     subjects: {},
   };
 }
@@ -402,7 +419,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       setConfig(savedConfig);
       loadFromGitHub(savedConfig);
     } else {
-      // Load from localStorage only (offline mode)
+      // Check for local-only mode
       const localProg = loadProgressLocal();
       const localHist = loadHistoryLocal();
       if (localProg) {
@@ -412,6 +429,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       if (localHist) {
         setScoreHistory(localHist);
       }
+      // Mark as "logged in" in local mode if data exists
+      // (handled by checking progress !== null && loginMode === "local" in isLoggedIn)
     }
     // Cleanup debounce timers on unmount
     return () => {
@@ -452,6 +471,19 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     [loadFromGitHub]
   );
 
+  const loginLocal = useCallback((displayName: string) => {
+    // No GitHub config needed. Just initialize progress in localStorage.
+    const prog = emptyProgress(displayName || "Student", "local");
+    setProgress(prog);
+    setUserNameState(displayName || "Student");
+    saveProgressLocal(prog);
+    const hist = emptyHistory();
+    setScoreHistory(hist);
+    saveHistoryLocal(hist);
+    // Set a flag so we know we're in local mode
+    try { localStorage.setItem("xinbloom-login-mode", "local"); } catch {}
+  }, []);
+
   const logout = useCallback(() => {
     // Flush any pending syncs
     if (progressTimerRef.current) {
@@ -474,6 +506,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.removeItem(PROGRESS_LOCAL_KEY);
       localStorage.removeItem(HISTORY_LOCAL_KEY);
+      localStorage.removeItem("xinbloom-login-mode");
     } catch {
       /* ignore */
     }
@@ -492,6 +525,16 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     },
     [config, scheduleSyncProgress]
   );
+
+  const recordPageVisit = useCallback((path: string) => {
+    setProgress(prev => {
+      if (!prev) return prev;
+      const updated = { ...prev, lastVisitedPath: path, lastUpdated: new Date().toISOString() };
+      saveProgressLocal(updated);
+      return updated;
+    });
+    // Don't sync to GitHub immediately for every page visit — the periodic sync will handle it
+  }, []);
 
   const syncNow = useCallback(async () => {
     const cfg = configRef.current;
@@ -618,7 +661,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   // -----------------------------------------------------------------------
 
   const recordDailyScore = useCallback(
-    async (dayId: string, tab: string, score: number, maxScore: number) => {
+    async (dayId: string, tab: string, score: number, maxScore: number, questionResults?: Record<string, boolean>) => {
       const pct = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
       const now = new Date().toISOString();
 
@@ -632,6 +675,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         }
         subj.dailyCompleted[dayId].scores[tab as keyof typeof subj.dailyCompleted[string]["scores"]] = pct;
         subj.dailyCompleted[dayId].completedAt = now;
+        if (questionResults) {
+          const day = subj.dailyCompleted[dayId];
+          day.questionResults = { ...(day.questionResults || {}), ...questionResults };
+        }
         data.subjects["english"] = { ...subj };
       });
 
@@ -736,6 +783,24 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     [scoreHistory]
   );
 
+  const isDayCompleted = useCallback((dayId: string): boolean => {
+    const subj = progress?.subjects?.english;
+    const day = subj?.dailyCompleted?.[dayId];
+    if (!day?.scores) return false;
+    const s = day.scores;
+    // Completed if at least reading + grammar + useOfEnglish have scores
+    return s.reading != null && s.grammar != null && s.useOfEnglish != null;
+  }, [progress]);
+
+  const getDayAverageScore = useCallback((dayId: string): number | null => {
+    const subj = progress?.subjects?.english;
+    const day = subj?.dailyCompleted?.[dayId];
+    if (!day?.scores) return null;
+    const values = Object.values(day.scores).filter((v): v is number => v != null);
+    if (values.length === 0) return null;
+    return Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+  }, [progress]);
+
   // -----------------------------------------------------------------------
   // Context value
   // -----------------------------------------------------------------------
@@ -743,16 +808,20 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const value: ProgressContextType = {
     progress,
     scoreHistory,
-    isLoggedIn: config !== null,
+    isLoggedIn: config !== null || progress?.loginMode === "local",
     isSyncing,
     userName,
     configInfo: config ? { owner: config.owner, repo: config.repo } : null,
 
     login,
+    loginLocal,
     logout,
     setUserName,
     syncNow,
     nextSyncIn,
+
+    recordPageVisit,
+    lastVisitedPath: progress?.lastVisitedPath || null,
 
     recordDailyScore,
     recordChapterScore,
@@ -761,6 +830,9 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     getDailyScores,
     getChapterScores,
     getScoreHistory,
+
+    isDayCompleted,
+    getDayAverageScore,
   };
 
   return (

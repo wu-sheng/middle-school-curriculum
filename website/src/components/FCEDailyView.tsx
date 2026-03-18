@@ -161,7 +161,7 @@ function Card({ children, className = "" }: { children: React.ReactNode; classNa
 /*  Tab 1 : Reading                                                    */
 /* ------------------------------------------------------------------ */
 
-function ReadingTab({ data, allVocab, onScore }: { data: DailyViewProps["readingData"]; lang: string; allVocab: DailyViewProps["vocabData"]; onScore?: (score: number, max: number) => void }) {
+function ReadingTab({ data, allVocab, onScore }: { data: DailyViewProps["readingData"]; lang: string; allVocab: DailyViewProps["vocabData"]; onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [graded, setGraded] = useState(false);
 
@@ -251,7 +251,7 @@ function ReadingTab({ data, allVocab, onScore }: { data: DailyViewProps["reading
         })}
 
         {!graded ? (
-          <button onClick={() => { setGraded(true); if (data) { const s = data.questions.reduce((acc, q) => acc + (answers[q.id] === q.answer ? 1 : 0), 0); onScore?.(s, data.questions.length); } }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
+          <button onClick={() => { setGraded(true); if (data) { const s = data.questions.reduce((acc, q) => acc + (answers[q.id] === q.answer ? 1 : 0), 0); const qr: Record<string, boolean> = {}; data.questions.forEach(q => { qr[q.id] = answers[q.id] === q.answer; }); onScore?.(s, data.questions.length, qr); } }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
             Check Answers
           </button>
         ) : (
@@ -448,7 +448,7 @@ function VocabTab({ vocabData, newIds, reviewIds, lang }: {
 /*  Tab 3 : Grammar                                                    */
 /* ------------------------------------------------------------------ */
 
-function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProps["grammarData"]; lang: string; onScore?: (score: number, max: number) => void }) {
+function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProps["grammarData"]; lang: string; onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void }) {
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [blanksAnswers, setBlanksAnswers] = useState<Record<string, Record<string, string>>>({});
@@ -473,14 +473,19 @@ function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProp
       const next = { ...prev, [q.id]: true };
       // If all answered, report score
       if (Object.keys(next).length === total) {
+        const qr: Record<string, boolean> = {};
         const correct = grammarData.filter(g => {
           if (g.type === "cloze-passage" && g.blanks) {
             const ba = blanksAnswers[g.id] || {};
-            return g.blanks.every(b => (ba[b.id] || "").trim().toLowerCase() === b.answer.toLowerCase());
+            const ok = g.blanks.every(b => (ba[b.id] || "").trim().toLowerCase() === b.answer.toLowerCase());
+            qr[g.id] = ok;
+            return ok;
           }
-          return (answers[g.id] || "").trim().toLowerCase() === g.answer.toLowerCase();
+          const ok = (answers[g.id] || "").trim().toLowerCase() === g.answer.toLowerCase();
+          qr[g.id] = ok;
+          return ok;
         }).length;
-        onScore?.(correct, total);
+        onScore?.(correct, total, qr);
       }
       return next;
     });
@@ -650,7 +655,7 @@ function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProp
 /*  Tab 4 : Use of English                                             */
 /* ------------------------------------------------------------------ */
 
-function UoETab({ uoeData, lang, onScore }: { uoeData: DailyViewProps["uoeData"]; lang: string; onScore?: (score: number, max: number) => void }) {
+function UoETab({ uoeData, lang, onScore }: { uoeData: DailyViewProps["uoeData"]; lang: string; onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [graded, setGraded] = useState(false);
 
@@ -700,7 +705,7 @@ function UoETab({ uoeData, lang, onScore }: { uoeData: DailyViewProps["uoeData"]
       })}
 
       {!graded ? (
-        <button onClick={() => { setGraded(true); const s = uoeData.reduce((acc, q) => acc + ((answers[q.id] || "").trim().toLowerCase() === q.answer.toLowerCase() ? 1 : 0), 0); onScore?.(s, uoeData.length); }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
+        <button onClick={() => { setGraded(true); const qr: Record<string, boolean> = {}; const s = uoeData.reduce((acc, q) => { const ok = (answers[q.id] || "").trim().toLowerCase() === q.answer.toLowerCase(); qr[q.id] = ok; return acc + (ok ? 1 : 0); }, 0); onScore?.(s, uoeData.length, qr); }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
           Check Answers
         </button>
       ) : (
@@ -852,7 +857,7 @@ function speakerColor(voice: string): string {
   }
 }
 
-function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyViewProps["listeningData"]; lang: string; onScore?: (score: number, max: number) => void }) {
+function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyViewProps["listeningData"]; lang: string; onScore?: (score: number, max: number, questionResults?: Record<string, boolean>) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   // Part 2 sentence-completion answers: keyed by sentence id
@@ -1034,15 +1039,20 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 export default function FCEDailyView(props: DailyViewProps) {
   const { day, month, quest, readingData, vocabData, grammarData, uoeData, writingData, listeningData } = props;
   const { lang } = useLang();
-  const { isLoggedIn, recordDailyScore, getDailyScores } = useProgress();
+  const { isLoggedIn, recordDailyScore, getDailyScores, recordPageVisit } = useProgress();
+
+  // Record page visit
+  useEffect(() => {
+    if (isLoggedIn) recordPageVisit(`/fce/daily/${day.id}`);
+  }, [isLoggedIn, day.id, recordPageVisit]);
 
   // Saved scores for this day
   const savedScores = getDailyScores(day.id);
 
   // Callback for tabs to report scores
-  const handleScore = useCallback((tab: string, score: number, maxScore: number) => {
+  const handleScore = useCallback((tab: string, score: number, maxScore: number, questionResults?: Record<string, boolean>) => {
     if (isLoggedIn && maxScore > 0) {
-      recordDailyScore(day.id, tab, score, maxScore);
+      recordDailyScore(day.id, tab, score, maxScore, questionResults);
     }
   }, [isLoggedIn, day.id, recordDailyScore]);
 
@@ -1119,13 +1129,13 @@ export default function FCEDailyView(props: DailyViewProps) {
 
       {/* Tab Content */}
       <div>
-        {activeTab === "reading" && <ReadingTab data={readingData} lang={lang} allVocab={vocabData} onScore={(s, m) => handleScore("reading", s, m)} />}
+        {activeTab === "reading" && <ReadingTab data={readingData} lang={lang} allVocab={vocabData} onScore={(s, m, qr) => handleScore("reading", s, m, qr)} />}
         {activeTab === "vocab" && (
           <VocabTab vocabData={vocabData} newIds={day.newVocab} reviewIds={day.reviewVocab} lang={lang} />
         )}
-        {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} onScore={(s, m) => handleScore("grammar", s, m)} />}
-        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m) => handleScore("useOfEnglish", s, m)} />}
-        {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} onScore={(s, m) => handleScore("listening", s, m)} />}
+        {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} onScore={(s, m, qr) => handleScore("grammar", s, m, qr)} />}
+        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m, qr) => handleScore("useOfEnglish", s, m, qr)} />}
+        {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} onScore={(s, m, qr) => handleScore("listening", s, m, qr)} />}
         {activeTab === "writing" && <WritingTab data={writingData} lang={lang} />}
       </div>
 
