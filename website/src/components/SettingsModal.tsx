@@ -35,7 +35,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     }
   }, [isOpen]);
 
-  const [nameConflict, setNameConflict] = useState<string | null>(null); // remote name if conflict
+  const [nameConflict, setNameConflict] = useState<{ remote: string; local: string } | null>(null);
 
   const handleConnect = useCallback(async () => {
     if (!token.trim()) {
@@ -45,13 +45,15 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     setError("");
     setNameConflict(null);
     setConnecting(true);
+    // Save the input name before login overwrites it
+    const inputName = displayName.trim();
     try {
-      const result = await login(token.trim(), repo.trim(), displayName.trim() || undefined);
+      const result = await login(token.trim(), repo.trim(), inputName || undefined);
       if (!result.success) {
         setError(biPick(lang, "连接失败", "Connection failed"));
       } else if (result.remoteUserName) {
-        // Name conflict: repo has a different name
-        setNameConflict(result.remoteUserName);
+        // Name conflict: save both names for the dialog
+        setNameConflict({ remote: result.remoteUserName, local: inputName });
       }
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : String(e);
@@ -297,26 +299,26 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-2">
                   <p className="text-sm text-amber-700 font-medium">
                     {label("仓库中已有名称", "Name found in repository")}:
-                    <span className="font-bold ml-1">{nameConflict}</span>
+                    <span className="font-bold ml-1">{nameConflict.remote}</span>
                   </p>
                   <p className="text-xs text-amber-500">
                     {label(
-                      `你输入的是 "${displayName.trim()}"，仓库中已存的是 "${nameConflict}"。选择使用哪个？`,
-                      `You entered "${displayName.trim()}", but "${nameConflict}" exists in the repo. Which one to use?`
+                      `你输入的是 "${nameConflict.local}"，仓库中已存的是 "${nameConflict.remote}"。选择使用哪个？`,
+                      `You entered "${nameConflict.local}", but "${nameConflict.remote}" exists in the repo. Which one to use?`
                     )}
                   </p>
                   <div className="flex gap-2">
                     <button
-                      onClick={() => { setUserName(nameConflict); setDisplayName(nameConflict); setNameConflict(null); }}
+                      onClick={() => { setUserName(nameConflict.remote); setDisplayName(nameConflict.remote); setNameConflict(null); }}
                       className="flex-1 rounded-lg border border-amber-300 text-amber-700 py-1.5 text-xs font-medium hover:bg-amber-100 transition-colors"
                     >
-                      {label(`使用 "${nameConflict}"`, `Use "${nameConflict}"`)}
+                      {label(`使用 "${nameConflict.remote}"`, `Use "${nameConflict.remote}"`)}
                     </button>
                     <button
-                      onClick={() => { setUserName(displayName.trim()); setNameConflict(null); }}
+                      onClick={() => { setUserName(nameConflict.local); setDisplayName(nameConflict.local); setNameConflict(null); }}
                       className="flex-1 rounded-lg border border-purple-300 text-purple-700 py-1.5 text-xs font-medium hover:bg-purple-50 transition-colors"
                     >
-                      {label(`使用 "${displayName.trim()}"`, `Use "${displayName.trim()}"`)}
+                      {label(`使用 "${nameConflict.local}"`, `Use "${nameConflict.local}"`)}
                     </button>
                   </div>
                 </div>
