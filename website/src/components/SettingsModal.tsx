@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { useLang, biPick } from "@/lib/i18n";
 import { useProgress } from "@/lib/progressContext";
 
@@ -333,12 +334,24 @@ function formatCountdown(seconds: number): string {
 
 export function UserBadge({ onClick }: { onClick: () => void }) {
   const { lang } = useLang();
-  const { isLoggedIn, isSyncing, userName, syncNow, nextSyncIn } = useProgress();
+  const { isLoggedIn, isSyncing, userName, syncNow, nextSyncIn, lastVisitedPath } = useProgress();
+  const pathname = usePathname();
 
   const initial = userName ? userName.charAt(0).toUpperCase() : "?";
+  const showResume = isLoggedIn && lastVisitedPath && lastVisitedPath !== "/" && lastVisitedPath !== pathname;
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1.5">
+      {/* Resume learning link */}
+      {showResume && (
+        <a
+          href={lastVisitedPath!}
+          className="text-xs text-purple-400 hover:text-purple-600 transition-colors px-2 py-1 rounded-lg hover:bg-purple-50"
+          title={lastVisitedPath!}
+        >
+          ▶ {biPick(lang, "继续", "Resume")}
+        </a>
+      )}
       <button
         onClick={onClick}
         className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm hover:bg-purple-50 transition-colors"
