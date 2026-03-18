@@ -290,29 +290,65 @@ function Spinner() {
 }
 
 /* ── UserBadge for sidebar ── */
+function formatCountdown(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
 export function UserBadge({ onClick }: { onClick: () => void }) {
   const { lang } = useLang();
-  const { isLoggedIn, userName } = useProgress();
+  const { isLoggedIn, isSyncing, userName, syncNow, nextSyncIn } = useProgress();
 
   const initial = userName ? userName.charAt(0).toUpperCase() : "?";
 
   return (
-    <button
-      onClick={onClick}
-      className="flex items-center gap-2 w-full rounded-lg px-3 py-2 text-sm hover:bg-purple-50 transition-colors"
-    >
-      {isLoggedIn ? (
-        <>
-          <span className="flex items-center justify-center w-7 h-7 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-xs font-bold shrink-0">
-            {initial}
+    <div className="flex items-center gap-2">
+      <button
+        onClick={onClick}
+        className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm hover:bg-purple-50 transition-colors"
+      >
+        {isLoggedIn ? (
+          <div className="flex items-center gap-2">
+            <span className="flex items-center justify-center w-7 h-7 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-xs font-bold shrink-0">
+              {initial}
+            </span>
+            <div className="text-left">
+              <div className="text-gray-700 text-sm leading-tight">{userName}</div>
+              {nextSyncIn > 0 && !isSyncing && (
+                <div className="text-[10px] text-gray-400 leading-tight tabular-nums">
+                  sync in {formatCountdown(nextSyncIn)}
+                </div>
+              )}
+              {isSyncing && (
+                <div className="text-[10px] text-purple-400 leading-tight">
+                  syncing...
+                </div>
+              )}
+            </div>
+          </div>
+        ) : (
+          <span className="text-gray-500">
+            ⚙️ {biPick(lang, "设置", "Settings")}
           </span>
-          <span className="text-gray-700 truncate">{userName}</span>
-        </>
-      ) : (
-        <span className="text-gray-500">
-          {biPick(lang, "设置", "Settings")}
-        </span>
+        )}
+      </button>
+      {isLoggedIn && (
+        <button
+          onClick={(e) => { e.stopPropagation(); syncNow(); }}
+          disabled={isSyncing}
+          className={`w-7 h-7 flex items-center justify-center rounded-full transition-colors ${
+            isSyncing
+              ? "bg-purple-100 text-purple-400"
+              : "text-gray-300 hover:text-purple-500 hover:bg-purple-50"
+          }`}
+          title="Sync now"
+        >
+          <svg className={`w-3.5 h-3.5 ${isSyncing ? "animate-spin" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </button>
       )}
-    </button>
+    </div>
   );
 }

@@ -90,6 +90,7 @@ export interface ProgressContextType {
   logout: () => void;
   setUserName: (name: string) => void;
   syncNow: () => Promise<void>;
+  nextSyncIn: number; // seconds until next auto-sync (0 if not logged in)
 
   // Record scores
   recordDailyScore: (
@@ -560,13 +561,23 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
-  // Periodic sync every 5 minutes
+  // Periodic sync every 5 minutes with countdown
+  const SYNC_INTERVAL = 5 * 60; // seconds
+  const [nextSyncIn, setNextSyncIn] = useState(0);
+
   useEffect(() => {
-    if (!config) return;
-    const interval = setInterval(() => {
-      syncNow();
-    }, 5 * 60 * 1000);
-    return () => clearInterval(interval);
+    if (!config) { setNextSyncIn(0); return; }
+    setNextSyncIn(SYNC_INTERVAL);
+    const tick = setInterval(() => {
+      setNextSyncIn((prev) => {
+        if (prev <= 1) {
+          syncNow();
+          return SYNC_INTERVAL;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(tick);
   }, [config, syncNow]);
 
   // -----------------------------------------------------------------------
@@ -741,6 +752,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     logout,
     setUserName,
     syncNow,
+    nextSyncIn,
 
     recordDailyScore,
     recordChapterScore,
