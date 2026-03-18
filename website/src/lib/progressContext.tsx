@@ -344,8 +344,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         prog = progressResult.data as ProgressData;
         progressShaRef.current = progressResult.sha;
       } else {
+        // First time — create initial progress file in repo
         prog = emptyProgress(cfg.owner);
-        progressShaRef.current = null;
+        try {
+          const sha = await writeProgressFile(cfg, PROGRESS_FILE, prog, null);
+          progressShaRef.current = sha;
+        } catch (e) {
+          console.error("[progressContext] Failed to create initial progress.json:", e);
+          progressShaRef.current = null;
+        }
       }
       setProgress(prog);
       setUserNameState(prog.userName || cfg.owner);
@@ -358,8 +365,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         hist = historyResult.data as ScoreHistory;
         historyShaRef.current = historyResult.sha;
       } else {
+        // First time — create initial history file in repo
         hist = emptyHistory();
-        historyShaRef.current = null;
+        try {
+          const sha = await writeProgressFile(cfg, HISTORY_FILE, hist, null);
+          historyShaRef.current = sha;
+        } catch (e) {
+          console.error("[progressContext] Failed to create initial score-history.json:", e);
+          historyShaRef.current = null;
+        }
       }
       setScoreHistory(hist);
       saveHistoryLocal(hist);
