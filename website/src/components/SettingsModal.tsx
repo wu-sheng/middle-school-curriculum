@@ -338,19 +338,35 @@ export function UserBadge({ onClick }: { onClick: () => void }) {
   const pathname = usePathname();
 
   const initial = userName ? userName.charAt(0).toUpperCase() : "?";
-  const showResume = isLoggedIn && lastVisitedPath && lastVisitedPath !== "/" && lastVisitedPath !== pathname;
+  const hasResumePath = isLoggedIn && lastVisitedPath && lastVisitedPath !== "/";
+  const isOnResumePage = hasResumePath && lastVisitedPath === pathname;
+
+  // Extract a short label from path like "/fce/daily/D001" → "Day 1" or "/lesson/math/grade7/rational-numbers" → "有理数"
+  function pathLabel(p: string): string {
+    const parts = p.split("/").filter(Boolean);
+    if (parts[0] === "fce" && parts[1] === "daily") return `Day ${parseInt(parts[2]?.replace("D", "") || "0")}`;
+    if (parts[0] === "fce" && parts[1] === "quest") return parts[2]?.replace("Q0", "Q").replace("-", " ") || "Quest";
+    if (parts[0] === "lesson") return parts[parts.length - 1]?.replace(/-/g, " ") || "Lesson";
+    return parts[parts.length - 1] || p;
+  }
 
   return (
     <div className="flex items-center gap-1.5">
-      {/* Resume learning link */}
-      {showResume && (
-        <a
-          href={lastVisitedPath!}
-          className="text-xs text-purple-400 hover:text-purple-600 transition-colors px-2 py-1 rounded-lg hover:bg-purple-50"
-          title={lastVisitedPath!}
-        >
-          ▶ {biPick(lang, "继续", "Resume")}
-        </a>
+      {/* Resume / current page indicator */}
+      {hasResumePath && (
+        isOnResumePage ? (
+          <span className="text-[11px] text-gray-300 px-2 py-1">
+            📍 {pathLabel(lastVisitedPath!)}
+          </span>
+        ) : (
+          <a
+            href={lastVisitedPath!}
+            className="text-[11px] text-purple-400 hover:text-purple-600 transition-colors px-2 py-1 rounded-lg hover:bg-purple-50"
+            title={lastVisitedPath!}
+          >
+            ▶ {pathLabel(lastVisitedPath!)}
+          </a>
+        )
       )}
       <button
         onClick={onClick}
