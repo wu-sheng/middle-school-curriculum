@@ -583,19 +583,50 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     [config, scheduleSyncDirty]
   );
 
+  // Chapter ID → readable name mapping
+  const chapterNames: Record<string, string> = {
+    "rational-numbers": "有理数 Rational Numbers",
+    "operations-rational-numbers": "有理数运算 Operations",
+    "algebraic-expressions": "代数式 Algebraic Expr.",
+    "polynomials": "整式加减 Polynomials",
+    "linear-equations": "一元一次方程 Linear Eq.",
+    "geometric-figures": "几何图形 Geometry",
+    "intersecting-parallel-lines": "相交线与平行线",
+    "real-numbers": "实数 Real Numbers",
+    "coordinate-system": "坐标系 Coordinate",
+    "systems-of-equations": "方程组 Systems",
+    "inequalities": "不等式 Inequalities",
+    "data-collection": "数据收集 Data",
+  };
+
+  const questNames: Record<string, string> = {
+    "Q01-magic-words": "Q1 Magic Word Lab",
+    "Q02-time-traveler": "Q2 Time Traveler",
+  };
+
   function pathToLabel(p: string): string {
     const parts = p.split("#");
     const path = parts[0];
     const hash = parts[1] || "";
     const segs = path.split("/").filter(Boolean);
     let label = "";
-    if (segs[0] === "fce" && segs[1] === "daily") label = `Day ${parseInt(segs[2]?.replace("D", "") || "0")}`;
-    else if (segs[0] === "fce" && segs[1] === "quest") label = segs[2]?.replace(/-/g, " ") || "Quest";
-    else if (segs[0] === "lesson") label = segs[segs.length - 1]?.replace(/-/g, " ") || "Lesson";
-    else label = segs[segs.length - 1] || p;
+    if (segs[0] === "fce" && segs[1] === "daily") {
+      const dayNum = parseInt(segs[2]?.replace("D", "") || "0");
+      label = `FCE Day ${dayNum}`;
+    } else if (segs[0] === "fce" && segs[1] === "quest") {
+      label = questNames[segs[2]] || segs[2]?.replace(/-/g, " ") || "Quest";
+    } else if (segs[0] === "lesson") {
+      const chId = segs[segs.length - 1];
+      label = chapterNames[chId] || chId?.replace(/-/g, " ") || "Lesson";
+    } else {
+      label = segs[segs.length - 1] || p;
+    }
     if (hash) {
-      const tabNames: Record<string, string> = { learn: "学习", vocab: "词汇", examples: "精讲", exercises: "练习", exam: "提升" };
-      label += ` · ${tabNames[hash] || hash}`;
+      const tabNames: Record<string, string> = {
+        learn: "📖 学习", vocab: "📝 词汇", examples: "💡 精讲",
+        exercises: "✏️ 练习", exam: "🎯 章末提升",
+      };
+      label += ` ${tabNames[hash] || hash}`;
     }
     return label;
   }
