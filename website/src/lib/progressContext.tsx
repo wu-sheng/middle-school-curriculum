@@ -495,7 +495,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const syncNow = useCallback(async () => {
     const cfg = configRef.current;
     if (!cfg) return;
-    // Flush pending writes immediately
+    // Flush pending debounced writes
     if (progressTimerRef.current) {
       clearTimeout(progressTimerRef.current);
       progressTimerRef.current = null;
@@ -506,23 +506,68 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     }
     setIsSyncing(true);
     try {
-      // Write current local state to GitHub first
       const localProg = loadProgressLocal();
-      if (localProg) {
-        const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, progressShaRef.current);
+      const localHist = loadHistoryLocal();
+
+      // Check remote for diffs before writing
+      const remoteProg = await readProgressFile(cfg, PROGRESS_FILE);
+      const remoteHist = await readProgressFile(cfg, HISTORY_FILE);
+
+      // Compare by lastUpdated — if remote is newer, pull; otherwise push
+      if (remoteProg) {
+        const remoteData = remoteProg.data as ProgressData;
+        const remoteTime = new Date(remoteData?.lastUpdated || 0).getTime();
+        const localTime = new Date(localProg?.lastUpdated || 0).getTime();
+        if (remoteTime > localTime) {
+          // Remote is newer — pull
+          setProgress(remoteData);
+          setUserNameState(remoteData.userName || cfg.owner);
+          saveProgressLocal(remoteData);
+          progressShaRef.current = remoteProg.sha;
+        } else if (localProg && localTime > remoteTime) {
+          // Local is newer — push
+          const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, remoteProg.sha);
+          progressShaRef.current = sha;
+        } else {
+          progressShaRef.current = remoteProg.sha;
+        }
+      } else if (localProg) {
+        const sha = await writeProgressFile(cfg, PROGRESS_FILE, localProg, null);
         progressShaRef.current = sha;
       }
-      const localHist = loadHistoryLocal();
-      if (localHist) {
-        const sha = await writeProgressFile(cfg, HISTORY_FILE, localHist, historyShaRef.current);
+
+      if (remoteHist) {
+        const remoteEntries = (remoteHist.data as ScoreHistory)?.entries?.length || 0;
+        const localEntries = localHist?.entries?.length || 0;
+        if (remoteEntries > localEntries) {
+          setScoreHistory(remoteHist.data as ScoreHistory);
+          saveHistoryLocal(remoteHist.data as ScoreHistory);
+          historyShaRef.current = remoteHist.sha;
+        } else if (localHist && localEntries > remoteEntries) {
+          const sha = await writeProgressFile(cfg, HISTORY_FILE, localHist, remoteHist.sha);
+          historyShaRef.current = sha;
+        } else {
+          historyShaRef.current = remoteHist.sha;
+        }
+      } else if (localHist) {
+        const sha = await writeProgressFile(cfg, HISTORY_FILE, localHist, null);
         historyShaRef.current = sha;
       }
     } catch (e) {
-      console.error("[progressContext] Sync flush failed:", e);
+      console.error("[progressContext] Sync failed:", e);
     } finally {
       setIsSyncing(false);
     }
   }, []);
+
+  // Periodic sync every 5 minutes
+  useEffect(() => {
+    if (!config) return;
+    const interval = setInterval(() => {
+      syncNow();
+    }, 5 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, [config, syncNow]);
 
   // -----------------------------------------------------------------------
   // Record helpers (shared pattern)
