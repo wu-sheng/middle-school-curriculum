@@ -54,7 +54,45 @@ U{nnnn}        例：U0001, U0002 ... U2000
 ```
 L{nnn}         例：L001, L002 ... L900
 ```
-每天 2 段，15 个月 = 约 900 段。按 FCE Part 类型混合编排。
+每天 2-3 段，15 个月。按 FCE Part 类型混合编排。
+
+#### FCE 听力四种题型
+
+| type 值 | FCE Part | 形式 | 音频时长 | 题目 |
+|---------|----------|------|---------|------|
+| `short-extract` | Part 1 | 短对话/独白 | ~30s | 1 道三选一 |
+| `sentence-completion` | Part 2 | 长独白（演讲/导览） | ~2-3min | 5-10 个句子填空 |
+| `multiple-matching` | Part 3 | 5 人各说 30s | ~3min | 5 道匹配（从 8 选项选） |
+| `long-conversation` | Part 4 | 长对话/访谈 | ~3-4min | 5-7 道选择题 |
+
+#### 按月引入节奏
+- 1-2月：Part 1（短对话）+ Part 2（句子填空）
+- 3-4月：+ Part 3（多人匹配）
+- 5月起：+ Part 4（长对话），四种混合
+- 10-15月：全部四种，接近真实考试比例
+
+#### Part 2 句子填空 Schema
+```yaml
+  - id: L121
+    type: sentence-completion
+    title: 'Tour of the Penguin House'
+    titleZh: '企鹅馆导览'
+    scene: 'You will hear a zoo guide talking about the penguin house.'
+    sceneZh: '你将听到一位动物园导游介绍企鹅馆。'
+    difficulty: 1
+    audioFile: 'L121.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: '...(长独白，10-15 句)...'
+    sentences:       # 听的同时填空
+      - id: L121-S1
+        text: 'The penguins are fed _____ times a day.'
+        answer: 'three'
+      - id: L121-S2
+        text: 'The coldest part of the enclosure is kept at _____ degrees.'
+        answer: 'minus five'
+```
 
 ### 写作任务编号
 ```

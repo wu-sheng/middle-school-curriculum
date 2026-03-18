@@ -116,6 +116,13 @@ interface DailyViewProps {
       options: Record<string, string>; answer: string;
       explanation: string; explanationZh: string;
     };
+    // Part 2: sentence completion
+    sentences?: {
+      id: string;
+      text: string;
+      textZh: string;
+      answer: string;
+    }[];
   }[];
 }
 
@@ -445,7 +452,7 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
   const [blanksAnswers, setBlanksAnswers] = useState<Record<string, Record<string, string>>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
 
-  if (grammarData.length === 0) return <Card><p className="text-gray-400 italic"><BiLabel zh="本日无语法练习" en="No grammar exercises today." /></p></Card>;
+  if (grammarData.length === 0) return <Card><p className="text-gray-400 italic">No grammar exercises today.</p></Card>;
 
   const q = grammarData[current];
   const total = grammarData.length;
@@ -503,21 +510,19 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
         <div className="flex items-center gap-2 mb-3">
           <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 font-medium">{q.grammarPoint}</span>
           <span className="text-xs text-gray-400">
-            {biPick(lang as "zh" | "en" | "both", "难度", "Difficulty")}: {"★".repeat(q.difficulty)}{"☆".repeat(3 - q.difficulty)}
+            "Difficulty": {"★".repeat(q.difficulty)}{"☆".repeat(3 - q.difficulty)}
           </span>
         </div>
 
         {/* Question */}
         <div className="mb-4">
-          {lang === "both"
-            ? <BiBlock zh={q.question} en={q.questionZh} className="font-medium" />
-            : <p className="font-medium">{lang === "en" ? q.question : q.questionZh}</p>}
+          <p className="font-medium">{q.question}</p>
         </div>
 
         {/* Multiple choice */}
         {q.type === "multiple-choice" && q.options && (
           <div className="space-y-2 ml-2">
-            {Object.entries(lang === "zh" && q.optionsZh ? q.optionsZh : q.options).map(([key, val]) => (
+            {Object.entries(q.options).map(([key, val]) => (
               <label key={key} className={`flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-colors ${answers[q.id] === key ? "bg-purple-50" : "hover:bg-gray-50"} ${checked[q.id] && key === q.answer ? "ring-2 ring-green-300" : ""}`}>
                 <input
                   type="radio"
@@ -541,7 +546,7 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
             value={answers[q.id] || ""}
             onChange={e => !checked[q.id] && setAnswers(prev => ({ ...prev, [q.id]: e.target.value }))}
             disabled={!!checked[q.id]}
-            placeholder={biPick(lang as "zh" | "en" | "both", "输入答案...", "Type your answer...")}
+            placeholder="Type your answer..."
             className="border border-gray-200 rounded-lg px-3 py-2 text-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-purple-300"
           />
         )}
@@ -549,7 +554,7 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
         {/* Cloze passage */}
         {q.type === "cloze-passage" && q.passage && q.blanks && (
           <div className="space-y-3">
-            <p className="leading-7 whitespace-pre-line text-sm">{lang === "en" ? q.passage : (q.passageZh || q.passage)}</p>
+            <p className="leading-7 whitespace-pre-line text-sm">{q.passage}</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
               {q.blanks.map((b, bi) => {
                 const ba = blanksAnswers[q.id] || {};
@@ -585,16 +590,14 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
           <div className={`mt-3 text-sm ${isCurrentCorrect() ? "text-green-600" : "text-red-600"}`}>
             {isCurrentCorrect() ? "✓ " : "✗ "}
             {!isCurrentCorrect() && q.type !== "cloze-passage" && (
-              <span>{biPick(lang as "zh" | "en" | "both", "正确答案", "Answer")}: {q.answer}</span>
+              <span>"Answer": {q.answer}</span>
             )}
           </div>
         )}
 
         {checked[q.id] && (
-          <Collapsible title={biPick(lang as "zh" | "en" | "both", "讲解", "Explanation")} variant="answer">
-            {lang === "both"
-              ? <BiBlock zh={q.explanation} en={q.explanationZh} />
-              : <p>{lang === "zh" ? q.explanationZh : q.explanation}</p>}
+          <Collapsible title="Explanation" variant="answer">
+            <p>{q.explanation}</p>
           </Collapsible>
         )}
 
@@ -605,14 +608,14 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
             disabled={current === 0}
             className="text-sm text-purple-500 disabled:text-gray-300"
           >
-            ← <BiLabel zh="上一题" en="Previous" />
+            ← Previous
           </button>
           <button
             onClick={() => setCurrent(Math.min(total - 1, current + 1))}
             disabled={current === total - 1}
             className="text-sm text-purple-500 disabled:text-gray-300"
           >
-            <BiLabel zh="下一题" en="Next" /> →
+            Next →
           </button>
         </div>
       </Card>
@@ -620,7 +623,7 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
       {/* Score summary */}
       {answeredCount === total && (
         <div className={`mt-3 p-4 rounded-xl border font-medium text-center ${scoreColor(Math.round((correctCount / total) * 100))}`}>
-          <BiLabel zh="语法得分" en="Grammar Score" />: {correctCount}/{total} ({Math.round((correctCount / total) * 100)}%)
+          Grammar Score: {correctCount}/{total} ({Math.round((correctCount / total) * 100)}%)
         </div>
       )}
     </>
@@ -635,7 +638,7 @@ function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: s
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [graded, setGraded] = useState(false);
 
-  if (uoeData.length === 0) return <Card><p className="text-gray-400 italic"><BiLabel zh="本日无词形转换练习" en="No word formation exercises today." /></p></Card>;
+  if (uoeData.length === 0) return <Card><p className="text-gray-400 italic">No word formation exercises today.</p></Card>;
 
   const score = graded
     ? uoeData.reduce((s, q) => s + ((answers[q.id] || "").trim().toLowerCase() === q.answer.toLowerCase() ? 1 : 0), 0)
@@ -655,9 +658,7 @@ function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: s
             </div>
             <p className="mb-2">
               <span className="text-purple-400 mr-1 font-medium">{qi + 1}.</span>
-              {lang === "both"
-                ? <BiBlock zh={q.sentence} en={q.sentenceZh} />
-                : <span>{lang === "en" ? q.sentence : q.sentenceZh}</span>}
+              <span>{q.sentence}</span>
             </p>
             <div className="flex items-center gap-3 ml-4">
               <span className="text-sm font-bold text-pink-600 bg-pink-50 px-2 py-0.5 rounded">{q.baseWord}</span>
@@ -674,10 +675,8 @@ function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: s
               {isWrong && <span className="text-sm text-red-500">✗ {q.answer}</span>}
             </div>
             {graded && (
-              <Collapsible title={biPick(lang as "zh" | "en" | "both", "讲解", "Explanation")} variant="answer">
-                {lang === "both"
-                  ? <BiBlock zh={q.explanation} en={q.explanationZh} />
-                  : <p>{lang === "zh" ? q.explanationZh : q.explanation}</p>}
+              <Collapsible title="Explanation" variant="answer">
+                <p>{q.explanation}</p>
               </Collapsible>
             )}
           </Card>
@@ -690,7 +689,7 @@ function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: s
         </button>
       ) : (
         <div className={`mt-3 p-4 rounded-xl border font-medium text-center ${scoreColor(pct)}`}>
-          <BiLabel zh="词形转换得分" en="Word Formation Score" />: {score}/{uoeData.length} ({pct}%)
+          Word Formation Score: {score}/{uoeData.length} ({pct}%)
         </div>
       )}
     </>
@@ -840,25 +839,38 @@ function speakerColor(voice: string): string {
 function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["listeningData"]; lang: string }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
+  // Part 2 sentence-completion answers: keyed by sentence id
+  const [sentenceAnswers, setSentenceAnswers] = useState<Record<string, string>>({});
+  const [sentenceChecked, setSentenceChecked] = useState<Record<string, boolean>>({});
 
-  if (listeningData.length === 0) return <Card><p className="text-gray-400 italic"><BiLabel zh="本日无听力练习" en="No listening exercises today." /></p></Card>;
+  if (listeningData.length === 0) return <Card><p className="text-gray-400 italic">No listening exercises today.</p></Card>;
 
   return (
     <>
       {listeningData.map((extract, ei) => {
-        const isChecked = !!checked[extract.id];
-        const isCorrect = isChecked && answers[extract.id] === extract.question.answer;
+        const isSC = extract.type === "sentence-completion";
+        const isMC = !isSC; // All non-sentence-completion types are Part 1 (multiple choice)
+        const mcChecked = !!checked[extract.id];
+        const mcCorrect = mcChecked && answers[extract.id] === extract.question.answer;
+        const scChecked = !!sentenceChecked[extract.id];
+
+        // Part 2 scoring
+        const sentences = extract.sentences || [];
+        const scCorrectCount = sentences.filter(s => (sentenceAnswers[s.id] || "").trim().toLowerCase() === s.answer.trim().toLowerCase()).length;
+
         return (
           <Card key={extract.id}>
             {/* Header */}
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <span className="text-purple-400 font-medium">{ei + 1}.</span>
               <h4 className="font-semibold text-purple-700">
-                {lang === "both"
-                  ? <BiBlock zh={extract.title} en={extract.titleZh} />
-                  : <span>{lang === "en" ? extract.title : extract.titleZh}</span>}
+                <span>{extract.title}</span>
               </h4>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 font-medium">{extract.type}</span>
+              {isSC ? (
+                <span className="text-xs px-2 py-0.5 rounded-full bg-pink-100 text-pink-600 font-medium">Part 2 · Sentence Completion</span>
+              ) : (
+                <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 font-medium">Part 1</span>
+              )}
               <span className="text-xs text-gray-400">
                 {"★".repeat(extract.difficulty)}{"☆".repeat(3 - extract.difficulty)}
               </span>
@@ -866,9 +878,7 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
 
             {/* Scene description */}
             <div className="text-sm text-gray-500 italic mb-3">
-              {lang === "both"
-                ? <BiBlock zh={extract.scene} en={extract.sceneZh} />
-                : <span>{lang === "en" ? extract.scene : extract.sceneZh}</span>}
+              <span>{extract.scene}</span>
             </div>
 
             {/* Audio player */}
@@ -882,7 +892,7 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
             )}
 
             {/* Script (collapsible) */}
-            <Collapsible title={biPick(lang as "zh" | "en" | "both", "查看原文", "Read Script")} variant="step">
+            <Collapsible title="Read Script" variant="step">
               <div className="space-y-2 py-2">
                 <div className="text-sm text-gray-400 italic mb-3">
                   🎭 [{biPick(lang as "zh" | "en" | "both",
@@ -901,48 +911,100 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
               </div>
             </Collapsible>
 
-            {/* Comprehension question */}
-            <div className={`mt-4 p-3 rounded-xl border ${isChecked ? (isCorrect ? "border-green-200 bg-green-50/30" : "border-red-200 bg-red-50/30") : "border-gray-100"}`}>
-              <div className="font-medium mb-2">
-                {lang === "both"
-                  ? <BiBlock zh={extract.question.text} en={extract.question.textZh} />
-                  : <span>{lang === "en" ? extract.question.text : extract.question.textZh}</span>}
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 ml-2">
-                {Object.entries(extract.question.options).map(([key, val]) => (
-                  <label key={key} className={`flex items-center gap-2 p-1.5 rounded-lg cursor-pointer transition-colors ${answers[extract.id] === key ? "bg-purple-50" : "hover:bg-gray-50"} ${isChecked && key === extract.question.answer ? "ring-2 ring-green-300" : ""}`}>
-                    <input
-                      type="radio"
-                      name={`listening-${extract.id}`}
-                      value={key}
-                      checked={answers[extract.id] === key}
-                      onChange={() => !isChecked && setAnswers(prev => ({ ...prev, [extract.id]: key }))}
-                      disabled={isChecked}
-                      className="accent-purple-500"
-                    />
-                    <span className="text-sm"><span className="font-medium text-gray-500">{key}.</span> {val}</span>
-                  </label>
-                ))}
-              </div>
-
-              {!isChecked ? (
-                <button
-                  onClick={() => setChecked(prev => ({ ...prev, [extract.id]: true }))}
-                  className="mt-3 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
-                >
-                  Check
-                </button>
-              ) : (
-                <div className={`mt-2 text-sm ${isCorrect ? "text-green-600" : "text-red-600"}`}>
-                  {isCorrect ? "✓" : `✗ Correct answer: ${extract.question.answer}`}
-                  <div className="text-gray-500 mt-1">
-                    {lang === "both"
-                      ? <BiBlock zh={extract.question.explanation} en={extract.question.explanationZh} />
-                      : <span>{lang === "en" ? extract.question.explanation : extract.question.explanationZh}</span>}
-                  </div>
+            {/* Part 1: multiple-choice question */}
+            {isMC && (
+              <div className={`mt-4 p-3 rounded-xl border ${mcChecked ? (mcCorrect ? "border-green-200 bg-green-50/30" : "border-red-200 bg-red-50/30") : "border-gray-100"}`}>
+                <div className="font-medium mb-2">
+                  <span>{extract.question.text}</span>
                 </div>
-              )}
-            </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 ml-2">
+                  {Object.entries(extract.question.options).map(([key, val]) => (
+                    <label key={key} className={`flex items-center gap-2 p-1.5 rounded-lg cursor-pointer transition-colors ${answers[extract.id] === key ? "bg-purple-50" : "hover:bg-gray-50"} ${mcChecked && key === extract.question.answer ? "ring-2 ring-green-300" : ""}`}>
+                      <input
+                        type="radio"
+                        name={`listening-${extract.id}`}
+                        value={key}
+                        checked={answers[extract.id] === key}
+                        onChange={() => !mcChecked && setAnswers(prev => ({ ...prev, [extract.id]: key }))}
+                        disabled={mcChecked}
+                        className="accent-purple-500"
+                      />
+                      <span className="text-sm"><span className="font-medium text-gray-500">{key}.</span> {val}</span>
+                    </label>
+                  ))}
+                </div>
+
+                {!mcChecked ? (
+                  <button
+                    onClick={() => setChecked(prev => ({ ...prev, [extract.id]: true }))}
+                    className="mt-3 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                  >
+                    Check
+                  </button>
+                ) : (
+                  <div className={`mt-2 text-sm ${mcCorrect ? "text-green-600" : "text-red-600"}`}>
+                    {mcCorrect ? "✓" : `✗ Correct answer: ${extract.question.answer}`}
+                    <div className="text-gray-500 mt-1">
+                      <span>{extract.question.explanation}</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Part 2: sentence completion */}
+            {isSC && sentences.length > 0 && (
+              <div className="mt-4 space-y-3">
+                {sentences.map((s, si) => {
+                  const userVal = (sentenceAnswers[s.id] || "").trim().toLowerCase();
+                  const correct = userVal === s.answer.trim().toLowerCase();
+                  return (
+                    <div
+                      key={s.id}
+                      className={`p-3 rounded-xl border ${scChecked ? (correct ? "border-green-200 bg-green-50/30" : "border-red-200 bg-red-50/30") : "border-gray-100"}`}
+                    >
+                      <div className="flex items-start gap-2 mb-1.5">
+                        <span className="text-purple-400 font-medium text-sm shrink-0">{si + 1}.</span>
+                        <div className="text-sm text-gray-700">
+                          <span>{s.text}</span>
+                        </div>
+                      </div>
+                      <div className="ml-5">
+                        <input
+                          type="text"
+                          value={sentenceAnswers[s.id] || ""}
+                          onChange={e => !scChecked && setSentenceAnswers(prev => ({ ...prev, [s.id]: e.target.value }))}
+                          disabled={scChecked}
+                          placeholder="Type your answer..."
+                          className={`w-full max-w-xs px-3 py-1.5 text-sm rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-300 ${scChecked ? "bg-gray-50 text-gray-500" : "border-gray-200"}`}
+                        />
+                        {scChecked && !correct && (
+                          <div className="text-xs text-red-500 mt-1">
+                            Correct answer: <span className="font-medium">{s.answer}</span>
+                          </div>
+                        )}
+                        {scChecked && correct && (
+                          <div className="text-xs text-green-600 mt-1">✓</div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {!scChecked ? (
+                  <button
+                    onClick={() => setSentenceChecked(prev => ({ ...prev, [extract.id]: true }))}
+                    className="mt-1 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                  >
+                    Check All
+                  </button>
+                ) : (
+                  <div className="mt-1 text-sm font-medium text-purple-700">
+                    Score: {scCorrectCount} / {sentences.length}
+                  </div>
+                )}
+              </div>
+            )}
           </Card>
         );
       })}
