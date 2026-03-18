@@ -4,28 +4,60 @@ import { useCallback, useRef } from "react";
 
 interface AudioWordProps {
   word: string;
+  /** Optional path to a pre-generated .mp3 file (e.g. "/audio/english/fce/vocab/V0001.mp3") */
+  audioSrc?: string;
   lang?: string;
   className?: string;
 }
 
 /**
- * Displays a word with a speaker button that uses the Web Speech API
- * to pronounce it.
+ * Displays a word with a speaker button.
+ * Plays pre-generated .mp3 if audioSrc is provided, otherwise falls back to Web Speech API.
  */
-export default function AudioWord({ word, lang = "en-US", className = "" }: AudioWordProps) {
-  const speakingRef = useRef(false);
+export default function AudioWord({ word, audioSrc, lang = "en-US", className = "" }: AudioWordProps) {
+  const playingRef = useRef(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const speak = useCallback(() => {
-    if (speakingRef.current || typeof window === "undefined" || !window.speechSynthesis) return;
-    speakingRef.current = true;
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = lang;
-    utterance.rate = 0.9;
-    utterance.onend = () => { speakingRef.current = false; };
-    utterance.onerror = () => { speakingRef.current = false; };
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
-  }, [word, lang]);
+    if (playingRef.current) return;
+    playingRef.current = true;
+
+    // Try .mp3 file first
+    if (audioSrc) {
+      if (!audioRef.current) {
+        audioRef.current = new Audio(audioSrc);
+      }
+      audioRef.current.currentTime = 0;
+      audioRef.current.onended = () => { playingRef.current = false; };
+      audioRef.current.onerror = () => {
+        // Fallback to Web Speech API if mp3 fails
+        playingRef.current = false;
+        speakWithTTS();
+      };
+      audioRef.current.play().catch(() => {
+        playingRef.current = false;
+        speakWithTTS();
+      });
+      return;
+    }
+
+    speakWithTTS();
+
+    function speakWithTTS() {
+      if (typeof window === "undefined" || !window.speechSynthesis) {
+        playingRef.current = false;
+        return;
+      }
+      playingRef.current = true;
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = lang;
+      utterance.rate = 0.9;
+      utterance.onend = () => { playingRef.current = false; };
+      utterance.onerror = () => { playingRef.current = false; };
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    }
+  }, [word, audioSrc, lang]);
 
   return (
     <span className={`inline-flex items-center gap-1.5 font-semibold ${className}`}>
@@ -33,7 +65,6 @@ export default function AudioWord({ word, lang = "en-US", className = "" }: Audi
       <button
         onClick={speak}
         className="text-gray-300 hover:text-purple-400 transition-colors"
-        title={`Pronounce "${word}"`}
         aria-label={`Pronounce ${word}`}
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -269,7 +269,7 @@ function ReadingTab({ data, allVocab }: { data: DailyViewProps["readingData"]; l
               if (!v) return null;
               return (
                 <div key={vh.word} className="flex items-start gap-3 p-3 rounded-xl bg-purple-50/40 border border-purple-100">
-                  <AudioWord word={vh.word} className="text-purple-700 shrink-0" />
+                  <AudioWord word={vh.word} audioSrc={`/audio/english/fce/vocab/${vh.ref}.mp3`} className="text-purple-700 shrink-0" />
                   <div className="min-w-0">
                     <span className="text-xs text-gray-400 mr-1">{v.phonetic}</span>
                     <span className="text-xs px-1.5 py-0.5 rounded bg-pink-50 text-pink-500 font-medium">{v.partOfSpeech}</span>
@@ -307,7 +307,7 @@ function VocabTab({ vocabData, newIds, reviewIds, lang }: {
       <Card>
         <div className="flex items-start justify-between">
           <div>
-            <AudioWord word={v.word} className="text-lg text-purple-700" />
+            <AudioWord word={v.word} audioSrc={`/audio/english/fce/vocab/${v.id}.mp3`} className="text-lg text-purple-700" />
             <span className="ml-2 text-sm text-gray-400">{v.phonetic}</span>
             <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-pink-50 text-pink-500 font-medium">{v.partOfSpeech}</span>
           </div>
@@ -885,8 +885,7 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
             {extract.audioFile && (
               <div className="mb-3">
                 <audio controls className="w-full rounded-lg" preload="none">
-                  <source src={extract.audioFile} type="audio/mpeg" />
-                  Your browser does not support the audio element.
+                  <source src={`/audio/english/fce/listening/${extract.audioFile}`} type="audio/mpeg" />
                 </audio>
               </div>
             )}

@@ -44,8 +44,8 @@ except ImportError:
 REPO_ROOT = Path(__file__).resolve().parent.parent
 LISTENING_YAML_DIR = REPO_ROOT / "website" / "src" / "data" / "english" / "fce" / "listening"
 VOCAB_YAML_DIR = REPO_ROOT / "website" / "src" / "data" / "english" / "fce" / "vocab"
-LISTENING_AUDIO_DIR = REPO_ROOT / "website" / "public" / "audio" / "listening"
-VOCAB_AUDIO_DIR = REPO_ROOT / "website" / "public" / "audio" / "vocab"
+LISTENING_AUDIO_DIR = REPO_ROOT / "website" / "public" / "audio" / "english" / "fce" / "listening"
+VOCAB_AUDIO_DIR = REPO_ROOT / "website" / "public" / "audio" / "english" / "fce" / "vocab"
 
 # ---------------------------------------------------------------------------
 #  TTS helpers
