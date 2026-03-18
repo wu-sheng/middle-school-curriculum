@@ -2,8 +2,8 @@
 """Generate TTS audio for FCE listening extracts and vocabulary.
 
 Usage:
-  pip install openai pydub pyyaml
-  export OPENAI_API_KEY=sk-...
+  pip install openai pyyaml
+  export OPENAI_API_KEY=sk-...   (or OEPNAI_VOICE_GEN)
 
   # Generate all listening audio
   python scripts/generate-tts.py listening
@@ -17,12 +17,15 @@ Usage:
 
   # Force regeneration (overwrite existing files)
   python scripts/generate-tts.py listening --force
+
+Requires: ffmpeg (for concatenating audio segments)
 """
 
 import argparse
-import io
 import os
+import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -33,13 +36,6 @@ try:
 except ImportError:
     print("Error: openai package not installed. Run: pip install openai")
     sys.exit(1)
-
-try:
-    from pydub import AudioSegment
-except ImportError:
-    print("Error: pydub package not installed. Run: pip install pydub")
-    sys.exit(1)
-
 
 # ---------------------------------------------------------------------------
 #  Paths
@@ -61,33 +57,83 @@ client: OpenAI | None = None
 def get_client() -> OpenAI:
     global client
     if client is None:
-        api_key = os.environ.get("OPENAI_API_KEY")
+        api_key = os.environ.get("OPENAI_API_KEY") or os.environ.get("OEPNAI_VOICE_GEN")
         if not api_key:
-            print("Error: OPENAI_API_KEY environment variable not set.")
+            print("Error: Set OPENAI_API_KEY or OEPNAI_VOICE_GEN environment variable.")
             sys.exit(1)
         client = OpenAI(api_key=api_key)
     return client
 
 
-def generate_speech(text: str, voice: str = "nova") -> AudioSegment:
-    """Generate speech for a single text segment using OpenAI TTS API.
-
-    Returns an AudioSegment (pydub).
-    """
+def generate_speech_to_file(text: str, voice: str, output_path: Path) -> bool:
+    """Generate speech and save directly to mp3 file."""
     c = get_client()
-    response = c.audio.speech.create(
-        model="tts-1",
-        voice=voice,
-        input=text,
-        response_format="mp3",
-    )
-    audio_bytes = response.content
-    return AudioSegment.from_mp3(io.BytesIO(audio_bytes))
+    try:
+        response = c.audio.speech.create(
+            model="tts-1",
+            voice=voice,
+            input=text,
+            response_format="mp3",
+        )
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "wb") as f:
+            f.write(response.content)
+        return True
+    except Exception as e:
+        print(f"    TTS API error: {e}")
+        return False
 
 
-def make_silence(duration_ms: int) -> AudioSegment:
-    """Create a silent AudioSegment of the given duration."""
-    return AudioSegment.silent(duration=duration_ms)
+def make_silence_mp3(duration_ms: int, output_path: Path) -> bool:
+    """Create a silent mp3 file using ffmpeg."""
+    try:
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-f", "lavfi",
+                "-i", f"anullsrc=r=24000:cl=mono",
+                "-t", str(duration_ms / 1000),
+                "-c:a", "libmp3lame", "-q:a", "9",
+                str(output_path),
+            ],
+            capture_output=True,
+            check=True,
+        )
+        return True
+    except Exception:
+        return False
+
+
+def concat_mp3_files(file_list: list[Path], output_path: Path) -> bool:
+    """Concatenate multiple mp3 files using ffmpeg."""
+    if len(file_list) == 1:
+        # Just copy
+        import shutil
+        shutil.copy2(file_list[0], output_path)
+        return True
+
+    # Write concat list file
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+        for p in file_list:
+            f.write(f"file '{p}'\n")
+        list_path = f.name
+
+    try:
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-f", "concat", "-safe", "0",
+                "-i", list_path,
+                "-c", "copy",
+                str(output_path),
+            ],
+            capture_output=True,
+            check=True,
+        )
+        return True
+    except Exception as e:
+        print(f"    ffmpeg concat error: {e}")
+        return False
+    finally:
+        os.unlink(list_path)
 
 
 # ---------------------------------------------------------------------------
@@ -95,84 +141,66 @@ def make_silence(duration_ms: int) -> AudioSegment:
 # ---------------------------------------------------------------------------
 
 def load_listening_extracts() -> list[dict]:
-    """Load all listening extract YAML files."""
     extracts = []
     if not LISTENING_YAML_DIR.exists():
-        print(f"Warning: Listening YAML directory not found: {LISTENING_YAML_DIR}")
         return extracts
-
     for yaml_file in sorted(LISTENING_YAML_DIR.glob("*.yaml")):
         try:
             with open(yaml_file, "r", encoding="utf-8") as f:
                 data = yaml.safe_load(f)
-            if data is None:
-                continue
-            # Handle both single-extract and multi-extract YAML files
-            if isinstance(data, list):
-                extracts.extend(data)
-            elif isinstance(data, dict):
-                if "extracts" in data:
-                    extracts.extend(data["extracts"])
-                else:
-                    extracts.append(data)
+            if data and "extracts" in data:
+                extracts.extend(data["extracts"])
         except Exception as e:
             print(f"  Error loading {yaml_file.name}: {e}")
     return extracts
 
 
 def generate_listening_audio(extract: dict, output_path: Path) -> bool:
-    """Generate concatenated TTS audio for a single listening extract.
-
-    Each speaker line is generated with the assigned voice, then concatenated
-    with 0.5s silence gaps. A 1s silence is added at the start (scene
-    description is shown on screen, not spoken).
-
-    Returns True on success, False on failure.
-    """
     script = extract.get("script", [])
     if not script:
-        print(f"  Skipping {extract['id']}: no script lines")
         return False
 
-    segments: list[AudioSegment] = []
+    with tempfile.TemporaryDirectory() as tmpdir:
+        parts: list[Path] = []
 
-    # 1s silence at the start (scene is displayed on screen)
-    segments.append(make_silence(1000))
+        # 1s silence at start
+        silence_path = Path(tmpdir) / "silence_1s.mp3"
+        if make_silence_mp3(1000, silence_path):
+            parts.append(silence_path)
 
-    for i, line in enumerate(script):
-        voice = line.get("voice", "nova")
-        text = line.get("text", "")
-        if not text.strip():
-            continue
+        # 0.5s gap between lines
+        gap_path = Path(tmpdir) / "gap_500ms.mp3"
+        make_silence_mp3(500, gap_path)
 
-        try:
-            audio = generate_speech(text, voice=voice)
-            segments.append(audio)
-        except Exception as e:
-            print(f"  Error generating speech for line {i} ({line.get('speaker', '?')}): {e}")
+        for i, line in enumerate(script):
+            voice = line.get("voice", "nova")
+            text = line.get("text", "").strip()
+            if not text:
+                continue
+
+            seg_path = Path(tmpdir) / f"seg_{i:03d}.mp3"
+            print(f"    Line {i+1}/{len(script)} [{line.get('speaker', '?')}]...", end="", flush=True)
+            ok = generate_speech_to_file(text, voice, seg_path)
+            if not ok:
+                print(" FAILED")
+                return False
+            print(" OK")
+            parts.append(seg_path)
+
+            # Add gap between lines (not after last)
+            if i < len(script) - 1 and gap_path.exists():
+                parts.append(gap_path)
+
+            time.sleep(0.1)  # rate limit
+
+        if not parts:
             return False
 
-        # 0.5s silence between lines (not after last line)
-        if i < len(script) - 1:
-            segments.append(make_silence(500))
-
-    if len(segments) <= 1:
-        print(f"  Skipping {extract['id']}: no audio generated")
-        return False
-
-    # Concatenate all segments
-    combined = segments[0]
-    for seg in segments[1:]:
-        combined += seg
-
-    # Export
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    combined.export(str(output_path), format="mp3")
-    return True
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        return concat_mp3_files(parts, output_path)
 
 
 def cmd_listening(ids: list[str], force: bool) -> None:
-    """Generate listening audio for specified IDs (or all if empty)."""
     extracts = load_listening_extracts()
     if not extracts:
         print("No listening extracts found.")
@@ -181,78 +209,55 @@ def cmd_listening(ids: list[str], force: bool) -> None:
     if ids:
         id_set = set(ids)
         extracts = [e for e in extracts if e.get("id") in id_set]
-        if not extracts:
-            print(f"No extracts matched IDs: {ids}")
-            return
 
-    print(f"Found {len(extracts)} listening extract(s) to process.")
+    print(f"Found {len(extracts)} extract(s) to process.\n")
     LISTENING_AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
-    success = 0
-    skipped = 0
-    failed = 0
-
+    success = skipped = failed = 0
     for extract in extracts:
         eid = extract.get("id", "unknown")
         output_path = LISTENING_AUDIO_DIR / f"{eid}.mp3"
 
         if output_path.exists() and not force:
-            print(f"  [{eid}] Already exists, skipping (use --force to overwrite)")
+            print(f"  [{eid}] Already exists, skipping")
             skipped += 1
             continue
 
-        print(f"  [{eid}] Generating audio...")
-        try:
-            ok = generate_listening_audio(extract, output_path)
-            if ok:
-                size_kb = output_path.stat().st_size / 1024
-                print(f"  [{eid}] Done ({size_kb:.0f} KB)")
-                success += 1
-            else:
-                failed += 1
-        except Exception as e:
-            print(f"  [{eid}] Failed: {e}")
+        print(f"  [{eid}] Generating...")
+        ok = generate_listening_audio(extract, output_path)
+        if ok:
+            size_kb = output_path.stat().st_size / 1024
+            print(f"  [{eid}] Done ({size_kb:.0f} KB)\n")
+            success += 1
+        else:
+            print(f"  [{eid}] FAILED\n")
             failed += 1
 
-        # Brief pause to respect rate limits
-        time.sleep(0.2)
-
-    print(f"\nListening summary: {success} generated, {skipped} skipped, {failed} failed")
+    print(f"\nListening: {success} generated, {skipped} skipped, {failed} failed")
 
 
 # ---------------------------------------------------------------------------
-#  Vocab pronunciation generation
+#  Vocab pronunciation
 # ---------------------------------------------------------------------------
 
 def load_vocab_entries() -> list[dict]:
-    """Load all vocabulary YAML files."""
     entries = []
     if not VOCAB_YAML_DIR.exists():
-        print(f"Warning: Vocab YAML directory not found: {VOCAB_YAML_DIR}")
         return entries
-
     for yaml_file in sorted(VOCAB_YAML_DIR.glob("*.yaml")):
         try:
             with open(yaml_file, "r", encoding="utf-8") as f:
                 data = yaml.safe_load(f)
-            if data is None:
-                continue
-            if isinstance(data, list):
-                entries.extend(data)
-            elif isinstance(data, dict):
-                if "words" in data:
-                    entries.extend(data["words"])
-                elif "vocab" in data:
-                    entries.extend(data["vocab"])
-                else:
-                    entries.append(data)
+            if data and "vocab" in data:
+                entries.extend(data["vocab"])
+            elif data and "vocabularyList" in data:
+                entries.extend(data["vocabularyList"])
         except Exception as e:
             print(f"  Error loading {yaml_file.name}: {e}")
     return entries
 
 
 def cmd_vocab(ids: list[str], force: bool) -> None:
-    """Generate vocab pronunciation audio for specified IDs (or all if empty)."""
     entries = load_vocab_entries()
     if not entries:
         print("No vocab entries found.")
@@ -261,48 +266,35 @@ def cmd_vocab(ids: list[str], force: bool) -> None:
     if ids:
         id_set = set(ids)
         entries = [e for e in entries if e.get("id") in id_set]
-        if not entries:
-            print(f"No vocab entries matched IDs: {ids}")
-            return
 
-    print(f"Found {len(entries)} vocab word(s) to process.")
+    print(f"Found {len(entries)} word(s) to process.\n")
     VOCAB_AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
-    success = 0
-    skipped = 0
-    failed = 0
-
+    success = skipped = failed = 0
     for entry in entries:
         vid = entry.get("id", "unknown")
         word = entry.get("word", "")
         if not word:
-            print(f"  [{vid}] No word field, skipping")
             failed += 1
             continue
 
         output_path = VOCAB_AUDIO_DIR / f"{vid}.mp3"
-
         if output_path.exists() and not force:
-            print(f"  [{vid}] Already exists, skipping")
             skipped += 1
             continue
 
-        print(f"  [{vid}] Generating: {word}")
-        try:
-            audio = generate_speech(word, voice="nova")
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            audio.export(str(output_path), format="mp3")
-            size_kb = output_path.stat().st_size / 1024
-            print(f"  [{vid}] Done ({size_kb:.0f} KB)")
+        print(f"  [{vid}] {word}...", end="", flush=True)
+        ok = generate_speech_to_file(word, "nova", output_path)
+        if ok:
+            print(" OK")
             success += 1
-        except Exception as e:
-            print(f"  [{vid}] Failed: {e}")
+        else:
+            print(" FAILED")
             failed += 1
 
-        # Brief pause to respect rate limits
         time.sleep(0.1)
 
-    print(f"\nVocab summary: {success} generated, {skipped} skipped, {failed} failed")
+    print(f"\nVocab: {success} generated, {skipped} skipped, {failed} failed")
 
 
 # ---------------------------------------------------------------------------
@@ -311,24 +303,11 @@ def cmd_vocab(ids: list[str], force: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate TTS audio for FCE listening extracts and vocabulary."
+        description="Generate TTS audio for FCE listening and vocabulary."
     )
-    parser.add_argument(
-        "mode",
-        choices=["listening", "vocab"],
-        help="What to generate: 'listening' for extracts, 'vocab' for word pronunciation",
-    )
-    parser.add_argument(
-        "ids",
-        nargs="*",
-        help="Optional specific IDs to generate (default: all)",
-    )
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Overwrite existing audio files",
-    )
-
+    parser.add_argument("mode", choices=["listening", "vocab"])
+    parser.add_argument("ids", nargs="*", help="Optional specific IDs")
+    parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
 
     if args.mode == "listening":
