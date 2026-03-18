@@ -6,13 +6,14 @@ import { useProgress } from "@/lib/progressContext";
 
 /**
  * Auto-redirects to the last visited page on initial load (homepage only).
- * Also records the current path as lastVisitedPath on navigation.
+ * Records lastVisitedPath only after 60s stay on a page (meaningful engagement).
  */
 export default function AutoRedirect() {
   const pathname = usePathname();
   const router = useRouter();
   const { isLoggedIn, lastVisitedPath, recordPageVisit } = useProgress();
   const hasRedirected = useRef(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Auto-redirect on first homepage load
   useEffect(() => {
@@ -28,11 +29,18 @@ export default function AutoRedirect() {
     }
   }, [isLoggedIn, lastVisitedPath, pathname, router]);
 
-  // Record current page visit (skip homepage)
+  // Record page visit after 60s stay (meaningful engagement)
   useEffect(() => {
-    if (isLoggedIn && pathname && pathname !== "/") {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    if (!isLoggedIn || !pathname || pathname === "/") return;
+
+    timerRef.current = setTimeout(() => {
       recordPageVisit(pathname);
-    }
+    }, 60 * 1000);
+
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, [isLoggedIn, pathname, recordPageVisit]);
 
   return null;

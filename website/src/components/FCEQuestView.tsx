@@ -465,12 +465,7 @@ function LessonCard({ lesson, lang, index }: { lesson: FCELesson; lang: string; 
 
 export default function FCEQuestView({ quest }: { quest: FCEQuest }) {
   const { lang } = useLang();
-  const { isLoggedIn, recordPageVisit } = useProgress();
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (isLoggedIn && pathname) recordPageVisit(pathname);
-  }, [isLoggedIn, pathname, recordPageVisit]);
+  // Page visit recorded by AutoRedirect after 60s
 
   return (
     <div className="max-w-3xl mx-auto" style={{ fontSize: 16, lineHeight: 1.7 }}>

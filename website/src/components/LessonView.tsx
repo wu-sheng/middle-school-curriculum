@@ -143,11 +143,18 @@ type Tab = "learn" | "vocabulary" | "examples" | "exercises" | "exam";
 function tabForHash(hash: string): Tab | null {
   if (!hash) return null;
   const id = hash.replace(/^#/, "");
+  // Direct tab names
+  const tabMap: Record<string, Tab> = {
+    learn: "learn", vocab: "vocabulary", vocabulary: "vocabulary",
+    examples: "examples", exercises: "exercises", exam: "exam",
+  };
+  if (tabMap[id]) return tabMap[id];
+  // Prefix-based
   if (id.startsWith("example-")) return "examples";
   if (id.startsWith("vocab-")) return "vocabulary";
   if (id.startsWith("q-")) return "exercises";
   if (id.startsWith("exam-")) return "exam";
-  if (["prerequisites", "reallife", "mistakes", "summary"].includes(id) || id.startsWith("concept-")) return "learn";
+  if (["prerequisites", "reallife", "mistakes"].includes(id) || id.startsWith("concept-")) return "learn";
   return null;
 }
 
@@ -175,18 +182,21 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   const { lang } = useLang();
   const ui = getUi(lang) as Record<string, string>;
   const l = lesson as unknown as Record<string, unknown>;
-  const { isLoggedIn, recordPageVisit, recordChapterScore, getChapterScores } = useProgress();
+  const { isLoggedIn, recordChapterScore, getChapterScores } = useProgress();
   const pathname = usePathname();
-  // Extract chapterId from pathname like /lesson/math/grade7/rational-numbers
   const chapterId = pathname?.split("/").pop() || "";
   const savedChapterScores = getChapterScores(chapterId);
 
-  // Record page visit for math lessons
-  useEffect(() => {
-    if (isLoggedIn && pathname) {
-      recordPageVisit(pathname);
+  // Update URL hash when session/tab changes (for deep linking and resume)
+  const updateHash = useCallback((tab: Tab) => {
+    const hashMap: Record<Tab, string> = {
+      learn: "learn", vocabulary: "vocab", examples: "examples",
+      exercises: "exercises", exam: "exam",
+    };
+    if (typeof window !== "undefined") {
+      window.history.replaceState(null, "", `${pathname}#${hashMap[tab]}`);
     }
-  }, [isLoggedIn, pathname, recordPageVisit]);
+  }, [pathname]);
 
   // Handle hash-based navigation on mount and hash change
   const navigateToHash = useCallback(() => {
@@ -212,9 +222,10 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   // Switch session → jump to first tab in that session
   const switchSession = useCallback((s: Session) => {
     setSession(s);
-    if (s === 1) setActiveTab("learn");
-    else setActiveTab("exercises");
-  }, []);
+    const tab: Tab = s === 1 ? "learn" : "exercises";
+    setActiveTab(tab);
+    updateHash(tab);
+  }, [updateHash]);
 
   // Build tabs for current session
   const allTabs: { key: Tab; label: string; icon: string; session: Session }[] = [
@@ -291,7 +302,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => { setActiveTab(tab.key); updateHash(tab.key); }}
             className={`flex-1 py-2.5 px-4 rounded-lg text-base font-medium transition-all ${
               activeTab === tab.key
                 ? "bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-sm"

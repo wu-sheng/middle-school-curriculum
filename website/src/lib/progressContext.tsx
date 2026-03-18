@@ -577,12 +577,20 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const recordPageVisit = useCallback((path: string) => {
     setProfile(prev => {
       if (!prev) return prev;
+      if (prev.lastVisitedPath === path) return prev; // no change
       const updated = { ...prev, lastVisitedPath: path, lastUpdated: new Date().toISOString() };
       saveProfileLocal(updated);
+      if (configRef.current) { profileDirtyRef.current = true; }
       return updated;
     });
-    // Don't sync to GitHub immediately for every page visit — the periodic sync will handle it
   }, []);
+
+  /** Record current browser path as lastVisitedPath (called on meaningful engagement) */
+  const recordCurrentPath = useCallback(() => {
+    if (typeof window === "undefined") return;
+    const path = window.location.pathname + window.location.hash;
+    recordPageVisit(path);
+  }, [recordPageVisit]);
 
   const syncNow = useCallback(async () => {
     const cfg = configRef.current;
@@ -778,10 +786,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         maxScore,
       });
 
-      // Sync immediately after scoring
+      recordCurrentPath();
       setTimeout(() => syncNow(), 500);
     },
-    [appendHistory, syncNow, scheduleSyncDirty]
+    [appendHistory, syncNow, scheduleSyncDirty, recordCurrentPath]
   );
 
   const recordChapterScore = useCallback(
@@ -825,9 +833,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         maxScore,
       });
 
+      recordCurrentPath();
       setTimeout(() => syncNow(), 500);
     },
-    [appendHistory, syncNow, scheduleSyncDirty]
+    [appendHistory, syncNow, scheduleSyncDirty, recordCurrentPath]
   );
 
   const recordQuestComplete = useCallback(

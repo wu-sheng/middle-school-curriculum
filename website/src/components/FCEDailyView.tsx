@@ -1067,12 +1067,7 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
 export default function FCEDailyView(props: DailyViewProps) {
   const { day, month, quest, readingData, vocabData, grammarData, uoeData, writingData, listeningData } = props;
   const { lang } = useLang();
-  const { isLoggedIn, recordDailyScore, getDailyScores, recordPageVisit } = useProgress();
-
-  // Record page visit
-  useEffect(() => {
-    if (isLoggedIn) recordPageVisit(`/fce/daily/${day.id}`);
-  }, [isLoggedIn, day.id, recordPageVisit]);
+  const { isLoggedIn, recordDailyScore, getDailyScores } = useProgress();
 
   // Saved scores for this day
   const savedScores = getDailyScores(day.id);
