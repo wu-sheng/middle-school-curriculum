@@ -35,15 +35,24 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     }
   }, [isOpen]);
 
+  const [nameConflict, setNameConflict] = useState<string | null>(null); // remote name if conflict
+
   const handleConnect = useCallback(async () => {
     if (!token.trim()) {
       setError(biPick(lang, "请输入 GitHub Token", "Please enter a GitHub token"));
       return;
     }
     setError("");
+    setNameConflict(null);
     setConnecting(true);
     try {
-      await login(token.trim(), repo.trim(), displayName.trim() || undefined);
+      const result = await login(token.trim(), repo.trim(), displayName.trim() || undefined);
+      if (!result.success) {
+        setError(biPick(lang, "连接失败", "Connection failed"));
+      } else if (result.remoteUserName) {
+        // Name conflict: repo has a different name
+        setNameConflict(result.remoteUserName);
+      }
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : String(e);
       if (msg.includes("401") || msg.toLowerCase().includes("invalid")) {
@@ -56,7 +65,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     } finally {
       setConnecting(false);
     }
-  }, [token, repo, displayName, lang, login, setUserName]);
+  }, [token, repo, displayName, lang, login]);
 
   const handleNameSave = useCallback(() => {
     if (displayName.trim() && displayName.trim() !== userName) {
@@ -281,6 +290,36 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               {/* Error message */}
               {error && (
                 <p className="text-sm text-red-500 text-center">{error}</p>
+              )}
+
+              {/* Name conflict resolution */}
+              {nameConflict && (
+                <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-2">
+                  <p className="text-sm text-amber-700 font-medium">
+                    {label("仓库中已有名称", "Name found in repository")}:
+                    <span className="font-bold ml-1">{nameConflict}</span>
+                  </p>
+                  <p className="text-xs text-amber-500">
+                    {label(
+                      `你输入的是 "${displayName.trim()}"，仓库中已存的是 "${nameConflict}"。选择使用哪个？`,
+                      `You entered "${displayName.trim()}", but "${nameConflict}" exists in the repo. Which one to use?`
+                    )}
+                  </p>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => { setUserName(nameConflict); setDisplayName(nameConflict); setNameConflict(null); }}
+                      className="flex-1 rounded-lg border border-amber-300 text-amber-700 py-1.5 text-xs font-medium hover:bg-amber-100 transition-colors"
+                    >
+                      {label(`使用 "${nameConflict}"`, `Use "${nameConflict}"`)}
+                    </button>
+                    <button
+                      onClick={() => { setUserName(displayName.trim()); setNameConflict(null); }}
+                      className="flex-1 rounded-lg border border-purple-300 text-purple-700 py-1.5 text-xs font-medium hover:bg-purple-50 transition-colors"
+                    >
+                      {label(`使用 "${displayName.trim()}"`, `Use "${displayName.trim()}"`)}
+                    </button>
+                  </div>
+                </div>
               )}
 
               {/* Divider */}

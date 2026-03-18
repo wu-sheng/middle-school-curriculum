@@ -95,7 +95,8 @@ export interface ProgressContextType {
   configInfo: { owner: string; repo: string } | null;
 
   // Actions
-  login: (token: string, repo: string, displayName?: string) => Promise<boolean>;
+  /** Returns { success, remoteUserName } — remoteUserName is set if profile existed in repo */
+  login: (token: string, repo: string, displayName?: string) => Promise<{ success: boolean; remoteUserName?: string }>;
   loginLocal: (displayName: string) => void; // local-only login (no GitHub)
   logout: () => void;
   setUserName: (name: string) => void;
@@ -375,6 +376,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         }
       }
       setProfile(prof);
+      profileRef.current = prof;
       setUserNameState(prof.userName || cfg.owner);
       saveProfileLocal(prof);
 
@@ -485,29 +487,39 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   // -----------------------------------------------------------------------
 
   const login = useCallback(
-    async (token: string, repo: string, displayName?: string): Promise<boolean> => {
+    async (token: string, repo: string, displayName?: string): Promise<{ success: boolean; remoteUserName?: string }> => {
       try {
         const owner = await fetchGitHubUser(token);
         const cfg: GitHubConfig = { token, repo, owner };
         saveGitHubConfig(cfg);
         setConfig(cfg);
         await loadFromGitHub(cfg);
-        // If display name provided and profile was just created, update it
-        if (displayName?.trim()) {
-          setUserNameState(displayName.trim());
-          setProfile((prev) => {
-            if (!prev) return prev;
-            const updated = { ...prev, userName: displayName.trim(), lastUpdated: new Date().toISOString() };
-            saveProfileLocal(updated);
-            return updated;
-          });
-          profileDirtyRef.current = true;
-          scheduleSyncDirty();
+
+        // Check what name came from the repo
+        const remoteUserName = profileRef.current?.userName;
+        const inputName = displayName?.trim();
+
+        if (remoteUserName && inputName && remoteUserName !== inputName && remoteUserName !== owner) {
+          // Conflict: repo has a different name. Return it so UI can ask user.
+          return { success: true, remoteUserName };
         }
-        return true;
+
+        // Decide which name to use
+        const finalName = inputName || remoteUserName || "Xinbloom";
+        setUserNameState(finalName);
+        setProfile((prev) => {
+          if (!prev) return prev;
+          if (prev.userName === finalName) return prev;
+          const updated = { ...prev, userName: finalName, lastUpdated: new Date().toISOString() };
+          saveProfileLocal(updated);
+          return updated;
+        });
+        if (configRef.current) { profileDirtyRef.current = true; scheduleSyncDirty(); }
+
+        return { success: true };
       } catch (err) {
         console.error("[progressContext] Login failed:", err);
-        return false;
+        return { success: false };
       }
     },
     [loadFromGitHub, scheduleSyncDirty]
