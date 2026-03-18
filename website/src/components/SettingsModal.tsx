@@ -123,6 +123,36 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
         </div>
 
         <div className="px-6 py-5 space-y-5">
+          {/* Name conflict — shown above everything until resolved */}
+          {nameConflict && (
+            <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-2">
+              <p className="text-sm text-amber-700 font-medium">
+                {label("仓库中已有名称", "Name found in repository")}:
+                <span className="font-bold ml-1">{nameConflict.remote}</span>
+              </p>
+              <p className="text-xs text-amber-500">
+                {label(
+                  `你输入的是 "${nameConflict.local}"，仓库中已存的是 "${nameConflict.remote}"。选择使用哪个？`,
+                  `You entered "${nameConflict.local}", but "${nameConflict.remote}" exists in the repo. Which one to use?`
+                )}
+              </p>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => { setUserName(nameConflict.remote); setDisplayName(nameConflict.remote); setNameConflict(null); }}
+                  className="flex-1 rounded-lg border border-amber-300 text-amber-700 py-1.5 text-xs font-medium hover:bg-amber-100 transition-colors"
+                >
+                  {label(`使用 "${nameConflict.remote}"`, `Use "${nameConflict.remote}"`)}
+                </button>
+                <button
+                  onClick={() => { setUserName(nameConflict.local); setDisplayName(nameConflict.local); setNameConflict(null); }}
+                  className="flex-1 rounded-lg border border-purple-300 text-purple-700 py-1.5 text-xs font-medium hover:bg-purple-50 transition-colors"
+                >
+                  {label(`使用 "${nameConflict.local}"`, `Use "${nameConflict.local}"`)}
+                </button>
+              </div>
+            </div>
+          )}
+
           {isLoggedIn ? (
             /* ── Logged-in view ── */
             <>
@@ -294,35 +324,6 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 <p className="text-sm text-red-500 text-center">{error}</p>
               )}
 
-              {/* Name conflict resolution */}
-              {nameConflict && (
-                <div className="rounded-xl bg-amber-50 border border-amber-200 p-4 space-y-2">
-                  <p className="text-sm text-amber-700 font-medium">
-                    {label("仓库中已有名称", "Name found in repository")}:
-                    <span className="font-bold ml-1">{nameConflict.remote}</span>
-                  </p>
-                  <p className="text-xs text-amber-500">
-                    {label(
-                      `你输入的是 "${nameConflict.local}"，仓库中已存的是 "${nameConflict.remote}"。选择使用哪个？`,
-                      `You entered "${nameConflict.local}", but "${nameConflict.remote}" exists in the repo. Which one to use?`
-                    )}
-                  </p>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => { setUserName(nameConflict.remote); setDisplayName(nameConflict.remote); setNameConflict(null); }}
-                      className="flex-1 rounded-lg border border-amber-300 text-amber-700 py-1.5 text-xs font-medium hover:bg-amber-100 transition-colors"
-                    >
-                      {label(`使用 "${nameConflict.remote}"`, `Use "${nameConflict.remote}"`)}
-                    </button>
-                    <button
-                      onClick={() => { setUserName(nameConflict.local); setDisplayName(nameConflict.local); setNameConflict(null); }}
-                      className="flex-1 rounded-lg border border-purple-300 text-purple-700 py-1.5 text-xs font-medium hover:bg-purple-50 transition-colors"
-                    >
-                      {label(`使用 "${nameConflict.local}"`, `Use "${nameConflict.local}"`)}
-                    </button>
-                  </div>
-                </div>
-              )}
 
               {/* Divider */}
               <div className="flex items-center gap-3 my-4">
