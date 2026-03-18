@@ -903,11 +903,11 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
 
             {/* Comprehension question */}
             <div className={`mt-4 p-3 rounded-xl border ${isChecked ? (isCorrect ? "border-green-200 bg-green-50/30" : "border-red-200 bg-red-50/30") : "border-gray-100"}`}>
-              <p className="font-medium mb-2">
+              <div className="font-medium mb-2">
                 {lang === "both"
                   ? <BiBlock zh={extract.question.text} en={extract.question.textZh} />
                   : <span>{lang === "en" ? extract.question.text : extract.question.textZh}</span>}
-              </p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 ml-2">
                 {Object.entries(extract.question.options).map(([key, val]) => (
                   <label key={key} className={`flex items-center gap-2 p-1.5 rounded-lg cursor-pointer transition-colors ${answers[extract.id] === key ? "bg-purple-50" : "hover:bg-gray-50"} ${isChecked && key === extract.question.answer ? "ring-2 ring-green-300" : ""}`}>
