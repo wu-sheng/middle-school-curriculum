@@ -472,21 +472,23 @@ function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProp
   function checkCurrent() {
     setChecked(prev => {
       const next = { ...prev, [q.id]: true };
-      // If all answered, report score
+      // If all answered, report score after render
       if (Object.keys(next).length === total) {
-        const qr: Record<string, boolean> = {};
-        const correct = grammarData.filter(g => {
-          if (g.type === "cloze-passage" && g.blanks) {
-            const ba = blanksAnswers[g.id] || {};
-            const ok = g.blanks.every(b => (ba[b.id] || "").trim().toLowerCase() === b.answer.toLowerCase());
+        setTimeout(() => {
+          const qr: Record<string, boolean> = {};
+          const correct = grammarData.filter(g => {
+            if (g.type === "cloze-passage" && g.blanks) {
+              const ba = blanksAnswers[g.id] || {};
+              const ok = g.blanks.every(b => (ba[b.id] || "").trim().toLowerCase() === b.answer.toLowerCase());
+              qr[g.id] = ok;
+              return ok;
+            }
+            const ok = (answers[g.id] || "").trim().toLowerCase() === g.answer.toLowerCase();
             qr[g.id] = ok;
             return ok;
-          }
-          const ok = (answers[g.id] || "").trim().toLowerCase() === g.answer.toLowerCase();
-          qr[g.id] = ok;
-          return ok;
-        }).length;
-        onScore?.(correct, total, qr);
+          }).length;
+          onScore?.(correct, total, qr);
+        }, 0);
       }
       return next;
     });
