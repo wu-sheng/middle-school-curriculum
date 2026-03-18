@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import { loadCurriculum } from "@/lib/loadYaml";
 import { I18nProvider } from "@/lib/i18n";
+import { ProgressProvider } from "@/lib/progressContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -68,10 +69,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <I18nProvider>
-          <Sidebar subjects={sidebarData} />
-          <main className="lg:ml-64 min-h-screen">
-            {children}
-          </main>
+          <ProgressProvider>
+            <Sidebar subjects={sidebarData} />
+            <main className="lg:ml-64 min-h-screen">
+              {children}
+            </main>
+          </ProgressProvider>
         </I18nProvider>
       </body>
     </html>

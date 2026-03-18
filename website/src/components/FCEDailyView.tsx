@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { useLang, biPick } from "@/lib/i18n";
 import { BiBlock, BiLabel } from "@/components/BiText";
 import Collapsible from "@/components/Collapsible";
 import AudioWord from "@/components/AudioWord";
+import { useProgress } from "@/lib/progressContext";
 
 /** Inline vocab popover — click to show, click outside to dismiss */
 function VocabPopover({ word, info }: {
@@ -159,7 +160,7 @@ function Card({ children, className = "" }: { children: React.ReactNode; classNa
 /*  Tab 1 : Reading                                                    */
 /* ------------------------------------------------------------------ */
 
-function ReadingTab({ data, allVocab }: { data: DailyViewProps["readingData"]; lang: string; allVocab: DailyViewProps["vocabData"] }) {
+function ReadingTab({ data, allVocab, onScore }: { data: DailyViewProps["readingData"]; lang: string; allVocab: DailyViewProps["vocabData"]; onScore?: (score: number, max: number) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [graded, setGraded] = useState(false);
 
@@ -249,7 +250,7 @@ function ReadingTab({ data, allVocab }: { data: DailyViewProps["readingData"]; l
         })}
 
         {!graded ? (
-          <button onClick={() => setGraded(true)} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
+          <button onClick={() => { setGraded(true); if (data) { const s = data.questions.reduce((acc, q) => acc + (answers[q.id] === q.answer ? 1 : 0), 0); onScore?.(s, data.questions.length); } }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
             Check Answers
           </button>
         ) : (
@@ -446,7 +447,7 @@ function VocabTab({ vocabData, newIds, reviewIds, lang }: {
 /*  Tab 3 : Grammar                                                    */
 /* ------------------------------------------------------------------ */
 
-function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["grammarData"]; lang: string }) {
+function GrammarTab({ grammarData, lang, onScore }: { grammarData: DailyViewProps["grammarData"]; lang: string; onScore?: (score: number, max: number) => void }) {
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [blanksAnswers, setBlanksAnswers] = useState<Record<string, Record<string, string>>>({});
@@ -467,7 +468,21 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
   }).length;
 
   function checkCurrent() {
-    setChecked(prev => ({ ...prev, [q.id]: true }));
+    setChecked(prev => {
+      const next = { ...prev, [q.id]: true };
+      // If all answered, report score
+      if (Object.keys(next).length === total) {
+        const correct = grammarData.filter(g => {
+          if (g.type === "cloze-passage" && g.blanks) {
+            const ba = blanksAnswers[g.id] || {};
+            return g.blanks.every(b => (ba[b.id] || "").trim().toLowerCase() === b.answer.toLowerCase());
+          }
+          return (answers[g.id] || "").trim().toLowerCase() === g.answer.toLowerCase();
+        }).length;
+        onScore?.(correct, total);
+      }
+      return next;
+    });
   }
 
   function isCurrentCorrect() {
@@ -634,7 +649,7 @@ function GrammarTab({ grammarData, lang }: { grammarData: DailyViewProps["gramma
 /*  Tab 4 : Use of English                                             */
 /* ------------------------------------------------------------------ */
 
-function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: string }) {
+function UoETab({ uoeData, lang, onScore }: { uoeData: DailyViewProps["uoeData"]; lang: string; onScore?: (score: number, max: number) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [graded, setGraded] = useState(false);
 
@@ -684,7 +699,7 @@ function UoETab({ uoeData, lang }: { uoeData: DailyViewProps["uoeData"]; lang: s
       })}
 
       {!graded ? (
-        <button onClick={() => setGraded(true)} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
+        <button onClick={() => { setGraded(true); const s = uoeData.reduce((acc, q) => acc + ((answers[q.id] || "").trim().toLowerCase() === q.answer.toLowerCase() ? 1 : 0), 0); onScore?.(s, uoeData.length); }} className="mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white font-medium hover:opacity-90 transition-opacity">
           Check Answers
         </button>
       ) : (
@@ -836,7 +851,7 @@ function speakerColor(voice: string): string {
   }
 }
 
-function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["listeningData"]; lang: string }) {
+function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyViewProps["listeningData"]; lang: string; onScore?: (score: number, max: number) => void }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   // Part 2 sentence-completion answers: keyed by sentence id
@@ -1018,6 +1033,17 @@ function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["
 export default function FCEDailyView(props: DailyViewProps) {
   const { day, month, quest, readingData, vocabData, grammarData, uoeData, writingData, listeningData } = props;
   const { lang } = useLang();
+  const { isLoggedIn, recordDailyScore, getDailyScores } = useProgress();
+
+  // Saved scores for this day
+  const savedScores = getDailyScores(day.id);
+
+  // Callback for tabs to report scores
+  const handleScore = useCallback((tab: string, score: number, maxScore: number) => {
+    if (isLoggedIn && maxScore > 0) {
+      recordDailyScore(day.id, tab, score, maxScore);
+    }
+  }, [isLoggedIn, day.id, recordDailyScore]);
 
   // Build available tabs (writing only if data exists)
   const tabs = useMemo(() => {
@@ -1074,6 +1100,15 @@ export default function FCEDailyView(props: DailyViewProps) {
           >
             <span>{tab.icon}</span>
             <span><BiLabel zh={tab.zh} en={tab.en} /></span>
+            {savedScores && savedScores[tab.key] != null && (
+              <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                savedScores[tab.key] >= 80 ? "bg-green-100 text-green-600" :
+                savedScores[tab.key] >= 50 ? "bg-amber-100 text-amber-600" :
+                "bg-red-100 text-red-600"
+              }`}>
+                {Math.round(savedScores[tab.key])}%
+              </span>
+            )}
             {activeTab === tab.key && (
               <span className="absolute bottom-0 left-2 right-2 h-0.5 rounded-full bg-gradient-to-r from-pink-400 to-purple-400" />
             )}
@@ -1083,13 +1118,13 @@ export default function FCEDailyView(props: DailyViewProps) {
 
       {/* Tab Content */}
       <div>
-        {activeTab === "reading" && <ReadingTab data={readingData} lang={lang} allVocab={vocabData} />}
+        {activeTab === "reading" && <ReadingTab data={readingData} lang={lang} allVocab={vocabData} onScore={(s, m) => handleScore("reading", s, m)} />}
         {activeTab === "vocab" && (
           <VocabTab vocabData={vocabData} newIds={day.newVocab} reviewIds={day.reviewVocab} lang={lang} />
         )}
-        {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} />}
-        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} />}
-        {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} />}
+        {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} onScore={(s, m) => handleScore("grammar", s, m)} />}
+        {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} onScore={(s, m) => handleScore("useOfEnglish", s, m)} />}
+        {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} onScore={(s, m) => handleScore("listening", s, m)} />}
         {activeTab === "writing" && <WritingTab data={writingData} lang={lang} />}
       </div>
 

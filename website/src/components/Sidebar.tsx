@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLang, getUi, biPick, type Lang } from "@/lib/i18n";
+import SettingsModal, { UserBadge } from "./SettingsModal";
 
 interface SidebarChapter {
   id: string;
@@ -87,6 +88,7 @@ export default function Sidebar({ subjects }: SidebarProps) {
     initExpanded.semesters
   );
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   const toggle = (
     set: Set<string>,
@@ -287,6 +289,11 @@ export default function Sidebar({ subjects }: SidebarProps) {
           )}
         </div>
       ))}
+
+      {/* User badge / settings at bottom */}
+      <div className="px-4 py-3 mt-4 border-t border-pink-50">
+        <UserBadge onClick={() => setSettingsOpen(true)} />
+      </div>
     </nav>
   );
 
@@ -316,6 +323,9 @@ export default function Sidebar({ subjects }: SidebarProps) {
       >
         {nav}
       </aside>
+
+      {/* Settings modal */}
+      <SettingsModal isOpen={settingsOpen} onClose={() => setSettingsOpen(false)} />
     </>
   );
 }
