@@ -313,7 +313,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           sectionField="section"
           theme={exerciseTheme}
           icon="🐼"
-          onScore={(s, m, qr) => { console.log("[LessonView] exercise score:", chapterId, s, m, "isLoggedIn:", isLoggedIn); if (isLoggedIn) recordChapterScore(chapterId, "exercise", s, m); }}
+          onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "exercise", s, m) : undefined}
         />
       )}
       {activeTab === "exam" && lesson.examPrep && (
@@ -322,7 +322,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           prefix="exam"
           theme={examTheme}
           icon="🎯"
-          onScore={(s, m, qr) => { console.log("[LessonView] examPrep score:", chapterId, s, m, "isLoggedIn:", isLoggedIn); if (isLoggedIn) recordChapterScore(chapterId, "examPrep", s, m); }}
+          onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "examPrep", s, m) : undefined}
           intro={
             <div className="bg-gradient-to-r from-amber-50/60 to-orange-50/60 rounded-2xl p-5 border border-amber-100">
               <h3 className="font-bold text-amber-600 mb-2 flex items-center gap-2">
