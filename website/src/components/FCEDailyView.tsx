@@ -1089,7 +1089,21 @@ export default function FCEDailyView(props: DailyViewProps) {
     return all;
   }, [writingData, listeningData]);
 
-  const [activeTab, setActiveTab] = useState<TabKey>("reading");
+  // Restore tab from URL hash on mount
+  const [activeTab, setActiveTab] = useState<TabKey>(() => {
+    if (typeof window === "undefined") return "reading";
+    const hash = window.location.hash.replace("#", "");
+    const valid: TabKey[] = ["reading", "vocab", "grammar", "uoe", "listening", "writing"];
+    return valid.includes(hash as TabKey) ? (hash as TabKey) : "reading";
+  });
+
+  // Update URL hash on tab switch
+  const switchTab = useCallback((tab: TabKey) => {
+    setActiveTab(tab);
+    if (typeof window !== "undefined") {
+      window.history.replaceState(null, "", `${window.location.pathname}#${tab}`);
+    }
+  }, []);
 
   return (
     <div className="max-w-5xl mx-auto">
@@ -1125,7 +1139,7 @@ export default function FCEDailyView(props: DailyViewProps) {
         {tabs.map(tab => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => switchTab(tab.key)}
             className={`flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-colors relative ${
               activeTab === tab.key
                 ? "text-purple-600"

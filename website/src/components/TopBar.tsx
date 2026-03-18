@@ -10,7 +10,6 @@ export default function TopBar() {
   const { isLoggedIn, recentPages } = useProgress();
   const panelRef = useRef<HTMLDivElement>(null);
 
-  // Close panel when clicking outside
   useEffect(() => {
     if (!panelOpen) return;
     function handleClick(e: MouseEvent) {
@@ -20,29 +19,30 @@ export default function TopBar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, [panelOpen]);
 
+  const hasRecent = isLoggedIn && recentPages.length > 0;
+
   return (
     <>
-      <div ref={panelRef} className="fixed top-3 right-4 z-30 lg:right-6">
-        {/* User badge row — always visible */}
-        <div className="flex items-center gap-1">
+      <div ref={panelRef} className="fixed top-0 right-0 z-30">
+        {/* Compact bar */}
+        <div className="flex items-center gap-1 bg-white/95 backdrop-blur-sm border-b border-l border-gray-100 rounded-bl-xl px-3 py-1.5 shadow-sm">
           <UserBadge onClick={() => setSettingsOpen(true)} />
-          {isLoggedIn && recentPages.length > 0 && (
+          {hasRecent && (
             <button
               onClick={() => setPanelOpen(!panelOpen)}
-              className={`w-7 h-7 flex items-center justify-center rounded-full transition-colors text-xs ${
-                panelOpen ? "bg-purple-100 text-purple-500" : "text-gray-300 hover:text-purple-400 hover:bg-purple-50"
+              className={`w-6 h-6 flex items-center justify-center rounded-full transition-colors text-[10px] ${
+                panelOpen ? "bg-purple-100 text-purple-500" : "text-gray-300 hover:text-purple-400"
               }`}
-              title="Recent pages"
             >
-              📍
+              {panelOpen ? "▴" : "▾"}
             </button>
           )}
         </div>
 
-        {/* Dropdown panel — below the badge */}
-        {panelOpen && recentPages.length > 0 && (
-          <div className="absolute top-full right-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg px-3 py-2 min-w-[200px] max-w-[280px]">
-            <p className="text-[10px] text-gray-400 mb-1.5 uppercase tracking-wide">Recent</p>
+        {/* Dropdown */}
+        {panelOpen && hasRecent && (
+          <div className="absolute top-full right-0 bg-white border border-gray-100 border-t-0 rounded-b-xl shadow-lg px-3 py-2 min-w-[200px] max-w-[300px]">
+            <p className="text-[10px] text-gray-300 mb-1 uppercase tracking-wider">Recent</p>
             {recentPages.map((p, i) => (
               <a
                 key={p.path + p.timestamp}
@@ -53,7 +53,7 @@ export default function TopBar() {
                 }`}
                 title={p.path}
               >
-                {i === 0 ? "📍 " : "· "}{p.label}
+                {i === 0 ? "📍 " : ""}{p.label}
               </a>
             ))}
           </div>
