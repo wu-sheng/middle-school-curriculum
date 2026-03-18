@@ -106,19 +106,31 @@ interface DailyViewProps {
     selfCheckList: string[]; selfCheckListZh: string[];
     modelAnswer: string; modelAnswerZh: string;
   } | null;
+  listeningData: {
+    id: string; type: string; title: string; titleZh: string;
+    scene: string; sceneZh: string; difficulty: number;
+    audioFile: string;
+    script: { speaker: string; voice: string; text: string }[];
+    question: {
+      text: string; textZh: string;
+      options: Record<string, string>; answer: string;
+      explanation: string; explanationZh: string;
+    };
+  }[];
 }
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
-type TabKey = "reading" | "vocab" | "grammar" | "uoe" | "writing";
+type TabKey = "reading" | "vocab" | "grammar" | "uoe" | "listening" | "writing";
 
 const TAB_META: { key: TabKey; icon: string; zh: string; en: string }[] = [
   { key: "reading", icon: "📖", zh: "阅读", en: "Reading" },
   { key: "vocab", icon: "📝", zh: "词汇", en: "Vocabulary" },
   { key: "grammar", icon: "🔧", zh: "语法", en: "Grammar" },
   { key: "uoe", icon: "🧩", zh: "词形转换", en: "Use of English" },
+  { key: "listening", icon: "🎧", zh: "听力", en: "Listening" },
   { key: "writing", icon: "✍️", zh: "写作", en: "Writing" },
 ];
 
@@ -812,18 +824,149 @@ function WritingTab({ data, lang }: { data: DailyViewProps["writingData"]; lang:
 }
 
 /* ------------------------------------------------------------------ */
+/*  Tab 6 : Listening                                                  */
+/* ------------------------------------------------------------------ */
+
+function speakerColor(voice: string): string {
+  switch (voice) {
+    case "girl": case "shimmer": return "text-pink-500";
+    case "boy": case "echo": return "text-blue-500";
+    case "narrator": case "nova": return "text-purple-500";
+    case "adult": case "onyx": return "text-gray-500";
+    default: return "text-gray-600";
+  }
+}
+
+function ListeningTab({ listeningData, lang }: { listeningData: DailyViewProps["listeningData"]; lang: string }) {
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [checked, setChecked] = useState<Record<string, boolean>>({});
+
+  if (listeningData.length === 0) return <Card><p className="text-gray-400 italic"><BiLabel zh="本日无听力练习" en="No listening exercises today." /></p></Card>;
+
+  return (
+    <>
+      {listeningData.map((extract, ei) => {
+        const isChecked = !!checked[extract.id];
+        const isCorrect = isChecked && answers[extract.id] === extract.question.answer;
+        return (
+          <Card key={extract.id}>
+            {/* Header */}
+            <div className="flex flex-wrap items-center gap-2 mb-3">
+              <span className="text-purple-400 font-medium">{ei + 1}.</span>
+              <h4 className="font-semibold text-purple-700">
+                {lang === "both"
+                  ? <BiBlock zh={extract.title} en={extract.titleZh} />
+                  : <span>{lang === "en" ? extract.title : extract.titleZh}</span>}
+              </h4>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 font-medium">{extract.type}</span>
+              <span className="text-xs text-gray-400">
+                {"★".repeat(extract.difficulty)}{"☆".repeat(3 - extract.difficulty)}
+              </span>
+            </div>
+
+            {/* Scene description */}
+            <div className="text-sm text-gray-500 italic mb-3">
+              {lang === "both"
+                ? <BiBlock zh={extract.scene} en={extract.sceneZh} />
+                : <span>{lang === "en" ? extract.scene : extract.sceneZh}</span>}
+            </div>
+
+            {/* Audio player */}
+            {extract.audioFile && (
+              <div className="mb-3">
+                <audio controls className="w-full rounded-lg" preload="none">
+                  <source src={extract.audioFile} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            )}
+
+            {/* Script (collapsible) */}
+            <Collapsible title={biPick(lang as "zh" | "en" | "both", "查看原文", "Read Script")} variant="step">
+              <div className="space-y-2 py-2">
+                <div className="text-sm text-gray-400 italic mb-3">
+                  🎭 [{biPick(lang as "zh" | "en" | "both",
+                    `场景：${extract.sceneZh || extract.scene}`,
+                    `Scene: ${extract.scene}`
+                  )}]
+                </div>
+                {extract.script.map((line, li) => (
+                  <div key={li} className="flex gap-2 text-sm">
+                    <span className={`font-semibold shrink-0 ${speakerColor(line.voice)}`}>
+                      {line.speaker}:
+                    </span>
+                    <span className="text-gray-700">{line.text}</span>
+                  </div>
+                ))}
+              </div>
+            </Collapsible>
+
+            {/* Comprehension question */}
+            <div className={`mt-4 p-3 rounded-xl border ${isChecked ? (isCorrect ? "border-green-200 bg-green-50/30" : "border-red-200 bg-red-50/30") : "border-gray-100"}`}>
+              <p className="font-medium mb-2">
+                {lang === "both"
+                  ? <BiBlock zh={extract.question.text} en={extract.question.textZh} />
+                  : <span>{lang === "en" ? extract.question.text : extract.question.textZh}</span>}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 ml-2">
+                {Object.entries(extract.question.options).map(([key, val]) => (
+                  <label key={key} className={`flex items-center gap-2 p-1.5 rounded-lg cursor-pointer transition-colors ${answers[extract.id] === key ? "bg-purple-50" : "hover:bg-gray-50"} ${isChecked && key === extract.question.answer ? "ring-2 ring-green-300" : ""}`}>
+                    <input
+                      type="radio"
+                      name={`listening-${extract.id}`}
+                      value={key}
+                      checked={answers[extract.id] === key}
+                      onChange={() => !isChecked && setAnswers(prev => ({ ...prev, [extract.id]: key }))}
+                      disabled={isChecked}
+                      className="accent-purple-500"
+                    />
+                    <span className="text-sm"><span className="font-medium text-gray-500">{key}.</span> {val}</span>
+                  </label>
+                ))}
+              </div>
+
+              {!isChecked ? (
+                <button
+                  onClick={() => setChecked(prev => ({ ...prev, [extract.id]: true }))}
+                  className="mt-3 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-400 to-purple-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                >
+                  Check
+                </button>
+              ) : (
+                <div className={`mt-2 text-sm ${isCorrect ? "text-green-600" : "text-red-600"}`}>
+                  {isCorrect ? "✓" : `✗ Correct answer: ${extract.question.answer}`}
+                  <div className="text-gray-500 mt-1">
+                    {lang === "both"
+                      ? <BiBlock zh={extract.question.explanation} en={extract.question.explanationZh} />
+                      : <span>{lang === "en" ? extract.question.explanation : extract.question.explanationZh}</span>}
+                  </div>
+                </div>
+              )}
+            </div>
+          </Card>
+        );
+      })}
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  Main Component                                                     */
 /* ------------------------------------------------------------------ */
 
 export default function FCEDailyView(props: DailyViewProps) {
-  const { day, month, quest, readingData, vocabData, grammarData, uoeData, writingData } = props;
+  const { day, month, quest, readingData, vocabData, grammarData, uoeData, writingData, listeningData } = props;
   const { lang } = useLang();
 
   // Build available tabs (writing only if data exists)
   const tabs = useMemo(() => {
-    const all = TAB_META.filter(t => t.key !== "writing" || writingData !== null);
+    const all = TAB_META.filter(t => {
+      if (t.key === "writing") return writingData !== null;
+      if (t.key === "listening") return listeningData.length > 0;
+      return true;
+    });
     return all;
-  }, [writingData]);
+  }, [writingData, listeningData]);
 
   const [activeTab, setActiveTab] = useState<TabKey>("reading");
 
@@ -885,6 +1028,7 @@ export default function FCEDailyView(props: DailyViewProps) {
         )}
         {activeTab === "grammar" && <GrammarTab grammarData={grammarData} lang={lang} />}
         {activeTab === "uoe" && <UoETab uoeData={uoeData} lang={lang} />}
+        {activeTab === "listening" && <ListeningTab listeningData={listeningData} lang={lang} />}
         {activeTab === "writing" && <WritingTab data={writingData} lang={lang} />}
       </div>
 

@@ -105,6 +105,18 @@ export function loadAllFceDays(): FCEDayEntry[] {
   return all;
 }
 
+export function loadAllFceListening(): FCEListeningExtract[] {
+  const dir = path.join(fceDir, "listening");
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".yaml")).sort();
+  const all: FCEListeningExtract[] = [];
+  for (const f of files) {
+    const data = yaml.load(fs.readFileSync(path.join(dir, f), "utf8")) as { extracts: FCEListeningExtract[] };
+    if (data.extracts) all.push(...data.extracts);
+  }
+  return all;
+}
+
 /** Resolve a daily entry's references into actual content objects */
 export function resolveDailyContent(day: FCEDayEntry) {
   const readings = loadAllFceReadings();
@@ -112,12 +124,14 @@ export function resolveDailyContent(day: FCEDayEntry) {
   const grammar = loadFceGrammar();
   const uoe = loadFceUoE();
   const writing = loadFceWriting();
+  const listening = loadAllFceListening();
 
   const readingMap = new Map(readings.map((r) => [r.id, r]));
   const vocabMap = new Map(vocab.map((v) => [v.id, v]));
   const grammarMap = new Map(grammar.map((g) => [g.id, g]));
   const uoeMap = new Map(uoe.map((u) => [u.id, u]));
   const writingMap = new Map(writing.map((w) => [w.id, w]));
+  const listeningMap = new Map(listening.map((l) => [l.id, l]));
 
   return {
     readingData: day.reading ? readingMap.get(day.reading) ?? null : null,
@@ -132,6 +146,9 @@ export function resolveDailyContent(day: FCEDayEntry) {
       .map((id) => uoeMap.get(id))
       .filter((u): u is FCEUoEQuestion => !!u),
     writingData: day.writing ? writingMap.get(day.writing) ?? null : null,
+    listeningData: (day.listening || [])
+      .map((id) => listeningMap.get(id))
+      .filter((l): l is FCEListeningExtract => !!l),
   };
 }
 
@@ -293,6 +310,34 @@ export interface FCEWritingTask {
   modelAnswerZh: string;
 }
 
+export interface FCEListeningLine {
+  speaker: string;
+  voice: string;
+  text: string;
+}
+
+export interface FCEListeningQuestion {
+  text: string;
+  textZh: string;
+  options: Record<string, string>;
+  answer: string;
+  explanation: string;
+  explanationZh: string;
+}
+
+export interface FCEListeningExtract {
+  id: string;
+  type: string;
+  title: string;
+  titleZh: string;
+  scene: string;
+  sceneZh: string;
+  difficulty: number;
+  audioFile: string;
+  script: FCEListeningLine[];
+  question: FCEListeningQuestion;
+}
+
 export interface FCEDayEntry {
   id: string;
   dayOffset: number;
@@ -302,6 +347,7 @@ export interface FCEDayEntry {
   grammar: string[];
   useOfEnglish: string[];
   writing: string | null;
+  listening?: string[];
 }
 
 export interface FCEDailySchedule {

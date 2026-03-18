@@ -32,6 +32,7 @@ export default async function FCEDailyPage({ params }: Props) {
       grammarData={resolved.grammarData}
       uoeData={resolved.uoeData}
       writingData={resolved.writingData}
+      listeningData={resolved.listeningData}
     />
   );
 }

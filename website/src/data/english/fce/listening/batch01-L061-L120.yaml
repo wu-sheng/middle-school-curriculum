@@ -1,0 +1,1727 @@
+# FCE Daily Practice – Listening Extracts Month 2 (L061–L120)
+# Theme: Q02 Time Traveler
+# 60 short extracts, 2 per day for days 31–60
+# Each extract simulates FCE Listening Part 1
+
+extracts:
+  # ============================================================
+  # L061–L070: Time and History
+  # ============================================================
+
+  - id: L061
+    type: short-dialogue
+    title: 'The Time Capsule'
+    titleZh: '时间胶囊'
+    scene: 'You hear two friends discussing a school project.'
+    sceneZh: '你听到两个朋友在讨论学校项目。'
+    difficulty: 1
+    audioFile: 'L061.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Have you decided what to put in the time capsule?"
+      - speaker: girl
+        voice: shimmer
+        text: "I was thinking of putting in a photo of our class and a letter about what life is like now."
+      - speaker: boy
+        voice: echo
+        text: "That's brilliant! I'll add my favourite comic book."
+    question:
+      text: "What has the girl already decided to include?"
+      textZh: '女孩已经决定放什么？'
+      options:
+        A: 'A comic book and a photo'
+        B: 'A class photo and a letter'
+        C: 'A letter and a comic book'
+      answer: 'B'
+      explanation: "The girl says she'll put in a photo of their class and a letter."
+      explanationZh: '女孩说她要放班级照片和一封信。'
+
+  - id: L062
+    type: monologue
+    title: 'The Museum Guide'
+    titleZh: '博物馆导览'
+    scene: 'You hear a museum guide talking to a group of visitors.'
+    sceneZh: '你听到博物馆导游在对一组游客讲话。'
+    difficulty: 1
+    audioFile: 'L062.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "Welcome to the History Museum. Today's tour will take about forty-five minutes. We'll start with the Ancient Egypt room on the second floor, then move on to the Roman gallery downstairs. Please remember that photography is allowed, but you mustn't use flash."
+    question:
+      text: "Where does the tour begin?"
+      textZh: '参观从哪里开始？'
+      options:
+        A: 'The Roman gallery downstairs'
+        B: 'The Ancient Egypt room on the second floor'
+        C: 'The photography exhibition'
+      answer: 'B'
+      explanation: "The guide says they'll start with the Ancient Egypt room on the second floor."
+      explanationZh: '导游说他们将从二楼的古埃及展厅开始。'
+
+  - id: L063
+    type: short-dialogue
+    title: 'Ancient Civilizations Project'
+    titleZh: '古文明项目'
+    scene: 'You hear two students talking about a history assignment.'
+    sceneZh: '你听到两个学生在讨论历史作业。'
+    difficulty: 2
+    audioFile: 'L063.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "I can't make up my mind which ancient civilization to research. I was going to pick Ancient Greece, but then I found this amazing book about the Maya."
+      - speaker: boy
+        voice: echo
+        text: "The Maya would be really interesting. Not many people in our class will choose that."
+      - speaker: girl
+        voice: shimmer
+        text: "That's exactly what I was thinking. I'll go with the Maya then."
+    question:
+      text: "Why does the girl decide on the Maya?"
+      textZh: '女孩为什么决定选玛雅文明？'
+      options:
+        A: 'Because the teacher recommended it'
+        B: 'Because she found a good book and it is an unusual choice'
+        C: 'Because Ancient Greece was too difficult'
+      answer: 'B'
+      explanation: "The girl found an amazing book about the Maya, and the boy points out that not many classmates will choose it, which confirms her thinking."
+      explanationZh: '女孩找到了一本关于玛雅的好书，男孩指出班上不会有很多人选，这正合她意。'
+
+  - id: L064
+    type: student-adult
+    title: 'The Old Clock'
+    titleZh: '古老的钟'
+    scene: 'You hear a girl asking her grandfather about an old clock.'
+    sceneZh: '你听到一个女孩在问她的祖父关于一座古老钟的事。'
+    difficulty: 2
+    audioFile: 'L064.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Grandpa, how old is that clock on the wall? It looks really ancient."
+      - speaker: man
+        voice: onyx
+        text: "Well, it belonged to my grandmother, so it must be well over a hundred years old. She brought it all the way from Germany when she moved here."
+      - speaker: girl
+        voice: shimmer
+        text: "Wow, so it's been in the family for generations!"
+    question:
+      text: "Where did the clock originally come from?"
+      textZh: '这座钟最初来自哪里？'
+      options:
+        A: 'It was bought at a local shop'
+        B: 'It was brought from Germany'
+        C: 'It was a birthday gift'
+      answer: 'B'
+      explanation: "The grandfather says his grandmother brought it all the way from Germany."
+      explanationZh: '祖父说他的祖母从德国一路带过来的。'
+
+  - id: L065
+    type: short-dialogue
+    title: 'History Quiz'
+    titleZh: '历史问答'
+    scene: 'You hear two students preparing for a history quiz.'
+    sceneZh: '你听到两个学生在准备历史测验。'
+    difficulty: 2
+    audioFile: 'L065.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I've been going over the chapter on Ancient Rome all morning, but I still keep getting the dates mixed up."
+      - speaker: girl
+        voice: shimmer
+        text: "Why don't you try making a timeline? That's what helped me remember everything for the Egypt section."
+      - speaker: boy
+        voice: echo
+        text: "A timeline — that's actually a great idea. I'll draw one out tonight."
+    question:
+      text: "What does the girl suggest the boy should do?"
+      textZh: '女孩建议男孩做什么？'
+      options:
+        A: 'Read the chapter again'
+        B: 'Make a timeline'
+        C: 'Study the Egypt section'
+      answer: 'B'
+      explanation: "The girl suggests making a timeline, which helped her remember the Egypt section."
+      explanationZh: '女孩建议做时间线，这帮助她记住了埃及部分的内容。'
+
+  - id: L066
+    type: three-person
+    title: 'Dinosaur Exhibition'
+    titleZh: '恐龙展'
+    scene: 'You hear three children discussing a visit to a dinosaur exhibition.'
+    sceneZh: '你听到三个孩子在讨论参观恐龙展。'
+    difficulty: 2
+    audioFile: 'L066.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "The dinosaur exhibition is on until the end of March. Shall we go this Saturday?"
+      - speaker: boy
+        voice: echo
+        text: "I can't do Saturday — I've got football practice. How about Sunday instead?"
+      - speaker: girl2
+        voice: fable
+        text: "Sunday works for me too. Let's meet at the museum entrance at ten."
+    question:
+      text: "When do they agree to visit the exhibition?"
+      textZh: '他们约定什么时候去看展？'
+      options:
+        A: 'Saturday morning'
+        B: 'Sunday at ten'
+        C: 'At the end of March'
+      answer: 'B'
+      explanation: "They agree on Sunday, meeting at the museum entrance at ten."
+      explanationZh: '他们约定周日十点在博物馆入口见面。'
+
+  - id: L067
+    type: radio
+    title: 'History Podcast'
+    titleZh: '历史播客'
+    scene: 'You hear part of a radio programme about historical discoveries.'
+    sceneZh: '你听到一个关于历史发现的广播节目片段。'
+    difficulty: 2
+    audioFile: 'L067.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "And now for this week's fascinating find. Archaeologists working in southern France have uncovered a set of cave paintings that could be over thirty thousand years old. What makes these paintings particularly special is that they appear to show people dancing, which is extremely rare in prehistoric art."
+    question:
+      text: "What is unusual about the cave paintings?"
+      textZh: '这些洞穴壁画有什么不同寻常之处？'
+      options:
+        A: 'They were found in southern France'
+        B: 'They are over thirty thousand years old'
+        C: 'They seem to show people dancing'
+      answer: 'C'
+      explanation: "The narrator says what makes them particularly special is that they appear to show people dancing, which is extremely rare."
+      explanationZh: '叙述者说特别之处在于它们似乎展示了人们跳舞的场景，这在史前艺术中极为罕见。'
+
+  - id: L068
+    type: student-adult
+    title: 'The History Teacher'
+    titleZh: '历史老师'
+    scene: 'You hear a student talking to her history teacher after class.'
+    sceneZh: '你听到一个学生在课后和历史老师说话。'
+    difficulty: 2
+    audioFile: 'L068.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Miss Chen, I really enjoyed today's lesson about the Silk Road. I was wondering — could I do my project on how it connected different cultures?"
+      - speaker: woman
+        voice: nova
+        text: "That's a wonderful angle, Lily. Most students focus on the trade goods, but looking at cultural exchange would make your project stand out."
+      - speaker: girl
+        voice: shimmer
+        text: "Great! I'll start reading about it this weekend."
+    question:
+      text: "What does the teacher think about the girl's project idea?"
+      textZh: '老师觉得女孩的项目想法怎么样？'
+      options:
+        A: 'It is too difficult for her level'
+        B: 'It is the same as what most students do'
+        C: 'It would make her project stand out'
+      answer: 'C'
+      explanation: "The teacher says looking at cultural exchange would make her project stand out, since most students focus on trade goods."
+      explanationZh: '老师说研究文化交流会让她的项目脱颖而出，因为大多数学生都关注贸易商品。'
+
+  - id: L069
+    type: short-dialogue
+    title: 'The Old Photograph'
+    titleZh: '老照片'
+    scene: 'You hear a boy and a girl looking at an old photograph.'
+    sceneZh: '你听到一个男孩和一个女孩在看一张老照片。'
+    difficulty: 2
+    audioFile: 'L069.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Look at this photograph I found in my attic. It's from 1920! The people are all dressed up, standing in front of what looks like a factory."
+      - speaker: girl
+        voice: shimmer
+        text: "That's amazing. Do you know who they are?"
+      - speaker: boy
+        voice: echo
+        text: "My dad reckons the tall man in the middle is my great-great-grandfather. He used to run the factory."
+    question:
+      text: "What did the boy's great-great-grandfather do?"
+      textZh: '男孩的高祖父做什么的？'
+      options:
+        A: 'He took the photograph'
+        B: 'He ran the factory'
+        C: 'He worked in the attic'
+      answer: 'B'
+      explanation: "The boy says his dad reckons the tall man is his great-great-grandfather, who used to run the factory."
+      explanationZh: '男孩说他爸爸认为中间那个高个子男人是他的高祖父，他曾经经营那家工厂。'
+
+  - id: L070
+    type: phone
+    title: 'Museum Booking'
+    titleZh: '博物馆预约'
+    scene: 'You hear a girl making a phone call to a museum.'
+    sceneZh: '你听到一个女孩打电话给博物馆。'
+    difficulty: 2
+    audioFile: 'L070.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: "Good morning, City History Museum. How can I help you?"
+      - speaker: girl
+        voice: shimmer
+        text: "Hello, I'd like to book places for a school group visit next Thursday. There'll be twenty-five of us, plus two teachers."
+      - speaker: woman
+        voice: nova
+        text: "That's fine. School groups get a discounted rate of three pounds per student, and teachers go free."
+    question:
+      text: "How much will the teachers have to pay?"
+      textZh: '老师需要付多少钱？'
+      options:
+        A: 'Three pounds each'
+        B: 'Nothing — they go free'
+        C: 'A discounted rate'
+      answer: 'B'
+      explanation: "The museum staff says teachers go free."
+      explanationZh: '博物馆工作人员说老师免费。'
+
+  # ============================================================
+  # L071–L080: Travel and Transport
+  # ============================================================
+
+  - id: L071
+    type: short-dialogue
+    title: 'At the Airport'
+    titleZh: '在机场'
+    scene: 'You hear a girl and her dad at the airport.'
+    sceneZh: '你听到一个女孩和她的爸爸在机场。'
+    difficulty: 2
+    audioFile: 'L071.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Dad, our flight's been delayed by an hour. What shall we do?"
+      - speaker: man
+        voice: onyx
+        text: "Well, we could grab something to eat, or have a look around the bookshop. Your mum asked me to pick up a travel guide for Italy anyway."
+      - speaker: girl
+        voice: shimmer
+        text: "Let's eat first — I'm starving. Then we can get the book."
+    question:
+      text: "What do they decide to do first?"
+      textZh: '他们决定先做什么？'
+      options:
+        A: 'Go to the bookshop'
+        B: 'Get something to eat'
+        C: 'Buy a travel guide for Italy'
+      answer: 'B'
+      explanation: "The girl says 'Let''s eat first' and suggests getting the book afterwards."
+      explanationZh: '女孩说"我们先吃东西吧"，然后再去买书。'
+
+  - id: L072
+    type: short-dialogue
+    title: 'The Train Journey'
+    titleZh: '火车旅行'
+    scene: 'You hear two friends discussing a train journey.'
+    sceneZh: '你听到两个朋友在讨论火车旅行。'
+    difficulty: 2
+    audioFile: 'L072.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I've been looking into trains to Edinburgh. There's a fast one that takes four hours, but it costs nearly eighty pounds."
+      - speaker: girl
+        voice: shimmer
+        text: "What about the slower service? It might be cheaper and we'd get to see more of the countryside."
+      - speaker: boy
+        voice: echo
+        text: "Good point. The slower one is only forty pounds and it stops at some really pretty towns along the way."
+    question:
+      text: "What is one advantage of the slower train?"
+      textZh: '慢车有什么优点？'
+      options:
+        A: 'It arrives earlier'
+        B: 'It costs less and passes through nice towns'
+        C: 'It has better seats'
+      answer: 'B'
+      explanation: "The boy says the slower train is only forty pounds and stops at some really pretty towns."
+      explanationZh: '男孩说慢车只要四十英镑，还会在一些很漂亮的小镇停靠。'
+
+  - id: L073
+    type: monologue
+    title: 'Airport Announcement'
+    titleZh: '机场广播'
+    scene: 'You hear an announcement at an airport.'
+    sceneZh: '你听到机场的一条广播。'
+    difficulty: 2
+    audioFile: 'L073.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "Attention, passengers on flight BA245 to Barcelona. We regret to inform you that your departure gate has changed from Gate 14 to Gate 22. Please make your way to Gate 22 on the upper level. Boarding will begin in approximately fifteen minutes."
+    question:
+      text: "What has changed about the flight?"
+      textZh: '航班有什么变化？'
+      options:
+        A: 'The departure time'
+        B: 'The departure gate'
+        C: 'The destination'
+      answer: 'B'
+      explanation: "The announcement says the departure gate has changed from Gate 14 to Gate 22."
+      explanationZh: '广播说登机口从14号改为22号。'
+
+  - id: L074
+    type: three-person
+    title: 'The Road Trip Plan'
+    titleZh: '公路旅行计划'
+    scene: 'You hear three friends planning a road trip.'
+    sceneZh: '你听到三个朋友在计划公路旅行。'
+    difficulty: 2
+    audioFile: 'L074.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "My parents said they could drive us to the coast on Saturday. We could leave early and be there by lunchtime."
+      - speaker: boy
+        voice: echo
+        text: "That sounds perfect. Should we bring a picnic or eat at a café when we get there?"
+      - speaker: girl2
+        voice: fable
+        text: "A picnic would be more fun, and cheaper too. I'll make sandwiches if you two bring drinks and snacks."
+    question:
+      text: "Who will provide the sandwiches?"
+      textZh: '谁来准备三明治？'
+      options:
+        A: 'The boy'
+        B: 'The first girl'
+        C: 'The second girl'
+      answer: 'C'
+      explanation: "The second girl (the third speaker) volunteers to make sandwiches."
+      explanationZh: '第二个女孩（第三个说话的人）主动提出做三明治。'
+
+  - id: L075
+    type: student-adult
+    title: 'The Bus Pass'
+    titleZh: '公交卡'
+    scene: 'You hear a boy talking to a bus driver.'
+    sceneZh: '你听到一个男孩在和公交车司机说话。'
+    difficulty: 2
+    audioFile: 'L075.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Excuse me, I've lost my bus pass. Can I still travel with just a ticket?"
+      - speaker: man
+        voice: onyx
+        text: "Yes, a single ticket costs two pounds fifty. But if you're going to be travelling a lot today, you'd be better off buying a day pass for five pounds."
+      - speaker: boy
+        voice: echo
+        text: "I've got three trips to make, so the day pass makes more sense. I'll take one of those, please."
+    question:
+      text: "Why does the boy choose the day pass?"
+      textZh: '男孩为什么选择日票？'
+      options:
+        A: 'Because it is the only option available'
+        B: 'Because he needs to make several trips'
+        C: 'Because he found his bus pass'
+      answer: 'B'
+      explanation: "The boy says he has three trips to make, so the day pass makes more sense than buying individual tickets."
+      explanationZh: '男孩说他要坐三趟车，所以日票更划算。'
+
+  - id: L076
+    type: short-dialogue
+    title: 'Reading the Map'
+    titleZh: '看地图'
+    scene: 'You hear two students trying to find their way using a map.'
+    sceneZh: '你听到两个学生在用地图找路。'
+    difficulty: 2
+    audioFile: 'L076.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "According to the map, we need to turn left at the church and then carry on straight until we reach the river."
+      - speaker: boy
+        voice: echo
+        text: "Wait, are you sure? I think we've already passed the church. That old stone building back there — wasn't that it?"
+      - speaker: girl
+        voice: shimmer
+        text: "Oh, you're right! We need to turn back then."
+    question:
+      text: "What is the problem?"
+      textZh: '问题是什么？'
+      options:
+        A: 'The map is wrong'
+        B: 'They have walked past the turning point'
+        C: 'They cannot find the river'
+      answer: 'B'
+      explanation: "The boy realises they've already passed the church where they should have turned left."
+      explanationZh: '男孩意识到他们已经走过了应该左转的教堂。'
+
+  - id: L077
+    type: short-dialogue
+    title: 'Packing for the Trip'
+    titleZh: '旅行打包'
+    scene: 'You hear a brother and sister packing for a trip.'
+    sceneZh: '你听到兄妹俩在为旅行打包。'
+    difficulty: 2
+    audioFile: 'L077.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Have you packed everything? Mum said we need to leave in half an hour."
+      - speaker: girl
+        voice: shimmer
+        text: "Almost. I can't find my waterproof jacket anywhere. I've looked in the wardrobe and under my bed."
+      - speaker: boy
+        voice: echo
+        text: "Check the coat rack downstairs. I think I saw it hanging there yesterday."
+    question:
+      text: "What is the girl looking for?"
+      textZh: '女孩在找什么？'
+      options:
+        A: 'Her suitcase'
+        B: 'Her waterproof jacket'
+        C: 'Her bag'
+      answer: 'B'
+      explanation: "The girl says she can't find her waterproof jacket."
+      explanationZh: '女孩说她找不到防水外套。'
+
+  - id: L078
+    type: radio
+    title: 'Travel News'
+    titleZh: '交通新闻'
+    scene: 'You hear a travel news report on the radio.'
+    sceneZh: '你听到广播里的交通新闻。'
+    difficulty: 2
+    audioFile: 'L078.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "And now for the travel update. Drivers heading north on the M1 should be aware of long delays near junction twelve due to an accident earlier this morning. The southbound side is running normally. Trains between London and Birmingham are also experiencing delays of up to twenty minutes because of a signal failure."
+    question:
+      text: "What is causing the delays on the M1?"
+      textZh: 'M1公路延误的原因是什么？'
+      options:
+        A: 'A signal failure'
+        B: 'Road works'
+        C: 'An accident'
+      answer: 'C'
+      explanation: "The report says there are long delays near junction twelve due to an accident earlier this morning."
+      explanationZh: '报道说因为今早的一起事故，12号交叉口附近严重延误。'
+
+  - id: L079
+    type: student-adult
+    title: 'The Souvenir Shop'
+    titleZh: '纪念品商店'
+    scene: 'You hear a girl buying something in a souvenir shop while on holiday.'
+    sceneZh: '你听到一个女孩在度假时在纪念品店买东西。'
+    difficulty: 2
+    audioFile: 'L079.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "I'd like to buy this snow globe for my little sister. How much is it?"
+      - speaker: woman
+        voice: nova
+        text: "That one is eight pounds fifty. But if you buy two items, you get twenty per cent off the second one."
+      - speaker: girl
+        voice: shimmer
+        text: "Oh, in that case, I'll get this postcard set as well. My mum would love that."
+    question:
+      text: "Who is the snow globe for?"
+      textZh: '雪花球是买给谁的？'
+      options:
+        A: 'The girl herself'
+        B: 'Her mother'
+        C: 'Her little sister'
+      answer: 'C'
+      explanation: "The girl says she wants to buy the snow globe for her little sister."
+      explanationZh: '女孩说她想给妹妹买雪花球。'
+
+  - id: L080
+    type: three-person
+    title: 'Which Route?'
+    titleZh: '走哪条路？'
+    scene: 'You hear three friends deciding which route to take on a hike.'
+    sceneZh: '你听到三个朋友在决定徒步走哪条路线。'
+    difficulty: 3
+    audioFile: 'L080.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "There are two trails. The short one goes through the woods and takes about an hour. The long one follows the river and takes two hours, but apparently the views are incredible."
+      - speaker: girl
+        voice: shimmer
+        text: "I'd rather take the longer route. We're not in a hurry, and I'd love to see the river."
+      - speaker: girl2
+        voice: fable
+        text: "Same here. Besides, we packed enough food and water for a whole day, so we might as well make the most of it."
+    question:
+      text: "What do the girls think about the longer route?"
+      textZh: '女孩们怎么看较长的路线？'
+      options:
+        A: 'It is too tiring for them'
+        B: 'They prefer it because they have plenty of time and supplies'
+        C: 'They want to take it but are worried about the weather'
+      answer: 'B'
+      explanation: "Both girls prefer the longer route. One says they're not in a hurry, and the other says they have enough food and water."
+      explanationZh: '两个女孩都偏好长路线。一个说不赶时间，另一个说带了足够的食物和水。'
+
+  # ============================================================
+  # L081–L090: Technology and Inventions
+  # ============================================================
+
+  - id: L081
+    type: short-dialogue
+    title: 'The New Robot'
+    titleZh: '新机器人'
+    scene: 'You hear two students talking about a robot they saw at a science fair.'
+    sceneZh: '你听到两个学生在谈论他们在科学博览会上看到的一个机器人。'
+    difficulty: 2
+    audioFile: 'L081.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Did you see that robot that could sort recycling? It could tell the difference between plastic, glass and paper."
+      - speaker: girl
+        voice: shimmer
+        text: "Yes! What really blew me away was that it learned from its mistakes. Every time it got something wrong, it improved."
+      - speaker: boy
+        voice: echo
+        text: "I know — the student who built it said it uses something called machine learning."
+    question:
+      text: "What impressed the girl most about the robot?"
+      textZh: '机器人最让女孩印象深刻的是什么？'
+      options:
+        A: 'It could sort recycling'
+        B: 'It could learn from its mistakes'
+        C: 'It was built by a student'
+      answer: 'B'
+      explanation: "The girl says what really blew her away was that it learned from its mistakes."
+      explanationZh: '女孩说最让她震撼的是它能从错误中学习。'
+
+  - id: L082
+    type: student-adult
+    title: 'The Coding Club'
+    titleZh: '编程社团'
+    scene: 'You hear a girl talking to a teacher about joining the coding club.'
+    sceneZh: '你听到一个女孩在和老师谈论加入编程社团。'
+    difficulty: 2
+    audioFile: 'L082.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Mr Harris, I'd really like to join the coding club, but I've never done any programming before. Would that be a problem?"
+      - speaker: man
+        voice: onyx
+        text: "Not at all. About half the members started as complete beginners. We use a visual programming language at first, so you can see results straight away without having to type complicated code."
+      - speaker: girl
+        voice: shimmer
+        text: "That sounds much less scary than I thought!"
+    question:
+      text: "What does the teacher say about beginners in the club?"
+      textZh: '老师怎么说社团里的初学者？'
+      options:
+        A: 'They need to learn on their own first'
+        B: 'About half the members started with no experience'
+        C: 'They should wait until next term'
+      answer: 'B'
+      explanation: "The teacher says about half the members started as complete beginners."
+      explanationZh: '老师说大约一半的成员一开始都是完全的初学者。'
+
+  - id: L083
+    type: short-dialogue
+    title: 'The Video Game'
+    titleZh: '电子游戏'
+    scene: 'You hear two friends talking about a new video game.'
+    sceneZh: '你听到两个朋友在谈论一款新电子游戏。'
+    difficulty: 2
+    audioFile: 'L083.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I finally got past level twelve last night. It took me ages because you have to figure out this really tricky puzzle with mirrors and light beams."
+      - speaker: girl
+        voice: shimmer
+        text: "Oh, I'm stuck on that exact level! Could you give me a hint without spoiling it completely?"
+      - speaker: boy
+        voice: echo
+        text: "Okay — try rotating the second mirror so that the light bounces off the ceiling. That's all I'll say!"
+    question:
+      text: "What does the girl ask the boy to do?"
+      textZh: '女孩让男孩做什么？'
+      options:
+        A: 'Play the game with her'
+        B: 'Give her a hint without giving the full answer'
+        C: 'Show her how to complete the level'
+      answer: 'B'
+      explanation: "The girl asks if he could give her a hint without spoiling it completely."
+      explanationZh: '女孩问他能不能给个提示，但不要完全剧透。'
+
+  - id: L084
+    type: monologue
+    title: 'The Invention Fair'
+    titleZh: '发明博览会'
+    scene: 'You hear a student presenting her invention at a school fair.'
+    sceneZh: '你听到一个学生在学校博览会上展示她的发明。'
+    difficulty: 2
+    audioFile: 'L084.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Hello everyone! I'd like to show you my invention — a solar-powered phone charger made from recycled materials. The idea came to me when we went camping last summer and there was nowhere to charge our phones. It takes about three hours in direct sunlight to fully charge a phone, which isn't as fast as a wall charger, but it's completely free and eco-friendly."
+    question:
+      text: "What inspired the girl to create her invention?"
+      textZh: '是什么启发女孩发明了这个东西？'
+      options:
+        A: 'A school science project'
+        B: 'A camping trip where she could not charge her phone'
+        C: 'A lesson about solar energy'
+      answer: 'B'
+      explanation: "The girl says the idea came to her when they went camping and there was nowhere to charge their phones."
+      explanationZh: '女孩说这个想法来自他们去露营时无处给手机充电。'
+
+  - id: L085
+    type: three-person
+    title: 'The App Idea'
+    titleZh: '应用程序创意'
+    scene: 'You hear three students brainstorming an app idea for a school competition.'
+    sceneZh: '你听到三个学生在为学校竞赛讨论一个应用创意。'
+    difficulty: 3
+    audioFile: 'L085.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "What if we made an app that helps students find lost items at school? People could upload a photo and description of what they've lost."
+      - speaker: boy
+        voice: echo
+        text: "That's cool, but I think we should also add a feature where you can report something you've found. That way it works both ways."
+      - speaker: girl2
+        voice: fable
+        text: "I love that. And maybe we could send notifications when there's a match between a lost item and a found item."
+    question:
+      text: "What extra feature does the boy suggest?"
+      textZh: '男孩建议增加什么功能？'
+      options:
+        A: 'A map showing where items were lost'
+        B: 'The ability to report found items as well'
+        C: 'A notification system for matches'
+      answer: 'B'
+      explanation: "The boy suggests adding a feature where you can report something you've found so it works both ways."
+      explanationZh: '男孩建议增加一个可以上报找到的物品的功能，这样双向都能使用。'
+
+  - id: L086
+    type: short-dialogue
+    title: 'The 3D Printer'
+    titleZh: '3D打印机'
+    scene: 'You hear two students talking about a 3D printer at school.'
+    sceneZh: '你听到两个学生在谈论学校的3D打印机。'
+    difficulty: 2
+    audioFile: 'L086.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Have you tried the new 3D printer in the design room? I printed a little model of the Eiffel Tower yesterday."
+      - speaker: boy
+        voice: echo
+        text: "Not yet. How long did it take to print?"
+      - speaker: girl
+        voice: shimmer
+        text: "About forty minutes for a small one. The tricky part was actually designing it on the computer — that took me almost two hours!"
+    question:
+      text: "What took the girl the longest time?"
+      textZh: '什么花了女孩最长时间？'
+      options:
+        A: 'Printing the model'
+        B: 'Designing it on the computer'
+        C: 'Setting up the 3D printer'
+      answer: 'B'
+      explanation: "The girl says the tricky part was designing it on the computer, which took almost two hours, while printing only took forty minutes."
+      explanationZh: '女孩说棘手的部分是在电脑上设计，花了将近两个小时，而打印只用了四十分钟。'
+
+  - id: L087
+    type: phone
+    title: 'Tech Support'
+    titleZh: '技术支持'
+    scene: 'You hear a boy calling tech support about his tablet.'
+    sceneZh: '你听到一个男孩打电话给技术支持部门咨询平板电脑的问题。'
+    difficulty: 2
+    audioFile: 'L087.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: "Hello, tech support. What seems to be the issue?"
+      - speaker: boy
+        voice: echo
+        text: "Hi, my tablet keeps freezing whenever I try to open more than one app at a time. I've tried restarting it, but it didn't help."
+      - speaker: woman
+        voice: nova
+        text: "It sounds like you might be running low on storage. Go to settings, then storage, and let me know how much space is left."
+    question:
+      text: "What does the tech support person think might be wrong?"
+      textZh: '技术支持人员认为可能是什么问题？'
+      options:
+        A: 'The tablet needs a new battery'
+        B: 'The tablet is running low on storage'
+        C: 'The apps need to be updated'
+      answer: 'B'
+      explanation: "The tech support person says it sounds like the tablet might be running low on storage."
+      explanationZh: '技术支持人员说听起来平板电脑的存储空间可能不足了。'
+
+  - id: L088
+    type: short-dialogue
+    title: 'The Science Documentary'
+    titleZh: '科学纪录片'
+    scene: 'You hear two students talking about a documentary they watched.'
+    sceneZh: '你听到两个学生在讨论他们看的一部纪录片。'
+    difficulty: 2
+    audioFile: 'L088.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Did you catch that documentary about space exploration last night? The bit about the Mars rover was fascinating."
+      - speaker: boy
+        voice: echo
+        text: "I missed the first half, but I saw the part about the new telescope they're building. Apparently it'll be powerful enough to see planets around other stars."
+      - speaker: girl
+        voice: shimmer
+        text: "I know! It's hard to get your head around how far away those stars are."
+    question:
+      text: "What can the new telescope do?"
+      textZh: '新的望远镜能做什么？'
+      options:
+        A: 'Travel to Mars'
+        B: 'See planets around other stars'
+        C: 'Send messages into space'
+      answer: 'B'
+      explanation: "The boy says the new telescope will be powerful enough to see planets around other stars."
+      explanationZh: '男孩说新望远镜将强大到能看到其他恒星周围的行星。'
+
+  - id: L089
+    type: student-adult
+    title: 'The Gadget Birthday Gift'
+    titleZh: '生日科技礼物'
+    scene: 'You hear a girl discussing a birthday present with her mum.'
+    sceneZh: '你听到一个女孩在和妈妈讨论生日礼物。'
+    difficulty: 2
+    audioFile: 'L089.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Mum, for my birthday, I was hoping to get one of those smart watches that tracks your steps and sleep patterns."
+      - speaker: woman
+        voice: nova
+        text: "I've been looking into those, actually. Some of them are quite pricey, but there's a newer brand that's supposed to be just as good for about half the cost."
+      - speaker: girl
+        voice: shimmer
+        text: "That sounds perfect. I don't need anything fancy — I just want one that can count my steps and wake me up in the morning."
+    question:
+      text: "What kind of smart watch does the girl want?"
+      textZh: '女孩想要什么样的智能手表？'
+      options:
+        A: 'The most expensive one available'
+        B: 'A basic one that counts steps and has an alarm'
+        C: 'One that can play music'
+      answer: 'B'
+      explanation: "The girl says she doesn't need anything fancy — just one that counts steps and wakes her up."
+      explanationZh: '女孩说她不需要花哨的功能，只要能计步和早上叫醒她就行。'
+
+  - id: L090
+    type: short-dialogue
+    title: 'The Online Class'
+    titleZh: '网课'
+    scene: 'You hear two friends talking about an online class.'
+    sceneZh: '你听到两个朋友在谈论网课。'
+    difficulty: 3
+    audioFile: 'L090.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I signed up for that online art class, but I'm struggling to keep up with it. The teacher goes through things really quickly."
+      - speaker: girl
+        voice: shimmer
+        text: "The good thing about online classes is that you can go back and watch the recordings. Have you tried pausing and replaying the difficult parts?"
+      - speaker: boy
+        voice: echo
+        text: "I hadn't thought of that! I've been watching them live and trying to follow along in real time, which is pretty stressful."
+    question:
+      text: "What does the girl recommend?"
+      textZh: '女孩建议怎么做？'
+      options:
+        A: 'Switch to a different class'
+        B: 'Ask the teacher to slow down'
+        C: 'Watch the recordings and replay difficult sections'
+      answer: 'C'
+      explanation: "The girl suggests going back to watch the recordings and pausing and replaying the difficult parts."
+      explanationZh: '女孩建议回看录播，在困难的部分暂停和重播。'
+
+  # ============================================================
+  # L091–L100: Food and Cooking
+  # ============================================================
+
+  - id: L091
+    type: short-dialogue
+    title: 'The Baking Competition'
+    titleZh: '烘焙比赛'
+    scene: 'You hear two students talking about a baking competition at school.'
+    sceneZh: '你听到两个学生在谈论学校的烘焙比赛。'
+    difficulty: 2
+    audioFile: 'L091.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "I've decided to enter the school baking competition. I'm going to make a lemon drizzle cake."
+      - speaker: boy
+        voice: echo
+        text: "Nice choice! I thought about entering too, but I can never get my cakes to rise properly. They always come out flat."
+      - speaker: girl
+        voice: shimmer
+        text: "That used to happen to me. The trick is to make sure your butter and eggs are at room temperature before you start mixing."
+    question:
+      text: "What advice does the girl give about baking?"
+      textZh: '女孩给了什么烘焙建议？'
+      options:
+        A: 'Use a bigger oven'
+        B: 'Mix the ingredients more quickly'
+        C: 'Make sure butter and eggs are at room temperature'
+      answer: 'C'
+      explanation: "The girl says the trick is to make sure butter and eggs are at room temperature before mixing."
+      explanationZh: '女孩说诀窍是在搅拌前确保黄油和鸡蛋在室温下。'
+
+  - id: L092
+    type: student-adult
+    title: 'At the Restaurant'
+    titleZh: '在餐厅'
+    scene: 'You hear a girl ordering food at a restaurant.'
+    sceneZh: '你听到一个女孩在餐厅点餐。'
+    difficulty: 2
+    audioFile: 'L092.mp3'
+    script:
+      - speaker: man
+        voice: onyx
+        text: "Good evening. Are you ready to order?"
+      - speaker: girl
+        voice: shimmer
+        text: "Yes, please. I'd like the vegetable soup to start, and then the grilled chicken with salad, please."
+      - speaker: man
+        voice: onyx
+        text: "Excellent choice. And would you like anything to drink?"
+      - speaker: girl
+        voice: shimmer
+        text: "Just water, please."
+    question:
+      text: "What does the girl order as her main course?"
+      textZh: '女孩点了什么主菜？'
+      options:
+        A: 'Vegetable soup'
+        B: 'Grilled chicken with salad'
+        C: 'A sandwich with water'
+      answer: 'B'
+      explanation: "The girl orders vegetable soup to start and then grilled chicken with salad as her main course."
+      explanationZh: '女孩先点了蔬菜汤作为前菜，然后点了烤鸡配沙拉作为主菜。'
+
+  - id: L093
+    type: short-dialogue
+    title: 'The Recipe Disaster'
+    titleZh: '食谱灾难'
+    scene: 'You hear two friends discussing a cooking attempt that went wrong.'
+    sceneZh: '你听到两个朋友在讨论一次失败的做饭经历。'
+    difficulty: 2
+    audioFile: 'L093.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I tried to make pasta from scratch yesterday, following a recipe online. It was a complete disaster."
+      - speaker: girl
+        voice: shimmer
+        text: "What went wrong?"
+      - speaker: boy
+        voice: echo
+        text: "I mixed up tablespoons and teaspoons for the salt. The pasta ended up so salty that nobody could eat it. My sister said it tasted like seawater!"
+    question:
+      text: "Why did the pasta taste bad?"
+      textZh: '为什么面食味道不好？'
+      options:
+        A: 'He cooked it for too long'
+        B: 'He used the wrong type of flour'
+        C: 'He put in too much salt'
+      answer: 'C'
+      explanation: "The boy mixed up tablespoons and teaspoons for the salt, making the pasta far too salty."
+      explanationZh: '男孩把汤匙和茶匙弄混了，放了太多盐，面食咸得没法吃。'
+
+  - id: L094
+    type: monologue
+    title: 'The Cooking Show'
+    titleZh: '烹饪节目'
+    scene: 'You hear part of a cooking show on television.'
+    sceneZh: '你听到电视上一个烹饪节目的片段。'
+    difficulty: 2
+    audioFile: 'L094.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "Today we're making a classic fruit crumble — perfect for beginners. All you need is some fresh apples, a handful of blackberries, flour, butter, sugar and a pinch of cinnamon. The beauty of this recipe is that you don't need any special equipment — just a mixing bowl and a baking dish. It'll be ready in about thirty-five minutes."
+    question:
+      text: "Why is this recipe good for beginners?"
+      textZh: '为什么这个食谱适合初学者？'
+      options:
+        A: 'It uses only two ingredients'
+        B: 'It does not require any special equipment'
+        C: 'It takes less than ten minutes'
+      answer: 'B'
+      explanation: "The presenter says the beauty of this recipe is that you don't need any special equipment."
+      explanationZh: '主持人说这个食谱的好处是不需要任何特殊设备。'
+
+  - id: L095
+    type: three-person
+    title: 'The Picnic'
+    titleZh: '野餐'
+    scene: 'You hear three friends planning what food to bring to a picnic.'
+    sceneZh: '你听到三个朋友在计划野餐带什么食物。'
+    difficulty: 2
+    audioFile: 'L095.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "So for the picnic, I'll bring sandwiches — I'll make some with cheese and some with ham."
+      - speaker: boy
+        voice: echo
+        text: "Great. I'll sort out the drinks — juice and water. And maybe some fruit?"
+      - speaker: girl2
+        voice: fable
+        text: "Leave the fruit to me. I'll bring strawberries and grapes. Oh, and I'll bake some cookies too — I made some last week and they turned out really well."
+    question:
+      text: "What will the second girl bring?"
+      textZh: '第二个女孩会带什么？'
+      options:
+        A: 'Sandwiches and juice'
+        B: 'Drinks and fruit'
+        C: 'Fruit and homemade cookies'
+      answer: 'C'
+      explanation: "The second girl says she'll bring strawberries and grapes and also bake some cookies."
+      explanationZh: '第二个女孩说她会带草莓和葡萄，还会烤些饼干。'
+
+  - id: L096
+    type: short-dialogue
+    title: 'The School Canteen'
+    titleZh: '学校食堂'
+    scene: 'You hear two students at the school canteen.'
+    sceneZh: '你听到两个学生在学校食堂。'
+    difficulty: 2
+    audioFile: 'L096.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Have you noticed that the canteen has started doing a vegetarian option every day? Today it's sweet potato curry."
+      - speaker: boy
+        voice: echo
+        text: "Really? I usually just grab a sandwich because I never have time to queue up for the hot food."
+      - speaker: girl
+        voice: shimmer
+        text: "The queue is actually much shorter now because they've opened a second serving counter. You should give it a try."
+    question:
+      text: "Why is the queue shorter now?"
+      textZh: '为什么排队现在变短了？'
+      options:
+        A: 'Fewer students eat at the canteen'
+        B: 'They have opened a second serving counter'
+        C: 'They only serve sandwiches'
+      answer: 'B'
+      explanation: "The girl says the queue is shorter because they've opened a second serving counter."
+      explanationZh: '女孩说排队变短了，因为开了第二个打饭窗口。'
+
+  - id: L097
+    type: student-adult
+    title: 'Grandma''s Special Recipe'
+    titleZh: '奶奶的独家食谱'
+    scene: 'You hear a girl learning to cook with her grandmother.'
+    sceneZh: '你听到一个女孩在和奶奶学做菜。'
+    difficulty: 2
+    audioFile: 'L097.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Grandma, can you teach me how to make your famous tomato soup? Everyone always asks for the recipe."
+      - speaker: woman
+        voice: nova
+        text: "Of course, darling. The secret is that I roast the tomatoes in the oven first with a little garlic and olive oil. That gives it a much deeper flavour than using raw tomatoes."
+      - speaker: girl
+        voice: shimmer
+        text: "So that's why yours tastes so different from the tinned soup!"
+    question:
+      text: "What is the grandmother's secret for the soup?"
+      textZh: '奶奶做汤的秘诀是什么？'
+      options:
+        A: 'She uses a special brand of tomatoes'
+        B: 'She roasts the tomatoes with garlic and olive oil first'
+        C: 'She adds extra salt and pepper'
+      answer: 'B'
+      explanation: "The grandmother says her secret is roasting the tomatoes in the oven first with a little garlic and olive oil."
+      explanationZh: '奶奶说秘诀是先把番茄和一点大蒜、橄榄油一起放在烤箱里烤。'
+
+  - id: L098
+    type: phone
+    title: 'Ordering a Birthday Cake'
+    titleZh: '订生日蛋糕'
+    scene: 'You hear a girl calling a bakery to order a cake.'
+    sceneZh: '你听到一个女孩打电话给面包店订蛋糕。'
+    difficulty: 2
+    audioFile: 'L098.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: "Hello, Sweet Dreams Bakery. How can I help?"
+      - speaker: girl
+        voice: shimmer
+        text: "Hi, I'd like to order a birthday cake for my friend. She loves chocolate, so could it be a chocolate cake with vanilla icing?"
+      - speaker: woman
+        voice: nova
+        text: "Absolutely. What size would you like — small for eight people, or large for sixteen?"
+      - speaker: girl
+        voice: shimmer
+        text: "There'll be about twelve of us, so the large one would be better."
+    question:
+      text: "What size cake does the girl choose?"
+      textZh: '女孩选了多大的蛋糕？'
+      options:
+        A: 'Small, for eight people'
+        B: 'Medium, for twelve people'
+        C: 'Large, for sixteen people'
+      answer: 'C'
+      explanation: "Although there will be twelve guests, the girl chooses the large cake for sixteen people since there is no medium option."
+      explanationZh: '虽然有大约十二个人，但因为没有中号选项，女孩选择了大号（够十六人吃的）蛋糕。'
+
+  - id: L099
+    type: short-dialogue
+    title: 'The Food Market'
+    titleZh: '美食市场'
+    scene: 'You hear two friends at a food market.'
+    sceneZh: '你听到两个朋友在美食市场。'
+    difficulty: 3
+    audioFile: 'L099.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "This market is incredible! I've already tried the Japanese dumplings and the Mexican tacos. I'm completely stuffed."
+      - speaker: girl
+        voice: shimmer
+        text: "You should have paced yourself! I only had a small portion of the Thai noodles so I'd have room for the Italian ice cream — apparently they make it fresh every morning."
+      - speaker: boy
+        voice: echo
+        text: "Fresh ice cream? Maybe I can squeeze in just a little more..."
+    question:
+      text: "Why did the girl eat only a small portion of noodles?"
+      textZh: '为什么女孩只吃了一小份面条？'
+      options:
+        A: 'She did not like the taste'
+        B: 'She wanted to save room for the ice cream'
+        C: 'The noodles were too expensive'
+      answer: 'B'
+      explanation: "The girl says she only had a small portion so she'd have room for the Italian ice cream."
+      explanationZh: '女孩说她只吃了一小份，这样就有肚子吃意大利冰淇淋了。'
+
+  - id: L100
+    type: short-dialogue
+    title: 'The Smoothie Recipe'
+    titleZh: '冰沙食谱'
+    scene: 'You hear two friends making a smoothie together.'
+    sceneZh: '你听到两个朋友一起做冰沙。'
+    difficulty: 2
+    audioFile: 'L100.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Okay, I've put in the banana and the blueberries. What else do we need?"
+      - speaker: boy
+        voice: echo
+        text: "Add a spoonful of honey and some yoghurt. My mum always says the yoghurt is what makes it thick and creamy."
+      - speaker: girl
+        voice: shimmer
+        text: "Done! Now we just blend it. Oh — we should have put the lid on first! It's gone everywhere!"
+    question:
+      text: "What mistake do they make?"
+      textZh: '他们犯了什么错误？'
+      options:
+        A: 'They forget to add yoghurt'
+        B: 'They blend without putting the lid on'
+        C: 'They use the wrong fruit'
+      answer: 'B'
+      explanation: "The girl realises they should have put the lid on first, and the smoothie goes everywhere."
+      explanationZh: '女孩意识到他们忘记先盖上盖子了，冰沙溅得到处都是。'
+
+  # ============================================================
+  # L101–L110: Environment and Weather
+  # ============================================================
+
+  - id: L101
+    type: short-dialogue
+    title: 'The Recycling Project'
+    titleZh: '回收利用项目'
+    scene: 'You hear two students discussing a recycling project at school.'
+    sceneZh: '你听到两个学生在讨论学校的回收利用项目。'
+    difficulty: 2
+    audioFile: 'L101.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Our class has collected over two hundred plastic bottles this week for the recycling challenge. How's your class doing?"
+      - speaker: boy
+        voice: echo
+        text: "We've got about a hundred and fifty, but we've also been collecting cardboard and old newspapers. Mrs Davis said we should focus on variety, not just quantity."
+      - speaker: girl
+        voice: shimmer
+        text: "That's a smart approach. Maybe we should start collecting paper too."
+    question:
+      text: "What did Mrs Davis advise?"
+      textZh: '戴维斯老师建议了什么？'
+      options:
+        A: 'Collect as many bottles as possible'
+        B: 'Focus on collecting a variety of materials'
+        C: 'Stop collecting after one week'
+      answer: 'B'
+      explanation: "The boy says Mrs Davis told them to focus on variety, not just quantity."
+      explanationZh: '男孩说戴维斯老师让他们注重种类多样性，而不只是数量。'
+
+  - id: L102
+    type: monologue
+    title: 'The Weather Forecast'
+    titleZh: '天气预报'
+    scene: 'You hear a weather forecast on television.'
+    sceneZh: '你听到电视上的天气预报。'
+    difficulty: 2
+    audioFile: 'L102.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "Looking ahead to the weekend, Saturday is expected to start off cloudy with some light rain in the morning, but the clouds should clear by early afternoon, giving way to sunshine. Sunday, however, looks like a very different story — strong winds and heavy rain are forecast throughout the day, so if you're planning any outdoor activities, Saturday afternoon would be your best bet."
+    question:
+      text: "When is the best time for outdoor activities this weekend?"
+      textZh: '这个周末什么时候最适合户外活动？'
+      options:
+        A: 'Saturday morning'
+        B: 'Saturday afternoon'
+        C: 'Sunday morning'
+      answer: 'B'
+      explanation: "The forecast says Saturday afternoon will be sunny, and recommends it as the best bet for outdoor activities."
+      explanationZh: '预报说周六下午会是晴天，推荐那时做户外活动。'
+
+  - id: L103
+    type: student-adult
+    title: 'The School Garden'
+    titleZh: '学校花园'
+    scene: 'You hear a student talking to a teacher about the school garden.'
+    sceneZh: '你听到一个学生在和老师讨论学校花园。'
+    difficulty: 2
+    audioFile: 'L103.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Mr Green, the tomato plants in the school garden aren't looking very healthy. The leaves are turning yellow."
+      - speaker: man
+        voice: onyx
+        text: "Hmm, that can happen when they get too much water. How often have you been watering them?"
+      - speaker: girl
+        voice: shimmer
+        text: "Every day, sometimes twice a day when it's hot."
+      - speaker: man
+        voice: onyx
+        text: "That's probably the issue. Tomatoes actually prefer the soil to dry out a little between waterings."
+    question:
+      text: "What is wrong with the tomato plants?"
+      textZh: '番茄苗出了什么问题？'
+      options:
+        A: 'They are not getting enough sunlight'
+        B: 'They are being watered too often'
+        C: 'The soil needs more nutrients'
+      answer: 'B'
+      explanation: "The teacher suggests the yellow leaves are caused by too much water, and the girl confirms she waters them very frequently."
+      explanationZh: '老师认为叶子变黄是因为浇水太多，女孩确认她浇水非常频繁。'
+
+  - id: L104
+    type: short-dialogue
+    title: 'The Storm'
+    titleZh: '暴风雨'
+    scene: 'You hear two friends talking about a storm the night before.'
+    sceneZh: '你听到两个朋友在谈论前一晚的暴风雨。'
+    difficulty: 2
+    audioFile: 'L104.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Did the storm wake you up last night? The thunder was so loud that our dog hid under the kitchen table for hours."
+      - speaker: girl
+        voice: shimmer
+        text: "I slept right through it, actually! I didn't know anything about it until I saw a huge branch had fallen off the oak tree in our front garden this morning."
+      - speaker: boy
+        voice: echo
+        text: "You're lucky you slept through it. I was awake until nearly two o'clock."
+    question:
+      text: "How did the girl find out about the storm?"
+      textZh: '女孩怎么知道暴风雨的？'
+      options:
+        A: 'The thunder woke her up'
+        B: 'She saw a fallen branch in the morning'
+        C: 'Her dog was frightened'
+      answer: 'B'
+      explanation: "The girl slept through the storm and only found out about it when she saw a huge branch had fallen from the tree in the morning."
+      explanationZh: '女孩睡过了暴风雨，直到早上看到一根大树枝从树上掉下来才知道。'
+
+  - id: L105
+    type: three-person
+    title: 'The Beach Clean-Up'
+    titleZh: '海滩清理'
+    scene: 'You hear three students organising a beach clean-up event.'
+    sceneZh: '你听到三个学生在组织海滩清理活动。'
+    difficulty: 3
+    audioFile: 'L105.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "So for the beach clean-up, I've already arranged for the council to lend us gloves and bin bags. We just need to sort out transport."
+      - speaker: boy
+        voice: echo
+        text: "My dad said he could drive a group of us in the minibus. That would take about eight people."
+      - speaker: girl2
+        voice: fable
+        text: "And I've put up posters around school. So far, fifteen people have signed up, which means we'll need another car as well."
+    question:
+      text: "What problem still needs to be solved?"
+      textZh: '什么问题还需要解决？'
+      options:
+        A: 'They need more gloves and bags'
+        B: 'They do not have enough volunteers'
+        C: 'They need more transport for all the volunteers'
+      answer: 'C'
+      explanation: "The minibus holds eight people but fifteen have signed up, so they need another car."
+      explanationZh: '小巴能载八个人，但有十五个人报名了，所以他们还需要另一辆车。'
+
+  - id: L106
+    type: short-dialogue
+    title: 'Saving Energy'
+    titleZh: '节约能源'
+    scene: 'You hear a brother and sister talking about saving energy at home.'
+    sceneZh: '你听到兄妹俩在讨论在家节约能源。'
+    difficulty: 2
+    audioFile: 'L106.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "Mum said if we manage to cut the electricity bill this month, she'll put the savings towards our holiday fund."
+      - speaker: girl
+        voice: shimmer
+        text: "Okay, so what can we do? We already turn the lights off when we leave a room."
+      - speaker: boy
+        voice: echo
+        text: "True, but we still leave our chargers plugged in all day even when we're not using them. Dad says those use more energy than people think."
+    question:
+      text: "What new energy-saving idea does the boy suggest?"
+      textZh: '男孩提出了什么新的节能建议？'
+      options:
+        A: 'Turning off lights when leaving a room'
+        B: 'Unplugging chargers when not in use'
+        C: 'Using less hot water'
+      answer: 'B'
+      explanation: "The girl says they already turn off lights. The boy's new suggestion is to stop leaving chargers plugged in all day."
+      explanationZh: '女孩说他们已经做到离开房间关灯了。男孩的新建议是不要一整天都把充电器插着。'
+
+  - id: L107
+    type: radio
+    title: 'Nature Report'
+    titleZh: '自然报道'
+    scene: 'You hear a nature report on the radio.'
+    sceneZh: '你听到广播里的一则自然报道。'
+    difficulty: 3
+    audioFile: 'L107.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: "In encouraging news for local wildlife, the number of hedgehogs spotted in city parks has increased by thirty per cent compared to last year. Experts believe this is partly due to the wildlife corridors that were introduced eighteen months ago — small gaps in garden fences that allow hedgehogs to move freely between gardens, which had previously been cut off from one another."
+    question:
+      text: "What has helped the hedgehog population increase?"
+      textZh: '什么帮助了刺猬数量的增长？'
+      options:
+        A: 'People feeding them in parks'
+        B: 'Wildlife corridors — small gaps in fences'
+        C: 'A ban on building in certain areas'
+      answer: 'B'
+      explanation: "The report says experts believe the increase is partly due to wildlife corridors — small gaps in garden fences."
+      explanationZh: '报道说专家认为增长部分归因于野生动物通道——花园围栏中的小缝隙。'
+
+  - id: L108
+    type: short-dialogue
+    title: 'The Seasons'
+    titleZh: '四季'
+    scene: 'You hear two students discussing their favourite seasons.'
+    sceneZh: '你听到两个学生在讨论他们最喜欢的季节。'
+    difficulty: 2
+    audioFile: 'L108.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Everyone says summer is the best season, but I actually prefer autumn. I love it when the leaves change colour and the air feels crisp."
+      - speaker: boy
+        voice: echo
+        text: "I can see why you'd say that. For me, though, it has to be spring. After months of cold and dark, seeing the flowers come out and the days get longer really cheers me up."
+    question:
+      text: "Why does the boy prefer spring?"
+      textZh: '男孩为什么喜欢春天？'
+      options:
+        A: 'He enjoys the warm weather'
+        B: 'He likes seeing flowers appear and the days get longer after winter'
+        C: 'He has his birthday in spring'
+      answer: 'B'
+      explanation: "The boy says after months of cold and dark, seeing the flowers come out and the days get longer really cheers him up."
+      explanationZh: '男孩说经过几个月的寒冷和黑暗后，看到花开和日子变长真的让他开心起来。'
+
+  - id: L109
+    type: student-adult
+    title: 'The Bird Feeder'
+    titleZh: '喂鸟器'
+    scene: 'You hear a girl talking to her dad about birds in the garden.'
+    sceneZh: '你听到一个女孩和爸爸在讨论花园里的鸟。'
+    difficulty: 2
+    audioFile: 'L109.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Dad, since we put up the bird feeder last month, I've spotted at least six different types of birds in the garden. This morning I saw a woodpecker!"
+      - speaker: man
+        voice: onyx
+        text: "A woodpecker? That is unusual for this area. You should write it down in your nature journal with the date and time."
+      - speaker: girl
+        voice: shimmer
+        text: "Good idea. I'll start keeping a proper record of everything I see."
+    question:
+      text: "What does the dad suggest the girl should do?"
+      textZh: '爸爸建议女孩做什么？'
+      options:
+        A: 'Take a photograph of the woodpecker'
+        B: 'Record the sighting in her nature journal'
+        C: 'Put up more bird feeders'
+      answer: 'B'
+      explanation: "The dad suggests she should write it down in her nature journal with the date and time."
+      explanationZh: '爸爸建议她在自然日记本上记录下来，包括日期和时间。'
+
+  - id: L110
+    type: short-dialogue
+    title: 'The Rainy Day'
+    titleZh: '雨天'
+    scene: 'You hear two friends stuck indoors because of rain.'
+    sceneZh: '你听到两个朋友因为下雨被困在室内。'
+    difficulty: 2
+    audioFile: 'L110.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "This rain is never going to stop. We were supposed to go to the park to practice for sports day."
+      - speaker: girl
+        voice: shimmer
+        text: "I know, it's frustrating. But we could use the time to work on our poster for the science fair instead. It's due on Friday and we haven't even started."
+      - speaker: boy
+        voice: echo
+        text: "You've got a point. At least that way we won't have to rush it later in the week."
+    question:
+      text: "What do they decide to do instead of going to the park?"
+      textZh: '他们决定做什么来代替去公园？'
+      options:
+        A: 'Watch a film'
+        B: 'Work on their science fair poster'
+        C: 'Practice indoors'
+      answer: 'B'
+      explanation: "The girl suggests working on their poster for the science fair, and the boy agrees it makes sense."
+      explanationZh: '女孩建议做科学展的海报，男孩同意这样做很合理。'
+
+  # ============================================================
+  # L111–L120: Celebrations and Events
+  # ============================================================
+
+  - id: L111
+    type: three-person
+    title: 'The Surprise Birthday Party'
+    titleZh: '惊喜生日派对'
+    scene: 'You hear three friends planning a surprise birthday party.'
+    sceneZh: '你听到三个朋友在策划一个惊喜生日派对。'
+    difficulty: 2
+    audioFile: 'L111.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Okay, so Emma's birthday is next Saturday. I think we should throw her a surprise party at my house."
+      - speaker: boy
+        voice: echo
+        text: "Great idea. I can be in charge of the decorations — balloons and a big banner."
+      - speaker: girl2
+        voice: fable
+        text: "And I'll make sure Emma comes to your house without suspecting anything. I'll tell her we're going there to watch a film."
+    question:
+      text: "How will they get Emma to come to the party?"
+      textZh: '他们怎么让Emma来参加派对？'
+      options:
+        A: 'They will send her an invitation'
+        B: 'They will tell her they are going to watch a film'
+        C: 'They will ask her parents to bring her'
+      answer: 'B'
+      explanation: "The second girl says she'll tell Emma they're going to the house to watch a film."
+      explanationZh: '第二个女孩说她会告诉Emma她们去那个房子看电影。'
+
+  - id: L112
+    type: short-dialogue
+    title: 'The School Play'
+    titleZh: '学校话剧'
+    scene: 'You hear two students talking about the school play.'
+    sceneZh: '你听到两个学生在讨论学校话剧。'
+    difficulty: 2
+    audioFile: 'L112.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I heard you got the lead role in the school play! That's amazing. I tried out for it too, but I got a smaller part."
+      - speaker: girl
+        voice: shimmer
+        text: "Thanks! I was so nervous during the audition that I nearly forgot my lines. But actually, I think the smaller parts are just as important — every character matters."
+      - speaker: boy
+        voice: echo
+        text: "That's a kind thing to say. I'm actually quite pleased with my role because I get to wear a brilliant costume."
+    question:
+      text: "How does the boy feel about his role?"
+      textZh: '男孩对自己的角色感觉如何？'
+      options:
+        A: 'He is disappointed and wants a bigger part'
+        B: 'He is quite pleased, partly because of the costume'
+        C: 'He no longer wants to be in the play'
+      answer: 'B'
+      explanation: "The boy says he's actually quite pleased with his role because he gets to wear a brilliant costume."
+      explanationZh: '男孩说他实际上很满意自己的角色，因为他能穿一套很棒的戏服。'
+
+  - id: L113
+    type: student-adult
+    title: 'Sports Day Preparation'
+    titleZh: '运动会准备'
+    scene: 'You hear a teacher talking to a student about sports day.'
+    sceneZh: '你听到老师在和一个学生谈论运动会。'
+    difficulty: 2
+    audioFile: 'L113.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: "Sophie, you've been doing really well in practice. Which events are you entering on sports day?"
+      - speaker: girl
+        voice: shimmer
+        text: "I've signed up for the hundred metres and the long jump. I wanted to do the relay as well, but it clashes with the long jump."
+      - speaker: woman
+        voice: nova
+        text: "That's a shame. But two events is already a lot. Make sure you warm up properly between them."
+    question:
+      text: "Why isn't Sophie doing the relay?"
+      textZh: 'Sophie为什么不参加接力赛？'
+      options:
+        A: 'She does not enjoy relay races'
+        B: 'The teacher told her not to'
+        C: 'It is at the same time as the long jump'
+      answer: 'C'
+      explanation: "Sophie says the relay clashes with the long jump."
+      explanationZh: 'Sophie说接力赛和跳远时间冲突了。'
+
+  - id: L114
+    type: short-dialogue
+    title: 'The Holiday Traditions'
+    titleZh: '节日传统'
+    scene: 'You hear two students talking about family holiday traditions.'
+    sceneZh: '你听到两个学生在谈论家庭节日传统。'
+    difficulty: 2
+    audioFile: 'L114.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Every Chinese New Year, my family makes dumplings together. Even my little brother helps fold them, though his always fall apart!"
+      - speaker: boy
+        voice: echo
+        text: "That sounds like so much fun. In my family, we have a tradition of making gingerbread at Christmas. Last year, my sister and I built a gingerbread house that was taller than our cat."
+      - speaker: girl
+        voice: shimmer
+        text: "A gingerbread house! I'd love to try making one of those."
+    question:
+      text: "What does the boy's family do at Christmas?"
+      textZh: '男孩的家人在圣诞节做什么？'
+      options:
+        A: 'They make dumplings'
+        B: 'They make gingerbread'
+        C: 'They cook a big turkey dinner'
+      answer: 'B'
+      explanation: "The boy says his family has a tradition of making gingerbread at Christmas."
+      explanationZh: '男孩说他的家人有在圣诞节做姜饼的传统。'
+
+  - id: L115
+    type: monologue
+    title: 'The School Concert'
+    titleZh: '学校音乐会'
+    scene: 'You hear a student talking about a school concert she performed in.'
+    sceneZh: '你听到一个学生在谈论她参加的学校音乐会。'
+    difficulty: 2
+    audioFile: 'L115.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "Last Friday, I played the violin in our school concert. I'd been practising my solo piece every single day for two months, and I was absolutely terrified before I went on stage. But once I started playing, all the nerves just melted away and I actually enjoyed it. My mum said it was the best she'd ever heard me play."
+    question:
+      text: "How did the girl feel once she started playing?"
+      textZh: '女孩开始演奏后感觉怎样？'
+      options:
+        A: 'She felt even more nervous'
+        B: 'She forgot the music'
+        C: 'Her nerves disappeared and she enjoyed it'
+      answer: 'C'
+      explanation: "The girl says once she started playing, all the nerves melted away and she actually enjoyed it."
+      explanationZh: '女孩说一旦开始演奏，所有的紧张都消失了，她实际上很享受。'
+
+  - id: L116
+    type: short-dialogue
+    title: 'The Science Fair Results'
+    titleZh: '科学展结果'
+    scene: 'You hear two students discussing the science fair results.'
+    sceneZh: '你听到两个学生在讨论科学展的结果。'
+    difficulty: 3
+    audioFile: 'L116.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: "I just found out that our volcano project came second in the science fair! I thought it would be third at best."
+      - speaker: girl
+        voice: shimmer
+        text: "That's fantastic! Who won first place?"
+      - speaker: boy
+        voice: echo
+        text: "That team who made a water filter from recycled materials. Honestly, I'm not even disappointed — their project was genuinely brilliant and it could actually help people."
+    question:
+      text: "How does the boy feel about not winning first place?"
+      textZh: '男孩对没有得第一名怎么想？'
+      options:
+        A: 'He is very upset about it'
+        B: 'He thinks the judges made a mistake'
+        C: 'He is happy with second because the winning project was excellent'
+      answer: 'C'
+      explanation: "The boy says he's not even disappointed because the winning project was genuinely brilliant."
+      explanationZh: '男孩说他甚至不失望，因为获胜的项目确实很出色。'
+
+  - id: L117
+    type: phone
+    title: 'Booking the Hall'
+    titleZh: '预订大厅'
+    scene: 'You hear a girl calling to book a hall for a school event.'
+    sceneZh: '你听到一个女孩打电话预订学校活动的场地。'
+    difficulty: 2
+    audioFile: 'L117.mp3'
+    script:
+      - speaker: man
+        voice: onyx
+        text: "Good afternoon, Riverside Community Centre."
+      - speaker: girl
+        voice: shimmer
+        text: "Hello, I'm calling on behalf of Greenfield School. We'd like to book the main hall for our end-of-year celebration on July the fifteenth."
+      - speaker: man
+        voice: onyx
+        text: "Let me check... I'm afraid the main hall is already booked that day. However, the smaller Willow Room is available, and it seats up to sixty people."
+      - speaker: girl
+        voice: shimmer
+        text: "We've got about fifty students, so that should be enough. I'll check with my teacher and call you back."
+    question:
+      text: "Why can't they have the main hall?"
+      textZh: '为什么他们用不了大厅？'
+      options:
+        A: 'It is too expensive'
+        B: 'It is already booked'
+        C: 'It is too big for their group'
+      answer: 'B'
+      explanation: "The man says the main hall is already booked that day."
+      explanationZh: '工作人员说那天大厅已经被预订了。'
+
+  - id: L118
+    type: three-person
+    title: 'The Talent Show'
+    titleZh: '才艺表演'
+    scene: 'You hear three friends discussing what to perform at the school talent show.'
+    sceneZh: '你听到三个朋友在讨论才艺表演上表演什么。'
+    difficulty: 3
+    audioFile: 'L118.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "I think we should do a dance routine for the talent show. We've got three weeks to practise."
+      - speaker: boy
+        voice: echo
+        text: "I'm not the best dancer, to be honest. What about a comedy sketch instead? We could write something funny about school life."
+      - speaker: girl2
+        voice: fable
+        text: "Actually, why don't we combine both? We could do a funny dance routine — that way it doesn't matter if we're not perfect dancers because it's supposed to be entertaining."
+    question:
+      text: "What does the second girl suggest?"
+      textZh: '第二个女孩建议什么？'
+      options:
+        A: 'They should sing a song instead'
+        B: 'They should combine dancing and comedy'
+        C: 'They should each do a solo performance'
+      answer: 'B'
+      explanation: "The second girl suggests combining both ideas — a funny dance routine."
+      explanationZh: '第二个女孩建议把两个想法结合起来——做一个搞笑的舞蹈表演。'
+
+  - id: L119
+    type: student-adult
+    title: 'The Award Ceremony'
+    titleZh: '颁奖典礼'
+    scene: 'You hear a teacher congratulating a student after an award ceremony.'
+    sceneZh: '你听到老师在颁奖典礼后祝贺一个学生。'
+    difficulty: 3
+    audioFile: 'L119.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: "Well done, Mia! You thoroughly deserved that award for your community service work. You've given up so many weekends to help at the animal shelter."
+      - speaker: girl
+        voice: shimmer
+        text: "Thank you, Miss Park. To be honest, I didn't expect to win at all. I don't do it for the recognition — I just really love spending time with the animals."
+      - speaker: woman
+        voice: nova
+        text: "And that's exactly why you deserved it. The best volunteers are the ones who do it because they care, not because they want a prize."
+    question:
+      text: "Why does the teacher think Mia deserved the award?"
+      textZh: '老师为什么认为Mia配得上这个奖？'
+      options:
+        A: 'Because she applied for the award'
+        B: 'Because she volunteers out of genuine care, not for recognition'
+        C: 'Because she got the highest marks in class'
+      answer: 'B'
+      explanation: "The teacher says the best volunteers are those who do it because they care, not for a prize — which is why Mia deserved it."
+      explanationZh: '老师说最好的志愿者是因为真心关心才去做的，而不是为了奖品——这正是Mia配得上这个奖的原因。'
+
+  - id: L120
+    type: short-dialogue
+    title: 'The Last Day of Term'
+    titleZh: '学期最后一天'
+    scene: 'You hear two friends talking on the last day of term.'
+    sceneZh: '你听到两个朋友在学期最后一天聊天。'
+    difficulty: 3
+    audioFile: 'L120.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: "I can't believe this term is over already. It's gone by so quickly!"
+      - speaker: boy
+        voice: echo
+        text: "I know. It feels like we only just started. What are you most looking forward to in the holidays?"
+      - speaker: girl
+        voice: shimmer
+        text: "Honestly, just having time to read for fun. During term, I barely get through a chapter a week because of all the homework. Over the holidays, I'm planning to work my way through at least five books."
+      - speaker: boy
+        voice: echo
+        text: "That sounds like a brilliant plan. Maybe you could lend me one when you're done!"
+    question:
+      text: "What does the girl want to do during the holidays?"
+      textZh: '女孩假期里想做什么？'
+      options:
+        A: 'Travel with her family'
+        B: 'Catch up on homework'
+        C: 'Read several books for enjoyment'
+      answer: 'C'
+      explanation: "The girl says she's looking forward to reading for fun and plans to get through at least five books."
+      explanationZh: '女孩说她期待阅读休闲书籍，计划至少读五本书。'
