@@ -499,12 +499,12 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         const remoteUserName = profileRef.current?.userName;
         const inputName = displayName?.trim();
 
-        if (remoteUserName && inputName && remoteUserName !== inputName && remoteUserName !== owner) {
-          // Conflict: repo has a different name. Return it so UI can ask user.
+        // If both have names and they differ → ask user to choose
+        if (remoteUserName && inputName && remoteUserName !== inputName) {
           return { success: true, remoteUserName };
         }
 
-        // Decide which name to use
+        // No conflict: pick the available name, or default to "Xinbloom"
         const finalName = inputName || remoteUserName || "Xinbloom";
         setUserNameState(finalName);
         setProfile((prev) => {
