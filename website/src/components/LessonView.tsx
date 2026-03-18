@@ -175,10 +175,11 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
   const { lang } = useLang();
   const ui = getUi(lang) as Record<string, string>;
   const l = lesson as unknown as Record<string, unknown>;
-  const { isLoggedIn, recordPageVisit, recordChapterScore } = useProgress();
+  const { isLoggedIn, recordPageVisit, recordChapterScore, getChapterScores } = useProgress();
   const pathname = usePathname();
   // Extract chapterId from pathname like /lesson/math/grade7/rational-numbers
   const chapterId = pathname?.split("/").pop() || "";
+  const savedChapterScores = getChapterScores(chapterId);
 
   // Record page visit for math lessons
   useEffect(() => {
@@ -314,6 +315,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           theme={exerciseTheme}
           icon="🐼"
           onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "exercise", s, m) : undefined}
+          savedScore={savedChapterScores?.exerciseScore}
         />
       )}
       {activeTab === "exam" && lesson.examPrep && (
@@ -323,6 +325,7 @@ export default function LessonView({ lesson, chapterNumber, chapterNameEn }: Pro
           theme={examTheme}
           icon="🎯"
           onScore={isLoggedIn ? (s, m, qr) => recordChapterScore(chapterId, "examPrep", s, m) : undefined}
+          savedScore={savedChapterScores?.examPrepScore}
           intro={
             <div className="bg-gradient-to-r from-amber-50/60 to-orange-50/60 rounded-2xl p-5 border border-amber-100">
               <h3 className="font-bold text-amber-600 mb-2 flex items-center gap-2">
@@ -654,6 +657,7 @@ function QuizSection({
   icon,
   intro,
   onScore,
+  savedScore,
 }: {
   questions: QuizQuestion[];
   prefix: string;
@@ -662,6 +666,7 @@ function QuizSection({
   icon: string;
   intro?: React.ReactNode;
   onScore?: (score: number, maxScore: number, questionResults: Record<string, boolean>) => void;
+  savedScore?: number | null; // 0-100 percentage from last attempt
 }) {
   const { lang } = useLang();
   const ui = getUi(lang);
@@ -693,9 +698,21 @@ function QuizSection({
       {/* Question navigator */}
       <div className="bg-white rounded-2xl p-4 border border-pink-50">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-gray-400">
-            {lang === "en" ? `${questions.length} questions` : `共 ${questions.length} 题`}
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-400">
+              {lang === "en" ? `${questions.length} questions` : `共 ${questions.length} 题`}
+            </span>
+            {savedScore != null && !graded && (
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+                savedScore >= 90 ? "bg-green-100 text-green-600" :
+                savedScore >= 75 ? "bg-blue-100 text-blue-600" :
+                savedScore >= 60 ? "bg-amber-100 text-amber-600" :
+                "bg-red-100 text-red-600"
+              }`}>
+                {lang === "en" ? `Last: ${savedScore}%` : `上次: ${savedScore}%`}
+              </span>
+            )}
+          </div>
           <button
             onClick={() => {
               setGraded(true);
