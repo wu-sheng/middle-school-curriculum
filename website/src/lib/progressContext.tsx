@@ -387,7 +387,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         math = mathResult.data as MathProgress;
         mathShaRef.current = mathResult.sha;
       } else {
-        math = emptyMathProgress();
+        // Preserve any locally cached progress when remote file doesn't exist yet
+        math = loadMathLocal() || emptyMathProgress();
         try {
           const sha = await writeProgressFile(cfg, MATH_FILE, math, null);
           mathShaRef.current = sha;
@@ -406,7 +407,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         fce = fceResult.data as FCEProgress;
         fceShaRef.current = fceResult.sha;
       } else {
-        fce = emptyFCEProgress();
+        // Preserve any locally cached progress when remote file doesn't exist yet
+        fce = loadFCELocal() || emptyFCEProgress();
         try {
           const sha = await writeProgressFile(cfg, FCE_FILE, fce, null);
           fceShaRef.current = sha;
@@ -425,7 +427,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         hist = historyResult.data as ScoreHistory;
         historyShaRef.current = historyResult.sha;
       } else {
-        hist = emptyHistory();
+        // Preserve any locally cached history when remote file doesn't exist yet
+        hist = loadHistoryLocal() || emptyHistory();
         try {
           const sha = await writeProgressFile(cfg, HISTORY_FILE, hist, null);
           historyShaRef.current = sha;

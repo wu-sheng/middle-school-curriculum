@@ -865,6 +865,14 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [sentenceAnswers, setSentenceAnswers] = useState<Record<string, string>>({});
   const [sentenceChecked, setSentenceChecked] = useState<Record<string, boolean>>({});
+  const [cumulativeScore, setCumulativeScore] = useState<{ correct: number; total: number } | null>(null);
+
+  // Compute total question count across all extracts
+  const grandTotal = listeningData.reduce((sum, e) => {
+    if (e.type === "sentence-completion" && e.sentences) return sum + e.sentences.length;
+    return sum + 1;
+  }, 0);
+
   // Report cumulative score after each extract is checked
   function reportCumulativeScore(
     nextChecked: Record<string, boolean>,
@@ -889,7 +897,10 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
         qr[e.id] = ok;
       }
     }
-    if (total > 0) setTimeout(() => onScore?.(correct, total, qr), 0);
+    if (total > 0) {
+      setCumulativeScore({ correct, total });
+      setTimeout(() => onScore?.(correct, total, qr), 0);
+    }
   }
 
   if (listeningData.length === 0) return <Card><p className="text-gray-400 italic">No listening exercises today.</p></Card>;
@@ -1056,6 +1067,17 @@ function ListeningTab({ listeningData, lang, onScore }: { listeningData: DailyVi
           </Card>
         );
       })}
+
+      {/* Cumulative score summary */}
+      {cumulativeScore && (
+        <div className={`mt-4 p-4 rounded-xl border font-medium text-center ${scoreColor(Math.round((cumulativeScore.correct / cumulativeScore.total) * 100))}`}>
+          Listening Score: {cumulativeScore.correct}/{cumulativeScore.total}
+          {cumulativeScore.total < grandTotal && (
+            <span className="text-xs font-normal ml-2 opacity-70">({cumulativeScore.total}/{grandTotal} checked)</span>
+          )}
+          {" "}({Math.round((cumulativeScore.correct / cumulativeScore.total) * 100)}%)
+        </div>
+      )}
     </>
   );
 }
