@@ -159,6 +159,397 @@ subjects:
                   - 统计调查
                   - 直方图
 
+      - id: grade8
+        name: 八年级
+        nameEn: Grade 8
+        description: 初二数学，依据人教版（2024版）
+        semesters:
+          - id: semester1
+            name: 上学期
+            nameEn: Semester 1
+            version: 八年级数学上册（2024年版）
+            chapters:
+              - id: triangles
+                number: 1
+                name: 三角形
+                nameEn: Triangles
+                hasContent: true
+                topics:
+                  - 三角形的三边关系（两边之和大于第三边）
+                  - 三角形的三种类型（按边、按角分类）
+                  - 三角形的高、中线、角平分线
+                  - 三角形的稳定性
+                  - 三角形的外角定理
+                  - 多边形内角和与外角和
+                  - 综合与实践：三角形稳定性在建筑中的应用
+                topicsEn:
+                  - Triangle inequality (sum of two sides greater than the third)
+                  - Types of triangles (by sides and by angles)
+                  - Altitude, median, and angle bisector of a triangle
+                  - Rigidity of triangles
+                  - Exterior angle theorem
+                  - Sum of interior and exterior angles of polygons
+                  - Integrated practice: rigidity of triangles in architecture
+              - id: congruent-triangles
+                number: 2
+                name: 全等三角形
+                nameEn: Congruent Triangles
+                hasContent: true
+                topics:
+                  - 全等图形与全等三角形的概念
+                  - 全等三角形的性质
+                  - 三角形全等的判定（SSS、SAS、ASA、AAS）
+                  - 直角三角形全等的判定（HL）
+                  - 角平分线的性质
+                  - 辅助线的添加方法
+                topicsEn:
+                  - Concept of congruent figures and congruent triangles
+                  - Properties of congruent triangles
+                  - Congruence criteria (SSS, SAS, ASA, AAS)
+                  - Right triangle congruence (HL)
+                  - Properties of angle bisectors
+                  - Adding auxiliary lines
+              - id: line-symmetry
+                number: 3
+                name: 轴对称
+                nameEn: Line Symmetry
+                hasContent: true
+                topics:
+                  - 轴对称与轴对称图形
+                  - 线段的垂直平分线
+                  - 等腰三角形的性质与判定
+                  - 等边三角形
+                  - 轴对称的应用
+                topicsEn:
+                  - Axis symmetry and symmetric figures
+                  - Perpendicular bisector of a segment
+                  - Properties and criteria for isosceles triangles
+                  - Equilateral triangles
+                  - Applications of line symmetry
+              - id: polynomial-multiplication
+                number: 4
+                name: 整式的乘除法
+                nameEn: Multiplication and Division of Polynomials
+                hasContent: true
+                topics:
+                  - 同底数幂的乘法
+                  - 幂的乘方与积的乘方
+                  - 整式的乘法（单项式与多项式、多项式与多项式）
+                  - 平方差公式
+                  - 完全平方公式
+                  - 同底数幂的除法
+                  - 整式的除法
+                topicsEn:
+                  - Multiplication of powers with the same base
+                  - Power of a power and power of a product
+                  - Multiplying polynomials (monomial×polynomial, polynomial×polynomial)
+                  - Difference of squares formula
+                  - Perfect square trinomial formula
+                  - Division of powers with the same base
+                  - Division of polynomials
+              - id: factorization
+                number: 5
+                name: 因式分解
+                nameEn: Factorization
+                hasContent: true
+                topics:
+                  - 因式分解的意义
+                  - 提公因式法
+                  - 公式法（平方差公式、完全平方公式）
+                  - 因式分解的综合应用
+                topicsEn:
+                  - Meaning of factorization
+                  - Common factor method
+                  - Formula method (difference of squares, perfect square trinomial)
+                  - Combined applications
+              - id: algebraic-fractions
+                number: 6
+                name: 分式
+                nameEn: Algebraic Fractions
+                hasContent: true
+                topics:
+                  - 分式的概念
+                  - 分式的基本性质
+                  - 分式的约分与通分
+                  - 分式的乘除法
+                  - 分式的加减法
+                  - 分式方程
+                topicsEn:
+                  - Concept of algebraic fractions
+                  - Basic properties of algebraic fractions
+                  - Simplifying and finding common denominators
+                  - Multiplication and division of algebraic fractions
+                  - Addition and subtraction of algebraic fractions
+                  - Fractional equations
+          - id: semester2
+            name: 下学期
+            nameEn: Semester 2
+            version: 八年级数学下册（2024年版）
+            chapters:
+              - id: pythagorean-theorem
+                number: 7
+                name: 勾股定理
+                nameEn: Pythagorean Theorem
+                hasContent: true
+                topics:
+                  - 勾股定理的发现与证明
+                  - 勾股定理的应用
+                  - 勾股定理的逆定理
+                  - 直角三角形的判定
+                  - 特殊直角三角形（30°-60°-90°、45°-45°-90°）
+                topicsEn:
+                  - Discovery and proof of the Pythagorean theorem
+                  - Applications of the Pythagorean theorem
+                  - Converse of the Pythagorean theorem
+                  - Determining right triangles
+                  - Special right triangles (30-60-90, 45-45-90)
+              - id: quadrilaterals
+                number: 8
+                name: 四边形
+                nameEn: Quadrilaterals
+                hasContent: true
+                topics:
+                  - 多边形的内角和与外角和
+                  - 平行四边形的性质与判定
+                  - 矩形的性质与判定
+                  - 菱形的性质与判定
+                  - 正方形
+                  - 梯形
+                  - 重心与中位线定理
+                topicsEn:
+                  - Sum of interior and exterior angles of polygons
+                  - Properties and criteria for parallelograms
+                  - Properties and criteria for rectangles
+                  - Properties and criteria for rhombuses
+                  - Squares
+                  - Trapezoids
+                  - Centroid and midsegment theorem
+              - id: linear-functions
+                number: 9
+                name: 一次函数
+                nameEn: Linear Functions
+                hasContent: true
+                topics:
+                  - 函数的概念与表示
+                  - 正比例函数
+                  - 一次函数的概念
+                  - 一次函数的图象与性质
+                  - 用一次函数解决实际问题
+                  - 一次函数与方程、不等式的关系
+                topicsEn:
+                  - Concept and representations of functions
+                  - Direct proportion functions
+                  - Concept of linear functions
+                  - Graph and properties of linear functions
+                  - Applying linear functions to real problems
+                  - Connections between functions, equations, and inequalities
+              - id: data-analysis
+                number: 10
+                name: 数据的分析
+                nameEn: Data Analysis
+                hasContent: true
+                topics:
+                  - 平均数（算术平均数、加权平均数）
+                  - 中位数与众数
+                  - 方差与标准差
+                  - 数据的综合分析与评价
+                topicsEn:
+                  - Mean (arithmetic mean, weighted mean)
+                  - Median and mode
+                  - Variance and standard deviation
+                  - Comprehensive data analysis and evaluation
+
+      - id: grade9
+        name: 九年级
+        nameEn: Grade 9
+        description: 初三数学，依据人教版（2024版）
+        semesters:
+          - id: semester1
+            name: 上学期
+            nameEn: Semester 1
+            version: 九年级数学上册（2024年版）
+            chapters:
+              - id: square-root-expressions
+                number: 1
+                name: 二次根式
+                nameEn: Square Root Expressions
+                hasContent: true
+                topics:
+                  - 二次根式的概念
+                  - 二次根式的性质
+                  - 二次根式的化简
+                  - 二次根式的加减法
+                  - 二次根式的乘除法
+                  - 分母有理化
+                topicsEn:
+                  - Concept of square root expressions
+                  - Properties of square root expressions
+                  - Simplifying square root expressions
+                  - Addition and subtraction of square root expressions
+                  - Multiplication and division of square root expressions
+                  - Rationalizing the denominator
+              - id: quadratic-equations
+                number: 2
+                name: 一元二次方程
+                nameEn: Quadratic Equations in One Variable
+                hasContent: true
+                topics:
+                  - 一元二次方程的概念
+                  - 直接开平方法
+                  - 配方法
+                  - 公式法（求根公式）
+                  - 因式分解法
+                  - 韦达定理（根与系数关系）
+                  - 一元二次方程的应用
+                topicsEn:
+                  - Concept of quadratic equations in one variable
+                  - Square root method
+                  - Completing the square
+                  - Quadratic formula
+                  - Factoring method
+                  - Vieta's formulas
+                  - Applications of quadratic equations
+              - id: quadratic-functions
+                number: 3
+                name: 二次函数
+                nameEn: Quadratic Functions
+                hasContent: true
+                topics:
+                  - 二次函数的概念
+                  - 二次函数 y=ax² 的图象与性质
+                  - 二次函数 y=a(x-h)²+k 的图象与性质
+                  - 二次函数 y=ax²+bx+c 的图象与性质
+                  - 二次函数的顶点与对称轴
+                  - 二次函数的最大值与最小值
+                  - 用二次函数解决实际问题
+                topicsEn:
+                  - Concept of quadratic functions
+                  - Graph and properties of y=ax²
+                  - Graph and properties of y=a(x-h)²+k
+                  - Graph and properties of y=ax²+bx+c
+                  - Vertex and axis of symmetry of quadratic functions
+                  - Maximum and minimum values of quadratic functions
+                  - Applying quadratic functions to real problems
+              - id: rotation
+                number: 4
+                name: 旋转
+                nameEn: Rotation
+                hasContent: true
+                topics:
+                  - 旋转的概念与性质
+                  - 中心对称与中心对称图形
+                  - 旋转的作图
+                  - 旋转与其他变换的综合
+                topicsEn:
+                  - Concept and properties of rotation
+                  - Point symmetry and point-symmetric figures
+                  - Constructing rotations
+                  - Rotation combined with other transformations
+          - id: semester2
+            name: 下学期
+            nameEn: Semester 2
+            version: 九年级数学下册（2024年版）
+            chapters:
+              - id: inverse-proportion-functions
+                number: 5
+                name: 反比例函数
+                nameEn: Inverse Proportion Functions
+                hasContent: true
+                topics:
+                  - 反比例函数的概念
+                  - 反比例函数的图象（双曲线）与性质
+                  - k的正负与图象的位置关系
+                  - 反比例函数的增减性
+                  - 反比例函数与一次函数的综合应用
+                topicsEn:
+                  - Concept of inverse proportion functions
+                  - Graph (hyperbola) and properties of inverse proportion functions
+                  - Effect of sign of k on graph position
+                  - Monotonicity of inverse proportion functions
+                  - Combined applications with linear functions
+              - id: similar-figures
+                number: 6
+                name: 相似
+                nameEn: Similar Figures
+                hasContent: true
+                topics:
+                  - 比例线段
+                  - 平行线分线段成比例
+                  - 相似多边形
+                  - 相似三角形的判定（AA、SAS、SSS）
+                  - 相似三角形的性质
+                  - 相似比的应用
+                  - 位似图形
+                topicsEn:
+                  - Proportional line segments
+                  - Parallel lines dividing segments proportionally
+                  - Similar polygons
+                  - Criteria for similar triangles (AA, SAS, SSS)
+                  - Properties of similar triangles
+                  - Applications of similarity ratios
+                  - Homothety (dilation)
+              - id: trigonometric-functions
+                number: 7
+                name: 锐角三角函数
+                nameEn: Trigonometric Functions of Acute Angles
+                hasContent: true
+                topics:
+                  - 正弦、余弦、正切的定义
+                  - 特殊角的三角函数值（30°、45°、60°）
+                  - 互余角的三角函数关系
+                  - 用计算器求三角函数值
+                  - 解直角三角形
+                  - 锐角三角函数的应用
+                topicsEn:
+                  - Definition of sine, cosine, and tangent
+                  - Trigonometric values of special angles (30°, 45°, 60°)
+                  - Trigonometric relationships of complementary angles
+                  - Using a calculator for trigonometric values
+                  - Solving right triangles
+                  - Applications of acute angle trigonometry
+              - id: circles
+                number: 8
+                name: 圆
+                nameEn: Circles
+                hasContent: true
+                topics:
+                  - 圆的基本概念（弦、弧、圆心角、圆周角）
+                  - 点与圆的位置关系
+                  - 直线与圆的位置关系（切线、割线）
+                  - 圆与圆的位置关系
+                  - 圆心角与弧的关系
+                  - 圆周角定理
+                  - 圆的切线性质
+                  - 正多边形与圆
+                  - 弧长与扇形面积
+                topicsEn:
+                  - Basic concepts (chord, arc, central angle, inscribed angle)
+                  - Point-circle relationships
+                  - Line-circle relationships (tangent, secant)
+                  - Circle-circle relationships
+                  - Central angles and arcs
+                  - Inscribed angle theorem
+                  - Properties of tangent lines
+                  - Regular polygons and circles
+                  - Arc length and sector area
+              - id: probability
+                number: 9
+                name: 概率初步
+                nameEn: Introduction to Probability
+                hasContent: true
+                topics:
+                  - 随机事件与概率
+                  - 频率与概率的关系
+                  - 等可能事件的概率
+                  - 列举法与树形图
+                  - 概率的综合应用
+                topicsEn:
+                  - Random events and probability
+                  - Relationship between frequency and probability
+                  - Probability of equally likely events
+                  - Enumeration and tree diagrams
+                  - Combined applications of probability
+
   - id: english
     name: 英语
     nameEn: English
