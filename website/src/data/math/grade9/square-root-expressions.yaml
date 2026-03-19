@@ -1,0 +1,1053 @@
+title: 二次根式
+titleEn: Square Root Expressions
+chapter: 1
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟 · 第3课时 约55分钟
+estimatedTimeEn: 'Session 1 ~55 min · Session 2 ~55 min · Session 3 ~55 min'
+targetAudience: 小学3年级自学生（已完成八年级数学），自学材料，由简入深
+
+objectives:
+  - 理解<<二次根式/square root expression>>的定义，掌握其存在的条件（<<被开方数/radicand>>必须非负）
+  - 掌握<<二次根式/square root expression>>的两条基本性质：$(\sqrt{a})^{2} = a$（$a \geq 0$）和 $\sqrt{a^{2}} = |a|$
+  - 能将根式化为<<最简根式/simplest radical form>>：被开方数无分母、无完全平方因数
+  - 能识别和合并<<同类根式/like radicals>>，完成根式的加减运算
+  - 掌握根式乘除法法则，并运用<<有理化/rationalization>>去除分母中的根式
+  - 综合运用上述知识对含根式的代数式进行化简与计算
+objectivesEn:
+  - Understand the definition of <<二次根式/square root expression>> and its condition for existence (the <<被开方数/radicand>> must be non-negative)
+  - 'Master the two fundamental properties: $(\sqrt{a})^{2} = a$ (for $a \geq 0$) and $\sqrt{a^{2}} = |a|$'
+  - 'Be able to reduce a radical expression to <<最简根式/simplest radical form>>: no fractions under the radical, no perfect square factors under the radical'
+  - Identify and combine <<同类根式/like radicals>> to perform addition and subtraction of radicals
+  - Master the rules for multiplying and dividing radicals, and use <<有理化/rationalization>> to eliminate radicals from denominators
+  - Apply these skills together to simplify and compute algebraic expressions involving radicals
+
+prerequisites:
+  title: 从平方根出发——回顾算术平方根
+  titleEn: Building on square roots — reviewing the arithmetic square root
+  intro: |
+    在七年级，我们学习了<<算术平方根/arithmetic square root>>：一个非负数 $a$ 的算术平方根就是满足 $x^{2} = a$ 且 $x \geq 0$ 的那个数，记作 $\sqrt{a}$。
+  introEn: |
+    In Grade 7 we learned the <<算术平方根/arithmetic square root>>: the arithmetic square root of a non-negative number $a$ is the non-negative number $x$ satisfying $x^{2} = a$, written $\sqrt{a}$.
+  knownNumbers:
+    - '$\sqrt{9} = 3$（因为 $3^{2} = 9$ 且 $3 \geq 0$）'
+    - '$\sqrt{0} = 0$'
+    - '$\sqrt{2} \approx 1.414$（无理数）'
+    - '$(-3)^{2} = 9$，但 $\sqrt{9} = 3$（根号只取非负值！）'
+  knownNumbersEn:
+    - '$\sqrt{9} = 3$ (because $3^{2} = 9$ and $3 \geq 0$)'
+    - '$\sqrt{0} = 0$'
+    - '$\sqrt{2} \approx 1.414$ (irrational number)'
+    - '$(-3)^{2} = 9$, but $\sqrt{9} = 3$ (the radical symbol always gives a non-negative value!)'
+  canSolve:
+    - 求具体数的算术平方根（如 $\sqrt{16}$、$\sqrt{100}$）
+    - 判断一个数是否是完全平方数
+    - 用计算器估算无理数的近似值
+  canSolveEn:
+    - Find the arithmetic square root of specific numbers (e.g. $\sqrt{16}$, $\sqrt{100}$)
+    - Determine whether a number is a perfect square
+    - Estimate irrational numbers using a calculator
+  cannotSolve:
+    - '含字母时，$\sqrt{a^{2}}$ 究竟等于 $a$ 还是 $|a|$？'
+    - '怎样把 $\sqrt{12}$ 化成更简洁的形式？'
+    - '$\sqrt{3} + \sqrt{12}$ 能直接相加吗？'
+    - '$\frac{1}{\sqrt{2}}$ 分母里有根号，如何化简？'
+  cannotSolveEn:
+    - 'When variables are involved, does $\sqrt{a^{2}}$ equal $a$ or $|a|$?'
+    - 'How can we rewrite $\sqrt{12}$ in a simpler form?'
+    - 'Can $\sqrt{3} + \sqrt{12}$ be added directly?'
+    - 'The denominator of $\frac{1}{\sqrt{2}}$ contains a radical — how do we simplify it?'
+  conclusion: |
+    在九年级，我们把算术平方根推广到含有字母的代数式，研究以 $\sqrt{a}$（$a$ 为代数式）形式出现的**<<二次根式/square root expression>>**，探讨它的性质、化简规则和四则运算，为学习一元二次方程和函数做准备。
+  conclusionEn: |
+    In Grade 9 we extend the arithmetic square root to algebraic expressions, studying **<<二次根式/square root expression>>s** of the form $\sqrt{a}$ (where $a$ is an algebraic expression). We explore their properties, simplification rules, and arithmetic operations — laying the foundation for quadratic equations and functions.
+
+concepts:
+  - id: square-root-concept
+    title: <<二次根式/square root expression>>的概念与存在条件
+    titleEn: Definition and existence condition of <<二次根式/square root expression>>
+    content: |
+      **定义**：形如 $\sqrt{a}$ 的式子叫做**<<二次根式/square root expression>>**，其中 $a$ 叫做**<<被开方数/radicand>>**。
+
+      **存在条件**：因为负数没有实数范围内的平方根，所以<<二次根式/square root expression>>有意义（在实数范围内）的充要条件是：
+
+      $$\text{被开方数} \geq 0，即\ a \geq 0$$
+
+      **为什么？** 假设 $\sqrt{-4}$ 存在，设它等于某个实数 $x$，则 $x^{2} = -4$。但任何实数的平方都是非负数，$x^{2} \geq 0$，不可能等于 $-4$。所以 $\sqrt{-4}$ 在实数范围内无意义。
+
+      **特别注意：$\sqrt{a}$ 只表示非负平方根！**
+
+      $\sqrt{4} = 2$（只取正值），**不是** $\pm 2$。
+
+      如果方程 $x^{2} = 4$，解为 $x = \pm 2$（这是方程，与根号符号不同）。
+
+      $\sqrt{0} = 0$（零的平方根就是零本身）。
+
+      **如何求含字母表达式的存在条件？**
+
+      对于 $\sqrt{f(x)}$，令 $f(x) \geq 0$，解不等式即可。
+
+      例：
+      - $\sqrt{3 - x}$：令 $3 - x \geq 0$，解得 $x \leq 3$
+      - $\sqrt{x + 2}$：令 $x + 2 \geq 0$，解得 $x \geq -2$
+      - $\sqrt{x^{2}}$：令 $x^{2} \geq 0$，对任意实数 $x$ 均成立（恒有意义）
+    contentEn: |
+      **Definition**: An expression of the form $\sqrt{a}$ is called a **<<二次根式/square root expression>>**, where $a$ is called the **<<被开方数/radicand>>**.
+
+      **Existence condition**: Because negative numbers have no real square root, a <<二次根式/square root expression>> is meaningful (in the real numbers) if and only if:
+
+      $$\text{radicand} \geq 0,\quad \text{i.e.}\ a \geq 0$$
+
+      **Why?** Suppose $\sqrt{-4}$ existed and equaled some real number $x$. Then $x^{2} = -4$. But the square of any real number is non-negative ($x^{2} \geq 0$), so it can never equal $-4$. Therefore $\sqrt{-4}$ has no meaning in the real numbers.
+
+      **Key point: $\sqrt{a}$ denotes only the non-negative square root!**
+
+      $\sqrt{4} = 2$ (positive value only) — **not** $\pm 2$.
+
+      If we have the equation $x^{2} = 4$, then $x = \pm 2$ (this is an equation, different from the radical symbol).
+
+      $\sqrt{0} = 0$ (the square root of zero is zero).
+
+      **How to find the existence condition for expressions containing variables?**
+
+      For $\sqrt{f(x)}$, set $f(x) \geq 0$ and solve the inequality.
+
+      Examples:
+      - $\sqrt{3 - x}$: set $3 - x \geq 0$, giving $x \leq 3$
+      - $\sqrt{x + 2}$: set $x + 2 \geq 0$, giving $x \geq -2$
+      - $\sqrt{x^{2}}$: set $x^{2} \geq 0$, true for all real $x$ (always defined)
+    examples:
+      - '$\sqrt{9} = 3$（完全平方数，有意义，等于 $3$）'
+      - '$\sqrt{-1}$：被开方数 $-1 < 0$，在实数范围内无意义'
+      - '$\sqrt{2x - 6}$：需要 $2x - 6 \geq 0$，即 $x \geq 3$'
+      - '$\sqrt{(x-1)^{2}}$：$(x-1)^{2} \geq 0$ 恒成立，对一切实数 $x$ 均有意义'
+    examplesEn:
+      - '$\sqrt{9} = 3$ (perfect square, defined, equals $3$)'
+      - '$\sqrt{-1}$: radicand $-1 < 0$, undefined in the real numbers'
+      - '$\sqrt{2x - 6}$: requires $2x - 6 \geq 0$, i.e. $x \geq 3$'
+      - '$\sqrt{(x-1)^{2}}$: $(x-1)^{2} \geq 0$ holds for all real $x$, always defined'
+    notes:
+      - '**根号 ≠ 正负号**：$\sqrt{a}$ 表示非负平方根，$\pm\sqrt{a}$ 才表示两个值'
+      - '**区分符号与方程**：$\sqrt{4} = 2$（根号运算），$x^{2} = 4 \Rightarrow x = \pm 2$（方程求解）'
+      - '**被开方数为代数式时**，要通过解不等式确定使根式有意义的变量范围'
+    notesEn:
+      - '**Radical symbol ≠ ± sign**: $\sqrt{a}$ is the non-negative square root; $\pm\sqrt{a}$ represents two values'
+      - '**Distinguish symbol from equation**: $\sqrt{4} = 2$ (radical operation) vs $x^{2} = 4 \Rightarrow x = \pm 2$ (equation solution)'
+      - '**When the radicand contains variables**, solve an inequality to find the range of values that make the expression defined'
+
+  - id: square-root-properties
+    title: <<二次根式/square root expression>>的基本性质
+    titleEn: Fundamental properties of <<二次根式/square root expression>>
+    content: |
+      <<二次根式/square root expression>>有两条核心性质，它们是所有化简运算的基础。
+
+      **性质一：先开方再平方，回到原数**
+
+      $$(\sqrt{a})^{2} = a \quad (a \geq 0)$$
+
+      直观理解：$\sqrt{a}$ 是"满足 $x^{2} = a$，$x \geq 0$"的那个数，所以对它平方当然得回 $a$。
+
+      例：$(\sqrt{5})^{2} = 5$，$(\sqrt{7})^{2} = 7$，$\left(\sqrt{\frac{3}{4}}\right)^{2} = \frac{3}{4}$
+
+      **性质二：先平方再开方，结果是绝对值**
+
+      $$\sqrt{a^{2}} = |a| \quad (\text{对一切实数 } a)$$
+
+      这是**最容易出错的性质**，必须牢记！
+
+      为什么是 $|a|$ 而不是 $a$？
+
+      因为 $\sqrt{\cdot}$ 只能给出非负结果，而 $a$ 本身可能是负数。
+
+      - 当 $a = 3$：$\sqrt{3^{2}} = \sqrt{9} = 3 = |3|$ ✓
+      - 当 $a = -3$：$\sqrt{(-3)^{2}} = \sqrt{9} = 3 = |-3|$ ✓
+      - **错误写法**：$\sqrt{(-3)^{2}} = -3$ ✗（根号结果不能为负！）
+
+      **何时可以去掉绝对值符号？**
+
+      只有当已知 $a \geq 0$ 时，才能写 $\sqrt{a^{2}} = a$。
+
+      若已知 $a < 0$，则 $\sqrt{a^{2}} = -a$（因为 $-a > 0$ 是正数）。
+
+      **生活类比**：就像"存款后取款"——你存了 $a$ 元（无论正负），最终取出来的总是非负金额 $|a|$。根号就像一个"绝对值机器"，只吐出非负结果。
+    contentEn: |
+      <<二次根式/square root expression>>s have two core properties that underlie all simplification.
+
+      **Property 1: Square root then squaring returns the original**
+
+      $$(\sqrt{a})^{2} = a \quad (a \geq 0)$$
+
+      Intuition: $\sqrt{a}$ is defined as the number satisfying $x^{2} = a$ with $x \geq 0$, so squaring it naturally gives back $a$.
+
+      Examples: $(\sqrt{5})^{2} = 5$, $(\sqrt{7})^{2} = 7$, $\left(\sqrt{\frac{3}{4}}\right)^{2} = \frac{3}{4}$
+
+      **Property 2: Squaring then taking a square root gives the absolute value**
+
+      $$\sqrt{a^{2}} = |a| \quad (\text{for all real } a)$$
+
+      This is the **most error-prone property** — memorize it carefully!
+
+      Why $|a|$ and not $a$? Because $\sqrt{\cdot}$ always produces a non-negative result, while $a$ itself could be negative.
+
+      - When $a = 3$: $\sqrt{3^{2}} = \sqrt{9} = 3 = |3|$ ✓
+      - When $a = -3$: $\sqrt{(-3)^{2}} = \sqrt{9} = 3 = |-3|$ ✓
+      - **Wrong**: $\sqrt{(-3)^{2}} = -3$ ✗ (a square root cannot be negative!)
+
+      **When can we drop the absolute value?**
+
+      Only when we already know $a \geq 0$ may we write $\sqrt{a^{2}} = a$.
+
+      If we know $a < 0$, then $\sqrt{a^{2}} = -a$ (since $-a > 0$).
+
+      **Real-life analogy**: Think of "depositing and withdrawing money." No matter whether $a$ is positive or negative, what comes out of the ATM is always a non-negative amount $|a|$. The square root symbol is like an "absolute-value machine" that always outputs a non-negative result.
+    examples:
+      - '$(\sqrt{11})^{2} = 11$（性质一直接应用）'
+      - '$\sqrt{(-5)^{2}} = \sqrt{25} = 5 = |-5|$（性质二，结果是绝对值）'
+      - '$\sqrt{x^{2}} = |x|$（$x$ 符号未知，不能省略绝对值）'
+      - '已知 $x > 0$，$\sqrt{(x+1)^{2}} = x + 1$（因为 $x > 0$ 时，$x+1 > 0$，可去绝对值）'
+      - '已知 $x < -2$，$\sqrt{(x+2)^{2}} = -(x+2)$（因为 $x < -2$ 时，$x+2 < 0$）'
+    examplesEn:
+      - '$(\sqrt{11})^{2} = 11$ (direct application of Property 1)'
+      - '$\sqrt{(-5)^{2}} = \sqrt{25} = 5 = |-5|$ (Property 2: result is the absolute value)'
+      - '$\sqrt{x^{2}} = |x|$ (sign of $x$ unknown, absolute value cannot be dropped)'
+      - 'Given $x > 0$: $\sqrt{(x+1)^{2}} = x + 1$ (since $x > 0$, $x+1 > 0$, absolute value drops)'
+      - 'Given $x < -2$: $\sqrt{(x+2)^{2}} = -(x+2)$ (since $x < -2$, $x+2 < 0$)'
+    notes:
+      - '**$\sqrt{a^{2}} = |a|$，不是 $a$**——这是本章最常见的错误，一定要反复强调'
+      - '**条件的重要性**：$(\sqrt{a})^{2} = a$ 要求 $a \geq 0$；若 $a < 0$，$\sqrt{a}$ 无意义，性质一不适用'
+      - '**绝对值去除**：只有明确知道被绝对值包裹的量非负时，才能去掉绝对值符号'
+    notesEn:
+      - '**$\sqrt{a^{2}} = |a|$, not $a$** — this is the most common mistake in this chapter; reinforce it repeatedly'
+      - '**Conditions matter**: $(\sqrt{a})^{2} = a$ requires $a \geq 0$; if $a < 0$, $\sqrt{a}$ is undefined and Property 1 does not apply'
+      - '**Dropping absolute value**: only remove $|\cdot|$ when you are sure the expression inside is non-negative'
+
+  - id: simplest-radical-form
+    title: <<最简根式/simplest radical form>>与化简
+    titleEn: <<最简根式/simplest radical form>> and simplification
+    content: |
+      **什么叫<<最简根式/simplest radical form>>？**
+
+      满足以下两个条件的根式叫做<<最简根式/simplest radical form>>：
+
+      1. **被开方数不含分母**（分母有理化）
+      2. **被开方数不含能开得尽的因数或因式**（即不含完全平方因数）
+
+      例如：$\sqrt{12}$ 不是最简根式，因为 $12 = 4 \times 3$，$4$ 是完全平方数，可以提出来。
+
+      **化简方法一：提取完全平方因数**
+
+      核心规律：$\sqrt{a^{2} \cdot b} = a\sqrt{b}$（$a \geq 0$，$b \geq 0$）
+
+      步骤：把被开方数分解，找出其中最大的完全平方因数，提到根号外面。
+
+      - $\sqrt{12} = \sqrt{4 \times 3} = \sqrt{4} \cdot \sqrt{3} = 2\sqrt{3}$
+      - $\sqrt{48} = \sqrt{16 \times 3} = 4\sqrt{3}$
+      - $\sqrt{75} = \sqrt{25 \times 3} = 5\sqrt{3}$
+      - $\sqrt{200} = \sqrt{100 \times 2} = 10\sqrt{2}$
+
+      **化简方法二：含字母的根式**
+
+      - $\sqrt{x^{4}} = x^{2}$（$x^{4} = (x^{2})^{2}$ 是完全平方，$x^{2} \geq 0$ 无需绝对值）
+      - $\sqrt{x^{3}} = \sqrt{x^{2} \cdot x} = x\sqrt{x}$（$x \geq 0$ 时）
+      - $\sqrt{4a^{2}b} = 2|a|\sqrt{b}$（$b \geq 0$，$a$ 符号未知需加绝对值；若已知 $a \geq 0$ 则为 $2a\sqrt{b}$）
+
+      **化简方法三：被开方数含分母**
+
+      $$\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} = \frac{\sqrt{a} \cdot \sqrt{b}}{b} = \frac{\sqrt{ab}}{b} \quad (a \geq 0, b > 0)$$
+
+      - $\sqrt{\frac{3}{4}} = \frac{\sqrt{3}}{2}$（分母 $\sqrt{4} = 2$，有理数）
+      - $\sqrt{\frac{1}{3}} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$（需有理化）
+    contentEn: |
+      **What is <<最简根式/simplest radical form>>?**
+
+      A radical expression is in <<最简根式/simplest radical form>> when:
+
+      1. **No fractions appear under the radical** (rationalize the denominator)
+      2. **No perfect square factors remain under the radical**
+
+      For example, $\sqrt{12}$ is not in simplest form because $12 = 4 \times 3$ and $4$ is a perfect square that can be pulled out.
+
+      **Method 1: Extract perfect square factors**
+
+      Key rule: $\sqrt{a^{2} \cdot b} = a\sqrt{b}$ (for $a \geq 0$, $b \geq 0$)
+
+      Steps: factor the radicand, identify the largest perfect square factor, and move it outside the radical.
+
+      - $\sqrt{12} = \sqrt{4 \times 3} = \sqrt{4} \cdot \sqrt{3} = 2\sqrt{3}$
+      - $\sqrt{48} = \sqrt{16 \times 3} = 4\sqrt{3}$
+      - $\sqrt{75} = \sqrt{25 \times 3} = 5\sqrt{3}$
+      - $\sqrt{200} = \sqrt{100 \times 2} = 10\sqrt{2}$
+
+      **Method 2: Radicals with variables**
+
+      - $\sqrt{x^{4}} = x^{2}$ ($x^{4} = (x^{2})^{2}$ is a perfect square; $x^{2} \geq 0$ so no absolute value needed)
+      - $\sqrt{x^{3}} = \sqrt{x^{2} \cdot x} = x\sqrt{x}$ (for $x \geq 0$)
+      - $\sqrt{4a^{2}b} = 2|a|\sqrt{b}$ ($b \geq 0$; sign of $a$ unknown so absolute value is needed; if $a \geq 0$ this becomes $2a\sqrt{b}$)
+
+      **Method 3: Fractions under the radical**
+
+      $$\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} = \frac{\sqrt{a} \cdot \sqrt{b}}{b} = \frac{\sqrt{ab}}{b} \quad (a \geq 0,\ b > 0)$$
+
+      - $\sqrt{\frac{3}{4}} = \frac{\sqrt{3}}{2}$ (since $\sqrt{4} = 2$, rational)
+      - $\sqrt{\frac{1}{3}} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$ (rationalization needed)
+    examples:
+      - '$\sqrt{12} = 2\sqrt{3}$（提出完全平方因数 $4$）'
+      - '$\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$'
+      - '$\sqrt{x^{6}} = x^{3}$（$x \geq 0$，$x^{6} = (x^{3})^{2}$）'
+      - '$\sqrt{\frac{5}{9}} = \frac{\sqrt{5}}{3}$（分母 $\sqrt{9} = 3$）'
+    examplesEn:
+      - '$\sqrt{12} = 2\sqrt{3}$ (extract perfect square factor $4$)'
+      - '$\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$'
+      - '$\sqrt{x^{6}} = x^{3}$ ($x \geq 0$; $x^{6} = (x^{3})^{2}$)'
+      - '$\sqrt{\frac{5}{9}} = \frac{\sqrt{5}}{3}$ (since $\sqrt{9} = 3$)'
+    notes:
+      - '**先找最大完全平方因数**：化简 $\sqrt{48}$，应找 $16$（而不是 $4$），否则需要多步化简'
+      - '**含字母时注意符号**：$\sqrt{a^{2}} = |a|$，不要随意去掉绝对值'
+      - '**验证方法**：把化简结果平方，看是否等于原被开方数'
+    notesEn:
+      - '**Find the largest perfect square factor first**: to simplify $\sqrt{48}$, use $16$ (not $4$), to avoid needing multiple steps'
+      - '**Watch signs with variables**: $\sqrt{a^{2}} = |a|$; do not drop the absolute value casually'
+      - '**Verification**: square the simplified result and check it equals the original radicand'
+
+  - id: like-radicals-addition
+    title: <<同类根式/like radicals>>与加减运算
+    titleEn: <<同类根式/like radicals>> and addition/subtraction
+    content: |
+      **什么是<<同类根式/like radicals>>？**
+
+      被开方数（化简后）相同的根式叫做**<<同类根式/like radicals>>**，也叫**同类二次根式**。
+
+      类比：就像<<同类项/like terms>>（$3x$ 和 $5x$，字母部分相同），这里"字母部分"换成了根号部分。
+
+      **合并同类根式**：
+
+      $$m\sqrt{a} + n\sqrt{a} = (m + n)\sqrt{a}$$
+
+      这本质上是**分配律的逆用**：把公共的 $\sqrt{a}$ 提出来。
+
+      **关键步骤：先化简，再合并**
+
+      不能直接看到根号就相加！必须先把每个根式化为<<最简根式/simplest radical form>>，才能判断是否是同类根式。
+
+      例：$\sqrt{12} + \sqrt{27}$
+
+      - 先化简：$\sqrt{12} = 2\sqrt{3}$，$\sqrt{27} = 3\sqrt{3}$
+      - 再合并：$2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}$
+
+      **不同类根式不能合并**：
+
+      $\sqrt{2} + \sqrt{3}$ ≠ $\sqrt{5}$（被开方数不同，不是同类！）
+
+      $\sqrt{5} - \sqrt{3}$ 不能化简（两者不同类，只能保留）
+
+      **带系数的加减**：
+
+      $3\sqrt{5} - \sqrt{20} + 2\sqrt{45}$
+      $= 3\sqrt{5} - 2\sqrt{5} + 6\sqrt{5}$（化简 $\sqrt{20}=2\sqrt{5}$，$\sqrt{45}=3\sqrt{5}$）
+      $= 7\sqrt{5}$
+    contentEn: |
+      **What are <<同类根式/like radicals>>?**
+
+      Radical expressions with the same radicand (after simplification) are called **<<同类根式/like radicals>>**.
+
+      Analogy: just like <<同类项/like terms>> ($3x$ and $5x$ share the same variable part), here the "variable part" is the radical part.
+
+      **Combining like radicals**:
+
+      $$m\sqrt{a} + n\sqrt{a} = (m + n)\sqrt{a}$$
+
+      This is essentially the **distributive law in reverse**: factor out the common $\sqrt{a}$.
+
+      **Key step: simplify first, then combine**
+
+      You cannot add radicals just because they have the same symbol! First reduce each radical to <<最简根式/simplest radical form>>, then check whether they are like radicals.
+
+      Example: $\sqrt{12} + \sqrt{27}$
+
+      - Simplify: $\sqrt{12} = 2\sqrt{3}$, $\sqrt{27} = 3\sqrt{3}$
+      - Combine: $2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}$
+
+      **Unlike radicals cannot be combined**:
+
+      $\sqrt{2} + \sqrt{3} \neq \sqrt{5}$ (different radicands — they are not like radicals!)
+
+      $\sqrt{5} - \sqrt{3}$ cannot be simplified further (unlike radicals, leave as is)
+
+      **Addition/subtraction with coefficients**:
+
+      $3\sqrt{5} - \sqrt{20} + 2\sqrt{45}$
+      $= 3\sqrt{5} - 2\sqrt{5} + 6\sqrt{5}$ (simplify: $\sqrt{20}=2\sqrt{5}$, $\sqrt{45}=3\sqrt{5}$)
+      $= 7\sqrt{5}$
+    examples:
+      - '$2\sqrt{7} + 5\sqrt{7} = 7\sqrt{7}$（直接合并，被开方数相同）'
+      - '$\sqrt{8} + \sqrt{18} = 2\sqrt{2} + 3\sqrt{2} = 5\sqrt{2}$（先化简再合并）'
+      - '$\sqrt{2} + \sqrt{3}$：不是同类根式，不能合并，保留原式'
+      - '$\sqrt{50} - \sqrt{32} + \sqrt{8} = 5\sqrt{2} - 4\sqrt{2} + 2\sqrt{2} = 3\sqrt{2}$'
+    examplesEn:
+      - '$2\sqrt{7} + 5\sqrt{7} = 7\sqrt{7}$ (combine directly; same radicand)'
+      - '$\sqrt{8} + \sqrt{18} = 2\sqrt{2} + 3\sqrt{2} = 5\sqrt{2}$ (simplify first, then combine)'
+      - '$\sqrt{2} + \sqrt{3}$: not like radicals; cannot be combined; leave as is'
+      - '$\sqrt{50} - \sqrt{32} + \sqrt{8} = 5\sqrt{2} - 4\sqrt{2} + 2\sqrt{2} = 3\sqrt{2}$'
+    notes:
+      - '**$\sqrt{a} + \sqrt{b} \neq \sqrt{a+b}$**——这是最典型的错误，根号不能"拆分加法"'
+      - '**顺序**：永远先化简为最简根式，再判断是否同类，再合并'
+      - '**系数为 $1$ 时**：$\sqrt{3}$ 的系数是 $1$，不要漏算'
+    notesEn:
+      - '**$\sqrt{a} + \sqrt{b} \neq \sqrt{a+b}$** — this is the most typical mistake; you cannot "split addition into radicals"'
+      - '**Order**: always simplify to simplest form first, then check for like radicals, then combine'
+      - '**Coefficient of $1$**: the coefficient of $\sqrt{3}$ is $1$; do not overlook it in arithmetic'
+
+  - id: radical-multiplication
+    title: <<二次根式/square root expression>>的乘法
+    titleEn: Multiplication of <<二次根式/square root expression>>s
+    content: |
+      **乘法法则**：
+
+      $$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab} \quad (a \geq 0, b \geq 0)$$
+
+      逆用：$\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$（用于化简，把被开方数拆开）
+
+      **基本应用**：
+
+      - $\sqrt{3} \cdot \sqrt{5} = \sqrt{15}$
+      - $\sqrt{6} \cdot \sqrt{6} = \sqrt{36} = 6$（同一根式相乘等于被开方数）
+      - $\sqrt{6} \cdot \sqrt{10} = \sqrt{60} = \sqrt{4 \times 15} = 2\sqrt{15}$（乘后再化简）
+
+      **含系数的乘法**：
+
+      $$m\sqrt{a} \cdot n\sqrt{b} = mn\sqrt{ab}$$
+
+      例：$3\sqrt{2} \cdot 4\sqrt{3} = 12\sqrt{6}$
+
+      **与代数公式结合**：
+
+      可以直接套用完全平方公式、平方差公式：
+
+      - $(\sqrt{3})^{2} = 3$（已是被开方数，性质一）
+      - $(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = (\sqrt{a})^{2} - (\sqrt{b})^{2} = a - b$（**平方差**，有理化的基础！）
+      - $(\sqrt{a} + \sqrt{b})^{2} = a + 2\sqrt{ab} + b$（完全平方）
+      - $(2 + \sqrt{3})(2 - \sqrt{3}) = 4 - 3 = 1$（平方差公式）
+
+      **混合多项式乘法**：
+
+      $(\sqrt{3} + \sqrt{2})(\sqrt{3} - \sqrt{2}) = 3 - 2 = 1$
+
+      $\sqrt{2}(\sqrt{6} - \sqrt{2}) = \sqrt{12} - \sqrt{4} = 2\sqrt{3} - 2$
+    contentEn: |
+      **Multiplication rule**:
+
+      $$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab} \quad (a \geq 0,\ b \geq 0)$$
+
+      Reverse use: $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$ (used to simplify by splitting the radicand)
+
+      **Basic applications**:
+
+      - $\sqrt{3} \cdot \sqrt{5} = \sqrt{15}$
+      - $\sqrt{6} \cdot \sqrt{6} = \sqrt{36} = 6$ (a radical times itself equals the radicand)
+      - $\sqrt{6} \cdot \sqrt{10} = \sqrt{60} = \sqrt{4 \times 15} = 2\sqrt{15}$ (multiply then simplify)
+
+      **Multiplication with coefficients**:
+
+      $$m\sqrt{a} \cdot n\sqrt{b} = mn\sqrt{ab}$$
+
+      Example: $3\sqrt{2} \cdot 4\sqrt{3} = 12\sqrt{6}$
+
+      **Combined with algebraic formulas**:
+
+      The difference of squares and perfect square formulas apply directly:
+
+      - $(\sqrt{3})^{2} = 3$ (Property 1)
+      - $(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = (\sqrt{a})^{2} - (\sqrt{b})^{2} = a - b$ (**difference of squares** — the basis of rationalization!)
+      - $(\sqrt{a} + \sqrt{b})^{2} = a + 2\sqrt{ab} + b$ (perfect square)
+      - $(2 + \sqrt{3})(2 - \sqrt{3}) = 4 - 3 = 1$ (difference of squares formula)
+
+      **Mixed polynomial multiplication**:
+
+      $(\sqrt{3} + \sqrt{2})(\sqrt{3} - \sqrt{2}) = 3 - 2 = 1$
+
+      $\sqrt{2}(\sqrt{6} - \sqrt{2}) = \sqrt{12} - \sqrt{4} = 2\sqrt{3} - 2$
+    examples:
+      - '$\sqrt{5} \cdot \sqrt{5} = 5$（同根相乘等于被开方数）'
+      - '$2\sqrt{3} \cdot 3\sqrt{6} = 6\sqrt{18} = 6 \times 3\sqrt{2} = 18\sqrt{2}$'
+      - '$(\sqrt{7} + 1)(\sqrt{7} - 1) = 7 - 1 = 6$（平方差，根式消去）'
+      - '$(\sqrt{5} + \sqrt{2})^{2} = 5 + 2\sqrt{10} + 2 = 7 + 2\sqrt{10}$'
+    examplesEn:
+      - '$\sqrt{5} \cdot \sqrt{5} = 5$ (a radical times itself equals the radicand)'
+      - '$2\sqrt{3} \cdot 3\sqrt{6} = 6\sqrt{18} = 6 \times 3\sqrt{2} = 18\sqrt{2}$'
+      - '$(\sqrt{7} + 1)(\sqrt{7} - 1) = 7 - 1 = 6$ (difference of squares, radical eliminated)'
+      - '$(\sqrt{5} + \sqrt{2})^{2} = 5 + 2\sqrt{10} + 2 = 7 + 2\sqrt{10}$'
+    notes:
+      - '**乘法法则要求两个根式的被开方数均非负**，才能合并成 $\sqrt{ab}$'
+      - '**乘完记得化简**：$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$ 后，检查 $ab$ 是否有完全平方因数'
+      - '**完全平方公式展开后含混合项**：$(\sqrt{a} + \sqrt{b})^{2}$ 展开有 $2\sqrt{ab}$ 项，注意不要漏写'
+    notesEn:
+      - '**The multiplication rule requires both radicands to be non-negative** before they can be merged into $\sqrt{ab}$'
+      - '**Remember to simplify after multiplying**: once $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$, check whether $ab$ has any perfect square factors'
+      - '**The perfect square expansion contains a mixed term**: $(\sqrt{a} + \sqrt{b})^{2}$ expands to include $2\sqrt{ab}$; do not omit it'
+
+  - id: rationalization
+    title: 分母<<有理化/rationalization>>
+    titleEn: Rationalizing the denominator (<<有理化/rationalization>>)
+    content: |
+      **为什么要<<有理化/rationalization>>？**
+
+      数学惯例：最终结果的分母不应含有根式。把分母中的根式化掉叫做**<<有理化/rationalization>>**（分母有理化）。
+
+      例如，$\frac{2}{\sqrt{3}}$ 和 $\frac{2\sqrt{3}}{3}$ 的值相等，但后者更简洁、标准。
+
+      **类型一：分母为单个根式 $\sqrt{b}$**
+
+      方法：分子分母同乘以 $\sqrt{b}$
+
+      $$\frac{a}{\sqrt{b}} = \frac{a \cdot \sqrt{b}}{\sqrt{b} \cdot \sqrt{b}} = \frac{a\sqrt{b}}{b}$$
+
+      例：
+      - $\frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$
+      - $\frac{5}{\sqrt{5}} = \frac{5\sqrt{5}}{5} = \sqrt{5}$
+      - $\frac{6}{\sqrt{2}} = \frac{6\sqrt{2}}{2} = 3\sqrt{2}$
+
+      **类型二：分母为二项式 $\sqrt{a} + \sqrt{b}$ 或 $\sqrt{a} - \sqrt{b}$**
+
+      方法：利用**平方差公式**，乘以其**共轭式**（conjugate）
+
+      $$(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b \quad \text{（根式消去！）}$$
+
+      $$\frac{c}{\sqrt{a} + \sqrt{b}} = \frac{c(\sqrt{a} - \sqrt{b})}{(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b})} = \frac{c(\sqrt{a} - \sqrt{b})}{a - b}$$
+
+      例：
+      $$\frac{1}{\sqrt{5} + \sqrt{3}} = \frac{\sqrt{5} - \sqrt{3}}{(\sqrt{5})^{2} - (\sqrt{3})^{2}} = \frac{\sqrt{5} - \sqrt{3}}{5 - 3} = \frac{\sqrt{5} - \sqrt{3}}{2}$$
+
+      $$\frac{3}{\sqrt{7} - 2} = \frac{3(\sqrt{7} + 2)}{(\sqrt{7})^{2} - 2^{2}} = \frac{3(\sqrt{7} + 2)}{7 - 4} = \frac{3(\sqrt{7} + 2)}{3} = \sqrt{7} + 2$$
+
+      **为什么乘共轭式有效？** 利用平方差公式 $(A+B)(A-B) = A^{2} - B^{2}$，当 $A = \sqrt{a}$，$B = \sqrt{b}$ 时，$A^{2} - B^{2} = a - b$ 是有理数，根式自然消去。
+    contentEn: |
+      **Why rationalize?**
+
+      Mathematical convention: the final result should have no radicals in the denominator. Eliminating radicals from the denominator is called **<<有理化/rationalization>>**.
+
+      For example, $\frac{2}{\sqrt{3}}$ and $\frac{2\sqrt{3}}{3}$ are equal in value, but the latter is cleaner and standard.
+
+      **Type 1: Denominator is a single radical $\sqrt{b}$**
+
+      Method: multiply both numerator and denominator by $\sqrt{b}$
+
+      $$\frac{a}{\sqrt{b}} = \frac{a \cdot \sqrt{b}}{\sqrt{b} \cdot \sqrt{b}} = \frac{a\sqrt{b}}{b}$$
+
+      Examples:
+      - $\frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$
+      - $\frac{5}{\sqrt{5}} = \frac{5\sqrt{5}}{5} = \sqrt{5}$
+      - $\frac{6}{\sqrt{2}} = \frac{6\sqrt{2}}{2} = 3\sqrt{2}$
+
+      **Type 2: Denominator is a binomial $\sqrt{a} + \sqrt{b}$ or $\sqrt{a} - \sqrt{b}$**
+
+      Method: use the **difference of squares formula** by multiplying by the **conjugate**
+
+      $$(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b \quad \text{(radicals eliminated!)}$$
+
+      $$\frac{c}{\sqrt{a} + \sqrt{b}} = \frac{c(\sqrt{a} - \sqrt{b})}{(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b})} = \frac{c(\sqrt{a} - \sqrt{b})}{a - b}$$
+
+      Examples:
+      $$\frac{1}{\sqrt{5} + \sqrt{3}} = \frac{\sqrt{5} - \sqrt{3}}{(\sqrt{5})^{2} - (\sqrt{3})^{2}} = \frac{\sqrt{5} - \sqrt{3}}{5 - 3} = \frac{\sqrt{5} - \sqrt{3}}{2}$$
+
+      $$\frac{3}{\sqrt{7} - 2} = \frac{3(\sqrt{7} + 2)}{(\sqrt{7})^{2} - 2^{2}} = \frac{3(\sqrt{7} + 2)}{7 - 4} = \frac{3(\sqrt{7} + 2)}{3} = \sqrt{7} + 2$$
+
+      **Why does multiplying by the conjugate work?** Using the difference of squares formula $(A+B)(A-B) = A^{2} - B^{2}$: when $A = \sqrt{a}$ and $B = \sqrt{b}$, we get $A^{2} - B^{2} = a - b$, a rational number — the radicals vanish.
+    examples:
+      - '$\frac{4}{\sqrt{2}} = \frac{4\sqrt{2}}{2} = 2\sqrt{2}$（单根式有理化）'
+      - '$\frac{1}{\sqrt{6} - \sqrt{5}} = \frac{\sqrt{6} + \sqrt{5}}{6 - 5} = \sqrt{6} + \sqrt{5}$（共轭式有理化）'
+      - '$\frac{2}{\sqrt{3} + 1} = \frac{2(\sqrt{3} - 1)}{3 - 1} = \frac{2(\sqrt{3}-1)}{2} = \sqrt{3} - 1$'
+      - '$\frac{\sqrt{2}}{\sqrt{3}} = \frac{\sqrt{2} \cdot \sqrt{3}}{3} = \frac{\sqrt{6}}{3}$（分子分母同乘 $\sqrt{3}$）'
+    examplesEn:
+      - '$\frac{4}{\sqrt{2}} = \frac{4\sqrt{2}}{2} = 2\sqrt{2}$ (single-radical rationalization)'
+      - '$\frac{1}{\sqrt{6} - \sqrt{5}} = \frac{\sqrt{6} + \sqrt{5}}{6 - 5} = \sqrt{6} + \sqrt{5}$ (conjugate rationalization)'
+      - '$\frac{2}{\sqrt{3} + 1} = \frac{2(\sqrt{3} - 1)}{3 - 1} = \frac{2(\sqrt{3}-1)}{2} = \sqrt{3} - 1$'
+      - '$\frac{\sqrt{2}}{\sqrt{3}} = \frac{\sqrt{2} \cdot \sqrt{3}}{3} = \frac{\sqrt{6}}{3}$ (multiply numerator and denominator by $\sqrt{3}$)'
+    notes:
+      - '**共轭式的选取**：$\sqrt{a} + \sqrt{b}$ 的共轭式是 $\sqrt{a} - \sqrt{b}$，符号取相反'
+      - '**不要乘错**：分母是 $\sqrt{a} + \sqrt{b}$ 时，应乘 $(\sqrt{a} - \sqrt{b})$，不能乘 $(-\sqrt{a} - \sqrt{b})$'
+      - '**整数也可作为共轭**：$\sqrt{7} - 2$ 的共轭是 $\sqrt{7} + 2$（$2$ 当作 $\sqrt{4}$，利用 $(\sqrt{7})^{2} - 2^{2} = 3$）'
+    notesEn:
+      - '**Choosing the conjugate**: the conjugate of $\sqrt{a} + \sqrt{b}$ is $\sqrt{a} - \sqrt{b}$ (flip the sign between them)'
+      - '**Do not multiply by the wrong expression**: if the denominator is $\sqrt{a} + \sqrt{b}$, multiply by $(\sqrt{a} - \sqrt{b})$, not $(-\sqrt{a} - \sqrt{b})$'
+      - '**Integers work as conjugates too**: the conjugate of $\sqrt{7} - 2$ is $\sqrt{7} + 2$ (treat $2$ as $\sqrt{4}$; use $(\sqrt{7})^{2} - 2^{2} = 3$)'
+
+realLife:
+  - title: 建筑与对角线计算
+    titleEn: Architecture and diagonal calculations
+    content: |
+      铺设正方形地砖时，需要计算对角线长度。边长为 $2$ 米的正方形，对角线 $= \sqrt{2^{2} + 2^{2}} = \sqrt{8} = 2\sqrt{2} \approx 2.83$ 米。<<最简根式/simplest radical form>> $2\sqrt{2}$ 比小数 $2.83$ 更精确。
+    contentEn: |
+      When laying square tiles, we need the diagonal length. A square with side $2$ m has diagonal $= \sqrt{2^{2} + 2^{2}} = \sqrt{8} = 2\sqrt{2} \approx 2.83$ m. The <<最简根式/simplest radical form>> $2\sqrt{2}$ is more precise than the decimal $2.83$.
+  - title: 物理中的自由落体
+    titleEn: Free fall in physics
+    content: |
+      从 $h$ 米高度自由落下，落地时间 $t = \sqrt{\frac{2h}{g}}$ 秒（$g \approx 10$ m/s²）。高度 $45$ 米时，$t = \sqrt{\frac{90}{10}} = \sqrt{9} = 3$ 秒。<<二次根式/square root expression>>在物理公式中无处不在。
+    contentEn: |
+      An object falling freely from height $h$ metres reaches the ground in $t = \sqrt{\frac{2h}{g}}$ seconds ($g \approx 10$ m/s²). At $h = 45$ m: $t = \sqrt{\frac{90}{10}} = \sqrt{9} = 3$ s. <<二次根式/square root expression>>s appear throughout physics formulas.
+  - title: 计算机图形与距离公式
+    titleEn: Computer graphics and the distance formula
+    content: |
+      屏幕上两点 $(0, 0)$ 和 $(3, 4)$ 之间的距离 $= \sqrt{3^{2} + 4^{2}} = \sqrt{25} = 5$。游戏中判断两物体是否碰撞，就需要反复用到这个距离公式，其中的<<二次根式/square root expression>>需要快速化简。
+    contentEn: |
+      The distance between screen coordinates $(0, 0)$ and $(3, 4)$ is $\sqrt{3^{2} + 4^{2}} = \sqrt{25} = 5$. Detecting collisions in games requires computing this distance formula repeatedly, making quick simplification of <<二次根式/square root expression>>s essential.
+
+examples:
+  - type: 1
+    title: 求<<二次根式/square root expression>>有意义的条件
+    titleEn: Finding conditions for a <<二次根式/square root expression>> to be defined
+    question: |
+      求下列各式有意义时，$x$ 的取值范围：
+
+      （1）$\sqrt{2x - 4}$
+      （2）$\sqrt{5 - 3x}$
+      （3）$\sqrt{x^{2} - 9}$
+    questionEn: |
+      Find the range of values of $x$ for which each expression is defined:
+
+      (1) $\sqrt{2x - 4}$
+      (2) $\sqrt{5 - 3x}$
+      (3) $\sqrt{x^{2} - 9}$
+    steps:
+      - '<<二次根式/square root expression>>有意义的条件：<<被开方数/radicand>> $\geq 0$'
+      - '（1）令 $2x - 4 \geq 0$'
+      - '$2x \geq 4$，解得 $x \geq 2$'
+      - '（2）令 $5 - 3x \geq 0$'
+      - '$-3x \geq -5$，注意除以负数翻转不等号：$x \leq \frac{5}{3}$'
+      - '（3）令 $x^{2} - 9 \geq 0$，即 $x^{2} \geq 9$'
+      - '$|x| \geq 3$，即 $x \leq -3$ 或 $x \geq 3$'
+    stepsEn:
+      - 'Condition for a <<二次根式/square root expression>> to be defined: <<被开方数/radicand>> $\geq 0$'
+      - '(1) Set $2x - 4 \geq 0$'
+      - '$2x \geq 4$, giving $x \geq 2$'
+      - '(2) Set $5 - 3x \geq 0$'
+      - '$-3x \geq -5$; dividing by a negative flips the inequality: $x \leq \frac{5}{3}$'
+      - '(3) Set $x^{2} - 9 \geq 0$, i.e. $x^{2} \geq 9$'
+      - '$|x| \geq 3$, i.e. $x \leq -3$ or $x \geq 3$'
+    answer: '（1）$x \geq 2$；（2）$x \leq \dfrac{5}{3}$；（3）$x \leq -3$ 或 $x \geq 3$'
+    answerEn: '(1) $x \geq 2$; (2) $x \leq \dfrac{5}{3}$; (3) $x \leq -3$ or $x \geq 3$'
+
+  - type: 2
+    title: 化简含加减的根式表达式
+    titleEn: Simplify a radical expression with addition and subtraction
+    question: '化简 $\sqrt{72} + \sqrt{18} - \sqrt{8}$'
+    questionEn: 'Simplify $\sqrt{72} + \sqrt{18} - \sqrt{8}$'
+    steps:
+      - '先把每个根式化为<<最简根式/simplest radical form>>'
+      - '$\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$'
+      - '$\sqrt{18} = \sqrt{9 \times 2} = 3\sqrt{2}$'
+      - '$\sqrt{8} = \sqrt{4 \times 2} = 2\sqrt{2}$'
+      - '三者均为<<同类根式/like radicals>>（被开方数都是 $2$），合并'
+      - '$6\sqrt{2} + 3\sqrt{2} - 2\sqrt{2} = (6 + 3 - 2)\sqrt{2} = 7\sqrt{2}$'
+    stepsEn:
+      - 'First reduce each radical to <<最简根式/simplest radical form>>'
+      - '$\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$'
+      - '$\sqrt{18} = \sqrt{9 \times 2} = 3\sqrt{2}$'
+      - '$\sqrt{8} = \sqrt{4 \times 2} = 2\sqrt{2}$'
+      - 'All three are <<同类根式/like radicals>> (radicand is $2$); combine them'
+      - '$6\sqrt{2} + 3\sqrt{2} - 2\sqrt{2} = (6 + 3 - 2)\sqrt{2} = 7\sqrt{2}$'
+    answer: '$7\sqrt{2}$'
+    answerEn: '$7\sqrt{2}$'
+
+  - type: 3
+    title: 根式乘法与展开
+    titleEn: Radical multiplication and expansion
+    question: '计算 $\sqrt{3}(\sqrt{6} - \sqrt{2})$，结果化为<<最简根式/simplest radical form>>'
+    questionEn: 'Compute $\sqrt{3}(\sqrt{6} - \sqrt{2})$ and express in <<最简根式/simplest radical form>>'
+    steps:
+      - '用分配律展开：$\sqrt{3}(\sqrt{6} - \sqrt{2}) = \sqrt{3} \cdot \sqrt{6} - \sqrt{3} \cdot \sqrt{2}$'
+      - '分别用乘法法则：$\sqrt{3} \cdot \sqrt{6} = \sqrt{18}$，$\sqrt{3} \cdot \sqrt{2} = \sqrt{6}$'
+      - '化简 $\sqrt{18} = \sqrt{9 \times 2} = 3\sqrt{2}$'
+      - '$\sqrt{6}$ 已是最简根式（$6 = 2 \times 3$，无完全平方因数）'
+      - '结果：$3\sqrt{2} - \sqrt{6}$'
+      - '注意：$3\sqrt{2}$ 和 $\sqrt{6}$ 不是同类根式，不能合并，保留原式'
+    stepsEn:
+      - 'Expand using the distributive law: $\sqrt{3}(\sqrt{6} - \sqrt{2}) = \sqrt{3} \cdot \sqrt{6} - \sqrt{3} \cdot \sqrt{2}$'
+      - 'Apply the multiplication rule: $\sqrt{3} \cdot \sqrt{6} = \sqrt{18}$, $\sqrt{3} \cdot \sqrt{2} = \sqrt{6}$'
+      - 'Simplify: $\sqrt{18} = \sqrt{9 \times 2} = 3\sqrt{2}$'
+      - '$\sqrt{6}$ is already in simplest form ($6 = 2 \times 3$, no perfect square factors)'
+      - 'Result: $3\sqrt{2} - \sqrt{6}$'
+      - 'Note: $3\sqrt{2}$ and $\sqrt{6}$ are not like radicals and cannot be combined; leave as is'
+    answer: '$3\sqrt{2} - \sqrt{6}$'
+    answerEn: '$3\sqrt{2} - \sqrt{6}$'
+
+  - type: 4
+    title: 分母<<有理化/rationalization>>（二项式分母）
+    titleEn: Rationalization with a binomial denominator
+    question: '化简 $\dfrac{3}{\sqrt{7} - 2}$，对分母进行<<有理化/rationalization>>'
+    questionEn: 'Simplify $\dfrac{3}{\sqrt{7} - 2}$ by rationalizing the denominator (<<有理化/rationalization>>)'
+    steps:
+      - '分母 $\sqrt{7} - 2$ 是二项式，含根式；需乘以其共轭式 $\sqrt{7} + 2$'
+      - '分子分母同乘 $(\sqrt{7} + 2)$：'
+      - '$\dfrac{3}{\sqrt{7} - 2} = \dfrac{3(\sqrt{7} + 2)}{(\sqrt{7} - 2)(\sqrt{7} + 2)}$'
+      - '分母用平方差公式：$(\sqrt{7})^{2} - 2^{2} = 7 - 4 = 3$'
+      - '$= \dfrac{3(\sqrt{7} + 2)}{3} = \sqrt{7} + 2$'
+    stepsEn:
+      - 'Denominator $\sqrt{7} - 2$ is a binomial containing a radical; multiply by its conjugate $\sqrt{7} + 2$'
+      - 'Multiply numerator and denominator by $(\sqrt{7} + 2)$:'
+      - '$\dfrac{3}{\sqrt{7} - 2} = \dfrac{3(\sqrt{7} + 2)}{(\sqrt{7} - 2)(\sqrt{7} + 2)}$'
+      - 'Apply difference of squares to denominator: $(\sqrt{7})^{2} - 2^{2} = 7 - 4 = 3$'
+      - '$= \dfrac{3(\sqrt{7} + 2)}{3} = \sqrt{7} + 2$'
+    answer: '$\sqrt{7} + 2$'
+    answerEn: '$\sqrt{7} + 2$'
+
+  - type: 5
+    title: 综合化简（先化简再除法有理化）
+    titleEn: Comprehensive simplification (simplify then rationalize)
+    question: '化简 $\dfrac{\sqrt{27} - \sqrt{12}}{\sqrt{3}}$'
+    questionEn: 'Simplify $\dfrac{\sqrt{27} - \sqrt{12}}{\sqrt{3}}$'
+    steps:
+      - '方法一：先化简分子，再整体除以 $\sqrt{3}$'
+      - '$\sqrt{27} = 3\sqrt{3}$，$\sqrt{12} = 2\sqrt{3}$'
+      - '$\sqrt{27} - \sqrt{12} = 3\sqrt{3} - 2\sqrt{3} = \sqrt{3}$'
+      - '$\dfrac{\sqrt{3}}{\sqrt{3}} = 1$'
+      - '方法二：先分别除以 $\sqrt{3}$'
+      - '$\dfrac{\sqrt{27}}{\sqrt{3}} - \dfrac{\sqrt{12}}{\sqrt{3}} = \sqrt{\dfrac{27}{3}} - \sqrt{\dfrac{12}{3}} = \sqrt{9} - \sqrt{4} = 3 - 2 = 1$'
+      - '两种方法结果一致：$1$'
+    stepsEn:
+      - 'Method 1: simplify the numerator first, then divide by $\sqrt{3}$'
+      - '$\sqrt{27} = 3\sqrt{3}$, $\sqrt{12} = 2\sqrt{3}$'
+      - '$\sqrt{27} - \sqrt{12} = 3\sqrt{3} - 2\sqrt{3} = \sqrt{3}$'
+      - '$\dfrac{\sqrt{3}}{\sqrt{3}} = 1$'
+      - 'Method 2: divide each term by $\sqrt{3}$ separately'
+      - '$\dfrac{\sqrt{27}}{\sqrt{3}} - \dfrac{\sqrt{12}}{\sqrt{3}} = \sqrt{\dfrac{27}{3}} - \sqrt{\dfrac{12}{3}} = \sqrt{9} - \sqrt{4} = 3 - 2 = 1$'
+      - 'Both methods give the same result: $1$'
+    answer: '$1$'
+    answerEn: '$1$'
+
+exercises:
+  - id: ex1
+    type: fill-in
+    question: '$\sqrt{49} = $ ___；$\sqrt{0.01} = $ ___；$\sqrt{(-7)^{2}} = $ ___'
+    questionEn: '$\sqrt{49} = $ ___; $\sqrt{0.01} = $ ___; $\sqrt{(-7)^{2}} = $ ___'
+    answer: '$7$；$0.1$；$7$'
+    answerEn: '$7$; $0.1$; $7$'
+    explanation: '$\sqrt{49}=7$；$\sqrt{0.01}=0.1$；$\sqrt{(-7)^{2}}=\sqrt{49}=7=|-7|$（性质二：$\sqrt{a^{2}}=|a|$）'
+    explanationEn: '$\sqrt{49}=7$; $\sqrt{0.01}=0.1$; $\sqrt{(-7)^{2}}=\sqrt{49}=7=|-7|$ (Property 2: $\sqrt{a^{2}}=|a|$)'
+
+  - id: ex2
+    type: fill-in
+    question: '当 $x$ = ___ 时，$\sqrt{x - 3}$ 有意义'
+    questionEn: '$\sqrt{x - 3}$ is defined when $x$ = ___'
+    answer: '$x \geq 3$'
+    answerEn: '$x \geq 3$'
+    explanation: '令 $x - 3 \geq 0$，解得 $x \geq 3$'
+    explanationEn: 'Set $x - 3 \geq 0$ and solve: $x \geq 3$'
+
+  - id: ex3
+    type: fill-in
+    question: '当 $x$ = ___ 时，$\sqrt{7 - 2x}$ 有意义'
+    questionEn: '$\sqrt{7 - 2x}$ is defined when $x$ = ___'
+    answer: '$x \leq \dfrac{7}{2}$'
+    answerEn: '$x \leq \dfrac{7}{2}$'
+    explanation: '令 $7 - 2x \geq 0$，解得 $x \leq \frac{7}{2}$'
+    explanationEn: 'Set $7 - 2x \geq 0$ and solve: $x \leq \frac{7}{2}$'
+
+  - id: ex4
+    type: true-false
+    question: '$\sqrt{(-6)^{2}} = -6$'
+    questionEn: '$\sqrt{(-6)^{2}} = -6$'
+    answer: '错误'
+    answerEn: 'False'
+    explanation: '$\sqrt{(-6)^{2}} = \sqrt{36} = 6 = |-6| = 6 \neq -6$。根号结果恒非负，$\sqrt{a^{2}} = |a|$，不是 $a$。'
+    explanationEn: '$\sqrt{(-6)^{2}} = \sqrt{36} = 6 = |-6| = 6 \neq -6$. A square root is always non-negative; $\sqrt{a^{2}} = |a|$, not $a$.'
+
+  - id: ex5
+    type: true-false
+    question: '$\sqrt{2} + \sqrt{3} = \sqrt{5}$'
+    questionEn: '$\sqrt{2} + \sqrt{3} = \sqrt{5}$'
+    answer: '错误'
+    answerEn: 'False'
+    explanation: '$\sqrt{2} \approx 1.414$，$\sqrt{3} \approx 1.732$，两者之和约 $3.146$，而 $\sqrt{5} \approx 2.236$。根号不能"吸收加法"：$\sqrt{a+b} \neq \sqrt{a} + \sqrt{b}$。'
+    explanationEn: '$\sqrt{2} \approx 1.414$, $\sqrt{3} \approx 1.732$; their sum is about $3.146$, while $\sqrt{5} \approx 2.236$. Radicals do not "absorb addition": $\sqrt{a+b} \neq \sqrt{a} + \sqrt{b}$.'
+
+  - id: ex6
+    type: multiple-choice
+    question: '化简 $\sqrt{50}$ 的结果是（ ）'
+    questionEn: 'The simplified form of $\sqrt{50}$ is ( )'
+    options:
+      - 'A. $25\sqrt{2}$'
+      - 'B. $5\sqrt{2}$'
+      - 'C. $5\sqrt{10}$'
+      - 'D. $2\sqrt{25}$'
+    optionsEn:
+      - 'A. $25\sqrt{2}$'
+      - 'B. $5\sqrt{2}$'
+      - 'C. $5\sqrt{10}$'
+      - 'D. $2\sqrt{25}$'
+    answer: 'B'
+    answerEn: 'B'
+    explanation: '$\sqrt{50} = \sqrt{25 \times 2} = \sqrt{25} \cdot \sqrt{2} = 5\sqrt{2}$。A 错（系数应为 $5$，不是 $25$）；C 错（$\sqrt{10}$ 中的被开方数不对）；D 错（$2\sqrt{25} = 2 \times 5 = 10 \neq \sqrt{50}$）。'
+    explanationEn: '$\sqrt{50} = \sqrt{25 \times 2} = 5\sqrt{2}$. A is wrong (coefficient should be $5$, not $25$); C is wrong (wrong radicand); D equals $10 \neq \sqrt{50}$.'
+
+  - id: ex7
+    type: fill-in
+    question: '化简：$\sqrt{45} = $ ___；$\sqrt{98} = $ ___；$\sqrt{108} = $ ___'
+    questionEn: 'Simplify: $\sqrt{45} = $ ___; $\sqrt{98} = $ ___; $\sqrt{108} = $ ___'
+    answer: '$3\sqrt{5}$；$7\sqrt{2}$；$6\sqrt{3}$'
+    answerEn: '$3\sqrt{5}$; $7\sqrt{2}$; $6\sqrt{3}$'
+    explanation: '$\sqrt{45}=\sqrt{9\times5}=3\sqrt{5}$；$\sqrt{98}=\sqrt{49\times2}=7\sqrt{2}$；$\sqrt{108}=\sqrt{36\times3}=6\sqrt{3}$'
+    explanationEn: '$\sqrt{45}=\sqrt{9\times5}=3\sqrt{5}$; $\sqrt{98}=\sqrt{49\times2}=7\sqrt{2}$; $\sqrt{108}=\sqrt{36\times3}=6\sqrt{3}$'
+
+  - id: ex8
+    type: computation
+    question: '计算 $\sqrt{12} + \sqrt{27} - \sqrt{75}$'
+    questionEn: 'Compute $\sqrt{12} + \sqrt{27} - \sqrt{75}$'
+    answer: '$0$'
+    answerEn: '$0$'
+    explanation: '$\sqrt{12}=2\sqrt{3}$，$\sqrt{27}=3\sqrt{3}$，$\sqrt{75}=5\sqrt{3}$；$2\sqrt{3}+3\sqrt{3}-5\sqrt{3}=(2+3-5)\sqrt{3}=0$'
+    explanationEn: '$\sqrt{12}=2\sqrt{3}$, $\sqrt{27}=3\sqrt{3}$, $\sqrt{75}=5\sqrt{3}$; $2\sqrt{3}+3\sqrt{3}-5\sqrt{3}=(2+3-5)\sqrt{3}=0$'
+
+  - id: ex9
+    type: computation
+    question: '计算 $2\sqrt{3} \cdot 3\sqrt{12}$'
+    questionEn: 'Compute $2\sqrt{3} \cdot 3\sqrt{12}$'
+    answer: '$36$'
+    answerEn: '$36$'
+    explanation: '$2\sqrt{3} \cdot 3\sqrt{12} = 6\sqrt{36} = 6 \times 6 = 36$'
+    explanationEn: '$2\sqrt{3} \cdot 3\sqrt{12} = 6\sqrt{36} = 6 \times 6 = 36$'
+
+  - id: ex10
+    type: computation
+    question: '计算 $(\sqrt{5} + 2)(\sqrt{5} - 2)$'
+    questionEn: 'Compute $(\sqrt{5} + 2)(\sqrt{5} - 2)$'
+    answer: '$1$'
+    answerEn: '$1$'
+    explanation: '平方差公式：$(\sqrt{5})^{2} - 2^{2} = 5 - 4 = 1$'
+    explanationEn: 'Difference of squares: $(\sqrt{5})^{2} - 2^{2} = 5 - 4 = 1$'
+
+  - id: ex11
+    type: computation
+    question: '对 $\dfrac{6}{\sqrt{3}}$ 进行分母有理化'
+    questionEn: 'Rationalize the denominator of $\dfrac{6}{\sqrt{3}}$'
+    answer: '$2\sqrt{3}$'
+    answerEn: '$2\sqrt{3}$'
+    explanation: '$\dfrac{6}{\sqrt{3}} = \dfrac{6\sqrt{3}}{\sqrt{3} \cdot \sqrt{3}} = \dfrac{6\sqrt{3}}{3} = 2\sqrt{3}$'
+    explanationEn: '$\dfrac{6}{\sqrt{3}} = \dfrac{6\sqrt{3}}{\sqrt{3} \cdot \sqrt{3}} = \dfrac{6\sqrt{3}}{3} = 2\sqrt{3}$'
+
+  - id: ex12
+    type: computation
+    question: '对 $\dfrac{4}{\sqrt{3} + 1}$ 进行分母有理化并化简'
+    questionEn: 'Rationalize the denominator of $\dfrac{4}{\sqrt{3} + 1}$ and simplify'
+    answer: '$2(\sqrt{3} - 1) = 2\sqrt{3} - 2$'
+    answerEn: '$2(\sqrt{3} - 1) = 2\sqrt{3} - 2$'
+    explanation: '$\dfrac{4}{\sqrt{3}+1} = \dfrac{4(\sqrt{3}-1)}{(\sqrt{3}+1)(\sqrt{3}-1)} = \dfrac{4(\sqrt{3}-1)}{3-1} = \dfrac{4(\sqrt{3}-1)}{2} = 2(\sqrt{3}-1) = 2\sqrt{3}-2$'
+    explanationEn: '$\dfrac{4}{\sqrt{3}+1} = \dfrac{4(\sqrt{3}-1)}{(\sqrt{3}+1)(\sqrt{3}-1)} = \dfrac{4(\sqrt{3}-1)}{3-1} = \dfrac{4(\sqrt{3}-1)}{2} = 2(\sqrt{3}-1) = 2\sqrt{3}-2$'
+
+  - id: ex13
+    type: computation
+    question: '化简 $(\sqrt{6} + \sqrt{2})(\sqrt{6} - \sqrt{2}) - \sqrt{8}$'
+    questionEn: 'Simplify $(\sqrt{6} + \sqrt{2})(\sqrt{6} - \sqrt{2}) - \sqrt{8}$'
+    answer: '$4 - 2\sqrt{2}$'
+    answerEn: '$4 - 2\sqrt{2}$'
+    explanation: '第一步：用平方差公式 $(\sqrt{6}+\sqrt{2})(\sqrt{6}-\sqrt{2}) = (\sqrt{6})^{2} - (\sqrt{2})^{2} = 6 - 2 = 4$；第二步：$\sqrt{8} = 2\sqrt{2}$；结果：$4 - 2\sqrt{2}$'
+    explanationEn: 'Step 1: difference of squares — $(\sqrt{6}+\sqrt{2})(\sqrt{6}-\sqrt{2}) = (\sqrt{6})^{2} - (\sqrt{2})^{2} = 6 - 2 = 4$; Step 2: $\sqrt{8} = 2\sqrt{2}$; Result: $4 - 2\sqrt{2}$'
+
+  - id: ex14
+    type: computation
+    question: '已知 $x < 0$，化简 $\sqrt{x^{2}} + \sqrt{(1-x)^{2}}$'
+    questionEn: 'Given $x < 0$, simplify $\sqrt{x^{2}} + \sqrt{(1-x)^{2}}$'
+    answer: '$1 - 2x$'
+    answerEn: '$1 - 2x$'
+    explanation: |
+      $\sqrt{x^{2}} = |x|$；因为 $x < 0$，所以 $|x| = -x$
+      $\sqrt{(1-x)^{2}} = |1-x|$；因为 $x < 0$，所以 $1-x > 1 > 0$，$|1-x| = 1-x$
+      结果：$-x + (1-x) = -x + 1 - x = 1 - 2x$
+    explanationEn: |
+      $\sqrt{x^{2}} = |x|$; since $x < 0$, $|x| = -x$
+      $\sqrt{(1-x)^{2}} = |1-x|$; since $x < 0$, $1-x > 1 > 0$, so $|1-x| = 1-x$
+      Result: $-x + (1-x) = 1 - 2x$
+
+examPrep:
+  intro: |
+    以下题目综合考查本章核心概念，包括根式的存在条件、性质应用（特别是 $\sqrt{a^{2}}=|a|$ 的易错点）、化简与运算。请独立思考后再查看答案。
+  introEn: |
+    The following problems test the key concepts of this chapter comprehensively, including conditions for radical expressions to be defined, property applications (especially the error-prone $\sqrt{a^{2}}=|a|$), simplification, and computation. Work through each problem independently before checking the answer.
+  problems:
+    - id: ep1
+      type: multiple-choice
+      question: |
+        下列等式中，正确的是（ ）
+
+        A. $\sqrt{(-3)^{2}} = -3$
+
+        B. $\sqrt{3^{2}} = \pm 3$
+
+        C. $(\sqrt{3})^{2} = 3$
+
+        D. $\sqrt{-3^{2}} = 3$
+      questionEn: |
+        Which of the following equalities is correct? ( )
+
+        A. $\sqrt{(-3)^{2}} = -3$
+
+        B. $\sqrt{3^{2}} = \pm 3$
+
+        C. $(\sqrt{3})^{2} = 3$
+
+        D. $\sqrt{-3^{2}} = 3$
+      answer: 'C'
+      answerEn: 'C'
+      explanation: |
+        A 错：$\sqrt{(-3)^{2}} = \sqrt{9} = 3$（不是 $-3$，根号结果恒非负）
+        B 错：$\sqrt{3^{2}} = \sqrt{9} = 3$（不是 $\pm 3$；$\pm$ 出现在方程求解中，不出现在根号运算结果中）
+        C 正确：$(\sqrt{3})^{2} = 3$（性质一：先开方再平方回到原数，$3 \geq 0$ 满足条件）
+        D 错：$-3^{2} = -9 < 0$，$\sqrt{-9}$ 在实数范围内无意义
+      explanationEn: |
+        A: wrong. $\sqrt{(-3)^{2}} = \sqrt{9} = 3$ (not $-3$; a square root is always non-negative)
+        B: wrong. $\sqrt{3^{2}} = \sqrt{9} = 3$ (not $\pm 3$; the $\pm$ sign appears in equation solutions, not in square root results)
+        C: correct. $(\sqrt{3})^{2} = 3$ (Property 1: squaring the square root returns the original value; $3 \geq 0$)
+        D: wrong. $-3^{2} = -9 < 0$; $\sqrt{-9}$ is undefined in the real numbers
+
+    - id: ep2
+      type: fill-in
+      question: |
+        已知 $a < -1$，化简 $\sqrt{(a+1)^{2}} + \sqrt{(a-1)^{2}} - \sqrt{a^{2}}$ 的结果为 ___
+      questionEn: |
+        Given $a < -1$, simplify $\sqrt{(a+1)^{2}} + \sqrt{(a-1)^{2}} - \sqrt{a^{2}}$ = ___
+      answer: '$-1 - a$（即 $-(a+1)$）'
+      answerEn: '$-1 - a$ (i.e. $-(a+1)$)'
+      explanation: |
+        因为 $a < -1$：
+        - $a + 1 < 0$，所以 $\sqrt{(a+1)^{2}} = |a+1| = -(a+1) = -a-1$
+        - $a - 1 < -2 < 0$，所以 $\sqrt{(a-1)^{2}} = |a-1| = -(a-1) = -a+1$
+        - $a < 0$，所以 $\sqrt{a^{2}} = |a| = -a$
+
+        原式 $= (-a-1) + (-a+1) - (-a) = -a - 1 - a + 1 + a = -a - 1$
+      explanationEn: |
+        Since $a < -1$:
+        - $a + 1 < 0$, so $\sqrt{(a+1)^{2}} = |a+1| = -(a+1) = -a-1$
+        - $a - 1 < -2 < 0$, so $\sqrt{(a-1)^{2}} = |a-1| = -(a-1) = -a+1$
+        - $a < 0$, so $\sqrt{a^{2}} = |a| = -a$
+
+        Expression $= (-a-1) + (-a+1) - (-a) = -a - 1 - a + 1 + a = -a - 1$
+
+    - id: ep3
+      type: computation
+      question: '计算 $(\sqrt{3} + \sqrt{2})^{2} - (\sqrt{3} - \sqrt{2})^{2}$'
+      questionEn: 'Compute $(\sqrt{3} + \sqrt{2})^{2} - (\sqrt{3} - \sqrt{2})^{2}$'
+      answer: '$4\sqrt{6}$'
+      answerEn: '$4\sqrt{6}$'
+      explanation: |
+        方法一（逐项展开）：
+        $(\sqrt{3}+\sqrt{2})^{2} = 3 + 2\sqrt{6} + 2 = 5 + 2\sqrt{6}$
+        $(\sqrt{3}-\sqrt{2})^{2} = 3 - 2\sqrt{6} + 2 = 5 - 2\sqrt{6}$
+        两式相减：$(5+2\sqrt{6}) - (5-2\sqrt{6}) = 4\sqrt{6}$
+
+        方法二（因式分解，更快）：
+        利用平方差：$A^{2} - B^{2} = (A+B)(A-B)$，其中 $A = \sqrt{3}+\sqrt{2}$，$B = \sqrt{3}-\sqrt{2}$
+        $A + B = 2\sqrt{3}$，$A - B = 2\sqrt{2}$
+        $(A+B)(A-B) = 2\sqrt{3} \cdot 2\sqrt{2} = 4\sqrt{6}$
+      explanationEn: |
+        Method 1 (expand each term):
+        $(\sqrt{3}+\sqrt{2})^{2} = 3 + 2\sqrt{6} + 2 = 5 + 2\sqrt{6}$
+        $(\sqrt{3}-\sqrt{2})^{2} = 3 - 2\sqrt{6} + 2 = 5 - 2\sqrt{6}$
+        Subtract: $(5+2\sqrt{6}) - (5-2\sqrt{6}) = 4\sqrt{6}$
+
+        Method 2 (factor, faster):
+        Use $A^{2} - B^{2} = (A+B)(A-B)$ with $A = \sqrt{3}+\sqrt{2}$, $B = \sqrt{3}-\sqrt{2}$
+        $A + B = 2\sqrt{3}$, $A - B = 2\sqrt{2}$
+        $(A+B)(A-B) = 2\sqrt{3} \cdot 2\sqrt{2} = 4\sqrt{6}$
+
+    - id: ep4
+      type: computation
+      question: '化简 $\dfrac{1}{\sqrt{2}+1} + \dfrac{1}{\sqrt{3}+\sqrt{2}} + \dfrac{1}{\sqrt{4}+\sqrt{3}}$'
+      questionEn: 'Simplify $\dfrac{1}{\sqrt{2}+1} + \dfrac{1}{\sqrt{3}+\sqrt{2}} + \dfrac{1}{\sqrt{4}+\sqrt{3}}$'
+      answer: '$1$'
+      answerEn: '$1$'
+      explanation: |
+        对每个分式进行分母有理化（乘以共轭式）：
+
+        $\dfrac{1}{\sqrt{2}+1} = \dfrac{\sqrt{2}-1}{(\sqrt{2}+1)(\sqrt{2}-1)} = \dfrac{\sqrt{2}-1}{2-1} = \sqrt{2}-1$
+
+        $\dfrac{1}{\sqrt{3}+\sqrt{2}} = \dfrac{\sqrt{3}-\sqrt{2}}{3-2} = \sqrt{3}-\sqrt{2}$
+
+        $\dfrac{1}{\sqrt{4}+\sqrt{3}} = \dfrac{\sqrt{4}-\sqrt{3}}{4-3} = \sqrt{4}-\sqrt{3} = 2-\sqrt{3}$
+
+        三项相加（发生"裂项消去"）：
+        $(\sqrt{2}-1) + (\sqrt{3}-\sqrt{2}) + (2-\sqrt{3})$
+        $= -1 + 2 + (\sqrt{2}-\sqrt{2}) + (\sqrt{3}-\sqrt{3})$
+        $= 1$
+      explanationEn: |
+        Rationalize each fraction (multiply by conjugate):
+
+        $\dfrac{1}{\sqrt{2}+1} = \dfrac{\sqrt{2}-1}{(\sqrt{2}+1)(\sqrt{2}-1)} = \dfrac{\sqrt{2}-1}{2-1} = \sqrt{2}-1$
+
+        $\dfrac{1}{\sqrt{3}+\sqrt{2}} = \dfrac{\sqrt{3}-\sqrt{2}}{3-2} = \sqrt{3}-\sqrt{2}$
+
+        $\dfrac{1}{\sqrt{4}+\sqrt{3}} = \dfrac{\sqrt{4}-\sqrt{3}}{4-3} = 2-\sqrt{3}$
+
+        Add all three (telescoping cancellation):
+        $(\sqrt{2}-1) + (\sqrt{3}-\sqrt{2}) + (2-\sqrt{3})$
+        $= -1 + 2 + (\sqrt{2}-\sqrt{2}) + (\sqrt{3}-\sqrt{3})$
+        $= 1$
+
+    - id: ep5
+      type: computation
+      question: |
+        已知 $x = \sqrt{3} + 1$，$y = \sqrt{3} - 1$，求 $x^{2} + 2xy + y^{2}$ 与 $x^{2} - y^{2}$ 的值。
+      questionEn: |
+        Given $x = \sqrt{3} + 1$ and $y = \sqrt{3} - 1$, find the values of $x^{2} + 2xy + y^{2}$ and $x^{2} - y^{2}$.
+      answer: '$x^{2}+2xy+y^{2}=12$；$x^{2}-y^{2}=4\sqrt{3}$'
+      answerEn: '$x^{2}+2xy+y^{2}=12$; $x^{2}-y^{2}=4\sqrt{3}$'
+      explanation: |
+        先求 $x+y$ 和 $x-y$：
+        $x + y = (\sqrt{3}+1) + (\sqrt{3}-1) = 2\sqrt{3}$
+        $x - y = (\sqrt{3}+1) - (\sqrt{3}-1) = 2$
+
+        $x^{2} + 2xy + y^{2} = (x+y)^{2} = (2\sqrt{3})^{2} = 4 \times 3 = 12$
+
+        $x^{2} - y^{2} = (x+y)(x-y) = 2\sqrt{3} \times 2 = 4\sqrt{3}$
+
+        （注意：直接展开再计算也可，但先化 $x+y$、$x-y$ 的方法更高效）
+      explanationEn: |
+        First find $x+y$ and $x-y$:
+        $x + y = (\sqrt{3}+1) + (\sqrt{3}-1) = 2\sqrt{3}$
+        $x - y = (\sqrt{3}+1) - (\sqrt{3}-1) = 2$
+
+        $x^{2} + 2xy + y^{2} = (x+y)^{2} = (2\sqrt{3})^{2} = 4 \times 3 = 12$
+
+        $x^{2} - y^{2} = (x+y)(x-y) = 2\sqrt{3} \times 2 = 4\sqrt{3}$
+
+        (Direct expansion also works, but computing $x+y$ and $x-y$ first is more efficient.)
+
+summary: |
+  本章学习了**<<二次根式/square root expression>>**的完整体系，以下是核心要点：
+
+  **1. 存在条件**：$\sqrt{a}$ 在实数范围内有意义 $\Leftrightarrow$ $a \geq 0$
+
+  **2. 两条基本性质**（必须牢记，尤其是第二条）：
+  - $(\sqrt{a})^{2} = a$（$a \geq 0$）
+  - $\sqrt{a^{2}} = |a|$（注意：不是 $a$！）
+
+  **3. <<最简根式/simplest radical form>>**：被开方数无分母、无完全平方因数
+
+  **4. 加减法**：先化简为最简根式，识别<<同类根式/like radicals>>，再合并系数
+
+  **5. 乘法**：$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$（$a,b \geq 0$），可结合代数公式
+
+  **6. <<有理化/rationalization>>**：去除分母中的根式
+  - 单根式：乘以 $\frac{\sqrt{b}}{\sqrt{b}}$
+  - 二项式：乘以共轭式，利用平方差公式
+
+  **最易错点**：$\sqrt{(-3)^{2}} = 3$（不是 $-3$）；$\sqrt{2}+\sqrt{3} \neq \sqrt{5}$
+summaryEn: |
+  This chapter covered the complete system of **<<二次根式/square root expression>>s**. Key takeaways:
+
+  **1. Existence condition**: $\sqrt{a}$ is defined in the reals $\Leftrightarrow$ $a \geq 0$
+
+  **2. Two fundamental properties** (memorize both, especially the second):
+  - $(\sqrt{a})^{2} = a$ (for $a \geq 0$)
+  - $\sqrt{a^{2}} = |a|$ (note: NOT $a$!)
+
+  **3. <<最简根式/simplest radical form>>**: no fractions under the radical, no perfect square factors under the radical
+
+  **4. Addition/subtraction**: simplify to simplest form first, identify <<同类根式/like radicals>>, then combine coefficients
+
+  **5. Multiplication**: $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$ ($a,b \geq 0$); combine with algebraic formulas
+
+  **6. <<有理化/rationalization>>**: eliminate radicals from the denominator
+  - Single radical: multiply by $\frac{\sqrt{b}}{\sqrt{b}}$
+  - Binomial: multiply by the conjugate using the difference of squares formula
+
+  **Most common mistakes**: $\sqrt{(-3)^{2}} = 3$ (not $-3$); $\sqrt{2}+\sqrt{3} \neq \sqrt{5}$

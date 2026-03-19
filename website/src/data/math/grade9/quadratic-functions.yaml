@@ -1,0 +1,1152 @@
+title: 二次函数
+titleEn: Quadratic Functions
+chapter: 3
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 第1课时 约60分钟 · 第2课时 约55分钟 · 第3课时 约55分钟
+estimatedTimeEn: Session 1 ~60 min · Session 2 ~55 min · Session 3 ~55 min
+targetAudience: 小学3年级自学生（已完成八年级数学和一次函数），自学材料，由简入深
+
+objectives:
+  - 理解<<二次函数/quadratic function>>的定义 $y = ax^{2} + bx + c$（$a \neq 0$），能判断并写出函数表达式
+  - 掌握基本形式 $y = ax^{2}$ 的<<抛物线/parabola>>图象：开口方向、顶点在原点、对称轴为 $y$ 轴
+  - 掌握顶点式 $y = a(x-h)^{2} + k$ 的图象特征：顶点 $(h, k)$，对称轴 $x = h$，与 $y = ax^{2}$ 的平移关系
+  - 能用<<配方法/completing the square>>将一般式化为顶点式，求顶点坐标和对称轴方程
+  - 理解<<判别式/discriminant>> $\Delta = b^{2} - 4ac$ 与抛物线和 $x$ 轴交点个数的关系
+  - 能求二次函数在给定范围内的<<最大值/maximum value>>和<<最小值/minimum value>>
+  - 能建立二次函数模型解决实际问题（路径问题、利润最大化等）
+
+objectivesEn:
+  - Understand the definition of a <<二次函数/quadratic function>> $y = ax^{2} + bx + c$ ($a \neq 0$) and write function expressions
+  - 'Master the <<抛物线/parabola>> graph of the basic form $y = ax^{2}$: direction of opening, vertex at origin, axis of symmetry $y$-axis'
+  - 'Master the vertex form $y = a(x-h)^{2} + k$: vertex $(h, k)$, axis of symmetry $x = h$, translation relationship with $y = ax^{2}$'
+  - Use <<配方法/completing the square>> to convert general form to vertex form; find vertex and axis of symmetry
+  - Understand the relationship between the <<判别式/discriminant>> $\Delta = b^{2} - 4ac$ and the number of intersections with the $x$-axis
+  - Find the <<最大值/maximum value>> and <<最小值/minimum value>> of a quadratic function over a given domain
+  - Build quadratic function models for real-world problems (projectile paths, profit maximisation, etc.)
+
+prerequisites:
+  title: 从一次函数出发——认识二次函数
+  titleEn: Building on Linear Functions — Meeting Quadratic Functions
+  intro: |
+    八年级我们深入学习了<<一次函数/linear function>> $y = kx + b$，它的图象是一条直线。
+    现在我们要认识一个新的函数家族——<<二次函数/quadratic function>>。
+    它的图象是一条叫做**抛物线**的曲线，像抛出去的球的轨迹、卫星天线的截面，生活中随处可见！
+  introEn: |
+    In Grade 8 we studied the <<一次函数/linear function>> $y = kx + b$ in depth — its graph is a straight line.
+    Now we meet a new family — the <<二次函数/quadratic function>>.
+    Its graph is a curve called a **parabola**, like the path of a thrown ball or the cross-section of a satellite dish — it appears everywhere in real life!
+  items:
+    - name: 坐标系与函数图象（八年级下）
+      nameEn: Coordinate system and function graphs (Grade 8, Semester 2)
+      detail: |
+        在坐标系中描点、连线画函数图象。理解函数图象上的点 $(x, y)$ 满足函数关系式。
+        画图时取关键点（顶点、轴截距点）可以快速确定图象形状。
+      detailEn: |
+        Plot points and draw function graphs in the coordinate system. Understand that every point $(x, y)$ on the graph satisfies the function equation.
+        Taking key points (vertex, intercepts) quickly determines the shape of the graph.
+    - name: 整式乘法与因式分解（八年级）
+      nameEn: Polynomial multiplication and factorisation (Grade 8)
+      detail: |
+        完全平方公式：$(a + b)^{2} = a^{2} + 2ab + b^{2}$，$(a - b)^{2} = a^{2} - 2ab + b^{2}$。
+        配方法的核心就是利用完全平方公式"凑"出一个完全平方式。
+      detailEn: |
+        Perfect square formulas: $(a + b)^{2} = a^{2} + 2ab + b^{2}$; $(a - b)^{2} = a^{2} - 2ab + b^{2}$.
+        Completing the square is essentially using these formulas to create a perfect square.
+    - name: 一元二次方程（九年级上）
+      nameEn: Quadratic equations in one variable (Grade 9, Semester 1)
+      detail: |
+        解一元二次方程的方法：因式分解法、配方法、求根公式 $x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$。
+        判别式 $\Delta = b^{2} - 4ac$ 决定方程根的个数，这与二次函数和 $x$ 轴的交点个数直接相关。
+      detailEn: |
+        Methods for solving quadratic equations: factorisation, completing the square, the quadratic formula $x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$.
+        The discriminant $\Delta = b^{2} - 4ac$ determines the number of roots — directly connected to how many times the parabola crosses the $x$-axis.
+  conclusion: |
+    把坐标系、函数图象、因式分解和方程这几个工具合在一起，就能完整理解二次函数的"形"（抛物线图象）和"数"（代数表达式）——这正是本章的核心目标。
+  conclusionEn: |
+    Combining coordinate geometry, function graphs, factorisation, and equations gives us a complete picture of the quadratic function's "shape" (parabola) and "algebra" (expression) — the core goal of this chapter.
+
+concepts:
+  - id: quadratic-definition
+    title: <<二次函数/quadratic function>>的定义
+    titleEn: Definition of a <<二次函数/quadratic function>>
+    hasVisualization: false
+    content: |
+      **定义：**
+      如果 $x$ 和 $y$ 之间的关系可以表示为
+
+      $$y = ax^{2} + bx + c \quad (a \neq 0)$$
+
+      那么就说 $y$ 是 $x$ 的<<二次函数/quadratic function>>，其中 $a$、$b$、$c$ 是常数。
+
+      **为什么必须 $a \neq 0$？**
+      如果 $a = 0$，那么 $ax^{2}$ 这项消失，剩下 $y = bx + c$，就变成一次函数（或常数函数）了。
+      $a \neq 0$ 正是保证函数中含有 **$x$ 的二次项**，这是"二次"函数名字的来源。
+
+      **三种常用形式（等价变换）：**
+      | 名称 | 形式 | 直接可读的信息 |
+      |------|------|----------------|
+      | 一般式 | $y = ax^{2} + bx + c$ | 与 $y$ 轴的交点 $(0, c)$ |
+      | 顶点式 | $y = a(x-h)^{2} + k$ | 顶点 $(h, k)$，对称轴 $x = h$ |
+      | 两根式 | $y = a(x - x_{1})(x - x_{2})$ | 与 $x$ 轴的交点 $x_{1}$，$x_{2}$ |
+
+      **判断是否为二次函数的关键：**
+      1. $x$ 的最高次项必须是**二次**（含 $x^{2}$ 项且系数不为 $0$）
+      2. 没有次数**高于二次**的项（如 $x^{3}$、$x^{4}$ 等）
+      3. $b$ 和 $c$ 可以为 $0$，只要 $a \neq 0$ 即可
+
+      **正反例对比：**
+      - $y = 3x^{2} - 2x + 1$：$a=3, b=-2, c=1$，是二次函数
+      - $y = x^{2}$：$a=1, b=0, c=0$，是二次函数（$b, c$ 可以为 $0$）
+      - $y = -5x^{2}$：$a=-5$，是二次函数（开口向下）
+      - $y = 2x + 3$：最高次是一次，不是二次函数
+      - $y = x^{3} + x^{2}$：含 $x^{3}$ 项，不是二次函数
+      - $y = \frac{1}{x^{2}}$：$x$ 在分母，不是二次函数
+    contentEn: |
+      **Definition:**
+      If the relationship between $x$ and $y$ can be written as
+
+      $$y = ax^{2} + bx + c \quad (a \neq 0)$$
+
+      then $y$ is called a <<二次函数/quadratic function>> of $x$, where $a$, $b$, $c$ are constants.
+
+      **Why must $a \neq 0$?**
+      If $a = 0$, the $ax^{2}$ term vanishes and we are left with $y = bx + c$, which is a linear (or constant) function.
+      The condition $a \neq 0$ ensures that the **degree-2 term in $x$** is present — that is the origin of the name "quadratic" (from Latin *quadratus*, square).
+
+      **Three equivalent forms:**
+      | Name | Form | Directly readable information |
+      |------|------|-------------------------------|
+      | General form | $y = ax^{2} + bx + c$ | $y$-intercept $(0, c)$ |
+      | Vertex form | $y = a(x-h)^{2} + k$ | Vertex $(h, k)$, axis $x = h$ |
+      | Factored form | $y = a(x - x_{1})(x - x_{2})$ | $x$-intercepts $x_{1}$, $x_{2}$ |
+
+      **Key checks for "is it a quadratic function?":**
+      1. The highest power of $x$ must be exactly **two** (contains $x^{2}$ with non-zero coefficient)
+      2. No terms with degree **higher than two** (no $x^{3}$, $x^{4}$, etc.)
+      3. $b$ and $c$ may be $0$; only $a \neq 0$ is required
+
+      **Positive and negative examples:**
+      - $y = 3x^{2} - 2x + 1$: $a=3, b=-2, c=1$; quadratic
+      - $y = x^{2}$: $a=1, b=0, c=0$; quadratic ($b$ and $c$ may be zero)
+      - $y = -5x^{2}$: $a=-5$; quadratic (opens downward)
+      - $y = 2x + 3$: highest degree is 1; not quadratic
+      - $y = x^{3} + x^{2}$: contains $x^{3}$; not quadratic
+      - $y = \frac{1}{x^{2}}$: $x$ is in the denominator; not quadratic
+
+  - id: basic-parabola
+    title: 基本二次函数 $y = ax^{2}$ 的图象
+    titleEn: Graph of the basic quadratic function $y = ax^{2}$
+    hasVisualization: true
+    content: |
+      **先想想生活中的"抛物线"**
+
+      你扔出一个篮球，它划出一道弧线飞过空中再落地——那条弧线就是抛物线！
+      卫星天线的碗形截面、喷泉的水柱弧度、过山车的轨道……这些都是抛物线。
+      最简单的抛物线，来自函数 $y = ax^{2}$。
+
+      **动手描点：$y = x^{2}$ 的图象**
+
+      先把几个点的坐标算出来：
+
+      | $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |
+      |-----|------|------|------|-----|-----|-----|-----|
+      | $y = x^{2}$ | $9$ | $4$ | $1$ | $0$ | $1$ | $4$ | $9$ |
+
+      在坐标系上描出这些点：$(-3,9)$、$(-2,4)$、$(-1,1)$、$(0,0)$、$(1,1)$、$(2,4)$、$(3,9)$。
+      然后用光滑曲线连接它们——你画出来的就是<<抛物线/parabola>>！
+
+      **发现规律：左右对称！**
+      观察表格：$x = -2$ 和 $x = 2$ 的时候，$y$ 都等于 $4$；
+      $x = -3$ 和 $x = 3$ 的时候，$y$ 都等于 $9$。
+      这是因为 $(-x)^{2} = x^{2}$，负数和正数的平方结果一样！
+      所以这条抛物线关于 **$y$ 轴左右完全对称**，$y$ 轴就是它的**对称轴**。
+
+      **$y = ax^{2}$ 图象的四个关键特征**
+
+      **① 顶点（最高点 or 最低点）**
+      当 $x = 0$ 时，$y = a \times 0^{2} = 0$，所以 $(0, 0)$ 就是顶点。
+      - $a > 0$（像 $y = x^{2}$）：开口向上，顶点是**最低点**（碗底）
+      - $a < 0$（像 $y = -x^{2}$）：开口向下，顶点是**最高点**（山顶）
+
+      **② 对称轴**
+      $y$ 轴（直线 $x = 0$），左右两边是镜像。
+
+      **③ 开口方向——$a$ 的正负决定开口！**
+      - $a > 0$：开口向上，像一个碗（装水不会漏）
+      - $a < 0$：开口向下，像一顶帽子（把帽子扣下来）
+
+      **④ 开口胖瘦——$|a|$ 的大小决定胖瘦！**
+      - $|a|$ 越大，抛物线越**窄**（越陡），像细高的尖峰
+      - $|a|$ 越小，抛物线越**宽**（越平缓），像矮胖的山丘
+
+      对比示例：
+
+      | 函数 | $a$ 的值 | 开口 | 胖瘦 |
+      |------|---------|------|------|
+      | $y = 3x^{2}$ | $a = 3 > 0$ | 向上 | 比 $y=x^{2}$ 更窄 |
+      | $y = x^{2}$ | $a = 1 > 0$ | 向上 | 标准 |
+      | $y = \frac{1}{3}x^{2}$ | $a = \frac{1}{3} > 0$ | 向上 | 比 $y=x^{2}$ 更宽 |
+      | $y = -x^{2}$ | $a = -1 < 0$ | 向下 | 标准（倒着的） |
+
+      **对称点的性质**
+      若点 $(m, n)$ 在 $y = ax^{2}$ 的图象上，则它关于 $y$ 轴的对称点 $(-m, n)$ 也在图象上。
+      两个点的纵坐标相同，因为 $a(-m)^{2} = am^{2} = n$。
+    contentEn: |
+      **First, think about parabolas in real life**
+
+      Throw a basketball — it traces an arc through the air and lands. That arc is a parabola!
+      The bowl shape of a satellite dish, the arc of a fountain jet, the path of a roller coaster — all parabolas.
+      The simplest parabola comes from the function $y = ax^{2}$.
+
+      **Plot the points: graph of $y = x^{2}$**
+
+      First, compute some coordinates:
+
+      | $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |
+      |-----|------|------|------|-----|-----|-----|-----|
+      | $y = x^{2}$ | $9$ | $4$ | $1$ | $0$ | $1$ | $4$ | $9$ |
+
+      Plot these points on a coordinate system: $(-3,9)$, $(-2,4)$, $(-1,1)$, $(0,0)$, $(1,1)$, $(2,4)$, $(3,9)$.
+      Connect them with a smooth curve — you've drawn a <<抛物线/parabola>>!
+
+      **Spot the pattern: left-right symmetry!**
+      When $x = -2$ and $x = 2$, both give $y = 4$.
+      When $x = -3$ and $x = 3$, both give $y = 9$.
+      This is because $(-x)^{2} = x^{2}$ — squaring a negative gives the same result as squaring the positive.
+      So the parabola is **perfectly symmetric about the $y$-axis**, which is its **axis of symmetry**.
+
+      **Four key features of $y = ax^{2}$**
+
+      **① Vertex (highest or lowest point)**
+      When $x = 0$, $y = a \times 0^{2} = 0$, so $(0, 0)$ is the vertex.
+      - $a > 0$ (like $y = x^{2}$): opens upward, vertex is the **lowest point** (bottom of the bowl)
+      - $a < 0$ (like $y = -x^{2}$): opens downward, vertex is the **highest point** (mountaintop)
+
+      **② Axis of symmetry**
+      The $y$-axis (the line $x = 0$) — the graph is a mirror image on both sides.
+
+      **③ Direction of opening — the sign of $a$ decides!**
+      - $a > 0$: opens upward like a bowl (can hold water)
+      - $a < 0$: opens downward like an upside-down hat (flipped over)
+
+      **④ Width — the size of $|a|$ decides the width!**
+      - Larger $|a|$: narrower parabola (steep, like a sharp peak)
+      - Smaller $|a|$: wider parabola (flat, like a gentle hill)
+
+      Comparison:
+
+      | Function | Value of $a$ | Opening | Width |
+      |----------|--------------|---------|-------|
+      | $y = 3x^{2}$ | $a = 3 > 0$ | upward | narrower than $y=x^{2}$ |
+      | $y = x^{2}$ | $a = 1 > 0$ | upward | standard |
+      | $y = \frac{1}{3}x^{2}$ | $a = \frac{1}{3} > 0$ | upward | wider than $y=x^{2}$ |
+      | $y = -x^{2}$ | $a = -1 < 0$ | downward | standard (flipped) |
+
+      **Symmetry of points**
+      If point $(m, n)$ is on the graph of $y = ax^{2}$, then its mirror image $(-m, n)$ is also on the graph.
+      Both points have the same $y$-coordinate, because $a(-m)^{2} = am^{2} = n$.
+
+  - id: vertex-form
+    title: 顶点式 $y = a(x-h)^{2} + k$ 与平移变换
+    titleEn: Vertex form $y = a(x-h)^{2} + k$ and translations
+    hasVisualization: true
+    content: |
+      **顶点式的含义：**
+      $$y = a(x - h)^{2} + k \quad (a \neq 0)$$
+
+      - **顶点**：$(h, k)$
+      - **对称轴**：直线 $x = h$
+      - **开口方向**：$a > 0$ 开口向上；$a < 0$ 开口向下
+      - **最值**：$a > 0$ 时，顶点是最低点，$y$ 的最小值为 $k$；$a < 0$ 时，顶点是最高点，$y$ 的最大值为 $k$
+
+      **为什么叫"顶点式"？**
+      当 $x = h$ 时，$(x - h)^{2} = 0$，$y = k$——这是整个函数的最小值（$a > 0$）或最大值（$a < 0$），即顶点的纵坐标。
+      顶点式让顶点坐标"一眼可见"，非常方便。
+
+      **从 $y = ax^{2}$ 到 $y = a(x-h)^{2} + k$ 的平移变换：**
+
+      $y = a(x-h)^{2} + k$ 是将 $y = ax^{2}$ 的图象进行平移得到的：
+      - **水平平移**：$h > 0$ 向右移 $h$ 个单位；$h < 0$ 向左移 $|h|$ 个单位
+      - **竖直平移**：$k > 0$ 向上移 $k$ 个单位；$k < 0$ 向下移 $|k|$ 个单位
+
+      **记忆技巧（注意括号内的符号）：**
+      $y = a(x - 3)^{2} + 2$：顶点是 $(3, 2)$，向右移 $3$，向上移 $2$。
+      $y = a(x + 3)^{2} - 2$：改写为 $y = a(x - (-3))^{2} + (-2)$，顶点是 $(-3, -2)$，向左移 $3$，向下移 $2$。
+      注意：括号里是"$x - h$"，所以看到 $x + 3$ 时，$h = -3$，是**向左**移动！
+
+      **例子：**
+      - $y = (x - 2)^{2} + 3$：顶点 $(2, 3)$，对称轴 $x = 2$，开口向上，最小值 $3$
+      - $y = -2(x + 1)^{2} - 4$：顶点 $(-1, -4)$，对称轴 $x = -1$，开口向下，最大值 $-4$
+      - $y = 3x^{2}$：顶点 $(0, 0)$，对称轴 $x = 0$（$y$ 轴）
+    contentEn: |
+      **Meaning of the vertex form:**
+      $$y = a(x - h)^{2} + k \quad (a \neq 0)$$
+
+      - **Vertex**: $(h, k)$
+      - **Axis of symmetry**: the line $x = h$
+      - **Direction of opening**: $a > 0$ opens upward; $a < 0$ opens downward
+      - **Extreme value**: when $a > 0$, the vertex is the lowest point and the minimum of $y$ is $k$; when $a < 0$, the vertex is the highest point and the maximum is $k$
+
+      **Why "vertex form"?**
+      When $x = h$, $(x-h)^{2} = 0$ and $y = k$ — this is the minimum (if $a > 0$) or maximum (if $a < 0$) of the whole function, i.e. the $y$-coordinate of the vertex.
+      The vertex form makes the vertex coordinates immediately visible.
+
+      **Translation from $y = ax^{2}$ to $y = a(x-h)^{2} + k$:**
+
+      The graph of $y = a(x-h)^{2} + k$ is a translation of $y = ax^{2}$:
+      - **Horizontal shift**: $h > 0$ shifts right by $h$ units; $h < 0$ shifts left by $|h|$ units
+      - **Vertical shift**: $k > 0$ shifts up by $k$ units; $k < 0$ shifts down by $|k|$ units
+
+      **Memory tip (watch the sign inside the brackets):**
+      $y = a(x - 3)^{2} + 2$: vertex $(3, 2)$, shift right 3, shift up 2.
+      $y = a(x + 3)^{2} - 2$: rewrite as $y = a(x - (-3))^{2} + (-2)$, vertex $(-3, -2)$, shift left 3, shift down 2.
+      When you see $x + 3$ inside the bracket, $h = -3$ — that means a **left** shift!
+
+      **Examples:**
+      - $y = (x - 2)^{2} + 3$: vertex $(2, 3)$, axis $x = 2$, opens upward, minimum value $3$
+      - $y = -2(x + 1)^{2} - 4$: vertex $(-1, -4)$, axis $x = -1$, opens downward, maximum value $-4$
+      - $y = 3x^{2}$: vertex $(0, 0)$, axis $x = 0$ (the $y$-axis)
+
+  - id: completing-square
+    title: 配方法——将一般式化为顶点式
+    titleEn: Completing the square — converting general form to vertex form
+    hasVisualization: false
+    content: |
+      **为什么要配方？**
+      一般式 $y = ax^{2} + bx + c$ 无法直接看出顶点和对称轴，需要通过<<配方法/completing the square>>变形。
+
+      **配方步骤（以 $y = ax^{2} + bx + c$ 为例）：**
+
+      **第一步：** 提取 $x^{2}$ 项的系数 $a$（如果 $a \neq 1$）
+      $$y = a\left(x^{2} + \frac{b}{a}x\right) + c$$
+
+      **第二步：** 在括号内"配方"——括号内加减 $\left(\frac{b}{2a}\right)^{2}$
+      $$y = a\left(x^{2} + \frac{b}{a}x + \frac{b^{2}}{4a^{2}} - \frac{b^{2}}{4a^{2}}\right) + c$$
+
+      **第三步：** 提出完全平方式，整理常数项
+      $$y = a\left(x + \frac{b}{2a}\right)^{2} - \frac{b^{2}}{4a} + c$$
+
+      **结论（记住这两个公式）：**
+      $$\text{对称轴：} x = -\frac{b}{2a} \qquad \text{顶点：} \left(-\frac{b}{2a},\ c - \frac{b^{2}}{4a}\right)$$
+
+      **具体例子：配方 $y = 2x^{2} - 8x + 3$**
+
+      第一步：提系数 $2$
+      $$y = 2(x^{2} - 4x) + 3$$
+      第二步：括号内配方，$\left(\frac{-4}{2}\right)^{2} = 4$，加 $4$ 再减 $4$
+      $$y = 2(x^{2} - 4x + 4 - 4) + 3 = 2\left[(x-2)^{2} - 4\right] + 3$$
+      第三步：展开方括号
+      $$y = 2(x-2)^{2} - 8 + 3 = 2(x-2)^{2} - 5$$
+
+      顶点：$(2, -5)$，对称轴：$x = 2$，开口向上，最小值 $-5$。
+
+      **易错点：提系数时，$c$ 不参与配方！**
+      许多同学会错误地把 $c$ 也括进去。正确做法：$c$ 留在括号外面，只配方括号内的 $x^{2}$ 和 $x$ 项。
+    contentEn: |
+      **Why complete the square?**
+      The general form $y = ax^{2} + bx + c$ does not immediately reveal the vertex or axis of symmetry. We use <<配方法/completing the square>> to rewrite it.
+
+      **Steps (for $y = ax^{2} + bx + c$):**
+
+      **Step 1:** Factor out the coefficient $a$ from the $x$-terms (if $a \neq 1$)
+      $$y = a\left(x^{2} + \frac{b}{a}x\right) + c$$
+
+      **Step 2:** "Complete the square" inside the brackets — add and subtract $\left(\frac{b}{2a}\right)^{2}$
+      $$y = a\left(x^{2} + \frac{b}{a}x + \frac{b^{2}}{4a^{2}} - \frac{b^{2}}{4a^{2}}\right) + c$$
+
+      **Step 3:** Extract the perfect square and collect constants
+      $$y = a\left(x + \frac{b}{2a}\right)^{2} - \frac{b^{2}}{4a} + c$$
+
+      **Key results (memorise these):**
+      $$\text{Axis of symmetry: } x = -\frac{b}{2a} \qquad \text{Vertex: } \left(-\frac{b}{2a},\ c - \frac{b^{2}}{4a}\right)$$
+
+      **Worked example: $y = 2x^{2} - 8x + 3$**
+
+      Step 1: factor out $2$
+      $$y = 2(x^{2} - 4x) + 3$$
+      Step 2: complete the square; $\left(\frac{-4}{2}\right)^{2} = 4$; add and subtract $4$
+      $$y = 2(x^{2} - 4x + 4 - 4) + 3 = 2\left[(x-2)^{2} - 4\right] + 3$$
+      Step 3: expand the square bracket
+      $$y = 2(x-2)^{2} - 8 + 3 = 2(x-2)^{2} - 5$$
+
+      Vertex: $(2, -5)$; axis of symmetry: $x = 2$; opens upward; minimum value $-5$.
+
+      **Common mistake: the constant $c$ stays outside the bracket!**
+      Many students mistakenly include $c$ inside the bracket when factoring. Correct approach: leave $c$ outside and only work with the $x^{2}$ and $x$ terms inside.
+
+  - id: discriminant-intersections
+    title: 抛物线与 $x$ 轴的交点——判别式的几何意义
+    titleEn: Intersections of a parabola with the $x$-axis — geometric meaning of the discriminant
+    hasVisualization: true
+    content: |
+      **什么时候抛物线与 $x$ 轴相交？**
+
+      令 $y = 0$，二次函数变成一元二次方程：$ax^{2} + bx + c = 0$。
+      方程的实数根就是交点的 $x$ 坐标。
+
+      因此，**判别式** $\Delta = b^{2} - 4ac$ 直接决定了交点个数：
+
+      | $\Delta$ 的值 | 方程实数根个数 | 抛物线与 $x$ 轴的关系 | 图象特征 |
+      |---|---|---|---|
+      | $\Delta > 0$ | 两个不等实根 | 有**两个**交点 | 抛物线穿过 $x$ 轴两次 |
+      | $\Delta = 0$ | 两个相等实根 | 有**一个**交点（切点） | 顶点在 $x$ 轴上 |
+      | $\Delta < 0$ | 无实数根 | **无**交点 | 抛物线在 $x$ 轴上方或下方 |
+
+      **几何直觉：**
+      - $\Delta > 0$：抛物线"跨越" $x$ 轴，交于两点
+      - $\Delta = 0$：抛物线恰好"触碰" $x$ 轴（顶点正好在 $x$ 轴上）
+      - $\Delta < 0$：抛物线完全在 $x$ 轴一侧，从不碰到 $x$ 轴
+
+      **举例：**
+      - $y = x^{2} - 5x + 6$：$\Delta = 25 - 24 = 1 > 0$，交 $x$ 轴于两点
+        解方程：$x_{1} = 2, x_{2} = 3$，交点 $(2, 0)$ 和 $(3, 0)$
+      - $y = x^{2} - 4x + 4 = (x-2)^{2}$：$\Delta = 16 - 16 = 0$，顶点 $(2, 0)$ 在 $x$ 轴上
+      - $y = x^{2} + x + 1$：$\Delta = 1 - 4 = -3 < 0$，图象在 $x$ 轴上方（$a = 1 > 0$），$y$ 恒大于 $0$
+
+      **利用交点写两根式：**
+      若 $\Delta > 0$，两根为 $x_{1}, x_{2}$，则 $y = a(x - x_{1})(x - x_{2})$，
+      这种形式让与 $x$ 轴的交点"一眼可见"。
+    contentEn: |
+      **When does a parabola intersect the $x$-axis?**
+
+      Setting $y = 0$ converts the quadratic function into a quadratic equation: $ax^{2} + bx + c = 0$.
+      The real roots of this equation are the $x$-coordinates of the intersection points.
+
+      Therefore, the **discriminant** $\Delta = b^{2} - 4ac$ directly determines the number of intersections:
+
+      | Value of $\Delta$ | Number of real roots | Relationship with $x$-axis | Graph |
+      |---|---|---|---|
+      | $\Delta > 0$ | Two distinct real roots | **Two** intersection points | Crosses $x$-axis twice |
+      | $\Delta = 0$ | Two equal real roots | **One** tangent point | Vertex on $x$-axis |
+      | $\Delta < 0$ | No real roots | **No** intersection | Entirely above or below $x$-axis |
+
+      **Geometric intuition:**
+      - $\Delta > 0$: the parabola "straddles" the $x$-axis, crossing it at two points
+      - $\Delta = 0$: the parabola just "touches" the $x$-axis (vertex exactly on the $x$-axis)
+      - $\Delta < 0$: the parabola lies entirely on one side, never touching the $x$-axis
+
+      **Examples:**
+      - $y = x^{2} - 5x + 6$: $\Delta = 25 - 24 = 1 > 0$, two $x$-intercepts; solving gives $x_{1} = 2$, $x_{2} = 3$
+      - $y = x^{2} - 4x + 4 = (x-2)^{2}$: $\Delta = 0$; vertex $(2, 0)$ on $x$-axis
+      - $y = x^{2} + x + 1$: $\Delta = -3 < 0$; graph above $x$-axis; $y > 0$ always
+
+      **Writing the factored form:**
+      If $\Delta > 0$ with roots $x_{1}$ and $x_{2}$, then $y = a(x - x_{1})(x - x_{2})$,
+      making the $x$-intercepts immediately visible.
+
+  - id: max-min-values
+    title: 二次函数的最大值和最小值
+    titleEn: Maximum and minimum values of a quadratic function
+    hasVisualization: false
+    content: |
+      **核心结论：**
+
+      对于 $y = a(x-h)^{2} + k$：
+      - 当 $a > 0$ 时：$x = h$ 时 $y$ 取**最小值** $k$，即 $y_{\min} = k$
+      - 当 $a < 0$ 时：$x = h$ 时 $y$ 取**最大值** $k$，即 $y_{\max} = k$
+
+      **为什么？**
+      因为 $(x-h)^{2} \geq 0$ 恒成立（任何数的平方非负）：
+      - $a > 0$ 时，$a(x-h)^{2} \geq 0$，所以 $y \geq k$，当且仅当 $x = h$ 时等号成立。
+      - $a < 0$ 时，$a(x-h)^{2} \leq 0$，所以 $y \leq k$，当且仅当 $x = h$ 时等号成立。
+
+      **有限区间上的最值（重要！）**
+
+      当自变量 $x$ 被限制在某个闭区间 $[p, q]$ 上时，最值未必在顶点处取到：
+      1. **先判断顶点 $x = h$ 是否在 $[p, q]$ 内：**
+         - 若 $h \in [p, q]$：最值在顶点处（顶点值）和两端点 $x = p, x = q$ 处分别计算，取最大/最小。
+         - 若 $h \notin [p, q]$：函数在 $[p, q]$ 上单调，最值在端点处取得。
+      2. **计算并比较** $y(p)$、$y(q)$（和 $y(h)$ 若 $h \in [p, q]$），得出最大值和最小值。
+
+      **例子：求 $y = x^{2} - 4x + 3$ 在 $[0, 3]$ 上的最值**
+
+      配方：$y = (x-2)^{2} - 1$，顶点 $(2, -1)$。
+      顶点 $x = 2 \in [0, 3]$，所以：
+      - $y(0) = 0 - 0 + 3 = 3$
+      - $y(2) = -1$（顶点）
+      - $y(3) = 9 - 12 + 3 = 0$
+
+      在 $[0, 3]$ 上：最小值为 $-1$（在 $x = 2$ 处取到），最大值为 $3$（在 $x = 0$ 处取到）。
+    contentEn: |
+      **Core result:**
+
+      For $y = a(x-h)^{2} + k$:
+      - When $a > 0$: $y$ has a **minimum value** of $k$ at $x = h$, i.e. $y_{\min} = k$
+      - When $a < 0$: $y$ has a **maximum value** of $k$ at $x = h$, i.e. $y_{\max} = k$
+
+      **Why?**
+      Because $(x-h)^{2} \geq 0$ always holds (any real number squared is non-negative):
+      - If $a > 0$: $a(x-h)^{2} \geq 0$, so $y \geq k$, with equality only when $x = h$.
+      - If $a < 0$: $a(x-h)^{2} \leq 0$, so $y \leq k$, with equality only when $x = h$.
+
+      **Extreme values on a closed interval (important!)**
+
+      When $x$ is restricted to a closed interval $[p, q]$, the extreme value may not be at the vertex:
+      1. **First check whether vertex $x = h$ lies in $[p, q]$:**
+         - If $h \in [p, q]$: evaluate $y$ at the vertex and at both endpoints; compare all three.
+         - If $h \notin [p, q]$: the function is monotone on $[p, q]$; the extreme values are at the endpoints.
+      2. **Compute and compare** $y(p)$, $y(q)$ (and $y(h)$ if $h \in [p, q]$) to find maximum and minimum.
+
+      **Example: find extreme values of $y = x^{2} - 4x + 3$ on $[0, 3]$**
+
+      Complete the square: $y = (x-2)^{2} - 1$, vertex $(2, -1)$.
+      Vertex $x = 2 \in [0, 3]$, so evaluate:
+      - $y(0) = 3$; $y(2) = -1$ (vertex); $y(3) = 0$
+
+      On $[0, 3]$: minimum value is $-1$ (at $x = 2$); maximum value is $3$ (at $x = 0$).
+
+  - id: quadratic-applications
+    title: 二次函数的实际应用
+    titleEn: Real-world applications of quadratic functions
+    hasVisualization: false
+    content: |
+      二次函数在生活中有广泛应用，核心思路是**建立模型 → 求顶点（最值）→ 解答问题**。
+
+      **类型一：路径与轨迹问题**
+
+      抛体运动（忽略空气阻力）的轨迹是抛物线。
+      设球飞行高度 $h$（m）与水平距离 $x$（m）的关系为 $h = -0.01x^{2} + x$（$x \geq 0$）。
+      - 配方得 $h = -0.01(x - 50)^{2} + 25$，顶点 $(50, 25)$
+      - 最高点在 $x = 50$ m 时，高度为 $25$ m
+      - 落地时 $h = 0$：$x(1 - 0.01x) = 0$，$x = 0$ 或 $x = 100$，水平射程为 $100$ m
+
+      **类型二：利润最大化问题**
+
+      某商品原价 $100$ 元，日销量 $200$ 件，成本 $60$ 元/件。每降价 $1$ 元，销量增加 $50$ 件。
+      设降价 $x$ 元（$0 < x < 40$）：
+      - 利润 $W = (100 - x - 60)(200 + 50x) = (40 - x)(200 + 50x)$
+      - 展开：$W = -50x^{2} + 1800x + 8000$
+      - 配方：$W = -50(x - 18)^{2} + 24200$
+      - 最大利润：$x = 18$ 时，$W_{\max} = 24200$ 元/日，定价 $82$ 元
+
+      **建模步骤总结：**
+      1. 设合适的自变量 $x$（含义明确，范围合理）
+      2. 写出目标量（利润/高度/面积等）关于 $x$ 的表达式
+      3. 配方化为顶点式，找到顶点
+      4. 检验顶点是否在 $x$ 的实际范围内，得出答案
+    contentEn: |
+      Quadratic functions appear widely in real life. The core strategy is: **build a model → find the vertex (extreme value) → answer**.
+
+      **Type 1: Path and trajectory problems**
+
+      The trajectory of a projectile (ignoring air resistance) is a parabola.
+      Suppose height $h$ (m) over horizontal distance $x$ (m) is $h = -0.01x^{2} + x$ ($x \geq 0$).
+      - Completing the square: $h = -0.01(x - 50)^{2} + 25$, vertex $(50, 25)$
+      - Maximum height is $25$ m at $x = 50$ m
+      - Landing ($h = 0$): $x = 0$ or $x = 100$; horizontal range is $100$ m
+
+      **Type 2: Profit maximisation**
+
+      Original price 100 yuan, daily sales 200 units, cost 60 yuan/unit. Each 1-yuan price reduction increases sales by 50 units.
+      Let $x$ = price reduction ($0 < x < 40$):
+      - Profit $W = (40 - x)(200 + 50x) = -50x^{2} + 1800x + 8000$
+      - Completing the square: $W = -50(x - 18)^{2} + 24200$
+      - Maximum profit 24200 yuan/day when $x = 18$, i.e. price = 82 yuan
+
+      **Modelling steps:**
+      1. Define a suitable variable $x$ (clear meaning, realistic range)
+      2. Write the target quantity as a function of $x$
+      3. Complete the square to find the vertex
+      4. Check that the vertex lies in the practical range; state the answer
+
+realLife:
+  - category: 物理与运动
+    categoryEn: Physics and Sport
+    positive: '抛体轨迹：篮球投篮时，球在空中的轨迹近似为抛物线。职业球员会本能地感受抛物线的顶点（最高点）和落点。拱桥的受力曲线在均匀荷载下也近似为抛物线。'
+    positiveEn: "Projectile trajectory: a basketball's path is approximately a parabolic arc. Professional players intuitively sense the vertex (highest point) and the landing point. Arch bridges under uniform load also have approximately parabolic profiles."
+    negative: '真实轨迹受空气阻力影响，不是完美的抛物线。数学模型是理想化的简化。'
+    negativeEn: 'Real trajectories are affected by air resistance and are not perfect parabolas. The mathematical model is an idealised simplification.'
+
+  - category: 建筑与通信
+    categoryEn: Architecture and Communications
+    positive: '抛物面天线（卫星天线）利用抛物线的焦点性质：平行于对称轴入射的信号，经抛物面反射后都汇聚到焦点，使接收信号最强。'
+    positiveEn: 'Parabolic satellite dishes exploit the focus property of parabolas: signals arriving parallel to the axis of symmetry are all reflected to the focus, maximising signal strength.'
+    negative: '抛物面天线的截面是抛物线，而不是圆弧。这两种曲线在视觉上相似，但数学性质不同。'
+    negativeEn: 'The cross-section of a parabolic dish is a parabola, not a circular arc. The two curves look similar but have different mathematical properties.'
+
+  - category: 经济与商业
+    categoryEn: Economics and Business
+    positive: '利润最大化：若收入 $R$ 是价格 $p$ 的二次函数，则利润 $\pi = R - C$ 也是二次函数，顶点对应最优定价。这个模型在零售业和生产调度中广泛使用。'
+    positiveEn: 'Profit maximisation: if revenue $R$ is a quadratic function of price $p$, then profit $\pi = R - C$ is also quadratic, with the vertex giving the optimal price. This model is widely used in retail and production planning.'
+    negative: '真实市场需求关系很复杂，二次函数模型只在局部价格范围内近似成立。'
+    negativeEn: 'Real market demand is complex; the quadratic model is only a local approximation valid over a limited price range.'
+
+examples:
+  - id: ex1
+    title: '画 $y = 2x^{2}$ 和 $y = -\frac{1}{2}x^{2}$ 的图象并比较'
+    titleEn: 'Sketch $y = 2x^{2}$ and $y = -\frac{1}{2}x^{2}$ and compare'
+    question: |
+      $(1)$ 分别列表计算 $y = 2x^{2}$ 和 $y = -\frac{1}{2}x^{2}$ 在 $x = -2, -1, 0, 1, 2$ 时的函数值，描述各自图象的特征。
+      $(2)$ 将这两个图象与 $y = x^{2}$ 的图象进行比较，说明 $|a|$ 的大小对图象的影响。
+    questionEn: |
+      $(1)$ Compute the values of $y = 2x^{2}$ and $y = -\frac{1}{2}x^{2}$ at $x = -2, -1, 0, 1, 2$. Describe the features of each graph.
+      $(2)$ Compare both graphs with $y = x^{2}$ and explain how $|a|$ affects the shape.
+    type: graphing
+    solution:
+      steps:
+        - |
+          $(1)$ 列表计算：
+
+          | $x$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
+          |-----|------|------|-----|-----|-----|
+          | $y = 2x^{2}$ | $8$ | $2$ | $0$ | $2$ | $8$ |
+          | $y = -\frac{1}{2}x^{2}$ | $-2$ | $-\frac{1}{2}$ | $0$ | $-\frac{1}{2}$ | $-2$ |
+        - '$y = 2x^{2}$：$a = 2 > 0$，开口向上，顶点 $(0, 0)$，对称轴 $x = 0$，$y$ 值均非负，最小值为 $0$'
+        - '$y = -\frac{1}{2}x^{2}$：$a = -\frac{1}{2} < 0$，开口向下，顶点 $(0, 0)$，对称轴 $x = 0$，$y$ 值均非正，最大值为 $0$'
+        - '$(2)$ 当 $x = 1$ 时：$y = x^{2}$ 得 $1$；$y = 2x^{2}$ 得 $2$（更大，图象更"高"，即更窄）；$y = \frac{1}{2}x^{2}$ 得 $\frac{1}{2}$（更小，更宽）'
+        - '结论：$|a|$ 越大，抛物线越陡峭（窄）；$|a|$ 越小，抛物线越平缓（宽）；$a$ 的正负决定开口方向。'
+    solutionEn:
+      steps:
+        - |
+          $(1)$ Table of values:
+
+          | $x$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
+          |-----|------|------|-----|-----|-----|
+          | $y = 2x^{2}$ | $8$ | $2$ | $0$ | $2$ | $8$ |
+          | $y = -\frac{1}{2}x^{2}$ | $-2$ | $-\frac{1}{2}$ | $0$ | $-\frac{1}{2}$ | $-2$ |
+        - '$y = 2x^{2}$: $a = 2 > 0$, opens upward, vertex $(0,0)$, axis $x = 0$; $y \geq 0$ always, minimum $0$'
+        - '$y = -\frac{1}{2}x^{2}$: $a = -\frac{1}{2} < 0$, opens downward, vertex $(0,0)$, axis $x = 0$; $y \leq 0$ always, maximum $0$'
+        - '$(2)$ At $x = 1$: $y = x^{2}$ gives $1$; $y = 2x^{2}$ gives $2$ (larger, narrower); $y = \frac{1}{2}x^{2}$ gives $\frac{1}{2}$ (smaller, wider)'
+        - 'Conclusion: larger $|a|$ means a steeper (narrower) parabola; smaller $|a|$ means a flatter (wider) parabola; sign of $a$ determines direction of opening.'
+    answer: '$y = 2x^{2}$ 开口向上较窄；$y = -\frac{1}{2}x^{2}$ 开口向下较宽；$|a|$ 越大越窄'
+    answerEn: '$y = 2x^{2}$ opens upward, narrower; $y = -\frac{1}{2}x^{2}$ opens downward, wider; larger $|a|$ means narrower'
+
+  - id: ex2
+    title: 由顶点式确定图象并描述平移
+    titleEn: Identify the graph from vertex form and describe the translation
+    question: |
+      对于 $y = -3(x + 2)^{2} + 5$：
+      $(1)$ 写出顶点坐标和对称轴方程；
+      $(2)$ 说明它是由 $y = -3x^{2}$ 的图象经过怎样的平移得到的；
+      $(3)$ 确定开口方向和最大值。
+    questionEn: |
+      For $y = -3(x + 2)^{2} + 5$:
+      $(1)$ State the vertex coordinates and equation of the axis of symmetry.
+      $(2)$ Describe how its graph is obtained by translating $y = -3x^{2}$.
+      $(3)$ Determine the direction of opening and the maximum value.
+    type: vertex-form
+    solution:
+      steps:
+        - '$(1)$ 改写为标准顶点式：$y = -3(x - (-2))^{2} + 5$，所以 $h = -2, k = 5$'
+        - '顶点：$(-2, 5)$；对称轴：$x = -2$'
+        - '$(2)$ $y = -3x^{2}$ 的顶点在原点 $(0, 0)$。将其向左平移 $2$ 个单位，再向上平移 $5$ 个单位，得到顶点 $(-2, 5)$'
+        - '注意：$x + 2 = x - (-2)$，$h = -2 < 0$，所以是向左移 $2$ 个单位'
+        - '$(3)$ $a = -3 < 0$，开口向下；在顶点处取得**最大值** $5$（当 $x = -2$ 时）'
+    solutionEn:
+      steps:
+        - '$(1)$ Rewrite in standard vertex form: $y = -3(x - (-2))^{2} + 5$, so $h = -2, k = 5$'
+        - 'Vertex: $(-2, 5)$; axis of symmetry: $x = -2$'
+        - '$(2)$ The graph of $y = -3x^{2}$ has its vertex at the origin $(0, 0)$. Shift left by 2 units and up by 5 units to get vertex $(-2, 5)$.'
+        - 'Note: $x + 2 = x - (-2)$, so $h = -2 < 0$ means a left shift of 2 units'
+        - '$(3)$ $a = -3 < 0$: opens downward; **maximum value** is $5$ at $x = -2$'
+    answer: '顶点 $(-2, 5)$，对称轴 $x = -2$，向左2向上5平移，开口向下，最大值5'
+    answerEn: 'Vertex $(-2, 5)$, axis $x = -2$, shift left 2 up 5, opens downward, max value 5'
+
+  - id: ex3
+    title: 配方求顶点和对称轴
+    titleEn: Complete the square to find the vertex and axis of symmetry
+    question: |
+      对 $y = 3x^{2} - 6x + 1$ 进行配方：
+      $(1)$ 化为顶点式；
+      $(2)$ 写出顶点坐标、对称轴和最小值；
+      $(3)$ 利用公式 $x = -\frac{b}{2a}$ 验证对称轴。
+    questionEn: |
+      Complete the square for $y = 3x^{2} - 6x + 1$:
+      $(1)$ Convert to vertex form.
+      $(2)$ State the vertex, axis of symmetry, and minimum value.
+      $(3)$ Use the formula $x = -\frac{b}{2a}$ to verify the axis of symmetry.
+    type: completing-square
+    solution:
+      steps:
+        - '$(1)$ 提取系数 $3$：$y = 3(x^{2} - 2x) + 1$'
+        - '配方：$(-2 \div 2)^{2} = 1$，括号内加减 $1$：'
+        - '$y = 3(x^{2} - 2x + 1 - 1) + 1 = 3\left[(x-1)^{2} - 1\right] + 1$'
+        - '$y = 3(x-1)^{2} - 3 + 1 = 3(x-1)^{2} - 2$'
+        - '$(2)$ 顶点：$(1, -2)$；对称轴：$x = 1$；$a = 3 > 0$，开口向上，最小值为 $-2$'
+        - '$(3)$ 验证：$a = 3, b = -6$，对称轴 $x = -\frac{b}{2a} = -\frac{-6}{6} = 1$ ✓'
+    solutionEn:
+      steps:
+        - '$(1)$ Factor out $3$: $y = 3(x^{2} - 2x) + 1$'
+        - 'Complete the square: $(-2 \div 2)^{2} = 1$; add and subtract $1$:'
+        - '$y = 3(x^{2} - 2x + 1 - 1) + 1 = 3\left[(x-1)^{2} - 1\right] + 1$'
+        - '$y = 3(x-1)^{2} - 3 + 1 = 3(x-1)^{2} - 2$'
+        - '$(2)$ Vertex: $(1, -2)$; axis: $x = 1$; $a = 3 > 0$, opens upward, minimum $-2$'
+        - '$(3)$ Verify: $a = 3, b = -6$; axis $x = -\frac{-6}{6} = 1$ ✓'
+    answer: '$y = 3(x-1)^{2} - 2$，顶点 $(1,-2)$，对称轴 $x=1$，最小值 $-2$'
+    answerEn: '$y = 3(x-1)^{2} - 2$, vertex $(1,-2)$, axis $x=1$, minimum $-2$'
+
+  - id: ex4
+    title: 用判别式判断与 $x$ 轴交点个数
+    titleEn: Use the discriminant to determine the number of $x$-intercepts
+    question: |
+      判断下列二次函数与 $x$ 轴的交点个数，若有交点，求出交点坐标。
+      $(1)\ y = x^{2} - 4x + 4$；$(2)\ y = 2x^{2} - 3x - 2$；$(3)\ y = x^{2} + 2x + 3$
+    questionEn: |
+      Determine the number of intersections of each quadratic function with the $x$-axis. Where intersections exist, find their coordinates.
+      $(1)\ y = x^{2} - 4x + 4$; $(2)\ y = 2x^{2} - 3x - 2$; $(3)\ y = x^{2} + 2x + 3$
+    type: discriminant
+    solution:
+      steps:
+        - '$(1)\ a=1, b=-4, c=4$：$\Delta = 16 - 16 = 0$，一个交点（切点）。令 $y = 0$：$(x-2)^{2} = 0$，$x = 2$，交点 $(2, 0)$。顶点恰在 $x$ 轴上。'
+        - '$(2)\ a=2, b=-3, c=-2$：$\Delta = 9 + 16 = 25 > 0$，两个交点。$x = \frac{3 \pm 5}{4}$，$x_{1} = 2$，$x_{2} = -\frac{1}{2}$，交点 $(2, 0)$ 和 $\left(-\frac{1}{2}, 0\right)$'
+        - '$(3)\ a=1, b=2, c=3$：$\Delta = 4 - 12 = -8 < 0$，无交点。图象在 $x$ 轴上方（$a = 1 > 0$），$y$ 恒大于 $0$。'
+    solutionEn:
+      steps:
+        - '$(1)\ \Delta = 16 - 16 = 0$: one intersection (tangent point); $(x-2)^{2} = 0$, so $x = 2$, intersection $(2, 0)$. Vertex lies on $x$-axis.'
+        - '$(2)\ \Delta = 9 + 16 = 25 > 0$: two intersections. $x = \frac{3 \pm 5}{4}$; $x_{1} = 2$, $x_{2} = -\frac{1}{2}$; intersections $(2,0)$ and $(-\frac{1}{2},0)$'
+        - '$(3)\ \Delta = 4 - 12 = -8 < 0$: no intersections. Graph above $x$-axis; $y > 0$ always.'
+    answer: '$(1)$ 一个：$(2,0)$；$(2)$ 两个：$(2,0)$ 和 $(-\frac{1}{2},0)$；$(3)$ 无交点'
+    answerEn: '$(1)$ One: $(2,0)$; $(2)$ Two: $(2,0)$ and $(-\frac{1}{2},0)$; $(3)$ No intersections'
+
+  - id: ex5
+    title: 求最值的实际应用——围栏面积最大
+    titleEn: Applied maximum value — maximising fenced area
+    question: |
+      用 $60$ 米长的篱笆围一个靠墙的矩形园地（一侧靠墙，不需要篱笆）。
+      设与墙平行的边长为 $x$ 米，求：
+      $(1)$ 另一边（垂直于墙）的长度；
+      $(2)$ 面积 $S$ 关于 $x$ 的函数关系式；
+      $(3)$ 当 $x$ 为何值时，面积最大？最大面积是多少？
+    questionEn: |
+      A $60$-metre fence encloses a rectangular garden against a wall (the wall forms one side).
+      Let the side parallel to the wall have length $x$ metres. Find:
+      $(1)$ The length of the side perpendicular to the wall.
+      $(2)$ The area $S$ as a function of $x$.
+      $(3)$ The value of $x$ that maximises $S$, and the maximum area.
+    type: application
+    solution:
+      steps:
+        - '$(1)$ 三段篱笆：$x + 2 \times \text{垂直边} = 60$，垂直边 $= \frac{60 - x}{2} = 30 - \frac{x}{2}$'
+        - '$(2)$ 面积 $S = x \times \left(30 - \frac{x}{2}\right) = 30x - \frac{x^{2}}{2} = -\frac{1}{2}x^{2} + 30x$（$0 < x < 60$）'
+        - '$(3)$ 配方：$S = -\frac{1}{2}(x^{2} - 60x) = -\frac{1}{2}(x - 30)^{2} + 450$'
+        - '$a = -\frac{1}{2} < 0$，顶点 $(30, 450)$，$x = 30 \in (0, 60)$，面积最大值为 $450$ 平方米。'
+        - '此时垂直边 $= 30 - 15 = 15$ 米，矩形为 $30 \times 15$。'
+    solutionEn:
+      steps:
+        - '$(1)$ Three fence sections: $x + 2 \times \text{perp} = 60$, so perp $= 30 - \frac{x}{2}$'
+        - '$(2)$ $S = x(30 - \frac{x}{2}) = -\frac{1}{2}x^{2} + 30x$ ($0 < x < 60$)'
+        - '$(3)$ Complete the square: $S = -\frac{1}{2}(x-30)^{2} + 450$'
+        - '$a = -\frac{1}{2} < 0$; vertex $(30, 450)$; $x = 30 \in (0,60)$; maximum area $450$ m².'
+        - 'Perpendicular side $= 15$ m; rectangle is $30 \times 15$.'
+    answer: '$x = 30$ 米时面积最大，最大面积 $450$ 平方米'
+    answerEn: 'Area is maximised when $x = 30$ m; maximum area is $450$ m²'
+
+  - id: ex6
+    title: 综合题——由已知条件确定二次函数表达式
+    titleEn: Comprehensive — determine the quadratic function from given conditions
+    question: |
+      已知二次函数 $y = ax^{2} + bx + c$ 满足：
+      对称轴为 $x = 1$，图象过点 $(0, 3)$ 和 $(3, 0)$。
+      求此二次函数的表达式。
+    questionEn: |
+      A quadratic function $y = ax^{2} + bx + c$ satisfies:
+      axis of symmetry $x = 1$; passes through $(0, 3)$ and $(3, 0)$.
+      Find the expression.
+    type: determine-expression
+    solution:
+      steps:
+        - '由对称轴 $x = 1$：$-\frac{b}{2a} = 1$，即 $b = -2a$ ……①'
+        - '过点 $(0, 3)$：$c = 3$ ……②'
+        - '过点 $(3, 0)$：$9a + 3b + c = 0$，代入②得 $9a + 3b = -3$，即 $3a + b = -1$ ……③'
+        - '将①代入③：$3a - 2a = -1$，$a = -1$'
+        - '由①：$b = 2$；由②：$c = 3$'
+        - '函数表达式：$y = -x^{2} + 2x + 3$'
+        - '验证：对称轴 $x = -\frac{2}{-2} = 1$ ✓；$y(0) = 3$ ✓；$y(3) = -9+6+3 = 0$ ✓'
+    solutionEn:
+      steps:
+        - 'Axis $x = 1$: $-\frac{b}{2a} = 1$, so $b = -2a$ ……①'
+        - 'Through $(0, 3)$: $c = 3$ ……②'
+        - 'Through $(3, 0)$: $9a + 3b + 3 = 0$, so $3a + b = -1$ ……③'
+        - 'Substitute ①: $3a - 2a = -1$, so $a = -1$'
+        - 'From ①: $b = 2$; from ②: $c = 3$'
+        - 'Expression: $y = -x^{2} + 2x + 3$'
+        - 'Verify: axis $x = -\frac{2}{-2} = 1$ ✓; $y(0) = 3$ ✓; $y(3) = 0$ ✓'
+    answer: '$y = -x^{2} + 2x + 3$'
+    answerEn: '$y = -x^{2} + 2x + 3$'
+
+exercises:
+  - id: q1
+    type: multiple-choice
+    question: |
+      下列各式中，$y$ 是 $x$ 的二次函数的是（　　）
+      A. $y = 3x + x^{2} - x^{2}$
+      B. $y = (x + 1)(x - 2)$
+      C. $y = \frac{1}{x^{2}} + 2$
+      D. $y = x^{3} - x^{2} + 1$
+    questionEn: |
+      Which of the following is a quadratic function of $x$? (　　)
+      A. $y = 3x + x^{2} - x^{2}$
+      B. $y = (x + 1)(x - 2)$
+      C. $y = \frac{1}{x^{2}} + 2$
+      D. $y = x^{3} - x^{2} + 1$
+    answer: B
+    answerEn: B
+    explanation: 'A 化简后 $x^{2}$ 抵消，变成一次函数；B 展开为 $x^{2} - x - 2$，是二次函数；C 含 $x^{-2}$，分母有 $x$，不是多项式；D 最高次为三次'
+    explanationEn: 'A simplifies to a linear function ($x^{2}$ terms cancel); B expands to $x^{2}-x-2$, quadratic; C has $x$ in denominator; D is cubic'
+
+  - id: q2
+    type: fill-in
+    question: '二次函数 $y = -2x^{2} + 4x - 1$ 的开口方向是___，对称轴为___，顶点坐标为___'
+    questionEn: 'For $y = -2x^{2} + 4x - 1$: opens ___; axis ___; vertex ___'
+    answer: '向下；$x = 1$；$(1, 1)$'
+    answerEn: 'downward; $x = 1$; $(1, 1)$'
+    explanation: '$a = -2 < 0$ 开口向下；对称轴 $x = -\frac{4}{-4} = 1$；$y(1) = -2+4-1 = 1$，顶点 $(1,1)$'
+    explanationEn: '$a = -2 < 0$: opens downward; axis $x = -\frac{4}{-4} = 1$; $y(1) = 1$, vertex $(1,1)$'
+
+  - id: q3
+    type: fill-in
+    question: '将 $y = x^{2} - 6x + 11$ 配方化为顶点式：$y = $ ___，顶点为___，最小值为___'
+    questionEn: 'Complete the square for $y = x^{2} - 6x + 11$: $y = $ ___; vertex ___; minimum ___'
+    answer: '$y = (x-3)^{2} + 2$；$(3, 2)$；最小值 $2$'
+    answerEn: '$y = (x-3)^{2} + 2$; $(3, 2)$; minimum $2$'
+    explanation: '$y = (x^{2} - 6x + 9) + 2 = (x-3)^{2} + 2$；顶点 $(3, 2)$；$a = 1 > 0$，最小值为 $2$'
+    explanationEn: '$y = (x-3)^{2}+2$; vertex $(3,2)$; $a=1>0$, minimum $2$'
+
+  - id: q4
+    type: true-false
+    question: '判断：抛物线 $y = a(x - 3)^{2} + 5$ 的对称轴是 $x = -3$。（正确 / 错误？）'
+    questionEn: 'True or False: the axis of symmetry of $y = a(x-3)^{2} + 5$ is $x = -3$.'
+    answer: 错误
+    answerEn: 'False'
+    explanation: '顶点式 $y = a(x-h)^{2}+k$ 中，$h = 3$，对称轴是 $x = 3$，而非 $x = -3$。括号内是"$x-3$"（减号），顶点横坐标是正的 $3$。'
+    explanationEn: 'In vertex form $y = a(x-h)^{2}+k$, $h = 3$, so the axis is $x = 3$, not $x = -3$. The bracket contains "$x-3$" (minus sign), so $h$ is the positive value $3$.'
+
+  - id: q5
+    type: multiple-choice
+    question: |
+      关于 $y = \frac{1}{2}(x - 4)^{2} - 3$ 的说法，正确的是（　　）
+      A. 对称轴 $x = 4$，顶点 $(4, -3)$，开口向上
+      B. 对称轴 $x = -4$，顶点 $(-4, 3)$，开口向上
+      C. 对称轴 $x = 4$，顶点 $(4, -3)$，开口向下
+      D. 对称轴 $x = -4$，顶点 $(-4, -3)$，开口向上
+    questionEn: |
+      Which statement about $y = \frac{1}{2}(x - 4)^{2} - 3$ is correct? (　　)
+      A. Axis $x = 4$, vertex $(4, -3)$, opens upward
+      B. Axis $x = -4$, vertex $(-4, 3)$, opens upward
+      C. Axis $x = 4$, vertex $(4, -3)$, opens downward
+      D. Axis $x = -4$, vertex $(-4, -3)$, opens upward
+    answer: A
+    answerEn: A
+    explanation: '$h = 4, k = -3, a = \frac{1}{2} > 0$（开口向上）；对称轴 $x = 4$，顶点 $(4, -3)$'
+    explanationEn: '$h = 4, k = -3, a = \frac{1}{2} > 0$ (opens upward); axis $x = 4$, vertex $(4,-3)$'
+
+  - id: q6
+    type: computation
+    question: '已知抛物线 $y = ax^{2} + bx + c$ 过点 $(1, 2)$，对称轴为 $x = -1$，$a = 1$，求 $b$ 和 $c$ 的值。'
+    questionEn: 'A parabola $y = ax^{2} + bx + c$ passes through $(1, 2)$, has axis $x = -1$, and $a = 1$. Find $b$ and $c$.'
+    answer: '$b = 2, c = -1$'
+    answerEn: '$b = 2, c = -1$'
+    explanation: '对称轴 $x = -\frac{b}{2} = -1$，得 $b = 2$；代入点 $(1,2)$：$1 + 2 + c = 2$，$c = -1$'
+    explanationEn: 'Axis: $-\frac{b}{2} = -1$, so $b = 2$; substitute $(1,2)$: $1+2+c = 2$, so $c = -1$'
+
+  - id: q7
+    type: fill-in
+    question: '二次函数 $y = x^{2} + 4x + m$ 与 $x$ 轴有两个交点，则 $m$ 的取值范围是___'
+    questionEn: 'The quadratic $y = x^{2} + 4x + m$ has two $x$-intercepts. Find the range of $m$.'
+    answer: '$m < 4$'
+    answerEn: '$m < 4$'
+    explanation: '$\Delta = 16 - 4m > 0$，得 $m < 4$'
+    explanationEn: '$\Delta = 16 - 4m > 0$, so $m < 4$'
+
+  - id: q8
+    type: computation
+    question: '求二次函数 $y = -x^{2} + 4x - 3$ 与 $x$ 轴的交点，并求顶点。'
+    questionEn: 'Find the $x$-intercepts of $y = -x^{2} + 4x - 3$ and its vertex.'
+    answer: '交点 $(1, 0)$ 和 $(3, 0)$；开口向下；顶点 $(2, 1)$'
+    answerEn: 'Intercepts $(1,0)$ and $(3,0)$; opens downward; vertex $(2,1)$'
+    explanation: '$\Delta = 16 - 12 = 4 > 0$；$x = \frac{4 \pm 2}{2}$，$x_{1} = 1, x_{2} = 3$；配方 $y = -(x-2)^{2}+1$，顶点 $(2,1)$'
+    explanationEn: '$\Delta = 4 > 0$; $x = \frac{4\pm2}{2} = 1$ or $3$; complete the square: $y = -(x-2)^{2}+1$, vertex $(2,1)$'
+
+  - id: q9
+    type: true-false
+    question: '判断：若二次函数 $y = ax^{2} + bx + c$ 满足 $a > 0$ 且 $\Delta < 0$，则对任意实数 $x$，都有 $y > 0$。（正确 / 错误？）'
+    questionEn: 'True or False: if $y = ax^{2} + bx + c$ satisfies $a > 0$ and $\Delta < 0$, then $y > 0$ for all real $x$.'
+    answer: 正确
+    answerEn: 'True'
+    explanation: '$a > 0$ 图象开口向上；$\Delta < 0$ 图象与 $x$ 轴无交点；整个图象在 $x$ 轴上方，$y$ 恒大于 $0$'
+    explanationEn: '$a > 0$: opens upward; $\Delta < 0$: no real roots; entire graph above $x$-axis, so $y > 0$ always'
+
+  - id: q10
+    type: fill-in
+    question: '抛物线 $y = 2(x + 1)^{2} - 3$ 是由 $y = 2x^{2}$ 的图象向___平移___个单位，再向___平移___个单位得到的。'
+    questionEn: 'The parabola $y = 2(x + 1)^{2} - 3$ is obtained from $y = 2x^{2}$ by shifting ___ by ___ unit(s), then ___ by ___ unit(s).'
+    answer: '向左平移 $1$ 个单位，再向下平移 $3$ 个单位'
+    answerEn: 'left by $1$ unit, then down by $3$ units'
+    explanation: '$y = 2(x-(-1))^{2}+(-3)$，$h = -1$（向左 $1$），$k = -3$（向下 $3$）'
+    explanationEn: '$y = 2(x-(-1))^{2}+(-3)$: $h=-1$ means shift left 1; $k=-3$ means shift down 3'
+
+  - id: q11
+    type: computation
+    question: '求 $y = -2x^{2} + 8x - 5$ 在 $1 \leq x \leq 4$ 上的最大值和最小值。'
+    questionEn: 'Find the maximum and minimum values of $y = -2x^{2} + 8x - 5$ on $1 \leq x \leq 4$.'
+    answer: '最大值为 $3$（$x = 2$ 时），最小值为 $-5$（$x = 4$ 时）'
+    answerEn: 'Maximum $3$ (at $x = 2$); minimum $-5$ (at $x = 4$)'
+    explanation: |
+      配方：$y = -2(x-2)^{2} + 3$，顶点 $(2, 3)$，$x = 2 \in [1, 4]$，最大值 $3$。
+      端点值：$y(1) = -2+8-5 = 1$；$y(4) = -32+32-5 = -5$。最小值 $-5$（$x = 4$）。
+    explanationEn: |
+      Complete the square: $y = -2(x-2)^{2}+3$; vertex $(2,3)$, $x=2 \in [1,4]$; max $3$.
+      Endpoints: $y(1) = 1$; $y(4) = -5$. Minimum $-5$ at $x=4$.
+
+  - id: q12
+    type: multiple-choice
+    question: |
+      已知 $y = ax^{2} + bx + c$ 的图象：开口向上，对称轴 $x = 2$，与 $y$ 轴交于 $(0, 3)$。
+      则下列正确的是（　　）
+      A. $a > 0, b < 0, c > 0$
+      B. $a > 0, b > 0, c > 0$
+      C. $a > 0, b < 0, c < 0$
+      D. $a < 0, b > 0, c > 0$
+    questionEn: |
+      A parabola $y = ax^{2} + bx + c$ opens upward, has axis $x = 2$, and passes through $(0, 3)$. Which is correct? (　　)
+      A. $a > 0, b < 0, c > 0$
+      B. $a > 0, b > 0, c > 0$
+      C. $a > 0, b < 0, c < 0$
+      D. $a < 0, b > 0, c > 0$
+    answer: A
+    answerEn: A
+    explanation: '开口向上 $a > 0$；对称轴 $-\frac{b}{2a} = 2$，因 $a > 0$，所以 $b < 0$；$y(0) = c = 3 > 0$'
+    explanationEn: 'Opens upward: $a > 0$; axis $-\frac{b}{2a} = 2$ with $a > 0$ gives $b < 0$; $y(0) = c = 3 > 0$'
+
+  - id: q13
+    type: application
+    question: |
+      某工厂每件成本 $20$ 元，定价 $x$ 元（$x > 20$），日销量 $(80 - 2x)$ 件。
+      $(1)$ 写出日利润 $W$（元）关于 $x$ 的函数关系式；
+      $(2)$ 求使日利润最大的定价 $x$ 及最大利润。
+    questionEn: |
+      A factory has cost 20 yuan/unit, price $x$ yuan ($x > 20$), daily sales $(80 - 2x)$ units.
+      $(1)$ Write daily profit $W$ as a function of $x$.
+      $(2)$ Find the optimal price $x$ and maximum profit.
+    answer: '$x = 30$ 元时利润最大，最大利润 $200$ 元'
+    answerEn: 'Maximum profit $200$ yuan at $x = 30$ yuan'
+    explanation: |
+      $(1)$ $W = (x-20)(80-2x) = -2x^{2}+120x-1600$（$20 < x < 40$）
+      $(2)$ 配方：$W = -2(x-30)^{2}+200$，顶点 $(30, 200)$，最大利润 $200$ 元。
+    explanationEn: |
+      $(1)$ $W = (x-20)(80-2x) = -2x^{2}+120x-1600$ ($20 < x < 40$)
+      $(2)$ Complete the square: $W = -2(x-30)^{2}+200$; vertex $(30,200)$; max profit 200 yuan.
+
+  - id: q14
+    type: computation
+    question: '若二次函数 $y = x^{2} + (k-1)x + 4$ 的图象与 $x$ 轴只有一个交点，求 $k$ 的值。'
+    questionEn: 'If $y = x^{2} + (k-1)x + 4$ has exactly one $x$-intercept, find $k$.'
+    answer: '$k = 5$ 或 $k = -3$'
+    answerEn: '$k = 5$ or $k = -3$'
+    explanation: '$\Delta = (k-1)^{2} - 16 = 0$；$(k-1)^{2} = 16$；$k-1 = \pm 4$；$k = 5$ 或 $k = -3$'
+    explanationEn: '$\Delta = (k-1)^{2} - 16 = 0$; $(k-1)^{2} = 16$; $k-1 = \pm 4$; $k = 5$ or $k = -3$'
+
+  - id: q15
+    type: computation
+    question: |
+      已知二次函数图象过点 $(-1, 0)$、$(3, 0)$，且过点 $(0, -3)$。
+      $(1)$ 利用两根式写出函数表达式；
+      $(2)$ 求顶点坐标。
+    questionEn: |
+      A quadratic function passes through $(-1, 0)$, $(3, 0)$, and $(0, -3)$.
+      $(1)$ Use the factored form to find the expression.
+      $(2)$ Find the vertex.
+    answer: '$y = x^{2} - 2x - 3$，顶点 $(1, -4)$'
+    answerEn: '$y = x^{2} - 2x - 3$, vertex $(1,-4)$'
+    explanation: |
+      $(1)$ 两根式：$y = a(x+1)(x-3)$；代入 $(0,-3)$：$-3 = a(1)(-3)$，$a = 1$；$y = x^{2}-2x-3$
+      $(2)$ 配方：$y = (x-1)^{2}-4$，顶点 $(1, -4)$
+    explanationEn: |
+      $(1)$ Factored form: $y = a(x+1)(x-3)$; substitute $(0,-3)$: $-3 = -3a$, so $a=1$; $y = x^{2}-2x-3$
+      $(2)$ Complete the square: $y = (x-1)^{2}-4$, vertex $(1,-4)$
+
+examPrep:
+  intro: |
+    以下 5 道题是本章的综合提升练习，重点考查配方、判别式、最值、图象变换与综合建模。
+    建议先独立思考，再查看解析。注意每道题都有细节"陷阱"！
+  introEn: |
+    The following 5 problems are comprehensive challenge exercises for this chapter.
+    They focus on completing the square, the discriminant, extreme values, graph transformations, and modelling.
+    Attempt each independently before checking the solution — each contains a subtle detail to watch for!
+  problems:
+    - id: ep1
+      type: multiple-choice
+      question: |
+        已知抛物线 $y = ax^{2} + bx + c$（$a \neq 0$）满足：$a < 0$，对称轴在 $y$ 轴**右侧**，$c < 0$。
+        则下列关于 $b$ 的说法，正确的是（　　）
+        A. $b > 0$
+        B. $b < 0$
+        C. $b = 0$
+        D. $b$ 的符号不能确定
+      questionEn: |
+        A parabola $y = ax^{2} + bx + c$ ($a \neq 0$) satisfies: $a < 0$; axis to the **right** of the $y$-axis; $c < 0$.
+        Which statement about $b$ is correct? (　　)
+        A. $b > 0$
+        B. $b < 0$
+        C. $b = 0$
+        D. The sign of $b$ cannot be determined
+      answer: A
+      answerEn: A
+      explanation: |
+        对称轴 $x = -\frac{b}{2a}$ 在 $y$ 轴右侧，即 $-\frac{b}{2a} > 0$。
+        整理：$\frac{b}{2a} < 0$，即 $b$ 和 $a$ 异号。
+        因为 $a < 0$，所以 $b$ 与 $a$ 异号，即 $b > 0$。
+        选 A。（注意 $c < 0$ 是干扰条件，用于后续判断图象特征，不影响 $b$ 的符号。）
+      explanationEn: |
+        Axis $x = -\frac{b}{2a} > 0$ (right of $y$-axis).
+        Rearranging: $\frac{b}{2a} < 0$, so $b$ and $a$ have opposite signs.
+        Since $a < 0$, $b$ must be positive: $b > 0$. Answer A.
+        (The condition $c < 0$ is additional context about the graph, not needed for this specific question.)
+
+    - id: ep2
+      type: computation
+      question: |
+        已知 $y = ax^{2} + bx + c$ 在 $x = 1$ 时取得最大值 $5$，且图象过点 $(3, -3)$。
+        求 $a$、$b$、$c$ 的值。
+      questionEn: |
+        The function $y = ax^{2} + bx + c$ attains its maximum value of $5$ at $x = 1$, and passes through $(3, -3)$.
+        Find $a$, $b$, and $c$.
+      answer: '$a = -2, b = 4, c = 3$'
+      answerEn: '$a = -2, b = 4, c = 3$'
+      explanation: |
+        最大值在 $x = 1$ 处，所以 $a < 0$（开口向下）且顶点为 $(1, 5)$，即 $y = a(x-1)^{2} + 5$。
+        代入点 $(3, -3)$：$-3 = a(2)^{2} + 5 = 4a + 5$，$4a = -8$，$a = -2$。
+        展开：$y = -2(x-1)^{2} + 5 = -2x^{2} + 4x - 2 + 5 = -2x^{2} + 4x + 3$
+        所以 $a = -2, b = 4, c = 3$。
+      explanationEn: |
+        Maximum at $x = 1$ means $a < 0$ and vertex $(1, 5)$: write $y = a(x-1)^{2} + 5$.
+        Substitute $(3,-3)$: $-3 = 4a + 5$, so $a = -2$.
+        Expand: $y = -2(x-1)^{2}+5 = -2x^{2}+4x+3$; hence $a=-2, b=4, c=3$.
+
+    - id: ep3
+      type: computation
+      question: |
+        设 $k$ 为实数，讨论 $y = (k-1)x^{2} - 2x + 3$ 与 $x$ 轴的交点个数。
+        （提示：注意 $k = 1$ 时，这不是二次函数！）
+      questionEn: |
+        Let $k$ be a real number. Determine the number of intersections of $y = (k-1)x^{2} - 2x + 3$ with the $x$-axis.
+        (Hint: when $k = 1$, the equation is not quadratic!)
+      answer: '见解析'
+      answerEn: 'See solution'
+      explanation: |
+        情况一：$k = 1$（线性方程）
+        $y = -2x + 3$，令 $y = 0$：$x = \frac{3}{2}$，与 $x$ 轴有一个交点。
+
+        情况二：$k \neq 1$（二次函数），$a = k-1$
+        $\Delta = (-2)^{2} - 4(k-1)(3) = 4 - 12(k-1) = 16 - 12k$
+
+        $\Delta > 0$：$k < \frac{4}{3}$ 且 $k \neq 1$，即 $k < 1$ 或 $1 < k < \frac{4}{3}$，两个交点
+        $\Delta = 0$：$k = \frac{4}{3}$，一个交点
+        $\Delta < 0$：$k > \frac{4}{3}$，无交点
+      explanationEn: |
+        Case 1: $k = 1$ (linear): $y = -2x+3$; $x = \frac{3}{2}$: one intersection.
+
+        Case 2: $k \neq 1$ (quadratic): $\Delta = 4 - 12(k-1) = 16 - 12k$
+
+        $\Delta > 0$: $k < \frac{4}{3}$ and $k \neq 1$ (i.e. $k < 1$ or $1 < k < \frac{4}{3}$): two intersections
+        $\Delta = 0$: $k = \frac{4}{3}$: one intersection
+        $\Delta < 0$: $k > \frac{4}{3}$: no intersections
+
+    - id: ep4
+      type: computation
+      question: |
+        二次函数 $y = x^{2} - 2x - 3$ 的图象与 $x$ 轴交于 $A$、$B$ 两点，顶点为 $C$。
+        $(1)$ 求 $A$、$B$、$C$ 的坐标；
+        $(2)$ 求 $\triangle ABC$ 的面积。
+      questionEn: |
+        The graph of $y = x^{2} - 2x - 3$ crosses the $x$-axis at $A$ and $B$, with vertex $C$.
+        $(1)$ Find the coordinates of $A$, $B$, and $C$.
+        $(2)$ Find the area of $\triangle ABC$.
+      answer: '$A(-1,0), B(3,0), C(1,-4)$；面积 $= 8$'
+      answerEn: '$A(-1,0), B(3,0), C(1,-4)$; area $= 8$'
+      explanation: |
+        $(1)$ 令 $y = 0$：$(x-3)(x+1) = 0$，$x = 3$ 或 $x = -1$；$A(-1, 0)$，$B(3, 0)$。
+        配方：$y = (x-1)^{2} - 4$，顶点 $C(1, -4)$。
+
+        $(2)$ 底边 $|AB| = 3-(-1) = 4$；$C$ 到 $x$ 轴的高 $= |-4| = 4$。
+        $S = \frac{1}{2} \times 4 \times 4 = 8$。
+      explanationEn: |
+        $(1)$ Set $y = 0$: $(x-3)(x+1) = 0$; $A(-1,0)$, $B(3,0)$.
+        Complete the square: $y = (x-1)^{2}-4$, vertex $C(1,-4)$.
+
+        $(2)$ Base $|AB| = 4$; height from $C$ to $x$-axis $= 4$.
+        Area $= \frac{1}{2} \times 4 \times 4 = 8$.
+
+    - id: ep5
+      type: computation
+      question: |
+        抛物线 $y = ax^{2} + bx + c$ 满足以下三个条件：
+        ① 开口向下；
+        ② 对称轴为 $x = 3$；
+        ③ 经过点 $(1, 0)$。
+        $(1)$ 求 $b$ 和 $a$ 的关系；
+        $(2)$ 求 $y$ 轴截距（即 $c$ 的表达式）；
+        $(3)$ 若还知道图象经过点 $(5, 0)$，利用抛物线的对称性（不用解方程）验证这一点是否成立，并写出完整的函数表达式。
+      questionEn: |
+        A parabola $y = ax^{2} + bx + c$ satisfies:
+        (1) opens downward;
+        (2) axis of symmetry $x = 3$;
+        (3) passes through $(1, 0)$.
+        (a) Find the relationship between $b$ and $a$.
+        (b) Express $c$ in terms of $a$.
+        (c) If the parabola also passes through $(5, 0)$, verify this using symmetry (without solving equations), and write the complete expression when $a = -1$.
+      answer: '$b = -6a$；$c = -a - b = -a + 6a = 5a$；点 $(5,0)$ 关于 $x=3$ 与 $(1,0)$ 对称，成立；当 $a=-1$ 时 $y = -x^{2} + 6x - 5$'
+      answerEn: '$b = -6a$; $c = 5a$; $(5,0)$ is symmetric to $(1,0)$ about $x=3$, confirmed; when $a=-1$: $y = -x^{2}+6x-5$'
+      explanation: |
+        $(1)$ 对称轴 $x = -\frac{b}{2a} = 3$，所以 $b = -6a$。
+        开口向下：$a < 0$（条件①）。
+
+        $(2)$ 经过点 $(1, 0)$：$a(1)^{2} + b(1) + c = 0$，即 $a + b + c = 0$，$c = -a - b = -a - (-6a) = 5a$。
+
+        $(3)$ 对称轴 $x = 3$，点 $(1, 0)$ 到对称轴的距离为 $3 - 1 = 2$，
+        因此关于对称轴的对称点横坐标为 $3 + 2 = 5$，纵坐标相同（均为 $0$）。
+        所以 $(5, 0)$ 一定也在图象上。
+
+        当 $a = -1$ 时：$b = 6, c = -5$，$y = -x^{2} + 6x - 5$。
+        验证：$y(1) = -1+6-5 = 0$ ✓；$y(5) = -25+30-5 = 0$ ✓。
+      explanationEn: |
+        (a) Axis $-\frac{b}{2a} = 3$, so $b = -6a$. $a < 0$ (opens downward).
+        (b) Through $(1,0)$: $a + b + c = 0$, so $c = -a - b = -a + 6a = 5a$.
+        (c) $(1,0)$ is distance $2$ from axis $x=3$; the symmetric point is at $x = 3+2 = 5$, same $y = 0$. So $(5,0)$ is automatically on the graph.
+        When $a=-1$: $b=6, c=-5$; $y = -x^{2}+6x-5$. Check: $y(1) = 0$ ✓; $y(5) = 0$ ✓.
+
+summary: |
+  本章我们系统学习了<<二次函数/quadratic function>>的核心知识：
+
+  **1. 三种形式与相互转换**
+  - 一般式 $y = ax^{2} + bx + c$ 通过配方化为顶点式 $y = a(x-h)^{2} + k$
+  - 顶点式直接给出顶点 $(h, k)$ 和对称轴 $x = h$
+  - 两根式 $y = a(x-x_{1})(x-x_{2})$ 直接给出 $x$ 轴交点
+
+  **2. 图象（抛物线）的关键特征**
+  - $a > 0$：开口向上，顶点最低；$a < 0$：开口向下，顶点最高
+  - $|a|$ 越大越窄，$|a|$ 越小越宽
+  - 图象关于对称轴 $x = h$ 对称
+
+  **3. 判别式与交点**
+  $\Delta = b^{2} - 4ac$：$\Delta > 0$ 两个交点；$\Delta = 0$ 一个切点；$\Delta < 0$ 无交点
+
+  **4. 最值**
+  顶点纵坐标 $k$ 就是极值；有限区间上还需比较端点值
+
+  **5. 实际应用**
+  建立模型 → 配方求顶点 → 检验范围 → 解答
+
+summaryEn: |
+  In this chapter we systematically studied the core knowledge of <<二次函数/quadratic function>>s:
+
+  **1. Three forms and conversions**
+  - General form $y = ax^{2} + bx + c$, completed-square to vertex form $y = a(x-h)^{2} + k$
+  - Vertex form directly gives vertex $(h, k)$ and axis $x = h$
+  - Factored form $y = a(x-x_{1})(x-x_{2})$ directly gives $x$-intercepts
+
+  **2. Key features of the parabola**
+  - $a > 0$: opens upward, vertex is lowest; $a < 0$: opens downward, vertex is highest
+  - Larger $|a|$ means narrower; smaller $|a|$ means wider
+  - Graph is symmetric about the axis $x = h$
+
+  **3. Discriminant and intercepts**
+  $\Delta = b^{2} - 4ac$: $\Delta > 0$ two intercepts; $\Delta = 0$ one tangent point; $\Delta < 0$ no intercepts
+
+  **4. Extreme values**
+  Vertex $y$-coordinate $k$ is the extreme value; on a closed interval also compare endpoint values
+
+  **5. Real-world applications**
+  Build a model → complete the square → check feasible range → answer

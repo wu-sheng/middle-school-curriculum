@@ -1,0 +1,1106 @@
+title: 因式分解
+titleEn: Factorization
+chapter: 4
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟
+estimatedTimeEn: 'Session 1 ~55 min · Session 2 ~55 min'
+targetAudience: 小学3年级自学生（已完成七年级整式乘除法），自学材料，由简入深
+
+objectives:
+  - 理解<<因式分解/factorization>>的含义，明确它是<<整式乘法/polynomial multiplication>>的逆运算
+  - 掌握<<提公因式法/factoring out the common factor>>，能提取单项式<<公因式/common factor>>和多项式<<公因式/common factor>>
+  - 掌握<<平方差公式/difference of squares formula>>的逆用：$a^{2} - b^{2} = (a+b)(a-b)$
+  - 掌握<<完全平方公式/perfect square formula>>的逆用：$a^{2} \pm 2ab + b^{2} = (a \pm b)^{2}$
+  - 能综合运用多种方法对多项式进行彻底分解
+  - 了解<<因式分解/factorization>>在解方程中的初步应用
+objectivesEn:
+  - Understand the meaning of <<因式分解/factorization>> and recognize it as the reverse of <<整式乘法/polynomial multiplication>>
+  - Master <<提公因式法/factoring out the common factor>> for both monomial and polynomial common factors
+  - 'Master the reverse application of the <<平方差公式/difference of squares formula>>: $a^{2} - b^{2} = (a+b)(a-b)$'
+  - 'Master the reverse application of the <<完全平方公式/perfect square formula>>: $a^{2} \pm 2ab + b^{2} = (a \pm b)^{2}$'
+  - Be able to factor polynomials completely using multiple methods in combination
+  - Gain an introductory understanding of how <<因式分解/factorization>> is applied to solving equations
+
+prerequisites:
+  title: 从整式乘法出发——展开与分解互为逆运算
+  titleEn: "Starting from polynomial multiplication — expanding and factoring are reverse operations"
+  intro: |
+    在七年级，我们学习了整式乘法（展开），能够把积展开成和的形式：
+  introEn: |
+    In Grade 7, we studied polynomial multiplication (expanding), turning products into sums:
+  knownNumbers:
+    - '$3xy(2x - 3y) = 6x^{2}y - 9xy^{2}$（分配律展开）'
+    - '$(a+b)(a-b) = a^{2} - b^{2}$（平方差公式）'
+    - '$(a+b)^{2} = a^{2} + 2ab + b^{2}$（完全平方公式）'
+  knownNumbersEn:
+    - '$3xy(2x - 3y) = 6x^{2}y - 9xy^{2}$ (expanding with the distributive law)'
+    - '$(a+b)(a-b) = a^{2} - b^{2}$ (difference of squares formula)'
+    - '$(a+b)^{2} = a^{2} + 2ab + b^{2}$ (perfect square formula)'
+  canSolve:
+    - 把乘积展开成多项式的和
+    - 运用乘法公式正向计算
+    - 合并同类项化简多项式
+  canSolveEn:
+    - Expand a product into a sum of polynomials
+    - Apply multiplication formulas in the forward direction
+    - Simplify polynomials by combining like terms
+  cannotSolve:
+    - '已知 $6x^{2}y - 9xy^{2}$，如何把它写成乘积的形式？'
+    - '已知 $x^{2} - 9$，它能不能写成两个因式之积？'
+    - '$x^{2} + 6x + 9$ 能否写成某个式子的平方？'
+    - '方程 $x^{2} - 5x + 6 = 0$ 如何利用分解来求解？'
+  cannotSolveEn:
+    - 'Given $6x^{2}y - 9xy^{2}$, how can it be written as a product?'
+    - 'Given $x^{2} - 9$, can it be written as a product of two factors?'
+    - 'Can $x^{2} + 6x + 9$ be written as the square of some expression?'
+    - 'How can factoring help solve the equation $x^{2} - 5x + 6 = 0$?'
+  conclusion: |
+    乘法是"积 ← 因式之积"，而**<<因式分解/factorization>>**则是反方向——把一个多项式写成若干个**<<因式/factor>>**（整式）的乘积。这两者互为逆运算，就像乘法和除法的关系一样。
+
+    在整数中我们也做类似的事：$12 = 2 \times 6 = 3 \times 4 = 2^{2} \times 3$，把整数分解为质因数之积。<<因式分解/factorization>>就是把多项式分解为更简单的因式之积。
+  conclusionEn: |
+    Multiplication goes "factors → product," while **<<因式分解/factorization>>** goes the other way — writing a polynomial as a product of several **<<因式/factor>>s** (integral expressions). They are reverse operations, just like multiplication and division.
+
+    We do something similar with integers: $12 = 2 \times 6 = 3 \times 4 = 2^{2} \times 3$, breaking a number into a product of prime factors. <<因式分解/factorization>> does the same for polynomials.
+
+concepts:
+  - id: factorization-meaning
+    title: <<因式分解/factorization>>的意义
+    titleEn: The meaning of <<因式分解/factorization>>
+    content: |
+      把一个**多项式**化成几个**<<整式/integral expression>>的乘积**的形式，这种变形叫做这个多项式的**<<因式分解/factorization>>**（也叫**分解因式**）。
+
+      与整式乘法的关系：
+
+      $$\underbrace{(a+b)(a-b)}_{\text{因式之积}} \xrightarrow{\text{展开（乘法）}} \underbrace{a^{2} - b^{2}}_{\text{多项式}}$$
+
+      $$\underbrace{a^{2} - b^{2}}_{\text{多项式}} \xrightarrow{\text{因式分解}} \underbrace{(a+b)(a-b)}_{\text{因式之积}}$$
+
+      **数的类比**：正如 $12 = 2^{2} \times 3$，多项式也可以分解成不可再分的因式之积。分解必须彻底——每个因式都不能再继续分解（在整数范围内）。
+    contentEn: |
+      Transforming a **polynomial** into a **product of several <<整式/integral expression>>s** is called **<<因式分解/factorization>>** (also called "factoring") of that polynomial.
+
+      Its relationship with polynomial multiplication:
+
+      $$\underbrace{(a+b)(a-b)}_{\text{product of factors}} \xrightarrow{\text{expand (multiply)}} \underbrace{a^{2} - b^{2}}_{\text{polynomial}}$$
+
+      $$\underbrace{a^{2} - b^{2}}_{\text{polynomial}} \xrightarrow{\text{factor}} \underbrace{(a+b)(a-b)}_{\text{product of factors}}$$
+
+      **Number analogy**: Just as $12 = 2^{2} \times 3$, a polynomial can be broken into a product of irreducible factors. Factoring must be complete — each factor cannot be factored further (over the integers).
+    examples:
+      - '$6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$（提公因式法）'
+      - '$a^{2} - b^{2} = (a+b)(a-b)$（平方差公式逆用）'
+      - '$x^{2} + 4x + 4 = (x+2)^{2}$（完全平方公式逆用）'
+      - '$12 = 2^{2} \times 3$（整数质因数分解，与因式分解类比）'
+    examplesEn:
+      - '$6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$ (factoring out the common factor)'
+      - '$a^{2} - b^{2} = (a+b)(a-b)$ (reverse use of difference of squares)'
+      - '$x^{2} + 4x + 4 = (x+2)^{2}$ (reverse use of perfect square formula)'
+      - '$12 = 2^{2} \times 3$ (prime factorization of an integer — analogous to polynomial factoring)'
+    notes:
+      - '因式分解的结果必须是**乘积**形式，不能是和的形式。$x^{2} - 9 = (x+3)(x-3)$ ✓，而不是写成 $x^{2} - 9$（这已经是多项式，没有分解）'
+      - '分解必须**彻底**：$2x^{2} - 8 = 2(x^{2} - 4)$ 还没分解彻底，正确结果是 $2(x+2)(x-2)$'
+      - '验证方法：把结果展开，看是否回到原多项式'
+    notesEn:
+      - 'The result of factoring must be in **product** form, not sum form. $x^{2} - 9 = (x+3)(x-3)$ ✓, not left as $x^{2} - 9$ (which is still a polynomial, unfactored)'
+      - 'Factoring must be **complete**: $2x^{2} - 8 = 2(x^{2} - 4)$ is not fully factored; the correct result is $2(x+2)(x-2)$'
+      - 'Verification: expand the result and check that it returns to the original polynomial'
+
+  - id: common-factor-method
+    title: <<提公因式法/factoring out the common factor>>
+    titleEn: <<提公因式法/factoring out the common factor>>
+    content: |
+      如果一个多项式的各项含有**公共的因式**，就可以把这个公因式提取出来，这种方法叫做**<<提公因式法/factoring out the common factor>>**。
+
+      本质是逆用分配律：$ma + mb = m(a + b)$。
+
+      **如何找<<公因式/common factor>>（最大公因式）？**
+
+      1. **系数**：取各项系数的**最大公约数**
+      2. **字母**：取各项都含有的字母，指数取**最小的**
+      3. 把上面两步的结果相乘，就是<<公因式/common factor>>
+
+      **例**：$6x^{2}y - 9xy^{2}$
+      - 系数：$\gcd(6, 9) = 3$
+      - 字母：都有 $x$（最小指数 $1$）和 $y$（最小指数 $1$）
+      - <<公因式/common factor>>：$3xy$
+      - 结果：$6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$
+    contentEn: |
+      If every term in a polynomial shares a **common factor**, that factor can be pulled out — this method is called **<<提公因式法/factoring out the common factor>>**.
+
+      It is essentially the reverse of the distributive law: $ma + mb = m(a + b)$.
+
+      **How to find the <<公因式/common factor>> (greatest common factor)?**
+
+      1. **Coefficient**: take the **GCF** of all the coefficients
+      2. **Letters**: take every letter that appears in all terms, using the **smallest** exponent
+      3. Multiply the results of the two steps above to get the <<公因式/common factor>>
+
+      **Example**: $6x^{2}y - 9xy^{2}$
+      - Coefficients: $\gcd(6, 9) = 3$
+      - Letters: both have $x$ (min exponent $1$) and $y$ (min exponent $1$)
+      - <<公因式/common factor>>: $3xy$
+      - Result: $6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$
+    examples:
+      - '$4a + 8 = 4(a + 2)$（公因式是 $4$）'
+      - '$6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$（公因式是 $3xy$）'
+      - '$x^{3} - x^{2} + x = x(x^{2} - x + 1)$（公因式是 $x$）'
+      - '$-x^{2} + 4x = -x(x - 4)$（提出负号；注意括号内符号变化）'
+    examplesEn:
+      - '$4a + 8 = 4(a + 2)$ (common factor is $4$)'
+      - '$6x^{2}y - 9xy^{2} = 3xy(2x - 3y)$ (common factor is $3xy$)'
+      - '$x^{3} - x^{2} + x = x(x^{2} - x + 1)$ (common factor is $x$)'
+      - '$-x^{2} + 4x = -x(x - 4)$ (factoring out a negative; note the sign changes inside)'
+    notes:
+      - '提出<<公因式/common factor>>后，括号内的因式不能再有公因式，否则分解不彻底'
+      - '当最高次项的系数为负时，习惯上把负号也提出来，使括号内第一项系数为正'
+      - '验证方法：展开检验，把提出的因式重新乘回括号内，应还原成原式'
+    notesEn:
+      - 'After factoring out the <<公因式/common factor>>, the remaining factor inside the parentheses must have no further common factor; otherwise the factoring is incomplete'
+      - 'When the leading coefficient is negative, it is conventional to also factor out the negative sign so the first term inside the parentheses has a positive coefficient'
+      - 'Verification: expand to check — multiply the factored-out term back in and confirm you get the original expression'
+
+  - id: difference-of-squares-factoring
+    title: <<平方差公式/difference of squares formula>>的逆用
+    titleEn: Reverse use of the <<平方差公式/difference of squares formula>>
+    content: |
+      <<平方差公式/difference of squares formula>>的正向形式（乘法展开）：
+
+      $$(a+b)(a-b) = a^{2} - b^{2}$$
+
+      逆用（<<因式分解/factorization>>）：
+
+      $$a^{2} - b^{2} = (a+b)(a-b)$$
+
+      **识别模式**：要用平方差公式分解，需要同时满足：
+      1. 恰好是**两项**（二项式）
+      2. 两项都是**完全平方数/式**（即某个整式的平方）
+      3. 两项之间是**减号**（差，不是和）
+
+      **注意**：$a^{2} + b^{2}$（**平方和**）在实数范围内**不能**用平方差公式分解！
+
+      **生活类比**：$99^{2} - 1^{2} = (99+1)(99-1) = 100 \times 98 = 9800$，比直接计算 $99^{2} = 9801$ 再减 $1$ 更方便。
+    contentEn: |
+      The <<平方差公式/difference of squares formula>> in forward form (multiplication):
+
+      $$(a+b)(a-b) = a^{2} - b^{2}$$
+
+      Reversed (<<因式分解/factorization>>):
+
+      $$a^{2} - b^{2} = (a+b)(a-b)$$
+
+      **Recognition pattern**: to apply the difference of squares formula, all three conditions must hold:
+      1. Exactly **two terms** (a binomial)
+      2. Both terms are **perfect squares** (i.e., the square of some integral expression)
+      3. The sign between the two terms is **minus** (a difference, not a sum)
+
+      **Note**: $a^{2} + b^{2}$ (a **sum** of squares) **cannot** be factored using the difference of squares formula over the real numbers!
+
+      **Real-life analogy**: $99^{2} - 1^{2} = (99+1)(99-1) = 100 \times 98 = 9800$ — much easier than computing $99^{2} = 9801$ then subtracting $1$.
+    examples:
+      - '$x^{2} - 4 = (x+2)(x-2)$（$a = x$，$b = 2$）'
+      - '$9a^{2} - 16 = (3a+4)(3a-4)$（$a = 3a$，$b = 4$）'
+      - '$4x^{2} - 25y^{2} = (2x+5y)(2x-5y)$（$a = 2x$，$b = 5y$）'
+      - '$x^{2} + 4$ 不能用平方差公式分解（两项符号为 $+$，是平方和）'
+    examplesEn:
+      - '$x^{2} - 4 = (x+2)(x-2)$ (with $a = x$, $b = 2$)'
+      - '$9a^{2} - 16 = (3a+4)(3a-4)$ (with $a = 3a$, $b = 4$)'
+      - '$4x^{2} - 25y^{2} = (2x+5y)(2x-5y)$ (with $a = 2x$, $b = 5y$)'
+      - '$x^{2} + 4$ cannot be factored by difference of squares (it is a sum of squares, not a difference)'
+    notes:
+      - '使用平方差公式前，先确认两项都是完全平方：$9a^{2} = (3a)^{2}$ ✓，$16 = 4^{2}$ ✓'
+      - '平方差公式不适用于平方和：$x^{2} + 4$ 在实数范围内是质式（不可分解）'
+      - '结果中 $(a+b)$ 和 $(a-b)$ 的顺序可以互换，乘法满足交换律'
+    notesEn:
+      - 'Before applying the difference of squares formula, confirm both terms are perfect squares: $9a^{2} = (3a)^{2}$ ✓, $16 = 4^{2}$ ✓'
+      - 'The formula does not apply to a sum of squares: $x^{2} + 4$ is irreducible over the real numbers'
+      - 'The order of $(a+b)$ and $(a-b)$ in the result can be swapped — multiplication is commutative'
+
+  - id: perfect-square-factoring
+    title: <<完全平方公式/perfect square formula>>的逆用
+    titleEn: Reverse use of the <<完全平方公式/perfect square formula>>
+    content: |
+      <<完全平方公式/perfect square formula>>的正向形式（乘法展开）：
+
+      $$(a+b)^{2} = a^{2} + 2ab + b^{2}$$
+      $$(a-b)^{2} = a^{2} - 2ab + b^{2}$$
+
+      逆用（<<因式分解/factorization>>）：
+
+      $$a^{2} + 2ab + b^{2} = (a+b)^{2}$$
+      $$a^{2} - 2ab + b^{2} = (a-b)^{2}$$
+
+      **识别完全平方三项式的三步法**：
+      1. 是否为**三项式**？
+      2. 首、末两项是否都是**完全平方数/式**（非负）？
+      3. **中间项**是否恰好等于 $\pm 2 \times \sqrt{\text{首项}} \times \sqrt{\text{末项}}$？
+
+      三个条件全满足，才是完全平方三项式。
+
+      **易错警示**：
+      - $x^{2} + 6x + 9$：中间项 $6x = 2 \times x \times 3$ ✓ → $(x+3)^{2}$ ✓
+      - $x^{2} + 5x + 4$：中间项应为 $2 \times x \times 2 = 4x \neq 5x$ ✗ → **不是**完全平方三项式
+    contentEn: |
+      The <<完全平方公式/perfect square formula>> in forward form (multiplication):
+
+      $$(a+b)^{2} = a^{2} + 2ab + b^{2}$$
+      $$(a-b)^{2} = a^{2} - 2ab + b^{2}$$
+
+      Reversed (<<因式分解/factorization>>):
+
+      $$a^{2} + 2ab + b^{2} = (a+b)^{2}$$
+      $$a^{2} - 2ab + b^{2} = (a-b)^{2}$$
+
+      **Three-step check for a perfect square trinomial**:
+      1. Is it a **trinomial** (three terms)?
+      2. Are the first and last terms both **perfect squares** (non-negative)?
+      3. Is the **middle term** exactly $\pm 2 \times \sqrt{\text{first term}} \times \sqrt{\text{last term}}$?
+
+      All three conditions must hold for it to be a perfect square trinomial.
+
+      **Common error warning**:
+      - $x^{2} + 6x + 9$: middle term $6x = 2 \times x \times 3$ ✓ → $(x+3)^{2}$ ✓
+      - $x^{2} + 5x + 4$: middle term should be $2 \times x \times 2 = 4x \neq 5x$ ✗ → **not** a perfect square trinomial
+    examples:
+      - '$x^{2} + 6x + 9 = (x+3)^{2}$（$a=x$，$b=3$，中间项 $6x = 2 \cdot x \cdot 3$ ✓）'
+      - '$x^{2} - 10x + 25 = (x-5)^{2}$（$a=x$，$b=5$，中间项 $-10x = -2 \cdot x \cdot 5$ ✓）'
+      - '$4x^{2} + 12x + 9 = (2x+3)^{2}$（$a=2x$，$b=3$，中间项 $12x = 2 \cdot 2x \cdot 3$ ✓）'
+      - '$x^{2} + 5x + 4$ 不是完全平方三项式（$5x \neq 2 \cdot x \cdot 2 = 4x$）'
+    examplesEn:
+      - '$x^{2} + 6x + 9 = (x+3)^{2}$ ($a=x$, $b=3$, middle term $6x = 2 \cdot x \cdot 3$ ✓)'
+      - '$x^{2} - 10x + 25 = (x-5)^{2}$ ($a=x$, $b=5$, middle term $-10x = -2 \cdot x \cdot 5$ ✓)'
+      - '$4x^{2} + 12x + 9 = (2x+3)^{2}$ ($a=2x$, $b=3$, middle term $12x = 2 \cdot 2x \cdot 3$ ✓)'
+      - '$x^{2} + 5x + 4$ is not a perfect square trinomial ($5x \neq 2 \cdot x \cdot 2 = 4x$)'
+    notes:
+      - '末项必须为**正数**（完全平方不能为负），若末项为负，一定不是完全平方三项式'
+      - '检验中间项时要带上符号：中间项为负号对应 $(a-b)^{2}$，正号对应 $(a+b)^{2}$'
+      - '完全平方三项式分解后只有**一个**因式（有重根），如 $(x+3)^{2}$ 是 $(x+3)$ 的平方'
+    notesEn:
+      - 'The last term must be **positive** (a perfect square cannot be negative); if the last term is negative, it is definitely not a perfect square trinomial'
+      - 'Check the sign of the middle term: a negative middle term corresponds to $(a-b)^{2}$; a positive middle term corresponds to $(a+b)^{2}$'
+      - 'A perfect square trinomial factors into just **one** factor (a repeated root), e.g. $(x+3)^{2}$ is the square of $(x+3)$'
+
+  - id: combined-factorization
+    title: 综合<<因式分解/factorization>>（先提公因式，再用公式）
+    titleEn: Combined <<因式分解/factorization>> (factor out common factor first, then apply formulas)
+    content: |
+      实际题目中，往往需要**综合使用**多种方法。
+
+      **黄金法则：先提公因式，再用公式。**
+
+      步骤：
+      1. **首先**检查各项是否有公因式，有则提出
+      2. **然后**观察括号内是否符合平方差或完全平方的模式
+      3. 反复检查，直到每个因式都不能再分解为止
+
+      **典型错误**：直接用公式，忘记先提公因式
+      - 错误：$2x^{2} - 8$（直接套平方差？$2x^{2}$ 不是完全平方……）
+      - 正确：先提 $2$：$2x^{2} - 8 = 2(x^{2} - 4) = 2(x+2)(x-2)$
+
+      **多步分解示例**：$x^{4} - 1$
+      1. 两项，都是完全平方，中间是减号 → 平方差：$(x^{2}+1)(x^{2}-1)$
+      2. $x^{2}+1$ 不能再分解；$x^{2}-1$ 还是平方差 → $(x^{2}+1)(x+1)(x-1)$
+    contentEn: |
+      In practice, problems often require **combining multiple methods**.
+
+      **Golden rule: factor out the common factor first, then apply formulas.**
+
+      Steps:
+      1. **First** check whether the terms share a common factor; if so, factor it out
+      2. **Then** examine whether the expression inside the parentheses fits the difference of squares or perfect square pattern
+      3. Repeat until each factor cannot be factored further
+
+      **Typical mistake**: jumping straight to a formula without factoring out the common factor first
+      - Wrong: $2x^{2} - 8$ (try difference of squares directly? But $2x^{2}$ is not a perfect square...)
+      - Correct: factor out $2$ first: $2x^{2} - 8 = 2(x^{2} - 4) = 2(x+2)(x-2)$
+
+      **Multi-step example**: $x^{4} - 1$
+      1. Two terms, both perfect squares, minus sign between → difference of squares: $(x^{2}+1)(x^{2}-1)$
+      2. $x^{2}+1$ cannot be factored further; $x^{2}-1$ is still a difference of squares → $(x^{2}+1)(x+1)(x-1)$
+    examples:
+      - '$2x^{2} - 8 = 2(x^{2} - 4) = 2(x+2)(x-2)$（先提 $2$，再平方差）'
+      - '$3x^{2} - 12x + 12 = 3(x^{2} - 4x + 4) = 3(x-2)^{2}$（先提 $3$，再完全平方）'
+      - '$x^{4} - 1 = (x^{2}+1)(x^{2}-1) = (x^{2}+1)(x+1)(x-1)$（两次平方差）'
+      - '$2a^{3} - 2a = 2a(a^{2} - 1) = 2a(a+1)(a-1)$（先提 $2a$，再平方差）'
+    examplesEn:
+      - '$2x^{2} - 8 = 2(x^{2} - 4) = 2(x+2)(x-2)$ (factor out $2$ first, then difference of squares)'
+      - '$3x^{2} - 12x + 12 = 3(x^{2} - 4x + 4) = 3(x-2)^{2}$ (factor out $3$ first, then perfect square)'
+      - '$x^{4} - 1 = (x^{2}+1)(x^{2}-1) = (x^{2}+1)(x+1)(x-1)$ (difference of squares twice)'
+      - '$2a^{3} - 2a = 2a(a^{2} - 1) = 2a(a+1)(a-1)$ (factor out $2a$ first, then difference of squares)'
+    notes:
+      - '每次分解后都要问自己："括号内还能继续分解吗？"直到所有因式都不可分解为止'
+      - '最终结果中，每个括号内的多项式因式应为"质式"（不可再分解的整式）'
+      - '不同的分解顺序会得到相同的最终结果（因式分解结果的唯一性）'
+    notesEn:
+      - 'After each step, ask yourself: "Can the expression inside the parentheses be factored further?" Continue until all factors are irreducible'
+      - 'In the final result, each polynomial factor inside parentheses should be "prime" (an integral expression that cannot be factored further)'
+      - 'Different orders of factoring steps lead to the same final result (uniqueness of factored form)'
+
+realLife:
+  - category: 面积计算
+    categoryEn: Area calculations
+    positive: '正方形面积 $A = a^{2}$，$B = b^{2}$，两者之差 $a^{2} - b^{2} = (a+b)(a-b)$：例如边长 $7$ 和边长 $3$ 的两个正方形，面积差为 $(7+3)(7-3) = 40$'
+    positiveEn: 'Areas of two squares: $a^{2}$ and $b^{2}$. Their difference $a^{2} - b^{2} = (a+b)(a-b)$. E.g., two squares with sides $7$ and $3$ have area difference $(7+3)(7-3) = 40$'
+    negative: '围栏问题：一块长 $(a+b)$ 米、宽 $(a-b)$ 米的矩形土地，面积为 $a^{2} - b^{2}$ 平方米'
+    negativeEn: 'Fencing problem: a rectangular plot $(a+b)$ m long and $(a-b)$ m wide has area $a^{2} - b^{2}$ square metres'
+  - category: 心算技巧
+    categoryEn: Mental arithmetic tricks
+    positive: '$101 \times 99 = (100+1)(100-1) = 100^{2} - 1^{2} = 9999$（平方差公式秒算）'
+    positiveEn: '$101 \times 99 = (100+1)(100-1) = 100^{2} - 1^{2} = 9999$ (instant calculation using difference of squares)'
+    negative: '$98^{2} = (100-2)^{2} = 10000 - 400 + 4 = 9604$（完全平方公式简化计算）'
+    negativeEn: '$98^{2} = (100-2)^{2} = 10000 - 400 + 4 = 9604$ (perfect square formula simplifies calculation)'
+  - category: 解方程应用
+    categoryEn: Equation solving
+    positive: '方程 $x^{2} - 9 = 0$ → $(x+3)(x-3) = 0$ → $x = 3$ 或 $x = -3$（因式分解帮助求根）'
+    positiveEn: 'Equation $x^{2} - 9 = 0$ → $(x+3)(x-3) = 0$ → $x = 3$ or $x = -3$ (factoring helps find the roots)'
+    negative: '方程 $x^{2} + 4x + 4 = 0$ → $(x+2)^{2} = 0$ → $x = -2$（完全平方，唯一解）'
+    negativeEn: 'Equation $x^{2} + 4x + 4 = 0$ → $(x+2)^{2} = 0$ → $x = -2$ (perfect square, unique solution)'
+
+examples:
+  - type: 1
+    title: 提公因式法
+    titleEn: Factoring by the common factor method
+    question: |
+      对下列多项式进行<<因式分解/factorization>>：
+
+      （1）$12x^{2}y - 8xy^{2}$
+      （2）$-3a^{2} + 6ab$
+    questionEn: |
+      Factor the following polynomials:
+
+      (1) $12x^{2}y - 8xy^{2}$
+      (2) $-3a^{2} + 6ab$
+    steps:
+      - '（1）找<<公因式/common factor>>：系数 $\gcd(12, 8) = 4$；字母：两项都有 $x$（最小指数 $1$）和 $y$（最小指数 $1$）；故<<公因式/common factor>>为 $4xy$'
+      - '$12x^{2}y \div 4xy = 3x$，$8xy^{2} \div 4xy = 2y$'
+      - '提公因式：$12x^{2}y - 8xy^{2} = 4xy(3x - 2y)$'
+      - '验证（展开）：$4xy \times 3x - 4xy \times 2y = 12x^{2}y - 8xy^{2}$ ✓'
+      - '（2）最高次项 $-3a^{2}$ 系数为负，通常提出负号；系数 $\gcd(3, 6) = 3$；字母：两项都有 $a$（最小指数 $1$）'
+      - '<<公因式/common factor>>为 $-3a$（含负号）'
+      - '$-3a^{2} \div (-3a) = a$，$6ab \div (-3a) = -2b$'
+      - '结果：$-3a^{2} + 6ab = -3a(a - 2b)$'
+    stepsEn:
+      - '(1) Find <<公因式/common factor>>: coefficient $\gcd(12, 8) = 4$; letters: both terms have $x$ (min exponent $1$) and $y$ (min exponent $1$); so <<公因式/common factor>> is $4xy$'
+      - '$12x^{2}y \div 4xy = 3x$, $8xy^{2} \div 4xy = 2y$'
+      - 'Factor out: $12x^{2}y - 8xy^{2} = 4xy(3x - 2y)$'
+      - 'Verify (expand): $4xy \times 3x - 4xy \times 2y = 12x^{2}y - 8xy^{2}$ ✓'
+      - '(2) The leading term $-3a^{2}$ has a negative coefficient; convention is to factor out the negative sign. Coefficient $\gcd(3, 6) = 3$; letters: both have $a$ (min exponent $1$)'
+      - '<<公因式/common factor>> is $-3a$ (including the negative sign)'
+      - '$-3a^{2} \div (-3a) = a$, $6ab \div (-3a) = -2b$'
+      - 'Result: $-3a^{2} + 6ab = -3a(a - 2b)$'
+    answer: '（1）$4xy(3x - 2y)$；（2）$-3a(a - 2b)$'
+    answerEn: '(1) $4xy(3x - 2y)$; (2) $-3a(a - 2b)$'
+
+  - type: 2
+    title: 平方差公式分解
+    titleEn: Factoring using the difference of squares formula
+    question: |
+      对下列各式进行<<因式分解/factorization>>：
+
+      （1）$x^{2} - 16$
+      （2）$9a^{2} - 4b^{2}$
+      （3）$49 - (x+1)^{2}$
+    questionEn: |
+      Factor each of the following:
+
+      (1) $x^{2} - 16$
+      (2) $9a^{2} - 4b^{2}$
+      (3) $49 - (x+1)^{2}$
+    steps:
+      - '（1）识别：$x^{2} = x^{2}$（完全平方），$16 = 4^{2}$（完全平方），中间是减号 → 平方差'
+      - '$x^{2} - 16 = x^{2} - 4^{2} = (x+4)(x-4)$'
+      - '（2）识别：$9a^{2} = (3a)^{2}$，$4b^{2} = (2b)^{2}$，中间是减号 → 平方差'
+      - '$9a^{2} - 4b^{2} = (3a)^{2} - (2b)^{2} = (3a+2b)(3a-2b)$'
+      - '（3）识别：$49 = 7^{2}$，$(x+1)^{2}$ 已是完全平方，中间是减号 → 平方差'
+      - '$49 - (x+1)^{2} = 7^{2} - (x+1)^{2} = (7 + (x+1))(7 - (x+1))$'
+      - '化简括号：$= (x + 8)(6 - x)$'
+    stepsEn:
+      - '(1) Recognize: $x^{2} = x^{2}$ (perfect square), $16 = 4^{2}$ (perfect square), minus sign between → difference of squares'
+      - '$x^{2} - 16 = x^{2} - 4^{2} = (x+4)(x-4)$'
+      - '(2) Recognize: $9a^{2} = (3a)^{2}$, $4b^{2} = (2b)^{2}$, minus sign between → difference of squares'
+      - '$9a^{2} - 4b^{2} = (3a)^{2} - (2b)^{2} = (3a+2b)(3a-2b)$'
+      - '(3) Recognize: $49 = 7^{2}$, $(x+1)^{2}$ is already a perfect square, minus sign between → difference of squares'
+      - '$49 - (x+1)^{2} = 7^{2} - (x+1)^{2} = (7 + (x+1))(7 - (x+1))$'
+      - 'Simplify: $= (x + 8)(6 - x)$'
+    answer: '（1）$(x+4)(x-4)$；（2）$(3a+2b)(3a-2b)$；（3）$(x+8)(6-x)$'
+    answerEn: '(1) $(x+4)(x-4)$; (2) $(3a+2b)(3a-2b)$; (3) $(x+8)(6-x)$'
+
+  - type: 3
+    title: 完全平方公式分解
+    titleEn: Factoring using the perfect square formula
+    question: |
+      判断并对下列各式进行<<因式分解/factorization>>（如不能用完全平方公式，请说明）：
+
+      （1）$x^{2} + 6x + 9$
+      （2）$4x^{2} - 20x + 25$
+      （3）$x^{2} + 5x + 4$
+    questionEn: |
+      Determine and factor each of the following using the perfect square formula (if not applicable, explain why):
+
+      (1) $x^{2} + 6x + 9$
+      (2) $4x^{2} - 20x + 25$
+      (3) $x^{2} + 5x + 4$
+    steps:
+      - '（1）检验：首项 $x^{2} = x^{2}$ ✓；末项 $9 = 3^{2}$ ✓；中间项 $6x = 2 \times x \times 3$ ✓'
+      - '$x^{2} + 6x + 9 = (x+3)^{2}$'
+      - '（2）检验：首项 $4x^{2} = (2x)^{2}$ ✓；末项 $25 = 5^{2}$ ✓；中间项 $-20x = -2 \times 2x \times 5$ ✓（负号）'
+      - '$4x^{2} - 20x + 25 = (2x-5)^{2}$'
+      - '（3）检验：首项 $x^{2}$ ✓；末项 $4 = 2^{2}$ ✓；中间项应为 $2 \times x \times 2 = 4x$，但实际是 $5x \neq 4x$ ✗'
+      - '$x^{2} + 5x + 4$ **不是**完全平方三项式，不能用完全平方公式分解'
+    stepsEn:
+      - '(1) Check: first term $x^{2} = x^{2}$ ✓; last term $9 = 3^{2}$ ✓; middle term $6x = 2 \times x \times 3$ ✓'
+      - '$x^{2} + 6x + 9 = (x+3)^{2}$'
+      - '(2) Check: first term $4x^{2} = (2x)^{2}$ ✓; last term $25 = 5^{2}$ ✓; middle term $-20x = -2 \times 2x \times 5$ ✓ (negative sign)'
+      - '$4x^{2} - 20x + 25 = (2x-5)^{2}$'
+      - '(3) Check: first term $x^{2}$ ✓; last term $4 = 2^{2}$ ✓; middle term should be $2 \times x \times 2 = 4x$, but actual is $5x \neq 4x$ ✗'
+      - '$x^{2} + 5x + 4$ is **not** a perfect square trinomial and cannot be factored using the perfect square formula'
+    answer: '（1）$(x+3)^{2}$；（2）$(2x-5)^{2}$；（3）不是完全平方三项式，不能用完全平方公式'
+    answerEn: '(1) $(x+3)^{2}$; (2) $(2x-5)^{2}$; (3) not a perfect square trinomial; the perfect square formula does not apply'
+
+  - type: 4
+    title: 综合因式分解（先提公因式再用公式）
+    titleEn: Combined factorization (factor out common factor first, then apply formula)
+    question: |
+      对下列各式进行彻底的<<因式分解/factorization>>：
+
+      （1）$2x^{3} - 8x$
+      （2）$3x^{2} - 6x + 3$
+      （3）$a^{4} - 16$
+    questionEn: |
+      Completely factor each of the following:
+
+      (1) $2x^{3} - 8x$
+      (2) $3x^{2} - 6x + 3$
+      (3) $a^{4} - 16$
+    steps:
+      - '（1）先提公因式：各项系数 $\gcd(2,8) = 2$，字母都有 $x$（最小指数 $1$），公因式为 $2x$'
+      - '$2x^{3} - 8x = 2x(x^{2} - 4)$'
+      - '括号内 $x^{2} - 4$ 是平方差：$x^{2} - 2^{2} = (x+2)(x-2)$'
+      - '最终：$2x^{3} - 8x = 2x(x+2)(x-2)$'
+      - '（2）先提公因式：各项系数 $\gcd(3,6,3) = 3$，公因式为 $3$'
+      - '$3x^{2} - 6x + 3 = 3(x^{2} - 2x + 1)$'
+      - '括号内检验完全平方：首项 $x^{2}$，末项 $1 = 1^{2}$，中间项 $-2x = -2 \times x \times 1$ ✓'
+      - '$3(x^{2} - 2x + 1) = 3(x-1)^{2}$'
+      - '（3）无公因式；$a^{4} - 16 = (a^{2})^{2} - 4^{2}$，平方差：$(a^{2}+4)(a^{2}-4)$'
+      - '$a^{2} + 4$ 不可再分；$a^{2} - 4$ 还是平方差：$(a+2)(a-2)$'
+      - '最终：$a^{4} - 16 = (a^{2}+4)(a+2)(a-2)$'
+    stepsEn:
+      - '(1) Factor out common factor first: $\gcd(2,8) = 2$ for coefficients; all terms have $x$ (min exponent $1$); common factor is $2x$'
+      - '$2x^{3} - 8x = 2x(x^{2} - 4)$'
+      - 'The expression inside $x^{2} - 4$ is a difference of squares: $x^{2} - 2^{2} = (x+2)(x-2)$'
+      - 'Final: $2x^{3} - 8x = 2x(x+2)(x-2)$'
+      - '(2) Factor out common factor: $\gcd(3,6,3) = 3$; common factor is $3$'
+      - '$3x^{2} - 6x + 3 = 3(x^{2} - 2x + 1)$'
+      - 'Check perfect square inside: first term $x^{2}$, last term $1 = 1^{2}$, middle term $-2x = -2 \times x \times 1$ ✓'
+      - '$3(x^{2} - 2x + 1) = 3(x-1)^{2}$'
+      - '(3) No common factor; $a^{4} - 16 = (a^{2})^{2} - 4^{2}$, difference of squares: $(a^{2}+4)(a^{2}-4)$'
+      - '$a^{2} + 4$ cannot be factored further; $a^{2} - 4$ is still a difference of squares: $(a+2)(a-2)$'
+      - 'Final: $a^{4} - 16 = (a^{2}+4)(a+2)(a-2)$'
+    answer: '（1）$2x(x+2)(x-2)$；（2）$3(x-1)^{2}$；（3）$(a^{2}+4)(a+2)(a-2)$'
+    answerEn: '(1) $2x(x+2)(x-2)$; (2) $3(x-1)^{2}$; (3) $(a^{2}+4)(a+2)(a-2)$'
+
+  - type: 5
+    title: 因式分解在解方程中的应用
+    titleEn: Applying factorization to solve equations
+    question: |
+      用<<因式分解/factorization>>的方法解方程：$x^{2} - 5x + 6 = 0$。
+
+      **关键原理**：若 $A \times B = 0$，则 $A = 0$ 或 $B = 0$（零积定理）。
+    questionEn: |
+      Solve the equation by <<因式分解/factorization>>: $x^{2} - 5x + 6 = 0$.
+
+      **Key principle**: if $A \times B = 0$, then $A = 0$ or $B = 0$ (zero product property).
+    steps:
+      - '目标：把左边因式分解，使方程变为"两因式之积等于零"的形式'
+      - '检验是否为完全平方：末项 $6$ 的平方根不是整数，排除完全平方'
+      - '检验平方差：$5x \neq 0$，有中间项，排除平方差'
+      - '考虑拆项：寻找两数，积为 $6$，和为 $-5$；试验：$(-2) \times (-3) = 6$，$(-2) + (-3) = -5$ ✓'
+      - '$x^{2} - 5x + 6 = (x-2)(x-3)$（可展开验证）'
+      - '方程变为：$(x-2)(x-3) = 0$'
+      - '由零积定理：$x - 2 = 0$ 或 $x - 3 = 0$'
+      - '解得：$x = 2$ 或 $x = 3$'
+      - '验证：$2^{2} - 5 \times 2 + 6 = 4 - 10 + 6 = 0$ ✓；$3^{2} - 5 \times 3 + 6 = 9 - 15 + 6 = 0$ ✓'
+    stepsEn:
+      - 'Goal: factor the left side so the equation becomes "product of two factors equals zero"'
+      - 'Check for perfect square: the square root of the last term $6$ is not an integer, so rule out perfect square'
+      - 'Check for difference of squares: there is a middle term $5x \neq 0$, so rule out difference of squares'
+      - 'Try splitting: find two numbers whose product is $6$ and sum is $-5$; try: $(-2) \times (-3) = 6$, $(-2) + (-3) = -5$ ✓'
+      - '$x^{2} - 5x + 6 = (x-2)(x-3)$ (verify by expanding)'
+      - 'Equation becomes: $(x-2)(x-3) = 0$'
+      - 'By the zero product property: $x - 2 = 0$ or $x - 3 = 0$'
+      - 'Solutions: $x = 2$ or $x = 3$'
+      - 'Verify: $2^{2} - 5 \times 2 + 6 = 4 - 10 + 6 = 0$ ✓; $3^{2} - 5 \times 3 + 6 = 9 - 15 + 6 = 0$ ✓'
+    answer: '$x = 2$ 或 $x = 3$'
+    answerEn: '$x = 2$ or $x = 3$'
+
+commonMistakes:
+  - '分解不彻底：$2x^{2} - 8 = 2(x^{2} - 4)$ 还不够，括号内还有平方差可以分解，正确答案是 $2(x+2)(x-2)$'
+  - '把平方差公式用于平方和：$x^{2} + 4$ 不能写成 $(x+2)(x-2)$，因为 $2^{2} = 4$，但符号是"$+$"不是"$-$"'
+  - '完全平方公式中间项核验失误：$x^{2} + 5x + 4$ 误认为 $(x+2)^{2}$，实际上 $(x+2)^{2} = x^{2} + 4x + 4$，中间项不匹配'
+  - '提公因式后括号内符号出错：$-x^{2} + 4x = -x(x - 4)$（正确），不是 $-x(x + 4)$'
+  - '忘记先提公因式，强行套公式：$4x^{2} - 4$ 应先提 $4$，得 $4(x^{2}-1) = 4(x+1)(x-1)$，而不是错误地认为 $2x$ 和 $2$ 是"平方差"'
+  - '展开验证步骤跳过，导致出错后无法自查：养成展开回验的好习惯'
+commonMistakesEn:
+  - 'Incomplete factoring: $2x^{2} - 8 = 2(x^{2} - 4)$ is not enough; the expression inside still has a difference of squares to factor. The correct answer is $2(x+2)(x-2)$'
+  - 'Applying the difference of squares formula to a sum: $x^{2} + 4$ cannot be written as $(x+2)(x-2)$ — the sign is "$+$", not "$-$"'
+  - 'Incorrect middle-term check for perfect square: mistaking $x^{2} + 5x + 4$ for $(x+2)^{2}$, when in fact $(x+2)^{2} = x^{2} + 4x + 4$ — the middle terms do not match'
+  - 'Sign error after factoring out the common factor: $-x^{2} + 4x = -x(x - 4)$ (correct), not $-x(x + 4)$'
+  - 'Skipping the "factor out common factor first" step and forcing a formula: $4x^{2} - 4$ should first yield $4(x^{2}-1) = 4(x+1)(x-1)$; do not mistakenly treat $2x$ and $2$ as the two squares in a difference of squares'
+  - 'Skipping the expand-and-verify step, making self-correction impossible: develop the habit of always verifying by expanding'
+
+exercises:
+  timeGuide:
+    total: 30分钟
+    totalEn: 30 minutes
+    sections:
+      - range: '1-4'
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: '5-8'
+        time: 8分钟
+        timeEn: 8 minutes
+      - range: '9-12'
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: '13-15'
+        time: 4分钟
+        timeEn: 4 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        多项式 $10a^{2}b - 15ab^{2}$ 的<<公因式/common factor>>是______，因式分解结果为______。
+      questionEn: |
+        The <<公因式/common factor>> of the polynomial $10a^{2}b - 15ab^{2}$ is ______, and its factored form is ______.
+      correctValue: '5ab, 5ab(2a-3b)'
+      answer: '公因式为 $5ab$，因式分解为 $5ab(2a - 3b)$'
+      answerEn: 'The <<公因式/common factor>> is $5ab$; the factored form is $5ab(2a - 3b)$'
+      explanation: |
+        系数：$\gcd(10, 15) = 5$；字母：都有 $a$（最小指数 $1$）和 $b$（最小指数 $1$）。
+        公因式为 $5ab$。提出后：$10a^{2}b \div 5ab = 2a$，$15ab^{2} \div 5ab = 3b$。
+        故 $10a^{2}b - 15ab^{2} = 5ab(2a - 3b)$。
+      explanationEn: |
+        Coefficients: $\gcd(10, 15) = 5$; letters: both have $a$ (min exponent $1$) and $b$ (min exponent $1$).
+        Common factor is $5ab$. After factoring: $10a^{2}b \div 5ab = 2a$, $15ab^{2} \div 5ab = 3b$.
+        So $10a^{2}b - 15ab^{2} = 5ab(2a - 3b)$.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $x^{2} - 49 = (x + \underline{\quad})(x - \underline{\quad})$。
+      questionEn: |
+        $x^{2} - 49 = (x + \underline{\quad})(x - \underline{\quad})$.
+      correctValue: '7, 7'
+      answer: '$(x+7)(x-7)$'
+      answerEn: '$(x+7)(x-7)$'
+      explanation: |
+        $49 = 7^{2}$，所以 $x^{2} - 49 = x^{2} - 7^{2} = (x+7)(x-7)$（平方差公式）。
+      explanationEn: |
+        $49 = 7^{2}$, so $x^{2} - 49 = x^{2} - 7^{2} = (x+7)(x-7)$ (difference of squares formula).
+
+    - number: 3
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $x^{2} - 8x + 16 = (\underline{\quad\quad})^{2}$。
+      questionEn: |
+        $x^{2} - 8x + 16 = (\underline{\quad\quad})^{2}$.
+      correctValue: 'x-4'
+      answer: '$(x-4)^{2}$'
+      answerEn: '$(x-4)^{2}$'
+      explanation: |
+        检验：首项 $x^{2}$ ✓；末项 $16 = 4^{2}$ ✓；中间项 $-8x = -2 \times x \times 4$ ✓（负号）。
+        所以 $x^{2} - 8x + 16 = (x-4)^{2}$。
+      explanationEn: |
+        Check: first term $x^{2}$ ✓; last term $16 = 4^{2}$ ✓; middle term $-8x = -2 \times x \times 4$ ✓ (negative sign).
+        So $x^{2} - 8x + 16 = (x-4)^{2}$.
+
+    - number: 4
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: 'I. Fill in the Blanks'
+      question: |
+        $3x^{2} - 27 = 3(\underline{\quad\quad\quad\quad})$，完全分解为______。
+      questionEn: |
+        $3x^{2} - 27 = 3(\underline{\quad\quad\quad\quad})$; the complete factored form is ______.
+      correctValue: 'x^2-9, 3(x+3)(x-3)'
+      answer: '$3(x^{2}-9)$，完全分解为 $3(x+3)(x-3)$'
+      answerEn: '$3(x^{2}-9)$; the complete factored form is $3(x+3)(x-3)$'
+      explanation: |
+        先提公因式 $3$：$3x^{2} - 27 = 3(x^{2} - 9)$。
+        再对括号内用平方差：$x^{2} - 9 = (x+3)(x-3)$。
+        完全分解：$3(x+3)(x-3)$。
+      explanationEn: |
+        First factor out $3$: $3x^{2} - 27 = 3(x^{2} - 9)$.
+        Then apply difference of squares inside: $x^{2} - 9 = (x+3)(x-3)$.
+        Complete factored form: $3(x+3)(x-3)$.
+
+    - number: 5
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        $x^{2} + 9 = (x+3)(x-3)$。
+      questionEn: |
+        $x^{2} + 9 = (x+3)(x-3)$.
+      correctValue: '错'
+      answer: '错'
+      answerEn: 'False'
+      explanation: |
+        $(x+3)(x-3) = x^{2} - 9$，不是 $x^{2} + 9$。平方差公式要求两项之间是"减号"，$x^{2} + 9$ 是平方**和**，在实数范围内不能用平方差公式分解。
+      explanationEn: |
+        $(x+3)(x-3) = x^{2} - 9$, not $x^{2} + 9$. The difference of squares formula requires a minus sign between the two terms. $x^{2} + 9$ is a sum of squares and cannot be factored using this formula over the real numbers.
+
+    - number: 6
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        $x^{2} + 4x + 4 = (x+2)^{2}$ 是正确的因式分解。
+      questionEn: |
+        $x^{2} + 4x + 4 = (x+2)^{2}$ is a correct factorization.
+      correctValue: '对'
+      answer: '对'
+      answerEn: 'True'
+      explanation: |
+        检验：首项 $x^{2}$ ✓；末项 $4 = 2^{2}$ ✓；中间项 $4x = 2 \times x \times 2$ ✓。展开验证：$(x+2)^{2} = x^{2} + 4x + 4$ ✓。
+      explanationEn: |
+        Check: first term $x^{2}$ ✓; last term $4 = 2^{2}$ ✓; middle term $4x = 2 \times x \times 2$ ✓. Verify by expanding: $(x+2)^{2} = x^{2} + 4x + 4$ ✓.
+
+    - number: 7
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        $2x^{2} - 2 = 2(x+1)(x-1)$ 是彻底的因式分解。
+      questionEn: |
+        $2x^{2} - 2 = 2(x+1)(x-1)$ is a complete factorization.
+      correctValue: '对'
+      answer: '对'
+      answerEn: 'True'
+      explanation: |
+        先提公因式 $2$：$2(x^{2}-1)$；再对括号内用平方差：$2(x+1)(x-1)$。
+        每个因式（$2$，$x+1$，$x-1$）都不能再分解，分解是彻底的。
+      explanationEn: |
+        First factor out $2$: $2(x^{2}-1)$; then apply difference of squares: $2(x+1)(x-1)$.
+        Each factor ($2$, $x+1$, $x-1$) cannot be factored further — the factorization is complete.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: 'II. True or False'
+      question: |
+        对 $-2x^{2} + 8x$ 进行因式分解：$-2x^{2} + 8x = -2x(x + 4)$。
+      questionEn: |
+        The factorization $-2x^{2} + 8x = -2x(x + 4)$ is correct.
+      correctValue: '错'
+      answer: '错'
+      answerEn: 'False'
+      explanation: |
+        提出公因式 $-2x$ 后：$-2x^{2} \div (-2x) = x$，$8x \div (-2x) = -4$。
+        所以正确结果是 $-2x(x - 4)$，不是 $-2x(x + 4)$。
+        检验：$-2x(x-4) = -2x^{2} + 8x$ ✓。
+      explanationEn: |
+        After factoring out $-2x$: $-2x^{2} \div (-2x) = x$, $8x \div (-2x) = -4$.
+        So the correct result is $-2x(x - 4)$, not $-2x(x + 4)$.
+        Verify: $-2x(x-4) = -2x^{2} + 8x$ ✓.
+
+    - number: 9
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: 'III. Multiple Choice'
+      question: |
+        下列各式中，能用<<平方差公式/difference of squares formula>>分解的是（　）
+      questionEn: |
+        Among the following, the expression that can be factored using the <<平方差公式/difference of squares formula>> is ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '$x^{2} + 4$'
+            - '$x^{2} - 3$'
+            - '$4x^{2} - 9$'
+            - '$x^{2} + 2x - 1$'
+          correctValue: '$4x^{2} - 9$'
+      answer: '$4x^{2} - 9$'
+      answerEn: '$4x^{2} - 9$'
+      explanation: |
+        - A：$x^{2} + 4$ 是平方和，不能用平方差公式
+        - B：$3$ 不是完全平方数（$\sqrt{3}$ 是无理数），不符合整数范围内的平方差分解
+        - C：$4x^{2} = (2x)^{2}$，$9 = 3^{2}$，两项都是完全平方，中间是减号 → $4x^{2} - 9 = (2x+3)(2x-3)$ ✓
+        - D：三项式，有中间项，不是二项式，不符合平方差模式
+      explanationEn: |
+        - A: $x^{2} + 4$ is a sum of squares — difference of squares formula does not apply
+        - B: $3$ is not a perfect square ($\sqrt{3}$ is irrational) — does not fit integer factoring with difference of squares
+        - C: $4x^{2} = (2x)^{2}$, $9 = 3^{2}$, both terms are perfect squares with a minus sign between → $4x^{2} - 9 = (2x+3)(2x-3)$ ✓
+        - D: A trinomial (three terms) — does not fit the difference of squares pattern
+
+    - number: 10
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: 'III. Multiple Choice'
+      question: |
+        下列哪个式子是 $x^{2} - 6x + 9$ 的正确因式分解？（　）
+      questionEn: |
+        Which of the following is the correct factorization of $x^{2} - 6x + 9$? ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '$(x-3)(x+3)$'
+            - '$(x-3)^{2}$'
+            - '$(x+3)^{2}$'
+            - '$(x-9)(x-1)$'
+          correctValue: '$(x-3)^{2}$'
+      answer: '$(x-3)^{2}$'
+      answerEn: '$(x-3)^{2}$'
+      explanation: |
+        检验完全平方：末项 $9 = 3^{2}$ ✓；中间项 $-6x = -2 \times x \times 3$ ✓（负号，对应 $(a-b)^{2}$）。
+        故 $x^{2} - 6x + 9 = (x-3)^{2}$。
+        排除 A（$(x-3)(x+3) = x^{2}-9$，错）；排除 C（$(x+3)^{2} = x^{2}+6x+9$，中间项符号错）；排除 D（展开为 $x^{2}-10x+9$，错）。
+      explanationEn: |
+        Check perfect square: last term $9 = 3^{2}$ ✓; middle term $-6x = -2 \times x \times 3$ ✓ (negative → $(a-b)^{2}$).
+        So $x^{2} - 6x + 9 = (x-3)^{2}$.
+        Eliminate A ($(x-3)(x+3) = x^{2}-9$, wrong); eliminate C ($(x+3)^{2} = x^{2}+6x+9$, wrong sign on middle term); eliminate D (expands to $x^{2}-10x+9$, wrong).
+
+    - number: 11
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Calculation'
+      question: |
+        对下列各式进行彻底的<<因式分解/factorization>>：
+
+        （1）$4x^{2} - 4xy + y^{2}$
+        （2）$2a^{3}b - 8ab^{3}$
+      questionEn: |
+        Completely factor each of the following:
+
+        (1) $4x^{2} - 4xy + y^{2}$
+        (2) $2a^{3}b - 8ab^{3}$
+      answer: |
+        （1）$4x^{2} = (2x)^{2}$，$y^{2} = y^{2}$，中间项 $-4xy = -2 \times 2x \times y$ ✓
+        $4x^{2} - 4xy + y^{2} = (2x - y)^{2}$
+
+        （2）先提公因式：$\gcd(2,8) = 2$，字母公因式为 $ab$（$a$ 最小指数 $1$，$b$ 最小指数 $1$），公因式为 $2ab$
+        $2a^{3}b - 8ab^{3} = 2ab(a^{2} - 4b^{2})$
+        再用平方差：$a^{2} - 4b^{2} = a^{2} - (2b)^{2} = (a+2b)(a-2b)$
+        最终：$2ab(a+2b)(a-2b)$
+      answerEn: |
+        (1) $4x^{2} = (2x)^{2}$, $y^{2} = y^{2}$, middle term $-4xy = -2 \times 2x \times y$ ✓
+        $4x^{2} - 4xy + y^{2} = (2x - y)^{2}$
+
+        (2) Factor out common factor: $\gcd(2,8) = 2$; letter common factor is $ab$ ($a$ min exponent $1$, $b$ min exponent $1$); common factor is $2ab$
+        $2a^{3}b - 8ab^{3} = 2ab(a^{2} - 4b^{2})$
+        Then apply difference of squares: $a^{2} - 4b^{2} = a^{2} - (2b)^{2} = (a+2b)(a-2b)$
+        Final: $2ab(a+2b)(a-2b)$
+      explanation: |
+        （1）是完全平方三项式，用完全平方公式逆用。（2）必须先提公因式，否则括号内 $a^{2}-4b^{2}$ 无法用公式直接套。
+      explanationEn: |
+        (1) This is a perfect square trinomial — apply the reverse of the perfect square formula. (2) The common factor must be factored out first; otherwise the remaining $a^{2}-4b^{2}$ cannot be directly matched to the formula.
+
+    - number: 12
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Calculation'
+      question: |
+        指出下列因式分解的错误，并给出正确答案：
+
+        （1）错误：$6x^{2} - 6 = 6(x+1)(x-1)$（已给出答案，请判断对错并说明）
+        （2）错误：$x^{2} + 4x + 4 = x(x + 4) + 4$（说明为什么这不是因式分解）
+      questionEn: |
+        Identify the error in each factorization below and give the correct answer:
+
+        (1) Given: $6x^{2} - 6 = 6(x+1)(x-1)$. Judge whether it is correct and explain.
+        (2) Given: $x^{2} + 4x + 4 = x(x + 4) + 4$. Explain why this is not a factorization.
+      answer: |
+        （1）$6x^{2} - 6 = 6(x^{2} - 1) = 6(x+1)(x-1)$，这个结果是**正确的**。
+        展开验证：$6(x+1)(x-1) = 6(x^{2}-1) = 6x^{2}-6$ ✓
+
+        （2）$x(x+4) + 4$ 是一个**和**（加法），不是**积**（乘法），所以不是因式分解。
+        因式分解的结果必须是乘积的形式。
+        正确的因式分解：$x^{2} + 4x + 4 = (x+2)^{2}$（完全平方）
+      answerEn: |
+        (1) $6x^{2} - 6 = 6(x^{2} - 1) = 6(x+1)(x-1)$ — this result is **correct**.
+        Verify by expanding: $6(x+1)(x-1) = 6(x^{2}-1) = 6x^{2}-6$ ✓
+
+        (2) $x(x+4) + 4$ is a **sum** (addition), not a **product** (multiplication), so it is not a factorization.
+        The result of factorization must be in product form.
+        Correct factorization: $x^{2} + 4x + 4 = (x+2)^{2}$ (perfect square)
+      explanation: |
+        因式分解的本质：把多项式写成**乘积**。任何含加减号连接的最终结果都不符合因式分解的定义。
+      explanationEn: |
+        The essence of factorization is writing a polynomial as a **product**. Any final result connected by addition or subtraction signs does not satisfy the definition of factorization.
+
+    - number: 13
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Calculation'
+      question: |
+        利用<<因式分解/factorization>>简便计算 $102^{2} - 2^{2}$。
+      questionEn: |
+        Use <<因式分解/factorization>> to evaluate $102^{2} - 2^{2}$ conveniently.
+      answer: |
+        $102^{2} - 2^{2} = (102+2)(102-2) = 104 \times 100 = 10400$
+      answerEn: |
+        $102^{2} - 2^{2} = (102+2)(102-2) = 104 \times 100 = 10400$
+      explanation: |
+        识别平方差：$a = 102$，$b = 2$；$(a+b)(a-b) = 104 \times 100$，整百数相乘心算极为方便。
+      explanationEn: |
+        Recognize the difference of squares: $a = 102$, $b = 2$; $(a+b)(a-b) = 104 \times 100$ — multiplying by a round number is easy to do mentally.
+
+    - number: 14
+      type: 计算题
+      inputType: open
+      section: 四、计算题
+      sectionEn: 'IV. Calculation'
+      question: |
+        用因式分解法解方程：$x^{2} - 4x + 4 = 0$。
+      questionEn: |
+        Solve the equation by factorization: $x^{2} - 4x + 4 = 0$.
+      answer: |
+        $x^{2} - 4x + 4 = (x-2)^{2} = 0$
+        所以 $x - 2 = 0$，$x = 2$。
+        （方程有唯一解，称为重根）
+      answerEn: |
+        $x^{2} - 4x + 4 = (x-2)^{2} = 0$
+        So $x - 2 = 0$, giving $x = 2$.
+        (The equation has a unique solution, called a repeated root.)
+      explanation: |
+        完全平方式等于零，只有一个解。这说明 $y = x^{2} - 4x + 4$ 的图像恰好与 $x$ 轴只有一个切点（先了解概念，后续坐标几何会详细学习）。
+      explanationEn: |
+        A perfect square equal to zero has exactly one solution. This means the graph of $y = x^{2} - 4x + 4$ is tangent to the $x$-axis at exactly one point (you will study this in detail in coordinate geometry later).
+
+    - number: 15
+      type: 综合题
+      inputType: open
+      section: 五、综合题
+      sectionEn: 'V. Comprehensive Problem'
+      question: |
+        已知 $a - b = 5$，$ab = 6$，求 $a^{2} - 2ab + b^{2}$ 的值，以及 $a^{2} - b^{2}$ 的值。
+      questionEn: |
+        Given $a - b = 5$ and $ab = 6$, find the value of $a^{2} - 2ab + b^{2}$, and also the value of $a^{2} - b^{2}$.
+      answer: |
+        $a^{2} - 2ab + b^{2} = (a-b)^{2} = 5^{2} = 25$
+
+        对于 $a^{2} - b^{2} = (a+b)(a-b)$：
+        需要先求 $a + b$。
+        由 $(a+b)^{2} = (a-b)^{2} + 4ab = 25 + 24 = 49$，得 $a + b = \pm 7$。
+        所以 $a^{2} - b^{2} = (a+b)(a-b) = (\pm 7) \times 5 = \pm 35$。
+      answerEn: |
+        $a^{2} - 2ab + b^{2} = (a-b)^{2} = 5^{2} = 25$
+
+        For $a^{2} - b^{2} = (a+b)(a-b)$:
+        We first need $a + b$.
+        Since $(a+b)^{2} = (a-b)^{2} + 4ab = 25 + 24 = 49$, we get $a + b = \pm 7$.
+        So $a^{2} - b^{2} = (a+b)(a-b) = (\pm 7) \times 5 = \pm 35$.
+      explanation: |
+        这道题的关键是：**不要先求 $a$、$b$ 的值，而是直接用因式分解公式代入已知条件**。
+        $a^{2} - 2ab + b^{2}$ 就是完全平方 $(a-b)^{2}$，直接代入 $a-b=5$ 即可。
+        $a^{2} - b^{2}$ 是平方差 $(a+b)(a-b)$，需要额外用恒等式 $(a+b)^{2} = (a-b)^{2} + 4ab$ 求出 $a+b$。
+      explanationEn: |
+        The key insight: **do not solve for $a$ and $b$ individually — directly apply factoring formulas with the given conditions**.
+        $a^{2} - 2ab + b^{2}$ is the perfect square $(a-b)^{2}$; substitute $a-b=5$ directly.
+        $a^{2} - b^{2}$ is the difference of squares $(a+b)(a-b)$; use the identity $(a+b)^{2} = (a-b)^{2} + 4ab$ to find $a+b$ first.
+
+summary:
+  - '理解了<<因式分解/factorization>>是整式乘法的逆运算，核心是把多项式变为若干因式的**乘积**'
+  - '掌握了<<提公因式法/factoring out the common factor>>：找最大公因式（系数取最大公约数，字母取最小指数），逆用分配律'
+  - '掌握了平方差公式逆用：$a^{2} - b^{2} = (a+b)(a-b)$，识别"两项、完全平方、减号"三要素'
+  - '掌握了完全平方公式逆用：$a^{2} \pm 2ab + b^{2} = (a \pm b)^{2}$，用"三步法"核验中间项'
+  - '学会了综合因式分解：**先提公因式，再用公式**，不断检查直到彻底分解'
+  - '初步了解了因式分解在解方程中的应用：利用零积定理 $AB=0 \Rightarrow A=0$ 或 $B=0$'
+summaryEn:
+  - 'Understood that <<因式分解/factorization>> is the reverse of polynomial multiplication — the core is transforming a polynomial into a **product** of factors'
+  - 'Mastered <<提公因式法/factoring out the common factor>>: find the GCF (GCD of coefficients, minimum exponent of each letter) and reverse the distributive law'
+  - 'Mastered the reverse of the difference of squares formula: $a^{2} - b^{2} = (a+b)(a-b)$; recognize the three elements — two terms, perfect squares, minus sign'
+  - 'Mastered the reverse of the perfect square formula: $a^{2} \pm 2ab + b^{2} = (a \pm b)^{2}$; use the three-step check for the middle term'
+  - 'Learned combined factorization: **factor out the common factor first, then apply formulas**, checking repeatedly until completely factored'
+  - 'Gained an introductory understanding of how factorization is applied to solving equations using the zero product property: $AB=0 \Rightarrow A=0$ or $B=0$'
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，注重综合运用与易错点考查，帮助你深化对本章知识的理解。
+  introEn: 'These problems are more challenging than the regular exercises, focusing on integrated application and common error points to deepen your understanding of this chapter.'
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        下列各式中，因式分解**彻底**的是（　）
+      questionEn: |
+        Among the following, the expression that is **completely** factored is ( )
+      subInputs:
+        - prompt: 选择答案
+          options:
+            - '$2x^{3} - 8x = 2x(x^{2} - 4)$'
+            - '$x^{4} - 1 = (x^{2}+1)(x^{2}-1)$'
+            - '$3x^{2} - 12 = 3(x+2)(x-2)$'
+            - '$4x^{2} - 4x + 1 = (4x-1)(x-1)$'
+          correctValue: '$3x^{2} - 12 = 3(x+2)(x-2)$'
+      answer: 'C：$3x^{2} - 12 = 3(x+2)(x-2)$'
+      answerEn: 'C: $3x^{2} - 12 = 3(x+2)(x-2)$'
+      explanation: |
+        - A：$2x(x^{2}-4)$ 未彻底，括号内 $x^{2}-4 = (x+2)(x-2)$，应为 $2x(x+2)(x-2)$
+        - B：$(x^{2}+1)(x^{2}-1)$ 未彻底，$x^{2}-1 = (x+1)(x-1)$，应为 $(x^{2}+1)(x+1)(x-1)$
+        - C：$3(x+2)(x-2)$——先提公因式 $3$，再平方差，每个因式都不可再分 ✓
+        - D：展开 $(4x-1)(x-1) = 4x^{2} - 5x + 1 \neq 4x^{2} - 4x + 1$，错误
+      explanationEn: |
+        - A: $2x(x^{2}-4)$ is not complete; $x^{2}-4 = (x+2)(x-2)$, so the answer should be $2x(x+2)(x-2)$
+        - B: $(x^{2}+1)(x^{2}-1)$ is not complete; $x^{2}-1 = (x+1)(x-1)$, giving $(x^{2}+1)(x+1)(x-1)$
+        - C: $3(x+2)(x-2)$ — common factor $3$ extracted first, then difference of squares; every factor is irreducible ✓
+        - D: Expanding $(4x-1)(x-1) = 4x^{2} - 5x + 1 \neq 4x^{2} - 4x + 1$ — incorrect factorization
+
+    - number: 2
+      type: 提升填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        若 $x^{2} + kx + 16$ 是完全平方三项式，则 $k$ 的值为______。
+      questionEn: |
+        If $x^{2} + kx + 16$ is a perfect square trinomial, then $k = $ ______.
+      correctValue: '8或-8'
+      answer: '$k = 8$ 或 $k = -8$'
+      answerEn: '$k = 8$ or $k = -8$'
+      explanation: |
+        $16 = 4^{2}$，所以若 $x^{2} + kx + 16 = (x \pm 4)^{2}$，则中间项须为 $\pm 2 \times x \times 4 = \pm 8x$。
+        故 $k = 8$ 或 $k = -8$。
+        验证：$(x+4)^{2} = x^{2} + 8x + 16$ ✓；$(x-4)^{2} = x^{2} - 8x + 16$ ✓。
+      explanationEn: |
+        $16 = 4^{2}$, so if $x^{2} + kx + 16 = (x \pm 4)^{2}$, the middle term must be $\pm 2 \times x \times 4 = \pm 8x$.
+        Hence $k = 8$ or $k = -8$.
+        Verify: $(x+4)^{2} = x^{2} + 8x + 16$ ✓; $(x-4)^{2} = x^{2} - 8x + 16$ ✓.
+
+    - number: 3
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        对 $x^{4} - y^{4}$ 进行彻底的因式分解，并利用结果计算 $(\sqrt{2})^{4} - 1^{4}$。
+      questionEn: |
+        Completely factor $x^{4} - y^{4}$, then use the result to evaluate $(\sqrt{2})^{4} - 1^{4}$.
+      answer: |
+        分解：$x^{4} - y^{4} = (x^{2})^{2} - (y^{2})^{2} = (x^{2}+y^{2})(x^{2}-y^{2})$
+        继续分解：$x^{2} - y^{2} = (x+y)(x-y)$
+        完全分解：$x^{4} - y^{4} = (x^{2}+y^{2})(x+y)(x-y)$
+
+        代入 $x = \sqrt{2}$，$y = 1$：
+        $= ((\sqrt{2})^{2} + 1^{2})(\sqrt{2}+1)(\sqrt{2}-1)$
+        $= (2+1)(\sqrt{2}+1)(\sqrt{2}-1)$
+        $= 3 \times ((\sqrt{2})^{2} - 1^{2})$（又是平方差！）
+        $= 3 \times (2-1) = 3 \times 1 = 3$
+
+        验证：$(\sqrt{2})^{4} - 1^{4} = 4 - 1 = 3$ ✓
+      answerEn: |
+        Factorization: $x^{4} - y^{4} = (x^{2})^{2} - (y^{2})^{2} = (x^{2}+y^{2})(x^{2}-y^{2})$
+        Continue: $x^{2} - y^{2} = (x+y)(x-y)$
+        Complete factorization: $x^{4} - y^{4} = (x^{2}+y^{2})(x+y)(x-y)$
+
+        Substitute $x = \sqrt{2}$, $y = 1$:
+        $= ((\sqrt{2})^{2} + 1^{2})(\sqrt{2}+1)(\sqrt{2}-1)$
+        $= (2+1)(\sqrt{2}+1)(\sqrt{2}-1)$
+        $= 3 \times ((\sqrt{2})^{2} - 1^{2})$ (another difference of squares!)
+        $= 3 \times (2-1) = 3 \times 1 = 3$
+
+        Verify: $(\sqrt{2})^{4} - 1^{4} = 4 - 1 = 3$ ✓
+      explanation: |
+        这道题展示了因式分解的链式应用——每次分解后都继续检查能否再分解，最终利用因式形式简化了看似复杂的计算。
+      explanationEn: |
+        This problem demonstrates chained factorization — after each step, check whether further factoring is possible. Ultimately, the factored form simplifies what would otherwise be a complicated calculation.
+
+    - number: 4
+      type: 提升计算题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        化简 $\dfrac{a^{2} - b^{2}}{a^{2} - 2ab + b^{2}}$（其中 $a \neq b$）。
+      questionEn: |
+        Simplify $\dfrac{a^{2} - b^{2}}{a^{2} - 2ab + b^{2}}$ (where $a \neq b$).
+      answer: |
+        分子：$a^{2} - b^{2} = (a+b)(a-b)$（平方差）
+        分母：$a^{2} - 2ab + b^{2} = (a-b)^{2}$（完全平方）
+
+        $$\frac{a^{2} - b^{2}}{a^{2} - 2ab + b^{2}} = \frac{(a+b)(a-b)}{(a-b)^{2}} = \frac{a+b}{a-b}$$
+
+        （约去公因式 $(a-b)$，前提是 $a \neq b$，即 $a-b \neq 0$）
+      answerEn: |
+        Numerator: $a^{2} - b^{2} = (a+b)(a-b)$ (difference of squares)
+        Denominator: $a^{2} - 2ab + b^{2} = (a-b)^{2}$ (perfect square)
+
+        $$\frac{a^{2} - b^{2}}{a^{2} - 2ab + b^{2}} = \frac{(a+b)(a-b)}{(a-b)^{2}} = \frac{a+b}{a-b}$$
+
+        (Cancel the common factor $(a-b)$; this requires $a \neq b$, i.e. $a-b \neq 0$)
+      explanation: |
+        因式分解是化简分式的核心工具：先分解分子分母，再约去公因式。注意约分的前提条件（分母不为零）。
+      explanationEn: |
+        Factorization is the key tool for simplifying fractions: factor both numerator and denominator first, then cancel the common factor. Always state the condition under which the cancellation is valid (denominator ≠ 0).
+
+    - number: 5
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知 $m + n = 7$，$mn = 10$，利用因式分解方法，求：
+
+        （1）$m^{2} + 2mn + n^{2}$ 的值
+        （2）$m^{2} - n^{2}$ 的值（需要先求 $m - n$）
+        （3）方程 $x^{2} - 7x + 10 = 0$ 的解
+      questionEn: |
+        Given $m + n = 7$ and $mn = 10$, use factorization to find:
+
+        (1) The value of $m^{2} + 2mn + n^{2}$
+        (2) The value of $m^{2} - n^{2}$ (you need to find $m - n$ first)
+        (3) The solutions of the equation $x^{2} - 7x + 10 = 0$
+      answer: |
+        （1）$m^{2} + 2mn + n^{2} = (m+n)^{2} = 7^{2} = 49$
+
+        （2）$(m-n)^{2} = (m+n)^{2} - 4mn = 49 - 40 = 9$，故 $m - n = \pm 3$。
+        $m^{2} - n^{2} = (m+n)(m-n) = 7 \times (\pm 3) = \pm 21$
+
+        （3）$x^{2} - 7x + 10 = 0$
+        需找两数积为 $10$、和为 $-7$：$(-2) \times (-5) = 10$，$(-2)+(-5) = -7$ ✓
+        $x^{2} - 7x + 10 = (x-2)(x-5) = 0$
+        所以 $x = 2$ 或 $x = 5$
+
+        （注意：（3）中 $m=2, n=5$ 或 $m=5, n=2$ 正好满足 $m+n=7$，$mn=10$，与已知条件吻合）
+      answerEn: |
+        (1) $m^{2} + 2mn + n^{2} = (m+n)^{2} = 7^{2} = 49$
+
+        (2) $(m-n)^{2} = (m+n)^{2} - 4mn = 49 - 40 = 9$, so $m - n = \pm 3$.
+        $m^{2} - n^{2} = (m+n)(m-n) = 7 \times (\pm 3) = \pm 21$
+
+        (3) $x^{2} - 7x + 10 = 0$
+        Find two numbers with product $10$ and sum $-7$: $(-2) \times (-5) = 10$, $(-2)+(-5) = -7$ ✓
+        $x^{2} - 7x + 10 = (x-2)(x-5) = 0$
+        So $x = 2$ or $x = 5$
+
+        (Note: in (3), $m=2, n=5$ or $m=5, n=2$ exactly satisfies $m+n=7$ and $mn=10$ — consistent with the given conditions)
+      explanation: |
+        这道综合题把代值技巧、恒等式、因式分解三种方法串联起来，体现了因式分解的灵活性。
+        在（3）中，"找两数积为常数项、和为一次项系数"是分解二次三项式的重要方法（十字相乘法的雏形）。
+      explanationEn: |
+        This comprehensive problem links substitution, algebraic identities, and factorization together, illustrating the flexibility of factorization.
+        In (3), "finding two numbers whose product equals the constant term and whose sum equals the linear coefficient" is an important technique for factoring quadratic trinomials (a preview of the cross-multiplication method).

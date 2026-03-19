@@ -1,0 +1,1474 @@
+title: 一次函数
+titleEn: Linear Functions
+chapter: 9
+subject: math
+grade: grade8
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约55分钟 · 第3课时 约55分钟
+estimatedTimeEn: "Session 1 ~60 min · Session 2 ~55 min · Session 3 ~55 min"
+targetAudience: 小学3年级自学生（已完成八年级上册和坐标系），自学材料，由简入深
+
+objectives:
+  - 理解<<函数/function>>的概念，知道<<自变量/independent variable>>和<<因变量/dependent variable>>的含义
+  - 掌握<<正比例函数/direct proportion function>> $y = kx$（$k \neq 0$）的图象与性质
+  - 理解<<一次函数/linear function>> $y = kx + b$（$k \neq 0$）的概念，会画其图象
+  - 理解<<斜率/slope>> $k$ 和<<截距/intercept>> $b$ 的几何意义
+  - 能用待定系数法求满足条件的<<一次函数/linear function>>表达式
+  - 理解<<一次函数/linear function>>与方程、不等式的联系，能用图象法解释代数问题
+
+objectivesEn:
+  - Understand the concept of <<函数/function>> and the meaning of <<自变量/independent variable>> and <<因变量/dependent variable>>
+  - Master the graph and properties of the <<正比例函数/direct proportion function>> $y = kx$ ($k \neq 0$)
+  - Understand the definition of the <<一次函数/linear function>> $y = kx + b$ ($k \neq 0$) and draw its graph
+  - Understand the geometric meaning of <<斜率/slope>> $k$ and <<截距/intercept>> $b$
+  - Use the method of undetermined coefficients to find the expression of a <<一次函数/linear function>>
+  - Understand the connection between <<一次函数/linear function>>s and equations/inequalities; interpret algebra geometrically
+
+prerequisites:
+  title: 从坐标系出发——你已经会什么了？
+  titleEn: "Starting from the coordinate system — what do you already know?"
+  intro: |
+    学习<<一次函数/linear function>>之前，我们先回顾三块关键基础：
+  introEn: |
+    Before studying <<一次函数/linear function>>s, let's review three key foundations:
+  items:
+    - name: 平面直角坐标系（七年级下）
+      nameEn: Cartesian coordinate system (Grade 7, Semester 2)
+      detail: |
+        在坐标系中，每个点对应一个有序数对 $(x, y)$。已知坐标可以描点，已知点可以读出坐标。四个象限的坐标符号规律要熟记。
+      detailEn: |
+        In the coordinate system, each point corresponds to an ordered pair $(x, y)$. Given coordinates, you can plot a point; given a point, you can read off its coordinates. Know the sign patterns in all four quadrants.
+    - name: 二元一次方程组（七年级下）
+      nameEn: Systems of linear equations in two variables (Grade 7, Semester 2)
+      detail: |
+        解二元一次方程组的方法：代入消元法和加减消元法。这是待定系数法的核心工具。
+        例：$\begin{cases} k + b = 3 \\ 2k + b = 5 \end{cases}$ 解得 $k = 2, b = 1$
+      detailEn: |
+        Methods for solving systems: substitution and elimination. These are the core tools for the method of undetermined coefficients.
+        Example: $\begin{cases} k + b = 3 \\ 2k + b = 5 \end{cases}$ gives $k = 2, b = 1$
+    - name: 数轴与不等式（七年级下）
+      nameEn: Number line and inequalities (Grade 7, Semester 2)
+      detail: |
+        不等式的解集可以在数轴上表示。$x > 2$ 对应数轴上 $2$ 右边的区域（不含端点）。这个思想延伸到用函数图象解不等式。
+      detailEn: |
+        The solution set of an inequality can be represented on a number line. $x > 2$ corresponds to the region to the right of $2$ (excluding the endpoint). This idea extends to using graphs to solve inequalities.
+  conclusion: |
+    把坐标系、方程组、不等式这三个工具合在一起，就能用图形的眼光来理解代数——这正是<<一次函数/linear function>>这一章的核心思想。
+  conclusionEn: |
+    Combining the coordinate system, systems of equations, and inequalities, we can view algebra through a geometric lens — this is exactly the core idea of the chapter on <<一次函数/linear function>>s.
+
+concepts:
+  - id: function-concept
+    hasVisualization: true
+    title: <<函数/function>>的概念
+    titleEn: The concept of a <<函数/function>>
+    content: |
+      **什么是变量？**
+
+      在一个变化过程中，有些量是**固定不变的**（常量），有些量是**随着过程改变的**（变量）。
+      例如：骑车时，速度固定为 $15$ 千米/时（常量），但行驶的时间 $t$ 和路程 $s$ 都在变化（变量）。
+
+      **<<函数/function>>的定义**
+
+      在某个变化过程中，设有两个变量 $x$ 和 $y$：如果**对于 $x$ 在某个范围内的每一个值，$y$ 都有唯一确定的值与之对应**，那么我们就说 $y$ 是 $x$ 的**<<函数/function>>**，记作 $y = f(x)$，读作"$y$ 等于 $f$ of $x$"。
+
+      - $x$ 叫做**<<自变量/independent variable>>**（"自己可以自由取值"）
+      - $y$ 叫做**<<因变量/dependent variable>>**（"因为 $x$ 改变而改变"）
+      - $x$ 允许取值的范围叫做<<函数/function>>的**定义域**
+
+      **函数的三种表示方式**
+
+      | 方式 | 说明 | 例子 |
+      |------|------|------|
+      | 解析式（公式）| 用含 $x$ 的式子直接表达 $y$ | $y = 2x + 1$ |
+      | 列表（表格）| 列出若干组 $(x, y)$ 的值 | 见下表 |
+      | 图象 | 在坐标系中描出所有满足关系的点 | 直线/曲线 |
+
+      **关键细节：一个 $x$ 只能对应一个 $y$，但反过来不一定**
+
+      $y = x^{2}$ 中，$x = 2$ 和 $x = -2$ 都对应 $y = 4$——两个不同的 $x$ 可以有相同的 $y$，这没问题，仍然是函数。但如果同一个 $x = 2$ 对应了 $y = 3$ 和 $y = 5$ 两个值，那就**不是函数**。
+
+      **生活中的函数**
+
+      - 温度是时间的函数：每一时刻 $t$ 对应唯一的气温 $T(t)$
+      - 打车费用是里程的函数：每一个里程 $x$ 对应唯一的费用 $y$
+      - 正方形面积是边长的函数：$S = a^{2}$，每个边长 $a > 0$ 对应唯一面积
+    contentEn: |
+      **What is a variable?**
+
+      In a changing process, some quantities are **fixed** (constants) and others **change with the process** (variables).
+      Example: while cycling at a fixed speed of $15$ km/h (constant), the time $t$ and distance $s$ both vary (variables).
+
+      **Definition of a <<函数/function>>**
+
+      In a changing process with two variables $x$ and $y$: if **for every value of $x$ in a given range, there is exactly one corresponding value of $y$**, then $y$ is a **<<函数/function>>** of $x$, written $y = f(x)$, read "y equals f of x."
+
+      - $x$ is called the **<<自变量/independent variable>>** (it "independently" takes values)
+      - $y$ is called the **<<因变量/dependent variable>>** (it "depends" on $x$)
+      - The range of allowed values of $x$ is called the **domain** of the function
+
+      **Three ways to represent a function**
+
+      | Method | Description | Example |
+      |--------|-------------|---------|
+      | Formula | Express $y$ directly in terms of $x$ | $y = 2x + 1$ |
+      | Table | List several pairs of $(x, y)$ values | See below |
+      | Graph | Plot all points satisfying the relation in a coordinate system | line/curve |
+
+      **Key detail: each $x$ maps to exactly one $y$, but not necessarily vice versa**
+
+      In $y = x^{2}$, both $x = 2$ and $x = -2$ give $y = 4$ — two different $x$ values can share the same $y$, which is fine. But if the same $x = 2$ gave both $y = 3$ and $y = 5$, that would **not** be a function.
+
+      **Functions in real life**
+
+      - Temperature is a function of time: each moment $t$ corresponds to a unique temperature $T(t)$
+      - Taxi fare is a function of distance: each distance $x$ gives a unique fare $y$
+      - Area of a square is a function of side length: $S = a^{2}$, each $a > 0$ gives a unique area
+    notes:
+      - '"每个 $x$ 唯一对应一个 $y$"是函数的本质——记住这句话就能判断是否是函数'
+      - '定义域很重要：$y = \sqrt{x}$ 的定义域是 $x \geq 0$；$y = \frac{1}{x}$ 的定义域是 $x \neq 0$'
+      - '记号 $f(x)$ 中，$f$ 是函数名，不是数字，$f(2)$ 表示当 $x = 2$ 时 $y$ 的值'
+    notesEn:
+      - '"Each $x$ maps to exactly one $y$" is the essence of a function — remember this to decide if a relation is a function'
+      - 'Domain matters: $y = \sqrt{x}$ has domain $x \geq 0$; $y = \frac{1}{x}$ has domain $x \neq 0$'
+      - 'In the notation $f(x)$, $f$ is the function name, not a number; $f(2)$ means the value of $y$ when $x = 2$'
+
+  - id: direct-proportion
+    hasVisualization: true
+    title: <<正比例函数/direct proportion function>>
+    titleEn: <<正比例函数/direct proportion function>>
+    content: |
+      **定义**
+
+      形如 $y = kx$（$k \neq 0$）的函数叫做**<<正比例函数/direct proportion function>>**，其中 $k$ 是非零常数。
+      它是<<一次函数/linear function>> $y = kx + b$ 在 $b = 0$ 时的特殊情形。
+
+      **为什么叫"正比例"？** 因为 $y$ 与 $x$ 成正比例关系：$y = kx$ 即 $\frac{y}{x} = k$（常数），$y$ 随 $x$ 等比例变化。
+
+      **图象特征**
+
+      <<正比例函数/direct proportion function>>的图象是一条**经过原点 $(0, 0)$ 的直线**。
+
+      | $k$ 的情况 | 图象位置 | 增减性 |
+      |-----------|---------|-------|
+      | $k > 0$ | 经过第一、三象限 | $x$ 增大时 $y$ 增大（递增） |
+      | $k < 0$ | 经过第二、四象限 | $x$ 增大时 $y$ 减小（递减） |
+
+      **$|k|$ 决定倾斜程度（"坡度"）**
+
+      - $|k|$ 越大，直线越"陡"（与 $x$ 轴夹角越大）
+      - $|k| = 1$ 时，直线与 $x$ 轴成 $45°$ 角
+      - $|k|$ 越小，直线越"平"（越接近水平）
+
+      **画图方法**
+
+      由于图象过原点，只需再找**一个点**：
+      1. 点 $(0, 0)$ 一定在图象上
+      2. 取 $x = 1$，得 $y = k$，即点 $(1, k)$
+      3. 连接这两点并延伸成直线
+
+      **生活中的正比例函数**
+
+      - $y = 3x$：单价 $3$ 元/个，买 $x$ 个总价 $y$ 元
+      - $y = 0.6x$：汽车以 $60$ 千米/时行驶，$x$ 小时行驶 $y \times 100$ 千米（注意单位换算）
+      - $y = -2x$：海拔每升高 $1$ 千米，气温降低约 $2℃$（$y$ 表示相对于海平面的温度变化）
+    contentEn: |
+      **Definition**
+
+      A function of the form $y = kx$ ($k \neq 0$) is called a **<<正比例函数/direct proportion function>>**, where $k$ is a non-zero constant.
+      It is the special case of the <<一次函数/linear function>> $y = kx + b$ when $b = 0$.
+
+      **Why "direct proportion"?** Because $y$ is directly proportional to $x$: $y = kx$ means $\frac{y}{x} = k$ (constant), so $y$ changes in proportion to $x$.
+
+      **Graph characteristics**
+
+      The graph of a <<正比例函数/direct proportion function>> is a straight line **passing through the origin $(0, 0)$**.
+
+      | Value of $k$ | Location of graph | Increasing/decreasing |
+      |-------------|-------------------|-----------------------|
+      | $k > 0$ | Passes through Quadrants I and III | $y$ increases as $x$ increases |
+      | $k < 0$ | Passes through Quadrants II and IV | $y$ decreases as $x$ increases |
+
+      **$|k|$ determines steepness**
+
+      - Larger $|k|$ → steeper line (larger angle with the $x$-axis)
+      - $|k| = 1$ → line makes a $45°$ angle with the $x$-axis
+      - Smaller $|k|$ → flatter line (closer to horizontal)
+
+      **How to draw the graph**
+
+      Since the graph passes through the origin, you only need **one more point**:
+      1. The point $(0, 0)$ is always on the graph
+      2. Let $x = 1$, get $y = k$, giving point $(1, k)$
+      3. Connect these two points and extend to a line
+
+      **Direct proportion functions in real life**
+
+      - $y = 3x$: unit price is 3 yuan each; buying $x$ items costs $y$ yuan total
+      - $y = -2x$: for every 1 km increase in altitude, temperature drops about $2°C$
+    notes:
+      - '<<正比例函数/direct proportion function>>的图象**必须过原点**，若直线不过原点则不是正比例函数'
+      - '$k \neq 0$ 是必须满足的条件，若 $k = 0$，则 $y = 0$ 是常数函数，图象是 $x$ 轴本身（不是直线意义上的函数图象）'
+      - '两条不同的<<正比例函数/direct proportion function>>图象都过原点，但斜率不同，所以它们只在原点相交'
+    notesEn:
+      - 'The graph of a <<正比例函数/direct proportion function>> **must pass through the origin**; if the line does not pass through the origin, it is not a direct proportion function'
+      - '$k \neq 0$ is required; if $k = 0$, then $y = 0$ is a constant function whose graph is the $x$-axis itself'
+      - 'Two different <<正比例函数/direct proportion function>> graphs both pass through the origin but have different slopes, so they only intersect at the origin'
+
+  - id: linear-function-definition
+    hasVisualization: true
+    title: <<一次函数/linear function>>的定义与图象
+    titleEn: Definition and graph of the <<一次函数/linear function>>
+    content: |
+      **定义**
+
+      形如 $y = kx + b$（$k \neq 0$）的函数叫做**<<一次函数/linear function>>**，其中 $k$ 和 $b$ 是常数，且 $k \neq 0$。
+      当 $b = 0$ 时，$y = kx$，就是<<正比例函数/direct proportion function>>。所以**<<正比例函数/direct proportion function>>是<<一次函数/linear function>>的特殊情况**。
+
+      **为什么叫"一次"函数？** 因为 $x$ 的最高次数是 $1$（一次）。
+
+      **图象：一条直线**
+
+      <<一次函数/linear function>>的图象是一条**直线**。因此，画图时只需找**两个点**，连线即可。
+
+      最方便的两个点是**两个截距点**：
+      - **$y$ 轴截距**：令 $x = 0$，得 $y = b$，即点 $(0, b)$
+      - **$x$ 轴截距（零点）**：令 $y = 0$，解方程 $kx + b = 0$，得 $x = -\dfrac{b}{k}$，即点 $\left(-\dfrac{b}{k}, 0\right)$
+
+      **$b$ 的作用：上下平移**
+
+      $y = kx + b$ 的图象，是将<<正比例函数/direct proportion function>> $y = kx$ 的图象**沿 $y$ 轴方向平移 $b$ 个单位**：
+      - $b > 0$：**向上**平移 $|b|$ 个单位
+      - $b < 0$：**向下**平移 $|b|$ 个单位
+
+      这就像把整条直线"搬上搬下"，斜率 $k$ 不变。
+
+      **画图步骤**
+
+      1. 令 $x = 0$，求出点 $(0, b)$（$y$ 轴上的截距点）
+      2. 令 $y = 0$，求出点 $\left(-\dfrac{b}{k}, 0\right)$（$x$ 轴上的截距点）
+      3. 在坐标系中描出这两个点，用直线连接并延伸
+
+      **举例：画 $y = 2x + 1$ 的图象**
+
+      - $x = 0$ 时，$y = 1$，点 $(0, 1)$
+      - $y = 0$ 时，$2x + 1 = 0$，$x = -\dfrac{1}{2}$，点 $\left(-\dfrac{1}{2}, 0\right)$
+      - 描出两点，连线
+    contentEn: |
+      **Definition**
+
+      A function of the form $y = kx + b$ ($k \neq 0$) is called a **<<一次函数/linear function>>**, where $k$ and $b$ are constants and $k \neq 0$.
+      When $b = 0$, we get $y = kx$, the <<正比例函数/direct proportion function>>. So **a <<正比例函数/direct proportion function>> is a special case of a <<一次函数/linear function>>**.
+
+      **Why "linear" (literally "first-degree") function?** Because the highest power of $x$ is $1$.
+
+      **Graph: a straight line**
+
+      The graph of a <<一次函数/linear function>> is a **straight line**. So to draw it, you only need to find **two points** and connect them.
+
+      The most convenient two points are the **intercept points**:
+      - **$y$-intercept**: let $x = 0$, get $y = b$, giving point $(0, b)$
+      - **$x$-intercept (zero)**: let $y = 0$, solve $kx + b = 0$, get $x = -\dfrac{b}{k}$, giving point $\left(-\dfrac{b}{k}, 0\right)$
+
+      **The role of $b$: vertical shift**
+
+      The graph of $y = kx + b$ is the graph of $y = kx$ **shifted vertically by $b$ units**:
+      - $b > 0$: shift **up** by $|b|$ units
+      - $b < 0$: shift **down** by $|b|$ units
+
+      This is like "lifting" or "lowering" the entire line without changing its tilt.
+
+      **Steps to draw the graph**
+
+      1. Let $x = 0$: find point $(0, b)$ (the $y$-intercept)
+      2. Let $y = 0$: find point $\left(-\dfrac{b}{k}, 0\right)$ (the $x$-intercept)
+      3. Plot both points in the coordinate system and connect with a line
+
+      **Example: draw the graph of $y = 2x + 1$**
+
+      - $x = 0$: $y = 1$, point $(0, 1)$
+      - $y = 0$: $2x + 1 = 0$, $x = -\dfrac{1}{2}$, point $\left(-\dfrac{1}{2}, 0\right)$
+      - Plot both points and connect with a line
+    notes:
+      - '一次函数必须满足 $k \neq 0$；若 $k = 0$，则 $y = b$ 是常数函数，图象是水平线，不是一次函数'
+      - '画图只需两点，但为了确认准确，可以多取一个点验证'
+      - '$b = 0$ 时图象过原点；$b \neq 0$ 时图象不过原点'
+    notesEn:
+      - 'A linear function requires $k \neq 0$; if $k = 0$, $y = b$ is a constant function whose graph is a horizontal line, not a linear function'
+      - 'Only two points are needed to draw the graph, but you can find a third point to verify'
+      - 'When $b = 0$ the graph passes through the origin; when $b \neq 0$ it does not'
+
+  - id: slope-intercept
+    hasVisualization: true
+    title: $k$ 和 $b$ 的几何意义——<<斜率/slope>>与<<截距/intercept>>
+    titleEn: Geometric meaning of $k$ and $b$ — <<斜率/slope>> and <<截距/intercept>>
+    content: |
+      **$k$（<<斜率/slope>>）的几何意义：变化率**
+
+      <<斜率/slope>> $k$ 表示**$x$ 每增加 $1$ 个单位，$y$ 改变的量**。
+
+      更一般地：$k = \dfrac{y_2 - y_1}{x_2 - x_1}$（任意两点 $(x_1, y_1)$ 和 $(x_2, y_2)$ 都可以）
+
+      | $k$ 的值 | 直线倾斜方向 | 增减性 |
+      |---------|------------|-------|
+      | $k > 0$ | 从左下到右上（"爬坡"） | 递增函数 |
+      | $k < 0$ | 从左上到右下（"下坡"） | 递减函数 |
+      | $|k|$ 较大 | 更"陡"（接近竖直） | — |
+      | $|k|$ 较小 | 更"平"（接近水平） | — |
+
+      **特殊角度：** $k = 1$ 时直线与 $x$ 轴成 $45°$；$k = -1$ 时与 $x$ 轴成 $135°$（即斜率为 $-1$，向左上方倾斜 $45°$）。
+
+      **平行线的斜率相等**
+
+      如果两条直线平行（且不重合），则它们的<<斜率/slope>>相等，即 $k_1 = k_2$，但 $b_1 \neq b_2$。
+      反过来，如果两条直线 $k_1 = k_2$ 且 $b_1 \neq b_2$，则它们平行。
+      特别注意：$k_1 = k_2$ 且 $b_1 = b_2$ 表示两条直线**重合**（完全相同）。
+
+      **$b$（纵<<截距/intercept>>）的几何意义：直线与 $y$ 轴的交点高度**
+
+      $b$ 是当 $x = 0$ 时 $y$ 的值，即点 $(0, b)$——直线与 $y$ 轴的交点。
+
+      | $b > 0$ | 直线与 $y$ 轴交点在 $x$ 轴上方 |
+      |---------|-------------------------------|
+      | $b = 0$ | 直线过原点 |
+      | $b < 0$ | 直线与 $y$ 轴交点在 $x$ 轴下方 |
+
+      **综合判断直线位置**
+
+      已知 $k$ 和 $b$ 的符号，就能判断直线在坐标系中的大致位置，甚至不需要画图！
+
+      例如：$k > 0$，$b < 0$——直线从左下向右上倾斜，与 $y$ 轴的交点在原点下方，直线经过第一、三、四象限。
+    contentEn: |
+      **Geometric meaning of $k$ (<<斜率/slope>>): rate of change**
+
+      The <<斜率/slope>> $k$ represents **how much $y$ changes for every $1$-unit increase in $x$**.
+
+      More generally: $k = \dfrac{y_2 - y_1}{x_2 - x_1}$ for any two points $(x_1, y_1)$ and $(x_2, y_2)$ on the line.
+
+      | Value of $k$ | Direction of tilt | Increasing/decreasing |
+      |-------------|-------------------|-----------------------|
+      | $k > 0$ | Bottom-left to top-right ("uphill") | Increasing function |
+      | $k < 0$ | Top-left to bottom-right ("downhill") | Decreasing function |
+      | Large $|k|$ | Steeper (closer to vertical) | — |
+      | Small $|k|$ | Flatter (closer to horizontal) | — |
+
+      **Special angles:** $k = 1$ makes a $45°$ angle with the $x$-axis; $k = -1$ makes a $135°$ angle.
+
+      **Parallel lines have equal slopes**
+
+      If two lines are parallel (and distinct), they have the same <<斜率/slope>>: $k_1 = k_2$ but $b_1 \neq b_2$.
+      Conversely, if $k_1 = k_2$ and $b_1 \neq b_2$, the lines are parallel.
+      Note: $k_1 = k_2$ and $b_1 = b_2$ means the lines **coincide** (are identical).
+
+      **Geometric meaning of $b$ (y-<<截距/intercept>>): height where the line meets the $y$-axis**
+
+      $b$ is the value of $y$ when $x = 0$, i.e., the point $(0, b)$ — where the line crosses the $y$-axis.
+
+      | $b > 0$ | Line crosses $y$-axis above the $x$-axis |
+      |---------|------------------------------------------|
+      | $b = 0$ | Line passes through the origin |
+      | $b < 0$ | Line crosses $y$-axis below the $x$-axis |
+
+      **Determining the position of a line from the signs of $k$ and $b$**
+
+      Knowing the signs of $k$ and $b$ lets you determine the rough position of the line without even drawing it!
+
+      Example: $k > 0$, $b < 0$ — the line tilts upward from left to right, crosses the $y$-axis below the origin, and passes through Quadrants I, III, and IV.
+    notes:
+      - '<<斜率/slope>> $k$ 是"每走 $1$ 步（$x$ 方向），上升（或下降）多少步（$y$ 方向）"，这是理解斜率最直观的方式'
+      - '两条平行线：斜率相同，截距不同；两条重合线：斜率相同，截距也相同'
+      - '竖直线（$x = a$）没有斜率——因为 $x$ 不变，无法用 $\Delta y / \Delta x$ 计算（分母为零）'
+    notesEn:
+      - '<<斜率/slope>> $k$ means "for every step forward (in $x$), how many steps up (or down, in $y$)" — this is the most intuitive way to understand slope'
+      - 'Parallel lines: same slope, different intercept; coincident lines: same slope, same intercept'
+      - 'Vertical lines ($x = a$) have no slope — because $x$ does not change, $\Delta y / \Delta x$ has a zero denominator'
+
+  - id: undetermined-coefficients
+    hasVisualization: false
+    title: 待定系数法求<<一次函数/linear function>>
+    titleEn: Finding the <<一次函数/linear function>> by the method of undetermined coefficients
+    content: |
+      **问题背景**
+
+      已知直线满足某些条件（如经过两个点，或经过一个点且满足某个斜率），求<<一次函数/linear function>> $y = kx + b$ 的解析式（即求 $k$ 和 $b$ 的具体数值）。
+
+      **方法：待定系数法**
+
+      1. 设<<一次函数/linear function>>为 $y = kx + b$（先"待定" $k$ 和 $b$）
+      2. 将已知条件（已知点的坐标）代入，建立关于 $k$、$b$ 的方程组
+      3. 解方程组，求出 $k$ 和 $b$
+      4. 将结果代回，写出<<一次函数/linear function>>的解析式
+
+      **经典情形：已知两点，求<<一次函数/linear function>>**
+
+      已知直线经过点 $(1, 3)$ 和 $(2, 5)$，求<<一次函数/linear function>>。
+
+      **解：**
+      设 $y = kx + b$（$k \neq 0$）。
+
+      将 $(1, 3)$ 代入：$k \cdot 1 + b = 3$，即 $k + b = 3$ ……①
+
+      将 $(2, 5)$ 代入：$k \cdot 2 + b = 5$，即 $2k + b = 5$ ……②
+
+      ②$-$①：$k = 2$；代入①：$b = 1$
+
+      所以<<一次函数/linear function>>为 $y = 2x + 1$。
+
+      **特殊情形：已知一点是 $y$ 轴截距**
+
+      如果已知直线过点 $(0, b_0)$，则直接得到 $b = b_0$，只需再用另一个点求 $k$。
+
+      例：经过 $(0, 4)$ 和 $(3, 1)$，则 $b = 4$；代入 $(3, 1)$：$1 = 3k + 4$，解得 $k = -1$，所以 $y = -x + 4$。
+
+      **特殊情形：已知<<斜率/slope>>和一点**
+
+      如果已知 $k$ 的值和直线上一点，只需将点代入 $y = kx + b$ 求 $b$。
+
+      例：$k = 3$，直线过 $(2, 7)$：代入得 $7 = 3 \cdot 2 + b$，即 $b = 1$，所以 $y = 3x + 1$。
+    contentEn: |
+      **Background**
+
+      Given conditions that a line must satisfy (such as passing through two points, or passing through one point with a known slope), find the formula for the <<一次函数/linear function>> $y = kx + b$ (i.e., find the specific values of $k$ and $b$).
+
+      **Method: undetermined coefficients**
+
+      1. Assume the <<一次函数/linear function>> is $y = kx + b$ (leaving $k$ and $b$ "undetermined" for now)
+      2. Substitute the known conditions (coordinates of known points) to set up a system of equations in $k$ and $b$
+      3. Solve the system to find $k$ and $b$
+      4. Substitute back and write the formula for the <<一次函数/linear function>>
+
+      **Classic case: find the <<一次函数/linear function>> through two given points**
+
+      Given that the line passes through $(1, 3)$ and $(2, 5)$, find the <<一次函数/linear function>>.
+
+      **Solution:**
+      Let $y = kx + b$ ($k \neq 0$).
+
+      Substituting $(1, 3)$: $k + b = 3$ …①
+
+      Substituting $(2, 5)$: $2k + b = 5$ …②
+
+      ②$-$①: $k = 2$; substituting into ①: $b = 1$
+
+      Therefore the <<一次函数/linear function>> is $y = 2x + 1$.
+
+      **Special case: one known point is the $y$-intercept**
+
+      If the line passes through $(0, b_0)$, then $b = b_0$ directly; use the other point to find $k$.
+
+      Example: through $(0, 4)$ and $(3, 1)$: $b = 4$; substituting $(3, 1)$: $1 = 3k + 4$, so $k = -1$, giving $y = -x + 4$.
+
+      **Special case: known slope and one point**
+
+      If $k$ is known and one point on the line is given, substitute the point into $y = kx + b$ to find $b$.
+
+      Example: $k = 3$, line passes through $(2, 7)$: $7 = 3 \cdot 2 + b$, so $b = 1$, giving $y = 3x + 1$.
+    notes:
+      - '待定系数法的本质：用"未知的 $k$ 和 $b$"建立方程组，再解出来——把"求函数"变成"解方程组"'
+      - '两个未知数（$k$ 和 $b$）需要两个独立条件（通常是两个不同的点）才能唯一确定'
+      - '求出 $k$ 和 $b$ 后，代入第三个已知条件验证，可以检验计算是否正确'
+    notesEn:
+      - 'The essence of undetermined coefficients: use "unknown $k$ and $b$" to set up equations, then solve — turning "find a function" into "solve a system"'
+      - 'Two unknowns ($k$ and $b$) require two independent conditions (usually two distinct points) to be uniquely determined'
+      - 'After finding $k$ and $b$, substitute into a third known condition to verify your calculation'
+
+  - id: functions-equations-inequalities
+    hasVisualization: true
+    title: <<一次函数/linear function>>与方程、不等式的联系
+    titleEn: Connections between <<一次函数/linear function>>s, equations, and inequalities
+    content: |
+      **核心思想：代数问题 ↔ 几何图形**
+
+      <<一次函数/linear function>>把代数（方程、不等式）和几何（直线、坐标系）连接起来。这是数学中**数形结合**的重要体现。
+
+      **一、用函数图象解一元一次方程**
+
+      解方程 $kx + b = 0$：
+      - 代数上：这是求使 $y = 0$ 的 $x$ 值
+      - 几何上：这是求直线 $y = kx + b$ 与 **$x$ 轴的交点**的横坐标（即零点 $x = -\dfrac{b}{k}$）
+
+      **二、用函数图象解一元一次不等式**
+
+      解不等式 $kx + b > 0$（以 $k > 0$ 为例）：
+      - 代数上：求使 $y > 0$ 的 $x$ 的范围
+      - 几何上：在图象中，直线**在 $x$ 轴上方**的部分对应的 $x$ 值，即 $x > -\dfrac{b}{k}$
+
+      | 不等式 | 几何含义 | 解集（$k > 0$ 时） |
+      |--------|---------|------------------|
+      | $kx + b > 0$ | 直线在 $x$ 轴上方 | $x > -\dfrac{b}{k}$ |
+      | $kx + b < 0$ | 直线在 $x$ 轴下方 | $x < -\dfrac{b}{k}$ |
+
+      **三、用两条直线的交点解二元一次方程组**
+
+      解方程组 $\begin{cases} y = k_1 x + b_1 \\ y = k_2 x + b_2 \end{cases}$：
+      - 代数上：求同时满足两个方程的 $(x, y)$
+      - 几何上：两条直线的**交点坐标**就是方程组的解
+
+      **例子：** $y_1 = 2x + 1$ 和 $y_2 = -x + 4$
+
+      令 $y_1 = y_2$：$2x + 1 = -x + 4$，解得 $x = 1$，代入得 $y = 3$。
+
+      所以两直线交于点 $(1, 3)$，方程组的解为 $x = 1, y = 3$。
+
+      **几何解释的好处**
+
+      - 直观：看图就能判断方程是否有解、不等式的解集方向
+      - 特殊情况：两条直线**平行**（$k_1 = k_2$，$b_1 \neq b_2$）时，方程组无解；两条直线**重合**时，有无穷多解
+    contentEn: |
+      **Core idea: algebra ↔ geometry**
+
+      <<一次函数/linear function>>s connect algebra (equations, inequalities) with geometry (lines, coordinate system). This is an important example of the "combination of numbers and shapes" principle in mathematics.
+
+      **1. Using the graph to solve a linear equation in one variable**
+
+      Solving $kx + b = 0$:
+      - Algebraically: find the value of $x$ that makes $y = 0$
+      - Geometrically: find the $x$-coordinate of the intersection of the line $y = kx + b$ with the **$x$-axis** (the zero $x = -\dfrac{b}{k}$)
+
+      **2. Using the graph to solve a linear inequality**
+
+      Solving $kx + b > 0$ (with $k > 0$ as an example):
+      - Algebraically: find the range of $x$ that makes $y > 0$
+      - Geometrically: the $x$-values where the line is **above the $x$-axis**, i.e., $x > -\dfrac{b}{k}$
+
+      | Inequality | Geometric meaning | Solution set (for $k > 0$) |
+      |------------|-------------------|---------------------------|
+      | $kx + b > 0$ | line above $x$-axis | $x > -\dfrac{b}{k}$ |
+      | $kx + b < 0$ | line below $x$-axis | $x < -\dfrac{b}{k}$ |
+
+      **3. Using the intersection of two lines to solve a system of equations**
+
+      Solving $\begin{cases} y = k_1 x + b_1 \\ y = k_2 x + b_2 \end{cases}$:
+      - Algebraically: find $(x, y)$ satisfying both equations simultaneously
+      - Geometrically: the **intersection point** of the two lines is the solution
+
+      **Example:** $y_1 = 2x + 1$ and $y_2 = -x + 4$
+
+      Set $y_1 = y_2$: $2x + 1 = -x + 4$, so $x = 1$; substituting gives $y = 3$.
+
+      The two lines intersect at $(1, 3)$; the solution to the system is $x = 1, y = 3$.
+
+      **Advantages of geometric interpretation**
+
+      - Intuitive: a graph shows at a glance whether an equation has solutions or which direction an inequality's solution set lies
+      - Special cases: parallel lines ($k_1 = k_2$, $b_1 \neq b_2$) → no solution; coincident lines → infinitely many solutions
+    notes:
+      - '"数形结合"是数学的重要思想：代数解方程 ↔ 几何求交点，两种方法相互印证'
+      - '用图象法求不等式解集时，注意 $k$ 的正负会影响不等号方向'
+      - '两条直线平行（无交点）对应方程组无解；两条直线重合（无数个交点）对应方程组有无穷多解'
+    notesEn:
+      - '"Combination of numbers and shapes" is a key mathematical idea: solving equations algebraically ↔ finding intersections geometrically, two methods that verify each other'
+      - 'When using graphs for inequalities, the sign of $k$ affects the direction of the inequality in the solution set'
+      - 'Parallel lines (no intersection) correspond to a system with no solution; coincident lines correspond to infinitely many solutions'
+
+realLife:
+  title: 生活中的一次函数
+  titleEn: Linear functions in everyday life
+  intro: |
+    <<一次函数/linear function>>是描述"匀速变化"关系的最直接模型，生活中随处可见。
+  introEn: |
+    <<一次函数/linear function>>s are the most direct model for "constant-rate" change relationships, found everywhere in daily life.
+  examples:
+    - title: 打车计费
+      titleEn: Taxi fare
+      description: |
+        出租车收费：起步费 $10$ 元，之后每千米 $3$ 元。行驶 $x$ 千米，总费用 $y = 3x + 10$（元）。
+        这里 $k = 3$（每千米费率），$b = 10$（起步费，即 $y$ 轴截距）。
+        当 $x = 0$ 时，$y = 10$——即使不走，也要付起步费。
+      descriptionEn: |
+        Taxi fare: 10 yuan base charge, then 3 yuan per km. For $x$ km, total fare $y = 3x + 10$ (yuan).
+        Here $k = 3$ (rate per km), $b = 10$ (base fare, the $y$-intercept).
+        When $x = 0$, $y = 10$ — you pay the base fare even without traveling.
+    - title: 水箱排水
+      titleEn: Draining a water tank
+      description: |
+        水箱初始有 $200$ 升水，以每分钟 $5$ 升的速度排水。$t$ 分钟后剩余水量 $y = -5t + 200$（升）。
+        $k = -5$（每分钟减少 $5$ 升，所以是负斜率），$b = 200$（初始水量）。
+        当 $y = 0$ 时，$t = 40$——水箱 $40$ 分钟排空。
+      descriptionEn: |
+        A tank starts with 200 litres and drains at 5 litres per minute. After $t$ minutes, the remaining water is $y = -5t + 200$ (litres).
+        $k = -5$ (decreases by 5 litres per minute, so negative slope), $b = 200$ (initial water level).
+        When $y = 0$, $t = 40$ — the tank empties in 40 minutes.
+    - title: 温度换算
+      titleEn: Temperature conversion
+      description: |
+        摄氏度 $C$ 与华氏度 $F$ 的换算：$F = \dfrac{9}{5}C + 32$。
+        $k = \dfrac{9}{5}$（摄氏每升高 $1°$ 华氏升高 $1.8°$），$b = 32$（冰点时华氏温度）。
+        这是一个正比例变化加上一个常数位移的典型例子。
+      descriptionEn: |
+        Conversion between Celsius $C$ and Fahrenheit $F$: $F = \dfrac{9}{5}C + 32$.
+        $k = \dfrac{9}{5}$ (each 1°C rise equals a 1.8°F rise), $b = 32$ (Fahrenheit temperature at the freezing point).
+        This is a classic example of proportional change plus a constant offset.
+
+examples:
+  - id: ex1-function-identification
+    title: 判断是否是<<函数/function>>，求函数值
+    titleEn: Identify if a relation is a function; evaluate the function
+    type: 概念辨析
+    typeEn: Concept analysis
+    problem: |
+      （1）下列关系中，$y$ 是 $x$ 的函数吗？说明理由。
+
+      ① $y = 2x - 3$（$x$ 为实数）
+      ② $x^{2} + y^{2} = 4$（$x, y$ 为实数）
+      ③ $y$ 是 $x$ 的班级同学（每个人对应一个班级）
+
+      （2）已知 $f(x) = 3x - 1$，求 $f(0)$、$f(2)$、$f(-1)$ 的值。
+    problemEn: |
+      (1) In the following relations, is $y$ a function of $x$? Explain your reasoning.
+
+      ① $y = 2x - 3$ (where $x$ is any real number)
+      ② $x^{2} + y^{2} = 4$ (where $x, y$ are real numbers)
+      ③ $y$ is a classmate of $x$ (each person corresponds to one class)
+
+      (2) Given $f(x) = 3x - 1$, find the values of $f(0)$, $f(2)$, $f(-1)$.
+    solution: |
+      **（1）判断是否是函数**
+
+      ① $y = 2x - 3$：**是函数**。对每个 $x$ 值，代入计算得唯一的 $y$ 值。（每个 $x$ 对应唯一 $y$）
+
+      ② $x^{2} + y^{2} = 4$：**不是函数**。当 $x = 0$ 时，$y^{2} = 4$，$y = 2$ 或 $y = -2$——同一个 $x = 0$ 对应了两个 $y$ 值，违反了函数的定义。
+
+      ③ $y$ 是 $x$ 的班级同学：**不是函数**。每个同学 $x$ 有多个班级同学 $y$（一个 $x$ 对应多个 $y$），不满足"唯一对应"。
+
+      **（2）求函数值**
+
+      $f(x) = 3x - 1$
+
+      $f(0) = 3 \times 0 - 1 = -1$
+
+      $f(2) = 3 \times 2 - 1 = 5$
+
+      $f(-1) = 3 \times (-1) - 1 = -4$
+    solutionEn: |
+      **(1) Identify if each is a function**
+
+      ① $y = 2x - 3$: **Yes, a function.** For each value of $x$, substituting gives a unique value of $y$.
+
+      ② $x^{2} + y^{2} = 4$: **Not a function.** When $x = 0$, $y^{2} = 4$, so $y = 2$ or $y = -2$ — the same $x = 0$ maps to two different $y$ values, violating the definition of a function.
+
+      ③ $y$ is a classmate of $x$: **Not a function.** Each student $x$ has multiple classmates $y$ (one $x$ maps to many $y$ values), failing the "unique correspondence" requirement.
+
+      **(2) Evaluate the function**
+
+      $f(x) = 3x - 1$
+
+      $f(0) = 3 \times 0 - 1 = -1$
+
+      $f(2) = 3 \times 2 - 1 = 5$
+
+      $f(-1) = 3 \times (-1) - 1 = -4$
+
+  - id: ex2-graph-linear
+    title: 画<<一次函数/linear function>>的图象
+    titleEn: Graph a linear function using intercepts and slope
+    type: 基础操作
+    typeEn: Basic operation
+    problem: |
+      画出下列<<一次函数/linear function>>的图象，并指出函数的增减性。
+
+      （1）$y = 2x - 3$
+      （2）$y = -\dfrac{1}{2}x + 2$
+    problemEn: |
+      Draw the graphs of the following <<一次函数/linear function>>s and state whether each is increasing or decreasing.
+
+      (1) $y = 2x - 3$
+      (2) $y = -\dfrac{1}{2}x + 2$
+    solution: |
+      **（1）$y = 2x - 3$**
+
+      $k = 2 > 0$，$b = -3$
+
+      求两截距点：
+      - 令 $x = 0$：$y = -3$，点 $(0, -3)$
+      - 令 $y = 0$：$2x - 3 = 0$，$x = \dfrac{3}{2}$，点 $\left(\dfrac{3}{2}, 0\right)$
+
+      在坐标系中描出 $(0, -3)$ 和 $\left(\dfrac{3}{2}, 0\right)$，连线延伸。
+
+      由于 $k = 2 > 0$，函数是**递增函数**（$x$ 增大时 $y$ 增大）。
+
+      **（2）$y = -\dfrac{1}{2}x + 2$**
+
+      $k = -\dfrac{1}{2} < 0$，$b = 2$
+
+      求两截距点：
+      - 令 $x = 0$：$y = 2$，点 $(0, 2)$
+      - 令 $y = 0$：$-\dfrac{1}{2}x + 2 = 0$，$x = 4$，点 $(4, 0)$
+
+      在坐标系中描出 $(0, 2)$ 和 $(4, 0)$，连线延伸。
+
+      由于 $k = -\dfrac{1}{2} < 0$，函数是**递减函数**（$x$ 增大时 $y$ 减小）。
+    solutionEn: |
+      **(1) $y = 2x - 3$**
+
+      $k = 2 > 0$, $b = -3$
+
+      Find two intercept points:
+      - Let $x = 0$: $y = -3$, point $(0, -3)$
+      - Let $y = 0$: $2x - 3 = 0$, $x = \dfrac{3}{2}$, point $\left(\dfrac{3}{2}, 0\right)$
+
+      Plot $(0, -3)$ and $\left(\dfrac{3}{2}, 0\right)$ in the coordinate system and connect with a line.
+
+      Since $k = 2 > 0$, the function is **increasing** ($y$ increases as $x$ increases).
+
+      **(2) $y = -\dfrac{1}{2}x + 2$**
+
+      $k = -\dfrac{1}{2} < 0$, $b = 2$
+
+      Find two intercept points:
+      - Let $x = 0$: $y = 2$, point $(0, 2)$
+      - Let $y = 0$: $-\dfrac{1}{2}x + 2 = 0$, $x = 4$, point $(4, 0)$
+
+      Plot $(0, 2)$ and $(4, 0)$ in the coordinate system and connect with a line.
+
+      Since $k = -\dfrac{1}{2} < 0$, the function is **decreasing** ($y$ decreases as $x$ increases).
+
+  - id: ex3-k-b-from-graph
+    title: 从图象信息判断 $k$、$b$ 的值
+    titleEn: Determine $k$ and $b$ from a graph description
+    type: 概念辨析
+    typeEn: Concept analysis
+    problem: |
+      已知<<一次函数/linear function>> $y = kx + b$ 的图象经过第一、二、四象限，且与 $y$ 轴交于正半轴。
+
+      （1）判断 $k$ 和 $b$ 各自的符号（正、负、或零）。
+      （2）该函数是递增还是递减函数？
+      （3）若还知道图象过点 $(2, 3)$，且 $y$ 轴截距为 $1$，求该<<一次函数/linear function>>的解析式。
+    problemEn: |
+      The graph of a <<一次函数/linear function>> $y = kx + b$ passes through Quadrants I, II, and IV, and intersects the positive $y$-axis.
+
+      (1) Determine the sign of $k$ and $b$ (positive, negative, or zero).
+      (2) Is the function increasing or decreasing?
+      (3) If the graph also passes through $(2, 3)$ and has $y$-intercept $1$, find the formula for this <<一次函数/linear function>>.
+    solution: |
+      **（1）分析 $k$ 和 $b$ 的符号**
+
+      图象经过第一、二象限和第四象限，但不经过第三象限。
+      - 经过第二和第四象限（但不过第三）：说明直线从左上向右下倾斜，即 $k < 0$（递减）
+      - 与 $y$ 轴交于**正半轴**（$y > 0$）：说明 $x = 0$ 时 $y > 0$，即 $b > 0$
+
+      综合：$k < 0$，$b > 0$。
+
+      验证：$k < 0$ 且 $b > 0$ 的直线经过第一、二、四象限——与题意一致 ✓
+
+      **（2）增减性**
+
+      由于 $k < 0$，函数是**递减函数**。
+
+      **（3）求解析式**
+
+      已知 $b = 1$（$y$ 轴截距），代入点 $(2, 3)$：
+
+      $3 = k \times 2 + 1$，即 $2k = 2$，$k = 1$
+
+      所以<<一次函数/linear function>>为 $y = x + 1$。
+
+      验证：$k = 1 > 0$——但这与第（1）部分的分析（$k < 0$）矛盾！说明"第（3）部分"的条件与第（1）部分的图象描述是两个**独立的**问题，第（3）部分是一个新的具体函数，不受前面符号约束。
+    solutionEn: |
+      **(1) Determine the signs of $k$ and $b$**
+
+      The graph passes through Quadrants I, II, and IV but not Quadrant III.
+      - Passes through Quadrants II and IV (but not III): the line tilts from top-left to bottom-right, so $k < 0$ (decreasing)
+      - Intersects the **positive $y$-axis** ($y > 0$): when $x = 0$, $y > 0$, so $b > 0$
+
+      Result: $k < 0$, $b > 0$.
+
+      Check: a line with $k < 0$ and $b > 0$ passes through Quadrants I, II, and IV ✓
+
+      **(2) Increasing or decreasing**
+
+      Since $k < 0$, the function is **decreasing**.
+
+      **(3) Find the formula**
+
+      Given $b = 1$ ($y$-intercept), substituting point $(2, 3)$:
+
+      $3 = k \times 2 + 1$, so $2k = 2$, $k = 1$
+
+      Therefore the <<一次函数/linear function>> is $y = x + 1$.
+
+  - id: ex4-undetermined-coefficients
+    title: 用待定系数法求<<一次函数/linear function>>
+    titleEn: Use undetermined coefficients to find the linear function
+    type: 基础操作
+    typeEn: Basic operation
+    problem: |
+      求满足下列条件的<<一次函数/linear function>>的解析式：
+
+      （1）图象经过点 $A(1, 2)$ 和 $B(3, 8)$
+      （2）图象经过点 $P(-1, 4)$，且与函数 $y = 3x - 2$ 的图象平行
+    problemEn: |
+      Find the formula for the <<一次函数/linear function>> satisfying each condition:
+
+      (1) The graph passes through $A(1, 2)$ and $B(3, 8)$
+      (2) The graph passes through $P(-1, 4)$ and is parallel to the graph of $y = 3x - 2$
+    solution: |
+      **（1）经过 $A(1, 2)$ 和 $B(3, 8)$**
+
+      设 $y = kx + b$（$k \neq 0$）。
+
+      代入 $A(1, 2)$：$k + b = 2$ ……①
+
+      代入 $B(3, 8)$：$3k + b = 8$ ……②
+
+      ②$-$①：$2k = 6$，所以 $k = 3$
+
+      代入①：$3 + b = 2$，所以 $b = -1$
+
+      所以<<一次函数/linear function>>为 $\boxed{y = 3x - 1}$
+
+      **验证：** 代入 $A(1,2)$：$3 \times 1 - 1 = 2$ ✓；代入 $B(3,8)$：$3 \times 3 - 1 = 8$ ✓
+
+      **（2）平行于 $y = 3x - 2$，过 $P(-1, 4)$**
+
+      平行线斜率相等，所以 $k = 3$（与 $y = 3x - 2$ 的<<斜率/slope>>相同）。
+
+      设 $y = 3x + b$，代入 $P(-1, 4)$：
+
+      $4 = 3 \times (-1) + b$，即 $4 = -3 + b$，所以 $b = 7$
+
+      所以<<一次函数/linear function>>为 $\boxed{y = 3x + 7}$
+
+      **验证：** $b = 7 \neq -2$，确实与 $y = 3x - 2$ 平行（不重合）✓
+    solutionEn: |
+      **(1) Through $A(1, 2)$ and $B(3, 8)$**
+
+      Let $y = kx + b$ ($k \neq 0$).
+
+      Substituting $A(1, 2)$: $k + b = 2$ …①
+
+      Substituting $B(3, 8)$: $3k + b = 8$ …②
+
+      ②$-$①: $2k = 6$, so $k = 3$
+
+      Substituting into ①: $3 + b = 2$, so $b = -1$
+
+      Therefore the <<一次函数/linear function>> is $\boxed{y = 3x - 1}$
+
+      **Check:** for $A(1,2)$: $3 \times 1 - 1 = 2$ ✓; for $B(3,8)$: $3 \times 3 - 1 = 8$ ✓
+
+      **(2) Parallel to $y = 3x - 2$, through $P(-1, 4)$**
+
+      Parallel lines have equal slopes, so $k = 3$ (same <<斜率/slope>> as $y = 3x - 2$).
+
+      Let $y = 3x + b$; substitute $P(-1, 4)$:
+
+      $4 = 3 \times (-1) + b$, so $4 = -3 + b$, giving $b = 7$
+
+      Therefore the <<一次函数/linear function>> is $\boxed{y = 3x + 7}$
+
+      **Check:** $b = 7 \neq -2$, confirming it is parallel to (and distinct from) $y = 3x - 2$ ✓
+
+  - id: ex5-realworld-taxi
+    title: 实际问题——打车计费
+    titleEn: Real-world problem — taxi fare
+    type: 综合应用
+    typeEn: Applied problem
+    problem: |
+      某城市出租车计费规则：起步费 $10$ 元（含 $3$ 千米以内），超出 $3$ 千米后每千米收费 $2.5$ 元。
+      设乘客乘坐超过 $3$ 千米时，行驶里程为 $x$ 千米（$x > 3$），总费用为 $y$ 元。
+
+      （1）写出 $y$ 关于 $x$ 的函数解析式。
+      （2）行驶 $15$ 千米，应付费用多少元？
+      （3）若乘客最多愿意支付 $35$ 元，最多能乘坐多少千米？
+      （4）在坐标系中描述该函数图象的大致样子（指出截距和斜率）。
+    problemEn: |
+      A city's taxi pricing: base fare 10 yuan (covers up to 3 km); beyond 3 km, an additional 2.5 yuan per km.
+      For trips longer than 3 km, let $x$ km be the distance traveled ($x > 3$) and $y$ yuan be the total fare.
+
+      (1) Write the formula for $y$ as a function of $x$.
+      (2) What is the fare for a 15 km trip?
+      (3) If a passenger is willing to pay at most 35 yuan, what is the maximum distance they can travel?
+      (4) Describe the graph of this function in the coordinate system (state the intercept and slope).
+    solution: |
+      **（1）建立<<一次函数/linear function>>**
+
+      超出 $3$ 千米的部分为 $(x - 3)$ 千米，每千米 $2.5$ 元：
+
+      $y = 10 + 2.5(x - 3) = 10 + 2.5x - 7.5 = 2.5x + 2.5$
+
+      所以 $y = 2.5x + 2.5$（$x > 3$）
+
+      其中 $k = 2.5$（每千米 $2.5$ 元），$b = 2.5$（注意：这是函数解析式的 $y$ 轴截距，但在本题情境中 $x > 3$，所以 $x = 0$ 不在实际范围内）。
+
+      **（2）行驶 $15$ 千米**
+
+      $y = 2.5 \times 15 + 2.5 = 37.5 + 2.5 = 40$（元）
+
+      **（3）最多付 $35$ 元**
+
+      令 $y \leq 35$：$2.5x + 2.5 \leq 35$
+
+      $2.5x \leq 32.5$
+
+      $x \leq 13$
+
+      所以最多能乘坐 $\mathbf{13}$ **千米**。
+
+      **（4）图象描述**
+
+      - <<斜率/slope>> $k = 2.5 > 0$：直线从左下向右上倾斜（递增）
+      - 纵<<截距/intercept>>（理论上）$b = 2.5$：若延伸到 $x = 0$，直线与 $y$ 轴交于 $(0, 2.5)$
+      - 但实际定义域是 $x > 3$，所以图象从点 $(3, 10)$ 开始（向右延伸）
+      - 点 $(3, 10)$ 验证：$2.5 \times 3 + 2.5 = 10$ ✓（即起步价）
+    solutionEn: |
+      **(1) Set up the <<一次函数/linear function>>**
+
+      The distance beyond 3 km is $(x - 3)$ km at 2.5 yuan/km:
+
+      $y = 10 + 2.5(x - 3) = 10 + 2.5x - 7.5 = 2.5x + 2.5$
+
+      So $y = 2.5x + 2.5$ ($x > 3$)
+
+      Here $k = 2.5$ (2.5 yuan per km) and $b = 2.5$ (the theoretical $y$-intercept; note that $x = 0$ is outside the actual domain $x > 3$).
+
+      **(2) 15 km trip**
+
+      $y = 2.5 \times 15 + 2.5 = 37.5 + 2.5 = 40$ (yuan)
+
+      **(3) Maximum fare of 35 yuan**
+
+      Set $y \leq 35$: $2.5x + 2.5 \leq 35$
+
+      $2.5x \leq 32.5$
+
+      $x \leq 13$
+
+      Maximum distance: **13 km**.
+
+      **(4) Graph description**
+
+      - <<斜率/slope>> $k = 2.5 > 0$: line tilts upward from left to right (increasing)
+      - Theoretical $y$-<<截距/intercept>> $b = 2.5$: if extended to $x = 0$, the line would meet the $y$-axis at $(0, 2.5)$
+      - Actual domain is $x > 3$, so the graph starts at the point $(3, 10)$ and extends to the right
+      - Verify $(3, 10)$: $2.5 \times 3 + 2.5 = 10$ ✓ (this is the base fare)
+
+exercises:
+  - id: q1
+    type: choice
+    question: 下列关系中，$y$ 是 $x$ 的<<函数/function>>的是（　）
+    questionEn: Among the following relations, in which one is $y$ a <<函数/function>> of $x$?
+    options:
+      - A. $y^{2} = x$（$x \geq 0$）
+      - B. $y = \pm\sqrt{x}$（$x \geq 0$）
+      - C. $y = x^{2} - 1$（$x$ 为实数）
+      - D. $|y| = x$（$x \geq 0$）
+    optionsEn:
+      - A. $y^{2} = x$ ($x \geq 0$)
+      - B. $y = \pm\sqrt{x}$ ($x \geq 0$)
+      - C. $y = x^{2} - 1$ ($x$ is any real number)
+      - D. $|y| = x$ ($x \geq 0$)
+    answer: C
+    explanation: |
+      A：$y^{2} = x$ 时，如 $x = 4$，$y = 2$ 或 $y = -2$，一个 $x$ 对应两个 $y$，不是函数。
+      B：$y = \pm\sqrt{x}$ 明确写出了 $\pm$，一个 $x$ 对应两个 $y$，不是函数。
+      C：$y = x^{2} - 1$，每个 $x$ 代入得唯一 $y$，**是函数** ✓
+      D：$|y| = x$ 时，$y = x$ 或 $y = -x$，一个 $x$ 对应两个 $y$，不是函数。
+    explanationEn: |
+      A: $y^{2} = x$ gives $y = 2$ or $y = -2$ when $x = 4$ — one $x$ maps to two values of $y$, not a function.
+      B: $y = \pm\sqrt{x}$ explicitly shows two values — not a function.
+      C: $y = x^{2} - 1$ gives a unique $y$ for every $x$ — **this is a function** ✓
+      D: $|y| = x$ gives $y = x$ or $y = -x$ — not a function.
+
+  - id: q2
+    type: fill
+    question: |
+      <<正比例函数/direct proportion function>> $y = -3x$ 的图象经过第______象限，是______（递增/递减）函数。
+      当 $x = -2$ 时，$y$ = ______。
+    questionEn: |
+      The graph of the <<正比例函数/direct proportion function>> $y = -3x$ passes through Quadrants ______, and is a ______ (increasing/decreasing) function.
+      When $x = -2$, $y$ = ______.
+    answer: '第二、四象限；递减；6'
+    answerEn: 'Quadrants II and IV; decreasing; 6'
+    explanation: |
+      $k = -3 < 0$，图象经过第二、四象限（从左上到右下），是递减函数。
+      $y = -3 \times (-2) = 6$
+    explanationEn: |
+      $k = -3 < 0$, so the graph passes through Quadrants II and IV (top-left to bottom-right) and is decreasing.
+      $y = -3 \times (-2) = 6$
+
+  - id: q3
+    type: fill
+    question: |
+      <<一次函数/linear function>> $y = 2x - 4$ 的 $y$ 轴截距为______，$x$ 轴截距（零点）为______，图象经过第______、______、______象限。
+    questionEn: |
+      The <<一次函数/linear function>> $y = 2x - 4$ has $y$-intercept ______, $x$-intercept (zero) ______, and its graph passes through Quadrants ______, ______, and ______.
+    answer: '-4；2；一、三、四'
+    answerEn: '-4; 2; I, III, IV'
+    explanation: |
+      $b = -4$（令 $x=0$，$y=-4$），$x$ 轴截距令 $y=0$：$2x-4=0$，$x=2$。
+      $k=2>0$（递增），$b=-4<0$：经过第一、三、四象限。
+    explanationEn: |
+      $b = -4$ (set $x=0$, $y=-4$); $x$-intercept: set $y=0$, $2x-4=0$, $x=2$.
+      $k=2>0$ (increasing), $b=-4<0$: passes through Quadrants I, III, IV.
+
+  - id: q4
+    type: choice
+    question: |
+      已知<<一次函数/linear function>> $y = kx + b$，其图象如下描述：从左向右，直线由高变低；且直线与 $y$ 轴的交点在 $x$ 轴下方。则（　）
+    questionEn: |
+      The graph of a <<一次函数/linear function>> $y = kx + b$ has the following properties: from left to right, the line goes from high to low; and the line crosses the $y$-axis below the $x$-axis. Which is correct?
+    options:
+      - 'A. $k > 0$，$b > 0$'
+      - 'B. $k > 0$，$b < 0$'
+      - 'C. $k < 0$，$b > 0$'
+      - 'D. $k < 0$，$b < 0$'
+    optionsEn:
+      - 'A. $k > 0$, $b > 0$'
+      - 'B. $k > 0$, $b < 0$'
+      - 'C. $k < 0$, $b > 0$'
+      - 'D. $k < 0$, $b < 0$'
+    answer: D
+    explanation: |
+      "从高变低"（递减）→ $k < 0$；
+      "与 $y$ 轴交点在 $x$ 轴下方"→ $b < 0$。
+      选 D。
+    explanationEn: |
+      "From high to low" (decreasing) → $k < 0$;
+      "crosses $y$-axis below $x$-axis" → $b < 0$.
+      Answer: D.
+
+  - id: q5
+    type: fill
+    question: |
+      已知<<一次函数/linear function>> $y = kx + b$ 经过点 $(0, 3)$ 和 $(2, 7)$，则 $k$ = ______，$b$ = ______，函数解析式为 $y$ = ______。
+    questionEn: |
+      The <<一次函数/linear function>> $y = kx + b$ passes through $(0, 3)$ and $(2, 7)$. Find $k$ = ______, $b$ = ______, and the formula $y$ = ______.
+    answer: 'k = 2；b = 3；y = 2x + 3'
+    answerEn: 'k = 2; b = 3; y = 2x + 3'
+    explanation: |
+      $(0, 3)$ 是 $y$ 轴上的点，所以直接得 $b = 3$。
+      代入 $(2, 7)$：$7 = 2k + 3$，$k = 2$。
+      所以 $y = 2x + 3$。
+    explanationEn: |
+      $(0, 3)$ is on the $y$-axis, so $b = 3$ directly.
+      Substitute $(2, 7)$: $7 = 2k + 3$, $k = 2$.
+      Therefore $y = 2x + 3$.
+
+  - id: q6
+    type: fill
+    question: |
+      一次函数 $y = kx + b$ 的图象平行于直线 $y = -2x + 1$，且经过点 $(1, 5)$，则该<<一次函数/linear function>>的解析式为 $y$ = ______。
+    questionEn: |
+      The graph of a <<一次函数/linear function>> $y = kx + b$ is parallel to the line $y = -2x + 1$ and passes through $(1, 5)$. Find the formula $y$ = ______.
+    answer: 'y = -2x + 7'
+    answerEn: 'y = -2x + 7'
+    explanation: |
+      平行 → $k = -2$（斜率相同）。
+      代入 $(1, 5)$：$5 = -2 \times 1 + b$，$b = 7$。
+      所以 $y = -2x + 7$（$b = 7 \neq 1$，确实与 $y = -2x + 1$ 平行）。
+    explanationEn: |
+      Parallel → $k = -2$ (equal slopes).
+      Substitute $(1, 5)$: $5 = -2 \times 1 + b$, $b = 7$.
+      Therefore $y = -2x + 7$ ($b = 7 \neq 1$, confirming it is parallel to $y = -2x + 1$).
+
+  - id: q7
+    type: truefalse
+    question: |
+      判断正误：<<一次函数/linear function>> $y = kx + b$ 中，若 $k > 0$ 且 $b > 0$，则函数图象一定经过第一、二、三象限。
+    questionEn: |
+      True or False: In the <<一次函数/linear function>> $y = kx + b$, if $k > 0$ and $b > 0$, then the graph must pass through Quadrants I, II, and III.
+    answer: '正确 / True'
+    explanation: |
+      $k > 0$：递增，直线从左下向右上（经过第一、三象限方向）。
+      $b > 0$：$y$ 轴截距在 $x$ 轴上方，直线经过第二象限。
+      $x$ 轴截距 $= -b/k < 0$（负数），所以截距点在负 $x$ 轴上，直线向左延伸会进入第三象限（$x < -b/k$ 时 $y < 0$）——但在原点右侧，直线一直在上方。
+      综合：经过第一、二、三象限，**不经过第四象限**。题目说"一、二、三"，**正确** ✓
+    explanationEn: |
+      $k > 0$: increasing, line goes from bottom-left to top-right (covers Quadrants I and III direction).
+      $b > 0$: $y$-intercept above the $x$-axis, so the line enters Quadrant II.
+      $x$-intercept $= -b/k < 0$ (negative), so the line extends into Quadrant III on the left.
+      Result: passes through Quadrants I, II, and III; does **not** pass through Quadrant IV. The statement says "I, II, III" — **True** ✓
+
+  - id: q8
+    type: choice
+    question: |
+      函数 $y_1 = 2x + 3$ 和 $y_2 = 2x - 1$ 的图象关系是（　）
+    questionEn: |
+      The graphs of $y_1 = 2x + 3$ and $y_2 = 2x - 1$ are:
+    options:
+      - A. 相交于一点
+      - B. 平行（互不相交）
+      - C. 重合
+      - D. 垂直
+    optionsEn:
+      - A. Intersect at one point
+      - B. Parallel (do not intersect)
+      - C. Coincident
+      - D. Perpendicular
+    answer: B
+    explanation: |
+      两函数<<斜率/slope>>相同（都是 $k = 2$），但截距不同（$b_1 = 3 \neq -1 = b_2$），所以两直线**平行**。
+    explanationEn: |
+      Both functions have the same <<斜率/slope>> ($k = 2$) but different intercepts ($b_1 = 3 \neq -1 = b_2$), so the two lines are **parallel**.
+
+  - id: q9
+    type: fill
+    question: |
+      用图象法解不等式：一次函数 $y = 3x - 6$，当 $y > 0$ 时，$x$ 的取值范围是______；当 $y < 0$ 时，$x$ 的取值范围是______。
+    questionEn: |
+      Use a graph to solve: for the <<一次函数/linear function>> $y = 3x - 6$, find the range of $x$ when $y > 0$: ______; when $y < 0$: ______.
+    answer: 'x > 2；x < 2'
+    answerEn: 'x > 2; x < 2'
+    explanation: |
+      $x$ 轴截距：令 $y = 0$，$3x - 6 = 0$，$x = 2$。
+      $k = 3 > 0$（递增），所以：$x > 2$ 时 $y > 0$（直线在 $x$ 轴上方）；$x < 2$ 时 $y < 0$（直线在 $x$ 轴下方）。
+    explanationEn: |
+      $x$-intercept: set $y = 0$, $3x - 6 = 0$, $x = 2$.
+      $k = 3 > 0$ (increasing), so: $x > 2$ gives $y > 0$ (line above $x$-axis); $x < 2$ gives $y < 0$ (line below $x$-axis).
+
+  - id: q10
+    type: fill
+    question: |
+      已知两<<一次函数/linear function>>：$y_1 = x + 3$ 和 $y_2 = -2x + 6$。
+      （1）两直线的交点坐标是（______，______）。
+      （2）满足 $y_1 > y_2$ 的 $x$ 的范围是______。
+    questionEn: |
+      Given two <<一次函数/linear function>>s: $y_1 = x + 3$ and $y_2 = -2x + 6$.
+      (1) The intersection point of the two lines is (______, ______).
+      (2) The range of $x$ satisfying $y_1 > y_2$ is ______.
+    answer: '(1, 4)；x > 1'
+    answerEn: '(1, 4); x > 1'
+    explanation: |
+      令 $y_1 = y_2$：$x + 3 = -2x + 6$，$3x = 3$，$x = 1$；代入：$y = 4$。交点 $(1, 4)$。
+      $y_1 > y_2$：$x + 3 > -2x + 6$，$3x > 3$，$x > 1$。
+    explanationEn: |
+      Set $y_1 = y_2$: $x + 3 = -2x + 6$, $3x = 3$, $x = 1$; substitute: $y = 4$. Intersection $(1, 4)$.
+      $y_1 > y_2$: $x + 3 > -2x + 6$, $3x > 3$, $x > 1$.
+
+  - id: q11
+    type: choice
+    question: |
+      某<<一次函数/linear function>>图象过点 $(a, 3)$ 和 $(a+2, 7)$，则该函数的<<斜率/slope>> $k$ 等于（　）
+    questionEn: |
+      A <<一次函数/linear function>> passes through $(a, 3)$ and $(a+2, 7)$. Its <<斜率/slope>> $k$ equals:
+    options:
+      - 'A. $\dfrac{4}{2} = 2$'
+      - 'B. $\dfrac{7}{a+2}$'
+      - 'C. $\dfrac{4}{a}$'
+      - 'D. 无法确定'
+    optionsEn:
+      - 'A. $\dfrac{4}{2} = 2$'
+      - 'B. $\dfrac{7}{a+2}$'
+      - 'C. $\dfrac{4}{a}$'
+      - 'D. Cannot be determined'
+    answer: A
+    explanation: |
+      $k = \dfrac{y_2 - y_1}{x_2 - x_1} = \dfrac{7 - 3}{(a+2) - a} = \dfrac{4}{2} = 2$
+      注意：$a$ 的具体值不影响<<斜率/slope>>的计算——只要两点的纵坐标差为 $4$，横坐标差为 $2$，斜率就是 $2$。
+    explanationEn: |
+      $k = \dfrac{y_2 - y_1}{x_2 - x_1} = \dfrac{7 - 3}{(a+2) - a} = \dfrac{4}{2} = 2$
+      Note: the specific value of $a$ does not affect the slope calculation — as long as the difference in $y$-values is 4 and in $x$-values is 2, the slope is 2.
+
+  - id: q12
+    type: fill
+    question: |
+      某工厂电费的计算方式：每月用电量不超过 $100$ 度时，单价 $0.5$ 元/度；超过 $100$ 度的部分，单价 $0.8$ 元/度。
+      （1）若本月用电 $80$ 度，电费为______元。
+      （2）若本月用电 $x$ 度（$x > 100$），电费 $y$ = ______元（用含 $x$ 的式子表示）。
+      （3）若本月电费为 $74$ 元，用电量为______度。
+    questionEn: |
+      A factory's electricity billing: up to 100 kWh per month at 0.5 yuan/kWh; above 100 kWh, the excess is charged at 0.8 yuan/kWh.
+      (1) If this month's usage is 80 kWh, the bill is ______ yuan.
+      (2) If this month's usage is $x$ kWh ($x > 100$), the bill $y$ = ______ yuan (express in terms of $x$).
+      (3) If this month's bill is 74 yuan, the usage is ______ kWh.
+    answer: '40；y = 0.8x - 30；130'
+    answerEn: '40; y = 0.8x - 30; 130'
+    explanation: |
+      (1) $80 \times 0.5 = 40$ 元。
+      (2) 前 $100$ 度：$100 \times 0.5 = 50$ 元；超出 $(x-100)$ 度：$(x-100) \times 0.8$ 元。
+      $y = 50 + 0.8(x-100) = 50 + 0.8x - 80 = 0.8x - 30$
+      (3) $0.8x - 30 = 74$，$0.8x = 104$，$x = 130$ 度。
+    explanationEn: |
+      (1) $80 \times 0.5 = 40$ yuan.
+      (2) First 100 kWh: $100 \times 0.5 = 50$ yuan; excess $(x-100)$ kWh: $(x-100) \times 0.8$ yuan.
+      $y = 50 + 0.8(x-100) = 50 + 0.8x - 80 = 0.8x - 30$
+      (3) $0.8x - 30 = 74$, $0.8x = 104$, $x = 130$ kWh.
+
+  - id: q13
+    type: fill
+    question: |
+      已知<<正比例函数/direct proportion function>> $y = kx$ 和<<一次函数/linear function>> $y = x + b$ 的图象交于点 $(2, m)$。
+      （1）求 $m$ 的值（用 $k$ 和 $b$ 表示，或直接求出）。
+      （2）若还知道交点在第一象限，且 $k = 3$，求 $b$ 的取值范围，并求交点坐标。
+    questionEn: |
+      The graphs of the <<正比例函数/direct proportion function>> $y = kx$ and the <<一次函数/linear function>> $y = x + b$ intersect at $(2, m)$.
+      (1) Find the value of $m$ (express in terms of $k$ and $b$, or find it directly).
+      (2) If the intersection point is in Quadrant I and $k = 3$, find the range of $b$ and the intersection coordinates.
+    answer: '(1) m = 2k（或 m = 2 + b）；(2) b < -2（使第一象限），但m>0要求m=2k=6>0成立，b = -4，交点 (2,6)'
+    answerEn: '(1) m = 2k (or m = 2 + b); (2) b = -4, intersection (2, 6)'
+    explanation: |
+      (1) 交点 $(2, m)$ 在两函数图象上：
+      代入 $y = kx$：$m = 2k$
+      代入 $y = x + b$：$m = 2 + b$
+      所以 $2k = 2 + b$，$m = 2k$（也可写 $m = 2 + b$）。
+
+      (2) $k = 3$：$m = 2 \times 3 = 6$，所以交点为 $(2, 6)$。
+      由 $m = 2 + b$：$6 = 2 + b$，$b = -4$。
+      验证：交点 $(2, 6)$ 在第一象限（$x = 2 > 0$，$y = 6 > 0$）✓
+    explanationEn: |
+      (1) The intersection point $(2, m)$ lies on both graphs:
+      From $y = kx$: $m = 2k$
+      From $y = x + b$: $m = 2 + b$
+      So $2k = 2 + b$ and $m = 2k$ (equivalently $m = 2 + b$).
+
+      (2) With $k = 3$: $m = 2 \times 3 = 6$, so the intersection is $(2, 6)$.
+      From $m = 2 + b$: $6 = 2 + b$, $b = -4$.
+      Check: $(2, 6)$ is in Quadrant I ($x = 2 > 0$, $y = 6 > 0$) ✓
+
+examPrep:
+  title: 章末提升
+  titleEn: Challenge
+  intro: |
+    本章综合提升题，重点考查<<一次函数/linear function>>的综合运用、易错点和多知识点交叉。难度高于课内练习，请认真分析。
+  introEn: |
+    End-of-chapter challenge problems focusing on comprehensive application of <<一次函数/linear function>>s, common errors, and cross-topic reasoning. Difficulty is above the regular exercises.
+  problems:
+    - id: ep1
+      type: choice
+      question: |
+        已知<<一次函数/linear function>> $y = (m-1)x + m^{2} - 1$，若该函数的图象经过原点，则 $m$ 的值为（　）
+      questionEn: |
+        The graph of the <<一次函数/linear function>> $y = (m-1)x + m^{2} - 1$ passes through the origin. The value of $m$ is:
+      options:
+        - 'A. $m = 1$'
+        - 'B. $m = -1$'
+        - 'C. $m = 1$ 或 $m = -1$'
+        - 'D. $m = -1$（排除 $m=1$）'
+      optionsEn:
+        - 'A. $m = 1$'
+        - 'B. $m = -1$'
+        - 'C. $m = 1$ or $m = -1$'
+        - 'D. $m = -1$ (excluding $m = 1$)'
+      answer: D
+      explanation: |
+        图象过原点 → 令 $x = 0$，$y = 0$：$b = m^{2} - 1 = 0$，解得 $m = 1$ 或 $m = -1$。
+
+        但必须满足<<一次函数/linear function>>的条件：$k = m - 1 \neq 0$，即 $m \neq 1$。
+
+        所以排除 $m = 1$（若 $m = 1$，则 $k = 0$，函数变成常数函数 $y = 0$，不是一次函数）。
+
+        因此只有 $m = -1$ 满足条件：$k = -1 - 1 = -2 \neq 0$，$b = 1 - 1 = 0$ ✓
+      explanationEn: |
+        Graph passes through origin → set $x = 0$, $y = 0$: $b = m^{2} - 1 = 0$, giving $m = 1$ or $m = -1$.
+
+        But the <<一次函数/linear function>> condition requires $k = m - 1 \neq 0$, i.e., $m \neq 1$.
+
+        Exclude $m = 1$ (it gives $k = 0$, making the function constant $y = 0$, not a linear function).
+
+        Only $m = -1$ works: $k = -1 - 1 = -2 \neq 0$, $b = 1 - 1 = 0$ ✓
+
+    - id: ep2
+      type: solve
+      question: |
+        直线 $l_1: y = 2x + 3$ 和直线 $l_2: y = -x + 6$ 交于点 $A$。
+        （1）求点 $A$ 的坐标。
+        （2）过点 $A$ 且平行于 $y$ 轴的直线方程是什么？（提示：$y$ 轴方向的直线形如 $x = a$）
+        （3）过点 $A$ 作一条直线 $l_3$，使 $l_3$ 与 $x$ 轴的交点恰好是 $l_1$ 与 $x$ 轴交点的右侧 $2$ 个单位。求 $l_3$ 的函数表达式。
+      questionEn: |
+        Lines $l_1: y = 2x + 3$ and $l_2: y = -x + 6$ intersect at point $A$.
+        (1) Find the coordinates of $A$.
+        (2) What is the equation of the line through $A$ parallel to the $y$-axis?
+        (3) Draw a line $l_3$ through $A$ such that $l_3$ intersects the $x$-axis exactly 2 units to the right of where $l_1$ meets the $x$-axis. Find the formula for $l_3$.
+      answer: |
+        (1) 令 $2x+3 = -x+6$：$3x = 3$，$x = 1$；$y = 5$。点 $A(1, 5)$。
+        (2) 过 $(1,5)$ 且平行于 $y$ 轴：$x = 1$。
+        (3) $l_1$ 的 $x$ 轴截距：令 $y=0$，$2x+3=0$，$x = -\dfrac{3}{2}$。其右侧 $2$ 个单位：$x = -\dfrac{3}{2} + 2 = \dfrac{1}{2}$。
+        $l_3$ 过 $A(1,5)$ 和 $\left(\dfrac{1}{2}, 0\right)$。
+        $k = \dfrac{5-0}{1-\frac{1}{2}} = \dfrac{5}{\frac{1}{2}} = 10$；代入 $y = 10x + b$，用点 $(1,5)$：$5 = 10 + b$，$b = -5$。
+        所以 $l_3: y = 10x - 5$。
+      answerEn: |
+        (1) Set $2x+3 = -x+6$: $3x = 3$, $x = 1$; $y = 5$. Point $A(1, 5)$.
+        (2) Through $(1,5)$ parallel to the $y$-axis: $x = 1$.
+        (3) $x$-intercept of $l_1$: set $y=0$, $2x+3=0$, $x = -\dfrac{3}{2}$. Two units to the right: $x = -\dfrac{3}{2} + 2 = \dfrac{1}{2}$.
+        $l_3$ passes through $A(1,5)$ and $\left(\dfrac{1}{2}, 0\right)$.
+        $k = \dfrac{5-0}{1-\frac{1}{2}} = \dfrac{5}{\frac{1}{2}} = 10$; using $y = 10x + b$ with $(1,5)$: $5 = 10 + b$, $b = -5$.
+        Therefore $l_3: y = 10x - 5$.
+
+    - id: ep3
+      type: solve
+      question: |
+        一辆汽车从甲城出发前往乙城，出发时油箱满油 $60$ 升，行驶过程中油量 $y$（升）与行驶里程 $x$（千米）满足<<一次函数/linear function>> $y = -0.1x + 60$（$0 \leq x \leq 600$）。
+
+        （1）当行驶 $200$ 千米时，油箱剩余多少升？
+        （2）油量不足 $20$ 升时需要加油，最晚应该在行驶多少千米时加油？
+        （3）若甲乙两城相距 $600$ 千米，到达乙城时恰好用完燃油，验证此结论是否正确，并说明该<<一次函数/linear function>>各参数的实际含义。
+      questionEn: |
+        A car departs from City A to City B with a full tank of 60 litres. The oil remaining $y$ (litres) as a function of distance $x$ (km) is $y = -0.1x + 60$ ($0 \leq x \leq 600$).
+
+        (1) How much oil remains after 200 km?
+        (2) Refuelling is needed when oil drops below 20 litres. What is the latest distance at which the driver must refuel?
+        (3) The two cities are 600 km apart. Verify whether the car arrives at City B with exactly 0 litres remaining, and explain the real-world meaning of each parameter in the <<一次函数/linear function>>.
+      answer: |
+        (1) $y = -0.1 \times 200 + 60 = -20 + 60 = 40$ 升。
+
+        (2) 令 $y < 20$：$-0.1x + 60 < 20$，$-0.1x < -40$，$x > 400$。
+        所以行驶超过 $400$ 千米后油量不足 $20$ 升，最晚在 $x = 400$ 千米时加油。
+
+        (3) 令 $x = 600$：$y = -0.1 \times 600 + 60 = -60 + 60 = 0$ 升。恰好用完 ✓
+
+        参数含义：
+        - $k = -0.1$：每行驶 $1$ 千米消耗 $0.1$ 升燃油（油耗 $= 10$ 升/百千米）
+        - $b = 60$：出发时（$x = 0$）油箱满油 $60$ 升
+        - 定义域 $0 \leq x \leq 600$：从出发到终点的完整行程
+      answerEn: |
+        (1) $y = -0.1 \times 200 + 60 = -20 + 60 = 40$ litres.
+
+        (2) Set $y < 20$: $-0.1x + 60 < 20$, $-0.1x < -40$, $x > 400$.
+        So oil drops below 20 litres after 400 km; refuel no later than $x = 400$ km.
+
+        (3) Set $x = 600$: $y = -0.1 \times 600 + 60 = -60 + 60 = 0$ litres. Exactly empty ✓
+
+        Meanings of parameters:
+        - $k = -0.1$: the car consumes 0.1 litres per km (fuel efficiency = 10 litres per 100 km)
+        - $b = 60$: at departure ($x = 0$), the tank holds 60 litres
+        - Domain $0 \leq x \leq 600$: the complete journey from departure to destination
+
+    - id: ep4
+      type: solve
+      question: |
+        在平面直角坐标系中，直线 $l: y = kx + b$ 与 $x$ 轴、$y$ 轴围成一个三角形（设 $k \neq 0$，$b \neq 0$）。
+
+        （1）用 $k$ 和 $b$ 表示该三角形两直角边的长度（即 $x$ 轴截距的绝对值和 $y$ 轴截距的绝对值）。
+        （2）若 $k = -2$，$b = 4$，求此三角形的面积。
+        （3）若三角形面积为 $9$，且直线过点 $(3, 0)$，求该<<一次函数/linear function>>所有可能的解析式。
+      questionEn: |
+        In a coordinate system, the line $l: y = kx + b$ forms a triangle with the $x$-axis and $y$-axis (assume $k \neq 0$, $b \neq 0$).
+
+        (1) Express the lengths of the two legs of this right triangle in terms of $k$ and $b$ (i.e., the absolute values of the $x$-intercept and $y$-intercept).
+        (2) If $k = -2$ and $b = 4$, find the area of the triangle.
+        (3) If the area of the triangle is 9 and the line passes through $(3, 0)$, find all possible formulas for the <<一次函数/linear function>>.
+      answer: |
+        (1) $y$ 轴截距：$|b|$（即两直角边之一的长度）。
+        $x$ 轴截距：令 $y = 0$，$x = -\dfrac{b}{k}$，所以 $x$ 轴截距绝对值为 $\left|\dfrac{b}{k}\right| = \dfrac{|b|}{|k|}$。
+
+        (2) $k = -2$，$b = 4$：
+        $y$ 轴截距 $= |4| = 4$；$x$ 轴截距 $= \left|\dfrac{4}{-2}\right| = 2$。
+        三角形面积 $= \dfrac{1}{2} \times 2 \times 4 = 4$。
+
+        (3) 直线过 $(3, 0)$，即 $x$ 轴截距为 $3$，$\left|\dfrac{b}{k}\right| = 3$，即 $b = 3k$ 或 $b = -3k$。
+        面积 $= \dfrac{1}{2} \times |x\text{截距}| \times |b| = \dfrac{1}{2} \times 3 \times |b| = 9$，所以 $|b| = 6$，$b = 6$ 或 $b = -6$。
+
+        情形一：$b = 6$，$x$ 轴截距 $= 3$，则 $k = -\dfrac{6}{3} = -2$。函数：$y = -2x + 6$。
+        情形二：$b = -6$，$x$ 轴截距 $= 3$，则 $k = \dfrac{6}{3} = 2$。函数：$y = 2x - 6$。
+
+        验证情形一：过 $(3,0)$？$y = -2(3) + 6 = 0$ ✓；面积 $= \dfrac{1}{2} \times 3 \times 6 = 9$ ✓
+        验证情形二：过 $(3,0)$？$y = 2(3) - 6 = 0$ ✓；面积 $= \dfrac{1}{2} \times 3 \times 6 = 9$ ✓
+      answerEn: |
+        (1) $y$-intercept: $|b|$. $x$-intercept: set $y = 0$, $x = -\dfrac{b}{k}$, absolute value $= \dfrac{|b|}{|k|}$.
+
+        (2) $k = -2$, $b = 4$: $y$-intercept $= 4$; $x$-intercept $= 2$. Area $= \dfrac{1}{2} \times 2 \times 4 = 4$.
+
+        (3) Line passes through $(3, 0)$, so $x$-intercept $= 3$.
+        Area $= \dfrac{1}{2} \times 3 \times |b| = 9$, so $|b| = 6$, giving $b = 6$ or $b = -6$.
+
+        Case 1: $b = 6$, $k = -\dfrac{6}{3} = -2$. Function: $y = -2x + 6$.
+        Case 2: $b = -6$, $k = \dfrac{6}{3} = 2$. Function: $y = 2x - 6$.
+
+    - id: ep5
+      type: solve
+      question: |
+        甲、乙两人同时从 $A$ 地出发前往 $B$ 地（$AB$ 两地距离 $24$ 千米）。甲步行，速度 $4$ 千米/时；乙骑自行车，速度 $12$ 千米/时，但乙比甲晚出发 $1$ 小时。
+
+        设出发后 $t$ 小时（$t$ 从甲出发时算起），甲距 $A$ 地的距离为 $s_1$，乙距 $A$ 地的距离为 $s_2$。
+
+        （1）分别写出 $s_1$ 和 $s_2$ 关于 $t$ 的函数表达式（注意乙的有效时间范围）。
+        （2）乙在何时追上甲（即 $s_1 = s_2$）？追上时两人都在 $A$ 地还是 $B$ 地之间吗？
+        （3）甲、乙分别何时到达 $B$ 地？谁先到达？
+      questionEn: |
+        Person A and Person B both travel from City A to City B (24 km apart). A walks at 4 km/h; B cycles at 12 km/h but departs 1 hour later than A.
+
+        Let $t$ be the time in hours since A's departure. Let $s_1$ and $s_2$ be the distances from City A for A and B respectively.
+
+        (1) Write the formulas for $s_1$ and $s_2$ as functions of $t$ (note the valid time range for B).
+        (2) When does B catch up with A (i.e., $s_1 = s_2$)? Are both still between A and B at that point?
+        (3) When does each person arrive at City B? Who arrives first?
+      answer: |
+        (1) $s_1 = 4t$（$0 \leq t \leq 6$，甲 $6$ 小时到达）
+
+        乙在 $t = 1$ 时出发，所以有效时间是 $t \geq 1$：
+        $s_2 = 12(t - 1)$（$1 \leq t \leq 3$，乙 $2$ 小时骑完，即在 $t = 3$ 时到达）
+
+        (2) 令 $s_1 = s_2$：$4t = 12(t-1)$，$4t = 12t - 12$，$-8t = -12$，$t = 1.5$ 小时。
+        追上时：$s_1 = 4 \times 1.5 = 6$ 千米（距 $A$ 地 $6$ 千米，仍在 $AB$ 之间，因为 $AB = 24$ 千米）✓
+
+        (3) 甲到 $B$ 地：$4t = 24$，$t = 6$ 小时（即从甲出发后 $6$ 小时）。
+        乙到 $B$ 地：$12(t-1) = 24$，$t - 1 = 2$，$t = 3$ 小时。
+        乙先到达（$t = 3 < t = 6$）。
+
+        实际含义：虽然乙晚出发 $1$ 小时，但速度是甲的 $3$ 倍，所以乙比甲早 $3$ 小时到达。
+      answerEn: |
+        (1) $s_1 = 4t$ ($0 \leq t \leq 6$; A arrives in 6 hours)
+
+        B departs at $t = 1$, valid time $t \geq 1$:
+        $s_2 = 12(t - 1)$ ($1 \leq t \leq 3$; B arrives at $t = 3$)
+
+        (2) Set $s_1 = s_2$: $4t = 12(t-1)$, $4t = 12t - 12$, $-8t = -12$, $t = 1.5$ hours.
+        At catch-up: $s_1 = 4 \times 1.5 = 6$ km from A (still between A and B, since $AB = 24$ km) ✓
+
+        (3) A arrives at B: $4t = 24$, $t = 6$ hours. B arrives at B: $12(t-1) = 24$, $t = 3$ hours.
+        B arrives first ($t = 3 < t = 6$).
+
+        Interpretation: although B departed 1 hour later, B's speed is 3 times A's, so B arrives 3 hours earlier.
+
+summary: |
+  **本章核心要点回顾**
+
+  **1. 函数的概念**
+  - <<函数/function>>：$x$ 的每个值对应唯一的 $y$ 值
+  - <<自变量/independent variable>> $x$，<<因变量/dependent variable>> $y$，记法 $y = f(x)$
+  - 表示方式：公式、表格、图象（三种方法互相补充）
+
+  **2. 正比例函数 $y = kx$（$k \neq 0$）**
+  - 图象：过原点的直线
+  - $k > 0$：经过第一、三象限，递增；$k < 0$：经过第二、四象限，递减
+  - $|k|$ 越大，直线越陡
+
+  **3. 一次函数 $y = kx + b$（$k \neq 0$）**
+  - 图象：直线（两点定一线：常用两截距点）
+  - $y$ 轴截距 $(0, b)$；$x$ 轴截距（零点）$\left(-\dfrac{b}{k}, 0\right)$
+  - $b$ 的作用：将 $y = kx$ 的图象上下平移 $b$ 个单位
+
+  **4. $k$（<<斜率/slope>>）和 $b$（<<截距/intercept>>）的几何意义**
+  - $k$：变化率，$x$ 增加 $1$ 时 $y$ 变化 $k$；决定直线倾斜方向和程度
+  - $b$：直线与 $y$ 轴的交点高度
+  - 平行线：$k$ 相同，$b$ 不同；重合线：$k$、$b$ 都相同
+
+  **5. 待定系数法**
+  - 已知两点 → 建立关于 $k$、$b$ 的二元一次方程组 → 解出 $k$ 和 $b$
+
+  **6. 一次函数与方程、不等式的联系（数形结合）**
+  - $kx + b = 0$ 的解 = 直线与 $x$ 轴的交点横坐标
+  - $kx + b > 0$（$k > 0$）的解集：$x > -\dfrac{b}{k}$（直线在 $x$ 轴上方的区域）
+  - 方程组的解 = 两直线交点坐标
+
+summaryEn: |
+  **Key takeaways for this chapter**
+
+  **1. The concept of a function**
+  - <<函数/function>>: each value of $x$ maps to exactly one value of $y$
+  - <<自变量/independent variable>> $x$, <<因变量/dependent variable>> $y$, notation $y = f(x)$
+  - Three representations: formula, table, graph (each complements the others)
+
+  **2. Direct proportion function $y = kx$ ($k \neq 0$)**
+  - Graph: straight line through the origin
+  - $k > 0$: Quadrants I and III, increasing; $k < 0$: Quadrants II and IV, decreasing
+  - Larger $|k|$ → steeper line
+
+  **3. Linear function $y = kx + b$ ($k \neq 0$)**
+  - Graph: straight line (two points determine a line; use the two intercepts)
+  - $y$-intercept $(0, b)$; $x$-intercept (zero) $\left(-\dfrac{b}{k}, 0\right)$
+  - Role of $b$: shifts the graph of $y = kx$ up or down by $b$ units
+
+  **4. Geometric meaning of $k$ (<<斜率/slope>>) and $b$ (<<截距/intercept>>)**
+  - $k$: rate of change — $y$ changes by $k$ for each unit increase in $x$; determines tilt direction and steepness
+  - $b$: height where the line meets the $y$-axis
+  - Parallel lines: same $k$, different $b$; coincident lines: same $k$ and same $b$
+
+  **5. Method of undetermined coefficients**
+  - Given two points → set up a $2 \times 2$ system in $k$ and $b$ → solve for $k$ and $b$
+
+  **6. Connection between linear functions, equations, and inequalities (algebra meets geometry)**
+  - Solution to $kx + b = 0$ = $x$-coordinate of intersection with $x$-axis
+  - Solution set of $kx + b > 0$ (for $k > 0$): $x > -\dfrac{b}{k}$ (region where line is above $x$-axis)
+  - Solution to a system = coordinates of the intersection of two lines

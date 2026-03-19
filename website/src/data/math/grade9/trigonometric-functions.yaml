@@ -1,0 +1,1109 @@
+title: 锐角三角函数
+titleEn: Trigonometric Functions of Acute Angles
+chapter: 7
+subject: math
+grade: grade9
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约60分钟 · 第3课时 约55分钟
+estimatedTimeEn: 'Session 1 ~60 min · Session 2 ~60 min · Session 3 ~55 min'
+targetAudience: 小学3年级自学生（已完成八年级数学），自学材料，由简入深
+
+objectives:
+  - '理解<<锐角三角函数/trigonometric functions of acute angles>>的定义：在直角三角形中，$\sin A$、$\cos A$、$\tan A$ 分别是对边与斜边、邻边与斜边、对边与邻边的比值'
+  - '熟记并推导特殊角 $30°$、$45°$、$60°$ 的三角函数值，能不查表直接写出'
+  - '掌握<<互余角/complementary angles>>的三角函数关系：$\sin A = \cos(90°-A)$，$\cos A = \sin(90°-A)$'
+  - '掌握同角三角函数关系：$\sin^{2} A + \cos^{2} A = 1$，$\tan A = \dfrac{\sin A}{\cos A}$'
+  - '能用计算器求任意锐角的三角函数值，以及已知三角函数值反查角度'
+  - '会解直角三角形（已知一边一角或两边，求其余元素）'
+  - '理解<<仰角/angle of elevation>>与<<俯角/angle of depression>>的含义，能解决实际测量问题'
+objectivesEn:
+  - 'Understand the definitions of <<锐角三角函数/trigonometric functions of acute angles>>: in a right triangle, $\sin A$, $\cos A$, $\tan A$ are the ratios of opposite to hypotenuse, adjacent to hypotenuse, and opposite to adjacent respectively'
+  - 'Memorise and derive the trigonometric values of the special angles $30°$, $45°$, $60°$ without a table'
+  - 'Master the complementary angle relationships: $\sin A = \cos(90°-A)$, $\cos A = \sin(90°-A)$'
+  - 'Master the co-function identities: $\sin^{2} A + \cos^{2} A = 1$ and $\tan A = \dfrac{\sin A}{\cos A}$'
+  - 'Use a calculator to find trigonometric values of any acute angle and to find an angle given its trigonometric value'
+  - 'Solve right triangles (given one side and one angle, or two sides, find the remaining elements)'
+  - 'Understand <<仰角/angle of elevation>> and <<俯角/angle of depression>>, and apply them to real-world measurement problems'
+
+prerequisites:
+  title: 从直角三角形出发——比值的力量
+  titleEn: Starting from right triangles — the power of ratios
+  intro: |
+    在八年级，我们系统学习了勾股定理：直角三角形中，$a^{2} + b^{2} = c^{2}$。
+    这告诉我们三条边之间的"平方和"关系。但勾股定理有个局限：必须知道两条边才能求第三条边。
+    如果只知道一条边和一个角，怎么办？这就需要三角函数——用"比值"来描述角与边的关系。
+  introEn: |
+    In Grade 8 we studied the Pythagorean theorem: in a right triangle, $a^{2} + b^{2} = c^{2}$.
+    This gives the "sum of squares" relationship between the three sides. But the Pythagorean
+    theorem has a limitation: you need two sides to find the third. What if you only know one side
+    and one angle? That is where trigonometric functions come in — they use ratios to describe the
+    relationship between angles and sides.
+  knownNumbers:
+    - '勾股定理：直角三角形中 $a^{2} + b^{2} = c^{2}$（$c$ 为斜边）'
+    - '三角形内角和 $= 180°$，直角三角形两锐角之和 $= 90°$'
+    - '相似三角形对应边成比例（比例关系与三角函数的关键联系）'
+    - '$30°$-$60°$-$90°$ 和 $45°$-$45°$-$90°$ 特殊三角形的边长比'
+  knownNumbersEn:
+    - 'Pythagorean theorem: $a^{2} + b^{2} = c^{2}$ (where $c$ is the hypotenuse)'
+    - 'Sum of angles in a triangle $= 180°$; two acute angles in a right triangle sum to $90°$'
+    - 'Corresponding sides of similar triangles are proportional (the key link to trigonometry)'
+    - 'Side ratios of the $30°$-$60°$-$90°$ and $45°$-$45°$-$90°$ special triangles'
+  cannotSolve:
+    - '只知道一条直角边和一个锐角，如何求另外两条边？'
+    - '已知直角三角形的斜边和一个锐角，如何求两直角边？'
+    - '如何从水平方向仰望一座楼，用角度和距离计算楼高？'
+    - '$\sin 35°$ 是什么？如何精确计算它？'
+  cannotSolveEn:
+    - 'Given one leg and one acute angle of a right triangle, how do you find the other two sides?'
+    - 'Given the hypotenuse and one acute angle, how do you find the two legs?'
+    - 'How do you calculate a building''s height from a horizontal distance and an angle of elevation?'
+    - 'What is $\sin 35°$? How do you compute it precisely?'
+  conclusion: |
+    本章引入三角函数，用角的正弦、余弦、正切三个"比值"来精确描述直角三角形中角与边的关系，
+    并将其应用于解直角三角形和实际测量问题。这是从"算术几何"走向"解析几何与三角"的重要一步。
+  conclusionEn: |
+    This chapter introduces trigonometric functions — sine, cosine, and tangent — as precise ratios
+    that describe the relationship between angles and sides in right triangles. We apply them to
+    solving right triangles and real-world measurement problems. This is a key step from
+    "arithmetic geometry" toward analytic geometry and trigonometry.
+
+concepts:
+  - id: trig-definition
+    title: 锐角三角函数的定义
+    titleEn: Definition of trigonometric functions of acute angles
+    hasVisualization: true
+    content: |
+      **先想一个问题：只知道角度，能算出距离吗？**
+
+      你站在一栋楼旁边，楼高 $20$ 米。你想在楼旁边绑一根斜绳子，从地面以 $30°$ 角斜着拉到楼顶。
+      这根绳子需要多长？用勾股定理？不够，我们只知道一条直角边（$20$ 米）和一个角度（$30°$）。
+
+      这就需要"三角函数"——它能从**角度 + 一条边**推算出其他所有边！
+
+      **直角三角形中，三条边的名字**
+
+      在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$\angle A$ 是我们关注的那个锐角。
+      以 $\angle A$ 的角度为参照，三条边各有专门的名字：
+
+      - **<<斜边/hypotenuse>>**：直角（$\angle C$）的对面那条边，也是最长的边 $AB$
+      - **<<对边/opposite side>>**：$\angle A$ 对面的那条边 $BC$（和 $\angle A$ "隔着"三角形）
+      - **<<邻边/adjacent side>>**：$\angle A$ 旁边的那条非斜边 $AC$（紧挨着 $\angle A$）
+
+      记忆方法：
+      - 斜边：最长的，直角的对面
+      - 对边：你关注的那个角的对面
+      - 邻边：你关注的那个角的旁边（不是斜边）
+
+      **注意！** 换一个角，对边和邻边就换了：
+      对 $\angle A$ 来说，$BC$ 是对边，$AC$ 是邻边。
+      对 $\angle B$ 来说，$AC$ 成了对边，$BC$ 成了邻边！
+      斜边永远是斜边，但对边和邻边随角而变。
+
+      **三个三角函数的定义——三个比值**
+
+      $$\sin A = \frac{\text{对边}}{\text{斜边}} = \frac{a}{c}$$
+
+      $$\cos A = \frac{\text{邻边}}{\text{斜边}} = \frac{b}{c}$$
+
+      $$\tan A = \frac{\text{对边}}{\text{邻边}} = \frac{a}{b}$$
+
+      读作：正弦（$\sin$）、余弦（$\cos$）、正切（$\tan$）。
+
+      **为什么用比值而不是具体长度？**
+
+      思考一下：把同一个 $30°$ 角放在小三角形里（边长 $1, 2$ 等）和大三角形里（边长 $3, 6$ 等），
+      虽然边长不同，但对边和斜边的比值永远是 $\frac{1}{2}$！
+      这是因为：含同一角度的所有直角三角形都**相似**（形状相同），对应边的比值永远相等。
+
+      所以 $\sin 30° = \frac{1}{2}$ 是一个固定的值，和三角形有多大无关。
+      三角函数就是把角度和边的比值对应起来的"翻译器"！
+
+      **英文助记口诀：SOH-CAH-TOA**
+      - **S**in = **O**pposite ÷ **H**ypotenuse（正弦 = 对边 ÷ 斜边）
+      - **C**os = **A**djacent ÷ **H**ypotenuse（余弦 = 邻边 ÷ 斜边）
+      - **T**an = **O**pposite ÷ **A**djacent（正切 = 对边 ÷ 邻边）
+
+      **取值范围**
+      - 锐角 $A$ 满足 $0° < A < 90°$
+      - $\sin A$ 和 $\cos A$ 都在 $(0, 1)$ 之间（对边和邻边都比斜边短）
+      - $\tan A$ 在 $(0, +\infty)$（角越大，对边越长相对于邻边，$\tan$ 越大，趋近 $90°$ 时趋向无穷大）
+    contentEn: |
+      **Start with a question: can we calculate distances from just an angle?**
+
+      You're standing next to a building that is $20$ meters tall. You want to tie a rope diagonally from the ground to the top of the building at an angle of $30°$ from the ground.
+      How long does the rope need to be? Using the Pythagorean theorem? Not enough — we only know one leg ($20$ m) and one angle ($30°$).
+
+      This is where trigonometric functions come in — they let us calculate all sides from **one angle + one side**!
+
+      **The names of the three sides in a right triangle**
+
+      In right triangle $\triangle ABC$ with $\angle C = 90°$ and $\angle A$ as our focus angle, the three sides have special names:
+
+      - **<<斜边/hypotenuse>>**: the side opposite the right angle ($\angle C$) — always the longest side $AB$
+      - **<<对边/opposite side>>**: the side opposite $\angle A$ — it is $BC$ (across the triangle from $\angle A$)
+      - **<<邻边/adjacent side>>**: the side next to $\angle A$ that is not the hypotenuse — it is $AC$
+
+      Memory tip:
+      - Hypotenuse: longest side, opposite the right angle
+      - Opposite: the side facing your angle of interest
+      - Adjacent: the side touching your angle of interest (not the hypotenuse)
+
+      **Important!** The "opposite" and "adjacent" labels change when you switch angles:
+      For $\angle A$: $BC$ is opposite, $AC$ is adjacent.
+      For $\angle B$: $AC$ becomes opposite, $BC$ becomes adjacent!
+      The hypotenuse never changes, but opposite and adjacent depend on which angle you are looking at.
+
+      **The three trigonometric functions — three ratios**
+
+      $$\sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c}$$
+
+      $$\cos A = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{b}{c}$$
+
+      $$\tan A = \frac{\text{opposite}}{\text{adjacent}} = \frac{a}{b}$$
+
+      Read as: sine ($\sin$), cosine ($\cos$), tangent ($\tan$).
+
+      **Why ratios and not actual lengths?**
+
+      Think about this: place the same $30°$ angle in a small triangle (sides $1$, $2$, etc.) and a large triangle (sides $3$, $6$, etc.). The lengths differ, but the ratio of opposite to hypotenuse is always $\frac{1}{2}$!
+      This is because all right triangles with the same angle are **similar** (same shape) — their corresponding side ratios are always equal.
+
+      So $\sin 30° = \frac{1}{2}$ is a fixed value, independent of how big the triangle is.
+      Trigonometric functions are a "translator" between angles and side ratios!
+
+      **Memory aid: SOH-CAH-TOA**
+      - **S**in = **O**pposite ÷ **H**ypotenuse
+      - **C**os = **A**djacent ÷ **H**ypotenuse
+      - **T**an = **O**pposite ÷ **A**djacent
+
+      **Range of values**
+      - Acute angle $A$ satisfies $0° < A < 90°$
+      - $\sin A$ and $\cos A$ are both in $(0, 1)$ (opposite and adjacent are shorter than the hypotenuse)
+      - $\tan A$ is in $(0, +\infty)$ (as the angle increases, the opposite grows relative to adjacent; as $A$ approaches $90°$, $\tan A$ approaches infinity)
+      - Range of $\sin A$ and $\cos A$: $(0, 1)$ (both legs are shorter than the hypotenuse)
+      - Range of $\tan A$: $(0, +\infty)$ (as $A$ approaches $90°$, $\tan A \to +\infty$)
+
+      **Common mistake**: "opposite" and "adjacent" are relative to the angle you choose! What is the
+      opposite side for $\angle A$ becomes the adjacent side for $\angle B$. Always re-identify the
+      sides when you change the reference angle.
+
+  - id: special-angles
+    title: 特殊角的三角函数值
+    titleEn: Trigonometric values of special angles
+    hasVisualization: true
+    content: |
+      **为什么要记特殊角？**
+
+      $30°$、$45°$、$60°$ 这三个角在几何中极为常见，它们的三角函数值是精确的有理数或简单根式，
+      不需要计算器就能精确计算——这在考试和推导中非常有用。
+
+      **推导 $45°$ 的三角函数值**
+
+      取等腰直角三角形，两直角边均为 $1$，斜边 $= \sqrt{1^{2}+1^{2}} = \sqrt{2}$：
+
+      $$\sin 45° = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}, \quad \cos 45° = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}, \quad \tan 45° = \frac{1}{1} = 1$$
+
+      **推导 $30°$ 和 $60°$ 的三角函数值**
+
+      取等边三角形，边长为 $2$，从顶点作高将其分成两个 $30°$-$60°$-$90°$ 三角形：
+      - 斜边（原等边三角形边）$= 2$
+      - 短直角边（对 $30°$ 角）$= 1$
+      - 长直角边（高）$= \sqrt{2^{2}-1^{2}} = \sqrt{3}$
+
+      $$\sin 30° = \frac{1}{2}, \quad \cos 30° = \frac{\sqrt{3}}{2}, \quad \tan 30° = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$$
+
+      $$\sin 60° = \frac{\sqrt{3}}{2}, \quad \cos 60° = \frac{1}{2}, \quad \tan 60° = \frac{\sqrt{3}}{1} = \sqrt{3}$$
+
+      **特殊角三角函数值汇总表**
+
+      | 角度 | $\sin$ | $\cos$ | $\tan$ |
+      |------|--------|--------|--------|
+      | $30°$ | $\dfrac{1}{2}$ | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{\sqrt{3}}{3}$ |
+      | $45°$ | $\dfrac{\sqrt{2}}{2}$ | $\dfrac{\sqrt{2}}{2}$ | $1$ |
+      | $60°$ | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{1}{2}$ | $\sqrt{3}$ |
+
+      **记忆规律**：
+      - $\sin$ 值随角度增大而增大：$\frac{1}{2} < \frac{\sqrt{2}}{2} < \frac{\sqrt{3}}{2}$
+      - $\cos$ 值随角度增大而减小（与 $\sin$ 互补）
+      - $\tan 45° = 1$（对边 $=$ 邻边，即等腰直角三角形）
+      - $\sin 30° = \cos 60° = \frac{1}{2}$，$\sin 60° = \cos 30° = \frac{\sqrt{3}}{2}$（互余关系！）
+    contentEn: |
+      **Why memorise special angles?**
+
+      $30°$, $45°$, and $60°$ are extremely common in geometry. Their trigonometric values are exact
+      rational numbers or simple radicals — no calculator needed. This is invaluable in exams and
+      derivations.
+
+      **Deriving the $45°$ values**
+
+      Take an isosceles right triangle with legs of length $1$; hypotenuse $= \sqrt{2}$:
+
+      $$\sin 45° = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}, \quad \cos 45° = \frac{\sqrt{2}}{2}, \quad \tan 45° = 1$$
+
+      **Deriving the $30°$ and $60°$ values**
+
+      Take an equilateral triangle with side $2$; drop a height to split it into two $30°$-$60°$-$90°$
+      triangles:
+      - hypotenuse $= 2$
+      - short leg (opposite $30°$) $= 1$
+      - long leg (height) $= \sqrt{3}$
+
+      $$\sin 30° = \frac{1}{2}, \quad \cos 30° = \frac{\sqrt{3}}{2}, \quad \tan 30° = \frac{\sqrt{3}}{3}$$
+
+      $$\sin 60° = \frac{\sqrt{3}}{2}, \quad \cos 60° = \frac{1}{2}, \quad \tan 60° = \sqrt{3}$$
+
+      **Summary table of special angle values**
+
+      | Angle | $\sin$ | $\cos$ | $\tan$ |
+      |-------|--------|--------|--------|
+      | $30°$ | $\dfrac{1}{2}$ | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{\sqrt{3}}{3}$ |
+      | $45°$ | $\dfrac{\sqrt{2}}{2}$ | $\dfrac{\sqrt{2}}{2}$ | $1$ |
+      | $60°$ | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{1}{2}$ | $\sqrt{3}$ |
+
+      **Memory patterns**:
+      - $\sin$ increases as angle increases: $\frac{1}{2} < \frac{\sqrt{2}}{2} < \frac{\sqrt{3}}{2}$
+      - $\cos$ decreases as angle increases (complementary to $\sin$)
+      - $\tan 45° = 1$ (opposite $=$ adjacent, isosceles right triangle)
+      - $\sin 30° = \cos 60° = \frac{1}{2}$; $\sin 60° = \cos 30° = \frac{\sqrt{3}}{2}$ (complementary angle relationship!)
+
+  - id: complementary-angles
+    title: 互余角的三角函数关系
+    titleEn: Trigonometric relationships of complementary angles
+    content: |
+      **什么是<<互余角/complementary angles>>？**
+
+      两个角之和等于 $90°$，则称这两个角互余。在直角三角形中，两个锐角 $A$ 和 $B$ 必然互余：
+      $A + B = 90°$，即 $B = 90° - A$。
+
+      **互余关系的推导**
+
+      在直角三角形 $\triangle ABC$（$\angle C = 90°$）中，对于 $\angle A$：
+      - 对边 $= BC = a$，邻边 $= AC = b$，斜边 $= AB = c$
+
+      对于 $\angle B = 90° - A$：
+      - 对边 $= AC = b$，邻边 $= BC = a$，斜边 $= AB = c$
+
+      因此：
+      $$\sin A = \frac{a}{c} = \cos B = \cos(90° - A)$$
+      $$\cos A = \frac{b}{c} = \sin B = \sin(90° - A)$$
+      $$\tan A = \frac{a}{b} = \cot B = \cot(90° - A)$$
+
+      **核心公式**（最常用的两个）：
+      $$\sin A = \cos(90° - A), \quad \cos A = \sin(90° - A)$$
+
+      **实际意义**：$\sin$ 和 $\cos$ 互为"余函数"（co-function），名字中的"co-"就来自"complementary"（互余）！
+
+      **应用：化简含互余关系的式子**
+
+      例如：$\sin 70° = \cos 20°$（因为 $70° + 20° = 90°$）
+
+      化简 $\sin 35° + \cos 55°$：注意 $55° = 90° - 35°$，所以 $\cos 55° = \sin 35°$，
+      原式 $= \sin 35° + \sin 35° = 2\sin 35°$。
+
+      **易错点**：$\sin A = \cos(90° - A)$ 中的 $90° - A$ 必须是正数（即 $A < 90°$），只在锐角范围内成立。
+    contentEn: |
+      **What are <<互余角/complementary angles>>?**
+
+      Two angles whose sum equals $90°$ are complementary. In a right triangle, the two acute angles
+      $A$ and $B$ are always complementary: $A + B = 90°$, so $B = 90° - A$.
+
+      **Deriving the complementary relationships**
+
+      In right triangle $\triangle ABC$ ($\angle C = 90°$), for angle $\angle A$:
+      - opposite $= BC = a$, adjacent $= AC = b$, hypotenuse $= AB = c$
+
+      For angle $\angle B = 90° - A$:
+      - opposite $= AC = b$, adjacent $= BC = a$, hypotenuse $= AB = c$
+
+      Therefore:
+      $$\sin A = \frac{a}{c} = \cos B = \cos(90° - A)$$
+      $$\cos A = \frac{b}{c} = \sin B = \sin(90° - A)$$
+
+      **Core formulas** (the two most-used):
+      $$\sin A = \cos(90° - A), \quad \cos A = \sin(90° - A)$$
+
+      **Deeper meaning**: $\sin$ and $\cos$ are "co-functions" of each other. The "co-" in "cosine"
+      literally comes from "complementary"!
+
+      **Application: simplifying expressions using complementary relationships**
+
+      Example: $\sin 70° = \cos 20°$ (since $70° + 20° = 90°$)
+
+      Simplify $\sin 35° + \cos 55°$: since $55° = 90° - 35°$, we have $\cos 55° = \sin 35°$,
+      so the expression $= \sin 35° + \sin 35° = 2\sin 35°$.
+
+      **Common mistake**: In $\sin A = \cos(90° - A)$, the quantity $90° - A$ must be positive
+      ($A < 90°$); this identity only holds for acute angles.
+
+  - id: pythagorean-identity
+    title: 同角三角函数关系
+    titleEn: Co-function identities for the same angle
+    content: |
+      **两个重要恒等式**
+
+      对任意锐角 $A$，以下两个等式恒成立：
+
+      **恒等式一（勾股恒等式）**：
+      $$\sin^{2} A + \cos^{2} A = 1$$
+
+      **证明**：设直角三角形三边为 $a$（对边）、$b$（邻边）、$c$（斜边）。
+      $$\sin^{2} A + \cos^{2} A = \left(\frac{a}{c}\right)^{2} + \left(\frac{b}{c}\right)^{2} = \frac{a^{2}+b^{2}}{c^{2}} = \frac{c^{2}}{c^{2}} = 1$$
+      最后一步用到了勾股定理 $a^{2}+b^{2}=c^{2}$。
+
+      **恒等式二（正切与正弦余弦的关系）**：
+      $$\tan A = \frac{\sin A}{\cos A}$$
+
+      **证明**：
+      $$\frac{\sin A}{\cos A} = \frac{a/c}{b/c} = \frac{a}{c} \cdot \frac{c}{b} = \frac{a}{b} = \tan A$$
+
+      **这两个恒等式的用途**
+
+      1. **已知一个三角函数值，求其他两个**：
+         - 已知 $\sin A = \frac{3}{5}$，求 $\cos A$ 和 $\tan A$
+         - 由 $\cos^{2} A = 1 - \sin^{2} A = 1 - \frac{9}{25} = \frac{16}{25}$，$\cos A = \frac{4}{5}$（锐角，取正值）
+         - $\tan A = \frac{\sin A}{\cos A} = \frac{3/5}{4/5} = \frac{3}{4}$
+
+      2. **化简三角式**：
+         - $\sin^{2} A + \cos^{2} A$ 永远等于 $1$，可用于消去某个三角函数
+         - $1 - \sin^{2} A = \cos^{2} A$，$1 - \cos^{2} A = \sin^{2} A$
+
+      **直观理解**：$\sin^{2} A + \cos^{2} A = 1$ 实际上就是**勾股定理的比值形式**。
+      把三角形三边同除以斜边 $c$，得到一个斜边为 $1$ 的"标准化"直角三角形，
+      此时两直角边恰好是 $\sin A$ 和 $\cos A$，而斜边为 $1$，再次应用勾股定理即得此式。
+    contentEn: |
+      **Two important identities**
+
+      For any acute angle $A$, the following two identities always hold:
+
+      **Identity 1 (Pythagorean identity)**:
+      $$\sin^{2} A + \cos^{2} A = 1$$
+
+      **Proof**: Let the right triangle have legs $a$ (opposite), $b$ (adjacent), and hypotenuse $c$.
+      $$\sin^{2} A + \cos^{2} A = \left(\frac{a}{c}\right)^{2} + \left(\frac{b}{c}\right)^{2} = \frac{a^{2}+b^{2}}{c^{2}} = \frac{c^{2}}{c^{2}} = 1$$
+      The last step uses the Pythagorean theorem $a^{2}+b^{2}=c^{2}$.
+
+      **Identity 2 (tangent in terms of sine and cosine)**:
+      $$\tan A = \frac{\sin A}{\cos A}$$
+
+      **Proof**:
+      $$\frac{\sin A}{\cos A} = \frac{a/c}{b/c} = \frac{a}{c} \cdot \frac{c}{b} = \frac{a}{b} = \tan A$$
+
+      **Applications of these identities**
+
+      1. **Given one trig value, find the others**:
+         - Given $\sin A = \frac{3}{5}$, find $\cos A$ and $\tan A$
+         - From $\cos^{2} A = 1 - \sin^{2} A = 1 - \frac{9}{25} = \frac{16}{25}$, get $\cos A = \frac{4}{5}$ (positive for acute angle)
+         - $\tan A = \frac{\sin A}{\cos A} = \frac{3/5}{4/5} = \frac{3}{4}$
+
+      2. **Simplify trigonometric expressions**:
+         - $\sin^{2} A + \cos^{2} A$ always equals $1$ — use it to eliminate a trig function
+         - $1 - \sin^{2} A = \cos^{2} A$, $1 - \cos^{2} A = \sin^{2} A$
+
+      **Intuitive understanding**: $\sin^{2} A + \cos^{2} A = 1$ is simply **the Pythagorean theorem
+      in ratio form**. Divide all three sides by the hypotenuse $c$ to get a "normalised" right
+      triangle with hypotenuse $1$; the two legs become $\sin A$ and $\cos A$, and applying the
+      Pythagorean theorem gives the identity directly.
+
+  - id: calculator-trig
+    title: 用计算器求三角函数值
+    titleEn: Using a calculator for trigonometric values
+    content: |
+      **计算器的两个方向**
+
+      1. **已知角度，求三角函数值**：
+         - 按 [sin] / [cos] / [tan] 键，输入角度（确保计算器在"度"模式 DEG，而非弧度 RAD）
+         - 例：$\sin 53° \approx 0.7986$，$\cos 37° \approx 0.7986$，$\tan 45° = 1.0000$
+
+      2. **已知三角函数值，反查角度**（<<反三角函数/inverse trigonometric function>>）：
+         - 使用 $\sin^{-1}$（即 arcsin）、$\cos^{-1}$（arccos）、$\tan^{-1}$（arctan）键
+         - 例：若 $\sin A = 0.5$，则 $A = \sin^{-1}(0.5) = 30°$
+         - 例：若 $\tan B = \sqrt{3}$，则 $B = \tan^{-1}(\sqrt{3}) \approx 60.0°$
+
+      **注意事项**：
+      - 确认计算器在"度（Degree）"模式，不在"弧度（Radian）"模式——否则结果会错！
+      - 结果保留小数位数：一般题目保留 4 位有效数字，实际问题保留到整数或一位小数
+      - $\sin^{-1}$ 不是 $\frac{1}{\sin}$！$\sin^{-1}$ 是反正弦函数，表示"哪个角的正弦值是..."
+
+      **特殊值验证**（用计算器检验自己记的特殊值）：
+      - $\sin 30° = 0.5000$（精确值 $\frac{1}{2}$）
+      - $\sin 45° \approx 0.7071$（精确值 $\frac{\sqrt{2}}{2} \approx 0.7071$）
+      - $\tan 60° \approx 1.7321$（精确值 $\sqrt{3} \approx 1.7321$）
+    contentEn: |
+      **Two directions with a calculator**
+
+      1. **Given angle, find trigonometric value**:
+         - Press [sin] / [cos] / [tan], then enter the angle (make sure the calculator is in degree mode DEG, not radian mode RAD)
+         - Example: $\sin 53° \approx 0.7986$, $\cos 37° \approx 0.7986$, $\tan 45° = 1.0000$
+
+      2. **Given trigonometric value, find the angle** (<<反三角函数/inverse trigonometric function>>):
+         - Use the $\sin^{-1}$ (arcsin), $\cos^{-1}$ (arccos), $\tan^{-1}$ (arctan) keys
+         - Example: if $\sin A = 0.5$, then $A = \sin^{-1}(0.5) = 30°$
+         - Example: if $\tan B = \sqrt{3}$, then $B = \tan^{-1}(\sqrt{3}) \approx 60.0°$
+
+      **Important notes**:
+      - Confirm the calculator is in Degree mode, not Radian mode — otherwise the result is wrong!
+      - Round appropriately: usually 4 significant figures for calculations, nearest integer or one decimal for practical problems
+      - $\sin^{-1}$ does NOT mean $\frac{1}{\sin}$! It is the inverse sine function — "which angle has this sine value?"
+
+      **Verifying special values** (use the calculator to double-check your memorised values):
+      - $\sin 30° = 0.5000$ (exact: $\frac{1}{2}$)
+      - $\sin 45° \approx 0.7071$ (exact: $\frac{\sqrt{2}}{2} \approx 0.7071$)
+      - $\tan 60° \approx 1.7321$ (exact: $\sqrt{3} \approx 1.7321$)
+
+  - id: solving-right-triangles
+    title: 解直角三角形
+    titleEn: Solving right triangles
+    hasVisualization: true
+    content: |
+      **什么是"解直角三角形"？**
+
+      直角三角形有 6 个元素：3 条边（$a$、$b$、$c$）和 3 个角（$\angle A$、$\angle B$、$\angle C = 90°$）。
+      "<<解直角三角形/solving a right triangle>>"就是已知其中若干元素，求出全部其余元素。
+
+      **情形一：已知两条边**
+
+      - 用勾股定理求第三边：$c = \sqrt{a^{2}+b^{2}}$
+      - 用反三角函数求角：$\angle A = \tan^{-1}\!\left(\dfrac{a}{b}\right)$，然后 $\angle B = 90° - \angle A$
+
+      **情形二：已知一条边和一个锐角（最常见）**
+
+      设已知 $\angle A$ 和斜边 $c$：
+      $$a = c \sin A, \quad b = c \cos A, \quad \angle B = 90° - A$$
+
+      设已知 $\angle A$ 和对边 $a$：
+      $$c = \frac{a}{\sin A}, \quad b = \frac{a}{\tan A}, \quad \angle B = 90° - A$$
+
+      设已知 $\angle A$ 和邻边 $b$：
+      $$c = \frac{b}{\cos A}, \quad a = b\tan A, \quad \angle B = 90° - A$$
+
+      **解题步骤规范**：
+      1. 画直角三角形示意图，标注已知量和未知量
+      2. 选择适当的三角函数关系式
+      3. 代入数值计算（特殊角给精确值，一般角用计算器）
+      4. 验证：用勾股定理检验求出的三边是否满足 $a^{2}+b^{2}=c^{2}$
+
+      **注意单位**：题目中若边长单位为米（m），计算结果也保留单位；角度单位为度（°）。
+    contentEn: |
+      **What does "solving a right triangle" mean?**
+
+      A right triangle has 6 elements: 3 sides ($a$, $b$, $c$) and 3 angles ($\angle A$, $\angle B$,
+      $\angle C = 90°$). "<<解直角三角形/solving a right triangle>>" means: given some of these
+      elements, find all the rest.
+
+      **Case 1: Two sides are known**
+
+      - Use the Pythagorean theorem for the third side: $c = \sqrt{a^{2}+b^{2}}$
+      - Use inverse trig for angles: $\angle A = \tan^{-1}\!\left(\dfrac{a}{b}\right)$, then $\angle B = 90° - \angle A$
+
+      **Case 2: One side and one acute angle are known (most common)**
+
+      Given $\angle A$ and hypotenuse $c$:
+      $$a = c \sin A, \quad b = c \cos A, \quad \angle B = 90° - A$$
+
+      Given $\angle A$ and opposite side $a$:
+      $$c = \frac{a}{\sin A}, \quad b = \frac{a}{\tan A}, \quad \angle B = 90° - A$$
+
+      Given $\angle A$ and adjacent side $b$:
+      $$c = \frac{b}{\cos A}, \quad a = b\tan A, \quad \angle B = 90° - A$$
+
+      **Solution procedure**:
+      1. Draw a labelled right triangle diagram showing knowns and unknowns
+      2. Choose the appropriate trigonometric ratio
+      3. Substitute and compute (exact values for special angles; calculator for general angles)
+      4. Verify: check that the three sides satisfy $a^{2}+b^{2}=c^{2}$
+
+      **Units**: if side lengths are given in metres (m), keep units in the answer; angles are in degrees (°).
+
+  - id: elevation-depression
+    title: 仰角与俯角及实际应用
+    titleEn: Angles of elevation and depression — real-world applications
+    hasVisualization: true
+    content: |
+      **仰角与俯角的定义**
+
+      - **<<仰角/angle of elevation>>**：观测者从水平线**向上**望向目标所形成的角。
+        站在地面上仰望楼顶、山顶、飞机时，视线与水平方向所成的锐角即为仰角。
+      - **<<俯角/angle of depression>>**：观测者从水平线**向下**望向目标所形成的角。
+        站在楼顶向下俯视地面目标时，视线与水平方向所成的锐角即为俯角。
+
+      **仰角与俯角的等量关系**
+
+      若 A 在高处俯视 B（俯角为 $\alpha$），则 B 在低处仰视 A（仰角也为 $\alpha$）。
+      这两个角相等，因为**它们是平行线（水平线）被同一直线（视线）所截的<<内错角/alternate interior angles>>**。
+
+      **标准解题模型：测量高度**
+
+      已知：水平距离 $d$，仰角 $\alpha$，求高度 $h$：
+      $$\tan \alpha = \frac{h}{d}, \quad \text{故} \quad h = d \cdot \tan \alpha$$
+
+      **标准解题模型：测量距离**
+
+      已知：高度 $h$，俯角 $\alpha$，求水平距离 $d$：
+      $$\tan \alpha = \frac{h}{d}, \quad \text{故} \quad d = \frac{h}{\tan \alpha}$$
+
+      **解题注意事项**：
+      - 仔细判断仰角还是俯角，确定直角三角形的哪条边是对边、哪条是邻边
+      - 注意"观测者的眼睛高度"——有些题目需要加上人的身高
+      - 结果通常保留到整数或一位小数，并带上单位（米、千米等）
+    contentEn: |
+      **Definitions of angle of elevation and angle of depression**
+
+      - **<<仰角/angle of elevation>>**: the acute angle formed between the horizontal and the
+        observer's line of sight looking **upward** toward a target. Examples: looking up at the top
+        of a building, a mountain, or an aeroplane.
+      - **<<俯角/angle of depression>>**: the acute angle formed between the horizontal and the
+        observer's line of sight looking **downward** toward a target. Example: looking down from a
+        rooftop to an object on the ground.
+
+      **The equality between elevation and depression angles**
+
+      If A (on high ground) looks down at B with a depression angle of $\alpha$, then B (on low
+      ground) looks up at A with an elevation angle of also $\alpha$. These angles are equal because
+      **they are <<内错角/alternate interior angles>> formed by a transversal (the line of sight)
+      cutting two parallel horizontal lines**.
+
+      **Standard model: measuring height**
+
+      Given horizontal distance $d$ and angle of elevation $\alpha$; find height $h$:
+      $$\tan \alpha = \frac{h}{d}, \quad \text{so} \quad h = d \cdot \tan \alpha$$
+
+      **Standard model: measuring horizontal distance**
+
+      Given height $h$ and angle of depression $\alpha$; find horizontal distance $d$:
+      $$\tan \alpha = \frac{h}{d}, \quad \text{so} \quad d = \frac{h}{\tan \alpha}$$
+
+      **Solving tips**:
+      - Carefully identify whether the angle is elevation or depression, then determine which side is
+        opposite and which is adjacent
+      - Note the observer's eye height — some problems require adding the person's height
+      - Round results to the nearest integer or one decimal place, and include units (m, km, etc.)
+
+realLife:
+  - title: 建筑测量与楼高计算
+    titleEn: Architectural surveying and building height calculation
+    content: |
+      工程师在地面测量一栋大楼的高度：站在距离楼底 $60$ 米处，测得楼顶的<<仰角/angle of elevation>>为 $45°$。
+      由 $\tan 45° = 1$，楼高 $h = 60 \times \tan 45° = 60 \times 1 = 60$ 米。
+      若仰角改为 $60°$，楼高 $= 60\tan 60° = 60\sqrt{3} \approx 103.9$ 米。
+      三角函数让工程师无需爬上楼顶就能精确测量楼高！
+    contentEn: |
+      An engineer measures a building's height from the ground: standing $60$ m from the base,
+      they measure an <<仰角/angle of elevation>> of $45°$ to the top.
+      Since $\tan 45° = 1$, height $h = 60 \times 1 = 60$ m.
+      If the angle were $60°$, height $= 60\tan 60° = 60\sqrt{3} \approx 103.9$ m.
+      Trigonometry lets engineers measure building heights without climbing them!
+  - title: 航空与导航
+    titleEn: Aviation and navigation
+    content: |
+      飞机以 $30°$ 的爬升角起飞，飞行了 $2000$ 米（沿斜线），此时上升的高度为：
+      $h = 2000 \times \sin 30° = 2000 \times \frac{1}{2} = 1000$ 米。
+      水平飞行距离为 $d = 2000 \times \cos 30° = 2000 \times \frac{\sqrt{3}}{2} = 1000\sqrt{3} \approx 1732$ 米。
+      飞行员、船长和登山者都依赖三角函数来精确导航。
+    contentEn: |
+      A plane takes off at a $30°$ climb angle and travels $2000$ m along the flight path.
+      Altitude gained: $h = 2000 \times \sin 30° = 1000$ m.
+      Horizontal distance: $d = 2000 \times \cos 30° = 1000\sqrt{3} \approx 1732$ m.
+      Pilots, ship captains, and mountaineers all rely on trigonometry for precise navigation.
+  - title: 坡度与公路设计
+    titleEn: Gradient and road design
+    content: |
+      山路的<<坡度/gradient>>（坡角 $\theta$）直接关系到行车安全。坡度 $= \tan\theta$。
+      若坡角 $\theta = 30°$，坡度 $= \tan 30° = \frac{\sqrt{3}}{3} \approx 57.7\%$——这已经是很陡的坡。
+      安全行驶的公路坡度通常不超过 $\tan 8° \approx 14\%$（约 $8°$），可见三角函数在工程设计中不可或缺。
+    contentEn: |
+      The <<坡度/gradient>> (slope angle $\theta$) of a mountain road directly affects driving safety.
+      Gradient $= \tan\theta$. If $\theta = 30°$, gradient $= \tan 30° \approx 57.7\%$ — very steep.
+      Safe roads typically have gradients no greater than $\tan 8° \approx 14\%$ (about $8°$),
+      showing how indispensable trigonometry is in civil engineering.
+
+examples:
+  - type: 1
+    title: 在直角三角形中写出各角的三角函数值
+    titleEn: Writing trigonometric values for each angle in a right triangle
+    question: |
+      在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，已知三边 $a = BC = 3$，$b = AC = 4$，$c = AB = 5$。
+      分别写出 $\angle A$ 和 $\angle B$ 的正弦、余弦、正切值。
+    questionEn: |
+      In right triangle $\triangle ABC$ with $\angle C = 90°$, the three sides are $a = BC = 3$,
+      $b = AC = 4$, $c = AB = 5$. Write the sine, cosine, and tangent of both $\angle A$ and $\angle B$.
+    steps:
+      - '验证这是直角三角形：$3^{2} + 4^{2} = 9 + 16 = 25 = 5^{2}$ ✓'
+      - '对于 $\angle A$：对边 $= BC = 3$，邻边 $= AC = 4$，斜边 $= AB = 5$'
+      - '$\sin A = \dfrac{3}{5}$，$\cos A = \dfrac{4}{5}$，$\tan A = \dfrac{3}{4}$'
+      - '对于 $\angle B$：对边 $= AC = 4$，邻边 $= BC = 3$，斜边 $= AB = 5$'
+      - '$\sin B = \dfrac{4}{5}$，$\cos B = \dfrac{3}{5}$，$\tan B = \dfrac{4}{3}$'
+      - '验证互余关系：$\sin A = \frac{3}{5} = \cos B$ ✓，$\cos A = \frac{4}{5} = \sin B$ ✓'
+    stepsEn:
+      - 'Verify right triangle: $3^{2} + 4^{2} = 9 + 16 = 25 = 5^{2}$ ✓'
+      - 'For $\angle A$: opposite $= BC = 3$, adjacent $= AC = 4$, hypotenuse $= AB = 5$'
+      - '$\sin A = \dfrac{3}{5}$, $\cos A = \dfrac{4}{5}$, $\tan A = \dfrac{3}{4}$'
+      - 'For $\angle B$: opposite $= AC = 4$, adjacent $= BC = 3$, hypotenuse $= AB = 5$'
+      - '$\sin B = \dfrac{4}{5}$, $\cos B = \dfrac{3}{5}$, $\tan B = \dfrac{4}{3}$'
+      - 'Verify complementary: $\sin A = \frac{3}{5} = \cos B$ ✓, $\cos A = \frac{4}{5} = \sin B$ ✓'
+    answer: '$\sin A = \dfrac{3}{5}$，$\cos A = \dfrac{4}{5}$，$\tan A = \dfrac{3}{4}$；$\sin B = \dfrac{4}{5}$，$\cos B = \dfrac{3}{5}$，$\tan B = \dfrac{4}{3}$'
+    answerEn: '$\sin A = \dfrac{3}{5}$, $\cos A = \dfrac{4}{5}$, $\tan A = \dfrac{3}{4}$; $\sin B = \dfrac{4}{5}$, $\cos B = \dfrac{3}{5}$, $\tan B = \dfrac{4}{3}$'
+
+  - type: 2
+    title: 利用特殊角计算（不用计算器）
+    titleEn: Calculating with special angles (no calculator)
+    question: |
+      不使用计算器，计算下列各式：
+
+      （1）$2\sin 30° + \tan 45° - 3\cos 60°$
+
+      （2）$\dfrac{\tan 60°}{\sin 60°} - \cos 30°$
+    questionEn: |
+      Without using a calculator, evaluate:
+
+      (1) $2\sin 30° + \tan 45° - 3\cos 60°$
+
+      (2) $\dfrac{\tan 60°}{\sin 60°} - \cos 30°$
+    steps:
+      - '代入特殊角的已知值：$\sin 30° = \frac{1}{2}$，$\tan 45° = 1$，$\cos 60° = \frac{1}{2}$'
+      - '（1）$2 \times \frac{1}{2} + 1 - 3 \times \frac{1}{2} = 1 + 1 - \frac{3}{2} = 2 - \frac{3}{2} = \frac{1}{2}$'
+      - '（2）代入 $\tan 60° = \sqrt{3}$，$\sin 60° = \frac{\sqrt{3}}{2}$，$\cos 30° = \frac{\sqrt{3}}{2}$'
+      - '$\dfrac{\sqrt{3}}{\sqrt{3}/2} - \dfrac{\sqrt{3}}{2} = \sqrt{3} \times \dfrac{2}{\sqrt{3}} - \dfrac{\sqrt{3}}{2} = 2 - \dfrac{\sqrt{3}}{2}$'
+    stepsEn:
+      - 'Substitute known special values: $\sin 30° = \frac{1}{2}$, $\tan 45° = 1$, $\cos 60° = \frac{1}{2}$'
+      - '(1) $2 \times \frac{1}{2} + 1 - 3 \times \frac{1}{2} = 1 + 1 - \frac{3}{2} = \frac{1}{2}$'
+      - '(2) Substitute $\tan 60° = \sqrt{3}$, $\sin 60° = \frac{\sqrt{3}}{2}$, $\cos 30° = \frac{\sqrt{3}}{2}$'
+      - '$\dfrac{\sqrt{3}}{\sqrt{3}/2} - \dfrac{\sqrt{3}}{2} = 2 - \dfrac{\sqrt{3}}{2}$'
+    answer: '（1）$\dfrac{1}{2}$；（2）$2 - \dfrac{\sqrt{3}}{2}$'
+    answerEn: '(1) $\dfrac{1}{2}$; (2) $2 - \dfrac{\sqrt{3}}{2}$'
+
+  - type: 3
+    title: 利用互余关系化简
+    titleEn: Simplifying using complementary angle relationships
+    question: |
+      化简下列各式：
+
+      （1）$\sin 40° - \cos 50°$
+
+      （2）$\dfrac{\sin 25° \cdot \cos 65° + \cos 25° \cdot \sin 65°}{\tan 45°}$
+    questionEn: |
+      Simplify the following:
+
+      (1) $\sin 40° - \cos 50°$
+
+      (2) $\dfrac{\sin 25° \cdot \cos 65° + \cos 25° \cdot \sin 65°}{\tan 45°}$
+    steps:
+      - '（1）因为 $40° + 50° = 90°$，所以 $\cos 50° = \sin(90°-50°) = \sin 40°$'
+      - '$\sin 40° - \cos 50° = \sin 40° - \sin 40° = 0$'
+      - '（2）注意 $25° + 65° = 90°$，所以 $\cos 65° = \sin 25°$，$\sin 65° = \cos 25°$'
+      - '分子 $= \sin 25° \cdot \sin 25° + \cos 25° \cdot \cos 25° = \sin^{2} 25° + \cos^{2} 25° = 1$'
+      - '分母 $= \tan 45° = 1$'
+      - '结果 $= \dfrac{1}{1} = 1$'
+    stepsEn:
+      - '(1) Since $40° + 50° = 90°$, we have $\cos 50° = \sin(90°-50°) = \sin 40°$'
+      - '$\sin 40° - \cos 50° = 0$'
+      - '(2) Note $25° + 65° = 90°$, so $\cos 65° = \sin 25°$ and $\sin 65° = \cos 25°$'
+      - 'Numerator $= \sin^{2} 25° + \cos^{2} 25° = 1$ (Pythagorean identity)'
+      - 'Denominator $= \tan 45° = 1$'
+      - 'Result $= 1$'
+    answer: '（1）$0$；（2）$1$'
+    answerEn: '(1) $0$; (2) $1$'
+
+  - type: 4
+    title: 解直角三角形（求边长）
+    titleEn: Solving a right triangle (finding side lengths)
+    question: |
+      在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$\angle A = 30°$，斜边 $c = AB = 10$。
+      求两直角边 $a$ 和 $b$ 的长度。
+    questionEn: |
+      In right triangle $\triangle ABC$ with $\angle C = 90°$, $\angle A = 30°$, and hypotenuse $c = AB = 10$.
+      Find the lengths of the two legs $a$ and $b$.
+    steps:
+      - '已知 $\angle A = 30°$，斜边 $c = 10$。确定各边的三角函数关系：'
+      - '对边 $a = BC$：$\sin A = \dfrac{a}{c}$，所以 $a = c\sin A = 10 \times \sin 30° = 10 \times \dfrac{1}{2} = 5$'
+      - '邻边 $b = AC$：$\cos A = \dfrac{b}{c}$，所以 $b = c\cos A = 10 \times \cos 30° = 10 \times \dfrac{\sqrt{3}}{2} = 5\sqrt{3}$'
+      - '验证：$a^{2} + b^{2} = 25 + 75 = 100 = c^{2}$ ✓'
+      - '$\angle B = 90° - 30° = 60°$'
+    stepsEn:
+      - 'Given $\angle A = 30°$, hypotenuse $c = 10$. Set up trigonometric ratios:'
+      - 'Opposite leg $a = BC$: $a = c\sin A = 10 \times \sin 30° = 5$'
+      - 'Adjacent leg $b = AC$: $b = c\cos A = 10 \times \cos 30° = 5\sqrt{3}$'
+      - 'Verify: $a^{2} + b^{2} = 25 + 75 = 100 = c^{2}$ ✓'
+      - '$\angle B = 90° - 30° = 60°$'
+    answer: '$a = 5$，$b = 5\sqrt{3}$，$\angle B = 60°$'
+    answerEn: '$a = 5$, $b = 5\sqrt{3}$, $\angle B = 60°$'
+
+  - type: 5
+    title: 解直角三角形（求角度）
+    titleEn: Solving a right triangle (finding an angle)
+    question: |
+      在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$a = BC = 5$，$b = AC = 12$，$c = AB = 13$。
+      用反三角函数求 $\angle A$（精确到 $0.1°$）。
+    questionEn: |
+      In right triangle $\triangle ABC$ with $\angle C = 90°$, $a = BC = 5$, $b = AC = 12$, $c = AB = 13$.
+      Use inverse trigonometric functions to find $\angle A$ (to the nearest $0.1°$).
+    steps:
+      - '对于 $\angle A$：对边 $= a = 5$，邻边 $= b = 12$，斜边 $= c = 13$'
+      - '用正弦：$\sin A = \dfrac{5}{13} \approx 0.3846$，$A = \sin^{-1}(0.3846) \approx 22.6°$'
+      - '验证：也可用正切：$\tan A = \dfrac{5}{12} \approx 0.4167$，$A = \tan^{-1}(0.4167) \approx 22.6°$ ✓'
+      - '$\angle B = 90° - 22.6° = 67.4°$'
+    stepsEn:
+      - 'For $\angle A$: opposite $= 5$, adjacent $= 12$, hypotenuse $= 13$'
+      - 'Using sine: $\sin A = \frac{5}{13} \approx 0.3846$, $A = \sin^{-1}(0.3846) \approx 22.6°$'
+      - 'Verify using tangent: $\tan A = \frac{5}{12} \approx 0.4167$, $A = \tan^{-1}(0.4167) \approx 22.6°$ ✓'
+      - '$\angle B = 90° - 22.6° = 67.4°$'
+    answer: '$\angle A \approx 22.6°$，$\angle B \approx 67.4°$'
+    answerEn: '$\angle A \approx 22.6°$, $\angle B \approx 67.4°$'
+
+  - type: 6
+    title: 仰角问题——测量楼高
+    titleEn: Angle of elevation — measuring building height
+    question: |
+      小明站在一栋楼正前方的地面上，距楼底 $d = 30$ 米处，测得楼顶的<<仰角/angle of elevation>>为 $\alpha = 60°$。
+      设小明的眼睛高度为 $1.5$ 米，求这栋楼的实际高度（精确到 $0.1$ 米）。
+    questionEn: |
+      Xiao Ming stands on the ground $d = 30$ m from the base of a building and measures the
+      <<仰角/angle of elevation>> to the top as $\alpha = 60°$. His eye level is $1.5$ m above the
+      ground. Find the actual height of the building (to the nearest $0.1$ m).
+    steps:
+      - '画示意图：水平地面、楼、小明眼睛位置（高 $1.5$ m），视线到楼顶成 $60°$ 仰角'
+      - '从眼睛到楼顶的高度差 $h$：直角三角形中，邻边 $= 30$ m，仰角 $= 60°$'
+      - '$\tan 60° = \dfrac{h}{30}$，所以 $h = 30\tan 60° = 30\sqrt{3} \approx 51.96$ m'
+      - '楼的实际高度 $=$ 眼睛高度 $+$ 高度差 $= 1.5 + 51.96 \approx 53.5$ m'
+    stepsEn:
+      - 'Draw a diagram: ground, building, eye level at $1.5$ m, line of sight at $60°$ elevation'
+      - 'Height difference $h$ from eye level to top: adjacent $= 30$ m, angle $= 60°$'
+      - '$\tan 60° = \dfrac{h}{30}$, so $h = 30\sqrt{3} \approx 51.96$ m'
+      - 'Actual height $=$ eye height $+$ $h = 1.5 + 51.96 \approx 53.5$ m'
+    answer: '楼高约 $53.5$ 米'
+    answerEn: 'The building is approximately $53.5$ m tall'
+
+exercises:
+  - id: ex1
+    type: fill-in
+    question: '在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$a = 5$，$c = 13$，则 $\sin A = $ ___，$\cos A = $ ___，$\tan A = $ ___'
+    questionEn: 'In right $\triangle ABC$ with $\angle C = 90°$, $a = 5$, $c = 13$. Find $\sin A = $ ___, $\cos A = $ ___, $\tan A = $ ___'
+    answer: '$\sin A = \dfrac{5}{13}$；$\cos A = \dfrac{12}{13}$；$\tan A = \dfrac{5}{12}$'
+    answerEn: '$\sin A = \dfrac{5}{13}$; $\cos A = \dfrac{12}{13}$; $\tan A = \dfrac{5}{12}$'
+    explanation: '先用勾股定理求邻边：$b = \sqrt{13^{2}-5^{2}} = \sqrt{144} = 12$。然后：$\sin A = \frac{5}{13}$，$\cos A = \frac{12}{13}$，$\tan A = \frac{5}{12}$'
+    explanationEn: 'Find adjacent side: $b = \sqrt{13^{2}-5^{2}} = 12$. Then: $\sin A = \frac{5}{13}$, $\cos A = \frac{12}{13}$, $\tan A = \frac{5}{12}$'
+
+  - id: ex2
+    type: fill-in
+    question: '不查表，直接写出：$\sin 45° = $ ___，$\cos 30° = $ ___，$\tan 60° = $ ___，$\sin 60° = $ ___'
+    questionEn: 'Without a table, write directly: $\sin 45° = $ ___, $\cos 30° = $ ___, $\tan 60° = $ ___, $\sin 60° = $ ___'
+    answer: '$\dfrac{\sqrt{2}}{2}$；$\dfrac{\sqrt{3}}{2}$；$\sqrt{3}$；$\dfrac{\sqrt{3}}{2}$'
+    answerEn: '$\dfrac{\sqrt{2}}{2}$; $\dfrac{\sqrt{3}}{2}$; $\sqrt{3}$; $\dfrac{\sqrt{3}}{2}$'
+    explanation: '特殊角表：$\sin 45° = \frac{\sqrt{2}}{2}$，$\cos 30° = \frac{\sqrt{3}}{2}$，$\tan 60° = \sqrt{3}$，$\sin 60° = \frac{\sqrt{3}}{2}$'
+    explanationEn: 'From the special angle table: $\sin 45° = \frac{\sqrt{2}}{2}$, $\cos 30° = \frac{\sqrt{3}}{2}$, $\tan 60° = \sqrt{3}$, $\sin 60° = \frac{\sqrt{3}}{2}$'
+
+  - id: ex3
+    type: true-false
+    question: '$\sin 30° + \sin 60° = \sin 90°$'
+    questionEn: '$\sin 30° + \sin 60° = \sin 90°$'
+    answer: '错误'
+    answerEn: 'False'
+    explanation: '左边 $= \frac{1}{2} + \frac{\sqrt{3}}{2} = \frac{1+\sqrt{3}}{2} \approx 1.366$，右边 $\sin 90° = 1$。$\sin$ 不满足加法分配律：$\sin(A+B) \neq \sin A + \sin B$。'
+    explanationEn: 'LHS $= \frac{1}{2} + \frac{\sqrt{3}}{2} \approx 1.366 \neq 1 = \sin 90°$. Sine does not distribute over addition: $\sin(A+B) \neq \sin A + \sin B$.'
+
+  - id: ex4
+    type: multiple-choice
+    question: |
+      下列说法正确的是（ ）
+
+      A. 锐角 $A$ 的 $\sin A$ 值可以大于 $1$
+
+      B. 锐角 $A$ 越大，$\cos A$ 越大
+
+      C. $\tan 45° = 1$
+
+      D. $\sin 30° = \cos 30°$
+    questionEn: |
+      Which statement is correct? ( )
+
+      A. $\sin A$ of an acute angle $A$ can exceed $1$
+
+      B. For acute angle $A$, a larger $A$ gives a larger $\cos A$
+
+      C. $\tan 45° = 1$
+
+      D. $\sin 30° = \cos 30°$
+    answer: 'C'
+    answerEn: 'C'
+    explanation: 'A 错：锐角三角形中 $0 < \sin A < 1$；B 错：$\cos A$ 随锐角增大而减小；C 正确：等腰直角三角形对边等于邻边，$\tan 45° = 1$；D 错：$\sin 30° = \frac{1}{2}$，$\cos 30° = \frac{\sqrt{3}}{2}$，不相等。'
+    explanationEn: 'A wrong: $0 < \sin A < 1$ for acute angles; B wrong: $\cos A$ decreases as the acute angle increases; C correct: isosceles right triangle has equal legs, $\tan 45° = 1$; D wrong: $\sin 30° = \frac{1}{2} \neq \frac{\sqrt{3}}{2} = \cos 30°$.'
+
+  - id: ex5
+    type: fill-in
+    question: '化简：$\sin 72° - \cos 18° = $ ___'
+    questionEn: 'Simplify: $\sin 72° - \cos 18° = $ ___'
+    answer: '$0$'
+    answerEn: '$0$'
+    explanation: '因为 $72° + 18° = 90°$，所以 $\cos 18° = \sin 72°$。原式 $= \sin 72° - \sin 72° = 0$。'
+    explanationEn: 'Since $72° + 18° = 90°$, $\cos 18° = \sin 72°$. So the expression $= 0$.'
+
+  - id: ex6
+    type: computation
+    question: '不用计算器，计算 $\sin^{2} 30° + \cos^{2} 30°$ 的值'
+    questionEn: 'Without a calculator, compute $\sin^{2} 30° + \cos^{2} 30°$'
+    answer: '$1$'
+    answerEn: '$1$'
+    explanation: '$\left(\frac{1}{2}\right)^{2} + \left(\frac{\sqrt{3}}{2}\right)^{2} = \frac{1}{4} + \frac{3}{4} = 1$。验证了勾股恒等式 $\sin^{2} A + \cos^{2} A = 1$。'
+    explanationEn: '$\left(\frac{1}{2}\right)^{2} + \left(\frac{\sqrt{3}}{2}\right)^{2} = \frac{1}{4} + \frac{3}{4} = 1$. This verifies the Pythagorean identity.'
+
+  - id: ex7
+    type: computation
+    question: '已知 $\sin A = \dfrac{4}{5}$（$A$ 为锐角），求 $\cos A$ 和 $\tan A$'
+    questionEn: 'Given $\sin A = \dfrac{4}{5}$ ($A$ acute), find $\cos A$ and $\tan A$'
+    answer: '$\cos A = \dfrac{3}{5}$，$\tan A = \dfrac{4}{3}$'
+    answerEn: '$\cos A = \dfrac{3}{5}$, $\tan A = \dfrac{4}{3}$'
+    explanation: '$\cos^{2} A = 1 - \frac{16}{25} = \frac{9}{25}$，$A$ 为锐角取正值 $\cos A = \frac{3}{5}$；$\tan A = \frac{4/5}{3/5} = \frac{4}{3}$'
+    explanationEn: '$\cos^{2} A = 1 - \frac{16}{25} = \frac{9}{25}$, so $\cos A = \frac{3}{5}$; $\tan A = \frac{4/5}{3/5} = \frac{4}{3}$'
+
+  - id: ex8
+    type: computation
+    question: '在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$\angle B = 45°$，$b = AC = 6$，求斜边 $c$ 和直角边 $a$'
+    questionEn: 'In right $\triangle ABC$ with $\angle C = 90°$, $\angle B = 45°$, $b = AC = 6$, find hypotenuse $c$ and leg $a$'
+    answer: '$a = 6$，$c = 6\sqrt{2}$'
+    answerEn: '$a = 6$, $c = 6\sqrt{2}$'
+    explanation: '$\angle B = 45°$ 意味着 $\angle A = 45°$，是等腰直角三角形，所以 $a = b = 6$；$c = \frac{b}{\sin 45°} = \frac{6}{\sqrt{2}/2} = 6\sqrt{2}$。验证：$6^{2}+6^{2} = 72 = (6\sqrt{2})^{2}$ ✓'
+    explanationEn: '$\angle B = 45°$ means $\angle A = 45°$ — an isosceles right triangle, so $a = b = 6$; $c = \frac{6}{\sin 45°} = 6\sqrt{2}$. Check: $36+36=72=(6\sqrt{2})^{2}$ ✓'
+
+  - id: ex9
+    type: fill-in
+    question: '在直角三角形中，$\angle A = 60°$，斜边 $c = 8$，则对边 $a = $ ___，邻边 $b = $ ___'
+    questionEn: 'In a right triangle, $\angle A = 60°$, hypotenuse $c = 8$. Then opposite $a = $ ___, adjacent $b = $ ___'
+    answer: '$a = 4\sqrt{3}$；$b = 4$'
+    answerEn: '$a = 4\sqrt{3}$; $b = 4$'
+    explanation: '$a = c\sin 60° = 8 \times \frac{\sqrt{3}}{2} = 4\sqrt{3}$；$b = c\cos 60° = 8 \times \frac{1}{2} = 4$'
+    explanationEn: '$a = c\sin 60° = 8 \times \frac{\sqrt{3}}{2} = 4\sqrt{3}$; $b = c\cos 60° = 8 \times \frac{1}{2} = 4$'
+
+  - id: ex10
+    type: computation
+    question: '化简：$\dfrac{\sin 55° \cdot \cos 35° + \cos 55° \cdot \sin 35°}{\sin^{2} 28° + \cos^{2} 28°}$'
+    questionEn: 'Simplify: $\dfrac{\sin 55° \cdot \cos 35° + \cos 55° \cdot \sin 35°}{\sin^{2} 28° + \cos^{2} 28°}$'
+    answer: '$1$'
+    answerEn: '$1$'
+    explanation: |
+      分子：$55° + 35° = 90°$，所以 $\cos 35° = \sin 55°$，$\sin 35° = \cos 55°$。
+      分子 $= \sin^{2} 55° + \cos^{2} 55° = 1$
+      分母 $= \sin^{2} 28° + \cos^{2} 28° = 1$
+      结果 $= 1$
+    explanationEn: |
+      Numerator: $55°+35°=90°$, so $\cos 35° = \sin 55°$, $\sin 35° = \cos 55°$.
+      Numerator $= \sin^{2} 55° + \cos^{2} 55° = 1$; Denominator $= 1$. Result $= 1$.
+
+  - id: ex11
+    type: computation
+    question: |
+      一棵大树在离地面 $1.5$ 米处折断，折断的部分仍与树根相连，树梢着地处距树根底部 $2\sqrt{3}$ 米。
+      已知折断部分与地面所成角为 $30°$，求这棵树原来的高度。
+    questionEn: |
+      A tree snaps $1.5$ m above the ground. The broken part remains attached and the treetop
+      touches the ground $2\sqrt{3}$ m from the base. The broken section makes a $30°$ angle with
+      the ground. Find the original height of the tree.
+    answer: '原高 $= 5.5$ 米'
+    answerEn: 'Original height $= 5.5$ m'
+    explanation: |
+      折断部分（斜边）与地面成 $30°$，水平距离（邻边）$= 2\sqrt{3}$ m。
+      折断段长 $l$：$\cos 30° = \frac{2\sqrt{3}}{l}$，$l = \frac{2\sqrt{3}}{\sqrt{3}/2} = 4$ m。
+      原树高 $=$ 折断高度 $+$ 折断段长 $= 1.5 + 4 = 5.5$ m。
+      验证：垂直分量 $4\sin 30° = 2$ m，水平分量 $4\cos 30° = 2\sqrt{3}$ m ✓
+    explanationEn: |
+      Broken section (hypotenuse) at $30°$ to ground, horizontal distance (adjacent) $= 2\sqrt{3}$ m.
+      Broken section length: $\cos 30° = \frac{2\sqrt{3}}{l}$, so $l = 4$ m.
+      Original height $= 1.5 + 4 = 5.5$ m. Check: vertical component $4\sin 30° = 2$ m, horizontal $4\cos 30° = 2\sqrt{3}$ m ✓
+
+  - id: ex12
+    type: multiple-choice
+    question: |
+      在直角三角形中，$\angle A$ 为锐角，若 $\tan A = \sqrt{3}$，则 $\angle A$ 等于（ ）
+
+      A. $30°$　　B. $45°$　　C. $60°$　　D. $75°$
+    questionEn: |
+      In a right triangle, $\angle A$ is acute. If $\tan A = \sqrt{3}$, then $\angle A$ equals ( )
+
+      A. $30°$　　B. $45°$　　C. $60°$　　D. $75°$
+    answer: 'C'
+    answerEn: 'C'
+    explanation: '$\tan 30° = \frac{\sqrt{3}}{3}$，$\tan 45° = 1$，$\tan 60° = \sqrt{3}$。$\tan A = \sqrt{3} = \tan 60°$，故 $\angle A = 60°$。'
+    explanationEn: '$\tan 30° = \frac{\sqrt{3}}{3}$, $\tan 45° = 1$, $\tan 60° = \sqrt{3}$. Since $\tan A = \sqrt{3}$, $\angle A = 60°$.'
+
+  - id: ex13
+    type: computation
+    question: |
+      小李站在山脚平地上，测得山顶的<<仰角/angle of elevation>>为 $30°$，她沿水平方向走近 $100$ 米后，测得仰角变为 $60°$。
+      求山高（$\sqrt{3} \approx 1.732$，精确到 $0.1$ 米）。
+    questionEn: |
+      Xiao Li measures the <<仰角/angle of elevation>> to a mountain peak as $30°$. After walking
+      $100$ m horizontally toward the mountain, the angle becomes $60°$. Find the mountain height
+      ($\sqrt{3} \approx 1.732$, to $0.1$ m).
+    answer: '$h = 50\sqrt{3} \approx 86.6$ 米'
+    answerEn: '$h = 50\sqrt{3} \approx 86.6$ m'
+    explanation: |
+      设山高为 $h$，原来距山脚水平距离为 $x$。
+      第一次：$\tan 30° = \frac{h}{x}$，即 $x = \sqrt{3}h$
+      第二次：$\tan 60° = \frac{h}{x-100}$，即 $x - 100 = \frac{h}{\sqrt{3}} = \frac{\sqrt{3}h}{3}$
+      代入：$\sqrt{3}h - 100 = \frac{\sqrt{3}h}{3}$，$\frac{2\sqrt{3}h}{3} = 100$，$h = \frac{150}{\sqrt{3}} = 50\sqrt{3} \approx 86.6$ 米
+    explanationEn: |
+      Let height $= h$, original distance $= x$.
+      First: $\tan 30° = \frac{h}{x}$, so $x = \sqrt{3}h$
+      Second: $\tan 60° = \frac{h}{x-100}$, so $x-100 = \frac{\sqrt{3}h}{3}$
+      Solve: $\sqrt{3}h - 100 = \frac{\sqrt{3}h}{3}$, $\frac{2\sqrt{3}h}{3} = 100$, $h = 50\sqrt{3} \approx 86.6$ m
+
+  - id: ex14
+    type: fill-in
+    question: '已知 $\cos A = \dfrac{\sqrt{3}}{2}$，$A$ 为锐角，则 $\sin A = $ ___，$\tan A = $ ___，$\angle A = $ ___'
+    questionEn: 'Given $\cos A = \dfrac{\sqrt{3}}{2}$ with $A$ acute, find $\sin A = $ ___, $\tan A = $ ___, $\angle A = $ ___'
+    answer: '$\sin A = \dfrac{1}{2}$；$\tan A = \dfrac{\sqrt{3}}{3}$；$\angle A = 30°$'
+    answerEn: '$\sin A = \dfrac{1}{2}$; $\tan A = \dfrac{\sqrt{3}}{3}$; $\angle A = 30°$'
+    explanation: '$\sin^{2} A = 1 - \frac{3}{4} = \frac{1}{4}$，取正值 $\sin A = \frac{1}{2}$；$\tan A = \frac{1/2}{\sqrt{3}/2} = \frac{\sqrt{3}}{3}$；对照特殊角表，$\angle A = 30°$'
+    explanationEn: '$\sin^{2} A = 1 - \frac{3}{4} = \frac{1}{4}$, so $\sin A = \frac{1}{2}$; $\tan A = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$; from the table, $\angle A = 30°$'
+
+examPrep:
+  intro: |
+    以下题目综合考查本章核心概念，包括三角函数定义、特殊角值的灵活运用、互余角关系、
+    同角恒等式和实际应用。注重易错点和综合运用，独立思考后再核对答案。
+  introEn: |
+    The following problems comprehensively test the key concepts of this chapter: trigonometric
+    definitions, flexible use of special angle values, complementary angle relationships, the
+    Pythagorean identity, and real-world applications. Work independently before checking answers.
+  problems:
+    - id: ep1
+      type: multiple-choice
+      question: |
+        在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，若 $\sin A = \dfrac{1}{3}$，则 $\cos B = $（ ）
+
+        A. $\dfrac{1}{3}$　　B. $\dfrac{2\sqrt{2}}{3}$　　C. $\dfrac{\sqrt{2}}{3}$　　D. $\dfrac{2}{3}$
+      questionEn: |
+        In right $\triangle ABC$ with $\angle C = 90°$, if $\sin A = \dfrac{1}{3}$, then $\cos B = $( )
+
+        A. $\dfrac{1}{3}$　　B. $\dfrac{2\sqrt{2}}{3}$　　C. $\dfrac{\sqrt{2}}{3}$　　D. $\dfrac{2}{3}$
+      answer: 'A'
+      answerEn: 'A'
+      explanation: |
+        关键：直角三角形中 $\angle A + \angle B = 90°$，即 $B = 90° - A$。
+        由互余关系：$\cos B = \cos(90°-A) = \sin A = \dfrac{1}{3}$。
+        不需要计算 $\cos A$——$\cos B$ 直接等于 $\sin A$！这是互余关系的精髓。
+      explanationEn: |
+        Key: $\angle A + \angle B = 90°$, so $B = 90° - A$.
+        By complementary relation: $\cos B = \cos(90°-A) = \sin A = \dfrac{1}{3}$.
+        No need to compute $\cos A$ — $\cos B$ equals $\sin A$ directly!
+
+    - id: ep2
+      type: fill-in
+      question: '已知锐角 $A$ 满足 $\tan A = 2$，则 $\sin A \cdot \cos A = $ ___'
+      questionEn: 'Given acute angle $A$ with $\tan A = 2$, find $\sin A \cdot \cos A = $ ___'
+      answer: '$\dfrac{2}{5}$'
+      answerEn: '$\dfrac{2}{5}$'
+      explanation: |
+        由 $\tan A = \frac{\sin A}{\cos A} = 2$，设 $\sin A = 2k$，$\cos A = k$。
+        代入勾股恒等式：$4k^{2} + k^{2} = 1$，$k^{2} = \frac{1}{5}$。
+        $\sin A \cdot \cos A = 2k \cdot k = 2k^{2} = \frac{2}{5}$。
+      explanationEn: |
+        Since $\tan A = 2$, let $\sin A = 2k$ and $\cos A = k$.
+        From $\sin^{2}A + \cos^{2}A = 1$: $4k^{2}+k^{2}=1$, so $k^{2}=\frac{1}{5}$.
+        $\sin A \cdot \cos A = 2k^{2} = \frac{2}{5}$.
+
+    - id: ep3
+      type: computation
+      question: '计算：$(\sin 30° + \cos 60°)^{2} + (\sin 60° - \cos 30°)^{2} + \tan 45°$'
+      questionEn: 'Compute: $(\sin 30° + \cos 60°)^{2} + (\sin 60° - \cos 30°)^{2} + \tan 45°$'
+      answer: '$2$'
+      answerEn: '$2$'
+      explanation: |
+        注意 $\sin 30° = \cos 60° = \frac{1}{2}$，$\sin 60° = \cos 30° = \frac{\sqrt{3}}{2}$，$\tan 45° = 1$。
+        第一项：$\left(\frac{1}{2} + \frac{1}{2}\right)^{2} = 1^{2} = 1$
+        第二项：$\left(\frac{\sqrt{3}}{2} - \frac{\sqrt{3}}{2}\right)^{2} = 0^{2} = 0$
+        原式 $= 1 + 0 + 1 = 2$
+        关键是认出 $\sin 30° = \cos 60°$ 和 $\sin 60° = \cos 30°$ 的互余对称性。
+      explanationEn: |
+        Note: $\sin 30° = \cos 60° = \frac{1}{2}$, $\sin 60° = \cos 30° = \frac{\sqrt{3}}{2}$, $\tan 45° = 1$.
+        First term: $(1)^{2} = 1$. Second term: $(0)^{2} = 0$. Result $= 1+0+1 = 2$.
+        The key is recognising the complementary symmetry $\sin 30° = \cos 60°$ and $\sin 60° = \cos 30°$.
+
+    - id: ep4
+      type: computation
+      question: |
+        一座山的坡面与水平面所成的<<坡角/slope angle>>为 $30°$。一辆缆车沿坡面从山脚 $A$ 爬升到山顶 $B$，
+        缆车行进的路程（斜面距离）$AB = 400$ 米。
+
+        （1）求缆车上升的垂直高度 $h$；
+        （2）求缆车水平前进的距离 $d$；
+        （3）若缆车速度为 $2$ 米/秒，从 $A$ 到 $B$ 需要几分钟？
+      questionEn: |
+        A mountain slope makes a <<坡角/slope angle>> of $30°$ with the horizontal. A cable car
+        travels along the slope from base $A$ to summit $B$, covering a slant distance $AB = 400$ m.
+
+        (1) Find the vertical height gained $h$.
+        (2) Find the horizontal distance $d$.
+        (3) If the cable car travels at $2$ m/s, how many minutes does the journey take?
+      answer: '（1）$h = 200$ 米；（2）$d = 200\sqrt{3} \approx 346.4$ 米；（3）$200$ 秒 $\approx 3.3$ 分钟'
+      answerEn: '(1) $h = 200$ m; (2) $d = 200\sqrt{3} \approx 346.4$ m; (3) $200$ s $\approx 3.3$ min'
+      explanation: |
+        （1）$h = AB\sin 30° = 400 \times \frac{1}{2} = 200$ 米
+        （2）$d = AB\cos 30° = 400 \times \frac{\sqrt{3}}{2} = 200\sqrt{3} \approx 346.4$ 米
+        （3）时间 $= \frac{400}{2} = 200$ 秒 $= \frac{200}{60} \approx 3.3$ 分钟
+      explanationEn: |
+        (1) $h = 400\sin 30° = 200$ m
+        (2) $d = 400\cos 30° = 200\sqrt{3} \approx 346.4$ m
+        (3) Time $= \frac{400}{2} = 200$ s $\approx 3.3$ min
+
+    - id: ep5
+      type: computation
+      question: |
+        消防员站在距楼底 $20$ 米处，测得楼顶的<<仰角/angle of elevation>>为 $\alpha$，其中 $\tan \alpha = 2$。
+
+        （1）求大楼高度（忽略身高）；
+        （2）若消防云梯从楼底架起需延伸到楼顶，求云梯长度（精确到 $0.1$ 米，$\sqrt{5} \approx 2.236$）。
+      questionEn: |
+        A firefighter stands $20$ m from the base of a building. The <<仰角/angle of elevation>> to
+        the rooftop is $\alpha$ where $\tan \alpha = 2$.
+
+        (1) Find the building height (ignore the firefighter's height).
+        (2) A ladder is extended from the base to the rooftop. Find the ladder length
+        (to $0.1$ m, $\sqrt{5} \approx 2.236$).
+      answer: '（1）楼高 $= 40$ 米；（2）云梯长 $\approx 44.7$ 米'
+      answerEn: '(1) Building height $= 40$ m; (2) Ladder length $\approx 44.7$ m'
+      explanation: |
+        （1）$\tan \alpha = \frac{h}{20} = 2$，故 $h = 40$ 米。
+        （2）云梯水平距离 $= 20$ m，垂直高度 $= 40$ m。
+        云梯长 $= \sqrt{20^{2} + 40^{2}} = \sqrt{2000} = 20\sqrt{5} \approx 20 \times 2.236 = 44.7$ 米。
+      explanationEn: |
+        (1) $\tan \alpha = \frac{h}{20} = 2$, so $h = 40$ m.
+        (2) Ladder spans horizontal $20$ m and vertical $40$ m.
+        Ladder length $= \sqrt{400+1600} = \sqrt{2000} = 20\sqrt{5} \approx 44.7$ m.
+
+summary: |
+  本章学习了<<锐角三角函数/trigonometric functions of acute angles>>的核心内容：
+
+  **定义**：在直角三角形中，$\sin A = \dfrac{\text{对边}}{\text{斜边}}$，$\cos A = \dfrac{\text{邻边}}{\text{斜边}}$，$\tan A = \dfrac{\text{对边}}{\text{邻边}}$。
+  三个比值只与角度有关，与三角形大小无关（相似三角形的本质）。
+
+  **特殊角**：$30°$、$45°$、$60°$ 的三角函数值必须熟记，从等边三角形和等腰直角三角形可推导出来。
+
+  **两组恒等式**：
+  - 互余：$\sin A = \cos(90°-A)$，$\cos A = \sin(90°-A)$
+  - 同角：$\sin^{2} A + \cos^{2} A = 1$，$\tan A = \dfrac{\sin A}{\cos A}$
+
+  **解直角三角形**：已知一边一角（或两边），用三角函数求全部元素，计算器用于一般角度。
+
+  **实际应用**：仰角/俯角问题，核心模型 $\tan \alpha = \dfrac{h}{d}$，建立直角三角形是解题关键。
+
+  三角函数是连接"角"与"边"的桥梁，是今后学习正弦定理、余弦定理和三角恒等变换的基础。
+summaryEn: |
+  This chapter covered the core content of <<锐角三角函数/trigonometric functions of acute angles>>:
+
+  **Definitions**: In a right triangle, $\sin A = \dfrac{\text{opposite}}{\text{hypotenuse}}$,
+  $\cos A = \dfrac{\text{adjacent}}{\text{hypotenuse}}$, $\tan A = \dfrac{\text{opposite}}{\text{adjacent}}$.
+  These ratios depend only on the angle, not the triangle's size (the essence of similar triangles).
+
+  **Special angles**: The values for $30°$, $45°$, $60°$ must be memorised; they are derived from the
+  equilateral triangle and isosceles right triangle.
+
+  **Two groups of identities**:
+  - Complementary: $\sin A = \cos(90°-A)$, $\cos A = \sin(90°-A)$
+  - Same-angle: $\sin^{2} A + \cos^{2} A = 1$, $\tan A = \dfrac{\sin A}{\cos A}$
+
+  **Solving right triangles**: given one side and one angle (or two sides), use trigonometric
+  functions to find all elements; use a calculator for non-special angles.
+
+  **Real-world applications**: elevation/depression angle problems use the core model
+  $\tan \alpha = \dfrac{h}{d}$; setting up the right triangle diagram is the key step.
+
+  Trigonometric functions are the bridge between angles and sides, and form the foundation for the
+  Law of Sines, Law of Cosines, and trigonometric identities in future study.

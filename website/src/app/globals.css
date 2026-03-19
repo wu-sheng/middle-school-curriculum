@@ -25,10 +25,25 @@ body {
 /* KaTeX overrides for better integration */
 .katex {
   font-size: 1.1em;
+  /* Treat formulas as atomic units (like <img>) for text selection.
+     Without this, clicking inside a KaTeX inline-block span leaves no
+     character-level anchor, causing the browser to fall back to selecting
+     the entire containing paragraph. */
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: text;
 }
 
 .katex-display {
   margin: 1em 0;
+}
+
+/* Paragraphs inside MathBlock — proper block elements improve text selection */
+.math-block-content p {
+  margin-bottom: 0.45rem;
+}
+.math-block-content p:last-child {
+  margin-bottom: 0;
 }
 
 /* Math keyword highlight */
@@ -39,6 +54,8 @@ body {
   cursor: pointer;
   transition: all 0.15s;
   position: relative;
+  user-select: text; /* allow text selection through keyword spans */
+  -webkit-user-select: text;
 }
 
 .keyword-highlight:hover,
@@ -92,8 +109,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Smooth transitions */
-* {
+/* Smooth anchor scrolling — scoped to html only so it doesn't interfere with text selection */
+html {
   scroll-behavior: smooth;
 }
 

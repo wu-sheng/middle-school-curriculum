@@ -1,0 +1,923 @@
+title: 整式的乘除法
+titleEn: Multiplication and Division of Polynomials
+chapter: 3
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟 · 第3课时 约55分钟
+estimatedTimeEn: Session 1 ~55 min · Session 2 ~55 min · Session 3 ~55 min
+targetAudience: 小学3年级自学生（已完成七年级数学），自学材料，由简入深
+
+objectives:
+  - 掌握<<同底数幂/powers with the same base>>的乘法法则，理解"底数相同、指数相加"的本质
+  - 掌握<<幂的乘方/power of a power>>和<<积的乘方/power of a product>>法则
+  - 能熟练进行单项式与多项式、多项式与多项式的乘法运算
+  - 理解并运用<<平方差公式/difference of squares formula>>简化计算
+  - 理解并运用<<完全平方公式/perfect square trinomial formula>>，避免漏掉中间项
+  - 掌握<<同底数幂/powers with the same base>>的除法法则及整式除法
+  - 能综合运用各种乘除法则解决实际问题
+objectivesEn:
+  - Master the multiplication rule for <<同底数幂/powers with the same base>> and understand the essence of "same base, add exponents"
+  - Master the <<幂的乘方/power of a power>> and <<积的乘方/power of a product>> rules
+  - Perform multiplication of monomials by polynomials and polynomials by polynomials fluently
+  - Understand and apply the <<平方差公式/difference of squares formula>> to simplify calculations
+  - Understand and apply the <<完全平方公式/perfect square trinomial formula>>, avoiding missing the middle term
+  - Master the division rule for <<同底数幂/powers with the same base>> and polynomial division
+  - Combine various multiplication and division rules to solve practical problems
+
+prerequisites:
+  title: 从七年级出发——整式加减到整式乘除
+  titleEn: Building on Grade 7 — from polynomial addition/subtraction to multiplication/division
+  intro: |
+    七年级我们已经学会了整式的加减运算。这学期，我们要向前一步，研究整式的**乘除法**。
+    在此之前，先回顾几个重要的基础概念：
+  introEn: |
+    In Grade 7 we mastered addition and subtraction of polynomials. This semester we go one step further and study **multiplication and division** of polynomials.
+    Before we begin, let's review a few important foundational concepts:
+  knownNumbers:
+    - '<<单项式/monomial>>与<<多项式/polynomial>>的定义：$3x^{2}$、$-2ab$（单项式），$x+1$、$3a^{2}-2a+5$（多项式）'
+    - '<<系数/coefficient>>和<<次数/degree>>：$-5x^{3}y^{2}$ 的系数是 $-5$，次数是 $5$'
+    - '<<合并同类项/combining like terms>>：$3x^{2} + 2x^{2} = 5x^{2}$'
+    - '乘法分配律（小学）：$3 \times (2 + 4) = 3 \times 2 + 3 \times 4 = 18$'
+    - '幂的基本概念：$a^{3} = a \cdot a \cdot a$，底数、指数、幂'
+  knownNumbersEn:
+    - 'Definitions of <<单项式/monomial>> and <<多项式/polynomial>>: $3x^{2}$, $-2ab$ (monomial); $x+1$, $3a^{2}-2a+5$ (polynomial)'
+    - '<<系数/coefficient>> and <<次数/degree>>: the coefficient of $-5x^{3}y^{2}$ is $-5$, its degree is $5$'
+    - '<<合并同类项/combining like terms>>: $3x^{2} + 2x^{2} = 5x^{2}$'
+    - 'Distributive law (from primary school): $3 \times (2 + 4) = 3 \times 2 + 3 \times 4 = 18$'
+    - 'Basic concept of powers: $a^{3} = a \cdot a \cdot a$; base, exponent, power'
+  canSolve:
+    - '计算 $(3x^{2} + 2x) + (x^{2} - x - 5)$'
+    - '化简 $2(3a - b) - 3(a + 2b)$（用分配律展开再合并）'
+    - '判断 $5x^{2}y$ 的系数和次数'
+  canSolveEn:
+    - 'Compute $(3x^{2} + 2x) + (x^{2} - x - 5)$'
+    - 'Simplify $2(3a - b) - 3(a + 2b)$ (expand with distributive law then combine like terms)'
+    - 'Identify the coefficient and degree of $5x^{2}y$'
+  cannotSolve:
+    - '$a^{3} \cdot a^{2}$ 等于什么？（同底数幂相乘）'
+    - '$(2x)^{3}$ 等于什么？（积的乘方）'
+    - '$(x+3)(x-3)$ 怎么快速计算？（平方差公式）'
+    - '$(a+b)^{2}$ 是不是等于 $a^{2}+b^{2}$？（完全平方公式）'
+    - '$x^{5} \div x^{2}$ 等于什么？（同底数幂相除）'
+  cannotSolveEn:
+    - 'What is $a^{3} \cdot a^{2}$? (multiplying powers with the same base)'
+    - 'What is $(2x)^{3}$? (power of a product)'
+    - 'How do you quickly compute $(x+3)(x-3)$? (difference of squares formula)'
+    - 'Does $(a+b)^{2}$ equal $a^{2}+b^{2}$? (perfect square trinomial formula)'
+    - 'What is $x^{5} \div x^{2}$? (dividing powers with the same base)'
+  conclusion: |
+    这节课我们要回答以上所有问题，并且你会发现：整式的乘除运算其实都建立在**幂的运算法则**之上，只需要理解几条核心规律，就能处理各种复杂的计算！
+  conclusionEn: |
+    This chapter answers all of the questions above. You will discover that multiplication and division of polynomials are all built on **the rules of exponents** — master a few core rules and you can handle all sorts of complex calculations!
+
+concepts:
+  - id: power-multiplication
+    title: <<同底数幂/powers with the same base>>的乘法
+    titleEn: Multiplication of <<同底数幂/powers with the same base>>
+    hasVisualization: false
+    content: |
+      **法则：** $a^{m} \cdot a^{n} = a^{m+n}$（底数相同，指数相加）
+
+      **为什么是这样？** 展开来看就清楚了：
+      $$a^{3} \cdot a^{2} = \underbrace{(a \cdot a \cdot a)}_{3\text{个}} \cdot \underbrace{(a \cdot a)}_{2\text{个}} = \underbrace{a \cdot a \cdot a \cdot a \cdot a}_{3+2=5\text{个}} = a^{5}$$
+
+      关键：**底数必须相同**，才能把指数相加！$2^{3} \cdot 3^{2}$ **不能**合并为 $6^{5}$，因为底数不同。
+
+      **推广到多个因数：** $a^{m} \cdot a^{n} \cdot a^{k} = a^{m+n+k}$
+
+      **特殊情形：**
+      - $a^{1} = a$（指数为 $1$ 时通常省略不写）
+      - $a^{0} = 1$（任意非零实数的零次方等于 $1$，$a \neq 0$）
+    contentEn: |
+      **Rule:** $a^{m} \cdot a^{n} = a^{m+n}$ (same base, add exponents)
+
+      **Why does this work?** Expanding makes it clear:
+      $$a^{3} \cdot a^{2} = \underbrace{(a \cdot a \cdot a)}_{3} \cdot \underbrace{(a \cdot a)}_{2} = \underbrace{a \cdot a \cdot a \cdot a \cdot a}_{3+2=5} = a^{5}$$
+
+      Key point: the **base must be the same** before you can add the exponents! $2^{3} \cdot 3^{2}$ **cannot** be written as $6^{5}$, because the bases differ.
+
+      **Extended to multiple factors:** $a^{m} \cdot a^{n} \cdot a^{k} = a^{m+n+k}$
+
+      **Special cases:**
+      - $a^{1} = a$ (exponent $1$ is usually omitted)
+      - $a^{0} = 1$ (any non-zero real number to the power zero equals $1$, $a \neq 0$)
+    examples:
+      - '$x^{4} \cdot x^{3} = x^{4+3} = x^{7}$'
+      - '$2^{3} \cdot 2^{4} = 2^{3+4} = 2^{7} = 128$'
+      - '$a^{2} \cdot a \cdot a^{3} = a^{2+1+3} = a^{6}$'
+      - '$3x^{2} \cdot 2x^{3} = (3 \cdot 2)(x^{2} \cdot x^{3}) = 6x^{5}$（系数相乘，指数相加）'
+    examplesEn:
+      - '$x^{4} \cdot x^{3} = x^{4+3} = x^{7}$'
+      - '$2^{3} \cdot 2^{4} = 2^{3+4} = 2^{7} = 128$'
+      - '$a^{2} \cdot a \cdot a^{3} = a^{2+1+3} = a^{6}$'
+      - '$3x^{2} \cdot 2x^{3} = (3 \cdot 2)(x^{2} \cdot x^{3}) = 6x^{5}$ (multiply coefficients, add exponents)'
+    notes:
+      - '底数相同才能用此法则；$x^{3} \cdot y^{2}$ 不能合并'
+      - '注意区分：$x^{3} \cdot x^{2} = x^{5}$（乘法，指数相加），而 $(x^{3})^{2} = x^{6}$（乘方，指数相乘）'
+      - '数字底数一定要先算清楚：$(-2)^{3} \cdot (-2)^{2} = (-2)^{5} = -32$'
+    notesEn:
+      - 'This rule only works when the bases are the same; $x^{3} \cdot y^{2}$ cannot be combined'
+      - 'Distinguish: $x^{3} \cdot x^{2} = x^{5}$ (multiplication, add exponents) vs $(x^{3})^{2} = x^{6}$ (raising to a power, multiply exponents)'
+      - 'Be careful with numeric bases: $(-2)^{3} \cdot (-2)^{2} = (-2)^{5} = -32$'
+
+  - id: power-of-power
+    title: <<幂的乘方/power of a power>>与<<积的乘方/power of a product>>
+    titleEn: <<幂的乘方/power of a power>> and <<积的乘方/power of a product>>
+    hasVisualization: false
+    content: |
+      **幂的乘方法则：** $(a^{m})^{n} = a^{mn}$（把幂再次乘方，指数相乘）
+
+      **推导：**
+      $$(a^{m})^{n} = \underbrace{a^{m} \cdot a^{m} \cdots a^{m}}_{n\text{个}} = a^{\underbrace{m+m+\cdots+m}_{n\text{个}}} = a^{mn}$$
+
+      **积的乘方法则：** $(ab)^{n} = a^{n} b^{n}$（积的乘方等于每个因数分别乘方）
+
+      **推导：**
+      $$(ab)^{n} = \underbrace{ab \cdot ab \cdots ab}_{n\text{个}} = \underbrace{a \cdot a \cdots a}_{n\text{个}} \cdot \underbrace{b \cdot b \cdots b}_{n\text{个}} = a^{n} b^{n}$$
+
+      **综合运用：** $(2x^{2})^{3} = 2^{3} \cdot (x^{2})^{3} = 8x^{6}$
+    contentEn: |
+      **Power of a power rule:** $(a^{m})^{n} = a^{mn}$ (raise a power to another power — multiply the exponents)
+
+      **Derivation:**
+      $$(a^{m})^{n} = \underbrace{a^{m} \cdot a^{m} \cdots a^{m}}_{n} = a^{\underbrace{m+m+\cdots+m}_{n}} = a^{mn}$$
+
+      **Power of a product rule:** $(ab)^{n} = a^{n} b^{n}$ (the power of a product equals the product of each factor raised to that power)
+
+      **Derivation:**
+      $$(ab)^{n} = \underbrace{ab \cdot ab \cdots ab}_{n} = \underbrace{a \cdot a \cdots a}_{n} \cdot \underbrace{b \cdot b \cdots b}_{n} = a^{n} b^{n}$$
+
+      **Combined use:** $(2x^{2})^{3} = 2^{3} \cdot (x^{2})^{3} = 8x^{6}$
+    examples:
+      - '$(x^{3})^{4} = x^{12}$'
+      - '$(2^{3})^{2} = 2^{6} = 64$'
+      - '$(3a)^{2} = 3^{2} \cdot a^{2} = 9a^{2}$'
+      - '$(-2xy^{2})^{3} = (-2)^{3} \cdot x^{3} \cdot (y^{2})^{3} = -8x^{3}y^{6}$'
+    examplesEn:
+      - '$(x^{3})^{4} = x^{12}$'
+      - '$(2^{3})^{2} = 2^{6} = 64$'
+      - '$(3a)^{2} = 3^{2} \cdot a^{2} = 9a^{2}$'
+      - '$(-2xy^{2})^{3} = (-2)^{3} \cdot x^{3} \cdot (y^{2})^{3} = -8x^{3}y^{6}$'
+    notes:
+      - '易错：$(a^{3})^{2} = a^{6}$（指数相乘），不要写成 $a^{5}$（那是 $a^{3} \cdot a^{2}$ 的结果）'
+      - '负数底数要注意符号：$(-a)^{2} = a^{2}$，$(-a)^{3} = -a^{3}$'
+      - '积的乘方要**每个因数都乘方**：$(2x)^{3} = 8x^{3}$，不是 $2x^{3}$'
+    notesEn:
+      - 'Common error: $(a^{3})^{2} = a^{6}$ (multiply exponents), not $a^{5}$ (that would be $a^{3} \cdot a^{2}$)'
+      - 'Watch the sign with negative bases: $(-a)^{2} = a^{2}$, $(-a)^{3} = -a^{3}$'
+      - 'The power of a product means **every factor is raised to that power**: $(2x)^{3} = 8x^{3}$, not $2x^{3}$'
+
+  - id: polynomial-multiplication
+    title: 整式的乘法——单项式乘以多项式
+    titleEn: Polynomial Multiplication — Monomial Times Polynomial
+    hasVisualization: false
+    content: |
+      **法则：** 单项式与多项式相乘，就是用**分配律**把单项式与多项式的**每一项**相乘，再把各项的积相加。
+
+      $$m(a + b + c) = ma + mb + mc$$
+
+      这本质上是小学就学过的**乘法分配律**的扩展——只是每一项现在可能包含字母和指数。
+
+      **运算要点：**
+      1. 单项式的系数与各项系数相乘（注意正负号）
+      2. 单项式的字母和指数与各项的字母和指数相乘（同底数幂相加指数）
+      3. 不要遗漏任何一项
+    contentEn: |
+      **Rule:** Multiplying a monomial by a polynomial means using the **distributive law** to multiply the monomial by **every term** of the polynomial, then adding the products.
+
+      $$m(a + b + c) = ma + mb + mc$$
+
+      This is an extension of the **distributive law** you learned in primary school — it's just that each term may now contain letters and exponents.
+
+      **Key steps:**
+      1. Multiply the coefficient of the monomial by each term's coefficient (watch the signs)
+      2. Multiply the letters and exponents of the monomial with each term's letters and exponents (add exponents for same-base powers)
+      3. Do not omit any term
+    examples:
+      - '$3x(x^{2} - 2x + 1) = 3x \cdot x^{2} + 3x \cdot (-2x) + 3x \cdot 1 = 3x^{3} - 6x^{2} + 3x$'
+      - '$-2a^{2}(3a - b) = -2a^{2} \cdot 3a + (-2a^{2}) \cdot (-b) = -6a^{3} + 2a^{2}b$'
+      - '$\frac{1}{2}x^{2}(4x^{2} - 6x + 2) = 2x^{4} - 3x^{3} + x^{2}$'
+      - '$x^{n}(x^{2} + x + 1) = x^{n+2} + x^{n+1} + x^{n}$（字母指数的推广）'
+    examplesEn:
+      - '$3x(x^{2} - 2x + 1) = 3x \cdot x^{2} + 3x \cdot (-2x) + 3x \cdot 1 = 3x^{3} - 6x^{2} + 3x$'
+      - '$-2a^{2}(3a - b) = -2a^{2} \cdot 3a + (-2a^{2}) \cdot (-b) = -6a^{3} + 2a^{2}b$'
+      - '$\frac{1}{2}x^{2}(4x^{2} - 6x + 2) = 2x^{4} - 3x^{3} + x^{2}$'
+      - '$x^{n}(x^{2} + x + 1) = x^{n+2} + x^{n+1} + x^{n}$ (generalising with literal exponents)'
+    notes:
+      - '一定要乘到多项式的**每一项**，不能漏项'
+      - '符号（正负号）是最容易出错的地方：负号的单项式乘以负号的项，结果为正'
+      - '结果一般按降幂（次数由高到低）排列'
+    notesEn:
+      - 'Make sure to multiply **every term** of the polynomial — do not miss any'
+      - 'Signs are the easiest source of errors: a negative monomial times a negative term gives a positive result'
+      - 'Results are usually arranged in descending order of degree'
+
+  - id: poly-poly-multiplication
+    title: 多项式乘以多项式（FOIL 方法）
+    titleEn: Polynomial Times Polynomial (FOIL Method)
+    hasVisualization: false
+    content: |
+      **法则：** 多项式与多项式相乘，要用第一个多项式的**每一项**分别乘以第二个多项式的**每一项**，再把所有的积加起来，最后合并同类项。
+
+      $$(a + b)(c + d) = ac + ad + bc + bd$$
+
+      **FOIL 记忆法**（针对两个二项式）：
+      - **F**irst（首）：$a \times c$
+      - **O**uter（外）：$a \times d$
+      - **I**nner（内）：$b \times c$
+      - **L**ast（末）：$b \times d$
+
+      结果共有 $m \times n$ 项（第一个多项式 $m$ 项，第二个 $n$ 项），合并同类项后可能减少。
+
+      **三项式 × 二项式示例：**
+      $$(x^{2} + x + 1)(x - 1) = x^{3} - x^{2} + x^{2} - x + x - 1 = x^{3} - 1$$
+    contentEn: |
+      **Rule:** Multiply every term in the first polynomial by every term in the second polynomial, add all the products, then combine like terms.
+
+      $$(a + b)(c + d) = ac + ad + bc + bd$$
+
+      **FOIL mnemonic** (for two binomials):
+      - **F**irst: $a \times c$
+      - **O**uter: $a \times d$
+      - **I**nner: $b \times c$
+      - **L**ast: $b \times d$
+
+      There are $m \times n$ terms before combining (first polynomial has $m$ terms, second has $n$); combining like terms may reduce the count.
+
+      **Trinomial × binomial example:**
+      $$(x^{2} + x + 1)(x - 1) = x^{3} - x^{2} + x^{2} - x + x - 1 = x^{3} - 1$$
+    examples:
+      - '$(x + 2)(x + 3) = x^{2} + 3x + 2x + 6 = x^{2} + 5x + 6$'
+      - '$(2a - 1)(3a + 4) = 6a^{2} + 8a - 3a - 4 = 6a^{2} + 5a - 4$'
+      - '$(x + y)(x - y) = x^{2} - xy + xy - y^{2} = x^{2} - y^{2}$（这就是<<平方差公式/difference of squares formula>>的来源！）'
+      - '$(x + 1)(x^{2} - x + 1) = x^{3} - x^{2} + x + x^{2} - x + 1 = x^{3} + 1$'
+    examplesEn:
+      - '$(x + 2)(x + 3) = x^{2} + 3x + 2x + 6 = x^{2} + 5x + 6$'
+      - '$(2a - 1)(3a + 4) = 6a^{2} + 8a - 3a - 4 = 6a^{2} + 5a - 4$'
+      - '$(x + y)(x - y) = x^{2} - xy + xy - y^{2} = x^{2} - y^{2}$ (this is where the <<平方差公式/difference of squares formula>> comes from!)'
+      - '$(x + 1)(x^{2} - x + 1) = x^{3} - x^{2} + x + x^{2} - x + 1 = x^{3} + 1$'
+    notes:
+      - '每一项都要与对方的每一项相乘，共 $m \times n$ 次——不能少乘任何一对'
+      - '展开后及时合并同类项，保持结果整洁'
+      - '当两个多项式相同时（即自乘），就得到了<<完全平方公式/perfect square trinomial formula>>'
+    notesEn:
+      - 'Every term must be multiplied by every term on the other side — $m \times n$ multiplications in total, none can be skipped'
+      - 'Combine like terms promptly after expanding to keep the result tidy'
+      - 'When both polynomials are the same (i.e., squaring), you get the <<完全平方公式/perfect square trinomial formula>>'
+
+  - id: difference-of-squares
+    title: <<平方差公式/difference of squares formula>>
+    titleEn: <<平方差公式/difference of squares formula>>
+    hasVisualization: false
+    content: |
+      **公式：** $(a + b)(a - b) = a^{2} - b^{2}$
+
+      **为什么没有中间项？** 展开来看：
+      $$(a + b)(a - b) = a^{2} - ab + ab - b^{2} = a^{2} - b^{2}$$
+      中间的 $-ab$ 和 $+ab$ 正好抵消，所以结果中没有 $ab$ 项！
+
+      **几何直观：**
+      大正方形 $a \times a$ 挖去小正方形 $b \times b$ 的面积差，恰好等于两个长方形 $a \times (a-b)$ 和 $b \times (a-b)$ 的面积之和：
+      $$a^{2} - b^{2} = (a+b)(a-b)$$
+
+      **识别特征：** 两项乘积，一个是"和"$(a+b)$，另一个是"差"$(a-b)$，字母部分完全对应。
+
+      **巧算应用：**
+      - $99 \times 101 = (100-1)(100+1) = 100^{2} - 1 = 9999$
+      - $39 \times 41 = (40-1)(40+1) = 40^{2} - 1 = 1599$
+      - $998 \times 1002 = (1000-2)(1000+2) = 1000^{2} - 4 = 999996$
+    contentEn: |
+      **Formula:** $(a + b)(a - b) = a^{2} - b^{2}$
+
+      **Why is there no middle term?** Expanding shows:
+      $$(a + b)(a - b) = a^{2} - ab + ab - b^{2} = a^{2} - b^{2}$$
+      The $-ab$ and $+ab$ cancel each other out, so there is no $ab$ term in the result!
+
+      **Geometric intuition:**
+      The area difference between a big square $a \times a$ and a small square $b \times b$ equals two rectangles of size $a \times (a-b)$ and $b \times (a-b)$:
+      $$a^{2} - b^{2} = (a+b)(a-b)$$
+
+      **Recognition pattern:** A product of two terms — one is a "sum" $(a+b)$ and the other is a "difference" $(a-b)$, with exactly matching letter parts.
+
+      **Quick-calculation applications:**
+      - $99 \times 101 = (100-1)(100+1) = 100^{2} - 1 = 9999$
+      - $39 \times 41 = (40-1)(40+1) = 40^{2} - 1 = 1599$
+      - $998 \times 1002 = (1000-2)(1000+2) = 1000^{2} - 4 = 999996$
+    examples:
+      - '$(x + 5)(x - 5) = x^{2} - 25$'
+      - '$(3a + 2b)(3a - 2b) = (3a)^{2} - (2b)^{2} = 9a^{2} - 4b^{2}$'
+      - '$(x^{2} + 1)(x^{2} - 1) = x^{4} - 1$'
+      - '$(\sqrt{3} + 1)(\sqrt{3} - 1) = (\sqrt{3})^{2} - 1^{2} = 3 - 1 = 2$（预告：将来学无理数时很有用）'
+    examplesEn:
+      - '$(x + 5)(x - 5) = x^{2} - 25$'
+      - '$(3a + 2b)(3a - 2b) = (3a)^{2} - (2b)^{2} = 9a^{2} - 4b^{2}$'
+      - '$(x^{2} + 1)(x^{2} - 1) = x^{4} - 1$'
+      - '$(\sqrt{3} + 1)(\sqrt{3} - 1) = (\sqrt{3})^{2} - 1^{2} = 3 - 1 = 2$ (preview: very useful when we study irrational numbers later)'
+    notes:
+      - '公式要求 $a$、$b$ 的字母部分必须完全相同，只有符号不同'
+      - '$(a + b)(a - b)$ 不是 $(a+b)^{2}$，不要混淆'
+      - '结果只有两项：$a^{2}$ 和 $-b^{2}$，中间绝对没有 $ab$ 项'
+    notesEn:
+      - 'The formula requires the letter parts of $a$ and $b$ to be exactly the same, with only the sign differing'
+      - '$(a + b)(a - b)$ is not $(a+b)^{2}$ — do not confuse them'
+      - 'The result has only two terms: $a^{2}$ and $-b^{2}$; there is absolutely no $ab$ term'
+
+  - id: perfect-square
+    title: <<完全平方公式/perfect square trinomial formula>>
+    titleEn: <<完全平方公式/perfect square trinomial formula>>
+    hasVisualization: false
+    content: |
+      **公式（两个版本）：**
+      $$(a + b)^{2} = a^{2} + 2ab + b^{2}$$
+      $$(a - b)^{2} = a^{2} - 2ab + b^{2}$$
+
+      **几何直观（以 $(a+b)^{2}$ 为例）：**
+      把边长为 $(a+b)$ 的大正方形剪成四块：
+      - 左上角：$a \times a = a^{2}$
+      - 右上角：$a \times b = ab$
+      - 左下角：$b \times a = ab$
+      - 右下角：$b \times b = b^{2}$
+      合计：$a^{2} + ab + ab + b^{2} = a^{2} + 2ab + b^{2}$
+
+      **最常见的错误：** $(a + b)^{2} \neq a^{2} + b^{2}$——**漏掉了中间的 $2ab$！**
+
+      用具体数字验证：$(3 + 4)^{2} = 49$，但 $3^{2} + 4^{2} = 25 \neq 49$。
+
+      **记忆口诀：** 首平方，尾平方，首尾乘积的两倍放中间。
+    contentEn: |
+      **Formula (two versions):**
+      $$(a + b)^{2} = a^{2} + 2ab + b^{2}$$
+      $$(a - b)^{2} = a^{2} - 2ab + b^{2}$$
+
+      **Geometric intuition (using $(a+b)^{2}$ as an example):**
+      Cut the large square with side $(a+b)$ into four pieces:
+      - Top-left: $a \times a = a^{2}$
+      - Top-right: $a \times b = ab$
+      - Bottom-left: $b \times a = ab$
+      - Bottom-right: $b \times b = b^{2}$
+      Total: $a^{2} + ab + ab + b^{2} = a^{2} + 2ab + b^{2}$
+
+      **Most common error:** $(a + b)^{2} \neq a^{2} + b^{2}$ — **the middle term $2ab$ is missing!**
+
+      Verify with numbers: $(3 + 4)^{2} = 49$, but $3^{2} + 4^{2} = 25 \neq 49$.
+
+      **Memory rhyme:** Square the first, square the last, put twice the product in the middle.
+    examples:
+      - '$(x + 3)^{2} = x^{2} + 6x + 9$'
+      - '$(2a - 5)^{2} = (2a)^{2} - 2 \cdot 2a \cdot 5 + 5^{2} = 4a^{2} - 20a + 25$'
+      - '$(x + y + z)^{2}$ 可用 $((x+y)+z)^{2}$ 分步处理（较复杂，了解即可）'
+      - '$1001^{2} = (1000 + 1)^{2} = 1000000 + 2000 + 1 = 1002001$（巧算）'
+    examplesEn:
+      - '$(x + 3)^{2} = x^{2} + 6x + 9$'
+      - '$(2a - 5)^{2} = (2a)^{2} - 2 \cdot 2a \cdot 5 + 5^{2} = 4a^{2} - 20a + 25$'
+      - '$(x + y + z)^{2}$ can be handled step by step as $((x+y)+z)^{2}$ (more complex — just be aware)'
+      - '$1001^{2} = (1000 + 1)^{2} = 1000000 + 2000 + 1 = 1002001$ (quick calculation)'
+    notes:
+      - '**最大陷阱：** 永远不要忘记中间的 $2ab$ 项！每次使用此公式，把三项都写出来'
+      - '$(a - b)^{2}$ 中间项是 $-2ab$，注意符号'
+      - '$(a - b)^{2}$ 结果恒 $\geq 0$（平方不为负）'
+      - '区分：$(a+b)^{2} = a^{2}+2ab+b^{2}$（三项），$(a+b)(a-b) = a^{2}-b^{2}$（两项）'
+    notesEn:
+      - '**Biggest trap:** Never forget the middle term $2ab$! Always write all three terms when using this formula'
+      - 'In $(a - b)^{2}$ the middle term is $-2ab$ — watch the sign'
+      - '$(a - b)^{2}$ is always $\geq 0$ (a square is never negative)'
+      - 'Distinguish: $(a+b)^{2} = a^{2}+2ab+b^{2}$ (three terms) vs $(a+b)(a-b) = a^{2}-b^{2}$ (two terms)'
+
+  - id: power-division
+    title: <<同底数幂/powers with the same base>>的除法与整式除法
+    titleEn: Division of <<同底数幂/powers with the same base>> and Polynomial Division
+    hasVisualization: false
+    content: |
+      **同底数幂的除法法则（$m > n$，$a \neq 0$）：**
+      $$a^{m} \div a^{n} = a^{m-n}$$
+
+      **为什么是指数相减？** 展开来看：
+      $$\frac{a^{5}}{a^{2}} = \frac{a \cdot a \cdot a \cdot a \cdot a}{a \cdot a} = a \cdot a \cdot a = a^{3} = a^{5-2}$$
+      分子分母约去相同的因数，剩下 $m - n$ 个 $a$。
+
+      **零次幂的由来：** $a^{n} \div a^{n} = a^{n-n} = a^{0}$，而任何非零数除以自身等于 $1$，所以 $a^{0} = 1$（$a \neq 0$）。
+
+      **单项式除以单项式：**
+      系数相除，同底数幂用除法法则，即：
+      $$\frac{6x^{5}y^{3}}{3x^{2}y} = \frac{6}{3} \cdot x^{5-2} \cdot y^{3-1} = 2x^{3}y^{2}$$
+
+      **多项式除以单项式：**
+      把多项式的**每一项**分别除以单项式，再把结果相加：
+      $$(6x^{3} - 4x^{2} + 2x) \div 2x = 3x^{2} - 2x + 1$$
+    contentEn: |
+      **Division rule for powers with the same base ($m > n$, $a \neq 0$):**
+      $$a^{m} \div a^{n} = a^{m-n}$$
+
+      **Why subtract the exponents?** Expanding shows:
+      $$\frac{a^{5}}{a^{2}} = \frac{a \cdot a \cdot a \cdot a \cdot a}{a \cdot a} = a \cdot a \cdot a = a^{3} = a^{5-2}$$
+      The common factors in numerator and denominator cancel, leaving $m - n$ copies of $a$.
+
+      **Origin of zero exponent:** $a^{n} \div a^{n} = a^{n-n} = a^{0}$, and any non-zero number divided by itself equals $1$, so $a^{0} = 1$ ($a \neq 0$).
+
+      **Monomial divided by monomial:**
+      Divide the coefficients and apply the division rule to same-base powers:
+      $$\frac{6x^{5}y^{3}}{3x^{2}y} = \frac{6}{3} \cdot x^{5-2} \cdot y^{3-1} = 2x^{3}y^{2}$$
+
+      **Polynomial divided by monomial:**
+      Divide **each term** of the polynomial by the monomial, then add the results:
+      $$(6x^{3} - 4x^{2} + 2x) \div 2x = 3x^{2} - 2x + 1$$
+    examples:
+      - '$x^{7} \div x^{3} = x^{4}$'
+      - '$(-3)^{5} \div (-3)^{3} = (-3)^{2} = 9$'
+      - '$12a^{4}b^{3} \div (-4a^{2}b) = -3a^{2}b^{2}$'
+      - '$(9x^{4} - 6x^{3} + 3x^{2}) \div 3x^{2} = 3x^{2} - 2x + 1$'
+    examplesEn:
+      - '$x^{7} \div x^{3} = x^{4}$'
+      - '$(-3)^{5} \div (-3)^{3} = (-3)^{2} = 9$'
+      - '$12a^{4}b^{3} \div (-4a^{2}b) = -3a^{2}b^{2}$'
+      - '$(9x^{4} - 6x^{3} + 3x^{2}) \div 3x^{2} = 3x^{2} - 2x + 1$'
+    notes:
+      - '除法法则要求 $m > n$（初中阶段），否则会出现负指数（高中内容）'
+      - '除数不能为零：$a \neq 0$'
+      - '多项式除以单项式时，**每一项**都要除，不能只除第一项'
+      - '与乘法相对比：乘法指数相加，除法指数相减'
+    notesEn:
+      - 'The division rule requires $m > n$ (at middle-school level); otherwise you get negative exponents (a high-school topic)'
+      - 'The divisor must not be zero: $a \neq 0$'
+      - 'When dividing a polynomial by a monomial, **every term** must be divided — not just the first'
+      - 'Contrast with multiplication: multiplication adds exponents, division subtracts them'
+
+realLife:
+  - category: 面积与几何
+    categoryEn: Area and Geometry
+    positive: '边长为 $(a + 3)$ 的正方形面积为 $(a + 3)^{2} = a^{2} + 6a + 9$'
+    positiveEn: 'A square with side $(a + 3)$ has area $(a + 3)^{2} = a^{2} + 6a + 9$'
+    negative: '两个同心圆，外圆半径 $R$，内圆半径 $r$，圆环面积 $= \pi(R+r)(R-r)$（平方差！）'
+    negativeEn: 'Two concentric circles with radii $R$ and $r$: ring area $= \pi(R+r)(R-r)$ (difference of squares!)'
+  - category: 快算技巧
+    categoryEn: Mental arithmetic tricks
+    positive: '$101 \times 99 = (100+1)(100-1) = 10000 - 1 = 9999$，比直接乘法快得多'
+    positiveEn: '$101 \times 99 = (100+1)(100-1) = 10000 - 1 = 9999$ — much faster than direct multiplication'
+    negative: '$205^{2} = (200+5)^{2} = 40000 + 2000 + 25 = 42025$，完全平方公式帮助心算大数平方'
+    negativeEn: '$205^{2} = (200+5)^{2} = 40000 + 2000 + 25 = 42025$ — the perfect square formula enables mental calculation of large squares'
+  - category: 科学计数与工程
+    categoryEn: Scientific notation and engineering
+    positive: '细菌每小时翻倍：$1$ 个细菌经过 $n$ 小时后变为 $2^{n}$ 个；$2^{3} \cdot 2^{4} = 2^{7}$ 小时可以计算分段生长'
+    positiveEn: 'Bacteria double every hour: after $n$ hours there are $2^{n}$ bacteria; $2^{3} \cdot 2^{4} = 2^{7}$ computes segmented growth'
+    negative: '计算机处理器速度常以 $2^{n}$ Hz 表示，$(2^{10})^{2} = 2^{20}$ 描述两层级的乘方增长'
+    negativeEn: 'Processor speeds are often expressed as $2^{n}$ Hz; $(2^{10})^{2} = 2^{20}$ describes two-level exponential growth'
+
+examples:
+  - id: ex1
+    title: 幂的运算法则综合计算
+    titleEn: Combined computation using power rules
+    question: '计算：$(1)\ a^{3} \cdot a^{2} \cdot a$；$(2)\ (-2x^{2})^{3}$；$(3)\ (x^{3})^{2} \cdot x^{4}$'
+    questionEn: 'Compute: $(1)\ a^{3} \cdot a^{2} \cdot a$; $(2)\ (-2x^{2})^{3}$; $(3)\ (x^{3})^{2} \cdot x^{4}$'
+    type: computation
+    solution:
+      steps:
+        - '$(1)\ a^{3} \cdot a^{2} \cdot a = a^{3+2+1} = a^{6}$（同底数幂相乘，指数相加）'
+        - '$(2)\ (-2x^{2})^{3} = (-2)^{3} \cdot (x^{2})^{3} = -8x^{6}$（积的乘方 + 幂的乘方）'
+        - '$(3)\ (x^{3})^{2} \cdot x^{4} = x^{6} \cdot x^{4} = x^{10}$（先算幂的乘方，再算同底数幂相乘）'
+    solutionEn:
+      steps:
+        - '$(1)\ a^{3} \cdot a^{2} \cdot a = a^{3+2+1} = a^{6}$ (same-base multiplication — add exponents)'
+        - '$(2)\ (-2x^{2})^{3} = (-2)^{3} \cdot (x^{2})^{3} = -8x^{6}$ (power of a product + power of a power)'
+        - '$(3)\ (x^{3})^{2} \cdot x^{4} = x^{6} \cdot x^{4} = x^{10}$ (first apply power of a power, then same-base multiplication)'
+    answer: '$(1)\ a^{6}$；$(2)\ -8x^{6}$；$(3)\ x^{10}$'
+    answerEn: '$(1)\ a^{6}$; $(2)\ -8x^{6}$; $(3)\ x^{10}$'
+
+  - id: ex2
+    title: 多项式乘法展开
+    titleEn: Expanding polynomial products
+    question: '展开计算：$(2x - 3)(3x^{2} + x - 2)$'
+    questionEn: 'Expand: $(2x - 3)(3x^{2} + x - 2)$'
+    type: computation
+    solution:
+      steps:
+        - '用第一个多项式的每一项乘以第二个多项式的每一项：'
+        - '$2x \cdot 3x^{2} = 6x^{3}$'
+        - '$2x \cdot x = 2x^{2}$'
+        - '$2x \cdot (-2) = -4x$'
+        - '$(-3) \cdot 3x^{2} = -9x^{2}$'
+        - '$(-3) \cdot x = -3x$'
+        - '$(-3) \cdot (-2) = 6$'
+        - '合并同类项：$6x^{3} + (2x^{2} - 9x^{2}) + (-4x - 3x) + 6$'
+        - '$= 6x^{3} - 7x^{2} - 7x + 6$'
+    solutionEn:
+      steps:
+        - 'Multiply every term in the first polynomial by every term in the second:'
+        - '$2x \cdot 3x^{2} = 6x^{3}$'
+        - '$2x \cdot x = 2x^{2}$'
+        - '$2x \cdot (-2) = -4x$'
+        - '$(-3) \cdot 3x^{2} = -9x^{2}$'
+        - '$(-3) \cdot x = -3x$'
+        - '$(-3) \cdot (-2) = 6$'
+        - 'Combine like terms: $6x^{3} + (2x^{2} - 9x^{2}) + (-4x - 3x) + 6$'
+        - '$= 6x^{3} - 7x^{2} - 7x + 6$'
+    answer: '$6x^{3} - 7x^{2} - 7x + 6$'
+    answerEn: '$6x^{3} - 7x^{2} - 7x + 6$'
+
+  - id: ex3
+    title: 用<<平方差公式/difference of squares formula>>巧算
+    titleEn: Quick calculation using the <<平方差公式/difference of squares formula>>
+    question: '用<<平方差公式/difference of squares formula>>计算：$(1)\ 39 \times 41$；$(2)\ 995 \times 1005$'
+    questionEn: 'Use the <<平方差公式/difference of squares formula>> to compute: $(1)\ 39 \times 41$; $(2)\ 995 \times 1005$'
+    type: application
+    solution:
+      steps:
+        - '$(1)\ 39 \times 41 = (40 - 1)(40 + 1) = 40^{2} - 1^{2} = 1600 - 1 = 1599$'
+        - '$(2)\ 995 \times 1005 = (1000 - 5)(1000 + 5) = 1000^{2} - 5^{2} = 1000000 - 25 = 999975$'
+        - '关键：找到两个数的"平均数"作为 $a$，两个数与平均数的"距离"作为 $b$'
+    solutionEn:
+      steps:
+        - '$(1)\ 39 \times 41 = (40 - 1)(40 + 1) = 40^{2} - 1^{2} = 1600 - 1 = 1599$'
+        - '$(2)\ 995 \times 1005 = (1000 - 5)(1000 + 5) = 1000^{2} - 5^{2} = 1000000 - 25 = 999975$'
+        - 'Key: identify the average of the two numbers as $a$, and the distance from the average as $b$'
+    answer: '$(1)\ 1599$；$(2)\ 999975$'
+    answerEn: '$(1)\ 1599$; $(2)\ 999975$'
+
+  - id: ex4
+    title: <<完全平方公式/perfect square trinomial formula>>的应用与易错辨析
+    titleEn: Applying the <<完全平方公式/perfect square trinomial formula>> and spotting errors
+    question: '$(1)$ 展开 $(3x - 2y)^{2}$；$(2)$ 判断以下计算是否正确：$(a + 4)^{2} = a^{2} + 16$，并说明理由'
+    questionEn: '$(1)$ Expand $(3x - 2y)^{2}$; $(2)$ Determine whether the following is correct: $(a + 4)^{2} = a^{2} + 16$, and explain your reasoning'
+    type: mixed
+    solution:
+      steps:
+        - '$(1)$ 令 $A = 3x$，$B = 2y$，套用 $(A - B)^{2} = A^{2} - 2AB + B^{2}$：'
+        - '$(3x - 2y)^{2} = (3x)^{2} - 2 \cdot 3x \cdot 2y + (2y)^{2} = 9x^{2} - 12xy + 4y^{2}$'
+        - '$(2)$ **不正确。** $(a + 4)^{2} = a^{2} + 2 \cdot a \cdot 4 + 4^{2} = a^{2} + 8a + 16$'
+        - '错误原因：漏掉了中间的 $2ab$ 项。用 $a = 3$ 验算：$(3+4)^{2} = 49$，而 $3^{2}+16 = 25 \neq 49$。'
+    solutionEn:
+      steps:
+        - '$(1)$ Let $A = 3x$, $B = 2y$, apply $(A - B)^{2} = A^{2} - 2AB + B^{2}$:'
+        - '$(3x - 2y)^{2} = (3x)^{2} - 2 \cdot 3x \cdot 2y + (2y)^{2} = 9x^{2} - 12xy + 4y^{2}$'
+        - '$(2)$ **Incorrect.** $(a + 4)^{2} = a^{2} + 2 \cdot a \cdot 4 + 4^{2} = a^{2} + 8a + 16$'
+        - 'Reason: the middle term $2ab$ is missing. Check with $a = 3$: $(3+4)^{2} = 49$, but $3^{2}+16 = 25 \neq 49$.'
+    answer: '$(1)\ 9x^{2} - 12xy + 4y^{2}$；$(2)$ 不正确，正确结果是 $a^{2} + 8a + 16$'
+    answerEn: '$(1)\ 9x^{2} - 12xy + 4y^{2}$; $(2)$ Incorrect; the correct result is $a^{2} + 8a + 16$'
+
+  - id: ex5
+    title: 综合运用多个法则化简
+    titleEn: Simplification combining multiple rules
+    question: '化简：$(x + 2)^{2} - (x + 3)(x - 3)$'
+    questionEn: 'Simplify: $(x + 2)^{2} - (x + 3)(x - 3)$'
+    type: simplification
+    solution:
+      steps:
+        - '展开 $(x + 2)^{2} = x^{2} + 4x + 4$（完全平方公式）'
+        - '展开 $(x + 3)(x - 3) = x^{2} - 9$（平方差公式）'
+        - '相减：$(x^{2} + 4x + 4) - (x^{2} - 9)$'
+        - '$= x^{2} + 4x + 4 - x^{2} + 9$（去括号，注意括号前是减号）'
+        - '$= 4x + 13$'
+    solutionEn:
+      steps:
+        - 'Expand $(x + 2)^{2} = x^{2} + 4x + 4$ (perfect square formula)'
+        - 'Expand $(x + 3)(x - 3) = x^{2} - 9$ (difference of squares formula)'
+        - 'Subtract: $(x^{2} + 4x + 4) - (x^{2} - 9)$'
+        - '$= x^{2} + 4x + 4 - x^{2} + 9$ (remove parentheses — note the minus sign in front)'
+        - '$= 4x + 13$'
+    answer: '$4x + 13$'
+    answerEn: '$4x + 13$'
+
+  - id: ex6
+    title: 面积问题——用乘法公式建模
+    titleEn: Area problem — modelling with multiplication formulas
+    question: '一个正方形的边长为 $(a + 2)$ cm，从中剪去一个边长为 $2$ cm 的小正方形（角落处）。用公式表示剩余面积，并化简。'
+    questionEn: 'A square has side length $(a + 2)$ cm. A small square with side length $2$ cm is cut from one corner. Express the remaining area using a formula and simplify.'
+    type: application
+    solution:
+      steps:
+        - '大正方形面积 $= (a + 2)^{2} = a^{2} + 4a + 4$（完全平方公式）'
+        - '小正方形面积 $= 2^{2} = 4$'
+        - '剩余面积 $= (a + 2)^{2} - 4 = a^{2} + 4a + 4 - 4 = a^{2} + 4a$'
+        - '因式分解（预告）：$= a(a + 4)$'
+        - '验证：若 $a = 3$，大正方形边长为 $5$ cm，面积 $= 25$；剪去 $4$，剩余 $21 = 3 \times 7$，与公式 $a(a+4) = 3 \times 7 = 21$ 吻合。'
+    solutionEn:
+      steps:
+        - 'Area of large square $= (a + 2)^{2} = a^{2} + 4a + 4$ (perfect square formula)'
+        - 'Area of small square $= 2^{2} = 4$'
+        - 'Remaining area $= (a + 2)^{2} - 4 = a^{2} + 4a + 4 - 4 = a^{2} + 4a$'
+        - 'Factored form (preview): $= a(a + 4)$'
+        - 'Check: if $a = 3$, the large square has side $5$ cm and area $25$; remove $4$, leaving $21 = 3 \times 7$, matching $a(a+4) = 3 \times 7 = 21$.'
+    answer: '$a^{2} + 4a$ cm²'
+    answerEn: '$a^{2} + 4a$ cm²'
+
+exercises:
+  - id: q1
+    type: computation
+    question: '计算 $x^{5} \cdot x^{3}$'
+    questionEn: 'Compute $x^{5} \cdot x^{3}$'
+    answer: '$x^{8}$'
+    answerEn: '$x^{8}$'
+    explanation: '同底数幂相乘，指数相加：$5 + 3 = 8$'
+    explanationEn: 'Multiply powers with the same base — add the exponents: $5 + 3 = 8$'
+
+  - id: q2
+    type: computation
+    question: '计算 $(-3)^{2} \cdot (-3)^{3}$'
+    questionEn: 'Compute $(-3)^{2} \cdot (-3)^{3}$'
+    answer: '$(-3)^{5} = -243$'
+    answerEn: '$(-3)^{5} = -243$'
+    explanation: '同底数幂相乘：$(-3)^{2+3} = (-3)^{5} = -243$'
+    explanationEn: 'Same-base multiplication: $(-3)^{2+3} = (-3)^{5} = -243$'
+
+  - id: q3
+    type: computation
+    question: '计算 $(2a^{2})^{4}$'
+    questionEn: 'Compute $(2a^{2})^{4}$'
+    answer: '$16a^{8}$'
+    answerEn: '$16a^{8}$'
+    explanation: '积的乘方：$(2)^{4} \cdot (a^{2})^{4} = 16 \cdot a^{8} = 16a^{8}$'
+    explanationEn: 'Power of a product: $(2)^{4} \cdot (a^{2})^{4} = 16 \cdot a^{8} = 16a^{8}$'
+
+  - id: q4
+    type: computation
+    question: '展开：$2x(3x^{2} - x + 5)$'
+    questionEn: 'Expand: $2x(3x^{2} - x + 5)$'
+    answer: '$6x^{3} - 2x^{2} + 10x$'
+    answerEn: '$6x^{3} - 2x^{2} + 10x$'
+    explanation: '$2x \cdot 3x^{2} - 2x \cdot x + 2x \cdot 5 = 6x^{3} - 2x^{2} + 10x$'
+    explanationEn: '$2x \cdot 3x^{2} - 2x \cdot x + 2x \cdot 5 = 6x^{3} - 2x^{2} + 10x$'
+
+  - id: q5
+    type: computation
+    question: '展开：$(x + 4)(x - 7)$'
+    questionEn: 'Expand: $(x + 4)(x - 7)$'
+    answer: '$x^{2} - 3x - 28$'
+    answerEn: '$x^{2} - 3x - 28$'
+    explanation: '$x^{2} - 7x + 4x - 28 = x^{2} - 3x - 28$'
+    explanationEn: '$x^{2} - 7x + 4x - 28 = x^{2} - 3x - 28$'
+
+  - id: q6
+    type: fill-in
+    question: '用<<平方差公式/difference of squares formula>>填空：$98 \times 102 = (100 - \_\_)(100 + \_\_) = 100^{2} - \_\_ = \_\_$'
+    questionEn: 'Use the <<平方差公式/difference of squares formula>> to fill in the blanks: $98 \times 102 = (100 - \_\_)(100 + \_\_) = 100^{2} - \_\_ = \_\_$'
+    answer: '$2,\ 2,\ 4,\ 9996$'
+    answerEn: '$2,\ 2,\ 4,\ 9996$'
+    explanation: '$98 = 100 - 2$，$102 = 100 + 2$，所以 $98 \times 102 = 100^{2} - 2^{2} = 10000 - 4 = 9996$'
+    explanationEn: '$98 = 100 - 2$, $102 = 100 + 2$, so $98 \times 102 = 100^{2} - 2^{2} = 10000 - 4 = 9996$'
+
+  - id: q7
+    type: computation
+    question: '展开：$(5x + 3y)^{2}$'
+    questionEn: 'Expand: $(5x + 3y)^{2}$'
+    answer: '$25x^{2} + 30xy + 9y^{2}$'
+    answerEn: '$25x^{2} + 30xy + 9y^{2}$'
+    explanation: '$(5x)^{2} + 2 \cdot 5x \cdot 3y + (3y)^{2} = 25x^{2} + 30xy + 9y^{2}$'
+    explanationEn: '$(5x)^{2} + 2 \cdot 5x \cdot 3y + (3y)^{2} = 25x^{2} + 30xy + 9y^{2}$'
+
+  - id: q8
+    type: true-false
+    question: '判断：$(a + b)^{2} = a^{2} + b^{2}$（正确 / 错误？）'
+    questionEn: 'True or False: $(a + b)^{2} = a^{2} + b^{2}$'
+    answer: '错误'
+    answerEn: 'False'
+    explanation: '漏掉了中间项 $2ab$。正确公式：$(a + b)^{2} = a^{2} + 2ab + b^{2}$。反例：$a = 3, b = 4$：$(3+4)^{2} = 49 \neq 9 + 16 = 25$'
+    explanationEn: 'The middle term $2ab$ is missing. Correct formula: $(a + b)^{2} = a^{2} + 2ab + b^{2}$. Counterexample: $a = 3, b = 4$: $(3+4)^{2} = 49 \neq 9 + 16 = 25$'
+
+  - id: q9
+    type: computation
+    question: '计算 $16a^{5}b^{3} \div (-4a^{3}b)$'
+    questionEn: 'Compute $16a^{5}b^{3} \div (-4a^{3}b)$'
+    answer: '$-4a^{2}b^{2}$'
+    answerEn: '$-4a^{2}b^{2}$'
+    explanation: '$\frac{16}{-4} \cdot a^{5-3} \cdot b^{3-1} = -4a^{2}b^{2}$'
+    explanationEn: '$\frac{16}{-4} \cdot a^{5-3} \cdot b^{3-1} = -4a^{2}b^{2}$'
+
+  - id: q10
+    type: computation
+    question: '化简：$(3x^{4} - 9x^{3} + 6x^{2}) \div 3x^{2}$'
+    questionEn: 'Simplify: $(3x^{4} - 9x^{3} + 6x^{2}) \div 3x^{2}$'
+    answer: '$x^{2} - 3x + 2$'
+    answerEn: '$x^{2} - 3x + 2$'
+    explanation: '每项分别除以 $3x^{2}$：$x^{2} - 3x + 2$'
+    explanationEn: 'Divide each term by $3x^{2}$: $x^{2} - 3x + 2$'
+
+  - id: q11
+    type: simplification
+    question: '化简：$(x - 1)^{2} + (x + 1)^{2}$'
+    questionEn: 'Simplify: $(x - 1)^{2} + (x + 1)^{2}$'
+    answer: '$2x^{2} + 2$'
+    answerEn: '$2x^{2} + 2$'
+    explanation: '$(x^{2} - 2x + 1) + (x^{2} + 2x + 1) = 2x^{2} + 2$（中间项 $-2x$ 和 $+2x$ 抵消）'
+    explanationEn: '$(x^{2} - 2x + 1) + (x^{2} + 2x + 1) = 2x^{2} + 2$ (the middle terms $-2x$ and $+2x$ cancel)'
+
+  - id: q12
+    type: simplification
+    question: '化简：$(a + b)(a - b) - a(a - 2b)$'
+    questionEn: 'Simplify: $(a + b)(a - b) - a(a - 2b)$'
+    answer: '$2ab - b^{2}$'
+    answerEn: '$2ab - b^{2}$'
+    explanation: '$(a+b)(a-b) = a^{2} - b^{2}$；$a(a-2b) = a^{2} - 2ab$；相减：$(a^{2}-b^{2}) - (a^{2}-2ab) = a^{2} - b^{2} - a^{2} + 2ab = 2ab - b^{2}$'
+    explanationEn: '$(a+b)(a-b) = a^{2} - b^{2}$; $a(a-2b) = a^{2} - 2ab$; subtract: $(a^{2}-b^{2}) - (a^{2}-2ab) = a^{2} - b^{2} - a^{2} + 2ab = 2ab - b^{2}$'
+
+  - id: q13
+    type: application
+    question: '一块长为 $(2x + 1)$ m、宽为 $(2x - 1)$ m 的长方形土地，求它的面积（用乘法公式计算并化简）。'
+    questionEn: 'A rectangular plot has length $(2x + 1)$ m and width $(2x - 1)$ m. Find its area using a multiplication formula and simplify.'
+    answer: '$4x^{2} - 1$ m²'
+    answerEn: '$4x^{2} - 1$ m²'
+    explanation: '$(2x + 1)(2x - 1) = (2x)^{2} - 1^{2} = 4x^{2} - 1$（平方差公式）'
+    explanationEn: '$(2x + 1)(2x - 1) = (2x)^{2} - 1^{2} = 4x^{2} - 1$ (difference of squares formula)'
+
+  - id: q14
+    type: fill-in
+    question: |
+      找出下面计算中的错误并改正：
+      $(2x - 3)^{2} = 4x^{2} - 9$
+      错误在于：___，正确结果是___
+    questionEn: |
+      Find the error in the following calculation and correct it:
+      $(2x - 3)^{2} = 4x^{2} - 9$
+      The error is: ___, and the correct result is ___
+    answer: '漏掉了中间项 $2 \times 2x \times 3 = 12x$；正确结果：$4x^{2} - 12x + 9$'
+    answerEn: 'The middle term $2 \times 2x \times 3 = 12x$ is missing; correct result: $4x^{2} - 12x + 9$'
+    explanation: '误用了平方差公式。$(2x)^{2} - 3^{2} = 4x^{2} - 9$ 对应的是 $(2x + 3)(2x - 3)$，而不是 $(2x - 3)^{2}$。完全平方公式：$(2x-3)^{2} = 4x^{2} - 12x + 9$'
+    explanationEn: 'The difference of squares formula was incorrectly applied. $(2x)^{2} - 3^{2} = 4x^{2} - 9$ corresponds to $(2x + 3)(2x - 3)$, not $(2x - 3)^{2}$. Perfect square: $(2x-3)^{2} = 4x^{2} - 12x + 9$'
+
+  - id: q15
+    type: computation
+    question: '计算 $199 \times 201$（要求用乘法公式，不用笔算）'
+    questionEn: 'Compute $199 \times 201$ using a multiplication formula (no long multiplication allowed)'
+    answer: '$39999$'
+    answerEn: '$39999$'
+    explanation: '$199 \times 201 = (200 - 1)(200 + 1) = 200^{2} - 1 = 40000 - 1 = 39999$'
+    explanationEn: '$199 \times 201 = (200 - 1)(200 + 1) = 200^{2} - 1 = 40000 - 1 = 39999$'
+
+examPrep:
+  intro: |
+    以下 5 道题目是本章的综合提升练习，覆盖本章各个知识点的综合应用与易错环节。
+    建议先独立思考，再查看解析。
+  introEn: |
+    The following 5 problems are comprehensive challenge exercises for this chapter, covering integrated applications and common errors across all topics.
+    Try each problem independently before checking the solution.
+  problems:
+    - id: ep1
+      type: multiple-choice
+      question: |
+        下列计算中，正确的是（　　）
+        A. $a^{3} \cdot a^{3} = a^{9}$
+        B. $(a^{3})^{2} = a^{5}$
+        C. $(-a)^{4} = a^{4}$
+        D. $(2a)^{3} = 2a^{3}$
+      questionEn: |
+        Which of the following calculations is correct? (　　)
+        A. $a^{3} \cdot a^{3} = a^{9}$
+        B. $(a^{3})^{2} = a^{5}$
+        C. $(-a)^{4} = a^{4}$
+        D. $(2a)^{3} = 2a^{3}$
+      answer: C
+      answerEn: C
+      explanation: |
+        A 错：$a^{3} \cdot a^{3} = a^{6}$（指数相加，$3+3=6$，不是 $3 \times 3 = 9$）
+        B 错：$(a^{3})^{2} = a^{6}$（指数相乘，$3 \times 2 = 6$，不是 $3+2=5$）
+        C 对：$(-a)^{4} = (-1)^{4} \cdot a^{4} = 1 \cdot a^{4} = a^{4}$（偶次方负号消失）
+        D 错：$(2a)^{3} = 2^{3} \cdot a^{3} = 8a^{3}$（系数也要乘方）
+      explanationEn: |
+        A wrong: $a^{3} \cdot a^{3} = a^{6}$ (add exponents: $3+3=6$, not $3 \times 3 = 9$)
+        B wrong: $(a^{3})^{2} = a^{6}$ (multiply exponents: $3 \times 2 = 6$, not $3+2=5$)
+        C correct: $(-a)^{4} = (-1)^{4} \cdot a^{4} = 1 \cdot a^{4} = a^{4}$ (even power removes the minus)
+        D wrong: $(2a)^{3} = 2^{3} \cdot a^{3} = 8a^{3}$ (the coefficient must also be raised to the power)
+
+    - id: ep2
+      type: fill-in
+      question: |
+        已知 $(x + a)^{2} = x^{2} + bx + 9$，求 $a$ 和 $b$ 的值。
+      questionEn: |
+        Given $(x + a)^{2} = x^{2} + bx + 9$, find the values of $a$ and $b$.
+      answer: '$a = 3$（或 $a = -3$），$b = 6$（或 $b = -6$）'
+      answerEn: '$a = 3$ (or $a = -3$), $b = 6$ (or $b = -6$)'
+      explanation: |
+        展开左边：$(x + a)^{2} = x^{2} + 2ax + a^{2}$
+        对比右边 $x^{2} + bx + 9$，得：
+        - 常数项：$a^{2} = 9$，所以 $a = 3$ 或 $a = -3$
+        - 中间项系数：$b = 2a$
+        当 $a = 3$ 时，$b = 6$；当 $a = -3$ 时，$b = -6$
+      explanationEn: |
+        Expand the left side: $(x + a)^{2} = x^{2} + 2ax + a^{2}$
+        Comparing with $x^{2} + bx + 9$:
+        - Constant term: $a^{2} = 9$, so $a = 3$ or $a = -3$
+        - Coefficient of middle term: $b = 2a$
+        When $a = 3$, $b = 6$; when $a = -3$, $b = -6$
+
+    - id: ep3
+      type: computation
+      question: |
+        化简：$(x + y)^{2} - (x - y)^{2}$
+        （提示：直接展开，观察能消去什么）
+      questionEn: |
+        Simplify: $(x + y)^{2} - (x - y)^{2}$
+        (Hint: expand directly and observe what cancels)
+      answer: '$4xy$'
+      answerEn: '$4xy$'
+      explanation: |
+        展开：$(x + y)^{2} = x^{2} + 2xy + y^{2}$
+        展开：$(x - y)^{2} = x^{2} - 2xy + y^{2}$
+        相减：$(x^{2} + 2xy + y^{2}) - (x^{2} - 2xy + y^{2})$
+        $= x^{2} + 2xy + y^{2} - x^{2} + 2xy - y^{2}$
+        $= 4xy$
+        （$x^{2}$ 和 $y^{2}$ 全部消去，只剩中间项！）
+      explanationEn: |
+        Expand: $(x + y)^{2} = x^{2} + 2xy + y^{2}$
+        Expand: $(x - y)^{2} = x^{2} - 2xy + y^{2}$
+        Subtract: $(x^{2} + 2xy + y^{2}) - (x^{2} - 2xy + y^{2})$
+        $= x^{2} + 2xy + y^{2} - x^{2} + 2xy - y^{2}$
+        $= 4xy$
+        (The $x^{2}$ and $y^{2}$ terms all cancel — only the middle terms remain!)
+
+    - id: ep4
+      type: open
+      question: |
+        【陷阱题】一个学生计算了 $(m - n)^{2} + 2mn$，他的步骤如下：
+        $(m - n)^{2} + 2mn = m^{2} - n^{2} + 2mn$
+        请指出错误，并给出正确结果。
+        （提示：完全平方公式和平方差公式长得很像，要分清楚！）
+      questionEn: |
+        [Trap problem] A student computed $(m - n)^{2} + 2mn$ as follows:
+        $(m - n)^{2} + 2mn = m^{2} - n^{2} + 2mn$
+        Identify the error and give the correct result.
+        (Hint: the perfect square and difference of squares formulas look similar — be careful!)
+      answer: |
+        错误：学生把 $(m - n)^{2}$ 当成了 $(m+n)(m-n)$ 的平方差公式，写成了 $m^{2} - n^{2}$。
+        实际上 $(m - n)^{2} = m^{2} - 2mn + n^{2}$（完全平方公式！）
+        正确计算：
+        $(m - n)^{2} + 2mn = (m^{2} - 2mn + n^{2}) + 2mn = m^{2} + n^{2}$
+      answerEn: |
+        Error: the student mistakenly applied the difference of squares formula to $(m - n)^{2}$, writing $m^{2} - n^{2}$.
+        In fact, $(m - n)^{2} = m^{2} - 2mn + n^{2}$ (perfect square trinomial formula!)
+        Correct computation:
+        $(m - n)^{2} + 2mn = (m^{2} - 2mn + n^{2}) + 2mn = m^{2} + n^{2}$
+
+    - id: ep5
+      type: open
+      question: |
+        综合题：已知正方形边长为 $a + b$，从中挖去一个边长为 $a - b$ 的同心正方形（$a > b > 0$）。
+        $(1)$ 用多项式表达两个正方形的面积；
+        $(2)$ 用乘法公式化简剩余部分（圆环形区域）的面积；
+        $(3)$ 若 $a = 5, b = 3$，计算实际面积。
+      questionEn: |
+        Comprehensive problem: A square has side length $a + b$. From it, a concentric square with side length $a - b$ is removed ($a > b > 0$).
+        $(1)$ Express the areas of both squares as polynomials.
+        $(2)$ Use a multiplication formula to simplify the remaining (frame-shaped) area.
+        $(3)$ If $a = 5, b = 3$, compute the actual area.
+      answer: |
+        $(1)$ 大正方形面积 $= (a+b)^{2} = a^{2}+2ab+b^{2}$；小正方形面积 $= (a-b)^{2} = a^{2}-2ab+b^{2}$
+        $(2)$ 剩余面积 $= (a+b)^{2} - (a-b)^{2}$
+        $= (a^{2}+2ab+b^{2}) - (a^{2}-2ab+b^{2})$
+        $= 4ab$
+        （也可以用平方差：$[(a+b)+(a-b)][(a+b)-(a-b)] = 2a \cdot 2b = 4ab$）
+        $(3)$ 当 $a=5, b=3$：剩余面积 $= 4 \times 5 \times 3 = 60$ cm²
+        验证：大正方形 $(5+3)^{2} = 64$，小正方形 $(5-3)^{2} = 4$，差 $= 60$ ✓
+      answerEn: |
+        $(1)$ Large square area $= (a+b)^{2} = a^{2}+2ab+b^{2}$; small square area $= (a-b)^{2} = a^{2}-2ab+b^{2}$
+        $(2)$ Remaining area $= (a+b)^{2} - (a-b)^{2}$
+        $= (a^{2}+2ab+b^{2}) - (a^{2}-2ab+b^{2})$
+        $= 4ab$
+        (Alternative using difference of squares: $[(a+b)+(a-b)][(a+b)-(a-b)] = 2a \cdot 2b = 4ab$)
+        $(3)$ When $a=5, b=3$: remaining area $= 4 \times 5 \times 3 = 60$ cm²
+        Check: large square $(5+3)^{2} = 64$, small square $(5-3)^{2} = 4$, difference $= 60$ ✓
+
+summary: |
+  本章学习了整式的乘除运算，核心是掌握**幂的运算法则**和**两大乘法公式**。
+
+  **幂的三条乘法法则：**
+  - 同底数幂相乘：$a^{m} \cdot a^{n} = a^{m+n}$（底数不变，指数相加）
+  - 幂的乘方：$(a^{m})^{n} = a^{mn}$（指数相乘）
+  - 积的乘方：$(ab)^{n} = a^{n}b^{n}$（每个因数都乘方）
+
+  **整式乘法：**
+  - 单项式 × 多项式：分配律，逐项相乘
+  - 多项式 × 多项式：每项 × 每项，再合并同类项
+
+  **两大公式（必须熟记）：**
+  - <<平方差公式/difference of squares formula>>：$(a+b)(a-b) = a^{2} - b^{2}$（两项，无中间项）
+  - <<完全平方公式/perfect square trinomial formula>>：$(a \pm b)^{2} = a^{2} \pm 2ab + b^{2}$（三项，中间项是 $2ab$）
+
+  **最大易错点：** $(a + b)^{2} \neq a^{2} + b^{2}$，必须加上 $2ab$！
+
+  **整式除法：**
+  - 同底数幂相除：$a^{m} \div a^{n} = a^{m-n}$（指数相减）
+  - 多项式 ÷ 单项式：每项分别相除
+
+  这些法则为下一章**因式分解**（乘法公式的逆用）打好了基础。
+summaryEn: |
+  This chapter covered multiplication and division of polynomials. The core is mastering the **rules of exponents** and the **two key multiplication formulas**.
+
+  **Three rules for multiplying powers:**
+  - Same-base multiplication: $a^{m} \cdot a^{n} = a^{m+n}$ (base unchanged, add exponents)
+  - Power of a power: $(a^{m})^{n} = a^{mn}$ (multiply exponents)
+  - Power of a product: $(ab)^{n} = a^{n}b^{n}$ (each factor is raised to the power)
+
+  **Polynomial multiplication:**
+  - Monomial × polynomial: distributive law, multiply term by term
+  - Polynomial × polynomial: every term × every term, then combine like terms
+
+  **Two essential formulas (must be memorised):**
+  - <<平方差公式/difference of squares formula>>: $(a+b)(a-b) = a^{2} - b^{2}$ (two terms, no middle term)
+  - <<完全平方公式/perfect square trinomial formula>>: $(a \pm b)^{2} = a^{2} \pm 2ab + b^{2}$ (three terms; the middle term is $2ab$)
+
+  **Biggest error to avoid:** $(a + b)^{2} \neq a^{2} + b^{2}$ — you must add $2ab$!
+
+  **Polynomial division:**
+  - Same-base division: $a^{m} \div a^{n} = a^{m-n}$ (subtract exponents)
+  - Polynomial ÷ monomial: divide each term separately
+
+  These rules lay the groundwork for the next chapter — **factoring** (applying the multiplication formulas in reverse).

@@ -1,0 +1,1177 @@
+title: 数据的分析
+titleEn: Data Analysis
+chapter: 10
+subject: math
+grade: grade8
+semester: semester2
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟
+estimatedTimeEn: "Session 1 ~55 min · Session 2 ~55 min"
+targetAudience: 小学3年级自学生（已完成七年级数据收集），自学材料，由简入深
+
+objectives:
+  - 理解<<算术平均数/arithmetic mean>>和<<加权平均数/weighted mean>>的概念，会正确计算
+  - 掌握<<中位数/median>>的概念与计算方法（奇数个与偶数个数据两种情形）
+  - 掌握<<众数/mode>>的概念，理解一组数据可能有多个众数或无众数
+  - 能比较三种<<集中趋势/measures of central tendency>>的优缺点，选择最恰当的统计量描述数据
+  - 理解<<方差/variance>>和<<标准差/standard deviation>>的意义，会计算方差
+  - 能综合运用平均数与方差对两组数据进行比较和评价
+objectivesEn:
+  - Understand the concepts of <<算术平均数/arithmetic mean>> and <<加权平均数/weighted mean>> and calculate them correctly
+  - Master the concept and calculation of <<中位数/median>> for both odd and even numbers of data values
+  - Master the concept of <<众数/mode>> and understand that a dataset may have multiple modes or no mode
+  - Compare the advantages and disadvantages of three <<集中趋势/measures of central tendency>> and choose the most appropriate one
+  - Understand the meaning of <<方差/variance>> and <<标准差/standard deviation>>, and calculate variance
+  - Use mean and variance together to compare and evaluate two sets of data
+
+prerequisites:
+  title: 从七年级数据收集出发——你已经会什么了？
+  titleEn: "Building on Grade 7 data collection — what do you already know?"
+  intro: |
+    学习<<数据的分析/data analysis>>之前，我们先回顾七年级已经掌握的统计知识：
+  introEn: |
+    Before studying <<数据的分析/data analysis>>, let's review the statistical knowledge from Grade 7:
+  items:
+    - name: 数据的收集与整理
+      nameEn: Data collection and organization
+      detail: |
+        知道<<全面调查/census>>与<<抽样调查/sampling survey>>的区别，会制作<<频数分布表/frequency distribution table>>和<<频数分布直方图/frequency distribution histogram>>
+      detailEn: |
+        Know the difference between <<全面调查/census>> and <<抽样调查/sampling survey>>; can make <<频数分布表/frequency distribution table>>s and <<频数分布直方图/frequency distribution histogram>>s
+    - name: 简单平均数
+      nameEn: Simple average
+      detail: |
+        小学已经学过：一组数据的<<算术平均数/arithmetic mean>> $= \frac{\text{各数之和}}{\text{数据个数}}$。例如 $\{3, 5, 7\}$ 的平均数 $= \frac{3+5+7}{3} = 5$
+      detailEn: |
+        From elementary school: <<算术平均数/arithmetic mean>> $= \frac{\text{sum of values}}{\text{number of values}}$. For example, the mean of $\{3, 5, 7\}$ $= \frac{3+5+7}{3} = 5$
+    - name: 四则运算与分数
+      nameEn: Arithmetic and fractions
+      detail: |
+        能进行含分数的加减乘除，这是计算方差的基础
+      detailEn: |
+        Able to perform addition, subtraction, multiplication, and division with fractions — the foundation for computing variance
+  conclusion: |
+    在七年级，我们学会了**收集和展示**数据。八年级我们要更进一步：**分析数据的特征**。一组数据有两类核心特征——**集中在哪里**（平均数、中位数、众数）和**分散程度如何**（方差、标准差）。掌握这两类特征，才能真正读懂数据。
+  conclusionEn: |
+    In Grade 7, we learned to **collect and display** data. In Grade 8 we go further: **analyzing the characteristics of data**. A dataset has two core features — **where it is centered** (mean, median, mode) and **how spread out it is** (variance, standard deviation). Mastering both allows us to truly understand data.
+
+concepts:
+  - id: arithmetic-mean
+    title: <<算术平均数/arithmetic mean>>与<<加权平均数/weighted mean>>
+    titleEn: <<算术平均数/arithmetic mean>> and <<加权平均数/weighted mean>>
+    hasVisualization: false
+    content: |
+      **什么是<<算术平均数/arithmetic mean>>？**
+
+      对于 $n$ 个数据 $x_1, x_2, \ldots, x_n$，它们的<<算术平均数/arithmetic mean>>定义为：
+
+      $$\bar{x} = \frac{x_1 + x_2 + \cdots + x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n}$$
+
+      其中 $\bar{x}$（读作"x bar"）表示平均数，$\sum$（读作"Sigma"）表示求和。
+
+      **直观理解：** <<算术平均数/arithmetic mean>>就是"把所有数据的总量平均分配给每个数据"。就像把一盒苹果重新分配，让每个人得到同等数量——平均数就是每人分得的数量。
+
+      **什么是<<加权平均数/weighted mean>>？**
+
+      现实中，各数据的"重要程度"往往不同。例如期末考试各科的比重不同，这时需要用<<加权平均数/weighted mean>>：
+
+      $$\bar{x} = \frac{f_1 x_1 + f_2 x_2 + \cdots + f_k x_k}{f_1 + f_2 + \cdots + f_k} = \frac{\sum f_i x_i}{\sum f_i}$$
+
+      其中 $f_i$ 称为**权重（weight）**，表示第 $i$ 个数据的重要程度或出现的频数。
+
+      **两种情形：权重不同的区别**
+
+      | 情形 | 适用公式 | 例子 |
+      |------|----------|------|
+      | 每个数据地位相同 | 算术平均数 | 5次测验成绩 |
+      | 各数据重要程度不同 | 加权平均数 | 语文×30%、数学×40%、英语×30% |
+      | 同一数值出现多次 | 加权平均数（以频数为权） | 频数分布表中的平均数 |
+
+      **平均数的局限性：对极端值敏感**
+
+      这是<<算术平均数/arithmetic mean>>最重要的缺陷。一个**极端值（outlier）**会显著拉高或拉低平均数，使其不能代表"典型水平"。
+
+      例子：小明参加了5次数学测验，成绩为 $\{45, 48, 50, 52, 100\}$。
+      - 算术平均数 $= \frac{45+48+50+52+100}{5} = \frac{295}{5} = 59$
+      - 但5次成绩中有4次低于59分，平均数 59 并不能反映小明"通常"的水平
+      - 那次100分是特殊情况（可能题目简单，或运气特别好），拉高了整体平均
+
+      **生活场景：** "我们班平均身高 160 cm"——如果班里有一个 190 cm 的同学，平均身高就会被这个极端值拉高，大多数同学其实低于这个平均值。
+    contentEn: |
+      **What is the <<算术平均数/arithmetic mean>>?**
+
+      For $n$ data values $x_1, x_2, \ldots, x_n$, the <<算术平均数/arithmetic mean>> is defined as:
+
+      $$\bar{x} = \frac{x_1 + x_2 + \cdots + x_n}{n} = \frac{\sum_{i=1}^{n} x_i}{n}$$
+
+      Here $\bar{x}$ (read "x bar") represents the mean, and $\sum$ (read "Sigma") means summation.
+
+      **Intuition:** The <<算术平均数/arithmetic mean>> is "redistributing the total equally among all data points." Imagine a box of apples shared equally — the mean is how many each person gets.
+
+      **What is the <<加权平均数/weighted mean>>?**
+
+      In real life, different data values often carry different levels of importance. For example, different subjects may count for different proportions of a final grade. In such cases we use the <<加权平均数/weighted mean>>:
+
+      $$\bar{x} = \frac{f_1 x_1 + f_2 x_2 + \cdots + f_k x_k}{f_1 + f_2 + \cdots + f_k} = \frac{\sum f_i x_i}{\sum f_i}$$
+
+      Here $f_i$ is called the **weight**, representing the importance or frequency of the $i$-th value.
+
+      **Limitation: sensitive to outliers**
+
+      A single extreme value (outlier) can pull the mean far from the "typical" value. If Xiao Ming scored $\{45, 48, 50, 52, 100\}$ on five tests, the mean is 59 — but four of the five scores are below 59, so the mean misrepresents his usual performance level.
+
+  - id: median-mode
+    title: <<中位数/median>>与<<众数/mode>>
+    titleEn: <<中位数/median>> and <<众数/mode>>
+    hasVisualization: false
+    content: |
+      **什么是<<中位数/median>>？**
+
+      将一组数据从小到大排列后，处于**正中间位置**的那个数，就是这组数据的<<中位数/median>>。
+
+      **计算方法：**
+      - **奇数**个数据：中位数 $=$ 排序后第 $\frac{n+1}{2}$ 个数
+        - 例：$\{3, 5, 7, 9, 11\}$（5个数），中位数 $=$ 第3个数 $= 7$
+      - **偶数**个数据：中位数 $=$ 排序后第 $\frac{n}{2}$ 个与第 $\frac{n}{2}+1$ 个数的<<算术平均数/arithmetic mean>>
+        - 例：$\{3, 5, 7, 9\}$（4个数），中位数 $= \frac{5+7}{2} = 6$
+
+      **易错点：一定要先排序！**
+
+      对于 $\{9, 3, 7, 5, 11\}$，直接取"第3个"是7，但排序后 $\{3, 5, 7, 9, 11\}$ 的第3个也是7，这次碰巧一样。但对于 $\{9, 3, 11, 5, 7\}$，不排序取第3个是11，排序后才是7。**永远先排序再找中位数。**
+
+      **<<中位数/median>>的优点：不受极端值影响**
+
+      前面小明的例子：$\{45, 48, 50, 52, 100\}$
+      - 中位数 $= 50$（排序后第3个数）
+      - 即使把100换成200，中位数仍然是50
+      - 中位数50比平均数59更能代表小明的"通常"水平
+
+      **真实场景：房价中位数**
+
+      一个城市10套房子的价格（万元）：$\{50, 55, 60, 65, 70, 75, 80, 90, 100, 500\}$
+      - 算术平均数 $= \frac{1145}{10} = 114.5$ 万元
+      - 中位数 $= \frac{70+75}{2} = 72.5$ 万元
+      - 大多数房子在50-100万之间，中位数72.5万更能反映"典型房价"，平均数114.5万被那套500万的豪宅拉高了
+
+      ---
+
+      **什么是<<众数/mode>>？**
+
+      一组数据中，**出现次数最多**的那个数（或那些数）叫做这组数据的<<众数/mode>>。
+
+      **关键细节：**
+      - 一组数据可能有**多个**<<众数/mode>>（有两个出现次数相同且最多的值）
+      - 一组数据也可能**没有**<<众数/mode>>（每个值出现次数都相同）
+      - <<众数/mode>>可以用于**非数值数据**（如最受欢迎的颜色、最常见的职业）
+
+      **例子：**
+      - $\{1, 2, 2, 3, 3, 4\}$：2 和 3 各出现2次 → **两个众数：2和3**
+      - $\{1, 2, 3, 4, 5\}$：每个数出现1次 → **没有众数**
+      - $\{2, 2, 3, 3, 3, 5\}$：3 出现3次最多 → **众数是 3**
+
+      **<<众数/mode>>最适合的场景：** 当数据是分类型的（非数值）时，只能用众数。例如"班级里最受欢迎的颜色"——你不能计算"颜色的平均数"，但可以找到出现次数最多的颜色。
+    contentEn: |
+      **What is the <<中位数/median>>?**
+
+      Arrange a dataset in ascending order; the value in the **exact middle** is the <<中位数/median>>.
+
+      **Calculation:**
+      - **Odd** number of values: median $=$ the $\frac{n+1}{2}$-th value after sorting
+        - Example: $\{3, 5, 7, 9, 11\}$ (5 values), median $=$ 3rd value $= 7$
+      - **Even** number of values: median $=$ <<算术平均数/arithmetic mean>> of the $\frac{n}{2}$-th and $\left(\frac{n}{2}+1\right)$-th values
+        - Example: $\{3, 5, 7, 9\}$ (4 values), median $= \frac{5+7}{2} = 6$
+
+      **Key pitfall: always sort first!**
+
+      **Advantage of median: not affected by outliers.** For Xiao Ming's scores $\{45, 48, 50, 52, 100\}$, the median is 50 — even if we replace 100 with 200, the median stays 50. The median of 50 better represents his typical performance than the mean of 59.
+
+      **Real example: housing prices.** Ten house prices (in ¥10,000s): $\{50, 55, 60, 65, 70, 75, 80, 90, 100, 500\}$. Mean $= 114.5$, Median $= 72.5$. The median of 72.5 better reflects typical prices; the mean is inflated by the ¥5,000,000 mansion.
+
+      **What is the <<众数/mode>>?**
+
+      The value (or values) that appear **most frequently** in a dataset. A dataset can have multiple modes or no mode. The mode is most useful for **categorical (non-numerical) data** — for example, the most popular color in a class.
+
+  - id: comparing-three-measures
+    title: 三种<<集中趋势/measures of central tendency>>的比较与选用
+    titleEn: Comparing and choosing among the three <<集中趋势/measures of central tendency>>
+    hasVisualization: false
+    content: |
+      **三种统计量对比总表**
+
+      | 统计量 | 计算方法 | 优点 | 缺点 | 最适合的场景 |
+      |--------|----------|------|------|-------------|
+      | <<算术平均数/arithmetic mean>> | 总和除以个数 | 利用了所有数据；计算精确 | 受极端值影响大 | 数据分布均匀、无明显极端值 |
+      | <<中位数/median>> | 排序后取中间值 | 不受极端值影响；直观 | 只考虑位置，忽略大多数数据的具体值 | 数据有偏斜、存在极端值（如收入、房价） |
+      | <<众数/mode>> | 出现次数最多的值 | 直观；可用于非数值数据 | 不唯一；不考虑数值大小 | 分类数据；关心"最流行"的选项 |
+
+      **经典案例：公司薪资的"统计游戏"**
+
+      某公司有10名员工，月薪（元）如下：
+
+      | 职位 | 人数 | 月薪（元） |
+      |------|------|-----------|
+      | CEO | 1 | 50,000 |
+      | 经理 | 2 | 10,000 |
+      | 普通员工 | 7 | 5,000 |
+
+      - <<算术平均数/arithmetic mean>> $= \frac{50000 \times 1 + 10000 \times 2 + 5000 \times 7}{10} = \frac{50000+20000+35000}{10} = \frac{105000}{10} = 10500$ 元
+      - <<中位数/median>>：10人排序后第5、6个都是5000元 → 中位数 $= 5000$ 元
+      - <<众数/mode>>：7人拿5000元，最多 → 众数 $= 5000$ 元
+
+      **分析：**
+      - 招聘广告说"平均月薪10500元"——听起来很高！
+      - 但实际上有7名员工只拿5000元
+      - 中位数和众数都是5000元，才是大多数员工的真实收入水平
+      - 平均数被CEO的50000元严重拉高，产生了**统计误导**
+
+      **如何判断用哪种？**
+
+      遇到数据分析题，先问自己三个问题：
+      1. 数据中有没有明显的极端值？→ 有则优先选中位数
+      2. 数据是否为分类型（颜色、类别）？→ 是则只能选众数
+      3. 数据分布是否均匀合理？→ 是则可以选平均数
+
+      **统计素养提示：** 新闻和广告中的数据往往只呈现对自己有利的统计量。看到"平均值"时，要想一想：这个数据是否有极端值？中位数是多少？数据背后的故事是什么？
+    contentEn: |
+      **Comparison table of the three measures**
+
+      | Measure | Calculation | Pros | Cons | Best for |
+      |---------|-------------|------|------|----------|
+      | <<算术平均数/arithmetic mean>> | Sum ÷ count | Uses all data; precise | Sensitive to outliers | Evenly distributed data, no strong outliers |
+      | <<中位数/median>> | Middle value after sorting | Not affected by outliers | Ignores most actual values | Skewed data, outliers present (income, prices) |
+      | <<众数/mode>> | Most frequent value | Intuitive; works for categories | Not unique; ignores magnitude | Categorical data; "most popular" option |
+
+      **Classic case: the salary "statistics game."** A company with 10 employees: 1 CEO at ¥50,000/month, 2 managers at ¥10,000, 7 staff at ¥5,000. Mean $= ¥10,500$, median $= ¥5,000$, mode $= ¥5,000$. The job ad says "average salary ¥10,500" — technically true, but 7 out of 10 employees earn only ¥5,000. The median and mode tell the honest story.
+
+      **Statistical literacy tip:** When you see "average" in news or advertisements, ask: are there extreme values? What is the median? Understanding which measure is being used — and why — helps you think critically about data.
+
+  - id: variance-standard-deviation
+    title: <<方差/variance>>与<<标准差/standard deviation>>
+    titleEn: <<方差/variance>> and <<标准差/standard deviation>>
+    hasVisualization: false
+    content: |
+      **为什么需要新的统计量？**
+
+      光有<<算术平均数/arithmetic mean>>是不够的。看这个例子：
+
+      - 甲组成绩：$\{79, 80, 80, 81, 80\}$，平均数 $= 80$
+      - 乙组成绩：$\{60, 70, 80, 90, 100\}$，平均数 $= 80$
+
+      两组平均数完全相同，但甲组成绩非常集中（都在80分附近），乙组成绩非常分散。我们需要一个能描述"**分散程度**"的统计量。
+
+      **<<方差/variance>>的定义**
+
+      <<方差/variance>>（记作 $s^2$）是各数据与<<算术平均数/arithmetic mean>>之差的平方的<<算术平均数/arithmetic mean>>：
+
+      $$s^2 = \frac{(x_1-\bar{x})^2 + (x_2-\bar{x})^2 + \cdots + (x_n-\bar{x})^2}{n} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}$$
+
+      **为什么要平方？** 因为 $(x_i - \bar{x})$ 有正有负，直接相加会互相抵消。平方后全部变正，能反映"偏离程度"的大小。
+
+      **<<方差/variance>>的计算步骤（口诀：先求均值，再求偏差，平方求和，除以个数）**
+
+      以甲组 $\{79, 80, 80, 81, 80\}$ 为例：
+
+      **第①步：** 求<<算术平均数/arithmetic mean>> $\bar{x} = \frac{79+80+80+81+80}{5} = \frac{400}{5} = 80$
+
+      **第②步：** 求每个数与均值的差：
+      $79-80=-1,\ 80-80=0,\ 80-80=0,\ 81-80=1,\ 80-80=0$
+
+      **第③步：** 对每个差平方：
+      $(-1)^2=1,\ 0^2=0,\ 0^2=0,\ 1^2=1,\ 0^2=0$
+
+      **第④步：** 求平方的<<算术平均数/arithmetic mean>>（即<<方差/variance>>）：
+      $s^2 = \frac{1+0+0+1+0}{5} = \frac{2}{5} = 0.4$
+
+      以乙组 $\{60, 70, 80, 90, 100\}$ 为例：$\bar{x} = 80$
+
+      $s^2 = \frac{(60-80)^2+(70-80)^2+(80-80)^2+(90-80)^2+(100-80)^2}{5}$
+      $= \frac{400+100+0+100+400}{5} = \frac{1000}{5} = 200$
+
+      **结论：** 甲组 $s^2 = 0.4$，乙组 $s^2 = 200$。方差越小，数据越集中；方差越大，数据越分散。
+
+      **<<标准差/standard deviation>>**
+
+      <<方差/variance>>的单位是原数据单位的平方（如成绩是"分"，方差是"分$^2$"），不直观。对方差开平方，得到**<<标准差/standard deviation>>**（记作 $s$）：
+
+      $$s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n}}$$
+
+      <<标准差/standard deviation>>与原数据单位相同，更直观地反映数据的分散程度。
+
+      甲组 $s = \sqrt{0.4} \approx 0.63$ 分，乙组 $s = \sqrt{200} \approx 14.14$ 分。
+
+      **<<标准差/standard deviation>>的含义：** 乙组标准差约14.14分，意味着乙组同学的成绩平均偏离均值约14分；甲组只偏离约0.63分，非常稳定。
+    contentEn: |
+      **Why do we need a new statistic?**
+
+      The mean alone is not enough. Consider: Group A scores $\{79, 80, 80, 81, 80\}$ and Group B scores $\{60, 70, 80, 90, 100\}$ — both have mean 80. But Group A is very tightly clustered while Group B is widely spread. We need a measure of **spread**.
+
+      **<<方差/variance>> definition:**
+
+      $$s^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}$$
+
+      **Why square the differences?** Because $(x_i - \bar{x})$ can be positive or negative; they would cancel out if added directly. Squaring makes all terms positive and reflects the magnitude of deviation.
+
+      **Steps (mnemonic: mean → deviations → square → average):**
+      1. Find the mean $\bar{x}$
+      2. Subtract the mean from each value: $x_i - \bar{x}$
+      3. Square each difference: $(x_i - \bar{x})^2$
+      4. Average the squares: $s^2 = \frac{\sum(x_i-\bar{x})^2}{n}$
+
+      For Group A: $s^2 = 0.4$ (very small → tightly clustered)
+      For Group B: $s^2 = 200$ (large → widely spread)
+
+      **<<标准差/standard deviation>>:** $s = \sqrt{s^2}$, which has the same units as the original data and is more interpretable. Group A: $s \approx 0.63$; Group B: $s \approx 14.14$.
+
+  - id: comprehensive-analysis
+    title: 综合分析与数据评价
+    titleEn: Comprehensive Analysis and Data Evaluation
+    hasVisualization: false
+    content: |
+      **用平均数和方差共同评价数据**
+
+      在实际问题中，我们需要同时关注两个维度：
+      - **集中趋势**（用平均数衡量）：数据"平均"表现如何？
+      - **离散程度**（用方差衡量）：数据是否稳定？
+
+      **经典决策场景：选择员工/运动员**
+
+      某工厂需要从甲、乙两名工人中选一人，记录他们连续5天的日产量（件）：
+
+      | 工人 | 第1天 | 第2天 | 第3天 | 第4天 | 第5天 |
+      |------|-------|-------|-------|-------|-------|
+      | 甲 | 9 | 11 | 10 | 11 | 9 |
+      | 乙 | 8 | 12 | 9 | 13 | 8 |
+
+      计算：
+      - 甲的平均数：$\bar{x}_{\text{甲}} = \frac{9+11+10+11+9}{5} = \frac{50}{5} = 10$ 件
+      - 乙的平均数：$\bar{x}_{\text{乙}} = \frac{8+12+9+13+8}{5} = \frac{50}{5} = 10$ 件
+
+      **平均产量相同！** 但看方差：
+
+      甲的方差：$s^2_{\text{甲}} = \frac{(9-10)^2+(11-10)^2+(10-10)^2+(11-10)^2+(9-10)^2}{5} = \frac{1+1+0+1+1}{5} = \frac{4}{5} = 0.8$
+
+      乙的方差：$s^2_{\text{乙}} = \frac{(8-10)^2+(12-10)^2+(9-10)^2+(13-10)^2+(8-10)^2}{5} = \frac{4+4+1+9+4}{5} = \frac{22}{5} = 4.4$
+
+      **结论：** 甲的方差 $0.8 <$ 乙的方差 $4.4$，说明甲的产量更稳定，**应选甲**。
+
+      **综合评价的原则：**
+      - 若两者均值相同，选方差小的（更稳定）
+      - 若两者方差相同，选均值大的（产量更高）
+      - 若均值和方差都不同，要根据具体需求权衡（例如：某些场合需要"稳定"，某些需要"高峰值"）
+
+      **箱线图（Box Plot）初步认识**
+
+      <<箱线图/box plot>>是一种用5个关键数值来描述数据分布的图形：
+      - **最小值（Min）**
+      - **下四分位数 $Q_1$**：前一半数据的中位数
+      - **<<中位数/median>> $Q_2$**：中间值
+      - **上四分位数 $Q_3$**：后一半数据的中位数
+      - **最大值（Max）**
+
+      箱体（从 $Q_1$ 到 $Q_3$）包含了数据的中间50%，箱体越短说明数据越集中。虽然八年级暂不要求绘制，但理解5个关键数值的意义是统计素养的重要组成部分。
+
+      **统计批判性思维**
+
+      面对一组数据或一个统计结论，问自己：
+      1. 用的是哪种统计量？平均数还是中位数？
+      2. 数据量够大吗？样本代表性如何？
+      3. 有没有被故意省略的信息（比如只报告均值却隐藏了方差）？
+      4. 结论是否符合常识？
+    contentEn: |
+      **Using both mean and variance to evaluate data**
+
+      In practical problems we must consider two dimensions simultaneously:
+      - **Central tendency** (measured by the mean): what is the typical performance?
+      - **Spread** (measured by variance): how stable or consistent is the performance?
+
+      **Classic decision scenario: selecting a worker.** Workers A and B both average 10 units per day over 5 days, but Worker A has variance $0.8$ while Worker B has variance $4.4$. Worker A is far more consistent → choose Worker A.
+
+      **General principle:**
+      - Same mean → choose smaller variance (more stable)
+      - Same variance → choose larger mean (higher output)
+      - Different both → weigh based on specific requirements
+
+      **Box plot (<<箱线图/box plot>>) — five-number summary:** Min, $Q_1$ (lower quartile), median $Q_2$, $Q_3$ (upper quartile), Max. The box spans $Q_1$ to $Q_3$ (middle 50% of data); a shorter box means more concentrated data.
+
+      **Critical thinking about statistics:** When you encounter a statistical claim, ask: Which measure is being reported? Is the sample size large enough? What information might be missing? Does the conclusion match common sense?
+
+realLife:
+  title: 生活中的数据分析
+  titleEn: Data Analysis in Everyday Life
+  examples:
+    - scenario: 成绩评定
+      scenarioEn: Academic grading
+      description: |
+        期末综合成绩 $=$ 平时作业 $\times 20\%\ +$ 单元测验 $\times 30\%\ +$ 期末考试 $\times 50\%$。这就是<<加权平均数/weighted mean>>的典型应用。不同考核形式的"权重"不同，期末考试最重要。
+      descriptionEn: |
+        Final grade $=$ homework $\times 20\%\ +$ unit tests $\times 30\%\ +$ final exam $\times 50\%$. This is a classic <<加权平均数/weighted mean>>. Different assessments have different weights; the final exam counts the most.
+    - scenario: 气象预报
+      scenarioEn: Weather forecasting
+      description: |
+        一周气温的<<算术平均数/arithmetic mean>>告诉我们这周"大概多热"，而气温的<<标准差/standard deviation>>告诉我们气温是否稳定（如果标准差大，说明忽冷忽热，要多备几件衣服）。
+      descriptionEn: |
+        The mean temperature for a week tells us "how warm it generally is," while the <<标准差/standard deviation>> tells us how stable the temperature is. A high standard deviation means the temperature fluctuates greatly — pack layers!
+    - scenario: 体育选拔
+      scenarioEn: Sports selection
+      description: |
+        射击比赛中，选手甲5次成绩：$\{9.8, 9.9, 10.0, 9.9, 9.9\}$；选手乙5次成绩：$\{10.2, 9.6, 10.3, 9.5, 9.9\}$。两人平均分相同，但甲的方差更小，更稳定，更适合参加重要比赛。
+      descriptionEn: |
+        In shooting, Athlete A scores $\{9.8, 9.9, 10.0, 9.9, 9.9\}$ and Athlete B scores $\{10.2, 9.6, 10.3, 9.5, 9.9\}$. Both have the same mean, but A has smaller variance — more consistent, better choice for important competitions.
+
+examples:
+  - id: example-mean-median-mode
+    title: 例1：计算平均数、中位数、众数
+    titleEn: "Example 1: Calculate mean, median, and mode"
+    problem: |
+      某班8名同学的数学竞赛成绩（分）为：$75,\ 82,\ 90,\ 68,\ 82,\ 95,\ 75,\ 82$。
+      请分别计算这组数据的<<算术平均数/arithmetic mean>>、<<中位数/median>>和<<众数/mode>>。
+    problemEn: |
+      Eight students scored the following on a math competition (points): $75,\ 82,\ 90,\ 68,\ 82,\ 95,\ 75,\ 82$.
+      Find the <<算术平均数/arithmetic mean>>, <<中位数/median>>, and <<众数/mode>> of this dataset.
+    steps:
+      - step: 计算算术平均数
+        stepEn: Calculate the arithmetic mean
+        content: |
+          $$\bar{x} = \frac{75+82+90+68+82+95+75+82}{8} = \frac{649}{8} = 81.125 \approx 81.1 \text{（分）}$$
+        contentEn: |
+          $$\bar{x} = \frac{75+82+90+68+82+95+75+82}{8} = \frac{649}{8} = 81.125 \approx 81.1 \text{ (points)}$$
+      - step: 计算中位数（先排序）
+        stepEn: Calculate the median (sort first)
+        content: |
+          排序后：$68,\ 75,\ 75,\ 82,\ 82,\ 82,\ 90,\ 95$
+
+          共8个数（偶数），取第4个和第5个的平均：
+          $$\text{中位数} = \frac{82+82}{2} = 82 \text{（分）}$$
+        contentEn: |
+          Sorted: $68,\ 75,\ 75,\ 82,\ 82,\ 82,\ 90,\ 95$
+
+          8 values (even), take average of 4th and 5th:
+          $$\text{median} = \frac{82+82}{2} = 82 \text{ (points)}$$
+      - step: 计算众数
+        stepEn: Find the mode
+        content: |
+          从排序后的数据中找出现次数最多的值：
+          - $68$：1次，$75$：2次，$82$：**3次**，$90$：1次，$95$：1次
+
+          **众数 $= 82$ 分**（出现3次，最多）
+        contentEn: |
+          Count frequency of each value in the sorted data:
+          - $68$: once; $75$: twice; $82$: **three times**; $90$: once; $95$: once
+
+          **Mode $= 82$ points** (appears 3 times, the most)
+      - step: 小结
+        stepEn: Summary
+        content: |
+          平均数 $\approx 81.1$ 分，中位数 $= 82$ 分，众数 $= 82$ 分。三者接近，说明这组数据分布比较均匀，没有显著极端值。
+        contentEn: |
+          Mean $\approx 81.1$, median $= 82$, mode $= 82$. The three values are close, indicating the data is fairly evenly distributed with no significant outliers.
+
+  - id: example-weighted-mean
+    title: 例2：计算加权平均数
+    titleEn: "Example 2: Calculate the weighted mean"
+    problem: |
+      某同学的期末综合成绩按如下权重计算：
+      - 平时作业（权重20%）：得分 85 分
+      - 单元测验（权重30%）：得分 78 分
+      - 期末考试（权重50%）：得分 92 分
+
+      请计算该同学的期末综合成绩（<<加权平均数/weighted mean>>）。
+    problemEn: |
+      A student's final grade is calculated with these weights:
+      - Homework (weight 20%): score 85
+      - Unit tests (weight 30%): score 78
+      - Final exam (weight 50%): score 92
+
+      Calculate the student's final grade (<<加权平均数/weighted mean>>).
+    steps:
+      - step: 代入加权平均数公式
+        stepEn: Substitute into the weighted mean formula
+        content: |
+          $$\bar{x} = \frac{f_1 x_1 + f_2 x_2 + f_3 x_3}{f_1+f_2+f_3}$$
+
+          其中权重 $f_1 = 20,\ f_2 = 30,\ f_3 = 50$（总和为100），对应分数 $x_1 = 85,\ x_2 = 78,\ x_3 = 92$：
+
+          $$\bar{x} = \frac{20 \times 85 + 30 \times 78 + 50 \times 92}{20+30+50}$$
+        contentEn: |
+          With weights $f_1 = 20,\ f_2 = 30,\ f_3 = 50$ (summing to 100) and scores $x_1 = 85,\ x_2 = 78,\ x_3 = 92$:
+
+          $$\bar{x} = \frac{20 \times 85 + 30 \times 78 + 50 \times 92}{20+30+50}$$
+      - step: 计算
+        stepEn: Compute
+        content: |
+          $$\bar{x} = \frac{1700 + 2340 + 4600}{100} = \frac{8640}{100} = 86.4 \text{（分）}$$
+        contentEn: |
+          $$\bar{x} = \frac{1700 + 2340 + 4600}{100} = \frac{8640}{100} = 86.4 \text{ (points)}$$
+      - step: 与算术平均数对比
+        stepEn: Compare with the arithmetic mean
+        content: |
+          算术平均数（不考虑权重）$= \frac{85+78+92}{3} = \frac{255}{3} = 85$ 分。
+
+          加权平均数 $86.4 >$ 算术平均数 $85$，因为期末考试成绩最高（92分），而它的权重最大（50%），所以加权后结果被拉高。
+        contentEn: |
+          Arithmetic mean (ignoring weights) $= \frac{85+78+92}{3} = 85$.
+
+          The weighted mean $86.4 >$ arithmetic mean $85$ because the final exam score (92) is highest and has the largest weight (50%), pulling the weighted result upward.
+
+  - id: example-variance
+    title: 例3：计算方差和标准差
+    titleEn: "Example 3: Calculate variance and standard deviation"
+    problem: |
+      两位射手各射击5次，环数如下：
+      - 甲：$\{9, 10, 9, 10, 10\}$  （<<算术平均数/arithmetic mean>> $= 9.6$ 环）
+      - 乙：$\{7, 11, 8, 12, 10\}$  （<<算术平均数/arithmetic mean>> $= 9.6$ 环）
+
+      分别计算两人成绩的<<方差/variance>>，判断谁更稳定。
+    problemEn: |
+      Two shooters each fire 5 shots, with these scores (rings):
+      - Shooter A: $\{9, 10, 9, 10, 10\}$ (mean $= 9.6$)
+      - Shooter B: $\{7, 11, 8, 12, 10\}$ (mean $= 9.6$)
+
+      Calculate the <<方差/variance>> for each and determine who is more consistent.
+    steps:
+      - step: 验证平均数
+        stepEn: Verify the mean
+        content: |
+          甲：$\bar{x}_{\text{甲}} = \frac{9+10+9+10+10}{5} = \frac{48}{5} = 9.6$ ✓
+
+          乙：$\bar{x}_{\text{乙}} = \frac{7+11+8+12+10}{5} = \frac{48}{5} = 9.6$ ✓
+        contentEn: |
+          A: $\bar{x}_A = \frac{9+10+9+10+10}{5} = \frac{48}{5} = 9.6$ ✓
+
+          B: $\bar{x}_B = \frac{7+11+8+12+10}{5} = \frac{48}{5} = 9.6$ ✓
+      - step: 计算甲的方差
+        stepEn: Calculate Shooter A's variance
+        content: |
+          各数据与均值的差：$9-9.6=-0.6,\ 10-9.6=0.4,\ 9-9.6=-0.6,\ 10-9.6=0.4,\ 10-9.6=0.4$
+
+          差的平方：$(-0.6)^2=0.36,\ (0.4)^2=0.16,\ (-0.6)^2=0.36,\ (0.4)^2=0.16,\ (0.4)^2=0.16$
+
+          $$s^2_{\text{甲}} = \frac{0.36+0.16+0.36+0.16+0.16}{5} = \frac{1.2}{5} = 0.24$$
+        contentEn: |
+          Deviations: $-0.6,\ 0.4,\ -0.6,\ 0.4,\ 0.4$
+
+          Squared deviations: $0.36,\ 0.16,\ 0.36,\ 0.16,\ 0.16$
+
+          $$s^2_A = \frac{0.36+0.16+0.36+0.16+0.16}{5} = \frac{1.2}{5} = 0.24$$
+      - step: 计算乙的方差
+        stepEn: Calculate Shooter B's variance
+        content: |
+          各数据与均值的差：$7-9.6=-2.6,\ 11-9.6=1.4,\ 8-9.6=-1.6,\ 12-9.6=2.4,\ 10-9.6=0.4$
+
+          差的平方：$6.76,\ 1.96,\ 2.56,\ 5.76,\ 0.16$
+
+          $$s^2_{\text{乙}} = \frac{6.76+1.96+2.56+5.76+0.16}{5} = \frac{17.2}{5} = 3.44$$
+        contentEn: |
+          Deviations: $-2.6,\ 1.4,\ -1.6,\ 2.4,\ 0.4$
+
+          Squared deviations: $6.76,\ 1.96,\ 2.56,\ 5.76,\ 0.16$
+
+          $$s^2_B = \frac{6.76+1.96+2.56+5.76+0.16}{5} = \frac{17.2}{5} = 3.44$$
+      - step: 结论
+        stepEn: Conclusion
+        content: |
+          $s^2_{\text{甲}} = 0.24 < s^2_{\text{乙}} = 3.44$
+
+          甲的<<方差/variance>>远小于乙，说明甲的成绩更稳定。**应选甲参加比赛。**
+
+          标准差：$s_{\text{甲}} = \sqrt{0.24} \approx 0.49$ 环，$s_{\text{乙}} = \sqrt{3.44} \approx 1.85$ 环。乙的成绩偏离均值约1.85环，甲只偏离约0.49环。
+        contentEn: |
+          $s^2_A = 0.24 < s^2_B = 3.44$
+
+          Shooter A's variance is far smaller, meaning A is more consistent. **Choose Shooter A for the competition.**
+
+          Standard deviations: $s_A = \sqrt{0.24} \approx 0.49$ rings, $s_B = \sqrt{3.44} \approx 1.85$ rings.
+
+  - id: example-compare-groups
+    title: 例4：综合比较两组数据
+    titleEn: "Example 4: Comprehensive comparison of two groups"
+    problem: |
+      某校举行英语演讲比赛，从甲、乙两个班各选出5人参赛，评委打分如下：
+      - 甲班：$\{85, 88, 90, 87, 85\}$
+      - 乙班：$\{78, 92, 86, 95, 84\}$
+
+      （1）分别计算两班选手分数的<<算术平均数/arithmetic mean>>；
+      （2）分别计算两班选手分数的<<方差/variance>>；
+      （3）如果按总体成绩排名，哪个班的整体发挥更好？哪个班的发挥更稳定？
+    problemEn: |
+      In a school English speech competition, 5 students from each of Classes A and B participate. Judges' scores are:
+      - Class A: $\{85, 88, 90, 87, 85\}$
+      - Class B: $\{78, 92, 86, 95, 84\}$
+
+      (1) Calculate the mean score for each class.
+      (2) Calculate the variance for each class.
+      (3) Which class performed better overall? Which performed more consistently?
+    steps:
+      - step: 计算平均数
+        stepEn: Calculate the means
+        content: |
+          甲班：$\bar{x}_{\text{甲}} = \frac{85+88+90+87+85}{5} = \frac{435}{5} = 87$ 分
+
+          乙班：$\bar{x}_{\text{乙}} = \frac{78+92+86+95+84}{5} = \frac{435}{5} = 87$ 分
+
+          **两班平均分相同，都是87分！**
+        contentEn: |
+          Class A: $\bar{x}_A = \frac{85+88+90+87+85}{5} = \frac{435}{5} = 87$
+
+          Class B: $\bar{x}_B = \frac{78+92+86+95+84}{5} = \frac{435}{5} = 87$
+
+          **Both classes have the same mean of 87!**
+      - step: 计算甲班方差
+        stepEn: Calculate Class A's variance
+        content: |
+          各数与均值87的差：$-2,\ 1,\ 3,\ 0,\ -2$
+
+          差的平方：$4,\ 1,\ 9,\ 0,\ 4$
+
+          $$s^2_{\text{甲}} = \frac{4+1+9+0+4}{5} = \frac{18}{5} = 3.6$$
+        contentEn: |
+          Deviations from 87: $-2,\ 1,\ 3,\ 0,\ -2$
+
+          Squared: $4,\ 1,\ 9,\ 0,\ 4$
+
+          $$s^2_A = \frac{4+1+9+0+4}{5} = \frac{18}{5} = 3.6$$
+      - step: 计算乙班方差
+        stepEn: Calculate Class B's variance
+        content: |
+          各数与均值87的差：$-9,\ 5,\ -1,\ 8,\ -3$
+
+          差的平方：$81,\ 25,\ 1,\ 64,\ 9$
+
+          $$s^2_{\text{乙}} = \frac{81+25+1+64+9}{5} = \frac{180}{5} = 36$$
+        contentEn: |
+          Deviations from 87: $-9,\ 5,\ -1,\ 8,\ -3$
+
+          Squared: $81,\ 25,\ 1,\ 64,\ 9$
+
+          $$s^2_B = \frac{81+25+1+64+9}{5} = \frac{180}{5} = 36$$
+      - step: 综合结论
+        stepEn: Overall conclusion
+        content: |
+          - **整体水平：** 两班平均分相同（87分），整体发挥一样好
+          - **稳定性：** $s^2_{\text{甲}} = 3.6 \ll s^2_{\text{乙}} = 36$，甲班方差**远小于**乙班
+          - **结论：** 甲班发挥更稳定（成绩集中在85-90分之间）；乙班成绩分化明显（最低78，最高95），发挥不稳定
+
+          若比赛规则看重"整体稳定"（如团体赛去掉最高分和最低分），甲班更有优势。
+        contentEn: |
+          - **Overall performance:** Both classes average 87 — equally good
+          - **Consistency:** $s^2_A = 3.6 \ll s^2_B = 36$, Class A's variance is far smaller
+          - **Conclusion:** Class A is more consistent (scores cluster between 85–90); Class B has wide variation (min 78, max 95)
+
+          If the competition rewards consistency (e.g., team events that drop highest and lowest scores), Class A has the advantage.
+
+  - id: example-histogram
+    title: 例5：读取频率分布直方图
+    titleEn: "Example 5: Reading a frequency distribution histogram"
+    problem: |
+      某班40名同学一次数学测验成绩的<<频率分布直方图/frequency distribution histogram>>数据如下，每个分数段的**组距**均为10分：
+
+      | 分数段 | 频率/组距 |
+      |--------|----------|
+      | [50, 60) | 0.005 |
+      | [60, 70) | 0.020 |
+      | [70, 80) | 0.045 |
+      | [80, 90) | 0.025 |
+      | [90, 100] | 0.005 |
+
+      （1）求成绩在 $[70, 80)$ 分段的频率和频数；
+      （2）求成绩在 $[60, 80)$ 之间的频率；
+      （3）估计这次考试成绩的<<算术平均数/arithmetic mean>>（用各组组中值代替该组所有数据）。
+    problemEn: |
+      A frequency distribution histogram shows math test scores for 40 students. Each class has **width 10**. The **frequency density** (frequency ÷ class width) for each interval is:
+
+      | Score interval | Freq. density |
+      |----------------|---------------|
+      | [50, 60) | 0.005 |
+      | [60, 70) | 0.020 |
+      | [70, 80) | 0.045 |
+      | [80, 90) | 0.025 |
+      | [90, 100] | 0.005 |
+
+      (1) Find the relative frequency and frequency count for the [70, 80) interval.
+      (2) Find the relative frequency for the combined interval [60, 80).
+      (3) Estimate the mean score using the midpoint of each interval.
+    steps:
+      - step: 读懂纵轴含义——频率/组距，换算出各段频率
+        stepEn: Understand frequency density and convert to relative frequency
+        content: |
+          直方图纵轴是**频率/组距**，不是直接的频率。要得到某分数段的**频率**，需要：
+
+          $$\text{频率} = \text{（频率/组距）} \times \text{组距}$$
+
+          本题每个分数段的组距均为 $10$，所以**频率 $=$ 纵轴读数 $\times 10$**。
+
+          逐段计算并验证（所有频率之和必须等于1）：
+
+          | 分数段 | 频率/组距 | 频率（$\times 10$）| 频数（$\times 40$）|
+          |--------|----------|--------------------|---------------------|
+          | [50, 60) | 0.005 | 0.05 | 2人 |
+          | [60, 70) | 0.020 | 0.20 | 8人 |
+          | [70, 80) | 0.045 | 0.45 | 18人 |
+          | [80, 90) | 0.025 | 0.25 | 10人 |
+          | [90, 100] | 0.005 | 0.05 | 2人 |
+          | **合计** | — | **1.00** ✓ | **40人** ✓ |
+
+          **验证通过：** 频率之和 $= 0.05+0.20+0.45+0.25+0.05 = 1.00$。
+        contentEn: |
+          The vertical axis shows **frequency density** (= frequency ÷ class width). To get the **relative frequency** for each interval:
+
+          $$\text{relative frequency} = \text{frequency density} \times \text{class width}$$
+
+          With class width $= 10$, multiply each density by 10:
+
+          | Interval | Freq. density | Rel. freq. ($\times 10$) | Count ($\times 40$) |
+          |----------|---------------|--------------------------|---------------------|
+          | [50, 60) | 0.005 | 0.05 | 2 |
+          | [60, 70) | 0.020 | 0.20 | 8 |
+          | [70, 80) | 0.045 | 0.45 | 18 |
+          | [80, 90) | 0.025 | 0.25 | 10 |
+          | [90, 100] | 0.005 | 0.05 | 2 |
+          | **Total** | — | **1.00** ✓ | **40** ✓ |
+
+          **Check: relative frequencies sum to 1.00.** ✓
+
+      - step: 第（1）题——[70, 80) 的频率和频数
+        stepEn: Part (1) — relative frequency and count for [70, 80)
+        content: |
+          由上表直接读取 $[70, 80)$ 行：
+          - **频率 $= 0.45$**（即 $45\%$ 的同学成绩在 $[70, 80)$ 区间）
+          - **频数 $= 0.45 \times 40 = 18$ 人**
+        contentEn: |
+          From the table, read the $[70, 80)$ row:
+          - **Relative frequency $= 0.45$** (45% of students scored in this range)
+          - **Frequency count $= 0.45 \times 40 = 18$ students**
+
+      - step: 第（2）题——[60, 80) 的频率
+        stepEn: Part (2) — relative frequency for [60, 80)
+        content: |
+          $[60, 80)$ 包含两个连续的分数段：$[60, 70)$ 和 $[70, 80)$，两段频率**相加**：
+
+          $$\text{频率}_{[60,80)} = 0.20 + 0.45 = 0.65$$
+
+          即有 $65\%$ 的同学成绩在 $60$ 至 $80$ 分之间，频数 $= 0.65 \times 40 = 26$ 人。
+        contentEn: |
+          $[60, 80)$ spans two consecutive intervals: $[60, 70)$ and $[70, 80)$. Add their frequencies:
+
+          $$\text{freq}_{[60,80)} = 0.20 + 0.45 = 0.65$$
+
+          So 65% of students scored between 60 and 80; that is $0.65 \times 40 = 26$ students.
+
+      - step: 第（3）题——用组中值估算平均数
+        stepEn: Part (3) — estimate mean using interval midpoints
+        content: |
+          当数据以分组形式给出时，用各分数段的**组中值**（区间中点）来代表该段所有数据，再用<<加权平均数/weighted mean>>公式（以频率为权重）估算全体平均数：
+
+          | 分数段 | 组中值 $m_i$ | 频率 $f_i$ | $m_i \times f_i$ |
+          |--------|------------|-----------|-----------------|
+          | [50, 60) | 55 | 0.05 | 2.75 |
+          | [60, 70) | 65 | 0.20 | 13.00 |
+          | [70, 80) | 75 | 0.45 | 33.75 |
+          | [80, 90) | 85 | 0.25 | 21.25 |
+          | [90, 100] | 95 | 0.05 | 4.75 |
+
+          $$\bar{x} = \sum m_i \times f_i = 2.75 + 13.00 + 33.75 + 21.25 + 4.75 = 75.5 \text{（分）}$$
+
+          **估算结果：** 全班平均分约为 $\mathbf{75.5}$ 分。
+
+          **注意：** 这是一个**估算值**，因为我们假设每段内数据均匀分布，用组中值代替具体值。实际平均数可能略有不同。
+        contentEn: |
+          When data is given in grouped form, use the **midpoint** of each interval to represent all values in that interval, then apply the <<加权平均数/weighted mean>> formula using frequencies as weights:
+
+          | Interval | Midpoint $m_i$ | Freq. $f_i$ | $m_i \times f_i$ |
+          |----------|----------------|-------------|-----------------|
+          | [50, 60) | 55 | 0.05 | 2.75 |
+          | [60, 70) | 65 | 0.20 | 13.00 |
+          | [70, 80) | 75 | 0.45 | 33.75 |
+          | [80, 90) | 85 | 0.25 | 21.25 |
+          | [90, 100] | 95 | 0.05 | 4.75 |
+
+          $$\bar{x} = \sum m_i \times f_i = 2.75 + 13.00 + 33.75 + 21.25 + 4.75 = 75.5 \text{ (points)}$$
+
+          **Estimated class mean: $\mathbf{75.5}$ points.**
+
+          **Note:** This is an **estimate** — we assume values are evenly distributed within each interval. The true mean may differ slightly.
+
+exercises:
+  - id: ex01
+    type: fill
+    question: '一组数据：$4,\ 7,\ 3,\ 8,\ 6,\ 5,\ 7,\ 4$，共8个数。这组数据的<<算术平均数/arithmetic mean>>是______，<<众数/mode>>是______。'
+    questionEn: 'Data: $4,\ 7,\ 3,\ 8,\ 6,\ 5,\ 7,\ 4$ (8 values). The <<算术平均数/arithmetic mean>> is ______, and the <<众数/mode>> is ______.'
+    answer: '平均数：$\bar{x} = \frac{4+7+3+8+6+5+7+4}{8} = \frac{44}{8} = 5.5$；众数：7（出现2次，最多）'
+    answerEn: 'Mean: $\bar{x} = \frac{4+7+3+8+6+5+7+4}{8} = \frac{44}{8} = 5.5$; Mode: 7 (appears twice, the most)'
+
+  - id: ex02
+    type: fill
+    question: '将上题数据 $3,\ 4,\ 4,\ 5,\ 6,\ 7,\ 7,\ 8$（已排序）求<<中位数/median>>：______'
+    questionEn: 'Using the sorted data $3,\ 4,\ 4,\ 5,\ 6,\ 7,\ 7,\ 8$ from Ex01, find the <<中位数/median>>: ______'
+    answer: '8个数，取第4个（5）和第5个（6）的平均：$\frac{5+6}{2} = 5.5$'
+    answerEn: '8 values; average of 4th (5) and 5th (6): $\frac{5+6}{2} = 5.5$'
+
+  - id: ex03
+    type: choice
+    question: |
+      下列数据中，哪组数据最适合用<<中位数/median>>来代表其"典型值"？
+      A. $\{80, 82, 79, 81, 83\}$
+      B. $\{40, 45, 48, 50, 200\}$
+      C. $\{10, 10, 10, 10, 10\}$
+      D. $\{1, 2, 3, 4, 5\}$
+    questionEn: |
+      Which dataset is best represented by the <<中位数/median>> as its "typical value"?
+      A. $\{80, 82, 79, 81, 83\}$
+      B. $\{40, 45, 48, 50, 200\}$
+      C. $\{10, 10, 10, 10, 10\}$
+      D. $\{1, 2, 3, 4, 5\}$
+    answer: 'B。B组中有极端值200，<<算术平均数/arithmetic mean>>会被拉高（实际均值=76.6），而<<中位数/median>>=48，更能代表典型水平。A组数据均匀，C组全相同，D组无极端值，这三组用均值都合适。'
+    answerEn: 'B. Group B contains outlier 200 which inflates the mean to 76.6, while the median of 48 better represents the typical value. Groups A, C, D have no significant outliers, so the mean works fine for them.'
+    choices: ['A', 'B', 'C', 'D']
+    correctChoice: 'B'
+
+  - id: ex04
+    type: fill
+    question: |
+      某同学5次语文测验成绩：$72,\ 85,\ 78,\ 91,\ 84$。
+      （1）<<算术平均数/arithmetic mean>> $\bar{x} =$ ______分
+      （2）<<中位数/median>> $=$ ______分
+    questionEn: |
+      A student's five Chinese test scores: $72,\ 85,\ 78,\ 91,\ 84$.
+      (1) Mean $\bar{x} =$ ______ points
+      (2) Median $=$ ______ points
+    answer: |
+      （1）$\bar{x} = \frac{72+85+78+91+84}{5} = \frac{410}{5} = 82$ 分
+      （2）排序：$72, 78, 84, 85, 91$，中间第3个数 $= 84$ 分
+    answerEn: |
+      (1) $\bar{x} = \frac{72+85+78+91+84}{5} = \frac{410}{5} = 82$ points
+      (2) Sorted: $72, 78, 84, 85, 91$; middle (3rd) value $= 84$ points
+
+  - id: ex05
+    type: choice
+    question: |
+      一家服装店统计了某款T恤的销售量（按尺码）：S码卖出3件，M码卖出12件，L码卖出8件，XL码卖出5件。店主想知道"最畅销的尺码"，应该关注的统计量是：
+      A. <<算术平均数/arithmetic mean>>
+      B. <<中位数/median>>
+      C. <<众数/mode>>
+      D. <<方差/variance>>
+    questionEn: |
+      A clothing store sells a T-shirt: S size 3 units, M size 12 units, L size 8 units, XL size 5 units. The owner wants to know the "best-selling size." Which statistic should they focus on?
+      A. <<算术平均数/arithmetic mean>>
+      B. <<中位数/median>>
+      C. <<众数/mode>>
+      D. <<方差/variance>>
+    answer: 'C。尺码是分类数据（非数值），无法计算均值或中位数。最畅销尺码即出现次数（销售量）最多的——M码12件，是<<众数/mode>>的概念。'
+    answerEn: 'C. Clothing sizes are categorical data — you cannot compute a meaningful mean or median. The best-selling size is the one with highest frequency, which is the <<众数/mode>> concept: M size with 12 units.'
+    choices: ['A', 'B', 'C', 'D']
+    correctChoice: 'C'
+
+  - id: ex06
+    type: fill
+    question: |
+      某校用<<加权平均数/weighted mean>>计算综合素质评分：
+      - 学习成绩（权重3）：88分
+      - 体育成绩（权重1）：76分
+      - 艺术表现（权重1）：82分
+
+      综合素质评分 $=$ ______分
+    questionEn: |
+      A school uses a <<加权平均数/weighted mean>> for holistic assessment:
+      - Academic score (weight 3): 88 points
+      - Physical education (weight 1): 76 points
+      - Arts performance (weight 1): 82 points
+
+      Holistic score $=$ ______ points
+    answer: '$\bar{x} = \frac{3 \times 88 + 1 \times 76 + 1 \times 82}{3+1+1} = \frac{264+76+82}{5} = \frac{422}{5} = 84.4$ 分'
+    answerEn: '$\bar{x} = \frac{3 \times 88 + 1 \times 76 + 1 \times 82}{3+1+1} = \frac{264+76+82}{5} = \frac{422}{5} = 84.4$ points'
+
+  - id: ex07
+    type: fill
+    question: |
+      数据 $\{2,\ 4,\ 6,\ 8,\ 10\}$，已知 $\bar{x} = 6$。
+      计算这组数据的<<方差/variance>> $s^2 =$ ______
+    questionEn: |
+      For data $\{2,\ 4,\ 6,\ 8,\ 10\}$ with known mean $\bar{x} = 6$:
+      Calculate the <<方差/variance>> $s^2 =$ ______
+    answer: |
+      $s^2 = \frac{(2-6)^2+(4-6)^2+(6-6)^2+(8-6)^2+(10-6)^2}{5}$
+      $= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8$
+    answerEn: |
+      $s^2 = \frac{(2-6)^2+(4-6)^2+(6-6)^2+(8-6)^2+(10-6)^2}{5}$
+      $= \frac{16+4+0+4+16}{5} = \frac{40}{5} = 8$
+
+  - id: ex08
+    type: judge
+    question: '一组数据的<<众数/mode>>一定是唯一的。（判断正误）'
+    questionEn: 'The <<众数/mode>> of a dataset is always unique. (True or False)'
+    answer: '**错误**。一组数据可以有多个众数（当两个或多个值并列出现次数最多时），也可以没有众数（当所有值出现次数相同时）。例如 $\{1,1,2,2,3\}$ 有两个众数：1和2。'
+    answerEn: '**False.** A dataset can have multiple modes (when two or more values tie for highest frequency) or no mode (when all values have equal frequency). For example, $\{1,1,2,2,3\}$ has two modes: 1 and 2.'
+
+  - id: ex09
+    type: judge
+    question: '方差越大，说明数据越稳定。（判断正误）'
+    questionEn: 'A larger variance indicates that the data is more stable. (True or False)'
+    answer: '**错误**。方差越大，数据**越分散**、越不稳定；方差越小，数据越集中、越稳定。'
+    answerEn: '**False.** A larger variance means data is **more spread out** and less stable. A smaller variance means data is more concentrated and stable.'
+
+  - id: ex10
+    type: fill
+    question: |
+      某班6名同学的身高（cm）：$158,\ 162,\ 165,\ 160,\ 163,\ 162$。
+      （1）$\bar{x} =$ ______cm
+      （2）<<众数/mode>> $=$ ______cm
+      （3）<<中位数/median>> $=$ ______cm
+    questionEn: |
+      Six students' heights (cm): $158,\ 162,\ 165,\ 160,\ 163,\ 162$.
+      (1) $\bar{x} =$ ______ cm
+      (2) Mode $=$ ______ cm
+      (3) Median $=$ ______ cm
+    answer: |
+      （1）$\bar{x} = \frac{158+162+165+160+163+162}{6} = \frac{970}{6} \approx 161.7$ cm
+      （2）162 出现2次，其余各出现1次，众数 $= 162$ cm
+      （3）排序：$158, 160, 162, 162, 163, 165$；中位数 $= \frac{162+162}{2} = 162$ cm
+    answerEn: |
+      (1) $\bar{x} = \frac{158+162+165+160+163+162}{6} = \frac{970}{6} \approx 161.7$ cm
+      (2) 162 appears twice (most frequent), mode $= 162$ cm
+      (3) Sorted: $158, 160, 162, 162, 163, 165$; median $= \frac{162+162}{2} = 162$ cm
+
+  - id: ex11
+    type: choice
+    question: |
+      甲、乙两人各参加5次投篮练习，命中次数如下：
+      甲：$\{7, 8, 8, 9, 8\}$；乙：$\{6, 10, 7, 9, 8\}$
+      已知两人命中次数的<<算术平均数/arithmetic mean>>相同，那么（  ）
+      A. 甲比乙更稳定，应选甲
+      B. 乙比甲更稳定，应选乙
+      C. 两人一样稳定
+      D. 无法判断
+    questionEn: |
+      Players A and B each attempt 5 basketball shots, with these hit counts:
+      A: $\{7, 8, 8, 9, 8\}$; B: $\{6, 10, 7, 9, 8\}$
+      Both players have the same mean. Who is more consistent?
+      A. Player A is more consistent — choose A
+      B. Player B is more consistent — choose B
+      C. They are equally consistent
+      D. Cannot determine
+    answer: |
+      A。两人均值都 $= \frac{40}{5} = 8$。
+      $s^2_{\text{甲}} = \frac{(7-8)^2+(8-8)^2+(8-8)^2+(9-8)^2+(8-8)^2}{5} = \frac{1+0+0+1+0}{5} = 0.4$
+      $s^2_{\text{乙}} = \frac{(6-8)^2+(10-8)^2+(7-8)^2+(9-8)^2+(8-8)^2}{5} = \frac{4+4+1+1+0}{5} = 2$
+      $s^2_{\text{甲}} = 0.4 < s^2_{\text{乙}} = 2$，甲更稳定，选A。
+    answerEn: |
+      A. Both means equal 8. $s^2_A = 0.4$, $s^2_B = 2$. Since $s^2_A < s^2_B$, Player A is more consistent.
+    choices: ['A', 'B', 'C', 'D']
+    correctChoice: 'A'
+
+  - id: ex12
+    type: open
+    question: |
+      某地一周的最高气温（℃）为：$22,\ 25,\ 28,\ 30,\ 27,\ 24,\ 26$。
+      （1）计算这周最高气温的<<算术平均数/arithmetic mean>>和<<中位数/median>>
+      （2）计算这周最高气温的<<方差/variance>>
+      （3）下周预报的最高气温为：$20,\ 35,\ 28,\ 30,\ 22,\ 25,\ 22$，均值与本周相同，但<<方差/variance>>更大。根据方差的含义，解释这意味着什么？
+    questionEn: |
+      A city's maximum temperatures (°C) for one week: $22,\ 25,\ 28,\ 30,\ 27,\ 24,\ 26$.
+      (1) Find the mean and median of this week's temperatures.
+      (2) Calculate the variance.
+      (3) Next week's forecast: $20,\ 35,\ 28,\ 30,\ 22,\ 25,\ 22$. The mean is the same but the variance is larger. In terms of variance, what does this mean?
+    answer: |
+      （1）$\bar{x} = \frac{22+25+28+30+27+24+26}{7} = \frac{182}{7} = 26$ ℃；排序：$22,24,25,26,27,28,30$，中位数 $= 26$ ℃
+      （2）各数与均值26的差：$-4,-1,2,4,1,-2,0$；平方：$16,1,4,16,1,4,0$；$s^2 = \frac{42}{7} = 6$
+      （3）下周方差更大，说明气温变化更剧烈，忽高忽低，温差大。建议多备几件衣服，注意随时增减衣物。
+    answerEn: |
+      (1) $\bar{x} = \frac{182}{7} = 26$ °C; sorted: $22,24,25,26,27,28,30$, median $= 26$ °C
+      (2) Deviations from 26: $-4,-1,2,4,1,-2,0$; squared: $16,1,4,16,1,4,0$; $s^2 = \frac{42}{7} = 6$
+      (3) A larger variance next week means temperatures fluctuate more dramatically — expect bigger swings between hot and cold days. Pack layers and be ready to adjust clothing throughout the day.
+
+examPrep:
+  intro: 本章提升练习，覆盖核心知识点与易错情形，帮助深化理解和综合运用。
+  introEn: Challenge problems for this chapter covering key concepts and common mistakes, to deepen understanding and apply knowledge comprehensively.
+  problems:
+    - id: ep01
+      type: choice
+      question: |
+        某公司8名员工的月薪（元）为：$3000,\ 3500,\ 4000,\ 4500,\ 4500,\ 5000,\ 5500,\ 30000$。
+        以下说法正确的是（  ）
+        A. 月薪的<<算术平均数/arithmetic mean>>最能代表这8人的"典型"月薪
+        B. 月薪的<<中位数/median>>最能代表这8人的"典型"月薪
+        C. 月薪的<<众数/mode>>最能代表这8人的"典型"月薪
+        D. 三种统计量的代表性相同
+      questionEn: |
+        Eight employees earn (¥/month): $3000,\ 3500,\ 4000,\ 4500,\ 4500,\ 5000,\ 5500,\ 30000$.
+        Which statement is correct?
+        A. The mean best represents the "typical" monthly salary
+        B. The median best represents the "typical" monthly salary
+        C. The mode best represents the "typical" monthly salary
+        D. All three measures are equally representative
+      answer: |
+        **B**。均值 $= \frac{3000+3500+4000+4500+4500+5000+5500+30000}{8} = \frac{60000}{8} = 7500$ 元，被30000元严重拉高，7名员工实际都低于7500元。
+        中位数：排序后第4、5个数 $= \frac{4500+4500}{2} = 4500$ 元，才是典型水平。
+        众数 $= 4500$ 元，也合理，但中位数利用更多信息，更常用于这类偏斜数据。
+        选B最佳。
+      answerEn: |
+        **B.** Mean $= \frac{60000}{8} = 7500$, inflated by the ¥30,000 outlier; 7 of 8 employees earn below ¥7,500. Median $= \frac{4500+4500}{2} = 4500$, which accurately represents the typical salary. The median is best for skewed distributions with outliers.
+      choices: ['A', 'B', 'C', 'D']
+      correctChoice: 'B'
+
+    - id: ep02
+      type: fill
+      question: |
+        已知5个数 $x_1,\ x_2,\ x_3,\ x_4,\ x_5$ 的<<算术平均数/arithmetic mean>>为6，<<方差/variance>>为4。
+        若将每个数都增加2，即新数据为 $x_1+2,\ x_2+2,\ x_3+2,\ x_4+2,\ x_5+2$，则：
+        （1）新数据的<<算术平均数/arithmetic mean>>为______
+        （2）新数据的<<方差/variance>>为______
+      questionEn: |
+        Five numbers $x_1,\ x_2,\ x_3,\ x_4,\ x_5$ have mean 6 and variance 4.
+        Each number is increased by 2 to form new data $x_i + 2$.
+        (1) The new mean is ______
+        (2) The new variance is ______
+      answer: |
+        （1）新均值 $= 6+2 = 8$。原因：每个数都增加了2，总和增加 $5 \times 2 = 10$，均值增加 $\frac{10}{5} = 2$。
+        （2）新方差仍为 **4**。原因：$(x_i+2) - (\bar{x}+2) = x_i - \bar{x}$，与均值的偏差不变，所以方差不变。**每个数加上同一常数，方差不变。**
+      answerEn: |
+        (1) New mean $= 6+2 = 8$. Adding 2 to each value increases the sum by $5\times2=10$, so the mean increases by 2.
+        (2) New variance is still **4**. Since $(x_i+2)-(\bar{x}+2) = x_i - \bar{x}$, the deviations are unchanged, so variance is unchanged. **Adding a constant to every value does not change the variance.**
+
+    - id: ep03
+      type: open
+      question: |
+        两位裁判对甲、乙两位歌手打分如下：
+
+        | 裁判 | 甲 | 乙 |
+        |------|----|----|
+        | 裁判1 | 88 | 82 |
+        | 裁判2 | 92 | 88 |
+        | 裁判3 | 85 | 95 |
+        | 裁判4 | 89 | 91 |
+        | 裁判5 | 86 | 84 |
+
+        （1）分别计算甲、乙两人的<<算术平均数/arithmetic mean>>（精确到0.1分）
+        （2）分别计算甲、乙两人分数的<<方差/variance>>
+        （3）综合均值和方差，说明你会推荐哪位歌手晋级，并给出理由
+      questionEn: |
+        Two singers are scored by five judges:
+
+        | Judge | Singer A | Singer B |
+        |-------|----------|----------|
+        | 1 | 88 | 82 |
+        | 2 | 92 | 88 |
+        | 3 | 85 | 95 |
+        | 4 | 89 | 91 |
+        | 5 | 86 | 84 |
+
+        (1) Find the mean score for each singer (to 1 decimal place).
+        (2) Find the variance for each singer.
+        (3) Using both mean and variance, state which singer you recommend and explain why.
+      answer: |
+        （1）甲：$\bar{x}_{\text{甲}} = \frac{88+92+85+89+86}{5} = \frac{440}{5} = 88$ 分
+        乙：$\bar{x}_{\text{乙}} = \frac{82+88+95+91+84}{5} = \frac{440}{5} = 88$ 分（均为88分）
+
+        （2）甲的方差：各数与88的差：$0,4,-3,1,-2$；平方：$0,16,9,1,4$
+        $s^2_{\text{甲}} = \frac{0+16+9+1+4}{5} = \frac{30}{5} = 6$
+
+        乙的方差：各数与88的差：$-6,0,7,3,-4$；平方：$36,0,49,9,16$
+        $s^2_{\text{乙}} = \frac{36+0+49+9+16}{5} = \frac{110}{5} = 22$
+
+        （3）两人均值相同（88分），但甲的方差 $6 <$ 乙的方差 $22$，甲发挥更稳定，各评委打分差异小。推荐**甲**晋级——稳定的发挥往往更能体现歌手的真实水平。（注：若比赛规则鼓励高峰表现，乙的95分也有亮点，但综合来看甲更稳定。）
+      answerEn: |
+        (1) Both singers have mean $= 88$ points.
+        (2) $s^2_A = 6$; $s^2_B = 22$.
+        (3) With equal means, Singer A's much smaller variance ($6$ vs $22$) shows far more consistent performance across all judges. Recommend **Singer A** — consistency reflects reliable true ability. (Note: Singer B's peak score of 95 is impressive, but the high variance suggests uneven performance.)
+
+    - id: ep04
+      type: fill
+      question: |
+        某次数学考试，全班30人，成绩统计如下：
+
+        | 分数段 | 人数 |
+        |--------|------|
+        | 60分 | 2人 |
+        | 70分 | 8人 |
+        | 80分 | 12人 |
+        | 90分 | 6人 |
+        | 100分 | 2人 |
+
+        （1）用<<加权平均数/weighted mean>>计算全班平均分（以人数为权）：______分
+        （2）这组数据的<<众数/mode>>是______分
+        （3）这组数据的<<中位数/median>>是______分
+      questionEn: |
+        A math exam with 30 students, score distribution:
+
+        | Score | Students |
+        |-------|----------|
+        | 60 | 2 |
+        | 70 | 8 |
+        | 80 | 12 |
+        | 90 | 6 |
+        | 100 | 2 |
+
+        (1) Use the <<加权平均数/weighted mean>> (weight = number of students) to find the class mean: ______ points
+        (2) Mode: ______ points
+        (3) Median: ______ points
+      answer: |
+        （1）$\bar{x} = \frac{60 \times 2 + 70 \times 8 + 80 \times 12 + 90 \times 6 + 100 \times 2}{30} = \frac{120+560+960+540+200}{30} = \frac{2380}{30} \approx 79.3$ 分
+        （2）80分出现12次，最多，众数 $= 80$ 分
+        （3）30人，中位数是第15、16个数的均值。前2人得60，接下来8人得70（第3-10名），接下来12人得80（第11-22名）。第15、16名均在80分段，中位数 $= 80$ 分
+      answerEn: |
+        (1) $\bar{x} = \frac{120+560+960+540+200}{30} = \frac{2380}{30} \approx 79.3$ points
+        (2) 80 points appears 12 times (most frequent); mode $= 80$ points
+        (3) With 30 values, median $= $ average of 15th and 16th values. Positions 1–2: score 60; positions 3–10: score 70; positions 11–22: score 80. Both 15th and 16th fall in the 80-point group; median $= 80$ points.
+
+    - id: ep05
+      type: open
+      question: |
+        **批判性思维题：** 某杂志报道："本市高中生的<<算术平均数/arithmetic mean>>月零花钱为¥800元。" 小华的月零花钱只有¥200元，她觉得自己比大多数同学少很多。
+
+        请分析：仅凭"平均月零花钱¥800元"这一信息，能否确定大多数高中生的月零花钱都在¥800元左右？为什么？如果你是记者，还想了解哪些统计数据来更全面地描述这一情况？（至少说出2种统计量并解释其作用）
+      questionEn: |
+        **Critical thinking problem:** A magazine reports: "The average monthly allowance for high school students in this city is ¥800." Xiao Hua's allowance is only ¥200, and she feels she has much less than most students.
+
+        Can we conclude from "average ¥800" alone that most students receive around ¥800/month? Why or why not? If you were a reporter, what other statistics would you want to know for a more complete picture? (Name at least 2 statistics and explain their purpose.)
+      answer: |
+        **不能仅凭平均数下结论。** <<算术平均数/arithmetic mean>>容易被少数极高值拉高。若班里有几名家庭富裕的同学月零花钱达¥5000甚至更高，他们的高值会使全班平均值远高于大多数人的实际水平。
+
+        **还需了解的统计数据：**
+        1. **<<中位数/median>>**：能告诉我们"一半同学高于/低于"什么水平，不受极端值影响，更能代表"典型"水平
+        2. **<<方差/variance>>或<<标准差/standard deviation>>**：反映零花钱的差异程度。方差大说明同学之间零花钱差距悬殊；方差小说明大家差不多
+        3. **众数**：最常见的零花钱数额是多少？
+        4. **分布情况**：各区间（¥0-200，¥200-400，…）的人数占比
+
+        **结论：** 小华不应因为低于"平均值"就感到太多压力。更重要的是了解中位数——如果中位数只有¥350，说明其实超过一半的同学月零花钱都在¥350以下，小华的¥200并不像平均数所暗示的那么"少"。**统计数字需要全面解读，不能只看一个指标。**
+      answerEn: |
+        **No, we cannot conclude this from the mean alone.** The <<算术平均数/arithmetic mean>> is easily inflated by a few very high values. If a handful of wealthy students receive ¥5,000+ per month, their extreme values pull the mean well above what most students actually receive.
+
+        **Additional statistics needed:**
+        1. **<<中位数/median>>**: Tells us the value where half of students are above and half below — not affected by outliers, represents the "typical" student better
+        2. **<<方差/variance>> or <<标准差/standard deviation>>**: Shows how spread out allowances are. High variance means large inequality; low variance means most students are similar
+        3. **Mode**: What is the most common allowance amount?
+        4. **Distribution**: What percentage of students fall in each range (¥0–200, ¥200–400, etc.)?
+
+        **Conclusion:** Xiao Hua shouldn't feel too pressured by being below "average." The median matters more — if the median is ¥350, then over half of students receive less than ¥350/month, and ¥200 isn't as far below typical as the mean suggests. **Statistics require comprehensive interpretation; never rely on a single number.**
+
+summary: |
+  本章学习了描述一组数据特征的两类统计量：
+
+  **集中趋势（数据"典型值"在哪里）：**
+  - **<<算术平均数/arithmetic mean>>** $\bar{x} = \frac{\sum x_i}{n}$：利用全部数据，但受极端值影响大
+  - **<<加权平均数/weighted mean>>** $\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$：各数据重要程度不同时使用
+  - **<<中位数/median>>**：排序后中间值，不受极端值影响，适用于偏斜数据
+  - **<<众数/mode>>**：出现次数最多，适用于分类数据；可能不唯一
+
+  **离散程度（数据"分散不分散"）：**
+  - **<<方差/variance>>** $s^2 = \frac{\sum(x_i - \bar{x})^2}{n}$：越小越稳定，越大越分散
+  - **<<标准差/standard deviation>>** $s = \sqrt{s^2}$：与原数据同单位，更直观
+
+  **选用原则：** 有极端值选中位数；分类数据选众数；数据均匀可选均值。比较两组数据时，均值相同看方差，方差小的更稳定。
+
+  **统计素养：** 面对任何统计数字，先问"用的是哪种统计量"、"有没有极端值"、"是否有被隐藏的信息"。数据会说谎，但会分析数据的人不会被骗。
+summaryEn: |
+  This chapter covered two types of statistics describing a dataset's characteristics:
+
+  **Measures of central tendency (where data is "centered"):**
+  - **<<算术平均数/arithmetic mean>>** $\bar{x} = \frac{\sum x_i}{n}$: uses all data, but sensitive to outliers
+  - **<<加权平均数/weighted mean>>** $\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$: use when values have different importance
+  - **<<中位数/median>>**: middle value after sorting; robust against outliers; best for skewed data
+  - **<<众数/mode>>**: most frequent value; for categorical data; may not be unique
+
+  **Measures of spread (how "dispersed" the data is):**
+  - **<<方差/variance>>** $s^2 = \frac{\sum(x_i - \bar{x})^2}{n}$: smaller = more stable; larger = more spread
+  - **<<标准差/standard deviation>>** $s = \sqrt{s^2}$: same units as data; more interpretable
+
+  **Choosing the right measure:** Use median when outliers are present; use mode for categorical data; arithmetic mean works when data is roughly symmetric. When comparing two groups, if means are equal, choose the group with smaller variance (more stable).
+
+  **Statistical literacy:** When you encounter any statistic, ask: "Which measure is being reported?", "Are there outliers?", "What information might be hidden?" Data can mislead, but those who understand statistics won't be fooled.

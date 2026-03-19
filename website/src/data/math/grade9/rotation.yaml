@@ -1,0 +1,520 @@
+title: 旋转
+titleEn: Rotation
+chapter: 4
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 第1课时 约60分钟 · 第2课时 约55分钟
+estimatedTimeEn: Session 1 ~60 min · Session 2 ~55 min
+
+objectives:
+  - 理解旋转的定义：旋转中心、旋转角、旋转方向
+  - 掌握旋转的基本性质：对应点等距、对应线段等长、图形全等
+  - 理解中心对称的概念，能判断中心对称图形
+  - 掌握坐标平面中绕原点旋转90°和180°的坐标变换规则
+objectivesEn:
+  - 'Understand the definition of rotation: center, angle, and direction'
+  - 'Master rotation properties: equidistant corresponding points, equal corresponding segments, congruent figures'
+  - Understand central symmetry and identify centrally symmetric figures
+  - Master coordinate transformation rules for 90° and 180° rotations about the origin
+
+prerequisites:
+  title: 预备知识
+  titleEn: Prerequisites
+  knownNumbers:
+    - 平移和轴对称变换
+    - 角的度量与坐标系
+  knownNumbersEn:
+    - Translation and line symmetry transformations
+    - Angle measurement and coordinate systems
+  conclusion: |
+    平移和轴对称都是等距变换（保持图形全等）。旋转是第三种等距变换，学完本章后你将掌握三种基本变换的完整体系。
+  conclusionEn: |
+    Translation and line symmetry are both isometries (preserving congruence). Rotation is the third isometry. After this chapter you will have a complete picture of all three basic transformations.
+
+concepts:
+  - id: rotation-definition
+    title: 旋转的定义与三要素
+    titleEn: Definition and Three Elements of Rotation
+    hasVisualization: true
+    content: |
+      把图形上的每一个点绕某个固定点旋转同一个角度，这种变换叫做<<旋转/rotation>>。
+      旋转三要素（缺一不可）：
+      1. <<旋转中心/center of rotation>>：旋转所绕的固定点
+      2. <<旋转角/angle of rotation>>：每个点旋转的角度
+      3. 旋转方向：<<顺时针/clockwise>>（负方向）或<<逆时针/counterclockwise>>（正方向）
+      旋转后的图形叫做<<旋转像/rotation image>>，原图形上的点与像上对应点叫做<<对应点/corresponding points>>。
+    contentEn: |
+      Rotating every point of a figure by the same angle about a fixed point is called a <<旋转/rotation>>.
+      Three elements (all required):
+      1. <<旋转中心/center of rotation>>: the fixed point about which rotation occurs
+      2. <<旋转角/angle of rotation>>: the angle each point is rotated
+      3. Direction: <<顺时针/clockwise>> (negative) or <<逆时针/counterclockwise>> (positive)
+      The result is called the <<旋转像/rotation image>>; original and image points are <<对应点/corresponding points>>.
+    notes: 旋转中心本身不动——它是唯一一个旋转前后位置不变的点。
+    notesEn: The center of rotation is the only point that does not move under the rotation.
+
+  - id: rotation-properties
+    title: 旋转的基本性质
+    titleEn: Basic Properties of Rotation
+    hasVisualization: true
+    content: |
+      旋转变换有三条核心性质：
+      1. **等距性**：对应点到旋转中心的距离相等。即若点 $P$ 旋转到 $P'$，则 $OP = OP'$（$O$ 为旋转中心）。
+      2. **等角性**：任意对应点与旋转中心所成的角等于旋转角。即 $\angle POP' = $ 旋转角。
+      3. **全等性**：旋转后的图形与原图形全等（所有边长、角度均不变）。
+      推论：旋转是<<等距变换/isometry>>，保持形状和大小，只改变位置和方向。
+    contentEn: |
+      Three core properties of rotation:
+      1. **Equidistance**: corresponding points are equidistant from the center. If $P$ maps to $P'$, then $OP = OP'$.
+      2. **Equal angles**: the angle between any corresponding pair of radii equals the rotation angle: $\angle POP' = $ rotation angle.
+      3. **Congruence**: the image is congruent to the original (all side lengths and angles preserved).
+      Corollary: rotation is an <<等距变换/isometry>> — shape and size are preserved; only position and orientation change.
+    notes: 易错：旋转角是∠POP'，不是∠PP'O。旋转角的顶点在旋转中心。
+    notesEn: 'Common mistake — the rotation angle is ∠POP'', not ∠PP''O. The vertex of the rotation angle is at the center.'
+
+  - id: central-symmetry
+    title: 中心对称
+    titleEn: Central Symmetry
+    hasVisualization: true
+    content: |
+      <<中心对称/central symmetry>>：一个图形绕某点旋转 $180°$ 后与自身完全重合，则称该图形关于该点<<中心对称/centrally symmetric>>。该点称为<<对称中心/center of symmetry>>。
+      性质：若点 $A$ 与点 $B$ 关于点 $O$ 中心对称，则 $O$ 是线段 $AB$ 的中点，且 $OA = OB$。
+      常见中心对称图形：
+      - 平行四边形（以对角线交点为对称中心）
+      - 正偶数边形（正方形、正六边形等）
+      - 线段（以中点为对称中心）
+      - 圆（以圆心为对称中心）
+    contentEn: |
+      <<中心对称/central symmetry>>: a figure that coincides with itself after a $180°$ rotation about some point is called <<中心对称/centrally symmetric>> about that point, which is the <<对称中心/center of symmetry>>.
+      Property: if $A$ and $B$ are symmetric about $O$, then $O$ is the midpoint of $AB$ and $OA = OB$.
+      Common examples:
+      - Parallelogram (center = intersection of diagonals)
+      - Regular polygons with even sides (square, regular hexagon, etc.)
+      - Line segment (center = midpoint)
+      - Circle (center = circle center)
+    notes: 中心对称≠轴对称！平行四边形（非矩形）只有中心对称，没有轴对称；等腰梯形只有轴对称，没有中心对称。
+    notesEn: Central symmetry ≠ line symmetry! A parallelogram (non-rectangle) has only central symmetry; an isosceles trapezoid has only line symmetry.
+
+  - id: rotation-vs-symmetry
+    title: 三种变换的比较
+    titleEn: Comparing the Three Transformations
+    hasVisualization: true
+    content: |
+      三种基本等距变换对比：
+      | 变换 | 决定要素 | 方向感 | 典型例子 |
+      |------|---------|--------|--------|
+      | 平移 | 方向+距离 | 不变 | 楼梯台阶 |
+      | 轴对称 | 对称轴 | 改变（镜像） | 蝴蝶翅膀 |
+      | 旋转 | 中心+角+方向 | 不变 | 钟表指针 |
+      关键区别：轴对称会把"顺时针"变成"逆时针"（左右互换），而平移和旋转不会。
+    contentEn: |
+      Comparing the three basic isometries:
+      | Transformation | Key elements | Orientation | Example |
+      |---------------|-------------|-------------|---------|
+      | Translation | direction + distance | preserved | staircase steps |
+      | Line symmetry | axis | reversed (mirror) | butterfly wings |
+      | Rotation | center + angle + direction | preserved | clock hands |
+      Key distinction: line symmetry reverses orientation (clockwise → counterclockwise); translation and rotation do not.
+    notes: 判断方法：若原图形和像可以通过"滑动"重合，是平移；通过"翻转"重合，是轴对称；通过"转动"重合，是旋转。
+    notesEn: 'Quick test — if original and image coincide by "sliding" → translation; by "flipping" → line symmetry; by "turning" → rotation.'
+
+  - id: coordinate-rotation
+    title: 坐标平面中的旋转
+    titleEn: Rotation in the Coordinate Plane
+    hasVisualization: true
+    content: |
+      点 $(x, y)$ 绕原点旋转的坐标变换规则：
+      - 逆时针旋转 $90°$：$(x, y) \to (-y, x)$
+      - 旋转 $180°$：$(x, y) \to (-x, -y)$
+      - 逆时针旋转 $270°$（= 顺时针 $90°$）：$(x, y) \to (y, -x)$
+      关键验证：旋转前后到原点距离不变，即 $\sqrt{x^2 + y^2} = \sqrt{(-y)^2 + x^2}$（逆时针 $90°$）。
+      记忆技巧：逆时针 $90°$ 时，$x$ 变成 $y$ 的位置，$y$ 变成 $-x$ 的位置（坐标"轮换"并变号）。
+    contentEn: |
+      Coordinate transformation rules for rotating $(x, y)$ about the origin:
+      - CCW $90°$: $(x, y) \to (-y, x)$
+      - $180°$: $(x, y) \to (-x, -y)$
+      - CCW $270°$ (= CW $90°$): $(x, y) \to (y, -x)$
+      Key check: distance to origin is preserved: $\sqrt{x^2 + y^2} = \sqrt{(-y)^2 + x^2}$ (CCW $90°$).
+      Memory trick for CCW $90°$: $x$ moves to the $y$ slot, $y$ moves to the $-x$ slot (cyclic shift with sign change).
+    notes: 这些公式只适用于绕原点旋转。绕其他点旋转需先平移到原点，旋转后再平移回去。
+    notesEn: These formulas apply only to rotation about the origin. For rotation about another point, first translate to the origin, rotate, then translate back.
+
+realLife:
+  - category: 钟表指针
+    categoryEn: Clock Hands
+    examples:
+      - 时针每小时旋转 $30°$，分针每分钟旋转 $6°$，均以钟面中心为旋转中心。从12点到3点，时针旋转了 $90°$。
+    examplesEn:
+      - The hour hand rotates $30°$ per hour, the minute hand $6°$ per minute, both about the clock center. From 12:00 to 3:00, the hour hand rotates $90°$.
+  - category: 风车与螺旋桨
+    categoryEn: Windmills and Propellers
+    examples:
+      - 四叶风车的相邻叶片间隔 $90°$，绕中轴旋转。正六边形螺旋桨每旋转 $60°$ 就回到相同外观。
+    examplesEn:
+      - A 4-blade windmill has adjacent blades separated by $90°$, rotating about the central axis. A regular hexagonal propeller looks identical after every $60°$ rotation.
+  - category: 图案设计
+    categoryEn: Pattern Design
+    examples:
+      - 雪花、万花筒图案都利用旋转对称。将一个基本单元绕中心每隔相同角度旋转，就能生成美丽的对称图案。
+    examplesEn:
+      - Snowflakes and kaleidoscope patterns use rotational symmetry. Rotating a basic unit by equal angles about a center generates beautiful symmetric patterns.
+
+examples:
+  - id: ex1
+    title: 旋转的基本性质
+    titleEn: Basic Properties of Rotation
+    question: |
+      如图，△ABC绕点O旋转60°得到△A'B'C'。已知OA=5，∠AOA'=60°，AB=7，BC=4。求OA'、A'B'和B'C'。
+    questionEn: |
+      △ABC is rotated 60° about point O to give △A'B'C'. Given OA=5, ∠AOA'=60°, AB=7, BC=4. Find OA', A'B', and B'C'.
+    solution:
+      steps:
+        - step: 由旋转性质，对应点到旋转中心距离相等。
+          stepEn: By the rotation property, corresponding points are equidistant from the center.
+        - step: '所以 $OA'' = OA = 5$'
+          stepEn: 'So $OA'' = OA = 5$'
+        - step: 由旋转性质，对应线段长度相等（旋转是等距变换）。
+          stepEn: By the rotation property, corresponding segments are equal (rotation is an isometry).
+        - step: '$A''B'' = AB = 7$，$B''C'' = BC = 4$'
+          stepEn: '$A''B'' = AB = 7$, $B''C'' = BC = 4$'
+    answer: '$OA'' = 5$，$A''B'' = 7$，$B''C'' = 4$'
+    answerEn: '$OA'' = 5$, $A''B'' = 7$, $B''C'' = 4$'
+
+  - id: ex2
+    title: 判断中心对称图形
+    titleEn: Identifying Centrally Symmetric Figures
+    question: 判断下列图形是否是中心对称图形：（1）平行四边形 （2）等腰梯形 （3）正六边形 （4）直角三角形
+    questionEn: 'Determine which figures are centrally symmetric: (1) Parallelogram (2) Isosceles trapezoid (3) Regular hexagon (4) Right triangle'
+    solution:
+      steps:
+        - step: 中心对称图形旋转180°后与自身重合。
+          stepEn: A centrally symmetric figure coincides with itself after a 180° rotation.
+        - step: （1）平行四边形：以对角线交点为中心，旋转180°后两组对边互换，完全重合。是中心对称图形。
+          stepEn: '(1) Parallelogram: rotate 180° about the diagonal intersection → the two pairs of sides swap and coincide. Yes.'
+        - step: （2）等腰梯形：旋转180°后上下底互换（长度不同），不能重合。不是中心对称图形。
+          stepEn: '(2) Isosceles trapezoid: after 180° the parallel sides (different lengths) swap → cannot coincide. No.'
+        - step: （3）正六边形：旋转60°即重合，旋转180°当然也重合。是中心对称图形。
+          stepEn: '(3) Regular hexagon: coincides after 60°, so certainly after 180° too. Yes.'
+        - step: （4）直角三角形：三边长度不全相等，不存在旋转180°后的重合。不是中心对称图形。
+          stepEn: '(4) Right triangle: sides are not all equal; no center exists for 180° coincidence. No.'
+    answer: （1）（3）是中心对称图形；（2）（4）不是。
+    answerEn: '(1) and (3) are centrally symmetric; (2) and (4) are not.'
+
+  - id: ex3
+    title: 坐标旋转
+    titleEn: Coordinate Rotation
+    question: '点 $A(2, -3)$ 绕原点逆时针旋转 $90°$ 得到点 $A''$，再旋转 $90°$ 得到 $A''''$。求 $A''$ 和 $A''''$ 的坐标，并验证 $OA = OA'' = OA''''$。'
+    questionEn: 'Point $A(2, -3)$ is rotated $90°$ CCW about the origin to get $A''$, then another $90°$ CCW to get $A''''$. Find the coordinates and verify $OA = OA'' = OA''''$.'
+    solution:
+      steps:
+        - step: '逆时针旋转 $90°$ 的规则：$(x, y) \to (-y, x)$'
+          stepEn: 'CCW $90°$ rule: $(x, y) \to (-y, x)$'
+        - step: '$A(2, -3) \to A''(3, 2)$（$-(-3)=3$，$x=2$）'
+          stepEn: '$A(2, -3) \to A''(3, 2)$'
+        - step: '$A''(3, 2) \to A''''(-2, 3)$'
+          stepEn: '$A''(3, 2) \to A''''(-2, 3)$'
+        - step: '验证：$OA = \sqrt{4+9} = \sqrt{13}$，$OA'' = \sqrt{9+4} = \sqrt{13}$，$OA'''' = \sqrt{4+9} = \sqrt{13}$。三者相等。'
+          stepEn: 'Check: $OA = OA'' = OA'''' = \sqrt{13}$. Distance preserved under rotation. ✓'
+    answer: '$A''(3, 2)$，$A''''(-2, 3)$，$OA = OA'' = OA'''' = \sqrt{13}$'
+    answerEn: '$A''(3, 2)$, $A''''(-2, 3)$, $OA = OA'' = OA'''' = \sqrt{13}$'
+
+exercises:
+  - id: q1
+    type: judge
+    question: 旋转后的图形与原图形全等。
+    questionEn: A figure and its rotation image are always congruent.
+    answer: 正确
+    answerEn: 'True'
+    explanation: 旋转是等距变换，保持所有长度和角度不变。
+    explanationEn: Rotation is an isometry — all distances and angles are preserved.
+
+  - id: q2
+    type: judge
+    question: 中心对称图形一定是轴对称图形。
+    questionEn: Every centrally symmetric figure is also a line-symmetric figure.
+    answer: 错误
+    answerEn: 'False'
+    explanation: 平行四边形（非矩形）是中心对称图形，但不是轴对称图形。
+    explanationEn: A parallelogram (non-rectangle) is centrally symmetric but not line-symmetric.
+
+  - id: q3
+    type: judge
+    question: 旋转中心是旋转变换中唯一保持不动的点。
+    questionEn: The center of rotation is the only point that remains fixed under the rotation.
+    answer: 正确
+    answerEn: 'True'
+    explanation: 根据定义，旋转中心绕自身旋转，位置不变；其他点都会移动（除非旋转角为0°或360°的整数倍）。
+    explanationEn: By definition the center rotates about itself and stays put; all other points move (unless the rotation angle is a multiple of 360°).
+
+  - id: q4
+    type: fill
+    question: 正方形有___条对称轴，___个小于360°的旋转对称角。
+    questionEn: A square has ___ axes of symmetry and ___ rotational symmetry angles less than 360°.
+    answer: 4条对称轴；3个旋转对称角（90°、180°、270°）
+    answerEn: '4 axes; 3 rotational symmetry angles (90°, 180°, 270°)'
+    explanation: 正方形4条对称轴（两条边的垂直平分线 + 两条对角线）；旋转90°、180°、270°均与自身重合。
+    explanationEn: Square has 4 symmetry axes (2 perpendicular bisectors of sides + 2 diagonals); rotations of 90°, 180°, 270° all map it to itself.
+
+  - id: q5
+    type: fill
+    question: '点 $P(-1, 3)$ 绕原点旋转 $180°$ 后的坐标是___。'
+    questionEn: 'The coordinates of $P(-1, 3)$ after a $180°$ rotation about the origin are ___.'
+    answer: $(1, -3)$
+    answerEn: $(1, -3)$
+    explanation: '旋转 $180°$：$(x,y) \to (-x,-y)$，所以 $(-1,3) \to (1,-3)$。'
+    explanationEn: '$180°$ rotation: $(x,y) \to (-x,-y)$, so $(-1,3) \to (1,-3)$.'
+
+  - id: q6
+    type: fill
+    question: '点 $A(3, 0)$ 绕原点逆时针旋转 $90°$ 后的坐标是___。'
+    questionEn: 'Point $A(3, 0)$ rotated $90°$ CCW about the origin gives ___.'
+    answer: $(0, 3)$
+    answerEn: $(0, 3)$
+    explanation: '$(x,y) \to (-y,x)$：$(3,0) \to (0,3)$。'
+    explanationEn: '$(x,y) \to (-y,x)$: $(3,0) \to (0,3)$.'
+
+  - id: q7
+    type: choice
+    question: 下列图形中，既是轴对称图形又是中心对称图形的是（  ）
+    questionEn: Which figure is both line-symmetric and centrally symmetric?
+    options:
+      - A. 等腰梯形
+      - B. 平行四边形（非矩形）
+      - C. 矩形
+      - D. 等边三角形
+    optionsEn:
+      - A. Isosceles trapezoid
+      - B. Parallelogram (non-rectangle)
+      - C. Rectangle
+      - D. Equilateral triangle
+    answer: C
+    answerEn: C
+    explanation: 矩形有2条对称轴（轴对称），且以对角线交点为中心旋转180°重合（中心对称）。等腰梯形只是轴对称；平行四边形只是中心对称；等边三角形是轴对称但不是中心对称。
+    explanationEn: Rectangle has 2 symmetry axes (line-symmetric) and maps to itself after 180° about the diagonal intersection (centrally symmetric). Isosceles trapezoid is only line-symmetric; general parallelogram is only centrally symmetric; equilateral triangle is line-symmetric but not centrally symmetric.
+
+  - id: q8
+    type: choice
+    question: '△ABC绕点O旋转得到△A''B''C''，若 $\angle BOB'' = 70°$，则旋转角为（  ）'
+    questionEn: '△ABC is rotated about O to give △A''B''C''. If $\angle BOB'' = 70°$, the rotation angle is (  )'
+    options:
+      - A. 35°
+      - B. 70°
+      - C. 140°
+      - D. 不能确定
+    optionsEn:
+      - A. 35°
+      - B. 70°
+      - C. 140°
+      - D. Cannot be determined
+    answer: B
+    answerEn: B
+    explanation: '旋转角等于任意对应点与旋转中心连线所成的角，$\angle BOB'' = 70°$ 就是旋转角。'
+    explanationEn: 'The rotation angle equals the angle between any pair of corresponding radii, so $\angle BOB'' = 70°$ is the rotation angle.'
+
+  - id: q9
+    type: open
+    question: |
+      已知△ABC中，A(1,0)，B(3,0)，C(3,2)。将△ABC绕原点逆时针旋转90°，求△A'B'C'的各顶点坐标，并说明△ABC与△A'B'C'是否全等及理由。
+    questionEn: |
+      Given △ABC with A(1,0), B(3,0), C(3,2). Rotate △ABC 90° CCW about the origin to get △A'B'C'. Find each vertex coordinate and explain whether △ABC ≅ △A'B'C'.
+    answer: |
+      A'(0,1)，B'(0,3)，C'(-2,3)。△ABC ≅ △A'B'C'，因为旋转是等距变换，保持图形的形状和大小不变。
+    answerEn: |
+      A'(0,1), B'(0,3), C'(-2,3). △ABC ≅ △A'B'C' because rotation is an isometry preserving shape and size.
+    explanation: |
+      逆时针90°变换：$(x,y) \to (-y,x)$。
+      A(1,0) → A'(0,1)；B(3,0) → B'(0,3)；C(3,2) → C'(-2,3)。
+      旋转保持所有边长和角度不变，所以△ABC ≅ △A'B'C'。
+    explanationEn: |
+      CCW 90°: $(x,y) \to (-y,x)$.
+      A(1,0) → A'(0,1); B(3,0) → B'(0,3); C(3,2) → C'(-2,3).
+      Rotation preserves all side lengths and angles, so △ABC ≅ △A'B'C'.
+
+  - id: q10
+    type: open
+    question: |
+      正六边形ABCDEF，O为中心。
+      （1）将正六边形绕O旋转60°，哪个顶点移到A的位置？
+      （2）旋转180°呢？
+      （3）正六边形有几条对称轴？是否是中心对称图形？
+    questionEn: |
+      Regular hexagon ABCDEF with center O.
+      (1) After rotating 60° about O, which vertex moves to A's position?
+      (2) After rotating 180°?
+      (3) How many axes of symmetry does the hexagon have? Is it centrally symmetric?
+    answer: |
+      （1）逆时针旋转60°：F移到A的位置（顶点按A→B→C→D→E→F→A排列，逆时针旋转60°使F→A）。
+      （2）旋转180°：D移到A的位置（D是A的对径点）。
+      （3）正六边形有6条对称轴（3条连对边中点，3条连对顶点）；是中心对称图形（旋转180°自身重合）。
+    answerEn: |
+      (1) CCW 60°: F moves to A's position (vertices labeled A→B→C→D→E→F→A CCW; 60° CCW sends F to A).
+      (2) 180°: D moves to A's position (D is the diametrically opposite vertex to A).
+      (3) Regular hexagon has 6 axes of symmetry (3 connecting midpoints of opposite sides, 3 connecting opposite vertices); it is centrally symmetric (180° rotation maps it to itself).
+    explanation: 正六边形相邻顶点间隔60°；旋转180°到对径顶点；6条对称轴是正六边形的轴对称特征。
+    explanationEn: Adjacent vertices are 60° apart; 180° maps each vertex to the diametrically opposite one; 6 symmetry axes characterize the regular hexagon.
+
+  - id: q11
+    type: open
+    question: |
+      线段AB的端点坐标为A(2,1)，已知AB关于点O(0,0)中心对称。
+      （1）求B的坐标。
+      （2）验证OA = OB。
+    questionEn: |
+      Segment AB has endpoint A(2,1), and AB is centrally symmetric about O(0,0).
+      (1) Find the coordinates of B.
+      (2) Verify OA = OB.
+    answer: 'B(-2,-1)；OA = OB = $\sqrt{5}$。'
+    answerEn: 'B(-2,-1); OA = OB = $\sqrt{5}$.'
+    explanation: |
+      中心对称：B是A关于O(0,0)的对称点，即B = (-2,-1)（旋转180°：$(x,y)\to(-x,-y)$）。
+      $OA = \sqrt{4+1} = \sqrt{5}$，$OB = \sqrt{4+1} = \sqrt{5}$，相等。
+    explanationEn: |
+      Central symmetry: B is the image of A under 180° rotation about O, so B = (-2,-1).
+      $OA = \sqrt{4+1} = \sqrt{5} = OB$. ✓
+
+  - id: q12
+    type: fill
+    question: '点 $Q(0, -4)$ 绕原点逆时针旋转 $270°$ 后的坐标是___。'
+    questionEn: 'Point $Q(0,-4)$ rotated $270°$ CCW about the origin gives ___.'
+    answer: $(-4, 0)$
+    answerEn: $(-4, 0)$
+    explanation: '逆时针270° = 顺时针90°，规则 $(x,y)\to(y,-x)$：$(0,-4)\to(-4,0)$。'
+    explanationEn: 'CCW 270° = CW 90°, rule $(x,y)\to(y,-x)$: $(0,-4)\to(-4,0)$.'
+
+examPrep:
+  intro: 本章提升练习，综合考查旋转性质、中心对称判断和坐标变换。
+  introEn: Chapter challenge problems covering rotation properties, central symmetry identification, and coordinate transformations.
+  problems:
+    - id: ep1
+      type: choice
+      question: 下列说法正确的是（  ）
+      questionEn: Which statement(s) are correct?
+      options:
+        - A. 轴对称图形一定是中心对称图形
+        - B. 中心对称图形一定是轴对称图形
+        - C. 既是轴对称又是中心对称的图形，其对称轴一定过对称中心
+        - D. 旋转角可以是任意角度（包括大于360°）
+      optionsEn:
+        - A. Every line-symmetric figure is centrally symmetric
+        - B. Every centrally symmetric figure is line-symmetric
+        - C. If a figure is both line-symmetric and centrally symmetric, every axis of symmetry passes through the center
+        - D. The rotation angle can be any value (including greater than 360°)
+      answer: CD
+      answerEn: CD
+      explanation: |
+        A错：等边三角形是轴对称图形，但不是中心对称图形。
+        B错：平行四边形（非矩形）是中心对称图形，但不是轴对称图形。
+        C对：对矩形、正多边形等验证均成立。
+        D对：旋转角没有大小限制，可以超过360°。
+      explanationEn: |
+        A: False — equilateral triangle is line-symmetric but not centrally symmetric.
+        B: False — parallelogram (non-rectangle) is centrally symmetric but not line-symmetric.
+        C: True — verified for rectangles, regular polygons, etc.
+        D: True — the rotation angle has no size restriction.
+
+    - id: ep2
+      type: open
+      question: |
+        △AOB中，O为原点，A(4,0)，B(0,3)。将△AOB绕O逆时针旋转90°得到△A'OB'。
+        （1）求A'和B'的坐标。
+        （2）求△AOB的面积，以及△AOB和△A'OB'合并图形的总面积。
+      questionEn: |
+        △AOB has O at origin, A(4,0), B(0,3). Rotate △AOB 90° CCW about O to get △A'OB'.
+        (1) Find the coordinates of A' and B'.
+        (2) Find the area of △AOB and the total area of △AOB ∪ △A'OB'.
+      answer: |
+        （1）A'(0,4)，B'(-3,0)。
+        （2）△AOB面积 = ½×4×3 = 6；两三角形全等无重叠（一在第一象限，一在第二象限），总面积 = 12。
+      answerEn: |
+        (1) A'(0,4), B'(-3,0).
+        (2) Area of △AOB = ½×4×3 = 6; the two congruent triangles do not overlap (Q1 and Q2), total area = 12.
+      explanation: |
+        逆时针90°：$(x,y)\to(-y,x)$。
+        A(4,0)→A'(0,4)；B(0,3)→B'(-3,0)。
+        △AOB在第一象限，△A'OB'在第二象限，无重叠，合计面积 = 6+6 = 12。
+      explanationEn: |
+        CCW 90°: $(x,y)\to(-y,x)$.
+        A(4,0)→A'(0,4); B(0,3)→B'(-3,0).
+        △AOB lies in Q1, △A'OB' in Q2 — no overlap; total area = 6+6 = 12.
+
+    - id: ep3
+      type: open
+      question: |
+        正方形ABCD的中心为O，边长为2。将正方形绕O顺时针旋转45°得到A'B'C'D'。
+        （1）∠AOA'等于多少度？
+        （2）两个正方形的交叠区域是什么形状？（提示：数一数交点个数）
+      questionEn: |
+        Square ABCD has center O and side length 2. Rotate it 45° CW about O to get A'B'C'D'.
+        (1) What is ∠AOA'?
+        (2) What shape is the overlapping region? (Hint: count the intersection points.)
+      answer: |
+        （1）∠AOA' = 45°（旋转角）。
+        （2）交叠区域是正八边形（两个正方形的8条边形成8个等间距交点）。
+      answerEn: |
+        (1) ∠AOA' = 45° (the rotation angle).
+        (2) The overlapping region is a regular octagon (the 8 sides of the two squares create 8 equally spaced intersection points).
+      explanation: |
+        旋转角即∠AOA' = 45°。
+        旋转45°后，两正方形各边的交点共8个，均匀分布，围成正八边形。这是经典"风车"图案。
+      explanationEn: |
+        The rotation angle is 45°, so ∠AOA' = 45°.
+        The 8 intersection points of the two squares' sides are evenly spaced, forming a regular octagon — the classic "pinwheel" pattern.
+
+    - id: ep4
+      type: open
+      question: |
+        已知点A(a,b)绕原点旋转后得到点B(-b,a)。
+        （1）判断旋转方向和旋转角。
+        （2）若A(3,4)，求OA的长度，并求B的坐标，验证OB = OA。
+      questionEn: |
+        Point A(a,b) is rotated about the origin to give B(-b,a).
+        (1) Determine the direction and angle of rotation.
+        (2) If A(3,4), find OA, find B, and verify OB = OA.
+      answer: |
+        （1）$(x,y)\to(-y,x)$ 是逆时针旋转90°。
+        （2）OA = $\sqrt{9+16}$ = 5；B(-4,3)，OB = $\sqrt{16+9}$ = 5。OA = OB = 5。
+      answerEn: |
+        (1) $(x,y)\to(-y,x)$ is 90° CCW rotation.
+        (2) OA = $\sqrt{9+16}$ = 5; B(-4,3), OB = $\sqrt{16+9}$ = 5. OA = OB = 5. ✓
+      explanation: |
+        变换 $(a,b)\to(-b,a)$ 与逆时针90°公式 $(x,y)\to(-y,x)$ 完全吻合。
+        A(3,4)→B(-4,3)，OA = OB = 5，验证了旋转保持距离不变。
+      explanationEn: |
+        The rule $(a,b)\to(-b,a)$ matches the 90° CCW formula $(x,y)\to(-y,x)$.
+        A(3,4)→B(-4,3), OA = OB = 5, confirming that rotation preserves distance.
+
+    - id: ep5
+      type: open
+      question: |
+        等边△ABC边长为2，以A为旋转中心，将△ABC顺时针旋转60°得到△AB'C'。
+        求BB'的长度，并说明△ABB'是什么类型的三角形。
+      questionEn: |
+        Equilateral △ABC has side length 2. Rotate △ABC 60° CW about vertex A to get △AB'C'.
+        Find the length of BB' and identify the type of △ABB'.
+      answer: "BB' = 2；△ABB' 是等边三角形。"
+      answerEn: "BB' = 2; △ABB' is equilateral."
+      explanation: |
+        旋转后：AB' = AB = 2（旋转保持长度），∠BAB' = 60°（旋转角）。
+        在△ABB'中：AB = AB' = 2，∠BAB' = 60°，由等腰三角形知 ∠ABB' = ∠AB'B = (180°-60°)/2 = 60°。
+        三角均为60°，所以△ABB'是等边三角形，BB' = 2。
+      explanationEn: |
+        After rotation: AB' = AB = 2 (rotation preserves length), ∠BAB' = 60° (rotation angle).
+        In △ABB': AB = AB' = 2 and ∠BAB' = 60°, so ∠ABB' = ∠AB'B = (180°-60°)/2 = 60°.
+        All angles are 60°, so △ABB' is equilateral and BB' = 2.
+
+summary: |
+  本章学习了旋转变换的三要素、性质，以及中心对称的概念和坐标规律：
+  1. **旋转三要素**：旋转中心、旋转角、旋转方向（缺一不可）
+  2. **旋转性质**：对应点到旋转中心等距；对应线段等长；图形全等（等距变换）
+  3. **中心对称**：旋转180°的特殊情况；常见图形有平行四边形、正偶数边形
+  4. **坐标旋转公式**：逆时针90° $(x,y)\to(-y,x)$；旋转180° $(x,y)\to(-x,-y)$
+  5. **与轴对称的区别**：旋转保持方向感；轴对称改变方向感
+
+summaryEn: |
+  This chapter covered the three elements and properties of rotation, central symmetry, and coordinate rotation rules:
+  1. **Three elements of rotation**: center, angle, direction — all three are required
+  2. **Rotation properties**: equidistant corresponding points; equal corresponding segments; congruent figures (isometry)
+  3. **Central symmetry**: special case of 180° rotation; common examples include parallelograms and regular even-sided polygons
+  4. **Coordinate rotation**: CCW 90° $(x,y)\to(-y,x)$; 180° $(x,y)\to(-x,-y)$
+  5. **Difference from line symmetry**: rotation preserves orientation; line symmetry reverses it

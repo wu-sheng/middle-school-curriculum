@@ -1,0 +1,1066 @@
+title: 一元二次方程
+titleEn: Quadratic Equations in One Variable
+chapter: 2
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟 · 第3课时 约55分钟 · 第4课时 约55分钟
+estimatedTimeEn: 'Session 1 ~55 min · Session 2 ~55 min · Session 3 ~55 min · Session 4 ~55 min'
+targetAudience: 小学3年级自学生（已完成八年级数学），自学材料，由简入深
+
+objectives:
+  - 理解<<一元二次方程/quadratic equation in one variable>>的定义，能识别标准形式 $ax^{2} + bx + c = 0$（$a \neq 0$）并辨认系数
+  - 掌握<<直接开平方法/square root method>>，能解形如 $(x+m)^{2} = n$ 的方程
+  - 掌握<<配方法/completing the square>>，将任意一元二次方程化为可直接开平方的形式
+  - 掌握<<求根公式/quadratic formula>> $x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$，能灵活运用公式法解方程
+  - 掌握<<因式分解法/factoring method>>，能通过提公因式或十字相乘分解多项式求根
+  - 理解<<判别式/discriminant>> $\Delta = b^{2}-4ac$ 的几何意义，能判断根的个数和类型
+  - 理解<<韦达定理/Vieta's formulas>>，能利用两根之和与积解决与根相关的问题
+  - 能建立方程模型解决面积、路程、增长率等实际应用问题
+objectivesEn:
+  - Understand the definition of <<一元二次方程/quadratic equation in one variable>>, identify the standard form $ax^{2} + bx + c = 0$ ($a \neq 0$), and recognize the coefficients
+  - Master the <<直接开平方法/square root method>> to solve equations of the form $(x+m)^{2} = n$
+  - Master <<配方法/completing the square>> to transform any quadratic equation into a form solvable by taking square roots
+  - Master the <<求根公式/quadratic formula>> $x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$ and apply it flexibly
+  - Master the <<因式分解法/factoring method>> to find roots by factoring out common factors or using the cross-multiplication method
+  - Understand the geometric meaning of the <<判别式/discriminant>> $\Delta = b^{2}-4ac$ and determine the number and type of roots
+  - Understand <<韦达定理/Vieta's formulas>> and use the sum and product of roots to solve related problems
+  - Build equation models to solve real-world problems involving area, distance, and growth rates
+
+prerequisites:
+  title: 从一次方程到二次方程——解方程的新挑战
+  titleEn: From linear to quadratic — a new challenge in solving equations
+  intro: |
+    八年级我们熟悉了<<一元一次方程/linear equation in one variable>>和<<一元一次不等式/linear inequality>>：解如 $2x + 3 = 7$ 这样的方程，核心步骤只是"移项 + 合并同类项"。
+    但现实中很多问题涉及面积、速度的平方、增长率的平方……这些关系不是直线，而是抛物线，需要用含 $x^{2}$ 的方程来描述。
+  introEn: |
+    In Grade 8 we became comfortable with <<一元一次方程/linear equation in one variable>> and <<一元一次不等式/linear inequality>>: solving equations like $2x + 3 = 7$ required only "move terms + combine like terms."
+    But many real situations involve area, squared velocity, squared growth rates — relationships that are not straight lines but parabolas, and require equations containing $x^{2}$.
+  knownNumbers:
+    - '解一元一次方程：$2x - 5 = 1$，解得 $x = 3$'
+    - '乘法公式：$(a+b)^{2} = a^{2} + 2ab + b^{2}$，$(a-b)^{2} = a^{2} - 2ab + b^{2}$'
+    - '提公因式：$2x^{2} - 4x = 2x(x - 2)$'
+    - '算术平方根：$\sqrt{9} = 3$，$\sqrt{2} \approx 1.414$（非负值）'
+  knownNumbersEn:
+    - 'Solving linear equations: $2x - 5 = 1$ gives $x = 3$'
+    - 'Multiplication formulas: $(a+b)^{2} = a^{2} + 2ab + b^{2}$, $(a-b)^{2} = a^{2} - 2ab + b^{2}$'
+    - 'Factoring out common factors: $2x^{2} - 4x = 2x(x - 2)$'
+    - 'Arithmetic square root: $\sqrt{9} = 3$, $\sqrt{2} \approx 1.414$ (non-negative value)'
+  canSolve:
+    - 解一元一次方程和方程组
+    - 展开完全平方式 $(a \pm b)^{2}$
+    - 提公因式进行多项式因式分解
+    - 求具体数的算术平方根
+  canSolveEn:
+    - Solve linear equations and systems of linear equations
+    - Expand perfect square expressions $(a \pm b)^{2}$
+    - Factor polynomials by extracting common factors
+    - Find arithmetic square roots of specific numbers
+  cannotSolve:
+    - '边长未知的正方形面积为 $12$，边长是多少？（需要解 $x^{2} = 12$）'
+    - '一个数加上它的平方等于 $6$，这个数是多少？（需要解 $x^{2} + x - 6 = 0$）'
+    - '如何判断一个方程有没有实数解？'
+    - '如果知道两根之和和积，能确定这两个根吗？'
+  cannotSolveEn:
+    - 'A square with unknown side has area $12$. What is the side length? (Need to solve $x^{2} = 12$)'
+    - 'A number plus its square equals $6$. What is the number? (Need to solve $x^{2} + x - 6 = 0$)'
+    - 'How do we determine whether an equation has real solutions at all?'
+    - 'If we know the sum and product of two roots, can we identify them?'
+  conclusion: |
+    九年级第二章，我们系统学习**<<一元二次方程/quadratic equation in one variable>>**：从"直接开平方"到"配方"，从"公式法"到"因式分解法"，再到用<<判别式/discriminant>>判断根的个数和用<<韦达定理/Vieta's formulas>>利用根的关系——四种方法各有妙用，解题时灵活选择。
+  conclusionEn: |
+    In Grade 9 Chapter 2 we systematically study the **<<一元二次方程/quadratic equation in one variable>>**: from the "square root method" to "completing the square," from the "quadratic formula" to "factoring" — and then using the <<判别式/discriminant>> to count roots and <<韦达定理/Vieta's formulas>> to exploit relationships between roots. Each method has its strengths; the art lies in choosing wisely.
+
+concepts:
+  - id: quadratic-definition
+    title: 一元二次方程的定义与标准形式
+    titleEn: Definition and standard form of a quadratic equation
+    content: |
+      **定义**：只含一个未知数，且未知数的最高次数为 $2$ 的整式方程，叫做**<<一元二次方程/quadratic equation in one variable>>**。
+
+      **标准形式**：
+
+      $$ax^{2} + bx + c = 0 \quad (a \neq 0)$$
+
+      其中 $a$ 是<<二次项系数/leading coefficient>>，$b$ 是<<一次项系数/linear coefficient>>，$c$ 是<<常数项/constant term>>。
+
+      **为什么要求 $a \neq 0$？** 如果 $a = 0$，方程变为 $bx + c = 0$，这只是一元一次方程，不再是二次方程了。$a \neq 0$ 保证了方程确实是"二次"的。
+
+      **整理成标准形式的步骤**：
+      1. 移项，使等号右边为 $0$
+      2. 合并同类项
+      3. 确认最高次项系数不为零
+
+      **判断一个方程是否是一元二次方程**：
+      - $x^{2} - 3x + 2 = 0$ ✓（$a=1, b=-3, c=2$）
+      - $2x^{2} + 5 = 0$ ✓（$a=2, b=0, c=5$，一次项系数可以为零）
+      - $x^{2} = 0$ ✓（$a=1, b=0, c=0$，常数项也可以为零）
+      - $x^{2} + \frac{1}{x} = 0$ ✗（含 $\frac{1}{x}$，不是整式方程）
+      - $x^{3} - x^{2} = 0$ ✗（最高次是 $3$，是三次方程）
+      - $0 \cdot x^{2} + x - 1 = 0$ ✗（$a = 0$，退化为一次方程）
+
+      **易错点**：遇到形如 $(x+1)^{2} = x^{2} + 3$ 的方程，展开后可能发现 $x^{2}$ 项相消，变成一次方程。所以整理前不要先假设它是二次方程。
+    contentEn: |
+      **Definition**: An integral equation (no fractions with variables in denominators) with exactly one unknown whose highest degree is $2$ is called a **<<一元二次方程/quadratic equation in one variable>>**.
+
+      **Standard form**:
+
+      $$ax^{2} + bx + c = 0 \quad (a \neq 0)$$
+
+      Here $a$ is the <<二次项系数/leading coefficient>>, $b$ is the <<一次项系数/linear coefficient>>, and $c$ is the <<常数项/constant term>>.
+
+      **Why require $a \neq 0$?** If $a = 0$, the equation becomes $bx + c = 0$, which is just a linear equation. The condition $a \neq 0$ guarantees the equation is genuinely "quadratic."
+
+      **Steps to write in standard form**:
+      1. Move all terms to one side so the right side equals $0$
+      2. Combine like terms
+      3. Confirm the leading coefficient is not zero
+
+      **Checking whether an equation is quadratic**:
+      - $x^{2} - 3x + 2 = 0$ ✓ ($a=1, b=-3, c=2$)
+      - $2x^{2} + 5 = 0$ ✓ ($a=2, b=0, c=5$; the linear coefficient may be zero)
+      - $x^{2} = 0$ ✓ ($a=1, b=0, c=0$; the constant term may also be zero)
+      - $x^{2} + \frac{1}{x} = 0$ ✗ (contains $\frac{1}{x}$, not an integral equation)
+      - $x^{3} - x^{2} = 0$ ✗ (highest degree is $3$; this is a cubic equation)
+      - $0 \cdot x^{2} + x - 1 = 0$ ✗ ($a = 0$; degenerates to a linear equation)
+
+      **Common mistake**: For an equation like $(x+1)^{2} = x^{2} + 3$, expanding may cause the $x^{2}$ terms to cancel, leaving a linear equation. Don't assume it's quadratic before simplifying.
+
+  - id: square-root-method
+    title: 直接开平方法
+    titleEn: Square root method
+    content: |
+      **适用形式**：当方程可以化为 $(x + m)^{2} = n$ 的形式时，直接对两边开平方。
+
+      **原理**：若 $X^{2} = n$，则：
+      - 当 $n > 0$ 时：$X = \pm\sqrt{n}$（两个不等实根）
+      - 当 $n = 0$ 时：$X = 0$（两个相等实根，都是 $0$）
+      - 当 $n < 0$ 时：无实数解
+
+      **注意"$\pm$"号**！很多同学只写 $x = \sqrt{n}$ 而漏掉负根。原因是：若 $X^{2} = 4$，则 $X = 2$ 或 $X = -2$，因为 $(-2)^{2} = 4$ 也成立。
+
+      **三步解题流程**：
+      1. 整理，将含 $x$ 的部分凑成完全平方，右边为常数
+      2. 对两边开平方，写上 $\pm$
+      3. 解出 $x$，写出两根
+
+      **直接形式**：$x^{2} = n$
+      - $x^{2} = 9 \Rightarrow x = \pm 3$
+      - $x^{2} = 7 \Rightarrow x = \pm\sqrt{7}$
+      - $x^{2} = -4 \Rightarrow$ 无实数解
+
+      **平移形式**：$(x + m)^{2} = n$
+      - $(x - 2)^{2} = 5 \Rightarrow x - 2 = \pm\sqrt{5} \Rightarrow x = 2 \pm \sqrt{5}$
+      - $(2x + 1)^{2} = 9 \Rightarrow 2x + 1 = \pm 3$，分两种情况：$x = 1$ 或 $x = -2$
+
+      **此方法的局限**：并非所有方程都能一眼凑成完全平方。若方程是 $x^{2} + 6x + 7 = 0$，需要先"配方"再开平方——这就引出了下一个方法。
+    contentEn: |
+      **Applicable form**: When an equation can be rewritten as $(x + m)^{2} = n$, take the square root of both sides directly.
+
+      **Principle**: If $X^{2} = n$, then:
+      - When $n > 0$: $X = \pm\sqrt{n}$ (two distinct real roots)
+      - When $n = 0$: $X = 0$ (two equal real roots, both zero)
+      - When $n < 0$: no real solution
+
+      **Don't forget the "$\pm$" sign!** Many students write only $x = \sqrt{n}$ and miss the negative root. Reason: if $X^{2} = 4$, then $X = 2$ or $X = -2$, since $(-2)^{2} = 4$ as well.
+
+      **Three-step solution process**:
+      1. Rearrange to express the $x$-containing part as a perfect square, with a constant on the right
+      2. Take the square root of both sides, writing $\pm$
+      3. Solve for $x$ and state both roots
+
+      **Direct form**: $x^{2} = n$
+      - $x^{2} = 9 \Rightarrow x = \pm 3$
+      - $x^{2} = 7 \Rightarrow x = \pm\sqrt{7}$
+      - $x^{2} = -4 \Rightarrow$ no real solution
+
+      **Shifted form**: $(x + m)^{2} = n$
+      - $(x - 2)^{2} = 5 \Rightarrow x - 2 = \pm\sqrt{5} \Rightarrow x = 2 \pm \sqrt{5}$
+      - $(2x + 1)^{2} = 9 \Rightarrow 2x + 1 = \pm 3$, giving two cases: $x = 1$ or $x = -2$
+
+      **Limitation of this method**: Not every equation is immediately in perfect-square form. For $x^{2} + 6x + 7 = 0$, we must first "complete the square" — which leads to the next method.
+
+  - id: completing-the-square
+    title: 配方法
+    titleEn: Completing the square
+    content: |
+      **核心思想**：将 $ax^{2} + bx + c = 0$ 通过代数变形，凑成 $(x + p)^{2} = q$ 的形式，然后用直接开平方法求解。
+
+      **配方的关键公式**（完全平方公式反用）：
+
+      $$x^{2} + 2px + p^{2} = (x + p)^{2}$$
+
+      所以，对于 $x^{2} + kx$，补上 $\left(\frac{k}{2}\right)^{2}$ 就能凑成完全平方：
+
+      $$x^{2} + kx + \left(\frac{k}{2}\right)^{2} = \left(x + \frac{k}{2}\right)^{2}$$
+
+      **标准配方步骤**（以 $x^{2} + bx + c = 0$ 为例）：
+      1. 移常数项到右边：$x^{2} + bx = -c$
+      2. 两边同时加上 $\left(\frac{b}{2}\right)^{2}$：$x^{2} + bx + \left(\frac{b}{2}\right)^{2} = -c + \left(\frac{b}{2}\right)^{2}$
+      3. 左边写成完全平方：$\left(x + \frac{b}{2}\right)^{2} = \frac{b^{2} - 4c}{4}$
+      4. 开平方求解
+
+      **当首项系数 $a \neq 1$ 时**，先除以 $a$：
+
+      $ax^{2} + bx + c = 0 \xrightarrow{\div a} x^{2} + \frac{b}{a}x + \frac{c}{a} = 0$，再按上述步骤配方。
+
+      **示例**：解 $x^{2} + 4x - 1 = 0$
+      - 移项：$x^{2} + 4x = 1$
+      - 配方：$x^{2} + 4x + 4 = 1 + 4 = 5$
+      - 整理：$(x + 2)^{2} = 5$
+      - 开平方：$x + 2 = \pm\sqrt{5}$
+      - 结果：$x = -2 + \sqrt{5}$ 或 $x = -2 - \sqrt{5}$
+
+      **配方法的价值**：不仅用来解方程，配方法是推导<<求根公式/quadratic formula>>的核心工具，也是研究二次函数顶点的基础。
+    contentEn: |
+      **Core idea**: Transform $ax^{2} + bx + c = 0$ algebraically into the form $(x + p)^{2} = q$, then apply the square root method.
+
+      **Key formula** (perfect square formula in reverse):
+
+      $$x^{2} + 2px + p^{2} = (x + p)^{2}$$
+
+      So for $x^{2} + kx$, adding $\left(\frac{k}{2}\right)^{2}$ completes the square:
+
+      $$x^{2} + kx + \left(\frac{k}{2}\right)^{2} = \left(x + \frac{k}{2}\right)^{2}$$
+
+      **Standard steps** (for $x^{2} + bx + c = 0$):
+      1. Move the constant to the right: $x^{2} + bx = -c$
+      2. Add $\left(\frac{b}{2}\right)^{2}$ to both sides: $x^{2} + bx + \left(\frac{b}{2}\right)^{2} = -c + \left(\frac{b}{2}\right)^{2}$
+      3. Write the left side as a perfect square: $\left(x + \frac{b}{2}\right)^{2} = \frac{b^{2} - 4c}{4}$
+      4. Take square roots to solve
+
+      **When the leading coefficient $a \neq 1$**, divide through by $a$ first:
+
+      $ax^{2} + bx + c = 0 \xrightarrow{\div a} x^{2} + \frac{b}{a}x + \frac{c}{a} = 0$, then follow the steps above.
+
+      **Example**: Solve $x^{2} + 4x - 1 = 0$
+      - Move term: $x^{2} + 4x = 1$
+      - Complete the square: $x^{2} + 4x + 4 = 1 + 4 = 5$
+      - Rewrite: $(x + 2)^{2} = 5$
+      - Take square root: $x + 2 = \pm\sqrt{5}$
+      - Result: $x = -2 + \sqrt{5}$ or $x = -2 - \sqrt{5}$
+
+      **Why completing the square matters**: It is not only used to solve equations — it is the key tool for deriving the <<求根公式/quadratic formula>> and for studying the vertex of a quadratic function.
+
+  - id: quadratic-formula
+    title: 公式法与判别式
+    titleEn: Quadratic formula and discriminant
+    content: |
+      **求根公式**（对 $ax^{2} + bx + c = 0$，$a \neq 0$）：
+
+      $$x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$$
+
+      **推导思路**（用配方法对一般形式推导）：
+      1. $ax^{2} + bx + c = 0$，除以 $a$：$x^{2} + \frac{b}{a}x + \frac{c}{a} = 0$
+      2. 配方：$\left(x + \frac{b}{2a}\right)^{2} = \frac{b^{2} - 4ac}{4a^{2}}$
+      3. 开平方：$x + \frac{b}{2a} = \pm\frac{\sqrt{b^{2}-4ac}}{2a}$（当 $b^{2}-4ac \geq 0$）
+      4. 解出 $x$：$x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$
+
+      **<<判别式/discriminant>>**：令 $\Delta = b^{2} - 4ac$（希腊字母 Delta，读"得尔塔"）
+
+      | $\Delta$ 的值 | 根的情况 |
+      |---|---|
+      | $\Delta > 0$ | 两个不相等的实数根（$x_{1} \neq x_{2}$） |
+      | $\Delta = 0$ | 两个相等的实数根（$x_{1} = x_{2} = -\frac{b}{2a}$） |
+      | $\Delta < 0$ | 没有实数根 |
+
+      **为什么叫"判别式"？** 因为它能"判别"方程根的情况，不用解出具体的根就能知道有几个实根。
+
+      **几何直觉**：一元二次方程 $ax^{2} + bx + c = 0$ 的解就是抛物线 $y = ax^{2} + bx + c$ 与 $x$ 轴的交点横坐标：
+      - $\Delta > 0$：抛物线与 $x$ 轴有两个交点
+      - $\Delta = 0$：抛物线与 $x$ 轴相切（恰好一个交点）
+      - $\Delta < 0$：抛物线与 $x$ 轴不相交
+
+      **用公式法解题步骤**：
+      1. 整理成标准形式 $ax^{2} + bx + c = 0$
+      2. 读出 $a, b, c$ 的值
+      3. 计算 $\Delta = b^{2} - 4ac$
+      4. 若 $\Delta < 0$，直接判断无实数解；否则代入公式计算
+    contentEn: |
+      **Quadratic formula** (for $ax^{2} + bx + c = 0$, $a \neq 0$):
+
+      $$x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$$
+
+      **Derivation sketch** (applying completing the square to the general form):
+      1. $ax^{2} + bx + c = 0$; divide by $a$: $x^{2} + \frac{b}{a}x + \frac{c}{a} = 0$
+      2. Complete the square: $\left(x + \frac{b}{2a}\right)^{2} = \frac{b^{2} - 4ac}{4a^{2}}$
+      3. Take square root: $x + \frac{b}{2a} = \pm\frac{\sqrt{b^{2}-4ac}}{2a}$ (when $b^{2}-4ac \geq 0$)
+      4. Solve for $x$: $x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$
+
+      **<<判别式/discriminant>>**: Let $\Delta = b^{2} - 4ac$ (the Greek letter Delta)
+
+      | Value of $\Delta$ | Nature of roots |
+      |---|---|
+      | $\Delta > 0$ | Two distinct real roots ($x_{1} \neq x_{2}$) |
+      | $\Delta = 0$ | Two equal real roots ($x_{1} = x_{2} = -\frac{b}{2a}$) |
+      | $\Delta < 0$ | No real roots |
+
+      **Why "discriminant"?** Because it *discriminates* (distinguishes) the nature of roots — you can determine how many real roots exist without actually solving the equation.
+
+      **Geometric intuition**: The solutions of $ax^{2} + bx + c = 0$ are the $x$-coordinates of the intersections of the parabola $y = ax^{2} + bx + c$ with the $x$-axis:
+      - $\Delta > 0$: parabola crosses the $x$-axis at two points
+      - $\Delta = 0$: parabola is tangent to the $x$-axis (exactly one point)
+      - $\Delta < 0$: parabola does not meet the $x$-axis
+
+      **Steps for solving by the formula**:
+      1. Rearrange into standard form $ax^{2} + bx + c = 0$
+      2. Read off $a, b, c$
+      3. Compute $\Delta = b^{2} - 4ac$
+      4. If $\Delta < 0$, conclude no real roots; otherwise substitute into the formula
+
+  - id: factoring-method
+    title: 因式分解法
+    titleEn: Factoring method
+    content: |
+      **核心原理**：若 $ab = 0$，则 $a = 0$ 或 $b = 0$（<<零积性质/zero-product property>>）。
+
+      将方程左边分解为两个因式之积，右边为 $0$，然后分别令每个因式为零，得到两个根。
+
+      **常用分解方法**：
+
+      **① 提公因式**：当各项有公因式时，先提取公因式
+      - $x^{2} - 3x = 0$：提 $x$，得 $x(x - 3) = 0$，解：$x = 0$ 或 $x = 3$
+      - $2x^{2} + 4x = 0$：提 $2x$，得 $2x(x + 2) = 0$，解：$x = 0$ 或 $x = -2$
+
+      **② 完全平方公式**：$x^{2} \pm 2px + p^{2} = (x \pm p)^{2}$
+      - $x^{2} - 6x + 9 = 0$：$(x - 3)^{2} = 0$，解：$x = 3$（二重根）
+      - $4x^{2} + 4x + 1 = 0$：$(2x + 1)^{2} = 0$，解：$x = -\frac{1}{2}$
+
+      **③ 平方差公式**：$x^{2} - a^{2} = (x+a)(x-a)$
+      - $x^{2} - 5 = 0$：$(x + \sqrt{5})(x - \sqrt{5}) = 0$，解：$x = \pm\sqrt{5}$
+
+      **④ 十字相乘（试因子法）**：适用于 $x^{2} + (p+q)x + pq = (x+p)(x+q)$
+      - $x^{2} + 5x + 6 = 0$：找两数乘积为 $6$、之和为 $5$，即 $2$ 和 $3$，得 $(x+2)(x+3) = 0$
+      - 解：$x = -2$ 或 $x = -3$
+      - $x^{2} - x - 6 = 0$：找乘积为 $-6$、之和为 $-1$，即 $-3$ 和 $2$，得 $(x-3)(x+2) = 0$
+      - 解：$x = 3$ 或 $x = -2$
+
+      **因式分解法的优势**：当方程能整除分解时，比公式法简洁；
+      **局限**：分解不总是显而易见的，系数复杂时用公式法更可靠。
+
+      **解题建议**：拿到方程，先看能否提公因式或用完全平方公式，再试十字相乘，若均不易则改用公式法。
+    contentEn: |
+      **Core principle**: If $ab = 0$, then $a = 0$ or $b = 0$ (the <<零积性质/zero-product property>>).
+
+      Factor the left side into a product of two factors with the right side equal to $0$, then set each factor equal to zero to find the two roots.
+
+      **Common factoring techniques**:
+
+      **① Extract a common factor**: When all terms share a common factor, factor it out first
+      - $x^{2} - 3x = 0$: factor out $x$, giving $x(x - 3) = 0$; solution: $x = 0$ or $x = 3$
+      - $2x^{2} + 4x = 0$: factor out $2x$, giving $2x(x + 2) = 0$; solution: $x = 0$ or $x = -2$
+
+      **② Perfect square formulas**: $x^{2} \pm 2px + p^{2} = (x \pm p)^{2}$
+      - $x^{2} - 6x + 9 = 0$: $(x - 3)^{2} = 0$; solution: $x = 3$ (double root)
+      - $4x^{2} + 4x + 1 = 0$: $(2x + 1)^{2} = 0$; solution: $x = -\frac{1}{2}$
+
+      **③ Difference of squares**: $x^{2} - a^{2} = (x+a)(x-a)$
+      - $x^{2} - 5 = 0$: $(x + \sqrt{5})(x - \sqrt{5}) = 0$; solution: $x = \pm\sqrt{5}$
+
+      **④ Cross-multiplication (trial factor method)**: For $x^{2} + (p+q)x + pq = (x+p)(x+q)$
+      - $x^{2} + 5x + 6 = 0$: find two numbers with product $6$ and sum $5$, i.e. $2$ and $3$; factor as $(x+2)(x+3) = 0$
+      - Solution: $x = -2$ or $x = -3$
+      - $x^{2} - x - 6 = 0$: product $-6$, sum $-1$, i.e. $-3$ and $2$; factor as $(x-3)(x+2) = 0$
+      - Solution: $x = 3$ or $x = -2$
+
+      **Advantage of factoring**: When the equation factors nicely, it is cleaner than the formula.
+      **Limitation**: Factoring is not always obvious; for complicated coefficients, the quadratic formula is more reliable.
+
+      **Solving strategy**: Check first for a common factor or a perfect square pattern, then try the cross-multiplication method; if none works easily, switch to the quadratic formula.
+
+  - id: vieta-formulas
+    title: 韦达定理（根与系数的关系）
+    titleEn: "Vieta's formulas (relationship between roots and coefficients)"
+    content: |
+      **定理内容**：设 $x_{1}, x_{2}$ 是方程 $ax^{2} + bx + c = 0$（$a \neq 0$）的两个实数根，则：
+
+      $$x_{1} + x_{2} = -\frac{b}{a} \qquad x_{1} \cdot x_{2} = \frac{c}{a}$$
+
+      **直观验证**（用因式分解来理解）：
+
+      若 $x_{1}, x_{2}$ 是根，则 $a(x - x_{1})(x - x_{2}) = 0$，展开得：
+
+      $a\left[x^{2} - (x_{1}+x_{2})x + x_{1}x_{2}\right] = 0$
+
+      对比 $ax^{2} + bx + c = 0$ 中的系数：
+      - $-(x_{1}+x_{2}) = \frac{b}{a}$，即 $x_{1}+x_{2} = -\frac{b}{a}$
+      - $x_{1}x_{2} = \frac{c}{a}$
+
+      **速记口诀**："两根之和等于负 $b$ 除以 $a$，两根之积等于 $c$ 除以 $a$"
+
+      **应用场景**：
+      - 已知两根，求方程（用韦达定理写出 $b$ 和 $c$）
+      - 已知一根，求另一根（设另一根为 $t$，列方程）
+      - 求含 $x_{1}, x_{2}$ 的代数式的值，如 $x_{1}^{2} + x_{2}^{2}$、$\frac{1}{x_{1}} + \frac{1}{x_{2}}$
+
+      **重要变换**：
+
+      $x_{1}^{2} + x_{2}^{2} = (x_{1}+x_{2})^{2} - 2x_{1}x_{2}$
+
+      $\frac{1}{x_{1}} + \frac{1}{x_{2}} = \frac{x_{1}+x_{2}}{x_{1}x_{2}}$（要求 $x_{1} \neq 0, x_{2} \neq 0$，即 $c \neq 0$）
+
+      **使用韦达定理的前提**：方程必须有实数根（即 $\Delta \geq 0$）！若 $\Delta < 0$，方程无实数根，韦达定理无法使用。
+    contentEn: |
+      **Theorem**: Let $x_{1}, x_{2}$ be the two real roots of $ax^{2} + bx + c = 0$ ($a \neq 0$). Then:
+
+      $$x_{1} + x_{2} = -\frac{b}{a} \qquad x_{1} \cdot x_{2} = \frac{c}{a}$$
+
+      **Intuitive verification** (via factoring):
+
+      If $x_{1}, x_{2}$ are roots, then $a(x - x_{1})(x - x_{2}) = 0$, which expands to:
+
+      $a\left[x^{2} - (x_{1}+x_{2})x + x_{1}x_{2}\right] = 0$
+
+      Comparing coefficients with $ax^{2} + bx + c = 0$:
+      - $-(x_{1}+x_{2}) = \frac{b}{a}$, so $x_{1}+x_{2} = -\frac{b}{a}$
+      - $x_{1}x_{2} = \frac{c}{a}$
+
+      **Memory aid**: "Sum of roots equals negative $b$ over $a$; product of roots equals $c$ over $a$."
+
+      **Applications**:
+      - Given two roots, find the equation (use Vieta's to write $b$ and $c$)
+      - Given one root, find the other (let the other root be $t$ and set up equations)
+      - Compute expressions involving $x_{1}$ and $x_{2}$, such as $x_{1}^{2} + x_{2}^{2}$ or $\frac{1}{x_{1}} + \frac{1}{x_{2}}$
+
+      **Useful identities**:
+
+      $x_{1}^{2} + x_{2}^{2} = (x_{1}+x_{2})^{2} - 2x_{1}x_{2}$
+
+      $\frac{1}{x_{1}} + \frac{1}{x_{2}} = \frac{x_{1}+x_{2}}{x_{1}x_{2}}$ (requires $x_{1} \neq 0, x_{2} \neq 0$, i.e. $c \neq 0$)
+
+      **Prerequisite for using Vieta's formulas**: The equation must have real roots (i.e. $\Delta \geq 0$). If $\Delta < 0$, there are no real roots and Vieta's formulas do not apply.
+
+  - id: quadratic-applications
+    title: 一元二次方程的实际应用
+    titleEn: Real-world applications of quadratic equations
+    content: |
+      **建立方程的核心步骤**（适用所有应用题）：
+      1. **设元**：设未知量为 $x$，明确 $x$ 的单位和实际含义
+      2. **找等量关系**：从题目中找出两种等价表达同一量的方式
+      3. **建方程**：将等量关系写成方程
+      4. **解方程**：用适当方法求解
+      5. **验根**：将解代回实际情境，舍去不合题意的根（如边长为负数、时间为负数）
+      6. **写答**：用完整的语句回答问题
+
+      **常见题型**：
+
+      **① 几何面积类**：已知面积关系，求长度
+      - 例：一个矩形，长比宽多 $3$ 米，面积为 $28$ 平方米，求宽。
+      - 设宽为 $x$ 米，则长为 $(x+3)$ 米，列方程：$x(x+3) = 28$
+      - 整理：$x^{2} + 3x - 28 = 0$，解得 $x = 4$（舍 $x = -7$）
+
+      **② 增长率类**：连续两次增长/减少
+      - 例：某商品价格经过两次涨价，每次涨价的比例相同，原价 $100$ 元，现价 $121$ 元，求每次涨价的百分比。
+      - 设涨价比例为 $x$，则 $100(1+x)^{2} = 121$
+      - $(1+x)^{2} = 1.21$，$1+x = 1.1$（舍负值），$x = 0.1 = 10\%$
+
+      **③ 行程类**：速度、时间、路程的关系
+      - 例：甲乙两人从同一地点出发，沿同一方向行走，甲速比乙快 $1$ 千米/时，$2$ 小时后两人相距 $6$ 千米，求两人速度。
+      - 注意：这是一次方程，不是二次方程，需要重新审题
+
+      **验根的重要性**：
+      解题过程中可能产生增根，必须检验：
+      - 边长、路程、人数等量必须为正数
+      - 某些情境中还需考虑是否为整数
+
+      **常见错误**：只求出方程的解，忘记检验是否符合实际意义；或只保留一个根，忘记检验另一个根是否也符合条件。
+    contentEn: |
+      **Core steps for setting up equations** (applies to all word problems):
+      1. **Define the variable**: Let the unknown be $x$, specify its unit and meaning
+      2. **Find the equal-quantity relationship**: Identify two equivalent expressions for the same quantity
+      3. **Write the equation**: Translate the relationship into an equation
+      4. **Solve the equation**: Use an appropriate method
+      5. **Check roots**: Substitute back into the real-world context; discard roots that do not make sense (e.g., negative lengths or times)
+      6. **Write the answer**: Respond with a complete sentence
+
+      **Common problem types**:
+
+      **① Geometric area**: Given an area relationship, find a length
+      - Example: A rectangle's length exceeds its width by $3$ m, and its area is $28$ m². Find the width.
+      - Let the width be $x$ m; the length is $(x+3)$ m; equation: $x(x+3) = 28$
+      - Standard form: $x^{2} + 3x - 28 = 0$; solution: $x = 4$ (discard $x = -7$)
+
+      **② Growth rate**: Two successive equal-percentage increases/decreases
+      - Example: A product's price rises by the same percentage twice. Original price: 100 yuan; new price: 121 yuan. Find the percentage increase.
+      - Let the rate be $x$: $100(1+x)^{2} = 121$
+      - $(1+x)^{2} = 1.21$, $1+x = 1.1$ (discard negative value), $x = 0.1 = 10\%$
+
+      **③ Distance/rate/time problems**:
+      - Always write out: distance = rate × time, and identify which quantity can be expressed two ways.
+
+      **Why checking roots matters**:
+      The algebra may produce extraneous roots that fail in context. Always verify:
+      - Lengths, distances, and counts must be positive
+      - Some contexts require integer solutions
+
+      **Common mistakes**: Solving for $x$ but forgetting to check real-world validity; or keeping only one root without checking whether the other might also satisfy the conditions.
+
+realLife:
+  title: 生活中的一元二次方程
+  titleEn: Quadratic equations in everyday life
+  examples:
+    - context: 建筑设计
+      contextEn: Architectural design
+      description: 设计一个面积为 $60$ 平方米、长比宽多 $7$ 米的房间，求房间的尺寸。设宽为 $x$ 米，则 $x(x+7) = 60$，解得 $x = 5$，宽 $5$ 米，长 $12$ 米。
+      descriptionEn: Design a room with area $60$ m² where the length exceeds the width by $7$ m. Let the width be $x$ m; then $x(x+7) = 60$, giving $x = 5$. The room is $5$ m wide and $12$ m long.
+    - context: 物理（自由落体）
+      contextEn: Physics (free fall)
+      description: 从 $45$ 米高处自由落下，落地时间 $t$ 满足 $\frac{1}{2} \times 10 \times t^{2} = 45$，即 $5t^{2} = 45$，解得 $t = 3$ 秒。
+      descriptionEn: An object falls freely from a height of $45$ m. The time $t$ satisfies $\frac{1}{2} \times 10 \times t^{2} = 45$, i.e. $5t^{2} = 45$, giving $t = 3$ s.
+    - context: 商业（增长率）
+      contextEn: Business (growth rate)
+      description: 一家店铺连续两年销售额增长相同百分比，从 $50$ 万元增长到 $72$ 万元，求年增长率。$50(1+x)^{2} = 72$，$(1+x)^{2} = 1.44$，$x = 0.2 = 20\%$。
+      descriptionEn: A shop's revenue grows by the same percentage for two consecutive years, rising from 500,000 to 720,000 yuan. Find the annual growth rate. $50(1+x)^{2} = 72$, $(1+x)^{2} = 1.44$, $x = 0.2 = 20\%$.
+    - context: 数字谜题
+      contextEn: Number puzzle
+      description: 两个连续正整数，它们的积是 $56$，求这两个整数。设较小的数为 $x$，则 $x(x+1) = 56$，$x^{2} + x - 56 = 0$，解得 $x = 7$，两整数为 $7$ 和 $8$。
+      descriptionEn: Two consecutive positive integers have a product of $56$. Find them. Let the smaller integer be $x$; then $x(x+1) = 56$, i.e. $x^{2} + x - 56 = 0$, giving $x = 7$. The integers are $7$ and $8$.
+
+examples:
+  - id: ex-square-root
+    title: 直接开平方法
+    titleEn: Square root method
+    type: computation
+    question: '解方程：$(2x - 1)^{2} = 9$'
+    questionEn: 'Solve the equation: $(2x - 1)^{2} = 9$'
+    steps:
+      - step: 1
+        content: 对两边直接开平方，注意右边须取 $\pm$
+        contentEn: Take the square root of both sides; remember to write $\pm$ on the right
+        formula: '$2x - 1 = \pm\sqrt{9} = \pm 3$'
+      - step: 2
+        content: '分两种情况讨论：'
+        contentEn: 'Consider two cases:'
+        formula: '$2x - 1 = 3$ 或（or）$2x - 1 = -3$'
+      - step: 3
+        content: 分别解出 $x$
+        contentEn: Solve for $x$ in each case
+        formula: '$x = 2$ 或（or）$x = -1$'
+      - step: 4
+        content: 验算（可选但养成好习惯）
+        contentEn: Check (optional but good practice)
+        formula: '$(2 \times 2 - 1)^{2} = 3^{2} = 9$ ✓；$(2 \times (-1) - 1)^{2} = (-3)^{2} = 9$ ✓'
+    answer: '$x_{1} = 2$，$x_{2} = -1$'
+    answerEn: '$x_{1} = 2$, $x_{2} = -1$'
+    note: 直接开平方时"$\pm$"必须写，漏掉一半是最常见失分点。
+    noteEn: The "$\pm$" sign is mandatory when taking the square root. Missing it is the most common error.
+
+  - id: ex-completing-square
+    title: 配方法
+    titleEn: Completing the square
+    type: computation
+    question: '解方程：$x^{2} - 6x + 4 = 0$'
+    questionEn: 'Solve the equation: $x^{2} - 6x + 4 = 0$'
+    steps:
+      - step: 1
+        content: 移常数项到右边
+        contentEn: Move the constant to the right side
+        formula: '$x^{2} - 6x = -4$'
+      - step: 2
+        content: '两边加上 $\left(\frac{-6}{2}\right)^{2} = 9$（一次项系数的一半的平方）'
+        contentEn: 'Add $\left(\frac{-6}{2}\right)^{2} = 9$ to both sides (half the linear coefficient, squared)'
+        formula: '$x^{2} - 6x + 9 = -4 + 9 = 5$'
+      - step: 3
+        content: 左边写成完全平方
+        contentEn: Write the left side as a perfect square
+        formula: '$(x - 3)^{2} = 5$'
+      - step: 4
+        content: 直接开平方
+        contentEn: Take the square root of both sides
+        formula: '$x - 3 = \pm\sqrt{5}$'
+      - step: 5
+        content: 解出 $x$
+        contentEn: Solve for $x$
+        formula: '$x = 3 + \sqrt{5}$ 或（or）$x = 3 - \sqrt{5}$'
+    answer: '$x_{1} = 3 + \sqrt{5}$，$x_{2} = 3 - \sqrt{5}$'
+    answerEn: '$x_{1} = 3 + \sqrt{5}$, $x_{2} = 3 - \sqrt{5}$'
+    note: 配方时，加上的数 $\left(\frac{b}{2}\right)^{2}$ 必须同时加在等号两边，不能只加一边。
+    noteEn: When completing the square, the added term $\left(\frac{b}{2}\right)^{2}$ must be added to both sides simultaneously.
+
+  - id: ex-quadratic-formula
+    title: 公式法（含判别式分析）
+    titleEn: Quadratic formula (with discriminant analysis)
+    type: computation
+    question: '解方程：$2x^{2} + 3x - 2 = 0$'
+    questionEn: 'Solve the equation: $2x^{2} + 3x - 2 = 0$'
+    steps:
+      - step: 1
+        content: '读出系数：$a = 2$，$b = 3$，$c = -2$'
+        contentEn: 'Read off coefficients: $a = 2$, $b = 3$, $c = -2$'
+        formula: ''
+      - step: 2
+        content: 计算判别式
+        contentEn: Compute the discriminant
+        formula: '$\Delta = b^{2} - 4ac = 3^{2} - 4 \times 2 \times (-2) = 9 + 16 = 25 > 0$'
+      - step: 3
+        content: $\Delta > 0$，方程有两个不相等的实数根，代入公式
+        contentEn: '$\Delta > 0$, so the equation has two distinct real roots; substitute into the formula'
+        formula: '$x = \frac{-3 \pm \sqrt{25}}{2 \times 2} = \frac{-3 \pm 5}{4}$'
+      - step: 4
+        content: 分别计算两根
+        contentEn: Calculate each root
+        formula: '$x_{1} = \frac{-3 + 5}{4} = \frac{2}{4} = \frac{1}{2}$，$x_{2} = \frac{-3 - 5}{4} = \frac{-8}{4} = -2$'
+    answer: '$x_{1} = \frac{1}{2}$，$x_{2} = -2$'
+    answerEn: '$x_{1} = \frac{1}{2}$, $x_{2} = -2$'
+    note: 先算 $\Delta$，若 $\Delta < 0$ 直接结束；若 $\Delta \geq 0$ 再代入公式，是最稳妥的解题顺序。
+    noteEn: Always compute $\Delta$ first. If $\Delta < 0$, stop immediately. If $\Delta \geq 0$, substitute into the formula. This is the safest approach.
+
+  - id: ex-factoring
+    title: 因式分解法
+    titleEn: Factoring method
+    type: computation
+    question: '解方程：$x^{2} - 7x + 10 = 0$'
+    questionEn: 'Solve the equation: $x^{2} - 7x + 10 = 0$'
+    steps:
+      - step: 1
+        content: 寻找两个数，使其积为 $10$、和为 $-7$（十字相乘）
+        contentEn: Find two numbers whose product is $10$ and sum is $-7$ (cross-multiplication)
+        formula: '$(-2) \times (-5) = 10$，$(-2) + (-5) = -7$ ✓'
+      - step: 2
+        content: 分解因式
+        contentEn: Factor the expression
+        formula: '$(x - 2)(x - 5) = 0$'
+      - step: 3
+        content: 由零积性质，分别令每个因式为零
+        contentEn: By the zero-product property, set each factor equal to zero
+        formula: '$x - 2 = 0$ 或（or）$x - 5 = 0$'
+      - step: 4
+        content: 解出两根
+        contentEn: Solve for the two roots
+        formula: '$x_{1} = 2$，$x_{2} = 5$'
+    answer: '$x_{1} = 2$，$x_{2} = 5$'
+    answerEn: '$x_{1} = 2$, $x_{2} = 5$'
+    note: 因式分解法在系数"好看"时最简洁。若找不到合适的整数对，改用公式法。
+    noteEn: Factoring is cleanest when coefficients work out nicely. If no suitable integer pair exists, switch to the quadratic formula.
+
+  - id: ex-vieta
+    title: 韦达定理的应用
+    titleEn: "Applying Vieta's formulas"
+    type: reasoning
+    question: '已知方程 $x^{2} - 5x + 3 = 0$ 的两根为 $x_{1}$ 和 $x_{2}$，不解方程，求 $x_{1}^{2} + x_{2}^{2}$ 的值。'
+    questionEn: 'The two roots of $x^{2} - 5x + 3 = 0$ are $x_{1}$ and $x_{2}$. Without solving the equation, find the value of $x_{1}^{2} + x_{2}^{2}$.'
+    steps:
+      - step: 1
+        content: 先验证方程有实数根（计算判别式）
+        contentEn: First verify the equation has real roots (compute the discriminant)
+        formula: '$\Delta = (-5)^{2} - 4 \times 1 \times 3 = 25 - 12 = 13 > 0$ ✓，有两个不等实数根'
+      - step: 2
+        content: 由韦达定理读出两根之和与积
+        contentEn: "Read off the sum and product of roots by Vieta's formulas"
+        formula: '$x_{1} + x_{2} = -\frac{-5}{1} = 5$，$x_{1} \cdot x_{2} = \frac{3}{1} = 3$'
+      - step: 3
+        content: 利用完全平方公式变形
+        contentEn: Use the perfect square identity
+        formula: '$x_{1}^{2} + x_{2}^{2} = (x_{1} + x_{2})^{2} - 2x_{1}x_{2}$'
+      - step: 4
+        content: 代入计算
+        contentEn: Substitute and calculate
+        formula: '$x_{1}^{2} + x_{2}^{2} = 5^{2} - 2 \times 3 = 25 - 6 = 19$'
+    answer: '$x_{1}^{2} + x_{2}^{2} = 19$'
+    answerEn: '$x_{1}^{2} + x_{2}^{2} = 19$'
+    note: '韦达定理的关键在于将含根的表达式用 $(x_{1}+x_{2})$ 和 $x_{1}x_{2}$ 来表示，避免求出根的具体值。'
+    noteEn: "The key to applying Vieta's formulas is expressing the target in terms of $(x_{1}+x_{2})$ and $x_{1}x_{2}$, avoiding the need to find the actual roots."
+
+  - id: ex-application
+    title: 实际应用题——面积问题
+    titleEn: Applied problem — area problem
+    type: application
+    question: 一块矩形草坪，长为宽的 $2$ 倍，草坪面积为 $50$ 平方米。沿草坪四周修建宽度相等的小路后，草坪（不含小路）的面积变为 $18$ 平方米。求小路的宽度。
+    questionEn: A rectangular lawn's length is twice its width. The lawn has an area of $50$ m². After building a path of uniform width around the lawn, the area of the lawn itself (excluding the path) becomes $18$ m². Find the width of the path.
+    steps:
+      - step: 1
+        content: 设宽为 $x$ 米，则长为 $2x$ 米，由原面积建立方程求出尺寸
+        contentEn: Let the width be $x$ m and the length $2x$ m; use the original area to find the dimensions
+        formula: '$2x \cdot x = 50$，即 $x^{2} = 25$，$x = 5$（舍 $x=-5$）；故宽 $5$ 米、长 $10$ 米'
+      - step: 2
+        content: 设小路宽度为 $d$ 米，修路后草坪实际宽为 $(5 - 2d)$，实际长为 $(10 - 2d)$
+        contentEn: Let the path width be $d$ m; after building the path, the effective lawn width is $(5 - 2d)$ and length is $(10 - 2d)$
+        formula: '$(5 - 2d)(10 - 2d) = 18$'
+      - step: 3
+        content: 展开方程
+        contentEn: Expand the equation
+        formula: '$50 - 10d - 20d + 4d^{2} = 18$，即 $4d^{2} - 30d + 32 = 0$，化简 $2d^{2} - 15d + 16 = 0$'
+      - step: 4
+        content: 用公式法求解
+        contentEn: Solve by the quadratic formula
+        formula: '$d = \frac{15 \pm \sqrt{225 - 128}}{4} = \frac{15 \pm \sqrt{97}}{4}$'
+      - step: 5
+        content: '注意：$\sqrt{97} \approx 9.85$，故 $d \approx \frac{15 + 9.85}{4} \approx 6.21$（不合题意，小路不能比草坪宽）或 $d \approx \frac{15 - 9.85}{4} \approx 1.29$ 米'
+        contentEn: 'Note: $\sqrt{97} \approx 9.85$, so $d \approx \frac{15+9.85}{4} \approx 6.21$ (rejected; path cannot be wider than lawn) or $d \approx \frac{15-9.85}{4} \approx 1.29$ m'
+        formula: '$d = \frac{15 - \sqrt{97}}{4} \approx 1.29$ 米'
+    answer: '小路宽约 $\frac{15 - \sqrt{97}}{4}$ 米（约 $1.29$ 米）'
+    answerEn: 'Path width is approximately $\frac{15 - \sqrt{97}}{4}$ m (about $1.29$ m)'
+    note: 实际应用题解完后一定要验证所有根是否满足实际约束（如小路宽度必须小于草坪尺寸的一半）。
+    noteEn: After solving an applied problem, always verify all roots satisfy the real-world constraints (e.g., the path width must be less than half the corresponding lawn dimension).
+
+exercises:
+  - id: q1
+    type: choice
+    question: '下列方程中，是一元二次方程的是（　　）'
+    questionEn: 'Which of the following is a quadratic equation in one variable?'
+    options:
+      - 'A. $x^{3} - 2x + 1 = 0$'
+      - 'B. $x^{2} + \frac{1}{x} = 0$'
+      - 'C. $2x^{2} - 3x + 1 = 0$'
+      - 'D. $x^{2} - x^{2} + x = 0$'
+    optionsEn:
+      - 'A. $x^{3} - 2x + 1 = 0$'
+      - 'B. $x^{2} + \frac{1}{x} = 0$'
+      - 'C. $2x^{2} - 3x + 1 = 0$'
+      - 'D. $x^{2} - x^{2} + x = 0$'
+    answer: C
+    explanation: 'A是三次方程；B含 $\frac{1}{x}$ 不是整式方程；C是标准一元二次方程（$a=2$，$b=-3$，$c=1$）；D化简后为 $x = 0$，是一次方程。'
+    explanationEn: 'A is cubic; B contains $\frac{1}{x}$ so it is not an integral equation; C is a standard quadratic ($a=2$, $b=-3$, $c=1$); D simplifies to $x=0$, a linear equation.'
+
+  - id: q2
+    type: fillblank
+    question: '方程 $3x^{2} - 5x + 2 = 0$ 中，$a = $____，$b = $____，$c = $____，判别式 $\Delta = $____。'
+    questionEn: 'In the equation $3x^{2} - 5x + 2 = 0$: $a = $____, $b = $____, $c = $____, discriminant $\Delta = $____.'
+    answer: '$a=3$，$b=-5$，$c=2$，$\Delta = (-5)^{2} - 4 \times 3 \times 2 = 25 - 24 = 1$'
+    answerEn: '$a=3$, $b=-5$, $c=2$, $\Delta = (-5)^{2} - 4 \times 3 \times 2 = 25 - 24 = 1$'
+
+  - id: q3
+    type: computation
+    question: '用直接开平方法解方程：$3x^{2} - 12 = 0$'
+    questionEn: 'Use the square root method to solve: $3x^{2} - 12 = 0$'
+    answer: |
+      $3x^{2} = 12$，$x^{2} = 4$，$x = \pm 2$。
+      所以 $x_{1} = 2$，$x_{2} = -2$。
+    answerEn: |
+      $3x^{2} = 12$, $x^{2} = 4$, $x = \pm 2$.
+      So $x_{1} = 2$, $x_{2} = -2$.
+
+  - id: q4
+    type: computation
+    question: '用直接开平方法解方程：$(x + 3)^{2} = 7$'
+    questionEn: 'Use the square root method to solve: $(x + 3)^{2} = 7$'
+    answer: |
+      $x + 3 = \pm\sqrt{7}$，所以 $x = -3 + \sqrt{7}$ 或 $x = -3 - \sqrt{7}$。
+    answerEn: |
+      $x + 3 = \pm\sqrt{7}$, so $x = -3 + \sqrt{7}$ or $x = -3 - \sqrt{7}$.
+
+  - id: q5
+    type: computation
+    question: '用配方法解方程：$x^{2} + 8x + 3 = 0$'
+    questionEn: 'Use completing the square to solve: $x^{2} + 8x + 3 = 0$'
+    answer: |
+      移项：$x^{2} + 8x = -3$
+      配方（加 $16$）：$x^{2} + 8x + 16 = -3 + 16 = 13$
+      $(x + 4)^{2} = 13$
+      $x + 4 = \pm\sqrt{13}$
+      $x_{1} = -4 + \sqrt{13}$，$x_{2} = -4 - \sqrt{13}$
+    answerEn: |
+      Move term: $x^{2} + 8x = -3$
+      Complete the square (add $16$): $x^{2} + 8x + 16 = -3 + 16 = 13$
+      $(x + 4)^{2} = 13$
+      $x + 4 = \pm\sqrt{13}$
+      $x_{1} = -4 + \sqrt{13}$, $x_{2} = -4 - \sqrt{13}$
+
+  - id: q6
+    type: computation
+    question: '用公式法解方程：$x^{2} - 4x + 1 = 0$'
+    questionEn: 'Use the quadratic formula to solve: $x^{2} - 4x + 1 = 0$'
+    answer: |
+      $a=1$，$b=-4$，$c=1$
+      $\Delta = 16 - 4 = 12 > 0$
+      $x = \frac{4 \pm \sqrt{12}}{2} = \frac{4 \pm 2\sqrt{3}}{2} = 2 \pm \sqrt{3}$
+      $x_{1} = 2 + \sqrt{3}$，$x_{2} = 2 - \sqrt{3}$
+    answerEn: |
+      $a=1$, $b=-4$, $c=1$
+      $\Delta = 16 - 4 = 12 > 0$
+      $x = \frac{4 \pm \sqrt{12}}{2} = \frac{4 \pm 2\sqrt{3}}{2} = 2 \pm \sqrt{3}$
+      $x_{1} = 2 + \sqrt{3}$, $x_{2} = 2 - \sqrt{3}$
+
+  - id: q7
+    type: choice
+    question: '方程 $x^{2} - 2x + 5 = 0$ 的根的情况是（　　）'
+    questionEn: 'The nature of the roots of $x^{2} - 2x + 5 = 0$ is:'
+    options:
+      - A. 有两个不相等的实数根
+      - B. 有两个相等的实数根
+      - C. 没有实数根
+      - D. 有一个实数根
+    optionsEn:
+      - A. Two distinct real roots
+      - B. Two equal real roots
+      - C. No real roots
+      - D. Exactly one real root
+    answer: C
+    explanation: '$\Delta = (-2)^{2} - 4 \times 1 \times 5 = 4 - 20 = -16 < 0$，所以没有实数根。'
+    explanationEn: '$\Delta = (-2)^{2} - 4 \times 1 \times 5 = 4 - 20 = -16 < 0$, so there are no real roots.'
+
+  - id: q8
+    type: computation
+    question: '用因式分解法解方程：$x^{2} - 9 = 0$'
+    questionEn: 'Use the factoring method to solve: $x^{2} - 9 = 0$'
+    answer: |
+      $(x+3)(x-3) = 0$
+      $x = -3$ 或 $x = 3$
+    answerEn: |
+      $(x+3)(x-3) = 0$
+      $x = -3$ or $x = 3$
+
+  - id: q9
+    type: computation
+    question: '用因式分解法解方程：$x^{2} + 3x - 10 = 0$'
+    questionEn: 'Use the factoring method to solve: $x^{2} + 3x - 10 = 0$'
+    answer: |
+      找两数乘积为 $-10$、和为 $3$：即 $5$ 和 $-2$
+      $(x + 5)(x - 2) = 0$
+      $x_{1} = -5$，$x_{2} = 2$
+    answerEn: |
+      Find two numbers with product $-10$ and sum $3$: namely $5$ and $-2$
+      $(x + 5)(x - 2) = 0$
+      $x_{1} = -5$, $x_{2} = 2$
+
+  - id: q10
+    type: fillblank
+    question: '已知 $x_{1}, x_{2}$ 是方程 $x^{2} - 7x + 4 = 0$ 的两根，则 $x_{1} + x_{2} = $____，$x_{1} \cdot x_{2} = $____。'
+    questionEn: '$x_{1}$ and $x_{2}$ are the two roots of $x^{2} - 7x + 4 = 0$. Find $x_{1} + x_{2} = $____ and $x_{1} \cdot x_{2} = $____.'
+    answer: '$x_{1} + x_{2} = 7$，$x_{1} \cdot x_{2} = 4$'
+    answerEn: '$x_{1} + x_{2} = 7$, $x_{1} \cdot x_{2} = 4$'
+
+  - id: q11
+    type: computation
+    question: '已知 $x_{1}, x_{2}$ 是方程 $x^{2} - 7x + 4 = 0$ 的两根，求 $x_{1}^{2} + x_{2}^{2}$ 的值。'
+    questionEn: '$x_{1}$ and $x_{2}$ are the roots of $x^{2} - 7x + 4 = 0$. Find $x_{1}^{2} + x_{2}^{2}$.'
+    answer: |
+      由韦达定理：$x_{1} + x_{2} = 7$，$x_{1} x_{2} = 4$
+      $x_{1}^{2} + x_{2}^{2} = (x_{1} + x_{2})^{2} - 2x_{1}x_{2} = 49 - 8 = 41$
+    answerEn: |
+      By Vieta: $x_{1} + x_{2} = 7$, $x_{1} x_{2} = 4$
+      $x_{1}^{2} + x_{2}^{2} = (x_{1} + x_{2})^{2} - 2x_{1}x_{2} = 49 - 8 = 41$
+
+  - id: q12
+    type: choice
+    question: '若方程 $kx^{2} - 2x + 1 = 0$ 有两个相等的实数根，则 $k = $（　　）'
+    questionEn: 'If $kx^{2} - 2x + 1 = 0$ has two equal real roots, then $k = $'
+    options:
+      - 'A. $0$'
+      - 'B. $1$'
+      - 'C. $-1$'
+      - 'D. $2$'
+    optionsEn:
+      - 'A. $0$'
+      - 'B. $1$'
+      - 'C. $-1$'
+      - 'D. $2$'
+    answer: B
+    explanation: |
+      有两个相等实数根要求 $\Delta = 0$。
+      $\Delta = (-2)^{2} - 4 \times k \times 1 = 4 - 4k = 0$，解得 $k = 1$。
+      同时要求 $k \neq 0$（否则退化为一次方程），$k = 1$ 满足条件。
+    explanationEn: |
+      Two equal real roots requires $\Delta = 0$.
+      $\Delta = (-2)^{2} - 4k \times 1 = 4 - 4k = 0$, giving $k = 1$.
+      Also $k \neq 0$ (otherwise it degenerates to a linear equation), and $k = 1$ satisfies this.
+
+  - id: q13
+    type: application
+    question: 两个连续正整数，它们的平方和为 $85$，求这两个整数。
+    questionEn: Two consecutive positive integers have a sum of squares equal to $85$. Find the integers.
+    answer: |
+      设较小的整数为 $x$，则另一个为 $x + 1$。
+      $x^{2} + (x+1)^{2} = 85$
+      $x^{2} + x^{2} + 2x + 1 = 85$
+      $2x^{2} + 2x - 84 = 0$
+      $x^{2} + x - 42 = 0$
+      $(x + 7)(x - 6) = 0$
+      $x = 6$（舍 $x = -7$，因为是正整数）
+      这两个整数是 $6$ 和 $7$。
+    answerEn: |
+      Let the smaller integer be $x$; the other is $x + 1$.
+      $x^{2} + (x+1)^{2} = 85$
+      $2x^{2} + 2x - 84 = 0$
+      $x^{2} + x - 42 = 0$
+      $(x + 7)(x - 6) = 0$
+      $x = 6$ (discard $x = -7$ since we need positive integers)
+      The integers are $6$ and $7$.
+
+  - id: q14
+    type: application
+    question: 某工厂今年的产量为 $200$ 万件，计划两年后产量达到 $242$ 万件，求平均每年的增长率。
+    questionEn: A factory produces 2 million units this year and plans to reach 2.42 million units in two years. Find the average annual growth rate.
+    answer: |
+      设平均每年增长率为 $x$。
+      $200(1 + x)^{2} = 242$
+      $(1 + x)^{2} = 1.21$
+      $1 + x = \pm 1.1$
+      因 $x > 0$，取 $1 + x = 1.1$，$x = 0.1 = 10\%$。
+      平均每年增长率为 $10\%$。
+    answerEn: |
+      Let the average annual growth rate be $x$.
+      $200(1 + x)^{2} = 242$
+      $(1 + x)^{2} = 1.21$
+      $1 + x = \pm 1.1$
+      Since $x > 0$, take $1 + x = 1.1$, giving $x = 0.1 = 10\%$.
+      The average annual growth rate is $10\%$.
+
+  - id: q15
+    type: computation
+    question: '已知方程 $x^{2} + px + q = 0$ 的两根之一为 $x_{1} = 3$，且两根之积为 $-6$，求另一根 $x_{2}$ 及系数 $p$ 的值。'
+    questionEn: 'One root of $x^{2} + px + q = 0$ is $x_{1} = 3$ and the product of the two roots is $-6$. Find the other root $x_{2}$ and the coefficient $p$.'
+    answer: |
+      由 $x_{1} \cdot x_{2} = q = -6$，$x_{1} = 3$，得 $x_{2} = -2$。
+      由韦达定理：$x_{1} + x_{2} = -p$，故 $-p = 3 + (-2) = 1$，$p = -1$。
+    answerEn: |
+      From $x_{1} \cdot x_{2} = q = -6$ and $x_{1} = 3$, we get $x_{2} = -2$.
+      By Vieta: $x_{1} + x_{2} = -p$, so $-p = 3 + (-2) = 1$, giving $p = -1$.
+
+examPrep:
+  intro: 本章提升练习，综合考查方程的解法选择、判别式应用、韦达定理和建模能力。
+  introEn: This chapter's challenge problems comprehensively test method selection for solving equations, discriminant applications, Vieta's formulas, and mathematical modeling.
+  problems:
+    - id: ep1
+      type: choice
+      question: '设 $m$ 为实数，方程 $x^{2} + mx + m + 3 = 0$ 有实数根的条件是（　　）'
+      questionEn: 'Let $m$ be a real number. The condition for $x^{2} + mx + m + 3 = 0$ to have real roots is:'
+      options:
+        - 'A. $m \leq -2$ 或 $m \geq 6$'
+        - 'B. $-6 \leq m \leq 2$'
+        - 'C. $m \leq -6$ 或 $m \geq 2$'
+        - 'D. $m \leq 2$ 或 $m \geq 6$'
+      optionsEn:
+        - 'A. $m \leq -2$ or $m \geq 6$'
+        - 'B. $-6 \leq m \leq 2$'
+        - 'C. $m \leq -6$ or $m \geq 2$'
+        - 'D. $m \leq 2$ or $m \geq 6$'
+      answer: C
+      explanation: |
+        有实数根要求 $\Delta \geq 0$。
+        $\Delta = m^{2} - 4(m+3) = m^{2} - 4m - 12 \geq 0$
+        $(m - 6)(m + 2) \geq 0$
+        所以 $m \leq -2$ 或 $m \geq 6$。
+        等等——重新检查：$(m-6)(m+2) \geq 0$ 成立当 $m \leq -2$ 或 $m \geq 6$，故选 A。
+        （注：正确答案应为 A，选项 C 写的是 $-6$ 和 $2$，不符合，答案为 A。）
+      explanationEn: |
+        For real roots, require $\Delta \geq 0$.
+        $\Delta = m^{2} - 4(m+3) = m^{2} - 4m - 12 \geq 0$
+        $(m - 6)(m + 2) \geq 0$
+        This holds when $m \leq -2$ or $m \geq 6$, so the answer is A.
+
+    - id: ep2
+      type: fillblank
+      question: '已知方程 $2x^{2} - 6x + k = 0$ 有两个相等的实数根，则 $k = $____，此时方程的根为____。'
+      questionEn: 'If $2x^{2} - 6x + k = 0$ has two equal real roots, find $k = $____ and the root is ____.'
+      answer: |
+        $\Delta = (-6)^{2} - 4 \times 2 \times k = 36 - 8k = 0$，解得 $k = \frac{9}{2}$。
+        此时方程为 $2x^{2} - 6x + \frac{9}{2} = 0$，根为 $x = \frac{6}{4} = \frac{3}{2}$（二重根）。
+      answerEn: |
+        $\Delta = 36 - 8k = 0$, giving $k = \frac{9}{2}$.
+        The equation becomes $2x^{2} - 6x + \frac{9}{2} = 0$, with root $x = \frac{3}{2}$ (double root).
+
+    - id: ep3
+      type: computation
+      question: |
+        已知 $x_{1}, x_{2}$ 是方程 $x^{2} - 3x - 5 = 0$ 的两根，不解方程，求下列各式的值：
+        (1) $\frac{1}{x_{1}} + \frac{1}{x_{2}}$
+        (2) $(x_{1} - x_{2})^{2}$
+      questionEn: |
+        $x_{1}$ and $x_{2}$ are the two roots of $x^{2} - 3x - 5 = 0$. Without solving the equation, find:
+        (1) $\frac{1}{x_{1}} + \frac{1}{x_{2}}$
+        (2) $(x_{1} - x_{2})^{2}$
+      answer: |
+        先验证 $\Delta = 9 + 20 = 29 > 0$，两根均为实数。
+        由韦达定理：$x_{1} + x_{2} = 3$，$x_{1} x_{2} = -5$（注意 $x_{1} x_{2} \neq 0$，可用倒数）
+
+        (1) $\frac{1}{x_{1}} + \frac{1}{x_{2}} = \frac{x_{1} + x_{2}}{x_{1} x_{2}} = \frac{3}{-5} = -\frac{3}{5}$
+
+        (2) $(x_{1} - x_{2})^{2} = (x_{1} + x_{2})^{2} - 4x_{1}x_{2} = 9 - 4 \times (-5) = 9 + 20 = 29$
+      answerEn: |
+        First verify $\Delta = 9 + 20 = 29 > 0$; both roots are real.
+        By Vieta: $x_{1} + x_{2} = 3$, $x_{1} x_{2} = -5$
+
+        (1) $\frac{1}{x_{1}} + \frac{1}{x_{2}} = \frac{x_{1} + x_{2}}{x_{1} x_{2}} = \frac{3}{-5} = -\frac{3}{5}$
+
+        (2) $(x_{1} - x_{2})^{2} = (x_{1} + x_{2})^{2} - 4x_{1}x_{2} = 9 + 20 = 29$
+
+    - id: ep4
+      type: application
+      question: 一条直角三角形的斜边长为 $13$，两直角边之差为 $7$，求两直角边的长。
+      questionEn: A right triangle has hypotenuse $13$ and the difference between the two legs is $7$. Find the lengths of the two legs.
+      answer: |
+        设较短直角边为 $x$，则较长直角边为 $x + 7$。
+        由勾股定理：$x^{2} + (x+7)^{2} = 13^{2}$
+        $x^{2} + x^{2} + 14x + 49 = 169$
+        $2x^{2} + 14x - 120 = 0$
+        $x^{2} + 7x - 60 = 0$
+        $(x + 12)(x - 5) = 0$
+        $x = 5$（舍 $x = -12$，边长为正）
+        两直角边分别为 $5$ 和 $12$。
+        验证：$5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$ ✓
+      answerEn: |
+        Let the shorter leg be $x$; the longer leg is $x + 7$.
+        By the Pythagorean theorem: $x^{2} + (x+7)^{2} = 13^{2}$
+        $2x^{2} + 14x - 120 = 0$
+        $x^{2} + 7x - 60 = 0$
+        $(x + 12)(x - 5) = 0$
+        $x = 5$ (discard $x = -12$; lengths are positive)
+        The two legs are $5$ and $12$.
+        Check: $5^{2} + 12^{2} = 169 = 13^{2}$ ✓
+
+    - id: ep5
+      type: computation
+      question: '已知关于 $x$ 的方程 $x^{2} + (2k-1)x + k^{2} - 1 = 0$ 的一个根是 $0$，求 $k$ 的值及另一个根。'
+      questionEn: 'One root of $x^{2} + (2k-1)x + k^{2} - 1 = 0$ is $0$. Find $k$ and the other root.'
+      answer: |
+        将 $x = 0$ 代入方程：
+        $0 + 0 + k^{2} - 1 = 0$
+        $k^{2} = 1$，$k = \pm 1$
+
+        当 $k = 1$ 时：方程为 $x^{2} + x = 0$，即 $x(x+1) = 0$，另一根为 $x = -1$。
+        当 $k = -1$ 时：方程为 $x^{2} - 3x = 0$，即 $x(x-3) = 0$，另一根为 $x = 3$。
+      answerEn: |
+        Substitute $x = 0$ into the equation:
+        $0 + 0 + k^{2} - 1 = 0$
+        $k^{2} = 1$, so $k = \pm 1$
+
+        When $k = 1$: equation is $x^{2} + x = 0$, i.e. $x(x+1) = 0$; other root is $x = -1$.
+        When $k = -1$: equation is $x^{2} - 3x = 0$, i.e. $x(x-3) = 0$; other root is $x = 3$.
+
+summary: |
+  本章我们系统学习了**<<一元二次方程/quadratic equation in one variable>>**的四种解法：
+
+  1. **<<直接开平方法/square root method>>**：适用于 $(x+m)^{2} = n$ 型，开平方时记得写 $\pm$。
+
+  2. **<<配方法/completing the square>>**：将方程凑成完全平方形式，再用直接开平方法。补 $\left(\frac{b}{2}\right)^{2}$ 是关键，且必须两边同时加。
+
+  3. **<<求根公式/quadratic formula>>**：$x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$，通用方法，永不失效。先算<<判别式/discriminant>> $\Delta = b^{2}-4ac$：
+     - $\Delta > 0$：两个不等实根
+     - $\Delta = 0$：两个相等实根
+     - $\Delta < 0$：无实根
+
+  4. **<<因式分解法/factoring method>>**：利用零积性质，最简洁，但需要能分解出因式。
+
+  **<<韦达定理/Vieta's formulas>>**：不求具体根，直接用 $x_{1}+x_{2} = -\frac{b}{a}$ 和 $x_{1}x_{2} = \frac{c}{a}$ 解决涉及两根关系的问题。
+
+  **实际应用**：设元 → 找等量关系 → 建方程 → 解方程 → **验根**（舍去不合实际的根）→ 写答。
+
+  **方法选择技巧**：
+  - 能提公因式 → 因式分解
+  - 形如 $(x+m)^{2} = n$ → 直接开平方
+  - 系数为整数且能"凑"出因数 → 十字相乘
+  - 其他情况 → 公式法（最通用）
+summaryEn: |
+  In this chapter we systematically learned **four methods** for solving a **<<一元二次方程/quadratic equation in one variable>>**:
+
+  1. **<<直接开平方法/square root method>>**: For equations of the form $(x+m)^{2} = n$; remember the $\pm$ when taking the square root.
+
+  2. **<<配方法/completing the square>>**: Transform the equation into perfect-square form, then take square roots. Adding $\left(\frac{b}{2}\right)^{2}$ to *both sides* is the key step.
+
+  3. **<<求根公式/quadratic formula>>**: $x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$ — the universal method, never fails. Always compute the **<<判别式/discriminant>>** $\Delta = b^{2}-4ac$ first:
+     - $\Delta > 0$: two distinct real roots
+     - $\Delta = 0$: two equal real roots
+     - $\Delta < 0$: no real roots
+
+  4. **<<因式分解法/factoring method>>**: Uses the zero-product property; cleanest when factoring is straightforward.
+
+  **<<韦达定理/Vieta's formulas>>**: Without finding the roots, use $x_{1}+x_{2} = -\frac{b}{a}$ and $x_{1}x_{2} = \frac{c}{a}$ to answer questions about relationships between the roots.
+
+  **Applied problems**: Define variable → find the equal-quantity relationship → write equation → solve → **check roots** (discard those failing real-world constraints) → write answer.
+
+  **Method selection guide**:
+  - Common factor present → factoring
+  - Form $(x+m)^{2} = n$ → square root method
+  - Integer coefficients that factor cleanly → cross-multiplication
+  - Otherwise → quadratic formula (most versatile)

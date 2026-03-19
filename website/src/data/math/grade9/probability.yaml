@@ -1,0 +1,947 @@
+title: 概率初步
+titleEn: Introduction to Probability
+chapter: 9
+subject: math
+grade: grade9
+semester: semester2
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟 · 第3课时 约55分钟
+estimatedTimeEn: Session 1 ~55 min · Session 2 ~55 min · Session 3 ~55 min
+targetAudience: 小学3年级自学生（已完成八年级数学），自学材料，由简入深
+
+objectives:
+  - 理解<<随机事件/random event>>、<<确定事件/certain event>>、<<不可能事件/impossible event>>的区别，能分类判断
+  - 理解<<概率/probability>>的含义：用 $P(A)$ 表示事件 $A$ 发生的可能性大小，$0 \leq P(A) \leq 1$
+  - 掌握<<古典概型/classical probability model>>：在等可能事件中 $P(A) = \frac{\text{有利结果数}}{\text{总结果数}}$
+  - 能用<<列举法/enumeration method>>（树状图、列表法）系统地列出所有可能的结果
+  - 理解<<互斥事件/mutually exclusive events>>的概念，掌握加法公式 $P(A \cup B) = P(A) + P(B)$
+  - 了解<<几何概型/geometric probability model>>：用面积（或长度）之比计算概率
+objectivesEn:
+  - Understand the difference between <<随机事件/random event>>, <<确定事件/certain event>>, and <<不可能事件/impossible event>>, and classify them
+  - 'Understand the meaning of <<概率/probability>>: $P(A)$ measures how likely event $A$ is to occur, with $0 \leq P(A) \leq 1$'
+  - 'Master the <<古典概型/classical probability model>>: when outcomes are equally likely, $P(A) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}}$'
+  - Use the <<列举法/enumeration method>> (tree diagrams, tables) to systematically list all possible outcomes
+  - Understand <<互斥事件/mutually exclusive events>> and apply the addition rule $P(A \cup B) = P(A) + P(B)$
+  - 'Understand the <<几何概型/geometric probability model>>: computing probability using ratios of areas (or lengths)'
+
+prerequisites:
+  title: 从频率到概率——用数字描述"可能性"
+  titleEn: From Frequency to Probability — Measuring Likelihood with Numbers
+  intro: |
+    在小学和生活中，我们经常遇到"可能""不可能""一定"这样的词语。
+    掷一枚硬币，正面朝上的可能性有多大？从一袋糖果中随机取一颗，取到红色糖果的机会有几成？
+    数学中用**<<概率/probability>>**这个工具，把"可能性"变成一个精确的数字。
+    这一章将带你建立概率的基本概念，学会计算简单事件的概率。
+  introEn: |
+    In everyday life we often use words like "possible," "impossible," and "certain."
+    What is the chance that a tossed coin lands heads? If you reach into a bag of sweets, what is the chance of picking a red one?
+    Mathematics uses **<<概率/probability>>** to turn "likelihood" into a precise number.
+    This chapter builds the foundational ideas of probability and teaches you to calculate the probability of simple events.
+  knownNumbers:
+    - '分数和百分数：$\frac{1}{2} = 50\%$，这将是概率的常见表达形式'
+    - '<<比/ratio>>：有利结果数 $\div$ 总结果数，这正是古典概型的核心'
+    - '<<频率/frequency>>的概念：频率 $=$ 某事件发生次数 $\div$ 总试验次数'
+    - '简单计数：列举小学的排列问题，如从 $3$ 种颜色中选 $2$ 种'
+  knownNumbersEn:
+    - 'Fractions and percentages: $\frac{1}{2} = 50\%$ — common ways to express probability'
+    - '<<比/ratio>>: favourable outcomes $\div$ total outcomes — the core of the classical model'
+    - 'Concept of <<频率/frequency>>: frequency $=$ number of times an event occurs $\div$ total number of trials'
+    - 'Simple counting: listing combinations, e.g. choosing 2 from 3 colours'
+  canSolve:
+    - '用分数表示"均等分成 $n$ 份中取 $1$ 份"的比例'
+    - '根据频率直方图读取数据并计算频率'
+    - '列举简单情况的所有可能性（如掷一枚骰子的 $6$ 种结果）'
+  canSolveEn:
+    - 'Express "1 out of n equal parts" as a fraction'
+    - 'Read data from a frequency histogram and calculate relative frequencies'
+    - 'List all possibilities for a simple situation (e.g. the 6 outcomes when rolling one die)'
+  cannotSolve:
+    - '掷两枚骰子，点数之和等于 $7$ 的概率是多少？'
+    - '从装有 $3$ 红 $2$ 蓝球的袋子里同时摸出 $2$ 球，两球颜色不同的概率是多少？'
+    - '随机在一个正方形区域内投点，落在内切圆内的概率是多少？'
+    - '互斥的两个事件 $A$ 和 $B$，$P(A) = 0.3$，$P(B) = 0.5$，$A$ 或 $B$ 发生的概率是多少？'
+  cannotSolveEn:
+    - 'Two dice are rolled; what is the probability that the sum equals $7$?'
+    - 'Two balls are drawn at once from a bag of 3 red and 2 blue balls; what is the probability they are different colours?'
+    - 'A point is dropped randomly into a square; what is the probability it falls inside the inscribed circle?'
+    - 'Mutually exclusive events $A$ and $B$ have $P(A) = 0.3$ and $P(B) = 0.5$; what is the probability that $A$ or $B$ occurs?'
+  conclusion: |
+    这些问题都需要**<<概率/probability>>**来回答。概率是一个 $0$ 到 $1$ 之间的数，用来精确衡量一件事发生的可能性。
+    这一章将逐步建立完整的概率思维框架，从分辨事件的类型，到精确计算概率，再到用图形面积计算概率。
+  conclusionEn: |
+    All of these questions require **<<概率/probability>>** to answer. Probability is a number between $0$ and $1$ that precisely measures how likely something is to happen.
+    This chapter builds a complete framework for probabilistic thinking — from classifying events, to calculating probability precisely, to using geometric areas to compute probability.
+
+concepts:
+  - id: event-types
+    title: 随机事件、确定事件与不可能事件
+    titleEn: Random Events, Certain Events, and Impossible Events
+    content: |
+      在一次**<<试验/trial>>**（可重复的随机活动，例如掷骰子、抛硬币、摸球）中，我们关心某个**<<事件/event>>**是否发生。
+
+      **三种事件类型：**
+
+      1. **<<确定事件/certain event>>（必然事件）**：在一次试验中，一定会发生的事件。
+         - 概率等于 $1$，即 $P(\text{确定事件}) = 1$。
+         - 例：掷骰子，"点数不超过 $6$"；从装有红球的袋子里摸球，"摸到一个球"。
+
+      2. **<<不可能事件/impossible event>>**：在一次试验中，一定不会发生的事件。
+         - 概率等于 $0$，即 $P(\text{不可能事件}) = 0$。
+         - 例：掷骰子，"点数等于 $7$"；从全是红球的袋子里摸出"蓝球"。
+
+      3. **<<随机事件/random event>>**：在一次试验中，可能发生也可能不发生的事件。
+         - 概率满足 $0 < P(A) < 1$。
+         - 例：掷骰子，"点数为偶数"；抛硬币，"正面朝上"；摸球，"取到红球"。
+
+      **关键理解：**
+      - "可能性"是针对**单次试验**而言的，不是说"做很多次就一定发生"。
+      - <<随机事件/random event>>的结果事先无法确定，但有规律可循——长期来看，各结果出现的频率会稳定在某个值附近，这个值就是**<<概率/probability>>**。
+      - 确定事件和不可能事件是随机事件的两个极端（边界情况）。
+    contentEn: |
+      In a **<<试验/trial>>** (a repeatable random activity, such as rolling a die, tossing a coin, or drawing a ball), we are interested in whether a particular **<<事件/event>>** occurs.
+
+      **Three types of events:**
+
+      1. **<<确定事件/certain event>>**: An event that will definitely occur in every trial.
+         - Probability equals $1$: $P(\text{certain event}) = 1$.
+         - Examples: rolling a die and getting "a number not exceeding $6$"; drawing a ball from a bag that contains only red balls.
+
+      2. **<<不可能事件/impossible event>>**: An event that cannot possibly occur in any trial.
+         - Probability equals $0$: $P(\text{impossible event}) = 0$.
+         - Examples: rolling a die and getting "a $7$"; drawing a "blue ball" from a bag that contains only red balls.
+
+      3. **<<随机事件/random event>>**: An event that may or may not occur in a single trial.
+         - Probability satisfies $0 < P(A) < 1$.
+         - Examples: rolling a die and getting "an even number"; tossing a coin and getting "heads"; drawing "a red ball" from a mixed bag.
+
+      **Key understanding:**
+      - "Likelihood" refers to a **single trial** — it does not mean "it will definitely happen if you try enough times."
+      - The outcome of a <<随机事件/random event>> cannot be predicted in advance, but there is an underlying pattern: over many trials, the frequency of each outcome stabilises near a fixed value — that value is the **<<概率/probability>>**.
+      - Certain and impossible events are the two extremes (boundary cases) of random events.
+    examples:
+      - '掷一枚均匀骰子，"点数为 $1$ 到 $6$ 之间的整数"是<<确定事件/certain event>>'
+      - '掷一枚均匀骰子，"点数为 $8$"是<<不可能事件/impossible event>>'
+      - '掷一枚均匀骰子，"点数为奇数"是<<随机事件/random event>>（可能发生，也可能不发生）'
+      - '"明天会下雨"——这是<<随机事件/random event>>（事先无法确定）'
+      - '"太阳明天从东方升起"——这是<<确定事件/certain event>>（自然规律决定）'
+    examplesEn:
+      - 'Rolling a fair die and getting "an integer from 1 to 6" is a <<确定事件/certain event>>'
+      - 'Rolling a fair die and getting "an 8" is an <<不可能事件/impossible event>>'
+      - 'Rolling a fair die and getting "an odd number" is a <<随机事件/random event>> (may or may not happen)'
+      - '"It will rain tomorrow" is a <<随机事件/random event>> (cannot be determined in advance)'
+      - '"The sun rises in the east tomorrow" is a <<确定事件/certain event>> (determined by natural law)'
+    notes:
+      - '概率为 $0$ 的事件一定是不可能事件；概率为 $1$ 的事件一定是确定事件；所有随机事件的概率满足 $0 < P < 1$'
+      - '不要混淆"频率"和"概率"：频率是试验结果中某事件出现的比例（实验值），概率是理论上的可能性（理论值）'
+      - '当试验次数越来越多时，频率会越来越接近概率——这叫做"频率稳定性"'
+    notesEn:
+      - 'An event with probability $0$ is impossible; an event with probability $1$ is certain; all random events satisfy $0 < P < 1$'
+      - 'Do not confuse "frequency" (the observed proportion in experiments) with "probability" (the theoretical likelihood)'
+      - 'As the number of trials increases, the frequency approaches the probability — this is called "frequency stability"'
+
+  - id: classical-probability
+    title: 古典概型与概率的定义
+    titleEn: The Classical Probability Model and the Definition of Probability
+    content: |
+      **<<频率/frequency>>与<<概率/probability>>的关系**
+
+      做大量重复试验时，某事件出现的<<频率/frequency>>会逐渐稳定在一个固定值附近。
+      这个固定值就定义为该事件的**<<概率/probability>>**，记作 $P(A)$。
+
+      **<<古典概型/classical probability model>>（等可能概型）**
+
+      当一次试验满足以下两个条件时，称为古典概型：
+      1. **有限性**：试验的所有可能结果有限（共 $n$ 种）。
+      2. **等可能性**：每种结果出现的可能性相同。
+
+      在古典概型中，事件 $A$ 的概率公式为：
+
+      $$P(A) = \frac{\text{事件 } A \text{ 包含的基本结果数}}{\text{所有基本结果总数}} = \frac{m}{n}$$
+
+      其中 $m$ 是对事件 $A$ **有利**的结果数，$n$ 是试验所有可能结果的总数。
+
+      **概率的基本性质：**
+      - $0 \leq P(A) \leq 1$（概率是 $0$ 到 $1$ 之间的数）
+      - $P(\text{确定事件}) = 1$
+      - $P(\text{不可能事件}) = 0$
+
+      **<<对立事件/complementary event>>：**
+      事件 $A$ 不发生的事件叫 $A$ 的对立事件，记作 $\bar{A}$。
+      $$P(\bar{A}) = 1 - P(A)$$
+      这是非常实用的公式：有时计算"不发生"比"发生"更容易。
+    contentEn: |
+      **The relationship between <<频率/frequency>> and <<概率/probability>>**
+
+      When a trial is repeated many times, the <<频率/frequency>> of a given event gradually stabilises near a fixed value.
+      That fixed value is defined as the **<<概率/probability>>** of the event, written $P(A)$.
+
+      **The <<古典概型/classical probability model>> (equally-likely outcomes)**
+
+      A trial is called a classical probability model when it satisfies two conditions:
+      1. **Finite**: there are finitely many possible outcomes (say $n$ in total).
+      2. **Equally likely**: each outcome is equally likely.
+
+      In the classical model, the probability of event $A$ is:
+
+      $$P(A) = \frac{\text{number of outcomes favourable to } A}{\text{total number of outcomes}} = \frac{m}{n}$$
+
+      where $m$ is the number of outcomes **favourable** to $A$ and $n$ is the total number of possible outcomes.
+
+      **Basic properties of probability:**
+      - $0 \leq P(A) \leq 1$ (probability is a number between $0$ and $1$)
+      - $P(\text{certain event}) = 1$
+      - $P(\text{impossible event}) = 0$
+
+      **<<对立事件/complementary event>>:**
+      The event "A does not occur" is called the complement of $A$, written $\bar{A}$.
+      $$P(\bar{A}) = 1 - P(A)$$
+      This formula is very useful: sometimes it is easier to calculate the probability of "not happening" and subtract from $1$.
+    examples:
+      - '掷一枚均匀骰子（$6$ 个等可能结果），"点数为 $3$"：$P = \frac{1}{6}$'
+      - '掷一枚均匀骰子，"点数为偶数"（$2, 4, 6$ 三个有利结果）：$P = \frac{3}{6} = \frac{1}{2}$'
+      - '袋中有 $3$ 红球 $2$ 蓝球，随机取 $1$ 球，"取到红球"：$P = \frac{3}{5}$'
+      - '利用对立事件："取到的不是红球" $= P(\bar{A}) = 1 - \frac{3}{5} = \frac{2}{5}$'
+    examplesEn:
+      - 'Roll a fair die (6 equally likely outcomes); "get a 3": $P = \frac{1}{6}$'
+      - 'Roll a fair die; "get an even number" (favourable outcomes: 2, 4, 6): $P = \frac{3}{6} = \frac{1}{2}$'
+      - 'A bag has 3 red and 2 blue balls; draw 1 at random; "draw a red ball": $P = \frac{3}{5}$'
+      - 'Using the complement: "draw a non-red ball" $= P(\bar{A}) = 1 - \frac{3}{5} = \frac{2}{5}$'
+    notes:
+      - '使用古典概型的前提是"等可能"——如果不同结果的可能性不同，就不能直接用 $\frac{m}{n}$'
+      - '分子 $m$ 是"有利于事件 $A$ 的结果数"——要仔细数清楚'
+      - '对立事件公式 $P(\bar{A}) = 1 - P(A)$ 非常实用：当直接计算 $P(A)$ 麻烦时，可先算 $P(\bar{A})$'
+    notesEn:
+      - 'The classical model requires "equally likely" outcomes — if different outcomes have different probabilities, you cannot simply use $\frac{m}{n}$'
+      - 'The numerator $m$ counts outcomes "favourable to event $A$" — count carefully'
+      - 'The complement formula $P(\bar{A}) = 1 - P(A)$ is very handy: when computing $P(A)$ directly is complicated, compute $P(\bar{A})$ first'
+
+  - id: enumeration-method
+    title: 列举法——树状图与列表法
+    titleEn: The Enumeration Method — Tree Diagrams and Tables
+    content: |
+      当一次试验由**多个步骤**组成时（如掷两枚骰子、连续摸球），可能结果的总数不再显而易见。
+      **<<列举法/enumeration method>>**帮助我们**系统地、不重不漏**地列出所有可能结果。
+
+      **方法一：<<树状图/tree diagram>>（适合步骤不多、每步结果少的情况）**
+
+      - 每一层代表一步操作，每条分支代表一种结果。
+      - 从根到叶的每条完整路径代表一种总结果。
+      - 总路径数 $=$ 各层分支数之积（乘法原理）。
+
+      **方法二：<<列表法/table method>>（适合两步操作，结果可以排成矩阵的情况）**
+
+      - 用行表示第一步的结果，列表示第二步的结果。
+      - 每个格子代表一种总结果。
+      - 表中总格数 $=$ 行数 $\times$ 列数。
+
+      **乘法计数原理：**
+      若第一步有 $m$ 种方法，第二步有 $n$ 种方法，则两步合起来共有 $m \times n$ 种不同的方法。
+
+      **示例：掷两枚硬币（H 正面，T 反面）**
+
+      树状图共 $4$ 种等可能结果：$(H,H),(H,T),(T,H),(T,T)$。
+
+      "至少一枚正面"包含 $(H,H),(H,T),(T,H)$ 共 $3$ 种，$P = \frac{3}{4}$。
+    contentEn: |
+      When a trial consists of **multiple steps** (e.g. rolling two dice, drawing balls in sequence), the total number of possible outcomes is no longer obvious.
+      The **<<列举法/enumeration method>>** helps us list all outcomes **systematically, without repetition or omission**.
+
+      **Method 1: <<树状图/tree diagram>> (best when there are few steps and few outcomes per step)**
+
+      - Each level represents one step; each branch represents one outcome.
+      - Each complete path from root to leaf represents one total outcome.
+      - Total paths $=$ product of the number of branches at each level (multiplication principle).
+
+      **Method 2: <<列表法/table method>> (best for two-step processes that can be arranged as a matrix)**
+
+      - Rows represent the outcomes of the first step; columns represent those of the second step.
+      - Each cell represents one total outcome.
+      - Total cells $=$ number of rows $\times$ number of columns.
+
+      **Multiplication counting principle:**
+      If there are $m$ ways for the first step and $n$ ways for the second step, there are $m \times n$ ways in total.
+
+      **Example: tossing two coins (H = heads, T = tails)**
+
+      Tree diagram gives $4$ equally likely outcomes: $(H,H),(H,T),(T,H),(T,T)$.
+
+      "At least one head" includes $(H,H),(H,T),(T,H)$ — that is 3 outcomes, so $P = \frac{3}{4}$.
+    examples:
+      - '掷两枚骰子：总结果数 $= 6 \times 6 = 36$，用 $6 \times 6$ 的列表可以系统列出'
+      - '从 $1,2,3$ 三个数中任取两个不同的数组成两位数：树状图有 $3 \times 2 = 6$ 条路径'
+      - '袋中有红（R）、蓝（B）、绿（G）三球，有放回地连取两次：树状图共 $3 \times 3 = 9$ 种结果'
+      - '不放回取两次（从 R, B, G 中）：树状图共 $3 \times 2 = 6$ 种结果（第二步只剩 $2$ 个）'
+    examplesEn:
+      - 'Rolling two dice: total outcomes $= 6 \times 6 = 36$; a $6 \times 6$ table lists them all'
+      - 'Choosing 2 different digits from 1, 2, 3 to form a two-digit number: the tree has $3 \times 2 = 6$ paths'
+      - 'A bag holds Red (R), Blue (B), Green (G) balls; draw twice with replacement: $3 \times 3 = 9$ outcomes'
+      - 'Draw twice without replacement from R, B, G: $3 \times 2 = 6$ outcomes (only 2 balls left for the second draw)'
+    notes:
+      - '用树状图时，每一层的分支必须覆盖该步所有可能结果，不能遗漏'
+      - '列表法只适合两步操作；三步或以上应优先用树状图'
+      - '"有放回"和"不放回"的区别非常重要——有放回时每次结果相同（$n$ 种），不放回时后续结果减少'
+      - '计算概率时，必须先确认所有基本结果是否等可能，否则不能直接套用 $\frac{m}{n}$'
+    notesEn:
+      - 'When drawing a tree diagram, every branch at each level must cover all possible outcomes for that step — do not miss any'
+      - 'A table works for two-step processes; for three or more steps, prefer a tree diagram'
+      - 'The distinction between "with replacement" and "without replacement" is crucial'
+      - 'Before using $\frac{m}{n}$, confirm that all basic outcomes are equally likely'
+
+  - id: mutually-exclusive
+    title: 互斥事件与概率加法公式
+    titleEn: Mutually Exclusive Events and the Addition Rule
+    content: |
+      **<<互斥事件/mutually exclusive events>>的定义**
+
+      如果在一次试验中，事件 $A$ 和事件 $B$ **不能同时发生**，则称 $A$ 与 $B$ 互斥，也叫**不相容事件**。
+      用集合语言来说：$A$ 与 $B$ 的交集为空集，即 $A \cap B = \emptyset$。
+
+      **互斥事件的加法公式：**
+      $$P(A \cup B) = P(A) + P(B)$$
+      其中 $A \cup B$ 表示"$A$ 或 $B$ 至少有一个发生"。
+
+      **直观理解：**
+      想象一个骰子的 $6$ 个面各占 $\frac{1}{6}$ 的面积。
+      "点数为 $1$"和"点数为 $2$"是两个互斥事件——它们不能同时发生。
+      "点数为 $1$ 或 $2$"占的面积是 $\frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}$。
+
+      **推广：多个互斥事件的加法**
+      若事件 $A_1, A_2, \ldots, A_k$ 两两互斥，则：
+      $$P(A_1 \cup A_2 \cup \cdots \cup A_k) = P(A_1) + P(A_2) + \cdots + P(A_k)$$
+
+      **特别情况——对立事件：**
+      $A$ 与 $\bar{A}$ 是互斥事件，且 $A \cup \bar{A} = $ 全集，所以：
+      $$P(A) + P(\bar{A}) = 1$$
+
+      **注意：互斥 $\neq$ 对立**
+      - 互斥：$A$ 和 $B$ 不能同时发生（但有可能两者都不发生）。
+      - 对立：$A$ 和 $B$ 不能同时发生，且**必有一个发生**。
+      - 对立事件一定互斥；互斥事件不一定对立。
+    contentEn: |
+      **Definition of <<互斥事件/mutually exclusive events>>**
+
+      If events $A$ and $B$ **cannot both occur** in a single trial, they are called mutually exclusive (or incompatible).
+      In set notation: $A \cap B = \emptyset$ (their intersection is empty).
+
+      **Addition rule for mutually exclusive events:**
+      $$P(A \cup B) = P(A) + P(B)$$
+      Here $A \cup B$ means "at least one of $A$ or $B$ occurs."
+
+      **Intuitive picture:**
+      Imagine the 6 faces of a die each occupying $\frac{1}{6}$ of the "probability area."
+      "Getting a 1" and "getting a 2" are mutually exclusive — they cannot happen at the same time.
+      "Getting a 1 or a 2" covers area $\frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}$.
+
+      **Extension: multiple mutually exclusive events**
+      If events $A_1, A_2, \ldots, A_k$ are pairwise mutually exclusive, then:
+      $$P(A_1 \cup A_2 \cup \cdots \cup A_k) = P(A_1) + P(A_2) + \cdots + P(A_k)$$
+
+      **Special case — complementary events:**
+      $A$ and $\bar{A}$ are mutually exclusive, and $A \cup \bar{A}$ covers all outcomes, so:
+      $$P(A) + P(\bar{A}) = 1$$
+
+      **Note: mutually exclusive vs complementary**
+      - Mutually exclusive: $A$ and $B$ cannot both occur (but both may fail to occur).
+      - Complementary: $A$ and $B$ cannot both occur, AND one must occur.
+      - Complementary events are always mutually exclusive; mutually exclusive events are not necessarily complementary.
+    examples:
+      - '掷骰子，$A$ ="点数为 $1$"，$B$ ="点数为 $6$"：互斥，$P(A \cup B) = \frac{1}{6} + \frac{1}{6} = \frac{1}{3}$'
+      - '掷骰子，$A$ ="点数为奇数"，$B$ ="点数为偶数"：互斥且对立，$P(A \cup B) = \frac{1}{2} + \frac{1}{2} = 1$'
+      - '掷骰子，$A$ ="点数为偶数"，$B$ ="点数大于 $4$"：不互斥！因为 $6$ 既是偶数又大于 $4$'
+      - '袋中 $3$ 红 $2$ 蓝 $1$ 绿，取 $1$ 球，$P(\text{红或蓝}) = \frac{3}{6} + \frac{2}{6} = \frac{5}{6}$'
+    examplesEn:
+      - 'Roll a die; $A$ = "get 1", $B$ = "get 6": mutually exclusive, $P(A \cup B) = \frac{1}{6} + \frac{1}{6} = \frac{1}{3}$'
+      - 'Roll a die; $A$ = "get an odd", $B$ = "get an even": mutually exclusive and complementary, $P(A \cup B) = 1$'
+      - 'Roll a die; $A$ = "get an even", $B$ = "get a number > 4": NOT mutually exclusive! $6$ satisfies both'
+      - 'A bag has 3 red, 2 blue, 1 green; draw 1; $P(\text{red or blue}) = \frac{3}{6} + \frac{2}{6} = \frac{5}{6}$'
+    notes:
+      - '使用加法公式的前提是两事件**互斥**，否则会重复计算两事件共同的部分'
+      - '判断互斥的方法：看两个事件的结果集合有没有交集（公共元素）'
+      - '对立事件一定互斥，但互斥事件不一定是对立事件'
+    notesEn:
+      - 'The addition rule requires the two events to be **mutually exclusive**; otherwise you double-count outcomes in both events'
+      - 'To check mutual exclusivity: see whether the two outcome sets have any elements in common'
+      - 'Complementary events are always mutually exclusive, but mutually exclusive events need not be complementary'
+
+  - id: geometric-probability
+    title: 几何概型——用面积（或长度）计算概率
+    titleEn: Geometric Probability — Using Area (or Length) to Compute Probability
+    content: |
+      当试验的结果有**无限多个**且在某个区间或区域上**均匀分布**时，古典概型（用结果计数）不再适用。
+      这时使用**<<几何概型/geometric probability model>>**：用面积（或长度）的比值来计算概率。
+
+      **核心公式：**
+      $$P(A) = \frac{\text{事件 } A \text{ 对应的区域面积（或长度）}}{\text{总区域面积（或总长度）}}$$
+
+      **前提条件：** 试验结果在总区域内**均匀分布**。
+
+      **典型情形：**
+      1. **转盘问题**：圆心角为 $\theta$ 的扇形区域的概率 $= \frac{\theta}{360°}$。
+      2. **线段上投点**：在长度为 $L$ 的线段上随机选一点，落在某段 $\ell$ 内的概率 $= \frac{\ell}{L}$。
+      3. **矩形内投点**：在面积为 $S$ 的区域内随机投点，落在面积为 $s$ 的子区域内的概率 $= \frac{s}{S}$。
+
+      **与古典概型的比较：**
+
+      古典概型：有限个等可能结果，用计数 $\frac{m}{n}$ 计算。
+
+      几何概型：无限个均匀分布结果，用面积（长度）之比计算。
+    contentEn: |
+      When a trial has **infinitely many** outcomes that are **uniformly distributed** over an interval or region, the classical probability model (counting outcomes) no longer applies.
+      Instead we use the **<<几何概型/geometric probability model>>**: probability is computed as a ratio of areas (or lengths).
+
+      **Core formula:**
+      $$P(A) = \frac{\text{area (or length) of the region corresponding to event } A}{\text{total area (or total length)}}$$
+
+      **Prerequisite:** The outcomes are **uniformly distributed** across the total region.
+
+      **Typical situations:**
+      1. **Spinning wheel**: a sector with central angle $\theta$ has probability $\frac{\theta}{360°}$.
+      2. **Random point on a segment**: on a segment of length $L$, probability of landing in a sub-segment of length $\ell$ is $\frac{\ell}{L}$.
+      3. **Random point in a region**: in a region of area $S$, probability of landing in a sub-region of area $s$ is $\frac{s}{S}$.
+
+      **Comparison:**
+
+      Classical model: finite equally-likely outcomes, calculated by counting $\frac{m}{n}$.
+
+      Geometric model: infinitely many uniformly distributed outcomes, calculated by area (or length) ratio.
+    examples:
+      - '转盘分为 $3$ 扇形，圆心角 $120°$、$90°$、$150°$，落在 $90°$ 扇形的概率 $= \frac{90}{360} = \frac{1}{4}$'
+      - '线段 $AB$ 长 $10$ cm，$AC = 4$ cm，随机投点落在 $AC$ 上的概率 $= \frac{4}{10} = \frac{2}{5}$'
+      - '正方形边长 $2$，内切圆半径 $1$，随机投点落入圆内的概率 $= \frac{\pi \times 1^{2}}{2^{2}} = \frac{\pi}{4} \approx 0.785$'
+    examplesEn:
+      - 'A wheel divided into $120°$, $90°$, $150°$ sectors; probability of landing on the $90°$ sector $= \frac{90}{360} = \frac{1}{4}$'
+      - 'Segment $AB = 10$ cm, $AC = 4$ cm; probability that a random point lands on $AC$ is $\frac{4}{10} = \frac{2}{5}$'
+      - 'Square of side $2$ with inscribed circle of radius $1$; probability of landing inside the circle $= \frac{\pi \times 1^{2}}{2^{2}} = \frac{\pi}{4} \approx 0.785$'
+    notes:
+      - '几何概型的关键假设是"均匀分布"——投点不均匀时不能用面积比'
+      - '几何概型可以产生无理数概率（如 $\frac{\pi}{4}$），这是古典概型做不到的'
+      - '转盘问题用角度比和用面积比计算结果相同（因为面积与圆心角成正比）'
+    notesEn:
+      - 'The key assumption is "uniform distribution" — if the distribution is not uniform, the area ratio does not give the correct probability'
+      - 'Geometric probability can yield irrational probabilities (e.g. $\frac{\pi}{4}$), which the classical model cannot produce'
+      - 'For a spinning wheel, using the angle ratio and the area ratio give the same answer (area is proportional to angle)'
+
+realLife:
+  title: 生活中的概率
+  titleEn: Probability in Everyday Life
+  intro: |
+    概率无处不在，从天气预报到游戏设计，从医学诊断到质量控制，都离不开概率的思想。
+  introEn: |
+    Probability is everywhere — from weather forecasts to game design, from medical diagnosis to quality control.
+  examples:
+    - context: 天气预报
+      contextEn: Weather forecasting
+      description: '气象部门说"明天降雨概率 $60\%$"，意思是：在历史上相似天气条件下，$100$ 次中有 $60$ 次会下雨。这是基于历史频率估算的概率。'
+      descriptionEn: 'When a weather service says "60% chance of rain tomorrow," it means: under similar historical conditions, rain occurred 60 out of 100 times. This is a probability estimated from historical frequency.'
+    - context: 游戏公平性
+      contextEn: Fairness in games
+      description: '判断一个游戏是否"公平"，需要计算每个参与者获胜的概率是否相等。例如：掷硬币正反面的概率各为 $\frac{1}{2}$，这是公平的。'
+      descriptionEn: 'To judge whether a game is "fair," calculate whether each player has an equal probability of winning. For example: tossing a coin gives each side a probability of $\frac{1}{2}$ — that is fair.'
+    - context: 质量控制
+      contextEn: Quality control
+      description: '工厂抽检产品，若每 $100$ 件产品中抽到次品的概率 $< 5\%$，则认为该批产品合格。这是用频率估计概率的实际应用。'
+      descriptionEn: 'A factory inspects a sample of products. If the probability of finding a defective item is less than $5\%$ per 100 items, the batch is considered acceptable.'
+
+examples:
+  - id: ex1
+    title: 古典概型基础——掷骰子问题
+    titleEn: Classical probability basics — rolling a die
+    question: |
+      掷一枚均匀骰子，求下列各事件的概率：
+      $(1)$ 点数为 $4$；
+      $(2)$ 点数为偶数；
+      $(3)$ 点数大于 $2$；
+      $(4)$ 点数不等于 $6$。
+    questionEn: |
+      A fair die is rolled. Find the probability of each event:
+      $(1)$ The number shown is $4$.
+      $(2)$ The number shown is even.
+      $(3)$ The number shown is greater than $2$.
+      $(4)$ The number shown is not $6$.
+    type: computation
+    solution:
+      steps:
+        - '掷一枚均匀骰子，所有可能结果为 $\{1, 2, 3, 4, 5, 6\}$，共 $n = 6$ 种等可能结果。'
+        - '$(1)$ 有利结果：$\{4\}$，共 $1$ 种。$P = \frac{1}{6}$'
+        - '$(2)$ 有利结果：$\{2, 4, 6\}$，共 $3$ 种。$P = \frac{3}{6} = \frac{1}{2}$'
+        - '$(3)$ 有利结果：$\{3, 4, 5, 6\}$，共 $4$ 种。$P = \frac{4}{6} = \frac{2}{3}$'
+        - '$(4)$ 方法一（直接）：有利结果 $\{1,2,3,4,5\}$，共 $5$ 种。$P = \frac{5}{6}$'
+        - '方法二（对立事件）：$P(\text{点数不为 6}) = 1 - P(\text{点数为 6}) = 1 - \frac{1}{6} = \frac{5}{6}$'
+    solutionEn:
+      steps:
+        - 'Rolling a fair die, all possible outcomes are $\{1, 2, 3, 4, 5, 6\}$, giving $n = 6$ equally likely results.'
+        - '$(1)$ Favourable outcomes: $\{4\}$ — 1 outcome. $P = \frac{1}{6}$'
+        - '$(2)$ Favourable outcomes: $\{2, 4, 6\}$ — 3 outcomes. $P = \frac{3}{6} = \frac{1}{2}$'
+        - '$(3)$ Favourable outcomes: $\{3, 4, 5, 6\}$ — 4 outcomes. $P = \frac{4}{6} = \frac{2}{3}$'
+        - '$(4)$ Method 1 (direct): favourable outcomes $\{1,2,3,4,5\}$ — 5 outcomes. $P = \frac{5}{6}$'
+        - 'Method 2 (complement): $P(\text{not 6}) = 1 - P(\text{get 6}) = 1 - \frac{1}{6} = \frac{5}{6}$'
+    answer: '$(1)\ \frac{1}{6}$；$(2)\ \frac{1}{2}$；$(3)\ \frac{2}{3}$；$(4)\ \frac{5}{6}$'
+    answerEn: '$(1)\ \frac{1}{6}$; $(2)\ \frac{1}{2}$; $(3)\ \frac{2}{3}$; $(4)\ \frac{5}{6}$'
+
+  - id: ex2
+    title: 用树状图枚举——掷两枚硬币
+    titleEn: Tree diagram enumeration — tossing two coins
+    question: |
+      同时掷两枚均匀硬币，用树状图列出所有可能结果，并求：
+      $(1)$ 两枚都是正面朝上的概率；
+      $(2)$ 恰好一枚正面朝上的概率；
+      $(3)$ 至少一枚正面朝上的概率。
+    questionEn: |
+      Two fair coins are tossed simultaneously. Use a tree diagram to list all possible outcomes, then find:
+      $(1)$ The probability that both coins show heads.
+      $(2)$ The probability that exactly one coin shows heads.
+      $(3)$ The probability that at least one coin shows heads.
+    type: computation
+    solution:
+      steps:
+        - '用 H 表示正面，T 表示反面。树状图共 $4$ 种等可能结果：$(H,H),(H,T),(T,H),(T,T)$。$n = 4$。'
+        - '$(1)$ 两枚都正面：$\{(H,H)\}$，$1$ 种。$P = \frac{1}{4}$'
+        - '$(2)$ 恰好一枚正面：$\{(H,T),(T,H)\}$，$2$ 种。$P = \frac{2}{4} = \frac{1}{2}$'
+        - '$(3)$ 方法一（直接）：至少一枚正面 $= \{(H,H),(H,T),(T,H)\}$，$3$ 种。$P = \frac{3}{4}$'
+        - '方法二（对立事件）：对立事件是"两枚都是反面 $(T,T)$"，$P = 1 - \frac{1}{4} = \frac{3}{4}$'
+    solutionEn:
+      steps:
+        - 'Let H = heads, T = tails. The tree diagram gives 4 equally likely outcomes: $(H,H),(H,T),(T,H),(T,T)$. $n = 4$.'
+        - '$(1)$ Both heads: $\{(H,H)\}$ — 1 outcome. $P = \frac{1}{4}$'
+        - '$(2)$ Exactly one head: $\{(H,T),(T,H)\}$ — 2 outcomes. $P = \frac{2}{4} = \frac{1}{2}$'
+        - '$(3)$ Method 1 (direct): at least one head $= \{(H,H),(H,T),(T,H)\}$ — 3 outcomes. $P = \frac{3}{4}$'
+        - 'Method 2 (complement): complement is "both tails $(T,T)$", so $P = 1 - \frac{1}{4} = \frac{3}{4}$'
+    answer: '$(1)\ \frac{1}{4}$；$(2)\ \frac{1}{2}$；$(3)\ \frac{3}{4}$'
+    answerEn: '$(1)\ \frac{1}{4}$; $(2)\ \frac{1}{2}$; $(3)\ \frac{3}{4}$'
+
+  - id: ex3
+    title: 用列表法枚举——掷两枚骰子之和
+    titleEn: Table enumeration — sum of two dice
+    question: |
+      同时掷两枚均匀骰子，用列表法列出所有 $36$ 种可能结果，求：
+      $(1)$ 两骰子点数之和等于 $7$ 的概率；
+      $(2)$ 两骰子点数之和不超过 $4$ 的概率；
+      $(3)$ 两骰子点数之和等于 $12$ 的概率。
+    questionEn: |
+      Two fair dice are rolled simultaneously. Use a table to list all 36 possible outcomes, then find:
+      $(1)$ The probability that the sum of the two dice equals $7$.
+      $(2)$ The probability that the sum of the two dice does not exceed $4$.
+      $(3)$ The probability that the sum of the two dice equals $12$.
+    type: computation
+    solution:
+      steps:
+        - '列表法：行代表第一枚骰子（$1 \sim 6$），列代表第二枚骰子（$1 \sim 6$），总结果数 $n = 6 \times 6 = 36$，每种结果等可能。'
+        - '$(1)$ 和等于 $7$ 的结果：$(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$，共 $6$ 种。$P = \frac{6}{36} = \frac{1}{6}$'
+        - '$(2)$ 和不超过 $4$（和 $= 2, 3$ 或 $4$）：'
+        - '和 $= 2$：$(1,1)$，$1$ 种；和 $= 3$：$(1,2),(2,1)$，$2$ 种；和 $= 4$：$(1,3),(2,2),(3,1)$，$3$ 种'
+        - '共 $1 + 2 + 3 = 6$ 种。$P = \frac{6}{36} = \frac{1}{6}$'
+        - '$(3)$ 和等于 $12$：只有 $(6,6)$，$1$ 种。$P = \frac{1}{36}$'
+    solutionEn:
+      steps:
+        - 'Table: rows = die 1 ($1 \sim 6$), columns = die 2 ($1 \sim 6$). Total outcomes: $n = 6 \times 6 = 36$, all equally likely.'
+        - '$(1)$ Outcomes with sum $= 7$: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$ — 6 outcomes. $P = \frac{6}{36} = \frac{1}{6}$'
+        - '$(2)$ Sum $\leq 4$ (i.e. sum $= 2, 3$, or $4$):'
+        - 'Sum $= 2$: $(1,1)$ — 1; sum $= 3$: $(1,2),(2,1)$ — 2; sum $= 4$: $(1,3),(2,2),(3,1)$ — 3'
+        - 'Total: $1 + 2 + 3 = 6$ outcomes. $P = \frac{6}{36} = \frac{1}{6}$'
+        - '$(3)$ Sum $= 12$: only $(6,6)$ — 1 outcome. $P = \frac{1}{36}$'
+    answer: '$(1)\ \frac{1}{6}$；$(2)\ \frac{1}{6}$；$(3)\ \frac{1}{36}$'
+    answerEn: '$(1)\ \frac{1}{6}$; $(2)\ \frac{1}{6}$; $(3)\ \frac{1}{36}$'
+
+  - id: ex4
+    title: 互斥事件加法公式的应用
+    titleEn: Applying the addition rule for mutually exclusive events
+    question: |
+      袋中有 $10$ 个球，其中 $4$ 个红球、$3$ 个蓝球、$2$ 个绿球、$1$ 个黄球。从袋中随机取出 $1$ 球，设：
+      - 事件 $A$："取到红球"；事件 $B$："取到蓝球"；事件 $C$："取到绿球"
+
+      求：$(1)$ $P(A)$，$P(B)$，$P(C)$；$(2)$ $P(A \cup B)$；$(3)$ 取到红球、蓝球或绿球的概率；$(4)$ 取到的不是黄球的概率。
+    questionEn: |
+      A bag contains 10 balls: 4 red, 3 blue, 2 green, 1 yellow. One ball is drawn at random. Let $A$ = "draw red", $B$ = "draw blue", $C$ = "draw green". Find:
+      $(1)$ $P(A)$, $P(B)$, $P(C)$; $(2)$ $P(A \cup B)$; $(3)$ $P(\text{red, blue, or green})$; $(4)$ $P(\text{not yellow})$.
+    type: computation
+    solution:
+      steps:
+        - '总球数 $n = 10$，每球等可能被取到。'
+        - '$(1)$ $P(A) = \frac{4}{10} = \frac{2}{5}$；$P(B) = \frac{3}{10}$；$P(C) = \frac{2}{10} = \frac{1}{5}$'
+        - '$(2)$ 事件 $A$ 与 $B$ 互斥（一个球不能同时是红球和蓝球）。$P(A \cup B) = P(A) + P(B) = \frac{4}{10} + \frac{3}{10} = \frac{7}{10}$'
+        - '$(3)$ $A$、$B$、$C$ 两两互斥。$P(A \cup B \cup C) = \frac{4}{10} + \frac{3}{10} + \frac{2}{10} = \frac{9}{10}$'
+        - '$(4)$ 对立事件法：$P(\text{非黄球}) = 1 - P(\text{黄球}) = 1 - \frac{1}{10} = \frac{9}{10}$'
+    solutionEn:
+      steps:
+        - 'Total balls: $n = 10$, each equally likely.'
+        - '$(1)$ $P(A) = \frac{4}{10} = \frac{2}{5}$; $P(B) = \frac{3}{10}$; $P(C) = \frac{2}{10} = \frac{1}{5}$'
+        - '$(2)$ $A$ and $B$ are mutually exclusive. $P(A \cup B) = \frac{4}{10} + \frac{3}{10} = \frac{7}{10}$'
+        - '$(3)$ $A$, $B$, $C$ pairwise mutually exclusive. $P(A \cup B \cup C) = \frac{4}{10} + \frac{3}{10} + \frac{2}{10} = \frac{9}{10}$'
+        - '$(4)$ Complement: $P(\text{not yellow}) = 1 - \frac{1}{10} = \frac{9}{10}$'
+    answer: '$(1)\ P(A)=\frac{2}{5},\ P(B)=\frac{3}{10},\ P(C)=\frac{1}{5}$；$(2)\ \frac{7}{10}$；$(3)\ \frac{9}{10}$；$(4)\ \frac{9}{10}$'
+    answerEn: '$(1)\ P(A)=\frac{2}{5},\ P(B)=\frac{3}{10},\ P(C)=\frac{1}{5}$; $(2)\ \frac{7}{10}$; $(3)\ \frac{9}{10}$; $(4)\ \frac{9}{10}$'
+
+  - id: ex5
+    title: 几何概型——转盘与线段问题
+    titleEn: Geometric probability — a spinner and a segment problem
+    question: |
+      $(1)$ 一个圆形转盘被分成红、蓝、黄三个扇形区域，圆心角分别为 $144°$、$108°$、$108°$。
+           转动指针随机停止，求指针指向红色区域的概率。
+
+      $(2)$ 在长度为 $20$ cm 的线段 $AB$ 上，$C$ 是 $AB$ 上靠近 $A$ 的点，$AC = 8$ cm。
+           随机取一点 $P$，求 $P$ 落在 $CB$ 段上的概率。
+    questionEn: |
+      $(1)$ A circular spinner is divided into red, blue, yellow sectors with central angles $144°$, $108°$, $108°$.
+           The pointer is spun and stops randomly. Find the probability of landing on the red sector.
+
+      $(2)$ On segment $AB$ of length $20$ cm, $C$ is on $AB$ with $AC = 8$ cm.
+           A point $P$ is chosen randomly. Find the probability that $P$ falls on segment $CB$.
+    type: computation
+    solution:
+      steps:
+        - '$(1)$ 验证：$144° + 108° + 108° = 360°$ ✓'
+        - '几何概型：$P(\text{红色}) = \frac{144°}{360°} = \frac{144}{360} = \frac{2}{5} = 0.4$'
+        - '$(2)$ 总长度 $L = 20$ cm，$AC = 8$ cm，$CB = 20 - 8 = 12$ cm。'
+        - '$P(P \text{ 在 } CB \text{ 上}) = \frac{12}{20} = \frac{3}{5}$'
+        - '（也可用对立事件：$1 - \frac{8}{20} = 1 - \frac{2}{5} = \frac{3}{5}$）'
+    solutionEn:
+      steps:
+        - '$(1)$ Check: $144° + 108° + 108° = 360°$ ✓'
+        - 'Geometric probability: $P(\text{red}) = \frac{144°}{360°} = \frac{2}{5} = 0.4$'
+        - '$(2)$ Total length $L = 20$ cm, $AC = 8$ cm, so $CB = 12$ cm.'
+        - '$P(P \text{ on } CB) = \frac{12}{20} = \frac{3}{5}$'
+        - '(Alternatively: $1 - \frac{8}{20} = \frac{3}{5}$)'
+    answer: '$(1)\ \frac{2}{5}$；$(2)\ \frac{3}{5}$'
+    answerEn: '$(1)\ \frac{2}{5}$; $(2)\ \frac{3}{5}$'
+
+exercises:
+  - id: q1
+    type: multiple-choice
+    question: |
+      下列事件中，是<<随机事件/random event>>的是（　　）
+      A. 掷一枚均匀硬币，正面朝上
+      B. $2 + 3 = 6$
+      C. 太阳从西边升起
+      D. 明天气温高于绝对零度（$-273.15\ {}^{\circ}\text{C}$）
+    questionEn: |
+      Which of the following is a <<随机事件/random event>>? (　　)
+      A. Tossing a fair coin and getting heads
+      B. $2 + 3 = 6$
+      C. The sun rises in the west
+      D. Tomorrow's temperature is above absolute zero ($-273.15\ {}^{\circ}\text{C}$)
+    answer: A
+    answerEn: A
+    explanation: 'A：可能发生也可能不发生，是随机事件 ✓；B：$2+3=5 \neq 6$，是不可能事件；C：违反自然规律，是不可能事件；D：绝对零度是最低温度，"高于绝对零度"是必然事件'
+    explanationEn: 'A: may or may not happen — random event ✓; B: $2+3=5 \neq 6$ — impossible; C: violates natural law — impossible; D: absolute zero is the minimum possible temperature, so "above it" is a certain event'
+
+  - id: q2
+    type: fill-in
+    question: '袋中有 $5$ 个红球和 $3$ 个白球，随机取出 $1$ 个球，取到红球的概率为 ___，取到白球的概率为 ___，两个概率之和为 ___'
+    questionEn: 'A bag contains 5 red balls and 3 white balls. One ball is drawn at random. $P(\text{red}) = $ ___, $P(\text{white}) = $ ___, and their sum is ___.'
+    answer: '$\frac{5}{8}$；$\frac{3}{8}$；$1$'
+    answerEn: '$\frac{5}{8}$; $\frac{3}{8}$; $1$'
+    explanation: '总球数 $= 8$；$P(\text{红}) = \frac{5}{8}$；$P(\text{白}) = \frac{3}{8}$；两者之和 $= 1$（红和白构成对立事件，穷尽所有可能）'
+    explanationEn: 'Total balls $= 8$; $P(\text{red}) = \frac{5}{8}$; $P(\text{white}) = \frac{3}{8}$; sum $= 1$ (complementary events covering all possibilities)'
+
+  - id: q3
+    type: true-false
+    question: '判断：若事件 $A$ 和事件 $B$ 互斥，则 $P(A) + P(B) = 1$。（正确 / 错误？）'
+    questionEn: 'True or False: If events $A$ and $B$ are mutually exclusive, then $P(A) + P(B) = 1$.'
+    answer: 错误
+    answerEn: 'False'
+    explanation: '互斥事件的加法公式是 $P(A \cup B) = P(A) + P(B)$，但这个和不一定等于 $1$。只有当 $A$ 和 $B$ 互斥且对立（$A \cup B = $ 全集）时才有 $P(A) + P(B) = 1$。例如掷骰子，"点数为 $1$"和"点数为 $2$"互斥，但 $P(1) + P(2) = \frac{1}{3} \neq 1$。'
+    explanationEn: 'Mutual exclusivity gives $P(A \cup B) = P(A) + P(B)$, but this need not equal $1$. Only when $A$ and $B$ are also complementary does the sum equal $1$. For example, "get 1" and "get 2" are mutually exclusive on a die, but $\frac{1}{6} + \frac{1}{6} = \frac{1}{3} \neq 1$.'
+
+  - id: q4
+    type: multiple-choice
+    question: |
+      从 $1, 2, 3, 4$ 四个数字中随机选取一个，该数是奇数的概率是（　　）
+      A. $\frac{1}{4}$　　B. $\frac{1}{2}$　　C. $\frac{3}{4}$　　D. $1$
+    questionEn: |
+      One number is chosen at random from $\{1, 2, 3, 4\}$. The probability that it is odd is (　　)
+      A. $\frac{1}{4}$　　B. $\frac{1}{2}$　　C. $\frac{3}{4}$　　D. $1$
+    answer: B
+    answerEn: B
+    explanation: '奇数为 $\{1, 3\}$，共 $2$ 个，总数 $4$ 个，概率 $= \frac{2}{4} = \frac{1}{2}$'
+    explanationEn: 'Odd numbers: $\{1, 3\}$ — 2 out of 4 total; probability $= \frac{2}{4} = \frac{1}{2}$'
+
+  - id: q5
+    type: fill-in
+    question: '掷两枚均匀骰子，用列表法可列出 ___ 种等可能结果。两个骰子点数相同的概率是 ___。'
+    questionEn: 'Two fair dice are rolled. Using a table, there are ___ equally likely outcomes in total. The probability that both dice show the same number is ___.'
+    answer: '$36$；$\frac{1}{6}$'
+    answerEn: '$36$; $\frac{1}{6}$'
+    explanation: '总结果 $6 \times 6 = 36$；点数相同的结果：$(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)$，共 $6$ 种，概率 $= \frac{6}{36} = \frac{1}{6}$'
+    explanationEn: 'Total: $6 \times 6 = 36$; same-number pairs: $(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)$ — 6 outcomes; $P = \frac{6}{36} = \frac{1}{6}$'
+
+  - id: q6
+    type: computation
+    question: |
+      袋中有 $4$ 个红球（标号 $R_1, R_2, R_3, R_4$）和 $2$ 个蓝球（标号 $B_1, B_2$）。
+      随机摸出 $1$ 个球，求：
+      $(1)$ 摸到蓝球的概率；$(2)$ 摸到标号为偶数的球的概率；$(3)$ 摸到红球或偶数标号球的概率。
+    questionEn: |
+      A bag has 4 red balls ($R_1, R_2, R_3, R_4$) and 2 blue balls ($B_1, B_2$). One is drawn at random. Find:
+      $(1)$ $P(\text{blue})$; $(2)$ $P(\text{even label})$; $(3)$ $P(\text{red or even label})$.
+    answer: '$(1)\ \frac{1}{3}$；$(2)\ \frac{1}{2}$；$(3)\ \frac{5}{6}$'
+    answerEn: '$(1)\ \frac{1}{3}$; $(2)\ \frac{1}{2}$; $(3)\ \frac{5}{6}$'
+    explanation: |
+      总球数 $= 6$。$(1)$ 蓝球 $2$ 个：$P = \frac{2}{6} = \frac{1}{3}$。
+      $(2)$ 偶数标号球 $\{R_2, R_4, B_2\}$，$3$ 个：$P = \frac{3}{6} = \frac{1}{2}$。
+      $(3)$ "红球"$= \{R_1,R_2,R_3,R_4\}$，"偶数标号"$= \{R_2,R_4,B_2\}$，两事件不互斥（$R_2, R_4$ 属于两者）。"红球或偶数标号"$= \{R_1,R_2,R_3,R_4,B_2\}$，共 $5$ 个：$P = \frac{5}{6}$
+    explanationEn: |
+      Total $= 6$. $(1)$ Blue balls: 2; $P = \frac{1}{3}$.
+      $(2)$ Even-labelled: $\{R_2, R_4, B_2\}$ — 3 balls; $P = \frac{1}{2}$.
+      $(3)$ "Red" $= \{R_1,R_2,R_3,R_4\}$, "even label" $= \{R_2,R_4,B_2\}$ — not mutually exclusive. Union $= \{R_1,R_2,R_3,R_4,B_2\}$ — 5 balls; $P = \frac{5}{6}$
+
+  - id: q7
+    type: computation
+    question: |
+      从装有 $1$ 个红球（R）和 $2$ 个白球（$W_1$、$W_2$）的袋子中，**不放回地**依次取出 $2$ 个球，用树状图列出所有可能结果，并求：
+      $(1)$ 两球都是白球的概率；$(2)$ 至少有一个红球的概率。
+    questionEn: |
+      Two balls are drawn **without replacement** from a bag containing 1 red ball (R) and 2 white balls ($W_1$, $W_2$). Use a tree diagram. Find:
+      $(1)$ $P(\text{both white})$; $(2)$ $P(\text{at least one red})$.
+    answer: '$(1)\ \frac{1}{3}$；$(2)\ \frac{2}{3}$'
+    answerEn: '$(1)\ \frac{1}{3}$; $(2)\ \frac{2}{3}$'
+    explanation: |
+      树状图（不放回）共 $6$ 条路径：$(R,W_1),(R,W_2),(W_1,R),(W_1,W_2),(W_2,R),(W_2,W_1)$。
+      $(1)$ 两白：$\{(W_1,W_2),(W_2,W_1)\}$，$2$ 种，$P = \frac{2}{6} = \frac{1}{3}$。
+      $(2)$ 至少一红：$\{(R,W_1),(R,W_2),(W_1,R),(W_2,R)\}$，$4$ 种，$P = \frac{4}{6} = \frac{2}{3}$；或用对立事件：$1 - \frac{1}{3} = \frac{2}{3}$。
+    explanationEn: |
+      Tree (no replacement): 6 paths: $(R,W_1),(R,W_2),(W_1,R),(W_1,W_2),(W_2,R),(W_2,W_1)$.
+      $(1)$ Both white: 2 outcomes; $P = \frac{1}{3}$.
+      $(2)$ At least one red: 4 outcomes; $P = \frac{2}{3}$; or by complement: $1 - \frac{1}{3} = \frac{2}{3}$.
+
+  - id: q8
+    type: fill-in
+    question: '掷两枚均匀骰子，求两骰子点数之差的绝对值等于 $2$ 的概率（即 $|m - n| = 2$）。概率为 ___。'
+    questionEn: 'Two fair dice are rolled. Find the probability that the absolute difference equals $2$ (i.e. $|m - n| = 2$). Answer: ___.'
+    answer: '$\frac{2}{9}$'
+    answerEn: '$\frac{2}{9}$'
+    explanation: '满足 $|m-n|=2$ 的结果：$(1,3),(3,1),(2,4),(4,2),(3,5),(5,3),(4,6),(6,4)$，共 $8$ 种。$P = \frac{8}{36} = \frac{2}{9}$'
+    explanationEn: 'Outcomes with $|m-n|=2$: $(1,3),(3,1),(2,4),(4,2),(3,5),(5,3),(4,6),(6,4)$ — 8 outcomes. $P = \frac{8}{36} = \frac{2}{9}$'
+
+  - id: q9
+    type: multiple-choice
+    question: |
+      下列说法中，正确的是（　　）
+      A. 概率大的事件一定会发生
+      B. 某事件在一次试验中没发生，说明该事件概率为 $0$
+      C. 若 $P(A) = 0.8$，$P(B) = 0.3$，且 $A$、$B$ 互斥，则 $P(A \cup B) = 1.1 > 1$，矛盾，所以 $A$、$B$ 不可能互斥
+      D. 频率是试验中的观测值，概率是理论值；试验次数越多，频率越接近概率
+    questionEn: |
+      Which of the following statements is correct? (　　)
+      A. An event with a high probability is certain to occur
+      B. If an event does not occur in one trial, its probability is $0$
+      C. If $P(A) = 0.8$, $P(B) = 0.3$, and $A$, $B$ are mutually exclusive, then $P(A \cup B) = 1.1 > 1$ — contradiction, so they cannot be mutually exclusive
+      D. Frequency is the observed value from experiments; probability is the theoretical value; the more trials, the closer frequency is to probability
+    answer: D
+    answerEn: D
+    explanation: |
+      A：错。概率大只是"更可能"，不保证一定发生（只有 $P = 1$ 才是必然事件）。
+      B：错。一次试验没发生不能说明概率为 $0$。
+      C：逻辑正确（$P(A)+P(B) = 1.1 > 1$ 违反概率 $\leq 1$，所以 $A$、$B$ 确实不互斥），但选项 D 是最完整正确的陈述。
+      D：正确，描述了频率稳定性。
+    explanationEn: |
+      A: Wrong. High probability means "more likely," not certain.
+      B: Wrong. Not occurring once says nothing about the probability.
+      C: Logically correct (if mutually exclusive, $P(A \cup B) = 1.1 > 1$ violates $P \leq 1$), but D is the most complete correct statement.
+      D: Correct — describes frequency stability (Law of Large Numbers).
+
+  - id: q10
+    type: computation
+    question: |
+      某转盘分成四个扇形区域，标记为 $1$、$2$、$3$、$4$ 号，圆心角分别为 $90°$、$120°$、$90°$、$60°$。旋转转盘，求：
+      $(1)$ 指针停在 $2$ 号区域的概率；$(2)$ 指针停在奇数号区域的概率；$(3)$ 指针停在 $4$ 号区域的概率。
+    questionEn: |
+      A spinner has four sectors $1$, $2$, $3$, $4$ with central angles $90°$, $120°$, $90°$, $60°$. Find:
+      $(1)$ $P(\text{sector 2})$; $(2)$ $P(\text{odd sector})$; $(3)$ $P(\text{sector 4})$.
+    answer: '$(1)\ \frac{1}{3}$；$(2)\ \frac{1}{2}$；$(3)\ \frac{1}{6}$'
+    answerEn: '$(1)\ \frac{1}{3}$; $(2)\ \frac{1}{2}$; $(3)\ \frac{1}{6}$'
+    explanation: |
+      验证：$90° + 120° + 90° + 60° = 360°$ ✓
+      $(1)\ P(2) = \frac{120°}{360°} = \frac{1}{3}$
+      $(2)\ P(1) = \frac{90°}{360°} = \frac{1}{4}$，$P(3) = \frac{90°}{360°} = \frac{1}{4}$，互斥，$P(1 \cup 3) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$
+      $(3)\ P(4) = \frac{60°}{360°} = \frac{1}{6}$
+    explanationEn: |
+      Check: $90° + 120° + 90° + 60° = 360°$ ✓
+      $(1)\ P(2) = \frac{120}{360} = \frac{1}{3}$
+      $(2)\ P(1) = \frac{1}{4}$; $P(3) = \frac{1}{4}$; mutually exclusive; $P(1 \cup 3) = \frac{1}{2}$
+      $(3)\ P(4) = \frac{60}{360} = \frac{1}{6}$
+
+  - id: q11
+    type: fill-in
+    question: |
+      已知事件 $A$ 和事件 $B$ 互斥，$P(A) = 0.4$，$P(B) = 0.25$。
+      则 $P(A \cup B) = $ ___；$P(\bar{A}) = $ ___。
+    questionEn: |
+      Events $A$ and $B$ are mutually exclusive, $P(A) = 0.4$, $P(B) = 0.25$.
+      Find $P(A \cup B) = $ ___ and $P(\bar{A}) = $ ___.
+    answer: '$P(A \cup B) = 0.65$；$P(\bar{A}) = 0.6$'
+    answerEn: '$P(A \cup B) = 0.65$; $P(\bar{A}) = 0.6$'
+    explanation: '$P(A \cup B) = P(A) + P(B) = 0.4 + 0.25 = 0.65$；$P(\bar{A}) = 1 - P(A) = 1 - 0.4 = 0.6$'
+    explanationEn: '$P(A \cup B) = 0.4 + 0.25 = 0.65$; $P(\bar{A}) = 1 - 0.4 = 0.6$'
+
+  - id: q12
+    type: computation
+    question: |
+      从 $\{1, 2, 3, 4, 5\}$ 中随机取两个不同的数（顺序无关），求：
+      $(1)$ 列出所有可能的取法（共几种）；$(2)$ 两数之和等于 $6$ 的概率；$(3)$ 两数之积为偶数的概率。
+    questionEn: |
+      Two different numbers are chosen at random (without regard to order) from $\{1, 2, 3, 4, 5\}$. Find:
+      $(1)$ List all pairs (how many total?); $(2)$ $P(\text{sum} = 6)$; $(3)$ $P(\text{product even})$.
+    answer: '$(1)$ 共 $10$ 种；$(2)\ \frac{1}{5}$；$(3)\ \frac{7}{10}$'
+    answerEn: '$(1)$ 10 pairs total; $(2)\ \frac{1}{5}$; $(3)\ \frac{7}{10}$'
+    explanation: |
+      $(1)$ 所有对：$\{1,2\},\{1,3\},\{1,4\},\{1,5\},\{2,3\},\{2,4\},\{2,5\},\{3,4\},\{3,5\},\{4,5\}$，共 $10$ 种。
+      $(2)$ 和等于 $6$：$\{1,5\},\{2,4\}$，$2$ 种。$P = \frac{2}{10} = \frac{1}{5}$。
+      $(3)$ 乘积为奇数要求两数都是奇数：$\{1,3\},\{1,5\},\{3,5\}$，$3$ 种。$P(\text{积为奇}) = \frac{3}{10}$，$P(\text{积为偶}) = 1 - \frac{3}{10} = \frac{7}{10}$。
+    explanationEn: |
+      $(1)$ All pairs: $\{1,2\},\{1,3\},\{1,4\},\{1,5\},\{2,3\},\{2,4\},\{2,5\},\{3,4\},\{3,5\},\{4,5\}$ — 10 pairs.
+      $(2)$ Sum $= 6$: $\{1,5\},\{2,4\}$ — 2 pairs. $P = \frac{2}{10} = \frac{1}{5}$.
+      $(3)$ Odd product requires both odd: $\{1,3\},\{1,5\},\{3,5\}$ — 3 pairs. $P(\text{odd}) = \frac{3}{10}$; $P(\text{even}) = 1 - \frac{3}{10} = \frac{7}{10}$.
+
+  - id: q13
+    type: fill-in
+    question: |
+      在一次试验中，事件 $A$、$B$、$C$ 两两互斥，$P(A) = \frac{1}{3}$，$P(B) = \frac{1}{4}$。
+      若 $A \cup B \cup C$ 是必然事件，则 $P(C) = $ ___。
+    questionEn: |
+      Events $A$, $B$, $C$ are pairwise mutually exclusive, $P(A) = \frac{1}{3}$, $P(B) = \frac{1}{4}$.
+      If $A \cup B \cup C$ is a certain event, find $P(C)$.
+    answer: '$\frac{5}{12}$'
+    answerEn: '$\frac{5}{12}$'
+    explanation: '$P(A) + P(B) = \frac{1}{3} + \frac{1}{4} = \frac{7}{12}$。若 $A \cup B \cup C$ 是必然事件，则 $P(A \cup B \cup C) = 1$，故 $P(C) = 1 - \frac{7}{12} = \frac{5}{12}$。'
+    explanationEn: '$P(A) + P(B) = \frac{1}{3} + \frac{1}{4} = \frac{7}{12}$. If $A \cup B \cup C$ is certain, $P(A \cup B \cup C) = 1$, so $P(C) = 1 - \frac{7}{12} = \frac{5}{12}$.'
+
+examPrep:
+  title: 章末提升
+  titleEn: Chapter Challenge
+  intro: '本章综合提升题，涵盖概率的核心概念：事件分类、古典概型计算、列举法、互斥事件加法和几何概型，重点考查易错点和综合应用。'
+  introEn: 'Chapter challenge problems covering core probability concepts: event classification, classical probability, enumeration, mutually exclusive addition, and geometric probability, with emphasis on common misconceptions and combined applications.'
+  problems:
+    - id: ep1
+      type: multiple-choice
+      question: |
+        下列说法中，**正确**的是（　　）
+        A. 随机事件的概率可以等于 $0$ 或 $1$
+        B. 掷一枚均匀骰子 $6$ 次，必定每个点数各出现 $1$ 次
+        C. 互斥事件的概率之和等于 $1$
+        D. 频率随试验次数增多而趋于稳定，逐渐接近概率
+      questionEn: |
+        Which of the following statements is **correct**? (　　)
+        A. A random event can have probability $0$ or $1$
+        B. Rolling a fair die 6 times guarantees each face appears exactly once
+        C. The probabilities of mutually exclusive events sum to $1$
+        D. As the number of trials increases, frequency stabilises and approaches the probability
+      answer: D
+      answerEn: D
+      explanation: |
+        A：错。随机事件概率满足 $0 < P < 1$，等于 $0$ 或 $1$ 的分别是不可能事件和必然事件。
+        B：错。随机性不能保证均匀分布，$6$ 次中可能出现重复点数，也可能有点数未出现。
+        C：错。互斥事件的概率之和等于 $P(A \cup B)$，不一定等于 $1$（除非同时是对立事件）。
+        D：正确。这是大数定律的直观描述，频率稳定性是概率的统计定义基础。
+      explanationEn: |
+        A: Wrong. Random events have $0 < P < 1$; probability $= 0$ or $1$ means impossible or certain.
+        B: Wrong. Randomness does not guarantee uniform distribution in 6 trials.
+        C: Wrong. Mutually exclusive events satisfy $P(A \cup B) = P(A) + P(B)$, but this need not equal $1$.
+        D: Correct. This is the intuition of the Law of Large Numbers — frequency stability underpins the statistical definition of probability.
+
+    - id: ep2
+      type: computation
+      question: |
+        袋中有 $3$ 个红球（$R_1, R_2, R_3$）和 $2$ 个白球（$W_1, W_2$）。
+        不放回地依次取出 $2$ 个球，用树状图列出所有可能结果，并求：
+        $(1)$ 两个球颜色不同的概率；$(2)$ 第二个球是红球的概率；$(3)$ 至少有一个白球的概率。
+      questionEn: |
+        A bag contains 3 red balls ($R_1, R_2, R_3$) and 2 white balls ($W_1, W_2$). Two balls are drawn without replacement (one then another). List all outcomes. Find:
+        $(1)$ $P(\text{different colours})$; $(2)$ $P(\text{second ball is red})$; $(3)$ $P(\text{at least one white})$.
+      answer: '$(1)\ \frac{3}{5}$；$(2)\ \frac{3}{5}$；$(3)\ \frac{7}{10}$'
+      answerEn: '$(1)\ \frac{3}{5}$; $(2)\ \frac{3}{5}$; $(3)\ \frac{7}{10}$'
+      explanation: |
+        总有序结果数：$5 \times 4 = 20$ 种。
+        $(1)$ 颜色不同：红取白 $3 \times 2 = 6$ 种 + 白取红 $2 \times 3 = 6$ 种 $= 12$。$P = \frac{12}{20} = \frac{3}{5}$。
+        $(2)$ 第二个是红球：（第一红，第二红）$3 \times 2 = 6$；（第一白，第二红）$2 \times 3 = 6$，共 $12$。$P = \frac{12}{20} = \frac{3}{5}$。（由对称性，任意位置取到红球的概率都是 $\frac{3}{5}$）
+        $(3)$ 至少一白 $= 1 -$ 两个都是红球。两红：$3 \times 2 = 6$ 种。$P(\text{都红}) = \frac{6}{20} = \frac{3}{10}$。$P(\text{至少一白}) = 1 - \frac{3}{10} = \frac{7}{10}$。
+      explanationEn: |
+        Total ordered outcomes: $5 \times 4 = 20$.
+        $(1)$ Different colours: red then white $= 3 \times 2 = 6$; white then red $= 2 \times 3 = 6$; total 12. $P = \frac{12}{20} = \frac{3}{5}$.
+        $(2)$ Second ball red: (1st red, 2nd red) $= 6$; (1st white, 2nd red) $= 6$; total 12. $P = \frac{12}{20} = \frac{3}{5}$. (By symmetry, drawing red at any position has probability $\frac{3}{5}$.)
+        $(3)$ At least one white $= 1 -$ both red. Both red: $3 \times 2 = 6$. $P(\text{both red}) = \frac{6}{20} = \frac{3}{10}$. $P(\text{at least one white}) = 1 - \frac{3}{10} = \frac{7}{10}$.
+
+    - id: ep3
+      type: computation
+      question: |
+        掷两枚均匀骰子，设事件 $A$："两骰子点数之和为奇数"，事件 $B$："两骰子点数之和大于 $8$"。
+        $(1)$ 计算 $P(A)$ 和 $P(B)$；$(2)$ 判断 $A$、$B$ 是否互斥；$(3)$ 计算 $P(A \cup B)$。
+      questionEn: |
+        Two fair dice are rolled. Let $A$: "the sum is odd", $B$: "the sum is greater than $8$".
+        $(1)$ Calculate $P(A)$ and $P(B)$; $(2)$ Are $A$ and $B$ mutually exclusive? $(3)$ Calculate $P(A \cup B)$.
+      answer: '$(1)\ P(A) = \frac{1}{2},\ P(B) = \frac{5}{18}$；$(2)$ 不互斥（和为 $9$ 或 $11$ 时两者都满足）；$(3)\ P(A \cup B) = \frac{11}{18}$'
+      answerEn: '$(1)\ P(A) = \frac{1}{2},\ P(B) = \frac{5}{18}$; $(2)$ NOT mutually exclusive (sum $9$ or $11$ satisfies both); $(3)\ P(A \cup B) = \frac{11}{18}$'
+      explanation: |
+        总结果 $36$ 种。
+        $(1)$ $A$（和为奇数）：一奇一偶，共 $3 \times 3 \times 2 = 18$ 种。$P(A) = \frac{18}{36} = \frac{1}{2}$。
+        $B$（和 $> 8$）：和 $9$ 有 $4$ 种，和 $10$ 有 $3$ 种，和 $11$ 有 $2$ 种，和 $12$ 有 $1$ 种，共 $10$ 种。$P(B) = \frac{10}{36} = \frac{5}{18}$。
+        $(2)$ 和 $= 9$（奇数，$> 8$）和和 $= 11$（奇数，$> 8$）同时满足 $A$ 和 $B$，共 $4 + 2 = 6$ 种，故 $A \cap B \neq \emptyset$，$A$、$B$ **不互斥**。
+        $(3)$ $P(A \cap B) = \frac{6}{36} = \frac{1}{6}$。$P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{1}{2} + \frac{5}{18} - \frac{1}{6} = \frac{9}{18} + \frac{5}{18} - \frac{3}{18} = \frac{11}{18}$。
+      explanationEn: |
+        Total 36 outcomes.
+        $(1)$ $A$ (odd sum): one die odd, other even; $3 \times 3 \times 2 = 18$. $P(A) = \frac{1}{2}$.
+        $B$ (sum $> 8$): sum 9 (4), sum 10 (3), sum 11 (2), sum 12 (1) = 10. $P(B) = \frac{10}{36} = \frac{5}{18}$.
+        $(2)$ Sums 9 and 11 are odd AND $> 8$, satisfying both $A$ and $B$: $4 + 2 = 6$ outcomes. So $A \cap B \neq \emptyset$ — **NOT mutually exclusive**.
+        $(3)$ $P(A \cap B) = \frac{6}{36} = \frac{1}{6}$. $P(A \cup B) = \frac{1}{2} + \frac{5}{18} - \frac{1}{6} = \frac{9}{18} + \frac{5}{18} - \frac{3}{18} = \frac{11}{18}$.
+
+    - id: ep4
+      type: computation
+      question: |
+        一个矩形靶面长 $5$ m、宽 $4$ m，其中有一个半径为 $1$ m 的圆形高分区（圆心在矩形中心）。
+        假设子弹均匀随机地落在整个矩形靶面内，求：
+        $(1)$ 子弹落入圆形高分区的概率（用 $\pi$ 表示）；$(2)$ 子弹不落入圆形高分区的概率。
+      questionEn: |
+        A rectangular target is $5$ m long and $4$ m wide. Inside is a circular high-score zone of radius $1$ m (centred in the rectangle). The bullet lands uniformly at random anywhere in the rectangle. Find:
+        $(1)$ $P(\text{lands in circle})$ (express using $\pi$); $(2)$ $P(\text{does not land in circle})$.
+      answer: '$(1)\ \frac{\pi}{20}$；$(2)\ 1 - \frac{\pi}{20}$'
+      answerEn: '$(1)\ \frac{\pi}{20}$; $(2)\ 1 - \frac{\pi}{20}$'
+      explanation: |
+        矩形面积 $S = 5 \times 4 = 20\ \text{m}^{2}$。圆形面积 $s = \pi \times 1^{2} = \pi\ \text{m}^{2}$。
+        $(1)\ P = \frac{\pi}{20} \approx 0.157$
+        $(2)\ P = 1 - \frac{\pi}{20}$
+      explanationEn: |
+        Rectangle area: $S = 20\ \text{m}^{2}$. Circle area: $s = \pi\ \text{m}^{2}$.
+        $(1)\ P = \frac{\pi}{20} \approx 0.157$
+        $(2)\ P = 1 - \frac{\pi}{20}$
+
+    - id: ep5
+      type: computation
+      question: |
+        【综合题】甲乙两人各自独立地从 $\{1, 2, 3, 4\}$ 中随机取一个数（可以相同），用列表法列出所有结果，并求：
+        $(1)$ 两人取到相同数字的概率；$(2)$ 甲取的数大于乙取的数的概率；$(3)$ 两人取到数字之和为奇数的概率；
+        $(4)$（思考）$P(\text{相同}) + P(\text{甲}>乙) + P(\text{甲}<乙)$ 等于多少？说明其意义。
+      questionEn: |
+        [综合题] Two people A and B each independently choose a number at random from $\{1, 2, 3, 4\}$ (repetition allowed). Use a table. Find:
+        $(1)$ $P(\text{same number})$; $(2)$ $P(A > B)$; $(3)$ $P(\text{sum is odd})$;
+        $(4)$ (Reflection) What is $P(\text{same}) + P(A > B) + P(A < B)$? What does this tell you?
+      answer: '$(1)\ \frac{1}{4}$；$(2)\ \frac{3}{8}$；$(3)\ \frac{1}{2}$；$(4)$ 等于 $1$，三个互斥事件穷尽所有可能'
+      answerEn: '$(1)\ \frac{1}{4}$; $(2)\ \frac{3}{8}$; $(3)\ \frac{1}{2}$; $(4)$ equals $1$ — three mutually exclusive events cover all possibilities'
+      explanation: |
+        总结果：$4 \times 4 = 16$ 种等可能有序对 $(a, b)$。
+        $(1)$ 相同：$(1,1),(2,2),(3,3),(4,4)$，$4$ 种。$P = \frac{4}{16} = \frac{1}{4}$。
+        $(2)$ 甲 $>$ 乙：$(2,1),(3,1),(3,2),(4,1),(4,2),(4,3)$，$6$ 种。$P = \frac{6}{16} = \frac{3}{8}$。
+        $(3)$ 和为奇数（一奇一偶）：奇数 $\{1,3\}$，偶数 $\{2,4\}$。一奇一偶的对数 $= 2 \times 2 \times 2 = 8$。$P = \frac{8}{16} = \frac{1}{2}$。
+        $(4)$ 由对称性，$P(\text{甲}<乙) = P(\text{甲}>乙) = \frac{3}{8}$。$\frac{1}{4} + \frac{3}{8} + \frac{3}{8} = \frac{2}{8} + \frac{3}{8} + \frac{3}{8} = 1$。
+        意义：三种情况两两互斥且穷尽所有可能，概率之和为 $1$，体现了概率完备性。
+      explanationEn: |
+        Total: $4 \times 4 = 16$ equally likely ordered pairs $(a, b)$.
+        $(1)$ Same: $(1,1),(2,2),(3,3),(4,4)$ — 4. $P = \frac{1}{4}$.
+        $(2)$ $A > B$: $(2,1),(3,1),(3,2),(4,1),(4,2),(4,3)$ — 6. $P = \frac{6}{16} = \frac{3}{8}$.
+        $(3)$ Odd sum (one odd, one even): $2 \times 2 \times 2 = 8$ pairs. $P = \frac{1}{2}$.
+        $(4)$ By symmetry $P(A < B) = P(A > B) = \frac{3}{8}$. Sum: $\frac{1}{4} + \frac{3}{8} + \frac{3}{8} = 1$.
+        Significance: the three cases are pairwise mutually exclusive and exhaustive — their probabilities sum to $1$, demonstrating the completeness of probability.
+
+summary: |
+  本章学习了概率的核心内容：
+  - **事件分类**：<<随机事件/random event>>（$0 < P < 1$）、<<确定事件/certain event>>（$P = 1$）、<<不可能事件/impossible event>>（$P = 0$）
+  - **古典概型**：等可能结果下 $P(A) = \frac{m}{n}$（有利结果数/总结果数）
+  - **对立事件**：$P(\bar{A}) = 1 - P(A)$（简化计算的利器）
+  - **列举法**：树状图（多步操作）和列表法（两步操作），系统不漏地列出所有结果
+  - **互斥事件**：$A \cap B = \emptyset$ 时，$P(A \cup B) = P(A) + P(B)$
+  - **几何概型**：$P(A) = \frac{\text{有利区域面积}}{\text{总区域面积}}$，适用于均匀分布的无限结果
+summaryEn: |
+  In this chapter we studied the core ideas of probability:
+  - **Event classification**: <<随机事件/random event>> ($0 < P < 1$), <<确定事件/certain event>> ($P = 1$), <<不可能事件/impossible event>> ($P = 0$)
+  - **Classical model**: with equally likely outcomes, $P(A) = \frac{m}{n}$ (favourable / total outcomes)
+  - **Complementary events**: $P(\bar{A}) = 1 - P(A)$ — a powerful shortcut
+  - **Enumeration**: tree diagrams (multi-step) and tables (two-step), listing all outcomes systematically
+  - **Mutually exclusive events**: when $A \cap B = \emptyset$, $P(A \cup B) = P(A) + P(B)$
+  - **Geometric probability**: $P(A) = \frac{\text{area of favourable region}}{\text{total area}}$, for uniformly distributed outcomes over a continuous region

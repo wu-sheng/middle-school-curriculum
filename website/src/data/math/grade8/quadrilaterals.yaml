@@ -1,0 +1,978 @@
+title: 四边形
+titleEn: Quadrilaterals
+chapter: 8
+subject: math
+grade: grade8
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约60分钟 · 第3课时 约55分钟 · 第4课时 约55分钟
+estimatedTimeEn: 'Session 1 ~60 min · Session 2 ~60 min · Session 3 ~55 min · Session 4 ~55 min'
+targetAudience: 小学3年级自学生（已完成八年级上册数学），自学材料，由简入深
+
+objectives:
+  - 理解<<平行四边形/parallelogram>>的三大性质（对边、对角、对角线），并能运用性质求解
+  - 掌握判定<<平行四边形/parallelogram>>的五种方法，能在证明中灵活选择
+  - 掌握<<矩形/rectangle>>、<<菱形/rhombus>>、<<正方形/square>>的性质与判定，理解它们的包含关系
+  - 理解<<梯形/trapezoid>>的分类，掌握等腰梯形的特殊性质
+  - 掌握三角形和梯形的<<中位线/midsegment>>定理，能应用于复合图形计算
+objectivesEn:
+  - Understand the three key properties of <<平行四边形/parallelogram>>s (opposite sides, opposite angles, diagonals) and apply them to problem-solving
+  - Master the five criteria for proving a quadrilateral is a <<平行四边形/parallelogram>> and choose flexibly in proofs
+  - Master the properties and criteria of <<矩形/rectangle>>s, <<菱形/rhombus>>es, and <<正方形/square>>s, and understand their inclusion relationships
+  - Understand the classification of <<梯形/trapezoid>>s and master the special properties of isosceles trapezoids
+  - Master the <<中位线/midsegment>> theorems for triangles and trapezoids and apply them to composite figures
+
+prerequisites:
+  title: 从已学知识出发——几何推理的积累
+  titleEn: "Building on prior knowledge — accumulated geometric reasoning"
+  intro: |
+    学习四边形之前，我们已经掌握了以下关键工具：
+  introEn: |
+    Before studying quadrilaterals, we have already mastered the following key tools:
+  knownNumbers:
+    - '平行线的性质与判定（同位角、内错角、同旁内角）——七下'
+    - '三角形全等的判定（SSS、SAS、ASA、AAS、HL）——八上'
+    - '轴对称与等腰三角形的性质——八上'
+    - '勾股定理：$a^{2} + b^{2} = c^{2}$——八下'
+  knownNumbersEn:
+    - 'Properties and criteria of parallel lines (corresponding, alternate interior, co-interior angles) — Grade 7 Sem 2'
+    - 'Congruence criteria for triangles (SSS, SAS, ASA, AAS, HL) — Grade 8 Sem 1'
+    - 'Axial symmetry and properties of isosceles triangles — Grade 8 Sem 1'
+    - 'Pythagorean theorem: $a^{2} + b^{2} = c^{2}$ — Grade 8 Sem 2'
+  canSolve:
+    - 证明两条直线平行，或利用平行线推导角度关系
+    - 证明两个三角形全等，并得出对应边或角相等
+    - 利用勾股定理计算直角三角形的边长
+  canSolveEn:
+    - Prove two lines are parallel, or use parallel lines to derive angle relationships
+    - Prove two triangles congruent and conclude corresponding sides or angles are equal
+    - Use the Pythagorean theorem to find side lengths in right triangles
+  cannotSolve:
+    - 四边形的四个角和四条边之间有什么规律？
+    - 如何证明一个四边形是平行四边形、矩形或菱形？
+    - 等腰梯形为什么两底角相等？
+    - 中位线定理如何帮助我们计算复合图形中的未知长度？
+  cannotSolveEn:
+    - What patterns exist among the four angles and four sides of a quadrilateral?
+    - How do you prove a quadrilateral is a parallelogram, rectangle, or rhombus?
+    - Why are the base angles of an isosceles trapezoid equal?
+    - How does the midsegment theorem help calculate unknown lengths in composite figures?
+  conclusion: |
+    四边形的学习，是把**平行线**和**三角形全等**这两把钥匙用到极致——几乎所有的性质和判定都能追溯到这两个工具。掌握"特殊四边形的层次关系"，你就能在一道题里同时运用多个性质，融会贯通。
+  conclusionEn: |
+    Studying quadrilaterals means using **parallel lines** and **triangle congruence** to their fullest — nearly every property and criterion traces back to these two tools. Master the hierarchy of special quadrilaterals, and you can apply multiple properties simultaneously in a single problem.
+
+concepts:
+  - id: parallelogram-properties
+    title: <<平行四边形/parallelogram>>的性质
+    titleEn: Properties of <<平行四边形/parallelogram>>s
+    hasVisualization: true
+    content: |
+      **定义**：有两组对边分别<<平行/parallel>>的四边形叫做**<<平行四边形/parallelogram>>**。四边形 $ABCD$ 中，若 $AB \parallel CD$ 且 $BC \parallel AD$，则记作 $\square ABCD$。
+
+      从定义出发，利用平行线的性质，可以推导出<<平行四边形/parallelogram>>的三大性质：
+
+      **性质一：对边相等**
+      - $AB = CD$，$BC = AD$
+      - 推导：以对角线 $AC$ 为截线，$AB \parallel CD$ 给出内错角 $\angle BAC = \angle DCA$；$BC \parallel AD$ 给出内错角 $\angle BCA = \angle DAC$。于是 $\triangle ABC \cong \triangle CDA$（ASA），因此 $AB = CD$，$BC = AD$。
+
+      **性质二：对角相等**
+      - $\angle A = \angle C$，$\angle B = \angle D$
+      - 由同一组全等三角形直接得出，也可用"同旁内角互补"推导：$\angle A + \angle B = 180°$，$\angle C + \angle B = 180°$，故 $\angle A = \angle C$。
+
+      **性质三：对角线互相平分**
+      - 设对角线 $AC$ 与 $BD$ 交于点 $O$，则 $AO = CO$，$BO = DO$
+      - 推导：在 $\triangle AOB$ 和 $\triangle COD$ 中，$AB \parallel CD$ 给出 $\angle OAB = \angle OCD$（内错角），$\angle OBA = \angle ODC$（内错角），又 $AB = CD$（已证），故 $\triangle AOB \cong \triangle COD$（ASA），因此 $AO = CO$，$BO = DO$。
+
+      **关键理解**：每条对角线都把<<平行四边形/parallelogram>>分成两个全等的三角形。以 $AC$ 为对角线，$\triangle ABC \cong \triangle CDA$；以 $BD$ 为对角线，$\triangle ABD \cong \triangle CDB$。
+
+      **易错点**：注意"相邻的角"互补，不是相等。$\angle A + \angle B = 180°$（因为 $AD \parallel BC$，同旁内角）。
+    contentEn: |
+      **Definition**: A quadrilateral with two pairs of opposite sides parallel is called a **<<平行四边形/parallelogram>>**. In quadrilateral $ABCD$, if $AB \parallel CD$ and $BC \parallel AD$, we write $\square ABCD$.
+
+      Starting from the definition and using properties of parallel lines, we derive three key properties:
+
+      **Property 1: Opposite sides are equal**
+      - $AB = CD$, $BC = AD$
+      - Proof: Using diagonal $AC$ as a transversal, $AB \parallel CD$ gives alternate interior angles $\angle BAC = \angle DCA$; $BC \parallel AD$ gives $\angle BCA = \angle DAC$. So $\triangle ABC \cong \triangle CDA$ (ASA), hence $AB = CD$, $BC = AD$.
+
+      **Property 2: Opposite angles are equal**
+      - $\angle A = \angle C$, $\angle B = \angle D$
+      - Follows from the same congruent triangles, or use co-interior angles: $\angle A + \angle B = 180°$ and $\angle C + \angle B = 180°$, so $\angle A = \angle C$.
+
+      **Property 3: Diagonals bisect each other**
+      - Let diagonals $AC$ and $BD$ intersect at $O$; then $AO = CO$ and $BO = DO$
+      - Proof: In $\triangle AOB$ and $\triangle COD$, $AB \parallel CD$ gives $\angle OAB = \angle OCD$ (alternate interior) and $\angle OBA = \angle ODC$ (alternate interior), and $AB = CD$ (proven above), so $\triangle AOB \cong \triangle COD$ (ASA), giving $AO = CO$, $BO = DO$.
+
+      **Key insight**: Each diagonal divides the parallelogram into two congruent triangles.
+
+      **Common error**: Adjacent angles are supplementary, not equal. $\angle A + \angle B = 180°$ because $AD \parallel BC$ makes them co-interior angles.
+    examples:
+      - '在 $\square ABCD$ 中，$AB = 5$ cm，$BC = 3$ cm，$\angle A = 70°$。则 $CD =$ ___，$AD =$ ___，$\angle C =$ ___，$\angle B =$ ___。答：$CD = 5$ cm，$AD = 3$ cm，$\angle C = 70°$，$\angle B = 110°$。'
+      - '在 $\square ABCD$ 中，对角线 $AC = 10$ cm，$BD = 8$ cm，交点为 $O$。则 $AO =$ ___，$OD =$ ___。答：$AO = 5$ cm（对角线互相平分），$OD = 4$ cm。'
+      - '在 $\square ABCD$ 中，$\angle A : \angle B = 2 : 3$，求四个角。解：$\angle A + \angle B = 180°$，设 $\angle A = 2x$，$\angle B = 3x$，则 $5x = 180°$，$x = 36°$。$\angle A = \angle C = 72°$，$\angle B = \angle D = 108°$。'
+    misconceptions:
+      - '"对边平行"和"对边相等"都是<<平行四边形/parallelogram>>的性质，但**一组**对边相等不能保证是<<平行四边形/parallelogram>>。'
+      - '对角线互相平分，不是"对角线相等"——那是矩形的特殊性质。'
+
+  - id: parallelogram-criteria
+    title: <<平行四边形/parallelogram>>的判定
+    titleEn: Criteria for <<平行四边形/parallelogram>>s
+    hasVisualization: true
+    content: |
+      判定一个四边形是<<平行四边形/parallelogram>>共有**五种方法**：
+
+      **判定一（定义）**：两组对边分别平行
+      - $AB \parallel CD$ 且 $BC \parallel AD$ $\Rightarrow$ $\square ABCD$
+      - 最直接，但通常需要先证明平行，较为繁琐
+
+      **判定二**：两组对边分别相等
+      - $AB = CD$ 且 $BC = AD$ $\Rightarrow$ $\square ABCD$
+      - 常用：已知边长时优先考虑
+
+      **判定三**：一组对边平行且相等（重要！）
+      - $AB \parallel CD$ 且 $AB = CD$ $\Rightarrow$ $\square ABCD$
+      - 证明：连 $AC$，由 $AB \parallel CD$ 得内错角相等，又 $AB = CD$，故 $\triangle ABC \cong \triangle CDA$（SAS），从而 $BC \parallel AD$，是<<平行四边形/parallelogram>>
+      - **这是最常用的判定方法之一！**
+
+      **判定四**：两组对角分别相等
+      - $\angle A = \angle C$ 且 $\angle B = \angle D$ $\Rightarrow$ $\square ABCD$
+      - 由四边形内角和 $360°$ 和对角相等，推出相邻角互补，从而两组对边平行
+
+      **判定五**：对角线互相平分
+      - $AO = CO$ 且 $BO = DO$（$O$ 为交点）$\Rightarrow$ $\square ABCD$
+      - 证明：$\triangle AOB \cong \triangle COD$（SAS），得 $AB = CD$ 且 $AB \parallel CD$（内错角相等），再由判定三得结论
+
+      **最常用排序**：判定三 > 判定五 > 判定二 > 判定一 > 判定四
+
+      **经典易错**：已知"一组对边相等，另一组对边平行"——注意这**不能**判定<<平行四边形/parallelogram>>！例如等腰梯形就满足这个条件但不是<<平行四边形/parallelogram>>。必须是**同一组**对边既平行又相等才行（判定三）。
+    contentEn: |
+      There are **five criteria** for proving a quadrilateral is a <<平行四边形/parallelogram>>:
+
+      **Criterion 1 (Definition)**: Two pairs of opposite sides are parallel
+      - $AB \parallel CD$ and $BC \parallel AD$ $\Rightarrow$ $\square ABCD$
+
+      **Criterion 2**: Two pairs of opposite sides are equal
+      - $AB = CD$ and $BC = AD$ $\Rightarrow$ $\square ABCD$
+
+      **Criterion 3**: One pair of opposite sides is both parallel and equal (most important!)
+      - $AB \parallel CD$ and $AB = CD$ $\Rightarrow$ $\square ABCD$
+      - **This is one of the most frequently used criteria in proofs!**
+
+      **Criterion 4**: Two pairs of opposite angles are equal
+      - $\angle A = \angle C$ and $\angle B = \angle D$ $\Rightarrow$ $\square ABCD$
+
+      **Criterion 5**: Diagonals bisect each other
+      - $AO = CO$ and $BO = DO$ (where $O$ is the intersection point) $\Rightarrow$ $\square ABCD$
+
+      **Common error**: "One pair of sides equal AND the other pair parallel" does NOT prove a parallelogram — an isosceles trapezoid satisfies this but is not a parallelogram. It must be the **same** pair that is both parallel and equal (Criterion 3).
+    examples:
+      - '如图，$E$、$F$ 分别是 $\square ABCD$ 的对角线 $BD$ 上的点，且 $BE = DF$。证明：四边形 $AECF$ 是<<平行四边形/parallelogram>>。思路：由<<平行四边形/parallelogram>>性质，$AO = CO$（$O$ 为 $AC$ 与 $BD$ 交点），$BO = DO$，又 $BE = DF$，故 $OE = OB - BE = OD - DF = OF$。所以 $AECF$ 对角线 $AC$、$EF$ 互相平分，由判定五，$AECF$ 是<<平行四边形/parallelogram>>。'
+      - '证明：顺次连接任意四边形各边中点所得四边形是<<平行四边形/parallelogram>>。思路：设四边形 $ABCD$，$E$、$F$、$G$、$H$ 分别是 $AB$、$BC$、$CD$、$DA$ 的中点。连对角线 $AC$，由三角形中位线定理，$EF \parallel AC$ 且 $EF = \frac{1}{2}AC$；同理 $HG \parallel AC$ 且 $HG = \frac{1}{2}AC$。故 $EF \parallel HG$ 且 $EF = HG$，由判定三，$EFGH$ 是<<平行四边形/parallelogram>>。'
+
+  - id: rectangle
+    title: <<矩形/rectangle>>的性质与判定
+    titleEn: Properties and criteria of <<矩形/rectangle>>s
+    hasVisualization: true
+    content: |
+      **定义**：有一个角是直角的<<平行四边形/parallelogram>>叫做**<<矩形/rectangle>>**（长方形）。
+
+      <<矩形/rectangle>>是特殊的<<平行四边形/parallelogram>>，继承平行四边形的**所有**性质，并有额外特性：
+
+      **性质一：四个角都是直角**
+      - 已知一个角是 $90°$，由相邻角互补，另外三个角也必须是 $90°$。
+
+      **性质二：对角线相等（重要！）**
+      - $AC = BD$
+      - 证明：在 $\triangle ABC$ 和 $\triangle DCB$ 中，$AB = DC$（对边相等），$BC = BC$（公共边），$\angle ABC = \angle DCB = 90°$，故 $\triangle ABC \cong \triangle DCB$（SAS），所以 $AC = DB$。
+      - 生活理解：木工检验门框是否是矩形，只需用卷尺量两条对角线是否等长即可。
+
+      **判定<<矩形/rectangle>>的方法：**
+
+      **判定一**：有三个角是直角的四边形是<<矩形/rectangle>>
+      - （第四个角由内角和自动是 $90°$）
+
+      **判定二**：对角线相等的<<平行四边形/parallelogram>>是<<矩形/rectangle>>
+      - 前提必须是<<平行四边形/parallelogram>>！普通的等腰梯形对角线也相等，但不是<<矩形/rectangle>>。
+
+      **包含关系**：正方形 $\subset$ 矩形 $\subset$ 平行四边形
+
+      **易错点**：矩形的对角线相等且互相平分，但**不垂直**（除非是正方形）。
+    contentEn: |
+      **Definition**: A <<平行四边形/parallelogram>> with one right angle is called a **<<矩形/rectangle>>**.
+
+      A <<矩形/rectangle>> inherits **all** properties of a parallelogram, with one extra property:
+
+      **Property 1: All four angles are right angles**
+      - If one angle is $90°$, adjacent angles are supplementary, forcing all four angles to be $90°$.
+
+      **Property 2: Diagonals are equal (key!)**
+      - $AC = BD$
+      - Proof: In $\triangle ABC$ and $\triangle DCB$, $AB = DC$ (opposite sides), $BC = BC$ (common), $\angle ABC = \angle DCB = 90°$, so $\triangle ABC \cong \triangle DCB$ (SAS), giving $AC = DB$.
+      - Real-life: A carpenter checks if a door frame is rectangular by measuring whether the two diagonals are equal.
+
+      **Criteria for <<矩形/rectangle>>s:**
+
+      **Criterion 1**: A quadrilateral with three right angles is a <<矩形/rectangle>>.
+
+      **Criterion 2**: A <<平行四边形/parallelogram>> with equal diagonals is a <<矩形/rectangle>>.
+      - Must be a parallelogram first! An isosceles trapezoid also has equal diagonals but is not a rectangle.
+
+      **Common error**: A rectangle's diagonals are equal and bisect each other, but are **not perpendicular** (unless it is a square).
+    examples:
+      - '在矩形 $ABCD$ 中，对角线 $AC = 10$ cm，$E$ 为 $AC$ 与 $BD$ 的交点。求 $BE$ 的长度。解：矩形是<<平行四边形/parallelogram>>，对角线互相平分，故 $AE = CE = 5$ cm；矩形对角线相等，$BD = AC = 10$ cm，故 $BE = 5$ cm。'
+      - '矩形 $ABCD$ 中，$AB = 6$ cm，$BC = 8$ cm，求对角线 $AC$ 的长。解：$\angle B = 90°$，在直角 $\triangle ABC$ 中，$AC = \sqrt{AB^{2} + BC^{2}} = \sqrt{36 + 64} = \sqrt{100} = 10$ cm。'
+
+  - id: rhombus
+    title: <<菱形/rhombus>>的性质与判定
+    titleEn: Properties and criteria of <<菱形/rhombus>>es
+    hasVisualization: true
+    content: |
+      **定义**：有一组邻边相等的<<平行四边形/parallelogram>>叫做**<<菱形/rhombus>>**。
+
+      <<菱形/rhombus>>是特殊的<<平行四边形/parallelogram>>，继承所有平行四边形性质（对边相等、对角相等、对角线互相平分），并有两个独特性质：
+
+      **性质一：四条边都相等**
+      - $AB = BC = CD = DA$
+      - 由定义一组邻边相等 + 平行四边形对边相等，推出四边全等
+
+      **性质二：对角线互相垂直**
+      - $AC \perp BD$（即 $AC \perp BD$，交角为 $90°$）
+      - 证明：在 $\triangle AOB$ 和 $\triangle COB$ 中，$AO = CO$（对角线互相平分），$OB = OB$（公共边），$AB = CB$（四边相等），故 $\triangle AOB \cong \triangle COB$（SSS），所以 $\angle AOB = \angle COB$。又 $\angle AOB + \angle COB = 180°$（平角），故 $\angle AOB = 90°$，即 $AC \perp BD$。
+
+      **性质三：对角线平分每组对角**
+      - $BD$ 平分 $\angle ABC$ 和 $\angle ADC$；$AC$ 平分 $\angle DAB$ 和 $\angle BCD$
+      - 证明：由 $\triangle AOB \cong \triangle COB$，得 $\angle ABO = \angle CBO$，即 $BD$ 平分 $\angle B$。
+
+      **面积公式**：
+      $$S_{\text{菱形}} = \frac{1}{2} d_{1} d_{2}$$
+      其中 $d_{1}$、$d_{2}$ 是两条对角线的长度。（因为<<菱形/rhombus>>被对角线分成 4 个直角三角形，总面积 = $4 \times \frac{1}{2} \times \frac{d_1}{2} \times \frac{d_2}{2} = \frac{1}{2} d_1 d_2$）
+
+      **判定<<菱形/rhombus>>的方法：**
+
+      **判定一**：四条边都相等的四边形是<<菱形/rhombus>>
+
+      **判定二**：有一组邻边相等的<<平行四边形/parallelogram>>是<<菱形/rhombus>>
+
+      **判定三**：对角线互相垂直的<<平行四边形/parallelogram>>是<<菱形/rhombus>>
+
+      **层次关系（韦恩图）**：
+      - 正方形 $\subset$ 矩形 $\subset$ 平行四边形
+      - 正方形 $\subset$ 菱形 $\subset$ 平行四边形
+      - 正方形 = 矩形 $\cap$ 菱形（既是矩形又是菱形）
+    contentEn: |
+      **Definition**: A <<平行四边形/parallelogram>> with one pair of adjacent sides equal is called a **<<菱形/rhombus>>**.
+
+      A <<菱形/rhombus>> inherits all parallelogram properties and adds two special ones:
+
+      **Property 1: All four sides are equal**
+      - $AB = BC = CD = DA$
+
+      **Property 2: Diagonals are perpendicular**
+      - $AC \perp BD$
+      - Proof: In $\triangle AOB$ and $\triangle COB$, $AO = CO$, $OB = OB$, $AB = CB$, so $\triangle AOB \cong \triangle COB$ (SSS), giving $\angle AOB = \angle COB = 90°$.
+
+      **Property 3: Each diagonal bisects a pair of vertex angles**
+      - $BD$ bisects $\angle ABC$ and $\angle ADC$; $AC$ bisects $\angle DAB$ and $\angle BCD$
+
+      **Area formula**:
+      $$S_{\text{rhombus}} = \frac{1}{2} d_{1} d_{2}$$
+      where $d_{1}$ and $d_{2}$ are the lengths of the two diagonals.
+
+      **Criteria for <<菱形/rhombus>>es:**
+      1. A quadrilateral with all four sides equal is a <<菱形/rhombus>>.
+      2. A <<平行四边形/parallelogram>> with one pair of adjacent sides equal is a <<菱形/rhombus>>.
+      3. A <<平行四边形/parallelogram>> with perpendicular diagonals is a <<菱形/rhombus>>.
+
+      **Venn diagram**: Square $\subset$ Rhombus $\subset$ Parallelogram AND Square $\subset$ Rectangle $\subset$ Parallelogram; Square = Rectangle $\cap$ Rhombus.
+    examples:
+      - '菱形 $ABCD$ 的对角线 $AC = 6$ cm，$BD = 8$ cm，求菱形的面积和边长。解：面积 $S = \frac{1}{2} \times 6 \times 8 = 24$ cm$^{2}$。边长：对角线交于 $O$，$AO = 3$ cm，$BO = 4$ cm，$\angle AOB = 90°$，故 $AB = \sqrt{3^{2} + 4^{2}} = 5$ cm。'
+      - '菱形 $ABCD$ 中，$\angle A = 60°$，边长为 $6$ cm，求两条对角线的长。解：$\angle A = 60°$，故 $\angle B = 120°$。以 $AC$ 为对角线，$AC$ 平分 $\angle A$，在直角 $\triangle AOB$ 中，$\angle OAB = 30°$，$AB = 6$，故 $AO = 3$，$BO = 3\sqrt{3}$。所以 $AC = 6$ cm，$BD = 6\sqrt{3}$ cm。'
+
+  - id: square
+    title: <<正方形/square>>
+    titleEn: The <<正方形/square>>
+    hasVisualization: true
+    content: |
+      **定义**：既是<<矩形/rectangle>>又是<<菱形/rhombus>>的四边形叫做**<<正方形/square>>**。
+
+      换句话说，<<正方形/square>>有四条边相等，同时四个角都是 $90°$。
+
+      **<<正方形/square>>拥有矩形和菱形的全部性质，集大成者：**
+
+      | 性质 | 平行四边形 | 矩形 | 菱形 | 正方形 |
+      |------|-----------|------|------|------|
+      | 对边平行且相等 | ✓ | ✓ | ✓ | ✓ |
+      | 对角相等 | ✓ | ✓ | ✓ | ✓ |
+      | 对角线互相平分 | ✓ | ✓ | ✓ | ✓ |
+      | 四角均为直角 | | ✓ | | ✓ |
+      | 对角线相等 | | ✓ | | ✓ |
+      | 四边相等 | | | ✓ | ✓ |
+      | 对角线互相垂直 | | | ✓ | ✓ |
+      | 对角线平分顶角 | | | ✓ | ✓ |
+
+      **对角线的所有特性（正方形独有的完整组合）**：
+      - 对角线**相等**（来自矩形）
+      - 对角线**互相平分**（来自平行四边形）
+      - 对角线**互相垂直**（来自菱形）
+      - 对角线**平分每个顶角**（各 $45°$）（来自菱形）
+
+      **对角线与边长的关系**：
+      $$d = a\sqrt{2}$$
+      其中 $a$ 是边长，$d$ 是对角线长。（由勾股定理：$d^{2} = a^{2} + a^{2} = 2a^{2}$，故 $d = a\sqrt{2}$）
+
+      **对称性**：
+      - 有 $4$ 条对称轴（两条对角线 + 两条中线）
+      - 有 $4$ 重旋转对称（旋转 $90°$、$180°$、$270°$、$360°$ 均与原图重合）
+
+      **判定<<正方形/square>>**：
+      1. 有一个角是直角的<<菱形/rhombus>>是<<正方形/square>>
+      2. 对角线相等且互相垂直的<<平行四边形/parallelogram>>是<<正方形/square>>
+      3. 四边相等且四角均为直角的四边形是<<正方形/square>>
+    contentEn: |
+      **Definition**: A quadrilateral that is both a <<矩形/rectangle>> and a <<菱形/rhombus>> is called a **<<正方形/square>>**.
+
+      In other words, a <<正方形/square>> has all four sides equal and all four angles equal to $90°$.
+
+      A <<正方形/square>> has **all** properties of both rectangles and rhombuses combined.
+
+      **Diagonal-side relationship**:
+      $$d = a\sqrt{2}$$
+      where $a$ is the side length and $d$ is the diagonal length (by the Pythagorean theorem).
+
+      **Symmetry**: 4 axes of symmetry, 4-fold rotational symmetry (rotates onto itself at $90°$, $180°$, $270°$, $360°$).
+
+      **Criteria for <<正方形/square>>s:**
+      1. A <<菱形/rhombus>> with one right angle is a <<正方形/square>>.
+      2. A <<平行四边形/parallelogram>> with equal and perpendicular diagonals is a <<正方形/square>>.
+    examples:
+      - '正方形 $ABCD$ 边长为 $5$ cm，求对角线 $AC$ 的长。解：$AC = 5\sqrt{2}$ cm $\approx 7.07$ cm。'
+      - '正方形 $ABCD$ 的对角线交于 $O$，$\angle AOB =$ ？且 $\angle OAB =$ ？答：$\angle AOB = 90°$（对角线垂直），$\angle OAB = 45°$（对角线平分 $90°$ 的顶角）。'
+      - '一块正方形瓷砖对角线长 $20\sqrt{2}$ cm，求它的边长和面积。解：$d = a\sqrt{2}$，$20\sqrt{2} = a\sqrt{2}$，$a = 20$ cm。面积 $= 20^{2} = 400$ cm$^{2}$，也可用菱形公式 $S = \frac{1}{2} d^{2} = \frac{1}{2}(20\sqrt{2})^{2} = \frac{1}{2} \times 800 = 400$ cm$^{2}$。'
+
+  - id: trapezoid
+    title: <<梯形/trapezoid>>及其性质
+    titleEn: <<梯形/trapezoid>>s and their properties
+    hasVisualization: true
+    content: |
+      **定义**：只有一组对边平行的四边形叫做**<<梯形/trapezoid>>**。平行的两边叫做**上底**和**下底**（通常下底较长），不平行的两边叫做**腰**。
+
+      注意"只有一组"——两组对边都平行的是<<平行四边形/parallelogram>>，不是梯形。
+
+      **<<梯形/trapezoid>>的分类：**
+
+      **一、等腰<<梯形/trapezoid>>（isosceles trapezoid）**
+      - 定义：两腰相等的<<梯形/trapezoid>>
+      - **性质一：两底角分别相等**
+        - 下底的两底角相等：$\angle A = \angle B$
+        - 上底的两顶角相等：$\angle C = \angle D$
+        - 证明：过 $D$ 作 $DE \parallel AB$（$E$ 在 $BC$ 上），则 $ABED$ 是<<平行四边形/parallelogram>>，$DE = AB$，$BE = AD = CD$（腰相等），故 $\triangle DEC$ 是等腰三角形，$\angle DEC = \angle C$，而 $\angle DEC = \angle A$（同位角），故 $\angle A = \angle C$……实际上 $\angle A = \angle B$ 更直接用翻折轴对称证明。
+      - **性质二：对角线相等**：$AC = BD$
+        - 由 $\triangle ABC \cong \triangle BAD$（SAS：$AB = AB$，$\angle A = \angle B$，$AD = BC$），得 $AC = BD$
+      - **轴对称**：等腰<<梯形/trapezoid>>是轴对称图形，对称轴为两底的中点连线（垂直于两底）
+
+      **二、直角<<梯形/trapezoid>>（right trapezoid）**
+      - 一腰垂直于底边（有两个直角）
+      - 常用勾股定理求高或腰长
+
+      **面积公式**：
+      $$S = \frac{(a + b) \times h}{2}$$
+      其中 $a$、$b$ 是上下底，$h$ 是高（两底间的距离，即垂直距离）。
+
+      **求梯形的高**：当腰的长度已知时，常过一个上顶点作高，形成一个直角三角形，用勾股定理求高。
+    contentEn: |
+      **Definition**: A quadrilateral with exactly one pair of parallel sides is called a **<<梯形/trapezoid>>**. The parallel sides are called the **upper base** and **lower base**; the non-parallel sides are called the **legs**.
+
+      Note "exactly one pair" — two pairs of parallel sides would make it a parallelogram, not a trapezoid.
+
+      **Types of <<梯形/trapezoid>>s:**
+
+      **1. Isosceles <<梯形/trapezoid>>**: Two legs are equal.
+      - Property 1: Base angles are equal ($\angle A = \angle B$ and $\angle C = \angle D$)
+      - Property 2: Diagonals are equal ($AC = BD$)
+      - Has one axis of symmetry (perpendicular bisector of both bases)
+
+      **2. Right <<梯形/trapezoid>>**: One leg is perpendicular to both bases (has two right angles).
+      - Use the Pythagorean theorem to find height or leg length.
+
+      **Area formula**:
+      $$S = \frac{(a + b) \times h}{2}$$
+      where $a$ and $b$ are the two bases and $h$ is the height (perpendicular distance between the bases).
+    examples:
+      - '等腰梯形 $ABCD$ 中，$AB \parallel CD$，$AD = BC = 5$ cm，$AB = 10$ cm，$CD = 4$ cm，求梯形的高和面积。解：过 $D$ 作 $DH \perp AB$，$H$ 在 $AB$ 上。由于等腰，$AH = \frac{AB - CD}{2} = \frac{10 - 4}{2} = 3$ cm。在直角 $\triangle DAH$ 中，$DH = \sqrt{AD^{2} - AH^{2}} = \sqrt{25 - 9} = 4$ cm。面积 $S = \frac{(4 + 10) \times 4}{2} = 28$ cm$^{2}$。'
+      - '直角梯形 $ABCD$ 中，$AB \parallel CD$，$\angle A = 90°$，$AB = 8$ cm，$CD = 5$ cm，腰 $BC = 5$ cm，求面积。解：$AD$ 是高（因为 $\angle A = 90°$，$AD \perp AB$，$AD \perp CD$ 只有在直角梯形中 $AD$ 与两底垂直）。过 $C$ 作 $CE \parallel AD$（$E$ 在 $AB$），$CE = AD$，$BE = AB - AE = AB - CD = 3$ cm。直角 $\triangle BCE$ 中，$CE = \sqrt{BC^{2} - BE^{2}} = \sqrt{25 - 9} = 4$ cm。面积 $S = \frac{(8 + 5) \times 4}{2} = 26$ cm$^{2}$。'
+
+  - id: midsegment-theorem
+    title: <<中位线/midsegment>>定理
+    titleEn: The <<中位线/midsegment>> theorem
+    hasVisualization: true
+    content: |
+      **一、三角形<<中位线/midsegment>>定理**
+
+      连接三角形两边中点的线段叫做三角形的**<<中位线/midsegment>>**（中位线）。
+
+      **定理**：三角形的<<中位线/midsegment>>平行于第三边，且等于第三边的一半。
+
+      若 $M$、$N$ 分别是 $\triangle ABC$ 的 $AB$、$AC$ 的中点，则：
+      $$MN \parallel BC \quad \text{且} \quad MN = \frac{1}{2} BC$$
+
+      **证明思路**：延长 $MN$ 到 $D$，使 $ND = MN$，连 $CD$。
+      在 $\triangle AMN$ 和 $\triangle CDN$ 中，$AN = CN$（$N$ 是中点），$MN = DN$（作图），$\angle ANM = \angle CND$（对顶角）。故 $\triangle AMN \cong \triangle CDN$（SAS），所以 $CD = AM$，$CD \parallel AM$（内错角相等）。于是 $BMDC$ 是<<平行四边形/parallelogram>>（$BM \parallel CD$ 且 $BM = AM = CD$，判定三），故 $BD \parallel MC$，$BD = MC = MN + ND = 2MN$，即 $MN = \frac{1}{2} BC$，且 $MN \parallel BC$。
+
+      **一个三角形有 3 条<<中位线/midsegment>>**，三条<<中位线/midsegment>>把三角形分成 4 个全等的小三角形，且每个小三角形与原三角形相似（比例 $1:2$）。
+
+      **二、梯形<<中位线/midsegment>>定理**
+
+      连接<<梯形/trapezoid>>两腰中点的线段叫做梯形的**<<中位线/midsegment>>**。
+
+      **定理**：梯形的<<中位线/midsegment>>平行于两底，且等于两底之和的一半。
+
+      若 $MN$ 是梯形 $ABCD$（$AB \parallel CD$）的<<中位线/midsegment>>（$M$、$N$ 分别是 $AD$、$BC$ 的中点），则：
+      $$MN \parallel AB \parallel CD \quad \text{且} \quad MN = \frac{AB + CD}{2}$$
+
+      **证明思路**：连对角线 $BD$，设 $BD$ 与 $MN$ 交于 $P$。
+      - 在 $\triangle ABD$ 中，$M$ 是 $AD$ 中点，$P$ 是 $BD$ 中点（可验证），故 $MP$ 是 $\triangle ABD$ 的<<中位线/midsegment>>，$MP \parallel AB$，$MP = \frac{1}{2} AB$。
+      - 在 $\triangle BCD$ 中，$P$ 是 $BD$ 中点，$N$ 是 $BC$ 中点，$PN$ 是中位线，$PN \parallel CD$，$PN = \frac{1}{2} CD$。
+      - 故 $MN = MP + PN = \frac{1}{2} AB + \frac{1}{2} CD = \frac{AB + CD}{2}$，且 $MN \parallel AB \parallel CD$。
+
+      **应用**：在复合图形中，当有中点条件时，优先考虑中位线定理来建立长度关系。
+    contentEn: |
+      **I. Triangle <<中位线/midsegment>> theorem**
+
+      The segment connecting the midpoints of two sides of a triangle is called its **<<中位线/midsegment>>**.
+
+      **Theorem**: The <<中位线/midsegment>> of a triangle is parallel to the third side and equal to half its length.
+
+      If $M$ and $N$ are midpoints of $AB$ and $AC$ in $\triangle ABC$:
+      $$MN \parallel BC \quad \text{and} \quad MN = \frac{1}{2} BC$$
+
+      A triangle has 3 midsegments; they divide it into 4 congruent smaller triangles, each similar to the original at ratio $1:2$.
+
+      **II. Trapezoid <<中位线/midsegment>> theorem**
+
+      The segment connecting the midpoints of the two legs is the **<<中位线/midsegment>>** of a <<梯形/trapezoid>>.
+
+      **Theorem**: The <<中位线/midsegment>> of a <<梯形/trapezoid>> is parallel to both bases and equals the average of their lengths.
+
+      If $MN$ connects midpoints of legs $AD$ and $BC$ in trapezoid $ABCD$ ($AB \parallel CD$):
+      $$MN \parallel AB \parallel CD \quad \text{and} \quad MN = \frac{AB + CD}{2}$$
+
+      **Application**: Whenever a problem gives midpoint conditions, immediately consider the midsegment theorem to relate lengths.
+    examples:
+      - '在 $\triangle ABC$ 中，$M$、$N$ 分别是 $AB$、$AC$ 的中点，$MN = 6$ cm，求 $BC$。解：$BC = 2MN = 12$ cm。'
+      - '梯形 $ABCD$ 中，$AB \parallel CD$，$AB = 14$ cm，$CD = 6$ cm，$MN$ 是<<中位线/midsegment>>，求 $MN$。解：$MN = \frac{14 + 6}{2} = 10$ cm。'
+      - '如图，$D$、$E$ 分别是 $\triangle ABC$ 的 $AB$、$AC$ 的三等分点（靠近 $A$ 的那个），$DE = 4$ cm，求 $BC$。分析：$D$、$E$ 不是中点，不能直接用中位线定理。需重新审题——若 $D$ 是 $AB$ 靠 $A$ 端的三等分点，则 $AD = \frac{1}{3}AB$，不满足中位线条件。但若 $DE \parallel BC$ 由平行线截比定理，$DE : BC = AD : AB = 1:3$，故 $BC = 12$ cm。'
+
+realLife:
+  title: 四边形在生活中无处不在
+  titleEn: Quadrilaterals are everywhere in real life
+  examples:
+    - title: 平行四边形——可活动的连杆机构
+      titleEn: Parallelogram — articulated linkage mechanisms
+      content: |
+        剪式千斤顶、折叠椅、儿童游乐设施的连杆，都利用<<平行四边形/parallelogram>>的"对边平行且相等"来保持运动方向不变。当一条边平移时，对边也平移相同距离，运动平稳可控。
+      contentEn: |
+        Scissor jacks, folding chairs, and playground linkages all use the parallelogram's "opposite sides parallel and equal" to keep the direction of motion consistent. When one side translates, the opposite side translates the same distance — smooth and controlled.
+    - title: 矩形——建筑与屏幕
+      titleEn: Rectangle — architecture and screens
+      content: |
+        门、窗、书本、手机屏幕几乎都是<<矩形/rectangle>>。木工用"量对角线是否相等"来检验框架是否方正，正是利用了"矩形对角线相等"这一性质。
+      contentEn: |
+        Doors, windows, books, and phone screens are almost all <<矩形/rectangle>>s. Carpenters use "check if the diagonals are equal" to verify a frame is square — applying the property that a rectangle's diagonals are equal.
+    - title: 菱形——钻石与路标
+      titleEn: Rhombus — diamonds and road signs
+      content: |
+        钻石的正面轮廓、注意路标（警告标志）都是<<菱形/rhombus>>形状。菱形对角线垂直这一性质使它在受力时具有良好的稳定性。
+      contentEn: |
+        The front profile of a diamond gemstone and warning road signs are rhombus-shaped. The perpendicular diagonals give the rhombus structural stability under load.
+    - title: 梯形——桥梁与屋顶
+      titleEn: Trapezoid — bridges and rooftops
+      content: |
+        很多桥墩的截面、梯形屋架的形状都是<<梯形/trapezoid>>。梯形的两底平行、腰倾斜，使结构能均匀分散受力，这在土木工程中非常常见。
+      contentEn: |
+        Many bridge pier cross-sections and trapezoidal roof trusses are <<梯形/trapezoid>>s. The two parallel bases with inclined legs evenly distribute loads — very common in civil engineering.
+
+examples:
+  - id: ex1-parallelogram-angles
+    title: 利用平行四边形性质求角度与边长
+    titleEn: Using parallelogram properties to find angles and side lengths
+    type: 计算题
+    question: |
+      在 $\square ABCD$ 中，$\angle A = 2\angle B - 30°$，$AB = 5$ cm，$BC = 3$ cm，求四个内角和两条对角线交点到各顶点的距离（已知对角线 $AC = 8$ cm，$BD = 6$ cm）。
+    questionEn: |
+      In $\square ABCD$, $\angle A = 2\angle B - 30°$, $AB = 5$ cm, $BC = 3$ cm. The diagonals are $AC = 8$ cm, $BD = 6$ cm. Find all four interior angles and the distances from the intersection point of the diagonals to each vertex.
+    solution:
+      steps:
+        - step: 利用相邻角互补建立方程
+          stepEn: Use supplementary adjacent angles to set up an equation
+          content: |
+            相邻角互补：$\angle A + \angle B = 180°$
+            代入 $\angle A = 2\angle B - 30°$：
+            $(2\angle B - 30°) + \angle B = 180°$
+            $3\angle B = 210°$，$\angle B = 70°$
+        - step: 求各角
+          stepEn: Find all angles
+          content: |
+            $\angle B = 70°$，$\angle A = 2 \times 70° - 30° = 110°$
+            对角相等：$\angle C = \angle A = 110°$，$\angle D = \angle B = 70°$
+            验证：$110° + 70° + 110° + 70° = 360°$ ✓
+        - step: 求对角线交点到各顶点距离
+          stepEn: Find distances from diagonal intersection to vertices
+          content: |
+            设交点为 $O$，由对角线互相平分：
+            $AO = CO = \frac{AC}{2} = \frac{8}{2} = 4$ cm
+            $BO = DO = \frac{BD}{2} = \frac{6}{2} = 3$ cm
+    answer: |
+      $\angle A = \angle C = 110°$，$\angle B = \angle D = 70°$；
+      $AO = CO = 4$ cm，$BO = DO = 3$ cm。
+    answerEn: |
+      $\angle A = \angle C = 110°$, $\angle B = \angle D = 70°$;
+      $AO = CO = 4$ cm, $BO = DO = 3$ cm.
+
+  - id: ex2-prove-parallelogram
+    title: 证明四边形是平行四边形
+    titleEn: Proving a quadrilateral is a parallelogram
+    type: 证明题
+    question: |
+      如图，$E$、$F$ 分别是 $\square ABCD$ 的边 $AB$、$CD$ 的中点。证明：四边形 $EBFD$ 是<<平行四边形/parallelogram>>。
+    questionEn: |
+      In $\square ABCD$, $E$ and $F$ are the midpoints of $AB$ and $CD$ respectively. Prove that quadrilateral $EBFD$ is a <<平行四边形/parallelogram>>.
+    solution:
+      steps:
+        - step: 利用已知条件找相等的边
+          stepEn: Use given conditions to find equal sides
+          content: |
+            因为 $E$ 是 $AB$ 的中点，$F$ 是 $CD$ 的中点：
+            $EB = \frac{1}{2}AB$，$DF = \frac{1}{2}DC$
+        - step: 利用平行四边形性质
+          stepEn: Apply parallelogram properties
+          content: |
+            $\square ABCD$ 中，$AB = DC$（对边相等），$AB \parallel DC$（对边平行）
+            所以 $EB = \frac{1}{2}AB = \frac{1}{2}DC = DF$
+            且 $EB \parallel DF$（因为 $AB \parallel DC$，$EB$ 是 $AB$ 的一部分，$DF$ 是 $DC$ 的一部分）
+        - step: 应用判定定理得结论
+          stepEn: Apply the criterion to conclude
+          content: |
+            $EB \parallel DF$ 且 $EB = DF$（一组对边平行且相等）
+            故四边形 $EBFD$ 是<<平行四边形/parallelogram>>。（判定三）
+    answer: |
+      $EB = DF$（均为 $\frac{1}{2}AB = \frac{1}{2}DC$），且 $EB \parallel DF$（因为 $AB \parallel DC$），故 $EBFD$ 是<<平行四边形/parallelogram>>。
+    answerEn: |
+      $EB = DF = \frac{1}{2}AB = \frac{1}{2}DC$, and $EB \parallel DF$ (since $AB \parallel DC$), so $EBFD$ is a <<平行四边形/parallelogram>> by Criterion 3.
+
+  - id: ex3-rectangle-diagonal
+    title: 矩形对角线与勾股定理
+    titleEn: Rectangle diagonal using the Pythagorean theorem
+    type: 计算题
+    question: |
+      矩形 $ABCD$ 中，$AB = 12$ cm，$BC = 5$ cm。（1）求对角线 $AC$ 的长度；（2）对角线交于 $O$，求 $\triangle AOB$ 的面积。
+    questionEn: |
+      In rectangle $ABCD$, $AB = 12$ cm, $BC = 5$ cm. (1) Find the length of diagonal $AC$. (2) The diagonals intersect at $O$; find the area of $\triangle AOB$.
+    solution:
+      steps:
+        - step: 利用勾股定理求对角线
+          stepEn: Use the Pythagorean theorem to find the diagonal
+          content: |
+            矩形中 $\angle B = 90°$，在 $\triangle ABC$ 中：
+            $AC = \sqrt{AB^{2} + BC^{2}} = \sqrt{144 + 25} = \sqrt{169} = 13$ cm
+        - step: 找交点处的各段距离
+          stepEn: Find segment lengths at the intersection
+          content: |
+            矩形对角线相等且互相平分：$BD = AC = 13$ cm
+            $AO = CO = \frac{13}{2} = 6.5$ cm，$BO = DO = 6.5$ cm
+        - step: 求三角形面积
+          stepEn: Find the triangle area
+          content: |
+            $\triangle AOB$ 的底 $AO = 6.5$ cm，高等于 $BO$ 到 $AO$ 所在直线的距离……
+            更简便：整个矩形面积 $= 12 \times 5 = 60$ cm$^{2}$。
+            两条对角线把矩形分成 4 个三角形，每个三角形面积 $= \frac{60}{4} = 15$ cm$^{2}$。
+    answer: |
+      （1）$AC = 13$ cm；（2）$S_{\triangle AOB} = 15$ cm$^{2}$。
+    answerEn: |
+      (1) $AC = 13$ cm; (2) $S_{\triangle AOB} = 15$ cm$^{2}$.
+
+  - id: ex4-rhombus-area
+    title: 菱形面积——用对角线计算
+    titleEn: Rhombus area — using diagonals
+    type: 计算题
+    question: |
+      菱形 $ABCD$ 中，$\angle A = 120°$，边长为 $4$ cm。（1）求两条对角线的长度；（2）求菱形面积。
+    questionEn: |
+      In rhombus $ABCD$, $\angle A = 120°$ and the side length is $4$ cm. (1) Find the lengths of both diagonals. (2) Find the area of the rhombus.
+    solution:
+      steps:
+        - step: 分析对角线和角的关系
+          stepEn: Analyze the relationship between diagonals and angles
+          content: |
+            菱形对角线平分顶角，所以 $AC$ 平分 $\angle A = 120°$，即 $\angle OAB = 60°$。
+            $\angle A + \angle B = 180°$（相邻角互补），$\angle B = 60°$，$BD$ 平分 $\angle B$，$\angle OBA = 30°$。
+        - step: 在直角三角形中求各段
+          stepEn: Find each segment in the right triangle
+          content: |
+            对角线垂直，$\angle AOB = 90°$。在直角 $\triangle AOB$ 中，$AB = 4$，$\angle OAB = 60°$：
+            $OB = AB \sin 60° = 4 \times \frac{\sqrt{3}}{2} = 2\sqrt{3}$ cm
+            $OA = AB \cos 60° = 4 \times \frac{1}{2} = 2$ cm
+        - step: 求对角线总长和面积
+          stepEn: Find total diagonal lengths and area
+          content: |
+            $AC = 2 \times OA = 4$ cm，$BD = 2 \times OB = 4\sqrt{3}$ cm
+            面积 $S = \frac{1}{2} d_{1} d_{2} = \frac{1}{2} \times 4 \times 4\sqrt{3} = 8\sqrt{3}$ cm$^{2}$
+    answer: |
+      $AC = 4$ cm，$BD = 4\sqrt{3}$ cm；面积 $S = 8\sqrt{3}$ cm$^{2} \approx 13.86$ cm$^{2}$。
+    answerEn: |
+      $AC = 4$ cm, $BD = 4\sqrt{3}$ cm; area $S = 8\sqrt{3}$ cm$^{2} \approx 13.86$ cm$^{2}$.
+
+  - id: ex5-trapezoid-height-area
+    title: 梯形求高与面积
+    titleEn: Finding the height and area of a trapezoid
+    type: 计算题
+    question: |
+      等腰梯形 $ABCD$ 中，$AB \parallel CD$，$AB = 13$ cm，$CD = 5$ cm，腰 $AD = BC = 5$ cm。求：（1）梯形的高 $h$；（2）梯形的面积。
+    questionEn: |
+      In isosceles trapezoid $ABCD$, $AB \parallel CD$, $AB = 13$ cm, $CD = 5$ cm, and legs $AD = BC = 5$ cm. Find: (1) the height $h$; (2) the area of the trapezoid.
+    solution:
+      steps:
+        - step: 作高，找直角三角形的底
+          stepEn: Draw the height and identify the base of the right triangle
+          content: |
+            过 $D$ 作 $DH \perp AB$，$H$ 在 $AB$ 上。过 $C$ 作 $CK \perp AB$，$K$ 在 $AB$ 上。
+            $DCKH$ 是矩形（有三个直角），$HK = DC = 5$ cm。
+            等腰：$AH = KB = \frac{AB - DC}{2} = \frac{13 - 5}{2} = 4$ cm
+        - step: 用勾股定理求高
+          stepEn: Use the Pythagorean theorem to find the height
+          content: |
+            在直角 $\triangle ADH$ 中，$AD = 5$ cm，$AH = 4$ cm：
+            $h = DH = \sqrt{AD^{2} - AH^{2}} = \sqrt{25 - 16} = \sqrt{9} = 3$ cm
+        - step: 求面积
+          stepEn: Calculate the area
+          content: |
+            $S = \frac{(AB + CD) \times h}{2} = \frac{(13 + 5) \times 3}{2} = \frac{18 \times 3}{2} = 27$ cm$^{2}$
+    answer: |
+      高 $h = 3$ cm；面积 $S = 27$ cm$^{2}$。
+    answerEn: |
+      Height $h = 3$ cm; area $S = 27$ cm$^{2}$.
+
+  - id: ex6-midsegment-composite
+    title: 中位线定理在复合图形中的应用
+    titleEn: Midsegment theorem in a composite figure
+    type: 计算题
+    question: |
+      如图，$\triangle ABC$ 中，$D$、$E$、$F$ 分别是 $BC$、$CA$、$AB$ 的中点。（1）求 $DE$、$EF$、$FD$ 的长（已知 $AB = 10$ cm，$BC = 8$ cm，$CA = 6$ cm）；（2）求 $\triangle DEF$ 的面积与 $\triangle ABC$ 面积的比。
+    questionEn: |
+      In $\triangle ABC$, $D$, $E$, $F$ are midpoints of $BC$, $CA$, $AB$ respectively. (1) Find $DE$, $EF$, $FD$ given $AB = 10$ cm, $BC = 8$ cm, $CA = 6$ cm. (2) Find the ratio of the area of $\triangle DEF$ to the area of $\triangle ABC$.
+    solution:
+      steps:
+        - step: 用三角形中位线定理求各中位线
+          stepEn: Apply the triangle midsegment theorem to each midsegment
+          content: |
+            $EF$ 连 $CA$ 和 $AB$ 的中点，平行于 $BC$：$EF = \frac{1}{2} BC = \frac{1}{2} \times 8 = 4$ cm
+            $FD$ 连 $AB$ 和 $BC$ 的中点，平行于 $CA$：$FD = \frac{1}{2} CA = \frac{1}{2} \times 6 = 3$ cm
+            $DE$ 连 $BC$ 和 $CA$ 的中点，平行于 $AB$：$DE = \frac{1}{2} AB = \frac{1}{2} \times 10 = 5$ cm
+        - step: 分析面积比
+          stepEn: Analyze the area ratio
+          content: |
+            三条中位线把 $\triangle ABC$ 分成 4 个全等的小三角形（均与 $\triangle DEF$ 全等）。
+            每个小三角形面积 $= \frac{1}{4} S_{\triangle ABC}$
+            $\triangle DEF$ 面积与 $\triangle ABC$ 面积之比 $= 1:4$
+    answer: |
+      $EF = 4$ cm，$FD = 3$ cm，$DE = 5$ cm（注意：$3^{2} + 4^{2} = 5^{2}$，$\triangle DEF$ 是直角三角形！）；面积比 $= 1:4$。
+    answerEn: |
+      $EF = 4$ cm, $FD = 3$ cm, $DE = 5$ cm (note: $3^{2} + 4^{2} = 5^{2}$, so $\triangle DEF$ is a right triangle!); area ratio $= 1:4$.
+
+exercises:
+  - id: q1
+    type: fill
+    question: '在 $\square ABCD$ 中，$\angle B = 65°$，则 $\angle A =$ ___，$\angle C =$ ___，$\angle D =$ ___。'
+    questionEn: 'In $\square ABCD$, $\angle B = 65°$. Then $\angle A =$ ___, $\angle C =$ ___, $\angle D =$ ___.'
+    answer: '$\angle A = 115°$，$\angle C = 115°$，$\angle D = 65°$'
+    answerEn: '$\angle A = 115°$, $\angle C = 115°$, $\angle D = 65°$'
+    explanation: '相邻角互补：$\angle A = 180° - 65° = 115°$；对角相等：$\angle C = \angle A = 115°$，$\angle D = \angle B = 65°$。'
+    explanationEn: 'Adjacent angles are supplementary: $\angle A = 180° - 65° = 115°$; opposite angles are equal: $\angle C = \angle A = 115°$, $\angle D = \angle B = 65°$.'
+
+  - id: q2
+    type: fill
+    question: '在 $\square ABCD$ 中，对角线 $AC = 12$ cm，$BD = 16$ cm，交点为 $O$。则 $AO =$ ___，$OD =$ ___，$OC =$ ___，$OB =$ ___。'
+    questionEn: 'In $\square ABCD$, diagonals $AC = 12$ cm and $BD = 16$ cm intersect at $O$. Then $AO =$ ___, $OD =$ ___, $OC =$ ___, $OB =$ ___.'
+    answer: '$AO = 6$ cm，$OD = 8$ cm，$OC = 6$ cm，$OB = 8$ cm'
+    answerEn: '$AO = 6$ cm, $OD = 8$ cm, $OC = 6$ cm, $OB = 8$ cm'
+    explanation: '对角线互相平分：$AO = CO = \frac{AC}{2} = 6$ cm，$BO = DO = \frac{BD}{2} = 8$ cm。'
+    explanationEn: 'Diagonals bisect each other: $AO = CO = \frac{AC}{2} = 6$ cm, $BO = DO = \frac{BD}{2} = 8$ cm.'
+
+  - id: q3
+    type: choice
+    question: '下列哪个条件能判定四边形 $ABCD$ 是<<平行四边形/parallelogram>>？'
+    questionEn: 'Which of the following conditions can prove that quadrilateral $ABCD$ is a <<平行四边形/parallelogram>>?'
+    choices:
+      - 'A. $AB = CD$，$BC \parallel AD$'
+      - 'B. $AB = CD$，$BC = AD$'
+      - 'C. $AB \parallel CD$，$BC = AD$'
+      - 'D. $\angle A = \angle B$，$\angle C = \angle D$'
+    choicesEn:
+      - 'A. $AB = CD$ and $BC \parallel AD$'
+      - 'B. $AB = CD$ and $BC = AD$'
+      - 'C. $AB \parallel CD$ and $BC = AD$'
+      - 'D. $\angle A = \angle B$ and $\angle C = \angle D$'
+    answer: B
+    explanation: 'B：两组对边分别相等——判定二，正确。A：一组对边相等，另一组对边平行（不同组）——等腰梯形满足此条件但非<<平行四边形/parallelogram>>，错误。C：同上类型，错误。D：$\angle A = \angle B$、$\angle C = \angle D$ 是相邻角相等，这与"对角相等"不同，不能判定，错误。'
+    explanationEn: 'B: Two pairs of opposite sides equal — Criterion 2, correct. A: One pair of sides equal, the other pair parallel (different pairs) — an isosceles trapezoid satisfies this but is not a parallelogram, incorrect. C: Same issue. D: $\angle A = \angle B$ means adjacent angles are equal, not opposite angles — this does not prove a parallelogram.'
+
+  - id: q4
+    type: true-false
+    question: '矩形的对角线互相垂直。'
+    questionEn: 'The diagonals of a rectangle are perpendicular to each other.'
+    answer: false
+    explanation: '错误。矩形对角线相等且互相平分，但一般不垂直。只有当矩形同时也是菱形（即正方形）时，对角线才垂直。'
+    explanationEn: 'False. A rectangle has equal diagonals that bisect each other, but they are generally not perpendicular. Only when the rectangle is also a rhombus (i.e., a square) are the diagonals perpendicular.'
+
+  - id: q5
+    type: fill
+    question: '菱形 $ABCD$ 的两条对角线长分别为 $6$ cm 和 $8$ cm，则菱形的边长为 ___ cm，面积为 ___ cm$^{2}$。'
+    questionEn: 'The diagonals of rhombus $ABCD$ are $6$ cm and $8$ cm. The side length is ___ cm and the area is ___ cm$^{2}$.'
+    answer: '边长 $5$ cm，面积 $24$ cm$^{2}$'
+    answerEn: 'Side length $5$ cm, area $24$ cm$^{2}$'
+    explanation: '菱形对角线互相垂直平分，半对角线为 $3$ cm 和 $4$ cm。由勾股定理：边长 $= \sqrt{3^{2} + 4^{2}} = 5$ cm。面积 $= \frac{1}{2} \times 6 \times 8 = 24$ cm$^{2}$。'
+    explanationEn: 'The diagonals bisect each other at right angles; half-diagonals are $3$ cm and $4$ cm. By the Pythagorean theorem: side $= \sqrt{3^{2} + 4^{2}} = 5$ cm. Area $= \frac{1}{2} \times 6 \times 8 = 24$ cm$^{2}$.'
+
+  - id: q6
+    type: choice
+    question: '正方形、矩形、菱形、平行四边形，哪一类图形的对角线一定互相垂直？'
+    questionEn: 'Among squares, rectangles, rhombuses, and parallelograms, which always have perpendicular diagonals?'
+    choices:
+      - A. 正方形和矩形
+      - B. 正方形和菱形
+      - C. 只有正方形
+      - D. 所有四种
+    choicesEn:
+      - A. Squares and rectangles
+      - B. Squares and rhombuses
+      - C. Only squares
+      - D. All four types
+    answer: B
+    explanation: '菱形（包括正方形）的对角线互相垂直——这是菱形的特殊性质。矩形的对角线相等但不一定垂直（除非是正方形）。一般平行四边形对角线既不相等也不垂直。'
+    explanationEn: 'Rhombuses (including squares) have perpendicular diagonals — this is a special property of rhombuses. Rectangles have equal diagonals but not necessarily perpendicular ones (unless square). General parallelograms have neither equal nor perpendicular diagonals.'
+
+  - id: q7
+    type: fill
+    question: '等腰梯形 $ABCD$ 中，$AB \parallel CD$，$\angle A = 70°$，则 $\angle B =$ ___，$\angle C =$ ___，$\angle D =$ ___。'
+    questionEn: 'In isosceles trapezoid $ABCD$ with $AB \parallel CD$, $\angle A = 70°$. Find $\angle B$, $\angle C$, $\angle D$.'
+    answer: '$\angle B = 70°$，$\angle C = 110°$，$\angle D = 110°$'
+    answerEn: '$\angle B = 70°$, $\angle C = 110°$, $\angle D = 110°$'
+    explanation: '等腰梯形两底角相等：$\angle B = \angle A = 70°$。$AB \parallel CD$，同旁内角互补：$\angle C = 180° - 70° = 110°$，$\angle D = 180° - 70° = 110°$。验证：$70° + 70° + 110° + 110° = 360°$ ✓'
+    explanationEn: 'Isosceles trapezoid: base angles equal, so $\angle B = \angle A = 70°$. Since $AB \parallel CD$, co-interior angles are supplementary: $\angle C = \angle D = 110°$.'
+
+  - id: q8
+    type: fill
+    question: '梯形 $ABCD$ 中，$AB \parallel CD$，$AB = 18$ cm，$CD = 10$ cm，$MN$ 是中位线（$M$、$N$ 分别是两腰的中点），则 $MN =$ ___。'
+    questionEn: 'In trapezoid $ABCD$ with $AB \parallel CD$, $AB = 18$ cm, $CD = 10$ cm. $MN$ is the midsegment (connecting midpoints of the two legs). Find $MN$.'
+    answer: '$MN = 14$ cm'
+    answerEn: '$MN = 14$ cm'
+    explanation: '梯形中位线定理：$MN = \frac{AB + CD}{2} = \frac{18 + 10}{2} = 14$ cm。'
+    explanationEn: 'Trapezoid midsegment theorem: $MN = \frac{AB + CD}{2} = \frac{18 + 10}{2} = 14$ cm.'
+
+  - id: q9
+    type: true-false
+    question: '在四边形 $ABCD$ 中，若 $AB = CD$ 且 $AB \parallel CD$，则 $ABCD$ 一定是<<平行四边形/parallelogram>>。'
+    questionEn: 'In quadrilateral $ABCD$, if $AB = CD$ and $AB \parallel CD$, then $ABCD$ must be a <<平行四边形/parallelogram>>.'
+    answer: true
+    explanation: '正确。这是<<平行四边形/parallelogram>>的判定三：一组对边既平行又相等，则四边形是<<平行四边形/parallelogram>>。注意这里 $AB$ 和 $CD$ 是同一组对边，既平行又相等。'
+    explanationEn: 'True. This is Criterion 3: one pair of opposite sides that are both parallel and equal proves the quadrilateral is a parallelogram. Here $AB$ and $CD$ are the same pair of opposite sides.'
+
+  - id: q10
+    type: choice
+    question: '下列图形中，对角线互相平分且相等但不垂直的是哪个？'
+    questionEn: 'Which of the following has diagonals that bisect each other and are equal, but not perpendicular?'
+    choices:
+      - A. 平行四边形
+      - B. 矩形（非正方形）
+      - C. 菱形（非正方形）
+      - D. 正方形
+    choicesEn:
+      - A. Parallelogram (non-special)
+      - B. Rectangle (non-square)
+      - C. Rhombus (non-square)
+      - D. Square
+    answer: B
+    explanation: '矩形对角线：互相平分（来自平行四边形）✓；相等（矩形特有）✓；垂直？一般不垂直 ✗（除非是正方形）。菱形对角线：互相平分 ✓；相等？一般不相等 ✗；垂直 ✓。正方形两者都满足。一般平行四边形对角线只互相平分，不一定相等也不一定垂直。'
+    explanationEn: 'Rectangle diagonals: bisect each other ✓; equal ✓; perpendicular? Not in general ✗. Rhombus: bisect each other ✓; equal? Not in general ✗; perpendicular ✓. Square: all three ✓. General parallelogram: only bisect each other.'
+
+  - id: q11
+    type: fill
+    question: '正方形的边长为 $a$，则对角线长为 ___，面积为 ___（用 $a$ 表示）。'
+    questionEn: 'A square has side length $a$. Express its diagonal length and area in terms of $a$.'
+    answer: '对角线 $= a\sqrt{2}$；面积 $= a^{2}$（或用对角线公式：$\frac{1}{2}(a\sqrt{2})^{2} = a^{2}$）'
+    answerEn: 'Diagonal $= a\sqrt{2}$; area $= a^{2}$ (or using the diagonal formula: $\frac{1}{2}(a\sqrt{2})^{2} = a^{2}$)'
+    explanation: '正方形对角线 $d = \sqrt{a^{2} + a^{2}} = a\sqrt{2}$（勾股定理）；面积 $= a^{2}$，也可验证：$\frac{1}{2}d^{2} = \frac{1}{2}(a\sqrt{2})^{2} = \frac{1}{2} \cdot 2a^{2} = a^{2}$，两种方法一致。'
+    explanationEn: 'Square diagonal $d = \sqrt{a^{2} + a^{2}} = a\sqrt{2}$ (Pythagorean theorem); area $= a^{2}$. Verify: $\frac{1}{2}d^{2} = \frac{1}{2}(a\sqrt{2})^{2} = a^{2}$ ✓.'
+
+  - id: q12
+    type: open
+    question: |
+      在 $\triangle ABC$ 中，$D$、$E$ 分别是 $AB$、$AC$ 的中点，$DE = 7$ cm。若 $F$ 是 $BC$ 的中点，求 $\triangle DEF$ 的周长。
+    questionEn: |
+      In $\triangle ABC$, $D$ and $E$ are midpoints of $AB$ and $AC$, and $DE = 7$ cm. If $F$ is the midpoint of $BC$, find the perimeter of $\triangle DEF$.
+    answer: |
+      $DE$ 是 $\triangle ABC$ 的中位线（连 $AB$ 和 $AC$ 中点），$DE = \frac{1}{2}BC = 7$ cm，故 $BC = 14$ cm。
+      $EF$ 是 $\triangle ABC$ 的中位线（连 $AC$ 和 $BC$ 中点），$EF = \frac{1}{2}AB$。
+      $DF$ 是 $\triangle ABC$ 的中位线（连 $AB$ 和 $BC$ 中点），$DF = \frac{1}{2}AC$。
+      $\triangle DEF$ 的周长 $= DE + EF + DF = \frac{1}{2}BC + \frac{1}{2}AB + \frac{1}{2}AC = \frac{1}{2}(AB + BC + CA) = \frac{1}{2} \times \triangle ABC$ 的周长。
+      但题目只给出 $DE = 7$，即 $BC = 14$，$AB$ 和 $AC$ 未知。重新审题——若只给 $DE = 7$，则 $\triangle DEF$ 三边各为 $\frac{1}{2}$ 对应边，周长 $= \frac{1}{2}(AB + BC + CA)$，无法得具体数值。若题目意图是 $\triangle ABC$ 三边已知（如 $AB = AC = BC = 14$ cm 等边），则需补充条件。
+      **若 $\triangle ABC$ 为等边三角形，$BC = 14$ cm**，则 $AB = AC = 14$ cm，$EF = DF = 7$ cm，$\triangle DEF$ 周长 $= 7 + 7 + 7 = 21$ cm。
+    answerEn: |
+      $DE$ is the midsegment connecting midpoints of $AB$ and $AC$, so $DE = \frac{1}{2}BC = 7$ cm, giving $BC = 14$ cm. Similarly, $EF = \frac{1}{2}AB$ and $DF = \frac{1}{2}AC$. The perimeter of $\triangle DEF = \frac{1}{2}(AB + BC + CA) = \frac{1}{2} \times$ perimeter of $\triangle ABC$. Since only $DE = 7$ is given, the specific perimeter depends on $AB$ and $AC$. If $\triangle ABC$ is equilateral with $BC = 14$ cm, then perimeter of $\triangle DEF = 21$ cm.
+
+  - id: q13
+    type: open
+    question: |
+      判断下列说法是否正确，并说明理由：
+      （1）对角线相等的四边形是矩形。
+      （2）有一个角是直角的平行四边形是矩形。
+      （3）对角线互相垂直的四边形是菱形。
+    questionEn: |
+      Determine whether each statement is correct and explain why:
+      (1) A quadrilateral with equal diagonals is a rectangle.
+      (2) A parallelogram with one right angle is a rectangle.
+      (3) A quadrilateral with perpendicular diagonals is a rhombus.
+    answer: |
+      （1）**错误**。等腰梯形的对角线也相等，但等腰梯形不是矩形。正确说法应该是"对角线相等的**平行四边形**是矩形"。
+      （2）**正确**。平行四边形中相邻角互补，有一个直角则其余三个角也都是直角，符合矩形定义。
+      （3）**错误**。对角线互相垂直的四边形不一定是菱形，例如风筝形（一条对角线是另一条的垂直平分线，但两腰不等长）。正确说法是"对角线互相垂直的**平行四边形**是菱形"。
+    answerEn: |
+      (1) **False**. An isosceles trapezoid also has equal diagonals but is not a rectangle. The correct statement is: "A **parallelogram** with equal diagonals is a rectangle."
+      (2) **True**. In a parallelogram, adjacent angles are supplementary; if one is $90°$, all four must be $90°$.
+      (3) **False**. A quadrilateral with perpendicular diagonals need not be a rhombus (e.g., a kite). The correct statement is: "A **parallelogram** with perpendicular diagonals is a rhombus."
+
+examPrep:
+  title: 章末提升题
+  titleEn: Chapter Challenge Problems
+  intro: |
+    本章提升题综合考查四边形各知识点的交叉运用，重点关注易错概念和多步推理。
+  introEn: |
+    These challenge problems test the intersection of all quadrilateral topics, focusing on common misconceptions and multi-step reasoning.
+  problems:
+    - id: ep1
+      type: proof
+      question: |
+        如图，$ABCD$ 是<<平行四边形/parallelogram>>，$E$、$F$ 分别是对角线 $BD$ 上的两点，且 $BE = DF$。证明：四边形 $AECF$ 是<<平行四边形/parallelogram>>。
+      questionEn: |
+        $ABCD$ is a <<平行四边形/parallelogram>>. Points $E$ and $F$ lie on diagonal $BD$ with $BE = DF$. Prove that quadrilateral $AECF$ is a <<平行四边形/parallelogram>>.
+      hint: '考虑 $AECF$ 对角线 $AC$ 和 $EF$ 是否互相平分。'
+      hintEn: 'Consider whether the diagonals $AC$ and $EF$ of $AECF$ bisect each other.'
+      answer: |
+        设 $AC$ 与 $BD$ 交于 $O$。
+        由 $\square ABCD$ 的性质：$AO = CO$，$BO = DO$。
+        又 $BE = DF$，故 $OE = OB - BE = OD - DF = OF$。
+        所以 $AO = CO$，$OE = OF$，即对角线 $AC$ 和 $EF$ 互相平分。
+        由<<平行四边形/parallelogram>>判定五，四边形 $AECF$ 是<<平行四边形/parallelogram>>。
+      answerEn: |
+        Let $O$ be the intersection of $AC$ and $BD$. By the parallelogram properties: $AO = CO$ and $BO = DO$. Since $BE = DF$, we get $OE = OB - BE = OD - DF = OF$. So $AO = CO$ and $OE = OF$ — the diagonals $AC$ and $EF$ of $AECF$ bisect each other. By Criterion 5, $AECF$ is a <<平行四边形/parallelogram>>.
+
+    - id: ep2
+      type: proof
+      question: |
+        如图，在 $\square ABCD$ 中，$AC$ 是对角线，$\angle BAC = \angle DCA$。证明：$\square ABCD$ 是<<矩形/rectangle>>。
+      questionEn: |
+        In $\square ABCD$, $AC$ is a diagonal and $\angle BAC = \angle DCA$. Prove that $\square ABCD$ is a <<矩形/rectangle>>.
+      hint: '先利用平行线内错角推导，再证明某个角是直角。'
+      hintEn: 'First use alternate interior angles from the parallel lines, then prove one angle is a right angle.'
+      answer: |
+        由 $AB \parallel CD$，$AC$ 为截线，内错角相等：$\angle BAC = \angle DCA$。
+        题目已知 $\angle BAC = \angle DCA$，这不能直接给出新信息。
+        重新审题：$\angle BAC = \angle DCA$ 意味着……
+        在 $\triangle ABC$ 中，$\angle BAC = \angle BCA$（因为 $\angle DCA = \angle BCA$，$C$ 处的角），故 $\triangle ABC$ 是等腰三角形，$AB = BC$。
+        但 $AB \parallel CD$ 且 $AB = BC$，又 $AB = CD$（对边）……
+        实际上：$\angle BAC$ 是 $\angle A$ 被 $AC$ 平分的一半，$\angle DCA$ 是 $\angle C$ 被 $AC$ 平分的一半。在<<平行四边形/parallelogram>>中，$AC$ 平分顶角当且仅当它是菱形。
+        若 $\angle BAC = \angle DCA$，由于 $\angle DCA = \angle BAC$（原本就是内错角），这当 $AB = BC$ 时额外给出 $\angle BAC = \angle BCA$。
+        取另一解释：若题意是 $\angle BAC = \angle DAC$（$AC$ 平分 $\angle A$），则由菱形判定……
+        **标准解法**：由 $BC \parallel AD$，$\angle BAC = \angle DCA$ 结合 $AD \parallel BC$ 给出 $\angle DCA = \angle CAB$（内错角），因此 $AC \perp BD$（利用角平分线），结合<<平行四边形/parallelogram>>推矩形：$\angle BAD = \angle BAC + \angle DAC = \angle BAC + \angle BCA = \angle ABC$（等腰），即 $\angle BAD = \angle ABC$，相邻角相等，则均为 $90°$，$ABCD$ 是矩形。
+      answerEn: |
+        Since $BC \parallel AD$, the alternate interior angles give $\angle BAC = \angle DCA$ (already given). In $\triangle ABC$, if $\angle BAC = \angle BCA$ (i.e., $\angle DCA = \angle BCA$), then $\triangle ABC$ is isosceles with $AB = BC$. Combined with $AB = CD$ (opposite sides) and $AB \parallel CD$, this leads to $\angle BAD = \angle ABC$; since adjacent angles in a parallelogram are supplementary, both must equal $90°$, so $ABCD$ is a <<矩形/rectangle>>.
+
+    - id: ep3
+      type: calculation
+      question: |
+        如图，菱形 $ABCD$ 中，$E$ 是 $AB$ 的中点，$DE$ 延长后交 $BC$ 延长线于 $F$。已知菱形边长为 $6$ cm，$\angle A = 60°$，求 $BF$ 的长度。
+      questionEn: |
+        In rhombus $ABCD$, $E$ is the midpoint of $AB$. Line $DE$ extended meets the extension of $BC$ at $F$. The side length is $6$ cm and $\angle A = 60°$. Find $BF$.
+      hint: '证明 $\triangle ADE \cong \triangle FBE$ 或利用相似三角形。'
+      hintEn: 'Try proving $\triangle ADE \cong \triangle FBE$ or use similar triangles.'
+      answer: |
+        菱形中，$AD = AB = 6$ cm，$\angle A = 60°$，相邻角 $\angle B = 120°$，$\angle EBF = 180° - 120° = 60°$。
+        $E$ 是 $AB$ 中点，$AE = BE = 3$ cm，$AD = 6$ cm。
+        在 $\triangle ADE$ 和 $\triangle FBE$ 中：
+        $AE = BE = 3$ cm（$E$ 是 $AB$ 中点）
+        $\angle AED = \angle FEB$（对顶角）
+        $\angle DAE = \angle A = 60°$，$\angle BFE = ?$
+        $\angle DAE = \angle EBF = 60°$（$\angle A = 60°$，$\angle EBF = 180° - \angle B = 60°$）
+        故 $\triangle ADE \cong \triangle FBE$（ASA），所以 $BF = AD = 6$ cm。
+      answerEn: |
+        In the rhombus, $\angle A = 60°$ and $\angle B = 120°$, so $\angle EBF = 180° - 120° = 60°$. Also $AE = BE = 3$ cm and $AD = 6$ cm. In $\triangle ADE$ and $\triangle FBE$: $AE = BE = 3$ cm, $\angle AED = \angle FEB$ (vertical angles), $\angle DAE = \angle BFE = 60°$. So $\triangle ADE \cong \triangle FBE$ (ASA), giving $BF = AD = 6$ cm.
+
+    - id: ep4
+      type: calculation
+      question: |
+        梯形 $ABCD$ 中，$AB \parallel CD$，$M$、$N$ 分别是 $AD$、$BC$ 的中点（即 $MN$ 是中位线）。已知 $MN = 9$ cm，$CD = 6$ cm，梯形面积为 $45$ cm$^{2}$，求 $AB$ 和梯形的高 $h$。
+      questionEn: |
+        In trapezoid $ABCD$ with $AB \parallel CD$, $M$ and $N$ are midpoints of $AD$ and $BC$ (so $MN$ is the midsegment). Given $MN = 9$ cm, $CD = 6$ cm, and the area is $45$ cm$^{2}$, find $AB$ and the height $h$.
+      answer: |
+        由梯形中位线定理：$MN = \frac{AB + CD}{2}$，即 $9 = \frac{AB + 6}{2}$，$AB + 6 = 18$，$AB = 12$ cm。
+        由面积公式：$S = \frac{(AB + CD) \times h}{2}$，即 $45 = \frac{(12 + 6) \times h}{2} = \frac{18h}{2} = 9h$，故 $h = 5$ cm。
+      answerEn: |
+        By the midsegment theorem: $MN = \frac{AB + CD}{2}$, so $9 = \frac{AB + 6}{2}$, giving $AB = 12$ cm. By the area formula: $45 = \frac{(12 + 6) \times h}{2} = 9h$, so $h = 5$ cm.
+
+    - id: ep5
+      type: proof
+      question: |
+        如图，$\triangle ABC$ 中，$D$、$E$、$F$ 分别是三边 $BC$、$CA$、$AB$ 的中点。证明：四边形 $BDEF$ 是<<平行四边形/parallelogram>>，并求 $\triangle DEF$ 面积与 $\triangle ABC$ 面积之比。
+      questionEn: |
+        In $\triangle ABC$, $D$, $E$, $F$ are midpoints of $BC$, $CA$, $AB$ respectively. Prove that quadrilateral $BDEF$ is a <<平行四边形/parallelogram>>, and find the ratio of the area of $\triangle DEF$ to that of $\triangle ABC$.
+      answer: |
+        **证明 $BDEF$ 是<<平行四边形/parallelogram>>**：
+        $FD$ 是 $\triangle ABC$ 中连 $AB$ 中点 $F$ 和 $BC$ 中点 $D$ 的中位线，故 $FD \parallel AC$（即 $FD \parallel CE$）且 $FD = \frac{1}{2}AC$。
+        $DE$ 是 $\triangle ABC$ 中连 $BC$ 中点 $D$ 和 $CA$ 中点 $E$ 的中位线，故 $DE \parallel AB$（即 $DE \parallel BF$）且 $DE = \frac{1}{2}AB$。
+        $EF$ 是 $\triangle ABC$ 中连 $CA$ 中点 $E$ 和 $AB$ 中点 $F$ 的中位线，故 $EF \parallel BC$（即 $EF \parallel BD$）且 $EF = \frac{1}{2}BC$。
+
+        对于四边形 $BDEF$：$BD = \frac{1}{2}BC = EF$（$D$ 是 $BC$ 中点），且 $BD \parallel EF$（均平行于 $BC$）。
+        由判定三（一组对边平行且相等），$BDEF$ 是<<平行四边形/parallelogram>>。
+
+        **面积比**：三条中位线把 $\triangle ABC$ 分成 4 个全等的小三角形，$\triangle DEF$ 是其中之一，故：
+        $$\frac{S_{\triangle DEF}}{S_{\triangle ABC}} = \frac{1}{4}$$
+      answerEn: |
+        **Proof that $BDEF$ is a <<平行四边形/parallelogram>>**: $FD$ is the midsegment of $\triangle ABC$ connecting midpoints of $AB$ and $BC$, so $FD \parallel CA$ and $FD = \frac{1}{2}CA$. Segment $EF$ connects midpoints of $CA$ and $AB$, so $EF \parallel BC$ and $EF = \frac{1}{2}BC$. Since $BD = \frac{1}{2}BC = EF$ and $BD \parallel EF$, quadrilateral $BDEF$ is a <<平行四边形/parallelogram>> by Criterion 3.
+
+        **Area ratio**: The three midsegments divide $\triangle ABC$ into 4 congruent triangles, of which $\triangle DEF$ is one. Therefore $\frac{S_{\triangle DEF}}{S_{\triangle ABC}} = \frac{1}{4}$.
+
+summary: |
+  本章系统学习了四边形家族的各个成员及其关系，核心是用**平行线**和**三角形全等**这两把钥匙打开所有性质和判定的大门。
+
+  **平行四边形**是基础：三大性质（对边相等、对角相等、对角线互相平分）全由平行线推出；五种判定方法中，"一组对边平行且相等"是最常用的。
+
+  **矩形**是有直角的平行四边形，独有特性是**对角线相等**。工程中用"量对角线"检验方正。
+
+  **菱形**是有等邻边的平行四边形，独有特性是**对角线互相垂直**且**平分顶角**，面积用 $\frac{1}{2}d_1d_2$ 计算。
+
+  **正方形**集矩形和菱形之大成，对角线同时满足"相等""垂直""互相平分""平分顶角"四个性质，对角线 $= $ 边长 $\times \sqrt{2}$。
+
+  **梯形**只有一组平行边；等腰梯形两底角相等、对角线相等，有轴对称性。面积公式 $\frac{(a+b)h}{2}$。
+
+  **中位线定理**是连接三角形与梯形的桥梁，三角形中位线 $= \frac{1}{2}$ 第三边，梯形中位线 $= \frac{1}{2}$(上底 + 下底)，两者都用<<平行四边形/parallelogram>>来证明。
+
+  **层次关系**：正方形 $\subset$ 矩形 $\subset$ 平行四边形；正方形 $\subset$ 菱形 $\subset$ 平行四边形；梯形和平行四边形不相交（各自独立）。
+
+  记住两个"陷阱"：一组对边相等+另一组对边平行 $\neq$ 平行四边形；对角线相等的四边形 $\neq$ 矩形（需加上"是平行四边形"的前提）。
+summaryEn: |
+  This chapter systematically studied the quadrilateral family, with **parallel lines** and **triangle congruence** as the two master keys unlocking every property and criterion.
+
+  **Parallelogram** is the foundation: three properties (opposite sides equal, opposite angles equal, diagonals bisect each other) all derived from parallel lines; among five criteria, "one pair of opposite sides both parallel and equal" is most commonly used.
+
+  **Rectangle**: a parallelogram with a right angle; its unique property is **equal diagonals**. Engineers "check the diagonals" to verify squareness.
+
+  **Rhombus**: a parallelogram with equal adjacent sides; unique properties are **perpendicular diagonals** and **diagonals bisect vertex angles**; area $= \frac{1}{2}d_1d_2$.
+
+  **Square**: the combination of rectangle and rhombus; its diagonals are simultaneously equal, perpendicular, bisecting each other, and bisecting vertex angles; diagonal $=$ side $\times \sqrt{2}$.
+
+  **Trapezoid**: exactly one pair of parallel sides; the isosceles trapezoid has equal base angles, equal diagonals, and one axis of symmetry. Area $= \frac{(a+b)h}{2}$.
+
+  **Midsegment theorem**: triangle midsegment $= \frac{1}{2}$ third side; trapezoid midsegment $= \frac{1}{2}$(sum of bases) — both proven using parallelogram properties.
+
+  **Hierarchy**: Square $\subset$ Rectangle $\subset$ Parallelogram; Square $\subset$ Rhombus $\subset$ Parallelogram; Trapezoids and parallelograms are disjoint categories.
+
+  Watch out for two traps: "one pair of sides equal + other pair parallel" $\neq$ parallelogram; "equal diagonals" $\neq$ rectangle (must also be a parallelogram).

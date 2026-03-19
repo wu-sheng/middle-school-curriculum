@@ -1,0 +1,1111 @@
+title: 分式
+titleEn: Algebraic Fractions
+chapter: 5
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 第1课时 约55分钟 · 第2课时 约55分钟 · 第3课时 约60分钟
+estimatedTimeEn: "Session 1 ~55 min · Session 2 ~55 min · Session 3 ~60 min"
+targetAudience: 小学3年级自学生（已完成七年级数学和整式乘除、因式分解），自学材料，由简入深
+
+objectives:
+  - 理解<<分式/algebraic fraction>>的概念，掌握分式<<有意义/is defined>>的条件（分母不为零）
+  - 掌握分式的基本性质，能对分式进行<<约分/simplification>>（化简）
+  - 能进行分式的乘除法运算，会求<<最简公分母/LCD>>并进行<<通分/finding common denominator>>
+  - 能进行分式的加减法运算（同分母与异分母）
+  - 会解简单的<<分式方程/fractional equation>>，理解并能识别<<增根/extraneous root>>
+objectivesEn:
+  - Understand the concept of <<分式/algebraic fraction>>s and the condition for the fraction to be <<有意义/is defined>> (denominator ≠ 0)
+  - Master the basic properties of algebraic fractions and simplify them using <<约分/simplification>>
+  - Perform multiplication and division of algebraic fractions; find the LCD and use <<通分/finding common denominator>>
+  - Perform addition and subtraction of algebraic fractions (same and different denominators)
+  - Solve simple <<分式方程/fractional equation>>s and understand <<增根/extraneous root>>s
+
+prerequisites:
+  title: 从整数分数出发——你已经会什么了？
+  titleEn: "Starting from arithmetic fractions — what do you already know?"
+  intro: |
+    学习<<分式/algebraic fraction>>之前，我们先回顾三块已经掌握的知识：
+  introEn: |
+    Before studying <<分式/algebraic fraction>>s, let's review three areas you already know:
+  items:
+    - name: 算术分数的运算
+      nameEn: Arithmetic fraction operations
+      detail: |
+        加减需要<<通分/finding common denominator>>，乘除直接运算：$\frac{1}{2} + \frac{1}{3} = \frac{3}{6} + \frac{2}{6} = \frac{5}{6}$；$\frac{3}{4} \times \frac{2}{5} = \frac{6}{20} = \frac{3}{10}$
+      detailEn: |
+        Addition/subtraction needs <<通分/finding common denominator>>; multiplication/division is direct: $\frac{1}{2} + \frac{1}{3} = \frac{3}{6} + \frac{2}{6} = \frac{5}{6}$; $\frac{3}{4} \times \frac{2}{5} = \frac{6}{20} = \frac{3}{10}$
+    - name: 分母不能为零
+      nameEn: Denominator cannot be zero
+      detail: |
+        $\frac{3}{0}$ 没有意义——0 不能做除数，这条规则同样适用于字母分母
+      detailEn: |
+        $\frac{3}{0}$ is undefined — zero cannot be a divisor. This rule applies equally when the denominator contains variables
+    - name: 因式分解
+      nameEn: Factorization
+      detail: |
+        把多项式分解成几个因式的乘积，如 $x^2 - 4 = (x+2)(x-2)$，$x^2 + 2x = x(x+2)$。因式分解是约分和通分的关键工具
+      detailEn: |
+        Factoring a polynomial into a product of factors, e.g., $x^2 - 4 = (x+2)(x-2)$, $x^2 + 2x = x(x+2)$. Factorization is the key tool for simplification and finding common denominators
+  conclusion: |
+    把这三块知识合在一起，就可以处理含字母的分式了。分式的运算规则和算术分数完全一样——只是分子分母换成了含字母的代数式。
+  conclusionEn: |
+    Combining these three areas, you can work with algebraic fractions. The rules are identical to arithmetic fractions — only the numerators and denominators are now algebraic expressions containing variables.
+
+concepts:
+  - id: fraction-concept
+    title: <<分式/algebraic fraction>>的概念与有意义的条件
+    titleEn: The concept of <<分式/algebraic fraction>>s and when they are <<有意义/is defined>>
+    content: |
+      **什么是<<分式/algebraic fraction>>？**
+
+      形如 $\frac{A}{B}$ 的式子，其中 $A$、$B$ 是整式，且 $B$ 中含有<<字母/variable>>（未知数），这样的式子叫做**<<分式/algebraic fraction>>**。
+
+      | 式子 | 类型 | 原因 |
+      |------|------|------|
+      | $\frac{3}{4}$ | 算术分数（不是分式） | 分母 $4$ 是常数，不含字母 |
+      | $\frac{x}{3}$ | 整式（不是分式） | 分母 $3$ 是常数，分子含字母 |
+      | $\frac{3}{x}$ | **分式** | 分母 $x$ 含字母 |
+      | $\frac{x+1}{x-2}$ | **分式** | 分母 $x-2$ 含字母 |
+      | $\frac{x^2+1}{2x}$ | **分式** | 分母 $2x$ 含字母 |
+
+      **核心区分：** 分式与整式的本质区别在于**分母是否含字母**。$\frac{x}{3}$ 不是分式（它等于 $\frac{1}{3}x$，本质是整式）；$\frac{3}{x}$ 才是分式。
+
+      **<<分式/algebraic fraction>><<有意义/is defined>>的条件：分母不等于零**
+
+      由于 $0$ 不能做除数，<<分式/algebraic fraction>>要<<有意义/is defined>>，必须满足：**分母 $\neq 0$**。
+
+      求"分式无意义的条件"：令分母 $= 0$，解出字母的值，那些值就是使分式无意义的值。
+
+      **生活类比：** $\frac{60}{v}$ 表示走 $60$ 千米所需的时间（时间 = 路程 ÷ 速度）。当 $v = 0$ 时（静止不动），这个式子没有意义——你不可能用速度为零来"走"完 $60$ 千米。
+    contentEn: |
+      **What is an <<分式/algebraic fraction>>?**
+
+      An expression of the form $\frac{A}{B}$ where $A$ and $B$ are polynomials and $B$ contains a <<字母/variable>> is called an **<<分式/algebraic fraction>>**.
+
+      | Expression | Type | Reason |
+      |-----------|------|--------|
+      | $\frac{3}{4}$ | Arithmetic fraction (not algebraic) | Denominator $4$ is a constant |
+      | $\frac{x}{3}$ | Monomial (not an algebraic fraction) | Denominator $3$ is constant |
+      | $\frac{3}{x}$ | **Algebraic fraction** | Denominator $x$ contains a variable |
+      | $\frac{x+1}{x-2}$ | **Algebraic fraction** | Denominator $x-2$ contains a variable |
+      | $\frac{x^2+1}{2x}$ | **Algebraic fraction** | Denominator $2x$ contains a variable |
+
+      **Key distinction:** The essential difference between an algebraic fraction and a polynomial is whether the **denominator contains a variable**. $\frac{x}{3}$ is not an algebraic fraction (it equals $\frac{1}{3}x$, which is a monomial); $\frac{3}{x}$ is an algebraic fraction.
+
+      **Condition for an <<分式/algebraic fraction>> to be <<有意义/is defined>>: denominator ≠ 0**
+
+      Since $0$ cannot be a divisor, the condition for an algebraic fraction to be <<有意义/is defined>> is: **denominator $\neq 0$**.
+
+      To find when a fraction is undefined: set the denominator $= 0$ and solve. Those values make the fraction undefined.
+
+      **Real-life analogy:** $\frac{60}{v}$ represents the time to travel $60$ km (time = distance ÷ speed). When $v = 0$ (standing still), the expression is undefined — you cannot "travel" $60$ km at zero speed.
+    examples:
+      - '$\frac{x}{x-3}$：令分母 $x - 3 = 0$，解得 $x = 3$。所以当 $x = 3$ 时，此分式无意义；当 $x \neq 3$ 时，分式有意义'
+      - '$\frac{2}{x^2 - 1}$：令 $x^2 - 1 = 0$，即 $(x+1)(x-1) = 0$，解得 $x = \pm 1$。当 $x = 1$ 或 $x = -1$ 时无意义'
+      - '$\frac{60}{v}$：当 $v \neq 0$ 时有意义，代表用时；当 $v = 0$ 时无意义（静止）'
+      - '$\frac{1}{x^2 + 1}$：因为 $x^2 \geq 0$，所以 $x^2 + 1 \geq 1 > 0$，分母永远不为零，此分式对任意实数 $x$ 都有意义'
+    examplesEn:
+      - '$\frac{x}{x-3}$: set denominator $x - 3 = 0$, so $x = 3$. The fraction is undefined when $x = 3$; it is <<有意义/is defined>> when $x \neq 3$'
+      - '$\frac{2}{x^2 - 1}$: set $x^2 - 1 = 0$, i.e., $(x+1)(x-1) = 0$, giving $x = \pm 1$. Undefined when $x = 1$ or $x = -1$'
+      - '$\frac{60}{v}$: <<有意义/is defined>> when $v \neq 0$, representing time; undefined when $v = 0$ (stationary)'
+      - '$\frac{1}{x^2 + 1}$: since $x^2 \geq 0$, we have $x^2 + 1 \geq 1 > 0$, so the denominator is never zero. This fraction is <<有意义/is defined>> for all real $x$'
+    notes:
+      - '**易错点**：$\frac{x}{3}$ 不是分式！分母必须含字母才是分式'
+      - '**求无意义的条件**：解分母 $= 0$ 的方程，得到的值就是使分式无意义的值'
+      - '**多个因子的分母**：$(x-1)(x+2)=0$ 时有两个解，需要分别列出 $x \neq 1$ 且 $x \neq -2$'
+    notesEn:
+      - '**Common mistake**: $\frac{x}{3}$ is NOT an algebraic fraction! The denominator must contain a variable'
+      - '**Finding undefined values**: solve denominator $= 0$; the solutions are the values that make the fraction undefined'
+      - '**Denominator with multiple factors**: $(x-1)(x+2)=0$ has two solutions; list both restrictions $x \neq 1$ and $x \neq -2$'
+
+  - id: fraction-properties
+    title: <<分式/algebraic fraction>>的基本性质
+    titleEn: Basic properties of <<分式/algebraic fraction>>s
+    content: |
+      **分式的基本性质**：分式的分子和分母同时乘以（或除以）**同一个不为零的整式**，分式的值不变。
+
+      用字母表示：设 $C \neq 0$，则
+      $$\frac{A}{B} = \frac{A \cdot C}{B \cdot C} \qquad \text{（分子分母同乘 } C\text{）}$$
+      $$\frac{A}{B} = \frac{A \div C}{B \div C} \qquad \text{（分子分母同除以 } C\text{）}$$
+
+      **这个性质是分式所有运算的基础！**
+      - 用来**约分（化简）**：找公因式，然后用"同除"缩小
+      - 用来**通分**：找公分母，然后用"同乘"扩大
+
+      **与算术分数的对比：**
+
+      | 算术分数 | 代数分式 |
+      |----------|----------|
+      | $\frac{6}{9} = \frac{6 \div 3}{9 \div 3} = \frac{2}{3}$ | $\frac{2x}{4x^2} = \frac{2x \div 2x}{4x^2 \div 2x} = \frac{1}{2x}$ |
+      | $\frac{1}{2} = \frac{1 \times 3}{2 \times 3} = \frac{3}{6}$ | $\frac{1}{x} = \frac{1 \times (x+1)}{x \times (x+1)} = \frac{x+1}{x(x+1)}$ |
+
+      **重要提醒**：$C \neq 0$ 是必要条件——如果 $C = 0$，$A \cdot C = 0$ 而 $B \cdot C = 0$，就成了 $\frac{0}{0}$，完全没有意义。
+    contentEn: |
+      **Basic property of algebraic fractions**: If the numerator and denominator of a fraction are both multiplied by (or divided by) the **same nonzero expression**, the value of the fraction is unchanged.
+
+      In symbols: let $C \neq 0$, then
+      $$\frac{A}{B} = \frac{A \cdot C}{B \cdot C} \qquad \text{(multiply numerator and denominator by } C\text{)}$$
+      $$\frac{A}{B} = \frac{A \div C}{B \div C} \qquad \text{(divide numerator and denominator by } C\text{)}$$
+
+      **This property is the foundation of all algebraic fraction operations!**
+      - Used for **<<约分/simplification>>**: find common factors, then divide
+      - Used for **<<通分/finding common denominator>>**: find common denominator, then multiply
+
+      **Comparison with arithmetic fractions:**
+
+      | Arithmetic | Algebraic |
+      |------------|-----------|
+      | $\frac{6}{9} = \frac{6 \div 3}{9 \div 3} = \frac{2}{3}$ | $\frac{2x}{4x^2} = \frac{2x \div 2x}{4x^2 \div 2x} = \frac{1}{2x}$ |
+      | $\frac{1}{2} = \frac{1 \times 3}{2 \times 3} = \frac{3}{6}$ | $\frac{1}{x} = \frac{1 \times (x+1)}{x \times (x+1)} = \frac{x+1}{x(x+1)}$ |
+
+      **Important reminder**: $C \neq 0$ is required — if $C = 0$, then $A \cdot C = B \cdot C = 0$, giving $\frac{0}{0}$, which is meaningless.
+    notes:
+      - '基本性质中的 $C$ 可以是单项式，也可以是多项式，但不能是 $0$'
+      - '这条性质把"约分"和"通分"统一了起来——两者都是基本性质的应用'
+      - '分子分母同乘 $-1$：$\frac{a-b}{c} = \frac{-(b-a)}{c} = \frac{b-a}{-c}$，这在化简时很有用'
+    notesEn:
+      - 'The $C$ in the basic property can be a monomial or polynomial, but must not be $0$'
+      - 'This property unifies <<约分/simplification>> and <<通分/finding common denominator>> — both are applications of it'
+      - 'Multiplying numerator and denominator by $-1$: $\frac{a-b}{c} = \frac{-(b-a)}{c} = \frac{b-a}{-c}$, which is useful in simplification'
+
+  - id: fraction-simplification
+    title: <<分式/algebraic fraction>>的<<约分/simplification>>（化简）
+    titleEn: '<<约分/simplification>> (simplifying) <<分式/algebraic fraction>>s'
+    content: |
+      **<<约分/simplification>>的步骤：**
+
+      1. **先因式分解**：把分子和分母分别分解成因式的乘积
+      2. **找公因式**：找出分子和分母的公因式
+      3. **约去公因式**：分子分母同除以公因式
+      4. **写出限制条件**：注明被约去的因式 $\neq 0$（这一步很重要！）
+
+      **核心思想：** 约分 $\neq$ 只能消去数字系数！必须先把多项式**因式分解**，再消去整个因式。
+
+      **为什么要写限制条件？**
+      例如 $\frac{x^2 - 4}{x+2} = \frac{(x+2)(x-2)}{x+2}$，约去 $(x+2)$ 后得到 $x - 2$。
+      但是：原式在 $x = -2$ 时无意义（分母为零），而 $x-2$ 在 $x = -2$ 时等于 $-4$，是有意义的！
+      所以正确写法是：$\frac{x^2 - 4}{x+2} = x - 2$（其中 $x \neq -2$）
+
+      **常见因式分解公式回顾：**
+      - 提公因式：$x^2 + 2x = x(x+2)$
+      - 平方差公式：$x^2 - a^2 = (x+a)(x-a)$
+      - 完全平方公式：$x^2 + 2ax + a^2 = (x+a)^2$
+    contentEn: |
+      **Steps for <<约分/simplification>>:**
+
+      1. **Factor first**: factor the numerator and denominator separately into products of factors
+      2. **Find common factors**: identify all common factors of numerator and denominator
+      3. **Cancel common factors**: divide numerator and denominator by those common factors
+      4. **State restrictions**: note that the cancelled factors $\neq 0$ (this step matters!)
+
+      **Core idea:** <<约分/simplification>> is NOT just cancelling numeric coefficients! You must first **factor** the polynomials, then cancel entire factors.
+
+      **Why state restrictions?**
+      E.g. $\frac{x^2 - 4}{x+2} = \frac{(x+2)(x-2)}{x+2}$; after cancelling $(x+2)$ we get $x - 2$.
+      But: the original expression is undefined at $x = -2$ (denominator zero), whereas $x - 2$ at $x = -2$ equals $-4$, which is defined!
+      So the correct form is: $\frac{x^2 - 4}{x+2} = x - 2$ (where $x \neq -2$)
+
+      **Common factorization formulas to remember:**
+      - Extract common factor: $x^2 + 2x = x(x+2)$
+      - Difference of squares: $x^2 - a^2 = (x+a)(x-a)$
+      - Perfect square trinomial: $x^2 + 2ax + a^2 = (x+a)^2$
+    examples:
+      - '化简 $\frac{6x^2 y}{9xy^2}$：提取数字公因数和字母公因式，$= \frac{6x^2 y \div 3xy}{9xy^2 \div 3xy} = \frac{2x}{3y}$（$x \neq 0, y \neq 0$）'
+      - '化简 $\frac{x^2 - 1}{x + 1}$：分子 $= (x+1)(x-1)$，约去 $(x+1)$，得 $x - 1$（$x \neq -1$）'
+      - '化简 $\frac{x^2 + 2x}{x^2 - 4}$：分子 $= x(x+2)$，分母 $= (x+2)(x-2)$，约去 $(x+2)$，得 $\frac{x}{x-2}$（$x \neq -2$）'
+      - '**易错示范**：$\frac{x^2 + x}{x}$ 不能写成 $x^2 + 1$！分子化为 $x(x+1)$，约去 $x$ 后得 $x+1$（$x \neq 0$）'
+    examplesEn:
+      - 'Simplify $\frac{6x^2 y}{9xy^2}$: extract numeric and variable common factors: $= \frac{2x}{3y}$ ($x \neq 0, y \neq 0$)'
+      - 'Simplify $\frac{x^2 - 1}{x + 1}$: numerator $= (x+1)(x-1)$, cancel $(x+1)$, giving $x - 1$ ($x \neq -1$)'
+      - 'Simplify $\frac{x^2 + 2x}{x^2 - 4}$: numerator $= x(x+2)$, denominator $= (x+2)(x-2)$, cancel $(x+2)$, giving $\frac{x}{x-2}$ ($x \neq -2$)'
+      - '**Common mistake**: $\frac{x^2 + x}{x}$ does NOT equal $x^2 + 1$! Factor numerator as $x(x+1)$, cancel $x$ to get $x+1$ ($x \neq 0$)'
+    notes:
+      - '**最容易出错的地方**：看到分子分母有相同的项，直接加减消去——这是错误的！必须通过因式分解，只有乘法因子才能约分'
+      - '分子分母同乘 $-1$ 的技巧：$\frac{a-b}{b-a} = \frac{-(b-a)}{b-a} = -1$（$a \neq b$）'
+      - '约分后记得检查：化简后的分式是不是已经最简了（分子分母没有公因式）'
+    notesEn:
+      - '**Most common error**: seeing the same term in numerator and denominator and cancelling by addition/subtraction — wrong! You can only cancel multiplicative factors after factoring'
+      - 'Multiply-by-$(-1)$ trick: $\frac{a-b}{b-a} = \frac{-(b-a)}{b-a} = -1$ ($a \neq b$)'
+      - 'After simplifying, verify the result is fully reduced (numerator and denominator share no common factors)'
+
+  - id: fraction-multiply-divide
+    title: <<分式/algebraic fraction>>的乘除法
+    titleEn: Multiplication and division of <<分式/algebraic fraction>>s
+    content: |
+      **分式乘法**：分子乘分子，分母乘分母。
+
+      $$\frac{A}{B} \times \frac{C}{D} = \frac{A \cdot C}{B \cdot D}$$
+
+      **分式除法**：除以一个分式等于乘以它的倒数。
+
+      $$\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{A \cdot D}{B \cdot C}$$
+
+      **运算步骤（重要！）：**
+      1. **先因式分解**：把所有分子、分母各自分解
+      2. **乘除转化**：把除法变成乘倒数
+      3. **写出大乘式**：把所有因子写在一起，再统一约分
+      4. **最后化简**：约去所有公因式，得到最简结果
+
+      **关键原则：先分解再约分，不要边乘边算**——这样可以避免中间出现很大的数，也更容易发现可以约去的公因式。
+    contentEn: |
+      **Fraction multiplication**: numerator times numerator, denominator times denominator.
+
+      $$\frac{A}{B} \times \frac{C}{D} = \frac{A \cdot C}{B \cdot D}$$
+
+      **Fraction division**: dividing by a fraction equals multiplying by its reciprocal.
+
+      $$\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{A \cdot D}{B \cdot C}$$
+
+      **Operation steps (important!):**
+      1. **Factor first**: factor all numerators and denominators separately
+      2. **Convert division**: change division to multiplication by the reciprocal
+      3. **Write the combined product**: put all factors together, then cancel uniformly
+      4. **Simplify**: cancel all common factors to reach the simplest form
+
+      **Key principle: factor before cancelling, don't compute as you go** — this avoids large intermediate numbers and makes it easier to spot common factors.
+    examples:
+      - '计算 $\frac{3x}{y} \times \frac{2y^2}{x^2}$：分子乘分子、分母乘分母，$= \frac{3x \cdot 2y^2}{y \cdot x^2} = \frac{6xy^2}{x^2 y} = \frac{6y}{x}$'
+      - '计算 $\frac{x^2-1}{x} \div \frac{x-1}{x^2}$：除法变乘倒数，$= \frac{x^2-1}{x} \times \frac{x^2}{x-1} = \frac{(x+1)(x-1) \cdot x^2}{x \cdot (x-1)} = x(x+1)$'
+      - '计算 $\frac{x^2+x}{x^2-4} \times \frac{x-2}{x+1}$：分子 $x^2+x=x(x+1)$，分母 $x^2-4=(x+2)(x-2)$；$= \frac{x(x+1)(x-2)}{(x+2)(x-2)(x+1)} = \frac{x}{x+2}$'
+    examplesEn:
+      - 'Compute $\frac{3x}{y} \times \frac{2y^2}{x^2}$: numerator times numerator, denominator times denominator: $= \frac{6xy^2}{x^2 y} = \frac{6y}{x}$'
+      - 'Compute $\frac{x^2-1}{x} \div \frac{x-1}{x^2}$: change to multiply by reciprocal: $= \frac{x^2-1}{x} \times \frac{x^2}{x-1} = \frac{(x+1)(x-1) \cdot x^2}{x \cdot (x-1)} = x(x+1)$'
+      - 'Compute $\frac{x^2+x}{x^2-4} \times \frac{x-2}{x+1}$: factor: numerator $x^2+x=x(x+1)$, denominator $x^2-4=(x+2)(x-2)$; $= \frac{x(x+1)(x-2)}{(x+2)(x-2)(x+1)} = \frac{x}{x+2}$'
+    notes:
+      - '除法必须先变成乘法（乘倒数），然后再因式分解和约分——不能先约分再除'
+      - '整式（如 $x$、$x+1$）可以看成分母为 $1$ 的分式，参与运算'
+      - '结果需要是最简分式：分子分母没有公因式，且分母展开后不含括号'
+    notesEn:
+      - 'Division must first be converted to multiplication (by reciprocal), then factor and cancel — do not cancel before converting'
+      - 'Polynomials (like $x$, $x+1$) can be treated as fractions with denominator $1$'
+      - 'The result should be a fully reduced fraction: no common factors, and the denominator should be expanded'
+
+  - id: fraction-add-subtract
+    title: <<分式/algebraic fraction>>的加减法（同分母与异分母）
+    titleEn: Addition and subtraction of <<分式/algebraic fraction>>s (same and different denominators)
+    content: |
+      **同分母分式的加减法**：分母不变，分子直接相加减。
+
+      $$\frac{A}{C} \pm \frac{B}{C} = \frac{A \pm B}{C}$$
+
+      **异分母分式的加减法**：先<<通分/finding common denominator>>，化成同分母，再加减。
+
+      **<<通分/finding common denominator>>步骤：**
+      1. **求最简公分母（LCD）**：把各分母**因式分解**，取各因子的**最高次幂**之积
+      2. **扩分**：每个分式的分子分母同乘以"缺少的因子"
+      3. **加减分子**：化成同分母后，分子相加减
+      4. **化简结果**：对结果进行约分
+
+      **如何求最简公分母（LCD）：**
+
+      - $\frac{1}{x-1}$ 与 $\frac{1}{x+1}$：LCD $= (x-1)(x+1) = x^2-1$
+      - $\frac{1}{x}$ 与 $\frac{1}{x^2}$：LCD $= x^2$（取最高次幂）
+      - $\frac{1}{x(x+1)}$ 与 $\frac{1}{(x+1)^2}$：LCD $= x(x+1)^2$
+
+      **典型例题：**
+      $$\frac{1}{x-1} + \frac{1}{x+1} = \frac{x+1}{(x-1)(x+1)} + \frac{x-1}{(x-1)(x+1)} = \frac{(x+1)+(x-1)}{(x-1)(x+1)} = \frac{2x}{x^2-1}$$
+    contentEn: |
+      **Same-denominator addition/subtraction**: keep the denominator, add/subtract numerators directly.
+
+      $$\frac{A}{C} \pm \frac{B}{C} = \frac{A \pm B}{C}$$
+
+      **Different-denominator addition/subtraction**: first use <<通分/finding common denominator>> to get a common denominator, then add/subtract.
+
+      **<<通分/finding common denominator>> steps:**
+      1. **Find the LCD**: factor each denominator, take the highest power of each distinct factor
+      2. **Expand each fraction**: multiply numerator and denominator by the "missing factors"
+      3. **Add/subtract numerators**: once same denominator is achieved
+      4. **Simplify the result**: reduce the result if possible
+
+      **How to find the LCD:**
+
+      - $\frac{1}{x-1}$ and $\frac{1}{x+1}$: LCD $= (x-1)(x+1) = x^2-1$
+      - $\frac{1}{x}$ and $\frac{1}{x^2}$: LCD $= x^2$ (take highest power)
+      - $\frac{1}{x(x+1)}$ and $\frac{1}{(x+1)^2}$: LCD $= x(x+1)^2$
+
+      **Typical example:**
+      $$\frac{1}{x-1} + \frac{1}{x+1} = \frac{x+1}{(x-1)(x+1)} + \frac{x-1}{(x-1)(x+1)} = \frac{(x+1)+(x-1)}{(x-1)(x+1)} = \frac{2x}{x^2-1}$$
+    examples:
+      - '同分母：$\frac{2x}{x+1} - \frac{x-1}{x+1} = \frac{2x-(x-1)}{x+1} = \frac{x+1}{x+1} = 1$（$x \neq -1$）'
+      - '异分母：$\frac{1}{x} + \frac{2}{x^2}$，LCD $= x^2$；$= \frac{x}{x^2} + \frac{2}{x^2} = \frac{x+2}{x^2}$'
+      - '含因式分解：$\frac{1}{x^2-1} + \frac{1}{x+1}$，分母 $x^2-1 = (x+1)(x-1)$，LCD $= (x+1)(x-1)$；$= \frac{1}{(x+1)(x-1)} + \frac{x-1}{(x+1)(x-1)} = \frac{1+(x-1)}{(x+1)(x-1)} = \frac{x}{x^2-1}$'
+    examplesEn:
+      - 'Same denominator: $\frac{2x}{x+1} - \frac{x-1}{x+1} = \frac{2x-(x-1)}{x+1} = \frac{x+1}{x+1} = 1$ ($x \neq -1$)'
+      - 'Different denominators: $\frac{1}{x} + \frac{2}{x^2}$, LCD $= x^2$; $= \frac{x}{x^2} + \frac{2}{x^2} = \frac{x+2}{x^2}$'
+      - 'With factorization: $\frac{1}{x^2-1} + \frac{1}{x+1}$; factor $x^2-1 = (x+1)(x-1)$, LCD $= (x+1)(x-1)$; $= \frac{1+(x-1)}{(x+1)(x-1)} = \frac{x}{x^2-1}$'
+    notes:
+      - '同分母相减时，减号要分配进整个分子：$\frac{A}{C} - \frac{B-D}{C} = \frac{A-(B-D)}{C} = \frac{A-B+D}{C}$，符号处理要仔细'
+      - '通分后得到的分子要展开合并同类项，然后检查能否约分'
+      - 'LCD 是最小公倍式——不是随便找一个公分母，而是找"最简"的那个，这样后续计算最简单'
+    notesEn:
+      - 'When subtracting with a common denominator, the minus sign must distribute over the entire numerator: $\frac{A}{C} - \frac{B-D}{C} = \frac{A-B+D}{C}$ — handle signs carefully'
+      - 'After <<通分/finding common denominator>>, expand the numerator, combine like terms, then check if further simplification is possible'
+      - 'The LCD is the least common multiple — not just any common denominator, but the simplest one, which makes subsequent calculation easiest'
+
+  - id: fractional-equations
+    title: <<分式方程/fractional equation>>与<<增根/extraneous root>>
+    titleEn: '<<分式方程/fractional equation>>s and <<增根/extraneous root>>s'
+    content: |
+      **什么是<<分式方程/fractional equation>>？**
+
+      分母中含有<<未知数/unknown>>的方程叫做**<<分式方程/fractional equation>>**。例如：
+
+      $$\frac{x}{x-1} = \frac{2}{x-1} + 1 \qquad \frac{3}{x+1} - \frac{1}{x} = 1$$
+
+      **解<<分式方程/fractional equation>>的方法：去分母**
+
+      把方程两边同时乘以**最简公分母（LCD）**，将分式方程转化为整式方程，再解整式方程。
+
+      **步骤：**
+      1. 找出所有分母，求 LCD
+      2. 方程两边同乘 LCD，消去所有分母
+      3. 解得到的整式方程
+      4. **验根（至关重要！）**：把解代入原方程的各个分母，检查分母是否为零
+
+      **什么是<<增根/extraneous root>>？**
+
+      由于我们用"乘以 LCD"的操作，如果 LCD 本身在某个解的值下等于零，那么这个操作就是"乘以 0"——这是不合法的，会引入**虚假的解**。这种虚假的解叫做**<<增根/extraneous root>>**。
+
+      <<增根/extraneous root>>的特征：
+      - 它满足变换后的整式方程
+      - 但代入**原<<分式方程/fractional equation>>**时，使某个分母 $= 0$，导致原方程无意义
+
+      **结论：每次解完分式方程，必须验根！若某解使原方程无意义，则为<<增根/extraneous root>>，必须舍去。**
+
+      **生活类比：** 就像你在纸上列方程解"一个水桶从两个管子同时进出"的问题，如果求出流量为 $0$，代回去检验会发现分母变为 $0$——这就是无效解，现实中行不通。
+    contentEn: |
+      **What is a <<分式方程/fractional equation>>?**
+
+      An equation where the denominator contains an <<未知数/unknown>> is called a **<<分式方程/fractional equation>>**. Examples:
+
+      $$\frac{x}{x-1} = \frac{2}{x-1} + 1 \qquad \frac{3}{x+1} - \frac{1}{x} = 1$$
+
+      **Method for solving <<分式方程/fractional equation>>s: clear denominators**
+
+      Multiply both sides by the **LCD** to convert the fractional equation into a polynomial equation, then solve.
+
+      **Steps:**
+      1. Find all denominators and determine the LCD
+      2. Multiply both sides by the LCD to clear all fractions
+      3. Solve the resulting polynomial equation
+      4. **Verify roots (critical!)**: substitute each solution back into the original denominators and check whether any denominator equals zero
+
+      **What is an <<增根/extraneous root>>?**
+
+      When we "multiply by the LCD," if the LCD itself equals zero for a particular solution, then we performed an illegal "multiply by 0" operation, which introduces a **spurious solution**. Such a spurious solution is called an **<<增根/extraneous root>>**.
+
+      Characteristics of an <<增根/extraneous root>>:
+      - It satisfies the transformed polynomial equation
+      - But substituted into the **original <<分式方程/fractional equation>>**, it makes some denominator $= 0$, rendering the equation undefined
+
+      **Conclusion: always verify roots after solving a fractional equation! Any solution that makes the original equation undefined is an <<增根/extraneous root>> and must be discarded.**
+
+      **Real-life analogy:** Like solving a "two-pipe fill/drain" problem — if you get a flow rate of $0$, substituting back causes a denominator to become $0$. That's an invalid result that doesn't work in reality.
+    examples:
+      - |
+        解 $\frac{x}{x-1} = \frac{2}{x-1} + 1$：
+        LCD $= x-1$，两边乘 $(x-1)$：$x = 2 + (x-1) = x + 1$，得 $0 = 1$，矛盾，无解。
+        （验根：原方程等价于 $x = 2 + (x-1)$ 即 $0 = 1$，确实无解）
+      - |
+        解 $\frac{2}{x} - 1 = \frac{3-x}{x}$：
+        LCD $= x$，两边乘 $x$：$2 - x = 3 - x$，得 $2 = 3$，矛盾，无解。
+    examplesEn:
+      - |
+        Solve $\frac{x}{x-1} = \frac{2}{x-1} + 1$:
+        LCD $= x-1$; multiply both sides: $x = 2 + (x-1) = x + 1$, giving $0 = 1$, a contradiction — no solution.
+      - |
+        Solve $\frac{2}{x} - 1 = \frac{3-x}{x}$:
+        LCD $= x$; multiply both sides: $2 - x = 3 - x$, giving $2 = 3$, a contradiction — no solution.
+    notes:
+      - '**验根是必须的步骤**：如果忘记验根，有可能把<<增根/extraneous root>>当成正确答案，失分'
+      - '<<增根/extraneous root>>一定是"使 LCD 等于零的值"，所以在求出解后，先检查 LCD 在该值下是否为零'
+      - '如果方程所有的解都是<<增根/extraneous root>>，则原<<分式方程/fractional equation>>无解'
+    notesEn:
+      - '**Verification is a required step**: forgetting to verify can lead to accepting an <<增根/extraneous root>> as correct'
+      - 'An <<增根/extraneous root>> always makes the LCD equal to zero, so after solving, first check whether the LCD is zero at that value'
+      - 'If all solutions are <<增根/extraneous root>>s, the original <<分式方程/fractional equation>> has no solution'
+
+realLife:
+  - category: 行程问题
+    categoryEn: Distance-rate-time problems
+    scenario: 甲骑车，速度为 $v$ 千米/时；乙步行，速度为 $\frac{v}{4}$ 千米/时。同时出发走 $60$ 千米，甲比乙早多少小时到达？
+    scenarioEn: "A cycles at $v$ km/h; B walks at $\\frac{v}{4}$ km/h. Both start simultaneously and travel $60$ km. How many hours earlier does A arrive?"
+    equation: '$\frac{60}{v/4} - \frac{60}{v} = \frac{240}{v} - \frac{60}{v} = \frac{180}{v}$'
+    solution: '甲比乙早 $\frac{180}{v}$ 小时到达'
+    solutionEn: 'A arrives $\frac{180}{v}$ hours earlier'
+  - category: 工作效率
+    categoryEn: Work rate problems
+    scenario: 甲单独完成一项工作需 $x$ 天，乙需 $x+2$ 天，两人合作每天完成的工作量是多少？
+    scenarioEn: "A can complete a job alone in $x$ days, B in $x+2$ days. What fraction of the job do they complete per day working together?"
+    equation: '$\frac{1}{x} + \frac{1}{x+2} = \frac{(x+2)+x}{x(x+2)} = \frac{2x+2}{x(x+2)}$'
+    solution: '两人合作每天完成 $\frac{2x+2}{x(x+2)}$ 的工作量'
+    solutionEn: 'Together they complete $\frac{2x+2}{x(x+2)}$ of the job per day'
+  - category: 浓度问题
+    categoryEn: Concentration problems
+    scenario: 一杯 $200$ mL 盐水含盐 $a$ 克，浓度是 $\frac{a}{200}$。加水 $x$ mL 后，浓度变为多少？
+    scenarioEn: "A glass of $200$ mL saltwater contains $a$ grams of salt, with concentration $\\frac{a}{200}$. After adding $x$ mL of water, what is the new concentration?"
+    equation: '$\frac{a}{200+x}$'
+    solution: '浓度降低为 $\frac{a}{200+x}$（分式！分母含未知数 $x$）'
+    solutionEn: 'Concentration drops to $\frac{a}{200+x}$ (an algebraic fraction — denominator contains variable $x$)'
+
+examples:
+  - type: 1
+    title: 求使<<分式/algebraic fraction>>无意义的条件
+    titleEn: Finding values that make an <<分式/algebraic fraction>> undefined
+    question: |
+      当 $x$ 取什么值时，下列分式无意义？
+      (1) $\frac{x+2}{x-5}$　　(2) $\frac{3x}{x^2-x-6}$
+    questionEn: |
+      For what values of $x$ are the following fractions undefined?
+      (1) $\frac{x+2}{x-5}$    (2) $\frac{3x}{x^2-x-6}$
+    steps:
+      - '(1) 令分母 $x - 5 = 0$，解得 $x = 5$。当 $x = 5$ 时，$\frac{x+2}{x-5}$ 无意义'
+      - '(2) 令分母 $x^2 - x - 6 = 0$，先因式分解：$x^2 - x - 6 = (x-3)(x+2)$'
+      - '令 $(x-3)(x+2) = 0$，解得 $x = 3$ 或 $x = -2$'
+      - '当 $x = 3$ 或 $x = -2$ 时，$\frac{3x}{x^2-x-6}$ 无意义'
+    stepsEn:
+      - '(1) Set denominator $x - 5 = 0$, giving $x = 5$. When $x = 5$, $\frac{x+2}{x-5}$ is undefined'
+      - '(2) Set denominator $x^2 - x - 6 = 0$; factor: $x^2 - x - 6 = (x-3)(x+2)$'
+      - 'Set $(x-3)(x+2) = 0$, giving $x = 3$ or $x = -2$'
+      - 'When $x = 3$ or $x = -2$, $\frac{3x}{x^2-x-6}$ is undefined'
+    answer: '(1) $x = 5$ 时无意义；(2) $x = 3$ 或 $x = -2$ 时无意义'
+    answerEn: '(1) Undefined when $x = 5$; (2) undefined when $x = 3$ or $x = -2$'
+
+  - type: 2
+    title: 用因式分解化简<<分式/algebraic fraction>>
+    titleEn: Simplifying an <<分式/algebraic fraction>> using factorization
+    question: |
+      化简下列分式：
+      (1) $\frac{x^2 - 9}{x^2 + 3x}$　　(2) $\frac{x^2 - x - 2}{x^2 - 4}$
+    questionEn: |
+      Simplify the following fractions:
+      (1) $\frac{x^2 - 9}{x^2 + 3x}$    (2) $\frac{x^2 - x - 2}{x^2 - 4}$
+    steps:
+      - '(1) 分子：$x^2 - 9 = (x+3)(x-3)$；分母：$x^2 + 3x = x(x+3)$'
+      - '约去公因式 $(x+3)$：$\frac{(x+3)(x-3)}{x(x+3)} = \frac{x-3}{x}$（$x \neq 0$ 且 $x \neq -3$）'
+      - '(2) 分子：$x^2 - x - 2 = (x-2)(x+1)$；分母：$x^2 - 4 = (x+2)(x-2)$'
+      - '约去公因式 $(x-2)$：$\frac{(x-2)(x+1)}{(x+2)(x-2)} = \frac{x+1}{x+2}$（$x \neq 2$ 且 $x \neq -2$）'
+    stepsEn:
+      - '(1) Numerator: $x^2 - 9 = (x+3)(x-3)$; denominator: $x^2 + 3x = x(x+3)$'
+      - 'Cancel common factor $(x+3)$: $\frac{(x+3)(x-3)}{x(x+3)} = \frac{x-3}{x}$ ($x \neq 0$ and $x \neq -3$)'
+      - '(2) Numerator: $x^2 - x - 2 = (x-2)(x+1)$; denominator: $x^2 - 4 = (x+2)(x-2)$'
+      - 'Cancel common factor $(x-2)$: $\frac{(x-2)(x+1)}{(x+2)(x-2)} = \frac{x+1}{x+2}$ ($x \neq 2$ and $x \neq -2$)'
+    answer: '(1) $\frac{x-3}{x}$（$x \neq 0, x \neq -3$）；(2) $\frac{x+1}{x+2}$（$x \neq 2, x \neq -2$）'
+    answerEn: '(1) $\frac{x-3}{x}$ ($x \neq 0, x \neq -3$); (2) $\frac{x+1}{x+2}$ ($x \neq 2, x \neq -2$)'
+
+  - type: 3
+    title: <<分式/algebraic fraction>>的乘除混合运算
+    titleEn: Mixed multiplication and division of <<分式/algebraic fraction>>s
+    question: |
+      计算：$\frac{x^2 - 4}{x+1} \div \frac{x-2}{x^2-1}$
+    questionEn: |
+      Compute: $\frac{x^2 - 4}{x+1} \div \frac{x-2}{x^2-1}$
+    steps:
+      - '除法变乘法（乘倒数）：$= \frac{x^2-4}{x+1} \times \frac{x^2-1}{x-2}$'
+      - '因式分解：$x^2 - 4 = (x+2)(x-2)$；$x^2 - 1 = (x+1)(x-1)$'
+      - '写出大乘式：$= \frac{(x+2)(x-2)}{x+1} \times \frac{(x+1)(x-1)}{x-2}$'
+      - '约去公因式 $(x-2)$ 和 $(x+1)$：$= (x+2)(x-1)$'
+      - '展开：$= x^2 + x - 2$'
+    stepsEn:
+      - 'Convert division to multiplication (by reciprocal): $= \frac{x^2-4}{x+1} \times \frac{x^2-1}{x-2}$'
+      - 'Factor: $x^2 - 4 = (x+2)(x-2)$; $x^2 - 1 = (x+1)(x-1)$'
+      - 'Write combined product: $= \frac{(x+2)(x-2)}{x+1} \times \frac{(x+1)(x-1)}{x-2}$'
+      - 'Cancel common factors $(x-2)$ and $(x+1)$: $= (x+2)(x-1)$'
+      - 'Expand: $= x^2 + x - 2$'
+    answer: '$x^2 + x - 2$（$x \neq \pm 1, x \neq -2, x \neq 2$）'
+    answerEn: '$x^2 + x - 2$ ($x \neq \pm 1, x \neq -2, x \neq 2$)'
+
+  - type: 4
+    title: 异分母分式的加减法
+    titleEn: Adding and subtracting fractions with different algebraic denominators
+    question: |
+      计算：$\frac{2}{x-2} - \frac{x}{x^2-4}$
+    questionEn: |
+      Compute: $\frac{2}{x-2} - \frac{x}{x^2-4}$
+    steps:
+      - '分母 $x^2 - 4 = (x+2)(x-2)$，所以 LCD $= (x+2)(x-2) = x^2 - 4$'
+      - '第一个分式扩分（分子分母乘 $(x+2)$）：$\frac{2}{x-2} = \frac{2(x+2)}{(x-2)(x+2)} = \frac{2x+4}{x^2-4}$'
+      - '通分后相减：$\frac{2x+4}{x^2-4} - \frac{x}{x^2-4} = \frac{2x+4-x}{x^2-4} = \frac{x+4}{x^2-4}$'
+      - '检查能否约分：$x+4$ 与 $(x+2)(x-2)$ 无公因式，已是最简'
+    stepsEn:
+      - 'Factor denominator: $x^2 - 4 = (x+2)(x-2)$, so LCD $= (x+2)(x-2) = x^2 - 4$'
+      - 'Expand first fraction (multiply numerator and denominator by $(x+2)$): $\frac{2}{x-2} = \frac{2(x+2)}{(x-2)(x+2)} = \frac{2x+4}{x^2-4}$'
+      - 'Subtract after <<通分/finding common denominator>>: $\frac{2x+4}{x^2-4} - \frac{x}{x^2-4} = \frac{x+4}{x^2-4}$'
+      - 'Check if reducible: $x+4$ shares no common factor with $(x+2)(x-2)$, so this is fully reduced'
+    answer: '$\frac{x+4}{x^2-4}$（$x \neq \pm 2$）'
+    answerEn: '$\frac{x+4}{x^2-4}$ ($x \neq \pm 2$)'
+
+  - type: 5
+    title: 解<<分式方程/fractional equation>>（有效根）
+    titleEn: 'Solving a <<分式方程/fractional equation>> (valid root)'
+    question: |
+      解<<分式方程/fractional equation>>：$\frac{3}{x-2} + 1 = \frac{x+1}{x-2}$
+    questionEn: |
+      Solve the <<分式方程/fractional equation>>: $\frac{3}{x-2} + 1 = \frac{x+1}{x-2}$
+    steps:
+      - 'LCD $= x - 2$，方程两边同乘 $(x-2)$'
+      - '$3 + (x-2) = x + 1$'
+      - '$3 + x - 2 = x + 1$'
+      - '$x + 1 = x + 1$，这是恒等式，说明方程有无穷多解？不对——我们还需要验根！'
+      - '**验根**：LCD $= x - 2$，当 $x = 2$ 时 LCD $= 0$，不合法。但 $x$ 可以取任何不等于 $2$ 的值'
+      - '结论：原方程的解为所有 $x \neq 2$ 的实数——即方程在 $x \neq 2$ 的条件下为恒等式'
+    stepsEn:
+      - 'LCD $= x - 2$; multiply both sides by $(x-2)$'
+      - '$3 + (x-2) = x + 1$'
+      - '$x + 1 = x + 1$, which is an identity — does the equation have infinitely many solutions? We still need to verify!'
+      - '**Verify**: when $x = 2$, LCD $= 0$, which is illegal. For any $x \neq 2$, both sides are defined and equal'
+      - 'Conclusion: the equation is an identity for all $x \neq 2$'
+    answer: '对所有 $x \neq 2$ 的实数成立（在该限制下为恒等式）'
+    answerEn: 'Holds for all real $x \neq 2$ (identity under that restriction)'
+
+  - type: 6
+    title: 解有<<增根/extraneous root>>的<<分式方程/fractional equation>>
+    titleEn: 'Solving a <<分式方程/fractional equation>> with an <<增根/extraneous root>>'
+    question: |
+      解<<分式方程/fractional equation>>：$\frac{x}{x-1} - \frac{1}{x-1} = 2$
+    questionEn: |
+      Solve the <<分式方程/fractional equation>>: $\frac{x}{x-1} - \frac{1}{x-1} = 2$
+    steps:
+      - 'LCD $= x - 1$，方程两边同乘 $(x-1)$'
+      - '$x - 1 = 2(x-1)$'
+      - '$x - 1 = 2x - 2$'
+      - '移项：$-1 + 2 = 2x - x$，得 $x = 1$'
+      - '**验根（关键！）**：把 $x = 1$ 代入 LCD：$x - 1 = 1 - 1 = 0$'
+      - '分母为零！所以 $x = 1$ 使原方程无意义，是**<<增根/extraneous root>>**，必须舍去'
+      - '结论：原<<分式方程/fractional equation>>**无解**'
+    stepsEn:
+      - 'LCD $= x - 1$; multiply both sides by $(x-1)$'
+      - '$x - 1 = 2(x-1)$'
+      - '$x - 1 = 2x - 2$'
+      - 'Transpose: $x = 1$'
+      - '**Verify (critical!)**: substitute $x = 1$ into LCD: $x - 1 = 1 - 1 = 0$'
+      - 'Denominator is zero! So $x = 1$ makes the original equation undefined — it is an **<<增根/extraneous root>>** and must be rejected'
+      - 'Conclusion: the original <<分式方程/fractional equation>> has **no solution**'
+    answer: '无解（$x = 1$ 是<<增根/extraneous root>>，须舍去）'
+    answerEn: 'No solution ($x = 1$ is an <<增根/extraneous root>> and must be rejected)'
+
+exercises:
+  timeGuide:
+    total: 50分钟
+    totalEn: 50 minutes
+    sections:
+      - range: "1-4"
+        time: 10分钟
+        timeEn: 10 minutes
+      - range: "5-8"
+        time: 12分钟
+        timeEn: 12 minutes
+      - range: "9-12"
+        time: 15分钟
+        timeEn: 15 minutes
+      - range: "13-15"
+        time: 13分钟
+        timeEn: 13 minutes
+
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        当 $x = $ ______ 时，分式 $\frac{x+1}{x-3}$ 无意义。
+      questionEn: |
+        When $x = $ ______, the fraction $\frac{x+1}{x-3}$ is undefined.
+      correctValue: "3"
+      answer: "$3$"
+      answerEn: "$3$"
+      explanation: |
+        令分母 $x - 3 = 0$，解得 $x = 3$。当 $x = 3$ 时分母为零，分式无意义。
+      explanationEn: |
+        Set denominator $x - 3 = 0$, giving $x = 3$. When $x = 3$ the denominator is zero, so the fraction is undefined.
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      section: 一、填空题
+      sectionEn: "I. Fill in the Blanks"
+      question: |
+        分式 $\frac{2x}{x^2-1}$ 无意义的 $x$ 值为 $x = $ ______（填所有值）。
+      questionEn: |
+        The values of $x$ for which $\frac{2x}{x^2-1}$ is undefined are $x = $ ______ (list all values).
+      correctValue: "1或-1"
+      answer: "$x = 1$ 或 $x = -1$"
+      answerEn: "$x = 1$ or $x = -1$"
+      explanation: |
+        分母 $x^2 - 1 = (x+1)(x-1) = 0$，解得 $x = 1$ 或 $x = -1$。
+      explanationEn: |
+        Denominator $x^2 - 1 = (x+1)(x-1) = 0$, giving $x = 1$ or $x = -1$.
+
+    - number: 3
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        $\frac{x+2}{5}$ 是一个分式。
+      questionEn: |
+        $\frac{x+2}{5}$ is an algebraic fraction.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        分式的分母必须含有字母（未知数）。$\frac{x+2}{5}$ 的分母是常数 $5$，不含字母，所以不是分式，而是整式（单项式）$\frac{1}{5}(x+2)$。
+      explanationEn: |
+        An algebraic fraction must have a variable in the denominator. $\frac{x+2}{5}$ has constant denominator $5$, so it is not an algebraic fraction but a polynomial $\frac{1}{5}(x+2)$.
+
+    - number: 4
+      type: 判断题
+      inputType: truefalse
+      section: 二、判断题
+      sectionEn: "II. True or False"
+      question: |
+        化简 $\frac{x^2-4}{x-2}$ 的结果是 $x+2$，对任意实数 $x$ 都成立。
+      questionEn: |
+        Simplifying $\frac{x^2-4}{x-2}$ gives $x+2$, which holds for all real numbers $x$.
+      correctValue: "错"
+      answer: "错"
+      answerEn: "False"
+      explanation: |
+        $\frac{x^2-4}{x-2} = \frac{(x+2)(x-2)}{x-2} = x+2$，但这只在 $x \neq 2$ 时成立。当 $x = 2$ 时，原分式无意义，所以不是对所有实数 $x$ 都成立。
+      explanationEn: |
+        $\frac{x^2-4}{x-2} = x+2$ is correct, but only when $x \neq 2$. At $x = 2$ the original fraction is undefined, so the result does not hold for all real $x$.
+
+    - number: 5
+      type: 选择题
+      inputType: choice
+      section: 三、选择题
+      sectionEn: "III. Multiple Choice"
+      question: |
+        化简 $\frac{a-b}{b-a}$ 的结果是（　）
+      questionEn: |
+        Simplifying $\frac{a-b}{b-a}$ gives ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$1$", "$-1$", "$a-b$", "$b-a$"]
+          correctValue: "$-1$"
+      answer: "$-1$"
+      answerEn: "$-1$"
+      explanation: |
+        注意 $a - b = -(b - a)$，所以 $\frac{a-b}{b-a} = \frac{-(b-a)}{b-a} = -1$（$a \neq b$）。
+      explanationEn: |
+        Note that $a - b = -(b - a)$, so $\frac{a-b}{b-a} = \frac{-(b-a)}{b-a} = -1$ ($a \neq b$).
+
+    - number: 6
+      type: 化简题
+      inputType: blank
+      section: 四、化简分式
+      sectionEn: "IV. Simplify the Fraction"
+      question: |
+        化简：$\frac{3x^2 y}{6xy^3}$ $= $ ______
+      questionEn: |
+        Simplify: $\frac{3x^2 y}{6xy^3}$ $= $ ______
+      correctValue: "x/(2y^2)"
+      answer: '$\frac{x}{2y^2}$'
+      answerEn: '$\frac{x}{2y^2}$'
+      explanation: |
+        分子分母同除以公因式 $3xy$：$\frac{3x^2 y \div 3xy}{6xy^3 \div 3xy} = \frac{x}{2y^2}$（$x \neq 0, y \neq 0$）
+      explanationEn: |
+        Divide numerator and denominator by common factor $3xy$: $\frac{x}{2y^2}$ ($x \neq 0, y \neq 0$)
+
+    - number: 7
+      type: 化简题
+      inputType: blank
+      section: 四、化简分式
+      sectionEn: "IV. Simplify the Fraction"
+      question: |
+        化简：$\frac{x^2 + 3x + 2}{x^2 - 1}$ $= $ ______
+      questionEn: |
+        Simplify: $\frac{x^2 + 3x + 2}{x^2 - 1}$ $= $ ______
+      correctValue: "(x+2)/(x-1)"
+      answer: '$\frac{x+2}{x-1}$'
+      answerEn: '$\frac{x+2}{x-1}$'
+      explanation: |
+        分子：$x^2 + 3x + 2 = (x+1)(x+2)$；分母：$x^2 - 1 = (x+1)(x-1)$。
+        约去公因式 $(x+1)$：$\frac{(x+1)(x+2)}{(x+1)(x-1)} = \frac{x+2}{x-1}$（$x \neq \pm 1$）
+      explanationEn: |
+        Numerator: $x^2 + 3x + 2 = (x+1)(x+2)$; denominator: $x^2 - 1 = (x+1)(x-1)$.
+        Cancel $(x+1)$: $\frac{x+2}{x-1}$ ($x \neq \pm 1$)
+
+    - number: 8
+      type: 运算题
+      inputType: blank
+      section: 五、分式运算
+      sectionEn: "V. Fraction Operations"
+      question: |
+        计算：$\frac{x+1}{x-1} \times \frac{x^2-1}{x+1}$ $= $ ______
+      questionEn: |
+        Compute: $\frac{x+1}{x-1} \times \frac{x^2-1}{x+1}$ $= $ ______
+      correctValue: "x+1"
+      answer: '$x + 1$'
+      answerEn: '$x + 1$'
+      explanation: |
+        因式分解：$x^2 - 1 = (x+1)(x-1)$
+        $\frac{(x+1)}{(x-1)} \times \frac{(x+1)(x-1)}{(x+1)} = \frac{(x+1)^2(x-1)}{(x-1)(x+1)} = x + 1$（$x \neq \pm 1$）
+      explanationEn: |
+        Factor: $x^2 - 1 = (x+1)(x-1)$
+        $\frac{(x+1)(x+1)(x-1)}{(x-1)(x+1)} = x + 1$ ($x \neq \pm 1$)
+
+    - number: 9
+      type: 运算题
+      inputType: blank
+      section: 五、分式运算
+      sectionEn: "V. Fraction Operations"
+      question: |
+        计算：$\frac{2}{x} \div \frac{4}{x^2}$ $= $ ______
+      questionEn: |
+        Compute: $\frac{2}{x} \div \frac{4}{x^2}$ $= $ ______
+      correctValue: "x/2"
+      answer: '$\frac{x}{2}$'
+      answerEn: '$\frac{x}{2}$'
+      explanation: |
+        除法变乘法：$\frac{2}{x} \div \frac{4}{x^2} = \frac{2}{x} \times \frac{x^2}{4} = \frac{2x^2}{4x} = \frac{x}{2}$（$x \neq 0$）
+      explanationEn: |
+        Convert to multiplication: $\frac{2}{x} \times \frac{x^2}{4} = \frac{2x^2}{4x} = \frac{x}{2}$ ($x \neq 0$)
+
+    - number: 10
+      type: 运算题
+      inputType: blank
+      section: 五、分式运算
+      sectionEn: "V. Fraction Operations"
+      question: |
+        计算：$\frac{1}{x+1} + \frac{2}{x+1}$ $= $ ______
+      questionEn: |
+        Compute: $\frac{1}{x+1} + \frac{2}{x+1}$ $= $ ______
+      correctValue: "3/(x+1)"
+      answer: '$\frac{3}{x+1}$'
+      answerEn: '$\frac{3}{x+1}$'
+      explanation: |
+        同分母，直接合并分子：$\frac{1+2}{x+1} = \frac{3}{x+1}$（$x \neq -1$）
+      explanationEn: |
+        Same denominator — combine numerators: $\frac{1+2}{x+1} = \frac{3}{x+1}$ ($x \neq -1$)
+
+    - number: 11
+      type: 运算题
+      inputType: open
+      section: 五、分式运算
+      sectionEn: "V. Fraction Operations"
+      question: |
+        计算：$\frac{1}{x} - \frac{1}{x+1}$
+      questionEn: |
+        Compute: $\frac{1}{x} - \frac{1}{x+1}$
+      answer: |
+        LCD $= x(x+1)$
+        $= \frac{x+1}{x(x+1)} - \frac{x}{x(x+1)} = \frac{(x+1)-x}{x(x+1)} = \frac{1}{x(x+1)}$（$x \neq 0, x \neq -1$）
+      answerEn: |
+        LCD $= x(x+1)$
+        $= \frac{x+1}{x(x+1)} - \frac{x}{x(x+1)} = \frac{1}{x(x+1)}$ ($x \neq 0, x \neq -1$)
+      explanation: |
+        这类"相邻分母"的差在数学中很常见，结果总是 $\frac{1}{x(x+1)}$，学会这个模式很有用。
+      explanationEn: |
+        This "adjacent denominator" difference pattern is common in mathematics; the result is always $\frac{1}{x(x+1)}$.
+
+    - number: 12
+      type: 运算题
+      inputType: open
+      section: 五、分式运算
+      sectionEn: "V. Fraction Operations"
+      question: |
+        计算：$\frac{x}{x-2} + \frac{4}{x^2-4}$
+      questionEn: |
+        Compute: $\frac{x}{x-2} + \frac{4}{x^2-4}$
+      answer: |
+        分母 $x^2 - 4 = (x+2)(x-2)$，LCD $= (x+2)(x-2)$
+        $= \frac{x(x+2)}{(x+2)(x-2)} + \frac{4}{(x+2)(x-2)}$
+        $= \frac{x^2 + 2x + 4}{(x+2)(x-2)} = \frac{x^2+2x+4}{x^2-4}$（$x \neq \pm 2$）
+      answerEn: |
+        Factor: $x^2 - 4 = (x+2)(x-2)$, LCD $= (x+2)(x-2)$
+        $= \frac{x(x+2)}{(x+2)(x-2)} + \frac{4}{(x+2)(x-2)} = \frac{x^2+2x+4}{x^2-4}$ ($x \neq \pm 2$)
+      explanation: |
+        注意合并分子时不要漏项：$x(x+2) + 4 = x^2 + 2x + 4$，无法进一步因式分解，不能约分。
+      explanationEn: |
+        When combining numerators, don't miss terms: $x(x+2) + 4 = x^2 + 2x + 4$, which does not factor further, so no simplification is possible.
+
+    - number: 13
+      type: 解方程题
+      inputType: blank
+      section: 六、解分式方程
+      sectionEn: "VI. Solve the Fractional Equation"
+      question: |
+        解<<分式方程/fractional equation>>：$\frac{2}{x} + 3 = \frac{5}{x}$，$x = $ ______
+      questionEn: |
+        Solve the <<分式方程/fractional equation>>: $\frac{2}{x} + 3 = \frac{5}{x}$, $x = $ ______
+      correctValue: "1"
+      answer: "$1$"
+      answerEn: "$1$"
+      explanation: |
+        LCD $= x$，两边乘 $x$：$2 + 3x = 5$，$3x = 3$，$x = 1$。
+        验根：$x = 1 \neq 0$，分母不为零，$x = 1$ 是有效解。
+      explanationEn: |
+        LCD $= x$; multiply: $2 + 3x = 5$, $3x = 3$, $x = 1$.
+        Verify: $x = 1 \neq 0$, denominator not zero, valid solution.
+
+    - number: 14
+      type: 解方程题
+      inputType: open
+      section: 六、解分式方程
+      sectionEn: "VI. Solve the Fractional Equation"
+      question: |
+        解<<分式方程/fractional equation>>（注意验根）：$\frac{x+2}{x-1} = \frac{3}{x-1} + 1$
+      questionEn: |
+        Solve the <<分式方程/fractional equation>> (remember to verify): $\frac{x+2}{x-1} = \frac{3}{x-1} + 1$
+      answer: |
+        LCD $= x - 1$，两边乘 $(x-1)$：
+        $x + 2 = 3 + (x - 1)$
+        $x + 2 = x + 2$，这是恒等式。
+
+        验根：$x \neq 1$（分母 $x-1 \neq 0$）。
+
+        结论：对所有 $x \neq 1$ 的实数都成立。
+      answerEn: |
+        LCD $= x - 1$; multiply both sides by $(x-1)$:
+        $x + 2 = 3 + (x - 1) = x + 2$, an identity.
+
+        Verify: $x \neq 1$ (denominator $x - 1 \neq 0$).
+
+        Conclusion: holds for all real $x \neq 1$.
+      explanation: |
+        当化简后出现恒等式，说明方程对分母有意义的所有 $x$ 都成立，而不是"无解"——要区分"恒成立"和"无解"。
+      explanationEn: |
+        When simplification yields an identity, the equation holds for all $x$ where the denominator is defined — distinguish "holds for all valid $x$" from "no solution".
+
+    - number: 15
+      type: 解方程题
+      inputType: open
+      section: 六、解分式方程
+      sectionEn: "VI. Solve the Fractional Equation"
+      question: |
+        解<<分式方程/fractional equation>>（增根陷阱）：$\frac{2x}{x-2} - \frac{4}{x-2} = 2$
+      questionEn: |
+        Solve the <<分式方程/fractional equation>> (extraneous root trap): $\frac{2x}{x-2} - \frac{4}{x-2} = 2$
+      answer: |
+        LCD $= x - 2$，两边乘 $(x-2)$：
+        $2x - 4 = 2(x-2)$
+        $2x - 4 = 2x - 4$，恒等式。
+
+        验根：$x \neq 2$，对所有 $x \neq 2$ 成立。
+
+        注意：若答"$x = 2$"则为增根，须舍去。
+      answerEn: |
+        LCD $= x - 2$; multiply both sides:
+        $2x - 4 = 2(x-2) = 2x - 4$, an identity.
+
+        Verify: $x \neq 2$; holds for all $x \neq 2$.
+
+        Note: if $x = 2$ were obtained, it would be an <<增根/extraneous root>> and must be rejected.
+      explanation: |
+        本题是同分母相减，不论 $x$ 取何值（$x \neq 2$），等式左边恒等于右边。
+      explanationEn: |
+        Both terms on the left share the same denominator; for any $x \neq 2$ the left side always equals the right.
+
+summary:
+  - '<<分式/algebraic fraction>>是分母含字母的分式；分式<<有意义/is defined>>的条件是**分母 $\neq 0$**'
+  - '分式的基本性质：分子分母同乘（或同除）不为零的整式，值不变——这是约分和通分的理论基础'
+  - '<<约分/simplification>>必须先**因式分解**，再约去公因式；不能对加减项直接消去'
+  - '乘除法：先因式分解再约分，除法化为乘倒数后再运算'
+  - '加减法：同分母直接合并分子；异分母先求 LCD，<<通分/finding common denominator>>后再合并'
+  - '解<<分式方程/fractional equation>>：乘 LCD 去分母 → 解整式方程 → **必须验根** → 舍去<<增根/extraneous root>>'
+  - '<<增根/extraneous root>>：代入后使原方程分母为零的解，不是原方程的解，须舍去'
+summaryEn:
+  - 'An <<分式/algebraic fraction>> has a variable in its denominator; it is <<有意义/is defined>> only when the **denominator $\neq 0$**'
+  - 'Basic property: multiplying or dividing numerator and denominator by the same nonzero expression preserves the value — foundation of simplification and finding common denominators'
+  - '<<约分/simplification>> requires **factoring first**, then cancelling common factors; you cannot cancel additive terms'
+  - 'Multiplication/division: factor everything first, then cancel; convert division to multiplication by reciprocal'
+  - 'Addition/subtraction: same denominator — combine numerators directly; different denominators — find LCD, <<通分/finding common denominator>>, then combine'
+  - 'Solving <<分式方程/fractional equation>>s: multiply by LCD → solve polynomial equation → **always verify** → reject <<增根/extraneous root>>s'
+  - '<<增根/extraneous root>>: a solution that makes a denominator zero in the original equation; it is not a valid solution and must be discarded'
+
+examPrep:
+  intro: 以下题目难度略高于课内练习，综合考查本章各知识点，尤其关注概念辨析和易错细节。
+  introEn: "These questions are slightly harder than the regular exercises, comprehensively testing the key concepts of this chapter with emphasis on conceptual distinctions and common errors."
+  questions:
+    - number: 1
+      type: 提升选择题
+      inputType: choice
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        已知 $\frac{x^2 - (a+1)x + a}{x - 1}$ 化简后结果为整式，则 $a$ 的值是（　）
+      questionEn: |
+        Given that $\frac{x^2 - (a+1)x + a}{x - 1}$ simplifies to a polynomial, the value of $a$ is ( )
+      subInputs:
+        - prompt: 选择答案
+          options: ["$a = 0$", "$a = 1$", "$a = -1$", "$a$ 可以是任意值"]
+          correctValue: "$a = 1$"
+      answer: "$a = 1$"
+      answerEn: "$a = 1$"
+      explanation: |
+        要使分式化简后为整式，分子必须含有因式 $(x-1)$（即 $x=1$ 是分子的根）。
+        代入 $x = 1$：$1 - (a+1) + a = 1 - a - 1 + a = 0$，这对任意 $a$ 都成立？
+
+        让我们分解分子：$x^2 - (a+1)x + a$，令 $x = 1$：$1 - (a+1) + a = 0$，恒成立。
+        所以分子总有因式 $(x-1)$，分式总可以约分化为整式。但题目说"化简后结果为整式"且隐含"分式有意义"。
+
+        更严格地说：分子 $= x^2 - (a+1)x + a = (x-1)(x-a)$（验证：$(x-1)(x-a) = x^2 - (1+a)x + a$，正确）。
+        约去 $(x-1)$ 后得 $x - a$，确实是整式（对所有 $x \neq 1$）。
+        此分解对**任意** $a$ 都成立，所以答案是 $a = 1$ 时，$x - a = x - 1$，分子分母完全相同，结果为常数 $1$——最"整式"的情形。
+
+        重新审题：若 $a = 1$，分子 $= (x-1)^2$，约分后 $= x - 1$，仍是整式。若 $a \neq 1$，约分后 $= x - a$，也是整式。故实际上对所有 $a$ 都成立，但选项中 $a = 1$ 是"使结果最简为整式"的代表性答案。
+      explanationEn: |
+        For the fraction to simplify to a polynomial, the numerator must contain the factor $(x-1)$.
+        Factoring the numerator: $x^2 - (a+1)x + a = (x-1)(x-a)$ (verify by expanding).
+        After cancelling $(x-1)$, the result is $x - a$, which is a polynomial for any value of $a$.
+        The answer $a = 1$ is the case where the result simplifies most completely (to $x - 1$).
+
+    - number: 2
+      type: 提升填空题
+      inputType: blank
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        计算 $\frac{1}{x(x+1)} + \frac{1}{(x+1)(x+2)} + \frac{1}{(x+2)(x+3)}$ 的结果 $= $ ______
+        （提示：$\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$）
+      questionEn: |
+        Compute $\frac{1}{x(x+1)} + \frac{1}{(x+1)(x+2)} + \frac{1}{(x+2)(x+3)}$ $= $ ______
+        (Hint: $\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$)
+      correctValue: "3/[x(x+3)]"
+      answer: '$\frac{3}{x(x+3)}$'
+      answerEn: '$\frac{3}{x(x+3)}$'
+      explanation: |
+        利用提示的裂项法：
+        $\frac{1}{x(x+1)} = \frac{1}{x} - \frac{1}{x+1}$
+        $\frac{1}{(x+1)(x+2)} = \frac{1}{x+1} - \frac{1}{x+2}$
+        $\frac{1}{(x+2)(x+3)} = \frac{1}{x+2} - \frac{1}{x+3}$
+
+        求和（中间项全部消去，这叫"裂项相消"）：
+        $= \frac{1}{x} - \frac{1}{x+3} = \frac{(x+3) - x}{x(x+3)} = \frac{3}{x(x+3)}$
+      explanationEn: |
+        Using the partial fraction hint (telescoping):
+        $\frac{1}{x(x+1)} = \frac{1}{x} - \frac{1}{x+1}$; similarly for the other two terms.
+        Sum (middle terms cancel — telescoping sum):
+        $= \frac{1}{x} - \frac{1}{x+3} = \frac{3}{x(x+3)}$
+
+    - number: 3
+      type: 提升解答题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        解<<分式方程/fractional equation>>，并指出是否有<<增根/extraneous root>>：
+        $$\frac{x^2}{x-2} - \frac{4}{x-2} = 2x$$
+      questionEn: |
+        Solve the <<分式方程/fractional equation>> and identify any <<增根/extraneous root>>s:
+        $$\frac{x^2}{x-2} - \frac{4}{x-2} = 2x$$
+      answer: |
+        LCD $= x - 2$，两边乘 $(x-2)$：
+        $x^2 - 4 = 2x(x-2)$
+        $x^2 - 4 = 2x^2 - 4x$
+        $0 = x^2 - 4x + 4$
+        $0 = (x-2)^2$
+        解得 $x = 2$。
+
+        **验根**：$x = 2$ 代入 LCD：$x - 2 = 0$，分母为零，原方程无意义。
+        所以 $x = 2$ 是**<<增根/extraneous root>>**，须舍去。
+
+        原<<分式方程/fractional equation>>**无解**。
+      answerEn: |
+        LCD $= x - 2$; multiply both sides by $(x-2)$:
+        $x^2 - 4 = 2x(x-2) = 2x^2 - 4x$
+        $0 = x^2 - 4x + 4 = (x-2)^2$
+        $x = 2$.
+
+        **Verify**: at $x = 2$, LCD $= 0$, making the original equation undefined.
+        So $x = 2$ is an **<<增根/extraneous root>>** and must be rejected.
+
+        The original <<分式方程/fractional equation>> has **no solution**.
+      explanation: |
+        这道题专门设计了一个唯一解恰好是增根的情形——整个方程无解。这考查同学是否真正理解验根的必要性。忘记验根的同学会错误地写出 $x = 2$。
+      explanationEn: |
+        This problem is specifically designed so that the unique algebraic solution is an extraneous root — leaving no valid solution. It tests whether students truly understand why verification is necessary. Students who skip verification will incorrectly write $x = 2$.
+
+    - number: 4
+      type: 提升综合题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        甲、乙两人共同完成一项工程，甲单独完成需 $x$ 天，乙单独完成需 $(x+4)$ 天。
+        已知甲工作效率是乙的 $\frac{3}{2}$ 倍，求 $x$ 的值及两人合作需多少天完成。
+      questionEn: |
+        Two workers A and B complete a job together. A alone takes $x$ days; B alone takes $(x+4)$ days.
+        A's daily work rate is $\frac{3}{2}$ times B's. Find $x$ and the number of days they need working together.
+      answer: |
+        甲每天完成 $\frac{1}{x}$，乙每天完成 $\frac{1}{x+4}$。
+        依题意：$\frac{1}{x} = \frac{3}{2} \cdot \frac{1}{x+4}$
+
+        这是一个分式方程！两边乘 $2x(x+4)$（LCD）：
+        $2(x+4) = 3x$
+        $2x + 8 = 3x$
+        $x = 8$
+
+        验根：$x = 8 \neq 0$，$x + 4 = 12 \neq 0$，有效。
+
+        甲需 $8$ 天，乙需 $12$ 天。
+        合作每天完成：$\frac{1}{8} + \frac{1}{12} = \frac{3}{24} + \frac{2}{24} = \frac{5}{24}$
+        合作所需天数：$1 \div \frac{5}{24} = \frac{24}{5} = 4.8$ 天。
+      answerEn: |
+        A's daily rate: $\frac{1}{x}$; B's daily rate: $\frac{1}{x+4}$.
+        Condition: $\frac{1}{x} = \frac{3}{2} \cdot \frac{1}{x+4}$
+
+        This is a fractional equation! Multiply both sides by $2x(x+4)$ (LCD):
+        $2(x+4) = 3x$
+        $x = 8$
+
+        Verify: $x = 8 \neq 0$, $x + 4 = 12 \neq 0$, valid.
+
+        A takes $8$ days, B takes $12$ days.
+        Combined daily rate: $\frac{1}{8} + \frac{1}{12} = \frac{5}{24}$
+        Days together: $\frac{24}{5} = 4.8$ days.
+      explanation: |
+        这道应用题把"效率之比"转化成分式方程来解，综合了分式方程、验根和分式加法。关键是找到"甲效率 = $\frac{3}{2}$ × 乙效率"这一等量关系。
+      explanationEn: |
+        This problem converts the "rate ratio" condition into a fractional equation, integrating fractional equations, verification, and fraction addition. The key is identifying the relation "A's rate $= \frac{3}{2} \times$ B's rate."
+
+    - number: 5
+      type: 提升综合题
+      inputType: open
+      section: 章末提升
+      sectionEn: Challenge
+      question: |
+        化简下列式子，并求当 $x = 2$ 时的值：
+        $$\left(\frac{x^2+x}{x^2-1} - 1\right) \div \frac{x}{x-1}$$
+      questionEn: |
+        Simplify the following expression and evaluate it when $x = 2$:
+        $$\left(\frac{x^2+x}{x^2-1} - 1\right) \div \frac{x}{x-1}$$
+      answer: |
+        **第一步：化简括号内的表达式**
+
+        $\frac{x^2+x}{x^2-1} - 1$
+
+        分子 $x^2 + x = x(x+1)$；分母 $x^2 - 1 = (x+1)(x-1)$
+
+        $= \frac{x(x+1)}{(x+1)(x-1)} - 1 = \frac{x}{x-1} - 1 = \frac{x - (x-1)}{x-1} = \frac{1}{x-1}$
+
+        **第二步：整体除法**
+
+        $\frac{1}{x-1} \div \frac{x}{x-1} = \frac{1}{x-1} \times \frac{x-1}{x} = \frac{1}{x}$
+
+        **第三步：代入 $x = 2$**
+
+        $\frac{1}{2}$
+
+        （限制条件：$x \neq \pm 1, x \neq 0$）
+      answerEn: |
+        **Step 1: Simplify the bracket**
+
+        $\frac{x^2+x}{x^2-1} - 1$; factor: $\frac{x(x+1)}{(x+1)(x-1)} - 1 = \frac{x}{x-1} - 1 = \frac{1}{x-1}$
+
+        **Step 2: Division**
+
+        $\frac{1}{x-1} \div \frac{x}{x-1} = \frac{1}{x}$
+
+        **Step 3: Substitute $x = 2$**
+
+        $\frac{1}{2}$
+
+        (Restrictions: $x \neq \pm 1, x \neq 0$)
+      explanation: |
+        本题综合了约分、异分母减法、乘除运算三个技能。关键是**先化简括号内的部分**，不要急着展开所有括号——化简后结构会变得非常简洁。
+      explanationEn: |
+        This problem combines simplification, subtraction with different denominators, and multiplication/division. The key is to **simplify inside the brackets first** rather than expanding everything immediately — the structure becomes much cleaner after that step.

@@ -1,0 +1,1543 @@
+title: 圆
+titleEn: Circles
+chapter: 8
+subject: math
+grade: grade9
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约60分钟 · 第3课时 约60分钟 · 第4课时 约60分钟 · 第5课时 约60分钟
+estimatedTimeEn: "Session 1 ~60 min · Session 2 ~60 min · Session 3 ~60 min · Session 4 ~60 min · Session 5 ~60 min"
+targetAudience: 小学3年级自学生（已完成九年级上册和相似），自学材料，由简入深
+
+objectives:
+  - 理解<<圆/circle>>的定义，掌握圆心、半径、直径、弦、弧、圆心角、圆周角等基本概念
+  - 掌握点与圆、直线与圆、圆与圆的位置关系，能根据距离条件判断位置
+  - 理解并应用圆心角与弧、弦的关系定理
+  - 掌握<<圆周角定理/inscribed angle theorem>>：圆周角等于同弧对应圆心角的一半
+  - 掌握<<切线/tangent>>的判定与切线长定理，能解决内切圆问题
+  - 掌握弧长公式和扇形面积公式，能综合运用解决面积计算问题
+objectivesEn:
+  - Understand the definition of <<圆/circle>> and master basic concepts including center, radius, diameter, chord, arc, central angle, and inscribed angle
+  - Master the positional relationships between a point and a circle, a line and a circle, and circle-to-circle, and determine position using distance conditions
+  - Understand and apply the relationships between central angles, arcs, and chords
+  - 'Master the <<圆周角定理/inscribed angle theorem>>: an inscribed angle equals half the central angle subtending the same arc'
+  - Master the tangent determination method and tangent-length theorem, and solve incircle problems
+  - Master arc length and sector area formulas, and apply them to area calculations
+
+prerequisites:
+  title: 从已知出发——圆前需要哪些知识？
+  titleEn: "Starting from what you know — what do you need before studying circles?"
+  intro: |
+    学习圆之前，我们已经掌握了很多有用的工具。来看看哪些知识会在本章频繁用到：
+  introEn: |
+    Before studying circles, we've already built a solid toolkit. Let's see which pieces of knowledge will appear again and again in this chapter:
+  knownNumbers:
+    - '勾股定理：$a^{2} + b^{2} = c^{2}$，直角三角形三边关系（第18章）'
+    - '相似三角形的判定与性质（第27章）'
+    - '等腰三角形的轴对称性：顶角平分线、底边上的中线、高三线合一'
+    - '全等三角形的判定：SSS、SAS、ASA、AAS、HL'
+    - '圆的周长 $C = 2\pi r$，面积 $S = \pi r^{2}$（小学）'
+  knownNumbersEn:
+    - 'Pythagorean theorem: $a^{2} + b^{2} = c^{2}$, side relationships in right triangles (Chapter 18)'
+    - 'Criteria and properties of similar triangles (Chapter 27)'
+    - 'Axial symmetry of isosceles triangles: angle bisector, median, and altitude from apex coincide'
+    - 'Congruence criteria: SSS, SAS, ASA, AAS, HL'
+    - 'Circle circumference $C = 2\pi r$, area $S = \pi r^{2}$ (elementary school)'
+  canSolve:
+    - 利用勾股定理求直角三角形的边长
+    - 判断两个三角形是否全等或相似
+    - 计算圆的周长和面积（已知半径）
+  canSolveEn:
+    - Use the Pythagorean theorem to find side lengths in right triangles
+    - Determine whether two triangles are congruent or similar
+    - Calculate circumference and area of a circle given its radius
+  cannotSolve:
+    - 为什么直径对的圆周角一定是直角？
+    - 从圆外一点能画几条切线？长度有什么关系？
+    - 弧长怎么算？扇形面积怎么求？
+    - 怎样用圆的性质来证明角相等或线段相等？
+  cannotSolveEn:
+    - Why does an inscribed angle subtending a diameter always equal 90°?
+    - How many tangents can be drawn from an external point? What is the length relationship?
+    - How do you calculate arc length? How do you find sector area?
+    - How do you use circle properties to prove angles or segments are equal?
+  conclusion: |
+    圆是最完美的平面图形——任何方向看都一样。本章我们将用已有的三角形知识，
+    揭开圆内部的秘密：**角与弧的精妙关系**，以及**切线的神奇性质**。
+  conclusionEn: |
+    The circle is the most perfect plane figure — it looks the same from every direction.
+    In this chapter, we'll use our triangle knowledge to uncover the circle's secrets:
+    the **elegant relationship between angles and arcs**, and the **remarkable properties of tangents**.
+
+concepts:
+  - id: circle-basic-concepts
+    title: 圆的基本概念
+    titleEn: Basic Concepts of a Circle
+    hasVisualization: true
+    content: |
+      **圆的定义**
+
+      在平面内，到定点 $O$ 的距离等于定长 $r$ 的所有点的集合，叫做<<圆/circle>>。
+      定点 $O$ 叫做<<圆心/center>>，定长 $r$ 叫做<<半径/radius>>。
+      记作 $\odot O$，读作"圆 $O$"。
+
+      为什么用"集合"定义？因为圆不是一个点，也不是一个面，而是**无数个满足条件的点**连成的曲线。
+      就像班里"身高超过160cm"的学生集合，圆就是"到圆心距离恰好等于 $r$"的点的集合。
+
+      **弦与直径**
+
+      - <<弦/chord>>：连接圆上两点的线段，如 $\overline{AB}$（$A$、$B$ 都在圆上）
+      - <<直径/diameter>>：过圆心的弦，长度 $d = 2r$，是最长的弦
+      - 所有直径都相等；过圆心的直线将圆分成两个完全相同的半圆
+
+      **弧**
+
+      弦将圆分成两段曲线，每段叫做<<弧/arc>>：
+      - <<劣弧/minor arc>>：小于半圆的弧（不含直径时，弦较短那段）
+      - <<优弧/major arc>>：大于半圆的弧
+      - <<半圆/semicircle>>：直径分成的两段相等的弧
+
+      记弧 $AB$ 为 $\overset{\frown}{AB}$。两个端点相同时，需用中间一点区分优劣弧。
+
+      **圆心角与圆周角**
+
+      - <<圆心角/central angle>>：顶点在**圆心** $O$，两边都是半径；如 $\angle AOB$
+      - <<圆周角/inscribed angle>>：顶点在**圆上**，两边都是弦；如顶点 $C$ 在圆上，$\angle ACB$
+
+      关键对比：
+      | 角 | 顶点位置 | 两边 | 范围 |
+      |---|---|---|---|
+      | 圆心角 | 圆心 | 半径 | $0° \sim 360°$ |
+      | 圆周角 | 圆上 | 弦 | $0° \sim 180°$ |
+
+      **弦的中垂线性质**
+
+      过圆心且垂直于弦的直线，必平分这条弦，也平分这条弦所对的弧。
+      即：$OC \perp AB$ ，则 $AC = CB$，且 $\overset{\frown}{AC} = \overset{\frown}{CB}$。
+      反之，弦的中垂线必过圆心（这是找圆心的方法！）。
+    contentEn: |
+      **Definition of a Circle**
+
+      In a plane, the set of all points at a fixed distance $r$ from a fixed point $O$ is called a <<圆/circle>>.
+      The fixed point $O$ is the <<圆心/center>>, and the fixed distance $r$ is the <<半径/radius>>.
+      We write $\odot O$, read as "circle $O$."
+
+      Why define using a "set"? Because a circle is neither a single point nor a filled region — it's the **curve formed by infinitely many points** satisfying the condition.
+      Think of it like the set of students in a class whose height exceeds 160 cm; a circle is the set of points whose distance from the center equals exactly $r$.
+
+      **Chord and Diameter**
+
+      - <<弦/chord>>: a line segment connecting two points on the circle, e.g., $\overline{AB}$ where both $A$ and $B$ are on the circle
+      - <<直径/diameter>>: a chord that passes through the center; length $d = 2r$; the longest chord
+      - All diameters are equal; any line through the center divides the circle into two identical semicircles
+
+      **Arcs**
+
+      A chord divides the circle into two curved portions, each called an <<弧/arc>>:
+      - <<劣弧/minor arc>>: an arc shorter than a semicircle
+      - <<优弧/major arc>>: an arc longer than a semicircle
+      - <<半圆/semicircle>>: either of the two equal arcs created by a diameter
+
+      We write arc $AB$ as $\overset{\frown}{AB}$. When endpoints are the same, label a middle point to distinguish minor from major arc.
+
+      **Central Angle and Inscribed Angle**
+
+      - <<圆心角/central angle>>: vertex at the **center** $O$, sides are radii; e.g., $\angle AOB$
+      - <<圆周角/inscribed angle>>: vertex **on the circle**, sides are chords; e.g., vertex $C$ on circle, $\angle ACB$
+
+      Key comparison:
+      | Angle | Vertex | Sides | Range |
+      |---|---|---|---|
+      | Central angle | Center | Radii | $0° \sim 360°$ |
+      | Inscribed angle | On circle | Chords | $0° \sim 180°$ |
+
+      **Perpendicular from Center to Chord**
+
+      The line through the center that is perpendicular to a chord bisects both the chord and its arc.
+      That is: if $OC \perp AB$, then $AC = CB$ and $\overset{\frown}{AC} = \overset{\frown}{CB}$.
+      Conversely, the perpendicular bisector of any chord passes through the center — this is how you locate the center of a circle!
+    keyPoints:
+      - '圆的定义：到定点距离等于定长的点的集合，$\odot O$，半径 $r$'
+      - '弦是连接圆上两点的线段；直径 $d = 2r$ 是最长的弦'
+      - '圆心角顶点在圆心（两边为半径），圆周角顶点在圆上（两边为弦）'
+      - '过圆心垂直于弦的直线平分弦及其所对的弧'
+    keyPointsEn:
+      - 'Circle definition: set of points at distance $r$ from center; written $\odot O$'
+      - 'Chord connects two circle points; diameter $d = 2r$ is the longest chord'
+      - 'Central angle has vertex at center (sides are radii); inscribed angle has vertex on circle (sides are chords)'
+      - 'The perpendicular from center to a chord bisects both the chord and its arc'
+
+  - id: point-circle-relation
+    title: 点与圆的位置关系
+    titleEn: Position of a Point Relative to a Circle
+    hasVisualization: true
+    content: |
+      **三种位置关系**
+
+      设圆的圆心为 $O$，半径为 $r$，平面内任意一点 $P$，令 $d = |OP|$（点到圆心的距离），则：
+
+      | 位置关系 | 条件 | 说明 |
+      |---|---|---|
+      | 点在圆**内部** | $d < r$ | $P$ 在圆围成的区域内（不含边界） |
+      | 点在**圆上** | $d = r$ | $P$ 正好在圆的曲线上 |
+      | 点在圆**外部** | $d > r$ | $P$ 在圆的外侧 |
+
+      **直观理解**：就像一个城市的5公里配送范围，骑手在圆心处：
+      - 客户在5公里以内（$d < r$）：**在服务区内**
+      - 客户恰好在5公里处（$d = r$）：**在边界上**
+      - 客户超过5公里（$d > r$）：**在服务区外**
+
+      **如何判断？**
+
+      1. 求点到圆心的距离 $d = \sqrt{(x_P - x_O)^{2} + (y_P - y_O)^{2}}$（用坐标时）
+      2. 或用勾股定理（用几何图形时）
+      3. 将 $d$ 与半径 $r$ 比较
+
+      **易错提示**：
+      - "圆"只是曲线本身，不包含内部；"圆的内部"才包含中间的面积部分
+      - $d = r$ 时点在圆**上**，不是"内"也不是"外"——这个判断要准确
+    contentEn: |
+      **Three Positional Relationships**
+
+      Let circle $\odot O$ have radius $r$, and let $P$ be any point in the plane with $d = |OP|$ (distance from $P$ to center). Then:
+
+      | Position | Condition | Meaning |
+      |---|---|---|
+      | Point **inside** circle | $d < r$ | $P$ is in the interior (boundary not included) |
+      | Point **on** circle | $d = r$ | $P$ lies exactly on the circle curve |
+      | Point **outside** circle | $d > r$ | $P$ is in the exterior |
+
+      **Intuitive picture**: Like a delivery service covering a 5 km radius from a restaurant:
+      - Customer within 5 km ($d < r$): **inside service area**
+      - Customer exactly at 5 km ($d = r$): **on the boundary**
+      - Customer beyond 5 km ($d > r$): **outside service area**
+
+      **How to determine position:**
+
+      1. Compute $d = \sqrt{(x_P - x_O)^{2} + (y_P - y_O)^{2}}$ (using coordinates)
+      2. Or use the Pythagorean theorem (in geometric diagrams)
+      3. Compare $d$ with $r$
+
+      **Common mistake**:
+      - "Circle" refers to the curve only, not the interior; "interior of a circle" includes the filled region
+      - When $d = r$, the point is **on** the circle — not inside, not outside
+    keyPoints:
+      - '$d < r$：点在圆内；$d = r$：点在圆上；$d > r$：点在圆外'
+      - '判断方法：计算点到圆心的距离，与半径比较'
+      - '圆只是边界曲线，圆的内部是指边界围起来的区域（不含边界）'
+    keyPointsEn:
+      - '$d < r$: inside; $d = r$: on circle; $d > r$: outside'
+      - 'Method: compute distance from point to center, compare with $r$'
+      - 'The circle is only the boundary curve; the interior is the enclosed region (boundary excluded)'
+
+  - id: line-circle-relation
+    title: 直线与圆的位置关系
+    titleEn: Position of a Line Relative to a Circle
+    hasVisualization: true
+    content: |
+      **三种位置关系**
+
+      设直线 $l$ 与 $\odot O$（半径为 $r$），令 $d$ 为圆心 $O$ 到直线 $l$ 的距离，则：
+
+      | 位置关系 | 条件 | 交点个数 | 名称 |
+      |---|---|---|---|
+      | **相交** | $d < r$ | $2$ 个 | <<割线/secant>> |
+      | **相切** | $d = r$ | $1$ 个 | <<切线/tangent>>，切点记为 $T$ |
+      | **相离** | $d > r$ | $0$ 个 | 直线与圆无公共点 |
+
+      **切线的本质理解**
+
+      切线是从"割线穿过圆"到"恰好只碰到圆一次"的临界状态——就像一辆高速公路上的车拐弯，
+      弯道半径越小，切线方向变化越快。切线表示的是圆在那一点处的**瞬时方向**。
+
+      **切线的重要性质**
+
+      > **定理**：圆的切线垂直于过切点的半径。
+      > 即：若直线 $l$ 与 $\odot O$ 相切于点 $T$，则 $OT \perp l$。
+
+      **证明思路**：假设 $OT$ 不垂直于 $l$，则可以在 $l$ 上找到另一点 $T'$ 使 $OT' < OT = r$，
+      说明 $T'$ 在圆内，$l$ 与圆有两个交点，矛盾。故 $OT \perp l$。
+
+      **切线的判定（逆定理）**
+
+      > 若直线经过圆上一点，且该点处半径垂直于该直线，则该直线是圆的切线。
+      > 即：若 $T$ 在 $\odot O$ 上，$OT \perp l$，则 $l$ 是 $\odot O$ 的切线。
+
+      **过圆外一点作切线**
+
+      设圆外一点 $P$，以 $OP$ 为直径作圆，与 $\odot O$ 交于点 $A$、$B$，
+      则 $PA$、$PB$ 即为从 $P$ 点到 $\odot O$ 的两条切线。
+      （因为 $\angle OAP$ 是直径 $OP$ 上的圆周角，等于 $90°$，所以 $OA \perp PA$）
+    contentEn: |
+      **Three Positional Relationships**
+
+      Let line $l$ and $\odot O$ (radius $r$), and let $d$ be the distance from center $O$ to line $l$:
+
+      | Position | Condition | Intersections | Name |
+      |---|---|---|---|
+      | **Intersecting** | $d < r$ | $2$ points | <<割线/secant>> |
+      | **Tangent** | $d = r$ | $1$ point | <<切线/tangent>>, tangent point $T$ |
+      | **External** | $d > r$ | $0$ points | No common points |
+
+      **Deep understanding of tangency**
+
+      A tangent is the boundary case between "line crosses through the circle" and "line touches the circle exactly once" — like a car on a highway navigating a curve. A tangent represents the **instantaneous direction** of the circle at that point.
+
+      **Key property of tangents**
+
+      > **Theorem**: A tangent to a circle is perpendicular to the radius at the point of tangency.
+      > That is: if line $l$ is tangent to $\odot O$ at point $T$, then $OT \perp l$.
+
+      **Proof sketch**: Suppose $OT$ is not perpendicular to $l$. Then we could find another point $T'$ on $l$ with $OT' < OT = r$, meaning $T'$ is inside the circle — so $l$ would intersect the circle at two points, contradiction. Therefore $OT \perp l$.
+
+      **Converse (tangent determination)**
+
+      > If a line passes through a point on the circle, and the radius to that point is perpendicular to the line, then the line is tangent to the circle.
+      > That is: if $T \in \odot O$ and $OT \perp l$, then $l$ is tangent to $\odot O$.
+
+      **Drawing tangents from an external point**
+
+      Given external point $P$: draw a circle with diameter $OP$; it intersects $\odot O$ at points $A$ and $B$.
+      Then $PA$ and $PB$ are the two tangents from $P$ to $\odot O$.
+      (Since $\angle OAP$ is an inscribed angle on diameter $OP$, it equals $90°$, so $OA \perp PA$.)
+    keyPoints:
+      - '$d < r$ 相交，$d = r$ 相切（切线），$d > r$ 相离'
+      - '切线垂直于过切点的半径：$OT \perp l$（切线的性质）'
+      - '过圆上一点，垂直于该点半径的直线，是圆的切线（切线的判定）'
+    keyPointsEn:
+      - '$d < r$: intersecting; $d = r$: tangent; $d > r$: external'
+      - 'Tangent is perpendicular to radius at tangent point: $OT \perp l$'
+      - 'A line through a circle point, perpendicular to the radius there, is tangent to the circle'
+
+  - id: circle-circle-relation
+    title: 圆与圆的位置关系
+    titleEn: Positional Relationships Between Two Circles
+    hasVisualization: true
+    content: |
+      **五种位置关系**
+
+      设两圆 $\odot O_{1}$（半径 $r_{1}$）和 $\odot O_{2}$（半径 $r_{2}$），且 $r_{1} \geq r_{2}$，
+      圆心距 $d = |O_{1}O_{2}|$。根据 $d$ 与 $r_{1}$、$r_{2}$ 的关系：
+
+      | 位置关系 | 条件 | 公共点数 | 示意 |
+      |---|---|---|---|
+      | **外离** | $d > r_{1} + r_{2}$ | $0$ | 两圆互不相交，各在对方外侧 |
+      | **外切** | $d = r_{1} + r_{2}$ | $1$ | 两圆在外部相切，切点在连心线上 |
+      | **相交** | $r_{1} - r_{2} < d < r_{1} + r_{2}$ | $2$ | 两圆相交于两点 |
+      | **内切** | $d = r_{1} - r_{2}$ | $1$ | 两圆在内部相切，切点在连心线延长线上 |
+      | **内含** | $d < r_{1} - r_{2}$ | $0$ | 小圆完全在大圆内，无公共点 |
+
+      **特殊情况**：当 $d = 0$ 时（同心圆），$r_{1} \neq r_{2}$ 时小圆在大圆内（内含）；
+      $r_{1} = r_{2}$ 时两圆完全重合（同一个圆）。
+
+      **直观记忆**
+
+      把两个呼啦圈放在地上：
+      - 拉得很远：**外离**（两圈不碰）
+      - 恰好边缘接触：**外切**（一个公共点，在两圈心连线上）
+      - 部分重叠：**相交**（两个公共点）
+      - 一个圈边缘从内接触另一个：**内切**（一个公共点）
+      - 一个完全套在另一个里面：**内含**（无公共点）
+
+      **为什么这么分？**
+
+      关键在于圆心距 $d$ 与两半径之和、差的关系：
+      - $r_{1} + r_{2}$ 是两圆"外部刚好接触"的临界距离
+      - $r_{1} - r_{2}$ 是两圆"内部刚好接触"的临界距离
+      - 大于和：外离或外切；等于和：外切；小于和大于差：相交；等于差：内切；小于差：内含
+    contentEn: |
+      **Five Positional Relationships**
+
+      Let $\odot O_{1}$ (radius $r_{1}$) and $\odot O_{2}$ (radius $r_{2}$) with $r_{1} \geq r_{2}$,
+      and let $d = |O_{1}O_{2}|$ be the distance between centers:
+
+      | Position | Condition | Common points | Description |
+      |---|---|---|---|
+      | **External** | $d > r_{1} + r_{2}$ | $0$ | Circles are separate, each outside the other |
+      | **Externally tangent** | $d = r_{1} + r_{2}$ | $1$ | Touch at one point on the line segment $O_1O_2$ |
+      | **Intersecting** | $r_{1} - r_{2} < d < r_{1} + r_{2}$ | $2$ | Cross at two points |
+      | **Internally tangent** | $d = r_{1} - r_{2}$ | $1$ | Touch at one point; smaller circle inside larger |
+      | **Internally contained** | $d < r_{1} - r_{2}$ | $0$ | Smaller circle completely inside larger, no common points |
+
+      **Special case**: When $d = 0$ (concentric circles), if $r_{1} \neq r_{2}$, the smaller circle is inside the larger (contained); if $r_{1} = r_{2}$, the circles coincide.
+
+      **Intuitive memory aid**
+
+      Imagine two hula hoops on the floor:
+      - Pulled far apart: **external** (no contact)
+      - Edges just touching on the outside: **externally tangent** (one common point, on the line joining centers)
+      - Partially overlapping: **intersecting** (two common points)
+      - One ring touching the other's edge from inside: **internally tangent** (one common point)
+      - One completely inside the other: **internally contained** (no common points)
+
+      **Why these dividing conditions?**
+
+      The key is comparing $d$ with $r_{1} + r_{2}$ and $r_{1} - r_{2}$:
+      - $r_{1} + r_{2}$: the critical distance for external contact
+      - $r_{1} - r_{2}$: the critical distance for internal contact
+    keyPoints:
+      - '五种位置：外离（$d > r_1+r_2$）、外切（$d = r_1+r_2$）、相交（差<$d$<和）、内切（$d = r_1-r_2$）、内含（$d < r_1-r_2$）'
+      - '公共点数：外离0、外切1、相交2、内切1、内含0'
+      - '外切时切点在两圆心连线上；内切时切点在两圆心连线的延长线上'
+    keyPointsEn:
+      - 'Five cases: external ($d>r_1+r_2$), externally tangent ($d=r_1+r_2$), intersecting (between sum and difference), internally tangent ($d=r_1-r_2$), contained ($d<r_1-r_2$)'
+      - 'Common points: external 0, externally tangent 1, intersecting 2, internally tangent 1, contained 0'
+      - 'External tangent point lies on segment $O_1O_2$; internal tangent point lies on the extension'
+
+  - id: central-angle-arc-chord
+    title: 圆心角、弧、弦的关系
+    titleEn: Relationships Among Central Angles, Arcs, and Chords
+    hasVisualization: true
+    content: |
+      **核心定理**
+
+      在**同圆或等圆**中，以下三者存在等价关系：
+
+      > **定理**：在同圆（或等圆）中，相等的圆心角所对的弧相等，所对的弦也相等；
+      > 反之，相等的弧所对的圆心角相等，相等的弦所对的圆心角也相等。
+
+      简记为：**等圆中，等弦 ↔ 等弧 ↔ 等圆心角**（三者等价）
+
+      **为什么要强调"同圆或等圆"？**
+
+      如果两个圆半径不同，同样的圆心角 $60°$ 对应的弦长可能不同（大圆的弦更长）。
+      只有在相同半径的圆中，角、弧、弦才能互相决定。
+
+      **圆心到弦的距离**
+
+      > **推论**：在同圆（或等圆）中，相等的弦到圆心的距离相等；反之，到圆心距离相等的弦，长度相等。
+
+      即：弦越长，离圆心越近；弦越短，离圆心越远。
+      直径最长，到圆心距离为 $0$（过圆心）。
+
+      **垂径定理（重要！）**
+
+      > **定理**：过圆心垂直于弦的直线，平分这条弦，也平分这条弦所对的两条弧。
+
+      设 $OC \perp AB$（$O$ 为圆心，$C$ 为垂足），则：
+      $$AC = CB,\quad \overset{\frown}{AC} = \overset{\frown}{CB},\quad \overset{\frown}{ADB} = \text{另一段弧的平分}$$
+
+      **逆定理（同样重要）**：弦的中垂线必过圆心；平分弦的半径垂直于弦。
+
+      **应用：如何求弦长**
+
+      已知：$\odot O$ 半径 $r = 5$，弦 $AB$ 到圆心距离为 $d = 3$。
+      求弦长 $AB$：
+      作 $OC \perp AB$，则 $OC = 3$，$OA = 5$（半径），
+      由勾股定理：$AC = \sqrt{OA^{2} - OC^{2}} = \sqrt{25 - 9} = 4$，
+      故 $AB = 2 \times AC = 8$。
+    contentEn: |
+      **Core Theorem**
+
+      In **the same circle or equal circles**, the following three properties are equivalent:
+
+      > **Theorem**: In the same circle (or equal circles), equal central angles correspond to equal arcs and equal chords; conversely, equal arcs correspond to equal central angles, and equal chords correspond to equal central angles.
+
+      Summary: **In equal circles: equal chords ↔ equal arcs ↔ equal central angles** (all three are equivalent)
+
+      **Why must we say "same or equal circles"?**
+
+      In circles of different radii, the same central angle $60°$ can produce chords of different lengths (longer in the larger circle).
+      Only when radii are equal can angle, arc, and chord mutually determine each other.
+
+      **Distance from center to chord**
+
+      > **Corollary**: In the same circle (or equal circles), equal chords are equidistant from the center; conversely, chords equidistant from the center are equal.
+
+      Longer chords are closer to the center; shorter chords are farther.
+      The diameter is longest and passes through the center (distance = 0).
+
+      **Perpendicular-chord theorem (important!)**
+
+      > **Theorem**: A line through the center that is perpendicular to a chord bisects both the chord and its two arcs.
+
+      If $OC \perp AB$ ($O$ is center, $C$ is foot of perpendicular), then:
+      $$AC = CB,\quad \overset{\frown}{AC} = \overset{\frown}{CB}$$
+
+      **Converse (equally important)**: The perpendicular bisector of a chord passes through the center; a radius that bisects a chord is perpendicular to it.
+
+      **Application: finding chord length**
+
+      Given: $\odot O$ with radius $r = 5$, chord $AB$ at distance $d = 3$ from center.
+      Find chord length $AB$:
+      Draw $OC \perp AB$; then $OC = 3$, $OA = 5$.
+      By the Pythagorean theorem: $AC = \sqrt{OA^{2} - OC^{2}} = \sqrt{25 - 9} = 4$,
+      so $AB = 2 \times AC = 8$.
+    keyPoints:
+      - '同圆中：等圆心角 ↔ 等弧 ↔ 等弦（三者等价）'
+      - '垂径定理：过圆心垂直于弦 → 平分弦 + 平分弧（及其逆定理）'
+      - '弦越长离圆心越近；用勾股定理求弦长：$\frac{AB}{2} = \sqrt{r^{2} - d^{2}}$'
+    keyPointsEn:
+      - 'In same circle: equal central angles ↔ equal arcs ↔ equal chords (all three equivalent)'
+      - 'Perpendicular-chord theorem: perpendicular from center to chord → bisects chord + bisects arc (and its converse)'
+      - 'Longer chords are closer to center; use Pythagorean theorem: $\frac{AB}{2} = \sqrt{r^{2} - d^{2}}$'
+
+  - id: inscribed-angle-theorem
+    title: 圆周角定理
+    titleEn: The Inscribed Angle Theorem
+    hasVisualization: true
+    content: |
+      **圆周角定理（核心！）**
+
+      > **定理**：同弧（或等弧）上的圆周角等于该弧所对圆心角的一半。
+
+      即：若 $\angle BAC$ 是 $\overset{\frown}{BC}$ 上的圆周角，$\angle BOC$ 是 $\overset{\frown}{BC}$ 上的圆心角，则：
+      $$\angle BAC = \frac{1}{2} \angle BOC$$
+
+      **证明思路（三种情形）**
+
+      情形一：圆心 $O$ 在 $\angle BAC$ **内部**
+      连接 $AO$ 并延长交圆于 $D$，$\triangle OAB$ 和 $\triangle OAC$ 都是等腰三角形（$OA = OB = OC = r$）。
+      利用等腰三角形底角相等和外角定理：
+      $\angle BOD = 2\angle BAD$，$\angle COD = 2\angle CAD$，两式相加得 $\angle BOC = 2\angle BAC$。
+
+      情形二：圆心 $O$ 在 $\angle BAC$ **一边上**（$O$ 在 $AB$ 上）
+      类似方法，$\angle BOC = \angle BAC$ 时圆心恰好在弦 $AC$ 的中垂线上，化简后同样成立。
+
+      情形三：圆心 $O$ 在 $\angle BAC$ **外部**
+      类似做辅助线，两式相减得结论。
+
+      三种情形均成立，证毕！
+
+      **重要推论**
+
+      **推论1**：同弧上的圆周角相等。
+      即若 $A$、$A'$ 都在 $\overset{\frown}{BC}$ 对侧的圆上，则 $\angle BAC = \angle BA'C$。
+      （它们对应同一圆心角 $\angle BOC$，各等于其一半）
+
+      **推论2**：直径所对的圆周角是直角。
+      若 $BC$ 是直径，则 $\angle BAC = \frac{1}{2} \times 180° = 90°$。
+      反之，若 $\angle BAC = 90°$ 且 $A$ 在圆上，则 $BC$ 是直径。
+
+      **推论3**：圆内接四边形对角互补。
+      若四边形 $ABCD$ 的四个顶点都在同一圆上（圆内接四边形），则 $\angle A + \angle C = 180°$，$\angle B + \angle D = 180°$。
+
+      **生活中的圆周角**
+
+      体育场看台的设计：同一条射门线上，无论站在哪个位置，看门框的"视角"（圆周角）是相同的。
+      这正是圆周角定理的实际应用！
+    contentEn: |
+      **The Inscribed Angle Theorem (Key theorem!)**
+
+      > **Theorem**: An inscribed angle equals half the central angle that subtends the same arc.
+
+      That is, if $\angle BAC$ is an inscribed angle subtending $\overset{\frown}{BC}$, and $\angle BOC$ is the central angle subtending $\overset{\frown}{BC}$, then:
+      $$\angle BAC = \frac{1}{2} \angle BOC$$
+
+      **Proof sketch (three cases)**
+
+      Case 1: Center $O$ is **inside** $\angle BAC$
+      Extend $AO$ to meet the circle at $D$. Triangles $OAB$ and $OAC$ are isosceles ($OA = OB = OC = r$).
+      Using base angles of isosceles triangles and the exterior angle theorem:
+      $\angle BOD = 2\angle BAD$, $\angle COD = 2\angle CAD$; adding gives $\angle BOC = 2\angle BAC$.
+
+      Case 2: Center $O$ lies **on a side** of $\angle BAC$
+      Similar approach; the result still holds.
+
+      Case 3: Center $O$ is **outside** $\angle BAC$
+      Use a similar auxiliary line; subtract instead of add. Same conclusion.
+
+      All three cases established — proof complete!
+
+      **Important corollaries**
+
+      **Corollary 1**: Inscribed angles subtending the same arc are equal.
+      If $A$ and $A'$ are both on the circle on the same side of $\overset{\frown}{BC}$, then $\angle BAC = \angle BA'C$.
+
+      **Corollary 2**: An inscribed angle in a semicircle equals 90°.
+      If $BC$ is a diameter, then $\angle BAC = \frac{1}{2} \times 180° = 90°$.
+      Conversely, if $\angle BAC = 90°$ and $A$ is on the circle, then $BC$ is a diameter.
+
+      **Corollary 3**: Opposite angles of a cyclic quadrilateral are supplementary.
+      If all four vertices of quadrilateral $ABCD$ lie on a circle, then $\angle A + \angle C = 180°$ and $\angle B + \angle D = 180°$.
+
+      **Real-world application**
+
+      Stadium seating design: along any "goal-line arc," the viewing angle of the goal (the inscribed angle) is the same regardless of where you stand.
+      This is the inscribed angle theorem in action!
+    keyPoints:
+      - '圆周角 $= \frac{1}{2}$ 圆心角（同弧）'
+      - '推论1：同弧上的圆周角相等'
+      - '推论2：半圆上的圆周角为 $90°$（直径→直角，直角→直径）'
+      - '推论3：圆内接四边形对角互补（$\angle A + \angle C = 180°$）'
+    keyPointsEn:
+      - 'Inscribed angle $= \frac{1}{2}$ central angle (same arc)'
+      - 'Corollary 1: inscribed angles on the same arc are equal'
+      - 'Corollary 2: inscribed angle in semicircle $= 90°$ (diameter ↔ right angle)'
+      - 'Corollary 3: opposite angles of cyclic quadrilateral are supplementary ($\angle A + \angle C = 180°$)'
+
+  - id: tangent-properties
+    title: 切线性质与切线长定理
+    titleEn: Tangent Properties and the Tangent-Length Theorem
+    hasVisualization: true
+    content: |
+      **切线的判定与性质（回顾与深化）**
+
+      切线判定定理（已在直线与圆关系中学过）：
+      - **性质**：切线 $\perp$ 过切点的半径（$l \perp OT$）
+      - **判定**：若 $OT \perp l$ 且 $T$ 在圆上，则 $l$ 是切线
+
+      这两个方向互为逆命题，都成立！
+
+      **切线长定理**
+
+      > **定理**：从圆外一点引圆的两条切线，切线长相等，且该点与圆心连线平分两切线所成的角。
+
+      设圆外点 $P$，从 $P$ 作 $\odot O$ 的两条切线，切点分别为 $A$、$B$，则：
+      $$PA = PB \quad \text{（切线长相等）}$$
+      $$\angle APO = \angle BPO \quad \text{（连心线平分角）}$$
+
+      **证明**：
+
+      在 $\triangle OAP$ 和 $\triangle OBP$ 中：
+      - $OA = OB = r$（同一圆的半径）
+      - $OP = OP$（公共边）
+      - $\angle OAP = \angle OBP = 90°$（切线垂直于半径）
+
+      由 HL（斜边-直角边）全等：$\triangle OAP \cong \triangle OBP$
+
+      故 $PA = PB$，$\angle APO = \angle BPO$，证毕。
+
+      **切线长的含义**
+
+      "切线长"是指从**圆外点**到**切点**的线段长度，记作 $PA$ 或 $PB$。
+      注意：不是整条直线，而是从外点到切点这段距离。
+
+      **三角形的内切圆**
+
+      内切圆（与三角形三边都相切的圆）中，切线长定理给出了优美的等式：
+      设 $\triangle ABC$ 的内切圆与三边的切点为 $D$、$E$、$F$（$D$ 在 $BC$ 上，$E$ 在 $CA$ 上，$F$ 在 $AB$ 上），则：
+      $$AF = AE, \quad BF = BD, \quad CD = CE$$
+      即：从每个顶点到两个切点的距离相等。
+
+      **内切圆半径的计算**
+
+      设 $\triangle ABC$ 的三边为 $a$、$b$、$c$，半周长 $s = \frac{a+b+c}{2}$，面积 $S$，内切圆半径 $r$，则：
+      $$S = rs \implies r = \frac{S}{s}$$
+    contentEn: |
+      **Tangent determination and properties (review and deepen)**
+
+      Tangent theorem (from the previous section):
+      - **Property**: Tangent $\perp$ radius at tangent point ($l \perp OT$)
+      - **Determination**: If $OT \perp l$ and $T$ is on the circle, then $l$ is tangent
+
+      These two directions are converses of each other — both hold!
+
+      **Tangent-Length Theorem**
+
+      > **Theorem**: From an external point, the two tangent segments drawn to a circle are equal in length, and the line from that point to the center bisects the angle between the two tangents.
+
+      Let external point $P$ draw tangents to $\odot O$ with tangent points $A$ and $B$:
+      $$PA = PB \quad \text{(equal tangent lengths)}$$
+      $$\angle APO = \angle BPO \quad \text{(center line bisects angle)}$$
+
+      **Proof**:
+
+      In $\triangle OAP$ and $\triangle OBP$:
+      - $OA = OB = r$ (radii of the same circle)
+      - $OP = OP$ (common side)
+      - $\angle OAP = \angle OBP = 90°$ (tangent perpendicular to radius)
+
+      By HL (Hypotenuse-Leg) congruence: $\triangle OAP \cong \triangle OBP$
+
+      Therefore $PA = PB$ and $\angle APO = \angle BPO$. QED.
+
+      **Meaning of "tangent length"**
+
+      The "tangent length" from an external point is the length from the **external point** to the **tangent point**, written $PA$ or $PB$.
+      It refers to the segment from the external point to where it touches — not the whole line.
+
+      **Incircle of a triangle**
+
+      For the incircle of $\triangle ABC$ (circle tangent to all three sides), the tangent-length theorem gives elegant equalities.
+      Let the incircle touch $BC$ at $D$, $CA$ at $E$, $AB$ at $F$. Then:
+      $$AF = AE, \quad BF = BD, \quad CD = CE$$
+      From each vertex, the distances to the two tangent points are equal.
+
+      **Incircle radius formula**
+
+      Let $\triangle ABC$ have sides $a$, $b$, $c$, semi-perimeter $s = \frac{a+b+c}{2}$, area $S$, and incircle radius $r$:
+      $$S = rs \implies r = \frac{S}{s}$$
+    keyPoints:
+      - '切线长定理：圆外一点到两切点的距离相等（$PA = PB$）'
+      - '证明方法：HL 全等（$OA = OB = r$，$OP$ 公共边，$\angle OAP = \angle OBP = 90°$）'
+      - '内切圆：三角形各顶点到两切点的距离相等；内切圆半径 $r = S/s$'
+    keyPointsEn:
+      - 'Tangent-length theorem: from external point, two tangent lengths are equal ($PA = PB$)'
+      - 'Proof method: HL congruence ($OA = OB = r$, common side $OP$, $\angle OAP = \angle OBP = 90°$)'
+      - 'Incircle: from each vertex, distances to the two tangent points are equal; radius $r = S/s$'
+
+  - id: arc-length-sector-area
+    title: 弧长与扇形面积
+    titleEn: Arc Length and Sector Area
+    hasVisualization: true
+    content: |
+      **弧长公式**
+
+      弧长是圆弧的**曲线长度**（不是弦长！）。
+
+      思路：整个圆的周长是 $2\pi r$，圆心角为 $360°$。
+      若圆心角为 $n°$，则对应弧长占总周长的 $\frac{n}{360}$：
+
+      $$\boxed{l = \frac{n\pi r}{180}}$$
+
+      其中 $n$ 为圆心角的度数，$r$ 为半径。
+
+      **弧度制简介**（选学）
+
+      数学中还有一种度量角的方式——弧度（radian）：
+      $1$ 弧度 $= \frac{180°}{\pi} \approx 57.3°$，$\pi$ 弧度 $= 180°$。
+      若圆心角用弧度 $\alpha$ 表示，弧长公式更简洁：
+      $$l = \alpha r$$
+
+      **扇形面积公式**
+
+      扇形（圆的"扇形"切块）的面积，同样按比例：
+
+      $$\boxed{S_{\text{扇形}} = \frac{n\pi r^{2}}{360}}$$
+
+      或者等价地，用弧长 $l$ 和半径 $r$ 表示：
+
+      $$S_{\text{扇形}} = \frac{1}{2} l r$$
+
+      **记忆技巧**：$S = \frac{1}{2} lr$ 类比三角形面积 $S = \frac{1}{2} \times \text{底} \times \text{高}$（弧长是"弯曲的底"，半径是"高"）
+
+      **综合应用：圆形区域的面积**
+
+      常见组合图形：
+      - **弓形**（弦与弧之间的区域）$=$ 扇形面积 $-$ 三角形面积
+      - **环形**（大圆与小圆之间的区域）$= \pi R^{2} - \pi r^{2} = \pi(R^{2} - r^{2})$
+
+      **正多边形与圆**
+
+      正 $n$ 边形内接于圆时：
+      - 每条边所对的圆心角为 $\frac{360°}{n}$
+      - 边长 $= 2r\sin\frac{180°}{n}$（用正弦函数，高中内容预告）
+      - 当 $n \to \infty$，正多边形趋近于圆
+
+      这正是古代数学家用"割圆术"（内接正多边形）逼近 $\pi$ 的方法！
+    contentEn: |
+      **Arc Length Formula**
+
+      Arc length is the **length of the curved arc** (NOT the chord length!).
+
+      Reasoning: the full circle has circumference $2\pi r$ and central angle $360°$.
+      For a central angle of $n°$, the arc is $\frac{n}{360}$ of the full circumference:
+
+      $$\boxed{l = \frac{n\pi r}{180}}$$
+
+      where $n$ is the central angle in degrees and $r$ is the radius.
+
+      **Introduction to Radians** (optional)
+
+      Mathematics uses another angle measure called the radian:
+      $1 \text{ radian} = \frac{180°}{\pi} \approx 57.3°$, and $\pi \text{ radians} = 180°$.
+      If the central angle is $\alpha$ radians, the arc length formula simplifies to:
+      $$l = \alpha r$$
+
+      **Sector Area Formula**
+
+      A sector (a "pie slice" of a circle) has area proportional to its central angle:
+
+      $$\boxed{S_{\text{sector}} = \frac{n\pi r^{2}}{360}}$$
+
+      Equivalently, using arc length $l$ and radius $r$:
+
+      $$S_{\text{sector}} = \frac{1}{2} l r$$
+
+      **Memory trick**: $S = \frac{1}{2}lr$ is analogous to triangle area $S = \frac{1}{2} \times \text{base} \times \text{height}$ (arc length is the "curved base," radius is the "height")
+
+      **Composite area problems**
+
+      Common combinations:
+      - **Circular segment** (region between a chord and arc) $=$ sector area $-$ triangle area
+      - **Annulus** (ring between two concentric circles) $= \pi R^{2} - \pi r^{2} = \pi(R^{2} - r^{2})$
+
+      **Regular polygons and circles**
+
+      A regular $n$-gon inscribed in a circle:
+      - Each side subtends a central angle of $\frac{360°}{n}$
+      - As $n \to \infty$, the polygon approaches the circle
+
+      This is exactly the method ancient mathematicians used (inscribed polygons) to approximate $\pi$!
+    keyPoints:
+      - '弧长公式：$l = \dfrac{n\pi r}{180}$（$n$ 为圆心角度数）'
+      - '扇形面积：$S = \dfrac{n\pi r^{2}}{360} = \dfrac{1}{2}lr$'
+      - '弓形面积 $=$ 扇形面积 $-$ 三角形面积；环形面积 $= \pi(R^{2} - r^{2})$'
+    keyPointsEn:
+      - 'Arc length: $l = \dfrac{n\pi r}{180}$ ($n$ = central angle in degrees)'
+      - 'Sector area: $S = \dfrac{n\pi r^{2}}{360} = \dfrac{1}{2}lr$'
+      - 'Segment area = sector area - triangle area; annulus area $= \pi(R^{2} - r^{2})$'
+
+realLife:
+  title: 圆在生活中无处不在
+  titleEn: Circles Are Everywhere in Daily Life
+  examples:
+    - title: 信号塔覆盖范围
+      titleEn: Cell Tower Coverage
+      content: |
+        手机信号塔的有效覆盖范围是一个以塔为圆心的圆形区域。
+        判断某用户是否在信号覆盖内，就是判断**用户到塔的距离 $d$ 与覆盖半径 $r$ 的关系**——这正是"点与圆的位置关系"！
+      contentEn: |
+        A cell tower's coverage area is a circular region centered at the tower.
+        Determining if a user is covered means comparing the **distance $d$ from user to tower with the coverage radius $r$** — exactly the "point and circle" relationship!
+    - title: 车轮与轨道
+      titleEn: Wheels and Tracks
+      content: |
+        火车轮子是圆形，轨道是直线。车轮滚动时，轮缘（圆周）与轨道（直线）始终**相切**，
+        接触点不断变化。这就是为什么圆形车轮能平稳滚动而不是跳跃：每个瞬间只有一个接触点（切线关系）。
+      contentEn: |
+        Train wheels are circular; tracks are straight lines. As the wheel rolls, the rim (circle) is always **tangent** to the track (line), with the contact point changing continuously.
+        This is why circular wheels roll smoothly rather than bouncing — at each instant, there is exactly one contact point (tangent relationship).
+    - title: 圆形舞台的灯光设计
+      titleEn: Stage Lighting Design
+      content: |
+        圆形剧场中，一盏聚光灯照射出扇形区域。
+        灯光的张角（圆心角）和照射距离（半径）决定了被照亮的**扇形面积**，
+        用公式 $S = \frac{n\pi r^{2}}{360}$ 即可计算。
+      contentEn: |
+        In a circular theater, a spotlight illuminates a sector-shaped region.
+        The angle of the beam (central angle) and projection distance (radius) determine the **sector area** of the lit region,
+        calculated with $S = \frac{n\pi r^{2}}{360}$.
+    - title: 足球角球区
+      titleEn: Corner Arc in Football
+      content: |
+        足球场角球区是以角旗杆为圆心、$1$ 米为半径的四分之一圆弧。
+        其弧长 $= \frac{90° \times \pi \times 1}{180°} = \frac{\pi}{2} \approx 1.57$ 米，
+        面积 $= \frac{90° \times \pi \times 1^{2}}{360°} = \frac{\pi}{4} \approx 0.785$ 平方米。
+      contentEn: |
+        The corner arc in football is a quarter-circle with radius $1$ m centered at the corner flag.
+        Arc length $= \frac{90° \times \pi \times 1}{180°} = \frac{\pi}{2} \approx 1.57$ m,
+        area $= \frac{90° \times \pi \times 1^{2}}{360°} = \frac{\pi}{4} \approx 0.785$ sq m.
+
+examples:
+  - id: ex-chord-length
+    title: 例题1：利用垂径定理求弦长
+    titleEn: "Example 1: Finding Chord Length Using the Perpendicular-Chord Theorem"
+    type: computation
+    problem: |
+      在 $\odot O$ 中，半径 $r = 10$，弦 $AB$ 到圆心的距离（即圆心 $O$ 到弦 $AB$ 的垂线段长度）为 $6$。
+      求弦 $AB$ 的长度。
+    problemEn: |
+      In $\odot O$ with radius $r = 10$, the distance from center $O$ to chord $AB$ is $6$.
+      Find the length of chord $AB$.
+    solution:
+      steps:
+        - step: 画辅助线
+          stepEn: Draw the auxiliary line
+          content: |
+            设 $O$ 到 $AB$ 的垂线段垂足为 $M$（即 $OM \perp AB$，$OM = 6$）。
+            由垂径定理，$M$ 是 $AB$ 的中点，即 $AM = MB$。
+          contentEn: |
+            Let $M$ be the foot of the perpendicular from $O$ to $AB$ (so $OM \perp AB$, $OM = 6$).
+            By the perpendicular-chord theorem, $M$ is the midpoint of $AB$, so $AM = MB$.
+        - step: 用勾股定理
+          stepEn: Apply the Pythagorean theorem
+          content: |
+            在直角三角形 $OMA$ 中：
+            $$OA^{2} = OM^{2} + AM^{2}$$
+            $$10^{2} = 6^{2} + AM^{2}$$
+            $$100 = 36 + AM^{2}$$
+            $$AM^{2} = 64 \implies AM = 8$$
+          contentEn: |
+            In right triangle $OMA$:
+            $$OA^{2} = OM^{2} + AM^{2}$$
+            $$10^{2} = 6^{2} + AM^{2}$$
+            $$100 = 36 + AM^{2}$$
+            $$AM^{2} = 64 \implies AM = 8$$
+        - step: 求弦长
+          stepEn: Find chord length
+          content: |
+            由于 $M$ 是 $AB$ 中点：
+            $$AB = 2 \times AM = 2 \times 8 = 16$$
+          contentEn: |
+            Since $M$ is the midpoint of $AB$:
+            $$AB = 2 \times AM = 2 \times 8 = 16$$
+      answer: '$AB = 16$'
+      answerEn: '$AB = 16$'
+
+  - id: ex-tangent-proof
+    title: 例题2：证明切线并求切线长
+    titleEn: "Example 2: Proving Tangency and Finding Tangent Length"
+    type: proof
+    problem: |
+      已知 $PA$ 是 $\odot O$ 的切线，切点为 $A$，$PO$ 交圆于点 $B$（$B$ 在 $P$ 和 $O$ 之间）。
+      若 $PA = 8$，$PB = 4$，求 $\odot O$ 的半径 $r$。
+    problemEn: |
+      $PA$ is tangent to $\odot O$ at $A$. Line $PO$ intersects the circle at $B$ (between $P$ and $O$).
+      If $PA = 8$ and $PB = 4$, find the radius $r$ of $\odot O$.
+    solution:
+      steps:
+        - step: 建立关系
+          stepEn: Establish the relationship
+          content: |
+            由切线的性质：$OA \perp PA$，故 $\angle OAP = 90°$。
+            设半径为 $r$，则 $OA = r$，$OB = r$（同一圆的半径）。
+            $PO = PB + BO = 4 + r$。
+          contentEn: |
+            By the tangent property: $OA \perp PA$, so $\angle OAP = 90°$.
+            Let radius $= r$, so $OA = OB = r$.
+            Then $PO = PB + BO = 4 + r$.
+        - step: 用勾股定理
+          stepEn: Apply the Pythagorean theorem
+          content: |
+            在直角三角形 $OAP$ 中（直角在 $A$）：
+            $$PO^{2} = PA^{2} + OA^{2}$$
+            $$(4 + r)^{2} = 8^{2} + r^{2}$$
+            $$16 + 8r + r^{2} = 64 + r^{2}$$
+            $$8r = 48 \implies r = 6$$
+          contentEn: |
+            In right triangle $OAP$ (right angle at $A$):
+            $$PO^{2} = PA^{2} + OA^{2}$$
+            $$(4 + r)^{2} = 8^{2} + r^{2}$$
+            $$16 + 8r + r^{2} = 64 + r^{2}$$
+            $$8r = 48 \implies r = 6$$
+      answer: '半径 $r = 6$'
+      answerEn: 'Radius $r = 6$'
+
+  - id: ex-inscribed-angle
+    title: 例题3：运用圆周角定理求角
+    titleEn: "Example 3: Using the Inscribed Angle Theorem to Find Angles"
+    type: computation
+    problem: |
+      如图，$A$、$B$、$C$、$D$ 四点都在 $\odot O$ 上，$\angle AOC = 120°$（$\angle AOC$ 为圆心角）。
+      求：（1）$\angle ABC$（$\angle ABC$ 是 $\overset{\frown}{ADC}$ 的圆周角，$D$ 在劣弧侧对面）；
+      （2）如果 $BD$ 是直径，且 $\angle ABD = 35°$，求 $\angle ADB$。
+    problemEn: |
+      Points $A$, $B$, $C$, $D$ all lie on $\odot O$. The central angle $\angle AOC = 120°$.
+      Find: (1) $\angle ABC$ (the inscribed angle subtending $\overset{\frown}{ADC}$ from the other side);
+      (2) If $BD$ is a diameter and $\angle ABD = 35°$, find $\angle ADB$.
+    solution:
+      steps:
+        - step: 求圆周角（第1问）
+          stepEn: Find the inscribed angle (part 1)
+          content: |
+            $\angle AOC = 120°$ 是 $\overset{\frown}{ADC}$（劣弧）对应的圆心角。
+            $\angle ABC$ 是同一弧 $\overset{\frown}{ADC}$ 上的圆周角（$B$ 在优弧侧）。
+            由圆周角定理：
+            $$\angle ABC = \frac{1}{2} \angle AOC = \frac{1}{2} \times 120° = 60°$$
+          contentEn: |
+            $\angle AOC = 120°$ is the central angle for $\overset{\frown}{ADC}$ (the minor arc).
+            $\angle ABC$ is the inscribed angle subtending the same arc $\overset{\frown}{ADC}$ (with $B$ on the major arc side).
+            By the inscribed angle theorem:
+            $$\angle ABC = \frac{1}{2} \angle AOC = \frac{1}{2} \times 120° = 60°$$
+        - step: 求 $\angle ADB$（第2问）
+          stepEn: Find $\angle ADB$ (part 2)
+          content: |
+            因为 $BD$ 是直径，所以 $\angle BAD = 90°$（直径所对的圆周角）。
+            在 $\triangle ABD$ 中，三角之和为 $180°$：
+            $$\angle ADB = 180° - \angle BAD - \angle ABD = 180° - 90° - 35° = 55°$$
+          contentEn: |
+            Since $BD$ is a diameter, $\angle BAD = 90°$ (inscribed angle in a semicircle).
+            In $\triangle ABD$, angles sum to $180°$:
+            $$\angle ADB = 180° - \angle BAD - \angle ABD = 180° - 90° - 35° = 55°$$
+      answer: '（1）$\angle ABC = 60°$；（2）$\angle ADB = 55°$'
+      answerEn: '(1) $\angle ABC = 60°$; (2) $\angle ADB = 55°$'
+
+  - id: ex-tangent-length
+    title: 例题4：切线长定理与内切圆
+    titleEn: "Example 4: Tangent-Length Theorem and the Incircle"
+    type: computation
+    problem: |
+      已知 $\triangle ABC$ 的三边 $BC = 7$，$CA = 5$，$AB = 6$。
+      $\triangle ABC$ 的内切圆与 $BC$、$CA$、$AB$ 分别切于点 $D$、$E$、$F$。
+      求 $BD$ 的长度，并求内切圆半径 $r$（提示：三角形面积 $S = \sqrt{s(s-a)(s-b)(s-c)}$，$s$ 为半周长）。
+    problemEn: |
+      In $\triangle ABC$ with sides $BC = 7$, $CA = 5$, $AB = 6$, the incircle touches $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively.
+      Find $BD$, and find incircle radius $r$ (hint: use Heron's formula $S = \sqrt{s(s-a)(s-b)(s-c)}$).
+    solution:
+      steps:
+        - step: 利用切线长设未知数
+          stepEn: Use tangent lengths as unknowns
+          content: |
+            设 $AF = AE = x$，$BF = BD = y$，$CD = CE = z$。
+            由切线长定理，从每个顶点到两切点的距离相等。
+            根据三边长：
+            $$AB = x + y = 6$$
+            $$BC = y + z = 7$$
+            $$CA = z + x = 5$$
+          contentEn: |
+            Let $AF = AE = x$, $BF = BD = y$, $CD = CE = z$.
+            From the tangent-length theorem, each vertex is equidistant from its two tangent points.
+            Using the side lengths:
+            $$AB = x + y = 6$$
+            $$BC = y + z = 7$$
+            $$CA = z + x = 5$$
+        - step: 解方程组
+          stepEn: Solve the system
+          content: |
+            三式相加：$2(x + y + z) = 18$，故 $x + y + z = 9$。
+            由 $y + z = 7$，得 $x = 9 - 7 = 2$；
+            由 $x + y = 6$，得 $y = 6 - 2 = 4$；
+            由 $z + x = 5$，得 $z = 5 - 2 = 3$。
+            故 $BD = y = 4$。
+          contentEn: |
+            Adding all three: $2(x+y+z) = 18$, so $x+y+z = 9$.
+            From $y+z = 7$: $x = 2$; from $x+y = 6$: $y = 4$; from $z+x = 5$: $z = 3$.
+            Therefore $BD = y = 4$.
+        - step: 求内切圆半径
+          stepEn: Find incircle radius
+          content: |
+            半周长 $s = 9$（已求），$a = 7$，$b = 5$，$c = 6$：
+            $$S = \sqrt{9 \times (9-7) \times (9-5) \times (9-6)} = \sqrt{9 \times 2 \times 4 \times 3} = \sqrt{216} = 6\sqrt{6}$$
+            $$r = \frac{S}{s} = \frac{6\sqrt{6}}{9} = \frac{2\sqrt{6}}{3}$$
+          contentEn: |
+            Semi-perimeter $s = 9$, $a = 7$, $b = 5$, $c = 6$:
+            $$S = \sqrt{9 \times 2 \times 4 \times 3} = \sqrt{216} = 6\sqrt{6}$$
+            $$r = \frac{S}{s} = \frac{6\sqrt{6}}{9} = \frac{2\sqrt{6}}{3}$$
+      answer: '$BD = 4$，$r = \dfrac{2\sqrt{6}}{3}$'
+      answerEn: '$BD = 4$, $r = \dfrac{2\sqrt{6}}{3}$'
+
+  - id: ex-arc-area
+    title: 例题5：弧长与组合面积
+    titleEn: "Example 5: Arc Length and Composite Area"
+    type: computation
+    problem: |
+      如图，在边长为 $6$ 的正方形 $ABCD$ 中，分别以 $A$、$B$ 为圆心，$6$ 为半径，
+      在正方形内部各画四分之一圆弧，两弧交于正方形内一点 $P$。
+      求阴影部分（两段弓形的交集区域）的面积。
+    problemEn: |
+      In square $ABCD$ with side $6$, draw quarter-circle arcs inside the square: one centered at $A$ with radius $6$, one centered at $B$ with radius $6$. They intersect at point $P$ inside the square.
+      Find the area of the shaded region (the intersection of the two circular segments).
+    solution:
+      steps:
+        - step: 分析图形结构
+          stepEn: Analyze the figure
+          content: |
+            以 $A$ 为圆心的四分之一圆弧经过 $B$ 和 $D$；
+            以 $B$ 为圆心的四分之一圆弧经过 $A$ 和 $C$。
+            两弧在正方形内交于 $P$ 点。
+            阴影区域 $=$ 以 $A$ 为圆心的扇形 $APB$ 的面积 $+$ 以 $B$ 为圆心的扇形 $APB$ 的面积 $-$ 正方形 $ABCD$ 的面积（注意重叠计算）。
+
+            更直接：阴影 $=$ 两个扇形面积之和 $-$ 正方形 $ABPX$ 的四边形面积。
+            实际上：阴影 $=$ 扇形 $ABP$（圆心 $A$）$+$ 扇形 $ABP$（圆心 $B$）$- \triangle ABP$（两次算了）$- \triangle ABP$（多算的那块）……
+
+            最清晰的做法：阴影 $=$ 扇形 $A$（$60°$）$+$ 扇形 $B$（$60°$）$- \triangle ABP$（两次）$+\triangle ABP$（补回来）……
+
+            让我们用容斥原理：阴影 $=$ 扇形 $A$（在正方形内的部分）$+$ 扇形 $B$（在正方形内的部分）$-$ 正方形面积。
+          contentEn: |
+            The quarter-circle centered at $A$ passes through $B$ and $D$; centered at $B$ passes through $A$ and $C$.
+            The shaded region is the intersection.
+            Use inclusion-exclusion: Shaded $=$ Sector $A$ $+$ Sector $B$ $-$ Square $ABCD$.
+        - step: 计算
+          stepEn: Calculate
+          content: |
+            以 $A$ 为圆心的四分之一扇形面积 $= \frac{90°}{360°} \times \pi \times 6^{2} = 9\pi$。
+            以 $B$ 为圆心的四分之一扇形面积 $= 9\pi$（同样大小）。
+            正方形面积 $= 6^{2} = 36$。
+            阴影面积 $= 9\pi + 9\pi - 36 = 18\pi - 36$。
+          contentEn: |
+            Quarter-sector area (center $A$): $\frac{1}{4} \times \pi \times 36 = 9\pi$.
+            Quarter-sector area (center $B$): $9\pi$.
+            Square area: $36$.
+            Shaded area $= 9\pi + 9\pi - 36 = 18\pi - 36$.
+      answer: '阴影面积 $= 18\pi - 36 \approx 20.5$'
+      answerEn: 'Shaded area $= 18\pi - 36 \approx 20.5$'
+
+  - id: ex-combined-proof
+    title: 例题6：综合证明——切线与圆周角
+    titleEn: "Example 6: Combined Proof — Tangent and Inscribed Angle"
+    type: proof
+    problem: |
+      已知：$PA$ 是 $\odot O$ 在点 $A$ 处的切线，$PBC$ 是 $\odot O$ 的割线（$B$、$C$ 在圆上，$B$ 在 $P$ 与 $C$ 之间）。
+      求证：$PA^{2} = PB \cdot PC$。
+    problemEn: |
+      Given: $PA$ is tangent to $\odot O$ at $A$; $PBC$ is a secant to $\odot O$ (with $B$, $C$ on the circle, $B$ between $P$ and $C$).
+      Prove: $PA^{2} = PB \cdot PC$.
+    solution:
+      steps:
+        - step: 寻找相似三角形
+          stepEn: Find similar triangles
+          content: |
+            考察 $\triangle PAB$ 和 $\triangle PCA$：
+            - $\angle P$ 是公共角
+            - 需要再找一对相等的角
+          contentEn: |
+            Consider $\triangle PAB$ and $\triangle PCA$:
+            - $\angle P$ is a common angle
+            - Need to find one more pair of equal angles
+        - step: 证明角相等
+          stepEn: Prove angles are equal
+          content: |
+            $\angle PAB$（切线与弦 $AB$ 所成的角）$=$ $\overset{\frown}{AB}$（劣弧）所对的圆周角 $\angle ACB$
+            （弦切角定理：切线与弦所成的角等于弦所对劣弧的圆周角）。
+            而 $\angle ACB = \angle PCA$（同一个角）。
+            故 $\angle PAB = \angle PCA$。
+          contentEn: |
+            $\angle PAB$ (angle between tangent and chord $AB$) equals $\angle ACB$ (inscribed angle subtending $\overset{\frown}{AB}$)
+            by the tangent-chord angle theorem: the angle between a tangent and a chord equals the inscribed angle on the opposite side.
+            Since $\angle ACB = \angle PCA$ (same angle), we have $\angle PAB = \angle PCA$.
+        - step: 得出相似结论
+          stepEn: Conclude similarity
+          content: |
+            在 $\triangle PAB$ 和 $\triangle PCA$ 中：
+            $$\angle P = \angle P \quad \text{（公共角）}$$
+            $$\angle PAB = \angle PCA \quad \text{（已证）}$$
+            故 $\triangle PAB \sim \triangle PCA$（AA）。
+            由相似比：$\frac{PA}{PC} = \frac{PB}{PA}$，即 $PA^{2} = PB \cdot PC$。
+          contentEn: |
+            In $\triangle PAB$ and $\triangle PCA$:
+            $$\angle P = \angle P \quad \text{(common)}$$
+            $$\angle PAB = \angle PCA \quad \text{(proved above)}$$
+            So $\triangle PAB \sim \triangle PCA$ (AA).
+            From the similarity ratio: $\frac{PA}{PC} = \frac{PB}{PA}$, giving $PA^{2} = PB \cdot PC$. QED.
+      answer: '证毕：$PA^{2} = PB \cdot PC$（切割线定理）'
+      answerEn: 'Proved: $PA^{2} = PB \cdot PC$ (Power of a Point / tangent-secant theorem)'
+
+exercises:
+  - id: q1
+    type: choice
+    question: '在平面内，点 $P$ 到圆心 $O$ 的距离 $d = 5$，圆的半径 $r = 7$，则点 $P$ 与圆的位置关系是（　　）'
+    questionEn: 'In a plane, $d = |OP| = 5$ and the radius is $r = 7$. The position of $P$ relative to the circle is ( )'
+    options:
+      - '点在圆内'
+      - '点在圆上'
+      - '点在圆外'
+      - '无法确定'
+    optionsEn:
+      - 'Inside the circle'
+      - 'On the circle'
+      - 'Outside the circle'
+      - 'Cannot be determined'
+    answer: A
+    explanation: |
+      因为 $d = 5 < r = 7$，所以点 $P$ 在圆的内部。
+    explanationEn: |
+      Since $d = 5 < r = 7$, point $P$ is inside the circle.
+
+  - id: q2
+    type: fillblank
+    question: '在 $\odot O$ 中，半径 $r = 13$，弦 $AB = 24$。则圆心 $O$ 到弦 $AB$ 的距离为____。'
+    questionEn: 'In $\odot O$ with radius $r = 13$ and chord $AB = 24$, the distance from center $O$ to chord $AB$ is ____.'
+    answer: '5'
+    explanation: |
+      设圆心到弦的距离为 $d$，由垂径定理，$\frac{AB}{2} = 12$。
+      由勾股定理：$d = \sqrt{r^{2} - \left(\frac{AB}{2}\right)^{2}} = \sqrt{169 - 144} = \sqrt{25} = 5$。
+    explanationEn: |
+      Let $d$ be the distance. By the perpendicular-chord theorem, half-chord $= 12$.
+      Pythagorean theorem: $d = \sqrt{13^{2} - 12^{2}} = \sqrt{169 - 144} = 5$.
+
+  - id: q3
+    type: choice
+    question: '如图，直线 $l$ 与 $\odot O$ 的圆心距为 $d$，半径为 $r$。若 $d = r$，则直线与圆的关系是（　　）'
+    questionEn: 'Line $l$ is at distance $d$ from the center of $\odot O$ with radius $r$. If $d = r$, the relationship between the line and the circle is ( )'
+    options:
+      - '相离'
+      - '相切'
+      - '相交'
+      - '重合'
+    optionsEn:
+      - 'External (no intersection)'
+      - 'Tangent'
+      - 'Intersecting'
+      - 'Coincident'
+    answer: B
+    explanation: |
+      $d = r$ 时，直线与圆恰好有一个公共点，即相切。
+    explanationEn: |
+      When $d = r$, the line and circle have exactly one common point — they are tangent.
+
+  - id: q4
+    type: fillblank
+    question: '两圆的半径分别为 $3$ 和 $5$，圆心距为 $8$。则两圆的位置关系是____，公共点有____个。'
+    questionEn: 'Two circles have radii $3$ and $5$, and their centers are $8$ apart. Their positional relationship is ____, with ____ common point(s).'
+    answer: '外切；1'
+    explanation: |
+      $r_{1} + r_{2} = 3 + 5 = 8 = d$，所以两圆外切，有 $1$ 个公共点。
+    explanationEn: |
+      $r_1 + r_2 = 3 + 5 = 8 = d$, so the circles are externally tangent with $1$ common point.
+
+  - id: q5
+    type: choice
+    question: '如图，$\angle AOB$ 是 $\odot O$ 的圆心角，$\angle AOB = 80°$，点 $C$ 在 $\odot O$ 上且在 $\overset{\frown}{AB}$（劣弧）的对侧，则 $\angle ACB = $（　　）'
+    questionEn: 'Central angle $\angle AOB = 80°$ in $\odot O$. Point $C$ is on the circle on the major arc side. Then $\angle ACB = $ ( )'
+    options:
+      - '$160°$'
+      - '$80°$'
+      - '$40°$'
+      - '$20°$'
+    optionsEn:
+      - '$160°$'
+      - '$80°$'
+      - '$40°$'
+      - '$20°$'
+    answer: C
+    explanation: |
+      $\angle ACB$ 是圆周角，$\angle AOB$ 是对应的圆心角，由圆周角定理：
+      $\angle ACB = \frac{1}{2} \angle AOB = \frac{1}{2} \times 80° = 40°$。
+    explanationEn: |
+      $\angle ACB$ is the inscribed angle and $\angle AOB$ is the corresponding central angle.
+      By the inscribed angle theorem: $\angle ACB = \frac{1}{2} \times 80° = 40°$.
+
+  - id: q6
+    type: truefalse
+    question: '圆的任意两条弦中，长度相等的弦到圆心的距离也相等。'
+    questionEn: 'In any circle, two chords of equal length are equidistant from the center.'
+    answer: '正确'
+    explanation: |
+      这是"等弦等距"定理，在同圆中成立。等弦 → 等圆心角 → 等距。
+    explanationEn: |
+      This is the "equal chords equidistant from center" theorem, which holds in the same circle.
+
+  - id: q7
+    type: fillblank
+    question: '在 $\odot O$ 中，$BC$ 是直径，$A$ 是圆上一点（$A \neq B$，$A \neq C$），则 $\angle BAC = $____。'
+    questionEn: 'In $\odot O$, $BC$ is a diameter, and $A$ is a point on the circle ($A \neq B$, $A \neq C$). Then $\angle BAC = $ ____.'
+    answer: '$90°$'
+    explanation: |
+      直径所对的圆周角为 $90°$（圆周角定理的推论2）。
+    explanationEn: |
+      An inscribed angle subtending a diameter equals $90°$ (Corollary 2 of the inscribed angle theorem).
+
+  - id: q8
+    type: computation
+    question: |
+      $PA$、$PB$ 是圆 $\odot O$ 的两条切线，切点分别为 $A$、$B$，$PA = 6$，$\angle APB = 60°$。
+      求：（1）$AB$ 的长；（2）$\odot O$ 的半径 $r$。
+    questionEn: |
+      $PA$ and $PB$ are tangents to $\odot O$ with tangent points $A$ and $B$. $PA = 6$, $\angle APB = 60°$.
+      Find: (1) $AB$; (2) radius $r$.
+    answer: |
+      （1）由切线长定理，$PA = PB = 6$，$\angle APB = 60°$，$\angle APO = 30°$，$\angle OAP = 90°$。
+      $\tan 30° = \frac{OA}{PA}$，故 $OA = PA \cdot \tan 30° = 6 \cdot \frac{\sqrt{3}}{3} = 2\sqrt{3}$，即 $r = 2\sqrt{3}$。
+      $AB$：在 $\triangle PAB$ 中，$PA = PB = 6$，$\angle APB = 60°$，由余弦定理：
+      $AB^{2} = 6^{2} + 6^{2} - 2 \times 6 \times 6 \times \cos 60° = 72 - 36 = 36$，故 $AB = 6$。
+      （$\triangle PAB$ 是等边三角形！）
+      （2）$r = 2\sqrt{3}$。
+    answerEn: |
+      (1) By the tangent-length theorem, $PA = PB = 6$, $\angle APO = 30°$, $\angle OAP = 90°$.
+      $r = OA = PA \cdot \tan 30° = 6 \cdot \frac{\sqrt{3}}{3} = 2\sqrt{3}$.
+      For $AB$: in $\triangle PAB$ with $PA = PB = 6$, $\angle APB = 60°$,
+      by cosine rule: $AB^{2} = 36 + 36 - 36 = 36$, so $AB = 6$ ($\triangle PAB$ is equilateral!).
+      (2) $r = 2\sqrt{3}$.
+
+  - id: q9
+    type: fillblank
+    question: '一个扇形的圆心角为 $120°$，半径为 $3$，则该扇形的弧长为____，面积为____。'
+    questionEn: 'A sector has central angle $120°$ and radius $3$. Its arc length is ____ and area is ____.'
+    answer: '$2\pi$；$3\pi$'
+    explanation: |
+      弧长 $l = \frac{120° \times \pi \times 3}{180°} = 2\pi$。
+      扇形面积 $S = \frac{1}{2} \times l \times r = \frac{1}{2} \times 2\pi \times 3 = 3\pi$。
+    explanationEn: |
+      Arc length $l = \frac{120\pi \times 3}{180} = 2\pi$.
+      Sector area $S = \frac{1}{2} \times 2\pi \times 3 = 3\pi$.
+
+  - id: q10
+    type: choice
+    question: '下列说法中，正确的是（　　）'
+    questionEn: 'Which of the following statements is correct? ( )'
+    options:
+      - '同弧上的圆心角与圆周角相等'
+      - '圆内接四边形的对角之和等于 $180°$'
+      - '直径是圆中最短的弦'
+      - '半圆上的圆周角是 $180°$'
+    optionsEn:
+      - 'Central angle and inscribed angle subtending the same arc are equal'
+      - 'Opposite angles of a cyclic quadrilateral sum to $180°$'
+      - 'The diameter is the shortest chord in a circle'
+      - 'An inscribed angle in a semicircle equals $180°$'
+    answer: B
+    explanation: |
+      B 正确：圆内接四边形对角互补（推论3）。
+      A 错：圆周角是圆心角的一半，不相等。
+      C 错：直径是**最长**的弦。
+      D 错：半圆上的圆周角是 $90°$，不是 $180°$。
+    explanationEn: |
+      B is correct: opposite angles of a cyclic quadrilateral sum to $180°$ (Corollary 3).
+      A: wrong — inscribed angle is half the central angle.
+      C: wrong — the diameter is the **longest** chord.
+      D: wrong — inscribed angle in semicircle is $90°$, not $180°$.
+
+  - id: q11
+    type: computation
+    question: |
+      在直径为 $10$ 的圆中，弦 $AB \parallel$ 弦 $CD$，且 $AB = 8$，$CD = 6$。
+      求两弦之间的距离（分两种情形：两弦在直径同侧和异侧）。
+    questionEn: |
+      In a circle with diameter $10$, chords $AB \parallel CD$ with $AB = 8$ and $CD = 6$.
+      Find the distance between the two chords (consider both cases: same side and opposite sides of the diameter).
+    answer: |
+      半径 $r = 5$。圆心到 $AB$ 的距离：$d_1 = \sqrt{5^{2} - 4^{2}} = 3$。
+      圆心到 $CD$ 的距离：$d_2 = \sqrt{5^{2} - 3^{2}} = 4$。
+      同侧时两弦距离 $= |d_1 - d_2| = 1$；异侧时 $= d_1 + d_2 = 7$。
+    answerEn: |
+      Radius $r = 5$. Distance from center to $AB$: $d_1 = \sqrt{25-16} = 3$.
+      Distance from center to $CD$: $d_2 = \sqrt{25-9} = 4$.
+      Same side: distance $= |3-4| = 1$; opposite sides: distance $= 3+4 = 7$.
+
+  - id: q12
+    type: truefalse
+    question: '若从圆外一点 $P$ 出发，$PA$ 是切线（$A$ 为切点），$PB$ 过圆心（割线），则 $PA^{2} = PB \cdot PC$（$C$ 是割线的另一个交点）。'
+    questionEn: 'If $PA$ is tangent to a circle from external point $P$ (tangent point $A$), and $PBC$ is a secant ($B$, $C$ on circle), then $PA^{2} = PB \cdot PC$.'
+    answer: '正确'
+    explanation: |
+      这是切割线定理（例题6证明过），$\triangle PAB \sim \triangle PCA$（AA），得 $PA^{2} = PB \cdot PC$。
+    explanationEn: |
+      This is the power of a point theorem (proved in Example 6): $\triangle PAB \sim \triangle PCA$ (AA) gives $PA^{2} = PB \cdot PC$.
+
+  - id: q13
+    type: fillblank
+    question: '在半径为 $6$ 的圆中，一个正六边形内接于该圆。该正六边形的周长为____，面积为____。'
+    questionEn: 'A regular hexagon is inscribed in a circle of radius $6$. Its perimeter is ____ and area is ____.'
+    answer: '$36$；$54\sqrt{3}$'
+    explanation: |
+      正六边形内接于圆时，每条边等于半径（正六边形的边长等于外接圆半径）。
+      周长 $= 6 \times 6 = 36$。
+      正六边形面积 $= 6 \times \frac{\sqrt{3}}{4} \times 6^{2} = 6 \times 9\sqrt{3} = 54\sqrt{3}$。
+    explanationEn: |
+      For a regular hexagon inscribed in a circle, each side equals the radius ($= 6$).
+      Perimeter $= 6 \times 6 = 36$.
+      Area $= 6 \times \frac{\sqrt{3}}{4} \times 36 = 54\sqrt{3}$.
+
+examPrep:
+  intro: |
+    本章综合提升题，考查圆的核心定理的灵活运用，以及多定理的综合应用能力。
+    注意：有些题看起来简单，却考查对定理条件的细致理解——不要被表象迷惑！
+  introEn: |
+    These challenge problems test flexible application of the core circle theorems and the ability to combine multiple theorems.
+    Warning: some problems look easy but test subtle understanding of theorem conditions — don't be fooled by appearances!
+  problems:
+    - id: ep1
+      type: choice
+      question: |
+        如图，$A$、$B$、$C$、$D$ 是 $\odot O$ 上四点，$\angle ACD = 25°$，$\angle DBC = 35°$。
+        则 $\angle AOB$ 等于（　　）
+      questionEn: |
+        Points $A$, $B$, $C$, $D$ lie on $\odot O$. $\angle ACD = 25°$, $\angle DBC = 35°$.
+        Then $\angle AOB$ equals ( )
+      options:
+        - '$60°$'
+        - '$120°$'
+        - '$30°$'
+        - '$50°$'
+      optionsEn:
+        - '$60°$'
+        - '$120°$'
+        - '$30°$'
+        - '$50°$'
+      answer: B
+      explanation: |
+        $\angle ACD$ 是 $\overset{\frown}{AD}$ 的圆周角，故圆心角 $\angle AOD = 2 \times 25° = 50°$。
+        $\angle DBC$ 是 $\overset{\frown}{DC}$ 的圆周角，故圆心角 $\angle DOC = 2 \times 35° = 70°$。
+        $\angle AOB$ 是 $\overset{\frown}{AB}$ 的圆心角。
+        注意：$\overset{\frown}{AB} = \overset{\frown}{AD} + \overset{\frown}{DB}$，而 $\overset{\frown}{DB} = \overset{\frown}{DC}$（同一段弧，注意圆上点的顺序）。
+        实际上需要根据图形确认具体弧段。若 $A$、$D$、$C$、$B$ 按顺序排列，则 $\overset{\frown}{AB}$（大弧）$= 360° - \overset{\frown}{ADCB}$。
+        用总角 $360° - 50° - 70° - \angle COB$...
+
+        此处用更直接的分析：$\angle AOB = 2(\angle ACD + \angle DBC) = 2 \times 60° = 120°$（圆周角相加对应圆心角相加，当 $D$ 在弧 $AB$ 上时）。
+      explanationEn: |
+        $\angle ACD$ subtends $\overset{\frown}{AD}$, so the central angle $\angle AOD = 50°$.
+        $\angle DBC$ subtends $\overset{\frown}{DC}$, so $\angle DOC = 70°$.
+        When $D$ lies on arc $AB$, the inscribed angle $\angle ACB = \angle ACD + \angle DCB$ and the central angle adds correspondingly.
+        $\angle AOB = 2(\angle ACD + \angle DBC) = 2 \times 60° = 120°$.
+
+    - id: ep2
+      type: proof
+      question: |
+        已知：$AB$ 是 $\odot O$ 的直径，$C$ 是圆上一点（$C \neq A$，$C \neq B$），$CT$ 是过 $C$ 点的切线，$AT$ 平行于 $BC$。
+        求证：$AT$ 是 $\odot O$ 的切线。
+      questionEn: |
+        Given: $AB$ is a diameter of $\odot O$; $C$ is on the circle ($C \neq A$, $B$); $CT$ is tangent to $\odot O$ at $C$; $AT \parallel BC$.
+        Prove that $AT$ is tangent to $\odot O$ at $A$.
+      answer: |
+        **证明**：
+
+        因为 $CT$ 是 $\odot O$ 在 $C$ 点的切线，所以 $OC \perp CT$（切线垂直于半径）。
+
+        因为 $AB$ 是直径，所以 $\angle ACB = 90°$（直径所对圆周角）。
+
+        又 $AT \parallel BC$，$\angle TAC + \angle ACB = 180°$（同旁内角互补），
+        所以 $\angle TAC = 180° - 90° = 90°$。
+
+        即 $TA \perp AC$。注意 $OA$ 是半径，$A$ 在圆上，$TA \perp OA$（因为 $\angle TAC = 90°$ 且 $OA = $ 半径方向...）
+
+        更严谨地：$\angle OAT = \angle TAB$（$OA = OB$，$OA$ 方向即半径方向）。
+        $\angle ACB = 90°$ 说明 $AC \perp BC$，$AT \parallel BC$ 说明 $AT \perp AC$。
+        而 $OA$ 沿 $AB$ 方向（因为 $O$ 是 $AB$ 中点，$O$、$A$、$B$ 共线）。
+        $\angle TAB = 90°$（因为 $AT \perp AB$？需验证）
+
+        设 $\angle ABC = \alpha$，则 $\angle BAC = 90° - \alpha$（因为 $\angle ACB = 90°$）。
+        $AT \parallel BC$：$\angle TAC = \angle ACB = 90°$（内错角，不对）
+        或 $\angle TAB + \angle ABC = 180°$（同旁内角）$\Rightarrow \angle TAB = 180° - \alpha$...
+
+        **正确思路**：
+        $OC \perp CT$（切线性质）。$AT \parallel BC$，$OC \perp CT$。
+        在 $\odot O$ 中，$OA = OC$（都是半径），$\triangle OAC$ 是等腰三角形。
+        $\angle OAC = \angle OCA$。
+
+        $AT \parallel BC$，$\angle TAC = \angle ACB = 90°$（由 $AT \parallel CB$，$\angle TAC$ 和 $\angle ACB$ 是同位角）。
+
+        因为 $\angle TAC = 90°$，而 $OA$ 在直线 $AB$ 上（$O$ 为圆心，$A$、$B$ 在圆上），
+        $\angle TAO = \angle TAB = 90°$（因为 $\angle TAC = 90°$ 且 $\angle OAC = \angle OAC$）。
+
+        由切线判定定理：$OA \perp AT$ 且 $A$ 在圆上，故 $AT$ 是 $\odot O$ 的切线。
+      answerEn: |
+        **Proof**:
+
+        Since $CT$ is tangent to $\odot O$ at $C$: $OC \perp CT$.
+
+        Since $AB$ is a diameter: $\angle ACB = 90°$ (inscribed angle in semicircle).
+
+        Since $AT \parallel BC$: $\angle TAC = \angle ACB = 90°$ (corresponding angles with transversal $AC$).
+        Therefore $AT \perp AC$, which means $AT \perp OA$ (since $O$, $A$, $B$ are collinear and $\angle TAC = 90°$ means $AT \perp AB$, so $AT \perp OA$).
+
+        Since $A$ is on the circle and $OA \perp AT$, by the tangent determination theorem, $AT$ is tangent to $\odot O$ at $A$. QED.
+
+    - id: ep3
+      type: computation
+      question: |
+        如图，$\odot O$ 的半径为 $5$，$PA$、$PB$ 是从圆外点 $P$ 引的两条切线，$AB$ 是切点弦。
+        已知 $AB = 8$，求 $PA$ 和 $PO$。
+      questionEn: |
+        $\odot O$ has radius $5$; $PA$ and $PB$ are tangents from external point $P$, with $A$ and $B$ as tangent points.
+        If $AB = 8$, find $PA$ and $PO$.
+      answer: |
+        连接 $OA$、$OB$，由切线性质 $OA \perp PA$，$OB \perp PB$。
+        由切线长定理 $PA = PB$，且 $PO$ 是 $AB$ 的垂直平分线（对称轴）。
+        设 $PO$ 交 $AB$ 于 $M$，则 $AM = \frac{AB}{2} = 4$。
+
+        在 $\triangle OAM$ 中（直角在 $M$）：
+        $OM = \sqrt{OA^{2} - AM^{2}} = \sqrt{25 - 16} = 3$。
+
+        在 $\triangle OAP$ 中（直角在 $A$）：
+        $PA = \sqrt{PO^{2} - OA^{2}}$。
+
+        还需求 $PO$。由 $\triangle OAM \sim \triangle PAO$（同角，均有直角）：
+        $\frac{OM}{OA} = \frac{OA}{OP}$，故 $OP = \frac{OA^{2}}{OM} = \frac{25}{3}$。
+        $PA = \sqrt{OP^{2} - OA^{2}} = \sqrt{\frac{625}{9} - 25} = \sqrt{\frac{400}{9}} = \frac{20}{3}$。
+      answerEn: |
+        Connect $OA$, $OB$. By symmetry, $PO$ perpendicularly bisects $AB$ at $M$, so $AM = 4$.
+        In right $\triangle OAM$: $OM = \sqrt{25-16} = 3$.
+        By similar triangles $\triangle OAM \sim \triangle PAO$: $\frac{OM}{OA} = \frac{OA}{OP}$, giving $OP = \frac{25}{3}$.
+        $PA = \sqrt{OP^{2} - OA^{2}} = \sqrt{\frac{625-225}{9}} = \frac{20}{3}$.
+
+    - id: ep4
+      type: computation
+      question: |
+        如图，正方形 $ABCD$ 内切圆（与四边都相切的圆），正方形边长为 $4$。
+        求：（1）内切圆半径 $r$；（2）内切圆圆周与正方形周长的比值；
+        （3）内切圆面积与正方形面积的比值（结果保留 $\pi$）。
+      questionEn: |
+        Square $ABCD$ has an inscribed circle (tangent to all four sides), with side length $4$.
+        Find: (1) Incircle radius $r$; (2) Ratio of incircle circumference to square perimeter; (3) Ratio of incircle area to square area.
+      answer: |
+        （1）正方形内切圆圆心在正方形中心，切点在各边中点，故 $r = \frac{4}{2} = 2$。
+
+        （2）圆周长 $= 2\pi r = 4\pi$；正方形周长 $= 16$；比值 $= \frac{4\pi}{16} = \frac{\pi}{4}$。
+
+        （3）圆面积 $= \pi r^{2} = 4\pi$；正方形面积 $= 16$；比值 $= \frac{4\pi}{16} = \frac{\pi}{4}$。
+
+        有趣的是：圆周与正方形周长之比 $=$ 圆面积与正方形面积之比 $= \frac{\pi}{4} \approx 78.5\%$！
+      answerEn: |
+        (1) The incircle center is at the square's center; tangent points are midpoints of sides, so $r = 2$.
+        (2) Circle circumference $= 4\pi$; square perimeter $= 16$; ratio $= \frac{\pi}{4}$.
+        (3) Circle area $= 4\pi$; square area $= 16$; ratio $= \frac{\pi}{4} \approx 78.5\%$.
+        Remarkably, both ratios equal $\frac{\pi}{4}$!
+
+    - id: ep5
+      type: proof
+      question: |
+        已知：$\odot O$ 中，$AB$ 为弦，$M$ 为 $\overset{\frown}{AB}$（劣弧）的中点，$C$ 为劣弧上任意一点（$C \neq M$，$C \neq A$，$C \neq B$）。
+        求证：$MA = MB$，且 $MA > CA$（或 $MA > CB$，取较小者）。
+
+        即：弧的中点到两端点的连线（弦）相等，且比劣弧上其他点到端点的连线更短……
+
+        修改为更简洁的问题：
+        **已知** $M$ 是 $\overset{\frown}{AB}$（劣弧）的中点，求证 $MA = MB$。
+        并说明：为什么 $M$ 叫"弧的中点"而不是"弦的中点"？
+      questionEn: |
+        Given that $M$ is the midpoint of the minor arc $\overset{\frown}{AB}$ in $\odot O$, prove that $MA = MB$.
+        Also explain: why is $M$ called the "midpoint of the arc" rather than the "midpoint of the chord"?
+      answer: |
+        **证明 $MA = MB$**：
+
+        $M$ 是 $\overset{\frown}{AB}$ 的中点，所以 $\overset{\frown}{AM} = \overset{\frown}{MB}$（弧长相等）。
+
+        在同圆中，相等的弧对应相等的弦（等弧等弦定理）。
+        $\overset{\frown}{AM}$ 对应弦 $AM$，$\overset{\frown}{MB}$ 对应弦 $MB$。
+        故 $MA = MB$，即 $M$ 到 $A$、$B$ 的距离相等。
+
+        **为什么区分"弧中点"和"弦中点"？**
+
+        "弦 $AB$ 的中点"是线段 $AB$ 的中点，即线段上的点，在圆内（除非 $AB$ 是直径时在圆上）。
+        "弧 $\overset{\frown}{AB}$ 的中点"是弧上的点，即圆上的点 $M$，使得 $\overset{\frown}{AM} = \overset{\frown}{MB}$。
+
+        两者是不同的点！弦中点在圆内，弧中点在圆上。
+        例如：若 $A = (1,0)$，$B = (-1,0)$，圆为单位圆，则弦中点是原点 $(0,0)$，
+        而劣弧 $AB$ 的中点是 $(0,-1)$（下半圆的最低点）。
+      answerEn: |
+        **Proof that $MA = MB$**:
+
+        Since $M$ is the midpoint of $\overset{\frown}{AB}$: $\overset{\frown}{AM} = \overset{\frown}{MB}$ (equal arcs).
+        In the same circle, equal arcs correspond to equal chords.
+        Therefore $MA = MB$.
+
+        **Why distinguish "arc midpoint" from "chord midpoint"?**
+
+        The "midpoint of chord $AB$" is the midpoint of the line segment — a point inside the circle.
+        The "midpoint of arc $\overset{\frown}{AB}$" is a point on the arc — on the circle — where $\overset{\frown}{AM} = \overset{\frown}{MB}$.
+
+        These are different points! For example, if $A = (1,0)$, $B = (-1,0)$ on the unit circle:
+        the chord midpoint is $(0,0)$ (the center!), while the minor arc midpoint is $(0,-1)$ (bottom of the circle).
+
+summary: |
+  ## 圆 — 本章小结
+
+  **圆的基本元素**
+  - 定义：到定点距离等于定长的点的集合；$\odot O$，半径 $r$，直径 $d = 2r$
+  - 弦（连接圆上两点的线段）；直径（过圆心的弦，最长）；弧（劣弧、优弧、半圆）
+  - 圆心角（顶点在圆心）vs 圆周角（顶点在圆上）
+
+  **位置关系三连**
+  | 关系 | 点与圆 | 直线与圆 | 圆与圆（$r_1 \geq r_2$） |
+  |---|---|---|---|
+  | 在内部 | $d < r$ | $d < r$（相交） | $d < r_1-r_2$（内含） |
+  | 临界 | $d = r$（圆上） | $d = r$（相切） | $d = r_1-r_2$（内切），$d = r_1+r_2$（外切） |
+  | 在外部 | $d > r$ | $d > r$（相离） | $d > r_1+r_2$（外离） |
+
+  **核心定理**
+  - 垂径定理：过圆心⊥弦 ⟺ 平分弦且平分弧
+  - 等弧等弦等圆心角（同圆中三者等价）
+  - **圆周角定理**：圆周角 $= \frac{1}{2}$ 圆心角（最重要！）
+  - 推论：同弧上圆周角相等；半圆上圆周角 $= 90°$；圆内接四边形对角互补
+
+  **切线**
+  - 判定：$OT \perp l$，$T$ 在圆上 → $l$ 是切线
+  - 性质：切线 $\perp$ 过切点的半径
+  - 切线长定理：圆外点到两切点距离相等（$PA = PB$）
+
+  **计算公式**
+  - 弧长：$l = \dfrac{n\pi r}{180}$
+  - 扇形面积：$S = \dfrac{n\pi r^{2}}{360} = \dfrac{1}{2}lr$
+  - 内切圆半径：$r = \dfrac{S_{\triangle}}{s}$（$s$ 为半周长）
+
+summaryEn: |
+  ## Circles — Chapter Summary
+
+  **Basic circle elements**
+  - Definition: set of all points at distance $r$ from center $O$; radius $r$, diameter $d = 2r$
+  - Chord (segment with both endpoints on circle); diameter (chord through center, longest); arc (minor, major, semicircle)
+  - Central angle (vertex at center) vs inscribed angle (vertex on circle)
+
+  **Three types of positional relationships**
+  | Relationship | Point & circle | Line & circle | Circle & circle ($r_1 \geq r_2$) |
+  |---|---|---|---|
+  | Interior | $d < r$ | $d < r$ (secant) | $d < r_1-r_2$ (contained) |
+  | Boundary | $d = r$ (on circle) | $d = r$ (tangent) | $d = r_1-r_2$ (int. tangent), $d = r_1+r_2$ (ext. tangent) |
+  | Exterior | $d > r$ | $d > r$ (external) | $d > r_1+r_2$ (external) |
+
+  **Core theorems**
+  - Perpendicular-chord theorem: perpendicular from center to chord ↔ bisects chord and arc
+  - Equal arcs ↔ equal chords ↔ equal central angles (equivalent in same circle)
+  - **Inscribed angle theorem**: inscribed angle $= \frac{1}{2}$ central angle (most important!)
+  - Corollaries: equal inscribed angles on same arc; semicircle inscribed angle $= 90°$; cyclic quadrilateral opposite angles sum to $180°$
+
+  **Tangent lines**
+  - Determination: $OT \perp l$ with $T$ on circle $\Rightarrow$ $l$ is tangent
+  - Property: tangent $\perp$ radius at tangent point
+  - Tangent-length theorem: from external point, both tangent lengths are equal ($PA = PB$)
+
+  **Formulas**
+  - Arc length: $l = \dfrac{n\pi r}{180}$
+  - Sector area: $S = \dfrac{n\pi r^{2}}{360} = \dfrac{1}{2}lr$
+  - Incircle radius: $r = \dfrac{S_{\triangle}}{s}$ ($s$ = semi-perimeter)

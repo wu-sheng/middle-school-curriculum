@@ -1,0 +1,1299 @@
+title: 相似
+titleEn: Similar Figures
+chapter: 6
+subject: math
+grade: grade9
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约60分钟 · 第3课时 约60分钟 · 第4课时 约55分钟
+estimatedTimeEn: "Session 1 ~60 min · Session 2 ~60 min · Session 3 ~60 min · Session 4 ~55 min"
+targetAudience: 小学3年级自学生（已完成九年级上册数学），自学材料，由简入深
+
+objectives:
+  - 理解<<比例线段/proportional segments>>的概念，掌握比例的基本性质（交叉相乘、更比、合比）
+  - 掌握<<平行线分线段成比例/parallel proportionality>>定理及其推论，能用其求线段长
+  - 理解<<相似多边形/similar polygons>>的定义，知道对应角相等、对应边成比例
+  - 掌握<<相似三角形/similar triangles>>的三种判定方法：AA、SAS、SSS
+  - 能运用<<相似比/similarity ratio>> $k$ 计算对应边、周长比（$k$）、面积比（$k^2$）
+  - 了解<<位似/homothety>>变换的概念，能在坐标系中作位似图形
+objectivesEn:
+  - Understand <<比例线段/proportional segments>> and the basic properties of proportions (cross multiplication, alternation, composition)
+  - Master the <<平行线分线段成比例/parallel proportionality>> theorem and its corollaries; apply them to find segment lengths
+  - 'Understand the definition of <<相似多边形/similar polygons>>: equal corresponding angles and proportional corresponding sides'
+  - 'Master the three criteria for <<相似三角形/similar triangles>>: AA, SAS, SSS'
+  - Use the <<相似比/similarity ratio>> $k$ to compute corresponding sides, perimeter ratio ($k$), and area ratio ($k^2$)
+  - Understand <<位似/homothety>> transformations and construct homothetic figures on a coordinate plane
+
+prerequisites:
+  title: 从全等到相似——你已经准备好了吗？
+  titleEn: "From congruence to similarity — are you ready?"
+  intro: |
+    学习<<相似/similar>>之前，先回顾几块你已经掌握的知识：
+  introEn: |
+    Before studying <<相似/similar>> figures, let's review a few areas you already know:
+  items:
+    - name: 全等三角形的判定与性质
+      nameEn: Congruent triangle criteria and properties
+      detail: |
+        SSS、SAS、ASA、AAS 四种全等判定；全等三角形对应边相等、对应角相等。
+        全等是相似的特殊情形——当<<相似比/similarity ratio>> $k = 1$ 时，相似就变成了全等。
+      detailEn: |
+        SSS, SAS, ASA, AAS congruence criteria; congruent triangles have equal corresponding sides and angles.
+        Congruence is a special case of similarity — when <<相似比/similarity ratio>> $k = 1$, similarity becomes congruence.
+    - name: 比与比例的运算
+      nameEn: Ratio and proportion arithmetic
+      detail: |
+        比 $a:b = \frac{a}{b}$；比例 $\frac{a}{b} = \frac{c}{d}$ 的交叉相乘：$ad = bc$。
+        化简比、求比值，这些都是<<比例线段/proportional segments>>的基础。
+      detailEn: |
+        Ratio $a:b = \frac{a}{b}$; cross-multiplication in a proportion $\frac{a}{b} = \frac{c}{d}$: $ad = bc$.
+        Simplifying ratios and finding ratio values are foundations for <<比例线段/proportional segments>>.
+    - name: 平行线的性质
+      nameEn: Properties of parallel lines
+      detail: |
+        两直线平行时，同位角相等、内错角相等、同旁内角互补。
+        平行线是截比定理证明的核心工具。
+      detailEn: |
+        When two lines are parallel: corresponding angles are equal, alternate interior angles are equal, co-interior angles are supplementary.
+        Parallel lines are the core tool for proving the proportionality theorem.
+    - name: 勾股定理
+      nameEn: Pythagorean theorem
+      detail: |
+        直角三角形中 $a^2 + b^2 = c^2$。相似三角形的面积比推导中会用到直角三角形的高。
+      detailEn: |
+        In a right triangle $a^2 + b^2 = c^2$. The altitude of a right triangle appears in deriving area ratios of similar triangles.
+  conclusion: |
+    把全等的思路扩展一步：允许图形放大或缩小，只保持形状不变，就进入了相似的世界。
+    从"大小完全一样"到"形状一样、大小可以不同"，这就是全等与相似的本质区别。
+  conclusionEn: |
+    Extend congruence one step further: allow figures to be enlarged or reduced while preserving shape — that is the world of similarity.
+    The key difference: congruence means "identical size and shape"; similarity means "same shape, possibly different size."
+
+concepts:
+  - id: proportional-segments
+    title: <<比例线段/proportional segments>>
+    titleEn: '<<比例线段/proportional segments>>'
+    hasVisualization: true
+    content: |
+      **什么是<<比例线段/proportional segments>>？**
+
+      四条线段 $a, b, c, d$，如果满足 $\frac{a}{b} = \frac{c}{d}$，就说这四条线段**成比例**，称为<<比例线段/proportional segments>>。
+      其中 $a, d$ 叫做**比例外项**，$b, c$ 叫做**比例内项**。
+
+      **比例的基本性质**
+
+      设 $\frac{a}{b} = \frac{c}{d}$，则有以下等价变换：
+
+      | 性质 | 公式 | 说明 |
+      |------|------|------|
+      | 交叉相乘 | $ad = bc$ | 两外项之积 = 两内项之积 |
+      | 更比（交换内项或外项） | $\frac{a}{c} = \frac{b}{d}$ | 两内项互换 |
+      | 合比 | $\frac{a+b}{b} = \frac{c+d}{d}$ | 分子加分母 |
+      | 分比 | $\frac{a-b}{b} = \frac{c-d}{d}$ | 分子减分母 |
+      | 等比定理 | $\frac{a}{b} = \frac{c}{d} = \frac{a+c}{b+d}$ | 分子和与分母和之比不变 |
+
+      **黄金比例——自然界最美的比例**
+
+      把线段 $AB$ 上取一点 $C$，使得 $\frac{AB}{AC} = \frac{AC}{CB}$，
+      设 $AC = 1, CB = x$，则 $\frac{1+x}{1} = \frac{1}{x}$，整理得 $x^2 + x - 1 = 0$，
+      解得 $x = \frac{-1+\sqrt{5}}{2} \approx 0.618$。
+
+      这时 $AC : CB \approx 1 : 0.618$，或 $AB : AC \approx 1.618 : 1$，
+      比值 $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$ 称为**<<黄金比/golden ratio>>**。
+
+      - 人体的肚脐到脚底与身高之比约为 $0.618$
+      - 向日葵种子的螺旋排列、鹦鹉螺的螺线都遵循黄金比例
+      - 名片、A4纸的长宽比接近黄金比例
+      - 帕台农神庙、《蒙娜丽莎》的构图中都藏有 $\phi$
+
+      **判断四条线段是否成比例**
+
+      给定 $a = 3, b = 4, c = 6, d = 8$：
+      - 检验 $\frac{a}{b} = \frac{c}{d}$：$\frac{3}{4} = \frac{6}{8} = 0.75$ ✓
+      - 或用交叉相乘：$3 \times 8 = 24 = 4 \times 6$ ✓
+
+      注意：线段长度必须用**同一单位**，比例才有意义。
+    contentEn: |
+      **What are <<比例线段/proportional segments>>?**
+
+      Four segments $a, b, c, d$ are proportional if $\frac{a}{b} = \frac{c}{d}$.
+      Here $a, d$ are the **extremes** and $b, c$ are the **means** of the proportion.
+
+      **Basic properties of proportions**
+
+      Given $\frac{a}{b} = \frac{c}{d}$, the following equivalent transformations hold:
+
+      | Property | Formula | Meaning |
+      |----------|---------|---------|
+      | Cross multiplication | $ad = bc$ | product of extremes = product of means |
+      | Alternation | $\frac{a}{c} = \frac{b}{d}$ | swap the two means |
+      | Composition | $\frac{a+b}{b} = \frac{c+d}{d}$ | add denominator to numerator |
+      | Division | $\frac{a-b}{b} = \frac{c-d}{d}$ | subtract denominator from numerator |
+      | Summation | $\frac{a}{b} = \frac{c}{d} = \frac{a+c}{b+d}$ | ratio of sums equals the common ratio |
+
+      **The golden ratio — nature's most beautiful proportion**
+
+      Place point $C$ on segment $AB$ so that $\frac{AB}{AC} = \frac{AC}{CB}$.
+      Let $AC = 1, CB = x$; then $\frac{1+x}{1} = \frac{1}{x}$, giving $x^2 + x - 1 = 0$,
+      so $x = \frac{-1+\sqrt{5}}{2} \approx 0.618$.
+
+      The ratio $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$ is the **<<黄金比/golden ratio>>**.
+      It appears in the human body, sunflower spirals, nautilus shells, the Parthenon, and the Mona Lisa.
+
+      **Checking whether four segments are proportional**
+
+      Given $a = 3, b = 4, c = 6, d = 8$:
+      - Check $\frac{3}{4} = \frac{6}{8} = 0.75$ ✓
+      - Or cross-multiply: $3 \times 8 = 24 = 4 \times 6$ ✓
+
+      Segments must be measured in the **same unit** for a proportion to be meaningful.
+
+  - id: parallel-proportionality
+    title: 平行线分线段成比例定理
+    titleEn: Parallel Lines Proportionality Theorem
+    hasVisualization: true
+    content: |
+      **定理内容**
+
+      三条（或更多）平行线截两条截线，对应截得的线段成比例。
+
+      如图：直线 $l_1 \parallel l_2 \parallel l_3$，截线 $a$ 被截为 $AB, BC$，截线 $b$ 被截为 $DE, EF$，则：
+      $$\frac{AB}{BC} = \frac{DE}{EF}$$
+
+      **推论：三角形中位线比例定理**
+
+      直线平行于三角形 $\triangle ABC$ 的一边（如 $BC$），且与另外两边（或延长线）相交于 $D, E$，则：
+      $$\frac{AD}{DB} = \frac{AE}{EC}$$
+
+      等价地：$\frac{AD}{AB} = \frac{AE}{AC}$（这两种写法都常用，要熟练转换）。
+
+      **逆定理（判定平行线的工具）**
+
+      如果直线 $DE$ 满足 $\frac{AD}{DB} = \frac{AE}{EC}$，则 $DE \parallel BC$。
+
+      这是判定一条线是否平行于三角形某边的重要方法。
+
+      **妙用：等分线段**
+
+      要把线段 $AB$ 三等分，怎么做？
+      1. 过 $A$ 作射线 $AC'$，在射线上用圆规截取 $AA_1 = A_1A_2 = A_2A_3$
+      2. 连接 $A_3B$
+      3. 过 $A_1, A_2$ 分别作 $A_3B$ 的平行线，交 $AB$ 于 $P, Q$
+      4. 由平行线分线段成比例，$AP = PQ = QB$
+
+      这个方法可以推广到把任意线段等分成 $n$ 份。
+
+      **易错点：分子分母对应关系**
+
+      写比例时，必须保证分子对应同一截线的同一段，分母也对应同一截线的同一段。
+      $\frac{AB}{BC} = \frac{DE}{EF}$ 正确；$\frac{AB}{EF} = \frac{DE}{BC}$ 不一定正确（需要验证对应关系）。
+    contentEn: |
+      **The theorem**
+
+      Three (or more) parallel lines cut any two transversals into proportional segments.
+
+      In the diagram: $l_1 \parallel l_2 \parallel l_3$; transversal $a$ is cut into $AB, BC$; transversal $b$ is cut into $DE, EF$. Then:
+      $$\frac{AB}{BC} = \frac{DE}{EF}$$
+
+      **Corollary: Triangle proportionality theorem**
+
+      A line parallel to side $BC$ of $\triangle ABC$ that intersects the other two sides at $D$ and $E$ gives:
+      $$\frac{AD}{DB} = \frac{AE}{EC}$$
+
+      Equivalently: $\frac{AD}{AB} = \frac{AE}{AC}$ (both forms are used — practise switching between them).
+
+      **Converse (tool for proving lines parallel)**
+
+      If $\frac{AD}{DB} = \frac{AE}{EC}$, then $DE \parallel BC$.
+
+      **Application: dividing a segment into equal parts**
+
+      To divide segment $AB$ into three equal parts:
+      1. Draw ray $AC'$ from $A$; mark equal lengths $AA_1 = A_1A_2 = A_2A_3$ with a compass.
+      2. Connect $A_3$ to $B$.
+      3. Through $A_1$ and $A_2$ draw lines parallel to $A_3B$; they meet $AB$ at $P$ and $Q$.
+      4. By the proportionality theorem, $AP = PQ = QB$.
+
+      This generalises to dividing any segment into $n$ equal parts.
+
+      **Common error: matching numerators and denominators**
+
+      When writing the proportion, ensure numerators and denominators correspond to segments on the same transversal.
+      $\frac{AB}{BC} = \frac{DE}{EF}$ is correct; mixing segments from different transversals requires careful verification.
+
+  - id: similar-polygons
+    title: <<相似多边形/similar polygons>>的概念
+    titleEn: 'Concept of <<相似多边形/similar polygons>>'
+    hasVisualization: true
+    content: |
+      **定义**
+
+      如果两个多边形满足：
+      1. **对应角相等**（所有对应内角两两相等）
+      2. **对应边成比例**（所有对应边的比值相等）
+
+      那么这两个多边形叫做**<<相似多边形/similar polygons>>**，用符号 $\sim$ 表示相似。
+
+      **<<相似比/similarity ratio>>**
+
+      对应边的公共比值 $k = \frac{a'}{a} = \frac{b'}{b} = \cdots$ 叫做<<相似比/similarity ratio>>（也叫相似系数）。
+
+      - 若 $k > 1$：新图形比原图形**大**
+      - 若 $k = 1$：两图形**全等**（全等是相似的特殊情况）
+      - 若 $0 < k < 1$：新图形比原图形**小**
+
+      **周长比与面积比**
+
+      设两相似多边形的<<相似比/similarity ratio>>为 $k$，则：
+      - **周长之比** $= k$（周长是所有边之和，每条边都乘以 $k$）
+      - **面积之比** $= k^2$（面积是二维量，两个方向都乘以 $k$，所以平方）
+
+      **哪些图形一定相似？**
+
+      | 结论 | 原因 |
+      |------|------|
+      | 所有正方形都相似 | 角都是 $90°$，边之比就是<<相似比/similarity ratio>> |
+      | 所有圆都相似 | 没有角的区别，半径之比就是<<相似比/similarity ratio>> |
+      | 所有等边三角形都相似 | 三个角都是 $60°$ |
+      | **不是**所有矩形都相似 | 虽然角都是 $90°$，但长宽比可能不同 |
+      | **不是**所有等腰三角形都相似 | 顶角可以不同 |
+
+      **反例——矩形不一定相似**
+
+      $2 \times 4$ 的矩形与 $3 \times 4$ 的矩形：
+      - 对应角都是 $90°$ ✓
+      - 但 $\frac{2}{3} \neq \frac{4}{4}$，对应边不成比例 ✗
+
+      所以这两个矩形**不相似**。
+
+      **符号规范**
+
+      写 $\triangle ABC \sim \triangle DEF$ 时，字母顺序代表对应关系：
+      $A \leftrightarrow D$，$B \leftrightarrow E$，$C \leftrightarrow F$。
+      顺序不能乱写！
+    contentEn: |
+      **Definition**
+
+      Two polygons are **<<相似多边形/similar polygons>>** if:
+      1. **Corresponding angles are equal** (every pair of corresponding interior angles is equal)
+      2. **Corresponding sides are proportional** (all ratios of corresponding sides are equal)
+
+      Written with the symbol $\sim$ meaning "is similar to."
+
+      **<<相似比/similarity ratio>>**
+
+      The common ratio $k = \frac{a'}{a} = \frac{b'}{b} = \cdots$ is called the <<相似比/similarity ratio>>.
+
+      - $k > 1$: the new figure is **larger**
+      - $k = 1$: the figures are **congruent** (congruence is a special case of similarity)
+      - $0 < k < 1$: the new figure is **smaller**
+
+      **Perimeter ratio and area ratio**
+
+      For two similar polygons with <<相似比/similarity ratio>> $k$:
+      - **Perimeter ratio** $= k$ (every side scales by $k$, so the sum scales by $k$)
+      - **Area ratio** $= k^2$ (area is two-dimensional; both dimensions scale by $k$)
+
+      **Which figures are always similar?**
+
+      | Conclusion | Reason |
+      |-----------|--------|
+      | All squares are similar | All angles are $90°$; the side ratio gives $k$ |
+      | All circles are similar | No angle difference; radius ratio gives $k$ |
+      | All equilateral triangles are similar | All angles are $60°$ |
+      | **Not** all rectangles are similar | Angles are all $90°$ but length-to-width ratios may differ |
+      | **Not** all isosceles triangles are similar | The apex angle can differ |
+
+      **Notation rule**
+
+      When writing $\triangle ABC \sim \triangle DEF$, the letter order encodes the correspondence:
+      $A \leftrightarrow D$, $B \leftrightarrow E$, $C \leftrightarrow F$. Never scramble the order!
+
+  - id: similar-triangle-criteria
+    title: <<相似三角形/similar triangles>>的判定
+    titleEn: 'Criteria for <<相似三角形/similar triangles>>'
+    hasVisualization: true
+    content: |
+      判定两个三角形相似，不需要同时验证所有角和所有边。有三条简洁的判定定理：
+
+      **判定一：AA（两角对应相等）**
+
+      如果一个三角形的两个角分别与另一个三角形的两个角对应相等，那么这两个三角形相似。
+
+      为什么只需要两个角？因为三角形内角和为 $180°$，知道两个角，第三个角自动确定。
+
+      $$\angle A = \angle D,\ \angle B = \angle E \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      **判定二：SAS（两边成比例且夹角相等）**
+
+      如果一个三角形的两条边与另一个三角形的两条边对应成比例，且夹角相等，那么这两个三角形相似。
+
+      $$\frac{AB}{DE} = \frac{AC}{DF},\ \angle A = \angle D \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      注意：必须是两边**之比**相等，不是两边**之差**相等；且必须是这两边的**夹角**相等。
+
+      **判定三：SSS（三边对应成比例）**
+
+      如果两个三角形三组对应边的比值都相等，那么这两个三角形相似。
+
+      $$\frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      **与全等判定的对比**
+
+      | | 全等判定 | 相似判定 |
+      |-|---------|---------|
+      | SSS | 三边**相等** | 三边**成比例** |
+      | SAS | 两边相等+夹角相等 | 两边**成比例**+夹角相等 |
+      | AA | 不单独列（由ASA/AAS推出） | **直接成立** |
+
+      **直角三角形的特殊性质——斜边上的高**
+
+      直角三角形 $\triangle ABC$（$\angle C = 90°$）中，从直角顶点 $C$ 向斜边 $AB$ 作高 $CD$，则：
+      - $\triangle ACD \sim \triangle ACB$（共角 $\angle A$，各有一个直角）
+      - $\triangle CBD \sim \triangle CAB$（共角 $\angle B$，各有一个直角）
+      - $\triangle ACD \sim \triangle CBD$（由上两式传递）
+
+      由此可得：$CD^2 = AD \cdot DB$（射影定理），$AC^2 = AD \cdot AB$，$BC^2 = BD \cdot AB$。
+    contentEn: |
+      To prove two triangles are similar, you do not need to verify all angles and all sides. Three concise criteria suffice:
+
+      **Criterion 1: AA (two pairs of equal angles)**
+
+      If two angles of one triangle equal two angles of another, the triangles are similar.
+
+      Why only two angles? Because the angle sum in a triangle is $180°$; knowing two angles determines the third.
+
+      $$\angle A = \angle D,\ \angle B = \angle E \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      **Criterion 2: SAS (two sides proportional with equal included angle)**
+
+      If two sides of one triangle are proportional to two sides of another, and the included angles are equal, the triangles are similar.
+
+      $$\frac{AB}{DE} = \frac{AC}{DF},\ \angle A = \angle D \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      Note: the sides must have equal **ratios** (not equal differences); and the equal angle must be **between** those two sides.
+
+      **Criterion 3: SSS (all three sides proportional)**
+
+      If all three pairs of corresponding sides have equal ratios, the triangles are similar.
+
+      $$\frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \Rightarrow \triangle ABC \sim \triangle DEF$$
+
+      **Comparison with congruence criteria**
+
+      | | Congruence | Similarity |
+      |-|-----------|-----------|
+      | SSS | three sides **equal** | three sides **proportional** |
+      | SAS | two sides equal + included angle equal | two sides **proportional** + included angle equal |
+      | AA | not standalone (follows from ASA/AAS) | **directly valid** |
+
+      **Special property of right triangles — altitude to hypotenuse**
+
+      In right $\triangle ABC$ ($\angle C = 90°$), altitude $CD$ from $C$ to hypotenuse $AB$ creates:
+      - $\triangle ACD \sim \triangle ACB$ (share $\angle A$; each has a right angle)
+      - $\triangle CBD \sim \triangle CAB$ (share $\angle B$; each has a right angle)
+
+      This gives the geometric mean relations: $CD^2 = AD \cdot DB$, $AC^2 = AD \cdot AB$, $BC^2 = BD \cdot AB$.
+
+  - id: similar-triangle-properties
+    title: <<相似三角形/similar triangles>>的性质
+    titleEn: 'Properties of <<相似三角形/similar triangles>>'
+    hasVisualization: true
+    content: |
+      **基本性质**
+
+      设 $\triangle ABC \sim \triangle A'B'C'$，<<相似比/similarity ratio>>为 $k = \frac{AB}{A'B'} = \frac{BC}{B'C'} = \frac{CA}{C'A'}$，则：
+
+      **1. 对应线段之比都等于 $k$**
+
+      不只是三条边，三角形的对应高、对应中线、对应角平分线，比值都等于 $k$：
+      $$\frac{h_a}{h_{a'}} = \frac{m_a}{m_{a'}} = \frac{t_a}{t_{a'}} = k$$
+
+      **2. 周长之比等于 $k$**
+
+      $$\frac{C_{\triangle ABC}}{C_{\triangle A'B'C'}} = \frac{AB + BC + CA}{A'B' + B'C' + C'A'} = k$$
+
+      因为每条边都乘以 $k$，总和也乘以 $k$。
+
+      **3. 面积之比等于 $k^2$**
+
+      $$\frac{S_{\triangle ABC}}{S_{\triangle A'B'C'}} = k^2$$
+
+      **为什么面积比是 $k^2$？**
+
+      面积 $= \frac{1}{2} \times \text{底} \times \text{高}$。
+      底边之比为 $k$，对应高之比也为 $k$（由性质1），
+      所以面积之比 $= k \times k = k^2$。
+
+      这是一个深刻的规律：**线段（一维）的比是 $k$，面积（二维）的比是 $k^2$，体积（三维）的比是 $k^3$**。
+
+      **当 $k = 1$ 时**
+
+      相似退化为全等：三边相等，面积相等，所有对应量都相等。
+      全等是相似的最特殊的情形。
+
+      **实际应用：已知面积求相似比**
+
+      若两个相似三角形面积之比为 $9:4$，则：
+      $$k^2 = \frac{9}{4} \Rightarrow k = \frac{3}{2}$$
+      周长之比 $= k = \frac{3}{2}$，对应边之比 $= \frac{3}{2}$。
+
+      **小结表格**
+
+      | 量 | 比值 |
+      |----|------|
+      | 对应边、高、中线、角平分线 | $k$ |
+      | 周长 | $k$ |
+      | 面积 | $k^2$ |
+    contentEn: |
+      **Core properties**
+
+      Let $\triangle ABC \sim \triangle A'B'C'$ with <<相似比/similarity ratio>> $k = \frac{AB}{A'B'} = \frac{BC}{B'C'} = \frac{CA}{C'A'}$. Then:
+
+      **1. All corresponding lengths have ratio $k$**
+
+      Not just the three sides — corresponding altitudes, medians, and angle bisectors all have ratio $k$:
+      $$\frac{h_a}{h_{a'}} = \frac{m_a}{m_{a'}} = \frac{t_a}{t_{a'}} = k$$
+
+      **2. Perimeter ratio equals $k$**
+
+      $$\frac{C_{\triangle ABC}}{C_{\triangle A'B'C'}} = k$$
+
+      Every side is multiplied by $k$, so their sum is also multiplied by $k$.
+
+      **3. Area ratio equals $k^2$**
+
+      $$\frac{S_{\triangle ABC}}{S_{\triangle A'B'C'}} = k^2$$
+
+      **Why is the area ratio $k^2$?**
+
+      Area $= \frac{1}{2} \times \text{base} \times \text{height}$.
+      The base scales by $k$ and the corresponding height also scales by $k$ (from property 1),
+      so the area scales by $k \times k = k^2$.
+
+      This reveals a deep pattern: **1-D lengths scale by $k$; 2-D areas scale by $k^2$; 3-D volumes scale by $k^3$**.
+
+      **Summary table**
+
+      | Quantity | Ratio |
+      |---------|-------|
+      | Corresponding sides, altitudes, medians, angle bisectors | $k$ |
+      | Perimeter | $k$ |
+      | Area | $k^2$ |
+
+  - id: homothety
+    title: <<位似/homothety>>图形
+    titleEn: '<<位似/homothety>> Figures'
+    hasVisualization: true
+    content: |
+      **什么是<<位似/homothety>>变换？**
+
+      以平面上一个固定点 $O$ 为**<<位似中心/center of homothety>>**，以实数 $k$（$k \neq 0$）为<<相似比/similarity ratio>>，
+      对平面上每一点 $P$，令其像 $P'$ 满足：
+      $$\overrightarrow{OP'} = k \cdot \overrightarrow{OP}$$
+
+      这个变换叫做**<<位似/homothety>>变换**，得到的两个图形叫做<<位似/homothety>>图形。
+
+      **<<位似/homothety>>图形的性质**
+
+      1. **<<位似/homothety>>图形一定是<<相似/similar>>图形**，<<相似比/similarity ratio>>为 $|k|$
+      2. 原图形与像图形的**对应线段平行**（当 $k > 0$ 时同向，当 $k < 0$ 时反向）
+      3. 连接原图形与像图形的对应点，所有连线都**交于<<位似中心/center of homothety>> $O$**
+
+      **作图方法**
+
+      已知 $\triangle ABC$，<<位似中心/center of homothety>> $O$，<<相似比/similarity ratio>> $k = 2$：
+      1. 连接 $OA$，延长到 $A'$，使 $OA' = 2 \cdot OA$
+      2. 连接 $OB$，延长到 $B'$，使 $OB' = 2 \cdot OB$
+      3. 连接 $OC$，延长到 $C'$，使 $OC' = 2 \cdot OC$
+      4. 连接 $A'B'C'$，得到与 $\triangle ABC$ <<相似/similar>>的 $\triangle A'B'C'$，<<相似比/similarity ratio>>为 $2$
+
+      **坐标系中的位似**
+
+      设<<位似中心/center of homothety>>为原点 $O(0,0)$，<<相似比/similarity ratio>>为 $k$，则点 $(x, y)$ 的像为 $(kx, ky)$。
+
+      例：以原点为中心，$k = 3$，点 $A(1, 2)$ 的像为 $A'(3, 6)$。
+
+      **$k$ 的不同取值**
+
+      | $k$ 的范围 | 效果 |
+      |-----------|------|
+      | $k > 1$ | 图形放大，像与原图同侧 |
+      | $0 < k < 1$ | 图形缩小，像与原图同侧 |
+      | $k = 1$ | 恒等变换（图形不变） |
+      | $k < 0$ | 图形在中心另一侧（旋转180°后缩放） |
+      | $k = -1$ | 关于中心的中心对称 |
+
+      **生活中的位似**
+
+      - **投影仪**：胶片上的图像经透镜"放大"投射到幕布，透镜中心就是<<位似中心/center of homothety>>
+      - **照相机**：景物经过镜头"缩小"成像在底片上，镜头光心是<<位似中心/center of homothety>>
+      - **地图比例尺**：$1:10000$ 的地图，每段距离缩小到 $\frac{1}{10000}$
+      - **建筑蓝图**：$1:100$ 的图纸，是实际建筑的位似缩放
+    contentEn: |
+      **What is a <<位似/homothety>> transformation?**
+
+      Fix a point $O$ in the plane as the **<<位似中心/center of homothety>>** and a non-zero real number $k$ as the scale factor.
+      For every point $P$, define its image $P'$ by:
+      $$\overrightarrow{OP'} = k \cdot \overrightarrow{OP}$$
+
+      This is a **<<位似/homothety>>** transformation; the original figure and its image are called homothetic figures.
+
+      **Properties of homothetic figures**
+
+      1. Homothetic figures are always **<<相似/similar>>**, with <<相似比/similarity ratio>> $|k|$.
+      2. Each pair of corresponding sides is **parallel** (same direction if $k > 0$; opposite if $k < 0$).
+      3. Lines joining corresponding points all pass through the **<<位似中心/center of homothety>> $O$**.
+
+      **Construction**
+
+      Given $\triangle ABC$, center $O$, scale factor $k = 2$:
+      1. Extend $OA$ to $A'$ so that $OA' = 2 \cdot OA$.
+      2. Extend $OB$ to $B'$ so that $OB' = 2 \cdot OB$.
+      3. Extend $OC$ to $C'$ so that $OC' = 2 \cdot OC$.
+      4. Connect $A'B'C'$; this gives $\triangle A'B'C' \sim \triangle ABC$ with ratio $2$.
+
+      **Homothety in coordinates**
+
+      With center at the origin $O(0,0)$ and scale factor $k$, the image of $(x, y)$ is $(kx, ky)$.
+
+      Example: center $O$, $k = 3$, then $A(1,2) \mapsto A'(3,6)$.
+
+      **Real-life examples**
+
+      - **Projector**: the lens center is the <<位似中心/center of homothety>>; the slide is enlarged onto the screen.
+      - **Camera**: the optical center maps the scene (shrunk) onto the sensor.
+      - **Map scale**: a 1:10000 map shrinks every distance by a factor of $\frac{1}{10000}$.
+      - **Blueprints**: a 1:100 drawing is a homothetic reduction of the actual building.
+
+realLife:
+  title: 相似在生活中——从地图到宇宙
+  titleEn: Similarity in Daily Life — From Maps to the Universe
+  intro: |
+    <<相似/similar>>无处不在。只要形状相同、大小不同，就是相似的应用。
+  introEn: |
+    <<相似/similar>> figures are everywhere. Whenever shapes match but sizes differ, similarity is at work.
+  examples:
+    - title: 地图与实地
+      titleEn: Maps and the real world
+      description: |
+        北京地铁线路图的比例尺约为 $1:200000$，即图上 $1\ \text{cm}$ 代表实地 $2\ \text{km}$。
+        地图与实地是<<位似/homothety>>关系，<<相似比/similarity ratio>> $k = \frac{1}{200000}$。
+        用比例可以估算：图上两站间距 $3\ \text{cm}$，实地距离约 $3 \times 2 = 6\ \text{km}$。
+      descriptionEn: |
+        A Beijing subway map uses a scale of roughly $1:200000$, meaning $1\ \text{cm}$ on the map represents $2\ \text{km}$ on the ground.
+        The map and reality are homothetic with <<相似比/similarity ratio>> $k = \frac{1}{200000}$.
+        If two stations are $3\ \text{cm}$ apart on the map, the real distance is about $3 \times 2 = 6\ \text{km}$.
+    - title: 影子测高
+      titleEn: Measuring heights with shadows
+      description: |
+        阳光下，竖直物体和其影子构成相似三角形。
+        若一根 $2\ \text{m}$ 高的竹竿影子长 $3\ \text{m}$，同时测得大树的影子长 $15\ \text{m}$，
+        由 AA 相似（阳光角度相同，都有直角），大树高 $= \frac{2}{3} \times 15 = 10\ \text{m}$。
+        古希腊的泰勒斯就是用这种方法测出了埃及金字塔的高度！
+      descriptionEn: |
+        In sunlight, a vertical object and its shadow form a right triangle. Two such triangles are similar by AA (same sun angle, both have a right angle).
+        If a $2\ \text{m}$ pole casts a $3\ \text{m}$ shadow and a tree casts a $15\ \text{m}$ shadow, then the tree is $\frac{2}{3} \times 15 = 10\ \text{m}$ tall.
+        The ancient Greek Thales used exactly this method to measure the height of the Egyptian pyramids!
+    - title: 照片缩放
+      titleEn: Photo resizing
+      description: |
+        手机拍的照片是 $4000 \times 3000$ 像素，打印成 $8\ \text{cm} \times 6\ \text{cm}$ 的照片。
+        长宽比 $\frac{4000}{3000} = \frac{8}{6} = \frac{4}{3}$ 保持不变，这就是相似变换。
+        若只改变一个方向（拉伸），就不是相似，画面会变形。
+      descriptionEn: |
+        A $4000 \times 3000$ pixel photo printed as $8\ \text{cm} \times 6\ \text{cm}$: the aspect ratio $\frac{4}{3}$ is preserved — a similarity transformation.
+        If only one dimension is scaled (stretching), it is no longer similar and the image distorts.
+    - title: 分形与自相似
+      titleEn: Fractals and self-similarity
+      description: |
+        雪花的每一个小分支与整体形状相似，这叫做自相似。
+        科赫雪花、谢尔宾斯基三角形都是经典的分形图案。
+        在自然界，蕨叶的每一片小叶与整片叶子相似，树枝的分叉也有相似的规律。
+      descriptionEn: |
+        Every small branch of a snowflake is similar to the whole — this is called self-similarity (a fractal).
+        The Koch snowflake and Sierpinski triangle are classic fractals. In nature, each leaflet of a fern is similar to the whole leaf.
+
+examples:
+  - id: ex1
+    title: 用 AA 判定相似，求未知边长
+    titleEn: Using AA to prove similarity and find an unknown side
+    type: proof-and-calculation
+    problem: |
+      在 $\triangle ABC$ 中，$D$ 是 $BC$ 上一点，$\angle ADB = \angle C$。
+      已知 $BD = 4$，$AD = 6$，$AB = 8$。求 $BC$ 的长。
+    problemEn: |
+      In $\triangle ABC$, $D$ is a point on $BC$ with $\angle ADB = \angle C$.
+      Given $BD = 4$, $AD = 6$, $AB = 8$, find the length of $BC$.
+    solution:
+      steps:
+        - step: 找相似三角形
+          stepEn: Identify the similar triangles
+          detail: |
+            在 $\triangle ABD$ 和 $\triangle ABC$ 中：
+            - $\angle ABD = \angle ABC$（公共角）
+            - $\angle ADB = \angle ACB$（已知条件）
+            由 **AA 判定**，$\triangle ABD \sim \triangle ABC$。
+          detailEn: |
+            In $\triangle ABD$ and $\triangle ABC$:
+            - $\angle ABD = \angle ABC$ (common angle)
+            - $\angle ADB = \angle ACB$ (given)
+            By **AA**, $\triangle ABD \sim \triangle ABC$.
+        - step: 写出对应边的比例
+          stepEn: Write the proportion of corresponding sides
+          detail: |
+            对应关系：$A \leftrightarrow A$，$B \leftrightarrow B$，$D \leftrightarrow C$。
+            $$\frac{AB}{AC} = \frac{BD}{BC} = \frac{AD}{AB}$$
+            用已知量：$\frac{AD}{AB} = \frac{6}{8} = \frac{3}{4}$，所以<<相似比/similarity ratio>> $k = \frac{3}{4}$。
+          detailEn: |
+            The correspondence is $A \leftrightarrow A$, $B \leftrightarrow B$, $D \leftrightarrow C$.
+            $$\frac{AB}{AC} = \frac{BD}{BC} = \frac{AD}{AB}$$
+            Using known values: $\frac{AD}{AB} = \frac{6}{8} = \frac{3}{4}$, so <<相似比/similarity ratio>> $k = \frac{3}{4}$.
+        - step: 求 BC
+          stepEn: Find BC
+          detail: |
+            $$\frac{BD}{BC} = \frac{3}{4} \Rightarrow BC = \frac{4 \times BD}{3} = \frac{4 \times 4}{3} = \frac{16}{3}$$
+          detailEn: |
+            $$\frac{BD}{BC} = \frac{3}{4} \Rightarrow BC = \frac{4 \times 4}{3} = \frac{16}{3}$$
+      answer: '$BC = \frac{16}{3}$'
+      answerEn: '$BC = \frac{16}{3}$'
+
+  - id: ex2
+    title: 应用平行线比例定理求线段长
+    titleEn: Applying the proportionality theorem to find a segment length
+    type: calculation
+    problem: |
+      在 $\triangle ABC$ 中，$DE \parallel BC$，$D$ 在 $AB$ 上，$E$ 在 $AC$ 上。
+      已知 $AD = 3$，$DB = 5$，$AE = 4$。求 $EC$ 的长。
+    problemEn: |
+      In $\triangle ABC$, $DE \parallel BC$ with $D$ on $AB$ and $E$ on $AC$.
+      Given $AD = 3$, $DB = 5$, $AE = 4$, find $EC$.
+    solution:
+      steps:
+        - step: 应用三角形比例定理
+          stepEn: Apply the triangle proportionality theorem
+          detail: |
+            由 $DE \parallel BC$，平行线分线段成比例定理推论：
+            $$\frac{AD}{DB} = \frac{AE}{EC}$$
+          detailEn: |
+            Since $DE \parallel BC$, by the triangle proportionality theorem:
+            $$\frac{AD}{DB} = \frac{AE}{EC}$$
+        - step: 代入已知量求解
+          stepEn: Substitute and solve
+          detail: |
+            $$\frac{3}{5} = \frac{4}{EC}$$
+            交叉相乘：$3 \cdot EC = 5 \times 4 = 20$
+            $$EC = \frac{20}{3}$$
+          detailEn: |
+            $$\frac{3}{5} = \frac{4}{EC}$$
+            Cross-multiply: $3 \cdot EC = 20$
+            $$EC = \frac{20}{3}$$
+      answer: '$EC = \frac{20}{3}$'
+      answerEn: '$EC = \frac{20}{3}$'
+
+  - id: ex3
+    title: 直角三角形斜边上的高（射影定理）
+    titleEn: Altitude to the hypotenuse in a right triangle
+    type: proof-and-calculation
+    problem: |
+      直角三角形 $\triangle ABC$ 中，$\angle ACB = 90°$，$CD \perp AB$，垂足为 $D$。
+      已知 $AD = 3$，$DB = 12$。
+      （1）证明 $\triangle ACD \sim \triangle ABC$；
+      （2）求 $CD$、$AC$、$BC$ 的长。
+    problemEn: |
+      In right triangle $\triangle ABC$, $\angle ACB = 90°$, $CD \perp AB$ with foot $D$.
+      Given $AD = 3$, $DB = 12$.
+      (1) Prove that $\triangle ACD \sim \triangle ABC$.
+      (2) Find the lengths of $CD$, $AC$, and $BC$.
+    solution:
+      steps:
+        - step: 证明相似（AA）
+          stepEn: Prove similarity (AA)
+          detail: |
+            在 $\triangle ACD$ 和 $\triangle ABC$ 中：
+            - $\angle ADC = \angle ACB = 90°$（$CD \perp AB$，$\angle ACB = 90°$）
+            - $\angle A = \angle A$（公共角）
+            由 **AA 判定**，$\triangle ACD \sim \triangle ABC$。
+          detailEn: |
+            In $\triangle ACD$ and $\triangle ABC$:
+            - $\angle ADC = \angle ACB = 90°$ ($CD \perp AB$; $\angle ACB = 90°$)
+            - $\angle A = \angle A$ (common angle)
+            By **AA**, $\triangle ACD \sim \triangle ABC$.
+        - step: 求 AB
+          stepEn: Find AB
+          detail: |
+            $AB = AD + DB = 3 + 12 = 15$
+          detailEn: |
+            $AB = AD + DB = 3 + 12 = 15$
+        - step: 由相似比求各线段
+          stepEn: Use similarity ratios to find the lengths
+          detail: |
+            由 $\triangle ACD \sim \triangle ABC$，对应边成比例：
+            $$\frac{AD}{AC} = \frac{AC}{AB} \Rightarrow AC^2 = AD \cdot AB = 3 \times 15 = 45 \Rightarrow AC = 3\sqrt{5}$$
+
+            同理，由 $\triangle BCD \sim \triangle BAC$：
+            $$BC^2 = BD \cdot BA = 12 \times 15 = 180 \Rightarrow BC = 6\sqrt{5}$$
+
+            由射影定理 $CD^2 = AD \cdot DB$：
+            $$CD^2 = 3 \times 12 = 36 \Rightarrow CD = 6$$
+          detailEn: |
+            From $\triangle ACD \sim \triangle ABC$:
+            $$AC^2 = AD \cdot AB = 3 \times 15 = 45 \Rightarrow AC = 3\sqrt{5}$$
+
+            From $\triangle BCD \sim \triangle BAC$:
+            $$BC^2 = BD \cdot BA = 12 \times 15 = 180 \Rightarrow BC = 6\sqrt{5}$$
+
+            By the geometric mean relation $CD^2 = AD \cdot DB$:
+            $$CD^2 = 3 \times 12 = 36 \Rightarrow CD = 6$$
+        - step: 验证勾股定理
+          stepEn: Verify with the Pythagorean theorem
+          detail: |
+            $AC^2 + BC^2 = 45 + 180 = 225 = 15^2 = AB^2$ ✓
+          detailEn: |
+            $AC^2 + BC^2 = 45 + 180 = 225 = 15^2 = AB^2$ ✓
+      answer: '$CD = 6$，$AC = 3\sqrt{5}$，$BC = 6\sqrt{5}$'
+      answerEn: '$CD = 6$, $AC = 3\sqrt{5}$, $BC = 6\sqrt{5}$'
+
+  - id: ex4
+    title: 相似比与面积比的综合计算
+    titleEn: Combined calculation with similarity ratio and area ratio
+    type: calculation
+    problem: |
+      两个相似三角形 $\triangle ABC \sim \triangle DEF$，已知 $AB = 6$，$DE = 4$。
+      （1）求<<相似比/similarity ratio>> $k$ 和面积比 $\frac{S_{\triangle ABC}}{S_{\triangle DEF}}$；
+      （2）若 $\triangle DEF$ 的面积为 $8\ \text{cm}^2$，求 $\triangle ABC$ 的面积；
+      （3）若 $\triangle ABC$ 的周长为 $18\ \text{cm}$，求 $\triangle DEF$ 的周长。
+    problemEn: |
+      Two similar triangles $\triangle ABC \sim \triangle DEF$ with $AB = 6$ and $DE = 4$.
+      (1) Find the <<相似比/similarity ratio>> $k$ and the area ratio $\frac{S_{\triangle ABC}}{S_{\triangle DEF}}$.
+      (2) If the area of $\triangle DEF$ is $8\ \text{cm}^2$, find the area of $\triangle ABC$.
+      (3) If the perimeter of $\triangle ABC$ is $18\ \text{cm}$, find the perimeter of $\triangle DEF$.
+    solution:
+      steps:
+        - step: 求相似比和面积比
+          stepEn: Find the similarity ratio and area ratio
+          detail: |
+            <<相似比/similarity ratio>> $k = \frac{AB}{DE} = \frac{6}{4} = \frac{3}{2}$
+
+            面积比 $= k^2 = \left(\frac{3}{2}\right)^2 = \frac{9}{4}$
+          detailEn: |
+            <<相似比/similarity ratio>> $k = \frac{AB}{DE} = \frac{6}{4} = \frac{3}{2}$
+
+            Area ratio $= k^2 = \left(\frac{3}{2}\right)^2 = \frac{9}{4}$
+        - step: 求面积
+          stepEn: Find the area
+          detail: |
+            $$S_{\triangle ABC} = \frac{9}{4} \times 8 = 18\ \text{cm}^2$$
+          detailEn: |
+            $$S_{\triangle ABC} = \frac{9}{4} \times 8 = 18\ \text{cm}^2$$
+        - step: 求周长
+          stepEn: Find the perimeter
+          detail: |
+            周长比 $= k = \frac{3}{2}$，所以：
+            $$C_{\triangle DEF} = \frac{2}{3} \times 18 = 12\ \text{cm}$$
+          detailEn: |
+            Perimeter ratio $= k = \frac{3}{2}$, so:
+            $$C_{\triangle DEF} = \frac{2}{3} \times 18 = 12\ \text{cm}$$
+      answer: '(1) $k = \frac{3}{2}$，面积比 $= \frac{9}{4}$；(2) $S_{\triangle ABC} = 18\ \text{cm}^2$；(3) $C_{\triangle DEF} = 12\ \text{cm}$'
+      answerEn: '(1) $k = \frac{3}{2}$, area ratio $= \frac{9}{4}$; (2) $S_{\triangle ABC} = 18\ \text{cm}^2$; (3) $C_{\triangle DEF} = 12\ \text{cm}$'
+
+  - id: ex5
+    title: 位似变换作图与坐标计算
+    titleEn: Homothety construction and coordinate calculation
+    type: calculation
+    problem: |
+      在直角坐标系中，$\triangle ABC$ 的顶点为 $A(1, 2)$，$B(3, 2)$，$C(3, 5)$。
+      以原点 $O(0,0)$ 为<<位似中心/center of homothety>>，<<相似比/similarity ratio>> $k = 2$，
+      作 $\triangle ABC$ 的<<位似/homothety>>图形 $\triangle A'B'C'$。
+      （1）写出 $A', B', C'$ 的坐标；
+      （2）求 $\triangle ABC$ 和 $\triangle A'B'C'$ 的面积之比；
+      （3）验证 $O, A, A'$ 三点共线。
+    problemEn: |
+      In a coordinate plane, $\triangle ABC$ has vertices $A(1,2)$, $B(3,2)$, $C(3,5)$.
+      With center of homothety $O(0,0)$ and scale factor $k = 2$, construct the homothetic image $\triangle A'B'C'$.
+      (1) Write the coordinates of $A'$, $B'$, $C'$.
+      (2) Find the ratio of the areas of $\triangle ABC$ and $\triangle A'B'C'$.
+      (3) Verify that $O$, $A$, $A'$ are collinear.
+    solution:
+      steps:
+        - step: 求各顶点的像
+          stepEn: Find the image of each vertex
+          detail: |
+            以原点为中心，$k = 2$：$(x,y) \mapsto (2x, 2y)$
+            - $A(1,2) \mapsto A'(2, 4)$
+            - $B(3,2) \mapsto B'(6, 4)$
+            - $C(3,5) \mapsto C'(6, 10)$
+          detailEn: |
+            With center at origin, $k = 2$: $(x,y) \mapsto (2x, 2y)$
+            - $A(1,2) \mapsto A'(2,4)$
+            - $B(3,2) \mapsto B'(6,4)$
+            - $C(3,5) \mapsto C'(6,10)$
+        - step: 求面积之比
+          stepEn: Find the area ratio
+          detail: |
+            $\triangle ABC$：底 $BC = 5 - 2 = 3$，高（水平距离）$= 3 - 1 = 2$，面积 $= \frac{1}{2} \times 3 \times 2 = 3$。
+
+            $\triangle A'B'C'$：底 $B'C' = 10 - 4 = 6$，高 $= 6 - 2 = 4$，面积 $= \frac{1}{2} \times 6 \times 4 = 12$。
+
+            面积比 $= \frac{3}{12} = \frac{1}{4} = \frac{1}{k^2}$ ✓
+          detailEn: |
+            $\triangle ABC$: base $BC = 3$, height $AB = 2$, area $= \frac{1}{2} \times 3 \times 2 = 3$.
+
+            $\triangle A'B'C'$: base $B'C' = 6$, height $A'B' = 4$, area $= \frac{1}{2} \times 6 \times 4 = 12$.
+
+            Area ratio $= \frac{3}{12} = \frac{1}{4}$, consistent with $\frac{1}{k^2} = \frac{1}{4}$ ✓
+        - step: 验证三点共线
+          stepEn: Verify collinearity
+          detail: |
+            $O(0,0)$，$A(1,2)$，$A'(2,4)$：
+            斜率 $OA = \frac{2-0}{1-0} = 2$，斜率 $OA' = \frac{4-0}{2-0} = 2$。
+            斜率相同且过同一点 $O$，所以 $O, A, A'$ 三点共线。✓
+          detailEn: |
+            $O(0,0)$, $A(1,2)$, $A'(2,4)$:
+            Slope $OA = \frac{2}{1} = 2$; slope $OA' = \frac{4}{2} = 2$.
+            Same slope through the same point $O$, so $O$, $A$, $A'$ are collinear. ✓
+      answer: '(1) $A''(2,4)$，$B''(6,4)$，$C''(6,10)$；(2) 面积比 $1:4$；(3) 三点斜率均为2，共线'
+      answerEn: '(1) $A''(2,4)$, $B''(6,4)$, $C''(6,10)$; (2) area ratio $1:4$; (3) all three have slope 2 through $O$, collinear'
+
+exercises:
+  - id: q1
+    type: fill-in
+    question: '四条线段 $a = 2, b = 3, c = 6, d = 9$，这四条线段是否成比例？（填"是"或"否"）'
+    questionEn: 'Four segments $a=2, b=3, c=6, d=9$. Do they form a proportion? (answer "yes" or "no")'
+    answer: 是
+    answerEn: yes
+    explanation: '$\frac{2}{3} = \frac{6}{9} = \frac{2}{3}$，成比例。交叉相乘：$2 \times 9 = 18 = 3 \times 6$ ✓'
+    explanationEn: '$\frac{2}{3} = \frac{6}{9}$; cross-multiply: $2 \times 9 = 18 = 3 \times 6$ ✓'
+
+  - id: q2
+    type: fill-in
+    question: '已知 $\frac{x}{4} = \frac{6}{8}$，求 $x$ 的值。'
+    questionEn: 'Given $\frac{x}{4} = \frac{6}{8}$, find $x$.'
+    answer: '3'
+    answerEn: '3'
+    explanation: '交叉相乘：$8x = 24$，$x = 3$。'
+    explanationEn: 'Cross-multiply: $8x = 24$, so $x = 3$.'
+
+  - id: q3
+    type: fill-in
+    question: '在 $\triangle ABC$ 中，$DE \parallel BC$，$D$ 在 $AB$ 上，$E$ 在 $AC$ 上。已知 $AD = 2$，$AB = 6$，$AE = 3$，求 $AC$。'
+    questionEn: 'In $\triangle ABC$, $DE \parallel BC$ with $D$ on $AB$ and $E$ on $AC$. Given $AD = 2$, $AB = 6$, $AE = 3$, find $AC$.'
+    answer: '9'
+    answerEn: '9'
+    explanation: |
+      由平行线分线段成比例：$\frac{AD}{AB} = \frac{AE}{AC}$，即 $\frac{2}{6} = \frac{3}{AC}$，$AC = 9$。
+    explanationEn: |
+      By the proportionality theorem: $\frac{AD}{AB} = \frac{AE}{AC}$, so $\frac{2}{6} = \frac{3}{AC}$, giving $AC = 9$.
+
+  - id: q4
+    type: multiple-choice
+    question: '下列说法正确的是？'
+    questionEn: 'Which statement is correct?'
+    options:
+      - A. 所有矩形都相似
+      - B. 所有等腰三角形都相似
+      - C. 所有正方形都相似
+      - D. 所有菱形都相似
+    optionsEn:
+      - A. All rectangles are similar
+      - B. All isosceles triangles are similar
+      - C. All squares are similar
+      - D. All rhombuses are similar
+    answer: C
+    answerEn: C
+    explanation: |
+      正方形：角都是 $90°$，边之比就是<<相似比/similarity ratio>>，任意两个正方形都相似。
+      矩形：角都是 $90°$，但长宽比可以不同，如 $2 \times 3$ 和 $2 \times 5$ 不相似。
+    explanationEn: |
+      Squares: all angles are $90°$ and the side ratio gives $k$ — any two squares are similar.
+      Rectangles: all angles are $90°$ but the length-to-width ratio can differ (e.g., $2\times3$ and $2\times5$ are not similar).
+
+  - id: q5
+    type: fill-in
+    question: '两个相似三角形的<<相似比/similarity ratio>>为 $3:2$，较大三角形的面积为 $27\ \text{cm}^2$，求较小三角形的面积。'
+    questionEn: 'Two similar triangles have <<相似比/similarity ratio>> $3:2$. The larger triangle has area $27\ \text{cm}^2$. Find the area of the smaller triangle.'
+    answer: '$12\ \text{cm}^2$'
+    answerEn: '$12\ \text{cm}^2$'
+    explanation: |
+      面积比 $= k^2 = \frac{9}{4}$。$\frac{27}{S} = \frac{9}{4}$，$S = 12\ \text{cm}^2$。
+    explanationEn: |
+      Area ratio $= k^2 = \frac{9}{4}$. Then $\frac{27}{S} = \frac{9}{4}$, so $S = 12\ \text{cm}^2$.
+
+  - id: q6
+    type: true-false
+    question: '若两个三角形有两组对应边成比例，则这两个三角形一定相似。'
+    questionEn: 'If two triangles have two pairs of proportional corresponding sides, they must be similar.'
+    answer: '错'
+    answerEn: 'False'
+    explanation: |
+      SAS 相似需要**两边成比例且夹角相等**。仅有两边成比例，缺少夹角条件，不能判定相似。
+    explanationEn: |
+      SAS similarity requires **proportional sides AND equal included angle**. Two proportional sides alone are insufficient.
+
+  - id: q7
+    type: fill-in
+    question: '在直角三角形 $\triangle ABC$ 中，$\angle C = 90°$，$CD \perp AB$ 于 $D$，$AD = 4$，$BD = 9$。求 $CD$。'
+    questionEn: 'In right $\triangle ABC$, $\angle C = 90°$, $CD \perp AB$ at $D$, $AD = 4$, $BD = 9$. Find $CD$.'
+    answer: '6'
+    answerEn: '6'
+    explanation: |
+      由射影定理：$CD^2 = AD \cdot BD = 4 \times 9 = 36$，$CD = 6$。
+    explanationEn: |
+      By the geometric mean relation: $CD^2 = AD \cdot BD = 4 \times 9 = 36$, so $CD = 6$.
+
+  - id: q8
+    type: multiple-choice
+    question: '$\triangle ABC \sim \triangle DEF$，$\triangle ABC$ 的周长为 $15$，$\triangle DEF$ 的周长为 $10$，则面积比 $\frac{S_{\triangle ABC}}{S_{\triangle DEF}}$ 为？'
+    questionEn: '$\triangle ABC \sim \triangle DEF$ with perimeter of $\triangle ABC$ equal to $15$ and perimeter of $\triangle DEF$ equal to $10$. Find the area ratio $\frac{S_{\triangle ABC}}{S_{\triangle DEF}}$.'
+    options:
+      - 'A. $\frac{3}{2}$'
+      - 'B. $\frac{9}{4}$'
+      - 'C. $\frac{15}{10}$'
+      - 'D. $\frac{27}{8}$'
+    optionsEn:
+      - 'A. $\frac{3}{2}$'
+      - 'B. $\frac{9}{4}$'
+      - 'C. $\frac{15}{10}$'
+      - 'D. $\frac{27}{8}$'
+    answer: B
+    answerEn: B
+    explanation: |
+      周长比 $= k = \frac{15}{10} = \frac{3}{2}$。面积比 $= k^2 = \frac{9}{4}$。
+    explanationEn: |
+      Perimeter ratio $= k = \frac{3}{2}$. Area ratio $= k^2 = \frac{9}{4}$.
+
+  - id: q9
+    type: fill-in
+    question: '以原点为<<位似中心/center of homothety>>，$k = \frac{1}{2}$，点 $P(6, 4)$ 的像 $P''$ 的坐标是？'
+    questionEn: 'With the origin as <<位似中心/center of homothety>> and scale factor $k = \frac{1}{2}$, what are the coordinates of the image $P''$ of point $P(6,4)$?'
+    answer: '$(3, 2)$'
+    answerEn: '$(3, 2)$'
+    explanation: '$(x, y) \mapsto \left(\frac{1}{2}x, \frac{1}{2}y\right)$，所以 $P(6,4) \mapsto P''(3,2)$。'
+    explanationEn: '$(x,y) \mapsto \left(\frac{1}{2}x, \frac{1}{2}y\right)$, so $P(6,4) \mapsto P''(3,2)$.'
+
+  - id: q10
+    type: fill-in
+    question: '两个相似图形的面积比为 $16:9$，则它们的周长比为？'
+    questionEn: 'Two similar figures have area ratio $16:9$. What is their perimeter ratio?'
+    answer: '$4:3$'
+    answerEn: '$4:3$'
+    explanation: |
+      面积比 $= k^2 = \frac{16}{9}$，所以 $k = \frac{4}{3}$。周长比 $= k = \frac{4}{3}$，即 $4:3$。
+    explanationEn: |
+      Area ratio $= k^2 = \frac{16}{9}$, so $k = \frac{4}{3}$. Perimeter ratio $= k = \frac{4}{3}$, i.e., $4:3$.
+
+  - id: q11
+    type: fill-in
+    question: |
+      $l_1 \parallel l_2 \parallel l_3$，截线 $a$ 上截得 $AB = 4, BC = 6$，截线 $b$ 上截得 $DE = ?$，$EF = 9$。求 $DE$。
+    questionEn: |
+      Lines $l_1 \parallel l_2 \parallel l_3$ cut transversal $a$ into $AB = 4$ and $BC = 6$, and transversal $b$ into $DE = ?$ and $EF = 9$. Find $DE$.
+    answer: '6'
+    answerEn: '6'
+    explanation: |
+      $\frac{AB}{BC} = \frac{DE}{EF}$，即 $\frac{4}{6} = \frac{DE}{9}$，$DE = \frac{4 \times 9}{6} = 6$。
+    explanationEn: |
+      $\frac{AB}{BC} = \frac{DE}{EF}$, so $\frac{4}{6} = \frac{DE}{9}$, giving $DE = 6$.
+
+  - id: q12
+    type: multiple-choice
+    question: '判断以下哪组条件能推出 $\triangle ABC \sim \triangle DEF$？'
+    questionEn: 'Which set of conditions proves $\triangle ABC \sim \triangle DEF$?'
+    options:
+      - 'A. $AB = DE, \angle A = \angle D$'
+      - 'B. $\frac{AB}{DE} = \frac{BC}{EF}, \angle A = \angle D$'
+      - 'C. $\frac{AB}{DE} = \frac{BC}{EF}, \angle B = \angle E$'
+      - 'D. $AB = 2DE, BC = 2EF$'
+    optionsEn:
+      - 'A. $AB = DE, \angle A = \angle D$'
+      - 'B. $\frac{AB}{DE} = \frac{BC}{EF}, \angle A = \angle D$'
+      - 'C. $\frac{AB}{DE} = \frac{BC}{EF}, \angle B = \angle E$'
+      - 'D. $AB = 2DE, BC = 2EF$'
+    answer: C
+    answerEn: C
+    explanation: |
+      C：两边之比相等（$\frac{AB}{DE} = \frac{BC}{EF}$），且夹角 $\angle B = \angle E$ 相等，满足 **SAS 判定**。
+      B：$\angle A$ 是 $AB$ 和 $AC$ 的夹角，不是 $AB$ 和 $BC$ 的夹角，SAS 不满足。
+      D：只有两边成比例，无角的条件，不足。
+    explanationEn: |
+      C: two sides proportional AND the **included** angle $\angle B = \angle E$ — this is SAS similarity.
+      B: $\angle A$ is between $AB$ and $AC$, not between $AB$ and $BC$ — SAS not satisfied.
+      D: only two sides proportional, no angle condition — insufficient.
+
+  - id: q13
+    type: fill-in
+    question: '在 $\triangle ABC$ 中，$AB = 10, AC = 6, BC = 8$；在 $\triangle DEF$ 中，$DE = 5, DF = 3, EF = 4$。这两个三角形相似吗？若相似，写出<<相似比/similarity ratio>>。'
+    questionEn: 'In $\triangle ABC$: $AB=10, AC=6, BC=8$. In $\triangle DEF$: $DE=5, DF=3, EF=4$. Are they similar? If so, state the <<相似比/similarity ratio>>.'
+    answer: '相似，$k = 2$（$\triangle ABC \sim \triangle DEF$）'
+    answerEn: 'Similar; $k = 2$ ($\triangle ABC \sim \triangle DEF$)'
+    explanation: |
+      $\frac{AB}{DE} = \frac{10}{5} = 2$，$\frac{AC}{DF} = \frac{6}{3} = 2$，$\frac{BC}{EF} = \frac{8}{4} = 2$。
+      三对应边之比均为 $2$，由 **SSS 判定**，$\triangle ABC \sim \triangle DEF$，<<相似比/similarity ratio>> $k = 2$。
+    explanationEn: |
+      $\frac{AB}{DE} = \frac{10}{5} = 2$, $\frac{AC}{DF} = \frac{6}{3} = 2$, $\frac{BC}{EF} = \frac{8}{4} = 2$.
+      All three ratios equal $2$; by **SSS**, $\triangle ABC \sim \triangle DEF$ with <<相似比/similarity ratio>> $k = 2$.
+
+examPrep:
+  title: 章末提升
+  titleEn: Chapter Challenge
+  intro: |
+    本章提升题综合考查<<相似/similar>>的判定、性质与计算，包含易错点和多步推理题。
+  introEn: |
+    These challenge problems test the full range of <<相似/similar>> figure criteria, properties, and calculations, including common pitfalls and multi-step reasoning.
+  problems:
+    - id: ep1
+      type: proof
+      question: |
+        在 $\triangle ABC$ 中，$\angle BAC = 90°$，$AD \perp BC$ 于 $D$。
+        证明：$\triangle ABD \sim \triangle CAD$，并由此推导出 $AD^2 = BD \cdot DC$。
+      questionEn: |
+        In $\triangle ABC$, $\angle BAC = 90°$ and $AD \perp BC$ at $D$.
+        Prove that $\triangle ABD \sim \triangle CAD$, and deduce that $AD^2 = BD \cdot DC$.
+      answer: |
+        **证明：**
+
+        在 $\triangle ABD$ 和 $\triangle CAD$ 中：
+        - $\angle ADB = \angle ADC = 90°$（$AD \perp BC$）
+        - 由 $\triangle ABD$ 中 $\angle ADB = 90°$：$\angle ABD + \angle BAD = 90°$
+        - 由 $\angle BAC = 90°$：$\angle BAD + \angle CAD = 90°$
+        - 因此 $\angle ABD = \angle CAD$
+
+        由 **AA 判定**，$\triangle ABD \sim \triangle CAD$。
+
+        由相似三角形对应边成比例：
+        $$\frac{AD}{CD} = \frac{BD}{AD} \Rightarrow AD^2 = BD \cdot DC \qquad \blacksquare$$
+      answerEn: |
+        **Proof:**
+
+        In $\triangle ABD$ and $\triangle CAD$:
+        - $\angle ADB = \angle ADC = 90°$ ($AD \perp BC$)
+        - From $\triangle ABD$: $\angle ABD + \angle BAD = 90°$; from $\angle BAC = 90°$: $\angle BAD + \angle CAD = 90°$; therefore $\angle ABD = \angle CAD$
+
+        By **AA**, $\triangle ABD \sim \triangle CAD$.
+
+        Corresponding sides give:
+        $$\frac{AD}{CD} = \frac{BD}{AD} \implies AD^2 = BD \cdot DC \qquad \blacksquare$$
+
+    - id: ep2
+      type: calculation
+      question: |
+        在梯形 $ABCD$ 中，$AB \parallel CD$，对角线 $AC$ 与 $BD$ 交于点 $O$。
+        已知 $AB = 6$，$CD = 4$，$\triangle AOB$ 的面积为 $18$。
+        （1）证明 $\triangle AOB \sim \triangle COD$；
+        （2）求 $\triangle COD$ 的面积；
+        （3）求 $\triangle AOD$ 的面积。
+      questionEn: |
+        In trapezoid $ABCD$, $AB \parallel CD$, and diagonals $AC$ and $BD$ meet at $O$.
+        Given $AB = 6$, $CD = 4$, and the area of $\triangle AOB$ is $18$.
+        (1) Prove $\triangle AOB \sim \triangle COD$.
+        (2) Find the area of $\triangle COD$.
+        (3) Find the area of $\triangle AOD$.
+      answer: |
+        **(1) 证明：**
+
+        在 $\triangle AOB$ 和 $\triangle COD$ 中：
+        - $\angle AOB = \angle COD$（对顶角）
+        - $\angle OAB = \angle OCD$（$AB \parallel CD$，内错角）
+
+        由 **AA 判定**，$\triangle AOB \sim \triangle COD$。
+
+        **(2) 求 $\triangle COD$ 的面积：**
+
+        <<相似比/similarity ratio>> $k = \frac{AB}{CD} = \frac{6}{4} = \frac{3}{2}$，面积比 $= k^2 = \frac{9}{4}$。
+
+        $$S_{\triangle COD} = \frac{4}{9} \times 18 = 8$$
+
+        **(3) 求 $\triangle AOD$ 的面积：**
+
+        利用面积的几何平均关系：$S_{\triangle AOD}^2 = S_{\triangle AOB} \cdot S_{\triangle COD} = 18 \times 8 = 144$，
+
+        所以 $S_{\triangle AOD} = 12$。
+
+        （验证：$S_{\triangle AOD} = S_{\triangle BOC} = 12$，梯形总面积 $= 18 + 8 + 12 + 12 = 50$。）
+      answerEn: |
+        **(1) Proof:**
+
+        In $\triangle AOB$ and $\triangle COD$:
+        - $\angle AOB = \angle COD$ (vertical angles)
+        - $\angle OAB = \angle OCD$ ($AB \parallel CD$, alternate interior angles)
+
+        By **AA**, $\triangle AOB \sim \triangle COD$.
+
+        **(2) Area of $\triangle COD$:**
+
+        <<相似比/similarity ratio>> $k = \frac{6}{4} = \frac{3}{2}$; area ratio $= k^2 = \frac{9}{4}$.
+        $S_{\triangle COD} = \frac{4}{9} \times 18 = 8$.
+
+        **(3) Area of $\triangle AOD$:**
+
+        Using the geometric mean property:
+        $S_{\triangle AOD}^2 = S_{\triangle AOB} \cdot S_{\triangle COD} = 18 \times 8 = 144$,
+        so $S_{\triangle AOD} = 12$.
+
+    - id: ep3
+      type: calculation
+      question: |
+        在 $\triangle ABC$ 中，$D$ 是 $BC$ 的中点，$E$ 是 $AD$ 的中点，$BE$ 延长线交 $AC$ 于 $F$。
+        求 $\frac{AF}{FC}$。
+      questionEn: |
+        In $\triangle ABC$, $D$ is the midpoint of $BC$ and $E$ is the midpoint of $AD$. Line $BE$ extended meets $AC$ at $F$.
+        Find $\frac{AF}{FC}$.
+      answer: |
+        **用向量法：**
+
+        设 $A$ 为原点，$\overrightarrow{AB} = \vec{b}$，$\overrightarrow{AC} = \vec{c}$。
+
+        $D$ 是 $BC$ 中点：$\overrightarrow{AD} = \frac{\vec{b} + \vec{c}}{2}$。
+
+        $E$ 是 $AD$ 中点：$\overrightarrow{AE} = \frac{1}{2} \cdot \frac{\vec{b} + \vec{c}}{2} = \frac{\vec{b} + \vec{c}}{4}$。
+
+        直线 $BE$ 上的点：$\overrightarrow{AF} = \overrightarrow{AB} + t(\overrightarrow{AE} - \overrightarrow{AB}) = \vec{b}\!\left(1 - \frac{3t}{4}\right) + \vec{c} \cdot \frac{t}{4}$。
+
+        $F$ 在 $AC$ 上，即 $\vec{b}$ 的系数为 $0$：$1 - \frac{3t}{4} = 0 \Rightarrow t = \frac{4}{3}$。
+
+        所以 $\overrightarrow{AF} = \vec{c} \cdot \frac{1}{3}$，即 $AF = \frac{1}{3} AC$，$FC = \frac{2}{3} AC$。
+
+        $$\frac{AF}{FC} = \frac{1}{2}$$
+      answerEn: |
+        **Using vectors:** Let $A$ be the origin, $\overrightarrow{AB} = \vec{b}$, $\overrightarrow{AC} = \vec{c}$.
+
+        Midpoint $D$ of $BC$: $\overrightarrow{AD} = \frac{\vec{b}+\vec{c}}{2}$.
+
+        Midpoint $E$ of $AD$: $\overrightarrow{AE} = \frac{\vec{b}+\vec{c}}{4}$.
+
+        Point $F$ on line $BE$: $\overrightarrow{AF} = \vec{b}\!\left(1 - \frac{3t}{4}\right) + \vec{c}\cdot\frac{t}{4}$.
+
+        Since $F$ lies on $AC$, the coefficient of $\vec{b}$ is zero: $t = \frac{4}{3}$.
+
+        Then $\overrightarrow{AF} = \frac{1}{3}\vec{c}$, so $AF = \frac{1}{3}AC$ and $FC = \frac{2}{3}AC$.
+
+        $$\frac{AF}{FC} = \frac{1}{2}$$
+
+    - id: ep4
+      type: calculation
+      question: |
+        两个相似多边形，较大的面积为 $75\ \text{cm}^2$，较小的面积为 $27\ \text{cm}^2$。
+        （1）求它们的<<相似比/similarity ratio>>；
+        （2）较大图形的周长为 $50\ \text{cm}$，求较小图形的周长；
+        （3）若作第三个与它们相似的多边形，面积恰好是两者面积的等比中项，求第三个图形的面积，及其与较小图形的<<相似比/similarity ratio>>。
+      questionEn: |
+        Two similar polygons have areas $75\ \text{cm}^2$ (larger) and $27\ \text{cm}^2$ (smaller).
+        (1) Find the <<相似比/similarity ratio>>.
+        (2) The larger polygon has perimeter $50\ \text{cm}$; find the perimeter of the smaller one.
+        (3) A third similar polygon has area equal to the geometric mean of the two given areas. Find its area and its <<相似比/similarity ratio>> relative to the smaller polygon.
+      answer: |
+        **(1) 求相似比：**
+
+        面积比 $= \frac{75}{27} = \frac{25}{9}$，$k^2 = \frac{25}{9}$，$k = \frac{5}{3}$。
+
+        **(2) 求较小图形的周长：**
+
+        周长比 $= k = \frac{5}{3}$，较小图形周长 $= \frac{3}{5} \times 50 = 30\ \text{cm}$。
+
+        **(3) 第三个图形：**
+
+        等比中项面积 $= \sqrt{75 \times 27} = \sqrt{2025} = 45\ \text{cm}^2$。
+
+        与较小图形（面积 $27$）的面积比 $= \frac{45}{27} = \frac{5}{3}$，
+
+        <<相似比/similarity ratio>> $= \sqrt{\frac{5}{3}} = \frac{\sqrt{15}}{3}$。
+      answerEn: |
+        **(1)** Area ratio $= \frac{75}{27} = \frac{25}{9}$, so $k^2 = \frac{25}{9}$, $k = \frac{5}{3}$.
+
+        **(2)** Perimeter ratio $= k = \frac{5}{3}$; smaller perimeter $= \frac{3}{5} \times 50 = 30\ \text{cm}$.
+
+        **(3)** Geometric mean area $= \sqrt{75 \times 27} = \sqrt{2025} = 45\ \text{cm}^2$.
+        Area ratio relative to smaller: $\frac{45}{27} = \frac{5}{3}$;
+        <<相似比/similarity ratio>> $= \sqrt{\frac{5}{3}} = \frac{\sqrt{15}}{3}$.
+
+    - id: ep5
+      type: calculation
+      question: |
+        小明要测量楼的高度。他身高 $1.6\ \text{m}$，影子长 $2\ \text{m}$，楼的影子长 $25\ \text{m}$。
+        （1）利用相似三角形求楼的高度；
+        （2）若改用尺子法：在距楼 $d = 20\ \text{m}$ 处，在距眼睛 $0.4\ \text{m}$ 处量得楼的视高为 $8\ \text{cm}$，
+        利用相似关系建立方程，求楼高（忽略眼高）；
+        （3）比较两种方法，说明各自的适用场景。
+      questionEn: |
+        Xiao Ming wants to measure a building. His height is $1.6\ \text{m}$, shadow $2\ \text{m}$; building shadow is $25\ \text{m}$.
+        (1) Use similar triangles to find the building height.
+        (2) Using a ruler held $0.4\ \text{m}$ from the eye at distance $d = 20\ \text{m}$ from the building, the apparent height reads $8\ \text{cm}$. Set up a proportion and find the building height (ignore eye height).
+        (3) Compare the two methods and their applicable situations.
+      answer: |
+        **(1) 影子法：**
+
+        小明与楼各形成直角三角形，太阳光平行，由 AA 相似：
+        $$\frac{\text{楼高}}{25} = \frac{1.6}{2}$$
+        楼高 $= \frac{1.6 \times 25}{2} = 20\ \text{m}$
+
+        **(2) 尺子法：**
+
+        设楼高为 $H$，眼睛到楼 $d = 20\ \text{m}$，尺子在眼睛前 $0.4\ \text{m}$ 处读数 $8\ \text{cm} = 0.08\ \text{m}$。
+        $$\frac{0.08}{0.4} = \frac{H}{20} \Rightarrow H = \frac{0.08 \times 20}{0.4} = 4\ \text{m}$$
+
+        注：此结果偏小（$d = 20\ \text{m}$ 太近），需站更远处重测。
+
+        **(3) 比较：**
+
+        - 影子法：需要阳光和平坦地面，适合户外晴天
+        - 尺子法：不依赖阳光，适合阴天或室内，但需准确量距离
+      answerEn: |
+        **(1) Shadow method:**
+
+        The two right triangles (person + shadow; building + shadow) are similar by AA:
+        $$\frac{H}{25} = \frac{1.6}{2} \implies H = 20\ \text{m}$$
+
+        **(2) Ruler method ($d = 20\ \text{m}$):**
+
+        $$\frac{0.08}{0.4} = \frac{H}{20} \implies H = \frac{0.08 \times 20}{0.4} = 4\ \text{m}$$
+
+        Note: this is too small because $d = 20\ \text{m}$ is too close — stand farther away for accuracy.
+
+        **(3) Comparison:**
+
+        - Shadow method: requires sunlight and flat ground; good for sunny outdoors.
+        - Ruler method: works without sun; good on cloudy days or indoors, but requires accurate distance measurement.
+
+summary: |
+  本章从比例线段出发，建立起相似变换的完整体系。
+
+  **核心知识线索：**
+
+  1. **比例线段** → 四条线段满足 $\frac{a}{b} = \frac{c}{d}$ 即成比例；比例的基本性质（交叉相乘、合比、分比等）是后续运算的基础。
+
+  2. **截比定理** → 平行线截两截线，对应段成比例；三角形中，平行于一边的直线分另两边成比例（逆定理可判平行）。
+
+  3. **相似多边形** → 对应角相等 + 对应边成比例；<<相似比/similarity ratio>> $k$ 是核心参数，周长比 $= k$，面积比 $= k^2$。
+
+  4. **相似三角形判定** → AA、SAS（夹角）、SSS（三边比），与全等判定对比记忆；直角三角形斜边上的高创造三对相似三角形。
+
+  5. **相似三角形性质** → 对应边、高、中线、角平分线比均为 $k$；面积比 $= k^2$（从一维到二维）。
+
+  6. **位似变换** → 以中心 $O$、比例 $k$ 的缩放；坐标规律 $(x,y) \mapsto (kx,ky)$；生活中的投影仪、地图都是位似实例。
+
+  **易错提醒：**
+  - 写相似对应时字母顺序不能乱
+  - SAS 的角必须是"夹角"
+  - 面积比是 $k^2$ 而非 $k$，不要混淆
+  - 位似中 $k < 0$ 时图形在中心另一侧
+summaryEn: |
+  This chapter builds the complete framework of similarity, starting from proportional segments.
+
+  **Core knowledge thread:**
+
+  1. **Proportional segments** → four segments satisfy $\frac{a}{b} = \frac{c}{d}$; cross-multiplication and other proportion properties are the computational foundation.
+
+  2. **Proportionality theorem** → parallel lines cut transversals into proportional segments; a line parallel to one side of a triangle divides the other two sides proportionally (converse proves parallelism).
+
+  3. **Similar polygons** → equal corresponding angles + proportional corresponding sides; <<相似比/similarity ratio>> $k$ is the key parameter: perimeter ratio $= k$, area ratio $= k^2$.
+
+  4. **Similar triangle criteria** → AA, SAS (included angle), SSS (all three side ratios); compare with congruence criteria; the altitude to the hypotenuse of a right triangle creates three pairs of similar triangles.
+
+  5. **Properties of similar triangles** → all corresponding lengths (sides, altitudes, medians, angle bisectors) have ratio $k$; area ratio $= k^2$.
+
+  6. **Homothety** → scaling by factor $k$ from center $O$; coordinate rule $(x,y) \mapsto (kx,ky)$; projectors, cameras, and maps are real-life examples.
+
+  **Watch out for:**
+  - Letter order in similarity notation must match the correspondence
+  - The equal angle in SAS must be the **included** angle
+  - Area ratio is $k^2$, not $k$ — do not confuse them
+  - When $k < 0$ in homothety, the image is on the opposite side of the center
