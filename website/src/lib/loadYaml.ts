@@ -152,11 +152,12 @@ export interface ExampleProblem {
   title: string;
   source?: string;       // e.g. "AMC 8 2019 #7"
   question: string;
-  diagram?: string;      // concept id for GeometryDiagram
+  diagram?: string;      // concept id for GeometryDiagram (shown in question)
   steps: string[];
   answer: string;
   numberLine?: NumberLineConfig;
   stepsNumberLine?: NumberLineConfig;
+  stepsDiagram?: string; // concept id for GeometryDiagram (shown inside steps)
 }
 
 export interface McChoice {

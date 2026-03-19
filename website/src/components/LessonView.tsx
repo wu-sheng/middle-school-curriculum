@@ -651,6 +651,11 @@ function ExamplesTab({ lesson }: { lesson: LessonContent }) {
                   {renderNumberLine(ex.stepsNumberLine)}
                 </div>
               )}
+              {ex.stepsDiagram && hasGeometryDiagram(ex.stepsDiagram) && (
+                <div className="mt-3">
+                  <GeometryDiagram conceptId={ex.stepsDiagram} />
+                </div>
+              )}
             </Collapsible>
 
             <Collapsible title={ui.showAnswer} variant="answer">

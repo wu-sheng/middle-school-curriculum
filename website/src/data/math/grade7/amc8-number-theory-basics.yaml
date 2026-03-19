@@ -275,27 +275,21 @@ concepts:
 examples:
   - type: 1
     source: "AMC 8 2012 #5"
-    title: 质因数分解求因数个数（以 360 为例）
-    titleEn: Counting Factors via Prime Factorization (example with 360)
-    diagram: factor-tree
-    question: |
-      正整数 $360$ 共有多少个正因数？
-
-      （先用因数树找出质因数分解，再套用公式——对应图示）
-    questionEn: |
-      How many positive factors does $360$ have?
-
-      (Use the factor tree shown above to find the prime factorization, then apply the formula.)
+    title: 质因数分解求因数个数
+    titleEn: Counting Factors via Prime Factorization
+    question: '正整数 $360$ 共有多少个正因数？'
+    questionEn: 'How many positive factors does $360$ have?'
     steps:
-      - '由图示因数树：$360 = 2^3 \times 3^2 \times 5^1$'
+      - '用因数树分解（见下图）：$360 = 2^3 \times 3^2 \times 5^1$'
       - '每个因数形如 $2^a \times 3^b \times 5^c$，其中 $0 \le a \le 3$，$0 \le b \le 2$，$0 \le c \le 1$'
       - '$a$ 有 4 种选法，$b$ 有 3 种，$c$ 有 2 种'
-      - '由乘法原理，因数个数 $= (3+1)(2+1)(1+1) = 4 \times 3 \times 2 = 24$'
+      - '由乘法原理，因数个数 $= (3+1)(2+1)(1+1) = 24$'
     stepsEn:
-      - 'From the factor tree: $360 = 2^3 \times 3^2 \times 5^1$'
+      - 'Factor tree (see diagram below): $360 = 2^3 \times 3^2 \times 5^1$'
       - 'Each factor has the form $2^a \times 3^b \times 5^c$ where $0 \le a \le 3$, $0 \le b \le 2$, $0 \le c \le 1$'
       - '$a$ has 4 choices, $b$ has 3 choices, $c$ has 2 choices'
-      - 'By the multiplication principle: $(3+1)(2+1)(1+1) = 4 \times 3 \times 2 = 24$'
+      - 'By the multiplication principle: $(3+1)(2+1)(1+1) = 24$'
+    stepsDiagram: factor-tree
     answer: '24 个正因数'
     answerEn: '24 positive factors'
 
