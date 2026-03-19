@@ -365,8 +365,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       if (profileResult) {
         prof = profileResult.data as UserProfile;
         profileShaRef.current = profileResult.sha;
+        // Merge local recentPages if remote doesn't have them yet (e.g. sync lag)
+        if (!prof.recentPages?.length) {
+          const localProf = loadProfileLocal();
+          if (localProf?.recentPages?.length) {
+            prof = { ...prof, recentPages: localProf.recentPages, lastVisitedPath: prof.lastVisitedPath || localProf.lastVisitedPath };
+          }
+        }
       } else {
-        prof = emptyProfile(cfg.owner);
+        prof = loadProfileLocal() || emptyProfile(cfg.owner);
         try {
           const sha = await writeProgressFile(cfg, PROFILE_FILE, prof, null);
           profileShaRef.current = sha;
@@ -660,10 +667,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       if (prev.lastVisitedPath === path) return prev;
       const updated = pushRecentPage(prev, path);
       saveProfileLocal(updated);
-      if (configRef.current) { profileDirtyRef.current = true; }
+      if (configRef.current) { profileDirtyRef.current = true; scheduleSyncDirty(); }
       return updated;
     });
-  }, []);
+  }, [scheduleSyncDirty]);
 
   const recordBookmark = useCallback((path: string, label: string) => {
     setProfile(prev => {
