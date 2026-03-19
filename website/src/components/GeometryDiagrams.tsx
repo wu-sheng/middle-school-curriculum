@@ -1774,8 +1774,8 @@ function PrimeNumberSieve() {
 const diagramMap: Record<string, React.ReactNode[]> = {
   "factor-tree": [<FactorTree key="ft" />],
   "divisibility-rules": [<DivisibilityRules key="dr" />],
-  "gcd-lcm-venn": [<GcdLcmVenn key="glv" />],
-  "prime-number-sieve": [<PrimeNumberSieve key="pns" />],
+  "gcd-lcm": [<GcdLcmVenn key="glv" />],
+  "prime-factorization": [<PrimeNumberSieve key="pns" />],
   "solid-and-plane-figures": [<ThreeViews key="tv" />],
   "line-ray-segment": [<LineTypes key="lt" />],
   "segment-comparison": [<SegmentMidpoint key="sm" />],

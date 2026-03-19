@@ -275,27 +275,29 @@ concepts:
 examples:
   - type: 1
     source: "AMC 8 2012 #5"
-    title: 质因数分解求因数个数
-    titleEn: Counting Factors via Prime Factorization
+    title: 质因数分解求因数个数（以 360 为例）
+    titleEn: Counting Factors via Prime Factorization (example with 360)
     diagram: factor-tree
     question: |
-      正整数 $N$ 满足 $N = 2^4 \times 3^3 \times 5^2$。请问 $N$ 共有多少个正因数？
+      正整数 $360$ 共有多少个正因数？
 
-      （AMC 8 2012 #5 同类题型）
+      （先用因数树找出质因数分解，再套用公式——对应图示）
     questionEn: |
-      The positive integer $N$ satisfies $N = 2^4 \times 3^3 \times 5^2$. How many positive factors does $N$ have?
+      How many positive factors does $360$ have?
 
-      (Same type as AMC 8 2012 #5)
+      (Use the factor tree shown above to find the prime factorization, then apply the formula.)
     steps:
-      - '每个因数的形式为 $2^a \times 3^b \times 5^c$，其中 $0 \le a \le 4$，$0 \le b \le 3$，$0 \le c \le 2$'
-      - '$a$ 有 5 种选法（0,1,2,3,4），$b$ 有 4 种选法（0,1,2,3），$c$ 有 3 种选法（0,1,2）'
-      - '由乘法原理，总因数个数 $= 5 \times 4 \times 3 = 60$'
+      - '由图示因数树：$360 = 2^3 \times 3^2 \times 5^1$'
+      - '每个因数形如 $2^a \times 3^b \times 5^c$，其中 $0 \le a \le 3$，$0 \le b \le 2$，$0 \le c \le 1$'
+      - '$a$ 有 4 种选法，$b$ 有 3 种，$c$ 有 2 种'
+      - '由乘法原理，因数个数 $= (3+1)(2+1)(1+1) = 4 \times 3 \times 2 = 24$'
     stepsEn:
-      - 'Each factor has the form $2^a \times 3^b \times 5^c$ where $0 \le a \le 4$, $0 \le b \le 3$, $0 \le c \le 2$'
-      - '$a$ has 5 choices, $b$ has 4 choices, $c$ has 3 choices'
-      - 'By the multiplication principle, total factors $= 5 \times 4 \times 3 = 60$'
-    answer: '60 个正因数'
-    answerEn: '60 positive factors'
+      - 'From the factor tree: $360 = 2^3 \times 3^2 \times 5^1$'
+      - 'Each factor has the form $2^a \times 3^b \times 5^c$ where $0 \le a \le 3$, $0 \le b \le 2$, $0 \le c \le 1$'
+      - '$a$ has 4 choices, $b$ has 3 choices, $c$ has 2 choices'
+      - 'By the multiplication principle: $(3+1)(2+1)(1+1) = 4 \times 3 \times 2 = 24$'
+    answer: '24 个正因数'
+    answerEn: '24 positive factors'
 
   - type: 2
     source: "AMC 8 2014 #2"
