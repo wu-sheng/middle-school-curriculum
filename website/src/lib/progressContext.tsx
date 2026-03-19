@@ -583,16 +583,14 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       setUserNameState(name);
       setProfile((prev) => {
         if (!prev) return prev;
+        if (prev.userName === name) return prev; // no change — skip
         const updated = { ...prev, userName: name, lastUpdated: new Date().toISOString() };
         saveProfileLocal(updated);
+        if (configRef.current) { profileDirtyRef.current = true; scheduleSyncDirty(); }
         return updated;
       });
-      if (config) {
-        profileDirtyRef.current = true;
-        scheduleSyncDirty();
-      }
     },
-    [config, scheduleSyncDirty]
+    [scheduleSyncDirty]
   );
 
   // Chapter ID → readable name mapping
