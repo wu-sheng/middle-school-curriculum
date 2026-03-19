@@ -150,11 +150,18 @@ export interface NumberLineConfig {
 export interface ExampleProblem {
   type: number;
   title: string;
+  source?: string;       // e.g. "AMC 8 2019 #7"
   question: string;
+  diagram?: string;      // concept id for GeometryDiagram
   steps: string[];
   answer: string;
   numberLine?: NumberLineConfig;
   stepsNumberLine?: NumberLineConfig;
+}
+
+export interface McChoice {
+  label: string;   // "A" | "B" | "C" | "D" | "E"
+  content: string; // the choice text (may contain LaTeX)
 }
 
 export interface SubInput {
@@ -166,9 +173,12 @@ export interface SubInput {
 export interface ExerciseQuestion {
   number: number;
   type: string;
-  inputType?: "blank" | "truefalse" | "choice" | "open";
+  inputType?: "blank" | "truefalse" | "choice" | "mc" | "open";
+  source?: string;       // e.g. "AMC 8 2019 #7"
   section: string;
   question: string;
+  diagram?: string;      // concept id for GeometryDiagram inside a question
+  choices?: McChoice[];  // for inputType: mc
   subQuestions?: string[];
   subInputs?: SubInput[];
   correctValue?: string;

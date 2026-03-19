@@ -75,7 +75,7 @@ function getQuestionResult(
 ): boolean | null {
   if (!graded) return null;
   const inputType = q.inputType || "open";
-  if (inputType === "blank" || inputType === "truefalse") {
+  if (inputType === "blank" || inputType === "truefalse" || inputType === "mc") {
     return (answers[`${prefix}${q.number}`] as string || "").trim() === q.correctValue;
   }
   if (inputType === "choice" && q.subInputs) {
@@ -93,7 +93,7 @@ function getScore(
   let correct = 0;
   let total = 0;
   for (const q of questions) {
-    if (q.inputType === "blank" || q.inputType === "truefalse") {
+    if (q.inputType === "blank" || q.inputType === "truefalse" || q.inputType === "mc") {
       total++;
       if (getQuestionResult(q, answers, prefix, true) === true) correct++;
     } else if (q.inputType === "choice" && q.subInputs) {
@@ -616,17 +616,23 @@ function ExamplesTab({ lesson }: { lesson: LessonContent }) {
         const e = ex as unknown as Record<string, unknown>;
         return (
           <div key={i} id={`example-${i + 1}`} className="bg-white rounded-2xl p-6 border border-pink-50 scroll-mt-24">
-            <SectionAnchor id={`example-${i + 1}-title`} as="div" className="flex items-center gap-2 mb-3">
+            <SectionAnchor id={`example-${i + 1}-title`} as="div" className="flex items-center gap-2 mb-3 flex-wrap">
               <span className="bg-gradient-to-r from-pink-400 to-purple-400 text-white text-xs font-bold px-3 py-1 rounded-full">
                 {ui.type} {ex.type}
               </span>
               <span className="text-sm font-medium text-gray-700"><MathText content={biField(e, "title", lang)} /></span>
+              {ex.source && (
+                <span className="ml-auto text-xs text-purple-400 bg-purple-50 border border-purple-100 px-2 py-0.5 rounded-full font-mono">
+                  {ex.source}
+                </span>
+              )}
             </SectionAnchor>
 
             <div className="bg-gray-50 rounded-xl p-4 mb-4">
               <p className="text-xs text-gray-400 mb-1">{ui.question}：</p>
               <ContentBlock obj={e} field="question" lang={lang} className="text-base text-gray-700" />
               {ex.numberLine && renderNumberLine(ex.numberLine)}
+              {ex.diagram && hasGeometryDiagram(ex.diagram) && <GeometryDiagram conceptId={ex.diagram} />}
             </div>
 
             <Collapsible title={ui.showSteps} variant="step">
@@ -867,7 +873,7 @@ function ExerciseCard({
 
   const isCorrect = (() => {
     if (!graded) return null;
-    if (inputType === "blank" || inputType === "truefalse") {
+    if (inputType === "blank" || inputType === "truefalse" || inputType === "mc") {
       return (userAnswer as string || "").trim() === question.correctValue;
     }
     if (inputType === "choice" && question.subInputs) {
@@ -892,8 +898,16 @@ function ExerciseCard({
           {graded && isCorrect !== null ? (isCorrect ? "✓" : "✕") : question.number}
         </span>
         <div className="flex-1">
-          <ContentBlock obj={q} field="question" lang={lang} className="text-base text-gray-700" />
+          <div className="flex items-start justify-between gap-2">
+            <ContentBlock obj={q} field="question" lang={lang} className="text-base text-gray-700 flex-1" />
+            {question.source && (
+              <span className="text-xs text-purple-400 bg-purple-50 border border-purple-100 px-2 py-0.5 rounded-full font-mono whitespace-nowrap flex-shrink-0">
+                {question.source}
+              </span>
+            )}
+          </div>
           {question.numberLine && renderNumberLine(question.numberLine)}
+          {question.diagram && hasGeometryDiagram(question.diagram) && <GeometryDiagram conceptId={question.diagram} />}
         </div>
       </div>
 
@@ -995,6 +1009,48 @@ function ExerciseCard({
                 </div>
               );
             })}
+          </div>
+        )}
+
+        {inputType === "mc" && question.choices && (
+          <div className="space-y-2">
+            {question.choices.map((choice) => {
+              const selected = (userAnswer as string) === choice.label;
+              const isRight = choice.label === question.correctValue;
+              return (
+                <button
+                  key={choice.label}
+                  onClick={() => onAnswer(choice.label)}
+                  className={`w-full flex items-start gap-3 px-4 py-2.5 rounded-xl border text-left transition-colors ${
+                    selected
+                      ? graded
+                        ? isRight
+                          ? "border-green-400 bg-green-50"
+                          : "border-red-300 bg-red-50"
+                        : "border-purple-400 bg-purple-50"
+                      : graded && isRight
+                      ? "border-green-300 bg-green-50/50"
+                      : "border-gray-200 hover:border-purple-200"
+                  }`}
+                >
+                  <span className={`text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
+                    selected
+                      ? graded
+                        ? isRight ? "bg-green-500 text-white" : "bg-red-400 text-white"
+                        : "bg-purple-400 text-white"
+                      : graded && isRight
+                      ? "bg-green-400 text-white"
+                      : "bg-gray-200 text-gray-500"
+                  }`}>
+                    {choice.label}
+                  </span>
+                  <span className="text-sm text-gray-700"><MathText content={choice.content} /></span>
+                </button>
+              );
+            })}
+            {graded && isCorrect === false && (
+              <p className="text-xs text-red-400">{ui.correctAnswer}：{question.correctValue}</p>
+            )}
           </div>
         )}
 

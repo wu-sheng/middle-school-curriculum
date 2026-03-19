@@ -1634,8 +1634,148 @@ function EquilateralTriangle() {
   );
 }
 
+function FactorTree() {
+  return (
+    <svg viewBox="0 0 400 280" className="w-full max-w-md mx-auto my-4">
+      {/* Root */}
+      <text x="200" y="30" textAnchor="middle" fontSize="18" fontWeight="bold" fill="#8B5CF6">360</text>
+      {/* Level 1: 36 × 10 */}
+      <line x1="200" y1="35" x2="120" y2="75" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <line x1="200" y1="35" x2="280" y2="75" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <text x="120" y="90" textAnchor="middle" fontSize="16" fill="#8B5CF6">36</text>
+      <text x="280" y="90" textAnchor="middle" fontSize="16" fill="#8B5CF6">10</text>
+      {/* Level 2 */}
+      <line x1="120" y1="95" x2="70" y2="135" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <line x1="120" y1="95" x2="160" y2="135" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <text x="70" y="150" textAnchor="middle" fontSize="16" fill="#8B5CF6">4</text>
+      <text x="160" y="150" textAnchor="middle" fontSize="16" fill="#8B5CF6">9</text>
+      <line x1="280" y1="95" x2="240" y2="135" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <line x1="280" y1="95" x2="320" y2="135" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <text x="240" y="150" textAnchor="middle" fontSize="16" fill="#8B5CF6">2</text>
+      <text x="320" y="150" textAnchor="middle" fontSize="16" fill="#8B5CF6">5</text>
+      {/* Level 3 - primes */}
+      <line x1="70" y1="155" x2="45" y2="195" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <line x1="70" y1="155" x2="95" y2="195" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <circle cx="45" cy="205" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="45" y="210" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">2</text>
+      <circle cx="95" cy="205" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="95" y="210" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">2</text>
+      <line x1="160" y1="155" x2="135" y2="195" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <line x1="160" y1="155" x2="185" y2="195" stroke="#D1D5DB" strokeWidth="1.5"/>
+      <circle cx="135" cy="205" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="135" y="210" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">3</text>
+      <circle cx="185" cy="205" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="185" y="210" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">3</text>
+      <circle cx="240" cy="155" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="240" y="160" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">2</text>
+      <circle cx="320" cy="155" r="14" fill="#FDF4FF" stroke="#EC4899" strokeWidth="2"/>
+      <text x="320" y="160" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#EC4899">5</text>
+      {/* Result */}
+      <rect x="80" y="235" width="240" height="32" rx="8" fill="#F3F0FF" stroke="#8B5CF6" strokeWidth="1.5"/>
+      <text x="200" y="257" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#8B5CF6">360 = 2³ × 3² × 5¹</text>
+    </svg>
+  );
+}
+
+function DivisibilityRules() {
+  const rules = [
+    { n: "2", rule: "末位是偶数 (0,2,4,6,8)", example: "138 ✓" },
+    { n: "3", rule: "各位数字之和能被3整除", example: "1+3+8=12 ✓" },
+    { n: "4", rule: "末两位能被4整除", example: "136→36÷4=9 ✓" },
+    { n: "5", rule: "末位是0或5", example: "135 ✓" },
+    { n: "9", rule: "各位数字之和能被9整除", example: "1+2+6=9 ✓" },
+    { n: "10", rule: "末位是0", example: "130 ✓" },
+  ];
+  return (
+    <svg viewBox="0 0 420 230" className="w-full max-w-lg mx-auto my-4">
+      <rect x="10" y="5" width="400" height="220" rx="10" fill="#FAFAFA" stroke="#E9D5FF" strokeWidth="1.5"/>
+      <rect x="10" y="5" width="400" height="32" rx="10" fill="#8B5CF6"/>
+      <text x="60" y="26" fontSize="12" fontWeight="bold" fill="white">整除判断</text>
+      <text x="200" y="26" fontSize="12" fontWeight="bold" fill="white">规律</text>
+      <text x="360" y="26" fontSize="12" fontWeight="bold" fill="white">示例</text>
+      {rules.map((r, i) => {
+        const y = 42 + i * 30;
+        const bg = i % 2 === 0 ? "#F9F5FF" : "white";
+        return (
+          <g key={r.n}>
+            <rect x="10" y={y} width="400" height="30" fill={bg}/>
+            <circle cx="42" cy={y+15} r="12" fill="#8B5CF6"/>
+            <text x="42" y={y+20} textAnchor="middle" fontSize="13" fontWeight="bold" fill="white">{r.n}</text>
+            <text x="80" y={y+19} fontSize="11" fill="#374151">{r.rule}</text>
+            <text x="345" y={y+19} fontSize="11" fill="#EC4899" textAnchor="middle">{r.example}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+function GcdLcmVenn() {
+  return (
+    <svg viewBox="0 0 400 220" className="w-full max-w-md mx-auto my-4">
+      {/* Left circle - 12 */}
+      <circle cx="155" cy="105" r="80" fill="#EDE9FE" fillOpacity="0.7" stroke="#8B5CF6" strokeWidth="2"/>
+      {/* Right circle - 18 */}
+      <circle cx="245" cy="105" r="80" fill="#FCE7F3" fillOpacity="0.7" stroke="#EC4899" strokeWidth="2"/>
+      {/* Labels */}
+      <text x="100" y="30" textAnchor="middle" fontSize="15" fontWeight="bold" fill="#8B5CF6">12的因数</text>
+      <text x="300" y="30" textAnchor="middle" fontSize="15" fontWeight="bold" fill="#EC4899">18的因数</text>
+      {/* Left only */}
+      <text x="110" y="95" textAnchor="middle" fontSize="13" fill="#6B7280">4</text>
+      <text x="110" y="115" textAnchor="middle" fontSize="13" fill="#6B7280">12</text>
+      {/* Common (GCD) */}
+      <text x="200" y="90" textAnchor="middle" fontSize="13" fill="#374151">1</text>
+      <text x="200" y="108" textAnchor="middle" fontSize="13" fill="#374151">2</text>
+      <text x="200" y="126" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#8B5CF6">3</text>
+      <text x="200" y="144" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#8B5CF6">6←GCD</text>
+      {/* Right only */}
+      <text x="290" y="95" textAnchor="middle" fontSize="13" fill="#6B7280">9</text>
+      <text x="290" y="115" textAnchor="middle" fontSize="13" fill="#6B7280">18</text>
+      {/* LCM below */}
+      <rect x="120" y="190" width="160" height="24" rx="8" fill="#FDF4FF" stroke="#EC4899" strokeWidth="1.5"/>
+      <text x="200" y="207" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#EC4899">LCM(12,18) = 36</text>
+    </svg>
+  );
+}
+
+function PrimeNumberSieve() {
+  const primes = new Set([2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]);
+  const nums = Array.from({length: 50}, (_, i) => i + 1);
+  return (
+    <svg viewBox="0 0 420 250" className="w-full max-w-lg mx-auto my-4">
+      <text x="210" y="20" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#374151">1–50 的质数（紫色圈出）</text>
+      {nums.map((n) => {
+        const col = (n - 1) % 10;
+        const row = Math.floor((n - 1) / 10);
+        const x = 25 + col * 40;
+        const y = 40 + row * 40;
+        const isPrime = primes.has(n);
+        const isOne = n === 1;
+        return (
+          <g key={n}>
+            <circle cx={x} cy={y} r="16"
+              fill={isPrime ? "#EDE9FE" : isOne ? "#FEF9C3" : "#F9FAFB"}
+              stroke={isPrime ? "#8B5CF6" : isOne ? "#EAB308" : "#E5E7EB"}
+              strokeWidth={isPrime ? 2 : 1}
+            />
+            <text x={x} y={y+5} textAnchor="middle" fontSize="12"
+              fontWeight={isPrime ? "bold" : "normal"}
+              fill={isPrime ? "#8B5CF6" : isOne ? "#92400E" : "#9CA3AF"}
+            >{n}</text>
+          </g>
+        );
+      })}
+      <text x="210" y="245" textAnchor="middle" fontSize="11" fill="#6B7280">共 15 个质数：2,3,5,7,11,13,17,19,23,29,31,37,41,43,47</text>
+    </svg>
+  );
+}
+
 /** Map concept IDs to their diagrams */
 const diagramMap: Record<string, React.ReactNode[]> = {
+  "factor-tree": [<FactorTree key="ft" />],
+  "divisibility-rules": [<DivisibilityRules key="dr" />],
+  "gcd-lcm-venn": [<GcdLcmVenn key="glv" />],
+  "prime-number-sieve": [<PrimeNumberSieve key="pns" />],
   "solid-and-plane-figures": [<ThreeViews key="tv" />],
   "line-ray-segment": [<LineTypes key="lt" />],
   "segment-comparison": [<SegmentMidpoint key="sm" />],

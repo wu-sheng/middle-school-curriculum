@@ -101,6 +101,21 @@ subjects:
                   - 余角、补角
                   - 基本作图与几何语言表达
                   - 综合与实践：设计学校田径运动会比赛场地
+              - id: amc8-number-theory-basics
+                number: 7
+                name: "🏆 AMC 8 扩展：数论基础"
+                nameEn: "🏆 AMC 8 Extension: Number Theory Basics"
+                hasContent: true
+                topics:
+                  - 整除判断法（被2/3/4/5/6/8/9/10整除的规律）
+                  - 质数与合数，质因数分解，因数树
+                  - 最大公因数（GCD）与最小公倍数（LCM）及应用
+                  - 数字题：用位值分析两位数、三位数
+                topicsEn:
+                  - Divisibility rules (by 2, 3, 4, 5, 6, 8, 9, 10)
+                  - Primes and composites, prime factorization, factor trees
+                  - GCD and LCM with real-world applications
+                  - Digit problems — place value analysis of two- and three-digit numbers
           - id: semester2
             name: 下学期
             nameEn: Semester 2
