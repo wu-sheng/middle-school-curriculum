@@ -69,6 +69,8 @@ concepts:
   - id: factorization-meaning
     title: <<因式分解/factorization>>的意义
     titleEn: The meaning of <<因式分解/factorization>>
+    handsOn: '🏠 动手试试：用方块积木拼一个 $a^{2}+2ab+b^{2}$ 的图案：一个 $a \times a$ 的大正方形、一个 $b \times b$ 的小正方形、两个 $a \times b$ 的长方形。试试把它们拼成一个 $(a+b) \times (a+b)$ 的完整正方形——这就是因式分解！'
+    handsOnEn: '🏠 Try this: use blocks to build a pattern for $a^{2}+2ab+b^{2}$: one $a \times a$ square, one $b \times b$ square, and two $a \times b$ rectangles. Can you arrange them into a perfect $(a+b) \times (a+b)$ square? That is factorization!'
     content: |
       把一个**多项式**化成几个**<<整式/integral expression>>的乘积**的形式，这种变形叫做这个多项式的**<<因式分解/factorization>>**（也叫**分解因式**）。
 

@@ -1,0 +1,1116 @@
+title: "\U0001F3C6 AMC 8 扩展：三角形面积与海伦公式"
+titleEn: "\U0001F3C6 AMC 8 Extension: Triangle Area & Heron's Formula"
+chapter: 7
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 约 3–4 课时，每课时 45 分钟
+estimatedTimeEn: "3–4 sessions, ~45 min each"
+targetAudience: 八年级自学生，已完成三角形与全等三角形，希望拓展竞赛几何面积技巧
+
+objectives:
+  - 熟练掌握<<三角形/triangle>>面积的多种计算方法（底×高、坐标公式、<<鞋带公式/Shoelace formula>>）
+  - 理解并会使用<<海伦公式/Heron's formula>>：已知三边求面积
+  - 掌握菱形、一般四边形的面积分解法（对角线法、三角形拆分法）
+  - 能在 AMC 8 竞赛场景中快速选择最高效的面积公式
+  - 培养"一题多解"和"验算验证"的竞赛思维
+objectivesEn:
+  - 'Master multiple methods for computing <<三角形/triangle>> area (base×height, coordinate formula, <<鞋带公式/Shoelace formula>>)'
+  - 'Understand and apply <<海伦公式/Heron''s formula>>: find area given three sides'
+  - 'Master area decomposition for rhombuses and general quadrilaterals (diagonal method, triangle splitting)'
+  - 'Quickly choose the most efficient area formula in AMC 8 contest settings'
+  - 'Develop the contest mindset of "multiple approaches" and "verify your answer"'
+
+prerequisites:
+  title: 从三角形基础出发——已知的几何知识
+  titleEn: Building on triangle fundamentals — geometric knowledge already mastered
+  intro: |
+    八年级上学期我们学习了三角形的分类、三边关系、内角和定理，以及全等三角形的判定。这一章是 AMC 8 竞赛扩展，在这些基础上进一步学习面积的多种计算技巧。
+  introEn: |
+    In the first semester of Grade 8 we studied triangle classification, the triangle inequality, the angle sum theorem, and criteria for congruent triangles. This chapter is an AMC 8 extension that builds on these foundations with multiple area computation techniques.
+  knownNumbers:
+    - '三角形面积 $= \frac{1}{2} \times$ 底 $\times$ 高（小学已学）'
+    - '<<勾股定理/Pythagorean theorem>>：直角三角形中 $a^{2} + b^{2} = c^{2}$'
+    - '三角形三边关系：任意两边之和大于第三边'
+    - '平面直角坐标系：会用坐标表示点的位置'
+  knownNumbersEn:
+    - 'Triangle area $= \frac{1}{2} \times$ base $\times$ height (learned in primary school)'
+    - '<<勾股定理/Pythagorean theorem>>: in a right triangle, $a^{2} + b^{2} = c^{2}$'
+    - 'Triangle inequality: the sum of any two sides is greater than the third'
+    - 'Cartesian coordinate system: representing points with coordinates'
+  canSolve:
+    - '用底和高计算三角形面积'
+    - '用勾股定理求直角三角形的边长'
+    - '在坐标系中标注点的位置'
+    - '判断三边能否构成三角形'
+  canSolveEn:
+    - 'Compute triangle area using base and height'
+    - 'Find side lengths of right triangles using the Pythagorean theorem'
+    - 'Plot points in the coordinate plane'
+    - 'Determine whether three sides can form a triangle'
+  cannotSolve:
+    - '三角形三边已知但高未知时，如何求面积？'
+    - '三个顶点坐标已知时，如何快速求三角形面积？'
+    - '菱形只知道边长和一条对角线，怎么求面积？'
+    - '什么是鞋带公式？什么是海伦公式？'
+  cannotSolveEn:
+    - 'How to find area when all three sides are known but the height is not?'
+    - 'How to quickly find the area of a triangle given the coordinates of its three vertices?'
+    - 'How to find the area of a rhombus knowing only its side length and one diagonal?'
+    - 'What are the Shoelace formula and Heron''s formula?'
+  conclusion: |
+    这一章，我们将建立一个**面积公式工具箱**——遇到不同的已知条件，能快速选出最高效的公式，这正是 AMC 8 竞赛中节省时间的关键。
+  conclusionEn: |
+    In this chapter, we build an **area formula toolkit** — given different known information, you'll quickly pick the most efficient formula. This is the key to saving time on AMC 8.
+
+concepts:
+  - id: triangle-area-basics
+    title: <<三角形/triangle>>面积公式汇总
+    titleEn: <<三角形/triangle>> Area Formula Toolkit
+    hasVisualization: true
+    content: |
+      **最基本的公式——底 × 高**
+
+      你在小学就学过：三角形面积 $= \frac{1}{2} \times$ 底 $\times$ 高。
+
+      这个公式虽然简单，但有一个限制：你**必须知道高**。很多 AMC 8 题目并不直接告诉你高是多少——这时就需要其他公式了。
+
+      **公式 1：底 × 高（适用于已知一边和对应高的情况）**
+
+      $$S = \frac{1}{2} \times b \times h$$
+
+      其中 $b$ 是底边长度，$h$ 是底边上的高。
+
+      **技巧**：如果两个顶点的 $y$ 坐标相同（在同一条水平线上），那么这两点之间的线段就是天然的"底"，第三个点到这条水平线的垂直距离就是"高"。
+
+      例如：$A(2, 3)$、$B(8, 3)$ 在同一水平线 $y = 3$ 上，底 $= |8 - 2| = 6$。若 $C(5, 7)$，高 $= |7 - 3| = 4$，面积 $= \frac{1}{2} \times 6 \times 4 = 12$。
+
+      **公式 2：<<鞋带公式/Shoelace formula>>（适用于已知三个顶点坐标）**
+
+      当三个顶点坐标已知为 $A(x_{1}, y_{1})$、$B(x_{2}, y_{2})$、$C(x_{3}, y_{3})$ 时：
+
+      $$S = \frac{1}{2} |x_{1}(y_{2} - y_{3}) + x_{2}(y_{3} - y_{1}) + x_{3}(y_{1} - y_{2})|$$
+
+      这个公式的名字来源：把坐标排成两列交叉相乘，像系鞋带一样。
+
+      **为什么有用？** 你不需要先找底和高——直接代入坐标就能算出面积！在 AMC 8 的坐标几何题中，这是最快的方法。
+
+      **记忆口诀**：三个 $x$ 分别乘对面两个 $y$ 之差，加起来取绝对值除以 2。
+
+      **关键洞察：选对公式就是竞赛的关键**
+
+      | 已知条件 | 最优公式 | 典型场景 |
+      |---------|---------|---------|
+      | 一条边和对应高 | 底 × 高 | 水平/垂直底边 |
+      | 三个顶点坐标 | 鞋带公式 | 坐标几何题 |
+      | 三条边长度 | 海伦公式（下节） | 已知三边、无坐标 |
+    contentEn: |
+      **The most basic formula — base × height**
+
+      You learned in primary school: triangle area $= \frac{1}{2} \times$ base $\times$ height.
+
+      This formula is simple but has a limitation: you **must know the height**. Many AMC 8 problems don't directly give you the height — that's when you need other formulas.
+
+      **Formula 1: base × height (when you know one side and its corresponding height)**
+
+      $$S = \frac{1}{2} \times b \times h$$
+
+      where $b$ is the base length and $h$ is the height to that base.
+
+      **Tip**: If two vertices share the same $y$-coordinate (on the same horizontal line), the segment between them is a natural "base," and the vertical distance from the third point to that line is the "height."
+
+      Example: $A(2,3)$ and $B(8,3)$ lie on $y=3$, so base $= |8-2|=6$. If $C(5,7)$, height $= |7-3|=4$, area $= \frac{1}{2}\times6\times4=12$.
+
+      **Formula 2: <<鞋带公式/Shoelace formula>> (when you know three vertex coordinates)**
+
+      Given vertices $A(x_{1},y_{1})$, $B(x_{2},y_{2})$, $C(x_{3},y_{3})$:
+
+      $$S = \frac{1}{2}|x_{1}(y_{2}-y_{3}) + x_{2}(y_{3}-y_{1}) + x_{3}(y_{1}-y_{2})|$$
+
+      The name comes from cross-multiplying coordinates in two columns, like lacing a shoe.
+
+      **Why is it useful?** You don't need to find the base and height first — just plug in coordinates! For AMC 8 coordinate geometry problems, this is the fastest method.
+
+      **Memory aid**: Each $x$ multiplies the difference of the other two $y$-values; add them up, take the absolute value, and divide by 2.
+
+      **Key insight: choosing the right formula is the key to competitions**
+
+      | Known information | Best formula | Typical scenario |
+      |-------------------|-------------|-----------------|
+      | One side and its height | base × height | horizontal/vertical base |
+      | Three vertex coordinates | Shoelace formula | coordinate geometry |
+      | Three side lengths | Heron's formula (next section) | sides known, no coordinates |
+    notes:
+      - '鞋带公式也叫"坐标面积公式"，可扩展到多边形——把顶点按顺序列出，交叉相乘求和'
+      - '当底边水平或垂直时，底×高最快；当底边倾斜时，鞋带公式更方便'
+      - '鞋带公式结果取绝对值，所以顶点顺序（顺时针/逆时针）不影响结果'
+    notesEn:
+      - 'The Shoelace formula (also called the "coordinate area formula") extends to any polygon — list vertices in order and cross-multiply'
+      - 'When the base is horizontal or vertical, base×height is fastest; when the base is slanted, the Shoelace formula is more convenient'
+      - 'The absolute value in the Shoelace formula means vertex order (clockwise/counterclockwise) does not affect the result'
+
+  - id: herons-formula
+    title: <<海伦公式/Heron's formula>>
+    titleEn: <<海伦公式/Heron's formula>>
+    hasVisualization: true
+    content: |
+      **什么时候需要海伦公式？**
+
+      想象这样一道题："三角形三边长分别是 13、14、15，求面积。"
+
+      你知道底×高公式，但这里**高是多少？** 题目没告诉你，也不容易直接看出来。
+      这正是<<海伦公式/Heron's formula>>大显身手的场景——**只要知道三边，就能直接算面积**，不需要先求高！
+
+      **公式**
+
+      设三角形三边长为 $a$、$b$、$c$，先计算<<半周长/semi-perimeter>>：
+
+      $$s = \frac{a + b + c}{2}$$
+
+      然后面积为：
+
+      $$S = \sqrt{s(s-a)(s-b)(s-c)}$$
+
+      **历史小知识**：这个公式以古希腊数学家<<海伦/Heron of Alexandria>>（约公元 60 年）命名。虽然叫"海伦公式"，但可能更早由阿基米德发现。
+
+      **完整例题：三边为 13、14、15**
+
+      第一步：算半周长
+      $$s = \frac{13 + 14 + 15}{2} = \frac{42}{2} = 21$$
+
+      第二步：代入海伦公式
+      $$S = \sqrt{21 \times (21-13) \times (21-14) \times (21-15)}$$
+      $$= \sqrt{21 \times 8 \times 7 \times 6}$$
+
+      第三步：化简根号内的乘积
+      $$21 \times 8 = 168, \quad 7 \times 6 = 42$$
+      $$168 \times 42 = 7056$$
+      $$S = \sqrt{7056} = 84$$
+
+      第四步：用底×高验证
+      取底 $= 14$，则高 $h = \frac{2 \times 84}{14} = 12$。
+      高的脚把底边分成两段，设为 $x$ 和 $14-x$：
+      $$13^{2} = 12^{2} + x^{2} \Rightarrow x^{2} = 169 - 144 = 25 \Rightarrow x = 5$$
+      $$15^{2} = 12^{2} + (14-5)^{2} = 144 + 81 = 225 \text{ ✓}$$
+      验证成功！面积确实是 $\mathbf{84}$。
+
+      **什么时候用海伦公式？**
+
+      ✅ 知道三边长度，不知道高 → 用海伦公式
+      ✅ 三边是整数，想快速求面积 → 海伦公式很方便
+      ❌ 已知坐标 → 用鞋带公式更快
+      ❌ 已知底和高 → 直接底×高最快
+
+      **常见错误**
+
+      ⚠️ 忘记先算 $s$，直接用 $a$、$b$、$c$ 代入 → 结果完全错误
+      ⚠️ $s$ 算错（尤其当边长不是整数时）→ 一定要仔细计算 $\frac{a+b+c}{2}$
+      ⚠️ 根号内出现负数 → 说明三边不满足三角不等式（不能构成三角形）
+
+      **海伦公式与底×高公式的关系**
+
+      海伦公式本质上和底×高公式是等价的！它只是帮你"绕过"了求高这一步。
+      数学上可以证明：海伦公式 = 把勾股定理求高的过程"打包"进了一个公式。
+      所以它不是新的数学，而是一个**高效的计算工具**。
+    contentEn: |
+      **When do you need Heron's formula?**
+
+      Imagine this problem: "A triangle has sides 13, 14, and 15. Find its area."
+
+      You know the base×height formula, but **what is the height?** The problem doesn't tell you, and it's not obvious.
+      This is exactly when <<海伦公式/Heron's formula>> shines — **given just the three sides, you can compute the area directly**, without finding the height first!
+
+      **The formula**
+
+      Let the three sides be $a$, $b$, $c$. First compute the <<半周长/semi-perimeter>>:
+
+      $$s = \frac{a + b + c}{2}$$
+
+      Then the area is:
+
+      $$S = \sqrt{s(s-a)(s-b)(s-c)}$$
+
+      **Historical note**: This formula is named after <<海伦/Heron of Alexandria>> (circa 60 AD), though it may have been discovered earlier by Archimedes.
+
+      **Worked example: sides 13, 14, 15**
+
+      Step 1: Compute the semi-perimeter
+      $$s = \frac{13+14+15}{2} = \frac{42}{2} = 21$$
+
+      Step 2: Plug into Heron's formula
+      $$S = \sqrt{21 \times (21-13) \times (21-14) \times (21-15)}$$
+      $$= \sqrt{21 \times 8 \times 7 \times 6}$$
+
+      Step 3: Simplify the product under the radical
+      $$21 \times 8 = 168, \quad 7 \times 6 = 42$$
+      $$168 \times 42 = 7056$$
+      $$S = \sqrt{7056} = 84$$
+
+      Step 4: Verify with base×height
+      Take base $= 14$, then height $h = \frac{2 \times 84}{14} = 12$.
+      The foot of the height splits the base into $x$ and $14-x$:
+      $$13^{2} = 12^{2} + x^{2} \Rightarrow x^{2} = 25 \Rightarrow x = 5$$
+      $$15^{2} = 12^{2} + 9^{2} = 144 + 81 = 225 \text{ ✓}$$
+      Verified! The area is indeed $\mathbf{84}$.
+
+      **When to use Heron's formula?**
+
+      ✅ Three sides known, height unknown → use Heron's formula
+      ✅ Integer sides, quick area needed → Heron's formula is convenient
+      ❌ Coordinates given → Shoelace formula is faster
+      ❌ Base and height known → base×height is fastest
+
+      **Common mistakes**
+
+      ⚠️ Forgetting to compute $s$ first and plugging in $a$, $b$, $c$ directly → completely wrong
+      ⚠️ Computing $s$ incorrectly (especially for non-integer sides) → double-check $\frac{a+b+c}{2}$
+      ⚠️ Negative value under the radical → the three sides violate the triangle inequality
+
+      **Relationship between Heron's formula and base×height**
+
+      Heron's formula is mathematically equivalent to the base×height formula! It just lets you "skip" finding the height.
+      It can be proved that Heron's formula "packages" the process of using the Pythagorean theorem to find the height into a single formula.
+      So it's not new math — it's an **efficient computational tool**.
+    notes:
+      - '海伦公式适用于知道三边求面积的场景，AMC 8 中经常出现'
+      - '当三边是整数时，可以用海伦公式快速验算'
+      - '半周长 $s$ 一定要先算对——这是最常见的错误来源'
+      - '若 $s(s-a)(s-b)(s-c)$ 不是完全平方数，面积就是无理数（用根号表示）'
+    notesEn:
+      - 'Heron''s formula is ideal when three sides are known — it appears frequently in AMC 8'
+      - 'When sides are integers, Heron''s formula provides a quick verification'
+      - 'Getting the semi-perimeter $s$ right is critical — this is the most common source of error'
+      - 'If $s(s-a)(s-b)(s-c)$ is not a perfect square, the area is irrational (expressed with a radical)'
+
+  - id: quadrilateral-area-decomposition
+    title: 四边形面积的三角形分解法
+    titleEn: Quadrilateral Area via Triangle Decomposition
+    hasVisualization: true
+    content: |
+      **从三角形到四边形——分解思想**
+
+      三角形是最基本的多边形。任何四边形都可以沿一条对角线分成两个三角形，分别求面积再相加。这就是**三角形分解法**。
+
+      **菱形面积——对角线公式**
+
+      <<菱形/rhombus>>有一个特别简洁的面积公式：
+
+      $$S = \frac{1}{2} \times d_{1} \times d_{2}$$
+
+      其中 $d_{1}$、$d_{2}$ 是两条对角线的长度。
+
+      **为什么成立？** 菱形的两条对角线互相垂直平分。沿对角线分成 4 个直角三角形，每个的两直角边分别是 $\frac{d_{1}}{2}$ 和 $\frac{d_{2}}{2}$。
+
+      4 个三角形面积之和 $= 4 \times \frac{1}{2} \times \frac{d_{1}}{2} \times \frac{d_{2}}{2} = \frac{d_{1} \times d_{2}}{2}$
+
+      **AMC 8 常见套路：已知菱形的边和一条对角线，求面积**
+
+      关键步骤：
+      1. 菱形四边相等，所以 $\text{边} = \frac{\text{周长}}{4}$
+      2. 对角线互相垂直平分，形成直角三角形
+      3. 用勾股定理求另一条对角线
+      4. 用对角线公式算面积
+
+      **一般四边形——对角线分割法**
+
+      对于不规则四边形 $ABCD$，沿对角线 $AC$ 分成 $\triangle ABC$ 和 $\triangle ACD$。
+
+      如果知道坐标，分别对两个三角形用鞋带公式，再相加。
+
+      **鞋带公式的四边形扩展**
+
+      鞋带公式可以直接扩展到四边形！顶点按顺序（顺时针或逆时针）为 $(x_{1},y_{1})$、$(x_{2},y_{2})$、$(x_{3},y_{3})$、$(x_{4},y_{4})$ 时：
+
+      $$S = \frac{1}{2}|x_{1}y_{2} - x_{2}y_{1} + x_{2}y_{3} - x_{3}y_{2} + x_{3}y_{4} - x_{4}y_{3} + x_{4}y_{1} - x_{1}y_{4}|$$
+
+      **梯形面积——也可以用分解法理解**
+
+      梯形面积 $= \frac{1}{2}(a + b) \times h$（$a$、$b$ 是上下底，$h$ 是高）。
+
+      这其实等于沿对角线分成两个三角形：
+      - 底为 $a$、高为 $h$ 的三角形：面积 $\frac{1}{2}ah$
+      - 底为 $b$、高为 $h$ 的三角形：面积 $\frac{1}{2}bh$
+      - 总面积 $= \frac{1}{2}(a+b)h$ ✓
+    contentEn: |
+      **From triangles to quadrilaterals — the decomposition idea**
+
+      A triangle is the most basic polygon. Any quadrilateral can be split into two triangles along a diagonal; compute each area and add them up. This is the **triangle decomposition method**.
+
+      **Rhombus area — the diagonal formula**
+
+      A <<菱形/rhombus>> has a particularly elegant area formula:
+
+      $$S = \frac{1}{2} \times d_{1} \times d_{2}$$
+
+      where $d_{1}$ and $d_{2}$ are the two diagonals.
+
+      **Why does it work?** The diagonals of a rhombus are perpendicular bisectors of each other. They split the rhombus into 4 right triangles, each with legs $\frac{d_{1}}{2}$ and $\frac{d_{2}}{2}$.
+
+      Total area $= 4 \times \frac{1}{2} \times \frac{d_{1}}{2} \times \frac{d_{2}}{2} = \frac{d_{1} \times d_{2}}{2}$
+
+      **Common AMC 8 pattern: given a rhombus's side and one diagonal, find the area**
+
+      Key steps:
+      1. All sides of a rhombus are equal, so side $= \frac{\text{perimeter}}{4}$
+      2. The diagonals are perpendicular bisectors → right triangles
+      3. Use the Pythagorean theorem to find the other diagonal
+      4. Use the diagonal formula for the area
+
+      **General quadrilateral — diagonal splitting**
+
+      For an irregular quadrilateral $ABCD$, cut along diagonal $AC$ to get $\triangle ABC$ and $\triangle ACD$.
+
+      If coordinates are known, apply the Shoelace formula to each triangle and add.
+
+      **Shoelace formula extended to quadrilaterals**
+
+      The Shoelace formula extends directly to quadrilaterals! With vertices in order $(x_{1},y_{1})$, $(x_{2},y_{2})$, $(x_{3},y_{3})$, $(x_{4},y_{4})$:
+
+      $$S = \frac{1}{2}|x_{1}y_{2} - x_{2}y_{1} + x_{2}y_{3} - x_{3}y_{2} + x_{3}y_{4} - x_{4}y_{3} + x_{4}y_{1} - x_{1}y_{4}|$$
+
+      **Trapezoid area — understood via decomposition**
+
+      Trapezoid area $= \frac{1}{2}(a+b) \times h$ (where $a$, $b$ are the parallel sides and $h$ is the height).
+
+      This equals the sum of two triangles along a diagonal:
+      - Triangle with base $a$ and height $h$: area $\frac{1}{2}ah$
+      - Triangle with base $b$ and height $h$: area $\frac{1}{2}bh$
+      - Total $= \frac{1}{2}(a+b)h$ ✓
+    notes:
+      - '菱形对角线互相垂直平分——这是面积公式成立的关键'
+      - 'AMC 8 中菱形题常给周长和一条对角线，需要用勾股定理求另一条'
+      - '鞋带公式对任意简单多边形都有效（顶点按顺序排列）'
+    notesEn:
+      - 'Rhombus diagonals are perpendicular bisectors of each other — this is key to the formula'
+      - 'AMC 8 rhombus problems often give the perimeter and one diagonal; use Pythagoras for the other'
+      - 'The Shoelace formula works for any simple polygon (vertices listed in order)'
+
+examples:
+  - type: 1
+    source: "AMC 8 2019 #4"
+    title: 菱形面积——对角线法
+    titleEn: Rhombus Area — Diagonal Method
+    question: |
+      四边形 $ABCD$ 是一个菱形，周长为 52 米。对角线 $\overline{AC}$ 长 24 米。菱形 $ABCD$ 的面积是多少平方米？
+
+      (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+    questionEn: |
+      Quadrilateral $ABCD$ is a rhombus with perimeter 52 meters. The length of diagonal $\overline{AC}$ is 24 meters. What is the area in square meters of rhombus $ABCD$?
+
+      (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+    steps:
+      - '菱形四边相等，边长 $= 52 \div 4 = 13$ 米'
+      - '菱形对角线互相垂直平分，半条 $AC = 12$ 米'
+      - '用勾股定理求半条 $BD$：$\sqrt{13^{2} - 12^{2}} = \sqrt{169 - 144} = \sqrt{25} = 5$ 米'
+      - '完整的 $BD = 2 \times 5 = 10$ 米'
+      - '菱形面积 $= \frac{1}{2} \times AC \times BD = \frac{1}{2} \times 24 \times 10 = \mathbf{120}$'
+    stepsEn:
+      - 'All sides of a rhombus are equal: side $= 52 \div 4 = 13$ m'
+      - 'Diagonals bisect each other perpendicularly: half of $AC = 12$ m'
+      - 'Pythagorean theorem for half of $BD$: $\sqrt{13^{2}-12^{2}} = \sqrt{25} = 5$ m'
+      - 'Full $BD = 2 \times 5 = 10$ m'
+      - 'Rhombus area $= \frac{1}{2} \times 24 \times 10 = \mathbf{120}$'
+    answer: '(D) 120'
+    answerEn: '(D) 120'
+
+  - type: 2
+    source: "AMC 8 2024 #11"
+    title: 坐标三角形面积——底×高法
+    titleEn: Coordinate Triangle Area — Base × Height
+    question: |
+      $\triangle ABC$ 的顶点坐标为 $A(5, 7)$、$B(11, 7)$、$C(3, y)$，其中 $y > 7$。$\triangle ABC$ 的面积为 12。求 $y$ 的值。
+
+      (A) 8 &emsp; (B) 9 &emsp; (C) 10 &emsp; (D) 11 &emsp; (E) 12
+    questionEn: |
+      The coordinates of $\triangle ABC$ are $A(5,7)$, $B(11,7)$, and $C(3,y)$, with $y > 7$. The area of $\triangle ABC$ is 12. What is the value of $y$?
+
+      (A) 8 &emsp; (B) 9 &emsp; (C) 10 &emsp; (D) 11 &emsp; (E) 12
+    steps:
+      - '$A$ 和 $B$ 的 $y$ 坐标相同（都是 7），所以 $AB$ 是水平线段，底 $= |11 - 5| = 6$'
+      - '高 = 点 $C$ 到直线 $y = 7$ 的垂直距离 $= |y - 7|$。因为 $y > 7$，所以高 $= y - 7$'
+      - '面积 $= \frac{1}{2} \times 6 \times (y - 7) = 3(y - 7) = 12$'
+      - '$y - 7 = 4$，$y = \mathbf{11}$'
+    stepsEn:
+      - '$A$ and $B$ share $y$-coordinate 7, so $AB$ is horizontal with base $= |11-5| = 6$'
+      - 'Height = perpendicular distance from $C$ to line $y=7$, which is $|y-7| = y-7$ (since $y>7$)'
+      - 'Area $= \frac{1}{2}\times6\times(y-7) = 3(y-7) = 12$'
+      - '$y-7=4$, so $y = \mathbf{11}$'
+    answer: '(D) 11'
+    answerEn: '(D) 11'
+
+  - type: 3
+    source: 教学原创题
+    title: 海伦公式直接应用
+    titleEn: Direct Application of Heron's Formula
+    question: |
+      三角形三边长分别为 $a = 13$，$b = 14$，$c = 15$。用<<海伦公式/Heron's formula>>求这个三角形的面积。
+    questionEn: |
+      A triangle has sides $a = 13$, $b = 14$, $c = 15$. Use <<海伦公式/Heron's formula>> to find the area.
+    steps:
+      - '第一步：计算半周长 $s = \frac{13 + 14 + 15}{2} = \frac{42}{2} = 21$'
+      - '第二步：代入海伦公式 $S = \sqrt{21 \times (21-13) \times (21-14) \times (21-15)} = \sqrt{21 \times 8 \times 7 \times 6}$'
+      - '第三步：化简 $21 \times 8 = 168$，$7 \times 6 = 42$，$168 \times 42 = 7056$'
+      - '第四步：$S = \sqrt{7056} = 84$'
+      - '验证：取底 $= 14$，高 $= \frac{2 \times 84}{14} = 12$。用勾股定理：$13^{2} - 12^{2} = 25$，$\sqrt{25} = 5$；$15^{2} - 12^{2} = 81$，$\sqrt{81} = 9$；$5 + 9 = 14$ = 底 ✓'
+    stepsEn:
+      - 'Step 1: semi-perimeter $s = \frac{13+14+15}{2} = 21$'
+      - 'Step 2: Heron''s formula $S = \sqrt{21 \times 8 \times 7 \times 6}$'
+      - 'Step 3: simplify $21\times8=168$, $7\times6=42$, $168\times42=7056$'
+      - 'Step 4: $S = \sqrt{7056} = 84$'
+      - 'Verify: base $=14$, height $= 2\times84/14 = 12$. Pythagorean check: $13^{2}-12^{2}=25$, so $5$; $15^{2}-12^{2}=81$, so $9$; $5+9=14$ ✓'
+    answer: '84'
+    answerEn: '84'
+
+  - type: 4
+    source: "AMC 8 2017 #16"
+    title: 等周长分割与面积比
+    titleEn: Equal-Perimeter Partition and Area Ratio
+    question: |
+      在 $\triangle ABC$ 中，$AC = 3$，$AB = 4$，$BC = 5$。点 $D$ 在 $\overline{BC}$ 上，使得 $\triangle ACD$ 和 $\triangle ABD$ 的周长相等。$\triangle ABD$ 的面积是多少？
+
+      (A) $\frac{3}{4}$ &emsp; (B) $\frac{3}{2}$ &emsp; (C) $2$ &emsp; (D) $\frac{12}{5}$ &emsp; (E) $\frac{5}{2}$
+    questionEn: |
+      In $\triangle ABC$, $AC = 3$, $AB = 4$, and $BC = 5$. Point $D$ is on $\overline{BC}$ such that the perimeters of $\triangle ACD$ and $\triangle ABD$ are equal. What is the area of $\triangle ABD$?
+
+      (A) $\frac{3}{4}$ &emsp; (B) $\frac{3}{2}$ &emsp; (C) $2$ &emsp; (D) $\frac{12}{5}$ &emsp; (E) $\frac{5}{2}$
+    steps:
+      - '判断三角形类型：$AC^{2} + AB^{2} = 9 + 16 = 25 = BC^{2}$，所以 $\angle A = 90°$'
+      - '设 $BD = x$，则 $CD = 5 - x$。周长相等：$(3 + CD + AD) = (4 + BD + AD)$'
+      - '$AD$ 在两边同时出现，抵消！得到 $3 + CD = 4 + BD$，即 $CD - BD = 1$'
+      - '联立 $BD + CD = 5$ 和 $CD - BD = 1$，解得 $BD = 2$，$CD = 3$'
+      - '$\triangle ABD$ 和 $\triangle ACD$ 共享从 $A$ 到 $BC$ 的高，面积之比 $= BD : CD = 2 : 3$'
+      - '$\triangle ABC$ 面积 $= \frac{1}{2} \times 3 \times 4 = 6$（直角在 $A$）'
+      - '$\triangle ABD$ 面积 $= \frac{2}{5} \times 6 = \frac{12}{5}$'
+    stepsEn:
+      - 'Identify triangle type: $AC^{2}+AB^{2}=9+16=25=BC^{2}$, so $\angle A=90°$'
+      - 'Let $BD=x$, $CD=5-x$. Equal perimeters: $(3+CD+AD)=(4+BD+AD)$'
+      - '$AD$ cancels! So $3+CD=4+BD$, giving $CD-BD=1$'
+      - 'With $BD+CD=5$ and $CD-BD=1$: $BD=2$, $CD=3$'
+      - '$\triangle ABD$ and $\triangle ACD$ share the height from $A$ to $BC$, so area ratio $= BD:CD = 2:3$'
+      - 'Area of $\triangle ABC = \frac{1}{2}\times3\times4=6$ (right angle at $A$)'
+      - 'Area of $\triangle ABD = \frac{2}{5}\times6 = \frac{12}{5}$'
+    answer: '(D) $\frac{12}{5}$'
+    answerEn: '(D) $\frac{12}{5}$'
+
+exercises:
+  timeGuide:
+    total: 约 40 分钟
+    sections:
+      - range: "1–4"
+        time: 底×高与坐标面积（约 10 分钟）
+      - range: "5–8"
+        time: 海伦公式（约 12 分钟）
+      - range: "9–12"
+        time: 四边形与综合（约 18 分钟）
+  scaffold:
+    - title: '铺垫：底×高求面积'
+      titleEn: 'Warm-up: Base × Height'
+      question: '一个三角形的底边长 8 cm，高 5 cm。它的面积是多少？'
+      questionEn: 'A triangle has base 8 cm and height 5 cm. What is its area?'
+      hint: '三角形面积公式：底×高÷2'
+      hintEn: 'Triangle area formula: base × height ÷ 2'
+      answer: '$S = \frac{1}{2} \times 8 \times 5 = 20$ 平方厘米'
+      answerEn: '$S = \frac{1}{2} \times 8 \times 5 = 20$ square cm'
+    - title: '铺垫：勾股定理求高'
+      titleEn: 'Warm-up: Finding Height with Pythagorean Theorem'
+      question: '等腰三角形两腰长 5，底边长 6。先求底边上的高，再求面积。'
+      questionEn: 'An isosceles triangle has two sides of length 5 and base 6. Find the height to the base, then the area.'
+      hint: '底边中点把底分成两段各 3。用勾股定理：$h = \sqrt{5^{2} - 3^{2}}$'
+      hintEn: 'The midpoint splits the base into two segments of 3 each. Pythagorean theorem: $h = \sqrt{5^{2} - 3^{2}}$'
+      answer: '$h = \sqrt{25 - 9} = \sqrt{16} = 4$。面积 $= \frac{1}{2} \times 6 \times 4 = 12$'
+      answerEn: '$h = \sqrt{25 - 9} = \sqrt{16} = 4$. Area $= \frac{1}{2} \times 6 \times 4 = 12$'
+    - title: '铺垫：坐标中找底和高'
+      titleEn: 'Warm-up: Finding Base and Height from Coordinates'
+      question: '三角形顶点 $A(1, 3)$、$B(5, 3)$、$C(3, 7)$。哪两个点在同一水平线上？底是多少？高是多少？面积呢？'
+      questionEn: 'Triangle vertices $A(1,3)$, $B(5,3)$, $C(3,7)$. Which two points share the same y-coordinate? What is the base? The height? The area?'
+      hint: '$A$ 和 $B$ 都在 $y=3$ 上，底 $= |5-1|$，高 $= |7-3|$'
+      hintEn: '$A$ and $B$ are both on $y=3$, base $= |5-1|$, height $= |7-3|$'
+      answer: '底 $= 4$，高 $= 4$，面积 $= \frac{1}{2} \times 4 \times 4 = 8$'
+      answerEn: 'Base $= 4$, height $= 4$, area $= \frac{1}{2} \times 4 \times 4 = 8$'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #21"
+      section: 底×高与坐标面积
+      question: |
+        直线 $y = 5$、$y = 1 + x$ 和 $y = 1 - x$ 围成的三角形面积是多少？
+      questionEn: |
+        What is the area of the triangle formed by the lines $y = 5$, $y = 1 + x$, and $y = 1 - x$?
+      choices:
+        - label: A
+          content: '4'
+        - label: B
+          content: '8'
+        - label: C
+          content: '10'
+        - label: D
+          content: '12'
+        - label: E
+          content: '16'
+      correctValue: E
+      answer: '(E) 16'
+      answerEn: '(E) 16'
+      explanation: |
+        求三条直线的交点：
+        $y=5$ 与 $y=1+x$：$5=1+x$，$x=4$，交点 $(4, 5)$。
+        $y=5$ 与 $y=1-x$：$5=1-x$，$x=-4$，交点 $(-4, 5)$。
+        $y=1+x$ 与 $y=1-x$：$1+x=1-x$，$x=0$，交点 $(0, 1)$。
+        底 $= |4-(-4)| = 8$（$y=5$ 上的水平线段），高 $= |5-1| = 4$。
+        面积 $= \frac{1}{2} \times 8 \times 4 = \mathbf{16}$。
+      explanationEn: |
+        Find intersections:
+        $y=5 \cap y=1+x$: $x=4$, point $(4,5)$.
+        $y=5 \cap y=1-x$: $x=-4$, point $(-4,5)$.
+        $y=1+x \cap y=1-x$: $x=0$, point $(0,1)$.
+        Base $= 8$ (horizontal at $y=5$), height $= 4$.
+        Area $= \frac{1}{2}\times8\times4 = \mathbf{16}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 底×高与坐标面积
+      question: |
+        三角形的三个顶点为 $A(1, 2)$、$B(7, 2)$、$C(4, 8)$。用底×高法求面积。
+      questionEn: |
+        A triangle has vertices $A(1,2)$, $B(7,2)$, and $C(4,8)$. Find the area using the base×height method.
+      choices:
+        - label: A
+          content: '12'
+        - label: B
+          content: '15'
+        - label: C
+          content: '18'
+        - label: D
+          content: '24'
+        - label: E
+          content: '36'
+      correctValue: C
+      answer: '(C) 18'
+      answerEn: '(C) 18'
+      explanation: |
+        $A$ 和 $B$ 在同一水平线 $y = 2$ 上，底 $= |7-1| = 6$。
+        $C$ 的纵坐标为 8，高 $= |8-2| = 6$。
+        面积 $= \frac{1}{2} \times 6 \times 6 = \mathbf{18}$。
+      explanationEn: |
+        $A$ and $B$ lie on $y=2$, so base $= |7-1|=6$.
+        Height from $C$: $|8-2|=6$.
+        Area $= \frac{1}{2}\times6\times6 = \mathbf{18}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 底×高与坐标面积
+      question: |
+        三角形的三个顶点为 $P(0, 0)$、$Q(6, 0)$、$R(2, 5)$。用<<鞋带公式/Shoelace formula>>求面积。
+      questionEn: |
+        A triangle has vertices $P(0,0)$, $Q(6,0)$, and $R(2,5)$. Find the area using the <<鞋带公式/Shoelace formula>>.
+      choices:
+        - label: A
+          content: '12'
+        - label: B
+          content: '15'
+        - label: C
+          content: '18'
+        - label: D
+          content: '20'
+        - label: E
+          content: '30'
+      correctValue: B
+      answer: '(B) 15'
+      answerEn: '(B) 15'
+      explanation: |
+        鞋带公式：$S = \frac{1}{2}|x_{1}(y_{2}-y_{3}) + x_{2}(y_{3}-y_{1}) + x_{3}(y_{1}-y_{2})|$
+        $= \frac{1}{2}|0 \times (0-5) + 6 \times (5-0) + 2 \times (0-0)|$
+        $= \frac{1}{2}|0 + 30 + 0| = \mathbf{15}$。
+        验证：底 $PQ = 6$，高 = $R$ 到 $x$ 轴的距离 $= 5$，$\frac{1}{2} \times 6 \times 5 = 15$ ✓
+      explanationEn: |
+        Shoelace: $S = \frac{1}{2}|0(0-5)+6(5-0)+2(0-0)| = \frac{1}{2}|30| = \mathbf{15}$.
+        Verify: base $PQ=6$, height $=5$, $\frac{1}{2}\times6\times5=15$ ✓
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 底×高与坐标面积
+      question: |
+        三角形的三个顶点为 $A(1, 1)$、$B(4, 5)$、$C(7, 2)$。用鞋带公式求面积。
+      questionEn: |
+        A triangle has vertices $A(1,1)$, $B(4,5)$, and $C(7,2)$. Use the Shoelace formula to find the area.
+      choices:
+        - label: A
+          content: '9'
+          contentEn: '9'
+        - label: B
+          content: '10.5'
+          contentEn: '10.5'
+        - label: C
+          content: '12'
+          contentEn: '12'
+        - label: D
+          content: '13.5'
+          contentEn: '13.5'
+        - label: E
+          content: '15'
+          contentEn: '15'
+      correctValue: B
+      answer: '(B) 10.5'
+      answerEn: '(B) 10.5'
+      explanation: |
+        鞋带公式：$S = \frac{1}{2}|1 \times (5-2) + 4 \times (2-1) + 7 \times (1-5)|$
+        $= \frac{1}{2}|3 + 4 + (-28)| = \frac{1}{2}|3 + 4 - 28| = \frac{1}{2} \times 21 = 10.5$
+        面积为 $\mathbf{10.5}$。
+
+        💡 **另一种方法——围框法（矩形减三角形）：**
+        画一个包围三角形的矩形：$x$ 从 1 到 7，$y$ 从 1 到 5，面积 $= 6 \times 4 = 24$。
+        减去三个角落的直角三角形：
+        左上：$\frac{1}{2} \times 3 \times 3 = 4.5$；右上：$\frac{1}{2} \times 3 \times 3 = 4.5$；底部：$\frac{1}{2} \times 6 \times 1 = 3$。
+        三角形面积 $= 24 - 4.5 - 4.5 - 3 \times (?) $ ... 实际上用鞋带公式更方便，但围框法是另一种直观的方法。
+      explanationEn: |
+        Shoelace: $S = \frac{1}{2}|1(5-2)+4(2-1)+7(1-5)| = \frac{1}{2}|3+4-28| = \frac{1}{2}\times21 = \mathbf{10.5}$.
+
+        💡 **Alternative — Bounding Box Method:**
+        Draw a bounding rectangle: $x$ from 1 to 7, $y$ from 1 to 5, area $= 6 \times 4 = 24$.
+        Subtract corner right triangles: the total removed area $= 24 - 10.5 = 13.5$. The Shoelace formula is faster here, but the bounding box method gives a visual, intuitive approach.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 海伦公式
+      question: |
+        三角形三边长为 5、12、13。用<<海伦公式/Heron's formula>>求面积。
+      questionEn: |
+        A triangle has sides 5, 12, and 13. Use <<海伦公式/Heron's formula>> to find its area.
+      choices:
+        - label: A
+          content: '24'
+        - label: B
+          content: '26'
+        - label: C
+          content: '28'
+        - label: D
+          content: '30'
+        - label: E
+          content: '32.5'
+      correctValue: D
+      answer: '(D) 30'
+      answerEn: '(D) 30'
+      explanation: |
+        $s = \frac{5+12+13}{2} = 15$。
+        $S = \sqrt{15 \times (15-5) \times (15-12) \times (15-13)} = \sqrt{15 \times 10 \times 3 \times 2} = \sqrt{900} = \mathbf{30}$。
+        验证：$5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$，这是直角三角形！
+        直接用 $\frac{1}{2} \times 5 \times 12 = 30$ ✓
+
+        💡 **另一种方法——先检查是不是直角三角形：**
+        拿到三边 5, 12, 13，先试试 $5^{2}+12^{2}=25+144=169=13^{2}$，发现满足勾股定理！
+        所以这是直角三角形，两条直角边就是 5 和 12，面积 $= \frac{1}{2} \times 5 \times 12 = 30$。
+        **竞赛技巧**：看到三边是整数时，先检查是不是勾股数（如 3-4-5, 5-12-13, 8-15-17），能直接跳过海伦公式！
+      explanationEn: |
+        $s = \frac{5+12+13}{2}=15$.
+        $S = \sqrt{15\times10\times3\times2} = \sqrt{900} = \mathbf{30}$.
+        Check: $5^{2}+12^{2}=169=13^{2}$ — it's a right triangle! $\frac{1}{2}\times5\times12=30$ ✓
+
+        💡 **Alternative — Check for Right Triangle First:**
+        Given sides 5, 12, 13, try $5^{2}+12^{2}=25+144=169=13^{2}$ — Pythagorean theorem holds!
+        So it's a right triangle with legs 5 and 12. Area $= \frac{1}{2}\times5\times12=30$.
+        **Contest tip**: When sides are integers, first check for Pythagorean triples (3-4-5, 5-12-13, 8-15-17) — you can skip Heron's formula entirely!
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 海伦公式
+      question: |
+        等腰三角形的两腰长均为 13，底边长为 10。用海伦公式求面积。
+      questionEn: |
+        An isosceles triangle has two sides of length 13 and a base of length 10. Use Heron's formula to find the area.
+      choices:
+        - label: A
+          content: '48'
+        - label: B
+          content: '56'
+        - label: C
+          content: '60'
+        - label: D
+          content: '65'
+        - label: E
+          content: '72'
+      correctValue: C
+      answer: '(C) 60'
+      answerEn: '(C) 60'
+      explanation: |
+        $s = \frac{13+13+10}{2} = 18$。
+        $S = \sqrt{18 \times (18-13) \times (18-13) \times (18-10)} = \sqrt{18 \times 5 \times 5 \times 8} = \sqrt{3600} = \mathbf{60}$。
+        验证：底边中点把底分成 5 和 5，高 $= \sqrt{13^{2} - 5^{2}} = \sqrt{144} = 12$，$\frac{1}{2} \times 10 \times 12 = 60$ ✓
+      explanationEn: |
+        $s = \frac{13+13+10}{2}=18$.
+        $S = \sqrt{18\times5\times5\times8} = \sqrt{3600} = \mathbf{60}$.
+        Verify: midpoint of base gives legs of 5, height $= \sqrt{169-25}=12$, $\frac{1}{2}\times10\times12=60$ ✓
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 海伦公式
+      question: |
+        三角形三边长为 7、8、9。用海伦公式求面积（结果用根号表示）。
+      questionEn: |
+        A triangle has sides 7, 8, and 9. Use Heron's formula to find the area (express with a radical).
+      choices:
+        - label: A
+          content: '$12\sqrt{5}$'
+        - label: B
+          content: '$6\sqrt{10}$'
+        - label: C
+          content: '$4\sqrt{20}$'
+        - label: D
+          content: '$10\sqrt{5}$'
+        - label: E
+          content: '$8\sqrt{5}$'
+      correctValue: A
+      answer: '(A) $12\sqrt{5}$'
+      answerEn: '(A) $12\sqrt{5}$'
+      explanation: |
+        $s = \frac{7+8+9}{2} = 12$。
+        $S = \sqrt{12 \times (12-7) \times (12-8) \times (12-9)} = \sqrt{12 \times 5 \times 4 \times 3} = \sqrt{720}$。
+        化简：$720 = 144 \times 5$，所以 $S = 12\sqrt{5} \approx 26.83$。
+      explanationEn: |
+        $s=12$. $S = \sqrt{12\times5\times4\times3} = \sqrt{720} = \sqrt{144\times5} = 12\sqrt{5} \approx 26.83$.
+
+    - number: 8
+      type: 填空题
+      inputType: text
+      source: 教学原创题
+      section: 海伦公式
+      question: |
+        三角形三边长为 20、21、29。用海伦公式求面积。
+      questionEn: |
+        A triangle has sides 20, 21, and 29. Use Heron's formula to find the area.
+      correctValue: '210'
+      answer: '210'
+      answerEn: '210'
+      explanation: |
+        $s = \frac{20+21+29}{2} = 35$。
+        $S = \sqrt{35 \times 15 \times 14 \times 6} = \sqrt{44100} = \mathbf{210}$。
+        验证：$20^{2} + 21^{2} = 400 + 441 = 841 = 29^{2}$，这是直角三角形！
+        $\frac{1}{2} \times 20 \times 21 = 210$ ✓
+      explanationEn: |
+        $s=35$. $S = \sqrt{35\times15\times14\times6} = \sqrt{44100} = \mathbf{210}$.
+        Check: $20^{2}+21^{2}=841=29^{2}$ — right triangle! $\frac{1}{2}\times20\times21=210$ ✓
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 四边形与综合
+      question: |
+        一个菱形的边长为 10，较短的对角线长为 12。这个菱形的面积是多少？
+      questionEn: |
+        A rhombus has side length 10 and a shorter diagonal of length 12. What is its area?
+      choices:
+        - label: A
+          content: '80'
+        - label: B
+          content: '96'
+        - label: C
+          content: '100'
+        - label: D
+          content: '120'
+        - label: E
+          content: '160'
+      correctValue: B
+      answer: '(B) 96'
+      answerEn: '(B) 96'
+      explanation: |
+        对角线互相垂直平分，半条短对角线 $= 6$。
+        用勾股定理：半条长对角线 $= \sqrt{10^{2} - 6^{2}} = \sqrt{64} = 8$，长对角线 $= 16$。
+        面积 $= \frac{1}{2} \times 12 \times 16 = \mathbf{96}$。
+      explanationEn: |
+        Diagonals bisect perpendicularly: half short diagonal $= 6$.
+        Half long diagonal $= \sqrt{100-36} = 8$, full $= 16$.
+        Area $= \frac{1}{2}\times12\times16 = \mathbf{96}$.
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 四边形与综合
+      question: |
+        梯形的两条平行边长分别为 8 和 14，两条腰长分别为 5 和 5（等腰梯形）。求面积。
+      questionEn: |
+        An isosceles trapezoid has parallel sides of length 8 and 14, and legs of length 5 each. Find its area.
+      choices:
+        - label: A
+          content: '33'
+        - label: B
+          content: '40'
+        - label: C
+          content: '44'
+        - label: D
+          content: '50'
+        - label: E
+          content: '55'
+      correctValue: C
+      answer: '(C) 44'
+      answerEn: '(C) 44'
+      explanation: |
+        等腰梯形的高可以用勾股定理求：底边差 $= 14 - 8 = 6$，每侧多出 $3$。
+        高 $= \sqrt{5^{2} - 3^{2}} = \sqrt{16} = 4$。
+        面积 $= \frac{1}{2} \times (8 + 14) \times 4 = \frac{1}{2} \times 22 \times 4 = \mathbf{44}$。
+      explanationEn: |
+        Height of isosceles trapezoid: extra base on each side $= \frac{14-8}{2}=3$.
+        Height $= \sqrt{25-9}=4$.
+        Area $= \frac{1}{2}(8+14)\times4 = \mathbf{44}$.
+
+    - number: 11
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #24 改编"
+      section: 四边形与综合
+      question: |
+        在 $\triangle ABC$ 中，$AB = 5$，$BC = 7$，$AC = 8$。点 $D$ 是 $\overline{AC}$ 的中点。$\triangle ABD$ 的面积是多少？
+      questionEn: |
+        In $\triangle ABC$, $AB = 5$, $BC = 7$, and $AC = 8$. Point $D$ is the midpoint of $\overline{AC}$. What is the area of $\triangle ABD$?
+      choices:
+        - label: A
+          content: '$5\sqrt{3}$'
+        - label: B
+          content: '10'
+        - label: C
+          content: '$4\sqrt{6}$'
+        - label: D
+          content: '$6\sqrt{2}$'
+        - label: E
+          content: '$5\sqrt{6}$'
+      correctValue: A
+      answer: '(A) $5\sqrt{3}$'
+      answerEn: '(A) $5\sqrt{3}$'
+      explanation: |
+        先用海伦公式求 $\triangle ABC$ 面积：$s = \frac{5+7+8}{2} = 10$。
+        $S_{ABC} = \sqrt{10 \times 5 \times 3 \times 2} = \sqrt{300} = 10\sqrt{3}$。
+        $D$ 是 $AC$ 中点，$\triangle ABD$ 和 $\triangle BDC$ 共享从 $B$ 到 $AC$ 的高，底之比 $= AD : DC = 1 : 1$。
+        所以 $S_{ABD} = \frac{1}{2} \times 10\sqrt{3} = \mathbf{5\sqrt{3}}$。
+      explanationEn: |
+        Heron's for $\triangle ABC$: $s=10$, $S = \sqrt{10\times5\times3\times2} = 10\sqrt{3}$.
+        $D$ is the midpoint of $AC$, so $\triangle ABD$ has half the area: $\frac{1}{2}\times10\sqrt{3} = \mathbf{5\sqrt{3}}$.
+
+    - number: 12
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 四边形与综合
+      question: |
+        在直角 $\triangle ABC$ 中，$\angle C = 90°$，$AC = 5$，$BC = 12$，$AB = 13$。点 $D$ 在 $\overline{AB}$ 上，使得 $CD \perp AB$。$CD$ 的长度是多少？
+      questionEn: |
+        In right $\triangle ABC$ with $\angle C = 90°$, $AC = 5$, $BC = 12$, and $AB = 13$. Point $D$ is on $\overline{AB}$ such that $CD \perp AB$. What is the length of $CD$?
+      choices:
+        - label: A
+          content: '$\frac{30}{13}$'
+        - label: B
+          content: '$\frac{48}{13}$'
+        - label: C
+          content: '$\frac{60}{13}$'
+        - label: D
+          content: '$\frac{72}{13}$'
+        - label: E
+          content: '5'
+      correctValue: C
+      answer: '(C) $\frac{60}{13}$'
+      answerEn: '(C) $\frac{60}{13}$'
+      explanation: |
+        $\triangle ABC$ 面积 $= \frac{1}{2} \times AC \times BC = \frac{1}{2} \times 5 \times 12 = 30$。
+        $CD$ 是斜边 $AB$ 上的高。以 $AB = 13$ 为底，$CD$ 为高：
+        $\frac{1}{2} \times 13 \times CD = 30$，所以 $CD = \frac{60}{13}$。
+        这是一个经典技巧：**用两种方式表达同一个三角形的面积**，从而求出未知长度。
+      explanationEn: |
+        Area of $\triangle ABC = \frac{1}{2}\times5\times12=30$.
+        $CD$ is the altitude to hypotenuse $AB=13$:
+        $\frac{1}{2}\times13\times CD = 30$, so $CD = \frac{60}{13}$.
+        Classic technique: **express the same triangle's area in two ways** to find an unknown length.
+
+summary:
+  - '面积公式选择策略：已知底和高 → 底×高；已知坐标 → 鞋带公式；已知三边 → 海伦公式'
+  - '<<海伦公式/Heron''s formula>>：$S = \sqrt{s(s-a)(s-b)(s-c)}$，其中 $s = \frac{a+b+c}{2}$，是处理"三边已知、高未知"的利器'
+  - '菱形面积 $= \frac{1}{2} \times d_{1} \times d_{2}$，对角线互相垂直平分，常与勾股定理联合使用'
+  - '<<鞋带公式/Shoelace formula>>对任意简单多边形有效，是坐标几何题的首选'
+  - '面积比技巧：共享同一条高的两个三角形，面积之比等于底之比'
+  - 'AMC 8 面积题的核心：快速选对公式 + 验算验证'
+summaryEn:
+  - 'Formula selection: base & height known → base×height; coordinates → Shoelace; three sides → Heron''s'
+  - '<<海伦公式/Heron''s formula>>: $S = \sqrt{s(s-a)(s-b)(s-c)}$ where $s=\frac{a+b+c}{2}$ — the tool for "sides known, height unknown"'
+  - 'Rhombus area $= \frac{1}{2} \times d_{1} \times d_{2}$; diagonals bisect perpendicularly; often combined with the Pythagorean theorem'
+  - '<<鞋带公式/Shoelace formula>> works for any simple polygon — the go-to for coordinate geometry'
+  - 'Area ratio trick: two triangles sharing the same height have areas proportional to their bases'
+  - 'Core of AMC 8 area problems: quickly pick the right formula + verify your answer'
+
+examPrep:
+  intro: 以下为竞赛风格综合题，难度略高于练习题，考查面积公式的灵活运用和多步推理。
+  introEn: The following are contest-style questions at a slightly higher level, testing flexible use of area formulas and multi-step reasoning.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        三角形三边长为 9、10、17。这个三角形的面积是多少？
+      questionEn: |
+        A triangle has sides 9, 10, and 17. What is its area?
+      choices:
+        - label: A
+          content: '24'
+        - label: B
+          content: '30'
+        - label: C
+          content: '36'
+        - label: D
+          content: '40'
+        - label: E
+          content: '45'
+      correctValue: C
+      answer: '(C) 36'
+      answerEn: '(C) 36'
+      explanation: |
+        $s = \frac{9+10+17}{2} = 18$。
+        $S = \sqrt{18 \times (18-9) \times (18-10) \times (18-17)} = \sqrt{18 \times 9 \times 8 \times 1} = \sqrt{1296} = \mathbf{36}$。
+        验证：取底 $= 17$，高 $h = \frac{2 \times 36}{17} = \frac{72}{17}$。
+        $BD = \sqrt{9^{2} - h^{2}} = \sqrt{81 - \frac{5184}{289}} = \sqrt{\frac{18225}{289}} = \frac{135}{17}$。
+        $DC = 17 - \frac{135}{17} = \frac{154}{17}$。
+        验证：$DC^{2} + h^{2} = \frac{23716 + 5184}{289} = \frac{28900}{289} = 100 = 10^{2}$ ✓
+      explanationEn: |
+        $s=18$. $S = \sqrt{18\times9\times8\times1} = \sqrt{1296} = \mathbf{36}$.
+        Verify with base $=17$: height $h=\frac{72}{17}$; check second side $\sqrt{(\frac{154}{17})^{2}+h^{2}}=10$ ✓
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        正三角形的边长为 6。用海伦公式求面积。
+      questionEn: |
+        An equilateral triangle has side length 6. Use Heron's formula to find its area.
+      choices:
+        - label: A
+          content: '$6\sqrt{3}$'
+        - label: B
+          content: '$9\sqrt{3}$'
+        - label: C
+          content: '$12\sqrt{3}$'
+        - label: D
+          content: '$18\sqrt{3}$'
+        - label: E
+          content: '$36\sqrt{3}$'
+      correctValue: B
+      answer: '(B) $9\sqrt{3}$'
+      answerEn: '(B) $9\sqrt{3}$'
+      explanation: |
+        $s = \frac{6+6+6}{2} = 9$。
+        $S = \sqrt{9 \times 3 \times 3 \times 3} = \sqrt{243} = \sqrt{81 \times 3} = 9\sqrt{3}$。
+        验证：正三角形面积公式 $= \frac{\sqrt{3}}{4} \times 6^{2} = 9\sqrt{3}$ ✓
+      explanationEn: |
+        $s=9$. $S = \sqrt{9\times3\times3\times3} = \sqrt{243} = 9\sqrt{3}$.
+        Verify: equilateral triangle area $= \frac{\sqrt{3}}{4}\times36 = 9\sqrt{3}$ ✓
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        在坐标平面上，四边形 $ABCD$ 的顶点为 $A(0,0)$、$B(4,0)$、$C(5,3)$、$D(1,4)$。用鞋带公式求面积。
+      questionEn: |
+        In the coordinate plane, quadrilateral $ABCD$ has vertices $A(0,0)$, $B(4,0)$, $C(5,3)$, $D(1,4)$. Find its area using the Shoelace formula.
+      choices:
+        - label: A
+          content: '13.5'
+        - label: B
+          content: '14'
+        - label: C
+          content: '14.5'
+        - label: D
+          content: '15'
+        - label: E
+          content: '16'
+      correctValue: C
+      answer: '(C) 14.5'
+      answerEn: '(C) 14.5'
+      explanation: |
+        鞋带公式（四边形版本），顶点按顺序排列：
+        正向乘积之和：$x_{A}y_{B} + x_{B}y_{C} + x_{C}y_{D} + x_{D}y_{A} = 0 + 12 + 20 + 0 = 32$。
+        反向乘积之和：$y_{A}x_{B} + y_{B}x_{C} + y_{C}x_{D} + y_{D}x_{A} = 0 + 0 + 3 + 0 = 3$。
+        $S = \frac{1}{2}|32 - 3| = \frac{29}{2} = \mathbf{14.5}$。
+      explanationEn: |
+        Shoelace (quadrilateral version), vertices in order:
+        Forward: $0+12+20+0=32$. Backward: $0+0+3+0=3$.
+        $S = \frac{1}{2}|32-3| = \mathbf{14.5}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        在 $\triangle ABC$ 中，$AB = 15$，$BC = 14$，$CA = 13$。点 $D$ 在 $BC$ 上，$AD \perp BC$。$BD$ 的长度是多少？
+      questionEn: |
+        In $\triangle ABC$, $AB = 15$, $BC = 14$, $CA = 13$. Point $D$ is on $BC$ such that $AD \perp BC$. What is the length of $BD$?
+      choices:
+        - label: A
+          content: '7'
+        - label: B
+          content: '8'
+        - label: C
+          content: '9'
+        - label: D
+          content: '10'
+        - label: E
+          content: '11'
+      correctValue: C
+      answer: '(C) 9'
+      answerEn: '(C) 9'
+      explanation: |
+        先用海伦公式求面积：$s = \frac{15+14+13}{2} = 21$。
+        $S = \sqrt{21 \times 6 \times 7 \times 8} = \sqrt{7056} = 84$。
+        以 $BC = 14$ 为底，高 $AD = \frac{2 \times 84}{14} = 12$。
+        用勾股定理求 $BD$：$BD = \sqrt{AB^{2} - AD^{2}} = \sqrt{225 - 144} = \sqrt{81} = \mathbf{9}$。
+        验证：$DC = 14 - 9 = 5$，$\sqrt{AD^{2} + DC^{2}} = \sqrt{144 + 25} = \sqrt{169} = 13 = CA$ ✓
+      explanationEn: |
+        Heron's: $s=21$, $S=\sqrt{21\times6\times7\times8}=84$.
+        Height to $BC$: $AD=\frac{2\times84}{14}=12$.
+        $BD=\sqrt{15^{2}-12^{2}}=\sqrt{81}=\mathbf{9}$.
+        Check: $DC=5$, $\sqrt{144+25}=13=CA$ ✓
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        菱形 $ABCD$ 的对角线 $AC$ 和 $BD$ 满足 $AC = 2BD$。若菱形面积为 64，则菱形的边长是多少？
+      questionEn: |
+        Rhombus $ABCD$ has diagonals $AC$ and $BD$ with $AC = 2BD$. If the area of the rhombus is 64, what is the side length?
+      choices:
+        - label: A
+          content: '8'
+        - label: B
+          content: '$4\sqrt{5}$'
+        - label: C
+          content: '$6\sqrt{2}$'
+        - label: D
+          content: '10'
+        - label: E
+          content: '$8\sqrt{2}$'
+      correctValue: B
+      answer: '(B) $4\sqrt{5}$'
+      answerEn: '(B) $4\sqrt{5}$'
+      explanation: |
+        设 $BD = d$，则 $AC = 2d$。面积 $= \frac{1}{2} \times AC \times BD = \frac{1}{2} \times 2d \times d = d^{2} = 64$。
+        所以 $d = 8$，$BD = 8$，$AC = 16$。
+        对角线互相垂直平分：半条 $BD = 4$，半条 $AC = 8$。
+        边长 $= \sqrt{4^{2} + 8^{2}} = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}$。
+      explanationEn: |
+        Let $BD=d$, $AC=2d$. Area $= \frac{1}{2}\times2d\times d = d^{2} = 64$, so $d=8$.
+        Half-diagonals: 4 and 8. Side $= \sqrt{16+64} = \sqrt{80} = 4\sqrt{5}$.

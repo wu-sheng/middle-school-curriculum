@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLang, getUi, biPick, type Lang } from "@/lib/i18n";
@@ -56,15 +56,18 @@ export default function Sidebar({ subjects }: SidebarProps) {
       grades.add("fce");
       semesters.add("phase1");
     }
-    // If on a math lesson, expand the relevant semester
-    if (currentPath?.startsWith("/lesson/math/grade7/")) {
+    // If on a math lesson, expand the relevant grade and semester
+    const mathMatch = currentPath?.match(/^\/lesson\/math\/(grade\d+)\//);
+    if (mathMatch) {
+      const gradeId = mathMatch[1];
       subjs.add("math");
-      grades.add("grade7");
+      grades.add(gradeId);
       // Find which semester contains this chapter
       const chId = currentPath.split("/").pop();
       for (const subj of subjects) {
         if (subj.id !== "math") continue;
         for (const g of subj.grades) {
+          if (g.id !== gradeId) continue;
           for (const sem of g.semesters) {
             if (sem.chapters.some(ch => ch.id === chId)) {
               semesters.add(sem.id);
@@ -87,6 +90,14 @@ export default function Sidebar({ subjects }: SidebarProps) {
     initExpanded.semesters
   );
   const [mobileOpen, setMobileOpen] = useState(false);
+  const activeRef = useRef<HTMLAnchorElement>(null);
+
+  // Scroll active item into view on mount
+  useEffect(() => {
+    if (activeRef.current) {
+      activeRef.current.scrollIntoView({ block: "center", behavior: "instant" });
+    }
+  }, []);
 
   const toggle = (
     set: Set<string>,
@@ -249,6 +260,7 @@ export default function Sidebar({ subjects }: SidebarProps) {
                               <Link
                                 key={ch.id}
                                 href={href}
+                                ref={isActive ? activeRef : undefined}
                                 onClick={() => setMobileOpen(false)}
                                 className={`block px-4 py-1.5 text-sm rounded-r-xl transition-colors ${
                                   isActive

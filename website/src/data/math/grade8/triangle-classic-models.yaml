@@ -1,0 +1,739 @@
+title: 几何专题：三角形经典模型
+titleEn: 'Geometry Special Topic: Classic Triangle Models'
+chapter: 12
+subject: math
+grade: grade8
+semester: semester2
+estimatedTime: 第1课时 约60分钟 · 第2课时 约55分钟
+estimatedTimeEn: "Session 1 ~60 min · Session 2 ~55 min"
+targetAudience: 小学3年级自学生（已完成八年级几何基础），自学材料，由简入深
+
+objectives:
+  - 掌握<<飞镖与风筝模型/boomerang and kite models>>的角度追逐技巧，灵活运用外角定理
+  - 掌握<<沙漏模型/hourglass model>>中的 AA 相似判定，能求比例线段和面积比
+  - 理解<<手拉手模型/hand-in-hand model>>的旋转全等结构，能用 SAS 证明全等并推导线段性质
+  - 掌握<<半角模型/half-angle model>>（如正方形含 45° 角）的旋转构造与截长补短法
+  - 熟练运用<<一线三等角/one-line-three-equal-angles>>模型（K型相似）进行余角转换并证明相似
+
+objectivesEn:
+  - 'Master angle chasing techniques in the <<飞镖与风筝模型/boomerang and kite models>>, flexibly applying the exterior angle theorem'
+  - 'Master AA similarity in the <<沙漏模型/hourglass model>> to find proportional segments and area ratios'
+  - 'Understand rotational congruence in the <<手拉手模型/hand-in-hand model>>, use SAS to prove congruence and derive segment properties'
+  - 'Master rotational construction and cut-and-construct methods in the <<半角模型/half-angle model>> (e.g., square with a 45° angle)'
+  - 'Fluently apply the <<一线三等角/one-line-three-equal-angles>> model (K-type similarity) to perform complementary angle conversions and prove similarity'
+
+prerequisites:
+  title: 从全等与相似出发——几何模型是什么？
+  titleEn: 'From congruence and similarity — what are geometric models?'
+  intro: |
+    学完全等三角形和相似三角形后，你已经掌握了判定和性质的基本工具。
+    但在解题时，很多题目并不直接告诉你“用 SAS”或“用 AA”——你需要识别出隐藏在图形中的几何结构。
+    本章将学习五个经典的三角形模型，帮助你快速识别图形中的潜在模式，建立“看到图形就想到套路”的直觉。
+  introEn: |
+    After studying congruent and similar triangles, you have the basic tools of criteria and properties.
+    But many problems don't explicitly say "use SAS" or "use AA" — you need to recognize geometric structures hidden in the figures.
+    This chapter introduces five classic triangle models to help you quickly identify underlying patterns and build the intuition of "seeing the figure and knowing the method."
+  knownNumbers:
+    - '三角形全等的判定：SSS、SAS、ASA、AAS、HL'
+    - '三角形相似的判定：AA、SAS、SSS'
+    - '全等与相似的性质：对应边相等/成比例，对应角相等'
+    - '三角形外角定理：三角形的一个外角等于与它不相邻的两个内角之和'
+  knownNumbersEn:
+    - 'Triangle congruence criteria: SSS, SAS, ASA, AAS, HL'
+    - 'Triangle similarity criteria: AA, SAS, SSS'
+    - 'Properties of congruence and similarity: corresponding sides equal/proportional, corresponding angles equal'
+    - 'Exterior angle theorem: an exterior angle of a triangle equals the sum of the two non-adjacent interior angles'
+  canSolve:
+    - 运用外角定理计算简单图形的角度
+    - 在已知平行线的情况下寻找相似三角形
+    - 根据给定的已知边角条件证明全等
+  canSolveEn:
+    - Calculate angles in simple figures using the exterior angle theorem
+    - Find similar triangles when parallel lines are explicitly given
+    - Prove congruence based on given side and angle conditions
+  cannotSolve:
+    - 遇到凹四边形或内部连线复杂的图形时，如何快速找角度关系？
+    - 两个等边三角形共顶点旋转时，隐藏着哪些全等三角形？
+    - 正方形中出现 45° 角时，如何利用旋转构造全等？
+    - 直线上有三个相等的角时，如何通过余角转换推导相似？
+  cannotSolveEn:
+    - How to quickly find angle relationships in concave quadrilaterals or complex internally connected figures?
+    - What hidden congruent triangles exist when two equilateral triangles share a vertex and rotate?
+    - How to use rotation to construct congruence when a 45° angle appears inside a square?
+    - How to derive similarity via complementary angle conversion when three equal angles appear on a line?
+  conclusion: |
+    本章将带你掌握五个经典模型：飞镖/风筝、沙漏、手拉手、半角、一线三等角。
+    它们是 AMC 8 及初中几何压轴题的常客。掌握这些模型，你就能在复杂的几何线段中一眼看破解题密码。
+  conclusionEn: |
+    This chapter will guide you through five classic models: Boomerang/Kite, Hourglass, Hand-in-Hand, Half-Angle, and One-Line-Three-Equal-Angles.
+    They are frequent guests in AMC 8 and middle school geometry finale problems. Mastering them lets you instantly crack the code in complex geometric figures.
+
+concepts:
+  - id: boomerang-model
+    title: 飞镖模型（凹四边形）
+    titleEn: Boomerang Model (Concave Quadrilateral)
+    hasVisualization: true
+    content: |
+      **构型描述：** 图形像一个飞镖（凹四边形 $ABDC$），其中 $D$ 是凹进去的顶点。
+      **核心结论：** 内部的钝角等于另外三个尖角之和。
+      $$\angle BDC = \angle A + \angle B + \angle C$$
+      
+      **证明思路：** 连结 $AD$ 并延长，利用<<外角定理/exterior angle theorem>>。
+      左边 $\triangle ABD$ 中，外角 $\angle 1 = \angle BAD + \angle B$；右边 $\triangle ACD$ 中，外角 $\angle 2 = \angle CAD + \angle C$。两式相加即得结论。
+    contentEn: |
+      **Configuration:** The figure looks like a boomerang (concave quadrilateral $ABDC$), where $D$ is the reflex vertex.
+      **Core conclusion:** The interior reflex/obtuse angle equals the sum of the other three acute angles.
+      $$\angle BDC = \angle A + \angle B + \angle C$$
+      
+      **Proof approach:** Connect $AD$ and extend it, using the <<外角定理/exterior angle theorem>>.
+      In the left $\triangle ABD$, the exterior angle $\angle 1 = \angle BAD + \angle B$; in the right $\triangle ACD$, the exterior angle $\angle 2 = \angle CAD + \angle C$. Adding them gives the conclusion.
+
+  - id: kite-model
+    title: 风筝角度模型（交叉线）
+    titleEn: Kite Angle Model (Intersecting Cevians)
+    hasVisualization: true
+    content: |
+      **构型描述：** 在 $\triangle ABC$ 中，点 $P$ 在三角形内部。延长 $BP$ 交 $AC$ 于 $D$，延长 $CP$ 交 $AB$ 于 $E$。图形形似一个风筝的骨架。
+      **核心结论：**
+      $$\angle BPC = \angle BAC + \angle ABD + \angle ACE$$
+      （即：交叉中心角 = 头部角 + 两翼外侧的角度之和）
+      
+      **证明思路：** 利用两次外角定理。
+      在 $\triangle ABD$ 中，外角 $\angle BDC = \angle BAC + \angle ABD$。
+      在 $\triangle PDC$ 中，外角 $\angle BPC = \angle BDC + \angle PCD$（注意 $\angle PCD$ 即为 $\angle ACE$）。
+      将上式代入下式，得到：$\angle BPC = (\angle BAC + \angle ABD) + \angle ACE$。
+      整理即得核心结论：$\angle BPC = \angle BAC + \angle ABD + \angle ACE$。
+    contentEn: |
+      **Configuration:** In $\triangle ABC$, point $P$ is an interior point. Extend $BP$ to meet $AC$ at $D$, and extend $CP$ to meet $AB$ at $E$. The figure resembles the frame of a kite.
+      **Core conclusion:**
+      $$\angle BPC = \angle BAC + \angle ABD + \angle ACE$$
+      (i.e., intersection center angle = top angle + sum of the two "wing" angles)
+      
+      **Proof approach:** Apply the exterior angle theorem twice.
+      In $\triangle ABD$, the exterior angle $\angle BDC = \angle BAC + \angle ABD$.
+      In $\triangle PDC$, the exterior angle $\angle BPC = \angle BDC + \angle PCD$ (note that $\angle PCD$ is $\angle ACE$).
+      Substituting the first into the second gives: $\angle BPC = (\angle BAC + \angle ABD) + \angle ACE$.
+      Rearranging yields the core conclusion.
+
+  - id: hourglass-model
+    title: 沙漏模型（8 字型相似）
+    titleEn: Hourglass Model (Figure-8 Similarity)
+    hasVisualization: true
+    content: |
+      **构型描述：**
+      
+      两条线段 $AC$ 和 $BD$ 交于点 $E$，形成 X 形交叉，且上下两边平行（$AB \parallel CD$）。
+      这样 $\triangle ABE$ 在上、$\triangle CDE$ 在下，整体形如<<沙漏/hourglass>>（也叫 8 字型）。
+      
+      **核心推导：**
+      
+      - $\angle AEB = \angle DEC$（<<对顶角/vertical angles>>相等）
+      - ∵ $AB \parallel CD$，∴ $\angle ABE = \angle DCE$ 且 $\angle BAE = \angle CDE$（<<内错角/alternate interior angles>>相等）
+      - 由 <<AA/AA>> 判定：$\triangle ABE \sim \triangle CDE$
+      
+      **核心结论：**
+      
+      设相似比为 $k = \frac{AB}{CD}$，则：
+      1. **对应边成比例**：$\frac{AE}{CE} = \frac{BE}{DE} = \frac{AB}{CD} = k$
+      2. **面积比等于相似比的平方**：$\frac{S_{\triangle ABE}}{S_{\triangle CDE}} = k^{2}$
+      
+      **竞赛技巧：** 只要看到**平行线 + 交叉线**，就立刻写出比例关系。这在梯形对角线问题中是必考模型。
+    contentEn: |
+      **Configuration:**
+      
+      Two segments $AC$ and $BD$ intersect at point $E$, forming an X shape, with the top and bottom sides parallel ($AB \parallel CD$).
+      $\triangle ABE$ is on top and $\triangle CDE$ is on the bottom — shaped like an <<沙漏/hourglass>> (or figure-8).
+      
+      **Core reasoning:**
+      
+      - $\angle AEB = \angle DEC$ (<<对顶角/vertical angles>> are equal)
+      - Since $AB \parallel CD$: $\angle ABE = \angle DCE$ and $\angle BAE = \angle CDE$ (<<内错角/alternate interior angles>> are equal)
+      - By <<AA/AA>> criteria: $\triangle ABE \sim \triangle CDE$
+      
+      **Core conclusions:**
+      
+      Let the similarity ratio be $k = \frac{AB}{CD}$, then:
+      1. **Corresponding sides are proportional**: $\frac{AE}{CE} = \frac{BE}{DE} = \frac{AB}{CD} = k$
+      2. **Area ratio equals the square of the similarity ratio**: $\frac{S_{\triangle ABE}}{S_{\triangle CDE}} = k^{2}$
+      
+      **Contest tip:** Whenever you see **parallel lines + intersecting transversals**, write down the proportions immediately. This is a must-know model for trapezoid diagonal problems.
+
+  - id: hand-in-hand-model
+    title: 手拉手模型（共顶点旋转全等）
+    titleEn: Hand-in-Hand Model (Shared-Vertex Rotational Congruence)
+    hasVisualization: true
+    content: |
+      **构型描述：**
+      
+      两个<<等腰三角形/isosceles triangle>> $\triangle OAB$ 和 $\triangle OCD$ 共享顶点 $O$，且它们的顶角相等（$\angle AOB = \angle COD$）。
+      形象记忆：“头碰头（共顶点 $O$），左手拉左手（连 $AC$），右手拉右手（连 $BD$）”。
+      
+      **核心结论：**
+      
+      **① 连线等长**：$AC = BD$
+      **② 隐藏的全等**：$\triangle OAC \cong \triangle OBD$（SAS）
+      **③ 夹角恒定**：连线 $AC$ 与 $BD$ 所夹的锐角，等于等腰三角形的顶角（$\angle AOB$）
+      
+      **完美证明：**
+      
+      这是利用“等量代换”找全等的经典案例：
+      ∵ $\angle AOB = \angle COD$
+      两边同时加上中间的公共角 $\angle BOC$（或减去，视具体位置而定）：
+      $\angle AOB + \angle BOC = \angle COD + \angle BOC \implies \angle AOC = \angle BOD$
+      
+      在 $\triangle OAC$ 和 $\triangle OBD$ 中：
+      $OA = OB$（第一个等腰的腰），$\angle AOC = \angle BOD$，$OC = OD$（第二个等腰的腰）。
+      根据 <<SAS/SAS>> 公理，$\triangle OAC \cong \triangle OBD$，故 $AC = BD$。
+    contentEn: |
+      **Configuration:**
+      
+      Two <<等腰三角形/isosceles triangle>>s $\triangle OAB$ and $\triangle OCD$ share vertex $O$, and their vertex angles are equal ($\angle AOB = \angle COD$).
+      Visual memory: "Heads together (shared vertex $O$), left hands joined (connect $AC$), right hands joined (connect $BD$)."
+      
+      **Core conclusions:**
+      
+      **1. Joined lines are equal**: $AC = BD$
+      **2. Hidden congruence**: $\triangle OAC \cong \triangle OBD$ (SAS)
+      **3. Constant intersection angle**: The acute angle formed by the intersection of $AC$ and $BD$ equals the vertex angle ($\angle AOB$)
+      
+      **Elegant proof:**
+      
+      This is a classic case of using "angle addition/substitution" to find congruence:
+      Since $\angle AOB = \angle COD$,
+      Add the shared middle angle $\angle BOC$ to both sides (or subtract, depending on position):
+      $\angle AOB + \angle BOC = \angle COD + \angle BOC \implies \angle AOC = \angle BOD$
+      
+      In $\triangle OAC$ and $\triangle OBD$:
+      $OA = OB$ (legs of 1st triangle), $\angle AOC = \angle BOD$, $OC = OD$ (legs of 2nd triangle).
+      By the <<SAS/SAS>> postulate, $\triangle OAC \cong \triangle OBD$, therefore $AC = BD$.
+
+  - id: half-angle-model
+    title: 半角模型（正方形中含 45° 角）
+    titleEn: Half-Angle Model (Square with 45° Angle)
+    hasVisualization: true
+    content: |
+      **构型描述：**
+      
+      在正方形 $ABCD$ 中，从顶点 $A$ 引出两条射线交 $BC$、$CD$ 于 $E$、$F$，且夹角 $\angle EAF = 45^\circ$。
+      由于正方形内角是 $90^\circ$，$45^\circ$ 正好是它的一半，因此称为<<半角模型/half-angle model>>。
+      
+      **核心操作：旋转与截长补短**
+      
+      解决半角模型的标准动作是**“将原图形旋转 90°”**进行拼接：
+      1. 将 $\triangle ABE$ 绕点 $A$ 逆时针旋转 $90^\circ$，使 $AB$ 与 $AD$ 重合。此时点 $E$ 落到射线 $CD$ 的延长线上点 $G$ 的位置。
+      2. 旋转后，$\triangle ABE \cong \triangle ADG$，且 $\angle DAG = \angle BAE$，$AG = AE$，$DG = BE$。
+      
+      **核心结论推导：**
+      
+      $\angle FAG = \angle DAF + \angle DAG = \angle DAF + \angle BAE = 90^\circ - \angle EAF = 90^\circ - 45^\circ = 45^\circ$。
+      发现惊人的巧合：$\angle FAG = \angle EAF = 45^\circ$！
+      在 $\triangle AEF$ 和 $\triangle AGF$ 中：
+      $AE = AG$（旋转相等），$\angle EAF = \angle GAF = 45^\circ$，$AF$ 为公共边。
+      根据 <<SAS/SAS>>，$\triangle AEF \cong \triangle AGF$。
+      
+      **最强推论：**
+      
+      由于全等，对应边相等：$EF = FG = DF + DG = DF + BE$。
+      即：**中间截得的线段 $EF$，等于旁边两条线段 $BE$ 与 $DF$ 之和**。
+      进一步推导 $\triangle CFE$ 的周长：
+      周长 $= CE + CF + EF$
+      将 $EF$ 替换为 $BE + DF$，得到：
+      周长 $= CE + CF + (BE + DF) = (CE + BE) + (CF + DF) = BC + CD$。
+      由于 $BC$ 和 $CD$ 都是正方形的边长，因此 **$\triangle CFE$ 的周长恒等于正方形边长的 2 倍**。
+    contentEn: |
+      **Configuration:**
+      
+      In square $ABCD$, two rays drawn from vertex $A$ intersect $BC$ and $CD$ at $E$ and $F$, with an included angle $\angle EAF = 45^\circ$.
+      Since the square's interior angle is $90^\circ$ and $45^\circ$ is exactly half of it, this is called the <<半角模型/half-angle model>>.
+      
+      **Core operation: Rotation and cut-and-construct**
+      
+      The standard move for the half-angle model is to **"rotate the original figure by 90°"** to splice it:
+      1. Rotate $\triangle ABE$ counterclockwise by $90^\circ$ around point $A$ so that $AB$ coincides with $AD$. Point $E$ maps to point $G$ on the extension of $CD$.
+      2. After rotation, $\triangle ABE \cong \triangle ADG$, with $\angle DAG = \angle BAE$, $AG = AE$, and $DG = BE$.
+      
+      **Core conclusion derivation:**
+      
+      $\angle FAG = \angle DAF + \angle DAG = \angle DAF + \angle BAE = 90^\circ - \angle EAF = 90^\circ - 45^\circ = 45^\circ$.
+      An amazing coincidence appears: $\angle FAG = \angle EAF = 45^\circ$!
+      In $\triangle AEF$ and $\triangle AGF$:
+      $AE = AG$ (from rotation), $\angle EAF = \angle GAF = 45^\circ$, and $AF$ is common.
+      By <<SAS/SAS>>, $\triangle AEF \cong \triangle AGF$.
+      
+      **Ultimate corollary:**
+      
+      Due to congruence, corresponding sides are equal: $EF = FG = DF + DG = DF + BE$.
+      That is: **the middle segment $EF$ equals the sum of the two side segments $BE$ and $DF$**.
+      Further deriving the perimeter of $\triangle CFE$:
+      Perimeter $= CE + CF + EF$
+      Substitute $EF$ with $BE + DF$:
+      Perimeter $= CE + CF + (BE + DF) = (CE + BE) + (CF + DF) = BC + CD$.
+      Since $BC$ and $CD$ are both sides of the square, **the perimeter of $\triangle CFE$ is always equal to twice the side length of the square**.
+
+  - id: one-line-three-equal-angles
+    title: 一线三等角（K型相似 / 三垂直）
+    titleEn: One-Line-Three-Equal-Angles (K-Type / Three Perpendiculars)
+    hasVisualization: true
+    content: |
+      **构型描述：**
+      
+      一条直线上依次排列着三个顶点，且在这条直线上产生了**三个相等的角**。
+      最经典的载体是**“直角三角形的直角顶点在一条直线上滑动”**（此时产生三个 $90^\circ$ 的角，俗称“三垂直模型”或 K 型相似）。
+      
+      **核心推导（以三个 90° 为例）：**
+      
+      假设直角 $\triangle ABC$ 的直角顶点 $A$ 在直线 $l$ 上。过 $B$ 作 $BD \perp l$ 于 $D$，过 $C$ 作 $CE \perp l$ 于 $E$。
+      此时直线上有三个直角：$\angle D = \angle BAC = \angle E = 90^\circ$。
+      
+      关键的**余角转换**：
+      由于点 $D, A, E$ 共线，平角为 $180^\circ$：
+      $\angle DAB + \angle BAC + \angle CAE = 180^\circ \implies \angle DAB + \angle CAE = 90^\circ$
+      
+      在直角 $\triangle ABD$ 中，两个锐角互余：
+      $\angle DAB + \angle ABD = 90^\circ$
+      
+      对比两式，利用“同角的余角相等”得出：
+      $\mathbf{\angle ABD = \angle CAE}$
+      
+      **核心结论：**
+      
+      此时 $\triangle ABD$ 和 $\triangle CAE$ 中，有两个角对应相等（直角相等，加上刚证出的锐角相等），故 **$\triangle ABD \sim \triangle CAE$（AA相似）**。
+      如果题目额外给出 $AB = AC$（等腰直角三角形），那么加上斜边相等，两个三角形就是**全等（AAS）**！
+    contentEn: |
+      **Configuration:**
+      
+      Three vertices are arranged along a straight line, and **three equal angles** are formed on this line.
+      The most classic carrier is **"the right-angle vertex of a right triangle sliding on a straight line"** (creating three $90^\circ$ angles, commonly called the "three perpendiculars model" or K-type similarity).
+      
+      **Core reasoning (using three 90° angles as an example):**
+      
+      Suppose the right-angle vertex $A$ of right $\triangle ABC$ lies on line $l$. Draw $BD \perp l$ at $D$, and $CE \perp l$ at $E$.
+      Now there are three right angles on the line: $\angle D = \angle BAC = \angle E = 90^\circ$.
+      
+      The critical **complementary angle conversion**:
+      Since points $D, A, E$ are collinear, they form a straight angle of $180^\circ$:
+      $\angle DAB + \angle BAC + \angle CAE = 180^\circ \implies \angle DAB + \angle CAE = 90^\circ$
+      
+      In right $\triangle ABD$, the two acute angles are complementary:
+      $\angle DAB + \angle ABD = 90^\circ$
+      
+      Comparing the two equations, using "complements of the same angle are equal," we get:
+      $\mathbf{\angle ABD = \angle CAE}$
+      
+      **Core conclusions:**
+      
+      Now in $\triangle ABD$ and $\triangle CAE$, two pairs of angles are equal (the right angles, and the acute angles just proven). Thus, **$\triangle ABD \sim \triangle CAE$ (AA similarity)**.
+      If the problem additionally states $AB = AC$ (an isosceles right triangle), then with the hypotenuses being equal, the two triangles are **congruent (AAS)**!
+
+realLife:
+  - title: 建筑与桥梁中的沙漏结构
+    titleEn: Hourglass structures in architecture
+    description: |
+      高速公路立交桥的匝道从上方看，上下两层道路在交汇处往往形成完美的沙漏形状。工程师在设计时，正是利用相似比来计算不同层级的道路宽度、弯道半径和支撑柱的间距。
+    descriptionEn: |
+      Viewed from above, highway interchange ramps often form perfect hourglass shapes where two levels cross. When designing, engineers use similarity ratios to precisely calculate road widths, curve radii, and spacing between support pillars at different levels.
+
+  - title: 机械臂与手拉手模型
+    titleEn: Robotic arms and hand-in-hand models
+    description: |
+      在工业制造中，机器人的双臂在进行同步的旋转、抓取动作时，其关节和连杆的运动轨迹常常符合“手拉手”旋转全等的几何模型。工程师通过 SAS 全等原理来确保两侧机械臂能以相同的力量和角度完美夹取目标。
+    descriptionEn: |
+      In industrial manufacturing, when the dual arms of a robot perform synchronized rotational and grasping actions, the trajectories of its joints and linkages often follow the "hand-in-hand" geometric model of rotational congruence. Engineers use the SAS congruence principle to ensure that both arms can perfectly clamp the target with the exact same force and angle.
+
+examples:
+  - id: ex-kite
+    title: 飞镖模型求角度
+    titleEn: Boomerang model — finding angles
+    type: computation
+    question: |
+      如图，在凹四边形 $ABDC$ 中（$D$ 为凹陷处的顶点），已知 $\angle A = 40^\circ$，$\angle B = 35^\circ$，$\angle C = 45^\circ$。求 $\angle BDC$ 的度数。
+    questionEn: |
+      In concave quadrilateral $ABDC$ (where $D$ is the reflex vertex), it is given that $\angle A = 40^\circ$, $\angle B = 35^\circ$, and $\angle C = 45^\circ$. Find the measure of $\angle BDC$.
+    answer: '$\angle BDC = 120^\circ$'
+    answerEn: '$\angle BDC = 120^\circ$'
+    steps:
+      - hint: 运用飞镖模型结论或连结辅助线
+        hintEn: Apply the boomerang model conclusion or draw an auxiliary line
+        detail: |
+          连结 $AD$ 并延长至点 $E$。
+        detailEn: |
+          Connect $AD$ and extend it to point $E$.
+      - hint: 运用外角定理两次
+        hintEn: Apply the exterior angle theorem twice
+        detail: |
+          在 $\triangle ABD$ 中，外角 $\angle BDE = \angle BAD + \angle B$。
+          在 $\triangle ACD$ 中，外角 $\angle CDE = \angle CAD + \angle C$。
+        detailEn: |
+          In $\triangle ABD$, exterior angle $\angle BDE = \angle BAD + \angle B$.
+          In $\triangle ACD$, exterior angle $\angle CDE = \angle CAD + \angle C$.
+      - hint: 角度相加得出结果
+        hintEn: Add the angles to get the result
+        detail: |
+          两式相加得：$\angle BDC = \angle BDE + \angle CDE = (\angle BAD + \angle CAD) + \angle B + \angle C = \angle A + \angle B + \angle C$。
+          代入数值：$\angle BDC = 40^\circ + 35^\circ + 45^\circ = 120^\circ$。
+        detailEn: |
+          Adding the two equations: $\angle BDC = \angle BDE + \angle CDE = (\angle BAD + \angle CAD) + \angle B + \angle C = \angle A + \angle B + \angle C$.
+          Substituting the values: $\angle BDC = 40^\circ + 35^\circ + 45^\circ = 120^\circ$.
+
+  - id: ex-hourglass
+    title: 沙漏模型求线段长度
+    titleEn: Hourglass model — finding segment lengths
+    type: computation
+    question: |
+      如图，$AB \parallel CD$，$AB = 10$，$CD = 6$。线段 $AC$ 与 $BD$ 交于点 $E$。若 $AE = 15$，求 $CE$ 的长度。
+    questionEn: |
+      In the figure, $AB \parallel CD$, $AB = 10$, $CD = 6$. Segments $AC$ and $BD$ intersect at point $E$. If $AE = 15$, find the length of $CE$.
+    answer: '$CE = 9$'
+    answerEn: '$CE = 9$'
+    steps:
+      - hint: 识别沙漏模型，证明相似
+        hintEn: Identify the hourglass model and prove similarity
+        detail: |
+          ∵ $AB \parallel CD$，
+          ∴ $\angle A = \angle C$，$\angle B = \angle D$（内错角相等）。
+          ∴ $\triangle ABE \sim \triangle CDE$（AA 相似）。
+        detailEn: |
+          Since $AB \parallel CD$,
+          $\angle A = \angle C$ and $\angle B = \angle D$ (alternate interior angles are equal).
+          Therefore, $\triangle ABE \sim \triangle CDE$ (AA similarity).
+      - hint: 利用相似比列出方程
+        hintEn: Set up an equation using the similarity ratio
+        detail: |
+          根据相似三角形对应边成比例：
+          $\frac{AE}{CE} = \frac{AB}{CD}$
+        detailEn: |
+          By proportional corresponding sides of similar triangles:
+          $\frac{AE}{CE} = \frac{AB}{CD}$
+      - hint: 代入数据求解
+        hintEn: Substitute values and solve
+        detail: |
+          代入已知数据：$\frac{15}{CE} = \frac{10}{6}$。
+          化简得 $\frac{15}{CE} = \frac{5}{3}$，解得 $CE = 9$。
+        detailEn: |
+          Substitute the given values: $\frac{15}{CE} = \frac{10}{6}$.
+          Simplify to $\frac{15}{CE} = \frac{5}{3}$, which gives $CE = 9$.
+
+  - id: ex-hand-in-hand
+    title: 手拉手模型证明线段相等
+    titleEn: Hand-in-hand model — proving segment equality
+    type: proof
+    question: |
+      已知 $\triangle OAB$ 和 $\triangle OCD$ 都是等边三角形，它们共享顶点 $O$。求证：$AC = BD$。
+    questionEn: |
+      Given that $\triangle OAB$ and $\triangle OCD$ are both equilateral triangles sharing vertex $O$. Prove that $AC = BD$.
+    answer: '通过等量代换证明 $\angle AOC = \angle BOD$，利用 SAS 证明 $\triangle OAC \cong \triangle OBD$，从而得出 $AC = BD$。'
+    answerEn: 'Prove $\angle AOC = \angle BOD$ via angle addition, use SAS to prove $\triangle OAC \cong \triangle OBD$, thus concluding $AC = BD$.'
+    steps:
+      - hint: 寻找等腰/等边条件
+        hintEn: Find isosceles/equilateral conditions
+        detail: |
+          ∵ $\triangle OAB$ 和 $\triangle OCD$ 是等边三角形，
+          ∴ $OA = OB$，$OC = OD$，且 $\angle AOB = \angle COD = 60^\circ$。
+        detailEn: |
+          Since $\triangle OAB$ and $\triangle OCD$ are equilateral triangles,
+          $OA = OB$, $OC = OD$, and $\angle AOB = \angle COD = 60^\circ$.
+      - hint: 利用等量代换证明夹角相等
+        hintEn: Use angle addition to prove the included angles are equal
+        detail: |
+          ∵ $\angle AOB = \angle COD = 60^\circ$，
+          两边同时加上公共角 $\angle BOC$，
+          ∴ $\angle AOB + \angle BOC = \angle COD + \angle BOC$，
+          即 $\angle AOC = \angle BOD$。
+        detailEn: |
+          Since $\angle AOB = \angle COD = 60^\circ$,
+          Adding the common angle $\angle BOC$ to both sides,
+          $\angle AOB + \angle BOC = \angle COD + \angle BOC$,
+          which means $\angle AOC = \angle BOD$.
+      - hint: 利用 SAS 证明全等
+        hintEn: Use SAS to prove congruence
+        detail: |
+          在 $\triangle OAC$ 和 $\triangle OBD$ 中：
+          $OA = OB$
+          $\angle AOC = \angle BOD$
+          $OC = OD$
+          ∴ $\triangle OAC \cong \triangle OBD$（SAS）。
+          ∴ $AC = BD$（全等三角形对应边相等）。
+        detailEn: |
+          In $\triangle OAC$ and $\triangle OBD$:
+          $OA = OB$
+          $\angle AOC = \angle BOD$
+          $OC = OD$
+          Therefore, $\triangle OAC \cong \triangle OBD$ (SAS).
+          Thus, $AC = BD$ (corresponding sides of congruent triangles).
+
+  - id: ex-half-angle
+    title: 半角模型求周长
+    titleEn: Half-angle model — finding perimeter
+    type: computation
+    question: |
+      在正方形 $ABCD$ 中，边长为 4。点 $E$ 在 $BC$ 上，点 $F$ 在 $CD$ 上，且 $\angle EAF = 45^\circ$。求 $\triangle CFE$ 的周长。
+    questionEn: |
+      In square $ABCD$ with side length 4, point $E$ is on $BC$ and point $F$ is on $CD$, such that $\angle EAF = 45^\circ$. Find the perimeter of $\triangle CFE$.
+    answer: '周长等于 8'
+    answerEn: 'The perimeter is 8'
+    steps:
+      - hint: 运用旋转构造全等（截长补短）
+        hintEn: Use rotation to construct congruence (cut-and-construct)
+        detail: |
+          将 $\triangle ABE$ 绕点 $A$ 逆时针旋转 $90^\circ$，使 $AB$ 落在 $AD$ 上，点 $E$ 落在 $CD$ 延长线上的点 $G$ 处。
+          此时 $\triangle ABE \cong \triangle ADG$。
+        detailEn: |
+          Rotate $\triangle ABE$ counterclockwise by $90^\circ$ around $A$ so that $AB$ maps onto $AD$, and point $E$ maps to point $G$ on the extension of $CD$.
+          Now $\triangle ABE \cong \triangle ADG$.
+      - hint: 证明旋转后形成的两个三角形全等
+        hintEn: Prove the two triangles formed after rotation are congruent
+        detail: |
+          由旋转可知：$AE = AG$，$BE = DG$，$\angle BAE = \angle DAG$。
+          ∵ $\angle EAF = 45^\circ$ 且正方形角为 $90^\circ$，
+          ∴ $\angle BAE + \angle DAF = 90^\circ - 45^\circ = 45^\circ$。
+          ∴ $\angle FAG = \angle DAG + \angle DAF = \angle BAE + \angle DAF = 45^\circ$。
+          在 $\triangle AEF$ 和 $\triangle AGF$ 中，$AE=AG$, $\angle EAF=\angle FAG=45^\circ$, $AF$为公共边。
+          ∴ $\triangle AEF \cong \triangle AGF$（SAS）。
+        detailEn: |
+          From rotation: $AE = AG$, $BE = DG$, $\angle BAE = \angle DAG$.
+          Since $\angle EAF = 45^\circ$ and the square angle is $90^\circ$,
+          $\angle BAE + \angle DAF = 90^\circ - 45^\circ = 45^\circ$.
+          Thus $\angle FAG = \angle DAG + \angle DAF = \angle BAE + \angle DAF = 45^\circ$.
+          In $\triangle AEF$ and $\triangle AGF$, $AE=AG$, $\angle EAF=\angle FAG=45^\circ$, and $AF$ is common.
+          Therefore, $\triangle AEF \cong \triangle AGF$ (SAS).
+      - hint: 转化线段并计算周长
+        hintEn: Convert segments and calculate perimeter
+        detail: |
+          由全等可知：$EF = FG = DF + DG = DF + BE$。
+          $\triangle CFE$ 的周长 $= CE + CF + EF = CE + CF + (DF + BE)$。
+          重组线段：周长 $= (CE + BE) + (CF + DF) = BC + CD$。
+          ∵ 正方形边长为 4，∴ 周长 $= 4 + 4 = 8$。
+        detailEn: |
+          By congruence: $EF = FG = DF + DG = DF + BE$.
+          Perimeter of $\triangle CFE = CE + CF + EF = CE + CF + (DF + BE)$.
+          Rearranging segments: Perimeter $= (CE + BE) + (CF + DF) = BC + CD$.
+          Since the square's side length is 4, Perimeter $= 4 + 4 = 8$.
+
+  - id: ex-one-line
+    title: 一线三等角（三垂直模型）
+    titleEn: One-line-three-equal-angles (Three perpendiculars model)
+    type: proof
+    question: |
+      如图，在直角 $\triangle ABC$ 中，$\angle BAC = 90^\circ$，$AB = AC$。过点 $A$ 作一条直线 $l$，过点 $B$ 作 $BD \perp l$ 于 $D$，过点 $C$ 作 $CE \perp l$ 于 $E$。求证：$\triangle ABD \cong \triangle CAE$。
+    questionEn: |
+      In right $\triangle ABC$, $\angle BAC = 90^\circ$ and $AB = AC$. A line $l$ is drawn through point $A$. Draw $BD \perp l$ at $D$, and $CE \perp l$ at $E$. Prove: $\triangle ABD \cong \triangle CAE$.
+    answer: '通过余角转换证明 $\angle ABD = \angle CAE$，再结合直角和斜边相等，运用 AAS 证明全等。'
+    answerEn: 'Prove $\angle ABD = \angle CAE$ via complementary angles, then combine with the right angles and equal hypotenuses to prove congruence using AAS.'
+    steps:
+      - hint: 明确已知条件，寻找等角
+        hintEn: Clarify given conditions and find equal angles
+        detail: |
+          已知 $\angle BDA = \angle AEC = 90^\circ$（因为垂直）。
+          又因为 $\angle BAC = 90^\circ$，点 $D, A, E$ 共线，平角为 $180^\circ$，
+          ∴ $\angle DAB + \angle CAE = 180^\circ - 90^\circ = 90^\circ$。
+        detailEn: |
+          Given $\angle BDA = \angle AEC = 90^\circ$ (due to perpendicularity).
+          Also since $\angle BAC = 90^\circ$ and points $D, A, E$ are collinear forming a $180^\circ$ straight angle,
+          $\angle DAB + \angle CAE = 180^\circ - 90^\circ = 90^\circ$.
+      - hint: 在直角三角形内进行余角转换
+        hintEn: Perform complementary angle conversion within the right triangle
+        detail: |
+          在 Rt$\triangle ABD$ 中，两个锐角互余：
+          $\angle DAB + \angle ABD = 90^\circ$。
+          对比上一步的结论：$\angle DAB + \angle CAE = 90^\circ$。
+          根据同角的余角相等，可得：$\angle ABD = \angle CAE$。
+        detailEn: |
+          In Rt$\triangle ABD$, the two acute angles are complementary:
+          $\angle DAB + \angle ABD = 90^\circ$.
+          Comparing with the previous step: $\angle DAB + \angle CAE = 90^\circ$.
+          Since complements of the same angle are equal, we get: $\angle ABD = \angle CAE$.
+      - hint: 运用 AAS 判定全等
+        hintEn: Apply AAS to prove congruence
+        detail: |
+          在 $\triangle ABD$ 和 $\triangle CAE$ 中：
+          $\angle BDA = \angle AEC$（$90^\circ$）
+          $\angle ABD = \angle CAE$（已证）
+          $AB = CA$（已知斜边相等）
+          ∴ $\triangle ABD \cong \triangle CAE$（AAS）。
+        detailEn: |
+          In $\triangle ABD$ and $\triangle CAE$:
+          $\angle BDA = \angle AEC$ ($90^\circ$)
+          $\angle ABD = \angle CAE$ (proven)
+          $AB = CA$ (given equal hypotenuses)
+          Therefore, $\triangle ABD \cong \triangle CAE$ (AAS).
+
+exercises:
+  questions:
+    - number: 1
+      type: 解答题
+      inputType: open
+      question: |
+        在凹四边形 $ABDC$ 中，$\angle A = 55^\circ$，$\angle B = 40^\circ$，$\angle C = 35^\circ$。利用飞镖模型，求内部凹角 $\angle BDC$ 的度数。
+      questionEn: |
+        In concave quadrilateral $ABDC$, $\angle A = 55^\circ$, $\angle B = 40^\circ$, and $\angle C = 35^\circ$. Using the boomerang model, find the measure of the internal reflex angle $\angle BDC$.
+      answer: '$\angle BDC = 130^\circ$'
+      answerEn: '$\angle BDC = 130^\circ$'
+      explanation: |
+        根据飞镖模型结论，凹形角等于另外三个尖角之和：
+        $\angle BDC = \angle A + \angle B + \angle C = 55^\circ + 40^\circ + 35^\circ = 130^\circ$。
+      explanationEn: |
+        According to the boomerang model conclusion, the reflex angle equals the sum of the other three acute angles:
+        $\angle BDC = \angle A + \angle B + \angle C = 55^\circ + 40^\circ + 35^\circ = 130^\circ$.
+
+    - number: 2
+      type: 解答题
+      inputType: open
+      question: |
+        在沙漏模型中，$AB \parallel CD$。若 $AB = 8$，$CD = 12$，且 $\triangle ABE$ 的面积为 $16$。求 $\triangle CDE$ 的面积。
+      questionEn: |
+        In an hourglass model, $AB \parallel CD$. If $AB = 8$, $CD = 12$, and the area of $\triangle ABE$ is $16$. Find the area of $\triangle CDE$.
+      answer: '面积为 36'
+      answerEn: 'The area is 36'
+      explanation: |
+        ∵ $AB \parallel CD$，∴ $\triangle ABE \sim \triangle CDE$。
+        相似比 $k = \frac{AB}{CD} = \frac{8}{12} = \frac{2}{3}$。
+        面积比等于相似比的平方：$\frac{S_{\triangle ABE}}{S_{\triangle CDE}} = (\frac{2}{3})^2 = \frac{4}{9}$。
+        代入已知面积：$\frac{16}{S_{\triangle CDE}} = \frac{4}{9}$，解得 $S_{\triangle CDE} = \frac{16 \times 9}{4} = 36$。
+      explanationEn: |
+        Since $AB \parallel CD$, $\triangle ABE \sim \triangle CDE$.
+        Similarity ratio $k = \frac{AB}{CD} = \frac{8}{12} = \frac{2}{3}$.
+        Area ratio is the square of the similarity ratio: $\frac{S_{\triangle ABE}}{S_{\triangle CDE}} = (\frac{2}{3})^2 = \frac{4}{9}$.
+        Substitute the known area: $\frac{16}{S_{\triangle CDE}} = \frac{4}{9}$, giving $S_{\triangle CDE} = \frac{16 \times 9}{4} = 36$.
+
+    - number: 3
+      type: 解答题
+      inputType: open
+      question: |
+        已知等腰直角 $\triangle OAB$ 与等腰直角 $\triangle OCD$ 共顶点 $O$（$\angle AOB = \angle COD = 90^\circ$）。若 $OA = 3$，$OC = 5$。连结 $AC$ 和 $BD$，求证 $AC = BD$。
+      questionEn: |
+        Given isosceles right $\triangle OAB$ and isosceles right $\triangle OCD$ sharing vertex $O$ ($\angle AOB = \angle COD = 90^\circ$). If $OA = 3$ and $OC = 5$. Connect $AC$ and $BD$. Prove $AC = BD$.
+      answer: '利用手拉手模型，通过等量代换证 $\angle AOC = \angle BOD$，再利用 SAS 证明 $\triangle OAC \cong \triangle OBD$，故 $AC = BD$。'
+      answerEn: 'Using the hand-in-hand model, prove $\angle AOC = \angle BOD$ via angle addition, then use SAS to prove $\triangle OAC \cong \triangle OBD$, thus $AC = BD$.'
+      explanation: |
+        ∵ $\angle AOB = \angle COD = 90^\circ$，
+        ∴ $\angle AOB + \angle BOC = \angle COD + \angle BOC$，即 $\angle AOC = \angle BOD$。
+        在 $\triangle OAC$ 和 $\triangle OBD$ 中：
+        $OA = OB = 3$；$\angle AOC = \angle BOD$；$OC = OD = 5$。
+        ∴ $\triangle OAC \cong \triangle OBD$（SAS）。
+        ∴ $AC = BD$。
+      explanationEn: |
+        Since $\angle AOB = \angle COD = 90^\circ$,
+        $\angle AOB + \angle BOC = \angle COD + \angle BOC$, so $\angle AOC = \angle BOD$.
+        In $\triangle OAC$ and $\triangle OBD$:
+        $OA = OB = 3$; $\angle AOC = \angle BOD$; $OC = OD = 5$.
+        Therefore, $\triangle OAC \cong \triangle OBD$ (SAS).
+        Thus, $AC = BD$.
+
+    - number: 4
+      type: 解答题
+      inputType: open
+      question: |
+        正方形 $ABCD$ 的边长为 $6$。从点 $A$ 出发作夹角为 $45^\circ$ 的两条射线，分别交 $BC$ 于 $E$，交 $CD$ 于 $F$。已知 $BE = 2$，求 $DF$ 的长度。
+      questionEn: |
+        Square $ABCD$ has a side length of $6$. Two rays drawn from point $A$ with an included angle of $45^\circ$ intersect $BC$ at $E$ and $CD$ at $F$. Given $BE = 2$, find the length of $DF$.
+      answer: '$DF = 3$'
+      answerEn: '$DF = 3$'
+      explanation: |
+        根据半角模型的结论：中间线段等于两边线段之和，即 $EF = BE + DF = 2 + DF$。
+        在 Rt$\triangle CEF$ 中，利用勾股定理：$CE^2 + CF^2 = EF^2$。
+        已知正方形边长为 6，所以 $CE = 6 - BE = 6 - 2 = 4$。
+        设 $DF = x$，则 $CF = 6 - x$，$EF = x + 2$。
+        代入勾股定理：$4^2 + (6 - x)^2 = (x + 2)^2$。
+        展开：$16 + 36 - 12x + x^2 = x^2 + 4x + 4$。
+        化简：$52 - 12x = 4x + 4 \implies 16x = 48 \implies x = 3$。
+        所以 $DF = 3$。
+      explanationEn: |
+        According to the half-angle model conclusion: the middle segment equals the sum of the side segments, so $EF = BE + DF = 2 + DF$.
+        In Rt$\triangle CEF$, applying the Pythagorean theorem: $CE^2 + CF^2 = EF^2$.
+        Since the side length is 6, $CE = 6 - BE = 6 - 2 = 4$.
+        Let $DF = x$, then $CF = 6 - x$ and $EF = x + 2$.
+        Substitute into Pythagoras: $4^2 + (6 - x)^2 = (x + 2)^2$.
+        Expand: $16 + 36 - 12x + x^2 = x^2 + 4x + 4$.
+        Simplify: $52 - 12x = 4x + 4 \implies 16x = 48 \implies x = 3$.
+        Therefore, $DF = 3$.
+
+    - number: 5
+      type: 解答题
+      inputType: open
+      question: |
+        直线上依次有点 $D, B, E$，且在直线同侧有顶点 $A$，使得 $\triangle ABC$ 是等边三角形（$\angle ABC = 60^\circ$）。已知 $\angle DAB = 60^\circ$，$\angle EAC = 60^\circ$（一线三等角）。求证 $\triangle ABD \sim \triangle CAE$。
+      questionEn: |
+        On a straight line, there are consecutive points $D, B, E$. Point $A$ is on one side of the line such that $\triangle ABC$ is an equilateral triangle (so $\angle ABC = 60^\circ$). Assume there are angles $\angle DAB = 60^\circ$ and $\angle EAC = 60^\circ$ on the line (One-line-three-equal-angles). Prove that $\triangle ABD \sim \triangle CAE$.
+      answer: '通过 180° 平角和内角和定理进行等量代换，得出 $\angle ABD = \angle CAE$，从而证明 AA 相似。'
+      answerEn: 'Use the 180° straight angle and interior angle sum to perform angle substitution, proving $\angle ABD = \angle CAE$, thus establishing AA similarity.'
+      explanation: |
+        这其实是一线三等角的典型变体。点 $A$ 在直线上，点 $B, C$ 在直线同侧。作 $\angle BDA = 60^\circ$ 和 $\angle CEA = 60^\circ$，构成了“三个 $60^\circ$ 共线”。
+        平角转换：$\angle DAB + 60^\circ + \angle CAE = 180^\circ \implies \angle DAB + \angle CAE = 120^\circ$。
+        在 $\triangle ABD$ 中，内角和：$\angle DAB + \angle ABD + 60^\circ = 180^\circ \implies \angle DAB + \angle ABD = 120^\circ$。
+        根据等式的传递性，可得出 $\angle ABD = \angle CAE$。
+        加上已知的 $\angle D = \angle E = 60^\circ$，即可判定 $\triangle ABD \sim \triangle CAE$（AA 相似）。
+      explanationEn: |
+        This is a typical variant of the one-line-three-equal-angles model. Point $A$ of equilateral $\triangle ABC$ is on a line. If we have $\angle BDA = 60^\circ$ and $\angle CEA = 60^\circ$, we get "three $60^\circ$ angles collinear."
+        Straight angle conversion: $\angle DAB + 60^\circ + \angle CAE = 180^\circ \implies \angle DAB + \angle CAE = 120^\circ$.
+        In $\triangle ABD$, angle sum: $\angle DAB + \angle ABD + 60^\circ = 180^\circ \implies \angle DAB + \angle ABD = 120^\circ$.
+        By transitivity, we derive $\angle ABD = \angle CAE$.
+        Combined with the given $\angle D = \angle E = 60^\circ$, we can conclude $\triangle ABD \sim \triangle CAE$ (AA similarity).
+
+examPrep:
+  intro: 以下题目综合运用五大经典模型，重点考查辅助线的构造、模型识别及多步逻辑推导能力。
+  introEn: The following questions comprehensively apply the five classic models, focusing on auxiliary line construction, model identification, and multi-step logical deduction skills.
+  questions:
+    - number: 1
+      type: 解答题
+      inputType: open
+      difficulty: 3
+      question: |
+        在四边形 $ABCD$ 中，$\angle A = 90^\circ$，$\angle B = 80^\circ$，$\angle C = 70^\circ$。利用飞镖模型外角性质，计算 $\angle ADC$ 的外角的度数，进而求内部凹角 $\angle D$。
+      questionEn: |
+        In quadrilateral $ABCD$, $\angle A = 90^\circ$, $\angle B = 80^\circ$, and $\angle C = 70^\circ$. Find $\angle D$.
+      answer: '$\angle D = 120^\circ$'
+      answerEn: '$\angle D = 120^\circ$'
+      explanation: |
+        根据四边形内角和定理。四边形内角和恒为 $360^\circ$。
+        $\angle D = 360^\circ - (90^\circ + 80^\circ + 70^\circ) = 360^\circ - 240^\circ = 120^\circ$。
+        (如果在飞镖图形中，$\angle D$ 为反射角，则 reflex $\angle D = 240^\circ$，而内部凹角就是另外三个尖角之和 $240^\circ$)。
+      explanationEn: |
+        This uses the basic quadrilateral interior angle sum theorem, which is always $360^\circ$.
+        $\angle D = 360^\circ - (90^\circ + 80^\circ + 70^\circ) = 360^\circ - 240^\circ = 120^\circ$.
+
+    - number: 2
+      type: 解答题
+      inputType: open
+      difficulty: 4
+      question: |
+        如图，已知等腰直角 $\triangle ABC$ 中，$\angle BAC = 90^\circ$。点 $D, E$ 分别在边 $BC$ 上，且 $\angle DAE = 45^\circ$。若 $BD = 3$，$CE = 4$，求 $DE$ 的长。
+      questionEn: |
+        Given isosceles right $\triangle ABC$ with $\angle BAC = 90^\circ$. Points $D$ and $E$ are on side $BC$ such that $\angle DAE = 45^\circ$. If $BD = 3$ and $CE = 4$, find the length of $DE$.
+      answer: '$DE = 5$'
+      answerEn: '$DE = 5$'
+      explanation: |
+        这是半角模型在等腰直角三角形斜边上的经典应用。
+        操作方法与正方形类似：将 $\triangle ABD$ 绕点 $A$ 逆时针旋转 $90^\circ$，使得 $AB$ 落在 $AC$ 上。此时点 $D$ 落在点 $D'$ 处。
+        由于 $\angle B = \angle C = 45^\circ$，旋转后 $\angle ACD' = \angle B = 45^\circ$。
+        因此 $\angle D'CE = \angle ACD' + \angle C = 45^\circ + 45^\circ = 90^\circ$。
+        此时 $\triangle D'CE$ 是直角三角形！
+        根据半角模型的旋转全等性质，$\triangle ADE \cong \triangle AD'E$（SAS），可得 $DE = D'E$。
+        在 Rt$\triangle D'CE$ 中，运用勾股定理：$(D'E)^2 = (CD')^2 + CE^2$。
+        因为 $CD' = BD = 3$，$CE = 4$，
+        所以 $DE^2 = 3^2 + 4^2 = 9 + 16 = 25$。
+        解得 $DE = 5$。
+      explanationEn: |
+        This is a classic application of the half-angle model on the hypotenuse of an isosceles right triangle.
+        The operation is similar to the square: rotate $\triangle ABD$ counterclockwise by $90^\circ$ around $A$ so that $AB$ maps onto $AC$. Point $D$ maps to $D'$.
+        Since $\angle B = \angle C = 45^\circ$, after rotation $\angle ACD' = \angle B = 45^\circ$.
+        Thus, $\angle D'CE = \angle ACD' + \angle C = 45^\circ + 45^\circ = 90^\circ$.
+        This makes $\triangle D'CE$ a right triangle!
+        By the rotational congruence of the half-angle model, $\triangle ADE \cong \triangle AD'E$ (SAS), which gives $DE = D'E$.
+        In Rt$\triangle D'CE$, apply the Pythagorean theorem: $(D'E)^2 = (CD')^2 + CE^2$.
+        Since $CD' = BD = 3$ and $CE = 4$,
+        $DE^2 = 3^2 + 4^2 = 9 + 16 = 25$.
+        Thus, $DE = 5$.
+
+summary:
+  - '飞镖与风筝模型：凹四边形飞镖的内部大角等于三个尖角之和；交叉线风筝形利用外角定理实现角度的传递'
+  - '沙漏模型（8字型）：平行边产生内错角相等，交于一点产生对顶角相等，从而构成 AA 相似。面积比永远是相似比的平方'
+  - '手拉手模型：共顶点的两个等腰三角形。核心技巧是“等量代换”找公共夹角，然后用 SAS 证明两条连线所在的三角形全等'
+  - '半角模型：正方形中含 45° 角或等腰直角三角形含 45° 角。核心辅助线是“旋转 90° 截长补短”利用勾股定理求解'
+  - '一线三等角（K型相似）：利用“平角为 180°”进行余角或补角的等量转换，从而证明两对角相等，最终判定三角形相似或全等'
+
+summaryEn:
+  - 'Boomerang & Kite Models: The interior reflex angle of a boomerang equals the sum of the three acute angles. Intersecting kite shapes use the exterior angle theorem to transfer angles'
+  - 'Hourglass Model (Figure-8): Parallel sides create equal alternate interior angles, forming AA similarity. The area ratio is always the square of the similarity ratio'
+  - 'Hand-in-Hand Model: Two isosceles triangles sharing a vertex. The core technique is "angle substitution" to find the common included angle, then using SAS'
+  - 'Half-Angle Model: A 45° angle inside a square or isosceles right triangle. The core auxiliary line is "rotate 90° to cut-and-construct"'
+  - 'One-Line-Three-Equal-Angles (K-Type Similarity): Uses the "180° straight angle" to perform complementary or supplementary angle conversions, concluding triangle similarity or congruence'

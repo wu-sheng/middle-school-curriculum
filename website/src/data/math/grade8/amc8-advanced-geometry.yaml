@@ -1,0 +1,1335 @@
+title: "\U0001F3C6 AMC 8 扩展：几何进阶"
+titleEn: "\U0001F3C6 AMC 8 Extension: Advanced Geometry"
+chapter: 8
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 约 4–5 课时，每课时 45 分钟
+estimatedTimeEn: "4–5 sessions, ~45 min each"
+targetAudience: 八年级自学生，已完成三角形与全等三角形，拓展AMC 8几何解题技巧
+
+objectives:
+  - 掌握<<复合图形/composite figure>>面积的加法法和减法法，能快速拆分不规则图形
+  - 熟练运用<<鞋带公式/Shoelace formula>>和<<距离公式/distance formula>>解决坐标几何问题
+  - 理解<<几何变换/geometric transformation>>（平移、旋转、反射）的性质，利用对称性简化问题
+  - 掌握<<扇形/sector>>面积和<<弧长/arc length>>公式，解决圆与多边形的组合问题
+  - 培养 AMC 8 几何题的"画图→标注→选策略"三步解题习惯
+objectivesEn:
+  - 'Master the addition and subtraction methods for <<复合图形/composite figure>> area; quickly decompose irregular shapes'
+  - 'Fluently apply the <<鞋带公式/Shoelace formula>> and <<距离公式/distance formula>> to coordinate geometry problems'
+  - 'Understand properties of <<几何变换/geometric transformation>> (translation, rotation, reflection) and use symmetry to simplify problems'
+  - 'Master <<扇形/sector>> area and <<弧长/arc length>> formulas; solve combined circle-and-polygon problems'
+  - 'Develop the AMC 8 geometry habit: "draw → label → choose strategy"'
+
+prerequisites:
+  title: 从三角形面积出发——已知的几何知识
+  titleEn: Building on triangle area — geometric knowledge already mastered
+  intro: |
+    在上一章 AMC 8 扩展中，我们学习了三角形面积的多种计算方法（底×高、鞋带公式、海伦公式）和菱形面积的对角线法。这一章我们将这些工具运用到更复杂的几何问题中：复合图形、坐标几何、几何变换和圆的面积应用。
+  introEn: |
+    In the previous AMC 8 extension chapter, we learned multiple methods for triangle area (base×height, Shoelace formula, Heron's formula) and the diagonal method for rhombus area. This chapter applies these tools to more complex geometric problems: composite figures, coordinate geometry, geometric transformations, and circle area applications.
+  knownNumbers:
+    - '三角形面积公式（底×高、鞋带公式、海伦公式）'
+    - '菱形面积 $= \frac{1}{2} \times d_{1} \times d_{2}$'
+    - '<<勾股定理/Pythagorean theorem>>：$a^{2} + b^{2} = c^{2}$'
+    - '圆的面积 $= \pi r^{2}$，周长 $= 2\pi r$（小学已学）'
+    - '平面直角坐标系的基本使用'
+  knownNumbersEn:
+    - 'Triangle area formulas (base×height, Shoelace, Heron''s)'
+    - 'Rhombus area $= \frac{1}{2} \times d_{1} \times d_{2}$'
+    - '<<勾股定理/Pythagorean theorem>>: $a^{2} + b^{2} = c^{2}$'
+    - 'Circle area $= \pi r^{2}$, circumference $= 2\pi r$ (learned in primary school)'
+    - 'Basic use of the Cartesian coordinate system'
+  canSolve:
+    - '用多种方法计算三角形和菱形的面积'
+    - '在坐标系中标注点、计算距离'
+    - '识别对称图形和旋转图形'
+    - '计算圆的面积和周长'
+  canSolveEn:
+    - 'Compute triangle and rhombus areas using multiple methods'
+    - 'Plot points and compute distances in the coordinate plane'
+    - 'Identify symmetric and rotated figures'
+    - 'Compute circle area and circumference'
+  cannotSolve:
+    - '不规则图形（L 形、阴影区域等）的面积如何计算？'
+    - '如何用坐标求任意多边形的面积？'
+    - '平移、旋转、反射在解题中如何运用？'
+    - '扇形面积和弧长怎么算？圆内接/外切问题怎么处理？'
+  cannotSolveEn:
+    - 'How to compute the area of irregular shapes (L-shapes, shaded regions, etc.)?'
+    - 'How to find the area of any polygon using coordinates?'
+    - 'How to use translation, rotation, and reflection in problem solving?'
+    - 'How to compute sector area and arc length? How to handle inscribed/circumscribed circle problems?'
+  conclusion: |
+    这一章，我们将把面积工具箱扩展到**复合图形、坐标几何、变换和圆**——这些是 AMC 8 几何题中出现频率最高的四大主题。掌握它们，你就拥有了攻克 AMC 8 几何板块的完整武器库。
+  conclusionEn: |
+    In this chapter, we expand our area toolkit to **composite figures, coordinate geometry, transformations, and circles** — the four most frequent topics in AMC 8 geometry. Master them, and you'll have a complete arsenal for the AMC 8 geometry section.
+
+concepts:
+  - id: composite-figures
+    title: <<复合图形/composite figure>>面积
+    titleEn: <<复合图形/composite figure>> Area
+    hasVisualization: true
+    content: |
+      **什么是复合图形？**
+
+      <<复合图形/composite figure>>是由多个简单图形（矩形、三角形、圆、半圆等）组合而成的图形。AMC 8 非常喜欢考这类题目——给你一个看起来不规则的图形，让你求面积。
+
+      **核心思想：加法法与减法法**
+
+      面对复合图形，有两种基本策略：
+
+      **策略一：加法法（拆分求和）**
+
+      把复合图形拆分成几个简单图形，分别求面积再相加。
+
+      例如：一个 L 形可以拆成两个矩形：
+      $$S_{\text{L形}} = S_{\text{矩形1}} + S_{\text{矩形2}}$$
+
+      **策略二：减法法（整体减去空白）**
+
+      先算一个包围复合图形的"大图形"的面积，再减去不属于复合图形的部分。
+
+      例如：一个矩形里挖去一个圆，阴影面积为：
+      $$S_{\text{阴影}} = S_{\text{矩形}} - S_{\text{圆}}$$
+
+      **如何选择策略？**
+
+      | 场景 | 推荐策略 | 原因 |
+      |------|---------|------|
+      | 图形由几块拼成 | 加法法 | 直接分块计算 |
+      | "阴影部分"面积 | 减法法 | 用大面积减去空白 |
+      | 重叠区域面积 | 容斥原理 | $S_{A \cup B} = S_A + S_B - S_{A \cap B}$ |
+
+      **AMC 8 常见复合图形类型**
+
+      1. **L 形 / T 形 / 十字形**：拆成矩形
+      2. **阴影区域**：大图形减去白色部分
+      3. **重叠图形**：两个图形面积之和减去重叠部分
+      4. **图形内的图形**：正方形内切圆、圆内接正方形等
+
+      **解题三步法**
+
+      第一步：**画图标注**——把所有已知长度标在图上
+      第二步：**选策略**——加法、减法还是容斥？
+      第三步：**分步计算**——每一步写清楚，最后汇总
+
+      **易错提醒**
+
+      ⚠️ 减法法中忘记减去多余部分（只减了一块，实际有两块）
+      ⚠️ 重叠区域被减了两次——需要用容斥原理加回来
+      ⚠️ 单位不统一：半径和直径混淆，导致面积差 4 倍
+    contentEn: |
+      **What is a composite figure?**
+
+      A <<复合图形/composite figure>> is a shape made by combining simple shapes (rectangles, triangles, circles, semicircles, etc.). AMC 8 loves these problems — you're given an irregular-looking shape and asked for its area.
+
+      **Core idea: Addition method and Subtraction method**
+
+      Two basic strategies for composite figures:
+
+      **Strategy 1: Addition method (split and sum)**
+
+      Break the composite figure into simple shapes, find each area, then add.
+
+      Example: An L-shape splits into two rectangles:
+      $$S_{\text{L-shape}} = S_{\text{rect1}} + S_{\text{rect2}}$$
+
+      **Strategy 2: Subtraction method (total minus removed)**
+
+      Compute the area of a "bounding shape" that encloses the composite figure, then subtract the parts that don't belong.
+
+      Example: A rectangle with a circle cut out:
+      $$S_{\text{shaded}} = S_{\text{rectangle}} - S_{\text{circle}}$$
+
+      **How to choose a strategy?**
+
+      | Scenario | Recommended | Reason |
+      |----------|------------|--------|
+      | Figure assembled from pieces | Addition | Directly sum the parts |
+      | "Shaded region" area | Subtraction | Large area minus blank |
+      | Overlapping region area | Inclusion–exclusion | $S_{A \cup B} = S_A + S_B - S_{A \cap B}$ |
+
+      **Common composite figure types on AMC 8**
+
+      1. **L / T / cross shapes**: split into rectangles
+      2. **Shaded regions**: large shape minus white parts
+      3. **Overlapping figures**: sum of two figures minus overlap
+      4. **Nested figures**: circle inscribed in square, square inscribed in circle, etc.
+
+      **Three-step method**
+
+      Step 1: **Draw and label** — mark all known lengths on the figure
+      Step 2: **Choose strategy** — addition, subtraction, or inclusion–exclusion?
+      Step 3: **Compute step by step** — show each part clearly, then combine
+
+      **Common mistakes**
+
+      ⚠️ In subtraction, forgetting to subtract all removed parts (subtracted one but there were two)
+      ⚠️ Overlapping region subtracted twice — need inclusion–exclusion to add it back
+      ⚠️ Unit mismatch: confusing radius and diameter, causing area to differ by a factor of 4
+    notes:
+      - '加法法适合"拼接型"图形，减法法适合"挖去型"图形'
+      - '遇到"阴影部分面积"，第一反应应该是减法法'
+      - '容斥原理在重叠问题中至关重要：$S_{A \cup B} = S_A + S_B - S_{A \cap B}$'
+      - '画图是解题第一步——很多同学丢分不是不会算，而是没画清楚'
+    notesEn:
+      - 'Addition method for "assembled" shapes; subtraction method for "cut-out" shapes'
+      - 'When you see "area of the shaded region," your first instinct should be subtraction'
+      - 'Inclusion–exclusion is critical for overlapping problems: $S_{A \cup B} = S_A + S_B - S_{A \cap B}$'
+      - 'Drawing is the first step — many students lose points not from inability to compute, but from unclear diagrams'
+
+  - id: coordinate-geometry-techniques
+    title: <<坐标几何/coordinate geometry>>技巧
+    titleEn: <<坐标几何/coordinate geometry>> Techniques
+    hasVisualization: true
+    content: |
+      **坐标几何——用代数解决几何问题**
+
+      <<坐标几何/coordinate geometry>>的核心思想：把几何问题放在坐标系中，用坐标和公式来解决。AMC 8 中坐标几何题出现频率很高，掌握以下三个核心工具即可应对大多数题目。
+
+      **工具 1：<<距离公式/distance formula>>**
+
+      两点 $A(x_{1}, y_{1})$ 和 $B(x_{2}, y_{2})$ 之间的距离：
+
+      $$d = \sqrt{(x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}}$$
+
+      这其实就是勾股定理的直接应用——水平距离和垂直距离分别是直角三角形的两条直角边。
+
+      **工具 2：<<中点公式/midpoint formula>>**
+
+      两点 $A(x_{1}, y_{1})$ 和 $B(x_{2}, y_{2})$ 的中点：
+
+      $$M = \left(\frac{x_{1} + x_{2}}{2}, \frac{y_{1} + y_{2}}{2}\right)$$
+
+      直觉理解：中点的坐标就是两个端点坐标的**平均值**。
+
+      **工具 3：<<鞋带公式/Shoelace formula>>（多边形版）**
+
+      对于顶点按顺序排列的 $n$ 边形 $(x_{1},y_{1}), (x_{2},y_{2}), \ldots, (x_{n},y_{n})$：
+
+      $$S = \frac{1}{2}\left|\sum_{i=1}^{n}(x_{i} y_{i+1} - x_{i+1} y_{i})\right|$$
+
+      其中 $(x_{n+1}, y_{n+1}) = (x_{1}, y_{1})$（回到起点）。
+
+      **AMC 8 中的坐标几何核心技巧**
+
+      **技巧 1：Varignon 平行四边形**
+
+      任意四边形的四边中点连成的图形一定是<<平行四边形/parallelogram>>，其面积等于原四边形面积的**一半**。
+
+      这在 AMC 8 中是经典考点：给你中点坐标，让你求原图形的面积。
+
+      **技巧 2：水平/垂直底边优先**
+
+      如果三角形有一条边是水平的（两点 $y$ 坐标相同）或垂直的（两点 $x$ 坐标相同），直接用底×高比鞋带公式更快。
+
+      **技巧 3：坐标系的建立**
+
+      有些几何题没有给坐标，但你可以**自己建坐标系**！选择一个顶点作为原点，一条边沿 $x$ 轴方向，就可以把几何问题转化为坐标计算。
+
+      **选择公式的决策树**
+
+      求距离 → 距离公式
+      求中点 → 中点公式
+      求面积（三角形/多边形）→ 鞋带公式
+      已知中点求端点 → 中点公式逆用：$x_{1} = 2x_{M} - x_{2}$
+    contentEn: |
+      **Coordinate geometry — solving geometry with algebra**
+
+      The core idea of <<坐标几何/coordinate geometry>>: place geometric problems on a coordinate system and solve them with coordinates and formulas. Coordinate geometry appears frequently on the AMC 8; master these three tools and you can handle most problems.
+
+      **Tool 1: <<距离公式/distance formula>>**
+
+      Distance between $A(x_{1},y_{1})$ and $B(x_{2},y_{2})$:
+
+      $$d = \sqrt{(x_{2}-x_{1})^{2} + (y_{2}-y_{1})^{2}}$$
+
+      This is just the Pythagorean theorem — horizontal and vertical distances are the two legs of a right triangle.
+
+      **Tool 2: <<中点公式/midpoint formula>>**
+
+      Midpoint of $A(x_{1},y_{1})$ and $B(x_{2},y_{2})$:
+
+      $$M = \left(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2}\right)$$
+
+      Intuition: the midpoint coordinates are the **averages** of the endpoint coordinates.
+
+      **Tool 3: <<鞋带公式/Shoelace formula>> (polygon version)**
+
+      For an $n$-gon with vertices listed in order $(x_{1},y_{1}), (x_{2},y_{2}), \ldots, (x_{n},y_{n})$:
+
+      $$S = \frac{1}{2}\left|\sum_{i=1}^{n}(x_{i}y_{i+1} - x_{i+1}y_{i})\right|$$
+
+      where $(x_{n+1},y_{n+1}) = (x_{1},y_{1})$ (wrap around to the start).
+
+      **Key coordinate geometry techniques for AMC 8**
+
+      **Technique 1: Varignon parallelogram**
+
+      The midpoints of the sides of any quadrilateral always form a <<平行四边形/parallelogram>>, whose area equals **half** the area of the original quadrilateral.
+
+      This is a classic AMC 8 topic: given midpoint coordinates, find the original figure's area.
+
+      **Technique 2: Prioritize horizontal/vertical bases**
+
+      If a triangle has a horizontal side (same $y$-coordinates) or vertical side (same $x$-coordinates), base×height is faster than the Shoelace formula.
+
+      **Technique 3: Set up your own coordinate system**
+
+      Some geometry problems give no coordinates, but you can **create your own**! Place one vertex at the origin with one side along the $x$-axis, and convert the geometry problem into coordinate computations.
+
+      **Decision tree for choosing formulas**
+
+      Finding distance → distance formula
+      Finding midpoint → midpoint formula
+      Finding area (triangle/polygon) → Shoelace formula
+      Known midpoint, find endpoint → reverse midpoint: $x_{1} = 2x_{M} - x_{2}$
+    notes:
+      - '距离公式本质就是勾股定理，不需要死记——画直角三角形就能推出来'
+      - 'Varignon 平行四边形定理对**任意**四边形成立（不要求是矩形或平行四边形）'
+      - '鞋带公式要求顶点**按顺序**排列（顺时针或逆时针），乱序会得到错误结果'
+      - '自己建坐标系时，选择让计算最简单的位置（比如把直角顶点放在原点）'
+    notesEn:
+      - 'The distance formula is just the Pythagorean theorem — draw a right triangle and you can derive it'
+      - 'The Varignon parallelogram theorem holds for **any** quadrilateral (not just rectangles or parallelograms)'
+      - 'The Shoelace formula requires vertices **in order** (clockwise or counterclockwise); scrambled order gives wrong results'
+      - 'When setting up your own coordinate system, choose the position that simplifies computation (e.g., place a right-angle vertex at the origin)'
+
+  - id: geometric-transformations
+    title: <<几何变换/geometric transformation>>
+    titleEn: <<几何变换/geometric transformation>>
+    hasVisualization: true
+    content: |
+      **几何变换——不改变图形本质的"移动"**
+
+      <<几何变换/geometric transformation>>是指在平面上"移动"图形的操作。有三种基本变换：
+
+      **变换 1：<<平移/translation>>**
+
+      把图形沿某个方向移动固定距离，不改变大小和方向。
+
+      坐标表示：点 $(x, y)$ 沿向量 $(a, b)$ 平移后变为 $(x + a, y + b)$。
+
+      生活类比：在棋盘上平移一个棋子——形状不变，只是位置变了。
+
+      **变换 2：<<旋转/rotation>>**
+
+      围绕一个定点（<<旋转中心/center of rotation>>）转动固定角度。
+
+      关键性质：
+      - 旋转后每个点到旋转中心的距离不变
+      - 图形的形状和大小不变
+      - $90°$ 旋转的坐标规律：$(x, y) \to (-y, x)$（逆时针 $90°$）
+
+      **变换 3：<<反射/reflection>>（也叫"翻转"或"镜像"）**
+
+      沿一条直线（<<对称轴/line of symmetry>>）做镜像翻转。
+
+      坐标表示：
+      - 关于 $x$ 轴反射：$(x, y) \to (x, -y)$
+      - 关于 $y$ 轴反射：$(x, y) \to (-x, y)$
+      - 关于直线 $y = x$ 反射：$(x, y) \to (y, x)$
+
+      **三种变换的共同性质——<<等距变换/isometry>>**
+
+      这三种变换都是<<等距变换/isometry>>，意味着：
+      - ✅ 保持距离不变（线段长度不变）
+      - ✅ 保持角度不变
+      - ✅ 保持面积不变
+      - ✅ 图形与变换后的图形全等
+
+      **AMC 8 中的变换技巧**
+
+      **技巧 1：利用对称性简化计算**
+
+      如果一个图形关于某条直线对称，那么对称线两侧的面积相等。只需算一半，再乘以 2。
+
+      **技巧 2：旋转对称与等分**
+
+      正 $n$ 边形具有 $n$ 重旋转对称——旋转 $\frac{360°}{n}$ 后与自身重合。这意味着可以只算 $\frac{1}{n}$ 的面积，再乘以 $n$。
+
+      **技巧 3：平移拼合**
+
+      有些不规则图形可以通过平移拼成矩形或其他规则图形，从而简化面积计算。
+
+      **易错提醒**
+
+      ⚠️ 旋转中心不一定是原点——注意题目指定的旋转中心
+      ⚠️ 反射后图形的"手性"改变（左手变右手），但平移和旋转不改变手性
+      ⚠️ 连续两次关于同一轴反射 = 回到原位（不是平移！）
+    contentEn: |
+      **Geometric transformations — "moving" a figure without changing its essence**
+
+      A <<几何变换/geometric transformation>> is an operation that "moves" a figure in the plane. There are three basic transformations:
+
+      **Transformation 1: <<平移/translation>>**
+
+      Move the figure a fixed distance in a fixed direction, without changing its size or orientation.
+
+      Coordinate form: point $(x,y)$ translated by vector $(a,b)$ becomes $(x+a, y+b)$.
+
+      Analogy: sliding a chess piece on a board — the shape stays the same, only the position changes.
+
+      **Transformation 2: <<旋转/rotation>>**
+
+      Turn the figure a fixed angle around a fixed point (the <<旋转中心/center of rotation>>).
+
+      Key properties:
+      - Every point stays the same distance from the center of rotation
+      - Shape and size are preserved
+      - $90°$ rotation coordinate rule: $(x,y) \to (-y,x)$ (counterclockwise $90°$)
+
+      **Transformation 3: <<反射/reflection>> (also called "flip" or "mirror")**
+
+      Mirror the figure across a line (the <<对称轴/line of symmetry>>).
+
+      Coordinate form:
+      - Reflect across $x$-axis: $(x,y) \to (x,-y)$
+      - Reflect across $y$-axis: $(x,y) \to (-x,y)$
+      - Reflect across $y=x$: $(x,y) \to (y,x)$
+
+      **Shared property of all three — <<等距变换/isometry>>**
+
+      All three transformations are <<等距变换/isometry>>, meaning they:
+      - ✅ Preserve distances (segment lengths stay the same)
+      - ✅ Preserve angles
+      - ✅ Preserve area
+      - ✅ The original and transformed figures are congruent
+
+      **Transformation techniques for AMC 8**
+
+      **Technique 1: Use symmetry to simplify computation**
+
+      If a figure has a line of symmetry, the areas on both sides are equal. Compute one half, then multiply by 2.
+
+      **Technique 2: Rotational symmetry and equal parts**
+
+      A regular $n$-gon has $n$-fold rotational symmetry — rotating by $\frac{360°}{n}$ maps it to itself. This means you can compute $\frac{1}{n}$ of the area, then multiply by $n$.
+
+      **Technique 3: Translation and tessellation**
+
+      Some irregular figures can be translated and assembled into rectangles or other regular shapes, simplifying area computation.
+
+      **Common mistakes**
+
+      ⚠️ The center of rotation is not always the origin — read the problem for the specified center
+      ⚠️ Reflection changes the figure's "handedness" (left hand becomes right hand), but translation and rotation do not
+      ⚠️ Two reflections across the same axis = back to original (not a translation!)
+    notes:
+      - '平移、旋转、反射都不改变图形的大小和形状——它们都是等距变换'
+      - '利用对称性可以将复杂问题简化为一半或 $\frac{1}{n}$ 的计算'
+      - 'AMC 8 中常见的对称性应用：正多边形分割、阴影区域的对称拼合'
+      - '旋转 $90°$ 的坐标变换规律要记牢：$(x, y) \to (-y, x)$'
+    notesEn:
+      - 'Translation, rotation, and reflection all preserve size and shape — they are all isometries'
+      - 'Symmetry can reduce complex problems to half or $\frac{1}{n}$ of the computation'
+      - 'Common symmetry applications on AMC 8: regular polygon partitions, symmetric shaded regions'
+      - 'Memorize the $90°$ rotation rule: $(x,y) \to (-y,x)$'
+
+  - id: circle-area-applications
+    title: <<圆与扇形/circle and sector>>面积应用
+    titleEn: <<圆与扇形/circle and sector>> Area Applications
+    hasVisualization: true
+    content: |
+      **从圆到扇形——面积的"按比例分配"**
+
+      你在小学已经学过圆的面积 $= \pi r^{2}$。现在我们要学习**圆的一部分**——<<扇形/sector>>——的面积。
+
+      **<<扇形/sector>>面积公式**
+
+      扇形是由两条半径和一段弧围成的区域。如果圆心角为 $\theta$（度数），半径为 $r$：
+
+      $$S_{\text{扇形}} = \frac{\theta}{360} \times \pi r^{2}$$
+
+      直觉理解：扇形面积占圆面积的比例，等于圆心角占 $360°$ 的比例。
+
+      **<<弧长/arc length>>公式**
+
+      弧是圆周上两点之间的一段曲线。弧长：
+
+      $$l = \frac{\theta}{360} \times 2\pi r$$
+
+      同样的道理：弧长占周长的比例，等于圆心角占 $360°$ 的比例。
+
+      **特殊情况速记**
+
+      | 圆心角 $\theta$ | 扇形面积 | 弧长 |
+      |-----------------|---------|------|
+      | $90°$（四分之一圆） | $\frac{1}{4}\pi r^{2}$ | $\frac{1}{2}\pi r$ |
+      | $120°$（三分之一圆） | $\frac{1}{3}\pi r^{2}$ | $\frac{2}{3}\pi r$ |
+      | $180°$（半圆） | $\frac{1}{2}\pi r^{2}$ | $\pi r$ |
+      | $60°$（六分之一圆） | $\frac{1}{6}\pi r^{2}$ | $\frac{1}{3}\pi r$ |
+
+      **AMC 8 高频题型：圆与多边形的组合**
+
+      **题型 1：圆内接正方形 / 正方形内切圆**
+
+      - 正方形内切圆：圆的直径 = 正方形的边长，$r = \frac{a}{2}$
+      - 正方形外接圆：圆的直径 = 正方形的对角线，$r = \frac{a\sqrt{2}}{2}$
+      - 阴影面积 = 正方形面积 $-$ 圆面积（或反过来）
+
+      **题型 2：同心圆（<<环形/annulus>>区域）**
+
+      两个同心圆（半径 $R > r$）之间的环形面积：
+
+      $$S_{\text{环}} = \pi R^{2} - \pi r^{2} = \pi(R^{2} - r^{2})$$
+
+      **题型 3：相交圆的公共区域**
+
+      两个圆相交形成的"鱼眼"形区域，面积 = 两个弓形面积之和。
+
+      弓形面积 = 扇形面积 $-$ 三角形面积：
+      $$S_{\text{弓形}} = \frac{\theta}{360}\pi r^{2} - \frac{1}{2}r^{2}\sin\theta$$
+
+      （在 AMC 8 层级，$\theta$ 通常是 $60°$、$90°$、$120°$ 等特殊角度。）
+
+      **题型 4：两个小圆 vs 一个大圆**
+
+      这是 AMC 8 经典题型！比较两个直径等于大圆半径的小圆面积和大圆面积的关系：
+      - 大圆半径 $R$，小圆半径 $\frac{R}{2}$
+      - 两个小圆面积和 $= 2 \times \pi\left(\frac{R}{2}\right)^{2} = \frac{\pi R^{2}}{2}$ = 大圆面积的一半
+
+      **易错提醒**
+
+      ⚠️ 半径和直径混淆：$r = \frac{d}{2}$，面积用半径 $r$，不是直径
+      ⚠️ 扇形公式中角度必须用**度数**（不是弧度），分母是 360
+      ⚠️ 求"阴影面积"时，先确认哪部分是阴影——画图标注很重要
+    contentEn: |
+      **From circles to sectors — area by proportion**
+
+      You learned in primary school that circle area $= \pi r^{2}$. Now we study a **part of a circle** — the <<扇形/sector>> — and its area.
+
+      **<<扇形/sector>> area formula**
+
+      A sector is the region enclosed by two radii and an arc. If the central angle is $\theta$ (in degrees) and the radius is $r$:
+
+      $$S_{\text{sector}} = \frac{\theta}{360} \times \pi r^{2}$$
+
+      Intuition: the fraction of the circle's area that the sector occupies equals the fraction of $360°$ that the central angle occupies.
+
+      **<<弧长/arc length>> formula**
+
+      An arc is a portion of the circumference between two points. Arc length:
+
+      $$l = \frac{\theta}{360} \times 2\pi r$$
+
+      Same idea: the fraction of the circumference equals the fraction of $360°$.
+
+      **Quick reference for special angles**
+
+      | Central angle $\theta$ | Sector area | Arc length |
+      |------------------------|------------|------------|
+      | $90°$ (quarter circle) | $\frac{1}{4}\pi r^{2}$ | $\frac{1}{2}\pi r$ |
+      | $120°$ (one-third circle) | $\frac{1}{3}\pi r^{2}$ | $\frac{2}{3}\pi r$ |
+      | $180°$ (semicircle) | $\frac{1}{2}\pi r^{2}$ | $\pi r$ |
+      | $60°$ (one-sixth circle) | $\frac{1}{6}\pi r^{2}$ | $\frac{1}{3}\pi r$ |
+
+      **High-frequency AMC 8 problem types: circles combined with polygons**
+
+      **Type 1: Square inscribed in a circle / Circle inscribed in a square**
+
+      - Circle inscribed in a square: diameter = side length, $r = \frac{a}{2}$
+      - Circle circumscribed about a square: diameter = diagonal, $r = \frac{a\sqrt{2}}{2}$
+      - Shaded area = square area $-$ circle area (or vice versa)
+
+      **Type 2: Concentric circles (<<环形/annulus>> region)**
+
+      Area of the ring between two concentric circles (radii $R > r$):
+
+      $$S_{\text{annulus}} = \pi R^{2} - \pi r^{2} = \pi(R^{2} - r^{2})$$
+
+      **Type 3: Overlapping circles**
+
+      The "lens" region formed by two intersecting circles has area = sum of two circular segments.
+
+      Segment area = sector area $-$ triangle area:
+      $$S_{\text{segment}} = \frac{\theta}{360}\pi r^{2} - \frac{1}{2}r^{2}\sin\theta$$
+
+      (On the AMC 8, $\theta$ is usually a special angle like $60°$, $90°$, or $120°$.)
+
+      **Type 4: Two small circles vs. one large circle**
+
+      A classic AMC 8 type! Comparing two small circles (each with diameter = the large circle's radius) to the large circle:
+      - Large radius $R$, small radius $\frac{R}{2}$
+      - Combined small area $= 2\pi\left(\frac{R}{2}\right)^{2} = \frac{\pi R^{2}}{2}$ = half the large circle's area
+
+      **Common mistakes**
+
+      ⚠️ Confusing radius and diameter: $r = \frac{d}{2}$; area uses radius $r$, not diameter
+      ⚠️ In the sector formula, the angle must be in **degrees** (not radians), with denominator 360
+      ⚠️ For "shaded area," first confirm which part is shaded — drawing and labeling is essential
+    notes:
+      - '扇形面积 = 圆面积 $\times \frac{\theta}{360}$，弧长 = 周长 $\times \frac{\theta}{360}$——"按比例分配"是核心思想'
+      - '圆内接/外切问题的关键：找准半径和边长/对角线的关系'
+      - '同心圆面积差用"平方差"因式分解更快：$\pi(R^{2} - r^{2}) = \pi(R+r)(R-r)$'
+      - 'AMC 8 中两个小圆面积之和 = 大圆面积的一半，是经典结论'
+    notesEn:
+      - 'Sector area = circle area $\times \frac{\theta}{360}$, arc length = circumference $\times \frac{\theta}{360}$ — "proportion" is the key idea'
+      - 'For inscribed/circumscribed problems, the key is relating radius to side length/diagonal'
+      - 'Concentric circle area difference factors faster: $\pi(R^{2}-r^{2}) = \pi(R+r)(R-r)$'
+      - 'On AMC 8, the combined area of two small circles = half the large circle — a classic result'
+
+realLife:
+  - title: 建筑设计中的复合图形
+    titleEn: Composite Figures in Architecture
+    content: |
+      建筑师在设计房屋平面图时，经常需要计算不规则形状房间的面积。比如一个 L 形客厅，就需要拆成两个矩形分别计算，或者用大矩形减去缺角。这和我们学的加法法、减法法完全一样！
+    contentEn: |
+      When architects design floor plans, they often need to compute the area of irregular rooms. An L-shaped living room, for instance, requires splitting into two rectangles or subtracting a corner from a larger rectangle — exactly our addition and subtraction methods!
+
+  - title: 地图与 GPS 中的坐标几何
+    titleEn: Coordinate Geometry in Maps and GPS
+    content: |
+      GPS 导航计算两地之间的直线距离，本质上就是距离公式。而计算一块不规则土地的面积，测量员会记录各个角点的坐标，然后用鞋带公式来计算——这就是坐标几何在现实中的应用。
+    contentEn: |
+      GPS navigation calculates the straight-line distance between two locations — essentially the distance formula. And when surveyors measure the area of an irregular plot of land, they record the coordinates of each corner and apply the Shoelace formula — coordinate geometry in real life.
+
+  - title: 圆形设计随处可见
+    titleEn: Circular Designs Are Everywhere
+    content: |
+      披萨切成 8 块，每块就是一个 $45°$ 的扇形。运动场的跑道由两个半圆和两条直线段组成。摩天轮的每个座舱之间的弧长相等。扇形面积和弧长的概念在日常生活中无处不在。
+    contentEn: |
+      Cutting a pizza into 8 slices gives $45°$ sectors. A running track is made of two semicircles and two straight segments. The arc length between seats on a Ferris wheel is equal. Sector area and arc length concepts appear everywhere in daily life.
+
+examples:
+  - type: 1
+    source: "AMC 8 2019 #4"
+    title: 菱形面积——对角线法（复合图形思维）
+    titleEn: Rhombus Area — Diagonal Method (Composite Figure Thinking)
+    question: |
+      四边形 $ABCD$ 是一个<<菱形/rhombus>>，周长为 52 米。对角线 $\overline{AC}$ 长 24 米。菱形 $ABCD$ 的面积是多少平方米？
+
+      (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+    questionEn: |
+      Quadrilateral $ABCD$ is a <<菱形/rhombus>> with perimeter 52 meters. The length of diagonal $\overline{AC}$ is 24 meters. What is the area in square meters of rhombus $ABCD$?
+
+      (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+    steps:
+      - '**分析**：菱形可以看作由两条对角线分割成的 4 个直角三角形组成的<<复合图形/composite figure>>，用加法法求面积'
+      - '菱形四边相等，边长 $= 52 \div 4 = 13$ 米'
+      - '菱形对角线互相垂直平分，半条 $AC = 12$ 米'
+      - '用勾股定理求半条 $BD$：$\sqrt{13^{2} - 12^{2}} = \sqrt{169 - 144} = \sqrt{25} = 5$ 米'
+      - '完整的 $BD = 2 \times 5 = 10$ 米'
+      - '菱形面积 $= \frac{1}{2} \times AC \times BD = \frac{1}{2} \times 24 \times 10 = \mathbf{120}$'
+    stepsEn:
+      - '**Analysis**: A rhombus can be viewed as a <<复合图形/composite figure>> of 4 right triangles formed by its diagonals — use the addition method'
+      - 'All sides of a rhombus are equal: side $= 52 \div 4 = 13$ m'
+      - 'Diagonals bisect each other perpendicularly: half of $AC = 12$ m'
+      - 'Pythagorean theorem for half of $BD$: $\sqrt{13^{2}-12^{2}} = \sqrt{25} = 5$ m'
+      - 'Full $BD = 2 \times 5 = 10$ m'
+      - 'Rhombus area $= \frac{1}{2} \times 24 \times 10 = \mathbf{120}$'
+    answer: '(D) 120'
+    answerEn: '(D) 120'
+
+  - type: 2
+    source: "AMC 8 2022 #18"
+    title: Varignon 平行四边形——中点面积
+    titleEn: Varignon Parallelogram — Midpoint Area
+    question: |
+      一个矩形的四边中点坐标分别为 $(-3, 0)$、$(2, 0)$、$(5, 4)$、$(0, 4)$。求该矩形的面积。
+
+      (A) 20 &emsp; (B) 25 &emsp; (C) 40 &emsp; (D) 50 &emsp; (E) 80
+    questionEn: |
+      The midpoints of the sides of a rectangle are $(-3,0)$, $(2,0)$, $(5,4)$, and $(0,4)$. What is the area of the rectangle?
+
+      (A) 20 &emsp; (B) 25 &emsp; (C) 40 &emsp; (D) 50 &emsp; (E) 80
+    steps:
+      - '**关键定理**：任意四边形四边中点构成的四边形（Varignon 平行四边形）面积 = 原四边形面积的 $\frac{1}{2}$'
+      - '先用<<鞋带公式/Shoelace formula>>求中点四边形的面积'
+      - '顶点按顺序：$(-3,0)$、$(2,0)$、$(5,4)$、$(0,4)$'
+      - '$S = \frac{1}{2}|(-3)(0) - (2)(0) + (2)(4) - (5)(0) + (5)(4) - (0)(4) + (0)(0) - (-3)(4)|$'
+      - '$= \frac{1}{2}|0 - 0 + 8 - 0 + 20 - 0 + 0 + 12| = \frac{1}{2} \times 40 = 20$'
+      - '中点平行四边形面积 $= 20$，所以原矩形面积 $= 20 \times 2 = \mathbf{40}$'
+    stepsEn:
+      - '**Key theorem**: The quadrilateral formed by the midpoints of any quadrilateral (the Varignon parallelogram) has area = $\frac{1}{2}$ of the original'
+      - 'First find the midpoint quadrilateral area using the <<鞋带公式/Shoelace formula>>'
+      - 'Vertices in order: $(-3,0)$, $(2,0)$, $(5,4)$, $(0,4)$'
+      - '$S = \frac{1}{2}|(-3)(0)-(2)(0)+(2)(4)-(5)(0)+(5)(4)-(0)(4)+(0)(0)-(-3)(4)|$'
+      - '$= \frac{1}{2}|0+8+20+12| = \frac{1}{2}\times40 = 20$'
+      - 'Midpoint parallelogram area $= 20$, so the original rectangle area $= 20 \times 2 = \mathbf{40}$'
+    answer: '(C) 40'
+    answerEn: '(C) 40'
+
+  - type: 3
+    source: "AMC 8 2019 #21"
+    title: 直线围成三角形——利用对称性
+    titleEn: Triangle from Lines — Using Symmetry
+    question: |
+      直线 $y = 5$、$y = 1 + x$ 和 $y = 1 - x$ 围成一个三角形。求这个三角形的面积。
+
+      (A) 4 &emsp; (B) 8 &emsp; (C) 10 &emsp; (D) 12 &emsp; (E) 16
+    questionEn: |
+      The lines $y = 5$, $y = 1 + x$, and $y = 1 - x$ form a triangle. What is the area of this triangle?
+
+      (A) 4 &emsp; (B) 8 &emsp; (C) 10 &emsp; (D) 12 &emsp; (E) 16
+    steps:
+      - '**观察对称性**：$y = 1 + x$ 和 $y = 1 - x$ 关于直线 $x = 0$（$y$ 轴）对称！三角形是等腰的。'
+      - '求交点：$y = 5$ 与 $y = 1 + x$：$x = 4$，得 $(4, 5)$'
+      - '$y = 5$ 与 $y = 1 - x$：$x = -4$，得 $(-4, 5)$'
+      - '$y = 1 + x$ 与 $y = 1 - x$：$2x = 0$，$x = 0$，得 $(0, 1)$'
+      - '底边在 $y = 5$ 上：$|4 - (-4)| = 8$，高 $= |5 - 1| = 4$'
+      - '面积 $= \frac{1}{2} \times 8 \times 4 = \mathbf{16}$'
+    stepsEn:
+      - '**Observe symmetry**: $y=1+x$ and $y=1-x$ are symmetric about the $y$-axis! The triangle is isosceles.'
+      - 'Intersections: $y=5 \cap y=1+x$: $x=4$, giving $(4,5)$'
+      - '$y=5 \cap y=1-x$: $x=-4$, giving $(-4,5)$'
+      - '$y=1+x \cap y=1-x$: $x=0$, giving $(0,1)$'
+      - 'Base on $y=5$: $|4-(-4)|=8$, height $=|5-1|=4$'
+      - 'Area $= \frac{1}{2}\times8\times4 = \mathbf{16}$'
+    answer: '(E) 16'
+    answerEn: '(E) 16'
+
+  - type: 4
+    source: "AMC 8 2018 #15"
+    title: 两个小圆 vs 大圆——经典面积比较
+    titleEn: Two Small Circles vs. Large Circle — Classic Area Comparison
+    question: |
+      在大圆内部画了两个小圆。每个小圆的直径等于大圆的半径。两个小圆的组合面积为 $1$。求大圆中被两个小圆以外的阴影区域的面积。
+
+      (A) $\frac{1}{2}$ &emsp; (B) $\frac{3}{4}$ &emsp; (C) $\frac{5}{6}$ &emsp; (D) $1$ &emsp; (E) $\frac{4}{3}$
+    questionEn: |
+      Two smaller circles are drawn inside a larger circle. The diameter of each smaller circle equals the radius of the larger circle. The combined area of the two smaller circles is $1$. What is the area of the shaded region inside the larger circle but outside the two smaller circles?
+
+      (A) $\frac{1}{2}$ &emsp; (B) $\frac{3}{4}$ &emsp; (C) $\frac{5}{6}$ &emsp; (D) $1$ &emsp; (E) $\frac{4}{3}$
+    steps:
+      - '**设大圆半径为 $R$**'
+      - '小圆直径 $= R$，所以小圆半径 $= \frac{R}{2}$'
+      - '一个小圆面积 $= \pi\left(\frac{R}{2}\right)^{2} = \frac{\pi R^{2}}{4}$'
+      - '两个小圆面积之和 $= 2 \times \frac{\pi R^{2}}{4} = \frac{\pi R^{2}}{2}$'
+      - '已知两个小圆面积和 $= 1$，所以 $\frac{\pi R^{2}}{2} = 1$，即 $\pi R^{2} = 2$'
+      - '大圆面积 $= \pi R^{2} = 2$'
+      - '阴影面积（减法法）$= 2 - 1 = \mathbf{1}$'
+    stepsEn:
+      - '**Let the large circle have radius $R$**'
+      - 'Small circle diameter $= R$, so small radius $= \frac{R}{2}$'
+      - 'One small circle area $= \pi\left(\frac{R}{2}\right)^{2} = \frac{\pi R^{2}}{4}$'
+      - 'Combined small area $= 2 \times \frac{\pi R^{2}}{4} = \frac{\pi R^{2}}{2}$'
+      - 'Given combined area $= 1$, so $\frac{\pi R^{2}}{2}=1$, meaning $\pi R^{2}=2$'
+      - 'Large circle area $= \pi R^{2} = 2$'
+      - 'Shaded area (subtraction method) $= 2 - 1 = \mathbf{1}$'
+    answer: '(D) 1'
+    answerEn: '(D) 1'
+
+exercises:
+  timeGuide:
+    total: 约 45 分钟
+    sections:
+      - range: "1–3"
+        time: 复合图形面积（约 10 分钟）
+      - range: "4–6"
+        time: 坐标几何（约 10 分钟）
+      - range: "7–9"
+        time: 几何变换（约 10 分钟）
+      - range: "10–12"
+        time: 圆与扇形（约 15 分钟）
+  scaffold:
+    - title: '铺垫：拆分 L 形'
+      titleEn: 'Warm-up: Splitting an L-Shape'
+      question: '一个 L 形由 $6 \times 2$ 和 $3 \times 4$ 两个矩形拼成（无重叠）。总面积是多少？'
+      questionEn: 'An L-shape is made of a $6 \times 2$ and a $3 \times 4$ rectangle (no overlap). What is the total area?'
+      hint: '分别算两个矩形面积再相加'
+      hintEn: 'Compute each rectangle area, then add'
+      answer: '$6 \times 2 + 3 \times 4 = 12 + 12 = 24$'
+      answerEn: '$6 \times 2 + 3 \times 4 = 12 + 12 = 24$'
+    - title: '铺垫：减法法求阴影'
+      titleEn: 'Warm-up: Subtraction Method for Shaded Area'
+      question: '一个 $8 \times 8$ 的正方形中间挖去一个 $3 \times 3$ 的正方形。阴影面积是多少？'
+      questionEn: 'An $8 \times 8$ square has a $3 \times 3$ square removed from its center. What is the shaded area?'
+      hint: '大正方形面积 - 小正方形面积'
+      hintEn: 'Large square area - small square area'
+      answer: '$64 - 9 = 55$'
+      answerEn: '$64 - 9 = 55$'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 复合图形面积
+      question: |
+        一个 L 形区域由两个矩形组成：一个 $8 \times 3$ 的矩形和一个 $5 \times 4$ 的矩形（它们共享一条边，不重叠）。这个 L 形的面积是多少？
+      questionEn: |
+        An L-shaped region is made of two rectangles: an $8 \times 3$ rectangle and a $5 \times 4$ rectangle (sharing one side, no overlap). What is the area of the L-shape?
+      choices:
+        - label: A
+          content: '40'
+        - label: B
+          content: '42'
+        - label: C
+          content: '44'
+        - label: D
+          content: '46'
+        - label: E
+          content: '52'
+      correctValue: C
+      answer: '(C) 44'
+      answerEn: '(C) 44'
+      explanation: |
+        加法法：$S = 8 \times 3 + 5 \times 4 = 24 + 20 = \mathbf{44}$。
+      explanationEn: |
+        Addition method: $S = 8\times3 + 5\times4 = 24+20 = \mathbf{44}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 复合图形面积
+      question: |
+        一个 $10 \times 10$ 的正方形中间挖去一个 $4 \times 6$ 的矩形。剩余阴影部分的面积是多少？
+      questionEn: |
+        A $10 \times 10$ square has a $4 \times 6$ rectangle removed from its interior. What is the area of the remaining shaded region?
+      choices:
+        - label: A
+          content: '64'
+        - label: B
+          content: '72'
+        - label: C
+          content: '76'
+        - label: D
+          content: '84'
+        - label: E
+          content: '96'
+      correctValue: C
+      answer: '(C) 76'
+      answerEn: '(C) 76'
+      explanation: |
+        减法法：$S = 10^{2} - 4 \times 6 = 100 - 24 = \mathbf{76}$。
+      explanationEn: |
+        Subtraction method: $S = 10^{2} - 4\times6 = 100-24 = \mathbf{76}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 复合图形面积
+      question: |
+        两个正方形重叠，大正方形边长 $8$，小正方形边长 $5$，重叠区域是一个 $3 \times 3$ 的正方形。两个正方形所覆盖的总面积（含重叠部分只算一次）是多少？
+      questionEn: |
+        Two squares overlap. The larger has side 8, the smaller has side 5, and their overlap is a $3 \times 3$ square. What is the total area covered by the two squares (counting the overlap only once)?
+      choices:
+        - label: A
+          content: '80'
+        - label: B
+          content: '81'
+        - label: C
+          content: '85'
+        - label: D
+          content: '89'
+        - label: E
+          content: '98'
+      correctValue: A
+      answer: '(A) 80'
+      answerEn: '(A) 80'
+      explanation: |
+        容斥原理：$S = S_{\text{大}} + S_{\text{小}} - S_{\text{重叠}} = 64 + 25 - 9 = \mathbf{80}$。
+
+        💡 **另一种方法——画图分区域：**
+        把图形分成三个不重叠的区域：大正方形独有部分 $= 64-9=55$，小正方形独有部分 $= 25-9=16$，重叠部分 $= 9$。
+        总覆盖面积 $= 55+16+9 = 80$。画一张维恩图就能直观看出来！
+      explanationEn: |
+        Inclusion–exclusion: $S = 64 + 25 - 9 = \mathbf{80}$.
+
+        💡 **Alternative — Region Diagram:**
+        Divide into three non-overlapping regions: large square only $= 64-9=55$, small square only $= 25-9=16$, overlap $= 9$.
+        Total $= 55+16+9=80$. Drawing a Venn diagram makes this visual and intuitive!
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #11"
+      section: 坐标几何
+      question: |
+        $\triangle ABC$ 的顶点坐标为 $A(5, 7)$、$B(11, 7)$、$C(3, y)$，其中 $y > 7$。$\triangle ABC$ 的面积为 12。求 $y$ 的值。
+
+        (A) 8 &emsp; (B) 9 &emsp; (C) 10 &emsp; (D) 11 &emsp; (E) 12
+      questionEn: |
+        The coordinates of $\triangle ABC$ are $A(5,7)$, $B(11,7)$, and $C(3,y)$, with $y > 7$. The area of $\triangle ABC$ is 12. What is the value of $y$?
+
+        (A) 8 &emsp; (B) 9 &emsp; (C) 10 &emsp; (D) 11 &emsp; (E) 12
+      choices:
+        - label: A
+          content: '8'
+        - label: B
+          content: '9'
+        - label: C
+          content: '10'
+        - label: D
+          content: '11'
+        - label: E
+          content: '12'
+      correctValue: D
+      answer: '(D) 11'
+      answerEn: '(D) 11'
+      explanation: |
+        $A$ 和 $B$ 的 $y$ 坐标都是 7，所以 $AB$ 是水平底边，底 $= |11-5| = 6$。
+        高 $= y - 7$（因为 $y > 7$）。
+        $\frac{1}{2} \times 6 \times (y-7) = 12$，$3(y-7) = 12$，$y - 7 = 4$，$y = \mathbf{11}$。
+      explanationEn: |
+        $A$ and $B$ share $y=7$, so base $AB = |11-5|=6$.
+        Height $= y-7$. $\frac{1}{2}\times6\times(y-7)=12$, so $y-7=4$, $y = \mathbf{11}$.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 坐标几何
+      question: |
+        四边形的顶点为 $A(0, 0)$、$B(6, 0)$、$C(8, 5)$、$D(2, 5)$。用<<鞋带公式/Shoelace formula>>求面积。
+      questionEn: |
+        A quadrilateral has vertices $A(0,0)$, $B(6,0)$, $C(8,5)$, $D(2,5)$. Find its area using the <<鞋带公式/Shoelace formula>>.
+      choices:
+        - label: A
+          content: '25'
+        - label: B
+          content: '30'
+        - label: C
+          content: '35'
+        - label: D
+          content: '40'
+        - label: E
+          content: '48'
+      correctValue: B
+      answer: '(B) 30'
+      answerEn: '(B) 30'
+      explanation: |
+        鞋带公式：
+        $S = \frac{1}{2}|x_{1}y_{2} - x_{2}y_{1} + x_{2}y_{3} - x_{3}y_{2} + x_{3}y_{4} - x_{4}y_{3} + x_{4}y_{1} - x_{1}y_{4}|$
+        $= \frac{1}{2}|0 \cdot 0 - 6 \cdot 0 + 6 \cdot 5 - 8 \cdot 0 + 8 \cdot 5 - 2 \cdot 5 + 2 \cdot 0 - 0 \cdot 5|$
+        $= \frac{1}{2}|0 - 0 + 30 - 0 + 40 - 10 + 0 - 0| = \frac{1}{2} \times 60 = \mathbf{30}$。
+
+        验证：这是一个梯形，上底 $CD = |8-2| = 6$，下底 $AB = 6$，高 $= 5$。
+        等等——上底和下底相等，这是平行四边形！面积 $= 6 \times 5 = 30$ ✓
+      explanationEn: |
+        Shoelace formula:
+        $S = \frac{1}{2}|0-0+30-0+40-10+0-0| = \frac{1}{2}\times60 = \mathbf{30}$.
+        Verify: this is a parallelogram (both horizontal sides have length 6), area $= 6\times5 = 30$ ✓
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 坐标几何
+      question: |
+        点 $A(1, 2)$ 和 $B(7, 10)$ 的中点坐标是什么？
+      questionEn: |
+        What are the coordinates of the midpoint of $A(1,2)$ and $B(7,10)$?
+      choices:
+        - label: A
+          content: '$(3, 5)$'
+        - label: B
+          content: '$(4, 6)$'
+        - label: C
+          content: '$(4, 5)$'
+        - label: D
+          content: '$(3, 6)$'
+        - label: E
+          content: '$(5, 7)$'
+      correctValue: B
+      answer: '(B) $(4, 6)$'
+      answerEn: '(B) $(4, 6)$'
+      explanation: |
+        中点公式：$M = \left(\frac{1+7}{2}, \frac{2+10}{2}\right) = \left(\frac{8}{2}, \frac{12}{2}\right) = \mathbf{(4, 6)}$。
+      explanationEn: |
+        Midpoint formula: $M = \left(\frac{1+7}{2}, \frac{2+10}{2}\right) = \mathbf{(4,6)}$.
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 几何变换
+      question: |
+        点 $P(3, 5)$ 关于 $x$ 轴作<<反射/reflection>>后的坐标是什么？
+      questionEn: |
+        What are the coordinates of point $P(3,5)$ after <<反射/reflection>> across the $x$-axis?
+      choices:
+        - label: A
+          content: '$(-3, 5)$'
+        - label: B
+          content: '$(3, -5)$'
+        - label: C
+          content: '$(-3, -5)$'
+        - label: D
+          content: '$(5, 3)$'
+        - label: E
+          content: '$(-5, 3)$'
+      correctValue: B
+      answer: '(B) $(3, -5)$'
+      answerEn: '(B) $(3, -5)$'
+      explanation: |
+        关于 $x$ 轴反射：$x$ 坐标不变，$y$ 坐标取反。$(3, 5) \to \mathbf{(3, -5)}$。
+      explanationEn: |
+        Reflection across $x$-axis: $x$ stays, $y$ negates. $(3,5) \to \mathbf{(3,-5)}$.
+
+    - number: 8
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 几何变换
+      question: |
+        点 $Q(2, 7)$ 绕原点逆时针旋转 $90°$ 后的坐标是什么？
+      questionEn: |
+        What are the coordinates of $Q(2,7)$ after a $90°$ counterclockwise rotation about the origin?
+      choices:
+        - label: A
+          content: '$(7, 2)$'
+        - label: B
+          content: '$(-7, 2)$'
+        - label: C
+          content: '$(-2, -7)$'
+        - label: D
+          content: '$(7, -2)$'
+        - label: E
+          content: '$(-2, 7)$'
+      correctValue: B
+      answer: '(B) $(-7, 2)$'
+      answerEn: '(B) $(-7, 2)$'
+      explanation: |
+        逆时针 $90°$ 旋转规则：$(x, y) \to (-y, x)$。
+        $(2, 7) \to (-7, 2)$。答案是 $\mathbf{(-7, 2)}$。
+      explanationEn: |
+        Counterclockwise $90°$ rule: $(x,y) \to (-y,x)$.
+        $(2,7) \to \mathbf{(-7,2)}$.
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 几何变换
+      question: |
+        正六边形绕中心旋转，在 $0°$ 到 $360°$ 之间（不含 $0°$ 和 $360°$），有几个角度能使它与自身重合？
+      questionEn: |
+        How many rotation angles strictly between $0°$ and $360°$ map a regular hexagon onto itself?
+      choices:
+        - label: A
+          content: '3'
+        - label: B
+          content: '4'
+        - label: C
+          content: '5'
+        - label: D
+          content: '6'
+        - label: E
+          content: '12'
+      correctValue: C
+      answer: '(C) 5'
+      answerEn: '(C) 5'
+      explanation: |
+        正六边形旋转 $60°$、$120°$、$180°$、$240°$、$300°$ 后都与自身重合。
+        共 $\mathbf{5}$ 个（不算 $360°$ = 不旋转）。
+
+        💡 **另一种方法——逐个角度验证：**
+        正六边形有 6 个顶点。把 $360°$ 分成 6 等份，每份 $60°$。
+        逐个试：旋转 $60°$ → 每个顶点移到下一个位置，重合 ✓。$120°$ → 跳两个 ✓。$180°$ → 对面 ✓。$240°$ ✓。$300°$ ✓。$30°$ → 不重合 ✗。
+        结论：只有 $60°$ 的倍数才行，共 5 个（$60°, 120°, 180°, 240°, 300°$）。
+      explanationEn: |
+        A regular hexagon maps to itself under rotations of $60°$, $120°$, $180°$, $240°$, $300°$.
+        That's $\mathbf{5}$ rotational symmetries (excluding $360°$ = identity).
+
+        💡 **Alternative — Test Each Angle:**
+        A regular hexagon has 6 vertices. Divide $360°$ into 6 equal parts of $60°$ each.
+        Try each: $60°$ → each vertex moves to the next, overlap ✓. $120°$ → skip two ✓. $180°$ → opposite ✓. $240°$ ✓. $300°$ ✓. $30°$ → no overlap ✗.
+        Only multiples of $60°$ work: 5 angles ($60°, 120°, 180°, 240°, 300°$).
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 圆与扇形
+      question: |
+        一个圆的半径为 6，圆心角为 $120°$ 的<<扇形/sector>>面积是多少？
+      questionEn: |
+        A circle has radius 6. What is the area of a <<扇形/sector>> with central angle $120°$?
+      choices:
+        - label: A
+          content: '$6\pi$'
+        - label: B
+          content: '$12\pi$'
+        - label: C
+          content: '$18\pi$'
+        - label: D
+          content: '$24\pi$'
+        - label: E
+          content: '$36\pi$'
+      correctValue: B
+      answer: '(B) $12\pi$'
+      answerEn: '(B) $12\pi$'
+      explanation: |
+        扇形面积 $= \frac{120}{360} \times \pi \times 6^{2} = \frac{1}{3} \times 36\pi = \mathbf{12\pi}$。
+      explanationEn: |
+        Sector area $= \frac{120}{360}\times\pi\times36 = \frac{1}{3}\times36\pi = \mathbf{12\pi}$.
+
+    - number: 11
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 圆与扇形
+      question: |
+        一个边长为 $10$ 的正方形内切一个圆（圆的直径等于正方形的边长）。正方形中圆以外的阴影区域面积是多少？
+      questionEn: |
+        A circle is inscribed in a square of side 10 (the circle's diameter equals the square's side). What is the area of the shaded region inside the square but outside the circle?
+      choices:
+        - label: A
+          content: '$100 - 20\pi$'
+        - label: B
+          content: '$100 - 25\pi$'
+        - label: C
+          content: '$100 - 50\pi$'
+        - label: D
+          content: '$25\pi - 100$'
+        - label: E
+          content: '$50\pi - 100$'
+      correctValue: B
+      answer: '(B) $100 - 25\pi$'
+      answerEn: '(B) $100 - 25\pi$'
+      explanation: |
+        正方形面积 $= 10^{2} = 100$。
+        内切圆半径 $= \frac{10}{2} = 5$，圆面积 $= \pi \times 5^{2} = 25\pi$。
+        阴影面积 $= 100 - 25\pi \approx 100 - 78.5 = 21.5$。
+      explanationEn: |
+        Square area $= 100$. Inscribed circle radius $= 5$, area $= 25\pi$.
+        Shaded area $= 100 - 25\pi \approx 21.5$.
+
+    - number: 12
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 圆与扇形
+      question: |
+        两个同心圆的半径分别为 $3$ 和 $7$。<<环形/annulus>>（两圆之间的区域）的面积是多少？
+      questionEn: |
+        Two concentric circles have radii 3 and 7. What is the area of the <<环形/annulus>> (the region between the two circles)?
+      choices:
+        - label: A
+          content: '$16\pi$'
+        - label: B
+          content: '$30\pi$'
+        - label: C
+          content: '$40\pi$'
+        - label: D
+          content: '$49\pi$'
+        - label: E
+          content: '$58\pi$'
+      correctValue: C
+      answer: '(C) $40\pi$'
+      answerEn: '(C) $40\pi$'
+      explanation: |
+        环形面积 $= \pi \times 7^{2} - \pi \times 3^{2} = 49\pi - 9\pi = \mathbf{40\pi}$。
+        技巧：$\pi(R^{2} - r^{2}) = \pi(7+3)(7-3) = \pi \times 10 \times 4 = 40\pi$。
+      explanationEn: |
+        Annulus area $= 49\pi - 9\pi = \mathbf{40\pi}$.
+        Shortcut: $\pi(7+3)(7-3) = 40\pi$.
+
+summary:
+  - '<<复合图形/composite figure>>面积：加法法（拆分求和）和减法法（整体减空白），重叠用容斥原理'
+  - '<<坐标几何/coordinate geometry>>三大工具：距离公式、中点公式、鞋带公式——根据已知条件选择最高效的工具'
+  - 'Varignon 平行四边形定理：任意四边形四边中点构成的平行四边形面积 = 原面积的 $\frac{1}{2}$'
+  - '<<几何变换/geometric transformation>>（平移、旋转、反射）都是等距变换，保持距离、角度和面积不变'
+  - '利用对称性简化计算：只算一半或 $\frac{1}{n}$，再乘回来'
+  - '<<扇形/sector>>面积 $= \frac{\theta}{360}\pi r^{2}$，弧长 $= \frac{\theta}{360} \times 2\pi r$——"按比例分配"'
+  - '圆与多边形组合：关键是找准半径与边长/对角线的关系'
+  - 'AMC 8 几何题三步法：画图标注 → 选策略 → 分步计算'
+summaryEn:
+  - '<<复合图形/composite figure>> area: addition method (split and sum) and subtraction method (total minus blank); overlaps use inclusion–exclusion'
+  - '<<坐标几何/coordinate geometry>> three tools: distance formula, midpoint formula, Shoelace formula — pick the most efficient for the given information'
+  - 'Varignon parallelogram theorem: midpoints of any quadrilateral form a parallelogram with area = $\frac{1}{2}$ of the original'
+  - '<<几何变换/geometric transformation>> (translation, rotation, reflection) are all isometries preserving distances, angles, and area'
+  - 'Use symmetry to simplify: compute one half or $\frac{1}{n}$, then multiply back'
+  - '<<扇形/sector>> area $= \frac{\theta}{360}\pi r^{2}$, arc length $= \frac{\theta}{360}\times2\pi r$ — "proportion"'
+  - 'Circles combined with polygons: the key is relating radius to side length/diagonal'
+  - 'AMC 8 geometry three-step method: draw and label → choose strategy → compute step by step'
+
+examPrep:
+  intro: 以下为竞赛风格综合题，难度略高于练习题，考查复合图形、坐标几何、变换和圆面积的灵活综合运用。
+  introEn: The following are contest-style questions at a slightly higher level, testing flexible and combined use of composite figures, coordinate geometry, transformations, and circle area.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #4"
+      section: 综合
+      question: |
+        四边形 $ABCD$ 是一个菱形，周长为 52 米。对角线 $\overline{AC}$ 长 24 米。菱形 $ABCD$ 的面积是多少平方米？
+
+        (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+      questionEn: |
+        Quadrilateral $ABCD$ is a rhombus with perimeter 52 meters. The length of diagonal $\overline{AC}$ is 24 meters. What is the area in square meters of rhombus $ABCD$?
+
+        (A) 60 &emsp; (B) 90 &emsp; (C) 105 &emsp; (D) 120 &emsp; (E) 144
+      choices:
+        - label: A
+          content: '60'
+        - label: B
+          content: '90'
+        - label: C
+          content: '105'
+        - label: D
+          content: '120'
+        - label: E
+          content: '144'
+      correctValue: D
+      answer: '(D) 120'
+      answerEn: '(D) 120'
+      explanation: |
+        边长 $= 52 \div 4 = 13$。半对角线 $= 12$。
+        勾股定理求另一半对角线：$\sqrt{13^{2} - 12^{2}} = 5$。$BD = 10$。
+        面积 $= \frac{1}{2} \times 24 \times 10 = \mathbf{120}$。
+      explanationEn: |
+        Side $= 13$. Half-diagonal $= 12$. Other half-diagonal $= \sqrt{169-144}=5$. $BD=10$.
+        Area $= \frac{1}{2}\times24\times10 = \mathbf{120}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        在一个半径为 $10$ 的半圆上，以直径为底边放置一个内接矩形 $ABCD$（$AB$ 在直径上）。如果 $AB = 16$，求矩形 $ABCD$ 的面积。
+      questionEn: |
+        A rectangle $ABCD$ is inscribed in a semicircle of radius 10, with side $AB$ on the diameter. If $AB = 16$, what is the area of rectangle $ABCD$?
+      choices:
+        - label: A
+          content: '80'
+        - label: B
+          content: '96'
+        - label: C
+          content: '100'
+        - label: D
+          content: '120'
+        - label: E
+          content: '160'
+      correctValue: B
+      answer: '(B) 96'
+      answerEn: '(B) 96'
+      explanation: |
+        半圆圆心在 $AB$ 的中点，半径 $= 10$。$AB$ 的中点到 $A$（或 $B$）的距离 $= 8$。
+        矩形的高 $= C$ 到直径的距离。$C$ 在半圆上，到圆心距离 $= 10$，水平距离 $= 8$。
+        高 $= \sqrt{10^{2} - 8^{2}} = \sqrt{36} = 6$。
+        面积 $= 16 \times 6 = \mathbf{96}$。
+      explanationEn: |
+        Center of semicircle is the midpoint of $AB$, radius $=10$. Distance from center to $A$ or $B$ is $8$.
+        Height of rectangle = distance from $C$ (on semicircle) to diameter.
+        $\sqrt{10^{2}-8^{2}} = 6$. Area $= 16\times6 = \mathbf{96}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题（改编自同心圆涂色问题）
+      section: 综合
+      question: |
+        三个同心圆的半径分别为 $1$、$2$、$3$。最小圆涂为白色，中间环形涂为灰色，最外环形涂为白色。现在在最外环形中，将一个圆心角为 $\theta$ 的扇形区域也涂为灰色。涂色后灰色区域总面积等于白色区域总面积。求 $\theta$ 的值。
+
+        (A) $108°$ &emsp; (B) $120°$ &emsp; (C) $135°$ &emsp; (D) $144°$ &emsp; (E) $150°$
+      questionEn: |
+        Three concentric circles have radii 1, 2, and 3. The innermost disk is white, the middle annulus is gray, and the outer annulus is white. In the outer annulus, a sector of central angle $\theta$ is also shaded gray. After this shading, the total gray area equals the total white area. Find $\theta$.
+
+        (A) $108°$ &emsp; (B) $120°$ &emsp; (C) $135°$ &emsp; (D) $144°$ &emsp; (E) $150°$
+      choices:
+        - label: A
+          content: '$108°$'
+        - label: B
+          content: '$120°$'
+        - label: C
+          content: '$135°$'
+        - label: D
+          content: '$144°$'
+        - label: E
+          content: '$150°$'
+      correctValue: A
+      answer: '(A) $108°$'
+      answerEn: '(A) $108°$'
+      explanation: |
+        总面积 $= \pi \times 3^{2} = 9\pi$。灰色 = 白色意味着各占 $\frac{9\pi}{2} = 4.5\pi$。
+
+        各区域面积：
+        - 最小圆（白色）：$\pi \times 1^{2} = \pi$
+        - 中间环（灰色）：$\pi \times 2^{2} - \pi = 3\pi$
+        - 最外环（白色）：$\pi \times 3^{2} - \pi \times 2^{2} = 5\pi$
+
+        原来灰色面积 $= 3\pi$，需要增加到 $4.5\pi$，还差 $1.5\pi$。
+
+        在外环中，一个圆心角为 $\theta$ 的扇形被涂灰。该扇形面积为 $\frac{\theta}{360} \times 5\pi$。
+
+        令 $\frac{\theta}{360} \times 5\pi = 1.5\pi$，解得 $\frac{5\theta}{360} = 1.5$，$\theta = \frac{1.5 \times 360}{5} = \mathbf{108°}$。
+      explanationEn: |
+        Total area $= 9\pi$. Gray = white means each is $\frac{9\pi}{2} = 4.5\pi$.
+
+        Region areas: inner disk (white, $\pi$), middle annulus (gray, $3\pi$), outer annulus (white, $5\pi$).
+        Original gray $= 3\pi$, need $4.5\pi$, so $1.5\pi$ more gray is needed.
+
+        The sector in the outer annulus has area $\frac{\theta}{360}\times5\pi$.
+        Set $\frac{5\theta}{360} = 1.5$, so $\theta = \frac{1.5\times360}{5} = \mathbf{108°}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        等边三角形 $ABC$ 的边长为 $6$。在三角形内部，以每个顶点为圆心、$2$ 为半径画弧（弧在三角形内部，即 $60°$ 的扇形）。三角形内未被任何弧覆盖的区域面积是多少？
+      questionEn: |
+        Equilateral triangle $ABC$ has side length 6. Inside the triangle, arcs of radius 2 are drawn centered at each vertex (each arc is a $60°$ sector inside the triangle). What is the area of the region inside the triangle not covered by any arc?
+      choices:
+        - label: A
+          content: '$9\sqrt{3} - \pi$'
+        - label: B
+          content: '$9\sqrt{3} - 2\pi$'
+        - label: C
+          content: '$9\sqrt{3} - 3\pi$'
+        - label: D
+          content: '$9\sqrt{3} - 4\pi$'
+        - label: E
+          content: '$18\sqrt{3} - 2\pi$'
+      correctValue: B
+      answer: '(B) $9\sqrt{3} - 2\pi$'
+      answerEn: '(B) $9\sqrt{3} - 2\pi$'
+      explanation: |
+        等边三角形面积 $= \frac{\sqrt{3}}{4} \times 6^{2} = 9\sqrt{3}$。
+
+        每个顶点处的扇形圆心角 $= 60°$（等边三角形内角），半径 $= 2$。
+        每个扇形面积 $= \frac{60}{360} \times \pi \times 2^{2} = \frac{1}{6} \times 4\pi = \frac{2\pi}{3}$。
+        三个扇形面积之和 $= 3 \times \frac{2\pi}{3} = 2\pi$。
+
+        因为半径 $2 < 3$（到对边中点的距离），三个扇形不重叠。
+        未覆盖面积 $= 9\sqrt{3} - 2\pi$。
+      explanationEn: |
+        Triangle area $= \frac{\sqrt{3}}{4}\times36 = 9\sqrt{3}$.
+        Each vertex sector: angle $60°$, radius $2$, area $= \frac{1}{6}\times4\pi = \frac{2\pi}{3}$.
+        Three sectors: $3\times\frac{2\pi}{3} = 2\pi$. Since $2 < 3$ (apothem), no overlap.
+        Uncovered area $= 9\sqrt{3} - 2\pi$.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        坐标平面上，正方形 $ABCD$ 的顶点为 $A(0, 0)$、$B(8, 0)$、$C(8, 8)$、$D(0, 8)$。点 $E$ 是 $BC$ 的中点，点 $F$ 是 $CD$ 的中点。三角形 $AEF$ 的面积是多少？
+      questionEn: |
+        In the coordinate plane, square $ABCD$ has vertices $A(0,0)$, $B(8,0)$, $C(8,8)$, $D(0,8)$. Point $E$ is the midpoint of $BC$ and $F$ is the midpoint of $CD$. What is the area of triangle $AEF$?
+      choices:
+        - label: A
+          content: '20'
+        - label: B
+          content: '24'
+        - label: C
+          content: '28'
+        - label: D
+          content: '32'
+        - label: E
+          content: '36'
+      correctValue: B
+      answer: '(B) 24'
+      answerEn: '(B) 24'
+      explanation: |
+        $E$ 是 $BC$ 中点：$E = (8, 4)$。$F$ 是 $CD$ 中点：$F = (4, 8)$。
+
+        鞋带公式：$A(0,0)$、$E(8,4)$、$F(4,8)$。
+        $S = \frac{1}{2}|0(4-8) + 8(8-0) + 4(0-4)|$
+        $= \frac{1}{2}|0 + 64 - 16| = \frac{1}{2} \times 48 = \mathbf{24}$。
+
+        另解（减法法）：$S_{AEF} = S_{\text{正方形}} - S_{\triangle ABE} - S_{\triangle ADF} - S_{\triangle ECF}$
+        $= 64 - \frac{1}{2}(8)(4) - \frac{1}{2}(8)(4) - \frac{1}{2}(4)(4) = 64 - 16 - 16 - 8 = 24$ ✓
+      explanationEn: |
+        $E = (8,4)$, $F = (4,8)$.
+        Shoelace: $S = \frac{1}{2}|0(4-8)+8(8-0)+4(0-4)| = \frac{1}{2}|0+64-16| = 24$.
+        Alt (subtraction): $64 - 16 - 16 - 8 = \mathbf{24}$ ✓

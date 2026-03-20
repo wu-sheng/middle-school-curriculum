@@ -1,0 +1,1310 @@
+title: "\U0001F3C6 AMC 8 扩展：应用题建模"
+titleEn: "\U0001F3C6 AMC 8 Extension: Word Problem Modeling"
+chapter: 14
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 约 4–5 课时，每课时 45 分钟
+estimatedTimeEn: "4–5 sessions, ~45 min each"
+targetAudience: 七年级自学生，已完成方程组与不等式，掌握AMC 8核心建模技巧
+
+objectives:
+  - 掌握行程问题的核心公式 $d = rt$，能处理相遇、追及、平均速度问题
+  - 理解工程问题的工作率模型，会用 $\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$ 求解合作问题
+  - 熟练运用比例、百分数、连续百分变化解决混合与折扣问题
+  - 掌握"文字 → 方程"的代数建模流程，能灵活选择一元或二元模型
+  - 培养 AMC 8 应用题的"估算 → 验证"策略，提升选择题效率
+objectivesEn:
+  - Master the core formula $d = rt$ for rate–distance–time problems, including meeting, chase, and average-speed scenarios
+  - Understand work-rate models and solve cooperative work problems using $\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$
+  - Fluently apply ratio, proportion, percent change, and successive percent changes to mixture and discount problems
+  - 'Master the "words → equations" algebraic modeling process: flexibly choose one-variable or two-variable setups'
+  - 'Develop the AMC 8 "estimate then verify" strategy for multiple-choice efficiency'
+
+concepts:
+  - id: rate-distance-time
+    title: 行程问题
+    titleEn: Rate–Distance–Time Problems
+    content: |
+      **行程问题为什么重要？**
+
+      在 AMC 8 中，行程问题几乎年年出现，是应用题建模的第一大类。
+      所有行程问题的核心只有一个公式：
+
+      $$d = r \times t$$
+
+      其中 $d$ 是<<路程/distance>>，$r$ 是<<速率/rate>>（速度），$t$ 是<<时间/time>>。
+
+      由此可以推导出：$r = \frac{d}{t}$，$t = \frac{d}{r}$。
+
+      **单位换算（AMC 8 常见陷阱）**
+
+      | 换算 | 公式 |
+      |------|------|
+      | 英里/小时 → 英里/分钟 | $\div 60$ |
+      | 分钟 → 小时 | $\div 60$ |
+      | 英尺/秒 → 英里/小时 | $\times \frac{3600}{5280} = \times \frac{15}{22}$ |
+
+      很多同学在 AMC 8 中因为单位不统一而出错。**做行程题的第一步永远是统一单位！**
+
+      **<<相对速度/relative speed>>**
+
+      当两个物体同时运动时，我们关注它们之间距离的变化率：
+
+      - **相向而行（迎面）**：相对速度 $= r_1 + r_2$（距离每秒缩短 $r_1 + r_2$）
+      - **同向而行（追及）**：相对速度 $= |r_1 - r_2|$（距离每秒缩短 $|r_1 - r_2|$）
+      - **背向而行**：相对速度 $= r_1 + r_2$（距离每秒增大 $r_1 + r_2$）
+
+      **相遇问题**：两人从相距 $d$ 的两地出发，相向而行。
+      $$\text{相遇时间} = \frac{d}{r_1 + r_2}$$
+
+      **追及问题**：快的追慢的，初始相距 $d$。
+      $$\text{追上时间} = \frac{d}{r_{\text{快}} - r_{\text{慢}}}$$
+
+      **<<平均速度/average speed>>（最常考的陷阱！）**
+
+      平均速度**不是**速度的算术平均值！正确公式：
+
+      $$\text{平均速度} = \frac{\text{总路程}}{\text{总时间}}$$
+
+      **经典陷阱**：去程 30 mph，回程 60 mph，平均速度是多少？
+      很多人答 45 mph（错！）。正确做法：设单程 $d$。
+      去程时间 $= \frac{d}{30}$，回程时间 $= \frac{d}{60}$。
+      总时间 $= \frac{d}{30} + \frac{d}{60} = \frac{3d}{60} = \frac{d}{20}$。
+      平均速度 $= \frac{2d}{\frac{d}{20}} = 40$ mph。
+
+      **环形跑道问题**
+
+      两人在周长为 $L$ 的环形跑道上跑步：
+      - 反向跑：每隔 $\frac{L}{r_1 + r_2}$ 时间相遇一次
+      - 同向跑：快者每超慢者一整圈（多跑 $L$），用时 $\frac{L}{r_{\text{快}} - r_{\text{慢}}}$
+    contentEn: |
+      **Why are rate problems important?**
+
+      Rate–distance–time problems appear on the AMC 8 almost every year and are the most common type of word problem.
+      Every rate problem comes down to one formula:
+
+      $$d = r \times t$$
+
+      where $d$ is <<路程/distance>>, $r$ is <<速率/rate>> (speed), and $t$ is <<时间/time>>.
+
+      Rearranging: $r = \frac{d}{t}$, $t = \frac{d}{r}$.
+
+      **Unit conversion (common AMC 8 trap)**
+
+      | Conversion | Formula |
+      |-----------|---------|
+      | mph → miles/min | $\div 60$ |
+      | minutes → hours | $\div 60$ |
+      | ft/s → mph | $\times \frac{3600}{5280} = \times \frac{15}{22}$ |
+
+      Many students lose points on AMC 8 because of mismatched units. **Always unify units first!**
+
+      **<<相对速度/Relative speed>>**
+
+      When two objects move simultaneously, focus on how the gap between them changes:
+
+      - **Moving toward each other (meeting)**: relative speed $= r_1 + r_2$
+      - **Moving in the same direction (chase)**: relative speed $= |r_1 - r_2|$
+      - **Moving apart**: relative speed $= r_1 + r_2$
+
+      **Meeting problem**: Two people start $d$ apart, heading toward each other.
+      $$\text{Meeting time} = \frac{d}{r_1 + r_2}$$
+
+      **Chase problem**: Faster chases slower, initial gap $d$.
+      $$\text{Catch-up time} = \frac{d}{r_{\text{fast}} - r_{\text{slow}}}$$
+
+      **<<平均速度/Average speed>> (most tested trap!)**
+
+      Average speed is **NOT** the arithmetic mean of the speeds! Correct formula:
+
+      $$\text{Average speed} = \frac{\text{Total distance}}{\text{Total time}}$$
+
+      **Classic trap**: Going at 30 mph, returning at 60 mph. Average speed?
+      Many answer 45 mph (wrong!). Correct: let one-way distance $= d$.
+      Time there $= \frac{d}{30}$, time back $= \frac{d}{60}$.
+      Total time $= \frac{d}{30} + \frac{d}{60} = \frac{d}{20}$.
+      Average speed $= \frac{2d}{\frac{d}{20}} = 40$ mph.
+
+      **Circular track problems**
+
+      Two runners on a track of circumference $L$:
+      - Opposite directions: they meet every $\frac{L}{r_1 + r_2}$ time units
+      - Same direction: the faster laps the slower every $\frac{L}{r_{\text{fast}} - r_{\text{slow}}}$ time units
+    notes:
+      - '行程问题三要素：路程、速率、时间，知二求一'
+      - '平均速度 ≠ 速度平均值——这是 AMC 8 最经典的陷阱之一'
+      - '追及问题的关键：用相对速度把两人运动转化为一人运动'
+      - '环形跑道问题的本质：追及多跑一整圈 $L$'
+    notesEn:
+      - 'Three elements of rate problems: distance, rate, time — know two, find the third'
+      - 'Average speed ≠ average of speeds — one of the most classic AMC 8 traps'
+      - 'Chase problems: use relative speed to reduce two-body motion to one-body motion'
+      - 'Circular track: lapping means the faster runner covers one extra circumference $L$'
+
+  - id: work-problems
+    title: 工程问题
+    titleEn: Work Rate Problems
+    content: |
+      **工程问题的核心思想**
+
+      <<工程问题/work rate problems>>和行程问题本质相似——把"工作量"类比为"路程"，"工作效率"类比为"速度"。
+
+      **基本模型**
+
+      如果一个人单独完成一项工作需要 $A$ 天，那么他**每天完成的工作量**（工作率）为 $\frac{1}{A}$。
+
+      如果两个人合作：
+      $$\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$$
+
+      其中 $T$ 是合作完成的天数。
+
+      **为什么用倒数？**
+
+      想象刷一面墙：
+      - 小明 6 小时刷完 → 每小时刷 $\frac{1}{6}$ 面墙
+      - 小红 3 小时刷完 → 每小时刷 $\frac{1}{3}$ 面墙
+      - 合作：每小时刷 $\frac{1}{6} + \frac{1}{3} = \frac{1}{6} + \frac{2}{6} = \frac{3}{6} = \frac{1}{2}$ 面墙
+      - 合作完成时间：$T = 2$ 小时
+
+      **进阶：中途加入/离开**
+
+      如果 A 先独自做了 $t_1$ 小时，然后 B 加入，两人一起做完，总共用了多久？
+
+      A 先做的工作量：$\frac{t_1}{A}$。
+      剩余工作量：$1 - \frac{t_1}{A}$。
+      两人合作的时间：$t_2 = \frac{1 - \frac{t_1}{A}}{\frac{1}{A} + \frac{1}{B}}$。
+      总时间：$t_1 + t_2$。
+
+      **多人合作**
+
+      三人合作：$\frac{1}{A} + \frac{1}{B} + \frac{1}{C} = \frac{1}{T}$
+
+      **工程问题解题步骤**
+
+      1. 设工作总量为 $1$（整体法）
+      2. 求出每个人的工作率（$\frac{1}{\text{完成天数}}$）
+      3. 根据合作/分段工作列方程
+      4. 求解并检验（总工作量 = 1）
+
+      **易错点**
+
+      - 忘记"工作率是倒数"，直接把天数相加（错！6 天和 3 天合作不是 4.5 天）
+      - 分段工作时，忘记前一段已完成的工作量
+      - 单位不一致：有人用"天"，有人用"小时"
+    contentEn: |
+      **Core idea of work rate problems**
+
+      <<工程问题/Work rate problems>> are structurally similar to rate–distance–time problems — think of "work" as "distance" and "work rate" as "speed."
+
+      **Basic model**
+
+      If one person finishes a job alone in $A$ days, their **daily work rate** is $\frac{1}{A}$.
+
+      If two people cooperate:
+      $$\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$$
+
+      where $T$ is the time to finish together.
+
+      **Why reciprocals?**
+
+      Imagine painting a wall:
+      - Ming: 6 hours alone → paints $\frac{1}{6}$ wall per hour
+      - Hong: 3 hours alone → paints $\frac{1}{3}$ wall per hour
+      - Together: $\frac{1}{6} + \frac{1}{3} = \frac{1}{2}$ wall per hour
+      - Time together: $T = 2$ hours
+
+      **Advanced: joining/leaving midway**
+
+      If A works alone for $t_1$ hours, then B joins, how long total?
+
+      A's work done: $\frac{t_1}{A}$.
+      Remaining: $1 - \frac{t_1}{A}$.
+      Time together: $t_2 = \frac{1 - \frac{t_1}{A}}{\frac{1}{A} + \frac{1}{B}}$.
+      Total: $t_1 + t_2$.
+
+      **Multiple workers**
+
+      Three people: $\frac{1}{A} + \frac{1}{B} + \frac{1}{C} = \frac{1}{T}$
+
+      **Problem-solving steps**
+
+      1. Set total work $= 1$ (unit-work method)
+      2. Find each person's rate ($\frac{1}{\text{days to finish}}$)
+      3. Write an equation based on cooperation / segments
+      4. Solve and verify (total work done $= 1$)
+
+      **Common mistakes**
+
+      - Forgetting that rates are reciprocals — adding days directly (wrong! 6 days + 3 days together ≠ 4.5 days)
+      - In segmented work, forgetting the portion already completed
+      - Mixing units: some in "days," others in "hours"
+    notes:
+      - '工作率 = 工作量 ÷ 时间 = $\frac{1}{\text{完成天数}}$'
+      - '合作效率 = 各人效率之和：$\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$'
+      - '6 天和 3 天合作完成需要 2 天（不是 4.5 天！）'
+      - '解题第一步：设总工作量为 1'
+    notesEn:
+      - 'Work rate = work ÷ time = $\frac{1}{\text{days to finish}}$'
+      - 'Combined rate = sum of individual rates: $\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$'
+      - '6-day and 3-day workers together finish in 2 days (NOT 4.5 days!)'
+      - 'Step one: set total work = 1'
+
+  - id: ratio-proportion
+    title: 比例与百分数
+    titleEn: Ratio, Proportion & Percent
+    content: |
+      **比例和百分数在 AMC 8 中无处不在**
+
+      AMC 8 每年至少有 3–4 道题直接考查<<比例/ratio>>、<<百分数/percent>>或<<比例方程/proportion>>。这些题看起来简单，但陷阱很多。
+
+      **比例的基本概念**
+
+      $a : b = c : d$（或 $\frac{a}{b} = \frac{c}{d}$）意味着四个量成<<比例/proportion>>。
+
+      **交叉相乘**：$\frac{a}{b} = \frac{c}{d}$ 等价于 $a \times d = b \times c$。
+
+      **例**：如果男女比为 $3:5$，共 40 人，男生有多少人？
+      男生 $= 40 \times \frac{3}{3+5} = 40 \times \frac{3}{8} = 15$ 人。
+
+      **<<百分数变化/percent change>>**
+
+      $$\text{变化率} = \frac{\text{新值} - \text{原值}}{\text{原值}} \times 100\%$$
+
+      - 增长 $p\%$：新值 $= \text{原值} \times (1 + \frac{p}{100})$
+      - 减少 $p\%$：新值 $= \text{原值} \times (1 - \frac{p}{100})$
+
+      **<<连续百分数变化/successive percent changes>>（AMC 8 高频考点！）**
+
+      先增 $p\%$，再减 $p\%$，结果**不等于**原值！
+
+      $$\text{原值} \times (1 + \frac{p}{100}) \times (1 - \frac{p}{100}) = \text{原值} \times (1 - \frac{p^2}{10000})$$
+
+      结果总是**减少**了！减少量为原值的 $\frac{p^2}{10000}$。
+
+      **例**：商品先涨价 $20\%$，再打八折（降 $20\%$）。
+      $1 \times 1.2 \times 0.8 = 0.96$，即变成原价的 $96\%$——亏了 $4\%$！
+
+      **连续百分数的正确做法：逐步乘**
+
+      给了 Pedro $20\%$，剩 $80\%$。再给 Ebony 剩余的 $10\%$，剩 $80\% \times 90\% = 72\%$。
+      不能直接算"$20\% + 10\% = 30\%$"（错！因为第二次的基数变了）。
+
+      **<<混合问题/mixture problems>>**
+
+      把不同浓度的溶液混合时，用"溶质守恒"：
+
+      $$c_1 \times V_1 + c_2 \times V_2 = c_{\text{混}} \times (V_1 + V_2)$$
+
+      **例**：30% 盐水 200g 与 50% 盐水 300g 混合，浓度是多少？
+      盐总量 $= 0.3 \times 200 + 0.5 \times 300 = 60 + 150 = 210$ g。
+      混合浓度 $= \frac{210}{500} = 42\%$。
+
+      **易错点**
+
+      - 连续百分数变化的基数会变——不能直接加减百分数
+      - "A 是 B 的百分之几"和"A 比 B 多百分之几"不同！
+      - 混合问题中，总量 = 两者之和（别忘了加分母）
+    contentEn: |
+      **Ratios and percents are everywhere on AMC 8**
+
+      Every year the AMC 8 includes at least 3–4 problems directly testing <<比例/ratio>>, <<百分数/percent>>, or <<比例方程/proportion>>. They look simple, but traps abound.
+
+      **Ratio basics**
+
+      $a : b = c : d$ (or $\frac{a}{b} = \frac{c}{d}$) means the four quantities form a <<比例/proportion>>.
+
+      **Cross-multiplication**: $\frac{a}{b} = \frac{c}{d}$ is equivalent to $a \times d = b \times c$.
+
+      **Example**: Boys to girls $= 3:5$, total 40. Boys $= 40 \times \frac{3}{8} = 15$.
+
+      **<<百分数变化/Percent change>>**
+
+      $$\text{Change rate} = \frac{\text{New} - \text{Original}}{\text{Original}} \times 100\%$$
+
+      - Increase by $p\%$: new $= \text{original} \times (1 + \frac{p}{100})$
+      - Decrease by $p\%$: new $= \text{original} \times (1 - \frac{p}{100})$
+
+      **<<连续百分数变化/Successive percent changes>> (AMC 8 favorite!)**
+
+      Increase by $p\%$, then decrease by $p\%$, does NOT return to the original!
+
+      $$\text{original} \times (1 + \frac{p}{100}) \times (1 - \frac{p}{100}) = \text{original} \times (1 - \frac{p^2}{10000})$$
+
+      The result is always **less** than the original — by a factor of $\frac{p^2}{10000}$.
+
+      **Example**: A store raises a price by 20%, then discounts by 20%.
+      $1 \times 1.2 \times 0.8 = 0.96$, i.e., 96% of original — a 4% loss!
+
+      **Correct approach to successive percents: multiply step by step**
+
+      Give Pedro 20%, 80% remains. Then give Ebony 10% of the remainder: $80\% \times 90\% = 72\%$.
+      You CANNOT compute "$20\% + 10\% = 30\%$" (wrong! — the base changes each time).
+
+      **<<混合问题/Mixture problems>>**
+
+      When mixing solutions of different concentrations, use "solute conservation":
+
+      $$c_1 \times V_1 + c_2 \times V_2 = c_{\text{mix}} \times (V_1 + V_2)$$
+
+      **Example**: Mix 200 g of 30% salt water with 300 g of 50% salt water.
+      Total salt $= 0.3 \times 200 + 0.5 \times 300 = 210$ g.
+      Mixed concentration $= \frac{210}{500} = 42\%$.
+
+      **Common mistakes**
+
+      - The base changes in successive percent problems — don't add/subtract percentages directly
+      - '"A is what percent of B" and "A is what percent MORE than B" are different!'
+      - In mixture problems, total volume = sum of both (don't forget to add denominators)
+    notes:
+      - '交叉相乘：$\frac{a}{b} = \frac{c}{d}$ 等价于 $ad = bc$'
+      - '连续百分变化：先涨 $p\%$ 再降 $p\%$，结果降低 $\frac{p^2}{10000}$'
+      - '混合问题的核心：溶质（或价值）守恒'
+      - '看到"剩余的百分之几"，要用逐步乘法，不能直接加减'
+    notesEn:
+      - 'Cross-multiply: $\frac{a}{b} = \frac{c}{d}$ iff $ad = bc$'
+      - 'Successive percent changes: up $p\%$ then down $p\%$ results in a net decrease of $\frac{p^2}{10000}$'
+      - 'Mixture problem core: solute (or value) conservation'
+      - 'When you see "percent of the remainder," multiply step by step — never add/subtract percentages directly'
+
+  - id: algebraic-modeling
+    title: 代数建模策略
+    titleEn: Algebraic Modeling Strategies
+    content: |
+      **从文字到方程：AMC 8 建模的核心技能**
+
+      AMC 8 应用题的难度不在于计算，而在于**把文字翻译成数学表达式**。
+      <<代数建模/algebraic modeling>>就是这个翻译过程。
+
+      **建模四步法**
+
+      1. **读题画图**：仔细读题，画示意图或列表，标出已知和未知
+      2. **设未知数**：选择合适的变量（设什么最方便？）
+      3. **列方程**：用等量关系把已知和未知联系起来
+      4. **解方程并验证**：解出答案后代回原题检验
+
+      **一元 vs. 二元：怎么选？**
+
+      | 情况 | 选择 | 原因 |
+      |------|------|------|
+      | 只有一个核心未知量 | 一元 | 更简洁 |
+      | 两个未知量有直接关系 | 一元（设一个，另一个用它表示） | 如"男生 $x$ 人，女生 $40-x$ 人" |
+      | 两个独立未知量 | 二元方程组 | 如年龄问题、鸡兔同笼 |
+
+      **常见文字 → 数学翻译**
+
+      | 中文 | 英文 | 数学表达 |
+      |------|------|---------|
+      | A 比 B 多 5 | A is 5 more than B | $A = B + 5$ |
+      | A 是 B 的 3 倍 | A is 3 times B | $A = 3B$ |
+      | A 和 B 的和 | the sum of A and B | $A + B$ |
+      | A 比 B 少 20% | A is 20% less than B | $A = 0.8B$ |
+      | A 的 $\frac{2}{3}$ | two thirds of A | $\frac{2}{3}A$ |
+
+      **<<逆推法/working backwards>>（AMC 8 神器！）**
+
+      有些题从结果出发，逆向推导更简单。特别适合：
+      - 连续操作后求初始值
+      - 选择题中直接代入验证
+
+      **例**：某数先乘 2，再加 5，结果是 21。求原数。
+      正推：设 $x$，$2x + 5 = 21$，$x = 8$。
+      逆推：$21 \xrightarrow{-5} 16 \xrightarrow{\div 2} 8$。结果一样，但逆推更快。
+
+      **<<代入验证法/estimate-then-verify>>（选择题专属策略）**
+
+      AMC 8 是选择题，答案就在 A–E 中。
+      如果列方程太复杂，可以：
+      1. **估算范围**：大致判断答案量级
+      2. **代入验证**：把选项代入题目条件，看哪个满足
+      3. **排除法**：排除明显不对的选项
+
+      **例**：如果方程很难解，但知道答案是整数，且选项是 5, 9, 12, 15, 20——可以逐个代入检验。
+
+      **建模的常见错误**
+
+      - "A 比 B 多 5"写成 $A + 5 = B$（反了！应该是 $A = B + 5$）
+      - 忘记检验：解出的 $x$ 可能不满足实际约束（如负数、非整数）
+      - 设变量太多：能用一个变量表示所有量时，不要用两个
+    contentEn: |
+      **From words to equations: the core AMC 8 modeling skill**
+
+      AMC 8 word problems are hard not because of computation, but because of **translating words into math**.
+      <<代数建模/Algebraic modeling>> is that translation process.
+
+      **Four-step modeling process**
+
+      1. **Read and draw**: read carefully, sketch a diagram or table, label knowns and unknowns
+      2. **Define variables**: choose the most convenient variable(s)
+      3. **Write equations**: connect knowns and unknowns via equal-quantity relationships
+      4. **Solve and verify**: check the answer against the original problem
+
+      **One variable vs. two: how to choose?**
+
+      | Situation | Choice | Reason |
+      |-----------|--------|--------|
+      | One core unknown | One variable | Simpler |
+      | Two unknowns with a direct link | One variable (express the other in terms of it) | E.g., "$x$ boys, $40-x$ girls" |
+      | Two independent unknowns | System of equations | E.g., age problems, chicken-rabbit problems |
+
+      **Common word → math translations**
+
+      | Chinese | English | Math |
+      |---------|---------|------|
+      | A 比 B 多 5 | A is 5 more than B | $A = B + 5$ |
+      | A 是 B 的 3 倍 | A is 3 times B | $A = 3B$ |
+      | A 和 B 的和 | the sum of A and B | $A + B$ |
+      | A 比 B 少 20% | A is 20% less than B | $A = 0.8B$ |
+      | A 的 $\frac{2}{3}$ | two thirds of A | $\frac{2}{3}A$ |
+
+      **<<逆推法/Working backwards>> (AMC 8 power tool!)**
+
+      Some problems are easier starting from the result. Especially useful for:
+      - Finding the initial value after a sequence of operations
+      - Plugging answer choices back in to verify
+
+      **Example**: A number is doubled, then 5 is added, giving 21. Find the number.
+      Forward: let $x$, $2x + 5 = 21$, $x = 8$.
+      Backward: $21 \xrightarrow{-5} 16 \xrightarrow{\div 2} 8$. Same answer, faster.
+
+      **<<代入验证法/Estimate-then-verify>> (multiple-choice only)**
+
+      AMC 8 is multiple choice — the answer is among A–E.
+      If setting up an equation is too complex:
+      1. **Estimate the range**: rough order-of-magnitude guess
+      2. **Plug in choices**: test each option against the problem conditions
+      3. **Eliminate**: remove obviously wrong options first
+
+      **Example**: If the equation is hard to solve but the answer is an integer among 5, 9, 12, 15, 20 — just test each one.
+
+      **Common modeling mistakes**
+
+      - '"A is 5 more than B" written as $A + 5 = B$ (reversed! should be $A = B + 5$)'
+      - 'Forgetting to verify: the solved $x$ might violate real constraints (negative, non-integer)'
+      - 'Using too many variables: if one variable can express everything, don''t use two'
+    notes:
+      - '建模四步法：读题画图 → 设未知数 → 列方程 → 解方程验证'
+      - '"A 比 B 多"→ $A = B + \text{差}$，主语在等号左边'
+      - '逆推法特别适合选择题——从答案出发，看哪个满足条件'
+      - '代入验证法是 AMC 8 的效率利器：先估算，再代入最可能的选项'
+    notesEn:
+      - 'Four steps: read & draw → define variables → write equations → solve & verify'
+      - '"A is more than B" → $A = B + \text{difference}$; the subject goes on the left of $=$'
+      - 'Working backwards is perfect for multiple choice — start from each answer, check which fits'
+      - 'Estimate-then-verify is an AMC 8 efficiency weapon: estimate first, then test the likeliest choice'
+
+examples:
+  - type: 1
+    source: "AMC 8 2016 #4"
+    title: 速率对比——Cheenu 跑步与散步
+    titleEn: Rate Comparison — Cheenu Running vs. Walking
+    question: |
+      小时候，Cheenu 可以在 $3$ 小时 $30$ 分钟内跑完 $15$ 英里。
+      现在年纪大了，他可以在 $4$ 小时内走完 $10$ 英里。
+      现在每英里比小时候多花多少分钟？
+
+      (A) 6 &emsp; (B) 10 &emsp; (C) 15 &emsp; (D) 18 &emsp; (E) 30
+    questionEn: |
+      When he was a boy, Cheenu could run $15$ miles in $3$ hours and $30$ minutes.
+      As an old man, he can now walk $10$ miles in $4$ hours.
+      How many minutes longer per mile does it take him now compared to when he was a boy?
+
+      (A) 6 &emsp; (B) 10 &emsp; (C) 15 &emsp; (D) 18 &emsp; (E) 30
+    steps:
+      - '小时候：$15$ 英里用 $3$ 小时 $30$ 分钟 $= 210$ 分钟。每英里 $= \frac{210}{15} = 14$ 分钟/英里'
+      - '现在：$10$ 英里用 $4$ 小时 $= 240$ 分钟。每英里 $= \frac{240}{10} = 24$ 分钟/英里'
+      - '差值 $= 24 - 14 = \mathbf{10}$ 分钟/英里'
+    stepsEn:
+      - 'As a boy: 15 miles in 3 hr 30 min $= 210$ min. Per mile $= \frac{210}{15} = 14$ min/mi'
+      - 'As an old man: 10 miles in 4 hr $= 240$ min. Per mile $= \frac{240}{10} = 24$ min/mi'
+      - 'Difference $= 24 - 14 = \mathbf{10}$ min/mi'
+    answer: '(B) 10'
+    answerEn: '(B) 10'
+
+  - type: 2
+    source: "AMC 8 2019 #16"
+    title: 平均速度建模——强哥开车
+    titleEn: Average Speed Modeling — Qiang Drives
+    question: |
+      Qiang 以 $30$ 英里/小时的速度开了 $15$ 英里到达叔叔家的高速路入口。
+      之后他以 $55$ 英里/小时的速度继续行驶了 $d$ 英里。
+      如果全程的平均速度恰好是 $50$ 英里/小时，则 $d$ 等于多少？
+
+      (A) 45 &emsp; (B) 62 &emsp; (C) 90 &emsp; (D) 110 &emsp; (E) 135
+    questionEn: |
+      Qiang drives $15$ miles at an average speed of $30$ miles per hour.
+      He then drives $d$ miles at $55$ miles per hour.
+      If his overall average speed for the entire trip is $50$ miles per hour, what is $d$?
+
+      (A) 45 &emsp; (B) 62 &emsp; (C) 90 &emsp; (D) 110 &emsp; (E) 135
+    steps:
+      - '第一段：$15$ 英里，速度 $30$ mph，时间 $= \frac{15}{30} = 0.5$ 小时'
+      - '第二段：$d$ 英里，速度 $55$ mph，时间 $= \frac{d}{55}$ 小时'
+      - '平均速度 $= \frac{\text{总路程}}{\text{总时间}}$，代入：$\frac{15 + d}{0.5 + \frac{d}{55}} = 50$'
+      - '两边交叉相乘：$15 + d = 50 \times (0.5 + \frac{d}{55}) = 25 + \frac{50d}{55} = 25 + \frac{10d}{11}$'
+      - '$15 + d - \frac{10d}{11} = 25$'
+      - '$d - \frac{10d}{11} = 10$，即 $\frac{d}{11} = 10$'
+      - '$d = \mathbf{110}$'
+      - '验证：总路程 $= 15 + 110 = 125$ 英里，总时间 $= 0.5 + \frac{110}{55} = 0.5 + 2 = 2.5$ 小时。平均速度 $= \frac{125}{2.5} = 50$ mph ✓'
+    stepsEn:
+      - 'Leg 1: 15 miles at 30 mph → time $= \frac{15}{30} = 0.5$ hr'
+      - 'Leg 2: $d$ miles at 55 mph → time $= \frac{d}{55}$ hr'
+      - 'Average speed $= \frac{\text{total distance}}{\text{total time}}$: $\frac{15+d}{0.5+\frac{d}{55}} = 50$'
+      - 'Cross-multiply: $15+d = 50(0.5 + \frac{d}{55}) = 25 + \frac{10d}{11}$'
+      - '$15 + d - \frac{10d}{11} = 25$'
+      - '$d - \frac{10d}{11} = 10$, so $\frac{d}{11} = 10$'
+      - '$d = \mathbf{110}$'
+      - 'Check: total distance $= 125$ mi, total time $= 2.5$ hr. Average $= \frac{125}{2.5} = 50$ mph ✓'
+    answer: '(D) 110'
+    answerEn: '(D) 110'
+
+  - type: 3
+    source: "AMC 8 2019 #8"
+    title: 连续百分数——Gilda 的弹珠
+    titleEn: Successive Percents — Gilda's Marbles
+    question: |
+      Gilda 有一袋弹珠。她先给了 Pedro $20\%$，然后把剩余的 $10\%$ 给了 Ebony，
+      最后把当前剩余的 $25\%$ 给了 Jimmy。Gilda 最终还剩原来的百分之多少？
+
+      (A) 20 &emsp; (B) $33\frac{1}{3}$ &emsp; (C) 38 &emsp; (D) 45 &emsp; (E) 54
+    questionEn: |
+      Gilda has a bag of marbles. She gives $20\%$ of them to Pedro. Then she gives $10\%$ of what is left to Ebony.
+      Then she gives $25\%$ of what is now left to Jimmy. What percentage of her original marbles does Gilda have left?
+
+      (A) 20 &emsp; (B) $33\frac{1}{3}$ &emsp; (C) 38 &emsp; (D) 45 &emsp; (E) 54
+    steps:
+      - '每次"给出 $p\%$"就等于"保留 $(100-p)\%$"，用逐步乘法计算保留比例'
+      - '给 Pedro $20\%$ 后，剩余 $= 100\% \times 80\% = 80\%$'
+      - '给 Ebony 剩余的 $10\%$ 后，剩余 $= 80\% \times 90\% = 72\%$'
+      - '给 Jimmy 剩余的 $25\%$ 后，剩余 $= 72\% \times 75\% = \mathbf{54\%}$'
+      - '注意：不能直接算 $20\% + 10\% + 25\% = 55\%$，因为每次的基数不同！'
+    stepsEn:
+      - 'Each "give $p\%$" means "keep $(100-p)\%$" — compute the retained fraction step by step'
+      - 'After Pedro ($20\%$ given): remaining $= 100\% \times 80\% = 80\%$'
+      - 'After Ebony ($10\%$ of remainder given): remaining $= 80\% \times 90\% = 72\%$'
+      - 'After Jimmy ($25\%$ of remainder given): remaining $= 72\% \times 75\% = \mathbf{54\%}$'
+      - 'Caution: you CANNOT simply add $20\% + 10\% + 25\% = 55\%$ — the base changes each time!'
+    answer: '(E) 54'
+    answerEn: '(E) 54'
+
+  - type: 4
+    source: "AMC 8 2020 #13"
+    title: 比例建模——Jamal 的袜子
+    titleEn: Proportion Modeling — Jamal's Socks
+    question: |
+      Jamal 的抽屉里有 $6$ 只绿袜子、$18$ 只紫袜子和 $12$ 只橙袜子。
+      他又往抽屉里加了一些紫袜子后，随机取出一只紫袜子的概率变为 $60\%$。
+      他加了多少只紫袜子？
+
+      (A) 6 &emsp; (B) 9 &emsp; (C) 12 &emsp; (D) 18 &emsp; (E) 24
+    questionEn: |
+      Jamal has $6$ green, $18$ purple, and $12$ orange socks in a drawer.
+      After adding some purple socks, the probability of randomly choosing a purple sock becomes $60\%$.
+      How many purple socks did he add?
+
+      (A) 6 &emsp; (B) 9 &emsp; (C) 12 &emsp; (D) 18 &emsp; (E) 24
+    steps:
+      - '原来共有 $6 + 18 + 12 = 36$ 只袜子'
+      - '设加了 $x$ 只紫袜子。加入后紫袜子总数 $= 18 + x$，袜子总数 $= 36 + x$'
+      - '概率条件：$\frac{18 + x}{36 + x} = \frac{3}{5}$（$60\% = \frac{3}{5}$）'
+      - '交叉相乘：$5(18 + x) = 3(36 + x)$'
+      - '$90 + 5x = 108 + 3x$'
+      - '$2x = 18$，$x = \mathbf{9}$'
+      - '验证：$18 + 9 = 27$ 只紫袜子，总共 $36 + 9 = 45$ 只。$\frac{27}{45} = \frac{3}{5} = 60\%$ ✓'
+    stepsEn:
+      - 'Originally $6 + 18 + 12 = 36$ socks total'
+      - 'Let $x$ = purple socks added. New purple $= 18 + x$, new total $= 36 + x$'
+      - 'Probability condition: $\frac{18+x}{36+x} = \frac{3}{5}$ (since $60\% = \frac{3}{5}$)'
+      - 'Cross-multiply: $5(18+x) = 3(36+x)$'
+      - '$90 + 5x = 108 + 3x$'
+      - '$2x = 18$, so $x = \mathbf{9}$'
+      - 'Check: $27$ purple out of $45$ total $= \frac{27}{45} = \frac{3}{5} = 60\%$ ✓'
+    answer: '(B) 9'
+    answerEn: '(B) 9'
+
+exercises:
+  timeGuide:
+    total: 约 45 分钟
+    sections:
+      - range: "1–4"
+        time: 行程问题（约 12 分钟）
+      - range: "5–7"
+        time: 比例与百分数（约 10 分钟）
+      - range: "8–9"
+        time: 工程与建模（约 10 分钟）
+      - range: "10–12"
+        time: 综合应用（约 13 分钟）
+  scaffold:
+    - title: '铺垫：速度公式热身'
+      titleEn: 'Warm-up: Speed Formula'
+      question: '小明骑车 30 分钟走了 6 公里。他的速度是多少公里/小时？'
+      questionEn: 'Xiao Ming cycled 6 km in 30 minutes. What is his speed in km/h?'
+      hint: '30分钟 = 0.5小时，速度 = 距离 ÷ 时间'
+      hintEn: '30 min = 0.5 hr, speed = distance ÷ time'
+      answer: '$v = 6 \div 0.5 = 12$ 公里/小时'
+      answerEn: '$v = 6 \div 0.5 = 12$ km/h'
+    - title: '铺垫：百分数变化'
+      titleEn: 'Warm-up: Percent Change'
+      question: '一件衣服原价 100 元，打八折后是多少元？再涨价 20% 后呢？回到原价了吗？'
+      questionEn: 'A shirt costs ¥100. After 20% off, the price is? Then 20% increase? Is it back to ¥100?'
+      hint: '打八折 = ×0.8 = 80元。再涨20% = 80×1.2 = ?'
+      hintEn: '20% off = ×0.8 = ¥80. Then 20% up = 80×1.2 = ?'
+      answer: '80×1.2=96元，不是100元！先降再升同样的百分比，结果会变小。'
+      answerEn: '80×1.2=¥96, NOT ¥100! Decreasing then increasing by the same percentage does not return to the original.'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #16"
+      section: 行程问题
+      question: |
+        Annie 和 Bonnie 从同一点出发，沿 $400$ 米环形跑道同方向跑步。
+        Annie 的速度比 Bonnie 快 $25\%$。
+        当 Annie 第一次追上 Bonnie（即从身后超过她）时，Annie 跑了几圈？
+      questionEn: |
+        Annie and Bonnie run laps on a $400$-meter oval track, starting at the same point and going in the same direction.
+        Annie runs $25\%$ faster than Bonnie.
+        When Annie first passes Bonnie, how many laps has Annie completed?
+      choices:
+        - label: A
+          content: '3'
+        - label: B
+          content: '3.5'
+        - label: C
+          content: '4'
+        - label: D
+          content: '5'
+        - label: E
+          content: '25'
+      correctValue: D
+      answer: '(D) 5'
+      answerEn: '(D) 5'
+      explanation: |
+        设 Bonnie 的速度为 $v$，则 Annie 的速度为 $1.25v$。
+        Annie 追上 Bonnie 时，Annie 比 Bonnie 多跑了一整圈（$400$ 米）。
+        相对速度 $= 1.25v - v = 0.25v$。
+        追上时间 $= \frac{400}{0.25v} = \frac{1600}{v}$。
+        Annie 跑的路程 $= 1.25v \times \frac{1600}{v} = 2000$ 米 $= 5$ 圈。
+      explanationEn: |
+        Let Bonnie's speed be $v$; Annie's is $1.25v$.
+        Annie passes Bonnie when she's run exactly one extra lap ($400$ m).
+        Relative speed $= 1.25v - v = 0.25v$.
+        Catch-up time $= \frac{400}{0.25v} = \frac{1600}{v}$.
+        Annie's distance $= 1.25v \times \frac{1600}{v} = 2000$ m $= 5$ laps.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #17"
+      section: 行程问题
+      question: |
+        Bella 和 Ella 住在相距 $2$ 英里的地方（$1$ 英里 $= 5280$ 英尺）。
+        Bella 步行、Ella 骑车，同时出发相向而行。Ella 的速度是 Bella 的 $5$ 倍。
+        Bella 每步 $2.5$ 英尺。当她们相遇时，Bella 走了多少步？
+      questionEn: |
+        Bella begins to walk from her house toward Ella's house, which is $2$ miles away ($1$ mile $= 5280$ feet).
+        At the same time, Ella begins to ride her bicycle toward Bella's house.
+        Ella rides $5$ times as fast as Bella walks, and Bella's steps are each $2.5$ feet long.
+        How many steps will Bella have taken when they meet?
+      choices:
+        - label: A
+          content: '704'
+        - label: B
+          content: '845'
+        - label: C
+          content: '1056'
+        - label: D
+          content: '1760'
+        - label: E
+          content: '3520'
+      correctValue: A
+      answer: '(A) 704'
+      answerEn: '(A) 704'
+      explanation: |
+        总距离 $= 2 \times 5280 = 10560$ 英尺。
+        设 Bella 速度为 $v$，Ella 速度为 $5v$。相向而行，合速度 $= 6v$。
+        相遇时间 $= \frac{10560}{6v}$。
+        Bella 走的距离 $= v \times \frac{10560}{6v} = \frac{10560}{6} = 1760$ 英尺。
+        步数 $= \frac{1760}{2.5} = \mathbf{704}$ 步。
+      explanationEn: |
+        Total distance $= 2 \times 5280 = 10560$ ft.
+        Let Bella's speed $= v$, Ella's $= 5v$. Combined speed $= 6v$.
+        Meeting time $= \frac{10560}{6v}$.
+        Bella walks $= v \times \frac{10560}{6v} = \frac{10560}{6} = 1760$ ft.
+        Steps $= \frac{1760}{2.5} = \mathbf{704}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #12"
+      section: 行程问题
+      question: |
+        中午 $12{:}00$，汽车时钟和手表都显示正确时间。
+        汽车时钟走快了——实际每过 $30$ 分钟，它显示过了 $35$ 分钟。
+        当汽车时钟显示晚上 $7{:}00$ 时，真实时间是几点？
+      questionEn: |
+        At noon, both a car clock and a watch show the correct time.
+        The car clock gains time — for every 30 real minutes, it shows 35 minutes have passed.
+        When the car clock reads $7{:}00$ PM, what is the actual time?
+      choices:
+        - label: A
+          content: '$5{:}30$ PM'
+        - label: B
+          content: '$6{:}00$ PM'
+        - label: C
+          content: '$6{:}30$ PM'
+        - label: D
+          content: '$6{:}36$ PM'
+        - label: E
+          content: '$6{:}42$ PM'
+      correctValue: B
+      answer: '(B) $6{:}00$ PM'
+      answerEn: '(B) $6{:}00$ PM'
+      explanation: |
+        汽车时钟与真实时间的比例：$35 : 30 = 7 : 6$。
+        即汽车时钟每走 $7$ 分钟，实际只过了 $6$ 分钟。
+        汽车从 $12{:}00$ 到 $7{:}00$，汽车时钟走了 $7$ 小时 $= 420$ 分钟。
+        真实时间 $= 420 \times \frac{6}{7} = 360$ 分钟 $= 6$ 小时。
+        真实时间：$12{:}00 + 6$ 小时 $= \mathbf{6{:}00}$ PM。
+      explanationEn: |
+        Car-clock-to-real-time ratio: $35 : 30 = 7 : 6$.
+        Every 7 car-clock minutes = 6 real minutes.
+        Car clock elapsed from 12:00 to 7:00 PM = 7 hr = 420 car-clock minutes.
+        Real elapsed time $= 420 \times \frac{6}{7} = 360$ min $= 6$ hr.
+        Real time: $12{:}00 + 6$ hr $= \mathbf{6{:}00}$ PM.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #1"
+      section: 行程问题
+      question: |
+        Luka 做柠檬水，水量是糖量的 $4$ 倍，糖量是柠檬汁的 $2$ 倍。
+        如果他用了 $3$ 杯柠檬汁，需要多少杯水？
+      questionEn: |
+        Luka is making lemonade. He needs $4$ times as much water as sugar and twice as much sugar as lemon juice.
+        He uses $3$ cups of lemon juice. How many cups of water does he need?
+      choices:
+        - label: A
+          content: '6'
+        - label: B
+          content: '8'
+        - label: C
+          content: '12'
+        - label: D
+          content: '18'
+        - label: E
+          content: '24'
+      correctValue: E
+      answer: '(E) 24'
+      answerEn: '(E) 24'
+      explanation: |
+        柠檬汁 $= 3$ 杯。糖 $= 2 \times 3 = 6$ 杯。水 $= 4 \times 6 = \mathbf{24}$ 杯。
+        本题考查逐步比例关系：柠檬汁 → 糖 → 水，不要跳步直接算。
+      explanationEn: |
+        Lemon juice $= 3$ cups. Sugar $= 2 \times 3 = 6$ cups. Water $= 4 \times 6 = \mathbf{24}$ cups.
+        This tests chained ratio relationships: juice → sugar → water. Don't skip steps.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #15"
+      section: 比例与百分数
+      question: |
+        如果 $x$ 的 $15\%$ 等于 $y$ 的 $20\%$，那么 $x$ 是 $y$ 的百分之多少？
+      questionEn: |
+        Suppose $15\%$ of $x$ equals $20\%$ of $y$. What percent of $x$ is $y$?
+      choices:
+        - label: A
+          content: '5'
+        - label: B
+          content: '35'
+        - label: C
+          content: '75'
+        - label: D
+          content: '133'
+        - label: E
+          content: '300'
+      correctValue: C
+      answer: '(C) 75'
+      answerEn: '(C) 75'
+      explanation: |
+        $0.15x = 0.20y$。
+        $\frac{y}{x} = \frac{0.15}{0.20} = \frac{15}{20} = \frac{3}{4} = 75\%$。
+        所以 $y$ 是 $x$ 的 $\mathbf{75\%}$。
+      explanationEn: |
+        $0.15x = 0.20y$.
+        $\frac{y}{x} = \frac{0.15}{0.20} = \frac{3}{4} = 75\%$.
+        So $y$ is $\mathbf{75\%}$ of $x$.
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #22"
+      section: 比例与百分数
+      question: |
+        一家商店先将某件商品的价格提高了 $p\%$，然后又降价 $p\%$。
+        最终价格是原价的 $84\%$。求 $p$ 的值。
+      questionEn: |
+        A store increased the price of an item by $p\%$ and then decreased the new price by $p\%$.
+        The final price was $84\%$ of the original. What is $p$?
+      choices:
+        - label: A
+          content: '8'
+        - label: B
+          content: '16'
+        - label: C
+          content: '20'
+        - label: D
+          content: '36'
+        - label: E
+          content: '40'
+      correctValue: E
+      answer: '(E) 40'
+      answerEn: '(E) 40'
+      explanation: |
+        设原价为 $1$。涨 $p\%$ 后为 $(1 + \frac{p}{100})$，再降 $p\%$ 后为：
+        $(1 + \frac{p}{100})(1 - \frac{p}{100}) = 1 - \frac{p^2}{10000} = 0.84$。
+        $\frac{p^2}{10000} = 0.16$。
+        $p^2 = 1600$。
+        $p = \mathbf{40}$。
+
+        💡 **另一种方法——代入选项逐个试：**
+        原价设为 100。逐个试选项：
+        A) $p=8$：$100 \times 1.08 \times 0.92 = 99.36$（不是 84）✗
+        B) $p=16$：$100 \times 1.16 \times 0.84 = 97.44$ ✗
+        C) $p=20$：$100 \times 1.2 \times 0.8 = 96$ ✗
+        D) $p=36$：$100 \times 1.36 \times 0.64 = 87.04$ ✗
+        E) $p=40$：$100 \times 1.4 \times 0.6 = 84$ ✓ 答案就是 40！
+        AMC 8 是选择题——直接试选项有时比推公式更快！
+      explanationEn: |
+        Let original price $= 1$. After $+p\%$: $(1+\frac{p}{100})$. After $-p\%$:
+        $(1+\frac{p}{100})(1-\frac{p}{100}) = 1 - \frac{p^2}{10000} = 0.84$.
+        $\frac{p^2}{10000} = 0.16$.
+        $p^2 = 1600$.
+        $p = \mathbf{40}$.
+
+        💡 **Alternative — Plug In Each Choice:**
+        Let original price $= 100$. Try each option:
+        A) $p=8$: $100 \times 1.08 \times 0.92 = 99.36$ (not 84) ✗
+        B) $p=16$: $100 \times 1.16 \times 0.84 = 97.44$ ✗
+        C) $p=20$: $100 \times 1.2 \times 0.8 = 96$ ✗
+        D) $p=36$: $100 \times 1.36 \times 0.64 = 87.04$ ✗
+        E) $p=40$: $100 \times 1.4 \times 0.6 = 84$ ✓ Got it!
+        On a multiple-choice test, plugging in choices can be faster than deriving a formula!
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #5"
+      section: 比例与百分数
+      question: |
+        一个水壶装了 $\frac{3}{4}$ 壶水，平均分给 $5$ 个杯子。
+        每个杯子里有整壶水的百分之多少？
+      questionEn: |
+        Three-fourths of a pitcher is filled with water. The water is poured equally into $5$ cups.
+        What percent of the full pitcher does each cup contain?
+      choices:
+        - label: A
+          content: '5'
+        - label: B
+          content: '10'
+        - label: C
+          content: '15'
+        - label: D
+          content: '20'
+        - label: E
+          content: '25'
+      correctValue: C
+      answer: '(C) 15'
+      answerEn: '(C) 15'
+      explanation: |
+        每杯水量 $= \frac{3/4}{5} = \frac{3}{20} = 0.15 = \mathbf{15\%}$。
+      explanationEn: |
+        Each cup $= \frac{3/4}{5} = \frac{3}{20} = 0.15 = \mathbf{15\%}$.
+
+    - number: 8
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #12"
+      section: 工程与建模
+      question: |
+        Rohan 有 $90$ 条孔雀鱼分在 $4$ 个鱼缸中。
+        第二个鱼缸比第一个多 $1$ 条，第三个比第二个多 $2$ 条，第四个比第三个多 $3$ 条。
+        第四个鱼缸有多少条鱼？
+      questionEn: |
+        Rohan has $90$ guppies in $4$ fish tanks. The second tank has $1$ more than the first,
+        the third has $2$ more than the second, and the fourth has $3$ more than the third.
+        How many guppies are in the fourth tank?
+      choices:
+        - label: A
+          content: '20'
+        - label: B
+          content: '21'
+        - label: C
+          content: '23'
+        - label: D
+          content: '24'
+        - label: E
+          content: '26'
+      correctValue: E
+      answer: '(E) 26'
+      answerEn: '(E) 26'
+      explanation: |
+        设第一个鱼缸有 $x$ 条。则：
+        第一个 $= x$，第二个 $= x+1$，第三个 $= (x+1)+2 = x+3$，第四个 $= (x+3)+3 = x+6$。
+        总和 $= x + (x+1) + (x+3) + (x+6) = 4x + 10 = 90$。
+        $4x = 80$，$x = 20$。
+        第四个鱼缸 $= 20 + 6 = \mathbf{26}$。
+
+        💡 **另一种方法——代入选项验证：**
+        如果第四个鱼缸有 26 条，则第三个 $= 26-3=23$，第二个 $= 23-2=21$，第一个 $= 21-1=20$。
+        验算：$20+21+23+26=90$ ✓。
+        也可以从选项中间（如 D=24）开始试：第三 21，第二 19，第一 18，总和 $82 \neq 90$，太少 → 试更大的选项。
+      explanationEn: |
+        Let tank 1 have $x$ guppies. Then:
+        Tank 1 $= x$, Tank 2 $= x+1$, Tank 3 $= x+3$, Tank 4 $= x+6$.
+        Sum $= 4x + 10 = 90$, so $x = 20$.
+        Tank 4 $= 20 + 6 = \mathbf{26}$.
+
+        💡 **Alternative — Plug In Choices:**
+        If tank 4 has 26, then tank 3 $= 26-3=23$, tank 2 $= 23-2=21$, tank 1 $= 21-1=20$.
+        Check: $20+21+23+26=90$ ✓.
+        Or start from the middle choice (D=24): tank 3=21, tank 2=19, tank 1=18, sum $=82 \neq 90$, too small → try larger.
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2023 #5"
+      section: 工程与建模
+      question: |
+        一个湖里有 $250$ 条鳟鱼。生物学家随机捕捞了 $180$ 条鱼，其中有 $30$ 条鳟鱼。
+        据此估算，湖里总共有多少条鱼？
+      questionEn: |
+        A lake contains $250$ trout. A biologist nets a random sample of $180$ fish, finding $30$ of them are trout.
+        Based on this sample, estimate the total number of fish in the lake.
+      choices:
+        - label: A
+          content: '1250'
+        - label: B
+          content: '1500'
+        - label: C
+          content: '1800'
+        - label: D
+          content: '2000'
+        - label: E
+          content: '2500'
+      correctValue: B
+      answer: '(B) 1500'
+      answerEn: '(B) 1500'
+      explanation: |
+        用<<比例方程/proportion>>：样本中鳟鱼占比 $=$ 总体中鳟鱼占比。
+        $\frac{30}{180} = \frac{250}{\text{总鱼数}}$。
+        总鱼数 $= \frac{250 \times 180}{30} = \mathbf{1500}$。
+      explanationEn: |
+        Set up a <<比例方程/proportion>>: sample trout ratio = lake trout ratio.
+        $\frac{30}{180} = \frac{250}{\text{total}}$.
+        Total $= \frac{250 \times 180}{30} = \mathbf{1500}$.
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #10"
+      section: 综合应用
+      question: |
+        $1980$ 年 $1$ 月，大气中 CO₂ 浓度为 $338$ ppm。
+        此后每年以 $1.515$ ppm 的速度稳定增长。
+        预计 $2030$ 年 $1$ 月的 CO₂ 浓度最接近下列哪个值？
+      questionEn: |
+        In January 1980, the atmospheric CO₂ concentration was $338$ ppm.
+        It has been increasing at a steady rate of $1.515$ ppm per year.
+        What value is the expected CO₂ concentration in January 2030 closest to?
+      choices:
+        - label: A
+          content: '399'
+        - label: B
+          content: '414'
+        - label: C
+          content: '420'
+        - label: D
+          content: '444'
+        - label: E
+          content: '459'
+      correctValue: B
+      answer: '(B) 414'
+      answerEn: '(B) 414'
+      explanation: |
+        从 $1980$ 到 $2030$ 共 $50$ 年。
+        增长量 $= 50 \times 1.515 = 75.75$ ppm。
+        预计值 $= 338 + 75.75 = 413.75 \approx \mathbf{414}$ ppm。
+      explanationEn: |
+        From 1980 to 2030: 50 years.
+        Increase $= 50 \times 1.515 = 75.75$ ppm.
+        Expected $= 338 + 75.75 = 413.75 \approx \mathbf{414}$ ppm.
+
+    - number: 11
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #8"
+      section: 综合应用
+      question: |
+        Ricardo 有 $2020$ 枚硬币，全部由 $1$ 美分和 $5$ 美分硬币组成，且每种至少一枚。
+        他可能拥有的最大金额与最小金额之差是多少美分？
+      questionEn: |
+        Ricardo has $2020$ coins, all of which are pennies ($1$¢) and nickels ($5$¢), with at least one of each.
+        What is the difference in cents between the greatest and least amounts of money he can have?
+      choices:
+        - label: A
+          content: '8062'
+        - label: B
+          content: '8068'
+        - label: C
+          content: '8072'
+        - label: D
+          content: '8076'
+        - label: E
+          content: '8082'
+      correctValue: C
+      answer: '(C) 8072'
+      answerEn: '(C) 8072'
+      explanation: |
+        最大金额：尽量多用 $5$ 美分。$2019$ 枚 $5$¢ $+ 1$ 枚 $1$¢ $= 2019 \times 5 + 1 = 10096$¢。
+        最小金额：尽量多用 $1$ 美分。$2019$ 枚 $1$¢ $+ 1$ 枚 $5$¢ $= 2019 + 5 = 2024$¢。
+        差 $= 10096 - 2024 = \mathbf{8072}$¢。
+      explanationEn: |
+        Maximum: use as many nickels as possible. $2019 \times 5 + 1 = 10096$¢.
+        Minimum: use as many pennies as possible. $2019 + 5 = 2024$¢.
+        Difference $= 10096 - 2024 = \mathbf{8072}$¢.
+
+    - number: 12
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #2"
+      section: 综合应用
+      question: |
+        四个朋友分别赚了 $\$15$、$\$20$、$\$25$、$\$40$。
+        他们决定把钱平均分配。赚 $\$40$ 的那个人要给出多少钱？
+      questionEn: |
+        Four friends do yard work and earn $\$15$, $\$20$, $\$25$, and $\$40$ respectively.
+        They decide to split the total amount equally. How much does the friend who earned $\$40$ give to the others?
+      choices:
+        - label: A
+          content: '$\$5$'
+        - label: B
+          content: '$\$10$'
+        - label: C
+          content: '$\$15$'
+        - label: D
+          content: '$\$20$'
+        - label: E
+          content: '$\$25$'
+      correctValue: C
+      answer: '(C) $\$15$'
+      answerEn: '(C) $\$15$'
+      explanation: |
+        总收入 $= 15 + 20 + 25 + 40 = 100$ 美元。平均 $= \frac{100}{4} = 25$ 美元。
+        赚 $\$40$ 的人需要给出 $40 - 25 = \mathbf{\$15}$。
+      explanationEn: |
+        Total $= 15 + 20 + 25 + 40 = 100$. Equal share $= \frac{100}{4} = 25$.
+        The $\$40$ earner gives $40 - 25 = \mathbf{\$15}$.
+
+summary:
+  - '行程问题核心：$d = r \times t$，平均速度 $= \frac{\text{总路程}}{\text{总时间}}$（不是速度的平均值！）'
+  - '相对速度：相向 $r_1 + r_2$，同向 $|r_1 - r_2|$，是解决相遇和追及问题的关键'
+  - '工程问题核心：工作率为倒数，合作效率 $= \frac{1}{A} + \frac{1}{B} = \frac{1}{T}$'
+  - '连续百分数变化必须逐步乘，不能直接加减百分数（基数会变！）'
+  - '先涨 $p\%$ 再降 $p\%$，结果恒小于原值，减少量为 $\frac{p^2}{10000}$'
+  - '代数建模四步法：读题画图 → 设未知数 → 列方程 → 解方程验证'
+  - 'AMC 8 效率策略：逆推法和代入验证法，善用选择题的五个选项'
+summaryEn:
+  - 'Rate problems: $d = rt$; average speed $= \frac{\text{total distance}}{\text{total time}}$ (NOT the average of speeds!)'
+  - 'Relative speed: toward each other $r_1+r_2$, same direction $|r_1-r_2|$ — key to meeting and chase problems'
+  - 'Work rate: rates are reciprocals; combined rate $= \frac{1}{A}+\frac{1}{B}=\frac{1}{T}$'
+  - 'Successive percent changes must be multiplied step by step — never add/subtract percentages (the base changes!)'
+  - 'Up $p\%$ then down $p\%$ always yields less than the original, by $\frac{p^2}{10000}$'
+  - 'Algebraic modeling: read & draw → define variables → write equations → solve & verify'
+  - 'AMC 8 efficiency: working backwards and plugging in answer choices — leverage the five options'
+
+examPrep:
+  intro: 以下为 AMC 8 真题精选，难度高于练习题，综合考查应用题建模能力。
+  introEn: The following are selected AMC 8 problems at a higher difficulty level, testing comprehensive word-problem modeling skills.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #16"
+      section: 综合
+      question: |
+        Qiang 以 $30$ mph 开了 $15$ 英里，之后以 $55$ mph 开了 $d$ 英里。
+        全程平均速度恰好 $50$ mph，求 $d$。
+      questionEn: |
+        Qiang drives $15$ miles at $30$ mph, then $d$ miles at $55$ mph.
+        His overall average speed is exactly $50$ mph. Find $d$.
+      choices:
+        - label: A
+          content: '45'
+        - label: B
+          content: '62'
+        - label: C
+          content: '90'
+        - label: D
+          content: '110'
+        - label: E
+          content: '135'
+      correctValue: D
+      answer: '(D) 110'
+      answerEn: '(D) 110'
+      explanation: |
+        第一段时间 $= \frac{15}{30} = 0.5$ 小时。
+        平均速度方程：$\frac{15 + d}{0.5 + \frac{d}{55}} = 50$。
+        $15 + d = 25 + \frac{10d}{11}$。
+        $\frac{d}{11} = 10$，$d = \mathbf{110}$。
+        验证：$\frac{125}{2.5} = 50$ ✓。
+      explanationEn: |
+        Leg 1 time $= \frac{15}{30} = 0.5$ hr.
+        Average speed equation: $\frac{15+d}{0.5+\frac{d}{55}} = 50$.
+        $15+d = 25 + \frac{10d}{11}$.
+        $\frac{d}{11} = 10$, so $d = \mathbf{110}$.
+        Check: $\frac{125}{2.5} = 50$ ✓.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #22"
+      section: 综合
+      question: |
+        一家商店先将商品价格提高 $p\%$，然后降价 $p\%$。
+        最终价格是原价的 $84\%$。求 $p$。
+      questionEn: |
+        A store increases an item's price by $p\%$, then decreases the new price by $p\%$.
+        The final price is $84\%$ of the original. Find $p$.
+      choices:
+        - label: A
+          content: '8'
+        - label: B
+          content: '16'
+        - label: C
+          content: '20'
+        - label: D
+          content: '36'
+        - label: E
+          content: '40'
+      correctValue: E
+      answer: '(E) 40'
+      answerEn: '(E) 40'
+      explanation: |
+        $(1 + \frac{p}{100})(1 - \frac{p}{100}) = 1 - \frac{p^2}{10000} = 0.84$。
+        $\frac{p^2}{10000} = 0.16$，$p^2 = 1600$，$p = \mathbf{40}$。
+        验证：$1.4 \times 0.6 = 0.84$ ✓。
+      explanationEn: |
+        $(1+\frac{p}{100})(1-\frac{p}{100}) = 1 - \frac{p^2}{10000} = 0.84$.
+        $\frac{p^2}{10000} = 0.16$, $p^2 = 1600$, $p = \mathbf{40}$.
+        Check: $1.4 \times 0.6 = 0.84$ ✓.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #12"
+      section: 综合
+      question: |
+        汽车时钟每过 $30$ 分钟真实时间就快 $5$ 分钟（显示 $35$ 分钟）。
+        中午两个钟都准确。当汽车时钟显示 $7{:}00$ PM 时，实际几点？
+      questionEn: |
+        A car clock gains 5 minutes for every 30 real minutes (shows 35 min per 30 real min).
+        Both clocks agree at noon. When the car clock reads $7{:}00$ PM, what is the real time?
+      choices:
+        - label: A
+          content: '$5{:}30$ PM'
+        - label: B
+          content: '$6{:}00$ PM'
+        - label: C
+          content: '$6{:}30$ PM'
+        - label: D
+          content: '$6{:}36$ PM'
+        - label: E
+          content: '$6{:}42$ PM'
+      correctValue: B
+      answer: '(B) $6{:}00$ PM'
+      answerEn: '(B) $6{:}00$ PM'
+      explanation: |
+        汽车时钟：真实时间 $= 7 : 6$。
+        汽车从 $12{:}00$ 到 $7{:}00$，车钟走了 $420$ 分钟。
+        真实时间 $= 420 \times \frac{6}{7} = 360$ 分钟 $= 6$ 小时。
+        实际时间 $= \mathbf{6{:}00}$ PM。
+      explanationEn: |
+        Car-to-real ratio $= 7:6$.
+        Car clock: 12:00 to 7:00 PM $= 420$ car-minutes.
+        Real time $= 420 \times \frac{6}{7} = 360$ min $= 6$ hr.
+        Real time $= \mathbf{6{:}00}$ PM.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #16"
+      section: 综合
+      question: |
+        Annie 比 Bonnie 快 $25\%$，同向跑 $400$ 米环形跑道。
+        Annie 第一次追上 Bonnie 时跑了几圈？
+      questionEn: |
+        Annie runs $25\%$ faster than Bonnie on a $400$-meter track, same direction.
+        How many laps has Annie completed when she first passes Bonnie?
+      choices:
+        - label: A
+          content: '3'
+        - label: B
+          content: '3.5'
+        - label: C
+          content: '4'
+        - label: D
+          content: '5'
+        - label: E
+          content: '25'
+      correctValue: D
+      answer: '(D) 5'
+      answerEn: '(D) 5'
+      explanation: |
+        设 Bonnie 速度 $v$，Annie 速度 $1.25v$。相对速度 $= 0.25v$。
+        追上需多跑一圈：$\frac{400}{0.25v} = \frac{1600}{v}$ 的时间。
+        Annie 跑 $1.25v \times \frac{1600}{v} = 2000$ 米 $= \mathbf{5}$ 圈。
+      explanationEn: |
+        Bonnie speed $= v$, Annie $= 1.25v$. Relative speed $= 0.25v$.
+        Lapping requires $\frac{400}{0.25v} = \frac{1600}{v}$ time.
+        Annie runs $1.25v \times \frac{1600}{v} = 2000$ m $= \mathbf{5}$ laps.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #8"
+      section: 综合
+      question: |
+        Ricardo 有 $2020$ 枚硬币（$1$¢ 和 $5$¢ 各至少一枚）。
+        最大金额与最小金额之差是多少美分？
+      questionEn: |
+        Ricardo has $2020$ coins (pennies and nickels, at least one of each).
+        What is the difference in cents between the maximum and minimum possible amounts?
+      choices:
+        - label: A
+          content: '8062'
+        - label: B
+          content: '8068'
+        - label: C
+          content: '8072'
+        - label: D
+          content: '8076'
+        - label: E
+          content: '8082'
+      correctValue: C
+      answer: '(C) 8072'
+      answerEn: '(C) 8072'
+      explanation: |
+        最大：$2019 \times 5 + 1 = 10096$¢。最小：$2019 + 5 = 2024$¢。
+        差 $= 10096 - 2024 = \mathbf{8072}$¢。
+
+        **建模思路**：极端情况法——最大化时尽量多用大面值，最小化时尽量多用小面值。
+        约束"至少各一枚"决定了极端情况的边界。
+      explanationEn: |
+        Max: $2019 \times 5 + 1 = 10096$¢. Min: $2019 + 5 = 2024$¢.
+        Difference $= 10096 - 2024 = \mathbf{8072}$¢.
+
+        **Modeling insight**: extreme-case strategy — maximize by using large denominations, minimize by using small ones.
+        The "at least one of each" constraint sets the boundary.

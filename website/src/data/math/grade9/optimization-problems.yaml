@@ -1,0 +1,1382 @@
+title: 几何专题：最值问题
+titleEn: 'Geometry Special Topic: Optimization & Min/Max Problems'
+chapter: 11
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 约 4–5 课时，每课时 45 分钟
+estimatedTimeEn: '4–5 sessions, ~45 min each'
+targetAudience: 九年级自学生，已完成轴对称与二次函数，系统掌握几何与代数最值方法
+
+objectives:
+  - 理解<<将军饮马问题/General's Drinking Horse Problem>>的本质——利用<<轴对称/reflection>>将"折线最短"转化为"直线最短"
+  - 掌握<<反射法/reflection method>>求最短路径的一般步骤，能处理单次反射和双次反射
+  - 利用<<三角不等式/triangle inequality>>和反射法求解三角形周长最值问题
+  - 掌握<<配方法/completing the square>>求二次函数最值，理解其几何意义（抛物线顶点）
+  - 掌握<<均值不等式/AM-GM inequality>>及其使用条件（一正二定三相等），能用其求代数最值
+  - 能将几何最值问题转化为代数函数，综合运用几何与代数方法求解
+
+objectivesEn:
+  - 'Understand the essence of the <<将军饮马问题/General''s Drinking Horse Problem>>: use <<轴对称/reflection>> to convert "shortest broken path" into "shortest straight path"'
+  - 'Master the <<反射法/reflection method>> for shortest-path problems: single and double reflection'
+  - Use the <<三角不等式/triangle inequality>> and reflection to solve triangle perimeter optimization
+  - 'Master <<配方法/completing the square>> for quadratic optimization, understanding its geometric meaning (parabola vertex)'
+  - 'Master the <<均值不等式/AM-GM inequality>> and its three conditions (positive, constant product/sum, achievable equality)'
+  - Combine geometric and algebraic methods to solve optimization problems
+
+prerequisites:
+  title: 从轴对称与二次函数出发——认识最值问题
+  titleEn: Building on Reflection and Quadratic Functions — Meeting Optimization
+  intro: |
+    我们在八年级学习了<<轴对称/reflection>>变换——翻折后图形完全重合，对应点到对称轴等距。
+    在九年级学习了<<二次函数/quadratic function>> $y = ax^{2} + bx + c$ 的顶点与最值。
+    现在我们要把这两个强大的工具结合起来，系统性地解决一类经典问题：**最值问题**——在满足某些条件下，找到使距离、周长、面积等达到最大或最小的方案。
+  introEn: |
+    In Grade 8 we learned <<轴对称/reflection>> transformations — after flipping, figures coincide perfectly, and corresponding points are equidistant from the axis.
+    In Grade 9 we studied the vertex and extreme values of the <<二次函数/quadratic function>> $y = ax^{2} + bx + c$.
+    Now we combine these two powerful tools to systematically tackle a classic problem type: **optimization** — finding the arrangement that minimizes or maximizes distance, perimeter, area, etc., subject to given constraints.
+  items:
+    - name: 轴对称变换（八年级上）
+      nameEn: Reflection transformations (Grade 8, Semester 1)
+      detail: |
+        轴对称的核心性质：对应点连线被对称轴**垂直平分**。
+        因此，点 $A$ 关于直线 $l$ 的对称点 $A'$ 满足 $AA' \perp l$ 且 $l$ 平分 $AA'$。
+        对于对称轴上任意一点 $P$，都有 $PA = PA'$（等距性质）。
+      detailEn: |
+        Key property of reflection: the segment joining corresponding points is **perpendicularly bisected** by the axis.
+        So the reflection $A'$ of point $A$ across line $l$ satisfies $AA' \perp l$ and $l$ bisects $AA'$.
+        For any point $P$ on $l$, we have $PA = PA'$ (equidistance property).
+    - name: 三角不等式（八年级）
+      nameEn: Triangle inequality (Grade 8)
+      detail: |
+        三角形中任意两边之和大于第三边：$|PA| + |PB| \geq |AB|$，等号成立当且仅当 $P$ 在线段 $AB$ 上（即 $A$、$P$、$B$ 共线）。
+        这是"两点之间线段最短"的推广形式，也是几何最值问题的核心工具。
+      detailEn: |
+        In any triangle, the sum of two sides exceeds the third: $|PA| + |PB| \geq |AB|$, with equality if and only if $P$ lies on segment $AB$ (i.e., $A$, $P$, $B$ are collinear).
+        This generalizes "the shortest path between two points is a straight line" and is the core tool for geometric optimization.
+    - name: 二次函数的顶点与最值（九年级上）
+      nameEn: Vertex and extreme values of quadratic functions (Grade 9, Semester 1)
+      detail: |
+        $y = a(x - h)^{2} + k$：当 $a > 0$ 时，$x = h$ 处取得最小值 $k$；当 $a < 0$ 时，$x = h$ 处取得最大值 $k$。
+        配方法可以将一般式 $y = ax^{2} + bx + c$ 转化为顶点式，从而找到最值。
+      detailEn: |
+        $y = a(x - h)^{2} + k$: when $a > 0$, the minimum $k$ is attained at $x = h$; when $a < 0$, the maximum $k$ is attained at $x = h$.
+        Completing the square converts general form to vertex form, revealing the extreme value.
+  conclusion: |
+    轴对称给我们提供了"等距转换"的工具，三角不等式给我们提供了"最短路径"的判断准则，二次函数给我们提供了"代数最值"的求解方法。三者结合，就能系统地攻克各类最值问题。
+  conclusionEn: |
+    Reflection provides the "equidistance conversion" tool, the triangle inequality provides the "shortest path" criterion, and quadratic functions provide the "algebraic optimization" method. Together, they form a complete system for solving optimization problems.
+
+concepts:
+  - id: general-drinking-horse
+    title: <<将军饮马问题/General's Drinking Horse Problem>>
+    titleEn: The <<将军饮马问题/General's Drinking Horse Problem>>
+    handsOn: '🏠 动手试试：在一张纸上画一条直线代表"河边"，在同侧标两个点 A 和 B。把纸沿直线折叠，标出 A 的对称点 A′。用尺子连 A′B，交线于 P——这就是最短路径！用尺子量 AP+PB，和其他位置的点比较一下。'
+    handsOnEn: '🏠 Try this: draw a line on paper for the "river" and mark two points A and B on the same side. Fold the paper along the line to find A′ (the reflection of A). Connect A′B with a ruler — it crosses the line at P, the optimal point! Measure AP+PB and compare with other points.'
+    hasVisualization: true
+    content: |
+      **历史故事**
+
+      古代有一位将军，骑马从军营 $A$ 出发，要到河边 $l$ 让马饮水（到达河边某点 $P$），然后再赶回另一个营地 $B$。
+      将军希望**总行程 $AP + PB$ 最短**——他该在河边的哪个位置停下来？
+
+      **数学建模**
+
+      把问题抽象出来：点 $A$、$B$ 在直线 $l$ 的**同侧**，在直线 $l$ 上找一点 $P$，使得 $AP + PB$ 最小。
+
+      **直觉思考：为什么这个问题不平凡？**
+
+      如果 $A$、$B$ 在直线 $l$ 的**两侧**，答案很简单——连接 $AB$，与 $l$ 的交点就是 $P$（因为"两点之间线段最短"）。
+
+      但现在 $A$、$B$ 在**同侧**！直接连 $AB$ 不经过 $l$，我们需要折一下，问题就变得有意思了。
+
+      **核心推导：反射法**
+
+      **第 1 步：构造对称点**
+      将点 $A$ 关于直线 $l$ 做<<轴对称/reflection>>，得到对称点 $A'$。
+      根据轴对称的性质：$AA' \perp l$，且 $l$ 平分 $AA'$。
+
+      **第 2 步：证明 $AP = A'P$（关键等式）**
+      对于直线 $l$ 上的**任意**一点 $P$：
+
+      设 $l$ 与 $AA'$ 的交点为 $M$，则 $M$ 是 $AA'$ 的中点，且 $PM \perp AA'$（如果 $P = M$）或者我们利用全等三角形证明：
+
+      在 $\triangle APM$ 和 $\triangle A'PM$ 中：
+      - $AM = A'M$（$M$ 是 $AA'$ 的中点）
+      - $PM = PM$（公共边）
+      - $\angle AMP = \angle A'MP = 90°$（$AA' \perp l$）
+
+      由 SAS 全等：$\triangle APM \cong \triangle A'PM$，所以 $AP = A'P$。
+
+      ✅ 这就是反射法的核心：**对称点到对称轴上任意一点的距离，等于原点到该点的距离**。
+
+      **第 3 步：转化问题**
+      现在 $AP + PB = A'P + PB$（用 $A'P$ 替换 $AP$）。
+
+      问题变成：在直线 $l$ 上找点 $P$，使 $A'P + PB$ 最小。
+
+      注意！$A'$ 和 $B$ 在直线 $l$ 的**两侧**（$A$ 和 $B$ 在同侧，$A'$ 是 $A$ 的对称点，所以 $A'$ 在另一侧）。
+
+      **第 4 步：应用三角不等式**
+      由<<三角不等式/triangle inequality>>：$A'P + PB \geq A'B$，等号成立当且仅当 $A'$、$P$、$B$ **三点共线**。
+
+      因此，当 $P$ 是 $A'B$ 与 $l$ 的交点时，$AP + PB$ 取得最小值，**最小值 $= A'B$**。
+
+      **总结：反射法三步骤**
+      1. **反射**：将一个点关于直线做对称
+      2. **替换**：利用 $AP = A'P$ 将折线变为"半直线"
+      3. **拉直**：利用三角不等式，三点共线时取最小值
+
+      **为什么要反射 $A$ 而不是 $B$？**
+      其实反射哪一个都可以！反射 $B$ 得到 $B'$，则 $AP + PB = AP + PB'$，最小值同样是 $A$ 到 $B'$ 的距离。
+      可以验证 $A'B = AB'$（对称性），结果相同。
+    contentEn: |
+      **Historical Story**
+
+      In ancient times, a general riding from camp $A$ needed to stop at a river (line $l$) to water his horse at some point $P$, then ride on to another camp $B$.
+      The general wants to **minimise the total distance $AP + PB$** — where on the river should he stop?
+
+      **Mathematical Model**
+
+      Abstract version: points $A$ and $B$ are on the **same side** of line $l$. Find a point $P$ on $l$ that minimises $AP + PB$.
+
+      **Why Is This Non-Trivial?**
+
+      If $A$ and $B$ were on **opposite sides** of $l$, the answer would be simple — the intersection of segment $AB$ with $l$ (shortest path between two points is a straight line).
+
+      But $A$ and $B$ are on the **same side**! The straight line $AB$ does not cross $l$, so we must "bend" the path, which makes the problem interesting.
+
+      **Core Derivation: The Reflection Method**
+
+      **Step 1: Construct the Reflected Point**
+      Reflect point $A$ across line $l$ to obtain its image $A'$.
+      By the properties of <<轴对称/reflection>>: $AA' \perp l$ and $l$ bisects $AA'$.
+
+      **Step 2: Prove $AP = A'P$ (the key equality)**
+      For **any** point $P$ on line $l$:
+
+      Let $M$ be the intersection of $l$ and $AA'$. Then $M$ is the midpoint of $AA'$ and $AA' \perp l$. Consider triangles $\triangle APM$ and $\triangle A'PM$:
+      - $AM = A'M$ (midpoint)
+      - $PM = PM$ (common side)
+      - $\angle AMP = \angle A'MP = 90°$ ($AA' \perp l$)
+
+      By SAS congruence: $\triangle APM \cong \triangle A'PM$, so $AP = A'P$.
+
+      ✅ This is the heart of the reflection method: **the distance from a point to any point on the axis equals the distance from its reflection to that same point**.
+
+      **Step 3: Transform the Problem**
+      Now $AP + PB = A'P + PB$ (replacing $AP$ with $A'P$).
+
+      The problem becomes: find $P$ on $l$ minimising $A'P + PB$.
+
+      Crucially, $A'$ and $B$ are on **opposite sides** of $l$ (since $A$ and $B$ are on the same side, and $A'$ is the reflection of $A$).
+
+      **Step 4: Apply the Triangle Inequality**
+      By the <<三角不等式/triangle inequality>>: $A'P + PB \geq A'B$, with equality if and only if $A'$, $P$, $B$ are **collinear**.
+
+      Therefore, when $P$ is the intersection of line $A'B$ with $l$, the sum $AP + PB$ is minimised, and the **minimum $= A'B$**.
+
+      **Summary: Three Steps of the Reflection Method**
+      1. **Reflect**: reflect one point across the line
+      2. **Replace**: use $AP = A'P$ to convert the broken path to a "semi-straight" path
+      3. **Straighten**: apply the triangle inequality — collinearity gives the minimum
+
+      **Why Reflect $A$ Instead of $B$?**
+      Either works! Reflecting $B$ to $B'$ gives $AP + PB = AP + PB'$, minimised as $AB'$. One can verify $A'B = AB'$ by symmetry.
+
+  - id: triangle-perimeter-optimization
+    title: <<三角形周长最值/Triangle Perimeter Optimization>>
+    titleEn: <<三角形周长最值/Triangle Perimeter Optimization>>
+    hasVisualization: true
+    content: |
+      **问题引入**
+
+      在线段 $BC$ 上方的直线 $l$ 上取一点 $P$，与 $B$、$C$ 构成三角形 $\triangle PBC$。底边 $BC$ 是固定的，$P$ 在 $l$ 上移动。
+      问：**$P$ 在什么位置时，$\triangle PBC$ 的周长最小？**
+
+      周长 $= PB + PC + BC$。因为 $BC$ 是常数，所以问题等价于：**使 $PB + PC$ 最小**。
+
+      这正是将军饮马问题！只不过这里的"两个营地"是 $B$ 和 $C$，"河流"是直线 $l$。
+
+      **用反射法求解**
+
+      **第 1 步**：将 $B$ 关于 $l$ 做对称，得 $B'$。
+      **第 2 步**：$PB + PC = PB' + PC \geq B'C$，等号成立当 $B'$、$P$、$C$ 共线。
+      **第 3 步**：最小周长 $= B'C + BC$。
+
+      **特殊情况：等腰三角形的最优性**
+
+      **命题**：在所有底边为 $BC$、面积为 $S$ 的三角形中，<<等腰三角形/isosceles triangle>>的周长最小。
+
+      **推导**：
+      面积固定为 $S = \frac{1}{2} \cdot BC \cdot h$，所以高 $h$ 也固定。
+      $P$ 的活动范围是与 $BC$ 平行、距离为 $h$ 的直线 $l$。
+
+      设 $BC$ 的中点为 $M$。将 $B$ 关于 $l$ 对称得 $B'$，将 $C$ 关于 $l$ 对称得 $C'$。
+
+      由对称性，$B'$ 和 $C'$ 关于 $M$ 的垂线（即 $BC$ 的垂直平分线）对称。
+
+      当 $P$ 在 $BC$ 的中垂线上时，$PB = PC$，三角形为等腰三角形。
+
+      此时 $PB + PC$ 取得最小值（可通过反射法严格证明），因此等腰三角形周长最小。
+
+      **直观理解**：等腰三角形是"最对称"的情况，它把路径从 $B$ 经 $P$ 到 $C$ 的"绕路程度"降到最低。
+
+      **变体：顶点在圆上**
+
+      若 $P$ 在以 $O$ 为圆心、$r$ 为半径的圆上移动，$BC$ 为固定弦。
+      - 周长最小：$P$ 在弧 $BC$ 上使 $PB + PC$ 最小的位置。利用反射不再直接适用，但可以用"$P$ 到 $BC$ 中点最近"的思路。
+      - 周长最大：$P$ 在弧 $BC$ 上使 $PB + PC$ 最大的位置——$P$ 是弧的中点（即 $PB = PC$ 的位置），此时等腰三角形的周长反而最大！
+
+      ⚠️ **注意区分**：固定高度下等腰最小，固定圆弧下等腰最大——约束条件不同，结论相反！
+    contentEn: |
+      **Motivating Problem**
+
+      On a line $l$ above segment $BC$, choose a point $P$ to form $\triangle PBC$. The base $BC$ is fixed; $P$ moves along $l$.
+      **Where should $P$ be to minimise the perimeter of $\triangle PBC$?**
+
+      Perimeter $= PB + PC + BC$. Since $BC$ is constant, the problem reduces to **minimising $PB + PC$**.
+
+      This is exactly the General's Drinking Horse Problem! The "two camps" are $B$ and $C$; the "river" is line $l$.
+
+      **Solution by Reflection**
+
+      **Step 1**: Reflect $B$ across $l$ to obtain $B'$.
+      **Step 2**: $PB + PC = PB' + PC \geq B'C$, with equality when $B'$, $P$, $C$ are collinear.
+      **Step 3**: Minimum perimeter $= B'C + BC$.
+
+      **Special Case: Optimality of the Isosceles Triangle**
+
+      **Proposition**: Among all triangles with base $BC$ and area $S$, the <<等腰三角形/isosceles triangle>> has the smallest perimeter.
+
+      **Derivation**:
+      Fixed area $S = \frac{1}{2} \cdot BC \cdot h$ implies fixed height $h$.
+      So $P$ moves along a line $l$ parallel to $BC$ at distance $h$.
+
+      Let $M$ be the midpoint of $BC$. Reflect $B$ across $l$ to get $B'$, and $C$ across $l$ to get $C'$.
+
+      By symmetry, $B'$ and $C'$ are symmetric about the perpendicular bisector of $BC$ through $M$.
+
+      When $P$ lies on the perpendicular bisector of $BC$, $PB = PC$, giving an isosceles triangle.
+
+      At this point $PB + PC$ is minimised (rigorously proved by reflection), so the isosceles triangle has the smallest perimeter.
+
+      **Intuition**: The isosceles triangle is the "most symmetric" configuration, reducing the detour from $B$ via $P$ to $C$ to its minimum.
+
+      **Variant: Vertex on a Circle**
+
+      If $P$ moves on a circle with centre $O$ and radius $r$, and $BC$ is a fixed chord:
+      - Minimum perimeter: find the point on arc $BC$ minimising $PB + PC$. Reflection does not apply directly, but we can use the idea that "$P$ is closest to the midpoint of $BC$."
+      - Maximum perimeter: $P$ is the midpoint of the arc (where $PB = PC$), giving the isosceles triangle — which now has the **largest** perimeter!
+
+      ⚠️ **Key distinction**: with a fixed height, isosceles gives the minimum; with a fixed arc, isosceles gives the maximum — different constraints, opposite conclusions!
+
+  - id: algebraic-optimization
+    title: <<代数最值方法/Algebraic Optimization Methods>>
+    titleEn: <<代数最值方法/Algebraic Optimization Methods>>
+    hasVisualization: true
+    content: |
+      几何问题可以用反射和三角不等式解决。但很多最值问题需要**代数工具**。这里我们系统学习两种方法。
+
+      ---
+
+      **方法一：配方法（Completing the Square）**
+
+      **推导过程**
+
+      给定二次函数 $y = ax^{2} + bx + c$（$a \neq 0$），我们要找它的最值。
+
+      第 1 步：提取 $a$：
+      $$y = a\left(x^{2} + \frac{b}{a}x\right) + c$$
+
+      第 2 步：在括号内"配"出完全平方。$x^{2} + \frac{b}{a}x$ 差一个常数就能成为完全平方式。
+      回忆：$(x + p)^{2} = x^{2} + 2px + p^{2}$，对比得 $2p = \frac{b}{a}$，即 $p = \frac{b}{2a}$。
+
+      加上再减去 $p^{2} = \frac{b^{2}}{4a^{2}}$：
+      $$y = a\left(x^{2} + \frac{b}{a}x + \frac{b^{2}}{4a^{2}} - \frac{b^{2}}{4a^{2}}\right) + c$$
+
+      第 3 步：整理：
+      $$y = a\left(x + \frac{b}{2a}\right)^{2} + c - \frac{b^{2}}{4a}$$
+
+      令 $h = -\frac{b}{2a}$，$k = c - \frac{b^{2}}{4a}$，得到顶点式 $y = a(x - h)^{2} + k$。
+
+      **为什么平方项决定了最值方向？**
+
+      关键观察：$(x - h)^{2} \geq 0$ 对所有实数 $x$ 成立（平方数永远非负）。
+
+      - 当 $a > 0$：$a(x-h)^{2} \geq 0$，所以 $y = a(x-h)^{2} + k \geq k$。最小值 $k$ 在 $x = h$ 时取到。
+      - 当 $a < 0$：$a(x-h)^{2} \leq 0$，所以 $y = a(x-h)^{2} + k \leq k$。最大值 $k$ 在 $x = h$ 时取到。
+
+      ✅ **结论**：二次函数 $y = ax^{2} + bx + c$ 在 $x = -\frac{b}{2a}$ 处取得极值 $c - \frac{b^{2}}{4a}$。$a > 0$ 时为最小值，$a < 0$ 时为最大值。
+
+      ---
+
+      **方法二：均值不等式（AM-GM Inequality）**
+
+      **定理**：对于任意非负实数 $a, b \geq 0$，
+      $$\frac{a + b}{2} \geq \sqrt{ab}$$
+      即 $a + b \geq 2\sqrt{ab}$，等号成立当且仅当 $a = b$。
+
+      **从零开始推导证明**
+
+      我们从一个最基本的事实出发：**任何实数的平方都非负**。
+
+      设 $a, b \geq 0$，则 $\sqrt{a}$ 和 $\sqrt{b}$ 都是实数。考虑：
+
+      $$(\sqrt{a} - \sqrt{b})^{2} \geq 0$$
+
+      展开左边：
+
+      $$a - 2\sqrt{ab} + b \geq 0$$
+
+      移项：
+
+      $$a + b \geq 2\sqrt{ab}$$
+
+      两边除以 $2$：
+
+      $$\frac{a + b}{2} \geq \sqrt{ab}$$
+
+      等号成立条件：$(\sqrt{a} - \sqrt{b})^{2} = 0$，即 $\sqrt{a} = \sqrt{b}$，即 $a = b$。 ✅
+
+      **几何直观**：<<算术平均值/arithmetic mean>> $\frac{a+b}{2}$ 永远不小于<<几何平均值/geometric mean>> $\sqrt{ab}$。
+      想象一个长为 $a$、宽为 $b$ 的矩形，面积为 $ab$。同样周长的正方形边长为 $\frac{a+b}{2}$，面积为 $\left(\frac{a+b}{2}\right)^{2} \geq ab$。
+      所以**同周长的矩形中，正方形面积最大**。
+
+      ---
+
+      **使用均值不等式的三个条件（口诀："一正二定三相等"）**
+
+      1. **一正**：参与的各项必须为**正数**（$a > 0, b > 0$）
+      2. **二定**：乘积 $ab$（或和 $a + b$）必须是**定值**（常数）
+      3. **三相等**：等号 $a = b$ 必须**可以取到**（在允许的范围内）
+
+      三个条件缺一不可！
+
+      **经典应用：求 $x + \frac{k}{x}$ 的最小值**（$x > 0$，$k > 0$）
+
+      检查三个条件：
+      1. ✅ 一正：$x > 0$，$\frac{k}{x} > 0$
+      2. ✅ 二定：$x \cdot \frac{k}{x} = k$（乘积为定值）
+      3. ✅ 三相等：$x = \frac{k}{x}$ 即 $x = \sqrt{k}$（在 $x > 0$ 范围内可取到）
+
+      由 AM-GM：$x + \frac{k}{x} \geq 2\sqrt{x \cdot \frac{k}{x}} = 2\sqrt{k}$
+
+      最小值 $2\sqrt{k}$，在 $x = \sqrt{k}$ 时取到。
+
+      **反面例子：三个条件不满足时**
+
+      例：求 $x + \frac{1}{x}$ 的最值，$x \in [-3, -1]$。
+
+      看似可以用 AM-GM，但 $x < 0$！"一正"条件不满足。
+
+      正确做法：令 $t = -x$，则 $t \in [1, 3]$，$x + \frac{1}{x} = -t - \frac{1}{t} = -(t + \frac{1}{t})$。
+      $t + \frac{1}{t}$ 在 $[1, 3]$ 上单调递增（可用导数或逐点验证），最小值 $2$（$t=1$），最大值 $\frac{10}{3}$（$t=3$）。
+      所以 $x + \frac{1}{x}$ 的最大值 $= -2$（$x = -1$ 时），最小值 $= -\frac{10}{3}$（$x = -3$ 时）。
+    contentEn: |
+      Geometric problems can be solved with reflection and the triangle inequality. But many optimization problems require **algebraic tools**. Here we systematically study two methods.
+
+      ---
+
+      **Method 1: Completing the Square**
+
+      **Full Derivation**
+
+      Given $y = ax^{2} + bx + c$ ($a \neq 0$), we seek its extreme value.
+
+      Step 1 — factor out $a$:
+      $$y = a\left(x^{2} + \frac{b}{a}x\right) + c$$
+
+      Step 2 — complete the square inside the brackets. We need a constant to make $x^{2} + \frac{b}{a}x$ a perfect square.
+      Recall $(x + p)^{2} = x^{2} + 2px + p^{2}$; matching gives $2p = \frac{b}{a}$, i.e. $p = \frac{b}{2a}$.
+
+      Add and subtract $p^{2} = \frac{b^{2}}{4a^{2}}$:
+      $$y = a\left(x^{2} + \frac{b}{a}x + \frac{b^{2}}{4a^{2}} - \frac{b^{2}}{4a^{2}}\right) + c$$
+
+      Step 3 — simplify:
+      $$y = a\left(x + \frac{b}{2a}\right)^{2} + c - \frac{b^{2}}{4a}$$
+
+      Set $h = -\frac{b}{2a}$, $k = c - \frac{b^{2}}{4a}$, giving vertex form $y = a(x - h)^{2} + k$.
+
+      **Why Does the Squared Term Determine Min vs. Max?**
+
+      Key observation: $(x - h)^{2} \geq 0$ for all real $x$ (squares are always non-negative).
+
+      - When $a > 0$: $a(x-h)^{2} \geq 0$, so $y \geq k$. Minimum value $k$ at $x = h$.
+      - When $a < 0$: $a(x-h)^{2} \leq 0$, so $y \leq k$. Maximum value $k$ at $x = h$.
+
+      ✅ **Conclusion**: $y = ax^{2} + bx + c$ attains its extreme value $c - \frac{b^{2}}{4a}$ at $x = -\frac{b}{2a}$. It is a minimum when $a > 0$ and a maximum when $a < 0$.
+
+      ---
+
+      **Method 2: AM-GM Inequality**
+
+      **Theorem**: For any non-negative real numbers $a, b \geq 0$,
+      $$\frac{a + b}{2} \geq \sqrt{ab}$$
+      i.e. $a + b \geq 2\sqrt{ab}$, with equality if and only if $a = b$.
+
+      **Proof from First Principles**
+
+      We start from the most basic fact: **the square of any real number is non-negative**.
+
+      Let $a, b \geq 0$, so $\sqrt{a}$ and $\sqrt{b}$ are real. Consider:
+
+      $$(\sqrt{a} - \sqrt{b})^{2} \geq 0$$
+
+      Expand:
+
+      $$a - 2\sqrt{ab} + b \geq 0$$
+
+      Rearrange:
+
+      $$a + b \geq 2\sqrt{ab}$$
+
+      Divide by $2$:
+
+      $$\frac{a + b}{2} \geq \sqrt{ab}$$
+
+      Equality holds when $(\sqrt{a} - \sqrt{b})^{2} = 0$, i.e. $a = b$. ✅
+
+      **Geometric Intuition**: The <<算术平均值/arithmetic mean>> $\frac{a+b}{2}$ is never less than the <<几何平均值/geometric mean>> $\sqrt{ab}$.
+      Imagine a rectangle with sides $a$ and $b$, area $ab$. A square with the same perimeter has side $\frac{a+b}{2}$ and area $\left(\frac{a+b}{2}\right)^{2} \geq ab$.
+      So **among rectangles with equal perimeter, the square has the largest area**.
+
+      ---
+
+      **Three Conditions for Using AM-GM (mnemonic: "positive, constant, achievable")**
+
+      1. **Positive**: all terms must be **positive** ($a > 0, b > 0$)
+      2. **Constant product (or sum)**: the product $ab$ (or sum $a+b$) must be a **fixed constant**
+      3. **Achievable equality**: $a = b$ must be **attainable** within the given domain
+
+      All three conditions are essential!
+
+      **Classic Application: minimise $x + \frac{k}{x}$** ($x > 0$, $k > 0$)
+
+      Check: (1) ✅ $x > 0$, $\frac{k}{x} > 0$; (2) ✅ product $= k$ (constant); (3) ✅ $x = \sqrt{k}$ is in the domain.
+
+      By AM-GM: $x + \frac{k}{x} \geq 2\sqrt{k}$, minimum $2\sqrt{k}$ at $x = \sqrt{k}$.
+
+      **Counterexample: When Conditions Fail**
+
+      Find the extrema of $x + \frac{1}{x}$ for $x \in [-3, -1]$.
+
+      It looks like AM-GM applies, but $x < 0$! The "positive" condition fails.
+
+      Correct approach: let $t = -x \in [1, 3]$. Then $x + \frac{1}{x} = -(t + \frac{1}{t})$.
+      Since $t + \frac{1}{t}$ is increasing on $[1, 3]$, its range is $[2, \frac{10}{3}]$.
+      So $x + \frac{1}{x}$ has maximum $-2$ (at $x = -1$) and minimum $-\frac{10}{3}$ (at $x = -3$).
+
+  - id: geometric-algebraic-combined
+    title: <<几何代数结合求最值/Combined Geometric-Algebraic Optimization>>
+    titleEn: <<几何代数结合求最值/Combined Geometric-Algebraic Optimization>>
+    hasVisualization: true
+    content: |
+      很多最值问题同时涉及几何图形和代数表达式。这时我们需要**两种思维的结合**。
+
+      ---
+
+      **策略一：几何问题代数化——建系求解**
+
+      当几何图形中的最值不能直接用反射法处理时，建立坐标系，将几何量（距离、面积等）表示为坐标的函数，再用代数方法求最值。
+
+      **一般步骤**：
+      1. **建系**：选择合适的坐标系（通常让关键图形的对称轴或底边与坐标轴重合）
+      2. **设参**：用一个变量（如 $t$）表示动点的坐标
+      3. **建式**：用距离公式、面积公式等将目标量表达为 $t$ 的函数
+      4. **求值**：用配方法或 AM-GM 求函数的最值
+      5. **验证**：检查最值点是否在允许范围内
+
+      **例：将军饮马的坐标解法**
+
+      设 $A(2, 3)$、$B(5, 1)$，直线 $l$ 为 $x$ 轴。
+
+      $A$ 关于 $x$ 轴的对称点 $A'(2, -3)$。
+
+      最小值 $= A'B = \sqrt{(5-2)^{2} + (1-(-3))^{2}} = \sqrt{9 + 16} = 5$。
+
+      求 $P$：$A'B$ 的直线方程。斜率 $= \frac{1-(-3)}{5-2} = \frac{4}{3}$。
+
+      直线 $A'B$：$y - (-3) = \frac{4}{3}(x - 2)$，即 $y = \frac{4}{3}x - \frac{17}{3}$。
+
+      令 $y = 0$：$x = \frac{17}{4}$。所以 $P = \left(\frac{17}{4}, 0\right)$。
+
+      ---
+
+      **策略二：代数问题几何化——函数图象法**
+
+      有时，代数式的最值可以通过**画出函数图象**直观地看出来。
+
+      例如 $f(t) = t^{2} - 4t + 5 = (t-2)^{2} + 1$ 的图象是开口向上的抛物线，顶点 $(2, 1)$。
+
+      - 在 $t \in \mathbb{R}$ 上，最小值 $= 1$（$t = 2$）
+      - 在 $t \in [0, 1]$ 上，最小值 $= f(1) = 2$（顶点不在区间内，比较端点）
+      - 在 $t \in [3, 5]$ 上，最小值 $= f(3) = 2$，最大值 $= f(5) = 10$
+
+      **函数图象法的价值**：当约束区间不同时，同一个函数的最值完全不同。画出图象可以一目了然地看出最值位置。
+
+      ---
+
+      **策略三：距离平方代替距离**
+
+      求 $PA + PB$ 的最小值时用反射法；但求 $PA^{2} + PB^{2}$ 的最小值时，反射法不适用——因为"距离的平方之和"不能用三角不等式。
+
+      此时应该**展开为坐标表达式**，利用代数方法求解。
+
+      设 $P(x, y)$ 在某条曲线上，$A(a_{1}, b_{1})$，$B(a_{2}, b_{2})$，则
+
+      $$PA^{2} + PB^{2} = (x-a_{1})^{2} + (y-b_{1})^{2} + (x-a_{2})^{2} + (y-b_{2})^{2}$$
+
+      展开后整理为关于 $x$、$y$ 的二次表达式，再配方求最值。
+
+      **技巧**：$PA^{2} + PB^{2}$ 的最小值点往往与 $A$、$B$ 的**中点** $M$ 有关。
+      实际上，$PA^{2} + PB^{2} = 2PM^{2} + \frac{AB^{2}}{2}$（中线长公式），所以最小化 $PA^{2} + PB^{2}$ 等价于最小化 $PM$，即找曲线上离中点 $M$ 最近的点。
+
+      ---
+
+      **何时用几何方法 vs 代数方法？**
+
+      | 问题特征 | 推荐方法 |
+      |---------|---------|
+      | 求距离之和 $PA + PB$ 的最小值 | 反射法（几何） |
+      | 求距离平方之和 $PA^{2} + PB^{2}$ 的最小值 | 坐标法 + 配方（代数） |
+      | 求面积、周长的最值 | 先看是否有几何结构，再决定 |
+      | 有明确函数关系式 | 配方法或 AM-GM（代数） |
+      | 约束条件是"点在直线/圆上" | 建系 → 代入约束 → 化为一元函数 |
+    contentEn: |
+      Many optimization problems involve both geometric figures and algebraic expressions. We need **a combination of both ways of thinking**.
+
+      ---
+
+      **Strategy 1: Algebraise Geometry — Coordinate Method**
+
+      When a geometric optimization cannot be handled directly by reflection, set up coordinates, express geometric quantities (distance, area, etc.) as functions of coordinates, and optimise algebraically.
+
+      **General Steps**:
+      1. **Set up coordinates**: align the axis of symmetry or base with a coordinate axis
+      2. **Parameterise**: express the moving point using a single variable (e.g. $t$)
+      3. **Formulate**: use distance/area formulas to write the objective as a function of $t$
+      4. **Optimise**: apply completing the square or AM-GM
+      5. **Verify**: check that the optimal point lies within the allowed range
+
+      **Example: Drinking Horse via Coordinates**
+
+      Let $A(2, 3)$, $B(5, 1)$, and $l$ be the $x$-axis.
+
+      Reflect $A$ across the $x$-axis: $A'(2, -3)$.
+
+      Minimum $= A'B = \sqrt{(5-2)^{2} + (1+3)^{2}} = \sqrt{9+16} = 5$.
+
+      Find $P$: line $A'B$ has slope $\frac{1+3}{5-2} = \frac{4}{3}$.
+
+      Equation: $y + 3 = \frac{4}{3}(x - 2)$, i.e. $y = \frac{4}{3}x - \frac{17}{3}$.
+
+      Set $y = 0$: $x = \frac{17}{4}$, so $P = \left(\frac{17}{4}, 0\right)$.
+
+      ---
+
+      **Strategy 2: Geometrise Algebra — Function Graph Method**
+
+      Sometimes, the extreme value of an algebraic expression can be **read off from its graph**.
+
+      For example, $f(t) = t^{2} - 4t + 5 = (t-2)^{2} + 1$ is an upward-opening parabola with vertex $(2, 1)$.
+
+      - On $t \in \mathbb{R}$: minimum $= 1$ at $t = 2$
+      - On $t \in [0, 1]$: minimum $= f(1) = 2$ (vertex outside interval; compare endpoints)
+      - On $t \in [3, 5]$: minimum $= f(3) = 2$, maximum $= f(5) = 10$
+
+      **Value of the graph method**: the same function can have completely different extrema under different domain restrictions. A sketch makes the answer obvious.
+
+      ---
+
+      **Strategy 3: Replace Distance by Distance Squared**
+
+      To minimise $PA + PB$, use the reflection method. But to minimise $PA^{2} + PB^{2}$, reflection does not apply — the triangle inequality cannot handle sums of squares.
+
+      Instead, **expand in coordinates** and optimise algebraically.
+
+      Let $P(x, y)$ lie on some curve, $A(a_{1}, b_{1})$, $B(a_{2}, b_{2})$. Then
+
+      $$PA^{2} + PB^{2} = (x-a_{1})^{2} + (y-b_{1})^{2} + (x-a_{2})^{2} + (y-b_{2})^{2}$$
+
+      Expand and complete the square.
+
+      **Useful identity**: $PA^{2} + PB^{2} = 2PM^{2} + \frac{AB^{2}}{2}$ where $M$ is the midpoint of $AB$.
+      So minimising $PA^{2} + PB^{2}$ is equivalent to minimising $PM$ — finding the closest point on the curve to the midpoint $M$.
+
+      ---
+
+      **When to Use Geometry vs. Algebra?**
+
+      | Problem type | Recommended method |
+      |---------|---------|
+      | Minimise $PA + PB$ | Reflection (geometry) |
+      | Minimise $PA^{2} + PB^{2}$ | Coordinates + completing the square (algebra) |
+      | Optimise area or perimeter | Check for geometric structure first |
+      | Explicit function given | Completing the square or AM-GM (algebra) |
+      | Constraint is "point on a line/circle" | Set up coordinates, substitute constraint, reduce to one variable |
+
+realLife:
+  title: 最值问题在生活中的应用
+  titleEn: Optimization in Everyday Life
+  items:
+    - title: 修建水渠与灌溉
+      titleEn: Canal Construction and Irrigation
+      content: |
+        农田灌溉系统中，从水源到多块农田的输水管道如何铺设最短？这就是将军饮马问题的实际版本。
+        工程师需要找到在河岸上建泵站的最佳位置，使得到各田块的管道总长度最短。
+      contentEn: |
+        In farmland irrigation, how should pipes from a water source to multiple fields be routed for minimum total length? This is the real-world version of the Drinking Horse Problem.
+        Engineers need to find the optimal pump station location on the riverbank to minimise total pipe length.
+    - title: 包装设计——最少材料
+      titleEn: Packaging Design — Minimum Material
+      content: |
+        一个固定体积的长方体包装盒，表面积越小越省材料。利用 AM-GM 不等式可以证明：
+        当长方体为**正方体**时，表面积最小——这就是为什么很多包装盒设计成接近正方体的形状。
+      contentEn: |
+        For a rectangular box of fixed volume, smaller surface area means less material. Using AM-GM we can prove that the **cube** minimises surface area — which is why many packages are designed close to cubic.
+    - title: 体育场跑道设计
+      titleEn: Sports Track Design
+      content: |
+        标准 $400$ 米跑道由两段直道和两个半圆弯道组成。在总周长固定为 $400$ 米时，如何设计使内部矩形场地面积最大？
+        这是一个典型的"固定周长求最大面积"问题，可用配方法或 AM-GM 求解。
+      contentEn: |
+        A standard 400 m track consists of two straights and two semicircular bends. Given the fixed 400 m perimeter, how should we design the track to maximise the interior rectangular area?
+        This is a classic "fixed perimeter, maximum area" problem solvable by completing the square or AM-GM.
+
+examples:
+  - id: ex1
+    title: 经典将军饮马——坐标解法
+    titleEn: Classic Drinking Horse — Coordinate Solution
+    content: |
+      **题目**：点 $A(2, 3)$ 和 $B(5, 1)$ 在 $x$ 轴的上方。在 $x$ 轴上找一点 $P$，使 $AP + PB$ 的值最小。求最小值和点 $P$ 的坐标。
+    contentEn: |
+      **Problem**: Points $A(2, 3)$ and $B(5, 1)$ lie above the $x$-axis. Find a point $P$ on the $x$-axis that minimises $AP + PB$. Find the minimum value and the coordinates of $P$.
+    steps:
+      - title: 反射点 $A$ 关于 $x$ 轴
+        titleEn: Reflect $A$ across the $x$-axis
+        content: |
+          $A(2, 3)$ 关于 $x$ 轴的对称点：保持 $x$ 坐标不变，$y$ 坐标取相反数。
+
+          $$A' = (2, -3)$$
+
+          验证：$A$ 和 $A'$ 的中点 $= \left(2, \frac{3+(-3)}{2}\right) = (2, 0)$，确实在 $x$ 轴上。✅
+        contentEn: |
+          The reflection of $A(2, 3)$ across the $x$-axis: keep $x$, negate $y$.
+
+          $$A' = (2, -3)$$
+
+          Check: midpoint of $A$ and $A'$ is $\left(2, \frac{3+(-3)}{2}\right) = (2, 0)$, which lies on the $x$-axis. ✅
+      - title: 计算最小值 $A'B$
+        titleEn: Compute the minimum $A'B$
+        content: |
+          $$A'B = \sqrt{(5-2)^{2} + (1-(-3))^{2}} = \sqrt{3^{2} + 4^{2}} = \sqrt{9 + 16} = \sqrt{25} = 5$$
+
+          所以 $AP + PB$ 的最小值为 $5$。
+        contentEn: |
+          $$A'B = \sqrt{(5-2)^{2} + (1+3)^{2}} = \sqrt{9 + 16} = \sqrt{25} = 5$$
+
+          The minimum value of $AP + PB$ is $5$.
+      - title: 求最优点 $P$ 的坐标
+        titleEn: Find the optimal point $P$
+        content: |
+          $P$ 是 $A'B$ 与 $x$ 轴的交点。
+
+          直线 $A'B$：过 $A'(2, -3)$ 和 $B(5, 1)$。
+
+          斜率 $= \frac{1 - (-3)}{5 - 2} = \frac{4}{3}$
+
+          方程：$y - 1 = \frac{4}{3}(x - 5)$，即 $y = \frac{4}{3}x - \frac{17}{3}$
+
+          令 $y = 0$：$\frac{4}{3}x = \frac{17}{3}$，$x = \frac{17}{4}$
+
+          $$P = \left(\frac{17}{4},\; 0\right)$$
+
+          **验证**：$AP = \sqrt{(\frac{17}{4}-2)^{2}+9} = \sqrt{\frac{81}{16}+\frac{144}{16}} = \sqrt{\frac{225}{16}} = \frac{15}{4}$
+
+          $PB = \sqrt{(\frac{17}{4}-5)^{2}+1} = \sqrt{\frac{9}{16}+1} = \sqrt{\frac{25}{16}} = \frac{5}{4}$
+
+          $AP + PB = \frac{15}{4} + \frac{5}{4} = \frac{20}{4} = 5$ ✅
+        contentEn: |
+          $P$ is the intersection of line $A'B$ with the $x$-axis.
+
+          Line through $A'(2, -3)$ and $B(5, 1)$:
+
+          Slope $= \frac{1+3}{5-2} = \frac{4}{3}$
+
+          Equation: $y - 1 = \frac{4}{3}(x - 5)$, i.e. $y = \frac{4}{3}x - \frac{17}{3}$
+
+          Set $y = 0$: $x = \frac{17}{4}$
+
+          $$P = \left(\frac{17}{4},\; 0\right)$$
+
+          **Check**: $AP = \frac{15}{4}$, $PB = \frac{5}{4}$, $AP + PB = 5$ ✅
+
+  - id: ex2
+    title: 角内最短路径——双反射法
+    titleEn: Shortest Path Inside an Angle — Double Reflection
+    content: |
+      **题目**：$\angle MON = 60°$，角内有一点 $P$，$P$ 到 $OM$ 的距离为 $2$，$P$ 到 $ON$ 的距离为 $3$。从 $P$ 出发，先到 $OM$ 上某点 $A$，再到 $ON$ 上某点 $B$，使 $PA + AB + BP$ 最短。求最短路径长度。
+    contentEn: |
+      **Problem**: $\angle MON = 60°$. A point $P$ inside the angle has distance $2$ to $OM$ and distance $3$ to $ON$. Starting from $P$, go to a point $A$ on $OM$, then to a point $B$ on $ON$, and back to $P$, minimising $PA + AB + BP$. Find the minimum.
+    steps:
+      - title: 双反射策略
+        titleEn: Double reflection strategy
+        content: |
+          路径 $P \to A \to B \to P$ 碰到两条边。我们需要对 $P$ 做**两次反射**。
+
+          **第 1 次反射**：将 $P$ 关于 $OM$ 做对称，得 $P_{1}$。则 $PA = P_{1}A$。
+          **第 2 次反射**：将 $P$ 关于 $ON$ 做对称，得 $P_{2}$。则 $PB = P_{2}B$。（注意：这里对原来的 $P$ 反射，不是对 $P_1$。）
+
+          路径长 $= PA + AB + BP = P_{1}A + AB + BP_{2}$。
+
+          由三角不等式，$P_{1}A + AB + BP_{2} \geq P_{1}P_{2}$，等号成立当 $P_{1}$、$A$、$B$、$P_{2}$ 四点共线。
+
+          所以最短路径 $= P_{1}P_{2}$。
+        contentEn: |
+          The path $P \to A \to B \to P$ touches both sides. We need **two reflections** of $P$.
+
+          **Reflection 1**: Reflect $P$ across $OM$ to get $P_{1}$. Then $PA = P_{1}A$.
+          **Reflection 2**: Reflect $P$ across $ON$ to get $P_{2}$. Then $PB = P_{2}B$. (Note: we reflect the original $P$, not $P_1$.)
+
+          Path length $= PA + AB + BP = P_{1}A + AB + BP_{2}$.
+
+          By the triangle inequality, $P_{1}A + AB + BP_{2} \geq P_{1}P_{2}$, with equality when $P_{1}$, $A$, $B$, $P_{2}$ are collinear.
+
+          Minimum path $= P_{1}P_{2}$.
+      - title: 计算 $P_{1}P_{2}$
+        titleEn: Compute $P_{1}P_{2}$
+        content: |
+          $P_{1}$ 是 $P$ 关于 $OM$ 的对称点，$P_{2}$ 是 $P$ 关于 $ON$ 的对称点。
+
+          关键：$OP_{1} = OP = OP_{2}$（反射保持到反射轴上的定点距离不变，$O$ 在两条轴上）。
+
+          $\angle P_{1}OP_{2} = \angle P_{1}OP + \angle POP_{2}$。
+
+          因为 $P_{1}$ 是 $P$ 关于 $OM$ 的对称，$\angle P_{1}OM = \angle POM$，所以 $\angle P_{1}OP = 2\angle POM$。
+          因为 $P_{2}$ 是 $P$ 关于 $ON$ 的对称，$\angle P_{2}ON = \angle PON$，所以 $\angle POP_{2} = 2\angle PON$。
+
+          因此 $\angle P_{1}OP_{2} = 2(\angle POM + \angle PON) = 2 \angle MON = 2 \times 60° = 120°$。
+
+          设 $OP = d$。$P$ 到 $OM$ 的距离为 $2$，$P$ 到 $ON$ 的距离为 $3$。
+
+          在 $\triangle OP_{1}P_{2}$ 中，$OP_{1} = OP_{2} = d$，$\angle P_{1}OP_{2} = 120°$。
+
+          由余弦定理：
+          $$P_{1}P_{2}^{2} = d^{2} + d^{2} - 2d^{2}\cos 120° = 2d^{2} - 2d^{2} \times (-\frac{1}{2}) = 3d^{2}$$
+
+          所以 $P_{1}P_{2} = d\sqrt{3}$。
+
+          求 $d$：$P$ 到 $OM$ 的距离 $= d\sin(\angle POM)$，$P$ 到 $ON$ 的距离 $= d\sin(\angle PON)$。
+          $\angle POM + \angle PON = 60°$。设 $\angle POM = \alpha$，则 $d\sin\alpha = 2$，$d\sin(60° - \alpha) = 3$。
+
+          由第二式展开：$d(\sin 60° \cos\alpha - \cos 60° \sin\alpha) = 3$，即 $d(\frac{\sqrt{3}}{2}\cos\alpha - \frac{1}{2}\sin\alpha) = 3$。
+
+          从 $d\sin\alpha = 2$ 得 $d\cos\alpha = \frac{2}{\tan\alpha}$...
+
+          换一个更简洁的方法：直接用面积。
+
+          $\triangle OPP_{1}$ 的面积 $= \frac{1}{2} \cdot OP \cdot OP_{1} \cdot \sin(\angle P_{1}OP) = \frac{1}{2}d^{2}\sin(2\alpha)$。
+
+          但其实我们不需要求 $d$ 的具体值——题目问的是最短路径 $= d\sqrt{3}$，需要 $d$。
+
+          用另一种方法：$S_{\triangle OAB}$... 实际上直接建坐标更快。
+
+          **建坐标法**：设 $O$ 为原点，$OM$ 沿 $x$ 轴正方向，$ON$ 方向为 $60°$。
+          $P$ 到 $OM$（$x$ 轴）距离 $= 2$，到 $ON$（$y = x\tan 60° = x\sqrt{3}$ 即 $\sqrt{3}x - y = 0$）距离 $= 3$。
+
+          设 $P = (a, 2)$（到 $x$ 轴距离 $2$）。
+
+          $P$ 到直线 $\sqrt{3}x - y = 0$ 的距离 $= \frac{|\sqrt{3}a - 2|}{2} = 3$，即 $|\sqrt{3}a - 2| = 6$。
+
+          因为 $P$ 在角内，$\sqrt{3}a - 2 > 0$（在直线 $ON$ 的下方），所以 $\sqrt{3}a - 2 = 6$，$a = \frac{8}{\sqrt{3}} = \frac{8\sqrt{3}}{3}$。
+
+          $d = OP = \sqrt{a^{2} + 4} = \sqrt{\frac{192}{9} + 4} = \sqrt{\frac{192 + 36}{9}} = \sqrt{\frac{228}{9}} = \frac{\sqrt{228}}{3} = \frac{2\sqrt{57}}{3}$。
+
+          最短路径 $= d\sqrt{3} = \frac{2\sqrt{57}}{3} \cdot \sqrt{3} = \frac{2\sqrt{171}}{3} = \frac{2 \cdot 3\sqrt{19}}{3} = 2\sqrt{19}$。
+
+          $$\text{最短路径} = 2\sqrt{19}$$
+        contentEn: |
+          $P_{1}$ is the reflection of $P$ across $OM$; $P_{2}$ is the reflection across $ON$.
+
+          Key: $OP_{1} = OP = OP_{2}$ (reflection preserves distance to the vertex $O$, which lies on both axes).
+
+          $\angle P_{1}OP_{2} = 2\angle MON = 2 \times 60° = 120°$ (each reflection doubles the angle from $P$ to the respective side).
+
+          Let $d = OP$. In $\triangle OP_{1}P_{2}$: $OP_{1} = OP_{2} = d$, $\angle P_{1}OP_{2} = 120°$.
+
+          By the law of cosines:
+          $$P_{1}P_{2}^{2} = 2d^{2} - 2d^{2}\cos 120° = 2d^{2} + d^{2} = 3d^{2}$$
+          So $P_{1}P_{2} = d\sqrt{3}$.
+
+          To find $d$, set up coordinates: $O$ at origin, $OM$ along the positive $x$-axis, $ON$ at $60°$.
+
+          $P = (a, 2)$ (distance $2$ from $x$-axis). Distance from $P$ to line $ON$ ($\sqrt{3}x - y = 0$):
+          $\frac{|\sqrt{3}a - 2|}{2} = 3$, so $\sqrt{3}a - 2 = 6$ (since $P$ is inside the angle), giving $a = \frac{8\sqrt{3}}{3}$.
+
+          $d = \sqrt{a^{2}+4} = \sqrt{\frac{192}{9}+4} = \frac{2\sqrt{57}}{3}$.
+
+          Minimum path $= d\sqrt{3} = \frac{2\sqrt{57}}{3}\sqrt{3} = \frac{2\sqrt{171}}{3} = 2\sqrt{19}$.
+
+          $$\text{Minimum path} = 2\sqrt{19}$$
+
+  - id: ex3
+    title: 矩形面积最大——两种方法对比
+    titleEn: Maximum Rectangle Area — Two Methods Compared
+    content: |
+      **题目**：一个矩形的周长为 $20$，求面积的最大值。
+    contentEn: |
+      **Problem**: A rectangle has perimeter $20$. Find its maximum area.
+    steps:
+      - title: 方法一：配方法
+        titleEn: 'Method 1: Completing the Square'
+        content: |
+          设矩形的一边长为 $x$（$0 < x < 10$），则另一边长为 $\frac{20 - 2x}{2} = 10 - x$。
+
+          面积 $S = x(10 - x) = 10x - x^{2} = -(x^{2} - 10x) = -(x^{2} - 10x + 25 - 25) = -(x - 5)^{2} + 25$
+
+          因为 $-(x-5)^{2} \leq 0$，所以 $S \leq 25$。
+
+          等号成立条件：$x = 5$，此时另一边也是 $10 - 5 = 5$，矩形为**正方形**。
+
+          最大面积 $= 25$。
+        contentEn: |
+          Let one side be $x$ ($0 < x < 10$); the other side is $10 - x$.
+
+          Area $S = x(10-x) = -(x-5)^{2} + 25 \leq 25$.
+
+          Equality when $x = 5$ (the rectangle is a **square**).
+
+          Maximum area $= 25$.
+      - title: 方法二：均值不等式
+        titleEn: 'Method 2: AM-GM Inequality'
+        content: |
+          设两边为 $a$ 和 $b$，$a + b = 10$（半周长），$a, b > 0$。
+
+          由 AM-GM：$\frac{a + b}{2} \geq \sqrt{ab}$，即 $5 \geq \sqrt{ab}$，两边平方得 $ab \leq 25$。
+
+          等号成立条件：$a = b = 5$。
+
+          检验三个条件：
+          1. ✅ 一正：$a > 0, b > 0$
+          2. ✅ 二定：$a + b = 10$（和为定值）
+          3. ✅ 三相等：$a = b = 5$ 可以取到
+
+          最大面积 $= 25$。
+
+          **注意**：这里我们用了 AM-GM 的"和定积最大"形式——当**和固定**时，**积取最大值**，在两数相等时取到。
+
+          这是 AM-GM 的另一个方向：$a + b \geq 2\sqrt{ab}$ 可以改写为 $ab \leq \left(\frac{a+b}{2}\right)^{2}$。
+        contentEn: |
+          Let the sides be $a$ and $b$, with $a + b = 10$ (half-perimeter), $a, b > 0$.
+
+          By AM-GM: $\frac{a+b}{2} \geq \sqrt{ab}$, i.e. $5 \geq \sqrt{ab}$, so $ab \leq 25$.
+
+          Equality when $a = b = 5$.
+
+          Check conditions: (1) ✅ positive; (2) ✅ fixed sum $= 10$; (3) ✅ $a = b$ achievable.
+
+          Maximum area $= 25$.
+
+          **Note**: Here we used the "fixed sum ⟹ maximum product" form of AM-GM: $ab \leq \left(\frac{a+b}{2}\right)^{2}$.
+
+  - id: ex4
+    title: 距离平方之和——综合法
+    titleEn: Sum of Squared Distances — Combined Method
+    content: |
+      **题目**：已知 $A(0, 0)$，$B(6, 0)$，点 $P$ 在圆 $x^{2} + (y-4)^{2} = 4$ 上移动。求 $PA^{2} + PB^{2}$ 的最小值。
+    contentEn: |
+      **Problem**: Given $A(0,0)$, $B(6,0)$, and $P$ moving on the circle $x^{2} + (y-4)^{2} = 4$. Find the minimum of $PA^{2} + PB^{2}$.
+    steps:
+      - title: 利用中点公式转化
+        titleEn: Transform using the midpoint formula
+        content: |
+          $A$ 和 $B$ 的中点 $M = (3, 0)$。
+
+          利用恒等式：$PA^{2} + PB^{2} = 2PM^{2} + \frac{AB^{2}}{2}$。
+
+          **推导这个恒等式**：
+
+          设 $P = (x, y)$，$A = (0,0)$，$B = (6,0)$，$M = (3,0)$。
+
+          $PA^{2} + PB^{2} = x^{2} + y^{2} + (x-6)^{2} + y^{2}$
+          $= x^{2} + y^{2} + x^{2} - 12x + 36 + y^{2}$
+          $= 2x^{2} - 12x + 36 + 2y^{2}$
+          $= 2(x^{2} - 6x + 9) + 2y^{2} + 18$
+          $= 2(x-3)^{2} + 2y^{2} + 18$
+          $= 2[(x-3)^{2} + y^{2}] + 18$
+          $= 2 \cdot PM^{2} + 18$
+
+          其中 $\frac{AB^{2}}{2} = \frac{36}{2} = 18$ ✅
+
+          所以最小化 $PA^{2} + PB^{2}$ 等价于最小化 $PM^{2}$，即找圆上离 $M(3, 0)$ 最近的点。
+        contentEn: |
+          Midpoint of $A$ and $B$: $M = (3, 0)$.
+
+          Identity: $PA^{2} + PB^{2} = 2PM^{2} + \frac{AB^{2}}{2}$.
+
+          **Derivation**: let $P = (x,y)$.
+
+          $PA^{2} + PB^{2} = x^{2}+y^{2} + (x-6)^{2}+y^{2} = 2(x-3)^{2} + 2y^{2} + 18 = 2PM^{2} + 18$
+
+          where $\frac{AB^{2}}{2} = 18$ ✅
+
+          So minimising $PA^{2}+PB^{2}$ reduces to minimising $PM^{2}$, i.e. finding the closest point on the circle to $M(3,0)$.
+      - title: 求圆上离 $M$ 最近的点
+        titleEn: Find the closest point on the circle to $M$
+        content: |
+          圆心 $C = (0, 4)$，半径 $r = 2$。
+
+          $CM = \sqrt{(3-0)^{2} + (0-4)^{2}} = \sqrt{9 + 16} = 5$。
+
+          因为 $CM = 5 > r = 2$，$M$ 在圆外。
+
+          圆上离 $M$ 最近的点 $P_{0}$ 在线段 $CM$ 上，$P_{0}M = CM - r = 5 - 2 = 3$。
+
+          所以 $PM_{\min} = 3$，$PM^{2}_{\min} = 9$。
+
+          $$PA^{2} + PB^{2} \text{ 的最小值} = 2 \times 9 + 18 = 36$$
+
+          $P_{0}$ 的坐标：$P_{0}$ 在 $CM$ 上，$CP_{0} = 2$。
+
+          方向向量 $\vec{CM} = (3, -4)$，$|\vec{CM}| = 5$，单位向量 $= (\frac{3}{5}, -\frac{4}{5})$。
+
+          $P_{0} = C + 2 \cdot (\frac{3}{5}, -\frac{4}{5}) = (0 + \frac{6}{5},\; 4 - \frac{8}{5}) = (\frac{6}{5},\; \frac{12}{5})$。
+        contentEn: |
+          Circle centre $C = (0,4)$, radius $r = 2$.
+
+          $CM = \sqrt{9+16} = 5 > r$, so $M$ is outside the circle.
+
+          The closest point $P_{0}$ on the circle to $M$ lies on segment $CM$: $P_{0}M = CM - r = 3$.
+
+          So $PM^{2}_{\min} = 9$.
+
+          $$\min(PA^{2}+PB^{2}) = 2 \times 9 + 18 = 36$$
+
+          $P_{0} = C + \frac{2}{5}(3,-4) = \left(\frac{6}{5}, \frac{12}{5}\right)$.
+
+exercises:
+  intro: |
+    以下练习覆盖将军饮马、三角形周长、配方法和均值不等式。由基础到综合，建议 30 分钟完成。
+  introEn: |
+    The following exercises cover the Drinking Horse Problem, triangle perimeter, completing the square, and AM-GM. Arranged from basic to advanced; aim for 30 minutes.
+  timeGuide:
+    total: 约 45 分钟
+  questions:
+    - number: 1
+      inputType: open
+      type: fill-in
+      question: '点 $A(1, 4)$ 关于 $x$ 轴的对称点 $A''$ 的坐标为___。'
+      questionEn: 'The reflection of $A(1, 4)$ across the $x$-axis is $A'' = $ ___.'
+      answer: '$(1, -4)$'
+      answerEn: '$(1, -4)$'
+      explanation: '关于 $x$ 轴对称：$x$ 不变，$y$ 取相反数。$A'' = (1, -4)$。'
+      explanationEn: 'Reflection across $x$-axis: keep $x$, negate $y$. $A'' = (1, -4)$.'
+
+    - number: 2
+      inputType: open
+      type: fill-in
+      question: '点 $B(3, -2)$ 关于直线 $y = 1$ 的对称点 $B''$ 的坐标为___。'
+      questionEn: 'The reflection of $B(3, -2)$ across the line $y = 1$ is $B'' = $ ___.'
+      answer: '$(3, 4)$'
+      answerEn: '$(3, 4)$'
+      explanation: '$B$ 到 $y = 1$ 的距离 $= |{-2} - 1| = 3$。$B''$ 在 $y = 1$ 的另一侧，距离也为 $3$，所以 $B''$ 的 $y$ 坐标 $= 1 + 3 = 4$。$B'' = (3, 4)$。'
+      explanationEn: 'Distance from $B$ to $y=1$ is $3$. $B''$ is on the other side at the same distance: $y = 1+3 = 4$. $B'' = (3, 4)$.'
+
+    - number: 3
+      inputType: open
+      type: computation
+      question: |
+        点 $A(1, 2)$ 和 $B(4, 1)$ 在 $x$ 轴上方。在 $x$ 轴上找点 $P$ 使 $AP + PB$ 最小，求最小值。
+      questionEn: |
+        Points $A(1, 2)$ and $B(4, 1)$ are above the $x$-axis. Find the point $P$ on the $x$-axis minimising $AP + PB$, and the minimum value.
+      answer: '$\sqrt{18} = 3\sqrt{2}$'
+      answerEn: '$\sqrt{18} = 3\sqrt{2}$'
+      explanation: |
+        $A$ 关于 $x$ 轴的对称点 $A' = (1, -2)$。
+        $A'B = \sqrt{(4-1)^{2} + (1+2)^{2}} = \sqrt{9 + 9} = 3\sqrt{2}$。
+      explanationEn: |
+        Reflect $A$ across the $x$-axis: $A' = (1, -2)$.
+        $A'B = \sqrt{9+9} = 3\sqrt{2}$.
+
+    - number: 4
+      inputType: open
+      type: true-false
+      question: '判断：对非负实数 $a, b$，总有 $\frac{a+b}{2} \geq \sqrt{ab}$。（正确 / 错误？）'
+      questionEn: 'True or False: for non-negative real numbers $a, b$, $\frac{a+b}{2} \geq \sqrt{ab}$ always holds.'
+      answer: 正确
+      answerEn: 'True'
+      explanation: '这就是 AM-GM 不等式。由 $(\sqrt{a}-\sqrt{b})^{2} \geq 0$ 展开可得。'
+      explanationEn: 'This is the AM-GM inequality, proved by expanding $(\sqrt{a}-\sqrt{b})^{2} \geq 0$.'
+
+    - number: 5
+      inputType: open
+      type: computation
+      question: '用配方法求 $y = 2x^{2} - 8x + 10$ 的最小值。'
+      questionEn: 'Use completing the square to find the minimum of $y = 2x^{2} - 8x + 10$.'
+      answer: '最小值为 $2$，在 $x = 2$ 时取到'
+      answerEn: 'Minimum $2$ at $x = 2$'
+      explanation: '$y = 2(x^{2} - 4x) + 10 = 2(x^{2} - 4x + 4) + 10 - 8 = 2(x-2)^{2} + 2 \geq 2$。等号在 $x = 2$ 时成立。'
+      explanationEn: '$y = 2(x-2)^{2} + 2 \geq 2$. Equality at $x = 2$.'
+
+    - number: 6
+      inputType: open
+      type: computation
+      question: |
+        用均值不等式求 $f(x) = x + \frac{9}{x}$（$x > 0$）的最小值，并验证三个条件。
+      questionEn: |
+        Use AM-GM to find the minimum of $f(x) = x + \frac{9}{x}$ ($x > 0$). Verify all three conditions.
+      answer: '最小值为 $6$，在 $x = 3$ 时取到'
+      answerEn: 'Minimum $6$ at $x = 3$'
+      explanation: |
+        一正：$x > 0$，$\frac{9}{x} > 0$ ✅
+        二定：$x \cdot \frac{9}{x} = 9$ 为定值 ✅
+        三相等：$x = \frac{9}{x}$ 即 $x = 3 > 0$ ✅
+        $x + \frac{9}{x} \geq 2\sqrt{9} = 6$，等号在 $x = 3$ 时取到。
+      explanationEn: |
+        Positive: ✅; constant product $= 9$: ✅; $x = 3$ achievable: ✅.
+        $x + \frac{9}{x} \geq 2\sqrt{9} = 6$; equality at $x = 3$.
+
+    - number: 7
+      inputType: open
+      type: multiple-choice
+      question: |
+        已知 $a > 0$，$b > 0$，$ab = 4$。则 $a + b$ 的最小值为（　　）
+        A. $2$
+        B. $4$
+        C. $6$
+        D. $8$
+      questionEn: |
+        Given $a > 0$, $b > 0$, $ab = 4$. The minimum of $a + b$ is (　　)
+        A. $2$
+        B. $4$
+        C. $6$
+        D. $8$
+      answer: B
+      answerEn: B
+      explanation: '由 AM-GM：$a + b \geq 2\sqrt{ab} = 2\sqrt{4} = 4$，等号在 $a = b = 2$ 时取到。'
+      explanationEn: 'AM-GM: $a+b \geq 2\sqrt{4} = 4$, equality when $a = b = 2$.'
+
+    - number: 8
+      inputType: open
+      type: computation
+      question: |
+        矩形周长 $28$，求面积最大值，并说明此时矩形的形状。
+      questionEn: |
+        A rectangle has perimeter $28$. Find the maximum area and describe the shape at the optimum.
+      answer: '最大面积 $49$，此时为正方形（边长 $7$）'
+      answerEn: 'Maximum area $49$; the rectangle is a square with side $7$'
+      explanation: |
+        设一边 $x$，另一边 $14 - x$。$S = x(14-x) = -(x-7)^{2} + 49 \leq 49$。
+        或用 AM-GM：$x(14-x) \leq \left(\frac{x+14-x}{2}\right)^{2} = 49$。
+        等号在 $x = 7$ 时取到，矩形为正方形。
+      explanationEn: |
+        Let sides be $x$ and $14-x$. $S = -(x-7)^{2}+49 \leq 49$.
+        Or AM-GM: $x(14-x) \leq 49$. Equality at $x = 7$ (square).
+
+    - number: 9
+      inputType: open
+      type: computation
+      question: |
+        点 $A(0, 1)$ 和 $B(3, 3)$ 在直线 $y = -1$ 上方。在 $y = -1$ 上找点 $P$ 使 $AP + PB$ 最小，求最小值。
+      questionEn: |
+        Points $A(0,1)$ and $B(3,3)$ are above the line $y = -1$. Find $P$ on $y = -1$ minimising $AP + PB$.
+      answer: '$3\sqrt{5}$'
+      answerEn: '$3\sqrt{5}$'
+      explanation: |
+        $A(0, 1)$ 关于 $y = -1$ 的对称点：$A$ 到 $y = -1$ 的距离 $= 2$，$A' = (0, -3)$。
+        $A'B = \sqrt{(3-0)^{2}+(3-(-3))^{2}} = \sqrt{9+36} = \sqrt{45} = 3\sqrt{5}$。
+      explanationEn: |
+        Reflect $A(0,1)$ across $y = -1$: distance $= 2$, so $A' = (0, -3)$.
+        $A'B = \sqrt{9+36} = 3\sqrt{5}$.
+
+    - number: 10
+      inputType: open
+      type: fill-in
+      question: '已知 $x > 2$，则 $(x - 2) + \frac{1}{x - 2}$ 的最小值为___。'
+      questionEn: 'Given $x > 2$, the minimum of $(x-2) + \frac{1}{x-2}$ is ___.'
+      answer: '$2$'
+      answerEn: '$2$'
+      explanation: |
+        令 $t = x - 2 > 0$。$t + \frac{1}{t} \geq 2\sqrt{t \cdot \frac{1}{t}} = 2$，等号在 $t = 1$ 即 $x = 3$ 时取到。
+      explanationEn: |
+        Let $t = x-2 > 0$. By AM-GM: $t + \frac{1}{t} \geq 2$. Equality at $t = 1$, i.e. $x = 3$.
+
+    - number: 11
+      inputType: open
+      type: computation
+      question: |
+        在 $\triangle ABC$ 中，$BC = 8$，顶点 $A$ 在直线 $y = 6$（$BC$ 在 $x$ 轴上，$B(-4, 0)$，$C(4, 0)$）上移动。
+        $(1)$ 三角形面积是否随 $A$ 的位置变化？
+        $(2)$ 求 $\triangle ABC$ 周长的最小值。
+      questionEn: |
+        In $\triangle ABC$, $BC = 8$, with $B(-4,0)$, $C(4,0)$, and vertex $A$ moving along the line $y = 6$.
+        $(1)$ Does the area change as $A$ moves?
+        $(2)$ Find the minimum perimeter of $\triangle ABC$.
+      answer: '$(1)$ 不变，面积始终为 $24$。$(2)$ 最小周长 $= 8 + 2\sqrt{52} = 8 + 4\sqrt{13}$'
+      answerEn: '$(1)$ No, area is always $24$. $(2)$ Minimum perimeter $= 8 + 4\sqrt{13}$'
+      explanation: |
+        $(1)$ 高始终为 $6$，$S = \frac{1}{2} \times 8 \times 6 = 24$，不变。
+
+        $(2)$ 周长 $= AB + AC + 8$，需最小化 $AB + AC$。
+
+        将 $B(-4, 0)$ 关于 $y = 6$ 对称：$B' = (-4, 12)$。
+
+        $AB + AC = B'A + AC \geq B'C = \sqrt{(4+4)^{2}+(0-12)^{2}} = \sqrt{64+144} = \sqrt{208} = 4\sqrt{13}$。
+
+        最小周长 $= 4\sqrt{13} + 8$。
+      explanationEn: |
+        $(1)$ Height is always $6$: $S = 24$, constant.
+        $(2)$ Minimise $AB + AC$. Reflect $B(-4,0)$ across $y = 6$: $B' = (-4, 12)$.
+        $AB + AC \geq B'C = \sqrt{64+144} = 4\sqrt{13}$. Minimum perimeter $= 8 + 4\sqrt{13}$.
+
+    - number: 12
+      inputType: open
+      type: computation
+      question: |
+        已知 $A(1, 0)$，$B(5, 0)$，点 $P$ 在圆 $(x-3)^{2} + (y-4)^{2} = 1$ 上。求 $PA^{2} + PB^{2}$ 的最小值。
+      questionEn: |
+        Given $A(1,0)$, $B(5,0)$, and $P$ on the circle $(x-3)^{2}+(y-4)^{2}=1$. Find the minimum of $PA^{2}+PB^{2}$.
+      answer: '$26$'
+      answerEn: '$26$'
+      explanation: |
+        中点 $M = (3, 0)$。$PA^{2}+PB^{2} = 2PM^{2} + \frac{AB^{2}}{2} = 2PM^{2} + 8$。
+
+        圆心 $C = (3, 4)$，$CM = 4$，$r = 1$。$PM_{\min} = CM - r = 3$。
+
+        最小值 $= 2 \times 9 + 8 = 26$。
+      explanationEn: |
+        Midpoint $M = (3,0)$. $PA^{2}+PB^{2} = 2PM^{2}+8$.
+        $CM = 4$, $r = 1$, so $PM_{\min} = 3$.
+        Minimum $= 18 + 8 = 26$.
+
+examPrep:
+  intro: |
+    以下 5 道题是本章的综合提升练习。涉及反射法的灵活运用、双反射、均值不等式的条件判断，以及动点最值。
+    建议先独立思考 10-15 分钟，再查看解析。每道题都有"隐藏考点"，注意审题！
+  introEn: |
+    The following 5 problems are comprehensive challenges for this chapter, covering creative use of reflection, double reflection, AM-GM condition checking, and moving-point optimization.
+    Spend 10–15 minutes attempting each before checking the solution. Each contains a hidden subtlety!
+  questions:
+    - number: 1
+      inputType: open
+      type: computation
+      question: |
+        $\angle MON = 45°$，点 $P$ 在角的内部，$P$ 到 $OM$ 的距离为 $1$，$P$ 到 $ON$ 的距离为 $2$。
+        从 $P$ 出发到 $OM$ 上某点 $A$，再到 $ON$ 上某点 $B$，求 $PA + AB + BP$ 的最小值。
+      questionEn: |
+        $\angle MON = 45°$. Point $P$ inside the angle has distance $1$ to $OM$ and $2$ to $ON$.
+        From $P$, go to $A$ on $OM$, then $B$ on $ON$. Find the minimum of $PA + AB + BP$.
+      answer: '$\sqrt{20 + 8\sqrt{2}}$'
+      answerEn: '$\sqrt{20 + 8\sqrt{2}}$'
+      explanation: |
+        双反射法：$P_{1}$ 是 $P$ 关于 $OM$ 的对称点，$P_{2}$ 是 $P$ 关于 $ON$ 的对称点。
+
+        $\angle P_{1}OP_{2} = 2 \angle MON = 90°$，$OP_{1} = OP_{2} = d = OP$。
+
+        $P_{1}P_{2} = d\sqrt{2}$（等腰直角三角形斜边）。
+
+        求 $d$：建坐标，$O$ 在原点，$OM$ 沿 $x$ 轴，$ON$ 方向 $45°$。
+
+        $P = (a, 1)$（到 $x$ 轴距离 $1$）。$P$ 到直线 $y = x$（即 $x - y = 0$）的距离 $= \frac{|a - 1|}{\sqrt{2}} = 2$，即 $|a-1| = 2\sqrt{2}$。
+
+        $P$ 在角内，$a > 0$ 且 $1 < a$（在 $ON$ 的下方），所以 $a - 1 = 2\sqrt{2}$，$a = 1 + 2\sqrt{2}$。
+
+        $d = \sqrt{a^{2} + 1} = \sqrt{(1+2\sqrt{2})^{2} + 1} = \sqrt{1 + 4\sqrt{2} + 8 + 1} = \sqrt{10 + 4\sqrt{2}}$。
+
+        最小值 $= d\sqrt{2} = \sqrt{2(10 + 4\sqrt{2})} = \sqrt{20 + 8\sqrt{2}}$。
+      explanationEn: |
+        Double reflection: $P_{1}$ across $OM$, $P_{2}$ across $ON$.
+
+        $\angle P_{1}OP_{2} = 2 \times 45° = 90°$, $OP_{1} = OP_{2} = d$.
+
+        $P_{1}P_{2} = d\sqrt{2}$ (isosceles right triangle).
+
+        Set up coords: $O$ at origin, $OM$ along $x$-axis, $ON$ at $45°$.
+        $P = (a, 1)$. Distance to $y = x$: $\frac{|a-1|}{\sqrt{2}} = 2$, so $a = 1 + 2\sqrt{2}$.
+
+        $d = \sqrt{(1+2\sqrt{2})^{2}+1} = \sqrt{10+4\sqrt{2}}$.
+
+        Minimum $= \sqrt{20+8\sqrt{2}}$.
+
+    - number: 2
+      inputType: open
+      type: computation
+      question: |
+        已知正数 $x, y$ 满足 $2x + 3y = 12$，求 $xy$ 的最大值。
+      questionEn: |
+        Given positive numbers $x, y$ with $2x + 3y = 12$, find the maximum of $xy$.
+      answer: '最大值 $6$，在 $x = 3, y = 2$ 时取到'
+      answerEn: 'Maximum $6$ at $x = 3, y = 2$'
+      explanation: |
+        由 AM-GM：$2x + 3y \geq 2\sqrt{2x \cdot 3y} = 2\sqrt{6xy}$。
+
+        所以 $12 \geq 2\sqrt{6xy}$，$6 \geq \sqrt{6xy}$，$36 \geq 6xy$，$xy \leq 6$。
+
+        等号条件：$2x = 3y$。与 $2x + 3y = 12$ 联立，得 $2x = 3y = 6$，即 $x = 3, y = 2$。
+
+        验证三个条件：
+        1. ✅ $2x > 0, 3y > 0$
+        2. ✅ $2x + 3y = 12$ 为定值
+        3. ✅ $2x = 3y$ 即 $x = 3, y = 2$ 可取到
+      explanationEn: |
+        AM-GM: $12 = 2x+3y \geq 2\sqrt{6xy}$, so $xy \leq 6$.
+        Equality: $2x = 3y$; with $2x+3y = 12$: $x = 3, y = 2$.
+
+    - number: 3
+      inputType: open
+      type: computation
+      question: |
+        点 $A(0, 3)$ 和 $B(4, 5)$ 在直线 $l: y = x$ 的两侧（验证）。
+        在直线 $y = x$ 上找点 $P$ 使 $PA + PB$ 最小，求最小值和 $P$ 的坐标。
+
+        提示：先验证 $A$、$B$ 是否在 $y = x$ 的两侧。如果在同侧，需要反射；如果在两侧，直接连线即可！
+      questionEn: |
+        Points $A(0,3)$ and $B(4,5)$ — are they on opposite sides of the line $y = x$? (Verify.)
+        Find $P$ on $y = x$ minimising $PA + PB$. Find the minimum and coordinates of $P$.
+
+        Hint: check whether $A$ and $B$ are on the same or opposite sides of $y = x$. If opposite — just connect them!
+      answer: '$\sqrt{26}$，$P = (\frac{15}{4}, \frac{15}{4})$'
+      answerEn: '$\sqrt{26}$, $P = (\frac{15}{4}, \frac{15}{4})$'
+      explanation: |
+        判断两侧：将 $A(0, 3)$ 代入 $y - x$：$3 - 0 = 3 > 0$（在 $y = x$ 上方）。
+        将 $B(4, 5)$ 代入：$5 - 4 = 1 > 0$（也在上方）。
+
+        ⚠️ $A$ 和 $B$ 在**同侧**！不能直接连线，需要反射。
+
+        将 $A(0, 3)$ 关于 $y = x$ 做对称：$(x, y) \to (y, x)$，得 $A' = (3, 0)$。
+
+        $A'B = \sqrt{(4-3)^{2}+(5-0)^{2}} = \sqrt{1+25} = \sqrt{26}$。
+
+        $P$ 是 $A'B$ 与 $y = x$ 的交点。直线 $A'B$：过 $(3,0)$ 和 $(4,5)$，斜率 $= 5$，方程 $y = 5(x-3) = 5x - 15$。
+
+        与 $y = x$ 交点：$x = 5x - 15$，$4x = 15$，$x = \frac{15}{4}$。$P = (\frac{15}{4}, \frac{15}{4})$。
+
+        最小值 $= \sqrt{26}$。
+      explanationEn: |
+        Check sides: $A(0,3)$: $3-0 = 3 > 0$; $B(4,5)$: $5-4 = 1 > 0$. Both above $y = x$ — same side!
+
+        Reflect $A$ across $y = x$: $A' = (3, 0)$.
+        $A'B = \sqrt{1+25} = \sqrt{26}$.
+
+        Line $A'B$: slope $5$, equation $y = 5x-15$. Intersection with $y = x$: $x = \frac{15}{4}$.
+
+        $P = (\frac{15}{4}, \frac{15}{4})$. Minimum $= \sqrt{26}$.
+
+    - number: 4
+      inputType: open
+      type: computation
+      question: |
+        点 $P$ 在抛物线 $y = x^{2}$ 上移动，$A(0, 2)$ 为定点。求 $PA^{2}$ 的最小值。
+      questionEn: |
+        Point $P$ moves on the parabola $y = x^{2}$. $A = (0, 2)$ is fixed. Find the minimum of $PA^{2}$.
+      answer: '$PA^{2}$ 最小值 $= \frac{7}{4}$'
+      answerEn: 'Minimum of $PA^{2}$ is $\frac{7}{4}$'
+      explanation: |
+        设 $P = (t, t^{2})$。
+
+        $PA^{2} = t^{2} + (t^{2} - 2)^{2} = t^{2} + t^{4} - 4t^{2} + 4 = t^{4} - 3t^{2} + 4$
+
+        令 $u = t^{2} \geq 0$：$f(u) = u^{2} - 3u + 4 = (u - \frac{3}{2})^{2} + \frac{7}{4}$
+
+        因为 $u \geq 0$ 且 $\frac{3}{2} > 0$，最小值点 $u = \frac{3}{2}$ 在定义域内。
+
+        $f(\frac{3}{2}) = \frac{9}{4} - \frac{9}{2} + 4 = \frac{9}{4} - \frac{18}{4} + \frac{16}{4} = \frac{7}{4}$。
+
+        所以 $PA^{2}$ 最小值 $= \frac{7}{4}$。
+
+        此时 $t^{2} = \frac{3}{2}$，$t = \pm\sqrt{\frac{3}{2}}$，$P = (\pm\sqrt{\frac{3}{2}}, \frac{3}{2})$。
+      explanationEn: |
+        Let $P = (t, t^{2})$.
+
+        $PA^{2} = t^{2} + (t^{2}-2)^{2} = t^{4} - 3t^{2} + 4$.
+
+        Let $u = t^{2} \geq 0$: $f(u) = u^{2}-3u+4 = (u-\frac{3}{2})^{2}+\frac{7}{4}$.
+
+        Minimum at $u = \frac{3}{2}$: $PA^{2}_{\min} = \frac{7}{4}$.
+
+        $P = (\pm\sqrt{\frac{3}{2}}, \frac{3}{2})$.
+
+    - number: 5
+      inputType: open
+      type: computation
+      question: |
+        已知 $x > 0$，$y > 0$，$x + 2y = 1$。求 $\frac{1}{x} + \frac{1}{y}$ 的最小值。
+
+        提示：直接用 AM-GM 不行（"二定"条件不满足）。尝试"乘以 $1$"的技巧：$\frac{1}{x}+\frac{1}{y} = (\frac{1}{x}+\frac{1}{y}) \cdot (x+2y)$。
+      questionEn: |
+        Given $x > 0$, $y > 0$, $x + 2y = 1$. Find the minimum of $\frac{1}{x} + \frac{1}{y}$.
+
+        Hint: direct AM-GM fails (the "constant product" condition is not met). Try the "multiply by 1" trick: $\frac{1}{x}+\frac{1}{y} = \left(\frac{1}{x}+\frac{1}{y}\right)(x+2y)$.
+      answer: '$3 + 2\sqrt{2}$'
+      answerEn: '$3 + 2\sqrt{2}$'
+      explanation: |
+        利用 $x + 2y = 1$：
+
+        $\frac{1}{x}+\frac{1}{y} = \left(\frac{1}{x}+\frac{1}{y}\right)(x+2y) = 1 + \frac{2y}{x} + \frac{x}{y} + 2 = 3 + \frac{2y}{x} + \frac{x}{y}$
+
+        对 $\frac{2y}{x} + \frac{x}{y}$ 用 AM-GM：$\frac{2y}{x} + \frac{x}{y} \geq 2\sqrt{\frac{2y}{x} \cdot \frac{x}{y}} = 2\sqrt{2}$。
+
+        等号条件：$\frac{2y}{x} = \frac{x}{y}$，即 $x^{2} = 2y^{2}$，$x = y\sqrt{2}$。
+
+        代入 $x + 2y = 1$：$y\sqrt{2} + 2y = 1$，$y = \frac{1}{2+\sqrt{2}} = \frac{2-\sqrt{2}}{2}$。
+
+        $x = y\sqrt{2} = \frac{2\sqrt{2}-2}{2} = \sqrt{2}-1$。
+
+        检验 $x > 0$：$\sqrt{2} - 1 \approx 0.414 > 0$ ✅
+
+        所以最小值 $= 3 + 2\sqrt{2}$。
+      explanationEn: |
+        Use $x+2y = 1$:
+
+        $\frac{1}{x}+\frac{1}{y} = \left(\frac{1}{x}+\frac{1}{y}\right)(x+2y) = 3 + \frac{2y}{x}+\frac{x}{y}$.
+
+        AM-GM: $\frac{2y}{x}+\frac{x}{y} \geq 2\sqrt{2}$, equality when $x = y\sqrt{2}$.
+
+        With $x+2y = 1$: $y = \frac{2-\sqrt{2}}{2}$, $x = \sqrt{2}-1 > 0$ ✅.
+
+        Minimum $= 3+2\sqrt{2}$.
+
+summary: |
+  本专题系统学习了<<最值问题/optimization problems>>的四大方法：
+
+  **1. 反射法（将军饮马）**
+  - 核心原理：轴对称使 $AP = A'P$，将折线转化为直线
+  - 三步骤：反射 → 替换 → 拉直（三角不等式）
+  - 双反射：路径碰两条线时，反射两次，$\angle P_{1}OP_{2} = 2\angle MON$
+
+  **2. 三角形周长最值**
+  - 底边固定、高固定 → 等腰三角形周长最小
+  - 本质是将军饮马的推广
+
+  **3. 代数方法**
+  - **配方法**：$y = a(x-h)^{2}+k$，平方项非负决定最值方向
+  - **AM-GM**：$a+b \geq 2\sqrt{ab}$，使用前必须检验"一正二定三相等"
+  - 两种方法互为补充，配方法适用于二次函数，AM-GM 适用于乘积/商的结构
+
+  **4. 几何代数结合**
+  - 距离之和 → 反射法（几何）
+  - 距离平方之和 → 中点公式 + 配方（代数）
+  - 建坐标系：将几何约束转化为一元函数，再求最值
+
+summaryEn: |
+  This special topic systematically covers four methods for <<最值问题/optimization problems>>:
+
+  **1. Reflection Method (Drinking Horse)**
+  - Core principle: reflection gives $AP = A'P$, converting a broken path to a straight line
+  - Three steps: reflect, replace, straighten (triangle inequality)
+  - Double reflection: path touching two lines requires two reflections; $\angle P_{1}OP_{2} = 2\angle MON$
+
+  **2. Triangle Perimeter Optimization**
+  - Fixed base and height → isosceles triangle minimises perimeter
+  - A generalisation of the Drinking Horse Problem
+
+  **3. Algebraic Methods**
+  - **Completing the square**: $y = a(x-h)^{2}+k$; the non-negative squared term determines min vs. max
+  - **AM-GM**: $a+b \geq 2\sqrt{ab}$; always check "positive, constant, achievable" before using
+  - The two methods complement each other: completing the square for quadratics, AM-GM for product/quotient structures
+
+  **4. Combined Geometric-Algebraic**
+  - Sum of distances → reflection (geometry)
+  - Sum of squared distances → midpoint formula + completing the square (algebra)
+  - Set up coordinates: convert geometric constraints to a one-variable function, then optimise

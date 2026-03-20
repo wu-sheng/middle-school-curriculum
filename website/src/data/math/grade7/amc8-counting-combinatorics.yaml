@@ -1,0 +1,1391 @@
+title: "\U0001F3C6 AMC 8 扩展：计数与组合基础"
+titleEn: "\U0001F3C6 AMC 8 Extension: Counting & Combinatorics"
+chapter: 13
+subject: math
+grade: grade7
+semester: semester2
+estimatedTime: 约 4–6 课时，每课时 45 分钟
+estimatedTimeEn: "4–6 sessions, ~45 min each"
+targetAudience: 七年级自学生，已完成方程组与不等式，希望掌握AMC 8核心计数方法
+
+objectives:
+  - 掌握加法原理和乘法原理，并能正确区分"或"与"且"的使用场景
+  - 理解排列与组合的概念，会用公式 $P(n,r)$ 和 $C(n,r)$ 求解计数问题
+  - 学会补集计数法（正难则反），高效解决"至少"类问题
+  - 掌握分类讨论法，能将复杂计数问题分解为不重不漏的小问题
+  - 培养 AMC 8 计数题的系统思维，避免重复计数和遗漏
+objectivesEn:
+  - Master the Addition and Multiplication Principles and correctly identify "or" vs. "and" scenarios
+  - Understand permutations and combinations; apply $P(n,r)$ and $C(n,r)$ formulas
+  - 'Learn complementary counting (count the opposite, then subtract): efficiently solve "at least" problems'
+  - Master systematic casework to break complex counting into non-overlapping, exhaustive cases
+  - Develop systematic thinking for AMC 8 counting problems, avoiding double-counting and omissions
+
+concepts:
+  - id: counting-principles
+    title: 加法原理与乘法原理
+    titleEn: Addition and Multiplication Principles
+    content: |
+      **为什么计数是 AMC 8 的核心？**
+
+      在 AMC 8 的 25 道题中，通常有 4–5 道直接考查计数方法，还有 3–4 道概率题的基础也是计数。
+      掌握计数原理，就掌握了 AMC 8 近三分之一的分数来源。
+
+      **<<加法原理/Addition Principle>>**
+
+      如果完成一项任务有**两类不同的方法**，第一类有 $m$ 种方案，第二类有 $n$ 种方案，且两类方案**没有重叠**，则总方案数为 $m + n$。
+
+      关键词：**"或"**（做 A **或**做 B）→ 用加法。
+
+      **生活例子**：从北京到上海，可以坐飞机（3 个航班）**或**坐高铁（5 个车次），共有 $3 + 5 = 8$ 种选择。
+
+      **<<乘法原理/Multiplication Principle>>**
+
+      如果完成一项任务需要**两个步骤**，第一步有 $m$ 种选择，第二步有 $n$ 种选择，则总方案数为 $m \times n$。
+
+      关键词：**"且"**（做完 A **然后**做 B）→ 用乘法。
+
+      **生活例子**：吃午餐要选主食（3 种）**和**饮料（4 种），共有 $3 \times 4 = 12$ 种搭配。
+
+      **辨析：什么时候用加法，什么时候用乘法？**
+
+      | 加法原理（或） | 乘法原理（且） |
+      |---------------|---------------|
+      | 方法之间**互斥** | 步骤之间**独立** |
+      | 做完 A **就完成了**任务 | 做完 A **还没完成**，还需要 B |
+      | 合并不同的完整方案 | 组合各步骤的选择 |
+
+      **易错点**：很多同学在 AMC 8 中**把加法和乘法搞反**。
+
+      例：从 A 到 C，可以经过 B（2 条路）或经过 D（3 条路）。
+      问从 A 到 C 有几条路？答：$2 + 3 = 5$（不是 $2 \times 3 = 6$！因为经 B 和经 D 是**两类方法**，不是两个步骤）
+
+      例：从 A 到 C 必须先经过 B，A 到 B 有 2 条路，B 到 C 有 3 条路。
+      问从 A 到 C 有几条路？答：$2 \times 3 = 6$（两个步骤都要完成）
+
+      **推广到多步/多类**：
+
+      加法推广：$m_1 + m_2 + m_3 + \cdots + m_k$
+
+      乘法推广：$m_1 \times m_2 \times m_3 \times \cdots \times m_k$
+    contentEn: |
+      **Why is counting central to AMC 8?**
+
+      Out of 25 AMC 8 problems, typically 4–5 test counting directly, and another 3–4 probability problems rely on counting as their foundation. Mastering counting principles covers nearly a third of the exam.
+
+      **<<加法原理/Addition Principle>>**
+
+      If a task can be accomplished by **one of two methods** — method A in $m$ ways **or** method B in $n$ ways, with no overlap — then the total number of ways is $m + n$.
+
+      Keyword: **"or"** (do A **or** B) → add.
+
+      **Real-life example**: Travel from Beijing to Shanghai by plane (3 flights) **or** high-speed rail (5 trains): $3 + 5 = 8$ options.
+
+      **<<加法原理/Multiplication Principle>>**
+
+      If a task requires **two steps** — step 1 with $m$ choices **and** step 2 with $n$ choices — then the total number of ways is $m \times n$.
+
+      Keyword: **"and"** (do A **then** B) → multiply.
+
+      **Real-life example**: Choosing lunch requires a main dish (3 options) **and** a drink (4 options): $3 \times 4 = 12$ combos.
+
+      **How to tell addition from multiplication?**
+
+      | Addition (or) | Multiplication (and) |
+      |--------------|---------------------|
+      | Methods are **mutually exclusive** | Steps are **independent** |
+      | Completing A **finishes** the task | Completing A is **not enough** — you still need B |
+      | Merge different complete plans | Combine choices across steps |
+
+      **Common mistake**: Many AMC 8 students **confuse addition and multiplication**.
+
+      Example: From A to C, you can go via B (2 routes) or via D (3 routes). Total routes A→C? Answer: $2 + 3 = 5$ (NOT $2 \times 3$! Going via B and via D are two **categories**, not two steps.)
+
+      Example: From A to C you **must** go through B. A→B: 2 routes, B→C: 3 routes. Total A→C? Answer: $2 \times 3 = 6$ (both steps are required.)
+
+      **Extension to multiple steps/categories**:
+
+      Addition: $m_1 + m_2 + m_3 + \cdots + m_k$
+
+      Multiplication: $m_1 \times m_2 \times m_3 \times \cdots \times m_k$
+    notes:
+      - '判断用加法还是乘法的口诀："分类用加，分步用乘"'
+      - '加法原理的关键前提：各类方案之间不能有重叠（互斥）'
+      - '乘法原理的关键前提：各步骤之间的选择互不影响（独立）'
+    notesEn:
+      - 'Mnemonic: "Categories → add; Steps → multiply"'
+      - 'Addition requires the categories to be mutually exclusive (no overlap)'
+      - 'Multiplication requires the steps to be independent of each other'
+
+  - id: permutations-combinations
+    title: 排列与组合
+    titleEn: Permutations and Combinations
+    content: |
+      **<<阶乘/factorial>>**
+
+      $n! = n \times (n-1) \times (n-2) \times \cdots \times 2 \times 1$
+
+      例如：$5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$
+
+      特别规定：$0! = 1$（这不是约定，是有数学理由的——从空集中选 0 个元素恰好只有 1 种方式）
+
+      前几个阶乘值（建议记住）：$1!=1$，$2!=2$，$3!=6$，$4!=24$，$5!=120$，$6!=720$
+
+      **<<排列/Permutation>>——顺序有关**
+
+      从 $n$ 个不同元素中选出 $r$ 个，**按顺序排列**，方案数为：
+
+      $$P(n, r) = \frac{n!}{(n-r)!} = n \times (n-1) \times \cdots \times (n-r+1)$$
+
+      理解方式：第一个位置有 $n$ 种选择，第二个位置有 $n-1$ 种……第 $r$ 个位置有 $n-r+1$ 种。
+
+      **例子**：8 名同学中选 3 人分别担任班长、副班长、学习委员（职位不同，顺序有关）。
+      $$P(8, 3) = 8 \times 7 \times 6 = 336$$
+
+      **<<组合/Combination>>——顺序无关**
+
+      从 $n$ 个不同元素中选出 $r$ 个，**不考虑顺序**（只关心"选了谁"），方案数为：
+
+      $$C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} = \frac{P(n,r)}{r!}$$
+
+      理解方式：先按排列选出 $P(n,r)$ 种，再除以 $r!$（消除同一组的排列重复）。
+
+      **例子**：8 名同学中选 3 人组成一个委员会（没有职位区分，顺序无关）。
+      $$C(8, 3) = \frac{8!}{3! \times 5!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56$$
+
+      **排列 vs 组合——如何判断？**
+
+      问自己一个问题：**"交换被选中的人的位置，结果会变吗？"**
+
+      - 变 → 排列（站排、分配不同职位、排座位……）
+      - 不变 → 组合（选人组队、选菜品、抽签……）
+
+      **<<帕斯卡三角/Pascal's Triangle>>**
+
+      组合数有一个漂亮的递推关系：$C(n, r) = C(n-1, r-1) + C(n-1, r)$
+
+      用三角形排列出来，就是帕斯卡三角（杨辉三角）：
+      $$1$$
+      $$1 \quad 1$$
+      $$1 \quad 2 \quad 1$$
+      $$1 \quad 3 \quad 3 \quad 1$$
+      $$1 \quad 4 \quad 6 \quad 4 \quad 1$$
+      $$1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1$$
+
+      第 $n$ 行（从 0 开始计数）的第 $r$ 个数就是 $C(n, r)$。
+
+      **常用组合数**（记住能提高做题速度）：
+
+      | $C(n,r)$ | 值 |
+      |----------|---|
+      | $C(n,0)=C(n,n)$ | $1$ |
+      | $C(n,1)=C(n,n-1)$ | $n$ |
+      | $C(5,2)$ | $10$ |
+      | $C(6,2)$ | $15$ |
+      | $C(6,3)$ | $20$ |
+      | $C(7,3)$ | $35$ |
+      | $C(8,3)$ | $56$ |
+      | $C(10,3)$ | $120$ |
+    contentEn: |
+      **<<阶乘/Factorial>>**
+
+      $n! = n \times (n-1) \times (n-2) \times \cdots \times 2 \times 1$
+
+      Example: $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$
+
+      By convention: $0! = 1$ (there is exactly one way to choose 0 items from an empty set).
+
+      Memorize the first few: $1!=1$, $2!=2$, $3!=6$, $4!=24$, $5!=120$, $6!=720$
+
+      **<<排列/Permutation>> — order matters**
+
+      Choosing $r$ items from $n$ distinct items and **arranging** them:
+
+      $$P(n, r) = \frac{n!}{(n-r)!} = n \times (n-1) \times \cdots \times (n-r+1)$$
+
+      Think of it this way: the 1st slot has $n$ choices, the 2nd has $n-1$, ..., the $r$-th has $n-r+1$.
+
+      **Example**: From 8 students, choose a president, vice-president, and secretary (different roles, order matters):
+      $$P(8, 3) = 8 \times 7 \times 6 = 336$$
+
+      **<<组合/Combination>> — order doesn't matter**
+
+      Choosing $r$ items from $n$ distinct items, **ignoring order** (only "who" is chosen matters):
+
+      $$C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} = \frac{P(n,r)}{r!}$$
+
+      Idea: first count ordered selections $P(n,r)$, then divide by $r!$ to remove duplicate orderings within each group.
+
+      **Example**: Choose 3 students from 8 to form a committee (no roles, order irrelevant):
+      $$C(8, 3) = \frac{8!}{3! \times 5!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56$$
+
+      **Permutation vs. Combination — how to tell?**
+
+      Ask yourself: **"If I swap the selected items' positions, does the result change?"**
+
+      - Yes → Permutation (lining up, assigning roles, seating...)
+      - No → Combination (forming teams, picking dishes, drawing lots...)
+
+      **<<帕斯卡三角/Pascal's Triangle>>**
+
+      Combinations satisfy a beautiful recurrence: $C(n, r) = C(n-1, r-1) + C(n-1, r)$
+
+      Arranged in a triangle (also known as Yang Hui's Triangle in China):
+      $$1$$
+      $$1 \quad 1$$
+      $$1 \quad 2 \quad 1$$
+      $$1 \quad 3 \quad 3 \quad 1$$
+      $$1 \quad 4 \quad 6 \quad 4 \quad 1$$
+      $$1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1$$
+
+      The $r$-th entry (0-indexed) in row $n$ equals $C(n, r)$.
+
+      **Useful combination values** (memorize for speed):
+
+      | $C(n,r)$ | Value |
+      |----------|-------|
+      | $C(n,0)=C(n,n)$ | $1$ |
+      | $C(n,1)=C(n,n-1)$ | $n$ |
+      | $C(5,2)$ | $10$ |
+      | $C(6,2)$ | $15$ |
+      | $C(6,3)$ | $20$ |
+      | $C(7,3)$ | $35$ |
+      | $C(8,3)$ | $56$ |
+      | $C(10,3)$ | $120$ |
+    notes:
+      - '$C(n,r) = C(n, n-r)$——"选 $r$ 个拿走"等同于"选 $n-r$ 个留下"'
+      - '排列是"有序选择"，组合是"无序选择"——判断标准是"交换位置结果是否变化"'
+      - '帕斯卡三角每行之和为 $2^n$：$C(n,0)+C(n,1)+\cdots+C(n,n)=2^n$'
+    notesEn:
+      - '$C(n,r) = C(n,n-r)$ — choosing $r$ to take is the same as choosing $n-r$ to leave'
+      - 'Permutation = ordered selection; Combination = unordered selection. Test: does swapping change the outcome?'
+      - 'Each row of Pascal''s Triangle sums to $2^n$: $C(n,0)+C(n,1)+\cdots+C(n,n)=2^n$'
+
+  - id: complementary-counting
+    title: 补集计数法
+    titleEn: Complementary Counting
+    content: |
+      **核心思想：正难则反**
+
+      有些计数问题直接数很麻烦（情况太多、太杂），但如果换个角度，数**不满足条件的方案数**反而很简单。
+
+      $$\text{满足条件的方案数} = \text{总方案数} - \text{不满足条件的方案数}$$
+
+      这就是<<补集计数法/complementary counting>>——先算全集，再减去补集。
+
+      **什么时候用补集计数？**
+
+      当你看到这些关键词时，立刻想到补集计数：
+      - **"至少一个"**（at least one）
+      - **"不全是"**（not all the same）
+      - **"不相邻"**（not adjacent）
+      - 直接分类需要讨论大量情况
+
+      **经典例子 1：至少一个 6**
+
+      掷两个骰子，至少出现一个 6 的方案数？
+
+      直接数：(6,1), (6,2), ..., (6,6), (1,6), (2,6), ..., (5,6)——容易遗漏或重复。
+
+      补集法：
+      - 总方案数：$6 \times 6 = 36$
+      - 没有 6 的方案数：每个骰子只能出 1–5，共 $5 \times 5 = 25$
+      - 至少一个 6：$36 - 25 = 11$
+
+      **经典例子 2：不全相同**
+
+      掷 3 个骰子，结果不全相同的方案数？
+
+      补集法：
+      - 总方案数：$6^3 = 216$
+      - 三个全相同的方案数：(1,1,1), (2,2,2), ..., (6,6,6) = 6
+      - 不全相同：$216 - 6 = 210$
+
+      **经典例子 3：不相邻（AMC 8 高频考点）**
+
+      4 个人排成一排，其中 A 和 B 不相邻，有多少种排法？
+
+      补集法：
+      - 总排法：$4! = 24$
+      - A 和 B 相邻的排法：把 AB 捆绑成一个整体，与另外 2 人共 3 个元素排列 → $3! = 6$ 种，但 AB 内部可以交换 → $6 \times 2 = 12$
+      - A 和 B 不相邻：$24 - 12 = 12$
+
+      **补集计数的关键**：
+      1. 准确计算"总数"
+      2. 准确定义"补集"（反面条件）
+      3. 确保补集恰好覆盖了所有不满足条件的情况
+    contentEn: |
+      **Core idea: when the direct approach is hard, count the opposite**
+
+      Some counting problems are messy to attack head-on (too many cases), but the **complement** — counting what you do NOT want — may be simple.
+
+      $$\text{Wanted} = \text{Total} - \text{Unwanted}$$
+
+      This is <<补集计数法/complementary counting>> — compute the universe, then subtract the complement.
+
+      **When to use complementary counting?**
+
+      Reach for it whenever you see these keywords:
+      - **"at least one"**
+      - **"not all the same"**
+      - **"not adjacent"**
+      - Direct casework has too many branches
+
+      **Classic example 1: at least one 6**
+
+      Roll two dice. How many outcomes have at least one 6?
+
+      Direct counting is error-prone (easy to double-count (6,6)).
+
+      Complementary:
+      - Total outcomes: $6 \times 6 = 36$
+      - No 6 at all: each die shows 1–5, so $5 \times 5 = 25$
+      - At least one 6: $36 - 25 = 11$
+
+      **Classic example 2: not all the same**
+
+      Roll 3 dice. How many outcomes are NOT all the same?
+
+      Complementary:
+      - Total: $6^3 = 216$
+      - All three the same: (1,1,1), (2,2,2), ..., (6,6,6) = 6
+      - Not all the same: $216 - 6 = 210$
+
+      **Classic example 3: not adjacent (AMC 8 favorite)**
+
+      4 people stand in a row. How many arrangements have A and B NOT next to each other?
+
+      Complementary:
+      - Total arrangements: $4! = 24$
+      - A and B adjacent: tie AB into one block → 3 items to arrange → $3! = 6$; AB can swap internally → $6 \times 2 = 12$
+      - A and B not adjacent: $24 - 12 = 12$
+
+      **Keys to complementary counting**:
+      1. Compute the total accurately
+      2. Define the complement precisely
+      3. Make sure the complement covers exactly what you don't want
+    notes:
+      - '"正难则反"是 AMC 8 计数题最常用的技巧——遇到"至少""不全"就该想到'
+      - '补集计数最容易犯的错：忘记某些情况也属于补集，导致减少了'
+      - '概率题也能用补集：$P(\text{至少一个}) = 1 - P(\text{一个都没有})$'
+    notesEn:
+      - '"Count the opposite" is the most commonly used AMC 8 counting technique — trigger words: "at least", "not all"'
+      - 'Most common error: missing some cases in the complement, so you subtract too little'
+      - 'Works for probability too: $P(\text{at least one}) = 1 - P(\text{none})$'
+
+  - id: casework
+    title: 分类讨论法
+    titleEn: Systematic Casework
+    content: |
+      **什么是分类讨论？**
+
+      当一个计数问题不能一步到位时，我们把它按某个标准**分成若干类**，分别计数，最后加起来。
+
+      <<分类讨论法/systematic casework>>的两个原则（缺一不可）：
+
+      1. **不重复（互斥）**：任何一个方案只能属于一类（Mutually Exclusive）
+      2. **不遗漏（完备）**：所有方案都被某一类包含（Exhaustive）
+
+      简记为：**不重不漏**。
+
+      **如何选择分类标准？**
+
+      好的分类标准能让每一类的计数变简单。常见策略：
+      - **按某个关键变量的值分类**：如"第一个数字是几"
+      - **按最大/最小值分类**：如"最大的牌是哪张"
+      - **按某个约束条件分类**：如"是否包含 0"
+
+      **例子：三位偶数**
+
+      用数字 0, 1, 2, 3, 4 组成无重复数字的三位偶数，有多少个？
+
+      按末位（个位）分类（偶数的个位只能是 0, 2, 4）：
+
+      **Case 1：个位 = 0**
+      百位：从 {1,2,3,4} 中选 1 个 → 4 种
+      十位：从剩余 3 个中选 1 个 → 3 种
+      小计：$4 \times 3 = 12$
+
+      **Case 2：个位 = 2**
+      百位：从 {1,3,4}（不能选 0 当百位，也不能再选 2）→ 3 种
+      十位：从剩余 3 个（含 0）中选 1 个 → 3 种
+      小计：$3 \times 3 = 9$
+
+      **Case 3：个位 = 4**（与 Case 2 对称）
+      小计：$3 \times 3 = 9$
+
+      总计：$12 + 9 + 9 = 30$
+
+      **AMC 8 中的分类讨论**
+
+      分类讨论在 AMC 8 中极为常见，特别是：
+      - **树形图法**：从第一步开始画分支，逐步展开所有可能
+      - **按第一个选择分类**：先固定第一步的选择，再分别处理后续
+      - **按特殊元素分类**：比如"0 在/不在百位""某人选/不选"
+
+      **易错点**：
+      - **遗漏情况**：忘记某一类（如忘了末位 = 0 和末位 ≠ 0 要分开讨论）
+      - **重复计数**：两类之间有交叉
+      - **分类不当**：选了一个让计算变复杂的标准
+    contentEn: |
+      **What is casework?**
+
+      When a counting problem can't be solved in one shot, we split it into **several categories** based on some criterion, count each category separately, and add the results.
+
+      Two principles of <<分类讨论法/systematic casework>> (both are essential):
+
+      1. **No overlap (Mutually Exclusive)**: every outcome belongs to exactly one category
+      2. **No gaps (Exhaustive)**: every outcome is covered by some category
+
+      In short: **no double-counting, no omissions**.
+
+      **How to choose the splitting criterion?**
+
+      A good criterion makes each case easy to count. Common strategies:
+      - **Split by a key variable's value**: e.g., "what is the first digit?"
+      - **Split by max/min value**: e.g., "what is the largest card?"
+      - **Split by a constraint**: e.g., "does the number contain 0?"
+
+      **Example: three-digit even numbers**
+
+      Using digits 0, 1, 2, 3, 4 (no repeats), how many three-digit even numbers can you form?
+
+      Split by the units digit (must be 0, 2, or 4 for even):
+
+      **Case 1: units = 0**
+      Hundreds: choose from {1,2,3,4} → 4 choices
+      Tens: choose from remaining 3 → 3 choices
+      Subtotal: $4 \times 3 = 12$
+
+      **Case 2: units = 2**
+      Hundreds: from {1,3,4} (0 can't lead, 2 is used) → 3 choices
+      Tens: from remaining 3 (including 0) → 3 choices
+      Subtotal: $3 \times 3 = 9$
+
+      **Case 3: units = 4** (symmetric to Case 2)
+      Subtotal: $3 \times 3 = 9$
+
+      Total: $12 + 9 + 9 = 30$
+
+      **Casework in AMC 8**
+
+      Casework is extremely common on AMC 8, especially:
+      - **Tree diagrams**: branch out from the first step, expanding all possibilities
+      - **Fix the first choice**: lock in step 1, then handle the rest
+      - **Split by a special element**: e.g., "0 is / isn't in the hundreds place", "person X is / isn't selected"
+
+      **Common mistakes**:
+      - **Missing a case**: forgetting that units = 0 needs separate treatment from units ≠ 0
+      - **Double-counting**: two categories overlap
+      - **Poor criterion choice**: picking a split that makes calculation harder
+    notes:
+      - '分类讨论的口诀："不重不漏"——每个方案恰好属于一类'
+      - '画树形图是最直观的分类讨论方式，适合步骤不超过 4 步的问题'
+      - '遇到"0"参与的排列问题，一定要单独讨论 0 在首位的情况'
+    notesEn:
+      - 'Casework mantra: "no overlap, no gaps" — every outcome belongs to exactly one case'
+      - 'Tree diagrams are the most visual form of casework; best when there are ≤ 4 steps'
+      - 'When 0 is among the digits, always handle "0 in the leading position" as a separate case'
+
+examples:
+  - type: 1
+    source: "AMC 8 2024 #8"
+    title: 树形图分类——Taye 的钱
+    titleEn: Tree Diagram Casework — Taye's Money
+    question: |
+      星期一 Taye 有 $\$2$。之后每天，他要么获得 $\$3$，要么把当前的钱翻倍。
+      到星期四（3 天后），Taye 可能拥有多少种**不同的**金额？
+
+      (A) 3 &emsp; (B) 4 &emsp; (C) 5 &emsp; (D) 6 &emsp; (E) 7
+    questionEn: |
+      On Monday Taye has $\$2$. Every day after that he either gains $\$3$ or doubles his money.
+      How many different dollar amounts could Taye have on Thursday (3 days later)?
+
+      (A) 3 &emsp; (B) 4 &emsp; (C) 5 &emsp; (D) 6 &emsp; (E) 7
+    steps:
+      - '从 $\$2$ 出发，每天有 2 个选择（+3 或 ×2），3 天共有 $2^3 = 8$ 条路径'
+      - '画树形图，逐步计算每条路径的结果：'
+      - '路径 +3, +3, +3：$2 \to 5 \to 8 \to 11$'
+      - '路径 +3, +3, ×2：$2 \to 5 \to 8 \to 16$'
+      - '路径 +3, ×2, +3：$2 \to 5 \to 10 \to 13$'
+      - '路径 +3, ×2, ×2：$2 \to 5 \to 10 \to 20$'
+      - '路径 ×2, +3, +3：$2 \to 4 \to 7 \to 10$'
+      - '路径 ×2, +3, ×2：$2 \to 4 \to 7 \to 14$'
+      - '路径 ×2, ×2, +3：$2 \to 4 \to 8 \to 11$'
+      - '路径 ×2, ×2, ×2：$2 \to 4 \to 8 \to 16$'
+      - '8 条路径的结果：11, 16, 13, 20, 10, 14, 11, 16'
+      - '去重后的不同金额：$\{10, 11, 13, 14, 16, 20\}$，共 $\mathbf{6}$ 种'
+    stepsEn:
+      - 'Starting from $\$2$, each day has 2 choices (+3 or ×2), so $2^3 = 8$ paths over 3 days'
+      - 'Draw a tree diagram and compute each path:'
+      - 'Path +3, +3, +3: $2 \to 5 \to 8 \to 11$'
+      - 'Path +3, +3, ×2: $2 \to 5 \to 8 \to 16$'
+      - 'Path +3, ×2, +3: $2 \to 5 \to 10 \to 13$'
+      - 'Path +3, ×2, ×2: $2 \to 5 \to 10 \to 20$'
+      - 'Path ×2, +3, +3: $2 \to 4 \to 7 \to 10$'
+      - 'Path ×2, +3, ×2: $2 \to 4 \to 7 \to 14$'
+      - 'Path ×2, ×2, +3: $2 \to 4 \to 8 \to 11$'
+      - 'Path ×2, ×2, ×2: $2 \to 4 \to 8 \to 16$'
+      - 'The 8 outcomes: 11, 16, 13, 20, 10, 14, 11, 16'
+      - 'Distinct values: $\{10, 11, 13, 14, 16, 20\}$ — that is $\mathbf{6}$ amounts'
+    answer: '(D) 6'
+    answerEn: '(D) 6'
+
+  - type: 2
+    source: "AMC 8 2020 #23"
+    title: 容斥原理分配——五个奖给三人
+    titleEn: Inclusion-Exclusion Distribution — Five Awards to Three Students
+    question: |
+      五个不同的奖项分给三个学生，每个学生至少获得一个奖项。
+      有多少种不同的分配方式？
+
+      (A) 120 &emsp; (B) 150 &emsp; (C) 180 &emsp; (D) 210 &emsp; (E) 240
+    questionEn: |
+      Five different awards are to be given to three students. Each student must receive at least one award.
+      In how many ways can the awards be distributed?
+
+      (A) 120 &emsp; (B) 150 &emsp; (C) 180 &emsp; (D) 210 &emsp; (E) 240
+    steps:
+      - '如果没有"每人至少一个"的限制，每个奖项有 3 个学生可选，总共 $3^5 = 243$ 种'
+      - '用<<补集计数法/complementary counting>>减去"至少一个学生没得奖"的情况'
+      - '设 $A_i$ = 学生 $i$ 没有获奖的分配方案集合'
+      - '|$A_i$| = $2^5 = 32$（奖项只分给另外两人），有 $C(3,1) = 3$ 个这样的集合'
+      - '|$A_i \cap A_j$| = $1^5 = 1$（所有奖项给唯一剩下的人），有 $C(3,2) = 3$ 对'
+      - '由<<容斥原理/inclusion-exclusion>>：$|A_1 \cup A_2 \cup A_3| = 3 \times 32 - 3 \times 1 = 96 - 3 = 93$'
+      - '满足条件的方案数 $= 243 - 93 = \mathbf{150}$'
+    stepsEn:
+      - 'Without the "at least one each" restriction, each award has 3 choices: $3^5 = 243$ total'
+      - 'Use <<补集计数法/complementary counting>> to subtract distributions where at least one student gets nothing'
+      - 'Let $A_i$ = set of distributions where student $i$ gets no award'
+      - '$|A_i| = 2^5 = 32$ (awards go to the other two only); there are $C(3,1) = 3$ such sets'
+      - '$|A_i \cap A_j| = 1^5 = 1$ (all awards go to the one remaining student); $C(3,2)=3$ pairs'
+      - 'By <<容斥原理/inclusion-exclusion>>: $|A_1 \cup A_2 \cup A_3| = 3 \times 32 - 3 \times 1 = 93$'
+      - 'Valid distributions $= 243 - 93 = \mathbf{150}$'
+    answer: '(B) 150'
+    answerEn: '(B) 150'
+
+  - type: 3
+    source: "AMC 8 2020 #10"
+    title: 补集计数——弹珠不相邻
+    titleEn: Complementary Counting — Marbles Not Adjacent
+    question: |
+      Zara 有 4 颗弹珠：Aggie、Bumblebee、Steelie 和 Tiger。
+      她想把它们排成一排放在架子上，但不想让 Steelie 和 Tiger 相邻。
+      有多少种排法？
+
+      (A) 6 &emsp; (B) 8 &emsp; (C) 12 &emsp; (D) 18 &emsp; (E) 24
+    questionEn: |
+      Zara has a collection of 4 marbles: an Aggie, a Bumblebee, a Steelie, and a Tiger.
+      She wants to display them in a row on a shelf, but does not want to put the Steelie and the Tiger next to each other.
+      In how many ways can she do this?
+
+      (A) 6 &emsp; (B) 8 &emsp; (C) 12 &emsp; (D) 18 &emsp; (E) 24
+    steps:
+      - '总排法：$4! = 24$'
+      - '补集：Steelie 和 Tiger 相邻的排法'
+      - '把 S 和 T "捆绑"成一个整体，与 A、B 共 3 个元素排列：$3! = 6$'
+      - '捆绑内部 S 和 T 可以互换：$6 \times 2 = 12$'
+      - 'S 和 T 不相邻的排法 $= 24 - 12 = \mathbf{12}$'
+    stepsEn:
+      - 'Total arrangements: $4! = 24$'
+      - 'Complement: arrangements where S and T ARE adjacent'
+      - 'Tie S and T into one block; arrange the block, A, and B as 3 items: $3! = 6$'
+      - 'S and T can swap within the block: $6 \times 2 = 12$'
+      - 'S and T NOT adjacent: $24 - 12 = \mathbf{12}$'
+    answer: '(C) 12'
+    answerEn: '(C) 12'
+
+  - type: 4
+    source: "AMC 8 2016 #17"
+    title: 补集计数——ATM 密码
+    titleEn: Complementary Counting — ATM Password
+    question: |
+      Fred 银行的 ATM 密码由四位数字组成（每位可以是 0 到 9，允许重复）。
+      规定密码不能以 9, 1, 1 开头（即前三位不能是 911）。
+      有多少种可能的密码？
+
+      (A) 30 &emsp; (B) 7290 &emsp; (C) 9000 &emsp; (D) 9990 &emsp; (E) 9999
+    questionEn: |
+      An ATM password at Fred's Bank is composed of four digits from 0 to 9, with repeated digits allowed.
+      No password may begin with the sequence 9, 1, 1.
+      How many passwords are possible?
+
+      (A) 30 &emsp; (B) 7290 &emsp; (C) 9000 &emsp; (D) 9990 &emsp; (E) 9999
+    steps:
+      - '总密码数：每位有 10 个选择，共 $10^4 = 10000$'
+      - '补集：以 911 开头的密码。前三位固定为 9, 1, 1，第四位有 10 个选择，共 10 种'
+      - '合法密码数 $= 10000 - 10 = \mathbf{9990}$'
+    stepsEn:
+      - 'Total passwords: $10^4 = 10000$ (each of 4 digits has 10 choices)'
+      - 'Complement: passwords starting with 911. First three fixed, last has 10 choices → 10 passwords'
+      - 'Valid passwords $= 10000 - 10 = \mathbf{9990}$'
+    answer: '(D) 9990'
+    answerEn: '(D) 9990'
+
+exercises:
+  timeGuide:
+    total: 约 45 分钟
+    sections:
+      - range: "1–3"
+        time: 加法与乘法原理（约 10 分钟）
+      - range: "4–7"
+        time: 排列与组合（约 12 分钟）
+      - range: "8–10"
+        time: 补集计数法（约 10 分钟）
+      - range: "11–12"
+        time: 分类讨论与综合（约 13 分钟）
+  scaffold:
+    - title: '铺垫：有序列举'
+      titleEn: 'Warm-up: Systematic Listing'
+      question: '从 {A, B, C} 中选 2 个排成一排，有几种排法？请一一列举出来。'
+      questionEn: 'Pick 2 from {A, B, C} and arrange in a row. How many ways? List them all.'
+      hint: '固定第一个位置，逐个试：A在前→AB, AC；B在前→...'
+      hintEn: 'Fix the first position: A first → AB, AC; B first → ...'
+      answer: 'AB, AC, BA, BC, CA, CB，共 6 种。（这就是 $P(3,2) = 3 \times 2 = 6$）'
+      answerEn: 'AB, AC, BA, BC, CA, CB — 6 ways. (This is $P(3,2) = 3 \times 2 = 6$)'
+    - title: '铺垫：画树形图'
+      titleEn: 'Warm-up: Draw a Tree Diagram'
+      question: '抛一枚硬币两次，用树形图列出所有可能的结果。'
+      questionEn: 'Toss a coin twice. Draw a tree diagram showing all possible outcomes.'
+      hint: '第一次：正/反 → 第二次各有两种'
+      hintEn: 'First toss: H/T → each leads to two outcomes for the second toss'
+      answer: '4种结果：正正、正反、反正、反反。树形图有 2×2=4 个叶子。'
+      answerEn: '4 outcomes: HH, HT, TH, TT. The tree has 2×2=4 leaves.'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2017 #10"
+      section: 加法与乘法原理
+      question: |
+        一个箱子里有编号为 1, 2, 3, 4, 5 的卡片。随机抽出 3 张（不放回）。
+        4 恰好是抽出的 3 张中最大的一张的概率是多少？
+      questionEn: |
+        A box contains five cards, numbered 1, 2, 3, 4, and 5. Three cards are selected randomly without replacement.
+        What is the probability that 4 is the largest value selected?
+      choices:
+        - label: A
+          content: '$\frac{1}{10}$'
+        - label: B
+          content: '$\frac{1}{5}$'
+        - label: C
+          content: '$\frac{3}{10}$'
+        - label: D
+          content: '$\frac{2}{5}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: C
+      answer: '(C) $\frac{3}{10}$'
+      answerEn: '(C) $\frac{3}{10}$'
+      explanation: |
+        从 5 张中选 3 张的总方案数：$C(5,3) = 10$。
+        4 是最大值，意味着必须选 4，且另外 2 张来自 {1, 2, 3}：$C(3,2) = 3$。
+        概率 $= \frac{3}{10}$。
+
+        💡 **另一种方法——完全列举：**
+        把所有 10 种选法写出来：
+        {1,2,3}, {1,2,4}, {1,2,5}, {1,3,4}, {1,3,5}, {1,4,5}, {2,3,4}, {2,3,5}, {2,4,5}, {3,4,5}。
+        最大值恰好是 4 的：{1,2,4}, {1,3,4}, {2,3,4} — 共 3 种。$P = \frac{3}{10}$。
+        10 种不多，全列出来反而最不容易遗漏！
+      explanationEn: |
+        Total ways to choose 3 from 5: $C(5,3) = 10$.
+        For 4 to be the largest, we must include 4, and the other 2 come from {1, 2, 3}: $C(3,2) = 3$.
+        Probability $= \frac{3}{10}$.
+
+        💡 **Alternative — Full Listing:**
+        Write out all 10 possible selections:
+        {1,2,3}, {1,2,4}, {1,2,5}, {1,3,4}, {1,3,5}, {1,4,5}, {2,3,4}, {2,3,5}, {2,4,5}, {3,4,5}.
+        Largest is exactly 4: {1,2,4}, {1,3,4}, {2,3,4} — 3 cases. $P = \frac{3}{10}$.
+        With only 10 cases, listing them all is actually the safest approach!
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #16"
+      section: 加法与乘法原理
+      question: |
+        张教授有九本不同的语言书：两本阿拉伯语、三本德语、四本西班牙语。
+        要求同种语言的书必须放在一起，共有多少种排列方式？
+      questionEn: |
+        Professor Chang has nine different language textbooks: two Arabic, three German, and four Spanish.
+        If she keeps the Arabic books together and the Spanish books together, how many ways can she arrange all nine books on a shelf?
+      choices:
+        - label: A
+          content: '1440'
+        - label: B
+          content: '2880'
+        - label: C
+          content: '5760'
+        - label: D
+          content: '182440'
+        - label: E
+          content: '362880'
+      correctValue: C
+      answer: '(C) 5760'
+      answerEn: '(C) 5760'
+      explanation: |
+        阿拉伯语两本捆绑成一组，西班牙语四本捆绑成一组。
+        现在有 5 个"单元"要排列：[阿拉伯组], 德1, 德2, 德3, [西班牙组]。
+        5 个单元的排列：$5! = 120$。
+        阿拉伯组内部排列：$2! = 2$。西班牙组内部排列：$4! = 24$。
+        总计：$120 \times 2 \times 24 = \mathbf{5760}$。
+
+        注意：题目只要求阿拉伯和西班牙各自相邻，德语书不需要相邻，所以三本德语书是独立的单元。
+      explanationEn: |
+        Bundle the 2 Arabic books as one block and the 4 Spanish books as another block.
+        Now arrange 5 units: [Arabic block], G1, G2, G3, [Spanish block].
+        Arrangements of 5 units: $5! = 120$.
+        Internal arrangements: Arabic block $2! = 2$, Spanish block $4! = 24$.
+        Total: $120 \times 2 \times 24 = \mathbf{5760}$.
+
+        Note: only Arabic and Spanish must stay together; the three German books are separate units.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2022 #12"
+      section: 加法与乘法原理
+      question: |
+        两个转盘：转盘 A 显示 {5, 6, 7, 8}，转盘 B 显示 {1, 2, 3, 4}。
+        设 $N = 10 \times (\text{A 的数字}) + (\text{B 的数字})$。
+        $N$ 是完全平方数的概率是多少？
+      questionEn: |
+        Spinner A has numbers {5, 6, 7, 8} and spinner B has numbers {1, 2, 3, 4}.
+        Let $N = 10 \times (\text{number from A}) + (\text{number from B})$.
+        What is the probability that $N$ is a perfect square?
+      choices:
+        - label: A
+          content: '$\frac{1}{16}$'
+        - label: B
+          content: '$\frac{1}{8}$'
+        - label: C
+          content: '$\frac{1}{4}$'
+        - label: D
+          content: '$\frac{3}{8}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: B
+      answer: '(B) $\frac{1}{8}$'
+      answerEn: '(B) $\frac{1}{8}$'
+      explanation: |
+        $N$ 的范围：最小 $10 \times 5 + 1 = 51$，最大 $10 \times 8 + 4 = 84$。
+        这个范围内的完全平方数：$64 = 8^2$，$81 = 9^2$，共 2 个。
+        $N=64$：A=6, B=4 ✓。$N=81$：A=8, B=1 ✓。
+        总结果数 $= 4 \times 4 = 16$。概率 $= \frac{2}{16} = \frac{1}{8}$。
+      explanationEn: |
+        $N$ ranges from $10 \times 5 + 1 = 51$ to $10 \times 8 + 4 = 84$.
+        Perfect squares in this range: $64 = 8^2$ and $81 = 9^2$ — just 2.
+        $N=64$: A=6, B=4 ✓. $N=81$: A=8, B=1 ✓.
+        Total outcomes $= 4 \times 4 = 16$. Probability $= \frac{2}{16} = \frac{1}{8}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #7"
+      section: 排列与组合
+      question: |
+        在 2020 到 2400 之间，有多少个四位正整数满足四个数字各不相同且按递增顺序排列？
+      questionEn: |
+        How many integers between 2020 and 2400 have four distinct digits arranged in increasing order?
+      choices:
+        - label: A
+          content: '9'
+        - label: B
+          content: '10'
+        - label: C
+          content: '15'
+        - label: D
+          content: '21'
+        - label: E
+          content: '28'
+      correctValue: C
+      answer: '(C) 15'
+      answerEn: '(C) 15'
+      explanation: |
+        数字递增意味着 $d_1 < d_2 < d_3 < d_4$。
+        首位为 2，次高位至少为 3（因为递增且 > 2）。
+        若次高位为 3：数形如 $23d_3 d_4$，需 $3 < d_3 < d_4$，$d_3, d_4$ 从 {4,5,6,7,8,9} 中选 2 个：$C(6,2) = 15$。
+        若次高位为 4 或更大：数 ≥ 2456 > 2400，超出范围。
+        因此恰好 $\mathbf{15}$ 个。
+      explanationEn: |
+        Increasing digits means $d_1 < d_2 < d_3 < d_4$. First digit is 2.
+        Second digit must be 3 (if 4+, the number exceeds 2400).
+        Form: $23d_3 d_4$ with $d_3, d_4$ chosen from {4,5,6,7,8,9} (order forced by increasing): $C(6,2) = 15$.
+        Exactly $\mathbf{15}$ integers.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #25"
+      section: 排列与组合
+      question: |
+        Alice 有 24 个苹果。她要把它们分给自己、Becky 和 Chris，每人至少 2 个。
+        有多少种分法？
+      questionEn: |
+        Alice has 24 apples. In how many ways can she share them with Becky and Chris so that each of the three people has at least two apples?
+      choices:
+        - label: A
+          content: '105'
+        - label: B
+          content: '114'
+        - label: C
+          content: '190'
+        - label: D
+          content: '210'
+        - label: E
+          content: '380'
+      correctValue: C
+      answer: '(C) 190'
+      answerEn: '(C) 190'
+      explanation: |
+        先给每人 2 个，用掉 $2 \times 3 = 6$ 个，剩下 $24 - 6 = 18$ 个自由分配。
+        把 18 个相同苹果分给 3 人（每人可以 0 个或更多），用<<隔板法/stars and bars>>：
+        $C(18 + 2, 2) = C(20, 2) = \frac{20 \times 19}{2} = \mathbf{190}$。
+      explanationEn: |
+        Give 2 apples to each person first, using $2 \times 3 = 6$, leaving $24 - 6 = 18$ to distribute freely.
+        Distributing 18 identical apples among 3 people (each ≥ 0) uses <<隔板法/stars and bars>>:
+        $C(18+2, 2) = C(20,2) = \frac{20 \times 19}{2} = \mathbf{190}$.
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #19"
+      section: 排列与组合
+      question: |
+        在一个"符号金字塔"中，如果下方两个格子的符号相同，上方格子填"$+$"；如果不同，填"$-$"。
+        底行有 4 个格子，每个可以填 $+$ 或 $-$。
+        有多少种底行填法能使顶部为"$+$"？
+      questionEn: |
+        In a "sign pyramid," a cell gets "$+$" if the two cells below it have the same sign, and "$-$" if they are different.
+        The bottom row has 4 cells, each filled with $+$ or $-$.
+        How many ways can the bottom row be filled so that the top of the pyramid shows "$+$"?
+      choices:
+        - label: A
+          content: '2'
+        - label: B
+          content: '4'
+        - label: C
+          content: '8'
+        - label: D
+          content: '12'
+        - label: E
+          content: '16'
+      correctValue: C
+      answer: '(C) 8'
+      answerEn: '(C) 8'
+      explanation: |
+        底行 4 格共 $2^4 = 16$ 种配置。
+        设底行为 $a, b, c, d$（各为 $+$ 或 $-$），则第二行为 $(a \oplus b), (b \oplus c), (c \oplus d)$（这里 $\oplus$ 表示"同则 $+$，异则 $-$"，类似异或运算）。
+        逐层推导到顶部，可以证明顶部的符号等于 $a \oplus b \oplus c \oplus d$ 再做一些组合——实际上顶部 $= a \oplus d$（仅由首尾决定）。
+        顶部为 $+$ 等价于 $a = d$。$a$ 有 2 种选择，$b$ 有 2 种，$c$ 有 2 种，$d = a$（固定）。
+        共 $2 \times 2 \times 2 = \mathbf{8}$ 种。
+
+        💡 **另一种方法——16 种全列出来：**
+        只有 16 种，逐个算顶部结果最安心：
+        ++++→+, +++-→-, ++-+→-, ++--→+, +-++→-, +-+-→+, +--+→+, +---→-,
+        -+++→-, -++-→+, -+-+→+, -+--→-, --++→+, --+-→-, ---+→-, ----→+。
+        数出顶部为 + 的：8 种 ✓。这种"暴力枚举"方法不需要发现 $a=d$ 的规律！
+      explanationEn: |
+        Bottom row has $2^4 = 16$ total configurations.
+        Label the bottom as $a, b, c, d$ (each $+$ or $-$). The "same → $+$, different → $-$" rule acts like XOR.
+        Working up the pyramid, the top cell depends only on $a$ and $d$: top is $+$ iff $a = d$.
+        $a$: 2 choices, $b$: 2, $c$: 2, $d = a$ (forced). Total: $2 \times 2 \times 2 = \mathbf{8}$.
+
+        💡 **Alternative — List All 16:**
+        With only 16 cases, try each and compute the top:
+        ++++→+, +++-→-, ++-+→-, ++--→+, +-++→-, +-+-→+, +--+→+, +---→-,
+        -+++→-, -++-→+, -+-+→+, -+--→-, --++→+, --+-→-, ---+→-, ----→+.
+        Count tops that are +: 8 ✓. This brute-force approach doesn't require finding the $a=d$ shortcut!
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #13"
+      section: 排列与组合
+      question: |
+        兔子 Buzz 在一组楼梯上跳来跳去，每次跳一级（上或下）。
+        Buzz 从地面出发，跳 6 次后回到地面。有多少种不同的跳法？
+        （Buzz 不能跳到地面以下）
+      questionEn: |
+        Buzz Bunny is hopping up and down a set of stairs, one step at a time.
+        In how many ways can Buzz start on the ground, make a sequence of 6 hops, and end up back on the ground?
+        (Buzz cannot go below ground level.)
+      choices:
+        - label: A
+          content: '4'
+        - label: B
+          content: '5'
+        - label: C
+          content: '6'
+        - label: D
+          content: '8'
+        - label: E
+          content: '12'
+      correctValue: B
+      answer: '(B) 5'
+      answerEn: '(B) 5'
+      explanation: |
+        每次跳 +1（上）或 -1（下），6 次后回到 0，且过程中始终 ≥ 0。
+        需要 3 次上 + 3 次下，且任意前缀中上的次数 ≥ 下的次数。
+        这是经典的 <<卡特兰数/Catalan number>> 问题：$C_3 = \frac{1}{4} C(6,3) = \frac{1}{4} \times 20 = 5$。
+        5 条路径分别为：UUUDDD, UUDUDD, UUDDUD, UDUDUD, UDUUDD。
+      explanationEn: |
+        Each hop is +1 (up) or -1 (down). After 6 hops, back to 0, never going below 0.
+        Need 3 ups and 3 downs, with every prefix having ups ≥ downs.
+        This is the classic <<卡特兰数/Catalan number>>: $C_3 = \frac{1}{4}\binom{6}{3} = \frac{20}{4} = 5$.
+        The 5 paths: UUUDDD, UUDUDD, UUDDUD, UDUDUD, UDUUDD.
+
+    - number: 8
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #13"
+      section: 补集计数法
+      question: |
+        从集合 $\{-2, -1, 0, 3, 4, 5\}$ 中随机选两个不同的数相乘。
+        乘积为 0 的概率是多少？
+      questionEn: |
+        Two different numbers are randomly selected from the set $\{-2, -1, 0, 3, 4, 5\}$ and multiplied together.
+        What is the probability that the product is 0?
+      choices:
+        - label: A
+          content: '$\frac{1}{6}$'
+        - label: B
+          content: '$\frac{1}{5}$'
+        - label: C
+          content: '$\frac{1}{4}$'
+        - label: D
+          content: '$\frac{1}{3}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: D
+      answer: '(D) $\frac{1}{3}$'
+      answerEn: '(D) $\frac{1}{3}$'
+      explanation: |
+        从 6 个数中选 2 个：$C(6,2) = 15$ 种。
+        乘积为 0，至少一个数是 0。包含 0 的配对：0 与其余 5 个数各配一次 = 5 种。
+        概率 $= \frac{5}{15} = \frac{1}{3}$。
+      explanationEn: |
+        Choose 2 from 6: $C(6,2) = 15$.
+        Product is 0 iff at least one number is 0. Pairs containing 0: 5 (pair 0 with each of the other 5).
+        Probability $= \frac{5}{15} = \frac{1}{3}$.
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #8"
+      section: 补集计数法
+      question: |
+        Gilda 有一袋弹珠。她先给了 Pedro 20%，然后把剩下的 10% 给了 Ebony，
+        最后把当前剩下的 25% 给了 Jimmy。Gilda 最终还剩原来的百分之多少？
+      questionEn: |
+        Gilda has a bag of marbles. She gives 20% of them to Pedro, then 10% of what is left to Ebony,
+        then 25% of what is now left to Jimmy. What percentage of her original marbles does Gilda have left?
+      choices:
+        - label: A
+          content: '20'
+        - label: B
+          content: '$33\frac{1}{3}$'
+        - label: C
+          content: '38'
+        - label: D
+          content: '45'
+        - label: E
+          content: '54'
+      correctValue: E
+      answer: '(E) 54'
+      answerEn: '(E) 54'
+      explanation: |
+        用"剩余百分比连乘"思路（补集思维——每次关注"留下多少"而非"给出多少"）：
+        给 Pedro 20% 后，剩 80%。给 Ebony 10% 后，剩 $80\% \times 90\% = 72\%$。
+        给 Jimmy 25% 后，剩 $72\% \times 75\% = 54\%$。
+      explanationEn: |
+        Track what remains at each step (complementary thinking — focus on "kept" not "given"):
+        After Pedro (20% gone): 80% left. After Ebony (10% of remainder gone): $80\% \times 90\% = 72\%$.
+        After Jimmy (25% of remainder gone): $72\% \times 75\% = 54\%$.
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #6"
+      section: 补集计数法
+      question: |
+        在下图所示的正方形中有 81 个格点（包括边上的点），$P$ 在正中央。
+        随机选取另一个格点 $Q$，线段 $PQ$ 是正方形对称轴的概率是多少？
+      questionEn: |
+        There are 81 grid points (9×9) in a square, including points on the edges. Point $P$ is at the center.
+        Given that point $Q$ is randomly chosen among the other 80 points, what is the probability that line $PQ$ is a line of symmetry for the square?
+      choices:
+        - label: A
+          content: '$\frac{1}{5}$'
+        - label: B
+          content: '$\frac{1}{4}$'
+        - label: C
+          content: '$\frac{2}{5}$'
+        - label: D
+          content: '$\frac{9}{20}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: C
+      answer: '(C) $\frac{2}{5}$'
+      answerEn: '(C) $\frac{2}{5}$'
+      explanation: |
+        正方形有 4 条对称轴：水平中线、竖直中线、两条对角线。
+        $P$ 在中心 $(4,4)$（0-indexed 的 9×9 网格）。$PQ$ 是对称轴等价于 $Q$ 在某条对称轴上。
+        水平中线上的点（除 $P$）：8 个。竖直中线上：8 个。主对角线上：8 个。副对角线上：8 个。
+        四条线只在 $P$ 处交叉（已排除），所以不重复。
+        满足条件的 $Q$：$8 \times 4 = 32$ 个。概率 $= \frac{32}{80} = \frac{2}{5}$。
+      explanationEn: |
+        A square has 4 lines of symmetry: horizontal midline, vertical midline, and 2 diagonals.
+        $P$ is at center $(4,4)$ of a 9×9 grid. $PQ$ is a symmetry line iff $Q$ lies on one of these 4 lines.
+        Each line passes through 9 grid points, minus $P$ = 8 points per line. The 4 lines only share $P$ (excluded).
+        Valid points: $8 \times 4 = 32$. Probability $= \frac{32}{80} = \frac{2}{5}$.
+
+    - number: 11
+      type: 填空题
+      inputType: blank
+      source: 原创
+      section: 分类讨论与综合
+      question: '5 名同学站成一排拍照，共有 ______ 种不同的排法。'
+      questionEn: 'Five students stand in a row for a photo. There are ______ different arrangements.'
+      correctValue: '120'
+      answer: '120'
+      answerEn: '120'
+      explanation: |
+        5 个人全排列：$5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$。
+        第 1 个位置 5 种选择，第 2 个 4 种，第 3 个 3 种，第 4 个 2 种，第 5 个 1 种。
+      explanationEn: |
+        Full permutation of 5: $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$.
+        1st position: 5 choices, 2nd: 4, 3rd: 3, 4th: 2, 5th: 1.
+
+    - number: 12
+      type: 填空题
+      inputType: blank
+      source: 原创
+      section: 分类讨论与综合
+      question: '从 10 名同学中选 3 人组成一个兴趣小组，共有 ______ 种选法。'
+      questionEn: 'Choose 3 students from a group of 10 to form a study group. There are ______ ways.'
+      correctValue: '120'
+      answer: '120'
+      answerEn: '120'
+      explanation: |
+        顺序无关（只关心选了谁），用组合：
+        $C(10, 3) = \frac{10!}{3! \times 7!} = \frac{10 \times 9 \times 8}{3 \times 2 \times 1} = 120$。
+      explanationEn: |
+        Order doesn't matter (only who is chosen), so use combinations:
+        $C(10, 3) = \frac{10!}{3! \times 7!} = \frac{10 \times 9 \times 8}{3 \times 2 \times 1} = 120$.
+
+summary:
+  - '加法原理（分类用加）：做 A 或 B → $m + n$；乘法原理（分步用乘）：做 A 然后 B → $m \times n$'
+  - '排列 $P(n,r) = \frac{n!}{(n-r)!}$ 用于"有序选择"，组合 $C(n,r) = \frac{n!}{r!(n-r)!}$ 用于"无序选择"'
+  - '判断排列还是组合：问自己"交换位置，结果变不变？"'
+  - '补集计数（正难则反）：总数 - 不满足的 = 满足的，尤其适合"至少""不相邻"类问题'
+  - '分类讨论：把大问题拆成"不重不漏"的小情况，逐一计数再相加'
+  - '阶乘记忆：$0!=1$, $3!=6$, $4!=24$, $5!=120$, $6!=720$'
+summaryEn:
+  - 'Addition Principle (categories → add): A or B → $m+n$; Multiplication Principle (steps → multiply): A then B → $m \times n$'
+  - 'Permutation $P(n,r)=\frac{n!}{(n-r)!}$ for ordered selection; Combination $C(n,r)=\frac{n!}{r!(n-r)!}$ for unordered selection'
+  - 'Permutation vs. Combination: ask "does swapping positions change the result?"'
+  - 'Complementary counting: Total - Unwanted = Wanted; ideal for "at least", "not adjacent" problems'
+  - 'Systematic casework: split into non-overlapping, exhaustive cases, count each, then add'
+  - 'Factorial values to memorize: $0!=1$, $3!=6$, $4!=24$, $5!=120$, $6!=720$'
+
+examPrep:
+  intro: 以下为 AMC 8 真题精选，难度高于练习题，综合考查计数与组合方法。
+  introEn: The following are selected AMC 8 problems at a higher difficulty level, testing combined counting and combinatorics skills.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #25"
+      section: 综合
+      question: |
+        一只蟋蟀在 4 片荷叶上随机跳跃。每次跳跃等概率地跳到其他 3 片荷叶之一。
+        从某片荷叶出发，跳 4 次后回到出发荷叶的概率是多少？
+      questionEn: |
+        A cricket randomly hops between 4 lily pads. Each hop goes to one of the other 3 pads with equal probability $\frac{1}{3}$.
+        After 4 hops, what is the probability of returning to the starting pad?
+      choices:
+        - label: A
+          content: '$\frac{2}{9}$'
+        - label: B
+          content: '$\frac{19}{80}$'
+        - label: C
+          content: '$\frac{20}{81}$'
+        - label: D
+          content: '$\frac{1}{4}$'
+        - label: E
+          content: '$\frac{7}{27}$'
+      correctValue: E
+      answer: '(E) $\frac{7}{27}$'
+      answerEn: '(E) $\frac{7}{27}$'
+      explanation: |
+        设出发荷叶为 S。每一跳有 3 个等概率选择，4 跳共 $3^4 = 81$ 条等概率路径。
+
+        用逐步递推计数回到 S 的路径数：
+
+        **第 1 跳后**：必然在 3 片非 S 荷叶之一。设"在 S"的路径数 = 0，"不在 S"的路径数 = 3。
+
+        **第 2 跳后**：从非 S 跳出，有 $\frac{1}{3}$ 概率回 S、$\frac{2}{3}$ 概率到另一片非 S。
+        在 S 的路径数 = $3 \times 1 = 3$。不在 S 的路径数 = $3 \times 2 = 6$。
+
+        **第 3 跳后**：
+        从 S 出发（3 条路径）：必然跳到非 S → 贡献 $3 \times 3 = 9$ 条"不在 S"。
+        从非 S 出发（6 条路径）：1/3 回 S → 贡献 $6 \times 1 = 6$ 条"在 S"；2/3 留在非 S → $6 \times 2 = 12$ 条"不在 S"。
+        在 S：$6$。不在 S：$9 + 12 = 21$。
+
+        **第 4 跳后**：
+        从 S（6 条）：全去非 S → $6 \times 3 = 18$ 条"不在 S"。
+        从非 S（21 条）：$21 \times 1 = 21$ 条回 S，$21 \times 2 = 42$ 条不在 S。
+        回到 S 的路径数 = $21$。
+
+        概率 $= \frac{21}{81} = \frac{7}{27}$。
+      explanationEn: |
+        Let the start pad be S. Each hop has 3 equally likely destinations; $3^4 = 81$ total paths.
+
+        Count paths returning to S step by step:
+
+        **After hop 1**: all 3 paths land on non-S. At S: 0 paths. Not at S: 3.
+
+        **After hop 2**: From non-S, 1 of 3 choices returns to S. At S: $3 \times 1 = 3$. Not at S: $3 \times 2 = 6$.
+
+        **After hop 3**: From S (3 paths): all go to non-S → 9 not-at-S. From non-S (6 paths): 6 return to S, 12 stay away. At S: 6. Not at S: 21.
+
+        **After hop 4**: From S (6 paths): all leave → 18 not-at-S. From non-S (21 paths): 21 return to S, 42 stay away. At S: 21.
+
+        Probability $= \frac{21}{81} = \frac{7}{27}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2017 #20"
+      section: 综合
+      question: |
+        从 1000 到 9999 中随机选一个整数。
+        它是**奇数**且**四位数字各不相同**的概率是多少？
+      questionEn: |
+        An integer between 1000 and 9999 is chosen at random.
+        What is the probability that it is odd and has all distinct digits?
+      choices:
+        - label: A
+          content: '$\frac{14}{75}$'
+        - label: B
+          content: '$\frac{56}{225}$'
+        - label: C
+          content: '$\frac{107}{400}$'
+        - label: D
+          content: '$\frac{7}{25}$'
+        - label: E
+          content: '$\frac{9}{25}$'
+      correctValue: B
+      answer: '(B) $\frac{56}{225}$'
+      answerEn: '(B) $\frac{56}{225}$'
+      explanation: |
+        四位数总数：$9999 - 1000 + 1 = 9000$。
+
+        计数满足条件的数（奇数 + 四位不同）：
+        用乘法原理，按**个位 → 千位 → 百位 → 十位**的顺序选择（先处理约束强的位）：
+        - 个位（奇数）：从 {1, 3, 5, 7, 9} 中选 → 5 种
+        - 千位（不为 0，不等于个位）：从 {1,...,9} 中去掉个位 → 8 种
+        - 百位（不等于前两位）：从 {0,...,9} 中去掉已用的 2 个 → 8 种
+        - 十位（不等于前三位）：从 {0,...,9} 中去掉已用的 3 个 → 7 种
+
+        总数：$5 \times 8 \times 8 \times 7 = 2240$
+
+        概率 $= \frac{2240}{9000} = \frac{56}{225}$。
+      explanationEn: |
+        Total four-digit numbers: $9999 - 1000 + 1 = 9000$.
+
+        Count valid numbers (odd, all digits distinct) using the Multiplication Principle. Choose constrained digits first:
+        - Units (odd): {1,3,5,7,9} → 5 choices
+        - Thousands (not 0, not units digit): 8 choices
+        - Hundreds (not thousands or units): 8 choices
+        - Tens (not the other three): 7 choices
+
+        Total: $5 \times 8 \times 8 \times 7 = 2240$
+
+        Probability $= \frac{2240}{9000} = \frac{56}{225}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #25"
+      section: 综合
+      question: |
+        一架飞机有 4 排座位，每排 3 个座位（相邻的座位在同一排中挨着）。
+        8 名乘客已经随机坐好。一对夫妻接下来登机。
+        他们能在同一排找到两个相邻空座的概率是多少？
+      questionEn: |
+        An airplane has 4 rows with 3 seats each. Seats are adjacent if they are next to each other in the same row.
+        Eight passengers have randomly taken 8 of the 12 seats. A married couple boards next.
+        What is the probability that there exist 2 adjacent empty seats in the same row for the couple?
+      choices:
+        - label: A
+          content: '$\frac{8}{15}$'
+        - label: B
+          content: '$\frac{32}{55}$'
+        - label: C
+          content: '$\frac{20}{33}$'
+        - label: D
+          content: '$\frac{34}{55}$'
+        - label: E
+          content: '$\frac{8}{11}$'
+      correctValue: C
+      answer: '(C) $\frac{20}{33}$'
+      answerEn: '(C) $\frac{20}{33}$'
+      explanation: |
+        12 个座位中 8 个被占，4 个空。从 12 个座位中选 4 个空座的方案数：$C(12,4) = 495$。
+
+        用<<补集计数法/complementary counting>>：先求"没有任何一排有两个相邻空座"的方案数，再用总数减去。
+
+        每排 3 个座位，相邻对为 (座1,座2) 和 (座2,座3)。
+
+        一排 3 座中选若干空座，且空座不相邻的方式：
+        - 0 个空座：1 种
+        - 1 个空座：3 种
+        - 2 个空座（不相邻）：只有 {座1, 座3} = 1 种
+        - 3 个空座：不可能不相邻
+
+        设各排空座数为 $(n_1, n_2, n_3, n_4)$，$n_1 + n_2 + n_3 + n_4 = 4$，每个 $n_i \le 2$。
+        满足条件的分配方式及其排列：
+
+        $(2,2,0,0)$：选 2 排各放 2 个不相邻空座：$C(4,2) \times 1 \times 1 = 6$。
+        $(2,1,1,0)$：$\frac{4!}{1!2!1!} = 12$ 种排分配 × 每排对应方式 $= 12 \times 1 \times 3 \times 3 = 108$。
+        $(1,1,1,1)$：每排 1 个空座：$3^4 = 81$。
+
+        无相邻空座的方案数 $= 6 + 108 + 81 = 195$。
+
+        有相邻空座（夫妻能坐下）的方案数 $= 495 - 195 = 300$。
+
+        概率 $= \frac{300}{495} = \frac{20}{33}$。
+      explanationEn: |
+        12 seats, 8 occupied, 4 empty. Total ways to choose 4 empty seats: $C(12,4)=495$.
+
+        Use <<补集计数法/complementary counting>>: count arrangements with NO adjacent empty seats in any row.
+
+        In a row of 3, non-adjacent empty seat patterns:
+        - 0 empty: 1 way
+        - 1 empty: 3 ways
+        - 2 empty (non-adjacent): only {seat 1, seat 3} = 1 way
+        - 3 empty: impossible to be non-adjacent
+
+        Distribute 4 empty seats among 4 rows $(n_1,n_2,n_3,n_4)$, each $\le 2$:
+
+        $(2,2,0,0)$: $C(4,2) \times 1 \times 1 = 6$
+        $(2,1,1,0)$: $\frac{4!}{1!2!1!} \times 1 \times 3 \times 3 = 108$
+        $(1,1,1,1)$: $3^4 = 81$
+
+        No adjacent empty seats: $6 + 108 + 81 = 195$.
+        At least one adjacent pair: $495 - 195 = 300$.
+        Probability $= \frac{300}{495} = \frac{20}{33}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2023 #25"
+      section: 综合
+      question: |
+        15 个整数等间距排列（公差相同的等差数列），满足：
+        $1 \le a_1 \le 10$，$13 \le a_2 \le 20$，$241 \le a_{15} \le 250$。
+        求 $a_{14}$ 的各位数字之和。
+      questionEn: |
+        Fifteen equally spaced integers $a_1, a_2, \ldots, a_{15}$ satisfy:
+        $1 \le a_1 \le 10$, $13 \le a_2 \le 20$, and $241 \le a_{15} \le 250$.
+        What is the sum of the digits of $a_{14}$?
+      choices:
+        - label: A
+          content: '8'
+        - label: B
+          content: '9'
+        - label: C
+          content: '10'
+        - label: D
+          content: '11'
+        - label: E
+          content: '12'
+      correctValue: A
+      answer: '(A) 8'
+      answerEn: '(A) 8'
+      explanation: |
+        设公差为 $d$。$a_2 = a_1 + d$，$a_{15} = a_1 + 14d$。
+
+        由 $a_{15}$ 的约束：$241 \le a_1 + 14d \le 250$。
+        由 $a_1$ 的约束：$1 \le a_1 \le 10$，所以 $231 \le 14d \le 249$，即 $16.5 \le d \le 17.8$。
+        因为所有项是整数，$d$ 必须是整数，所以 $d = 17$。
+
+        代入 $a_2 = a_1 + 17$：$13 \le a_1 + 17 \le 20$，即 $-4 \le a_1 \le 3$。
+        结合 $a_1 \ge 1$：$a_1 \in \{1, 2, 3\}$。
+
+        代入 $a_{15} = a_1 + 238$：$241 \le a_1 + 238 \le 250$，即 $3 \le a_1 \le 12$。
+        取交集：$a_1 = 3$。
+
+        $a_{14} = a_1 + 13d = 3 + 13 \times 17 = 3 + 221 = 224$。
+
+        各位数字之和 $= 2 + 2 + 4 = \mathbf{8}$。
+      explanationEn: |
+        Let common difference be $d$. $a_2 = a_1 + d$, $a_{15} = a_1 + 14d$.
+
+        From $a_{15}$: $241 \le a_1 + 14d \le 250$. Since $1 \le a_1 \le 10$: $231 \le 14d \le 249$, so $16.5 \le d \le 17.8$. Since all terms are integers, $d = 17$.
+
+        From $a_2$: $13 \le a_1 + 17 \le 20 \Rightarrow a_1 \in \{-4,...,3\}$. Combined with $a_1 \ge 1$: $a_1 \in \{1,2,3\}$.
+
+        From $a_{15}$: $a_1 + 238 \ge 241 \Rightarrow a_1 \ge 3$. So $a_1 = 3$.
+
+        $a_{14} = 3 + 13 \times 17 = 224$. Digit sum $= 2+2+4 = \mathbf{8}$.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #24"
+      section: 综合
+      question: |
+        在 $\triangle ABC$ 中，点 $D$ 在 $AC$ 上且 $AD:DC = 1:2$。
+        $E$ 是 $BD$ 的中点。$F$ 是直线 $AE$ 与 $BC$ 的交点。
+        若 $\triangle ABC$ 的面积为 360，求 $\triangle EBF$ 的面积。
+      questionEn: |
+        In $\triangle ABC$, point $D$ divides $\overline{AC}$ so that $AD:DC = 1:2$.
+        $E$ is the midpoint of $\overline{BD}$. $F$ is the point where line $AE$ meets $\overline{BC}$.
+        Given that the area of $\triangle ABC$ is 360, find the area of $\triangle EBF$.
+      choices:
+        - label: A
+          content: '24'
+        - label: B
+          content: '30'
+        - label: C
+          content: '32'
+        - label: D
+          content: '36'
+        - label: E
+          content: '40'
+      correctValue: B
+      answer: '(B) 30'
+      answerEn: '(B) 30'
+      explanation: |
+        用坐标法。设 $A = (0, 0)$，$B = (6, 0)$，$C = (0, 6)$（面积 $= \frac{1}{2} \times 6 \times 6 = 18$，之后按比例缩放）。
+
+        $D$ 在 $AC$ 上且 $AD:DC = 1:2$：$D = A + \frac{1}{3}(C - A) = (0, 2)$。
+        $E$ 是 $BD$ 的中点：$E = \frac{B + D}{2} = \frac{(6,0)+(0,2)}{2} = (3, 1)$。
+
+        直线 $AE$：过 $(0,0)$ 和 $(3,1)$，方程为 $y = \frac{x}{3}$。
+        直线 $BC$：过 $(6,0)$ 和 $(0,6)$，方程为 $x + y = 6$。
+        交点 $F$：$x + \frac{x}{3} = 6 \Rightarrow \frac{4x}{3} = 6 \Rightarrow x = \frac{9}{2}$，$y = \frac{3}{2}$。$F = (\frac{9}{2}, \frac{3}{2})$。
+
+        $\triangle EBF$ 的顶点：$E = (3,1)$，$B = (6,0)$，$F = (\frac{9}{2}, \frac{3}{2})$。
+        面积 $= \frac{1}{2}|x_E(y_B - y_F) + x_B(y_F - y_E) + x_F(y_E - y_B)|$
+        $= \frac{1}{2}|3(0-\frac{3}{2}) + 6(\frac{3}{2}-1) + \frac{9}{2}(1-0)|$
+        $= \frac{1}{2}|-\frac{9}{2} + 3 + \frac{9}{2}| = \frac{1}{2} \times 3 = \frac{3}{2}$。
+
+        坐标系中 $\triangle ABC$ 面积 $= 18$，$\triangle EBF$ 面积 $= \frac{3}{2}$。
+        比值 $= \frac{3/2}{18} = \frac{1}{12}$。
+
+        实际 $\triangle ABC$ 面积 $= 360$，所以 $\triangle EBF = 360 \times \frac{1}{12} = \mathbf{30}$。
+      explanationEn: |
+        Use coordinates. Let $A=(0,0)$, $B=(6,0)$, $C=(0,6)$ (area $=18$; we scale at the end).
+
+        $D$ on $AC$ with $AD:DC=1:2$: $D=(0,2)$. $E =$ midpoint of $BD$: $E=(3,1)$.
+
+        Line $AE$: $y=x/3$. Line $BC$: $x+y=6$. Intersection $F$: $x+x/3=6 \Rightarrow x=9/2$, $y=3/2$.
+
+        $\triangle EBF$ with $E=(3,1)$, $B=(6,0)$, $F=(9/2, 3/2)$:
+        Area $= \frac{1}{2}|3(0-3/2)+6(3/2-1)+(9/2)(1-0)| = \frac{1}{2}|{-9/2}+3+{9/2}| = 3/2$.
+
+        Ratio to $\triangle ABC$: $\frac{3/2}{18}=\frac{1}{12}$. Actual area $= 360 \times \frac{1}{12} = \mathbf{30}$.

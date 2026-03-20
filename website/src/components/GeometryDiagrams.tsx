@@ -1770,6 +1770,1897 @@ function PrimeNumberSieve() {
   );
 }
 
+/** Diagram: Parallelogram ABCD with properties — opposite sides/angles equal, diagonals bisect */
+function ParallelogramProperties() {
+  // Parallelogram ABCD: A top-left, B top-right, C bottom-right, D bottom-left
+  const ax = 120, ay = 40, bx = 340, by = 40, cx = 380, cy = 170, dx = 80, dy = 170;
+  const ox = (ax + cx) / 2, oy = (ay + cy) / 2; // diagonal intersection
+  function tick(x1: number, y1: number, x2: number, y2: number, n: number, color: string, id: string) {
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    const len = Math.hypot(x2 - x1, y2 - y1);
+    const px = -(y2 - y1) / len * 7, py = (x2 - x1) / len * 7;
+    const marks: React.ReactNode[] = [];
+    for (let k = 0; k < n; k++) {
+      const off = (k - (n - 1) / 2) * 6;
+      const dx2 = (x2 - x1) / len * off, dy2 = (y2 - y1) / len * off;
+      marks.push(<line key={`${id}${k}`} x1={mx + px + dx2} y1={my + py + dy2} x2={mx - px + dx2} y2={my - py + dy2} stroke={color} strokeWidth={2} />);
+    }
+    return <>{marks}</>;
+  }
+  return (
+    <Wrapper width={460} height={210}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy} ${dx},${dy}`} fill="rgba(139,92,246,0.07)" stroke={purple} strokeWidth={2} />
+      {/* Diagonals */}
+      <line x1={ax} y1={ay} x2={cx} y2={cy} stroke={lightGray} strokeWidth={1.5} strokeDasharray="6,3" />
+      <line x1={bx} y1={by} x2={dx} y2={dy} stroke={lightGray} strokeWidth={1.5} strokeDasharray="6,3" />
+      <Dot x={ox} y={oy} color={amber} r={4} />
+      <Label x={ox + 10} y={oy - 8} text="O" color={amber} />
+      {/* Opposite side tick marks: AB‖CD (1 tick), AD‖BC (2 ticks) */}
+      {tick(ax, ay, bx, by, 1, pink, "ab")}
+      {tick(dx, dy, cx, cy, 1, pink, "dc")}
+      {tick(ax, ay, dx, dy, 2, purple, "ad")}
+      {tick(bx, by, cx, cy, 2, purple, "bc")}
+      {/* Vertex labels */}
+      <Label x={ax - 8} y={ay - 8} text="A" color={pink} />
+      <Label x={bx + 8} y={by - 8} text="B" color={pink} />
+      <Label x={cx + 10} y={cy + 14} text="C" color={pink} />
+      <Label x={dx - 14} y={dy + 14} text="D" color={pink} />
+      {/* Equal angle arcs at A and C */}
+      <path d={`M ${ax + 20},${ay} A 12 12 0 0 1 ${ax + 12},${ay + 16}`} fill="none" stroke={amber} strokeWidth={1.5} />
+      <path d={`M ${cx - 20},${cy} A 12 12 0 0 1 ${cx - 12},${cy - 16}`} fill="none" stroke={amber} strokeWidth={1.5} />
+      <Label x={230} y={205} text="OA=OC, OB=OD（对角线互相平分）" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: 3 criteria for parallelogram — side by side */
+function ParallelogramCriteria() {
+  // Three small parallelograms
+  const w = 480, h = 170;
+  function mini(ox: number, label: string, subtitle: string) {
+    const ax = ox, ay = 35, bx = ox + 80, by = 35, cx = ox + 95, cy = 110, dx = ox + 15, dy = 110;
+    return (
+      <g>
+        <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy} ${dx},${dy}`} fill="rgba(139,92,246,0.07)" stroke={purple} strokeWidth={1.8} />
+        <Label x={(ax + cx) / 2} y={15} text={label} color={purple} size={12} />
+        <Label x={(ax + cx) / 2} y={135} text={subtitle} color={gray} size={10} />
+      </g>
+    );
+  }
+  return (
+    <Wrapper width={w} height={h}>
+      {mini(20, "(a) 两组对边平行", "AB‖CD, AD‖BC")}
+      {mini(175, "(b) 两组对边相等", "AB=CD, AD=BC")}
+      {mini(330, "(c) 对角线互相平分", "OA=OC, OB=OD")}
+      {/* Diagonal cross for (c) */}
+      <line x1={330} y1={35} x2={425} y2={110} stroke={lightGray} strokeWidth={1.2} strokeDasharray="4,3" />
+      <line x1={410} y1={35} x2={345} y2={110} stroke={lightGray} strokeWidth={1.2} strokeDasharray="4,3" />
+      <Dot x={377} y={72} color={amber} r={3} />
+      <Label x={240} y={162} text="满足任一条件即可判定为平行四边形" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Rectangle with right angles, equal diagonals */
+function RectangleDiagram() {
+  const ax = 80, ay = 35, bx = 380, by = 35, cx = 380, cy = 175, dx = 80, dy = 175;
+  const ox2 = (ax + cx) / 2, oy2 = (ay + cy) / 2;
+  const sq = 12; // right-angle square size
+  return (
+    <Wrapper width={460} height={210}>
+      <rect x={ax} y={ay} width={bx - ax} height={cy - ay} fill="rgba(139,92,246,0.06)" stroke={purple} strokeWidth={2} rx={2} />
+      {/* Diagonals */}
+      <line x1={ax} y1={ay} x2={cx} y2={cy} stroke={amber} strokeWidth={1.5} />
+      <line x1={bx} y1={by} x2={dx} y2={dy} stroke={amber} strokeWidth={1.5} />
+      <Dot x={ox2} y={oy2} color={amber} r={4} />
+      <Label x={ox2 + 12} y={oy2 - 6} text="O" color={amber} />
+      {/* Right angle marks at 4 corners */}
+      {[[ax, ay, 1, 1], [bx, by, -1, 1], [cx, cy, -1, -1], [dx, dy, 1, -1]].map(([x, y, sx, sy], i) => (
+        <polyline key={`ra${i}`} points={`${x + sq * sx},${y} ${x + sq * sx},${y + sq * sy} ${x},${y + sq * sy}`} fill="none" stroke={gray} strokeWidth={1.2} />
+      ))}
+      {/* Vertex labels */}
+      <Label x={ax - 12} y={ay - 6} text="A" color={pink} />
+      <Label x={bx + 10} y={by - 6} text="B" color={pink} />
+      <Label x={cx + 10} y={cy + 14} text="C" color={pink} />
+      <Label x={dx - 12} y={dy + 14} text="D" color={pink} />
+      <Label x={230} y={205} text="∠=90°, AC=BD, OA=OB=OC=OD" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Rhombus with equal sides, perpendicular diagonals */
+function RhombusDiagram() {
+  const cx3 = 230, top = 20, bot = 190, left = 100, right = 360;
+  const cy3 = (top + bot) / 2;
+  // Rhombus: top, right, bottom, left
+  const pts = `${cx3},${top} ${right},${cy3} ${cx3},${bot} ${left},${cy3}`;
+  function tick(x1: number, y1: number, x2: number, y2: number, id: string) {
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    const len = Math.hypot(x2 - x1, y2 - y1);
+    const px = -(y2 - y1) / len * 7, py = (x2 - x1) / len * 7;
+    return <line key={id} x1={mx + px} y1={my + py} x2={mx - px} y2={my - py} stroke={pink} strokeWidth={2} />;
+  }
+  return (
+    <Wrapper width={460} height={220}>
+      <polygon points={pts} fill="rgba(139,92,246,0.07)" stroke={purple} strokeWidth={2} />
+      {/* Diagonals */}
+      <line x1={cx3} y1={top} x2={cx3} y2={bot} stroke={lightGray} strokeWidth={1.5} />
+      <line x1={left} y1={cy3} x2={right} y2={cy3} stroke={lightGray} strokeWidth={1.5} />
+      {/* Perpendicular mark at center */}
+      <polyline points={`${cx3 + 10},${cy3} ${cx3 + 10},${cy3 - 10} ${cx3},${cy3 - 10}`} fill="none" stroke={gray} strokeWidth={1.5} />
+      {/* Equal side ticks */}
+      {tick(cx3, top, right, cy3, "s1")}
+      {tick(right, cy3, cx3, bot, "s2")}
+      {tick(cx3, bot, left, cy3, "s3")}
+      {tick(left, cy3, cx3, top, "s4")}
+      {/* Vertex labels */}
+      <Label x={cx3} y={top - 8} text="A" color={pink} />
+      <Label x={right + 10} y={cy3 + 4} text="B" color={pink} />
+      <Label x={cx3} y={bot + 16} text="C" color={pink} />
+      <Label x={left - 14} y={cy3 + 4} text="D" color={pink} />
+      <Dot x={cx3} y={cy3} color={amber} r={3} />
+      <Label x={cx3 + 14} y={cy3 + 16} text="O" color={amber} />
+      <Label x={230} y={215} text="四边相等，对角线互相垂直平分且平分顶角" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Square — combining rectangle and rhombus properties */
+function SquareDiagram() {
+  const s = 130, mx2 = 230, my2 = 105;
+  const ax = mx2 - s / 2, ay = my2 - s / 2, bx2 = mx2 + s / 2, by2 = my2 - s / 2;
+  const cx4 = mx2 + s / 2, cy4 = my2 + s / 2, dx3 = mx2 - s / 2, dy3 = my2 + s / 2;
+  const sq = 10;
+  function tick(x1: number, y1: number, x2: number, y2: number, id: string) {
+    const tmx = (x1 + x2) / 2, tmy = (y1 + y2) / 2;
+    const len = Math.hypot(x2 - x1, y2 - y1);
+    const px = -(y2 - y1) / len * 7, py = (x2 - x1) / len * 7;
+    return <line key={id} x1={tmx + px} y1={tmy + py} x2={tmx - px} y2={tmy - py} stroke={pink} strokeWidth={2} />;
+  }
+  return (
+    <Wrapper width={460} height={220}>
+      <rect x={ax} y={ay} width={s} height={s} fill="rgba(139,92,246,0.06)" stroke={purple} strokeWidth={2} />
+      {/* Diagonals */}
+      <line x1={ax} y1={ay} x2={cx4} y2={cy4} stroke={amber} strokeWidth={1.3} />
+      <line x1={bx2} y1={by2} x2={dx3} y2={dy3} stroke={amber} strokeWidth={1.3} />
+      {/* Perpendicular mark at center */}
+      <polyline points={`${mx2 + 8},${my2} ${mx2 + 8},${my2 - 8} ${mx2},${my2 - 8}`} fill="none" stroke={gray} strokeWidth={1.2} />
+      {/* Right angle marks at corners */}
+      {[[ax, ay, 1, 1], [bx2, by2, -1, 1], [cx4, cy4, -1, -1], [dx3, dy3, 1, -1]].map(([x, y, sx, sy], i) => (
+        <polyline key={`sq${i}`} points={`${x + sq * sx},${y} ${x + sq * sx},${y + sq * sy} ${x},${y + sq * sy}`} fill="none" stroke={gray} strokeWidth={1} />
+      ))}
+      {/* Equal side ticks */}
+      {tick(ax, ay, bx2, by2, "t1")}
+      {tick(bx2, by2, cx4, cy4, "t2")}
+      {tick(cx4, cy4, dx3, dy3, "t3")}
+      {tick(dx3, dy3, ax, ay, "t4")}
+      {/* Vertex labels */}
+      <Label x={ax - 10} y={ay - 6} text="A" color={pink} />
+      <Label x={bx2 + 10} y={by2 - 6} text="B" color={pink} />
+      <Label x={cx4 + 10} y={cy4 + 14} text="C" color={pink} />
+      <Label x={dx3 - 10} y={dy3 + 14} text="D" color={pink} />
+      <Label x={230} y={210} text="正方形 = 矩形 ∩ 菱形：等边、等角、等对角线、对角线互相垂直" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Trapezoid with parallel sides, height, area formula */
+function TrapezoidDiagram() {
+  const ax = 160, ay = 40, bx = 320, by = 40; // top base (a)
+  const cx5 = 400, cy5 = 170, dx4 = 80, dy4 = 170; // bottom base (b)
+  const hx = 240; // height drop x
+  return (
+    <Wrapper width={480} height={210}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx5},${cy5} ${dx4},${dy4}`} fill="rgba(139,92,246,0.06)" stroke={purple} strokeWidth={2} />
+      {/* Parallel marks on top and bottom */}
+      <Label x={(ax + bx) / 2} y={ay - 10} text="a (上底)" color={purple} size={12} />
+      <Label x={(dx4 + cx5) / 2} y={cy5 + 18} text="b (下底)" color={purple} size={12} />
+      {/* Parallel arrows */}
+      <line x1={ax + 30} y1={ay + 4} x2={bx - 30} y2={by + 4} stroke={purple} strokeWidth={0} />
+      {/* // marks on top */}
+      <line x1={(ax + bx) / 2 - 4} y1={ay + 7} x2={(ax + bx) / 2 - 8} y2={ay + 15} stroke={purple} strokeWidth={1.5} />
+      <line x1={(ax + bx) / 2 + 4} y1={ay + 7} x2={(ax + bx) / 2} y2={ay + 15} stroke={purple} strokeWidth={1.5} />
+      {/* // marks on bottom */}
+      <line x1={(dx4 + cx5) / 2 - 4} y1={cy5 - 15} x2={(dx4 + cx5) / 2 - 8} y2={cy5 - 7} stroke={purple} strokeWidth={1.5} />
+      <line x1={(dx4 + cx5) / 2 + 4} y1={cy5 - 15} x2={(dx4 + cx5) / 2} y2={cy5 - 7} stroke={purple} strokeWidth={1.5} />
+      {/* Height line */}
+      <line x1={hx} y1={ay} x2={hx} y2={cy5} stroke={pink} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polyline points={`${hx + 8},${cy5} ${hx + 8},${cy5 - 8} ${hx},${cy5 - 8}`} fill="none" stroke={gray} strokeWidth={1.2} />
+      <Label x={hx + 16} y={(ay + cy5) / 2 + 4} text="h" color={pink} size={14} anchor="start" />
+      {/* Area formula */}
+      <Label x={240} y={205} text="S = (a + b) × h ÷ 2" color={amber} size={13} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Midsegment theorem — DE ‖ BC, DE = BC/2 */
+function MidsegmentTheorem() {
+  const ax = 230, ay = 25, bx = 70, by = 185, cx6 = 400, cy6 = 185;
+  // Midpoints D on AB, E on AC
+  const ddx = (ax + bx) / 2, ddy = (ay + by) / 2;
+  const ex = (ax + cx6) / 2, ey = (ay + cy6) / 2;
+  return (
+    <Wrapper width={470} height={220}>
+      {/* Full triangle */}
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx6},${cy6}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      {/* Midsegment DE */}
+      <line x1={ddx} y1={ddy} x2={ex} y2={ey} stroke={amber} strokeWidth={2.5} />
+      {/* Midpoint ticks on AB: AD=DB */}
+      {[[ax, ay, ddx, ddy], [ddx, ddy, bx, by]].map(([x1, y1, x2, y2], i) => {
+        const tmx = (x1 + x2) / 2, tmy = (y1 + y2) / 2;
+        const len = Math.hypot(x2 - x1, y2 - y1);
+        const px = -(y2 - y1) / len * 7, py = (x2 - x1) / len * 7;
+        return <line key={`ab${i}`} x1={tmx + px} y1={tmy + py} x2={tmx - px} y2={tmy - py} stroke={pink} strokeWidth={2} />;
+      })}
+      {/* Midpoint ticks on AC: AE=EC */}
+      {[[ax, ay, ex, ey], [ex, ey, cx6, cy6]].map(([x1, y1, x2, y2], i) => {
+        const tmx = (x1 + x2) / 2, tmy = (y1 + y2) / 2;
+        const len = Math.hypot(x2 - x1, y2 - y1);
+        const px = -(y2 - y1) / len * 7, py = (x2 - x1) / len * 7;
+        return <line key={`ac${i}`} x1={tmx + px} y1={tmy + py} x2={tmx - px} y2={tmy - py} stroke={pink} strokeWidth={2} />;
+      })}
+      {/* Parallel marks on DE and BC */}
+      <line x1={(ddx + ex) / 2 - 4} y1={(ddy + ey) / 2 - 8} x2={(ddx + ex) / 2 - 8} y2={(ddy + ey) / 2} stroke={amber} strokeWidth={1.5} />
+      <line x1={(ddx + ex) / 2 + 4} y1={(ddy + ey) / 2 - 8} x2={(ddx + ex) / 2} y2={(ddy + ey) / 2} stroke={amber} strokeWidth={1.5} />
+      <line x1={(bx + cx6) / 2 - 4} y1={cy6 - 8} x2={(bx + cx6) / 2 - 8} y2={cy6} stroke={purple} strokeWidth={1.5} />
+      <line x1={(bx + cx6) / 2 + 4} y1={cy6 - 8} x2={(bx + cx6) / 2} y2={cy6} stroke={purple} strokeWidth={1.5} />
+      {/* Vertex labels */}
+      <Label x={ax} y={ay - 8} text="A" color={pink} />
+      <Label x={bx - 14} y={by + 14} text="B" color={pink} />
+      <Label x={cx6 + 8} y={cy6 + 14} text="C" color={pink} />
+      <Dot x={ddx} y={ddy} color={amber} r={4} /><Label x={ddx - 16} y={ddy - 4} text="D" color={amber} />
+      <Dot x={ex} y={ey} color={amber} r={4} /><Label x={ex + 10} y={ey - 4} text="E" color={amber} />
+      <Label x={235} y={212} text="DE ‖ BC，DE = ½BC（三角形中位线定理）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+// ─── Linear & Quadratic Function Diagrams ───
+
+function FunctionConceptDiagram() {
+  return (
+    <svg viewBox="0 0 420 200" className="w-full max-w-md mx-auto my-4">
+      {/* Function machine box */}
+      <rect x="150" y="30" width="120" height="60" rx="12" fill="#EDE9FE" stroke={purple} strokeWidth="2"/>
+      <text x="210" y="68" textAnchor="middle" fontSize="28" fontWeight="bold" fill={purple}>f</text>
+      {/* Input arrow */}
+      <defs>
+        <marker id="arrowFC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill={gray}/>
+        </marker>
+      </defs>
+      <line x1="60" y1="60" x2="148" y2="60" stroke={gray} strokeWidth="2" markerEnd="url(#arrowFC)"/>
+      <text x="50" y="65" textAnchor="end" fontSize="14" fontWeight="bold" fill={purple}>x</text>
+      {/* Output arrow */}
+      <line x1="272" y1="60" x2="360" y2="60" stroke={gray} strokeWidth="2" markerEnd="url(#arrowFC)"/>
+      <text x="370" y="65" textAnchor="start" fontSize="14" fontWeight="bold" fill={pink}>y</text>
+      {/* Mapping examples below */}
+      {[{x: "1", y: "3"}, {x: "2", y: "5"}, {x: "3", y: "7"}].map((p, i) => {
+        const cy = 120 + i * 26;
+        return (
+          <g key={i}>
+            <circle cx="130" cy={cy} r="14" fill="#EDE9FE" stroke={purple} strokeWidth="1.5"/>
+            <text x="130" y={cy + 5} textAnchor="middle" fontSize="12" fill={purple}>{p.x}</text>
+            <line x1="146" y1={cy} x2="264" y2={cy} stroke={lightGray} strokeWidth="1" strokeDasharray="4,3"/>
+            <polygon points={`264,${cy} 258,${cy - 3} 258,${cy + 3}`} fill={lightGray}/>
+            <circle cx="280" cy={cy} r="14" fill="#FCE7F3" stroke={pink} strokeWidth="1.5"/>
+            <text x="280" y={cy + 5} textAnchor="middle" fontSize="12" fill={pink}>{p.y}</text>
+          </g>
+        );
+      })}
+      <text x="210" y="198" textAnchor="middle" fontSize="11" fill={gray}>每个 x 对应唯一的 y</text>
+    </svg>
+  );
+}
+
+function DirectProportionDiagram() {
+  const ox = 160, oy = 160, s = 30;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  return (
+    <svg viewBox="0 0 340 200" className="w-full max-w-md mx-auto my-4">
+      {/* Axes */}
+      <line x1={toX(-2)} y1={oy} x2={toX(5)} y2={oy} stroke={gray} strokeWidth="1.5"/>
+      <line x1={ox} y1={toY(-1)} x2={ox} y2={toY(5)} stroke={gray} strokeWidth="1.5"/>
+      <text x={toX(5) + 4} y={oy + 4} fontSize="12" fill={gray}>x</text>
+      <text x={ox + 6} y={toY(5) - 2} fontSize="12" fill={gray}>y</text>
+      <text x={ox - 12} y={oy + 14} fontSize="11" fill={gray}>O</text>
+      {/* y=2x (steep, purple) */}
+      <line x1={toX(-0.5)} y1={toY(-1)} x2={toX(2.3)} y2={toY(4.6)} stroke={purple} strokeWidth="2"/>
+      <text x={toX(2.5)} y={toY(4.8)} fontSize="12" fontWeight="bold" fill={purple}>y=2x</text>
+      {/* y=0.5x (gentle, amber) */}
+      <line x1={toX(-1)} y1={toY(-0.5)} x2={toX(4.5)} y2={toY(2.25)} stroke={amber} strokeWidth="2"/>
+      <text x={toX(4.6)} y={toY(2)} fontSize="12" fontWeight="bold" fill={amber}>y=0.5x</text>
+      {/* Origin dot */}
+      <circle cx={ox} cy={oy} r="3" fill={pink}/>
+    </svg>
+  );
+}
+
+function LinearFunctionDefinition() {
+  const ox = 120, oy = 170, s = 35;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  // line: y = 0.8x + 2
+  const x1 = -1, y1v = 0.8 * x1 + 2;
+  const x2 = 4.5, y2v = 0.8 * x2 + 2;
+  return (
+    <svg viewBox="0 0 380 230" className="w-full max-w-md mx-auto my-4">
+      {/* Axes */}
+      <line x1={toX(-1.5)} y1={oy} x2={toX(5)} y2={oy} stroke={gray} strokeWidth="1.5"/>
+      <line x1={ox} y1={toY(-0.5)} x2={ox} y2={toY(5.5)} stroke={gray} strokeWidth="1.5"/>
+      <text x={toX(5) + 4} y={oy + 4} fontSize="12" fill={gray}>x</text>
+      <text x={ox + 6} y={toY(5.5) - 2} fontSize="12" fill={gray}>y</text>
+      <text x={ox - 12} y={oy + 14} fontSize="11" fill={gray}>O</text>
+      {/* Line y = 0.8x + 2 */}
+      <line x1={toX(x1)} y1={toY(y1v)} x2={toX(x2)} y2={toY(y2v)} stroke={purple} strokeWidth="2.5"/>
+      {/* y-intercept b */}
+      <circle cx={ox} cy={toY(2)} r="4" fill={pink}/>
+      <text x={ox - 8} y={toY(2) - 8} textAnchor="end" fontSize="12" fontWeight="bold" fill={pink}>b (截距)</text>
+      {/* Rise/run triangle: from (1,2.8) to (3,2.8) to (3,4.4) */}
+      <line x1={toX(1)} y1={toY(2.8)} x2={toX(3)} y2={toY(2.8)} stroke={amber} strokeWidth="1.5" strokeDasharray="4,3"/>
+      <line x1={toX(3)} y1={toY(2.8)} x2={toX(3)} y2={toY(4.4)} stroke={amber} strokeWidth="1.5" strokeDasharray="4,3"/>
+      <text x={toX(2)} y={toY(2.8) + 14} textAnchor="middle" fontSize="11" fill={amber}>Δx</text>
+      <text x={toX(3) + 14} y={toY(3.6)} textAnchor="start" fontSize="11" fill={amber}>Δy</text>
+      <text x={toX(3.5)} y={toY(4.8)} fontSize="12" fontWeight="bold" fill={purple}>y = kx + b</text>
+      {/* Note */}
+      <text x="190" y="225" textAnchor="middle" fontSize="11" fill={gray}>{"k>0 上升，k<0 下降"}</text>
+    </svg>
+  );
+}
+
+function SlopeInterceptDiagram() {
+  const cases: { label: string; kPos: boolean; bPos: boolean }[] = [
+    { label: "k>0, b>0", kPos: true, bPos: true },
+    { label: "k>0, b<0", kPos: true, bPos: false },
+    { label: "k<0, b>0", kPos: false, bPos: true },
+    { label: "k<0, b<0", kPos: false, bPos: false },
+  ];
+  const cellW = 160, cellH = 130;
+  return (
+    <svg viewBox="0 0 340 280" className="w-full max-w-md mx-auto my-4">
+      {cases.map((c, i) => {
+        const col = i % 2, row = Math.floor(i / 2);
+        const cx = 20 + col * 170 + cellW / 2;
+        const cy = 10 + row * 140 + cellH / 2;
+        const ax = cx, ay = cy;
+        const halfW = 55, halfH = 45;
+        const k = c.kPos ? 0.7 : -0.7;
+        const b = c.bPos ? 20 : -20;
+        const lx1 = ax - halfW, ly1 = ay - (k * (-halfW) + b);
+        const lx2 = ax + halfW, ly2 = ay - (k * halfW + b);
+        return (
+          <g key={i}>
+            <rect x={cx - cellW / 2 + 10} y={cy - cellH / 2} width={cellW - 20} height={cellH - 10} rx="6" fill="#FAFAF9" stroke={lightGray} strokeWidth="1"/>
+            <line x1={ax - halfW - 5} y1={ay} x2={ax + halfW + 5} y2={ay} stroke={gray} strokeWidth="1"/>
+            <line x1={ax} y1={ay + halfH + 5} x2={ax} y2={ay - halfH - 5} stroke={gray} strokeWidth="1"/>
+            <text x={ax + halfW + 8} y={ay + 4} fontSize="9" fill={gray}>x</text>
+            <text x={ax + 4} y={ay - halfH - 8} fontSize="9" fill={gray}>y</text>
+            <line x1={lx1} y1={ly1} x2={lx2} y2={ly2} stroke={purple} strokeWidth="2"/>
+            <circle cx={ax} cy={ay - b} r="3" fill={pink}/>
+            <text x={cx} y={cy + cellH / 2 - 4} textAnchor="middle" fontSize="11" fontWeight="bold" fill={purple}>{c.label}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+function FunctionsEquationsInequalities() {
+  const ox = 140, oy = 170, s = 35;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  // y = 2x - 4 → root at x=2
+  const xMin = -0.5, xMax = 4.5;
+  const yAtMin = 2 * xMin - 4, yAtMax = 2 * xMax - 4;
+  return (
+    <svg viewBox="0 0 380 230" className="w-full max-w-md mx-auto my-4">
+      {/* Shading: y<0 region (x<2) */}
+      <polygon points={`${toX(0)},${oy} ${toX(0)},${toY(-4)} ${toX(2)},${oy}`} fill="#FCE7F3" fillOpacity="0.5"/>
+      {/* Shading: y>0 region (x>2) */}
+      <polygon points={`${toX(2)},${oy} ${toX(4)},${toY(4)} ${toX(4)},${oy}`} fill="#EDE9FE" fillOpacity="0.5"/>
+      {/* Axes */}
+      <line x1={toX(-1)} y1={oy} x2={toX(5)} y2={oy} stroke={gray} strokeWidth="1.5"/>
+      <line x1={ox} y1={toY(-4.5)} x2={ox} y2={toY(5.5)} stroke={gray} strokeWidth="1.5"/>
+      <text x={toX(5) + 4} y={oy + 4} fontSize="12" fill={gray}>x</text>
+      <text x={ox + 6} y={toY(5.5) - 2} fontSize="12" fill={gray}>y</text>
+      <text x={ox - 12} y={oy + 14} fontSize="11" fill={gray}>O</text>
+      {/* Line y=2x-4 */}
+      <line x1={toX(xMin)} y1={toY(yAtMin)} x2={toX(xMax)} y2={toY(yAtMax)} stroke={purple} strokeWidth="2.5"/>
+      <text x={toX(4)} y={toY(4.5)} fontSize="12" fontWeight="bold" fill={purple}>{"y=2x−4"}</text>
+      {/* Root point (2,0) */}
+      <circle cx={toX(2)} cy={oy} r="4" fill={pink}/>
+      <text x={toX(2)} y={oy + 16} textAnchor="middle" fontSize="11" fontWeight="bold" fill={pink}>{"x=2 方程的解"}</text>
+      {/* Labels for regions */}
+      <text x={toX(0.6)} y={oy - 8} textAnchor="middle" fontSize="10" fill={pink}>{"y<0"}</text>
+      <text x={toX(3.3)} y={oy - 8} textAnchor="middle" fontSize="10" fill={purple}>{"y>0"}</text>
+      {/* Tick marks */}
+      {[1, 2, 3, 4].map(i => (
+        <g key={i}>
+          <line x1={toX(i)} y1={oy - 3} x2={toX(i)} y2={oy + 3} stroke={gray} strokeWidth="1"/>
+          <text x={toX(i)} y={oy + 26} textAnchor="middle" fontSize="9" fill={gray}>{i}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function BasicParabola() {
+  const ox = 200, oy = 180, s = 40;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  const steps = 40;
+  const upPts: string[] = [];
+  const downPts: string[] = [];
+  for (let i = 0; i <= steps; i++) {
+    const x = -2.5 + (5 * i) / steps;
+    upPts.push(`${toX(x)},${toY(x * x)}`);
+    downPts.push(`${toX(x)},${toY(-x * x)}`);
+  }
+  return (
+    <svg viewBox="0 0 420 280" className="w-full max-w-md mx-auto my-4">
+      {/* Axes */}
+      <line x1={toX(-3)} y1={oy} x2={toX(3)} y2={oy} stroke={gray} strokeWidth="1.5"/>
+      <line x1={ox} y1={toY(-3)} x2={ox} y2={toY(4)} stroke={gray} strokeWidth="1.5"/>
+      <text x={toX(3) + 4} y={oy + 4} fontSize="12" fill={gray}>x</text>
+      <text x={ox + 8} y={toY(4) - 2} fontSize="12" fill={gray}>y</text>
+      <text x={ox - 12} y={oy + 14} fontSize="11" fill={gray}>O</text>
+      {/* Axis of symmetry */}
+      <line x1={ox} y1={toY(-2.5)} x2={ox} y2={toY(3.5)} stroke={lightGray} strokeWidth="1" strokeDasharray="5,4"/>
+      {/* y=x² (purple, upward) */}
+      <polyline points={upPts.join(" ")} fill="none" stroke={purple} strokeWidth="2.5"/>
+      <text x={toX(1.8)} y={toY(3.5)} fontSize="12" fontWeight="bold" fill={purple}>{"y=x²"}</text>
+      <text x={toX(2.6)} y={toY(2.8)} fontSize="10" fill={purple}>{"开口向上 a>0"}</text>
+      {/* y=-x² (amber, downward) */}
+      <polyline points={downPts.join(" ")} fill="none" stroke={amber} strokeWidth="2.5"/>
+      <text x={toX(1.8)} y={toY(-2.5)} fontSize="12" fontWeight="bold" fill={amber}>{"y=−x²"}</text>
+      <text x={toX(2.6)} y={toY(-1.8)} fontSize="10" fill={amber}>{"开口向下 a<0"}</text>
+      {/* Vertex dot */}
+      <circle cx={ox} cy={oy} r="4" fill={pink}/>
+    </svg>
+  );
+}
+
+function VertexFormDiagram() {
+  const ox = 140, oy = 200, s = 35;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  const steps = 40;
+  const basePts: string[] = [];
+  const transPts: string[] = [];
+  for (let i = 0; i <= steps; i++) {
+    const x = -2.5 + (7 * i) / steps;
+    const yBase = x * x;
+    if (yBase <= 6) basePts.push(`${toX(x)},${toY(yBase)}`);
+    const yTrans = (x - 2) * (x - 2) + 1;
+    if (yTrans <= 6) transPts.push(`${toX(x)},${toY(yTrans)}`);
+  }
+  return (
+    <svg viewBox="0 0 400 260" className="w-full max-w-md mx-auto my-4">
+      <defs>
+        <marker id="arrowVF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill={pink}/>
+        </marker>
+      </defs>
+      {/* Axes */}
+      <line x1={toX(-2.5)} y1={oy} x2={toX(5.5)} y2={oy} stroke={gray} strokeWidth="1.5"/>
+      <line x1={ox} y1={toY(-0.5)} x2={ox} y2={toY(6.5)} stroke={gray} strokeWidth="1.5"/>
+      <text x={toX(5.5) + 4} y={oy + 4} fontSize="12" fill={gray}>x</text>
+      <text x={ox + 6} y={toY(6.5) - 2} fontSize="12" fill={gray}>y</text>
+      <text x={ox - 12} y={oy + 14} fontSize="11" fill={gray}>O</text>
+      {/* y=x² in light gray */}
+      <polyline points={basePts.join(" ")} fill="none" stroke={lightGray} strokeWidth="2" strokeDasharray="5,4"/>
+      <text x={toX(-1.8)} y={toY(3.5)} fontSize="11" fill={gray}>{"y=x²"}</text>
+      {/* y=(x-2)²+1 in purple */}
+      <polyline points={transPts.join(" ")} fill="none" stroke={purple} strokeWidth="2.5"/>
+      <text x={toX(4)} y={toY(3)} fontSize="11" fontWeight="bold" fill={purple}>{"y=(x−2)²+1"}</text>
+      {/* Translation arrow from (0,0) to (2,1) */}
+      <line x1={ox} y1={oy} x2={toX(2) - 4} y2={toY(1) + 4} stroke={pink} strokeWidth="1.5" strokeDasharray="4,3" markerEnd="url(#arrowVF)"/>
+      {/* Vertices */}
+      <circle cx={ox} cy={oy} r="3.5" fill={lightGray}/>
+      <circle cx={toX(2)} cy={toY(1)} r="4" fill={pink}/>
+      <text x={toX(2) + 8} y={toY(1) + 4} textAnchor="start" fontSize="12" fontWeight="bold" fill={pink}>{"(h,k)=(2,1)"}</text>
+    </svg>
+  );
+}
+
+function DiscriminantIntersections() {
+  const cellW = 130, cellH = 140;
+  const cases = [
+    { label: "Δ>0 两个根", shift: 0 },
+    { label: "Δ=0 一个根", shift: 1 },
+    { label: "Δ<0 无实根", shift: 2 },
+  ];
+  return (
+    <svg viewBox="0 0 420 160" className="w-full max-w-lg mx-auto my-4">
+      {cases.map((c, i) => {
+        const cx = 30 + i * 140 + cellW / 2;
+        const axisY = 110;
+        const steps = 30;
+        const pts: string[] = [];
+        for (let j = 0; j <= steps; j++) {
+          const t = -2 + (4 * j) / steps;
+          let yVal: number;
+          if (c.shift === 0) yVal = t * t - 1;
+          else if (c.shift === 1) yVal = t * t;
+          else yVal = t * t + 0.8;
+          const px = cx + t * 25;
+          const py = axisY - yVal * 25;
+          pts.push(`${px},${py}`);
+        }
+        return (
+          <g key={i}>
+            <rect x={cx - cellW / 2 + 5} y="5" width={cellW - 10} height={cellH} rx="6" fill="#FAFAF9" stroke={lightGray} strokeWidth="1"/>
+            <line x1={cx - 55} y1={axisY} x2={cx + 55} y2={axisY} stroke={gray} strokeWidth="1"/>
+            <line x1={cx} y1={axisY + 15} x2={cx} y2="20" stroke={gray} strokeWidth="1"/>
+            <polyline points={pts.join(" ")} fill="none" stroke={purple} strokeWidth="2"/>
+            {c.shift === 0 && <>
+              <circle cx={cx - 25} cy={axisY} r="3" fill={pink}/>
+              <circle cx={cx + 25} cy={axisY} r="3" fill={pink}/>
+            </>}
+            {c.shift === 1 && <circle cx={cx} cy={axisY} r="3" fill={pink}/>}
+            <text x={cx} y={cellH + 12} textAnchor="middle" fontSize="11" fontWeight="bold" fill={purple}>{c.label}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// ─── Grade 9 Circle Diagrams ───
+
+/** Diagram: circle basic concepts — radius, diameter, chord, arc, central angle */
+function CircleBasicConcepts() {
+  const cx = 200, cy = 130, r = 90;
+  const chordAx = cx - 70, chordAy = cy - 57;
+  const chordBx = cx + 85, chordBy = cy - 30;
+  return (
+    <Wrapper width={440} height={280}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={cy} />
+      <Label x={cx - 10} y={cy + 5} text="O" color={pink} />
+      {/* radius */}
+      <line x1={cx} y1={cy} x2={cx + r} y2={cy} stroke={purple} strokeWidth={2} />
+      <Label x={cx + 48} y={cy + 16} text="r" color={purple} size={14} />
+      {/* diameter dashed */}
+      <line x1={cx - r} y1={cy} x2={cx + r} y2={cy} stroke={amber} strokeWidth={1.5} strokeDasharray="6,3" />
+      <Dot x={cx - r} y={cy} color={amber} r={3} />
+      <Dot x={cx + r} y={cy} color={amber} r={3} />
+      <Label x={cx - r - 5} y={cy - 8} text="A" color={amber} />
+      <Label x={cx + r + 5} y={cy - 8} text="B" color={amber} />
+      <Label x={cx} y={cy + 30} text="直径 diameter" color={amber} size={11} />
+      {/* chord */}
+      <line x1={chordAx} y1={chordAy} x2={chordBx} y2={chordBy} stroke={pink} strokeWidth={2} />
+      <Dot x={chordAx} y={chordAy} color={pink} r={3} />
+      <Dot x={chordBx} y={chordBy} color={pink} r={3} />
+      <Label x={chordAx - 12} y={chordAy - 4} text="C" color={pink} />
+      <Label x={chordBx + 10} y={chordBy - 4} text="D" color={pink} />
+      <Label x={(chordAx + chordBx) / 2} y={chordAy - 16} text="弦 chord" color={pink} size={11} />
+      {/* minor arc highlight */}
+      <path d={`M ${cx + r * Math.cos(-Math.PI / 3)},${cy + r * Math.sin(-Math.PI / 3)} A ${r} ${r} 0 0 1 ${cx + r},${cy}`} fill="none" stroke={gray} strokeWidth={3} opacity={0.5} />
+      <Label x={cx + r + 16} y={cy - 45} text="弧 arc" color={gray} size={11} />
+      {/* central angle indicator */}
+      <line x1={cx} y1={cy} x2={cx + r * Math.cos(-Math.PI / 3)} y2={cy + r * Math.sin(-Math.PI / 3)} stroke={gray} strokeWidth={1.5} strokeDasharray="4,3" />
+      <path d="M 225,130 A 25 25 0 0 0 212,105" fill="none" stroke={gray} strokeWidth={1.5} />
+      <Label x={238} y={110} text="圆心角" color={gray} size={11} />
+      <Label x={200} y={268} text="半径 radius = r，直径 = 2r" color={purple} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: point and circle positional relationship */
+function PointCircleRelation() {
+  const cx = 200, cy = 110, r = 70;
+  return (
+    <Wrapper width={400} height={230}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={cy} r={3} />
+      <Label x={cx + 8} y={cy + 14} text="O" color={gray} />
+      {/* Inside point */}
+      <Dot x={cx - 25} y={cy + 10} color={pink} r={5} />
+      <Label x={cx - 25} y={cy + 30} text="P₁" color={pink} />
+      <Label x={cx - 25} y={cy + 44} text="d < r（内）" color={pink} size={11} />
+      {/* On the circle */}
+      <Dot x={cx + r} y={cy} color={amber} r={5} />
+      <Label x={cx + r + 12} y={cy + 4} text="P₂" color={amber} />
+      <Label x={cx + r + 12} y={cy + 18} text="d = r（上）" color={amber} size={11} />
+      {/* Outside point */}
+      <Dot x={cx - 30} y={cy - r - 30} color={gray} r={5} />
+      <Label x={cx - 30} y={cy - r - 40} text="P₃" color={gray} />
+      <Label x={cx - 55} y={cy - r - 52} text="d > r（外）" color={gray} size={11} />
+      {/* dashed lines from O */}
+      <line x1={cx} y1={cy} x2={cx - 25} y2={cy + 10} stroke={pink} strokeWidth={1} strokeDasharray="3,3" />
+      <line x1={cx} y1={cy} x2={cx + r} y2={cy} stroke={amber} strokeWidth={1} strokeDasharray="3,3" />
+      <line x1={cx} y1={cy} x2={cx - 30} y2={cy - r - 30} stroke={gray} strokeWidth={1} strokeDasharray="3,3" />
+      <Label x={200} y={218} text="d = 点到圆心的距离" color={purple} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: line and circle positional relationship */
+function LineCircleRelation() {
+  const cx = 200, cy = 120, r = 60;
+  const secantY = cy - 20;
+  const halfChord = Math.sqrt(r * r - 20 * 20);
+  return (
+    <Wrapper width={440} height={260}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={cy} r={3} />
+      <Label x={cx + 8} y={cy + 14} text="O" color={gray} />
+      {/* Secant — 2 intersections */}
+      <line x1={100} y1={secantY} x2={340} y2={secantY} stroke={pink} strokeWidth={2} />
+      <Dot x={cx - halfChord} y={secantY} color={pink} r={3} />
+      <Dot x={cx + halfChord} y={secantY} color={pink} r={3} />
+      <Label x={350} y={secantY - 2} text="割线 secant" color={pink} size={11} anchor="start" />
+      {/* Tangent — 1 intersection */}
+      <line x1={100} y1={cy + r} x2={340} y2={cy + r} stroke={amber} strokeWidth={2} />
+      <Dot x={cx} y={cy + r} color={amber} r={4} />
+      <Label x={cx + 8} y={cy + r + 16} text="T" color={amber} />
+      <line x1={cx} y1={cy} x2={cx} y2={cy + r} stroke={amber} strokeWidth={1.5} strokeDasharray="4,3" />
+      <rect x={cx} y={cy + r - 10} width={10} height={10} fill="none" stroke={amber} strokeWidth={1} />
+      <Label x={350} y={cy + r + 4} text="切线 tangent" color={amber} size={11} anchor="start" />
+      {/* Non-intersecting line */}
+      <line x1={100} y1={cy + r + 45} x2={340} y2={cy + r + 45} stroke={gray} strokeWidth={2} />
+      <Label x={350} y={cy + r + 49} text="不相交" color={gray} size={11} anchor="start" />
+      <Label x={220} y={252} text="d < r 相交 | d = r 相切 | d > r 相离" color={purple} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: two circles positional relationships (5 cases) */
+function CircleCircleRelation() {
+  const y = 65, r1 = 24, r2 = 16, gap = 90;
+  const cases = [
+    { label: "外离", d: r1 + r2 + 10 },
+    { label: "外切", d: r1 + r2 },
+    { label: "相交", d: r1 + 4 },
+    { label: "内切", d: r1 - r2 },
+    { label: "内含", d: 3 },
+  ];
+  return (
+    <Wrapper width={500} height={150}>
+      {cases.map((c, i) => {
+        const baseX = 50 + i * gap;
+        return (
+          <g key={i}>
+            <circle cx={baseX} cy={y} r={r1} fill="none" stroke={purple} strokeWidth={1.5} />
+            <circle cx={baseX + c.d} cy={y} r={r2} fill="none" stroke={pink} strokeWidth={1.5} />
+            <Dot x={baseX} y={y} color={purple} r={2} />
+            <Dot x={baseX + c.d} y={y} color={pink} r={2} />
+            <Label x={baseX + c.d / 2} y={y + r1 + 20} text={c.label} color={gray} size={11} />
+          </g>
+        );
+      })}
+      <Label x={250} y={140} text="d = 圆心距，R 大半径，r 小半径" color={purple} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: central angle, arc, and chord relationship */
+function CentralAngleArcChord() {
+  const cx = 200, cy = 130, r = 90;
+  const a1 = -Math.PI / 3, a2 = -Math.PI * 2 / 3;
+  const ax = cx + r * Math.cos(a1), ay = cy + r * Math.sin(a1);
+  const bx = cx + r * Math.cos(a2), by = cy + r * Math.sin(a2);
+  return (
+    <Wrapper width={440} height={280}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={lightGray} strokeWidth={1.5} />
+      <Dot x={cx} y={cy} />
+      <Label x={cx + 8} y={cy + 14} text="O" color={pink} />
+      {/* Radii OA, OB */}
+      <line x1={cx} y1={cy} x2={ax} y2={ay} stroke={purple} strokeWidth={2} />
+      <line x1={cx} y1={cy} x2={bx} y2={by} stroke={purple} strokeWidth={2} />
+      <Dot x={ax} y={ay} color={pink} r={4} />
+      <Dot x={bx} y={by} color={pink} r={4} />
+      <Label x={ax + 10} y={ay - 4} text="A" color={pink} />
+      <Label x={bx - 14} y={by - 4} text="B" color={pink} />
+      {/* Chord AB */}
+      <line x1={ax} y1={ay} x2={bx} y2={by} stroke={amber} strokeWidth={2} />
+      <Label x={(ax + bx) / 2} y={(ay + by) / 2 - 12} text="弦 AB" color={amber} size={12} />
+      {/* Arc AB */}
+      <path d={`M ${ax},${ay} A ${r} ${r} 0 0 0 ${bx},${by}`} fill="none" stroke={pink} strokeWidth={3} />
+      <Label x={cx} y={cy - r - 10} text="⌢AB" color={pink} size={13} />
+      {/* Central angle arc */}
+      <path d={`M ${cx + 25 * Math.cos(a1)},${cy + 25 * Math.sin(a1)} A 25 25 0 0 0 ${cx + 25 * Math.cos(a2)},${cy + 25 * Math.sin(a2)}`} fill="none" stroke={gray} strokeWidth={1.5} />
+      <Label x={cx} y={cy - 32} text="∠AOB" color={gray} size={12} />
+      <Label x={220} y={268} text="等圆中：等圆心角 ↔ 等弧 ↔ 等弦" color={purple} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: inscribed angle theorem */
+function InscribedAngleTheorem() {
+  const cx = 200, cy = 130, r = 90;
+  const aAng = -Math.PI / 4, bAng = -Math.PI * 3 / 4;
+  const cAng = Math.PI / 2 + 0.3;
+  const ax = cx + r * Math.cos(aAng), ay = cy + r * Math.sin(aAng);
+  const bx = cx + r * Math.cos(bAng), by = cy + r * Math.sin(bAng);
+  const px = cx + r * Math.cos(cAng), py = cy + r * Math.sin(cAng);
+  return (
+    <Wrapper width={440} height={280}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={lightGray} strokeWidth={1.5} />
+      <Dot x={cx} y={cy} r={3} />
+      <Label x={cx + 8} y={cy - 6} text="O" color={gray} />
+      {/* Central angle AOB */}
+      <line x1={cx} y1={cy} x2={ax} y2={ay} stroke={purple} strokeWidth={2} />
+      <line x1={cx} y1={cy} x2={bx} y2={by} stroke={purple} strokeWidth={2} />
+      <path d={`M ${cx + 20 * Math.cos(aAng)},${cy + 20 * Math.sin(aAng)} A 20 20 0 0 0 ${cx + 20 * Math.cos(bAng)},${cy + 20 * Math.sin(bAng)}`} fill="none" stroke={purple} strokeWidth={1.5} />
+      <Label x={cx} y={cy - 22} text="2α" color={purple} size={13} />
+      {/* Inscribed angle ACB */}
+      <line x1={px} y1={py} x2={ax} y2={ay} stroke={pink} strokeWidth={2} />
+      <line x1={px} y1={py} x2={bx} y2={by} stroke={pink} strokeWidth={2} />
+      <Label x={px} y={py + 18} text="α" color={pink} size={14} />
+      {/* Points */}
+      <Dot x={ax} y={ay} color={amber} r={4} />
+      <Dot x={bx} y={by} color={amber} r={4} />
+      <Dot x={px} y={py} color={pink} r={4} />
+      <Label x={ax + 10} y={ay - 6} text="A" color={amber} />
+      <Label x={bx - 14} y={by - 6} text="B" color={amber} />
+      <Label x={px + 12} y={py + 6} text="C" color={pink} />
+      <Label x={220} y={268} text="圆周角 = ½ 圆心角（同弧）" color={purple} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: tangent line properties — OT ⊥ tangent */
+function TangentProperties() {
+  const cx = 200, cy = 110, r = 70;
+  const ty = cy + r;
+  return (
+    <Wrapper width={420} height={240}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={cy} />
+      <Label x={cx + 10} y={cy - 6} text="O" color={pink} />
+      {/* Radius OT */}
+      <line x1={cx} y1={cy} x2={cx} y2={ty} stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={ty} color={amber} r={5} />
+      <Label x={cx + 10} y={ty + 4} text="T" color={amber} />
+      {/* Tangent line through T */}
+      <line x1={cx - 130} y1={ty} x2={cx + 130} y2={ty} stroke={amber} strokeWidth={2} />
+      {/* Right angle mark */}
+      <rect x={cx} y={ty - 12} width={12} height={12} fill="none" stroke={gray} strokeWidth={1.2} />
+      <Label x={cx + 14} y={(cy + ty) / 2} text="r" color={purple} size={14} />
+      <Label x={cx + 90} y={ty - 10} text="切线 l" color={amber} size={12} />
+      <Label x={210} y={228} text="OT ⊥ l — 切线过切点垂直于半径" color={purple} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: arc length and sector area formulas */
+function ArcLengthSectorArea() {
+  const cx = 180, cy = 150, r = 100;
+  const angle = Math.PI / 3;
+  const ax = cx + r, ay = cy;
+  const bx = cx + r * Math.cos(-angle), by = cy + r * Math.sin(-angle);
+  return (
+    <Wrapper width={440} height={280}>
+      {/* Sector */}
+      <path d={`M ${cx},${cy} L ${ax},${ay} A ${r} ${r} 0 0 0 ${bx},${by} Z`} fill={purple} fillOpacity={0.1} stroke={purple} strokeWidth={2} />
+      <Dot x={cx} y={cy} />
+      <Label x={cx - 14} y={cy + 4} text="O" color={pink} />
+      {/* Radius labels */}
+      <Label x={(cx + ax) / 2} y={ay + 18} text="r" color={purple} size={14} />
+      <Label x={(cx + bx) / 2 + 6} y={(cy + by) / 2 - 6} text="r" color={purple} size={14} />
+      {/* Angle arc */}
+      <path d={`M ${cx + 30},${cy} A 30 30 0 0 0 ${cx + 30 * Math.cos(-angle)},${cy + 30 * Math.sin(-angle)}`} fill="none" stroke={amber} strokeWidth={1.5} />
+      <Label x={cx + 42} y={cy - 14} text="n°" color={amber} size={13} />
+      {/* Arc highlight */}
+      <path d={`M ${ax},${ay} A ${r} ${r} 0 0 0 ${bx},${by}`} fill="none" stroke={pink} strokeWidth={3} />
+      <Label x={cx + r + 12} y={(ay + by) / 2 - 10} text="⌢" color={pink} size={14} />
+      {/* Formulas */}
+      <Label x={220} y={240} text="弧长 l = nπr / 180" color={gray} size={13} />
+      <Label x={220} y={260} text="扇形面积 S = nπr² / 360 = ½lr" color={gray} size={13} />
+    </Wrapper>
+  );
+}
+
+// ─── Inverse Proportion Function Diagrams ───
+
+/** Diagram: Inverse proportion concept — table showing xy = 12 */
+function InverseProportionConcept() {
+  const xs = [1, 2, 3, 4, 6, 12];
+  const ys = [12, 6, 4, 3, 2, 1];
+  const colW = 52, startX = 70, headerY = 30, rowH = 32;
+  return (
+    <Wrapper width={420} height={170}>
+      <defs>
+        <marker id="arrowIPC" viewBox="0 0 6 6" refX={6} refY={3} markerWidth={6} markerHeight={6} orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill={pink} />
+        </marker>
+      </defs>
+      <Label x={startX - 30} y={headerY + 6} text="x" color={purple} size={14} />
+      <Label x={startX - 30} y={headerY + rowH + 6} text="y" color={amber} size={14} />
+      {xs.map((x, i) => {
+        const cx = startX + i * colW + colW / 2;
+        return (
+          <g key={i}>
+            <rect x={startX + i * colW} y={headerY - 14} width={colW} height={rowH} fill="rgba(139,92,246,0.08)" stroke={lightGray} strokeWidth={1} rx={3} />
+            <Label x={cx} y={headerY + 6} text={String(x)} color={purple} size={13} />
+            <rect x={startX + i * colW} y={headerY + rowH - 14} width={colW} height={rowH} fill="rgba(245,158,11,0.08)" stroke={lightGray} strokeWidth={1} rx={3} />
+            <Label x={cx} y={headerY + rowH + 6} text={String(ys[i])} color={amber} size={13} />
+            <line x1={cx} y1={headerY + rowH - 16} x2={cx} y2={headerY + rowH - 12} stroke={pink} strokeWidth={1.5} markerEnd="url(#arrowIPC)" />
+          </g>
+        );
+      })}
+      <Label x={210} y={headerY + 2 * rowH + 16} text="x × y = 12（积为常数 / product is constant）" color={pink} size={12} />
+      <Label x={210} y={155} text="x 增大 → y 减小 / As x increases, y decreases" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Hyperbola graph — y=6/x (k>0) and y=-6/x (k<0) */
+function HyperbolaGraph() {
+  const ox = 220, oy = 160, scale = 18;
+  const toSvg = (x: number, y: number): [number, number] => [ox + x * scale, oy - y * scale];
+  const xVals = [0.5, 0.8, 1, 1.5, 2, 3, 4, 5, 6, 8];
+  const posQ1 = xVals.map(x => toSvg(x, 6 / x));
+  const posQ3 = xVals.map(x => toSvg(-x, -6 / x));
+  const negQ2 = xVals.map(x => toSvg(-x, 6 / x));
+  const negQ4 = xVals.map(x => toSvg(x, -6 / x));
+  const pts = (arr: [number, number][]) => arr.map(p => p.join(",")).join(" ");
+  return (
+    <Wrapper width={440} height={320}>
+      {/* Axes */}
+      <line x1={20} y1={oy} x2={420} y2={oy} stroke={gray} strokeWidth={1.5} />
+      <line x1={ox} y1={10} x2={ox} y2={310} stroke={gray} strokeWidth={1.5} />
+      <polygon points={`420,${oy} 414,${oy - 4} 414,${oy + 4}`} fill={gray} />
+      <polygon points={`${ox},10 ${ox - 4},16 ${ox + 4},16`} fill={gray} />
+      <Label x={430} y={oy + 4} text="x" color={gray} size={12} anchor="start" />
+      <Label x={ox + 8} y={20} text="y" color={gray} size={12} anchor="start" />
+      <Label x={ox - 10} y={oy + 14} text="O" color={gray} size={11} />
+      {/* Asymptote dashes */}
+      <line x1={20} y1={oy} x2={420} y2={oy} stroke={lightGray} strokeWidth={0.5} strokeDasharray="4,3" />
+      <line x1={ox} y1={10} x2={ox} y2={310} stroke={lightGray} strokeWidth={0.5} strokeDasharray="4,3" />
+      {/* y=6/x (k>0): Q1 and Q3 in purple */}
+      <polyline points={pts(posQ1)} fill="none" stroke={purple} strokeWidth={2.5} />
+      <polyline points={pts(posQ3)} fill="none" stroke={purple} strokeWidth={2.5} />
+      <Label x={posQ1[0][0] + 10} y={posQ1[0][1] - 8} text="y = 6/x" color={purple} size={12} anchor="start" />
+      {/* y=-6/x (k<0): Q2 and Q4 in amber */}
+      <polyline points={pts(negQ2)} fill="none" stroke={amber} strokeWidth={2.5} />
+      <polyline points={pts(negQ4)} fill="none" stroke={amber} strokeWidth={2.5} />
+      <Label x={negQ2[0][0] - 10} y={negQ2[0][1] - 8} text="y = −6/x" color={amber} size={12} anchor="end" />
+      {/* Quadrant labels */}
+      <Label x={350} y={50} text="I" color={lightGray} size={16} />
+      <Label x={80} y={50} text="II" color={lightGray} size={16} />
+      <Label x={80} y={270} text="III" color={lightGray} size={16} />
+      <Label x={350} y={270} text="IV" color={lightGray} size={16} />
+      <Label x={220} y={310} text="渐近线: x轴 & y轴 / Asymptotes: x-axis & y-axis" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Hyperbola properties — rectangle area = |k| */
+function HyperbolaProperties() {
+  const ox = 60, oy = 220, scale = 28;
+  const toSvg = (x: number, y: number): [number, number] => [ox + x * scale, oy - y * scale];
+  const k = 6;
+  const xVals = [0.8, 1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const curve = xVals.map(x => toSvg(x, k / x));
+  const pts = curve.map(p => p.join(",")).join(" ");
+  const px = 2;
+  const [spx, spy] = toSvg(px, k / px);
+  const [sxP] = toSvg(px, 0);
+  return (
+    <Wrapper width={380} height={260}>
+      {/* Axes */}
+      <line x1={ox} y1={oy} x2={360} y2={oy} stroke={gray} strokeWidth={1.5} />
+      <line x1={ox} y1={oy} x2={ox} y2={10} stroke={gray} strokeWidth={1.5} />
+      <polygon points={`360,${oy} 354,${oy - 4} 354,${oy + 4}`} fill={gray} />
+      <polygon points={`${ox},10 ${ox - 4},16 ${ox + 4},16`} fill={gray} />
+      <Label x={370} y={oy + 4} text="x" color={gray} size={12} anchor="start" />
+      <Label x={ox + 8} y={18} text="y" color={gray} size={12} anchor="start" />
+      <Label x={ox - 6} y={oy + 14} text="O" color={gray} size={11} />
+      {/* Curve */}
+      <polyline points={pts} fill="none" stroke={purple} strokeWidth={2.5} />
+      {/* Rectangle from O to P */}
+      <rect x={ox} y={spy} width={sxP - ox} height={oy - spy} fill="rgba(236,72,153,0.12)" stroke={pink} strokeWidth={1.5} strokeDasharray="4,3" />
+      {/* Point P */}
+      <Dot x={spx} y={spy} color={pink} r={5} />
+      <Label x={spx + 8} y={spy - 8} text="P(2, 3)" color={pink} size={12} anchor="start" />
+      {/* Perpendicular drop lines */}
+      <line x1={spx} y1={spy} x2={spx} y2={oy} stroke={pink} strokeWidth={1} strokeDasharray="3,2" />
+      <line x1={spx} y1={spy} x2={ox} y2={spy} stroke={pink} strokeWidth={1} strokeDasharray="3,2" />
+      {/* Area label */}
+      <Label x={(ox + sxP) / 2} y={(spy + oy) / 2 + 4} text="S = |k| = 6" color={amber} size={13} />
+      {/* Arrow: x increases, y decreases */}
+      <Label x={260} y={50} text="x 增大 → y 减小" color={purple} size={11} />
+      <Label x={260} y={65} text="x increases → y decreases" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: |k| geometric meaning — larger |k| = farther from origin */
+function KGeometricMeaning() {
+  const ox = 60, oy = 210, scale = 16;
+  const toSvg = (x: number, y: number): [number, number] => [ox + x * scale, oy - y * scale];
+  const xVals = [0.5, 0.8, 1, 1.5, 2, 3, 4, 5, 6, 8, 10, 12, 14];
+  const curve4 = xVals.filter(x => 4 / x <= 13).map(x => toSvg(x, 4 / x));
+  const curve12 = xVals.filter(x => 12 / x <= 13).map(x => toSvg(x, 12 / x));
+  const pts4 = curve4.map(p => p.join(",")).join(" ");
+  const pts12 = curve12.map(p => p.join(",")).join(" ");
+  const [r1x, r1y] = toSvg(2, 2);
+  const [r2x, r2y] = toSvg(3, 4);
+  return (
+    <Wrapper width={380} height={260}>
+      {/* Axes */}
+      <line x1={ox} y1={oy} x2={360} y2={oy} stroke={gray} strokeWidth={1.5} />
+      <line x1={ox} y1={oy} x2={ox} y2={10} stroke={gray} strokeWidth={1.5} />
+      <polygon points={`360,${oy} 354,${oy - 4} 354,${oy + 4}`} fill={gray} />
+      <polygon points={`${ox},10 ${ox - 4},16 ${ox + 4},16`} fill={gray} />
+      <Label x={370} y={oy + 4} text="x" color={gray} size={12} anchor="start" />
+      <Label x={ox + 8} y={18} text="y" color={gray} size={12} anchor="start" />
+      <Label x={ox - 6} y={oy + 14} text="O" color={gray} size={11} />
+      {/* k=4 curve (closer to axes, amber) */}
+      <polyline points={pts4} fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={curve4[curve4.length - 1][0] + 4} y={curve4[curve4.length - 1][1] - 6} text="k = 4" color={amber} size={12} anchor="start" />
+      {/* k=12 curve (farther from axes, purple) */}
+      <polyline points={pts12} fill="none" stroke={purple} strokeWidth={2.5} />
+      <Label x={curve12[curve12.length - 1][0] + 4} y={curve12[curve12.length - 1][1] - 6} text="k = 12" color={purple} size={12} anchor="start" />
+      {/* Rectangle for k=4 */}
+      <rect x={ox} y={r1y} width={r1x - ox} height={oy - r1y} fill="rgba(245,158,11,0.1)" stroke={amber} strokeWidth={1} strokeDasharray="3,2" />
+      <Dot x={r1x} y={r1y} color={amber} r={4} />
+      <Label x={r1x + 4} y={r1y - 6} text="S = 4" color={amber} size={10} anchor="start" />
+      {/* Rectangle for k=12 */}
+      <rect x={ox} y={r2y} width={r2x - ox} height={oy - r2y} fill="rgba(139,92,246,0.1)" stroke={purple} strokeWidth={1} strokeDasharray="3,2" />
+      <Dot x={r2x} y={r2y} color={purple} r={4} />
+      <Label x={r2x + 4} y={r2y - 6} text="S = 12" color={purple} size={10} anchor="start" />
+      <Label x={210} y={248} text="|k| 越大，曲线离原点越远 / Larger |k| → farther from origin" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+// ─── Algebra Area Model Diagrams ───
+
+/** Diagram: Polynomial area model — (a+b)(c+d) = ac + ad + bc + bd */
+function PolynomialAreaModel() {
+  const sx = 40, sy = 30;
+  const wa = 140, wb = 100;
+  const hc = 100, hd = 70;
+  const totalW = wa + wb, totalH = hc + hd;
+  return (
+    <Wrapper width={400} height={260}>
+      <rect x={sx} y={sy} width={totalW} height={totalH} fill="none" stroke={gray} strokeWidth={2} />
+      {/* ac (top-left, purple) */}
+      <rect x={sx} y={sy} width={wa} height={hc} fill="rgba(139,92,246,0.12)" stroke={purple} strokeWidth={1.5} />
+      <Label x={sx + wa / 2} y={sy + hc / 2 + 4} text="ac" color={purple} size={16} />
+      {/* ad (bottom-left, pink) */}
+      <rect x={sx} y={sy + hc} width={wa} height={hd} fill="rgba(236,72,153,0.10)" stroke={pink} strokeWidth={1.5} />
+      <Label x={sx + wa / 2} y={sy + hc + hd / 2 + 4} text="ad" color={pink} size={16} />
+      {/* bc (top-right, amber) */}
+      <rect x={sx + wa} y={sy} width={wb} height={hc} fill="rgba(245,158,11,0.12)" stroke={amber} strokeWidth={1.5} />
+      <Label x={sx + wa + wb / 2} y={sy + hc / 2 + 4} text="bc" color={amber} size={16} />
+      {/* bd (bottom-right, gray) */}
+      <rect x={sx + wa} y={sy + hc} width={wb} height={hd} fill="rgba(107,114,128,0.10)" stroke={gray} strokeWidth={1.5} />
+      <Label x={sx + wa + wb / 2} y={sy + hc + hd / 2 + 4} text="bd" color={gray} size={16} />
+      {/* Dimension labels: top */}
+      <Label x={sx + wa / 2} y={sy - 10} text="a" color={purple} size={14} />
+      <Label x={sx + wa + wb / 2} y={sy - 10} text="b" color={amber} size={14} />
+      {/* Dimension labels: left */}
+      <Label x={sx - 16} y={sy + hc / 2 + 4} text="c" color={purple} size={14} />
+      <Label x={sx - 16} y={sy + hc + hd / 2 + 4} text="d" color={pink} size={14} />
+      {/* Formula */}
+      <Label x={sx + totalW / 2} y={sy + totalH + 28} text="(a + b)(c + d) = ac + ad + bc + bd" color={purple} size={13} />
+      <Label x={sx + totalW / 2} y={sy + totalH + 46} text="多项式乘法 = 面积拼合 / Polynomial multiplication = area model" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Factorization area model — perfect square trinomial + difference of squares */
+function FactorizationAreaModel() {
+  const sx = 20, sy = 20, sa = 100, sb = 60;
+  const total = sa + sb;
+  const sx2 = 240, sideA = 130, sideB = 50;
+  return (
+    <Wrapper width={480} height={270}>
+      {/* === Part 1: Perfect square trinomial === */}
+      <Label x={sx + total / 2} y={sy - 6} text="(a + b)² = a² + 2ab + b²" color={purple} size={12} />
+      <rect x={sx} y={sy + 8} width={sa} height={sa} fill="rgba(139,92,246,0.15)" stroke={purple} strokeWidth={1.5} />
+      <Label x={sx + sa / 2} y={sy + 8 + sa / 2 + 4} text="a²" color={purple} size={15} />
+      <rect x={sx + sa} y={sy + 8} width={sb} height={sa} fill="rgba(236,72,153,0.10)" stroke={pink} strokeWidth={1.5} />
+      <Label x={sx + sa + sb / 2} y={sy + 8 + sa / 2 + 4} text="ab" color={pink} size={13} />
+      <rect x={sx} y={sy + 8 + sa} width={sa} height={sb} fill="rgba(236,72,153,0.10)" stroke={pink} strokeWidth={1.5} />
+      <Label x={sx + sa / 2} y={sy + 8 + sa + sb / 2 + 4} text="ab" color={pink} size={13} />
+      <rect x={sx + sa} y={sy + 8 + sa} width={sb} height={sb} fill="rgba(245,158,11,0.15)" stroke={amber} strokeWidth={1.5} />
+      <Label x={sx + sa + sb / 2} y={sy + 8 + sa + sb / 2 + 4} text="b²" color={amber} size={13} />
+      {/* Dimension labels */}
+      <Label x={sx - 10} y={sy + 8 + sa / 2 + 4} text="a" color={purple} size={12} />
+      <Label x={sx - 10} y={sy + 8 + sa + sb / 2 + 4} text="b" color={amber} size={12} />
+      <Label x={sx + sa / 2} y={sy + 8 + total + 16} text="a" color={purple} size={12} />
+      <Label x={sx + sa + sb / 2} y={sy + 8 + total + 16} text="b" color={amber} size={12} />
+      {/* === Part 2: Difference of squares === */}
+      <Label x={sx2 + sideA / 2} y={sy - 6} text="a² − b² = (a+b)(a−b)" color={amber} size={12} />
+      <rect x={sx2} y={sy + 8} width={sideA} height={sideA} fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={1.5} />
+      <rect x={sx2 + sideA - sideB} y={sy + 8} width={sideB} height={sideB} fill="rgba(245,158,11,0.20)" stroke={amber} strokeWidth={1.5} />
+      <Label x={sx2 + sideA - sideB / 2} y={sy + 8 + sideB / 2 + 4} text="b²" color={amber} size={13} />
+      <Label x={sx2 + 35} y={sy + 8 + sideA / 2 + 10} text="a²−b²" color={purple} size={14} />
+      <Label x={sx2 - 10} y={sy + 8 + sideA / 2} text="a" color={purple} size={12} />
+      <Label x={sx2 + sideA / 2} y={sy + 8 + sideA + 16} text="a" color={purple} size={12} />
+      <Label x={sx2 + sideA + 6} y={sy + 8 + sideB / 2} text="b" color={amber} size={12} anchor="start" />
+      <Label x={240} y={250} text="因式分解 = 面积逆向拆分 / Factorization = reverse area decomposition" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+// ===================== Grade 9: Trigonometric Functions =====================
+
+/** Diagram: Right triangle with trig ratios sin, cos, tan */
+function TrigDefinition() {
+  const ax = 60, ay = 180, bx = 340, by = 180, cx = 340, cy = 40;
+  return (
+    <Wrapper width={500} height={220}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <polyline points={`${bx - 18},${by} ${bx - 18},${by - 18} ${bx},${by - 18}`} fill="none" stroke={gray} strokeWidth={1.5} />
+      <path d={`M ${ax + 40},${ay} A 40 40 0 0 0 ${ax + 36},${ay - 18}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={ax + 52} y={ay - 6} text="α" color={pink} size={15} />
+      <Label x={(ax + bx) / 2} y={ay + 18} text="邻边 adjacent" color={gray} size={11} />
+      <Label x={bx + 14} y={(by + cy) / 2 + 4} text="对边" color={purple} size={11} anchor="start" />
+      <Label x={bx + 14} y={(by + cy) / 2 + 18} text="opposite" color={purple} size={10} anchor="start" />
+      <Label x={(ax + cx) / 2 - 30} y={(ay + cy) / 2 - 8} text="斜边 hypotenuse" color={pink} size={11} />
+      <Label x={ax - 12} y={ay + 4} text="A" color={pink} />
+      <Label x={bx + 8} y={by + 14} text="B" color={pink} />
+      <Label x={cx + 8} y={cy - 6} text="C" color={pink} />
+      <Label x={440} y={40} text="sin α = 对/斜" color={purple} size={12} anchor="start" />
+      <Label x={440} y={60} text="cos α = 邻/斜" color={purple} size={12} anchor="start" />
+      <Label x={440} y={80} text="tan α = 对/邻" color={purple} size={12} anchor="start" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: 30-60-90 and 45-45-90 special angle triangles */
+function SpecialAngles() {
+  return (
+    <Wrapper width={500} height={210}>
+      <polygon points="40,180 180,180 180,40" fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <polyline points="162,180 162,162 180,162" fill="none" stroke={gray} strokeWidth={1.5} />
+      <Label x={60} y={195} text="30°" color={pink} size={12} />
+      <Label x={170} y={50} text="60°" color={pink} size={12} anchor="end" />
+      <Label x={110} y={198} text="√3" color={purple} size={13} />
+      <Label x={192} y={115} text="1" color={purple} size={13} anchor="start" />
+      <Label x={100} y={105} text="2" color={amber} size={13} />
+      <Label x={110} y={28} text="30°-60°-90°" color={gray} size={12} />
+      <polygon points="280,180 420,180 420,40" fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} />
+      <polyline points="402,180 402,162 420,162" fill="none" stroke={gray} strokeWidth={1.5} />
+      <Label x={300} y={195} text="45°" color={pink} size={12} />
+      <Label x={410} y={52} text="45°" color={pink} size={12} anchor="end" />
+      <Label x={350} y={198} text="1" color={amber} size={13} />
+      <Label x={432} y={115} text="1" color={amber} size={13} anchor="start" />
+      <Label x={340} y={105} text="√2" color={purple} size={13} />
+      <Label x={350} y={28} text="45°-45°-90°" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Solving a right triangle — given angle and one side, find others */
+function SolvingRightTriangles() {
+  const ax = 60, ay = 170, bx = 320, by = 170, cx = 320, cy = 40;
+  return (
+    <Wrapper width={480} height={210}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <polyline points={`${bx - 16},${by} ${bx - 16},${by - 16} ${bx},${by - 16}`} fill="none" stroke={gray} strokeWidth={1.5} />
+      <path d={`M ${ax + 35},${ay} A 35 35 0 0 0 ${ax + 32},${ay - 16}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={ax + 48} y={ay - 6} text="35°" color={pink} size={13} />
+      <Label x={(ax + bx) / 2} y={ay + 18} text="已知 given = 10" color={amber} size={12} />
+      <line x1={ax + 20} y1={ay + 6} x2={bx - 20} y2={by + 6} stroke={amber} strokeWidth={2.5} strokeDasharray="6,3" />
+      <Label x={bx + 10} y={(by + cy) / 2 + 4} text="? = 10·tan35°" color={purple} size={11} anchor="start" />
+      <Label x={(ax + cx) / 2 - 28} y={(ay + cy) / 2 - 6} text="? = 10/cos35°" color={purple} size={11} />
+      <Label x={ax - 10} y={ay + 4} text="A" color={pink} />
+      <Label x={bx + 6} y={by + 14} text="B" color={pink} />
+      <Label x={cx + 6} y={cy - 6} text="C" color={pink} />
+      <Label x={240} y={205} text="已知一角一边 → 求其余边" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Elevation and depression angles from a horizontal line of sight */
+function ElevationDepression() {
+  const px = 80, py = 110;
+  return (
+    <Wrapper width={460} height={210}>
+      <circle cx={px} cy={py - 18} r={8} fill="none" stroke={purple} strokeWidth={2} />
+      <line x1={px} y1={py - 10} x2={px} y2={py + 40} stroke={purple} strokeWidth={2} />
+      <line x1={px} y1={py + 10} x2={px - 14} y2={py + 30} stroke={purple} strokeWidth={2} />
+      <line x1={px} y1={py + 10} x2={px + 14} y2={py + 30} stroke={purple} strokeWidth={2} />
+      <line x1={px} y1={py + 40} x2={px - 12} y2={py + 60} stroke={purple} strokeWidth={2} />
+      <line x1={px} y1={py + 40} x2={px + 12} y2={py + 60} stroke={purple} strokeWidth={2} />
+      <line x1={px + 10} y1={py} x2={400} y2={py} stroke={lightGray} strokeWidth={1.5} strokeDasharray="6,3" />
+      <Label x={350} y={py - 8} text="水平线 horizontal" color={gray} size={10} />
+      <line x1={px + 10} y1={py} x2={380} y2={30} stroke={amber} strokeWidth={2} />
+      <Dot x={380} y={30} color={amber} r={5} />
+      <Label x={390} y={28} text="目标" color={amber} size={11} anchor="start" />
+      <path d="M 140,110 A 60 60 0 0 0 130,76" fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={160} y={90} text="仰角" color={amber} size={12} anchor="start" />
+      <Label x={160} y={104} text="elevation" color={amber} size={10} anchor="start" />
+      <line x1={px + 10} y1={py} x2={380} y2={190} stroke={pink} strokeWidth={2} />
+      <Dot x={380} y={190} color={pink} r={5} />
+      <Label x={390} y={192} text="目标" color={pink} size={11} anchor="start" />
+      <path d="M 140,110 A 60 60 0 0 1 132,142" fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={160} y={134} text="俯角" color={pink} size={12} anchor="start" />
+      <Label x={160} y={148} text="depression" color={pink} size={10} anchor="start" />
+    </Wrapper>
+  );
+}
+
+// ===================== Grade 9: Similar Figures =====================
+
+/** Diagram: Proportional segments a:b = c:d */
+function ProportionalSegments() {
+  return (
+    <Wrapper width={460} height={160}>
+      <line x1={40} y1={40} x2={160} y2={40} stroke={purple} strokeWidth={3} />
+      <line x1={180} y1={40} x2={340} y2={40} stroke={amber} strokeWidth={3} />
+      <Dot x={40} y={40} color={pink} /><Dot x={160} y={40} color={pink} /><Dot x={180} y={40} color={pink} /><Dot x={340} y={40} color={pink} />
+      <Label x={100} y={30} text="a" color={purple} size={14} />
+      <Label x={260} y={30} text="b" color={amber} size={14} />
+      <line x1={40} y1={90} x2={130} y2={90} stroke={purple} strokeWidth={3} />
+      <line x1={150} y1={90} x2={280} y2={90} stroke={amber} strokeWidth={3} />
+      <Dot x={40} y={90} color={pink} /><Dot x={130} y={90} color={pink} /><Dot x={150} y={90} color={pink} /><Dot x={280} y={90} color={pink} />
+      <Label x={85} y={80} text="c" color={purple} size={14} />
+      <Label x={215} y={80} text="d" color={amber} size={14} />
+      <Label x={380} y={45} text="a : b = c : d" color={gray} size={13} />
+      <Label x={380} y={70} text="⟹  a·d = b·c" color={pink} size={13} />
+      <Label x={230} y={140} text="成比例线段（交叉相乘）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Parallel line cutting triangle sides proportionally */
+function ParallelProportionality() {
+  const ax = 200, ay = 20, bx = 50, by = 185, cx = 380, cy = 185;
+  const t = 0.45;
+  const dx = ax + (bx - ax) * t, dy = ay + (by - ay) * t;
+  const ex = ax + (cx - ax) * t, ey = ay + (cy - ay) * t;
+  return (
+    <Wrapper width={440} height={220}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <line x1={dx} y1={dy} x2={ex} y2={ey} stroke={amber} strokeWidth={2.5} />
+      <Label x={(dx + ex) / 2} y={dy - 8} text="∥" color={amber} size={14} />
+      <Label x={ax} y={ay - 8} text="A" color={pink} />
+      <Label x={bx - 12} y={by + 14} text="B" color={pink} />
+      <Label x={cx + 8} y={cy + 14} text="C" color={pink} />
+      <Dot x={dx} y={dy} color={amber} r={4} /><Label x={dx - 16} y={dy - 4} text="D" color={amber} />
+      <Dot x={ex} y={ey} color={amber} r={4} /><Label x={ex + 10} y={ey - 4} text="E" color={amber} />
+      <Label x={220} y={212} text="DE ∥ BC ⟹ AD/DB = AE/EC" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Two similar rectangles with corresponding sides labeled */
+function SimilarPolygons() {
+  return (
+    <Wrapper width={460} height={180}>
+      <rect x={30} y={30} width={160} height={100} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} rx={2} />
+      <Label x={110} y={148} text="a" color={purple} size={13} />
+      <Label x={200} y={82} text="b" color={purple} size={13} anchor="start" />
+      <Label x={50} y={20} text="A" color={pink} size={11} /><Label x={170} y={20} text="B" color={pink} size={11} />
+      <Label x={170} y={145} text="C" color={pink} size={11} /><Label x={50} y={145} text="D" color={pink} size={11} />
+      <rect x={270} y={55} width={112} height={70} fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} rx={2} />
+      <Label x={326} y={143} text="a'" color={amber} size={13} />
+      <Label x={392} y={92} text="b'" color={amber} size={13} anchor="start" />
+      <Label x={282} y={47} text="A'" color={pink} size={11} /><Label x={368} y={47} text="B'" color={pink} size={11} />
+      <Label x={368} y={140} text="C'" color={pink} size={11} /><Label x={282} y={140} text="D'" color={pink} size={11} />
+      <Label x={232} y={85} text="∼" color={gray} size={22} />
+      <Label x={230} y={175} text="a/a' = b/b' = k（相似比）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: AA, SAS, SSS similarity criteria side by side */
+function SimilarTriangleCriteria() {
+  return (
+    <Wrapper width={500} height={190}>
+      <polygon points="30,145 110,145 80,55" fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <path d="M 46,145 A 16 16 0 0 0 52,132" fill="none" stroke={pink} strokeWidth={2} />
+      <path d="M 104,145 A 16 16 0 0 1 95,132" fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={70} y={165} text="AA" color={purple} size={14} />
+      <Label x={70} y={180} text="两角相等" color={gray} size={10} />
+      <polygon points="180,145 270,145 240,55" fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} />
+      <path d="M 196,145 A 16 16 0 0 0 207,133" fill="none" stroke={pink} strokeWidth={2} />
+      <line x1={180} y1={145} x2={240} y2={55} stroke={pink} strokeWidth={3} />
+      <line x1={180} y1={145} x2={270} y2={145} stroke={pink} strokeWidth={3} />
+      <Label x={225} y={165} text="SAS" color={amber} size={14} />
+      <Label x={225} y={180} text="两边之比+夹角" color={gray} size={10} />
+      <polygon points="330,145 430,145 395,55" fill="rgba(236,72,153,0.05)" stroke={pink} strokeWidth={2} />
+      <line x1={330} y1={145} x2={430} y2={145} stroke={pink} strokeWidth={3} />
+      <line x1={330} y1={145} x2={395} y2={55} stroke={pink} strokeWidth={3} />
+      <line x1={430} y1={145} x2={395} y2={55} stroke={pink} strokeWidth={3} />
+      <Label x={380} y={165} text="SSS" color={pink} size={14} />
+      <Label x={380} y={180} text="三边之比相等" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Two similar triangles showing side ratio k, perimeter ratio k, area ratio k² */
+function SimilarTriangleProperties() {
+  return (
+    <Wrapper width={480} height={200}>
+      <polygon points="40,160 200,160 140,40" fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <Label x={120} y={175} text="a" color={purple} size={12} />
+      <Label x={178} y={95} text="b" color={purple} size={12} />
+      <Label x={78} y={95} text="c" color={purple} size={12} />
+      <polygon points="280,160 380,160 342,88" fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} />
+      <Label x={330} y={175} text="a'" color={amber} size={12} />
+      <Label x={368} y={120} text="b'" color={amber} size={12} />
+      <Label x={302} y={120} text="c'" color={amber} size={12} />
+      <Label x={240} y={130} text="∼" color={gray} size={20} />
+      <Label x={420} y={50} text="相似比 = k" color={purple} size={12} anchor="start" />
+      <Label x={420} y={72} text="周长比 = k" color={amber} size={12} anchor="start" />
+      <Label x={420} y={94} text="面积比 = k²" color={pink} size={12} anchor="start" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Homothety — triangle and its dilation from center O */
+function HomothetyDiagram() {
+  const ox = 60, oy = 100;
+  const a = [180, 160], b = [250, 160], c = [220, 80];
+  const k = 1.6;
+  const a2 = [ox + (a[0] - ox) * k, oy + (a[1] - oy) * k];
+  const b2 = [ox + (b[0] - ox) * k, oy + (b[1] - oy) * k];
+  const c2 = [ox + (c[0] - ox) * k, oy + (c[1] - oy) * k];
+  return (
+    <Wrapper width={500} height={220}>
+      <line x1={ox} y1={oy} x2={a2[0]} y2={a2[1]} stroke={lightGray} strokeWidth={1} strokeDasharray="5,3" />
+      <line x1={ox} y1={oy} x2={b2[0]} y2={b2[1]} stroke={lightGray} strokeWidth={1} strokeDasharray="5,3" />
+      <line x1={ox} y1={oy} x2={c2[0]} y2={c2[1]} stroke={lightGray} strokeWidth={1} strokeDasharray="5,3" />
+      <polygon points={`${a[0]},${a[1]} ${b[0]},${b[1]} ${c[0]},${c[1]}`} fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <polygon points={`${a2[0]},${a2[1]} ${b2[0]},${b2[1]} ${c2[0]},${c2[1]}`} fill="rgba(245,158,11,0.08)" stroke={amber} strokeWidth={2} />
+      <Dot x={ox} y={oy} color={pink} r={5} />
+      <Label x={ox - 12} y={oy + 4} text="O" color={pink} size={14} />
+      <Label x={a[0] - 4} y={a[1] + 14} text="A" color={purple} size={11} />
+      <Label x={b[0] + 6} y={b[1] + 14} text="B" color={purple} size={11} />
+      <Label x={c[0]} y={c[1] - 8} text="C" color={purple} size={11} />
+      <Label x={a2[0] - 4} y={a2[1] + 14} text="A'" color={amber} size={11} />
+      <Label x={b2[0] + 6} y={b2[1] + 14} text="B'" color={amber} size={11} />
+      <Label x={c2[0]} y={c2[1] - 8} text="C'" color={amber} size={11} />
+      <Label x={250} y={215} text="位似变换（中心O，比 k）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+// ===================== Grade 9: Rotation =====================
+
+/** Diagram: Triangle rotated 60° around center point */
+function RotationDefinition() {
+  const ox = 200, oy = 120;
+  const pts = [[260, 60], [310, 140], [240, 150]];
+  const angle = Math.PI / 3;
+  const rot = (x: number, y: number) => {
+    const dx = x - ox, dy = y - oy;
+    return [ox + dx * Math.cos(angle) - dy * Math.sin(angle), oy + dx * Math.sin(angle) + dy * Math.cos(angle)];
+  };
+  const rpts = pts.map(([x, y]) => rot(x, y));
+  const r = Math.hypot(pts[0][0] - ox, pts[0][1] - oy);
+  return (
+    <Wrapper width={460} height={240}>
+      <polygon points={pts.map(p => p.join(",")).join(" ")} fill="rgba(139,92,246,0.1)" stroke={purple} strokeWidth={2} />
+      <polygon points={rpts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")} fill="rgba(245,158,11,0.1)" stroke={amber} strokeWidth={2} />
+      <path d={`M ${pts[0][0]},${pts[0][1]} A ${r} ${r} 0 0 1 ${rpts[0][0].toFixed(1)},${rpts[0][1].toFixed(1)}`} fill="none" stroke={pink} strokeWidth={2} strokeDasharray="4,3" />
+      <Dot x={ox} y={oy} color={pink} r={5} />
+      <Label x={ox - 14} y={oy + 4} text="O" color={pink} size={14} />
+      <Label x={pts[0][0] + 6} y={pts[0][1] - 6} text="A" color={purple} size={11} />
+      <Label x={rpts[0][0] + 6} y={rpts[0][1] - 6} text="A'" color={amber} size={11} />
+      <Label x={230} y={232} text="旋转60°（原图紫色，像为金色）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Rotation preserves distances and angles */
+function RotationProperties() {
+  const ox = 180, oy = 120;
+  const pts: [number, number][] = [[250, 50], [300, 130]];
+  const angle = Math.PI / 4;
+  const rot = (x: number, y: number) => {
+    const dx = x - ox, dy = y - oy;
+    return [ox + dx * Math.cos(angle) - dy * Math.sin(angle), oy + dx * Math.sin(angle) + dy * Math.cos(angle)] as [number, number];
+  };
+  const rpts = pts.map(([x, y]) => rot(x, y));
+  return (
+    <Wrapper width={460} height={220}>
+      <line x1={ox} y1={oy} x2={pts[0][0]} y2={pts[0][1]} stroke={purple} strokeWidth={1.5} strokeDasharray="4,3" />
+      <line x1={ox} y1={oy} x2={pts[1][0]} y2={pts[1][1]} stroke={purple} strokeWidth={1.5} strokeDasharray="4,3" />
+      <line x1={ox} y1={oy} x2={rpts[0][0]} y2={rpts[0][1]} stroke={amber} strokeWidth={1.5} strokeDasharray="4,3" />
+      <line x1={ox} y1={oy} x2={rpts[1][0]} y2={rpts[1][1]} stroke={amber} strokeWidth={1.5} strokeDasharray="4,3" />
+      <line x1={pts[0][0]} y1={pts[0][1]} x2={pts[1][0]} y2={pts[1][1]} stroke={purple} strokeWidth={2.5} />
+      <line x1={rpts[0][0]} y1={rpts[0][1]} x2={rpts[1][0]} y2={rpts[1][1]} stroke={amber} strokeWidth={2.5} />
+      <Dot x={pts[0][0]} y={pts[0][1]} color={purple} r={4} /><Label x={pts[0][0] + 8} y={pts[0][1] - 6} text="A" color={purple} />
+      <Dot x={pts[1][0]} y={pts[1][1]} color={purple} r={4} /><Label x={pts[1][0] + 8} y={pts[1][1] + 4} text="B" color={purple} />
+      <Dot x={rpts[0][0]} y={rpts[0][1]} color={amber} r={4} /><Label x={rpts[0][0] + 8} y={rpts[0][1] - 6} text="A'" color={amber} />
+      <Dot x={rpts[1][0]} y={rpts[1][1]} color={amber} r={4} /><Label x={rpts[1][0] + 8} y={rpts[1][1] + 4} text="B'" color={amber} />
+      <Dot x={ox} y={oy} color={pink} r={5} /><Label x={ox - 16} y={oy + 4} text="O" color={pink} size={14} />
+      <Label x={230} y={210} text="OA = OA'，OB = OB'，AB = A'B'" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Central symmetry — 180° rotation */
+function CentralSymmetry() {
+  const ox = 220, oy = 110;
+  const pts = [[140, 50], [180, 140], [100, 130]];
+  const rpts = pts.map(([x, y]) => [2 * ox - x, 2 * oy - y]);
+  return (
+    <Wrapper width={460} height={220}>
+      <polygon points={pts.map(p => p.join(",")).join(" ")} fill="rgba(139,92,246,0.1)" stroke={purple} strokeWidth={2} />
+      <polygon points={rpts.map(p => p.join(",")).join(" ")} fill="rgba(245,158,11,0.1)" stroke={amber} strokeWidth={2} />
+      {pts.map((p, i) => (
+        <line key={`cs${i}`} x1={p[0]} y1={p[1]} x2={rpts[i][0]} y2={rpts[i][1]} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+      ))}
+      <Dot x={ox} y={oy} color={pink} r={5} />
+      <Label x={ox} y={oy - 12} text="O" color={pink} size={14} />
+      <Label x={pts[0][0] - 8} y={pts[0][1] - 8} text="A" color={purple} size={11} />
+      <Label x={pts[1][0] + 8} y={pts[1][1] + 4} text="B" color={purple} size={11} />
+      <Label x={pts[2][0] - 12} y={pts[2][1] + 4} text="C" color={purple} size={11} />
+      <Label x={rpts[0][0] + 8} y={rpts[0][1] + 14} text="A'" color={amber} size={11} />
+      <Label x={rpts[1][0] - 12} y={rpts[1][1] - 4} text="B'" color={amber} size={11} />
+      <Label x={rpts[2][0] + 10} y={rpts[2][1] - 4} text="C'" color={amber} size={11} />
+      <Label x={230} y={212} text="中心对称（旋转180°）" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Comparison — line symmetry vs central symmetry vs rotation */
+function RotationVsSymmetry() {
+  return (
+    <Wrapper width={500} height={200}>
+      <line x1={80} y1={15} x2={80} y2={155} stroke={lightGray} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polygon points="40,50 70,130 30,120" fill="rgba(139,92,246,0.1)" stroke={purple} strokeWidth={2} />
+      <polygon points="120,50 90,130 130,120" fill="rgba(139,92,246,0.1)" stroke={purple} strokeWidth={2} strokeDasharray="4,2" />
+      <Label x={80} y={175} text="轴对称" color={purple} size={11} />
+      <Label x={80} y={190} text="Line Sym." color={gray} size={10} />
+      <polygon points="210,40 240,100 200,95" fill="rgba(245,158,11,0.1)" stroke={amber} strokeWidth={2} />
+      <polygon points="290,130 260,70 300,75" fill="rgba(245,158,11,0.1)" stroke={amber} strokeWidth={2} strokeDasharray="4,2" />
+      <Dot x={250} y={85} color={pink} r={4} />
+      <Label x={250} y={175} text="中心对称" color={amber} size={11} />
+      <Label x={250} y={190} text="Central (180°)" color={gray} size={10} />
+      <polygon points="380,40 420,110 370,100" fill="rgba(236,72,153,0.1)" stroke={pink} strokeWidth={2} />
+      <polygon points="410,30 450,90 430,50" fill="rgba(236,72,153,0.1)" stroke={pink} strokeWidth={2} strokeDasharray="4,2" />
+      <Dot x={400} y={75} color={pink} r={4} />
+      <path d="M 414,47 A 22 22 0 0 1 418,68" fill="none" stroke={pink} strokeWidth={1.5} />
+      <Label x={420} y={175} text="旋转" color={pink} size={11} />
+      <Label x={420} y={190} text="Rotation (θ)" color={gray} size={10} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Point (a,b) rotated 90° and 180° on coordinate plane */
+function CoordinateRotation() {
+  const ox = 200, oy = 120, scale = 40;
+  const axLen = 160;
+  const px = ox + 3 * scale, py = oy - 2 * scale;
+  const p90x = ox + (-2) * scale, p90y = oy - 3 * scale;
+  const p180x = ox + (-3) * scale, p180y = oy - (-2) * scale;
+  const r0 = Math.hypot(px - ox, py - oy);
+  return (
+    <Wrapper width={440} height={240}>
+      <line x1={ox - axLen} y1={oy} x2={ox + axLen} y2={oy} stroke={gray} strokeWidth={1.5} />
+      <line x1={ox} y1={oy + axLen} x2={ox} y2={oy - axLen} stroke={gray} strokeWidth={1.5} />
+      <polygon points={`${ox + axLen - 6},${oy - 4} ${ox + axLen},${oy} ${ox + axLen - 6},${oy + 4}`} fill={gray} />
+      <polygon points={`${ox - 4},${oy - axLen + 6} ${ox},${oy - axLen} ${ox + 4},${oy - axLen + 6}`} fill={gray} />
+      <Label x={ox + axLen - 4} y={oy + 16} text="x" color={gray} size={12} />
+      <Label x={ox + 12} y={oy - axLen + 10} text="y" color={gray} size={12} />
+      <Label x={ox - 10} y={oy + 14} text="O" color={gray} size={11} />
+      <Dot x={px} y={py} color={purple} r={5} />
+      <Label x={px + 8} y={py - 8} text="P(a, b)" color={purple} size={12} anchor="start" />
+      <path d={`M ${px},${py} A ${r0} ${r0} 0 0 0 ${p90x},${p90y}`} fill="none" stroke={amber} strokeWidth={1.5} strokeDasharray="4,3" />
+      <Dot x={p90x} y={p90y} color={amber} r={5} />
+      <Label x={p90x - 8} y={p90y - 10} text="90°: (−b, a)" color={amber} size={11} anchor="end" />
+      <path d={`M ${px},${py} A ${r0} ${r0} 0 0 0 ${p180x},${p180y}`} fill="none" stroke={pink} strokeWidth={1.5} strokeDasharray="4,3" />
+      <Dot x={p180x} y={p180y} color={pink} r={5} />
+      <Label x={p180x - 8} y={p180y + 14} text="180°: (−a, −b)" color={pink} size={11} anchor="end" />
+      <line x1={ox} y1={oy} x2={px} y2={py} stroke={purple} strokeWidth={1} strokeDasharray="3,3" />
+      <line x1={ox} y1={oy} x2={p90x} y2={p90y} stroke={amber} strokeWidth={1} strokeDasharray="3,3" />
+      <line x1={ox} y1={oy} x2={p180x} y2={p180y} stroke={pink} strokeWidth={1} strokeDasharray="3,3" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Boomerang Model (Concave Quadrilateral) */
+function BoomerangModelDiagram() {
+  const A1 = { x: 190, y: 30 };
+  const B1 = { x: 100, y: 150 };
+  const C1 = { x: 280, y: 150 };
+  const D1 = { x: 190, y: 90 }; // reflex vertex
+
+  return (
+    <Wrapper width={380} height={200}>
+      <polygon points={`${A1.x},${A1.y} ${B1.x},${B1.y} ${D1.x},${D1.y} ${C1.x},${C1.y}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      {/* Auxiliary line AD extended */}
+      <line x1={A1.x} y1={A1.y} x2={A1.x} y2={180} stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      
+      {/* Angles for Boomerang */}
+      <path d="M 180,45 A 18 18 0 0 0 200,45" fill="none" stroke={purple} strokeWidth={1.5} />
+      <path d="M 115,145 A 16 16 0 0 0 120,130" fill="none" stroke={purple} strokeWidth={1.5} />
+      <path d="M 265,145 A 16 16 0 0 1 260,130" fill="none" stroke={purple} strokeWidth={1.5} />
+      {/* Reflex/Obtuse angle at D */}
+      <path d="M 175,105 A 20 20 0 0 0 205,105" fill="none" stroke={amber} strokeWidth={2} />
+
+      <Dot x={A1.x} y={A1.y} color={purple} r={4} />
+      <Dot x={B1.x} y={B1.y} color={purple} r={4} />
+      <Dot x={C1.x} y={C1.y} color={purple} r={4} />
+      <Dot x={D1.x} y={D1.y} color={amber} r={4} />
+
+      <Label x={A1.x} y={A1.y - 10} text="A" color={purple} />
+      <Label x={B1.x - 12} y={B1.y + 10} text="B" color={purple} />
+      <Label x={C1.x + 12} y={C1.y + 10} text="C" color={purple} />
+      <Label x={D1.x + 16} y={D1.y - 10} text="D" color={amber} />
+      <Label x={190} y={192} text="∠BDC = ∠A+∠B+∠C" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Kite Model (Intersecting Cevians) */
+function KiteModelDiagram() {
+  const A2 = { x: 190, y: 30 };
+  const B2 = { x: 90, y: 160 };
+  const C2 = { x: 290, y: 160 };
+  const P2 = { x: 190, y: 110 };
+  // D2 on A2C2: B2P2 extended
+  const D2 = { x: 240, y: 80 };
+  // E2 on A2B2: C2P2 extended
+  const E2 = { x: 140, y: 80 };
+
+  return (
+    <Wrapper width={380} height={200}>
+      <polygon points={`${A2.x},${A2.y} ${B2.x},${B2.y} ${C2.x},${C2.y}`} fill="none" stroke={purple} strokeWidth={2} />
+      {/* Intersecting lines */}
+      <line x1={B2.x} y1={B2.y} x2={D2.x} y2={D2.y} stroke={amber} strokeWidth={2} />
+      <line x1={C2.x} y1={C2.y} x2={E2.x} y2={E2.y} stroke={amber} strokeWidth={2} />
+
+      {/* Angles for Kite */}
+      <path d="M 180,50 A 22 22 0 0 1 200,50" fill="none" stroke={purple} strokeWidth={1.5} />
+      <path d="M 176,117 A 16 16 0 0 0 204,117" fill="none" stroke={amber} strokeWidth={2} />
+      {/* Wings */}
+      <path d="M 240,95 A 15 15 0 0 1 253,75" fill="none" stroke={pink} strokeWidth={1.5} />
+      <path d="M 140,95 A 15 15 0 0 0 127,75" fill="none" stroke={pink} strokeWidth={1.5} />
+
+      <Dot x={A2.x} y={A2.y} color={purple} r={4} />
+      <Dot x={B2.x} y={B2.y} color={purple} r={4} />
+      <Dot x={C2.x} y={C2.y} color={purple} r={4} />
+      <Dot x={P2.x} y={P2.y} color={pink} r={5} />
+      <Dot x={D2.x} y={D2.y} color={amber} r={4} />
+      <Dot x={E2.x} y={E2.y} color={amber} r={4} />
+
+      <Label x={A2.x} y={A2.y - 10} text="A" color={purple} />
+      <Label x={B2.x - 12} y={B2.y + 10} text="B" color={purple} />
+      <Label x={C2.x + 12} y={C2.y + 10} text="C" color={purple} />
+      <Label x={P2.x - 12} y={P2.y + 10} text="P" color={pink} />
+      <Label x={D2.x + 10} y={D2.y - 4} text="D" color={amber} />
+      <Label x={E2.x - 12} y={E2.y - 4} text="E" color={amber} />
+      <Label x={190} y={192} text="∠BPC = ∠A+∠ABD+∠ACE" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Hourglass/bowtie — △ABE ∼ △DCE, AB∥CD, X crossing at E */
+function HourglassModelDiagram() {
+  // AB short on top, CD long on bottom. Lines AC and BD cross at E.
+  // Pre-computed E: intersection of line A(130,30)→C(320,200) and line B(230,30)→D(40,200).
+  // AC parametric: (130+190t, 30+170t). BD parametric: (230-190s, 30+170s).
+  // 130+190t = 230-190s → t+s = 100/190. 30+170t = 30+170s → t=s.
+  // 2t = 100/190 → t≈0.263. E = (130+50, 30+45) = (180, 75). Adjusted to (180, 85) for visual.
+  const A = { x: 130, y: 30 };
+  const B = { x: 230, y: 30 };
+  const C = { x: 320, y: 200 };
+  const D = { x: 40, y: 200 };
+  const E = { x: 180, y: 85 };
+  return (
+    <Wrapper width={440} height={230}>
+      {/* Top segment AB */}
+      <line x1={A.x} y1={A.y} x2={B.x} y2={B.y} stroke={purple} strokeWidth={2} />
+      {/* Bottom segment CD (note: D left, C right) */}
+      <line x1={D.x} y1={D.y} x2={C.x} y2={C.y} stroke={amber} strokeWidth={2} />
+      {/* Cross lines forming the X */}
+      <line x1={A.x} y1={A.y} x2={C.x} y2={C.y} stroke={purple} strokeWidth={2} />
+      <line x1={B.x} y1={B.y} x2={D.x} y2={D.y} stroke={purple} strokeWidth={2} />
+      {/* Parallel marks on AB (arrows-style double tick) */}
+      <line x1={176} y1={26} x2={180} y2={34} stroke={purple} strokeWidth={2} />
+      <line x1={182} y1={26} x2={186} y2={34} stroke={purple} strokeWidth={2} />
+      {/* Parallel marks on CD */}
+      <line x1={176} y1={196} x2={180} y2={204} stroke={amber} strokeWidth={2} />
+      <line x1={182} y1={196} x2={186} y2={204} stroke={amber} strokeWidth={2} />
+      {/* Vertical angle marks at E (two opposite pairs) */}
+      <path d="M 168,75 A 14 14 0 0 0 174,72" fill="none" stroke={pink} strokeWidth={2} />
+      <path d="M 192,95 A 14 14 0 0 0 186,98" fill="none" stroke={pink} strokeWidth={2} />
+      {/* Points */}
+      <Dot x={E.x} y={E.y} color={pink} r={5} />
+      {/* Labels */}
+      <Label x={A.x - 10} y={A.y - 6} text="A" color={purple} />
+      <Label x={B.x + 10} y={B.y - 6} text="B" color={purple} />
+      <Label x={E.x + 14} y={E.y + 4} text="E" color={pink} />
+      <Label x={C.x + 10} y={C.y + 10} text="C" color={amber} />
+      <Label x={D.x - 10} y={D.y + 10} text="D" color={amber} />
+      <Label x={340} y={30} text="AB ∥ CD" color={gray} size={12} />
+      <Label x={340} y={50} text="△ABE ∼ △DCE" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Hand-in-hand — two isosceles triangles sharing vertex O, rotated */
+function HandInHandDiagram() {
+  // Two isosceles triangles sharing vertex O with equal apex angles.
+  // △OAB (purple): OA=OB=176 (symmetric about O). A and B symmetric below O.
+  // △OCD (amber): rotated 30° around O. Pre-computed from rotation of OA, OB.
+  // OA=(-100,145), rotated 30°: cos30≈0.866, sin30=0.5
+  // C = O + rot(OA) = (230 + (-100*0.866 - 145*0.5), 40 + (-100*0.5 + 145*0.866))
+  //   = (230 - 87 - 73, 40 - 50 + 126) = (70, 116) → use (71, 116)
+  // OB=(100,145), rotated 30°:
+  // D = O + rot(OB) = (230 + (100*0.866 - 145*0.5), 40 + (100*0.5 + 145*0.866))
+  //   = (230 + 87 - 73, 40 + 50 + 126) = (244, 216)
+  const O = { x: 230, y: 40 };
+  const A = { x: 130, y: 185 };
+  const B = { x: 330, y: 185 };
+  const C = { x: 71, y: 116 };
+  const D = { x: 244, y: 216 };
+  return (
+    <Wrapper width={420} height={230}>
+      {/* △OAB in purple (isosceles, OA=OB≈176) */}
+      <polygon points={`${O.x},${O.y} ${A.x},${A.y} ${B.x},${B.y}`} fill="none" stroke={purple} strokeWidth={2} />
+      {/* △OCD in amber (isosceles, OC=OD≈176, rotated copy) */}
+      <polygon points={`${O.x},${O.y} ${C.x},${C.y} ${D.x},${D.y}`} fill="none" stroke={amber} strokeWidth={2} />
+      {/* Connecting segments AC and BD — the "hands" (key conclusion: AC=BD) */}
+      <line x1={A.x} y1={A.y} x2={C.x} y2={C.y} stroke={pink} strokeWidth={2} strokeDasharray="5,3" />
+      <line x1={B.x} y1={B.y} x2={D.x} y2={D.y} stroke={pink} strokeWidth={2} strokeDasharray="5,3" />
+      {/* Single tick marks: OA=OC */}
+      <line x1={177} y1={108} x2={183} y2={118} stroke={purple} strokeWidth={2} />
+      <line x1={147} y1={74} x2={153} y2={84} stroke={amber} strokeWidth={2} />
+      {/* Double tick marks: OB=OD */}
+      <line x1={280} y1={108} x2={274} y2={118} stroke={purple} strokeWidth={2} />
+      <line x1={284} y1={112} x2={278} y2={122} stroke={purple} strokeWidth={2} />
+      <line x1={238} y1={125} x2={234} y2={135} stroke={amber} strokeWidth={2} />
+      <line x1={242} y1={129} x2={238} y2={139} stroke={amber} strokeWidth={2} />
+      {/* Angle arcs at O: ∠AOB (purple) and ∠COD (amber) — equal */}
+      <path d="M 214,58 A 20 20 0 0 1 246,58" fill="none" stroke={purple} strokeWidth={1.5} />
+      <path d="M 216,52 A 22 22 0 0 0 238,56" fill="none" stroke={amber} strokeWidth={1.5} />
+      {/* Point O */}
+      <Dot x={O.x} y={O.y} color={pink} r={5} />
+      {/* Labels */}
+      <Label x={O.x + 2} y={O.y - 12} text="O" color={pink} />
+      <Label x={A.x - 14} y={A.y + 8} text="A" color={purple} />
+      <Label x={B.x + 10} y={B.y + 8} text="B" color={purple} />
+      <Label x={C.x - 14} y={C.y + 4} text="C" color={amber} />
+      <Label x={D.x + 10} y={D.y + 8} text="D" color={amber} />
+      <Label x={30} y={20} text="△OAC ≅ △OBD" color={gray} size={12} />
+      <Label x={30} y={40} text="AC = BD" color={pink} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Half-angle model — ∠A = 2∠B, cut BD=BC to construct isosceles △BDC */
+function HalfAngleDiagram() {
+  // Classic half-angle model: Square ABCD, E on BC, F on CD, ∠EAF = 45°.
+  // Rotate △ABE 90° to △ADG.
+  const A = { x: 100, y: 180 }; // Bottom-left for standard orientation, but SVG y goes down. Let's make A bottom-left: (100, 180)
+  const B = { x: 260, y: 180 }; // Bottom-right
+  const C = { x: 260, y: 20 };  // Top-right
+  const D = { x: 100, y: 20 };  // Top-left
+  // E on BC (right side), F on CD (top side). Let AE make 20° with AB, AF make 65° with AB (so ∠EAF = 45°).
+  // Actually, A is bottom-left, so AB is horizontal, AD is vertical.
+  // AE is at 20° from AB. tan(20°) ≈ 0.364. BE = 160 * 0.364 ≈ 58. E = (260, 180 - 58) = (260, 122).
+  const E = { x: 260, y: 122 };
+  // AF is at 65° from AB (25° from AD). tan(25°) ≈ 0.466. DF = 160 * 0.466 ≈ 75. F = (100 + 75, 20) = (175, 20).
+  const F = { x: 175, y: 20 };
+  // G is on CD extended to the left. DG = BE = 58. G = (100 - 58, 20) = (42, 20).
+  const G = { x: 42, y: 20 };
+
+  return (
+    <Wrapper width={400} height={220}>
+      {/* Square ABCD */}
+      <polygon points={`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y} ${D.x},${D.y}`} fill="none" stroke={purple} strokeWidth={2} />
+      
+      {/* Rays AE and AF */}
+      <line x1={A.x} y1={A.y} x2={E.x} y2={E.y} stroke={purple} strokeWidth={2} />
+      <line x1={A.x} y1={A.y} x2={F.x} y2={F.y} stroke={purple} strokeWidth={2} />
+      <line x1={E.x} y1={E.y} x2={F.x} y2={F.y} stroke={amber} strokeWidth={2} />
+
+      {/* Rotation construction: △ADG and ray AG */}
+      <line x1={D.x} y1={D.y} x2={G.x} y2={G.y} stroke={pink} strokeWidth={2} strokeDasharray="5,3" />
+      <line x1={A.x} y1={A.y} x2={G.x} y2={G.y} stroke={pink} strokeWidth={2} strokeDasharray="5,3" />
+      <line x1={G.x} y1={G.y} x2={F.x} y2={F.y} stroke={pink} strokeWidth={2} strokeDasharray="5,3" />
+
+      {/* Angle arc for ∠EAF = 45° */}
+      {/* AE dir: (160, -58), AF dir: (75, -160). Arc radius 40. */}
+      {/* Normalize: AE (0.94, -0.34) -> (100+38, 180-14) = (138, 166). AF (0.42, -0.90) -> (100+17, 180-36) = (117, 144) */}
+      <path d="M 138,166 A 40 40 0 0 0 117,144" fill="none" stroke={purple} strokeWidth={1.5} />
+      <Label x={132} y={148} text="45°" color={purple} size={11} />
+
+      {/* Angle arcs for rotated angles: ∠BAE = ∠DAG */}
+      {/* AB dir: (1, 0), AE dir: (0.94, -0.34). Arc radius 25. -> (125, 180) to (123, 171) */}
+      <path d="M 125,180 A 25 25 0 0 0 123,171" fill="none" stroke={pink} strokeWidth={1.5} />
+      {/* AD dir: (0, -1), AG dir: (-0.34, -0.94). Arc radius 25. -> (100, 155) to (91, 156) */}
+      <path d="M 100,155 A 25 25 0 0 0 91,156" fill="none" stroke={pink} strokeWidth={1.5} />
+
+      {/* Points */}
+      <Dot x={A.x} y={A.y} color={purple} r={4} />
+      <Dot x={B.x} y={B.y} color={purple} r={4} />
+      <Dot x={C.x} y={C.y} color={purple} r={4} />
+      <Dot x={D.x} y={D.y} color={purple} r={4} />
+      <Dot x={E.x} y={E.y} color={purple} r={4} />
+      <Dot x={F.x} y={F.y} color={purple} r={4} />
+      <Dot x={G.x} y={G.y} color={pink} r={4} />
+
+      {/* Labels */}
+      <Label x={A.x - 12} y={A.y + 12} text="A" color={purple} />
+      <Label x={B.x + 12} y={B.y + 12} text="B" color={purple} />
+      <Label x={C.x + 12} y={C.y - 6} text="C" color={purple} />
+      <Label x={D.x} y={D.y - 10} text="D" color={purple} />
+      <Label x={E.x + 12} y={E.y + 4} text="E" color={purple} />
+      <Label x={F.x} y={F.y - 10} text="F" color={purple} />
+      <Label x={G.x} y={G.y - 10} text="G" color={pink} />
+
+      {/* Congruence and Perimeter labels */}
+      <Label x={300} y={50} text="△ABE ≅ △ADG" color={pink} size={12} anchor="start" />
+      <Label x={300} y={70} text="EF = FG = DF + BE" color={gray} size={12} anchor="start" />
+      <Label x={300} y={90} text="C_△CEF = 2AB" color={amber} size={12} anchor="start" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: One-line-three-equal-angles — isosceles △ABC (AB=AC), D on BC, ∠ADE=∠B=∠C */
+function OneLineThreeAngles() {
+  // Classic K-type similarity (Three Perpendiculars model):
+  // Right triangle ABC with right angle at A. A is on line l.
+  // BD ⊥ l at D, CE ⊥ l at E.
+  // Let line l be horizontal y = 160.
+  // A = (200, 160).
+  // Let AB make angle 35° with l. Then AC makes 35°+90° = 125° with l.
+  // Let AB = 100, AC = 100 (isosceles right triangle for AAS congruence).
+  // cos(35°) ≈ 0.819, sin(35°) ≈ 0.574
+  // B = (200 - 100*0.819, 160 - 100*0.574) = (118, 103)
+  // C = (200 + 100*0.574, 160 - 100*0.819) = (257, 78)
+  const A = { x: 200, y: 160 };
+  const B = { x: 118, y: 103 };
+  const C = { x: 257, y: 78 };
+  
+  // D and E are projections of B and C onto l
+  const D = { x: 118, y: 160 };
+  const E = { x: 257, y: 160 };
+
+  return (
+    <Wrapper width={400} height={200}>
+      {/* Line l */}
+      <line x1={50} y1={160} x2={350} y2={160} stroke={gray} strokeWidth={2} />
+      
+      {/* Right triangle ABC */}
+      <polygon points={`${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}`} fill="none" stroke={purple} strokeWidth={2} />
+      
+      {/* Perpendiculars BD and CE */}
+      <line x1={B.x} y1={B.y} x2={D.x} y2={D.y} stroke={pink} strokeWidth={2} />
+      <line x1={C.x} y1={C.y} x2={E.x} y2={E.y} stroke={pink} strokeWidth={2} />
+
+      {/* Right angle symbols */}
+      <polyline points={`${D.x},${D.y - 10} ${D.x + 10},${D.y - 10} ${D.x + 10},${D.y}`} fill="none" stroke={amber} strokeWidth={1.5} />
+      <polyline points={`${E.x},${E.y - 10} ${E.x - 10},${E.y - 10} ${E.x - 10},${E.y}`} fill="none" stroke={amber} strokeWidth={1.5} />
+      {/* Right angle at A in △ABC */}
+      {/* AB dir (-0.819, -0.574) -> norm * 15 = (-12.3, -8.6). AC dir (0.574, -0.819) -> norm * 15 = (8.6, -12.3) */}
+      <polyline points={`${A.x - 12.3},${A.y - 8.6} ${A.x - 12.3 + 8.6},${A.y - 8.6 - 12.3} ${A.x + 8.6},${A.y - 12.3}`} fill="none" stroke={purple} strokeWidth={1.5} />
+
+      {/* Equal angles: ∠ABD = ∠CAE */}
+      <path d="M 118,123 A 20 20 0 0 1 129,119" fill="none" stroke={pink} strokeWidth={2} />
+      <path d="M 220,160 A 20 20 0 0 0 216,144" fill="none" stroke={pink} strokeWidth={2} />
+
+      {/* Equal angles: ∠DAB = ∠ACE */}
+      <path d="M 180,160 A 20 20 0 0 1 184,149" fill="none" stroke={amber} strokeWidth={2} />
+      {/* ACE angle at C: CE dir (0, 1), CA dir (-0.574, 0.819). arc from CE towards CA */}
+      <path d="M 257,98 A 20 20 0 0 1 245,95" fill="none" stroke={amber} strokeWidth={2} />
+
+      {/* Points */}
+      <Dot x={A.x} y={A.y} color={purple} r={4} />
+      <Dot x={B.x} y={B.y} color={purple} r={4} />
+      <Dot x={C.x} y={C.y} color={purple} r={4} />
+      <Dot x={D.x} y={D.y} color={pink} r={4} />
+      <Dot x={E.x} y={E.y} color={pink} r={4} />
+
+      {/* Labels */}
+      <Label x={A.x} y={A.y + 16} text="A" color={purple} />
+      <Label x={B.x - 12} y={B.y} text="B" color={purple} />
+      <Label x={C.x + 12} y={C.y} text="C" color={purple} />
+      <Label x={D.x} y={D.y + 16} text="D" color={pink} />
+      <Label x={E.x} y={E.y + 16} text="E" color={pink} />
+      <Label x={360} y={160} text="l" color={gray} />
+
+      {/* Equations */}
+      <Label x={200} y={40} text="△ABD ≅ △CAE (AAS)" color={pink} size={14} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Area as function — P moves along a line, height changes, area changes */
+function AreaAsFunction() {
+  const B = { x: 80, y: 170 }, C = { x: 320, y: 170 };
+  const ps = [{ x: 120, y: 50 }, { x: 200, y: 50 }, { x: 280, y: 50 }];
+  return (
+    <Wrapper width={420} height={210}>
+      {/* Base BC */}
+      <line x1={B.x} y1={B.y} x2={C.x} y2={C.y} stroke={purple} strokeWidth={2.5} />
+      {/* Moving line */}
+      <line x1={60} y1={50} x2={360} y2={50} stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      {ps.map((p, i) => (
+        <g key={i} opacity={i === 1 ? 1 : 0.4}>
+          <polygon points={`${B.x},${B.y} ${C.x},${C.y} ${p.x},${p.y}`} fill="none" stroke={i === 1 ? pink : lightGray} strokeWidth={1.5} strokeDasharray={i === 1 ? "0" : "4,3"} />
+          <line x1={p.x} y1={p.y} x2={p.x} y2={C.y} stroke={amber} strokeWidth={1} strokeDasharray="3,2" />
+          <Dot x={p.x} y={p.y} color={i === 1 ? pink : lightGray} r={4} />
+        </g>
+      ))}
+      <Label x={B.x} y={B.y + 16} text="B" color={purple} />
+      <Label x={C.x} y={C.y + 16} text="C" color={purple} />
+      <Label x={ps[1].x} y={ps[1].y - 10} text="P" color={pink} />
+      <Label x={ps[1].x + 14} y={120} text="h" color={amber} size={12} />
+      <Label x={360} y={40} text="h changes → area changes" color={gray} size={11} anchor="end" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Path & trajectory — midpoint M of moving segment traces a line */
+function PathTrajectory() {
+  const positions = [
+    { a: { x: 60, y: 50 }, b: { x: 180, y: 150 } },
+    { a: { x: 120, y: 50 }, b: { x: 240, y: 150 } },
+    { a: { x: 180, y: 50 }, b: { x: 300, y: 150 } },
+  ];
+  const mids = positions.map(p => ({ x: (p.a.x + p.b.x) / 2, y: (p.a.y + p.b.y) / 2 }));
+  return (
+    <Wrapper width={400} height={200}>
+      {/* Guide lines */}
+      <line x1={30} y1={50} x2={370} y2={50} stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      <line x1={30} y1={150} x2={370} y2={150} stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      {positions.map((p, i) => (
+        <g key={i} opacity={i === 1 ? 1 : 0.4}>
+          <line x1={p.a.x} y1={p.a.y} x2={p.b.x} y2={p.b.y} stroke={purple} strokeWidth={1.5} />
+          <Dot x={p.a.x} y={p.a.y} color={purple} r={3} />
+          <Dot x={p.b.x} y={p.b.y} color={purple} r={3} />
+        </g>
+      ))}
+      {/* Trajectory of M */}
+      <line x1={mids[0].x} y1={mids[0].y} x2={mids[2].x} y2={mids[2].y} stroke={pink} strokeWidth={2} strokeDasharray="6,3" />
+      {mids.map((m, i) => <Dot key={i} x={m.x} y={m.y} color={pink} r={5} />)}
+      <Label x={mids[1].x} y={mids[1].y - 12} text="M" color={pink} />
+      <Label x={350} y={190} text="trajectory of M" color={gray} size={11} anchor="end" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Piecewise discussion — point moves along L-shaped path on rectangle */
+function PiecewiseDiscussion() {
+  const A = { x: 60, y: 40 }, B = { x: 340, y: 40 }, C = { x: 340, y: 160 }, D = { x: 60, y: 160 };
+  const turn = { x: 340, y: 40 }; // corner B is the turning point
+  return (
+    <Wrapper width={420} height={200}>
+      <rect x={A.x} y={A.y} width={280} height={120} fill="none" stroke={lightGray} strokeWidth={1.5} />
+      {/* Phase 1: along AB */}
+      <line x1={A.x} y1={A.y} x2={B.x} y2={B.y} stroke={purple} strokeWidth={3} />
+      {/* Phase 2: along BC */}
+      <line x1={B.x} y1={B.y} x2={C.x} y2={C.y} stroke={amber} strokeWidth={3} />
+      {/* Shaded regions */}
+      <rect x={A.x} y={A.y} width={140} height={5} fill={purple} opacity={0.2} />
+      <rect x={B.x - 5} y={B.y} width={5} height={60} fill={amber} opacity={0.2} />
+      {/* Turning point */}
+      <Dot x={turn.x} y={turn.y} color={pink} r={6} />
+      <Label x={A.x} y={A.y - 8} text="A (start)" color={purple} size={11} />
+      <Label x={turn.x} y={turn.y - 12} text="B (turn)" color={pink} size={11} />
+      <Label x={C.x + 4} y={C.y + 14} text="C" color={amber} size={11} />
+      <Label x={D.x} y={D.y + 14} text="D" color={gray} size={11} />
+      <Label x={200} y={A.y + 30} text="case 1" color={purple} size={12} />
+      <Label x={B.x + 30} y={100} text="case 2" color={amber} size={12} anchor="start" />
+      <Label x={200} y={190} text="formula changes at turning point" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Drinking horse — reflection across a line to find shortest path */
+function DrinkingHorseDiagram() {
+  const ly = 130;
+  const A = { x: 80, y: 50 }, B = { x: 320, y: 60 };
+  const Ap = { x: 80, y: 2 * ly - 50 }; // reflection of A
+  // P = intersection of A'B with line l
+  const t = (ly - Ap.y) / (B.y - Ap.y);
+  const P = { x: Ap.x + t * (B.x - Ap.x), y: ly };
+  return (
+    <Wrapper width={420} height={240}>
+      {/* Line l */}
+      <line x1={30} y1={ly} x2={390} y2={ly} stroke={gray} strokeWidth={2} />
+      <Label x={395} y={ly + 4} text="l" color={gray} size={14} anchor="start" />
+      {/* A and B */}
+      <Dot x={A.x} y={A.y} color={pink} r={5} />
+      <Dot x={B.x} y={B.y} color={pink} r={5} />
+      <Label x={A.x} y={A.y - 10} text="A" color={pink} />
+      <Label x={B.x} y={B.y - 10} text="B" color={pink} />
+      {/* A' reflection */}
+      <Dot x={Ap.x} y={Ap.y} color={amber} r={5} />
+      <Label x={Ap.x} y={Ap.y + 16} text="A'" color={amber} />
+      {/* Dashed AA' */}
+      <line x1={A.x} y1={A.y} x2={Ap.x} y2={Ap.y} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+      {/* A'B line through P */}
+      <line x1={Ap.x} y1={Ap.y} x2={B.x} y2={B.y} stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      {/* Paths AP + PB */}
+      <line x1={A.x} y1={A.y} x2={P.x} y2={P.y} stroke={purple} strokeWidth={2} />
+      <line x1={P.x} y1={P.y} x2={B.x} y2={B.y} stroke={purple} strokeWidth={2} />
+      <Dot x={P.x} y={P.y} color={purple} r={5} />
+      <Label x={P.x} y={P.y - 10} text="P" color={purple} />
+      <Label x={200} y={225} text="AP + PB = A'P + PB = A'B (min)" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Triangle perimeter optimization — isosceles minimizes perimeter */
+function TrianglePerimeterOpt() {
+  const B = { x: 100, y: 170 }, C = { x: 300, y: 170 };
+  const A1 = { x: 200, y: 40 }; // isosceles (optimal)
+  const A2 = { x: 130, y: 50 }; // non-isosceles
+  return (
+    <Wrapper width={420} height={210}>
+      {/* Line above */}
+      <line x1={60} y1={40} x2={360} y2={40} stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      {/* Non-isosceles (faded) */}
+      <polygon points={`${B.x},${B.y} ${C.x},${C.y} ${A2.x},${A2.y}`} fill="none" stroke={lightGray} strokeWidth={1.5} strokeDasharray="4,3" />
+      <Dot x={A2.x} y={A2.y} color={lightGray} r={3} />
+      {/* Isosceles (optimal) */}
+      <polygon points={`${B.x},${B.y} ${C.x},${C.y} ${A1.x},${A1.y}`} fill="none" stroke={purple} strokeWidth={2} />
+      <Dot x={A1.x} y={A1.y} color={pink} r={5} />
+      {/* Symmetry axis */}
+      <line x1={200} y1={30} x2={200} y2={180} stroke={amber} strokeWidth={1} strokeDasharray="3,3" />
+      <Label x={B.x} y={B.y + 16} text="B" color={purple} />
+      <Label x={C.x} y={C.y + 16} text="C" color={purple} />
+      <Label x={A1.x + 14} y={A1.y - 4} text="A (isosceles)" color={pink} size={11} />
+      <Label x={A2.x - 14} y={A2.y + 16} text="A'" color={lightGray} size={11} />
+      <Label x={350} y={200} text="isosceles = min perimeter" color={gray} size={11} anchor="end" />
+    </Wrapper>
+  );
+}
+
+/** Diagram: Completing the square — parabola with vertex as minimum */
+function CompletingSquareDiagram() {
+  const ox = 60, oy = 180, sx = 60, sy = 35;
+  const vx = 2, vy = 1; // vertex at (2,1)
+  const toSvg = (x: number, y: number) => ({ x: ox + x * sx, y: oy - y * sy });
+  const v = toSvg(vx, vy);
+  const pts: string[] = [];
+  for (let t = -0.5; t <= 4.5; t += 0.2) {
+    const y = (t - 2) * (t - 2) + 1;
+    if (y > 5.5) continue;
+    const p = toSvg(t, y);
+    pts.push(`${p.x},${p.y}`);
+  }
+  return (
+    <Wrapper width={380} height={220}>
+      {/* Axes */}
+      <line x1={ox} y1={10} x2={ox} y2={oy + 10} stroke={gray} strokeWidth={1.5} />
+      <line x1={ox - 10} y1={oy} x2={350} y2={oy} stroke={gray} strokeWidth={1.5} />
+      <Label x={ox - 8} y={16} text="y" color={gray} size={12} />
+      <Label x={348} y={oy + 16} text="x" color={gray} size={12} />
+      {/* Parabola */}
+      <polyline points={pts.join(" ")} fill="none" stroke={purple} strokeWidth={2} />
+      {/* Vertex */}
+      <Dot x={v.x} y={v.y} color={pink} r={6} />
+      <line x1={v.x} y1={v.y} x2={v.x} y2={oy} stroke={amber} strokeWidth={1} strokeDasharray="3,3" />
+      <line x1={v.x} y1={v.y} x2={ox} y2={v.y} stroke={amber} strokeWidth={1} strokeDasharray="3,3" />
+      <Label x={v.x} y={v.y - 12} text="(2, 1)" color={pink} size={12} />
+      <Label x={v.x + 40} y={v.y - 20} text="vertex = min value" color={gray} size={11} />
+      <Label x={ox + 4} y={oy + 16} text="O" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+/** Diagram: AM-GM — square (max area) vs thin rectangle (same perimeter) */
+function AMGMDiagram() {
+  const y0 = 30;
+  // Square: 80×80
+  const sq = { x: 60, y: y0, w: 100, h: 100 };
+  // Thin rect: 140×40, same perimeter (2*(100+100)=400 vs 2*(140+40)=360... adjust to same perimeter: 2*(a+b)=400 → a+b=200 → use 130×70 scaled)
+  const rc = { x: 220, y: y0 + 20, w: 150, h: 60 };
+  return (
+    <Wrapper width={420} height={180}>
+      {/* Square (optimal) */}
+      <rect x={sq.x} y={sq.y} width={sq.w} height={sq.h} fill={purple} fillOpacity={0.15} stroke={purple} strokeWidth={2} />
+      <Label x={sq.x + sq.w / 2} y={sq.y + sq.h + 20} text="a = b → max area" color={purple} size={12} />
+      <Label x={sq.x + sq.w / 2} y={sq.y + sq.h / 2 + 4} text="a × a" color={purple} size={13} />
+      {/* Thin rectangle */}
+      <rect x={rc.x} y={rc.y} width={rc.w} height={rc.h} fill={amber} fillOpacity={0.12} stroke={amber} strokeWidth={2} />
+      <Label x={rc.x + rc.w / 2} y={rc.y + rc.h + 20} text="a ≠ b → smaller area" color={amber} size={12} />
+      <Label x={rc.x + rc.w / 2} y={rc.y + rc.h / 2 + 4} text="a × b" color={amber} size={13} />
+      <Label x={210} y={170} text="same perimeter, different area" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
 /** Map concept IDs to their diagrams */
 const diagramMap: Record<string, React.ReactNode[]> = {
   "factor-tree": [<FactorTree key="ft" />],
@@ -1820,6 +3711,75 @@ const diagramMap: Record<string, React.ReactNode[]> = {
   "isosceles-triangle-properties": [<IsoscelesTriangleProperties key="itp" />],
   "isosceles-triangle-criterion": [<IsoscelesTriangleCriterion key="itc" />],
   "equilateral-triangle": [<EquilateralTriangle key="et" />],
+  // Grade 8 quadrilaterals
+  "parallelogram-properties": [<ParallelogramProperties key="pp2" />],
+  "parallelogram-criteria": [<ParallelogramCriteria key="pc2" />],
+  "rectangle": [<RectangleDiagram key="rect" />],
+  "rhombus": [<RhombusDiagram key="rhom" />],
+  "square": [<SquareDiagram key="sq" />],
+  "trapezoid": [<TrapezoidDiagram key="trap" />],
+  "midsegment-theorem": [<MidsegmentTheorem key="ms" />],
+  // Grade 8 linear functions
+  "function-concept": [<FunctionConceptDiagram key="fcd" />],
+  "direct-proportion": [<DirectProportionDiagram key="dpd" />],
+  "linear-function-definition": [<LinearFunctionDefinition key="lfd" />],
+  "slope-intercept": [<SlopeInterceptDiagram key="sid" />],
+  "functions-equations-inequalities": [<FunctionsEquationsInequalities key="fei" />],
+  // Grade 9 quadratic functions
+  "basic-parabola": [<BasicParabola key="bp" />],
+  "vertex-form": [<VertexFormDiagram key="vfd" />],
+  "discriminant-intersections": [<DiscriminantIntersections key="di" />],
+  // Grade 9 circles
+  "circle-basic-concepts": [<CircleBasicConcepts key="cbc" />],
+  "point-circle-relation": [<PointCircleRelation key="pcr" />],
+  "line-circle-relation": [<LineCircleRelation key="lcr" />],
+  "circle-circle-relation": [<CircleCircleRelation key="ccr" />],
+  "central-angle-arc-chord": [<CentralAngleArcChord key="caac" />],
+  "inscribed-angle-theorem": [<InscribedAngleTheorem key="iat" />],
+  "tangent-properties": [<TangentProperties key="tp" />],
+  "arc-length-sector-area": [<ArcLengthSectorArea key="alsa" />],
+  // Grade 9 inverse proportion functions
+  "inverse-proportion-concept": [<InverseProportionConcept key="ipc" />],
+  "hyperbola-graph": [<HyperbolaGraph key="hg" />],
+  "hyperbola-properties": [<HyperbolaProperties key="hp" />],
+  "k-geometric-meaning": [<KGeometricMeaning key="kgm" />],
+  // Algebra area models
+  "polynomial-area-model": [<PolynomialAreaModel key="pam" />],
+  "factorization-area-model": [<FactorizationAreaModel key="fam" />],
+  // Grade 9 trigonometric functions
+  "trig-definition": [<TrigDefinition key="td" />],
+  "special-angles": [<SpecialAngles key="sa" />],
+  "solving-right-triangles": [<SolvingRightTriangles key="srt2" />],
+  "elevation-depression": [<ElevationDepression key="ed" />],
+  // Grade 9 similar figures
+  "proportional-segments": [<ProportionalSegments key="ps" />],
+  "parallel-proportionality": [<ParallelProportionality key="pprop" />],
+  "similar-polygons": [<SimilarPolygons key="sp" />],
+  "similar-triangle-criteria": [<SimilarTriangleCriteria key="stc" />],
+  "similar-triangle-properties": [<SimilarTriangleProperties key="stp" />],
+  "homothety": [<HomothetyDiagram key="hd" />],
+  // Grade 9 rotation
+  "rotation-definition": [<RotationDefinition key="rd" />],
+  "rotation-properties": [<RotationProperties key="rp" />],
+  "central-symmetry": [<CentralSymmetry key="csym" />],
+  "rotation-vs-symmetry": [<RotationVsSymmetry key="rvs" />],
+  "coordinate-rotation": [<CoordinateRotation key="cr" />],
+  // Geometry special topics - triangle classic models
+  "boomerang-model": [<BoomerangModelDiagram key="bmd" />],
+  "kite-model": [<KiteModelDiagram key="kmd" />],
+  "hourglass-model": [<HourglassModelDiagram key="hmd" />],
+  "hand-in-hand-model": [<HandInHandDiagram key="hhd" />],
+  "half-angle-model": [<HalfAngleDiagram key="had" />],
+  "one-line-three-equal-angles": [<OneLineThreeAngles key="olta" />],
+  // Geometry special topics - dynamic point problems
+  "area-as-function": [<AreaAsFunction key="aaf" />],
+  "path-and-trajectory": [<PathTrajectory key="pt" />],
+  "piecewise-discussion": [<PiecewiseDiscussion key="pwd" />],
+  // Geometry special topics - optimization problems
+  "general-drinking-horse": [<DrinkingHorseDiagram key="dhd" />],
+  "triangle-perimeter-optimization": [<TrianglePerimeterOpt key="tpo" />],
+  "algebraic-optimization": [<CompletingSquareDiagram key="csd" />],
+  "geometric-algebraic-combined": [<AMGMDiagram key="amgm" />],
 };
 
 export default function GeometryDiagram({ conceptId }: { conceptId: string }) {

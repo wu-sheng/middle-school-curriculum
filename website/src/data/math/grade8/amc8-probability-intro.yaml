@@ -1,0 +1,1402 @@
+title: "\U0001F3C6 AMC 8 扩展：概率入门"
+titleEn: "\U0001F3C6 AMC 8 Extension: Introduction to Probability"
+chapter: 11
+subject: math
+grade: grade8
+semester: semester2
+estimatedTime: 约 3–4 课时，每课时 45 分钟
+estimatedTimeEn: "3–4 sessions, ~45 min each"
+targetAudience: 八年级自学生，已完成数据分析，提前掌握AMC 8概率方法
+
+objectives:
+  - '理解<<概率/probability>>的基本含义：用数字衡量事件发生的可能性'
+  - '掌握古典概型：$P = \frac{\text{有利结果数}}{\text{总结果数}}$'
+  - '学会用<<乘法原理/multiplication principle>>和<<组合/combination>>计数来求概率'
+  - '理解<<独立事件/independent events>>的概率乘法法则'
+  - '初步了解<<条件概率/conditional probability>>——样本空间会变化的情形'
+  - '能解决 AMC 8 竞赛中常见的概率问题'
+objectivesEn:
+  - 'Understand the basic meaning of <<概率/probability>>: measuring the likelihood of events with numbers'
+  - 'Master the classical probability model: $P = \frac{\text{favorable outcomes}}{\text{total outcomes}}$'
+  - 'Use the <<乘法原理/multiplication principle>> and <<组合/combination>> counting to compute probabilities'
+  - 'Understand the multiplication rule for <<独立事件/independent events>>'
+  - 'Get an introduction to <<条件概率/conditional probability>> — when the sample space changes'
+  - 'Solve common probability problems appearing in AMC 8 contests'
+
+prerequisites:
+  title: 从数据分析出发——已知的数学知识
+  titleEn: Building on data analysis — mathematical knowledge already mastered
+  intro: |
+    八年级下学期我们学习了数据分析，掌握了平均数、中位数、众数和方差。在人教版课程中，概率要到九年级才正式学习。但 AMC 8 竞赛中概率是高频考点——几乎每年都有 2–3 道概率题。这一章提前学习概率的核心方法，为 AMC 8 做好准备。
+  introEn: |
+    In the second semester of Grade 8 we studied data analysis, mastering mean, median, mode, and variance. In the standard PEP curriculum, probability is formally taught in Grade 9. However, probability is a high-frequency topic on the AMC 8 — nearly every year has 2–3 probability questions. This chapter introduces the core probability methods ahead of schedule to prepare for the AMC 8.
+  knownNumbers:
+    - '<<组合数/combination>>：$C(n, k) = \frac{n!}{k!(n-k)!}$（从前一章 AMC 扩展已学）'
+    - '<<乘法原理/multiplication principle>>：若 A 有 $m$ 种方式，B 有 $n$ 种方式，则 A 再 B 共有 $m \times n$ 种方式'
+    - '分数运算：加减乘除分数'
+    - '数据分析基础：收集、整理数据的能力'
+  knownNumbersEn:
+    - '<<组合数/combination>>: $C(n, k) = \frac{n!}{k!(n-k)!}$ (learned in the previous AMC extension chapter)'
+    - '<<乘法原理/multiplication principle>>: if A has $m$ ways and B has $n$ ways, then A followed by B has $m \times n$ ways'
+    - 'Fraction arithmetic: adding, subtracting, multiplying, and dividing fractions'
+    - 'Data analysis basics: the ability to collect and organize data'
+  canSolve:
+    - '用组合数计算"从 $n$ 个中选 $k$ 个"的方案数'
+    - '用乘法原理计算多步选择的总方案数'
+    - '化简分数到最简形式'
+    - '计算平均数、中位数'
+  canSolveEn:
+    - 'Compute "choose $k$ from $n$" using combinations'
+    - 'Count multi-step choices using the multiplication principle'
+    - 'Simplify fractions to lowest terms'
+    - 'Compute mean and median'
+  cannotSolve:
+    - '什么是概率？概率和频率有什么区别？'
+    - '如何系统地列出所有可能结果（样本空间）？'
+    - '"至少有一个"这类问题该怎么思考？'
+    - '抽取不放回时，概率怎么算？'
+  cannotSolveEn:
+    - 'What is probability? How does it differ from frequency?'
+    - 'How to systematically list all possible outcomes (sample space)?'
+    - 'How to think about "at least one" type problems?'
+    - 'How to compute probability when drawing without replacement?'
+  conclusion: |
+    这一章，我们将学习概率的基本概念和计算方法。概率是数学中最"接地气"的分支之一——它帮助我们用精确的数字来回答"有多大可能"这个日常问题。AMC 8 中的概率题通常不需要复杂的公式，但需要**清晰的计数**和**仔细的分析**。
+  conclusionEn: |
+    In this chapter, we learn the fundamental concepts and methods of probability. Probability is one of the most "down-to-earth" branches of mathematics — it helps us answer "how likely?" with precise numbers. AMC 8 probability problems usually don't require complex formulas, but they do require **clear counting** and **careful analysis**.
+
+concepts:
+  - id: basic-probability
+    title: <<概率/probability>>的基本概念
+    titleEn: Basic Concepts of <<概率/probability>>
+    hasVisualization: false
+    content: |
+      **什么是概率？**
+
+      生活中我们经常说"很可能下雨"、"不太可能迟到"。<<概率/probability>>就是用一个**精确的数字**来衡量这种"可能性的大小"。
+
+      掷一枚硬币，正面朝上的概率是 $\frac{1}{2}$——这意味着如果你掷很多很多次，大约一半的次数会出现正面。
+
+      **概率的定义**
+
+      当一个实验的所有结果<<等可能/equally likely>>时（比如掷一枚均匀的骰子，每个面出现的机会相同），事件 $A$ 的概率是：
+
+      $$P(A) = \frac{\text{事件 } A \text{ 包含的结果数}}{\text{所有可能结果的总数}}$$
+
+      这叫做<<古典概型/classical probability model>>。
+
+      **例子：掷一个标准骰子**
+
+      - 所有可能结果：$\{1, 2, 3, 4, 5, 6\}$，共 6 个
+      - $P(\text{掷出 3}) = \frac{1}{6}$（只有 1 个有利结果）
+      - $P(\text{掷出偶数}) = \frac{|\{2, 4, 6\}|}{6} = \frac{3}{6} = \frac{1}{2}$
+      - $P(\text{掷出小于 5}) = \frac{|\{1, 2, 3, 4\}|}{6} = \frac{4}{6} = \frac{2}{3}$
+
+      **概率的基本性质**
+
+      1. **概率的范围**：任何事件的概率都在 $0$ 到 $1$ 之间：$0 \leq P(A) \leq 1$
+      2. **必然事件**：一定会发生的事件，概率为 $1$。例如 $P(\text{掷出 1 到 6 之间的数}) = 1$
+      3. **不可能事件**：不可能发生的事件，概率为 $0$。例如 $P(\text{掷出 7}) = 0$
+      4. **<<对立事件/complementary event>>（补事件）**：事件 $A$ 不发生的概率为
+
+      $$P(\overline{A}) = 1 - P(A)$$
+
+      这是一个**非常有用的技巧**！当直接数"有利结果"很复杂时，不如数"不利结果"——然后用 $1$ 减去。
+
+      **例子：补事件的威力**
+
+      掷两枚骰子，求至少有一枚出现 6 的概率。
+
+      直接数？要考虑"恰好一枚是 6"和"两枚都是 6"两种情况，有点麻烦。
+      用补事件：$P(\text{至少一枚 6}) = 1 - P(\text{两枚都不是 6}) = 1 - \frac{5}{6} \times \frac{5}{6} = 1 - \frac{25}{36} = \frac{11}{36}$
+
+      **⚠️ 常见误区**
+
+      - "概率 $= \frac{1}{2}$"不等于"一定是一半一半"——它描述的是长期趋势，单次实验结果不确定
+      - 每个结果必须<<等可能/equally likely>>才能用古典概型公式。如果骰子不均匀，就不能简单地用"有利数÷总数"
+      - 概率 $= 0$ 不代表"绝对不会发生"（理论上可以区分，但在 AMC 8 中通常就是不会发生）
+    contentEn: |
+      **What is probability?**
+
+      In daily life we often say "it will probably rain" or "it's unlikely I'll be late." <<概率/probability>> assigns a **precise number** to measure this "degree of likelihood."
+
+      Flip a coin: the probability of heads is $\frac{1}{2}$ — meaning if you flip it many, many times, about half the flips will be heads.
+
+      **Definition of probability**
+
+      When all outcomes of an experiment are <<等可能/equally likely>> (e.g., rolling a fair die — every face has the same chance), the probability of event $A$ is:
+
+      $$P(A) = \frac{\text{number of outcomes in } A}{\text{total number of outcomes}}$$
+
+      This is called the <<古典概型/classical probability model>>.
+
+      **Example: rolling a standard die**
+
+      - All possible outcomes: $\{1, 2, 3, 4, 5, 6\}$, total 6
+      - $P(\text{roll a 3}) = \frac{1}{6}$ (1 favorable outcome)
+      - $P(\text{roll an even number}) = \frac{|\{2,4,6\}|}{6} = \frac{3}{6} = \frac{1}{2}$
+      - $P(\text{roll less than 5}) = \frac{|\{1,2,3,4\}|}{6} = \frac{4}{6} = \frac{2}{3}$
+
+      **Basic properties of probability**
+
+      1. **Range**: Every probability lies between $0$ and $1$: $0 \leq P(A) \leq 1$
+      2. **Certain event**: An event guaranteed to occur has probability $1$. E.g., $P(\text{roll 1 through 6}) = 1$
+      3. **Impossible event**: An event that cannot occur has probability $0$. E.g., $P(\text{roll a 7}) = 0$
+      4. **<<对立事件/complementary event>>**: The probability that $A$ does NOT occur is
+
+      $$P(\overline{A}) = 1 - P(A)$$
+
+      This is an **extremely useful trick**! When counting favorable outcomes is complicated, count the unfavorable ones instead — then subtract from $1$.
+
+      **Example: the power of complementary counting**
+
+      Roll two dice. Find the probability that at least one shows a 6.
+
+      Counting directly? You'd need "exactly one 6" and "both 6s" — a bit tedious.
+      Complementary method: $P(\text{at least one 6}) = 1 - P(\text{neither is 6}) = 1 - \frac{5}{6}\times\frac{5}{6} = 1 - \frac{25}{36} = \frac{11}{36}$
+
+      **Common misconceptions**
+
+      - "$P = \frac{1}{2}$" does NOT mean "exactly half the time" — it describes a long-run trend; any single trial is uncertain
+      - Outcomes MUST be <<等可能/equally likely>> to apply the classical formula. If the die is unfair, you can't just use "favorable ÷ total"
+      - $P = 0$ doesn't mean "absolutely will never happen" (in theory), but in AMC 8 it typically means impossible
+    notes:
+      - '概率本质上是一个 $0$ 到 $1$ 之间的分数，越接近 $1$ 越可能发生'
+      - '补事件公式 $P(\overline{A}) = 1 - P(A)$ 是 AMC 8 概率题的最常用技巧之一'
+      - '使用古典概型的前提：所有结果等可能。检查这一点很重要！'
+      - '概率可以用分数、小数或百分比表示，AMC 8 中通常用最简分数'
+    notesEn:
+      - 'Probability is essentially a fraction between $0$ and $1$ — closer to $1$ means more likely'
+      - 'The complement formula $P(\overline{A}) = 1 - P(A)$ is one of the most commonly used tricks in AMC 8 probability'
+      - 'The classical model requires all outcomes to be equally likely — always check this!'
+      - 'Probability can be expressed as a fraction, decimal, or percentage; AMC 8 typically uses simplified fractions'
+
+  - id: counting-for-probability
+    title: 用<<计数/counting>>方法求概率
+    titleEn: Using <<计数/counting>> Methods to Find Probability
+    hasVisualization: false
+    content: |
+      **概率的本质就是计数**
+
+      古典概率公式 $P(A) = \frac{\text{有利结果数}}{\text{总结果数}}$ 告诉我们：求概率的关键就是**数清楚**——分子数什么、分母数什么。
+
+      **方法 1：列举法（适合结果较少时）**
+
+      当总结果数不多时，把所有可能的结果一个个列出来，数一数哪些满足条件。
+
+      **例子**：从 $\{1, 2, 3, 4, 5\}$ 中选 2 个数，它们的和为偶数的概率？
+
+      所有选法：$C(5, 2) = 10$ 种。
+      和为偶数 = 两个都是奇数 或 两个都是偶数。
+      奇数 $\{1, 3, 5\}$ 中选 2 个：$C(3, 2) = 3$ 种。
+      偶数 $\{2, 4\}$ 中选 2 个：$C(2, 2) = 1$ 种。
+      有利结果 $= 3 + 1 = 4$。$P = \frac{4}{10} = \frac{2}{5}$。
+
+      **方法 2：树状图（适合多步实验）**
+
+      当实验分多步进行时，画一棵"树"，每一层是一步的选择。
+
+      **例子**：掷硬币两次，树状图如下：
+
+      第一次：正（H）或 反（T）
+      ├── H → 第二次：H 或 T → 结果：HH，HT
+      └── T → 第二次：H 或 T → 结果：TH，TT
+
+      一共 4 种等可能结果：$\{HH, HT, TH, TT\}$。
+      $P(\text{恰好一次正面}) = \frac{|\{HT, TH\}|}{4} = \frac{2}{4} = \frac{1}{2}$。
+
+      **方法 3：乘法原理 + 组合数（适合结果较多时）**
+
+      当结果太多无法一一列举时，用乘法原理或组合数来计算。
+
+      **例子**：从一副 52 张扑克牌中随机抽 2 张，两张都是红心的概率？
+
+      总结果数：$C(52, 2) = \frac{52 \times 51}{2} = 1326$。
+      有利结果（两张都是红心）：$C(13, 2) = \frac{13 \times 12}{2} = 78$。
+      $P = \frac{78}{1326} = \frac{1}{17}$。
+
+      **AMC 8 典型场景：非标准骰子**
+
+      AMC 8 喜欢考"不标准"的骰子或卡片。例如面上的数字不是 $1 \sim 6$，而是特别的数字集合。此时关键是：
+      1. 弄清楚样本空间（总共多少种结果）
+      2. 弄清楚有利结果有多少
+      3. 检查每种结果是否等可能
+
+      **⚠️ 常见错误**
+
+      - 分子分母"单位不一致"：分母数的是无序对，分子却数了有序对（或反之）
+      - 忘记检查"等可能性"——骰子的 6 个面出现概率相等，但如果改成掷两枚骰子看"和"，各种和出现的概率**不相等**
+      - 将"抽取不放回"当成"有放回"来算
+    contentEn: |
+      **Probability is fundamentally about counting**
+
+      The classical formula $P(A) = \frac{\text{favorable}}{\text{total}}$ tells us: the key to finding probability is **counting correctly** — what goes in the numerator, what goes in the denominator.
+
+      **Method 1: Listing (when outcomes are few)**
+
+      When the total number of outcomes is small, list them all and count which ones satisfy the condition.
+
+      **Example**: Pick 2 numbers from $\{1,2,3,4,5\}$. What is the probability their sum is even?
+
+      Total ways: $C(5,2)=10$.
+      Even sum = both odd or both even.
+      Odd $\{1,3,5\}$, choose 2: $C(3,2)=3$.
+      Even $\{2,4\}$, choose 2: $C(2,2)=1$.
+      Favorable $= 3+1=4$. $P = \frac{4}{10} = \frac{2}{5}$.
+
+      **Method 2: Tree diagrams (for multi-step experiments)**
+
+      When an experiment has multiple stages, draw a "tree" where each level represents one step.
+
+      **Example**: Flip a coin twice:
+
+      First flip: H or T
+      ├── H → Second flip: H or T → Outcomes: HH, HT
+      └── T → Second flip: H or T → Outcomes: TH, TT
+
+      Total 4 equally likely outcomes: $\{HH, HT, TH, TT\}$.
+      $P(\text{exactly one head}) = \frac{|\{HT, TH\}|}{4} = \frac{1}{2}$.
+
+      **Method 3: Multiplication principle + combinations (when outcomes are many)**
+
+      When there are too many outcomes to list, use the multiplication principle or combinations.
+
+      **Example**: Draw 2 cards from a standard 52-card deck. What is the probability both are hearts?
+
+      Total: $C(52,2) = 1326$.
+      Favorable (both hearts): $C(13,2) = 78$.
+      $P = \frac{78}{1326} = \frac{1}{17}$.
+
+      **AMC 8 classic scenario: non-standard dice**
+
+      AMC 8 loves "non-standard" dice or cards — faces labeled with unusual number sets instead of $1$–$6$. The key steps are:
+      1. Identify the sample space (how many total outcomes)
+      2. Count favorable outcomes
+      3. Verify that all outcomes are equally likely
+
+      **Common mistakes**
+
+      - Numerator and denominator "units" don't match: denominator counts unordered pairs but numerator counts ordered ones (or vice versa)
+      - Forgetting to check "equally likely" — each die face is equally likely, but when rolling two dice and looking at the SUM, different sums are NOT equally likely
+      - Treating "without replacement" as "with replacement"
+    notes:
+      - '求概率的核心：分子（有利结果数）和分母（总结果数）必须用同一种计数方式'
+      - '列举法虽然"笨"，但在 AMC 8 中经常是最可靠的方法——结果数不超过 20-30 时优先考虑'
+      - '树状图特别适合两步或三步的实验，能直观看到所有分支'
+      - '非标准骰子/卡片：先搞清楚样本空间，再数有利结果'
+    notesEn:
+      - 'Core of probability: numerator (favorable) and denominator (total) must use the same counting method'
+      - 'Listing may seem "brute force," but it is often the most reliable method in AMC 8 — prefer it when total outcomes are at most 20–30'
+      - 'Tree diagrams are especially suited for two- or three-step experiments, giving a visual view of all branches'
+      - 'Non-standard dice/cards: first determine the sample space, then count favorable outcomes'
+
+  - id: independent-events
+    title: <<独立事件/independent events>>
+    titleEn: <<独立事件/independent events>>
+    hasVisualization: false
+    content: |
+      **什么是独立事件？**
+
+      两个事件是<<独立/independent>>的，意味着一个事件的发生**不影响**另一个事件的概率。
+
+      典型例子：
+      - 掷硬币两次：第一次的结果不影响第二次
+      - 掷两枚不同的骰子：每枚骰子的结果互不影响
+      - 从袋中取球**放回**后再取：因为放回了，所以第二次取球和第一次独立
+
+      反例（**不独立**）：
+      - 从袋中取球**不放回**：取出第一个球后，袋中球的数量和构成都变了，所以第二次取球**依赖于**第一次
+
+      **独立事件的概率乘法法则**
+
+      如果事件 $A$ 和 $B$ 独立，那么：
+
+      $$P(A \text{ 且 } B) = P(A) \times P(B)$$
+
+      **例子**：掷两枚骰子，第一枚出 6 且第二枚出偶数的概率？
+
+      $P(\text{第一枚出 6}) = \frac{1}{6}$，$P(\text{第二枚出偶数}) = \frac{1}{2}$。
+
+      两枚骰子独立，所以 $P(\text{第一枚 6 且第二枚偶数}) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12}$。
+
+      **推广到多个独立事件**
+
+      掷 $n$ 次硬币，每次独立：
+
+      $P(\text{全是正面}) = \underbrace{\frac{1}{2} \times \frac{1}{2} \times \cdots \times \frac{1}{2}}_{n \text{ 个}} = \left(\frac{1}{2}\right)^{n}$
+
+      **"至少一个"——补事件法的经典应用**
+
+      "至少有一个 X" 的概率往往很难直接算，因为要分成"恰好 1 个"、"恰好 2 个"……太麻烦！
+
+      **技巧**："至少一个" = $1$ $-$ "一个也没有"
+
+      $$P(\text{至少一个 X}) = 1 - P(\text{没有 X})$$
+
+      **例子**：掷 3 次硬币，至少出现一次正面的概率？
+
+      $P(\text{没有正面}) = P(\text{全是反面}) = \left(\frac{1}{2}\right)^{3} = \frac{1}{8}$
+
+      $P(\text{至少一次正面}) = 1 - \frac{1}{8} = \frac{7}{8}$
+
+      如果直接数：要数"恰好 1 次正面" + "恰好 2 次" + "恰好 3 次" = $3 + 3 + 1 = 7$ 种，$P = \frac{7}{8}$。结果一样，但补事件法更快！
+
+      **AMC 8 中的独立事件套路**
+
+      1. **多次掷骰子/翻硬币**：每次独立，用乘法法则
+      2. **多步实验**：如果每步不影响下一步，则独立
+      3. **"至少一个"问题**：几乎一定用补事件法
+    contentEn: |
+      **What are independent events?**
+
+      Two events are <<独立/independent>> if one occurring **does not affect** the probability of the other.
+
+      Typical examples:
+      - Flipping a coin twice: the first flip doesn't affect the second
+      - Rolling two different dice: each die's result is independent of the other
+      - Drawing a ball from a bag, **replacing** it, then drawing again: since you replaced it, the second draw is independent of the first
+
+      Counterexample (**not independent**):
+      - Drawing from a bag **without replacement**: after removing one ball, the composition of the bag changes, so the second draw **depends on** the first
+
+      **Multiplication rule for independent events**
+
+      If events $A$ and $B$ are independent:
+
+      $$P(A \text{ and } B) = P(A) \times P(B)$$
+
+      **Example**: Roll two dice. Probability that the first shows 6 AND the second shows an even number?
+
+      $P(\text{first is 6}) = \frac{1}{6}$, $P(\text{second is even}) = \frac{1}{2}$.
+
+      The dice are independent, so $P = \frac{1}{6}\times\frac{1}{2} = \frac{1}{12}$.
+
+      **Extending to multiple independent events**
+
+      Flip a coin $n$ times, each flip independent:
+
+      $P(\text{all heads}) = \underbrace{\frac{1}{2}\times\frac{1}{2}\times\cdots\times\frac{1}{2}}_{n} = \left(\frac{1}{2}\right)^{n}$
+
+      **"At least one" — the classic use of complementary counting**
+
+      "At least one X" is often hard to compute directly because you'd need "exactly 1" + "exactly 2" + ... — too tedious!
+
+      **Trick**: "at least one" $= 1 -$ "none at all"
+
+      $$P(\text{at least one X}) = 1 - P(\text{no X})$$
+
+      **Example**: Flip a coin 3 times. Probability of at least one head?
+
+      $P(\text{no heads}) = P(\text{all tails}) = \left(\frac{1}{2}\right)^{3} = \frac{1}{8}$
+
+      $P(\text{at least one head}) = 1 - \frac{1}{8} = \frac{7}{8}$
+
+      Direct counting: "exactly 1 head" + "exactly 2" + "exactly 3" $= 3+3+1 = 7$ outcomes, $P = \frac{7}{8}$. Same answer, but complementary counting is faster!
+
+      **Independent event patterns in AMC 8**
+
+      1. **Multiple die rolls / coin flips**: each trial is independent — use the multiplication rule
+      2. **Multi-step experiments**: if each step doesn't affect the next, the steps are independent
+      3. **"At least one" problems**: almost always use complementary counting
+    notes:
+      - '独立事件的关键判断标准：一个事件的发生是否改变了另一个事件的概率？不改变 → 独立'
+      - '独立事件用乘法：$P(A \text{ 且 } B) = P(A) \times P(B)$'
+      - '"至少一个"问题首选补事件法：$1 - P(\text{一个也没有})$'
+      - 'AMC 8 中"有放回"的抽取一定是独立事件，"不放回"的抽取则不独立'
+    notesEn:
+      - 'Key test for independence: does one event occurring change the probability of the other? If not → independent'
+      - 'Independent events use multiplication: $P(A \text{ and } B) = P(A) \times P(B)$'
+      - 'For "at least one" problems, prefer complementary counting: $1 - P(\text{none})$'
+      - 'In AMC 8, drawing "with replacement" is always independent; "without replacement" is not'
+
+  - id: conditional-probability-intro
+    title: <<条件概率/conditional probability>>初步
+    titleEn: Introduction to <<条件概率/conditional probability>>
+    hasVisualization: false
+    content: |
+      **当样本空间会变化时**
+
+      在独立事件中，每一步的样本空间不变（比如掷骰子，每次都是 6 个面）。但很多问题中，前一步的结果会**改变**后一步的样本空间。
+
+      **例子：不放回抽球**
+
+      袋子里有 3 个红球和 2 个蓝球。不放回地连续抽 2 个球，两个都是红球的概率是多少？
+
+      第一步：$P(\text{第 1 个红球}) = \frac{3}{5}$（3 红 / 5 总）
+
+      第二步：**已经抽走了 1 个红球**，袋中还剩 2 红 + 2 蓝 = 4 个球。
+      $P(\text{第 2 个也是红球} \mid \text{第 1 个是红球}) = \frac{2}{4} = \frac{1}{2}$
+
+      两步合起来：$P(\text{两个都红}) = \frac{3}{5} \times \frac{1}{2} = \frac{3}{10}$
+
+      注意：这里用了乘法，但**不是**独立事件的乘法！第二步的概率 $\frac{1}{2}$ 是在"第一步已经取走一个红球"的**条件下**计算的。
+
+      **条件概率的直觉**
+
+      <<条件概率/conditional probability>> $P(B \mid A)$ 读作"在 $A$ 已经发生的条件下 $B$ 发生的概率"。
+
+      它的意思是：我们**缩小了考虑范围**——不再看所有可能的结果，而只看 $A$ 已经发生的那些结果，在这些结果中 $B$ 发生的比例是多少。
+
+      **树状图法——不放回抽取的最佳工具**
+
+      对于不放回抽取问题，最清晰的方法是画树状图，每一层标上概率：
+
+      第 1 次抽取（5 球中抽 1）：
+      ├── 红球 ($\frac{3}{5}$) → 第 2 次（4 球中抽 1）：红 ($\frac{2}{4}$)，蓝 ($\frac{2}{4}$)
+      └── 蓝球 ($\frac{2}{5}$) → 第 2 次（4 球中抽 1）：红 ($\frac{3}{4}$)，蓝 ($\frac{1}{4}$)
+
+      每条从根到叶的路径，概率等于路径上各分支概率的乘积：
+      - 红红：$\frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}$
+      - 红蓝：$\frac{3}{5} \times \frac{2}{4} = \frac{6}{20} = \frac{3}{10}$
+      - 蓝红：$\frac{2}{5} \times \frac{3}{4} = \frac{6}{20} = \frac{3}{10}$
+      - 蓝蓝：$\frac{2}{5} \times \frac{1}{4} = \frac{2}{20} = \frac{1}{10}$
+
+      所有路径概率之和 $= \frac{3}{10} + \frac{3}{10} + \frac{3}{10} + \frac{1}{10} = 1$ ✓
+
+      **AMC 8 中的条件概率**
+
+      AMC 8 不会直接写"求条件概率"，但经常出现以下场景：
+      - 不放回地抽卡片/球/筹码
+      - "已知某个条件成立"，求另一个事件的概率
+      - 某人先做了一个选择，在此基础上再做判断
+
+      解题关键：弄清楚**每一步的样本空间是什么**，是否因前一步而改变了。
+
+      **⚠️ 条件概率 vs 独立事件——如何区分？**
+
+      | | 独立事件 | 条件概率 |
+      |--|---------|---------|
+      | 样本空间 | 每步不变 | 会随前一步变化 |
+      | 公式 | $P(A \text{ 且 } B) = P(A) \times P(B)$ | $P(A \text{ 且 } B) = P(A) \times P(B \mid A)$ |
+      | 典型场景 | 有放回、掷多枚骰子 | 不放回、淘汰赛 |
+    contentEn: |
+      **When the sample space changes**
+
+      In independent events, the sample space stays the same at each step (e.g., rolling a die — always 6 faces). But in many problems, the result of one step **changes** the sample space for the next.
+
+      **Example: drawing without replacement**
+
+      A bag contains 3 red and 2 blue balls. Draw 2 balls without replacement. What is the probability both are red?
+
+      Step 1: $P(\text{1st red}) = \frac{3}{5}$ (3 red out of 5 total)
+
+      Step 2: **One red ball has been removed.** The bag now has 2 red + 2 blue = 4 balls.
+      $P(\text{2nd red} \mid \text{1st red}) = \frac{2}{4} = \frac{1}{2}$
+
+      Combined: $P(\text{both red}) = \frac{3}{5}\times\frac{1}{2} = \frac{3}{10}$
+
+      Note: we used multiplication, but this is **not** the independent-events formula! The second probability $\frac{1}{2}$ was computed **conditional on** the first ball being red.
+
+      **Intuition for conditional probability**
+
+      <<条件概率/conditional probability>> $P(B \mid A)$ is read "the probability of $B$ given that $A$ has occurred."
+
+      It means: we **narrow our view** — instead of looking at all possible outcomes, we only look at those where $A$ occurred, and ask what fraction of those also have $B$.
+
+      **Tree diagrams — the best tool for without-replacement problems**
+
+      For without-replacement problems, the clearest approach is a tree diagram with probabilities on each branch:
+
+      1st draw (from 5 balls):
+      ├── Red ($\frac{3}{5}$) → 2nd draw (from 4): Red ($\frac{2}{4}$), Blue ($\frac{2}{4}$)
+      └── Blue ($\frac{2}{5}$) → 2nd draw (from 4): Red ($\frac{3}{4}$), Blue ($\frac{1}{4}$)
+
+      Each root-to-leaf path has probability equal to the product of its branch probabilities:
+      - Red-Red: $\frac{3}{5}\times\frac{2}{4} = \frac{3}{10}$
+      - Red-Blue: $\frac{3}{5}\times\frac{2}{4} = \frac{3}{10}$
+      - Blue-Red: $\frac{2}{5}\times\frac{3}{4} = \frac{3}{10}$
+      - Blue-Blue: $\frac{2}{5}\times\frac{1}{4} = \frac{1}{10}$
+
+      Sum of all path probabilities $= \frac{3}{10}+\frac{3}{10}+\frac{3}{10}+\frac{1}{10} = 1$ ✓
+
+      **Conditional probability on the AMC 8**
+
+      The AMC 8 won't explicitly say "find the conditional probability," but these scenarios appear often:
+      - Drawing cards/balls/chips without replacement
+      - "Given that some condition holds," find the probability of another event
+      - Someone makes a first choice, then a second decision depends on it
+
+      Key to solving: determine **what the sample space is at each step** and whether it changed due to previous steps.
+
+      **Conditional probability vs. independent events — how to tell?**
+
+      | | Independent events | Conditional probability |
+      |--|-------------------|------------------------|
+      | Sample space | Same at each step | Changes with previous steps |
+      | Formula | $P(A \text{ and } B) = P(A) \times P(B)$ | $P(A \text{ and } B) = P(A) \times P(B \mid A)$ |
+      | Typical scenario | With replacement, multiple dice | Without replacement, elimination |
+    notes:
+      - '条件概率的核心：前一步的结果改变了后一步的样本空间'
+      - '树状图是处理不放回问题的最佳工具——每层标上当前条件下的概率'
+      - '所有从根到叶的路径概率之和应等于 $1$——这是检验树状图正确性的好方法'
+      - 'AMC 8 中不放回抽取非常常见，一定要注意每一步中球/卡片的数量变化'
+    notesEn:
+      - 'The core of conditional probability: the previous step changes the sample space for the next'
+      - 'Tree diagrams are the best tool for without-replacement problems — label each branch with the conditional probability'
+      - 'All root-to-leaf path probabilities should sum to $1$ — a great check for correctness'
+      - 'Without-replacement draws are very common on AMC 8 — always track how many items remain at each step'
+
+examples:
+  - type: 1
+    source: "AMC 8 2019 #18"
+    title: 非标准骰子的偶数和
+    titleEn: Even Sum with Non-Standard Dice
+    question: |
+      两枚骰子的面上标有数字 $\{1, 2, 3, 5, 7, 8\}$。同时掷两枚骰子，两枚骰子点数之和为偶数的概率是多少？
+
+      (A) $\frac{4}{9}$ &emsp; (B) $\frac{1}{2}$ &emsp; (C) $\frac{5}{9}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{2}{3}$
+    questionEn: |
+      Each face of two dice is labeled with one of the numbers $\{1, 2, 3, 5, 7, 8\}$. Both dice are rolled. What is the probability that the sum is even?
+
+      (A) $\frac{4}{9}$ &emsp; (B) $\frac{1}{2}$ &emsp; (C) $\frac{5}{9}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{2}{3}$
+    steps:
+      - '分析数字的奇偶性：奇数面 $\{1, 3, 5, 7\}$ 有 4 个，偶数面 $\{2, 8\}$ 有 2 个'
+      - '和为偶数的条件：两个都是奇数 或 两个都是偶数（奇+奇=偶，偶+偶=偶）'
+      - '$P(\text{两个都是奇数}) = \frac{4}{6} \times \frac{4}{6} = \frac{16}{36}$'
+      - '$P(\text{两个都是偶数}) = \frac{2}{6} \times \frac{2}{6} = \frac{4}{36}$'
+      - '$P(\text{和为偶数}) = \frac{16}{36} + \frac{4}{36} = \frac{20}{36} = \frac{5}{9}$'
+    stepsEn:
+      - 'Analyze parity: odd faces $\{1,3,5,7\}$ — 4 faces; even faces $\{2,8\}$ — 2 faces'
+      - 'Sum is even when both odd OR both even (odd+odd=even, even+even=even)'
+      - '$P(\text{both odd}) = \frac{4}{6}\times\frac{4}{6} = \frac{16}{36}$'
+      - '$P(\text{both even}) = \frac{2}{6}\times\frac{2}{6} = \frac{4}{36}$'
+      - '$P(\text{even sum}) = \frac{16}{36}+\frac{4}{36} = \frac{20}{36} = \frac{5}{9}$'
+    answer: '(C) $\frac{5}{9}$'
+    answerEn: '(C) $\frac{5}{9}$'
+
+  - type: 2
+    source: "AMC 8 2016 #21"
+    title: 抽筹码——谁先完成？
+    titleEn: Drawing Chips — Who Finishes First?
+    question: |
+      帽子里有 3 个红色筹码和 2 个绿色筹码。每次随机抽出一个（不放回），直到 3 个红色筹码全部被抽出 或 2 个绿色筹码全部被抽出。3 个红色筹码先全部被抽出的概率是多少？
+
+      (A) $\frac{3}{10}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{1}{2}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{7}{10}$
+    questionEn: |
+      A hat contains 3 red chips and 2 green chips. Chips are drawn one at a time without replacement until all 3 reds or both greens are drawn. What is the probability that all 3 red chips are drawn?
+
+      (A) $\frac{3}{10}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{1}{2}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{7}{10}$
+    steps:
+      - '**关键思路**：考虑 5 个筹码的所有排列，看 2 个绿色筹码放在哪些位置。'
+      - '2 个绿色在 5 个位置中选 2 个的方式有 $C(5, 2) = 10$ 种。'
+      - '红色先全部抽出 = 在绿色全部出现之前，3 个红色已经出完。即：游戏结束时抽到第 3 个红色在抽到第 2 个绿色之前。'
+      - '逐一检查绿色的位置组合：'
+      - '绿色在 $\{1,2\}$：第 2 位就有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{1,3\}$：第 3 位有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{1,4\}$：第 4 位有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{1,5\}$：前 4 位有 3 红 1 绿 → 第 4 位时 3 红完 → 红色先完 ✓'
+      - '绿色在 $\{2,3\}$：第 3 位有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{2,4\}$：第 4 位有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{2,5\}$：前 4 位有 3 红 1 绿 → 红色先完 ✓'
+      - '绿色在 $\{3,4\}$：第 4 位有 2 绿 → 绿色先完 ✗'
+      - '绿色在 $\{3,5\}$：前 4 位（位置 1,2,4 是红）有 3 红 → 红色先完 ✓'
+      - '绿色在 $\{4,5\}$：前 3 位全红 → 红色先完 ✓'
+      - '红色先完的情况有 4 种：$\{1,5\}$、$\{2,5\}$、$\{3,5\}$、$\{4,5\}$。$P = \frac{4}{10} = \frac{2}{5}$'
+    stepsEn:
+      - '**Key idea**: Consider all arrangements of 5 chips and check where the 2 greens are placed.'
+      - 'There are $C(5,2)=10$ ways to place the 2 greens among 5 positions.'
+      - 'Reds win = all 3 reds are drawn before both greens. I.e., the 3rd red appears before the 2nd green.'
+      - 'Check each green-position combination:'
+      - 'Greens at $\{1,2\}$: 2nd green at position 2 → greens win ✗'
+      - 'Greens at $\{1,3\}$: 2nd green at position 3 → greens win ✗'
+      - 'Greens at $\{1,4\}$: 2nd green at position 4 → greens win ✗'
+      - 'Greens at $\{1,5\}$: positions 2,3,4 have 3 reds → reds finish at position 4 ✓'
+      - 'Greens at $\{2,3\}$: 2nd green at position 3 → greens win ✗'
+      - 'Greens at $\{2,4\}$: 2nd green at position 4 → greens win ✗'
+      - 'Greens at $\{2,5\}$: positions 1,3,4 have 3 reds → reds finish at position 4 ✓'
+      - 'Greens at $\{3,4\}$: 2nd green at position 4 → greens win ✗'
+      - 'Greens at $\{3,5\}$: positions 1,2,4 have 3 reds → reds finish at position 4 ✓'
+      - 'Greens at $\{4,5\}$: positions 1,2,3 all red → reds finish at position 3 ✓'
+      - 'Reds win in 4 cases: $\{1,5\}$, $\{2,5\}$, $\{3,5\}$, $\{4,5\}$. $P = \frac{4}{10} = \frac{2}{5}$'
+    answer: '(B) $\frac{2}{5}$'
+    answerEn: '(B) $\frac{2}{5}$'
+
+  - type: 3
+    source: "AMC 8 2017 #10"
+    title: 卡片中最大数——组合计数
+    titleEn: Largest Card Drawn — Combinatorial Counting
+    question: |
+      从标有 $1, 2, 3, 4, 5$ 的 5 张卡片中随机抽出 3 张。抽出的卡片中最大的数恰好是 $4$ 的概率是多少？
+
+      (A) $\frac{1}{10}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{3}{10}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{1}{2}$
+    questionEn: |
+      Three cards are chosen at random from five cards numbered $1, 2, 3, 4, 5$. What is the probability that the largest number drawn is $4$?
+
+      (A) $\frac{1}{10}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{3}{10}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{1}{2}$
+    steps:
+      - '总选法：$C(5, 3) = 10$'
+      - '最大数恰好是 $4$ → 必须选中 $4$，且不能选 $5$（否则 $5$ 才是最大）'
+      - '剩下 2 张从 $\{1, 2, 3\}$ 中选：$C(3, 2) = 3$'
+      - '$P = \frac{3}{10}$'
+    stepsEn:
+      - 'Total ways: $C(5,3) = 10$'
+      - 'Largest is exactly $4$ → must include $4$, must NOT include $5$ (otherwise $5$ would be largest)'
+      - 'Remaining 2 cards from $\{1,2,3\}$: $C(3,2) = 3$'
+      - '$P = \frac{3}{10}$'
+    answer: '(C) $\frac{3}{10}$'
+    answerEn: '(C) $\frac{3}{10}$'
+
+  - type: 4
+    source: "AMC 8 2022 #12"
+    title: 转盘组合两位数——完全平方数
+    titleEn: Spinner Two-Digit Number — Perfect Squares
+    question: |
+      转盘 A 有四个等可能的数字 $\{5, 6, 7, 8\}$，转盘 B 有四个等可能的数字 $\{1, 2, 3, 4\}$。分别转一次，用 A 的结果作十位、B 的结果作个位组成两位数 $N$。$N$ 是完全平方数的概率是多少？
+
+      (A) $\frac{1}{16}$ &emsp; (B) $\frac{1}{8}$ &emsp; (C) $\frac{1}{4}$ &emsp; (D) $\frac{3}{8}$ &emsp; (E) $\frac{7}{16}$
+    questionEn: |
+      Spinner A has equally likely outcomes $\{5,6,7,8\}$ and spinner B has equally likely outcomes $\{1,2,3,4\}$. Each spinner is spun once. The two-digit number $N$ is formed with A as the tens digit and B as the units digit. What is the probability that $N$ is a perfect square?
+
+      (A) $\frac{1}{16}$ &emsp; (B) $\frac{1}{8}$ &emsp; (C) $\frac{1}{4}$ &emsp; (D) $\frac{3}{8}$ &emsp; (E) $\frac{7}{16}$
+    steps:
+      - '总共 $4 \times 4 = 16$ 种等可能的结果'
+      - '$N$ 的范围：十位是 $5 \sim 8$，个位是 $1 \sim 4$，所以 $N$ 在 $51$ 到 $84$ 之间'
+      - '这个范围内的完全平方数：$8^{2} = 64$，$9^{2} = 81$'
+      - '$N = 64$：A 转出 6，B 转出 4 ✓'
+      - '$N = 81$：A 转出 8，B 转出 1 ✓'
+      - '有利结果 $= 2$。$P = \frac{2}{16} = \frac{1}{8}$'
+    stepsEn:
+      - 'Total outcomes: $4\times4 = 16$'
+      - '$N$ ranges from $51$ to $84$ (tens digit $5$–$8$, units $1$–$4$)'
+      - 'Perfect squares in $[51, 84]$: $8^{2}=64$ and $9^{2}=81$'
+      - '$N=64$: A spins 6, B spins 4 ✓'
+      - '$N=81$: A spins 8, B spins 1 ✓'
+      - 'Favorable $= 2$. $P = \frac{2}{16} = \frac{1}{8}$'
+    answer: '(B) $\frac{1}{8}$'
+    answerEn: '(B) $\frac{1}{8}$'
+
+exercises:
+  timeGuide:
+    total: 约 35 分钟
+    sections:
+      - range: "1–3"
+        time: 基础概率（约 8 分钟）
+      - range: "4–6"
+        time: 计数与概率（约 10 分钟）
+      - range: "7–9"
+        time: 独立事件与多步实验（约 8 分钟）
+      - range: "10–12"
+        time: 综合应用（约 9 分钟）
+  scaffold:
+    - title: '铺垫：硬币概率'
+      titleEn: 'Warm-up: Coin Flip Probability'
+      question: '抛一枚硬币一次，正面朝上的概率是多少？反面呢？两个概率加起来等于多少？'
+      questionEn: 'Flip a coin once. What is the probability of heads? Of tails? What do they add up to?'
+      hint: '硬币只有两面，每面出现的机会相同'
+      hintEn: 'A coin has two sides, each equally likely'
+      answer: '$P(\text{正面}) = \frac{1}{2}$，$P(\text{反面}) = \frac{1}{2}$。加起来 $= 1$（所有可能的概率之和一定是 1）。'
+      answerEn: '$P(\text{heads}) = \frac{1}{2}$, $P(\text{tails}) = \frac{1}{2}$. Sum $= 1$ (all probabilities must add to 1).'
+    - title: '铺垫：数有利结果'
+      titleEn: 'Warm-up: Counting Favorable Outcomes'
+      question: '掷一个标准骰子，点数大于 4 的概率是多少？先列出所有"有利结果"。'
+      questionEn: 'Roll a standard die. What is the probability of getting more than 4? First list all favorable outcomes.'
+      hint: '大于 4 的点数有哪些？总共 6 个面。'
+      hintEn: 'Which numbers are greater than 4? There are 6 faces total.'
+      answer: '大于 4 的是 5 和 6，共 2 个有利结果。$P = \frac{2}{6} = \frac{1}{3}$'
+      answerEn: 'Numbers > 4 are 5 and 6 — 2 favorable outcomes. $P = \frac{2}{6} = \frac{1}{3}$'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #13"
+      section: 基础概率
+      question: |
+        从 $\{-2, -1, 0, 3, 4, 5\}$ 中随机选两个不同的数，它们的乘积为 $0$ 的概率是多少？
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{1}{4}$ &emsp; (D) $\frac{1}{3}$ &emsp; (E) $\frac{1}{2}$
+      questionEn: |
+        Two different numbers are randomly selected from the set $\{-2,-1,0,3,4,5\}$. What is the probability that the product is $0$?
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{1}{4}$ &emsp; (D) $\frac{1}{3}$ &emsp; (E) $\frac{1}{2}$
+      choices:
+        - label: A
+          content: '$\frac{1}{6}$'
+        - label: B
+          content: '$\frac{1}{5}$'
+        - label: C
+          content: '$\frac{1}{4}$'
+        - label: D
+          content: '$\frac{1}{3}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: D
+      answer: '(D) $\frac{1}{3}$'
+      answerEn: '(D) $\frac{1}{3}$'
+      explanation: |
+        乘积为 $0$ 意味着至少有一个数是 $0$。集合中有 $0$，所以只要选中 $0$ 和另一个数即可。
+        总共选法：$C(6, 2) = 15$。
+        包含 $0$ 的选法：另一个数从剩余 5 个中选 1 个，共 $5$ 种。
+        $P = \frac{5}{15} = \frac{1}{3}$。
+      explanationEn: |
+        Product is $0$ means at least one number is $0$. The set contains $0$, so we need to choose $0$ and one other number.
+        Total ways: $C(6,2) = 15$.
+        Ways including $0$: choose 1 from remaining 5, so $5$ ways.
+        $P = \frac{5}{15} = \frac{1}{3}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #9"
+      section: 基础概率
+      question: |
+        Maria 的弹珠袋中有红色、绿色和蓝色弹珠。绿色弹珠有 $g$ 个，红色弹珠是绿色的一半（即 $\frac{g}{2}$ 个），蓝色弹珠是绿色的两倍（即 $2g$ 个）。以下哪个数可以是弹珠总数？
+
+        (A) 24 &emsp; (B) 30 &emsp; (C) 36 &emsp; (D) 40 &emsp; (E) 28
+      questionEn: |
+        Maria has a bag of red, green, and blue marbles. She has $g$ green marbles, $\frac{g}{2}$ red marbles, and $2g$ blue marbles. Which of the following could be the total number of marbles?
+
+        (A) 24 &emsp; (B) 30 &emsp; (C) 36 &emsp; (D) 40 &emsp; (E) 28
+      choices:
+        - label: A
+          content: '24'
+        - label: B
+          content: '30'
+        - label: C
+          content: '36'
+        - label: D
+          content: '40'
+        - label: E
+          content: '28'
+      correctValue: E
+      answer: '(E) 28'
+      answerEn: '(E) 28'
+      explanation: |
+        总数 $= \frac{g}{2} + g + 2g = \frac{7g}{2}$。
+        $g$ 必须是正偶数（否则 $\frac{g}{2}$ 不是整数），设 $g = 2k$，则总数 $= 7k$。
+        总数必须是 $7$ 的倍数。选项中只有 $28 = 7 \times 4$（此时 $k=4$，$g=8$）。
+
+        💡 **另一种方法——逐个选项试：**
+        对每个选项检查是否能被 7 整除：
+        24÷7=3.4... ✗，30÷7=4.3... ✗，36÷7=5.1... ✗，40÷7=5.7... ✗，28÷7=4 ✓。
+        只有 28 是 7 的倍数！不需要推导 $\frac{7g}{2}$ 这个公式。
+      explanationEn: |
+        Total $= \frac{g}{2}+g+2g = \frac{7g}{2}$.
+        $g$ must be a positive even integer (so $\frac{g}{2}$ is an integer). Let $g=2k$, then total $=7k$.
+        The total must be a multiple of $7$. Among the choices, only $28=7\times4$ works ($k=4$, $g=8$).
+
+        💡 **Alternative — Test Each Choice:**
+        Check which choices are divisible by 7:
+        24÷7=3.4... ✗, 30÷7=4.3... ✗, 36÷7=5.1... ✗, 40÷7=5.7... ✗, 28÷7=4 ✓.
+        Only 28 is a multiple of 7! No need to derive the $\frac{7g}{2}$ formula.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 基础概率
+      question: |
+        袋子里有 3 个红球和 5 个蓝球。随机摸出一个球，摸到红球的概率是多少？
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{3}{8}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{5}{8}$
+      questionEn: |
+        A bag contains 3 red and 5 blue balls. One ball is drawn at random. What is the probability of drawing a red ball?
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{3}{8}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{5}{8}$
+      choices:
+        - label: A
+          content: '$\frac{1}{5}$'
+        - label: B
+          content: '$\frac{1}{4}$'
+        - label: C
+          content: '$\frac{3}{8}$'
+        - label: D
+          content: '$\frac{3}{5}$'
+        - label: E
+          content: '$\frac{5}{8}$'
+      correctValue: C
+      answer: '(C) $\frac{3}{8}$'
+      answerEn: '(C) $\frac{3}{8}$'
+      explanation: |
+        总球数 $= 3 + 5 = 8$。红球 3 个。$P(\text{红球}) = \frac{3}{8}$。
+      explanationEn: |
+        Total balls $= 3+5 = 8$. Red balls: 3. $P(\text{red}) = \frac{3}{8}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #15"
+      section: 计数与概率
+      question: |
+        一个活动中有 50 人戴太阳镜，35 人戴帽子。随机选一个戴帽子的人，他同时戴太阳镜的概率为 $\frac{2}{5}$。那么随机选一个戴太阳镜的人，他同时戴帽子的概率是多少？
+
+        (A) $\frac{14}{50}$ &emsp; (B) $\frac{7}{25}$ &emsp; (C) $\frac{2}{5}$ &emsp; (D) $\frac{4}{7}$ &emsp; (E) $\frac{7}{10}$
+      questionEn: |
+        At a gathering, 50 people wear sunglasses and 35 wear caps. A cap-wearer chosen at random has a $\frac{2}{5}$ probability of also wearing sunglasses. What is the probability that a randomly chosen sunglasses-wearer also wears a cap?
+
+        (A) $\frac{14}{50}$ &emsp; (B) $\frac{7}{25}$ &emsp; (C) $\frac{2}{5}$ &emsp; (D) $\frac{4}{7}$ &emsp; (E) $\frac{7}{10}$
+      choices:
+        - label: A
+          content: '$\frac{14}{50}$'
+        - label: B
+          content: '$\frac{7}{25}$'
+        - label: C
+          content: '$\frac{2}{5}$'
+        - label: D
+          content: '$\frac{4}{7}$'
+        - label: E
+          content: '$\frac{7}{10}$'
+      correctValue: B
+      answer: '(B) $\frac{7}{25}$'
+      answerEn: '(B) $\frac{7}{25}$'
+      explanation: |
+        戴帽子的 35 人中，有 $\frac{2}{5}$ 同时戴太阳镜：$35 \times \frac{2}{5} = 14$ 人同时戴两样。
+        戴太阳镜的 50 人中，同时戴帽子的是 14 人。
+        $P(\text{帽子} \mid \text{太阳镜}) = \frac{14}{50} = \frac{7}{25}$。
+      explanationEn: |
+        Of 35 cap-wearers, $\frac{2}{5}$ also wear sunglasses: $35\times\frac{2}{5}=14$ wear both.
+        Of 50 sunglasses-wearers, 14 also wear caps.
+        $P(\text{cap}\mid\text{sunglasses}) = \frac{14}{50} = \frac{7}{25}$.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #6"
+      section: 计数与概率
+      question: |
+        在一个 $9 \times 9$ 的方格网中共有 81 个格点。$P$ 是正中心的格点。从其余 80 个格点中随机选一个点 $Q$，使得直线 $PQ$ 是正方形的对称轴的概率是多少？
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{3}{10}$ &emsp; (D) $\frac{1}{4}$ &emsp; (E) $\frac{9}{20}$
+      questionEn: |
+        There are 81 grid points in a $9 \times 9$ grid. $P$ is the center point. A second point $Q$ is chosen at random from the remaining 80 points. What is the probability that line $PQ$ is a line of symmetry of the square?
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{3}{10}$ &emsp; (D) $\frac{1}{4}$ &emsp; (E) $\frac{9}{20}$
+      choices:
+        - label: A
+          content: '$\frac{1}{5}$'
+        - label: B
+          content: '$\frac{2}{5}$'
+        - label: C
+          content: '$\frac{3}{10}$'
+        - label: D
+          content: '$\frac{1}{4}$'
+        - label: E
+          content: '$\frac{9}{20}$'
+      correctValue: B
+      answer: '(B) $\frac{2}{5}$'
+      answerEn: '(B) $\frac{2}{5}$'
+      explanation: |
+        正方形有 4 条对称轴：水平中线、垂直中线、两条对角线。每条对称轴经过中心 $P$。
+        水平中线上有 9 个点（不含 $P$ 有 8 个）。
+        垂直中线上有 9 个点（不含 $P$ 有 8 个）。
+        两条对角线上各有 9 个点（不含 $P$ 各有 8 个）。
+        总共 $8 \times 4 = 32$ 个有利点。
+        $P = \frac{32}{80} = \frac{2}{5}$。
+      explanationEn: |
+        A square has 4 lines of symmetry: horizontal, vertical, and 2 diagonals. All pass through center $P$.
+        Each line has 9 grid points (8 besides $P$).
+        Total favorable: $8\times4 = 32$.
+        $P = \frac{32}{80} = \frac{2}{5}$.
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 计数与概率
+      question: |
+        从 $\{1, 2, 3, 4, 5\}$ 中不放回地随机抽两个数，它们的和大于或等于 $6$ 的概率是多少？
+
+        (A) $\frac{2}{5}$ &emsp; (B) $\frac{1}{2}$ &emsp; (C) $\frac{3}{5}$ &emsp; (D) $\frac{7}{10}$ &emsp; (E) $\frac{4}{5}$
+      questionEn: |
+        Two numbers are drawn without replacement from $\{1,2,3,4,5\}$. What is the probability their sum is at least $6$?
+
+        (A) $\frac{2}{5}$ &emsp; (B) $\frac{1}{2}$ &emsp; (C) $\frac{3}{5}$ &emsp; (D) $\frac{7}{10}$ &emsp; (E) $\frac{4}{5}$
+      choices:
+        - label: A
+          content: '$\frac{2}{5}$'
+        - label: B
+          content: '$\frac{1}{2}$'
+        - label: C
+          content: '$\frac{3}{5}$'
+        - label: D
+          content: '$\frac{7}{10}$'
+        - label: E
+          content: '$\frac{4}{5}$'
+      correctValue: C
+      answer: '(C) $\frac{3}{5}$'
+      answerEn: '(C) $\frac{3}{5}$'
+      explanation: |
+        总选法 $C(5, 2) = 10$。列出所有无序对及其和：
+        $\{1,2\}=3$, $\{1,3\}=4$, $\{1,4\}=5$, $\{1,5\}=6$, $\{2,3\}=5$,
+        $\{2,4\}=6$, $\{2,5\}=7$, $\{3,4\}=7$, $\{3,5\}=8$, $\{4,5\}=9$。
+        和 $\geq 6$ 的：$\{1,5\}, \{2,4\}, \{2,5\}, \{3,4\}, \{3,5\}, \{4,5\}$，共 6 个。
+        $P = \frac{6}{10} = \frac{3}{5}$。
+      explanationEn: |
+        Total: $C(5,2)=10$. List all unordered pairs and their sums:
+        $\{1,2\}=3$, $\{1,3\}=4$, $\{1,4\}=5$, $\{1,5\}=6$, $\{2,3\}=5$,
+        $\{2,4\}=6$, $\{2,5\}=7$, $\{3,4\}=7$, $\{3,5\}=8$, $\{4,5\}=9$.
+        Sum $\geq 6$: $\{1,5\},\{2,4\},\{2,5\},\{3,4\},\{3,5\},\{4,5\}$ — 6 pairs.
+        $P = \frac{6}{10} = \frac{3}{5}$.
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 独立事件与多步实验
+      question: |
+        一枚均匀硬币连续掷 3 次，至少出现一次正面的概率是多少？
+
+        (A) $\frac{1}{2}$ &emsp; (B) $\frac{3}{4}$ &emsp; (C) $\frac{5}{8}$ &emsp; (D) $\frac{7}{8}$ &emsp; (E) $\frac{15}{16}$
+      questionEn: |
+        A fair coin is flipped 3 times. What is the probability of getting at least one head?
+
+        (A) $\frac{1}{2}$ &emsp; (B) $\frac{3}{4}$ &emsp; (C) $\frac{5}{8}$ &emsp; (D) $\frac{7}{8}$ &emsp; (E) $\frac{15}{16}$
+      choices:
+        - label: A
+          content: '$\frac{1}{2}$'
+        - label: B
+          content: '$\frac{3}{4}$'
+        - label: C
+          content: '$\frac{5}{8}$'
+        - label: D
+          content: '$\frac{7}{8}$'
+        - label: E
+          content: '$\frac{15}{16}$'
+      correctValue: D
+      answer: '(D) $\frac{7}{8}$'
+      answerEn: '(D) $\frac{7}{8}$'
+      explanation: |
+        用补事件法：$P(\text{至少一次正面}) = 1 - P(\text{全是反面})$。
+        $P(\text{全是反面}) = \left(\frac{1}{2}\right)^{3} = \frac{1}{8}$。
+        $P(\text{至少一次正面}) = 1 - \frac{1}{8} = \frac{7}{8}$。
+
+        💡 **另一种方法——列出全部 8 种结果：**
+        3 次掷硬币共 $2^{3} = 8$ 种结果：HHH, HHT, HTH, HTT, THH, THT, TTH, TTT。
+        只有 TTT 没有正面，其余 7 种都"至少一次正面"。$P = \frac{7}{8}$。
+        只有 8 种结果，全列出来很快——比公式法更不容易出错！
+      explanationEn: |
+        Complementary counting: $P(\text{at least one head}) = 1 - P(\text{all tails})$.
+        $P(\text{all tails}) = \left(\frac{1}{2}\right)^{3} = \frac{1}{8}$.
+        $P(\text{at least one head}) = 1 - \frac{1}{8} = \frac{7}{8}$.
+
+        💡 **Alternative — List All 8 Outcomes:**
+        3 coin flips give $2^{3}=8$ outcomes: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT.
+        Only TTT has no heads; the other 7 have "at least one head." $P = \frac{7}{8}$.
+        With only 8 outcomes, listing all is quick and less error-prone than formulas!
+
+    - number: 8
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 独立事件与多步实验
+      question: |
+        掷两枚标准骰子。两枚骰子的点数之积为奇数的概率是多少？
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{1}{2}$ &emsp; (E) $\frac{2}{3}$
+      questionEn: |
+        Two standard dice are rolled. What is the probability that the product of the two numbers is odd?
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{1}{2}$ &emsp; (E) $\frac{2}{3}$
+      choices:
+        - label: A
+          content: '$\frac{1}{6}$'
+        - label: B
+          content: '$\frac{1}{4}$'
+        - label: C
+          content: '$\frac{1}{3}$'
+        - label: D
+          content: '$\frac{1}{2}$'
+        - label: E
+          content: '$\frac{2}{3}$'
+      correctValue: B
+      answer: '(B) $\frac{1}{4}$'
+      answerEn: '(B) $\frac{1}{4}$'
+      explanation: |
+        积为奇数 = 两枚都是奇数（只要有一枚偶数，积就是偶数）。
+        每枚骰子奇数面：$\{1, 3, 5\}$，$P(\text{奇数}) = \frac{3}{6} = \frac{1}{2}$。
+        两枚独立，$P(\text{都是奇数}) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$。
+      explanationEn: |
+        Product is odd = both dice are odd (any even factor makes the product even).
+        Each die: odd faces $\{1,3,5\}$, $P(\text{odd})=\frac{1}{2}$.
+        Independent: $P(\text{both odd}) = \frac{1}{2}\times\frac{1}{2} = \frac{1}{4}$.
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 独立事件与多步实验
+      question: |
+        袋中有 4 个白球和 2 个黑球。不放回地连续摸 2 个球，两个都是白球的概率是多少？
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{4}{15}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{4}{9}$
+      questionEn: |
+        A bag has 4 white and 2 black balls. Two balls are drawn without replacement. What is the probability that both are white?
+
+        (A) $\frac{1}{5}$ &emsp; (B) $\frac{4}{15}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{4}{9}$
+      choices:
+        - label: A
+          content: '$\frac{1}{5}$'
+        - label: B
+          content: '$\frac{4}{15}$'
+        - label: C
+          content: '$\frac{1}{3}$'
+        - label: D
+          content: '$\frac{2}{5}$'
+        - label: E
+          content: '$\frac{4}{9}$'
+      correctValue: D
+      answer: '(D) $\frac{2}{5}$'
+      answerEn: '(D) $\frac{2}{5}$'
+      explanation: |
+        不放回抽取，第二次的样本空间改变了。
+        $P(\text{第 1 个白}) = \frac{4}{6} = \frac{2}{3}$。
+        $P(\text{第 2 个白} \mid \text{第 1 个白}) = \frac{3}{5}$（还剩 3 白 + 2 黑 = 5 球）。
+        $P(\text{两个都白}) = \frac{2}{3} \times \frac{3}{5} = \frac{6}{15} = \frac{2}{5}$。
+
+        也可用组合法：$\frac{C(4,2)}{C(6,2)} = \frac{6}{15} = \frac{2}{5}$。
+      explanationEn: |
+        Without replacement, the sample space changes at step 2.
+        $P(\text{1st white}) = \frac{4}{6}=\frac{2}{3}$.
+        $P(\text{2nd white}\mid\text{1st white}) = \frac{3}{5}$ (3 white + 2 black = 5 remaining).
+        $P(\text{both white}) = \frac{2}{3}\times\frac{3}{5} = \frac{2}{5}$.
+
+        Alternatively: $\frac{C(4,2)}{C(6,2)} = \frac{6}{15} = \frac{2}{5}$.
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #25"
+      section: 综合应用
+      question: |
+        四片睡莲叶排成一圈。一只蟋蟀从一片叶子出发，每次随机跳到其他 3 片叶子中的任意一片（等概率）。跳了 4 次后，蟋蟀回到出发叶子的概率是多少？
+
+        (A) $\frac{2}{9}$ &emsp; (B) $\frac{20}{81}$ &emsp; (C) $\frac{7}{27}$ &emsp; (D) $\frac{25}{81}$ &emsp; (E) $\frac{1}{3}$
+      questionEn: |
+        Four lily pads are arranged in a circle. A cricket starts on one pad and, at each hop, jumps to one of the other 3 pads at random (equally likely). What is the probability the cricket returns to its starting pad after exactly 4 hops?
+
+        (A) $\frac{2}{9}$ &emsp; (B) $\frac{20}{81}$ &emsp; (C) $\frac{7}{27}$ &emsp; (D) $\frac{25}{81}$ &emsp; (E) $\frac{1}{3}$
+      choices:
+        - label: A
+          content: '$\frac{2}{9}$'
+        - label: B
+          content: '$\frac{20}{81}$'
+        - label: C
+          content: '$\frac{7}{27}$'
+        - label: D
+          content: '$\frac{25}{81}$'
+        - label: E
+          content: '$\frac{1}{3}$'
+      correctValue: C
+      answer: '(C) $\frac{7}{27}$'
+      answerEn: '(C) $\frac{7}{27}$'
+      explanation: |
+        设 $f(n, k)$ 为跳 $n$ 次后在第 $k$ 片叶子上的路径数（起点为叶子 1）。
+        $f(0, 1) = 1$，$f(0, 2) = f(0, 3) = f(0, 4) = 0$。
+
+        每次可以跳到其他 3 片中的任意一片：
+        $f(1, 1) = 0$，$f(1, 2) = f(1, 3) = f(1, 4) = 1$。
+        $f(2, 1) = f(1,2)+f(1,3)+f(1,4) = 3$，$f(2, 2) = f(1,1)+f(1,3)+f(1,4) = 2$，同理 $f(2,3)=f(2,4)=2$。
+        $f(3, 1) = 2+2+2 = 6$，$f(3, 2) = 3+2+2 = 7$，$f(3,3)=f(3,4)=7$。
+        $f(4, 1) = 7+7+7 = 21$。
+
+        总路径数 $= 3^{4} = 81$。$P = \frac{21}{81} = \frac{7}{27}$。
+      explanationEn: |
+        Let $f(n,k)$ be the number of paths reaching pad $k$ after $n$ hops (starting at pad 1).
+        $f(0,1)=1$, $f(0,2)=f(0,3)=f(0,4)=0$.
+
+        At each hop, the cricket jumps to one of the other 3 pads:
+        $f(1,1)=0$, $f(1,2)=f(1,3)=f(1,4)=1$.
+        $f(2,1)=1+1+1=3$, $f(2,2)=0+1+1=2$, similarly $f(2,3)=f(2,4)=2$.
+        $f(3,1)=2+2+2=6$, $f(3,2)=3+2+2=7$, $f(3,3)=f(3,4)=7$.
+        $f(4,1)=7+7+7=21$.
+
+        Total paths $=3^{4}=81$. $P=\frac{21}{81}=\frac{7}{27}$.
+
+    - number: 11
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 综合应用
+      question: |
+        从 $1$ 到 $20$ 的整数中随机选一个数。这个数既不是 $2$ 的倍数也不是 $3$ 的倍数的概率是多少？
+
+        (A) $\frac{1}{4}$ &emsp; (B) $\frac{3}{10}$ &emsp; (C) $\frac{7}{20}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{9}{20}$
+      questionEn: |
+        A number is chosen at random from $1$ to $20$. What is the probability that it is a multiple of neither $2$ nor $3$?
+
+        (A) $\frac{1}{4}$ &emsp; (B) $\frac{3}{10}$ &emsp; (C) $\frac{7}{20}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{9}{20}$
+      choices:
+        - label: A
+          content: '$\frac{1}{4}$'
+        - label: B
+          content: '$\frac{3}{10}$'
+        - label: C
+          content: '$\frac{7}{20}$'
+        - label: D
+          content: '$\frac{2}{5}$'
+        - label: E
+          content: '$\frac{9}{20}$'
+      correctValue: C
+      answer: '(C) $\frac{7}{20}$'
+      answerEn: '(C) $\frac{7}{20}$'
+      explanation: |
+        用补事件法（容斥原理）：
+        $2$ 的倍数：$2, 4, 6, \ldots, 20$，共 10 个。
+        $3$ 的倍数：$3, 6, 9, 12, 15, 18$，共 6 个。
+        $6$ 的倍数（既是 $2$ 又是 $3$ 的倍数）：$6, 12, 18$，共 3 个。
+        是 $2$ 或 $3$ 的倍数：$10 + 6 - 3 = 13$ 个。
+        既不是 $2$ 也不是 $3$ 的倍数：$20 - 13 = 7$ 个。
+        $P = \frac{7}{20}$。
+      explanationEn: |
+        Complementary counting (inclusion-exclusion):
+        Multiples of 2: $2,4,6,\ldots,20$ — 10 numbers.
+        Multiples of 3: $3,6,9,12,15,18$ — 6 numbers.
+        Multiples of 6 (both 2 and 3): $6,12,18$ — 3 numbers.
+        Multiple of 2 or 3: $10+6-3=13$.
+        Neither: $20-13=7$.
+        $P = \frac{7}{20}$.
+
+    - number: 12
+      type: 单选题
+      inputType: mc
+      source: 教学原创题
+      section: 综合应用
+      question: |
+        从 $10$ 到 $99$ 的所有两位正整数中随机选一个。这个数是奇数**且**两个数字不同的概率是多少？
+
+        (A) $\frac{4}{9}$ &emsp; (B) $\frac{40}{90}$ &emsp; (C) $\frac{41}{90}$ &emsp; (D) $\frac{1}{2}$ &emsp; (E) $\frac{5}{9}$
+      questionEn: |
+        A two-digit positive integer from $10$ to $99$ is chosen at random. What is the probability that it is odd AND has two distinct digits?
+
+        (A) $\frac{4}{9}$ &emsp; (B) $\frac{40}{90}$ &emsp; (C) $\frac{41}{90}$ &emsp; (D) $\frac{1}{2}$ &emsp; (E) $\frac{5}{9}$
+      choices:
+        - label: A
+          content: '$\frac{4}{9}$'
+        - label: B
+          content: '$\frac{40}{90}$'
+        - label: C
+          content: '$\frac{41}{90}$'
+        - label: D
+          content: '$\frac{1}{2}$'
+        - label: E
+          content: '$\frac{5}{9}$'
+      correctValue: A
+      answer: '(A) $\frac{4}{9}$'
+      answerEn: '(A) $\frac{4}{9}$'
+      explanation: |
+        两位正整数共 $90$ 个（$10$ 到 $99$）。
+        两位正奇数且两个数字不同：个位从 $\{1, 3, 5, 7, 9\}$ 选（5 种），十位从 $\{1, \ldots, 9\}$ 中选且不等于个位（8 种）。共 $5 \times 8 = 40$ 个。
+        $P = \frac{40}{90} = \frac{4}{9}$。
+        注意 (A) 和 (B) 数值相同，但 (A) 是最简分数。
+      explanationEn: |
+        Total two-digit integers: $90$ ($10$ through $99$).
+        Odd with distinct digits: units digit from $\{1,3,5,7,9\}$ (5 choices), tens digit from $\{1,...,9\}$ excluding the units digit (8 choices). Total $= 5\times8 = 40$.
+        $P = \frac{40}{90} = \frac{4}{9}$.
+
+summary:
+  - '<<概率/probability>>的基本公式：$P(A) = \frac{\text{有利结果数}}{\text{总结果数}}$，前提是所有结果等可能'
+  - '<<补事件/complement>>法是最强大的概率技巧：$P(\overline{A}) = 1 - P(A)$，特别适合"至少一个"类型的问题'
+  - '求概率的核心是计数——用列举法、树状图或组合数数清分子和分母'
+  - '<<独立事件/independent events>>用乘法：$P(A \text{ 且 } B) = P(A) \times P(B)$；不放回抽取不是独立事件'
+  - '<<条件概率/conditional probability>>：前一步的结果改变后一步的样本空间，用树状图最清晰'
+  - 'AMC 8 概率题的解题策略：先确定样本空间 → 再数有利结果 → 检查是否等可能 → 考虑是否用补事件'
+summaryEn:
+  - 'Basic formula: $P(A) = \frac{\text{favorable}}{\text{total}}$, provided all outcomes are equally likely'
+  - 'The <<补事件/complement>> method is the most powerful trick: $P(\overline{A}) = 1 - P(A)$ — especially for "at least one" problems'
+  - 'The core of probability is counting — use listing, tree diagrams, or combinations to count numerator and denominator'
+  - '<<独立事件/independent events>> use multiplication: $P(A \text{ and } B) = P(A)\times P(B)$; drawing without replacement is NOT independent'
+  - '<<条件概率/conditional probability>>: the previous step changes the sample space — tree diagrams give the clearest picture'
+  - 'AMC 8 probability strategy: identify the sample space → count favorable outcomes → check equal likelihood → consider complementary counting'
+
+examPrep:
+  intro: 以下为 AMC 8 竞赛风格的综合概率题，难度高于练习题，考查概率方法的灵活运用和多步推理。
+  introEn: The following are AMC 8 contest-style probability problems at a higher difficulty level, testing flexible application of probability methods and multi-step reasoning.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #25"
+      section: 综合
+      question: |
+        四片睡莲叶排成一圈。一只蟋蟀从一片叶子出发，每次随机跳到其他 3 片叶子中的任意一片（等概率）。4 次跳跃后回到起始叶子的概率是多少？
+
+        (A) $\frac{2}{9}$ &emsp; (B) $\frac{20}{81}$ &emsp; (C) $\frac{7}{27}$ &emsp; (D) $\frac{25}{81}$ &emsp; (E) $\frac{1}{3}$
+      questionEn: |
+        Four lily pads form a circle. A cricket starts on one pad and hops to one of the other 3 pads at random, equally likely. What is the probability it returns to the starting pad after 4 hops?
+
+        (A) $\frac{2}{9}$ &emsp; (B) $\frac{20}{81}$ &emsp; (C) $\frac{7}{27}$ &emsp; (D) $\frac{25}{81}$ &emsp; (E) $\frac{1}{3}$
+      choices:
+        - label: A
+          content: '$\frac{2}{9}$'
+        - label: B
+          content: '$\frac{20}{81}$'
+        - label: C
+          content: '$\frac{7}{27}$'
+        - label: D
+          content: '$\frac{25}{81}$'
+        - label: E
+          content: '$\frac{1}{3}$'
+      correctValue: C
+      answer: '(C) $\frac{7}{27}$'
+      answerEn: '(C) $\frac{7}{27}$'
+      explanation: |
+        用递推法。设 $f(n, k)$ 为跳 $n$ 次后在叶子 $k$ 的路径数（从叶子 1 出发）。
+        由对称性，非起点的三片叶子路径数相同。
+        $f(0, 1)=1$，其余 $=0$。
+        $f(1, 1)=0$，其余各 $=1$。
+        $f(2, 1)=3$，其余各 $=2$。
+        $f(3, 1)=6$，其余各 $=7$。
+        $f(4, 1)=7+7+7=21$。
+        总路径 $=3^{4}=81$。$P=\frac{21}{81}=\frac{7}{27}$。
+      explanationEn: |
+        Use recursion. Let $f(n,k)$ = paths to pad $k$ after $n$ hops (starting at pad 1).
+        By symmetry, the three non-start pads always have equal counts.
+        $f(0,1)=1$, others $=0$. $f(1,1)=0$, others $=1$. $f(2,1)=3$, others $=2$.
+        $f(3,1)=6$, others $=7$. $f(4,1)=7+7+7=21$.
+        Total $=3^{4}=81$. $P=\frac{21}{81}=\frac{7}{27}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #21"
+      section: 综合
+      question: |
+        帽子里有 3 个红色筹码和 2 个绿色筹码。每次随机抽出一个（不放回），直到 3 个红色筹码全部被抽出 或 2 个绿色筹码全部被抽出。3 个红色筹码先全部被抽出的概率是多少？
+
+        (A) $\frac{3}{10}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{1}{2}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{7}{10}$
+      questionEn: |
+        A hat contains 3 red chips and 2 green chips. Chips are drawn one at a time without replacement until all 3 reds or both greens are drawn. What is the probability that all 3 red chips are drawn (before both greens)?
+
+        (A) $\frac{3}{10}$ &emsp; (B) $\frac{2}{5}$ &emsp; (C) $\frac{1}{2}$ &emsp; (D) $\frac{3}{5}$ &emsp; (E) $\frac{7}{10}$
+      choices:
+        - label: A
+          content: '$\frac{3}{10}$'
+        - label: B
+          content: '$\frac{2}{5}$'
+        - label: C
+          content: '$\frac{1}{2}$'
+        - label: D
+          content: '$\frac{3}{5}$'
+        - label: E
+          content: '$\frac{7}{10}$'
+      correctValue: B
+      answer: '(B) $\frac{2}{5}$'
+      answerEn: '(B) $\frac{2}{5}$'
+      explanation: |
+        考虑 2 个绿色在 5 个位置中的放法，共 $C(5,2)=10$ 种。
+        红色先完 = 第 3 个红色出现在第 2 个绿色之前。
+        逐一列举：绿色在 $\{1,5\}$、$\{2,5\}$、$\{3,5\}$、$\{4,5\}$ 时，红色先完成。共 4 种。
+        $P = \frac{4}{10} = \frac{2}{5}$。
+      explanationEn: |
+        Consider the $C(5,2)=10$ ways to place 2 greens among 5 positions.
+        Reds win = 3rd red drawn before 2nd green.
+        Greens at $\{1,5\}$, $\{2,5\}$, $\{3,5\}$, $\{4,5\}$: reds finish first. 4 arrangements.
+        $P=\frac{4}{10}=\frac{2}{5}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2019 #15"
+      section: 综合
+      question: |
+        一个活动中有 50 人戴太阳镜，35 人戴帽子。随机选一个戴帽子的人，他同时戴太阳镜的概率为 $\frac{2}{5}$。那么随机选一个戴太阳镜的人，他同时戴帽子的概率是多少？
+
+        (A) $\frac{14}{50}$ &emsp; (B) $\frac{7}{25}$ &emsp; (C) $\frac{2}{5}$ &emsp; (D) $\frac{4}{7}$ &emsp; (E) $\frac{7}{10}$
+      questionEn: |
+        At an event, 50 people wear sunglasses and 35 wear caps. A randomly chosen cap-wearer has a $\frac{2}{5}$ probability of also wearing sunglasses. What is the probability that a randomly chosen sunglasses-wearer also wears a cap?
+
+        (A) $\frac{14}{50}$ &emsp; (B) $\frac{7}{25}$ &emsp; (C) $\frac{2}{5}$ &emsp; (D) $\frac{4}{7}$ &emsp; (E) $\frac{7}{10}$
+      choices:
+        - label: A
+          content: '$\frac{14}{50}$'
+        - label: B
+          content: '$\frac{7}{25}$'
+        - label: C
+          content: '$\frac{2}{5}$'
+        - label: D
+          content: '$\frac{4}{7}$'
+        - label: E
+          content: '$\frac{7}{10}$'
+      correctValue: B
+      answer: '(B) $\frac{7}{25}$'
+      answerEn: '(B) $\frac{7}{25}$'
+      explanation: |
+        同时戴两样的人数 $= 35 \times \frac{2}{5} = 14$。
+        随机选一个戴太阳镜的人（50 人中选），同时戴帽子的概率 $= \frac{14}{50} = \frac{7}{25}$。
+      explanationEn: |
+        People wearing both $= 35\times\frac{2}{5} = 14$.
+        $P(\text{cap}\mid\text{sunglasses}) = \frac{14}{50} = \frac{7}{25}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        有 6 个人站成一排拍照。其中小明和小红是好朋友，他们想站在相邻位置。所有排列等可能，小明和小红恰好相邻的概率是多少？
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{1}{2}$
+      questionEn: |
+        Six people line up for a photo. Two of them, Xiao Ming and Xiao Hong, want to stand next to each other. If all arrangements are equally likely, what is the probability that they are adjacent?
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{5}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{2}{5}$ &emsp; (E) $\frac{1}{2}$
+      choices:
+        - label: A
+          content: '$\frac{1}{6}$'
+        - label: B
+          content: '$\frac{1}{5}$'
+        - label: C
+          content: '$\frac{1}{3}$'
+        - label: D
+          content: '$\frac{2}{5}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: C
+      answer: '(C) $\frac{1}{3}$'
+      answerEn: '(C) $\frac{1}{3}$'
+      explanation: |
+        总排列数 $= 6! = 720$。
+        把小明和小红"捆绑"成一个整体，连同其他 4 人共 5 个单元排列：$5! = 120$ 种。
+        捆绑内部小明和小红可以互换：$2! = 2$ 种。
+        相邻的排列数 $= 120 \times 2 = 240$。
+        $P = \frac{240}{720} = \frac{1}{3}$。
+      explanationEn: |
+        Total arrangements $= 6! = 720$.
+        Treat Xiao Ming and Xiao Hong as one unit: $5!= 120$ arrangements of 5 units.
+        They can swap within the unit: $2!=2$.
+        Adjacent arrangements $= 120\times2 = 240$.
+        $P = \frac{240}{720} = \frac{1}{3}$.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: 竞赛风格题
+      section: 综合
+      question: |
+        一个袋子里有 4 张卡片，分别标有 $1, 2, 3, 4$。随机不放回地抽两张卡片，第一张作十位数、第二张作个位数，组成一个两位数。这个两位数是 $3$ 的倍数的概率是多少？
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{5}{12}$ &emsp; (E) $\frac{1}{2}$
+      questionEn: |
+        A bag contains cards labeled $1, 2, 3, 4$. Two cards are drawn without replacement; the first is the tens digit and the second is the units digit, forming a two-digit number. What is the probability this number is a multiple of $3$?
+
+        (A) $\frac{1}{6}$ &emsp; (B) $\frac{1}{4}$ &emsp; (C) $\frac{1}{3}$ &emsp; (D) $\frac{5}{12}$ &emsp; (E) $\frac{1}{2}$
+      choices:
+        - label: A
+          content: '$\frac{1}{6}$'
+        - label: B
+          content: '$\frac{1}{4}$'
+        - label: C
+          content: '$\frac{1}{3}$'
+        - label: D
+          content: '$\frac{5}{12}$'
+        - label: E
+          content: '$\frac{1}{2}$'
+      correctValue: C
+      answer: '(C) $\frac{1}{3}$'
+      answerEn: '(C) $\frac{1}{3}$'
+      explanation: |
+        总共 $4 \times 3 = 12$ 种有序选法。
+        两位数是 $3$ 的倍数 ⟺ 两位数字之和是 $3$ 的倍数。
+        列出所有两位数字之和：
+        $(1,2)=3$ ✓，$(1,3)=4$，$(1,4)=5$，
+        $(2,1)=3$ ✓，$(2,3)=5$，$(2,4)=6$ ✓，
+        $(3,1)=4$，$(3,2)=5$，$(3,4)=7$，
+        $(4,1)=5$，$(4,2)=6$ ✓，$(4,3)=7$。
+        满足条件的有 4 种：$(1,2), (2,1), (2,4), (4,2)$。
+        $P = \frac{4}{12} = \frac{1}{3}$。
+      explanationEn: |
+        Total ordered pairs: $4\times3=12$.
+        Multiple of 3 ⟺ digit sum is a multiple of 3.
+        Check all pairs:
+        $(1,2)$: sum 3 ✓, $(2,1)$: sum 3 ✓, $(2,4)$: sum 6 ✓, $(4,2)$: sum 6 ✓.
+        All others have sums 4, 5, or 7.
+        Favorable: 4. $P = \frac{4}{12} = \frac{1}{3}$.

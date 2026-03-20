@@ -83,6 +83,34 @@ This material is for self-study, progressing from simple to complex — not aime
 - 在 `GeometryDiagrams.tsx` 的 `diagramMap` 中注册 concept ID 对应的 SVG 组件
 - LessonView 中通过 `hasGeometryDiagram(concept.id)` 自动渲染
 - 配色约定：紫色 `#8B5CF6` 为主线条，粉色 `#EC4899` 为标注点，灰色 `#6B7280` 为文字
+- **图形准确性规范（极其重要）**：
+  - SVG 配图中的顶点标签（A, B, C, O 等）**必须**与 YAML 文字描述中的名称**严格一致**
+  - 声称全等的两个三角形，SVG 坐标必须保证对应边长度相等（可用旋转矩阵生成）
+  - 声称相似的图形，SVG 坐标必须保证对应边成比例
+  - 声称平行/垂直的线段，SVG 坐标必须保证方向向量点积为零（垂直）或平行（同一斜率）
+  - 声称旋转的图形，必须用精确的三角函数计算旋转后坐标，不能目测手放
+  - 角弧线方向：SVG arc 的 sweep-flag 在 y 轴向下的坐标系中，顶部角用 `0`（逆时针），底部角用 `1`（顺时针）
+  - **新增 SVG 前必须验证**：计算各顶点间距离、角度，确保与声称的几何性质一致
+
+## AMC 8 扩展章节规范 / AMC 8 Extension Chapter Guidelines
+- 项目包含 7 个 AMC 8 扩展章节，分布在七年级和八年级各学期
+- AMC 8 章节名称以 `🏆 AMC 8 扩展：` 开头，文件名以 `amc8-` 开头
+- **题目真实性要求**（极其重要）：
+  - 所有标注 `source: "AMC 8 YYYY #N"` 的题目**必须**是从 AoPS Wiki 抓取的真题
+  - **绝对禁止**自行编写题目后虚假标注 AMC 8 来源
+  - 原创教学题应标注为 `source: "原创练习"` 或 `source: "Original"`
+- 题目来源年份：2016–2024 年 AMC 8 真题（从 artofproblemsolving.com/wiki 抓取）
+- AMC 8 章节覆盖人教版与 AMC 8 的差异领域：
+
+| 位置 | 章节 | 填补的差异 |
+|------|------|-----------|
+| 七上 | 数论基础 | 整除判断、质因数分解、GCD/LCM |
+| 七下 | 计数与组合基础 | 排列组合、补集计数（人教版未覆盖） |
+| 七下 | 应用题建模 | 行程/工程/浓度、代数建模 |
+| 八上 | 三角形面积与海伦公式 | 海伦公式（人教版未覆盖） |
+| 八上 | 几何进阶 | 复合图形、坐标几何、几何变换 |
+| 八上 | 逻辑与策略 | 抽屉原理、奇偶分析、不变量（人教版未覆盖） |
+| 八下 | 概率入门 | 基础概率（人教版九年级才教，提前至八下） |
 
 ## 章末提升题规范 / Challenge Section Guidelines
 - 标签名为"章末提升"（英文 "Challenge"），**不要**称为"中考强化"或"中考模拟"
@@ -117,7 +145,7 @@ This material is for self-study, progressing from simple to complex — not aime
 
 ## 内容结构约定 / Content Structure
 - 课程层级：学科 > 年级 > 学期 > 章节 > 知识点
-- 每个章节的学习内容存放在 `website/src/data/math/grade7/` 下的 YAML 文件中
+- 每个章节的学习内容存放在 `website/src/data/math/grade{7,8,9}/` 下的 YAML 文件中
 - 菜单结构由 `curriculum.yaml` 定义
 - 每个知识点的 YAML 结构应包含（均需中英双语）：
   - `title` / `titleEn`: 标题

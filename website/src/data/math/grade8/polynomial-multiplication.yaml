@@ -216,6 +216,8 @@ concepts:
   - id: poly-poly-multiplication
     title: 多项式乘以多项式（FOIL 方法）
     titleEn: Polynomial Times Polynomial (FOIL Method)
+    handsOn: '🏠 动手试试：用彩色纸剪出长方形，长标记为 $(a+b)$，宽标记为 $(c+d)$。然后沿着标记把长方形分成 4 小块——每块面积分别是 $ac$、$ad$、$bc$、$bd$。这就是多项式乘法的面积模型！'
+    handsOnEn: '🏠 Try this: cut a rectangle from colored paper, label the length $(a+b)$ and width $(c+d)$. Then divide it into 4 pieces — their areas are $ac$, $ad$, $bc$, $bd$. This is the area model for polynomial multiplication!'
     hasVisualization: false
     content: |
       **法则：** 多项式与多项式相乘，要用第一个多项式的**每一项**分别乘以第二个多项式的**每一项**，再把所有的积加起来，最后合并同类项。

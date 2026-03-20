@@ -173,6 +173,36 @@ subjects:
                 topics:
                   - 统计调查
                   - 直方图
+              - id: amc8-counting-combinatorics
+                number: 13
+                name: "🏆 AMC 8 扩展：计数与组合基础"
+                nameEn: "🏆 AMC 8 Extension: Counting & Combinatorics"
+                hasContent: true
+                topics:
+                  - 加法原理与乘法原理
+                  - 排列与组合（阶乘、P(n,r)、C(n,r)）
+                  - 补集计数法
+                  - 分类讨论法
+                topicsEn:
+                  - Addition and multiplication principles
+                  - Permutations and combinations (factorials, P(n,r), C(n,r))
+                  - Complementary counting
+                  - Systematic casework
+              - id: amc8-word-problems
+                number: 14
+                name: "🏆 AMC 8 扩展：应用题建模"
+                nameEn: "🏆 AMC 8 Extension: Word Problem Modeling"
+                hasContent: true
+                topics:
+                  - 行程问题（速度、距离、时间）
+                  - 工程问题（合作效率）
+                  - 比例与百分数（连续变化、混合问题）
+                  - 代数建模策略（逆推、估算验证）
+                topicsEn:
+                  - Rate-distance-time problems
+                  - Work rate problems
+                  - Ratio, proportion and percent
+                  - Algebraic modeling strategies
 
       - id: grade8
         name: 八年级
@@ -296,6 +326,49 @@ subjects:
                   - Multiplication and division of algebraic fractions
                   - Addition and subtraction of algebraic fractions
                   - Fractional equations
+              - id: amc8-triangle-area
+                number: 7
+                name: "🏆 AMC 8 扩展：三角形面积与海伦公式"
+                nameEn: "🏆 AMC 8 Extension: Triangle Area & Heron's Formula"
+                hasContent: true
+                topics:
+                  - 三角形面积公式汇总（底×高、坐标法、鞋带公式）
+                  - 海伦公式及其应用
+                  - 四边形面积的三角形分解法
+                topicsEn:
+                  - Triangle area formula toolkit (base×height, coordinates, Shoelace)
+                  - "Heron's formula and applications"
+                  - Quadrilateral area via triangle decomposition
+              - id: amc8-advanced-geometry
+                number: 8
+                name: "🏆 AMC 8 扩展：几何进阶"
+                nameEn: "🏆 AMC 8 Extension: Advanced Geometry"
+                hasContent: true
+                topics:
+                  - 复合图形面积（加法法与减法法）
+                  - 坐标几何技巧（距离、中点、鞋带公式）
+                  - 几何变换（平移、旋转、对称）
+                  - 圆与扇形面积应用
+                topicsEn:
+                  - Composite figure area (addition and subtraction methods)
+                  - Coordinate geometry techniques (distance, midpoint, Shoelace)
+                  - Geometric transformations (translation, rotation, reflection)
+                  - Circle and sector area applications
+              - id: amc8-logic-strategy
+                number: 9
+                name: "🏆 AMC 8 扩展：逻辑与策略"
+                nameEn: "🏆 AMC 8 Extension: Logic & Strategy"
+                hasContent: true
+                topics:
+                  - 抽屉原理（基本形式与推广形式）
+                  - 奇偶分析
+                  - 不变量
+                  - 逆推与排除法
+                topicsEn:
+                  - Pigeonhole principle (basic and generalized)
+                  - Parity analysis
+                  - Invariants
+                  - Working backwards and process of elimination
           - id: semester2
             name: 下学期
             nameEn: Semester 2
@@ -373,6 +446,38 @@ subjects:
                   - Median and mode
                   - Variance and standard deviation
                   - Comprehensive data analysis and evaluation
+              - id: amc8-probability-intro
+                number: 11
+                name: "🏆 AMC 8 扩展：概率入门"
+                nameEn: "🏆 AMC 8 Extension: Introduction to Probability"
+                hasContent: true
+                topics:
+                  - 基础概率（等可能事件、补集）
+                  - 用计数方法求概率（列举、树形图、组合数）
+                  - 独立事件与乘法原理
+                  - 条件概率初步（不放回抽样）
+                topicsEn:
+                  - Basic probability (equally likely events, complement)
+                  - Counting methods for probability (listing, tree diagrams, combinations)
+                  - Independent events and multiplication rule
+                  - Introduction to conditional probability (without replacement)
+              - id: triangle-classic-models
+                number: 12
+                name: "📐 几何专题：三角形经典模型"
+                nameEn: "📐 Geometry Special: Classic Triangle Models"
+                hasContent: true
+                topics:
+                  - 风筝模型（对角线互垂的推导）
+                  - 沙漏模型（相似三角形的识别）
+                  - 手拉手模型（旋转全等）
+                  - 半角模型
+                  - 一线三等角模型
+                topicsEn:
+                  - Kite model (perpendicular diagonal derivation)
+                  - Hourglass/bowtie model (similar triangle identification)
+                  - Hand-in-hand rotation model
+                  - Half-angle model
+                  - One-line-three-equal-angles model
 
       - id: grade9
         name: 九年级
@@ -460,6 +565,36 @@ subjects:
                   - Point symmetry and point-symmetric figures
                   - Constructing rotations
                   - Rotation combined with other transformations
+              - id: dynamic-point-problems
+                number: 5
+                name: "📐 几何专题：动点问题"
+                nameEn: "📐 Geometry Special: Dynamic Point Problems"
+                hasContent: true
+                topics:
+                  - 动点问题基础（三步分析法）
+                  - 面积随动点变化（函数建模）
+                  - 轨迹与路径分析
+                  - 分段讨论
+                topicsEn:
+                  - Dynamic point fundamentals (three-step method)
+                  - Area as a function of moving point
+                  - Path and trajectory analysis
+                  - Piecewise case analysis
+              - id: optimization-problems
+                number: 6
+                name: "📐 几何专题：最值问题"
+                nameEn: "📐 Geometry Special: Optimization & Min/Max"
+                hasContent: true
+                topics:
+                  - 将军饮马问题（对称反射法）
+                  - 三角形周长最值
+                  - 代数最值方法（配方法、均值不等式）
+                  - 几何代数结合求最值
+                topicsEn:
+                  - "General's drinking horse (reflection method)"
+                  - Triangle perimeter optimization
+                  - Algebraic methods (completing square, AM-GM)
+                  - Combined geometric-algebraic optimization
           - id: semester2
             name: 下学期
             nameEn: Semester 2

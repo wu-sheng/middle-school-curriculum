@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect } from "react";
 
 export type Lang = "zh" | "en" | "both";
 
@@ -19,10 +19,27 @@ const I18nContext = createContext<I18nContextType>({
 });
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>("both");
+  const [lang, setLangState] = useState<Lang>("both");
+
+  // Restore saved language on client mount (avoids SSR hydration mismatch)
+  useEffect(() => {
+    const saved = localStorage.getItem("xinbloom-lang");
+    if (saved === "zh" || saved === "en" || saved === "both") {
+      setLangState(saved);
+    }
+  }, []);
+
+  const setLang = useCallback((l: Lang) => {
+    setLangState(l);
+    localStorage.setItem("xinbloom-lang", l);
+  }, []);
 
   const toggleLang = useCallback(() => {
-    setLang((prev) => (prev === "both" ? "zh" : prev === "zh" ? "en" : "both"));
+    setLangState((prev) => {
+      const nextLang = prev === "both" ? "zh" : prev === "zh" ? "en" : "both";
+      localStorage.setItem("xinbloom-lang", nextLang);
+      return nextLang;
+    });
   }, []);
 
   const t = useCallback(

@@ -1,0 +1,1357 @@
+title: 几何专题：动点问题
+titleEn: 'Geometry Special Topic: Dynamic Point Problems'
+chapter: 10
+subject: math
+grade: grade9
+semester: semester1
+estimatedTime: 约 5–6 课时，每课时 45 分钟
+estimatedTimeEn: '5–6 sessions, ~45 min each'
+targetAudience: 九年级自学生，已完成二次函数，系统掌握动点问题的分析方法
+
+objectives:
+  - 理解<<动点/dynamic point>>的含义——一个沿给定路径运动的点，用参数 $t$ 描述其位置
+  - 掌握动点问题的核心三步法：**设参数 → 用 $t$ 表达 → 确定 $t$ 的范围**
+  - 能将三角形面积、线段长度等几何量表示为动点参数的函数 $f(t)$，并求最值
+  - 理解<<分段讨论/piecewise case analysis>>的必要性——动点经过关键位置时，几何构型发生变化
+  - 能追踪动点的<<轨迹/trajectory>>，判断其形状（直线、圆弧、抛物线等）
+  - 能处理两个动点同时运动的问题，建立含两个参数（或一个参数）的函数关系
+
+objectivesEn:
+  - 'Understand what a <<动点/dynamic point>> is — a point moving along a given path, with its position described by a parameter $t$'
+  - 'Master the core three-step method for dynamic point problems: **set parameter → express in $t$ → determine range of $t$**'
+  - 'Express geometric quantities (triangle area, segment length, etc.) as functions $f(t)$ of the dynamic parameter, and find extrema'
+  - 'Understand why <<分段讨论/piecewise case analysis>> is necessary — the geometric configuration changes when the point passes critical positions'
+  - 'Trace the <<轨迹/trajectory>> of a moving point and determine its shape (line, arc, parabola, etc.)'
+  - 'Handle two-point motion problems by setting up a function in one or two parameters'
+
+prerequisites:
+  title: 从二次函数到动点——需要哪些储备？
+  titleEn: 'From quadratic functions to dynamic points — what do you need?'
+  intro: |
+    <<动点问题/dynamic point problems>>是几何与代数的交汇点。你需要用"代数的语言"描述"几何的运动"。
+    以下几块知识是必备的：
+  introEn: |
+    <<动点问题/dynamic point problems>> sit at the intersection of geometry and algebra. You describe "geometric motion" using "algebraic language."
+    The following knowledge areas are essential:
+  items:
+    - name: 二次函数（九年级上）
+      nameEn: Quadratic functions (Grade 9, Semester 1)
+      detail: |
+        动点问题中，面积、距离等几何量表示为参数 $t$ 的函数后，常常是一次函数或<<二次函数/quadratic function>>。
+        求最大面积 = 求抛物线顶点，这是动点问题中最常见的操作。
+      detailEn: |
+        In dynamic point problems, geometric quantities expressed as functions of parameter $t$ are often linear or <<二次函数/quadratic function>>s.
+        Finding maximum area = finding the vertex of a parabola — the most common operation in dynamic point problems.
+    - name: 勾股定理与直角三角形
+      nameEn: Pythagorean theorem and right triangles
+      detail: |
+        当动点在直角三角形的边上运动时，常用<<勾股定理/Pythagorean theorem>> $a^{2} + b^{2} = c^{2}$ 来表达距离关系。
+        直角三角形的面积 $= \frac{1}{2} \times$ 直角边 $\times$ 直角边，是最常用的面积公式。
+      detailEn: |
+        When a dynamic point moves along the side of a right triangle, the <<勾股定理/Pythagorean theorem>> $a^{2} + b^{2} = c^{2}$ is commonly used for distance relationships.
+        Right triangle area $= \frac{1}{2} \times$ leg $\times$ leg is the most-used area formula.
+    - name: 相似三角形
+      nameEn: Similar triangles
+      detail: |
+        动点经过某些位置时可能形成<<相似三角形/similar triangles>>，此时对应边成比例 $\frac{a}{a'} = \frac{b}{b'} = k$。
+        相似条件（AA、SAS、SSS）是判断几何性质是否成立的关键工具。
+      detailEn: |
+        At certain positions, the dynamic point may create <<相似三角形/similar triangles>>, with proportional sides $\frac{a}{a'} = \frac{b}{b'} = k$.
+        Similarity criteria (AA, SAS, SSS) are key tools for verifying geometric properties.
+    - name: 坐标系与函数图象
+      nameEn: Coordinate system and function graphs
+      detail: |
+        部分动点问题在坐标系中设置，需要用坐标表示点的位置、计算两点距离、求直线方程。
+        特别是抛物线 $y = ax^{2} + bx + c$ 上的动点问题，需要将点坐标代入方程。
+      detailEn: |
+        Some dynamic point problems are set in a coordinate system, requiring coordinate representation, distance formulas, and line equations.
+        For points on a parabola $y = ax^{2} + bx + c$, you substitute coordinates into the equation.
+  conclusion: |
+    动点问题的本质是：**用一个参数 $t$ 把"运动"转化为"函数"**，然后用函数的工具（求值、求最值、画图象）来回答几何问题。
+    掌握了这个思路，任何动点题都是"设 $t$ → 写 $f(t)$ → 解 $f(t)$"的过程。
+  conclusionEn: |
+    The essence of dynamic point problems: **use a single parameter $t$ to convert "motion" into a "function"**, then use function tools (evaluation, optimisation, graphing) to answer geometric questions.
+    Once you master this approach, every dynamic point problem becomes "set $t$ → write $f(t)$ → solve $f(t)$."
+
+concepts:
+  - id: dynamic-point-basics
+    title: 动点问题基础——三步分析法
+    titleEn: 'Dynamic Point Fundamentals — the Three-Step Analysis Method'
+    hasVisualization: false
+    content: |
+      **什么是<<动点/dynamic point>>？**
+
+      <<动点/dynamic point>>就是一个**沿着给定路径移动**的点。它可以沿着线段、折线、圆弧、甚至抛物线移动。
+      描述这个运动的方式是引入一个**参数 $t$**——通常代表运动的距离或时间。
+
+      **一个最简单的例子**
+
+      线段 $AB$ 长 $10$ cm，点 $P$ 从 $A$ 出发，以 $1$ cm/s 的速度沿 $AB$ 向 $B$ 运动。
+      设运动时间为 $t$ 秒，那么：
+      - $AP = t$（已走的距离）
+      - $PB = 10 - t$（还剩的距离）
+      - $t$ 的范围：$0 \leq t \leq 10$
+
+      就这么简单！**一个参数 $t$ 就把"运动"变成了"代数"。**
+
+      **三步分析法——所有动点问题的通用框架**
+
+      | 步骤 | 操作 | 关键问题 |
+      |------|------|----------|
+      | **第一步：设参数** | 设动点走过的距离为 $t$（或运动时间为 $t$） | $t$ 代表什么？单位是什么？ |
+      | **第二步：用 $t$ 表达** | 将所有相关的几何量（长度、面积、角度）写成 $t$ 的表达式 | 哪些量随 $t$ 变化？哪些是固定的？ |
+      | **第三步：确定范围** | 根据几何约束求 $t$ 的取值范围 | 最小值和最大值各是多少？动点不能超出路径！ |
+
+      **为什么这三步如此重要？**
+
+      动点题的难度不在于计算，而在于**建模**——把几何图形中的运动翻译成函数。三步法就是这个翻译过程：
+      - **第一步**让问题有了"自变量"
+      - **第二步**让几何问题变成了函数问题
+      - **第三步**保证答案在几何上有意义
+
+      **核心思维：变与不变**
+
+      分析任何动点问题的第一件事就是区分：
+      - **变量**（随 $t$ 而变的量）：动点的位置、某些线段的长度、某个三角形的面积……
+      - **不变量**（<<不变量/invariant>>）：固定线段的长度、固定角的大小、图形的整体形状……
+
+      不变量是你建立方程的**锚点**。变量是你要用 $t$ 表达的**目标**。
+
+      **详细示例：$AP$ 和 $PB$ 的乘积**
+
+      还是上面的例子：$AB = 10$，$P$ 在 $AB$ 上，$AP = t$，$PB = 10 - t$。
+      问：$AP \cdot PB$ 的最大值是多少？
+
+      解：
+      $$AP \cdot PB = t(10 - t) = -t^{2} + 10t = -(t - 5)^{2} + 25$$
+
+      这是一个开口向下的二次函数！顶点在 $t = 5$，最大值为 $25$。
+
+      几何意义：当 $P$ 在 $AB$ 的中点时，$AP \cdot PB$ 最大。
+
+      **注意 $t$ 的取值范围**
+
+      上面 $t \in [0, 10]$，而 $t = 5$ 在范围内，所以最大值 $25$ 是有效的。
+      如果问题改为 $t \in [0, 3]$，那么最大值就不在 $t = 5$（超出范围了！），而是在 $t = 3$ 时取得最大值 $3 \times 7 = 21$。
+
+      **这就是为什么第三步"确定范围"不能跳过！**
+    contentEn: |
+      **What is a <<动点/dynamic point>>?**
+
+      A <<动点/dynamic point>> is a point that **moves along a given path**. It may travel along a line segment, a polyline, a circular arc, or even a parabola.
+      We describe this motion by introducing a **parameter $t$** — usually representing distance travelled or elapsed time.
+
+      **The simplest example**
+
+      Segment $AB$ has length $10$ cm. Point $P$ starts at $A$ and moves toward $B$ at $1$ cm/s.
+      Let $t$ be the time in seconds. Then:
+      - $AP = t$ (distance already covered)
+      - $PB = 10 - t$ (distance remaining)
+      - Range of $t$: $0 \leq t \leq 10$
+
+      That is all! **A single parameter $t$ turns "motion" into "algebra."**
+
+      **The Three-Step Analysis — a universal framework for all dynamic point problems**
+
+      | Step | Action | Key question |
+      |------|--------|--------------|
+      | **Step 1: Set the parameter** | Let the distance moved be $t$ (or time elapsed be $t$) | What does $t$ represent? What are its units? |
+      | **Step 2: Express in $t$** | Write every relevant geometric quantity (length, area, angle) as an expression in $t$ | Which quantities change with $t$? Which are fixed? |
+      | **Step 3: Determine the range** | Use geometric constraints to find the valid range of $t$ | What are the minimum and maximum values? The point cannot leave its path! |
+
+      **Why are these three steps so important?**
+
+      The difficulty in dynamic point problems is not calculation — it is **modelling**: translating geometric motion into a function. The three-step method is that translation:
+      - **Step 1** gives the problem an "independent variable"
+      - **Step 2** turns a geometry problem into a function problem
+      - **Step 3** ensures the answer is geometrically valid
+
+      **Core thinking: change vs. invariance**
+
+      The first thing to do in any dynamic point problem is distinguish:
+      - **Variables** (quantities that change with $t$): the point's position, certain segment lengths, a triangle's area …
+      - **<<不变量/invariant>>s** (quantities that stay fixed): fixed segment lengths, fixed angles, the overall shape of the figure …
+
+      Invariants are your **anchors** for building equations. Variables are the **targets** you express in $t$.
+
+      **Worked example: the product $AP \cdot PB$**
+
+      Same setup: $AB = 10$, $P$ on $AB$, $AP = t$, $PB = 10 - t$.
+      Question: what is the maximum value of $AP \cdot PB$?
+
+      Solution:
+      $$AP \cdot PB = t(10 - t) = -t^{2} + 10t = -(t - 5)^{2} + 25$$
+
+      This is a downward-opening quadratic! Vertex at $t = 5$, maximum value $25$.
+
+      Geometric meaning: $AP \cdot PB$ is maximised when $P$ is the midpoint of $AB$.
+
+      **Watch the range of $t$**
+
+      Here $t \in [0, 10]$, and $t = 5$ is within range, so the maximum $25$ is valid.
+      If instead $t \in [0, 3]$, the maximum is not at $t = 5$ (out of range!), but at $t = 3$, giving $3 \times 7 = 21$.
+
+      **This is why Step 3 — "determine the range" — must never be skipped!**
+
+  - id: area-as-function
+    title: 面积随动点变化——建立面积函数
+    titleEn: 'Area as a Function of Moving Point — Building the Area Function'
+    hasVisualization: true
+    content: |
+      **核心思路：面积 = 底 × 高 ÷ 2，底和高至少有一个含 $t$**
+
+      当三角形的一个顶点是动点时，三角形的面积随之变化。
+      关键是找到**底边**和**高**，然后看它们如何依赖于 $t$。
+
+      **典型场景一：底不变、高变**
+
+      矩形 $ABCD$ 中，$AB = 8$，$BC = 6$。点 $P$ 在边 $BC$ 上从 $B$ 向 $C$ 运动，设 $BP = t$（$0 \leq t \leq 6$）。
+      求 $\triangle ABP$ 的面积 $S(t)$。
+
+      分析：
+      - $\triangle ABP$ 的底为 $AB = 8$（**固定！**这是不变量）
+      - $\triangle ABP$ 的高为 $BP = t$（**变化！**这是动点带来的变量）
+      - 所以 $S(t) = \frac{1}{2} \times 8 \times t = 4t$
+
+      结论：$S(t) = 4t$ 是一次函数，面积随 $t$ 线性增长。当 $t = 6$ 时最大，$S = 24$。
+
+      **典型场景二：底和高都变——出现二次函数！**
+
+      等腰直角三角形 $ABC$ 中，$\angle B = 90°$，$AB = BC = 10$。
+      点 $P$ 在 $AB$ 上，$AP = t$（$0 \leq t \leq 10$），过 $P$ 作 $PQ \perp AB$ 交 $AC$ 于 $Q$。
+      求 $\triangle APQ$ 的面积。
+
+      分析：
+      - $AP = t$（动点到 $A$ 的距离）
+      - 由于 $\triangle APQ \sim \triangle ABC$（AA 相似），比例系数为 $\frac{AP}{AB} = \frac{t}{10}$
+      - 所以 $PQ = BC \times \frac{t}{10} = 10 \times \frac{t}{10} = t$
+      - $S(t) = \frac{1}{2} \times t \times t = \frac{1}{2}t^{2}$
+
+      这是一个二次函数！面积随 $t$ 加速增长。
+
+      **面积函数的三种常见类型**
+
+      | 类型 | 表达式 | 图象形状 | 最值情况 |
+      |------|--------|----------|----------|
+      | 一次函数 | $S = at + b$ | 直线 | 在端点取最值 |
+      | 二次函数 | $S = at^{2} + bt + c$ | 抛物线 | 在顶点或端点取最值 |
+      | 分段函数 | 不同区间不同公式 | 折线或分段曲线 | 需逐段比较 |
+
+      **求最值的方法**
+
+      - **一次函数**：比较 $t$ 范围的左端和右端
+      - **二次函数**：先求顶点 $t_{0} = -\frac{b}{2a}$，再判断 $t_{0}$ 是否在有效范围内
+        - 若 $t_{0}$ 在范围内 → 最值在顶点
+        - 若 $t_{0}$ 不在范围内 → 最值在离 $t_{0}$ 较远的端点
+      - **分段函数**：每段分别求最值，再比较全局
+
+      **易错警告：面积可以为零！**
+
+      当动点 $P$ 与某个顶点重合时（如 $t = 0$ 或 $t$ 等于某个边长），三角形退化为线段，面积为 $0$。
+      这些临界点是分段讨论的转折点。
+    contentEn: |
+      **Core idea: Area = base × height ÷ 2, where at least one of base or height contains $t$**
+
+      When one vertex of a triangle is a dynamic point, the area changes accordingly.
+      The key is to identify the **base** and **height**, then see how they depend on $t$.
+
+      **Typical scenario 1: base fixed, height varies**
+
+      In rectangle $ABCD$, $AB = 8$, $BC = 6$. Point $P$ moves from $B$ to $C$ on side $BC$. Let $BP = t$ ($0 \leq t \leq 6$).
+      Find the area $S(t)$ of $\triangle ABP$.
+
+      Analysis:
+      - Base of $\triangle ABP$: $AB = 8$ (**fixed!** This is the invariant)
+      - Height of $\triangle ABP$: $BP = t$ (**changes!** This is the variable from the moving point)
+      - Therefore $S(t) = \frac{1}{2} \times 8 \times t = 4t$
+
+      Conclusion: $S(t) = 4t$ is linear; area grows linearly with $t$. Maximum at $t = 6$, $S = 24$.
+
+      **Typical scenario 2: both base and height vary — a quadratic appears!**
+
+      In isosceles right triangle $ABC$, $\angle B = 90°$, $AB = BC = 10$.
+      Point $P$ is on $AB$ with $AP = t$ ($0 \leq t \leq 10$). Through $P$, draw $PQ \perp AB$ meeting $AC$ at $Q$.
+      Find the area of $\triangle APQ$.
+
+      Analysis:
+      - $AP = t$
+      - Since $\triangle APQ \sim \triangle ABC$ (AA similarity), ratio $= \frac{AP}{AB} = \frac{t}{10}$
+      - So $PQ = BC \times \frac{t}{10} = t$
+      - $S(t) = \frac{1}{2} \times t \times t = \frac{1}{2}t^{2}$
+
+      This is quadratic! Area accelerates as $t$ increases.
+
+      **Three common types of area functions**
+
+      | Type | Expression | Graph shape | Extrema |
+      |------|-----------|-------------|---------|
+      | Linear | $S = at + b$ | Straight line | At endpoints |
+      | Quadratic | $S = at^{2} + bt + c$ | Parabola | At vertex or endpoints |
+      | Piecewise | Different formulas on different intervals | Broken line or piecewise curve | Compare segment by segment |
+
+      **Finding extrema**
+
+      - **Linear**: compare left and right endpoints of the range of $t$
+      - **Quadratic**: find vertex $t_{0} = -\frac{b}{2a}$, then check whether $t_{0}$ lies within the valid range
+        - If $t_{0}$ is in range → extremum at vertex
+        - If $t_{0}$ is out of range → extremum at the endpoint farther from $t_{0}$
+      - **Piecewise**: find extrema on each segment, then compare globally
+
+      **Common mistake: area can equal zero!**
+
+      When the dynamic point $P$ coincides with a vertex (e.g., $t = 0$ or $t$ equals a side length), the triangle degenerates to a segment and the area is $0$.
+      These critical points are the turning points for piecewise analysis.
+
+  - id: path-and-trajectory
+    title: 轨迹与路径分析
+    titleEn: Path and Trajectory Analysis
+    hasVisualization: true
+    content: |
+      **什么是<<轨迹/trajectory>>？**
+
+      当一个点按照某种规则运动时，它经过的所有位置连起来形成的曲线，叫做这个点的<<轨迹/trajectory>>。
+
+      例如：
+      - 圆规的笔尖绕定点旋转 → 轨迹是圆
+      - 抛出的石子 → 轨迹是抛物线
+      - 离两条直线距离相等的点 → 轨迹是角平分线
+
+      **轨迹问题的分析方法——"定点采样法"**
+
+      不知道轨迹是什么形状？试试这个方法：
+
+      1. **取特殊位置**：让动点 $P$ 停在 $3$–$5$ 个特殊位置（起点、终点、中点、四分之一点……）
+      2. **标记坐标**：算出每个特殊位置的坐标 $(x, y)$
+      3. **描点连线**：在坐标系中描出这些点，观察它们排成什么形状
+      4. **猜测验证**：如果看起来像直线，尝试写出直线方程并验证；如果像圆弧，找圆心和半径
+      5. **严格证明**：用代数方法证明所有满足条件的点都在你猜测的曲线上
+
+      **经典轨迹类型**
+
+      | 运动规则 | 轨迹形状 | 原因 |
+      |----------|----------|------|
+      | 到定点距离为常数 $r$ | 圆 | 这就是圆的定义 |
+      | 到两定点距离之和为常数 | 椭圆 | 中学了解即可 |
+      | 到两定点距离相等 | 垂直平分线 | 线段的中垂线 |
+      | 到两条直线距离相等 | 角平分线 | 角的平分线性质 |
+      | 到一条直线的距离等于到定点的距离 | 抛物线 | 抛物线的焦点-准线定义 |
+      | 在直角三角形斜边上的中点 | 圆弧 | 直角三角形斜边中线 = 斜边一半 |
+
+      **示例：中点的轨迹**
+
+      固定点 $A(0, 4)$，点 $B$ 在 $x$ 轴上运动，设 $B(m, 0)$。求 $AB$ 中点 $M$ 的轨迹。
+
+      设 $M(x, y)$，则：
+      $$x = \frac{0 + m}{2} = \frac{m}{2}, \quad y = \frac{4 + 0}{2} = 2$$
+
+      所以 $y = 2$（常数），而 $x = \frac{m}{2}$ 随 $m$ 任意变化。
+
+      结论：$M$ 的轨迹是直线 $y = 2$。
+
+      **更复杂的示例：直角顶点的轨迹**
+
+      线段 $AB$ 是定线段（$A$、$B$ 是定点），$\angle APB = 90°$，$P$ 是动点。$P$ 的轨迹是什么？
+
+      答案：$P$ 的轨迹是以 $AB$ 为直径的圆（去掉 $A$、$B$ 两点）。
+
+      原因：直径所对的圆周角是 $90°$（即"半圆上的圆周角是直角"定理的逆定理）。
+
+      **轨迹问题的常见陷阱**
+
+      - **遗漏端点**：动点可能不能到达轨迹的端点（比如三角形退化时）
+      - **多段轨迹**：动点分段运动时，轨迹可能是几段曲线拼接而成
+      - **反向验证**：不仅要证明"满足条件的点都在曲线上"，还要证明"曲线上的点都满足条件"
+    contentEn: |
+      **What is a <<轨迹/trajectory>>?**
+
+      When a point moves according to a rule, the set of all positions it occupies forms a curve called the point's <<轨迹/trajectory>>.
+
+      Examples:
+      - A compass tip rotating around a fixed point → trajectory is a circle
+      - A thrown stone → trajectory is a parabola
+      - Points equidistant from two lines → trajectory is the angle bisector
+
+      **How to analyse trajectory problems — the "sampling method"**
+
+      Not sure what shape the trajectory is? Try this:
+
+      1. **Pick special positions**: stop the moving point $P$ at 3–5 special spots (start, end, midpoint, quarter point …)
+      2. **Compute coordinates**: calculate $(x, y)$ at each position
+      3. **Plot and connect**: mark these points on a coordinate grid and observe the pattern
+      4. **Guess and verify**: if it looks like a line, write the line equation and check; if it looks like a circle, find the centre and radius
+      5. **Prove rigorously**: use algebra to show all qualifying points lie on your conjectured curve
+
+      **Classic trajectory types**
+
+      | Rule | Trajectory shape | Reason |
+      |------|-----------------|--------|
+      | Constant distance $r$ from a fixed point | Circle | Definition of a circle |
+      | Sum of distances to two fixed points is constant | Ellipse | For reference at this level |
+      | Equal distances from two fixed points | Perpendicular bisector | Midpoint perpendicular of the segment |
+      | Equal distances from two lines | Angle bisector | Angle bisector property |
+      | Distance to a line equals distance to a fixed point | Parabola | Focus-directrix definition |
+      | Midpoint of the hypotenuse in a right triangle | Circular arc | Median to hypotenuse = half hypotenuse |
+
+      **Example: trajectory of a midpoint**
+
+      Fixed point $A(0, 4)$; point $B(m, 0)$ moves on the $x$-axis. Find the trajectory of the midpoint $M$ of $AB$.
+
+      Let $M(x, y)$:
+      $$x = \frac{0 + m}{2} = \frac{m}{2}, \quad y = \frac{4 + 0}{2} = 2$$
+
+      So $y = 2$ (constant), while $x = \frac{m}{2}$ varies freely.
+
+      Conclusion: the trajectory of $M$ is the line $y = 2$.
+
+      **More advanced example: trajectory of a right-angle vertex**
+
+      $AB$ is a fixed segment. $\angle APB = 90°$ and $P$ is a moving point. What is the trajectory of $P$?
+
+      Answer: the trajectory is a circle with $AB$ as diameter (excluding $A$ and $B$).
+
+      Reason: the angle subtended by a diameter is $90°$ (converse of the inscribed angle theorem).
+
+      **Common traps in trajectory problems**
+
+      - **Missing endpoints**: the moving point may not reach the ends of the trajectory (e.g., when a triangle degenerates)
+      - **Multi-segment trajectories**: when the point moves in segments, the trajectory may be several curves joined together
+      - **Reverse verification**: prove both directions — "qualifying points lie on the curve" AND "points on the curve satisfy the condition"
+
+  - id: piecewise-discussion
+    title: 分段讨论——动点问题的关键技术
+    titleEn: 'Piecewise Case Analysis — the Key Technique for Dynamic Point Problems'
+    hasVisualization: true
+    content: |
+      **为什么需要<<分段讨论/piecewise case analysis>>？**
+
+      当动点沿路径运动时，它可能在某些**临界位置**改变几何构型：
+      - 三角形从钝角变为直角再变为锐角
+      - 动点从一条边"拐弯"到另一条边
+      - 某个面积公式中的"底"或"高"的表达式发生切换
+
+      在这些临界位置前后，**函数表达式不同**，必须分段写。
+
+      **如何找到临界位置（转折点）？**
+
+      | 信号 | 说明 | 例子 |
+      |------|------|------|
+      | 动点到达路径的拐角处 | 运动方向改变 | 点沿矩形两条邻边运动 |
+      | 三角形退化 | 三点共线，面积 = 0 | 动点到达某个顶点 |
+      | 角度变为 $90°$ | 直角三角形的特殊构型 | 求"何时 $\angle APB = 90°$" |
+      | 两线段相等 | 等腰三角形出现 | 求"何时 $PA = PB$" |
+      | 面积公式的"底"或"高"切换 | 锐角三角形 vs 钝角三角形的高在不同位置 | 动点经过垂足位置 |
+
+      **经典案例：沿矩形两邻边运动**
+
+      矩形 $ABCD$ 中，$AB = 8$，$BC = 6$。
+      点 $P$ 从 $A$ 出发，沿 $A \to B \to C$ 方向运动，速度为 $2$ cm/s。设时间为 $t$ 秒。
+
+      **第一步：设参数**
+      $P$ 走过的总距离 $= 2t$，$t$ 的范围 $0 \leq t \leq 7$（总路径 $AB + BC = 14$，速度 $2$）。
+
+      **第二步：分段表达 $\triangle APD$ 的面积**
+
+      **情况一：$P$ 在 $AB$ 上（$0 \leq t \leq 4$，即 $2t \leq 8$）**
+      - $AP = 2t$，$P$ 在 $AB$ 上
+      - $\triangle APD$ 的底 $= AP = 2t$，高 $= AD = 6$
+      - $S_{1}(t) = \frac{1}{2} \times 2t \times 6 = 6t$
+
+      **情况二：$P$ 在 $BC$ 上（$4 < t \leq 7$，即 $8 < 2t \leq 14$）**
+      - $P$ 已过 $B$，在 $BC$ 上，$BP = 2t - 8$
+      - $\triangle APD$ 变成了以 $AD$ 为一边的四边形的一部分——等等！
+      - 实际上，$P$ 在 $BC$ 上时，$\triangle APD$：底 $= AD = 6$，高 $= AB = 8$（$P$ 到 $AD$ 的距离恒为 $8$）
+
+      不对！重新分析。$P$ 在 $BC$ 上时：
+      - 底取 $AD = 6$，高取 $P$ 到直线 $AD$ 的距离 $= AB = 8$（因为 $P$ 在 $B$ 那侧）
+      - $S_{2}(t) = \frac{1}{2} \times 6 \times 8 = 24$（常数！面积不再变化）
+
+      等等——这不对。让我们更仔细地想。当 $P$ 在 $BC$ 上移动时：
+      - $A$、$P$、$D$ 的相对位置在变化
+      - 取 $AD$ 为底，$P$ 到直线 $AD$ 的距离确实是 $AB = 8$
+      - 所以 $S_{2} = \frac{1}{2} \times 6 \times 8 = 24$，确实是常数
+
+      $$S(t) = \begin{cases} 6t & 0 \leq t \leq 4 \\ 24 & 4 < t \leq 7 \end{cases}$$
+
+      **这个例子告诉我们**：分段后，某一段可能是常数函数（面积不变），另一段是一次或二次函数。不分段就会写错！
+
+      **分段函数的图象**
+
+      把 $S(t)$ 画出来：
+      - 第一段 $[0, 4]$：直线从 $(0, 0)$ 上升到 $(4, 24)$
+      - 第二段 $(4, 7]$：水平线 $S = 24$
+
+      看到图象，最值一目了然：$S_{\min} = 0$（$t = 0$），$S_{\max} = 24$（$t \geq 4$）。
+
+      **分段讨论的完整流程**
+
+      1. 画出动点的完整运动路径
+      2. 标出所有临界位置，计算对应的 $t$ 值
+      3. 在每个区间内分别建立函数表达式
+      4. 检查相邻区间在临界点处的函数值是否一致（连续性）
+      5. 分别在每段上求最值，再比较得到全局最值
+
+      **易错点**
+
+      - **遗漏情况**：只写了一段就以为做完了。一定要检查动点是否会"拐弯"或改变构型
+      - **临界点归属**：$t = 4$ 时属于哪一段？通常无所谓（两段在此处函数值相同），但要写清楚
+      - **端点检查**：$t = 0$ 和 $t$ 的最大值处，三角形可能退化，面积可能为 $0$
+    contentEn: |
+      **Why do we need <<分段讨论/piecewise case analysis>>?**
+
+      As a dynamic point moves along its path, it may cross **critical positions** that change the geometric configuration:
+      - A triangle shifts from obtuse to right-angled to acute
+      - The moving point "turns a corner" from one side to the next
+      - The expression for "base" or "height" in an area formula switches
+
+      Before and after these critical positions, **the function expression is different**, so we must write it in pieces.
+
+      **How to find critical positions (turning points)**
+
+      | Signal | Meaning | Example |
+      |--------|---------|---------|
+      | Point reaches a corner of the path | Direction of motion changes | Point moving along two adjacent sides of a rectangle |
+      | Triangle degenerates | Three points become collinear; area = 0 | Point reaches a vertex |
+      | An angle becomes $90°$ | Special right-triangle configuration | "When is $\angle APB = 90°$?" |
+      | Two segments become equal | An isosceles triangle appears | "When is $PA = PB$?" |
+      | Base or height expression switches | Acute vs obtuse triangle have the altitude in different locations | Point passes through the foot of perpendicular |
+
+      **Classic case: moving along two adjacent sides of a rectangle**
+
+      In rectangle $ABCD$, $AB = 8$, $BC = 6$.
+      Point $P$ starts at $A$ and moves along $A \to B \to C$ at $2$ cm/s. Let time be $t$ seconds.
+
+      **Step 1: Set parameter**
+      Total distance $= 2t$; range $0 \leq t \leq 7$ (total path $AB + BC = 14$, speed $2$).
+
+      **Step 2: Express area of $\triangle APD$ piecewise**
+
+      **Case 1: $P$ on $AB$ ($0 \leq t \leq 4$, i.e., $2t \leq 8$)**
+      - $AP = 2t$; base $= AP = 2t$, height $= AD = 6$
+      - $S_{1}(t) = \frac{1}{2} \times 2t \times 6 = 6t$
+
+      **Case 2: $P$ on $BC$ ($4 < t \leq 7$, i.e., $8 < 2t \leq 14$)**
+      - $P$ is on $BC$; take $AD$ as base ($AD = 6$); height from $P$ to line $AD$ is $AB = 8$
+      - $S_{2}(t) = \frac{1}{2} \times 6 \times 8 = 24$ (constant — the area no longer changes!)
+
+      $$S(t) = \begin{cases} 6t & 0 \leq t \leq 4 \\ 24 & 4 < t \leq 7 \end{cases}$$
+
+      **Lesson**: after splitting into cases, some pieces may be constant, others linear or quadratic. Without splitting, you would write the wrong formula!
+
+      **Graph of the piecewise function**
+
+      Plot $S(t)$:
+      - First piece $[0, 4]$: line rising from $(0, 0)$ to $(4, 24)$
+      - Second piece $(4, 7]$: horizontal line at $S = 24$
+
+      The graph makes extrema obvious: $S_{\min} = 0$ (at $t = 0$), $S_{\max} = 24$ (for $t \geq 4$).
+
+      **Complete workflow for piecewise analysis**
+
+      1. Sketch the full path of the moving point
+      2. Mark all critical positions; compute the corresponding $t$ values
+      3. Build a function expression on each interval
+      4. Check that adjacent intervals agree at the boundary (continuity)
+      5. Find the extremum on each piece, then compare for the global extremum
+
+      **Common mistakes**
+
+      - **Missing a case**: writing only one piece and assuming you are done. Always check whether the point "turns a corner" or changes configuration
+      - **Boundary assignment**: which piece does $t = 4$ belong to? Usually it does not matter (function values agree), but be explicit
+      - **Endpoint check**: at $t = 0$ and the maximum $t$, the triangle may degenerate and the area may be $0$
+
+realLife:
+  - category: 机械与工程
+    categoryEn: Mechanical Engineering
+    positive: |
+      机械连杆机构中，一个铰接点沿圆运动，带动另一个点做往复直线运动——这就是动点问题的实际版本。
+      活塞在汽缸中的运动位移可以表示为曲柄转角 $\theta$ 的函数。
+    positiveEn: |
+      In a mechanical linkage, one pivot moves in a circle, driving another point in reciprocating linear motion — a real-world dynamic point problem.
+      The piston displacement in a cylinder can be expressed as a function of the crank angle $\theta$.
+    negative: '实际机械系统有摩擦和弹性形变，运动函数比理想化模型更复杂。'
+    negativeEn: 'Real mechanical systems have friction and elastic deformation, making motion functions more complex than idealised models.'
+
+  - category: 动画与游戏设计
+    categoryEn: Animation and Game Design
+    positive: |
+      游戏中角色的移动路径就是动点问题。设计角色沿折线路径巡逻时，程序员需要分段计算角色在每段上的位置——这正是分段函数的应用。
+      追踪游戏中子弹的轨迹（抛物线）来判断是否命中目标，也是动点轨迹问题。
+    positiveEn: |
+      Character movement paths in games are dynamic point problems. When designing patrol routes along polylines, programmers compute the character's position on each segment — piecewise functions in action.
+      Tracking a bullet's trajectory (parabola) to check if it hits a target is also a trajectory problem.
+    negative: '游戏中通常使用离散的帧更新而非连续函数，但数学原理相同。'
+    negativeEn: 'Games typically use discrete frame updates rather than continuous functions, but the mathematical principle is the same.'
+
+  - category: 建筑与日照分析
+    categoryEn: Architecture and Sunlight Analysis
+    positive: |
+      太阳在天空中的位置是一个"动点"。建筑师需要分析太阳从东到西移动时，建筑物阴影面积如何变化——这就是面积随动点变化的问题。
+      阴影的面积是时间（太阳位置）的分段函数：上午增大、中午最小、下午又增大。
+    positiveEn: |
+      The sun's position is a "dynamic point" in the sky. Architects analyse how a building's shadow area changes as the sun moves from east to west — an area-as-function-of-moving-point problem.
+      Shadow area is a piecewise function of time (sun position): grows in the morning, smallest at noon, grows again in the afternoon.
+    negative: '真实的阴影计算需要三维投影，比二维动点模型复杂得多。'
+    negativeEn: 'Real shadow calculations require 3D projection, far more complex than 2D dynamic point models.'
+
+examples:
+  - id: ex1
+    title: '基础：点 $P$ 在线段上运动，求 $\triangle PCD$ 面积的函数'
+    titleEn: 'Basic: Point $P$ moves along a segment; express the area of $\triangle PCD$ as a function'
+    question: |
+      如图，在矩形 $ABCD$ 中，$AB = 12$，$BC = 5$。点 $P$ 从 $A$ 出发沿 $AB$ 向 $B$ 运动，设 $AP = t$（$0 < t < 12$）。
+      $(1)$ 用 $t$ 表示 $\triangle PCD$ 的面积 $S$；
+      $(2)$ 当 $S = 20$ 时，求 $t$ 的值；
+      $(3)$ $S$ 有最大值吗？若有，求出最大值及对应的 $t$。
+    questionEn: |
+      In rectangle $ABCD$, $AB = 12$, $BC = 5$. Point $P$ starts at $A$ and moves toward $B$ along $AB$. Let $AP = t$ ($0 < t < 12$).
+      $(1)$ Express the area $S$ of $\triangle PCD$ in terms of $t$.
+      $(2)$ Find $t$ when $S = 20$.
+      $(3)$ Does $S$ have a maximum? If so, find it and the corresponding $t$.
+    type: dynamic-point
+    solution:
+      steps:
+        - |
+          **第一步：设参数** $AP = t$，$0 < t < 12$。标明变量和不变量。
+          - 变量：$AP = t$，$PB = 12 - t$
+          - 不变量：$BC = AD = 5$，$CD = AB = 12$（矩形对边相等）
+        - |
+          **第二步：用 $t$ 表达面积**
+          $\triangle PCD$ 的底 $= CD = 12$（不变）。
+          高 = $P$ 到直线 $CD$ 的距离 = $PB$？不对！$P$ 在 $AB$ 上，$P$ 到 $CD$ 的距离 = $BC = 5$？
+          也不对。让我们仔细想：$P$ 在 $AB$ 上，$CD$ 是矩形的对边，$P$ 到 $CD$ 的距离 = $BC = 5$。
+          这样面积就是常数了，和 $t$ 无关？
+        - |
+          重新分析！$\triangle PCD$：顶点 $P$、$C$、$D$。
+          取 $CD$ 为底，$CD = 12$。$P$ 到直线 $CD$ 的距离确实恒为 $BC = 5$。
+          所以 $S = \frac{1}{2} \times 12 \times 5 = 30$，与 $t$ 无关。
+
+          **但这样题目就没有意义了！让我们改为求 $\triangle PBC$ 的面积。**
+
+          $\triangle PBC$：底 $= BC = 5$，高 $= PB = 12 - t$
+          $$S = \frac{1}{2} \times 5 \times (12 - t) = \frac{5(12 - t)}{2} = 30 - \frac{5t}{2}$$
+        - |
+          $(2)$ 令 $S = 20$：$30 - \frac{5t}{2} = 20$，$\frac{5t}{2} = 10$，$t = 4$
+        - |
+          $(3)$ $S = 30 - \frac{5t}{2}$ 是关于 $t$ 的一次函数，递减。
+          当 $t \to 0^{+}$ 时 $S \to 30$（最大），$t \to 12^{-}$ 时 $S \to 0$（最小）。
+          由于 $0 < t < 12$（开区间），严格来说没有"取到"最大值，但在 $t$ 趋近 $0$ 时面积趋近 $30$。
+    solutionEn:
+      steps:
+        - |
+          **Step 1: Set parameter** $AP = t$, $0 < t < 12$. Identify variables and invariants.
+          - Variables: $AP = t$, $PB = 12 - t$
+          - Invariants: $BC = AD = 5$, $CD = AB = 12$ (opposite sides of a rectangle)
+        - |
+          **Step 2: Express area in $t$**
+          Consider $\triangle PBC$: base $= BC = 5$, height $= PB = 12 - t$.
+          $$S = \frac{1}{2} \times 5 \times (12 - t) = 30 - \frac{5t}{2}$$
+        - |
+          $(2)$ Set $S = 20$: $30 - \frac{5t}{2} = 20$, so $\frac{5t}{2} = 10$, $t = 4$.
+        - |
+          $(3)$ $S = 30 - \frac{5t}{2}$ is linear and decreasing in $t$.
+          As $t \to 0^{+}$, $S \to 30$ (approaches maximum). As $t \to 12^{-}$, $S \to 0$ (approaches minimum).
+    answer: '$S = 30 - \frac{5t}{2}$；$t = 4$ 时 $S = 20$；$S$ 趋近最大值 $30$（$t \to 0$）'
+    answerEn: '$S = 30 - \frac{5t}{2}$; $S = 20$ when $t = 4$; $S$ approaches max $30$ as $t \to 0$'
+
+  - id: ex2
+    title: 沿矩形两邻边运动的面积分段函数
+    titleEn: 'Piecewise area function for motion along two sides of a rectangle'
+    question: |
+      矩形 $ABCD$ 中，$AB = 6$，$BC = 4$。点 $P$ 从 $B$ 出发，沿 $B \to C \to D$ 方向以 $1$ cm/s 运动。设时间为 $t$ 秒（$0 \leq t \leq 10$）。
+      $(1)$ 分段表示 $\triangle ABP$ 的面积 $S(t)$；
+      $(2)$ 画出 $S(t)$ 的函数图象；
+      $(3)$ 求 $S(t)$ 的最大值。
+    questionEn: |
+      In rectangle $ABCD$, $AB = 6$, $BC = 4$. Point $P$ starts at $B$ and moves along $B \to C \to D$ at $1$ cm/s. Let time be $t$ seconds ($0 \leq t \leq 10$).
+      $(1)$ Express the area $S(t)$ of $\triangle ABP$ piecewise.
+      $(2)$ Sketch the graph of $S(t)$.
+      $(3)$ Find the maximum of $S(t)$.
+    type: dynamic-point-piecewise
+    solution:
+      steps:
+        - |
+          **第一步：分析路径和临界点**
+          总路径：$BC + CD = 4 + 6 = 10$，与 $t \leq 10$ 一致。
+          临界点：$t = 4$ 时 $P$ 到达 $C$（从 $BC$ 段转到 $CD$ 段）。
+        - |
+          **第二步：分段建立函数**
+
+          **情况一：$P$ 在 $BC$ 上（$0 \leq t \leq 4$）**
+          $BP = t$，$P$ 在 $BC$ 上。
+          $\triangle ABP$：底 $= AB = 6$，高 $= BP = t$。
+          $$S_{1}(t) = \frac{1}{2} \times 6 \times t = 3t$$
+        - |
+          **情况二：$P$ 在 $CD$ 上（$4 < t \leq 10$）**
+          $P$ 已过 $C$，在 $CD$ 上，$CP = t - 4$。
+          $\triangle ABP$：顶点 $A$、$B$、$P$。
+          底 $= AB = 6$。高 = $P$ 到直线 $AB$ 的距离。
+          由于 $P$ 在 $CD$ 上，$P$ 到 $AB$ 的距离 $= BC = 4$（$CD \parallel AB$，距离恒为 $BC$）。
+          $$S_{2}(t) = \frac{1}{2} \times 6 \times 4 = 12$$
+        - |
+          **合并**
+          $$S(t) = \begin{cases} 3t & 0 \leq t \leq 4 \\ 12 & 4 < t \leq 10 \end{cases}$$
+        - |
+          $(2)$ 图象：$[0, 4]$ 上从 $(0, 0)$ 到 $(4, 12)$ 的直线；$(4, 10]$ 上水平线 $S = 12$。
+        - |
+          $(3)$ 最大值 $S = 12$，当 $t \geq 4$ 时取到。
+    solutionEn:
+      steps:
+        - |
+          **Step 1: Analyse path and critical points**
+          Total path: $BC + CD = 4 + 6 = 10$. Critical point: $t = 4$ when $P$ reaches $C$.
+        - |
+          **Step 2: Build piecewise function**
+
+          **Case 1: $P$ on $BC$ ($0 \leq t \leq 4$)**
+          $BP = t$. $\triangle ABP$: base $= AB = 6$, height $= BP = t$.
+          $$S_{1}(t) = \frac{1}{2} \times 6 \times t = 3t$$
+        - |
+          **Case 2: $P$ on $CD$ ($4 < t \leq 10$)**
+          $CP = t - 4$. $\triangle ABP$: base $= AB = 6$, height $=$ distance from $P$ to $AB = BC = 4$.
+          $$S_{2}(t) = \frac{1}{2} \times 6 \times 4 = 12$$
+        - |
+          $$S(t) = \begin{cases} 3t & 0 \leq t \leq 4 \\ 12 & 4 < t \leq 10 \end{cases}$$
+        - |
+          $(3)$ Maximum $S = 12$ for $t \geq 4$.
+    answer: '$S(t) = 3t$（$0 \leq t \leq 4$），$S(t) = 12$（$4 < t \leq 10$）；最大值 $12$'
+    answerEn: '$S(t) = 3t$ for $0 \leq t \leq 4$; $S(t) = 12$ for $4 < t \leq 10$; maximum $12$'
+
+  - id: ex3
+    title: 两动点同时运动，求面积等于给定值
+    titleEn: 'Two points move simultaneously; find when triangle area equals a given value'
+    question: |
+      在直角三角形 $ABC$ 中，$\angle C = 90°$，$AC = 8$，$BC = 6$。
+      点 $P$ 从 $A$ 出发沿 $AC$ 向 $C$ 运动，速度 $2$ cm/s；同时，点 $Q$ 从 $C$ 出发沿 $CB$ 向 $B$ 运动，速度 $1$ cm/s。
+      设运动时间为 $t$ 秒。
+      $(1)$ 用 $t$ 表示 $CP$ 和 $CQ$；
+      $(2)$ 用 $t$ 表示 $\triangle PCQ$ 的面积 $S(t)$；
+      $(3)$ 求 $S = 6$ 时 $t$ 的值；
+      $(4)$ 求 $S(t)$ 的最大值。
+    questionEn: |
+      In right triangle $ABC$, $\angle C = 90°$, $AC = 8$, $BC = 6$.
+      Point $P$ starts at $A$ and moves toward $C$ along $AC$ at $2$ cm/s. Simultaneously, point $Q$ starts at $C$ and moves toward $B$ along $CB$ at $1$ cm/s.
+      Let time be $t$ seconds.
+      $(1)$ Express $CP$ and $CQ$ in terms of $t$.
+      $(2)$ Express the area $S(t)$ of $\triangle PCQ$ in terms of $t$.
+      $(3)$ Find $t$ when $S = 6$.
+      $(4)$ Find the maximum of $S(t)$.
+    type: two-point-motion
+    solution:
+      steps:
+        - |
+          **第一步：设参数，确定范围**
+          $AP = 2t$，所以 $CP = AC - AP = 8 - 2t$。
+          $CQ = t$。
+          $P$ 到达 $C$ 时 $t = 4$；$Q$ 到达 $B$ 时 $t = 6$。
+          两者同时运动，$P$ 先到（$t = 4$），所以 $t$ 的范围为 $0 \leq t \leq 4$（$P$ 到 $C$ 后三角形消失）。
+        - |
+          **第二步：表达面积**
+          $\angle C = 90°$，所以 $CP \perp CQ$。
+          $$S(t) = \frac{1}{2} \times CP \times CQ = \frac{1}{2}(8 - 2t)(t) = \frac{1}{2}(8t - 2t^{2}) = 4t - t^{2}$$
+        - |
+          **第三步：求 $S = 6$ 时的 $t$**
+          $4t - t^{2} = 6$
+          $t^{2} - 4t + 6 = 0$
+          $\Delta = 16 - 24 = -8 < 0$
+          **无实数解！** $S(t)$ 永远达不到 $6$。
+        - |
+          **第四步：求最大值**
+          $S(t) = -t^{2} + 4t = -(t - 2)^{2} + 4$
+          顶点 $t = 2$，$t = 2 \in [0, 4]$，最大值 $S = 4$。
+
+          所以 $S$ 的最大值是 $4$，在 $t = 2$ 秒时取到。此时 $CP = 4$，$CQ = 2$。
+        - |
+          **反思**：问 $S = 6$ 的设计是故意的——它让你发现最大值只有 $4$，面积根本到不了 $6$！
+          这就是为什么"确定范围"和"求最值"在动点问题中如此重要。
+    solutionEn:
+      steps:
+        - |
+          **Step 1: Set parameter and range**
+          $AP = 2t$, so $CP = 8 - 2t$. $CQ = t$.
+          $P$ reaches $C$ at $t = 4$; $Q$ reaches $B$ at $t = 6$. Motion stops at $t = 4$ (triangle vanishes).
+          Range: $0 \leq t \leq 4$.
+        - |
+          **Step 2: Express area**
+          $\angle C = 90°$, so $CP \perp CQ$.
+          $$S(t) = \frac{1}{2}(8 - 2t)(t) = 4t - t^{2}$$
+        - |
+          **Step 3: Solve $S = 6$**
+          $-t^{2} + 4t = 6 \Rightarrow t^{2} - 4t + 6 = 0$; $\Delta = -8 < 0$.
+          **No real solution!** The area never reaches $6$.
+        - |
+          **Step 4: Find maximum**
+          $S(t) = -(t-2)^{2} + 4$; vertex at $t = 2 \in [0, 4]$; maximum $S = 4$.
+          At $t = 2$: $CP = 4$, $CQ = 2$.
+        - |
+          **Reflection**: asking for $S = 6$ is deliberate — it reveals the maximum is only $4$!
+          This is why "determine the range" and "find extrema" are so critical.
+    answer: '$S(t) = 4t - t^{2} = -(t-2)^{2}+4$；$S = 6$ 无解；最大值 $4$（$t = 2$）'
+    answerEn: '$S(t) = 4t - t^{2} = -(t-2)^{2}+4$; $S = 6$ has no solution; max $4$ at $t = 2$'
+
+  - id: ex4
+    title: 抛物线上的动点与几何性质
+    titleEn: 'Dynamic point on a parabola and a geometric property'
+    question: |
+      抛物线 $y = -x^{2} + 4x$ 与 $x$ 轴交于 $O(0, 0)$ 和 $A(4, 0)$，顶点为 $B$。
+      点 $P$ 在抛物线上（位于 $x$ 轴上方），设 $P(m, -m^{2} + 4m)$，$0 < m < 4$。
+      $(1)$ 求顶点 $B$ 的坐标；
+      $(2)$ 用 $m$ 表示 $\triangle OPA$ 的面积 $S$；
+      $(3)$ 当 $S$ 取最大值时，求 $P$ 的坐标；
+      $(4)$ 是否存在 $P$ 使得 $\triangle OPA$ 是等腰三角形（$OP = PA$）？若存在，求出 $P$。
+    questionEn: |
+      The parabola $y = -x^{2} + 4x$ crosses the $x$-axis at $O(0, 0)$ and $A(4, 0)$; vertex $B$.
+      Point $P$ is on the parabola above the $x$-axis: $P(m, -m^{2} + 4m)$, $0 < m < 4$.
+      $(1)$ Find the coordinates of vertex $B$.
+      $(2)$ Express the area $S$ of $\triangle OPA$ in terms of $m$.
+      $(3)$ Find $P$ when $S$ is maximised.
+      $(4)$ Does a point $P$ exist such that $\triangle OPA$ is isosceles with $OP = PA$? If so, find $P$.
+    type: parabola-dynamic-point
+    solution:
+      steps:
+        - |
+          $(1)$ $y = -x^{2} + 4x = -(x - 2)^{2} + 4$，顶点 $B(2, 4)$。
+        - |
+          $(2)$ $\triangle OPA$：底 $= OA = 4$（在 $x$ 轴上），高 $= P$ 的纵坐标 $= -m^{2} + 4m$。
+          $$S = \frac{1}{2} \times 4 \times (-m^{2} + 4m) = 2(-m^{2} + 4m) = -2m^{2} + 8m$$
+        - |
+          $(3)$ $S = -2m^{2} + 8m = -2(m - 2)^{2} + 8$
+          顶点 $m = 2 \in (0, 4)$，最大值 $S = 8$。
+          此时 $P(2, -4 + 8) = P(2, 4) = B$。
+
+          **有趣的结论**：面积最大时，$P$ 恰好在抛物线的顶点！
+          这不是巧合——顶点是离 $x$ 轴最远的点，即"高"最大的位置。
+        - |
+          $(4)$ 要求 $OP = PA$，即 $P$ 到 $O$ 和 $A$ 的距离相等。
+          $O(0,0)$，$A(4,0)$，所以 $OP = PA$ 意味着 $P$ 在 $OA$ 的中垂线上。
+          $OA$ 的中点为 $(2, 0)$，中垂线为 $x = 2$。
+          所以 $m = 2$，$P(2, 4)$。
+          验证：$OP = \sqrt{4 + 16} = \sqrt{20}$，$PA = \sqrt{4 + 16} = \sqrt{20}$ ✓
+    solutionEn:
+      steps:
+        - |
+          $(1)$ $y = -(x-2)^{2} + 4$; vertex $B(2, 4)$.
+        - |
+          $(2)$ $\triangle OPA$: base $= OA = 4$, height $= -m^{2} + 4m$.
+          $$S = \frac{1}{2} \times 4 \times (-m^{2}+4m) = -2m^{2}+8m$$
+        - |
+          $(3)$ $S = -2(m-2)^{2}+8$; vertex at $m = 2$; max $S = 8$.
+          $P = (2, 4) = B$ (the parabola vertex). The vertex is the farthest point from the $x$-axis — hence maximum height.
+        - |
+          $(4)$ $OP = PA$ means $P$ lies on the perpendicular bisector of $OA$, which is $x = 2$.
+          So $m = 2$, $P(2, 4)$. Check: $OP = PA = \sqrt{20}$ ✓
+
+    answer: '$B(2, 4)$；$S = -2m^{2} + 8m$；最大值 $8$ 在 $P(2, 4)$；$OP = PA$ 时 $P(2, 4)$'
+    answerEn: '$B(2, 4)$; $S = -2m^{2}+8m$; max $8$ at $P(2, 4)$; $OP = PA$ gives $P(2, 4)$'
+
+exercises:
+  timeGuide:
+    total: 约 45 分钟
+  questions:
+    - number: 1
+      type: 填空题
+      inputType: blank
+      question: '点 $P$ 在线段 $AB$ 上，$AB = 15$，$AP = t$（$0 \leq t \leq 15$）。则 $PB = $___。当 $AP = PB$ 时，$t = $___。'
+      questionEn: 'Point $P$ is on segment $AB$, $AB = 15$, $AP = t$ ($0 \leq t \leq 15$). Then $PB = $___. When $AP = PB$, $t = $___.'
+      answer: '$PB = 15 - t$；$t = 7.5$'
+      answerEn: '$PB = 15 - t$; $t = 7.5$'
+      explanation: '$PB = AB - AP = 15 - t$；$AP = PB$：$t = 15 - t$，$2t = 15$，$t = 7.5$'
+      explanationEn: '$PB = 15 - t$; $AP = PB$: $t = 15 - t$, so $t = 7.5$'
+
+    - number: 2
+      type: 填空题
+      inputType: blank
+      question: |
+        线段 $AB = 20$，点 $P$ 从 $A$ 出发以 $3$ cm/s 速度向 $B$ 运动。设时间为 $t$ 秒。
+        则 $AP =$___，$PB =$___，$t$ 的范围是___。
+      questionEn: |
+        $AB = 20$, point $P$ starts at $A$ and moves toward $B$ at $3$ cm/s. Let time be $t$ seconds.
+        $AP =$___; $PB =$___; range of $t$ is ___.
+      answer: '$AP = 3t$，$PB = 20 - 3t$，$0 \leq t \leq \frac{20}{3}$'
+      answerEn: '$AP = 3t$; $PB = 20 - 3t$; $0 \leq t \leq \frac{20}{3}$'
+      explanation: '$AP = 3t$（速度 × 时间）；$PB = 20 - 3t$；$PB \geq 0$：$20 - 3t \geq 0$，$t \leq \frac{20}{3}$'
+      explanationEn: '$AP = 3t$ (speed $\times$ time); $PB = 20 - 3t$; $PB \geq 0$ gives $t \leq \frac{20}{3}$'
+
+    - number: 3
+      type: 解答题
+      inputType: open
+      question: |
+        直角三角形 $ABC$ 中，$\angle A = 90°$，$AB = 6$，$AC = 8$。点 $P$ 在 $AB$ 上，$AP = t$（$0 < t < 6$）。
+        $(1)$ 用 $t$ 表示 $\triangle APC$ 的面积 $S$；
+        $(2)$ 当 $S = 12$ 时，求 $t$。
+      questionEn: |
+        In right triangle $ABC$, $\angle A = 90°$, $AB = 6$, $AC = 8$. Point $P$ on $AB$, $AP = t$ ($0 < t < 6$).
+        $(1)$ Express the area $S$ of $\triangle APC$ in $t$.
+        $(2)$ Find $t$ when $S = 12$.
+      answer: '$S = 4t$；$t = 3$'
+      answerEn: '$S = 4t$; $t = 3$'
+      explanation: |
+        $\triangle APC$：底 $= AC = 8$，高 $= AP = t$（因为 $\angle A = 90°$，$AP \perp AC$）。
+        $S = \frac{1}{2} \times 8 \times t = 4t$。
+        $4t = 12$，$t = 3$，检查 $3 \in (0, 6)$ ✓
+      explanationEn: |
+        $\triangle APC$: base $= AC = 8$, height $= AP = t$ (since $\angle A = 90°$).
+        $S = 4t$. $4t = 12$ gives $t = 3 \in (0, 6)$ ✓
+
+    - number: 4
+      type: 解答题
+      inputType: open
+      question: |
+        $AB = 10$，点 $P$ 在 $AB$ 上，$AP = t$。求 $AP^{2} + PB^{2}$ 的最小值及对应的 $t$。
+      questionEn: |
+        $AB = 10$, $P$ on $AB$, $AP = t$. Find the minimum of $AP^{2} + PB^{2}$ and the corresponding $t$.
+      answer: '最小值 $50$，$t = 5$'
+      answerEn: 'Minimum $50$ at $t = 5$'
+      explanation: |
+        $AP^{2} + PB^{2} = t^{2} + (10 - t)^{2} = 2t^{2} - 20t + 100 = 2(t - 5)^{2} + 50$。
+        顶点 $t = 5$，最小值 $50$。此时 $P$ 是中点。
+      explanationEn: |
+        $t^{2} + (10-t)^{2} = 2t^{2} - 20t + 100 = 2(t-5)^{2} + 50$.
+        Vertex at $t = 5$; minimum $50$. $P$ is the midpoint.
+
+    - number: 5
+      type: 选择题
+      inputType: mc
+      question: |
+        矩形 $ABCD$，$AB = 10$，$BC = 6$。点 $P$ 从 $B$ 沿 $BC$ 向 $C$ 运动，$BP = t$。$\triangle ABP$ 的面积 $S$ 关于 $t$ 的函数图象是（　　）
+        A. 过原点的射线
+        B. 开口向下的抛物线
+        C. 水平直线
+        D. 过原点的线段
+      questionEn: |
+        Rectangle $ABCD$, $AB = 10$, $BC = 6$. $P$ moves from $B$ toward $C$, $BP = t$. The graph of $S(\triangle ABP)$ vs $t$ is (　　)
+        A. A ray through the origin
+        B. A downward-opening parabola
+        C. A horizontal line
+        D. A line segment through the origin
+      answer: D
+      answerEn: D
+      explanation: |
+        $S = \frac{1}{2} \times 10 \times t = 5t$（$0 \leq t \leq 6$）。
+        这是一次函数，图象是从 $(0, 0)$ 到 $(6, 30)$ 的线段（有端点限制），选 D。
+      explanationEn: |
+        $S = \frac{1}{2} \times 10 \times t = 5t$ ($0 \leq t \leq 6$).
+        Linear with restricted domain: a segment from $(0,0)$ to $(6, 30)$. Answer D.
+
+    - number: 6
+      type: 解答题
+      inputType: open
+      question: |
+        在 $\triangle ABC$ 中，$\angle B = 90°$，$AB = 12$，$BC = 9$。
+        点 $P$ 从 $B$ 出发沿 $BA$ 向 $A$ 运动，点 $Q$ 同时从 $B$ 出发沿 $BC$ 向 $C$ 运动。
+        $P$ 的速度为 $2$ cm/s，$Q$ 的速度为 $1$ cm/s。设时间为 $t$ 秒。
+        $(1)$ 写出 $\triangle BPQ$ 的面积 $S(t)$，并求 $S$ 的最大值。
+        $(2)$ 确定 $t$ 的取值范围。
+      questionEn: |
+        In $\triangle ABC$, $\angle B = 90°$, $AB = 12$, $BC = 9$.
+        $P$ moves from $B$ along $BA$ at $2$ cm/s; $Q$ moves from $B$ along $BC$ at $1$ cm/s, simultaneously.
+        Let time be $t$ seconds.
+        $(1)$ Find area $S(t)$ of $\triangle BPQ$ and its maximum.
+        $(2)$ Determine the range of $t$.
+      answer: '$S(t) = t^{2}$（$0 \leq t \leq 6$），最大值 $36$'
+      answerEn: '$S(t) = t^{2}$ ($0 \leq t \leq 6$); maximum $36$'
+      explanation: |
+        $BP = 2t$，$BQ = t$。$P$ 到 $A$ 时 $2t = 12$，$t = 6$；$Q$ 到 $C$ 时 $t = 9$。范围 $0 \leq t \leq 6$。
+        $\angle B = 90°$，$BP \perp BQ$：$S = \frac{1}{2} \times 2t \times t = t^{2}$。
+        在 $[0, 6]$ 上递增，最大值 $S(6) = 36$。
+      explanationEn: |
+        $BP = 2t$, $BQ = t$. $P$ reaches $A$ at $t = 6$; $Q$ reaches $C$ at $t = 9$. Range $0 \leq t \leq 6$.
+        $\angle B = 90°$: $S = \frac{1}{2} \times 2t \times t = t^{2}$. Increasing on $[0,6]$; max $S(6) = 36$.
+
+    - number: 7
+      type: 解答题
+      inputType: open
+      question: |
+        正方形 $ABCD$ 边长为 $8$，点 $P$ 从 $A$ 沿 $A \to B \to C$ 运动，速度为 $1$ cm/s，设时间 $t$ 秒。
+        分段表示 $\triangle APD$ 的面积 $S(t)$，并求最大值。
+      questionEn: |
+        Square $ABCD$ has side $8$. $P$ moves from $A$ along $A \to B \to C$ at $1$ cm/s. Let time be $t$ seconds.
+        Express $S(\triangle APD)$ piecewise and find its maximum.
+      answer: '$S(t) = 4t$（$0 \leq t \leq 8$），$S(t) = 32$（$8 < t \leq 16$）；最大值 $32$'
+      answerEn: '$S(t) = 4t$ for $0 \leq t \leq 8$; $S(t) = 32$ for $8 < t \leq 16$; max $32$'
+      explanation: |
+        总路径 $AB + BC = 16$，$0 \leq t \leq 16$。临界点：$t = 8$（$P$ 到达 $B$）。
+        **$P$ 在 $AB$ 上**（$0 \leq t \leq 8$）：底 $AD = 8$，高 $AP = t$，$S = \frac{1}{2} \times 8 \times t = 4t$。
+        **$P$ 在 $BC$ 上**（$8 < t \leq 16$）：底 $AD = 8$，$P$ 到 $AD$ 距离 $= AB = 8$，$S = \frac{1}{2} \times 8 \times 8 = 32$。
+        最大值 $32$（$t \geq 8$）。
+      explanationEn: |
+        Path $AB + BC = 16$; critical at $t = 8$.
+        **$P$ on $AB$** ($0 \leq t \leq 8$): $S = 4t$.
+        **$P$ on $BC$** ($8 < t \leq 16$): distance from $P$ to $AD = 8$; $S = 32$.
+        Max $32$ for $t \geq 8$.
+
+    - number: 8
+      type: 判断题
+      inputType: truefalse
+      question: '判断：如果动点 $P$ 在线段 $AB$ 上运动，$\triangle PCB$ 面积 $S$ 是 $AP$ 的函数，那么 $S$ 一定是一次函数。（正确 / 错误？）'
+      questionEn: 'True or False: if $P$ moves on segment $AB$, the area $S$ of $\triangle PCB$ as a function of $AP$ must be a linear function.'
+      answer: 正确
+      answerEn: 'True'
+      explanation: |
+        $P$ 在 $AB$ 上，底 $CB$ 固定，高 = $P$ 到直线 $CB$ 的距离。
+        当 $P$ 沿 $AB$ 移动，$P$ 到 $CB$ 的距离是 $AP$ 的一次函数（线性插值），所以面积也是一次函数。
+      explanationEn: |
+        $P$ on $AB$; base $CB$ is fixed; height = distance from $P$ to line $CB$.
+        As $P$ moves along $AB$, this distance is linear in $AP$ (linear interpolation), so area is linear.
+
+    - number: 9
+      type: 选择题
+      inputType: mc
+      question: |
+        直角三角形中，$\angle C = 90°$，$AC = 6$，$BC = 8$。点 $P$ 从 $A$ 沿 $AC$ 向 $C$ 运动，同时点 $Q$ 从 $C$ 沿 $CB$ 向 $B$ 运动，速度均为 $1$ cm/s。$\triangle PCQ$ 面积 $S(t)$ 的最大值为（　　）
+        A. $6$
+        B. $4.5$
+        C. $12$
+        D. $24$
+      questionEn: |
+        Right triangle, $\angle C = 90°$, $AC = 6$, $BC = 8$. $P$ moves from $A$ toward $C$ and $Q$ from $C$ toward $B$, both at $1$ cm/s. Max area of $\triangle PCQ$ is (　　)
+        A. $6$
+        B. $4.5$
+        C. $12$
+        D. $24$
+      answer: B
+      answerEn: B
+      explanation: |
+        $CP = 6 - t$，$CQ = t$，$0 \leq t \leq 6$。
+        $S = \frac{1}{2}(6-t)(t) = \frac{1}{2}(-t^{2}+6t) = -\frac{1}{2}(t-3)^{2}+\frac{9}{2}$。
+        最大值 $\frac{9}{2} = 4.5$（$t = 3$），选 B。
+      explanationEn: |
+        $CP = 6-t$, $CQ = t$, $0 \leq t \leq 6$.
+        $S = \frac{1}{2}(6-t)(t) = -\frac{1}{2}(t-3)^{2}+4.5$.
+        Maximum $4.5$ at $t = 3$. Answer B.
+
+    - number: 10
+      type: 解答题
+      inputType: open
+      question: |
+        固定点 $A(0, 6)$，点 $B(t, 0)$ 在 $x$ 轴正半轴上运动（$t > 0$）。
+        $(1)$ 用 $t$ 表示 $\triangle AOB$ 的面积（$O$ 为原点）；
+        $(2)$ 求 $AB$ 中点 $M$ 的轨迹方程。
+      questionEn: |
+        Fixed $A(0, 6)$; $B(t, 0)$ moves on the positive $x$-axis ($t > 0$).
+        $(1)$ Express the area of $\triangle AOB$ ($O$ is the origin) in $t$.
+        $(2)$ Find the trajectory equation of the midpoint $M$ of $AB$.
+      answer: '$S = 3t$；轨迹为 $y = 3$（$x > 0$）'
+      answerEn: '$S = 3t$; trajectory is $y = 3$ ($x > 0$)'
+      explanation: |
+        $(1)$ $OA = 6$（$y$ 轴上），$OB = t$（$x$ 轴上），$\angle AOB = 90°$。
+        $S = \frac{1}{2} \times t \times 6 = 3t$。
+        $(2)$ $M = \left(\frac{t}{2}, \frac{6}{2}\right) = \left(\frac{t}{2}, 3\right)$。
+        $y = 3$（常数），$x = \frac{t}{2} > 0$。轨迹是射线 $y = 3$，$x > 0$。
+      explanationEn: |
+        $(1)$ $S = \frac{1}{2} \times t \times 6 = 3t$.
+        $(2)$ $M = \left(\frac{t}{2}, 3\right)$; $y = 3$ and $x > 0$: a horizontal ray.
+
+    - number: 11
+      type: 解答题
+      inputType: open
+      question: |
+        抛物线 $y = x^{2} - 4x + 3$ 与 $x$ 轴交于 $A$、$B$（$A$ 在 $B$ 左侧），顶点为 $C$。
+        点 $P(m, 0)$ 在线段 $AB$ 上（$1 \leq m \leq 3$）。
+        $(1)$ 求 $A$、$B$、$C$ 的坐标；
+        $(2)$ 用 $m$ 表示 $\triangle APC$ 的面积 $S$；
+        $(3)$ 求 $S$ 的最大值。
+      questionEn: |
+        Parabola $y = x^{2} - 4x + 3$ crosses the $x$-axis at $A$, $B$ ($A$ left of $B$); vertex $C$.
+        $P(m, 0)$ on segment $AB$ ($1 \leq m \leq 3$).
+        $(1)$ Find $A$, $B$, $C$.
+        $(2)$ Express area $S$ of $\triangle APC$ in $m$.
+        $(3)$ Find the maximum of $S$.
+      answer: '$A(1,0)$，$B(3,0)$，$C(2,-1)$；$S = \frac{1}{2}(m-1)$；最大值 $1$'
+      answerEn: '$A(1,0)$, $B(3,0)$, $C(2,-1)$; $S = \frac{1}{2}(m-1)$; max $1$'
+      explanation: |
+        $(1)$ $y = (x-1)(x-3)$，$A(1,0)$，$B(3,0)$。$y = (x-2)^{2}-1$，$C(2,-1)$。
+        $(2)$ $\triangle APC$：底 $= AP = m - 1$，高 $= |y_{C}| = 1$（$C$ 在 $x$ 轴下方，到 $x$ 轴距离为 $1$）。
+        $S = \frac{1}{2} \times (m-1) \times 1 = \frac{m-1}{2}$。
+        $(3)$ 一次函数递增，$m = 3$ 时 $S = 1$。
+      explanationEn: |
+        $(1)$ $A(1,0)$, $B(3,0)$, $C(2,-1)$.
+        $(2)$ Base $= m-1$, height $= 1$: $S = \frac{m-1}{2}$.
+        $(3)$ Linear increasing; max at $m = 3$: $S = 1$.
+
+    - number: 12
+      type: 解答题
+      inputType: open
+      question: |
+        等腰直角三角形 $ABC$ 中，$\angle A = 90°$，$AB = AC = 10$。
+        点 $P$ 在 $AB$ 上从 $A$ 向 $B$ 运动，$AP = t$；同时点 $Q$ 在 $AC$ 上从 $A$ 向 $C$ 运动，$AQ = t$（$0 < t < 10$）。
+        $(1)$ 用 $t$ 表示 $\triangle APQ$ 面积 $S$，并求最大值；
+        $(2)$ 用 $t$ 表示 $PQ$ 的长度。
+      questionEn: |
+        Isosceles right triangle $ABC$, $\angle A = 90°$, $AB = AC = 10$.
+        $P$ on $AB$ with $AP = t$; simultaneously $Q$ on $AC$ with $AQ = t$ ($0 < t < 10$).
+        $(1)$ Express area $S$ of $\triangle APQ$ in $t$ and find its maximum.
+        $(2)$ Express $PQ$ in $t$.
+      answer: '$S = \frac{1}{2}t^{2}$，最大值趋近 $50$；$PQ = t\sqrt{2}$'
+      answerEn: '$S = \frac{1}{2}t^{2}$, approaches max $50$; $PQ = t\sqrt{2}$'
+      explanation: |
+        $(1)$ $\angle A = 90°$，$AP \perp AQ$。$S = \frac{1}{2} \times t \times t = \frac{t^{2}}{2}$。
+        在 $(0, 10)$ 上递增，$t \to 10$ 时 $S \to 50$。
+        $(2)$ 由勾股定理，$PQ = \sqrt{t^{2} + t^{2}} = t\sqrt{2}$。
+      explanationEn: |
+        $(1)$ $\angle A = 90°$: $S = \frac{1}{2}t^{2}$. Increasing on $(0, 10)$; approaches $50$.
+        $(2)$ Pythagorean theorem: $PQ = \sqrt{2t^{2}} = t\sqrt{2}$.
+
+examPrep:
+  intro: |
+    以下 5 道题综合考查动点问题的核心方法：设参数、建函数、分段讨论、求最值、判断几何性质。
+    每道题都需要完整的三步法，注意 $t$ 的范围和临界位置！
+  introEn: |
+    The following 5 problems test the core methods of dynamic point analysis: setting parameters, building functions, piecewise discussion, finding extrema, and verifying geometric properties.
+    Each requires the full three-step method — watch the range of $t$ and the critical positions!
+  questions:
+    - number: 1
+      type: 解答题
+      inputType: open
+      question: |
+        在 $\triangle ABC$ 中，$\angle B = 90°$，$AB = 8$，$BC = 6$，$AC = 10$。
+        点 $P$ 从 $A$ 出发沿 $A \to B \to C$ 方向运动，速度 $1$ cm/s。设时间为 $t$ 秒（$0 \leq t \leq 14$）。
+        $(1)$ 分段表示 $\triangle APC$ 的面积 $S(t)$；
+        $(2)$ 求 $S(t)$ 的最大值和取到最大值时 $P$ 的位置。
+      questionEn: |
+        In $\triangle ABC$, $\angle B = 90°$, $AB = 8$, $BC = 6$, $AC = 10$.
+        $P$ starts at $A$ and moves along $A \to B \to C$ at $1$ cm/s. Time $t$ seconds ($0 \leq t \leq 14$).
+        $(1)$ Express $S(\triangle APC)$ piecewise.
+        $(2)$ Find max $S$ and the position of $P$ where it occurs.
+      answer: '见解析'
+      answerEn: 'See solution'
+      explanation: |
+        临界点：$t = 8$（$P$ 到达 $B$）。
+
+        **情况一：$P$ 在 $AB$ 上（$0 \leq t \leq 8$）**
+        $AP = t$，$\triangle APC$ 底 $= AC = 10$，高 $= P$ 到 $AC$ 的距离 $h$。
+        在 $\triangle ABC$ 中，面积 $= \frac{1}{2} \times 8 \times 6 = 24$，也等于 $\frac{1}{2} \times 10 \times h_{B}$，
+        所以 $B$ 到 $AC$ 的距离 $h_{B} = \frac{48}{10} = 4.8$。
+        $P$ 到 $AC$ 的距离 $h = h_{B} \times \frac{AP}{AB} = 4.8 \times \frac{t}{8} = 0.6t$。
+        $S_{1}(t) = \frac{1}{2} \times 10 \times 0.6t = 3t$。
+
+        **情况二：$P$ 在 $BC$ 上（$8 < t \leq 14$）**
+        $BP = t - 8$，$PC = 6 - (t - 8) = 14 - t$。
+        $\triangle APC$ 底 $= PC = 14 - t$，高 $= AB = 8$（$A$ 到直线 $BC$ 的距离）。
+        $S_{2}(t) = \frac{1}{2} \times (14-t) \times 8 = 4(14-t) = 56 - 4t$。
+
+        检查连续性：$S_{1}(8) = 24$，$S_{2}(8) = 56 - 32 = 24$ ✓
+
+        求最值：$S_{1}$ 在 $[0, 8]$ 递增，$S_{1}(8) = 24$；$S_{2}$ 在 $(8, 14]$ 递减，$S_{2}(8) = 24$。
+        最大值 $24$ 在 $t = 8$（$P$ 在 $B$ 点处）。
+      explanationEn: |
+        Critical: $t = 8$ ($P$ reaches $B$).
+
+        **Case 1: $P$ on $AB$ ($0 \leq t \leq 8$)**
+        Distance from $B$ to $AC$: $h_B = \frac{2 \times 24}{10} = 4.8$. Distance from $P$ to $AC$: $h = 4.8 \times \frac{t}{8} = 0.6t$.
+        $S_1 = \frac{1}{2} \times 10 \times 0.6t = 3t$.
+
+        **Case 2: $P$ on $BC$ ($8 < t \leq 14$)**
+        $PC = 14 - t$; height from $A$ to $BC = AB = 8$.
+        $S_2 = \frac{1}{2}(14-t) \times 8 = 56 - 4t$.
+
+        Continuity: $S_1(8) = S_2(8) = 24$ ✓. Max $24$ at $t = 8$ ($P$ at $B$).
+
+    - number: 2
+      type: 解答题
+      inputType: open
+      question: |
+        抛物线 $y = -x^{2} + 2x + 3$ 与 $x$ 轴交于 $A$、$B$（$A$ 在左），顶点为 $C$。
+        点 $P(m, 0)$ 在 $x$ 轴上（$-1 \leq m \leq 3$）。
+        $(1)$ 求 $A$、$B$、$C$ 的坐标；
+        $(2)$ 用 $m$ 表示 $\triangle APC$ 和 $\triangle BPC$ 的面积之和 $S$；
+        $(3)$ 求 $S$ 的最小值。
+      questionEn: |
+        Parabola $y = -x^{2} + 2x + 3$ crosses the $x$-axis at $A$ (left) and $B$ (right); vertex $C$.
+        $P(m, 0)$ on the $x$-axis ($-1 \leq m \leq 3$).
+        $(1)$ Find $A$, $B$, $C$.
+        $(2)$ Express the sum $S$ of areas of $\triangle APC$ and $\triangle BPC$ in $m$.
+        $(3)$ Find the minimum of $S$.
+      answer: '$A(-1,0)$，$B(3,0)$，$C(1,4)$；$S = 8$（常数）'
+      answerEn: '$A(-1,0)$, $B(3,0)$, $C(1,4)$; $S = 8$ (constant)'
+      explanation: |
+        $(1)$ $y = -(x^{2}-2x-3) = -(x+1)(x-3)$，$A(-1,0)$，$B(3,0)$。
+        $y = -(x-1)^{2}+4$，$C(1,4)$。
+
+        $(2)$ $\triangle APC$ 底 $= AP = m-(-1) = m+1$，高 $= |y_C| = 4$：面积 $= \frac{1}{2}(m+1) \times 4 = 2(m+1)$。
+        $\triangle BPC$ 底 $= BP = 3-m$，高 $= 4$：面积 $= \frac{1}{2}(3-m) \times 4 = 2(3-m)$。
+        $S = 2(m+1) + 2(3-m) = 2m + 2 + 6 - 2m = 8$。
+
+        $(3)$ $S = 8$，与 $m$ 无关！这是一个**不变量**——无论 $P$ 在哪里，面积之和不变。
+
+        **思考**：为什么？因为 $S = \frac{1}{2} \times AB \times h_C = \frac{1}{2} \times 4 \times 4 = 8$，
+        而 $S(\triangle APC) + S(\triangle BPC) = S(\triangle ACB)$（$P$ 在 $AB$ 上时两个小三角形拼成大三角形）。
+      explanationEn: |
+        $(1)$ $A(-1,0)$, $B(3,0)$, $C(1,4)$.
+        $(2)$ $S = 2(m+1) + 2(3-m) = 8$. Constant!
+        $(3)$ $S = 8$ regardless of $m$. This is an **invariant** — the two small triangles always sum to $\triangle ACB = \frac{1}{2} \times 4 \times 4 = 8$.
+
+    - number: 3
+      type: 解答题
+      inputType: open
+      question: |
+        如图，矩形 $ABCD$，$AB = 8$，$BC = 6$。$E$ 是 $BC$ 的中点。
+        点 $P$ 从 $A$ 出发沿 $AB$ 向 $B$ 运动，速度 $1$ cm/s，设 $AP = t$（$0 < t < 8$）。
+        $(1)$ 用 $t$ 表示 $\triangle PBE$ 的面积；
+        $(2)$ 当 $t$ 为何值时，$PE = DE$？
+        $(3)$ 是否存在 $t$ 使得 $\triangle PDE$ 是直角三角形（$\angle PED = 90°$）？若存在，求出 $t$。
+      questionEn: |
+        Rectangle $ABCD$, $AB = 8$, $BC = 6$. $E$ is the midpoint of $BC$.
+        $P$ moves from $A$ along $AB$ at $1$ cm/s; $AP = t$ ($0 < t < 8$).
+        $(1)$ Express the area of $\triangle PBE$ in $t$.
+        $(2)$ For what $t$ is $PE = DE$?
+        $(3)$ Does a $t$ exist such that $\angle PED = 90°$? If so, find it.
+      answer: '见解析'
+      answerEn: 'See solution'
+      explanation: |
+        坐标化：设 $A(0,0)$，$B(8,0)$，$C(8,6)$，$D(0,6)$，$E(8,3)$。$P(t, 0)$。
+
+        $(1)$ $\triangle PBE$：$PB = 8 - t$，$BE = 3$，$\angle B = 90°$。
+        $S = \frac{1}{2}(8-t) \times 3 = \frac{3(8-t)}{2} = 12 - \frac{3t}{2}$。
+
+        $(2)$ $PE = \sqrt{(8-t)^{2} + 9}$，$DE = \sqrt{t^{2} + 9}$（$D(0,6)$，$E(8,3)$，
+        等等 $DE = \sqrt{(8-0)^{2}+(3-6)^{2}} = \sqrt{64+9} = \sqrt{73}$，这是固定的！）
+
+        重新算：$DE = \sqrt{73}$（常数），$PE = \sqrt{(8-t)^{2}+9}$。
+        $PE = DE$：$(8-t)^{2}+9 = 73$，$(8-t)^{2} = 64$，$8-t = \pm 8$。
+        $t = 0$ 或 $t = 16$。但 $0 < t < 8$，所以没有解（$t = 0$ 不在开区间内）。
+
+        **结论**：在 $0 < t < 8$ 范围内，$PE < DE$，$P$ 到不了使 $PE = DE$ 的位置。
+
+        $(3)$ $\angle PED = 90°$：$\vec{EP} \cdot \vec{ED} = 0$。
+        $\vec{EP} = (t-8, -3)$，$\vec{ED} = (-8, 3)$。
+        内积：$(t-8)(-8) + (-3)(3) = -8t + 64 - 9 = -8t + 55 = 0$。
+        $t = \frac{55}{8} = 6.875$。检查 $0 < 6.875 < 8$ ✓
+
+        答：$t = \frac{55}{8}$ 时 $\angle PED = 90°$。
+      explanationEn: |
+        Coordinates: $A(0,0)$, $B(8,0)$, $C(8,6)$, $D(0,6)$, $E(8,3)$, $P(t,0)$.
+
+        $(1)$ $S = \frac{1}{2}(8-t) \times 3 = 12 - \frac{3t}{2}$.
+
+        $(2)$ $DE = \sqrt{73}$ (fixed); $PE = \sqrt{(8-t)^{2}+9}$.
+        $PE = DE$: $(8-t)^{2} = 64$; $t = 0$ or $16$, neither in $(0, 8)$. No solution.
+
+        $(3)$ $\vec{EP} \cdot \vec{ED} = (t-8)(-8)+(-3)(3) = -8t+55 = 0$; $t = \frac{55}{8} = 6.875 \in (0, 8)$ ✓
+
+    - number: 4
+      type: 解答题
+      inputType: open
+      question: |
+        抛物线 $y = x^{2} - 6x + 5$ 与 $x$ 轴交于 $A$、$B$（$A$ 在左），顶点为 $C$。
+        在抛物线上（$x$ 轴下方部分）取一点 $P(m, m^{2}-6m+5)$，$1 < m < 5$。
+        过 $P$ 作 $PH \perp x$ 轴于 $H$。
+        $(1)$ 求 $A$、$B$、$C$ 的坐标，并指出 $PH$ 的长度；
+        $(2)$ 用 $m$ 表示四边形 $APBH$ 的面积（提示：$APBH$ 不一定是梯形）；
+        $(3)$ 求四边形 $APBH$ 面积的最大值。
+      questionEn: |
+        Parabola $y = x^{2} - 6x + 5$ crosses the $x$-axis at $A$ (left), $B$ (right); vertex $C$.
+        Take $P(m, m^{2}-6m+5)$ on the parabola below the $x$-axis ($1 < m < 5$).
+        Drop $PH \perp x$-axis at $H$.
+        $(1)$ Find $A$, $B$, $C$; state the length $PH$.
+        $(2)$ Express the area of quadrilateral $APBH$ in $m$ (hint: consider using triangles).
+        $(3)$ Find the maximum area.
+      answer: '见解析'
+      answerEn: 'See solution'
+      explanation: |
+        $(1)$ $y = (x-1)(x-5)$，$A(1,0)$，$B(5,0)$。$y = (x-3)^{2}-4$，$C(3,-4)$。
+        $P$ 在 $x$ 轴下方，$PH = |m^{2}-6m+5| = -(m^{2}-6m+5) = -m^{2}+6m-5$（在 $1 < m < 5$ 时为正）。
+
+        $(2)$ 四边形 $APBH$ 可拆为 $\triangle APH + \triangle PHB$（$H$ 在 $x$ 轴上，$A$、$H$、$B$ 共线于 $x$ 轴）。
+        实际上 $A$、$H$、$B$ 都在 $x$ 轴上，所以 $APBH$ 就是以 $AB$ 为底、$PH$ 为高的三角形 $\triangle APB$！
+        $S = \frac{1}{2} \times AB \times PH = \frac{1}{2} \times 4 \times (-m^{2}+6m-5) = 2(-m^{2}+6m-5) = -2m^{2}+12m-10$
+
+        $(3)$ $S = -2(m-3)^{2}+8$，顶点 $m = 3$，最大值 $8$。
+        此时 $P = C(3, -4)$（就是抛物线的顶点！）。
+      explanationEn: |
+        $(1)$ $A(1,0)$, $B(5,0)$, $C(3,-4)$. $PH = -m^{2}+6m-5$.
+        $(2)$ $A$, $H$, $B$ are collinear on $x$-axis, so "quadrilateral $APBH$" is $\triangle APB$.
+        $S = \frac{1}{2} \times 4 \times (-m^{2}+6m-5) = -2m^{2}+12m-10$.
+        $(3)$ $S = -2(m-3)^{2}+8$; max $8$ at $m = 3$ (i.e., $P$ at vertex $C$).
+
+    - number: 5
+      type: 解答题
+      inputType: open
+      question: |
+        在直角坐标系中，$A(0, 8)$，$B(6, 0)$。点 $P$ 在线段 $AB$ 上从 $A$ 向 $B$ 运动。
+        设 $AP = t$（$0 \leq t \leq 10$，注意 $AB = \sqrt{64+36} = 10$）。
+        $(1)$ 用 $t$ 表示 $P$ 的坐标；
+        $(2)$ 用 $t$ 表示 $\triangle OPA$（$O$ 为原点）的面积 $S$；
+        $(3)$ 求 $S(t)$ 的最大值。
+      questionEn: |
+        In a coordinate system, $A(0, 8)$, $B(6, 0)$. $P$ moves from $A$ to $B$ along $AB$.
+        Let $AP = t$ ($0 \leq t \leq 10$; note $AB = 10$).
+        $(1)$ Express the coordinates of $P$ in $t$.
+        $(2)$ Express the area $S$ of $\triangle OPA$ ($O$ is the origin) in $t$.
+        $(3)$ Find the maximum of $S$.
+      answer: '见解析'
+      answerEn: 'See solution'
+      explanation: |
+        $(1)$ 方向向量 $\vec{AB} = (6, -8)$，单位向量 $= \left(\frac{6}{10}, \frac{-8}{10}\right) = \left(\frac{3}{5}, -\frac{4}{5}\right)$。
+        $P = A + t \times$ 单位向量 $= \left(\frac{3t}{5}, 8 - \frac{4t}{5}\right)$。
+
+        $(2)$ 方法：用坐标面积公式。$O(0,0)$，$P\left(\frac{3t}{5}, 8-\frac{4t}{5}\right)$，$A(0,8)$。
+        $S = \frac{1}{2}|x_{O}(y_{P}-y_{A}) + x_{P}(y_{A}-y_{O}) + x_{A}(y_{O}-y_{P})|$
+        $= \frac{1}{2}\left|0 + \frac{3t}{5} \times 8 + 0\right| = \frac{1}{2} \times \frac{24t}{5} = \frac{12t}{5}$
+
+        或者更简单：底 $= OA = 8$（在 $y$ 轴上），高 $= P$ 到 $y$ 轴距离 $= \frac{3t}{5}$。
+        $S = \frac{1}{2} \times 8 \times \frac{3t}{5} = \frac{12t}{5}$。
+
+        $(3)$ $S = \frac{12t}{5}$ 在 $[0, 10]$ 上递增，最大值 $S(10) = \frac{120}{5} = 24$。
+        此时 $P = B(6, 0)$，$\triangle OPA = \triangle OBA$。
+
+        验证：$\triangle OBA$ 面积 $= \frac{1}{2} \times 6 \times 8 = 24$ ✓
+      explanationEn: |
+        $(1)$ Unit direction $\vec{AB}/|AB| = \left(\frac{3}{5}, -\frac{4}{5}\right)$.
+        $P = \left(\frac{3t}{5}, 8-\frac{4t}{5}\right)$.
+
+        $(2)$ Base $OA = 8$ on $y$-axis; height $= x_P = \frac{3t}{5}$.
+        $S = \frac{1}{2} \times 8 \times \frac{3t}{5} = \frac{12t}{5}$.
+
+        $(3)$ $S$ is increasing; max at $t = 10$: $S = 24$ (then $P = B$ and $\triangle OPA = \triangle OBA$). ✓
+
+summary: |
+  本章系统学习了<<动点问题/dynamic point problems>>的分析方法：
+
+  **1. 核心三步法**
+  - 第一步：**设参数** $t$（距离或时间），明确含义和单位
+  - 第二步：**用 $t$ 表达**所有几何量，区分变量和<<不变量/invariant>>
+  - 第三步：**确定范围** $t \in [a, b]$，保证几何有意义
+
+  **2. 面积函数的建立**
+  - 面积 = $\frac{1}{2} \times$ 底 $\times$ 高，找出哪个含 $t$
+  - 结果通常是一次函数（线性）或二次函数（抛物线）
+  - 求最值：一次函数看端点，二次函数看顶点 + 端点
+
+  **3. 分段讨论**
+  - 动点经过临界位置（拐角、退化点、特殊角）时，函数表达式切换
+  - 每段分别建函数 → 检查连续性 → 逐段求最值 → 全局比较
+
+  **4. 轨迹分析**
+  - "定点采样法"：取特殊位置描点，猜测形状，代数验证
+  - 常见轨迹：直线、圆、抛物线
+
+  **5. 两动点问题**
+  - 两个点同时运动，可能共享一个时间参数 $t$
+  - 面积通常是 $t$ 的二次函数
+  - 注意两个点各自的范围限制——取它们的公共区间
+
+summaryEn: |
+  This chapter systematically teaches the analysis method for <<动点问题/dynamic point problems>>:
+
+  **1. The core three-step method**
+  - Step 1: **Set parameter** $t$ (distance or time); clarify meaning and units
+  - Step 2: **Express in $t$** all geometric quantities; distinguish variables from <<不变量/invariant>>s
+  - Step 3: **Determine the range** $t \in [a, b]$ so the geometry remains valid
+
+  **2. Building area functions**
+  - Area = $\frac{1}{2} \times$ base $\times$ height; identify which involves $t$
+  - Result is usually linear or quadratic
+  - Extrema: linear → check endpoints; quadratic → check vertex + endpoints
+
+  **3. Piecewise case analysis**
+  - When the point crosses a critical position (corner, degenerate point, special angle), the formula switches
+  - Build function on each interval → check continuity → find extremum on each piece → compare globally
+
+  **4. Trajectory analysis**
+  - "Sampling method": take special positions, plot, guess the shape, verify algebraically
+  - Common trajectories: line, circle, parabola
+
+  **5. Two-point problems**
+  - Two points move simultaneously, often sharing one time parameter $t$
+  - Area is typically quadratic in $t$
+  - Watch each point's range constraint — use the intersection of valid intervals

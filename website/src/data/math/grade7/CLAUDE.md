@@ -8,7 +8,7 @@
 
 ## 章节目录
 
-### 上册（semester1，第 1–6 章）
+### 上册（semester1，第 1–6 章 + AMC 8 扩展）
 
 | 章 | 文件 | 标题 | SVG 图示状态 |
 |----|------|------|-------------|
@@ -17,18 +17,35 @@
 | 3 | `algebraic-expressions.yaml` | 代数式 | — |
 | 4 | `polynomials.yaml` | 整式的加减 | — |
 | 5 | `linear-equations.yaml` | 一元一次方程 | — |
-| 6 | `geometric-figures.yaml` | 几何图形初步 | ✅ 已有 SVG（ThreeViews, LineTypes, SegmentMidpoint, AngleDiagram, AngleBisector, ComplementarySupplementary） |
+| 6 | `geometric-figures.yaml` | 几何图形初步 | ✅ 已有 SVG |
+| 🏆7 | `amc8-number-theory-basics.yaml` | AMC 8：数论基础 | — |
 
-### 下册（semester2，第 7–12 章）
+### 下册（semester2，第 7–12 章 + AMC 8 扩展）
 
 | 章 | 文件 | 标题 | SVG 图示状态 |
 |----|------|------|-------------|
-| 7 | `intersecting-parallel-lines.yaml` | 相交线与平行线 | ✅ 已有 SVG（VerticalAdjacentAngles, PerpendicularLines, TransversalAngles, ParallelCriteria, ParallelProperties, PropositionDiagram） |
+| 7 | `intersecting-parallel-lines.yaml` | 相交线与平行线 | ✅ 已有 SVG |
 | 8 | `real-numbers.yaml` | 实数 | — |
-| 9 | `coordinate-system.yaml` | 平面直角坐标系 | ✅ 已有 SVG（CartesianSystem, OrderedPairDiagram, CoordinateTranslation） |
+| 9 | `coordinate-system.yaml` | 平面直角坐标系 | ✅ 已有 SVG |
 | 10 | `systems-of-equations.yaml` | 二元一次方程组 | — |
 | 11 | `inequalities.yaml` | 不等式与不等式组 | — |
 | 12 | `data-collection.yaml` | 数据的收集、整理与描述 | — |
+| 🏆13 | `amc8-counting-combinatorics.yaml` | AMC 8：计数与组合基础 | — |
+| 🏆14 | `amc8-word-problems.yaml` | AMC 8：应用题建模 | — |
+
+---
+
+## AMC 8 扩展章节说明
+
+七年级共 3 个 AMC 8 扩展章节，题目来源于 AoPS Wiki 抓取的 **2016–2024 年 AMC 8 真题**：
+
+| 章节 | 题目数 | 真题来源年份 | 覆盖的 AMC 8 差异 |
+|------|--------|------------|------------------|
+| 数论基础 | 24 (4例+15练+5提升) | 2016–2024 | 整除判断、质因数分解、GCD/LCM、数字题 |
+| 计数与组合 | 21 (4例+12练+5提升) | 2016–2024 | 排列组合、补集计数、分类讨论（人教版未覆盖） |
+| 应用题建模 | 21 (4例+12练+5提升) | 2016–2024 | 行程/工程/浓度、比例百分数、代数建模 |
+
+**重要**：所有标注 `source: "AMC 8 YYYY #N"` 的题目必须是真题，不得自行编写后虚假标注来源。
 
 ---
 

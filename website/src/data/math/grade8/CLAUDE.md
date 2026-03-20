@@ -8,25 +8,44 @@
 
 ## 章节目录
 
-### 上册（semester1，第 1–6 章）
+### 上册（semester1，第 1–6 章 + AMC 8 扩展）
 
 | 章 | 文件 | 标题 | SVG 图示状态 |
 |----|------|------|-------------|
-| 1 | `triangles.yaml` | 三角形 | ✅ 6 个 SVG（TriangleSides, TriangleClassification, TriangleSpecialLines, ExteriorAngleTheorem, PolygonAngleSum, TriangleStability） |
-| 2 | `congruent-triangles.yaml` | 全等三角形 | ✅ 6 个 SVG（CongruentFigures, PropertiesOfCongruent, SSS/SAS, ASA/AAS, HL, AuxiliaryLines） |
-| 3 | `line-symmetry.yaml` | 轴对称 | ✅ 7 个 SVG（LineSymmetricFigure, TwoFiguresSymmetric, PerpendicularBisector, AngleBisectorProperty, IsoscelesTriangleProperties, IsoscelesTriangleCriterion, EquilateralTriangle） |
+| 1 | `triangles.yaml` | 三角形 | ✅ 6 个 SVG |
+| 2 | `congruent-triangles.yaml` | 全等三角形 | ✅ 6 个 SVG |
+| 3 | `line-symmetry.yaml` | 轴对称 | ✅ 7 个 SVG |
 | 4 | `polynomial-multiplication.yaml` | 整式乘法 | — |
 | 5 | `factorization.yaml` | 因式分解 | — |
 | 6 | `algebraic-fractions.yaml` | 分式 | — |
+| 🏆7 | `amc8-triangle-area.yaml` | AMC 8：三角形面积与海伦公式 | — |
+| 🏆8 | `amc8-advanced-geometry.yaml` | AMC 8：几何进阶 | — |
+| 🏆9 | `amc8-logic-strategy.yaml` | AMC 8：逻辑与策略 | — |
 
-### 下册（semester2，第 7–10 章）
+### 下册（semester2，第 7–10 章 + AMC 8 扩展）
 
 | 章 | 文件 | 标题 | SVG 图示状态 |
 |----|------|------|-------------|
-| 7 | `pythagorean-theorem.yaml` | 勾股定理 | ✅ 6 个 SVG（PythagoreanDiscovery, PythagoreanStatement, Applications, ConverseTheorem, PythagoreanTriples, SpecialRightTriangles） |
-| 8 | `quadrilaterals.yaml` | 四边形 | ❌ 7 个概念有 hasVisualization:true，但 diagramMap 尚未注册 |
-| 9 | `linear-functions.yaml` | 一次函数 | ❌ 5 个概念有 hasVisualization:true，diagramMap 尚未注册 |
+| 7 | `pythagorean-theorem.yaml` | 勾股定理 | ✅ 6 个 SVG |
+| 8 | `quadrilaterals.yaml` | 四边形 | ❌ 待注册 SVG |
+| 9 | `linear-functions.yaml` | 一次函数 | ❌ 待注册 SVG |
 | 10 | `data-analysis.yaml` | 数据分析 | — |
+| 🏆11 | `amc8-probability-intro.yaml` | AMC 8：概率入门 | — |
+
+---
+
+## AMC 8 扩展章节说明
+
+八年级共 4 个 AMC 8 扩展章节，题目来源于 AoPS Wiki 抓取的 **2016–2024 年 AMC 8 真题**：
+
+| 章节 | 题目数 | 覆盖的 AMC 8 差异 |
+|------|--------|------------------|
+| 三角形面积与海伦公式 | 21 | 海伦公式、坐标面积、鞋带公式、四边形分解（人教版未覆盖海伦公式） |
+| 几何进阶 | 21 | 复合图形面积、坐标几何技巧、几何变换、圆与扇形面积 |
+| 逻辑与策略 | 21 | 抽屉原理、奇偶分析、不变量、逆推排除（人教版未覆盖） |
+| 概率入门 | 21 | 基础概率、计数求概率、独立事件、条件概率（人教版九年级才教，提前至八下） |
+
+**重要**：所有标注 `source: "AMC 8 YYYY #N"` 的题目必须是真题，不得自行编写后虚假标注来源。
 
 ---
 
@@ -90,7 +109,7 @@ direct-proportion-function, function-applications
 - 中文引号 `"..."` → 改用 YAML 单引号
 - 单引号字符串内出现英文撇号（如 `Boyle's`）→ 改用 YAML 双引号
 - 每次修改后验证：`node -e "yaml.load(fs.readFileSync('xxx.yaml','utf8'))"`
-- 修改后运行 `npx next build` 确认 101/101 页面无误
+- 修改后运行 `npx next build` 确认所有页面无误（当前 108 页）
 
 ---
 

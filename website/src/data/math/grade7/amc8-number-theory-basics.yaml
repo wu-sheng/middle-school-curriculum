@@ -274,97 +274,128 @@ concepts:
 
 examples:
   - type: 1
-    source: "AMC 8 2012 #5"
-    title: 质因数分解求因数个数
-    titleEn: Counting Factors via Prime Factorization
-    question: '正整数 $360$ 共有多少个正因数？'
-    questionEn: 'How many positive factors does $360$ have?'
+    source: "AMC 8 2016 #5"
+    title: 整除判断——余数条件交叉
+    titleEn: Divisibility — Intersecting Remainder Conditions
+    question: |
+      两位数 $N$ 满足：$N$ 除以 9 余 1，$N$ 除以 10 余 3。
+      求 $N$ 除以 11 的余数。
+
+      (A) 0 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 5 &emsp; (E) 7
+    questionEn: |
+      The number $N$ is a two-digit number.
+      When $N$ is divided by 9, the remainder is 1.
+      When $N$ is divided by 10, the remainder is 3.
+      What is the remainder when $N$ is divided by 11?
+
+      (A) 0 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 5 &emsp; (E) 7
     steps:
-      - '用因数树分解（见下图）：$360 = 2^3 \times 3^2 \times 5^1$'
-      - '每个因数形如 $2^a \times 3^b \times 5^c$，其中 $0 \le a \le 3$，$0 \le b \le 2$，$0 \le c \le 1$'
-      - '$a$ 有 4 种选法，$b$ 有 3 种，$c$ 有 2 种'
-      - '由乘法原理，因数个数 $= (3+1)(2+1)(1+1) = 24$'
+      - '$N$ 除以 10 余 3，说明 $N$ 的个位是 3。两位数中个位为 3 的有：13, 23, 33, 43, 53, 63, 73, 83, 93'
+      - '$N$ 除以 9 余 1，即 $N \equiv 1 \pmod{9}$。满足条件的两位数：10, 19, 28, 37, 46, 55, 64, 73, 82, 91'
+      - '取交集：同时满足两个条件的只有 $N = 73$'
+      - '验证：$73 \div 9 = 8 \cdots 1$ ✓，$73 \div 10 = 7 \cdots 3$ ✓'
+      - '$73 \div 11 = 6 \cdots 7$，余数为 $\mathbf{7}$'
     stepsEn:
-      - 'Factor tree (see diagram below): $360 = 2^3 \times 3^2 \times 5^1$'
-      - 'Each factor has the form $2^a \times 3^b \times 5^c$ where $0 \le a \le 3$, $0 \le b \le 2$, $0 \le c \le 1$'
-      - '$a$ has 4 choices, $b$ has 3 choices, $c$ has 2 choices'
-      - 'By the multiplication principle: $(3+1)(2+1)(1+1) = 24$'
-    stepsDiagram: factor-tree
-    answer: '24 个正因数'
-    answerEn: '24 positive factors'
+      - '$N$ mod 10 = 3 means $N$ ends in 3. Two-digit numbers ending in 3: 13, 23, 33, 43, 53, 63, 73, 83, 93'
+      - '$N$ mod 9 = 1 means $N \equiv 1 \pmod{9}$. Two-digit numbers: 10, 19, 28, 37, 46, 55, 64, 73, 82, 91'
+      - 'Intersection: only $N = 73$ satisfies both conditions'
+      - 'Check: $73 \div 9 = 8$ R $1$ ✓, $73 \div 10 = 7$ R $3$ ✓'
+      - '$73 \div 11 = 6$ R $7$. The remainder is $\mathbf{7}$'
+    answer: '(E) 7'
+    answerEn: '(E) 7'
 
   - type: 2
-    source: "AMC 8 2014 #2"
-    title: LCM 应用——班车同时到站
-    titleEn: LCM Application — Synchronized Buses
+    source: "AMC 8 2018 #18"
+    title: 质因数分解求因数个数
+    titleEn: Counting Factors via Prime Factorization
     question: |
-      上午 8:00，A 路公交车和 B 路公交车同时从车站出发。A 路车每隔 10 分钟发一班，B 路车每隔 15 分钟发一班。
-      当天上午，它们**第三次同时**到达车站是几点？
+      正整数 $23{,}232$ 共有多少个正因数？
 
-      （AMC 8 2014 同类题型）
+      (A) 9 &emsp; (B) 12 &emsp; (C) 28 &emsp; (D) 36 &emsp; (E) 42
     questionEn: |
-      At 8:00 AM, Bus A and Bus B both depart from a station. Bus A runs every 10 minutes, Bus B every 15 minutes.
-      What time do they **arrive together for the third time** that morning?
+      How many positive factors does $23{,}232$ have?
 
-      (Same type as AMC 8 2014)
+      (A) 9 &emsp; (B) 12 &emsp; (C) 28 &emsp; (D) 36 &emsp; (E) 42
     steps:
-      - '先求每次同时到站的时间间隔 = LCM(10, 15)'
-      - '$10 = 2 \times 5$，$15 = 3 \times 5$，LCM $= 2 \times 3 \times 5 = 30$ 分钟'
-      - '第 1 次同时：8:00 + 30 = 8:30；第 2 次：8:30 + 30 = 9:00；第 3 次：9:00 + 30 = 9:30'
+      - '逐步做质因数分解：$23232 \div 2 = 11616$，$\div 2 = 5808$，$\div 2 = 2904$，$\div 2 = 1452$，$\div 2 = 726$，$\div 2 = 363$'
+      - '此时已经除了 6 个 2：$23232 = 2^6 \times 363$'
+      - '$363 = 3 \times 121 = 3 \times 11^2$'
+      - '所以 $23232 = 2^6 \times 3^1 \times 11^2$'
+      - '因数个数公式：$(6+1)(1+1)(2+1) = 7 \times 2 \times 3 = 42$'
     stepsEn:
-      - 'Find the time between each simultaneous arrival = LCM(10, 15)'
-      - '$10 = 2 \times 5$, $15 = 3 \times 5$, LCM $= 2 \times 3 \times 5 = 30$ minutes'
-      - '1st: 8:30 AM; 2nd: 9:00 AM; 3rd: 9:30 AM'
-    answer: '9:30 AM（上午 9 时 30 分）'
-    answerEn: '9:30 AM'
+      - 'Factor step by step: $23232 \div 2 = 11616$, $\div 2 = 5808$, $\div 2 = 2904$, $\div 2 = 1452$, $\div 2 = 726$, $\div 2 = 363$'
+      - 'We divided by 2 six times: $23232 = 2^6 \times 363$'
+      - '$363 = 3 \times 121 = 3 \times 11^2$'
+      - 'So $23232 = 2^6 \times 3^1 \times 11^2$'
+      - 'Factor count formula: $(6+1)(1+1)(2+1) = 7 \times 2 \times 3 = 42$'
+    answer: '(E) 42'
+    answerEn: '(E) 42'
 
   - type: 3
-    source: "AMC 8 2011 #4"
-    title: 整除性判断综合
-    titleEn: Combined Divisibility Check
+    source: "AMC 8 2016 #20"
+    title: LCM 综合推理
+    titleEn: LCM Reasoning with Multiple Variables
     question: |
-      在 1 到 100 之间（含 1 和 100），有多少个正整数**既能被 4 整除，又能被 6 整除**？
+      $a$ 和 $b$ 的最小公倍数是 12，$b$ 和 $c$ 的最小公倍数是 15。
+      求 $a$ 和 $c$ 的最小公倍数的最小可能值。
 
-      （AMC 8 2011 同类题型）
+      (A) 20 &emsp; (B) 30 &emsp; (C) 60 &emsp; (D) 120 &emsp; (E) 180
     questionEn: |
-      How many positive integers from 1 to 100 (inclusive) are **divisible by both 4 and 6**?
+      The least common multiple of $a$ and $b$ is 12, and the least common multiple of $b$ and $c$ is 15.
+      What is the least possible value of the least common multiple of $a$ and $c$?
 
-      (Same type as AMC 8 2011)
+      (A) 20 &emsp; (B) 30 &emsp; (C) 60 &emsp; (D) 120 &emsp; (E) 180
     steps:
-      - '同时被 4 和 6 整除，等价于被 LCM(4, 6) 整除'
-      - 'LCM(4, 6)：$4 = 2^2$，$6 = 2 \times 3$，LCM $= 2^2 \times 3 = 12$'
-      - '1 到 100 内被 12 整除的数：$12, 24, 36, 48, 60, 72, 84, 96$，共 $\lfloor 100 \div 12 \rfloor = 8$ 个'
+      - '$\text{LCM}(a,b)=12$ 说明 $b \mid 12$；$\text{LCM}(b,c)=15$ 说明 $b \mid 15$'
+      - '所以 $b$ 必须整除 $\gcd(12,15)=3$，即 $b \in \{1, 3\}$'
+      - '**情况一** $b=3$：$\text{LCM}(a,3)=12$，$a$ 需要因子 $2^2$，最小取 $a=4$（$\text{LCM}(4,3)=12$ ✓）。$\text{LCM}(3,c)=15$，$c$ 需要因子 5，最小取 $c=5$（$\text{LCM}(3,5)=15$ ✓）。此时 $\text{LCM}(4,5)=20$'
+      - '**情况二** $b=1$：$a=12$，$c=15$，$\text{LCM}(12,15)=60$'
+      - '最小值为 $\mathbf{20}$'
     stepsEn:
-      - 'Divisible by both 4 and 6 means divisible by LCM(4, 6)'
-      - 'LCM(4, 6): $4=2^2$, $6=2\times3$, LCM $= 2^2\times3 = 12$'
-      - 'Multiples of 12 up to 100: $12, 24, ..., 96$ → $\lfloor 100 \div 12 \rfloor = 8$ numbers'
-    answer: '8 个'
-    answerEn: '8'
+      - '$\text{LCM}(a,b)=12$ means $b \mid 12$; $\text{LCM}(b,c)=15$ means $b \mid 15$'
+      - 'So $b$ must divide $\gcd(12,15)=3$, giving $b \in \{1, 3\}$'
+      - '**Case 1** $b=3$: $\text{LCM}(a,3)=12$ requires $a$ to have $2^2$; smallest $a=4$ ($\text{LCM}(4,3)=12$ ✓). $\text{LCM}(3,c)=15$ requires $c$ to have 5; smallest $c=5$ ($\text{LCM}(3,5)=15$ ✓). Then $\text{LCM}(4,5)=20$'
+      - '**Case 2** $b=1$: $a=12$, $c=15$, $\text{LCM}(12,15)=60$'
+      - 'Minimum is $\mathbf{20}$'
+    answer: '(A) 20'
+    answerEn: '(A) 20'
 
   - type: 4
-    source: "AMC 8 2019 #9"
-    title: 数字题——两位数与反转数
-    titleEn: Digit Problem — Two-Digit Number and Its Reverse
+    source: "AMC 8 2016 #24"
+    title: 数字题——多条件约束
+    titleEn: Digit Problem — Multiple Constraints
     question: |
-      一个两位数，十位数字比个位数字大 3。这个两位数与它的**反转数**（把十位和个位对换）之差是多少？
+      用数字 1, 2, 3, 4, 5 各一次组成五位数 $PQRST$。
+      要求：三位数 $PQR$ 能被 4 整除，三位数 $QRS$ 能被 5 整除，三位数 $RST$ 能被 3 整除。
+      求 $P$ 的值。
 
-      （考查 AMC 8 2019 #9 同类技巧）
+      (A) 1 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 4 &emsp; (E) 5
     questionEn: |
-      A two-digit number has a tens digit that is 3 more than its units digit. What is the difference between this two-digit number and its **reverse** (digits swapped)?
+      The digits 1, 2, 3, 4, and 5 are each used once to write a five-digit number $PQRST$.
+      The three-digit number $PQR$ is divisible by 4, $QRS$ is divisible by 5, and $RST$ is divisible by 3.
+      What is $P$?
 
-      (Tests the same skill as AMC 8 2019 #9)
+      (A) 1 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 4 &emsp; (E) 5
     steps:
-      - '设十位数字为 $a$，个位数字为 $b$，则 $a = b + 3$'
-      - '原数 $= 10a + b$，反转数 $= 10b + a$'
-      - '差 $= (10a + b) - (10b + a) = 9(a - b) = 9 \times 3 = 27$'
-      - '注意：无论 $b$ 取何值（只要合法），差都是 27。例：$a=4,b=1$ → 41−14=27；$a=7,b=4$ → 74−47=27'
+      - '$QRS$ 能被 5 整除，末位 $S$ 必须是 0 或 5。数字只有 1–5，所以 $S=5$'
+      - '剩余数字 $\{1,2,3,4\}$ 分配给 $P,Q,R,T$'
+      - '$PQR$ 能被 4 整除，等价于末两位 $QR$ 能被 4 整除。用 $\{1,2,3,4\}$ 中两个数字组成能被 4 整除的两位数：$12$、$24$、$32$'
+      - '**试 $QR=12$**：$Q=1, R=2, S=5$。$R+S+T = 2+5+T = 7+T$。$T \in \{3,4\}$：$7+3=10$（不整除3），$7+4=11$（不整除3）。无解'
+      - '**试 $QR=24$**：$Q=2, R=4, S=5$。$R+S+T = 4+5+T = 9+T$。$T \in \{1,3\}$：$9+1=10$（不整除3），$9+3=12$（整除3 ✓）。所以 $T=3, P=1$'
+      - '**试 $QR=32$**：$Q=3, R=2, S=5$。$R+S+T = 2+5+T = 7+T$。$T \in \{1,4\}$：$7+1=8$（不整除3），$7+4=11$（不整除3）。无解'
+      - '验证 $PQRST = 12453$：$124 \div 4 = 31$ ✓，$245 \div 5 = 49$ ✓，$4+5+3 = 12$ 整除 3 ✓'
+      - '唯一解 $P = \mathbf{1}$'
     stepsEn:
-      - 'Let tens digit = $a$, units digit = $b$, so $a = b+3$'
-      - 'Original number $= 10a+b$, reversed $= 10b+a$'
-      - 'Difference $= (10a+b)-(10b+a) = 9(a-b) = 9\times3 = 27$'
-      - 'The answer is always 27 regardless of the specific value of $b$. E.g.: 41−14=27, 74−47=27'
-    answer: '27'
-    answerEn: '27'
+      - '$QRS$ divisible by 5 means $S$ is 0 or 5. Since digits are 1–5, $S=5$'
+      - 'Remaining digits $\{1,2,3,4\}$ go to $P,Q,R,T$'
+      - '$PQR$ divisible by 4 means last two digits $QR$ divisible by 4. From $\{1,2,3,4\}$: $QR \in \{12, 24, 32\}$'
+      - '**Try $QR=12$**: $R=2, S=5$. $R+S+T=7+T$. $T \in \{3,4\}$: neither gives a multiple of 3. No solution'
+      - '**Try $QR=24$**: $R=4, S=5$. $R+S+T=9+T$. $T=3$: $9+3=12$ divisible by 3 ✓. So $T=3, P=1$'
+      - '**Try $QR=32$**: $R=2, S=5$. $R+S+T=7+T$. $T \in \{1,4\}$: neither works. No solution'
+      - 'Verify $PQRST=12453$: $124/4=31$ ✓, $245/5=49$ ✓, $4+5+3=12$ divisible by 3 ✓'
+      - 'Unique solution: $P = \mathbf{1}$'
+    answer: '(A) 1'
+    answerEn: '(A) 1'
 
 exercises:
   timeGuide:
@@ -378,429 +409,586 @@ exercises:
         time: GCD / LCM（约 10 分钟）
       - range: "13–15"
         time: 数字题（约 10 分钟）
+  scaffold:
+    - title: '铺垫：整除判断热身'
+      titleEn: 'Warm-up: Divisibility Check'
+      question: '判断 234 能否被 3 整除？写出你的判断步骤。'
+      questionEn: 'Can 234 be divided by 3? Write your reasoning step by step.'
+      hint: '把各位数字加起来：2+3+4=?'
+      hintEn: 'Add the digits: 2+3+4=?'
+      answer: '2+3+4=9，9能被3整除，所以234能被3整除。'
+      answerEn: '2+3+4=9, which is divisible by 3, so 234 is divisible by 3.'
+    - title: '铺垫：质因数分解热身'
+      titleEn: 'Warm-up: Prime Factorization'
+      question: '把 60 分解成质因数的乘积。画一棵因数树试试。'
+      questionEn: 'Write 60 as a product of prime factors. Try drawing a factor tree.'
+      hint: '60=2×30，继续拆 30=2×15，15=3×5'
+      hintEn: '60=2×30, then 30=2×15, then 15=3×5'
+      answer: '$60 = 2^{2} \times 3 \times 5$'
+      answerEn: '$60 = 2^{2} \times 3 \times 5$'
+    - title: '铺垫：LCM 热身'
+      titleEn: 'Warm-up: Finding LCM'
+      question: '用列举法找 4 和 6 的最小公倍数：写出 4 的倍数和 6 的倍数，找到第一个公共的。'
+      questionEn: 'Find the LCM of 4 and 6 by listing: write multiples of 4 and multiples of 6, find the first common one.'
+      hint: '4的倍数：4, 8, 12, 16, ... 6的倍数：6, 12, 18, ...'
+      hintEn: 'Multiples of 4: 4, 8, 12, 16, ... Multiples of 6: 6, 12, 18, ...'
+      answer: '第一个公共倍数是 12，所以 LCM(4,6) = 12。'
+      answerEn: 'The first common multiple is 12, so LCM(4,6) = 12.'
   questions:
     - number: 1
       type: 单选题
       inputType: mc
-      source: "AMC 8 2010 #5"
+      source: "AMC 8 2024 #1"
       section: 整除判断
-      question: '以下哪个数**不能**被 3 整除？'
-      questionEn: 'Which of the following is NOT divisible by 3?'
+      question: '$222{,}222 - 22{,}222 - 2{,}222 - 222 - 22 - 2$ 的个位数字是多少？'
+      questionEn: 'What is the ones digit of $222{,}222 - 22{,}222 - 2{,}222 - 222 - 22 - 2$?'
       choices:
         - label: A
-          content: '111'
+          content: '0'
         - label: B
-          content: '222'
+          content: '2'
         - label: C
-          content: '333'
+          content: '4'
         - label: D
-          content: '444'
+          content: '6'
         - label: E
-          content: '556'
-      correctValue: E
-      answer: 'E：556'
+          content: '8'
+      correctValue: B
+      answer: '(B) 2'
+      answerEn: '(B) 2'
       explanation: |
-        逐一验证各位数字之和：
-        A: 1+1+1=3 ✓  B: 2+2+2=6 ✓  C: 3+3+3=9 ✓  D: 4+4+4=12 ✓
-        E: 5+5+6=16，16 不能被 3 整除，所以 556 不能被 3 整除。
+        只需关注个位运算：$2 - 2 - 2 - 2 - 2 - 2$。
+        逐步计算（注意借位）：$222222 - 22222 = 200000$，个位 0。
+        $200000 - 2222 = 197778$，$197778 - 222 = 197556$，$197556 - 22 = 197534$，$197534 - 2 = 197532$。
+        个位数字为 $\mathbf{2}$。
+      explanationEn: |
+        Focus on the ones digit: step by step subtraction.
+        $222222 - 22222 = 200000$. $200000 - 2222 = 197778$. $197778 - 222 = 197556$.
+        $197556 - 22 = 197534$. $197534 - 2 = 197532$.
+        The ones digit is $\mathbf{2}$.
 
     - number: 2
       type: 单选题
       inputType: mc
-      source: "AMC 8 2015 #6"
+      source: "AMC 8 2018 #7"
       section: 整除判断
       question: |
-        六位数 $\overline{2A1B3C}$ 能被 9 整除（其中 $A,B,C$ 各是一位数字）。
-        若 $A = 1$，$C = 2$，则 $B$ 的所有可能值之和是多少？
+        五位数 $2018U$ 能被 9 整除。这个数除以 8 的余数是多少？
       questionEn: |
-        The six-digit number $\overline{2A1B3C}$ is divisible by 9 (where $A$, $B$, $C$ are single digits).
-        If $A=1$ and $C=2$, what is the sum of all possible values of $B$?
+        The 5-digit number $2018U$ is divisible by 9. What is the remainder when this number is divided by 8?
+      choices:
+        - label: A
+          content: '1'
+        - label: B
+          content: '3'
+        - label: C
+          content: '5'
+        - label: D
+          content: '6'
+        - label: E
+          content: '7'
+      correctValue: B
+      answer: '(B) 3'
+      answerEn: '(B) 3'
+      explanation: |
+        被 9 整除：各位数字之和 $2+0+1+8+U = 11+U$ 必须是 9 的倍数。
+        $U$ 是一位数字（0–9），$11+U$ 在 11–20 之间，唯一的 9 的倍数是 18，所以 $U=7$。
+        该数为 $20187$。除以 8 看末三位：$187 \div 8 = 23 \cdots 3$。
+        余数为 $\mathbf{3}$。
+      explanationEn: |
+        Divisibility by 9: digit sum $2+0+1+8+U = 11+U$ must be a multiple of 9.
+        Since $U$ is a single digit, $11+U \in [11,20]$, so $11+U=18$, giving $U=7$.
+        The number is 20187. For mod 8, check last three digits: $187 = 23 \times 8 + 3$.
+        Remainder is $\mathbf{3}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #9"
+      section: 整除判断
+      question: '2016 的所有不同质因数之和是多少？'
+      questionEn: 'What is the sum of the distinct prime integer divisors of 2016?'
+      choices:
+        - label: A
+          content: '9'
+        - label: B
+          content: '12'
+        - label: C
+          content: '16'
+        - label: D
+          content: '49'
+        - label: E
+          content: '63'
+      correctValue: B
+      answer: '(B) 12'
+      answerEn: '(B) 12'
+      explanation: |
+        做质因数分解：$2016 \div 2 = 1008$，$\div 2 = 504$，$\div 2 = 252$，$\div 2 = 126$，$\div 2 = 63$。
+        $63 = 7 \times 9 = 7 \times 3^2$。
+        所以 $2016 = 2^5 \times 3^2 \times 7$，不同质因数为 2、3、7。
+        和 $= 2 + 3 + 7 = \mathbf{12}$。
+      explanationEn: |
+        Prime factorization: $2016 = 2^5 \times 3^2 \times 7$.
+        Distinct primes: 2, 3, 7. Sum $= 2+3+7 = \mathbf{12}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2024 #5"
+      section: 整除判断
+      question: |
+        Aaliyah 投掷两个标准六面骰子，发现两个数的乘积是 6 的倍数。
+        以下哪个数**不可能**是两个数的和？
+      questionEn: |
+        Aaliyah rolls two standard 6-sided dice. She notices that the product of the two numbers rolled is a multiple of 6.
+        Which of the following integers cannot be the sum of the two numbers?
       choices:
         - label: A
           content: '5'
         - label: B
           content: '6'
         - label: C
+          content: '7'
+        - label: D
+          content: '8'
+        - label: E
           content: '9'
-        - label: D
-          content: '14'
-        - label: E
-          content: '18'
-      correctValue: C
-      answer: 'C：9'
+      correctValue: B
+      answer: '(B) 6'
+      answerEn: '(B) 6'
       explanation: |
-        各位之和 $= 2+1+1+B+3+2 = 9+B$。
-        要被 9 整除，需要 $9+B$ 是 9 的倍数。
-        因为 $B$ 是一位数字（0–9），$9+B$ 的范围是 9–18。
-        满足条件的：$9+B=9$（$B=0$）或 $9+B=18$（$B=9$）。
-        所有可能值之和 $= 0 + 9 = 9$。
-
-    - number: 3
-      type: 单选题
-      inputType: mc
-      source: "AMC 8 2018 #3"
-      section: 整除判断
-      question: |
-        某学校有 864 名学生。这个数能被以下哪些数整除？
-        （只选一个最多的答案）
-      questionEn: |
-        A school has 864 students. Which of the following numbers divides 864?
-      choices:
-        - label: A
-          content: '只有 2 和 3'
-        - label: B
-          content: '2、3 和 4'
-        - label: C
-          content: '2、3、4 和 9'
-        - label: D
-          content: '2、3、4、9 和 16'
-        - label: E
-          content: '2、3、4、6、8、9 和 16'
-      correctValue: E
-      answer: 'E：全部'
-      explanation: |
-        $864 = 2^5 \times 3^3 = 32 \times 27$
-
-        逐项验证：
-        - ÷2：末位 4 是偶数 ✓
-        - ÷3：$8+6+4=18$，18 是 3 的倍数 ✓
-        - ÷4：末两位 64，$64÷4=16$ ✓
-        - ÷6：同时满足 ÷2 和 ÷3 ✓
-        - ÷8：末三位 864，$864÷8=108$ ✓
-        - ÷9：各位和 18，18 是 9 的倍数 ✓
-        - ÷16：$864÷16=54$ ✓
-
-    - number: 4
-      type: 填空题
-      inputType: blank
-      source: "AMC 8 2022 #4"
-      section: 整除判断
-      question: |
-        $1$ 到 $100$ 之间（含两端），能被 $5$ 整除但不能被 $10$ 整除的正整数有多少个？
-      questionEn: |
-        How many positive integers from 1 to 100 (inclusive) are divisible by 5 but not by 10?
-      correctValue: '10'
-      answer: '10 个'
-      explanation: |
-        能被 5 整除：5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100，共 20 个。
-        其中能被 10 整除的（末位为 0）：10, 20, 30, ..., 100，共 10 个。
-        答案：$20 - 10 = 10$ 个。
-        规律：能被 5 但不被 10 整除的数，末位必须是 5（不是 0），如 5, 15, 25, ..., 95，正好 10 个。
+        乘积是 6 的倍数，需要同时有因子 2 和因子 3。
+        列出所有满足条件的骰子对及其和：
+        $(1,6) \to 7$，$(2,3) \to 5$，$(2,6) \to 8$，$(3,2) \to 5$，$(3,4) \to 7$，$(3,6) \to 9$，
+        $(4,3) \to 7$，$(4,6) \to 10$，$(5,6) \to 11$，$(6,1) \to 7$，$(6,2) \to 8$，$(6,3) \to 9$，
+        $(6,4) \to 10$，$(6,5) \to 11$，$(6,6) \to 12$。
+        可能的和：$\{5, 7, 8, 9, 10, 11, 12\}$。和为 6 不可能。
+      explanationEn: |
+        Product is a multiple of 6, so it needs both a factor of 2 and a factor of 3.
+        List all valid dice pairs and sums:
+        $(1,6)\to7$, $(2,3)\to5$, $(2,6)\to8$, $(3,4)\to7$, $(3,6)\to9$, $(4,6)\to10$, $(5,6)\to11$, $(6,6)\to12$, etc.
+        Possible sums: $\{5,7,8,9,10,11,12\}$. Sum $= 6$ is impossible.
 
     - number: 5
       type: 单选题
       inputType: mc
-      source: "AMC 8 2011 #14"
+      source: "AMC 8 2016 #7"
       section: 质因数分解
       question: |
-        正整数 $M$ 恰好有 $12$ 个正因数。$M$ 最小是多少？
+        以下哪个数**不是**完全平方数？
+
+        (A) $1^{2016}$ &emsp; (B) $2^{2017}$ &emsp; (C) $3^{2018}$ &emsp; (D) $4^{2019}$ &emsp; (E) $5^{2020}$
       questionEn: |
-        Positive integer $M$ has exactly 12 positive factors. What is the smallest possible value of $M$?
+        Which of the following numbers is not a perfect square?
+
+        (A) $1^{2016}$ &emsp; (B) $2^{2017}$ &emsp; (C) $3^{2018}$ &emsp; (D) $4^{2019}$ &emsp; (E) $5^{2020}$
       choices:
         - label: A
-          content: '$48$'
+          content: '$1^{2016}$'
         - label: B
-          content: '$60$'
+          content: '$2^{2017}$'
         - label: C
-          content: '$72$'
+          content: '$3^{2018}$'
         - label: D
-          content: '$96$'
+          content: '$4^{2019}$'
         - label: E
-          content: '$120$'
+          content: '$5^{2020}$'
       correctValue: B
-      answer: 'B：60'
+      answer: '(B) $2^{2017}$'
+      answerEn: '(B) $2^{2017}$'
       explanation: |
-        要有 12 个因数，因数个数公式给出以下几种形式：
-        - $12 = 12$：$p^{11}$，最小 $2^{11}=2048$
-        - $12 = 6 \times 2$：$p^5 \times q$，最小 $2^5 \times 3 = 96$
-        - $12 = 4 \times 3$：$p^3 \times q^2$，最小 $2^3 \times 3^2 = 72$（或 $2^2 \times 3^3=108$，更大）
-        - $12 = 3 \times 2 \times 2$：$p^2 \times q \times r$，最小 $2^2 \times 3 \times 5 = 60$
-        - $12 = 2 \times 2 \times 3$：同上
-        比较所有情况：2048、96、72、**60** ……最小的是 $\mathbf{60}$。
-        验证：$60 = 2^2 \times 3 \times 5$，因数个数 $(2+1)(1+1)(1+1)=12$ ✓
+        完全平方数要求质因数分解中每个质数的指数都是偶数。
+        (A) $1^{2016} = 1$，是完全平方数 ✓
+        (B) $2^{2017}$：指数 2017 是奇数 → **不是**完全平方数 ✗
+        (C) $3^{2018}$：指数 2018 是偶数 ✓
+        (D) $4^{2019} = (2^2)^{2019} = 2^{4038}$：指数 4038 是偶数 ✓
+        (E) $5^{2020}$：指数 2020 是偶数 ✓
+      explanationEn: |
+        A perfect square requires every prime to have an even exponent.
+        (A) $1^{2016}=1$ ✓ (B) $2^{2017}$: odd exponent → NOT a perfect square ✗
+        (C) $3^{2018}$: even ✓ (D) $4^{2019}=2^{4038}$: even ✓ (E) $5^{2020}$: even ✓
 
     - number: 6
       type: 单选题
       inputType: mc
-      source: "AMC 8 2009 #16"
+      source: "AMC 8 2020 #17"
       section: 质因数分解
       question: |
-        正整数 $k$ 满足：$k \times 3$ 是完全平方数。$k$ 最小是多少？
+        2020 的因数中，有多少个因数本身拥有超过 3 个因数？
       questionEn: |
-        Positive integer $k$ is such that $3k$ is a perfect square. What is the smallest possible value of $k$?
+        How many factors of 2020 have more than 3 factors?
       choices:
         - label: A
-          content: '$1$'
+          content: '6'
         - label: B
-          content: '$2$'
+          content: '7'
         - label: C
-          content: '$3$'
+          content: '8'
         - label: D
-          content: '$6$'
+          content: '9'
         - label: E
-          content: '$9$'
-      correctValue: C
-      answer: 'C：3'
+          content: '10'
+      correctValue: B
+      answer: '(B) 7'
+      answerEn: '(B) 7'
       explanation: |
-        完全平方数的质因数分解中，每个质数的次幂都必须是偶数。
-        $3k$ 中已经有一个 3（次幂为 1，是奇数）。
-        要使 3 的次幂变成偶数，$k$ 至少要再提供一个 3，即 $k = 3$。
-        验证：$3 \times 3 = 9 = 3^2$ ✓，而 $3 \times 1 = 3$（不是完全平方），$3 \times 2=6$（不是），$3 \times 3=9$ ✓。
-        最小值为 $k = 3$。
+        $2020 = 2^2 \times 5 \times 101$。
+        2020 的所有因数：1, 2, 4, 5, 10, 20, 101, 202, 404, 505, 1010, 2020。
+        逐一检查因数个数：
+        1→1个，2→2个，4→3个，5→2个，10→4个 ✓，20→6个 ✓，
+        101→2个，202→4个 ✓，404→6个 ✓，505→4个 ✓，1010→8个 ✓，2020→12个 ✓。
+        超过 3 个因数的有：10, 20, 202, 404, 505, 1010, 2020，共 $\mathbf{7}$ 个。
+      explanationEn: |
+        $2020 = 2^2 \times 5 \times 101$. All factors: 1, 2, 4, 5, 10, 20, 101, 202, 404, 505, 1010, 2020.
+        Check factor counts: 1→1, 2→2, 4→3, 5→2, 10→4✓, 20→6✓, 101→2, 202→4✓, 404→6✓, 505→4✓, 1010→8✓, 2020→12✓.
+        Those with more than 3 factors: 10, 20, 202, 404, 505, 1010, 2020 — total $\mathbf{7}$.
 
     - number: 7
-      type: 填空题
-      inputType: blank
-      source: "AMC 8 2013 #11"
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2022 #3"
       section: 质因数分解
       question: |
-        $2^3 \times 3^2 \times 5$ 的所有正因数中，有多少个是偶数？
+        三个正整数 $a$、$b$、$c$ 满足 $a \times b \times c = 100$ 且 $a < b < c$。
+        这样的三元组 $(a,b,c)$ 有多少个？
       questionEn: |
-        How many of the positive factors of $2^3 \times 3^2 \times 5$ are even?
-      correctValue: '18'
-      answer: '18 个'
+        Three positive integers $a$, $b$, $c$ satisfy $a \times b \times c = 100$ and $a < b < c$.
+        In how many ways can they be chosen?
+      choices:
+        - label: A
+          content: '0'
+        - label: B
+          content: '1'
+        - label: C
+          content: '2'
+        - label: D
+          content: '3'
+        - label: E
+          content: '4'
+      correctValue: E
+      answer: '(E) 4'
+      answerEn: '(E) 4'
       explanation: |
-        $N = 2^3 \times 3^2 \times 5$ 的总因数个数 $= (3+1)(2+1)(1+1) = 24$。
-        **偶因数**：必须包含至少一个 2，即 $2^a \times 3^b \times 5^c$，其中 $1 \le a \le 3$。
-        $a$ 有 3 种选法，$b$ 有 3 种，$c$ 有 2 种。
-        偶因数个数 $= 3 \times 3 \times 2 = 18$。
-        （或：总因数 24 − 奇因数 $= 24 - (2+1)(1+1) = 24 - 6 = 18$）
+        $100 = 2^2 \times 5^2$。枚举所有满足 $a < b < c$ 的三元组：
+        $(1, 2, 50)$：$1 \times 2 \times 50 = 100$ ✓
+        $(1, 4, 25)$：$1 \times 4 \times 25 = 100$ ✓
+        $(1, 5, 20)$：$1 \times 5 \times 20 = 100$ ✓
+        $(2, 5, 10)$：$2 \times 5 \times 10 = 100$ ✓
+        不合法的：$(1,10,10)$ 和 $(2,2,25)$ 因有重复不满足严格不等式，$(4,5,5)$ 同理。
+        共 $\mathbf{4}$ 个。
+      explanationEn: |
+        $100 = 2^2 \times 5^2$. List all triples with $a<b<c$:
+        $(1,2,50)$, $(1,4,25)$, $(1,5,20)$, $(2,5,10)$ — all check out.
+        Triples like $(1,10,10)$, $(2,2,25)$, $(4,5,5)$ fail the strict inequality.
+        Total: $\mathbf{4}$.
 
     - number: 8
       type: 单选题
       inputType: mc
-      source: "AMC 8 2016 #14"
+      source: "AMC 8 2018 #14"
       section: 质因数分解
       question: |
-        以下哪个数是完全平方数？
+        设 $N$ 是各位数字之积为 120 的最大五位数。$N$ 的各位数字之和是多少？
       questionEn: |
-        Which of the following is a perfect square?
+        Let $N$ be the greatest five-digit number whose digits have a product of 120. What is the sum of the digits of $N$?
       choices:
         - label: A
-          content: '$2^3 \times 3^3$'
+          content: '15'
         - label: B
-          content: '$2^4 \times 3^3$'
+          content: '16'
         - label: C
-          content: '$2^3 \times 3^4$'
+          content: '17'
         - label: D
-          content: '$2^4 \times 3^4$'
+          content: '18'
         - label: E
-          content: '$2^5 \times 3^3$'
+          content: '20'
       correctValue: D
-      answer: 'D：$2^4 \times 3^4$'
+      answer: '(D) 18'
+      answerEn: '(D) 18'
       explanation: |
-        完全平方数：质因数分解中每个质数的指数都必须是偶数。
-        A: $2^3 \times 3^3$：3 是奇数 ✗
-        B: $2^4 \times 3^3$：3 是奇数 ✗
-        C: $2^3 \times 3^4$：3（第一个指数）是奇数 ✗
-        D: $2^4 \times 3^4 = (2^2)^2 \times (3^2)^2 = (4 \times 9)^2 = 36^2 = 1296$ ✓
-        E: $2^5 \times 3^3$：两个都是奇数 ✗
+        要使五位数最大，需让高位数字尽可能大（按降序排列）。
+        $120 = 2^3 \times 3 \times 5$。
+        尝试首位为 9：$120 \div 9$ 不是整数。首位为 8：$120 \div 8 = 15$，剩余四位数字之积为 15。
+        $15 = 5 \times 3 \times 1 \times 1$，数字集合为 $\{8, 5, 3, 1, 1\}$。
+        降序排列：$N = 85311$，各位数字之和 $= 8+5+3+1+1 = \mathbf{18}$。
+        验证其他方案：$\{6,5,4,1,1\}$ → $65411$（小于 85311）；$\{5,4,3,2,1\}$ → $54321$（更小）。
+        85311 确实是最大的。
+      explanationEn: |
+        To maximize the five-digit number, arrange digits in descending order.
+        $120 = 2^3 \times 3 \times 5$. Try leading digit 9: $120/9$ is not an integer.
+        Leading digit 8: $120/8=15$. Remaining four digits with product 15: $\{5,3,1,1\}$.
+        Digit set $\{8,5,3,1,1\}$ arranged descending: $N=85311$. Digit sum $= 8+5+3+1+1 = \mathbf{18}$.
 
     - number: 9
       type: 单选题
       inputType: mc
-      source: "AMC 8 2012 #9"
+      source: "AMC 8 2017 #12"
       section: GCD 与 LCM
       question: |
-        已知 $\text{GCD}(a, b) = 6$，$\text{LCM}(a, b) = 90$，则 $a \times b$ 等于多少？
+        大于 1 的最小正整数，满足除以 4、5、6 都余 1，它在以下哪个范围内？
       questionEn: |
-        Given $\text{GCD}(a, b) = 6$ and $\text{LCM}(a, b) = 90$, what is $a \times b$?
+        The smallest positive integer greater than 1 that leaves a remainder of 1 when divided by 4, 5, and 6 lies between which pair of numbers?
       choices:
         - label: A
-          content: '$96$'
+          content: '2 到 19'
         - label: B
-          content: '$180$'
+          content: '20 到 39'
         - label: C
-          content: '$360$'
+          content: '40 到 59'
         - label: D
-          content: '$540$'
+          content: '60 到 79'
         - label: E
-          content: '$810$'
+          content: '80 到 124'
       correctValue: D
-      answer: 'D：540'
+      answer: '(D) 60 到 79'
+      answerEn: '(D) 60–79'
       explanation: |
-        直接套用公式：$a \times b = \text{GCD}(a,b) \times \text{LCM}(a,b) = 6 \times 90 = 540$。
-        验证：例如 $a=18, b=30$，$\text{GCD}(18,30)=6$，$\text{LCM}(18,30)=90$，$18 \times 30=540$ ✓。
+        设 $N \equiv 1 \pmod{4}$，$N \equiv 1 \pmod{5}$，$N \equiv 1 \pmod{6}$。
+        则 $N - 1$ 同时被 4、5、6 整除，即 $N-1$ 是 $\text{LCM}(4,5,6)$ 的倍数。
+        $\text{LCM}(4,5,6) = 60$。
+        最小的 $N > 1$：$N - 1 = 60$，即 $N = 61$。
+        61 在 60 到 79 之间。
+
+        💡 **另一种方法——有序枚举：**
+        除以 4 余 1 的数：5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, ...
+        除以 5 余 1 的数：6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, ...
+        除以 6 余 1 的数：7, 13, 19, 25, 31, 37, 43, 49, 55, 61, ...
+        第一个同时出现在三个列表中的数就是 **61**。虽然列举慢一些，但不需要知道 LCM 公式也能做出来！
+      explanationEn: |
+        $N \equiv 1 \pmod{4,5,6}$ means $N-1$ is divisible by 4, 5, and 6.
+        $\text{LCM}(4,5,6)=60$. Smallest $N>1$: $N=60+1=61$, which lies in 60–79.
+
+        💡 **Alternative — Systematic Enumeration:**
+        Numbers leaving remainder 1 when divided by 4: 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, ...
+        By 5: 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, ...
+        By 6: 7, 13, 19, 25, 31, 37, 43, 49, 55, 61, ...
+        The first number appearing in all three lists is **61**. Slower than LCM, but works without knowing the formula!
 
     - number: 10
       type: 单选题
       inputType: mc
-      source: "AMC 8 2018 #12"
+      source: "AMC 8 2016 #20"
       section: GCD 与 LCM
       question: |
-        三盏彩灯同时亮起后，红灯每隔 6 秒闪一次，绿灯每隔 8 秒闪一次，蓝灯每隔 10 秒闪一次。
-        从同时亮起后，**最少**需要多少秒，三盏灯才能**同时再次闪烁**？
+        $a$ 和 $b$ 的最小公倍数为 12，$b$ 和 $c$ 的最小公倍数为 15。
+        $a$ 和 $c$ 的最小公倍数的最小可能值是多少？
       questionEn: |
-        Three lights flash simultaneously, then red flashes every 6 seconds, green every 8 seconds, blue every 10 seconds. After the initial flash, how many seconds until all three flash simultaneously again?
+        The LCM of $a$ and $b$ is 12, and the LCM of $b$ and $c$ is 15. What is the least possible value of the LCM of $a$ and $c$?
       choices:
         - label: A
-          content: '$60$'
+          content: '20'
         - label: B
-          content: '$80$'
+          content: '30'
         - label: C
-          content: '$90$'
+          content: '60'
         - label: D
-          content: '$120$'
+          content: '120'
         - label: E
-          content: '$240$'
-      correctValue: D
-      answer: 'D：120 秒'
+          content: '180'
+      correctValue: A
+      answer: '(A) 20'
+      answerEn: '(A) 20'
       explanation: |
-        三灯同时闪，需要同时被 6、8、10 整除的时刻，即求 LCM(6, 8, 10)。
-        $6 = 2 \times 3$，$8 = 2^3$，$10 = 2 \times 5$
-        LCM $= 2^3 \times 3 \times 5 = 120$ 秒。
+        $b$ 整除 $\text{LCM}(a,b)=12$ 且 $b$ 整除 $\text{LCM}(b,c)=15$，所以 $b \mid \gcd(12,15)=3$，$b \in \{1,3\}$。
+        若 $b=3$：取 $a=4$（$\text{LCM}(4,3)=12$ ✓），$c=5$（$\text{LCM}(3,5)=15$ ✓），$\text{LCM}(4,5)=20$。
+        若 $b=1$：$a=12$，$c=15$，$\text{LCM}(12,15)=60$。
+        最小值 $= \mathbf{20}$。
+
+        💡 **另一种方法——列表枚举：**
+        先列出 12 的因数：1, 2, 3, 4, 6, 12。$b$ 必须是其中之一。
+        再列出 15 的因数：1, 3, 5, 15。$b$ 也必须是其中之一。
+        两个列表的公共元素：$b \in \{1, 3\}$。
+        对每个 $b$，列出 $a$ 和 $c$ 的可能值，算出 LCM(a,c)，取最小即可。
+      explanationEn: |
+        $b$ divides both 12 and 15, so $b \mid \gcd(12,15)=3$. If $b=3$: $a=4$, $c=5$, $\text{LCM}(4,5)=20$. If $b=1$: $\text{LCM}(12,15)=60$. Minimum is $\mathbf{20}$.
+
+        💡 **Alternative — Table Enumeration:**
+        List factors of 12: 1, 2, 3, 4, 6, 12. $b$ must be one of these.
+        List factors of 15: 1, 3, 5, 15. $b$ must also be one of these.
+        Common values: $b \in \{1, 3\}$.
+        For each $b$, list possible $a$ and $c$, compute LCM(a,c), and pick the smallest.
 
     - number: 11
-      type: 填空题
-      inputType: blank
-      source: "AMC 8 2020 #7"
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2017 #24"
       section: GCD 与 LCM
       question: |
-        一块 $24 \times 36$ 的矩形地板，要用**相同的正方形**瓷砖铺满（不能切割），瓷砖边长最大是多少厘米？
+        Sanders 奶奶有三个孙子，分别每 3 天、每 4 天、每 5 天给她打一次电话。
+        三人都在 2016 年 12 月 31 日打了电话。在接下来的 2017 年（365 天）中，Sanders 奶奶有多少天**没有**接到电话？
       questionEn: |
-        A $24 \times 36$ rectangular floor must be tiled with identical square tiles (no cutting). What is the largest possible side length of each tile, in centimeters?
-      correctValue: '12'
-      answer: '12 厘米'
+        Mrs. Sanders has three grandchildren who call her at intervals of 3 days, 4 days, and 5 days respectively.
+        All three called her on December 31, 2016. On how many days during the next year (2017, which has 365 days) did she not receive a phone call?
+      choices:
+        - label: A
+          content: '78'
+        - label: B
+          content: '80'
+        - label: C
+          content: '144'
+        - label: D
+          content: '146'
+        - label: E
+          content: '152'
+      correctValue: D
+      answer: '(D) 146'
+      answerEn: '(D) 146'
       explanation: |
-        正方形瓷砖的边长必须同时整除 24 和 36，即边长是 GCD(24, 36)。
-        $24 = 2^3 \times 3$，$36 = 2^2 \times 3^2$
-        GCD $= 2^2 \times 3 = 12$
-        最大边长为 12 cm。验证：$24÷12=2$，$36÷12=3$，共需 $2 \times 3 = 6$ 块瓷砖。
+        用容斥原理求至少接到一个电话的天数：
+        每 3 天：$\lfloor 365/3 \rfloor = 121$。每 4 天：$\lfloor 365/4 \rfloor = 91$。每 5 天：$\lfloor 365/5 \rfloor = 73$。
+        每 $\text{LCM}(3,4)=12$ 天：$\lfloor 365/12 \rfloor = 30$。
+        每 $\text{LCM}(3,5)=15$ 天：$\lfloor 365/15 \rfloor = 24$。
+        每 $\text{LCM}(4,5)=20$ 天：$\lfloor 365/20 \rfloor = 18$。
+        每 $\text{LCM}(3,4,5)=60$ 天：$\lfloor 365/60 \rfloor = 6$。
+        有电话的天数 $= 121+91+73-30-24-18+6 = 219$。
+        没有电话 $= 365 - 219 = \mathbf{146}$。
+      explanationEn: |
+        By inclusion-exclusion:
+        Every 3 days: $\lfloor365/3\rfloor=121$. Every 4: 91. Every 5: 73.
+        Every 12: 30. Every 15: 24. Every 20: 18. Every 60: 6.
+        Days with calls $= 121+91+73-30-24-18+6 = 219$.
+        Days without $= 365-219 = \mathbf{146}$.
 
     - number: 12
       type: 单选题
       inputType: mc
-      source: "AMC 8 2017 #11"
+      source: "AMC 8 2016 #15"
       section: GCD 与 LCM
-      question: |
-        两个正整数 $a$ 和 $b$ 满足 $a < b$，$\text{GCD}(a,b) = 4$，$\text{LCM}(a,b) = 48$。
-        则 $a + b$ 等于多少？
-      questionEn: |
-        Two positive integers $a < b$ satisfy $\text{GCD}(a,b) = 4$ and $\text{LCM}(a,b) = 48$. What is $a + b$?
+      question: '$13^4 - 11^4$ 能被 2 的最高多少次幂整除？'
+      questionEn: 'What is the largest power of 2 that is a divisor of $13^4 - 11^4$?'
       choices:
         - label: A
-          content: '$28$'
+          content: '8'
         - label: B
-          content: '$36$'
+          content: '16'
         - label: C
-          content: '$40$'
+          content: '32'
         - label: D
-          content: '$52$'
+          content: '64'
         - label: E
-          content: '$64$'
-      correctValue: A
-      answer: 'A：28'
+          content: '128'
+      correctValue: C
+      answer: '(C) 32'
+      answerEn: '(C) 32'
       explanation: |
-        设 $a = 4m$，$b = 4n$，其中 $\text{GCD}(m,n)=1$（互质）。
-        $\text{LCM}(a,b) = 4mn = 48$，所以 $mn = 12$。
-        互质且乘积为 12 的正整数对：$(1,12)$ 或 $(3,4)$。
-        对应 $(a,b)$：$4 \times 1=4, 4\times12=48$ → 但 GCD(4,48)=4 ✓；$4\times3=12, 4\times4=16$ → GCD(12,16)=4 ✓。
-        $a < b$：第一对 $4 + 48 = 52$，第二对 $12 + 16 = 28$。
-        题目中需要 LCM = 48：第一对 LCM(4,48)=48 ✓，第二对 LCM(12,16)=48 ✓。
-        两对都满足，取更小的 $a+b=28$。（题目一般指最小和，答案 A 正确。）
+        用平方差分解：$13^4 - 11^4 = (13^2 + 11^2)(13^2 - 11^2) = (169+121)(169-121) = 290 \times 48$。
+        $290 = 2 \times 145 = 2 \times 5 \times 29$。
+        $48 = 2^4 \times 3$。
+        $290 \times 48 = 2^1 \times 5 \times 29 \times 2^4 \times 3 = 2^5 \times 3 \times 5 \times 29$。
+        最高 2 的幂次为 $2^5 = \mathbf{32}$。
+      explanationEn: |
+        Difference of squares: $13^4-11^4 = (13^2+11^2)(13^2-11^2) = 290 \times 48$.
+        $290 = 2 \times 5 \times 29$, $48 = 2^4 \times 3$.
+        Product $= 2^5 \times 3 \times 5 \times 29$. Largest power of 2: $2^5 = \mathbf{32}$.
 
     - number: 13
       type: 单选题
       inputType: mc
-      source: "AMC 8 2019 #7"
+      source: "AMC 8 2016 #11"
       section: 数字题
       question: |
-        一个两位数，把它的十位数字和个位数字**对调**之后，得到的新数比原数小 27。
-        满足条件的两位数共有多少个？
+        有多少个两位数满足：它与其反转数之和等于 132？
       questionEn: |
-        A two-digit number, when its digits are reversed, gives a number that is 27 less than the original. How many such two-digit numbers exist?
+        Determine how many two-digit numbers satisfy the following property: when the number is added to the number obtained by reversing its digits, the sum is 132.
       choices:
         - label: A
-          content: '$5$'
+          content: '5'
         - label: B
-          content: '$6$'
+          content: '7'
         - label: C
-          content: '$7$'
+          content: '9'
         - label: D
-          content: '$8$'
+          content: '11'
         - label: E
-          content: '$9$'
+          content: '12'
       correctValue: B
-      answer: 'B：6 个'
+      answer: '(B) 7'
+      answerEn: '(B) 7'
       explanation: |
-        设十位为 $a$，个位为 $b$，原数 $= 10a+b$，反转数 $= 10b+a$。
-        $(10a+b)-(10b+a) = 9(a-b) = 27$，所以 $a - b = 3$。
-        要求：$a$ 是十位（1–9），$b$ 是个位（0–9），且 $a = b+3$。
-        列举：$(a,b) = (3,0),(4,1),(5,2),(6,3),(7,4),(8,5),(9,6)$，共 7 对……
-        等等，$b$ 最小是 0，$a=3$ 时 $b=0$：原数 30，反转 03=3，$30-3=27$ ✓。
-        但 $b=0$ 反转后变成一位数，是否算"两位数"？AMC 8 一般接受，共 **7** 对。
-        实际 AMC 8 2019 #7 答案为 **6**（排除 $b=0$ 的情况），请以官方为准。
+        设两位数为 $\overline{ab} = 10a+b$，反转为 $10b+a$。
+        和 $= (10a+b) + (10b+a) = 11(a+b) = 132$，所以 $a+b=12$。
+        合法的两位数：$a$ 从 1 到 9，$b$ 从 0 到 9，$a+b=12$。
+        $(a,b) = (3,9), (4,8), (5,7), (6,6), (7,5), (8,4), (9,3)$，共 $\mathbf{7}$ 个。
+
+        💡 **另一种方法——逐个验证：**
+        两位数 + 反转数 = 132，所以两位数 < 132。从十位 = 3 开始试：
+        39 + 93 = 132 ✓，48 + 84 = 132 ✓，57 + 75 = 132 ✓，66 + 66 = 132 ✓，
+        75 + 57 = 132 ✓，84 + 48 = 132 ✓，93 + 39 = 132 ✓。共 7 个。
+        这种"逐个试"的方法虽然不如公式快，但不容易出错！
+      explanationEn: |
+        Let the number be $10a+b$, its reverse $10b+a$. Sum $= 11(a+b) = 132$, so $a+b=12$.
+        Valid pairs: $(3,9),(4,8),(5,7),(6,6),(7,5),(8,4),(9,3)$ — total $\mathbf{7}$.
+
+        💡 **Alternative — Try Each Candidate:**
+        Number + reverse = 132, so the number < 132. Start from tens digit = 3:
+        39+93=132 ✓, 48+84=132 ✓, 57+75=132 ✓, 66+66=132 ✓,
+        75+57=132 ✓, 84+48=132 ✓, 93+39=132 ✓. Total: 7.
+        Trying each one is slower but much less error-prone!
 
     - number: 14
       type: 单选题
       inputType: mc
-      source: "AMC 8 2015 #16"
+      source: "AMC 8 2017 #7"
       section: 数字题
       question: |
-        一个三位数，百位数字、十位数字、个位数字的乘积等于 $2$。满足条件的三位数共有多少个？
+        设 $Z$ 是一个六位正整数（如 247247），其前三位数字与后三位数字相同且顺序相同。
+        以下哪个数一定是 $Z$ 的因数？
       questionEn: |
-        A three-digit number has digits whose product equals 2. How many such three-digit numbers are there?
+        Let $Z$ be a 6-digit positive integer, such as 247247, whose first three digits are the same as its last three digits in the same order. Which of the following numbers must be a factor of $Z$?
       choices:
         - label: A
-          content: '$3$'
+          content: '11'
         - label: B
-          content: '$6$'
+          content: '19'
         - label: C
-          content: '$9$'
+          content: '101'
         - label: D
-          content: '$12$'
+          content: '111'
         - label: E
-          content: '$18$'
-      correctValue: B
-      answer: 'B：6 个'
+          content: '1111'
+      correctValue: A
+      answer: '(A) 11'
+      answerEn: '(A) 11'
       explanation: |
-        三个数字之积为 2，而 2 是质数，所以三个数字中只有一个是 2，其余两个都是 1（不能有 0，否则乘积为 0）。
-        满足条件的数字组合：$(1, 1, 2)$ 的排列。
-        排列数 $= \frac{3!}{2!} = 3$，具体为：112、121、211。
-        但百位不能为 0（这里不涉及 0，都可以），共 3 个。
-        等等，$(2, 1, 1)$ 的所有排列：百位可以是 2 或 1，给出 112、121、211，共 **3** 个。
-
-        （若题目乘积为更大的数，会有更多排列。请在 AoPS 核对原题。）
+        设前三位为 $\overline{abc}$，则 $Z = \overline{abc} \times 1000 + \overline{abc} = \overline{abc} \times 1001$。
+        $1001 = 7 \times 11 \times 13$。
+        检查选项：$11 \mid 1001$ ✓，$19 \nmid 1001$，$101 \nmid 1001$，$111 \nmid 1001$，$1111 \nmid 1001$。
+        所以 $\mathbf{11}$ 一定是 $Z$ 的因数。
+      explanationEn: |
+        Let the first three digits form number $N$. Then $Z = N \times 1001$.
+        $1001 = 7 \times 11 \times 13$. Among the choices, only 11 divides 1001.
+        So $\mathbf{11}$ must be a factor of $Z$.
 
     - number: 15
       type: 单选题
       inputType: mc
-      source: "AMC 8 2014 #19"
+      source: "AMC 8 2024 #4"
       section: 数字题
       question: |
-        两位数 $\overline{AB}$ 满足：$\overline{AB} = A + B^2$（其中 $A$ 是十位，$B$ 是个位）。
-        满足条件的两位数共有多少个？
+        允智把 1 到 9 的整数全部加起来时，不小心漏掉了一个数。她得到的错误结果恰好是一个完全平方数。她漏掉的是哪个数？
       questionEn: |
-        A two-digit number $\overline{AB}$ satisfies $\overline{AB} = A + B^2$ (where $A$ is the tens digit and $B$ the units digit). How many such two-digit numbers exist?
+        When Yunji added all the integers from 1 to 9, she mistakenly left out a number. Her incorrect sum turned out to be a square number. What number did Yunji leave out?
       choices:
         - label: A
-          content: '$1$'
+          content: '5'
         - label: B
-          content: '$2$'
+          content: '6'
         - label: C
-          content: '$3$'
+          content: '7'
         - label: D
-          content: '$4$'
+          content: '8'
         - label: E
-          content: '$5$'
-      correctValue: B
-      answer: 'B：2 个'
+          content: '9'
+      correctValue: E
+      answer: '(E) 9'
+      answerEn: '(E) 9'
       explanation: |
-        $\overline{AB} = 10A + B = A + B^2$，整理得 $9A = B^2 - B = B(B-1)$。
-        $A$ 是 1–9，$B$ 是 0–9，穷举 $B$：
-        - $B=0$：$9A=0$，$A=0$（不是两位数）
-        - $B=1$：$9A=0$，$A=0$（不是两位数）
-        - $B=2$：$9A=2$，$A$ 非整数
-        - $B=3$：$9A=6$，$A$ 非整数
-        - $B=4$：$9A=12$，$A$ 非整数
-        - $B=5$：$9A=20$，$A$ 非整数
-        - $B=6$：$9A=30$，$A$ 非整数
-        - $B=7$：$9A=42$，$A$ 非整数
-        - $B=8$：$9A=56$，$A$ 非整数
-        - $B=9$：$9A=72$，$A=8$ ✓ → $\overline{AB}=89$，验证：$8+9^2=8+81=89$ ✓
-        等等，还有 $B=0$ 以外的？重新检查……
-        $B=0$：$B(B-1)=0$；$B=1$：$B(B-1)=0$；均得 $A=0$（无效）
-        只有 $B=9$ 给出有效解 89。答案似乎是 1？请在 AoPS 核对原题，可能题目数字有差异。
+        $1+2+3+\cdots+9 = 45$。漏掉数字 $n$ 后，和为 $45 - n$，需要是完全平方数。
+        逐一检查选项：$45-5=40$（非完全平方），$45-6=39$（非），$45-7=38$（非），$45-8=37$（非），
+        $45-9=36=6^2$ ✓。漏掉的是 $\mathbf{9}$。
+      explanationEn: |
+        $1+2+\cdots+9=45$. Removing $n$ gives $45-n$, which must be a perfect square.
+        $45-9=36=6^2$ ✓. The missing number is $\mathbf{9}$.
 
 summary:
   - '整除判断法让你秒判是否整除——核心是：被 3/9 整除看数字和，被 4/8 整除看末两位/三位'
@@ -818,157 +1006,200 @@ summaryEn:
   - 'Digit problems: write two-digit numbers as $10a+b$ and derive relationships algebraically'
 
 examPrep:
-  intro: 以下为 AMC 8 真题精选，难度略高于练习题，考查综合运用。请在 AoPS 网站核对原题。
-  introEn: The following are selected AMC 8 problems at a slightly higher level. Please verify against the official problems at AoPS.
+  intro: 以下为 AMC 8 真题精选，难度略高于练习题，综合考查数论知识。
+  introEn: The following are selected AMC 8 problems at a slightly higher level, testing combined number theory skills.
   questions:
     - number: 1
       type: 单选题
       inputType: mc
-      source: "AMC 8 2010 #19"
+      source: "AMC 8 2017 #8"
       section: 综合
       question: |
-        $1$ 到 $100$ 之间（含两端），有多少个正整数满足：它的**因数个数是奇数**？
+        Malcolm 的门牌号是一个两位数。以下四个陈述中，恰好有三个为真：
+        (1) 它是质数；(2) 它是偶数；(3) 它能被 7 整除；(4) 它的某个数字是 9。
+        这个门牌号的个位数字是多少？
       questionEn: |
-        How many integers from 1 to 100 (inclusive) have an odd number of factors?
+        Malcolm's two-digit house number has the property that exactly three of the following four statements about it are true:
+        (1) It is prime. (2) It is even. (3) It is divisible by 7. (4) One of its digits is 9.
+        What is its units digit?
       choices:
         - label: A
-          content: '$8$'
+          content: '4'
         - label: B
-          content: '$9$'
+          content: '6'
         - label: C
-          content: '$10$'
+          content: '7'
         - label: D
-          content: '$11$'
+          content: '8'
         - label: E
-          content: '$12$'
-      correctValue: C
-      answer: 'C：10 个'
+          content: '9'
+      correctValue: D
+      answer: '(D) 8'
+      answerEn: '(D) 8'
       explanation: |
-        **关键洞察**：一个数的因数总是成对出现（$d$ 和 $n/d$），所以因数个数通常是偶数。
-        **唯一的例外**：完全平方数！当 $d = n/d$（即 $d = \sqrt{n}$），这个因数"自配对"，使总数变成奇数。
-        所以"因数个数为奇数" = "完全平方数"。
-        1 到 100 的完全平方数：$1, 4, 9, 16, 25, 36, 49, 64, 81, 100$，共 **10** 个。
+        恰好三真一假，逐一试哪个为假：
+        **假设 (1) 为假**（不是质数），其余三个为真：偶数、被 7 整除、含数字 9。
+        偶数且被 7 整除 → 被 14 整除。两位数中 14 的倍数：14, 28, 42, 56, 70, 84, 98。
+        含数字 9 的：只有 98。98 不是质数 ✓，偶数 ✓，$98 \div 7 = 14$ ✓，含 9 ✓。恰好三真一假 ✓。
+        **假设 (2) 为假**（奇数），要求质数、被 7 整除、含 9。唯一被 7 整除的质数是 7（一位数），无两位数解。
+        **假设 (3) 为假**：要求质数、偶数、含 9。唯一的偶质数是 2（一位数），无解。
+        **假设 (4) 为假**：要求质数、偶数、被 7 整除。偶质数只有 2，不被 7 整除，无解。
+        唯一解：$N = 98$，个位数字为 $\mathbf{8}$。
+      explanationEn: |
+        Exactly 3 of 4 are true, so exactly 1 is false. Test each case:
+        **(1) false**: not prime, but even, divisible by 7, has digit 9. Even multiples of 7 (multiples of 14) with a 9: only 98. Check: not prime ✓, even ✓, $98/7=14$ ✓, has 9 ✓. Works!
+        **(2) false**: odd prime divisible by 7 with digit 9 — only prime divisible by 7 is 7 itself (one digit). No solution.
+        **(3) false**: even prime with digit 9 — only even prime is 2. No solution.
+        **(4) false**: even prime divisible by 7 — impossible. No solution.
+        Answer: $N=98$, units digit $\mathbf{8}$.
 
     - number: 2
       type: 单选题
       inputType: mc
-      source: "AMC 8 2019 #15"
+      source: "AMC 8 2017 #19"
       section: 综合
       question: |
-        正整数 $N$ 满足：$N$ 恰好有两个质因数 $p$ 和 $q$（$p < q$），且 $p \times q = 2019$。
-        则 $p + q$ 等于多少？
+        $5^n$ 能整除 $98! + 99! + 100!$ 的最大正整数 $n$ 是多少？
       questionEn: |
-        Positive integer $N$ has exactly two prime factors $p$ and $q$ ($p < q$), and $p \times q = 2019$. What is $p + q$?
+        What is the largest integer $n$ for which $5^n$ is a factor of $98! + 99! + 100!$?
       choices:
         - label: A
-          content: '$2020$'
+          content: '23'
         - label: B
-          content: '$46$'
+          content: '24'
         - label: C
-          content: '$676$'
+          content: '25'
         - label: D
-          content: '$48$'
+          content: '26'
         - label: E
-          content: '$690$'
+          content: '27'
       correctValue: D
-      answer: 'D：48'
+      answer: '(D) 26'
+      answerEn: '(D) 26'
       explanation: |
-        $2019 = 3 \times 673$。
-        验证 673 是质数：$\sqrt{673} \approx 25.9$，检验 2, 3, 5, 7, 11, 13, 17, 19, 23——均不整除 673，所以 673 是质数。
-        因此 $p = 3$，$q = 673$，$p + q = 3 + 673 = 676$。
-        （答案应为 676，对应选项 C——请核对 AoPS 原题。）
+        提公因式：$98! + 99! + 100! = 98!(1 + 99 + 99 \times 100) = 98! \times (1 + 99 + 9900) = 98! \times 10000$。
+        $10000 = 10^4 = 2^4 \times 5^4$，所以 $v_5(10000) = 4$。
+        用 Legendre 公式求 $v_5(98!)$：
+        $\lfloor 98/5 \rfloor + \lfloor 98/25 \rfloor + \lfloor 98/125 \rfloor = 19 + 3 + 0 = 22$。
+        因此 $v_5(98! \times 10000) = 22 + 4 = \mathbf{26}$。
+      explanationEn: |
+        Factor out: $98!+99!+100! = 98!(1+99+99\times100) = 98! \times 10000$.
+        $10000 = 2^4 \times 5^4$, so $v_5(10000)=4$.
+        Legendre's formula: $v_5(98!) = \lfloor98/5\rfloor + \lfloor98/25\rfloor + \lfloor98/125\rfloor = 19+3+0 = 22$.
+        Total: $22+4 = \mathbf{26}$.
 
     - number: 3
       type: 单选题
       inputType: mc
-      source: "AMC 8 2016 #20"
+      source: "AMC 8 2018 #21"
       section: 综合
       question: |
-        正整数 $n$ 满足：$n^2 - 19n + 99$ 是完全平方数。满足条件的正整数 $n$ 有多少个？
+        有多少个正的三位整数满足：除以 6 余 2，除以 9 余 5，除以 11 余 7？
       questionEn: |
-        For how many positive integers $n$ is $n^2 - 19n + 99$ a perfect square?
+        How many positive three-digit integers have a remainder of 2 when divided by 6, a remainder of 5 when divided by 9, and a remainder of 7 when divided by 11?
       choices:
         - label: A
-          content: '$1$'
+          content: '1'
         - label: B
-          content: '$2$'
+          content: '2'
         - label: C
-          content: '$3$'
+          content: '3'
         - label: D
-          content: '$4$'
+          content: '4'
         - label: E
-          content: '$5$'
-      correctValue: B
-      answer: 'B：2 个'
+          content: '5'
+      correctValue: E
+      answer: '(E) 5'
+      answerEn: '(E) 5'
       explanation: |
-        设 $n^2 - 19n + 99 = k^2$（$k \ge 0$）。
-        配方：$(n - \frac{19}{2})^2 - \frac{361}{4} + 99 = k^2$，即 $(n-\frac{19}{2})^2 - k^2 = \frac{361-396}{4} = -\frac{35}{4}$。
-        改用整数法：$n^2 - 19n + 99 - k^2 = 0$，逐一试验 $n=1,2,\ldots$
-        - $n=1$：$1-19+99=81=9^2$ ✓
-        - $n=9$：$81-171+99=9=3^2$ ✓
-        - $n=10$：$100-190+99=9=3^2$ ✓
-        - $n=18$：$324-342+99=81=9^2$ ✓
-        共 4 个——请在 AoPS 核对原题和答案。
+        $N \equiv 2 \pmod{6}$：$N$ 是偶数且 $N \equiv 2 \pmod{3}$。
+        $N \equiv 5 \pmod{9}$：因为 $5 \equiv 2 \pmod{3}$，自动满足 $N \equiv 2 \pmod{3}$。
+        结合"偶数"和"$N \equiv 5 \pmod{9}$"：$N \equiv 5 \pmod{9}$ 的偶数序列为 $14, 32, 50, 68, 86, \ldots$，即 $N \equiv 14 \pmod{18}$。
+        再加条件 $N \equiv 7 \pmod{11}$，用中国剩余定理：
+        $N = 18k + 14$。需 $18k + 14 \equiv 7 \pmod{11}$，即 $7k \equiv 4 \pmod{11}$。
+        $7^{-1} \equiv 8 \pmod{11}$（因 $7 \times 8 = 56 \equiv 1$），所以 $k \equiv 32 \equiv 10 \pmod{11}$。
+        $k = 11m + 10$，$N = 198m + 194$。
+        三位数范围 $100 \le 198m + 194 \le 999$：$m \in \{0, 1, 2, 3, 4\}$。
+        对应 $N \in \{194, 392, 590, 788, 986\}$，共 $\mathbf{5}$ 个。
+        验证 $N=194$：$194/6 = 32 \cdots 2$ ✓，$194/9 = 21 \cdots 5$ ✓，$194/11 = 17 \cdots 7$ ✓。
+      explanationEn: |
+        $N \equiv 2 \pmod{6}$ means $N$ is even and $N \equiv 2 \pmod{3}$.
+        $N \equiv 5 \pmod{9}$ automatically gives $N \equiv 2 \pmod{3}$.
+        Combining even + mod 9: $N \equiv 14 \pmod{18}$.
+        Adding $N \equiv 7 \pmod{11}$ via CRT: $N = 18k+14$, need $7k \equiv 4 \pmod{11}$, so $k \equiv 10 \pmod{11}$.
+        $N = 198m + 194$. Three-digit range: $m \in \{0,1,2,3,4\}$, giving $N \in \{194, 392, 590, 788, 986\}$. Total: $\mathbf{5}$.
 
     - number: 4
       type: 单选题
       inputType: mc
-      source: "AMC 8 2012 #19"
+      source: "AMC 8 2020 #19"
       section: 综合
       question: |
-        在所有满足以下条件的正整数 $n$ 中，最大的是多少？
-        条件：$n$ 能被 1 到 10 之间的每个正整数整除（即 1, 2, 3, …, 10 都是 $n$ 的因数），且 $n < 1000$。
-        **实际上这样的 $n$ 存在吗？**
+        如果一个数的各位数字在两个不同数字之间交替出现，就称它为"翻转数"（flippy number）。
+        例如 2020 和 37373 是翻转数，而 3883 和 123123 不是。
+        有多少个五位翻转数能被 15 整除？
       questionEn: |
-        What is the largest positive integer $n < 1000$ that is divisible by every integer from 1 to 10?
+        A number is called flippy if its digits alternate between two distinct digits. For example, 2020 and 37373 are flippy, but 3883 and 123123 are not.
+        How many five-digit flippy numbers are divisible by 15?
       choices:
         - label: A
-          content: '不存在这样的 $n$'
+          content: '3'
         - label: B
-          content: '$360$'
+          content: '4'
         - label: C
-          content: '$720$'
+          content: '5'
         - label: D
-          content: '$840$'
+          content: '6'
         - label: E
-          content: '$900$'
-      correctValue: C
-      answer: 'C：720'
+          content: '8'
+      correctValue: B
+      answer: '(B) 4'
+      answerEn: '(B) 4'
       explanation: |
-        1 到 10 的所有正整数的 LCM：
-        $\text{LCM}(1,2,...,10) = 2^3 \times 3^2 \times 5 \times 7 = 8 \times 9 \times 5 \times 7 = 2520$
-        2520 > 1000，所以 $n < 1000$ 且能被 1–10 整除的数不存在？
-        等等——$n$ 必须是 2520 的倍数，2520 的最大倍数 < 1000 不存在（2520 > 1000）。
-        **所以答案是 A：不存在**。但题目选项给出 720？
-        720 = LCM(1–6) × 5 = 不对。720 = 2^4×3^2×5，不能被 7 整除。
-        **本题需在 AoPS 核对——可能原题问的是 1–6，或 LCM 不同。**
+        五位翻转数形如 $ababa$（$a \neq b$，$a \neq 0$）。
+        被 15 整除 = 被 3 整除 AND 被 5 整除。
+        被 5 整除：末位 $a \in \{0, 5\}$。若 $a=0$，首位也是 0，不是五位数。所以 $a=5$。
+        数为 $5b5b5$，各位数字之和 $= 15 + 2b$。
+        被 3 整除：$15 + 2b \equiv 0 \pmod{3}$，即 $2b \equiv 0 \pmod{3}$，即 $b \equiv 0 \pmod{3}$。
+        $b \in \{0, 3, 6, 9\}$（均不等于 5），对应：50505、53535、56565、59595。
+        共 $\mathbf{4}$ 个。
+      explanationEn: |
+        Five-digit flippy: $ababa$ with $a \neq b$, $a \neq 0$.
+        Divisible by 15 means divisible by 3 and 5. Last digit $a \in \{0,5\}$; $a=0$ makes it invalid, so $a=5$.
+        Number is $5b5b5$, digit sum $= 15+2b$. Divisible by 3: $2b \equiv 0 \pmod{3}$, so $b \in \{0,3,6,9\}$.
+        Numbers: 50505, 53535, 56565, 59595 — total $\mathbf{4}$.
 
     - number: 5
       type: 单选题
       inputType: mc
-      source: "AMC 8 2022 #21"
+      source: "AMC 8 2018 #25"
       section: 综合
       question: |
-        将 $1$ 到 $9$ 的数字各用一次，填入 $3 \times 3$ 方格（每格一个数字），使得每一行的三个数之积相同，每一列的三个数之积也相同。这个公共的积最小可以是多少？
+        在 $2^8 + 1$ 和 $2^{18} + 1$ 之间（含两端），有多少个完全立方数？
       questionEn: |
-        Place the digits 1–9 (each used once) in a 3×3 grid so that the product of the three numbers in each row and each column is the same. What is the smallest possible value of this common product?
+        How many perfect cubes lie between $2^8 + 1$ and $2^{18} + 1$, inclusive?
       choices:
         - label: A
-          content: '$216$'
+          content: '4'
         - label: B
-          content: '$252$'
+          content: '9'
         - label: C
-          content: '$288$'
+          content: '10'
         - label: D
-          content: '$360$'
+          content: '57'
         - label: E
-          content: '$504$'
-      correctValue: A
-      answer: 'A：216'
+          content: '58'
+      correctValue: E
+      answer: '(E) 58'
+      answerEn: '(E) 58'
       explanation: |
-        1×2×3×…×9 = 362880。
-        三行的积之积 = 所有数的积 = 362880。
-        设每行积为 $P$，则 $P^3 = 362880$，$P = \sqrt[3]{362880} = \sqrt[3]{362880}$。
-        $72^3 = 373248$（太大），$70^3 = 343000$（太小），$71^3 \approx 357911$（不整除）……
-        实际 $\sqrt[3]{362880} \approx 71.4$，不是整数？重新算：$9! = 362880$，$\sqrt[3]{362880}$ 不是整数。
-        说明三行之积不可能完全相等——**本题请在 AoPS 核对原题**，可能是不同的问法。
+        $2^8 + 1 = 257$，$2^{18} + 1 = 262145$。
+        求满足 $257 \le n^3 \le 262145$ 的正整数 $n$。
+        $\sqrt[3]{257} \approx 6.36$，所以 $n \ge 7$（$7^3 = 343 \ge 257$ ✓）。
+        $\sqrt[3]{262145} \approx 64.0$，因为 $64^3 = 262144 \le 262145$ ✓，而 $65^3 = 274625 > 262145$。
+        所以 $n$ 从 7 到 64，共 $64 - 7 + 1 = \mathbf{58}$ 个完全立方数。
+      explanationEn: |
+        $2^8+1=257$, $2^{18}+1=262145$.
+        Find $n$ with $257 \le n^3 \le 262145$.
+        $\sqrt[3]{257}\approx6.36 \Rightarrow n \ge 7$ ($7^3=343$). $64^3=262144 \le 262145$, $65^3=274625>262145$.
+        So $n$ ranges from 7 to 64: $64-7+1 = \mathbf{58}$ perfect cubes.

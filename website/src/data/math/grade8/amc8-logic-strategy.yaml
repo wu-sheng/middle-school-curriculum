@@ -1,0 +1,1296 @@
+title: "\U0001F3C6 AMC 8 扩展：逻辑与策略"
+titleEn: "\U0001F3C6 AMC 8 Extension: Logic & Strategy"
+chapter: 9
+subject: math
+grade: grade8
+semester: semester1
+estimatedTime: 约 3–4 课时，每课时 45 分钟
+estimatedTimeEn: "3–4 sessions, ~45 min each"
+targetAudience: 八年级自学生，综合运用逻辑推理和策略性解题方法
+
+objectives:
+  - 理解<<抽屉原理/Pigeonhole Principle>>，能用它证明"必然存在"类结论
+  - 掌握<<奇偶分析/parity analysis>>，利用奇偶性排除不可能情况
+  - 理解<<不变量/invariant>>的概念，能识别过程中不变的量并用它证明不可能性
+  - 熟练运用<<逆推法/working backwards>>和<<排除法/process of elimination>>快速定位答案
+  - 培养 AMC 8 竞赛中"先判断后计算"的策略意识
+objectivesEn:
+  - 'Understand the <<抽屉原理/Pigeonhole Principle>> and use it to prove "guaranteed existence" conclusions'
+  - 'Master <<奇偶分析/parity analysis>>: use parity to rule out impossible cases'
+  - 'Understand <<不变量/invariant>>s: identify quantities unchanged by a process and use them to prove impossibility'
+  - 'Fluently apply <<逆推法/working backwards>> and <<排除法/process of elimination>> to locate answers quickly'
+  - 'Develop the AMC 8 contest strategy of "judge before you compute"'
+
+prerequisites:
+  title: 从基础运算出发——已有的逻辑基础
+  titleEn: Building on fundamentals — your existing logic foundation
+  intro: |
+    在前面的学习中，你已经掌握了整数运算、整除性、方程求解等基本技能。这一章不需要新的计算工具，而是训练一种**思维方式**——用逻辑推理和策略，在不做大量计算的前提下得出结论。这正是 AMC 8 竞赛中"快速准确"的关键。
+  introEn: |
+    In earlier chapters, you mastered integer arithmetic, divisibility, and equation solving. This chapter requires no new computational tools — instead, it trains a **way of thinking**: using logic and strategy to reach conclusions without heavy calculation. This is the key to "fast and accurate" on the AMC 8.
+  knownNumbers:
+    - '整数的加减乘除和整除性'
+    - '奇数、偶数的基本概念'
+    - '简单的方程求解'
+    - '有序列举和分类讨论'
+  knownNumbersEn:
+    - 'Integer arithmetic and divisibility'
+    - 'Basic concepts of odd and even numbers'
+    - 'Simple equation solving'
+    - 'Systematic listing and case analysis'
+  canSolve:
+    - '判断一个数的奇偶性'
+    - '用列举法找出满足条件的数'
+    - '解一元一次方程'
+  canSolveEn:
+    - 'Determine the parity of a number'
+    - 'Find numbers satisfying conditions by listing'
+    - 'Solve linear equations in one variable'
+  cannotSolve:
+    - '如何证明"不管怎么分配，一定会出现某种结果"？'
+    - '如何不经计算，就判断某个结果是不可能的？'
+    - '遇到多步操作的题目，怎样逆推回去找起点？'
+    - '五个选项都看着合理，怎样快速排除错误选项？'
+  cannotSolveEn:
+    - 'How to prove "no matter how you arrange things, a certain outcome is guaranteed"?'
+    - 'How to determine something is impossible without computing?'
+    - 'For multi-step process problems, how to work backwards to find the starting point?'
+    - 'When all five choices look plausible, how to quickly eliminate wrong ones?'
+  conclusion: |
+    这一章，我们将建立一个**逻辑策略工具箱**——抽屉原理证明"必然存在"，奇偶分析证明"不可能"，不变量捕捉"过程中不变的本质"，逆推和排除帮你"从答案出发找思路"。这些工具在 AMC 8 中反复出现，掌握后能显著提升解题速度。
+  conclusionEn: |
+    In this chapter, we build a **logic strategy toolkit** — the Pigeonhole Principle proves "must exist," parity analysis proves "impossible," invariants capture "what stays the same," and working backwards helps you "start from the answer." These tools appear repeatedly on AMC 8 and dramatically improve solving speed.
+
+concepts:
+  - id: pigeonhole-principle
+    title: <<抽屉原理/Pigeonhole Principle>>
+    titleEn: <<抽屉原理/Pigeonhole Principle>>
+    hasVisualization: false
+    content: |
+      **一个简单的道理**
+
+      如果你有 11 只袜子，要放进 10 个抽屉里，至少有一个抽屉里**必定**装了 2 只以上的袜子。
+
+      这就是<<抽屉原理/Pigeonhole Principle>>——看上去显而易见，但在数学竞赛中威力巨大。
+
+      **基本形式**
+
+      如果 $n+1$ 个物品放入 $n$ 个盒子，则**至少有一个盒子**包含 $\ge 2$ 个物品。
+
+      **推广形式**
+
+      如果 $kn+1$ 个物品放入 $n$ 个盒子，则**至少有一个盒子**包含 $\ge k+1$ 个物品。
+
+      例如：$3 \times 5 + 1 = 16$ 个球放入 5 个盒子，至少有一个盒子里 $\ge 4$ 个球。
+
+      **为什么有用？——证明"必然存在"**
+
+      很多 AMC 8 题目问的是"至少要取多少个才能保证……"或"一定存在……"。
+      这类问题不需要你找到具体是哪个，只需要你证明"不可避免"——这正是抽屉原理的用武之地。
+
+      **怎么用？三步法**
+
+      1. **确定"物品"**：什么东西被分配？（学生、袜子、数字、余数……）
+      2. **确定"抽屉"**：它们被分到哪些类别中？（桌子、颜色、余数类……）
+      3. **比较数量**：物品数 > 抽屉数 $\times k$？则至少一个抽屉有 $\ge k+1$ 个。
+
+      **经典例题**
+
+      "从 $1, 2, 3, \ldots, 10$ 中任取 6 个数，证明其中必有两个数之和为 11。"
+
+      解：把 10 个数分成 5 组（抽屉）：$\{1,10\}, \{2,9\}, \{3,8\}, \{4,7\}, \{5,6\}$。每组两个数之和都是 11。
+      取 6 个数放入 5 个抽屉，由抽屉原理，至少有一个抽屉里有 2 个数——这两个数之和正好是 11。
+
+      **关键洞察**
+
+      抽屉原理的难点不在于原理本身，而在于**如何巧妙地定义"抽屉"**。选对抽屉，答案就呼之欲出。
+    contentEn: |
+      **A simple truth**
+
+      If you have 11 socks to put into 10 drawers, at least one drawer **must** contain 2 or more socks.
+
+      This is the <<抽屉原理/Pigeonhole Principle>> — it seems obvious, but it is enormously powerful in math competitions.
+
+      **Basic form**
+
+      If $n+1$ items go into $n$ boxes, then **at least one box** contains $\ge 2$ items.
+
+      **Generalized form**
+
+      If $kn+1$ items go into $n$ boxes, then **at least one box** contains $\ge k+1$ items.
+
+      Example: $3\times5+1 = 16$ balls into 5 boxes means at least one box has $\ge 4$ balls.
+
+      **Why is it useful? — Proving "guaranteed existence"**
+
+      Many AMC 8 problems ask "how many must you pick to guarantee…" or "prove that there must exist…"
+      You don't need to find which one — just prove it's unavoidable. That's exactly what the Pigeonhole Principle does.
+
+      **How to use it — three steps**
+
+      1. **Identify the "items"**: what is being distributed? (students, socks, numbers, remainders…)
+      2. **Identify the "boxes"**: what categories are they placed into? (desks, colors, remainder classes…)
+      3. **Compare counts**: items $> $ boxes $\times k$? Then at least one box has $\ge k+1$.
+
+      **Classic example**
+
+      "Pick any 6 numbers from $1, 2, 3, \ldots, 10$. Prove that two of them must sum to 11."
+
+      Solution: Group the 10 numbers into 5 pairs (boxes): $\{1,10\}, \{2,9\}, \{3,8\}, \{4,7\}, \{5,6\}$. Each pair sums to 11.
+      Placing 6 numbers into 5 boxes, by the Pigeonhole Principle, at least one box has 2 numbers — and their sum is exactly 11.
+
+      **Key insight**
+
+      The hard part is not the principle itself, but **how to cleverly define the "boxes."** Choose the right boxes and the answer follows immediately.
+    notes:
+      - '抽屉原理的核心是"物品数 > 抽屉数"，不需要知道具体是哪个抽屉"满了"'
+      - '推广形式中 $kn+1$ 个物品放入 $n$ 个抽屉，至少有一个抽屉有 $\ge k+1$ 个——注意是 $k+1$ 不是 $k$'
+      - '常见的"抽屉"定义：余数类、配对组、颜色类、坐标奇偶性'
+    notesEn:
+      - 'The core of the Pigeonhole Principle is "items > boxes" — you don''t need to know which box is full'
+      - 'Generalized form: $kn+1$ items into $n$ boxes means at least one has $\ge k+1$ — note $k+1$, not $k$'
+      - 'Common "box" definitions: remainder classes, paired groups, color classes, coordinate parities'
+
+  - id: parity-analysis
+    title: <<奇偶分析/Parity Analysis>>
+    titleEn: <<奇偶分析/Parity Analysis>>
+    hasVisualization: false
+    content: |
+      **奇偶性——最简单却最有力的分类**
+
+      每个整数非奇即偶。这个看似简单的分类，在解题中却能产生惊人的效果。
+
+      **基本运算规则（必须熟记）**
+
+      | 运算 | 规则 | 记忆口诀 |
+      |------|------|---------|
+      | 加/减 | 偶 $\pm$ 偶 $=$ 偶；奇 $\pm$ 奇 $=$ 偶；奇 $\pm$ 偶 $=$ 奇 | 同号得偶，异号得奇 |
+      | 乘法 | 偶 $\times$ 任何 $=$ 偶；奇 $\times$ 奇 $=$ 奇 | 有偶则偶 |
+
+      **乘积规则的推论**：多个数相乘，只要有一个偶数，积就是偶数。全部是奇数时，积才是奇数。
+
+      **奇偶分析的威力——排除不可能**
+
+      **例题**：能否将 $1, 2, 3, \ldots, 10$ 分成两组，使得两组的积相等？
+
+      分析：$1 \times 2 \times 3 \times \cdots \times 10 = 3628800$。如果两组积相等，则每组积 $= \sqrt{3628800}$。
+      但 $\sqrt{3628800} \approx 1904.9$，不是整数。所以**不可能**。
+
+      这个例子用的是数值分析。但奇偶分析有时更简洁：
+
+      **例题**：一个 $4 \times 4$ 棋盘，每次操作将一行或一列的所有格子取反（黑变白、白变黑）。初始全白，能否变成恰好 1 个黑格？
+
+      分析：每次操作改变 4 个格子的颜色。黑格数量的**奇偶性**在每次操作中保持不变（$+4$ 或 $-4$ 或其他，但变化量总是偶数）。初始黑格数 $= 0$（偶数），目标 $= 1$（奇数）。偶数永远变不成奇数。**不可能！**
+
+      **AMC 8 中常见的奇偶分析场景**
+
+      - **判断和的奇偶**：$n$ 个整数之和是奇是偶？看奇数的个数——奇数个奇数相加得奇，偶数个奇数相加得偶
+      - **排除不可能的答案**：如果你知道答案必须是偶数，可以直接排除所有奇数选项
+      - **证明不可能**：如果操作始终保持某个奇偶性，而目标具有不同的奇偶性，则不可能达到
+    contentEn: |
+      **Parity — the simplest yet most powerful classification**
+
+      Every integer is either odd or even. This seemingly trivial classification can produce amazing results in problem solving.
+
+      **Basic arithmetic rules (must memorize)**
+
+      | Operation | Rule | Memory aid |
+      |-----------|------|-----------|
+      | Add/Sub | even $\pm$ even $=$ even; odd $\pm$ odd $=$ even; odd $\pm$ even $=$ odd | Same parity → even; different → odd |
+      | Multiply | even $\times$ anything $=$ even; odd $\times$ odd $=$ odd | One even factor → even product |
+
+      **Corollary for products**: In a product of several integers, if at least one is even, the product is even. All must be odd for an odd product.
+
+      **The power of parity — ruling out the impossible**
+
+      **Example**: Can $1, 2, 3, \ldots, 10$ be split into two groups with equal products?
+
+      Analysis: $1\times2\times\cdots\times10 = 3628800$. Equal groups would each have product $\sqrt{3628800} \approx 1904.9$, which is not an integer. **Impossible.**
+
+      That example used numerical analysis. But parity can be even more elegant:
+
+      **Example**: On a $4\times4$ board, each move flips an entire row or column (black↔white). Starting all-white, can you reach exactly 1 black cell?
+
+      Analysis: Each move changes 4 cells, so the parity of the black-cell count is preserved (change is always even). Start $= 0$ (even), target $= 1$ (odd). Even can never become odd. **Impossible!**
+
+      **Common AMC 8 parity scenarios**
+
+      - **Sum parity**: Is the sum of $n$ integers odd or even? Count the odd numbers — an odd count of odds gives an odd sum
+      - **Eliminating answers**: If the answer must be even, cross out all odd choices immediately
+      - **Proving impossibility**: If a process preserves parity and the target has different parity from the start, the target is unreachable
+    notes:
+      - '奇偶分析的本质：整数模 2 的余数只有 0 和 1，运算在模 2 下非常简单'
+      - '连续整数之和的奇偶性：$n$ 个连续整数之和，当 $n$ 为奇数时和的奇偶性与中间数相同'
+      - '奇偶分析常与抽屉原理配合使用——先用奇偶缩小范围，再用抽屉原理锁定结论'
+    notesEn:
+      - 'Parity analysis is essentially arithmetic modulo 2 — remainders are just 0 and 1'
+      - 'Sum of $n$ consecutive integers: when $n$ is odd, the parity matches the middle number'
+      - 'Parity often teams up with the Pigeonhole Principle — narrow the range with parity, then lock in the conclusion with pigeonhole'
+
+  - id: invariants
+    title: <<不变量/Invariant>>
+    titleEn: <<不变量/Invariant>>
+    hasVisualization: false
+    content: |
+      **什么是不变量？**
+
+      在一个过程中，有些量会变化，有些量**始终不变**。如果你能找到一个在每一步操作中都不变的量，就找到了一个<<不变量/invariant>>。
+
+      **不变量的核心用法——证明不可能**
+
+      如果初始状态的不变量值为 $A$，目标状态的不变量值为 $B$，且 $A \neq B$，那么从初始状态**永远无法**到达目标状态。
+
+      **经典例题：棋盘染色论证**
+
+      一个 $8 \times 8$ 的国际象棋棋盘（黑白交替），去掉两个对角的白格。能否用 $1 \times 2$ 的多米诺骨牌铺满剩下的 62 个格子？
+
+      分析：每块多米诺骨牌恰好覆盖 1 个黑格和 1 个白格（因为相邻格颜色不同）。去掉两个白格后：黑格 32 个，白格 30 个。要铺 31 块多米诺需要 31 个黑格和 31 个白格。**不变量**："骨牌覆盖的黑格数 = 白格数"。但 $32 \neq 30$，所以**不可能**！
+
+      **不变量 vs 奇偶分析**
+
+      奇偶分析其实是不变量的一个特例——"奇偶性"就是一种不变量。不变量的概念更广泛：
+
+      - **奇偶不变量**：黑格数的奇偶性不变
+      - **模运算不变量**：某个量模 3 的余数不变
+      - **差值不变量**：两个量的差始终不变
+      - **和不变量**：所有元素之和不变
+
+      **如何发现不变量？**
+
+      1. 观察操作前后，什么量没变？
+      2. 如果直接看数值变了，试试看**奇偶性**或**模某个数的余数**变没变
+      3. 多个量的**和、差、积**是否在操作后保持不变？
+
+      **AMC 8 中的不变量思维**
+
+      竞赛中不会直接说"找不变量"。不变量思维体现在：
+      - 看到"反复操作"→ 想想有没有不变量
+      - 看到"能否变成"→ 找初始和目标的不变量比较
+      - 看到"多步过程"→ 追踪一个简单量的变化模式
+    contentEn: |
+      **What is an invariant?**
+
+      During a process, some quantities change while others **stay the same throughout**. If you find a quantity unchanged by every step, you've found an <<不变量/invariant>>.
+
+      **Core use of invariants — proving impossibility**
+
+      If the invariant's value is $A$ at the start and $B$ at the target, and $A \neq B$, then the target is **forever unreachable** from the start.
+
+      **Classic example: the checkerboard argument**
+
+      An $8\times8$ chessboard (alternating black and white) has two diagonally opposite white corners removed. Can you tile the remaining 62 squares with $1\times2$ dominoes?
+
+      Analysis: Each domino covers exactly 1 black and 1 white square (adjacent squares have different colors). After removing two white squares: 32 black, 30 white. Tiling 31 dominoes requires 31 black and 31 white. **Invariant**: "dominoes covered black count = white count." But $32 \neq 30$, so **impossible!**
+
+      **Invariant vs. parity analysis**
+
+      Parity analysis is actually a special case of invariants — "parity" is a type of invariant. The invariant concept is broader:
+
+      - **Parity invariant**: parity of black-cell count is unchanged
+      - **Modular invariant**: a quantity's remainder mod 3 is unchanged
+      - **Difference invariant**: the difference of two quantities stays constant
+      - **Sum invariant**: the sum of all elements stays constant
+
+      **How to discover invariants?**
+
+      1. Before and after each operation, what didn't change?
+      2. If the value itself changed, check whether its **parity** or **remainder mod some number** stayed the same
+      3. Does the **sum, difference, or product** of multiple quantities remain constant?
+
+      **Invariant thinking on AMC 8**
+
+      Contests never explicitly say "find the invariant." Invariant thinking shows up when you:
+      - See "repeated operations" → ask if there's an invariant
+      - See "can it become…" → compare invariants of start and target
+      - See "multi-step process" → track a simple quantity's change pattern
+    notes:
+      - '不变量是一种"证明不可能"的利器——找到一个就够了'
+      - '棋盘染色是最经典的不变量论证，AMC 8/10/12 和各类竞赛中反复出现'
+      - '发现不变量的关键：不要盯着变化的量，去找那个"不动"的量'
+    notesEn:
+      - 'An invariant is a powerful tool for proving impossibility — one is enough'
+      - 'The checkerboard coloring argument is the most classic invariant proof, recurring across AMC 8/10/12 and other competitions'
+      - 'Key to finding invariants: don''t stare at what changes — look for what stays still'
+
+  - id: process-elimination
+    title: <<逆推法/Working Backwards>>与<<排除法/Process of Elimination>>
+    titleEn: <<逆推法/Working Backwards>> & <<排除法/Process of Elimination>>
+    hasVisualization: false
+    content: |
+      **逆推法——从终点往回走**
+
+      有些题目给你一个过程和最终结果，问你起点是什么。正向推理需要猜起点，但**逆推法**从已知的终点出发，把每步操作"反过来做"，直到回到起点。
+
+      **逆推的关键：把操作"翻转"**
+
+      | 正向操作 | 逆向操作 |
+      |---------|---------|
+      | 加 $k$ | 减 $k$ |
+      | 乘 $k$ | 除以 $k$ |
+      | 如果偶数则除以 2 | 乘以 2 |
+      | 如果奇数则 $3n+1$ | 需要判断：$(n-1)/3$ 是否为正奇数 |
+
+      **什么时候用逆推？**
+      - 题目给出最终结果，问起始值
+      - 过程有多个分支（如偶数做一件事，奇数做另一件事），逆推时分支可能更少
+      - 需要找出所有可能的起始值
+
+      **排除法——AMC 8 的秘密武器**
+
+      AMC 8 是五选一的选择题。这意味着你不一定需要精确计算答案——**排除四个错误选项，剩下的就是答案**。
+
+      **排除法的常见策略**
+
+      1. **奇偶性排除**：如果你判断答案必须是偶数，立刻排除所有奇数选项
+      2. **量级估算**：答案大约是多少？排除明显太大或太小的选项
+      3. **末位分析**：算出答案的个位数字，排除不匹配的选项
+      4. **特殊值代入**：把答案代回原题验证——只有一个能通过
+      5. **整除性检验**：答案必须是某个数的倍数？排除不满足的
+
+      **"估算 + 验证"——竞赛高手的套路**
+
+      第一步：快速估算答案的范围（比如"大约在 80-100 之间"）
+      第二步：在这个范围内的选项中，逐一验证
+      第三步：找到正确答案
+
+      这比从头精确计算要快得多！
+
+      **代入选项法**
+
+      AMC 8 有时直接给你可能的答案。此时不用从头推导——把每个选项代入条件验证即可。
+      从最可能的选项开始试（通常是中间值），这样最多试 2-3 次就能找到答案。
+    contentEn: |
+      **Working backwards — start from the finish line**
+
+      Some problems give you a process and its final result, asking for the starting point. Forward reasoning requires guessing the start, but **working backwards** starts from the known endpoint, "undoing" each step until you reach the beginning.
+
+      **Key to working backwards: "reverse" each operation**
+
+      | Forward operation | Reverse operation |
+      |-------------------|-------------------|
+      | Add $k$ | Subtract $k$ |
+      | Multiply by $k$ | Divide by $k$ |
+      | If even, divide by 2 | Multiply by 2 |
+      | If odd, compute $3n+1$ | Check whether $(n-1)/3$ is a positive odd integer |
+
+      **When to use working backwards?**
+      - The problem gives the final result and asks for the starting value
+      - The process has branches (e.g., one rule for even, another for odd) — working backwards may have fewer branches
+      - You need to find all possible starting values
+
+      **Process of elimination — the AMC 8 secret weapon**
+
+      AMC 8 is multiple choice with five options. You don't always need an exact calculation — **eliminate four wrong choices and the remaining one is the answer**.
+
+      **Common elimination strategies**
+
+      1. **Parity check**: If the answer must be even, cross out all odd choices immediately
+      2. **Order-of-magnitude estimate**: Roughly how big is the answer? Eliminate choices that are obviously too large or too small
+      3. **Last-digit analysis**: Compute the units digit of the answer; eliminate mismatches
+      4. **Plug in choices**: Substitute each answer back into the problem — only one works
+      5. **Divisibility check**: Must the answer be a multiple of some number? Eliminate those that aren't
+
+      **"Estimate then verify" — the expert's playbook**
+
+      Step 1: Quickly estimate the answer's range (e.g., "roughly between 80 and 100")
+      Step 2: Among choices in that range, verify one by one
+      Step 3: Confirm the correct answer
+
+      This is much faster than precise calculation from scratch!
+
+      **Plugging in choices**
+
+      AMC 8 sometimes hands you the possible answers directly. Instead of deriving from scratch, substitute each choice into the conditions.
+      Start with the most likely option (often the middle value) — you'll usually find the answer in 2–3 tries.
+    notes:
+      - '逆推法特别适合"反复操作"类问题——正向可能有很多分支，逆向往往更清晰'
+      - '排除法在 AMC 8 中几乎每题都能用——至少可以排除 1-2 个明显不合理的选项'
+      - '代入验证时，从中间选项开始试效率最高——如果太大就往小的试，太小就往大的试'
+      - '"先判断后计算"是竞赛解题的核心策略：花 10 秒分析能省 2 分钟计算'
+    notesEn:
+      - 'Working backwards is ideal for "repeated operation" problems — forward may branch heavily, backward is often cleaner'
+      - 'Elimination is usable on nearly every AMC 8 problem — at minimum you can cross out 1–2 implausible choices'
+      - 'When plugging in, start with the middle choice for best efficiency — go smaller if too big, bigger if too small'
+      - '"Judge before you compute" is the core contest strategy: 10 seconds of analysis can save 2 minutes of calculation'
+
+examples:
+  - type: 1
+    source: "AMC 8 2017 #21"
+    title: 符号函数与奇偶分析
+    titleEn: Sign Function and Parity Analysis
+    question: |
+      设 $a$、$b$、$c$ 是非零实数，且 $a + b + c = 0$。
+
+      求 $\dfrac{a}{|a|} + \dfrac{b}{|b|} + \dfrac{c}{|c|} + \dfrac{abc}{|abc|}$ 的所有可能值。
+
+      (A) 0 &emsp; (B) 1 和 $-1$ &emsp; (C) 2 和 $-2$ &emsp; (D) 0 和 2 和 $-2$ &emsp; (E) 0 和 1 和 $-1$
+    questionEn: |
+      Let $a$, $b$, $c$ be nonzero real numbers such that $a + b + c = 0$.
+
+      What are all possible values of $\dfrac{a}{|a|} + \dfrac{b}{|b|} + \dfrac{c}{|c|} + \dfrac{abc}{|abc|}$?
+
+      (A) 0 &emsp; (B) 1 and $-1$ &emsp; (C) 2 and $-2$ &emsp; (D) 0 and 2 and $-2$ &emsp; (E) 0 and 1 and $-1$
+    steps:
+      - '**关键观察**：$\dfrac{x}{|x|}$ 是符号函数，$x > 0$ 时等于 $+1$，$x < 0$ 时等于 $-1$'
+      - '因为 $a + b + c = 0$，三者不可能同号（同号之和不为零）。所以**两个同号、一个反号**'
+      - '**情况一**：两正一负，比如 $a > 0, b > 0, c < 0$。符号分别为 $+1, +1, -1$。积 $abc = (+)(+)(-) < 0$，所以 $\dfrac{abc}{|abc|} = -1$。总和 $= 1 + 1 - 1 - 1 = 0$'
+      - '**情况二**：两负一正，比如 $a < 0, b < 0, c > 0$。符号分别为 $-1, -1, +1$。积 $abc = (-)(-)(+) > 0$，所以 $\dfrac{abc}{|abc|} = +1$。总和 $= -1 - 1 + 1 + 1 = 0$'
+      - '两种情况总和都是 $0$。答案为 **(A) 0**'
+    stepsEn:
+      - '**Key observation**: $\dfrac{x}{|x|}$ is the sign function: $+1$ when $x > 0$, $-1$ when $x < 0$'
+      - 'Since $a+b+c=0$, all three cannot share the same sign (same-sign sum cannot be zero). So **two share one sign, one has the opposite**'
+      - '**Case 1**: two positive, one negative, say $a>0, b>0, c<0$. Signs: $+1, +1, -1$. Product $abc=(+)(+)(-)< 0$, so $\dfrac{abc}{|abc|}=-1$. Total $= 1+1-1-1 = 0$'
+      - '**Case 2**: two negative, one positive, say $a<0, b<0, c>0$. Signs: $-1,-1,+1$. Product $abc=(-)(-)( +)>0$, so $\dfrac{abc}{|abc|}=+1$. Total $= -1-1+1+1 = 0$'
+      - 'Both cases give $0$. Answer: **(A) 0**'
+    answer: '(A) 0'
+    answerEn: '(A) 0'
+
+  - type: 2
+    source: "AMC 8 2017 #8"
+    title: 逻辑推理——恰好三真一假
+    titleEn: Logical Reasoning — Exactly Three True, One False
+    question: |
+      Malcolm 的门牌号是一个两位数。以下四个陈述中，恰好有三个为真：
+
+      (1) 它是质数；(2) 它是偶数；(3) 它能被 7 整除；(4) 它的某个数字是 9。
+
+      这个门牌号的个位数字是多少？
+
+      (A) 4 &emsp; (B) 6 &emsp; (C) 7 &emsp; (D) 8 &emsp; (E) 9
+    questionEn: |
+      Malcolm's two-digit house number has the property that exactly three of the following four statements about it are true:
+
+      (1) It is prime. (2) It is even. (3) It is divisible by 7. (4) One of its digits is 9.
+
+      What is its units digit?
+
+      (A) 4 &emsp; (B) 6 &emsp; (C) 7 &emsp; (D) 8 &emsp; (E) 9
+    steps:
+      - '**策略**：恰好三真一假，尝试每种"哪个为假"'
+      - '**假设 (1) 为假**（不是质数），其余三真：偶数、被 7 整除、含数字 9。偶数且被 7 整除→被 14 整除。两位数中 14 的倍数：14, 28, 42, 56, 70, 84, 98。含 9 的只有 98。98 不是质数 ✓。三真一假 ✓'
+      - '**假设 (2) 为假**（奇数）：需要质数、被 7 整除、含 9。被 7 整除的质数只有 7 本身（一位数），无两位数解 ✗'
+      - '**假设 (3) 为假**：需要质数、偶数、含 9。唯一偶质数是 2（一位数）✗'
+      - '**假设 (4) 为假**：需要质数、偶数、被 7 整除。偶质数只有 2，不被 7 整除 ✗'
+      - '唯一解 $N = 98$，个位数字 $= \mathbf{8}$'
+    stepsEn:
+      - '**Strategy**: exactly 3 true and 1 false — try each possibility for the false one'
+      - '**Suppose (1) false** (not prime), rest true: even, div by 7, has digit 9. Even and div by 7 → div by 14. Two-digit multiples of 14: 14,28,42,56,70,84,98. Only 98 has a 9. 98 is not prime ✓. Three true, one false ✓'
+      - '**Suppose (2) false** (odd): need prime, div by 7, digit 9. Only prime div by 7 is 7 (one digit) ✗'
+      - '**Suppose (3) false**: need prime, even, digit 9. Only even prime is 2 (one digit) ✗'
+      - '**Suppose (4) false**: need prime, even, div by 7. Only even prime is 2, not div by 7 ✗'
+      - 'Unique solution $N=98$, units digit $= \mathbf{8}$'
+    answer: '(D) 8'
+    answerEn: '(D) 8'
+
+  - type: 3
+    source: "AMC 8 2022 #9"
+    title: 逆推法——温度衰减
+    titleEn: Working Backwards — Temperature Decay
+    question: |
+      一壶沸水温度为 $212°\text{F}$，房间温度为 $68°\text{F}$。水与房间的温度差每 5 分钟减半。15 分钟后水温是多少华氏度？
+
+      (A) 77 &emsp; (B) 86 &emsp; (C) 92 &emsp; (D) 98 &emsp; (E) 104
+    questionEn: |
+      Boiling water at $212°\text{F}$ is placed in a room at $68°\text{F}$. The temperature difference between the water and the room halves every 5 minutes. What is the water temperature after 15 minutes, in degrees Fahrenheit?
+
+      (A) 77 &emsp; (B) 86 &emsp; (C) 92 &emsp; (D) 98 &emsp; (E) 104
+    steps:
+      - '初始温差 $= 212 - 68 = 144°\text{F}$'
+      - '5 分钟后：温差 $= 144 \div 2 = 72$，水温 $= 68 + 72 = 140°\text{F}$'
+      - '10 分钟后：温差 $= 72 \div 2 = 36$，水温 $= 68 + 36 = 104°\text{F}$'
+      - '15 分钟后：温差 $= 36 \div 2 = 18$，水温 $= 68 + 18 = 86°\text{F}$'
+      - '答案为 **(B) 86**'
+    stepsEn:
+      - 'Initial temperature difference $= 212 - 68 = 144°\text{F}$'
+      - 'After 5 min: difference $= 144/2 = 72$, water temp $= 68 + 72 = 140°\text{F}$'
+      - 'After 10 min: difference $= 72/2 = 36$, water temp $= 68 + 36 = 104°\text{F}$'
+      - 'After 15 min: difference $= 36/2 = 18$, water temp $= 68 + 18 = 86°\text{F}$'
+      - 'Answer: **(B) 86**'
+    answer: '(B) 86'
+    answerEn: '(B) 86'
+
+  - type: 4
+    source: "AMC 8 2020 #22"
+    title: 逆推法——Collatz 机器
+    titleEn: Working Backwards — Collatz Machine
+    question: |
+      一台机器执行以下操作：如果输入 $N$ 是偶数，输出 $N/2$；如果 $N$ 是奇数，输出 $3N+1$。
+
+      某个正整数 $N$ 经过恰好 6 步操作后得到 1。所有这样的 $N$ 之和是多少？
+
+      (A) 73 &emsp; (B) 74 &emsp; (C) 75 &emsp; (D) 82 &emsp; (E) 83
+    questionEn: |
+      A machine applies the following rule: if the input $N$ is even, output $N/2$; if $N$ is odd, output $3N+1$.
+
+      A positive integer $N$ reaches $1$ after exactly 6 applications. What is the sum of all such $N$?
+
+      (A) 73 &emsp; (B) 74 &emsp; (C) 75 &emsp; (D) 82 &emsp; (E) 83
+    steps:
+      - '**策略**：从终点 1 逆推 6 步，找出所有可能的起点'
+      - '记序列为 $N \to a_1 \to a_2 \to a_3 \to a_4 \to a_5 \to a_6 = 1$'
+      - '**逆推 $a_6 = 1$**：$a_5/2 = 1 \Rightarrow a_5 = 2$（偶数路径）；或 $3a_5 + 1 = 1 \Rightarrow a_5 = 0$（不合题意）。所以 $a_5 = 2$'
+      - '**逆推 $a_5 = 2$**：$a_4/2 = 2 \Rightarrow a_4 = 4$；或 $3a_4 + 1 = 2 \Rightarrow a_4 = 1/3$（非整数）。所以 $a_4 = 4$'
+      - '**逆推 $a_4 = 4$**：$a_3 = 8$（偶数路径）；或 $3a_3 + 1 = 4 \Rightarrow a_3 = 1$（奇数路径 ✓）。$a_3 \in \{1, 8\}$'
+      - '**分支 $a_3 = 8$**：$a_2 = 16$（唯一可能，$3a_2+1=8$ 无整数解）。$a_1 = 32$ 或 $a_1 = 5$（因为 $3 \times 5 + 1 = 16$）。$N$：从 $a_1=32$ 得 $N=64$；从 $a_1=5$ 得 $N=10$'
+      - '**分支 $a_3 = 1$**：$a_2 = 2$。$a_1 = 4$。$N = 8$（$8/2=4$ ✓）或 $N = 1$（$3 \times 1 + 1 = 4$ ✓）'
+      - '所有起始 $N$：$\{1, 8, 10, 64\}$。和 $= 1 + 8 + 10 + 64 = \mathbf{83}$'
+    stepsEn:
+      - '**Strategy**: work backwards from endpoint 1 for 6 steps to find all possible starting values'
+      - 'Denote the sequence $N \to a_1 \to a_2 \to a_3 \to a_4 \to a_5 \to a_6 = 1$'
+      - '**Reverse $a_6=1$**: $a_5/2=1 \Rightarrow a_5=2$ (even path); or $3a_5+1=1 \Rightarrow a_5=0$ (invalid). So $a_5=2$'
+      - '**Reverse $a_5=2$**: $a_4/2=2 \Rightarrow a_4=4$; or $3a_4+1=2 \Rightarrow a_4=1/3$ (not integer). So $a_4=4$'
+      - '**Reverse $a_4=4$**: $a_3=8$ (even path); or $3a_3+1=4 \Rightarrow a_3=1$ (odd path ✓). $a_3 \in \{1, 8\}$'
+      - '**Branch $a_3=8$**: $a_2=16$ (only possibility). $a_1=32$ or $a_1=5$ (since $3\times5+1=16$). Then $N$: from $a_1=32$, $N=64$; from $a_1=5$, $N=10$'
+      - '**Branch $a_3=1$**: $a_2=2$. $a_1=4$. $N=8$ ($8/2=4$ ✓) or $N=1$ ($3\times1+1=4$ ✓)'
+      - 'All starting $N$: $\{1, 8, 10, 64\}$. Sum $= 1+8+10+64 = \mathbf{83}$'
+    answer: '(E) 83'
+    answerEn: '(E) 83'
+
+exercises:
+  timeGuide:
+    total: 约 40 分钟
+    sections:
+      - range: "1–4"
+        time: 抽屉原理与奇偶分析（约 10 分钟）
+      - range: "5–8"
+        time: 不变量与逻辑推理（约 15 分钟）
+      - range: "9–12"
+        time: 逆推法与排除法（约 15 分钟）
+  scaffold:
+    - title: '铺垫：简单抽屉原理'
+      titleEn: 'Warm-up: Simple Pigeonhole'
+      question: '有 5 双袜子（5 种颜色各 2 只）混在一起。闭着眼至少抽几只，才能保证有一双同色的？'
+      questionEn: '5 pairs of socks (5 colors, 2 each) are mixed together. Eyes closed, how many must you draw to guarantee a matching pair?'
+      hint: '最坏情况：前几只全是不同颜色。颜色有 5 种……'
+      hintEn: 'Worst case: first draws are all different colors. There are 5 colors...'
+      answer: '最坏情况先抽 5 只、每种颜色各 1 只。第 6 只一定和前面某只同色。答案：6 只。'
+      answerEn: 'Worst case: first 5 are all different colors. The 6th must match one. Answer: 6 socks.'
+    - title: '铺垫：奇偶性判断'
+      titleEn: 'Warm-up: Parity Check'
+      question: '不做计算，判断 $37 + 48 + 51$ 的结果是奇数还是偶数？'
+      questionEn: 'Without calculating, is $37 + 48 + 51$ odd or even?'
+      hint: '奇+偶=奇，奇+奇=偶。先看每个数的奇偶性：37(奇)，48(偶)，51(奇)'
+      hintEn: 'odd+even=odd, odd+odd=even. Check each: 37(odd), 48(even), 51(odd)'
+      answer: '奇+偶=奇，奇+奇=偶。所以结果是偶数。（验证：37+48+51=136，偶数 ✓）'
+      answerEn: 'odd+even=odd, then odd+odd=even. So the result is even. (Check: 37+48+51=136, even ✓)'
+    - title: '铺垫：逆推一步操作'
+      titleEn: 'Warm-up: Reversing One Operation'
+      question: '小明想一个数，乘以 3 后得到 21。原来的数是多少？'
+      questionEn: 'Xiao Ming thinks of a number, multiplies by 3, and gets 21. What was the number?'
+      hint: '逆推：乘以 3 的逆操作是除以 3'
+      hintEn: 'Reverse: the inverse of multiplying by 3 is dividing by 3'
+      answer: '$21 \div 3 = 7$。原来的数是 7。'
+      answerEn: '$21 \div 3 = 7$. The original number was 7.'
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #8"
+      section: 抽屉原理与奇偶分析
+      question: '$100 - 98 + 96 - 94 + \cdots + 8 - 6 + 4 - 2$ 的值是多少？'
+      questionEn: 'What is the value of $100 - 98 + 96 - 94 + \cdots + 8 - 6 + 4 - 2$?'
+      choices:
+        - label: A
+          content: '20'
+        - label: B
+          content: '40'
+        - label: C
+          content: '50'
+        - label: D
+          content: '80'
+        - label: E
+          content: '100'
+      correctValue: C
+      answer: '(C) 50'
+      answerEn: '(C) 50'
+      explanation: |
+        将相邻两项配对：$(100-98)+(96-94)+\cdots+(4-2)$。每对差为 $2$。
+        从 100 到 2，每对跨 4 个数，共有 $(100-2)/4+1 = 25$ 对。
+        总和 $= 25 \times 2 = \mathbf{50}$。
+      explanationEn: |
+        Pair adjacent terms: $(100-98)+(96-94)+\cdots+(4-2)$. Each pair equals $2$.
+        From 100 to 2, each pair spans 4, so there are $(100-2)/4+1=25$ pairs.
+        Total $= 25 \times 2 = \mathbf{50}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2022 #16"
+      section: 抽屉原理与奇偶分析
+      question: |
+        四个数排成一行。前两个数的平均值是 21，中间两个数的平均值是 26，后两个数的平均值是 30。
+        第一个数和最后一个数的平均值是多少？
+      questionEn: |
+        Four numbers are written in a row. The average of the first two is 21, the average of the middle two is 26, and the average of the last two is 30.
+        What is the average of the first and last numbers?
+      choices:
+        - label: A
+          content: '24'
+        - label: B
+          content: '25'
+        - label: C
+          content: '26'
+        - label: D
+          content: '27'
+        - label: E
+          content: '28'
+      correctValue: B
+      answer: '(B) 25'
+      answerEn: '(B) 25'
+      explanation: |
+        设四个数为 $a, b, c, d$。由题意：$a+b=42$，$b+c=52$，$c+d=60$。
+        求 $a+d$：$(a+b)+(c+d)-(b+c) = 42+60-52 = 50$。
+        所以 $a+d=50$，平均值 $= 50/2 = \mathbf{25}$。
+      explanationEn: |
+        Let the four numbers be $a,b,c,d$. Given: $a+b=42$, $b+c=52$, $c+d=60$.
+        Find $a+d$: $(a+b)+(c+d)-(b+c)=42+60-52=50$.
+        Average of first and last $= 50/2 = \mathbf{25}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2016 #19"
+      section: 抽屉原理与奇偶分析
+      question: '25 个连续偶数之和为 10000。其中最大的数是多少？'
+      questionEn: 'The sum of 25 consecutive even integers is 10000. What is the largest of these 25 consecutive even integers?'
+      choices:
+        - label: A
+          content: '388'
+        - label: B
+          content: '398'
+        - label: C
+          content: '412'
+        - label: D
+          content: '416'
+        - label: E
+          content: '424'
+      correctValue: E
+      answer: '(E) 424'
+      answerEn: '(E) 424'
+      explanation: |
+        25 个连续偶数，中间（第 13 个）为 $m$。和 $= 25m = 10000$，所以 $m = 400$。
+        最大的是第 25 个，比 $m$ 大 $12 \times 2 = 24$。
+        最大值 $= 400 + 24 = \mathbf{424}$。
+      explanationEn: |
+        The middle (13th) of 25 consecutive even integers is $m$. Sum $= 25m = 10000$, so $m=400$.
+        The largest is the 25th, which is $12\times2=24$ more than $m$.
+        Largest $= 400+24 = \mathbf{424}$.
+
+    - number: 4
+      type: 解答题
+      inputType: open
+      section: 抽屉原理与奇偶分析
+      question: |
+        教室里有 13 名同学坐在 12 张课桌旁。用<<抽屉原理/Pigeonhole Principle>>解释为什么至少有一张课桌旁坐了 2 名以上的同学。
+      questionEn: |
+        A classroom has 13 students seated at 12 desks. Use the <<抽屉原理/Pigeonhole Principle>> to explain why at least one desk must have 2 or more students.
+      answer: |
+        将 13 名同学视为"物品"，12 张课桌视为"抽屉"。
+        因为物品数 $13 > $ 抽屉数 $12$，由抽屉原理，至少有一个抽屉（课桌）包含 $\ge 2$ 个物品（同学）。
+      answerEn: |
+        Treat the 13 students as "items" and the 12 desks as "boxes."
+        Since items $13 > $ boxes $12$, by the Pigeonhole Principle, at least one box (desk) contains $\ge 2$ items (students).
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #9"
+      section: 不变量与逻辑推理
+      question: |
+        一个 $4 \times 4 \times 4$ 的正方体蛋糕，顶部和四个侧面涂了糖霜（底部没有）。
+        将蛋糕切成 64 个 $1 \times 1 \times 1$ 的小方块。有多少个小方块恰好有两个面涂了糖霜？
+      questionEn: |
+        A $4\times4\times4$ cube-shaped cake has icing on the top and all four side faces (but not the bottom).
+        The cake is cut into 64 unit cubes. How many unit cubes have icing on exactly two faces?
+      choices:
+        - label: A
+          content: '12'
+        - label: B
+          content: '16'
+        - label: C
+          content: '18'
+        - label: D
+          content: '20'
+        - label: E
+          content: '24'
+      correctValue: D
+      answer: '(D) 20'
+      answerEn: '(D) 20'
+      explanation: |
+        系统分析恰好有 2 面涂糖霜的小方块：
+
+        **顶层**（16 个小方块）：
+        - 4 个角块：每个有顶面 + 2 个侧面 = 3 面糖霜（不符合）
+        - 8 个边块（非角）：每个有顶面 + 1 个侧面 = 2 面糖霜 ✓ → **8 个**
+        - 4 个内部块：只有顶面 = 1 面（不符合）
+
+        **中间两层**（第 2、3 层，各 16 个）：
+        - 每层 4 个角块（竖直棱上）：2 个侧面 = 2 面糖霜 ✓ → 每层 4 个，两层共 **8 个**
+        - 每层 8 个边块（非角，贴侧面）：1 个侧面 = 1 面（不符合）
+        - 内部块：0 面（不符合）
+
+        **底层**（16 个小方块，底面无糖霜）：
+        - 4 个角块：2 个侧面 = 2 面糖霜 ✓ → **4 个**
+        - 8 个边块（非角，贴侧面）：1 个侧面 = 1 面（不符合）
+        - 内部块：0 面（不符合）
+
+        总计：$8 + 8 + 4 = \mathbf{20}$。
+      explanationEn: |
+        Systematically count cubes with exactly 2 iced faces:
+
+        **Top layer** (16 cubes):
+        - 4 corner cubes: top + 2 side faces = 3 iced (not 2)
+        - 8 edge cubes (non-corner): top + 1 side = 2 iced ✓ → **8**
+        - 4 interior cubes: top only = 1 (not 2)
+
+        **Middle two layers** (layers 2 and 3, 16 each):
+        - 4 corner cubes per layer (on vertical edges): 2 side faces = 2 iced ✓ → 2 layers × 4 = **8**
+        - Edge cubes (non-corner, on sides): 1 side = 1 (not 2)
+        - Interior: 0 (not 2)
+
+        **Bottom layer** (16 cubes, no bottom icing):
+        - 4 corner cubes: 2 side faces = 2 iced ✓ → **4**
+        - Edge cubes (non-corner): 1 side = 1 (not 2)
+        - Interior: 0 (not 2)
+
+        Total: $8 + 8 + 4 = \mathbf{20}$.
+
+    - number: 6
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2017 #17"
+      section: 不变量与逻辑推理
+      question: |
+        若干个箱子用来装金币。如果每个箱子装 9 枚金币，有 2 个箱子空着。
+        如果每个箱子装 6 枚金币，剩余 3 枚金币装不下。
+        共有多少枚金币？
+      questionEn: |
+        Gold coins are distributed among several treasure chests. If 9 coins are placed in each chest, 2 chests remain empty.
+        If 6 coins are placed in each chest, 3 coins are left over.
+        How many gold coins are there?
+      choices:
+        - label: A
+          content: '9'
+        - label: B
+          content: '27'
+        - label: C
+          content: '45'
+        - label: D
+          content: '63'
+        - label: E
+          content: '81'
+      correctValue: C
+      answer: '(C) 45'
+      answerEn: '(C) 45'
+      explanation: |
+        设箱子数为 $c$，金币数为 $n$。
+        条件一：$n = 9(c - 2) = 9c - 18$（2 个箱子空着）。
+        条件二：$n = 6c + 3$（剩余 3 枚）。
+        联立：$9c - 18 = 6c + 3$，解得 $3c = 21$，$c = 7$。
+        $n = 6 \times 7 + 3 = \mathbf{45}$。
+        验证：$45 = 9 \times (7-2) = 9 \times 5$ ✓，$45 = 6 \times 7 + 3$ ✓。
+
+        💡 **另一种方法——代入选项逐个试：**
+        直接拿 5 个选项逐个验证：
+        (A) $n=9$：每箱 6 个需 $\frac{9-3}{6}=1$ 个箱子；每箱 9 个需 1 个箱子，空 $-1$ 个？不合理 ✗
+        (B) $n=27$：每箱 6 个需 4 个箱子余 3 ✓；每箱 9 个需 3 个箱子，空 $4-3=1 \neq 2$ ✗
+        (C) $n=45$：每箱 6 个需 7 个箱子余 3 ✓；每箱 9 个用 5 个箱子，空 $7-5=2$ ✓ 答案！
+      explanationEn: |
+        Let $c$ = number of chests, $n$ = number of coins.
+        Condition 1: $n = 9(c-2) = 9c - 18$ (2 chests empty).
+        Condition 2: $n = 6c + 3$ (3 coins left over).
+        Equate: $9c-18 = 6c+3 \Rightarrow 3c=21 \Rightarrow c=7$.
+        $n = 6\times7 + 3 = \mathbf{45}$.
+        Check: $45 = 9\times5$ ✓, $45 = 6\times7+3$ ✓.
+
+        💡 **Alternative — Plug In Each Choice:**
+        Test each answer directly:
+        (A) $n=9$: 6 per chest needs 1 chest remainder 3 ✓; 9 per chest needs 1, empty $= 0 \neq 2$ ✗
+        (B) $n=27$: 6 per chest needs 4, remainder 3 ✓; 9 per chest needs 3, empty $= 1 \neq 2$ ✗
+        (C) $n=45$: 6 per chest needs 7, remainder 3 ✓; 9 per chest uses 5, empty $= 7-5 = 2$ ✓ Answer!
+
+    - number: 7
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2018 #5"
+      section: 不变量与逻辑推理
+      question: '$1 + 3 + 5 + \cdots + 2017 + 2019 - 2 - 4 - 6 - \cdots - 2016 - 2018$ 的值是多少？'
+      questionEn: 'What is $1 + 3 + 5 + \cdots + 2017 + 2019 - 2 - 4 - 6 - \cdots - 2016 - 2018$?'
+      choices:
+        - label: A
+          content: '$-1010$'
+        - label: B
+          content: '$-1009$'
+        - label: C
+          content: '$1008$'
+        - label: D
+          content: '$1009$'
+        - label: E
+          content: '$1010$'
+      correctValue: E
+      answer: '(E) 1010'
+      answerEn: '(E) 1010'
+      explanation: |
+        重新排列，将相邻奇偶数配对：
+        $(1 - 2) + (3 - 4) + (5 - 6) + \cdots + (2017 - 2018) + 2019$
+
+        从 1 到 2018，每对 $(2k-1) - 2k = -1$。共有 $2018/2 = 1009$ 对。
+        总和 $= 1009 \times (-1) + 2019 = -1009 + 2019 = \mathbf{1010}$。
+      explanationEn: |
+        Rearrange by pairing adjacent odd and even:
+        $(1-2)+(3-4)+(5-6)+\cdots+(2017-2018)+2019$
+
+        From 1 to 2018, each pair $(2k-1)-2k = -1$. There are $2018/2=1009$ pairs.
+        Sum $= 1009\times(-1)+2019 = -1009+2019 = \mathbf{1010}$.
+
+    - number: 8
+      type: 单选题
+      inputType: mc
+      section: 不变量与逻辑推理
+      question: |
+        黑板上写着数字 $1, 2, 3, \ldots, 10$。每次操作：擦掉两个数 $a, b$，写上 $a + b$。经过 9 次操作后，黑板上只剩一个数。这个数是多少？
+      questionEn: |
+        The numbers $1, 2, 3, \ldots, 10$ are written on a board. In each step, two numbers $a$ and $b$ are erased and replaced by $a+b$. After 9 steps, only one number remains. What is that number?
+      choices:
+        - label: A
+          content: '45'
+        - label: B
+          content: '50'
+        - label: C
+          content: '55'
+        - label: D
+          content: '100'
+        - label: E
+          content: '无法确定'
+      correctValue: C
+      answer: '(C) 55'
+      answerEn: '(C) 55'
+      explanation: |
+        **不变量**：每次操作中，擦掉 $a$ 和 $b$，写上 $a+b$。所有数之和保持不变！
+
+        初始和 $= 1 + 2 + \cdots + 10 = \dfrac{10 \times 11}{2} = 55$。
+
+        无论操作顺序如何，最终剩下的数一定是 $\mathbf{55}$。
+      explanationEn: |
+        **Invariant**: erasing $a$ and $b$ and writing $a+b$ preserves the total sum!
+
+        Initial sum $= 1+2+\cdots+10 = \dfrac{10\times11}{2} = 55$.
+
+        Regardless of the order of operations, the final number is always $\mathbf{55}$.
+
+    - number: 9
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2023 #22"
+      section: 逆推法与排除法
+      question: |
+        在一个数列中，从第三项开始，每一项等于前两项之积。已知第六项为 4000。第一项是多少？
+      questionEn: |
+        In a sequence, each term after the second equals the product of the two preceding terms. The sixth term is 4000. What is the first term?
+      choices:
+        - label: A
+          content: '1'
+        - label: B
+          content: '2'
+        - label: C
+          content: '3'
+        - label: D
+          content: '5'
+        - label: E
+          content: '10'
+      correctValue: D
+      answer: '(D) 5'
+      answerEn: '(D) 5'
+      explanation: |
+        设 $a_1 = a$，$a_2 = b$。逐项推导：
+        $a_3 = ab$，$a_4 = a_2 \cdot a_3 = ab^{2}$，$a_5 = a_3 \cdot a_4 = a^{2}b^{3}$，$a_6 = a_4 \cdot a_5 = a^{3}b^{5}$。
+
+        所以 $a^{3}b^{5} = 4000$。对 4000 做质因数分解：$4000 = 2^{5} \times 5^{3}$。
+
+        比较：$a^{3} = 5^{3} \Rightarrow a = 5$，$b^{5} = 2^{5} \Rightarrow b = 2$。
+
+        验证：$5, 2, 10, 20, 200, 4000$ ✓。第一项 $= \mathbf{5}$。
+
+        💡 **另一种方法——代入选项逐个试：**
+        逐个试 $a_1$ 的值，看哪个能让第六项 $= 4000$。猜 $a_2$ 时从小数开始：
+        试 $a_1=5$，$a_2=2$：$5, 2, 10, 20, 200, 4000$ ✓ 找到了！
+        试 $a_1=2$，$a_2=?$：$a_6 = a^{3}b^{5} = 8b^{5}$，$b^{5} = 500$，$b$ 不是整数 ✗。
+        选择题中只有 5 个选项，最多试 5 次就能找到！
+      explanationEn: |
+        Let $a_1=a$, $a_2=b$. Derive each term:
+        $a_3=ab$, $a_4=ab^{2}$, $a_5=a^{2}b^{3}$, $a_6=a^{3}b^{5}$.
+
+        So $a^{3}b^{5}=4000$. Prime factorization: $4000=2^{5}\times5^{3}$.
+
+        Match: $a^{3}=5^{3}\Rightarrow a=5$, $b^{5}=2^{5}\Rightarrow b=2$.
+
+        Verify: $5, 2, 10, 20, 200, 4000$ ✓. First term $= \mathbf{5}$.
+
+        💡 **Alternative — Try Each Choice:**
+        Test each value of $a_1$, guessing small values for $a_2$:
+        Try $a_1=5$, $a_2=2$: $5, 2, 10, 20, 200, 4000$ ✓ Found it!
+        Try $a_1=2$, $a_2=?$: $a_6 = 8b^{5}$, $b^{5}=500$, not an integer ✗.
+        With only 5 choices, you need at most 5 tries!
+
+    - number: 10
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2023 #10"
+      section: 逆推法与排除法
+      question: |
+        Harold 吃了一个派的 $\dfrac{1}{4}$。然后 Moose 吃了剩下的 $\dfrac{1}{3}$。然后 Porcupine 吃了 Moose 吃完后剩下的 $\dfrac{1}{3}$。
+        这个派还剩多少？
+      questionEn: |
+        Harold eats $\dfrac{1}{4}$ of a pie. Then Moose eats $\dfrac{1}{3}$ of the remaining pie. Then Porcupine eats $\dfrac{1}{3}$ of what Moose left behind.
+        What fraction of the original pie remains?
+      choices:
+        - label: A
+          content: '$\dfrac{1}{12}$'
+        - label: B
+          content: '$\dfrac{1}{6}$'
+        - label: C
+          content: '$\dfrac{1}{4}$'
+        - label: D
+          content: '$\dfrac{1}{3}$'
+        - label: E
+          content: '$\dfrac{5}{12}$'
+      correctValue: D
+      answer: '(D) $\dfrac{1}{3}$'
+      answerEn: '(D) $\dfrac{1}{3}$'
+      explanation: |
+        Harold 吃了 $\dfrac{1}{4}$，剩 $\dfrac{3}{4}$。
+        Moose 吃了剩下的 $\dfrac{1}{3}$，即 $\dfrac{3}{4} \times \dfrac{1}{3} = \dfrac{1}{4}$，还剩 $\dfrac{3}{4} \times \dfrac{2}{3} = \dfrac{1}{2}$。
+        Porcupine 吃了剩下的 $\dfrac{1}{3}$，即 $\dfrac{1}{2} \times \dfrac{1}{3} = \dfrac{1}{6}$，还剩 $\dfrac{1}{2} \times \dfrac{2}{3} = \dfrac{1}{3}$。
+        剩余 $\mathbf{\dfrac{1}{3}}$。
+      explanationEn: |
+        Harold eats $\dfrac{1}{4}$, leaving $\dfrac{3}{4}$.
+        Moose eats $\dfrac{1}{3}$ of that: $\dfrac{3}{4}\times\dfrac{2}{3}=\dfrac{1}{2}$ remains.
+        Porcupine eats $\dfrac{1}{3}$ of that: $\dfrac{1}{2}\times\dfrac{2}{3}=\dfrac{1}{3}$ remains.
+        Remaining: $\mathbf{\dfrac{1}{3}}$.
+
+    - number: 11
+      type: 单选题
+      inputType: mc
+      section: 逆推法与排除法
+      question: |
+        小明想一个正整数，先乘以 2，再加 3，再乘以 3，最后减 4，得到 35。小明想的数是多少？
+      questionEn: |
+        Xiao Ming thinks of a positive integer. He multiplies by 2, adds 3, multiplies by 3, then subtracts 4, getting 35. What was his number?
+      choices:
+        - label: A
+          content: '3'
+        - label: B
+          content: '4'
+        - label: C
+          content: '5'
+        - label: D
+          content: '6'
+        - label: E
+          content: '7'
+      correctValue: C
+      answer: '(C) 5'
+      answerEn: '(C) 5'
+      explanation: |
+        逆推：从结果 35 出发，把每步操作反过来做。
+
+        $35 \xrightarrow{+4} 39 \xrightarrow{\div 3} 13 \xrightarrow{-3} 10 \xrightarrow{\div 2} 5$
+
+        原来的数是 $\mathbf{5}$。
+
+        正向验证：$5 \times 2 = 10$，$10 + 3 = 13$，$13 \times 3 = 39$，$39 - 4 = 35$ ✓。
+      explanationEn: |
+        Work backwards from 35, reversing each operation:
+
+        $35 \xrightarrow{+4} 39 \xrightarrow{\div 3} 13 \xrightarrow{-3} 10 \xrightarrow{\div 2} 5$
+
+        The original number is $\mathbf{5}$.
+
+        Forward check: $5\times2=10$, $10+3=13$, $13\times3=39$, $39-4=35$ ✓.
+
+    - number: 12
+      type: 单选题
+      inputType: mc
+      section: 逆推法与排除法
+      question: |
+        一个数经过以下操作：加 5，乘以 2，减 4，除以 3，结果为 6。原来的数是多少？
+      questionEn: |
+        A number undergoes the following operations: add 5, multiply by 2, subtract 4, divide by 3. The result is 6. What was the original number?
+      choices:
+        - label: A
+          content: '4'
+        - label: B
+          content: '6'
+        - label: C
+          content: '8'
+        - label: D
+          content: '9'
+        - label: E
+          content: '10'
+      correctValue: B
+      answer: '(B) 6'
+      answerEn: '(B) 6'
+      explanation: |
+        逆推：从结果 6 出发，把每步操作反过来做。
+
+        $6 \xrightarrow{\times 3} 18 \xrightarrow{+4} 22 \xrightarrow{\div 2} 11 \xrightarrow{-5} 6$
+
+        原来的数是 $\mathbf{6}$。
+
+        正向验证：$6 + 5 = 11$，$11 \times 2 = 22$，$22 - 4 = 18$，$18 \div 3 = 6$ ✓。
+      explanationEn: |
+        Work backwards from 6, reversing each operation:
+
+        $6 \xrightarrow{\times 3} 18 \xrightarrow{+4} 22 \xrightarrow{\div 2} 11 \xrightarrow{-5} 6$
+
+        The original number is $\mathbf{6}$.
+
+        Forward check: $6+5=11$, $11\times2=22$, $22-4=18$, $18\div3=6$ ✓.
+
+summary:
+  - '<<抽屉原理/Pigeonhole Principle>>：$n+1$ 个物品放入 $n$ 个抽屉，至少有一个抽屉有 $\ge 2$ 个——关键在于巧妙定义"抽屉"'
+  - '<<奇偶分析/Parity analysis>>：同奇偶相加得偶，有偶相乘得偶——用来排除不可能或缩小答案范围'
+  - '<<不变量/Invariant>>：找到过程中不变的量，若初始和目标的不变量值不同，则不可能达到'
+  - '<<逆推法/Working backwards>>：从已知终点逆向操作回到起点，特别适合多步操作题'
+  - '<<排除法/Process of elimination>>：利用奇偶性、量级估算、末位分析快速排除错误选项'
+  - '"先判断后计算"——在 AMC 8 中，10 秒的逻辑分析常常能省下 2 分钟的计算'
+summaryEn:
+  - '<<抽屉原理/Pigeonhole Principle>>: $n+1$ items into $n$ boxes means at least one has $\ge 2$ — the key is defining the "boxes" cleverly'
+  - '<<奇偶分析/Parity analysis>>: same parity sums are even, any even factor makes an even product — use to rule out impossibility or narrow choices'
+  - '<<不变量/Invariant>>: find a quantity unchanged by the process; if start and target differ, the target is unreachable'
+  - '<<逆推法/Working backwards>>: reverse operations from a known endpoint back to the start — ideal for multi-step problems'
+  - '<<排除法/Process of elimination>>: use parity, estimation, last-digit analysis to quickly cross out wrong choices'
+  - '"Judge before you compute" — on AMC 8, 10 seconds of logical analysis often saves 2 minutes of calculation'
+
+examPrep:
+  intro: 以下为综合性较强的 AMC 8 真题精选，需要灵活运用本章的逻辑与策略工具。
+  introEn: The following are selected AMC 8 problems of higher difficulty, requiring flexible use of the logic and strategy tools from this chapter.
+  questions:
+    - number: 1
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2020 #22"
+      section: 综合
+      question: |
+        一台机器执行以下操作：如果输入 $N$ 是偶数，输出 $N/2$；如果 $N$ 是奇数，输出 $3N+1$。
+        某个正整数 $N$ 经过恰好 6 步操作后得到 1。所有这样的 $N$ 之和是多少？
+
+        (A) 73 &emsp; (B) 74 &emsp; (C) 75 &emsp; (D) 82 &emsp; (E) 83
+      questionEn: |
+        A machine applies the rule: if $N$ is even, output $N/2$; if odd, output $3N+1$.
+        A positive integer $N$ reaches 1 after exactly 6 steps. What is the sum of all such $N$?
+
+        (A) 73 &emsp; (B) 74 &emsp; (C) 75 &emsp; (D) 82 &emsp; (E) 83
+      choices:
+        - label: A
+          content: '73'
+        - label: B
+          content: '74'
+        - label: C
+          content: '75'
+        - label: D
+          content: '82'
+        - label: E
+          content: '83'
+      correctValue: E
+      answer: '(E) 83'
+      answerEn: '(E) 83'
+      explanation: |
+        从 $a_6 = 1$ 逆推 6 步。
+        $a_5 = 2$（唯一可能）。$a_4 = 4$（唯一）。$a_3 \in \{1, 8\}$。
+
+        分支 $a_3 = 8$：$a_2 = 16$，$a_1 \in \{5, 32\}$。
+        从 $a_1 = 32$：$N = 64$。从 $a_1 = 5$：$N = 10$。
+
+        分支 $a_3 = 1$：$a_2 = 2$，$a_1 = 4$，$N \in \{1, 8\}$。
+
+        所有 $N$：$\{1, 8, 10, 64\}$。和 $= 1 + 8 + 10 + 64 = \mathbf{83}$。
+      explanationEn: |
+        Work backwards from $a_6=1$.
+        $a_5=2$ (only option). $a_4=4$ (only option). $a_3 \in \{1,8\}$.
+
+        Branch $a_3=8$: $a_2=16$, $a_1 \in \{5,32\}$.
+        From $a_1=32$: $N=64$. From $a_1=5$: $N=10$.
+
+        Branch $a_3=1$: $a_2=2$, $a_1=4$, $N \in \{1,8\}$.
+
+        All $N$: $\{1,8,10,64\}$. Sum $= 1+8+10+64 = \mathbf{83}$.
+
+    - number: 2
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2017 #21"
+      section: 综合
+      question: |
+        设 $a$、$b$、$c$ 是非零实数，且 $a + b + c = 0$。
+        求 $\dfrac{a}{|a|} + \dfrac{b}{|b|} + \dfrac{c}{|c|} + \dfrac{abc}{|abc|}$ 的所有可能值。
+
+        (A) 0 &emsp; (B) 1 和 $-1$ &emsp; (C) 2 和 $-2$ &emsp; (D) 0、2 和 $-2$ &emsp; (E) 0、1 和 $-1$
+      questionEn: |
+        Let $a$, $b$, $c$ be nonzero reals with $a+b+c=0$.
+        What are all possible values of $\dfrac{a}{|a|}+\dfrac{b}{|b|}+\dfrac{c}{|c|}+\dfrac{abc}{|abc|}$?
+
+        (A) 0 &emsp; (B) 1 and $-1$ &emsp; (C) 2 and $-2$ &emsp; (D) 0, 2, and $-2$ &emsp; (E) 0, 1, and $-1$
+      choices:
+        - label: A
+          content: '0'
+        - label: B
+          content: '1 和 $-1$'
+        - label: C
+          content: '2 和 $-2$'
+        - label: D
+          content: '0、2 和 $-2$'
+        - label: E
+          content: '0、1 和 $-1$'
+      correctValue: A
+      answer: '(A) 0'
+      answerEn: '(A) 0'
+      explanation: |
+        $a + b + c = 0$ 意味着不能同号，必定两正一负或两负一正。
+        两正一负：符号和 $= 1 + 1 - 1 = 1$，积为负，$\dfrac{abc}{|abc|} = -1$。总和 $= 0$。
+        两负一正：符号和 $= -1 - 1 + 1 = -1$，积为正，$\dfrac{abc}{|abc|} = 1$。总和 $= 0$。
+        唯一可能值为 $\mathbf{0}$。
+      explanationEn: |
+        $a+b+c=0$ means they can't all share a sign: two share one sign, one is opposite.
+        Two positive, one negative: sign sum $=1+1-1=1$, product negative, $\dfrac{abc}{|abc|}=-1$. Total $=0$.
+        Two negative, one positive: sign sum $=-1-1+1=-1$, product positive, $\dfrac{abc}{|abc|}=1$. Total $=0$.
+        Only possible value: $\mathbf{0}$.
+
+    - number: 3
+      type: 单选题
+      inputType: mc
+      source: "AMC 8 2023 #22"
+      section: 综合
+      question: |
+        在一个数列中，从第三项开始，每一项等于前两项之积。已知第六项为 4000。第一项是多少？
+
+        (A) 1 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 5 &emsp; (E) 10
+      questionEn: |
+        In a sequence, each term from the third onward equals the product of the two preceding terms. The sixth term is 4000. What is the first term?
+
+        (A) 1 &emsp; (B) 2 &emsp; (C) 3 &emsp; (D) 5 &emsp; (E) 10
+      choices:
+        - label: A
+          content: '1'
+        - label: B
+          content: '2'
+        - label: C
+          content: '3'
+        - label: D
+          content: '5'
+        - label: E
+          content: '10'
+      correctValue: D
+      answer: '(D) 5'
+      answerEn: '(D) 5'
+      explanation: |
+        设 $a_1 = a, a_2 = b$。
+        $a_3 = ab$, $a_4 = ab^{2}$, $a_5 = a^{2}b^{3}$, $a_6 = a^{3}b^{5} = 4000$。
+
+        $4000 = 2^{5} \times 5^{3}$。比较 $a^{3}b^{5}$：$a = 5, b = 2$ 满足 $5^{3} \times 2^{5} = 125 \times 32 = 4000$ ✓。
+
+        第一项 $= \mathbf{5}$。
+      explanationEn: |
+        Let $a_1=a, a_2=b$.
+        $a_3=ab$, $a_4=ab^{2}$, $a_5=a^{2}b^{3}$, $a_6=a^{3}b^{5}=4000$.
+
+        $4000=2^{5}\times5^{3}$. Match $a^{3}b^{5}$: $a=5, b=2$ gives $5^{3}\times2^{5}=125\times32=4000$ ✓.
+
+        First term $= \mathbf{5}$.
+
+    - number: 4
+      type: 单选题
+      inputType: mc
+      section: 综合
+      question: |
+        黑板上写着 $1, 2, 3, \ldots, 10$。每次操作擦掉任意两个数 $a, b$，写上 $|a - b|$。经过 9 次操作后剩下一个数。以下哪个数**不可能**是最终剩下的数？
+
+        (A) 1 &emsp; (B) 3 &emsp; (C) 5 &emsp; (D) 7 &emsp; (E) 8
+      questionEn: |
+        The numbers $1, 2, 3, \ldots, 10$ are written on a board. In each step, two numbers $a$ and $b$ are erased and $|a-b|$ is written. After 9 steps, one number remains. Which of the following **cannot** be the final number?
+
+        (A) 1 &emsp; (B) 3 &emsp; (C) 5 &emsp; (D) 7 &emsp; (E) 8
+      choices:
+        - label: A
+          content: '1'
+        - label: B
+          content: '3'
+        - label: C
+          content: '5'
+        - label: D
+          content: '7'
+        - label: E
+          content: '8'
+      correctValue: E
+      answer: '(E) 8'
+      answerEn: '(E) 8'
+      explanation: |
+        **不变量分析**：每次操作擦掉 $a, b$，写上 $|a-b|$。
+
+        关键观察：最终结果等于 $|\pm 1 \pm 2 \pm 3 \cdots \pm 10|$（每个数前选 $+$ 或 $-$）。
+
+        初始和 $= 1 + 2 + \cdots + 10 = 55$。如果把某些数从 $+$ 翻转为 $-$，和变为 $55 - 2S$（$S$ 是翻转的数之和）。
+
+        **不变量**：$55 - 2S$ 与 $55$ 的奇偶性相同。$55$ 是奇数，所以最终结果必须是奇数。
+
+        选项中 $8$ 是偶数，所以 $8$ **不可能**。
+
+        验证 $1$ 可能：$55 - 2S = 1$，$S = 27$。需要 $\{1,\ldots,10\}$ 的子集和为 27。如 $\{10, 9, 8\}$，和 $= 27$ ✓。
+      explanationEn: |
+        **Invariant analysis**: each step erases $a, b$ and writes $|a-b|$.
+
+        Key observation: the final result equals $|\pm1 \pm2 \pm3 \cdots \pm10|$ (choose $+$ or $-$ for each number).
+
+        Initial sum $= 1+2+\cdots+10 = 55$. Flipping some signs gives $55-2S$ ($S$ = sum of flipped numbers).
+
+        **Invariant**: $55-2S$ has the same parity as $55$. Since $55$ is odd, the result must be odd.
+
+        $8$ is even, so $8$ is **impossible**.
+
+        Check that $1$ is possible: $55-2S=1$, $S=27$. Subset $\{10,9,8\}$ sums to $27$ ✓.
+
+    - number: 5
+      type: 单选题
+      inputType: mc
+      section: 综合
+      question: |
+        有 30 名学生参加考试，每题答对得 4 分，答错扣 1 分，不答得 0 分。共 25 题。
+        小红的得分是 87 分。她答对了多少题？
+
+        (A) 20 &emsp; (B) 21 &emsp; (C) 22 &emsp; (D) 23 &emsp; (E) 24
+      questionEn: |
+        30 students take a test with 25 questions. Each correct answer scores 4 points, each wrong answer loses 1 point, and unanswered questions score 0.
+        Xiao Hong scored 87. How many questions did she answer correctly?
+
+        (A) 20 &emsp; (B) 21 &emsp; (C) 22 &emsp; (D) 23 &emsp; (E) 24
+      choices:
+        - label: A
+          content: '20'
+        - label: B
+          content: '21'
+        - label: C
+          content: '22'
+        - label: D
+          content: '23'
+        - label: E
+          content: '24'
+      correctValue: C
+      answer: '(C) 22'
+      answerEn: '(C) 22'
+      explanation: |
+        设答对 $r$ 题，答错 $w$ 题，未答 $s$ 题。
+        $r + w + s = 25$，$4r - w = 87$。
+
+        从第二个方程：$w = 4r - 87$。代入第一个：$r + 4r - 87 + s = 25$，$5r + s = 112$。
+
+        因为 $w \ge 0$：$4r \ge 87$，$r \ge 21.75$，$r \ge 22$。
+        因为 $s \ge 0$：$5r \le 112$，$r \le 22.4$，$r \le 22$。
+
+        所以 $r = \mathbf{22}$。此时 $w = 88 - 87 = 1$，$s = 2$。验证：$22 \times 4 - 1 = 87$ ✓。
+      explanationEn: |
+        Let $r$ = correct, $w$ = wrong, $s$ = skipped.
+        $r+w+s=25$, $4r-w=87$.
+
+        From the second: $w=4r-87$. Substituting: $5r+s=112$.
+
+        $w\ge0$: $r\ge22$. $s\ge0$: $r\le22$. So $r=\mathbf{22}$.
+        Check: $w=1, s=2$, score $=22\times4-1=87$ ✓.
