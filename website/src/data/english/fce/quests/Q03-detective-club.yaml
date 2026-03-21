@@ -1,0 +1,944 @@
+id: Q03
+title: 'Detective Club'
+titleZh: '侦探俱乐部'
+subtitle: 'Crack the code of reading comprehension!'
+subtitleZh: '破解阅读理解的密码！'
+month: 3
+fceMapping: 'Reading Part 5 (Multiple Choice), Part 6 (Gapped Text), Part 7 (Multiple Matching)'
+
+theme:
+  setting: 'A detective agency where every reading passage is a case to solve'
+  settingZh: '一间侦探事务所，每篇阅读文章都是一个待破解的案件'
+  mascot: 'Inspector Lexia, the sharp-eyed reading detective'
+  mascotZh: '词探长 Lexia，目光如炬的阅读侦探'
+
+objectives:
+  - 'Distinguish between main idea questions and detail questions in FCE Reading'
+  - 'Make inferences and deductions from clues in a text'
+  - 'Identify the author''s purpose and attitude'
+  - 'Recognise paraphrased information (same meaning, different words)'
+  - 'Understand paragraph coherence — pronouns, linking words, and logical flow'
+  - 'Use modal verbs of speculation (must have, might have, can''t have) to reason about texts'
+
+objectivesZh:
+  - '在 FCE 阅读中区分主旨题和细节题'
+  - '根据文本中的线索进行推断和演绎'
+  - '识别作者的写作目的和态度'
+  - '识别同义替换信息（意思相同，用词不同）'
+  - '理解段落衔接——代词、连接词和逻辑流'
+  - '使用推测性情态动词（must have, might have, can''t have）来分析文本'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Main Idea vs Detail Questions
+  # ─────────────────────────────────────────────
+  - id: Q03-L01
+    title: 'Main Idea vs Detail — The Big Picture and the Fingerprints'
+    titleZh: '主旨题 vs 细节题——全局与指纹'
+
+    introduction: |
+      Welcome to the Detective Club! Inspector Lexia stands before a large cork board
+      covered in newspaper clippings, photographs, and red string. "Every great detective,"
+      she begins, "knows the difference between the BIG PICTURE and the FINGERPRINTS."
+
+      She points to a photo in the centre. "This is the main idea — what the whole case is
+      about. It's the headline, the summary, the one sentence that captures everything."
+      Then she points to the tiny details pinned around it. "These are the fingerprints —
+      the specific facts, dates, names, and numbers that support the big picture."
+
+      "In FCE Reading," she continues, "some questions ask about the big picture: 'What is
+      the text mainly about?' or 'What is the best title?' Other questions zoom in on
+      fingerprints: 'What colour was the car?' or 'How many people attended?' Confusing
+      these two is the most common mistake. Today, we learn to tell them apart."
+    introductionZh: |
+      欢迎来到侦探俱乐部！Lexia 探长站在一块巨大的软木板前，上面贴满了报纸剪报、
+      照片和红色细线。"每个出色的侦探，"她开口说道，"都知道全局和指纹之间的区别。"
+
+      她指向中间的一张照片。"这就是主旨——整个案件的核心。它是标题，是摘要，是
+      能概括一切的那一句话。"然后她指向周围钉着的小细节。"这些是指纹——支撑全局的
+      具体事实、日期、名字和数字。"
+
+      "在 FCE 阅读中，"她继续说，"有些问题问的是全局：'这篇文章主要讲什么？'或
+      '最好的标题是什么？'其他问题则放大到指纹：'那辆车是什么颜色？'或'有多少人
+      参加了？'混淆这两者是最常见的错误。今天，我们来学习如何区分它们。"
+
+    rules:
+      - pattern: 'Main Idea Questions'
+        meaning: 'Ask about the overall message, theme, or purpose of the whole text or a paragraph'
+        meaningZh: '询问整篇文章或某段的总体信息、主题或目的'
+        examples:
+          - base: 'What is the text mainly about?'
+            transformed: 'Main idea question'
+            sentence: 'To answer this, read the whole text and ask: "If I had to describe this in one sentence, what would I say?"'
+            sentenceZh: '回答此题，通读全文后问自己："如果要用一句话概括，我会怎么说？"'
+          - base: 'What is the best title for this article?'
+            transformed: 'Main idea question'
+            sentence: 'A good title captures the central topic, not just one detail. Eliminate titles that are too specific or too broad.'
+            sentenceZh: '好的标题能概括中心话题，而不只是一个细节。排除过于具体或过于宽泛的标题。'
+          - base: 'What is the writer''s main point?'
+            transformed: 'Main idea question'
+            sentence: 'Look for the "topic sentence" — often the first or last sentence of a paragraph. It usually states the main point.'
+            sentenceZh: '找"主题句"——通常是段落的第一句或最后一句，一般会陈述要点。'
+
+      - pattern: 'Detail Questions'
+        meaning: 'Ask about specific facts, figures, names, or events mentioned in the text'
+        meaningZh: '询问文本中提到的具体事实、数字、名称或事件'
+        examples:
+          - base: 'According to the text, how many species were discovered?'
+            transformed: 'Detail question'
+            sentence: 'Scan the text for the specific number. The answer is stated directly — no guessing needed.'
+            sentenceZh: '在文中扫读找具体数字。答案是直接陈述的——不需要猜测。'
+          - base: 'Where did the event take place?'
+            transformed: 'Detail question'
+            sentence: 'Look for place names and location markers. The answer is a fact, not an opinion.'
+            sentenceZh: '找地名和位置标记。答案是事实，不是观点。'
+          - base: 'What did Sarah do after leaving school?'
+            transformed: 'Detail question'
+            sentence: 'Find the name "Sarah" in the text and read the surrounding sentences carefully.'
+            sentenceZh: '在文中找到 "Sarah" 这个名字，仔细阅读前后的句子。'
+
+    tips:
+      - 'Main idea questions use words like "mainly", "overall", "best title", "general purpose". Detail questions use "according to", "how many", "when", "where".'
+      - 'For main idea: cover the answer choices, summarise the text yourself first, then see which choice matches your summary.'
+      - 'For details: locate the relevant paragraph first, then read carefully. Don''t rely on memory!'
+      - 'Trap alert: a detail may be TRUE but not the MAIN IDEA. Just because something is mentioned doesn''t make it the central point.'
+      - 'Think like a detective: the main idea is your CASE SUMMARY. The details are your EVIDENCE FILE.'
+    tipsZh:
+      - '主旨题常用"mainly"、"overall"、"best title"、"general purpose"等词。细节题常用"according to"、"how many"、"when"、"where"。'
+      - '做主旨题：先遮住选项，自己概括全文，再看哪个选项最接近你的概括。'
+      - '做细节题：先定位到相关段落，再仔细阅读。不要凭记忆作答！'
+      - '陷阱提醒：一个细节可能是正确的，但不是主旨。被提及不等于是中心思想。'
+      - '像侦探一样思考：主旨是你的案件摘要，细节是你的证据档案。'
+
+    practicePreview:
+      - id: Q03-L01-P01
+        question: |
+          Read the passage: "Bees are essential to our food system. They pollinate over 80% of flowering plants, including many fruits and vegetables we eat daily. Without bees, supermarket shelves would look very different. Recently, scientists have warned that bee populations are declining due to pesticides and habitat loss."
+
+          What is this passage mainly about?
+          A) The percentage of plants bees pollinate
+          B) The importance of bees and the threat they face
+          C) How supermarkets get their food
+          D) Scientists who study insects
+        questionZh: |
+          阅读段落："蜜蜂对我们的食物系统至关重要。它们为超过 80% 的开花植物授粉，包括我们每天吃的许多水果和蔬菜。没有蜜蜂，超市货架会大不相同。最近，科学家警告说，由于农药和栖息地丧失，蜜蜂数量正在下降。"
+
+          这段话主要讲什么？
+          A) 蜜蜂授粉的植物百分比
+          B) 蜜蜂的重要性以及它们面临的威胁
+          C) 超市如何获得食物
+          D) 研究昆虫的科学家
+        answer: 'B'
+        explanation: 'B captures the big picture — bees matter AND they are in danger. A is just one detail (the 80% figure). C and D are mentioned but are not the main point.'
+        explanationZh: 'B 概括了全局——蜜蜂很重要，而且它们正面临危险。A 只是一个细节（80% 的数字）。C 和 D 虽被提及但不是重点。'
+
+      - id: Q03-L01-P02
+        question: |
+          Read the passage: "The new city library opened last Tuesday. It has three floors, a children's section with colourful bean bags, a digital media room, and a rooftop garden. The mayor said it cost £4.2 million to build."
+
+          According to the text, how much did the library cost?
+          A) £4 million
+          B) £4.2 million
+          C) £4.5 million
+          D) The text does not say
+        questionZh: |
+          阅读段落："新的城市图书馆上周二开放了。它有三层楼，一个有彩色豆袋椅的儿童区，一个数字媒体室，还有一个屋顶花园。市长说它耗资 420 万英镑建造。"
+
+          根据文本，图书馆花了多少钱？
+          A) 400 万英镑
+          B) 420 万英镑
+          C) 450 万英镑
+          D) 文本没有说
+        answer: 'B'
+        explanation: 'This is a detail question — the exact figure "£4.2 million" is stated directly in the text. No inference needed, just careful reading.'
+        explanationZh: '这是一道细节题——"420 万英镑"在文中直接给出。不需要推断，只需仔细阅读。'
+
+      - id: Q03-L01-P03
+        question: |
+          Read the passage: "Polar bears are powerful swimmers. They can swim for hours without resting and have been recorded covering over 100 kilometres in a single journey. Their thick fur and layer of fat keep them warm in icy Arctic waters. However, as sea ice melts, polar bears must swim longer distances to find food, which puts young cubs at risk."
+
+          What would be the best title for this passage?
+          A) How Far Polar Bears Can Swim
+          B) Polar Bears: Born Swimmers Facing New Challenges
+          C) Why Arctic Ice Is Melting
+          D) Baby Polar Bears in Danger
+        questionZh: |
+          阅读段落："北极熊是强大的游泳健将。它们可以连续游泳数小时不休息，曾被记录到一次旅程游超过 100 公里。它们厚实的皮毛和脂肪层使它们在冰冷的北极水域中保持温暖。然而，随着海冰融化，北极熊必须游更远的距离才能找到食物，这让幼崽面临风险。"
+
+          这段话最好的标题是什么？
+          A) 北极熊能游多远
+          B) 北极熊：天生的游泳健将面临新挑战
+          C) 为什么北极冰在融化
+          D) 北极熊幼崽面临危险
+        answer: 'B'
+        explanation: 'B covers both the swimming ability AND the climate challenge — the full picture. A is too narrow (just distance). C is about a different topic. D only covers the last detail.'
+        explanationZh: 'B 涵盖了游泳能力和气候挑战——完整的全局。A 太窄（只说距离）。C 是另一个话题。D 只涵盖了最后一个细节。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Inference and Deduction
+  # ─────────────────────────────────────────────
+  - id: Q03-L02
+    title: 'Inference and Deduction — Reading Between the Lines'
+    titleZh: '推断与演绎——字里行间的秘密'
+
+    introduction: |
+      Inspector Lexia pulls on her magnifying glass necklace and grins. "Any amateur can
+      read what's ON the page," she says. "But a true detective reads what's BETWEEN the
+      lines. This is called inference — working out something the author doesn't say directly,
+      but strongly suggests through clues."
+
+      She holds up a note: "The man walked in, shook water from his umbrella, and hung up
+      his wet coat." She asks the class: "Does this note say it's raining?" The class hesitates.
+      "No! It never says 'rain'. But the umbrella, the water, the wet coat — all clues pointing
+      to the same conclusion. THAT is inference."
+
+      "In the FCE exam, inference questions say things like 'What does the writer suggest?'
+      or 'We can understand from the text that...' The answer is never stated word-for-word.
+      You must be Sherlock Holmes — gather clues, connect them, and deduce the truth!"
+    introductionZh: |
+      Lexia 探长拿起她放大镜造型的项链，笑了笑。"任何新手都能读懂纸面上的内容，"
+      她说，"但真正的侦探能读懂字里行间。这叫做推断——从作者没有直说、但通过线索
+      强烈暗示的内容中，得出结论。"
+
+      她举起一张纸条："那个人走了进来，抖落雨伞上的水，挂起了湿淋淋的外套。"
+      她问全班："这张纸条有说在下雨吗？"全班犹豫了。"没有！它从来没说'雨'这个字。
+      但雨伞、水、湿外套——所有线索都指向同一个结论。这就是推断。"
+
+      "在 FCE 考试中，推断题会这样问：'作者暗示了什么？'或'我们可以从文中理解
+      到……'答案永远不会逐字出现。你必须像福尔摩斯一样——收集线索，串联起来，
+      推断出真相！"
+
+    rules:
+      - pattern: 'Recognising Inference Questions'
+        meaning: 'These questions ask what is implied, suggested, or can be understood — not directly stated'
+        meaningZh: '这类题目问的是暗示、建议或可以理解的内容——而非直接陈述的内容'
+        examples:
+          - base: 'What does the writer suggest about...?'
+            transformed: 'Inference question'
+            sentence: 'The word "suggest" is your biggest clue that you need to infer, not quote.'
+            sentenceZh: '"suggest"这个词是你最大的提示——需要推断，而不是引用。'
+          - base: 'What can we understand from paragraph 3?'
+            transformed: 'Inference question'
+            sentence: '"Understand from" means the answer is hidden in the clues, not written out plainly.'
+            sentenceZh: '"从……理解"意味着答案隐藏在线索中，不是直白写出来的。'
+          - base: 'The writer implies that...'
+            transformed: 'Inference question'
+            sentence: '"Implies" = says indirectly. Look for hints, tone, and word choice as evidence.'
+            sentenceZh: '"implies" = 间接表达。注意寻找暗示、语气和用词作为证据。'
+
+      - pattern: 'The C.L.U.E. Method'
+        meaning: 'Context → Language → Underlying message → Evidence check'
+        meaningZh: '语境 → 语言 → 深层含义 → 证据核查'
+        examples:
+          - base: 'Context'
+            transformed: 'Step 1'
+            sentence: 'Read the sentences before and after. What situation is being described?'
+            sentenceZh: '阅读前后句。描述的是什么情境？'
+          - base: 'Language'
+            transformed: 'Step 2'
+            sentence: 'What specific words does the author choose? "Crawled" vs "walked" tells you a lot.'
+            sentenceZh: '作者选择了什么具体词汇？"crawled"（爬行）和"walked"（走路）传达的信息大不相同。'
+          - base: 'Underlying message'
+            transformed: 'Step 3'
+            sentence: 'Ask: "What is the author really trying to say without saying it directly?"'
+            sentenceZh: '问自己："作者不直说、真正想表达的是什么？"'
+          - base: 'Evidence check'
+            transformed: 'Step 4'
+            sentence: 'Can you point to at least TWO clues that support your inference? If yes, you''re on the right track.'
+            sentenceZh: '你能指出至少两条支持你推断的线索吗？如果能，说明你的方向是对的。'
+
+    tips:
+      - 'Inference is NOT guessing. Every inference must be supported by clues in the text.'
+      - 'If an answer choice uses the EXACT same words as the passage, it''s probably a detail, not an inference. Inference answers restate ideas in new words.'
+      - 'Watch for emotional clues: "She slammed the door" implies anger even if "angry" is never said.'
+      - 'Be careful not to over-infer. Stick to what the text supports, not what you imagine.'
+      - 'Sherlock Holmes said: "When you eliminate the impossible, whatever remains must be the truth." Eliminate wrong answers one by one!'
+    tipsZh:
+      - '推断 ≠ 猜测。每个推断都必须有文本中的线索支撑。'
+      - '如果某个选项使用了与原文完全相同的词语，它很可能是细节而非推断。推断的答案会用新的措辞重述。'
+      - '注意情绪线索："She slammed the door"（她摔了门）暗示愤怒，即使文中从未出现"angry"。'
+      - '注意不要过度推断。只依据文本支持的内容，而不是你自己的想象。'
+      - '福尔摩斯说过："当你排除了不可能的，剩下的无论多么不可思议，都是真相。"逐一排除错误选项！'
+
+    practicePreview:
+      - id: Q03-L02-P01
+        question: |
+          Read the passage: "Tom arrived at the office at 6 am, two hours before anyone else. He made himself a strong coffee, opened his laptop, and began typing furiously. By the time his colleagues arrived, he had already finished the report that wasn't due until Friday."
+
+          What can we understand about Tom?
+          A) He always arrives early at work.
+          B) He is very dedicated and hardworking.
+          C) He doesn't like his colleagues.
+          D) He prefers coffee to tea.
+        questionZh: |
+          阅读段落："Tom 早上 6 点到达办公室，比其他人早了两个小时。他给自己泡了一杯浓咖啡，打开笔记本电脑，开始飞速打字。等同事们到的时候，他已经完成了那份周五才截止的报告。"
+
+          我们可以理解到关于 Tom 的什么？
+          A) 他总是早到公司。
+          B) 他非常敬业和勤奋。
+          C) 他不喜欢同事。
+          D) 他喜欢咖啡胜过茶。
+        answer: 'B'
+        explanation: 'The clues — arriving 2 hours early, typing furiously, finishing ahead of deadline — all point to dedication. A says "always" but we only know about one day. C is unsupported. D is a detail, not an inference about character.'
+        explanationZh: '线索——提前 2 小时到达、飞速打字、提前完成报告——都指向敬业。A 说"总是"但我们只知道一天的情况。C 没有依据。D 是细节而非人物推断。'
+
+      - id: Q03-L02-P02
+        question: |
+          Read the passage: "Maria put on her best dress, checked her hair in the mirror three times, and practised her smile. She picked up the folder containing her CV and took a deep breath before leaving the house."
+
+          What is Maria most likely about to do?
+          A) Go to a party
+          B) Attend a job interview
+          C) Visit a friend
+          D) Go shopping
+        questionZh: |
+          阅读段落："Maria 穿上了她最好的裙子，在镜子前检查了三次头发，还练习了微笑。她拿起装着简历的文件夹，深吸一口气才出门。"
+
+          Maria 最有可能要去做什么？
+          A) 去参加派对
+          B) 参加工作面试
+          C) 拜访朋友
+          D) 去购物
+        answer: 'B'
+        explanation: 'The CV (curriculum vitae / resume) is the strongest clue. Combined with dressing up, practising her smile, and being nervous (deep breath), all signs point to a job interview.'
+        explanationZh: '简历（CV）是最有力的线索。加上精心打扮、练习微笑和紧张（深呼吸），所有迹象都指向工作面试。'
+
+      - id: Q03-L02-P03
+        question: |
+          Read the passage: "The old lighthouse keeper rarely had visitors. He spent his days reading, painting watercolours of the sea, and talking to the seagulls. When the supply boat came once a month, he would chat with the captain for hours, asking about news from the town."
+
+          What does the writer suggest about the lighthouse keeper?
+          A) He dislikes people.
+          B) He is lonely but content with his simple life.
+          C) He wants to move to the town.
+          D) He is afraid of the sea.
+        questionZh: |
+          阅读段落："年迈的灯塔看守人很少有访客。他每天读书、画海景水彩画、和海鸥聊天。当补给船每月来一次时，他会和船长聊上好几个小时，打听镇上的消息。"
+
+          作者暗示灯塔看守人怎样？
+          A) 他不喜欢人。
+          B) 他孤独但满足于简单的生活。
+          C) 他想搬到镇上。
+          D) 他害怕大海。
+        answer: 'B'
+        explanation: 'He enjoys reading and painting (content), but eagerly chats when visitors come and asks about town news (some loneliness). He doesn''t dislike people — he talks for hours! No evidence he wants to move or fears the sea.'
+        explanationZh: '他喜欢读书和画画（满足），但有人来时热切地聊天并打听镇上的消息（有些孤独）。他不是不喜欢人——他会聊好几个小时！没有证据表明他想搬走或害怕大海。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Author's Purpose and Attitude
+  # ─────────────────────────────────────────────
+  - id: Q03-L03
+    title: 'Author''s Purpose and Attitude — Who Wrote This and Why?'
+    titleZh: '作者意图与态度——谁写的，为什么写？'
+
+    introduction: |
+      Inspector Lexia pins a new photo on the board — this time it's a writer at a desk.
+      "Every text is written by someone," she says, "and every writer has a PURPOSE —
+      a reason for writing. They also have an ATTITUDE — how they feel about the topic.
+      A great detective doesn't just read the words; they ask: WHO is talking, and WHAT
+      do they really think?"
+
+      She holds up three cards: INFORM, PERSUADE, ENTERTAIN. "These are the three
+      main purposes. A news article informs. An advert persuades. A novel entertains.
+      But many texts mix all three! Your job is to figure out which purpose is strongest."
+
+      "As for attitude," she adds, "watch the author's word choices. Do they use positive
+      words like 'brilliant' and 'inspiring'? Or negative words like 'disappointing' and
+      'ridiculous'? The words are fingerprints that reveal the author's true feelings."
+    introductionZh: |
+      Lexia 探长在板上钉了一张新照片——这次是一位坐在书桌前的作者。"每篇文章都是
+      某个人写的，"她说，"每位作者都有一个目的——写作的理由。他们也有一种态度——
+      对话题的感受。一个出色的侦探不只读文字；他们会问：谁在说话，他们真正怎么想？"
+
+      她举起三张卡片：告知、说服、娱乐。"这是三种主要目的。新闻文章是告知。广告是
+      说服。小说是娱乐。但很多文章会混合三者！你的任务是找出哪个目的最突出。"
+
+      "至于态度，"她补充道，"注意作者的用词。他们用积极的词如'brilliant'和
+      'inspiring'吗？还是消极的词如'disappointing'和'ridiculous'？词语就是
+      指纹，能揭示作者的真实感受。"
+
+    rules:
+      - pattern: 'Author''s Purpose'
+        meaning: 'WHY the author wrote the text — to inform, persuade, entertain, or a combination'
+        meaningZh: '作者为什么写这篇文章——告知、说服、娱乐，或者兼而有之'
+        examples:
+          - base: 'To inform'
+            transformed: 'Purpose type'
+            sentence: 'News reports, encyclopaedia entries, and textbooks aim to give facts and information objectively.'
+            sentenceZh: '新闻报道、百科全书条目和教科书旨在客观地提供事实和信息。'
+          - base: 'To persuade'
+            transformed: 'Purpose type'
+            sentence: 'Adverts, opinion columns, and campaign speeches try to change the reader''s mind or behaviour.'
+            sentenceZh: '广告、评论专栏和竞选演讲试图改变读者的想法或行为。'
+          - base: 'To entertain'
+            transformed: 'Purpose type'
+            sentence: 'Stories, jokes, and travel blogs aim to keep the reader engaged and enjoying the text.'
+            sentenceZh: '故事、笑话和旅行博客旨在让读者保持兴趣、享受阅读。'
+
+      - pattern: 'Author''s Attitude (Tone)'
+        meaning: 'HOW the author feels — positive, negative, neutral, humorous, critical, enthusiastic, etc.'
+        meaningZh: '作者的感受如何——积极、消极、中立、幽默、批判、热情等'
+        examples:
+          - base: 'Positive tone words'
+            transformed: 'Attitude clue'
+            sentence: 'Words like "remarkable", "fascinating", "well-deserved" show the author approves or admires something.'
+            sentenceZh: '"remarkable"、"fascinating"、"well-deserved"等词表明作者赞同或钦佩某事。'
+          - base: 'Negative tone words'
+            transformed: 'Attitude clue'
+            sentence: 'Words like "unfortunately", "disappointing", "questionable" show the author disapproves or is critical.'
+            sentenceZh: '"unfortunately"、"disappointing"、"questionable"等词表明作者不赞同或持批评态度。'
+          - base: 'Neutral tone'
+            transformed: 'Attitude clue'
+            sentence: 'Factual language without emotional words: "The study found that..." or "According to data..." shows objectivity.'
+            sentenceZh: '没有情感词的事实性语言："研究发现……"或"根据数据……"表明客观性。'
+
+    tips:
+      - 'Purpose question keywords: "Why did the author write...?", "The purpose of this text is to...", "The writer wrote this in order to..."'
+      - 'Attitude question keywords: "What is the writer''s opinion of...?", "How does the author feel about...?", "The writer''s attitude towards... is..."'
+      - 'Don''t confuse the TOPIC with the PURPOSE. A text about recycling (topic) could inform, persuade, OR entertain depending on how it''s written.'
+      - 'Look for "attitude adjectives" — words the author didn''t HAVE to use but chose to. "The government introduced a scheme" (neutral) vs "The government introduced a brilliant scheme" (positive).'
+      - 'In FCE, attitude is often tested in Part 5 Multiple Choice. Read the question carefully — it may ask about the author''s view, not the facts.'
+    tipsZh:
+      - '目的题关键词："Why did the author write...?"、"The purpose of this text is to..."、"The writer wrote this in order to..."'
+      - '态度题关键词："What is the writer''s opinion of...?"、"How does the author feel about...?"、"The writer''s attitude towards... is..."'
+      - '不要把话题和目的混淆。一篇关于回收的文章（话题）可以是告知、说服或娱乐，取决于写法。'
+      - '找"态度形容词"——作者不一定要用但选择使用的词。"政府推出了一项计划"（中立）vs"政府推出了一项出色的计划"（积极）。'
+      - '在 FCE 中，态度常在 Part 5 选择题中考查。仔细读题——它可能问的是作者的观点，不是事实。'
+
+    practicePreview:
+      - id: Q03-L03-P01
+        question: |
+          Read the passage: "Smartphones have completely transformed how we communicate, and I believe this change has been overwhelmingly positive. Never before have we been able to stay connected so easily with friends and family across the world. Critics who complain about screen time are missing the bigger picture."
+
+          What is the writer's attitude towards smartphones?
+          A) Neutral — presenting both sides equally
+          B) Negative — worried about screen time
+          C) Positive — believes they are a great improvement
+          D) Uncertain — can't decide if they are good or bad
+        questionZh: |
+          阅读段落："智能手机已经彻底改变了我们的沟通方式，我认为这种变化是非常积极的。我们从未能如此轻松地与世界各地的朋友和家人保持联系。那些抱怨屏幕时间的批评者忽略了更大的图景。"
+
+          作者对智能手机的态度是什么？
+          A) 中立——平等地呈现双方观点
+          B) 消极——担心屏幕时间
+          C) 积极——认为它们是巨大的进步
+          D) 不确定——无法判断好坏
+        answer: 'C'
+        explanation: 'Clues: "overwhelmingly positive", "never before", and dismissing critics as "missing the bigger picture" all reveal a strongly positive attitude.'
+        explanationZh: '线索："overwhelmingly positive"（非常积极）、"never before"（前所未有）以及认为批评者"missing the bigger picture"（忽略更大图景）都揭示了强烈的积极态度。'
+
+      - id: Q03-L03-P02
+        question: |
+          Read the passage: "The new shopping centre was opened last Saturday. It contains 120 shops, a cinema, and three restaurants. The building covers an area of 25,000 square metres and is expected to create 500 jobs."
+
+          Why did the author write this text?
+          A) To persuade people to visit the shopping centre
+          B) To entertain readers with a funny story
+          C) To inform readers about the new shopping centre
+          D) To criticise the construction of the shopping centre
+        questionZh: |
+          阅读段落："新购物中心上周六开业了。它包含 120 家商店、一家电影院和三家餐厅。建筑面积 25,000 平方米，预计将创造 500 个工作岗位。"
+
+          作者写这篇文章的目的是什么？
+          A) 说服人们去参观购物中心
+          B) 用有趣的故事娱乐读者
+          C) 告知读者关于新购物中心的信息
+          D) 批评购物中心的建设
+        answer: 'C'
+        explanation: 'The text uses purely factual, neutral language — numbers, dates, facts. No persuasive language ("you should visit!") or entertainment. This is informational writing.'
+        explanationZh: '文本使用纯粹的事实性、中立的语言——数字、日期、事实。没有说服性语言（"你应该去看看！"）或娱乐性内容。这是信息性写作。'
+
+      - id: Q03-L03-P03
+        question: |
+          Read the passage: "I had high hopes for this restaurant after reading the glowing reviews. Unfortunately, the reality was deeply disappointing. The pasta was overcooked, the service was painfully slow, and the bill was shockingly expensive for such mediocre food."
+
+          The writer's attitude towards the restaurant is:
+          A) Enthusiastic
+          B) Critical and disappointed
+          C) Neutral and balanced
+          D) Amused
+        questionZh: |
+          阅读段落："在读了那些热情洋溢的评价后，我对这家餐厅抱有很高的期望。不幸的是，现实令人非常失望。意面煮过头了，服务慢得让人痛苦，而且对于如此平庸的食物，账单贵得令人震惊。"
+
+          作者对这家餐厅的态度是：
+          A) 热情的
+          B) 批判和失望的
+          C) 中立和平衡的
+          D) 觉得有趣的
+        answer: 'B'
+        explanation: 'Attitude words: "unfortunately", "deeply disappointing", "overcooked", "painfully slow", "shockingly expensive", "mediocre" — all strongly negative. The author expected better and was let down.'
+        explanationZh: '态度词："unfortunately"、"deeply disappointing"、"overcooked"、"painfully slow"、"shockingly expensive"、"mediocre"——全是强烈的负面词。作者期望更好但失望了。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Paraphrase Recognition
+  # ─────────────────────────────────────────────
+  - id: Q03-L04
+    title: 'Paraphrase Recognition — Same Meaning, Different Disguise'
+    titleZh: '同义替换识别——相同含义，不同伪装'
+
+    introduction: |
+      Inspector Lexia opens a case file. "Today we tackle one of the trickiest skills in
+      FCE Reading: paraphrase recognition. The exam LOVES to test whether you can spot
+      the same idea dressed up in different clothes."
+
+      She writes two sentences on the board:
+      - Original: "The project was completed ahead of schedule."
+      - Paraphrase: "They finished the work earlier than expected."
+
+      "See? Same meaning. Completely different words. In FCE Part 5, the correct answer
+      often restates a passage idea using synonyms and different sentence structures. If you
+      only look for the same words, you'll pick the WRONG answer — because the exam
+      deliberately puts the passage's exact words into the wrong options as traps!"
+
+      "Think of it like a suspect wearing a disguise. The meaning is the person underneath.
+      The words are just the clothes. Your job: see through the disguise."
+    introductionZh: |
+      Lexia 探长打开一份案件档案。"今天我们要解决 FCE 阅读中最棘手的技能之一：
+      同义替换识别。考试最爱测试你能不能认出穿上不同外衣的同一个想法。"
+
+      她在白板上写了两个句子：
+      - 原文："The project was completed ahead of schedule."
+      - 改述："They finished the work earlier than expected."
+
+      "看到了吗？相同的意思，完全不同的词。在 FCE Part 5 中，正确答案往往用同义词
+      和不同的句子结构来重述原文的意思。如果你只找相同的词，你会选错——因为考试
+      故意把原文的原话放在错误选项中当陷阱！"
+
+      "把它想象成一个戴着伪装的嫌疑人。含义是底下的真人。文字只是衣服。你的任务：
+      看穿伪装。"
+
+    rules:
+      - pattern: 'Synonym Swaps'
+        meaning: 'Key words are replaced with synonyms that carry the same meaning'
+        meaningZh: '关键词被替换为含义相同的同义词'
+        examples:
+          - base: '"The film was extremely popular."'
+            transformed: '"The movie attracted a huge audience."'
+            sentence: 'film → movie, extremely popular → attracted a huge audience. Different words, same core idea.'
+            sentenceZh: 'film → movie, extremely popular → attracted a huge audience。词不同，核心意思相同。'
+          - base: '"She found it difficult to concentrate."'
+            transformed: '"She struggled to focus."'
+            sentence: 'found it difficult → struggled, concentrate → focus. Both describe the same struggle.'
+            sentenceZh: 'found it difficult → struggled，concentrate → focus。都在描述同样的困难。'
+          - base: '"The price has gone up significantly."'
+            transformed: '"There has been a considerable increase in cost."'
+            sentence: 'price → cost, gone up → increase, significantly → considerable. Structure changed from verb to noun phrase.'
+            sentenceZh: 'price → cost，gone up → increase，significantly → considerable。结构从动词变成名词短语。'
+
+      - pattern: 'Structure Changes'
+        meaning: 'The grammar or sentence structure is rearranged while keeping the same meaning'
+        meaningZh: '语法或句子结构被重新排列，但保持相同含义'
+        examples:
+          - base: '"The storm destroyed many houses."'
+            transformed: '"Many houses were destroyed by the storm."'
+            sentence: 'Active voice → passive voice. The meaning is identical, but the focus shifts from storm to houses.'
+            sentenceZh: '主动语态 → 被动语态。意思完全相同，但焦点从风暴转移到房屋。'
+          - base: '"Although he was tired, he kept running."'
+            transformed: '"Despite his tiredness, he continued to run."'
+            sentence: 'Although + clause → Despite + noun. Kept running → continued to run. Same meaning, different grammar.'
+            sentenceZh: 'Although + 从句 → Despite + 名词。kept running → continued to run。意思相同，语法不同。'
+
+    tips:
+      - 'Golden rule: The correct answer in FCE Reading almost NEVER uses the exact same words as the passage. If an option copies the passage word-for-word, be suspicious!'
+      - 'Train your "synonym radar" by always thinking of other ways to say the same thing.'
+      - 'Watch for structure changes: active ↔ passive, clause ↔ phrase, positive ↔ double negative ("not uncommon" = "common").'
+      - 'Focus on MEANING, not surface words. Ask: "Does this option say the same THING, even if it uses different WORDS?"'
+      - 'Beware of "half-true" paraphrases — options that get part of the meaning right but change or add something. The whole meaning must match.'
+    tipsZh:
+      - '黄金法则：FCE 阅读中正确答案几乎从不使用与原文完全相同的词。如果某选项逐字照抄原文，要警惕！'
+      - '训练你的"同义词雷达"，时刻想想同一个意思还能怎么说。'
+      - '注意结构变化：主动 ↔ 被动，从句 ↔ 短语，肯定 ↔ 双重否定（"not uncommon" = "common"）。'
+      - '关注含义，不是表面文字。问自己："这个选项说的是同一件事吗，即使用了不同的词？"'
+      - '警惕"半对的"改述——某些选项只对了一部分含义，但改变或添加了内容。整个含义必须匹配。'
+
+    practicePreview:
+      - id: Q03-L04-P01
+        question: |
+          Original sentence from a passage: "The company decided to reduce the number of employees."
+
+          Which of the following is the best paraphrase?
+          A) The company hired more workers.
+          B) The company made job cuts.
+          C) The company decided to improve working conditions.
+          D) The employees reduced the company.
+        questionZh: |
+          原文句子："The company decided to reduce the number of employees."
+
+          以下哪个是最佳改述？
+          A) 公司雇佣了更多工人。
+          B) 公司进行了裁员。
+          C) 公司决定改善工作条件。
+          D) 员工减少了公司。
+        answer: 'B'
+        explanation: '"Reduce the number of employees" = "make job cuts". Both mean fewer staff. A is the opposite. C changes the meaning entirely. D is nonsensical.'
+        explanationZh: '"Reduce the number of employees" = "make job cuts"。都表示减少员工。A 是反义。C 完全改变了意思。D 毫无意义。'
+
+      - id: Q03-L04-P02
+        question: |
+          Original sentence: "Very few people attended the event because of the terrible weather."
+
+          Which is the best paraphrase?
+          A) The event was cancelled due to the weather.
+          B) The bad weather meant the event had a low turnout.
+          C) People enjoyed the event despite the weather.
+          D) The weather was terrible but didn't affect attendance.
+        questionZh: |
+          原文句子："Very few people attended the event because of the terrible weather."
+
+          哪个是最佳改述？
+          A) 活动因天气原因被取消了。
+          B) 恶劣天气导致活动参与人数很少。
+          C) 尽管天气不好，人们还是享受了活动。
+          D) 天气很差但没影响出席率。
+        answer: 'B'
+        explanation: '"Very few people attended" = "low turnout". "Because of terrible weather" = "bad weather meant". A changes the fact (cancelled ≠ low turnout). C and D contradict the original.'
+        explanationZh: '"Very few people attended" = "low turnout"。"Because of terrible weather" = "bad weather meant"。A 改变了事实（取消 ≠ 人少）。C 和 D 与原文矛盾。'
+
+      - id: Q03-L04-P03
+        question: |
+          Original sentence: "The teacher was pleased that all the students had passed the exam."
+
+          Which is the best paraphrase?
+          A) The students were happy with their teacher.
+          B) None of the students failed, which made the teacher happy.
+          C) The teacher passed all the students because she was pleased.
+          D) All the exams were easy, so every student passed.
+        questionZh: |
+          原文句子："The teacher was pleased that all the students had passed the exam."
+
+          哪个是最佳改述？
+          A) 学生们对老师很满意。
+          B) 没有学生不及格，这让老师很高兴。
+          C) 老师因为高兴所以让所有学生通过了。
+          D) 所有考试都很简单，所以每个学生都通过了。
+        answer: 'B'
+        explanation: '"All students passed" = "none failed". "Teacher was pleased" = "made the teacher happy". Same meaning, restructured. C reverses cause and effect. A and D add information not in the original.'
+        explanationZh: '"All students passed" = "none failed"。"Teacher was pleased" = "made the teacher happy"。同义改述。C 颠倒了因果关系。A 和 D 添加了原文没有的信息。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Paragraph Coherence
+  # ─────────────────────────────────────────────
+  - id: Q03-L05
+    title: 'Paragraph Coherence — The Red String on the Board'
+    titleZh: '段落衔接——案件板上的红线'
+
+    introduction: |
+      Inspector Lexia points to the red strings connecting photos on her evidence board.
+      "In every investigation, clues must connect. A fingerprint here, a witness there —
+      they only make sense when you see HOW they link together. Paragraphs work the
+      same way!"
+
+      "FCE Part 6 gives you a text with missing sentences. Your job is to figure out which
+      sentence belongs in each gap. This tests COHERENCE — whether the text flows
+      logically from one idea to the next."
+
+      She pulls out a magnifying glass. "There are three types of 'red string' to look for:
+      PRONOUNS (he, she, it, this, these — what do they refer to?), LINKING WORDS
+      (however, therefore, in addition — what logical connection do they show?), and
+      TOPIC FLOW (does the sentence continue the same topic or introduce a new one?).
+      Master these three, and you'll solve Part 6 every time."
+    introductionZh: |
+      Lexia 探长指着案件板上连接照片的红线。"在每次调查中，线索必须相互关联。
+      这里有指纹，那里有目击者——只有看到它们之间的联系，才能理解全貌。段落也是
+      一样的！"
+
+      "FCE Part 6 会给你一篇有缺失句子的文章。你的任务是找出每个空缺应该放哪个
+      句子。这考查的是衔接——文本是否从一个想法逻辑地过渡到下一个。"
+
+      她拿出一个放大镜。"要寻找三种'红线'：代词（he, she, it, this, these——它们
+      指代什么？）、连接词（however, therefore, in addition——它们表示什么逻辑
+      关系？）、以及话题流（这句话是延续同一话题还是引入新话题？）。掌握这三者，
+      你就能每次都解决 Part 6。"
+
+    rules:
+      - pattern: 'Pronoun Reference'
+        meaning: 'Pronouns (he, she, it, this, these, such) must refer back to something already mentioned'
+        meaningZh: '代词（he, she, it, this, these, such）必须指代前文已提到的内容'
+        examples:
+          - base: '"Dr. Chen spent years studying coral reefs. [GAP]"'
+            transformed: '"Her research revealed surprising results."'
+            sentence: '"Her" must refer to a female person mentioned before — it connects to "Dr. Chen". If the previous paragraph mentioned a man, "Her" wouldn''t fit.'
+            sentenceZh: '"Her" 必须指代前文提到的女性——与 "Dr. Chen" 相连。如果前段提到的是男性，"Her" 就不合适。'
+          - base: '"The city banned plastic bags last year. [GAP]"'
+            transformed: '"This decision was praised by environmental groups."'
+            sentence: '"This decision" refers back to "banned plastic bags". The pronoun "this" creates a clear link to the previous sentence.'
+            sentenceZh: '"This decision" 指代"banned plastic bags"。代词"this"与前句建立了清晰的联系。'
+
+      - pattern: 'Linking Words'
+        meaning: 'Transition words show the logical relationship between ideas'
+        meaningZh: '过渡词表示观点之间的逻辑关系'
+        examples:
+          - base: 'However / Nevertheless / On the other hand'
+            transformed: 'Contrast connector'
+            sentence: 'These signal that the next idea CONTRASTS with the previous one. "The food was expensive. However, the quality was excellent."'
+            sentenceZh: '这些词表示下一个观点与前一个形成对比。"食物很贵。然而，质量很好。"'
+          - base: 'Therefore / As a result / Consequently'
+            transformed: 'Cause-effect connector'
+            sentence: 'These show that the next idea is a RESULT of the previous one. "It rained heavily. As a result, the match was postponed."'
+            sentenceZh: '这些词表示下一个观点是前一个的结果。"下了大雨。因此，比赛被推迟了。"'
+          - base: 'In addition / Furthermore / Moreover'
+            transformed: 'Addition connector'
+            sentence: 'These signal that more information on the SAME topic is being added. "The hotel has a pool. In addition, there is a gym."'
+            sentenceZh: '这些词表示在同一话题上补充更多信息。"酒店有泳池。此外，还有健身房。"'
+          - base: 'For example / For instance / Such as'
+            transformed: 'Example connector'
+            sentence: 'These introduce a specific example to illustrate the previous point. "Many animals migrate. For example, Arctic terns fly 70,000 km a year."'
+            sentenceZh: '这些词引入具体例子来说明前面的观点。"许多动物会迁徙。例如，北极燕鸥每年飞行 70,000 公里。"'
+
+      - pattern: 'Topic Flow'
+        meaning: 'Each sentence should connect to what came before and lead into what comes after'
+        meaningZh: '每个句子都应该与前文相关并引导出后文'
+        examples:
+          - base: 'Paragraph about school lunches → [GAP] → "Parents welcomed the change."'
+            transformed: 'The gap sentence must be about a change to school lunches'
+            sentence: 'The topic before is school lunches, the topic after is parents reacting to a change. The gap must bridge these: a sentence about changing the lunch menu.'
+            sentenceZh: '前面的话题是学校午餐，后面是家长对变化的反应。空缺必须连接这两者：一个关于改变午餐菜单的句子。'
+
+    tips:
+      - 'Start with the EASIEST gaps — the ones with the clearest pronoun or linking word clues. Then use elimination for harder ones.'
+      - 'After filling all gaps, read the WHOLE text straight through. Does it flow naturally? If something feels bumpy, reconsider.'
+      - 'Watch for "this/these/such" — they always point backward to something specific. Find what they refer to!'
+      - 'One sentence is always EXTRA in Part 6 (a distractor). Save it for last and confirm it truly doesn''t fit anywhere.'
+      - 'Pay attention to tense consistency. If the paragraph is in past tense, the missing sentence should probably be in past tense too.'
+    tipsZh:
+      - '从最简单的空缺开始——有最明显代词或连接词线索的那些。然后用排除法处理较难的。'
+      - '填完所有空缺后，通读全文。读起来自然吗？如果感觉不顺畅，重新考虑。'
+      - '注意"this/these/such"——它们总是向回指代某个具体内容。找到它们的指代对象！'
+      - 'Part 6 中总有一个多余的句子（干扰项）。留到最后处理，确认它真的哪里都放不进去。'
+      - '注意时态一致性。如果段落用过去时，缺失的句子也应该用过去时。'
+
+    practicePreview:
+      - id: Q03-L05-P01
+        question: |
+          Read the text with a gap:
+          "The school decided to replace all vending machines with fruit baskets. [GAP] Teachers reported that students seemed more focused in afternoon lessons."
+
+          Which sentence best fills the gap?
+          A) The headteacher had always disliked vending machines.
+          B) This change was introduced at the start of September.
+          C) Fruit is more expensive than chocolate.
+          D) The school also built a new sports hall.
+        questionZh: |
+          阅读有空缺的文本：
+          "学校决定把所有自动售货机换成水果篮。[空缺] 老师们报告说学生们在下午的课上似乎更专注了。"
+
+          哪句话最适合填入空缺？
+          A) 校长一直不喜欢自动售货机。
+          B) 这一变化在九月初被引入。
+          C) 水果比巧克力贵。
+          D) 学校还建了一个新的体育馆。
+        answer: 'B'
+        explanation: '"This change" refers back to replacing vending machines with fruit. The timing ("start of September") connects to the RESULT that follows (more focused students). A is about the headteacher''s feelings (off-topic). C and D introduce unrelated information.'
+        explanationZh: '"This change"指代把售货机换成水果。时间点（"九月初"）与后面的结果（学生更专注）相连。A 说的是校长的感受（离题）。C 和 D 引入了无关信息。'
+
+      - id: Q03-L05-P02
+        question: |
+          Read the text with a gap:
+          "Tokyo is famous for its modern skyscrapers and neon lights. [GAP] Visitors can explore 400-year-old temples just minutes from the busiest shopping streets."
+
+          Which sentence best fills the gap?
+          A) However, the city also has a rich traditional side.
+          B) Therefore, many tourists avoid Tokyo.
+          C) In addition, the food is very expensive.
+          D) Tokyo is the capital of Japan.
+        questionZh: |
+          阅读有空缺的文本：
+          "东京以现代摩天大楼和霓虹灯闻名。[空缺] 游客可以在最繁忙的购物街几分钟内探索有 400 年历史的寺庙。"
+
+          哪句话最适合填入空缺？
+          A) 然而，这座城市也有丰富的传统面。
+          B) 因此，许多游客避开东京。
+          C) 此外，食物非常贵。
+          D) 东京是日本的首都。
+        answer: 'A'
+        explanation: 'Before the gap: modern Tokyo. After the gap: ancient temples. "However" signals contrast (modern → traditional), and "also has a rich traditional side" bridges perfectly to the temple example that follows.'
+        explanationZh: '空缺前：现代东京。空缺后：古老寺庙。"However"表示对比（现代 → 传统），"also has a rich traditional side"完美地过渡到后面的寺庙例子。'
+
+      - id: Q03-L05-P03
+        question: |
+          Read the text with a gap:
+          "Emma had been training for the marathon for six months. She followed a strict diet and ran 50 kilometres every week. [GAP] She crossed the finish line in under four hours."
+
+          Which sentence best fills the gap?
+          A) Her brother preferred swimming to running.
+          B) On race day, all her hard work paid off.
+          C) She decided to quit and try cycling instead.
+          D) The weather forecast predicted rain for the weekend.
+        questionZh: |
+          阅读有空缺的文本：
+          "Emma 已经为马拉松训练了六个月。她严格控制饮食，每周跑 50 公里。[空缺] 她在不到四小时内冲过了终点线。"
+
+          哪句话最适合填入空缺？
+          A) 她哥哥更喜欢游泳而非跑步。
+          B) 比赛那天，她所有的努力都得到了回报。
+          C) 她决定放弃，转而尝试骑自行车。
+          D) 天气预报预测周末有雨。
+        answer: 'B'
+        explanation: 'The flow: training → [gap] → finish line result. "On race day" moves the timeline forward. "All her hard work paid off" connects the training (before) to the achievement (after). A is off-topic. C contradicts the ending. D is irrelevant.'
+        explanationZh: '逻辑流：训练 → [空缺] → 终点线结果。"On race day"把时间线推进。"All her hard work paid off"连接了训练（前）和成绩（后）。A 离题。C 与结尾矛盾。D 无关。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Modal Verbs for Speculation
+  # ─────────────────────────────────────────────
+  - id: Q03-L06
+    title: 'Modal Verbs for Speculation — The Detective''s Certainty Scale'
+    titleZh: '推测性情态动词——侦探的确定性量表'
+
+    introduction: |
+      Inspector Lexia holds up a ruler marked from 0% to 100%. "When detectives
+      investigate a case, they don't always know the truth for certain. Sometimes they say
+      'It MUST have been the butler' — very sure. Other times, 'It MIGHT have been the
+      gardener' — possible but uncertain. And sometimes, 'It CAN'T have been the chef —
+      he was in Paris!' — impossible."
+
+      "These words — must, might, could, may, can't — are called MODAL VERBS OF
+      SPECULATION. They tell the listener HOW SURE the speaker is. In FCE, you'll
+      need them for two things: understanding what an author believes when they use
+      these words, and using them yourself in the Speaking and Writing papers."
+
+      She draws a scale on the board:
+      - "CAN'T HAVE / COULDN'T HAVE = I'm sure it DIDN'T happen (0%)"
+      - "MIGHT HAVE / COULD HAVE / MAY HAVE = It's possible (50%)"
+      - "MUST HAVE = I'm almost sure it DID happen (95%)"
+
+      "Today, we calibrate your detective certainty scale!"
+    introductionZh: |
+      Lexia 探长举起一把从 0% 到 100% 标记的尺子。"当侦探调查案件时，他们不总是
+      确定真相。有时他们说'一定是管家干的'——非常确信。有时说'可能是园丁干的'——
+      有可能但不确定。有时说'不可能是厨师——他当时在巴黎！'——不可能。"
+
+      "这些词——must, might, could, may, can't——被称为推测性情态动词。它们告诉
+      听者说话人有多确定。在 FCE 中，你需要它们做两件事：理解作者使用这些词时表达
+      的信念，以及在口语和写作中自己使用它们。"
+
+      她在白板上画了一个量表：
+      - "CAN'T HAVE / COULDN'T HAVE = 我确信它没发生（0%）"
+      - "MIGHT HAVE / COULD HAVE / MAY HAVE = 有可能（50%）"
+      - "MUST HAVE = 我几乎确信它发生了（95%）"
+
+      "今天，我们来校准你的侦探确定性量表！"
+
+    rules:
+      - pattern: 'must have + past participle'
+        meaning: 'I am almost certain this happened (strong deduction based on evidence)'
+        meaningZh: '我几乎确定这件事发生了（基于证据的强推断）'
+        examples:
+          - base: 'Evidence: The ground is wet.'
+            transformed: 'It must have rained last night.'
+            sentence: 'The wet ground is strong evidence. You didn''t see the rain, but you''re almost sure it happened.'
+            sentenceZh: '潮湿的地面是有力的证据。你没看到下雨，但你几乎确定下过雨了。'
+          - base: 'Evidence: She looks exhausted and is still in her running clothes.'
+            transformed: 'She must have just finished a marathon.'
+            sentence: 'Multiple clues (exhausted + running clothes) make this a strong deduction.'
+            sentenceZh: '多条线索（筋疲力尽 + 跑步服）使这成为一个有力的推断。'
+          - base: 'Evidence: His phone is off and he missed three meetings.'
+            transformed: 'Something serious must have happened.'
+            sentence: 'The combination of unusual behaviours points strongly to something important.'
+            sentenceZh: '一系列异常行为组合在一起，强烈指向发生了重要的事。'
+
+      - pattern: 'might have / could have / may have + past participle'
+        meaning: 'It is possible this happened, but I am not sure (weaker speculation)'
+        meaningZh: '这件事有可能发生了，但我不确定（较弱的推测）'
+        examples:
+          - base: 'Scenario: You can''t find your keys.'
+            transformed: 'I might have left them at the restaurant.'
+            sentence: 'It''s one possibility among several. You''re not sure — maybe they''re in your bag, maybe at the restaurant.'
+            sentenceZh: '这是几种可能性之一。你不确定——也许在包里，也许在餐厅。'
+          - base: 'Scenario: A friend didn''t reply to your message.'
+            transformed: 'She could have been busy all day.'
+            sentence: '"Could have" shows it''s a reasonable guess, but other explanations exist too.'
+            sentenceZh: '"Could have"表示这是一个合理的猜测，但也可能有其他解释。'
+          - base: 'Scenario: The cake tastes slightly different.'
+            transformed: 'They may have changed the recipe.'
+            sentence: '"May have" expresses uncertainty — you noticed something but can''t be sure of the cause.'
+            sentenceZh: '"May have"表达不确定——你注意到了变化但不能确定原因。'
+
+      - pattern: 'can''t have / couldn''t have + past participle'
+        meaning: 'I am almost certain this did NOT happen (strong negative deduction)'
+        meaningZh: '我几乎确定这件事没有发生（强否定推断）'
+        examples:
+          - base: 'Evidence: The suspect has a plane ticket showing he was in London.'
+            transformed: 'He can''t have committed the crime in Paris.'
+            sentence: 'If he was in London, it''s logically impossible he committed a crime in Paris at the same time.'
+            sentenceZh: '如果他当时在伦敦，他不可能同时在巴黎犯案。这在逻辑上不可能。'
+          - base: 'Evidence: The shop closes at 5 pm and it''s now 4:55.'
+            transformed: 'She couldn''t have already done all her shopping.'
+            sentence: 'With only 5 minutes, it''s virtually impossible to finish all shopping. Evidence rules it out.'
+            sentenceZh: '只有 5 分钟，几乎不可能完成所有购物。证据排除了这种可能。'
+
+    tips:
+      - 'Think of a certainty scale: CAN''T HAVE (0%) → MIGHT/COULD/MAY HAVE (50%) → MUST HAVE (95%). Place each deduction on the scale.'
+      - '"Must have" is NOT the same as "had to". "I must have forgotten" = I''m deducing I forgot. "I had to forget" = I was forced to forget (doesn''t make sense!).'
+      - 'In FCE Reading, when the author uses "must have", they''re expressing strong belief. When they use "might have", they''re being cautious.'
+      - 'For Speaking Part 3 (photos): use these modals to speculate! "The woman must be feeling nervous" or "They might have just received good news."'
+      - 'Remember: these are about PAST speculation. For present speculation: "She must be tired" (no "have"). For past: "She must have been tired."'
+    tipsZh:
+      - '想象一个确定性量表：CAN''T HAVE（0%）→ MIGHT/COULD/MAY HAVE（50%）→ MUST HAVE（95%）。把每个推断放在量表上。'
+      - '"Must have" 不等于 "had to"。"I must have forgotten" = 我推断我忘了。"I had to forget" = 我被迫忘记（说不通！）。'
+      - '在 FCE 阅读中，当作者用 "must have" 时，表达的是强信念。用 "might have" 时，表达的是谨慎。'
+      - '口语 Part 3（看图说话）中使用这些情态动词来推测！"The woman must be feeling nervous" 或 "They might have just received good news."'
+      - '记住：这些是关于过去的推测。现在的推测："She must be tired"（无 "have"）。过去的推测："She must have been tired."'
+
+    practicePreview:
+      - id: Q03-L06-P01
+        question: |
+          The streets are empty, all the shops are closed, and there's no traffic.
+
+          Choose the best deduction:
+          A) It must have been very late at night.
+          B) It might have been a normal weekday afternoon.
+          C) It can't have been a public holiday.
+          D) People could have been at a football match.
+        questionZh: |
+          街上空无一人，所有商店都关了，也没有车辆。
+
+          选择最佳推断：
+          A) 一定是深夜了。
+          B) 可能是普通工作日的下午。
+          C) 不可能是公共假日。
+          D) 人们可能去看足球比赛了。
+        answer: 'A'
+        explanation: 'Empty streets + closed shops + no traffic = very strong evidence for late night. "Must have" fits the high certainty. B contradicts the evidence (shops would be open). C is wrong (a holiday could explain closed shops). D is possible but only one explanation among many.'
+        explanationZh: '空街道 + 关闭的商店 + 无交通 = 深夜的有力证据。"Must have"符合高确定性。B 与证据矛盾（商店会开着）。C 不对（假日也能解释商店关门）。D 有可能但只是众多解释之一。'
+
+      - id: Q03-L06-P02
+        question: |
+          Sarah got full marks on the exam even though she looked relaxed and didn't study the night before.
+
+          Choose the best deduction:
+          A) She can't have known any answers.
+          B) She must have studied earlier in the week.
+          C) She might have cheated on the exam.
+          D) The exam must have been extremely easy.
+        questionZh: |
+          Sarah 考试得了满分，尽管她看起来很放松，前一晚也没有复习。
+
+          选择最佳推断：
+          A) 她不可能知道任何答案。
+          B) 她一定是在那周早些时候学习了。
+          C) 她可能在考试中作弊了。
+          D) 考试一定非常简单。
+        answer: 'B'
+        explanation: 'Full marks + no studying the night before → the most logical strong deduction is she studied earlier. A contradicts the fact she got full marks. C is possible but makes an unfair assumption. D is possible but we have no evidence about other students.'
+        explanationZh: '满分 + 前一晚没学习 → 最合逻辑的强推断是她之前就学了。A 与满分的事实矛盾。C 有可能但假设不公平。D 有可能但没有关于其他学生的证据。'
+
+      - id: Q03-L06-P03
+        question: |
+          James was at a concert in London from 7 pm to 11 pm. His neighbour reported seeing someone in James's garden in Manchester at 9 pm.
+
+          Choose the best deduction:
+          A) James must have left the concert early.
+          B) James might have driven very fast.
+          C) It can't have been James in the garden.
+          D) James could have been in two places at once.
+        questionZh: |
+          James 晚上 7 点到 11 点在伦敦的一场音乐会上。他的邻居报告说晚上 9 点在曼彻斯特 James 的花园里看到了一个人。
+
+          选择最佳推断：
+          A) James 一定是提前离开了音乐会。
+          B) James 可能开车开得很快。
+          C) 花园里的不可能是 James。
+          D) James 可能同时出现在两个地方。
+        answer: 'C'
+        explanation: 'London to Manchester is over 300 km. If James was at the concert 7-11 pm, he physically cannot have been in Manchester at 9 pm. "Can''t have been" expresses logical impossibility — the strongest negative deduction.'
+        explanationZh: '伦敦到曼彻斯特超过 300 公里。如果 James 在 7-11 点参加音乐会，他不可能在 9 点出现在曼彻斯特。"Can''t have been"表达逻辑上的不可能——最强的否定推断。'

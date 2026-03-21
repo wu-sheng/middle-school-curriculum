@@ -1,0 +1,526 @@
+category: 'Story Writing — Detective & Mystery'
+categoryZh: '故事写作 — 侦探与悬疑'
+tasks:
+  - id: W014
+    type: story
+    title: 'The Missing Library Book'
+    titleZh: '消失的图书馆藏书'
+    prompt: 'Your story must begin with this sentence: ''When I opened the library door on Monday morning, I noticed that the oldest book in the collection had disappeared.'''
+    promptZh: '你的故事必须以这句话开头：''周一早上我推开图书馆的门时，发现馆藏中最古老的那本书不见了。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the library and the missing book. Who discovers it is gone?'
+        openingZh: '描述图书馆和失踪的书。谁发现书不见了？'
+        development: 'What clues do you find? A bookmark on the floor? A window left open?'
+        developmentZh: '你找到了什么线索？地上的书签？没关的窗户？'
+        climax: 'You follow the clues and discover something unexpected about who took the book.'
+        climaxZh: '你顺着线索追查，发现了关于拿走书的人的意外真相。'
+        resolution: 'The mystery is solved. Was it a misunderstanding? How does everyone feel?'
+        resolutionZh: '谜团解开了。是一场误会吗？大家有什么感受？'
+      mustUseWords:
+        - 'investigate'
+        - 'suspicious'
+        - 'clue'
+        - 'evidence'
+      mustUseStructure:
+        - 'At least one past perfect sentence (had + past participle)'
+        - 'At least one relative clause (who/which/where)'
+      mustUseStructureZh:
+        - '至少一个过去完成时句子（had + 过去分词）'
+        - '至少一个定语从句（who/which/where）'
+      rubric:
+        content: 'The story has a clear mystery, logical clues, and a satisfying resolution.'
+        contentZh: '故事有清晰的谜团、合理的线索和令人满意的结局。'
+        language: 'Uses varied vocabulary, correct past tenses, and descriptive details to build suspense.'
+        languageZh: '使用丰富的词汇、正确的过去时态和描写细节来营造悬念。'
+    selfCheckList:
+      - 'Did I describe the setting clearly?'
+      - 'Did I include at least two clues in the story?'
+      - 'Did I build suspense before revealing the answer?'
+      - 'Are my verb tenses consistent?'
+    selfCheckListZh:
+      - '我是否清楚地描述了场景？'
+      - '我是否在故事中包含了至少两条线索？'
+      - '我是否在揭示答案前制造了悬念？'
+      - '我的动词时态是否一致？'
+    modelAnswer: |
+      When I opened the library door on Monday morning, I noticed that the oldest book in the collection had disappeared. The glass case where it usually sat was empty, and there were muddy footprints on the carpet.
+
+      I decided to investigate. The first clue was a small yellow bookmark on the floor near the window, which had been left slightly open. The bookmark had the initials "T.W." written on it. That was suspicious — only five people had keys to the library.
+
+      I asked the librarian, Mrs Chen, who "T.W." might be. Her eyes widened. "That must be Tom Wheeler — he volunteers here on Sundays!" We found Tom in the art room. He looked embarrassed when he saw the evidence.
+
+      "I'm so sorry," Tom said quietly. "I borrowed it to draw the illustrations for my project. I was going to return it today." He pulled the precious book from his bag, perfectly safe.
+
+      Mrs Chen smiled. "Next time, just ask." The mystery was solved, and I learned that not every suspect is a villain — sometimes they are just forgetful artists.
+    modelAnswerZh: |
+      周一早上我推开图书馆的门时，发现馆藏中最古老的那本书不见了。它通常放着的玻璃柜是空的，地毯上还有泥脚印。
+
+      我决定调查。第一条线索是窗户旁边地上的一枚黄色小书签，窗户微微开着。书签上写着"T.W."的缩写。这很可疑——只有五个人有图书馆的钥匙。
+
+      我问图书管理员陈老师，"T.W."可能是谁。她睁大了眼睛。"那一定是汤姆·惠勒——他周日在这里做志愿者！"我们在美术教室找到了汤姆。他看到证据时一脸尴尬。
+
+      "真的很抱歉，"汤姆轻声说。"我借去画我课题里的插图了。我本来打算今天还的。"他从书包里拿出那本珍贵的书，完好无损。
+
+      陈老师笑了笑。"下次直接说一声就好。"谜团解开了，我也明白了不是每个嫌疑人都是坏人——有时候他们只是粗心的艺术家。
+
+  - id: W015
+    type: story
+    title: 'The Secret Code in the Playground'
+    titleZh: '操场上的神秘密码'
+    prompt: 'Your story must begin with this sentence: ''During break time, my friend Mia found a folded piece of paper with a strange code written on it.'''
+    promptZh: '你的故事必须以这句话开头：''课间休息时，我的朋友米娅发现了一张写着奇怪密码的折叠纸条。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe how Mia finds the note and what the code looks like.'
+        openingZh: '描述米娅是怎么发现纸条的，密码长什么样。'
+        development: 'How do you work together to crack the code? What does it say?'
+        developmentZh: '你们如何合作破译密码？密码说了什么？'
+        climax: 'The decoded message leads you somewhere surprising in the school.'
+        climaxZh: '解码后的信息指引你们去了学校里一个意想不到的地方。'
+        resolution: 'What do you discover at the end? Who left the code and why?'
+        resolutionZh: '最后你们发现了什么？谁留下的密码，为什么？'
+      mustUseWords:
+        - 'decode'
+        - 'mysterious'
+        - 'footprint'
+        - 'witness'
+      mustUseStructure:
+        - 'At least one piece of direct speech with correct punctuation'
+        - 'At least one adverbial clause of time (when/while/after)'
+      mustUseStructureZh:
+        - '至少一句标点正确的直接引语'
+        - '至少一个时间状语从句（when/while/after）'
+      rubric:
+        content: 'The story presents a believable code-cracking puzzle with a clear beginning, middle, and end.'
+        contentZh: '故事呈现了一个可信的密码破解谜题，有清晰的开头、中间和结尾。'
+        language: 'Uses past tenses accurately and includes vivid description of the characters working together.'
+        languageZh: '准确使用过去时态，生动描写了人物合作的过程。'
+    selfCheckList:
+      - 'Did I explain what the code looked like?'
+      - 'Did I show how the characters solved the puzzle step by step?'
+      - 'Did I create a surprising ending?'
+      - 'Did I use correct punctuation in dialogue?'
+    selfCheckListZh:
+      - '我是否描述了密码的样子？'
+      - '我是否展示了人物一步步解谜的过程？'
+      - '我是否创造了一个出人意料的结局？'
+      - '我的对话标点是否正确？'
+    modelAnswer: |
+      During break time, my friend Mia found a folded piece of paper with a strange code written on it. The paper had numbers and arrows instead of words: "14-5-23 7-1-18-4-5-14 → 2-5-8-9-14-4 20-8-5 19-8-5-4."
+
+      "This is mysterious," Mia whispered. After thinking carefully, I realised each number matched a letter of the alphabet — A was 1, B was 2, and so on. We began to decode it during lunch. The message read: "New garden → behind the shed."
+
+      When we reached the old shed behind the sports field, we noticed a fresh footprint in the mud. Someone had been here recently. We peeked behind the shed and gasped. A small patch of sunflowers was growing in neat rows, with a hand-painted sign that said "Secret Garden Club."
+
+      Our science teacher, Mr Park, appeared with a watering can. "You cracked my code! You are the first witness to our surprise project," he said, smiling. "I planted these with the gardening club. We wanted students to discover it like a treasure hunt."
+
+      Mia and I joined the club that same week. Sometimes the best mysteries lead to something wonderful.
+    modelAnswerZh: |
+      课间休息时，我的朋友米娅发现了一张写着奇怪密码的折叠纸条。纸上没有文字，只有数字和箭头："14-5-23 7-1-18-4-5-14 → 2-5-8-9-14-4 20-8-5 19-8-5-4。"
+
+      "好神秘啊，"米娅低声说。仔细想了想后，我意识到每个数字对应字母表中的一个字母——A是1，B是2，以此类推。午饭时我们开始解码。信息写的是："新花园→棚子后面。"
+
+      当我们走到运动场后面的旧棚子时，注意到泥地上有一个新鲜的脚印。有人最近来过这里。我们从棚子后面探头一看，惊呆了。一小片向日葵整齐地生长着，旁边还有一块手绘的牌子写着"秘密花园俱乐部"。
+
+      我们的科学老师朴老师拿着浇水壶出现了。"你们破解了我的密码！你们是我们惊喜项目的第一批见证者，"他笑着说。"这是我和园艺社一起种的。我们想让同学们像寻宝一样发现它。"
+
+      米娅和我那周就加入了俱乐部。有时候最好的谜团会通向美好的事物。
+
+  - id: W016
+    type: story
+    title: 'The Vanishing Painting'
+    titleZh: '消失的画作'
+    prompt: 'Your story must begin with this sentence: ''Nobody could explain how the painting had vanished from the school hall overnight.'''
+    promptZh: '你的故事必须以这句话开头：''没有人能解释那幅画是怎么在一夜之间从学校大厅消失的。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the painting and the scene when people discover it is missing.'
+        openingZh: '描述那幅画，以及人们发现它消失时的场景。'
+        development: 'You start looking for clues. What do you find near the empty wall?'
+        developmentZh: '你开始寻找线索。在空墙附近你发现了什么？'
+        climax: 'A surprising detail points to an unexpected person. What happens?'
+        climaxZh: '一个令人意外的细节指向了一个意想不到的人。发生了什么？'
+        resolution: 'The truth is revealed. Where was the painting and why was it moved?'
+        resolutionZh: '真相揭晓。画在哪里？为什么被移走了？'
+      mustUseWords:
+        - 'detective'
+        - 'clue'
+        - 'vanish'
+        - 'suspect'
+      mustUseStructure:
+        - 'At least one passive voice sentence (was/were + past participle)'
+        - 'At least one sentence using reported speech'
+      mustUseStructureZh:
+        - '至少一个被动语态句子（was/were + 过去分词）'
+        - '至少一个间接引语句子'
+      rubric:
+        content: 'The story includes a genuine mystery with at least two red herrings or false leads before the resolution.'
+        contentZh: '故事包含一个真正的谜团，在揭示真相前至少有两个误导或虚假线索。'
+        language: 'Demonstrates accurate use of passive voice and reported speech in a narrative context.'
+        languageZh: '在叙事语境中准确运用了被动语态和间接引语。'
+    selfCheckList:
+      - 'Did I describe the missing painting clearly?'
+      - 'Did I include at least one false lead before the real answer?'
+      - 'Did I use passive voice at least once?'
+      - 'Does my story have a clear beginning, middle, and end?'
+    selfCheckListZh:
+      - '我是否清楚地描述了失踪的画？'
+      - '我是否在真正的答案之前设置了至少一个虚假线索？'
+      - '我是否至少使用了一次被动语态？'
+      - '我的故事是否有清晰的开头、中间和结尾？'
+    modelAnswer: |
+      Nobody could explain how the painting had vanished from the school hall overnight. The large watercolour of our school garden, which had been painted by a former student, was gone. Only an empty hook remained on the wall.
+
+      I decided to play detective. My first clue was a tiny drop of blue paint on the floor. I followed the trail to the art room, where the door had been left unlocked. I suspected the art teacher, Miss Liu, but she told me she had been at home all evening. Then I noticed something else — a note on the art room desk said the painting was being cleaned.
+
+      The headteacher, Mr Wang, announced at assembly that the painting had been taken down for repair. He said that the frame was broken and needed fixing before the school open day. The caretaker had moved it to his workshop on Sunday night.
+
+      Everyone laughed when they heard the truth. The suspect was actually the caretaker, who was trying to do something kind. I learned that a good detective should check all the facts before jumping to conclusions. The painting was returned the next week, looking better than ever.
+    modelAnswerZh: |
+      没有人能解释那幅画是怎么在一夜之间从学校大厅消失的。那幅由一位毕业生画的大型水彩校园花园图不见了。墙上只剩下一个空空的挂钩。
+
+      我决定当一回侦探。第一条线索是地板上一滴小小的蓝色颜料。我沿着痕迹走到美术教室，发现门没有锁。我怀疑美术老师刘老师，但她告诉我她整个晚上都在家里。然后我注意到另一件事——美术教室桌上有一张字条，写着画正在清洁中。
+
+      校长王老师在集会上宣布，那幅画被取下来修理了。他说画框坏了，需要在学校开放日前修好。管理员周日晚上把它搬到了他的工作间。
+
+      大家听到真相后都笑了。嫌疑人其实是管理员，他只是想做一件好事。我明白了一个好侦探应该在下结论之前核实所有事实。那幅画在第二周归还了，看起来比以前更好了。
+
+  - id: W017
+    type: story
+    title: 'The Strange Footprints in the Snow'
+    titleZh: '雪地里的奇怪脚印'
+    prompt: 'Your story must begin with this sentence: ''After the first snowfall of winter, I spotted a trail of unusual footprints leading from the school gate to the old science building.'''
+    promptZh: '你的故事必须以这句话开头：''冬天第一场雪后，我发现一串奇怪的脚印从校门口一直延伸到旧科学楼。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the snowy morning and the unusual footprints you discover.'
+        openingZh: '描述那个下雪的早晨和你发现的奇怪脚印。'
+        development: 'You follow the footprints. What clues do they give you along the way?'
+        developmentZh: '你沿着脚印走。一路上它们给了你什么线索？'
+        climax: 'You reach the science building and find something unexpected inside.'
+        climaxZh: '你到达科学楼，在里面发现了意想不到的东西。'
+        resolution: 'The mystery of the footprints is explained. How do you feel?'
+        resolutionZh: '脚印的谜团被解开了。你有什么感受？'
+      mustUseWords:
+        - 'trace'
+        - 'peculiar'
+        - 'examine'
+        - 'suspect'
+      mustUseStructure:
+        - 'At least one past continuous sentence (was/were + -ing)'
+        - 'At least one sentence with an adverb of manner (carefully, quietly, etc.)'
+      mustUseStructureZh:
+        - '至少一个过去进行时句子（was/were + -ing）'
+        - '至少一个含有方式副词的句子（carefully, quietly 等）'
+      rubric:
+        content: 'The story uses the snowy setting effectively and the footprint trail creates genuine curiosity.'
+        contentZh: '故事有效利用了雪景环境，脚印线索制造了真正的好奇心。'
+        language: 'Uses sensory details (sight, sound, touch) to describe the winter setting and build atmosphere.'
+        languageZh: '运用感官细节（视觉、听觉、触觉）描写冬日环境，营造氛围。'
+    selfCheckList:
+      - 'Did I describe the snowy scene using sensory details?'
+      - 'Did I follow the footprints logically from start to finish?'
+      - 'Did I include a surprising twist?'
+      - 'Did I use past continuous correctly?'
+    selfCheckListZh:
+      - '我是否用感官细节描述了雪景？'
+      - '我是否从头到尾合理地追踪了脚印？'
+      - '我是否包含了一个出人意料的转折？'
+      - '我是否正确使用了过去进行时？'
+    modelAnswer: |
+      After the first snowfall of winter, I spotted a trail of unusual footprints leading from the school gate to the old science building. They were peculiar — much larger than normal shoes and spaced far apart, as if someone had been taking giant steps.
+
+      I decided to examine them carefully. Beside the footprints, I noticed a trace of orange powder in the snow. My classmate Leo was walking past, so I called him over. "These don't look like normal shoes," he said, frowning. We followed the trail quietly across the white playground.
+
+      The footprints led to the back door of the science building, which was slightly open. Inside, we heard music playing softly. We peeked around the corner and gasped. Our PE teacher, Coach Zhang, was wearing enormous dinosaur slippers and painting scenery for the school play. Orange chalk dust covered his hands.
+
+      "You caught me!" he laughed. "I suspect you two are the best detectives in school." He explained that he was preparing a surprise backdrop and had come in early before anyone arrived.
+
+      We promised to keep his secret. As we walked back through the snow, I smiled — the strangest mysteries sometimes have the funniest answers.
+    modelAnswerZh: |
+      冬天第一场雪后，我发现一串奇怪的脚印从校门口一直延伸到旧科学楼。它们很奇特——比普通鞋子大得多，间距也很远，好像有人在迈大步走。
+
+      我决定仔细检查。脚印旁边，我注意到雪地里有一道橙色粉末的痕迹。同学小李正好路过，我叫住了他。"这看起来不像普通的鞋子，"他皱着眉头说。我们安静地沿着脚印穿过白色的操场。
+
+      脚印通向科学楼的后门，门微微开着。我们在里面听到轻柔的音乐声。探头一看，我们都惊呆了。我们的体育老师张教练穿着巨大的恐龙拖鞋，正在画校园话剧的布景。橙色的粉笔灰沾满了他的双手。
+
+      "被你们抓到了！"他笑着说。"我怀疑你们俩是学校里最厉害的侦探。"他解释说他正在准备一个惊喜布景，趁大家还没来就提前过来了。
+
+      我们答应替他保密。走回雪地里时，我笑了——最奇怪的谜团有时候有最搞笑的答案。
+
+  - id: W018
+    type: story
+    title: 'The Locked Classroom Mystery'
+    titleZh: '上锁教室之谜'
+    prompt: 'Your story must begin with this sentence: ''Everyone was talking about Room 12 — it had been locked for a week, and strange noises came from inside every night.'''
+    promptZh: '你的故事必须以这句话开头：''所有人都在谈论12号教室——它已经锁了一个星期，而且每天晚上里面都传出奇怪的声音。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the rumours about Room 12. What do people say they hear at night?'
+        openingZh: '描述关于12号教室的传言。人们说晚上听到了什么？'
+        development: 'You and a friend decide to investigate. How do you get inside?'
+        developmentZh: '你和一个朋友决定去调查。你们怎么进去的？'
+        climax: 'What do you find inside? Is it what everyone expected?'
+        climaxZh: '你们在里面发现了什么？和大家预想的一样吗？'
+        resolution: 'The truth behind the noises is revealed. What lesson do you learn?'
+        resolutionZh: '声音背后的真相揭晓了。你学到了什么？'
+      mustUseWords:
+        - 'investigate'
+        - 'rumour'
+        - 'evidence'
+        - 'solution'
+      mustUseStructure:
+        - 'At least one conditional sentence (If... / Unless...)'
+        - 'At least one past perfect sentence (had + past participle)'
+      mustUseStructureZh:
+        - '至少一个条件句（If... / Unless...）'
+        - '至少一个过去完成时句子（had + 过去分词）'
+      rubric:
+        content: 'The story builds suspense through rumours and a locked-room scenario with a logical explanation.'
+        contentZh: '故事通过传言和密室场景制造悬念，并给出合理解释。'
+        language: 'Uses conditional and past perfect structures naturally within the narrative.'
+        languageZh: '在叙事中自然运用条件句和过去完成时结构。'
+    selfCheckList:
+      - 'Did I build suspense by describing the rumours first?'
+      - 'Did I show the investigation process step by step?'
+      - 'Did I include a logical explanation for the mystery?'
+      - 'Did I use conditional and past perfect sentences?'
+    selfCheckListZh:
+      - '我是否通过先描述传言来制造悬念？'
+      - '我是否一步步展示了调查过程？'
+      - '我是否为谜团给出了合理的解释？'
+      - '我是否使用了条件句和过去完成时？'
+    modelAnswer: |
+      Everyone was talking about Room 12 — it had been locked for a week, and strange noises came from inside every night. One rumour said a ghost lived there. Another claimed the headteacher had hidden something valuable inside.
+
+      My friend Sam and I decided to investigate. If we waited until after school, we thought, the building would be quiet enough to hear everything. At four o'clock, we crept down the corridor. I had borrowed a spare key from the caretaker's cupboard earlier that day.
+
+      We unlocked the door slowly and stepped inside. The room was dark, but we could hear a soft scratching sound. Sam switched on the light — and we both burst out laughing. A large ginger cat was sitting on the teacher's desk, batting a pencil across the surface. Beside it lay three kittens in a cardboard box.
+
+      The evidence was clear: the cat had climbed through a broken window and made a nest. The scratching noises were just the kittens playing at night. Unless someone fixed the window, the cats would keep coming back.
+
+      We told the caretaker, who repaired the window and found the cat family a home. The solution to the mystery was far cuter than anyone had imagined.
+    modelAnswerZh: |
+      所有人都在谈论12号教室——它已经锁了一个星期，而且每天晚上里面都传出奇怪的声音。有传言说里面住着鬼。还有人说校长在里面藏了什么贵重物品。
+
+      我和朋友小明决定去调查。我们想，如果等到放学后，教学楼会安静到能听清一切。四点钟，我们悄悄走过走廊。当天早些时候，我从管理员的柜子里借了一把备用钥匙。
+
+      我们慢慢打开了门，走了进去。房间很暗，但我们能听到轻轻的抓挠声。小明开了灯——我们俩都笑了。一只大橘猫坐在老师的桌子上，用爪子拨弄着一支铅笔。旁边的纸箱里躺着三只小猫。
+
+      证据很清楚：那只猫从破窗户爬进来，筑了一个窝。抓挠声只是小猫们在晚上玩耍。除非有人修好窗户，猫咪们还会继续来。
+
+      我们告诉了管理员，他修好了窗户，还给猫咪一家找了个家。这个谜团的答案比任何人想象的都要可爱。
+
+  - id: W019
+    type: story
+    title: 'The Disappearing Sandwiches'
+    titleZh: '消失的三明治'
+    prompt: 'Your story must begin with this sentence: ''For three days in a row, someone had been stealing sandwiches from the Year 5 lunch boxes, and I was determined to catch the thief.'''
+    promptZh: '你的故事必须以这句话开头：''连续三天，有人一直在偷五年级同学午餐盒里的三明治，而我决心要抓住这个小偷。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the problem. Whose sandwiches are disappearing and when?'
+        openingZh: '描述这个问题。谁的三明治不见了？什么时候发现的？'
+        development: 'You set a trap or stake out the cloakroom. What do you observe?'
+        developmentZh: '你设了个陷阱或在衣帽间蹲守。你观察到了什么？'
+        climax: 'You catch the "thief" — but the truth is not what you expected.'
+        climaxZh: '你抓住了"小偷"——但真相并不是你预想的那样。'
+        resolution: 'How is the problem solved? Does everyone become friends?'
+        resolutionZh: '问题是怎么解决的？大家成为了朋友吗？'
+      mustUseWords:
+        - 'suspect'
+        - 'observe'
+        - 'guilty'
+        - 'alibi'
+      mustUseStructure:
+        - 'At least one past perfect continuous sentence (had been + -ing)'
+        - 'At least one purpose clause (in order to / so that)'
+      mustUseStructureZh:
+        - '至少一个过去完成进行时句子（had been + -ing）'
+        - '至少一个目的状语从句（in order to / so that）'
+      rubric:
+        content: 'The story presents a relatable school mystery with a compassionate resolution.'
+        contentZh: '故事呈现了一个贴近校园生活的谜团，有充满同情心的结局。'
+        language: 'Uses past perfect continuous accurately and includes a variety of sentence structures.'
+        languageZh: '准确使用过去完成进行时，包含多样的句式结构。'
+    selfCheckList:
+      - 'Did I explain the problem clearly at the beginning?'
+      - 'Did I describe how I tried to catch the thief?'
+      - 'Did I include a twist that made the reader rethink?'
+      - 'Did I use past perfect continuous at least once?'
+    selfCheckListZh:
+      - '我是否在开头清楚地解释了问题？'
+      - '我是否描述了我是如何试图抓住小偷的？'
+      - '我是否包含了让读者重新思考的转折？'
+      - '我是否至少使用了一次过去完成进行时？'
+    modelAnswer: |
+      For three days in a row, someone had been stealing sandwiches from the Year 5 lunch boxes, and I was determined to catch the thief. My best friend's cheese sandwich vanished on Monday, then two more disappeared on Tuesday and Wednesday.
+
+      I made a plan. In order to observe the cloakroom without being seen, I hid behind the coat rack during morning break on Thursday. At first, I suspected Tom, who always arrived early. But Tom walked straight past the lunch boxes — he had a perfect alibi, as he was in the music room.
+
+      Then I saw a small figure creep in. It was Amy from Year 3, who looked nervous. She opened a blue lunch box, took out a sandwich, and put it in her pocket. She looked guilty but also sad.
+
+      I stepped out gently so that I would not frighten her. "Amy, why are you taking the sandwiches?" I asked softly. Her eyes filled with tears. "My mum forgot to pack my lunch this week. I was too embarrassed to tell anyone."
+
+      I took Amy to our class teacher, who arranged school meals for her. The other students were not angry — they were kind. Sometimes a detective discovers not a villain, but someone who needs help.
+    modelAnswerZh: |
+      连续三天，有人一直在偷五年级同学午餐盒里的三明治，而我决心要抓住这个小偷。我好朋友的芝士三明治周一不见了，周二和周三又有两个消失了。
+
+      我制定了一个计划。为了在不被发现的情况下观察衣帽间，周四课间休息时我躲在了衣架后面。起初，我怀疑总是早到的汤姆。但汤姆径直走过了午餐盒——他有完美的不在场证明，因为他当时在音乐教室。
+
+      然后我看到一个小小的身影溜了进来。是三年级的小艾米，她看起来很紧张。她打开一个蓝色午餐盒，拿出一个三明治放进口袋。她看起来既内疚又难过。
+
+      我轻轻地走出来，以免吓到她。"艾米，你为什么拿三明治呢？"我轻声问。她的眼眶红了。"这周我妈妈忘了给我装午餐。我太不好意思告诉别人了。"
+
+      我带艾米去找了班主任，老师安排了学校食堂的饭菜给她。其他同学没有生气——他们很友善。有时候侦探发现的不是坏人，而是一个需要帮助的人。
+
+  - id: W020
+    type: story
+    title: 'The Mysterious Map'
+    titleZh: '神秘的地图'
+    prompt: 'Your story must begin with this sentence: ''While tidying the old cupboard in our classroom, I found a hand-drawn map with a big red X marked in the school garden.'''
+    promptZh: '你的故事必须以这句话开头：''整理教室旧橱柜时，我发现了一张手绘地图，学校花园里标着一个大大的红色X。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe finding the map. What details are on it? Who do you show it to?'
+        openingZh: '描述发现地图的经过。地图上有什么细节？你给谁看了？'
+        development: 'You go to the garden and start searching. What obstacles do you face?'
+        developmentZh: '你去花园开始搜索。你遇到了什么困难？'
+        climax: 'You dig at the red X and find something. What is it?'
+        climaxZh: '你在红色X的地方挖掘，发现了什么？'
+        resolution: 'Who made the map? What is the story behind the buried item?'
+        resolutionZh: '谁画的地图？被埋物品背后有什么故事？'
+      mustUseWords:
+        - 'clue'
+        - 'examine'
+        - 'buried'
+        - 'detective'
+      mustUseStructure:
+        - 'At least one relative clause (who/which/that/where)'
+        - 'At least one sentence using "must have" for deduction'
+      mustUseStructureZh:
+        - '至少一个定语从句（who/which/that/where）'
+        - '至少一个使用 "must have" 表示推测的句子'
+      rubric:
+        content: 'The story combines a treasure-hunt structure with detective reasoning and a satisfying reveal.'
+        contentZh: '故事将寻宝结构与侦探推理相结合，有令人满意的揭示。'
+        language: 'Uses modal verbs for deduction and relative clauses to add detail to descriptions.'
+        languageZh: '使用情态动词进行推测，用定语从句为描写增加细节。'
+    selfCheckList:
+      - 'Did I describe the map in enough detail?'
+      - 'Did I show the search process with obstacles?'
+      - 'Did I use "must have" for deduction?'
+      - 'Does the buried item have a meaningful backstory?'
+    selfCheckListZh:
+      - '我是否足够详细地描述了地图？'
+      - '我是否展示了有障碍的搜索过程？'
+      - '我是否使用了 "must have" 来推测？'
+      - '被埋的物品是否有有意义的故事背景？'
+    modelAnswer: |
+      While tidying the old cupboard in our classroom, I found a hand-drawn map with a big red X marked in the school garden. The paper was yellow and wrinkled. Someone must have hidden it there years ago.
+
+      I showed the map to my friend Zara, who loved puzzles. We examined every clue on the paper — there were tiny drawings of a fountain, a bench, and an old tree. The red X was between the bench and the tree.
+
+      After school, we hurried to the garden. The bench that was drawn on the map still stood in the same spot. We used a stick to dig carefully at the X. After ten minutes, we hit something hard. It was a small metal tin, buried under the soil.
+
+      Inside the tin, we found three glass marbles, a friendship bracelet, and a note. The note read: "Time capsule — Class 5B, 2015. Open in ten years!" A detective would say we had solved the case. The map must have been drawn by students who wanted future children to discover their treasure.
+
+      We told our teacher, who contacted the old students. They were amazed their capsule had finally been found. Zara and I decided to bury our own time capsule — with a much harder map.
+    modelAnswerZh: |
+      整理教室旧橱柜时，我发现了一张手绘地图，学校花园里标着一个大大的红色X。纸张发黄起皱。一定是有人多年前藏在那里的。
+
+      我把地图拿给爱好解谜的朋友扎拉看。我们仔细检查了纸上的每一个线索——上面画着一个小喷泉、一张长椅和一棵老树。红色X在长椅和老树之间。
+
+      放学后，我们赶到花园。地图上画的那张长椅还在原来的位置。我们用棍子小心地在X处挖掘。十分钟后，碰到了一个硬东西。那是一个小铁盒，埋在土里。
+
+      铁盒里有三颗玻璃弹珠、一条友谊手环和一张纸条。纸条上写着："时间胶囊——2015年5B班。十年后打开！"侦探会说我们已经破了案。这张地图一定是那些想让未来的孩子发现他们宝藏的学生画的。
+
+      我们告诉了老师，老师联系了那些毕业生。他们很惊喜自己的时间胶囊终于被发现了。扎拉和我也决定埋一个自己的时间胶囊——当然配一张更难的地图。
+
+  - id: W021
+    type: story
+    title: 'The Case of the Mixed-Up Homework'
+    titleZh: '作业错乱之谜'
+    prompt: 'Your story must begin with this sentence: ''On Friday morning, every student in our class opened their homework folder and found someone else''s work inside.'''
+    promptZh: '你的故事必须以这句话开头：''周五早上，我们班每个人打开作业夹，发现里面装的都是别人的作业。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the chaos when everyone discovers their homework is mixed up.'
+        openingZh: '描述大家发现作业搞混时的混乱场面。'
+        development: 'You take charge of the investigation. What pattern do you notice?'
+        developmentZh: '你主导了调查。你发现了什么规律？'
+        climax: 'The pattern reveals who mixed up the homework and how it happened.'
+        climaxZh: '规律揭示了谁搞混了作业以及是怎么发生的。'
+        resolution: 'The homework is sorted out. What does the class learn from this?'
+        resolutionZh: '作业被重新整理好。全班从这件事中学到了什么？'
+      mustUseWords:
+        - 'witness'
+        - 'suspicious'
+        - 'deduce'
+        - 'alibi'
+      mustUseStructure:
+        - 'At least one sentence with "It turned out that..."'
+        - 'At least one question in direct speech'
+      mustUseStructureZh:
+        - '至少一句 "It turned out that..."（结果发现……）'
+        - '至少一个直接引语中的疑问句'
+      rubric:
+        content: 'The story presents a logical puzzle that the reader can follow, with a clear chain of deduction.'
+        contentZh: '故事呈现了读者可以跟随的逻辑谜题，有清晰的推理链条。'
+        language: 'Includes direct speech with correct punctuation and uses logical connectors to show reasoning.'
+        languageZh: '包含标点正确的直接引语，使用逻辑连接词展示推理过程。'
+    selfCheckList:
+      - 'Did I describe the classroom chaos vividly?'
+      - 'Did I show a clear investigation process?'
+      - 'Did I use "It turned out that..." at least once?'
+      - 'Does the ending make sense with the clues given?'
+    selfCheckListZh:
+      - '我是否生动地描述了教室里的混乱？'
+      - '我是否展示了清晰的调查过程？'
+      - '我是否至少使用了一次 "It turned out that..."？'
+      - '结局是否与给出的线索吻合？'
+    modelAnswer: |
+      On Friday morning, every student in our class opened their homework folder and found someone else's work inside. The classroom erupted in chaos. "Who has my maths sheet?" shouted Ben. "This isn't my essay!" cried Sophie.
+
+      Our teacher asked us to calm down and figure out what had happened. I noticed something suspicious — every folder had been swapped with the person sitting one desk to the left. I could deduce a pattern: whoever mixed them up had simply shifted every folder by one position.
+
+      "Who was the last person in the classroom yesterday?" I asked. Several people remembered seeing Jake, who stayed behind to tidy the desks. Jake's face turned red. He did not have a good alibi.
+
+      It turned out that Jake had accidentally knocked all the folders off the shelf while cleaning. He had been too embarrassed to tell anyone, so he quickly put them back — but in the wrong order. He had not realised each folder looked different.
+
+      Everyone laughed, and Jake apologised. Our teacher made him a witness to his own mistake. We sorted out the folders in five minutes. The lesson was simple: if you make a mistake, just be honest — it saves everyone a lot of trouble.
+    modelAnswerZh: |
+      周五早上，我们班每个人打开作业夹，发现里面装的都是别人的作业。教室立刻炸开了锅。"谁拿了我的数学卷？"小本大叫。"这不是我的作文！"小苏喊道。
+
+      老师让我们冷静下来，想想到底发生了什么。我注意到一件可疑的事——每个人的作业夹都和左边桌子那个人的交换了。我推断出一个规律：搞混作业夹的人只是把每个夹子往左移了一个位置。
+
+      "昨天谁最后一个离开教室的？"我问道。好几个人记得看到杰克留下来整理桌子。杰克的脸红了。他没有很好的不在场证明。
+
+      结果发现，杰克在打扫时不小心把所有作业夹从架子上碰掉了。他太不好意思告诉别人了，就赶紧放了回去——但顺序全错了。他没意识到每个作业夹长得不一样。
+
+      大家都笑了，杰克道了歉。老师让他成为自己错误的见证者。我们五分钟就把作业夹整理好了。教训很简单：犯了错就老实说——这能省去大家很多麻烦。

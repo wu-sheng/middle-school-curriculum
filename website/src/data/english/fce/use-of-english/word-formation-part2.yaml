@@ -1,0 +1,1680 @@
+category: 'Word Formation & Key Word Transformation'
+categoryZh: '构词法与句型转换'
+fcepart: 'Use of English Part 3 & Part 4'
+questions:
+  # ============================================================
+  # U0601-U0610: Noun suffixes -ment, -ence/-ance (difficulty 2-3)
+  # Detective/mystery theme
+  # ============================================================
+  - id: U0601
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The detective felt a sense of _____ after solving the mystery. (ACHIEVE)'
+    sentenceZh: '侦探在破案后感到一种 _____ 感。(ACHIEVE)'
+    baseWord: 'achieve'
+    answer: 'achievement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "a sense of". Add -ment to "achieve" to form "achievement".'
+    explanationZh: 'a sense of 后面需要名词。在 achieve 后加 -ment 构成名词 achievement。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0602
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The _____ of new evidence changed the direction of the case. (DEVELOP)'
+    sentenceZh: '新证据的 _____ 改变了案件的方向。(DEVELOP)'
+    baseWord: 'develop'
+    answer: 'development'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ment to "develop" to form "development".'
+    explanationZh: 'The 后面需要名词。在 develop 后加 -ment 构成名词 development。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0603
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The witness gave a clear _____ about what she had seen that night. (STATE)'
+    sentenceZh: '目击者对那晚所见做了清晰的 _____。(STATE)'
+    baseWord: 'state'
+    answer: 'statement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "a clear". Add -ment to "state" to form "statement".'
+    explanationZh: 'a clear 后面需要名词。在 state 后加 -ment 构成名词 statement。'
+    grammarPoint: 'verb → noun (+ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0604
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The _____ between the detective and the thief lasted for hours. (ARGUE)'
+    sentenceZh: '侦探和小偷之间的 _____ 持续了好几个小时。(ARGUE)'
+    baseWord: 'argue'
+    answer: 'argument'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Drop the -e from "argue" and add -ment to form "argument".'
+    explanationZh: 'The 后面需要名词。去掉 argue 的 -e 加 -ment 构成名词 argument。'
+    grammarPoint: 'verb → noun (-e → -ment)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0605
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The young detective showed remarkable _____ during the investigation. (PATIENT)'
+    sentenceZh: '年轻的侦探在调查中表现出了非凡的 _____。(PATIENT)'
+    baseWord: 'patient'
+    answer: 'patience'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "remarkable". Change the adjective "patient" to the noun "patience" (-ent → -ence).'
+    explanationZh: 'remarkable 后面需要名词。将形容词 patient 变为名词 patience（-ent → -ence）。'
+    grammarPoint: 'adjective → noun (-ent → -ence)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0606
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The spy had years of _____ in secret missions. (EXPERIENCE)'
+    sentenceZh: '间谍有多年执行秘密任务的 _____。(EXPERIENCE)'
+    baseWord: 'experience'
+    answer: 'experience'
+    targetPartOfSpeech: noun
+    explanation: '"Experience" can be both a verb and a noun. Here we need the noun form after "years of".'
+    explanationZh: 'experience 既可以作动词也可以作名词。这里 years of 后面需要名词形式。'
+    grammarPoint: 'verb/noun (same form)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0607
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The _____ of the hidden treasure brought great joy to the explorers. (DISCOVER)'
+    sentenceZh: '隐藏宝藏的 _____ 给探险者们带来了巨大的喜悦。(DISCOVER)'
+    baseWord: 'discover'
+    answer: 'discovery'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "discover" to "discovery" by adding -y.'
+    explanationZh: 'The 后面需要名词。在 discover 后加 -y 构成名词 discovery。'
+    grammarPoint: 'verb → noun (+y)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0608
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'Inspector Fox demanded complete _____ from his team during the stakeout. (SILENT)'
+    sentenceZh: '狐狸督察在蹲守期间要求团队保持完全的 _____。(SILENT)'
+    baseWord: 'silent'
+    answer: 'silence'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "complete". Change "silent" to "silence" (-ent → -ence).'
+    explanationZh: 'complete 后面需要名词。将 silent 变为 silence（-ent → -ence）。'
+    grammarPoint: 'adjective → noun (-ent → -ence)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0609
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ of the old mansion made it a perfect hiding place. (DISTANT)'
+    sentenceZh: '那座老宅子的 _____ 使它成为了一个完美的藏身之处。(DISTANT)'
+    baseWord: 'distant'
+    answer: 'distance'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "distant" to "distance" (-ant → -ance).'
+    explanationZh: 'The 后面需要名词。将 distant 变为 distance（-ant → -ance）。'
+    grammarPoint: 'adjective → noun (-ant → -ance)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0610
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ of new clues gave the detective hope. (APPEAR)'
+    sentenceZh: '新线索的 _____ 给了侦探希望。(APPEAR)'
+    baseWord: 'appear'
+    answer: 'appearance'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ance to "appear" to form "appearance".'
+    explanationZh: 'The 后面需要名词。在 appear 后加 -ance 构成名词 appearance。'
+    grammarPoint: 'verb → noun (+ance)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  # ============================================================
+  # U0611-U0620: Noun suffix -ity, -ness (difficulty 2-3)
+  # ============================================================
+  - id: U0611
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The detective admired the _____ of the crime scene layout. (COMPLEX)'
+    sentenceZh: '侦探对犯罪现场布局的 _____ 感到惊讶。(COMPLEX)'
+    baseWord: 'complex'
+    answer: 'complexity'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "the". Add -ity to "complex" to form "complexity".'
+    explanationZh: 'the 后面需要名词。在 complex 后加 -ity 构成名词 complexity。'
+    grammarPoint: 'adjective → noun (+ity)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0612
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The _____ of each clue was carefully tested by the team. (SECURE)'
+    sentenceZh: '每条线索的 _____ 都被团队仔细验证。(SECURE)'
+    baseWord: 'secure'
+    answer: 'security'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "secure" to "security" (-e → -ity).'
+    explanationZh: 'The 后面需要名词。将 secure 变为 security（-e → -ity）。'
+    grammarPoint: 'adjective → noun (-e → -ity)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0613
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The young spy showed great _____ when she escaped from the trap. (CREATIVE)'
+    sentenceZh: '年轻的间谍在逃脱陷阱时展现了极大的 _____。(CREATIVE)'
+    baseWord: 'creative'
+    answer: 'creativity'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Change "creative" to "creativity" (-ive → -ivity).'
+    explanationZh: 'great 后面需要名词。将 creative 变为 creativity（-ive → -ivity）。'
+    grammarPoint: 'adjective → noun (-ive → -ivity)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0614
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'She solved the puzzle with great _____ and speed. (ACCURATE)'
+    sentenceZh: '她以极高的 _____ 和速度解开了谜题。(ACCURATE)'
+    baseWord: 'accurate'
+    answer: 'accuracy'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Change "accurate" to "accuracy" (-ate → -acy).'
+    explanationZh: 'great 后面需要名词。将 accurate 变为 accuracy（-ate → -acy）。'
+    grammarPoint: 'adjective → noun (-ate → -acy)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0615
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The _____ of the case surprised even the most experienced detectives. (SERIOUS)'
+    sentenceZh: '案件的 _____ 甚至让最有经验的侦探也感到惊讶。(SERIOUS)'
+    baseWord: 'serious'
+    answer: 'seriousness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ness to "serious" to form "seriousness".'
+    explanationZh: 'The 后面需要名词。在 serious 后加 -ness 构成名词 seriousness。'
+    grammarPoint: 'adjective → noun (+ness)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0616
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'There is a _____ that the thief will return tonight. (POSSIBLE)'
+    sentenceZh: '小偷今晚可能会回来，这有一定的 _____。(POSSIBLE)'
+    baseWord: 'possible'
+    answer: 'possibility'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "a". Change "possible" to "possibility" (-ble → -bility).'
+    explanationZh: 'a 后面需要名词。将 possible 变为 possibility（-ble → -bility）。'
+    grammarPoint: 'adjective → noun (-ble → -bility)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0617
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ of the locked room puzzled everyone. (CURIOUS)'
+    sentenceZh: '密室的 _____ 让所有人都百思不得其解。(CURIOUS)'
+    baseWord: 'curious'
+    answer: 'curiosity'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Change "curious" to "curiosity" (-ous → -osity).'
+    explanationZh: 'The 后面需要名词。将 curious 变为 curiosity（-ous → -osity）。'
+    grammarPoint: 'adjective → noun (-ous → -osity)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0618
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective was known for his _____ in asking questions. (DIRECT)'
+    sentenceZh: '这位侦探以提问时的 _____ 而闻名。(DIRECT)'
+    baseWord: 'direct'
+    answer: 'directness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "his". Add -ness to "direct" to form "directness".'
+    explanationZh: 'his 后面需要名词。在 direct 后加 -ness 构成名词 directness。'
+    grammarPoint: 'adjective → noun (+ness)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0619
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ of the suspect made the detective trust him less. (NERVOUS)'
+    sentenceZh: '嫌疑人的 _____ 让侦探更不信任他了。(NERVOUS)'
+    baseWord: 'nervous'
+    answer: 'nervousness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Add -ness to "nervous" to form "nervousness".'
+    explanationZh: 'The 后面需要名词。在 nervous 后加 -ness 构成名词 nervousness。'
+    grammarPoint: 'adjective → noun (+ness)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0620
+    type: word-formation
+    tags: [noun-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ to solve the mystery was the detective''s greatest quality. (ABLE)'
+    sentenceZh: '解开谜团的 _____ 是这位侦探最大的特质。(ABLE)'
+    baseWord: 'able'
+    answer: 'ability'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun subject. Change "able" to "ability" (-le → -lity).'
+    explanationZh: '这里需要一个名词作主语。将 able 变为 ability（-le → -lity）。'
+    grammarPoint: 'adjective → noun (-le → -lity)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  # ============================================================
+  # U0621-U0630: Adjective suffixes -ous, -ive, -al (difficulty 2-3)
+  # ============================================================
+  - id: U0621
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The escape route through the old tunnels was extremely _____. (DANGER)'
+    sentenceZh: '穿过旧隧道的逃跑路线极其 _____。(DANGER)'
+    baseWord: 'danger'
+    answer: 'dangerous'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "extremely". Add -ous to "danger" to form "dangerous".'
+    explanationZh: 'extremely 后面需要形容词。在 danger 后加 -ous 构成形容词 dangerous。'
+    grammarPoint: 'noun → adjective (+ous)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0622
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The thief''s plan was very _____ and no one could understand it at first. (MYSTERY)'
+    sentenceZh: '小偷的计划非常 _____，一开始没有人能理解。(MYSTERY)'
+    baseWord: 'mystery'
+    answer: 'mysterious'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "very". Change "mystery" to "mysterious" (-y → -ious).'
+    explanationZh: 'very 后面需要形容词。将 mystery 变为 mysterious（-y → -ious）。'
+    grammarPoint: 'noun → adjective (-y → -ious)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0623
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The detective found a _____ letter hidden in the secret drawer. (SUSPICION)'
+    sentenceZh: '侦探在暗格中发现了一封 _____ 的信。(SUSPICION)'
+    baseWord: 'suspicion'
+    answer: 'suspicious'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before the noun "letter". Change "suspicion" to "suspicious" (-ion → -ious).'
+    explanationZh: '名词 letter 前需要形容词。将 suspicion 变为 suspicious（-ion → -ious）。'
+    grammarPoint: 'noun → adjective (-ion → -ious)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0624
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The spy was very _____ and always came up with new ideas. (CREATE)'
+    sentenceZh: '间谍非常 _____，总能想出新点子。(CREATE)'
+    baseWord: 'create'
+    answer: 'creative'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "very". Change "create" to "creative" (-e → -ive).'
+    explanationZh: 'very 后面需要形容词。将 create 变为 creative（-e → -ive）。'
+    grammarPoint: 'verb → adjective (-e → -ive)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0625
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The witness gave a very _____ description of the suspect. (IMPRESS)'
+    sentenceZh: '目击者对嫌疑人做了一个非常 _____ 的描述。(IMPRESS)'
+    baseWord: 'impress'
+    answer: 'impressive'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "description". Add -ive to "impress" to form "impressive".'
+    explanationZh: '名词 description 前需要形容词。在 impress 后加 -ive 构成形容词 impressive。'
+    grammarPoint: 'verb → adjective (+ive)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0626
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The detective said the footprints were the most _____ piece of evidence. (VALUE)'
+    sentenceZh: '侦探说脚印是最 _____ 的一条证据。(VALUE)'
+    baseWord: 'value'
+    answer: 'valuable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "most". Change "value" to "valuable" (-e → -uable).'
+    explanationZh: 'most 后面需要形容词。将 value 变为 valuable（-e → -uable）。'
+    grammarPoint: 'noun → adjective (-e → -uable)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0627
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'Solving the case was a truly _____ moment for the team. (EMOTION)'
+    sentenceZh: '破案对团队来说是一个真正 _____ 的时刻。(EMOTION)'
+    baseWord: 'emotion'
+    answer: 'emotional'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "moment". Add -al to "emotion" to form "emotional".'
+    explanationZh: '名词 moment 前需要形容词。在 emotion 后加 -al 构成形容词 emotional。'
+    grammarPoint: 'noun → adjective (+al)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0628
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ evidence proved the suspect was at the crime scene. (PHYSICS)'
+    sentenceZh: '_____ 证据证明嫌疑人曾在犯罪现场。(PHYSICS)'
+    baseWord: 'physics'
+    answer: 'physical'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "evidence". Change "physics" to "physical" (-ics → -ical).'
+    explanationZh: '名词 evidence 前需要形容词。将 physics 变为 physical（-ics → -ical）。'
+    grammarPoint: 'noun → adjective (-ics → -ical)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0629
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective found a _____ connection between the two crimes. (LOGIC)'
+    sentenceZh: '侦探发现了两起案件之间的 _____ 联系。(LOGIC)'
+    baseWord: 'logic'
+    answer: 'logical'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "connection". Add -al to "logic" to form "logical".'
+    explanationZh: '名词 connection 前需要形容词。在 logic 后加 -al 构成形容词 logical。'
+    grammarPoint: 'noun → adjective (+al)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0630
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The magician performed an _____ trick that amazed the audience. (ASTONISH)'
+    sentenceZh: '魔术师表演了一个 _____ 的把戏，令观众惊叹不已。(ASTONISH)'
+    baseWord: 'astonish'
+    answer: 'astonishing'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "trick". Add -ing to "astonish" to form "astonishing" (present participle as adjective).'
+    explanationZh: '名词 trick 前需要形容词。在 astonish 后加 -ing 构成形容词 astonishing（现在分词作形容词）。'
+    grammarPoint: 'verb → adjective (+ing)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  # ============================================================
+  # U0631-U0640: Negative prefixes un-, in-/im-, dis-, mis- (difficulty 2-3)
+  # ============================================================
+  - id: U0631
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: detective
+    sentence: 'It was _____ to enter the building without a key. (POSSIBLE)'
+    sentenceZh: '没有钥匙 _____ 进入这栋大楼。(POSSIBLE)'
+    baseWord: 'possible'
+    answer: 'impossible'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Add the prefix im- to "possible" to form "impossible" (im- before p/b/m).'
+    explanationZh: '需要否定形容词。在 possible 前加前缀 im- 构成 impossible（p/b/m 前用 im-）。'
+    grammarPoint: 'adjective → negative adjective (im- + possible)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0632
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The detective thought the suspect''s story was completely _____. (BELIEVE)'
+    sentenceZh: '侦探认为嫌疑人的故事完全是 _____ 的。(BELIEVE)'
+    baseWord: 'believe'
+    answer: 'unbelievable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Form "believable" first (+able), then add un- to make "unbelievable".'
+    explanationZh: '需要否定形容词。先构成 believable（+able），再加 un- 构成 unbelievable。'
+    grammarPoint: 'verb → negative adjective (un- + verb + -able)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0633
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The suspect _____ with every statement the detective made. (AGREE)'
+    sentenceZh: '嫌疑人对侦探的每一句话都表示 _____。(AGREE)'
+    baseWord: 'agree'
+    answer: 'disagreed'
+    targetPartOfSpeech: verb
+    explanation: 'We need a past tense verb. Add the prefix dis- to "agree" and use past tense: "disagreed".'
+    explanationZh: '需要过去时动词。在 agree 前加前缀 dis- 并用过去时：disagreed。'
+    grammarPoint: 'verb → negative verb (dis- + agree + -d)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0634
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The clue was _____ to the untrained eye. (VISIBLE)'
+    sentenceZh: '这条线索对未受训练的眼睛来说是 _____ 的。(VISIBLE)'
+    baseWord: 'visible'
+    answer: 'invisible'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Add the prefix in- to "visible" to form "invisible".'
+    explanationZh: '需要否定形容词。在 visible 前加前缀 in- 构成 invisible。'
+    grammarPoint: 'adjective → negative adjective (in- + visible)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0635
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-2]
+    context: detective
+    sentence: 'The witness _____ the detective and gave incorrect information. (LEAD)'
+    sentenceZh: '目击者 _____ 了侦探，提供了错误的信息。(LEAD)'
+    baseWord: 'lead'
+    answer: 'misled'
+    targetPartOfSpeech: verb
+    explanation: 'We need a past tense verb meaning "led wrongly". Add mis- to "lead" and use past tense: "misled".'
+    explanationZh: '需要表示"错误引导"的过去时动词。在 lead 前加 mis-，过去式为 misled。'
+    grammarPoint: 'verb → negative verb (mis- + lead → misled)'
+    relatedQuest: Q01
+    difficulty: 2
+
+  - id: U0636
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective was _____ with the team''s slow progress. (SATISFY)'
+    sentenceZh: '侦探对团队缓慢的进展感到 _____。(SATISFY)'
+    baseWord: 'satisfy'
+    answer: 'dissatisfied'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Form "satisfied" first, then add dis- to make "dissatisfied".'
+    explanationZh: '需要否定形容词。先构成 satisfied，再加 dis- 构成 dissatisfied。'
+    grammarPoint: 'verb → negative adjective (dis- + satisfied)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0637
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ message on the wall confused every detective. (CODE)'
+    sentenceZh: '墙上 _____ 的信息让每位侦探都困惑不解。(CODE)'
+    baseWord: 'code'
+    answer: 'uncoded'
+    targetPartOfSpeech: adjective
+    explanation: 'Actually, we need "coded" (adjective from verb) to describe the message. "The coded message" means a message written in code.'
+    explanationZh: '实际上我们需要 coded（由动词变来的形容词）来描述信息。coded message 表示用密码写的信息。'
+    grammarPoint: 'noun → adjective (code → coded)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0638
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The criminal was very _____ and had no manners at all. (POLITE)'
+    sentenceZh: '这个罪犯非常 _____，一点礼貌都没有。(POLITE)'
+    baseWord: 'polite'
+    answer: 'impolite'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Add the prefix im- to "polite" to form "impolite" (im- before p).'
+    explanationZh: '需要否定形容词。在 polite 前加前缀 im- 构成 impolite（p 前用 im-）。'
+    grammarPoint: 'adjective → negative adjective (im- + polite)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0639
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ between the two witnesses'' stories made the detective suspicious. (AGREE)'
+    sentenceZh: '两位目击者证词之间的 _____ 引起了侦探的怀疑。(AGREE)'
+    baseWord: 'agree'
+    answer: 'disagreement'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The". Form "agreement" (+ment), then add dis- to make "disagreement".'
+    explanationZh: '需要名词。先构成 agreement（+ment），再加 dis- 构成 disagreement。'
+    grammarPoint: 'verb → negative noun (dis- + agree + -ment)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0640
+    type: word-formation
+    tags: [negative-prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The young detective was _____ about touching the evidence without gloves. (CARE)'
+    sentenceZh: '年轻的侦探在没戴手套的情况下碰了证据，这太 _____ 了。(CARE)'
+    baseWord: 'care'
+    answer: 'careless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective. Add -less to "care" to form "careless" (meaning without care).'
+    explanationZh: '需要形容词。在 care 后加 -less 构成 careless（表示没有注意的）。'
+    grammarPoint: 'noun → adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  # ============================================================
+  # U0641-U0650: Mixed affixes: over-/under-, re-, -ful/-less (difficulty 3)
+  # ============================================================
+  - id: U0641
+    type: word-formation
+    tags: [prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective _____ the importance of the tiny footprint at first. (LOOK)'
+    sentenceZh: '侦探一开始 _____ 了那个小脚印的重要性。(LOOK)'
+    baseWord: 'look'
+    answer: 'overlooked'
+    targetPartOfSpeech: verb
+    explanation: 'We need a past tense verb meaning "failed to notice". Add over- to "look" to form "overlook", past tense "overlooked".'
+    explanationZh: '需要表示"忽略"的过去时动词。在 look 前加 over- 构成 overlook，过去式 overlooked。'
+    grammarPoint: 'verb → verb (over- + look)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0642
+    type: word-formation
+    tags: [prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The police _____ the number of suspects — there were actually more. (ESTIMATE)'
+    sentenceZh: '警方 _____ 了嫌疑人的数量——实际上还有更多。(ESTIMATE)'
+    baseWord: 'estimate'
+    answer: 'underestimated'
+    targetPartOfSpeech: verb
+    explanation: 'We need a past tense verb meaning "estimated too low". Add under- to "estimate": "underestimated".'
+    explanationZh: '需要表示"低估"的过去时动词。在 estimate 前加 under-：underestimated。'
+    grammarPoint: 'verb → verb (under- + estimate)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0643
+    type: word-formation
+    tags: [prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective decided to _____ the crime scene after finding new clues. (VISIT)'
+    sentenceZh: '侦探在发现新线索后决定 _____ 犯罪现场。(VISIT)'
+    baseWord: 'visit'
+    answer: 'revisit'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb meaning "visit again". Add re- to "visit" to form "revisit".'
+    explanationZh: '需要表示"再次访问"的动词。在 visit 前加 re- 构成 revisit。'
+    grammarPoint: 'verb → verb (re- + visit)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0644
+    type: word-formation
+    tags: [prefix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The team had to _____ the entire investigation from the beginning. (START)'
+    sentenceZh: '团队不得不从头 _____ 整个调查。(START)'
+    baseWord: 'start'
+    answer: 'restart'
+    targetPartOfSpeech: verb
+    explanation: 'We need a verb meaning "start again". Add re- to "start" to form "restart".'
+    explanationZh: '需要表示"重新开始"的动词。在 start 前加 re- 构成 restart。'
+    grammarPoint: 'verb → verb (re- + start)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0645
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective was always _____ and never missed a single detail. (CARE)'
+    sentenceZh: '侦探总是很 _____，从不遗漏任何细节。(CARE)'
+    baseWord: 'care'
+    answer: 'careful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "full of care". Add -ful to "care" to form "careful".'
+    explanationZh: '需要表示"小心的"的形容词。在 care 后加 -ful 构成 careful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0646
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'The old map was _____ because it showed the location of the treasure. (USE)'
+    sentenceZh: '那张旧地图很 _____，因为它显示了宝藏的位置。(USE)'
+    baseWord: 'use'
+    answer: 'useful'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "full of use". Add -ful to "use" to form "useful".'
+    explanationZh: '需要表示"有用的"的形容词。在 use 后加 -ful 构成 useful。'
+    grammarPoint: 'noun → adjective (+ful)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0647
+    type: word-formation
+    tags: [adjective-suffix, Q01, difficulty-3]
+    context: detective
+    sentence: 'Without her magnifying glass, the detective felt quite _____. (HELP)'
+    sentenceZh: '没有了放大镜，侦探觉得很 _____。(HELP)'
+    baseWord: 'help'
+    answer: 'helpless'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "without help". Add -less to "help" to form "helpless".'
+    explanationZh: '需要表示"无助的"的形容词。在 help 后加 -less 构成 helpless。'
+    grammarPoint: 'noun → adjective (+less)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0648
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: detective
+    sentence: 'The _____ criminal escaped through a window while the police watched the door. (NOTICE)'
+    sentenceZh: '_____ 的罪犯趁警察看门时从窗户逃走了。(NOTICE)'
+    baseWord: 'notice'
+    answer: 'unnoticed'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective meaning "not noticed". Form "noticed" (past participle), then add un-: "unnoticed".'
+    explanationZh: '需要表示"未被注意到的"的形容词。先构成 noticed（过去分词），再加 un-：unnoticed。'
+    grammarPoint: 'verb → negative adjective (un- + noticed)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0649
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: detective
+    sentence: 'The detective showed great _____ in catching the clever thief. (RESOURCE)'
+    sentenceZh: '侦探在抓捕聪明的小偷时展现了极大的 _____。(RESOURCE)'
+    baseWord: 'resource'
+    answer: 'resourcefulness'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great". Form "resourceful" (+ful), then add -ness: "resourcefulness".'
+    explanationZh: 'great 后面需要名词。先构成 resourceful（+ful），再加 -ness：resourcefulness。'
+    grammarPoint: 'noun → adjective → noun (+ful + -ness)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  - id: U0650
+    type: word-formation
+    tags: [mixed, Q01, difficulty-3]
+    context: detective
+    sentence: 'The witness was _____ to identify the suspect from the photograph. (ABLE)'
+    sentenceZh: '目击者 _____ 从照片中认出嫌疑人。(ABLE)'
+    baseWord: 'able'
+    answer: 'unable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need a negative adjective. Add un- to "able" to form "unable".'
+    explanationZh: '需要否定形容词。在 able 前加 un- 构成 unable。'
+    grammarPoint: 'adjective → negative adjective (un- + able)'
+    relatedQuest: Q01
+    difficulty: 3
+
+  # ============================================================
+  # U0651-U0700: Key Word Transformation (difficulty 2-3)
+  # Aligned with Q04 preview: passive, reported speech,
+  # so...that / too...to, comparatives, conditionals
+  # ============================================================
+
+  # --- Active ↔ Passive (U0651-U0660) ---
+  - id: U0651
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      Someone stole the diamond from the museum last night.
+      STOLEN → The diamond _____ from the museum last night.
+    sentenceZh: |
+      有人昨晚从博物馆偷了钻石。
+      STOLEN → 钻石昨晚 _____ 。
+    answer: 'was stolen'
+    explanation: 'Active "Someone stole" becomes passive "was stolen". The subject changes from "someone" to "the diamond".'
+    explanationZh: '主动语态"有人偷了"变为被动语态"被偷了"。主语从"有人"变为"钻石"。'
+    grammarPoint: 'active → passive (past simple)'
+    grammarPointZh: '主动→被动（一般过去时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0652
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The detective is interviewing the suspect right now.
+      INTERVIEWED → The suspect _____ by the detective right now.
+    sentenceZh: |
+      侦探正在审问嫌疑人。
+      INTERVIEWED → 嫌疑人现在正 _____ 。
+    answer: 'is being interviewed'
+    explanation: 'Active present continuous "is interviewing" becomes passive "is being interviewed".'
+    explanationZh: '主动现在进行时"正在审问"变为被动"正在被审问"。'
+    grammarPoint: 'active → passive (present continuous)'
+    grammarPointZh: '主动→被动（现在进行时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0653
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The police will arrest the thief soon.
+      ARRESTED → The thief _____ by the police soon.
+    sentenceZh: |
+      警察很快会逮捕小偷。
+      ARRESTED → 小偷很快会 _____ 。
+    answer: 'will be arrested'
+    explanation: 'Active future "will arrest" becomes passive "will be arrested".'
+    explanationZh: '主动将来时"将逮捕"变为被动"将被逮捕"。'
+    grammarPoint: 'active → passive (future simple)'
+    grammarPointZh: '主动→被动（一般将来时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0654
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      They have found the missing painting in an old warehouse.
+      FOUND → The missing painting _____ in an old warehouse.
+    sentenceZh: |
+      他们在一个旧仓库里找到了那幅丢失的画。
+      FOUND → 那幅丢失的画 _____ 。
+    answer: 'has been found'
+    explanation: 'Active present perfect "have found" becomes passive "has been found" (singular subject "painting").'
+    explanationZh: '主动现在完成时"已经找到"变为被动"已经被找到"（单数主语 painting 用 has）。'
+    grammarPoint: 'active → passive (present perfect)'
+    grammarPointZh: '主动→被动（现在完成时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0655
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      People saw a stranger near the bank before the robbery.
+      SEEN → A stranger _____ near the bank before the robbery.
+    sentenceZh: |
+      抢劫发生前，人们看到一个陌生人在银行附近。
+      SEEN → 一个陌生人在抢劫前 _____ 。
+    answer: 'was seen'
+    explanation: 'Active "People saw" becomes passive "was seen". The agent "people" is dropped as it is general.'
+    explanationZh: '主动"人们看见了"变为被动"被看见了"。施动者"人们"因为泛指可以省略。'
+    grammarPoint: 'active → passive (past simple, agent dropped)'
+    grammarPointZh: '主动→被动（一般过去时，省略施动者）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0656
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The detective must examine the evidence carefully.
+      EXAMINED → The evidence _____ carefully by the detective.
+    sentenceZh: |
+      侦探必须仔细检查证据。
+      EXAMINED → 证据必须 _____ 。
+    answer: 'must be examined'
+    explanation: 'Active "must examine" becomes passive "must be examined". Modal + be + past participle.'
+    explanationZh: '主动"必须检查"变为被动"必须被检查"。情态动词 + be + 过去分词。'
+    grammarPoint: 'active → passive (modal verb)'
+    grammarPointZh: '主动→被动（情态动词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0657
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      Nobody can open this safe without the secret code.
+      OPENED → This safe _____ without the secret code.
+    sentenceZh: |
+      没有密码谁也打不开这个保险箱。
+      OPENED → 没有密码，这个保险箱 _____ 。
+    answer: 'cannot be opened'
+    explanation: 'Active "Nobody can open" becomes passive "cannot be opened". The negative transfers to the modal.'
+    explanationZh: '主动"谁也不能打开"变为被动"不能被打开"。否定意义转移到情态动词。'
+    grammarPoint: 'active → passive (negative modal)'
+    grammarPointZh: '主动→被动（否定情态动词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0658
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      A famous detective wrote this book about crime solving.
+      WRITTEN → This book about crime solving _____ a famous detective.
+    sentenceZh: |
+      一位著名侦探写了这本关于破案的书。
+      WRITTEN → 这本关于破案的书 _____ 。
+    answer: 'was written by'
+    explanation: 'Active "A famous detective wrote" becomes passive "was written by a famous detective".'
+    explanationZh: '主动"一位著名侦探写了"变为被动"由一位著名侦探所写"。'
+    grammarPoint: 'active → passive (with agent)'
+    grammarPointZh: '主动→被动（保留施动者）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0659
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      They should lock all the doors before midnight.
+      LOCKED → All the doors _____ before midnight.
+    sentenceZh: |
+      他们应该在午夜前锁好所有的门。
+      LOCKED → 所有的门应该在午夜前 _____ 。
+    answer: 'should be locked'
+    explanation: 'Active "should lock" becomes passive "should be locked". Modal + be + past participle.'
+    explanationZh: '主动"应该锁好"变为被动"应该被锁好"。情态动词 + be + 过去分词。'
+    grammarPoint: 'active → passive (modal: should)'
+    grammarPointZh: '主动→被动（情态动词：should）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0660
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The police are going to question all the neighbours tomorrow.
+      QUESTIONED → All the neighbours _____ by the police tomorrow.
+    sentenceZh: |
+      警察明天将盘问所有邻居。
+      QUESTIONED → 所有邻居明天将 _____ 。
+    answer: 'are going to be questioned'
+    explanation: 'Active "are going to question" becomes passive "are going to be questioned".'
+    explanationZh: '主动"将盘问"变为被动"将被盘问"。be going to + be + 过去分词。'
+    grammarPoint: 'active → passive (be going to)'
+    grammarPointZh: '主动→被动（be going to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # --- Direct ↔ Reported Speech (U0661-U0670) ---
+  - id: U0661
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      "I found a clue in the garden," said the detective.
+      TOLD → The detective _____ found a clue in the garden.
+    sentenceZh: |
+      "我在花园里发现了一条线索，"侦探说。
+      TOLD → 侦探 _____ 在花园里发现了一条线索。
+    answer: 'told us he had'
+    explanation: 'Direct speech "I found" becomes reported speech "he had found". Use "told" + object + clause.'
+    explanationZh: '直接引语"我发现了"变为间接引语"他已经发现了"。用 told + 宾语 + 从句。'
+    grammarPoint: 'direct → reported speech (past simple → past perfect)'
+    grammarPointZh: '直接引语→间接引语（一般过去时→过去完成时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0662
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      "I am watching the suspect," the spy said.
+      SAID → The spy _____ watching the suspect.
+    sentenceZh: |
+      "我正在监视嫌疑人，"间谍说。
+      SAID → 间谍说她 _____ 。
+    answer: 'said she was'
+    explanation: 'Direct "I am watching" becomes reported "she was watching". Present continuous → past continuous.'
+    explanationZh: '直接引语"我正在监视"变为间接引语"她正在监视"。现在进行时→过去进行时。'
+    grammarPoint: 'direct → reported speech (present continuous → past continuous)'
+    grammarPointZh: '直接引语→间接引语（现在进行时→过去进行时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0663
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      "We will catch the thief," the police officer promised.
+      PROMISED → The police officer _____ catch the thief.
+    sentenceZh: |
+      "我们会抓住小偷的，"警官承诺道。
+      PROMISED → 警官承诺他们 _____ 。
+    answer: 'promised they would'
+    explanation: 'Direct "will catch" becomes reported "would catch". "We" changes to "they".'
+    explanationZh: '直接引语"会抓住"变为间接引语"将会抓住"。we 变为 they，will 变为 would。'
+    grammarPoint: 'direct → reported speech (will → would)'
+    grammarPointZh: '直接引语→间接引语（will → would）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0664
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      "Don''t touch the evidence!" the detective shouted.
+      TOLD → The detective _____ touch the evidence.
+    sentenceZh: |
+      "不要碰证据！"侦探喊道。
+      TOLD → 侦探告诉我们 _____ 。
+    answer: 'told us not to'
+    explanation: 'Direct negative imperative "Don''t touch" becomes reported "told us not to touch".'
+    explanationZh: '直接引语否定祈使句"不要碰"变为间接引语"告诉我们不要碰"。'
+    grammarPoint: 'direct → reported speech (negative imperative)'
+    grammarPointZh: '直接引语→间接引语（否定祈使句）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0665
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      "Have you seen anything unusual?" the officer asked.
+      ASKED → The officer _____ seen anything unusual.
+    sentenceZh: |
+      "你看到什么不寻常的事了吗？"警官问道。
+      ASKED → 警官问我是否 _____ 。
+    answer: 'asked me if I had'
+    explanation: 'Direct yes/no question "Have you seen" becomes reported "asked if I had seen".'
+    explanationZh: '直接引语一般疑问句"你看到了吗"变为间接引语"问我是否看到了"。'
+    grammarPoint: 'direct → reported speech (yes/no question → if/whether)'
+    grammarPointZh: '直接引语→间接引语（一般疑问句→if/whether）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0666
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "Where did you hide the jewels?" the detective asked the thief.
+      ASKED → The detective _____ hidden the jewels.
+    sentenceZh: |
+      "你把珠宝藏在哪里了？"侦探问小偷。
+      ASKED → 侦探问小偷把珠宝 _____ 。
+    answer: 'asked the thief where he had'
+    explanation: 'Direct wh-question "Where did you hide" becomes reported "asked where he had hidden".'
+    explanationZh: '直接引语特殊疑问句"你藏在哪里"变为间接引语"问他把...藏在哪里"。'
+    grammarPoint: 'direct → reported speech (wh-question)'
+    grammarPointZh: '直接引语→间接引语（特殊疑问句）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0667
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "I can solve this mystery," the girl detective said confidently.
+      SAID → The girl detective _____ solve that mystery.
+    sentenceZh: |
+      "我能解开这个谜团，"女孩侦探自信地说。
+      SAID → 女孩侦探说她 _____ 。
+    answer: 'said she could'
+    explanation: 'Direct "I can solve" becomes reported "she could solve". "Can" → "could", "this" → "that".'
+    explanationZh: '直接引语"我能解开"变为间接引语"她能解开"。can → could，this → that。'
+    grammarPoint: 'direct → reported speech (can → could)'
+    grammarPointZh: '直接引语→间接引语（can → could）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0668
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "You must stay inside the house," the inspector ordered.
+      TOLD → The inspector _____ stay inside the house.
+    sentenceZh: |
+      "你们必须待在屋子里，"督察命令道。
+      TOLD → 督察告诉他们 _____ 。
+    answer: 'told them to'
+    explanation: 'Direct "You must stay" as an order becomes reported "told them to stay".'
+    explanationZh: '直接引语命令"你们必须待在"变为间接引语"告诉他们待在"。'
+    grammarPoint: 'direct → reported speech (imperative/must → told to)'
+    grammarPointZh: '直接引语→间接引语（祈使句/must → told to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0669
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "I didn''t steal the necklace," the man insisted.
+      DENIED → The man _____ the necklace.
+    sentenceZh: |
+      "我没有偷项链，"那个男人坚持说。
+      DENIED → 那个男人否认 _____ 。
+    answer: 'denied stealing'
+    explanation: '"I didn''t steal" reported with "denied" takes the -ing form: "denied stealing".'
+    explanationZh: '"我没有偷"用 denied 转述时，后面接动名词：denied stealing。'
+    grammarPoint: 'direct → reported speech (deny + -ing)'
+    grammarPointZh: '直接引语→间接引语（deny + 动名词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0670
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "Let''s search the basement together," suggested the detective.
+      SUGGESTED → The detective _____ the basement together.
+    sentenceZh: |
+      "我们一起去搜查地下室吧，"侦探建议道。
+      SUGGESTED → 侦探建议 _____ 。
+    answer: 'suggested searching'
+    explanation: '"Let''s search" reported with "suggested" takes the -ing form: "suggested searching".'
+    explanationZh: '"我们一起搜查吧"用 suggested 转述时，后面接动名词：suggested searching。'
+    grammarPoint: 'direct → reported speech (suggest + -ing)'
+    grammarPointZh: '直接引语→间接引语（suggest + 动名词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # --- so...that ↔ too...to / enough...to (U0671-U0680) ---
+  - id: U0671
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The clue was so small that nobody could see it.
+      TOO → The clue was _____ see.
+    sentenceZh: |
+      线索太小了，没有人能看到。
+      TOO → 这条线索 _____ 。
+    answer: 'too small to'
+    explanation: '"So small that nobody could see" = "too small to see". "Too + adj + to" means the same as "so + adj + that... not".'
+    explanationZh: '"太小了以至于没人能看到" = "太小而无法看到"。too + 形容词 + to 与 so + 形容词 + that...not 意思相同。'
+    grammarPoint: 'so...that → too...to'
+    grammarPointZh: 'so...that → too...to'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0672
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The code was too difficult to crack.
+      SO → The code was _____ nobody could crack it.
+    sentenceZh: |
+      密码太难了，破解不了。
+      SO → 密码 _____ 没人能破解。
+    answer: 'so difficult that'
+    explanation: '"Too difficult to crack" = "so difficult that nobody could crack it".'
+    explanationZh: '"太难以至于破解不了" = "如此难以至于没人能破解"。'
+    grammarPoint: 'too...to → so...that'
+    grammarPointZh: 'too...to → so...that'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0673
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The detective was so tired that she could not continue the search.
+      TOO → The detective was _____ continue the search.
+    sentenceZh: |
+      侦探太累了，无法继续搜索。
+      TOO → 侦探 _____ 继续搜索。
+    answer: 'too tired to'
+    explanation: '"So tired that she could not continue" = "too tired to continue".'
+    explanationZh: '"太累了以至于无法继续" = "太累而无法继续"。'
+    grammarPoint: 'so...that → too...to'
+    grammarPointZh: 'so...that → too...to'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0674
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The tunnel was too dark for us to explore.
+      SO → The tunnel was _____ we could not explore it.
+    sentenceZh: |
+      隧道太暗了，我们无法探索。
+      SO → 隧道 _____ 我们无法探索。
+    answer: 'so dark that'
+    explanation: '"Too dark for us to explore" = "so dark that we could not explore it".'
+    explanationZh: '"太暗以至于我们无法探索" = "如此暗以至于我们无法探索"。'
+    grammarPoint: 'too...to → so...that'
+    grammarPointZh: 'too...to → so...that'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0675
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The ladder was long enough to reach the window.
+      SO → The ladder was not _____ it could not reach the window.
+    sentenceZh: |
+      梯子足够长，可以够到窗户。
+      SO → 梯子并非 _____ 够不到窗户。
+    answer: 'so short that'
+    explanation: '"Long enough to reach" = "not so short that it could not reach". The meaning is reversed with the negative.'
+    explanationZh: '"足够长以至于能够到" = "并非那么短以至于够不到"。用否定句反转了含义。'
+    grammarPoint: 'enough...to → not so...that'
+    grammarPointZh: 'enough...to → not so...that'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0676
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The spy ran so fast that the police could not catch her.
+      TOO → The spy ran _____ catch.
+    sentenceZh: |
+      间谍跑得太快了，警察追不上她。
+      TOO → 间谍跑得 _____ 追上。
+    answer: 'too fast for the police to'
+    explanation: '"So fast that the police could not catch" = "too fast for the police to catch". Use "for + person + to" when the subjects differ.'
+    explanationZh: '"跑得太快以至于警察追不上" = "对于警察来说太快了追不上"。当主语不同时用 for + 人 + to。'
+    grammarPoint: 'so...that → too...for...to'
+    grammarPointZh: 'so...that → too...for...to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0677
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The box was too heavy for the child to lift.
+      ENOUGH → The child was not _____ the box.
+    sentenceZh: |
+      箱子太重了，孩子提不动。
+      ENOUGH → 孩子不够 _____ 。
+    answer: 'strong enough to lift'
+    explanation: '"Too heavy for the child to lift" = "The child was not strong enough to lift". Enough follows the adjective.'
+    explanationZh: '"箱子对孩子来说太重了" = "孩子不够强壮去提"。enough 放在形容词后面。'
+    grammarPoint: 'too...to → not + adj + enough to'
+    grammarPointZh: 'too...to → not + 形容词 + enough to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0678
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The detective was clever enough to solve the puzzle in minutes.
+      SO → The detective was _____ solved the puzzle in minutes.
+    sentenceZh: |
+      侦探足够聪明，几分钟就解开了谜题。
+      SO → 侦探 _____ 几分钟就解开了谜题。
+    answer: 'so clever that she'
+    explanation: '"Clever enough to solve" = "so clever that she solved".'
+    explanationZh: '"足够聪明去解开" = "如此聪明以至于她解开了"。'
+    grammarPoint: 'enough...to → so...that'
+    grammarPointZh: 'enough...to → so...that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0679
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The noise was so loud that we could hear it from across the street.
+      ENOUGH → The noise was loud _____ from across the street.
+    sentenceZh: |
+      噪音太大了，我们在街对面都能听到。
+      ENOUGH → 噪音足够大 _____ 。
+    answer: 'enough for us to hear'
+    explanation: '"So loud that we could hear" = "loud enough for us to hear". Enough follows the adjective.'
+    explanationZh: '"大到我们都能听到" = "足够大以至于我们能听到"。enough 放在形容词后面。'
+    grammarPoint: 'so...that → adj + enough for...to'
+    grammarPointZh: 'so...that → 形容词 + enough for...to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0680
+    type: key-word-transformation
+    tags: [so-that-too-to, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The message was written in ink that was too faint to read.
+      SO → The ink was _____ nobody could read the message.
+    sentenceZh: |
+      那条信息用太淡的墨水写的，读不清。
+      SO → 墨水 _____ 没有人能读清信息。
+    answer: 'so faint that'
+    explanation: '"Too faint to read" = "so faint that nobody could read".'
+    explanationZh: '"太淡以至于读不清" = "如此淡以至于没人能读清"。'
+    grammarPoint: 'too...to → so...that'
+    grammarPointZh: 'too...to → so...that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # --- Comparatives and Superlatives (U0681-U0690) ---
+  - id: U0681
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      No other detective in the city is as clever as Inspector Fox.
+      CLEVEREST → Inspector Fox is _____ in the city.
+    sentenceZh: |
+      城里没有其他侦探像狐狸督察那么聪明。
+      CLEVEREST → 狐狸督察是城里 _____ 。
+    answer: 'the cleverest detective'
+    explanation: '"No other... as clever as X" = "X is the cleverest". Negative comparison → superlative.'
+    explanationZh: '"没有其他...像X那么聪明" = "X是最聪明的"。否定比较→最高级。'
+    grammarPoint: 'no other...as...as → superlative'
+    grammarPointZh: 'no other...as...as → 最高级'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0682
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      This mystery is more difficult than the last one.
+      AS → The last mystery was not _____ this one.
+    sentenceZh: |
+      这个谜团比上一个更难。
+      AS → 上一个谜团没有 _____ 。
+    answer: 'as difficult as'
+    explanation: '"X is more difficult than Y" = "Y is not as difficult as X".'
+    explanationZh: '"X比Y更难" = "Y不如X难"。'
+    grammarPoint: 'comparative → not as...as'
+    grammarPointZh: '比较级→ not as...as'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0683
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The new detective is the best in the whole department.
+      BETTER → No other detective in the department is _____ the new one.
+    sentenceZh: |
+      新来的侦探是整个部门最棒的。
+      BETTER → 部门里没有其他侦探比新来的 _____ 。
+    answer: 'better than'
+    explanation: '"X is the best" = "No other... is better than X". Superlative → comparative with "no other".'
+    explanationZh: '"X是最好的" = "没有其他...比X更好"。最高级→比较级 + no other。'
+    grammarPoint: 'superlative → no other...comparative'
+    grammarPointZh: '最高级→ no other + 比较级'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0684
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      Solving puzzles is not as easy as it looks.
+      HARDER → Solving puzzles is _____ it looks.
+    sentenceZh: |
+      解谜没有看起来那么容易。
+      HARDER → 解谜比看起来 _____ 。
+    answer: 'harder than'
+    explanation: '"Not as easy as" = "harder than". Reverse the adjective and use comparative.'
+    explanationZh: '"没有那么容易" = "更难"。反转形容词并使用比较级。'
+    grammarPoint: 'not as...as → comparative'
+    grammarPointZh: 'not as...as → 比较级'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0685
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      This is the most exciting case I have ever worked on.
+      NEVER → I have _____ exciting case than this one.
+    sentenceZh: |
+      这是我办过的最激动人心的案子。
+      NEVER → 我从未办过比这更 _____ 。
+    answer: 'never worked on a more'
+    explanation: '"The most exciting... I have ever" = "I have never... a more exciting... than this".'
+    explanationZh: '"我办过的最激动人心的" = "我从未办过比这更激动人心的"。'
+    grammarPoint: 'superlative + ever → never + comparative'
+    grammarPointZh: '最高级 + ever → never + 比较级'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0686
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The older the detective gets, the wiser she becomes.
+      MORE → As the detective gets older, she becomes _____.
+    sentenceZh: |
+      侦探越老越有智慧。
+      MORE → 随着侦探变老，她变得 _____ 。
+    answer: 'more and more wise'
+    explanation: '"The older..., the wiser..." can be expressed as "As... older, ... more and more wise" to show increasing degree.'
+    explanationZh: '"越老越有智慧"可以表达为"随着变老，越来越有智慧"，表示程度递增。'
+    grammarPoint: 'the + comparative, the + comparative → as..., more and more'
+    grammarPointZh: 'the + 比较级, the + 比较级 → as..., more and more'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0687
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      Detective Panda is less experienced than Detective Fox.
+      AS → Detective Panda is not _____ Detective Fox.
+    sentenceZh: |
+      熊猫侦探不如狐狸侦探有经验。
+      AS → 熊猫侦探不 _____ 。
+    answer: 'as experienced as'
+    explanation: '"Less experienced than" = "not as experienced as".'
+    explanationZh: '"不如...有经验" = "没有...那么有经验"。'
+    grammarPoint: 'less...than → not as...as'
+    grammarPointZh: 'less...than → not as...as'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0688
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      No case has ever been as strange as this one.
+      STRANGEST → This is _____ has ever been.
+    sentenceZh: |
+      从来没有案件像这个这么奇怪。
+      STRANGEST → 这是有史以来 _____ 。
+    answer: 'the strangest case that'
+    explanation: '"No case has ever been as strange as this" = "This is the strangest case that has ever been".'
+    explanationZh: '"从未有案件这么奇怪" = "这是有史以来最奇怪的案件"。'
+    grammarPoint: 'no...as...as → superlative + ever'
+    grammarPointZh: 'no...as...as → 最高级 + ever'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0689
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The suspect ran faster than anyone else on the team.
+      FASTEST → The suspect was _____ on the team.
+    sentenceZh: |
+      嫌疑人跑得比队里任何人都快。
+      FASTEST → 嫌疑人是队里跑得 _____ 。
+    answer: 'the fastest runner'
+    explanation: '"Faster than anyone else" = "the fastest runner". Comparative + anyone else → superlative.'
+    explanationZh: '"比任何人都快" = "跑得最快的人"。比较级 + anyone else → 最高级。'
+    grammarPoint: 'comparative + anyone else → superlative'
+    grammarPointZh: '比较级 + anyone else → 最高级'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0690
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      I have never met a braver person than this young detective.
+      BRAVEST → This young detective is _____ I have ever met.
+    sentenceZh: |
+      我从未见过比这位年轻侦探更勇敢的人。
+      BRAVEST → 这位年轻侦探是我见过的 _____ 。
+    answer: 'the bravest person'
+    explanation: '"Never met a braver person than X" = "X is the bravest person I have ever met".'
+    explanationZh: '"从未见过比X更勇敢的人" = "X是我见过的最勇敢的人"。'
+    grammarPoint: 'never + comparative → superlative + ever'
+    grammarPointZh: 'never + 比较级 → 最高级 + ever'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # --- Conditionals and Mixed Transformations (U0691-U0700) ---
+  - id: U0691
+    type: key-word-transformation
+    tags: [conditional, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      If you study the clues carefully, you will solve the mystery.
+      UNLESS → You will not solve the mystery _____ the clues carefully.
+    sentenceZh: |
+      如果你仔细研究线索，你就会解开谜团。
+      UNLESS → 除非你 _____ ，否则你解不开谜团。
+    answer: 'unless you study'
+    explanation: '"If you study" = "unless you don''t study" = "you won''t... unless you study".'
+    explanationZh: '"如果你研究" = "除非你不研究" = "除非你研究...否则你不会"。'
+    grammarPoint: 'if → unless'
+    grammarPointZh: 'if → unless'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0692
+    type: key-word-transformation
+    tags: [conditional, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The detective did not have a torch, so she could not see in the cave.
+      HAD → If the detective _____ been able to see in the cave.
+    sentenceZh: |
+      侦探没有手电筒，所以在洞里看不见。
+      HAD → 如果侦探 _____ 就能在洞里看见了。
+    answer: 'had had a torch, she would have'
+    explanation: 'Past unreal condition: "If + had + past participle, would have + past participle" (third conditional).'
+    explanationZh: '过去虚拟条件：if + had + 过去分词, would have + 过去分词（第三条件句）。'
+    grammarPoint: 'past fact → third conditional'
+    grammarPointZh: '过去事实→第三条件句'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0693
+    type: key-word-transformation
+    tags: [conditional, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      I did not arrive earlier, so I missed the suspect leaving.
+      WISH → I _____ earlier so I could have seen the suspect leaving.
+    sentenceZh: |
+      我没有早点到，所以错过了嫌疑人离开。
+      WISH → 我希望我 _____ 这样就能看到嫌疑人离开了。
+    answer: 'wish I had arrived'
+    explanation: '"I wish + past perfect" expresses regret about a past event that did not happen.'
+    explanationZh: '"I wish + 过去完成时"表示对过去没有发生的事的遗憾。'
+    grammarPoint: 'past regret → wish + past perfect'
+    grammarPointZh: '过去遗憾→ wish + 过去完成时'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0694
+    type: key-word-transformation
+    tags: [conditional, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      Without your help, we would never have caught the thief.
+      IF → We would never have caught the thief _____ us.
+    sentenceZh: |
+      没有你的帮助，我们永远也抓不到小偷。
+      IF → 如果你没有 _____ 我们永远也抓不到小偷。
+    answer: 'if you had not helped'
+    explanation: '"Without your help" = "if you had not helped". Preposition phrase → third conditional.'
+    explanationZh: '"没有你的帮助" = "如果你没有帮助"。介词短语→第三条件句。'
+    grammarPoint: 'without → if + past perfect negative'
+    grammarPointZh: 'without → if + 过去完成时否定'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0695
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The detective started the investigation two hours ago.
+      BEEN → The detective _____ for two hours.
+    sentenceZh: |
+      侦探两小时前开始了调查。
+      BEEN → 侦探 _____ 两个小时了。
+    answer: 'has been investigating'
+    explanation: '"Started two hours ago" (past simple + ago) = "has been investigating for two hours" (present perfect continuous + for).'
+    explanationZh: '"两小时前开始了"（一般过去时 + ago）= "已经调查了两小时"（现在完成进行时 + for）。'
+    grammarPoint: 'past simple + ago → present perfect continuous + for'
+    grammarPointZh: '一般过去时 + ago → 现在完成进行时 + for'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0696
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-2]
+    context: detective
+    sentence: |
+      The last time I solved a case this tricky was in 2024.
+      SINCE → I have not solved a case this tricky _____ 2024.
+    sentenceZh: |
+      我上一次解决这么棘手的案子是在2024年。
+      SINCE → 自从2024年以来，我 _____ 。
+    answer: 'since'
+    explanation: '"The last time... was in 2024" = "have not... since 2024". Converts past reference to present perfect negative.'
+    explanationZh: '"上一次...是2024年" = "自2024年以来没有..."。将过去时间点转换为现在完成时否定。'
+    grammarPoint: 'the last time → present perfect + since'
+    grammarPointZh: 'the last time → 现在完成时 + since'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0697
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      "It might be a good idea to check the attic," said the detective.
+      SUGGESTED → The detective _____ the attic.
+    sentenceZh: |
+      "检查阁楼也许是个好主意，"侦探说。
+      SUGGESTED → 侦探建议 _____ 。
+    answer: 'suggested checking'
+    explanation: '"It might be a good idea to check" → "suggested checking". Use suggest + -ing form.'
+    explanationZh: '"检查也许是个好主意" → "建议检查"。suggest 后接动名词。'
+    grammarPoint: 'suggestion → suggest + -ing'
+    grammarPointZh: '建议→ suggest + 动名词'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0698
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      Although the detective was young, she solved the hardest cases.
+      DESPITE → _____ young, the detective solved the hardest cases.
+    sentenceZh: |
+      尽管侦探很年轻，她还是解决了最难的案件。
+      DESPITE → _____ 侦探还是解决了最难的案件。
+    answer: 'Despite being'
+    explanation: '"Although + subject + verb" can be replaced by "Despite + -ing". "Although she was young" = "Despite being young".'
+    explanationZh: '"尽管 + 主语 + 动词"可以用"Despite + 动名词"替换。"尽管她很年轻" = "尽管年轻"。'
+    grammarPoint: 'although → despite + -ing'
+    grammarPointZh: 'although → despite + 动名词'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0699
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The detective prefers working alone to working with a partner.
+      RATHER → The detective would _____ with a partner.
+    sentenceZh: |
+      侦探更喜欢独自工作而不是和搭档一起工作。
+      RATHER → 侦探宁愿 _____ 。
+    answer: 'rather work alone than'
+    explanation: '"Prefers X to Y" = "would rather X than Y". Note: "would rather" + bare infinitive.'
+    explanationZh: '"更喜欢X而不是Y" = "宁愿X而不是Y"。注意：would rather 后接动词原形。'
+    grammarPoint: 'prefer...to → would rather...than'
+    grammarPointZh: 'prefer...to → would rather...than'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0700
+    type: key-word-transformation
+    tags: [mixed, Q04, difficulty-3]
+    context: detective
+    sentence: |
+      The detective solved the mystery. Everyone was amazed.
+      SUCH → It was _____ everyone was amazed.
+    sentenceZh: |
+      侦探解开了谜团。所有人都惊呆了。
+      SUCH → 这是 _____ 所有人都惊呆了。
+    answer: 'such a brilliant solution that'
+    explanation: '"Such + a/an + adj + noun + that" links the two sentences. "Such a brilliant solution that everyone was amazed".'
+    explanationZh: '"such + a/an + 形容词 + 名词 + that"连接两个句子。"如此出色的解答以至于所有人都惊呆了"。'
+    grammarPoint: 'two sentences → such...that'
+    grammarPointZh: '两个句子→ such...that'
+    relatedQuest: Q04
+    difficulty: 3

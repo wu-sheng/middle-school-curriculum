@@ -1,0 +1,3515 @@
+# Topic 03: Detective & Mystery (Month 3)
+# V0301-V0450 — B1-B2 level vocabulary
+# Detective club theme: mystery, investigation, reasoning, academic connectors
+
+topic: "Detective & Mystery"
+topicZh: "侦探与推理"
+vocab:
+  # ============================================
+  # D061: V0301-V0305 — Core Detective Words
+  # ============================================
+
+  - id: V0301
+    word: investigate
+    phonetic: '/ɪnˈvestɪɡeɪt/'
+    partOfSpeech: verb
+    definition: 'To examine something carefully to discover the truth'
+    definitionZh: '调查，研究'
+    exampleSentence: 'The young detective decided to investigate the mysterious footprints in the garden.'
+    exampleSentenceZh: '年轻的侦探决定调查花园里那些神秘的脚印。'
+    wordFamily:
+      - form: investigation
+        partOfSpeech: noun
+      - form: investigator
+        partOfSpeech: noun
+      - form: investigative
+        partOfSpeech: adjective
+    collocations:
+      - 'investigate a crime'
+      - 'investigate the cause'
+    synonyms: [examine, explore, look into]
+    antonyms: [ignore, overlook]
+    level: 2
+    firstAppear: D061
+    reviewSchedule: [D062, D064, D068, D075, D091]
+
+  - id: V0302
+    word: evidence
+    phonetic: '/ˈevɪdəns/'
+    partOfSpeech: noun
+    definition: 'Facts or signs that show something is true'
+    definitionZh: '证据，证明'
+    exampleSentence: 'The broken window and muddy footprints were important evidence in the case.'
+    exampleSentenceZh: '破碎的窗户和泥泞的脚印是此案的重要证据。'
+    wordFamily:
+      - form: evident
+        partOfSpeech: adjective
+      - form: evidently
+        partOfSpeech: adverb
+    collocations:
+      - 'gather evidence'
+      - 'strong evidence'
+      - 'evidence of something'
+    synonyms: [proof, clue, indication]
+    antonyms: [disproof]
+    level: 2
+    firstAppear: D061
+    reviewSchedule: [D062, D064, D068, D075, D091]
+
+  - id: V0303
+    word: suspect
+    phonetic: '/səˈspekt/'
+    partOfSpeech: verb
+    definition: 'To believe that something is probably true, especially something bad'
+    definitionZh: '怀疑，猜想'
+    exampleSentence: 'I suspect that the librarian knows more about the missing book than she is saying.'
+    exampleSentenceZh: '我怀疑图书管理员对丢失的书知道的比她说的要多。'
+    wordFamily:
+      - form: suspect
+        partOfSpeech: noun
+      - form: suspicion
+        partOfSpeech: noun
+      - form: suspicious
+        partOfSpeech: adjective
+    collocations:
+      - 'suspect someone of something'
+      - 'the main suspect'
+      - 'prime suspect'
+    synonyms: [doubt, distrust, surmise]
+    antonyms: [trust, believe]
+    level: 2
+    firstAppear: D061
+    reviewSchedule: [D062, D064, D068, D075, D091]
+
+  - id: V0304
+    word: witness
+    phonetic: '/ˈwɪtnəs/'
+    partOfSpeech: noun
+    definition: 'A person who sees an event happen, especially a crime'
+    definitionZh: '目击者，证人'
+    exampleSentence: 'The only witness to the theft was a cat sitting on the windowsill.'
+    exampleSentenceZh: '这起偷窃案的唯一目击者是一只坐在窗台上的猫。'
+    wordFamily:
+      - form: witness
+        partOfSpeech: verb
+      - form: eyewitness
+        partOfSpeech: noun
+    collocations:
+      - 'key witness'
+      - 'witness a crime'
+      - 'call a witness'
+    synonyms: [observer, bystander, spectator]
+    antonyms: [participant]
+    level: 2
+    firstAppear: D061
+    reviewSchedule: [D062, D064, D068, D075, D091]
+
+  - id: V0305
+    word: mysterious
+    phonetic: '/mɪˈstɪəriəs/'
+    partOfSpeech: adjective
+    definition: 'Strange and not known about or understood'
+    definitionZh: '神秘的，不可思议的'
+    exampleSentence: 'A mysterious letter appeared on the doorstep with no name on it.'
+    exampleSentenceZh: '门口出现了一封没有署名的神秘信件。'
+    wordFamily:
+      - form: mystery
+        partOfSpeech: noun
+      - form: mysteriously
+        partOfSpeech: adverb
+    collocations:
+      - 'mysterious disappearance'
+      - 'mysterious stranger'
+      - 'in a mysterious way'
+    synonyms: [puzzling, strange, enigmatic]
+    antonyms: [obvious, clear, straightforward]
+    level: 2
+    firstAppear: D061
+    reviewSchedule: [D062, D064, D068, D075, D091]
+
+  # ============================================
+  # D062: V0306-V0310 — Crime & Justice
+  # ============================================
+
+  - id: V0306
+    word: clue
+    phonetic: '/kluː/'
+    partOfSpeech: noun
+    definition: 'A piece of information that helps you find the answer to a problem'
+    definitionZh: '线索，提示'
+    exampleSentence: 'The detective found an important clue hidden inside the old clock.'
+    exampleSentenceZh: '侦探在老钟里面发现了一条重要的线索。'
+    wordFamily:
+      - form: clueless
+        partOfSpeech: adjective
+    collocations:
+      - 'vital clue'
+      - 'find a clue'
+      - 'follow the clues'
+    synonyms: [hint, lead, trace]
+    antonyms: [dead end]
+    level: 2
+    firstAppear: D062
+    reviewSchedule: [D063, D065, D069, D076, D092]
+
+  - id: V0307
+    word: guilty
+    phonetic: '/ˈɡɪlti/'
+    partOfSpeech: adjective
+    definition: 'Having done something wrong or illegal'
+    definitionZh: '有罪的，内疚的'
+    exampleSentence: 'The boy looked guilty when his mother asked about the missing cookies.'
+    exampleSentenceZh: '当妈妈问起消失的饼干时，男孩看起来很心虚。'
+    wordFamily:
+      - form: guilt
+        partOfSpeech: noun
+      - form: guiltily
+        partOfSpeech: adverb
+    collocations:
+      - 'feel guilty'
+      - 'guilty of a crime'
+      - 'a guilty look'
+    synonyms: [responsible, culpable, at fault]
+    antonyms: [innocent, blameless]
+    level: 2
+    firstAppear: D062
+    reviewSchedule: [D063, D065, D069, D076, D092]
+
+  - id: V0308
+    word: innocent
+    phonetic: '/ˈɪnəsnt/'
+    partOfSpeech: adjective
+    definition: 'Not guilty of a crime; having done nothing wrong'
+    definitionZh: '无辜的，清白的'
+    exampleSentence: 'The detective proved that the kind old man was completely innocent.'
+    exampleSentenceZh: '侦探证明了那位善良的老人是完全无辜的。'
+    wordFamily:
+      - form: innocence
+        partOfSpeech: noun
+      - form: innocently
+        partOfSpeech: adverb
+    collocations:
+      - 'prove someone innocent'
+      - 'an innocent person'
+      - 'innocent until proven guilty'
+    synonyms: [blameless, guiltless, not guilty]
+    antonyms: [guilty, culpable]
+    level: 2
+    firstAppear: D062
+    reviewSchedule: [D063, D065, D069, D076, D092]
+
+  - id: V0309
+    word: victim
+    phonetic: '/ˈvɪktɪm/'
+    partOfSpeech: noun
+    definition: 'A person who has been hurt or suffered because of a crime or event'
+    definitionZh: '受害者，牺牲者'
+    exampleSentence: 'The victim of the prank was actually laughing about it the next day.'
+    exampleSentenceZh: '这个恶作剧的受害者第二天居然笑着谈论此事。'
+    wordFamily:
+      - form: victimise
+        partOfSpeech: verb
+      - form: victimisation
+        partOfSpeech: noun
+    collocations:
+      - 'victim of a crime'
+      - 'fall victim to'
+      - 'innocent victim'
+    synonyms: [sufferer, casualty, target]
+    antonyms: [perpetrator, offender]
+    level: 2
+    firstAppear: D062
+    reviewSchedule: [D063, D065, D069, D076, D092]
+
+  - id: V0310
+    word: criminal
+    phonetic: '/ˈkrɪmɪnl/'
+    partOfSpeech: noun
+    definition: 'A person who has committed a crime'
+    definitionZh: '罪犯，犯罪者'
+    exampleSentence: 'The clever criminal had left no fingerprints at the scene.'
+    exampleSentenceZh: '这个狡猾的罪犯在现场没有留下任何指纹。'
+    wordFamily:
+      - form: crime
+        partOfSpeech: noun
+      - form: criminal
+        partOfSpeech: adjective
+      - form: criminally
+        partOfSpeech: adverb
+    collocations:
+      - 'dangerous criminal'
+      - 'criminal activity'
+      - 'criminal investigation'
+    synonyms: [offender, lawbreaker, culprit]
+    antonyms: [law-abider, citizen]
+    level: 2
+    firstAppear: D062
+    reviewSchedule: [D063, D065, D069, D076, D092]
+
+  # ============================================
+  # D063: V0311-V0315 — Observation & Perception
+  # ============================================
+
+  - id: V0311
+    word: observe
+    phonetic: '/əbˈzɜːv/'
+    partOfSpeech: verb
+    definition: 'To watch something carefully, especially to learn more about it'
+    definitionZh: '观察，注意到'
+    exampleSentence: 'Sherlock asked Watson to observe the mud on the visitor shoes carefully.'
+    exampleSentenceZh: '夏洛克让华生仔细观察来访者鞋子上的泥土。'
+    wordFamily:
+      - form: observation
+        partOfSpeech: noun
+      - form: observer
+        partOfSpeech: noun
+      - form: observant
+        partOfSpeech: adjective
+    collocations:
+      - 'observe closely'
+      - 'observe behaviour'
+      - 'keen observation'
+    synonyms: [watch, notice, examine]
+    antonyms: [ignore, overlook, miss]
+    level: 2
+    firstAppear: D063
+    reviewSchedule: [D064, D066, D070, D077, D093]
+
+  - id: V0312
+    word: examine
+    phonetic: '/ɪɡˈzæmɪn/'
+    partOfSpeech: verb
+    definition: 'To look at something very carefully in order to learn about it'
+    definitionZh: '检查，审视'
+    exampleSentence: 'The detective examined the lock with a magnifying glass.'
+    exampleSentenceZh: '侦探用放大镜检查了那把锁。'
+    wordFamily:
+      - form: examination
+        partOfSpeech: noun
+      - form: examiner
+        partOfSpeech: noun
+    collocations:
+      - 'examine carefully'
+      - 'examine the evidence'
+      - 'examine closely'
+    synonyms: [inspect, study, scrutinise]
+    antonyms: [glance, skim, ignore]
+    level: 2
+    firstAppear: D063
+    reviewSchedule: [D064, D066, D070, D077, D093]
+
+  - id: V0313
+    word: recognise
+    phonetic: '/ˈrekəɡnaɪz/'
+    partOfSpeech: verb
+    definition: 'To know who someone is or what something is because you have seen them before'
+    definitionZh: '认出，识别'
+    exampleSentence: 'She recognised the handwriting on the secret note as her best friend writing.'
+    exampleSentenceZh: '她认出秘密纸条上的笔迹是她最好朋友的。'
+    wordFamily:
+      - form: recognition
+        partOfSpeech: noun
+      - form: recognisable
+        partOfSpeech: adjective
+      - form: unrecognisable
+        partOfSpeech: adjective
+    collocations:
+      - 'recognise someone'
+      - 'instantly recognise'
+      - 'widely recognised'
+    synonyms: [identify, know, recall]
+    antonyms: [forget, overlook]
+    level: 2
+    firstAppear: D063
+    reviewSchedule: [D064, D066, D070, D077, D093]
+
+  - id: V0314
+    word: identify
+    phonetic: '/aɪˈdentɪfaɪ/'
+    partOfSpeech: verb
+    definition: 'To discover or recognise who or what someone or something is'
+    definitionZh: '辨认，确定'
+    exampleSentence: 'The detective was able to identify the thief from a tiny paint stain on his jacket.'
+    exampleSentenceZh: '侦探从小偷夹克上的一小块油漆污渍辨认出了他。'
+    wordFamily:
+      - form: identification
+        partOfSpeech: noun
+      - form: identity
+        partOfSpeech: noun
+      - form: identifiable
+        partOfSpeech: adjective
+    collocations:
+      - 'identify the problem'
+      - 'identify a suspect'
+      - 'identify with someone'
+    synonyms: [recognise, determine, pinpoint]
+    antonyms: [confuse, mistake]
+    level: 2
+    firstAppear: D063
+    reviewSchedule: [D064, D066, D070, D077, D093]
+
+  - id: V0315
+    word: notice
+    phonetic: '/ˈnəʊtɪs/'
+    partOfSpeech: verb
+    definition: 'To see or become aware of something'
+    definitionZh: '注意到，留意到'
+    exampleSentence: 'Did you notice that the painting on the wall had been moved slightly?'
+    exampleSentenceZh: '你注意到墙上的画被微微移动过了吗？'
+    wordFamily:
+      - form: notice
+        partOfSpeech: noun
+      - form: noticeable
+        partOfSpeech: adjective
+      - form: noticeably
+        partOfSpeech: adverb
+    collocations:
+      - 'notice a change'
+      - 'notice something unusual'
+      - 'hard to notice'
+    synonyms: [spot, detect, perceive]
+    antonyms: [miss, overlook, ignore]
+    level: 2
+    firstAppear: D063
+    reviewSchedule: [D064, D066, D070, D077, D093]
+
+  # ============================================
+  # D064: V0316-V0320 — Reasoning & Thinking
+  # ============================================
+
+  - id: V0316
+    word: deduce
+    phonetic: '/dɪˈdjuːs/'
+    partOfSpeech: verb
+    definition: 'To reach a conclusion by thinking carefully about the facts you know'
+    definitionZh: '推断，演绎'
+    exampleSentence: 'From the wet umbrella in the hall, she deduced that someone had arrived during the rain.'
+    exampleSentenceZh: '从大厅里的湿雨伞，她推断出有人是在下雨时到达的。'
+    wordFamily:
+      - form: deduction
+        partOfSpeech: noun
+      - form: deductive
+        partOfSpeech: adjective
+    collocations:
+      - 'deduce from the evidence'
+      - 'deduce the truth'
+      - 'logical deduction'
+    synonyms: [conclude, infer, reason]
+    antonyms: [guess, assume]
+    level: 3
+    firstAppear: D064
+    reviewSchedule: [D065, D067, D071, D078, D094]
+
+  - id: V0317
+    word: conclude
+    phonetic: '/kənˈkluːd/'
+    partOfSpeech: verb
+    definition: 'To decide that something is true after thinking about all the information'
+    definitionZh: '得出结论，断定'
+    exampleSentence: 'After reading all the diary entries, the detective concluded that the butler was lying.'
+    exampleSentenceZh: '读完所有日记条目后，侦探断定管家在撒谎。'
+    wordFamily:
+      - form: conclusion
+        partOfSpeech: noun
+      - form: conclusive
+        partOfSpeech: adjective
+      - form: conclusively
+        partOfSpeech: adverb
+    collocations:
+      - 'conclude that'
+      - 'reach a conclusion'
+      - 'in conclusion'
+    synonyms: [determine, decide, judge]
+    antonyms: [begin, start]
+    level: 2
+    firstAppear: D064
+    reviewSchedule: [D065, D067, D071, D078, D094]
+
+  - id: V0318
+    word: assume
+    phonetic: '/əˈsjuːm/'
+    partOfSpeech: verb
+    definition: 'To believe something is true without having proof'
+    definitionZh: '假设，认为'
+    exampleSentence: 'Never assume someone is guilty just because they look nervous.'
+    exampleSentenceZh: '永远不要仅仅因为某人看起来紧张就假设他有罪。'
+    wordFamily:
+      - form: assumption
+        partOfSpeech: noun
+      - form: assumed
+        partOfSpeech: adjective
+    collocations:
+      - 'assume the worst'
+      - 'wrongly assume'
+      - 'safe to assume'
+    synonyms: [presume, suppose, believe]
+    antonyms: [prove, know, verify]
+    level: 2
+    firstAppear: D064
+    reviewSchedule: [D065, D067, D071, D078, D094]
+
+  - id: V0319
+    word: predict
+    phonetic: '/prɪˈdɪkt/'
+    partOfSpeech: verb
+    definition: 'To say what you think will happen in the future'
+    definitionZh: '预测，预言'
+    exampleSentence: 'Based on the pattern, the detective predicted where the thief would strike next.'
+    exampleSentenceZh: '根据规律，侦探预测了小偷下一次会在哪里作案。'
+    wordFamily:
+      - form: prediction
+        partOfSpeech: noun
+      - form: predictable
+        partOfSpeech: adjective
+      - form: unpredictable
+        partOfSpeech: adjective
+    collocations:
+      - 'predict the outcome'
+      - 'difficult to predict'
+      - 'accurately predict'
+    synonyms: [forecast, foresee, anticipate]
+    antonyms: [recall, remember]
+    level: 2
+    firstAppear: D064
+    reviewSchedule: [D065, D067, D071, D078, D094]
+
+  - id: V0320
+    word: infer
+    phonetic: '/ɪnˈfɜː/'
+    partOfSpeech: verb
+    definition: 'To form an opinion based on information you already have'
+    definitionZh: '推断，推理'
+    exampleSentence: 'From the scratches on the door handle, we can infer that someone tried to break in.'
+    exampleSentenceZh: '从门把手上的划痕，我们可以推断有人试图闯入。'
+    wordFamily:
+      - form: inference
+        partOfSpeech: noun
+    collocations:
+      - 'infer from something'
+      - 'reasonably infer'
+      - 'draw an inference'
+    synonyms: [deduce, conclude, gather]
+    antonyms: [state, declare]
+    level: 3
+    firstAppear: D064
+    reviewSchedule: [D065, D067, D071, D078, D094]
+
+  # ============================================
+  # D065: V0321-V0325 — Hiding & Revealing
+  # ============================================
+
+  - id: V0321
+    word: reveal
+    phonetic: '/rɪˈviːl/'
+    partOfSpeech: verb
+    definition: 'To make something known that was previously hidden or secret'
+    definitionZh: '揭示，透露'
+    exampleSentence: 'The detective revealed the true identity of the masked stranger at the party.'
+    exampleSentenceZh: '侦探在派对上揭示了那个蒙面陌生人的真实身份。'
+    wordFamily:
+      - form: revelation
+        partOfSpeech: noun
+      - form: revealing
+        partOfSpeech: adjective
+    collocations:
+      - 'reveal the truth'
+      - 'reveal a secret'
+      - 'reveal information'
+    synonyms: [uncover, disclose, expose]
+    antonyms: [conceal, hide, cover up]
+    level: 2
+    firstAppear: D065
+    reviewSchedule: [D066, D068, D072, D079, D095]
+
+  - id: V0322
+    word: conceal
+    phonetic: '/kənˈsiːl/'
+    partOfSpeech: verb
+    definition: 'To hide something carefully so that others cannot find or see it'
+    definitionZh: '隐藏，隐瞒'
+    exampleSentence: 'The spy concealed the secret message inside a hollow book.'
+    exampleSentenceZh: '间谍把秘密信息藏在一本中空的书里。'
+    wordFamily:
+      - form: concealment
+        partOfSpeech: noun
+      - form: concealed
+        partOfSpeech: adjective
+    collocations:
+      - 'conceal the truth'
+      - 'conceal a weapon'
+      - 'carefully concealed'
+    synonyms: [hide, disguise, cover]
+    antonyms: [reveal, expose, show]
+    level: 3
+    firstAppear: D065
+    reviewSchedule: [D066, D068, D072, D079, D095]
+
+  - id: V0323
+    word: disguise
+    phonetic: '/dɪsˈɡaɪz/'
+    partOfSpeech: noun
+    definition: 'Something you wear or do to change your appearance so people do not recognise you'
+    definitionZh: '伪装，化装'
+    exampleSentence: 'The thief wore a clever disguise — a wig, glasses, and a fake moustache.'
+    exampleSentenceZh: '小偷戴了巧妙的伪装——假发、眼镜和假胡子。'
+    wordFamily:
+      - form: disguise
+        partOfSpeech: verb
+      - form: disguised
+        partOfSpeech: adjective
+    collocations:
+      - 'wear a disguise'
+      - 'in disguise'
+      - 'a perfect disguise'
+    synonyms: [costume, mask, camouflage]
+    antonyms: [exposure, revelation]
+    level: 2
+    firstAppear: D065
+    reviewSchedule: [D066, D068, D072, D079, D095]
+
+  - id: V0324
+    word: suspicious
+    phonetic: '/səˈspɪʃəs/'
+    partOfSpeech: adjective
+    definition: 'Making you feel that something is wrong or that someone is doing something bad'
+    definitionZh: '可疑的，令人怀疑的'
+    exampleSentence: 'The detective thought it was suspicious that the neighbour had three new suitcases.'
+    exampleSentenceZh: '侦探觉得邻居有三个新行李箱很可疑。'
+    wordFamily:
+      - form: suspicion
+        partOfSpeech: noun
+      - form: suspiciously
+        partOfSpeech: adverb
+    collocations:
+      - 'look suspicious'
+      - 'suspicious behaviour'
+      - 'become suspicious'
+    synonyms: [doubtful, questionable, dubious]
+    antonyms: [trustworthy, unsuspicious]
+    level: 2
+    firstAppear: D065
+    reviewSchedule: [D066, D068, D072, D079, D095]
+
+  - id: V0325
+    word: motive
+    phonetic: '/ˈməʊtɪv/'
+    partOfSpeech: noun
+    definition: 'The reason why someone does something, especially something bad'
+    definitionZh: '动机，目的'
+    exampleSentence: 'The detective asked, "What was the motive? Why would anyone steal a painting of a cat?"'
+    exampleSentenceZh: '侦探问道："动机是什么？为什么有人要偷一幅猫的画？"'
+    wordFamily:
+      - form: motivate
+        partOfSpeech: verb
+      - form: motivation
+        partOfSpeech: noun
+      - form: motivated
+        partOfSpeech: adjective
+    collocations:
+      - 'the motive for'
+      - 'hidden motive'
+      - 'ulterior motive'
+    synonyms: [reason, cause, purpose]
+    antonyms: [result, consequence]
+    level: 3
+    firstAppear: D065
+    reviewSchedule: [D066, D068, D072, D079, D095]
+
+  # ============================================
+  # D066: V0326-V0330 — Description & Appearance
+  # ============================================
+
+  - id: V0326
+    word: apparent
+    phonetic: '/əˈpærənt/'
+    partOfSpeech: adjective
+    definition: 'Easy to see or understand; clear'
+    definitionZh: '明显的，显而易见的'
+    exampleSentence: 'It was apparent from the broken vase that someone had been in the room.'
+    exampleSentenceZh: '从破碎的花瓶来看，显然有人进过这个房间。'
+    wordFamily:
+      - form: apparently
+        partOfSpeech: adverb
+    collocations:
+      - 'immediately apparent'
+      - 'become apparent'
+      - 'for no apparent reason'
+    synonyms: [obvious, evident, clear]
+    antonyms: [hidden, unclear, obscure]
+    level: 2
+    firstAppear: D066
+    reviewSchedule: [D067, D069, D073, D080, D096]
+
+  - id: V0327
+    word: obvious
+    phonetic: '/ˈɒbviəs/'
+    partOfSpeech: adjective
+    definition: 'Easy to see, understand, or recognise'
+    definitionZh: '明显的，显然的'
+    exampleSentence: 'The answer was so obvious that everyone missed it — the key was under the doormat!'
+    exampleSentenceZh: '答案太明显了，所有人都忽略了——钥匙就在门垫下面！'
+    wordFamily:
+      - form: obviously
+        partOfSpeech: adverb
+    collocations:
+      - 'the obvious answer'
+      - 'state the obvious'
+      - 'painfully obvious'
+    synonyms: [clear, evident, plain]
+    antonyms: [hidden, subtle, obscure]
+    level: 2
+    firstAppear: D066
+    reviewSchedule: [D067, D069, D073, D080, D096]
+
+  - id: V0328
+    word: subtle
+    phonetic: '/ˈsʌtl/'
+    partOfSpeech: adjective
+    definition: 'Not easy to notice or understand; small but important'
+    definitionZh: '微妙的，不易察觉的'
+    exampleSentence: 'There was a subtle difference between the two signatures that only an expert could spot.'
+    exampleSentenceZh: '两个签名之间有一个微妙的差异，只有专家才能发现。'
+    wordFamily:
+      - form: subtly
+        partOfSpeech: adverb
+      - form: subtlety
+        partOfSpeech: noun
+    collocations:
+      - 'subtle difference'
+      - 'subtle hint'
+      - 'subtle change'
+    synonyms: [slight, faint, delicate]
+    antonyms: [obvious, blatant, glaring]
+    level: 3
+    firstAppear: D066
+    reviewSchedule: [D067, D069, D073, D080, D096]
+
+  - id: V0329
+    word: significant
+    phonetic: '/sɪɡˈnɪfɪkənt/'
+    partOfSpeech: adjective
+    definition: 'Important or large enough to have an effect or be noticed'
+    definitionZh: '重要的，有意义的'
+    exampleSentence: 'Finding the torn ticket stub was a significant breakthrough in solving the mystery.'
+    exampleSentenceZh: '找到撕破的票根是破解谜案的一个重大突破。'
+    wordFamily:
+      - form: significance
+        partOfSpeech: noun
+      - form: significantly
+        partOfSpeech: adverb
+      - form: insignificant
+        partOfSpeech: adjective
+    collocations:
+      - 'significant discovery'
+      - 'significant amount'
+      - 'statistically significant'
+    synonyms: [important, major, notable]
+    antonyms: [insignificant, trivial, minor]
+    level: 2
+    firstAppear: D066
+    reviewSchedule: [D067, D069, D073, D080, D096]
+
+  - id: V0330
+    word: relevant
+    phonetic: '/ˈreləvənt/'
+    partOfSpeech: adjective
+    definition: 'Directly connected with what is being discussed or considered'
+    definitionZh: '相关的，有关联的'
+    exampleSentence: 'Only relevant information should be included in the detective report.'
+    exampleSentenceZh: '只有相关的信息才应该被包含在侦探报告中。'
+    wordFamily:
+      - form: relevance
+        partOfSpeech: noun
+      - form: irrelevant
+        partOfSpeech: adjective
+    collocations:
+      - 'relevant information'
+      - 'relevant to something'
+      - 'highly relevant'
+    synonyms: [related, applicable, pertinent]
+    antonyms: [irrelevant, unrelated]
+    level: 2
+    firstAppear: D066
+    reviewSchedule: [D067, D069, D073, D080, D096]
+
+  # ============================================
+  # D067: V0331-V0335 — Actions & Behaviour
+  # ============================================
+
+  - id: V0331
+    word: alibi
+    phonetic: '/ˈælɪbaɪ/'
+    partOfSpeech: noun
+    definition: 'Proof that you were in another place when a crime happened'
+    definitionZh: '不在场证明'
+    exampleSentence: 'The cook had a strong alibi — she was on stage performing in the school play.'
+    exampleSentenceZh: '厨师有充分的不在场证明——她当时正在台上表演校园剧。'
+    wordFamily: []
+    collocations:
+      - 'provide an alibi'
+      - 'a solid alibi'
+      - 'check someone alibi'
+    synonyms: [defence, excuse, justification]
+    antonyms: [accusation]
+    level: 3
+    firstAppear: D067
+    reviewSchedule: [D068, D070, D074, D081, D097]
+
+  - id: V0332
+    word: consequence
+    phonetic: '/ˈkɒnsɪkwəns/'
+    partOfSpeech: noun
+    definition: 'A result of something that has happened'
+    definitionZh: '后果，结果'
+    exampleSentence: 'As a consequence of leaving the window open, the parrot escaped from the room.'
+    exampleSentenceZh: '由于窗户没关，鹦鹉从房间里逃走了。'
+    wordFamily:
+      - form: consequent
+        partOfSpeech: adjective
+      - form: consequently
+        partOfSpeech: adverb
+    collocations:
+      - 'as a consequence'
+      - 'face the consequences'
+      - 'serious consequences'
+    synonyms: [result, outcome, effect]
+    antonyms: [cause, origin]
+    level: 2
+    firstAppear: D067
+    reviewSchedule: [D068, D070, D074, D081, D097]
+
+  - id: V0333
+    word: deliberately
+    phonetic: '/dɪˈlɪbərətli/'
+    partOfSpeech: adverb
+    definition: 'Done on purpose; intentionally'
+    definitionZh: '故意地，蓄意地'
+    exampleSentence: 'Someone had deliberately left the gate unlocked so the dog could get out.'
+    exampleSentenceZh: '有人故意没锁大门，好让狗跑出去。'
+    wordFamily:
+      - form: deliberate
+        partOfSpeech: adjective
+      - form: deliberation
+        partOfSpeech: noun
+    collocations:
+      - 'deliberately misleading'
+      - 'done deliberately'
+      - 'deliberately ignore'
+    synonyms: [intentionally, on purpose, knowingly]
+    antonyms: [accidentally, unintentionally]
+    level: 3
+    firstAppear: D067
+    reviewSchedule: [D068, D070, D074, D081, D097]
+
+  - id: V0334
+    word: accidentally
+    phonetic: '/ˌæksɪˈdentəli/'
+    partOfSpeech: adverb
+    definition: 'Happening without being planned or intended'
+    definitionZh: '意外地，偶然地'
+    exampleSentence: 'She accidentally knocked over the ink bottle, which revealed a hidden message on the desk.'
+    exampleSentenceZh: '她不小心打翻了墨水瓶，这意外地揭示了桌子上的一条隐藏信息。'
+    wordFamily:
+      - form: accident
+        partOfSpeech: noun
+      - form: accidental
+        partOfSpeech: adjective
+    collocations:
+      - 'accidentally discover'
+      - 'accidentally deleted'
+      - 'purely accidentally'
+    synonyms: [unintentionally, by chance, by mistake]
+    antonyms: [deliberately, intentionally, on purpose]
+    level: 2
+    firstAppear: D067
+    reviewSchedule: [D068, D070, D074, D081, D097]
+
+  - id: V0335
+    word: approach
+    phonetic: '/əˈprəʊtʃ/'
+    partOfSpeech: verb
+    definition: 'To come nearer to someone or something'
+    definitionZh: '接近，靠近'
+    exampleSentence: 'The detective approached the abandoned house slowly and quietly.'
+    exampleSentenceZh: '侦探缓慢而安静地接近了那座废弃的房子。'
+    wordFamily:
+      - form: approach
+        partOfSpeech: noun
+      - form: approachable
+        partOfSpeech: adjective
+    collocations:
+      - 'approach carefully'
+      - 'a new approach'
+      - 'approach the problem'
+    synonyms: [near, advance, come close]
+    antonyms: [retreat, withdraw, leave]
+    level: 2
+    firstAppear: D067
+    reviewSchedule: [D068, D070, D074, D081, D097]
+
+  # ============================================
+  # D068: V0336-V0340 — Communication & Telling
+  # ============================================
+
+  - id: V0336
+    word: imply
+    phonetic: '/ɪmˈplaɪ/'
+    partOfSpeech: verb
+    definition: 'To suggest something without saying it directly'
+    definitionZh: '暗示，意味着'
+    exampleSentence: 'The witness did not say she was scared, but her shaking hands implied it.'
+    exampleSentenceZh: '目击者没有说她害怕，但她颤抖的双手暗示了这一点。'
+    wordFamily:
+      - form: implication
+        partOfSpeech: noun
+      - form: implied
+        partOfSpeech: adjective
+    collocations:
+      - 'imply that'
+      - 'strongly imply'
+      - 'the implied meaning'
+    synonyms: [suggest, hint, indicate]
+    antonyms: [state, declare, express]
+    level: 3
+    firstAppear: D068
+    reviewSchedule: [D069, D071, D075, D082, D098]
+
+  - id: V0337
+    word: suggest
+    phonetic: '/səˈdʒest/'
+    partOfSpeech: verb
+    definition: 'To put forward an idea or plan for someone to think about'
+    definitionZh: '建议，暗示'
+    exampleSentence: 'The scratches on the window suggest that someone tried to climb through it.'
+    exampleSentenceZh: '窗户上的划痕暗示有人试图从那里爬进来。'
+    wordFamily:
+      - form: suggestion
+        partOfSpeech: noun
+      - form: suggestive
+        partOfSpeech: adjective
+    collocations:
+      - 'suggest a solution'
+      - 'strongly suggest'
+      - 'suggest that'
+    synonyms: [propose, recommend, indicate]
+    antonyms: [demand, insist]
+    level: 2
+    firstAppear: D068
+    reviewSchedule: [D069, D071, D075, D082, D098]
+
+  - id: V0338
+    word: indicate
+    phonetic: '/ˈɪndɪkeɪt/'
+    partOfSpeech: verb
+    definition: 'To show or point out something'
+    definitionZh: '表明，指示'
+    exampleSentence: 'The footprints in the snow indicated that two people had entered the building.'
+    exampleSentenceZh: '雪地上的脚印表明有两个人进入了大楼。'
+    wordFamily:
+      - form: indication
+        partOfSpeech: noun
+      - form: indicator
+        partOfSpeech: noun
+      - form: indicative
+        partOfSpeech: adjective
+    collocations:
+      - 'indicate that'
+      - 'clearly indicate'
+      - 'indicate a problem'
+    synonyms: [show, demonstrate, signal]
+    antonyms: [conceal, hide]
+    level: 2
+    firstAppear: D068
+    reviewSchedule: [D069, D071, D075, D082, D098]
+
+  - id: V0339
+    word: confirm
+    phonetic: '/kənˈfɜːm/'
+    partOfSpeech: verb
+    definition: 'To prove that something is true or correct'
+    definitionZh: '证实，确认'
+    exampleSentence: 'The security camera footage confirmed that the package was delivered at 3 pm.'
+    exampleSentenceZh: '监控录像证实包裹是在下午3点送达的。'
+    wordFamily:
+      - form: confirmation
+        partOfSpeech: noun
+      - form: confirmed
+        partOfSpeech: adjective
+    collocations:
+      - 'confirm a theory'
+      - 'confirm the details'
+      - 'officially confirm'
+    synonyms: [verify, prove, validate]
+    antonyms: [deny, contradict, disprove]
+    level: 2
+    firstAppear: D068
+    reviewSchedule: [D069, D071, D075, D082, D098]
+
+  - id: V0340
+    word: deny
+    phonetic: '/dɪˈnaɪ/'
+    partOfSpeech: verb
+    definition: 'To say that something is not true'
+    definitionZh: '否认，否定'
+    exampleSentence: 'The suspect denied being anywhere near the museum on that night.'
+    exampleSentenceZh: '嫌疑人否认那天晚上在博物馆附近出现过。'
+    wordFamily:
+      - form: denial
+        partOfSpeech: noun
+      - form: undeniable
+        partOfSpeech: adjective
+    collocations:
+      - 'deny the accusation'
+      - 'strongly deny'
+      - 'deny involvement'
+    synonyms: [reject, refuse, dispute]
+    antonyms: [confirm, admit, acknowledge]
+    level: 2
+    firstAppear: D068
+    reviewSchedule: [D069, D071, D075, D082, D098]
+
+  # ============================================
+  # D069: V0341-V0345 — Frequency & Manner
+  # ============================================
+
+  - id: V0341
+    word: frequently
+    phonetic: '/ˈfriːkwəntli/'
+    partOfSpeech: adverb
+    definition: 'Often; many times'
+    definitionZh: '频繁地，经常地'
+    exampleSentence: 'The detective frequently visited the old bookshop to search for hidden messages.'
+    exampleSentenceZh: '侦探经常光顾那家旧书店，寻找隐藏的信息。'
+    wordFamily:
+      - form: frequent
+        partOfSpeech: adjective
+      - form: frequency
+        partOfSpeech: noun
+    collocations:
+      - 'frequently asked'
+      - 'occur frequently'
+      - 'most frequently'
+    synonyms: [often, regularly, repeatedly]
+    antonyms: [rarely, seldom, infrequently]
+    level: 2
+    firstAppear: D069
+    reviewSchedule: [D070, D072, D076, D083, D099]
+
+  - id: V0342
+    word: occasionally
+    phonetic: '/əˈkeɪʒənəli/'
+    partOfSpeech: adverb
+    definition: 'Sometimes but not often'
+    definitionZh: '偶尔，有时'
+    exampleSentence: 'Occasionally, the old detective would share his most exciting stories with the children.'
+    exampleSentenceZh: '老侦探偶尔会和孩子们分享他最激动人心的故事。'
+    wordFamily:
+      - form: occasion
+        partOfSpeech: noun
+      - form: occasional
+        partOfSpeech: adjective
+    collocations:
+      - 'only occasionally'
+      - 'occasionally visit'
+      - 'occasionally seen'
+    synonyms: [sometimes, now and then, from time to time]
+    antonyms: [frequently, constantly, always]
+    level: 2
+    firstAppear: D069
+    reviewSchedule: [D070, D072, D076, D083, D099]
+
+  - id: V0343
+    word: precisely
+    phonetic: '/prɪˈsaɪsli/'
+    partOfSpeech: adverb
+    definition: 'Exactly and accurately'
+    definitionZh: '精确地，恰好'
+    exampleSentence: 'The clock stopped at precisely 11:47 pm, the exact time of the power cut.'
+    exampleSentenceZh: '时钟恰好在晚上11:47停止了，正是停电的确切时间。'
+    wordFamily:
+      - form: precise
+        partOfSpeech: adjective
+      - form: precision
+        partOfSpeech: noun
+    collocations:
+      - 'precisely at'
+      - 'more precisely'
+      - 'precisely because'
+    synonyms: [exactly, accurately, specifically]
+    antonyms: [roughly, approximately, vaguely]
+    level: 3
+    firstAppear: D069
+    reviewSchedule: [D070, D072, D076, D083, D099]
+
+  - id: V0344
+    word: approximately
+    phonetic: '/əˈprɒksɪmətli/'
+    partOfSpeech: adverb
+    definition: 'Close to an exact amount or number but not completely exact'
+    definitionZh: '大约，近似地'
+    exampleSentence: 'The treasure was hidden approximately fifty steps from the old oak tree.'
+    exampleSentenceZh: '宝藏大约藏在离老橡树五十步远的地方。'
+    wordFamily:
+      - form: approximate
+        partOfSpeech: adjective
+      - form: approximation
+        partOfSpeech: noun
+    collocations:
+      - 'approximately equal'
+      - 'approximately how many'
+      - 'approximately the same'
+    synonyms: [roughly, about, around]
+    antonyms: [precisely, exactly]
+    level: 2
+    firstAppear: D069
+    reviewSchedule: [D070, D072, D076, D083, D099]
+
+  - id: V0345
+    word: merely
+    phonetic: '/ˈmɪəli/'
+    partOfSpeech: adverb
+    definition: 'Only; nothing more than'
+    definitionZh: '仅仅，只不过'
+    exampleSentence: 'The so-called ghost was merely a white sheet blowing in the wind.'
+    exampleSentenceZh: '那个所谓的幽灵只不过是一块在风中飘动的白床单。'
+    wordFamily:
+      - form: mere
+        partOfSpeech: adjective
+    collocations:
+      - 'merely a coincidence'
+      - 'not merely'
+      - 'merely suggest'
+    synonyms: [only, simply, just]
+    antonyms: [greatly, significantly]
+    level: 3
+    firstAppear: D069
+    reviewSchedule: [D070, D072, D076, D083, D099]
+
+  # ============================================
+  # D070: V0346-V0350 — Degree & Extent
+  # ============================================
+
+  - id: V0346
+    word: somewhat
+    phonetic: '/ˈsʌmwɒt/'
+    partOfSpeech: adverb
+    definition: 'To some degree; a little'
+    definitionZh: '有点，稍微'
+    exampleSentence: 'The detective was somewhat puzzled by the footprints that led in circles.'
+    exampleSentenceZh: '侦探对那些绕圈的脚印感到有些困惑。'
+    wordFamily: []
+    collocations:
+      - 'somewhat surprising'
+      - 'somewhat different'
+      - 'somewhat confused'
+    synonyms: [slightly, a bit, rather]
+    antonyms: [extremely, very, greatly]
+    level: 2
+    firstAppear: D070
+    reviewSchedule: [D071, D073, D077, D084, D100]
+
+  - id: V0347
+    word: relatively
+    phonetic: '/ˈrelətɪvli/'
+    partOfSpeech: adverb
+    definition: 'When compared to other things; to a certain degree'
+    definitionZh: '相对地，比较地'
+    exampleSentence: 'Solving the first puzzle was relatively easy, but the second one was much harder.'
+    exampleSentenceZh: '解决第一个谜题相对容易，但第二个就难多了。'
+    wordFamily:
+      - form: relative
+        partOfSpeech: adjective
+      - form: relative
+        partOfSpeech: noun
+    collocations:
+      - 'relatively simple'
+      - 'relatively new'
+      - 'relatively few'
+    synonyms: [comparatively, fairly, quite]
+    antonyms: [absolutely, extremely]
+    level: 2
+    firstAppear: D070
+    reviewSchedule: [D071, D073, D077, D084, D100]
+
+  - id: V0348
+    word: ultimately
+    phonetic: '/ˈʌltɪmətli/'
+    partOfSpeech: adverb
+    definition: 'In the end; after everything else has happened'
+    definitionZh: '最终，归根结底'
+    exampleSentence: 'After weeks of searching, the detective ultimately found the stolen necklace in a flowerpot.'
+    exampleSentenceZh: '经过数周的搜索，侦探最终在一个花盆里找到了被盗的项链。'
+    wordFamily:
+      - form: ultimate
+        partOfSpeech: adjective
+    collocations:
+      - 'ultimately responsible'
+      - 'ultimately decide'
+      - 'ultimately successful'
+    synonyms: [finally, eventually, in the end]
+    antonyms: [initially, originally]
+    level: 3
+    firstAppear: D070
+    reviewSchedule: [D071, D073, D077, D084, D100]
+
+  - id: V0349
+    word: entirely
+    phonetic: '/ɪnˈtaɪəli/'
+    partOfSpeech: adverb
+    definition: 'Completely; in every way'
+    definitionZh: '完全地，彻底地'
+    exampleSentence: 'The suspect story was not entirely true — he left out some important details.'
+    exampleSentenceZh: '嫌疑人的故事并不完全属实——他遗漏了一些重要细节。'
+    wordFamily:
+      - form: entire
+        partOfSpeech: adjective
+    collocations:
+      - 'entirely different'
+      - 'entirely possible'
+      - 'not entirely sure'
+    synonyms: [completely, totally, wholly]
+    antonyms: [partly, partially]
+    level: 2
+    firstAppear: D070
+    reviewSchedule: [D071, D073, D077, D084, D100]
+
+  - id: V0350
+    word: slightly
+    phonetic: '/ˈslaɪtli/'
+    partOfSpeech: adverb
+    definition: 'A little; to a small degree'
+    definitionZh: '稍微，轻微地'
+    exampleSentence: 'The door was slightly open, which meant someone had been inside recently.'
+    exampleSentenceZh: '门微微开着，这意味着最近有人进去过。'
+    wordFamily:
+      - form: slight
+        partOfSpeech: adjective
+    collocations:
+      - 'slightly different'
+      - 'slightly larger'
+      - 'slightly nervous'
+    synonyms: [a little, a bit, marginally]
+    antonyms: [considerably, greatly, significantly]
+    level: 2
+    firstAppear: D070
+    reviewSchedule: [D071, D073, D077, D084, D100]
+
+  # ============================================
+  # D071: V0351-V0355 — Time & Sequence
+  # ============================================
+
+  - id: V0351
+    word: previously
+    phonetic: '/ˈpriːviəsli/'
+    partOfSpeech: adverb
+    definition: 'Before now or before the time you are talking about'
+    definitionZh: '先前，以前'
+    exampleSentence: 'The detective discovered that the house had previously belonged to a famous magician.'
+    exampleSentenceZh: '侦探发现这所房子以前属于一位著名的魔术师。'
+    wordFamily:
+      - form: previous
+        partOfSpeech: adjective
+    collocations:
+      - 'previously unknown'
+      - 'previously mentioned'
+      - 'as previously stated'
+    synonyms: [before, earlier, formerly]
+    antonyms: [afterwards, subsequently, later]
+    level: 2
+    firstAppear: D071
+    reviewSchedule: [D072, D074, D078, D085, D101]
+
+  - id: V0352
+    word: subsequently
+    phonetic: '/ˈsʌbsɪkwəntli/'
+    partOfSpeech: adverb
+    definition: 'After something else has happened'
+    definitionZh: '随后，后来'
+    exampleSentence: 'The thief broke the lock and subsequently entered through the back door.'
+    exampleSentenceZh: '小偷撬开了锁，随后从后门进入了。'
+    wordFamily:
+      - form: subsequent
+        partOfSpeech: adjective
+    collocations:
+      - 'subsequently discovered'
+      - 'subsequently arrested'
+      - 'subsequently revealed'
+    synonyms: [afterwards, later, then]
+    antonyms: [previously, before, earlier]
+    level: 3
+    firstAppear: D071
+    reviewSchedule: [D072, D074, D078, D085, D101]
+
+  - id: V0353
+    word: meanwhile
+    phonetic: '/ˈmiːnwaɪl/'
+    partOfSpeech: adverb
+    definition: 'During the same time that something else is happening'
+    definitionZh: '与此同时'
+    exampleSentence: 'The detective searched the garden. Meanwhile, her assistant questioned the neighbours.'
+    exampleSentenceZh: '侦探搜查了花园。与此同时，她的助手询问了邻居。'
+    wordFamily: []
+    collocations:
+      - 'meanwhile, back at'
+      - 'in the meanwhile'
+    synonyms: [at the same time, in the meantime, simultaneously]
+    antonyms: [afterwards, later]
+    level: 2
+    firstAppear: D071
+    reviewSchedule: [D072, D074, D078, D085, D101]
+
+  - id: V0354
+    word: eventually
+    phonetic: '/ɪˈventʃuəli/'
+    partOfSpeech: adverb
+    definition: 'In the end, especially after a long time or a lot of effort'
+    definitionZh: '最终，终于'
+    exampleSentence: 'After searching every room, the children eventually found the treasure map behind the fireplace.'
+    exampleSentenceZh: '在搜查了每个房间之后，孩子们终于在壁炉后面找到了藏宝图。'
+    wordFamily:
+      - form: eventual
+        partOfSpeech: adjective
+    collocations:
+      - 'eventually find'
+      - 'eventually lead to'
+      - 'eventually agree'
+    synonyms: [finally, ultimately, in the end]
+    antonyms: [immediately, instantly, at once]
+    level: 2
+    firstAppear: D071
+    reviewSchedule: [D072, D074, D078, D085, D101]
+
+  - id: V0355
+    word: immediately
+    phonetic: '/ɪˈmiːdiətli/'
+    partOfSpeech: adverb
+    definition: 'At once; without any delay'
+    definitionZh: '立即，马上'
+    exampleSentence: 'When the alarm went off, the detective immediately rushed to the museum.'
+    exampleSentenceZh: '当警报响起时，侦探立即冲向了博物馆。'
+    wordFamily:
+      - form: immediate
+        partOfSpeech: adjective
+    collocations:
+      - 'immediately after'
+      - 'respond immediately'
+      - 'immediately obvious'
+    synonyms: [instantly, at once, straight away]
+    antonyms: [eventually, gradually, later]
+    level: 2
+    firstAppear: D071
+    reviewSchedule: [D072, D074, D078, D085, D101]
+
+  # ============================================
+  # D072: V0356-V0360 — Linking & Contrast
+  # ============================================
+
+  - id: V0356
+    word: furthermore
+    phonetic: '/ˌfɜːðəˈmɔː/'
+    partOfSpeech: adverb
+    definition: 'In addition to what has already been said'
+    definitionZh: '此外，而且'
+    exampleSentence: 'The suspect had no alibi. Furthermore, his fingerprints were found on the safe.'
+    exampleSentenceZh: '嫌疑人没有不在场证明。此外，他的指纹在保险箱上被发现了。'
+    wordFamily: []
+    collocations:
+      - 'furthermore, it is'
+      - 'and furthermore'
+    synonyms: [moreover, additionally, besides]
+    antonyms: [however, nevertheless]
+    level: 3
+    firstAppear: D072
+    reviewSchedule: [D073, D075, D079, D086, D102]
+
+  - id: V0357
+    word: nevertheless
+    phonetic: '/ˌnevəðəˈles/'
+    partOfSpeech: adverb
+    definition: 'In spite of what has just been said'
+    definitionZh: '然而，尽管如此'
+    exampleSentence: 'The case seemed impossible to solve. Nevertheless, the young detective did not give up.'
+    exampleSentenceZh: '这个案子似乎不可能解决。然而，年轻的侦探并没有放弃。'
+    wordFamily: []
+    collocations:
+      - 'but nevertheless'
+      - 'nevertheless, it is'
+    synonyms: [however, nonetheless, yet]
+    antonyms: [therefore, consequently]
+    level: 3
+    firstAppear: D072
+    reviewSchedule: [D073, D075, D079, D086, D102]
+
+  - id: V0358
+    word: consequently
+    phonetic: '/ˈkɒnsɪkwəntli/'
+    partOfSpeech: adverb
+    definition: 'As a result; therefore'
+    definitionZh: '因此，所以'
+    exampleSentence: 'The witness changed her story twice. Consequently, the police doubted her honesty.'
+    exampleSentenceZh: '目击者两次改变了她的说法。因此，警方怀疑她的诚实。'
+    wordFamily:
+      - form: consequence
+        partOfSpeech: noun
+      - form: consequent
+        partOfSpeech: adjective
+    collocations:
+      - 'and consequently'
+      - 'consequently, the'
+    synonyms: [therefore, as a result, thus]
+    antonyms: [nevertheless, however]
+    level: 3
+    firstAppear: D072
+    reviewSchedule: [D073, D075, D079, D086, D102]
+
+  - id: V0359
+    word: therefore
+    phonetic: '/ˈðeəfɔː/'
+    partOfSpeech: adverb
+    definition: 'For that reason; because of that'
+    definitionZh: '因此，所以'
+    exampleSentence: 'All the doors were locked from the inside. Therefore, the thief must have used the chimney.'
+    exampleSentenceZh: '所有的门都从里面锁上了。因此，小偷一定是从烟囱进来的。'
+    wordFamily: []
+    collocations:
+      - 'and therefore'
+      - 'it is therefore'
+      - 'therefore conclude'
+    synonyms: [hence, thus, as a result]
+    antonyms: [nevertheless, however]
+    level: 2
+    firstAppear: D072
+    reviewSchedule: [D073, D075, D079, D086, D102]
+
+  - id: V0360
+    word: whereas
+    phonetic: '/weərˈæz/'
+    partOfSpeech: conjunction
+    definition: 'Used to compare two things that are different'
+    definitionZh: '然而，但是（表对比）'
+    exampleSentence: 'The first suspect seemed calm, whereas the second one kept looking at the door.'
+    exampleSentenceZh: '第一个嫌疑人看起来很平静，而第二个一直看着门。'
+    wordFamily: []
+    collocations:
+      - 'whereas in fact'
+      - 'whereas others'
+    synonyms: [while, although, but]
+    antonyms: [similarly, likewise]
+    level: 3
+    firstAppear: D072
+    reviewSchedule: [D073, D075, D079, D086, D102]
+
+  # ============================================
+  # D073: V0361-V0365 — Concession & Condition
+  # ============================================
+
+  - id: V0361
+    word: despite
+    phonetic: '/dɪˈspaɪt/'
+    partOfSpeech: preposition
+    definition: 'Without being affected by; in spite of'
+    definitionZh: '尽管，虽然'
+    exampleSentence: 'Despite the heavy rain, the detective continued searching the garden for clues.'
+    exampleSentenceZh: '尽管大雨倾盆，侦探仍然继续在花园里搜索线索。'
+    wordFamily: []
+    collocations:
+      - 'despite the fact that'
+      - 'despite this'
+      - 'despite efforts'
+    synonyms: [in spite of, regardless of, notwithstanding]
+    antonyms: [because of, due to]
+    level: 2
+    firstAppear: D073
+    reviewSchedule: [D074, D076, D080, D087, D103]
+
+  - id: V0362
+    word: although
+    phonetic: '/ɔːlˈðəʊ/'
+    partOfSpeech: conjunction
+    definition: 'In spite of the fact that'
+    definitionZh: '虽然，尽管'
+    exampleSentence: 'Although the window was broken, nothing appeared to be missing from the room.'
+    exampleSentenceZh: '虽然窗户被打破了，但房间里似乎没有东西丢失。'
+    wordFamily: []
+    collocations:
+      - 'although it is'
+      - 'although some'
+      - 'although not'
+    synonyms: [though, even though, while]
+    antonyms: [because, since]
+    level: 2
+    firstAppear: D073
+    reviewSchedule: [D074, D076, D080, D087, D103]
+
+  - id: V0363
+    word: regardless
+    phonetic: '/rɪˈɡɑːdləs/'
+    partOfSpeech: adverb
+    definition: 'Without being affected or influenced by anything else'
+    definitionZh: '不管怎样，无论如何'
+    exampleSentence: 'Regardless of the danger, the brave girl followed the mysterious trail into the forest.'
+    exampleSentenceZh: '不管危险如何，勇敢的女孩跟着神秘的小径走进了森林。'
+    wordFamily: []
+    collocations:
+      - 'regardless of'
+      - 'regardless of whether'
+      - 'continue regardless'
+    synonyms: [anyway, nevertheless, in any case]
+    antonyms: [accordingly, depending on]
+    level: 3
+    firstAppear: D073
+    reviewSchedule: [D074, D076, D080, D087, D103]
+
+  - id: V0364
+    word: provided
+    phonetic: '/prəˈvaɪdɪd/'
+    partOfSpeech: conjunction
+    definition: 'On the condition that; only if'
+    definitionZh: '假如，只要'
+    exampleSentence: 'You may enter the secret room, provided you solve the riddle on the door.'
+    exampleSentenceZh: '只要你解开门上的谜语，就可以进入密室。'
+    wordFamily:
+      - form: provide
+        partOfSpeech: verb
+    collocations:
+      - 'provided that'
+      - 'provided you'
+    synonyms: [if, as long as, on condition that]
+    antonyms: [unless, regardless]
+    level: 3
+    firstAppear: D073
+    reviewSchedule: [D074, D076, D080, D087, D103]
+
+  - id: V0365
+    word: otherwise
+    phonetic: '/ˈʌðəwaɪz/'
+    partOfSpeech: adverb
+    definition: 'In a different way; or else'
+    definitionZh: '否则，不然'
+    exampleSentence: 'We need to find the key quickly, otherwise the secret passage will close forever.'
+    exampleSentenceZh: '我们需要快点找到钥匙，否则密道将永远关闭。'
+    wordFamily: []
+    collocations:
+      - 'otherwise known as'
+      - 'or otherwise'
+      - 'unless otherwise stated'
+    synonyms: [or else, if not, alternatively]
+    antonyms: [similarly, likewise]
+    level: 2
+    firstAppear: D073
+    reviewSchedule: [D074, D076, D080, D087, D103]
+
+  # ============================================
+  # D074: V0366-V0370 — Analysis & Method
+  # ============================================
+
+  - id: V0366
+    word: analyse
+    phonetic: '/ˈænəlaɪz/'
+    partOfSpeech: verb
+    definition: 'To study something in detail to understand it better'
+    definitionZh: '分析，解析'
+    exampleSentence: 'The forensic team will analyse the fingerprints found on the glass.'
+    exampleSentenceZh: '法证团队将分析在玻璃杯上发现的指纹。'
+    wordFamily:
+      - form: analysis
+        partOfSpeech: noun
+      - form: analyst
+        partOfSpeech: noun
+      - form: analytical
+        partOfSpeech: adjective
+    collocations:
+      - 'analyse the data'
+      - 'carefully analyse'
+      - 'analyse the results'
+    synonyms: [examine, study, evaluate]
+    antonyms: [ignore, neglect]
+    level: 3
+    firstAppear: D074
+    reviewSchedule: [D075, D077, D081, D088, D104]
+
+  - id: V0367
+    word: determine
+    phonetic: '/dɪˈtɜːmɪn/'
+    partOfSpeech: verb
+    definition: 'To discover the facts about something; to find out'
+    definitionZh: '确定，查明'
+    exampleSentence: 'Scientists were called in to determine the age of the mysterious map.'
+    exampleSentenceZh: '科学家被请来确定这张神秘地图的年代。'
+    wordFamily:
+      - form: determination
+        partOfSpeech: noun
+      - form: determined
+        partOfSpeech: adjective
+    collocations:
+      - 'determine the cause'
+      - 'determine whether'
+      - 'difficult to determine'
+    synonyms: [establish, ascertain, discover]
+    antonyms: [doubt, question]
+    level: 2
+    firstAppear: D074
+    reviewSchedule: [D075, D077, D081, D088, D104]
+
+  - id: V0368
+    word: consider
+    phonetic: '/kənˈsɪdə/'
+    partOfSpeech: verb
+    definition: 'To think about something carefully before making a decision'
+    definitionZh: '考虑，思考'
+    exampleSentence: 'Before accusing anyone, we should consider all the possibilities carefully.'
+    exampleSentenceZh: '在指控任何人之前，我们应该仔细考虑所有的可能性。'
+    wordFamily:
+      - form: consideration
+        partOfSpeech: noun
+      - form: considerable
+        partOfSpeech: adjective
+      - form: considerably
+        partOfSpeech: adverb
+    collocations:
+      - 'consider the options'
+      - 'carefully consider'
+      - 'consider the evidence'
+    synonyms: [think about, contemplate, reflect on]
+    antonyms: [dismiss, disregard, ignore]
+    level: 2
+    firstAppear: D074
+    reviewSchedule: [D075, D077, D081, D088, D104]
+
+  - id: V0369
+    word: compare
+    phonetic: '/kəmˈpeə/'
+    partOfSpeech: verb
+    definition: 'To look at two or more things to see how they are similar or different'
+    definitionZh: '比较，对比'
+    exampleSentence: 'The detective compared the two handwriting samples side by side.'
+    exampleSentenceZh: '侦探把两份笔迹样本并排对比。'
+    wordFamily:
+      - form: comparison
+        partOfSpeech: noun
+      - form: comparable
+        partOfSpeech: adjective
+      - form: comparative
+        partOfSpeech: adjective
+    collocations:
+      - 'compare with'
+      - 'compare and contrast'
+      - 'compared to'
+    synonyms: [contrast, match, examine]
+    antonyms: [distinguish, differentiate]
+    level: 2
+    firstAppear: D074
+    reviewSchedule: [D075, D077, D081, D088, D104]
+
+  - id: V0370
+    word: solve
+    phonetic: '/sɒlv/'
+    partOfSpeech: verb
+    definition: 'To find the answer to a problem or mystery'
+    definitionZh: '解决，破解'
+    exampleSentence: 'It took three days to solve the puzzle and open the mysterious locked box.'
+    exampleSentenceZh: '花了三天时间才解开谜题并打开了那个神秘的上锁箱子。'
+    wordFamily:
+      - form: solution
+        partOfSpeech: noun
+      - form: solver
+        partOfSpeech: noun
+      - form: unsolved
+        partOfSpeech: adjective
+    collocations:
+      - 'solve a mystery'
+      - 'solve a problem'
+      - 'solve the case'
+    synonyms: [resolve, crack, work out]
+    antonyms: [complicate, confuse]
+    level: 2
+    firstAppear: D074
+    reviewSchedule: [D075, D077, D081, D088, D104]
+
+  # ============================================
+  # D075: V0371-V0375 — Emotion & Feeling
+  # ============================================
+
+  - id: V0371
+    word: anxious
+    phonetic: '/ˈæŋkʃəs/'
+    partOfSpeech: adjective
+    definition: 'Feeling worried or nervous about something'
+    definitionZh: '焦虑的，不安的'
+    exampleSentence: 'The witness became anxious when the detective asked about the missing jewels.'
+    exampleSentenceZh: '当侦探询问丢失的珠宝时，目击者变得焦虑不安。'
+    wordFamily:
+      - form: anxiety
+        partOfSpeech: noun
+      - form: anxiously
+        partOfSpeech: adverb
+    collocations:
+      - 'feel anxious'
+      - 'anxious about'
+      - 'increasingly anxious'
+    synonyms: [worried, nervous, uneasy]
+    antonyms: [calm, relaxed, confident]
+    level: 2
+    firstAppear: D075
+    reviewSchedule: [D076, D078, D082, D089, D105]
+
+  - id: V0372
+    word: curious
+    phonetic: '/ˈkjʊəriəs/'
+    partOfSpeech: adjective
+    definition: 'Wanting to know about something; also means strange'
+    definitionZh: '好奇的；奇怪的'
+    exampleSentence: 'The curious girl could not resist peeking through the keyhole of the locked door.'
+    exampleSentenceZh: '好奇的女孩忍不住从上锁的门的钥匙孔里偷看。'
+    wordFamily:
+      - form: curiosity
+        partOfSpeech: noun
+      - form: curiously
+        partOfSpeech: adverb
+    collocations:
+      - 'curious about'
+      - 'curious to know'
+      - 'a curious thing'
+    synonyms: [inquisitive, interested, nosy]
+    antonyms: [indifferent, uninterested, bored]
+    level: 2
+    firstAppear: D075
+    reviewSchedule: [D076, D078, D082, D089, D105]
+
+  - id: V0373
+    word: terrified
+    phonetic: '/ˈterɪfaɪd/'
+    partOfSpeech: adjective
+    definition: 'Extremely frightened'
+    definitionZh: '极度恐惧的，吓坏了的'
+    exampleSentence: 'The children were terrified when they heard strange noises coming from the attic.'
+    exampleSentenceZh: '当孩子们听到阁楼上传来奇怪的声音时，他们吓坏了。'
+    wordFamily:
+      - form: terrify
+        partOfSpeech: verb
+      - form: terrifying
+        partOfSpeech: adjective
+      - form: terror
+        partOfSpeech: noun
+    collocations:
+      - 'absolutely terrified'
+      - 'terrified of'
+      - 'terrified to discover'
+    synonyms: [frightened, scared, petrified]
+    antonyms: [brave, fearless, calm]
+    level: 2
+    firstAppear: D075
+    reviewSchedule: [D076, D078, D082, D089, D105]
+
+  - id: V0374
+    word: relieved
+    phonetic: '/rɪˈliːvd/'
+    partOfSpeech: adjective
+    definition: 'Feeling happy because something unpleasant has stopped or not happened'
+    definitionZh: '如释重负的，放心的'
+    exampleSentence: 'Everyone was relieved when the missing puppy was found safe in the neighbour garden.'
+    exampleSentenceZh: '当失踪的小狗在邻居花园里被安全找到时，大家都松了一口气。'
+    wordFamily:
+      - form: relief
+        partOfSpeech: noun
+      - form: relieve
+        partOfSpeech: verb
+    collocations:
+      - 'feel relieved'
+      - 'greatly relieved'
+      - 'relieved to hear'
+    synonyms: [glad, thankful, reassured]
+    antonyms: [anxious, worried, distressed]
+    level: 2
+    firstAppear: D075
+    reviewSchedule: [D076, D078, D082, D089, D105]
+
+  - id: V0375
+    word: astonished
+    phonetic: '/əˈstɒnɪʃt/'
+    partOfSpeech: adjective
+    definition: 'Very surprised; amazed'
+    definitionZh: '震惊的，惊讶的'
+    exampleSentence: 'The detective was astonished to discover that the thief was actually the mayor!'
+    exampleSentenceZh: '侦探震惊地发现小偷竟然是市长！'
+    wordFamily:
+      - form: astonish
+        partOfSpeech: verb
+      - form: astonishing
+        partOfSpeech: adjective
+      - form: astonishment
+        partOfSpeech: noun
+    collocations:
+      - 'astonished to find'
+      - 'absolutely astonished'
+      - 'astonished by'
+    synonyms: [amazed, stunned, shocked]
+    antonyms: [unsurprised, expectant]
+    level: 2
+    firstAppear: D075
+    reviewSchedule: [D076, D078, D082, D089, D105]
+
+  # ============================================
+  # D076: V0376-V0380 — Character & Personality
+  # ============================================
+
+  - id: V0376
+    word: determined
+    phonetic: '/dɪˈtɜːmɪnd/'
+    partOfSpeech: adjective
+    definition: 'Having a strong desire to do something and not letting anything stop you'
+    definitionZh: '有决心的，坚定的'
+    exampleSentence: 'The determined detective refused to close the case until she found the truth.'
+    exampleSentenceZh: '这位坚定的侦探在找到真相之前拒绝结案。'
+    wordFamily:
+      - form: determination
+        partOfSpeech: noun
+      - form: determine
+        partOfSpeech: verb
+    collocations:
+      - 'determined to succeed'
+      - 'fiercely determined'
+      - 'determined effort'
+    synonyms: [resolute, persistent, firm]
+    antonyms: [hesitant, uncertain, wavering]
+    level: 2
+    firstAppear: D076
+    reviewSchedule: [D077, D079, D083, D090, D106]
+
+  - id: V0377
+    word: cautious
+    phonetic: '/ˈkɔːʃəs/'
+    partOfSpeech: adjective
+    definition: 'Being very careful to avoid danger or mistakes'
+    definitionZh: '谨慎的，小心的'
+    exampleSentence: 'The cautious detective checked every corner before entering the dark room.'
+    exampleSentenceZh: '谨慎的侦探在进入黑暗的房间前检查了每个角落。'
+    wordFamily:
+      - form: caution
+        partOfSpeech: noun
+      - form: cautiously
+        partOfSpeech: adverb
+    collocations:
+      - 'cautious approach'
+      - 'remain cautious'
+      - 'cautious about'
+    synonyms: [careful, wary, prudent]
+    antonyms: [reckless, careless, rash]
+    level: 3
+    firstAppear: D076
+    reviewSchedule: [D077, D079, D083, D090, D106]
+
+  - id: V0378
+    word: reliable
+    phonetic: '/rɪˈlaɪəbl/'
+    partOfSpeech: adjective
+    definition: 'That can be trusted to do what is expected; dependable'
+    definitionZh: '可靠的，值得信赖的'
+    exampleSentence: 'A good detective needs a reliable partner who they can count on in difficult times.'
+    exampleSentenceZh: '一个好侦探需要一个可靠的伙伴，在困难时刻可以依靠。'
+    wordFamily:
+      - form: reliability
+        partOfSpeech: noun
+      - form: reliably
+        partOfSpeech: adverb
+      - form: unreliable
+        partOfSpeech: adjective
+    collocations:
+      - 'reliable source'
+      - 'reliable information'
+      - 'highly reliable'
+    synonyms: [dependable, trustworthy, consistent]
+    antonyms: [unreliable, untrustworthy]
+    level: 2
+    firstAppear: D076
+    reviewSchedule: [D077, D079, D083, D090, D106]
+
+  - id: V0379
+    word: brilliant
+    phonetic: '/ˈbrɪliənt/'
+    partOfSpeech: adjective
+    definition: 'Extremely clever or talented; also means very bright'
+    definitionZh: '聪明的，杰出的；明亮的'
+    exampleSentence: 'The brilliant young detective solved the mystery before any of the adults could.'
+    exampleSentenceZh: '聪明的年轻侦探比任何大人都更早地破了案。'
+    wordFamily:
+      - form: brilliance
+        partOfSpeech: noun
+      - form: brilliantly
+        partOfSpeech: adverb
+    collocations:
+      - 'brilliant idea'
+      - 'brilliant detective'
+      - 'absolutely brilliant'
+    synonyms: [clever, intelligent, outstanding]
+    antonyms: [dull, stupid, dim]
+    level: 2
+    firstAppear: D076
+    reviewSchedule: [D077, D079, D083, D090, D106]
+
+  - id: V0380
+    word: cunning
+    phonetic: '/ˈkʌnɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Clever at getting what you want, especially by tricking people'
+    definitionZh: '狡猾的，诡计多端的'
+    exampleSentence: 'The cunning fox had stolen the farmer chickens by digging a tunnel under the fence.'
+    exampleSentenceZh: '狡猾的狐狸在篱笆下面挖了一条隧道，偷走了农夫的鸡。'
+    wordFamily:
+      - form: cunningly
+        partOfSpeech: adverb
+    collocations:
+      - 'cunning plan'
+      - 'cunning trick'
+      - 'as cunning as a fox'
+    synonyms: [sly, crafty, sneaky]
+    antonyms: [honest, straightforward, naive]
+    level: 3
+    firstAppear: D076
+    reviewSchedule: [D077, D079, D083, D090, D106]
+
+  # ============================================
+  # D077: V0381-V0385 — Movement & Position
+  # ============================================
+
+  - id: V0381
+    word: pursue
+    phonetic: '/pəˈsjuː/'
+    partOfSpeech: verb
+    definition: 'To follow or chase someone in order to catch them'
+    definitionZh: '追赶，追踪'
+    exampleSentence: 'The detective pursued the suspect through the narrow streets of the old town.'
+    exampleSentenceZh: '侦探追着嫌疑人穿过老城的狭窄街道。'
+    wordFamily:
+      - form: pursuit
+        partOfSpeech: noun
+      - form: pursuer
+        partOfSpeech: noun
+    collocations:
+      - 'pursue a suspect'
+      - 'pursue the truth'
+      - 'in pursuit of'
+    synonyms: [chase, follow, track]
+    antonyms: [flee, escape, retreat]
+    level: 3
+    firstAppear: D077
+    reviewSchedule: [D078, D080, D084, D091, D107]
+
+  - id: V0382
+    word: escape
+    phonetic: '/ɪˈskeɪp/'
+    partOfSpeech: verb
+    definition: 'To get away from a place or a dangerous situation'
+    definitionZh: '逃脱，逃跑'
+    exampleSentence: 'The cat escaped through a tiny hole in the wall that nobody had noticed.'
+    exampleSentenceZh: '猫从墙上一个没人注意到的小洞逃走了。'
+    wordFamily:
+      - form: escape
+        partOfSpeech: noun
+      - form: escapee
+        partOfSpeech: noun
+    collocations:
+      - 'escape from'
+      - 'narrow escape'
+      - 'escape route'
+    synonyms: [flee, get away, break free]
+    antonyms: [capture, trap, imprison]
+    level: 2
+    firstAppear: D077
+    reviewSchedule: [D078, D080, D084, D091, D107]
+
+  - id: V0383
+    word: vanish
+    phonetic: '/ˈvænɪʃ/'
+    partOfSpeech: verb
+    definition: 'To disappear suddenly and completely'
+    definitionZh: '消失，不见了'
+    exampleSentence: 'The magician necklace vanished from the locked display case without a trace.'
+    exampleSentenceZh: '魔术师的项链从锁着的展示柜里消失了，没留下任何痕迹。'
+    wordFamily:
+      - form: vanishing
+        partOfSpeech: adjective
+    collocations:
+      - 'vanish without a trace'
+      - 'vanish into thin air'
+      - 'suddenly vanish'
+    synonyms: [disappear, evaporate, fade]
+    antonyms: [appear, materialise, emerge]
+    level: 2
+    firstAppear: D077
+    reviewSchedule: [D078, D080, D084, D091, D107]
+
+  - id: V0384
+    word: surround
+    phonetic: '/səˈraʊnd/'
+    partOfSpeech: verb
+    definition: 'To be or go all around something or someone'
+    definitionZh: '包围，环绕'
+    exampleSentence: 'A high stone wall surrounded the mysterious mansion, hiding its secrets from the world.'
+    exampleSentenceZh: '一堵高高的石墙环绕着那座神秘的大宅，将它的秘密与世隔绝。'
+    wordFamily:
+      - form: surrounding
+        partOfSpeech: adjective
+      - form: surroundings
+        partOfSpeech: noun
+    collocations:
+      - 'surrounded by'
+      - 'surrounding area'
+      - 'natural surroundings'
+    synonyms: [encircle, enclose, ring]
+    antonyms: [release, free]
+    level: 2
+    firstAppear: D077
+    reviewSchedule: [D078, D080, D084, D091, D107]
+
+  - id: V0385
+    word: wander
+    phonetic: '/ˈwɒndə/'
+    partOfSpeech: verb
+    definition: 'To walk around slowly without a clear direction or purpose'
+    definitionZh: '漫步，闲逛'
+    exampleSentence: 'The children wandered through the old museum, looking for the hidden message.'
+    exampleSentenceZh: '孩子们在旧博物馆里闲逛，寻找隐藏的信息。'
+    wordFamily:
+      - form: wanderer
+        partOfSpeech: noun
+    collocations:
+      - 'wander around'
+      - 'wander through'
+      - 'wander off'
+    synonyms: [roam, stroll, drift]
+    antonyms: [rush, hurry, dash]
+    level: 2
+    firstAppear: D077
+    reviewSchedule: [D078, D080, D084, D091, D107]
+
+  # ============================================
+  # D078: V0386-V0390 — Knowledge & Understanding
+  # ============================================
+
+  - id: V0386
+    word: comprehend
+    phonetic: '/ˌkɒmprɪˈhend/'
+    partOfSpeech: verb
+    definition: 'To understand something completely'
+    definitionZh: '理解，领悟'
+    exampleSentence: 'It took her a moment to comprehend the meaning behind the mysterious coded message.'
+    exampleSentenceZh: '她花了一会儿才理解那条神秘密码信息背后的含义。'
+    wordFamily:
+      - form: comprehension
+        partOfSpeech: noun
+      - form: comprehensive
+        partOfSpeech: adjective
+    collocations:
+      - 'fully comprehend'
+      - 'difficult to comprehend'
+      - 'comprehend the situation'
+    synonyms: [understand, grasp, follow]
+    antonyms: [misunderstand, confuse]
+    level: 3
+    firstAppear: D078
+    reviewSchedule: [D079, D081, D085, D092, D108]
+
+  - id: V0387
+    word: interpret
+    phonetic: '/ɪnˈtɜːprɪt/'
+    partOfSpeech: verb
+    definition: 'To explain or decide the meaning of something'
+    definitionZh: '解释，理解'
+    exampleSentence: 'The detective tried to interpret the strange symbols carved into the wooden box.'
+    exampleSentenceZh: '侦探试图解读刻在木箱上的奇怪符号。'
+    wordFamily:
+      - form: interpretation
+        partOfSpeech: noun
+      - form: interpreter
+        partOfSpeech: noun
+    collocations:
+      - 'interpret the results'
+      - 'interpret as'
+      - 'open to interpretation'
+    synonyms: [explain, understand, decode]
+    antonyms: [misinterpret, confuse]
+    level: 3
+    firstAppear: D078
+    reviewSchedule: [D079, D081, D085, D092, D108]
+
+  - id: V0388
+    word: distinguish
+    phonetic: '/dɪˈstɪŋɡwɪʃ/'
+    partOfSpeech: verb
+    definition: 'To recognise the difference between two things or people'
+    definitionZh: '区分，辨别'
+    exampleSentence: 'Can you distinguish between the real diamond and the fake one?'
+    exampleSentenceZh: '你能区分真钻石和假钻石吗？'
+    wordFamily:
+      - form: distinction
+        partOfSpeech: noun
+      - form: distinguishable
+        partOfSpeech: adjective
+      - form: distinguished
+        partOfSpeech: adjective
+    collocations:
+      - 'distinguish between'
+      - 'distinguish from'
+      - 'easily distinguished'
+    synonyms: [differentiate, tell apart, discern]
+    antonyms: [confuse, mix up]
+    level: 3
+    firstAppear: D078
+    reviewSchedule: [D079, D081, D085, D092, D108]
+
+  - id: V0389
+    word: aware
+    phonetic: '/əˈweə/'
+    partOfSpeech: adjective
+    definition: 'Knowing about something; having knowledge of a situation'
+    definitionZh: '意识到的，知道的'
+    exampleSentence: 'She was not aware that someone had been following her since she left the library.'
+    exampleSentenceZh: '她没有意识到从她离开图书馆后就有人一直在跟踪她。'
+    wordFamily:
+      - form: awareness
+        partOfSpeech: noun
+      - form: unaware
+        partOfSpeech: adjective
+    collocations:
+      - 'aware of'
+      - 'become aware'
+      - 'fully aware'
+    synonyms: [conscious, informed, mindful]
+    antonyms: [unaware, oblivious, ignorant]
+    level: 2
+    firstAppear: D078
+    reviewSchedule: [D079, D081, D085, D092, D108]
+
+  - id: V0390
+    word: familiar
+    phonetic: '/fəˈmɪliə/'
+    partOfSpeech: adjective
+    definition: 'Well known to you; easy to recognise'
+    definitionZh: '熟悉的，常见的'
+    exampleSentence: 'The voice on the phone sounded strangely familiar, but she could not place it.'
+    exampleSentenceZh: '电话里的声音听起来奇怪地熟悉，但她想不起来是谁。'
+    wordFamily:
+      - form: familiarity
+        partOfSpeech: noun
+      - form: familiarise
+        partOfSpeech: verb
+      - form: unfamiliar
+        partOfSpeech: adjective
+    collocations:
+      - 'familiar with'
+      - 'look familiar'
+      - 'a familiar face'
+    synonyms: [well-known, recognised, common]
+    antonyms: [unfamiliar, strange, unknown]
+    level: 2
+    firstAppear: D078
+    reviewSchedule: [D079, D081, D085, D092, D108]
+
+  # ============================================
+  # D079: V0391-V0395 — Crime Scene & Forensics
+  # ============================================
+
+  - id: V0391
+    word: trace
+    phonetic: '/treɪs/'
+    partOfSpeech: noun
+    definition: 'A small sign that shows someone or something was present'
+    definitionZh: '踪迹，痕迹'
+    exampleSentence: 'The thief left no trace behind — not even a single hair.'
+    exampleSentenceZh: '小偷没有留下任何踪迹——甚至连一根头发都没有。'
+    wordFamily:
+      - form: trace
+        partOfSpeech: verb
+      - form: traceable
+        partOfSpeech: adjective
+      - form: untraceable
+        partOfSpeech: adjective
+    collocations:
+      - 'without a trace'
+      - 'trace of evidence'
+      - 'trace back to'
+    synonyms: [mark, sign, remnant]
+    antonyms: [abundance, plenty]
+    level: 2
+    firstAppear: D079
+    reviewSchedule: [D080, D082, D086, D093, D109]
+
+  - id: V0392
+    word: detect
+    phonetic: '/dɪˈtekt/'
+    partOfSpeech: verb
+    definition: 'To discover or notice something that is not easy to see, hear, or find'
+    definitionZh: '察觉，发现'
+    exampleSentence: 'The trained dog could detect the scent of the hidden treats from across the room.'
+    exampleSentenceZh: '训练有素的狗能从房间的另一边察觉到隐藏零食的气味。'
+    wordFamily:
+      - form: detection
+        partOfSpeech: noun
+      - form: detective
+        partOfSpeech: noun
+      - form: detectable
+        partOfSpeech: adjective
+    collocations:
+      - 'detect a pattern'
+      - 'detect a change'
+      - 'difficult to detect'
+    synonyms: [discover, find, spot]
+    antonyms: [miss, overlook]
+    level: 2
+    firstAppear: D079
+    reviewSchedule: [D080, D082, D086, D093, D109]
+
+  - id: V0393
+    word: preserve
+    phonetic: '/prɪˈzɜːv/'
+    partOfSpeech: verb
+    definition: 'To keep something in its original state; to protect from harm'
+    definitionZh: '保存，保护'
+    exampleSentence: 'The police officer asked everyone to preserve the crime scene and not touch anything.'
+    exampleSentenceZh: '警官要求所有人保护犯罪现场，不要碰任何东西。'
+    wordFamily:
+      - form: preservation
+        partOfSpeech: noun
+      - form: preserved
+        partOfSpeech: adjective
+    collocations:
+      - 'preserve evidence'
+      - 'well preserved'
+      - 'preserve the scene'
+    synonyms: [protect, maintain, conserve]
+    antonyms: [destroy, damage, ruin]
+    level: 3
+    firstAppear: D079
+    reviewSchedule: [D080, D082, D086, D093, D109]
+
+  - id: V0394
+    word: circumstance
+    phonetic: '/ˈsɜːkəmstəns/'
+    partOfSpeech: noun
+    definition: 'A fact or condition connected with an event or situation'
+    definitionZh: '情况，环境'
+    exampleSentence: 'Under the circumstances, the detective decided to question all the guests again.'
+    exampleSentenceZh: '在这种情况下，侦探决定再次询问所有客人。'
+    wordFamily:
+      - form: circumstantial
+        partOfSpeech: adjective
+    collocations:
+      - 'under the circumstances'
+      - 'suspicious circumstances'
+      - 'in certain circumstances'
+    synonyms: [situation, condition, context]
+    antonyms: []
+    level: 3
+    firstAppear: D079
+    reviewSchedule: [D080, D082, D086, D093, D109]
+
+  - id: V0395
+    word: suspect
+    phonetic: '/ˈsʌspekt/'
+    partOfSpeech: noun
+    definition: 'A person believed to have committed a crime'
+    definitionZh: '嫌疑人，嫌犯'
+    exampleSentence: 'There were three suspects, but only one of them had a reason to steal the painting.'
+    exampleSentenceZh: '有三个嫌疑人，但只有一个有理由偷那幅画。'
+    wordFamily:
+      - form: suspect
+        partOfSpeech: verb
+      - form: suspected
+        partOfSpeech: adjective
+    collocations:
+      - 'prime suspect'
+      - 'the usual suspects'
+      - 'suspect in custody'
+    synonyms: [accused, defendant, perpetrator]
+    antonyms: [victim, witness]
+    level: 2
+    firstAppear: D079
+    reviewSchedule: [D080, D082, D086, D093, D109]
+
+  # ============================================
+  # D080: V0396-V0400 — Truth & Deception
+  # ============================================
+
+  - id: V0396
+    word: deceive
+    phonetic: '/dɪˈsiːv/'
+    partOfSpeech: verb
+    definition: 'To make someone believe something that is not true'
+    definitionZh: '欺骗，蒙骗'
+    exampleSentence: 'The trickster tried to deceive the shopkeeper by using a fake banknote.'
+    exampleSentenceZh: '骗子试图用假钞欺骗店主。'
+    wordFamily:
+      - form: deception
+        partOfSpeech: noun
+      - form: deceptive
+        partOfSpeech: adjective
+      - form: deceitful
+        partOfSpeech: adjective
+    collocations:
+      - 'deceive someone into'
+      - 'deliberately deceive'
+      - 'easily deceived'
+    synonyms: [trick, mislead, fool]
+    antonyms: [inform, reveal, be honest]
+    level: 3
+    firstAppear: D080
+    reviewSchedule: [D081, D083, D087, D094, D110]
+
+  - id: V0397
+    word: genuine
+    phonetic: '/ˈdʒenjuɪn/'
+    partOfSpeech: adjective
+    definition: 'Real; exactly what it appears to be; not fake'
+    definitionZh: '真正的，真实的'
+    exampleSentence: 'The expert confirmed that the ancient coin was genuine, not a copy.'
+    exampleSentenceZh: '专家确认这枚古币是真品，不是复制品。'
+    wordFamily:
+      - form: genuinely
+        partOfSpeech: adverb
+    collocations:
+      - 'genuine article'
+      - 'genuine concern'
+      - 'a genuine smile'
+    synonyms: [real, authentic, true]
+    antonyms: [fake, false, counterfeit]
+    level: 2
+    firstAppear: D080
+    reviewSchedule: [D081, D083, D087, D094, D110]
+
+  - id: V0398
+    word: accurate
+    phonetic: '/ˈækjərət/'
+    partOfSpeech: adjective
+    definition: 'Correct and true in every detail'
+    definitionZh: '准确的，精确的'
+    exampleSentence: 'The witness gave an accurate description of the stranger who entered the building.'
+    exampleSentenceZh: '目击者对进入大楼的陌生人作了准确的描述。'
+    wordFamily:
+      - form: accuracy
+        partOfSpeech: noun
+      - form: accurately
+        partOfSpeech: adverb
+      - form: inaccurate
+        partOfSpeech: adjective
+    collocations:
+      - 'accurate description'
+      - 'highly accurate'
+      - 'accurate information'
+    synonyms: [precise, exact, correct]
+    antonyms: [inaccurate, wrong, imprecise]
+    level: 2
+    firstAppear: D080
+    reviewSchedule: [D081, D083, D087, D094, D110]
+
+  - id: V0399
+    word: doubt
+    phonetic: '/daʊt/'
+    partOfSpeech: noun
+    definition: 'A feeling of not being sure about something'
+    definitionZh: '怀疑，疑虑'
+    exampleSentence: 'There was no doubt that the footprints belonged to the missing explorer.'
+    exampleSentenceZh: '毫无疑问，这些脚印属于那位失踪的探险家。'
+    wordFamily:
+      - form: doubt
+        partOfSpeech: verb
+      - form: doubtful
+        partOfSpeech: adjective
+      - form: undoubtedly
+        partOfSpeech: adverb
+    collocations:
+      - 'no doubt'
+      - 'beyond doubt'
+      - 'raise doubts'
+    synonyms: [uncertainty, suspicion, hesitation]
+    antonyms: [certainty, confidence, belief]
+    level: 2
+    firstAppear: D080
+    reviewSchedule: [D081, D083, D087, D094, D110]
+
+  - id: V0400
+    word: convince
+    phonetic: '/kənˈvɪns/'
+    partOfSpeech: verb
+    definition: 'To make someone believe that something is true'
+    definitionZh: '说服，使信服'
+    exampleSentence: 'The detective convinced the jury by presenting clear evidence and logical arguments.'
+    exampleSentenceZh: '侦探通过展示清晰的证据和逻辑论证说服了陪审团。'
+    wordFamily:
+      - form: convincing
+        partOfSpeech: adjective
+      - form: convinced
+        partOfSpeech: adjective
+      - form: unconvincing
+        partOfSpeech: adjective
+    collocations:
+      - 'convince someone that'
+      - 'convince someone to'
+      - 'fully convinced'
+    synonyms: [persuade, assure, satisfy]
+    antonyms: [dissuade, discourage]
+    level: 2
+    firstAppear: D080
+    reviewSchedule: [D081, D083, D087, D094, D110]
+
+  # ============================================
+  # D081: V0401-V0405 — Quantity & Comparison
+  # ============================================
+
+  - id: V0401
+    word: considerable
+    phonetic: '/kənˈsɪdərəbl/'
+    partOfSpeech: adjective
+    definition: 'Large enough to be important or noticeable'
+    definitionZh: '相当大的，可观的'
+    exampleSentence: 'The detective spent a considerable amount of time studying the old diary.'
+    exampleSentenceZh: '侦探花了相当长的时间研究那本旧日记。'
+    wordFamily:
+      - form: considerably
+        partOfSpeech: adverb
+    collocations:
+      - 'considerable effort'
+      - 'considerable amount'
+      - 'considerable progress'
+    synonyms: [significant, substantial, notable]
+    antonyms: [negligible, insignificant, tiny]
+    level: 3
+    firstAppear: D081
+    reviewSchedule: [D082, D084, D088, D095, D111]
+
+  - id: V0402
+    word: numerous
+    phonetic: '/ˈnjuːmərəs/'
+    partOfSpeech: adjective
+    definition: 'Existing in large numbers; many'
+    definitionZh: '众多的，许多的'
+    exampleSentence: 'The detective had solved numerous cases, but this one was the most puzzling.'
+    exampleSentenceZh: '这位侦探破过无数案件，但这个是最令人困惑的。'
+    wordFamily:
+      - form: number
+        partOfSpeech: noun
+    collocations:
+      - 'numerous occasions'
+      - 'numerous examples'
+      - 'on numerous times'
+    synonyms: [many, countless, several]
+    antonyms: [few, scarce, rare]
+    level: 3
+    firstAppear: D081
+    reviewSchedule: [D082, D084, D088, D095, D111]
+
+  - id: V0403
+    word: sufficient
+    phonetic: '/səˈfɪʃnt/'
+    partOfSpeech: adjective
+    definition: 'Enough; as much as is needed'
+    definitionZh: '足够的，充分的'
+    exampleSentence: 'Is there sufficient evidence to prove who took the missing painting?'
+    exampleSentenceZh: '有足够的证据证明是谁拿走了那幅失踪的画吗？'
+    wordFamily:
+      - form: sufficiently
+        partOfSpeech: adverb
+      - form: insufficient
+        partOfSpeech: adjective
+    collocations:
+      - 'sufficient evidence'
+      - 'sufficient time'
+      - 'not sufficient'
+    synonyms: [enough, adequate, ample]
+    antonyms: [insufficient, inadequate, lacking]
+    level: 3
+    firstAppear: D081
+    reviewSchedule: [D082, D084, D088, D095, D111]
+
+  - id: V0404
+    word: essential
+    phonetic: '/ɪˈsenʃl/'
+    partOfSpeech: adjective
+    definition: 'Completely necessary; extremely important'
+    definitionZh: '必不可少的，至关重要的'
+    exampleSentence: 'A magnifying glass is an essential tool for any young detective.'
+    exampleSentenceZh: '放大镜是每个年轻侦探必不可少的工具。'
+    wordFamily:
+      - form: essentially
+        partOfSpeech: adverb
+      - form: essence
+        partOfSpeech: noun
+    collocations:
+      - 'essential information'
+      - 'absolutely essential'
+      - 'essential equipment'
+    synonyms: [necessary, vital, crucial]
+    antonyms: [unnecessary, optional, unimportant]
+    level: 2
+    firstAppear: D081
+    reviewSchedule: [D082, D084, D088, D095, D111]
+
+  - id: V0405
+    word: particular
+    phonetic: '/pəˈtɪkjələ/'
+    partOfSpeech: adjective
+    definition: 'Specific; one and not any other'
+    definitionZh: '特定的，特别的'
+    exampleSentence: 'The detective was interested in one particular detail — the colour of the car.'
+    exampleSentenceZh: '侦探对一个特定的细节感兴趣——那辆车的颜色。'
+    wordFamily:
+      - form: particularly
+        partOfSpeech: adverb
+    collocations:
+      - 'in particular'
+      - 'this particular'
+      - 'nothing in particular'
+    synonyms: [specific, certain, individual]
+    antonyms: [general, universal, common]
+    level: 2
+    firstAppear: D081
+    reviewSchedule: [D082, D084, D088, D095, D111]
+
+  # ============================================
+  # D082: V0406-V0410 — Places & Settings
+  # ============================================
+
+  - id: V0406
+    word: abandoned
+    phonetic: '/əˈbændənd/'
+    partOfSpeech: adjective
+    definition: 'Left empty and no longer used or cared for'
+    definitionZh: '废弃的，被遗弃的'
+    exampleSentence: 'The treasure map led them to an abandoned warehouse near the harbour.'
+    exampleSentenceZh: '藏宝图把他们引到了港口附近的一座废弃仓库。'
+    wordFamily:
+      - form: abandon
+        partOfSpeech: verb
+      - form: abandonment
+        partOfSpeech: noun
+    collocations:
+      - 'abandoned building'
+      - 'abandoned vehicle'
+      - 'completely abandoned'
+    synonyms: [deserted, empty, neglected]
+    antonyms: [occupied, inhabited, maintained]
+    level: 2
+    firstAppear: D082
+    reviewSchedule: [D083, D085, D089, D096, D112]
+
+  - id: V0407
+    word: remote
+    phonetic: '/rɪˈməʊt/'
+    partOfSpeech: adjective
+    definition: 'Far away from other places or people'
+    definitionZh: '偏远的，遥远的'
+    exampleSentence: 'The mysterious signal came from a remote island that appeared on no map.'
+    exampleSentenceZh: '这个神秘的信号来自一个在地图上找不到的偏远岛屿。'
+    wordFamily:
+      - form: remotely
+        partOfSpeech: adverb
+      - form: remoteness
+        partOfSpeech: noun
+    collocations:
+      - 'remote area'
+      - 'remote location'
+      - 'remote possibility'
+    synonyms: [distant, isolated, faraway]
+    antonyms: [nearby, close, accessible]
+    level: 2
+    firstAppear: D082
+    reviewSchedule: [D083, D085, D089, D096, D112]
+
+  - id: V0408
+    word: interior
+    phonetic: '/ɪnˈtɪəriə/'
+    partOfSpeech: noun
+    definition: 'The inside part of something, especially a building'
+    definitionZh: '内部，室内'
+    exampleSentence: 'The interior of the old mansion was covered in dust and cobwebs.'
+    exampleSentenceZh: '老宅的内部布满了灰尘和蜘蛛网。'
+    wordFamily:
+      - form: interior
+        partOfSpeech: adjective
+    collocations:
+      - 'the interior of'
+      - 'interior design'
+      - 'interior walls'
+    synonyms: [inside, inner part, core]
+    antonyms: [exterior, outside, surface]
+    level: 2
+    firstAppear: D082
+    reviewSchedule: [D083, D085, D089, D096, D112]
+
+  - id: V0409
+    word: beneath
+    phonetic: '/bɪˈniːθ/'
+    partOfSpeech: preposition
+    definition: 'In or to a lower position; under'
+    definitionZh: '在……下面'
+    exampleSentence: 'Beneath the floorboards, they found a small metal box full of old letters.'
+    exampleSentenceZh: '在地板下面，他们发现了一个装满旧信件的小金属盒。'
+    wordFamily: []
+    collocations:
+      - 'beneath the surface'
+      - 'hidden beneath'
+      - 'just beneath'
+    synonyms: [under, below, underneath]
+    antonyms: [above, over, on top of]
+    level: 2
+    firstAppear: D082
+    reviewSchedule: [D083, D085, D089, D096, D112]
+
+  - id: V0410
+    word: passage
+    phonetic: '/ˈpæsɪdʒ/'
+    partOfSpeech: noun
+    definition: 'A long narrow way through or along something; also a section of text'
+    definitionZh: '通道，走廊；段落'
+    exampleSentence: 'A secret passage behind the bookshelf led to an underground room.'
+    exampleSentenceZh: '书架后面的一条秘密通道通向一个地下房间。'
+    wordFamily:
+      - form: passageway
+        partOfSpeech: noun
+    collocations:
+      - 'secret passage'
+      - 'narrow passage'
+      - 'a passage from a book'
+    synonyms: [corridor, tunnel, hallway]
+    antonyms: [dead end, blockage]
+    level: 2
+    firstAppear: D082
+    reviewSchedule: [D083, D085, D089, D096, D112]
+
+  # ============================================
+  # D083: V0411-V0415 — Actions & Verbs
+  # ============================================
+
+  - id: V0411
+    word: attempt
+    phonetic: '/əˈtempt/'
+    partOfSpeech: noun
+    definition: 'An act of trying to do something, especially something difficult'
+    definitionZh: '尝试，企图'
+    exampleSentence: 'This was his third attempt to crack the combination lock on the safe.'
+    exampleSentenceZh: '这是他第三次尝试破解保险箱的密码锁。'
+    wordFamily:
+      - form: attempt
+        partOfSpeech: verb
+      - form: attempted
+        partOfSpeech: adjective
+    collocations:
+      - 'make an attempt'
+      - 'failed attempt'
+      - 'in an attempt to'
+    synonyms: [try, effort, endeavour]
+    antonyms: [success, achievement]
+    level: 2
+    firstAppear: D083
+    reviewSchedule: [D084, D086, D090, D097, D113]
+
+  - id: V0412
+    word: seize
+    phonetic: '/siːz/'
+    partOfSpeech: verb
+    definition: 'To take hold of something suddenly and firmly; to grab'
+    definitionZh: '抓住，夺取'
+    exampleSentence: 'The police officer seized the stolen necklace from the suspect pocket.'
+    exampleSentenceZh: '警察从嫌疑人口袋里夺取了被盗的项链。'
+    wordFamily:
+      - form: seizure
+        partOfSpeech: noun
+    collocations:
+      - 'seize the opportunity'
+      - 'seize control'
+      - 'seize something from'
+    synonyms: [grab, snatch, capture]
+    antonyms: [release, free, let go]
+    level: 3
+    firstAppear: D083
+    reviewSchedule: [D084, D086, D090, D097, D113]
+
+  - id: V0413
+    word: obtain
+    phonetic: '/əbˈteɪn/'
+    partOfSpeech: verb
+    definition: 'To get something, especially by effort or planning'
+    definitionZh: '获得，取得'
+    exampleSentence: 'The detective managed to obtain a copy of the security camera recording.'
+    exampleSentenceZh: '侦探设法获得了一份安全摄像头录像的副本。'
+    wordFamily:
+      - form: obtainable
+        partOfSpeech: adjective
+    collocations:
+      - 'obtain permission'
+      - 'obtain information'
+      - 'obtain evidence'
+    synonyms: [get, acquire, secure]
+    antonyms: [lose, give up, surrender]
+    level: 3
+    firstAppear: D083
+    reviewSchedule: [D084, D086, D090, D097, D113]
+
+  - id: V0414
+    word: require
+    phonetic: '/rɪˈkwaɪə/'
+    partOfSpeech: verb
+    definition: 'To need something; to make something necessary'
+    definitionZh: '需要，要求'
+    exampleSentence: 'Solving this puzzle requires patience and careful attention to detail.'
+    exampleSentenceZh: '解决这个谜题需要耐心和对细节的仔细关注。'
+    wordFamily:
+      - form: requirement
+        partOfSpeech: noun
+      - form: required
+        partOfSpeech: adjective
+    collocations:
+      - 'require attention'
+      - 'require effort'
+      - 'required to do'
+    synonyms: [need, demand, call for]
+    antonyms: [provide, supply, offer]
+    level: 2
+    firstAppear: D083
+    reviewSchedule: [D084, D086, D090, D097, D113]
+
+  - id: V0415
+    word: reveal
+    phonetic: '/rɪˈviːl/'
+    partOfSpeech: verb
+    definition: 'To show something that was hidden; to make known'
+    definitionZh: '揭露，展现'
+    exampleSentence: 'Peeling back the old wallpaper revealed a hidden safe in the wall.'
+    exampleSentenceZh: '揭开旧墙纸后，露出了墙里的一个隐藏保险箱。'
+    wordFamily:
+      - form: revelation
+        partOfSpeech: noun
+      - form: revealing
+        partOfSpeech: adjective
+    collocations:
+      - 'reveal a secret'
+      - 'reveal the answer'
+      - 'gradually reveal'
+    synonyms: [uncover, expose, disclose]
+    antonyms: [hide, conceal, cover]
+    level: 2
+    firstAppear: D083
+    reviewSchedule: [D084, D086, D090, D097, D113]
+
+  # ============================================
+  # D084: V0416-V0420 — State & Condition
+  # ============================================
+
+  - id: V0416
+    word: urgent
+    phonetic: '/ˈɜːdʒənt/'
+    partOfSpeech: adjective
+    definition: 'Needing to be dealt with immediately'
+    definitionZh: '紧急的，急迫的'
+    exampleSentence: 'An urgent message arrived at midnight: the museum alarm had been triggered.'
+    exampleSentenceZh: '午夜收到了一条紧急消息：博物馆的警报被触发了。'
+    wordFamily:
+      - form: urgency
+        partOfSpeech: noun
+      - form: urgently
+        partOfSpeech: adverb
+    collocations:
+      - 'urgent matter'
+      - 'urgent message'
+      - 'most urgent'
+    synonyms: [pressing, critical, immediate]
+    antonyms: [unimportant, minor, trivial]
+    level: 2
+    firstAppear: D084
+    reviewSchedule: [D085, D087, D091, D098, D114]
+
+  - id: V0417
+    word: potential
+    phonetic: '/pəˈtenʃl/'
+    partOfSpeech: adjective
+    definition: 'Possible but not yet actual; that could happen or develop'
+    definitionZh: '潜在的，可能的'
+    exampleSentence: 'The detective made a list of all potential suspects who had access to the room.'
+    exampleSentenceZh: '侦探列出了所有能够进入房间的潜在嫌疑人名单。'
+    wordFamily:
+      - form: potential
+        partOfSpeech: noun
+      - form: potentially
+        partOfSpeech: adverb
+    collocations:
+      - 'potential danger'
+      - 'potential suspect'
+      - 'reach full potential'
+    synonyms: [possible, likely, prospective]
+    antonyms: [actual, certain, definite]
+    level: 2
+    firstAppear: D084
+    reviewSchedule: [D085, D087, D091, D098, D114]
+
+  - id: V0418
+    word: inevitable
+    phonetic: '/ɪnˈevɪtəbl/'
+    partOfSpeech: adjective
+    definition: 'Certain to happen and impossible to avoid'
+    definitionZh: '不可避免的，必然的'
+    exampleSentence: 'Once the detective had all the clues, catching the thief was inevitable.'
+    exampleSentenceZh: '一旦侦探掌握了所有线索，抓住小偷就是不可避免的了。'
+    wordFamily:
+      - form: inevitably
+        partOfSpeech: adverb
+    collocations:
+      - 'inevitable conclusion'
+      - 'seem inevitable'
+      - 'the inevitable result'
+    synonyms: [unavoidable, certain, inescapable]
+    antonyms: [avoidable, uncertain, unlikely]
+    level: 3
+    firstAppear: D084
+    reviewSchedule: [D085, D087, D091, D098, D114]
+
+  - id: V0419
+    word: typical
+    phonetic: '/ˈtɪpɪkl/'
+    partOfSpeech: adjective
+    definition: 'Having the usual qualities of a particular type of person or thing'
+    definitionZh: '典型的，有代表性的'
+    exampleSentence: 'A typical detective story begins with a crime and ends with the truth being revealed.'
+    exampleSentenceZh: '一个典型的侦探故事以一桩犯罪开始，以真相被揭露结束。'
+    wordFamily:
+      - form: typically
+        partOfSpeech: adverb
+      - form: atypical
+        partOfSpeech: adjective
+    collocations:
+      - 'typical example'
+      - 'typical of'
+      - 'not typical'
+    synonyms: [characteristic, normal, standard]
+    antonyms: [atypical, unusual, exceptional]
+    level: 2
+    firstAppear: D084
+    reviewSchedule: [D085, D087, D091, D098, D114]
+
+  - id: V0420
+    word: peculiar
+    phonetic: '/pɪˈkjuːliə/'
+    partOfSpeech: adjective
+    definition: 'Strange or unusual, especially in a way that is hard to explain'
+    definitionZh: '奇特的，古怪的'
+    exampleSentence: 'There was something peculiar about the way the clock hands moved backwards.'
+    exampleSentenceZh: '时钟指针倒着走，有什么奇特的地方。'
+    wordFamily:
+      - form: peculiarity
+        partOfSpeech: noun
+      - form: peculiarly
+        partOfSpeech: adverb
+    collocations:
+      - 'peculiar behaviour'
+      - 'peculiar smell'
+      - 'peculiar to'
+    synonyms: [strange, odd, unusual]
+    antonyms: [normal, ordinary, common]
+    level: 3
+    firstAppear: D084
+    reviewSchedule: [D085, D087, D091, D098, D114]
+
+  # ============================================
+  # D085: V0421-V0425 — Certainty & Possibility
+  # ============================================
+
+  - id: V0421
+    word: definite
+    phonetic: '/ˈdefɪnət/'
+    partOfSpeech: adjective
+    definition: 'Clear and certain; not likely to change'
+    definitionZh: '明确的，确定的'
+    exampleSentence: 'We have definite proof that the letter was posted from the village post office.'
+    exampleSentenceZh: '我们有明确的证据表明这封信是从村邮局寄出的。'
+    wordFamily:
+      - form: definitely
+        partOfSpeech: adverb
+      - form: indefinite
+        partOfSpeech: adjective
+    collocations:
+      - 'definite answer'
+      - 'definite proof'
+      - 'definite plan'
+    synonyms: [certain, clear, positive]
+    antonyms: [uncertain, indefinite, vague]
+    level: 2
+    firstAppear: D085
+    reviewSchedule: [D086, D088, D092, D099, D115]
+
+  - id: V0422
+    word: probable
+    phonetic: '/ˈprɒbəbl/'
+    partOfSpeech: adjective
+    definition: 'Likely to happen or be true'
+    definitionZh: '可能的，大概的'
+    exampleSentence: 'The most probable explanation is that the cat knocked the vase off the shelf.'
+    exampleSentenceZh: '最可能的解释是猫把花瓶从架子上碰了下来。'
+    wordFamily:
+      - form: probably
+        partOfSpeech: adverb
+      - form: probability
+        partOfSpeech: noun
+      - form: improbable
+        partOfSpeech: adjective
+    collocations:
+      - 'highly probable'
+      - 'probable cause'
+      - 'the most probable'
+    synonyms: [likely, possible, expected]
+    antonyms: [improbable, unlikely, doubtful]
+    level: 2
+    firstAppear: D085
+    reviewSchedule: [D086, D088, D092, D099, D115]
+
+  - id: V0423
+    word: unlikely
+    phonetic: '/ʌnˈlaɪkli/'
+    partOfSpeech: adjective
+    definition: 'Not expected to happen; probably not true'
+    definitionZh: '不太可能的'
+    exampleSentence: 'It seemed unlikely that a seven-year-old could have climbed over such a tall fence.'
+    exampleSentenceZh: '一个七岁的孩子能翻过这么高的围栏似乎不太可能。'
+    wordFamily:
+      - form: likely
+        partOfSpeech: adjective
+    collocations:
+      - 'highly unlikely'
+      - 'seem unlikely'
+      - 'unlikely event'
+    synonyms: [improbable, doubtful, implausible]
+    antonyms: [likely, probable, certain]
+    level: 2
+    firstAppear: D085
+    reviewSchedule: [D086, D088, D092, D099, D115]
+
+  - id: V0424
+    word: certain
+    phonetic: '/ˈsɜːtn/'
+    partOfSpeech: adjective
+    definition: 'Sure; having no doubt about something'
+    definitionZh: '确定的，肯定的'
+    exampleSentence: 'Are you certain that you locked the door before leaving the house?'
+    exampleSentenceZh: '你确定离开房子之前锁了门吗？'
+    wordFamily:
+      - form: certainly
+        partOfSpeech: adverb
+      - form: certainty
+        partOfSpeech: noun
+      - form: uncertain
+        partOfSpeech: adjective
+    collocations:
+      - 'certain of'
+      - 'absolutely certain'
+      - 'make certain'
+    synonyms: [sure, confident, positive]
+    antonyms: [uncertain, doubtful, unsure]
+    level: 2
+    firstAppear: D085
+    reviewSchedule: [D086, D088, D092, D099, D115]
+
+  - id: V0425
+    word: vague
+    phonetic: '/veɪɡ/'
+    partOfSpeech: adjective
+    definition: 'Not clear or definite; not expressed precisely'
+    definitionZh: '模糊的，含糊的'
+    exampleSentence: 'The witness gave only a vague description — tall, dark hair, and a long coat.'
+    exampleSentenceZh: '目击者只给出了模糊的描述——高个子，深色头发，穿着长外套。'
+    wordFamily:
+      - form: vaguely
+        partOfSpeech: adverb
+      - form: vagueness
+        partOfSpeech: noun
+    collocations:
+      - 'vague idea'
+      - 'vague description'
+      - 'deliberately vague'
+    synonyms: [unclear, imprecise, fuzzy]
+    antonyms: [clear, precise, definite]
+    level: 3
+    firstAppear: D085
+    reviewSchedule: [D086, D088, D092, D099, D115]
+
+  # ============================================
+  # D086: V0426-V0430 — Explanation & Reasoning
+  # ============================================
+
+  - id: V0426
+    word: account
+    phonetic: '/əˈkaʊnt/'
+    partOfSpeech: noun
+    definition: 'A description or report of an event or experience'
+    definitionZh: '描述，叙述；账户'
+    exampleSentence: 'The two witnesses gave very different accounts of what happened that evening.'
+    exampleSentenceZh: '两位目击者对那天晚上发生的事情给出了非常不同的叙述。'
+    wordFamily:
+      - form: account for
+        partOfSpeech: phrasal verb
+      - form: accountable
+        partOfSpeech: adjective
+    collocations:
+      - 'give an account'
+      - 'take into account'
+      - 'account for something'
+    synonyms: [report, description, narrative]
+    antonyms: []
+    level: 2
+    firstAppear: D086
+    reviewSchedule: [D087, D089, D093, D100, D116]
+
+  - id: V0427
+    word: explanation
+    phonetic: '/ˌekspləˈneɪʃn/'
+    partOfSpeech: noun
+    definition: 'A statement that makes something clear or gives reasons for something'
+    definitionZh: '解释，说明'
+    exampleSentence: 'The only logical explanation was that someone had copied the key.'
+    exampleSentenceZh: '唯一合乎逻辑的解释是有人复制了钥匙。'
+    wordFamily:
+      - form: explain
+        partOfSpeech: verb
+      - form: explanatory
+        partOfSpeech: adjective
+    collocations:
+      - 'possible explanation'
+      - 'logical explanation'
+      - 'demand an explanation'
+    synonyms: [reason, justification, clarification]
+    antonyms: [mystery, puzzle]
+    level: 2
+    firstAppear: D086
+    reviewSchedule: [D087, D089, D093, D100, D116]
+
+  - id: V0428
+    word: theory
+    phonetic: '/ˈθɪəri/'
+    partOfSpeech: noun
+    definition: 'An idea or set of ideas intended to explain something'
+    definitionZh: '理论，假说'
+    exampleSentence: 'My theory is that the cat knocked the fish bowl over, not a burglar!'
+    exampleSentenceZh: '我的理论是猫打翻了鱼缸，不是小偷！'
+    wordFamily:
+      - form: theoretical
+        partOfSpeech: adjective
+      - form: theoretically
+        partOfSpeech: adverb
+    collocations:
+      - 'in theory'
+      - 'test a theory'
+      - 'support a theory'
+    synonyms: [hypothesis, idea, explanation]
+    antonyms: [fact, proof, certainty]
+    level: 2
+    firstAppear: D086
+    reviewSchedule: [D087, D089, D093, D100, D116]
+
+  - id: V0429
+    word: logical
+    phonetic: '/ˈlɒdʒɪkl/'
+    partOfSpeech: adjective
+    definition: 'Using reason and clear thinking; making sense'
+    definitionZh: '合乎逻辑的，合理的'
+    exampleSentence: 'A good detective always looks for the most logical explanation first.'
+    exampleSentenceZh: '一个好的侦探总是先寻找最合乎逻辑的解释。'
+    wordFamily:
+      - form: logic
+        partOfSpeech: noun
+      - form: logically
+        partOfSpeech: adverb
+      - form: illogical
+        partOfSpeech: adjective
+    collocations:
+      - 'logical thinking'
+      - 'logical explanation'
+      - 'perfectly logical'
+    synonyms: [reasonable, rational, sensible]
+    antonyms: [illogical, irrational, unreasonable]
+    level: 2
+    firstAppear: D086
+    reviewSchedule: [D087, D089, D093, D100, D116]
+
+  - id: V0430
+    word: principle
+    phonetic: '/ˈprɪnsəpl/'
+    partOfSpeech: noun
+    definition: 'A basic rule or belief that guides behaviour or thinking'
+    definitionZh: '原则，原理'
+    exampleSentence: 'The detective followed the principle that everyone is innocent until proven guilty.'
+    exampleSentenceZh: '侦探遵循"未经证实有罪前人人都是无辜的"这一原则。'
+    wordFamily:
+      - form: principled
+        partOfSpeech: adjective
+    collocations:
+      - 'basic principle'
+      - 'on principle'
+      - 'guiding principle'
+    synonyms: [rule, law, standard]
+    antonyms: [exception]
+    level: 3
+    firstAppear: D086
+    reviewSchedule: [D087, D089, D093, D100, D116]
+
+  # ============================================
+  # D087: V0431-V0435 — Response & Reaction
+  # ============================================
+
+  - id: V0431
+    word: respond
+    phonetic: '/rɪˈspɒnd/'
+    partOfSpeech: verb
+    definition: 'To say or do something as a reply or reaction'
+    definitionZh: '回应，作出反应'
+    exampleSentence: 'When asked about the broken vase, the boy did not respond for a long time.'
+    exampleSentenceZh: '当被问到破碎的花瓶时，男孩很久没有回应。'
+    wordFamily:
+      - form: response
+        partOfSpeech: noun
+      - form: responsive
+        partOfSpeech: adjective
+    collocations:
+      - 'respond to'
+      - 'respond quickly'
+      - 'fail to respond'
+    synonyms: [reply, answer, react]
+    antonyms: [ignore, disregard]
+    level: 2
+    firstAppear: D087
+    reviewSchedule: [D088, D090, D094, D101, D117]
+
+  - id: V0432
+    word: react
+    phonetic: '/riˈækt/'
+    partOfSpeech: verb
+    definition: 'To behave in a particular way because of something that has happened'
+    definitionZh: '反应，作出回应'
+    exampleSentence: 'The detective watched how each person reacted when they heard the news.'
+    exampleSentenceZh: '侦探观察了每个人听到消息时的反应。'
+    wordFamily:
+      - form: reaction
+        partOfSpeech: noun
+      - form: reactive
+        partOfSpeech: adjective
+    collocations:
+      - 'react to'
+      - 'react quickly'
+      - 'react differently'
+    synonyms: [respond, reply, act]
+    antonyms: [ignore, remain passive]
+    level: 2
+    firstAppear: D087
+    reviewSchedule: [D088, D090, D094, D101, D117]
+
+  - id: V0433
+    word: hesitate
+    phonetic: '/ˈhezɪteɪt/'
+    partOfSpeech: verb
+    definition: 'To pause before doing something because you are nervous or unsure'
+    definitionZh: '犹豫，迟疑'
+    exampleSentence: 'The suspect hesitated before answering, which made the detective more curious.'
+    exampleSentenceZh: '嫌疑人在回答前犹豫了一下，这让侦探更加好奇。'
+    wordFamily:
+      - form: hesitation
+        partOfSpeech: noun
+      - form: hesitant
+        partOfSpeech: adjective
+    collocations:
+      - 'hesitate to do'
+      - 'without hesitation'
+      - 'hesitate for a moment'
+    synonyms: [pause, waver, falter]
+    antonyms: [decide, act, proceed]
+    level: 2
+    firstAppear: D087
+    reviewSchedule: [D088, D090, D094, D101, D117]
+
+  - id: V0434
+    word: insist
+    phonetic: '/ɪnˈsɪst/'
+    partOfSpeech: verb
+    definition: 'To say firmly that something is true, especially when others disagree'
+    definitionZh: '坚持，坚称'
+    exampleSentence: 'The shopkeeper insisted that he had locked the door at exactly 6 pm.'
+    exampleSentenceZh: '店主坚持说他在下午6点整锁了门。'
+    wordFamily:
+      - form: insistence
+        partOfSpeech: noun
+      - form: insistent
+        partOfSpeech: adjective
+    collocations:
+      - 'insist on'
+      - 'insist that'
+      - 'strongly insist'
+    synonyms: [demand, maintain, assert]
+    antonyms: [yield, concede, agree]
+    level: 2
+    firstAppear: D087
+    reviewSchedule: [D088, D090, D094, D101, D117]
+
+  - id: V0435
+    word: confess
+    phonetic: '/kənˈfes/'
+    partOfSpeech: verb
+    definition: 'To admit that you have done something wrong or illegal'
+    definitionZh: '坦白，承认'
+    exampleSentence: 'After hours of questioning, the suspect finally confessed to taking the missing jewels.'
+    exampleSentenceZh: '经过数小时的审讯，嫌疑人终于承认了拿走失踪珠宝的事实。'
+    wordFamily:
+      - form: confession
+        partOfSpeech: noun
+    collocations:
+      - 'confess to a crime'
+      - 'reluctantly confess'
+      - 'confess the truth'
+    synonyms: [admit, acknowledge, own up]
+    antonyms: [deny, conceal, hide]
+    level: 3
+    firstAppear: D087
+    reviewSchedule: [D088, D090, D094, D101, D117]
+
+  # ============================================
+  # D088: V0436-V0440 — Connection & Relation
+  # ============================================
+
+  - id: V0436
+    word: associate
+    phonetic: '/əˈsəʊsieɪt/'
+    partOfSpeech: verb
+    definition: 'To connect one thing with another in your mind'
+    definitionZh: '联想，联系'
+    exampleSentence: 'Most people associate detectives with magnifying glasses and deerstalker hats.'
+    exampleSentenceZh: '大多数人会把侦探与放大镜和猎鹿帽联系在一起。'
+    wordFamily:
+      - form: association
+        partOfSpeech: noun
+      - form: associate
+        partOfSpeech: noun
+    collocations:
+      - 'associate with'
+      - 'closely associated'
+      - 'commonly associated'
+    synonyms: [connect, link, relate]
+    antonyms: [separate, disconnect]
+    level: 3
+    firstAppear: D088
+    reviewSchedule: [D089, D091, D095, D102, D118]
+
+  - id: V0437
+    word: involve
+    phonetic: '/ɪnˈvɒlv/'
+    partOfSpeech: verb
+    definition: 'To include something as a necessary part; to affect someone'
+    definitionZh: '涉及，包含'
+    exampleSentence: 'The mystery involved a missing painting, three suspects, and a very clever parrot.'
+    exampleSentenceZh: '这个谜案涉及一幅失踪的画、三个嫌疑人和一只非常聪明的鹦鹉。'
+    wordFamily:
+      - form: involvement
+        partOfSpeech: noun
+      - form: involved
+        partOfSpeech: adjective
+    collocations:
+      - 'involve someone in'
+      - 'deeply involved'
+      - 'involved in a crime'
+    synonyms: [include, concern, affect]
+    antonyms: [exclude, omit]
+    level: 2
+    firstAppear: D088
+    reviewSchedule: [D089, D091, D095, D102, D118]
+
+  - id: V0438
+    word: contribute
+    phonetic: '/kənˈtrɪbjuːt/'
+    partOfSpeech: verb
+    definition: 'To give something in order to help achieve something or add to something'
+    definitionZh: '贡献，有助于'
+    exampleSentence: 'Each member of the detective club contributed their own special skill to solving the case.'
+    exampleSentenceZh: '侦探俱乐部的每个成员都贡献了自己的特殊技能来破案。'
+    wordFamily:
+      - form: contribution
+        partOfSpeech: noun
+      - form: contributor
+        partOfSpeech: noun
+    collocations:
+      - 'contribute to'
+      - 'contribute ideas'
+      - 'significantly contribute'
+    synonyms: [add, give, provide]
+    antonyms: [take, withhold, withdraw]
+    level: 2
+    firstAppear: D088
+    reviewSchedule: [D089, D091, D095, D102, D118]
+
+  - id: V0439
+    word: depend
+    phonetic: '/dɪˈpend/'
+    partOfSpeech: verb
+    definition: 'To be decided by or influenced by something'
+    definitionZh: '取决于，依赖'
+    exampleSentence: 'Whether we can solve the mystery depends on finding that last missing clue.'
+    exampleSentenceZh: '我们能否破解谜案取决于找到最后那条丢失的线索。'
+    wordFamily:
+      - form: dependence
+        partOfSpeech: noun
+      - form: dependent
+        partOfSpeech: adjective
+      - form: independent
+        partOfSpeech: adjective
+    collocations:
+      - 'depend on'
+      - 'it depends'
+      - 'depend entirely'
+    synonyms: [rely on, count on, hinge on]
+    antonyms: [be independent of]
+    level: 2
+    firstAppear: D088
+    reviewSchedule: [D089, D091, D095, D102, D118]
+
+  - id: V0440
+    word: consist
+    phonetic: '/kənˈsɪst/'
+    partOfSpeech: verb
+    definition: 'To be made up of particular things or people'
+    definitionZh: '由……组成'
+    exampleSentence: 'The detective kit consisted of a magnifying glass, a notebook, and a torch.'
+    exampleSentenceZh: '侦探工具包由一个放大镜、一个笔记本和一个手电筒组成。'
+    wordFamily:
+      - form: consistent
+        partOfSpeech: adjective
+      - form: consistency
+        partOfSpeech: noun
+    collocations:
+      - 'consist of'
+      - 'mainly consist'
+      - 'consist entirely of'
+    synonyms: [comprise, be composed of, be made up of]
+    antonyms: [exclude, lack]
+    level: 2
+    firstAppear: D088
+    reviewSchedule: [D089, D091, D095, D102, D118]
+
+  # ============================================
+  # D089: V0441-V0445 — Change & Influence
+  # ============================================
+
+  - id: V0441
+    word: transform
+    phonetic: '/trænsˈfɔːm/'
+    partOfSpeech: verb
+    definition: 'To change something completely in form or appearance'
+    definitionZh: '转变，改变'
+    exampleSentence: 'The disguise completely transformed the detective so that nobody recognised her.'
+    exampleSentenceZh: '伪装彻底改变了侦探的外貌，以至于没人认出她。'
+    wordFamily:
+      - form: transformation
+        partOfSpeech: noun
+    collocations:
+      - 'completely transform'
+      - 'transform into'
+      - 'dramatic transformation'
+    synonyms: [change, convert, alter]
+    antonyms: [preserve, maintain, keep]
+    level: 3
+    firstAppear: D089
+    reviewSchedule: [D090, D092, D096, D103, D119]
+
+  - id: V0442
+    word: influence
+    phonetic: '/ˈɪnfluəns/'
+    partOfSpeech: verb
+    definition: 'To have an effect on how someone behaves, thinks, or develops'
+    definitionZh: '影响，感化'
+    exampleSentence: 'Reading mystery stories influenced her decision to start a detective club at school.'
+    exampleSentenceZh: '阅读推理故事影响了她在学校创办侦探俱乐部的决定。'
+    wordFamily:
+      - form: influence
+        partOfSpeech: noun
+      - form: influential
+        partOfSpeech: adjective
+    collocations:
+      - 'influence a decision'
+      - 'strongly influence'
+      - 'under the influence of'
+    synonyms: [affect, shape, sway]
+    antonyms: [deter, discourage]
+    level: 2
+    firstAppear: D089
+    reviewSchedule: [D090, D092, D096, D103, D119]
+
+  - id: V0443
+    word: eliminate
+    phonetic: '/ɪˈlɪmɪneɪt/'
+    partOfSpeech: verb
+    definition: 'To remove or get rid of something completely'
+    definitionZh: '消除，排除'
+    exampleSentence: 'By checking alibis, the detective was able to eliminate three of the five suspects.'
+    exampleSentenceZh: '通过核实不在场证明，侦探能够排除五个嫌疑人中的三个。'
+    wordFamily:
+      - form: elimination
+        partOfSpeech: noun
+    collocations:
+      - 'eliminate a suspect'
+      - 'eliminate the possibility'
+      - 'process of elimination'
+    synonyms: [remove, exclude, rule out]
+    antonyms: [include, add, keep]
+    level: 3
+    firstAppear: D089
+    reviewSchedule: [D090, D092, D096, D103, D119]
+
+  - id: V0444
+    word: replace
+    phonetic: '/rɪˈpleɪs/'
+    partOfSpeech: verb
+    definition: 'To put something new in the place of something old or broken'
+    definitionZh: '替换，更换'
+    exampleSentence: 'The thief had replaced the real diamond with a glass copy.'
+    exampleSentenceZh: '小偷用一个玻璃复制品替换了真钻石。'
+    wordFamily:
+      - form: replacement
+        partOfSpeech: noun
+      - form: replaceable
+        partOfSpeech: adjective
+      - form: irreplaceable
+        partOfSpeech: adjective
+    collocations:
+      - 'replace with'
+      - 'replace someone'
+      - 'impossible to replace'
+    synonyms: [substitute, swap, exchange]
+    antonyms: [keep, retain, preserve]
+    level: 2
+    firstAppear: D089
+    reviewSchedule: [D090, D092, D096, D103, D119]
+
+  - id: V0445
+    word: restore
+    phonetic: '/rɪˈstɔː/'
+    partOfSpeech: verb
+    definition: 'To bring something back to its original condition or position'
+    definitionZh: '恢复，修复'
+    exampleSentence: 'The museum worked hard to restore the damaged painting after it was recovered.'
+    exampleSentenceZh: '博物馆在追回受损的画作后，努力修复它。'
+    wordFamily:
+      - form: restoration
+        partOfSpeech: noun
+    collocations:
+      - 'restore order'
+      - 'restore to its original state'
+      - 'fully restored'
+    synonyms: [repair, recover, rebuild]
+    antonyms: [damage, destroy, ruin]
+    level: 3
+    firstAppear: D089
+    reviewSchedule: [D090, D092, D096, D103, D119]
+
+  # ============================================
+  # D090: V0446-V0450 — Review & Summary
+  # ============================================
+
+  - id: V0446
+    word: conclude
+    phonetic: '/kənˈkluːd/'
+    partOfSpeech: verb
+    definition: 'To bring something to an end; to finish'
+    definitionZh: '结束，终结'
+    exampleSentence: 'The detective concluded the investigation by presenting all the evidence to the team.'
+    exampleSentenceZh: '侦探通过向团队展示所有证据来结束了调查。'
+    wordFamily:
+      - form: conclusion
+        partOfSpeech: noun
+      - form: concluding
+        partOfSpeech: adjective
+    collocations:
+      - 'conclude by saying'
+      - 'to conclude'
+      - 'concluding remarks'
+    synonyms: [finish, end, complete]
+    antonyms: [begin, start, open]
+    level: 2
+    firstAppear: D090
+    reviewSchedule: [D091, D093, D097, D104, D120]
+
+  - id: V0447
+    word: summarise
+    phonetic: '/ˈsʌməraɪz/'
+    partOfSpeech: verb
+    definition: 'To give a short statement of the main points of something'
+    definitionZh: '总结，概括'
+    exampleSentence: 'Can you summarise the main clues we have found so far?'
+    exampleSentenceZh: '你能总结一下我们到目前为止发现的主要线索吗？'
+    wordFamily:
+      - form: summary
+        partOfSpeech: noun
+    collocations:
+      - 'briefly summarise'
+      - 'summarise the main points'
+      - 'to summarise'
+    synonyms: [sum up, outline, recap]
+    antonyms: [elaborate, expand, detail]
+    level: 2
+    firstAppear: D090
+    reviewSchedule: [D091, D093, D097, D104, D120]
+
+  - id: V0448
+    word: evaluate
+    phonetic: '/ɪˈvæljueɪt/'
+    partOfSpeech: verb
+    definition: 'To judge the value, importance, or quality of something'
+    definitionZh: '评估，评价'
+    exampleSentence: 'Before drawing any conclusions, we must carefully evaluate all the evidence.'
+    exampleSentenceZh: '在得出任何结论之前，我们必须仔细评估所有证据。'
+    wordFamily:
+      - form: evaluation
+        partOfSpeech: noun
+    collocations:
+      - 'evaluate the evidence'
+      - 'carefully evaluate'
+      - 'evaluate the situation'
+    synonyms: [assess, judge, appraise]
+    antonyms: [ignore, disregard]
+    level: 3
+    firstAppear: D090
+    reviewSchedule: [D091, D093, D097, D104, D120]
+
+  - id: V0449
+    word: accomplish
+    phonetic: '/əˈkʌmplɪʃ/'
+    partOfSpeech: verb
+    definition: 'To succeed in doing or completing something'
+    definitionZh: '完成，实现'
+    exampleSentence: 'The young detectives accomplished their mission and returned the stolen trophy to the school.'
+    exampleSentenceZh: '年轻的侦探们完成了任务，将被盗的奖杯归还给了学校。'
+    wordFamily:
+      - form: accomplishment
+        partOfSpeech: noun
+      - form: accomplished
+        partOfSpeech: adjective
+    collocations:
+      - 'accomplish a goal'
+      - 'accomplish a task'
+      - 'mission accomplished'
+    synonyms: [achieve, complete, fulfil]
+    antonyms: [fail, abandon, quit]
+    level: 2
+    firstAppear: D090
+    reviewSchedule: [D091, D093, D097, D104, D120]
+
+  - id: V0450
+    word: recommend
+    phonetic: '/ˌrekəˈmend/'
+    partOfSpeech: verb
+    definition: 'To suggest that someone should do something or that something is good'
+    definitionZh: '推荐，建议'
+    exampleSentence: 'I would recommend this mystery book to anyone who loves solving puzzles.'
+    exampleSentenceZh: '我会把这本推理书推荐给任何喜欢解谜的人。'
+    wordFamily:
+      - form: recommendation
+        partOfSpeech: noun
+    collocations:
+      - 'highly recommend'
+      - 'recommend that'
+      - 'strongly recommend'
+    synonyms: [suggest, advise, propose]
+    antonyms: [discourage, warn against]
+    level: 2
+    firstAppear: D090
+    reviewSchedule: [D091, D093, D097, D104, D120]

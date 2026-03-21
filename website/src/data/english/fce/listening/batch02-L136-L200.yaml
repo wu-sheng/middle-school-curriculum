@@ -1,0 +1,2772 @@
+# FCE Daily Listening Practice — Month 3, Batch 02
+# 65 exercises (L136–L200)
+# L136–L165: Part 1 short extracts (30 exercises, difficulty 2)
+# L166–L180: Part 2 sentence completion (15 exercises, difficulty 2)
+# L181–L200: Part 3 multiple matching (20 exercises, NEW type, difficulty 2)
+# Theme: Detective / Mystery / Puzzle stories for 8-9 year old learners
+
+extracts:
+  # ============================================================
+  # L136–L165: Part 1 — Short Extracts (Detective/Mystery Theme)
+  # ============================================================
+
+  # ============================================================
+  # L136: The Missing Painting
+  # ============================================================
+
+  - id: L136
+    type: short-extract
+    title: 'The Missing Painting'
+    titleZh: '消失的画作'
+    scene: 'You will hear a museum guide talking about a stolen painting.'
+    sceneZh: '你将听到一位博物馆导游在谈论一幅被偷的画作。'
+    difficulty: 2
+    audioFile: 'L136.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Good morning everyone. I want to tell you about something rather mysterious that happened here last month. One of our paintings — a small landscape by a local artist — disappeared overnight.'
+      - speaker: guide
+        voice: nova
+        text: 'The strange thing is, we have security cameras covering every entrance and exit, and none of them recorded anything unusual. What amazed everyone was that the security guards heard absolutely nothing. The alarm was not triggered either.'
+      - speaker: guide
+        voice: nova
+        text: 'The police investigated and eventually found the painting hidden behind a false wall in the basement. It turned out that a former employee who knew the building very well had taken it through an old service tunnel.'
+    question:
+      text: 'What does the guide find most surprising about the theft?'
+      textZh: '导游觉得这次盗窃最令人惊讶的是什么？'
+      options:
+        A: 'Nobody heard anything during the night.'
+        B: 'The painting was not very valuable.'
+        C: 'The thief left a note behind.'
+      answer: 'A'
+      explanation: 'The guide says "What amazed everyone was that the security guards heard absolutely nothing."'
+      explanationZh: '导游说"让所有人震惊的是，保安什么都没有听到"。'
+
+  # ============================================================
+  # L137: The Locked Room
+  # ============================================================
+
+  - id: L137
+    type: short-extract
+    title: 'The Locked Room'
+    titleZh: '密室之谜'
+    scene: 'You will hear a girl telling her friend about a puzzle she solved.'
+    sceneZh: '你将听到一个女孩告诉朋友她解决的一个谜题。'
+    difficulty: 2
+    audioFile: 'L137.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'You know that escape room we went to on Saturday? It was so tricky! We were stuck in the first room for ages.'
+      - speaker: boy
+        voice: echo
+        text: 'What was the puzzle like?'
+      - speaker: girl
+        voice: shimmer
+        text: 'Well, there was a clock on the wall showing half past three, and a bookshelf with coloured books. We tried everything — moving the books, pressing the clock hands. But the real clue was the numbers on the spines of the books. When we read them in order, they gave us the code for the padlock.'
+    question:
+      text: 'How did the girl finally solve the puzzle?'
+      textZh: '女孩最终是怎么解开谜题的？'
+      options:
+        A: 'She moved the hands of the clock.'
+        B: 'She read numbers on the book spines.'
+        C: 'She found a key behind the bookshelf.'
+      answer: 'B'
+      explanation: 'The girl says "the real clue was the numbers on the spines of the books" which gave them the padlock code.'
+      explanationZh: '女孩说"真正的线索是书脊上的数字"，这些数字组成了密码锁的密码。'
+
+  # ============================================================
+  # L138: The Secret Message
+  # ============================================================
+
+  - id: L138
+    type: short-extract
+    title: 'The Secret Message'
+    titleZh: '秘密消息'
+    scene: 'You will hear a teacher telling students about a famous code.'
+    sceneZh: '你将听到一位老师给学生讲述一个著名的密码。'
+    difficulty: 2
+    audioFile: 'L138.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Today I want to tell you about the Caesar cipher, which is one of the oldest codes in the world. Julius Caesar used it to send secret messages to his generals over two thousand years ago.'
+      - speaker: teacher
+        voice: nova
+        text: 'The way it works is actually quite simple. You take each letter in your message and shift it forward by a certain number. Caesar always shifted by three. So the letter A becomes D, B becomes E, and so on. The clever part is that only the person who knows the shift number can read the message.'
+    question:
+      text: 'What made the Caesar cipher effective?'
+      textZh: '凯撒密码为什么有效？'
+      options:
+        A: 'It used very long messages.'
+        B: 'Only someone who knew the shift number could read it.'
+        C: 'It was written in a different language.'
+      answer: 'B'
+      explanation: 'The teacher says "only the person who knows the shift number can read the message."'
+      explanationZh: '老师说"只有知道偏移数字的人才能读懂消息"。'
+
+  # ============================================================
+  # L139: The Footprints in the Garden
+  # ============================================================
+
+  - id: L139
+    type: short-extract
+    title: 'The Footprints in the Garden'
+    titleZh: '花园里的脚印'
+    scene: 'You will hear a boy describing something strange he found at home.'
+    sceneZh: '你将听到一个男孩描述他在家里发现的奇怪事情。'
+    difficulty: 2
+    audioFile: 'L139.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Mum, come and look! There are huge footprints all through the vegetable garden. They go from the fence to the shed and then back again.'
+      - speaker: mum
+        voice: nova
+        text: 'Goodness! They are quite big, aren''t they? Do you think it was a dog?'
+      - speaker: boy
+        voice: echo
+        text: 'No way — these prints have five toes, like a person but much bigger. And look, whatever it was knocked over the wheelbarrow. I think it was a badger. My nature book says badgers have five toes on each paw and they come out at night looking for worms.'
+    question:
+      text: 'What does the boy think made the footprints?'
+      textZh: '男孩认为是什么留下了脚印？'
+      options:
+        A: 'A large dog'
+        B: 'A person with big feet'
+        C: 'A badger'
+      answer: 'C'
+      explanation: 'The boy says "I think it was a badger" and explains that his nature book describes their five-toed paw prints.'
+      explanationZh: '男孩说"我觉得是獾"，并解释他的自然书上描述了獾五趾的爪印特征。'
+
+  # ============================================================
+  # L140: The Disappearing Sandwiches
+  # ============================================================
+
+  - id: L140
+    type: short-extract
+    title: 'The Disappearing Sandwiches'
+    titleZh: '消失的三明治'
+    scene: 'You will hear two children trying to solve a mystery at school.'
+    sceneZh: '你将听到两个孩子试图解开学校里的一个谜团。'
+    difficulty: 2
+    audioFile: 'L140.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'It has happened again! Someone has taken a sandwich from my lunchbox. That is the third time this week.'
+      - speaker: boy
+        voice: echo
+        text: 'That is really annoying. Have you told the teacher?'
+      - speaker: girl
+        voice: shimmer
+        text: 'Yes, but she said she did not see anything. So I came up with a plan. Tomorrow I am going to put a tiny dot of food colouring on the bread. If someone eats it, their lips will turn bright blue. Then we will know who the sandwich thief is!'
+    question:
+      text: 'What is the girl''s plan to catch the thief?'
+      textZh: '女孩打算怎么抓住小偷？'
+      options:
+        A: 'She will ask the teacher to watch her lunchbox.'
+        B: 'She will hide a camera near her bag.'
+        C: 'She will put food colouring on the bread.'
+      answer: 'C'
+      explanation: 'The girl says she will put food colouring on the bread so the thief''s lips turn blue.'
+      explanationZh: '女孩说她会在面包上涂食用色素，这样小偷的嘴唇就会变蓝。'
+
+  # ============================================================
+  # L141: The Strange Noise
+  # ============================================================
+
+  - id: L141
+    type: short-extract
+    title: 'The Strange Noise in the Attic'
+    titleZh: '阁楼里的奇怪声响'
+    scene: 'You will hear a girl telling her friend about a noise at her house.'
+    sceneZh: '你将听到一个女孩告诉朋友她家里的声响。'
+    difficulty: 2
+    audioFile: 'L141.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'Every night at about eleven o''clock, I hear this scratching sound coming from the attic. It really scared me at first.'
+      - speaker: boy
+        voice: echo
+        text: 'Did you go up and check?'
+      - speaker: girl
+        voice: shimmer
+        text: 'My dad went up with a torch. He did not find anything at first, but then he noticed a small hole in the corner of the roof. A family of squirrels had made a nest up there! They were scratching the wood every time they moved around.'
+    question:
+      text: 'What was causing the strange noise?'
+      textZh: '奇怪的声响是什么引起的？'
+      options:
+        A: 'A branch hitting the roof in the wind'
+        B: 'Squirrels moving around in their nest'
+        C: 'Mice running behind the walls'
+      answer: 'B'
+      explanation: 'The girl explains that a family of squirrels had made a nest in the attic and scratched the wood when they moved.'
+      explanationZh: '女孩解释说一家松鼠在阁楼筑了巢，它们移动时会刮擦木头。'
+
+  # ============================================================
+  # L142: The Invisible Ink Letter
+  # ============================================================
+
+  - id: L142
+    type: short-extract
+    title: 'The Invisible Ink Letter'
+    titleZh: '隐形墨水信'
+    scene: 'You will hear a boy explaining a science experiment to his class.'
+    sceneZh: '你将听到一个男孩向同学们解释一个科学实验。'
+    difficulty: 2
+    audioFile: 'L142.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'For my science project, I made invisible ink using lemon juice. You write your message on white paper with a cotton bud dipped in the juice. When the juice dries, the writing disappears completely.'
+      - speaker: boy
+        voice: echo
+        text: 'To read the secret message, you hold the paper near a warm light bulb. The heat makes the lemon juice turn brown, and the letters appear. I tried it with orange juice and vinegar too, but lemon juice worked the best because it turned the darkest brown.'
+    question:
+      text: 'Why did the boy choose lemon juice over other liquids?'
+      textZh: '男孩为什么选择柠檬汁而不是其他液体？'
+      options:
+        A: 'It was the easiest to find at home.'
+        B: 'It produced the darkest colour when heated.'
+        C: 'It dried the fastest on paper.'
+      answer: 'B'
+      explanation: 'The boy says "lemon juice worked the best because it turned the darkest brown."'
+      explanationZh: '男孩说"柠檬汁效果最好，因为它变成的棕色最深"。'
+
+  # ============================================================
+  # L143: The Map in the Library Book
+  # ============================================================
+
+  - id: L143
+    type: short-extract
+    title: 'The Map in the Library Book'
+    titleZh: '图书馆书里的地图'
+    scene: 'You will hear a librarian talking about an unusual discovery.'
+    sceneZh: '你将听到一位图书管理员谈论一个不寻常的发现。'
+    difficulty: 2
+    audioFile: 'L143.mp3'
+    script:
+      - speaker: librarian
+        voice: nova
+        text: 'Something wonderful happened last Tuesday. A young reader was borrowing an old adventure novel from the nineteen fifties when a folded piece of paper fell out from between the pages.'
+      - speaker: librarian
+        voice: nova
+        text: 'It turned out to be a hand-drawn map of our town, but from seventy years ago. It showed buildings and streets that no longer exist. The most interesting thing was that someone had drawn a red X next to the old oak tree in the park — as if they had hidden something there. We contacted the local history museum, and they were absolutely thrilled to add it to their collection.'
+    question:
+      text: 'What happened to the map after it was found?'
+      textZh: '地图被发现后怎样了？'
+      options:
+        A: 'The librarian threw it away.'
+        B: 'It was given to the local history museum.'
+        C: 'The children went to dig under the oak tree.'
+      answer: 'B'
+      explanation: 'The librarian says "We contacted the local history museum, and they were absolutely thrilled to add it to their collection."'
+      explanationZh: '图书管理员说"我们联系了当地历史博物馆，他们非常高兴地将它收入了馆藏"。'
+
+  # ============================================================
+  # L144: The Mystery of the Broken Window
+  # ============================================================
+
+  - id: L144
+    type: short-extract
+    title: 'The Mystery of the Broken Window'
+    titleZh: '破窗之谜'
+    scene: 'You will hear a father and daughter discussing a broken window.'
+    sceneZh: '你将听到父女俩讨论一扇破窗。'
+    difficulty: 2
+    audioFile: 'L144.mp3'
+    script:
+      - speaker: dad
+        voice: echo
+        text: 'The kitchen window is broken. There is glass all over the floor and a cricket ball in the middle of it.'
+      - speaker: girl
+        voice: shimmer
+        text: 'It was not me, Dad! I was at Emma''s house all afternoon.'
+      - speaker: dad
+        voice: echo
+        text: 'I know it was not you. But here is the strange thing — the glass is on the outside of the house, not the inside. That means the ball went from inside the kitchen outwards. So someone inside the house threw it out, not the other way around.'
+    question:
+      text: 'What does the father discover about the broken window?'
+      textZh: '父亲发现了破窗的什么秘密？'
+      options:
+        A: 'The ball was thrown from inside the house.'
+        B: 'A neighbour kicked a football at the window.'
+        C: 'The wind blew the window open and it cracked.'
+      answer: 'A'
+      explanation: 'The father notices the glass is on the outside, meaning the ball went from inside outwards.'
+      explanationZh: '父亲注意到玻璃碎片在外面，说明球是从里面往外扔出去的。'
+
+  # ============================================================
+  # L145: The Coded Diary
+  # ============================================================
+
+  - id: L145
+    type: short-extract
+    title: 'The Coded Diary'
+    titleZh: '密码日记'
+    scene: 'You will hear a girl telling her brother about an old diary.'
+    sceneZh: '你将听到一个女孩告诉哥哥一本旧日记的事情。'
+    difficulty: 2
+    audioFile: 'L145.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'Look what I found in Grandma''s box — it is a diary from when she was young. But all the entries are written in some kind of code. Every word is spelled backwards!'
+      - speaker: boy
+        voice: echo
+        text: 'That is clever! Can you read any of it?'
+      - speaker: girl
+        voice: shimmer
+        text: 'Yes, once I worked out the trick it was easy. She wrote about her best friend called Mary and their secret den behind the old church. But what really surprised me was that she wrote about wanting to be a pilot. I never knew Grandma wanted to fly planes!'
+    question:
+      text: 'What surprised the girl most about the diary?'
+      textZh: '日记里最让女孩惊讶的是什么？'
+      options:
+        A: 'That her grandmother had a secret den'
+        B: 'That her grandmother wanted to be a pilot'
+        C: 'That her grandmother could write in code'
+      answer: 'B'
+      explanation: 'The girl says "what really surprised me was that she wrote about wanting to be a pilot."'
+      explanationZh: '女孩说"最让我惊讶的是她写到自己想当飞行员"。'
+
+  # ============================================================
+  # L146: The Treasure Hunt Clue
+  # ============================================================
+
+  - id: L146
+    type: short-extract
+    title: 'The Treasure Hunt Clue'
+    titleZh: '寻宝线索'
+    scene: 'You will hear two children working on a treasure hunt at a birthday party.'
+    sceneZh: '你将听到两个孩子在生日派对上参加寻宝游戏。'
+    difficulty: 2
+    audioFile: 'L146.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'The clue says "I have hands but cannot clap, a face but cannot smile. Find me and look behind me." What do you think that means?'
+      - speaker: girl
+        voice: shimmer
+        text: 'Hands and a face... it must be a clock! There is a big clock in the hallway. Let me check behind it.'
+      - speaker: boy
+        voice: echo
+        text: 'You were right! There is an envelope taped to the back. The next clue says we need to find something that is full of holes but still holds water.'
+    question:
+      text: 'Where did the children find the second clue?'
+      textZh: '孩子们在哪里找到了第二条线索？'
+      options:
+        A: 'Inside a cupboard'
+        B: 'Behind a clock'
+        C: 'Under a table'
+      answer: 'B'
+      explanation: 'The girl worked out the riddle referred to a clock, and they found the envelope taped behind it.'
+      explanationZh: '女孩猜出谜语指的是钟，他们在钟的背面找到了信封。'
+
+  # ============================================================
+  # L147: The Mysterious Package
+  # ============================================================
+
+  - id: L147
+    type: short-extract
+    title: 'The Mysterious Package'
+    titleZh: '神秘的包裹'
+    scene: 'You will hear a boy talking to his mother about a package.'
+    sceneZh: '你将听到一个男孩和妈妈谈论一个包裹。'
+    difficulty: 2
+    audioFile: 'L147.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Mum, a package arrived for us today but there is no name on it — just our address. And it is wrapped in brown paper with a red ribbon.'
+      - speaker: mum
+        voice: nova
+        text: 'That is strange. Open it carefully and see what is inside.'
+      - speaker: boy
+        voice: echo
+        text: 'It is a box of homemade biscuits! And there is a small card that says "Thank you for feeding my cat while I was away." It must be from Mrs Henderson next door. She got back from holiday yesterday.'
+    question:
+      text: 'Who most likely sent the package?'
+      textZh: '最可能是谁寄的包裹？'
+      options:
+        A: 'A relative who lives far away'
+        B: 'A neighbour who went on holiday'
+        C: 'A friend from school'
+      answer: 'B'
+      explanation: 'The card mentions feeding a cat, and the boy recalls that Mrs Henderson next door just returned from holiday.'
+      explanationZh: '卡片提到帮忙喂猫，男孩想起隔壁的亨德森太太刚度假回来。'
+
+  # ============================================================
+  # L148: The Vanishing Coins
+  # ============================================================
+
+  - id: L148
+    type: short-extract
+    title: 'The Vanishing Coins'
+    titleZh: '消失的硬币'
+    scene: 'You will hear a street magician explaining a trick to a child.'
+    sceneZh: '你将听到一位街头魔术师给孩子解释一个魔术。'
+    difficulty: 2
+    audioFile: 'L148.mp3'
+    script:
+      - speaker: magician
+        voice: echo
+        text: 'Watch closely! I place three coins on the table — one, two, three. Now I cover them with this handkerchief and... when I lift it... the coins are gone!'
+      - speaker: girl
+        voice: shimmer
+        text: 'Wow! Where did they go?'
+      - speaker: magician
+        voice: echo
+        text: 'Ah, a magician never reveals his secrets! But I will give you a hint. The secret is not in the handkerchief — it is in the table. This table has a special flap that opens when I press my knee against it underneath. The coins slide through and land in a hidden tray below.'
+    question:
+      text: 'How does the magic trick really work?'
+      textZh: '这个魔术到底是怎么变的？'
+      options:
+        A: 'The coins are hidden inside the handkerchief.'
+        B: 'The coins fall through a flap in the table.'
+        C: 'The magician hides the coins in his hand.'
+      answer: 'B'
+      explanation: 'The magician reveals that a special flap in the table opens when he presses his knee, and the coins slide into a hidden tray.'
+      explanationZh: '魔术师透露桌子上有一个特殊的翻板，他用膝盖一按就会打开，硬币滑进下面的隐藏托盘。'
+
+  # ============================================================
+  # L149: The Wrong Suitcase
+  # ============================================================
+
+  - id: L149
+    type: short-extract
+    title: 'The Wrong Suitcase'
+    titleZh: '拿错的行李箱'
+    scene: 'You will hear a woman talking to an airport officer about her luggage.'
+    sceneZh: '你将听到一位女士在机场与工作人员谈论她的行李。'
+    difficulty: 2
+    audioFile: 'L149.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: 'Excuse me, I picked up this black suitcase from the carousel, but when I opened it at the hotel, it was full of someone else''s clothes. The suitcase looks exactly like mine — same brand, same colour, same size.'
+      - speaker: officer
+        voice: echo
+        text: 'That happens more often than you might think. Do you have your luggage tag receipt?'
+      - speaker: woman
+        voice: nova
+        text: 'Yes, here it is. The tag number is BL seven nine three four. I should have tied a coloured ribbon on the handle like my husband suggested. He always says that black suitcases all look the same.'
+    question:
+      text: 'What does the woman wish she had done?'
+      textZh: '这位女士希望自己之前做了什么？'
+      options:
+        A: 'Bought a different colour suitcase'
+        B: 'Tied a ribbon on her suitcase handle'
+        C: 'Written her name on the outside'
+      answer: 'B'
+      explanation: 'The woman says "I should have tied a coloured ribbon on the handle like my husband suggested."'
+      explanationZh: '女士说"我应该像丈夫建议的那样在把手上系一条彩色丝带"。'
+
+  # ============================================================
+  # L150: The Hidden Room
+  # ============================================================
+
+  - id: L150
+    type: short-extract
+    title: 'The Hidden Room'
+    titleZh: '隐藏的房间'
+    scene: 'You will hear a tour guide talking about an old castle.'
+    sceneZh: '你将听到一位导游讲述一座古堡的故事。'
+    difficulty: 2
+    audioFile: 'L150.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'This castle is over four hundred years old, and it still has plenty of secrets. In two thousand and fifteen, builders were repairing a wall on the second floor when they found a hidden room behind the fireplace.'
+      - speaker: guide
+        voice: nova
+        text: 'Inside the room, there was a small wooden chest containing old letters and a gold ring. Historians believe the room was a priest hole — a secret hiding place used during a time when it was dangerous to practise certain religions. The room was just big enough for one person to sit in.'
+    question:
+      text: 'What was the hidden room originally used for?'
+      textZh: '这个隐藏的房间最初是用来做什么的？'
+      options:
+        A: 'Storing valuable treasure'
+        B: 'Hiding a person during dangerous times'
+        C: 'Keeping important documents safe'
+      answer: 'B'
+      explanation: 'The guide says historians believe it was a "priest hole" — a hiding place used during times of religious danger.'
+      explanationZh: '导游说历史学家认为这是一个"牧师洞"——在宗教迫害时期用来藏人的密室。'
+
+  # ============================================================
+  # L151: The Dog That Found the Evidence
+  # ============================================================
+
+  - id: L151
+    type: short-extract
+    title: 'The Dog That Found the Evidence'
+    titleZh: '找到证据的狗'
+    scene: 'You will hear a police officer talking to school children about a working dog.'
+    sceneZh: '你将听到一位警察给学生讲述一条工作犬的故事。'
+    difficulty: 2
+    audioFile: 'L151.mp3'
+    script:
+      - speaker: officer
+        voice: echo
+        text: 'This is Baxter, our search dog. He has been working with us for five years now. Last year, he helped solve a really important case.'
+      - speaker: officer
+        voice: echo
+        text: 'Someone had stolen jewellery from a shop and hidden it somewhere in a large park. We searched for hours and found nothing. Then we brought in Baxter. Within twenty minutes, he started digging near a bench and uncovered a bag buried under the soil. All the missing jewellery was inside. His nose is a hundred times more sensitive than ours.'
+    question:
+      text: 'How long did it take Baxter to find the jewellery?'
+      textZh: '巴克斯特花了多长时间找到珠宝？'
+      options:
+        A: 'About five hours'
+        B: 'About twenty minutes'
+        C: 'About two days'
+      answer: 'B'
+      explanation: 'The officer says "Within twenty minutes, he started digging near a bench and uncovered a bag."'
+      explanationZh: '警察说"不到二十分钟，他就开始在长椅旁边挖掘，发现了一个袋子"。'
+
+  # ============================================================
+  # L152: The Fingerprint Workshop
+  # ============================================================
+
+  - id: L152
+    type: short-extract
+    title: 'The Fingerprint Workshop'
+    titleZh: '指纹工作坊'
+    scene: 'You will hear a science teacher explaining how to collect fingerprints.'
+    sceneZh: '你将听到一位科学老师讲解如何采集指纹。'
+    difficulty: 2
+    audioFile: 'L152.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Today we are going to learn how real detectives collect fingerprints. First, you need a smooth surface — glass works best. Press your thumb firmly onto the glass.'
+      - speaker: teacher
+        voice: nova
+        text: 'Now, take this fine powder — it is actually just cocoa powder — and brush it gently over the glass with a soft paintbrush. You will see your fingerprint appear like magic. The powder sticks to the oils left by your skin. Then you press sticky tape over the print and lift it off. Every person''s fingerprints are unique, which is why police use them to identify people.'
+    question:
+      text: 'Why does the powder reveal the fingerprint?'
+      textZh: '为什么粉末能显示指纹？'
+      options:
+        A: 'It reacts chemically with the glass.'
+        B: 'It sticks to the oils left by the skin.'
+        C: 'It changes colour when it touches water.'
+      answer: 'B'
+      explanation: 'The teacher explains that "the powder sticks to the oils left by your skin."'
+      explanationZh: '老师解释说"粉末会附着在皮肤留下的油脂上"。'
+
+  # ============================================================
+  # L153: The Mysterious Footsteps
+  # ============================================================
+
+  - id: L153
+    type: short-extract
+    title: 'The Mysterious Footsteps'
+    titleZh: '神秘的脚步声'
+    scene: 'You will hear a radio presenter telling a ghost story.'
+    sceneZh: '你将听到一位电台主持人讲鬼故事。'
+    difficulty: 2
+    audioFile: 'L153.mp3'
+    script:
+      - speaker: presenter
+        voice: nova
+        text: 'And now for our spooky story of the week. Mr Collins moved into an old cottage last autumn. Every evening at exactly nine o''clock, he heard footsteps walking across the floor above him, even though no one else lived there.'
+      - speaker: presenter
+        voice: nova
+        text: 'He was quite frightened until a plumber came to fix the heating. The plumber discovered that the old metal pipes in the ceiling expand when the heating turns on at nine o''clock, and the expanding metal makes a sound exactly like someone walking. Mystery solved — no ghosts, just pipes!'
+    question:
+      text: 'What was actually causing the footstep sounds?'
+      textZh: '脚步声的真正原因是什么？'
+      options:
+        A: 'A neighbour walking upstairs'
+        B: 'Metal pipes expanding from the heat'
+        C: 'Mice running inside the walls'
+      answer: 'B'
+      explanation: 'The plumber found that old metal pipes expand when the heating turns on, making a walking sound.'
+      explanationZh: '水管工发现老旧的金属管道在暖气开启时会膨胀，发出像走路一样的声音。'
+
+  # ============================================================
+  # L154: The Puzzle Box
+  # ============================================================
+
+  - id: L154
+    type: short-extract
+    title: 'The Puzzle Box'
+    titleZh: '机关盒'
+    scene: 'You will hear a girl showing her friend a special box.'
+    sceneZh: '你将听到一个女孩向朋友展示一个特别的盒子。'
+    difficulty: 2
+    audioFile: 'L154.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'My grandfather gave me this Japanese puzzle box. It looks like a normal wooden box, but you cannot just lift the lid to open it.'
+      - speaker: boy
+        voice: echo
+        text: 'So how do you open it?'
+      - speaker: girl
+        voice: shimmer
+        text: 'You have to slide the panels in the right order. This one first, then this one, then push this corner. It takes twelve moves to open it. Grandpa said Japanese craftsmen have been making these for over a hundred and fifty years. He keeps a small key inside his.'
+    question:
+      text: 'How many moves does it take to open the puzzle box?'
+      textZh: '打开这个机关盒需要几步？'
+      options:
+        A: 'Six moves'
+        B: 'Twelve moves'
+        C: 'Twenty moves'
+      answer: 'B'
+      explanation: 'The girl says "It takes twelve moves to open it."'
+      explanationZh: '女孩说"需要十二步才能打开它"。'
+
+  # ============================================================
+  # L155: The Compass Clue
+  # ============================================================
+
+  - id: L155
+    type: short-extract
+    title: 'The Compass Clue'
+    titleZh: '指南针线索'
+    scene: 'You will hear a scout leader giving directions during an orienteering activity.'
+    sceneZh: '你将听到一位童子军领队在定向越野活动中给出指示。'
+    difficulty: 2
+    audioFile: 'L155.mp3'
+    script:
+      - speaker: leader
+        voice: echo
+        text: 'Right, teams, listen carefully. Your next clue is hidden at the point where you walk exactly two hundred metres due north from the old bridge, and then turn east for another fifty metres.'
+      - speaker: leader
+        voice: echo
+        text: 'But be careful — the compass reading near the iron gate is not accurate because the metal affects the needle. A few teams last year went completely the wrong way because of that. So make sure you pass the gate before you take your compass reading. Good luck!'
+    question:
+      text: 'Why might the compass give a wrong reading near the gate?'
+      textZh: '为什么指南针在铁门附近可能会读数不准？'
+      options:
+        A: 'The battery in the compass is low.'
+        B: 'The metal gate affects the compass needle.'
+        C: 'The gate blocks the view of the sun.'
+      answer: 'B'
+      explanation: 'The leader warns that "the metal affects the needle" near the iron gate.'
+      explanationZh: '领队警告说铁门附近"金属会影响指针"。'
+
+  # ============================================================
+  # L156: The Missing Jigsaw Piece
+  # ============================================================
+
+  - id: L156
+    type: short-extract
+    title: 'The Missing Jigsaw Piece'
+    titleZh: '丢失的拼图块'
+    scene: 'You will hear a boy talking about finishing a jigsaw puzzle.'
+    sceneZh: '你将听到一个男孩谈论完成拼图的事。'
+    difficulty: 2
+    audioFile: 'L156.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'I spent the whole weekend working on a one-thousand-piece jigsaw puzzle of a pirate ship. When I got to the very last piece, it was missing! I looked everywhere — under the table, behind the sofa, even in the rubbish bin.'
+      - speaker: boy
+        voice: echo
+        text: 'Then my little sister came in holding something behind her back. She had taken the last piece because she wanted to be the one to put it in. I was annoyed at first, but then she said she just wanted to help, so we put the final piece in together.'
+    question:
+      text: 'Who had the missing jigsaw piece?'
+      textZh: '谁拿了那块丢失的拼图？'
+      options:
+        A: 'The boy found it under the sofa.'
+        B: 'His mother had put it away by mistake.'
+        C: 'His little sister had taken it.'
+      answer: 'C'
+      explanation: 'The boy says his little sister had taken the last piece because she wanted to be the one to put it in.'
+      explanationZh: '男孩说他的小妹妹拿走了最后一块，因为她想自己放上去。'
+
+  # ============================================================
+  # L157: The Colour-Changing Potion
+  # ============================================================
+
+  - id: L157
+    type: short-extract
+    title: 'The Colour-Changing Potion'
+    titleZh: '变色药水'
+    scene: 'You will hear a science club leader showing an experiment.'
+    sceneZh: '你将听到科学社团负责人展示一个实验。'
+    difficulty: 2
+    audioFile: 'L157.mp3'
+    script:
+      - speaker: leader
+        voice: nova
+        text: 'Watch this! I have a glass of what looks like water. Now I am going to add a few drops from this bottle. See how the liquid turns bright purple? And now if I add vinegar... it changes to red!'
+      - speaker: leader
+        voice: nova
+        text: 'This is red cabbage juice. It works as a natural indicator — that means it changes colour depending on whether something is an acid or a base. Acids like vinegar turn it red, and bases like baking soda turn it green. Scientists use indicators like this to test unknown liquids safely.'
+    question:
+      text: 'What makes the red cabbage juice change colour?'
+      textZh: '是什么让紫甘蓝汁变色？'
+      options:
+        A: 'The temperature of the liquid'
+        B: 'Whether the liquid is an acid or a base'
+        C: 'How much water is added'
+      answer: 'B'
+      explanation: 'The leader explains that red cabbage juice "changes colour depending on whether something is an acid or a base."'
+      explanationZh: '负责人解释说紫甘蓝汁"会根据液体是酸性还是碱性来变色"。'
+
+  # ============================================================
+  # L158: The Time Capsule
+  # ============================================================
+
+  - id: L158
+    type: short-extract
+    title: 'The Time Capsule'
+    titleZh: '时间胶囊'
+    scene: 'You will hear a headteacher talking at a school assembly about a time capsule.'
+    sceneZh: '你将听到校长在学校集会上谈论一个时间胶囊。'
+    difficulty: 2
+    audioFile: 'L158.mp3'
+    script:
+      - speaker: headteacher
+        voice: nova
+        text: 'I have exciting news. As you know, the builders have been digging up the old playground to lay new pipes. Yesterday, they found a metal box buried one metre underground.'
+      - speaker: headteacher
+        voice: nova
+        text: 'It was a time capsule buried by pupils of this school in nineteen seventy-five — that is over fifty years ago! Inside, we found class photographs, drawings, a list of children''s favourite foods, and a letter addressed to "the future pupils of Hillside Primary." The most touching item was a cassette tape with the children singing their school song. We are going to try to play it at next week''s assembly.'
+    question:
+      text: 'What does the headteacher plan to do with the cassette tape?'
+      textZh: '校长打算怎么处理那盘磁带？'
+      options:
+        A: 'Send it to a museum for display'
+        B: 'Play it at next week''s assembly'
+        C: 'Give it to the children who buried it'
+      answer: 'B'
+      explanation: 'The headteacher says "We are going to try to play it at next week''s assembly."'
+      explanationZh: '校长说"我们打算在下周的集会上试着播放它"。'
+
+  # ============================================================
+  # L159: The Spy Gadget
+  # ============================================================
+
+  - id: L159
+    type: short-extract
+    title: 'The Spy Gadget'
+    titleZh: '间谍小工具'
+    scene: 'You will hear a boy describing a periscope he made.'
+    sceneZh: '你将听到一个男孩描述他做的潜望镜。'
+    difficulty: 2
+    audioFile: 'L159.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'I made a periscope from two cardboard tubes and two small mirrors. You tape the mirrors inside at forty-five degree angles, one at the top and one at the bottom.'
+      - speaker: boy
+        voice: echo
+        text: 'When you look through the bottom hole, the light bounces off the first mirror, travels down the tube, hits the second mirror, and reaches your eye. It means you can see over walls and around corners without being seen. Submarines use the same idea but with much bigger mirrors and lenses. My sister did not believe it worked until she tried it herself.'
+    question:
+      text: 'What convinced the boy''s sister that the periscope worked?'
+      textZh: '是什么让男孩的姐姐相信潜望镜有效？'
+      options:
+        A: 'She read about it in a book.'
+        B: 'She saw a video online.'
+        C: 'She tried it herself.'
+      answer: 'C'
+      explanation: 'The boy says "My sister did not believe it worked until she tried it herself."'
+      explanationZh: '男孩说"我姐姐直到自己试了才相信它能用"。'
+
+  # ============================================================
+  # L160: The Whispering Gallery
+  # ============================================================
+
+  - id: L160
+    type: short-extract
+    title: 'The Whispering Gallery'
+    titleZh: '回音廊'
+    scene: 'You will hear a tour guide explaining a special feature of a famous building.'
+    sceneZh: '你将听到一位导游解释一座著名建筑的特殊功能。'
+    difficulty: 2
+    audioFile: 'L160.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Welcome to the Whispering Gallery. This curved walkway runs around the inside of the dome, thirty metres above the floor. The amazing thing is that if you whisper very quietly while facing the wall on one side, a person standing on the opposite side — over thirty metres away — can hear you perfectly clearly.'
+      - speaker: guide
+        voice: nova
+        text: 'This happens because the sound waves travel along the curved surface of the wall. The dome shape keeps the sound close to the wall instead of letting it spread out into the air. It was not designed to work this way — the architect discovered the effect by accident after the building was finished.'
+    question:
+      text: 'How was the whispering effect discovered?'
+      textZh: '耳语效应是如何被发现的？'
+      options:
+        A: 'Scientists planned it carefully.'
+        B: 'The architect discovered it by accident.'
+        C: 'Visitors complained about strange echoes.'
+      answer: 'B'
+      explanation: 'The guide says "the architect discovered the effect by accident after the building was finished."'
+      explanationZh: '导游说"建筑师在建筑完工后偶然发现了这个效应"。'
+
+  # ============================================================
+  # L161: The Mysterious Lights
+  # ============================================================
+
+  - id: L161
+    type: short-extract
+    title: 'The Mysterious Lights'
+    titleZh: '神秘的光'
+    scene: 'You will hear a park ranger explaining a natural phenomenon.'
+    sceneZh: '你将听到一位公园护林员解释一种自然现象。'
+    difficulty: 2
+    audioFile: 'L161.mp3'
+    script:
+      - speaker: ranger
+        voice: echo
+        text: 'Visitors sometimes tell us they have seen strange glowing lights in the forest at night. Some people think they are ghosts, but actually the explanation is much more interesting.'
+      - speaker: ranger
+        voice: echo
+        text: 'The lights come from a type of fungus that grows on rotting wood. It produces a chemical reaction that creates a soft green glow, just like a firefly does. This is called bioluminescence. The fungus glows to attract insects, which then help spread its tiny spores to new pieces of wood. It is completely harmless and really quite beautiful.'
+    question:
+      text: 'Why does the fungus glow?'
+      textZh: '真菌为什么会发光？'
+      options:
+        A: 'To warn animals to stay away'
+        B: 'To attract insects that spread its spores'
+        C: 'To absorb more moonlight for energy'
+      answer: 'B'
+      explanation: 'The ranger says "The fungus glows to attract insects, which then help spread its tiny spores."'
+      explanationZh: '护林员说"真菌发光是为了吸引昆虫，昆虫帮助传播它的孢子"。'
+
+  # ============================================================
+  # L162: The Riddle Contest
+  # ============================================================
+
+  - id: L162
+    type: short-extract
+    title: 'The Riddle Contest'
+    titleZh: '猜谜比赛'
+    scene: 'You will hear two students preparing for a class riddle competition.'
+    sceneZh: '你将听到两个学生为班级猜谜比赛做准备。'
+    difficulty: 2
+    audioFile: 'L162.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'I have got a really good riddle for the contest. Listen: I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?'
+      - speaker: boy
+        voice: echo
+        text: 'Hmm... speaks without a mouth... comes alive with the wind... is it an echo?'
+      - speaker: girl
+        voice: shimmer
+        text: 'Yes! That was too easy for you. The key clue is "hear without ears" — an echo repeats what you say, so it seems to hear you, but it is just sound bouncing off a surface. I need to find a harder one for the actual contest.'
+    question:
+      text: 'Why does the girl want to change her riddle?'
+      textZh: '女孩为什么想换一个谜语？'
+      options:
+        A: 'The answer was wrong.'
+        B: 'Her friend solved it too easily.'
+        C: 'The teacher said it was not allowed.'
+      answer: 'B'
+      explanation: 'The girl says "That was too easy for you" and "I need to find a harder one for the actual contest."'
+      explanationZh: '女孩说"对你来说太简单了"和"我需要找一个更难的用于正式比赛"。'
+
+  # ============================================================
+  # L163: The Shadow Experiment
+  # ============================================================
+
+  - id: L163
+    type: short-extract
+    title: 'The Shadow Experiment'
+    titleZh: '影子实验'
+    scene: 'You will hear a teacher describing a shadow experiment outdoors.'
+    sceneZh: '你将听到一位老师描述一个户外影子实验。'
+    difficulty: 2
+    audioFile: 'L163.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'This afternoon we are going to track how shadows change throughout the day. Each group will place a stick in the ground and mark the tip of its shadow every thirty minutes from ten o''clock until three.'
+      - speaker: teacher
+        voice: nova
+        text: 'You will notice two things. First, the shadow is longest in the morning and afternoon but shortest around midday. Second, the shadow moves from west in the morning to east in the afternoon. That is because the sun travels from east to west across the sky. In the old days, people used shadow sticks just like this as simple clocks called sundials.'
+    question:
+      text: 'When is the shadow at its shortest?'
+      textZh: '影子什么时候最短？'
+      options:
+        A: 'In the early morning'
+        B: 'Around midday'
+        C: 'In the late afternoon'
+      answer: 'B'
+      explanation: 'The teacher says "the shadow is longest in the morning and afternoon but shortest around midday."'
+      explanationZh: '老师说"影子在早上和下午最长，但在中午最短"。'
+
+  # ============================================================
+  # L164: The Broken Cipher
+  # ============================================================
+
+  - id: L164
+    type: short-extract
+    title: 'The Broken Cipher'
+    titleZh: '被破解的密码'
+    scene: 'You will hear a museum guide talking about codebreaking in history.'
+    sceneZh: '你将听到一位博物馆导游讲述历史上的密码破译。'
+    difficulty: 2
+    audioFile: 'L164.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'During the Second World War, a team of brilliant mathematicians worked here at Bletchley Park to crack enemy codes. The most famous was a machine called Enigma, which the enemy used to send secret messages.'
+      - speaker: guide
+        voice: nova
+        text: 'The team, led by Alan Turing, built a special machine called the Bombe to test thousands of possible settings every day. Breaking the Enigma code is believed to have shortened the war by about two years and saved countless lives. Turing is now considered one of the founders of modern computer science.'
+    question:
+      text: 'What is Alan Turing famous for in addition to codebreaking?'
+      textZh: '除了破译密码，艾伦·图灵还因什么而出名？'
+      options:
+        A: 'Designing the Enigma machine'
+        B: 'Being a founder of modern computer science'
+        C: 'Inventing the first radio transmitter'
+      answer: 'B'
+      explanation: 'The guide says "Turing is now considered one of the founders of modern computer science."'
+      explanationZh: '导游说"图灵现在被认为是现代计算机科学的奠基人之一"。'
+
+  # ============================================================
+  # L165: The Message in the Bottle
+  # ============================================================
+
+  - id: L165
+    type: short-extract
+    title: 'The Message in the Bottle'
+    titleZh: '瓶中信'
+    scene: 'You will hear a girl telling her class about something she found at the beach.'
+    sceneZh: '你将听到一个女孩在班上讲述她在海滩上的发现。'
+    difficulty: 2
+    audioFile: 'L165.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'Last summer, I was walking along the beach in Cornwall when I spotted a glass bottle half-buried in the sand. Inside, there was a rolled-up piece of paper with a message written in pencil.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The message said: "My name is Olaf. I am twelve years old. I threw this bottle into the sea from Norway on the fifth of January." It was dated three years earlier! The bottle had travelled all the way from Norway to England. I wrote back to the address on the note, and now Olaf and I are pen pals. We send each other letters every month.'
+    question:
+      text: 'What was the result of finding the bottle?'
+      textZh: '找到瓶子的结果是什么？'
+      options:
+        A: 'The girl started a bottle collection.'
+        B: 'The girl became pen pals with the sender.'
+        C: 'The girl returned the bottle to Norway.'
+      answer: 'B'
+      explanation: 'The girl says "I wrote back to the address on the note, and now Olaf and I are pen pals."'
+      explanationZh: '女孩说"我按纸条上的地址回信了，现在我和奥拉夫成了笔友"。'
+
+  # ============================================================
+  # L166–L180: Part 2 — Sentence Completion (Detective/Mystery Theme)
+  # ============================================================
+
+  # ============================================================
+  # L166: The Junior Detective Club
+  # ============================================================
+
+  - id: L166
+    type: sentence-completion
+    title: 'The Junior Detective Club'
+    titleZh: '少年侦探社'
+    scene: 'You will hear a girl talking about starting a detective club at her school.'
+    sceneZh: '你将听到一个女孩讲述她在学校成立侦探社的经历。'
+    difficulty: 2
+    audioFile: 'L166.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'My name is Emily and I started the Junior Detective Club at my school last September. I got the idea after reading a Sherlock Holmes story during the summer holidays.'
+      - speaker: girl
+        voice: shimmer
+        text: 'At first, only three of us joined — me, my best friend Lily, and a boy called Marcus who loves puzzles. But by Christmas, the club had grown to fifteen members. We meet every Wednesday after school in the science room because it has big tables where we can spread out our materials.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Each week, I prepare a mystery for the club to solve. Sometimes it is a logic puzzle, like working out who stole a cake based on clues. Other times, it is a practical challenge, like finding a hidden object in the playground using a coded map.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The most popular activity so far has been fingerprint analysis. I taught everyone how to dust for prints using talcum powder and a soft brush. We practised on glass jars and even identified each other by our thumbprints.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Our biggest case happened in October. Someone kept moving things around in the library — books were ending up on the wrong shelves and chairs were stacked in funny patterns. The librarian was quite puzzled.'
+      - speaker: girl
+        voice: shimmer
+        text: 'We set up an observation schedule and took turns watching the library during break times. After two days, Marcus noticed that a first-year student was rearranging the books so that the first letters of the titles on each shelf spelled out a message. It said "Happy Birthday Mrs Cooper" — that was the librarian''s name! The student had been planning a secret surprise all along.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Next term, I want to invite a real police officer to come and talk to us about how they investigate crimes. I have already written a letter to the local police station.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The best thing about the club is that it teaches us to pay attention to small details. My teachers say I am much better at spotting mistakes in my homework now, and I think detective skills are the reason!'
+    sentences:
+      - id: L166-S1
+        text: 'Emily got the idea for the club after reading a _____ story.'
+        textZh: 'Emily在暑假读了一个 _____ 故事后有了成立俱乐部的想法。'
+        answer: 'Sherlock Holmes'
+      - id: L166-S2
+        text: 'By Christmas, the club had grown to _____ members.'
+        textZh: '到圣诞节时，俱乐部已经增长到 _____ 名成员。'
+        answer: 'fifteen'
+      - id: L166-S3
+        text: 'The club meets in the _____ room every Wednesday.'
+        textZh: '俱乐部每周三在 _____ 室聚会。'
+        answer: 'science'
+      - id: L166-S4
+        text: 'The most popular activity has been fingerprint _____.'
+        textZh: '最受欢迎的活动是指纹 _____。'
+        answer: 'analysis'
+      - id: L166-S5
+        text: 'The hidden message in the library books said "Happy Birthday Mrs _____."'
+        textZh: '图书馆书里隐藏的信息写着"生日快乐，_____ 女士"。'
+        answer: 'Cooper'
+      - id: L166-S6
+        text: 'Emily wants to invite a real _____ to talk to the club next term.'
+        textZh: 'Emily想邀请一位真正的 _____ 下学期来俱乐部讲话。'
+        answer: 'police officer'
+
+  # ============================================================
+  # L167: The History of Secret Codes
+  # ============================================================
+
+  - id: L167
+    type: sentence-completion
+    title: 'The History of Secret Codes'
+    titleZh: '密码的历史'
+    scene: 'You will hear a teacher giving a talk about the history of codes and ciphers.'
+    sceneZh: '你将听到一位老师讲述密码和暗号的历史。'
+    difficulty: 2
+    audioFile: 'L167.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Good morning, everyone. Today I am going to take you on a journey through the fascinating history of secret codes. People have been hiding messages in clever ways for thousands of years.'
+      - speaker: teacher
+        voice: nova
+        text: 'The very first known code was used by the ancient Spartans around two thousand five hundred years ago. They wrapped a strip of leather around a wooden stick called a scytale. The message was written on the leather while it was wrapped. When you unwound the strip, the letters looked like nonsense — but if you wound it around a stick of exactly the same width, you could read it again.'
+      - speaker: teacher
+        voice: nova
+        text: 'Then there is the famous pigpen cipher, which was used by a secret society called the Freemasons in the seventeen hundreds. In this cipher, each letter of the alphabet is replaced by a small geometric shape — a square, a triangle, or a dot inside a shape. It looks a bit like alien writing, but it is actually very easy once you know the grid.'
+      - speaker: teacher
+        voice: nova
+        text: 'During the First World War, both sides used codebooks. A codebook is like a dictionary where each common word or phrase has a matching code number. The problem with codebooks was that if the enemy captured one, all your messages were exposed.'
+      - speaker: teacher
+        voice: nova
+        text: 'The biggest breakthrough in code history was the invention of the Enigma machine in the nineteen twenties. It could create millions of different settings, and the settings were changed every single day. It took years for the codebreakers at Bletchley Park to find a way to crack it.'
+      - speaker: teacher
+        voice: nova
+        text: 'Today, we use digital encryption to protect our information. When you see a little padlock icon in your web browser, that means the information you send is scrambled using mathematics so complicated that even the fastest computers would need billions of years to break it.'
+      - speaker: teacher
+        voice: nova
+        text: 'Next week, I will show you how to create your own pigpen cipher and write secret messages to your friends. Please bring a ruler and some graph paper.'
+    sentences:
+      - id: L167-S1
+        text: 'The Spartans wrote messages on leather wrapped around a stick called a _____.'
+        textZh: '斯巴达人在缠绕在一根叫 _____ 的木棒上的皮条上写消息。'
+        answer: 'scytale'
+      - id: L167-S2
+        text: 'The pigpen cipher was used by a group called the _____ in the 1700s.'
+        textZh: '猪圈密码在18世纪被一个叫 _____ 的团体使用。'
+        answer: 'Freemasons'
+      - id: L167-S3
+        text: 'The problem with codebooks was that if the enemy _____ one, all messages were exposed.'
+        textZh: '密码本的问题是如果敌人 _____ 了一本，所有消息就暴露了。'
+        answer: 'captured'
+      - id: L167-S4
+        text: 'The Enigma machine settings were changed every single _____.'
+        textZh: 'Enigma密码机的设置每 _____ 都会更换。'
+        answer: 'day'
+      - id: L167-S5
+        text: 'A padlock icon in your browser means information is protected by _____.'
+        textZh: '浏览器中的锁图标表示信息受到 _____ 保护。'
+        answer: 'digital encryption'
+      - id: L167-S6
+        text: 'Students need to bring a ruler and _____ for next week''s activity.'
+        textZh: '学生们下周的活动需要带尺子和 _____。'
+        answer: 'graph paper'
+
+  # ============================================================
+  # L168: The Escape Room Designer
+  # ============================================================
+
+  - id: L168
+    type: sentence-completion
+    title: 'The Escape Room Designer'
+    titleZh: '密室逃脱设计师'
+    scene: 'You will hear a woman talking about her job designing escape rooms.'
+    sceneZh: '你将听到一位女士谈论她设计密室逃脱的工作。'
+    difficulty: 2
+    audioFile: 'L168.mp3'
+    script:
+      - speaker: designer
+        voice: nova
+        text: 'Hi, my name is Rachel and I design escape rooms for a living. I have been doing this job for six years now, and I have created over twenty different rooms.'
+      - speaker: designer
+        voice: nova
+        text: 'The first thing I do when designing a new room is choose a theme. The most popular themes are haunted houses and detective mysteries, but my personal favourite is the space station theme because I love science fiction.'
+      - speaker: designer
+        voice: nova
+        text: 'A good escape room should take a team of four people about sixty minutes to complete. I always include between eight and twelve puzzles. Some are physical — like finding a hidden key — and others are mental — like solving a maths problem or cracking a code.'
+      - speaker: designer
+        voice: nova
+        text: 'The trickiest part of my job is getting the difficulty right. If the room is too easy, people feel disappointed. If it is too hard, they get frustrated and stop having fun. I aim for about seventy percent of teams to escape within the time limit.'
+      - speaker: designer
+        voice: nova
+        text: 'Before we open a new room to the public, I always test it with a group of children aged eight to twelve. Children are actually better at escape rooms than adults because they look at things from unusual angles. Adults often overthink the puzzles.'
+      - speaker: designer
+        voice: nova
+        text: 'My proudest creation is a pirate-themed room where the final puzzle involves using a real compass to find the direction of a hidden treasure chest. When teams open the chest, they find chocolate gold coins inside. Everyone loves that ending.'
+      - speaker: designer
+        voice: nova
+        text: 'If you are interested in puzzle design, my advice is to start by making treasure hunts for your friends and family. Write clues, hide objects, and watch how people try to solve them. That is exactly how I got started.'
+    sentences:
+      - id: L168-S1
+        text: 'Rachel''s favourite escape room theme is the _____ theme.'
+        textZh: 'Rachel最喜欢的密室主题是 _____ 主题。'
+        answer: 'space station'
+      - id: L168-S2
+        text: 'A good escape room should take about _____ minutes for a team of four.'
+        textZh: '一个好的密室应该让四人团队花大约 _____ 分钟完成。'
+        answer: 'sixty'
+      - id: L168-S3
+        text: 'Rachel aims for about _____ percent of teams to escape in time.'
+        textZh: 'Rachel的目标是大约 _____ 的团队能在时间内逃脱。'
+        answer: 'seventy'
+      - id: L168-S4
+        text: 'New rooms are tested with children aged _____ to twelve.'
+        textZh: '新密室会用 _____ 到十二岁的孩子测试。'
+        answer: 'eight'
+      - id: L168-S5
+        text: 'The pirate room''s final puzzle uses a real _____ to find the treasure.'
+        textZh: '海盗主题密室的最终谜题用真正的 _____ 来找宝藏。'
+        answer: 'compass'
+      - id: L168-S6
+        text: 'Rachel advises beginners to start by making _____ for friends and family.'
+        textZh: 'Rachel建议初学者从为朋友和家人制作 _____ 开始。'
+        answer: 'treasure hunts'
+
+  # ============================================================
+  # L169: The Bird Watcher's Discovery
+  # ============================================================
+
+  - id: L169
+    type: sentence-completion
+    title: 'The Bird Watcher''s Discovery'
+    titleZh: '观鸟者的发现'
+    scene: 'You will hear a man describing how he solved a local wildlife mystery.'
+    sceneZh: '你将听到一位男士描述他如何解开了当地的野生动物之谜。'
+    difficulty: 2
+    audioFile: 'L169.mp3'
+    script:
+      - speaker: man
+        voice: echo
+        text: 'I am a keen bird watcher and I visit our local nature reserve every weekend. About three months ago, I noticed something puzzling — the number of small birds at the feeding station had dropped dramatically. Normally, I would count thirty or forty sparrows and finches, but suddenly there were fewer than ten.'
+      - speaker: man
+        voice: echo
+        text: 'At first, I thought perhaps the food we put out had gone stale. I tried fresh seeds, nuts, and even mealworms, but the birds still stayed away.'
+      - speaker: man
+        voice: echo
+        text: 'Then one early morning, I arrived at the reserve before dawn and set up my camera with a motion sensor. When I checked the photos the next day, I found the answer. A sparrowhawk — that is a small bird of prey — had been hunting at the feeding station every morning at half past seven.'
+      - speaker: man
+        voice: echo
+        text: 'The small birds had learned that the feeding station was dangerous at that time, so they avoided it completely. Once I moved the station to a spot surrounded by thick bushes — where the sparrowhawk could not dive easily — the little birds gradually came back. Within two weeks, we counted thirty-five sparrows, which was even more than before.'
+      - speaker: man
+        voice: echo
+        text: 'The whole experience taught me that solving nature mysteries requires patience and careful observation. You have to be willing to get up very early and sit quietly for hours!'
+    sentences:
+      - id: L169-S1
+        text: 'The man noticed the number of birds at the feeding station had dropped to fewer than _____.'
+        textZh: '这位男士注意到喂食站的鸟类数量减少到了不到 _____ 只。'
+        answer: 'ten'
+      - id: L169-S2
+        text: 'He set up a camera with a _____ sensor to find out what was happening.'
+        textZh: '他安装了一个带 _____ 传感器的相机来查明原因。'
+        answer: 'motion'
+      - id: L169-S3
+        text: 'A _____ had been hunting at the feeding station every morning.'
+        textZh: '一只 _____ 每天早上都在喂食站捕猎。'
+        answer: 'sparrowhawk'
+      - id: L169-S4
+        text: 'The man moved the station to a spot surrounded by thick _____.'
+        textZh: '男士把喂食站移到了被茂密的 _____ 包围的地方。'
+        answer: 'bushes'
+      - id: L169-S5
+        text: 'Within two weeks, they counted _____ sparrows at the new location.'
+        textZh: '两周内，他们在新地点数到了 _____ 只麻雀。'
+        answer: 'thirty-five'
+
+  # ============================================================
+  # L170: The Science Museum Night Tour
+  # ============================================================
+
+  - id: L170
+    type: sentence-completion
+    title: 'The Science Museum Night Tour'
+    titleZh: '科学博物馆夜间导览'
+    scene: 'You will hear a tour guide leading a special night tour at a science museum.'
+    sceneZh: '你将听到一位导游带领科学博物馆的特别夜间导览。'
+    difficulty: 2
+    audioFile: 'L170.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Good evening, everyone, and welcome to our Mystery Night Tour! Tonight we are going to explore some of the strangest and most unexplained scientific puzzles in the museum. Please stay with the group and try not to touch anything unless I say you can.'
+      - speaker: guide
+        voice: nova
+        text: 'Our first stop is the minerals gallery. This green crystal in the case is called fluorite. Watch what happens when I switch on this ultraviolet lamp. See how it glows bright purple? This effect is called fluorescence, and it was actually named after this very mineral. Scientists discovered it in eighteen fifty-two.'
+      - speaker: guide
+        voice: nova
+        text: 'Next, we have the mystery of ball lightning. This display shows how, during thunderstorms, some people have reported seeing glowing balls of light floating through the air. They can pass through walls and windows. Even today, scientists cannot fully explain what causes them. There have been over ten thousand reported sightings around the world.'
+      - speaker: guide
+        voice: nova
+        text: 'Now follow me to the space section. This piece of rock came from Mars. It was found in Antarctica in nineteen eighty-four, and scientists worked out that it was blasted off the surface of Mars by a meteorite impact millions of years ago. In nineteen ninety-six, researchers claimed they found signs of ancient bacteria inside it, but other scientists disagreed.'
+      - speaker: guide
+        voice: nova
+        text: 'Our last stop is the optical illusions room. Who can tell me — are these two lines the same length? They look different, but they are exactly the same. Our brains are easily tricked by patterns around the lines. This is called the Mueller-Lyer illusion and it works on almost everybody.'
+    sentences:
+      - id: L170-S1
+        text: 'The mineral called _____ glows purple under ultraviolet light.'
+        textZh: '一种叫 _____ 的矿物在紫外线下会发出紫色光。'
+        answer: 'fluorite'
+      - id: L170-S2
+        text: 'The effect of fluorescence was discovered in _____.'
+        textZh: '荧光效应是在 _____ 年发现的。'
+        answer: 'eighteen fifty-two'
+      - id: L170-S3
+        text: 'There have been over _____ reported sightings of ball lightning worldwide.'
+        textZh: '全球有超过 _____ 次球形闪电的报告记录。'
+        answer: 'ten thousand'
+      - id: L170-S4
+        text: 'The Mars rock was found in _____ in 1984.'
+        textZh: '火星岩石于1984年在 _____ 被发现。'
+        answer: 'Antarctica'
+      - id: L170-S5
+        text: 'The optical trick at the end is called the _____ illusion.'
+        textZh: '最后的视觉把戏叫做 _____ 错觉。'
+        answer: 'Mueller-Lyer'
+
+  # ============================================================
+  # L171: The Fossil Hunter
+  # ============================================================
+
+  - id: L171
+    type: sentence-completion
+    title: 'The Fossil Hunter'
+    titleZh: '化石猎人'
+    scene: 'You will hear a palaeontologist talking about how she found a rare fossil.'
+    sceneZh: '你将听到一位古生物学家讲述她如何发现一块稀有化石。'
+    difficulty: 2
+    audioFile: 'L171.mp3'
+    script:
+      - speaker: scientist
+        voice: nova
+        text: 'Hello, I am Dr Sarah Bell and I hunt for fossils along the Jurassic Coast in southern England. I have been doing this for twelve years, but the best discovery of my career happened just last spring.'
+      - speaker: scientist
+        voice: nova
+        text: 'I was walking along the beach at Lyme Regis after a big storm. Storms are actually the best time to look for fossils because the waves wash away layers of rock and reveal things that have been hidden for millions of years.'
+      - speaker: scientist
+        voice: nova
+        text: 'I spotted something unusual sticking out of a cliff face about two metres above the beach. At first, I thought it was just a curly shell — an ammonite — but when I looked more closely, I realised it was much bigger than any ammonite I had ever seen. The spiral was nearly one metre across.'
+      - speaker: scientist
+        voice: nova
+        text: 'It took our team three weeks to carefully remove it from the rock without damaging it. We used special tools — tiny hammers, dental picks, and even paintbrushes — to clean away the surrounding stone.'
+      - speaker: scientist
+        voice: nova
+        text: 'Back in the laboratory, we identified it as a Parapuzosia, one of the largest ammonites ever known. It is around seventy-five million years old, from the late Cretaceous period. The fossil is now on display at the Natural History Museum in London.'
+      - speaker: scientist
+        voice: nova
+        text: 'My advice for young fossil hunters: always search after storms, look at rocks carefully, and never pull a fossil out by force — you could break it into a hundred pieces.'
+    sentences:
+      - id: L171-S1
+        text: 'Dr Bell hunts for fossils along the _____ Coast.'
+        textZh: 'Bell博士在 _____ 海岸寻找化石。'
+        answer: 'Jurassic'
+      - id: L171-S2
+        text: 'The best time to look for fossils is after a _____.'
+        textZh: '寻找化石的最佳时间是在 _____ 之后。'
+        answer: 'storm'
+      - id: L171-S3
+        text: 'The spiral of the fossil was nearly _____ across.'
+        textZh: '化石的螺旋直径将近 _____。'
+        answer: 'one metre'
+      - id: L171-S4
+        text: 'It took the team _____ weeks to remove the fossil from the rock.'
+        textZh: '团队花了 _____ 周时间把化石从岩石中取出。'
+        answer: 'three'
+      - id: L171-S5
+        text: 'The fossil is now on display at the _____ in London.'
+        textZh: '这块化石现在在伦敦的 _____ 展出。'
+        answer: 'Natural History Museum'
+
+  # ============================================================
+  # L172: The Disappearing Lake
+  # ============================================================
+
+  - id: L172
+    type: sentence-completion
+    title: 'The Disappearing Lake'
+    titleZh: '消失的湖泊'
+    scene: 'You will hear a geography teacher explaining a strange natural event.'
+    sceneZh: '你将听到一位地理老师解释一个奇怪的自然现象。'
+    difficulty: 2
+    audioFile: 'L172.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Today I want to tell you about one of the strangest things that can happen in nature — a lake that disappears overnight. This actually happened in a village in Bosnia in two thousand and thirteen.'
+      - speaker: teacher
+        voice: nova
+        text: 'The lake, called Javorsko Lake, was about the size of a football pitch. Villagers went to bed one evening and everything was normal. When they woke up the next morning, the entire lake was gone — just a muddy hole with a few surprised fish flopping around.'
+      - speaker: teacher
+        voice: nova
+        text: 'The explanation is something called a sinkhole. Underground, the rock was made of limestone, which dissolves slowly in water over thousands of years. Eventually, a cavity formed beneath the lake bed. When the thin layer of rock finally collapsed, all the water drained underground like water going down a giant plughole in a bathtub.'
+      - speaker: teacher
+        voice: nova
+        text: 'Sinkholes are more common than you might think. In Florida, in the United States, there are thousands of them. In two thousand and ten, a giant sinkhole opened in the middle of a street in Guatemala City. It was sixty metres deep and swallowed a three-storey building.'
+      - speaker: teacher
+        voice: nova
+        text: 'Geologists study underground rock formations to try to predict where sinkholes might form. They use special equipment that sends sound waves into the ground and measures how they bounce back. Areas with lots of limestone are considered the most at risk.'
+    sentences:
+      - id: L172-S1
+        text: 'The disappearing lake was about the size of a _____ pitch.'
+        textZh: '消失的湖泊大约有一个 _____ 场那么大。'
+        answer: 'football'
+      - id: L172-S2
+        text: 'The underground rock beneath the lake was made of _____.'
+        textZh: '湖底下面的岩石是 _____ 构成的。'
+        answer: 'limestone'
+      - id: L172-S3
+        text: 'The sinkhole in Guatemala City was _____ metres deep.'
+        textZh: '危地马拉城的天坑有 _____ 米深。'
+        answer: 'sixty'
+      - id: L172-S4
+        text: 'Geologists use equipment that sends _____ into the ground to study rock formations.'
+        textZh: '地质学家使用向地下发送 _____ 的设备来研究岩层。'
+        answer: 'sound waves'
+      - id: L172-S5
+        text: 'Areas with lots of _____ are considered most at risk for sinkholes.'
+        textZh: '_____ 较多的地区被认为最容易出现天坑。'
+        answer: 'limestone'
+
+  # ============================================================
+  # L173: The Magician's Apprentice
+  # ============================================================
+
+  - id: L173
+    type: sentence-completion
+    title: 'The Magician''s Apprentice'
+    titleZh: '魔术师的学徒'
+    scene: 'You will hear a young magician talking about learning magic tricks.'
+    sceneZh: '你将听到一位年轻魔术师讲述学习魔术的经历。'
+    difficulty: 2
+    audioFile: 'L173.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'My name is Tom and I have been learning magic since I was seven years old. It all started when my uncle performed a card trick at my birthday party. I was so amazed that I asked him to teach me straight away.'
+      - speaker: boy
+        voice: echo
+        text: 'The first trick he taught me was called the Rising Card. You push a playing card into the middle of the deck, and then it slowly rises to the top by itself. The secret is a thin piece of thread attached to your finger — when you pull gently, the card moves up.'
+      - speaker: boy
+        voice: echo
+        text: 'After six months of practice, I performed my first show at my cousin''s birthday party. I was incredibly nervous — my hands were shaking so much that I dropped the coins during my vanishing coin trick! But the audience actually laughed and clapped because they thought it was part of the show.'
+      - speaker: boy
+        voice: echo
+        text: 'The most important rule in magic is called misdirection. That means making the audience look somewhere else while you do the secret move. For example, if I point at something with my left hand, everyone looks at my left hand while my right hand hides the coin.'
+      - speaker: boy
+        voice: echo
+        text: 'I now practise for at least forty-five minutes every day, standing in front of a mirror so I can see what the audience would see. My dream is to perform on a real stage at the Edinburgh Festival when I turn sixteen.'
+      - speaker: boy
+        voice: echo
+        text: 'If you want to start learning magic, I recommend beginning with simple card tricks. Cards are cheap, you can carry them anywhere, and there are thousands of tricks to learn. The key is practice — do each trick at least a hundred times before you show anyone.'
+    sentences:
+      - id: L173-S1
+        text: 'Tom started learning magic when he was _____ years old.'
+        textZh: 'Tom _____ 岁时开始学习魔术。'
+        answer: 'seven'
+      - id: L173-S2
+        text: 'The first trick Tom learned was called the _____.'
+        textZh: 'Tom学的第一个魔术叫 _____。'
+        answer: 'Rising Card'
+      - id: L173-S3
+        text: 'The most important rule in magic is called _____.'
+        textZh: '魔术中最重要的规则叫做 _____。'
+        answer: 'misdirection'
+      - id: L173-S4
+        text: 'Tom practises for at least _____ minutes every day.'
+        textZh: 'Tom每天至少练习 _____ 分钟。'
+        answer: 'forty-five'
+      - id: L173-S5
+        text: 'Tom''s dream is to perform at the _____ Festival.'
+        textZh: 'Tom的梦想是在 _____ 节上表演。'
+        answer: 'Edinburgh'
+      - id: L173-S6
+        text: 'Tom recommends practising each trick at least _____ times before showing anyone.'
+        textZh: 'Tom建议每个魔术至少练习 _____ 次再展示给别人看。'
+        answer: 'a hundred'
+
+  # ============================================================
+  # L174: The Underwater Caves
+  # ============================================================
+
+  - id: L174
+    type: sentence-completion
+    title: 'The Underwater Caves'
+    titleZh: '水下洞穴'
+    scene: 'You will hear a diver talking about exploring underwater caves in Mexico.'
+    sceneZh: '你将听到一位潜水员讲述在墨西哥探索水下洞穴的经历。'
+    difficulty: 2
+    audioFile: 'L174.mp3'
+    script:
+      - speaker: diver
+        voice: echo
+        text: 'I am an underwater cave diver, and I have explored some of the most amazing cave systems in the world. The ones I want to tell you about today are the cenotes of Mexico''s Yucatan Peninsula.'
+      - speaker: diver
+        voice: echo
+        text: 'Cenotes are natural pools formed when limestone rock collapses and reveals underground rivers. The ancient Maya people believed cenotes were entrances to the underworld. There are more than six thousand cenotes in the Yucatan region.'
+      - speaker: diver
+        voice: echo
+        text: 'The water in cenotes is incredibly clear — you can see up to a hundred metres in some places. This is because the limestone filters the water as it passes through. Diving in a cenote feels like floating in liquid glass.'
+      - speaker: diver
+        voice: echo
+        text: 'One of my most memorable dives was in a cenote called Dos Ojos, which means "Two Eyes" in Spanish. It is named after two circular openings in the rock that look like a pair of eyes from above. The cave system stretches for over eighty kilometres underground.'
+      - speaker: diver
+        voice: echo
+        text: 'Cave diving is very different from regular diving. You must always carry at least three torches because if your light fails underground, you are in complete darkness. We also use a thin guide line — a rope that we attach at the entrance and unroll as we swim deeper, so we can always find our way back.'
+      - speaker: diver
+        voice: echo
+        text: 'The most exciting part of my job is discovering passages that no human has ever entered before. Last year, I found a chamber decorated with beautiful crystal formations that sparkled like diamonds in my torchlight. I named it the Crystal Room.'
+    sentences:
+      - id: L174-S1
+        text: 'Cenotes are formed when _____ rock collapses.'
+        textZh: '天然井是 _____ 岩石坍塌时形成的。'
+        answer: 'limestone'
+      - id: L174-S2
+        text: 'There are more than _____ cenotes in the Yucatan region.'
+        textZh: '尤卡坦地区有超过 _____ 个天然井。'
+        answer: 'six thousand'
+      - id: L174-S3
+        text: '"Dos Ojos" means "_____ Eyes" in Spanish.'
+        textZh: '"Dos Ojos"在西班牙语中意思是" _____ 只眼睛"。'
+        answer: 'Two'
+      - id: L174-S4
+        text: 'Cave divers must always carry at least _____ torches.'
+        textZh: '洞穴潜水员必须至少携带 _____ 支手电筒。'
+        answer: 'three'
+      - id: L174-S5
+        text: 'Divers use a thin _____ to find their way back to the entrance.'
+        textZh: '潜水员用一条细 _____ 来找回入口的路。'
+        answer: 'guide line'
+
+  # ============================================================
+  # L175: The Code-Breaking Competition
+  # ============================================================
+
+  - id: L175
+    type: sentence-completion
+    title: 'The Code-Breaking Competition'
+    titleZh: '密码破译比赛'
+    scene: 'You will hear a boy describing a code-breaking competition he entered.'
+    sceneZh: '你将听到一个男孩描述他参加的密码破译比赛。'
+    difficulty: 2
+    audioFile: 'L175.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Last month, our school entered a nationwide code-breaking competition called Cipher Challenge. Teams of four students had to solve eight coded messages over six weeks. Each message was harder than the last.'
+      - speaker: boy
+        voice: echo
+        text: 'Our team was called the Secret Four — that is me, my friend Aisha, Charlie, and Priya. We met every lunchtime in the computer room to work on the codes.'
+      - speaker: boy
+        voice: echo
+        text: 'The first three codes were substitution ciphers, where each letter is replaced by a different letter. We cracked those in about two hours each by looking for common letter patterns. In English, the most common letter is E, so we always started by looking for the most frequent symbol.'
+      - speaker: boy
+        voice: echo
+        text: 'Code number five was the hardest. It used something called a Vigenere cipher, which uses a keyword to shift each letter by a different amount. It took us three days to figure out that the keyword was "Neptune." Aisha was the one who finally spotted it.'
+      - speaker: boy
+        voice: echo
+        text: 'In the end, our team finished in third place out of two hundred and fifty schools. We each received a certificate and a book about the history of codebreaking. The winning team, from a school in Edinburgh, solved all eight codes in just four weeks.'
+      - speaker: boy
+        voice: echo
+        text: 'The best part was not the prize, though. It was learning to work as a team. We each had different strengths — I was good at spotting patterns, Aisha was great at research, Charlie was fast at maths, and Priya had brilliant ideas when we were stuck.'
+    sentences:
+      - id: L175-S1
+        text: 'The competition was called _____ Challenge.'
+        textZh: '比赛名叫 _____ 挑战赛。'
+        answer: 'Cipher'
+      - id: L175-S2
+        text: 'Teams had to solve _____ coded messages over six weeks.'
+        textZh: '团队需要在六周内破解 _____ 条密码消息。'
+        answer: 'eight'
+      - id: L175-S3
+        text: 'The keyword for the Vigenere cipher was "_____."'
+        textZh: '维吉尼亚密码的关键词是" _____"。'
+        answer: 'Neptune'
+      - id: L175-S4
+        text: 'The team finished in _____ place out of 250 schools.'
+        textZh: '团队在250所学校中获得了第 _____ 名。'
+        answer: 'third'
+      - id: L175-S5
+        text: 'The winning school was from _____.'
+        textZh: '获胜的学校来自 _____。'
+        answer: 'Edinburgh'
+
+  # ============================================================
+  # L176: The Maze Builder
+  # ============================================================
+
+  - id: L176
+    type: sentence-completion
+    title: 'The Maze Builder'
+    titleZh: '迷宫建造师'
+    scene: 'You will hear a farmer talking about the corn maze he builds every year.'
+    sceneZh: '你将听到一位农民讲述他每年建造的玉米迷宫。'
+    difficulty: 2
+    audioFile: 'L176.mp3'
+    script:
+      - speaker: farmer
+        voice: echo
+        text: 'Every August, I turn one of my cornfields into a giant maze. I have been doing it for nine years now, and it has become the most popular attraction in our area. Last year, over twelve thousand people came to try it.'
+      - speaker: farmer
+        voice: echo
+        text: 'I design the maze on my computer first, using special software that turns a picture into a maze pattern. This year, the design is a giant magnifying glass, because the theme is "detective adventure." The maze covers about three hectares — that is roughly the same as five football pitches.'
+      - speaker: farmer
+        voice: echo
+        text: 'We plant the corn in May and it takes about ten weeks to grow tall enough. By late July, the plants are over two metres high, which means even adults cannot see over the top. That is what makes it so tricky — you cannot see where you are going.'
+      - speaker: farmer
+        voice: echo
+        text: 'I hide fifteen numbered checkpoints inside the maze. Visitors carry a card and stamp it at each checkpoint. If you find all fifteen, you get a free ice cream at the end. Most people find about ten or eleven.'
+      - speaker: farmer
+        voice: echo
+        text: 'The average time to complete the maze is about fifty minutes, but we once had a family who took three hours because they kept going in circles. We have a viewing tower near the entrance where staff can guide lost visitors by megaphone if they shout for help.'
+      - speaker: farmer
+        voice: echo
+        text: 'After Halloween, we harvest the corn and turn it into animal feed. Nothing is wasted. Then in January, I start designing next year''s maze. I am already thinking about a space rocket for next summer.'
+    sentences:
+      - id: L176-S1
+        text: 'Last year, over _____ people visited the corn maze.'
+        textZh: '去年，超过 _____ 人参观了玉米迷宫。'
+        answer: 'twelve thousand'
+      - id: L176-S2
+        text: 'This year''s maze design is a giant _____.'
+        textZh: '今年的迷宫设计是一个巨大的 _____。'
+        answer: 'magnifying glass'
+      - id: L176-S3
+        text: 'The corn plants grow over _____ metres high by late July.'
+        textZh: '到七月底，玉米长到了超过 _____ 米高。'
+        answer: 'two'
+      - id: L176-S4
+        text: 'Visitors who find all fifteen checkpoints get a free _____.'
+        textZh: '找到全部十五个检查点的游客可以免费获得一份 _____。'
+        answer: 'ice cream'
+      - id: L176-S5
+        text: 'The average time to complete the maze is about _____ minutes.'
+        textZh: '完成迷宫的平均时间大约是 _____ 分钟。'
+        answer: 'fifty'
+      - id: L176-S6
+        text: 'After Halloween, the corn is harvested and turned into _____.'
+        textZh: '万圣节后，玉米被收割并制成 _____。'
+        answer: 'animal feed'
+
+  # ============================================================
+  # L177: The Stolen Crown Jewels
+  # ============================================================
+
+  - id: L177
+    type: sentence-completion
+    title: 'The Stolen Crown Jewels'
+    titleZh: '被盗的王冠珠宝'
+    scene: 'You will hear a guide at the Tower of London telling the story of a famous theft attempt.'
+    sceneZh: '你将听到伦敦塔的导游讲述一次著名的盗窃未遂事件。'
+    difficulty: 2
+    audioFile: 'L177.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Welcome to the Tower of London. I want to tell you about the most daring attempt to steal the Crown Jewels, which took place right here in sixteen seventy-one.'
+      - speaker: guide
+        voice: nova
+        text: 'The thief was an Irish adventurer called Colonel Thomas Blood. He spent weeks befriending the elderly Keeper of the Jewels, a man named Talbot Edwards. Blood visited Edwards many times, bringing gifts and pretending to be a wealthy clergyman.'
+      - speaker: guide
+        voice: nova
+        text: 'On the day of the theft, Blood arrived with three accomplices and asked Edwards to show them the jewels in the basement. As soon as they were inside, Blood hit Edwards over the head with a wooden mallet and stuffed the crown under his cloak. One accomplice hid the golden orb down his trousers, and another began filing the sceptre in half so it would fit in a bag.'
+      - speaker: guide
+        voice: nova
+        text: 'But they were interrupted! Edwards'' son returned unexpectedly from the army. He raised the alarm and guards chased Blood through the gates. Blood was caught near the outer wall, still clutching the crown.'
+      - speaker: guide
+        voice: nova
+        text: 'Here is the truly surprising ending — King Charles the Second was so impressed by Blood''s courage that instead of punishing him, the King pardoned him and gave him land in Ireland. Nobody knows exactly why the King was so generous. Some historians believe Blood had been secretly working for the King all along.'
+    sentences:
+      - id: L177-S1
+        text: 'The theft attempt took place in the year _____.'
+        textZh: '盗窃未遂发生在 _____ 年。'
+        answer: 'sixteen seventy-one'
+      - id: L177-S2
+        text: 'Colonel Blood pretended to be a wealthy _____.'
+        textZh: 'Blood上校假扮成一位富有的 _____。'
+        answer: 'clergyman'
+      - id: L177-S3
+        text: 'Blood hit the Keeper over the head with a wooden _____.'
+        textZh: 'Blood用一个木 _____ 打了珠宝保管人的头。'
+        answer: 'mallet'
+      - id: L177-S4
+        text: 'The alarm was raised by Edwards'' _____ who returned from the army.'
+        textZh: '警报是由Edwards的 _____ 拉响的，他从军队回来了。'
+        answer: 'son'
+      - id: L177-S5
+        text: 'Instead of punishment, the King _____ Blood and gave him land.'
+        textZh: '国王没有惩罚Blood，而是 _____ 了他并给了他土地。'
+        answer: 'pardoned'
+
+  # ============================================================
+  # L178: The Weather Detective
+  # ============================================================
+
+  - id: L178
+    type: sentence-completion
+    title: 'The Weather Detective'
+    titleZh: '天气侦探'
+    scene: 'You will hear a meteorologist explaining how weather clues helped solve a crime.'
+    sceneZh: '你将听到一位气象学家解释天气线索如何帮助破案。'
+    difficulty: 2
+    audioFile: 'L178.mp3'
+    script:
+      - speaker: meteorologist
+        voice: nova
+        text: 'My name is Dr James Perry and I am a forensic meteorologist. That means I use weather data to help solve crimes and settle legal cases. It is a rather unusual job, but a fascinating one.'
+      - speaker: meteorologist
+        voice: nova
+        text: 'Let me give you an example. A few years ago, a shop owner claimed that a storm had damaged his roof on a Tuesday night and he wanted his insurance company to pay for repairs. The insurance company asked me to investigate.'
+      - speaker: meteorologist
+        voice: nova
+        text: 'I checked the weather records for that exact location on that date. The data showed that it had been a calm, dry evening with wind speeds of only eight kilometres per hour — certainly not strong enough to damage a roof. Storm-force winds start at around ninety kilometres per hour.'
+      - speaker: meteorologist
+        voice: nova
+        text: 'I also looked at satellite photographs taken that week. The images clearly showed that the roof was already damaged on the Monday — one day before the supposed storm. So the damage must have happened earlier, and the shop owner was not telling the truth about the cause.'
+      - speaker: meteorologist
+        voice: nova
+        text: 'Weather records are incredibly detailed these days. Weather stations record temperature, wind speed, rainfall, and air pressure every fifteen minutes. This data is stored for years and can be a powerful tool in investigations. In fact, I have worked on over two hundred cases using weather evidence.'
+    sentences:
+      - id: L178-S1
+        text: 'Dr Perry works as a forensic _____.'
+        textZh: 'Perry博士的职业是法医 _____。'
+        answer: 'meteorologist'
+      - id: L178-S2
+        text: 'On the night in question, wind speeds were only _____ kilometres per hour.'
+        textZh: '事发当晚，风速只有每小时 _____ 公里。'
+        answer: 'eight'
+      - id: L178-S3
+        text: 'Storm-force winds start at around _____ kilometres per hour.'
+        textZh: '暴风级别的风速约为每小时 _____ 公里。'
+        answer: 'ninety'
+      - id: L178-S4
+        text: 'Satellite photographs showed the roof was damaged on the _____.'
+        textZh: '卫星照片显示屋顶在 _____ 就已经损坏了。'
+        answer: 'Monday'
+      - id: L178-S5
+        text: 'Weather stations record data every _____ minutes.'
+        textZh: '气象站每 _____ 分钟记录一次数据。'
+        answer: 'fifteen'
+      - id: L178-S6
+        text: 'Dr Perry has worked on over _____ cases using weather evidence.'
+        textZh: 'Perry博士已经利用天气证据处理了超过 _____ 个案件。'
+        answer: 'two hundred'
+
+  # ============================================================
+  # L179: The Ancient Map Mystery
+  # ============================================================
+
+  - id: L179
+    type: sentence-completion
+    title: 'The Ancient Map Mystery'
+    titleZh: '古地图之谜'
+    scene: 'You will hear a historian talking about a mysterious ancient map.'
+    sceneZh: '你将听到一位历史学家讲述一幅神秘的古地图。'
+    difficulty: 2
+    audioFile: 'L179.mp3'
+    script:
+      - speaker: historian
+        voice: nova
+        text: 'One of the greatest mysteries in the history of maps is the Piri Reis map, drawn by a Turkish admiral in fifteen thirteen. What makes this map so extraordinary is that it appears to show the coastline of South America and even parts of Antarctica — but Antarctica was not officially discovered until eighteen twenty.'
+      - speaker: historian
+        voice: nova
+        text: 'The map was found in nineteen twenty-nine by a group of scholars working in the old imperial palace in Istanbul. It was painted on gazelle skin and was only a fragment — about one third of the original map had survived.'
+      - speaker: historian
+        voice: nova
+        text: 'Piri Reis himself wrote notes on the map explaining that he based it on about twenty older maps, including some used by Christopher Columbus. He also mentioned maps from the time of Alexander the Great, which would have been over a thousand years old even then.'
+      - speaker: historian
+        voice: nova
+        text: 'Some people claim the map proves that ancient civilisations had advanced knowledge of geography. Others say the bottom part of the map simply shows the coast of South America drawn at an unusual angle, and is not Antarctica at all.'
+      - speaker: historian
+        voice: nova
+        text: 'Whatever the truth, the Piri Reis map reminds us that our ancestors were far more skilled at exploring and mapping the world than we sometimes give them credit for. The original map is now kept in a climate-controlled room at the Topkapi Palace Museum in Istanbul.'
+    sentences:
+      - id: L179-S1
+        text: 'The Piri Reis map was drawn in the year _____.'
+        textZh: 'Piri Reis地图绘制于 _____ 年。'
+        answer: 'fifteen thirteen'
+      - id: L179-S2
+        text: 'Antarctica was not officially discovered until _____.'
+        textZh: '南极洲直到 _____ 年才被正式发现。'
+        answer: 'eighteen twenty'
+      - id: L179-S3
+        text: 'The map was painted on _____ skin.'
+        textZh: '地图画在 _____ 皮上。'
+        answer: 'gazelle'
+      - id: L179-S4
+        text: 'Piri Reis said he used about _____ older maps as sources.'
+        textZh: 'Piri Reis说他参考了大约 _____ 幅更古老的地图。'
+        answer: 'twenty'
+      - id: L179-S5
+        text: 'The original map is now kept at the _____ Palace Museum.'
+        textZh: '原始地图现在保存在 _____ 宫殿博物馆。'
+        answer: 'Topkapi'
+
+  # ============================================================
+  # L180: The Detective Dog Training Centre
+  # ============================================================
+
+  - id: L180
+    type: sentence-completion
+    title: 'The Detective Dog Training Centre'
+    titleZh: '侦探犬训练中心'
+    scene: 'You will hear a dog trainer explaining how detective dogs are trained.'
+    sceneZh: '你将听到一位训犬师解释侦探犬是如何训练的。'
+    difficulty: 2
+    audioFile: 'L180.mp3'
+    script:
+      - speaker: trainer
+        voice: echo
+        text: 'Welcome to the National Detection Dog Training Centre. My name is Mike and I have been training sniffer dogs for eighteen years. Today I am going to explain how we turn an ordinary puppy into a world-class detection dog.'
+      - speaker: trainer
+        voice: echo
+        text: 'We start selecting puppies at around eight weeks old. The breed we use most is the Springer Spaniel because they have an excellent sense of smell and they love to play — which is actually the most important quality. You see, for a detection dog, finding the target scent is a game, and the reward is always a toy, never food.'
+      - speaker: trainer
+        voice: echo
+        text: 'Training takes approximately fourteen months. In the first phase, we teach the dog to associate a specific smell with its favourite toy. We might hide the toy inside a box that also contains, say, a particular type of plant. The dog learns that finding that plant smell means finding the toy.'
+      - speaker: trainer
+        voice: echo
+        text: 'In the second phase, we gradually increase the difficulty. The dog must search larger areas, ignore distracting smells like food or other animals, and work in noisy environments like airports. A fully trained dog can detect a target scent even when it is sealed inside three layers of plastic.'
+      - speaker: trainer
+        voice: echo
+        text: 'Each dog works for about eight years before retiring. After retirement, the handler usually adopts the dog as a family pet. Our oldest retired dog, a spaniel called Pepper, is now thirteen and spends her days sleeping on the sofa — a well-earned rest after a brilliant career!'
+    sentences:
+      - id: L180-S1
+        text: 'Mike has been training sniffer dogs for _____ years.'
+        textZh: 'Mike已经训练嗅探犬 _____ 年了。'
+        answer: 'eighteen'
+      - id: L180-S2
+        text: 'The breed used most often is the _____ Spaniel.'
+        textZh: '最常使用的品种是 _____ 猎犬。'
+        answer: 'Springer'
+      - id: L180-S3
+        text: 'The reward for a detection dog is always a _____, never food.'
+        textZh: '侦探犬的奖励永远是 _____，而不是食物。'
+        answer: 'toy'
+      - id: L180-S4
+        text: 'Full training takes approximately _____ months.'
+        textZh: '完整训练大约需要 _____ 个月。'
+        answer: 'fourteen'
+      - id: L180-S5
+        text: 'A trained dog can detect scent sealed inside _____ layers of plastic.'
+        textZh: '训练有素的狗能侦测到密封在 _____ 层塑料里的气味。'
+        answer: 'three'
+      - id: L180-S6
+        text: 'Each dog works for about _____ years before retiring.'
+        textZh: '每只狗工作大约 _____ 年后退役。'
+        answer: 'eight'
+
+  # ============================================================
+  # L181–L200: Part 3 — Multiple Matching (Detective/Mystery Theme)
+  # ============================================================
+
+  # ============================================================
+  # L181: Young Detectives Share Their Stories
+  # ============================================================
+
+  - id: L181
+    type: multiple-matching
+    title: 'Young Detectives Share Their Stories'
+    titleZh: '小侦探们分享他们的故事'
+    scene: 'You will hear five young people talking about solving a mystery.'
+    sceneZh: '你将听到五位年轻人谈论他们解决谜题的经历。'
+    difficulty: 2
+    audioFile: 'L181.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I found the answer by looking at old photographs in my grandmother''s album. There was a picture from nineteen sixty-five showing our street before the houses were built. In the background, you could clearly see a well that nobody knew about. That was exactly where the water was coming from — an underground well that the builders had covered over. Without those old photos, we would never have known.'
+      - name: Speaker 2
+        text: 'For me, it was all about talking to the right people. I was trying to find out who had planted flowers in the school garden overnight. I asked everyone in my class, but nobody knew. Then the school caretaker — who I had never spoken to before — told me he had seen a group of parents working there at six in the morning. I never expected him to be the one with the answer.'
+      - name: Speaker 3
+        text: 'I solved our mystery by watching people very carefully. Things kept disappearing from the staff room fridge — yoghurts, sandwiches, fruit. I sat in the corridor at lunchtime and observed who went in and came out. After three days, I noticed that one person always stayed inside much longer than everyone else. That was the clue that led us to the answer.'
+      - name: Speaker 4
+        text: 'Technology saved the day for me. We could not work out why our garden pond kept losing water overnight. My dad lent me his wildlife camera — the kind that records when it detects movement. When we checked the footage the next morning, we saw a family of foxes drinking from the pond every night between two and four in the morning!'
+      - name: Speaker 5
+        text: 'I must have tried at least six different explanations before I finally got the right one. First, I thought the noise was coming from the pipes. Then I thought it was the wind. Then a bird, then a loose tile, then an electrical problem. In the end, it turned out to be a branch rubbing against the chimney — my seventh guess! Sometimes solving a mystery means being wrong many times first.'
+    statements:
+      A: 'This person solved the mystery by examining physical evidence.'
+      B: 'This person got help from someone they did not expect.'
+      C: 'This person used technology to find the answer.'
+      D: 'This person found important information in old documents or records.'
+      E: 'This person solved it by observing people carefully.'
+      F: 'This person tried several wrong ideas before finding the right one.'
+      G: 'This person discovered the truth by accident.'
+      H: 'This person worked as part of a team.'
+    answers:
+      Speaker 1: 'D'
+      Speaker 2: 'B'
+      Speaker 3: 'E'
+      Speaker 4: 'C'
+      Speaker 5: 'F'
+    explanations:
+      Speaker 1: 'Speaker 1 mentions "old photographs in my grandmother''s album" — these are old records/documents that provided the key information.'
+      Speaker 1Zh: '说话者1提到"祖母相册里的旧照片"——这些是提供关键信息的旧记录/文件。'
+      Speaker 2: 'Speaker 2 says the school caretaker gave the answer and adds "I never expected him to be the one with the answer."'
+      Speaker 2Zh: '说话者2说学校管理员给出了答案，并补充"我从没想到他会是知道答案的人"。'
+      Speaker 3: 'Speaker 3 explicitly says "I solved our mystery by watching people very carefully" — this is careful observation.'
+      Speaker 3Zh: '说话者3明确说"我通过仔细观察人们解决了谜题"——这是仔细的观察。'
+      Speaker 4: 'Speaker 4 says "Technology saved the day" and describes using a wildlife camera to record footage.'
+      Speaker 4Zh: '说话者4说"科技拯救了一切"，并描述了使用野生动物摄像机录像。'
+      Speaker 5: 'Speaker 5 says "I must have tried at least six different explanations before I finally got the right one."'
+      Speaker 5Zh: '说话者5说"我至少尝试了六种不同的解释才最终找到正确答案"。'
+
+  # ============================================================
+  # L182: How We Got Into Detective Stories
+  # ============================================================
+
+  - id: L182
+    type: multiple-matching
+    title: 'How We Got Into Detective Stories'
+    titleZh: '我们是怎么迷上侦探故事的'
+    scene: 'You will hear five young people talking about what made them love detective stories.'
+    sceneZh: '你将听到五位年轻人谈论是什么让他们爱上了侦探故事。'
+    difficulty: 2
+    audioFile: 'L182.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'It all started when my dad gave me a puzzle book for my seventh birthday. It had logic problems, word searches with hidden messages, and picture puzzles where you had to spot differences. I became completely addicted. I would spend hours working through the pages. After that, I moved on to proper detective novels because I wanted more complicated puzzles to solve.'
+      - name: Speaker 2
+        text: 'For me, it was a TV show. My mum watches this programme about a detective who solves cold cases — crimes from years ago that nobody could solve at the time. I sat down to watch one episode with her and I was hooked. The way the detective pieced together tiny scraps of evidence was so clever. I have watched every single episode now — all nine series.'
+      - name: Speaker 3
+        text: 'My teacher read us a Sherlock Holmes story in class when I was eight. I remember sitting there with my mouth open. Holmes noticed things that nobody else saw — the mud on someone''s shoes, the way a letter was folded. I went straight to the library after school and borrowed every Holmes book they had. I read all four novels in two weeks.'
+      - name: Speaker 4
+        text: 'I got into detective stories through board games, actually. My cousins brought a murder mystery board game to a family dinner. We spent the whole evening trying to work out who committed the crime using clues and evidence cards. I loved the feeling of putting the pieces together. After that, I wanted to read books that gave me the same feeling.'
+      - name: Speaker 5
+        text: 'It was a real-life experience for me. When I was nine, our cat went missing for three days. I made posters, asked neighbours, and searched every garden on our street. I found Whiskers locked in a neighbour''s empty shed — the wind had blown the door shut behind him. The thrill of finding him through my own investigation was amazing. That is when I realised I loved solving mysteries.'
+    statements:
+      A: 'This person was inspired by a real event in their own life.'
+      B: 'This person became interested through playing a game.'
+      C: 'This person was influenced by a family member''s viewing habits.'
+      D: 'This person was introduced to detective stories by a teacher.'
+      E: 'This person started with a puzzle book before moving to novels.'
+      F: 'This person was inspired by a famous real detective.'
+      G: 'This person discovered detective stories through a film at the cinema.'
+      H: 'This person joined a detective club that sparked their interest.'
+    answers:
+      Speaker 1: 'E'
+      Speaker 2: 'C'
+      Speaker 3: 'D'
+      Speaker 4: 'B'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 describes getting a puzzle book for their birthday and then moving on to detective novels — matching statement E.'
+      Speaker 1Zh: '说话者1描述了生日收到一本谜题书，然后转向侦探小说——对应选项E。'
+      Speaker 2: 'Speaker 2 started watching a detective show with their mum — influenced by a family member''s viewing habits (C).'
+      Speaker 2Zh: '说话者2开始和妈妈一起看侦探节目——受到家人观看习惯的影响（C）。'
+      Speaker 3: 'Speaker 3 says "My teacher read us a Sherlock Holmes story in class" — introduced by a teacher (D).'
+      Speaker 3Zh: '说话者3说"老师在课堂上给我们读了一个福尔摩斯故事"——由老师引入（D）。'
+      Speaker 4: 'Speaker 4 says they got into detective stories "through board games" — playing a game (B).'
+      Speaker 4Zh: '说话者4说他们通过"桌游"喜欢上了侦探故事——通过游戏（B）。'
+      Speaker 5: 'Speaker 5 describes a real experience of finding their missing cat — a real event in their own life (A).'
+      Speaker 5Zh: '说话者5描述了寻找走失的猫的真实经历——自己生活中的真实事件（A）。'
+
+  # ============================================================
+  # L183: Our Best Escape Room Experiences
+  # ============================================================
+
+  - id: L183
+    type: multiple-matching
+    title: 'Our Best Escape Room Experiences'
+    titleZh: '我们最棒的密室逃脱经历'
+    scene: 'You will hear five young people talking about their favourite escape room experience.'
+    sceneZh: '你将听到五位年轻人谈论他们最喜欢的密室逃脱经历。'
+    difficulty: 2
+    audioFile: 'L183.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'The best room I ever did had a puzzle where you had to mix coloured liquids in test tubes to create a specific shade of purple. When you poured the purple liquid into a special container, it triggered an electronic lock and a secret drawer opened. I love it when escape rooms use science experiments as puzzles — it makes you feel like a real scientist.'
+      - name: Speaker 2
+        text: 'My favourite was a room where the entire story was told through audio recordings that played when you pressed buttons on the wall. You heard characters arguing, confessing, and giving directions. You had to listen really carefully to catch the important details. The last recording revealed the code by reading out numbers hidden in a conversation.'
+      - name: Speaker 3
+        text: 'I went to an escape room where you had to solve maths problems at every stage. The final puzzle was brilliant — you had to calculate the area of a triangle drawn on the floor using measurements you had collected throughout the room. The answer gave you the numbers to open the final safe. It was perfect for someone like me who loves numbers.'
+      - name: Speaker 4
+        text: 'The room that amazed me most was one designed for complete darkness. They gave us torches with very weak batteries, so we could only see a tiny bit at a time. We had to feel objects with our hands to identify shapes and textures. There was a box with different fabrics inside, and we had to arrange them in the right order by touch alone. It was the most exciting thing I have ever done.'
+      - name: Speaker 5
+        text: 'My top escape room experience was one where we had to work with another team in a different room. We could communicate through a small window but could not see each other''s puzzles. Our clues only made sense when combined with their clues. We had to describe things very precisely and trust that the other team was doing the same. Communication was the real skill being tested.'
+    statements:
+      A: 'This person enjoyed a room that tested their ability to work with strangers.'
+      B: 'This person liked a room that used scientific experiments as puzzles.'
+      C: 'This person enjoyed a room where listening skills were essential.'
+      D: 'This person found a room that challenged their sense of touch.'
+      E: 'This person preferred a room based on mathematical calculations.'
+      F: 'This person liked a room with a historical setting.'
+      G: 'This person enjoyed a room that used physical sports challenges.'
+      H: 'This person liked a room where they had to draw or paint something.'
+    answers:
+      Speaker 1: 'B'
+      Speaker 2: 'C'
+      Speaker 3: 'E'
+      Speaker 4: 'D'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 says "I love it when escape rooms use science experiments as puzzles" — matching statement B.'
+      Speaker 1Zh: '说话者1说"我喜欢密室逃脱用科学实验作为谜题"——对应选项B。'
+      Speaker 2: 'Speaker 2 describes audio recordings and says "You had to listen really carefully" — listening skills (C).'
+      Speaker 2Zh: '说话者2描述了音频录音并说"你必须非常仔细地听"——听力技能（C）。'
+      Speaker 3: 'Speaker 3 describes solving maths problems and calculating the area of a triangle — mathematical calculations (E).'
+      Speaker 3Zh: '说话者3描述了解数学题和计算三角形面积——数学计算（E）。'
+      Speaker 4: 'Speaker 4 describes working in darkness and identifying objects by touch — sense of touch (D).'
+      Speaker 4Zh: '说话者4描述了在黑暗中工作并通过触觉识别物体——触觉（D）。'
+      Speaker 5: 'Speaker 5 worked with "another team" they could not see — working with strangers (A).'
+      Speaker 5Zh: '说话者5和一个看不见的"另一个团队"合作——与陌生人合作（A）。'
+
+  # ============================================================
+  # L184: What Makes a Good Detective
+  # ============================================================
+
+  - id: L184
+    type: multiple-matching
+    title: 'What Makes a Good Detective'
+    titleZh: '什么造就了好侦探'
+    scene: 'You will hear five young people talking about the most important quality for a detective.'
+    sceneZh: '你将听到五位年轻人谈论侦探最重要的品质。'
+    difficulty: 2
+    audioFile: 'L184.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'For me, the most important quality is patience. When I was trying to find out who was drawing on the playground wall, it took me two whole weeks of watching before I finally saw who it was. Most people would have given up after a day or two, but I kept going because I knew the truth would come out eventually if I just waited long enough.'
+      - name: Speaker 2
+        text: 'I think the best detectives are the ones who notice small details. Last term, I worked out who had been taking books from the classroom library because I noticed that one person always had ink on their fingers after break time — the same colour ink as the library stamps. Nobody else spotted that connection, but to me it stood out immediately.'
+      - name: Speaker 3
+        text: 'Being good at talking to people is the key skill, in my opinion. When our class hamster escaped, I found it by asking the right questions. Instead of asking "Have you seen the hamster?" I asked "Have you heard any scratching or rustling sounds today?" That got much better answers because people remembered sounds they had ignored.'
+      - name: Speaker 4
+        text: 'I believe creativity is the most important thing. Sometimes the solution to a mystery is something completely unexpected. When we could not work out how water was getting into the basement, everyone assumed it was a leaking pipe. But I suggested we check whether the garden sprinkler was pointing at the wall, and that turned out to be exactly the problem. You need to think differently.'
+      - name: Speaker 5
+        text: 'Keeping good records is what really matters. When things started going missing from our cloakroom, I made a chart — I wrote down the date, the time, what was missing, and who was nearby. After a week, the chart showed a clear pattern that pointed to exactly when it was happening. Without those written notes, I would never have seen it.'
+    statements:
+      A: 'This person believes detectives need to think in unusual ways.'
+      B: 'This person values the ability to wait a long time for results.'
+      C: 'This person thinks recording information carefully is the key.'
+      D: 'This person believes in the power of asking the right questions.'
+      E: 'This person thinks noticing tiny details is most important.'
+      F: 'This person values physical fitness for chasing suspects.'
+      G: 'This person thinks technology is the most useful tool.'
+      H: 'This person believes working alone is better than working in a team.'
+    answers:
+      Speaker 1: 'B'
+      Speaker 2: 'E'
+      Speaker 3: 'D'
+      Speaker 4: 'A'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 says "the most important quality is patience" and describes waiting two weeks — valuing patience/waiting (B).'
+      Speaker 1Zh: '说话者1说"最重要的品质是耐心"，并描述了等待两周——重视耐心/等待（B）。'
+      Speaker 2: 'Speaker 2 says "the best detectives notice small details" and describes spotting ink on fingers — tiny details (E).'
+      Speaker 2Zh: '说话者2说"最好的侦探注意小细节"，并描述了发现手指上的墨水——细小的细节（E）。'
+      Speaker 3: 'Speaker 3 says "asking the right questions" is key and gives an example of rephrasing a question — asking right questions (D).'
+      Speaker 3Zh: '说话者3说"问对问题"是关键，并举例说明了重新措辞问题——问对问题（D）。'
+      Speaker 4: 'Speaker 4 says "creativity is the most important" and thought of an unexpected solution — thinking unusually (A).'
+      Speaker 4Zh: '说话者4说"创造力最重要"，并想到了意想不到的解决方案——非常规思维（A）。'
+      Speaker 5: 'Speaker 5 says "keeping good records is what really matters" and made a chart — recording information (C).'
+      Speaker 5Zh: '说话者5说"做好记录才是最重要的"，并制作了图表——记录信息（C）。'
+
+  # ============================================================
+  # L185: Mystery Books We Recommend
+  # ============================================================
+
+  - id: L185
+    type: multiple-matching
+    title: 'Mystery Books We Recommend'
+    titleZh: '我们推荐的推理书'
+    scene: 'You will hear five young people recommending their favourite mystery book.'
+    sceneZh: '你将听到五位年轻人推荐他们最喜欢的推理书。'
+    difficulty: 2
+    audioFile: 'L185.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'The book I love most is about a girl detective who lives in a small seaside town. What I really like about it is the setting — the author describes the foggy harbour, the cliff paths, and the old lighthouse so vividly that you feel like you are actually there. The mystery itself is good, but it is the atmosphere that makes it special. You can almost smell the sea air as you read.'
+      - name: Speaker 2
+        text: 'My favourite mystery book is one where the reader has to solve the puzzle. At the end of each chapter, the author gives you clues and asks you questions. I actually figured out who the villain was before the main character did, which made me feel brilliant. I love books that challenge the reader to think, not just follow the story passively.'
+      - name: Speaker 3
+        text: 'I recommend a series about twin brothers who solve crimes after school. The reason I like it so much is the relationship between the twins — one is very logical and the other is very creative, so they approach every problem differently. Their arguments are funny and realistic. The mysteries are interesting, but it is the characters that keep me reading book after book.'
+      - name: Speaker 4
+        text: 'There is a fantastic book where a boy discovers that his new school was built on top of an ancient Roman fort. The story weaves together a modern mystery and a historical one — you read chapters set in the present and chapters set two thousand years ago. I love history, so having real historical facts mixed into the detective story was perfect for me.'
+      - name: Speaker 5
+        text: 'The book I always recommend is a detective story told in a completely unusual way. Instead of normal chapters, the story is told through diary entries, text messages, newspaper articles, and even shopping lists. You have to piece together what happened from all these different documents. It is like being a real detective sorting through evidence files.'
+    statements:
+      A: 'This person recommends a book because of its unusual format.'
+      B: 'This person enjoys a book that mixes history with a modern story.'
+      C: 'This person loves the book mainly for its characters.'
+      D: 'This person likes a book that lets the reader solve the mystery.'
+      E: 'This person values the book for its vivid description of a place.'
+      F: 'This person recommends a book because it was made into a film.'
+      G: 'This person likes a book because it has a funny detective as the hero.'
+      H: 'This person prefers books with very short chapters.'
+    answers:
+      Speaker 1: 'E'
+      Speaker 2: 'D'
+      Speaker 3: 'C'
+      Speaker 4: 'B'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 says "it is the atmosphere that makes it special" and describes the vivid seaside setting — vivid description of place (E).'
+      Speaker 1Zh: '说话者1说"是氛围让它特别"，并描述了生动的海边场景——对地方的生动描述（E）。'
+      Speaker 2: 'Speaker 2 says the book challenges "the reader to think" and they solved the puzzle themselves — reader solves mystery (D).'
+      Speaker 2Zh: '说话者2说这本书挑战"读者思考"，他们自己解开了谜题——读者解谜（D）。'
+      Speaker 3: 'Speaker 3 says "it is the characters that keep me reading" — values characters (C).'
+      Speaker 3Zh: '说话者3说"是角色让我一直读下去"——重视角色（C）。'
+      Speaker 4: 'Speaker 4 describes a story mixing modern and Roman history — mixes history with modern story (B).'
+      Speaker 4Zh: '说话者4描述了一个混合现代和罗马历史的故事——将历史与现代故事结合（B）。'
+      Speaker 5: 'Speaker 5 describes a story told through diary entries, texts, and newspaper articles — unusual format (A).'
+      Speaker 5Zh: '说话者5描述了一个通过日记、短信和报纸文章讲述的故事——不寻常的格式（A）。'
+
+  # ============================================================
+  # L186: Mysteries We Solved at School
+  # ============================================================
+
+  - id: L186
+    type: multiple-matching
+    title: 'Mysteries We Solved at School'
+    titleZh: '我们在学校解决的谜团'
+    scene: 'You will hear five students talking about a mystery they solved at school.'
+    sceneZh: '你将听到五位学生谈论他们在学校解决的谜团。'
+    difficulty: 2
+    audioFile: 'L186.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'Every morning, someone was leaving a small origami animal on the teacher''s desk. A paper crane, a paper frog, a paper butterfly — a different one every day. The teacher thought it was sweet but really wanted to know who was doing it. I happened to arrive early one day and saw a girl from the year below slipping into our classroom at seven thirty. She was so surprised when I appeared!'
+      - name: Speaker 2
+        text: 'Our mystery was about the school bell. For a whole week, it kept ringing five minutes early, so everyone left class before the lesson was finished. The teachers thought the clock system was broken, but the IT technician checked and said everything was fine. Then I noticed that the clock in the main hall was slightly fast. Someone had moved the hands forward. It turned out that a cleaner had accidentally bumped it while dusting.'
+      - name: Speaker 3
+        text: 'Someone was writing tiny positive messages on the bathroom mirrors — things like "You are amazing" and "Have a great day." The head teacher wanted to stop it because writing on mirrors is not allowed. I found out who it was by comparing the handwriting with the sign-up sheets on the school noticeboard. The "g" letters were very distinctive. It was a girl in Year Five who just wanted to make people smile.'
+      - name: Speaker 4
+        text: 'We had a mystery in our science classroom. Every Friday, the plant on the windowsill had been moved to a different spot. Nobody admitted to moving it. I decided to put a tiny piece of tape on the bottom of the pot with a mark on it. The next Friday, the tape was still there but the mark was smudged, which meant someone had picked it up from the bottom. It turned out the Friday cleaning lady moved all the plants to wipe the windowsills.'
+      - name: Speaker 5
+        text: 'There was a mystery about our school garden. Beautiful flowers kept appearing overnight — someone was planting them in the dark. Nobody in the gardening club knew anything about it. We asked the local garden centre if anyone had been buying flowers recently. The owner told us that a retired teacher called Mrs Blake had been buying bedding plants every week. We thanked her and she was invited to the school harvest festival.'
+    statements:
+      A: 'This person solved the mystery by arriving at school earlier than usual.'
+      B: 'This person identified the person through their handwriting.'
+      C: 'This person used a physical marker to track what was happening.'
+      D: 'This person investigated by asking a local business for information.'
+      E: 'This person found the answer by examining a clock.'
+      F: 'This person set up a hidden camera to catch someone.'
+      G: 'This person followed footprints to find the person responsible.'
+      H: 'This person solved the mystery by reading someone''s diary.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'E'
+      Speaker 3: 'B'
+      Speaker 4: 'C'
+      Speaker 5: 'D'
+    explanations:
+      Speaker 1: 'Speaker 1 says "I happened to arrive early one day and saw a girl" — arriving earlier than usual (A).'
+      Speaker 1Zh: '说话者1说"我碰巧有一天早到，看到了一个女孩"——比平时更早到达（A）。'
+      Speaker 2: 'Speaker 2 noticed the hall clock was fast and "someone had moved the hands forward" — examining a clock (E).'
+      Speaker 2Zh: '说话者2注意到大厅的钟快了，"有人把指针拨快了"——检查钟表（E）。'
+      Speaker 3: 'Speaker 3 compared "handwriting with the sign-up sheets" — identified through handwriting (B).'
+      Speaker 3Zh: '说话者3将"笔迹与报名表"进行对比——通过笔迹识别（B）。'
+      Speaker 4: 'Speaker 4 put "a tiny piece of tape on the bottom of the pot" — used a physical marker (C).'
+      Speaker 4Zh: '说话者4在"花盆底部贴了一小块胶带"——使用了物理标记（C）。'
+      Speaker 5: 'Speaker 5 "asked the local garden centre" and the owner identified Mrs Blake — asking a local business (D).'
+      Speaker 5Zh: '说话者5"询问了当地的花卉中心"，店主指认了Blake女士——向当地商家询问（D）。'
+
+  # ============================================================
+  # L187: Our Favourite Puzzle Types
+  # ============================================================
+
+  - id: L187
+    type: multiple-matching
+    title: 'Our Favourite Puzzle Types'
+    titleZh: '我们最喜欢的谜题类型'
+    scene: 'You will hear five young people talking about their favourite type of puzzle.'
+    sceneZh: '你将听到五位年轻人谈论他们最喜欢的谜题类型。'
+    difficulty: 2
+    audioFile: 'L187.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I am completely hooked on sudoku. I do at least two a day — one easy one at breakfast and a harder one before bed. What I love about sudoku is that it is purely logical. There is no guessing involved. Every number can be worked out step by step if you think carefully enough. My fastest time for a medium puzzle is four minutes and twenty seconds.'
+      - name: Speaker 2
+        text: 'Crossword puzzles are my favourite by far. I love the clever wordplay in the clues. Sometimes a clue has a double meaning that makes you think of completely the wrong word at first. My grandmother does crosswords every day and she taught me how to read the clues properly. We sometimes race to see who can finish the newspaper crossword first. She usually wins, though.'
+      - name: Speaker 3
+        text: 'I really enjoy jigsaw puzzles — the bigger the better. I am currently working on a two-thousand-piece puzzle of a coral reef. What I find relaxing about jigsaws is that you can let your mind wander while your hands sort through the pieces. I always start with the edge pieces and then work on areas with distinctive colours. It is like meditation for me.'
+      - name: Speaker 4
+        text: 'Riddles are what I enjoy most. I collect them in a notebook and try them out on my friends. The best riddles are the ones where the answer is really obvious once you hear it, but nearly impossible to guess beforehand. My current favourite is: "What has a head and a tail but no body?" A coin, of course! I must have about three hundred riddles in my collection now.'
+      - name: Speaker 5
+        text: 'I am a big fan of maze puzzles. I draw my own mazes for my friends to solve, and I design them on graph paper using a specific method. First, I draw the solution path, and then I add dead ends and false turns around it. The trick is to make the wrong paths look more inviting than the right one. My friend Jake says my mazes are harder than any he has seen in puzzle books.'
+    statements:
+      A: 'This person enjoys creating puzzles as well as solving them.'
+      B: 'This person finds puzzles relaxing and calming.'
+      C: 'This person likes puzzles that involve word knowledge.'
+      D: 'This person prefers puzzles based on pure logic with no guessing.'
+      E: 'This person collects puzzles in a notebook.'
+      F: 'This person likes puzzles that can be solved outdoors.'
+      G: 'This person prefers puzzles that involve drawing pictures.'
+      H: 'This person enjoys competing against a family member.'
+    answers:
+      Speaker 1: 'D'
+      Speaker 2: 'C'
+      Speaker 3: 'B'
+      Speaker 4: 'E'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 says sudoku is "purely logical" with "no guessing involved" — pure logic (D).'
+      Speaker 1Zh: '说话者1说数独是"纯逻辑的"，"不需要猜测"——纯逻辑（D）。'
+      Speaker 2: 'Speaker 2 loves "clever wordplay in the clues" of crosswords — word knowledge (C).'
+      Speaker 2Zh: '说话者2喜欢填字游戏线索中"巧妙的文字游戏"——文字知识（C）。'
+      Speaker 3: 'Speaker 3 says jigsaws let the mind wander and calls it "like meditation" — relaxing and calming (B).'
+      Speaker 3Zh: '说话者3说拼图可以让思绪漫游，称之为"像冥想"——放松和平静（B）。'
+      Speaker 4: 'Speaker 4 says "I collect them in a notebook" and has about three hundred riddles — collects in notebook (E).'
+      Speaker 4Zh: '说话者4说"我把它们收集在笔记本里"，收集了大约三百个谜语——收集在笔记本中（E）。'
+      Speaker 5: 'Speaker 5 says "I draw my own mazes for my friends to solve" — creating puzzles as well as solving them (A).'
+      Speaker 5Zh: '说话者5说"我为朋友画自己的迷宫让他们解"——既创造谜题也解谜题（A）。'
+
+  # ============================================================
+  # L188: Things That Went Wrong on Our Treasure Hunt
+  # ============================================================
+
+  - id: L188
+    type: multiple-matching
+    title: 'Things That Went Wrong on Our Treasure Hunt'
+    titleZh: '寻宝中出了什么岔子'
+    scene: 'You will hear five children talking about problems during a treasure hunt.'
+    sceneZh: '你将听到五个孩子谈论寻宝过程中遇到的问题。'
+    difficulty: 2
+    audioFile: 'L188.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'Our biggest problem was the weather. We were halfway through the treasure hunt when it started raining really hard. The clue we were carrying was written in ink on normal paper, and the rain made the ink run until we could not read the words anymore. We had to go back to the start and ask for a new copy. By then, the other teams were miles ahead of us.'
+      - name: Speaker 2
+        text: 'We got into trouble because we did not read the clue carefully enough. It said "Go to the tree with the RED ribbon." We went to a tree with an orange ribbon instead, because we were in such a hurry. We wasted twenty minutes searching around the wrong tree before we realised our mistake. After that, we promised each other to read every clue twice.'
+      - name: Speaker 3
+        text: 'The problem for us was that our team kept arguing about which way to go. Every time we reached a decision point, three people wanted to go left and two wanted to go right. We spent more time debating than actually hunting! In the end, we agreed to take turns being the leader. That worked much better because there was only one person making decisions at each stage.'
+      - name: Speaker 4
+        text: 'My difficulty was a personal one — I twisted my ankle on a tree root about ten minutes into the hunt. It hurt quite a lot and I could not walk fast. My teammates were brilliant, though. They slowed down for me and one boy offered to carry my backpack. We finished last, but I felt really grateful for how kind they were. I would rather be on a nice team than win.'
+      - name: Speaker 5
+        text: 'We actually got lost. The map we were given had north at the top, but I was holding it upside down without realising. So every time the clue said "go north," we went south. After about thirty minutes, we ended up at the car park on the completely wrong side of the park. A park keeper pointed us in the right direction and we eventually finished — half an hour after everyone else!'
+    statements:
+      A: 'This person''s team had disagreements about the route.'
+      B: 'This person could not continue at full speed due to an injury.'
+      C: 'This person made a navigation mistake with the map.'
+      D: 'This person''s clue was damaged by weather conditions.'
+      E: 'This person confused two similar-looking items.'
+      F: 'This person''s team lost time because they forgot a clue at home.'
+      G: 'This person arrived late because the starting time was wrong.'
+      H: 'This person could not find the treasure because it had been moved.'
+    answers:
+      Speaker 1: 'D'
+      Speaker 2: 'E'
+      Speaker 3: 'A'
+      Speaker 4: 'B'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 says the rain made the ink run and they could not read the clue — damaged by weather (D).'
+      Speaker 1Zh: '说话者1说雨水使墨水晕开，无法阅读线索——被天气损坏（D）。'
+      Speaker 2: 'Speaker 2 went to a tree with an orange ribbon instead of a red one — confused similar items (E).'
+      Speaker 2Zh: '说话者2去了系橙色丝带的树而不是红色的——混淆了相似的物品（E）。'
+      Speaker 3: 'Speaker 3 says "our team kept arguing about which way to go" — disagreements about the route (A).'
+      Speaker 3Zh: '说话者3说"我们队一直在争论走哪条路"——对路线有分歧（A）。'
+      Speaker 4: 'Speaker 4 twisted their ankle and "could not walk fast" — injury slowed them down (B).'
+      Speaker 4Zh: '说话者4扭伤了脚踝，"走不快"——受伤导致速度变慢（B）。'
+      Speaker 5: 'Speaker 5 held the map "upside down" and went the wrong direction — navigation mistake with map (C).'
+      Speaker 5Zh: '说话者5把地图"拿反了"，走错了方向——地图导航错误（C）。'
+
+  # ============================================================
+  # L189: How We Use Clues in Everyday Life
+  # ============================================================
+
+  - id: L189
+    type: multiple-matching
+    title: 'How We Use Clues in Everyday Life'
+    titleZh: '我们在日常生活中如何使用线索'
+    scene: 'You will hear five young people talking about how detective skills help them in daily life.'
+    sceneZh: '你将听到五位年轻人谈论侦探技能如何帮助他们的日常生活。'
+    difficulty: 2
+    audioFile: 'L189.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I use detective thinking when I cook. If a recipe does not turn out right, I go through everything step by step to find what went wrong. Last week, my cake was flat as a pancake. I checked all the ingredients and realised I had used plain flour instead of self-raising flour. The clue was right there on the bag — I just had not read the label carefully. Now I always double-check every ingredient.'
+      - name: Speaker 2
+        text: 'My detective skill helps me most when I am shopping. I always compare products by reading the small print on the back. Most people just look at the big colourful words on the front, but the real information is in the tiny writing. I can tell which cereal is actually healthiest, which soap is best value, and which toys are made from recycled materials — all from reading the details others ignore.'
+      - name: Speaker 3
+        text: 'I think like a detective when I am playing football. During a match, I watch how the other team plays — which foot each player prefers, where they usually pass, which side they tend to run to. By half-time, I can often predict what they are going to do next. My coach says I have the best game awareness in the whole squad because I observe patterns.'
+      - name: Speaker 4
+        text: 'Detective skills help me understand my little brother. He is only three and cannot always explain what he wants. So I look for clues. If he is rubbing his eyes, he is tired. If he is touching his ear, he might have an earache. If he brings me his shoes, he wants to go outside. I have become really good at reading body language, which helps with other people too — not just my brother.'
+      - name: Speaker 5
+        text: 'I use observation skills when I am out in nature. When I go for walks, I look for signs that animals have been nearby. Nibbled pinecones mean squirrels, muddy paths with hoof prints mean deer, and neat round holes in tree trunks mean woodpeckers. My friends walk past all these signs without noticing. It is like reading a secret story written by the animals themselves.'
+    statements:
+      A: 'This person uses observation skills to understand animal behaviour in nature.'
+      B: 'This person uses detective thinking to improve at sport.'
+      C: 'This person reads product details that most people overlook.'
+      D: 'This person interprets non-verbal signals from a family member.'
+      E: 'This person uses a step-by-step method to fix cooking mistakes.'
+      F: 'This person uses detective skills to do well in exams.'
+      G: 'This person uses clues to find lost objects around the house.'
+      H: 'This person reads people''s expressions to tell if they are lying.'
+    answers:
+      Speaker 1: 'E'
+      Speaker 2: 'C'
+      Speaker 3: 'B'
+      Speaker 4: 'D'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 goes "through everything step by step" when cooking goes wrong — step-by-step method for cooking (E).'
+      Speaker 1Zh: '说话者1在烹饪出错时"一步一步检查所有事情"——烹饪的逐步方法（E）。'
+      Speaker 2: 'Speaker 2 reads "the small print on the back" of products — reading overlooked details (C).'
+      Speaker 2Zh: '说话者2阅读产品"背面的小字"——阅读被忽略的细节（C）。'
+      Speaker 3: 'Speaker 3 watches how the other football team plays and predicts moves — improving at sport (B).'
+      Speaker 3Zh: '说话者3观察对方足球队的打法并预测动作——在运动中提高（B）。'
+      Speaker 4: 'Speaker 4 reads body language of their three-year-old brother — non-verbal signals from family (D).'
+      Speaker 4Zh: '说话者4解读三岁弟弟的身体语言——来自家人的非语言信号（D）。'
+      Speaker 5: 'Speaker 5 looks for animal signs in nature like nibbled pinecones and hoof prints — animal behaviour in nature (A).'
+      Speaker 5Zh: '说话者5在自然中寻找动物迹象，如被啃的松果和蹄印——自然中的动物行为（A）。'
+
+  # ============================================================
+  # L190: Famous Unsolved Mysteries
+  # ============================================================
+
+  - id: L190
+    type: multiple-matching
+    title: 'Famous Unsolved Mysteries'
+    titleZh: '著名的未解之谜'
+    scene: 'You will hear five students presenting a famous unsolved mystery to their class.'
+    sceneZh: '你将听到五位学生向班级介绍一个著名的未解之谜。'
+    difficulty: 2
+    audioFile: 'L190.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I want to tell you about the Mary Celeste. It was an American ship found drifting in the Atlantic Ocean in eighteen seventy-two. The ship was in perfect condition — the cargo was untouched, food was still on the table, and the crew''s belongings were still in their cabins. But every single person on board had vanished. No bodies were ever found, and to this day, nobody knows what happened to the ten people on the ship.'
+      - name: Speaker 2
+        text: 'My mystery is the Voynich Manuscript. It is a book written in a language that nobody can read. It was found in Italy in nineteen twelve and is believed to be about six hundred years old. The pages are covered in strange writing and drawings of plants that do not exist in nature. Hundreds of codebreakers, linguists, and even computer scientists have tried to decode it, but the language remains a complete mystery.'
+      - name: Speaker 3
+        text: 'I am going to talk about the Bermuda Triangle. This is an area of the Atlantic Ocean between Florida, Bermuda, and Puerto Rico where many ships and aeroplanes have disappeared over the years. Some people blame supernatural forces, but most scientists think it is just a combination of bad weather, strong currents, and human error. What makes it mysterious is that in some cases, no wreckage was ever found.'
+      - name: Speaker 4
+        text: 'The mystery I chose is Stonehenge. These giant stones in southern England were placed there about five thousand years ago, but we still do not know exactly how or why. Each stone weighs around twenty-five tonnes and some were brought from over two hundred kilometres away — without wheels or engines. Was it a temple, a calendar, or a healing place? Archaeologists have different theories but no definite answer.'
+      - name: Speaker 5
+        text: 'I want to tell you about the Nazca Lines in Peru. These are enormous drawings on the ground — some are over two hundred metres long. They show animals, plants, and geometric shapes, but the amazing thing is that you can only see the complete pictures from high in the air. The lines were made about two thousand years ago, long before aeroplanes existed. Why would people create art that they could never fully see from the ground?'
+    statements:
+      A: 'This mystery involves a ship where people vanished without a trace.'
+      B: 'This mystery involves writing that has never been decoded.'
+      C: 'This mystery involves giant artworks visible only from the sky.'
+      D: 'This mystery is about an area where vehicles have disappeared.'
+      E: 'This mystery involves ancient stones whose purpose is unknown.'
+      F: 'This mystery involves a building that appeared overnight.'
+      G: 'This mystery is about a treasure map that nobody can follow.'
+      H: 'This mystery involves a clock that runs backwards.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'D'
+      Speaker 4: 'E'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 describes the Mary Celeste — a ship where "every single person on board had vanished" (A).'
+      Speaker 1Zh: '说话者1描述了玛丽·塞莱斯特号——一艘"船上所有人都消失了"的船（A）。'
+      Speaker 2: 'Speaker 2 describes the Voynich Manuscript — "a language that nobody can read" (B).'
+      Speaker 2Zh: '说话者2描述了伏尼契手稿——"一种无人能读懂的语言"（B）。'
+      Speaker 3: 'Speaker 3 describes the Bermuda Triangle where "ships and aeroplanes have disappeared" — vehicles disappeared (D).'
+      Speaker 3Zh: '说话者3描述了百慕大三角，"船只和飞机消失了"——交通工具消失（D）。'
+      Speaker 4: 'Speaker 4 describes Stonehenge — ancient stones whose purpose is debated (E).'
+      Speaker 4Zh: '说话者4描述了巨石阵——用途有争议的古代石头（E）。'
+      Speaker 5: 'Speaker 5 describes the Nazca Lines — "enormous drawings" visible "only from high in the air" (C).'
+      Speaker 5Zh: '说话者5描述了纳斯卡线条——"只有从高空才能看到"的"巨大图画"（C）。'
+
+  # ============================================================
+  # L191: What Surprised Us About Forensic Science
+  # ============================================================
+
+  - id: L191
+    type: multiple-matching
+    title: 'What Surprised Us About Forensic Science'
+    titleZh: '法医科学让我们惊讶的事'
+    scene: 'You will hear five students talking about what surprised them at a forensic science workshop.'
+    sceneZh: '你将听到五位学生谈论法医科学工作坊中让他们惊讶的事情。'
+    difficulty: 2
+    audioFile: 'L191.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'What surprised me most was learning that every person''s ear shape is unique — just like fingerprints. The instructor showed us that the curves, bumps, and ridges of the outer ear are different in every single human being. Police in some countries now use ear prints found pressed against doors or windows as evidence. I had never thought about my ears being special before!'
+      - name: Speaker 2
+        text: 'I was amazed by how much information you can get from a single strand of hair. The instructor explained that hair can tell you what chemicals a person has been exposed to, where they have travelled, and even what they have been eating. This is because hair grows slowly and traps tiny amounts of minerals from food and water. It is like a tiny time capsule recording months of your life.'
+      - name: Speaker 3
+        text: 'The thing that surprised me was that insects can help solve crimes. Forensic entomologists study the types of insects found at a crime scene to determine how long something has been there. Different insects arrive at different stages, so by identifying which species are present, scientists can work out a precise timeline. I never imagined that studying bugs could be so important.'
+      - name: Speaker 4
+        text: 'I could not believe that scientists can now get a DNA profile from just touching a surface. If you pick up a cup or turn a door handle, you leave behind tiny flakes of skin containing your DNA. The instructor showed us that even a single skin cell can sometimes be enough. Twenty years ago, you needed a much larger sample. The technology has become incredibly sensitive.'
+      - name: Speaker 5
+        text: 'What amazed me was that every printer in the world leaves a unique pattern of tiny yellow dots on every page it prints. These dots are invisible to the naked eye, but under a special blue light, you can see them clearly. The pattern encodes the printer''s serial number and the date and time of printing. So if someone prints a threatening letter, police can trace it back to the exact printer.'
+    statements:
+      A: 'This person was surprised that a body part other than fingers can identify people.'
+      B: 'This person learned that insects play a role in criminal investigations.'
+      C: 'This person discovered that printers leave invisible identifying marks.'
+      D: 'This person was amazed by how little material is needed for DNA testing today.'
+      E: 'This person learned that hair stores information about a person''s lifestyle.'
+      F: 'This person was surprised that soil samples can reveal a suspect''s location.'
+      G: 'This person discovered that voice recordings can be analysed like fingerprints.'
+      H: 'This person learned that teeth marks are used to identify people.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'E'
+      Speaker 3: 'B'
+      Speaker 4: 'D'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 learned that "every person''s ear shape is unique — just like fingerprints" — body part other than fingers (A).'
+      Speaker 1Zh: '说话者1了解到"每个人的耳朵形状都是独一无二的——就像指纹一样"——手指以外的身体部位（A）。'
+      Speaker 2: 'Speaker 2 was amazed by the information in "a single strand of hair" about diet and travel — hair stores lifestyle info (E).'
+      Speaker 2Zh: '说话者2对"一根头发"中关于饮食和旅行的信息感到惊讶——头发储存生活方式信息（E）。'
+      Speaker 3: 'Speaker 3 learned "insects can help solve crimes" through forensic entomology — insects in investigations (B).'
+      Speaker 3Zh: '说话者3了解到"昆虫可以帮助破案"，通过法医昆虫学——调查中的昆虫（B）。'
+      Speaker 4: 'Speaker 4 was amazed that "even a single skin cell can sometimes be enough" for DNA — minimal material for DNA (D).'
+      Speaker 4Zh: '说话者4惊讶于"甚至一个皮肤细胞有时就足够"进行DNA检测——DNA所需的最少材料（D）。'
+      Speaker 5: 'Speaker 5 learned about "tiny yellow dots" printers leave on pages — invisible printer marks (C).'
+      Speaker 5Zh: '说话者5了解到打印机在页面上留下的"微小黄点"——看不见的打印机标记（C）。'
+
+  # ============================================================
+  # L192: The Strangest Thing I Found While Exploring
+  # ============================================================
+
+  - id: L192
+    type: multiple-matching
+    title: 'The Strangest Thing I Found While Exploring'
+    titleZh: '探索中发现的最奇怪的东西'
+    scene: 'You will hear five young people talking about unusual things they discovered while exploring.'
+    sceneZh: '你将听到五位年轻人谈论他们在探索时发现的不寻常的东西。'
+    difficulty: 2
+    audioFile: 'L192.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I was exploring a beach after a big storm and I found a glass fishing float — a green glass ball about the size of a football. My grandfather told me that Japanese fishermen used these to keep their nets floating before plastic was invented. This one must have drifted across the entire Pacific Ocean! It might have been in the water for decades. I keep it on my bedroom shelf now.'
+      - name: Speaker 2
+        text: 'While walking in the woods near my house, I found a tree with a bicycle growing out of it. Someone must have left the bike leaning against the tree years ago, and the tree slowly grew around it. The wheels were sticking out on either side, and the handlebars were completely buried in the bark. It was the strangest sight — nature swallowing up a man-made object.'
+      - name: Speaker 3
+        text: 'I was helping my parents clear out the attic of our new house and I found a tin box hidden behind a loose brick in the chimney. Inside, there were old coins from the nineteen thirties, a gold pocket watch, and a handwritten note saying "For safekeeping until I return." Whoever hid it never came back. We reported it to the local history society and they are trying to find out who the owner was.'
+      - name: Speaker 4
+        text: 'I found something incredible while snorkelling on holiday in Greece. On the sea floor, about three metres down, I spotted what looked like a stone column lying on its side. My dad dived down and confirmed it was part of an ancient pillar, probably from a Greek temple. We told the local authorities and they said there are many undiscovered ruins along that coast, hidden under the shallow water.'
+      - name: Speaker 5
+        text: 'This happened in my own garden. I was digging a hole to plant a tree and my spade hit something hard. I carefully dug around it and pulled out a metal container with a faded label that said "Time Capsule — Class of 1989." Inside there were letters from students, a cassette tape, a newspaper, and a small toy car. Our house was built on the site of an old school. I posted about it online and three of the original students got in touch!'
+    statements:
+      A: 'This person found something from another country that had travelled across the sea.'
+      B: 'This person discovered ancient ruins underwater.'
+      C: 'This person found a time capsule buried in their garden.'
+      D: 'This person found valuables hidden inside a building.'
+      E: 'This person discovered nature growing around a man-made object.'
+      F: 'This person found a rare animal in an unexpected place.'
+      G: 'This person discovered a hidden tunnel under their school.'
+      H: 'This person found a message carved into a rock.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'E'
+      Speaker 3: 'D'
+      Speaker 4: 'B'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 found a Japanese glass fishing float that "drifted across the entire Pacific Ocean" — from another country (A).'
+      Speaker 1Zh: '说话者1发现了一个"漂过整个太平洋"的日本玻璃浮球——来自另一个国家（A）。'
+      Speaker 2: 'Speaker 2 found "a tree with a bicycle growing out of it" — nature growing around a man-made object (E).'
+      Speaker 2Zh: '说话者2发现了"一棵自行车长在里面的树"——大自然长在人造物体周围（E）。'
+      Speaker 3: 'Speaker 3 found "old coins, a gold pocket watch" hidden behind a brick — valuables hidden inside a building (D).'
+      Speaker 3Zh: '说话者3在砖块后面发现了"旧硬币、一块金怀表"——藏在建筑内的贵重物品（D）。'
+      Speaker 4: 'Speaker 4 found "part of an ancient pillar, probably from a Greek temple" underwater — ancient ruins underwater (B).'
+      Speaker 4Zh: '说话者4在水下发现了"一根古代柱子的一部分，可能来自希腊神庙"——水下古代遗迹（B）。'
+      Speaker 5: 'Speaker 5 dug up a "Time Capsule — Class of 1989" in their garden — time capsule in garden (C).'
+      Speaker 5Zh: '说话者5在花园里挖出了"时间胶囊——1989届"——花园里的时间胶囊（C）。'
+
+  # ============================================================
+  # L193: Why We Want to Be Detectives When We Grow Up
+  # ============================================================
+
+  - id: L193
+    type: multiple-matching
+    title: 'Why We Want to Be Detectives When We Grow Up'
+    titleZh: '为什么我们长大后想当侦探'
+    scene: 'You will hear five young people explaining why they want to become detectives.'
+    sceneZh: '你将听到五位年轻人解释为什么想成为侦探。'
+    difficulty: 2
+    audioFile: 'L193.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I want to be a detective because I love the idea of helping people who cannot help themselves. When someone loses something precious or is treated unfairly, a detective can step in and find the truth. My aunt had her bicycle stolen last year and the police never found it. I felt so frustrated. If I were a detective, I could have investigated and maybe got it back for her.'
+      - name: Speaker 2
+        text: 'For me, it is the variety that appeals to me. A detective never does the same thing two days in a row. One day you might be interviewing witnesses, the next you might be examining evidence in a laboratory, and the day after that you might be searching for clues outdoors. I would get bored in a job where I sat at the same desk every day doing the same task.'
+      - name: Speaker 3
+        text: 'I want to become a forensic scientist — that is a detective who uses science. I am fascinated by the idea that you can solve a case using chemistry, biology, and physics. For example, by analysing a tiny paint chip, you can identify the exact car involved in an accident. Science and detective work seem like the perfect combination to me.'
+      - name: Speaker 4
+        text: 'Honestly, I want to be a detective because I think I have the right personality for it. I am naturally curious — I always want to know why things happen. I am also very patient. My mum says I am the only person she knows who can sit still for two hours watching a bird''s nest to see what happens. Those are exactly the qualities you need.'
+      - name: Speaker 5
+        text: 'I am interested in becoming a cyber detective — someone who investigates crimes that happen online. So many crimes happen on the internet now, and ordinary police often do not have the computer skills to solve them. I already know how to code in three programming languages, so I think my technology skills could make a real difference in catching online criminals.'
+    statements:
+      A: 'This person wants to help people who are victims of unfairness.'
+      B: 'This person is attracted to having a different routine every day.'
+      C: 'This person wants to combine scientific knowledge with detective work.'
+      D: 'This person believes their natural character suits detective work.'
+      E: 'This person wants to specialise in technology-based crime.'
+      F: 'This person wants to follow in a family member''s footsteps.'
+      G: 'This person is mainly motivated by the salary detectives earn.'
+      H: 'This person wants to become famous through solving a big case.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "I love the idea of helping people who cannot help themselves" — helping victims (A).'
+      Speaker 1Zh: '说话者1说"我喜欢帮助那些无法自助的人"——帮助受害者（A）。'
+      Speaker 2: 'Speaker 2 says "it is the variety" and "never does the same thing two days in a row" — different routine (B).'
+      Speaker 2Zh: '说话者2说"是多样性"和"从不连续两天做同样的事"——不同的日常（B）。'
+      Speaker 3: 'Speaker 3 says "Science and detective work seem like the perfect combination" — combining science and detective work (C).'
+      Speaker 3Zh: '说话者3说"科学和侦探工作似乎是完美的结合"——结合科学和侦探工作（C）。'
+      Speaker 4: 'Speaker 4 says "I think I have the right personality for it" — natural character suits the work (D).'
+      Speaker 4Zh: '说话者4说"我觉得我的性格适合做这个"——天生的性格适合这份工作（D）。'
+      Speaker 5: 'Speaker 5 wants to be "a cyber detective" using "computer skills" — technology-based crime (E).'
+      Speaker 5Zh: '说话者5想成为"网络侦探"，使用"电脑技能"——基于技术的犯罪（E）。'
+
+  # ============================================================
+  # L194: Secret Hiding Places We Have Found
+  # ============================================================
+
+  - id: L194
+    type: multiple-matching
+    title: 'Secret Hiding Places We Have Found'
+    titleZh: '我们发现的秘密藏身处'
+    scene: 'You will hear five children talking about secret hiding places they discovered.'
+    sceneZh: '你将听到五个孩子谈论他们发现的秘密藏身处。'
+    difficulty: 2
+    audioFile: 'L194.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'At my grandparents'' old house, I discovered a cupboard under the stairs that had a false back panel. If you pushed it in a certain way, the panel slid to one side and there was a tiny room behind it — just big enough for a child to sit in. My grandad said it was built during the war as a place to hide valuable documents. I used to read books in there with a torch.'
+      - name: Speaker 2
+        text: 'I found a brilliant hiding place at our local park. There is a very old oak tree with a hollow trunk. The opening is hidden behind a low branch, so most people walk right past without noticing. Inside, the hollow is dry and clean, and someone had even left a plastic box in there with a notebook. It turned out to be a geocache — a treasure hunting game using GPS coordinates.'
+      - name: Speaker 3
+        text: 'My discovery was at school. Behind the stage in the assembly hall, there is a narrow space between the back wall and the curtain. I found it while helping to set up for a play. Inside this gap, generations of students had written their names and the year on the wall. The oldest one I found was from nineteen sixty-two! It was like a secret time capsule that only the theatre kids knew about.'
+      - name: Speaker 4
+        text: 'I found a hidden tunnel at the beach. At low tide, there is a cave entrance hidden behind some large rocks. If you crawl through a narrow gap for about five metres, you come out into a beautiful open cave with a sandy floor. Light comes in through a crack in the ceiling, making it feel magical. My brother and I used it as our secret headquarters all summer.'
+      - name: Speaker 5
+        text: 'In my bedroom, there is a loose floorboard near the window. One day I stepped on it and it wobbled. I lifted it up and found a small space underneath — just enough to fit a shoebox. Inside, there was a dusty envelope with old football trading cards from the nineteen nineties. Someone who lived in my room years ago must have hidden them there. I still keep my own special things in that spot now.'
+    statements:
+      A: 'This person found a hiding place inside a tree.'
+      B: 'This person discovered a space in their own bedroom floor.'
+      C: 'This person found a hidden room behind a false wall.'
+      D: 'This person discovered a cave accessible only at certain times.'
+      E: 'This person found a hidden space behind a stage.'
+      F: 'This person discovered a secret room in a library.'
+      G: 'This person found a hiding place inside a garden shed.'
+      H: 'This person discovered a tunnel under a bridge.'
+    answers:
+      Speaker 1: 'C'
+      Speaker 2: 'A'
+      Speaker 3: 'E'
+      Speaker 4: 'D'
+      Speaker 5: 'B'
+    explanations:
+      Speaker 1: 'Speaker 1 found "a false back panel" in a cupboard revealing a tiny room — hidden room behind false wall (C).'
+      Speaker 1Zh: '说话者1发现了橱柜里的"一个假背板"，露出一个小房间——假墙后面的隐藏房间（C）。'
+      Speaker 2: 'Speaker 2 found "a very old oak tree with a hollow trunk" — hiding place inside a tree (A).'
+      Speaker 2Zh: '说话者2发现了"一棵非常古老的橡树，树干是空心的"——树内的藏身处（A）。'
+      Speaker 3: 'Speaker 3 found a space "behind the stage in the assembly hall" — hidden space behind a stage (E).'
+      Speaker 3Zh: '说话者3在"礼堂舞台后面"发现了一个空间——舞台后面的隐藏空间（E）。'
+      Speaker 4: 'Speaker 4 found a "cave entrance hidden behind rocks" accessible at "low tide" — cave accessible at certain times (D).'
+      Speaker 4Zh: '说话者4发现了"隐藏在岩石后面的洞穴入口"，只有"退潮时"才能进入——特定时间才能进入的洞穴（D）。'
+      Speaker 5: 'Speaker 5 found "a loose floorboard" in their bedroom — space in bedroom floor (B).'
+      Speaker 5Zh: '说话者5在卧室里发现了"一块松动的地板"——卧室地板中的空间（B）。'
+
+  # ============================================================
+  # L195: How Animals Solve Puzzles
+  # ============================================================
+
+  - id: L195
+    type: multiple-matching
+    title: 'How Animals Solve Puzzles'
+    titleZh: '动物如何解谜'
+    scene: 'You will hear five students presenting facts about animal intelligence and problem-solving.'
+    sceneZh: '你将听到五位学生介绍动物智力和解决问题能力的事实。'
+    difficulty: 2
+    audioFile: 'L195.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I want to tell you about crows. Scientists in New Caledonia discovered that crows can make tools out of sticks and use them to reach food inside narrow tubes. But what is really amazing is that they can plan ahead — they will pick up a short stick to get a longer stick, and then use the longer stick to reach the food. That is three steps of planning, which most animals cannot do.'
+      - name: Speaker 2
+        text: 'Octopuses are incredible problem-solvers. In aquariums, they have been filmed unscrewing jar lids from the inside to escape, squeezing through tiny gaps, and even opening childproof bottles to get food. One octopus in New Zealand learned how to short-circuit a light above its tank by squirting water at it. The staff could not work out why the light kept breaking until they caught the octopus in the act!'
+      - name: Speaker 3
+        text: 'I researched elephants for my presentation. Elephants can cooperate to solve problems. In one experiment, two elephants had to pull the ends of the same rope at exactly the same time to get food. They quickly learned that pulling alone did not work — they had to wait for their partner. When one elephant arrived late, the other one waited patiently instead of pulling by itself.'
+      - name: Speaker 4
+        text: 'Dogs are smarter than we think when it comes to social puzzles. Studies show that dogs can follow a human''s gaze — if you look at a box, the dog will look at it too. Even more impressively, dogs can tell when a person is being helpful and when they are being unhelpful. In experiments, dogs preferred to take food from a person who had been kind to their owner rather than from a stranger who had been rude.'
+      - name: Speaker 5
+        text: 'Dolphins use a clever trick to protect their noses while searching for food on the sea floor. They tear off pieces of sea sponge and wear them on their snouts like gloves. This stops the sharp rocks and coral from hurting them. Scientists call this tool use, and it is very rare in the animal kingdom. Mother dolphins teach this trick to their daughters, so it is actually a form of culture passed down through generations.'
+    statements:
+      A: 'This animal uses objects to protect itself from physical harm.'
+      B: 'This animal can plan several steps ahead to reach a goal.'
+      C: 'This animal understands the importance of working together.'
+      D: 'This animal can judge whether humans are friendly or unfriendly.'
+      E: 'This animal has escaped from containers using physical manipulation.'
+      F: 'This animal communicates using a complex language.'
+      G: 'This animal can count up to twenty.'
+      H: 'This animal builds permanent structures like dams.'
+    answers:
+      Speaker 1: 'B'
+      Speaker 2: 'E'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 describes crows planning three steps ahead — planning several steps ahead (B).'
+      Speaker 1Zh: '说话者1描述了乌鸦提前计划三个步骤——提前计划几个步骤（B）。'
+      Speaker 2: 'Speaker 2 describes octopuses "unscrewing jar lids" and escaping — escaping from containers (E).'
+      Speaker 2Zh: '说话者2描述了章鱼"拧开罐盖"并逃脱——从容器中逃脱（E）。'
+      Speaker 3: 'Speaker 3 describes elephants needing to "pull at exactly the same time" — working together (C).'
+      Speaker 3Zh: '说话者3描述了大象需要"同时拉"——一起合作（C）。'
+      Speaker 4: 'Speaker 4 says dogs "can tell when a person is being helpful and when they are being unhelpful" — judging friendliness (D).'
+      Speaker 4Zh: '说话者4说狗"能分辨一个人是否在帮忙"——判断友好程度（D）。'
+      Speaker 5: 'Speaker 5 describes dolphins wearing sponge on their snouts for protection — using objects for protection (A).'
+      Speaker 5Zh: '说话者5描述了海豚在鼻子上戴海绵来保护自己——使用物体进行保护（A）。'
+
+  # ============================================================
+  # L196: Our Spy Inventions
+  # ============================================================
+
+  - id: L196
+    type: multiple-matching
+    title: 'Our Spy Inventions'
+    titleZh: '我们的间谍发明'
+    scene: 'You will hear five children describing spy gadgets they invented for a school project.'
+    sceneZh: '你将听到五个孩子描述他们为学校项目发明的间谍小工具。'
+    difficulty: 2
+    audioFile: 'L196.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I made a secret message device out of two toilet roll tubes. You write your message on a strip of paper wound around one tube. When you unwind it, the letters are all scrambled and meaningless. The other person needs a tube of exactly the same width to wind it back up and read the message. I got the idea from the ancient Spartans — they invented this method thousands of years ago.'
+      - name: Speaker 2
+        text: 'My invention is a trip wire alarm using a peg, some string, and a tin can filled with marbles. You tie the string across a doorway at ankle height, attached to a peg holding the tin can on a shelf. When someone walks through and catches the string, the peg releases and the can falls, making a huge noise. It is really simple but it works every single time. My sister was very surprised the first time she triggered it!'
+      - name: Speaker 3
+        text: 'I built a periscope so I can see over walls and around corners without being spotted. It is made from a long cardboard tube with mirrors at each end set at a forty-five degree angle. The light bounces from one mirror to the other. I decorated the outside to look like a tree branch so it would blend in. It took three attempts to get the mirror angles right, but now it works perfectly.'
+      - name: Speaker 4
+        text: 'I created invisible ink using baking soda mixed with water. You write your message with a paintbrush, and when it dries, the paper looks completely blank. To reveal the message, you paint over the paper with grape juice. The baking soda reacts with the acid in the grape juice and the letters appear in a different colour. I tested five different juices and grape juice gave the clearest result.'
+      - name: Speaker 5
+        text: 'My spy gadget is a listening device. I taped a paper cup to the end of a long cardboard tube and pointed it at a target. The cup collects sound waves and the tube focuses them towards your ear. It works a bit like a satellite dish for sound. I tested it in the garden and I could clearly hear my dad talking on the phone twenty metres away. The teacher said it was the most creative project in the class.'
+    statements:
+      A: 'This person made a device for reading coded messages using tubes.'
+      B: 'This person built a device to hear distant conversations.'
+      C: 'This person created an alarm system triggered by movement.'
+      D: 'This person invented a way to write and reveal hidden text.'
+      E: 'This person built a device for looking around obstacles.'
+      F: 'This person designed a gadget that takes secret photographs.'
+      G: 'This person created a device that sends messages using light.'
+      H: 'This person built a walkie-talkie from household items.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'C'
+      Speaker 3: 'E'
+      Speaker 4: 'D'
+      Speaker 5: 'B'
+    explanations:
+      Speaker 1: 'Speaker 1 made a device with "two toilet roll tubes" for secret messages wound around tubes — coded message tubes (A).'
+      Speaker 1Zh: '说话者1用"两个卷纸筒"制作了密码消息设备——密码消息管（A）。'
+      Speaker 2: 'Speaker 2 made "a trip wire alarm" triggered when "someone walks through" — alarm triggered by movement (C).'
+      Speaker 2Zh: '说话者2制作了"一个绊线警报"，当"有人走过"时触发——由运动触发的警报（C）。'
+      Speaker 3: 'Speaker 3 built a periscope "to see over walls and around corners" — looking around obstacles (E).'
+      Speaker 3Zh: '说话者3制作了一个潜望镜"可以看过墙壁和绕过拐角"——绕过障碍物观察（E）。'
+      Speaker 4: 'Speaker 4 created invisible ink that reveals text with grape juice — writing and revealing hidden text (D).'
+      Speaker 4Zh: '说话者4创造了用葡萄汁显示文字的隐形墨水——书写和显示隐藏文字（D）。'
+      Speaker 5: 'Speaker 5 made "a listening device" to hear dad "twenty metres away" — hearing distant conversations (B).'
+      Speaker 5Zh: '说话者5制作了"一个监听设备"，能听到二十米外爸爸说话——听到远处的对话（B）。'
+
+  # ============================================================
+  # L197: Unusual Jobs in Crime-Solving
+  # ============================================================
+
+  - id: L197
+    type: multiple-matching
+    title: 'Unusual Jobs in Crime-Solving'
+    titleZh: '破案中的不寻常工作'
+    scene: 'You will hear five professionals talking about their unusual role in solving crimes.'
+    sceneZh: '你将听到五位专业人士谈论他们在破案中不寻常的角色。'
+    difficulty: 2
+    audioFile: 'L197.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I am a forensic linguist. My job is to analyse the language in threatening letters, ransom notes, and online messages. Everyone has a unique writing style — the words they choose, how they build sentences, even their spelling mistakes. I once helped identify a blackmailer by noticing that he always used the word "whilst" instead of "while" and put double spaces after full stops, which is quite unusual nowadays.'
+      - name: Speaker 2
+        text: 'I work as a forensic artist. When witnesses describe a suspect, I create a detailed portrait based on their descriptions. I ask questions like "Were the eyes close together or far apart?" and "Was the chin pointed or rounded?" The most challenging part is that people''s memories are not always accurate, so I often have to draw several versions. My portraits have helped identify suspects in over thirty cases.'
+      - name: Speaker 3
+        text: 'My title is forensic accountant. I follow the money trail. When someone commits fraud or steals from a company, they try to hide the money by moving it through different bank accounts, sometimes in different countries. I trace every transaction, no matter how small, until I find where the stolen money ended up. It is like solving a puzzle made entirely of numbers.'
+      - name: Speaker 4
+        text: 'I am a forensic botanist. I study plants to help solve crimes. For example, pollen grains are microscopic and stick to clothing. By identifying the types of pollen on a suspect''s jacket, I can often determine exactly which location they visited. Pollen from different plants blooms at different times of year too, so I can sometimes even work out when the person was at that place.'
+      - name: Speaker 5
+        text: 'My job is forensic archaeology. I use the same techniques that archaeologists use to study ancient sites, but I apply them to crime scenes. I am trained to recover buried evidence without damaging it. I also study soil layers — different types of soil at different depths can tell us when the ground was disturbed. I work slowly and carefully, sometimes spending days on a single square metre.'
+    statements:
+      A: 'This person identifies suspects through the way they use written language.'
+      B: 'This person traces financial transactions to find hidden money.'
+      C: 'This person creates images of suspects from witness descriptions.'
+      D: 'This person studies plant material to link suspects to locations.'
+      E: 'This person carefully excavates and studies buried evidence.'
+      F: 'This person analyses voice recordings to identify speakers.'
+      G: 'This person studies blood patterns at crime scenes.'
+      H: 'This person uses satellites to track suspect movements.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'C'
+      Speaker 3: 'B'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 analyses "language in threatening letters" and identified someone by word choice — written language analysis (A).'
+      Speaker 1Zh: '说话者1分析"威胁信中的语言"，通过用词识别了某人——书面语言分析（A）。'
+      Speaker 2: 'Speaker 2 creates "a detailed portrait based on descriptions" from witnesses — creating suspect images (C).'
+      Speaker 2Zh: '说话者2根据目击者描述"创作详细肖像"——创建嫌疑人图像（C）。'
+      Speaker 3: 'Speaker 3 "follows the money trail" and "traces every transaction" — tracing financial transactions (B).'
+      Speaker 3Zh: '说话者3"追踪资金流向"和"追踪每一笔交易"——追踪金融交易（B）。'
+      Speaker 4: 'Speaker 4 identifies "pollen on a suspect''s jacket" to determine locations — plant material linking to locations (D).'
+      Speaker 4Zh: '说话者4通过识别"嫌疑人夹克上的花粉"来确定地点——用植物材料关联地点（D）。'
+      Speaker 5: 'Speaker 5 uses archaeology techniques to "recover buried evidence" — excavating buried evidence (E).'
+      Speaker 5Zh: '说话者5使用考古技术"找回掩埋的证据"——挖掘掩埋的证据（E）。'
+
+  # ============================================================
+  # L198: Detective Gadgets Through History
+  # ============================================================
+
+  - id: L198
+    type: multiple-matching
+    title: 'Detective Gadgets Through History'
+    titleZh: '历史上的侦探工具'
+    scene: 'You will hear five museum guides each describing a detective tool from a different era.'
+    sceneZh: '你将听到五位博物馆导游分别介绍不同时代的侦探工具。'
+    difficulty: 2
+    audioFile: 'L198.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'This magnifying glass dates from the eighteen fifties. Before microscopes became widely available, detectives relied on hand-held magnifying glasses like this one to examine evidence up close. This particular glass has a brass frame and a lens that magnifies objects up to ten times their actual size. It was used by a London detective who investigated jewellery thefts. He used it to compare the marks left by different tools on broken locks.'
+      - name: Speaker 2
+        text: 'This fingerprint kit is from the nineteen twenties. It contains fine aluminium powder, a camel hair brush, lifting tape, and record cards. Before this, fingerprints were mainly recorded using ink pads. The powder method was revolutionary because it could reveal prints on surfaces that were impossible to carry to a police station, like windowsills and door frames. This kit was standard police equipment until the nineteen eighties.'
+      - name: Speaker 3
+        text: 'Here we have a lie detector machine from the nineteen thirties. It measures three things at once — your heart rate, your breathing, and how much your hands sweat. The theory is that when people lie, their body shows small physical changes. However, modern scientists are quite sceptical about how reliable these machines really are. Some innocent people show stress signals simply because they are nervous about being tested.'
+      - name: Speaker 4
+        text: 'This is one of the earliest police radios, from nineteen thirty-four. Before two-way radios, police officers on patrol had no way to communicate with their station except by finding a telephone box. This device changed everything — officers could now report crimes instantly and receive instructions while on the move. It weighed about five kilograms and the battery lasted only four hours, but it was considered miraculous at the time.'
+      - name: Speaker 5
+        text: 'This modern device is a portable DNA analyser, developed in two thousand and fifteen. Traditional DNA testing used to take weeks because samples had to be sent to a laboratory. This machine can analyse a DNA sample in just ninety minutes at the crime scene itself. It has already been used in over five hundred cases worldwide. The technology continues to get faster and smaller every year.'
+    statements:
+      A: 'This tool measured physical responses to detect dishonesty.'
+      B: 'This tool allowed officers to communicate while moving.'
+      C: 'This tool was used to examine evidence at very close range.'
+      D: 'This tool could reveal marks left on surfaces at a crime scene.'
+      E: 'This tool dramatically reduced the time needed for scientific analysis.'
+      F: 'This tool was used to record and compare voice patterns.'
+      G: 'This tool projected images onto a wall for witnesses to view.'
+      H: 'This tool was used to measure distances at crime scenes.'
+    answers:
+      Speaker 1: 'C'
+      Speaker 2: 'D'
+      Speaker 3: 'A'
+      Speaker 4: 'B'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 describes a magnifying glass used to "examine evidence up close" — examining at close range (C).'
+      Speaker 1Zh: '说话者1描述了一个用来"近距离检查证据"的放大镜——近距离检查（C）。'
+      Speaker 2: 'Speaker 2 describes a fingerprint kit that could "reveal prints on surfaces" — revealing marks on surfaces (D).'
+      Speaker 2Zh: '说话者2描述了一个能"在表面上显示指纹"的指纹套件——显示表面上的痕迹（D）。'
+      Speaker 3: 'Speaker 3 describes a lie detector measuring "heart rate, breathing, and sweating" — measuring physical responses (A).'
+      Speaker 3Zh: '说话者3描述了测量"心率、呼吸和出汗"的测谎仪——测量身体反应（A）。'
+      Speaker 4: 'Speaker 4 describes a police radio allowing officers to "communicate while on the move" — communicating while moving (B).'
+      Speaker 4Zh: '说话者4描述了让警察"在移动中通信"的警用无线电——移动中通信（B）。'
+      Speaker 5: 'Speaker 5 describes a DNA analyser that works "in just ninety minutes" instead of weeks — reducing analysis time (E).'
+      Speaker 5Zh: '说话者5描述了一个"只需九十分钟"而非数周的DNA分析仪——减少分析时间（E）。'
+
+  # ============================================================
+  # L199: Lessons We Learned From Getting It Wrong
+  # ============================================================
+
+  - id: L199
+    type: multiple-matching
+    title: 'Lessons We Learned From Getting It Wrong'
+    titleZh: '从错误中学到的教训'
+    scene: 'You will hear five young detectives talking about a mistake they made while investigating.'
+    sceneZh: '你将听到五位小侦探谈论他们在调查中犯的错误。'
+    difficulty: 2
+    audioFile: 'L199.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'My biggest mistake was jumping to a conclusion too quickly. When biscuits went missing from the kitchen, I immediately blamed my little brother because he loves biscuits. I even told Mum it was him. But then we found crumbs leading to the dog''s bed. Our dog Rex had learned to open the cupboard door with his nose! I felt terrible for accusing my brother and I apologised. Now I always make sure I have proper evidence before accusing anyone.'
+      - name: Speaker 2
+        text: 'I learned the hard way that you should never destroy evidence. I was investigating who had trampled the flowers in our garden. I found a clear shoe print in the mud, but instead of taking a photo first, I tried to make a plaster cast of it. I mixed the plaster wrong and when I poured it in, it ruined the print completely. If I had taken a photo first, I would still have had a record of the evidence. Lesson learned — always photograph evidence before touching it.'
+      - name: Speaker 3
+        text: 'My mistake was not writing things down. I was trying to work out who was leaving anonymous notes in my friend''s locker. I interviewed six different people and each gave me useful information. But by the end of the day, I had mixed up who said what and could not remember the important details. After that experience, I always carry a small notebook. Real detectives write everything in a notebook for the same reason.'
+      - name: Speaker 4
+        text: 'I made the error of working alone when I should have asked for help. I was trying to solve a puzzle at a scout camp that required finding five objects hidden in a forest. I was determined to find them all by myself to prove I was clever. After two hours, I had only found three. Meanwhile, a team of four scouts found all five in twenty minutes by splitting up and searching different areas. Teamwork really is more effective than working alone.'
+      - name: Speaker 5
+        text: 'The lesson I learned was about keeping an open mind. During a class mystery game, I decided early on that a certain character was guilty and I only looked for evidence that supported my theory. I ignored clues that pointed to someone else. In the end, I got the answer completely wrong. The teacher explained that this is called "confirmation bias" — seeing only what you want to see. Good detectives consider all the evidence, even if it contradicts their theory.'
+    statements:
+      A: 'This person learned the importance of photographing evidence first.'
+      B: 'This person learned not to accuse someone without proper proof.'
+      C: 'This person learned that keeping written notes is essential.'
+      D: 'This person learned the value of asking others for assistance.'
+      E: 'This person learned to consider all evidence, not just evidence supporting one idea.'
+      F: 'This person learned to always wear gloves when handling evidence.'
+      G: 'This person learned the importance of arriving at a scene quickly.'
+      H: 'This person learned to interview suspects separately.'
+    answers:
+      Speaker 1: 'B'
+      Speaker 2: 'A'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 blamed their brother without evidence and says "always make sure I have proper evidence before accusing" — not accusing without proof (B).'
+      Speaker 1Zh: '说话者1在没有证据的情况下指责了弟弟，说"在指控之前一定要有适当的证据"——没有证据不指控（B）。'
+      Speaker 2: 'Speaker 2 ruined a shoe print and says "always photograph evidence before touching it" — photographing evidence first (A).'
+      Speaker 2Zh: '说话者2毁了一个鞋印，说"在触摸之前一定要先拍照"——先拍照取证（A）。'
+      Speaker 3: 'Speaker 3 mixed up who said what and now "always carries a small notebook" — keeping written notes (C).'
+      Speaker 3Zh: '说话者3混淆了谁说了什么，现在"总是随身带一个小笔记本"——做书面记录（C）。'
+      Speaker 4: 'Speaker 4 worked alone and failed, while a team succeeded quickly — value of asking for help (D).'
+      Speaker 4Zh: '说话者4独自工作失败了，而团队很快就成功了——寻求帮助的价值（D）。'
+      Speaker 5: 'Speaker 5 only looked for supporting evidence and learned about "confirmation bias" — considering all evidence (E).'
+      Speaker 5Zh: '说话者5只寻找支持性证据，并了解了"确认偏差"——考虑所有证据（E）。'
+
+  # ============================================================
+  # L200: Our Dream Detective Adventures
+  # ============================================================
+
+  - id: L200
+    type: multiple-matching
+    title: 'Our Dream Detective Adventures'
+    titleZh: '我们梦想中的侦探冒险'
+    scene: 'You will hear five young people describing the detective adventure they would most like to have.'
+    sceneZh: '你将听到五位年轻人描述他们最想经历的侦探冒险。'
+    difficulty: 2
+    audioFile: 'L200.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'If I could have any detective adventure, I would love to explore a sunken pirate ship. Imagine diving down to a wreck on the ocean floor and finding a captain''s cabin still intact. There might be maps, logbooks, and maybe even treasure locked in a chest. I would photograph everything carefully and try to piece together the ship''s story — where it sailed from, what happened to the crew, and why it sank. The ocean hides so many mysteries.'
+      - name: Speaker 2
+        text: 'My dream adventure would be solving a mystery in an ancient Egyptian tomb. I have always been fascinated by hieroglyphics and the idea that messages were carved into walls thousands of years ago. I would love to be the person who deciphers a text that nobody else can read and discovers something new about how the ancient Egyptians lived. Maybe there are still tombs waiting to be found under the sand.'
+      - name: Speaker 3
+        text: 'I would choose a wildlife mystery. I would love to go to a remote rainforest and track an animal that scientists think might be extinct. Imagine following footprints, finding droppings, and setting up cameras, and then finally getting a photograph of a creature that everyone thought had disappeared forever. Discovering that a species still exists would be the most exciting moment of my life.'
+      - name: Speaker 4
+        text: 'My dream detective adventure involves space. I would love to be on the team that analyses samples from Mars and discovers evidence of past life. Even finding a microscopic fossil — a tiny ancient bacterium — would change everything we know about the universe. It would mean that life is not unique to Earth. That would be the biggest mystery ever solved, and I want to be part of it.'
+      - name: Speaker 5
+        text: 'I dream about investigating a haunted castle. Not because I believe in ghosts — I do not — but because I would love to find the scientific explanation for all the spooky things people report. The cold spots, the strange sounds, the flickering lights — I am sure there are perfectly logical reasons for all of them, like draughts, old pipes, and faulty wiring. Proving that would be just as satisfying as finding a real ghost!'
+    statements:
+      A: 'This person wants to explore an underwater shipwreck.'
+      B: 'This person wants to decode ancient writing in a historical site.'
+      C: 'This person wants to find scientific explanations for supposedly supernatural events.'
+      D: 'This person wants to discover evidence of life beyond Earth.'
+      E: 'This person wants to prove that a thought-to-be-extinct animal still exists.'
+      F: 'This person wants to investigate a crime committed on a train.'
+      G: 'This person wants to find a hidden city in the jungle.'
+      H: 'This person wants to solve a mystery using only old newspaper archives.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'E'
+      Speaker 4: 'D'
+      Speaker 5: 'C'
+    explanations:
+      Speaker 1: 'Speaker 1 wants to "explore a sunken pirate ship" on the ocean floor — underwater shipwreck (A).'
+      Speaker 1Zh: '说话者1想"探索一艘沉没的海盗船"——水下沉船（A）。'
+      Speaker 2: 'Speaker 2 wants to decipher texts "in an ancient Egyptian tomb" — decoding ancient writing (B).'
+      Speaker 2Zh: '说话者2想在"古埃及墓穴中"破译文字——解码古代文字（B）。'
+      Speaker 3: 'Speaker 3 wants to "track an animal that scientists think might be extinct" — proving an extinct animal exists (E).'
+      Speaker 3Zh: '说话者3想"追踪科学家认为可能已经灭绝的动物"——证明灭绝动物仍然存在（E）。'
+      Speaker 4: 'Speaker 4 wants to find "evidence of past life" on Mars — life beyond Earth (D).'
+      Speaker 4Zh: '说话者4想在火星上找到"过去生命的证据"——地球以外的生命（D）。'
+      Speaker 5: 'Speaker 5 wants to find "scientific explanation for all the spooky things" in a castle — scientific explanations for supernatural events (C).'
+      Speaker 5Zh: '说话者5想为城堡中"所有诡异事情找到科学解释"——超自然事件的科学解释（C）。'

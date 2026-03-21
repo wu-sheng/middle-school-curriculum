@@ -1,0 +1,1597 @@
+category: 'Modals & Inference'
+categoryZh: '情态动词与推断'
+questions:
+  # ============================================================
+  # G0201–G0220: Modal verbs for present deduction
+  # must / can't / might / could + be / have
+  # ============================================================
+  - id: G0201
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-1]
+    context: detective
+    question: 'The lights are off. They _____ be at home.'
+    questionZh: '灯都关了。他们____在家。'
+    options:
+      A: "mustn't"
+      B: "can't"
+      C: "shouldn't"
+      D: "needn't"
+    answer: 'B'
+    explanation: "We use 'can't' for strong negative deduction about the present. The evidence (lights off) strongly suggests they are not home."
+    explanationZh: '用 can''t 表示对现在的强烈否定推测。证据（灯关着）强烈暗示他们不在家。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0202
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-1]
+    context: detective
+    question: 'There is a wet umbrella by the door. It _____ be raining outside.'
+    questionZh: '门口有一把湿雨伞。外面____在下雨。'
+    options:
+      A: 'must'
+      B: 'might'
+      C: 'would'
+      D: 'shall'
+    answer: 'A'
+    explanation: "The wet umbrella is strong evidence, so we use 'must' for a confident deduction."
+    explanationZh: '湿雨伞是很强的证据，所以用 must 表示有把握的推测。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0203
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-1]
+    context: detective
+    question: 'Someone left muddy footprints in the hall. The thief _____ (must / be) still nearby.'
+    questionZh: '有人在大厅留下了泥脚印。小偷____（must / be）还在附近。'
+    answer: 'must be'
+    explanation: "We use 'must be' for a strong present deduction based on clear evidence (fresh muddy footprints)."
+    explanationZh: '用 must be 表示基于明显证据（新鲜泥脚印）的强烈推测。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0204
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-1]
+    context: detective
+    question: 'I hear music from the house. Someone _____ be inside.'
+    questionZh: '我听到房子里有音乐声。____有人在里面。'
+    options:
+      A: 'must'
+      B: 'mustn''t'
+      C: 'can'
+      D: 'shall'
+    answer: 'A'
+    explanation: "Music playing is strong evidence that someone is inside. We use 'must' for confident deduction."
+    explanationZh: '音乐声是有人在里面的有力证据。用 must 表示有把握的推测。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0205
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-1]
+    context: detective
+    question: 'The dog is barking at the window. There _____ (might / be) a stranger in the garden.'
+    questionZh: '狗在对着窗户叫。花园里____（might / be）有陌生人。'
+    answer: 'might be'
+    explanation: "The dog barking is some evidence but not conclusive, so we use 'might be' for a possibility."
+    explanationZh: '狗叫是一些证据但不确定，所以用 might be 表示可能。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0206
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'Detective Fox found a red hair on the chair. The suspect _____ have red hair.'
+    questionZh: '狐狸侦探在椅子上发现了一根红头发。嫌疑人____有红头发。'
+    options:
+      A: 'must'
+      B: 'can'
+      C: 'would'
+      D: 'shall'
+    answer: 'A'
+    explanation: "Direct physical evidence (a red hair) leads to a strong deduction. 'Must' expresses near certainty."
+    explanationZh: '直接的物证（一根红头发）引出有力的推断。must 表示几乎确定。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0207
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'The window is locked from inside. The thief _____ have come in through the window.'
+    questionZh: '窗户从里面锁着。小偷____是从窗户进来的。'
+    options:
+      A: 'must'
+      B: "can't"
+      C: 'might'
+      D: 'should'
+    answer: 'B'
+    explanation: "If the window is locked from inside, it is impossible for the thief to have entered that way. We use 'can't' for logical impossibility."
+    explanationZh: '如果窗户从里面锁着，小偷不可能从窗户进来。用 can''t 表示逻辑上不可能。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0208
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'The cookie jar is empty, but nobody admits eating them. It _____ (could / be) the cat — cats love fish, not cookies!'
+    questionZh: '饼干罐空了，但没人承认吃了。____（could / be）是猫干的——猫喜欢鱼，不喜欢饼干！'
+    answer: "could be"
+    explanation: "'Could be' expresses a weak possibility. It is unlikely the cat ate cookies, but we cannot completely rule it out."
+    explanationZh: 'could be 表示较弱的可能性。猫吃饼干不太可能，但不能完全排除。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0209
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'The suspect says he is a chef, but he does not know how to crack an egg. He _____ be telling the truth.'
+    questionZh: '嫌疑人说他是厨师，但他不会打鸡蛋。他____在说实话。'
+    options:
+      A: 'must'
+      B: "can't"
+      C: 'will'
+      D: 'shall'
+    answer: 'B'
+    explanation: "A chef who cannot crack an egg is contradictory. 'Can''t be' expresses that we are almost sure he is lying."
+    explanationZh: '不会打鸡蛋的厨师自相矛盾。can''t 表示我们几乎确定他在撒谎。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0210
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'The treasure map is written in code. The person who made it _____ (must / be) very clever.'
+    questionZh: '藏宝图是用密码写的。画这张图的人____（must / be）非常聪明。'
+    answer: 'must be'
+    explanation: "Writing in code requires intelligence. This strong evidence supports 'must be' for a confident deduction."
+    explanationZh: '用密码写东西需要智慧。有力的证据支持用 must be 表示自信的推测。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0211
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-2]
+    context: detective
+    question: 'The suspect has paint on her hands. She _____ be the one who drew the graffiti.'
+    questionZh: '嫌疑人手上有油漆。她____就是画涂鸦的人。'
+    options:
+      A: 'might'
+      B: "can't"
+      C: 'mustn''t'
+      D: 'would'
+    answer: 'A'
+    explanation: "Paint on her hands is some evidence, but she could be an artist. 'Might' shows it is possible but not certain."
+    explanationZh: '手上有油漆是一些证据，但她可能是画家。might 表示可能但不确定。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0212
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'Choose the correct sentence about present deduction.'
+    questionZh: '选出关于现在推测的正确句子。'
+    options:
+      A: 'He mustn''t be the thief — he was at school.'
+      B: 'He can''t be the thief — he was at school.'
+      C: 'He shouldn''t be the thief — he was at school.'
+      D: 'He won''t be the thief — he was at school.'
+    answer: 'B'
+    explanation: "For negative deduction (logical impossibility), we use 'can't', not 'mustn't'. 'Mustn't' means 'it is forbidden', not 'it is impossible'."
+    explanationZh: '表示否定推测（逻辑上不可能）用 can''t，不用 mustn''t。mustn''t 表示"禁止"，不是"不可能"。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0213
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'The safe is still locked and the code has not been cracked. The diamonds _____ (must / still / be) inside.'
+    questionZh: '保险箱还锁着，密码没有被破解。钻石____（must / still / be）在里面。'
+    answer: 'must still be'
+    explanation: "If the safe is locked and uncracked, the diamonds logically must still be inside. 'Must still be' combines deduction with 'still' for ongoing state."
+    explanationZh: '如果保险箱锁着且密码没被破解，钻石在逻辑上一定还在里面。must still be 将推测与 still（仍然）结合。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0214
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'There are two suspects: Mr Green and Miss White. Mr Green has an alibi. The thief _____ be Miss White.'
+    questionZh: '有两个嫌疑人：格林先生和怀特小姐。格林先生有不在场证明。小偷____是怀特小姐。'
+    options:
+      A: 'might'
+      B: 'could'
+      C: 'must'
+      D: 'should'
+    answer: 'C'
+    explanation: "If there are only two suspects and one has an alibi, the other must be the thief. This is a logical certainty."
+    explanationZh: '如果只有两个嫌疑人而其中一个有不在场证明，那么另一个一定是小偷。这是逻辑上的确定。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0215
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'The letter is written in French. The writer _____ (can''t / be) from Japan — or _____ they?'
+    questionZh: '信是用法语写的。写信人____（can''t / be）是日本人——还是____？'
+    answer: "can't be / can"
+    explanation: "At first glance, a French letter suggests the writer is not Japanese (can't be). But the second part questions this — a Japanese person could know French."
+    explanationZh: '乍一看，法语信暗示写信人不是日本人（can''t be）。但后半句质疑这一点——日本人也可能懂法语。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0216
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'Nobody has been in this room for years. The fresh flowers on the table _____ be real.'
+    questionZh: '这个房间已经好几年没人进来了。桌上的鲜花____是真的。'
+    options:
+      A: 'must'
+      B: "can't"
+      C: 'will'
+      D: 'shall'
+    answer: 'B'
+    explanation: "Fresh flowers cannot survive for years without water. If nobody entered, the flowers can't be real — they must be fake."
+    explanationZh: '鲜花不浇水不可能存活几年。如果没人进来，花不可能是真的——一定是假的。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0217
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'The fingerprints on the glass are tiny. The person who held it _____ (must / have) very small hands.'
+    questionZh: '玻璃杯上的指纹很小。拿过杯子的人____（must / have）有一双很小的手。'
+    answer: 'must have'
+    explanation: "Tiny fingerprints are direct evidence of small hands. Here 'must have' means 'must possess' (present state), not past deduction."
+    explanationZh: '小指纹是小手的直接证据。这里 must have 表示"一定拥有"（现在状态），不是过去推测。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0218
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-3]
+    context: detective
+    question: 'The cake is half-eaten but the dog looks guilty. It _____ be the dog who ate it.'
+    questionZh: '蛋糕被吃了一半，但狗看起来很心虚。____是狗吃的。'
+    options:
+      A: 'could'
+      B: 'shall'
+      C: 'would'
+      D: 'need'
+    answer: 'A'
+    explanation: "The dog looking guilty is some evidence but not proof. 'Could' expresses possibility — it is one explanation among others."
+    explanationZh: '狗看起来心虚是一些证据但不是证据。could 表示可能性——这是几种解释之一。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0219
+    type: multiple-choice
+    tags: [modals-present, Q03, difficulty-4]
+    context: detective
+    question: 'Which sentence uses a modal of deduction INCORRECTLY?'
+    questionZh: '哪个句子错误地使用了表推测的情态动词？'
+    options:
+      A: 'She must be tired — she has been working all day.'
+      B: 'He can''t be serious — that is a silly idea.'
+      C: 'They mustn''t be at home — no one answers the door.'
+      D: 'It could be a trap — be careful!'
+    answer: 'C'
+    explanation: "'Mustn't' means 'it is forbidden', NOT 'I deduce they are not'. The correct form is 'can't be at home'."
+    explanationZh: 'mustn''t 表示"禁止"，不是"推测不是"。正确的说法是 can''t be at home。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0220
+    type: fill-blank
+    tags: [modals-present, Q03, difficulty-4]
+    context: detective
+    question: 'Rank these sentences from most certain to least certain: (a) It must be Tom. (b) It could be Tom. (c) It might be Tom. Write the letters in order: _____'
+    questionZh: '将这些句子按确定程度从高到低排列：(a) It must be Tom. (b) It could be Tom. (c) It might be Tom. 按顺序写出字母：_____'
+    answer: 'a, c, b'
+    explanation: "'Must' = almost certain. 'Might' = possible. 'Could' = weakly possible (even less sure than 'might' in many contexts). Order: must > might > could."
+    explanationZh: 'must = 几乎确定。might = 可能。could = 较弱的可能性（很多语境下比 might 更不确定）。顺序：must > might > could。'
+    grammarPoint: 'Modals for present deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  # ============================================================
+  # G0221–G0240: Modal verbs for past deduction
+  # must have / can't have / might have / could have + past participle
+  # ============================================================
+  - id: G0221
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-1]
+    context: detective
+    question: 'The ground is wet. It _____ rained last night.'
+    questionZh: '地面是湿的。昨晚____下过雨。'
+    options:
+      A: 'must have'
+      B: 'can have'
+      C: 'should'
+      D: 'would have'
+    answer: 'A'
+    explanation: "Wet ground is strong evidence of past rain. 'Must have + past participle' is used for confident deduction about the past."
+    explanationZh: '地面湿是过去下雨的有力证据。must have + 过去分词用于对过去的有把握推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0222
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-1]
+    context: detective
+    question: 'The cookie jar was full this morning, but now it is empty. Someone _____ (must / eat) all the cookies.'
+    questionZh: '饼干罐今早还是满的，现在空了。有人____（must / eat）了所有饼干。'
+    answer: 'must have eaten'
+    explanation: "The jar going from full to empty is clear evidence. 'Must have eaten' = past deduction with certainty."
+    explanationZh: '饼干罐从满变空是明显的证据。must have eaten = 对过去有把握的推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0223
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-1]
+    context: detective
+    question: 'The vase is broken but the cat was outside all day. The cat _____ broken it.'
+    questionZh: '花瓶碎了，但猫一整天都在外面。猫____打碎的。'
+    options:
+      A: 'must have'
+      B: "can't have"
+      C: 'should have'
+      D: 'would have'
+    answer: 'B'
+    explanation: "If the cat was outside all day, it is logically impossible for it to have broken the vase. 'Can't have + past participle' = impossible past deduction."
+    explanationZh: '如果猫一整天都在外面，逻辑上不可能是它打碎的花瓶。can''t have + 过去分词 = 不可能的过去推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0224
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-1]
+    context: detective
+    question: 'I saw a shadow in the garden at midnight. It _____ (might / be) a fox.'
+    questionZh: '我午夜在花园看到一个影子。那____（might / be）是只狐狸。'
+    answer: 'might have been'
+    explanation: "We are guessing about something in the past. A shadow is not enough to be sure, so 'might have been' shows possibility."
+    explanationZh: '我们在猜测过去的事。一个影子不足以确定，所以 might have been 表示可能性。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0225
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-2]
+    context: detective
+    question: 'The witness saw a tall person running away. It _____ been Mr Short — he is only 150 cm tall.'
+    questionZh: '目击者看到一个高个子跑掉了。那____是矮个子先生——他只有150厘米高。'
+    options:
+      A: 'must have'
+      B: "can't have"
+      C: 'might have'
+      D: 'should have'
+    answer: 'B'
+    explanation: "A tall person running away cannot be Mr Short (150 cm). 'Can't have been' expresses logical impossibility in the past."
+    explanationZh: '高个子不可能是150厘米的矮个子先生。can''t have been 表示对过去的逻辑上不可能。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0226
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-2]
+    context: detective
+    question: 'The secret message was written in invisible ink. The spy _____ (must / use) a special pen.'
+    questionZh: '秘密信息是用隐形墨水写的。间谍____（must / use）了一支特殊的笔。'
+    answer: 'must have used'
+    explanation: "Invisible ink requires a special pen. Strong evidence leads to 'must have used' — a confident past deduction."
+    explanationZh: '隐形墨水需要特殊的笔。有力证据引出 must have used——有把握的过去推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0227
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-2]
+    context: detective
+    question: 'The painting disappeared during the night. The guard _____ been sleeping!'
+    questionZh: '画在夜间消失了。保安____在睡觉！'
+    options:
+      A: 'could have'
+      B: "can't have"
+      C: 'must have'
+      D: 'would have'
+    answer: 'C'
+    explanation: "If the painting disappeared on his watch, the guard almost certainly was not doing his job. 'Must have been' expresses a strong deduction about the past."
+    explanationZh: '如果画在他值班时消失了，保安几乎肯定没在履行职责。must have been 表示对过去的强烈推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0228
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-2]
+    context: detective
+    question: 'The door was locked but the jewels are gone. The thief _____ (could / come) in through the chimney.'
+    questionZh: '门是锁着的但珠宝不见了。小偷____（could / come）从烟囱进来的。'
+    answer: 'could have come'
+    explanation: "'Could have come' suggests one possible way the thief entered. It is a possibility, not a certainty."
+    explanationZh: 'could have come 提出小偷进入的一种可能方式。这是一种可能，不是确定。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0229
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-2]
+    context: detective
+    question: 'The footprints in the snow lead to the shed. The suspect _____ hidden there.'
+    questionZh: '雪地上的脚印通向小屋。嫌疑人____躲在那里。'
+    options:
+      A: 'might have'
+      B: 'will have'
+      C: 'shall have'
+      D: 'need have'
+    answer: 'A'
+    explanation: "Footprints leading to the shed suggest the suspect possibly hid there, but we cannot be 100% sure. 'Might have' = possible past event."
+    explanationZh: '通向小屋的脚印暗示嫌疑人可能躲在那里，但我们不能100%确定。might have = 过去可能发生的事。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0230
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'There were no fingerprints on the weapon. The criminal _____ (must / wear) gloves.'
+    questionZh: '凶器上没有指纹。犯罪分子____（must / wear）了手套。'
+    answer: 'must have worn'
+    explanation: "No fingerprints strongly suggests gloves were worn. 'Must have worn' = confident deduction about what happened."
+    explanationZh: '没有指纹强烈暗示戴了手套。must have worn = 对过去发生的事有把握的推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0231
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'Miss Plum says she was at the cinema, but the cinema was closed yesterday. She _____.'
+    questionZh: '梅小姐说她在电影院，但电影院昨天关门了。她____。'
+    options:
+      A: 'must have lied'
+      B: 'might have lied'
+      C: 'could have lied'
+      D: "needn't have lied"
+    answer: 'A'
+    explanation: "If the cinema was closed, her alibi is impossible. She must have lied — this is a logical certainty."
+    explanationZh: '如果电影院关门了，她的不在场证明不可能成立。她一定撒了谎——这是逻辑上的确定。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0232
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'The alarm did not go off, so the thief _____ (can''t / enter) through the front door. It has a sensor.'
+    questionZh: '警报没有响，所以小偷____（can''t / enter）从前门进来的。前门有传感器。'
+    answer: "can't have entered"
+    explanation: "The sensor would have triggered the alarm. Since it did not go off, the thief can't have entered through the front door."
+    explanationZh: '传感器会触发警报。既然警报没响，小偷不可能从前门进来。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0233
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'The suspect had flour on his shoes. He _____ been near the bakery before the crime.'
+    questionZh: '嫌疑人鞋上有面粉。他____在犯罪前去过面包店附近。'
+    options:
+      A: 'must have'
+      B: "can't have"
+      C: 'shouldn''t have'
+      D: "won't have"
+    answer: 'A'
+    explanation: "Flour on his shoes is strong evidence that he was near a bakery. 'Must have been' = strong past deduction."
+    explanationZh: '鞋上的面粉是他去过面包店附近的有力证据。must have been = 强烈的过去推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0234
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'Two cups of tea were on the table. The suspect _____ (might / have) a visitor before he disappeared.'
+    questionZh: '桌上有两杯茶。嫌疑人在消失前____（might / have）有访客。'
+    answer: 'might have had'
+    explanation: "Two cups suggest a visitor, but there could be other explanations. 'Might have had' = possible past event."
+    explanationZh: '两个杯子暗示有访客，但可能有其他解释。might have had = 过去可能的事件。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0235
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-3]
+    context: detective
+    question: 'The document was typed on an old typewriter. Someone _____ found one in the attic.'
+    questionZh: '文件是用旧打字机打的。有人____在阁楼找到了一台。'
+    options:
+      A: 'could have'
+      B: 'must'
+      C: "won't have"
+      D: "shan't have"
+    answer: 'A'
+    explanation: "Finding a typewriter in the attic is one possible explanation. 'Could have found' = it is one of several possibilities."
+    explanationZh: '在阁楼找到打字机是一种可能的解释。could have found = 这是几种可能之一。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0236
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-4]
+    context: detective
+    question: 'The window glass was broken outward, not inward. Someone _____ (must / break) it from inside the room.'
+    questionZh: '窗户玻璃是向外碎的，不是向内。有人____（must / break）从房间里面打碎的。'
+    answer: 'must have broken'
+    explanation: "Glass breaking outward means force came from inside. 'Must have broken' = confident deduction based on physical evidence."
+    explanationZh: '玻璃向外碎说明力来自里面。must have broken = 基于物证的有把握推测。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0237
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-4]
+    context: detective
+    question: 'The detective said: "The thief _____ known the alarm code. There is no sign of forced entry."'
+    questionZh: '侦探说："小偷____知道警报密码。没有强行进入的痕迹。"'
+    options:
+      A: 'must have'
+      B: 'might have'
+      C: "can't have"
+      D: "needn't have"
+    answer: 'A'
+    explanation: "No forced entry means the thief got in without breaking anything — they must have known the code. This is a strong logical deduction."
+    explanationZh: '没有强行进入的痕迹说明小偷没有破坏任何东西就进来了——一定知道密码。这是很强的逻辑推断。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0238
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-4]
+    context: detective
+    question: 'The thief left a note saying "Thank you." He _____ (can''t / be) in a hurry when he left.'
+    questionZh: '小偷留了一张纸条写着"谢谢"。他离开时____（can''t / be）很匆忙。'
+    answer: "can't have been"
+    explanation: "Writing a thank-you note takes time. If he stopped to write, he can't have been in a hurry."
+    explanationZh: '写感谢信需要时间。如果他停下来写信，就不可能很匆忙。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0239
+    type: multiple-choice
+    tags: [modals-past, Q03, difficulty-4]
+    context: detective
+    question: 'Which sentence is INCORRECT?'
+    questionZh: '哪个句子是错误的？'
+    options:
+      A: 'He must have left early.'
+      B: 'She can''t have seen him — she was abroad.'
+      C: 'They might have forgot the key.'
+      D: 'I could have made a mistake.'
+    answer: 'C'
+    explanation: "After 'might have', we need the past participle. 'Forgot' is past simple; the correct form is 'might have forgotten'."
+    explanationZh: 'might have 后面需要过去分词。forgot 是一般过去时；正确形式是 might have forgotten。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0240
+    type: fill-blank
+    tags: [modals-past, Q03, difficulty-4]
+    context: detective
+    question: 'Rewrite using a modal of past deduction: "I am sure the spy escaped through the tunnel." → The spy _____ through the tunnel.'
+    questionZh: '用过去推测情态动词改写："我确信间谍从隧道逃走了。" → 间谍____从隧道逃走的。'
+    answer: 'must have escaped'
+    explanation: "'I am sure' about the past = 'must have + past participle'. Must have escaped = I am confident this happened."
+    explanationZh: '对过去"确信" = must have + 过去分词。must have escaped = 我确信这件事发生了。'
+    grammarPoint: 'Modals for past deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  # ============================================================
+  # G0241–G0260: Mixed modals
+  # Obligation (must/have to/should) vs Deduction (must/can't/might)
+  # ============================================================
+  - id: G0241
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-1]
+    context: detective
+    question: 'You _____ touch the evidence! It is against the rules.'
+    questionZh: '你____碰证据！这违反规定。'
+    options:
+      A: "mustn't"
+      B: "can't (deduction)"
+      C: "needn't"
+      D: "might not"
+    answer: 'A'
+    explanation: "Here 'mustn't' means 'you are not allowed to'. This is obligation/prohibition, not deduction."
+    explanationZh: '这里 mustn''t 表示"你不被允许"。这是义务/禁止，不是推测。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0242
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-1]
+    context: detective
+    question: 'Detectives _____ wear gloves at a crime scene. It is required.'
+    questionZh: '侦探在犯罪现场____戴手套。这是要求。'
+    options:
+      A: 'must'
+      B: 'might'
+      C: 'could'
+      D: 'would'
+    answer: 'A'
+    explanation: "'Must' here expresses obligation — it is a rule that detectives follow."
+    explanationZh: '这里 must 表示义务——这是侦探要遵守的规定。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0243
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-1]
+    context: detective
+    question: 'The suspect looks very nervous. He _____ (must / know) something about the crime.'
+    questionZh: '嫌疑人看起来很紧张。他____（must / know）关于犯罪的事情。'
+    answer: 'must know'
+    explanation: "'Must know' here is deduction — we believe he knows something because he looks nervous."
+    explanationZh: '这里 must know 是推测——我们认为他知道什么，因为他看起来很紧张。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0244
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-2]
+    context: detective
+    question: 'Is "must" used for obligation or deduction? "You must report any clues to the detective."'
+    questionZh: '"must"在这里表示义务还是推测？"You must report any clues to the detective."'
+    options:
+      A: 'obligation'
+      B: 'deduction'
+      C: 'possibility'
+      D: 'suggestion'
+    answer: 'A'
+    explanation: "'You must report' = you are required to report. This is an obligation, not a guess about what is true."
+    explanationZh: 'You must report = 你必须报告。这是义务，不是关于事实的猜测。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0245
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-2]
+    context: detective
+    question: 'Is "must" used for obligation or deduction? "She must be the new detective — she has a badge."'
+    questionZh: '"must"在这里表示义务还是推测？"She must be the new detective — she has a badge."'
+    options:
+      A: 'obligation'
+      B: 'deduction'
+      C: 'ability'
+      D: 'permission'
+    answer: 'B'
+    explanation: "'Must be' followed by evidence (she has a badge) = deduction. We are guessing based on evidence, not giving an order."
+    explanationZh: 'must be 后跟证据（她有徽章）= 推测。我们在根据证据猜测，不是在下命令。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0246
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-2]
+    context: detective
+    question: 'We _____ (have to) leave now — the building is closing in five minutes.'
+    questionZh: '我们____（have to）现在离开——大楼五分钟后关门。'
+    answer: 'have to'
+    explanation: "'Have to' expresses external obligation — the building is closing, so we have no choice."
+    explanationZh: 'have to 表示外部义务——大楼要关门了，我们别无选择。'
+    grammarPoint: 'Must vs Have to'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0247
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-2]
+    context: detective
+    question: 'You _____ read this file — it is confidential.'
+    questionZh: '你____看这份文件——它是机密的。'
+    options:
+      A: "mustn't"
+      B: "don't have to"
+      C: "needn't"
+      D: "might not"
+    answer: 'A'
+    explanation: "A confidential file = you are forbidden to read it. 'Mustn't' = prohibition. 'Don't have to' would mean 'it is optional', which is wrong here."
+    explanationZh: '机密文件 = 禁止阅读。mustn''t = 禁止。don''t have to 意思是"不必"，在这里不对。'
+    grammarPoint: 'Mustn''t vs Don''t have to'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0248
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-2]
+    context: detective
+    question: 'You _____ bring your own magnifying glass — the club provides one.'
+    questionZh: '你____自己带放大镜——俱乐部提供。'
+    options:
+      A: "mustn't"
+      B: "don't have to"
+      C: "can't"
+      D: "shouldn't"
+    answer: 'B'
+    explanation: "The club provides one, so bringing your own is optional, not forbidden. 'Don't have to' = it is not necessary."
+    explanationZh: '俱乐部提供了，所以自己带是可选的，不是禁止的。don''t have to = 不必。'
+    grammarPoint: 'Mustn''t vs Don''t have to'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0249
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'You _____ (should) always write down what witnesses say. It helps you remember.'
+    questionZh: '你____（should）总是把目击者说的话记下来。这有助于你记忆。'
+    answer: 'should'
+    explanation: "'Should' gives advice — it is a good idea but not a strict rule."
+    explanationZh: 'should 表示建议——这是个好主意但不是严格的规定。'
+    grammarPoint: 'Should for advice'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0250
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'The detective _____ question the witness first — it is the standard procedure.'
+    questionZh: '侦探____先询问目击者——这是标准程序。'
+    options:
+      A: 'has to'
+      B: 'might'
+      C: 'could'
+      D: 'would'
+    answer: 'A'
+    explanation: "'Has to' = external obligation from standard procedure. The detective does not choose; it is required."
+    explanationZh: 'has to = 来自标准程序的外部义务。侦探没有选择；这是必须的。'
+    grammarPoint: 'Must vs Have to'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0251
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'Which sentence expresses DEDUCTION, not obligation?'
+    questionZh: '哪个句子表示推测，而不是义务？'
+    options:
+      A: 'You must show your ID at the gate.'
+      B: 'He must be the thief — look at the evidence.'
+      C: 'We must arrive before 9 am.'
+      D: 'She must finish the report today.'
+    answer: 'B'
+    explanation: "Only B uses 'must' to mean 'I conclude that'. The rest all mean 'it is necessary/required to'."
+    explanationZh: '只有 B 用 must 表示"我推断"。其他都表示"必须/要求做"。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0252
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'Junior detectives _____ (not / have to) work at night. Only senior detectives do that.'
+    questionZh: '初级侦探____（not / have to）晚上工作。只有高级侦探才这样。'
+    answer: "don't have to"
+    explanation: "'Don't have to' = it is not necessary. Junior detectives are not required to work at night."
+    explanationZh: 'don''t have to = 不必。初级侦探不需要晚上工作。'
+    grammarPoint: 'Mustn''t vs Don''t have to'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0253
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'You _____ use your phone during the investigation. Put it away.'
+    questionZh: '调查期间你____用手机。把它收起来。'
+    options:
+      A: "mustn't"
+      B: "don't have to"
+      C: "might not"
+      D: "shouldn't have"
+    answer: 'A'
+    explanation: "'Put it away' shows this is a prohibition. 'Mustn't' = forbidden."
+    explanationZh: '"把它收起来"说明这是禁止。mustn''t = 被禁止。'
+    grammarPoint: 'Mustn''t vs Don''t have to'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0254
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-3]
+    context: detective
+    question: 'That _____ (should / not) happen — someone made a mistake in the plan.'
+    questionZh: '那____（should / not）发生——有人在计划中犯了错。'
+    answer: "shouldn't have happened"
+    explanation: "'Shouldn't have happened' = it was wrong that it happened. We criticise a past event."
+    explanationZh: 'shouldn''t have happened = 这件事不应该发生。我们在批评一个过去的事件。'
+    grammarPoint: 'Should have for past criticism'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0255
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'The lab results say the blood on the glove is type O. The suspect has type AB blood. He _____ the one who wore the glove.'
+    questionZh: '实验室结果显示手套上的血是O型。嫌疑人是AB型血。他____是戴手套的人。'
+    options:
+      A: "can't be"
+      B: "mustn't be"
+      C: 'might be'
+      D: 'should be'
+    answer: 'A'
+    explanation: "Different blood types = impossible match. 'Can't be' for negative deduction. Remember: 'mustn't' = prohibition, not impossibility."
+    explanationZh: '不同的血型 = 不可能匹配。can''t be 表示否定推测。记住：mustn''t = 禁止，不是不可能。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0256
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'The spy _____ (should / tell) his partner about the danger, but he did not. Now his partner is in trouble.'
+    questionZh: '间谍____（should / tell）他的搭档关于危险的事，但他没有。现在他的搭档有麻烦了。'
+    answer: 'should have told'
+    explanation: "'Should have told' = he did not tell (but it was the right thing to do). We criticise his past decision."
+    explanationZh: 'should have told = 他没有告诉（但那样做是对的）。我们在批评他过去的决定。'
+    grammarPoint: 'Should have for past criticism'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0257
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'Match the meaning: "You needn''t have brought your torch — we have plenty."'
+    questionZh: '选择正确的含义："You needn''t have brought your torch — we have plenty."'
+    options:
+      A: 'You brought it, but it was not necessary.'
+      B: 'You did not bring it, and that was wrong.'
+      C: 'You must not bring a torch.'
+      D: 'You forgot to bring your torch.'
+    answer: 'A'
+    explanation: "'Needn't have + past participle' means you DID the action, but it was unnecessary. You brought the torch, but we already had enough."
+    explanationZh: 'needn''t have + 过去分词表示你做了这个动作，但其实没必要。你带了手电筒，但我们已经有足够多了。'
+    grammarPoint: 'Needn''t have vs Didn''t need to'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0258
+    type: fill-blank
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'The witness _____ (not / need) worry — the police will protect her.'
+    questionZh: '目击者____（not / need）担心——警察会保护她。'
+    answer: "needn't"
+    explanation: "'Needn't' = there is no need to. It is not necessary for her to worry."
+    explanationZh: 'needn''t = 不需要。她没有必要担心。'
+    grammarPoint: 'Needn''t for lack of necessity'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0259
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'Choose the best modal for advice: "If I were you, I _____ check the CCTV footage first."'
+    questionZh: '选择最佳的建议情态动词："如果我是你，我____先检查监控录像。"'
+    options:
+      A: 'must'
+      B: 'would'
+      C: 'might'
+      D: 'could'
+    answer: 'B'
+    explanation: "'If I were you, I would...' is a standard way to give advice. 'Would' pairs with the second conditional structure."
+    explanationZh: 'If I were you, I would... 是给建议的标准用法。would 与第二条件句结构搭配。'
+    grammarPoint: 'Would for advice'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0260
+    type: multiple-choice
+    tags: [modals-mixed, Q03, difficulty-4]
+    context: detective
+    question: 'Which pair has DIFFERENT meanings?'
+    questionZh: '哪一对意思不同？'
+    options:
+      A: 'must (obligation) / must (deduction)'
+      B: 'can''t (inability) / can''t (negative deduction)'
+      C: 'should (advice) / should (advice)'
+      D: 'might (possibility) / might (possibility)'
+    answer: 'A'
+    explanation: "'Must' for obligation = 'you are required to'. 'Must' for deduction = 'I am almost certain'. These are two very different meanings of the same word."
+    explanationZh: 'must 表义务 = "你必须做"。must 表推测 = "我几乎确定"。这是同一个词的两种非常不同的含义。'
+    grammarPoint: 'Must: obligation vs deduction'
+    relatedQuest: Q03
+    difficulty: 4
+
+  # ============================================================
+  # G0261–G0280: Reported speech
+  # Direct → indirect speech (for witness statements)
+  # ============================================================
+  - id: G0261
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-1]
+    context: detective
+    question: 'The witness said: "I saw a man in a black coat." → The witness said she _____ a man in a black coat.'
+    questionZh: '目击者说："我看到一个穿黑外套的男人。" → 目击者说她____一个穿黑外套的男人。'
+    options:
+      A: 'saw'
+      B: 'had seen'
+      C: 'sees'
+      D: 'has seen'
+    answer: 'B'
+    explanation: "In reported speech, past simple ('saw') shifts back to past perfect ('had seen')."
+    explanationZh: '在间接引语中，一般过去时（saw）退一步变成过去完成时（had seen）。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0262
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-1]
+    context: detective
+    question: '"I am innocent!" the suspect shouted. → The suspect shouted that he _____ innocent.'
+    questionZh: '"我是无辜的！"嫌疑人喊道。 → 嫌疑人喊道他____无辜的。'
+    answer: 'was'
+    explanation: "Present simple 'am' shifts to past simple 'was' in reported speech."
+    explanationZh: '一般现在时 am 在间接引语中变为一般过去时 was。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0263
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-1]
+    context: detective
+    question: '"I will find the thief," said Detective Panda. → Detective Panda said he _____ find the thief.'
+    questionZh: '"我会找到小偷的，"熊猫侦探说。 → 熊猫侦探说他____找到小偷。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'can'
+      D: 'shall'
+    answer: 'B'
+    explanation: "'Will' shifts to 'would' in reported speech."
+    explanationZh: '间接引语中 will 变为 would。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0264
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-1]
+    context: detective
+    question: '"I can hear footsteps," whispered the spy. → The spy whispered that she _____ hear footsteps.'
+    questionZh: '"我能听到脚步声，"间谍低声说。 → 间谍低声说她____听到脚步声。'
+    answer: 'could'
+    explanation: "'Can' shifts to 'could' in reported speech."
+    explanationZh: '间接引语中 can 变为 could。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0265
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-2]
+    context: detective
+    question: '"I have already checked the basement," said Officer Lin. → Officer Lin said she _____ already _____ the basement.'
+    questionZh: '"我已经检查过地下室了，"林警官说。 → 林警官说她____已经____地下室了。'
+    options:
+      A: 'has / checked'
+      B: 'had / checked'
+      C: 'have / checked'
+      D: 'was / checking'
+    answer: 'B'
+    explanation: "Present perfect 'have checked' shifts to past perfect 'had checked' in reported speech."
+    explanationZh: '现在完成时 have checked 在间接引语中变为过去完成时 had checked。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0266
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-2]
+    context: detective
+    question: '"We are looking for the missing necklace," said the police. → The police said they _____ for the missing necklace.'
+    questionZh: '"我们正在寻找丢失的项链，"警察说。 → 警察说他们____丢失的项链。'
+    answer: 'were looking'
+    explanation: "Present continuous 'are looking' shifts to past continuous 'were looking' in reported speech."
+    explanationZh: '现在进行时 are looking 在间接引语中变为过去进行时 were looking。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0267
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-2]
+    context: detective
+    question: '"Don''t touch anything!" the detective warned us. → The detective warned us _____ anything.'
+    questionZh: '"别碰任何东西！"侦探警告我们。 → 侦探警告我们____任何东西。'
+    options:
+      A: 'to not touch'
+      B: 'not to touch'
+      C: 'not touching'
+      D: "didn't touch"
+    answer: 'B'
+    explanation: "Reported imperatives use 'told/warned + object + (not) to + infinitive'. The correct form is 'not to touch'."
+    explanationZh: '间接引语中的祈使句用 told/warned + 宾语 + (not) to + 动词原形。正确形式是 not to touch。'
+    grammarPoint: 'Reported speech: imperatives'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0268
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-2]
+    context: detective
+    question: '"Where is the key?" asked the inspector. → The inspector asked where the key _____.'
+    questionZh: '"钥匙在哪里？"检查员问道。 → 检查员问钥匙____。'
+    answer: 'was'
+    explanation: "In reported questions, 'is' shifts to 'was', and we use statement word order (not question order)."
+    explanationZh: '在间接疑问句中，is 变为 was，并且使用陈述句语序（不是疑问句语序）。'
+    grammarPoint: 'Reported speech: questions'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0269
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-2]
+    context: detective
+    question: '"Did you see anyone suspicious?" the officer asked me. → The officer asked me _____ anyone suspicious.'
+    questionZh: '"你看到任何可疑的人了吗？"警官问我。 → 警官问我____任何可疑的人。'
+    options:
+      A: 'if I had seen'
+      B: 'if I saw'
+      C: 'did I see'
+      D: 'that I saw'
+    answer: 'A'
+    explanation: "Yes/no questions use 'if/whether' in reported speech. 'Did you see' (past simple) shifts to 'had seen' (past perfect)."
+    explanationZh: '是非问句在间接引语中用 if/whether。did you see（一般过去时）变为 had seen（过去完成时）。'
+    grammarPoint: 'Reported speech: questions'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0270
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-3]
+    context: detective
+    question: '"I was sleeping when the alarm went off," said Mr Fox. → Mr Fox said he _____ when the alarm _____.'
+    questionZh: '"警报响时我在睡觉，"狐狸先生说。 → 狐狸先生说警报____时他____。'
+    answer: 'had been sleeping / had gone off'
+    explanation: "Past continuous 'was sleeping' shifts to past perfect continuous 'had been sleeping'. Past simple 'went off' shifts to past perfect 'had gone off'."
+    explanationZh: '过去进行时 was sleeping 变为过去完成进行时 had been sleeping。一般过去时 went off 变为过去完成时 had gone off。'
+    grammarPoint: 'Reported speech: tense shift'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0271
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-3]
+    context: detective
+    question: '"I must leave now," the spy said. → The spy said she _____ leave then.'
+    questionZh: '"我必须现在离开，"间谍说。 → 间谍说她____离开。'
+    options:
+      A: 'must'
+      B: 'had to'
+      C: 'should'
+      D: 'would'
+    answer: 'B'
+    explanation: "'Must' (obligation) shifts to 'had to' in reported speech. Also note 'now' changes to 'then'."
+    explanationZh: 'must（义务）在间接引语中变为 had to。另外注意 now 变为 then。'
+    grammarPoint: 'Reported speech: modal shift'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0272
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-3]
+    context: detective
+    question: '"Meet me here tomorrow," the informant said. → The informant told me to meet him _____ the _____.'
+    questionZh: '"明天在这里见我，"线人说。 → 线人让我____在____见他。'
+    answer: 'there / next day'
+    explanation: "In reported speech, 'here' becomes 'there' and 'tomorrow' becomes 'the next day' (or 'the following day')."
+    explanationZh: '在间接引语中，here 变为 there，tomorrow 变为 the next day（或 the following day）。'
+    grammarPoint: 'Reported speech: time/place shifts'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0273
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-3]
+    context: detective
+    question: '"I found this clue yesterday," said the detective. → The detective said he had found that clue _____.'
+    questionZh: '"我昨天发现了这条线索，"侦探说。 → 侦探说他____发现了那条线索。'
+    options:
+      A: 'yesterday'
+      B: 'the day before'
+      C: 'last day'
+      D: 'the yesterday'
+    answer: 'B'
+    explanation: "In reported speech, 'yesterday' shifts to 'the day before' (or 'the previous day'). Also 'this' becomes 'that'."
+    explanationZh: '在间接引语中，yesterday 变为 the day before（或 the previous day）。另外 this 变为 that。'
+    grammarPoint: 'Reported speech: time/place shifts'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0274
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-3]
+    context: detective
+    question: '"Who took the painting?" the curator asked. → The curator asked who _____ the painting.'
+    questionZh: '"谁拿了画？"馆长问道。 → 馆长问谁____了画。'
+    answer: 'had taken'
+    explanation: "In reported Wh-questions, we keep the question word and use statement order. 'Took' shifts to 'had taken'."
+    explanationZh: '在间接引语的特殊疑问句中，保留疑问词并使用陈述句语序。took 变为 had taken。'
+    grammarPoint: 'Reported speech: questions'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0275
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: '"You should check the attic," my partner suggested. → My partner suggested that I _____ check the attic.'
+    questionZh: '"你应该检查阁楼，"我的搭档建议。 → 我的搭档建议我____检查阁楼。'
+    options:
+      A: 'should'
+      B: 'would'
+      C: 'could'
+      D: 'might'
+    answer: 'A'
+    explanation: "'Should' does not change in reported speech — it stays as 'should'. (Could, might, would also do not change.)"
+    explanationZh: 'should 在间接引语中不变——还是 should。（could、might、would 也不变。）'
+    grammarPoint: 'Reported speech: modal shift'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0276
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: '"The suspect might have escaped through the back door," Officer Chen told me. → Officer Chen told me the suspect _____ through the back door.'
+    questionZh: '"嫌疑人可能从后门逃跑了，"陈警官告诉我。 → 陈警官告诉我嫌疑人____从后门逃跑了。'
+    answer: 'might have escaped'
+    explanation: "'Might have escaped' does not change in reported speech. 'Might' is already a past-shifted form."
+    explanationZh: 'might have escaped 在间接引语中不变。might 本身已经是退后的形式。'
+    grammarPoint: 'Reported speech: modal shift'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0277
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: 'Which reported sentence is CORRECT?'
+    questionZh: '哪个间接引语句子是正确的？'
+    options:
+      A: 'She asked me where was the evidence.'
+      B: 'She asked me where the evidence was.'
+      C: 'She asked me where is the evidence.'
+      D: 'She asked me where the evidence is.'
+    answer: 'B'
+    explanation: "Reported questions need statement word order (subject + verb), not question order. And tense shifts back: is → was."
+    explanationZh: '间接疑问句需要陈述句语序（主语 + 动词），不是疑问句语序。时态也要退后：is → was。'
+    grammarPoint: 'Reported speech: questions'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0278
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: '"Please help me search the garden," Mrs Rabbit asked the children. → Mrs Rabbit asked the children _____ her search the garden.'
+    questionZh: '"请帮我搜查花园，"兔太太请求孩子们。 → 兔太太请求孩子们____她搜查花园。'
+    answer: 'to help'
+    explanation: "Reported requests use 'asked + object + to + infinitive'. 'Please help' → 'asked them to help'."
+    explanationZh: '间接引语中的请求用 asked + 宾语 + to + 动词原形。Please help → asked them to help。'
+    grammarPoint: 'Reported speech: requests'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0279
+    type: multiple-choice
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: '"I have never seen this man before," the shopkeeper told the police. → The shopkeeper told the police that _____.'
+    questionZh: '"我以前从没见过这个人，"店主告诉警察。 → 店主告诉警察____。'
+    options:
+      A: 'she has never seen this man before'
+      B: 'she had never seen that man before'
+      C: 'she never saw that man before'
+      D: 'she had never seen this man ago'
+    answer: 'B'
+    explanation: "Present perfect → past perfect; 'this man' → 'that man'; 'before' stays the same. Full tense + pronoun + demonstrative shifts."
+    explanationZh: '现在完成时 → 过去完成时；this man → that man；before 不变。完整的时态 + 代词 + 指示词变化。'
+    grammarPoint: 'Reported speech: full shifts'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0280
+    type: fill-blank
+    tags: [reported-speech, Q03, difficulty-4]
+    context: detective
+    question: 'Convert to reported speech: "Are you the owner of this bag?" the guard asked the woman. → The guard asked the woman _____.'
+    questionZh: '转换为间接引语："这个包是你的吗？"保安问那个女人。 → 保安问那个女人____。'
+    answer: 'if she was the owner of that bag'
+    explanation: "Yes/no question → 'if/whether'. 'Are' → 'was'; 'you' → 'she'; 'this' → 'that'. Statement word order."
+    explanationZh: '是非问句 → if/whether。are → was；you → she；this → that。陈述句语序。'
+    grammarPoint: 'Reported speech: questions'
+    relatedQuest: Q03
+    difficulty: 4
+
+  # ============================================================
+  # G0281–G0300: Mixed review
+  # Tenses from months 1-2 + new modals from month 3
+  # ============================================================
+  - id: G0281
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-1]
+    context: detective
+    question: 'Detective Owl _____ cases every day. (routine)'
+    questionZh: '猫头鹰侦探每天____案件。（日常）'
+    options:
+      A: 'solves'
+      B: 'is solving'
+      C: 'solved'
+      D: 'has solved'
+    answer: 'A'
+    explanation: "'Every day' signals a routine — use present simple. Third person singular: solve → solves."
+    explanationZh: 'every day 表示日常——用一般现在时。第三人称单数：solve → solves。'
+    grammarPoint: 'Present Simple (review)'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0282
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-1]
+    context: detective
+    question: 'Look! The suspect _____ (run) towards the park right now!'
+    questionZh: '看！嫌疑人现在正____（run）向公园跑！'
+    answer: 'is running'
+    explanation: "'Right now' and 'Look!' signal an action in progress — use present continuous."
+    explanationZh: 'right now 和 Look! 表示正在进行的动作——用现在进行时。'
+    grammarPoint: 'Present Continuous (review)'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0283
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-1]
+    context: detective
+    question: 'The detective _____ three clues so far today.'
+    questionZh: '侦探今天到目前为止____了三条线索。'
+    options:
+      A: 'found'
+      B: 'has found'
+      C: 'finds'
+      D: 'is finding'
+    answer: 'B'
+    explanation: "'So far today' connects past action to present time — use present perfect."
+    explanationZh: 'so far today 将过去的动作与现在的时间联系——用现在完成时。'
+    grammarPoint: 'Present Perfect (review)'
+    relatedQuest: Q03
+    difficulty: 1
+
+  - id: G0284
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-2]
+    context: detective
+    question: 'While the detective _____ (examine) the room, the lights suddenly went out.'
+    questionZh: '侦探____（examine）房间时，灯突然灭了。'
+    answer: 'was examining'
+    explanation: "'While' + past continuous for a background action interrupted by another event (lights went out)."
+    explanationZh: 'while + 过去进行时表示被另一事件（灯灭了）打断的背景动作。'
+    grammarPoint: 'Past Continuous (review)'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0285
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-2]
+    context: detective
+    question: 'By the time the police arrived, the thief _____ already _____.'
+    questionZh: '警察到达时，小偷已经____了。'
+    options:
+      A: 'has / escaped'
+      B: 'had / escaped'
+      C: 'was / escaping'
+      D: 'did / escape'
+    answer: 'B'
+    explanation: "'By the time' + past simple signals an earlier past action — use past perfect ('had escaped')."
+    explanationZh: 'by the time + 一般过去时表示更早的过去动作——用过去完成时（had escaped）。'
+    grammarPoint: 'Past Perfect (review)'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0286
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-2]
+    context: detective
+    question: 'The detective _____ (work) on this case for three weeks now.'
+    questionZh: '侦探____（work）这个案子到现在已经三周了。'
+    answer: 'has been working'
+    explanation: "'For three weeks now' = an action that started in the past and continues to the present. Use present perfect continuous."
+    explanationZh: 'for three weeks now = 从过去开始持续到现在的动作。用现在完成进行时。'
+    grammarPoint: 'Present Perfect Continuous (review)'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0287
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-2]
+    context: detective
+    question: 'The stolen diamond _____ be worth millions. Look how big it is!'
+    questionZh: '被偷的钻石____值几百万。看它多大！'
+    options:
+      A: 'must'
+      B: 'should'
+      C: 'would'
+      D: 'shall'
+    answer: 'A'
+    explanation: "The size of the diamond is strong evidence of its value. 'Must' for confident present deduction."
+    explanationZh: '钻石的大小是价值的有力证据。must 表示有把握的现在推测。'
+    grammarPoint: 'Modals for present deduction (review)'
+    relatedQuest: Q03
+    difficulty: 2
+
+  - id: G0288
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'The robbery _____ (happen) between 2 am and 4 am last night. The alarm was triggered at 3:15 am.'
+    questionZh: '抢劫____（happen）在昨晚凌晨2点到4点之间。警报在凌晨3:15被触发。'
+    answer: 'happened'
+    explanation: "'Last night' with a specific time range — use past simple for a completed event."
+    explanationZh: 'last night 加上具体的时间范围——用一般过去时表示已完成的事件。'
+    grammarPoint: 'Past Simple (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0289
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'The suspect _____ the stolen painting in his closet. The police found it there yesterday.'
+    questionZh: '嫌疑人把被偷的画____在他的衣柜里。警察昨天在那里找到了它。'
+    options:
+      A: 'must have hidden'
+      B: "can't have hidden"
+      C: 'might have hidden'
+      D: 'should have hidden'
+    answer: 'A'
+    explanation: "The painting was found in HIS closet — this is definitive evidence. 'Must have hidden' = certain past deduction."
+    explanationZh: '画在他的衣柜里被发现——这是确凿的证据。must have hidden = 确定的过去推测。'
+    grammarPoint: 'Modals for past deduction (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0290
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'The witness told the police that she _____ (see) a red car near the bank at 5 pm.'
+    questionZh: '目击者告诉警察她下午5点在银行附近____（see）一辆红色的车。'
+    answer: 'had seen'
+    explanation: "Reported speech: 'saw' (past simple) shifts to 'had seen' (past perfect)."
+    explanationZh: '间接引语：saw（一般过去时）变为 had seen（过去完成时）。'
+    grammarPoint: 'Reported speech (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0291
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'If the detective _____ the clue earlier, the case would have been solved faster.'
+    questionZh: '如果侦探更早____线索，案子会更快破。'
+    options:
+      A: 'found'
+      B: 'had found'
+      C: 'has found'
+      D: 'would find'
+    answer: 'B'
+    explanation: "Third conditional (past unreal): 'If + had + past participle, ... would have + past participle'. 'Had found' is correct in the if-clause."
+    explanationZh: '第三条件句（过去虚拟）：If + had + 过去分词, ... would have + 过去分词。if 从句用 had found。'
+    grammarPoint: 'Third Conditional (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0292
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'Someone _____ (break) into the museum while the guard was on his break. Nobody else was around.'
+    questionZh: '保安休息时有人____（break）进了博物馆。周围没有其他人。'
+    answer: 'broke'
+    explanation: "'While the guard was on his break' gives a past time frame. 'Broke into' is past simple for a completed action during that time."
+    explanationZh: 'while the guard was on his break 给出过去的时间框架。broke into 是一般过去时表示在那段时间完成的动作。'
+    grammarPoint: 'Past Simple + Past Continuous (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0293
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-3]
+    context: detective
+    question: 'She _____ nervous when the detective asked her about the missing ring. Her hands were shaking.'
+    questionZh: '侦探问她关于丢失的戒指时，她____很紧张。她的手在发抖。'
+    options:
+      A: 'must have been'
+      B: "can't have been"
+      C: 'might not have been'
+      D: 'should have been'
+    answer: 'A'
+    explanation: "Shaking hands = strong evidence of nervousness. 'Must have been' = confident past deduction."
+    explanationZh: '发抖的手 = 紧张的有力证据。must have been = 有把握的过去推测。'
+    grammarPoint: 'Modals for past deduction (review)'
+    relatedQuest: Q03
+    difficulty: 3
+
+  - id: G0294
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'The inspector asked the suspect what he _____ (do) at 10 pm the previous night.'
+    questionZh: '检查员问嫌疑人前一天晚上10点他在____（do）什么。'
+    answer: 'had been doing'
+    explanation: "Reported speech: 'What were you doing at 10 pm?' → past continuous 'were doing' shifts to past perfect continuous 'had been doing'."
+    explanationZh: '间接引语：What were you doing at 10 pm? → 过去进行时 were doing 变为过去完成进行时 had been doing。'
+    grammarPoint: 'Reported speech + Past Perfect Continuous'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0295
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'The crime _____ between midnight and 3 am. The victim''s watch stopped at 1:47 am.'
+    questionZh: '犯罪____在午夜到凌晨3点之间。受害者的手表停在了凌晨1:47。'
+    options:
+      A: 'must have occurred'
+      B: 'might have occurred'
+      C: 'could have occurred'
+      D: "can't have occurred"
+    answer: 'A'
+    explanation: "The stopped watch at 1:47 am (between midnight and 3 am) is strong evidence. 'Must have occurred' = strong past deduction."
+    explanationZh: '停在凌晨1:47的手表（在午夜到3点之间）是有力证据。must have occurred = 强烈的过去推测。'
+    grammarPoint: 'Modals for past deduction (review)'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0296
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'The detective has been investigating this case since January. By next month, she _____ (investigate) it for four months.'
+    questionZh: '侦探从一月开始调查此案。到下个月，她____（investigate）已经调查了四个月。'
+    answer: 'will have been investigating'
+    explanation: "'By next month' + duration 'for four months' = future perfect continuous. An action continuing up to a future point."
+    explanationZh: 'by next month + 持续时间 for four months = 将来完成进行时。一个持续到将来某个时间点的动作。'
+    grammarPoint: 'Future Perfect Continuous (review)'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0297
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'Choose the sentence where ALL grammar is correct.'
+    questionZh: '选择所有语法都正确的句子。'
+    options:
+      A: 'The thief must has escaped through the window.'
+      B: 'The thief must have escaped through the window.'
+      C: 'The thief must had escaped through the window.'
+      D: 'The thief must to have escaped through the window.'
+    answer: 'B'
+    explanation: "Modal + have + past participle: must have escaped. No 'has', 'had', or 'to' after 'must'."
+    explanationZh: '情态动词 + have + 过去分词：must have escaped。must 后面不加 has、had 或 to。'
+    grammarPoint: 'Modal perfect structure'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0298
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'If I _____ (be) the detective, I would have checked the basement first.'
+    questionZh: '如果我____（be）侦探，我会先检查地下室。'
+    answer: 'had been'
+    explanation: "Third conditional: If + had + past participle. 'If I had been' expresses an unreal past situation."
+    explanationZh: '第三条件句：If + had + 过去分词。If I had been 表示不真实的过去情况。'
+    grammarPoint: 'Third Conditional (review)'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0299
+    type: multiple-choice
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'The guard reported that the alarm _____ at exactly 3 am and that he _____ anyone near the building.'
+    questionZh: '保安报告说警报在凌晨3点整____，他____大楼附近的任何人。'
+    options:
+      A: 'had gone off / hadn''t seen'
+      B: 'went off / didn''t see'
+      C: 'has gone off / hasn''t seen'
+      D: 'goes off / doesn''t see'
+    answer: 'A'
+    explanation: "Reported speech requires tense backshift. Both 'went off' and 'didn't see' (past simple) shift to past perfect: 'had gone off' / 'hadn't seen'."
+    explanationZh: '间接引语需要时态后退。went off 和 didn''t see（一般过去时）都变为过去完成时：had gone off / hadn''t seen。'
+    grammarPoint: 'Reported speech: double tense shift'
+    relatedQuest: Q03
+    difficulty: 4
+
+  - id: G0300
+    type: fill-blank
+    tags: [mixed-review, Q03, difficulty-4]
+    context: detective
+    question: 'The famous detective said: "I _____ (solve) over 500 cases in my career, and this _____ (be) the strangest one yet." Report this speech.'
+    questionZh: '著名侦探说："我职业生涯中____（solve）了500多个案子，这____（be）迄今为止最奇怪的一个。"请转述。'
+    answer: 'had solved / was'
+    explanation: "Reported speech: 'have solved' (present perfect) → 'had solved' (past perfect); 'is' (present simple) → 'was' (past simple)."
+    explanationZh: '间接引语：have solved（现在完成时）→ had solved（过去完成时）；is（一般现在时）→ was（一般过去时）。'
+    grammarPoint: 'Reported speech: mixed tense shifts'
+    relatedQuest: Q03
+    difficulty: 4
