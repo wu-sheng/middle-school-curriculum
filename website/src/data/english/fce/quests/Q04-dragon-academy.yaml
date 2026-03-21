@@ -1,0 +1,817 @@
+id: Q04
+title: 'Dragon Academy'
+titleZh: '龙学院'
+subtitle: 'Master the art of sentence transformation!'
+subtitleZh: '掌握句子变换的艺术！'
+month: 4
+fceMapping: 'Use of English Part 4 (Key Word Transformation)'
+
+theme:
+  setting: 'A Dragon Academy where each dragon type teaches a different transformation pattern'
+  settingZh: '一所龙学院，每种龙教授不同的句子变换模式'
+  mascot: 'Professor Thornwing, the wise headmaster who speaks in transformations'
+  mascotZh: 'Thornwing 教授，睿智的校长，说话总爱用句子变换'
+
+objectives:
+  - 'Transform sentences between active and passive voice'
+  - 'Convert direct speech to reported speech and vice versa'
+  - 'Rewrite sentences using so...that / too...to / enough...to patterns'
+  - 'Express comparisons using as...as, not as...as, and less...than'
+  - 'Transform cause/result sentences using different connectors'
+  - 'Recognise and produce emphasis structures (cleft sentences)'
+
+objectivesZh:
+  - '在主动语态和被动语态之间转换句子'
+  - '直接引语和间接引语的互相转换'
+  - '使用 so...that / too...to / enough...to 句型改写句子'
+  - '使用 as...as, not as...as, less...than 表达比较'
+  - '使用不同连接词转换因果句'
+  - '识别和使用强调结构（分裂句）'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Active ↔ Passive — The Fire Dragon's Forge
+  # ─────────────────────────────────────────────
+  - id: Q04-L01
+    title: 'Active ↔ Passive — The Fire Dragon''s Forge'
+    titleZh: '主动语态 ↔ 被动语态 — 火龙的锻造炉'
+
+    introduction: |
+      Welcome to the Fire Dragon's Forge! Professor Thornwing leads you into a vast cavern
+      where a magnificent fire dragon named Blaze is hammering glowing metal on an anvil.
+
+      "In this forge," says the Professor, "sentences are like metal — they can be shaped in
+      different ways. The MEANING stays the same, but the FORM changes. This is the heart
+      of Key Word Transformation."
+
+      He picks up two swords from the rack. One is labelled "ACTIVE" and the other "PASSIVE."
+      "These are two ways of saying the same thing. In the ACTIVE form, the doer comes first:
+      'The dragon broke the chain.' In the PASSIVE form, the thing affected comes first:
+      'The chain was broken by the dragon.' Same event. Different focus."
+
+      "Blaze will teach you when to use each form — and how to transform one into the other
+      perfectly. In the FCE exam, this is one of the most common transformation types. Master
+      it here, and you'll earn points every time!"
+    introductionZh: |
+      欢迎来到火龙的锻造炉！Thornwing 教授带你走进一个巨大的洞穴，一条壮丽的
+      名叫 Blaze 的火龙正在铁砧上锤打发光的金属。
+
+      "在这个锻造炉里，"教授说，"句子就像金属——它们可以被塑造成不同的形状。
+      意思保持不变，但形式改变了。这就是关键词变换的核心。"
+
+      他从架子上拿起两把剑。一把标着"主动"，另一把标着"被动"。
+      "这是表达同一件事的两种方式。在主动形式中，施动者在前：
+      'The dragon broke the chain.'（龙打断了链条。）在被动形式中，受影响的事物在前：
+      'The chain was broken by the dragon.'（链条被龙打断了。）同一事件，不同焦点。"
+
+      "Blaze 会教你何时使用每种形式——以及如何完美地进行转换。在 FCE 考试中，
+      这是最常见的变换类型之一。在这里掌握它，每次都能拿分！"
+
+    rules:
+      - pattern: 'Active → Passive'
+        meaning: 'Move the object to subject position, add "be + past participle", optionally add "by + agent"'
+        meaningZh: '将宾语移到主语位置，加"be + 过去分词"，可选择加"by + 施动者"'
+        examples:
+          - base: 'The fire dragon destroyed the old bridge.'
+            transformed: 'The old bridge was destroyed by the fire dragon.'
+            sentence: 'The object "the old bridge" becomes the subject. The verb "destroyed" becomes "was destroyed." The agent "the fire dragon" follows "by."'
+            sentenceZh: '宾语"旧桥"变成主语。动词"destroyed"变为"was destroyed"。施动者"火龙"跟在"by"后面。'
+          - base: 'Students must wear safety helmets during flight.'
+            transformed: 'Safety helmets must be worn during flight.'
+            sentence: 'With modal verbs, the pattern is: modal + be + past participle. "By students" is dropped when the agent is obvious or unimportant.'
+            sentenceZh: '情态动词的被动形式：情态动词 + be + 过去分词。当施动者明显或不重要时，"by students"可以省略。'
+          - base: 'They are building a new dragon stable.'
+            transformed: 'A new dragon stable is being built.'
+            sentence: 'Present continuous passive: is/are + being + past participle. The agent "they" is dropped as it is vague.'
+            sentenceZh: '现在进行时被动：is/are + being + 过去分词。施动者"they"因为模糊而省略。'
+
+      - pattern: 'Passive → Active'
+        meaning: 'Move the agent (after "by") to subject position and change the verb back to active form'
+        meaningZh: '将施动者（"by"后面的）移到主语位置，动词改回主动形式'
+        examples:
+          - base: 'The letter was delivered by a messenger dragon.'
+            transformed: 'A messenger dragon delivered the letter.'
+            sentence: 'The agent "a messenger dragon" becomes the subject. The verb returns to simple past active: "delivered."'
+            sentenceZh: '施动者"信使龙"变成主语。动词恢复为一般过去时主动形式："delivered"。'
+          - base: 'The potion has been prepared by the healer.'
+            transformed: 'The healer has prepared the potion.'
+            sentence: 'Present perfect passive → present perfect active. "has been prepared" becomes "has prepared."'
+            sentenceZh: '现在完成时被动 → 现在完成时主动。"has been prepared"变为"has prepared"。'
+
+    tips:
+      - 'In FCE Part 4, the key word is often "by" or "was/were/been" — this signals a passive transformation.'
+      - 'Keep the tense the same! If the original is past simple, the passive must also be past simple.'
+      - 'Modal verbs in passive: can be done, should be finished, must be completed, might be seen.'
+      - 'Drop "by + agent" when the agent is obvious, unknown, or unimportant (e.g., "by people", "by someone").'
+      - 'Watch out for phrasal verbs: "They called off the match" → "The match was called off" (keep the particle!).'
+    tipsZh:
+      - '在 FCE Part 4 中，关键词常常是"by"或"was/were/been"——这提示需要被动转换。'
+      - '保持时态一致！如果原句是一般过去时，被动句也必须是一般过去时。'
+      - '情态动词被动：can be done, should be finished, must be completed, might be seen。'
+      - '当施动者明显、未知或不重要时，省略"by + 施动者"（如"by people"、"by someone"）。'
+      - '注意短语动词："They called off the match" → "The match was called off"（保留小品词！）。'
+
+    practicePreview:
+      - id: Q04-L01-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          A sky dragon carried the message across the kingdom.
+          The message _____ across the kingdom by a sky dragon. (WAS)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          一只天龙把消息传遍了整个王国。
+          消息 _____ 整个王国，由一只天龙传递。(WAS)
+        answer: 'was carried'
+        explanation: 'Active "carried" → Passive "was carried." The tense stays as past simple.'
+        explanationZh: '主动"carried" → 被动"was carried"。时态保持为一般过去时。'
+
+      - id: Q04-L01-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The healer is preparing the healing potion right now.
+          The healing potion _____ by the healer right now. (BEING)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          治愈师正在准备治疗药水。
+          治疗药水 _____ 治愈师准备。(BEING)
+        answer: 'is being prepared'
+        explanation: 'Present continuous active → Present continuous passive: is + being + past participle.'
+        explanationZh: '现在进行时主动 → 现在进行时被动：is + being + 过去分词。'
+
+      - id: Q04-L01-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          You must return all library spell books before Friday.
+          All library spell books _____ before Friday. (RETURNED)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          你必须在周五前归还所有图书馆咒语书。
+          所有图书馆咒语书 _____ 周五前。(RETURNED)
+        answer: 'must be returned'
+        explanation: 'Modal + active → Modal + be + past participle. "Must return" → "must be returned."'
+        explanationZh: '情态动词 + 主动 → 情态动词 + be + 过去分词。"must return" → "must be returned"。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Direct ↔ Reported Speech — The Water Dragon's Mirror Pool
+  # ─────────────────────────────────────────────
+  - id: Q04-L02
+    title: 'Direct ↔ Reported Speech — The Water Dragon''s Mirror Pool'
+    titleZh: '直接引语 ↔ 间接引语 — 水龙的镜面池'
+
+    introduction: |
+      Professor Thornwing takes you to a still, silver pool deep within the Academy. A graceful
+      water dragon named Ripple glides across the surface, creating perfect reflections.
+
+      "See how the pool reflects everything?" says the Professor. "Reported speech works like
+      a reflection. When someone says something directly — that's direct speech: 'I love flying.'
+      When you REPORT what they said — that's reported speech: She said she loved flying."
+
+      "The reflection is the same image, but it looks slightly different — the pronoun changes
+      from 'I' to 'she', and the tense shifts back from 'love' to 'loved.' These shifts are the
+      key to mastering reported speech."
+
+      "Ripple will show you the patterns. In FCE Part 4, the key word is often SAID, TOLD,
+      or ASKED. When you see these words, you know a reported speech transformation is needed."
+    introductionZh: |
+      Thornwing 教授带你来到学院深处一个平静的银色水池。一条优美的水龙名叫 Ripple
+      在水面上滑行，创造出完美的倒影。
+
+      "看到水池如何反映一切了吗？"教授说。"间接引语就像倒影。当某人直接说话时——
+      那是直接引语：'I love flying.'（我喜欢飞行。）当你转述他们说的话时——那是间接引语：
+      She said she loved flying.（她说她喜欢飞行。）"
+
+      "倒影是同样的图像，但看起来略有不同——代词从'I'变成'she'，时态从'love'
+      回退到'loved'。这些变化是掌握间接引语的关键。"
+
+      "Ripple 会展示这些模式。在 FCE Part 4 中，关键词通常是 SAID、TOLD 或 ASKED。
+      当你看到这些词时，你就知道需要进行间接引语转换。"
+
+    rules:
+      - pattern: 'Tense Shift in Reported Speech'
+        meaning: 'When the reporting verb is in the past (said/told), tenses typically shift one step back'
+        meaningZh: '当引述动词是过去时（said/told），时态通常向后退一步'
+        examples:
+          - base: '"I am learning Dragon Language," said Tom.'
+            transformed: 'Tom said he was learning Dragon Language.'
+            sentence: 'Present continuous "am learning" shifts to past continuous "was learning." "I" changes to "he."'
+            sentenceZh: '现在进行时"am learning"变为过去进行时"was learning"。"I"变为"he"。'
+          - base: '"I have finished my homework," she told me.'
+            transformed: 'She told me she had finished her homework.'
+            sentence: 'Present perfect "have finished" shifts to past perfect "had finished." Note: "told me" requires an object.'
+            sentenceZh: '现在完成时"have finished"变为过去完成时"had finished"。注意："told me"需要宾语。'
+          - base: '"I will fly tomorrow," the rider promised.'
+            transformed: 'The rider promised he would fly the next day.'
+            sentence: '"Will" shifts to "would." "Tomorrow" changes to "the next day." Time expressions shift too!'
+            sentenceZh: '"will"变为"would"。"tomorrow"变为"the next day"。时间表达也要变！'
+
+      - pattern: 'Reported Questions'
+        meaning: 'Yes/No questions use "if/whether"; Wh-questions keep the question word but use statement word order'
+        meaningZh: '是非问句使用"if/whether"；特殊疑问句保留疑问词但使用陈述语序'
+        examples:
+          - base: '"Are you coming to the dragon race?" she asked.'
+            transformed: 'She asked if I was coming to the dragon race.'
+            sentence: 'Yes/No question → "asked if/whether" + statement order. No question mark in reported speech.'
+            sentenceZh: '是非问句 → "asked if/whether" + 陈述语序。间接引语中没有问号。'
+          - base: '"Where did you find the egg?" he asked.'
+            transformed: 'He asked where I had found the egg.'
+            sentence: 'Wh-question: keep "where" + statement word order (subject before verb). "Did find" → "had found."'
+            sentenceZh: '特殊疑问句：保留"where" + 陈述语序（主语在动词前）。"did find" → "had found"。'
+
+    tips:
+      - 'SAID vs TOLD: "said" can stand alone ("He said...") but "told" needs an object ("He told me...").'
+      - 'Time/place shifts: today → that day, here → there, this → that, ago → before, last week → the previous week.'
+      - 'Do NOT shift tenses if the statement is still true: "She said the earth is round" — still a fact!'
+      - 'Commands in reported speech: "Close the door" → He told me to close the door. (told + object + to infinitive)'
+      - 'In FCE, watch for the key word carefully — it tells you which direction to transform (direct → reported or reported → direct).'
+    tipsZh:
+      - 'SAID vs TOLD："said"可以独立使用（"He said..."），但"told"需要宾语（"He told me..."）。'
+      - '时间/地点转换：today → that day, here → there, this → that, ago → before, last week → the previous week。'
+      - '如果陈述仍然是事实，不要变换时态："She said the earth is round"——仍然是事实！'
+      - '间接引语中的命令："Close the door" → He told me to close the door.（told + 宾语 + to 不定式）'
+      - '在 FCE 中，仔细看关键词——它告诉你转换的方向（直接引语 → 间接引语还是反过来）。'
+
+    practicePreview:
+      - id: Q04-L02-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          "I can speak Dragon Language," said Maya.
+          Maya said that _____ Dragon Language. (COULD)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          "我会说龙语，"Maya说。
+          Maya说她 _____ 龙语。(COULD)
+        answer: 'she could speak'
+        explanation: '"Can" shifts to "could" in reported speech. "I" becomes "she."'
+        explanationZh: '"can"在间接引语中变为"could"。"I"变为"she"。'
+
+      - id: Q04-L02-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          "Did you see the shadow dragon last night?" Tom asked me.
+          Tom asked me _____ the shadow dragon the previous night. (HAD)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          "你昨晚看到影龙了吗？"Tom问我。
+          Tom问我 _____ 前一天晚上的影龙。(HAD)
+        answer: 'if I had seen'
+        explanation: 'Yes/No question → "asked if" + statement order. "Did see" → "had seen." "Last night" → "the previous night."'
+        explanationZh: '是非问句 → "asked if" + 陈述语序。"did see" → "had seen"。"last night" → "the previous night"。'
+
+      - id: Q04-L02-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The teacher told us to hand in our dragon reports.
+          "_____ your dragon reports," the teacher said to us. (HAND)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          老师让我们交龙的报告。
+          "_____ 你们的龙报告，"老师对我们说。(HAND)
+        answer: 'Hand in'
+        explanation: 'Reported command → Direct command. "Told us to hand in" → "Hand in" (imperative).'
+        explanationZh: '间接命令 → 直接命令。"told us to hand in" → "Hand in"（祈使句）。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: so...that / too...to / enough...to — The Earth Dragon's Cavern
+  # ─────────────────────────────────────────────
+  - id: Q04-L03
+    title: 'so...that / too...to / enough...to — The Earth Dragon''s Cavern'
+    titleZh: 'so...that / too...to / enough...to — 地龙的洞穴'
+
+    introduction: |
+      Deep underground, you enter the Earth Dragon's Cavern. A massive brown dragon called
+      Boulder is arranging enormous rocks into different formations. Some rocks are stacked
+      high, others are spread wide, and some block narrow passages.
+
+      "Ah, visitors!" Boulder rumbles. "Let me teach you about SIZE and DEGREE. In English,
+      there are three ways to talk about how much or how little something is:
+
+      1. SO...THAT — 'The rock was so heavy THAT nobody could lift it.'
+      2. TOO...TO — 'The rock was TOO heavy TO lift.'
+      3. ENOUGH...TO — 'The rock was light ENOUGH TO carry.'
+
+      These three patterns express the same idea in different ways — like arranging the same
+      rocks in different formations. In FCE Part 4, you will often need to switch between them.
+      The key word will tell you which pattern to use."
+    introductionZh: |
+      在地下深处，你进入了地龙的洞穴。一条巨大的棕色龙叫 Boulder，正在把巨石排列成
+      不同的阵型。有些石头堆得很高，有些摊得很广，还有些挡住了狭窄的通道。
+
+      "啊，来客了！"Boulder 隆隆地说。"让我教你们关于大小和程度。在英语中，有三种方式
+      来谈论某件事情多或少：
+
+      1. SO...THAT — 'The rock was so heavy THAT nobody could lift it.'（石头太重了以至于没人能举起来。）
+      2. TOO...TO — 'The rock was TOO heavy TO lift.'（石头太重了，举不动。）
+      3. ENOUGH...TO — 'The rock was light ENOUGH TO carry.'（石头够轻，可以搬。）
+
+      这三种句型用不同的方式表达同样的意思——就像把同样的石头排成不同的阵型。
+      在 FCE Part 4 中，你经常需要在它们之间切换。关键词会告诉你使用哪种句型。"
+
+    rules:
+      - pattern: 'so + adjective + that + clause'
+        meaning: 'Expresses a degree that leads to a result'
+        meaningZh: '表达导致某个结果的程度'
+        examples:
+          - base: 'The tunnel was too narrow to walk through.'
+            transformed: 'The tunnel was so narrow that we could not walk through it.'
+            sentence: '"Too narrow to walk through" = "so narrow that we could not walk through it." Note: add subject and object in the that-clause.'
+            sentenceZh: '"too narrow to walk through" = "so narrow that we could not walk through it"。注意：that 从句中要加主语和宾语。'
+          - base: 'The dragon was strong enough to carry five people.'
+            transformed: 'The dragon was so strong that it could carry five people.'
+            sentence: '"Enough to" (positive ability) → "so...that...could" (positive result). The meaning is the same.'
+            sentenceZh: '"enough to"（积极能力）→ "so...that...could"（积极结果）。意思相同。'
+
+      - pattern: 'too + adjective + to + verb'
+        meaning: 'Something is excessively adjective, making the action impossible'
+        meaningZh: '某事过于……，使动作不可能'
+        examples:
+          - base: 'The cave was so dark that we could not see anything.'
+            transformed: 'The cave was too dark to see anything.'
+            sentence: '"So dark that we could not see" → "too dark to see." The negative meaning is built into "too."'
+            sentenceZh: '"so dark that we could not see" → "too dark to see"。否定意义已经包含在"too"中。'
+          - base: 'She is not old enough to fly a dragon alone.'
+            transformed: 'She is too young to fly a dragon alone.'
+            sentence: '"Not old enough" = "too young." Flip the adjective to its opposite when switching patterns.'
+            sentenceZh: '"not old enough" = "too young"。切换句型时将形容词换成反义词。'
+
+      - pattern: 'adjective + enough + to + verb'
+        meaning: 'Something has sufficient quality for the action to be possible'
+        meaningZh: '某事具有足够的品质使动作成为可能'
+        examples:
+          - base: 'The potion was so warm that we could drink it immediately.'
+            transformed: 'The potion was warm enough to drink immediately.'
+            sentence: '"So warm that we could drink" → "warm enough to drink." Positive result = enough pattern.'
+            sentenceZh: '"so warm that we could drink" → "warm enough to drink"。积极结果 = enough 句型。'
+          - base: 'The dragon was too small to carry a rider.'
+            transformed: 'The dragon was not big enough to carry a rider.'
+            sentence: '"Too small to" = "not big enough to." Remember to flip the adjective AND add "not."'
+            sentenceZh: '"too small to" = "not big enough to"。记得翻转形容词并加"not"。'
+
+    tips:
+      - 'TOO always implies a negative result (impossible). ENOUGH implies a positive result (possible).'
+      - 'When converting "too...to" ↔ "enough...to", flip the adjective: too small = not big enough, too expensive = not cheap enough.'
+      - 'When converting to "so...that", you must add a subject and a full clause: "so heavy THAT nobody could move it" (not just "so heavy that move").'
+      - 'FCE key words: TOO, ENOUGH, SO, THAT — these signal which pattern to use.'
+      - 'Common trap: "enough" comes AFTER the adjective ("old enough") but BEFORE a noun ("enough money").'
+    tipsZh:
+      - 'TOO 总是暗示否定结果（不可能）。ENOUGH 暗示积极结果（可能）。'
+      - '在"too...to"和"enough...to"之间转换时，翻转形容词：too small = not big enough，too expensive = not cheap enough。'
+      - '转换为"so...that"时，必须加主语和完整从句："so heavy THAT nobody could move it"（不只是"so heavy that move"）。'
+      - 'FCE 关键词：TOO、ENOUGH、SO、THAT——这些提示使用哪种句型。'
+      - '常见陷阱："enough"在形容词后面（"old enough"），但在名词前面（"enough money"）。'
+
+    practicePreview:
+      - id: Q04-L03-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The dragon egg was too heavy for the child to carry.
+          The dragon egg was _____ the child could not carry it. (SO)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          龙蛋太重了，孩子搬不动。
+          龙蛋 _____ 孩子搬不动它。(SO)
+        answer: 'so heavy that'
+        explanation: '"Too heavy to carry" → "so heavy that [someone] could not carry it." The result clause needs a subject and verb.'
+        explanationZh: '"too heavy to carry" → "so heavy that [某人] could not carry it"。结果从句需要主语和动词。'
+
+      - id: Q04-L03-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          She is so young that she cannot enter Dragon Academy yet.
+          She is not _____ enter Dragon Academy yet. (ENOUGH)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          她太小了，还不能进入龙学院。
+          她还不够 _____ 进入龙学院。(ENOUGH)
+        answer: 'old enough to'
+        explanation: '"So young that she cannot" → "not old enough to." Flip "young" to "old" and add "not."'
+        explanationZh: '"so young that she cannot" → "not old enough to"。"young"翻转为"old"并加"not"。'
+
+      - id: Q04-L03-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The water was warm enough for the dragons to bathe in.
+          The water was not _____ bathe in. (TOO)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          水够暖了，龙可以洗澡。
+          水不是 _____ 洗澡。(TOO)
+        answer: 'too cold to'
+        explanation: '"Warm enough to bathe" = "not too cold to bathe." Flip "warm" to "cold" and add "not."'
+        explanationZh: '"warm enough to bathe" = "not too cold to bathe"。"warm"翻转为"cold"并加"not"。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Comparisons — The Sky Dragon's Observatory
+  # ─────────────────────────────────────────────
+  - id: Q04-L04
+    title: 'Comparisons — The Sky Dragon''s Observatory'
+    titleZh: '比较句 — 天龙的天文台'
+
+    introduction: |
+      High above the Academy, you climb to the Sky Dragon's Observatory — a glass dome
+      on the tallest tower. A silver sky dragon named Zephyr hovers outside, her scales
+      reflecting the sunset.
+
+      "Up here," says Professor Thornwing, "we can see everything side by side and COMPARE
+      them. Zephyr is faster THAN Blaze. Ripple is AS graceful AS a dancer. Boulder is NOT
+      AS light AS Zephyr."
+
+      "In English, there are several ways to compare things:
+      - AS...AS: 'She is as brave as a lion.' (equal comparison)
+      - NOT AS...AS: 'He is not as tall as his brother.' (unequal — polite way)
+      - LESS...THAN: 'This potion is less effective than that one.' (unequal — direct)
+      - MORE...THAN / -ER THAN: 'Dragons are more intelligent than most animals.'
+
+      In FCE Part 4, you often need to switch between these comparison patterns while keeping
+      the meaning exactly the same. The key is understanding which direction the comparison
+      points — and then reversing it."
+    introductionZh: |
+      在学院的高处，你爬上了天龙的天文台——最高塔楼上的一个玻璃穹顶。一条银色的天龙
+      名叫 Zephyr 悬停在外面，鳞片反射着夕阳。
+
+      "在这里，"Thornwing 教授说，"我们可以把一切并排看并进行比较。Zephyr 比 Blaze 更快。
+      Ripple 和舞者一样优雅。Boulder 不如 Zephyr 轻。"
+
+      "在英语中，有几种比较事物的方式：
+      - AS...AS：'She is as brave as a lion.'（等量比较）
+      - NOT AS...AS：'He is not as tall as his brother.'（不等量——礼貌方式）
+      - LESS...THAN：'This potion is less effective than that one.'（不等量——直接方式）
+      - MORE...THAN / -ER THAN：'Dragons are more intelligent than most animals.'
+
+      在 FCE Part 4 中，你经常需要在这些比较句型之间切换，同时保持意思完全相同。
+      关键是理解比较的方向——然后反转它。"
+
+    rules:
+      - pattern: 'not as...as ↔ comparative + than'
+        meaning: 'These express the same inequality from opposite perspectives'
+        meaningZh: '这两种从相反角度表达同样的不等关系'
+        examples:
+          - base: 'Fire dragons are bigger than water dragons.'
+            transformed: 'Water dragons are not as big as fire dragons.'
+            sentence: 'Flip the subjects and change "bigger than" to "not as big as." Both say fire dragons are the larger ones.'
+            sentenceZh: '交换主语，把"bigger than"改为"not as big as"。两句都说火龙更大。'
+          - base: 'Blaze is not as fast as Zephyr.'
+            transformed: 'Zephyr is faster than Blaze.'
+            sentence: '"Not as fast as" → the second item is faster. Flip subjects and use comparative "faster than."'
+            sentenceZh: '"not as fast as" → 第二个更快。交换主语，用比较级"faster than"。'
+
+      - pattern: 'less...than ↔ not as...as'
+        meaning: 'Both express that something has a lower degree of a quality'
+        meaningZh: '两者都表达某事具有较低程度的品质'
+        examples:
+          - base: 'This spell is less difficult than the previous one.'
+            transformed: 'This spell is not as difficult as the previous one.'
+            sentence: '"Less difficult than" = "not as difficult as." These are directly interchangeable.'
+            sentenceZh: '"less difficult than" = "not as difficult as"。这两者可以直接互换。'
+          - base: 'Earth dragons are not as common as fire dragons.'
+            transformed: 'Earth dragons are less common than fire dragons.'
+            sentence: '"Not as common as" = "less common than." Simple swap — same meaning.'
+            sentenceZh: '"not as common as" = "less common than"。简单替换——意思相同。'
+
+      - pattern: 'as...as (equal comparison)'
+        meaning: 'States that two things are equal in a quality'
+        meaningZh: '表示两个事物在某种品质上相等'
+        examples:
+          - base: 'Tom is just as clever as his sister.'
+            transformed: 'Tom and his sister are equally clever.'
+            sentence: '"Just as clever as" = "equally clever." Both express exact equality.'
+            sentenceZh: '"just as clever as" = "equally clever"。两者都表达完全相等。'
+
+    tips:
+      - 'Key trick: "A is not as X as B" = "B is more X than A." The second item in "not as...as" is the one with MORE.'
+      - '"Less" works like "not as...as" but sounds more formal. Use whichever the key word requires.'
+      - 'Watch for adjective direction: "not as expensive" might become "cheaper than" — you may need to flip the adjective entirely.'
+      - 'Double-check: after transforming, read both sentences and ask — do they point the same way? Does the same person/thing come out on top?'
+      - 'FCE key words: AS, THAN, LESS, NOT — these tell you which comparison pattern to use.'
+    tipsZh:
+      - '关键技巧："A is not as X as B" = "B is more X than A"。"not as...as"中的第二项是更多的那个。'
+      - '"less"和"not as...as"效果相同，但听起来更正式。根据关键词要求选择。'
+      - '注意形容词方向："not as expensive"可能变成"cheaper than"——你可能需要完全翻转形容词。'
+      - '双重检查：转换后，读两个句子并问——它们指向同一方向吗？同一个人/事物胜出吗？'
+      - 'FCE 关键词：AS、THAN、LESS、NOT——这些告诉你使用哪种比较句型。'
+
+    practicePreview:
+      - id: Q04-L04-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          Earth dragons are slower than sky dragons.
+          Sky dragons are _____ earth dragons. (FAST)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          地龙比天龙慢。
+          天龙比 _____ 地龙。(FAST)
+        answer: 'faster than'
+        explanation: '"Earth dragons are slower" → flip subjects → "Sky dragons are faster than." Same inequality, different direction.'
+        explanationZh: '"地龙更慢" → 交换主语 → "天龙比地龙更快"。同样的不等关系，不同方向。'
+
+      - id: Q04-L04-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The healing potion is not as effective as the energy potion.
+          The healing potion is _____ the energy potion. (LESS)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          治疗药水不如能量药水有效。
+          治疗药水 _____ 能量药水。(LESS)
+        answer: 'less effective than'
+        explanation: '"Not as effective as" = "less effective than." Direct swap — both mean the healing potion is weaker.'
+        explanationZh: '"not as effective as" = "less effective than"。直接替换——都表示治疗药水效果更弱。'
+
+      - id: Q04-L04-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          No other student in the class is as talented as Mia.
+          Mia is the _____ in the class. (MOST)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          班上没有其他学生像Mia一样有才华。
+          Mia是班上 _____ 。(MOST)
+        answer: 'most talented student'
+        explanation: '"No other X is as...as Y" = "Y is the most..." This converts an equal comparison (with nobody matching) into a superlative.'
+        explanationZh: '"No other X is as...as Y" = "Y is the most..."。这将一个等量比较（没有人匹配）转换为最高级。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Cause/Result Connectors — The Shadow Dragon's Web
+  # ─────────────────────────────────────────────
+  - id: Q04-L05
+    title: 'Cause/Result Connectors — The Shadow Dragon''s Web'
+    titleZh: '因果连接词 — 影龙之网'
+
+    introduction: |
+      In the darkest corner of the Academy, you find the Shadow Dragon's Web — a room
+      covered in threads of dark silk connecting different ideas. A shadow dragon named
+      Dusk materialises from the darkness.
+
+      "Everything is connected," Dusk whispers. "Cause leads to effect. Reason leads to
+      result. But there are MANY ways to express these connections:
+
+      BECAUSE → DUE TO / OWING TO
+      ALTHOUGH → DESPITE / IN SPITE OF
+      SO → THEREFORE / AS A RESULT
+      BECAUSE OF → SINCE / AS
+
+      These are all different threads in the same web. They connect the same two ideas,
+      but the grammar changes. BECAUSE and ALTHOUGH are followed by clauses (subject + verb).
+      DUE TO and DESPITE are followed by nouns or -ing forms. This is the key difference."
+    introductionZh: |
+      在学院最黑暗的角落，你发现了影龙之网——一个房间布满了连接不同想法的暗丝线。
+      一条叫 Dusk 的影龙从黑暗中现身。
+
+      "一切都是相互联系的，"Dusk 低声说。"原因导致结果。理由导致效果。但有很多方式
+      来表达这些联系：
+
+      BECAUSE → DUE TO / OWING TO
+      ALTHOUGH → DESPITE / IN SPITE OF
+      SO → THEREFORE / AS A RESULT
+      BECAUSE OF → SINCE / AS
+
+      这些都是同一张网中的不同丝线。它们连接同样的两个想法，但语法不同。
+      BECAUSE 和 ALTHOUGH 后面跟从句（主语 + 动词）。DUE TO 和 DESPITE 后面跟
+      名词或 -ing 形式。这是关键区别。"
+
+    rules:
+      - pattern: 'because + clause ↔ due to / owing to / because of + noun/-ing'
+        meaning: 'Express the same cause-effect relationship with different grammar'
+        meaningZh: '用不同语法表达相同的因果关系'
+        examples:
+          - base: 'The flight was cancelled because the weather was terrible.'
+            transformed: 'The flight was cancelled due to the terrible weather.'
+            sentence: '"Because + clause" → "due to + noun phrase." Convert "the weather was terrible" to "the terrible weather."'
+            sentenceZh: '"because + 从句" → "due to + 名词短语"。将"天气很糟糕"转换为"糟糕的天气"。'
+          - base: 'We stayed inside because it was raining heavily.'
+            transformed: 'We stayed inside because of the heavy rain.'
+            sentence: '"Because + clause" → "because of + noun." Convert "it was raining heavily" to "the heavy rain."'
+            sentenceZh: '"because + 从句" → "because of + 名词"。将"下着大雨"转换为"大雨"。'
+          - base: 'Due to his illness, Tom missed the dragon race.'
+            transformed: 'Because Tom was ill, he missed the dragon race.'
+            sentence: '"Due to + noun" → "because + clause." Expand the noun back into a full clause.'
+            sentenceZh: '"due to + 名词" → "because + 从句"。将名词扩展回完整从句。'
+
+      - pattern: 'although + clause ↔ despite / in spite of + noun/-ing'
+        meaning: 'Express the same contrast/concession with different grammar'
+        meaningZh: '用不同语法表达相同的转折/让步关系'
+        examples:
+          - base: 'Although he was tired, he continued training.'
+            transformed: 'Despite being tired, he continued training.'
+            sentence: '"Although + clause" → "despite + -ing." Convert "he was tired" to "being tired."'
+            sentenceZh: '"although + 从句" → "despite + -ing"。将"he was tired"转换为"being tired"。'
+          - base: 'In spite of the danger, the riders flew through the storm.'
+            transformed: 'Although it was dangerous, the riders flew through the storm.'
+            sentence: '"In spite of + noun" → "although + clause." Expand "the danger" to "it was dangerous."'
+            sentenceZh: '"in spite of + 名词" → "although + 从句"。将"the danger"扩展为"it was dangerous"。'
+
+    tips:
+      - 'GRAMMAR KEY: because/although/since/as → followed by CLAUSES (subject + verb). Due to/despite/in spite of/because of → followed by NOUNS or -ING forms.'
+      - 'Converting clause to noun: "the weather was bad" → "the bad weather" or "the weather being bad."'
+      - 'Converting clause to -ing: "he was tired" → "being tired" | "she had studied hard" → "having studied hard."'
+      - '"Despite" and "in spite of" mean the same thing and are fully interchangeable.'
+      - 'Common FCE trap: "despite" is NEVER followed by "of." It is "despite the rain" NOT "despite of the rain." But "in spite of the rain" is correct.'
+    tipsZh:
+      - '语法关键：because/although/since/as → 后面跟从句（主语 + 动词）。Due to/despite/in spite of/because of → 后面跟名词或 -ing 形式。'
+      - '从句转名词："the weather was bad" → "the bad weather" 或 "the weather being bad"。'
+      - '从句转 -ing："he was tired" → "being tired" | "she had studied hard" → "having studied hard"。'
+      - '"despite"和"in spite of"意思相同，完全可以互换。'
+      - '常见 FCE 陷阱："despite"后面永远不跟"of"。是"despite the rain"不是"despite of the rain"。但"in spite of the rain"是正确的。'
+
+    practicePreview:
+      - id: Q04-L05-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The dragon show was cancelled because the weather was stormy.
+          The dragon show was cancelled _____ stormy weather. (DUE)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          龙展因为暴风雨天气取消了。
+          龙展因为 _____ 暴风雨天气取消了。(DUE)
+        answer: 'due to the'
+        explanation: '"Because the weather was stormy" → "due to the stormy weather." Clause converts to noun phrase.'
+        explanationZh: '"because the weather was stormy" → "due to the stormy weather"。从句转换为名词短语。'
+
+      - id: Q04-L05-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          Although she was frightened, she climbed onto the dragon.
+          Despite _____, she climbed onto the dragon. (BEING)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          虽然她很害怕，但她还是爬上了龙背。
+          尽管 _____，她还是爬上了龙背。(BEING)
+        answer: 'being frightened'
+        explanation: '"Although she was frightened" → "despite being frightened." The clause becomes an -ing form.'
+        explanationZh: '"although she was frightened" → "despite being frightened"。从句变为 -ing 形式。'
+
+      - id: Q04-L05-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          In spite of his young age, Leo passed the dragon riding exam.
+          _____ very young, Leo passed the dragon riding exam. (ALTHOUGH)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          尽管年纪小，Leo还是通过了龙骑术考试。
+          _____ 很年轻，Leo还是通过了龙骑术考试。(ALTHOUGH)
+        answer: 'Although he was'
+        explanation: '"In spite of his young age" → "Although he was very young." Noun phrase expands to a full clause.'
+        explanationZh: '"in spite of his young age" → "although he was very young"。名词短语扩展为完整从句。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Emphasis and Cleft Sentences — The Crystal Dragon's Hall of Light
+  # ─────────────────────────────────────────────
+  - id: Q04-L06
+    title: 'Emphasis and Cleft Sentences — The Crystal Dragon''s Hall of Light'
+    titleZh: '强调与分裂句 — 水晶龙的光之殿堂'
+
+    introduction: |
+      For your final lesson, Professor Thornwing leads you to the Crystal Dragon's Hall of
+      Light — a dazzling chamber where every surface reflects and amplifies light. A transparent
+      crystal dragon named Prism floats in the centre, casting rainbows in every direction.
+
+      "Prism teaches the most advanced transformation," says the Professor. "EMPHASIS. Sometimes
+      you need to highlight one particular part of a sentence — to put a spotlight on it, just as
+      Prism puts a spotlight on light."
+
+      "The main tool for emphasis in English is the CLEFT SENTENCE. 'Cleft' means 'split' —
+      you split a normal sentence into two parts to emphasise one piece:
+
+      Normal: 'Maya won the race.'
+      Emphasis on WHO: 'It was Maya who won the race.'
+      Emphasis on WHAT: 'What Maya won was the race.'
+
+      In FCE Part 4, cleft sentences appear regularly. The key words are often IT, WAS, WHO,
+      or WHAT. Mastering this pattern puts you at the top level of transformation skill!"
+    introductionZh: |
+      最后一课，Thornwing 教授带你来到水晶龙的光之殿堂——一个耀眼的大厅，每个表面
+      都反射和放大光线。一条透明的水晶龙名叫 Prism 漂浮在中央，向四面八方投射彩虹。
+
+      "Prism 教授最高级的变换，"教授说。"强调。有时你需要突出句子的某个特定部分——
+      给它打上聚光灯，就像 Prism 给光线打聚光灯一样。"
+
+      "英语中强调的主要工具是分裂句。'Cleft'的意思是'分裂'——你把一个普通句子
+      分成两部分来强调其中一个：
+
+      普通：'Maya won the race.'（Maya赢了比赛。）
+      强调谁：'It was Maya who won the race.'（是Maya赢了比赛。）
+      强调什么：'What Maya won was the race.'（Maya赢的是比赛。）
+
+      在 FCE Part 4 中，分裂句经常出现。关键词通常是 IT、WAS、WHO 或 WHAT。
+      掌握这个句型会让你达到变换技能的顶级水平！"
+
+    rules:
+      - pattern: 'It + be + emphasised element + who/that + rest of sentence'
+        meaning: 'Splits the sentence to put a spotlight on the person, thing, time, or place you want to emphasise'
+        meaningZh: '将句子分开，把聚光灯打在你想强调的人、物、时间或地点上'
+        examples:
+          - base: 'Tom found the dragon egg in the forest.'
+            transformed: 'It was Tom who found the dragon egg in the forest.'
+            sentence: 'Emphasis on WHO did it. "It was + person + who + rest." Use "who" for people.'
+            sentenceZh: '强调谁做的。"It was + 人 + who + 其余部分"。人用"who"。'
+          - base: 'Tom found the dragon egg in the forest.'
+            transformed: 'It was in the forest that Tom found the dragon egg.'
+            sentence: 'Emphasis on WHERE. "It was + place + that + rest." Use "that" for things, places, and times.'
+            sentenceZh: '强调在哪里。"It was + 地点 + that + 其余部分"。事物、地点和时间用"that"。'
+          - base: 'Tom found the dragon egg in the forest.'
+            transformed: 'It was the dragon egg that Tom found in the forest.'
+            sentence: 'Emphasis on WHAT was found. "It was + thing + that + rest."'
+            sentenceZh: '强调找到了什么。"It was + 事物 + that + 其余部分"。'
+
+      - pattern: 'What + subject + verb + be + emphasised element'
+        meaning: 'A "pseudo-cleft" that uses "what" to highlight the important part at the end'
+        meaningZh: '用"what"在句末突出重要部分的"伪分裂句"'
+        examples:
+          - base: 'I need more practice time.'
+            transformed: 'What I need is more practice time.'
+            sentence: '"What + I + need" focuses attention on the answer: "more practice time." The emphasis falls on the last element.'
+            sentenceZh: '"What + I + need"把注意力集中在答案上："更多练习时间"。强调落在最后一个元素上。'
+          - base: 'She loved the flying lesson most.'
+            transformed: 'What she loved most was the flying lesson.'
+            sentence: '"What + she + loved most" builds anticipation. "The flying lesson" gets the spotlight at the end.'
+            sentenceZh: '"What + she + loved most"制造了期待感。"飞行课"在最后获得聚光灯。'
+
+    tips:
+      - 'Use "who" for people and "that" for everything else (things, places, times, reasons).'
+      - '"It was...that" can emphasise almost any part of the sentence — just move the emphasised part after "It was" and keep the rest after "that."'
+      - 'The tense of "be" should match the original: present → "It is...who/that", past → "It was...who/that."'
+      - '"What..." cleft sentences always put the emphasised element at the END. This creates a dramatic reveal effect.'
+      - 'FCE key words for cleft sentences: IT, WAS, WHO, WHAT, THAT. When you see these, think emphasis!'
+      - 'Common pattern: "The thing that surprised me was..." = "What surprised me was..." (What-cleft).'
+    tipsZh:
+      - '人用"who"，其他一切（事物、地点、时间、原因）用"that"。'
+      - '"It was...that"几乎可以强调句子的任何部分——只需把被强调的部分移到"It was"后面，其余部分放在"that"后面。'
+      - '"be"的时态应与原句匹配：现在时 → "It is...who/that"，过去时 → "It was...who/that"。'
+      - '"What..."分裂句总是把被强调的元素放在末尾。这创造了戏剧性的揭示效果。'
+      - 'FCE 分裂句关键词：IT、WAS、WHO、WHAT、THAT。看到这些就想到强调！'
+      - '常见句型："The thing that surprised me was..." = "What surprised me was..."（What-分裂句）。'
+
+    practicePreview:
+      - id: Q04-L06-P01
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          Professor Thornwing started the Dragon Academy.
+          It _____ started the Dragon Academy. (WAS)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          Thornwing教授创办了龙学院。
+          _____ 创办了龙学院。(WAS)
+        answer: 'was Professor Thornwing who'
+        explanation: 'It-cleft emphasising the person: "It was + person + who + rest." The spotlight is on Professor Thornwing.'
+        explanationZh: '强调人物的 It-分裂句："It was + 人 + who + 其余部分"。聚光灯打在Thornwing教授身上。'
+
+      - id: Q04-L06-P02
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          I really need a good night's sleep before the exam.
+          _____ is a good night's sleep before the exam. (WHAT)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          考试前我真的需要好好睡一觉。
+          _____ 是考试前好好睡一觉。(WHAT)
+        answer: 'What I really need'
+        explanation: 'What-cleft: "What + I + really need" puts the emphasis on the answer "a good night''s sleep." The important element is revealed at the end.'
+        explanationZh: 'What-分裂句："What + I + really need"把强调放在答案"好好睡一觉"上。重要元素在最后揭示。'
+
+      - id: Q04-L06-P03
+        question: |
+          Complete the second sentence so it means the same as the first, using the word given. Use 2-5 words including the word given.
+
+          The dragon chose Maya, not Tom.
+          It was _____ the dragon chose. (MAYA)
+        questionZh: |
+          用所给单词完成第二个句子，使其与第一个句子意思相同。使用2-5个单词（包括所给单词）。
+
+          龙选择了Maya，不是Tom。
+          _____ 龙选择的。(MAYA)
+        answer: 'Maya that'
+        explanation: 'It-cleft emphasising the object (who was chosen): "It was Maya that the dragon chose." The contrast with Tom is implied by the emphasis.'
+        explanationZh: 'It-分裂句强调宾语（谁被选中）："It was Maya that the dragon chose"。与Tom的对比通过强调暗示出来。'

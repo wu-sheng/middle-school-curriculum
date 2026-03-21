@@ -1,0 +1,1827 @@
+category: 'Key Word Transformation'
+categoryZh: '关键词句型转换'
+fcepart: 'Use of English Part 4'
+questions:
+  # ============================================================
+  # U0701-U0720: Active ↔ Passive with various tenses
+  # Dragon Academy theme
+  # ============================================================
+  - id: U0701
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The dragon destroyed the old castle.
+      WAS → The old castle _____ by the dragon.
+    sentenceZh: |
+      龙摧毁了古老的城堡。
+      WAS → 古老的城堡 _____ 。
+    answer: 'was destroyed'
+    explanation: "Active past simple 'destroyed' becomes passive 'was destroyed'. The object (the old castle) becomes the subject."
+    explanationZh: '主动语态一般过去时 destroyed 变为被动语态 was destroyed。宾语（古老的城堡）变为主语。'
+    grammarPoint: 'active → passive (past simple)'
+    grammarPointZh: '主动→被动（一般过去时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0702
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      A young wizard is training the new dragon.
+      BEING → The new dragon _____ by a young wizard.
+    sentenceZh: |
+      一个年轻的巫师正在训练新龙。
+      BEING → 新龙正在 _____ 。
+    answer: 'is being trained'
+    explanation: "Active present continuous 'is training' becomes passive 'is being trained'."
+    explanationZh: '主动现在进行时 is training 变为被动 is being trained。'
+    grammarPoint: 'active → passive (present continuous)'
+    grammarPointZh: '主动→被动（现在进行时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0703
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      They will build a new dragon stable next month.
+      BUILT → A new dragon stable _____ next month.
+    sentenceZh: |
+      他们下个月将建造一个新的龙舍。
+      BUILT → 新的龙舍下个月将 _____ 。
+    answer: 'will be built'
+    explanation: "Active future 'will build' becomes passive 'will be built'."
+    explanationZh: '主动将来时 will build 变为被动 will be built。'
+    grammarPoint: 'active → passive (future simple)'
+    grammarPointZh: '主动→被动（一般将来时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0704
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The healers have treated the injured dragon.
+      BEEN → The injured dragon _____ by the healers.
+    sentenceZh: |
+      治疗师们已经治疗了受伤的龙。
+      BEEN → 受伤的龙已经 _____ 。
+    answer: 'has been treated'
+    explanation: "Active present perfect 'have treated' becomes passive 'has been treated' (singular subject 'dragon')."
+    explanationZh: '主动现在完成时 have treated 变为被动 has been treated（单数主语 dragon 用 has）。'
+    grammarPoint: 'active → passive (present perfect)'
+    grammarPointZh: '主动→被动（现在完成时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0705
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      Everyone at the Academy admires the golden dragon.
+      ADMIRED → The golden dragon _____ by everyone at the Academy.
+    sentenceZh: |
+      学院里每个人都钦佩金龙。
+      ADMIRED → 金龙 _____ 。
+    answer: 'is admired'
+    explanation: "Active present simple 'admires' becomes passive 'is admired'."
+    explanationZh: '主动一般现在时 admires 变为被动 is admired。'
+    grammarPoint: 'active → passive (present simple)'
+    grammarPointZh: '主动→被动（一般现在时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0706
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The dragon guard was watching the entrance all night.
+      BEING → The entrance _____ by the dragon guard all night.
+    sentenceZh: |
+      龙卫兵整夜都在看守入口。
+      BEING → 入口整夜 _____ 。
+    answer: 'was being watched'
+    explanation: "Active past continuous 'was watching' becomes passive 'was being watched'."
+    explanationZh: '主动过去进行时 was watching 变为被动 was being watched。'
+    grammarPoint: 'active → passive (past continuous)'
+    grammarPointZh: '主动→被动（过去进行时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0707
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      Someone had stolen the dragon egg before the guards arrived.
+      BEEN → The dragon egg _____ before the guards arrived.
+    sentenceZh: |
+      在守卫到达之前，有人偷了龙蛋。
+      BEEN → 龙蛋在守卫到达之前 _____ 。
+    answer: 'had been stolen'
+    explanation: "Active past perfect 'had stolen' becomes passive 'had been stolen'."
+    explanationZh: '主动过去完成时 had stolen 变为被动 had been stolen。'
+    grammarPoint: 'active → passive (past perfect)'
+    grammarPointZh: '主动→被动（过去完成时）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0708
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      They must feed the dragons three times a day.
+      BE → The dragons _____ three times a day.
+    sentenceZh: |
+      他们必须每天喂龙三次。
+      BE → 龙每天必须 _____ 三次。
+    answer: 'must be fed'
+    explanation: "Active modal 'must feed' becomes passive 'must be fed'. Modal + be + past participle."
+    explanationZh: '主动情态动词 must feed 变为被动 must be fed。情态动词 + be + 过去分词。'
+    grammarPoint: 'active → passive (modal verb)'
+    grammarPointZh: '主动→被动（情态动词）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0709
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The Academy should have warned the students about the storm.
+      BEEN → The students _____ about the storm.
+    sentenceZh: |
+      学院应该警告学生们暴风雨的事。
+      BEEN → 学生们 _____ 暴风雨的事。
+    answer: 'should have been warned'
+    explanation: "Active 'should have warned' becomes passive 'should have been warned'. Modal + have + been + past participle."
+    explanationZh: '主动 should have warned 变为被动 should have been warned。情态动词 + have + been + 过去分词。'
+    grammarPoint: 'active → passive (modal perfect)'
+    grammarPointZh: '主动→被动（情态动词完成时）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0710
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      People believe that the crystal dragon brings good luck.
+      BELIEVED → The crystal dragon _____ good luck.
+    sentenceZh: |
+      人们相信水晶龙会带来好运。
+      BELIEVED → 水晶龙 _____ 好运。
+    answer: 'is believed to bring'
+    explanation: "'People believe that X does Y' becomes 'X is believed to do Y'. Subject + be + believed + to-infinitive."
+    explanationZh: '"人们相信 X 做 Y"变为"X 被认为做 Y"。主语 + be + believed + to 不定式。'
+    grammarPoint: 'impersonal passive (is believed to)'
+    grammarPointZh: '非人称被动（is believed to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0711
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The blacksmith made this sword from dragon steel.
+      MADE → This sword _____ dragon steel.
+    sentenceZh: |
+      铁匠用龙钢打造了这把剑。
+      MADE → 这把剑 _____ 龙钢。
+    answer: 'was made from'
+    explanation: "Active 'made X from Y' becomes passive 'X was made from Y'. 'From' is kept because the material changed form."
+    explanationZh: '主动 made X from Y 变为被动 X was made from Y。用 from 因为材料改变了形态。'
+    grammarPoint: 'active → passive (made from)'
+    grammarPointZh: '主动→被动（made from）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0712
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      They say that a shadow dragon lives in the deepest cave.
+      SAID → A shadow dragon _____ in the deepest cave.
+    sentenceZh: |
+      据说一条暗影龙住在最深的洞穴里。
+      SAID → 一条暗影龙 _____ 最深的洞穴里。
+    answer: 'is said to live'
+    explanation: "'They say that X does Y' → 'X is said to do Y'. Impersonal passive with to-infinitive."
+    explanationZh: '"据说 X 做 Y"→"X is said to do Y"。非人称被动搭配 to 不定式。'
+    grammarPoint: 'impersonal passive (is said to)'
+    grammarPointZh: '非人称被动（is said to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0713
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The knight gave the princess a dragon feather.
+      GIVEN → The princess _____ by the knight.
+    sentenceZh: |
+      骑士给了公主一根龙羽毛。
+      GIVEN → 公主 _____ 。
+    answer: 'was given a dragon feather'
+    explanation: "With verbs that take two objects (give someone something), the indirect object (princess) can become the passive subject."
+    explanationZh: '有两个宾语的动词（give sb sth），间接宾语（公主）可以变成被动语态的主语。'
+    grammarPoint: 'active → passive (double object verb)'
+    grammarPointZh: '主动→被动（双宾动词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0714
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Nobody can tame the wild storm dragon.
+      BE → The wild storm dragon _____ by nobody.
+    sentenceZh: |
+      没有人能驯服这条野生风暴龙。
+      BE → 这条野生风暴龙 _____ 。
+    answer: "can't be tamed"
+    explanation: "Active 'nobody can tame' becomes passive 'can't be tamed'. With 'nobody' as subject, the passive typically uses 'can't' instead."
+    explanationZh: '主动 nobody can tame 变为被动 can''t be tamed。nobody 做主语时，被动语态通常用 can''t。'
+    grammarPoint: 'active → passive (nobody → can''t be)'
+    grammarPointZh: '主动→被动（nobody → can''t be）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0715
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The professor is going to announce the exam results tomorrow.
+      ANNOUNCED → The exam results _____ tomorrow.
+    sentenceZh: |
+      教授明天要公布考试结果。
+      ANNOUNCED → 考试结果明天 _____ 。
+    answer: 'are going to be announced'
+    explanation: "Active 'is going to announce' becomes passive 'are going to be announced' (plural subject 'results')."
+    explanationZh: '主动 is going to announce 变为被动 are going to be announced（复数主语 results）。'
+    grammarPoint: 'active → passive (be going to)'
+    grammarPointZh: '主动→被动（be going to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0716
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      They have been repairing the dragon bridge for three weeks.
+      BEEN → The dragon bridge _____ for three weeks.
+    sentenceZh: |
+      他们已经修龙桥修了三个星期了。
+      BEEN → 龙桥已经 _____ 三个星期了。
+    answer: 'has been being repaired'
+    explanation: "Active present perfect continuous 'have been repairing' becomes passive 'has been being repaired'. This is rare but grammatically correct."
+    explanationZh: '主动现在完成进行时 have been repairing 变为被动 has been being repaired。这种形式少见但语法正确。'
+    grammarPoint: 'active → passive (present perfect continuous)'
+    grammarPointZh: '主动→被动（现在完成进行时）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0717
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      People think that the old wizard created the first dragon.
+      THOUGHT → The old wizard _____ the first dragon.
+    sentenceZh: |
+      人们认为老巫师创造了第一条龙。
+      THOUGHT → 老巫师 _____ 第一条龙。
+    answer: 'is thought to have created'
+    explanation: "'People think X did Y' → 'X is thought to have done Y'. The past action uses 'to have + past participle'."
+    explanationZh: '"人们认为 X 做了 Y"→"X is thought to have done Y"。过去的动作用 to have + 过去分词。'
+    grammarPoint: 'impersonal passive (is thought to have)'
+    grammarPointZh: '非人称被动（is thought to have）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0718
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Someone needs to clean the dragon stables every morning.
+      CLEANED → The dragon stables _____ every morning.
+    sentenceZh: |
+      每天早上都需要有人打扫龙舍。
+      CLEANED → 龙舍每天早上 _____ 。
+    answer: 'need to be cleaned'
+    explanation: "'Someone needs to clean X' becomes 'X needs to be cleaned'. Need + to be + past participle."
+    explanationZh: '"有人需要打扫 X"变为"X 需要被打扫"。need + to be + 过去分词。'
+    grammarPoint: 'active → passive (need to be done)'
+    grammarPointZh: '主动→被动（need to be done）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0719
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The teachers made the students wear helmets during dragon riding.
+      MADE → The students _____ helmets during dragon riding.
+    sentenceZh: |
+      老师们让学生在骑龙时戴头盔。
+      MADE → 学生们 _____ 骑龙时戴头盔。
+    answer: 'were made to wear'
+    explanation: "Active 'made someone do' becomes passive 'someone was made TO do'. Note: the bare infinitive becomes a to-infinitive in the passive."
+    explanationZh: '主动 made sb do 变为被动 sb was made TO do。注意：被动语态中不定式要加 to。'
+    grammarPoint: 'active → passive (make → be made to)'
+    grammarPointZh: '主动→被动（make → be made to）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0720
+    type: key-word-transformation
+    tags: [passive, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The storm damaged the dragon arena badly last night.
+      BADLY → The dragon arena _____ last night.
+    sentenceZh: |
+      暴风雨昨晚严重损坏了龙竞技场。
+      BADLY → 龙竞技场昨晚 _____ 。
+    answer: 'was badly damaged'
+    explanation: "Active 'damaged X badly' becomes passive 'X was badly damaged'. The adverb goes before the past participle."
+    explanationZh: '主动 damaged X badly 变为被动 X was badly damaged。副词放在过去分词前面。'
+    grammarPoint: 'active → passive (adverb placement)'
+    grammarPointZh: '主动→被动（副词位置）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # U0721-U0740: Direct ↔ Reported speech
+  # tell/say/ask transformations
+  # Dragon Academy theme
+  # ============================================================
+  - id: U0721
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "I can see a dragon in the sky," said the boy.
+      TOLD → The boy _____ he could see a dragon in the sky.
+    sentenceZh: |
+      "我能看到天空中的龙，"男孩说。
+      TOLD → 男孩 _____ 他能看到天空中的龙。
+    answer: 'told us/them'
+    explanation: "'Said' becomes 'told + object'. 'Can' backshifts to 'could'. 'I' changes to 'he'."
+    explanationZh: 'said 变为 told + 宾语。can 退后时态变为 could。I 变为 he。'
+    grammarPoint: 'direct → reported (said → told)'
+    grammarPointZh: '直接→间接引语（said → told）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0722
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "The dragon is sleeping in the cave," said Elara.
+      SAID → Elara _____ the dragon was sleeping in the cave.
+    sentenceZh: |
+      "龙在洞穴里睡觉，"Elara 说。
+      SAID → Elara _____ 龙在洞穴里睡觉。
+    answer: 'said that'
+    explanation: "Reported speech with 'said': no object needed, add 'that'. 'Is sleeping' backshifts to 'was sleeping'."
+    explanationZh: '间接引语用 said：不需要宾语，加 that。is sleeping 退后时态变为 was sleeping。'
+    grammarPoint: 'direct → reported (present continuous → past continuous)'
+    grammarPointZh: '直接→间接引语（现在进行→过去进行）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0723
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "I have finished my dragon training," said the knight.
+      TOLD → The knight _____ he had finished his dragon training.
+    sentenceZh: |
+      "我已经完成了龙的训练，"骑士说。
+      TOLD → 骑士 _____ 他已经完成了龙的训练。
+    answer: 'told us/them that'
+    explanation: "'Said' → 'told + object + that'. 'Have finished' backshifts to 'had finished'. 'My' → 'his'."
+    explanationZh: 'said → told + 宾语 + that。have finished 退后变为 had finished。my → his。'
+    grammarPoint: 'direct → reported (present perfect → past perfect)'
+    grammarPointZh: '直接→间接引语（现在完成→过去完成）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0724
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "Don't touch the dragon egg!" the teacher shouted.
+      TOLD → The teacher _____ touch the dragon egg.
+    sentenceZh: |
+      "不要碰龙蛋！"老师喊道。
+      TOLD → 老师 _____ 碰龙蛋。
+    answer: 'told us/them not to'
+    explanation: "Reported imperative (negative): 'Don't do X' → 'told someone not to do X'."
+    explanationZh: '间接引语祈使句（否定）：Don''t do X → told sb not to do X。'
+    grammarPoint: 'direct → reported (imperative negative)'
+    grammarPointZh: '直接→间接引语（否定祈使句）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0725
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "Open the dragon gate!" the captain ordered.
+      TOLD → The captain _____ open the dragon gate.
+    sentenceZh: |
+      "打开龙门！"队长命令。
+      TOLD → 队长 _____ 打开龙门。
+    answer: 'told them/us to'
+    explanation: "Reported imperative: 'Do X!' → 'told someone to do X'."
+    explanationZh: '间接引语祈使句：Do X! → told sb to do X。'
+    grammarPoint: 'direct → reported (imperative)'
+    grammarPointZh: '直接→间接引语（祈使句）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0726
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      "Will you help me feed the dragons?" Kai asked.
+      ASKED → Kai _____ help him feed the dragons.
+    sentenceZh: |
+      "你能帮我喂龙吗？"Kai 问。
+      ASKED → Kai _____ 帮他喂龙。
+    answer: 'asked me/us to'
+    explanation: "Reported request: 'Will you do X?' → 'asked someone to do X'. 'Me' changes to 'him'."
+    explanationZh: '间接引语请求：Will you do X? → asked sb to do X。me 变为 him。'
+    grammarPoint: 'direct → reported (request)'
+    grammarPointZh: '直接→间接引语（请求）'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0727
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "Where does the ice dragon live?" the explorer asked.
+      ASKED → The explorer _____ the ice dragon lived.
+    sentenceZh: |
+      "冰龙住在哪里？"探险家问。
+      ASKED → 探险家 _____ 冰龙住在哪里。
+    answer: 'asked where'
+    explanation: "Reported wh-question: 'Where does X live?' → 'asked where X lived'. No question mark, normal word order, backshift tense."
+    explanationZh: '间接引语 wh-疑问句：Where does X live? → asked where X lived。没有问号，正常语序，时态退后。'
+    grammarPoint: 'direct → reported (wh-question)'
+    grammarPointZh: '直接→间接引语（wh-疑问句）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0728
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "Have you ever ridden a dragon?" the girl asked me.
+      ASKED → The girl _____ ever ridden a dragon.
+    sentenceZh: |
+      "你骑过龙吗？"女孩问我。
+      ASKED → 女孩 _____ 骑过龙。
+    answer: 'asked me if/whether I had'
+    explanation: "Reported yes/no question: 'Have you ever..?' → 'asked if/whether I had ever..'. Add if/whether, normal word order, backshift."
+    explanationZh: '间接引语是/否疑问句：Have you ever..? → asked if/whether I had ever..。加 if/whether，正常语序，时态退后。'
+    grammarPoint: 'direct → reported (yes/no question)'
+    grammarPointZh: '直接→间接引语（是/否疑问句）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0729
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "I will bring my dragon to school tomorrow," said Luna.
+      SAID → Luna _____ bring her dragon to school the next day.
+    sentenceZh: |
+      "我明天会带我的龙来学校，"Luna 说。
+      SAID → Luna _____ 第二天带她的龙来学校。
+    answer: 'said she would'
+    explanation: "'Will' backshifts to 'would'. 'Tomorrow' changes to 'the next day'. 'I/my' → 'she/her'."
+    explanationZh: 'will 退后变为 would。tomorrow 变为 the next day。I/my → she/her。'
+    grammarPoint: 'direct → reported (will → would, time shift)'
+    grammarPointZh: '直接→间接引语（will → would，时间转换）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0730
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "We saw the dragon yesterday," the children said.
+      TOLD → The children _____ they had seen the dragon the day before.
+    sentenceZh: |
+      "我们昨天看到了龙，"孩子们说。
+      TOLD → 孩子们 _____ 他们前一天看到了龙。
+    answer: 'told us/me that'
+    explanation: "'Saw' backshifts to 'had seen'. 'Yesterday' → 'the day before'. 'We' → 'they'."
+    explanationZh: 'saw 退后变为 had seen。yesterday → the day before。we → they。'
+    grammarPoint: 'direct → reported (past simple → past perfect, time shift)'
+    grammarPointZh: '直接→间接引语（一般过去→过去完成，时间转换）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0731
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "You must not fly your dragon at night," the headmaster warned.
+      WARNED → The headmaster _____ fly our dragons at night.
+    sentenceZh: |
+      "你们不可以晚上骑龙飞，"校长警告说。
+      WARNED → 校长 _____ 晚上骑龙飞。
+    answer: 'warned us not to'
+    explanation: "Reported warning (negative): 'must not do X' → 'warned someone not to do X'."
+    explanationZh: '间接引语警告（否定）：must not do X → warned sb not to do X。'
+    grammarPoint: 'direct → reported (warning)'
+    grammarPointZh: '直接→间接引语（警告）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0732
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "How many eggs did the dragon lay?" the scientist asked.
+      WANTED → The scientist _____ the dragon had laid.
+    sentenceZh: |
+      "龙下了多少蛋？"科学家问。
+      WANTED → 科学家 _____ 龙下了多少蛋。
+    answer: 'wanted to know how many eggs'
+    explanation: "Reported wh-question with 'wanted to know': normal word order, backshift 'did lay' → 'had laid'."
+    explanationZh: '间接引语 wh-疑问句用 wanted to know：正常语序，did lay 退后变为 had laid。'
+    grammarPoint: 'direct → reported (wanted to know)'
+    grammarPointZh: '直接→间接引语（wanted to know）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0733
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "I can't find my dragon whistle," said the student.
+      SAID → The student _____ find his dragon whistle.
+    sentenceZh: |
+      "我找不到我的龙哨，"学生说。
+      SAID → 学生 _____ 找到他的龙哨。
+    answer: "said he couldn't"
+    explanation: "'Can't' backshifts to 'couldn't'. 'I/my' → 'he/his'."
+    explanationZh: 'can''t 退后变为 couldn''t。I/my → he/his。'
+    grammarPoint: 'direct → reported (can → could)'
+    grammarPointZh: '直接→间接引语（can → could）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0734
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "You should practise flying every day," the coach advised.
+      ADVISED → The coach _____ practise flying every day.
+    sentenceZh: |
+      "你应该每天练习飞行，"教练建议。
+      ADVISED → 教练 _____ 每天练习飞行。
+    answer: 'advised us/me to'
+    explanation: "Reported advice: 'should do X' → 'advised someone to do X'."
+    explanationZh: '间接引语建议：should do X → advised sb to do X。'
+    grammarPoint: 'direct → reported (advise + to-infinitive)'
+    grammarPointZh: '直接→间接引语（advise + to 不定式）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0735
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "Let's explore the abandoned dragon tower," suggested Kai.
+      SUGGESTED → Kai _____ the abandoned dragon tower.
+    sentenceZh: |
+      "我们去探索废弃的龙塔吧，"Kai 建议。
+      SUGGESTED → Kai _____ 废弃的龙塔。
+    answer: 'suggested exploring'
+    explanation: "Reported suggestion: 'Let's do X' → 'suggested doing X' (suggest + -ing)."
+    explanationZh: '间接引语建议：Let''s do X → suggested doing X（suggest + -ing）。'
+    grammarPoint: 'direct → reported (suggest + -ing)'
+    grammarPointZh: '直接→间接引语（suggest + -ing）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0736
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "I was feeding the dragon when the storm started," said the keeper.
+      SAID → The keeper _____ feeding the dragon when the storm started.
+    sentenceZh: |
+      "暴风雨开始时我正在喂龙，"管理员说。
+      SAID → 管理员 _____ 暴风雨开始时他正在喂龙。
+    answer: 'said he had been'
+    explanation: "'Was feeding' backshifts to 'had been feeding'. 'I' → 'he'."
+    explanationZh: 'was feeding 退后变为 had been feeding。I → he。'
+    grammarPoint: 'direct → reported (past continuous → past perfect continuous)'
+    grammarPointZh: '直接→间接引语（过去进行→过去完成进行）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0737
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "Could you please close the dragon gate?" the guard asked.
+      ASKED → The guard _____ the dragon gate.
+    sentenceZh: |
+      "你能关上龙门吗？"守卫问。
+      ASKED → 守卫 _____ 龙门。
+    answer: 'asked me/us to close'
+    explanation: "Reported polite request: 'Could you please do X?' → 'asked someone to do X'."
+    explanationZh: '间接引语礼貌请求：Could you please do X? → asked sb to do X。'
+    grammarPoint: 'direct → reported (polite request)'
+    grammarPointZh: '直接→间接引语（礼貌请求）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0738
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "We had already left when the dragon arrived," said the villagers.
+      SAID → The villagers _____ already left when the dragon arrived.
+    sentenceZh: |
+      "龙到达时我们已经离开了，"村民们说。
+      SAID → 村民们 _____ 龙到达时他们已经离开了。
+    answer: 'said they had'
+    explanation: "Past perfect 'had left' stays as 'had left' — no further backshift needed."
+    explanationZh: '过去完成时 had left 保持不变——不需要再退后时态。'
+    grammarPoint: 'direct → reported (past perfect stays)'
+    grammarPointZh: '直接→间接引语（过去完成时不变）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0739
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "Why are you crying?" the dragon asked the girl.
+      ASKED → The dragon _____ crying.
+    sentenceZh: |
+      "你为什么哭？"龙问女孩。
+      ASKED → 龙 _____ 在哭。
+    answer: 'asked the girl why she was'
+    explanation: "Reported wh-question: 'Why are you crying?' → 'asked why she was crying'. Normal word order, 'are' → 'was'."
+    explanationZh: '间接引语 wh-疑问句：Why are you crying? → asked why she was crying。正常语序，are → was。'
+    grammarPoint: 'direct → reported (wh-question, present continuous)'
+    grammarPointZh: '直接→间接引语（wh-疑问句，现在进行）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0740
+    type: key-word-transformation
+    tags: [reported-speech, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      "I promise I will protect the dragon egg," the girl said.
+      PROMISED → The girl _____ the dragon egg.
+    sentenceZh: |
+      "我保证我会保护龙蛋，"女孩说。
+      PROMISED → 女孩 _____ 龙蛋。
+    answer: 'promised to protect'
+    explanation: "Reported promise: 'I promise I will do X' → 'promised to do X'."
+    explanationZh: '间接引语承诺：I promise I will do X → promised to do X。'
+    grammarPoint: 'direct → reported (promise + to-infinitive)'
+    grammarPointZh: '直接→间接引语（promise + to 不定式）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # U0741-U0760: Conditional transformations
+  # If → Unless, provided that, as long as
+  # Dragon Academy theme
+  # ============================================================
+  - id: U0741
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      If you don't wear a helmet, you can't ride the dragon.
+      UNLESS → You can't ride the dragon _____ a helmet.
+    sentenceZh: |
+      如果你不戴头盔，你就不能骑龙。
+      UNLESS → 除非你 _____ 头盔，否则你不能骑龙。
+    answer: 'unless you wear'
+    explanation: "'If you don't' = 'Unless you do'. 'Unless' already contains the negative meaning, so remove 'don't'."
+    explanationZh: 'If you don''t = Unless you do。unless 本身含有否定意义，所以去掉 don''t。'
+    grammarPoint: 'if not → unless'
+    grammarPointZh: 'if not → unless'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0742
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      Unless you train hard, you won't become a Dragon Knight.
+      IF → You won't become a Dragon Knight _____ hard.
+    sentenceZh: |
+      除非你努力训练，否则你不会成为龙骑士。
+      IF → 如果你 _____ ，你不会成为龙骑士。
+    answer: "if you don't train"
+    explanation: "'Unless you train' = 'If you don't train'. Converting unless back to if requires adding 'not'."
+    explanationZh: 'Unless you train = If you don''t train。把 unless 转回 if 需要加 not。'
+    grammarPoint: 'unless → if not'
+    grammarPointZh: 'unless → if not'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0743
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      If you study dragon anatomy, you will pass the exam.
+      LONG → You will pass the exam _____ dragon anatomy.
+    sentenceZh: |
+      如果你学龙的解剖学，你就能通过考试。
+      LONG → 只要你 _____ 龙的解剖学，你就能通过考试。
+    answer: 'as long as you study'
+    explanation: "'If' can be replaced by 'as long as' (= on the condition that). The meaning is the same."
+    explanationZh: 'if 可以用 as long as 替换（= 只要）。意思相同。'
+    grammarPoint: 'if → as long as'
+    grammarPointZh: 'if → as long as'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0744
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      You can fly the dragon if the weather is good.
+      PROVIDED → You can fly the dragon _____ good.
+    sentenceZh: |
+      如果天气好，你可以骑龙飞。
+      PROVIDED → 只要天气好，你 _____ 骑龙飞。
+    answer: 'provided that the weather is'
+    explanation: "'If' can be replaced by 'provided that' (= on condition that). More formal."
+    explanationZh: 'if 可以用 provided that 替换（= 在……条件下）。更正式。'
+    grammarPoint: 'if → provided that'
+    grammarPointZh: 'if → provided that'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0745
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      If I were you, I would apologise to the dragon.
+      PLACE → If I _____, I would apologise to the dragon.
+    sentenceZh: |
+      如果我是你，我会向龙道歉。
+      PLACE → 如果我 _____ ，我会向龙道歉。
+    answer: 'were in your place'
+    explanation: "'If I were you' = 'If I were in your place'. Same meaning, different expression."
+    explanationZh: 'If I were you = If I were in your place。意思相同，表达不同。'
+    grammarPoint: 'if I were you → if I were in your place'
+    grammarPointZh: 'if I were you → if I were in your place'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0746
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      If you don't hurry, you'll miss the dragon parade.
+      UNLESS → You'll miss the dragon parade _____.
+    sentenceZh: |
+      如果你不快点，你会错过龙游行。
+      UNLESS → 除非你 _____ ，否则你会错过龙游行。
+    answer: 'unless you hurry'
+    explanation: "'If you don't hurry' = 'Unless you hurry'. Unless = if not."
+    explanationZh: 'If you don''t hurry = Unless you hurry。unless = if not。'
+    grammarPoint: 'if not → unless'
+    grammarPointZh: 'if not → unless'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0747
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon will let you ride it if you are gentle.
+      CONDITION → The dragon will let you ride it _____ gentle.
+    sentenceZh: |
+      如果你温柔的话，龙会让你骑。
+      CONDITION → 在你 _____ 温柔的条件下，龙会让你骑。
+    answer: 'on condition that you are'
+    explanation: "'If' can be replaced by 'on condition that'. More formal and emphatic."
+    explanationZh: 'if 可以用 on condition that 替换。更正式和强调。'
+    grammarPoint: 'if → on condition that'
+    grammarPointZh: 'if → on condition that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0748
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      I didn't know about the dragon race, so I didn't enter.
+      KNOWN → If I _____ the dragon race, I would have entered.
+    sentenceZh: |
+      我不知道龙赛的事，所以我没参加。
+      KNOWN → 如果我 _____ 龙赛的事，我就参加了。
+    answer: 'had known about'
+    explanation: "Convert a factual statement to a third conditional: 'didn't know' → 'If I had known'."
+    explanationZh: '把事实陈述转换为第三条件句：didn''t know → If I had known。'
+    grammarPoint: 'factual → third conditional'
+    grammarPointZh: '事实陈述→第三条件句'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0749
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon was tired, so it couldn't fly over the mountain.
+      BEEN → If the dragon _____ tired, it could have flown over the mountain.
+    sentenceZh: |
+      龙很累，所以它飞不过山。
+      BEEN → 如果龙 _____ 累，它就能飞过山了。
+    answer: "hadn't been"
+    explanation: "Convert fact to third conditional: 'was tired' → 'If the dragon hadn't been tired'."
+    explanationZh: '把事实转换为第三条件句：was tired → If the dragon hadn''t been tired。'
+    grammarPoint: 'factual → third conditional'
+    grammarPointZh: '事实陈述→第三条件句'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0750
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      You can borrow my dragon saddle if you promise to return it.
+      LONG → You can borrow my dragon saddle _____ to return it.
+    sentenceZh: |
+      如果你保证归还，你可以借我的龙鞍。
+      LONG → 只要你保证归还，你 _____ 我的龙鞍。
+    answer: 'as long as you promise'
+    explanation: "'If' → 'as long as'. Both express a condition for borrowing the saddle."
+    explanationZh: 'if → as long as。两者都表达借龙鞍的条件。'
+    grammarPoint: 'if → as long as'
+    grammarPointZh: 'if → as long as'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0751
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      I regret not learning dragon language at school.
+      WISH → I _____ dragon language at school.
+    sentenceZh: |
+      我后悔没在学校学龙语。
+      WISH → 我希望我 _____ 龙语。
+    answer: 'wish I had learned/learnt'
+    explanation: "'I regret not doing' → 'I wish I had done'. 'Wish + past perfect' for past regret."
+    explanationZh: 'I regret not doing → I wish I had done。wish + 过去完成时表达对过去的遗憾。'
+    grammarPoint: 'regret → wish + past perfect'
+    grammarPointZh: 'regret → wish + 过去完成时'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0752
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      It's a pity the dragon can't talk.
+      WISH → I _____ talk.
+    sentenceZh: |
+      可惜龙不会说话。
+      WISH → 我希望龙 _____ 说话。
+    answer: 'wish the dragon could'
+    explanation: "'It's a pity X can't' → 'I wish X could'. Wish + could for unreal present."
+    explanationZh: 'It''s a pity X can''t → I wish X could。wish + could 表达对现在的不真实愿望。'
+    grammarPoint: "it's a pity → wish + could"
+    grammarPointZh: "it's a pity → wish + could"
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0753
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      I'm sorry I didn't bring an umbrella to the dragon ride.
+      ONLY → If _____ an umbrella to the dragon ride.
+    sentenceZh: |
+      我很遗憾没带伞去骑龙。
+      ONLY → 要是我 _____ 骑龙就好了。
+    answer: 'only I had brought'
+    explanation: "'I'm sorry I didn't' → 'If only I had done'. If only + past perfect for past regret."
+    explanationZh: 'I''m sorry I didn''t → If only I had done。If only + 过去完成时表达过去的遗憾。'
+    grammarPoint: "I'm sorry → if only + past perfect"
+    grammarPointZh: "I'm sorry → if only + 过去完成时"
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0754
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Without the magic shield, the dragon would have burned the village.
+      IF → The dragon would have burned the village _____ the magic shield.
+    sentenceZh: |
+      如果没有魔法盾牌，龙会烧毁村庄。
+      IF → 如果 _____ 魔法盾牌，龙会烧毁村庄。
+    answer: 'if it had not been for'
+    explanation: "'Without X' → 'If it had not been for X'. Third conditional structure."
+    explanationZh: 'Without X → If it had not been for X。第三条件句结构。'
+    grammarPoint: 'without → if it had not been for'
+    grammarPointZh: 'without → if it had not been for'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0755
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon will only fly if you feed it first.
+      UNLESS → The dragon won't fly _____ it first.
+    sentenceZh: |
+      龙只有在你先喂它的情况下才会飞。
+      UNLESS → 除非你先 _____ ，否则龙不会飞。
+    answer: 'unless you feed'
+    explanation: "'Only if you do X' → 'won't do Y unless you do X'. Unless = if not."
+    explanationZh: 'only if you do X → won''t do Y unless you do X。unless = if not。'
+    grammarPoint: 'only if → unless (negative main clause)'
+    grammarPointZh: 'only if → unless（否定主句）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0756
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Study hard and you will pass the Dragon Academy entrance exam.
+      IF → _____ hard, you will pass the Dragon Academy entrance exam.
+    sentenceZh: |
+      努力学习，你就能通过龙学院入学考试。
+      IF → _____ 努力学习，你就能通过龙学院入学考试。
+    answer: 'If you study'
+    explanation: "'Imperative + and + result' can be rewritten as 'If + present simple, will + result'."
+    explanationZh: '祈使句 + and + 结果 可以改写为 If + 一般现在时，will + 结果。'
+    grammarPoint: 'imperative + and → if conditional'
+    grammarPointZh: '祈使句 + and → if 条件句'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0757
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      If I hadn't missed the last class, I would know how to tame storm dragons.
+      ATTENDED → If I _____ the last class, I would know how to tame storm dragons.
+    sentenceZh: |
+      如果我没有错过上一节课，我就知道怎么驯服风暴龙了。
+      ATTENDED → 如果我 _____ 上一节课，我就知道怎么驯服风暴龙了。
+    answer: 'had attended'
+    explanation: "'Hadn't missed' = 'had attended'. Same meaning using an opposite verb."
+    explanationZh: 'hadn''t missed = had attended。用相反的动词表达相同意思。'
+    grammarPoint: 'negative → positive synonym in conditional'
+    grammarPointZh: '否定→肯定同义词转换（条件句）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0758
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      You must have a licence or you can't own a dragon.
+      UNLESS → You can't own a dragon _____ a licence.
+    sentenceZh: |
+      你必须有许可证，否则你不能养龙。
+      UNLESS → 除非你 _____ 许可证，否则你不能养龙。
+    answer: 'unless you have'
+    explanation: "'Must have X or can't Y' → 'can't Y unless you have X'."
+    explanationZh: '必须有 X 否则不能 Y → 除非有 X 否则不能 Y。'
+    grammarPoint: 'or → unless'
+    grammarPointZh: 'or → unless'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0759
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      I didn't have a map, so I got lost in the Dragon Forest.
+      HAD → If I _____ a map, I wouldn't have got lost in the Dragon Forest.
+    sentenceZh: |
+      我没有地图，所以我在龙之森林迷路了。
+      HAD → 如果我 _____ 地图，我就不会在龙之森林迷路了。
+    answer: 'had had'
+    explanation: "Convert fact to third conditional: 'didn't have' → 'If I had had'. Past perfect of 'have'."
+    explanationZh: '把事实转换为第三条件句：didn''t have → If I had had。have 的过去完成时。'
+    grammarPoint: 'factual → third conditional (had had)'
+    grammarPointZh: '事实陈述→第三条件句（had had）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0760
+    type: key-word-transformation
+    tags: [conditional-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      You won't learn dragon magic if you don't practise every day.
+      LONG → You will learn dragon magic _____ every day.
+    sentenceZh: |
+      如果你不每天练习，你就学不会龙魔法。
+      LONG → 只要你每天练习，你 _____ 龙魔法。
+    answer: 'as long as you practise'
+    explanation: "Double negative → positive: 'won't learn if you don't practise' → 'will learn as long as you practise'."
+    explanationZh: '双重否定→肯定：won''t learn if you don''t practise → will learn as long as you practise。'
+    grammarPoint: 'if not + negative → as long as + positive'
+    grammarPointZh: 'if not + 否定 → as long as + 肯定'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # U0761-U0780: Comparative/superlative transformations
+  # as...as, not as...as, the most, too...to, enough
+  # Dragon Academy theme
+  # ============================================================
+  - id: U0761
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The fire dragon is bigger than the ice dragon.
+      AS → The ice dragon is _____ the fire dragon.
+    sentenceZh: |
+      火龙比冰龙大。
+      AS → 冰龙 _____ 火龙。
+    answer: 'not as big as'
+    explanation: "'X is bigger than Y' = 'Y is not as big as X'. Reverse the comparison using 'not as...as'."
+    explanationZh: 'X 比 Y 大 = Y 不如 X 大。用 not as...as 反转比较。'
+    grammarPoint: 'comparative → not as...as'
+    grammarPointZh: '比较级→ not as...as'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0762
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      No other dragon in the school is as fast as Luna.
+      FASTEST → Luna is _____ in the school.
+    sentenceZh: |
+      学校里没有其他龙像 Luna 一样快。
+      FASTEST → Luna 是学校里 _____ 。
+    answer: 'the fastest dragon'
+    explanation: "'No other X is as ... as Y' = 'Y is the most/...-est X'. Convert to superlative."
+    explanationZh: '没有其他 X 像 Y 一样... = Y 是最...的 X。转换为最高级。'
+    grammarPoint: 'not as...as (none) → superlative'
+    grammarPointZh: 'not as...as（无） → 最高级'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0763
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      This dragon is the most intelligent one I have ever met.
+      SUCH → I have never met _____ dragon.
+    sentenceZh: |
+      这是我见过的最聪明的龙。
+      SUCH → 我从未见过 _____ 龙。
+    answer: 'such an intelligent'
+    explanation: "'The most + adj + I have ever' → 'I have never + such a/an + adj'. Superlative → 'such' with negative."
+    explanationZh: '最...+ I have ever → I have never + such a/an + adj。最高级→ such 搭配否定。'
+    grammarPoint: 'superlative → never such'
+    grammarPointZh: '最高级→ never such'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0764
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      My dragon is stronger than yours.
+      AS → Your dragon is _____ mine.
+    sentenceZh: |
+      我的龙比你的龙强壮。
+      AS → 你的龙 _____ 我的龙。
+    answer: 'not as strong as'
+    explanation: "'X is stronger than Y' = 'Y is not as strong as X'."
+    explanationZh: 'X 比 Y 强壮 = Y 不如 X 强壮。'
+    grammarPoint: 'comparative → not as...as'
+    grammarPointZh: '比较级→ not as...as'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0765
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The baby dragon is too small to carry a rider.
+      ENOUGH → The baby dragon is _____ a rider.
+    sentenceZh: |
+      小龙太小了，载不了骑手。
+      ENOUGH → 小龙 _____ 骑手。
+    answer: 'not big enough to carry'
+    explanation: "'Too small to do X' = 'Not big enough to do X'. Too + adj → not + opposite adj + enough."
+    explanationZh: 'too small to do X = not big enough to do X。too + 形容词 → not + 反义词 + enough。'
+    grammarPoint: 'too...to → not...enough to'
+    grammarPointZh: 'too...to → not...enough to'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0766
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-2]
+    context: dragon-academy
+    sentence: |
+      The golden dragon is the rarest dragon in the kingdom.
+      THAN → No other dragon in the kingdom is _____ the golden dragon.
+    sentenceZh: |
+      金龙是王国里最稀有的龙。
+      THAN → 王国里没有其他龙比 _____ 金龙。
+    answer: 'rarer than'
+    explanation: "'The rarest' (superlative) → 'no other...is rarer than' (comparative with no other)."
+    explanationZh: '最高级 the rarest → 比较级 no other...is rarer than。'
+    grammarPoint: 'superlative → no other...comparative'
+    grammarPointZh: '最高级→ no other + 比较级'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: U0767
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Dragon riding is more exciting than any other sport.
+      MOST → Dragon riding is _____ of all sports.
+    sentenceZh: |
+      龙骑术比任何其他运动都刺激。
+      MOST → 龙骑术是所有运动中 _____ 。
+    answer: 'the most exciting'
+    explanation: "'More...than any other' = 'the most...of all'. Comparative with 'any other' = superlative."
+    explanationZh: 'more...than any other = the most...of all。比较级 + any other = 最高级。'
+    grammarPoint: 'comparative (any other) → superlative'
+    grammarPointZh: '比较级（any other）→ 最高级'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0768
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The cave is so deep that we can't see the bottom.
+      TOO → The cave is _____ the bottom.
+    sentenceZh: |
+      洞穴太深了，我们看不到底。
+      TOO → 洞穴 _____ 底部。
+    answer: 'too deep for us to see'
+    explanation: "'So...that we can't' → 'too...for us to'. 'So + adj + that + negative' = 'too + adj + for + person + to'."
+    explanationZh: 'so...that we can''t → too...for us to。so + 形容词 + that + 否定 = too + 形容词 + for + 人 + to。'
+    grammarPoint: 'so...that (negative) → too...for...to'
+    grammarPointZh: 'so...that（否定） → too...for...to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0769
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Elara's dragon flies faster than Kai's dragon.
+      SLOWLY → Kai's dragon flies _____ Elara's dragon.
+    sentenceZh: |
+      Elara 的龙飞得比 Kai 的龙快。
+      SLOWLY → Kai 的龙飞得 _____ Elara 的龙。
+    answer: 'more slowly than'
+    explanation: "'Flies faster than' → 'flies more slowly than'. Reverse comparison using the opposite adverb."
+    explanationZh: '飞得比...快 → 飞得比...慢。用相反的副词反转比较。'
+    grammarPoint: 'comparative → reverse comparative (opposite adverb)'
+    grammarPointZh: '比较级→反向比较级（反义副词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0770
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      I have never seen a dragon as beautiful as this one.
+      MOST → This is _____ I have ever seen.
+    sentenceZh: |
+      我从未见过像这条一样美丽的龙。
+      MOST → 这是我见过的 _____ 。
+    answer: 'the most beautiful dragon'
+    explanation: "'Never + as...as this' → 'the most...ever'. Negative + 'as...as' = superlative."
+    explanationZh: 'never + as...as this → the most...ever。否定 + as...as = 最高级。'
+    grammarPoint: 'never as...as → superlative ever'
+    grammarPointZh: 'never as...as → 最高级 ever'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0771
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon egg isn't big enough to hatch yet.
+      TOO → The dragon egg is _____ yet.
+    sentenceZh: |
+      龙蛋还不够大，还不能孵化。
+      TOO → 龙蛋 _____ 。
+    answer: 'too small to hatch'
+    explanation: "'Not big enough to' → 'too small to'. Not + adj + enough = too + opposite adj."
+    explanationZh: 'not big enough to → too small to。not + 形容词 + enough = too + 反义词。'
+    grammarPoint: 'not...enough → too + opposite'
+    grammarPointZh: 'not...enough → too + 反义词'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0772
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Storm dragons are much more dangerous than cloud dragons.
+      NEARLY → Cloud dragons are _____ storm dragons.
+    sentenceZh: |
+      风暴龙比云龙危险得多。
+      NEARLY → 云龙 _____ 风暴龙。
+    answer: 'not nearly as dangerous as'
+    explanation: "'Much more...than' → 'not nearly as...as'. 'Not nearly' emphasises a big difference."
+    explanationZh: 'much more...than → not nearly as...as。not nearly 强调很大的差距。'
+    grammarPoint: 'much more → not nearly as...as'
+    grammarPointZh: 'much more → not nearly as...as'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0773
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon's roar was so loud that everyone covered their ears.
+      SUCH → It was _____ that everyone covered their ears.
+    sentenceZh: |
+      龙的吼叫声太大了，每个人都捂住了耳朵。
+      SUCH → 那是 _____ 每个人都捂住了耳朵。
+    answer: 'such a loud roar'
+    explanation: "'So + adjective + (noun) + that' → 'such + a/an + adjective + noun + that'."
+    explanationZh: 'so + 形容词 + that → such + a/an + 形容词 + 名词 + that。'
+    grammarPoint: 'so...that → such...that'
+    grammarPointZh: 'so...that → such...that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0774
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The more you practise flying, the better you become.
+      PRACTISE → The better you become, _____ flying.
+    sentenceZh: |
+      你越多练习飞行，你就越好。
+      PRACTISE → 你越好，_____ 飞行。
+    answer: 'the more you practise'
+    explanation: "'The more...the better' can be reversed: 'The better...the more'. The double comparative structure stays the same."
+    explanationZh: 'the more...the better 可以反转：the better...the more。双重比较级结构不变。'
+    grammarPoint: 'the more...the more (reversed)'
+    grammarPointZh: 'the more...the more（反转）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0775
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Shadow dragons are less friendly than forest dragons.
+      AS → Shadow dragons are _____ forest dragons.
+    sentenceZh: |
+      暗影龙没有森林龙友好。
+      AS → 暗影龙 _____ 森林龙。
+    answer: 'not as friendly as'
+    explanation: "'Less...than' = 'not as...as'. Both express the same comparison."
+    explanationZh: 'less...than = not as...as。两者表达相同的比较。'
+    grammarPoint: 'less...than → not as...as'
+    grammarPointZh: 'less...than → not as...as'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0776
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      This is the longest flight I have ever taken on a dragon.
+      LONG → I have never taken _____ on a dragon.
+    sentenceZh: |
+      这是我骑龙飞过的最长距离。
+      LONG → 我从未骑龙飞过 _____ 。
+    answer: 'such a long flight'
+    explanation: "'The longest...ever' → 'never...such a long'. Superlative → negative + such."
+    explanationZh: '最高级...ever → never...such a long。最高级→否定 + such。'
+    grammarPoint: 'superlative → never such a'
+    grammarPointZh: '最高级→ never such a'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0777
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Both the fire dragon and the ice dragon are equally powerful.
+      AS → The fire dragon is _____ the ice dragon.
+    sentenceZh: |
+      火龙和冰龙一样强大。
+      AS → 火龙 _____ 冰龙。
+    answer: 'as powerful as'
+    explanation: "'Both...equally + adj' → 'X is as + adj + as Y'. Express equal comparison with 'as...as'."
+    explanationZh: 'both...equally + 形容词 → X is as + 形容词 + as Y。用 as...as 表达等量比较。'
+    grammarPoint: 'equally → as...as'
+    grammarPointZh: 'equally → as...as'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0778
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      This potion is not strong enough to heal the dragon.
+      WEAK → This potion is _____ the dragon.
+    sentenceZh: |
+      这种药水不够强，治不了龙。
+      WEAK → 这种药水 _____ 龙。
+    answer: 'too weak to heal'
+    explanation: "'Not strong enough to' → 'too weak to'. Not + adj + enough = too + opposite adj."
+    explanationZh: 'not strong enough to → too weak to。not + 形容词 + enough = too + 反义词。'
+    grammarPoint: 'not enough → too + opposite'
+    grammarPointZh: 'not enough → too + 反义词'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0779
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Training a dragon is harder than I expected.
+      AS → Training a dragon is _____ I expected.
+    sentenceZh: |
+      训练龙比我预期的难。
+      AS → 训练龙 _____ 我预期的。
+    answer: 'not as easy as'
+    explanation: "'Harder than' → 'not as easy as'. Reverse with opposite adjective + not as...as."
+    explanationZh: '比...更难 → 不如...简单。用反义形容词 + not as...as 反转。'
+    grammarPoint: 'comparative → not as...as (opposite adj)'
+    grammarPointZh: '比较级→ not as...as（反义词）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0780
+    type: key-word-transformation
+    tags: [comparative, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      No student in the class is better at dragon riding than Elara.
+      BEST → Elara is _____ in the class.
+    sentenceZh: |
+      班上没有学生比 Elara 更擅长龙骑术。
+      BEST → Elara 是班上 _____ 。
+    answer: 'the best at dragon riding'
+    explanation: "'No other...is better than X' = 'X is the best'. Comparative + no other → superlative."
+    explanationZh: '没有其他...比 X 更好 = X 是最好的。比较级 + no other → 最高级。'
+    grammarPoint: 'no other + comparative → superlative'
+    grammarPointZh: 'no other + 比较级→最高级'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # U0781-U0800: Mixed transformations
+  # Purpose clauses, result clauses, emphasis, cause/effect
+  # Dragon Academy theme
+  # ============================================================
+  - id: U0781
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      She went to Dragon Academy to learn how to ride dragons.
+      ORDER → She went to Dragon Academy _____ how to ride dragons.
+    sentenceZh: |
+      她去龙学院学骑龙。
+      ORDER → 她去龙学院 _____ 学骑龙。
+    answer: 'in order to learn'
+    explanation: "'To + infinitive' (purpose) → 'in order to + infinitive'. Both express purpose."
+    explanationZh: 'to + 不定式（目的）→ in order to + 不定式。两者都表达目的。'
+    grammarPoint: 'to → in order to (purpose)'
+    grammarPointZh: 'to → in order to（目的）'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0782
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      He studied dragon history so that he could understand ancient spells.
+      ORDER → He studied dragon history _____ ancient spells.
+    sentenceZh: |
+      他学习龙的历史以便理解古代咒语。
+      ORDER → 他学习龙的历史 _____ 古代咒语。
+    answer: 'in order to understand'
+    explanation: "'So that he could' (purpose) → 'in order to'. When the subjects are the same, simplify."
+    explanationZh: 'so that he could（目的）→ in order to。主语相同时可以简化。'
+    grammarPoint: 'so that + could → in order to'
+    grammarPointZh: 'so that + could → in order to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0783
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon flew very high so that the enemy couldn't reach it.
+      AVOID → The dragon flew very high _____ by the enemy.
+    sentenceZh: |
+      龙飞得很高，这样敌人够不着它。
+      AVOID → 龙飞得很高 _____ 敌人。
+    answer: 'to avoid being reached'
+    explanation: "'So that X couldn't do Y' → 'to avoid being done'. Purpose clause with passive gerund."
+    explanationZh: 'so that X couldn''t do Y → to avoid being done。目的从句搭配被动动名词。'
+    grammarPoint: 'so that negative → to avoid + -ing'
+    grammarPointZh: 'so that 否定→ to avoid + -ing'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0784
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon was very tired. As a result, it couldn't fly home.
+      SO → The dragon was _____ couldn't fly home.
+    sentenceZh: |
+      龙非常累。结果，它飞不回家了。
+      SO → 龙 _____ 飞不回家了。
+    answer: 'so tired that it'
+    explanation: "'Very + adj. As a result, negative' → 'so + adj + that + negative'. Result clause."
+    explanationZh: 'very + 形容词。结果，否定 → so + 形容词 + that + 否定。结果从句。'
+    grammarPoint: 'as a result → so...that'
+    grammarPointZh: 'as a result → so...that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0785
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The storm was so fierce that the dragons couldn't take off.
+      SUCH → It was _____ the dragons couldn't take off.
+    sentenceZh: |
+      暴风雨太猛烈了，龙无法起飞。
+      SUCH → 那是 _____ 龙无法起飞。
+    answer: 'such a fierce storm that'
+    explanation: "'So + adj + that' → 'such + a/an + adj + noun + that'. Restructure with 'such'."
+    explanationZh: 'so + 形容词 + that → such + a/an + 形容词 + 名词 + that。用 such 重组。'
+    grammarPoint: 'so...that → such...that'
+    grammarPointZh: 'so...that → such...that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0786
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon destroyed the bridge because it was angry.
+      REASON → The _____ the bridge was that it was angry.
+    sentenceZh: |
+      龙因为生气而摧毁了桥。
+      REASON → 龙摧毁桥的 _____ 它很生气。
+    answer: 'reason the dragon destroyed'
+    explanation: "'Because' → 'the reason...was that'. Cause clause restructured as a noun phrase."
+    explanationZh: 'because → the reason...was that。原因从句重组为名词短语。'
+    grammarPoint: 'because → the reason...was that'
+    grammarPointZh: 'because → the reason...was that'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0787
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Although the dragon was old, it could still breathe fire.
+      DESPITE → _____ old, the dragon could still breathe fire.
+    sentenceZh: |
+      尽管龙老了，它仍然能喷火。
+      DESPITE → _____ 老了，龙仍然能喷火。
+    answer: 'Despite being'
+    explanation: "'Although + subject + was' → 'Despite + -ing'. 'Although' (conjunction) → 'despite' (preposition + gerund)."
+    explanationZh: 'although + 主语 + was → despite + -ing。although（连词）→ despite（介词 + 动名词）。'
+    grammarPoint: 'although → despite + -ing'
+    grammarPointZh: 'although → despite + -ing'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0788
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      Despite the rain, the dragon show went ahead.
+      THOUGH → The dragon show went ahead _____ raining.
+    sentenceZh: |
+      尽管下雨，龙表演还是继续了。
+      THOUGH → 龙表演还是继续了 _____ 下雨。
+    answer: 'even though it was'
+    explanation: "'Despite + noun' → 'even though + clause'. 'Despite' (preposition) → 'even though' (conjunction)."
+    explanationZh: 'despite + 名词 → even though + 从句。despite（介词）→ even though（连词）。'
+    grammarPoint: 'despite → even though'
+    grammarPointZh: 'despite → even though'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0789
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The dragon escaped because the cage door was left open.
+      DUE → The dragon escaped _____ the cage door being left open.
+    sentenceZh: |
+      龙逃跑了，因为笼门没关。
+      DUE → 龙逃跑 _____ 笼门没关。
+    answer: 'due to'
+    explanation: "'Because + clause' → 'due to + noun/gerund'. 'Because' (conjunction) → 'due to' (preposition)."
+    explanationZh: 'because + 从句 → due to + 名词/动名词。because（连词）→ due to（介词）。'
+    grammarPoint: 'because → due to'
+    grammarPointZh: 'because → due to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0790
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      It was Elara who found the secret dragon cave.
+      FOUND → The person _____ the secret dragon cave was Elara.
+    sentenceZh: |
+      是 Elara 发现了秘密龙洞。
+      FOUND → 发现秘密龙洞的 _____ Elara。
+    answer: 'who found'
+    explanation: "Cleft sentence 'It was X who did Y' → 'The person who did Y was X'. Both are emphasis structures."
+    explanationZh: '强调句 It was X who did Y → The person who did Y was X。两者都是强调结构。'
+    grammarPoint: 'cleft sentence transformation'
+    grammarPointZh: '强调句转换'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0791
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-3]
+    context: dragon-academy
+    sentence: |
+      The potion worked and the dragon recovered.
+      THANKS → The dragon recovered _____ the potion.
+    sentenceZh: |
+      药水起效了，龙恢复了。
+      THANKS → 龙恢复了 _____ 药水。
+    answer: 'thanks to'
+    explanation: "'X worked and Y happened' → 'Y happened thanks to X'. 'Thanks to' expresses positive cause."
+    explanationZh: 'X 起效了，Y 发生了 → Y 发生了，多亏了 X。thanks to 表达积极的原因。'
+    grammarPoint: 'cause → thanks to'
+    grammarPointZh: '因果→ thanks to'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: U0792
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      The knight was so brave that he faced the dragon alone.
+      ENOUGH → The knight was _____ the dragon alone.
+    sentenceZh: |
+      骑士非常勇敢，独自面对了龙。
+      ENOUGH → 骑士 _____ 独自面对龙。
+    answer: 'brave enough to face'
+    explanation: "'So + adj + that + positive result' → 'adj + enough + to-infinitive'."
+    explanationZh: 'so + 形容词 + that + 肯定结果 → 形容词 + enough + to 不定式。'
+    grammarPoint: 'so...that (positive) → enough to'
+    grammarPointZh: 'so...that（肯定） → enough to'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0793
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      I'm sure the wizard cast the wrong spell.
+      MUST → The wizard _____ the wrong spell.
+    sentenceZh: |
+      我确定巫师念错了咒语。
+      MUST → 巫师 _____ 错误的咒语。
+    answer: 'must have cast'
+    explanation: "'I'm sure X did Y' → 'X must have done Y'. Modal deduction about the past."
+    explanationZh: '我确定 X 做了 Y → X must have done Y。对过去的情态推测。'
+    grammarPoint: "I'm sure (past) → must have"
+    grammarPointZh: "I'm sure（过去）→ must have"
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0794
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      Perhaps the dragon is hiding in the mountain.
+      MIGHT → The dragon _____ in the mountain.
+    sentenceZh: |
+      也许龙正躲在山里。
+      MIGHT → 龙 _____ 山里。
+    answer: 'might be hiding'
+    explanation: "'Perhaps X is doing Y' → 'X might be doing Y'. Uncertain present deduction with continuous aspect."
+    explanationZh: '也许 X 正在做 Y → X might be doing Y。不确定的现在推测，进行时态。'
+    grammarPoint: 'perhaps → might be doing'
+    grammarPointZh: 'perhaps → might be doing'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0795
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      It wasn't necessary for them to bring their own dragons.
+      HAVE → They _____ their own dragons.
+    sentenceZh: |
+      他们没有必要带自己的龙。
+      HAVE → 他们 _____ 自己的龙。
+    answer: "didn't have to bring"
+    explanation: "'It wasn't necessary to do X' → 'didn't have to do X'. Both mean there was no obligation."
+    explanationZh: '没有必要做 X → didn''t have to do X。两者都表示没有义务。'
+    grammarPoint: 'not necessary → didn''t have to'
+    grammarPointZh: 'not necessary → didn''t have to'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0796
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      I advise you to take the dragon riding test before summer.
+      WERE → If _____, I would take the dragon riding test before summer.
+    sentenceZh: |
+      我建议你在夏天前参加龙骑术考试。
+      WERE → 如果 _____ ，我会在夏天前参加龙骑术考试。
+    answer: 'I were you'
+    explanation: "'I advise you to do X' → 'If I were you, I would do X'. Second conditional for giving advice."
+    explanationZh: '我建议你做 X → If I were you, I would do X。第二条件句给建议。'
+    grammarPoint: 'advise → if I were you'
+    grammarPointZh: 'advise → if I were you'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0797
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      The dragon keeper locked the gate so that no dragons could escape.
+      PREVENT → The dragon keeper locked the gate _____ escaping.
+    sentenceZh: |
+      龙管理员锁了门以防龙逃跑。
+      PREVENT → 龙管理员锁了门 _____ 逃跑。
+    answer: 'to prevent the dragons from'
+    explanation: "'So that X couldn't do Y' → 'to prevent X from doing Y'. Purpose clause → prevent + from + -ing."
+    explanationZh: 'so that X couldn''t do Y → to prevent X from doing Y。目的从句 → prevent + from + -ing。'
+    grammarPoint: 'so that negative → prevent from -ing'
+    grammarPointZh: 'so that 否定→ prevent from -ing'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0798
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      We couldn't fly because of the thick fog.
+      PREVENTED → The thick fog _____ flying.
+    sentenceZh: |
+      因为浓雾，我们无法飞行。
+      PREVENTED → 浓雾 _____ 飞行。
+    answer: 'prevented us from'
+    explanation: "'Couldn't do X because of Y' → 'Y prevented us from doing X'. 'Prevent + object + from + -ing'."
+    explanationZh: '因为 Y 不能做 X → Y prevented us from doing X。prevent + 宾语 + from + -ing。'
+    grammarPoint: 'because of → prevent from'
+    grammarPointZh: 'because of → prevent from'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0799
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      It is possible that the dragon went north.
+      MAY → The dragon _____ north.
+    sentenceZh: |
+      龙可能去了北方。
+      MAY → 龙 _____ 北方。
+    answer: 'may have gone'
+    explanation: "'It is possible that X did Y' → 'X may have done Y'. Modal deduction about the past."
+    explanationZh: 'X 可能做了 Y → X may have done Y。对过去的情态推测。'
+    grammarPoint: 'it is possible (past) → may have'
+    grammarPointZh: 'it is possible（过去）→ may have'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: U0800
+    type: key-word-transformation
+    tags: [mixed-transform, Q04, difficulty-4]
+    context: dragon-academy
+    sentence: |
+      Kai didn't study, and that's why he failed the Dragon History exam.
+      WOULD → If Kai _____ the Dragon History exam.
+    sentenceZh: |
+      Kai 没有学习，所以他龙类历史考试不及格。
+      WOULD → 如果 Kai _____ 龙类历史考试。
+    answer: 'had studied, he would have passed'
+    explanation: "Convert factual cause/effect to third conditional: 'didn't study → failed' becomes 'If had studied → would have passed'."
+    explanationZh: '把事实因果转换为第三条件句：没学习→不及格 变为 如果学了→就通过了。'
+    grammarPoint: 'factual cause/effect → third conditional'
+    grammarPointZh: '事实因果→第三条件句'
+    relatedQuest: Q04
+    difficulty: 4

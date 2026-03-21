@@ -1,0 +1,547 @@
+category: 'Story Writing — Fantasy & Transformation'
+categoryZh: '故事写作 — 奇幻与变身'
+tasks:
+  - id: W022
+    type: story
+    title: 'The Dragon Egg in the Garden'
+    titleZh: '花园里的龙蛋'
+    prompt: 'Your story must begin with this sentence: ''When I dug up the flower bed that Saturday morning, my spade hit something hard and warm beneath the soil.'''
+    promptZh: '你的故事必须以这句话开头：''周六早上我在花坛里挖土时，铲子碰到了土壤下面又硬又温暖的东西。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q04
+    scaffold:
+      storyMap:
+        opening: 'Describe what you find — an unusual egg. What does it look like? How does it feel?'
+        openingZh: '描述你发现了什么——一个不寻常的蛋。它长什么样？摸起来怎么样？'
+        development: 'You take it home and try to figure out what it is. What happens when you research it or show it to someone?'
+        developmentZh: '你把它带回家试图弄清楚它是什么。你查资料或给别人看时发生了什么？'
+        climax: 'The egg starts to hatch! What comes out? How do you react?'
+        climaxZh: '蛋开始孵化了！出来了什么？你作何反应？'
+        resolution: 'What do you decide to do with the creature? How does this change your life?'
+        resolutionZh: '你决定怎么处理这个生物？这如何改变了你的生活？'
+      mustUseWords:
+        - 'transform'
+        - 'shimmer'
+        - 'enchanted'
+        - 'creature'
+      mustUseStructure:
+        - 'At least one past continuous sentence (was/were + -ing)'
+        - 'At least one sentence using a simile (as...as or like...)'
+      mustUseStructureZh:
+        - '至少一个过去进行时句子（was/were + -ing）'
+        - '至少一个使用比喻的句子（as...as 或 like...）'
+      rubric:
+        content: 'The story has a clear discovery, a sense of wonder, and a satisfying ending that shows how the character changes.'
+        contentZh: '故事有清晰的发现过程、惊奇感和令人满意的结局，展示了角色如何发生变化。'
+        language: 'Uses descriptive language to create atmosphere and correctly handles past tenses throughout the narrative.'
+        languageZh: '使用描写性语言营造氛围，在整个叙事中正确使用过去时态。'
+    selfCheckList:
+      - 'Did I describe the egg with vivid sensory details?'
+      - 'Did I build suspense before the egg hatches?'
+      - 'Did I show my character''s emotions throughout the story?'
+      - 'Did I use at least one simile?'
+    selfCheckListZh:
+      - '我是否用生动的感官细节描述了蛋？'
+      - '我是否在蛋孵化前营造了悬念？'
+      - '我是否在整个故事中展示了角色的情感？'
+      - '我是否至少使用了一个比喻？'
+    modelAnswer: |
+      When I dug up the flower bed that Saturday morning, my spade hit something hard and warm beneath the soil. I brushed away the dirt and found an egg the size of a melon. It was shimmering purple with golden veins running across its surface, like a precious stone.
+
+      I was carrying it carefully into the kitchen when it started to vibrate in my hands. Mum gasped. "That looks enchanted," she whispered. We searched online for unusual eggs, but nothing matched. By evening, the egg was glowing so brightly it lit up the whole room.
+
+      At midnight, a crack appeared. Then another. A tiny creature pushed its way out — it had emerald scales, silver wings, and eyes as bright as stars. It looked at me, yawned, and blew a small puff of warm air that smelled of cinnamon.
+
+      "It is a dragon," Mum said quietly. The little dragon climbed onto my shoulder and made a soft purring sound. In that moment, my ordinary Saturday had begun to transform into the most extraordinary day of my life. I named her Ember, and I knew nothing would ever be the same.
+    modelAnswerZh: |
+      周六早上我在花坛里挖土时，铲子碰到了土壤下面又硬又温暖的东西。我刷掉泥土，发现了一个甜瓜大小的蛋。它闪着紫色的光，表面布满金色的纹路，像一块珍贵的宝石。
+
+      我小心翼翼地把它抱进厨房时，它在我手中开始震动。妈妈倒吸一口气。"它看起来被施了魔法，"她轻声说。我们在网上搜索不寻常的蛋，但什么都没找到。到了晚上，蛋发出的光芒照亮了整个房间。
+
+      午夜时分，出现了一条裂缝，然后又一条。一个小生物从里面挤了出来——它有翡翠色的鳞片、银色的翅膀，眼睛像星星一样明亮。它看着我，打了个哈欠，吹出一小团温暖的气息，闻起来有肉桂的味道。
+
+      "它是一条龙，"妈妈轻声说。小龙爬上了我的肩膀，发出轻柔的呼噜声。那一刻，我普通的周六开始转变为我生命中最非凡的一天。我给她取名叫Ember，我知道一切都不会再和从前一样了。
+
+  - id: W023
+    type: story
+    title: 'The Transformation Contest'
+    titleZh: '变身大赛'
+    prompt: 'Your story must begin with this sentence: ''The rules of the contest were simple: transform into any animal and hold the shape for five minutes without changing back.'''
+    promptZh: '你的故事必须以这句话开头：''比赛规则很简单：变身为任何动物，并在五分钟内保持形态不变回来。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q04
+    scaffold:
+      storyMap:
+        opening: 'Set the scene. Who is competing? What animal do you choose?'
+        openingZh: '设定场景。谁在参加比赛？你选择了什么动物？'
+        development: 'Describe the transformation and how it feels. What do you experience as this animal?'
+        developmentZh: '描述变身的过程和感受。作为这种动物你经历了什么？'
+        climax: 'Something unexpected happens during the five minutes. A problem or a surprising event.'
+        climaxZh: '五分钟内发生了意想不到的事情。一个问题或一个惊人的事件。'
+        resolution: 'How is the contest resolved? Who wins, and what have you learned?'
+        resolutionZh: '比赛如何结束？谁赢了？你学到了什么？'
+      mustUseWords:
+        - 'concentrate'
+        - 'extraordinary'
+        - 'gradually'
+        - 'reveal'
+      mustUseStructure:
+        - 'At least one sentence with an -ing clause (e.g., "Closing my eyes, I...")'
+        - 'At least one exclamatory sentence to show surprise or excitement'
+      mustUseStructureZh:
+        - '至少一个含有 -ing 从句的句子（如 "Closing my eyes, I..."）'
+        - '至少一个感叹句来表达惊讶或兴奋'
+      rubric:
+        content: 'The story has an imaginative transformation scene, a genuine challenge, and a meaningful ending.'
+        contentZh: '故事有一个富有想象力的变身场景、一个真正的挑战和一个有意义的结局。'
+        language: 'Uses descriptive verbs and adverbs to convey the physical experience of transformation.'
+        languageZh: '使用描写性的动词和副词来传达变身的身体体验。'
+    selfCheckList:
+      - 'Did I describe the physical feeling of transforming?'
+      - 'Did I create tension during the five-minute challenge?'
+      - 'Did I show what the world is like from the animal''s perspective?'
+      - 'Does the ending reveal something meaningful?'
+    selfCheckListZh:
+      - '我是否描述了变身的身体感觉？'
+      - '我是否在五分钟挑战中制造了紧张感？'
+      - '我是否展示了从动物的视角看世界是什么样的？'
+      - '结局是否揭示了一些有意义的东西？'
+    modelAnswer: |
+      The rules of the contest were simple: transform into any animal and hold the shape for five minutes without changing back. Closing my eyes, I chose an eagle. I needed to concentrate with all my strength.
+
+      The change was extraordinary. My arms gradually stretched into wings, my fingers became feathers, and the ground dropped away as my body shrank. Suddenly I could see for miles! The colours were sharper, the air tasted cleaner, and I could hear every whisper in the crowd below.
+
+      Then disaster struck. A real eagle appeared in the sky and flew straight towards me. It thought I was invading its territory! I had to dodge and dive while desperately trying not to lose my shape. My heart was pounding. Every time I felt frightened, my feathers flickered and I nearly changed back.
+
+      With ten seconds left, the real eagle landed beside me, tilted its head, and made a soft cry. It had accepted me. What a relief! The timer rang and I transformed back to human form.
+
+      I did not win the contest — a girl who became a stone statue held perfectly still. But the judges revealed a special prize for me: "Most Authentic Transformation." I learned that being brave does not mean being unafraid — it means carrying on despite your fear.
+    modelAnswerZh: |
+      比赛规则很简单：变身为任何动物，并在五分钟内保持形态不变回来。闭上眼睛，我选择了一只鹰。我需要全力以赴地集中注意力。
+
+      变化是非凡的。我的手臂逐渐伸展成翅膀，手指变成了羽毛，随着身体缩小，地面远去了。突然间我能看到几英里以外的地方！颜色更鲜明，空气更清新，我能听到下面人群中的每一声低语。
+
+      然后灾难降临了。一只真正的鹰出现在天空中，径直朝我飞来。它以为我侵入了它的领地！我不得不闪躲和俯冲，同时拼命地不让自己失去形态。我的心怦怦直跳。每当我感到害怕时，我的羽毛就闪烁不定，几乎要变回去。
+
+      还剩最后十秒时，那只真鹰降落在我身边，歪了歪头，发出一声柔和的叫声。它接受了我。太让人松了一口气了！计时器响了，我变回了人形。
+
+      我没有赢得比赛——一个变成石雕的女孩完美地保持了不动。但评委们为我揭晓了一个特别奖："最真实变身奖"。我学到了勇敢不意味着不害怕——而是尽管害怕还能继续前行。
+
+  - id: W024
+    type: story
+    title: 'The Night the Books Came Alive'
+    titleZh: '书本活过来的那个夜晚'
+    prompt: 'Your story must begin with this sentence: ''I was reading alone in the library when the characters in my book started climbing out of the pages.'''
+    promptZh: '你的故事必须以这句话开头：''我独自在图书馆看书时，书里的角色开始从书页中爬了出来。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q04
+    scaffold:
+      storyMap:
+        opening: 'Describe the moment characters come alive. What book were you reading? Who appears?'
+        openingZh: '描述角色活过来的时刻。你在读什么书？谁出现了？'
+        development: 'The characters interact with you and the library. What do they do? What goes wrong?'
+        developmentZh: '角色与你和图书馆互动。它们做了什么？出了什么问题？'
+        climax: 'A conflict or danger arises that you must solve with the characters'' help.'
+        climaxZh: '出现了你必须在角色帮助下解决的冲突或危险。'
+        resolution: 'The characters return to their book. What do you take away from the experience?'
+        resolutionZh: '角色回到书中。你从这次经历中收获了什么？'
+      mustUseWords:
+        - 'enchanted'
+        - 'leap'
+        - 'whisper'
+        - 'vanish'
+      mustUseStructure:
+        - 'At least one conditional sentence (If + past simple, would + verb)'
+        - 'At least one piece of direct speech with correct punctuation'
+      mustUseStructureZh:
+        - '至少一个虚拟条件句（If + 一般过去时, would + 动词）'
+        - '至少一句标点正确的直接引语'
+      rubric:
+        content: 'The story creatively brings book characters to life with a genuine problem to solve and a satisfying return to normality.'
+        contentZh: '故事创造性地让书中角色栩栩如生，有一个真正需要解决的问题和令人满意的回归正常。'
+        language: 'Uses conditional structures naturally and includes effective dialogue to develop the story.'
+        languageZh: '自然地使用条件句结构，并包含有效的对话来推动故事发展。'
+    selfCheckList:
+      - 'Did I describe the characters clearly so the reader can picture them?'
+      - 'Did I include a problem that needs solving?'
+      - 'Did I use dialogue to bring the characters to life?'
+      - 'Does my ending feel complete and satisfying?'
+    selfCheckListZh:
+      - '我是否清楚地描述了角色，让读者能想象出来？'
+      - '我是否包含了一个需要解决的问题？'
+      - '我是否用对话让角色栩栩如生？'
+      - '我的结局是否完整且令人满意？'
+    modelAnswer: |
+      I was reading alone in the library when the characters in my book started climbing out of the pages. First came a tiny knight, no bigger than my thumb, who leapt onto the desk and drew a shining sword. Then a dragon the size of a cat unfolded its wings and yawned.
+
+      "Excuse me," the knight whispered, "but our story has a problem. The enchanted door on page forty-seven has disappeared, and we cannot get home."
+
+      If I could find the missing page, they would be able to return. I searched frantically through the book while the dragon explored the bookshelves, accidentally setting fire to a dictionary. The knight chased it, shouting, "Stop that immediately!"
+
+      I finally noticed that page forty-seven was stuck to page forty-eight. I carefully peeled them apart, and there was the enchanted door, shimmering gold.
+
+      "Thank you," said the knight, bowing deeply. "You have saved our entire kingdom." One by one, the characters climbed back into the book and vanished. The library was silent again.
+
+      I closed the book and smiled. From that day on, every time I read a story, I felt closer to the characters inside — as though they were real friends just waiting for the pages to open.
+    modelAnswerZh: |
+      我独自在图书馆看书时，书里的角色开始从书页中爬了出来。先出来的是一个小骑士，只有我拇指那么大，他跳上桌子拔出一把闪亮的剑。然后一条猫咪大小的龙展开翅膀打了个哈欠。
+
+      "打扰一下，"骑士低声说，"我们的故事出了问题。第四十七页的魔法门消失了，我们回不了家了。"
+
+      如果我能找到缺失的那一页，他们就能回去了。我疯狂地翻书查找，而龙在书架上探索，不小心烧着了一本词典。骑士追着它喊："马上停下来！"
+
+      我终于发现第四十七页粘在了第四十八页上。我小心翼翼地把它们分开，魔法门就在那里，闪着金色的光芒。
+
+      "谢谢你，"骑士深深鞠了一躬说。"你拯救了我们整个王国。"角色们一个接一个地爬回书里，消失了。图书馆又恢复了安静。
+
+      我合上书，微笑了。从那天起，每次我读一个故事，都觉得和里面的角色更亲近了——仿佛他们是真正的朋友，只是在等着书页被翻开。
+
+  - id: W025
+    type: story
+    title: 'The Dragon''s Secret Garden'
+    titleZh: '龙的秘密花园'
+    prompt: 'Your story must begin with this sentence: ''Nobody believed me when I said there was a garden behind the waterfall where a dragon grew flowers that could grant wishes.'''
+    promptZh: '你的故事必须以这句话开头：''没有人相信我说瀑布后面有一个花园，那里有一条龙种着能许愿的花。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q04
+    sourceInspiration: 'Inspired by the enchanted gardens in Frances Hodgson Burnett''s The Secret Garden'
+    scaffold:
+      storyMap:
+        opening: 'Set up the situation — you know the secret but nobody believes you. How did you discover it?'
+        openingZh: '设定情境——你知道这个秘密但没人相信你。你是怎么发现的？'
+        development: 'You bring a friend to prove it. What do they see? How does the dragon react to visitors?'
+        developmentZh: '你带了一个朋友来证明。他们看到了什么？龙对访客有什么反应？'
+        climax: 'Your friend gets to make a wish. What do they wish for? Does it come true in an unexpected way?'
+        climaxZh: '你的朋友得到了一个许愿的机会。他们许了什么愿？愿望是否以意想不到的方式实现了？'
+        resolution: 'What lesson do both of you learn about wishes, belief, or friendship?'
+        resolutionZh: '你们俩从中学到了关于愿望、信仰或友谊的什么道理？'
+      mustUseWords:
+        - 'blossom'
+        - 'magnificent'
+        - 'reveal'
+        - 'transformation'
+      mustUseStructure:
+        - 'At least one past perfect sentence (had + past participle)'
+        - 'At least one sentence with an adverb of manner (carefully, gently, eagerly, etc.)'
+      mustUseStructureZh:
+        - '至少一个过去完成时句子（had + 过去分词）'
+        - '至少一个含方式副词的句子（carefully, gently, eagerly等）'
+      rubric:
+        content: 'The story creates a vivid magical setting and explores the theme of wishes with depth — showing that the best outcomes are often unexpected.'
+        contentZh: '故事创造了一个生动的魔法场景，深入探索了关于愿望的主题——展示最好的结果往往是意想不到的。'
+        language: 'Uses rich sensory description for the garden setting and handles past perfect tense accurately.'
+        languageZh: '用丰富的感官描写呈现花园场景，准确使用过去完成时。'
+    selfCheckList:
+      - 'Did I describe the secret garden with sensory details (sight, smell, sound)?'
+      - 'Did I show the dragon as a character with personality?'
+      - 'Did the wish come true in a surprising way?'
+      - 'Does the story explore a deeper theme about wishes or belief?'
+    selfCheckListZh:
+      - '我是否用感官细节描述了秘密花园（视觉、嗅觉、听觉）？'
+      - '我是否把龙塑造为一个有个性的角色？'
+      - '愿望是否以令人惊讶的方式实现了？'
+      - '故事是否探索了关于愿望或信仰的深层主题？'
+    modelAnswer: |
+      Nobody believed me when I said there was a garden behind the waterfall where a dragon grew flowers that could grant wishes. My friend Leo laughed the loudest. "Prove it," he said. So one Saturday, I led him along the hidden path.
+
+      We had walked for thirty minutes before we reached the waterfall. I gently pulled aside the curtain of water, revealing a magnificent garden filled with flowers I had never seen in any book. Every blossom glowed a different colour, and the air smelled of honey and rain.
+
+      In the centre sat an enormous green dragon, carefully tending a row of silver roses. "Welcome back," she rumbled. Leo''s mouth dropped open.
+
+      "You may each pick one flower," the dragon said. Leo eagerly picked the brightest one — a golden rose — and wished to be the smartest student in school.
+
+      The transformation was not what he expected. Instead of instantly knowing everything, Leo found himself wanting to read, study, and ask questions. "The flower does not give you knowledge," the dragon explained. "It gives you the desire to learn. That is much more valuable."
+
+      Walking home, Leo was quiet. Then he smiled. "I think I understand now. The best wish is one that changes you from the inside."
+    modelAnswerZh: |
+      没有人相信我说瀑布后面有一个花园，那里有一条龙种着能许愿的花。我的朋友Leo笑得最大声。"证明给我看，"他说。于是一个周六，我带他沿着隐秘小径走去。
+
+      我们走了三十分钟才到达瀑布。我轻轻拉开水帘，露出一个壮观的花园，里面长满了我在任何书中都没见过的花。每朵花都发出不同颜色的光，空气闻起来有蜂蜜和雨水的味道。
+
+      花园中央坐着一条巨大的绿龙，正仔细地照料一排银色玫瑰。"欢迎回来，"她低沉地说。Leo目瞪口呆。
+
+      "你们每人可以摘一朵花，"龙说。Leo迫不及待地摘了最亮的那朵——一朵金色的玫瑰——许愿成为学校里最聪明的学生。
+
+      变化并不是他预期的那样。Leo没有立刻变得无所不知，而是发现自己开始渴望阅读、学习和提问。"花不会给你知识，"龙解释说。"它给你学习的渴望。那要有价值得多。"
+
+      回家路上，Leo很安静。然后他笑了。"我想我现在明白了。最好的愿望是那种从内心深处改变你的愿望。"
+
+  - id: W026
+    type: story
+    title: 'My Week as a Cat'
+    titleZh: '我当猫的一周'
+    prompt: 'Your story must begin with this sentence: ''The spell was only supposed to last one hour, but when I woke up the next morning, I was still a cat.'''
+    promptZh: '你的故事必须以这句话开头：''咒语本来只应该持续一小时，但第二天早上醒来时，我还是一只猫。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q04
+    sourceInspiration: 'Inspired by the transformation themes in Diana Wynne Jones''s Howl''s Moving Castle'
+    scaffold:
+      storyMap:
+        opening: 'Describe waking up as a cat. What is different? What are the first challenges?'
+        openingZh: '描述作为一只猫醒来的感觉。有什么不同？第一个挑战是什么？'
+        development: 'Describe a day of cat life — what you discover about the world from a cat''s perspective.'
+        developmentZh: '描述猫的一天生活——你从猫的视角发现了世界的什么。'
+        climax: 'You realise you need to find the reversal spell, but you cannot speak or read as a cat.'
+        climaxZh: '你意识到你需要找到解咒，但作为猫你不能说话或阅读。'
+        resolution: 'How do you eventually change back? What do you miss about being a cat?'
+        resolutionZh: '你最终是怎么变回来的？你怀念做猫的什么？'
+      mustUseWords:
+        - 'instinct'
+        - 'perspective'
+        - 'desperate'
+        - 'relief'
+      mustUseStructure:
+        - 'At least two contrast sentences using "but" or "however"'
+        - 'At least one sentence describing a new sensation (sound, smell, sight)'
+      mustUseStructureZh:
+        - '至少两个使用"but"或"however"的对比句'
+        - '至少一个描述新感觉（声音、气味、视觉）的句子'
+      rubric:
+        content: 'The story vividly portrays the cat experience with genuine sensory details and a creative solution to the reversal problem.'
+        contentZh: '故事用真实的感官细节生动地描绘了猫的体验，并创造性地解决了解咒问题。'
+        language: 'Uses contrast effectively to highlight differences between human and cat experience.'
+        languageZh: '有效使用对比来突出人类和猫的体验差异。'
+    selfCheckList:
+      - 'Did I show how the world looks, sounds, and smells differently as a cat?'
+      - 'Did I describe both the fun and the frustrating parts of being a cat?'
+      - 'Did I create a clever way to change back without being able to speak?'
+      - 'Did I use contrast sentences to compare human and cat life?'
+    selfCheckListZh:
+      - '我是否展示了作为猫世界看起来、听起来和闻起来有多不同？'
+      - '我是否描述了做猫的有趣和令人沮丧的部分？'
+      - '我是否想出了一个不用说话就能变回来的巧妙方法？'
+      - '我是否用对比句来比较人类和猫的生活？'
+    modelAnswer: |
+      The spell was only supposed to last one hour, but when I woke up the next morning, I was still a cat. My perspective of the world had completely changed — the bed felt enormous, and every sound was ten times louder than before.
+
+      My first instinct was to find food. However, I could not open the fridge with my paws. I jumped onto the kitchen counter — something I would never dare to do as a human — but I knocked a glass onto the floor. My hearing was incredible: I could hear mice behind the walls and birds singing three gardens away.
+
+      By afternoon, I was desperate. I needed to find my spell book, but the words blurred when I looked at them. Cat eyes are brilliant for seeing movement, but terrible for reading. I tried meowing at my sister, but she just laughed and gave me milk.
+
+      Then I had an idea. I dragged the spell book to the floor, stepped on the right page, and knocked ink onto my paw. Carefully, I pressed my paw onto paper, leaving prints on the reversal spell. My sister noticed the prints and read the words aloud.
+
+      The relief of becoming human again was wonderful. But I still sometimes miss the warmth of a sunbeam and the joy of chasing shadows.
+    modelAnswerZh: |
+      咒语本来只应该持续一小时，但第二天早上醒来时，我还是一只猫。我对世界的视角完全改变了——床感觉巨大无比，每一个声音都比以前响十倍。
+
+      我的第一个本能是找食物。然而，我的爪子打不开冰箱。我跳上厨房台面——作为人类我绝不敢这么做——但我把一个玻璃杯撞到了地上。我的听觉令人难以置信：我能听到墙后面的老鼠和三个花园外鸟儿的歌唱。
+
+      到了下午，我绝望了。我需要找到我的咒语书，但当我看文字时它们变得模糊。猫的眼睛在捕捉动态方面出色，但在阅读方面糟糕透了。我试着对姐姐喵喵叫，但她只是笑着给了我牛奶。
+
+      然后我有了一个主意。我把咒语书拖到地上，踩在正确的页面上，把墨水弄到爪子上。小心翼翼地，我把爪子按在纸上，在解咒文字上留下了爪印。姐姐注意到了爪印，大声读出了文字。
+
+      变回人的解脱感太美妙了。但我有时还是会怀念阳光的温暖和追逐影子的快乐。
+
+  - id: W027
+    type: story
+    title: 'The Dragon Who Could Not Fly'
+    titleZh: '不会飞的龙'
+    prompt: 'Your story must begin with this sentence: ''Every dragon at the Academy could fly except one — a small blue dragon called Ripple, whose wings had never grown big enough to lift her off the ground.'''
+    promptZh: '你的故事必须以这句话开头：''学院里每条龙都会飞，除了一条——一条叫Ripple的蓝色小龙，她的翅膀一直没有长到能让她飞离地面的大小。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q04
+    sourceInspiration: 'Inspired by themes of overcoming limitations in Cressida Cowell''s How to Train Your Dragon'
+    scaffold:
+      storyMap:
+        opening: 'Introduce Ripple and show how she feels about not being able to fly.'
+        openingZh: '介绍Ripple，展示她对不能飞的感受。'
+        development: 'Ripple discovers she has a different, unique ability. What is it?'
+        developmentZh: 'Ripple发现她有一种不同的、独特的能力。是什么？'
+        climax: 'A crisis at the Academy that only Ripple''s unique ability can solve.'
+        climaxZh: '学院里发生了一场只有Ripple独特能力才能解决的危机。'
+        resolution: 'Ripple becomes a hero. What do others learn about being different?'
+        resolutionZh: 'Ripple成为英雄。其他人学到了关于与众不同的什么道理？'
+      mustUseWords:
+        - 'unique'
+        - 'courage'
+        - 'impossible'
+        - 'beneath'
+      mustUseStructure:
+        - 'At least one reported speech sentence'
+        - 'At least one sentence with "although" or "even though"'
+      mustUseStructureZh:
+        - '至少一个间接引语句子'
+        - '至少一个含有"although"或"even though"的句子'
+      rubric:
+        content: 'The story delivers a genuine message about embracing differences without being preachy. The crisis feels real and Ripple''s solution is creative.'
+        contentZh: '故事传达了关于接受差异的真切信息而不说教。危机感觉真实，Ripple的解决方案有创意。'
+        language: 'Uses reported speech and concessive clauses naturally within the narrative.'
+        languageZh: '在叙事中自然地使用间接引语和让步从句。'
+    selfCheckList:
+      - 'Did I make the reader care about Ripple?'
+      - 'Did I show Ripple''s feelings without just saying "she was sad"?'
+      - 'Is Ripple''s unique ability surprising but logical?'
+      - 'Does the ending feel earned, not too easy?'
+    selfCheckListZh:
+      - '我是否让读者关心Ripple？'
+      - '我是否展示了Ripple的感受而不只是说"她很伤心"？'
+      - 'Ripple的独特能力是否令人惊讶但合理？'
+      - '结局是否感觉实至名归，而不是太容易？'
+    modelAnswer: |
+      Every dragon at the Academy could fly except one — a small blue dragon called Ripple, whose wings had never grown big enough to lift her off the ground. Although the other dragons were kind, Ripple often sat alone, watching them soar above the clouds.
+
+      One day, Ripple discovered something unique about herself. Beneath the training lake, she could swim faster than any creature alive. She could also breathe underwater and communicate with fish. Her teacher said that Ripple might be the first water dragon born in a hundred years.
+
+      Even though Ripple felt better about her talent, she still wished she could fly. Then the impossible happened. An earthquake cracked open the ground beneath the Academy, and water from an underground river started flooding the lower classrooms. The flying dragons could not help because the corridors were already full of water.
+
+      Ripple dived in without hesitation. She swam through flooded hallways, found twelve students trapped in the library, and guided them to safety through an underwater tunnel. It took courage to swim in the dark with frightened students on her back.
+
+      That evening, the headmaster told the whole school that Ripple had saved twelve lives. "Being different," he said, "is not a weakness. It is a strength that is waiting for the right moment."
+    modelAnswerZh: |
+      学院里每条龙都会飞，除了一条——一条叫Ripple的蓝色小龙，她的翅膀一直没有长到能让她飞离地面的大小。虽然其他龙都很友好，但Ripple经常独自坐着，看着它们翱翔在云层之上。
+
+      有一天，Ripple发现了自己独特的地方。在训练湖底下，她能比任何活的生物都游得快。她还能在水下呼吸并与鱼交流。她的老师说Ripple可能是一百年来第一条出生的水龙。
+
+      尽管Ripple对自己的天赋感觉好了一些，她仍然希望自己能飞。然后不可能的事发生了。一场地震裂开了学院下方的地面，地下河的水开始淹没低层教室。会飞的龙帮不上忙，因为走廊已经满是水。
+
+      Ripple毫不犹豫地潜了进去。她穿过被淹没的走廊，找到了被困在图书馆的十二名学生，并引导他们通过一条水下隧道到达安全的地方。在黑暗中背着惊恐的学生游泳需要很大的勇气。
+
+      那天晚上，校长告诉全校Ripple救了十二条命。"与众不同，"他说，"不是弱点，而是一种在等待合适时机的力量。"
+
+  - id: W028
+    type: story
+    title: 'The Midnight Potion'
+    titleZh: '午夜魔药'
+    prompt: 'Your story must begin with this sentence: ''The old recipe book clearly warned: "This potion must be made before midnight, or the results will be unpredictable."'''
+    promptZh: '你的故事必须以这句话开头：''旧配方书上明确警告："这个魔药必须在午夜前制作完成，否则结果将不可预测。"'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q04
+    sourceInspiration: 'Inspired by potion-making mishaps in J.K. Rowling''s Harry Potter series'
+    scaffold:
+      storyMap:
+        opening: 'Why are you making this potion? What is it supposed to do? Set up the time pressure.'
+        openingZh: '你为什么要做这个魔药？它应该做什么？设定时间压力。'
+        development: 'Describe the potion-making process. What ingredients? What goes wrong with the timing?'
+        developmentZh: '描述制作魔药的过程。什么原料？时间上出了什么问题？'
+        climax: 'The clock strikes midnight while you are still working. What "unpredictable" thing happens?'
+        climaxZh: '你还在工作时钟敲响了午夜。发生了什么"不可预测"的事？'
+        resolution: 'How do you fix the situation? What do you learn about following instructions?'
+        resolutionZh: '你怎么解决的？你学到了关于遵循说明的什么道理？'
+      mustUseWords:
+        - 'ingredient'
+        - 'disaster'
+        - 'swirl'
+        - 'remedy'
+      mustUseStructure:
+        - 'At least one sentence with "by the time" to show time pressure'
+        - 'At least one rhetorical question to show the character''s inner thoughts'
+      mustUseStructureZh:
+        - '至少一个含有"by the time"的句子来展示时间压力'
+        - '至少一个反问句来展示角色的内心想法'
+      rubric:
+        content: 'The story builds genuine time-pressure tension with a creative "unpredictable" result and a clear moral about rushing.'
+        contentZh: '故事营造了真正的时间压力紧张感，有创造性的"不可预测"结果和关于匆忙的明确教训。'
+        language: 'Uses time expressions effectively and includes inner monologue through rhetorical questions.'
+        languageZh: '有效使用时间表达，通过反问句展示内心独白。'
+    selfCheckList:
+      - 'Did I create a sense of urgency and time pressure?'
+      - 'Is the "unpredictable" result creative and surprising?'
+      - 'Did I use a rhetorical question to show inner thoughts?'
+      - 'Does the ending include a lesson about patience or following rules?'
+    selfCheckListZh:
+      - '我是否营造了紧迫感和时间压力？'
+      - '"不可预测"的结果是否有创意且令人惊讶？'
+      - '我是否使用了反问句来展示内心想法？'
+      - '结局是否包含关于耐心或遵守规则的教训？'
+    modelAnswer: |
+      The old recipe book clearly warned: "This potion must be made before midnight, or the results will be unpredictable." I had started at nine o'clock — plenty of time for a simple growing potion to help my wilting roses.
+
+      The first three ingredients were easy: moonflower petals, crushed starstone, and morning dew. But the fourth ingredient — a feather from a sleeping owl — took me an hour to find. By the time I returned, it was quarter to twelve.
+
+      I rushed. I threw the ingredients together and watched the liquid swirl from green to purple. What could go wrong if I was just a few minutes late? But the clock struck midnight before I added the final drop of dew.
+
+      The potion exploded in a shower of golden sparks. When the smoke cleared, everything in my garden had transformed. The roses were the size of trees. The grass reached my shoulders. Even the garden gnome had grown to two metres tall and was giving me a very cross look.
+
+      "Oh no," I whispered. "This is a disaster."
+
+      It took three days and a remedy from the village witch to shrink everything back to normal. The gnome never quite forgave me. From that night on, I always start my potions early. Some rules exist for a very good reason.
+    modelAnswerZh: |
+      旧配方书上明确警告："这个魔药必须在午夜前制作完成，否则结果将不可预测。"我九点就开始了——做一个简单的催生药水来拯救我枯萎的玫瑰时间绰绰有余。
+
+      前三种原料很简单：月花花瓣、碎星石和晨露。但第四种原料——一根睡着的猫头鹰的羽毛——花了我一个小时才找到。等我回来时，已经十一点四十五分了。
+
+      我手忙脚乱。我把原料混在一起，看着液体从绿色旋转变为紫色。如果只迟了几分钟能有什么问题呢？但在我加入最后一滴露水之前，时钟已经敲响了午夜。
+
+      魔药在一阵金色火花中爆炸了。烟雾散去后，我花园里的一切都变了。玫瑰长到了树那么大。草高到我的肩膀。连花园里的小矮人雕像都长到了两米高，正用非常生气的表情看着我。
+
+      "糟了，"我低声说。"这是一场灾难。"
+
+      用了三天时间和村里女巫的一剂解药才把一切缩回正常大小。小矮人始终没有完全原谅我。从那天晚上起，我总是早早开始做魔药。有些规则的存在是有很好的理由的。
+
+  - id: W029
+    type: story
+    title: 'The Door Between Worlds'
+    titleZh: '两个世界之间的门'
+    prompt: 'Your story must begin with this sentence: ''Behind the old wardrobe in my grandmother''s attic, I found a door that should not have been there — and when I opened it, I stepped into a world made entirely of stories.'''
+    promptZh: '你的故事必须以这句话开头：''在祖母阁楼旧衣柜的后面，我发现了一扇不该存在的门——当我打开它时，我踏入了一个完全由故事构成的世界。'''
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q04
+    sourceInspiration: 'Inspired by the wardrobe in C.S. Lewis''s The Chronicles of Narnia and the infinite library in Jorge Luis Borges''s work'
+    scaffold:
+      storyMap:
+        opening: 'Describe the world of stories. What does it look like? Sound like? Feel like?'
+        openingZh: '描述这个故事世界。它看起来、听起来、感觉起来像什么？'
+        development: 'You meet a character who explains the rules of this world and asks for your help.'
+        developmentZh: '你遇到了一个解释这个世界规则并请求你帮忙的角色。'
+        climax: 'A threat to the story world that you must help resolve — perhaps stories are being erased or mixed up.'
+        climaxZh: '故事世界面临的威胁需要你帮助解决——也许故事正在被擦除或混淆。'
+        resolution: 'You return home changed. The door may or may not still be there. What have you gained?'
+        resolutionZh: '你改变了之后回到家。门可能还在也可能不在了。你收获了什么？'
+      mustUseWords:
+        - 'imagination'
+        - 'boundary'
+        - 'fade'
+        - 'magnificent'
+      mustUseStructure:
+        - 'At least one complex sentence with a subordinate clause of reason (because/since/as)'
+        - 'At least one sentence using the third conditional (If + past perfect, would have + past participle)'
+      mustUseStructureZh:
+        - '至少一个含原因状语从句的复合句（because/since/as）'
+        - '至少一个第三条件句（If + 过去完成时, would have + 过去分词）'
+      rubric:
+        content: 'The story creates an original and coherent fantasy world with internal rules, a genuine threat, and a resolution that connects the story world to real life.'
+        contentZh: '故事创造了一个原创且连贯的奇幻世界，有内部规则、真正的威胁和一个将故事世界与现实生活联系起来的结局。'
+        language: 'Demonstrates advanced grammar (third conditional, complex sentences) integrated naturally into the narrative.'
+        languageZh: '展示了高级语法（第三条件句、复合句）自然融入叙事。'
+    selfCheckList:
+      - 'Did I create a unique and vivid story world?'
+      - 'Did I establish clear rules for how this world works?'
+      - 'Is the threat believable within the world I created?'
+      - 'Does my ending connect the fantasy world to something meaningful in real life?'
+    selfCheckListZh:
+      - '我是否创造了一个独特生动的故事世界？'
+      - '我是否建立了这个世界运作的清晰规则？'
+      - '威胁在我创造的世界中是否可信？'
+      - '我的结局是否将奇幻世界与现实生活中有意义的东西联系起来？'
+    modelAnswer: |
+      Behind the old wardrobe in my grandmother's attic, I found a door that should not have been there — and when I opened it, I stepped into a world made entirely of stories. The sky was filled with floating sentences, and the ground was paved with book pages.
+
+      A magnificent fox wearing spectacles approached me. "Welcome, Reader," he said. "I am the Librarian. Our world is in danger because someone has been erasing stories. Since you found the door, only your imagination can save us."
+
+      He pointed to the horizon, where entire landscapes were beginning to fade to white. "If those stories had not been written," he explained, "the ideas inside them would have been lost forever."
+
+      I asked what I could do. The Librarian handed me a golden pen. "Write," he said. "Fill the blank spaces with new stories before the boundary between our worlds collapses."
+
+      I wrote as fast as I could — stories about dragons, enchanted gardens, and brave children. As each sentence appeared, colour flooded back into the fading world.
+
+      When I finally returned through the door, the pen was still in my hand. The wardrobe looked ordinary again, but I was not. I had learned that stories are not just words on a page — they are living things that keep the world colourful and meaningful.
+    modelAnswerZh: |
+      在祖母阁楼旧衣柜的后面，我发现了一扇不该存在的门——当我打开它时，我踏入了一个完全由故事构成的世界。天空中漂浮着句子，地面铺满了书页。
+
+      一只戴着眼镜的壮观狐狸走近我。"欢迎，读者，"他说。"我是图书管理员。我们的世界正处于危险之中，因为有人在擦除故事。既然你找到了这扇门，只有你的想象力才能拯救我们。"
+
+      他指向地平线，那里整片景观正在褪成白色。"如果那些故事没有被写出来，"他解释说，"里面的想法就会永远消失。"
+
+      我问我能做什么。图书管理员递给我一支金笔。"写，"他说。"在两个世界之间的边界崩塌之前，用新故事填满空白。"
+
+      我尽可能快地写——关于龙、魔法花园和勇敢的孩子们的故事。每一句话出现，色彩就重新涌入正在褪色的世界。
+
+      当我终于穿过门回来时，笔还在我手中。衣柜看起来又恢复了普通的样子，但我不再是从前的我了。我明白了故事不仅仅是纸上的文字——它们是活生生的东西，让世界保持多彩和有意义。

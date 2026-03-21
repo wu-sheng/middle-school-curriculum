@@ -1,0 +1,2780 @@
+# FCE Daily Listening Practice — Month 4, Batch 03
+# 65 exercises (L201–L265)
+# L201–L230: Part 1 short extracts (30 exercises, difficulty 2-3)
+# L231–L245: Part 2 sentence completion (15 exercises, difficulty 2-3)
+# L246–L265: Part 3 multiple matching (20 exercises, difficulty 2-3)
+# Theme: Fantasy / Dragon / Transformation stories for 8-9 year old learners
+
+extracts:
+  # ============================================================
+  # L201–L230: Part 1 — Short Extracts (Fantasy/Dragon Theme)
+  # ============================================================
+
+  # ============================================================
+  # L201: The Dragon Egg
+  # ============================================================
+
+  - id: L201
+    type: short-extract
+    title: 'The Dragon Egg'
+    titleZh: '龙蛋'
+    scene: 'You will hear a girl telling her friend about a discovery in the forest.'
+    sceneZh: '你将听到一个女孩告诉朋友她在森林里的发现。'
+    difficulty: 2
+    audioFile: 'L201.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'You will never believe what I found on the way home from school yesterday. There was this enormous egg, about the size of a football, sitting between the roots of the old oak tree.'
+      - speaker: boy
+        voice: echo
+        text: 'What colour was it?'
+      - speaker: girl
+        voice: shimmer
+        text: 'That is the strangest part — it was deep purple with tiny golden specks all over it, and it felt warm even though it was freezing outside. My grandmother says it might be a dragon egg. She told me that in her village, people used to say dragons would leave their eggs near ancient trees because the roots keep them safe and warm underground.'
+    question:
+      text: 'Why does the girl think the egg is unusual?'
+      textZh: '女孩为什么觉得这个蛋不寻常？'
+      options:
+        A: 'It was very small and hidden under leaves.'
+        B: 'It was warm despite the cold weather.'
+        C: 'It was making a cracking sound.'
+      answer: 'B'
+      explanation: 'The girl says "it felt warm even though it was freezing outside" — this contrast is what makes it unusual.'
+      explanationZh: '女孩说"尽管外面很冷，它摸起来却是温暖的"——这个反差是它不寻常的原因。'
+
+  # ============================================================
+  # L202: The Shape-Shifting Cat
+  # ============================================================
+
+  - id: L202
+    type: short-extract
+    title: 'The Shape-Shifting Cat'
+    titleZh: '变形猫'
+    scene: 'You will hear a boy describing his unusual pet to a new friend.'
+    sceneZh: '你将听到一个男孩向新朋友描述他不寻常的宠物。'
+    difficulty: 2
+    audioFile: 'L202.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'My cat Moonbeam is not like other cats. During the day she looks completely normal — grey fur, green eyes, loves sleeping on the sofa. But at night, something changes.'
+      - speaker: girl
+        voice: shimmer
+        text: 'What do you mean, changes?'
+      - speaker: boy
+        voice: echo
+        text: 'Well, when the moon comes out, her fur starts to glow silver and she grows twice her normal size. My mum says it is just a trick of the light, but I have measured her. She is definitely bigger at night. And she can open doors by herself — not with her paws, but just by staring at them until they swing open.'
+    question:
+      text: 'What happens to Moonbeam at night?'
+      textZh: 'Moonbeam 晚上会发生什么？'
+      options:
+        A: 'She hides under the sofa and will not come out.'
+        B: 'She grows bigger and her fur glows silver.'
+        C: 'She runs away from the house until morning.'
+      answer: 'B'
+      explanation: 'The boy says "her fur starts to glow silver and she grows twice her normal size."'
+      explanationZh: '男孩说"她的毛开始发出银色的光，她长到了正常大小的两倍"。'
+
+  # ============================================================
+  # L203: The Enchanted Library
+  # ============================================================
+
+  - id: L203
+    type: short-extract
+    title: 'The Enchanted Library'
+    titleZh: '魔法图书馆'
+    scene: 'You will hear a librarian welcoming children to a special event.'
+    sceneZh: '你将听到一位图书管理员欢迎孩子们参加一个特别活动。'
+    difficulty: 2
+    audioFile: 'L203.mp3'
+    script:
+      - speaker: librarian
+        voice: nova
+        text: 'Welcome to our Enchanted Library Night! Tonight, the books come alive. When you open a storybook, the characters will step out of the pages and walk around the room. You can talk to them, ask them questions, and even help them solve their problems.'
+      - speaker: librarian
+        voice: nova
+        text: 'But there is one very important rule you must follow. You must return every character to their book before midnight. If a character stays outside their story for too long, the pages start to fade and the whole book could disappear forever. So please keep track of the time!'
+    question:
+      text: 'What is the important rule the librarian mentions?'
+      textZh: '图书管理员提到的重要规则是什么？'
+      options:
+        A: 'Children must not touch the old books.'
+        B: 'Characters must be returned to their books before midnight.'
+        C: 'Everyone must leave the library by ten o''clock.'
+      answer: 'B'
+      explanation: 'The librarian says "You must return every character to their book before midnight" otherwise the book could disappear.'
+      explanationZh: '图书管理员说"你们必须在午夜前把每个角色送回他们的书里"，否则书可能会消失。'
+
+  # ============================================================
+  # L204: The Dragon Riding Lesson
+  # ============================================================
+
+  - id: L204
+    type: short-extract
+    title: 'The Dragon Riding Lesson'
+    titleZh: '骑龙课'
+    scene: 'You will hear an instructor giving advice to a new dragon rider.'
+    sceneZh: '你将听到一位教练给一位新龙骑士提建议。'
+    difficulty: 2
+    audioFile: 'L204.mp3'
+    script:
+      - speaker: instructor
+        voice: nova
+        text: 'Right then, this is your first time on a dragon, so listen carefully. The most common mistake beginners make is pulling on the reins too hard. Dragons do not like that at all — it hurts their neck and makes them grumpy.'
+      - speaker: instructor
+        voice: nova
+        text: 'Instead, you should lean gently in the direction you want to go. Lean left to turn left, lean right to turn right. And when you want to go higher, just whisper the word "skyward" into the dragon''s ear. They respond much better to a calm voice than to shouting or pulling. Remember — a happy dragon is a safe dragon.'
+    question:
+      text: 'According to the instructor, what is the best way to control a dragon?'
+      textZh: '根据教练的说法，控制龙的最佳方式是什么？'
+      options:
+        A: 'Pull hard on the reins to show who is in charge.'
+        B: 'Lean gently and use a calm voice.'
+        C: 'Shout loudly so the dragon can hear you.'
+      answer: 'B'
+      explanation: 'The instructor says to "lean gently" and that dragons "respond much better to a calm voice than to shouting or pulling."'
+      explanationZh: '教练说要"轻轻倾斜"，而且龙"对平静的声音比对喊叫或拉扯的反应好得多"。'
+
+  # ============================================================
+  # L205: The Potion Class
+  # ============================================================
+
+  - id: L205
+    type: short-extract
+    title: 'The Potion Class'
+    titleZh: '魔药课'
+    scene: 'You will hear a teacher explaining a potion recipe to students.'
+    sceneZh: '你将听到一位老师向学生们讲解一个魔药配方。'
+    difficulty: 2
+    audioFile: 'L205.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Today we are making a Glow Potion. You will need three moonflower petals, a spoonful of crushed starstone, and exactly seven drops of morning dew. The order matters — if you add the dew before the starstone, the potion will explode in a shower of sparks.'
+      - speaker: teacher
+        voice: nova
+        text: 'When mixed correctly, the potion turns a beautiful pale blue and gives off a soft light. It is useful for reading in dark places without attracting attention. Many travellers carry a small bottle of Glow Potion when they explore caves or walk through enchanted forests at night.'
+    question:
+      text: 'What happens if you add the ingredients in the wrong order?'
+      textZh: '如果你按错误的顺序添加原料会怎样？'
+      options:
+        A: 'The potion turns the wrong colour.'
+        B: 'The potion has no effect at all.'
+        C: 'The potion explodes in sparks.'
+      answer: 'C'
+      explanation: 'The teacher warns that "if you add the dew before the starstone, the potion will explode in a shower of sparks."'
+      explanationZh: '老师警告说"如果你在星石之前加入露水，魔药会爆炸出一片火花"。'
+
+  # ============================================================
+  # L206: The Invisible Bridge
+  # ============================================================
+
+  - id: L206
+    type: short-extract
+    title: 'The Invisible Bridge'
+    titleZh: '隐形桥'
+    scene: 'You will hear two children trying to cross a magical river.'
+    sceneZh: '你将听到两个孩子试图穿越一条魔法河。'
+    difficulty: 2
+    audioFile: 'L206.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'The map says there is a bridge here, but I cannot see anything — just water.'
+      - speaker: boy
+        voice: echo
+        text: 'Wait, look at the sign! It says "Only those who believe can see the path." Maybe the bridge is invisible.'
+      - speaker: girl
+        voice: shimmer
+        text: 'I threw a pebble and it landed on something solid right above the water. There really is an invisible bridge! But we have to be careful — the sign also says the bridge only appears for people who walk without hesitation. If you stop or look down, it disappears beneath your feet.'
+    question:
+      text: 'What must the children do to cross the bridge safely?'
+      textZh: '孩子们必须怎样才能安全过桥？'
+      options:
+        A: 'They must swim across the river.'
+        B: 'They must walk without stopping or looking down.'
+        C: 'They must wait for the bridge to become visible.'
+      answer: 'B'
+      explanation: 'The sign says the bridge "only appears for people who walk without hesitation" and disappears if you stop or look down.'
+      explanationZh: '标牌说桥"只为毫不犹豫地走的人出现"，如果你停下或往下看，桥就会消失。'
+
+  # ============================================================
+  # L207: The Talking Map
+  # ============================================================
+
+  - id: L207
+    type: short-extract
+    title: 'The Talking Map'
+    titleZh: '会说话的地图'
+    scene: 'You will hear a girl describing a magical object she received.'
+    sceneZh: '你将听到一个女孩描述她收到的一件魔法物品。'
+    difficulty: 2
+    audioFile: 'L207.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'My grandfather gave me a very old map for my birthday. At first, I thought it was just an ordinary map of the local mountains. But that night, when I unfolded it on my desk, the mountains on the map started moving — like tiny real mountains breathing.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Then a small voice said, "Where would you like to go?" I nearly fell off my chair! The map can speak, and it knows every hidden path, secret cave, and enchanted waterfall in the region. The only problem is that it refuses to work on Mondays because, according to it, maps need a day of rest too.'
+    question:
+      text: 'What is special about the map the girl received?'
+      textZh: '女孩收到的地图有什么特别之处？'
+      options:
+        A: 'It shows treasure hidden underground.'
+        B: 'It can speak and knows hidden paths.'
+        C: 'It changes to show different countries each day.'
+      answer: 'B'
+      explanation: 'The girl says the map can speak and "knows every hidden path, secret cave, and enchanted waterfall."'
+      explanationZh: '女孩说地图会说话，而且"知道每条隐藏的小径、秘密洞穴和魔法瀑布"。'
+
+  # ============================================================
+  # L208: The Fire Dragon's Weakness
+  # ============================================================
+
+  - id: L208
+    type: short-extract
+    title: 'The Fire Dragon''s Weakness'
+    titleZh: '火龙的弱点'
+    scene: 'You will hear a teacher telling students about different types of dragons.'
+    sceneZh: '你将听到一位老师给学生讲述不同类型的龙。'
+    difficulty: 2
+    audioFile: 'L208.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Now, many people think fire dragons are the most dangerous creatures in our world. They can breathe flames hot enough to melt stone, and their scales are nearly impossible to scratch.'
+      - speaker: teacher
+        voice: nova
+        text: 'However, every fire dragon has one weakness that most people do not know about. They are terrified of music. A simple melody played on a flute or a violin can make a fire dragon fall asleep within minutes. This is because the vibrations from music relax the crystals inside their scales that produce fire. Clever dragon tamers have known this secret for centuries.'
+    question:
+      text: 'What is the fire dragon''s weakness?'
+      textZh: '火龙的弱点是什么？'
+      options:
+        A: 'They are afraid of water.'
+        B: 'Music makes them fall asleep.'
+        C: 'They cannot fly in strong wind.'
+      answer: 'B'
+      explanation: 'The teacher says "A simple melody played on a flute or a violin can make a fire dragon fall asleep within minutes."'
+      explanationZh: '老师说"用长笛或小提琴演奏的简单旋律就能让火龙在几分钟内入睡"。'
+
+  # ============================================================
+  # L209: The Transformation Spell
+  # ============================================================
+
+  - id: L209
+    type: short-extract
+    title: 'The Transformation Spell'
+    titleZh: '变身咒语'
+    scene: 'You will hear a boy telling his sister about a spell he learned.'
+    sceneZh: '你将听到一个男孩告诉姐姐他学到的一个咒语。'
+    difficulty: 2
+    audioFile: 'L209.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'I learned the most amazing spell in class today! It is called the Mirrorbend spell. When you cast it on yourself, you can transform into any animal you have touched in the last twenty-four hours.'
+      - speaker: girl
+        voice: shimmer
+        text: 'That sounds incredible! Have you tried it?'
+      - speaker: boy
+        voice: echo
+        text: 'Yes! I stroked Mrs Patterson''s cat this morning, so after class I turned myself into a cat for ten minutes. The tricky part is that you keep your own thoughts and memories, but you cannot speak — only the animal sounds come out. I kept trying to say "help, change me back" but all anyone heard was meowing.'
+    question:
+      text: 'What is the limitation of the Mirrorbend spell?'
+      textZh: '镜弯咒有什么局限？'
+      options:
+        A: 'You can only use it once a week.'
+        B: 'You cannot speak human language while transformed.'
+        C: 'You forget who you are during the transformation.'
+      answer: 'B'
+      explanation: 'The boy says "you cannot speak — only the animal sounds come out" while keeping your thoughts and memories.'
+      explanationZh: '男孩说"你不能说话——只有动物的声音能发出来"，但你保留自己的思想和记忆。'
+
+  # ============================================================
+  # L210: The Cloud Kingdom
+  # ============================================================
+
+  - id: L210
+    type: short-extract
+    title: 'The Cloud Kingdom'
+    titleZh: '云上王国'
+    scene: 'You will hear a tour guide describing a place above the clouds.'
+    sceneZh: '你将听到一位导游描述云层之上的一个地方。'
+    difficulty: 2
+    audioFile: 'L210.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Welcome to the Cloud Kingdom! As you can see, everything here is made from clouds. The houses, the roads, even the furniture — all made from solidified cloud. It feels like walking on a very soft mattress.'
+      - speaker: guide
+        voice: nova
+        text: 'The people here are called Cloudwalkers. They are born with the ability to make clouds solid just by touching them. But they have to concentrate — if a Cloudwalker gets distracted or falls asleep, everything they have built slowly turns back into mist. That is why they always build in teams, so someone is always awake and paying attention.'
+    question:
+      text: 'Why do Cloudwalkers always build in teams?'
+      textZh: '云行者为什么总是团队建造？'
+      options:
+        A: 'Because the buildings are very large and heavy.'
+        B: 'Because someone must always be awake to keep buildings solid.'
+        C: 'Because they enjoy working together more than alone.'
+      answer: 'B'
+      explanation: 'The guide explains that if a Cloudwalker falls asleep, their buildings turn to mist, so "someone is always awake and paying attention."'
+      explanationZh: '导游解释说如果云行者睡着了，他们的建筑会变回雾气，所以"总有人是醒着的并保持注意力"。'
+
+  # ============================================================
+  # L211: The Phoenix Feather
+  # ============================================================
+
+  - id: L211
+    type: short-extract
+    title: 'The Phoenix Feather'
+    titleZh: '凤凰羽毛'
+    scene: 'You will hear a shopkeeper explaining a rare item to a customer.'
+    sceneZh: '你将听到一位店主向顾客解释一件稀有物品。'
+    difficulty: 2
+    audioFile: 'L211.mp3'
+    script:
+      - speaker: shopkeeper
+        voice: nova
+        text: 'Ah, you have a good eye! That is a genuine phoenix feather. You can tell it is real because it glows orange at the edges and never loses its warmth. If you hold it, you will feel a gentle heat, like holding a cup of tea.'
+      - speaker: shopkeeper
+        voice: nova
+        text: 'Phoenix feathers are incredibly useful. If you place one inside a lantern, it provides light for an entire year without needing oil or a flame. The reason they are so expensive, though, is that a phoenix only drops one feather every hundred years, and you have to be in exactly the right place at exactly the right moment to catch it before it floats away.'
+    question:
+      text: 'Why are phoenix feathers so expensive?'
+      textZh: '凤凰羽毛为什么这么贵？'
+      options:
+        A: 'They are difficult to make in a workshop.'
+        B: 'A phoenix only drops one feather every hundred years.'
+        C: 'They are only found in one country.'
+      answer: 'B'
+      explanation: 'The shopkeeper says "a phoenix only drops one feather every hundred years" which makes them extremely rare.'
+      explanationZh: '店主说"凤凰每一百年才掉落一根羽毛"，这使得它们极其稀有。'
+
+  # ============================================================
+  # L212: The Shrinking Door
+  # ============================================================
+
+  - id: L212
+    type: short-extract
+    title: 'The Shrinking Door'
+    titleZh: '缩小的门'
+    scene: 'You will hear two children exploring an old castle.'
+    sceneZh: '你将听到两个孩子在探索一座古老的城堡。'
+    difficulty: 2
+    audioFile: 'L212.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Look at that tiny door in the wall! It is only about thirty centimetres tall. Who could possibly use a door that small?'
+      - speaker: girl
+        voice: shimmer
+        text: 'The guidebook says this castle once belonged to a wizard who could shrink himself. He made all the doors in his private rooms tiny so that no normal-sized person could follow him inside.'
+      - speaker: boy
+        voice: echo
+        text: 'That is clever! But it also says here that the shrinking spell wore off after exactly one hour. So if the wizard stayed inside too long and returned to normal size, he would be stuck in a room with no way out. Apparently, that actually happened to him once and the servants had to knock down a wall to rescue him!'
+    question:
+      text: 'What problem could the shrinking spell cause?'
+      textZh: '缩小咒可能导致什么问题？'
+      options:
+        A: 'The wizard could get stuck if the spell wore off too soon.'
+        B: 'The wizard would forget where the tiny doors were.'
+        C: 'The spell made the wizard invisible as well as small.'
+      answer: 'A'
+      explanation: 'The boy explains that if the wizard "returned to normal size, he would be stuck in a room with no way out."'
+      explanationZh: '男孩解释说如果巫师"恢复了正常大小，他就会被困在一个没有出口的房间里"。'
+
+  # ============================================================
+  # L213: The Dragon Academy Entrance Exam
+  # ============================================================
+
+  - id: L213
+    type: short-extract
+    title: 'The Dragon Academy Entrance Exam'
+    titleZh: '龙学院入学考试'
+    scene: 'You will hear a student describing her entrance exam experience.'
+    sceneZh: '你将听到一位学生描述她的入学考试经历。'
+    difficulty: 3
+    audioFile: 'L213.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'The entrance exam for Dragon Academy was nothing like I expected. I thought it would be a written test about dragon history and types. Instead, they put us in a room with three dragon hatchlings and said "Make friends with one of them."'
+      - speaker: girl
+        voice: shimmer
+        text: 'Most students tried to approach the biggest, most impressive hatchling — the fire dragon. But I noticed the smallest one, a water dragon, sitting alone in the corner looking nervous. I sat down next to it and just waited quietly. After a while, it came and rested its head on my knee. The examiner smiled and said that was exactly what they were looking for — patience and kindness, not bravery or strength.'
+    question:
+      text: 'What quality was the Dragon Academy actually testing for?'
+      textZh: '龙学院实际上在考察什么品质？'
+      options:
+        A: 'Knowledge about different dragon species'
+        B: 'Speed and physical strength'
+        C: 'Patience and kindness'
+      answer: 'C'
+      explanation: 'The examiner said they were looking for "patience and kindness, not bravery or strength."'
+      explanationZh: '考官说他们寻找的是"耐心和善良，而不是勇敢或力量"。'
+
+  # ============================================================
+  # L214: The Wishing Well
+  # ============================================================
+
+  - id: L214
+    type: short-extract
+    title: 'The Wishing Well'
+    titleZh: '许愿井'
+    scene: 'You will hear an old woman warning children about a wishing well.'
+    sceneZh: '你将听到一位老奶奶警告孩子们关于一口许愿井。'
+    difficulty: 2
+    audioFile: 'L214.mp3'
+    script:
+      - speaker: woman
+        voice: nova
+        text: 'Children, you may throw a coin into the Wishing Well, but listen carefully first. This well grants wishes, but it has a sense of humour. It takes your words very literally.'
+      - speaker: woman
+        voice: nova
+        text: 'Last week, a boy wished to be "the tallest person in his class." The well made him three metres tall! He could not fit through doorways for a whole day. And a girl once wished for "a mountain of chocolate." She woke up to find her bedroom completely filled with chocolate — she could barely open the door. So think very carefully about your words before you make a wish!'
+    question:
+      text: 'What is the problem with the Wishing Well?'
+      textZh: '许愿井有什么问题？'
+      options:
+        A: 'It only works on certain days of the week.'
+        B: 'It takes wishes too literally.'
+        C: 'It grants the opposite of what you wish for.'
+      answer: 'B'
+      explanation: 'The old woman says the well "takes your words very literally" and gives examples of wishes that came true in unexpected ways.'
+      explanationZh: '老奶奶说许愿井"完全按照字面意思理解你的话"，并举了愿望以意想不到方式实现的例子。'
+
+  # ============================================================
+  # L215: The Time-Turning Hourglass
+  # ============================================================
+
+  - id: L215
+    type: short-extract
+    title: 'The Time-Turning Hourglass'
+    titleZh: '时间沙漏'
+    scene: 'You will hear a boy explaining a magical object to his cousin.'
+    sceneZh: '你将听到一个男孩向表弟解释一件魔法物品。'
+    difficulty: 3
+    audioFile: 'L215.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'This hourglass is not just for telling time. If you flip it upside down and say "rewind," time goes backwards for everyone around you — but not for you. You can see everything happening in reverse while you stay in the present.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Can you change things that already happened?'
+      - speaker: boy
+        voice: echo
+        text: 'No, and that is the important rule. You can watch the past like a film, but you cannot touch or change anything. My teacher says it was designed for learning from mistakes, not fixing them. If people could change the past, every small change would create a chain of new problems — like pulling one thread and unravelling an entire jumper.'
+    question:
+      text: 'Why can the hourglass not be used to change the past?'
+      textZh: '为什么沙漏不能用来改变过去？'
+      options:
+        A: 'Because the magic runs out after one use.'
+        B: 'Because changing the past would create new problems.'
+        C: 'Because it only works for events in the last hour.'
+      answer: 'B'
+      explanation: 'The boy explains that "every small change would create a chain of new problems — like pulling one thread and unravelling an entire jumper."'
+      explanationZh: '男孩解释说"每个小改变都会引发一连串新问题——就像拉一根线就会拆散整件毛衣"。'
+
+  # ============================================================
+  # L216: The Forest of Echoes
+  # ============================================================
+
+  - id: L216
+    type: short-extract
+    title: 'The Forest of Echoes'
+    titleZh: '回音森林'
+    scene: 'You will hear a guide warning travellers about a magical forest.'
+    sceneZh: '你将听到一位向导警告旅行者关于一片魔法森林。'
+    difficulty: 2
+    audioFile: 'L216.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'Before we enter the Forest of Echoes, there is something you need to understand. In this forest, everything you say out loud comes true — but only for five minutes.'
+      - speaker: guide
+        voice: nova
+        text: 'So if you say "I wish it would rain," it will rain for exactly five minutes. If you say "I am lost," you will suddenly feel confused and unable to find your way for five minutes. The safest strategy is to stay completely silent while walking through. The forest cannot affect you if you do not speak. That is why experienced travellers always carry a notebook to communicate in writing instead.'
+    question:
+      text: 'How can travellers stay safe in the Forest of Echoes?'
+      textZh: '旅行者怎样才能在回音森林中保持安全？'
+      options:
+        A: 'By walking very quickly through the trees.'
+        B: 'By staying completely silent.'
+        C: 'By wearing special ear protection.'
+      answer: 'B'
+      explanation: 'The guide says "The safest strategy is to stay completely silent while walking through" because the forest only reacts to spoken words.'
+      explanationZh: '向导说"最安全的策略是在穿越时完全保持沉默"，因为森林只对说出口的话产生反应。'
+
+  # ============================================================
+  # L217: The Crystal Dragon
+  # ============================================================
+
+  - id: L217
+    type: short-extract
+    title: 'The Crystal Dragon'
+    titleZh: '水晶龙'
+    scene: 'You will hear a museum guide talking about a rare dragon species.'
+    sceneZh: '你将听到一位博物馆导游介绍一种稀有的龙。'
+    difficulty: 2
+    audioFile: 'L217.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'The crystal dragon is perhaps the most beautiful of all dragon species. Its entire body is made of transparent crystal, so you can see its heart beating inside its chest. At sunrise and sunset, light passes through its body and creates rainbows on the ground all around it.'
+      - speaker: guide
+        voice: nova
+        text: 'Crystal dragons do not breathe fire. Instead, they breathe light — a beam so bright it can illuminate an entire valley. They are completely peaceful creatures that eat only minerals and gemstones. The main threat to crystal dragons is not hunters, but earthquakes, because their crystal bodies are quite fragile.'
+    question:
+      text: 'What is the biggest danger to crystal dragons?'
+      textZh: '水晶龙面临的最大危险是什么？'
+      options:
+        A: 'Hunters who want their crystal scales'
+        B: 'Other, more aggressive dragon species'
+        C: 'Earthquakes, because their bodies are fragile'
+      answer: 'C'
+      explanation: 'The guide says "The main threat to crystal dragons is not hunters, but earthquakes, because their crystal bodies are quite fragile."'
+      explanationZh: '导游说"水晶龙的主要威胁不是猎人，而是地震，因为它们的水晶身体相当脆弱"。'
+
+  # ============================================================
+  # L218: The Spell That Went Wrong
+  # ============================================================
+
+  - id: L218
+    type: short-extract
+    title: 'The Spell That Went Wrong'
+    titleZh: '出错的咒语'
+    scene: 'You will hear a boy telling his friend about a spell that went wrong.'
+    sceneZh: '你将听到一个男孩告诉朋友一个出了差错的咒语。'
+    difficulty: 2
+    audioFile: 'L218.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'I was practising the colour-change spell on my school bag. I wanted to turn it from green to blue. I said the words carefully, waved my hand, and suddenly — everything in the room turned blue. The walls, the carpet, even my dog!'
+      - speaker: girl
+        voice: shimmer
+        text: 'Oh no! How did you fix it?'
+      - speaker: boy
+        voice: echo
+        text: 'That is the thing — the spell book says you need to say the reverse words within ten minutes or the change becomes permanent. I panicked and could not find the right page. Luckily, my older sister heard me shouting and found the reverse spell just in time. My dog was blue for exactly nine minutes and forty-two seconds.'
+    question:
+      text: 'What went wrong with the boy''s spell?'
+      textZh: '男孩的咒语出了什么差错？'
+      options:
+        A: 'The bag turned the wrong colour.'
+        B: 'Everything in the room changed colour instead of just the bag.'
+        C: 'The spell did not work at all.'
+      answer: 'B'
+      explanation: 'The boy says "everything in the room turned blue" instead of just the school bag — the spell affected too much.'
+      explanationZh: '男孩说"房间里的一切都变成了蓝色"，而不只是书包——咒语影响了太多东西。'
+
+  # ============================================================
+  # L219: The Dragon Messenger
+  # ============================================================
+
+  - id: L219
+    type: short-extract
+    title: 'The Dragon Messenger'
+    titleZh: '龙信使'
+    scene: 'You will hear a postmaster explaining how messages are delivered in a magical world.'
+    sceneZh: '你将听到一位邮政局长解释在魔法世界中信件是如何投递的。'
+    difficulty: 2
+    audioFile: 'L219.mp3'
+    script:
+      - speaker: postmaster
+        voice: echo
+        text: 'In our kingdom, we use small messenger dragons instead of postmen. Each dragon is about the size of a pigeon and can carry one letter at a time. They are much faster than horses — a messenger dragon can fly from the capital to the coast in under two hours.'
+      - speaker: postmaster
+        voice: echo
+        text: 'The clever thing is how they find the right person. You write the name on the envelope and the dragon sniffs it. Somehow, they can smell who a letter is for, even if that person is hundreds of miles away. The only problem is that they get very hungry on long journeys and sometimes stop at farms to steal eggs, which makes the farmers quite cross.'
+    question:
+      text: 'How do messenger dragons find the right person?'
+      textZh: '信使龙是怎么找到正确的人的？'
+      options:
+        A: 'They follow a map attached to the letter.'
+        B: 'They can smell who the letter is for.'
+        C: 'They are given directions by the postmaster.'
+      answer: 'B'
+      explanation: 'The postmaster says the dragon "sniffs it" and "can smell who a letter is for, even if that person is hundreds of miles away."'
+      explanationZh: '邮政局长说龙会"闻一闻"，而且"能闻出信是给谁的，即使那个人在几百英里之外"。'
+
+  # ============================================================
+  # L220: The Frozen Waterfall
+  # ============================================================
+
+  - id: L220
+    type: short-extract
+    title: 'The Frozen Waterfall'
+    titleZh: '冰冻瀑布'
+    scene: 'You will hear a girl describing a magical place she visited.'
+    sceneZh: '你将听到一个女孩描述她参观的一个魔法地点。'
+    difficulty: 2
+    audioFile: 'L220.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'We visited the Frozen Waterfall last weekend. It is not actually frozen — the water is moving, but so slowly that it looks like it is standing still. One drop takes an entire day to fall from the top to the bottom.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The guide explained that an ancient ice dragon cast a spell on the waterfall centuries ago to slow down time around it. The interesting thing is that if you stand very close to the waterfall, time slows down for you too. We stood near it for what felt like five minutes, but when we stepped away, two hours had passed. I still cannot believe it.'
+    question:
+      text: 'What effect does the waterfall have on people who stand near it?'
+      textZh: '瀑布对站在旁边的人有什么影响？'
+      options:
+        A: 'They feel extremely cold and need warm clothes.'
+        B: 'Time passes more quickly for them than for others.'
+        C: 'Time slows down so they lose track of how long they have been there.'
+      answer: 'C'
+      explanation: 'The girl says they "stood near it for what felt like five minutes, but when we stepped away, two hours had passed" — time slowed down for them.'
+      explanationZh: '女孩说她们"站在旁边感觉才五分钟，但走开后两小时已经过去了"——时间对她们慢了下来。'
+
+  # ============================================================
+  # L221: The Healing Garden
+  # ============================================================
+
+  - id: L221
+    type: short-extract
+    title: 'The Healing Garden'
+    titleZh: '治愈花园'
+    scene: 'You will hear a healer showing a visitor around a special garden.'
+    sceneZh: '你将听到一位治愈师带访客参观一座特别的花园。'
+    difficulty: 2
+    audioFile: 'L221.mp3'
+    script:
+      - speaker: healer
+        voice: nova
+        text: 'This is our Healing Garden. Every plant here has a different magical property. The blue roses can cure headaches — you simply smell them and the pain disappears. The silver grass helps with broken bones — you wrap it around the injury and the bone heals in one day instead of six weeks.'
+      - speaker: healer
+        voice: nova
+        text: 'But the most important plant is the golden sunflower in the centre. It does not cure any physical illness. Instead, it cures sadness. If you sit next to it and tell it why you are unhappy, it listens and then hums a melody that makes you feel better. Many people say it is the most valuable plant in the entire garden.'
+    question:
+      text: 'What makes the golden sunflower the most valued plant?'
+      textZh: '是什么让金色向日葵成为最有价值的植物？'
+      options:
+        A: 'It can cure any disease known to exist.'
+        B: 'It cures sadness by listening and humming a melody.'
+        C: 'It produces gold that can be sold for money.'
+      answer: 'B'
+      explanation: 'The healer says the sunflower "cures sadness" — "it listens and then hums a melody that makes you feel better."'
+      explanationZh: '治愈师说向日葵"治愈悲伤"——"它倾听然后哼一首让你感觉好些的旋律"。'
+
+  # ============================================================
+  # L222: The Storm Dragon
+  # ============================================================
+
+  - id: L222
+    type: short-extract
+    title: 'The Storm Dragon'
+    titleZh: '风暴龙'
+    scene: 'You will hear a weather forecaster giving an unusual report.'
+    sceneZh: '你将听到一位天气预报员做一份不寻常的天气报告。'
+    difficulty: 3
+    audioFile: 'L222.mp3'
+    script:
+      - speaker: forecaster
+        voice: echo
+        text: 'Good evening. Tonight''s weather is brought to you by a storm dragon currently flying over the eastern mountains. As you know, storm dragons create weather as they fly. When they flap their wings slowly, we get gentle rain. When they flap quickly, we get thunderstorms.'
+      - speaker: forecaster
+        voice: echo
+        text: 'The good news is that this particular dragon, whose name is Rumble, tends to fly in a predictable pattern. Based on his usual route, we expect heavy rain over the capital from eight until eleven tonight, followed by clear skies as Rumble heads north towards the coast. Tomorrow should be sunny once he has passed. So do not forget your umbrellas this evening!'
+    question:
+      text: 'What determines the type of weather the storm dragon creates?'
+      textZh: '是什么决定了风暴龙创造的天气类型？'
+      options:
+        A: 'The direction the dragon is flying.'
+        B: 'How fast the dragon flaps its wings.'
+        C: 'How high above the ground the dragon flies.'
+      answer: 'B'
+      explanation: 'The forecaster explains "When they flap their wings slowly, we get gentle rain. When they flap quickly, we get thunderstorms."'
+      explanationZh: '预报员解释说"当它们缓慢拍打翅膀时，我们会下小雨。当它们快速拍打时，我们会遇到雷暴"。'
+
+  # ============================================================
+  # L223: The Memory Bottle
+  # ============================================================
+
+  - id: L223
+    type: short-extract
+    title: 'The Memory Bottle'
+    titleZh: '记忆瓶'
+    scene: 'You will hear a grandmother giving her grandchild a special gift.'
+    sceneZh: '你将听到一位祖母送给孙子一份特别的礼物。'
+    difficulty: 2
+    audioFile: 'L223.mp3'
+    script:
+      - speaker: grandma
+        voice: nova
+        text: 'This little glass bottle may not look special, but it is a Memory Bottle. If you hold it to your temple and think of a happy memory, the memory flows out of your mind and into the bottle as a tiny ball of coloured light.'
+      - speaker: grandma
+        voice: nova
+        text: 'Later, when you are feeling sad, you can open the bottle and the memory floats back in, making you feel exactly as happy as you felt at that moment. But be careful — once you put a memory in the bottle, it fades from your own mind. So you must choose wisely which memories to keep inside your head and which to store safely in the bottle for rainy days.'
+    question:
+      text: 'What is the drawback of using the Memory Bottle?'
+      textZh: '使用记忆瓶有什么缺点？'
+      options:
+        A: 'The memories change and become different from the original.'
+        B: 'The bottle can only hold three memories at a time.'
+        C: 'The memory fades from your mind once it goes into the bottle.'
+      answer: 'C'
+      explanation: 'The grandmother warns "once you put a memory in the bottle, it fades from your own mind."'
+      explanationZh: '祖母警告说"一旦你把记忆放进瓶子里，它就会从你的脑海中消退"。'
+
+  # ============================================================
+  # L224: The Dragon''s Library
+  # ============================================================
+
+  - id: L224
+    type: short-extract
+    title: 'The Dragon''s Library'
+    titleZh: '龙的图书馆'
+    scene: 'You will hear a girl describing a library she discovered inside a cave.'
+    sceneZh: '你将听到一个女孩描述她在洞穴里发现的图书馆。'
+    difficulty: 3
+    audioFile: 'L224.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'Deep inside the mountain cave, past the hot springs and the crystal tunnels, there is a library run by an ancient dragon called Storykeeper. She has been collecting books for over a thousand years.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The amazing thing is that Storykeeper does not just collect books — she remembers every single word in every single book. If you tell her a topic, she will recommend the perfect book for you. She told me that the most borrowed book in her collection is a recipe book for magical cooking, because everyone wants to learn how to make food that tastes like your favourite memory.'
+    question:
+      text: 'What is the most popular book in Storykeeper''s library?'
+      textZh: 'Storykeeper的图书馆中最受欢迎的书是什么？'
+      options:
+        A: 'A history book about ancient dragons'
+        B: 'A recipe book for magical cooking'
+        C: 'A guide to finding hidden treasure'
+      answer: 'B'
+      explanation: 'The girl says "the most borrowed book in her collection is a recipe book for magical cooking."'
+      explanationZh: '女孩说"她馆藏中借阅最多的书是一本魔法烹饪食谱"。'
+
+  # ============================================================
+  # L225: The Moonlit Transformation
+  # ============================================================
+
+  - id: L225
+    type: short-extract
+    title: 'The Moonlit Transformation'
+    titleZh: '月光变身'
+    scene: 'You will hear a boy describing what happens to his village during a full moon.'
+    sceneZh: '你将听到一个男孩描述满月时他的村庄会发生什么。'
+    difficulty: 3
+    audioFile: 'L225.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Our village has a very unusual tradition. On the night of every full moon, the adults transform into the animals they most resemble in personality. My dad becomes a bear because he is big and protective. My mum becomes a swan because she is graceful and elegant.'
+      - speaker: boy
+        voice: echo
+        text: 'Children do not transform until they turn thirteen, and nobody knows what animal they will become until it happens. My sister turned thirteen last month, and everyone thought she would become a cat because she is quiet and independent. But she actually became an eagle — she flew around the village all night! She said seeing the world from above completely changed how she thinks about everything.'
+    question:
+      text: 'What surprised everyone about the boy''s sister?'
+      textZh: '男孩的姐姐让大家感到惊讶的是什么？'
+      options:
+        A: 'She transformed a year earlier than expected.'
+        B: 'She became an eagle instead of a cat.'
+        C: 'She refused to take part in the tradition.'
+      answer: 'B'
+      explanation: 'The boy says "everyone thought she would become a cat" but "she actually became an eagle."'
+      explanationZh: '男孩说"大家都以为她会变成一只猫"，但"她实际上变成了一只鹰"。'
+
+  # ============================================================
+  # L226: The Singing Stones
+  # ============================================================
+
+  - id: L226
+    type: short-extract
+    title: 'The Singing Stones'
+    titleZh: '唱歌的石头'
+    scene: 'You will hear a geologist talking about a strange discovery.'
+    sceneZh: '你将听到一位地质学家谈论一个奇怪的发现。'
+    difficulty: 2
+    audioFile: 'L226.mp3'
+    script:
+      - speaker: geologist
+        voice: nova
+        text: 'In the Valley of Harmony, there are stones that sing. Not in the way wind whistles through rocks — these stones actually produce musical notes when you touch them. Each stone plays a different note, and together they form a complete scale.'
+      - speaker: geologist
+        voice: nova
+        text: 'What makes this truly remarkable is that the stones only sing when touched by someone who is feeling a strong emotion. A happy person makes the stones play a cheerful melody. A sad person hears a gentle, comforting tune. Scientists believe the stones contain tiny crystals that respond to the electrical signals our bodies produce when we feel emotions.'
+    question:
+      text: 'What determines what melody the stones play?'
+      textZh: '是什么决定了石头演奏什么旋律？'
+      options:
+        A: 'The time of day when they are touched.'
+        B: 'The emotion the person is feeling.'
+        C: 'The size and shape of the stone.'
+      answer: 'B'
+      explanation: 'The geologist says the stones "only sing when touched by someone who is feeling a strong emotion" and the melody changes based on that emotion.'
+      explanationZh: '地质学家说石头"只有在被情绪强烈的人触碰时才会唱歌"，旋律会根据情绪而变化。'
+
+  # ============================================================
+  # L227: The Dragon Dentist
+  # ============================================================
+
+  - id: L227
+    type: short-extract
+    title: 'The Dragon Dentist'
+    titleZh: '龙的牙医'
+    scene: 'You will hear a dentist describing her unusual job.'
+    sceneZh: '你将听到一位牙医描述她不寻常的工作。'
+    difficulty: 2
+    audioFile: 'L227.mp3'
+    script:
+      - speaker: dentist
+        voice: nova
+        text: 'People always ask me what it is like being a dragon dentist. The first thing I tell them is that dragon teeth are nothing like human teeth. They are made of the same material as diamonds, so they almost never get cavities. The main problem is that food gets stuck between their teeth — especially knight armour, which they really should not be eating.'
+      - speaker: dentist
+        voice: nova
+        text: 'The biggest challenge is working inside a mouth that can breathe fire. I have to wear a special fireproof suit and I always ask the dragon to hold its breath while I work. The trick is to be very quick — dragons can only hold their breath for about three minutes, so I have to finish each tooth in under three minutes.'
+    question:
+      text: 'What is the biggest challenge of being a dragon dentist?'
+      textZh: '当龙牙医最大的挑战是什么？'
+      options:
+        A: 'Dragon teeth are too hard to clean properly.'
+        B: 'Working inside a mouth that can breathe fire.'
+        C: 'Dragons are afraid of dentists and run away.'
+      answer: 'B'
+      explanation: 'The dentist says "The biggest challenge is working inside a mouth that can breathe fire."'
+      explanationZh: '牙医说"最大的挑战是在一个能喷火的嘴巴里工作"。'
+
+  # ============================================================
+  # L228: The Shadow Market
+  # ============================================================
+
+  - id: L228
+    type: short-extract
+    title: 'The Shadow Market'
+    titleZh: '影子市场'
+    scene: 'You will hear a boy describing a secret market that appears at night.'
+    sceneZh: '你将听到一个男孩描述一个在夜晚出现的秘密市场。'
+    difficulty: 3
+    audioFile: 'L228.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'Every Friday at midnight, the Shadow Market appears in the town square. The stalls sell things you cannot buy anywhere else — bottled starlight, enchanted compasses that point towards whatever you need most, and seeds that grow into trees overnight.'
+      - speaker: boy
+        voice: echo
+        text: 'The interesting rule is that you cannot pay with money. The only currency accepted is a story. To buy something, you have to tell the shopkeeper a story they have never heard before. If your story is boring or they have heard it already, they shake their head and you leave empty-handed. That is why the best customers at the Shadow Market are always the most creative storytellers.'
+    question:
+      text: 'How do customers pay for items at the Shadow Market?'
+      textZh: '顾客在影子市场上是怎样付款的？'
+      options:
+        A: 'With rare coins from magical kingdoms.'
+        B: 'By telling a story the shopkeeper has never heard.'
+        C: 'By trading objects of equal magical value.'
+      answer: 'B'
+      explanation: 'The boy explains that "you have to tell the shopkeeper a story they have never heard before" to buy something.'
+      explanationZh: '男孩解释说"你必须给店主讲一个他们从没听过的故事"才能买到东西。'
+
+  # ============================================================
+  # L229: The Enchanted Mirror
+  # ============================================================
+
+  - id: L229
+    type: short-extract
+    title: 'The Enchanted Mirror'
+    titleZh: '魔法镜'
+    scene: 'You will hear a girl describing a mirror she found in her attic.'
+    sceneZh: '你将听到一个女孩描述她在阁楼里找到的一面镜子。'
+    difficulty: 3
+    audioFile: 'L229.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'I found an old mirror in our attic last week. When I looked into it, I did not see my own reflection. Instead, I saw myself ten years in the future! The future me was wearing a white coat and standing in a laboratory full of plants.'
+      - speaker: girl
+        voice: shimmer
+        text: 'I showed it to my brother, and he saw himself playing guitar on a stage in front of hundreds of people. My dad tried it too, but he just saw his normal reflection — nothing special. My grandmother explained that the mirror only shows the future to people under fifteen. She said it was made by an old wizard who believed that children need encouragement to follow their dreams, while adults need to create their own future without help.'
+    question:
+      text: 'Why does the mirror only show the future to children?'
+      textZh: '镜子为什么只给孩子们显示未来？'
+      options:
+        A: 'Because the magic is too weak for adults to see.'
+        B: 'Because the wizard believed children need encouragement for their dreams.'
+        C: 'Because adults are not allowed to know their future.'
+      answer: 'B'
+      explanation: 'The grandmother says the wizard believed "children need encouragement to follow their dreams, while adults need to create their own future without help."'
+      explanationZh: '祖母说巫师相信"孩子们需要鼓励去追随梦想，而成年人需要自己创造未来，不需要帮助"。'
+
+  # ============================================================
+  # L230: The Last Dragon
+  # ============================================================
+
+  - id: L230
+    type: short-extract
+    title: 'The Last Dragon'
+    titleZh: '最后的龙'
+    scene: 'You will hear a storyteller narrating a tale by a campfire.'
+    sceneZh: '你将听到一位讲故事的人在篝火旁讲述一个故事。'
+    difficulty: 3
+    audioFile: 'L230.mp3'
+    script:
+      - speaker: storyteller
+        voice: nova
+        text: 'Long ago, when dragons filled the sky, the greatest of them all was called Ember. She was so large that her shadow could cover an entire city. When she breathed fire, it was not destructive — it made flowers bloom and crops grow faster.'
+      - speaker: storyteller
+        voice: nova
+        text: 'When the other dragons left this world one by one, Ember chose to stay. She said she would remain until the last human who believed in dragons had gone. That was two hundred years ago. People say that on certain nights, when the clouds are shaped like wings and the sunset glows orange and gold, it means Ember is still watching over us — waiting to see if anyone still believes.'
+    question:
+      text: 'Why did Ember choose to stay when other dragons left?'
+      textZh: 'Ember为什么在其他龙离开时选择留下？'
+      options:
+        A: 'She was too old and tired to travel.'
+        B: 'She promised to stay until no one believed in dragons anymore.'
+        C: 'She wanted to protect a hidden treasure.'
+      answer: 'B'
+      explanation: 'The storyteller says Ember "would remain until the last human who believed in dragons had gone."'
+      explanationZh: '讲故事的人说Ember"会一直留下，直到最后一个相信龙的人离去"。'
+
+  # ============================================================
+  # L231–L245: Part 2 — Sentence Completion (Fantasy/Dragon Theme)
+  # ============================================================
+
+  # ============================================================
+  # L231: Welcome to Dragon Academy
+  # ============================================================
+
+  - id: L231
+    type: sentence-completion
+    title: 'Welcome to Dragon Academy'
+    titleZh: '欢迎来到龙学院'
+    scene: 'You will hear the headmaster of Dragon Academy giving a welcome speech to new students.'
+    sceneZh: '你将听到龙学院的校长给新生做欢迎致辞。'
+    difficulty: 2
+    audioFile: 'L231.mp3'
+    script:
+      - speaker: headmaster
+        voice: echo
+        text: 'Good morning, new students, and welcome to Dragon Academy! My name is Professor Thornwing, and I have been headmaster here for twenty-three years. I remember my own first day as a student — I was so nervous that I accidentally set fire to the welcome banner!'
+      - speaker: headmaster
+        voice: echo
+        text: 'Let me tell you about our school. Dragon Academy was founded over five hundred years ago by a group of dragon tamers who believed that humans and dragons could live together peacefully. The Academy sits on top of Crystal Peak, the highest mountain in the kingdom, because dragons prefer to nest at high altitudes where the air is thin and cold.'
+      - speaker: headmaster
+        voice: echo
+        text: 'During your first year, you will study four core subjects: Dragon History, Flight Training, Dragon Language, and Magical Healing. Dragon Language is the most difficult subject because dragons communicate using a combination of sounds, colours, and smoke signals. Most students need at least two years to hold a basic conversation with a dragon.'
+      - speaker: headmaster
+        voice: echo
+        text: 'Each student will be paired with a young dragon in their second week. This dragon will be your partner throughout your time here. The pairing ceremony takes place in the Great Cavern beneath the school. You will walk through a tunnel lined with dragon eggs, and the egg that glows when you pass it contains your partner dragon.'
+      - speaker: headmaster
+        voice: echo
+        text: 'Safety is our highest priority. The number one rule at Dragon Academy is simple: never fly a dragon without a qualified instructor present. Last year, a student tried to fly solo at night and ended up on the roof of the royal palace sixty miles away. The king was not amused.'
+      - speaker: headmaster
+        voice: echo
+        text: 'Finally, I want to tell you about our school motto: "Wings of courage, heart of compassion." We believe that being brave is important, but being kind is even more important. A dragon will always trust a kind person before a brave one.'
+      - speaker: headmaster
+        voice: echo
+        text: 'Dinner tonight is in the Cloud Hall at six o''clock. Tomorrow morning, your lessons begin at eight sharp. I hope you will love Dragon Academy as much as I do. Good luck!'
+    sentences:
+      - id: L231-S1
+        text: 'Professor Thornwing has been headmaster for _____ years.'
+        textZh: 'Thornwing教授已经当了 _____ 年校长。'
+        answer: 'twenty-three'
+      - id: L231-S2
+        text: 'The Academy is located on top of _____ Peak.'
+        textZh: '学院位于 _____ 峰顶部。'
+        answer: 'Crystal'
+      - id: L231-S3
+        text: 'Dragons communicate using sounds, colours, and _____ signals.'
+        textZh: '龙使用声音、颜色和 _____ 信号来交流。'
+        answer: 'smoke'
+      - id: L231-S4
+        text: 'In the pairing ceremony, the egg that _____ when you pass contains your partner dragon.'
+        textZh: '在配对仪式中，当你经过时会 _____ 的蛋里包含你的伙伴龙。'
+        answer: 'glows'
+      - id: L231-S5
+        text: 'The school''s number one rule is never to fly without a qualified _____.'
+        textZh: '学校的第一条规则是没有合格的 _____ 在场绝不能飞行。'
+        answer: 'instructor'
+      - id: L231-S6
+        text: 'The school motto says "Wings of courage, heart of _____."'
+        textZh: '校训说"勇气之翼，_____ 之心"。'
+        answer: 'compassion'
+
+  # ============================================================
+  # L232: Types of Dragons
+  # ============================================================
+
+  - id: L232
+    type: sentence-completion
+    title: 'Types of Dragons'
+    titleZh: '龙的种类'
+    scene: 'You will hear a teacher giving a lesson about the main types of dragons.'
+    sceneZh: '你将听到一位老师讲授龙的主要种类。'
+    difficulty: 2
+    audioFile: 'L232.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Good morning, class. Today we are going to learn about the five main types of dragons. Open your textbooks to page forty-seven.'
+      - speaker: teacher
+        voice: nova
+        text: 'First, there are fire dragons. These are the ones most people think of when they hear the word dragon. They are red or orange, breathe fire, and live near volcanoes. Fire dragons are the largest species — an adult can be up to thirty metres long.'
+      - speaker: teacher
+        voice: nova
+        text: 'Second, we have water dragons. They are blue or green, breathe ice or steam, and live in deep lakes and oceans. Water dragons are the friendliest species and are often the first type that young dragon tamers learn to work with.'
+      - speaker: teacher
+        voice: nova
+        text: 'Third, there are earth dragons. These are brown or grey and cannot fly because their wings are too small for their heavy bodies. Instead, they tunnel underground at surprising speed. Earth dragons eat rocks and minerals, and their scales are as tough as granite.'
+      - speaker: teacher
+        voice: nova
+        text: 'Fourth, we have sky dragons. They are white or silver and spend almost their entire lives in the clouds. Sky dragons are the fastest fliers — they can reach speeds of over three hundred miles per hour. They breathe wind rather than fire, creating powerful gusts that can knock down trees.'
+      - speaker: teacher
+        voice: nova
+        text: 'Finally, there are shadow dragons. They are dark purple or black and are only active at night. Shadow dragons can become invisible in darkness, which makes them very difficult to study. Scientists know less about shadow dragons than any other type.'
+      - speaker: teacher
+        voice: nova
+        text: 'For homework, I want you to choose one type and write a one-page report about its habitat, diet, and special abilities. This is due next Wednesday.'
+    sentences:
+      - id: L232-S1
+        text: 'Fire dragons live near _____ and can be up to thirty metres long.'
+        textZh: '火龙生活在 _____ 附近，可以长到三十米长。'
+        answer: 'volcanoes'
+      - id: L232-S2
+        text: '_____ dragons are the friendliest species and good for beginners.'
+        textZh: '_____ 龙是最友好的种类，适合初学者。'
+        answer: 'Water'
+      - id: L232-S3
+        text: 'Earth dragons cannot fly because their wings are too _____ for their bodies.'
+        textZh: '地龙不能飞，因为它们的翅膀对于身体来说太 _____ 了。'
+        answer: 'small'
+      - id: L232-S4
+        text: 'Sky dragons can reach speeds of over _____ miles per hour.'
+        textZh: '天龙的速度可以超过每小时 _____ 英里。'
+        answer: 'three hundred'
+      - id: L232-S5
+        text: 'Shadow dragons can become _____ in darkness.'
+        textZh: '影龙可以在黑暗中变得 _____。'
+        answer: 'invisible'
+      - id: L232-S6
+        text: 'The homework is to write a one-page _____ about a chosen dragon type.'
+        textZh: '作业是写一篇关于选定龙种类的一页 _____。'
+        answer: 'report'
+
+  # ============================================================
+  # L233: The Dragon Egg Hatching
+  # ============================================================
+
+  - id: L233
+    type: sentence-completion
+    title: 'The Dragon Egg Hatching'
+    titleZh: '龙蛋孵化'
+    scene: 'You will hear a zookeeper explaining how to hatch a dragon egg.'
+    sceneZh: '你将听到一位动物园管理员讲解如何孵化龙蛋。'
+    difficulty: 2
+    audioFile: 'L233.mp3'
+    script:
+      - speaker: zookeeper
+        voice: nova
+        text: 'Thank you for coming to our Dragon Nursery tour. Today I am going to explain how we hatch dragon eggs here at the sanctuary. The whole process takes about ninety days from start to finish.'
+      - speaker: zookeeper
+        voice: nova
+        text: 'First, we place each egg in a special heated chamber. The temperature must be kept at exactly forty-two degrees at all times. Even a small change of one or two degrees can delay hatching by weeks.'
+      - speaker: zookeeper
+        voice: nova
+        text: 'During the first month, the egg needs complete silence. Dragon embryos are very sensitive to sound, and loud noises can frighten them. We use thick padded walls around the chamber to block out all sound.'
+      - speaker: zookeeper
+        voice: nova
+        text: 'In the second month, we start playing soft music near the egg. Research has shown that eggs exposed to gentle melodies produce calmer, more trusting dragons. We play classical music for about four hours each day.'
+      - speaker: zookeeper
+        voice: nova
+        text: 'In the final month, we introduce the scent of the person who will become the dragon''s partner. We put a piece of their clothing next to the egg so the baby dragon recognises their smell immediately when it hatches. This creates an instant bond between dragon and human.'
+      - speaker: zookeeper
+        voice: nova
+        text: 'When the egg is ready to hatch, it starts to glow and makes a humming sound. The baby dragon then breaks through the shell using a special horn on its nose, which falls off within a week. The newborn dragon is about the size of a puppy and takes its first flight within three days.'
+    sentences:
+      - id: L233-S1
+        text: 'The entire hatching process takes about _____ days.'
+        textZh: '整个孵化过程大约需要 _____ 天。'
+        answer: 'ninety'
+      - id: L233-S2
+        text: 'The chamber temperature must be exactly _____ degrees.'
+        textZh: '孵化室温度必须恰好保持在 _____ 度。'
+        answer: 'forty-two'
+      - id: L233-S3
+        text: 'During the first month, the egg needs complete _____.'
+        textZh: '第一个月，蛋需要完全的 _____。'
+        answer: 'silence'
+      - id: L233-S4
+        text: 'In the second month, they play _____ music for four hours daily.'
+        textZh: '第二个月，他们每天播放 _____ 音乐四小时。'
+        answer: 'classical'
+      - id: L233-S5
+        text: 'A piece of the partner''s _____ is placed next to the egg in the final month.'
+        textZh: '最后一个月，伙伴的一件 _____ 被放在蛋旁边。'
+        answer: 'clothing'
+      - id: L233-S6
+        text: 'The baby dragon breaks the shell using a special _____ on its nose.'
+        textZh: '小龙用鼻子上的一个特殊的 _____ 破壳。'
+        answer: 'horn'
+
+  # ============================================================
+  # L234: The Flying Carpet Workshop
+  # ============================================================
+
+  - id: L234
+    type: sentence-completion
+    title: 'The Flying Carpet Workshop'
+    titleZh: '飞毯工坊'
+    scene: 'You will hear a craftsman explaining how flying carpets are made.'
+    sceneZh: '你将听到一位工匠讲解飞毯是如何制作的。'
+    difficulty: 2
+    audioFile: 'L234.mp3'
+    script:
+      - speaker: craftsman
+        voice: echo
+        text: 'Welcome to my workshop! I am Omar, and I am one of the last flying carpet weavers in the world. My family has been making flying carpets for twelve generations, stretching back over four hundred years.'
+      - speaker: craftsman
+        voice: echo
+        text: 'Making a flying carpet takes six months of work. First, we collect wool from cloud sheep — special sheep that live on mountaintops and whose wool is lighter than air. This wool is what gives the carpet its ability to fly.'
+      - speaker: craftsman
+        voice: echo
+        text: 'The weaving itself must be done by moonlight. Sunlight destroys the flying magic in the wool, so I work only at night, from sunset to sunrise. Each carpet contains exactly ten thousand knots, and every knot must be tied perfectly.'
+      - speaker: craftsman
+        voice: echo
+        text: 'The pattern on the carpet is not just decoration — it is actually a map. Every flying carpet has a different pattern that shows the route it flies best. A carpet with a mountain pattern flies highest over mountains. One with a wave pattern prefers coastal routes.'
+      - speaker: craftsman
+        voice: echo
+        text: 'Once the weaving is complete, I soak the carpet in starwater for three nights. Starwater is collected by leaving silver bowls outside on clear nights — the starlight dissolves into the water. This final step activates the flying enchantment.'
+      - speaker: craftsman
+        voice: echo
+        text: 'A well-made flying carpet can last for two hundred years if properly cared for. The most important rule is to fold it carefully after each flight and never leave it in direct sunlight. My oldest carpet is one hundred and sixty years old and still flies beautifully.'
+    sentences:
+      - id: L234-S1
+        text: 'Omar''s family has been making carpets for _____ generations.'
+        textZh: 'Omar的家族已经制作飞毯 _____ 代了。'
+        answer: 'twelve'
+      - id: L234-S2
+        text: 'The wool comes from special sheep called _____ sheep.'
+        textZh: '羊毛来自一种叫做 _____ 羊的特殊绵羊。'
+        answer: 'cloud'
+      - id: L234-S3
+        text: 'The weaving must be done by _____ because sunlight destroys the magic.'
+        textZh: '编织必须在 _____ 下进行，因为阳光会破坏魔力。'
+        answer: 'moonlight'
+      - id: L234-S4
+        text: 'Each carpet contains exactly _____ knots.'
+        textZh: '每块飞毯恰好包含 _____ 个结。'
+        answer: 'ten thousand'
+      - id: L234-S5
+        text: 'The pattern on the carpet is actually a _____ showing its best route.'
+        textZh: '地毯上的图案实际上是一张 _____，显示它最佳的飞行路线。'
+        answer: 'map'
+      - id: L234-S6
+        text: 'A well-made carpet can last for _____ years.'
+        textZh: '一块做工精良的飞毯可以使用 _____ 年。'
+        answer: 'two hundred'
+
+  # ============================================================
+  # L235: The Enchanted Forest School Trip
+  # ============================================================
+
+  - id: L235
+    type: sentence-completion
+    title: 'The Enchanted Forest School Trip'
+    titleZh: '魔法森林学校旅行'
+    scene: 'You will hear a teacher briefing students before a trip to an enchanted forest.'
+    sceneZh: '你将听到一位老师在去魔法森林旅行前给学生做简报。'
+    difficulty: 2
+    audioFile: 'L235.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'Right, everyone, listen carefully. Tomorrow we are visiting the Enchanted Forest of Willowmere as part of our Magical Creatures module. The coach leaves school at eight fifteen, so please arrive by eight o''clock at the latest.'
+      - speaker: teacher
+        voice: nova
+        text: 'You will need to wear comfortable walking shoes and bring a packed lunch. The forest path is about five kilometres long and takes around three hours to walk. There are no shops inside the forest, so bring enough water for the whole day.'
+      - speaker: teacher
+        voice: nova
+        text: 'Now, the forest is home to many magical creatures, but they are mostly shy. The best way to see them is to walk quietly and avoid sudden movements. If you are lucky, you might spot a silver fox — there are only about twenty left in the entire forest.'
+      - speaker: teacher
+        voice: nova
+        text: 'There are three rules you must follow at all times. First, do not pick any flowers or plants — some of them are extremely rare and others can cause a temporary rash that makes your skin turn green for three days. Second, stay on the marked path. Students who wander off the path often get confused by the forest''s natural enchantment and walk in circles.'
+      - speaker: teacher
+        voice: nova
+        text: 'Third, and most importantly, do not eat any berries or mushrooms you find. Even if they look delicious, some of them have strange magical effects. Last year, a student ate a blue mushroom and spoke backwards for an entire weekend.'
+      - speaker: teacher
+        voice: nova
+        text: 'At the end of the trail, there is a viewing platform overlooking Dragonfly Lake. That is where we will have lunch and I will give you your observation worksheets. Please bring a pencil and a notebook for sketching any creatures you see. Any questions?'
+    sentences:
+      - id: L235-S1
+        text: 'The coach leaves school at _____ on the day of the trip.'
+        textZh: '旅行当天校车在 _____ 出发。'
+        answer: 'eight fifteen'
+      - id: L235-S2
+        text: 'The forest path is about _____ kilometres long.'
+        textZh: '森林小径大约 _____ 公里长。'
+        answer: 'five'
+      - id: L235-S3
+        text: 'There are only about _____ silver foxes left in the forest.'
+        textZh: '森林里只剩下大约 _____ 只银狐。'
+        answer: 'twenty'
+      - id: L235-S4
+        text: 'Some plants can cause a rash that turns skin _____ for three days.'
+        textZh: '有些植物会导致皮疹，让皮肤变 _____ 三天。'
+        answer: 'green'
+      - id: L235-S5
+        text: 'A student who ate a blue mushroom spoke _____ for an entire weekend.'
+        textZh: '一个吃了蓝色蘑菇的学生整个周末都 _____ 说话。'
+        answer: 'backwards'
+      - id: L235-S6
+        text: 'At the end of the trail there is a viewing platform overlooking _____ Lake.'
+        textZh: '小径尽头有一个俯瞰 _____ 湖的观景台。'
+        answer: 'Dragonfly'
+
+  # ============================================================
+  # L236: The Transformation Tournament
+  # ============================================================
+
+  - id: L236
+    type: sentence-completion
+    title: 'The Transformation Tournament'
+    titleZh: '变身锦标赛'
+    scene: 'You will hear a sports commentator describing a magical tournament.'
+    sceneZh: '你将听到一位体育解说员描述一场魔法锦标赛。'
+    difficulty: 3
+    audioFile: 'L236.mp3'
+    script:
+      - speaker: commentator
+        voice: echo
+        text: 'Good afternoon and welcome to the annual Transformation Tournament! I am your commentator, Felix Brightwater, and today we have twelve competitors from six different schools all hoping to win the Golden Feather trophy.'
+      - speaker: commentator
+        voice: echo
+        text: 'For those watching for the first time, let me explain the rules. Each competitor must transform into three different animals in sequence — first a land animal, then a water animal, then a bird. They are judged on speed, accuracy, and how completely they transform. A partial transformation — say, keeping human hands while in eagle form — loses points.'
+      - speaker: commentator
+        voice: echo
+        text: 'The current champion is Maya Chen from Silverwood Academy. She won last year by transforming into a cheetah, a dolphin, and a golden eagle in just forty-five seconds — a record that still stands. Her dolphin transformation was particularly impressive because she managed to perform a complete leap out of the water tank.'
+      - speaker: commentator
+        voice: echo
+        text: 'This year''s wild card entry is Leo Santos, who is only eleven years old — the youngest competitor in tournament history. He qualified by transforming into a snow leopard so realistic that the judges thought an actual leopard had walked onto the stage!'
+      - speaker: commentator
+        voice: echo
+        text: 'The tournament begins in fifteen minutes. Competitors are warming up backstage with stretching exercises — physical flexibility actually helps with transformation, as the body needs to reshape quickly. We will be back right after this short break.'
+    sentences:
+      - id: L236-S1
+        text: 'There are _____ competitors from six different schools.'
+        textZh: '有来自六所不同学校的 _____ 名参赛者。'
+        answer: 'twelve'
+      - id: L236-S2
+        text: 'Competitors must transform into a land animal, a water animal, and a _____.'
+        textZh: '参赛者必须变成一种陆地动物、一种水生动物和一种 _____。'
+        answer: 'bird'
+      - id: L236-S3
+        text: 'Maya Chen completed her three transformations in just _____ seconds.'
+        textZh: 'Maya Chen仅用 _____ 秒就完成了三次变身。'
+        answer: 'forty-five'
+      - id: L236-S4
+        text: 'Leo Santos is the youngest competitor at only _____ years old.'
+        textZh: 'Leo Santos是最年轻的参赛者，只有 _____ 岁。'
+        answer: 'eleven'
+      - id: L236-S5
+        text: 'Leo qualified by transforming into a snow _____.'
+        textZh: 'Leo通过变身为一只雪 _____ 获得了资格。'
+        answer: 'leopard'
+      - id: L236-S6
+        text: 'Physical _____ helps with transformation because the body needs to reshape quickly.'
+        textZh: '身体 _____ 有助于变身，因为身体需要快速重塑。'
+        answer: 'flexibility'
+
+  # ============================================================
+  # L237: Life as a Dragon Keeper
+  # ============================================================
+
+  - id: L237
+    type: sentence-completion
+    title: 'Life as a Dragon Keeper'
+    titleZh: '龙看守的生活'
+    scene: 'You will hear a dragon keeper describing her daily routine.'
+    sceneZh: '你将听到一位龙看守描述她的日常生活。'
+    difficulty: 2
+    audioFile: 'L237.mp3'
+    script:
+      - speaker: keeper
+        voice: shimmer
+        text: 'My name is Rosa, and I have been a dragon keeper at the Royal Sanctuary for seven years now. People always ask what a typical day looks like, so let me walk you through it.'
+      - speaker: keeper
+        voice: shimmer
+        text: 'I wake up at five in the morning because dragons are early risers. The first task is feeding. Each adult dragon eats approximately fifty kilograms of food per day. Fire dragons eat coal and spicy peppers. Water dragons prefer fish and seaweed. Earth dragons eat rocks — yes, actual rocks!'
+      - speaker: keeper
+        voice: shimmer
+        text: 'After feeding, I check each dragon for health issues. I examine their scales, teeth, and wings. A healthy dragon''s scales are smooth and shiny. Dull or flaky scales usually indicate the dragon is not getting enough sunlight.'
+      - speaker: keeper
+        voice: shimmer
+        text: 'From ten until noon, I supervise the dragons'' exercise time. They fly around a specially designed course with hoops and obstacles. Exercise is essential because a dragon that does not fly regularly can develop wing cramps, which are extremely painful.'
+      - speaker: keeper
+        voice: shimmer
+        text: 'In the afternoon, I clean the nesting areas and prepare evening meals. The hardest part of my job is bath time — imagine trying to give a bath to a creature that weighs three tonnes and hates water! Fire dragons are the worst because they heat the water to boiling within seconds.'
+      - speaker: keeper
+        voice: shimmer
+        text: 'I finish work at about six each evening, but I am always on call for emergencies. The best part of this job is the bond you develop with the dragons. My favourite, a water dragon called Pearl, greets me every morning by blowing a tiny snowflake onto my nose.'
+    sentences:
+      - id: L237-S1
+        text: 'Rosa has worked at the Royal Sanctuary for _____ years.'
+        textZh: 'Rosa已经在皇家保护区工作了 _____ 年。'
+        answer: 'seven'
+      - id: L237-S2
+        text: 'Each adult dragon eats about _____ kilograms of food per day.'
+        textZh: '每只成年龙每天吃大约 _____ 公斤食物。'
+        answer: 'fifty'
+      - id: L237-S3
+        text: 'Dull or flaky scales usually mean the dragon needs more _____.'
+        textZh: '暗淡或起皮的鳞片通常意味着龙需要更多的 _____。'
+        answer: 'sunlight'
+      - id: L237-S4
+        text: 'A dragon that does not fly regularly can develop wing _____.'
+        textZh: '不经常飞行的龙可能会出现翅膀 _____。'
+        answer: 'cramps'
+      - id: L237-S5
+        text: 'Fire dragons are the hardest to bathe because they _____ the water quickly.'
+        textZh: '火龙最难洗澡，因为它们会迅速把水 _____。'
+        answer: 'heat'
+      - id: L237-S6
+        text: 'Pearl greets Rosa each morning by blowing a tiny _____ onto her nose.'
+        textZh: 'Pearl每天早上朝Rosa鼻子上吹一朵小 _____ 来打招呼。'
+        answer: 'snowflake'
+
+  # ============================================================
+  # L238: The Spell Library
+  # ============================================================
+
+  - id: L238
+    type: sentence-completion
+    title: 'The Spell Library'
+    titleZh: '咒语图书馆'
+    scene: 'You will hear a librarian explaining how the spell library works.'
+    sceneZh: '你将听到一位图书管理员解释咒语图书馆是如何运作的。'
+    difficulty: 3
+    audioFile: 'L238.mp3'
+    script:
+      - speaker: librarian
+        voice: nova
+        text: 'Welcome to the Spell Library. This is not an ordinary library. Our books contain real spells, and every book is alive — in a way. Let me explain the rules before you explore.'
+      - speaker: librarian
+        voice: nova
+        text: 'The books are organised by colour. The green section contains nature spells — growing plants, controlling weather, talking to animals. The blue section has water and ice spells. Red is for fire magic, and the purple section contains transformation spells, which are the most advanced.'
+      - speaker: librarian
+        voice: nova
+        text: 'Each book has a difficulty rating from one to ten. As first-year students, you may only borrow books rated one to three. Attempting a spell above your level can be dangerous — a second-year student once tried a level-eight spell and accidentally turned himself into a teapot for three days.'
+      - speaker: librarian
+        voice: nova
+        text: 'When you open a spell book, the words will float off the page and arrange themselves in the air around you. You read them by walking in a circle. This is how spells were originally meant to be read — not sitting down, but moving. The movement helps your body absorb the magical energy.'
+      - speaker: librarian
+        voice: nova
+        text: 'Books must be returned within two weeks. If a book is overdue, it will fly back to the library by itself, and you will receive a Warning Spark — a tiny flash of light that follows you around all day reminding you to be more responsible. It is quite embarrassing, I assure you.'
+      - speaker: librarian
+        voice: nova
+        text: 'One final tip: always read the last page of a spell book before trying the spell. The last page always contains the reversal spell, in case something goes wrong. Trust me, you will need it more than you think.'
+    sentences:
+      - id: L238-S1
+        text: 'The _____ section of the library contains transformation spells.'
+        textZh: '图书馆的 _____ 区域包含变身咒语。'
+        answer: 'purple'
+      - id: L238-S2
+        text: 'First-year students may only borrow books rated one to _____.'
+        textZh: '一年级学生只能借阅等级一到 _____ 的书。'
+        answer: 'three'
+      - id: L238-S3
+        text: 'A student who tried a hard spell was turned into a _____ for three days.'
+        textZh: '一个尝试高难度咒语的学生被变成了 _____ 三天。'
+        answer: 'teapot'
+      - id: L238-S4
+        text: 'The words float off the page and you read them by walking in a _____.'
+        textZh: '文字会从页面上飘起来，你要绕 _____ 走来阅读它们。'
+        answer: 'circle'
+      - id: L238-S5
+        text: 'An overdue book will fly back by itself and you receive a Warning _____.'
+        textZh: '逾期的书会自己飞回来，你会收到一个警告 _____。'
+        answer: 'Spark'
+      - id: L238-S6
+        text: 'The last page of a spell book always contains the _____ spell.'
+        textZh: '咒语书的最后一页总是包含 _____ 咒语。'
+        answer: 'reversal'
+
+  # ============================================================
+  # L239: The Dragon Language
+  # ============================================================
+
+  - id: L239
+    type: sentence-completion
+    title: 'The Dragon Language'
+    titleZh: '龙语'
+    scene: 'You will hear a linguistics professor explaining how dragons communicate.'
+    sceneZh: '你将听到一位语言学教授讲解龙是如何交流的。'
+    difficulty: 3
+    audioFile: 'L239.mp3'
+    script:
+      - speaker: professor
+        voice: echo
+        text: 'Dragon language is fascinating because it uses three channels simultaneously — sound, colour, and smoke. Humans only use one channel at a time, which is why learning Dragon Language takes so long.'
+      - speaker: professor
+        voice: echo
+        text: 'The sound channel works like our language but with much deeper tones. Dragon vocal cords can produce sounds below the range of human hearing, called infrasound. These deep sounds can travel through mountains and be heard up to fifty kilometres away.'
+      - speaker: professor
+        voice: echo
+        text: 'The colour channel is equally important. Dragons change the colour of a special patch of scales on their throat while speaking. A warm golden colour means happiness or agreement. A cold blue means sadness or disagreement. Red signals danger or anger.'
+      - speaker: professor
+        voice: echo
+        text: 'The smoke channel is the subtlest. Different smoke patterns carry different meanings. A thin, straight line of smoke means a simple statement. Smoke rings indicate a question. And spiralling smoke shows excitement or surprise.'
+      - speaker: professor
+        voice: echo
+        text: 'The biggest difficulty for human learners is that we cannot produce coloured smoke. Our translation devices help, but they can only capture about seventy percent of what a dragon is saying. The remaining thirty percent — the emotional nuance carried by the smoke — is often lost in translation.'
+      - speaker: professor
+        voice: echo
+        text: 'I always tell my students that the best way to learn Dragon Language is to spend time with dragons. Just as children learn language through immersion, you will develop an intuition for dragon communication after about six months of daily interaction.'
+    sentences:
+      - id: L239-S1
+        text: 'Dragon language uses three channels: sound, colour, and _____.'
+        textZh: '龙语使用三个通道：声音、颜色和 _____。'
+        answer: 'smoke'
+      - id: L239-S2
+        text: 'Deep dragon sounds can travel up to _____ kilometres away.'
+        textZh: '龙的低沉声音可以传播到 _____ 公里之外。'
+        answer: 'fifty'
+      - id: L239-S3
+        text: 'A warm _____ colour on the throat means happiness or agreement.'
+        textZh: '喉部温暖的 _____ 色表示快乐或同意。'
+        answer: 'golden'
+      - id: L239-S4
+        text: 'Smoke rings indicate that the dragon is asking a _____.'
+        textZh: '烟圈表示龙正在问一个 _____。'
+        answer: 'question'
+      - id: L239-S5
+        text: 'Translation devices can only capture about _____ percent of dragon speech.'
+        textZh: '翻译设备只能捕捉到约 _____ 的龙语。'
+        answer: 'seventy'
+      - id: L239-S6
+        text: 'Students need about _____ months of daily interaction to develop good intuition.'
+        textZh: '学生需要大约 _____ 个月的每日互动来培养良好的直觉。'
+        answer: 'six'
+
+  # ============================================================
+  # L240: The Potion Ingredients Market
+  # ============================================================
+
+  - id: L240
+    type: sentence-completion
+    title: 'The Potion Ingredients Market'
+    titleZh: '魔药原料市场'
+    scene: 'You will hear a shopkeeper giving a tour of her potion ingredients shop.'
+    sceneZh: '你将听到一位店主带客人参观她的魔药原料店。'
+    difficulty: 2
+    audioFile: 'L240.mp3'
+    script:
+      - speaker: shopkeeper
+        voice: shimmer
+        text: 'Come in, come in! Welcome to Bramble and Thorn, the oldest potion ingredients shop in the kingdom. We have been here since seventeen forty-two — that is nearly three hundred years!'
+      - speaker: shopkeeper
+        voice: shimmer
+        text: 'On your left, you will see our dried herbs section. We have over two hundred varieties, all grown in our own garden behind the shop. The most popular herb is moonmint, which is used in sleeping potions. It only blooms on nights with a full moon, so we can only harvest it twelve times a year.'
+      - speaker: shopkeeper
+        voice: shimmer
+        text: 'The glass jars on the top shelf contain dragon scales. We do not harm any dragons — these are naturally shed scales that we collect from dragon sanctuaries. A single fire dragon scale costs fifteen gold coins because each scale contains concentrated heat energy.'
+      - speaker: shopkeeper
+        voice: shimmer
+        text: 'In the back room, we keep our rarest ingredient — phoenix tears. A phoenix cries very rarely, perhaps once every fifty years, and a single tear can heal almost any wound. We have only three bottles in stock, and each one is worth more than this entire shop.'
+      - speaker: shopkeeper
+        voice: shimmer
+        text: 'For young potion makers, I recommend our starter kit, which includes ten basic ingredients and a recipe booklet with twenty simple potions. It costs just five silver coins and is perfect for beginners.'
+    sentences:
+      - id: L240-S1
+        text: 'The shop has been open since _____ — nearly three hundred years.'
+        textZh: '这家店自 _____ 年以来一直营业——将近三百年。'
+        answer: 'seventeen forty-two'
+      - id: L240-S2
+        text: 'The most popular herb is _____, used in sleeping potions.'
+        textZh: '最受欢迎的草药是 _____，用于睡眠魔药。'
+        answer: 'moonmint'
+      - id: L240-S3
+        text: 'Moonmint can only be harvested _____ times a year.'
+        textZh: '月薄荷每年只能收获 _____ 次。'
+        answer: 'twelve'
+      - id: L240-S4
+        text: 'A single fire dragon scale costs _____ gold coins.'
+        textZh: '一片火龙鳞片值 _____ 金币。'
+        answer: 'fifteen'
+      - id: L240-S5
+        text: 'The rarest ingredient in the shop is phoenix _____.'
+        textZh: '店里最稀有的原料是凤凰 _____。'
+        answer: 'tears'
+      - id: L240-S6
+        text: 'The starter kit costs five _____ coins.'
+        textZh: '入门套装价格为五枚 _____ 币。'
+        answer: 'silver'
+
+  # ============================================================
+  # L241: The Enchanted Map Project
+  # ============================================================
+
+  - id: L241
+    type: sentence-completion
+    title: 'The Enchanted Map Project'
+    titleZh: '魔法地图项目'
+    scene: 'You will hear a student presenting her school project about magical maps.'
+    sceneZh: '你将听到一位学生展示她关于魔法地图的学校项目。'
+    difficulty: 3
+    audioFile: 'L241.mp3'
+    script:
+      - speaker: girl
+        voice: shimmer
+        text: 'Hello, everyone. My project is about the history of enchanted maps. I spent three months researching this topic and visited the Royal Map Museum twice.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The first enchanted map was created in the year eight hundred and twenty by a cartographer called Elena of the Silver Coast. She discovered that if you drew a map using ink made from octopus blood mixed with moonlight, the map would update itself. Mountains that moved, rivers that changed course — the map showed everything in real time.'
+      - speaker: girl
+        voice: shimmer
+        text: 'Today, the most advanced enchanted map is the Atlas of Moving Things, kept in the Grand Library of Azura. This map is the size of an entire room and shows every living creature in the kingdom as a tiny moving dot. It was originally created to help rescue lost travellers.'
+      - speaker: girl
+        voice: shimmer
+        text: 'The most interesting map I learned about is the Friendship Map. It shows glowing lines connecting people who are true friends. The closer the friendship, the brighter the line. If a friendship is in trouble, the line flickers. This map helped me understand that friendship is something real that can actually be seen and measured.'
+      - speaker: girl
+        voice: shimmer
+        text: 'For the practical part of my project, I tried to make my own simple enchanted map of the school. I used special drawing ink from the art room. My map cannot update itself, but it does show the location of all the hidden passages in our school building. There are fourteen of them — and two were completely unknown until I made this map!'
+    sentences:
+      - id: L241-S1
+        text: 'The student spent _____ months researching the project.'
+        textZh: '该学生花了 _____ 个月研究这个项目。'
+        answer: 'three'
+      - id: L241-S2
+        text: 'The first enchanted map was created by Elena of the _____ Coast.'
+        textZh: '第一张魔法地图由 _____ 海岸的Elena创造。'
+        answer: 'Silver'
+      - id: L241-S3
+        text: 'The Atlas of Moving Things is kept in the Grand Library of _____.'
+        textZh: '万物图集保存在 _____ 大图书馆。'
+        answer: 'Azura'
+      - id: L241-S4
+        text: 'The Friendship Map shows glowing _____ connecting true friends.'
+        textZh: '友谊地图显示连接真正朋友的发光 _____。'
+        answer: 'lines'
+      - id: L241-S5
+        text: 'The student''s school map shows the location of _____ hidden passages.'
+        textZh: '学生的学校地图显示了 _____ 条隐藏通道的位置。'
+        answer: 'fourteen'
+      - id: L241-S6
+        text: '_____ of the hidden passages were completely unknown before the map was made.'
+        textZh: '在地图制作之前，有 _____ 条隐藏通道完全不为人知。'
+        answer: 'Two'
+
+  # ============================================================
+  # L242: The Weather Wizard
+  # ============================================================
+
+  - id: L242
+    type: sentence-completion
+    title: 'The Weather Wizard'
+    titleZh: '天气巫师'
+    scene: 'You will hear a weather wizard explaining her job to visiting students.'
+    sceneZh: '你将听到一位天气巫师向来访学生讲解她的工作。'
+    difficulty: 2
+    audioFile: 'L242.mp3'
+    script:
+      - speaker: wizard
+        voice: nova
+        text: 'Hello, young visitors! I am Windara, the Chief Weather Wizard for the Northern Region. My job is to manage the weather for an area covering approximately eight hundred square kilometres.'
+      - speaker: wizard
+        voice: nova
+        text: 'Every morning at dawn, I climb to the top of Weather Tower — that tall building you can see from the school — and decide what weather we need for the day. Farmers might request rain for their crops. Festival organisers might ask for sunshine. I try to balance everyone''s needs.'
+      - speaker: wizard
+        voice: nova
+        text: 'Creating rain is the easiest type of weather to make. I simply heat a large cauldron of water until it evaporates, then guide the steam upwards with a directional spell. Within about twenty minutes, rain clouds form naturally. Sunshine is harder — I have to push existing clouds away using wind spells, which requires much more energy.'
+      - speaker: wizard
+        voice: nova
+        text: 'The most difficult weather to create is snow. It requires a combination of cold spells and moisture spells working together perfectly. If the balance is even slightly wrong, you get freezing rain instead of snow, which nobody enjoys.'
+      - speaker: wizard
+        voice: nova
+        text: 'I work with a team of three assistant wizards. We take turns on night duty because weather needs to be monitored around the clock. If a storm develops unexpectedly, the night wizard must act quickly to prevent damage. My assistant Breezy once stopped a tornado at two in the morning — she earned a medal for that.'
+    sentences:
+      - id: L242-S1
+        text: 'Windara manages weather for an area of about _____ square kilometres.'
+        textZh: 'Windara管理大约 _____ 平方公里区域的天气。'
+        answer: 'eight hundred'
+      - id: L242-S2
+        text: 'Every morning, Windara climbs to the top of Weather _____.'
+        textZh: '每天早上，Windara爬到天气 _____ 顶部。'
+        answer: 'Tower'
+      - id: L242-S3
+        text: 'Creating _____ is the easiest type of weather to make.'
+        textZh: '制造 _____ 是最容易创造的天气类型。'
+        answer: 'rain'
+      - id: L242-S4
+        text: 'If snow spells go wrong, you get freezing _____ instead.'
+        textZh: '如果造雪咒出了差错，你会得到冻 _____ 而不是雪。'
+        answer: 'rain'
+      - id: L242-S5
+        text: 'Windara works with a team of _____ assistant wizards.'
+        textZh: 'Windara有一个由 _____ 名助理巫师组成的团队。'
+        answer: 'three'
+      - id: L242-S6
+        text: 'Breezy earned a medal for stopping a _____ at two in the morning.'
+        textZh: 'Breezy因为在凌晨两点阻止了一场 _____ 而获得了奖章。'
+        answer: 'tornado'
+
+  # ============================================================
+  # L243: The Magical Pet Show
+  # ============================================================
+
+  - id: L243
+    type: sentence-completion
+    title: 'The Magical Pet Show'
+    titleZh: '魔法宠物展'
+    scene: 'You will hear a boy describing his experience at a magical pet show.'
+    sceneZh: '你将听到一个男孩描述他在魔法宠物展上的经历。'
+    difficulty: 2
+    audioFile: 'L243.mp3'
+    script:
+      - speaker: boy
+        voice: echo
+        text: 'I went to the annual Magical Pet Show last Saturday, and it was amazing! There were over fifty different magical creatures on display, all brought by their owners. The show was held in the Great Crystal Hall, which is the only building in town large enough for dragons.'
+      - speaker: boy
+        voice: echo
+        text: 'The first category was "Best Trick." A girl called Priya won this with her miniature phoenix. The phoenix could write words in the air using its tail feathers, which leave trails of fire. It wrote "HELLO" for the judges and they gave it full marks.'
+      - speaker: boy
+        voice: echo
+        text: 'My favourite part was the "Most Unusual Pet" category. The winner was a cloud rabbit — it looks like a normal rabbit but is made entirely of cloud. You can put your hand right through it! Its owner feeds it by putting water in a dish, and the rabbit absorbs the moisture through its feet.'
+      - speaker: boy
+        voice: echo
+        text: 'I entered my pet shadow cat, Midnight, in the "Best Appearance" category. Shadow cats are made of living shadow — they are completely flat and slide along walls and floors like a real shadow. Midnight did not win, but she got third place, which I was very proud of.'
+      - speaker: boy
+        voice: echo
+        text: 'The grand prize — Best in Show — went to a baby sea dragon called Neptune. It was turquoise blue with silver fins and could blow perfect bubbles that floated around the hall. The judge said Neptune was the most beautiful magical creature she had seen in twenty years of judging.'
+    sentences:
+      - id: L243-S1
+        text: 'The show had over _____ different magical creatures on display.'
+        textZh: '展览展示了超过 _____ 种不同的魔法生物。'
+        answer: 'fifty'
+      - id: L243-S2
+        text: 'Priya''s phoenix won "Best Trick" by writing words using its tail _____.'
+        textZh: 'Priya的凤凰用尾 _____ 写字赢得了"最佳技巧"奖。'
+        answer: 'feathers'
+      - id: L243-S3
+        text: 'The cloud rabbit absorbs moisture through its _____.'
+        textZh: '云兔通过它的 _____ 吸收水分。'
+        answer: 'feet'
+      - id: L243-S4
+        text: 'The boy''s shadow cat Midnight got _____ place in "Best Appearance."'
+        textZh: '男孩的影子猫Midnight在"最佳外观"中获得了第 _____ 名。'
+        answer: 'third'
+      - id: L243-S5
+        text: 'The grand prize winner was a baby sea dragon called _____.'
+        textZh: '大奖得主是一只叫 _____ 的小海龙。'
+        answer: 'Neptune'
+      - id: L243-S6
+        text: 'The judge said Neptune was the most beautiful creature in _____ years of judging.'
+        textZh: '评委说Neptune是她 _____ 年评审生涯中见过的最美的生物。'
+        answer: 'twenty'
+
+  # ============================================================
+  # L244: The Dragon Migration
+  # ============================================================
+
+  - id: L244
+    type: sentence-completion
+    title: 'The Dragon Migration'
+    titleZh: '龙的迁徙'
+    scene: 'You will hear a nature documentary narrator describing the dragon migration.'
+    sceneZh: '你将听到一位自然纪录片旁白描述龙的迁徙。'
+    difficulty: 3
+    audioFile: 'L244.mp3'
+    script:
+      - speaker: narrator
+        voice: nova
+        text: 'Every autumn, as the leaves begin to change colour, something extraordinary happens in the skies above the Northern Mountains. Thousands of dragons begin their annual migration south to the Warm Valleys, a journey of over two thousand kilometres.'
+      - speaker: narrator
+        voice: nova
+        text: 'The migration is led by the eldest female dragon, known as the Pathfinder. This year''s Pathfinder is a fire dragon called Aurora, who is estimated to be over three hundred years old. She has made this journey more than two hundred and fifty times.'
+      - speaker: narrator
+        voice: nova
+        text: 'The dragons fly in a V-formation, similar to geese. This reduces wind resistance and allows weaker dragons to rest by flying in the slipstream of stronger ones. Young dragons, making the journey for the first time, always fly at the centre of the formation where they are most protected.'
+      - speaker: narrator
+        voice: nova
+        text: 'The journey takes approximately nine days, with three rest stops along the way. The most important stop is Lake Sapphire, where the dragons drink and replenish their fire reserves. Without this stop, fire dragons would arrive in the south unable to breathe flame for weeks.'
+      - speaker: narrator
+        voice: nova
+        text: 'Scientists have recently discovered that dragons navigate using the earth''s magnetic field. Tiny crystals of magnetite in their brains act like a built-in compass, allowing them to find their way even through thick cloud cover. This explains how dragons have followed the same route perfectly for thousands of years.'
+    sentences:
+      - id: L244-S1
+        text: 'The migration journey covers over _____ kilometres.'
+        textZh: '迁徙旅程超过 _____ 公里。'
+        answer: 'two thousand'
+      - id: L244-S2
+        text: 'This year''s Pathfinder is a fire dragon called _____.'
+        textZh: '今年的领路者是一只叫 _____ 的火龙。'
+        answer: 'Aurora'
+      - id: L244-S3
+        text: 'Young dragons fly at the _____ of the formation for protection.'
+        textZh: '幼龙飞在队列的 _____ 以获得保护。'
+        answer: 'centre'
+      - id: L244-S4
+        text: 'The journey takes approximately _____ days.'
+        textZh: '旅程大约需要 _____ 天。'
+        answer: 'nine'
+      - id: L244-S5
+        text: 'The most important rest stop is at Lake _____.'
+        textZh: '最重要的休息站在 _____ 湖。'
+        answer: 'Sapphire'
+      - id: L244-S6
+        text: 'Dragons navigate using tiny crystals of _____ in their brains.'
+        textZh: '龙利用大脑中微小的 _____ 晶体来导航。'
+        answer: 'magnetite'
+
+  # ============================================================
+  # L245: The Dragon Academy Graduation
+  # ============================================================
+
+  - id: L245
+    type: sentence-completion
+    title: 'The Dragon Academy Graduation'
+    titleZh: '龙学院毕业典礼'
+    scene: 'You will hear a graduating student giving a speech at Dragon Academy.'
+    sceneZh: '你将听到一位毕业生在龙学院发表演讲。'
+    difficulty: 3
+    audioFile: 'L245.mp3'
+    script:
+      - speaker: student
+        voice: shimmer
+        text: 'Thank you, Professor Thornwing, teachers, parents, and fellow graduates. Four years ago, I walked through the gates of Dragon Academy as a frightened eleven-year-old who had never even seen a dragon up close. Today, I leave as someone who can fly, speak Dragon Language, and brew healing potions.'
+      - speaker: student
+        voice: shimmer
+        text: 'When I arrived, I was paired with a tiny water dragon called Mist. She was so small she could sit on my shoulder. Now she is eight metres long and can create rainstorms that water an entire farm. We have grown together, and she has taught me more about patience than any textbook ever could.'
+      - speaker: student
+        voice: shimmer
+        text: 'My favourite memory from Dragon Academy is the Night Flight ceremony at the end of second year. All the students and their dragons flew together through the Northern Lights. The sky was green and purple and gold, and our dragons breathed fire in celebration. It was the most beautiful thing I have ever seen.'
+      - speaker: student
+        voice: shimmer
+        text: 'To the new students starting next September — do not worry if things seem difficult at first. I failed my first Flight Training exam three times before I passed. The secret is not talent; it is persistence. Every expert was once a beginner.'
+      - speaker: student
+        voice: shimmer
+        text: 'I want to end with the words of our founder, Elara Dragonheart: "The bond between human and dragon is the strongest magic of all." I believe that is true. Thank you, Dragon Academy, for the best four years of my life.'
+    sentences:
+      - id: L245-S1
+        text: 'The speaker arrived at Dragon Academy at age _____.'
+        textZh: '演讲者在 _____ 岁时到达龙学院。'
+        answer: 'eleven'
+      - id: L245-S2
+        text: 'Her dragon partner is a water dragon called _____.'
+        textZh: '她的龙伙伴是一只叫 _____ 的水龙。'
+        answer: 'Mist'
+      - id: L245-S3
+        text: 'Mist is now _____ metres long.'
+        textZh: 'Mist现在有 _____ 米长。'
+        answer: 'eight'
+      - id: L245-S4
+        text: 'The Night Flight ceremony took place at the end of _____ year.'
+        textZh: '夜间飞行仪式在 _____ 年级结束时举行。'
+        answer: 'second'
+      - id: L245-S5
+        text: 'The speaker failed her first Flight Training exam _____ times.'
+        textZh: '演讲者第一次飞行训练考试失败了 _____ 次。'
+        answer: 'three'
+      - id: L245-S6
+        text: 'The Academy''s founder was called Elara _____.'
+        textZh: '学院的创始人叫Elara _____。'
+        answer: 'Dragonheart'
+
+  # ============================================================
+  # L246–L265: Part 3 — Multiple Matching (Fantasy/Dragon Theme)
+  # ============================================================
+
+  # ============================================================
+  # L246: Why I Love Dragons
+  # ============================================================
+
+  - id: L246
+    type: multiple-matching
+    title: 'Why I Love Dragons'
+    titleZh: '我为什么喜欢龙'
+    scene: 'You will hear five young people explaining what they love most about dragons.'
+    sceneZh: '你将听到五位年轻人解释他们最喜欢龙的什么。'
+    difficulty: 2
+    audioFile: 'L246.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'For me, it is the flying. When I sit on my dragon and we take off into the sky, all my worries disappear. There is nothing like seeing the world from above — the tiny houses, the winding rivers, the patchwork fields. My dragon, Storm, knows exactly when I need to fly. On stressful days, he nudges me towards the stable as if to say, "Come on, let us go." Flying is my therapy.'
+      - name: Speaker 2
+        text: 'What I love most is how intelligent they are. My earth dragon, Boulder, understands more words than my dog and can solve puzzles faster than most humans I know. Last week, I hid his favourite gemstone inside a locked box with three combination locks. He figured out all three codes in under ten minutes by watching me set them and memorising the movements. They are truly remarkable thinkers.'
+      - name: Speaker 3
+        text: 'I love the bond you form with a dragon. My water dragon, Ripple, knows how I am feeling before I even say a word. When I am sad, she wraps her tail around me like a warm blanket. When I am happy, she splashes water playfully. It is like having a best friend who understands you completely without needing words. No other animal creates such a deep emotional connection.'
+      - name: Speaker 4
+        text: 'For me, it is their beauty. Have you ever seen a crystal dragon at sunset? The light passes through their transparent body and paints rainbows across the landscape. Or a shadow dragon at midnight — they shimmer like liquid darkness, with tiny stars sparkling inside their wings. I could watch dragons for hours and never get bored. They are living works of art.'
+      - name: Speaker 5
+        text: 'What fascinates me most is their history. Dragons have been on this planet for over sixty million years — they were here before humans, before most animals we know today. Every species of dragon carries ancient knowledge in their memory, passed down through generations. My dragon, Sage, sometimes hums melodies that are thousands of years old. It makes me feel connected to the distant past.'
+    statements:
+      A: 'This person values the emotional connection with their dragon.'
+      B: 'This person admires dragon intelligence and problem-solving ability.'
+      C: 'This person finds peace and stress relief through flying.'
+      D: 'This person is most impressed by the visual beauty of dragons.'
+      E: 'This person is fascinated by the ancient history of dragons.'
+      F: 'This person appreciates how dragons help them study.'
+      G: 'This person enjoys the competitive side of dragon sports.'
+      H: 'This person likes teaching tricks to their dragon.'
+    answers:
+      Speaker 1: 'C'
+      Speaker 2: 'B'
+      Speaker 3: 'A'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "all my worries disappear" when flying and calls it "my therapy" — stress relief through flying (C).'
+      Speaker 1Zh: '说话者1说飞行时"所有烦恼都消失了"，并称之为"我的疗法"——通过飞行缓解压力（C）。'
+      Speaker 2: 'Speaker 2 describes their dragon solving puzzles and figuring out combination locks — admiring intelligence (B).'
+      Speaker 2Zh: '说话者2描述了他们的龙解谜和破解密码锁——欣赏智慧（B）。'
+      Speaker 3: 'Speaker 3 says the dragon knows their feelings and describes it as having "a best friend" — emotional connection (A).'
+      Speaker 3Zh: '说话者3说龙了解他们的感受，形容它像"一个最好的朋友"——情感连接（A）。'
+      Speaker 4: 'Speaker 4 describes crystal dragons at sunset and shadow dragons at midnight — visual beauty (D).'
+      Speaker 4Zh: '说话者4描述了日落时的水晶龙和午夜的影龙——视觉之美（D）。'
+      Speaker 5: 'Speaker 5 talks about dragons being sixty million years old and carrying "ancient knowledge" — fascinated by history (E).'
+      Speaker 5Zh: '说话者5谈到龙已有六千万年历史，承载着"远古知识"——对历史着迷（E）。'
+
+  # ============================================================
+  # L247: My Favourite Transformation
+  # ============================================================
+
+  - id: L247
+    type: multiple-matching
+    title: 'My Favourite Transformation'
+    titleZh: '我最喜欢的变身'
+    scene: 'You will hear five students talking about their favourite animal transformation.'
+    sceneZh: '你将听到五位学生谈论他们最喜欢的动物变身。'
+    difficulty: 2
+    audioFile: 'L247.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I always transform into an owl. I know it sounds boring compared to a dragon or a tiger, but being an owl at night is incredible. You can see in complete darkness as if the moon were shining brightly. Your hearing becomes so sharp that you can hear a mouse breathing from fifty metres away. I love using my owl form to explore the forest at night and watch all the nocturnal creatures going about their lives.'
+      - name: Speaker 2
+        text: 'My favourite transformation is into a dolphin. I grew up near the coast and I have always loved the ocean. When I transform, I can dive to depths that would be impossible for a human — I have been down to almost two hundred metres! The underwater world is so peaceful. I once swam alongside a family of whales for an entire afternoon. That is something I will remember for the rest of my life.'
+      - name: Speaker 3
+        text: 'I prefer becoming a cheetah. The speed is addictive. When I run at full speed — which is about a hundred and ten kilometres per hour — everything else seems to slow down around me. The wind roars in my ears and the ground blurs beneath my paws. I use my cheetah form mostly for sports competitions. Our school has a transformation racing team and I have won the hundred-metre sprint three years in a row.'
+      - name: Speaker 4
+        text: 'I love transforming into a butterfly. People think it is a strange choice because butterflies are small and fragile. But that is exactly why I love it. When you are that small, everyday places become completely different worlds. A garden becomes a jungle, a puddle becomes a lake, a gentle breeze becomes a powerful wind. It has given me a totally new perspective on the world around me.'
+      - name: Speaker 5
+        text: 'My go-to transformation is a snow leopard. I live in the mountains and a snow leopard is perfectly adapted to this environment. I can climb rocks that no human could manage, walk through deep snow effortlessly, and survive temperatures that would freeze a person in minutes. I volunteer with the mountain rescue team, and my leopard form has helped me reach three stranded hikers who would otherwise have been impossible to reach.'
+    statements:
+      A: 'This person uses their transformation to help rescue people.'
+      B: 'This person enjoys seeing the world from an unusually small perspective.'
+      C: 'This person values the enhanced senses their transformation gives them.'
+      D: 'This person uses their transformation in competitive sports.'
+      E: 'This person loves exploring underwater environments.'
+      F: 'This person uses transformation to study weather patterns.'
+      G: 'This person transforms to spend time with other animals.'
+      H: 'This person finds their transformation helpful for art and painting.'
+    answers:
+      Speaker 1: 'C'
+      Speaker 2: 'E'
+      Speaker 3: 'D'
+      Speaker 4: 'B'
+      Speaker 5: 'A'
+    explanations:
+      Speaker 1: 'Speaker 1 emphasises seeing in darkness and hearing a mouse from fifty metres away — enhanced senses (C).'
+      Speaker 1Zh: '说话者1强调在黑暗中看清和从五十米外听到老鼠的呼吸——增强的感官（C）。'
+      Speaker 2: 'Speaker 2 describes diving to two hundred metres and swimming with whales — exploring underwater (E).'
+      Speaker 2Zh: '说话者2描述了潜入两百米深处和与鲸鱼一起游泳——探索水下环境（E）。'
+      Speaker 3: 'Speaker 3 mentions the school transformation racing team and winning sprints three years in a row — competitive sports (D).'
+      Speaker 3Zh: '说话者3提到了学校变身赛跑队和连续三年赢得短跑——竞技体育（D）。'
+      Speaker 4: 'Speaker 4 says "a garden becomes a jungle, a puddle becomes a lake" — seeing the world from a tiny perspective (B).'
+      Speaker 4Zh: '说话者4说"花园变成丛林，水坑变成湖泊"——从微小视角看世界（B）。'
+      Speaker 5: 'Speaker 5 volunteers with mountain rescue and helped reach three stranded hikers — helping rescue people (A).'
+      Speaker 5Zh: '说话者5在山地救援队做志愿者，帮助到达了三名被困的徒步旅行者——帮助救援（A）。'
+
+  # ============================================================
+  # L248: How I Got My Dragon
+  # ============================================================
+
+  - id: L248
+    type: multiple-matching
+    title: 'How I Got My Dragon'
+    titleZh: '我是怎么得到我的龙的'
+    scene: 'You will hear five young people describing how they got their dragon partner.'
+    sceneZh: '你将听到五位年轻人描述他们是怎么得到龙伙伴的。'
+    difficulty: 2
+    audioFile: 'L248.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I found my dragon by complete accident. I was walking home from school through the woods when I tripped over what I thought was a big purple stone. It was actually an egg, and it started cracking the moment I touched it. A tiny dragon crawled out and looked straight at me with bright golden eyes. The dragon experts said she must have been waiting for exactly the right person to come along, and somehow that person was me.'
+      - name: Speaker 2
+        text: 'I rescued my dragon from a forest fire when he was just a baby. The fire had trapped him in a cave and he was too young to fly. I heard his cries while I was out hiking and managed to clear a path through the burning branches. He has been my loyal companion ever since — that was six years ago. My mum says he follows me everywhere because I was the first kind face he saw.'
+      - name: Speaker 3
+        text: 'I received my dragon as a birthday gift from my grandmother. She is a retired dragon breeder who has raised hundreds of dragons over her lifetime. On my tenth birthday, she took me to her farm and said I could choose any one I wanted. I chose the smallest, quietest one because everyone else seemed to overlook her. Grandmother said that was the best choice I could have made.'
+      - name: Speaker 4
+        text: 'My dragon chose me during the pairing ceremony at Dragon Academy. We walked through a tunnel of dragon eggs and I felt a strange pulling sensation in my chest. I stopped in front of a turquoise egg that was glowing brighter than all the others. When it hatched, a sky dragon with silver wings emerged. The teachers said it was the strongest bonding response they had seen in years.'
+      - name: Speaker 5
+        text: 'I won my dragon in a talent competition. The local dragon sanctuary held an annual contest where children performed a talent — singing, art, storytelling — and the winner received a dragon companion. I told a story about a lonely dragon searching for a friend, and the judges were so moved that they gave me first prize. My earth dragon, Pebble, has been my best friend since that day.'
+    statements:
+      A: 'This person found their dragon by accident during a walk.'
+      B: 'This person saved their dragon from danger.'
+      C: 'This person received their dragon as a gift from a family member.'
+      D: 'This person was chosen by their dragon in a ceremony.'
+      E: 'This person won their dragon in a competition.'
+      F: 'This person bought their dragon from a market.'
+      G: 'This person inherited their dragon from a neighbour.'
+      H: 'This person was given a dragon by their school teacher.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "I found my dragon by complete accident" while walking through the woods — found by accident (A).'
+      Speaker 1Zh: '说话者1说"我完全是偶然发现了我的龙"，在走过树林时——意外发现（A）。'
+      Speaker 2: 'Speaker 2 says "I rescued my dragon from a forest fire" — saved from danger (B).'
+      Speaker 2Zh: '说话者2说"我在森林大火中救了我的龙"——从危险中救出（B）。'
+      Speaker 3: 'Speaker 3 received a dragon on their tenth birthday from their grandmother — gift from family (C).'
+      Speaker 3Zh: '说话者3在十岁生日时从祖母那里收到了一只龙——来自家人的礼物（C）。'
+      Speaker 4: 'Speaker 4 describes the pairing ceremony where the egg glowed and chose them — chosen in a ceremony (D).'
+      Speaker 4Zh: '说话者4描述了配对仪式中蛋发光并选择了他们——在仪式中被选中（D）。'
+      Speaker 5: 'Speaker 5 says "I won my dragon in a talent competition" — won in competition (E).'
+      Speaker 5Zh: '说话者5说"我在才艺比赛中赢得了我的龙"——在比赛中赢得（E）。'
+
+  # ============================================================
+  # L249: What Surprised Me About Magic School
+  # ============================================================
+
+  - id: L249
+    type: multiple-matching
+    title: 'What Surprised Me About Magic School'
+    titleZh: '魔法学校让我惊讶的事'
+    scene: 'You will hear five students talking about what surprised them about magic school.'
+    sceneZh: '你将听到五位学生谈论魔法学校让他们惊讶的事情。'
+    difficulty: 2
+    audioFile: 'L249.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I expected magic school to be all fun and no hard work. I was completely wrong! The amount of homework is enormous. We have to memorise hundreds of spells, learn the properties of thousands of ingredients, and practise wand movements until they are absolutely perfect. I spend more time studying here than I ever did at normal school. Magic is seriously hard work.'
+      - name: Speaker 2
+        text: 'The thing that surprised me most was how important teamwork is. I thought magic was about individual power — one wizard casting spells alone. But almost every lesson involves working in groups. Complex spells require multiple wizards casting simultaneously. Even flying formations require perfect coordination. I have learned that magic is much more powerful when people work together.'
+      - name: Speaker 3
+        text: 'I was amazed at how much science is involved. Before coming here, I thought magic and science were opposites. But our potion classes are basically chemistry — measuring liquids, controlling temperatures, understanding reactions. And flight physics is real physics with added magic. My maths skills have improved more in one term of magic school than in three years of normal school.'
+      - name: Speaker 4
+        text: 'Nobody told me about the food! The dining hall here is incredible. The tables produce whatever food you ask for — you just say what you want and it appears on your plate, steaming hot. I expected cold sandwiches and boring school dinners. Instead, I have tried dishes from every country in the world. Last week I had Japanese ramen followed by Italian tiramisu. It is like having a five-star restaurant for every meal.'
+      - name: Speaker 5
+        text: 'What surprised me most was the kindness of the teachers. I was nervous because I come from a non-magical family, and I thought the teachers might look down on me. But they have been incredibly supportive. Professor Willowmist spent an extra hour after class every Friday helping me catch up on basic spells that other students already knew. I have never felt like an outsider here.'
+    statements:
+      A: 'This person was surprised by how much academic work is required.'
+      B: 'This person did not expect teamwork to be so important.'
+      C: 'This person was surprised to find so much science in magic classes.'
+      D: 'This person was impressed by the quality of school meals.'
+      E: 'This person appreciated the support from teachers.'
+      F: 'This person was surprised by the strict school uniform rules.'
+      G: 'This person did not expect to make so many friends.'
+      H: 'This person was amazed by the size of the school building.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "The amount of homework is enormous" and spends more time studying than at normal school — surprised by workload (A).'
+      Speaker 1Zh: '说话者1说"作业量巨大"，比在普通学校花更多时间学习——对学习量感到惊讶（A）。'
+      Speaker 2: 'Speaker 2 says "how important teamwork is" surprised them most — teamwork emphasis (B).'
+      Speaker 2Zh: '说话者2说最让他们惊讶的是"团队合作有多重要"——团队合作的重要性（B）。'
+      Speaker 3: 'Speaker 3 says "how much science is involved" and compares potions to chemistry — science in magic (C).'
+      Speaker 3Zh: '说话者3说"涉及了多少科学内容"，并将魔药与化学相比较——魔法中的科学（C）。'
+      Speaker 4: 'Speaker 4 says "Nobody told me about the food!" and describes incredible dining options — quality of meals (D).'
+      Speaker 4Zh: '说话者4说"没有人告诉我关于食物的事！"并描述了令人难以置信的用餐选择——餐食质量（D）。'
+      Speaker 5: 'Speaker 5 says the teachers were "incredibly supportive" and one spent extra time helping — teacher support (E).'
+      Speaker 5Zh: '说话者5说老师们"非常支持"，有一位老师花额外时间帮助他们——老师的支持（E）。'
+
+  # ============================================================
+  # L250: Our Dragon Academy Projects
+  # ============================================================
+
+  - id: L250
+    type: multiple-matching
+    title: 'Our Dragon Academy Projects'
+    titleZh: '我们的龙学院项目'
+    scene: 'You will hear five students presenting their end-of-year Dragon Academy projects.'
+    sceneZh: '你将听到五位学生展示他们的龙学院期末项目。'
+    difficulty: 3
+    audioFile: 'L250.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'My project focused on dragon nutrition. I studied what happens when fire dragons eat different minerals. I discovered that dragons who eat iron ore produce hotter flames than those who eat copper. By changing a dragon''s diet, we can actually control the temperature of their fire breath. My findings could help blacksmiths who rely on dragon fire for metalwork.'
+      - name: Speaker 2
+        text: 'I investigated dragon sleep patterns. Most people think dragons sleep at night like humans, but my research shows that dragons actually sleep in short bursts throughout the day — about twelve periods of twenty minutes each. During these micro-naps, their scales change to match their surroundings as camouflage. This explains why it is so hard to spot a sleeping dragon.'
+      - name: Speaker 3
+        text: 'My project was about dragon communication with other species. I discovered that water dragons can communicate with whales and dolphins using a special frequency of underwater sound that humans cannot hear. I recorded these sounds and played them back to dolphins in the harbour. The dolphins responded, which proves the communication is genuine and two-way.'
+      - name: Speaker 4
+        text: 'I built a fireproof shelter using dragon scale technology. I studied the molecular structure of dragon scales and found that they contain layers of air trapped between layers of mineral, creating natural insulation. I recreated this structure using ceramic tiles and trapped air pockets. My prototype shelter can withstand temperatures up to a thousand degrees — hot enough to survive a volcanic eruption.'
+      - name: Speaker 5
+        text: 'My project explored the environmental benefits of earth dragons. I tracked three earth dragons for a month and discovered that wherever they tunnel, the soil becomes incredibly fertile. Plants growing near dragon tunnels are thirty percent larger and produce twice as much fruit. I believe earth dragons could solve the problem of poor farmland if we learned to work with them instead of fearing them.'
+    statements:
+      A: 'This person studied how diet affects a dragon''s abilities.'
+      B: 'This person discovered something new about dragon sleeping habits.'
+      C: 'This person proved that dragons can talk to sea creatures.'
+      D: 'This person created a practical invention inspired by dragons.'
+      E: 'This person showed how dragons can benefit farming.'
+      F: 'This person studied dragon migration patterns.'
+      G: 'This person researched ancient dragon cave paintings.'
+      H: 'This person investigated why some dragons live longer than others.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 studied what happens when fire dragons eat different minerals, linking diet to flame temperature — diet affecting abilities (A).'
+      Speaker 1Zh: '说话者1研究了火龙吃不同矿物时会发生什么，将饮食与火焰温度联系起来——饮食影响能力（A）。'
+      Speaker 2: 'Speaker 2 studied sleep patterns and discovered dragons nap in short bursts — sleeping habits (B).'
+      Speaker 2Zh: '说话者2研究了睡眠模式，发现龙是短时间多次小睡——睡眠习惯（B）。'
+      Speaker 3: 'Speaker 3 discovered water dragons communicate with whales and dolphins — talking to sea creatures (C).'
+      Speaker 3Zh: '说话者3发现水龙能与鲸鱼和海豚交流——与海洋生物交谈（C）。'
+      Speaker 4: 'Speaker 4 built a fireproof shelter based on dragon scale structure — practical invention (D).'
+      Speaker 4Zh: '说话者4根据龙鳞结构建造了防火庇护所——实用发明（D）。'
+      Speaker 5: 'Speaker 5 tracked earth dragons and found their tunnels make soil fertile — benefit to farming (E).'
+      Speaker 5Zh: '说话者5追踪了地龙，发现它们的隧道使土壤肥沃——对农业的好处（E）。'
+
+  # ============================================================
+  # L251: My Magical Mishap
+  # ============================================================
+
+  - id: L251
+    type: multiple-matching
+    title: 'My Magical Mishap'
+    titleZh: '我的魔法事故'
+    scene: 'You will hear five students describing a time their magic went wrong.'
+    sceneZh: '你将听到五位学生描述他们的魔法出差错的经历。'
+    difficulty: 2
+    audioFile: 'L251.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I was practising a growth spell on a sunflower for homework. I was supposed to make it grow ten centimetres, but I accidentally used ten times too much power. The sunflower shot up through the ceiling, through my sister''s bedroom above, and out through the roof. It ended up fifteen metres tall! My dad was furious about the holes in the house. It took three teachers to shrink it back to normal size.'
+      - name: Speaker 2
+        text: 'I tried to cast a flying spell on my bicycle so I could fly to school. It worked perfectly — for about thirty seconds. Then the spell shifted and instead of the bicycle flying, it started floating upwards by itself without me on it. I had to watch my brand-new bicycle rise up into the clouds and disappear. We found it three days later in a tree twelve kilometres away.'
+      - name: Speaker 3
+        text: 'My disaster happened during a language spell. I wanted to learn French instantly, so I cast a translation spell on myself. But I mispronounced one word and the spell went wrong. Instead of understanding French, I could only speak in cat language for forty-eight hours. Everything that came out of my mouth was meowing. My family thought it was hilarious, but I could not explain what had happened!'
+      - name: Speaker 4
+        text: 'I made a mess with a duplication spell. I was trying to copy my homework so I would have a spare, but the spell kept going and would not stop. It made hundreds of copies of my homework, then started copying everything else on my desk — pencils, books, even my lunch. By the time my teacher stopped the spell, my bedroom was completely full of identical objects. We filled six recycling bins just with copies of my maths worksheet.'
+      - name: Speaker 5
+        text: 'I accidentally made it rain inside the school library. I was reading a book about weather spells and I absent-mindedly said one of the spell words out loud while yawning. Suddenly, dark clouds formed under the library ceiling and it started pouring rain on the books. The librarian was absolutely horrified. It took her two weeks to dry out all the damaged books, and I had to help with every single one.'
+    statements:
+      A: 'This person caused physical damage to a building.'
+      B: 'This person lost an object that flew away.'
+      C: 'This person temporarily lost the ability to speak normally.'
+      D: 'This person created too many copies of things.'
+      E: 'This person caused weather indoors by accident.'
+      F: 'This person accidentally turned a person into an animal.'
+      G: 'This person made food appear that nobody could eat.'
+      H: 'This person created an explosion in a classroom.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 grew a sunflower through the ceiling and roof, creating holes — building damage (A).'
+      Speaker 1Zh: '说话者1让一株向日葵穿过天花板和屋顶，造成了洞——建筑物损坏（A）。'
+      Speaker 2: 'Speaker 2''s bicycle floated away into the clouds — lost object that flew away (B).'
+      Speaker 2Zh: '说话者2的自行车飘到了云里——飞走丢失的物品（B）。'
+      Speaker 3: 'Speaker 3 could only speak in cat language for 48 hours — lost normal speech (C).'
+      Speaker 3Zh: '说话者3只能说猫语48小时——失去了正常说话的能力（C）。'
+      Speaker 4: 'Speaker 4 made hundreds of copies of homework and other items — too many copies (D).'
+      Speaker 4Zh: '说话者4复制了数百份作业和其他物品——太多的副本（D）。'
+      Speaker 5: 'Speaker 5 accidentally made it rain inside the library — indoor weather (E).'
+      Speaker 5Zh: '说话者5不小心让图书馆里下起了雨——室内天气（E）。'
+
+  # ============================================================
+  # L252: The Best Thing About My Dragon Type
+  # ============================================================
+
+  - id: L252
+    type: multiple-matching
+    title: 'The Best Thing About My Dragon Type'
+    titleZh: '我的龙种类最棒的地方'
+    scene: 'You will hear five dragon owners talking about what makes their dragon type special.'
+    sceneZh: '你将听到五位龙主人谈论他们的龙种类有什么特别之处。'
+    difficulty: 2
+    audioFile: 'L252.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'My fire dragon is the best type for cold winters. She heats our entire house just by sleeping in the living room. We have not used heating for three years, which saves a lot of money on energy bills. She also heats the bath water and dries our laundry. Last winter, when the whole village lost power in a snowstorm, everyone came to our house to stay warm. My fire dragon made sure nobody was cold.'
+      - name: Speaker 2
+        text: 'My water dragon is wonderful in summer. She can create a cool mist around the garden that lowers the temperature by about ten degrees. But her best ability is purifying water. She breathes on contaminated water and all the harmful bacteria are destroyed. We volunteer with a charity that provides clean water to villages with polluted wells — my dragon has helped hundreds of families get safe drinking water.'
+      - name: Speaker 3
+        text: 'My sky dragon is the ultimate travel companion. She can fly at three hundred kilometres per hour, so we can reach the coast in twenty minutes instead of four hours by car. We travel everywhere together — last year we visited five different countries in one week! She lands so gently that nobody ever gets travel sick, and she actually enjoys long journeys because she gets to see new landscapes.'
+      - name: Speaker 4
+        text: 'My earth dragon helps with gardening like nothing else. His tunnelling breaks up hard soil and creates natural drainage channels. He brings up minerals from deep underground that make plants grow incredibly well. Our vegetable patch produces three times as much food as our neighbours'' gardens. We have so many tomatoes that we give bags away to the whole street every summer.'
+      - name: Speaker 5
+        text: 'My shadow dragon is amazing for security. At night, she patrols around our property completely invisible. If she detects an intruder, she creates shadow shapes that move around the garden — dark figures that would frighten anyone away. Since we got her four years ago, there has not been a single break-in on our street. The whole neighbourhood feels safer thanks to her nightly patrols.'
+    statements:
+      A: 'This person''s dragon helps provide warmth and energy for the household.'
+      B: 'This person''s dragon helps provide clean drinking water.'
+      C: 'This person''s dragon makes travel fast and comfortable.'
+      D: 'This person''s dragon improves food production.'
+      E: 'This person''s dragon provides home security.'
+      F: 'This person''s dragon helps with homework and studying.'
+      G: 'This person''s dragon entertains guests at parties.'
+      H: 'This person''s dragon helps predict the weather.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says their fire dragon heats the entire house and they have not used heating for three years — warmth and energy (A).'
+      Speaker 1Zh: '说话者1说他们的火龙加热整栋房子，三年没用暖气了——温暖和能源（A）。'
+      Speaker 2: 'Speaker 2 describes purifying contaminated water for villages — clean drinking water (B).'
+      Speaker 2Zh: '说话者2描述为村庄净化受污染的水——清洁饮用水（B）。'
+      Speaker 3: 'Speaker 3 describes reaching the coast in twenty minutes and visiting five countries in a week — fast, comfortable travel (C).'
+      Speaker 3Zh: '说话者3描述了二十分钟到达海岸和一周访问五个国家——快速舒适的旅行（C）。'
+      Speaker 4: 'Speaker 4 says their vegetable patch produces three times as much food — improved food production (D).'
+      Speaker 4Zh: '说话者4说他们的菜地产量是邻居的三倍——提高食物产量（D）。'
+      Speaker 5: 'Speaker 5 describes their dragon patrolling at night and preventing break-ins — home security (E).'
+      Speaker 5Zh: '说话者5描述了他们的龙在夜间巡逻和防止入室盗窃——家庭安全（E）。'
+
+  # ============================================================
+  # L253: Lessons I Learned from My Dragon
+  # ============================================================
+
+  - id: L253
+    type: multiple-matching
+    title: 'Lessons I Learned from My Dragon'
+    titleZh: '我从龙身上学到的道理'
+    scene: 'You will hear five young people describing a life lesson their dragon taught them.'
+    sceneZh: '你将听到五位年轻人描述他们的龙教给他们的人生道理。'
+    difficulty: 3
+    audioFile: 'L253.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'My dragon taught me patience. When I first got her, I wanted her to fly immediately. But she was only a baby and her wings were too small. I had to wait eight months before she could carry me. During those months, I learned to enjoy the waiting — I got to know her personality, her favourite foods, the way she purrs when she is happy. Now I understand that the best things in life are worth waiting for.'
+      - name: Speaker 2
+        text: 'My dragon taught me that being different is a strength, not a weakness. He is a shadow dragon, and other children used to say he was ugly because he is dark and has no colourful scales. But at night, he is the most powerful and graceful of all dragons. I used to be embarrassed about being quiet and shy, but now I know that my quiet nature — like his darkness — is actually my hidden strength.'
+      - name: Speaker 3
+        text: 'My dragon taught me to face my fears. She is a sky dragon and takes me to incredible heights. I used to be terrified of heights — I could not even climb a ladder without feeling sick. But she started slowly, flying just a few metres off the ground, then gradually higher each day. After a month, I realised I was flying above the clouds without any fear. If I could overcome that, I can overcome anything.'
+      - name: Speaker 4
+        text: 'My dragon taught me responsibility. He depends on me for food, water, exercise, and companionship every single day. Before I had him, I was careless — I would forget homework, lose things, and break promises. But knowing that another living creature relies on me completely changed my attitude. My parents say I am a completely different person now — more organised, more reliable, more grown-up.'
+      - name: Speaker 5
+        text: 'My dragon taught me about forgiveness. Early on, I made a mistake during flight training and she was injured — she hurt her wing because I turned too sharply. I felt terrible and could barely look at her. But the next morning, she came to me, nuzzled my hand, and made her happy sound. She had completely forgiven me. I learned that holding onto guilt helps nobody, and that true friendship survives mistakes.'
+    statements:
+      A: 'This person learned to be patient from their dragon.'
+      B: 'This person learned to accept what makes them unique.'
+      C: 'This person overcame a fear with their dragon''s help.'
+      D: 'This person became more responsible because of their dragon.'
+      E: 'This person learned about forgiveness from their dragon.'
+      F: 'This person learned how to be a better student.'
+      G: 'This person learned to cook by feeding their dragon.'
+      H: 'This person learned to appreciate nature through dragon rides.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "My dragon taught me patience" and describes waiting eight months for her dragon to fly — patience (A).'
+      Speaker 1Zh: '说话者1说"我的龙教会了我耐心"，描述了等待八个月让龙能飞——耐心（A）。'
+      Speaker 2: 'Speaker 2 says "being different is a strength, not a weakness" and compares their shyness to the dragon''s darkness — accepting uniqueness (B).'
+      Speaker 2Zh: '说话者2说"与众不同是优势而非弱点"，将自己的害羞与龙的黑暗相比——接受独特之处（B）。'
+      Speaker 3: 'Speaker 3 overcame a fear of heights through gradually flying higher — overcoming fear (C).'
+      Speaker 3Zh: '说话者3通过逐渐飞得更高克服了恐高——克服恐惧（C）。'
+      Speaker 4: 'Speaker 4 became "more organised, more reliable, more grown-up" because their dragon depends on them — responsibility (D).'
+      Speaker 4Zh: '说话者4因为龙依赖他们而变得"更有条理、更可靠、更成熟"——责任感（D）。'
+      Speaker 5: 'Speaker 5 made a mistake that injured their dragon but was forgiven — forgiveness (E).'
+      Speaker 5Zh: '说话者5犯了一个伤害龙的错误但被原谅了——宽恕（E）。'
+
+  # ============================================================
+  # L254: Challenges at Dragon Academy
+  # ============================================================
+
+  - id: L254
+    type: multiple-matching
+    title: 'Challenges at Dragon Academy'
+    titleZh: '龙学院的挑战'
+    scene: 'You will hear five students describing the biggest challenge they faced at Dragon Academy.'
+    sceneZh: '你将听到五位学生描述他们在龙学院面临的最大挑战。'
+    difficulty: 3
+    audioFile: 'L254.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'The hardest thing for me was being away from home. It was my first time living somewhere without my family. For the first two weeks, I cried every night. I missed my mum''s cooking, my cat, and my own bed. But gradually I made friends, and by the end of the first month, the Academy started to feel like a second home. Now I actually miss my friends here when I go home for holidays.'
+      - name: Speaker 2
+        text: 'Flight training was my biggest struggle. Most students took to flying naturally, but I was absolutely terrified. My dragon could feel my fear, which made him nervous too, and nervous dragons fly unpredictably. It took me twice as long as anyone else to pass the basic flight exam. But my instructor never gave up on me. She said everyone learns at their own pace, and eventually I became one of the best fliers in my year.'
+      - name: Speaker 3
+        text: 'Learning Dragon Language was incredibly frustrating. The grammar is completely different from English. In Dragon Language, you say the emotion first, then the subject, then the action — so "I am happily flying" becomes something like "Joy — self — skyward." My brain just could not get used to thinking in this new order. I needed a private tutor for six months before I could hold even a basic conversation.'
+      - name: Speaker 4
+        text: 'My challenge was dealing with a competitive classmate. He constantly tried to prove he was better than everyone — better at flying, better at spells, better at everything. He would laugh when others made mistakes. It really affected my confidence. Eventually, our teacher paired us for a project, and I discovered he was actually insecure underneath. We talked honestly and became good friends.'
+      - name: Speaker 5
+        text: 'Potion class was a nightmare for me. I am clumsy by nature, and in potion class you need steady hands and precise measurements. In my first lesson, I knocked over a cauldron of sleeping potion and put the entire back row of the class to sleep for three hours. After that, my teacher made me practise measuring and pouring with plain water for two weeks before letting me near real ingredients again.'
+    statements:
+      A: 'This person struggled with homesickness.'
+      B: 'This person found physical skills difficult due to fear.'
+      C: 'This person had difficulty learning a new language.'
+      D: 'This person had trouble with a difficult classmate.'
+      E: 'This person struggled with practical skills in a class.'
+      F: 'This person had difficulty keeping up with reading assignments.'
+      G: 'This person found it hard to wake up early for lessons.'
+      H: 'This person struggled to find a suitable dragon partner.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "I cried every night" and missed family — homesickness (A).'
+      Speaker 1Zh: '说话者1说"我每晚都哭"并想念家人——思乡（A）。'
+      Speaker 2: 'Speaker 2 was "absolutely terrified" of flying and took twice as long to pass — fear-based physical difficulty (B).'
+      Speaker 2Zh: '说话者2对飞行"非常害怕"，花了别人两倍的时间才通过——基于恐惧的身体技能困难（B）。'
+      Speaker 3: 'Speaker 3 found Dragon Language grammar "completely different" and needed a private tutor — language difficulty (C).'
+      Speaker 3Zh: '说话者3觉得龙语语法"完全不同"，需要私人辅导——语言困难（C）。'
+      Speaker 4: 'Speaker 4 dealt with a competitive classmate who affected their confidence — difficult classmate (D).'
+      Speaker 4Zh: '说话者4遇到了一个影响其信心的好胜同学——难相处的同学（D）。'
+      Speaker 5: 'Speaker 5 is "clumsy by nature" and knocked over a cauldron — practical skill struggles (E).'
+      Speaker 5Zh: '说话者5"天生笨拙"，打翻了一个坩埚——实践技能困难（E）。'
+
+  # ============================================================
+  # L255: Fantasy Books That Changed My Life
+  # ============================================================
+
+  - id: L255
+    type: multiple-matching
+    title: 'Fantasy Books That Changed My Life'
+    titleZh: '改变我人生的奇幻书'
+    scene: 'You will hear five young readers talking about a fantasy book that changed their life.'
+    sceneZh: '你将听到五位年轻读者谈论一本改变了他们人生的奇幻书。'
+    difficulty: 3
+    audioFile: 'L255.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'For me, it was The Hobbit by Tolkien. Before reading it, I thought adventures were only for brave, strong people. But Bilbo is small, ordinary, and loves comfort — yet he goes on the greatest adventure anyway. That book showed me that you do not have to be a hero to do heroic things. You just have to say yes when adventure calls. I have been braver in real life ever since.'
+      - name: Speaker 2
+        text: 'A Wizard of Earthsea by Ursula Le Guin absolutely transformed how I think about mistakes. In the story, Ged releases a shadow by showing off, and he spends the whole book trying to face the consequences. It taught me that running away from your mistakes makes them bigger, but facing them directly takes away their power. When I make mistakes now, I deal with them immediately instead of hiding.'
+      - name: Speaker 3
+        text: 'The Neverending Story by Michael Ende changed my relationship with reading itself. The main character, Bastian, reads a book and discovers he is actually part of the story. It made me realise that when we read, we are not just observing — we are participating. Every reader brings the story alive in a different way. That idea made me fall completely in love with books and eventually inspired me to start writing my own stories.'
+      - name: Speaker 4
+        text: 'Harry Potter and the Philosopher''s Stone by J.K. Rowling showed me that feeling like an outsider is actually something special. Harry does not fit in with the Dursleys because he is meant for something different. When I read that at age eight, I was being bullied for being different. Harry''s story helped me understand that not fitting in sometimes means you simply have not found your people yet.'
+      - name: Speaker 5
+        text: 'His Dark Materials by Philip Pullman opened my eyes to thinking for myself. Lyra is always questioning rules and authority, not to be rude, but because she genuinely wants to understand why things are the way they are. That series taught me to ask questions, challenge assumptions, and not accept things just because an adult said so. My teachers say I ask more questions than any other student in the school — and I take that as a compliment!'
+    statements:
+      A: 'This person learned that ordinary people can do brave things.'
+      B: 'This person learned to face mistakes instead of running from them.'
+      C: 'This person developed a deep love of reading and writing.'
+      D: 'This person found comfort in a character who was also an outsider.'
+      E: 'This person learned to think critically and question things.'
+      F: 'This person was inspired to study science by a fantasy book.'
+      G: 'This person learned about the importance of friendship.'
+      H: 'This person was inspired to travel the world.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says Bilbo is "small, ordinary" yet goes on an adventure — ordinary people doing brave things (A).'
+      Speaker 1Zh: '说话者1说Bilbo"渺小、普通"却踏上了冒险——普通人做勇敢的事（A）。'
+      Speaker 2: 'Speaker 2 says the book taught them about "facing the consequences" of mistakes — facing mistakes (B).'
+      Speaker 2Zh: '说话者2说这本书教会了他们"面对"错误的后果——面对错误（B）。'
+      Speaker 3: 'Speaker 3 says the book "made me fall completely in love with books" and inspired them to write — love of reading and writing (C).'
+      Speaker 3Zh: '说话者3说这本书"让我完全爱上了书"并激励他们写作——对阅读和写作的热爱（C）。'
+      Speaker 4: 'Speaker 4 was being bullied and found comfort in Harry''s outsider experience — comfort in an outsider character (D).'
+      Speaker 4Zh: '说话者4曾被欺负，在Harry的局外人经历中找到了安慰——在局外人角色中找到慰藉（D）。'
+      Speaker 5: 'Speaker 5 learned to "ask questions, challenge assumptions" — critical thinking (E).'
+      Speaker 5Zh: '说话者5学会了"提出问题、挑战假设"——批判性思维（E）。'
+
+  # ============================================================
+  # L256: Our Dragon Academy Field Trips
+  # ============================================================
+
+  - id: L256
+    type: multiple-matching
+    title: 'Our Dragon Academy Field Trips'
+    titleZh: '我们的龙学院实地考察'
+    scene: 'You will hear five students describing their favourite Dragon Academy field trip.'
+    sceneZh: '你将听到五位学生描述他们最喜欢的龙学院实地考察。'
+    difficulty: 2
+    audioFile: 'L256.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'Our best trip was to the Dragon Fossil Museum in the Northern Mountains. We saw complete skeletons of ancient dragons from millions of years ago. The guide showed us how dragons evolved over time — their wings got bigger, their fire glands developed, and their brains tripled in size. The most amazing exhibit was a fossilised dragon egg that still glows faintly orange after forty million years.'
+      - name: Speaker 2
+        text: 'I loved our visit to the Underwater Dragon Caves. We wore special breathing helmets and swam through tunnels carved by water dragons over thousands of years. The walls were covered in bioluminescent algae that glowed blue and green, making the whole cave look like it was underwater starlight. We even saw a mother water dragon feeding her three babies. It was the most peaceful place I have ever been.'
+      - name: Speaker 3
+        text: 'The trip to the annual Dragon Games was incredible. It is like the Olympics but for dragons and their riders. We watched dragon racing, aerial acrobatics, and a breath competition where dragons compete to produce the most impressive fire, ice, or wind display. A sky dragon won the breath competition with a tornado so powerful it lifted the judges'' table three metres into the air!'
+      - name: Speaker 4
+        text: 'My favourite was the Dragon Rescue Centre. They care for injured and orphaned dragons until they can be released back into the wild. We helped feed baby dragons and learned how to bandage a wing. The most moving part was watching a dragon who had been rescued from a trap take its first flight in months. Everyone cheered and some people cried — including me.'
+      - name: Speaker 5
+        text: 'We visited a traditional dragon scale craftsman who makes jewellery and armour from naturally shed dragon scales. He showed us how to polish scales until they shine like gemstones, and how to weave them together into lightweight but incredibly strong material. Each of us got to make a small bracelet from water dragon scales. Mine shimmers blue-green and I wear it every day.'
+    statements:
+      A: 'This person enjoyed learning about dragon evolution and history.'
+      B: 'This person loved the beauty of an underwater environment.'
+      C: 'This person was excited by dragon sports and competitions.'
+      D: 'This person was moved by seeing injured dragons recover.'
+      E: 'This person enjoyed learning a traditional craft.'
+      F: 'This person explored a dragon breeding farm.'
+      G: 'This person visited a magical library.'
+      H: 'This person learned about dragon medicine and healing.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 visited a fossil museum and learned how dragons evolved over millions of years — evolution and history (A).'
+      Speaker 1Zh: '说话者1参观了化石博物馆，了解了龙在数百万年中如何进化——进化和历史（A）。'
+      Speaker 2: 'Speaker 2 describes the bioluminescent caves looking like "underwater starlight" — beauty of underwater environment (B).'
+      Speaker 2Zh: '说话者2描述了生物发光的洞穴看起来像"水下星光"——水下环境之美（B）。'
+      Speaker 3: 'Speaker 3 watched dragon racing and aerial acrobatics at the Dragon Games — sports and competitions (C).'
+      Speaker 3Zh: '说话者3在龙运动会上观看了龙赛跑和空中特技——体育和竞赛（C）。'
+      Speaker 4: 'Speaker 4 describes watching an injured dragon take its first flight and people crying — moved by recovery (D).'
+      Speaker 4Zh: '说话者4描述了观看一只受伤的龙第一次飞行，人们哭了——被康复感动（D）。'
+      Speaker 5: 'Speaker 5 learned to polish scales and made a bracelet — learning a traditional craft (E).'
+      Speaker 5Zh: '说话者5学会了打磨鳞片并制作了手链——学习传统工艺（E）。'
+
+  # ============================================================
+  # L257: My Dream Magical Career
+  # ============================================================
+
+  - id: L257
+    type: multiple-matching
+    title: 'My Dream Magical Career'
+    titleZh: '我梦想的魔法职业'
+    scene: 'You will hear five students talking about the magical career they want to pursue.'
+    sceneZh: '你将听到五位学生谈论他们想从事的魔法职业。'
+    difficulty: 2
+    audioFile: 'L257.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I want to be a dragon veterinarian. When I saw a sick dragon at the sanctuary last year, I knew immediately that this was what I wanted to do with my life. Dragon medicine is complicated because each species has different biology, but that challenge excites me. I am already studying extra biology and chemistry to prepare. The most rewarding part would be seeing a dragon recover and fly again because of my care.'
+      - name: Speaker 2
+        text: 'My dream is to be an enchanted architect — someone who designs magical buildings. I want to create floating houses that hover above the ground, libraries where the rooms rearrange themselves depending on what you need, and bridges that grow from living trees. I spend hours drawing designs in my notebook. My favourite idea so far is a school building that expands automatically when more students arrive.'
+      - name: Speaker 3
+        text: 'I am going to be a spell inventor. There are thousands of existing spells, but there is always room for new ones. I have already created a small spell that translates bird songs into English — you can hear what birds are actually saying to each other. My teacher says I have a natural talent for combining different spell elements in new ways. I want to create spells that solve everyday problems for ordinary people.'
+      - name: Speaker 4
+        text: 'I dream of being a magical weather controller. Imagine being able to stop floods, prevent droughts, and make sure every farmer gets exactly the right amount of rain. Weather wizards protect thousands of lives every year. I have been studying weather patterns since I was seven, and I already understand cloud formations better than most adults. I want to specialise in disaster prevention.'
+      - name: Speaker 5
+        text: 'I want to be a dragon diplomat — someone who negotiates between dragon communities and human towns. As human cities grow, they sometimes expand into dragon territory, causing conflicts. A diplomat works with both sides to find fair solutions. I love languages and communication, and I am already fluent in three types of Dragon Language. I believe that most problems between dragons and humans come from misunderstanding, not genuine disagreement.'
+    statements:
+      A: 'This person wants to heal sick or injured dragons.'
+      B: 'This person wants to design magical buildings.'
+      C: 'This person wants to create new spells.'
+      D: 'This person wants to control weather to prevent disasters.'
+      E: 'This person wants to help dragons and humans live peacefully together.'
+      F: 'This person wants to be a magical teacher.'
+      G: 'This person wants to explore unknown magical lands.'
+      H: 'This person wants to be a magical sports coach.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 wants to be a "dragon veterinarian" and sees sick dragons recover — healing dragons (A).'
+      Speaker 1Zh: '说话者1想成为"龙兽医"，看到生病的龙康复——治愈龙（A）。'
+      Speaker 2: 'Speaker 2 wants to be an "enchanted architect" and designs floating houses — magical buildings (B).'
+      Speaker 2Zh: '说话者2想成为"魔法建筑师"，设计漂浮的房屋——魔法建筑（B）。'
+      Speaker 3: 'Speaker 3 wants to be a "spell inventor" and has already created a bird song translation spell — creating new spells (C).'
+      Speaker 3Zh: '说话者3想成为"咒语发明家"，已经创造了鸟歌翻译咒语——创造新咒语（C）。'
+      Speaker 4: 'Speaker 4 wants to "stop floods, prevent droughts" as a weather controller — weather disaster prevention (D).'
+      Speaker 4Zh: '说话者4想作为天气控制者"阻止洪水、防止干旱"——天气灾害预防（D）。'
+      Speaker 5: 'Speaker 5 wants to be a "dragon diplomat" who negotiates between dragons and humans — peaceful coexistence (E).'
+      Speaker 5Zh: '说话者5想成为"龙外交官"，在龙和人类之间进行谈判——和平共处（E）。'
+
+  # ============================================================
+  # L258: The Scariest Moment at Dragon Academy
+  # ============================================================
+
+  - id: L258
+    type: multiple-matching
+    title: 'The Scariest Moment at Dragon Academy'
+    titleZh: '龙学院最可怕的时刻'
+    scene: 'You will hear five students describing their scariest experience at Dragon Academy.'
+    sceneZh: '你将听到五位学生描述他们在龙学院最可怕的经历。'
+    difficulty: 3
+    audioFile: 'L258.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'My scariest moment was during a thunderstorm. I was flying back to the Academy when lightning struck very close to us. My dragon panicked and started diving towards the ground at incredible speed. I held on as tightly as I could and kept talking calmly to her. Eventually she levelled out just fifty metres above the treetops. After we landed safely, my hands were shaking so badly I could not unbuckle my harness for ten minutes.'
+      - name: Speaker 2
+        text: 'It happened in Dragon Language class. We were practising greeting phrases when I accidentally pronounced a word that sounds like "I challenge you to a duel" in dragon. The practice dragon in the classroom roared, spread its wings, and breathed a jet of flame right over my head. Luckily the teacher jumped in and said the calming phrase immediately. I singed my eyebrows and learned to be much more careful with dragon pronunciation.'
+      - name: Speaker 3
+        text: 'My scariest experience was getting lost in the Crystal Caves beneath the school. I wandered away from my group during a field trip because I saw a beautiful glowing crystal and wanted a closer look. When I turned around, I could not find the path back. I was alone in complete darkness for almost two hours before the search team found me. I have never felt so relieved to hear another person''s voice.'
+      - name: Speaker 4
+        text: 'During the midterm practical exam, my healing potion exploded. It produced a cloud of purple smoke that filled the entire examination hall. The smoke made everyone who breathed it in tell the truth about everything — no lies were possible for three hours. The exam had to be cancelled because students started revealing the answers out loud. I was embarrassed but secretly relieved the exam was postponed.'
+      - name: Speaker 5
+        text: 'The night a wild dragon landed on the Academy roof was terrifying. Wild dragons rarely come near buildings, so when we heard the enormous thud above the dormitory at midnight, nobody knew what was happening. It turned out to be an injured fire dragon seeking shelter from a blizzard. The teachers calmed it down and treated its wounds, but for about thirty minutes, we all thought we were under attack.'
+    statements:
+      A: 'This person faced danger while flying in bad weather.'
+      B: 'This person accidentally provoked a dragon with language.'
+      C: 'This person got separated from their group underground.'
+      D: 'This person caused a potion accident during an exam.'
+      E: 'This person was frightened by an unexpected wild dragon.'
+      F: 'This person fell off their dragon during training.'
+      G: 'This person was chased by a magical creature in the forest.'
+      H: 'This person accidentally released a dangerous spell in the corridor.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 was caught in a thunderstorm while flying and lightning struck nearby — danger in bad weather (A).'
+      Speaker 1Zh: '说话者1在飞行中遇到雷暴，闪电击中附近——恶劣天气中的危险（A）。'
+      Speaker 2: 'Speaker 2 mispronounced a dragon word meaning "I challenge you to a duel" — provoked with language (B).'
+      Speaker 2Zh: '说话者2读错了一个意思是"我向你发起决斗"的龙语——用语言激怒了龙（B）。'
+      Speaker 3: 'Speaker 3 "wandered away from my group" in the Crystal Caves and was lost for two hours — separated underground (C).'
+      Speaker 3Zh: '说话者3在水晶洞穴中"离开了队伍"，迷路了两个小时——在地下与队伍分离（C）。'
+      Speaker 4: 'Speaker 4''s healing potion "exploded" during the midterm exam — potion accident during exam (D).'
+      Speaker 4Zh: '说话者4的治疗药剂在期中考试中"爆炸了"——考试中的药剂事故（D）。'
+      Speaker 5: 'Speaker 5 describes a wild dragon landing on the roof at midnight — frightened by unexpected wild dragon (E).'
+      Speaker 5Zh: '说话者5描述了一只野龙午夜降落在屋顶——被意外的野龙吓到（E）。'
+
+  # ============================================================
+  # L259: Magical Inventions I Would Like to See
+  # ============================================================
+
+  - id: L259
+    type: multiple-matching
+    title: 'Magical Inventions I Would Like to See'
+    titleZh: '我想看到的魔法发明'
+    scene: 'You will hear five students talking about a magical invention they wish existed.'
+    sceneZh: '你将听到五位学生谈论他们希望存在的魔法发明。'
+    difficulty: 2
+    audioFile: 'L259.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I wish someone would invent a homework quill that writes your essays while you dictate. Not one that writes them for you — that would be cheating — but one that converts your spoken thoughts into neat handwriting on the page. My ideas are good but my handwriting is terrible. I always lose marks because teachers cannot read what I have written. A dictation quill would solve that problem.'
+      - name: Speaker 2
+        text: 'I want a mood-changing room. You walk in feeling stressed or sad, and the room adjusts itself to make you feel better — the walls change colour, gentle music plays, and a pleasant scent fills the air. When you are feeling calm, the room slowly returns to normal. Every school should have one. Students today are under so much pressure that we need safe spaces to recover.'
+      - name: Speaker 3
+        text: 'I dream of a language bubble — a transparent sphere you put over your head that instantly translates every language in real time. You hear everything in your own language, and when you speak, others hear it in theirs. Imagine travelling anywhere in the world and being able to talk to everyone you meet without any language barrier. It would bring people so much closer together.'
+      - name: Speaker 4
+        text: 'I wish there was a memory replay device — like a screen you hold to your forehead that plays your memories like a video. You could revisit happy moments whenever you want, show your friends what you experienced, and never worry about forgetting something important. My grandmother has begun to forget things, and I wish she could replay her favourite memories to keep them fresh.'
+      - name: Speaker 5
+        text: 'My invention would be a grow-anything greenhouse. You put any seed inside, set the conditions — temperature, light, soil — and the plant grows to full size in one day instead of weeks or months. Think about what this could mean for hungry people around the world. You could grow a field of wheat in twenty-four hours. Food shortages would become a thing of the past.'
+    statements:
+      A: 'This person wants a tool to help with written schoolwork.'
+      B: 'This person wants a room that improves emotional wellbeing.'
+      C: 'This person wants to remove language barriers between people.'
+      D: 'This person wants a way to revisit and preserve memories.'
+      E: 'This person wants technology to speed up food production.'
+      F: 'This person wants a device that cleans rooms automatically.'
+      G: 'This person wants glasses that let you see in the dark.'
+      H: 'This person wants shoes that let you walk on water.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 wants a quill that converts spoken thoughts to neat handwriting for essays — help with written schoolwork (A).'
+      Speaker 1Zh: '说话者1想要一支能将口述思想转换为整洁字迹的羽毛笔——帮助书面作业（A）。'
+      Speaker 2: 'Speaker 2 wants a room that adjusts to make stressed students feel better — emotional wellbeing (B).'
+      Speaker 2Zh: '说话者2想要一个能调整让有压力的学生感觉更好的房间——情绪健康（B）。'
+      Speaker 3: 'Speaker 3 wants a "language bubble" that translates all languages in real time — removing language barriers (C).'
+      Speaker 3Zh: '说话者3想要一个实时翻译所有语言的"语言泡泡"——消除语言障碍（C）。'
+      Speaker 4: 'Speaker 4 wants a "memory replay device" to revisit happy moments — preserving memories (D).'
+      Speaker 4Zh: '说话者4想要一个"记忆回放装置"来重温快乐时光——保存记忆（D）。'
+      Speaker 5: 'Speaker 5 wants a greenhouse that grows food in one day to end hunger — speeding up food production (E).'
+      Speaker 5Zh: '说话者5想要一个一天就能种出食物的温室来消除饥饿——加速食物生产（E）。'
+
+  # ============================================================
+  # L260: How My Dragon Helped Someone
+  # ============================================================
+
+  - id: L260
+    type: multiple-matching
+    title: 'How My Dragon Helped Someone'
+    titleZh: '我的龙怎样帮助了别人'
+    scene: 'You will hear five dragon owners describing a time their dragon helped another person.'
+    sceneZh: '你将听到五位龙主人描述他们的龙帮助他人的经历。'
+    difficulty: 2
+    audioFile: 'L260.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'Last February, a little girl fell through thin ice on the village pond. Everyone was panicking because nobody could reach her without breaking more ice. My water dragon, Coral, slid across the ice without cracking it — she weighs almost nothing when she flattens herself. She wrapped her tail around the girl and gently pulled her to safety. The girl was cold but unhurt. Her parents sent us a thank-you card with a drawing of Coral wearing a superhero cape.'
+      - name: Speaker 2
+        text: 'My earth dragon, Granite, helped rebuild our neighbour''s garden wall after a storm knocked it down. He can move stones that would take six men to lift. What would have taken my neighbour weeks to repair, Granite did in about two hours. He even arranged the stones more neatly than before. Now all the neighbours ask if Granite can help with their building projects too. He has become the most popular dragon on our street.'
+      - name: Speaker 3
+        text: 'My fire dragon, Blaze, saved our school from closing during a power cut last winter. The heating failed completely for three days in freezing temperatures. The headteacher was about to send everyone home when I suggested bringing Blaze to the assembly hall. He kept the whole school warm by sleeping in the middle of the hall, radiating heat like a giant furnace. Two hundred students stayed warm and lessons continued as normal.'
+      - name: Speaker 4
+        text: 'My sky dragon, Zephyr, delivered emergency medicine to a remote mountain village last spring. Heavy snow had blocked all the roads and a helicopter could not fly because of strong winds. But Zephyr can fly in any weather. We loaded the medicine into a special pouch on her back and she flew through the blizzard to deliver it. The village doctor said the medicine arrived just in time to save a child with a high fever.'
+      - name: Speaker 5
+        text: 'My shadow dragon, Dusk, helped find a missing elderly man who had wandered away from a care home. He was lost in woodland at night and the police search teams could not find him in the darkness. I asked Dusk to search because shadow dragons can see perfectly at night. Within thirty minutes, she found him sitting under a tree, cold and confused. She led the rescue team right to him.'
+    statements:
+      A: 'This person''s dragon rescued someone from water.'
+      B: 'This person''s dragon helped with a construction project.'
+      C: 'This person''s dragon provided warmth during a power failure.'
+      D: 'This person''s dragon delivered something essential in bad weather.'
+      E: 'This person''s dragon found a missing person at night.'
+      F: 'This person''s dragon chased away a wild animal.'
+      G: 'This person''s dragon guided a lost ship to shore.'
+      H: 'This person''s dragon put out a fire in a building.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1''s water dragon rescued a girl who fell through thin ice on a pond — rescued from water (A).'
+      Speaker 1Zh: '说话者1的水龙救了一个掉入池塘薄冰的女孩——从水中救出（A）。'
+      Speaker 2: 'Speaker 2''s earth dragon rebuilt a garden wall — helped with construction (B).'
+      Speaker 2Zh: '说话者2的地龙重建了花园围墙——帮助建设（B）。'
+      Speaker 3: 'Speaker 3''s fire dragon kept the whole school warm during a three-day power cut — warmth during power failure (C).'
+      Speaker 3Zh: '说话者3的火龙在三天停电期间为整个学校供暖——停电时提供温暖（C）。'
+      Speaker 4: 'Speaker 4''s sky dragon delivered emergency medicine through a blizzard — essential delivery in bad weather (D).'
+      Speaker 4Zh: '说话者4的天龙在暴风雪中运送紧急药物——恶劣天气中的关键递送（D）。'
+      Speaker 5: 'Speaker 5''s shadow dragon found a missing elderly man in dark woodland — found missing person at night (E).'
+      Speaker 5Zh: '说话者5的影龙在黑暗的林地中找到了一位失踪的老人——夜间找到失踪者（E）。'
+
+  # ============================================================
+  # L261: Types of Magical Transport
+  # ============================================================
+
+  - id: L261
+    type: multiple-matching
+    title: 'Types of Magical Transport'
+    titleZh: '魔法交通工具的种类'
+    scene: 'You will hear five people talking about their preferred form of magical transport.'
+    sceneZh: '你将听到五个人谈论他们偏好的魔法交通方式。'
+    difficulty: 2
+    audioFile: 'L261.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I prefer flying carpets to any other form of magical transport. They are silent, comfortable, and you can bring luggage. Unlike dragons, you do not need to worry about feeding them or finding somewhere to land. You just roll up the carpet when you arrive, tuck it under your arm, and walk into the building. My carpet is Persian style with gold tassels — very stylish!'
+      - name: Speaker 2
+        text: 'Teleportation crystals are the best in my opinion. You hold the crystal, think of where you want to go, and you are there instantly. No waiting, no journey time, no travel sickness. The only downside is that you can only teleport to places you have already visited — you need to have seen the destination in person for the crystal to find it. But for daily travel, nothing beats being there in one second flat.'
+      - name: Speaker 3
+        text: 'I love enchanted boats. They sail themselves, following whatever route you trace on their magical compass. My family has a small enchanted sailboat and we use it for weekend trips along the coast. The best feature is the invisible weather shield — it creates a bubble of warm, dry air around the boat even when it is raining. You can sail through a storm without getting a single drop of water on you.'
+      - name: Speaker 4
+        text: 'Dragon riding will always be my favourite. Yes, it is slower than teleportation and less comfortable than a carpet. But the experience is unmatched. Feeling the wind, hearing the wingbeats, seeing the landscape rush past below you — no other transport gives you that thrill. Plus, your dragon is also your companion, your protector, and your friend. A carpet cannot do that.'
+      - name: Speaker 5
+        text: 'I use portal doors. These are special doorframes installed in fixed locations around the kingdom. You walk through one door and come out another, regardless of the distance between them. Our school has portal doors connecting it to the central library, the dragon training grounds, and the potion supply store. It is incredibly convenient — like having shortcuts built into the world.'
+    statements:
+      A: 'This person values convenience and portability.'
+      B: 'This person values instant travel with zero journey time.'
+      C: 'This person enjoys comfortable, weather-protected water travel.'
+      D: 'This person values the emotional experience of travel.'
+      E: 'This person appreciates fixed-location instant connections.'
+      F: 'This person prefers underground magical trains.'
+      G: 'This person likes enchanted bicycles for short trips.'
+      H: 'This person prefers broomstick flying for speed.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 praises carpets for being portable ("roll up and tuck under your arm") and not needing feeding — convenience and portability (A).'
+      Speaker 1Zh: '说话者1称赞飞毯便携（"卷起来夹在胳膊下"）且不需要喂食——便利性和便携性（A）。'
+      Speaker 2: 'Speaker 2 says "you are there instantly" and "nothing beats being there in one second flat" — instant travel (B).'
+      Speaker 2Zh: '说话者2说"你立刻就到了"和"没什么比一秒钟到达更好"——即时旅行（B）。'
+      Speaker 3: 'Speaker 3 describes the "invisible weather shield" creating warm, dry air on the boat — weather-protected water travel (C).'
+      Speaker 3Zh: '说话者3描述了在船上创造温暖干燥空气的"隐形天气护罩"——有天气保护的水上旅行（C）。'
+      Speaker 4: 'Speaker 4 says "the experience is unmatched" with wind, wingbeats, and landscape — emotional experience (D).'
+      Speaker 4Zh: '说话者4说"体验是无与伦比的"，有风、翅膀拍打声和风景——情感体验（D）。'
+      Speaker 5: 'Speaker 5 describes portal doors at fixed locations around the kingdom — fixed-location connections (E).'
+      Speaker 5Zh: '说话者5描述了王国各处固定位置的传送门——固定位置的连接（E）。'
+
+  # ============================================================
+  # L262: What Makes a Great Dragon Rider
+  # ============================================================
+
+  - id: L262
+    type: multiple-matching
+    title: 'What Makes a Great Dragon Rider'
+    titleZh: '什么造就了一位伟大的龙骑士'
+    scene: 'You will hear five experienced dragon riders sharing their views on the most important quality for riders.'
+    sceneZh: '你将听到五位经验丰富的龙骑士分享他们认为骑士最重要品质的看法。'
+    difficulty: 3
+    audioFile: 'L262.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'People think the most important quality is bravery, but I disagree completely. The best riders I know are the most empathetic ones — those who can feel what their dragon is feeling. When your dragon is nervous, you need to sense that before it becomes a problem. When your dragon is tired, you need to know when to stop. Empathy is what turns a rider from a passenger into a true partner.'
+      - name: Speaker 2
+        text: 'For me, the answer is trust. Your dragon needs to trust you completely, and you need to trust your dragon. When you are flying through clouds and cannot see anything, you have to trust that your dragon knows the way. When your dragon dives suddenly, you have to trust there is a good reason. The riders who panic and try to override their dragon''s instincts are the ones who have accidents.'
+      - name: Speaker 3
+        text: 'Physical fitness is absolutely essential, and I think people underestimate this. Riding a dragon for several hours requires incredible core strength, leg strength, and stamina. Your body absorbs every movement the dragon makes. Unfit riders get exhausted quickly, which is dangerous because tired riders make poor decisions. I train for an hour every morning — running, stretching, and strength exercises.'
+      - name: Speaker 4
+        text: 'Communication is the key. You can be brave, fit, and empathetic, but if you cannot communicate clearly with your dragon, none of it matters. I spend as much time practising Dragon Language as I do flying. A single misunderstood word during flight could send you in the wrong direction or cause your dragon to make a sudden unexpected turn. Clear communication prevents accidents.'
+      - name: Speaker 5
+        text: 'Patience is the quality that separates good riders from great ones. Everything with dragons takes time — building the relationship, learning to fly together, developing trust. The riders who rush things always run into problems. My teacher told me, "A dragon will give you everything, but only if you give it time." I spent a full year just building my relationship with my dragon before we ever flew together.'
+    statements:
+      A: 'This person believes empathy is the most important quality.'
+      B: 'This person thinks mutual trust is essential for safety.'
+      C: 'This person emphasises the importance of physical fitness.'
+      D: 'This person values clear communication above other qualities.'
+      E: 'This person believes patience is what makes riders great.'
+      F: 'This person thinks a good sense of humour helps.'
+      G: 'This person believes riders need formal academic qualifications.'
+      H: 'This person thinks competitive experience is most important.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "the best riders are the most empathetic ones" — empathy (A).'
+      Speaker 1Zh: '说话者1说"最好的骑手是最有同理心的"——同理心（A）。'
+      Speaker 2: 'Speaker 2 says "the answer is trust" and gives examples of trusting the dragon in flight — trust (B).'
+      Speaker 2Zh: '说话者2说"答案是信任"，并举了飞行中信任龙的例子——信任（B）。'
+      Speaker 3: 'Speaker 3 says "physical fitness is absolutely essential" and trains for an hour daily — fitness (C).'
+      Speaker 3Zh: '说话者3说"体能绝对必不可少"，每天训练一小时——体能（C）。'
+      Speaker 4: 'Speaker 4 says "Communication is the key" and that a single misunderstood word could cause an accident — communication (D).'
+      Speaker 4Zh: '说话者4说"沟通是关键"，一个被误解的词就可能导致事故——沟通（D）。'
+      Speaker 5: 'Speaker 5 says "Patience is the quality that separates good riders from great ones" — patience (E).'
+      Speaker 5Zh: '说话者5说"耐心是区分好骑手和伟大骑手的品质"——耐心（E）。'
+
+  # ============================================================
+  # L263: Magical Solutions to Real Problems
+  # ============================================================
+
+  - id: L263
+    type: multiple-matching
+    title: 'Magical Solutions to Real Problems'
+    titleZh: '用魔法解决现实问题'
+    scene: 'You will hear five students proposing magical solutions to real-world problems.'
+    sceneZh: '你将听到五位学生提出用魔法解决现实世界问题的方案。'
+    difficulty: 3
+    audioFile: 'L263.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I believe dragons could solve our energy crisis. Fire dragons produce enormous amounts of heat, which we could use to generate electricity. A single fire dragon can produce enough thermal energy to power a small town. Unlike fossil fuels, dragon fire is renewable and produces no pollution. We just need to feed the dragons rocks and spicy peppers, and they happily produce heat all day long.'
+      - name: Speaker 2
+        text: 'Water purification spells could end the global water crisis. Currently, millions of people lack access to clean drinking water. But a trained water wizard can purify an entire lake in one hour. If we trained thousands of water wizards and sent them to areas of need, clean water would be available to everyone on the planet. The spell is not even difficult — it is a Level 2 spell that first-year students can learn.'
+      - name: Speaker 3
+        text: 'Transformation spells could revolutionise recycling. Instead of burying rubbish in the ground, we could transform it back into its original raw materials. A plastic bottle could be transformed back into oil. Broken glass could be transformed into sand. Old electronics could be transformed into usable metals. Nothing would ever need to go to landfill again, and we would never run out of resources.'
+      - name: Speaker 4
+        text: 'Communication spells could prevent wars. Most conflicts start because of misunderstanding between nations. If leaders could use a universal translation spell during negotiations, there would be no miscommunication. But more than that — empathy spells could let world leaders temporarily experience life in another country, seeing problems from the other side. Understanding each other is the first step towards peace.'
+      - name: Speaker 5
+        text: 'Healing potions could transform medicine. Currently, many diseases have no cure, and treatment takes months or years. But healing potions that already exist in our world could cure broken bones in a day and eliminate common infections in hours. If we could produce these potions on a large scale and distribute them through hospitals, we could save millions of lives and end so much suffering.'
+    statements:
+      A: 'This person proposes using dragons for clean energy production.'
+      B: 'This person suggests using magic to provide clean water globally.'
+      C: 'This person wants to use magic to eliminate waste and pollution.'
+      D: 'This person believes magic could improve international relations.'
+      E: 'This person wants to use magical medicine to cure diseases.'
+      F: 'This person suggests using magic to predict natural disasters.'
+      G: 'This person proposes magical solutions for education.'
+      H: 'This person wants to use magic to grow food in deserts.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says dragons could "generate electricity" and their fire is "renewable and produces no pollution" — clean energy (A).'
+      Speaker 1Zh: '说话者1说龙可以"发电"，它们的火是"可再生的且不产生污染"——清洁能源（A）。'
+      Speaker 2: 'Speaker 2 says "water purification spells could end the global water crisis" — clean water (B).'
+      Speaker 2Zh: '说话者2说"水净化咒语可以解决全球水危机"——清洁水（B）。'
+      Speaker 3: 'Speaker 3 says transformation spells could turn rubbish back into raw materials — eliminating waste (C).'
+      Speaker 3Zh: '说话者3说变身咒语可以把垃圾变回原材料——消除废物（C）。'
+      Speaker 4: 'Speaker 4 says communication and empathy spells "could prevent wars" — international relations (D).'
+      Speaker 4Zh: '说话者4说沟通和共情咒语"可以防止战争"——国际关系（D）。'
+      Speaker 5: 'Speaker 5 says healing potions could "save millions of lives" — curing diseases (E).'
+      Speaker 5Zh: '说话者5说治愈药水可以"拯救数百万生命"——治愈疾病（E）。'
+
+  # ============================================================
+  # L264: My Dragon Academy Room
+  # ============================================================
+
+  - id: L264
+    type: multiple-matching
+    title: 'My Dragon Academy Room'
+    titleZh: '我的龙学院房间'
+    scene: 'You will hear five students describing what they have done to personalise their Dragon Academy room.'
+    sceneZh: '你将听到五位学生描述他们如何个性化布置龙学院的房间。'
+    difficulty: 2
+    audioFile: 'L264.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I cast a sky spell on my ceiling so it looks exactly like the real sky outside — blue and sunny during the day, stars at night, even clouds drifting past. It makes the room feel much bigger than it actually is. When it rains outside, my ceiling shows rain too, but no water actually falls. Waking up and seeing a sunrise on my ceiling is the best alarm clock ever.'
+      - name: Speaker 2
+        text: 'I brought every plant I could find. My room looks like a miniature jungle. I have enchanted ferns that glow at night, singing flowers that hum melodies, and a small tree that grows miniature apples the size of cherries. The plants keep the air fresh and make the room smell wonderful. My roommate says it is like living inside a garden, and she loves it too.'
+      - name: Speaker 3
+        text: 'I covered every wall with sketches and paintings of dragons I have met during my time here. I draw a new portrait every week and pin it up. So far I have over eighty dragon portraits covering three walls. My favourite is the portrait of the crystal dragon I met on our field trip — I used metallic paint that catches the light, so it sparkles just like the real thing.'
+      - name: Speaker 4
+        text: 'My room is all about books. I built extra shelves from spell-reinforced wood and I have over three hundred books stacked from floor to ceiling. I also cast a floating spell on my favourite twenty books, so they hover in mid-air like a mobile. When I want to read one, I just reach up and pluck it from the air. My friends call my room "the second library" and often come to borrow books.'
+      - name: Speaker 5
+        text: 'I turned my room into a music studio. I enchanted the walls to be soundproof so I can practise my violin at any hour without disturbing anyone. I also have a self-playing piano that accompanies me when I practise, matching my tempo and style perfectly. The best addition is a recording crystal that captures everything I play so I can listen back and improve. My dragon loves my music — she sleeps in the corner while I play.'
+    statements:
+      A: 'This person uses magic to make their ceiling look like the sky.'
+      B: 'This person filled their room with magical plants.'
+      C: 'This person decorated with their own artwork.'
+      D: 'This person created a personal library.'
+      E: 'This person created a space for music practice.'
+      F: 'This person built a miniature dragon model collection.'
+      G: 'This person set up a potion-making workspace.'
+      H: 'This person installed a small swimming pool.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 cast "a sky spell on my ceiling" to show real sky — magical sky ceiling (A).'
+      Speaker 1Zh: '说话者1在天花板上施了"天空咒语"来展示真实的天空——魔法天空天花板（A）。'
+      Speaker 2: 'Speaker 2 says "I brought every plant I could find" and their room looks like "a miniature jungle" — magical plants (B).'
+      Speaker 2Zh: '说话者2说"我带来了能找到的每一株植物"，房间看起来像"微型丛林"——魔法植物（B）。'
+      Speaker 3: 'Speaker 3 has "over eighty dragon portraits covering three walls" that they drew themselves — own artwork (C).'
+      Speaker 3Zh: '说话者3有"超过八十幅龙的肖像覆盖三面墙"，都是自己画的——自己的艺术作品（C）。'
+      Speaker 4: 'Speaker 4 has "over three hundred books stacked from floor to ceiling" — personal library (D).'
+      Speaker 4Zh: '说话者4有"超过三百本书从地板堆到天花板"——个人图书馆（D）。'
+      Speaker 5: 'Speaker 5 has soundproof walls, a self-playing piano, and a recording crystal — music practice space (E).'
+      Speaker 5Zh: '说话者5有隔音墙、自动演奏钢琴和录音水晶——音乐练习空间（E）。'
+
+  # ============================================================
+  # L265: The Future of Dragon-Human Relations
+  # ============================================================
+
+  - id: L265
+    type: multiple-matching
+    title: 'The Future of Dragon-Human Relations'
+    titleZh: '龙与人类关系的未来'
+    scene: 'You will hear five speakers at a conference sharing their vision for the future of dragon-human relations.'
+    sceneZh: '你将听到五位会议发言者分享他们对龙与人类关系未来的愿景。'
+    difficulty: 3
+    audioFile: 'L265.mp3'
+    speakers:
+      - name: Speaker 1
+        text: 'I believe the future lies in dragon conservation. As human cities grow, dragon habitats are shrinking. We need to create protected dragon reserves — large areas of wilderness where dragons can live freely without human interference. In my vision, every country would have at least one national dragon reserve, managed jointly by humans and dragons. Conservation is not just about protecting dragons — it is about protecting our shared world.'
+      - name: Speaker 2
+        text: 'I see a future where dragon-human education is completely integrated. Right now, only special academies teach dragon skills. But I believe every school should include Dragon Studies in their curriculum. Children should learn about dragon culture, language, and biology alongside traditional subjects. Understanding breeds respect, and respect prevents conflict. Within a generation, dragon-human misunderstandings could become a thing of the past.'
+      - name: Speaker 3
+        text: 'My vision focuses on collaborative technology. Dragons and humans have different strengths. Humans are brilliant at building small, precise tools. Dragons have incredible natural abilities — fire, flight, strength. If we combine these strengths, we could create technologies that neither species could build alone. Imagine fireproof buildings heated by dragon breath, or flying ambulances carried by sky dragons. The possibilities are endless when we work together.'
+      - name: Speaker 4
+        text: 'I dream of a world where dragon rights are legally recognised. Currently, dragons have no legal protection in most countries. They can be captured, traded, and exploited without consequence. I am campaigning for a Dragon Rights Charter that would give dragons the same legal protections as humans — the right to freedom, the right to safe habitat, and the right not to be harmed. Every living being deserves dignity.'
+      - name: Speaker 5
+        text: 'Communication is the key to our future together. Despite decades of research, most humans still cannot speak Dragon Language fluently. I am developing an artificial intelligence translation system that can convert Dragon Language to human language in real time, capturing not just words but emotions and nuances. When we can truly understand what dragons are saying, I believe the relationship will transform completely.'
+    statements:
+      A: 'This person advocates for protected natural areas for dragons.'
+      B: 'This person wants dragon education in all schools.'
+      C: 'This person envisions humans and dragons combining their strengths.'
+      D: 'This person campaigns for legal protection of dragons.'
+      E: 'This person is building technology to improve dragon-human communication.'
+      F: 'This person wants to create dragon-themed entertainment parks.'
+      G: 'This person advocates for competitive dragon sports leagues.'
+      H: 'This person wants dragons to hold political office.'
+    answers:
+      Speaker 1: 'A'
+      Speaker 2: 'B'
+      Speaker 3: 'C'
+      Speaker 4: 'D'
+      Speaker 5: 'E'
+    explanations:
+      Speaker 1: 'Speaker 1 says "We need to create protected dragon reserves" — protected natural areas (A).'
+      Speaker 1Zh: '说话者1说"我们需要建立受保护的龙保护区"——受保护的自然区域（A）。'
+      Speaker 2: 'Speaker 2 says "every school should include Dragon Studies in their curriculum" — dragon education in all schools (B).'
+      Speaker 2Zh: '说话者2说"每所学校都应该在课程中包含龙学"——所有学校的龙教育（B）。'
+      Speaker 3: 'Speaker 3 says "If we combine these strengths, we could create technologies" — combining strengths (C).'
+      Speaker 3Zh: '说话者3说"如果我们结合这些优势，我们可以创造技术"——结合优势（C）。'
+      Speaker 4: 'Speaker 4 is "campaigning for a Dragon Rights Charter" with legal protections — legal protection (D).'
+      Speaker 4Zh: '说话者4在"为龙权利宪章"进行活动，提供法律保护——法律保护（D）。'
+      Speaker 5: 'Speaker 5 is "developing an artificial intelligence translation system" for dragon communication — improving communication (E).'
+      Speaker 5Zh: '说话者5正在"开发人工智能翻译系统"用于龙的交流——改善沟通（E）。'

@@ -1,0 +1,1602 @@
+category: 'Conditionals & Clauses'
+categoryZh: '条件句与从句'
+questions:
+  # ============================================================
+  # G0301–G0320: Conditional Type 0-1 (zero and first conditional)
+  # If + present simple → present simple / will + infinitive
+  # Dragon Academy theme
+  # ============================================================
+  - id: G0301
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If you _____ a dragon egg in warm sand, it hatches faster.'
+    questionZh: '如果你把龙蛋____在温暖的沙子里，它会孵化得更快。'
+    options:
+      A: 'bury'
+      B: 'will bury'
+      C: 'buried'
+      D: 'would bury'
+    answer: 'A'
+    explanation: "This is a zero conditional (general truth about dragon eggs). We use present simple in both clauses: If + present simple, present simple."
+    explanationZh: '这是零条件句（关于龙蛋的一般事实）。两个从句都用一般现在时：If + 一般现在时，一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0302
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If water touches dragon fire, it _____ into steam immediately.'
+    questionZh: '如果水碰到龙火，它会立刻____蒸汽。'
+    options:
+      A: 'will turn'
+      B: 'turns'
+      C: 'turned'
+      D: 'would turn'
+    answer: 'B'
+    explanation: "Zero conditional for a scientific fact about dragon fire. Both clauses use present simple."
+    explanationZh: '零条件句表示关于龙火的科学事实。两个从句都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0303
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If a baby dragon _____ (feel) scared, it breathes tiny sparks.'
+    questionZh: '如果小龙____（feel）害怕，它会喷出小火花。'
+    answer: 'feels'
+    explanation: "Zero conditional: If + present simple (feels), present simple (breathes). This describes a general truth about baby dragons."
+    explanationZh: '零条件句：If + 一般现在时（feels），一般现在时（breathes）。描述小龙的一般习性。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0304
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If you _____ dragon riding class tomorrow, you will miss the flight exam.'
+    questionZh: '如果你明天____龙骑术课，你会错过飞行考试。'
+    options:
+      A: 'will skip'
+      B: 'skip'
+      C: 'skipped'
+      D: 'would skip'
+    answer: 'B'
+    explanation: "First conditional: If + present simple, will + infinitive. Even though we mean 'tomorrow', the if-clause uses present simple."
+    explanationZh: '第一条件句：If + 一般现在时，will + 动词原形。即使说的是"明天"，if 从句也用一般现在时。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0305
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If you pass the Dragon Taming test, you _____ a silver badge.'
+    questionZh: '如果你通过驯龙测试，你____一枚银色徽章。'
+    options:
+      A: 'get'
+      B: 'got'
+      C: 'will get'
+      D: 'would get'
+    answer: 'C'
+    explanation: "First conditional for a real future possibility: If + present simple (pass), will + infinitive (will get)."
+    explanationZh: '第一条件句表示真实的未来可能性：If + 一般现在时（pass），will + 动词原形（will get）。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0306
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If the weather _____ (be) clear tonight, we will fly our dragons over the mountains.'
+    questionZh: '如果今晚天气____（be）晴朗，我们将骑龙飞越群山。'
+    answer: 'is'
+    explanation: "First conditional: the if-clause takes present simple 'is', not 'will be'."
+    explanationZh: '第一条件句：if 从句用一般现在时 is，不用 will be。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0307
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If ice dragons _____ fire, their flames are blue.'
+    questionZh: '如果冰龙____火焰，它们的火焰是蓝色的。'
+    options:
+      A: 'breathe'
+      B: 'will breathe'
+      C: 'breathed'
+      D: 'would breathe'
+    answer: 'A'
+    explanation: "Zero conditional describing a general truth about ice dragons. Both clauses use present simple."
+    explanationZh: '零条件句描述冰龙的一般事实。两个从句都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0308
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-1]
+    context: dragon-academy
+    question: 'If you _____ (not / feed) your dragon before noon, it will become grumpy.'
+    questionZh: '如果你中午之前____（not / feed）你的龙，它会变得暴躁。'
+    answer: "don't feed"
+    explanation: "First conditional with a negative if-clause: If + don't + base verb, will + infinitive."
+    explanationZh: '第一条件句的否定形式：If + don''t + 动词原形，will + 动词原形。'
+    grammarPoint: 'First conditional (negative)'
+    relatedQuest: Q04
+    difficulty: 1
+
+  - id: G0309
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the dragon _____ angry, don''t look it in the eye!'
+    questionZh: '如果龙____生气了，不要直视它的眼睛！'
+    options:
+      A: 'gets'
+      B: 'will get'
+      C: 'got'
+      D: 'would get'
+    answer: 'A'
+    explanation: "First conditional with imperative in the main clause: If + present simple, imperative. The result clause uses an imperative (don't look) instead of 'will'."
+    explanationZh: '第一条件句搭配祈使句：If + 一般现在时，祈使句。结果从句用祈使句（don''t look）而不是 will。'
+    grammarPoint: 'First conditional + imperative'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0310
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the potion _____ (work), the injured dragon will recover by morning.'
+    questionZh: '如果药水____（work），受伤的龙将在早晨前恢复。'
+    answer: 'works'
+    explanation: "First conditional: If + present simple (works), will + infinitive (will recover)."
+    explanationZh: '第一条件句：If + 一般现在时（works），will + 动词原形（will recover）。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0311
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'Unless you _____ your dragon''s trust, it won''t let you ride it.'
+    questionZh: '除非你____你的龙的信任，否则它不会让你骑。'
+    options:
+      A: 'earn'
+      B: 'will earn'
+      C: 'earned'
+      D: 'would earn'
+    answer: 'A'
+    explanation: "'Unless' means 'if...not'. It follows the same rule as first conditional: unless + present simple."
+    explanationZh: 'unless 意为"如果不"。与第一条件句规则相同：unless + 一般现在时。'
+    grammarPoint: 'First conditional with unless'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0312
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If you mix dragon scales with moonwater, the mixture _____ glow in the dark.'
+    questionZh: '如果你把龙鳞和月水混合，混合物____在黑暗中发光。'
+    options:
+      A: 'will'
+      B: '-'
+      C: 'would'
+      D: 'is going to'
+    answer: 'A'
+    explanation: "This could be zero conditional (general truth: 'the mixture glows') or first conditional ('will glow'). With 'will', it emphasises a specific future action."
+    explanationZh: '这可以是零条件句（一般事实）或第一条件句（will glow）。用 will 强调具体的未来动作。'
+    grammarPoint: 'Zero vs first conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0313
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'We _____ (not / survive) the storm if we don''t find shelter for the dragons.'
+    questionZh: '如果我们不给龙找到避难所，我们____（not / survive）这场风暴。'
+    answer: "won't survive"
+    explanation: "First conditional with negative main clause: will not (won't) + infinitive."
+    explanationZh: '第一条件句的否定主句：will not（won''t）+ 动词原形。'
+    grammarPoint: 'First conditional (negative main clause)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0314
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If you heat dragon metal, it _____. That''s why blacksmiths use it.'
+    questionZh: '如果你加热龙金属，它____。这就是铁匠使用它的原因。'
+    options:
+      A: 'bends easily'
+      B: 'will bend easily'
+      C: 'bent easily'
+      D: 'would bend easily'
+    answer: 'A'
+    explanation: "Zero conditional for a general fact about dragon metal. Both clauses use present simple."
+    explanationZh: '零条件句描述龙金属的一般性质。两个从句都用一般现在时。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0315
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If you _____ (climb) to the top of Dragon Peak, you will see the whole kingdom.'
+    questionZh: '如果你____（climb）到龙峰顶部，你将看到整个王国。'
+    answer: 'climb'
+    explanation: "First conditional: If + present simple (climb), will + infinitive (will see)."
+    explanationZh: '第一条件句：If + 一般现在时（climb），will + 动词原形（will see）。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0316
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the Academy _____ more trainers, they will open a new dragon class.'
+    questionZh: '如果学院____更多训练师，他们将开设新的龙类课程。'
+    options:
+      A: 'hires'
+      B: 'will hire'
+      C: 'hired'
+      D: 'would hire'
+    answer: 'A'
+    explanation: "First conditional: If + present simple (hires), will + infinitive."
+    explanationZh: '第一条件句：If + 一般现在时（hires），will + 动词原形。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0317
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If a dragon _____ (eat) crystals, its scales change colour.'
+    questionZh: '如果龙____（eat）水晶，它的鳞片会变色。'
+    answer: 'eats'
+    explanation: "Zero conditional describing a biological fact about dragons. Third person singular 'eats'."
+    explanationZh: '零条件句描述龙的生物事实。第三人称单数用 eats。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0318
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the dragon egg _____ cracking, call the healer immediately!'
+    questionZh: '如果龙蛋____裂开，立刻叫治疗师！'
+    options:
+      A: 'starts'
+      B: 'will start'
+      C: 'started'
+      D: 'would start'
+    answer: 'A'
+    explanation: "First conditional with imperative: If + present simple (starts), imperative (call)."
+    explanationZh: '第一条件句搭配祈使句：If + 一般现在时（starts），祈使句（call）。'
+    grammarPoint: 'First conditional + imperative'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0319
+    type: multiple-choice
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'I _____ you a piece of dragon cake if you help me clean the stable.'
+    questionZh: '如果你帮我打扫龙舍，我____你一块龙蛋糕。'
+    options:
+      A: 'give'
+      B: 'will give'
+      C: 'gave'
+      D: 'would give'
+    answer: 'B'
+    explanation: "First conditional: the main clause uses 'will give' because this is a real future promise."
+    explanationZh: '第一条件句：主句用 will give，因为这是一个真实的未来承诺。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0320
+    type: fill-blank
+    tags: [conditional-0-1, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If you _____ (not / listen) to the teacher, you won''t learn how to calm an angry dragon.'
+    questionZh: '如果你____（not / listen）老师的话，你就学不会如何安抚愤怒的龙。'
+    answer: "don't listen"
+    explanation: "First conditional negative if-clause: If + don't + base verb."
+    explanationZh: '第一条件句否定 if 从句：If + don''t + 动词原形。'
+    grammarPoint: 'First conditional (negative)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  # ============================================================
+  # G0321–G0340: Conditional Type 2-3 (second and third conditional)
+  # If + past simple → would + infinitive
+  # If + past perfect → would have + past participle
+  # Dragon Academy theme
+  # ============================================================
+  - id: G0321
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If I _____ a dragon, I would fly to school every day.'
+    questionZh: '如果我____一条龙，我会每天飞去上学。'
+    options:
+      A: 'have'
+      B: 'had'
+      C: 'will have'
+      D: 'would have'
+    answer: 'B'
+    explanation: "Second conditional for an unreal present situation: If + past simple (had), would + infinitive."
+    explanationZh: '第二条件句表示与现在事实相反的假设：If + 一般过去时（had），would + 动词原形。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0322
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If dragons _____ (speak) English, training would be much easier.'
+    questionZh: '如果龙____（speak）英语，训练会容易得多。'
+    answer: 'spoke'
+    explanation: "Second conditional: If + past simple (spoke), would + infinitive. Dragons can't really speak English — this is hypothetical."
+    explanationZh: '第二条件句：If + 一般过去时（spoke），would + 动词原形。龙不会说英语——这是假设。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0323
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If I _____ the Dragon Queen, I would make dragon riding free for everyone.'
+    questionZh: '如果我____龙后，我会让所有人免费骑龙。'
+    options:
+      A: 'am'
+      B: 'was'
+      C: 'were'
+      D: 'be'
+    answer: 'C'
+    explanation: "In the second conditional, we traditionally use 'were' for all subjects (If I were, If she were). This is the subjunctive form."
+    explanationZh: '在第二条件句中，所有人称传统上都用 were（If I were, If she were）。这是虚拟语气。'
+    grammarPoint: 'Second conditional (subjunctive were)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0324
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If you found a lost dragon egg, what _____ you do?'
+    questionZh: '如果你发现一个丢失的龙蛋，你会____？'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'do'
+      D: 'did'
+    answer: 'B'
+    explanation: "Second conditional question form: If + past simple, what would + subject + infinitive?"
+    explanationZh: '第二条件句疑问形式：If + 一般过去时，what would + 主语 + 动词原形？'
+    grammarPoint: 'Second conditional (question)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0325
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the wizard _____ (not / cast) that spell, the dragon would still be wild.'
+    questionZh: '如果巫师____（not / cast）那个咒语，龙仍然是野生的。'
+    answer: "hadn't cast"
+    explanation: "Third conditional: If + past perfect (hadn't cast), would have + past participle. But here the result is about a present state, making it a mixed conditional (type 3 → present result)."
+    explanationZh: '第三条件句/混合条件句：If + 过去完成时（hadn''t cast），would + 动词原形（表示对现在的影响）。'
+    grammarPoint: 'Mixed conditional (past condition → present result)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0326
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'If the trainer had arrived earlier, the baby dragon _____ escaped.'
+    questionZh: '如果训练师早点到达，小龙就____逃跑了。'
+    options:
+      A: "wouldn't"
+      B: "won't have"
+      C: "wouldn't have"
+      D: "didn't"
+    answer: 'C'
+    explanation: "Third conditional: If + past perfect (had arrived), would have + past participle (wouldn't have escaped). This is about an unreal past situation."
+    explanationZh: '第三条件句：If + 过去完成时（had arrived），would have + 过去分词（wouldn''t have escaped）。描述与过去事实相反的假设。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0327
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the knights _____ (bring) their shields, they would have been safe from the dragon''s fire.'
+    questionZh: '如果骑士们____（bring）他们的盾牌，他们就不会被龙火伤到了。'
+    answer: 'had brought'
+    explanation: "Third conditional: If + past perfect (had brought), would have + past participle (would have been safe)."
+    explanationZh: '第三条件句：If + 过去完成时（had brought），would have + 过去分词（would have been safe）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0328
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I had wings like a dragon, I _____ fly across the ocean.'
+    questionZh: '如果我有龙一样的翅膀，我____飞越大海。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'would have'
+      D: 'can'
+    answer: 'B'
+    explanation: "Second conditional (unreal present): If + past simple (had), would + infinitive (would fly). I don't have wings — this is imaginary."
+    explanationZh: '第二条件句（与现在相反）：If + 一般过去时（had），would + 动词原形（would fly）。我没有翅膀——这是想象。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0329
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the dragon hadn''t been sleeping, it _____ the intruders coming.'
+    questionZh: '如果龙当时没有在睡觉，它____入侵者来了。'
+    options:
+      A: 'would notice'
+      B: 'would have noticed'
+      C: 'noticed'
+      D: 'will notice'
+    answer: 'B'
+    explanation: "Third conditional: If + past perfect (hadn't been sleeping), would have + past participle (would have noticed)."
+    explanationZh: '第三条件句：If + 过去完成时（hadn''t been sleeping），would have + 过去分词（would have noticed）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0330
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If Elara _____ (study) harder, she would have passed the Dragon History exam.'
+    questionZh: '如果 Elara____（study）更努力，她就通过龙类历史考试了。'
+    answer: 'had studied'
+    explanation: "Third conditional: If + past perfect (had studied), would have + past participle (would have passed)."
+    explanationZh: '第三条件句：If + 过去完成时（had studied），would have + 过去分词（would have passed）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0331
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I were a dragon tamer, I _____ never use chains.'
+    questionZh: '如果我是龙的训练师，我____永远不用锁链。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'would have'
+      D: 'am going to'
+    answer: 'B'
+    explanation: "Second conditional: If I were..., I would + infinitive. This is an imaginary present scenario."
+    explanationZh: '第二条件句：If I were...，I would + 动词原形。这是对现在的想象场景。'
+    grammarPoint: 'Second conditional (subjunctive)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0332
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the dragon _____ (not / eat) the magic berries, it wouldn''t have grown so large.'
+    questionZh: '如果那条龙____（not / eat）魔法浆果，它就不会长这么大了。'
+    answer: "hadn't eaten"
+    explanation: "Third conditional: If + past perfect negative (hadn't eaten), would have + past participle."
+    explanationZh: '第三条件句：If + 过去完成时否定（hadn''t eaten），would have + 过去分词。'
+    grammarPoint: 'Third conditional (negative)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0333
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I could breathe fire, I _____ a campfire in seconds.'
+    questionZh: '如果我能喷火，我____就能在几秒内点燃营火。'
+    options:
+      A: 'light'
+      B: 'would light'
+      C: 'will light'
+      D: 'would have lit'
+    answer: 'B'
+    explanation: "Second conditional with 'could' in the if-clause: If + could + infinitive, would + infinitive."
+    explanationZh: '第二条件句用 could：If + could + 动词原形，would + 动词原形。'
+    grammarPoint: 'Second conditional (could)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0334
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the storm hadn''t destroyed the bridge, the dragons _____ (reach) the island safely.'
+    questionZh: '如果暴风雨没有摧毁桥梁，龙们____（reach）安全到达岛屿。'
+    answer: 'would have reached'
+    explanation: "Third conditional: If + past perfect (hadn't destroyed), would have + past participle (would have reached)."
+    explanationZh: '第三条件句：If + 过去完成时（hadn''t destroyed），would have + 过去分词（would have reached）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0335
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If you _____ a dragon trainer, would you choose a fire dragon or an ice dragon?'
+    questionZh: '如果你____龙训练师，你会选火龙还是冰龙？'
+    options:
+      A: 'are'
+      B: 'were'
+      C: 'have been'
+      D: 'will be'
+    answer: 'B'
+    explanation: "Second conditional question: If + were (subjunctive for all subjects), would + infinitive."
+    explanationZh: '第二条件句疑问句：If + were（所有人称用虚拟语气），would + 动词原形。'
+    grammarPoint: 'Second conditional (question)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0336
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the healers had known about the poison, they _____ (save) the dragon''s wing.'
+    questionZh: '如果治疗师们知道毒药的事，他们____（save）龙的翅膀。'
+    answer: 'would have saved'
+    explanation: "Third conditional: If + past perfect (had known), would have + past participle (would have saved)."
+    explanationZh: '第三条件句：If + 过去完成时（had known），would have + 过去分词（would have saved）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0337
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the map _____ correct, we would have found the dragon cave hours ago.'
+    questionZh: '如果地图____正确的，我们几小时前就找到龙洞了。'
+    options:
+      A: 'was'
+      B: 'had been'
+      C: 'is'
+      D: 'were'
+    answer: 'B'
+    explanation: "Third conditional: If + past perfect (had been), would have + past participle (would have found)."
+    explanationZh: '第三条件句：If + 过去完成时（had been），would have + 过去分词（would have found）。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0338
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I _____ (be) taller, I could reach the dragon saddle without a ladder.'
+    questionZh: '如果我____（be）更高，我就能不用梯子够到龙鞍了。'
+    answer: 'were'
+    explanation: "Second conditional with 'could': If + were (subjunctive), could + infinitive. We use 'were' for all subjects in formal English."
+    explanationZh: '第二条件句搭配 could：If + were（虚拟语气），could + 动词原形。正式英语中所有人称都用 were。'
+    grammarPoint: 'Second conditional (were + could)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0339
+    type: multiple-choice
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If we had left at dawn, we _____ to Dragon Island before the storm.'
+    questionZh: '如果我们黎明出发，我们____在暴风雨前到达龙岛。'
+    options:
+      A: 'would get'
+      B: 'would have got'
+      C: 'will get'
+      D: 'got'
+    answer: 'B'
+    explanation: "Third conditional: If + past perfect (had left), would have + past participle (would have got). We didn't leave at dawn, so we didn't arrive in time."
+    explanationZh: '第三条件句：If + 过去完成时（had left），would have + 过去分词（would have got）。我们没有黎明出发，所以没有及时到达。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0340
+    type: fill-blank
+    tags: [conditional-2-3, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If there _____ (be) no gravity, dragons wouldn''t need wings to fly.'
+    questionZh: '如果____（be）没有重力，龙就不需要翅膀来飞行了。'
+    answer: 'were'
+    explanation: "Second conditional for an impossible scenario: If + were (subjunctive), would + infinitive."
+    explanationZh: '第二条件句表示不可能的情景：If + were（虚拟语气），would + 动词原形。'
+    grammarPoint: 'Second conditional (impossible scenario)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # G0341–G0360: Mixed conditionals + I wish / If only
+  # Dragon Academy theme
+  # ============================================================
+  - id: G0341
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I had trained harder as a child, I _____ a better dragon rider now.'
+    questionZh: '如果我小时候训练得更努力，我现在____更好的龙骑士了。'
+    options:
+      A: 'would be'
+      B: 'would have been'
+      C: 'will be'
+      D: 'am'
+    answer: 'A'
+    explanation: "Mixed conditional: past condition (If + past perfect) → present result (would + infinitive). The training was in the past but the result is about now."
+    explanationZh: '混合条件句：过去条件（If + 过去完成时）→ 现在结果（would + 动词原形）。训练是过去的，但结果是现在的。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0342
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I _____ (not / be) afraid of heights, I would have joined the Dragon Riders last year.'
+    questionZh: '如果我____（not / be）恐高，我去年就加入龙骑士团了。'
+    answer: "weren't"
+    explanation: "Mixed conditional: present condition (If + past simple 'weren't') → past result (would have + past participle). The fear of heights is a present fact that affected a past decision."
+    explanationZh: '混合条件句：现在条件（If + 一般过去时 weren''t）→ 过去结果（would have + 过去分词）。恐高是现在的事实，影响了过去的决定。'
+    grammarPoint: 'Mixed conditional (present → past)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0343
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish I _____ a pet dragon.'
+    questionZh: '我希望我____一只宠物龙。'
+    options:
+      A: 'have'
+      B: 'had'
+      C: 'will have'
+      D: 'would have'
+    answer: 'B'
+    explanation: "'I wish + past simple' expresses a wish about the present that is unreal. I don't have a pet dragon, but I want one."
+    explanationZh: 'I wish + 一般过去时，表达对现在不真实的愿望。我没有宠物龙，但我想要一只。'
+    grammarPoint: 'I wish + past simple (present wish)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0344
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish I _____ (can) fly like a dragon.'
+    questionZh: '我希望我____（can）像龙一样飞。'
+    answer: 'could'
+    explanation: "'I wish + could' expresses a present wish about ability. 'Can' becomes 'could' after 'wish'."
+    explanationZh: 'I wish + could 表达对现在能力的愿望。wish 后 can 变成 could。'
+    grammarPoint: 'I wish + could (present wish)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0345
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If only we _____ more time to prepare for the Dragon Festival!'
+    questionZh: '要是我们____更多时间准备龙节就好了！'
+    options:
+      A: 'have'
+      B: 'had'
+      C: 'will have'
+      D: 'are having'
+    answer: 'B'
+    explanation: "'If only + past simple' works the same as 'I wish + past simple' for present wishes."
+    explanationZh: 'If only + 一般过去时，与 I wish + 一般过去时用法相同，表达现在的愿望。'
+    grammarPoint: 'If only + past simple (present wish)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0346
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish the dragon _____ (not / break) the castle tower yesterday.'
+    questionZh: '我希望那条龙昨天____（not / break）城堡塔楼。'
+    answer: "hadn't broken"
+    explanation: "'I wish + past perfect' expresses regret about the past. The dragon did break it, and we wish it hadn't."
+    explanationZh: 'I wish + 过去完成时，表达对过去的遗憾。龙确实打破了它，我们希望它没有。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0347
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish the baby dragon _____ making so much noise at night!'
+    questionZh: '我希望小龙晚上____发出这么大噪音！'
+    options:
+      A: 'stops'
+      B: 'stopped'
+      C: 'would stop'
+      D: 'will stop'
+    answer: 'C'
+    explanation: "'I wish + would' is used when we want someone/something to change their behaviour. It expresses annoyance or a desire for change."
+    explanationZh: 'I wish + would 用于希望某人/某物改变行为。表达烦恼或对改变的渴望。'
+    grammarPoint: 'I wish + would (desire for change)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0348
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If only I _____ (listen) to the old dragon master''s advice last week.'
+    questionZh: '要是我上周____（listen）老龙师的建议就好了。'
+    answer: 'had listened'
+    explanation: "'If only + past perfect' expresses regret about a past action that didn't happen."
+    explanationZh: 'If only + 过去完成时，表达对过去没做的事情的遗憾。'
+    grammarPoint: 'If only + past perfect (past regret)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0349
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If she hadn''t found the magic stone, she _____ able to communicate with dragons now.'
+    questionZh: '如果她没有找到魔法石，她现在就____与龙交流了。'
+    options:
+      A: "won't be"
+      B: "wouldn't be"
+      C: "wouldn't have been"
+      D: "isn't"
+    answer: 'B'
+    explanation: "Mixed conditional: past condition (hadn't found) → present result (wouldn't be). She found the stone in the past and can now communicate with dragons."
+    explanationZh: '混合条件句：过去条件（hadn''t found）→ 现在结果（wouldn''t be）。她过去找到了魔法石，现在能与龙交流。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0350
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish I _____ (know) more about dragon healing spells.'
+    questionZh: '我希望我____（know）更多关于龙疗愈咒语的知识。'
+    answer: 'knew'
+    explanation: "'I wish + past simple' for a present wish. I don't know enough now, and I wish I did."
+    explanationZh: 'I wish + 一般过去时，表达现在的愿望。我现在知道得不够多，我希望我知道。'
+    grammarPoint: 'I wish + past simple (present wish)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0351
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If only the weather _____ better! Then we could take the dragons out for a flight.'
+    questionZh: '要是天气____就好了！那我们就能带龙出去飞了。'
+    options:
+      A: 'is'
+      B: 'were'
+      C: 'will be'
+      D: 'has been'
+    answer: 'B'
+    explanation: "'If only + were' for a present unreal wish. The weather is bad now, and we wish it were better."
+    explanationZh: 'If only + were 表达对现在不真实的愿望。天气现在很差，我们希望它好些。'
+    grammarPoint: 'If only + were (present wish)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0352
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'I wish the school _____ (not / cancel) the dragon flying competition last month.'
+    questionZh: '我希望学校上个月____（not / cancel）龙飞行比赛。'
+    answer: "hadn't cancelled"
+    explanation: "'I wish + past perfect' for past regret. The competition was cancelled, and we regret it."
+    explanationZh: 'I wish + 过去完成时，表达对过去的遗憾。比赛被取消了，我们很遗憾。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0353
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If he had studied dragon anatomy, he _____ a better healer today.'
+    questionZh: '如果他学过龙的解剖学，他今天____一个更好的治疗师。'
+    options:
+      A: 'would be'
+      B: 'would have been'
+      C: 'will be'
+      D: 'is'
+    answer: 'A'
+    explanation: "Mixed conditional: past condition (had studied) → present result (would be). The word 'today' confirms the result is about the present."
+    explanationZh: '混合条件句：过去条件（had studied）→ 现在结果（would be）。"今天"一词确认结果是关于现在的。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0354
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'I wish my dragon _____ (not / be) so stubborn. It never listens to me!'
+    questionZh: '我希望我的龙____（not / be）这么倔。它从来不听我的话！'
+    answer: "weren't"
+    explanation: "'I wish + past simple' for an unreal present wish. The dragon IS stubborn, and I wish it weren't."
+    explanationZh: 'I wish + 一般过去时，表达对现在的不满。龙确实很倔，我希望它不倔。'
+    grammarPoint: 'I wish + past simple (present complaint)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0355
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'I wish you _____ teasing the dragons. They get very angry!'
+    questionZh: '我希望你____逗龙。它们会非常生气！'
+    options:
+      A: 'stop'
+      B: 'stopped'
+      C: 'would stop'
+      D: 'will stop'
+    answer: 'C'
+    explanation: "'I wish + would' to express annoyance about someone's repeated behaviour that we want them to change."
+    explanationZh: 'I wish + would 表达对某人重复行为的不满，希望他们改变。'
+    grammarPoint: 'I wish + would (irritation)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0356
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If the ancient dragon riders hadn''t left their journals, we _____ (not / know) how to train dragons today.'
+    questionZh: '如果古代龙骑士没有留下他们的日记，我们今天____（not / know）如何训练龙。'
+    answer: "wouldn't know"
+    explanation: "Mixed conditional: past condition (hadn't left) → present result (wouldn't know today). Past events affect what we know now."
+    explanationZh: '混合条件句：过去条件（hadn''t left）→ 现在结果（wouldn''t know today）。过去的事件影响我们现在所知道的。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0357
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If I weren''t allergic to dragon smoke, I _____ the fire-breathing class last term.'
+    questionZh: '如果我不对龙烟过敏，我上学期就____喷火课了。'
+    options:
+      A: 'would join'
+      B: 'would have joined'
+      C: 'joined'
+      D: 'will join'
+    answer: 'B'
+    explanation: "Mixed conditional: present condition (weren't allergic — still true now) → past result (would have joined — last term)."
+    explanationZh: '混合条件句：现在条件（weren''t allergic — 现在仍然过敏）→ 过去结果（would have joined — 上学期）。'
+    grammarPoint: 'Mixed conditional (present → past)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0358
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If only we _____ (not / lose) the map to the Dragon Caves. Now we''re completely lost.'
+    questionZh: '要是我们____（not / lose）龙洞地图就好了。现在我们完全迷路了。'
+    answer: "hadn't lost"
+    explanation: "'If only + past perfect' expresses deep regret about a past action. We lost the map and now regret it."
+    explanationZh: 'If only + 过去完成时，表达对过去行为的深深遗憾。我们丢了地图，现在很后悔。'
+    grammarPoint: 'If only + past perfect (deep regret)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0359
+    type: multiple-choice
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'I wish the professor _____ explain dragon history more clearly. His lessons are so confusing.'
+    questionZh: '我希望教授____把龙的历史讲得更清楚。他的课太让人困惑了。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'could'
+      D: 'can'
+    answer: 'B'
+    explanation: "'I wish + would' for dissatisfaction with someone's current behaviour. The professor doesn't explain well, and we wish he would change."
+    explanationZh: 'I wish + would 表达对某人当前行为的不满。教授讲得不好，我们希望他能改进。'
+    grammarPoint: 'I wish + would (dissatisfaction)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0360
+    type: fill-blank
+    tags: [mixed-conditional-wish, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If he hadn''t been so brave, he _____ (not / be) the youngest Dragon Knight in history now.'
+    questionZh: '如果他不是那么勇敢，他现在____（not / be）历史上最年轻的龙骑士。'
+    answer: "wouldn't be"
+    explanation: "Mixed conditional: past condition (hadn't been brave) → present result (wouldn't be now). His past bravery affects his present title."
+    explanationZh: '混合条件句：过去条件（hadn''t been brave）→ 现在结果（wouldn''t be now）。他过去的勇敢影响了现在的头衔。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  # ============================================================
+  # G0361–G0380: Relative clauses
+  # who/which/that/where/whose, defining vs non-defining
+  # Dragon Academy theme
+  # ============================================================
+  - id: G0361
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The girl _____ tamed the golden dragon is only nine years old.'
+    questionZh: '____驯服金龙的那个女孩只有九岁。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'whose'
+      D: 'where'
+    answer: 'A'
+    explanation: "We use 'who' for people in relative clauses. 'The girl who tamed the golden dragon' — 'who' refers to the girl (a person)."
+    explanationZh: '关系从句中指人用 who。"驯服金龙的那个女孩"——who 指代 girl（人）。'
+    grammarPoint: 'Defining relative clause (who)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0362
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The potion _____ the healer made cured the dragon''s wing.'
+    questionZh: '治疗师制作的药水____治好了龙的翅膀。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'where'
+      D: 'whose'
+    answer: 'B'
+    explanation: "We use 'which' (or 'that') for things. 'The potion which the healer made' — 'which' refers to the potion (a thing)."
+    explanationZh: '关系从句中指物用 which（或 that）。"治疗师制作的药水"——which 指代 potion（物）。'
+    grammarPoint: 'Defining relative clause (which)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0363
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The cave _____ the dragon sleeps is hidden behind a waterfall.'
+    questionZh: '龙睡觉的那个洞穴藏在瀑布后面。(用关系副词填空)'
+    answer: 'where'
+    explanation: "We use 'where' for places. 'The cave where the dragon sleeps' — 'where' means 'in which'."
+    explanationZh: '关系从句中指地点用 where。"龙睡觉的洞穴"——where 相当于 in which。'
+    grammarPoint: 'Defining relative clause (where)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0364
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The boy _____ dragon won the race is my best friend.'
+    questionZh: '____龙赢得比赛的那个男孩是我最好的朋友。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'whose'
+      D: 'that'
+    answer: 'C'
+    explanation: "We use 'whose' to show possession. 'The boy whose dragon won' — the dragon belongs to the boy."
+    explanationZh: '用 whose 表示所有关系。"龙赢得比赛的那个男孩"——龙属于那个男孩。'
+    grammarPoint: 'Defining relative clause (whose)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0365
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The dragon _____ lives on top of the mountain is over 500 years old.'
+    questionZh: '住在山顶的那条龙____超过500岁了。'
+    options:
+      A: 'who'
+      B: 'that'
+      C: 'whose'
+      D: 'where'
+    answer: 'B'
+    explanation: "We can use 'that' for both people and things in defining relative clauses. Here it refers to the dragon."
+    explanationZh: '在限定性关系从句中，that 可以指人和物。这里指代 dragon。'
+    grammarPoint: 'Defining relative clause (that)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0366
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'Professor Flame, _____ has taught at Dragon Academy for 30 years, is retiring next month.'
+    questionZh: '在龙学院教了30年的 Flame 教授下个月要退休了。(用关系代词填空)'
+    answer: 'who'
+    explanation: "Non-defining relative clause (with commas) about a person. We use 'who' — we cannot use 'that' in non-defining clauses."
+    explanationZh: '非限定性关系从句（有逗号）指人。用 who——非限定性从句不能用 that。'
+    grammarPoint: 'Non-defining relative clause (who)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0367
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'Dragon Fire Mountain, _____ is the highest peak in the kingdom, is home to many dragons.'
+    questionZh: '龙火山，____是王国最高峰，是许多龙的家园。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'B'
+    explanation: "Non-defining relative clause (with commas) about a thing/place. We use 'which' — never 'that' in non-defining clauses."
+    explanationZh: '非限定性关系从句（有逗号）指物。用 which——非限定性从句不能用 that。'
+    grammarPoint: 'Non-defining relative clause (which)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0368
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-2]
+    context: dragon-academy
+    question: 'The trainer _____ I told you about is coming to visit our class today.'
+    questionZh: '我跟你说过的那个训练师今天要来参观我们的课。(用关系代词填空)'
+    answer: 'who'
+    explanation: "Defining relative clause. The relative pronoun 'who' (or 'that' or even omitted) refers to the trainer — a person. 'Who I told you about' = 'about whom I told you'."
+    explanationZh: '限定性关系从句。关系代词 who（或 that，甚至可省略）指代训练师——人。'
+    grammarPoint: 'Defining relative clause (who as object)'
+    relatedQuest: Q04
+    difficulty: 2
+
+  - id: G0369
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The spell book, _____ cover was made of dragon leather, contained ancient secrets.'
+    questionZh: '那本咒语书，____封面是用龙皮做的，包含着古老的秘密。'
+    options:
+      A: 'which'
+      B: 'that'
+      C: 'whose'
+      D: 'who'
+    answer: 'C'
+    explanation: "'Whose' shows possession and works for both people and things. The cover belongs to the spell book."
+    explanationZh: 'whose 表示所有关系，人和物都可以用。封面属于那本咒语书。'
+    grammarPoint: 'Non-defining relative clause (whose for things)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0370
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The day _____ the dragon egg finally hatched was the happiest day of my life.'
+    questionZh: '龙蛋终于孵化的那天是我一生中最快乐的一天。(用关系副词填空)'
+    answer: 'when'
+    explanation: "We use 'when' for times in relative clauses. 'The day when the egg hatched' — 'when' means 'on which'."
+    explanationZh: '关系从句中指时间用 when。"龙蛋孵化的那天"——when 相当于 on which。'
+    grammarPoint: 'Defining relative clause (when)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0371
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The reason _____ the dragon was angry is that someone stole its egg.'
+    questionZh: '龙生气的原因是有人偷了它的蛋。(选择正确的关系副词)'
+    options:
+      A: 'which'
+      B: 'why'
+      C: 'that'
+      D: 'where'
+    answer: 'B'
+    explanation: "We use 'why' after 'the reason'. 'The reason why the dragon was angry' — 'why' means 'for which'."
+    explanationZh: '在 the reason 后面用 why。"龙生气的原因"——why 相当于 for which。'
+    grammarPoint: 'Defining relative clause (why)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0372
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The sword, _____ was forged in dragon fire, could cut through anything.'
+    questionZh: '那把剑，____是在龙火中锻造的，能切穿任何东西。(用关系代词填空)'
+    answer: 'which'
+    explanation: "Non-defining relative clause about a thing. Use 'which' — never 'that' when there are commas."
+    explanationZh: '非限定性关系从句指物。有逗号时用 which——不能用 that。'
+    grammarPoint: 'Non-defining relative clause (which)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0373
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'My friend Kai, _____ father is a famous dragon healer, wants to be a vet.'
+    questionZh: '我的朋友 Kai，____爸爸是著名的龙疗师，想成为兽医。'
+    options:
+      A: 'who'
+      B: 'whose'
+      C: 'which'
+      D: 'that'
+    answer: 'B'
+    explanation: "Non-defining clause showing possession: Kai's father. Use 'whose' for possession with people."
+    explanationZh: '非限定性从句表示所有关系：Kai 的爸爸。指人的所有关系用 whose。'
+    grammarPoint: 'Non-defining relative clause (whose)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0374
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'Everything _____ you learn at Dragon Academy will be useful one day.'
+    questionZh: '你在龙学院学到的一切有一天都会有用。(用关系代词填空)'
+    answer: 'that'
+    explanation: "After 'everything', 'anything', 'nothing', 'all', we use 'that' (not 'which')."
+    explanationZh: '在 everything, anything, nothing, all 后面用 that（不用 which）。'
+    grammarPoint: 'Relative clause (that after indefinite pronouns)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0375
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The island _____ the rarest dragons live has never been explored.'
+    questionZh: '最稀有的龙居住的那个岛从未被探索过。'
+    options:
+      A: 'which'
+      B: 'that'
+      C: 'where'
+      D: 'whose'
+    answer: 'C'
+    explanation: "'Where' is used for places in relative clauses. The dragons live ON the island, so 'where' = 'on which'."
+    explanationZh: '关系从句中指地点用 where。龙住在岛上，所以 where = on which。'
+    grammarPoint: 'Defining relative clause (where)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0376
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The first dragon _____ I ever rode was a small blue one called Sapphire.'
+    questionZh: '我骑过的第一条龙是一条叫蓝宝石的小蓝龙。'
+    options:
+      A: 'which'
+      B: 'who'
+      C: 'that'
+      D: 'whose'
+    answer: 'C'
+    explanation: "After ordinal numbers (first, second, last) and superlatives, we prefer 'that'."
+    explanationZh: '在序数词（first, second, last）和最高级后面，优先用 that。'
+    grammarPoint: 'Relative clause (that after ordinals)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0377
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'Luna, _____ is the fastest dragon in the academy, won three races this year.'
+    questionZh: 'Luna，____是学院里最快的龙，今年赢了三场比赛。(用关系代词填空)'
+    answer: 'which'
+    explanation: "Non-defining relative clause about an animal (dragon). We use 'which' for animals and things in non-defining clauses."
+    explanationZh: '非限定性关系从句指动物（龙）。非限定性从句中动物和物用 which。'
+    grammarPoint: 'Non-defining relative clause (which for animals)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0378
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'Is this the dragon _____ escaped from the training ground yesterday?'
+    questionZh: '这是昨天从训练场逃跑的那条龙吗？'
+    options:
+      A: 'who'
+      B: 'that'
+      C: 'where'
+      D: 'whose'
+    answer: 'B'
+    explanation: "Defining relative clause about an animal. We can use 'that' or 'which' — 'that' is very common after 'this is the...'."
+    explanationZh: '限定性关系从句指动物。可以用 that 或 which——在 this is the... 后面 that 很常用。'
+    grammarPoint: 'Defining relative clause (that)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0379
+    type: fill-blank
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The village, _____ most of the dragon tamers come from, is located near the volcano.'
+    questionZh: '大多数龙驯者来自的那个村庄位于火山附近。(用关系代词填空)'
+    answer: 'which'
+    explanation: "Non-defining clause with a preposition: 'from which'. In informal English, the preposition moves to the end: 'which...come from'."
+    explanationZh: '非限定性从句带介词：from which。在非正式英语中，介词移到末尾：which...come from。'
+    grammarPoint: 'Non-defining relative clause (preposition + which)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0380
+    type: multiple-choice
+    tags: [relative-clauses, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'She showed me the egg, _____ made me very excited.'
+    questionZh: '她给我看了那个蛋，____让我非常兴奋。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'what'
+      D: 'who'
+    answer: 'B'
+    explanation: "'Which' can refer to the whole preceding clause, not just a noun. Here 'which' = 'the fact that she showed me the egg'. We cannot use 'that' in this way."
+    explanationZh: 'which 可以指代前面整个句子，不仅仅是一个名词。这里 which = "她给我看蛋这件事"。不能用 that 这样用。'
+    grammarPoint: 'Non-defining relative clause (which referring to whole clause)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  # ============================================================
+  # G0381–G0400: Mixed review
+  # (conditionals + modals from month 3 + relative clauses)
+  # Dragon Academy theme
+  # ============================================================
+  - id: G0381
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If the dragon _____ fire, the knight would have been injured.'
+    questionZh: '如果龙____火，骑士就受伤了。'
+    options:
+      A: 'breathes'
+      B: 'breathed'
+      C: 'had breathed'
+      D: 'would breathe'
+    answer: 'C'
+    explanation: "Third conditional: If + past perfect (had breathed), would have + past participle (would have been)."
+    explanationZh: '第三条件句：If + 过去完成时（had breathed），would have + 过去分词。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0382
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The dragon trainer _____ rescued three baby dragons must be very brave.'
+    questionZh: '____救了三只小龙的龙训练师一定非常勇敢。(用关系代词填空)'
+    answer: 'who'
+    explanation: "Defining relative clause about a person (the dragon trainer). Use 'who' or 'that'."
+    explanationZh: '限定性关系从句指人（龙训练师）。用 who 或 that。'
+    grammarPoint: 'Defining relative clause (who) + modal deduction (must be)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0383
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'There are scratch marks on the wall. A dragon _____ have escaped from the dungeon.'
+    questionZh: '墙上有抓痕。一条龙____从地牢逃出来了。'
+    options:
+      A: 'must'
+      B: 'can'
+      C: 'shall'
+      D: 'would'
+    answer: 'A'
+    explanation: "'Must have + past participle' for a confident deduction about the past, based on evidence (scratch marks)."
+    explanationZh: 'must have + 过去分词，表示基于证据（抓痕）对过去的有把握推测。'
+    grammarPoint: 'Modal for past deduction (must have)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0384
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'If I were you, I _____ (not / touch) that dragon egg. It might explode!'
+    questionZh: '如果我是你，我____（not / touch）那个龙蛋。它可能会爆炸！'
+    answer: "wouldn't touch"
+    explanation: "Second conditional giving advice: If I were you, I wouldn't + infinitive."
+    explanationZh: '第二条件句给建议：If I were you, I wouldn''t + 动词原形。'
+    grammarPoint: 'Second conditional (advice)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0385
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The library, _____ has thousands of books about dragons, is open until midnight.'
+    questionZh: '图书馆，____有数千本关于龙的书，开放到午夜。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'where'
+      D: 'who'
+    answer: 'B'
+    explanation: "Non-defining relative clause about a thing (the library). Use 'which' — never 'that' in non-defining clauses."
+    explanationZh: '非限定性关系从句指物（图书馆）。用 which——非限定性从句不能用 that。'
+    grammarPoint: 'Non-defining relative clause (which)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0386
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'Unless you _____ (wear) fireproof armour, you shouldn''t enter the dragon''s cave.'
+    questionZh: '除非你____（wear）防火盔甲，否则你不应该进入龙洞。'
+    answer: 'wear'
+    explanation: "'Unless' = 'if...not'. First conditional: Unless + present simple, shouldn't + infinitive."
+    explanationZh: 'unless = if...not。第一条件句：unless + 一般现在时。'
+    grammarPoint: 'First conditional (unless) + modal (should)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0387
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-3]
+    context: dragon-academy
+    question: 'The dragon''s scales, _____ colour changes with its mood, are truly magical.'
+    questionZh: '龙的鳞片，____颜色随心情变化，真的很神奇。'
+    options:
+      A: 'which'
+      B: 'whose'
+      C: 'that'
+      D: 'who'
+    answer: 'B'
+    explanation: "'Whose' for possession — the colour belongs to the scales. Non-defining clause (commas), so 'that' cannot be used."
+    explanationZh: 'whose 表示所有关系——颜色属于鳞片。非限定性从句（有逗号），不能用 that。'
+    grammarPoint: 'Non-defining relative clause (whose)'
+    relatedQuest: Q04
+    difficulty: 3
+
+  - id: G0388
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If the dragon hadn''t protected us, we _____ (not / survive) the avalanche.'
+    questionZh: '如果龙没有保护我们，我们____（not / survive）雪崩。'
+    answer: "wouldn't have survived"
+    explanation: "Third conditional: If + past perfect (hadn't protected), would + not + have + past participle (wouldn't have survived)."
+    explanationZh: '第三条件句：If + 过去完成时（hadn''t protected），would + not + have + 过去分词（wouldn''t have survived）。'
+    grammarPoint: 'Third conditional (negative)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0389
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'The dragon _____ be hungry — it just ate ten fish!'
+    questionZh: '龙____饿——它刚吃了十条鱼！'
+    options:
+      A: "can't"
+      B: "mustn't"
+      C: "shouldn't"
+      D: "needn't"
+    answer: 'A'
+    explanation: "'Can't' for strong negative deduction about the present. Strong evidence (just ate ten fish) means it's impossible for the dragon to be hungry."
+    explanationZh: 'can''t 表示对现在的强烈否定推测。有力证据（刚吃了十条鱼）意味着龙不可能饿。'
+    grammarPoint: 'Modal for present deduction (can''t)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0390
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'I wish I _____ (meet) the legendary Dragon Queen when she visited last year.'
+    questionZh: '我希望去年传说中的龙后来访时我____（meet）她。'
+    answer: 'had met'
+    explanation: "'I wish + past perfect' for regret about the past. I didn't meet her, but I wish I had."
+    explanationZh: 'I wish + 过去完成时，表达对过去的遗憾。我没见到她，但我希望见到了。'
+    grammarPoint: 'I wish + past perfect (past regret)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0391
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'The treasure _____ the pirates hid must still be somewhere in Dragon Cave.'
+    questionZh: '海盗藏的宝藏____还在龙洞的某个地方。'
+    options:
+      A: 'who'
+      B: 'that'
+      C: 'where'
+      D: 'whose'
+    answer: 'B'
+    explanation: "Defining relative clause: 'that' refers to 'the treasure' (a thing). Combined with 'must' for present deduction."
+    explanationZh: '限定性关系从句：that 指代"宝藏"（物）。结合 must 表示对现在的推测。'
+    grammarPoint: 'Defining relative clause (that) + modal (must)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0392
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If dragons _____ (not / exist), our world would be a very boring place.'
+    questionZh: '如果龙____（not / exist），我们的世界会是一个非常无聊的地方。'
+    answer: "didn't exist"
+    explanation: "Second conditional: If + past simple (didn't exist), would + infinitive (would be). This is hypothetical — dragons do exist in our story."
+    explanationZh: '第二条件句：If + 一般过去时（didn''t exist），would + 动词原形（would be）。这是假设——在我们的故事里龙是存在的。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0393
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'The girl _____ dragon I accidentally stepped on is very angry with me.'
+    questionZh: '我不小心踩到____龙的那个女孩对我很生气。'
+    options:
+      A: 'who'
+      B: 'whose'
+      C: 'which'
+      D: 'that'
+    answer: 'B'
+    explanation: "'Whose' shows possession — the dragon belongs to the girl. 'The girl whose dragon I stepped on'."
+    explanationZh: 'whose 表示所有关系——龙属于那个女孩。"我踩到龙的那个女孩"。'
+    grammarPoint: 'Defining relative clause (whose)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0394
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'She _____ (might / forget) to lock the dragon stable — the door is wide open.'
+    questionZh: '她____（might / forget）锁龙舍——门大开着。'
+    answer: 'might have forgotten'
+    explanation: "'Might have + past participle' for uncertain deduction about the past. The open door suggests she possibly forgot."
+    explanationZh: 'might have + 过去分词，表示对过去不确定的推测。门开着暗示她可能忘了。'
+    grammarPoint: 'Modal for past deduction (might have)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0395
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If only she _____ us about the secret tunnel, we could have escaped the dragon attack.'
+    questionZh: '要是她____我们秘密隧道的事就好了，我们就能逃过龙的袭击了。'
+    options:
+      A: 'tells'
+      B: 'told'
+      C: 'had told'
+      D: 'would tell'
+    answer: 'C'
+    explanation: "'If only + past perfect' for regret about the past. She didn't tell us, and we wish she had."
+    explanationZh: 'If only + 过去完成时，表达对过去的遗憾。她没有告诉我们，我们希望她说了。'
+    grammarPoint: 'If only + past perfect'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0396
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'The Academy, _____ was founded 200 years ago, has trained over 10,000 dragon riders.'
+    questionZh: '龙学院，____成立于200年前，已经训练了超过一万名龙骑士。(用关系代词填空)'
+    answer: 'which'
+    explanation: "Non-defining relative clause about a thing (the Academy). Use 'which' — never 'that' with commas."
+    explanationZh: '非限定性关系从句指物（学院）。有逗号用 which——不能用 that。'
+    grammarPoint: 'Non-defining relative clause (which)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0397
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If the potion works, the dragon will recover. But if it _____, we must find another healer.'
+    questionZh: '如果药水有效，龙会恢复。但如果它____，我们必须找另一个治疗师。'
+    options:
+      A: "doesn't"
+      B: "won't"
+      C: "didn't"
+      D: "wouldn't"
+    answer: 'A'
+    explanation: "First conditional: If + present simple (doesn't work), imperative/must. Both conditions are real future possibilities."
+    explanationZh: '第一条件句：If + 一般现在时（doesn''t），must + 动词原形。两个条件都是真实的未来可能性。'
+    grammarPoint: 'First conditional (negative if-clause)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0398
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'The students, all of _____ passed the exam, were chosen for the Dragon Elite Team.'
+    questionZh: '所有通过考试的学生都被选入了龙精英队。(用关系代词填空)'
+    answer: 'whom'
+    explanation: "After prepositions (of, to, with, etc.) in relative clauses, we use 'whom' for people (formal) — 'all of whom'."
+    explanationZh: '关系从句中介词（of, to, with 等）后面指人用 whom（正式）——all of whom。'
+    grammarPoint: 'Non-defining relative clause (preposition + whom)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0399
+    type: multiple-choice
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'If the dragon had been friendlier, the villagers _____ so afraid of it now.'
+    questionZh: '如果那条龙之前更友善一些，村民现在就____它了。'
+    options:
+      A: "won't be"
+      B: "wouldn't be"
+      C: "wouldn't have been"
+      D: "aren't"
+    answer: 'B'
+    explanation: "Mixed conditional: past condition (had been friendlier — in the past) → present result (wouldn't be afraid now). 'Now' confirms this is a present result."
+    explanationZh: '混合条件句：过去条件（had been friendlier）→ 现在结果（wouldn''t be afraid now）。"现在"确认这是对现在的影响。'
+    grammarPoint: 'Mixed conditional (past → present)'
+    relatedQuest: Q04
+    difficulty: 4
+
+  - id: G0400
+    type: fill-blank
+    tags: [mixed-review, Q04, difficulty-4]
+    context: dragon-academy
+    question: 'I wish I _____ (can) speak Dragon Language. Then I could ask my dragon what it wants for dinner.'
+    questionZh: '我希望我____（can）说龙语。那样我就能问我的龙晚餐想吃什么了。'
+    answer: 'could'
+    explanation: "'I wish + could' for an unreal present wish about ability. Combined with second conditional result (could ask)."
+    explanationZh: 'I wish + could 表达对现在能力的不真实愿望。搭配第二条件句结果（could ask）。'
+    grammarPoint: 'I wish + could (present ability wish)'
+    relatedQuest: Q04
+    difficulty: 4
