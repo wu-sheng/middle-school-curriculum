@@ -310,7 +310,7 @@ concepts:
       - Only two equal sides, angle is not included → SSA fails, find another condition
     examples:
       - '在 $\triangle ABC$ 和 $\triangle DEF$ 中，$AB = DE = 4$ cm，$BC = EF = 6$ cm，$AC = DF = 5$ cm，由 SSS 得 $\triangle ABC \cong \triangle DEF$'
-      - '在 $\triangle ABC$ 和 $\triangle DEF$ 中，$AB = DE = 3$ cm，$\angle ABС = \angle DEF = 50°$，$BC = EF = 7$ cm，由 SAS 得 $\triangle ABC \cong \triangle DEF$'
+      - '在 $\triangle ABC$ 和 $\triangle DEF$ 中，$AB = DE = 3$ cm，$\angle ABC = \angle DEF = 50°$，$BC = EF = 7$ cm，由 SAS 得 $\triangle ABC \cong \triangle DEF$'
       - 'SSA 陷阱：$AB = 5$，$AC = 3$，$\angle B = 30°$，可以画出两个不同的 $\triangle ABC$，说明 SSA 不能判定全等'
       - '等腰三角形 $\triangle ABC$ 中，$AB = AC$，$D$ 是 $BC$ 中点，则 $BD = DC$，$AD$ 公共边，由 SSS 得 $\triangle ABD \cong \triangle ACD$'
     examplesEn:

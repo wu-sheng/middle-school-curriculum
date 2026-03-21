@@ -802,46 +802,34 @@ examples:
     difficulty: 2
     type: proof
     question: |
-      在 $\triangle ABC$ 中，$\angle ABC$ 的外角平分线与 $AC$ 的延长线交于点 $D$，$BD = BC$。
-      求证：$AB \parallel CD$（提示：利用等腰三角形判定和角的关系）。
+      在 $\triangle ABC$ 中，点 $D$ 在边 $BC$ 上，且 $AD \perp BC$，$BD = DC$。
+      求证：$AB = AC$。
     questionEn: |
-      In $\triangle ABC$, the external bisector of $\angle ABC$ meets the extension of $AC$ at point $D$, and $BD = BC$.
-      Prove: $AB \parallel CD$.
+      In $\triangle ABC$, point $D$ lies on side $BC$, with $AD \perp BC$ and $BD = DC$.
+      Prove that $AB = AC$.
     steps:
-      - step: '设 $\angle ABC$ 的外角平分线所平分的外角为 $2\alpha$，即外角等于 $2\alpha$，则 $\angle DBC = \alpha$（外角平分线）。'
-        stepEn: 'Let the exterior angle at $B$ be $2\alpha$, so $\angle DBC = \alpha$ (exterior bisector).'
-      - step: '∵ $BD = BC$，∴ $\triangle BDC$ 是等腰三角形，$\angle BDC = \angle BCD$。'
-        stepEn: '∵ $BD = BC$, ∴ $\triangle BDC$ is isosceles with $\angle BDC = \angle BCD$.'
-      - step: '在 $\triangle BDC$ 中，$\angle DBC + \angle BDC + \angle BCD = 180°$，即 $\alpha + 2\angle BDC = 180°$，故 $\angle BDC = \frac{180° - \alpha}{2} = 90° - \frac{\alpha}{2}$。'
-        stepEn: 'In $\triangle BDC$: $\alpha + 2\angle BDC = 180°$, so $\angle BDC = 90° - \frac{\alpha}{2}$.'
-      - step: '利用内错角或同位角验证两直线平行，详见答案的简洁证法。'
-        stepEn: 'We use the alternate interior angle criterion for $AB \parallel CD$.'
-      - step: '由于路径较多，推荐使用外角等于两不相邻内角和的性质直接得出 $\angle ABD = \angle BDC$。'
-        stepEn: 'This route is clean; see the clean proof in the answer.'
+      - step: '∵ $AD \perp BC$，且 $D$ 在 $BC$ 上，∴ $\angle ADB = \angle ADC = 90°$。'
+        stepEn: 'Since $AD \perp BC$ and $D$ lies on $BC$, we have $\angle ADB = \angle ADC = 90°$.'
+      - step: '已知 $BD = DC$，且 $AD$ 是公共边。'
+        stepEn: 'Given $BD = DC$, and $AD$ is a common side.'
+      - step: '在 $\triangle ABD$ 和 $\triangle ACD$ 中，$BD = DC$，$AD = AD$，$\angle ADB = \angle ADC$，由 SAS 可得 $\triangle ABD \cong \triangle ACD$。'
+        stepEn: 'In $\triangle ABD$ and $\triangle ACD$, $BD = DC$, $AD = AD$, and $\angle ADB = \angle ADC$. By SAS, $\triangle ABD \cong \triangle ACD$.'
+      - step: '全等三角形对应边相等，所以 $AB = AC$。'
+        stepEn: 'Corresponding sides of congruent triangles are equal, so $AB = AC$.'
     answer: |
-      **简洁证法**：
-      ∵ $BD = BC$，∴ $\angle BDC = \angle BCD$（等腰 $\triangle BDC$ 底角相等）。
-      设 $\angle BDC = \angle BCD = \beta$，则 $\angle DBC = 180° - 2\beta$（$\triangle BDC$ 内角和）。
-      ∵ $BD$ 是 $\angle ABC$ 的外角平分线，∴ 外角 $\angle ABD = \angle DBC = 180° - 2\beta$，
-      从而 $\angle ABC = 180° - (180° - 2\beta) = 2\beta$（内角 $=$ $180°$ $-$ 外角）。
-      ∴ $\angle ABC = 2\beta = \angle BCD + \angle BDC = \angle BCA + \angle BDA$（利用 $\angle BDC = \angle BDA$ 的补角关系）。
-      实际最简：$\angle ABС = 2\beta$，$\angle ACB = \beta$，$\angle ACB + \angle ABC \ne 180°$ 一般不平行。
-      **直接方法**：$\angle BDC = \angle BCD$，$D$ 在 $AC$ 延长上，所以 $\angle BDA = 180° - \beta$，$\angle DAB = \angle ABC - \angle ABD$。
-      用内错角：$\angle ABD = 180° - 2\beta$（外角的一半不是这个）。
-
-      **标准结论**：∵ $\angle ABС = 2\beta$（两个底角），$BD$ 是外角平分线所以 $\angle ABD = 180° - \angle ABC = 180° - 2\beta$，$\angle BDC = \beta$，$\angle BDA = 180° - \beta$，$\angle ABD + \angle BDA = (180° - 2\beta) + (180° - \beta) \ne 180°$。
-
-      正确思路：$AB \parallel CD \Leftrightarrow \angle ABD = \angle BDC$（内错角，$BD$ 为截线）：$\angle ABD$ 是 $\angle ABC$ 外角的一半 $= \frac{180° - \angle ABC}{2}$，$\angle BDC = \frac{180° - \angle DBC}{2} = \frac{180° - \angle ABD}{2}$。令 $\angle ABD = x$，则 $\angle BDC = \frac{180° - x}{2} = 90° - \frac{x}{2}$。$AB \parallel CD \Leftrightarrow x = 90° - \frac{x}{2} \Rightarrow \frac{3x}{2} = 90° \Rightarrow x = 60°$，即 $\angle ABD = 60°$，$\angle ABC = 120°$——这只在特定条件下成立，说明此题条件需要重新审视。
-
-      **更正**：本题结论 $AB \parallel CD$ 需要其他条件（如 $AB = BC$ 等），题目本身条件不足直接推出。此题作为探究题，重点在分析过程。
+      由 $\triangle ABD \cong \triangle ACD$，可得对应边 $AB = AC$。
+      因此 $\triangle ABC$ 是等腰三角形。
     answerEn: |
-      The proof shows that $AB \parallel CD$ requires $\angle ABD = \angle BDC$ (alternate interior angles with $BD$ as transversal). Setting $\angle ABD = x$: from $BD = BC$ we get $\angle BDC = 90° - \frac{x}{2}$. For $AB \parallel CD$ we need $x = 90° - \frac{x}{2}$, giving $x = 60°$. This holds when $\angle ABD = 60°$, i.e., under a specific angle condition. This problem is best treated as an exploration exercise focusing on the reasoning process.
+      From $\triangle ABD \cong \triangle ACD$, we get the corresponding sides $AB = AC$.
+      Therefore, $\triangle ABC$ is isosceles.
     explanation: |
-      这道题展示了几何证明中需要仔细验证条件是否充分。探究过程本身很有价值，
-      养成"一步一步检验"的习惯比盲目套公式更重要。
+      这是一道经典的"垂直平分线 + 全等三角形"模型题。
+      因为 $D$ 是 $BC$ 的中点，且 $AD \perp BC$，所以 $AD$ 是线段 $BC$ 的垂直平分线。
+      在线段垂直平分线上的点到线段两个端点距离相等，因此点 $A$ 到 $B$、$C$ 的距离相等，也就得到 $AB = AC$。
     explanationEn: |
-      This problem illustrates the importance of carefully verifying that conditions are sufficient in geometric proofs.
-      The exploration process itself is valuable — developing the habit of checking each step is more important than blindly applying formulas.
+      This is a classic "perpendicular bisector + congruent triangles" model.
+      Since $D$ is the midpoint of $BC$ and $AD \perp BC$, line $AD$ is the perpendicular bisector of segment $BC$.
+      Any point on a segment's perpendicular bisector is equidistant from the endpoints, so point $A$ satisfies $AB = AC$.
 
   - id: ex6
     title: 等边三角形综合题
@@ -1217,7 +1205,7 @@ examPrep:
         ∴ $\triangle ACE$ 是等腰三角形，$CE = AE$。
 
         又 $\angle ABC = \angle ACB$，$CE \parallel AB$，
-        ∴ $\angle DCE = \angle ECА = \angle ABC = \angle ACB$（平行线同位角等于 $\angle ABC$，已分析 $\angle DCE = \angle ACE$）。
+        ∴ $\angle DCE = \angle ECA = \angle ABC = \angle ACB$（平行线同位角等于 $\angle ABC$，已分析 $\angle DCE = \angle ACE$）。
         在 $\triangle CDE$ 中：$\angle DCE = \angle D$（等角）……
 
         **结论**：∵ $\angle CAE = \angle ACE$，$CE = AE$；又利用 $\angle DCE = \angle D$ 可得 $\triangle CDE$ 是等腰三角形，$CE = DE$。详细推导：

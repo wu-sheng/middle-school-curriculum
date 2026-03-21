@@ -696,7 +696,6 @@ function ParallelProperties() {
 function PropositionDiagram() {
   const cx = 250, cy = 90;
   const len = 90;
-  const rad = Math.PI / 180;
   const ang = Math.atan2(55, 90); // ~31.4 deg
   const r = 24;
   
@@ -796,8 +795,10 @@ function TriangleSpecialLines() {
   const mx = (ax + bx) / 2, my = (ay + by) / 2; // midpoint of AB
   // Foot of altitude from C to AB (perpendicular to AB, so x stays, y = ay)
   const hx = cx, hy = ay;
-  // Angle bisector from C to AB (approx midpoint of arc)
-  const ibx = (ax + bx) / 2 + 20, iby = ay;
+  // Angle bisector from C to AB by angle bisector theorem: AD:DB = AC:CB
+  const acLen = Math.hypot(cx - ax, cy - ay);
+  const cbLen = Math.hypot(cx - bx, cy - by);
+  const ibx = ax + ((bx - ax) * acLen) / (acLen + cbLen), iby = ay;
   return (
     <Wrapper width={500} height={210}>
       {/* Triangle */}
@@ -823,31 +824,33 @@ function TriangleSpecialLines() {
 
 /** Exterior angle theorem */
 function ExteriorAngleTheorem() {
-  const ax = 80, ay = 160, bx = 350, by = 160, cx = 200, cy = 50;
-  const ex = 450, ey = 160; // extended point beyond B
+  const ax = 90, ay = 170;
+  const bx = 210, by = 70;
+  const cx = 330, cy = 170;
+  const dx = 410, dy = 270; // extend BC to D
   return (
     <Wrapper width={500} height={210}>
       {/* Triangle */}
       <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="#FAF5FF" stroke={purple} strokeWidth={2} />
-      {/* Extension of AB beyond B */}
-      <line x1={bx} y1={by} x2={ex} y2={ey} stroke={gray} strokeWidth={2} strokeDasharray="6,3" />
-      <polygon points={`${ex},${ey} ${ex - 10},${ey - 5} ${ex - 10},${ey + 5}`} fill={gray} />
+      {/* Extension of BC beyond C */}
+      <line x1={cx} y1={cy} x2={dx} y2={dy} stroke={gray} strokeWidth={2} strokeDasharray="6,3" />
+      <polygon points={`${dx},${dy} ${dx - 10},${dy - 2} ${dx - 3},${dy - 10}`} fill={gray} />
       {/* Labels */}
       <Dot x={ax} y={ay} /><Label x={ax - 12} y={ay + 14} text="A" color={pink} />
-      <Dot x={bx} y={by} /><Label x={bx} y={by + 16} text="B" color={pink} />
-      <Dot x={cx} y={cy} /><Label x={cx} y={cy - 12} text="C" color={pink} />
-      <Label x={ex + 6} y={ey + 5} text="D" color={gray} anchor="start" />
+      <Dot x={bx} y={by} /><Label x={bx} y={by - 12} text="B" color={pink} />
+      <Dot x={cx} y={cy} /><Label x={cx + 8} y={cy + 14} text="C" color={pink} anchor="start" />
+      <Label x={dx + 6} y={dy + 5} text="D" color={gray} anchor="start" />
       {/* Interior angle arcs */}
-      <path d={`M ${ax + 28},${ay} A 28 28 0 0 0 ${ax + 18},${ay - 26}`} fill="none" stroke="#3B82F6" strokeWidth={2} />
-      <Label x={ax + 38} y={ay - 12} text="∠A" color="#3B82F6" size={12} anchor="start" />
-      <path d={`M ${cx - 14},${cy + 28} A 28 28 0 0 0 ${cx + 14},${cy + 28}`} fill="none" stroke={amber} strokeWidth={2} />
-      <Label x={cx + 20} y={cy + 32} text="∠C" color={amber} size={12} anchor="start" />
+      <path d={`M ${ax + 30},${ay} Q ${ax + 18},${ay - 12} ${ax + 20},${ay - 28}`} fill="none" stroke="#3B82F6" strokeWidth={2} />
+      <Label x={ax + 40} y={ay - 14} text="∠A" color="#3B82F6" size={12} anchor="start" />
+      <path d={`M ${bx - 20},${by + 16} Q ${bx},${by + 32} ${bx + 20},${by + 16}`} fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={bx} y={by + 42} text="∠B" color={amber} size={12} />
       {/* Exterior angle arc */}
-      <path d={`M ${bx + 30},${by - 10} A 32 32 0 0 0 ${bx + 28},${by - 30}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={bx + 36} y={by - 22} text="∠CBD" color={pink} size={12} anchor="start" />
+      <path d={`M ${cx - 34},${cy} Q ${cx - 4},${cy + 46} ${cx + 20},${cy + 26}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={cx + 48} y={cy + 32} text="∠ACD" color={pink} size={12} anchor="start" />
       {/* Theorem text */}
       <rect x={50} y={178} width={400} height={24} rx={5} fill="#FEF3C7" />
-      <Label x={250} y={195} text="∠CBD = ∠A + ∠C  (外角 = 不相邻两内角之和)" color={amber} size={12} />
+      <Label x={250} y={195} text="∠ACD = ∠A + ∠B  (外角 = 不相邻两内角之和)" color={amber} size={12} />
     </Wrapper>
   );
 }
@@ -1070,8 +1073,8 @@ function CongruenceSssSas() {
       <Label x={120} y={215} text="三边对应相等 → 全等" color={gray} size={11} />
       {/* SAS label */}
       <Label x={360} y={22} text="SAS（边角边）" color={purple} size={13} />
-      {tri(sasPts1, [2, 1, 0], [green, blue, red], 0, amber, "sas1")}
-      {tri(sasPts2, [2, 1, 0], [green, blue, red], 0, amber, "sas2")}
+      {tri(sasPts1, [2, 1, 0], [green, blue, red], 1, amber, "sas1")}
+      {tri(sasPts2, [2, 1, 0], [green, blue, red], 1, amber, "sas2")}
       <Label x={360} y={215} text="两边及夹角相等 → 全等" color={gray} size={11} />
     </Wrapper>
   );
@@ -1200,6 +1203,215 @@ function AuxiliaryLines() {
       <Label x={260} y={145} text="△ABC" color={pink} size={11} />
       <Label x={160} y={90} text="△ACD" color={amber} size={11} />
       <Label x={230} y={188} text="作对角线 AC，把四边形分为两个三角形" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+// ── AMC 8 extensions: area and geometry toolkit ──
+
+function TriangleAreaBasicsDiagram() {
+  const ox = 70, oy = 170, s = 22;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  const A = { x: 2, y: 3 }, B = { x: 8, y: 3 }, C = { x: 5, y: 7 };
+
+  return (
+    <Wrapper width={520} height={240}>
+      {Array.from({ length: 9 }, (_, i) => i + 1).map((v) => (
+        <line key={`gv${v}`} x1={toX(v)} y1={toY(0)} x2={toX(v)} y2={toY(8)} stroke={lightGray} strokeWidth={0.5} strokeDasharray="3,3" />
+      ))}
+      {Array.from({ length: 8 }, (_, i) => i + 1).map((v) => (
+        <line key={`gh${v}`} x1={toX(0)} y1={toY(v)} x2={toX(9)} y2={toY(v)} stroke={lightGray} strokeWidth={0.5} strokeDasharray="3,3" />
+      ))}
+      <line x1={toX(0)} y1={toY(0)} x2={toX(9.4)} y2={toY(0)} stroke={purple} strokeWidth={1.6} />
+      <line x1={toX(0)} y1={toY(0)} x2={toX(0)} y2={toY(8.4)} stroke={purple} strokeWidth={1.6} />
+      <polygon points={`${toX(9.4) + 5},${toY(0)} ${toX(9.4) - 3},${toY(0) - 4} ${toX(9.4) - 3},${toY(0) + 4}`} fill={purple} />
+      <polygon points={`${toX(0)},${toY(8.4) - 5} ${toX(0) - 4},${toY(8.4) + 3} ${toX(0) + 4},${toY(8.4) + 3}`} fill={purple} />
+      <path d={`M ${toX(A.x)},${toY(A.y)} L ${toX(B.x)},${toY(B.y)} L ${toX(C.x)},${toY(C.y)} Z`} fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <line x1={toX(C.x)} y1={toY(C.y)} x2={toX(C.x)} y2={toY(A.y)} stroke={pink} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polyline points={`${toX(C.x)},${toY(A.y)} ${toX(C.x) + 10},${toY(A.y)} ${toX(C.x) + 10},${toY(A.y) - 10}`} fill="none" stroke={pink} strokeWidth={1.2} />
+      <Dot x={toX(A.x)} y={toY(A.y)} /><Dot x={toX(B.x)} y={toY(B.y)} /><Dot x={toX(C.x)} y={toY(C.y)} />
+      <Label x={toX(A.x) - 8} y={toY(A.y) + 16} text="A(2,3)" color={pink} size={11} anchor="end" />
+      <Label x={toX(B.x) + 6} y={toY(B.y) + 16} text="B(8,3)" color={pink} size={11} anchor="start" />
+      <Label x={toX(C.x)} y={toY(C.y) - 10} text="C(5,7)" color={pink} size={11} />
+      <Label x={(toX(A.x) + toX(B.x)) / 2} y={toY(A.y) + 18} text="底 = 6" color={gray} size={11} />
+      <Label x={toX(C.x) + 16} y={(toY(C.y) + toY(A.y)) / 2} text="高 = 4" color={pink} size={11} anchor="start" />
+      <rect x={300} y={28} width={180} height={96} rx={8} fill="#F5F3FF" stroke="#DDD6FE" />
+      <Label x={390} y={50} text="底 × 高：S = 1/2 × 6 × 4 = 12" color={purple} size={12} />
+      <Label x={390} y={76} text="鞋带公式也可直接算出 S = 12" color={gray} size={12} />
+      <Label x={390} y={102} text="坐标已知时，常省去找高这一步" color={gray} size={11} />
+      <Label x={250} y={220} text="同一个三角形：既可用底×高，也可用坐标面积公式" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
+function HeronsFormulaDiagram() {
+  const ax = 80, ay = 180, bx = 220, by = 180, cx = 130, cy = 60;
+  return (
+    <Wrapper width={500} height={240}>
+      <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <Dot x={ax} y={ay} /><Dot x={bx} y={by} /><Dot x={cx} y={cy} />
+      <Label x={ax - 12} y={ay + 14} text="A" color={pink} />
+      <Label x={bx + 8} y={by + 14} text="B" color={pink} />
+      <Label x={cx} y={cy - 12} text="C" color={pink} />
+      <Label x={(ax + bx) / 2} y={ay + 18} text="14" color={gray} size={12} />
+      <Label x={(ax + cx) / 2 - 12} y={(ay + cy) / 2} text="13" color={gray} size={12} />
+      <Label x={(bx + cx) / 2 + 12} y={(by + cy) / 2} text="15" color={gray} size={12} />
+      <line x1={130} y1={180} x2={130} y2={60} stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polyline points="130,180 140,180 140,170" fill="none" stroke={amber} strokeWidth={1.2} />
+      <Label x={146} y={124} text="高 = 12" color={amber} size={11} anchor="start" />
+      <rect x={285} y={35} width={175} height={110} rx={8} fill="#FEF3C7" stroke="#FCD34D" />
+      <Label x={372} y={58} text="13, 14, 15 三边已知" color={amber} size={12} />
+      <Label x={372} y={84} text="s = (13 + 14 + 15) / 2 = 21" color={gray} size={12} />
+      <Label x={372} y={110} text="S = sqrt(21×8×7×6) = 84" color={purple} size={12} />
+      <Label x={372} y={136} text="海伦公式适合“知道三边”" color={gray} size={11} />
+      <Label x={250} y={220} text="海伦公式：S = sqrt(s(s-a)(s-b)(s-c))" color={purple} size={13} />
+    </Wrapper>
+  );
+}
+
+function QuadrilateralAreaDecompositionDiagram() {
+  return (
+    <Wrapper width={520} height={230}>
+      <Label x={130} y={20} text="对角线分解" color={purple} size={13} />
+      <polygon points="50,170 180,185 220,85 85,55" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <line x1={50} y1={170} x2={220} y2={85} stroke={pink} strokeWidth={1.8} strokeDasharray="5,3" />
+      <Label x={62} y={184} text="A" color={pink} />
+      <Label x={190} y={198} text="B" color={pink} />
+      <Label x={230} y={84} text="C" color={pink} anchor="start" />
+      <Label x={74} y={48} text="D" color={pink} />
+      <Label x={145} y={118} text="AC" color={pink} size={11} />
+      <Label x={137} y={205} text="S四边形 = S△ABC + S△ACD" color={gray} size={11} />
+
+      <line x1={260} y1={25} x2={260} y2={210} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={390} y={20} text="菱形对角线公式" color={purple} size={13} />
+      <polygon points="390,55 470,120 390,185 310,120" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <line x1={310} y1={120} x2={470} y2={120} stroke={amber} strokeWidth={1.6} />
+      <line x1={390} y1={55} x2={390} y2={185} stroke={amber} strokeWidth={1.6} />
+      <Label x={390} y={113} text="O" color={gray} size={11} />
+      <Label x={390} y={48} text="d2" color={amber} size={11} />
+      <Label x={472} y={116} text="d1" color={amber} size={11} anchor="start" />
+      <Label x={390} y={205} text="S菱形 = 1/2 × d1 × d2" color={gray} size={12} />
+    </Wrapper>
+  );
+}
+
+function CompositeFiguresDiagram() {
+  return (
+    <Wrapper width={520} height={230}>
+      <Label x={135} y={20} text="加法法：拆分求和" color={purple} size={13} />
+      <path d="M 50,180 L 50,70 L 125,70 L 125,120 L 205,120 L 205,180 Z" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <line x1={125} y1={70} x2={125} y2={180} stroke={pink} strokeWidth={1.5} strokeDasharray="5,3" />
+      <Label x={90} y={130} text="矩形1" color={purple} size={12} />
+      <Label x={165} y={150} text="矩形2" color={purple} size={12} />
+      <Label x={128} y={205} text="L 形 = 矩形1 + 矩形2" color={gray} size={11} />
+
+      <line x1={260} y1={25} x2={260} y2={210} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={390} y={20} text="减法法：整体减去空白" color={purple} size={13} />
+      <rect x={305} y={60} width={170} height={120} fill="#FEF3C7" stroke={amber} strokeWidth={2} />
+      <circle cx={390} cy={120} r={38} fill="white" stroke={pink} strokeWidth={2} />
+      <Label x={390} y={55} text="阴影面积" color={amber} size={12} />
+      <Label x={390} y={205} text="S阴影 = S矩形 - S圆" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+function CoordinateGeometryTechniquesDiagram() {
+  const ox = 90, oy = 180, s = 20;
+  const toX = (v: number) => ox + v * s;
+  const toY = (v: number) => oy - v * s;
+  const A = { x: 1, y: 1 }, B = { x: 5, y: 4 }, M = { x: 3, y: 2.5 };
+
+  return (
+    <Wrapper width={540} height={250}>
+      {Array.from({ length: 7 }, (_, i) => i).map((v) => (
+        <line key={`cgx${v}`} x1={toX(v)} y1={toY(0)} x2={toX(v)} y2={toY(6)} stroke={lightGray} strokeWidth={0.5} strokeDasharray="3,3" />
+      ))}
+      {Array.from({ length: 7 }, (_, i) => i).map((v) => (
+        <line key={`cgy${v}`} x1={toX(0)} y1={toY(v)} x2={toX(6)} y2={toY(v)} stroke={lightGray} strokeWidth={0.5} strokeDasharray="3,3" />
+      ))}
+      <line x1={toX(0)} y1={toY(0)} x2={toX(6.5)} y2={toY(0)} stroke={purple} strokeWidth={1.5} />
+      <line x1={toX(0)} y1={toY(0)} x2={toX(0)} y2={toY(6.5)} stroke={purple} strokeWidth={1.5} />
+      <line x1={toX(A.x)} y1={toY(A.y)} x2={toX(B.x)} y2={toY(B.y)} stroke={pink} strokeWidth={2} />
+      <Dot x={toX(A.x)} y={toY(A.y)} color={pink} />
+      <Dot x={toX(B.x)} y={toY(B.y)} color={pink} />
+      <Dot x={toX(M.x)} y={toY(M.y)} color={amber} />
+      <Label x={toX(A.x) - 10} y={toY(A.y) + 16} text="A" color={pink} />
+      <Label x={toX(B.x) + 8} y={toY(B.y) - 6} text="B" color={pink} anchor="start" />
+      <Label x={toX(M.x) + 10} y={toY(M.y) + 4} text="M" color={amber} anchor="start" />
+      <Label x={150} y={24} text="距离 + 中点" color={purple} size={13} />
+      <Label x={150} y={220} text="d = sqrt((x2-x1)^2 + (y2-y1)^2)" color={gray} size={11} />
+      <Label x={150} y={236} text="M = ((x1+x2)/2, (y1+y2)/2)" color={gray} size={11} />
+
+      <line x1={270} y1={25} x2={270} y2={230} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={405} y={24} text="鞋带公式" color={purple} size={13} />
+      <polygon points="330,170 380,95 455,115 430,190" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <Label x={326} y={184} text="P1" color={pink} size={11} />
+      <Label x={378} y={88} text="P2" color={pink} size={11} />
+      <Label x={462} y={114} text="P3" color={pink} size={11} anchor="start" />
+      <Label x={434} y={204} text="P4" color={pink} size={11} />
+      <path d="M 330,170 Q 392,70 455,115" fill="none" stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      <path d="M 455,115 Q 468,165 430,190" fill="none" stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      <Label x={405} y={222} text="顶点必须按顺序列出" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+function GeometricTransformationsDiagram() {
+  return (
+    <Wrapper width={540} height={230}>
+      <Label x={95} y={20} text="平移" color={purple} size={13} />
+      <polygon points="40,165 110,165 70,95" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <polygon points="90,135 160,135 120,65" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <line x1={78} y1={118} x2={108} y2={88} stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polygon points="111,85 103,87 109,93" fill={amber} />
+
+      <line x1={180} y1={25} x2={180} y2={210} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={270} y={20} text="旋转" color={purple} size={13} />
+      <Dot x={270} y={120} color={gray} r={4} />
+      <Label x={270} y={140} text="O" color={gray} size={11} />
+      <polygon points="250,90 320,95 300,45" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <polygon points="300,100 295,170 345,150" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <path d="M 300,80 A 36 36 0 0 1 330,110" fill="none" stroke={amber} strokeWidth={1.5} />
+      <Label x={332} y={108} text="90°" color={amber} size={11} anchor="start" />
+
+      <line x1={360} y1={25} x2={360} y2={210} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={450} y={20} text="反射" color={purple} size={13} />
+      <line x1={450} y1={45} x2={450} y2={190} stroke={amber} strokeWidth={1.5} strokeDasharray="5,3" />
+      <polygon points="392,165 438,165 410,98" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <polygon points="508,165 462,165 490,98" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <Label x={450} y={205} text="三种变换都保持长度、角度、面积不变" color={gray} size={11} />
+    </Wrapper>
+  );
+}
+
+function CircleAreaApplicationsDiagram() {
+  const cx = 170, cy = 125, r = 70;
+  const angle = Math.PI / 3;
+  const px = cx + r, py = cy;
+  const qx = cx + r * Math.cos(-angle), qy = cy + r * Math.sin(-angle);
+  return (
+    <Wrapper width={520} height={230}>
+      <Label x={170} y={20} text="扇形" color={purple} size={13} />
+      <path d={`M ${cx},${cy} L ${px},${py} A ${r} ${r} 0 0 0 ${qx},${qy} Z`} fill="rgba(245,158,11,0.15)" stroke={amber} strokeWidth={2} />
+      <Dot x={cx} y={cy} color={gray} r={4} />
+      <Label x={cx - 12} y={cy + 16} text="O" color={gray} />
+      <Label x={cx + 36} y={cy - 10} text="r" color={gray} size={11} />
+      <Label x={cx + 42} y={cy - 46} text="n°" color={pink} size={12} />
+      <path d={`M ${cx + 24},${cy} A 24 24 0 0 0 ${cx + 24 * Math.cos(-angle)},${cy + 24 * Math.sin(-angle)}`} fill="none" stroke={pink} strokeWidth={1.5} />
+
+      <line x1={275} y1={25} x2={275} y2={205} stroke={lightGray} strokeWidth={1} strokeDasharray="4,3" />
+
+      <Label x={390} y={50} text="扇形面积 = n/360 × πr^2" color={purple} size={12} />
+      <Label x={390} y={86} text="弧长 = n/360 × 2πr" color={amber} size={12} />
+      <Label x={390} y={122} text="圆被平均分成 360 份" color={gray} size={11} />
+      <Label x={390} y={140} text="扇形就是按角度“分到的那一份”" color={gray} size={11} />
+      <Label x={250} y={220} text="圆和扇形的面积、弧长都按圆心角所占比例计算" color={gray} size={12} />
     </Wrapper>
   );
 }
@@ -3735,6 +3947,14 @@ const diagramMap: Record<string, React.ReactNode[]> = {
   "congruence-asa-aas": [<CongruenceAsaAas key="caaa" />],
   "congruence-hl": [<CongruenceHL key="chl" />],
   "auxiliary-lines": [<AuxiliaryLines key="al" />],
+  // Grade 8 AMC 8 area and geometry extensions
+  "triangle-area-basics": [<TriangleAreaBasicsDiagram key="tab" />],
+  "herons-formula": [<HeronsFormulaDiagram key="hfd" />],
+  "quadrilateral-area-decomposition": [<QuadrilateralAreaDecompositionDiagram key="qad" />],
+  "composite-figures": [<CompositeFiguresDiagram key="cfd" />],
+  "coordinate-geometry-techniques": [<CoordinateGeometryTechniquesDiagram key="cgt" />],
+  "geometric-transformations": [<GeometricTransformationsDiagram key="gtd" />],
+  "circle-area-applications": [<CircleAreaApplicationsDiagram key="caa" />],
   // Grade 8 Pythagorean theorem
   "pythagorean-theorem-discovery": [<PythagoreanTheoremDiscovery key="ptd" />],
   "pythagorean-theorem-statement": [<PythagoreanTheoremStatement key="pts" />],
