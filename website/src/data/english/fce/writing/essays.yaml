@@ -1,0 +1,352 @@
+category: 'Essay Writing'
+categoryZh: '议论文写作'
+tasks:
+  - id: W009
+    type: essay
+    title: 'Should Students Wear School Uniforms?'
+    titleZh: '学校该不该穿校服？'
+    prompt: 'Some people think all students should wear school uniforms. Other people think students should choose their own clothes. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为学生都应该穿校服，也有人认为学生应该自己选择穿什么。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      brainstorming:
+        topicZh: '学校是否应该要求所有学生穿校服？'
+        topic: 'Should schools require all students to wear uniforms?'
+        forPoints:
+          - 'Uniforms make everyone look equal — no comparing clothes or brands'
+          - 'Saves time in the morning — no need to choose outfits'
+          - 'Creates a sense of belonging and school pride'
+        forPointsZh:
+          - '校服让大家看起来平等，不会因为衣服或品牌互相比较'
+          - '早上不用纠结穿什么，节省时间'
+          - '增强学校归属感和团队精神'
+        againstPoints:
+          - 'Children should have the right to express their personality'
+          - 'Uniforms can be uncomfortable and cost extra money'
+          - 'Real equality comes from respect, not matching clothes'
+        againstPointsZh:
+          - '孩子应该有权通过穿着表达自己的个性'
+          - '校服可能不舒服，而且家长还要额外花钱买'
+          - '真正的平等不靠穿一样的衣服，靠互相尊重'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Nevertheless...'
+        - 'In my opinion...'
+      mustUseWords:
+        - 'In my opinion'
+        - 'Nevertheless'
+        - 'Furthermore'
+      mustUseStructure:
+        - 'At least one comparative sentence'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个比较级句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Many schools around the world require students to wear uniforms. In my opinion, wearing uniforms is a good idea, although I understand why some people disagree.
+
+      On the one hand, uniforms make school life simpler. Students do not need to spend time every morning choosing what to wear. Furthermore, when everyone wears the same clothes, nobody feels embarrassed about not having expensive brands. This creates a friendlier environment where students focus on learning rather than fashion.
+
+      On the other hand, some people believe that uniforms take away children's freedom to express themselves. Nevertheless, I think there are many other ways to show your personality — through your hobbies, your ideas, and how you treat others. Clothes are less important than character.
+
+      In conclusion, I believe school uniforms are more helpful than harmful. They save time, reduce pressure, and help students feel equal. Schools should allow small personal touches, like colourful bags or badges, so students can still feel special.
+    modelAnswerZh: |
+      世界上许多学校都要求学生穿校服。在我看来，穿校服是个好主意，虽然我理解为什么有些人不同意。
+
+      一方面，校服让学校生活更简单。学生不需要每天早上花时间选择穿什么。此外，当每个人都穿一样的衣服时，没有人会因为没有名牌而感到尴尬。这创造了一个更友好的环境，让学生专注于学习而不是时尚。
+
+      另一方面，有些人认为校服剥夺了孩子表达自我的自由。尽管如此，我认为还有很多其他方式可以展示你的个性——通过你的爱好、你的想法以及你对待他人的方式。衣服没有品格重要。
+
+      总之，我认为校服利大于弊。它们节省时间、减轻压力，并帮助学生感到平等。学校可以允许一些小小的个人点缀，比如彩色书包或徽章，这样学生仍然可以感到特别。
+
+  - id: W010
+    type: essay
+    title: 'Are Pets Good for Children?'
+    titleZh: '养宠物对孩子好不好？'
+    prompt: 'Some parents think having a pet is good for children. Others think pets are too much trouble. What do you think? Write an essay giving your opinion.'
+    promptZh: '有些家长认为养宠物对孩子好，也有家长觉得宠物太麻烦。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      brainstorming:
+        topicZh: '养宠物对孩子的成长有好处吗？'
+        topic: 'Is having a pet beneficial for children?'
+        forPoints:
+          - 'Caring for a pet teaches responsibility — feeding and walking every day'
+          - 'Pets are loyal companions that reduce loneliness'
+          - 'Watching animal behaviour sparks interest in nature and science'
+        forPointsZh:
+          - '照顾宠物能学会责任感——每天喂饭、遛狗'
+          - '宠物是忠实的伙伴，能减少孤独感'
+          - '观察动物行为能激发对自然科学的兴趣'
+        againstPoints:
+          - 'Some children may be allergic to animal fur'
+          - 'When pets get sick or pass away, children feel very sad'
+          - 'Busy families may not have enough time to care for a pet properly'
+        againstPointsZh:
+          - '有些孩子可能对动物毛发过敏'
+          - '宠物生病或去世时，孩子会很伤心'
+          - '忙碌的家庭可能没有足够时间照顾宠物'
+      connectors:
+        - 'Firstly... Secondly...'
+        - 'Although...'
+        - 'To sum up...'
+      mustUseWords:
+        - 'Firstly'
+        - 'Although'
+        - 'responsibility'
+      mustUseStructure:
+        - 'At least one conditional sentence (If...)'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个条件句（If...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Many families wonder whether they should get a pet for their children. I believe that pets can be wonderful for young people, as long as the family is ready for the responsibility.
+
+      Firstly, looking after a pet teaches children important life skills. If you have a dog, you must walk it every day, feed it on time, and keep it clean. These daily tasks help children become more organised and caring. Secondly, pets are amazing companions. A cat curled up on your lap or a dog wagging its tail when you come home can make any bad day better.
+
+      Although pets bring many benefits, there are challenges too. Some children are allergic to animal fur, which can cause health problems. Pets also need veterinary care, which costs money. When a beloved pet passes away, children may experience real grief for the first time.
+
+      To sum up, I think having a pet is a positive experience for most children. It teaches responsibility and provides friendship. However, families should think carefully before getting a pet to make sure they can give it a happy life.
+    modelAnswerZh: |
+      许多家庭都在想是否该给孩子养一只宠物。我认为宠物对年轻人来说可以很美好，只要家庭准备好承担这份责任。
+
+      首先，照顾宠物教会孩子重要的生活技能。如果你有一只狗，你必须每天遛它、按时喂它、保持清洁。这些日常任务帮助孩子变得更有条理和更有爱心。其次，宠物是很棒的伙伴。一只猫蜷缩在你腿上，或者一只狗在你回家时摇尾巴，都能让糟糕的一天变好。
+
+      虽然宠物带来很多好处，但也有挑战。有些孩子对动物毛发过敏，可能引起健康问题。宠物还需要兽医护理，这需要花钱。当心爱的宠物去世时，孩子可能会第一次经历真正的悲伤。
+
+      总之，我认为养宠物对大多数孩子来说是积极的体验。它教会责任感，也提供友谊。不过，家庭在养宠物前应该仔细考虑，确保能给它一个快乐的生活。
+
+  - id: W011
+    type: essay
+    title: 'Should Children Have Their Own Mobile Phones?'
+    titleZh: '小孩该不该有自己的手机？'
+    prompt: 'Some people think children should have their own mobile phones. Others think phones are bad for young people. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为小孩应该有自己的手机，也有人认为手机对青少年不好。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      brainstorming:
+        topicZh: '孩子是否应该拥有自己的手机？'
+        topic: 'Should children be allowed to have their own mobile phones?'
+        forPoints:
+          - 'Easy to contact parents, especially after school or during trips'
+          - 'Can use educational apps to help with studying'
+          - 'Learning to use devices responsibly is an important modern skill'
+        forPointsZh:
+          - '方便和家长联系，尤其是放学后或出行时'
+          - '可以用教育类 App 辅助学习'
+          - '学会合理使用电子设备也是一种现代能力'
+        againstPoints:
+          - 'Easy to get addicted to games or short videos, affecting study and sleep'
+          - 'Too much screen time is bad for eyesight'
+          - 'Unsafe content online poses risks for children'
+        againstPointsZh:
+          - '容易沉迷游戏或短视频，影响学习和睡眠'
+          - '长时间看屏幕对眼睛不好'
+          - '网上有不适合孩子的内容，存在安全风险'
+      connectors:
+        - 'While it is true that...'
+        - 'However...'
+        - 'All things considered...'
+      mustUseWords:
+        - 'However'
+        - 'essential'
+        - 'limit'
+      mustUseStructure:
+        - 'At least one concession clause (While... / Although...)'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个让步状语从句（While... / Although...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Nowadays, many children want their own mobile phones. While it is true that phones can be useful, I believe children should only have them with clear rules and time limits.
+
+      There are good reasons for giving children phones. A phone makes it easy to contact parents in an emergency or after school activities. It can also be a helpful learning tool — many educational apps make studying more fun and interactive. In today's world, understanding technology is an essential skill that children need to develop.
+
+      However, phones also bring serious problems. Many children spend hours playing games or watching short videos instead of doing homework or sleeping. Too much screen time damages eyesight and reduces time for outdoor exercise. There is also unsafe content online that young children should not see.
+
+      All things considered, I think children can have phones, but parents must set clear rules. For example, they could limit screen time to one hour a day and check which apps their children use. With the right balance, a phone can be a useful tool rather than a harmful distraction.
+    modelAnswerZh: |
+      如今，许多孩子都想要自己的手机。虽然手机确实有用，但我认为孩子只有在有明确规则和时间限制的情况下才应该拥有手机。
+
+      给孩子手机有合理的理由。手机方便在紧急情况下或课后活动时联系父母。它也可以是很好的学习工具——许多教育类应用让学习更有趣、更互动。在当今世界，理解科技是孩子需要培养的一项基本技能。
+
+      然而，手机也带来严重问题。许多孩子花几个小时玩游戏或看短视频，而不是做作业或睡觉。过多的屏幕时间损害视力，减少户外运动时间。网上还有不适合幼儿的不安全内容。
+
+      综合考虑，我认为孩子可以有手机，但家长必须设定明确的规则。例如，可以将屏幕时间限制在每天一小时，并检查孩子使用哪些应用。有了正确的平衡，手机可以成为有用的工具，而不是有害的干扰。
+
+  - id: W012
+    type: essay
+    title: 'Is Homework Necessary?'
+    titleZh: '作业有没有必要？'
+    prompt: 'Some people believe homework is important for learning. Others think students should have more free time after school. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为作业对学习很重要，也有人觉得学生放学后应该有更多自由时间。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      brainstorming:
+        topicZh: '学生放学后还需要做作业吗？'
+        topic: 'Do students still need homework after school?'
+        forPoints:
+          - 'Reinforces what was learned in class and strengthens memory'
+          - 'Builds self-discipline and time management skills'
+          - 'Helps teachers see where students need more support'
+        forPointsZh:
+          - '复习巩固课上学的内容，加深记忆'
+          - '培养自律和时间管理能力'
+          - '帮助老师了解学生哪里没听懂'
+        againstPoints:
+          - 'Too much homework causes stress and unhappiness'
+          - 'Children also need time for sports and free play after school'
+          - 'Some homework is just repetitive copying, not real learning'
+        againstPointsZh:
+          - '作业太多会让孩子感到压力大、不快乐'
+          - '放学后孩子也需要运动和自由玩耍的时间'
+          - '有些作业只是重复抄写，并不真正帮助理解'
+      connectors:
+        - 'In addition...'
+        - 'On the contrary...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'In addition'
+        - 'balance'
+        - 'therefore'
+      mustUseStructure:
+        - 'At least one reason clause (because / since / as)'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个原因状语从句（because / since / as）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Homework has been part of school life for generations. I believe that some homework is useful, but schools should find a better balance between studying and free time.
+
+      Homework can help students learn. When you practise maths problems or review vocabulary at home, you remember things much better than if you only study in class. In addition, doing homework teaches you to manage your time and work independently. Since teachers cannot help you at home, you learn to solve problems by yourself, which is an important skill.
+
+      On the contrary, too much homework can be harmful. Many students feel stressed because they spend hours on homework every evening. They have no time for sports, hobbies, or simply playing with friends. Therefore, they become tired and lose interest in learning. Some homework is also boring — copying the same sentences ten times does not help anyone understand better.
+
+      In conclusion, homework is necessary, but only in the right amount. Schools should give meaningful tasks that help students think, not just repeat. A good balance between homework and free time makes happier, healthier learners.
+    modelAnswerZh: |
+      作业一直是学校生活的一部分。我认为适量的作业是有用的，但学校应该在学习和自由时间之间找到更好的平衡。
+
+      作业可以帮助学生学习。当你在家练习数学题或复习词汇时，你比只在课上学习记得更牢。此外，做作业教会你管理时间和独立工作。因为老师不能在家帮助你，你学会了自己解决问题，这是一项重要的技能。
+
+      相反，太多的作业可能有害。许多学生感到压力很大，因为他们每天晚上花好几个小时做作业。他们没有时间运动、发展爱好或和朋友玩。因此，他们变得疲惫，对学习失去兴趣。有些作业也很无聊——抄同样的句子十遍并不能帮助任何人更好地理解。
+
+      总之，作业是必要的，但只在适量的情况下。学校应该布置有意义的任务来帮助学生思考，而不仅仅是重复。作业和自由时间之间的良好平衡能培养更快乐、更健康的学习者。
+
+  - id: W013
+    type: essay
+    title: 'Should Zoos Exist?'
+    titleZh: '动物园该不该存在？'
+    prompt: 'Some people think zoos are important for protecting animals. Others think keeping animals in zoos is wrong. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为动物园对保护动物很重要，也有人认为把动物关在动物园里是不对的。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      brainstorming:
+        topicZh: '动物园应该继续存在吗？'
+        topic: 'Should zoos continue to exist?'
+        forPoints:
+          - 'Helps protect endangered species from extinction'
+          - 'Gives city children a chance to learn about animals up close'
+          - 'Good zoos conduct research and breeding programs'
+        forPointsZh:
+          - '帮助保护濒危动物，防止灭绝'
+          - '让城市里的孩子有机会近距离了解动物'
+          - '好的动物园会做科研和繁育计划'
+        againstPoints:
+          - 'Animals are kept in cages and lose their freedom'
+          - 'Artificial environments cannot replace real nature'
+          - 'We can learn about animals through documentaries and nature reserves'
+        againstPointsZh:
+          - '动物被关在笼子里，失去了自由'
+          - '人工环境无法替代真正的大自然'
+          - '可以通过纪录片和自然保护区来了解动物'
+      connectors:
+        - 'It is often argued that...'
+        - 'Despite this...'
+        - 'Taking everything into account...'
+      mustUseWords:
+        - 'Despite'
+        - 'argue'
+        - 'protect'
+      mustUseStructure:
+        - 'At least one passive voice sentence'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个被动语态句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Zoos are found in almost every major city. Some people argue that they are cruel, but I believe that modern zoos play an important role in protecting wildlife.
+
+      It is often argued that zoos harm animals by keeping them in small spaces. This is true for badly managed zoos where animals are kept in tiny cages. Despite this, many modern zoos have changed greatly. They create large, natural habitats and run breeding programs for endangered species. Without zoos, some animals — like the giant panda — might have disappeared completely. Zoos also help city children learn about wildlife and develop a love for nature.
+
+      However, I understand why some people are against zoos. Wild animals are born to roam freely, and no enclosure can truly replace the ocean, the jungle, or the savannah. Excellent documentaries now allow people to see animals in their natural habitat from home. Nature reserves protect animals without putting them behind walls.
+
+      Taking everything into account, I think well-run zoos should continue to exist because they protect endangered animals and educate the public. However, we should also invest more in nature reserves so that one day, fewer animals will need to be kept in zoos at all.
+    modelAnswerZh: |
+      几乎每个大城市都有动物园。有些人认为动物园很残忍，但我相信现代动物园在保护野生动物方面发挥着重要作用。
+
+      人们常常争论说动物园通过把动物关在小空间里来伤害它们。对于管理不善、动物被关在小笼子里的动物园来说，这是事实。尽管如此，许多现代动物园已经发生了很大变化。它们创造了大型、自然的栖息地，并为濒危物种运行繁育计划。没有动物园，一些动物——比如大熊猫——可能已经完全消失了。动物园也帮助城市儿童了解野生动物，培养对自然的热爱。
+
+      然而，我理解为什么有些人反对动物园。野生动物生来就要自由漫步，没有任何围栏能真正替代海洋、丛林或草原。优秀的纪录片现在让人们可以在家中看到自然栖息地中的动物。自然保护区在不把动物关在墙后的情况下保护它们。
+
+      综合考虑，我认为管理良好的动物园应该继续存在，因为它们保护濒危动物并教育公众。然而，我们也应该在自然保护区投入更多，这样有一天，需要被关在动物园里的动物会越来越少。

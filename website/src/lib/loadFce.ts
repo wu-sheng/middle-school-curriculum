@@ -299,7 +299,16 @@ export interface FCEWritingTask {
   difficulty: number;
   relatedQuest: string;
   scaffold: {
-    storyMap: Record<string, string>;
+    storyMap?: Record<string, string>;
+    brainstorming?: {
+      topic: string;
+      topicZh: string;
+      forPoints: string[];
+      forPointsZh: string[];
+      againstPoints: string[];
+      againstPointsZh: string[];
+    };
+    connectors?: string[];
     mustUseWords: string[];
     mustUseStructure: string[];
     mustUseStructureZh: string[];

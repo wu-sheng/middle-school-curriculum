@@ -84,24 +84,33 @@ function SegmentMidpoint() {
   );
 }
 
-/** Diagram: angle with vertex and two rays */
 function AngleDiagram() {
   const cx = 100, cy = 130;
+  // Angle 30 degrees
+  const bx = cx + 200 * Math.cos(-30 * Math.PI / 180);
+  const by = cy + 200 * Math.sin(-30 * Math.PI / 180);
+  // Arc at radius 50
+  const ax = cx + 50 * Math.cos(-30 * Math.PI / 180);
+  const ay = cy + 50 * Math.sin(-30 * Math.PI / 180);
+
   return (
     <Wrapper width={360} height={180}>
       {/* Ray OA - horizontal */}
       <line x1={cx} y1={cy} x2={320} y2={cy} stroke={purple} strokeWidth={2} />
       <polygon points={`325,${cy} 315,${cy - 5} 315,${cy + 5}`} fill={purple} />
-      {/* Ray OB - angled up */}
-      <line x1={cx} y1={cy} x2={290} y2={30} stroke={purple} strokeWidth={2} />
-      <polygon points="293,25 282,30 288,40" fill={purple} />
+      {/* Ray OB - angled up at 30 deg */}
+      <line x1={cx} y1={cy} x2={bx} y2={by} stroke={purple} strokeWidth={2} />
+      {/* Better arrow for OB */}
+      <g transform={`translate(${bx},${by}) rotate(-30)`}>
+        <polygon points="5,0 -5,-4 -5,4" fill={purple} />
+      </g>
       {/* Arc for angle */}
-      <path d={`M ${cx + 50},${cy} A 50 50 0 0 0 ${cx + 40},${cy - 30}`} fill="none" stroke={pink} strokeWidth={1.5} />
+      <path d={`M ${cx + 50},${cy} A 50 50 0 0 0 ${ax},${ay}`} fill="none" stroke={pink} strokeWidth={1.5} />
       {/* Labels */}
       <Dot x={cx} y={cy} r={5} />
       <Label x={cx - 10} y={cy + 18} text="O" color={pink} />
       <Label x={325} y={cy + 18} text="A" color={purple} />
-      <Label x={298} y={25} text="B" color={purple} />
+      <Label x={bx + 5} y={by - 5} text="B" color={purple} anchor="start" />
       <Label x={cx + 60} y={cy - 10} text="∠AOB" color={pink} size={14} anchor="start" />
     </Wrapper>
   );
@@ -147,30 +156,42 @@ function ComplementarySupplementary() {
   );
 }
 
-/** Diagram: angle bisector */
 function AngleBisector() {
   const cx = 80, cy = 140;
+  const rad = Math.PI / 180;
+  const angB = -40 * rad, angC = -20 * rad, angA = 0;
+  const rL = 260;
+  const bx = cx + rL * Math.cos(angB), by = cy + rL * Math.sin(angB);
+  const cx_line = cx + rL * Math.cos(angC), cy_line = cy + rL * Math.sin(angC);
+  const ax = cx + rL * Math.cos(angA), ay = cy + rL * Math.sin(angA);
+
+  const arc = (r: number, a1: number, a2: number) => {
+    const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+    const x2 = cx + r * Math.cos(a2), y2 = cy + r * Math.sin(a2);
+    return `M ${x1},${y1} A ${r} ${r} 0 0 0 ${x2},${y2}`;
+  };
+
   return (
     <Wrapper width={380} height={180}>
       {/* Ray OA */}
-      <line x1={cx} y1={cy} x2={340} y2={cy} stroke={purple} strokeWidth={2} />
-      <polygon points={`345,${cy} 335,${cy - 5} 335,${cy + 5}`} fill={purple} />
+      <line x1={cx} y1={cy} x2={ax} y2={ay} stroke={purple} strokeWidth={2} />
+      <polygon points={`${ax + 5},${ay} ${ax - 5},${ay - 4} ${ax - 5},${ay + 4}`} fill={purple} />
       {/* Ray OB */}
-      <line x1={cx} y1={cy} x2={310} y2={20} stroke={purple} strokeWidth={2} />
-      <polygon points="313,15 302,20 308,30" fill={purple} />
+      <line x1={cx} y1={cy} x2={bx} y2={by} stroke={purple} strokeWidth={2} />
+      <g transform={`translate(${bx},${by}) rotate(-40)`}><polygon points="5,0 -5,-4 -5,4" fill={purple} /></g>
       {/* Bisector OC (dashed) */}
-      <line x1={cx} y1={cy} x2={340} y2={60} stroke={pink} strokeWidth={1.5} strokeDasharray="5,4" />
+      <line x1={cx} y1={cy} x2={cx_line} y2={cy_line} stroke={pink} strokeWidth={1.5} strokeDasharray="5,4" />
       {/* Equal angle marks */}
-      <path d={`M ${cx + 40},${cy} A 40 40 0 0 0 ${cx + 38},${cy - 14}`} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
-      <path d={`M ${cx + 45},${cy} A 45 45 0 0 0 ${cx + 43},${cy - 16}`} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
-      <path d={`M ${cx + 30},${cy - 8} A 30 30 0 0 0 ${cx + 24},${cy - 20}`} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
-      <path d={`M ${cx + 35},${cy - 9} A 35 35 0 0 0 ${cx + 28},${cy - 23}`} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
+      <path d={arc(40, angA, angC)} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
+      <path d={arc(45, angA, angC)} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
+      <path d={arc(40, angC, angB)} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
+      <path d={arc(45, angC, angB)} fill="none" stroke="#F59E0B" strokeWidth={1.5} />
       {/* Labels */}
       <Dot x={cx} y={cy} r={5} />
       <Label x={cx - 12} y={cy + 16} text="O" color={pink} />
-      <Label x={345} y={cy + 16} text="A" color={purple} />
-      <Label x={315} y={15} text="B" color={purple} />
-      <Label x={345} y={55} text="C" color={pink} />
+      <Label x={ax + 8} y={ay + 16} text="A" color={purple} />
+      <Label x={bx + 5} y={by - 5} text="B" color={purple} anchor="start" />
+      <Label x={cx_line + 5} y={cy_line - 5} text="C" color={pink} anchor="start" />
       <Label x={200} y={170} text="∠BOC = ∠COA = ½∠BOA" color={gray} size={12} />
     </Wrapper>
   );
@@ -544,8 +565,9 @@ function TwoLinesTransversal({ children, width = 500, height = 260, showParallel
   width?: number; height?: number; showParallel?: boolean;
 }) {
   const y1 = 60, y2 = 160;
-  const tx1 = 155, ty1 = 10, tx2 = 305, ty2 = 210;
-  const slope = (tx2 - tx1) / (ty2 - ty1);
+  // Transversal: Top-Right to Bottom-Left for standard ∠1 acute look
+  const tx1 = 305, ty1 = 10, tx2 = 155, ty2 = 210;
+  const slope = (tx2 - tx1) / (ty2 - ty1); // -150/200 = -0.75
   const ix1 = tx1 + slope * (y1 - ty1);
   const ix2 = tx1 + slope * (y2 - ty1);
   const arcR = 24;
@@ -556,11 +578,11 @@ function TwoLinesTransversal({ children, width = 500, height = 260, showParallel
       <Label x={435} y={y1 - 8} text="a" color={purple} size={13} anchor="start" />
       <Label x={435} y={y2 - 8} text="b" color={purple} size={13} anchor="start" />
       {showParallel && <>
-        <Label x={340} y={y1 - 4} text="▸▸" color={amber} size={10} />
-        <Label x={340} y={y2 - 4} text="▸▸" color={amber} size={10} />
+        <Label x={120} y={y1 - 4} text="▸▸" color={amber} size={10} />
+        <Label x={120} y={y2 - 4} text="▸▸" color={amber} size={10} />
       </>}
       <line x1={tx1} y1={ty1} x2={tx2} y2={ty2} stroke={purple} strokeWidth={2} />
-      <Label x={tx1 - 6} y={ty1 + 4} text="c" color={purple} size={13} anchor="end" />
+      <Label x={tx1 + 6} y={ty1 + 4} text="c" color={purple} size={13} anchor="start" />
       <Dot x={ix1} y={y1} r={4} />
       <Dot x={ix2} y={y2} r={4} />
       {children(ix1, y1, ix2, y2, arcR)}
@@ -568,18 +590,26 @@ function TwoLinesTransversal({ children, width = 500, height = 260, showParallel
   );
 }
 
-/* Arc helpers for the 8 standard angles at an intersection */
+/* Arc helpers for the 8 standard angles at an intersection. 
+   Transversal angle: atan2(200, -150) = 126.87 deg.
+   Upper ray: -53.13 deg (cos=0.6, sin=-0.8)
+   Lower ray: 126.87 deg (cos=-0.6, sin=0.8)
+*/
 function arcUpperRight(ix: number, y: number, r: number) {
-  return `M ${ix + r},${y} A ${r} ${r} 0 0 0 ${ix + r * 0.38},${y - r * 0.92}`;
+  // From Right (0) to Upper-Right (-53.13 deg)
+  return `M ${ix + r},${y} A ${r} ${r} 0 0 0 ${ix + r * 0.6},${y - r * 0.8}`;
 }
 function arcUpperLeft(ix: number, y: number, r: number) {
-  return `M ${ix - r * 0.38},${y - r * 0.92} A ${r} ${r} 0 0 0 ${ix - r},${y}`;
+  // From Upper-Right (-53.13 deg) to Left (180 deg)
+  return `M ${ix + r * 0.6},${y - r * 0.8} A ${r} ${r} 0 0 0 ${ix - r},${y}`;
 }
 function arcLowerLeft(ix: number, y: number, r: number) {
-  return `M ${ix - r},${y} A ${r} ${r} 0 0 0 ${ix - r * 0.38},${y + r * 0.92}`;
+  // From Left (180) to Lower-Left (126.87 deg)
+  return `M ${ix - r},${y} A ${r} ${r} 0 0 0 ${ix - r * 0.6},${y + r * 0.8}`;
 }
 function arcLowerRight(ix: number, y: number, r: number) {
-  return `M ${ix + r * 0.38},${y + r * 0.92} A ${r} ${r} 0 0 0 ${ix + r},${y}`;
+  // From Lower-Left (126.87 deg) to Right (0)
+  return `M ${ix - r * 0.6},${y + r * 0.8} A ${r} ${r} 0 0 0 ${ix + r},${y}`;
 }
 
 /** Diagram: angles formed by a transversal cutting two parallel lines — all 8 angles */
@@ -666,6 +696,12 @@ function ParallelProperties() {
 function PropositionDiagram() {
   const cx = 250, cy = 90;
   const len = 90;
+  const rad = Math.PI / 180;
+  const ang = Math.atan2(55, 90); // ~31.4 deg
+  const r = 24;
+  
+  const p = (a: number) => ({ x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) });
+  
   return (
     <Wrapper width={500} height={230}>
       {/* Title: if...then... structure */}
@@ -675,16 +711,16 @@ function PropositionDiagram() {
       <line x1={cx - len} y1={cy - 55} x2={cx + len} y2={cy + 55} stroke={purple} strokeWidth={2} />
       <line x1={cx - len} y1={cy + 55} x2={cx + len} y2={cy - 55} stroke={purple} strokeWidth={2} />
       <Dot x={cx} y={cy} r={4} />
-      {/* Mark equal vertical angle pair 1 */}
-      <path d={`M ${cx + 20},${cy - 10} A 22 22 0 0 1 ${cx + 10},${cy + 20}`} fill="none" stroke={pink} strokeWidth={2} />
-      <path d={`M ${cx - 20},${cy + 10} A 22 22 0 0 1 ${cx - 10},${cy - 20}`} fill="none" stroke={pink} strokeWidth={2} />
-      <Label x={cx + 26} y={cy + 10} text="α" color={pink} size={13} anchor="start" />
-      <Label x={cx - 26} y={cy + 4} text="α" color={pink} size={13} anchor="end" />
-      {/* Mark equal vertical angle pair 2 */}
-      <path d={`M ${cx - 20},${cy - 10} A 22 22 0 0 0 ${cx - 10},${cy + 20}`} fill="none" stroke={amber} strokeWidth={2} />
-      <path d={`M ${cx + 20},${cy + 10} A 22 22 0 0 0 ${cx + 10},${cy - 20}`} fill="none" stroke={amber} strokeWidth={2} />
-      <Label x={cx - 26} y={cy - 6} text="β" color={amber} size={13} anchor="end" />
-      <Label x={cx + 26} y={cy - 2} text="β" color={amber} size={13} anchor="start" />
+      {/* Mark equal vertical angle pair 1 (Right and Left) */}
+      <path d={`M ${p(-ang).x},${p(-ang).y} A ${r} ${r} 0 0 1 ${p(ang).x},${p(ang).y}`} fill="none" stroke={pink} strokeWidth={2} />
+      <path d={`M ${p(Math.PI - ang).x},${p(Math.PI - ang).y} A ${r} ${r} 0 0 1 ${p(Math.PI + ang).x},${p(Math.PI + ang).y}`} fill="none" stroke={pink} strokeWidth={2} />
+      <Label x={cx + 30} y={cy + 4} text="α" color={pink} size={13} anchor="start" />
+      <Label x={cx - 30} y={cy + 4} text="α" color={pink} size={13} anchor="end" />
+      {/* Mark equal vertical angle pair 2 (Top and Bottom) */}
+      <path d={`M ${p(Math.PI + ang).x},${p(Math.PI + ang).y} A ${r} ${r} 0 0 1 ${p(2 * Math.PI - ang).x},${p(2 * Math.PI - ang).y}`} fill="none" stroke={amber} strokeWidth={2} />
+      <path d={`M ${p(ang).x},${p(ang).y} A ${r} ${r} 0 0 1 ${p(Math.PI - ang).x},${p(Math.PI - ang).y}`} fill="none" stroke={amber} strokeWidth={2} />
+      <Label x={cx} y={cy - 30} text="β" color={amber} size={13} />
+      <Label x={cx} y={cy + 38} text="β" color={amber} size={13} />
       {/* Proposition text */}
       <rect x={60} y={170} width={380} height={44} rx={6} fill="none" stroke={gray} strokeWidth={1} strokeDasharray="4,3" />
       <Label x={250} y={190} text="如果 两条直线相交" color={gray} size={12} />
@@ -1347,31 +1383,31 @@ function SpecialRightTriangles() {
 
       {/* Left: 45-45-90 isosceles right triangle */}
       <Label x={120} y={18} text="等腰直角三角形" color={purple} size={12} />
-      <polygon points="50,175 190,175 50,55" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
+      <polygon points="50,175 175,175 50,50" fill="rgba(139,92,246,0.08)" stroke={purple} strokeWidth={2} />
       {/* Right angle */}
       <polyline points="50,160 64,160 64,175" fill="none" stroke={gray} strokeWidth={1.5} />
       {/* Tick marks on legs */}
-      <line x1={43} y1={115} x2={57} y2={115} stroke={purple} strokeWidth={1.8} />
+      <line x1={43} y1={112} x2={57} y2={112} stroke={purple} strokeWidth={1.8} />
       <line x1={112} y1={181} x2={112} y2={168} stroke={purple} strokeWidth={1.8} />
       {/* Labels */}
       <Label x={34} y={115} text="1" color={purple} size={13} anchor="end" />
-      <Label x={120} y={188} text="1" color={purple} size={13} />
-      <Label x={135} y={110} text="√2" color={pink} size={13} />
+      <Label x={112} y={192} text="1" color={purple} size={13} />
+      <Label x={128} y={110} text="√2" color={pink} size={13} />
       {/* Angles */}
-      <Label x={62} y={62} text="45°" color={amber} size={12} anchor="start" />
-      <Label x={175} y={165} text="45°" color={amber} size={12} anchor="end" />
+      <Label x={60} y={75} text="45°" color={amber} size={12} anchor="start" />
+      <Label x={160} y={165} text="45°" color={amber} size={12} anchor="end" />
 
-      {/* Right: 30-60-90 triangle */}
+      {/* Right: 30-60-90 triangle (60 at top) */}
       <Label x={370} y={18} text="30-60-90 三角形" color={purple} size={12} />
-      <polygon points="270,175 450,175 270,55" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
+      <polygon points="270,175 350,175 270,36.4" fill="rgba(236,72,153,0.08)" stroke={pink} strokeWidth={2} />
       <polyline points="270,160 284,160 284,175" fill="none" stroke={gray} strokeWidth={1.5} />
       {/* Labels */}
-      <Label x={254} y={115} text="√3" color="#3B82F6" size={13} anchor="end" />
-      <Label x={360} y={188} text="1" color={purple} size={13} />
-      <Label x={374} y={107} text="2" color={pink} size={13} />
+      <Label x={254} y={105} text="√3" color="#3B82F6" size={13} anchor="end" />
+      <Label x={310} y={188} text="1" color={purple} size={13} />
+      <Label x={330} y={100} text="2" color={pink} size={13} />
       {/* Angles */}
-      <Label x={282} y={62} text="60°" color={amber} size={12} anchor="start" />
-      <Label x={428} y={165} text="30°" color={amber} size={12} anchor="end" />
+      <Label x={282} y={62} text="30°" color={amber} size={12} anchor="start" />
+      <Label x={335} y={165} text="60°" color={amber} size={12} anchor="end" />
     </Wrapper>
   );
 }
@@ -1599,7 +1635,9 @@ function IsoscelesTriangleCriterion() {
 
 /** Diagram: equilateral triangle with all axes of symmetry */
 function EquilateralTriangle() {
-  const ax = 230, ay = 28, bx = 80, by = 192, cx2 = 380, cy2 = 192;
+  const ax = 230, ay = 39;
+  const bx = 140, by = 195;
+  const cx2 = 320, cy2 = 195;
   const sides = [[ax, ay, bx, by], [bx, by, cx2, cy2], [cx2, cy2, ax, ay]];
   // Midpoints for axes
   const mab = [(ax + bx) / 2, (ay + by) / 2];
@@ -1626,9 +1664,9 @@ function EquilateralTriangle() {
       <Dot x={bx} y={by} color={pink} r={3} /><Label x={bx - 14} y={by + 14} text="B" color={pink} />
       <Dot x={cx2} y={cy2} color={pink} r={3} /><Label x={cx2 + 6} y={cy2 + 14} text="C" color={pink} />
       {/* 60° angle labels */}
-      <Label x={ax + 14} y={ay + 20} text="60°" color={amber} size={11} anchor="start" />
-      <Label x={bx + 20} y={by - 4} text="60°" color={amber} size={11} anchor="start" />
-      <Label x={cx2 - 18} y={cy2 - 4} text="60°" color={amber} size={11} anchor="end" />
+      <Label x={ax + 14} y={ay + 24} text="60°" color={amber} size={11} anchor="start" />
+      <Label x={bx + 24} y={by - 4} text="60°" color={amber} size={11} anchor="start" />
+      <Label x={cx2 - 22} y={cy2 - 4} text="60°" color={amber} size={11} anchor="end" />
       <Label x={230} y={212} text="三条对称轴，三边相等，三角均为 60°" color={gray} size={11} />
     </Wrapper>
   );
@@ -2810,34 +2848,35 @@ function TrigDefinition() {
 function SpecialAngles() {
   return (
     <Wrapper width={500} height={210}>
-      <polygon points="40,180 180,180 180,40" fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
+      <polygon points="100,180 180,180 180,41.4" fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
       <polyline points="162,180 162,162 180,162" fill="none" stroke={gray} strokeWidth={1.5} />
-      <Label x={60} y={195} text="30°" color={pink} size={12} />
-      <Label x={170} y={50} text="60°" color={pink} size={12} anchor="end" />
-      <Label x={110} y={198} text="√3" color={purple} size={13} />
+      <Label x={120} y={176} text="30°" color={pink} size={12} />
+      <Label x={170} y={65} text="60°" color={pink} size={12} anchor="end" />
+      <Label x={140} y={192} text="√3" color={purple} size={13} />
       <Label x={192} y={115} text="1" color={purple} size={13} anchor="start" />
-      <Label x={100} y={105} text="2" color={amber} size={13} />
-      <Label x={110} y={28} text="30°-60°-90°" color={gray} size={12} />
-      <polygon points="280,180 420,180 420,40" fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} />
+      <Label x={125} y={105} text="2" color={amber} size={13} />
+      <Label x={140} y={28} text="30°-60°-90°" color={gray} size={12} />
+
+      <polygon points="300,180 420,180 420,60" fill="rgba(245,158,11,0.05)" stroke={amber} strokeWidth={2} />
       <polyline points="402,180 402,162 420,162" fill="none" stroke={gray} strokeWidth={1.5} />
-      <Label x={300} y={195} text="45°" color={pink} size={12} />
-      <Label x={410} y={52} text="45°" color={pink} size={12} anchor="end" />
-      <Label x={350} y={198} text="1" color={amber} size={13} />
-      <Label x={432} y={115} text="1" color={amber} size={13} anchor="start" />
-      <Label x={340} y={105} text="√2" color={purple} size={13} />
-      <Label x={350} y={28} text="45°-45°-90°" color={gray} size={12} />
+      <Label x={325} y={176} text="45°" color={pink} size={12} />
+      <Label x={410} y={80} text="45°" color={pink} size={12} anchor="end" />
+      <Label x={360} y={192} text="1" color={amber} size={13} />
+      <Label x={432} y={120} text="1" color={amber} size={13} anchor="start" />
+      <Label x={345} y={110} text="√2" color={purple} size={13} />
+      <Label x={360} y={28} text="45°-45°-90°" color={gray} size={12} />
     </Wrapper>
   );
 }
 
 /** Diagram: Solving a right triangle — given angle and one side, find others */
 function SolvingRightTriangles() {
-  const ax = 60, ay = 170, bx = 320, by = 170, cx = 320, cy = 40;
+  const ax = 80, ay = 170, bx = 280, by = 170, cx = 280, cy = 30;
   return (
     <Wrapper width={480} height={210}>
       <polygon points={`${ax},${ay} ${bx},${by} ${cx},${cy}`} fill="rgba(139,92,246,0.05)" stroke={purple} strokeWidth={2} />
       <polyline points={`${bx - 16},${by} ${bx - 16},${by - 16} ${bx},${by - 16}`} fill="none" stroke={gray} strokeWidth={1.5} />
-      <path d={`M ${ax + 35},${ay} A 35 35 0 0 0 ${ax + 32},${ay - 16}`} fill="none" stroke={pink} strokeWidth={2} />
+      <path d={`M ${ax + 35},${ay} A 35 35 0 0 0 ${ax + 28.6},${ay - 20}`} fill="none" stroke={pink} strokeWidth={2} />
       <Label x={ax + 48} y={ay - 6} text="35°" color={pink} size={13} />
       <Label x={(ax + bx) / 2} y={ay + 18} text="已知 given = 10" color={amber} size={12} />
       <line x1={ax + 20} y1={ay + 6} x2={bx - 20} y2={by + 6} stroke={amber} strokeWidth={2.5} strokeDasharray="6,3" />

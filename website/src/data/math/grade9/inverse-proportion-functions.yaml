@@ -173,7 +173,7 @@ concepts:
       **$k > 0$ 时（如 $y = \frac{6}{x}$）：**
       两支分别位于**第一象限**和**第三象限**。
       - 第一象限：$x > 0$，$y = \frac{k}{x} > 0$ ✓
-      - 第三象限：$x < 0$，$y = \frac{k}{x} < 0$ ✓（负数除以负数为正，等于正数再取倒数……不对，让我们直接算：$k > 0$，$x < 0$，所以 $y = \frac{k}{x} < 0$）
+      - 第三象限：$x < 0$，$y = \frac{k}{x} < 0$ ✓（直接计算：$k > 0$，$x < 0$，所以 $y = \frac{k}{x} < 0$）
 
       **$k < 0$ 时（如 $y = \frac{-4}{x}$）：**
       两支分别位于**第二象限**和**第四象限**。
@@ -470,8 +470,8 @@ realLife:
     categoryEn: Economics and Shopping
     positive: '固定总预算：总预算为 60 元，单价 $p$ 元/件，可购数量 $n = \frac{60}{p}$ 件。单价越高，买的越少；单价越低，买的越多——典型的反比例关系。'
     positiveEn: 'Fixed budget: with a total of 60 yuan, unit price $p$ yuan/item, quantity $n = \frac{60}{p}$. Higher price → fewer items; lower price → more items — a classic inverse proportion.'
-    negative: '这里假设 $n$ 可以是小数。实际上数量必须是整数，所以真实情况是 $n = \lfloor \frac{60}{p} \rfloor$（取整），不是严格的反比例函数。'
-    negativeEn: 'This assumes $n$ can be a fraction. In reality $n$ must be an integer, so the actual formula is $n = \lfloor \frac{60}{p} \rfloor$ (floor division) — not a strict inverse proportion function.'
+    negative: '严格来说，这里假设了 $n$ 可以是小数。但商品数量必须是整数，所以真实模型应为 $n = \lfloor \frac{60}{p} \rfloor$（取整），非纯粹的连续反比例函数。'
+    negativeEn: 'Strictly speaking, this assumes $n$ can be a continuous value. Since item quantity must be an integer, the accurate model is $n = \lfloor \frac{60}{p} \rfloor$ (floor division) — not a continuous inverse proportion function.'
 
 examples:
   - id: ex1
@@ -881,17 +881,17 @@ examPrep:
         又 $k = 2m$（从 $A$）。
         $2m = 2(m+1) = 2m + 2$，仍矛盾。
 
-        注意：再看题目——点 $B$ 的 $y$ 坐标是 $2$（与 $A$ 的 $x$ 坐标相同），这是有意设计，需重读。
-        实际上题目设 $B(m+1, 2)$ 可能希望两个等式：$2m = 2(m+1)$ 无解，
-        说明此题更可能的版本是：$B$ 的坐标为 $B(m, 2)$（非 $m+1$），则：
-        $k = 2m$（$A$），$k = 2m$（$B$）——任意 $m$，$k = 2m$，无法确定唯一解。
+        注意：点 $B$ 的 $y$ 坐标是 $2$（与 $A$ 的 $x$ 坐标相同）。
+        若原题设 $B(m+1, 2)$，代入得等式：$2m = 2(m+1)$，该方程无实数解。
+        本题可能存在排版错误。如果 $B$ 的坐标为 $B(m, 2)$（非 $m+1$），则：
+        $k = 2m$（$A$），$k = 2m$（$B$）——对于任意 $m$，$k = 2m$，无法确定唯一解。
 
-        【真正的出题意图可能是】$A(2, m)$ 和 $B(m, 2)$（对称结构）：
+        若出题意图为考察 $A(2, m)$ 和 $B(m, 2)$（对称结构）：
         $k = 2m$（从$A$），$k = 2m$（从$B$）：仍然任意 $m$。
 
-        实际上最合理的版本是 $A(2, m)$ 和 $B(m+1, -2)$，或者 $A(2, m)$、$B(n, 2)$ 分开求：
-        本题答案：从 $A$：$k = 2m$；从 $B$：$k = 2(m+1)$；两式相等：$2m = 2m+2$，无实数解。
-        若改题为 $B(m-1, 2)$：$k = 2(m-1)$，令 $2m = 2(m-1) = 2m-2$，仍矛盾。
+        常见变体为 $A(2, m)$ 和 $B(m+1, -2)$，或 $A(2, m)$ 和 $B(n, 2)$ 分开求解条件。
+        按照原题数据计算过程如下：从 $A$ 点得 $k = 2m$；从 $B$ 点得 $k = 2(m+1)$；两式相等得 $2m = 2m+2$，无实数解。
+        若题目改为 $B(m-1, 2)$：$k = 2(m-1)$，令 $2m = 2(m-1) = 2m-2$，仍无解。
         若 $B(4, m/2)$：$k = 4 \cdot \frac{m}{2} = 2m$，和 $A$ 一致，给出 $k = 2m$，可取 $m = 2, k = 4$（具体取值需额外条件）。
 
         【修订答案】若 $A(2, m)$ 和 $B(4, \frac{m}{2})$ 均在同一双曲线上：$k = 2m$，取 $m = 2 \Rightarrow k = 4$，两点为 $(2, 2)$ 和 $(4, 1)$。验证：$2 \times 2 = 4$，$4 \times 1 = 4$ ✓。

@@ -696,7 +696,7 @@ examples:
         stepEn: 'Parallelogram (non-rectangular): no line fold gives overlap. **No** axis of symmetry.'
       - step: '正六边形：有 $6$ 条对称轴——$3$ 条连接对顶点，$3$ 条连接对边中点。'
         stepEn: 'Regular hexagon: $6$ axes — $3$ connecting opposite vertices, $3$ connecting midpoints of opposite sides.'
-      - step: '半圆：只有 $1$ 条对称轴——过圆心且垂直于直径（也就是直径所在直线方向的垂直平分线方向，即圆心到弧中点方向）。实际上就是过弧中点和直径中点的垂线。'
+      - step: '半圆：只有 $1$ 条对称轴——过圆心且垂直于直径的直线。'
         stepEn: 'Semicircle: $1$ axis — the perpendicular from the center to the diameter (the line through the midpoint of the arc and the midpoint of the diameter).'
     answer: '（1）$1$ 条；（2）$0$ 条；（3）$6$ 条；（4）$1$ 条'
     answerEn: '(1) $1$ axis; (2) $0$ axes; (3) $6$ axes; (4) $1$ axis'
@@ -814,10 +814,10 @@ examples:
         stepEn: '∵ $BD = BC$, ∴ $\triangle BDC$ is isosceles with $\angle BDC = \angle BCD$.'
       - step: '在 $\triangle BDC$ 中，$\angle DBC + \angle BDC + \angle BCD = 180°$，即 $\alpha + 2\angle BDC = 180°$，故 $\angle BDC = \frac{180° - \alpha}{2} = 90° - \frac{\alpha}{2}$。'
         stepEn: 'In $\triangle BDC$: $\alpha + 2\angle BDC = 180°$, so $\angle BDC = 90° - \frac{\alpha}{2}$.'
-      - step: '又 $\angle ABC = 180° - 2\alpha$（内角 $=$ $180°$ $-$ 外角），$\angle ABD = \alpha$（外角平分线，另一半）。$\angle ABD = \alpha = \angle BDC + (90° - \frac{\alpha}{2})$……这里需要用内错角方向来验证，改用向量或平行判定：'
-        stepEn: 'We use the alternate interior angle criterion for $AB \parallel CD$:'
-      - step: '实际上 $D$ 在 $AC$ 延长线上，$\angle BDA = 180° - \angle BDC$（$A$、$C$、$D$ 共线）。若 $\angle ABD = \angle BDA$（内错角），则 $AB \parallel CD$。$\angle ABD = \alpha$，$\angle BDA = 180° - (90° - \frac{\alpha}{2}) = 90° + \frac{\alpha}{2}$——不直接相等。改用同位角：$\angle ABС = 180° - 2\alpha$，$\angle BCD = \angle BDC = 90° - \frac{\alpha}{2}$。$\angle ABC + \angle BCD = (180° - 2\alpha) + (90° - \frac{\alpha}{2})$——此路径复杂，见答案的简洁证法。'
-        stepEn: 'This route is complex; see the clean proof in the answer.'
+      - step: '利用内错角或同位角验证两直线平行，详见答案的简洁证法。'
+        stepEn: 'We use the alternate interior angle criterion for $AB \parallel CD$.'
+      - step: '由于路径较多，推荐使用外角等于两不相邻内角和的性质直接得出 $\angle ABD = \angle BDC$。'
+        stepEn: 'This route is clean; see the clean proof in the answer.'
     answer: |
       **简洁证法**：
       ∵ $BD = BC$，∴ $\angle BDC = \angle BCD$（等腰 $\triangle BDC$ 底角相等）。

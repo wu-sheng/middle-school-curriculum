@@ -450,7 +450,7 @@ concepts:
       **HL 与 SSA 的区别**：
       一般三角形中，"两边一角（非夹角）"（SSA）不能判定全等。
       但直角三角形中，斜边是最长的边，直角是固定的 $90°$，
-      HL 实际上是特殊情况下 SSA 的"解禁"——因为勾股定理消除了二义性。
+      HL 是特殊情况下 SSA 成立的特例，因为勾股定理消除了直角三角形中第三边的二义性。
 
       **实战**：遇到直角三角形全等问题，先找斜边是否相等，再找直角边是否相等。
     contentEn: |
@@ -707,7 +707,7 @@ examples:
         stepEn: 'Corresponding sides: $AB \leftrightarrow DE$, $BC \leftrightarrow EF$, $CA \leftrightarrow FD$; corresponding angles: $\angle A \leftrightarrow \angle D$, $\angle B \leftrightarrow \angle E$, $\angle C \leftrightarrow \angle F$'
       - step: '由对应边相等：$DE = AB = 3$ cm，$EF = BC = 4$ cm，$FD = CA = 5$ cm'
         stepEn: 'By equal corresponding sides: $DE = AB = 3$ cm, $EF = BC = 4$ cm, $FD = CA = 5$ cm'
-      - step: '由对应角相等：$\angle E = \angle B = 60°$；由内角和：$\angle A + \angle B + \angle C = 180°$，$\angle A = \angle C$（此处需要另外计算，实际上 $\angle A$ 和 $\angle C$ 未知，仅知 $\angle E = 60°$）'
+      - step: '由对应角相等：$\angle E = \angle B = 60°$；$\angle D = \angle A$，$\angle F = \angle C$（其它两角的值需额外条件才能确定）'
         stepEn: 'By equal corresponding angles: $\angle E = \angle B = 60°$; the other angles $\angle D$ and $\angle F$ equal $\angle A$ and $\angle C$ respectively, which can be found if more information is given'
     answer: '$DE = 3$ cm，$EF = 4$ cm，$FD = 5$ cm，$\angle E = 60°$；$\angle D = \angle A$，$\angle F = \angle C$（需知 $\angle A$ 或 $\angle C$ 的具体值才能确定）'
     answerEn: '$DE = 3$ cm, $EF = 4$ cm, $FD = 5$ cm, $\angle E = 60°$; $\angle D = \angle A$ and $\angle F = \angle C$ (specific values depend on knowing $\angle A$ or $\angle C$)'
@@ -829,7 +829,7 @@ examples:
         stepEn: 'In $\triangle ABC$ and $\triangle DCB$: $\angle ABC = \angle DCB = 90°$ (right angles), $AC = BD$ (hypotenuses equal), $BC$ is a common side (legs equal)'
       - step: '由 HL 得 $\triangle ABC \cong \triangle DCB$'
         stepEn: 'By HL, $\triangle ABC \cong \triangle DCB$'
-      - step: '∴ 对应角相等：$\angle ACB = \angle DBC$（即 $\angle ABC$ 对应 $\angle DCB$……此处重新分析对应关系）'
+      - step: '∴ 对应角相等：$\angle ACB = \angle DBC$（即 $\triangle ABC$ 与 $\triangle DCB$ 的对应角相等）'
         stepEn: '∴ Corresponding angles: $\angle BAC = \angle CDB$ and $\angle BCA = \angle CBD$'
     answer: '两直角三角形（直角在 $B$ 和 $C$），斜边 $AC = BD$，公共直角边 $BC$，由 HL 得 $\triangle ABC \cong \triangle DCB$，故所有对应元素相等'
     answerEn: 'Two right triangles (right angles at $B$ and $C$), hypotenuse $AC = BD$, common leg $BC$. By HL, $\triangle ABC \cong \triangle DCB$, so all corresponding elements are equal'

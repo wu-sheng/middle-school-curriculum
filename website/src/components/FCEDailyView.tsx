@@ -100,7 +100,13 @@ interface DailyViewProps {
     id: string; type: string; title: string; titleZh: string;
     prompt: string; promptZh: string; targetWords: string;
     scaffold: {
-      storyMap: Record<string, string>;
+      storyMap?: Record<string, string>;
+      brainstorming?: {
+        topic: string; topicZh: string;
+        forPoints: string[]; forPointsZh: string[];
+        againstPoints: string[]; againstPointsZh: string[];
+      };
+      connectors?: string[];
       mustUseWords: string[];
       mustUseStructure: string[];
       mustUseStructureZh: string[];
@@ -758,22 +764,77 @@ function WritingTab({ data, lang }: { data: DailyViewProps["writingData"]; lang:
         </div>
       </Card>
 
-      {/* Story Map Scaffold */}
-      <Card>
-        <h4 className="font-semibold text-purple-600 mb-3">
-          <BiLabel zh="故事地图" en="Story Map" />
-        </h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {storyMapKeys.map((key, i) => (
-            <div key={key} className="rounded-xl border border-purple-100 p-3 bg-purple-50/20">
-              <p className="text-xs font-semibold text-purple-500 mb-1">
-                {i + 1}. <BiLabel zh={storyLabels[key]?.zh || key} en={storyLabels[key]?.en || key} />
-              </p>
-              <p className="text-sm text-gray-600">{data.scaffold.storyMap[key] || ""}</p>
+      {/* Story Map Scaffold (for story type) */}
+      {data.type === "story" && data.scaffold.storyMap && (
+        <Card>
+          <h4 className="font-semibold text-purple-600 mb-3">
+            <BiLabel zh="故事地图" en="Story Map" />
+          </h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {storyMapKeys.map((key, i) => (
+              <div key={key} className="rounded-xl border border-purple-100 p-3 bg-purple-50/20">
+                <p className="text-xs font-semibold text-purple-500 mb-1">
+                  {i + 1}. <BiLabel zh={storyLabels[key]?.zh || key} en={storyLabels[key]?.en || key} />
+                </p>
+                <p className="text-sm text-gray-600">{data.scaffold.storyMap?.[key] || ""}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+
+      {/* Brainstorming Scaffold (for essay type) */}
+      {data.type === "essay" && data.scaffold.brainstorming && (
+        <Card>
+          <h4 className="font-semibold text-purple-600 mb-3">
+            <BiLabel zh="头脑风暴 · 思考点" en="Brainstorming · Thinking Points" />
+          </h4>
+          <p className="text-sm text-gray-500 mb-3">
+            {lang === "both"
+              ? <BiBlock zh="💡 先和大人一起讨论这些观点，画一个思维导图，再开始写作！" en="💡 Discuss these points with an adult first, draw a mind map, then start writing!" className="leading-6" />
+              : lang === "zh" ? "💡 先和大人一起讨论这些观点，画一个思维导图，再开始写作！" : "💡 Discuss these points with an adult first, draw a mind map, then start writing!"}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* For */}
+            <div className="rounded-xl border border-green-200 p-3 bg-green-50/30">
+              <p className="text-xs font-semibold text-green-600 mb-2">👍 <BiLabel zh="支持的理由" en="Arguments For" /></p>
+              <ul className="space-y-1.5 ml-1">
+                {(lang === "zh" ? data.scaffold.brainstorming.forPointsZh : data.scaffold.brainstorming.forPoints).map((pt, i) => (
+                  <li key={i} className="text-sm text-gray-600 flex items-start gap-1.5">
+                    <span className="text-green-400 mt-0.5">•</span>
+                    {lang === "both"
+                      ? <BiBlock zh={data.scaffold.brainstorming!.forPointsZh[i]} en={data.scaffold.brainstorming!.forPoints[i]} className="leading-6" />
+                      : <span>{pt}</span>}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-      </Card>
+            {/* Against */}
+            <div className="rounded-xl border border-orange-200 p-3 bg-orange-50/30">
+              <p className="text-xs font-semibold text-orange-600 mb-2">👎 <BiLabel zh="反对的理由" en="Arguments Against" /></p>
+              <ul className="space-y-1.5 ml-1">
+                {(lang === "zh" ? data.scaffold.brainstorming.againstPointsZh : data.scaffold.brainstorming.againstPoints).map((pt, i) => (
+                  <li key={i} className="text-sm text-gray-600 flex items-start gap-1.5">
+                    <span className="text-orange-400 mt-0.5">•</span>
+                    {lang === "both"
+                      ? <BiBlock zh={data.scaffold.brainstorming!.againstPointsZh[i]} en={data.scaffold.brainstorming!.againstPoints[i]} className="leading-6" />
+                      : <span>{pt}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          {/* Connectors */}
+          {data.scaffold.connectors && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              <span className="text-xs font-semibold text-purple-500 mr-1 self-center"><BiLabel zh="连接词" en="Connectors" /></span>
+              {data.scaffold.connectors.map(c => (
+                <span key={c} className="text-sm bg-purple-50 text-purple-600 px-2.5 py-0.5 rounded-full font-medium">{c}</span>
+              ))}
+            </div>
+          )}
+        </Card>
+      )}
 
       {/* Must-use words and structures */}
       <Card>

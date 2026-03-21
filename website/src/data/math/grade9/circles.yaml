@@ -1009,7 +1009,7 @@ examples:
             阴影区域 $=$ 以 $A$ 为圆心的扇形 $APB$ 的面积 $+$ 以 $B$ 为圆心的扇形 $APB$ 的面积 $-$ 正方形 $ABCD$ 的面积（注意重叠计算）。
 
             更直接：阴影 $=$ 两个扇形面积之和 $-$ 正方形 $ABPX$ 的四边形面积。
-            实际上：阴影 $=$ 扇形 $ABP$（圆心 $A$）$+$ 扇形 $ABP$（圆心 $B$）$- \triangle ABP$（两次算了）$- \triangle ABP$（多算的那块）……
+            或者表示为：阴影 $=$ 扇形 $ABP$（圆心 $A$）$+$ 扇形 $ABP$（圆心 $B$）$- \triangle ABP$（两次算了）$- \triangle ABP$（多算的那块）……
 
             最清晰的做法：阴影 $=$ 扇形 $A$（$60°$）$+$ 扇形 $B$（$60°$）$- \triangle ABP$（两次）$+\triangle ABP$（补回来）……
 
@@ -1321,7 +1321,7 @@ examPrep:
         $\angle DBC$ 是 $\overset{\frown}{DC}$ 的圆周角，故圆心角 $\angle DOC = 2 \times 35° = 70°$。
         $\angle AOB$ 是 $\overset{\frown}{AB}$ 的圆心角。
         注意：$\overset{\frown}{AB} = \overset{\frown}{AD} + \overset{\frown}{DB}$，而 $\overset{\frown}{DB} = \overset{\frown}{DC}$（同一段弧，注意圆上点的顺序）。
-        实际上需要根据图形确认具体弧段。若 $A$、$D$、$C$、$B$ 按顺序排列，则 $\overset{\frown}{AB}$（大弧）$= 360° - \overset{\frown}{ADCB}$。
+        需要根据图形确认具体弧段。若 $A$、$D$、$C$、$B$ 按顺序排列，则 $\overset{\frown}{AB}$（大弧）$= 360° - \overset{\frown}{ADCB}$。
         用总角 $360° - 50° - 70° - \angle COB$...
 
         此处用更直接的分析：$\angle AOB = 2(\angle ACD + \angle DBC) = 2 \times 60° = 120°$（圆周角相加对应圆心角相加，当 $D$ 在弧 $AB$ 上时）。
@@ -1357,8 +1357,8 @@ examPrep:
         $\angle TAB = 90°$（因为 $AT \perp AB$？需验证）
 
         设 $\angle ABC = \alpha$，则 $\angle BAC = 90° - \alpha$（因为 $\angle ACB = 90°$）。
-        $AT \parallel BC$：$\angle TAC = \angle ACB = 90°$（内错角，不对）
-        或 $\angle TAB + \angle ABC = 180°$（同旁内角）$\Rightarrow \angle TAB = 180° - \alpha$...
+        由于 $AT \parallel BC$，则 $\angle TAC = \angle ACB = 90°$（内错角）假设不成立。
+        正确应用平行线性质得：$\angle TAB + \angle ABC = 180°$（同旁内角）$\Rightarrow \angle TAB = 180° - \alpha$...
 
         **正确思路**：
         $OC \perp CT$（切线性质）。$AT \parallel BC$，$OC \perp CT$。

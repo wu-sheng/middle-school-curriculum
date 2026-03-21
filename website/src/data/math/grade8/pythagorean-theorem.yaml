@@ -257,7 +257,7 @@ concepts:
       **场景 4：坐标系中两点距离**
       点 $A(x_{1}, y_{1})$ 和点 $B(x_{2}, y_{2})$，水平距离 $= |x_{2} - x_{1}|$，竖直距离 $= |y_{2} - y_{1}|$：
       $$AB = \sqrt{(x_{2}-x_{1})^{2} + (y_{2}-y_{1})^{2}}$$
-      这实际上是对角线公式的坐标版本。
+      这就是平面直角坐标系中的两点间距离公式。
 
       **场景 5：圆中的勾股关系**
       圆的半径 $r$，弦长的一半 $m$，圆心到弦的距离 $d$：
@@ -974,45 +974,32 @@ examPrep:
         如图，等腰三角形 $ABC$ 中，$AB = AC = 13$，$BC = 10$。
         点 $M$ 是 $BC$ 的中点，$D$ 是 $AB$ 上的一点，$MD \perp AB$。
         $(1)$ 求 $AM$（$A$ 到底边中点的距离）；
-        $(2)$ 若 $BD = 5$，求 $DM$。
+        $(2)$ 求 $DM$。
       questionEn: |
         In isosceles triangle $ABC$, $AB = AC = 13$ and $BC = 10$.
         $M$ is the midpoint of $BC$ and $D$ is a point on $AB$ with $MD \perp AB$.
         $(1)$ Find $AM$ (the distance from $A$ to the midpoint of the base).
-        $(2)$ If $BD = 5$, find $DM$.
+        $(2)$ Find $DM$.
       answer: |
         $(1)$ 等腰三角形顶角高平分底边，$BM = MC = 5$
         在直角三角形 $ABM$ 中，$AB = 13$，$BM = 5$
         $AM = \sqrt{13^{2} - 5^{2}} = \sqrt{169 - 25} = \sqrt{144} = 12$
 
-        $(2)$ 在直角三角形 $BDM$ 中，$\angle BDM = 90°$，$BD = 5$，$BM = 5$
-        $DM = \sqrt{BM^{2} - BD^{2}} = \sqrt{25 - 25} = 0$？
+        $(2)$ 利用面积法（等面积法）。在 $\triangle ABM$ 中，以 $AB$ 为底的面积等于以 $BM$ 为底的面积：
+        $S_{\triangle ABM} = \frac{1}{2} \times BM \times AM = \frac{1}{2} \times 5 \times 12 = 30$
+        同时 $S_{\triangle ABM} = \frac{1}{2} \times AB \times DM = \frac{1}{2} \times 13 \times DM$
+        所以 $\frac{1}{2} \times 13 \times DM = 30$，解得 $DM = \frac{60}{13}$
 
-        等等——$BD = BM = 5$，斜边等于一条直角边是不可能的，说明我们重新想想三角形的关系。
-        实际上 $BM = 5$ 是直角三角形 $BDM$ 的斜边，$BD = 5$ 是一条直角边：
-        但 $BD = BM = 5$，$BM$ 是斜边，斜边不能等于直角边（斜边最长），矛盾。
-
-        重新审题：$DM \perp AB$，所以在直角三角形 $BDM$ 中，直角在 $D$，$BM$ 是斜边。
-        $BM = 5$，$BD = 5$？这意味着斜边 $\leq$ 直角边，矛盾。
-
-        修正：设 $BD = 5$，斜边是 $BM = 5$，则 $DM = \sqrt{5^{2} - 5^{2}} = 0$，矛盾。
-        说明当 $BD = 5 = BM$ 时，$D$ 与 $M$ 重合，$DM = 0$。但这在几何上意味着 $M$ 在 $AB$ 上，检验：$M$ 是 $BC$ 的中点，$BM = 5$，而 $BM \perp AB$ 仅当 $\angle B = 90°$。
-
-        重新计算 $\angle B$：$\cos B = \frac{BD/AB}{1}$……这道题数据需调整。
-        按标准解法：若 $BD = 5$，在直角三角形 $BDM$（直角在 $D$）中，$BM = 5$（斜边），则 $DM = \sqrt{BM^{2} - BD^{2}} = \sqrt{25-25} = 0$，意味着 $BD = BM$，几何上不合理。
-
-        正确答案（调整为 $BD = 4$）：$DM = \sqrt{BM^{2} - BD^{2}} = \sqrt{25 - 16} = \sqrt{9} = 3$
-
-        **标准答案：** $(1)\ AM = 12$；$(2)$ 若 $BD = 4$，则 $DM = 3$（$(3,4,5)$ 勾股数！）
+        **标准答案：** $(1)\ AM = 12$；$(2)\ DM = \frac{60}{13}$
       answerEn: |
         $(1)$ The altitude from $A$ in an isosceles triangle bisects the base: $BM = MC = 5$.
         In right triangle $ABM$: $AB = 13$, $BM = 5$
         $AM = \sqrt{13^{2} - 5^{2}} = \sqrt{144} = 12$
 
-        $(2)$ With $BD = 4$ (standard version), in right triangle $BDM$ (right angle at $D$): hypotenuse $BM = 5$, leg $BD = 4$
-        $DM = \sqrt{BM^{2} - BD^{2}} = \sqrt{25 - 16} = \sqrt{9} = 3$
-
-        **Answers:** $(1)\ AM = 12$; $(2)$ with $BD = 4$, $DM = 3$ (the $(3,4,5)$ triple!)
+        $(2)$ By using the area of $\triangle ABM$: 
+        Area $= \frac{1}{2} \times BM \times AM = \frac{1}{2} \times 5 \times 12 = 30$.
+        Also Area $= \frac{1}{2} \times AB \times DM = \frac{1}{2} \times 13 \times DM$.
+        So $\frac{1}{2} \times 13 \times DM = 30$, giving $DM = \frac{60}{13}$.
 
     - id: ep2
       type: multiple-choice
@@ -1032,7 +1019,7 @@ examPrep:
       answerEn: C
       explanation: |
         A 错：还需要确认 $c$ 是最长边，且三边能构成三角形
-        B 错：$1^{2} + 1^{2} = 2 \neq 3 = (\sqrt{3})^{2}$，不是直角三角形（实际是锐角三角形，因为 $2 > \sqrt{3}^{2}$……等等 $2 > 3$？不。$1+1=2 < 3$，所以 $1^{2}+1^{2} < (\sqrt{3})^{2}$，是钝角三角形）
+        B 错：$1^{2} + 1^{2} = 2 < 3 = (\sqrt{3})^{2}$，所以不仅不是直角三角形，还是钝角三角形
         C 对：$(3k)^{2}+(4k)^{2}=9k^{2}+16k^{2}=25k^{2}=(5k)^{2}$ ✓
         D 错：$c = \sqrt{a^{2}+b^{2}} \neq \sqrt{(a+b)^{2}}$，两直角边之和不等于斜边
       explanationEn: |
@@ -1064,9 +1051,8 @@ examPrep:
         $(2)$ 在直角三角形 $ABD$ 中，$\angle A = 90°$，$AB = 8$，$AD = 8$：
         $BD = \sqrt{AB^{2} + AD^{2}} = \sqrt{64 + 64} = \sqrt{128} = 8\sqrt{2}$
 
-        $(3)$ $\triangle BCD$ 中，底边 $CD = 2$，$CD$ 对应的高 = 梯形的高 $AD = 8$（因为 $B$ 到 $CD$ 的距离等于 $AB$ 的高度... 等等，需要重新考虑）
-        实际上 $\triangle BCD$ 的底为 $CD = 2$，高为 $B$ 到直线 $CD$ 的距离 $= AB = 8$（$AB \parallel CD$，$B$ 到 $CD$ 的距离 $= AB = 8$，因为 $AD = 8$ 是高……）
-        $S_{\triangle BCD} = \frac{1}{2} \times CD \times AB = \frac{1}{2} \times 2 \times 8 = 8$
+        $(3)$ 在 $\triangle BCD$ 中，取 $CD$ 为底，则 $CD = 2$。点 $B$ 到直线 $CD$ 的距离即为梯形的高 $AD$ 的长，所以高为 $8$。
+        $S_{\triangle BCD} = \frac{1}{2} \times CD \times AD = \frac{1}{2} \times 2 \times 8 = 8$
 
         **答案：** $(1)\ AD = 8$；$(2)\ BD = 8\sqrt{2}$；$(3)\ S_{\triangle BCD} = 8$
       answerEn: |
@@ -1078,7 +1064,7 @@ examPrep:
         $(2)$ In right triangle $ABD$ ($\angle A = 90°$, $AB = 8$, $AD = 8$):
         $BD = \sqrt{8^{2} + 8^{2}} = \sqrt{128} = 8\sqrt{2}$
 
-        $(3)$ $\triangle BCD$: base $CD = 2$; height from $B$ to line $CD$ equals $AB = 8$ (since $AB \parallel CD$):
+        $(3)$ In $\triangle BCD$: base $CD = 2$; the height from $B$ to line $CD$ is the distance between the parallel lines, which is $AD = 8$:
         $S_{\triangle BCD} = \frac{1}{2} \times 2 \times 8 = 8$
 
         **Answers:** $(1)\ AD = 8$; $(2)\ BD = 8\sqrt{2}$; $(3)\ S_{\triangle BCD} = 8$
