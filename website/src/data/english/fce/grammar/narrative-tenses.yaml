@@ -1,0 +1,1509 @@
+category: 'Narrative Tenses'
+categoryZh: '叙事时态'
+questions:
+  # ============================================================
+  # G0401-G0420: Past simple vs past continuous in narratives
+  # ============================================================
+  - id: G0401
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-1]
+    context: storytelling
+    question: 'She _____ (walk) through the forest when she _____ (hear) a strange noise.'
+    questionZh: '她正在穿过森林时，她 _____（hear）到了一个奇怪的声音。'
+    answer: 'was walking / heard'
+    explanation: 'Past continuous (was walking) for the background action in progress; past simple (heard) for the sudden event that interrupted it.'
+    explanationZh: '过去进行时（was walking）表示正在进行的背景动作；一般过去时（heard）表示打断的突然事件。'
+    grammarPoint: 'Past continuous vs past simple'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0402
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-1]
+    context: storytelling
+    question: 'The children _____ (play) in the garden when it _____ (start) to rain.'
+    questionZh: '孩子们在花园里 _____（play）时，天开始 _____（start）下雨了。'
+    answer: 'were playing / started'
+    explanation: 'Past continuous (were playing) sets the scene; past simple (started) introduces the new event.'
+    explanationZh: '过去进行时（were playing）设定场景；一般过去时（started）引入新事件。'
+    grammarPoint: 'Past continuous vs past simple'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0403
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-1]
+    context: storytelling
+    question: 'While the wizard _____ a spell, the candle went out.'
+    questionZh: '当巫师正在 _____ 咒语时，蜡烛灭了。'
+    options:
+      A: 'cast'
+      B: 'was casting'
+      C: 'casted'
+      D: 'has cast'
+    answer: 'B'
+    explanation: '"While" signals a longer background action (past continuous: was casting). The candle going out is the shorter, interrupting event.'
+    explanationZh: '"While"标志着较长的背景动作（过去进行时：was casting）。蜡烛灭了是较短的打断事件。'
+    grammarPoint: 'While + past continuous'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0404
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-1]
+    context: storytelling
+    question: 'I _____ (read) a book when someone _____ (knock) on the door.'
+    questionZh: '我正在 _____（read）一本书时，有人 _____（knock）了门。'
+    answer: 'was reading / knocked'
+    explanation: 'Past continuous for the ongoing activity; past simple for the interruption.'
+    explanationZh: '过去进行时表示正在进行的活动；一般过去时表示打断。'
+    grammarPoint: 'Past continuous vs past simple'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0405
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-1]
+    context: storytelling
+    question: 'The sun _____ when the adventurers set off on their journey.'
+    questionZh: '当冒险者们出发时，太阳正在 _____。'
+    options:
+      A: 'rose'
+      B: 'was rising'
+      C: 'has risen'
+      D: 'rises'
+    answer: 'B'
+    explanation: 'The sun rising is the background scene-setting action (past continuous). The adventurers setting off is the main event (past simple).'
+    explanationZh: '太阳升起是背景场景设定动作（过去进行时）。冒险者出发是主要事件（一般过去时）。'
+    grammarPoint: 'Past continuous for scene-setting'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0406
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'While Tom _____ (climb) the tower, the rope suddenly _____ (snap).'
+    questionZh: '当Tom正在 _____（climb）塔楼时，绳子突然 _____（snap）了。'
+    answer: 'was climbing / snapped'
+    explanation: '"While" + past continuous for the longer action; past simple for the sudden event.'
+    explanationZh: '"While" + 过去进行时表示较长动作；一般过去时表示突发事件。'
+    grammarPoint: 'While + past continuous, past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0407
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ nervously as the teacher read out the exam results.'
+    questionZh: '当老师宣布考试成绩时，她紧张地 _____。'
+    options:
+      A: 'waited'
+      B: 'was waiting'
+      C: 'waits'
+      D: 'had waited'
+    answer: 'B'
+    explanation: 'Both actions happened simultaneously. "Was waiting" (past continuous) describes the ongoing state during the teacher reading results.'
+    explanationZh: '两个动作同时发生。"Was waiting"（过去进行时）描述老师宣布成绩期间的持续状态。'
+    grammarPoint: 'Simultaneous past actions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0408
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'It _____ (rain) heavily and the wind _____ (howl) through the trees.'
+    questionZh: '雨下得很大，风在树林中 _____（howl）。'
+    answer: 'was raining / was howling'
+    explanation: 'Two simultaneous background actions both use past continuous to set an atmospheric scene.'
+    explanationZh: '两个同时进行的背景动作都用过去进行时来设定氛围。'
+    grammarPoint: 'Past continuous for parallel scene-setting'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0409
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'When the clock _____ midnight, all the candles blew out at once.'
+    questionZh: '当钟 _____ 午夜时，所有蜡烛同时熄灭了。'
+    options:
+      A: 'was striking'
+      B: 'struck'
+      C: 'has struck'
+      D: 'strikes'
+    answer: 'B'
+    explanation: '"When" with a short, completed action uses past simple. The clock striking is a momentary event, not a long background action.'
+    explanationZh: '"When"搭配短暂、完成的动作使用一般过去时。钟响是瞬间事件，不是长时间背景动作。'
+    grammarPoint: 'When + past simple (momentary event)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0410
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'The dragon _____ (sleep) peacefully when the knight _____ (enter) the cave.'
+    questionZh: '骑士 _____（enter）洞穴时，龙正在 _____（sleep）。'
+    answer: 'was sleeping / entered'
+    explanation: 'Past continuous (was sleeping) for the ongoing state; past simple (entered) for the action that happened during it.'
+    explanationZh: '过去进行时（was sleeping）表示持续状态；一般过去时（entered）表示在其间发生的动作。'
+    grammarPoint: 'Past continuous + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0411
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'As the ship _____ (sink), the captain _____ (order) everyone into the lifeboats.'
+    questionZh: '当船正在 _____（sink）时，船长 _____（order）所有人上救生艇。'
+    answer: 'was sinking / ordered'
+    explanation: '"As" + past continuous for the background situation; past simple for the decisive action taken during it.'
+    explanationZh: '"As" + 过去进行时表示背景情况；一般过去时表示在期间采取的决定性动作。'
+    grammarPoint: 'As + past continuous'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0412
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'The birds _____ and the sun _____ — it was a perfect morning for an adventure.'
+    questionZh: '鸟在 _____，太阳在 _____ — 这是冒险的完美早晨。'
+    options:
+      A: 'sang / shone'
+      B: 'were singing / was shining'
+      C: 'sing / shines'
+      D: 'had sung / had shone'
+    answer: 'B'
+    explanation: 'Both actions are scene-setting descriptions of an ongoing state, so both use past continuous.'
+    explanationZh: '两个动作都是对持续状态的场景设定描述，所以都用过去进行时。'
+    grammarPoint: 'Past continuous for scene-setting'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0413
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'Nobody _____ (notice) the stranger who _____ (stand) in the shadows.'
+    questionZh: '没有人 _____（notice）站在阴影中的那个陌生人。'
+    answer: 'noticed / was standing'
+    explanation: 'Past simple (noticed) for the main point; past continuous (was standing) for the ongoing background state.'
+    explanationZh: '一般过去时（noticed）表示主要要点；过去进行时（was standing）表示持续的背景状态。'
+    grammarPoint: 'Past simple + past continuous'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0414
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'While she _____ for the bus, she found a mysterious envelope on the bench.'
+    questionZh: '当她在 _____ 等公交车时，她在长椅上发现了一个神秘的信封。'
+    options:
+      A: 'waited'
+      B: 'was waiting'
+      C: 'has waited'
+      D: 'waits'
+    answer: 'B'
+    explanation: '"While" + past continuous for the longer background activity during which the discovery happened.'
+    explanationZh: '"While" + 过去进行时表示发现事件期间较长的背景活动。'
+    grammarPoint: 'While + past continuous'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0415
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'The old man _____ (sit) by the fire and _____ (tell) stories to the children.'
+    questionZh: '老人 _____（sit）在火炉旁，给孩子们 _____（tell）故事。'
+    answer: 'was sitting / was telling'
+    explanation: 'Both actions are happening simultaneously as background scene-setting, so both use past continuous.'
+    explanationZh: '两个动作同时发生作为背景场景，所以都用过去进行时。'
+    grammarPoint: 'Past continuous for parallel actions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0416
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'The moment the door _____, everyone fell silent.'
+    questionZh: '门 _____ 的那一刻，所有人都安静了。'
+    options:
+      A: 'was opening'
+      B: 'opened'
+      C: 'has opened'
+      D: 'opens'
+    answer: 'B'
+    explanation: '"The moment" signals an instantaneous event, which takes past simple. Both events happened one after the other.'
+    explanationZh: '"The moment"标志着瞬间事件，使用一般过去时。两个事件相继发生。'
+    grammarPoint: 'The moment + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0417
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ (try) to open the window when the glass _____ (shatter).'
+    questionZh: '她正在 _____（try）打开窗户时，玻璃 _____（shatter）了。'
+    answer: 'was trying / shattered'
+    explanation: 'Past continuous for the attempted action; past simple for the sudden result.'
+    explanationZh: '过去进行时表示正在尝试的动作；一般过去时表示突然的结果。'
+    grammarPoint: 'Past continuous + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0418
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'All of a sudden, the ground _____ beneath their feet.'
+    questionZh: '突然间，地面在他们脚下 _____。'
+    options:
+      A: 'was shaking'
+      B: 'shook'
+      C: 'has shaken'
+      D: 'shakes'
+    answer: 'B'
+    explanation: '"All of a sudden" introduces a sudden, completed event — past simple is correct.'
+    explanationZh: '"All of a sudden"引入一个突然的、完成的事件——一般过去时是正确的。'
+    grammarPoint: 'All of a sudden + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0419
+    type: fill-blank
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'The detective _____ (examine) the footprints while his assistant _____ (take) photographs.'
+    questionZh: '侦探在 _____（examine）脚印，同时助手在 _____（take）照片。'
+    answer: 'was examining / was taking'
+    explanation: 'Two simultaneous ongoing activities — both use past continuous.'
+    explanationZh: '两个同时进行的活动——都用过去进行时。'
+    grammarPoint: 'While + two past continuous actions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0420
+    type: multiple-choice
+    tags: [past-simple-continuous, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ the map when she suddenly _____ a hidden message.'
+    questionZh: '她在 _____ 地图时，突然 _____ 了一条隐藏的信息。'
+    options:
+      A: 'studied / discovered'
+      B: 'was studying / discovered'
+      C: 'was studying / was discovering'
+      D: 'studied / was discovering'
+    answer: 'B'
+    explanation: 'Past continuous (was studying) for the ongoing activity; past simple (discovered) for the sudden discovery.'
+    explanationZh: '过去进行时（was studying）表示持续活动；一般过去时（discovered）表示突然的发现。'
+    grammarPoint: 'Past continuous + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  # ============================================================
+  # G0421-G0440: Past perfect for backstory/flashback
+  # ============================================================
+  - id: G0421
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'She realised she _____ (leave) her bag on the train.'
+    questionZh: '她意识到她把包 _____（leave）在了火车上。'
+    answer: 'had left'
+    explanation: 'Past perfect (had left) shows that leaving the bag happened BEFORE the moment of realising.'
+    explanationZh: '过去完成时（had left）表示忘带包发生在意识到之前。'
+    grammarPoint: 'Past perfect for earlier event'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0422
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'By the time they arrived, the dragon _____ (already / fly) away.'
+    questionZh: '到他们到达时，龙 _____（already / fly）走了。'
+    answer: 'had already flown'
+    explanation: 'Past perfect with "already" emphasises that the flying happened before their arrival.'
+    explanationZh: '过去完成时搭配"already"强调飞走发生在他们到达之前。'
+    grammarPoint: 'By the time + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0423
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The explorers were exhausted because they _____ for twelve hours without rest.'
+    questionZh: '探险者们精疲力竭，因为他们已经 _____ 了十二个小时没有休息。'
+    options:
+      A: 'walked'
+      B: 'had walked'
+      C: 'were walking'
+      D: 'have walked'
+    answer: 'B'
+    explanation: 'Past perfect (had walked) explains the reason for their current (past) state of exhaustion.'
+    explanationZh: '过去完成时（had walked）解释了他们当时（过去）疲惫的原因。'
+    grammarPoint: 'Past perfect for cause/reason'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0424
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'He _____ (never / see) such a beautiful castle before that day.'
+    questionZh: '在那天之前，他从未 _____（see）过如此美丽的城堡。'
+    answer: 'had never seen'
+    explanation: 'Past perfect with "never...before" shows a first-time experience up to a point in the past.'
+    explanationZh: '过去完成时搭配"never...before"表示直到过去某一时刻的第一次经历。'
+    grammarPoint: 'Past perfect with never...before'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0425
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'When the police arrived, the thief _____.'
+    questionZh: '当警察到达时，小偷已经 _____。'
+    options:
+      A: 'escaped'
+      B: 'had escaped'
+      C: 'was escaping'
+      D: 'has escaped'
+    answer: 'B'
+    explanation: 'The thief escaped BEFORE the police arrived — past perfect shows the earlier event.'
+    explanationZh: '小偷在警察到达之前就逃走了——过去完成时表示更早的事件。'
+    grammarPoint: 'Past perfect for earlier completed action'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0426
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The children were frightened because they _____ (hear) the legend about the haunted forest.'
+    questionZh: '孩子们很害怕，因为他们 _____（hear）过关于闹鬼森林的传说。'
+    answer: 'had heard'
+    explanation: 'Past perfect (had heard) gives the backstory that explains their fear.'
+    explanationZh: '过去完成时（had heard）提供了解释他们恐惧的背景故事。'
+    grammarPoint: 'Past perfect for backstory'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0427
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'After the hero _____ (defeat) the monster, the villagers celebrated all night.'
+    questionZh: '英雄 _____（defeat）怪物之后，村民们庆祝了一整夜。'
+    answer: 'had defeated'
+    explanation: '"After" + past perfect shows the sequence: first the defeat, then the celebration.'
+    explanationZh: '"After" + 过去完成时表明顺序：先战胜，然后庆祝。'
+    grammarPoint: 'After + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0428
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'She opened the diary and read what her grandmother _____ years ago.'
+    questionZh: '她打开日记，读了她祖母多年前 _____ 的内容。'
+    options:
+      A: 'wrote'
+      B: 'had written'
+      C: 'was writing'
+      D: 'has written'
+    answer: 'B'
+    explanation: 'The writing happened years before the reading — past perfect (had written) for the earlier event.'
+    explanationZh: '写作发生在阅读之前很多年——过去完成时（had written）表示更早的事件。'
+    grammarPoint: 'Past perfect for distant past event'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0429
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The treasure map _____ (be) hidden in the library for over a hundred years before anyone found it.'
+    questionZh: '宝藏地图在被发现之前已经在图书馆 _____（be）了一百多年。'
+    answer: 'had been'
+    explanation: 'Past perfect (had been) shows the duration of hiding before the discovery.'
+    explanationZh: '过去完成时（had been）表示发现之前隐藏的时间长度。'
+    grammarPoint: 'Past perfect for duration before past event'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0430
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'No sooner _____ the door than a cold wind blew through the room.'
+    questionZh: '她刚 _____ 门，一阵冷风就吹过了房间。'
+    options:
+      A: 'she had opened'
+      B: 'had she opened'
+      C: 'she opened'
+      D: 'she was opening'
+    answer: 'B'
+    explanation: '"No sooner had...than" uses inverted past perfect. The door opening happened immediately before the wind.'
+    explanationZh: '"No sooner had...than"使用过去完成时倒装。开门紧接着就刮风了。'
+    grammarPoint: 'No sooner had...than (inversion)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0431
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The knight recognised the sword — it _____ (belong) to his father.'
+    questionZh: '骑士认出了那把剑——它曾经 _____（belong）他的父亲。'
+    answer: 'had belonged to'
+    explanation: 'Past perfect shows that the belonging was a state that existed before the moment of recognition.'
+    explanationZh: '过去完成时表示拥有是在认出之前就存在的状态。'
+    grammarPoint: 'Past perfect for backstory'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0432
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'Once the spell _____ (wear) off, the princess woke up and looked around in confusion.'
+    questionZh: '一旦咒语 _____（wear）消退，公主醒了过来，困惑地环顾四周。'
+    answer: 'had worn'
+    explanation: '"Once" + past perfect shows the completed event that triggered the next action.'
+    explanationZh: '"Once" + 过去完成时表示触发下一个动作的已完成事件。'
+    grammarPoint: 'Once + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0433
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The village was empty. Everyone _____ before the flood reached them.'
+    questionZh: '村庄是空的。在洪水到达之前，所有人都已经 _____。'
+    options:
+      A: 'left'
+      B: 'had left'
+      C: 'were leaving'
+      D: 'have left'
+    answer: 'B'
+    explanation: 'Past perfect (had left) shows the leaving was completed before the current past scene (empty village).'
+    explanationZh: '过去完成时（had left）表示离开在当前过去场景（空荡的村庄）之前已经完成。'
+    grammarPoint: 'Past perfect for completed prior event'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0434
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-3]
+    context: storytelling
+    question: 'If only she _____ (listen) to the old woman''s warning, none of this would have happened.'
+    questionZh: '要是她 _____（listen）了老太太的警告就好了，这些都不会发生。'
+    answer: 'had listened'
+    explanation: '"If only" + past perfect expresses regret about a past action.'
+    explanationZh: '"If only" + 过去完成时表达对过去行为的遗憾。'
+    grammarPoint: 'If only + past perfect (regret)'
+    relatedQuest: Q05
+    difficulty: 3
+
+  - id: G0435
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'She looked at the ruined castle. It _____ (once / be) the most beautiful building in the kingdom.'
+    questionZh: '她看着那座废墟城堡。它曾经 _____（be）王国里最美丽的建筑。'
+    answer: 'had once been'
+    explanation: 'Past perfect with "once" provides a flashback to an earlier time.'
+    explanationZh: '过去完成时搭配"once"提供了对更早时期的回忆。'
+    grammarPoint: 'Past perfect for flashback'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0436
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'The detective knew exactly who the criminal was — he _____ the clues for weeks.'
+    questionZh: '侦探确切地知道罪犯是谁——他已经 _____ 线索好几周了。'
+    options:
+      A: 'studied'
+      B: 'had been studying'
+      C: 'was studying'
+      D: 'studies'
+    answer: 'B'
+    explanation: 'Past perfect continuous (had been studying) shows an ongoing action that led up to the moment of knowing.'
+    explanationZh: '过去完成进行时（had been studying）表示持续进行的动作导致了知道的那一刻。'
+    grammarPoint: 'Past perfect continuous for duration leading to a past moment'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0437
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'They finally reached the mountain. They _____ (travel) for three long days.'
+    questionZh: '他们终于到达了山。他们已经 _____（travel）了漫长的三天。'
+    answer: 'had been travelling'
+    explanation: 'Past perfect continuous emphasises the duration and effort of the journey before arriving.'
+    explanationZh: '过去完成进行时强调到达之前旅途的持续时间和努力。'
+    grammarPoint: 'Past perfect continuous for duration'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0438
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'It was clear from his red eyes that the boy _____ (cry).'
+    questionZh: '从他红红的眼睛可以看出男孩一直在 _____（cry）。'
+    answer: 'had been crying'
+    explanation: 'Past perfect continuous shows a recent activity whose effects are still visible in the past narrative moment.'
+    explanationZh: '过去完成进行时表示一个近期的活动，其效果在过去的叙述时刻仍然可见。'
+    grammarPoint: 'Past perfect continuous for visible results'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0439
+    type: multiple-choice
+    tags: [past-perfect, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ the letter three times before she understood its meaning.'
+    questionZh: '她 _____ 了那封信三遍才明白其含义。'
+    options:
+      A: 'read'
+      B: 'had read'
+      C: 'was reading'
+      D: 'has read'
+    answer: 'B'
+    explanation: 'Past perfect (had read) shows the three readings happened before the moment of understanding.'
+    explanationZh: '过去完成时（had read）表示三次阅读发生在理解的时刻之前。'
+    grammarPoint: 'Past perfect for sequenced past events'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0440
+    type: fill-blank
+    tags: [past-perfect, Q05, difficulty-3]
+    context: storytelling
+    question: 'Hardly _____ (she / finish) speaking when the lights went out.'
+    questionZh: '她话刚 _____（finish），灯就灭了。'
+    answer: 'had she finished'
+    explanation: '"Hardly had...when" uses inverted past perfect to show two events in very quick succession.'
+    explanationZh: '"Hardly had...when"使用过去完成时倒装来表示两个事件紧接着发生。'
+    grammarPoint: 'Hardly had...when (inversion)'
+    relatedQuest: Q05
+    difficulty: 3
+
+  # ============================================================
+  # G0441-G0460: Time conjunctions
+  # ============================================================
+  - id: G0441
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-1]
+    context: storytelling
+    question: '_____ the hero entered the cave, bats flew out in every direction.'
+    questionZh: '英雄一进入洞穴，蝙蝠就向四面八方飞去。'
+    answer: 'When'
+    explanation: '"When" introduces the moment that triggered the next event.'
+    explanationZh: '"When"引入触发下一个事件的时刻。'
+    grammarPoint: 'When + past simple'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0442
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-1]
+    context: storytelling
+    question: '_____ she was reading, her cat jumped onto the table.'
+    questionZh: '_____ 她在阅读时，她的猫跳上了桌子。'
+    options:
+      A: 'While'
+      B: 'Until'
+      C: 'After'
+      D: 'Before'
+    answer: 'A'
+    explanation: '"While" is used with a continuous action (was reading) during which another event happened.'
+    explanationZh: '"While"与持续动作（was reading）连用，在此期间另一事件发生。'
+    grammarPoint: 'While + past continuous'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0443
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-1]
+    context: storytelling
+    question: '_____ the sun set, the temperature dropped quickly.'
+    questionZh: '_____ 太阳落山，温度迅速下降。'
+    answer: 'As'
+    explanation: '"As" here means "at the same time that" — the temperature dropped while the sun was setting.'
+    explanationZh: '"As"在这里意思是"与此同时"——太阳落山的同时温度下降。'
+    grammarPoint: 'As (simultaneous events)'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0444
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-1]
+    context: storytelling
+    question: 'She hid behind the tree _____ the guard walked past.'
+    questionZh: '她躲在树后面 _____ 守卫走过。'
+    options:
+      A: 'before'
+      B: 'after'
+      C: 'until'
+      D: 'while'
+    answer: 'C'
+    explanation: '"Until" means she stayed hidden up to the point when the guard passed.'
+    explanationZh: '"Until"意思是她一直躲着，直到守卫走过。'
+    grammarPoint: 'Until + past simple'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0445
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ she had locked all the doors, she finally felt safe.'
+    questionZh: '_____ 她锁好了所有的门，她终于感到安全了。'
+    answer: 'After'
+    explanation: '"After" + past perfect shows the sequence: first locked doors, then felt safe.'
+    explanationZh: '"After" + 过去完成时表明顺序：先锁门，然后感到安全。'
+    grammarPoint: 'After + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0446
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ he opened his eyes, he knew something was wrong.'
+    questionZh: '_____ 他一睁开眼睛，他就知道有什么不对劲。'
+    options:
+      A: 'Until'
+      B: 'While'
+      C: 'The moment'
+      D: 'After'
+    answer: 'C'
+    explanation: '"The moment" emphasises the instant connection between opening his eyes and knowing something was wrong.'
+    explanationZh: '"The moment"强调睁眼和知道出了问题之间的瞬间联系。'
+    grammarPoint: 'The moment + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0447
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ they reached the river, the bridge had already collapsed.'
+    questionZh: '_____ 他们到达河边时，桥已经坍塌了。'
+    answer: 'By the time'
+    explanation: '"By the time" + past simple, past perfect shows one event was too late for another.'
+    explanationZh: '"By the time" + 一般过去时，过去完成时表示一个事件对另一个来说太晚了。'
+    grammarPoint: 'By the time + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0448
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ she checked the map, she took a wrong turn and got lost.'
+    questionZh: '_____ 她查看地图，她就走错了路迷路了。'
+    answer: 'Before'
+    explanation: '"Before" + past simple shows the map-checking happened after getting lost — she should have checked before.'
+    explanationZh: '"Before"表示查看地图发生在迷路之后——她应该之前就查看。'
+    grammarPoint: 'Before + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0449
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: 'They waited in the dark _____ dawn finally broke.'
+    questionZh: '他们在黑暗中等待 _____ 黎明终于到来。'
+    options:
+      A: 'while'
+      B: 'until'
+      C: 'when'
+      D: 'as'
+    answer: 'B'
+    explanation: '"Until" shows they continued waiting up to the point when dawn came.'
+    explanationZh: '"Until"表示他们一直等到黎明到来。'
+    grammarPoint: 'Until + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0450
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ long, the rain stopped and a rainbow appeared over the valley.'
+    questionZh: '不久之后，雨停了，一道彩虹出现在山谷上方。'
+    answer: 'Before'
+    explanation: '"Before long" is a time expression meaning "soon after" — it introduces the next event.'
+    explanationZh: '"Before long"是一个时间表达，意思是"不久之后"——引入下一个事件。'
+    grammarPoint: 'Before long (time expression)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0451
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: 'She crept along the corridor, _____ (careful / not / make) a sound.'
+    questionZh: '她沿着走廊悄悄走着，小心 _____（not / make）出声音。'
+    answer: 'careful not to make'
+    explanation: '"Careful not to make" describes her manner while creeping — purpose clause with infinitive.'
+    explanationZh: '"Careful not to make"描述她悄悄走的方式——不定式目的从句。'
+    grammarPoint: 'Adjective + not to + infinitive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0452
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ the wizard finished the spell, the sky turned purple.'
+    questionZh: '巫师完成咒语 _____，天空变成了紫色。'
+    options:
+      A: 'While'
+      B: 'As soon as'
+      C: 'Until'
+      D: 'Before'
+    answer: 'B'
+    explanation: '"As soon as" emphasises the immediate connection between finishing the spell and the sky changing.'
+    explanationZh: '"As soon as"强调完成咒语和天空变色之间的直接联系。'
+    grammarPoint: 'As soon as + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0453
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: 'He kept running _____ he could no longer hear the footsteps behind him.'
+    questionZh: '他一直跑 _____ 他再也听不到身后的脚步声。'
+    answer: 'until'
+    explanation: '"Until" marks the endpoint of the action — he ran continuously and stopped only when the footsteps faded.'
+    explanationZh: '"Until"标记动作的终点——他不停地跑，直到脚步声消失才停下。'
+    grammarPoint: 'Until + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0454
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ entering the room, she noticed something was missing.'
+    questionZh: '_____ 进入房间，她注意到少了什么东西。'
+    options:
+      A: 'On'
+      B: 'While'
+      C: 'Until'
+      D: 'Before'
+    answer: 'A'
+    explanation: '"On" + -ing means "immediately when" — "On entering" = "As soon as she entered."'
+    explanationZh: '"On" + -ing 意思是"一……就"——"On entering" = "她一进入就"。'
+    grammarPoint: 'On + -ing (immediately when)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0455
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ (not / wait) for anyone, she pushed open the heavy door and stepped inside.'
+    questionZh: '没有等任何人，她推开沉重的门走了进去。'
+    answer: 'Not waiting'
+    explanation: 'A present participle clause ("Not waiting") shows an action that happened at the same time as the main action.'
+    explanationZh: '现在分词从句（"Not waiting"）表示与主要动作同时发生的动作。'
+    grammarPoint: 'Participle clause for simultaneous action'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0456
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: 'The children hid _____ the giant had passed their hiding place.'
+    questionZh: '孩子们一直躲着 _____ 巨人走过了他们的藏身之处。'
+    answer: 'until'
+    explanation: '"Until" shows they stayed hidden up to the point when the giant passed.'
+    explanationZh: '"Until"表示他们一直躲着直到巨人走过。'
+    grammarPoint: 'Until + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0457
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ hearing the news, he immediately set off on his quest.'
+    questionZh: '_____ 听到消息，他立刻出发去冒险了。'
+    options:
+      A: 'Until'
+      B: 'Before'
+      C: 'On'
+      D: 'While'
+    answer: 'C'
+    explanation: '"On hearing" means "as soon as he heard" — it shows immediate action.'
+    explanationZh: '"On hearing"意思是"他一听到就"——表示立即行动。'
+    grammarPoint: 'On + -ing (immediate action)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0458
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: 'She counted to ten _____ opening her eyes, afraid of what she might see.'
+    questionZh: '她数到十 _____ 睁开眼睛，害怕看到什么。'
+    answer: 'before'
+    explanation: '"Before" shows the counting happened first, then the eye-opening.'
+    explanationZh: '"Before"表示先数数，然后睁眼。'
+    grammarPoint: 'Before + -ing'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0459
+    type: multiple-choice
+    tags: [time-conjunctions, Q05, difficulty-2]
+    context: storytelling
+    question: '_____ the storm raged outside, the children sat by the fire telling stories.'
+    questionZh: '_____ 外面暴风雨肆虐，孩子们坐在火炉旁讲故事。'
+    options:
+      A: 'Until'
+      B: 'Before'
+      C: 'While'
+      D: 'After'
+    answer: 'C'
+    explanation: '"While" shows two simultaneous actions: the storm raging and the children telling stories.'
+    explanationZh: '"While"表示两个同时进行的动作：暴风雨肆虐和孩子们讲故事。'
+    grammarPoint: 'While + past simple (simultaneous actions)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0460
+    type: fill-blank
+    tags: [time-conjunctions, Q05, difficulty-3]
+    context: storytelling
+    question: '_____ sooner had the music started _____ the floor began to shake.'
+    questionZh: '音乐刚一开始，地板就开始震动。'
+    answer: 'No / than'
+    explanation: '"No sooner had...than" is a formal structure showing two events in rapid succession.'
+    explanationZh: '"No sooner had...than"是一个正式结构，表示两个事件快速连续发生。'
+    grammarPoint: 'No sooner...than'
+    relatedQuest: Q05
+    difficulty: 3
+
+  # ============================================================
+  # G0461-G0480: Direct speech punctuation and formatting
+  # ============================================================
+  - id: G0461
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-1]
+    context: storytelling
+    question: 'Which sentence has correct direct speech punctuation?'
+    questionZh: '哪个句子的直接引语标点是正确的？'
+    options:
+      A: '"Follow me" she said.'
+      B: '"Follow me," she said.'
+      C: '"Follow me", she said.'
+      D: '"Follow me." She said.'
+    answer: 'B'
+    explanation: 'The comma goes INSIDE the speech marks, before the closing quotation mark. The reporting clause ("she said") is part of the same sentence.'
+    explanationZh: '逗号放在引号内，在结束引号之前。引述从句（"she said"）是同一个句子的一部分。'
+    grammarPoint: 'Direct speech: comma inside speech marks'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0462
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-1]
+    context: storytelling
+    question: 'Which sentence is correct?'
+    questionZh: '哪个句子是正确的？'
+    options:
+      A: '"Where are you going," he asked?'
+      B: '"Where are you going?" he asked.'
+      C: '"Where are you going?" He asked.'
+      D: '"Where are you going" he asked?'
+    answer: 'B'
+    explanation: 'Question marks go inside the speech marks. "He asked" continues the same sentence with a lowercase letter.'
+    explanationZh: '问号放在引号内。"He asked"以小写字母继续同一个句子。'
+    grammarPoint: 'Direct speech: question mark inside speech marks'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0463
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-1]
+    context: storytelling
+    question: 'Which sentence is correct?'
+    questionZh: '哪个句子是正确的？'
+    options:
+      A: '"Watch out!" She screamed.'
+      B: '"Watch out"! she screamed.'
+      C: '"Watch out!" she screamed.'
+      D: '"Watch out!", she screamed.'
+    answer: 'C'
+    explanation: 'Exclamation mark goes inside the speech marks. "She" is lowercase because it continues the same sentence.'
+    explanationZh: '感叹号放在引号内。"She"用小写，因为它继续同一个句子。'
+    grammarPoint: 'Direct speech: exclamation mark inside speech marks'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0464
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-1]
+    context: storytelling
+    question: 'Which is the correct way to write this dialogue?'
+    questionZh: '哪种方式是正确的对话写法？'
+    options:
+      A: 'She said, "I will help you."'
+      B: 'She said "I will help you."'
+      C: 'She said: "I will help you".'
+      D: 'She said; "I will help you."'
+    answer: 'A'
+    explanation: 'When the reporting verb comes first, use a comma before the opening speech mark, and a full stop inside the closing speech mark.'
+    explanationZh: '当引述动词在前时，在开头引号前用逗号，句号在结束引号内。'
+    grammarPoint: 'Direct speech: reporting verb first'
+    relatedQuest: Q05
+    difficulty: 1
+
+  - id: G0465
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Add the correct punctuation: ___ Don''t touch that ___ the old man warned ___ It''s dangerous ___'
+    questionZh: '添加正确的标点：___ 别碰那个 ___ 老人警告说 ___ 那很危险 ___'
+    answer: '"Don''t touch that," the old man warned. "It''s dangerous."'
+    explanation: 'Comma after "that" inside speech marks. Full stop after "warned." New speech starts with a capital letter.'
+    explanationZh: '"that"后面的逗号在引号内。"warned"后面用句号。新的引述以大写字母开始。'
+    grammarPoint: 'Direct speech: split dialogue'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0466
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Rewrite with said-alternative: "I saw a ghost in the attic," Tom said (nervously).'
+    questionZh: '用 said 替代词重写："我在阁楼里看到了一个鬼，"Tom 说（紧张地）。'
+    answer: '"I saw a ghost in the attic," Tom stammered.'
+    explanation: '"Stammered" replaces "said nervously" — it shows the character''s nervousness through HOW they speak.'
+    explanationZh: '"Stammered"替代了"said nervously"——它通过说话方式展示角色的紧张。'
+    grammarPoint: 'Said-alternatives'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0467
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Which said-alternative best shows anger?'
+    questionZh: '哪个 said 替代词最能表示愤怒？'
+    options:
+      A: 'whispered'
+      B: 'sighed'
+      C: 'snapped'
+      D: 'murmured'
+    answer: 'C'
+    explanation: '"Snapped" means to speak quickly and angrily — it conveys anger effectively.'
+    explanationZh: '"Snapped"意味着快速而愤怒地说——它有效地传达了愤怒。'
+    grammarPoint: 'Said-alternatives for emotions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0468
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Which said-alternative best shows pride?'
+    questionZh: '哪个 said 替代词最能表示骄傲？'
+    options:
+      A: 'pleaded'
+      B: 'muttered'
+      C: 'stammered'
+      D: 'boasted'
+    answer: 'D'
+    explanation: '"Boasted" means to speak with excessive pride about achievements — perfect for showing a proud character.'
+    explanationZh: '"Boasted"意味着对成就过度自豪地说——非常适合展示骄傲的角色。'
+    grammarPoint: 'Said-alternatives for emotions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0469
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Add correct punctuation: ___ Run ___ she shouted ___ They''re coming ___'
+    questionZh: '添加正确的标点：___ 跑 ___ 她喊道 ___ 他们来了 ___'
+    answer: '"Run!" she shouted. "They''re coming!"'
+    explanation: 'Exclamation mark inside speech marks. Full stop after "shouted." New sentence with capital letter.'
+    explanationZh: '感叹号在引号内。"shouted"后面用句号。新句子用大写字母。'
+    grammarPoint: 'Direct speech punctuation'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0470
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Which is the best way to add action to dialogue?'
+    questionZh: '在对话中添加动作描写的最佳方式是哪个？'
+    options:
+      A: '"I found it," she said happily and was very excited.'
+      B: '"I found it!" She held up the golden key, her eyes shining with excitement.'
+      C: '"I found it," she said. She was happy.'
+      D: '"I found it," she said excitedly and happily.'
+    answer: 'B'
+    explanation: 'B shows the emotion through action (holding up the key) and sensory detail (eyes shining) rather than telling us she was happy.'
+    explanationZh: 'B通过动作（举起钥匙）和感官细节（眼睛闪光）展示情感，而不是告诉我们她很开心。'
+    grammarPoint: 'Action beats in dialogue'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0471
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Choose the best said-alternative: "Please don''t leave me here alone," the child _____ (beg/shout/whisper in a scared way).'
+    questionZh: '选择最佳的 said 替代词："请别把我一个人留在这里，"孩子 _____（恳求/大喊/害怕地低声说）。'
+    answer: 'pleaded'
+    explanation: '"Pleaded" means to beg emotionally — it perfectly conveys the child''s desperate request.'
+    explanationZh: '"Pleaded"意味着带着感情恳求——完美地传达了孩子绝望的请求。'
+    grammarPoint: 'Said-alternatives: pleaded'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0472
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Which sentence correctly shows a new speaker on a new line?'
+    questionZh: '哪个句子正确地在新行显示新说话人？'
+    options:
+      A: '"Let''s go," she said. "OK," he agreed.'
+      B: |
+          "Let's go," she said.
+          "OK," he agreed.
+      C: '"Let''s go," she said, "OK," he agreed.'
+      D: '"Let''s go she said OK he agreed."'
+    answer: 'B'
+    explanation: 'Each new speaker should start on a new line/paragraph. This makes dialogue easier to follow.'
+    explanationZh: '每个新说话人应该在新行/段落开始。这使对话更容易跟读。'
+    grammarPoint: 'New speaker = new paragraph'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0473
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Rewrite with an action beat instead of "said": "I can''t believe it," she said.'
+    questionZh: '用动作描写替代"said"重写："我不敢相信，"她说。'
+    answer: '"I can''t believe it." She pressed her hands against the glass, staring at the treasure inside.'
+    explanation: 'Replacing "she said" with an action (pressing hands, staring) shows emotion through movement rather than a reporting verb.'
+    explanationZh: '用动作（按手、盯着）替代"她说"，通过动作而非引述动词展示情感。'
+    grammarPoint: 'Action beats replacing said'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0474
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: '"I wish I _____ (open) that box," he sighed.'
+    questionZh: '"我希望我当时没有 _____（open）那个盒子，"他叹了口气。'
+    options:
+      A: 'didn''t open'
+      B: 'hadn''t opened'
+      C: 'don''t open'
+      D: 'haven''t opened'
+    answer: 'B'
+    explanation: '"I wish I hadn''t opened" expresses regret about a past action — past perfect after "wish."'
+    explanationZh: '"I wish I hadn''t opened"表达对过去行为的遗憾——"wish"后用过去完成时。'
+    grammarPoint: 'Wish + past perfect (regret in speech)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0475
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Add the correct punctuation: ___ What time does the train leave ___ asked the traveller ___ I need to know immediately ___'
+    questionZh: '添加正确的标点。'
+    answer: '"What time does the train leave?" asked the traveller. "I need to know immediately."'
+    explanation: 'Question mark inside speech marks. "asked" is lowercase. Full stop after "traveller." New statement in new speech marks.'
+    explanationZh: '问号在引号内。"asked"用小写。"traveller"后用句号。新陈述用新引号。'
+    grammarPoint: 'Direct speech: question + reporting verb'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0476
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Choose the best said-alternative for quiet frustration: "This is the third time I have tried," she _____ under her breath.'
+    questionZh: '为安静的挫败感选择最佳 said 替代词："这是我第三次尝试了，"她 _____ 道。'
+    answer: 'muttered'
+    explanation: '"Muttered" means to speak quietly with annoyance — perfect for quiet frustration.'
+    explanationZh: '"Muttered"意味着带着不满小声说——非常适合安静的挫败感。'
+    grammarPoint: 'Said-alternatives: muttered'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0477
+    type: multiple-choice
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Which sentence best shows character through dialogue?'
+    questionZh: '哪个句子最能通过对话展示角色？'
+    options:
+      A: '"I will try," said the brave boy.'
+      B: '"I will try," the boy said bravely.'
+      C: 'The boy squared his shoulders. "I will try."'
+      D: 'The boy was brave and said he would try.'
+    answer: 'C'
+    explanation: 'C shows bravery through action (squaring shoulders) before the dialogue, following the "show, don''t tell" principle.'
+    explanationZh: 'C在对话前通过动作（挺直肩膀）展示勇敢，遵循"展示而非叙述"的原则。'
+    grammarPoint: 'Show don''t tell through dialogue'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0478
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Choose the said-alternative that shows surprise: "You are alive!" the princess _____.'
+    questionZh: '选择表示惊讶的 said 替代词："你还活着！"公主 _____。'
+    answer: 'exclaimed'
+    explanation: '"Exclaimed" means to cry out suddenly in surprise — it matches the exclamation mark in the dialogue.'
+    explanationZh: '"Exclaimed"意味着因惊讶而突然喊出——与对话中的感叹号匹配。'
+    grammarPoint: 'Said-alternatives: exclaimed'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0479
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Add correct punctuation: ___ I know the way ___ she said confidently ___ Just trust me ___'
+    questionZh: '添加正确的标点。'
+    answer: '"I know the way," she said confidently. "Just trust me."'
+    explanation: 'Comma after "way" inside speech marks. Full stop after "confidently." New statement begins with capital.'
+    explanationZh: '"way"后的逗号在引号内。"confidently"后用句号。新陈述以大写开头。'
+    grammarPoint: 'Direct speech: split dialogue with adverb'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0480
+    type: fill-blank
+    tags: [direct-speech, Q05, difficulty-2]
+    context: storytelling
+    question: 'Choose the said-alternative that shows gentle sadness: "I suppose this is goodbye," he _____, looking at the ground.'
+    questionZh: '选择表示温和悲伤的 said 替代词："我想这就是告别了，"他 _____，看着地面。'
+    answer: 'sighed'
+    explanation: '"Sighed" conveys gentle sadness through the breath action — it shows emotion without being dramatic.'
+    explanationZh: '"Sighed"通过呼吸动作传达温和的悲伤——它在不夸张的情况下展示情感。'
+    grammarPoint: 'Said-alternatives: sighed'
+    relatedQuest: Q05
+    difficulty: 2
+
+  # ============================================================
+  # G0481-G0500: Mixed narrative tenses review
+  # ============================================================
+  - id: G0481
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ (walk) home when she _____ (realise) she _____ (forget) her keys at school.'
+    questionZh: '她正在 _____（walk）回家时 _____（realise）她把钥匙 _____（forget）在学校了。'
+    answer: 'was walking / realised / had forgotten'
+    explanation: 'Three tenses working together: past continuous (background), past simple (sudden realisation), past perfect (earlier event).'
+    explanationZh: '三种时态协同工作：过去进行时（背景）、一般过去时（突然意识到）、过去完成时（更早的事件）。'
+    grammarPoint: 'Three narrative tenses combined'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0482
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'The castle _____ (stand) on the hill for centuries. Nobody _____ (ever / enter) it until that stormy night.'
+    questionZh: '城堡在山上 _____（stand）了几个世纪。直到那个暴风雨之夜，没有人 _____（enter）过它。'
+    answer: 'had stood / had ever entered'
+    explanation: 'Both past perfect forms set the backstory before the main narrative begins.'
+    explanationZh: '两个过去完成时形式在主叙述开始之前设定了背景故事。'
+    grammarPoint: 'Past perfect for backstory setting'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0483
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'While the storm _____ (rage) outside, the children _____ (sit) by the fire. Their grandmother _____ (tell) them a story she _____ (hear) as a child.'
+    questionZh: '暴风雨 _____（rage）的同时，孩子们 _____（sit）在火炉旁。他们的祖母给他们讲了一个她小时候 _____（hear）到的故事。'
+    answer: 'was raging / were sitting / told / had heard'
+    explanation: 'Past continuous (scene-setting), past continuous (parallel action), past simple (main action), past perfect (earlier event).'
+    explanationZh: '过去进行时（场景设定）、过去进行时（平行动作）、一般过去时（主要动作）、过去完成时（更早的事件）。'
+    grammarPoint: 'All narrative tenses in one passage'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0484
+    type: multiple-choice
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'By the time the rescue team arrived, the flood _____ most of the village.'
+    questionZh: '到救援队到达时，洪水已经 _____ 了大部分村庄。'
+    options:
+      A: 'destroyed'
+      B: 'had destroyed'
+      C: 'was destroying'
+      D: 'has destroyed'
+    answer: 'B'
+    explanation: '"By the time" + past simple requires past perfect for the event that happened first.'
+    explanationZh: '"By the time" + 一般过去时要求过去完成时表示先发生的事件。'
+    grammarPoint: 'By the time + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0485
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: '"I _____ (never / fly) on a dragon before!" she _____ (exclaim) as they _____ (soar) over the mountains.'
+    questionZh: '"我以前从来没有 _____（fly）过龙！"当他们 _____（soar）越过山脉时，她 _____（exclaim）道。'
+    answer: 'have never flown / exclaimed / soared'
+    explanation: 'Present perfect inside the speech (her current experience), past simple for the reporting verb and the action.'
+    explanationZh: '引述内用现在完成时（她当前的经历），引述动词和动作用一般过去时。'
+    grammarPoint: 'Tenses in and around direct speech'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0486
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-3]
+    context: storytelling
+    question: 'The door _____ (creak) open. Inside, everything _____ (be) exactly as it _____ (be) fifty years ago, as if time _____ (stop).'
+    questionZh: '门 _____（creak）一声开了。里面一切都 _____（be）和五十年前一样，仿佛时间 _____（stop）了。'
+    answer: 'creaked / was / had been / had stopped'
+    explanation: 'Past simple for the action, past simple for the current state, past perfect for the earlier state and the stopped time.'
+    explanationZh: '一般过去时表示动作，一般过去时表示当前状态，过去完成时表示更早的状态和停止的时间。'
+    grammarPoint: 'Mixed narrative tenses'
+    relatedQuest: Q05
+    difficulty: 3
+
+  - id: G0487
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'All of a sudden, the ground _____ (shake). Birds _____ (fly) out of the trees in every direction.'
+    questionZh: '突然间，地面 _____（shake）了。鸟儿 _____（fly）从四面八方的树上飞出。'
+    answer: 'shook / flew'
+    explanation: '"All of a sudden" signals past simple for both rapid events in sequence.'
+    explanationZh: '"All of a sudden"标志着两个快速连续事件都用一般过去时。'
+    grammarPoint: 'Past simple for sudden events'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0488
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'She _____ (just / finish) writing when the ink _____ (begin) to glow. She _____ (never / see) anything like it.'
+    questionZh: '她刚 _____（finish）写完，墨水就开始 _____（glow）了。她从未 _____（see）过这样的事。'
+    answer: 'had just finished / began / had never seen'
+    explanation: 'Past perfect (had just finished) for the completed action, past simple (began) for the new event, past perfect (had never seen) for the backstory.'
+    explanationZh: '过去完成时（had just finished）表示完成的动作，一般过去时（began）表示新事件，过去完成时（had never seen）表示背景。'
+    grammarPoint: 'Mixed narrative tenses'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0489
+    type: multiple-choice
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'Meanwhile, back at the castle, the king _____ nervously in his chamber.'
+    questionZh: '与此同时，在城堡里，国王正在他的房间里紧张地 _____。'
+    options:
+      A: 'paced'
+      B: 'was pacing'
+      C: 'had paced'
+      D: 'paces'
+    answer: 'B'
+    explanation: '"Meanwhile" + past continuous sets a parallel scene happening at the same time as the main action.'
+    explanationZh: '"Meanwhile" + 过去进行时设定了一个与主要动作同时发生的平行场景。'
+    grammarPoint: 'Meanwhile + past continuous'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0490
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-3]
+    context: storytelling
+    question: 'Eventually, she _____ (find) what she _____ (look) for — a tiny golden key that someone _____ (hide) behind the painting centuries ago.'
+    questionZh: '最终，她 _____（find）了她一直 _____（look）的东西——一把几个世纪前被人 _____（hide）在画后面的小金钥匙。'
+    answer: 'found / had been looking / had hidden'
+    explanation: 'Past simple (found) for the main event, past perfect continuous (had been looking) for the ongoing search, past perfect (had hidden) for the ancient hiding.'
+    explanationZh: '一般过去时（found）表示主要事件，过去完成进行时（had been looking）表示持续的搜索，过去完成时（had hidden）表示古老的隐藏。'
+    grammarPoint: 'Three tenses with eventually'
+    relatedQuest: Q05
+    difficulty: 3
+
+  - id: G0491
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: '"Where _____ (you / be)?" she demanded. "I _____ (wait) for two hours!"'
+    questionZh: '"你 _____（be）哪里去了？"她质问道。"我已经 _____（wait）两个小时了！"'
+    answer: 'have you been / have been waiting'
+    explanation: 'Inside direct speech, present perfect (have you been) and present perfect continuous (have been waiting) reflect the character''s present perspective.'
+    explanationZh: '在直接引语中，现在完成时（have you been）和现在完成进行时（have been waiting）反映角色的当前视角。'
+    grammarPoint: 'Tenses inside direct speech'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0492
+    type: multiple-choice
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'To her surprise, the old door _____ open easily, as if it _____ recently.'
+    questionZh: '令她惊讶的是，旧门 _____ 很容易就开了，仿佛它最近 _____。'
+    options:
+      A: 'swung / was oiled'
+      B: 'swung / had been oiled'
+      C: 'was swinging / oiled'
+      D: 'had swung / was oiling'
+    answer: 'B'
+    explanation: 'Past simple (swung) for the action; past perfect passive (had been oiled) for the earlier event explaining why.'
+    explanationZh: '一般过去时（swung）表示动作；过去完成时被动（had been oiled）表示解释原因的更早事件。'
+    grammarPoint: 'Past simple + past perfect passive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0493
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'Gradually, the fog _____ (lift) and the travellers _____ (see) the valley stretching out below them.'
+    questionZh: '渐渐地，雾 _____（lift）了，旅行者们 _____（see）到山谷在他们下方展开。'
+    answer: 'lifted / saw'
+    explanation: '"Gradually" + past simple for the slow change; past simple for the result.'
+    explanationZh: '"Gradually" + 一般过去时表示缓慢变化；一般过去时表示结果。'
+    grammarPoint: 'Gradually + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0494
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'He _____ (clutch) the letter tightly. It _____ (be) the first news he _____ (receive) in months.'
+    questionZh: '他紧紧 _____（clutch）着信。这是他几个月来 _____（receive）到的第一个消息。'
+    answer: 'clutched / was / had received'
+    explanation: 'Past simple for the action and state; past perfect for the time span before.'
+    explanationZh: '一般过去时表示动作和状态；过去完成时表示之前的时间跨度。'
+    grammarPoint: 'Past simple + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0495
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-3]
+    context: storytelling
+    question: 'No sooner _____ (the hero / draw) his sword than the dragon _____ (charge) towards him, breathing fire.'
+    questionZh: '英雄刚 _____（draw）出剑，龙就 _____（charge）向他冲来，喷着火。'
+    answer: 'had the hero drawn / charged'
+    explanation: '"No sooner had...than" with inversion: past perfect (had drawn) + past simple (charged).'
+    explanationZh: '"No sooner had...than"倒装：过去完成时（had drawn）+ 一般过去时（charged）。'
+    grammarPoint: 'No sooner had...than (complex)'
+    relatedQuest: Q05
+    difficulty: 3
+
+  - id: G0496
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'Nevertheless, she _____ (refuse) to give up. She _____ (promise) her brother she would find him, and she _____ (intend) to keep that promise.'
+    questionZh: '然而，她 _____（refuse）放弃。她曾 _____（promise）弟弟她会找到他，她 _____（intend）遵守那个承诺。'
+    answer: 'refused / had promised / intended'
+    explanation: 'Past simple for the current refusal and intention; past perfect for the earlier promise.'
+    explanationZh: '一般过去时表示当前的拒绝和意图；过去完成时表示更早的承诺。'
+    grammarPoint: 'Nevertheless + mixed tenses'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0497
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: 'As the sun _____ (set), the shadows _____ (grow) longer and the temperature _____ (drop).'
+    questionZh: '随着太阳 _____（set），影子 _____（grow）得更长，温度 _____（drop）了。'
+    answer: 'set / grew / dropped'
+    explanation: 'Three past simple verbs in parallel showing simultaneous changes as the sun set.'
+    explanationZh: '三个一般过去时并列，表示太阳落山时同时发生的变化。'
+    grammarPoint: 'Parallel past simple actions'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0498
+    type: multiple-choice
+    tags: [mixed-narrative, Q05, difficulty-3]
+    context: storytelling
+    question: 'By the time dawn broke, they _____ through the forest for eight hours and _____ barely able to stand.'
+    questionZh: '到黎明来临时，他们已经穿过森林 _____ 了八个小时，几乎 _____ 站不住了。'
+    options:
+      A: 'walked / were'
+      B: 'had been walking / were'
+      C: 'were walking / had been'
+      D: 'had walked / had been'
+    answer: 'B'
+    explanation: 'Past perfect continuous (had been walking) for the duration up to dawn; past simple (were) for the resulting state.'
+    explanationZh: '过去完成进行时（had been walking）表示持续到黎明的时间长度；一般过去时（were）表示结果状态。'
+    grammarPoint: 'Past perfect continuous + past simple result'
+    relatedQuest: Q05
+    difficulty: 3
+
+  - id: G0499
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-2]
+    context: storytelling
+    question: '"I _____ (wait) my whole life for this moment," the old woman _____ (whisper), _____ (clutch) the ancient necklace to her chest.'
+    questionZh: '"我 _____（wait）了一辈子等这个时刻，"老妇人 _____（whisper），紧紧 _____（clutch）着古老的项链贴在胸前。'
+    answer: 'have waited / whispered / clutching'
+    explanation: 'Present perfect inside speech (have waited) for life-span, past simple for reporting (whispered), present participle for simultaneous action (clutching).'
+    explanationZh: '引述内用现在完成时（have waited）表示一生，一般过去时用于引述（whispered），现在分词表示同时动作（clutching）。'
+    grammarPoint: 'Complex mixed tenses with speech'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: G0500
+    type: fill-blank
+    tags: [mixed-narrative, Q05, difficulty-3]
+    context: storytelling
+    question: 'All of a sudden, the painting _____ (begin) to glow. The girl _____ (stare) at it in disbelief — the woman in the portrait _____ (smile) at her. It _____ (be) the same face she _____ (see) in her dreams every night for the past year.'
+    questionZh: '突然间，画 _____（begin）发光。女孩 _____（stare）着它难以置信——画中的女人在 _____（smile）她。那 _____（be）她过去一年每晚都在梦中 _____（see）到的同一张脸。'
+    answer: 'began / stared / was smiling / was / had seen'
+    explanation: 'Past simple (began, stared) for sudden events, past continuous (was smiling) for the ongoing image, past simple (was) for identification, past perfect (had seen) for the prior recurring experience.'
+    explanationZh: '一般过去时（began, stared）表示突然事件，过去进行时（was smiling）表示持续的画面，一般过去时（was）表示辨认，过去完成时（had seen）表示之前反复出现的经历。'
+    grammarPoint: 'Full narrative tense mix'
+    relatedQuest: Q05
+    difficulty: 3

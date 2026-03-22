@@ -1,0 +1,562 @@
+category: 'Story Writing — Story Forge: Narrative Craft'
+categoryZh: '故事写作 — 故事锻造坊：叙事技巧'
+tasks:
+  - id: W030
+    type: story
+    title: 'The Sound in the Attic'
+    titleZh: '阁楼里的声音'
+    prompt: 'Your story must begin with this sentence: ''I had always been told never to go into the attic, but that night I heard something up there that I could not ignore.'''
+    promptZh: '你的故事必须以这句话开头：''我一直被告知不要去阁楼，但那天晚上我听到了上面传来的声音，我无法忽视。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the sound — what does it sound like? Use at least two senses.'
+        openingZh: '描述那个声音——它听起来像什么？使用至少两种感官。'
+        development: 'You climb the stairs to the attic. What do you see, hear, and feel on the way up? Build tension.'
+        developmentZh: '你爬楼梯去阁楼。上去的路上你看到、听到、感受到什么？制造紧张感。'
+        climax: 'You open the attic door and discover something unexpected — not dangerous, but surprising.'
+        climaxZh: '你打开阁楼门，发现了意想不到的东西——不是危险的，但令人惊讶。'
+        resolution: 'What do you learn? How does this discovery change how you feel about the attic?'
+        resolutionZh: '你学到了什么？这个发现如何改变你对阁楼的感受？'
+      mustUseWords:
+        - 'creep'
+        - 'glimpse'
+        - 'eerie'
+        - 'relief'
+      mustUseStructure:
+        - 'At least two short sentences in a row for tension'
+        - 'At least one sentence using past perfect (had + past participle)'
+      mustUseStructureZh:
+        - '至少两个连续的短句来制造紧张感'
+        - '至少一个使用过去完成时的句子（had + 过去分词）'
+      rubric:
+        content: 'The story builds suspense effectively before the attic discovery, and the ending gives a satisfying twist or emotional resolution.'
+        contentZh: '故事在阁楼发现之前有效地制造了悬念，结局给出了令人满意的反转或情感解决。'
+        language: 'Uses sensory details to create an eerie atmosphere and correctly uses narrative tenses throughout.'
+        languageZh: '使用感官细节创造阴森的氛围，并在整个叙述中正确使用叙事时态。'
+    selfCheckList:
+      - 'Did I describe the attic sounds using at least two senses?'
+      - 'Did I build tension using short sentences before the climax?'
+      - 'Is the discovery surprising but believable?'
+      - 'Did I use past perfect for backstory?'
+    selfCheckListZh:
+      - '我是否用至少两种感官描述了阁楼的声音？'
+      - '我是否在高潮前用短句制造了紧张感？'
+      - '发现是否令人惊讶但可信？'
+      - '我是否使用了过去完成时来描述背景？'
+    modelAnswer: |
+      I had always been told never to go into the attic, but that night I heard something up there that I could not ignore. It was a soft tapping sound, like fingertips on glass, followed by a low hum that made the ceiling vibrate.
+
+      I crept up the narrow staircase. Each step groaned beneath my weight. The air grew colder. At the top, an eerie glow seeped from under the door. I reached for the handle. My heart was hammering. I pushed the door open.
+
+      Inside, moonlight flooded through a broken skylight I had never known existed. Beneath it sat an old gramophone — the kind my grandmother had described but I had never seen. The wind was turning the disc, producing that strange humming sound. Beside it lay a shoebox filled with letters, tied with a faded ribbon.
+
+      I caught a glimpse of my grandmother's handwriting on the first envelope. They were love letters, written before she married Grandad. A wave of relief washed over me — there was no ghost, just a forgotten piece of family history waiting to be found.
+
+      I carried the box downstairs, smiling. The attic was no longer frightening. It was a treasure chest.
+    modelAnswerZh: |
+      我一直被告知不要去阁楼，但那天晚上我听到了上面传来的声音，我无法忽视。那是一种轻轻的敲击声，像指尖敲在玻璃上，接着是一阵低沉的嗡嗡声，让天花板都在震动。
+
+      我悄悄爬上狭窄的楼梯。每一级都在我脚下吱呀作响。空气越来越冷。在顶部，一道怪异的光从门缝下渗出。我伸手去拿门把手。我的心跳得厉害。我推开了门。
+
+      里面，月光透过一扇我从来不知道存在的破旧天窗倾泻而入。下面放着一台老式留声机——我祖母曾描述过但我从未见过的那种。风在转动唱片，发出那种奇怪的嗡嗡声。旁边放着一个鞋盒，里面装满了信件，用褪色的丝带系着。
+
+      我瞥见了第一个信封上祖母的笔迹。那是情书，写在她嫁给爷爷之前。一阵如释重负的感觉涌上心头——没有鬼，只是一段被遗忘的家族历史在等待被发现。
+
+      我微笑着把盒子带下了楼。阁楼不再令人恐惧。它是一个宝箱。
+
+  - id: W031
+    type: story
+    title: 'The Stranger on the Train'
+    titleZh: '火车上的陌生人'
+    prompt: 'Your story must begin with this sentence: ''The train was almost empty, so when a stranger sat down directly opposite me, I knew something unusual was about to happen.'''
+    promptZh: '你的故事必须以这句话开头：''火车几乎是空的，所以当一个陌生人直接坐在我对面时，我知道不寻常的事情即将发生。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the stranger — what do they look like? What is unusual about them?'
+        openingZh: '描述陌生人——他们长什么样？有什么不寻常的地方？'
+        development: 'The stranger says or does something that draws you into a conversation or situation.'
+        developmentZh: '陌生人说了什么或做了什么，把你卷入了一段对话或一种情况。'
+        climax: 'You discover something surprising — about the stranger, yourself, or the situation.'
+        climaxZh: '你发现了令人惊讶的事——关于陌生人、你自己或这种情况。'
+        resolution: 'The train arrives. What happens as you say goodbye? What have you learned?'
+        resolutionZh: '火车到站了。你告别时发生了什么？你学到了什么？'
+      mustUseWords:
+        - 'intriguing'
+        - 'hesitantly'
+        - 'reveal'
+        - 'meanwhile'
+      mustUseStructure:
+        - 'At least one line of dialogue with correct punctuation'
+        - 'At least one example of foreshadowing'
+      mustUseStructureZh:
+        - '至少一行标点正确的对话'
+        - '至少一个伏笔的例子'
+      rubric:
+        content: 'The story creates a compelling mystery around the stranger and delivers a satisfying revelation at the end.'
+        contentZh: '故事围绕陌生人创造了引人注目的悬疑，并在结尾给出令人满意的揭示。'
+        language: 'Uses dialogue effectively to advance the plot and reveals character through actions and speech.'
+        languageZh: '有效地使用对话推动情节发展，通过行动和言语揭示角色。'
+    selfCheckList:
+      - 'Did I make the stranger intriguing from the very first description?'
+      - 'Does the dialogue sound natural and advance the story?'
+      - 'Is the revelation at the end surprising but fair (foreshadowed earlier)?'
+      - 'Did I show the character''s emotions through actions, not just adjectives?'
+    selfCheckListZh:
+      - '我是否从第一次描述就让陌生人引人注目？'
+      - '对话听起来自然并推动了故事吗？'
+      - '结尾的揭示是否令人惊讶但公平（之前有伏笔）？'
+      - '我是否通过行动而非形容词来展示角色的情感？'
+    modelAnswer: |
+      The train was almost empty, so when a stranger sat down directly opposite me, I knew something unusual was about to happen. She was an old woman with silver hair, wearing a coat covered in tiny embroidered stars — the same stars I had seen in my dreams.
+
+      She placed a small wooden box on the table between us. "I believe this belongs to you," she said softly. I stared at the box. It had my initials carved into the lid.
+
+      "How do you know my name?" I asked hesitantly.
+
+      She smiled. "Open it."
+
+      Inside was a photograph — intriguing and impossible. It showed me standing in a garden I had never visited, next to a woman who looked exactly like her. Meanwhile, the train passed through a tunnel, and when the light returned, the photograph had changed. Now it showed me sitting on this very train.
+
+      "Who are you?" I whispered.
+
+      "Someone who has been waiting to meet you," she replied. The train slowed. She stood up. "Keep the box. You will understand when the time comes."
+
+      She stepped off the train and vanished into the crowd. I looked at the photograph again. In the corner, barely visible, was tomorrow's date. Whatever was about to happen, this was only the beginning.
+    modelAnswerZh: |
+      火车几乎是空的，所以当一个陌生人直接坐在我对面时，我知道不寻常的事情即将发生。她是一位银发老妇人，穿着一件绣满小星星的外套——我在梦中见过同样的星星。
+
+      她把一个小木盒放在我们之间的桌子上。"我相信这是属于你的，"她轻声说。我盯着盒子。盖子上刻着我的名字缩写。
+
+      "你怎么知道我的名字？"我犹豫地问。
+
+      她微笑着。"打开它。"
+
+      里面是一张照片——引人入胜而不可能的。它显示我站在一个我从未去过的花园里，旁边是一个长得和她一模一样的女人。与此同时，火车驶过一条隧道，当光线回来时，照片变了。现在它显示我坐在这趟火车上。
+
+      "你是谁？"我低声说。
+
+      "一个等待见你的人，"她回答。火车减速了。她站了起来。"留着这个盒子。时候到了你就会明白。"
+
+      她下了火车，消失在人群中。我又看了看照片。在角落里，几乎看不见的，是明天的日期。不管即将发生什么，这只是个开始。
+
+  - id: W032
+    type: story
+    title: 'The Map That Led Nowhere'
+    titleZh: '通向虚无的地图'
+    prompt: 'Your story must begin with this sentence: ''I found the map tucked inside an old library book, and from the moment I unfolded it, I could not stop thinking about where it might lead.'''
+    promptZh: '你的故事必须以这句话开头：''我在一本旧图书馆书里找到了这张地图，从我展开它的那一刻起，我就无法停止思考它可能通向哪里。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the map — what does it show? What is unusual about it?'
+        openingZh: '描述地图——它显示什么？有什么不寻常？'
+        development: 'You follow the map. What do you encounter along the way?'
+        developmentZh: '你按照地图走。一路上你遇到了什么？'
+        climax: 'You reach the spot marked X. What you find is not treasure — it is something more meaningful.'
+        climaxZh: '你到达标记X的地点。你找到的不是宝藏——而是更有意义的东西。'
+        resolution: 'What does the discovery teach you? You return the map to the library — for the next person to find.'
+        resolutionZh: '这个发现教会了你什么？你把地图放回图书馆——让下一个人去发现。'
+      mustUseWords:
+        - 'gradually'
+        - 'anticipation'
+        - 'vivid'
+        - 'eventually'
+      mustUseStructure:
+        - 'At least one sentence with a past continuous scene description'
+        - 'A satisfying circular ending that connects to the opening'
+      mustUseStructureZh:
+        - '至少一个用过去进行时描述场景的句子'
+        - '一个与开头呼应的令人满意的循环式结尾'
+      rubric:
+        content: 'The journey is described with vivid sensory details, and the discovery carries emotional meaning.'
+        contentZh: '旅程用生动的感官细节描述，发现具有情感意义。'
+        language: 'Uses B2 narrative connectors (gradually, eventually) smoothly and maintains tense consistency.'
+        languageZh: '流畅地使用B2叙事连接词（gradually, eventually）并保持时态一致。'
+    selfCheckList:
+      - 'Did I describe the journey using at least three senses?'
+      - 'Did I use narrative connectors to link events smoothly?'
+      - 'Is the discovery meaningful, not just a physical object?'
+      - 'Does the ending connect back to the beginning?'
+    selfCheckListZh:
+      - '我是否用至少三种感官描述了旅程？'
+      - '我是否使用了叙事连接词来流畅地连接事件？'
+      - '发现是否有意义，而不仅仅是一个物品？'
+      - '结局是否与开头呼应？'
+    modelAnswer: |
+      I found the map tucked inside an old library book, and from the moment I unfolded it, I could not stop thinking about where it might lead. It was hand-drawn in vivid colours — blue rivers, green hills, and a red X beside a tree labelled "The Listening Oak."
+
+      The next morning, filled with anticipation, I set off. The map led me through streets I had walked a thousand times, but gradually I noticed details I had never seen before — a carved face on a gatepost, a hidden garden behind a wall, a stream running under the pavement.
+
+      Eventually, I reached a park I had never visited. Birds were singing in the ancient trees, and sunlight was filtering through the leaves like golden rain. In the centre stood an enormous oak tree with a hollow at its base. Inside the hollow was a notebook.
+
+      I opened it. On the first page was written: "If you found this, sit beneath the tree and listen. Write what you hear." I sat down, closed my eyes, and listened. Wind. Birds. My own breathing. Gradually, the noise of the city faded completely.
+
+      For the first time in months, my mind was quiet.
+
+      I wrote a single line in the notebook, then tucked the map back inside the library book — ready for the next person who needed to find silence.
+    modelAnswerZh: |
+      我在一本旧图书馆书里找到了这张地图，从我展开它的那一刻起，我就无法停止思考它可能通向哪里。它是用生动的颜色手绘的——蓝色的河流、绿色的山丘，还有一个标着"倾听橡树"的树旁的红色X。
+
+      第二天早上，满怀期待，我出发了。地图带我穿过我走过上千次的街道，但渐渐地我注意到了以前从未见过的细节——门柱上的雕刻面孔、墙后隐藏的花园、人行道下流淌的小溪。
+
+      终于，我到达了一个我从未去过的公园。鸟儿在古老的树上歌唱，阳光穿过树叶像金色的雨。中间矗立着一棵巨大的橡树，底部有一个树洞。树洞里有一本笔记本。
+
+      我打开它。第一页上写着："如果你找到了这个，坐在树下听听。写下你听到的。"我坐下来，闭上眼睛，听。风。鸟。我自己的呼吸。渐渐地，城市的噪音完全消退了。
+
+      几个月来第一次，我的心安静了。
+
+      我在笔记本上写了一行字，然后把地图夹回图书馆的书里——为下一个需要寻找宁静的人准备好。
+
+  - id: W033
+    type: story
+    title: 'The Last Day of Summer'
+    titleZh: '夏天的最后一天'
+    prompt: 'Your story must begin with this sentence: ''On the last day of summer, something happened that I would remember for the rest of my life.'''
+    promptZh: '你的故事必须以这句话开头：''在夏天的最后一天，发生了一件我余生都会记得的事。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Set the scene — describe the last day of summer using all five senses.'
+        openingZh: '设定场景——用五感描述夏天的最后一天。'
+        development: 'Something happens — a new person, a discovery, or a challenge.'
+        developmentZh: '发生了什么——一个新的人、一个发现或一个挑战。'
+        climax: 'The most important or emotional moment of the story.'
+        climaxZh: '故事中最重要或最感动的时刻。'
+        resolution: 'Summer ends. How have you changed? What will you carry into autumn?'
+        resolutionZh: '夏天结束了。你发生了什么变化？你会把什么带进秋天？'
+      mustUseWords:
+        - 'serene'
+        - 'reluctantly'
+        - 'memorable'
+        - 'gradually'
+      mustUseStructure:
+        - 'At least one simile (as...as or like...)'
+        - 'Five-sense description in the opening'
+      mustUseStructureZh:
+        - '至少一个比喻（as...as 或 like...）'
+        - '开头的五感描写'
+      rubric:
+        content: 'The story captures the bittersweet feeling of a season ending and an experience beginning.'
+        contentZh: '故事捕捉了一个季节结束、一段经历开始的苦甜感觉。'
+        language: 'Uses rich sensory language and at least one simile effectively.'
+        languageZh: '有效地使用丰富的感官语言和至少一个比喻。'
+    selfCheckList:
+      - 'Did I create a vivid summer setting using sensory details?'
+      - 'Does the story have a clear emotional arc?'
+      - 'Did I use at least one effective simile?'
+      - 'Does the ending connect to the theme of change and memory?'
+    selfCheckListZh:
+      - '我是否用感官细节创造了生动的夏天场景？'
+      - '故事是否有清晰的情感弧线？'
+      - '我是否使用了至少一个有效的比喻？'
+      - '结局是否与变化和记忆的主题相连？'
+    modelAnswer: |
+      On the last day of summer, something happened that I would remember for the rest of my life. The morning was serene — golden sunlight warmed the grass, the air smelled of cut hay and ripe blackberries, and the lake was as smooth as a mirror.
+
+      I was sitting on the old wooden dock, reluctantly thinking about school starting tomorrow, when a paper boat drifted towards me across the water. Inside was a note: "Look up."
+
+      I looked up. On the opposite bank stood a girl about my age, waving. She shouted something, but the wind carried her words away. I waved back. She pointed at the sky.
+
+      Gradually, I noticed what she was pointing at. Hundreds of monarch butterflies were crossing the lake, their orange wings catching the light like tiny flames. I had never seen anything so beautiful. They were migrating south — leaving summer behind, just like us.
+
+      The girl on the far bank sat down and watched too. We did not speak. We did not need to. We just watched the butterflies until the last one disappeared over the hills.
+
+      When I finally looked across the lake again, she had gone. But that memorable morning taught me something: sometimes the most extraordinary moments are the ones you share in silence with a stranger.
+    modelAnswerZh: |
+      在夏天的最后一天，发生了一件我余生都会记得的事。那天早上很宁静——金色的阳光温暖着草地，空气中弥漫着割过的干草和成熟黑莓的气味，湖面平静如镜。
+
+      我不情愿地坐在旧木码头上，想着明天就要开学了，这时一只纸船从水面漂向我。里面有一张纸条："抬头看。"
+
+      我抬头看。对岸站着一个和我差不多大的女孩，在挥手。她喊了什么，但风把她的话吹走了。我挥手回应。她指向天空。
+
+      渐渐地，我注意到她指着什么。数百只帝王蝶正在穿越湖面，它们橙色的翅膀在阳光下闪耀，像微小的火焰。我从未见过如此美丽的景象。它们正在向南迁徙——和我们一样，告别夏天。
+
+      远岸的女孩也坐下来看。我们没有说话。我们不需要。我们只是看着蝴蝶，直到最后一只消失在山丘后面。
+
+      当我最后再看向湖对岸时，她已经走了。但那个难忘的早晨教会了我一些东西：有时最非凡的时刻是你和一个陌生人在沉默中分享的时刻。
+
+  - id: W034
+    type: story
+    title: 'The Door That Should Not Exist'
+    titleZh: '不该存在的门'
+    prompt: 'Your story must begin with this sentence: ''There had never been a door at the end of the corridor before, but when I arrived at school that Monday morning, there it was.'''
+    promptZh: '你的故事必须以这句话开头：''走廊尽头以前从来没有门，但当我那个星期一早上到学校时，它就在那里。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe the door. Why is it strange? How do others react to it?'
+        openingZh: '描述那扇门。它为什么奇怪？别人如何反应？'
+        development: 'You open it. What is behind it? Create suspense before revealing what is there.'
+        developmentZh: '你打开了它。后面是什么？在揭示之前制造悬念。'
+        climax: 'The discovery behind the door — something unexpected that challenges your understanding.'
+        climaxZh: '门后面的发现——一些出乎意料的、挑战你认知的东西。'
+        resolution: 'You close the door. The next day, it is gone. But something has changed about you.'
+        resolutionZh: '你关上门。第二天，它消失了。但你身上有什么改变了。'
+      mustUseWords:
+        - 'ominous'
+        - 'bewildered'
+        - 'all of a sudden'
+        - 'astonish'
+      mustUseStructure:
+        - 'At least one example of foreshadowing'
+        - 'Use short sentences for the moment you open the door'
+      mustUseStructureZh:
+        - '至少一个伏笔的例子'
+        - '打开门的那一刻使用短句'
+      rubric:
+        content: 'Effective use of foreshadowing and tension-building techniques, with a meaningful resolution.'
+        contentZh: '有效地使用伏笔和制造紧张感的技巧，结局有意义。'
+        language: 'Demonstrates control of narrative tenses and uses varied sentence length for effect.'
+        languageZh: '展示对叙事时态的掌控，使用不同的句子长度来达到效果。'
+    selfCheckList:
+      - 'Did I make the door feel genuinely mysterious?'
+      - 'Did I use short sentences at the moment of maximum tension?'
+      - 'Is there at least one piece of foreshadowing?'
+      - 'Does the resolution give the story meaning beyond the mystery?'
+    selfCheckListZh:
+      - '我是否让门真正感觉神秘？'
+      - '我是否在最紧张的时刻使用了短句？'
+      - '是否有至少一个伏笔？'
+      - '结局是否赋予了故事超越悬疑的意义？'
+    modelAnswer: |
+      There had never been a door at the end of the corridor before, but when I arrived at school that Monday morning, there it was. It was painted deep red — an ominous colour against the white walls — and it had no handle, only a small brass keyhole.
+
+      Nobody else seemed to notice it. I asked my teacher, but she looked bewildered and said, "What door?" I looked again. It was still there. I could feel warmth radiating from behind it, like summer air leaking through a crack.
+
+      At lunchtime, I pressed my hand against the wood. All of a sudden, it swung open.
+
+      Light. Blinding, golden light. I stepped through.
+
+      I was standing in a version of my classroom — but everything was different. The walls were covered in paintings I had made as a child. My old stories hung from the ceiling like paper birds. And sitting at the teacher's desk was a future version of myself, older, smiling, holding a book with my name on the cover.
+
+      She looked up. "Keep writing," she said. "It will be worth it."
+
+      The door closed behind me. I was back in the corridor. The door was gone. But her words astonished me — and I have never stopped writing since.
+    modelAnswerZh: |
+      走廊尽头以前从来没有门，但当我那个星期一早上到学校时，它就在那里。它被漆成深红色——在白色墙壁上显得不祥——没有把手，只有一个小小的黄铜钥匙孔。
+
+      其他人似乎都没注意到它。我问老师，但她困惑地说："什么门？"我又看了看。它还在那里。我能感觉到它后面散发出温暖，像夏天的空气从缝隙中漏出来。
+
+      午饭时间，我把手按在木头上。突然间，它开了。
+
+      光。炫目的，金色的光。我走了进去。
+
+      我站在一个版本的教室里——但一切都不同了。墙上贴满了我小时候画的画。我的旧故事像纸鸟一样挂在天花板上。坐在讲台后面的是一个未来版本的我，更大了，微笑着，手里拿着一本封面上有我名字的书。
+
+      她抬起头。"继续写下去，"她说。"这会值得的。"
+
+      门在我身后关上了。我回到了走廊。门消失了。但她的话让我震惊——从那以后我再也没有停止写作。
+
+  - id: W035
+    type: story
+    title: 'A Wish Gone Wrong'
+    titleZh: '许错了的愿望'
+    prompt: 'Your story must begin with this sentence: ''Be careful what you wish for — that was what my grandmother always said, and I finally understood why.'''
+    promptZh: '你的故事必须以这句话开头：''小心你许的愿望——这是我奶奶总是说的话，我终于明白了为什么。'''
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'What wish did you make? To whom or what did you make it?'
+        openingZh: '你许了什么愿望？向谁或什么许的？'
+        development: 'The wish comes true — but not in the way you expected.'
+        developmentZh: '愿望实现了——但不是你预期的方式。'
+        climax: 'The consequences of the wish cause a serious problem.'
+        climaxZh: '愿望的后果造成了严重的问题。'
+        resolution: 'You find a way to undo or accept the wish. What lesson do you learn?'
+        resolutionZh: '你找到了撤销或接受愿望的方法。你学到了什么教训？'
+      mustUseWords:
+        - 'desperately'
+        - 'regret'
+        - 'consequences'
+        - 'nevertheless'
+      mustUseStructure:
+        - 'At least one sentence using "if only" + past perfect'
+        - 'Show character emotion through body language, not adjectives'
+      mustUseStructureZh:
+        - '至少一个使用"if only" + 过去完成时的句子'
+        - '通过肢体语言而非形容词展示角色情感'
+      rubric:
+        content: 'The wish and its consequences are creative and believable, with a clear moral lesson.'
+        contentZh: '愿望及其后果富有创意且可信，有清晰的道德教训。'
+        language: 'Shows effective use of narrative tenses including past perfect for regret.'
+        languageZh: '展示了叙事时态的有效使用，包括用过去完成时表达遗憾。'
+    selfCheckList:
+      - 'Is the wish specific and clearly stated?'
+      - 'Are the consequences unexpected but logical?'
+      - 'Did I use "if only" to show regret?'
+      - 'Does the ending carry a meaningful lesson?'
+    selfCheckListZh:
+      - '愿望是否具体且清楚地表达了？'
+      - '后果是否出乎意料但合乎逻辑？'
+      - '我是否使用了"if only"来表示遗憾？'
+      - '结局是否带有有意义的教训？'
+    modelAnswer: |
+      Be careful what you wish for — that was what my grandmother always said, and I finally understood why. It started when I found a golden coin in the park and wished I could read everyone's thoughts.
+
+      The next morning, it happened. In the classroom, I could hear every thought around me — every worry, every secret, every unkind opinion. My best friend was thinking that my new haircut looked strange. My teacher was worrying about her sick cat. A boy in the corner was desperately hoping nobody would notice he had been crying.
+
+      By lunchtime, the noise was unbearable. I pressed my hands against my ears, but the thoughts kept flooding in. If only I had never made that wish.
+
+      Nevertheless, something unexpected happened. I walked over to the crying boy and sat beside him. "Are you OK?" I asked. His face crumpled with relief. Nobody else had noticed. We talked for the whole lunch break.
+
+      That evening, I held the coin and wished to be normal again. The voices stopped. But the consequences of my wish had taught me something I would never forget: you do not need to read minds to understand people — you just need to pay attention.
+    modelAnswerZh: |
+      小心你许的愿望——这是我奶奶总是说的话，我终于明白了为什么。一切始于我在公园里找到一枚金币，许愿能读懂每个人的想法。
+
+      第二天早上，它实现了。在教室里，我能听到周围每个人的想法——每个担忧、每个秘密、每个不友好的看法。我最好的朋友在想我的新发型看起来很奇怪。我的老师在担心她生病的猫。角落里一个男孩拼命希望没有人注意到他哭过。
+
+      到午饭时间，噪音已经无法忍受。我用手捂住耳朵，但想法不断涌入。要是我从来没有许过那个愿望就好了。
+
+      然而，意想不到的事情发生了。我走到那个哭泣的男孩旁边坐下。"你还好吗？"我问。他的脸上露出如释重负的表情。其他人都没有注意到。我们聊了整个午休时间。
+
+      那天晚上，我握着金币许愿恢复正常。声音停了。但愿望的后果教会了我一些我永远不会忘记的东西：你不需要读心术来理解别人——你只需要留心。
+
+  - id: W036
+    type: story
+    title: 'The Rescue'
+    titleZh: '营救'
+    prompt: 'Your story must begin with this sentence: ''I had exactly ten minutes to save them, and the clock was already ticking.'''
+    promptZh: '你的故事必须以这句话开头：''我恰好有十分钟来救他们，时钟已经开始倒计时了。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Who needs saving? What is the danger? The ticking clock creates immediate tension.'
+        openingZh: '谁需要被救？危险是什么？倒计时立即制造了紧张感。'
+        development: 'Your first attempt fails. Obstacles appear. Time is running out.'
+        developmentZh: '你的第一次尝试失败了。障碍出现了。时间在流逝。'
+        climax: 'With seconds to spare, you find a creative solution.'
+        climaxZh: '在最后几秒，你找到了一个创造性的解决方案。'
+        resolution: 'The rescue succeeds. What does the experience teach you about yourself?'
+        resolutionZh: '营救成功了。这次经历教会了你关于自己什么？'
+      mustUseWords:
+        - 'desperately'
+        - 'triumphantly'
+        - 'shatter'
+        - 'on the verge of'
+      mustUseStructure:
+        - 'Use short sentences throughout the rescue scene'
+        - 'Include a ticking-clock countdown (mention time remaining)'
+      mustUseStructureZh:
+        - '在整个营救场景中使用短句'
+        - '包含倒计时（提及剩余时间）'
+      rubric:
+        content: 'Creates genuine urgency through pacing and the ticking clock, with a creative solution.'
+        contentZh: '通过节奏和倒计时创造真正的紧迫感，有创造性的解决方案。'
+        language: 'Effectively varies sentence length — short for action, longer for reflection.'
+        languageZh: '有效地变化句子长度——动作场景用短句，反思时用长句。'
+    selfCheckList:
+      - 'Did I mention the time remaining at least twice?'
+      - 'Did I use short sentences during the most tense moments?'
+      - 'Is the solution creative, not obvious?'
+      - 'Did the character learn something about themselves?'
+    selfCheckListZh:
+      - '我是否至少两次提到了剩余时间？'
+      - '我是否在最紧张的时刻使用了短句？'
+      - '解决方案是否有创意，不是显而易见的？'
+      - '角色是否学到了关于自己的东西？'
+    modelAnswer: |
+      I had exactly ten minutes to save them, and the clock was already ticking. The river had risen after the storm, and two small foxes were trapped on a rock in the middle, the water swirling around them.
+
+      Seven minutes. I desperately searched for something to reach them with. A fallen branch — too short. A rope from Dad's shed — too far away. The water was rising fast.
+
+      Five minutes. I was on the verge of giving up when I spotted the old wooden gate leaning against the fence. It was long enough to reach the rock. I dragged it to the riverbank and slid it across the water like a bridge.
+
+      Three minutes. The gate held. I crawled across on my hands and knees, the river roaring beneath me. The foxes trembled but did not run. I scooped them into my jacket.
+
+      One minute. I crawled back. The gate cracked. I threw myself onto the bank just as the wood shattered and was swept away.
+
+      Safe. I opened my jacket. Two pairs of bright eyes blinked up at me. I smiled triumphantly, my heart still pounding. I had never felt so alive — or so grateful for a broken gate.
+    modelAnswerZh: |
+      我恰好有十分钟来救他们，时钟已经开始倒计时了。暴风雨过后河水上涨了，两只小狐狸被困在中间的一块岩石上，水在它们周围打旋。
+
+      七分钟。我拼命寻找能够到它们的东西。一根倒下的树枝——太短了。爸爸棚里的绳子——太远了。水在迅速上涨。
+
+      五分钟。我即将放弃时，看到了靠在围栏上的旧木门。它够长，能到达岩石。我把它拖到河岸，像桥一样滑过水面。
+
+      三分钟。木门撑住了。我用手和膝盖爬过去，河水在下面咆哮。狐狸们颤抖着但没有跑。我把它们捧进了我的夹克。
+
+      一分钟。我爬了回来。木门裂了。我扑到岸上的同时，木头碎裂被冲走了。
+
+      安全了。我打开夹克。两双明亮的眼睛眨着看我。我得意洋洋地笑了，心跳还在砰砰作响。我从未感觉如此有活力——或如此感激一扇破木门。
+
+  - id: W037
+    type: story
+    title: 'The Storyteller'
+    titleZh: '讲故事的人'
+    prompt: 'Your story must begin with this sentence: ''My grandfather was the best storyteller I ever knew, and the last story he told me changed everything.'''
+    promptZh: '你的故事必须以这句话开头：''我爷爷是我认识的最好的讲故事的人，他给我讲的最后一个故事改变了一切。'''
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q05
+    scaffold:
+      storyMap:
+        opening: 'Describe your grandfather as a storyteller — show, don''t tell.'
+        openingZh: '描述你爷爷作为一个讲故事的人——展示，不要叙述。'
+        development: 'He tells you a story. What is the story about?'
+        developmentZh: '他给你讲了一个故事。故事讲的是什么？'
+        climax: 'You realise the story is actually about him — or about you.'
+        climaxZh: '你意识到故事其实是关于他的——或者关于你的。'
+        resolution: 'How does this story change how you see the world? This is a "story within a story."'
+        resolutionZh: '这个故事如何改变了你看世界的方式？这是一个"故事中的故事"。'
+      mustUseWords:
+        - 'captivating'
+        - 'nostalgic'
+        - 'gradually'
+        - 'inspire'
+      mustUseStructure:
+        - 'Use direct speech to include part of the grandfather''s story'
+        - 'Show emotion through body language in at least two places'
+      mustUseStructureZh:
+        - '使用直接引语包含爷爷故事的一部分'
+        - '在至少两个地方通过肢体语言展示情感'
+      rubric:
+        content: 'The story-within-a-story structure works effectively, and the emotional impact is genuine.'
+        contentZh: '故事中的故事结构有效运作，情感影响是真实的。'
+        language: 'Handles direct speech correctly and uses B2 vocabulary naturally.'
+        languageZh: '正确处理直接引语，自然使用B2词汇。'
+    selfCheckList:
+      - 'Did I show grandfather''s storytelling talent through description, not just stating it?'
+      - 'Is the inner story clear and meaningful?'
+      - 'Did the revelation create a genuine emotional impact?'
+      - 'Does the ending show how the narrator was changed?'
+    selfCheckListZh:
+      - '我是否通过描写展示了爷爷的讲故事才能，而不仅仅是说出来？'
+      - '内部故事是否清晰且有意义？'
+      - '揭示是否产生了真实的情感影响？'
+      - '结局是否展示了叙述者如何被改变？'
+    modelAnswer: |
+      My grandfather was the best storyteller I ever knew, and the last story he told me changed everything. When he spoke, his eyes sparkled and his hands danced through the air, painting pictures that only he could see. His stories were always captivating — I could listen for hours.
+
+      One autumn evening, he leaned forward in his chair and said, "Let me tell you about a boy who was afraid to try." His voice was soft, almost nostalgic. "This boy loved to draw, but he hid his sketchbook because he thought his pictures were not good enough. One day, a teacher found the sketchbook and said, 'These are wonderful. Why do you hide them?' The boy said, 'Because I am afraid people will laugh.'"
+
+      Gradually, I realised the story was familiar. The teacher's words, the hidden sketchbook — these were details from my own life. The boy in the story was me.
+
+      Grandfather placed his hand on mine. "The teacher was right," he said quietly. "You have a gift. Do not hide it because you are afraid."
+
+      His words inspired me in a way no other advice ever had. I went home, took out my sketchbook, and showed my drawings to my family for the very first time.
+    modelAnswerZh: |
+      我爷爷是我认识的最好的讲故事的人，他给我讲的最后一个故事改变了一切。当他说话时，他的眼睛闪闪发光，双手在空中舞动，描绘着只有他才能看到的画面。他的故事总是令人着迷——我可以听上好几个小时。
+
+      一个秋天的傍晚，他在椅子上向前倾身说："让我给你讲一个害怕尝试的男孩的故事。"他的声音轻柔，几乎带着怀旧。"这个男孩喜欢画画，但他把素描本藏起来，因为他觉得自己的画不够好。有一天，一位老师发现了素描本说：'这些很棒。你为什么要藏起来？'男孩说：'因为我害怕别人笑话。'"
+
+      渐渐地，我意识到这个故事很熟悉。老师的话，隐藏的素描本——这些都是我自己生活中的细节。故事里的男孩就是我。
+
+      爷爷把手放在我的手上。"老师说得对，"他轻声说。"你有天赋。不要因为害怕就把它藏起来。"
+
+      他的话以任何其他建议都无法做到的方式激励了我。我回家拿出素描本，第一次向家人展示了我的画。

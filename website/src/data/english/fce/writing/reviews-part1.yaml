@@ -1,0 +1,455 @@
+category: 'Review Writing'
+categoryZh: '评论写作'
+tasks:
+  - id: W038
+    type: review
+    title: 'A Book About Animals'
+    titleZh: '一本关于动物的书'
+    prompt: 'You recently read a book about animals or nature that you really enjoyed. Write a review of the book for your school magazine. Include information about what the book is about, what you liked most, and whether you would recommend it.'
+    promptZh: '你最近读了一本非常喜欢的关于动物或自然的书。为校刊写一篇书评。包括书的内容、你最喜欢的部分，以及你是否推荐它。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the book and author. Say when/where you read it. Give a one-sentence overall opinion.'
+        introductionZh: '书名和作者。你在什么时候/哪里读的。用一句话给出总体评价。'
+        summary: 'Briefly describe what the book is about (2-3 sentences). Do not give away the ending!'
+        summaryZh: '简要描述书的内容（2-3句）。不要透露结局！'
+        opinion: 'Say what you liked most and why. Give a specific example from the book.'
+        opinionZh: '说你最喜欢什么以及为什么。从书中举一个具体的例子。'
+        recommendation: 'Who would enjoy this book? Would you recommend it? End with a strong final sentence.'
+        recommendationZh: '谁会喜欢这本书？你会推荐吗？以一个有力的结尾句收尾。'
+      mustUseWords:
+        - 'recommend'
+        - 'fascinating'
+        - 'furthermore'
+      mustUseStructure:
+        - 'At least one comparative or superlative sentence'
+        - 'Four clear paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个比较级或最高级句子'
+        - '四个清晰的段落：引言、概要、评价、推荐'
+      rubric:
+        content: 'The review covers all four sections and gives the reader enough information to decide whether to read the book.'
+        contentZh: '评论涵盖了所有四个部分，给读者足够的信息来决定是否阅读这本书。'
+        language: 'Uses a mix of positive adjectives and connectors to create a balanced, engaging review.'
+        languageZh: '使用正面形容词和连接词的组合来创造一篇平衡、引人入胜的评论。'
+    selfCheckList:
+      - 'Did I name the book and author clearly?'
+      - 'Did I describe what the book is about without spoiling the ending?'
+      - 'Did I explain what I liked and give a specific example?'
+      - 'Did I say who would enjoy this book?'
+    selfCheckListZh:
+      - '我是否清楚地提到了书名和作者？'
+      - '我是否在不剧透的情况下描述了书的内容？'
+      - '我是否解释了我喜欢什么并给出了具体例子？'
+      - '我是否说了谁会喜欢这本书？'
+    modelAnswer: |
+      I recently read "The One and Only Ivan" by Katherine Applegate, and it is one of the most fascinating books I have ever read. I found it in our school library and finished it in just three days.
+
+      The book tells the story of Ivan, a silverback gorilla who lives in a cage at a shopping mall. He has been there for 27 years and has almost forgotten what it feels like to be free. When a baby elephant named Ruby arrives at the mall, Ivan decides he must find a way to give her a better life.
+
+      What I liked most was how the author writes from Ivan's perspective. You can feel his loneliness, his memories of the jungle, and his love for his friends. Furthermore, the illustrations by Patricia Castelao are beautiful and help bring the characters to life. The most moving part is when Ivan creates a painting that changes everything.
+
+      I would strongly recommend this book to anyone who loves animals. It is suitable for readers aged 8 and above. If you enjoy stories about friendship and courage, this is the perfect book for you. It will make you laugh, cry, and think about how we treat animals in captivity.
+    modelAnswerZh: |
+      我最近读了 Katherine Applegate 的《独一无二的伊万》，这是我读过的最引人入胜的书之一。我在学校图书馆找到了它，仅用三天就读完了。
+
+      这本书讲述了伊万的故事，一只银背大猩猩，住在商场的笼子里。他已经在那里27年了，几乎忘记了自由的感觉。当一只叫 Ruby 的小象来到商场时，伊万决定他必须找到一种方法给她更好的生活。
+
+      我最喜欢的是作者从伊万的视角写作。你能感受到他的孤独、他对丛林的记忆和他对朋友的爱。此外，Patricia Castelao 的插图很美，帮助人物栩栩如生。最感人的部分是伊万创作了一幅改变一切的画。
+
+      我强烈推荐这本书给任何喜欢动物的人。它适合8岁及以上的读者。如果你喜欢关于友谊和勇气的故事，这本书最适合你。它会让你笑、让你哭，并让你思考我们如何对待圈养动物。
+
+  - id: W039
+    type: review
+    title: 'A Nature Documentary'
+    titleZh: '一部自然纪录片'
+    prompt: 'You recently watched an amazing nature documentary. Write a review for a website that recommends shows for kids. Say what it was about, what made it special, and who should watch it.'
+    promptZh: '你最近看了一部令人惊叹的自然纪录片。为一个推荐儿童节目的网站写一篇评论。说说它讲什么、它的特别之处，以及谁应该看它。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the documentary and where you watched it. Give your overall impression.'
+        introductionZh: '纪录片的名字和你在哪里看的。给出你的总体印象。'
+        summary: 'What animals, places, or topics does it cover? Describe one amazing scene.'
+        summaryZh: '它涵盖了哪些动物、地方或话题？描述一个令人惊叹的场景。'
+        opinion: 'What makes it better than other nature shows? Camera work? Music? Narrator?'
+        opinionZh: '什么使它比其他自然节目更好？摄影？音乐？解说员？'
+        recommendation: 'What age group is it best for? Any warnings (scary parts)?'
+        recommendationZh: '最适合什么年龄段？有没有需要提醒的（恐怖的部分）？'
+      mustUseWords:
+        - 'spectacular'
+        - 'moreover'
+        - 'recommend'
+      mustUseStructure:
+        - 'At least one superlative sentence (e.g., "the most... I have ever seen")'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个最高级句子（如"我见过的最……"）'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I name the documentary and say where to watch it?'
+      - 'Did I describe at least one specific scene?'
+      - 'Did I explain what makes this show special?'
+      - 'Did I say who should watch it?'
+    selfCheckListZh:
+      - '我是否提到了纪录片的名字和在哪里看？'
+      - '我是否描述了至少一个具体场景？'
+      - '我是否解释了这个节目的特别之处？'
+      - '我是否说了谁应该看它？'
+    modelAnswer: |
+      I recently watched "Our Planet" on Netflix, narrated by Sir David Attenborough. It is the most spectacular nature documentary I have ever seen, and I want to tell you why every young person should watch it.
+
+      The documentary covers ecosystems from the frozen Arctic to the deepest oceans. Each episode focuses on a different habitat and the animals that live there. One scene I will never forget shows a baby flamingo trying to walk across a salt lake with heavy salt crystals stuck to its legs. It is both heartbreaking and inspiring when it finally reaches its family.
+
+      What makes "Our Planet" better than other nature shows is the incredible camera work. The team spent four years filming in 50 countries. Moreover, the music is breathtaking and perfectly matches each scene. Attenborough's calm, wise voice makes even complicated science easy to understand.
+
+      I would recommend "Our Planet" to viewers aged 7 and above. Some scenes showing predators hunting may be a little scary for very young children, but they are not too graphic. If you care about animals and want to understand why protecting nature matters, this is a must-watch.
+    modelAnswerZh: |
+      我最近在 Netflix 上看了由 David Attenborough 爵士解说的《我们的星球》。这是我看过的最壮观的自然纪录片，我想告诉你为什么每个年轻人都应该看它。
+
+      这部纪录片涵盖了从冰冻的北极到最深海洋的生态系统。每一集聚焦于一个不同的栖息地和生活在那里的动物。有一个我永远不会忘记的场景：一只小火烈鸟试图走过盐湖，沉重的盐晶体粘在它的腿上。当它最终到达家人身边时，既令人心碎又令人振奋。
+
+      使《我们的星球》比其他自然节目更好的是令人难以置信的摄影。团队花了四年时间在50个国家拍摄。此外，音乐令人惊叹，完美地配合每个场景。Attenborough 平静、睿智的声音使即使复杂的科学也易于理解。
+
+      我会向7岁及以上的观众推荐《我们的星球》。一些展示捕食者狩猎的场景对年幼的孩子可能有点吓人，但不会太过分。如果你关心动物并想了解为什么保护自然很重要，这是必看的。
+
+  - id: W040
+    type: review
+    title: 'A Science Game or App'
+    titleZh: '一个科学游戏或应用'
+    prompt: 'You have been playing a science-themed game or app that you find really fun and educational. Write a review telling other kids about it.'
+    promptZh: '你一直在玩一个你觉得既有趣又有教育意义的科学主题游戏或应用。写一篇评论告诉其他孩子。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the game/app, the platform, and whether it is free or paid.'
+        introductionZh: '游戏/应用的名字、平台，以及是免费还是付费。'
+        summary: 'What do you do in the game? What is the goal? Describe the gameplay.'
+        summaryZh: '你在游戏中做什么？目标是什么？描述游戏玩法。'
+        opinion: 'What makes it fun? What did you learn from it? Any downsides?'
+        opinionZh: '什么让它有趣？你从中学到了什么？有什么不足吗？'
+        recommendation: 'Who would enjoy it? Is it easy enough for beginners?'
+        recommendationZh: '谁会喜欢它？对初学者来说够简单吗？'
+      mustUseWords:
+        - 'educational'
+        - 'however'
+        - 'recommend'
+      mustUseStructure:
+        - 'At least one sentence using "not only... but also"'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个使用"not only... but also"的句子'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I clearly explain what the game/app is about?'
+      - 'Did I mention both positive points and any weaknesses?'
+      - 'Did I explain what makes it educational?'
+      - 'Did I say who it is suitable for?'
+    selfCheckListZh:
+      - '我是否清楚地解释了游戏/应用是关于什么的？'
+      - '我是否提到了优点和不足？'
+      - '我是否解释了它的教育价值？'
+      - '我是否说了它适合谁？'
+    modelAnswer: |
+      Have you ever wanted to build your own wildlife reserve? "Ecosim" is a free science game available on tablets and computers that lets you do exactly that. I have been playing it for two months, and I cannot stop!
+
+      In the game, you create and manage a virtual ecosystem. You choose which animals and plants to introduce, and then watch how they interact. If you add too many predators, the prey animals disappear. If you cut down too many trees, soil erosion destroys your rivers. The goal is to create a balanced ecosystem that can survive for 100 years.
+
+      What I love about Ecosim is that it is not only entertaining but also incredibly educational. I learned about food chains, biodiversity, and climate effects without even realising I was studying. However, I should mention that the game can be a little slow at the beginning before you unlock more species.
+
+      I would recommend Ecosim to anyone aged 8 and above who is interested in nature and science. The controls are simple enough for beginners, but the strategy becomes more challenging as you progress. If you enjoy building games and care about the environment, this is the perfect app for you.
+    modelAnswerZh: |
+      你想过建立自己的野生动物保护区吗？"Ecosim"是一款免费的科学游戏，在平板电脑和电脑上都可以玩，让你真正做到这一点。我已经玩了两个月，停不下来！
+
+      在游戏中，你创建和管理一个虚拟生态系统。你选择引入哪些动物和植物，然后观察它们如何互动。如果你添加太多捕食者，猎物动物就会消失。如果你砍伐太多树木，土壤侵蚀会破坏你的河流。目标是创建一个可以存活100年的平衡生态系统。
+
+      我喜欢 Ecosim 的原因是它不仅有趣，而且非常有教育意义。我在不知不觉中学会了食物链、生物多样性和气候影响。不过，我应该提一下，在你解锁更多物种之前，游戏开始时可能会有点慢。
+
+      我会向任何8岁及以上对自然和科学感兴趣的人推荐 Ecosim。控制对初学者来说足够简单，但随着进度推进策略变得更具挑战性。如果你喜欢建设类游戏并关心环境，这是最适合你的应用。
+
+  - id: W041
+    type: review
+    title: 'A Place You Visited'
+    titleZh: '你去过的一个地方'
+    prompt: 'You recently visited a zoo, aquarium, nature reserve, or science museum. Write a review for a travel website to help other families decide whether to visit.'
+    promptZh: '你最近参观了一个动物园、水族馆、自然保护区或科学博物馆。为一个旅游网站写一篇评论，帮助其他家庭决定是否去参观。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the place, where it is, and when you visited.'
+        introductionZh: '地点名称、位置和你什么时候去的。'
+        summary: 'What can visitors see and do there? Describe the highlights.'
+        summaryZh: '游客可以看到和做什么？描述亮点。'
+        opinion: 'What was the best part? Was anything disappointing?'
+        opinionZh: '最好的部分是什么？有什么令人失望的吗？'
+        recommendation: 'Who would enjoy it most? Any practical tips (best time to visit, what to bring)?'
+        recommendationZh: '谁最会喜欢它？有没有实用建议（最佳参观时间、带什么）？'
+      mustUseWords:
+        - 'impressive'
+        - 'nevertheless'
+        - 'highly recommend'
+      mustUseStructure:
+        - 'At least one conditional sentence (If you visit... you will...)'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个条件句（如果你去……你会……）'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I give enough information for someone to plan a visit?'
+      - 'Did I describe specific things I saw or did?'
+      - 'Did I mention both good and less good points?'
+      - 'Did I include practical tips for other visitors?'
+    selfCheckListZh:
+      - '我是否提供了足够的信息让别人能计划一次参观？'
+      - '我是否描述了我看到或做过的具体事情？'
+      - '我是否提到了优点和不太好的方面？'
+      - '我是否包含了给其他游客的实用建议？'
+    modelAnswer: |
+      Last month, my family visited the Beijing Aquarium, which is located inside the Beijing Zoo. It was one of the most impressive places I have ever been to, and I want to share my experience.
+
+      The aquarium has several large zones, including a coral reef tunnel where you walk underneath a glass ceiling with sharks, rays, and colourful fish swimming above your head. There is also a touch pool where children can gently touch starfish and sea cucumbers. The dolphin and sea lion shows are entertaining and educational — the trainers explain how these animals are cared for.
+
+      The best part for me was the jellyfish gallery, where hundreds of glowing jellyfish floated in dark tanks lit by coloured lights. It felt like being in another world. Nevertheless, I was slightly disappointed that some of the smaller tanks looked old and needed better lighting.
+
+      I would highly recommend the Beijing Aquarium for families with children of any age. If you visit on a weekday morning, you will avoid the crowds. Bring a camera — the photo opportunities are amazing. Allow at least three hours for the full experience. It is definitely worth the visit!
+    modelAnswerZh: |
+      上个月，我的家人参观了位于北京动物园内的北京海洋馆。这是我去过的最令人印象深刻的地方之一，我想分享我的经历。
+
+      海洋馆有几个大区域，包括一个珊瑚礁隧道，你走在玻璃天花板下面，鲨鱼、魟鱼和彩色鱼在你头顶上游来游去。还有一个触摸池，孩子们可以轻轻触摸海星和海参。海豚和海狮表演既有趣又有教育意义——训练员解释了如何照顾这些动物。
+
+      对我来说最好的部分是水母画廊，数百只发光的水母在被彩色灯光照亮的黑暗水箱中漂浮。感觉像在另一个世界。然而，我有点失望的是一些较小的水箱看起来老旧，需要更好的照明。
+
+      我强烈推荐北京海洋馆给有任何年龄孩子的家庭。如果你在工作日上午去，可以避开人群。带上相机——拍照机会很棒。留出至少三个小时来完整体验。绝对值得一去！
+
+  - id: W042
+    type: review
+    title: 'A Movie About Nature'
+    titleZh: '一部关于自然的电影'
+    prompt: 'Write a review of a movie about nature, animals, or the environment for your class blog. It can be animated or live-action.'
+    promptZh: '为你的班级博客写一篇关于自然、动物或环境的电影评论。可以是动画片或真人电影。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the movie, director, and year. Give a one-line rating.'
+        introductionZh: '电影名、导演和年份。给出一句话评分。'
+        summary: 'What happens in the movie? Describe the plot briefly.'
+        summaryZh: '电影讲了什么？简要描述情节。'
+        opinion: 'Best scenes, acting/animation quality, music, message.'
+        opinionZh: '最好的场景、表演/动画质量、音乐、主题。'
+        recommendation: 'Rating out of 5 stars and who it is perfect for.'
+        recommendationZh: '五星评分和它最适合谁。'
+      mustUseWords:
+        - 'outstanding'
+        - 'in addition'
+        - 'would recommend'
+      mustUseStructure:
+        - 'At least one passive sentence'
+        - 'Four paragraphs following the review structure'
+      mustUseStructureZh:
+        - '至少一个被动语态句子'
+        - '四个段落遵循评论结构'
+    selfCheckList:
+      - 'Did I clearly name the movie and give basic information?'
+      - 'Did I describe the plot without giving away the ending?'
+      - 'Did I explain what I liked about the movie specifically?'
+      - 'Did I give a clear recommendation and rating?'
+    selfCheckListZh:
+      - '我是否清楚地提到了电影名并给出了基本信息？'
+      - '我是否在不剧透的情况下描述了情节？'
+      - '我是否具体解释了我喜欢电影的什么？'
+      - '我是否给出了明确的推荐和评分？'
+    modelAnswer: |
+      "WALL-E" (2008), directed by Andrew Stanton, is an outstanding animated movie that I would give five out of five stars. It is one of the best films ever made about the environment.
+
+      The movie is set in the future, when Earth has been abandoned by humans because it was covered in rubbish. A small robot called WALL-E is left behind to clean up the mess. He has been working alone for 700 years. One day, a sleek robot named EVE arrives from space, and WALL-E falls in love with her. Together, they go on an adventure that could change the future of humanity.
+
+      What makes WALL-E outstanding is that the first 30 minutes have almost no dialogue — yet you feel everything WALL-E feels. The animation, created by Pixar, is breathtaking. In addition, the movie's message about taking care of our planet is delivered without being preachy. The scene where WALL-E shows EVE a tiny green plant is one of the most beautiful moments in cinema history.
+
+      I would recommend this movie to absolutely everyone — children and adults alike. It was praised by critics when it was released and has won numerous awards, including an Oscar. Whether you love robots, romance, or the environment, WALL-E has something for you.
+    modelAnswerZh: |
+      《机器人总动员》（2008），由 Andrew Stanton 执导，是一部杰出的动画电影，我给它五颗星。它是关于环境的最好的电影之一。
+
+      电影设定在未来，人类因为地球被垃圾覆盖而放弃了地球。一个叫 WALL-E 的小机器人被留下来清理垃圾。他已经独自工作了700年。有一天，一个光滑的机器人 EVE 从太空来到，WALL-E 爱上了她。他们一起踏上了一段可能改变人类未来的冒险。
+
+      使 WALL-E 出色的是前30分钟几乎没有对话——但你能感受到 WALL-E 的一切情感。由皮克斯创造的动画令人惊叹。此外，电影关于照顾我们星球的信息传达得不说教。WALL-E 向 EVE 展示一株小绿色植物的场景是电影史上最美丽的时刻之一。
+
+      我会向所有人推荐这部电影——无论是儿童还是成人。它在上映时受到了评论家的好评，并赢得了无数奖项，包括一项奥斯卡奖。无论你喜欢机器人、爱情还是环境，WALL-E 都有适合你的东西。
+
+  - id: W043
+    type: review
+    title: 'A Science Experiment Kit'
+    titleZh: '一个科学实验套装'
+    prompt: 'You received a science experiment kit as a birthday present. Write a review on a shopping website to help other parents decide whether to buy it for their children.'
+    promptZh: '你收到了一个科学实验套装作为生日礼物。在购物网站上写一篇评论，帮助其他父母决定是否为孩子购买。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the kit, price range, and recommended age.'
+        introductionZh: '套装名称、价格范围和推荐年龄。'
+        summary: 'What experiments are included? How many? What materials come in the box?'
+        summaryZh: '包含哪些实验？多少个？盒子里有什么材料？'
+        opinion: 'Which experiments were the best? Were the instructions clear? Any problems?'
+        opinionZh: '哪些实验最好？说明书清楚吗？有什么问题吗？'
+        recommendation: 'Would you buy it again? Perfect for which type of child?'
+        recommendationZh: '你会再买吗？最适合哪种类型的孩子？'
+      mustUseWords:
+        - 'enjoyable'
+        - 'as a result'
+        - 'definitely recommend'
+      mustUseStructure:
+        - 'At least one sentence with "although" or "even though"'
+        - 'Four clear paragraphs following the review structure'
+      mustUseStructureZh:
+        - '至少一个使用"although"或"even though"的句子'
+        - '四个清晰的段落遵循评论结构'
+    selfCheckList:
+      - 'Did I give practical information (price, age, contents)?'
+      - 'Did I describe specific experiments?'
+      - 'Did I mention any problems honestly?'
+      - 'Did I help parents decide if it is right for their child?'
+    selfCheckListZh:
+      - '我是否给出了实际信息（价格、年龄、内容）？'
+      - '我是否描述了具体的实验？'
+      - '我是否诚实地提到了任何问题？'
+      - '我是否帮助父母决定它是否适合他们的孩子？'
+    modelAnswer: |
+      I received the "Young Scientist Explorer Kit" for my ninth birthday. It costs around 200 yuan and is recommended for children aged 8-12. After trying every experiment in the box, I am ready to share my honest review.
+
+      The kit contains 25 experiments covering chemistry, biology, and physics. It comes with test tubes, safety goggles, a magnifying glass, colour-changing chemicals, and a detailed instruction booklet. The experiments range from growing crystals and making a volcano to building a simple compass.
+
+      My favourite experiment was the "invisible ink" one — you write a secret message with lemon juice and then heat the paper to reveal it. It was incredibly enjoyable and felt like being a real detective. Although the instructions were clear for most experiments, a few of the harder ones needed an adult's help. As a result, I would say this kit works best when parents and children do the experiments together.
+
+      I would definitely recommend this kit for curious children who love asking "why?" Even though some experiments take patience (the crystal growing took five days), the results are always worth the wait. It is a brilliant birthday or Christmas present that is both fun and educational.
+    modelAnswerZh: |
+      我在九岁生日时收到了"小科学家探索套装"。价格约200元，推荐8-12岁的儿童使用。在尝试了盒子里的每个实验后，我准备分享我的真实评论。
+
+      套装包含25个实验，涵盖化学、生物和物理。它配有试管、安全护目镜、放大镜、变色化学品和一本详细的说明书。实验范围从种植水晶和制作火山到建造简单的指南针。
+
+      我最喜欢的实验是"隐形墨水"——你用柠檬汁写秘密信息，然后加热纸张来显示它。非常有趣，感觉就像真正的侦探。虽然大多数实验的说明很清楚，但一些较难的需要大人帮忙。因此，我认为这个套装在父母和孩子一起做实验时效果最好。
+
+      我绝对推荐这个套装给喜欢问"为什么"的好奇孩子。虽然有些实验需要耐心（水晶种植花了五天），但结果总是值得等待的。这是一份既有趣又有教育意义的绝佳生日或圣诞礼物。
+
+  - id: W044
+    type: review
+    title: 'A Science Podcast or YouTube Channel'
+    titleZh: '一个科学播客或YouTube频道'
+    prompt: 'You have been listening to a science podcast or watching a science YouTube channel that you think other kids would enjoy. Write a review recommending it.'
+    promptZh: '你一直在听一个科学播客或看一个科学YouTube频道，你觉得其他孩子会喜欢。写一篇推荐评论。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'Name the podcast/channel, host, and where to find it.'
+        introductionZh: '播客/频道名称、主持人和在哪里找到它。'
+        summary: 'What topics does it cover? How long are episodes? How often are new ones released?'
+        summaryZh: '它涵盖哪些话题？每集多长？多久发布新的？'
+        opinion: 'Why is it better than other science content? What makes the host special?'
+        opinionZh: '为什么它比其他科学内容更好？主持人有什么特别之处？'
+        recommendation: 'Best episode to start with? Who is the ideal audience?'
+        recommendationZh: '最适合从哪集开始？理想的观众是谁？'
+      mustUseWords:
+        - 'engaging'
+        - 'what is more'
+        - 'highly recommend'
+      mustUseStructure:
+        - 'At least one relative clause (who/which/that)'
+        - 'Four paragraphs: Introduction, Content, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个关系从句（who/which/that）'
+        - '四个段落：引言、内容、评价、推荐'
+    selfCheckList:
+      - 'Did I explain where to find the podcast/channel?'
+      - 'Did I describe the content clearly?'
+      - 'Did I say what makes the host engaging?'
+      - 'Did I suggest a good episode to start with?'
+    selfCheckListZh:
+      - '我是否解释了在哪里找到播客/频道？'
+      - '我是否清楚地描述了内容？'
+      - '我是否说了什么让主持人引人入胜？'
+      - '我是否建议了一个好的起始集？'
+    modelAnswer: |
+      If you love science and want to learn amazing facts while having fun, I highly recommend the YouTube channel "Kurzgesagt — In a Nutshell." It is free, available worldwide, and has over 20 million subscribers.
+
+      Kurzgesagt covers a huge range of science topics, from black holes to the immune system, from dinosaur extinction to the future of energy. Each video is about 10 minutes long and a new one is released every two to three weeks. What makes it special is the stunning animation — every frame is colourful, detailed, and engaging.
+
+      The reason Kurzgesagt is better than most science channels is that it explains extremely complex ideas in a way that anyone can understand. The narrators, who speak in a calm and friendly voice, use clever analogies and beautiful visuals to make science feel like an adventure. What is more, every video is based on careful research, with sources listed in the description.
+
+      I would suggest starting with the episode "The Immune System Explained" or "What If the Sun Disappeared?" Both are fascinating and easy to follow. This channel is perfect for curious kids aged 8 and above who enjoy learning about how the universe works.
+    modelAnswerZh: |
+      如果你喜欢科学并想在享受乐趣的同时学习有趣的知识，我强烈推荐YouTube频道"Kurzgesagt — In a Nutshell"。它是免费的，全球可观看，拥有超过2000万订阅者。
+
+      Kurzgesagt涵盖了广泛的科学话题，从黑洞到免疫系统，从恐龙灭绝到能源的未来。每个视频大约10分钟长，每两到三周发布一个新视频。它的特别之处在于令人惊叹的动画——每一帧都色彩丰富、细节丰富且引人入胜。
+
+      Kurzgesagt比大多数科学频道更好的原因是它以任何人都能理解的方式解释极其复杂的概念。解说员用平静友好的声音，使用巧妙的类比和美丽的视觉效果使科学感觉像一次冒险。更重要的是，每个视频都基于仔细的研究，描述中列出了来源。
+
+      我建议从"免疫系统解释"或"如果太阳消失了会怎样？"这两集开始。两集都很引人入胜且易于理解。这个频道非常适合8岁及以上喜欢了解宇宙如何运作的好奇孩子。
+
+  - id: W045
+    type: review
+    title: 'An Outdoor Activity or Nature Walk'
+    titleZh: '一个户外活动或自然漫步'
+    prompt: 'You took part in an organised nature walk, bird-watching trip, or outdoor science activity. Write a review to help other families decide whether to join next time.'
+    promptZh: '你参加了一次有组织的自然漫步、观鸟旅行或户外科学活动。写一篇评论帮助其他家庭决定下次是否参加。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q06
+    scaffold:
+      structure:
+        introduction: 'What was the activity? Who organised it? When and where?'
+        introductionZh: '什么活动？谁组织的？什么时间和地点？'
+        summary: 'What did you see and do? Describe the highlights of the experience.'
+        summaryZh: '你看到了什么和做了什么？描述体验的亮点。'
+        opinion: 'What did you enjoy most? Was the guide knowledgeable? Any negatives?'
+        opinionZh: '你最享受什么？导游知识渊博吗？有什么不好的？'
+        recommendation: 'Who would enjoy this? What should they bring? Would you go again?'
+        recommendationZh: '谁会喜欢这个？应该带什么？你会再去吗？'
+      mustUseWords:
+        - 'unforgettable'
+        - 'consequently'
+        - 'recommend'
+      mustUseStructure:
+        - 'At least one sentence using "I wish" or "If only"'
+        - 'Four paragraphs following the review structure'
+      mustUseStructureZh:
+        - '至少一个使用"I wish"或"If only"的句子'
+        - '四个段落遵循评论结构'
+    selfCheckList:
+      - 'Did I give all the practical details (when, where, how to book)?'
+      - 'Did I describe at least two memorable moments?'
+      - 'Did I give an honest opinion including any negatives?'
+      - 'Did I include advice for future participants?'
+    selfCheckListZh:
+      - '我是否给出了所有实际细节（时间、地点、如何预约）？'
+      - '我是否描述了至少两个难忘的时刻？'
+      - '我是否给出了诚实的评价，包括任何不足？'
+      - '我是否包含了给未来参与者的建议？'
+    modelAnswer: |
+      Last Saturday, my family joined a sunrise bird-watching walk organised by the Beijing Birdwatching Society at the Olympic Forest Park. It was an unforgettable experience that I want everyone to know about.
+
+      We met at 6:30 AM near the south entrance. Our guide, Dr. Li, provided binoculars and a bird identification booklet. Over two hours, we spotted 23 different species, including a beautiful kingfisher diving for fish. The most exciting moment was when Dr. Li pointed out a rare grey heron building its nest in a tall tree. He explained how herons choose locations near water and use branches woven together for strength.
+
+      Dr. Li was incredibly knowledgeable and patient with all our questions. He made learning about birds feel like a treasure hunt rather than a lesson. I wish we could have stayed longer — two hours passed incredibly quickly. Consequently, I would suggest the organisers offer a longer, three-hour option for future walks.
+
+      I would recommend this walk to any family, especially those with children aged 6 and above. Bring warm clothes (it is cold at sunrise!), comfortable shoes, and a water bottle. The walk is free but you need to register online. I am already looking forward to the next one!
+    modelAnswerZh: |
+      上周六，我的家人参加了北京观鸟协会在奥林匹克森林公园组织的日出观鸟漫步。这是一次难忘的经历，我想让每个人都知道。
+
+      我们早上6:30在南门附近集合。我们的导游李博士提供了望远镜和一本鸟类识别手册。在两个小时内，我们发现了23种不同的鸟类，包括一只漂亮的翠鸟在潜水捕鱼。最激动人心的时刻是李博士指出了一只罕见的灰鹭正在一棵高树上筑巢。他解释了鹭如何选择水边的位置，并使用编织在一起的树枝来增强强度。
+
+      李博士知识渊博，对我们所有的问题都很有耐心。他让学习鸟类知识感觉像寻宝而不是上课。我希望我们能待更久——两个小时过得太快了。因此，我建议组织者为未来的漫步提供更长的三小时选项。
+
+      我会向任何家庭推荐这次漫步，尤其是有6岁及以上孩子的家庭。带上暖和的衣服（日出时很冷！）、舒适的鞋子和水壶。漫步是免费的，但需要在线注册。我已经期待下一次了！

@@ -1,0 +1,1456 @@
+category: 'Cloze Tests (Multiple-Choice & Open)'
+categoryZh: '完形填空（选择题与开放式）'
+fcepart: 'Use of English Part 1 & Part 2'
+questions:
+  # ============================================================
+  # U0901-U0950: Multiple-choice cloze (science-themed passages)
+  # ============================================================
+
+  # --- Passage 1: Coral Reefs (U0901-U0910) ---
+  - id: U0901
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Coral reefs are often (1)_____ the "rainforests of the sea" because they support an incredible variety of life.'
+    question: 'Choose the best word for gap (1).'
+    questionZh: '选择最适合空格(1)的词。'
+    options:
+      A: 'told'
+      B: 'called'
+      C: 'named'
+      D: 'said'
+    answer: 'B'
+    explanation: '"Called" is the correct word in the passive construction "are called." We say "X is called Y" meaning "people refer to X as Y."'
+    explanationZh: '"Called"是被动结构"are called"中的正确词。我们说"X is called Y"意思是"人们称X为Y"。'
+    grammarPoint: 'Passive voice with "called"'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0902
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Coral reefs cover less than 1% of the ocean floor. _____, they are home to approximately 25% of all marine species.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'Furthermore'
+      B: 'However'
+      C: 'Therefore'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: 'Small area (1%) vs. huge biodiversity (25%) is a contrast. "However" signals this unexpected relationship.'
+    explanationZh: '小面积（1%）vs. 巨大生物多样性（25%）是一种对比。"However"表示这种意外的关系。'
+    grammarPoint: 'Contrast connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0903
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'When ocean temperatures rise, corals become stressed and expel the algae that live _____ them.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'inside'
+      B: 'above'
+      C: 'behind'
+      D: 'beside'
+    answer: 'A'
+    explanation: 'The algae (zooxanthellae) live INSIDE the coral tissue. "Inside" is the correct preposition.'
+    explanationZh: '藻类（虫黄藻）生活在珊瑚组织内部。"Inside"是正确的介词。'
+    grammarPoint: 'Preposition of location'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0904
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Without the colourful algae, the coral turns white. This process is _____ as bleaching.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'called'
+      B: 'known'
+      C: 'referred'
+      D: 'named'
+    answer: 'B'
+    explanation: '"Is known as" is a fixed expression meaning "is called" or "is referred to as." Note: "referred" needs "to" (referred to as).'
+    explanationZh: '"Is known as"是固定表达，意思是"被称为"。注意："referred"需要"to"（referred to as）。'
+    grammarPoint: 'Fixed expression: known as'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0905
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'If temperatures return to normal quickly, the algae can come back and the coral can _____.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'recover'
+      B: 'discover'
+      C: 'cover'
+      D: 'uncover'
+    answer: 'A'
+    explanation: '"Recover" means to get better after damage. The coral returns to health if conditions improve.'
+    explanationZh: '"Recover"意思是受损后恢复。如果条件改善，珊瑚恢复健康。'
+    grammarPoint: 'Word choice: recover vs. discover'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0906
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: '_____, if the heat lasts too long, the coral will starve and die.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'Moreover'
+      B: 'Furthermore'
+      C: 'However'
+      D: 'In addition'
+    answer: 'C'
+    explanation: 'The previous sentence says coral CAN recover. This sentence says it WILL die if heat continues. "However" marks this contrast.'
+    explanationZh: '前一句说珊瑚可以恢复。这句说如果高温持续就会死亡。"However"标记这种对比。'
+    grammarPoint: 'Contrast connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0907
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Ocean acidification, _____ by the absorption of carbon dioxide, makes it harder for coral to build their skeletons.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'causing'
+      B: 'caused'
+      C: 'causes'
+      D: 'cause'
+    answer: 'B'
+    explanation: '"Caused by" is a past participle phrase modifying "ocean acidification." It explains what causes acidification (CO2 absorption).'
+    explanationZh: '"Caused by"是过去分词短语修饰"ocean acidification"。它解释了什么导致酸化（吸收二氧化碳）。'
+    grammarPoint: 'Past participle phrase'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0908
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Scientists are _____ heat-resistant coral varieties in laboratories and transplanting them onto damaged reefs.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'breeding'
+      B: 'building'
+      C: 'breaking'
+      D: 'bringing'
+    answer: 'A'
+    explanation: '"Breeding" means growing new organisms with specific characteristics. Scientists are breeding heat-resistant coral.'
+    explanationZh: '"Breeding"意思是培育具有特定特征的新生物。科学家正在培育耐热珊瑚。'
+    grammarPoint: 'Word choice: breed'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0909
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: '_____, some reefs have shown remarkable resilience, recovering naturally when given enough time.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'However'
+      B: 'Moreover'
+      C: 'Consequently'
+      D: 'Nevertheless'
+    answer: 'B'
+    explanation: 'This adds another positive point (natural resilience) to the conservation efforts. "Moreover" adds information.'
+    explanationZh: '这在保护努力之外补充了另一个积极点（自然恢复力）。"Moreover"补充信息。'
+    grammarPoint: 'Addition connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0910
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'If global temperatures continue to rise, scientists _____ that up to 90% of the world''s reefs could be lost by 2050.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'estimate'
+      B: 'examine'
+      C: 'expect'
+      D: 'explain'
+    answer: 'A'
+    explanation: '"Estimate" means to calculate approximately. Scientists make predictions based on data — they estimate outcomes.'
+    explanationZh: '"Estimate"意思是大约计算。科学家根据数据做出预测——他们估计结果。'
+    grammarPoint: 'Word choice: estimate'
+    relatedQuest: Q06
+    difficulty: 2
+
+  # --- Passage 2: Octopus Intelligence (U0911-U0920) ---
+  - id: U0911
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'For a long time, scientists believed that only mammals could be truly intelligent. _____, research has shown that octopuses are remarkably smart.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'Furthermore', B: 'However', C: 'Therefore', D: 'Meanwhile'}
+    answer: 'B'
+    explanation: 'Old belief (only mammals) vs. new finding (octopuses are smart) is a contrast.'
+    explanationZh: '旧观念（只有哺乳动物）vs. 新发现（章鱼很聪明）是一种对比。'
+    grammarPoint: 'Contrast connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0912
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Octopuses have about 500 million neurons, which is more than _____ other invertebrates.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'many', B: 'much', C: 'most', D: 'more'}
+    answer: 'C'
+    explanation: '"More than most other invertebrates" — comparing octopuses to the majority of invertebrates.'
+    explanationZh: '"More than most other invertebrates"——将章鱼与大多数其他无脊椎动物进行比较。'
+    grammarPoint: 'Quantifier: most'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0913
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Two-thirds of these neurons are _____ in their eight arms, not in their brain.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'placed', B: 'located', C: 'positioned', D: 'set'}
+    answer: 'B'
+    explanation: '"Located" is the most natural word for describing where something is found. "Are located in" = "are found in."'
+    explanationZh: '"Located"是描述某物在哪里的最自然的词。"Are located in" = "are found in"。'
+    grammarPoint: 'Word choice: located'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0914
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'This _____ each arm can taste, touch, and even make decisions independently.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'means', B: 'makes', C: 'shows', D: 'proves'}
+    answer: 'A'
+    explanation: '"This means" introduces a consequence or implication of the previous fact.'
+    explanationZh: '"This means"引入前一个事实的结果或含义。'
+    grammarPoint: 'Result expression: this means'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0915
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'An octopus named Inky _____ from his tank by squeezing through a narrow drain pipe.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'ran', B: 'escaped', C: 'left', D: 'moved'}
+    answer: 'B'
+    explanation: '"Escaped" means to get free from a place of confinement. Inky got out of his tank — he escaped.'
+    explanationZh: '"Escaped"意思是从禁锢的地方逃脱。Inky从水箱里出来了——他逃跑了。'
+    grammarPoint: 'Word choice: escape'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0916
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Some species collect coconut shells and use them _____ portable shelters.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'like', B: 'for', C: 'as', D: 'to'}
+    answer: 'C'
+    explanation: '"Use X as Y" means to employ X in the role of Y. "Use them as shelters" = "use them to serve as shelters."'
+    explanationZh: '"Use X as Y"意思是将X用作Y。"Use them as shelters" = "将它们用作庇护所"。'
+    grammarPoint: 'Preposition: use as'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0917
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Scientists consider this a form of tool use — a behaviour once thought to be _____ to primates.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'special', B: 'unique', C: 'exclusive', D: 'specific'}
+    answer: 'B'
+    explanation: '"Unique to" means belonging to only one group. The behaviour was thought to belong only to primates.'
+    explanationZh: '"Unique to"意思是仅属于一个群体。这种行为曾被认为只属于灵长类。'
+    grammarPoint: 'Collocation: unique to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0918
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Octopuses can change their colour, pattern, and even skin texture in less _____ a second.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'then', B: 'that', C: 'than', D: 'this'}
+    answer: 'C'
+    explanation: '"Less than" is a fixed comparative phrase. "In less than a second" = "in under one second."'
+    explanationZh: '"Less than"是固定的比较短语。"In less than a second" = "在不到一秒钟内"。'
+    grammarPoint: 'Comparative: less than'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0919
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ these extraordinary abilities, octopuses live surprisingly short lives.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'Although', B: 'Despite', C: 'However', D: 'Because of'}
+    answer: 'B'
+    explanation: '"Despite" + noun/gerund shows contrast. "Despite these abilities" contrasts with "short lives." Note: "Although" needs a clause.'
+    explanationZh: '"Despite" + 名词/动名词表示对比。"Despite these abilities"与"short lives"形成对比。注意："Although"需要一个从句。'
+    grammarPoint: 'Despite + noun'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0920
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____, in that brief time, they demonstrate intelligence that continues to amaze researchers.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'Furthermore', B: 'Moreover', C: 'Nevertheless', D: 'Consequently'}
+    answer: 'C'
+    explanation: 'Despite short lives (negative), they still amaze (positive). "Nevertheless" = "despite that."'
+    explanationZh: '尽管寿命短（负面），它们仍然令人惊叹（正面）。"Nevertheless" = "尽管如此"。'
+    grammarPoint: 'Contrast connector: nevertheless'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # --- Passage 3: Migration (U0921-U0930) ---
+  - id: U0921
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Every year, billions of animals _____ incredible journeys across the planet.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'undertake', B: 'undergo', C: 'understand', D: 'underline'}
+    answer: 'A'
+    explanation: '"Undertake a journey" means to begin or carry out a journey. The other "under-" words do not fit.'
+    explanationZh: '"Undertake a journey"意思是开始或进行一次旅程。其他"under-"词不适合。'
+    grammarPoint: 'Collocation: undertake a journey'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0922
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Arctic terns make the longest _____ of any animal — about 70,000 kilometres.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'trip', B: 'migration', C: 'walk', D: 'visit'}
+    answer: 'B'
+    explanation: '"Migration" is the correct scientific term for animals moving seasonally between habitats.'
+    explanationZh: '"Migration"是动物在栖息地之间季节性移动的正确科学术语。'
+    grammarPoint: 'Word choice: migration'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0923
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Scientists believe migration is triggered by a _____ of factors including day length and temperature.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'group', B: 'set', C: 'combination', D: 'collection'}
+    answer: 'C'
+    explanation: '"A combination of factors" is a common collocation meaning several things working together.'
+    explanationZh: '"A combination of factors"是常见搭配，意思是几种事物共同作用。'
+    grammarPoint: 'Collocation: combination of'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0924
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Salmon use the Earth''s magnetic field to _____ thousands of kilometres back to their birthplace.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'travel', B: 'navigate', C: 'swim', D: 'move'}
+    answer: 'B'
+    explanation: '"Navigate" means to find your way. Salmon use magnetic fields to NAVIGATE — to determine direction.'
+    explanationZh: '"Navigate"意思是找到路。鲑鱼使用磁场来导航——确定方向。'
+    grammarPoint: 'Word choice: navigate'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0925
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Climate change is _____ these ancient migration patterns.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'disrupting', B: 'destroying', C: 'dissolving', D: 'dismissing'}
+    answer: 'A'
+    explanation: '"Disrupting" means disturbing or interrupting the normal pattern. Climate change DISRUPTS (not completely destroys) migration.'
+    explanationZh: '"Disrupting"意思是扰乱或中断正常模式。气候变化扰乱（不是完全摧毁）迁徙。'
+    grammarPoint: 'Word choice: disrupt'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0926
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ a result, some birds arrive at their breeding grounds only to find that insects have already peaked.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'For', B: 'As', C: 'In', D: 'By'}
+    answer: 'B'
+    explanation: '"As a result" is a fixed phrase meaning "consequently." The preposition must be "as."'
+    explanationZh: '"As a result"是固定短语，意思是"因此"。介词必须是"as"。'
+    grammarPoint: 'Fixed phrase: as a result'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0927
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Scientists call this phenomenon a "mismatch" _____ it threatens species that have migrated successfully for millions of years.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'so', B: 'and', C: 'but', D: 'or'}
+    answer: 'B'
+    explanation: '"And" connects two facts about the mismatch: (1) what scientists call it, (2) that it threatens species.'
+    explanationZh: '"And"连接关于不匹配的两个事实：（1）科学家怎么称呼它，（2）它威胁物种。'
+    grammarPoint: 'Conjunction: and'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0928
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'The wildebeest migration _____ approximately 3,000 kilometres and takes a full year.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'travels', B: 'covers', C: 'reaches', D: 'crosses'}
+    answer: 'B'
+    explanation: '"Covers" a distance = travels over that distance. "The journey covers 3,000 km" is natural English.'
+    explanationZh: '"Covers"一段距离 = 行经那段距离。"The journey covers 3,000 km"是自然的英语表达。'
+    grammarPoint: 'Collocation: cover a distance'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0929
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Sea turtles can return to the _____ beach where they hatched, even after 30 years.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'exact', B: 'right', C: 'true', D: 'real'}
+    answer: 'A'
+    explanation: '"The exact beach" emphasizes precision — the very same beach, not just a similar one.'
+    explanationZh: '"The exact beach"强调精确性——完全相同的海滩，不仅仅是类似的。'
+    grammarPoint: 'Word choice: exact'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0930
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Many animals appear to have a built-_____ compass that helps them find their way.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'up', B: 'in', C: 'on', D: 'out'}
+    answer: 'B'
+    explanation: '"Built-in" means already included or part of the body naturally. A "built-in compass" = an internal navigation ability.'
+    explanationZh: '"Built-in"意思是已经包含在内或身体天生的一部分。"Built-in compass" = 内在导航能力。'
+    grammarPoint: 'Compound adjective: built-in'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # --- Passage 4: Deep Sea (U0931-U0940) ---
+  - id: U0931
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'More than 80% of the ocean _____ unexplored.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'remains', B: 'stays', C: 'keeps', D: 'continues'}
+    answer: 'A'
+    explanation: '"Remains" means "is still." "Remains unexplored" = "is still not explored."'
+    explanationZh: '"Remains"意思是"仍然是"。"Remains unexplored" = "仍未被探索"。'
+    grammarPoint: 'Word choice: remains'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0932
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Many deep-sea animals have _____ an amazing ability called bioluminescence.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'developed', B: 'evolved', C: 'grown', D: 'produced'}
+    answer: 'B'
+    explanation: '"Evolved" means developed through natural selection over millions of years. Animals evolve abilities.'
+    explanationZh: '"Evolved"意思是通过自然选择在数百万年间发展出来的。动物进化出能力。'
+    grammarPoint: 'Word choice: evolve'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0933
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'They produce their _____ light using chemical reactions inside their bodies.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'own', B: 'self', C: 'personal', D: 'private'}
+    answer: 'A'
+    explanation: '"Their own light" = light that belongs to them, that they make themselves. "Own" emphasizes possession.'
+    explanationZh: '"Their own light" = 属于它们的、自己制造的光。"Own"强调所有权。'
+    grammarPoint: 'Pronoun: own'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0934
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Food is _____ in the deep ocean because there is no sunlight for photosynthesis.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'rare', B: 'scarce', C: 'few', D: 'little'}
+    answer: 'B'
+    explanation: '"Scarce" means in short supply. Food is scarce (uncountable context). "Few" is for countable nouns.'
+    explanationZh: '"Scarce"意思是供应不足。食物稀缺（不可数名词语境）。"Few"用于可数名词。'
+    grammarPoint: 'Word choice: scarce'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0935
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ a result, many deep-sea animals depend on "marine snow."'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'For', B: 'In', C: 'As', D: 'By'}
+    answer: 'C'
+    explanation: '"As a result" is a fixed phrase. The correct preposition is "As."'
+    explanationZh: '"As a result"是固定短语。正确的介词是"As"。'
+    grammarPoint: 'Fixed phrase: as a result'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0936
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Hydrothermal vents release superheated water _____ in minerals.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'full', B: 'rich', C: 'plenty', D: 'filled'}
+    answer: 'B'
+    explanation: '"Rich in" means containing a lot of something. "Water rich in minerals" = mineral-rich water.'
+    explanationZh: '"Rich in"意思是含有大量某物。"Water rich in minerals" = 富含矿物质的水。'
+    grammarPoint: 'Collocation: rich in'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0937
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'The giant squid has the largest eyes in the animal kingdom — each one the size _____ a dinner plate.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'as', B: 'like', C: 'of', D: 'than'}
+    answer: 'C'
+    explanation: '"The size of" is a fixed expression for comparison. "The size of a dinner plate" = as big as a dinner plate.'
+    explanationZh: '"The size of"是用于比较的固定表达。"The size of a dinner plate" = 和餐盘一样大。'
+    grammarPoint: 'Fixed expression: the size of'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0938
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ enormous eyes help it detect the faintest flickers of light in the darkness.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'These', B: 'Such', C: 'This', D: 'Those'}
+    answer: 'B'
+    explanation: '"Such enormous eyes" = "eyes of this remarkable size." "Such" + adjective + noun emphasizes the degree.'
+    explanationZh: '"Such enormous eyes" = "如此巨大的眼睛"。"Such" + 形容词 + 名词强调程度。'
+    grammarPoint: 'Reference word: such'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0939
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'At the bottom of the Mariana Trench, the pressure is _____ 1,000 times that at the surface.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'about', B: 'over', C: 'around', D: 'nearly'}
+    answer: 'B'
+    explanation: '"Over 1,000 times" means more than 1,000 times. "Over" indicates exceeding a number.'
+    explanationZh: '"Over 1,000 times"意思是超过1,000倍。"Over"表示超过一个数字。'
+    grammarPoint: 'Approximation: over'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0940
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ this, scientists have discovered organisms thriving at extreme depths.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'Although', B: 'Despite', C: 'However', D: 'Nevertheless'}
+    answer: 'B'
+    explanation: '"Despite this" + main clause. "Despite" is followed by a noun/pronoun ("this"), not a clause.'
+    explanationZh: '"Despite this" + 主句。"Despite"后跟名词/代词（"this"），不是从句。'
+    grammarPoint: 'Despite + noun/pronoun'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # --- Passage 5: Climate & Energy (U0941-U0950) ---
+  - id: U0941
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Greenhouse gases trap heat from the sun inside our atmosphere, _____ the planet warm enough for life.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'making', B: 'keeping', C: 'holding', D: 'having'}
+    answer: 'B'
+    explanation: '"Keeping the planet warm" = maintaining the temperature. "Keep + object + adjective" = maintain in that state.'
+    explanationZh: '"Keeping the planet warm" = 维持温度。"Keep + 宾语 + 形容词" = 保持在那种状态。'
+    grammarPoint: 'Pattern: keep + object + adjective'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0942
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Since the Industrial Revolution, we have been burning enormous _____ of fossil fuels.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'numbers', B: 'amounts', C: 'quantities', D: 'levels'}
+    answer: 'C'
+    explanation: '"Enormous quantities of" is a natural collocation with uncountable nouns like fuel. "Amounts" also works but "quantities" is more formal/scientific.'
+    explanationZh: '"Enormous quantities of"是与不可数名词如燃料搭配的自然搭配。'
+    grammarPoint: 'Collocation: quantities of'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0943
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-2]
+    context: science
+    passage: 'Renewable energy sources — _____ as sunlight, wind, and water — will never be used up.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'like', B: 'such', C: 'for example', D: 'namely'}
+    answer: 'B'
+    explanation: '"Such as" introduces examples. "Sources such as sunlight, wind, and water" lists specific examples.'
+    explanationZh: '"Such as"引入例子。"Sources such as sunlight, wind, and water"列举具体例子。'
+    grammarPoint: 'Expression: such as'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0944
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'The cost of solar panels has dropped _____ over 90% since 2010.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'for', B: 'by', C: 'to', D: 'at'}
+    answer: 'B'
+    explanation: '"Dropped by 90%" means decreased by that percentage. "By" indicates the amount of change.'
+    explanationZh: '"Dropped by 90%"意思是下降了那个百分比。"By"表示变化的量。'
+    grammarPoint: 'Preposition: by (amount of change)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0945
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'The sun does not always shine, and the wind does not always _____.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'blow', B: 'flow', C: 'go', D: 'grow'}
+    answer: 'A'
+    explanation: '"Wind blows" is the standard collocation. "The wind does not always blow" = it is sometimes calm.'
+    explanationZh: '"Wind blows"是标准搭配。"The wind does not always blow" = 有时是平静的。'
+    grammarPoint: 'Collocation: wind blows'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0946
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Scientists are working _____ better batteries to store excess energy.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'in', B: 'for', C: 'on', D: 'at'}
+    answer: 'C'
+    explanation: '"Working on" means developing or trying to achieve. "Working on better batteries" = developing them.'
+    explanationZh: '"Working on"意思是开发或试图实现。"Working on better batteries" = 开发更好的电池。'
+    grammarPoint: 'Phrasal verb: work on'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0947
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: '_____ these obstacles, the transition to renewable energy is accelerating.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'Although', B: 'Despite', C: 'However', D: 'Nevertheless'}
+    answer: 'B'
+    explanation: '"Despite" + noun (obstacles). "Despite these obstacles" = even though these obstacles exist.'
+    explanationZh: '"Despite" + 名词（obstacles）。"Despite these obstacles" = 尽管存在这些障碍。'
+    grammarPoint: 'Despite + noun'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0948
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Experts predict this will _____ 50% by 2030.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'arrive', B: 'get', C: 'reach', D: 'come'}
+    answer: 'C'
+    explanation: '"Reach" a percentage/number means to arrive at that level. "Reach 50%" = get to 50%.'
+    explanationZh: '"Reach"一个百分比/数字意思是达到那个水平。"Reach 50%" = 达到50%。'
+    grammarPoint: 'Collocation: reach a level'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0949
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'Young people are _____ making a difference by joining climate marches.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'too', B: 'also', C: 'even', D: 'still'}
+    answer: 'B'
+    explanation: '"Also" means "in addition." Young people, IN ADDITION to other groups, are making a difference.'
+    explanationZh: '"Also"意思是"此外"。年轻人除了其他群体之外也在做出改变。'
+    grammarPoint: 'Adverb: also'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0950
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q06, difficulty-3]
+    context: science
+    passage: 'The age of fossil fuels is slowly coming to _____ end.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options: {A: 'a', B: 'an', C: 'the', D: 'its'}
+    answer: 'B'
+    explanation: '"Coming to an end" is a fixed expression meaning "finishing." The article "an" is needed before the vowel sound.'
+    explanationZh: '"Coming to an end"是固定表达，意思是"结束"。元音前需要冠词"an"。'
+    grammarPoint: 'Fixed expression: come to an end'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # ============================================================
+  # U0951-U1000: Open cloze (science-themed)
+  # ============================================================
+  - id: U0951
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Coral reefs are often referred _____ as the "rainforests of the sea."'
+    sentenceZh: '珊瑚礁经常被 _____ 为"海洋的雨林"。'
+    answer: 'to'
+    explanation: '"Referred to as" is a fixed phrase meaning "called" or "known as."'
+    explanationZh: '"Referred to as"是固定短语，意思是"被称为"。'
+    grammarPoint: 'Fixed phrase: referred to as'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0952
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Polar bears depend _____ sea ice for hunting seals.'
+    sentenceZh: '北极熊 _____ 海冰来猎捕海豹。'
+    answer: 'on'
+    explanation: '"Depend on" is a phrasal verb meaning "need" or "rely on."'
+    explanationZh: '"Depend on"是短语动词，意思是"需要"或"依靠"。'
+    grammarPoint: 'Phrasal verb: depend on'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0953
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: '_____ of the most remarkable abilities of octopuses is their camouflage.'
+    sentenceZh: '章鱼最了不起的能力 _____ 之一是它们的伪装。'
+    answer: 'One'
+    explanation: '"One of the most" is a superlative phrase introducing a single example from a group.'
+    explanationZh: '"One of the most"是最高级短语，从一组中引入一个例子。'
+    grammarPoint: 'Phrase: one of the most'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0954
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'The rainforest canopy is _____ thick that only 2% of sunlight reaches the forest floor.'
+    sentenceZh: '雨林的树冠层 _____ 厚密，只有2%的阳光能到达森林地面。'
+    answer: 'so'
+    explanation: '"So... that" is a result structure. "So thick THAT only 2% reaches" — the thickness CAUSES the lack of light.'
+    explanationZh: '"So... that"是结果结构。"So thick THAT only 2% reaches"——厚密导致了光线不足。'
+    grammarPoint: 'Structure: so... that'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0955
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Scientists are trying to find _____ what caused the sudden decline in bee populations.'
+    sentenceZh: '科学家们试图找 _____ 是什么导致了蜜蜂数量的突然下降。'
+    answer: 'out'
+    explanation: '"Find out" means to discover information. "Find out what caused" = discover the reason.'
+    explanationZh: '"Find out"意思是发现信息。"Find out what caused" = 发现原因。'
+    grammarPoint: 'Phrasal verb: find out'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0956
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Trees absorb carbon dioxide and _____ return release oxygen into the air.'
+    sentenceZh: '树木吸收二氧化碳，_____ 回来将氧气释放到空气中。'
+    answer: 'in'
+    explanation: '"In return" means "as an exchange" or "in exchange." Trees take CO2 and in return give O2.'
+    explanationZh: '"In return"意思是"作为交换"。树木吸收二氧化碳，作为交换释放氧气。'
+    grammarPoint: 'Fixed phrase: in return'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0957
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Dolphins are _____ considered to be among the most intelligent animals on Earth.'
+    sentenceZh: '海豚 _____ 被认为是地球上最聪明的动物之一。'
+    answer: 'widely'
+    explanation: '"Widely considered" means "by many people/experts." It is a common collocation in scientific writing.'
+    explanationZh: '"Widely considered"意思是"被许多人/专家认为"。这是科学写作中常见的搭配。'
+    grammarPoint: 'Collocation: widely considered'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0958
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'The average global temperature _____ risen by about 1.1 degrees since 1900.'
+    sentenceZh: '自1900年以来全球平均温度 _____ 上升了约1.1度。'
+    answer: 'has'
+    explanation: '"Has risen" is present perfect tense, used for changes from the past (1900) to now.'
+    explanationZh: '"Has risen"是现在完成时，用于从过去（1900年）到现在的变化。'
+    grammarPoint: 'Present perfect: has + past participle'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0959
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'There are approximately 8.7 million species on Earth, _____ many more are still unknown.'
+    sentenceZh: '地球上大约有870万个物种，_____ 还有更多仍未被发现。'
+    answer: 'but'
+    explanation: '"But" connects the known number with the unknown. It shows contrast: we know 8.7 million BUT there are more.'
+    explanationZh: '"But"连接已知数量和未知数量。它表示对比：我们知道870万但还有更多。'
+    grammarPoint: 'Conjunction: but (contrast)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0960
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Whales can hold _____ breath for up to 90 minutes underwater.'
+    sentenceZh: '鲸鱼可以在水下屏住 _____ 长达90分钟。'
+    answer: 'their'
+    explanation: '"Hold their breath" = stop breathing. "Their" refers to the whales (plural possessive).'
+    explanationZh: '"Hold their breath" = 停止呼吸。"Their"指代鲸鱼（复数所有格）。'
+    grammarPoint: 'Possessive pronoun: their'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0961
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The experiment was carried _____ over a period of six months.'
+    sentenceZh: '实验在六个月的时间内 _____ 进行。'
+    answer: 'out'
+    explanation: '"Carried out" means "conducted" or "performed." It is a common phrasal verb in scientific writing.'
+    explanationZh: '"Carried out"意思是"进行"或"执行"。这是科学写作中常见的短语动词。'
+    grammarPoint: 'Phrasal verb: carry out'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0962
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The scientists _____ to the conclusion that bees prefer blue flowers.'
+    sentenceZh: '科学家们 _____ 出了蜜蜂更喜欢蓝色花朵的结论。'
+    answer: 'came'
+    explanation: '"Came to the conclusion" = "reached the conclusion" = "decided after research."'
+    explanationZh: '"Came to the conclusion" = "得出结论" = "经过研究后决定"。'
+    grammarPoint: 'Collocation: come to a conclusion'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0963
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Planting trees is one _____ the most effective ways to fight climate change.'
+    sentenceZh: '植树是对抗气候变化最有效的方法 _____ 一。'
+    answer: 'of'
+    explanation: '"One of the most effective" uses "of" to connect "one" with the superlative phrase.'
+    explanationZh: '"One of the most effective"使用"of"连接"one"和最高级短语。'
+    grammarPoint: 'Structure: one of the most + superlative'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0964
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Recycling is important. _____, reducing the amount of waste we create is even more effective.'
+    sentenceZh: '回收很重要。_____ 减少我们产生的废物量更为有效。'
+    answer: 'However'
+    explanation: '"However" introduces a contrast: recycling is good, BUT reducing is BETTER.'
+    explanationZh: '"However"引入对比：回收很好，但减少使用更好。'
+    grammarPoint: 'Contrast connector: however'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0965
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Tardigrades can survive in conditions that _____ kill any other animal.'
+    sentenceZh: '水熊虫可以在 _____ 杀死其他任何动物的条件下生存。'
+    answer: 'would'
+    explanation: '"Would kill" = conditional/hypothetical. These conditions WOULD kill other animals (if exposed).'
+    explanationZh: '"Would kill" = 条件/假设。这些条件会（如果暴露）杀死其他动物。'
+    grammarPoint: 'Modal: would (hypothetical)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0966
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The number of tigers has declined _____ approximately 100,000 to fewer than 4,000.'
+    sentenceZh: '老虎的数量已经 _____ 大约10万下降到不到4,000。'
+    answer: 'from'
+    explanation: '"Declined from X to Y" describes a decrease from one number to another. "From... to..." marks the range.'
+    explanationZh: '"Declined from X to Y"描述从一个数字下降到另一个数字。"From... to..."标记范围。'
+    grammarPoint: 'Preposition: from... to...'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0967
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: '_____ addition to producing oxygen, forests provide habitats for millions of species.'
+    sentenceZh: '_____ 产生氧气之外，森林还为数百万物种提供栖息地。'
+    answer: 'In'
+    explanation: '"In addition to" is a fixed phrase meaning "as well as" or "besides."'
+    explanationZh: '"In addition to"是固定短语，意思是"除了……之外"。'
+    grammarPoint: 'Fixed phrase: in addition to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0968
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Cheetahs can only maintain top speed _____ about 30 seconds before they overheat.'
+    sentenceZh: '猎豹只能在大约30秒 _____ 保持最高速度，然后就会过热。'
+    answer: 'for'
+    explanation: '"For" + time period indicates duration. "For about 30 seconds" = during a period of 30 seconds.'
+    explanationZh: '"For" + 时间段表示持续时间。"For about 30 seconds" = 在约30秒的时间内。'
+    grammarPoint: 'Preposition: for (duration)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0969
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Jane Goodall spent years _____ careful observation of chimpanzees in the wild.'
+    sentenceZh: 'Jane Goodall 花了数年时间 _____ 野外仔细观察黑猩猩。'
+    answer: 'in'
+    explanation: '"Spent years in observation" = devoted years to observing. "In" + noun describes the activity.'
+    explanationZh: '"Spent years in observation" = 花费数年进行观察。"In" + 名词描述活动。'
+    grammarPoint: 'Preposition: in (activity)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0970
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Phytoplankton are the foundation _____ which the entire marine food chain is built.'
+    sentenceZh: '浮游植物是整个海洋食物链 _____ 之上建立的基础。'
+    answer: 'on'
+    explanation: '"The foundation on which X is built" — things are built ON a foundation. "On which" is a relative clause.'
+    explanationZh: '"The foundation on which X is built"——事物建立在基础之上。"On which"是关系从句。'
+    grammarPoint: 'Preposition + relative pronoun: on which'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # Remaining open cloze exercises U0971-U1000
+  - id: U0971
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Elephants can remember the locations of water sources even _____ twenty years.'
+    sentenceZh: '大象即使 _____ 二十年也能记住水源的位置。'
+    answer: 'after'
+    explanation: '"Even after twenty years" emphasizes the long time. "After" is a preposition of time.'
+    explanationZh: '"Even after twenty years"强调很长时间。"After"是时间介词。'
+    grammarPoint: 'Preposition: after'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0972
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'The Arctic is warming _____ as fast as the rest of the planet.'
+    sentenceZh: '北极变暖的速度是地球其他地区的 _____ 倍。'
+    answer: 'twice'
+    explanation: '"Twice as fast as" means two times the speed. "Twice" is the multiplier.'
+    explanationZh: '"Twice as fast as"意思是两倍的速度。"Twice"是倍数词。'
+    grammarPoint: 'Multiplier: twice as... as'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0973
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Without photosynthesis, there would be _____ oxygen in the air for us to breathe.'
+    sentenceZh: '没有光合作用，空气中就 _____ 有我们呼吸的氧气。'
+    answer: 'no'
+    explanation: '"No oxygen" means zero oxygen. "There would be no X" = X would not exist.'
+    explanationZh: '"No oxygen"意思是零氧气。"There would be no X" = X不会存在。'
+    grammarPoint: 'Determiner: no'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0974
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The discovery of a new species _____ great excitement among scientists.'
+    sentenceZh: '一个新物种的发现在科学家中 _____ 了极大的兴奋。'
+    answer: 'caused'
+    explanation: '"Caused excitement" — the discovery was the reason for the excitement.'
+    explanationZh: '"Caused excitement"——这个发现是兴奋的原因。'
+    grammarPoint: 'Collocation: cause excitement'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0975
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Scientists believe _____ Mars once had rivers and lakes of liquid water.'
+    sentenceZh: '科学家相信火星 _____ 有过河流和液态水的湖泊。'
+    answer: 'that'
+    explanation: '"Believe that" introduces a reported belief/claim. "That" is a conjunction after "believe."'
+    explanationZh: '"Believe that"引入一个被报道的信念/主张。"That"是"believe"后的连词。'
+    grammarPoint: 'Conjunction: that (after believe)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0976
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'If microscopic life once _____ there, it would change our understanding of the universe.'
+    sentenceZh: '如果微小的生命曾经 _____ 在那里生存，它将改变我们对宇宙的理解。'
+    answer: 'thrived'
+    explanation: '"Thrived" (past tense of thrive) means lived successfully. The sentence is about past possibility.'
+    explanationZh: '"Thrived"（thrive的过去式）意思是成功地生活。句子是关于过去的可能性。'
+    grammarPoint: 'Past tense: thrived'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0977
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Mary Anning discovered dinosaur fossils _____ she was just twelve years old.'
+    sentenceZh: 'Mary Anning 在她年仅十二岁 _____ 就发现了恐龙化石。'
+    answer: 'when'
+    explanation: '"When" introduces a time clause. "When she was just twelve" = at the age of twelve.'
+    explanationZh: '"When"引入一个时间从句。"When she was just twelve" = 在十二岁时。'
+    grammarPoint: 'Time clause: when'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0978
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The Great Barrier Reef _____ be seen from space because it is so enormous.'
+    sentenceZh: '大堡礁 _____ 从太空看到，因为它非常巨大。'
+    answer: 'can'
+    explanation: '"Can be seen" = it is possible to see it. "Can" expresses ability/possibility.'
+    explanationZh: '"Can be seen" = 有可能看到它。"Can"表示能力/可能性。'
+    grammarPoint: 'Modal: can (possibility)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0979
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Each second of waggling represents _____ one kilometre of distance.'
+    sentenceZh: '每秒钟的摇摆大约代表 _____ 一公里的距离。'
+    answer: 'approximately'
+    explanation: '"Approximately" means "about" or "roughly." It shows the measurement is not exact.'
+    explanationZh: '"Approximately"意思是"大约"。它表明测量不是精确的。'
+    grammarPoint: 'Adverb: approximately'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0980
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'A large _____ of the rainforest has been destroyed since the 1970s.'
+    sentenceZh: '自1970年代以来，大 _____ 的雨林已被破坏。'
+    answer: 'proportion'
+    explanation: '"A large proportion of" means "a significant part of." It is used with uncountable nouns.'
+    explanationZh: '"A large proportion of"意思是"相当大的一部分"。它与不可数名词搭配。'
+    grammarPoint: 'Collocation: proportion of'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0981
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Bears hibernate _____ up to seven months during winter.'
+    sentenceZh: '熊在冬天冬眠长 _____ 七个月。'
+    answer: 'for'
+    explanation: '"For" + duration. "Hibernate for seven months" = the hibernation lasts seven months.'
+    explanationZh: '"For" + 持续时间。"Hibernate for seven months" = 冬眠持续七个月。'
+    grammarPoint: 'Preposition: for (duration)'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0982
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Wind turbines generate electricity _____ spinning their blades when the wind blows.'
+    sentenceZh: '风力涡轮机 _____ 风吹动叶片旋转来产生电力。'
+    answer: 'by'
+    explanation: '"By" + gerund describes the method. "By spinning" = through the method of spinning.'
+    explanationZh: '"By" + 动名词描述方法。"By spinning" = 通过旋转的方法。'
+    grammarPoint: 'Preposition: by + gerund (method)'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0983
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The experiment _____ designed to test whether music affects plant growth.'
+    sentenceZh: '实验 _____ 设计用来测试音乐是否影响植物生长。'
+    answer: 'was'
+    explanation: '"Was designed" is passive voice — the experiment did not design itself; someone designed it.'
+    explanationZh: '"Was designed"是被动语态——实验不是自己设计的，是某人设计的。'
+    grammarPoint: 'Passive voice: was + past participle'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0984
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Sharks can detect a single drop of blood from _____ a kilometre away.'
+    sentenceZh: '鲨鱼能从超 _____ 一公里外探测到一滴血。'
+    answer: 'over'
+    explanation: '"Over a kilometre" = more than a kilometre. "Over" indicates exceeding a distance.'
+    explanationZh: '"Over a kilometre" = 超过一公里。"Over"表示超过一段距离。'
+    grammarPoint: 'Preposition: over (exceeding)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0985
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Darwin''s theory explains _____ animals change over millions of years.'
+    sentenceZh: '达尔文的理论解释了动物如何在数百万年 _____ 变化。'
+    answer: 'how'
+    explanation: '"How" introduces an indirect question. "Explains how X happens" = explains the process.'
+    explanationZh: '"How"引入间接问句。"Explains how X happens" = 解释过程。'
+    grammarPoint: 'Indirect question: how'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0986
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The more forests we destroy, the _____ carbon dioxide remains in the atmosphere.'
+    sentenceZh: '我们破坏的森林越多，留在大气中的二氧化碳就越 _____。'
+    answer: 'more'
+    explanation: '"The more... the more..." is a double comparative structure showing parallel increase.'
+    explanationZh: '"The more... the more..."是双重比较结构，表示平行增加。'
+    grammarPoint: 'Double comparative: the more... the more'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0987
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'No _____ part of the ocean is free from human pollution.'
+    sentenceZh: '海洋 _____ 任何部分都无法免受人类污染。'
+    answer: 'other'
+    explanation: '"No other part" = not any part. "No other" emphasizes that it applies to everything.'
+    explanationZh: '"No other part" = 没有任何部分。"No other"强调适用于所有。'
+    grammarPoint: 'Determiner: no other'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0988
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'If temperatures _____ to rise, 90% of coral reefs could be lost by 2050.'
+    sentenceZh: '如果温度 _____ 上升，到2050年90%的珊瑚礁可能消失。'
+    answer: 'continue'
+    explanation: '"If temperatures continue to rise" — first conditional with present simple after "if."'
+    explanationZh: '"If temperatures continue to rise"——第一条件句，"if"后用一般现在时。'
+    grammarPoint: 'First conditional: if + present simple'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0989
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Without the asteroid impact, mammals might never have _____ the dominant animals.'
+    sentenceZh: '没有小行星撞击，哺乳动物可能永远不会 _____ 统治动物。'
+    answer: 'become'
+    explanation: '"Might never have become" — third conditional/past modals for imagining a different past.'
+    explanationZh: '"Might never have become"——第三条件句/过去情态动词，用于想象不同的过去。'
+    grammarPoint: 'Past modal: might have + past participle'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0990
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-2]
+    context: science
+    sentence: 'Fresh water is Earth''s most precious resource — _____ 3% of all water is drinkable.'
+    sentenceZh: '淡水是地球上最珍贵的资源——只有 _____ 3%的水是可饮用的。'
+    answer: 'only'
+    explanation: '"Only 3%" emphasizes how little drinkable water exists. "Only" adds emphasis to the small number.'
+    explanationZh: '"Only 3%"强调可饮用水有多少。"Only"强调了这个小数字。'
+    grammarPoint: 'Adverb: only (emphasis)'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: U0991
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The team collected water samples _____ twenty different locations.'
+    sentenceZh: '团队 _____ 二十个不同地点收集了水样。'
+    answer: 'from'
+    explanation: '"Collected from" — the samples were taken FROM different places. "From" shows origin.'
+    explanationZh: '"Collected from"——样本是从不同的地方取来的。"From"表示来源。'
+    grammarPoint: 'Preposition: from (origin)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0992
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Owls are active at night _____ than during the day.'
+    sentenceZh: '猫头鹰在夜间 _____ 白天更活跃。'
+    answer: 'rather'
+    explanation: '"Rather than" means "instead of." Owls are active at night RATHER THAN during the day.'
+    explanationZh: '"Rather than"意思是"而不是"。猫头鹰在夜间而不是白天活跃。'
+    grammarPoint: 'Expression: rather than'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0993
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: '_____ to popular belief, most spiders are completely harmless to humans.'
+    sentenceZh: '_____ 普遍的看法相反，大多数蜘蛛对人类完全无害。'
+    answer: 'Contrary'
+    explanation: '"Contrary to popular belief" is a fixed expression meaning "opposite to what most people think."'
+    explanationZh: '"Contrary to popular belief"是固定表达，意思是"与大多数人的想法相反"。'
+    grammarPoint: 'Fixed expression: contrary to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0994
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Scientists have been studying whale songs _____ over thirty years.'
+    sentenceZh: '科学家们研究鲸歌已经 _____ 三十多年了。'
+    answer: 'for'
+    explanation: '"For over thirty years" — present perfect continuous with "for" + duration.'
+    explanationZh: '"For over thirty years"——现在完成进行时与"for" + 持续时间。'
+    grammarPoint: 'Present perfect + for (duration)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0995
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The Amazon rainforest is _____ called "the lungs of the Earth."'
+    sentenceZh: '亚马逊雨林 _____ 被称为"地球之肺"。'
+    answer: 'often'
+    explanation: '"Is often called" = people frequently refer to it as. "Often" shows frequency.'
+    explanationZh: '"Is often called" = 人们经常称之为。"Often"表示频率。'
+    grammarPoint: 'Adverb of frequency: often'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0996
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Glaciers store about 69% of the world''s fresh water, _____ they are melting faster than ever.'
+    sentenceZh: '冰川储存了世界上约69%的淡水，_____ 它们融化的速度比以往任何时候都快。'
+    answer: 'but'
+    explanation: '"But" shows contrast: glaciers store water (important) BUT they are melting (problem).'
+    explanationZh: '"But"表示对比：冰川储存水（重要）但它们正在融化（问题）。'
+    grammarPoint: 'Conjunction: but (contrast)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0997
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Plants _____ not survive without water, sunlight, and nutrients from the soil.'
+    sentenceZh: '没有水、阳光和土壤中的营养，植物 _____ 无法生存。'
+    answer: 'can'
+    explanation: '"Cannot survive" = are not able to survive. "Can" expresses ability (negative here).'
+    explanationZh: '"Cannot survive" = 无法生存。"Can"表示能力（这里是否定）。'
+    grammarPoint: 'Modal: can (inability)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0998
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The experiment showed that plants grow 30% faster _____ classical music.'
+    sentenceZh: '实验表明植物在古典音乐 _____ 生长快30%。'
+    answer: 'with'
+    explanation: '"With classical music" = when classical music is present/playing. "With" indicates accompaniment.'
+    explanationZh: '"With classical music" = 当古典音乐存在/播放时。"With"表示伴随。'
+    grammarPoint: 'Preposition: with (accompaniment)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U0999
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'The research team _____ up of twelve scientists from five different countries.'
+    sentenceZh: '研究团队 _____ 来自五个不同国家的十二位科学家组成。'
+    answer: 'made'
+    explanation: '"Made up of" = "consisting of." "The team was made up of twelve scientists."'
+    explanationZh: '"Made up of" = "由……组成"。"The team was made up of twelve scientists"。'
+    grammarPoint: 'Phrasal verb: made up of'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: U1000
+    type: open-cloze
+    tags: [open-cloze, Q06, difficulty-3]
+    context: science
+    sentence: 'Such a discovery would prove that Earth is not unique — and _____ life may exist throughout the cosmos.'
+    sentenceZh: '这样的发现将证明地球并非独一无二——_____ 生命可能存在于整个宇宙中。'
+    answer: 'that'
+    explanation: '"Prove that... and that..." — two parallel "that" clauses after "prove." The second "that" introduces the second thing being proved.'
+    explanationZh: '"Prove that... and that..."——"prove"后两个平行的"that"从句。第二个"that"引入被证明的第二件事。'
+    grammarPoint: 'Parallel that-clauses'
+    relatedQuest: Q06
+    difficulty: 3

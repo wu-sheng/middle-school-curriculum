@@ -1,0 +1,1561 @@
+category: 'Multiple-Choice Cloze & Open Cloze'
+categoryZh: '选择式完形填空与开放式完形填空'
+fcepart: 'Use of English Part 1 & Part 2'
+questions:
+  # ============================================================
+  # U0801-U0850: Multiple-choice cloze (Part 1)
+  # Narrative/story themed, testing collocations, prepositions, linking words
+  # ============================================================
+  - id: U0801
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The detective decided to _____ an investigation into the mysterious disappearance.'
+    sentenceZh: '侦探决定 _____ 对神秘失踪事件的调查。'
+    options:
+      A: 'make'
+      B: 'do'
+      C: 'carry out'
+      D: 'take'
+    answer: 'C'
+    explanation: '"Carry out an investigation" is the correct collocation. "Do/make/take an investigation" are not natural.'
+    explanationZh: '"carry out an investigation"是正确的搭配。"do/make/take an investigation"不自然。'
+    grammarPoint: 'Collocation: carry out + investigation'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0802
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The old map was the key _____ finding the hidden treasure.'
+    sentenceZh: '旧地图是找到隐藏宝藏的关键。'
+    options:
+      A: 'for'
+      B: 'to'
+      C: 'of'
+      D: 'in'
+    answer: 'B'
+    explanation: '"The key to" is the correct preposition combination. "Key to + -ing" for purpose.'
+    explanationZh: '"the key to"是正确的介词搭配。"key to + -ing"表示目的。'
+    grammarPoint: 'Preposition: key to'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0803
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The hero was exhausted. _____, he refused to stop until he had found the missing child.'
+    sentenceZh: '英雄精疲力竭了。_____，他拒绝停下来直到找到那个失踪的孩子。'
+    options:
+      A: 'Therefore'
+      B: 'Furthermore'
+      C: 'Nevertheless'
+      D: 'Consequently'
+    answer: 'C'
+    explanation: '"Nevertheless" shows contrast — despite exhaustion, he continued. "Therefore/Consequently" show result, not contrast.'
+    explanationZh: '"Nevertheless"表示对比——尽管精疲力竭，他仍然继续。"Therefore/Consequently"表示结果，不是对比。'
+    grammarPoint: 'Linking word: nevertheless (contrast)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0804
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The writer _____ inspiration from her travels around the world.'
+    sentenceZh: '作家从她的环球旅行中 _____ 灵感。'
+    options:
+      A: 'took'
+      B: 'drew'
+      C: 'made'
+      D: 'caught'
+    answer: 'B'
+    explanation: '"Drew inspiration from" is the correct collocation. "Draw inspiration" means to get creative ideas from something.'
+    explanationZh: '"drew inspiration from"是正确的搭配。"draw inspiration"意思是从某物中获得创意。'
+    grammarPoint: 'Collocation: draw inspiration from'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0805
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The villain disguised himself _____ an old beggar to enter the castle unnoticed.'
+    sentenceZh: '反派把自己伪装 _____ 一个老乞丐进入城堡而没有被注意到。'
+    options:
+      A: 'like'
+      B: 'into'
+      C: 'as'
+      D: 'for'
+    answer: 'C'
+    explanation: '"Disguise oneself as" is the correct preposition. "As" indicates the role or identity taken on.'
+    explanationZh: '"disguise oneself as"是正确的介词。"as"表示扮演的角色或身份。'
+    grammarPoint: 'Preposition: disguise as'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0806
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____, the bridge collapsed, making it impossible for the villagers to cross the river.'
+    sentenceZh: '_____，桥坍塌了，村民们无法过河。'
+    options:
+      A: 'Nevertheless'
+      B: 'Meanwhile'
+      C: 'Furthermore'
+      D: 'However'
+    answer: 'B'
+    explanation: '"Meanwhile" introduces a simultaneous event in a different location — perfect for switching between storylines.'
+    explanationZh: '"Meanwhile"引入在不同地点同时发生的事件——非常适合在故事线之间切换。'
+    grammarPoint: 'Linking word: meanwhile (simultaneous event)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0807
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The sudden noise _____ her attention and she looked up from her book.'
+    sentenceZh: '突然的噪音 _____ 了她的注意力，她从书中抬起头。'
+    options:
+      A: 'caught'
+      B: 'took'
+      C: 'gave'
+      D: 'paid'
+    answer: 'A'
+    explanation: '"Caught her attention" is the correct collocation for something that suddenly attracted notice.'
+    explanationZh: '"caught her attention"是描述突然引起注意的正确搭配。'
+    grammarPoint: 'Collocation: catch attention'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0808
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The author _____ the story in a small fishing village on the coast of Cornwall.'
+    sentenceZh: '作者把故事 _____ 在康沃尔海岸的一个小渔村。'
+    options:
+      A: 'placed'
+      B: 'put'
+      C: 'set'
+      D: 'laid'
+    answer: 'C'
+    explanation: '"Set a story in" is the correct collocation for choosing the location of a narrative.'
+    explanationZh: '"set a story in"是为叙事选择地点的正确搭配。'
+    grammarPoint: 'Collocation: set a story in'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0809
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The princess was _____ the verge of giving up when she spotted a light in the distance.'
+    sentenceZh: '公主 _____ 即将放弃时，她看到了远处的一盏灯。'
+    options:
+      A: 'at'
+      B: 'on'
+      C: 'in'
+      D: 'by'
+    answer: 'B'
+    explanation: '"On the verge of" is a fixed expression meaning "about to" or "very close to."'
+    explanationZh: '"on the verge of"是一个固定表达，意思是"即将"或"接近"。'
+    grammarPoint: 'Fixed expression: on the verge of'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0810
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The path looked safe. _____, the wise traveller checked for traps before stepping forward.'
+    sentenceZh: '道路看起来很安全。_____，聪明的旅行者在向前走之前检查了陷阱。'
+    options:
+      A: 'Moreover'
+      B: 'Even so'
+      C: 'Therefore'
+      D: 'As a result'
+    answer: 'B'
+    explanation: '"Even so" means "despite that" — the traveller was cautious despite the path looking safe.'
+    explanationZh: '"Even so"意思是"尽管如此"——尽管路看起来安全，旅行者仍然很谨慎。'
+    grammarPoint: 'Linking word: even so (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0811
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The twist at the end of the story _____ everyone by surprise.'
+    sentenceZh: '故事结尾的转折让所有人 _____ 意外。'
+    options:
+      A: 'made'
+      B: 'gave'
+      C: 'took'
+      D: 'caught'
+    answer: 'C'
+    explanation: '"Took everyone by surprise" is the correct collocation meaning to surprise unexpectedly.'
+    explanationZh: '"took everyone by surprise"是正确搭配，意思是出乎意料地令人惊讶。'
+    grammarPoint: 'Collocation: take by surprise'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0812
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She made up her _____ to follow the mysterious stranger.'
+    sentenceZh: '她下定 _____ 跟踪那个神秘的陌生人。'
+    options:
+      A: 'head'
+      B: 'mind'
+      C: 'thought'
+      D: 'brain'
+    answer: 'B'
+    explanation: '"Made up her mind" is a fixed expression meaning "decided firmly."'
+    explanationZh: '"made up her mind"是固定表达，意思是"坚定地决定"。'
+    grammarPoint: 'Fixed expression: make up one''s mind'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0813
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The hero succeeded _____ escaping from the dungeon through a secret tunnel.'
+    sentenceZh: '英雄成功 _____ 通过一条秘密隧道从地牢逃脱。'
+    options:
+      A: 'at'
+      B: 'in'
+      C: 'on'
+      D: 'with'
+    answer: 'B'
+    explanation: '"Succeed in + -ing" is the correct preposition pattern.'
+    explanationZh: '"succeed in + -ing"是正确的介词搭配。'
+    grammarPoint: 'Preposition: succeed in'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0814
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ searching the house for hours, they eventually found the hidden diary.'
+    sentenceZh: '_____ 在房子里搜索了几个小时，他们终于找到了隐藏的日记。'
+    options:
+      A: 'Despite'
+      B: 'After'
+      C: 'Although'
+      D: 'While'
+    answer: 'B'
+    explanation: '"After + -ing" shows the sequence — the searching happened before finding the diary.'
+    explanationZh: '"After + -ing"表示顺序——搜索发生在找到日记之前。'
+    grammarPoint: 'After + -ing (sequence)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0815
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The old woman _____ a glance at the letter and immediately knew who had sent it.'
+    sentenceZh: '老妇人 _____ 了一眼那封信，马上就知道是谁寄的。'
+    options:
+      A: 'took'
+      B: 'cast'
+      C: 'made'
+      D: 'had'
+    answer: 'B'
+    explanation: '"Cast a glance" is a literary collocation meaning to look briefly at something.'
+    explanationZh: '"cast a glance"是一个文学搭配，意思是简短地看一眼。'
+    grammarPoint: 'Collocation: cast a glance'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0816
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The story _____ place in a small village during the Middle Ages.'
+    sentenceZh: '故事 _____ 在中世纪的一个小村庄。'
+    options:
+      A: 'had'
+      B: 'took'
+      C: 'made'
+      D: 'gave'
+    answer: 'B'
+    explanation: '"Took place" means "happened" — a very common collocation for events and stories.'
+    explanationZh: '"took place"意思是"发生"——描述事件和故事的非常常用搭配。'
+    grammarPoint: 'Collocation: take place'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0817
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The children stumbled _____ a hidden cave behind the waterfall.'
+    sentenceZh: '孩子们 _____ 发现了瀑布后面的一个隐藏洞穴。'
+    options:
+      A: 'into'
+      B: 'upon'
+      C: 'over'
+      D: 'through'
+    answer: 'B'
+    explanation: '"Stumbled upon" means "found by accident" — a useful phrasal verb for stories.'
+    explanationZh: '"stumbled upon"意思是"偶然发现"——讲故事时很有用的短语动词。'
+    grammarPoint: 'Phrasal verb: stumble upon'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0818
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The cave was dark and dangerous. _____, it was the only way to reach the other side.'
+    sentenceZh: '洞穴又黑又危险。_____，这是到达另一边的唯一方式。'
+    options:
+      A: 'Furthermore'
+      B: 'However'
+      C: 'Therefore'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: '"However" introduces a contrasting point — despite being dangerous, it was the only option.'
+    explanationZh: '"However"引入对比——尽管危险，这是唯一的选择。'
+    grammarPoint: 'Linking word: however (contrast)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0819
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The witch _____ a curse on the entire kingdom.'
+    sentenceZh: '女巫对整个王国 _____ 了诅咒。'
+    options:
+      A: 'put'
+      B: 'made'
+      C: 'set'
+      D: 'threw'
+    answer: 'A'
+    explanation: '"Put a curse on" is the standard collocation for casting a curse on someone/something.'
+    explanationZh: '"put a curse on"是对某人/某物施加诅咒的标准搭配。'
+    grammarPoint: 'Collocation: put a curse on'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0820
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The mysterious letter _____ her curiosity, and she could not stop thinking about it.'
+    sentenceZh: '神秘的信 _____ 了她的好奇心，她无法停止思考它。'
+    options:
+      A: 'raised'
+      B: 'arose'
+      C: 'aroused'
+      D: 'rose'
+    answer: 'C'
+    explanation: '"Aroused her curiosity" is the correct collocation meaning "made her curious."'
+    explanationZh: '"aroused her curiosity"是正确搭配，意思是"引起了她的好奇心"。'
+    grammarPoint: 'Collocation: arouse curiosity'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0821
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The children were _____ the point of giving up when they heard a faint voice calling for help.'
+    sentenceZh: '孩子们 _____ 即将放弃时，听到了微弱的呼救声。'
+    options:
+      A: 'at'
+      B: 'on'
+      C: 'in'
+      D: 'to'
+    answer: 'B'
+    explanation: '"On the point of" is a fixed expression meaning "about to" or "just about to."'
+    explanationZh: '"on the point of"是固定表达，意思是"即将"。'
+    grammarPoint: 'Fixed expression: on the point of'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0822
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The storm had damaged the roof. _____, water was leaking into every room of the house.'
+    sentenceZh: '暴风雨损坏了屋顶。_____，水渗进了房子的每个房间。'
+    options:
+      A: 'Nevertheless'
+      B: 'As a result'
+      C: 'On the other hand'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: '"As a result" shows cause and effect — the damaged roof caused the leaking.'
+    explanationZh: '"As a result"表示因果——损坏的屋顶导致了漏水。'
+    grammarPoint: 'Linking word: as a result (consequence)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0823
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The knight _____ his best to protect the villagers from the dragon.'
+    sentenceZh: '骑士 _____ 最大努力保护村民免受龙的侵害。'
+    options:
+      A: 'made'
+      B: 'did'
+      C: 'gave'
+      D: 'took'
+    answer: 'B'
+    explanation: '"Did his best" is the correct collocation meaning "tried as hard as possible."'
+    explanationZh: '"did his best"是正确搭配，意思是"尽最大努力"。'
+    grammarPoint: 'Collocation: do one''s best'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0824
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She had no _____ but to trust the stranger and follow him through the forest.'
+    sentenceZh: '她别无 _____ 只能信任那个陌生人，跟着他穿过森林。'
+    options:
+      A: 'way'
+      B: 'choice'
+      C: 'chance'
+      D: 'option'
+    answer: 'B'
+    explanation: '"Had no choice but to" is a fixed expression meaning there was no alternative.'
+    explanationZh: '"had no choice but to"是固定表达，意思是没有其他选择。'
+    grammarPoint: 'Fixed expression: have no choice but to'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0825
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The ending of the story was based _____ a true event that happened in the author''s childhood.'
+    sentenceZh: '故事的结尾 _____ 作者童年时发生的真实事件。'
+    options:
+      A: 'in'
+      B: 'at'
+      C: 'on'
+      D: 'from'
+    answer: 'C'
+    explanation: '"Based on" is the correct preposition — the story was founded on a true event.'
+    explanationZh: '"based on"是正确的介词——故事以真实事件为基础。'
+    grammarPoint: 'Preposition: based on'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0826
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The villain seemed unstoppable. _____, the young hero had a secret weapon.'
+    sentenceZh: '反派似乎不可阻挡。_____，年轻的英雄有一件秘密武器。'
+    options:
+      A: 'Furthermore'
+      B: 'Consequently'
+      C: 'What is more'
+      D: 'Little did he know'
+    answer: 'D'
+    explanation: '"Little did he know" is a narrative device that withholds information, building suspense.'
+    explanationZh: '"Little did he know"是一个叙事手法，隐藏信息以制造悬念。'
+    grammarPoint: 'Narrative device: little did he know'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0827
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The author _____ the reader in suspense until the very last page.'
+    sentenceZh: '作者让读者 _____ 悬念直到最后一页。'
+    options:
+      A: 'held'
+      B: 'kept'
+      C: 'put'
+      D: 'made'
+    answer: 'B'
+    explanation: '"Kept the reader in suspense" is the correct collocation for maintaining tension in a story.'
+    explanationZh: '"kept the reader in suspense"是保持故事紧张感的正确搭配。'
+    grammarPoint: 'Collocation: keep in suspense'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0828
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'It gradually _____ on her that the old woman was telling the truth.'
+    sentenceZh: '她渐渐 _____ 到那个老太太说的是真话。'
+    options:
+      A: 'came'
+      B: 'dawned'
+      C: 'fell'
+      D: 'grew'
+    answer: 'B'
+    explanation: '"It dawned on her" means she gradually realised — a common narrative expression.'
+    explanationZh: '"it dawned on her"意思是她渐渐意识到——一个常见的叙事表达。'
+    grammarPoint: 'Expression: it dawned on someone'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0829
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The traveller was grateful _____ the stranger who had shown him the way.'
+    sentenceZh: '旅行者对给他指路的陌生人非常 _____。'
+    options:
+      A: 'for'
+      B: 'to'
+      C: 'with'
+      D: 'at'
+    answer: 'B'
+    explanation: '"Grateful to someone" for the person; "grateful for something" for the thing.'
+    explanationZh: '对人用"grateful to someone"；对事物用"grateful for something"。'
+    grammarPoint: 'Preposition: grateful to (person)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0830
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She _____ a deep breath and opened the mysterious box.'
+    sentenceZh: '她 _____ 了一口深气，打开了神秘的盒子。'
+    options:
+      A: 'made'
+      B: 'did'
+      C: 'had'
+      D: 'took'
+    answer: 'D'
+    explanation: '"Took a deep breath" is the correct collocation.'
+    explanationZh: '"took a deep breath"是正确的搭配。'
+    grammarPoint: 'Collocation: take a deep breath'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0831
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ the danger, the brave girl continued walking towards the dark forest.'
+    sentenceZh: '_____ 危险，勇敢的女孩继续向黑暗的森林走去。'
+    options:
+      A: 'Although'
+      B: 'Because of'
+      C: 'Despite'
+      D: 'Due to'
+    answer: 'C'
+    explanation: '"Despite" + noun shows contrast. "Although" needs a clause with a verb.'
+    explanationZh: '"Despite" + 名词表示对比。"Although"需要带动词的从句。'
+    grammarPoint: 'Despite + noun (contrast)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0832
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The story came to a dramatic _____ when the hero and villain finally met.'
+    sentenceZh: '当英雄和反派终于相遇时，故事达到了戏剧性的 _____。'
+    options:
+      A: 'top'
+      B: 'climax'
+      C: 'peak'
+      D: 'height'
+    answer: 'B'
+    explanation: '"Came to a climax" is the standard expression for the highest point of a story.'
+    explanationZh: '"came to a climax"是描述故事最高点的标准表达。'
+    grammarPoint: 'Collocation: come to a climax'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0833
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The knight was determined to fight _____ the kingdom''s freedom.'
+    sentenceZh: '骑士决心为王国的自由而 _____。'
+    options:
+      A: 'to'
+      B: 'for'
+      C: 'with'
+      D: 'against'
+    answer: 'B'
+    explanation: '"Fight for" means to struggle in order to achieve or protect something.'
+    explanationZh: '"fight for"意思是为了获得或保护某物而战斗。'
+    grammarPoint: 'Preposition: fight for'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0834
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'Her voice _____ with emotion as she told them about her journey.'
+    sentenceZh: '当她讲述她的旅程时，她的声音 _____ 着感情。'
+    options:
+      A: 'trembled'
+      B: 'shivered'
+      C: 'shook'
+      D: 'vibrated'
+    answer: 'A'
+    explanation: '"Voice trembled with emotion" is the most natural collocation for showing emotional speech.'
+    explanationZh: '"voice trembled with emotion"是展示情感说话时最自然的搭配。'
+    grammarPoint: 'Collocation: voice trembled'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0835
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The weather was terrible. _____, the performance went ahead as planned.'
+    sentenceZh: '天气很糟糕。_____，演出按计划进行了。'
+    options:
+      A: 'Consequently'
+      B: 'Furthermore'
+      C: 'Nonetheless'
+      D: 'Therefore'
+    answer: 'C'
+    explanation: '"Nonetheless" (same as "nevertheless") shows the performance continued despite bad weather.'
+    explanationZh: '"Nonetheless"（同"nevertheless"）表示尽管天气不好，演出仍然继续。'
+    grammarPoint: 'Linking word: nonetheless (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0836
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The plot _____ when the detective discovered a second set of footprints.'
+    sentenceZh: '当侦探发现了第二组脚印时，情节 _____。'
+    options:
+      A: 'deepened'
+      B: 'thickened'
+      C: 'widened'
+      D: 'strengthened'
+    answer: 'B'
+    explanation: '"The plot thickened" is a fixed expression meaning the story became more complicated.'
+    explanationZh: '"the plot thickened"是固定表达，意思是故事变得更加复杂。'
+    grammarPoint: 'Fixed expression: the plot thickened'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0837
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She could not _____ the feeling that someone was watching her.'
+    sentenceZh: '她无法 _____ 被人注视的感觉。'
+    options:
+      A: 'leave'
+      B: 'shake off'
+      C: 'throw'
+      D: 'put away'
+    answer: 'B'
+    explanation: '"Shake off a feeling" means to get rid of an unwanted feeling.'
+    explanationZh: '"shake off a feeling"意思是摆脱不想要的感觉。'
+    grammarPoint: 'Phrasal verb: shake off'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0838
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The fairy tale has been passed _____ from generation to generation for centuries.'
+    sentenceZh: '这个童话故事已经 _____ 代代相传了几个世纪。'
+    options:
+      A: 'along'
+      B: 'down'
+      C: 'over'
+      D: 'through'
+    answer: 'B'
+    explanation: '"Passed down" means transmitted from older to younger generations.'
+    explanationZh: '"passed down"意思是从老一辈传给年轻一辈。'
+    grammarPoint: 'Phrasal verb: pass down'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0839
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The letter _____ to light a secret that had been hidden for fifty years.'
+    sentenceZh: '这封信 _____ 了一个隐藏了五十年的秘密。'
+    options:
+      A: 'brought'
+      B: 'came'
+      C: 'took'
+      D: 'put'
+    answer: 'A'
+    explanation: '"Brought to light" means revealed or exposed something hidden.'
+    explanationZh: '"brought to light"意思是揭示或暴露了隐藏的东西。'
+    grammarPoint: 'Expression: bring to light'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0840
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ her surprise, the old castle was not abandoned — a family was living inside.'
+    sentenceZh: '_____ 她惊讶的是，旧城堡并非荒废——里面住着一家人。'
+    options:
+      A: 'For'
+      B: 'With'
+      C: 'To'
+      D: 'In'
+    answer: 'C'
+    explanation: '"To her surprise" is a fixed narrative expression introducing an unexpected discovery.'
+    explanationZh: '"To her surprise"是一个固定的叙事表达，引入意想不到的发现。'
+    grammarPoint: 'Expression: to one''s surprise'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0841
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The brave girl _____ up the courage to knock on the witch''s door.'
+    sentenceZh: '勇敢的女孩 _____ 起勇气敲了女巫的门。'
+    options:
+      A: 'picked'
+      B: 'gathered'
+      C: 'collected'
+      D: 'built'
+    answer: 'B'
+    explanation: '"Gathered up the courage" is the natural collocation for mustering bravery.'
+    explanationZh: '"gathered up the courage"是鼓起勇气的自然搭配。'
+    grammarPoint: 'Collocation: gather courage'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0842
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'He _____ sight of a figure moving between the trees.'
+    sentenceZh: '他 _____ 看到一个身影在树间移动。'
+    options:
+      A: 'took'
+      B: 'caught'
+      C: 'had'
+      D: 'got'
+    answer: 'B'
+    explanation: '"Caught sight of" means saw briefly or unexpectedly.'
+    explanationZh: '"caught sight of"意思是短暂地或意外地看到。'
+    grammarPoint: 'Collocation: catch sight of'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0843
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The main character was _____ search of her missing brother.'
+    sentenceZh: '主角正在 _____ 找寻她失踪的弟弟。'
+    options:
+      A: 'on'
+      B: 'in'
+      C: 'at'
+      D: 'for'
+    answer: 'B'
+    explanation: '"In search of" is a fixed preposition phrase meaning "looking for."'
+    explanationZh: '"in search of"是固定介词短语，意思是"寻找"。'
+    grammarPoint: 'Fixed expression: in search of'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0844
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The adventure _____ a turn for the worse when the map was stolen.'
+    sentenceZh: '当地图被偷时，冒险 _____ 了更糟的转折。'
+    options:
+      A: 'made'
+      B: 'had'
+      C: 'took'
+      D: 'gave'
+    answer: 'C'
+    explanation: '"Took a turn for the worse" is a fixed expression meaning the situation got worse.'
+    explanationZh: '"took a turn for the worse"是固定表达，意思是情况变糟了。'
+    grammarPoint: 'Expression: take a turn for the worse'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0845
+    type: multiple-choice-cloze
+    tags: [linking-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'He was badly injured. _____, he managed to drag himself to the nearest village.'
+    sentenceZh: '他受了重伤。_____，他设法把自己拖到了最近的村庄。'
+    options:
+      A: 'Even so'
+      B: 'As a result'
+      C: 'Furthermore'
+      D: 'In other words'
+    answer: 'A'
+    explanation: '"Even so" shows contrast — despite being injured, he managed to reach the village.'
+    explanationZh: '"Even so"表示对比——尽管受了伤，他还是设法到达了村庄。'
+    grammarPoint: 'Linking word: even so'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0846
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'A chill ran _____ her spine as she heard the footsteps behind her.'
+    sentenceZh: '当她听到身后的脚步声时，一阵寒意 _____ 她的脊椎。'
+    options:
+      A: 'through'
+      B: 'down'
+      C: 'along'
+      D: 'across'
+    answer: 'B'
+    explanation: '"A chill ran down her spine" is a fixed expression describing a feeling of fear.'
+    explanationZh: '"a chill ran down her spine"是描述恐惧感的固定表达。'
+    grammarPoint: 'Expression: a chill ran down one''s spine'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0847
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The writer _____ a vivid picture of life in the nineteenth century.'
+    sentenceZh: '作家 _____ 了十九世纪生活的生动画面。'
+    options:
+      A: 'drew'
+      B: 'painted'
+      C: 'made'
+      D: 'created'
+    answer: 'B'
+    explanation: '"Painted a vivid picture" is the most literary and natural collocation in this context.'
+    explanationZh: '"painted a vivid picture"在这个语境中是最具文学性和最自然的搭配。'
+    grammarPoint: 'Collocation: paint a vivid picture'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0848
+    type: multiple-choice-cloze
+    tags: [preposition, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She was _____ a loss for words when she saw the magical garden.'
+    sentenceZh: '当她看到魔法花园时，她 _____ 失语了。'
+    options:
+      A: 'in'
+      B: 'on'
+      C: 'at'
+      D: 'with'
+    answer: 'C'
+    explanation: '"At a loss for words" is a fixed expression meaning unable to think of what to say.'
+    explanationZh: '"at a loss for words"是固定表达，意思是说不出话来。'
+    grammarPoint: 'Expression: at a loss for words'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0849
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The children _____ friends with the dragon and learned to fly on its back.'
+    sentenceZh: '孩子们和龙 _____ 了朋友，学会了骑在它背上飞行。'
+    options:
+      A: 'became'
+      B: 'made'
+      C: 'got'
+      D: 'turned'
+    answer: 'B'
+    explanation: '"Made friends with" is the correct collocation for forming a friendship.'
+    explanationZh: '"made friends with"是形成友谊的正确搭配。'
+    grammarPoint: 'Collocation: make friends with'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0850
+    type: multiple-choice-cloze
+    tags: [collocation, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'And so the brave girl''s journey _____ to an end, but her story would be told for generations.'
+    sentenceZh: '于是勇敢女孩的旅程 _____ 了结束，但她的故事将被传颂几代人。'
+    options:
+      A: 'went'
+      B: 'came'
+      C: 'reached'
+      D: 'arrived'
+    answer: 'B'
+    explanation: '"Came to an end" is the standard collocation for something finishing.'
+    explanationZh: '"came to an end"是某事结束的标准搭配。'
+    grammarPoint: 'Collocation: come to an end'
+    relatedQuest: Q05
+    difficulty: 2
+
+  # ============================================================
+  # U0851-U0900: Open cloze (Part 2)
+  # Fill one word, testing grammar/function words
+  # ============================================================
+  - id: U0851
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She had _____ idea where the treasure was hidden.'
+    sentenceZh: '她 _____ 不知道宝藏藏在哪里。'
+    answer: 'no'
+    explanation: '"Had no idea" is a fixed expression meaning "did not know at all."'
+    explanationZh: '"had no idea"是固定表达，意思是"完全不知道"。'
+    grammarPoint: 'Fixed expression: have no idea'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0852
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'It was not _____ midnight that the clock struck thirteen times.'
+    sentenceZh: '直到午夜，钟才敲了十三下。'
+    answer: 'until'
+    explanation: '"It was not until...that" is a cleft sentence structure for emphasis.'
+    explanationZh: '"It was not until...that"是一个用于强调的分裂句结构。'
+    grammarPoint: 'Cleft sentence: not until...that'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0853
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The cave was _____ dark that they could not see their own hands.'
+    sentenceZh: '洞穴 _____ 黑以至于他们看不见自己的手。'
+    answer: 'so'
+    explanation: '"So...that" is a result clause showing the degree of darkness.'
+    explanationZh: '"so...that"是结果从句，表示黑暗的程度。'
+    grammarPoint: 'So...that (result clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0854
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ matter how hard she tried, the door would not open.'
+    sentenceZh: '_____ 论她怎么努力，门都打不开。'
+    answer: 'No'
+    explanation: '"No matter how" means "regardless of how" — showing persistence without success.'
+    explanationZh: '"No matter how"意思是"无论怎样"——表示坚持但没有成功。'
+    grammarPoint: 'No matter how (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0855
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'He crept along the corridor _____ order not to wake anyone.'
+    sentenceZh: '他沿着走廊悄悄走，_____ 为了不吵醒任何人。'
+    answer: 'in'
+    explanation: '"In order not to" expresses purpose — he crept to avoid waking people.'
+    explanationZh: '"in order not to"表达目的——他悄悄走是为了避免吵醒人们。'
+    grammarPoint: 'In order (not) to (purpose)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0856
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The dragon was twice _____ big as any creature they had ever seen.'
+    sentenceZh: '龙是他们见过的任何生物的两 _____ 大。'
+    answer: 'as'
+    explanation: '"Twice as big as" is the structure for expressing multiples in comparisons.'
+    explanationZh: '"twice as big as"是在比较中表达倍数的结构。'
+    grammarPoint: 'Comparison: twice as...as'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0857
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ had she left the house when it started to rain heavily.'
+    sentenceZh: '她刚离开房子，就开始下大雨了。'
+    answer: 'No sooner'
+    explanation: '"No sooner had...when/than" shows two events in rapid succession with inverted word order.'
+    explanationZh: '"No sooner had...when/than"以倒装语序表示两个事件快速连续发生。'
+    grammarPoint: 'No sooner...than/when (inversion)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0858
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She _____ never forget the kindness of the old man who had saved her life.'
+    sentenceZh: '她 _____ 永远不会忘记那位救了她命的老人的善良。'
+    answer: 'would'
+    explanation: '"Would never forget" expresses a future-in-the-past certainty — she was certain she would always remember.'
+    explanationZh: '"would never forget"表达过去的将来确定性——她确信自己会永远记住。'
+    grammarPoint: 'Would (future in the past)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0859
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The treasure had been hidden _____ nobody would ever find it.'
+    sentenceZh: '宝藏被藏起来，_____ 没有人能找到它。'
+    answer: 'so that'
+    explanation: '"So that" introduces a purpose clause — the hiding was done with the intention of keeping it secret.'
+    explanationZh: '"so that"引入目的从句——隐藏的目的是保密。'
+    grammarPoint: 'So that (purpose clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0860
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'There was _____ a strong wind that the ship could not leave the harbour.'
+    sentenceZh: '风 _____ 大以至于船无法离开港口。'
+    answer: 'such'
+    explanation: '"Such a strong wind that" — "such" before a noun phrase in a result clause.'
+    explanationZh: '"such a strong wind that"——"such"在结果从句中的名词短语前。'
+    grammarPoint: 'Such...that (result clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0861
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'It was only _____ she reached home that she realised she had left the letter behind.'
+    sentenceZh: '直到她到家，她才意识到把信落下了。'
+    answer: 'when'
+    explanation: '"It was only when...that" is a cleft sentence for emphasis on the timing.'
+    explanationZh: '"It was only when...that"是一个强调时间的分裂句。'
+    grammarPoint: 'Cleft sentence: it was only when'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0862
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She ran as fast as she _____, but the train had already left the station.'
+    sentenceZh: '她尽可能快地跑，但火车已经离开了车站。'
+    answer: 'could'
+    explanation: '"As fast as she could" — the modal "could" completes the comparison of ability.'
+    explanationZh: '"as fast as she could"——情态动词"could"完成了能力的比较。'
+    grammarPoint: 'As...as + could (maximum effort)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0863
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'Not _____ did she find the treasure, but she also discovered a hidden message.'
+    sentenceZh: '她不仅找到了宝藏，而且还发现了一条隐藏的信息。'
+    answer: 'only'
+    explanation: '"Not only...but also" is a correlative conjunction for emphasis.'
+    explanationZh: '"not only...but also"是一个强调的关联连词。'
+    grammarPoint: 'Not only...but also'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0864
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The door _____ which they had entered was now locked from the outside.'
+    sentenceZh: '他们进来的那扇门现在从外面锁上了。'
+    answer: 'through'
+    explanation: '"The door through which" — the preposition "through" goes with the relative pronoun.'
+    explanationZh: '"the door through which"——介词"through"与关系代词搭配。'
+    grammarPoint: 'Preposition + which (relative clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0865
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ having no map, the explorers managed to find their way through the forest.'
+    sentenceZh: '_____ 没有地图，探险者们还是设法穿过了森林。'
+    answer: 'Despite'
+    explanation: '"Despite + -ing" shows contrast — they succeeded even without a map.'
+    explanationZh: '"Despite + -ing"表示对比——即使没有地图他们也成功了。'
+    grammarPoint: 'Despite + -ing (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0866
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She looked _____ if she had seen a ghost — her face was completely white.'
+    sentenceZh: '她看起来好 _____ 看到了鬼——她的脸完全变白了。'
+    answer: 'as'
+    explanation: '"Looked as if" introduces an appearance clause — she appeared ghostly.'
+    explanationZh: '"looked as if"引入外表从句——她看起来像见了鬼。'
+    grammarPoint: 'As if (appearance clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0867
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'He searched every room but there was _____ sign of the missing necklace.'
+    sentenceZh: '他搜遍了每个房间但 _____ 没有找到失踪的项链的迹象。'
+    answer: 'no'
+    explanation: '"No sign of" means there was absolutely no evidence or trace.'
+    explanationZh: '"no sign of"意思是完全没有证据或痕迹。'
+    grammarPoint: 'No + noun (negation)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0868
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The story ended _____ the hero returning home after many years away.'
+    sentenceZh: '故事以英雄在离开多年后回家 _____ 结束。'
+    answer: 'with'
+    explanation: '"Ended with" — the preposition "with" introduces the final event.'
+    explanationZh: '"ended with"——介词"with"引入最后的事件。'
+    grammarPoint: 'End with (preposition)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0869
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'Little _____ she know that her life was about to change forever.'
+    sentenceZh: '她 _____ 也不知道她的生活即将永远改变。'
+    answer: 'did'
+    explanation: '"Little did she know" uses inversion for emphasis — a narrative device.'
+    explanationZh: '"Little did she know"使用倒装来强调——一个叙事手法。'
+    grammarPoint: 'Inversion: little did + subject + know'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0870
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The forest was far _____ dangerous than they had expected.'
+    sentenceZh: '森林 _____ 比他们预期的危险得多。'
+    answer: 'more'
+    explanation: '"Far more dangerous" — "far" intensifies the comparative "more dangerous."'
+    explanationZh: '"far more dangerous"——"far"加强了比较级"more dangerous"。'
+    grammarPoint: 'Far + comparative'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0871
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'They had _____ choice but to accept the dragon''s offer.'
+    sentenceZh: '他们别 _____ 选择只能接受龙的提议。'
+    answer: 'no'
+    explanation: '"Had no choice but to" — a fixed expression meaning the only option.'
+    explanationZh: '"had no choice but to"——固定表达，意思是唯一的选择。'
+    grammarPoint: 'Have no choice but to'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0872
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The moment he _____ the room, he sensed that something was wrong.'
+    sentenceZh: '他一 _____ 房间，就感觉到有什么不对劲。'
+    answer: 'entered'
+    explanation: '"The moment" + past simple — shows immediate sequence of events.'
+    explanationZh: '"The moment" + 一般过去时——表示事件的即时顺序。'
+    grammarPoint: 'The moment + past simple'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0873
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The bridge was too old _____ support the weight of the dragon.'
+    sentenceZh: '桥太旧了 _____ 承受龙的重量。'
+    answer: 'to'
+    explanation: '"Too old to" — the "too...to" structure shows inability.'
+    explanationZh: '"too old to"——"too...to"结构表示无法。'
+    grammarPoint: 'Too...to (inability)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0874
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'If _____ she had told someone the truth, the disaster could have been avoided.'
+    sentenceZh: '_____ 她当时告诉别人真相就好了，灾难本可以避免。'
+    answer: 'only'
+    explanation: '"If only" + past perfect expresses strong regret about a past event.'
+    explanationZh: '"if only" + 过去完成时表达对过去事件的强烈遗憾。'
+    grammarPoint: 'If only + past perfect (regret)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0875
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The children had _____ been so frightened in their entire lives.'
+    sentenceZh: '孩子们一生中 _____ 从未如此害怕过。'
+    answer: 'never'
+    explanation: '"Had never been" — past perfect with "never" for a life-time first experience.'
+    explanationZh: '"had never been"——过去完成时搭配"never"表示一生中的第一次经历。'
+    grammarPoint: 'Past perfect + never'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0876
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'He stood there, unable to _____ a single word.'
+    sentenceZh: '他站在那里，_____ 一个字都说不出来。'
+    answer: 'say'
+    explanation: '"Unable to say" — "to" is part of the infinitive structure after "unable."'
+    explanationZh: '"unable to say"——"to"是"unable"后不定式结构的一部分。'
+    grammarPoint: 'Unable to + infinitive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0877
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The story _____ told from the perspective of a young girl living in a magical forest.'
+    sentenceZh: '这个故事 _____ 从一个住在魔法森林里的年轻女孩的视角讲述的。'
+    answer: 'is'
+    explanation: '"Is told" — present passive voice to describe the narrative perspective.'
+    explanationZh: '"is told"——现在被动语态描述叙事视角。'
+    grammarPoint: 'Passive voice: is told'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0878
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She could not help _____ wonder what was behind the locked door.'
+    sentenceZh: '她忍不住 _____ 想门后面有什么。'
+    answer: 'but'
+    explanation: '"Could not help but wonder" — a fixed pattern meaning she could not stop herself from wondering.'
+    explanationZh: '"could not help but wonder"——固定搭配，意思是她忍不住想。'
+    grammarPoint: 'Cannot help but + infinitive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0879
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: '_____ though the journey was long and difficult, they never once thought of turning back.'
+    sentenceZh: '_____ 旅程漫长而困难，他们从未想过回头。'
+    answer: 'Even'
+    explanation: '"Even though" is a strong concessive conjunction, emphasising the contrast.'
+    explanationZh: '"Even though"是一个强让步连词，强调对比。'
+    grammarPoint: 'Even though (strong concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0880
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The letter had been written _____ someone who clearly knew her secret.'
+    sentenceZh: '这封信是 _____ 一个显然知道她秘密的人写的。'
+    answer: 'by'
+    explanation: '"Written by" — the passive voice agent introduced by "by."'
+    explanationZh: '"written by"——被动语态的施动者用"by"引入。'
+    grammarPoint: 'Passive: by + agent'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0881
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She waited and waited, but nobody _____ to come.'
+    sentenceZh: '她等了又等，但 _____ 都没有人来。'
+    answer: 'seemed'
+    explanation: '"Nobody seemed to come" — "seemed to" expresses appearance/impression.'
+    explanationZh: '"nobody seemed to come"——"seemed to"表达表象/印象。'
+    grammarPoint: 'Seem + to infinitive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0882
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The old castle, _____ had been empty for decades, was suddenly full of lights.'
+    sentenceZh: '已经空置了几十年的旧城堡 _____ 突然灯火通明。'
+    answer: 'which'
+    explanation: '"Which" is the relative pronoun for non-defining clauses about things.'
+    explanationZh: '"which"是关于事物的非限定性关系从句的关系代词。'
+    grammarPoint: 'Non-defining relative clause: which'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0883
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She pretended _____ be asleep when the stranger entered the room.'
+    sentenceZh: '当陌生人进入房间时，她假装 _____ 睡着了。'
+    answer: 'to'
+    explanation: '"Pretended to be" — "pretend" is followed by the infinitive with "to."'
+    explanationZh: '"pretended to be"——"pretend"后接带"to"的不定式。'
+    grammarPoint: 'Pretend + to infinitive'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0884
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'What _____ the villagers feared most was the creature that lived in the lake.'
+    sentenceZh: '村民们 _____ 害怕的是住在湖里的那个生物。'
+    answer: 'the'
+    explanation: '"What the villagers feared most" — "the" is needed before "villagers" in this noun clause.'
+    explanationZh: '"what the villagers feared most"——在这个名词从句中"villagers"前需要"the"。'
+    grammarPoint: 'What-clause as subject'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0885
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The hero set _____ on a journey that would change his life forever.'
+    sentenceZh: '英雄 _____ 上了一段将永远改变他人生的旅程。'
+    answer: 'off'
+    explanation: '"Set off" means "started a journey" — a common phrasal verb in narratives.'
+    explanationZh: '"set off"意思是"开始旅程"——叙事中常用的短语动词。'
+    grammarPoint: 'Phrasal verb: set off'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0886
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She could hear her _____ heart beating loudly in the silence.'
+    sentenceZh: '在寂静中，她能听到 _____ 自己的心跳得很响。'
+    answer: 'own'
+    explanation: '"Her own heart" — "own" emphasises possession for dramatic effect.'
+    explanationZh: '"her own heart"——"own"为戏剧效果强调所属。'
+    grammarPoint: 'Own (emphasis on possession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0887
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The more she thought about it, the _____ frightened she became.'
+    sentenceZh: '她想得越多，就 _____ 害怕。'
+    answer: 'more'
+    explanation: '"The more...the more" is a comparative correlative showing parallel increase.'
+    explanationZh: '"the more...the more"是表示平行增长的比较关联结构。'
+    grammarPoint: 'The more...the more (correlative)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0888
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The forest was _____ quiet that she could hear a pin drop.'
+    sentenceZh: '森林 _____ 安静以至于她能听到针掉落的声音。'
+    answer: 'so'
+    explanation: '"So quiet that" — degree clause showing extreme silence.'
+    explanationZh: '"so quiet that"——程度从句表示极度安静。'
+    grammarPoint: 'So...that (degree clause)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0889
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'They kept walking _____ spite of the heavy rain.'
+    sentenceZh: '_____ 尽管下着大雨，他们继续走。'
+    answer: 'in'
+    explanation: '"In spite of" is a fixed prepositional phrase meaning "despite."'
+    explanationZh: '"in spite of"是固定介词短语，意思是"尽管"。'
+    grammarPoint: 'In spite of (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0890
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'It turned _____ that the mysterious stranger was actually her long-lost uncle.'
+    sentenceZh: '结果 _____ 那个神秘的陌生人其实是她失散多年的叔叔。'
+    answer: 'out'
+    explanation: '"Turned out" means "was revealed" or "proved to be" — common in story endings.'
+    explanationZh: '"turned out"意思是"被揭示"或"证明是"——在故事结尾中常用。'
+    grammarPoint: 'Phrasal verb: turn out'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0891
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She wondered _____ the key she had found would open the mysterious door.'
+    sentenceZh: '她想知道她找到的钥匙 _____ 否能打开那扇神秘的门。'
+    answer: 'whether'
+    explanation: '"Wondered whether" introduces an indirect question about possibility.'
+    explanationZh: '"wondered whether"引入关于可能性的间接疑问。'
+    grammarPoint: 'Whether (indirect question)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0892
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The castle was surrounded _____ a deep moat filled with dark water.'
+    sentenceZh: '城堡 _____ 一条深深的护城河围绕着，河里灌满了黑色的水。'
+    answer: 'by'
+    explanation: '"Surrounded by" — passive structure with "by" for the agent.'
+    explanationZh: '"surrounded by"——被动结构用"by"表示施动者。'
+    grammarPoint: 'Passive: surrounded by'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0893
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'Had she _____ sooner, she might have saved the prince.'
+    sentenceZh: '如果她 _____ 到得更早，她也许能救下王子。'
+    answer: 'arrived'
+    explanation: '"Had she arrived" — inverted third conditional without "if." Past participle after "had."'
+    explanationZh: '"Had she arrived"——没有"if"的倒装第三条件句。"had"后接过去分词。'
+    grammarPoint: 'Inverted conditional (had + past participle)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0894
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The brave knight fought on, _____ of how tired he was.'
+    sentenceZh: '勇敢的骑士继续战斗，_____ 管他有多疲惫。'
+    answer: 'regardless'
+    explanation: '"Regardless of" means "without being affected by" — showing determination.'
+    explanationZh: '"regardless of"意思是"不受……影响"——表示决心。'
+    grammarPoint: 'Regardless of (concession)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0895
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'Never _____ she imagined that this ordinary day would become the start of an adventure.'
+    sentenceZh: '她从来 _____ 想到这平凡的一天会成为一场冒险的开始。'
+    answer: 'had'
+    explanation: '"Never had she imagined" — inverted past perfect with negative adverb for emphasis.'
+    explanationZh: '"Never had she imagined"——否定副词搭配过去完成时倒装表示强调。'
+    grammarPoint: 'Inversion: never had + subject'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0896
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'By the _____ the sun rose, they had already crossed the border.'
+    sentenceZh: '到太阳升起 _____，他们已经越过了边境。'
+    answer: 'time'
+    explanation: '"By the time" is a time conjunction requiring past perfect in the main clause.'
+    explanationZh: '"by the time"是一个时间连词，主句需要过去完成时。'
+    grammarPoint: 'By the time + past perfect'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0897
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'She held the candle up _____ that she could see the writing on the wall.'
+    sentenceZh: '她举起蜡烛 _____ 能看到墙上的字。'
+    answer: 'so'
+    explanation: '"So that" introduces a purpose clause — she raised the candle to see.'
+    explanationZh: '"so that"引入目的从句——她举起蜡烛是为了看清。'
+    grammarPoint: 'So that (purpose)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0898
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'The dragon''s roar was _____ loud that the ground shook beneath their feet.'
+    sentenceZh: '龙的吼声 _____ 响亮以至于他们脚下的地面都在震动。'
+    answer: 'so'
+    explanation: '"So loud that" — degree/result clause.'
+    explanationZh: '"so loud that"——程度/结果从句。'
+    grammarPoint: 'So...that (result)'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0899
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'From that day _____, she was known as the bravest girl in the kingdom.'
+    sentenceZh: '从那天 _____ 后，她被称为王国中最勇敢的女孩。'
+    answer: 'on'
+    explanation: '"From that day on" means "from that day onwards" — common in story endings.'
+    explanationZh: '"from that day on"意思是"从那天开始"——在故事结尾中常用。'
+    grammarPoint: 'Expression: from that day on'
+    relatedQuest: Q05
+    difficulty: 2
+
+  - id: U0900
+    type: open-cloze
+    tags: [grammar-word, Q05, difficulty-2]
+    context: storytelling
+    sentence: 'And _____ they all lived happily ever after.'
+    sentenceZh: '从此他们 _____ 幸福快乐地生活在一起。'
+    answer: 'so'
+    explanation: '"And so" is a narrative connector that introduces the final conclusion of a story.'
+    explanationZh: '"And so"是一个叙事连接词，引入故事的最终结论。'
+    grammarPoint: 'And so (conclusion connector)'
+    relatedQuest: Q05
+    difficulty: 2

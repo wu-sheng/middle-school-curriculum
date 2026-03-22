@@ -1,0 +1,1387 @@
+readings:
+  # ============================================================
+  # R086 – The Secret Life of Octopuses (Level 3, ~320 words)
+  # ============================================================
+  - id: R086
+    title: 'The Secret Life of Octopuses'
+    titleZh: '章鱼的秘密生活'
+    level: 3
+    wordCount: 320
+    topic: marine biology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic Kids: Octopuses'
+      author: 'National Geographic'
+      note: 'Original passage inspired by research on octopus intelligence'
+    passage: |
+      For a long time, scientists believed that only mammals could be truly intelligent. However, research over the past twenty years has shown that octopuses are among the smartest creatures on the planet.
+
+      Octopuses have about 500 million neurons — more than most other invertebrates. What makes them even more unusual is that two-thirds of these neurons are located in their eight arms, not in their brain. This means each arm can taste, touch, and even make decisions independently.
+
+      [1]
+
+      In one famous experiment at a New Zealand aquarium, an octopus named Inky escaped from his tank by squeezing through a narrow drain pipe and sliding across the floor to the sea. The staff found nothing but a trail of water the next morning. Inky had planned his route and waited until the room was empty before making his move.
+
+      [2]
+
+      Furthermore, octopuses are master builders. Some species collect coconut shells and carry them across the ocean floor to use as portable shelters. Scientists consider this a form of tool use — a behaviour once thought to be unique to primates and birds.
+
+      [3]
+
+      Perhaps the most remarkable ability is their camouflage. Octopuses can change their colour, pattern, and even skin texture in less than a second. They achieve this using special cells called chromatophores, which contain tiny sacs of pigment that expand or contract to create different colours. As a result, an octopus can perfectly match the appearance of coral, seaweed, or even the sandy ocean floor.
+
+      Despite these extraordinary abilities, octopuses live surprisingly short lives — most species survive for only one to two years. Nevertheless, in that brief time, they demonstrate a level of intelligence that continues to amaze researchers around the world.
+    passageZh: |
+      长期以来，科学家们认为只有哺乳动物才能真正拥有智慧。然而，过去二十年的研究表明，章鱼是地球上最聪明的生物之一。
+
+      章鱼有大约5亿个神经元——比大多数其他无脊椎动物都多。更不寻常的是，这些神经元的三分之二位于它们的八条手臂中，而不是大脑中。这意味着每条手臂都可以独立地品尝、触摸，甚至做出决定。
+
+      [1]
+
+      在新西兰水族馆的一个著名实验中，一只名叫 Inky 的章鱼通过挤过一条狭窄的排水管并滑过地面逃到了大海。第二天早上，工作人员只发现了一条水痕。Inky 事先规划了路线，等到房间里没人时才行动。
+
+      [2]
+
+      此外，章鱼是大师级的建造者。有些种类收集椰子壳并把它们搬过海底，用作可移动的庇护所。科学家认为这是一种工具使用——这种行为曾被认为是灵长类和鸟类独有的。
+
+      [3]
+
+      也许最了不起的能力是它们的伪装。章鱼可以在不到一秒钟内改变颜色、图案，甚至皮肤纹理。它们通过被称为色素细胞的特殊细胞来实现这一点，这些细胞包含微小的色素囊，通过膨胀或收缩来产生不同的颜色。因此，章鱼可以完美地模仿珊瑚、海藻，甚至沙质海底的外观。
+
+      尽管拥有这些非凡的能力，章鱼的寿命却出奇地短——大多数物种只能存活一到两年。然而，在这短暂的时间里，它们展现出的智慧水平继续让世界各地的研究人员感到惊叹。
+    vocabHighlights:
+      - word: organism
+        ref: V0766
+      - word: camouflage
+        ref: V0796
+      - word: evidence
+        ref: V0776
+    questions:
+      - id: R086-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'These remarkable brain structures allow octopuses to solve complex problems that would challenge most other animals.'
+          B: 'Coral reefs provide shelter for thousands of marine species around the world.'
+          C: 'Dolphins are also known for their intelligence and playful behaviour.'
+        answer: 'A'
+        explanation: 'Gap [1] follows a paragraph about octopus neurons in their arms. "These remarkable brain structures" refers back to the neurons described, and "solve complex problems" leads naturally into the Inky escape story.'
+        explanationZh: '空缺[1]在描述章鱼手臂中神经元的段落之后。"These remarkable brain structures"指代所描述的神经元，"solve complex problems"自然引出 Inky 逃跑的故事。'
+      - id: R086-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Such behaviour shows that octopuses can plan ahead and remember spatial information.'
+          B: 'The aquarium was closed for repairs the following week.'
+          C: 'Octopuses eat mostly crabs, shrimp, and small fish.'
+        answer: 'A'
+        explanation: 'Gap [2] follows the Inky escape story. "Such behaviour" refers to the planned escape, and it bridges to the next paragraph about tool use (another sign of intelligence).'
+        explanationZh: '空缺[2]在 Inky 逃跑故事之后。"Such behaviour"指代有计划的逃跑，衔接到下一段关于工具使用（另一个智慧的标志）。'
+      - id: R086-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'However, the tool use debate continues among marine biologists who disagree about the definition.'
+          B: 'This is not the only surprising skill these creatures possess.'
+          C: 'Fish populations have been declining due to overfishing in many parts of the world.'
+        answer: 'B'
+        explanation: 'Gap [3] comes after tool use and before camouflage. "This is not the only surprising skill" bridges from tool use to the next ability (camouflage), keeping the flow of listing remarkable abilities.'
+        explanationZh: '空缺[3]在工具使用之后、伪装之前。"This is not the only surprising skill"从工具使用过渡到下一个能力（伪装），保持了列举非凡能力的流畅性。'
+      - id: R086-Q4
+        type: vocabulary-in-context
+        question: 'What does "portable" mean in the passage?'
+        questionZh: '文中的"portable"是什么意思？'
+        options:
+          A: 'Very heavy and difficult to move'
+          B: 'Easy to carry from place to place'
+          C: 'Made of natural materials'
+          D: 'Designed for underwater use'
+        answer: 'B'
+        explanation: 'Octopuses "carry" coconut shells "across the ocean floor" to use as shelters. "Portable" means something you can carry around — a movable shelter.'
+        explanationZh: '章鱼"搬运"椰子壳"穿过海底"来用作庇护所。"Portable"意思是你可以随身携带的——一个可移动的庇护所。'
+
+  # ============================================================
+  # R087 – How Bees Talk to Each Other (Level 3, ~310 words)
+  # ============================================================
+  - id: R087
+    title: 'How Bees Talk to Each Other'
+    titleZh: '蜜蜂如何互相交流'
+    level: 3
+    wordCount: 310
+    topic: animal communication
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'TED-Ed: The Waggle Dance of the Honeybee'
+      author: 'TED-Ed'
+      note: 'Original passage inspired by Karl von Frisch research on bee communication'
+    passage: |
+      When a honeybee discovers a patch of delicious flowers, it faces a problem: how can it tell the other 50,000 bees in the hive exactly where to go? The answer is one of the most amazing forms of communication in the animal kingdom — the waggle dance.
+
+      When the scout bee returns to the dark hive, it performs a special figure-eight dance on the vertical surface of the honeycomb. The direction of the straight part of the dance tells other bees which way to fly relative to the sun. If the bee waggles upward, the food is towards the sun. If it waggles to the left, the food is to the left of the sun.
+
+      The duration of the waggle is equally important. A longer waggle means the food is farther away. Scientists have calculated that each second of waggling represents approximately one kilometre of distance. As a result, bees can communicate the exact location of flowers up to 10 kilometres away.
+
+      Furthermore, the energy and enthusiasm of the dance tells other bees about the quality of the food source. A bee that has found a rich patch of nectar dances faster and more vigorously than one that has found only a few flowers. Consequently, more bees will be recruited to the better food sources.
+
+      This remarkable communication system was first decoded by Austrian scientist Karl von Frisch in the 1940s. Initially, many scientists refused to believe that insects could communicate such precise information. Nevertheless, repeated experiments confirmed his findings, and he was awarded the Nobel Prize in 1973.
+
+      Recent research has revealed even more complexity. Bees can adjust their dance for wind speed, and they can even tell other bees about the danger of predators near the food source. Such sophisticated communication from a brain smaller than a pinhead continues to astonish scientists.
+    passageZh: |
+      当一只蜜蜂发现一片美味的花丛时，它面临一个问题：如何准确地告诉蜂巢中其他50,000只蜜蜂去哪里？答案是动物王国中最令人惊叹的交流方式之一——摇摆舞。
+
+      当侦察蜂回到黑暗的蜂巢时，它在蜂巢垂直表面上跳一种特殊的8字形舞蹈。舞蹈直线部分的方向告诉其他蜜蜂相对于太阳应该往哪个方向飞。如果蜜蜂向上摇摆，食物在太阳方向。如果向左摇摆，食物在太阳左边。
+
+      摇摆的持续时间同样重要。更长的摇摆意味着食物更远。科学家计算出每秒钟的摇摆大约代表一公里的距离。因此，蜜蜂可以传达10公里以外花朵的确切位置。
+
+      此外，舞蹈的能量和热情告诉其他蜜蜂食物源的质量。发现了丰富花蜜的蜜蜂比只发现了几朵花的蜜蜂跳得更快更有力。因此，更多的蜜蜂会被招募到更好的食物源。
+
+      这个非凡的交流系统最初是由奥地利科学家 Karl von Frisch 在1940年代破译的。起初，许多科学家拒绝相信昆虫能传达如此精确的信息。然而，反复的实验证实了他的发现，他在1973年获得了诺贝尔奖。
+
+      最近的研究揭示了更多的复杂性。蜜蜂可以根据风速调整舞蹈，甚至可以告诉其他蜜蜂食物源附近有捕食者的危险。来自比针头还小的大脑的如此复杂的交流方式继续让科学家们感到惊叹。
+    vocabHighlights:
+      - word: observation
+        ref: V0775
+      - word: evidence
+        ref: V0776
+      - word: species
+        ref: V0753
+    questions:
+      - id: R087-Q1
+        type: main-idea
+        question: 'What is the main purpose of the waggle dance?'
+        questionZh: '摇摆舞的主要目的是什么？'
+        options:
+          A: 'To entertain other bees in the hive'
+          B: 'To communicate the exact location and quality of food'
+          C: 'To choose a new queen for the colony'
+          D: 'To warn the hive about approaching storms'
+        answer: 'B'
+        explanation: 'The passage explains that the waggle dance communicates direction, distance, and quality of food sources.'
+        explanationZh: '文章解释了摇摆舞传达食物源的方向、距离和质量。'
+      - id: R087-Q2
+        type: detail
+        question: 'How does the bee indicate that food is closer or farther away?'
+        questionZh: '蜜蜂如何表示食物更近或更远？'
+        options:
+          A: 'By changing the speed of the dance'
+          B: 'By facing a different direction'
+          C: 'By varying the length of the waggle'
+          D: 'By making different sounds'
+        answer: 'C'
+        explanation: 'The passage states "A longer waggle means the food is farther away" — duration indicates distance.'
+        explanationZh: '文章指出"更长的摇摆意味着食物更远"——持续时间表示距离。'
+      - id: R087-Q3
+        type: inference
+        question: 'Why did Karl von Frisch receive the Nobel Prize?'
+        questionZh: 'Karl von Frisch 为什么获得诺贝尔奖？'
+        options:
+          A: 'He invented a machine to translate bee language'
+          B: 'He trained bees to dance in specific patterns'
+          C: 'He decoded and proved how bees communicate through dance'
+          D: 'He discovered a new species of honeybee'
+        answer: 'C'
+        explanation: 'The passage says he "decoded" the dance system and "repeated experiments confirmed his findings," leading to the Nobel Prize.'
+        explanationZh: '文章说他"破译"了舞蹈系统，"反复实验证实了他的发现"，从而获得诺贝尔奖。'
+      - id: R087-Q4
+        type: vocabulary-in-context
+        question: 'What does "recruited" most likely mean in the passage?'
+        questionZh: '文中的"recruited"最可能是什么意思？'
+        options:
+          A: 'Punished and sent away'
+          B: 'Attracted and brought to help'
+          C: 'Lost and confused'
+          D: 'Frightened and scared off'
+        answer: 'B'
+        explanation: 'More bees will be "recruited" to better food sources — they are attracted and sent to help collect nectar from the best flowers.'
+        explanationZh: '更多蜜蜂会被"招募"到更好的食物源——它们被吸引并派去帮助从最好的花朵上采集花蜜。'
+
+  # ============================================================
+  # R088 – What Killed the Dinosaurs? (Level 3, ~340 words)
+  # ============================================================
+  - id: R088
+    title: 'What Killed the Dinosaurs?'
+    titleZh: '什么杀死了恐龙？'
+    level: 3
+    wordCount: 340
+    topic: paleontology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Earth: Dinosaur Extinction'
+      author: 'BBC'
+      note: 'Original passage summarizing leading extinction theories for young readers'
+    passage: |
+      Sixty-six million years ago, dinosaurs ruled the Earth. They had been the dominant creatures on the planet for over 160 million years. Then, quite suddenly, they disappeared. What could have caused such a massive extinction?
+
+      Initially, scientists had many different theories. Some suggested that a deadly disease spread among dinosaur populations. Others believed that small mammals ate dinosaur eggs, slowly reducing their numbers over thousands of years. However, none of these theories could explain why so many different species — both on land and in the sea — all vanished at the same time.
+
+      The breakthrough came in 1980, when physicist Luis Alvarez and his son Walter discovered an unusual layer of clay in rocks dating from exactly 66 million years ago. This clay contained extremely high levels of iridium — a metal that is rare on Earth but common in asteroids. The Alvarez team proposed a bold hypothesis: a massive asteroid had struck the Earth, causing a global catastrophe.
+
+      Subsequently, in 1991, scientists found the "smoking gun" — a giant crater buried beneath the Yucatan Peninsula in Mexico. The Chicxulub crater is approximately 180 kilometres wide, suggesting the asteroid was about 10 kilometres across — roughly the size of a city.
+
+      Scientists now believe the impact triggered a chain of devastating events. The collision launched trillions of tonnes of dust and rock into the atmosphere. As a result, sunlight was blocked for months, temperatures dropped dramatically, and plants could not photosynthesize. Without plants, herbivorous dinosaurs starved. Consequently, the carnivores that preyed on them also perished.
+
+      Nevertheless, not all life was destroyed. Small mammals, birds, crocodiles, and sea turtles managed to survive. These survivors eventually evolved to fill the ecological gaps left by the dinosaurs. In fact, without the asteroid impact, mammals might never have become the dominant animals — and humans might never have existed at all.
+    passageZh: |
+      六千六百万年前，恐龙统治着地球。它们作为地球上的统治生物已超过1.6亿年。然后，相当突然地，它们消失了。什么可能导致了如此大规模的灭绝？
+
+      最初，科学家们有许多不同的理论。有些人认为一种致命疾病在恐龙种群中传播。另一些人相信小型哺乳动物偷吃恐龙蛋，在数千年里慢慢减少了它们的数量。然而，这些理论都无法解释为什么如此多不同的物种——无论是陆地上的还是海洋中的——都在同一时间消失了。
+
+      突破发生在1980年，物理学家 Luis Alvarez 和他的儿子 Walter 在恰好可以追溯到6600万年前的岩石中发现了一层不寻常的粘土。这层粘土含有极高水平的铱——一种在地球上很稀有但在小行星中很常见的金属。Alvarez 团队提出了一个大胆的假说：一颗巨大的小行星撞击了地球，造成了全球性灾难。
+
+      随后，1991年，科学家们找到了"确凿证据"——一个埋在墨西哥尤卡坦半岛地下的巨大陨石坑。希克苏鲁伯陨石坑宽约180公里，表明小行星大约10公里宽——大致相当于一座城市的大小。
+
+      科学家们现在认为撞击引发了一连串毁灭性事件。碰撞将数万亿吨灰尘和岩石送入大气层。因此，阳光被阻挡了数月，温度急剧下降，植物无法进行光合作用。没有植物，食草恐龙饿死了。随之而来的是，以它们为食的食肉恐龙也灭亡了。
+
+      然而，并非所有生命都被摧毁。小型哺乳动物、鸟类、鳄鱼和海龟设法存活了下来。这些幸存者最终进化填补了恐龙留下的生态空缺。事实上，如果没有小行星撞击，哺乳动物可能永远不会成为统治动物——人类也可能根本不会存在。
+    vocabHighlights:
+      - word: extinction
+        ref: V0757
+      - word: hypothesis
+        ref: V0773
+      - word: asteroid
+        ref: V0814
+    questions:
+      - id: R088-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'The different species of dinosaurs that existed'
+          B: 'How scientists discovered the cause of dinosaur extinction'
+          C: 'Why mammals are more intelligent than dinosaurs'
+          D: 'The life cycle of the Tyrannosaurus Rex'
+        answer: 'B'
+        explanation: 'The passage traces the scientific journey from early theories to the asteroid impact discovery.'
+        explanationZh: '文章追溯了从早期理论到小行星撞击发现的科学历程。'
+      - id: R088-Q2
+        type: detail
+        question: 'What evidence did the Alvarez team find in 1980?'
+        questionZh: 'Alvarez 团队在1980年发现了什么证据？'
+        options:
+          A: 'A giant crater in Mexico'
+          B: 'Dinosaur bones with disease marks'
+          C: 'A clay layer with high levels of iridium'
+          D: 'Fossil eggs eaten by mammals'
+        answer: 'C'
+        explanation: 'The passage states they found "an unusual layer of clay" with "extremely high levels of iridium."'
+        explanationZh: '文章指出他们发现了"一层不寻常的粘土"，含有"极高水平的铱"。'
+      - id: R088-Q3
+        type: inference
+        question: 'What does the passage suggest about the relationship between the asteroid impact and human existence?'
+        questionZh: '文章暗示小行星撞击与人类存在之间有什么关系？'
+        options:
+          A: 'The asteroid nearly killed all human ancestors'
+          B: 'Humans helped prevent a second asteroid strike'
+          C: 'Without the extinction of dinosaurs, humans might not have evolved'
+          D: 'Humans descended directly from dinosaurs'
+        answer: 'C'
+        explanation: 'The last paragraph states "without the asteroid impact, mammals might never have become dominant — and humans might never have existed."'
+        explanationZh: '最后一段指出"如果没有小行星撞击，哺乳动物可能永远不会成为统治者——人类也可能根本不会存在"。'
+      - id: R088-Q4
+        type: vocabulary-in-context
+        question: 'What does "devastating" most likely mean?'
+        questionZh: '"devastating"最可能是什么意思？'
+        options:
+          A: 'Slightly annoying'
+          B: 'Extremely destructive'
+          C: 'Pleasantly surprising'
+          D: 'Gradually improving'
+        answer: 'B'
+        explanation: 'A "chain of devastating events" led to dinosaur extinction — these events were massively destructive.'
+        explanationZh: '"一连串毁灭性事件"导致了恐龙灭绝——这些事件具有巨大的破坏性。'
+
+  # ============================================================
+  # R089 – Journey to Mars (Level 3, ~330 words)
+  # ============================================================
+  - id: R089
+    title: 'Journey to Mars'
+    titleZh: '火星之旅'
+    level: 3
+    wordCount: 330
+    topic: space exploration
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'NASA Kids Club: Mars Exploration'
+      author: 'NASA'
+      note: 'Original passage about Mars missions for young readers'
+    passage: |
+      Humans have been fascinated by Mars for thousands of years. The ancient Romans named it after their god of war because of its blood-red colour. Today, Mars is the planet we are most likely to visit first. But what would it take to send humans there?
+
+      The journey itself presents enormous challenges. Mars is approximately 225 million kilometres from Earth, and a spacecraft would take about seven months to get there. During this time, astronauts would face dangerous levels of cosmic radiation, muscle loss from zero gravity, and the psychological stress of being confined in a small space for months.
+
+      Furthermore, landing on Mars is extraordinarily difficult. The planet has a thin atmosphere — only about 1% as thick as Earth's — which makes it hard to slow down a heavy spacecraft. NASA engineers call the landing process "seven minutes of terror" because so much can go wrong.
+
+      Once on the surface, astronauts would face an environment hostile to human life. The average temperature is minus 60 degrees Celsius. The atmosphere is 95% carbon dioxide, meaning humans cannot breathe outside without a spacesuit. Moreover, dust storms on Mars can cover the entire planet and last for months, blocking solar power and reducing visibility to zero.
+
+      Despite these challenges, space agencies around the world are working towards a crewed Mars mission. NASA plans to send humans to Mars in the 2030s. Meanwhile, private companies like SpaceX are developing reusable rockets that could make the journey more affordable.
+
+      Scientists believe that studying Mars could answer one of humanity's biggest questions: has life ever existed beyond Earth? Evidence suggests that Mars once had rivers, lakes, and possibly even oceans of liquid water. If microscopic life once thrived there, it would change our understanding of the universe forever. Such a discovery would prove that Earth is not unique — and that life may exist throughout the cosmos.
+    passageZh: |
+      数千年来，人类一直对火星着迷。古罗马人以他们的战神来命名它，因为它的血红色。今天，火星是我们最有可能首先访问的星球。但把人类送到那里需要什么？
+
+      旅程本身就面临着巨大的挑战。火星距离地球约2.25亿公里，飞船大约需要七个月才能到达。在此期间，宇航员将面临危险的宇宙辐射、零重力导致的肌肉萎缩，以及数月被限制在狭小空间中的心理压力。
+
+      此外，在火星着陆极其困难。这颗行星的大气层很薄——只有地球的约1%——这使得减速重型飞船变得困难。NASA工程师将着陆过程称为"恐怖七分钟"，因为太多事情可能出错。
+
+      一旦到达火星表面，宇航员将面临一个对人类生命充满敌意的环境。平均温度为零下60摄氏度。大气层95%是二氧化碳，意味着人类不穿宇航服就无法在外面呼吸。此外，火星上的沙尘暴可以覆盖整个星球并持续数月，阻断太阳能并将能见度降为零。
+
+      尽管面临这些挑战，世界各地的太空机构都在朝着载人火星任务努力。NASA计划在2030年代将人类送上火星。与此同时，像SpaceX这样的私人公司正在开发可重复使用的火箭，使旅程更加经济实惠。
+
+      科学家们相信研究火星可以回答人类最大的问题之一：地球之外是否存在过生命？证据表明火星曾经有河流、湖泊，甚至可能有液态水的海洋。如果微小的生命曾经在那里繁荣，它将永远改变我们对宇宙的理解。这样的发现将证明地球并非独一无二——生命可能存在于整个宇宙中。
+    vocabHighlights:
+      - word: atmosphere
+        ref: V0762
+      - word: evidence
+        ref: V0776
+      - word: hypothesis
+        ref: V0773
+    questions:
+      - id: R089-Q1
+        type: main-idea
+        question: 'What is the main topic of this passage?'
+        questionZh: '这篇文章的主要话题是什么？'
+        options:
+          A: 'The history of the Roman god Mars'
+          B: 'The challenges and goals of sending humans to Mars'
+          C: 'How to build a space station on the Moon'
+          D: 'The discovery of water on Mars'
+        answer: 'B'
+        explanation: 'The passage discusses the difficulties of travelling to Mars and the reasons why scientists want to go there.'
+        explanationZh: '文章讨论了前往火星的困难和科学家想去那里的原因。'
+      - id: R089-Q2
+        type: detail
+        question: 'How long would it take a spacecraft to reach Mars?'
+        questionZh: '飞船到达火星需要多长时间？'
+        options:
+          A: 'About seven days'
+          B: 'About seven weeks'
+          C: 'About seven months'
+          D: 'About seven years'
+        answer: 'C'
+        explanation: 'The passage states "a spacecraft would take about seven months to get there."'
+        explanationZh: '文章指出"飞船大约需要七个月才能到达那里"。'
+      - id: R089-Q3
+        type: inference
+        question: 'Why would finding life on Mars change our understanding of the universe?'
+        questionZh: '为什么在火星上发现生命会改变我们对宇宙的理解？'
+        options:
+          A: 'Because Mars is the largest planet in our solar system'
+          B: 'Because it would prove life can exist beyond Earth'
+          C: 'Because it would mean Mars is safe for humans to live on'
+          D: 'Because scientists have never studied any other planets'
+        answer: 'B'
+        explanation: 'The passage states that such a discovery "would prove that Earth is not unique — and that life may exist throughout the cosmos."'
+        explanationZh: '文章指出这样的发现"将证明地球并非独一无二——生命可能存在于整个宇宙中"。'
+      - id: R089-Q4
+        type: vocabulary-in-context
+        question: 'In the passage, what does "hostile" mean?'
+        questionZh: '文中的"hostile"是什么意思？'
+        options:
+          A: 'Welcoming and comfortable'
+          B: 'Dangerous and unfriendly'
+          C: 'Interesting and colourful'
+          D: 'Large and impressive'
+        answer: 'B'
+        explanation: 'An environment "hostile to human life" with minus 60 degrees and unbreathable air is clearly dangerous and unfriendly.'
+        explanationZh: '对人类生命"充满敌意"的环境有零下60度和不可呼吸的空气，显然是危险和不友好的。'
+
+  # ============================================================
+  # R090 – Creatures of the Deep Sea (Level 3, ~300 words)
+  # ============================================================
+  - id: R090
+    title: 'Creatures of the Deep Sea'
+    titleZh: '深海生物'
+    level: 3
+    wordCount: 300
+    topic: marine biology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Earth: The Deep'
+      author: 'BBC'
+      note: 'Original passage about deep-sea creatures for young readers'
+    passage: |
+      More than 80% of the ocean remains unexplored. The deepest parts are so dark, cold, and pressurised that they seem like another planet. Nevertheless, thousands of extraordinary creatures call this extreme environment home.
+
+      In the midnight zone, below 1,000 metres, no sunlight reaches. Many deep-sea animals have evolved an amazing ability called bioluminescence — they produce their own light using chemical reactions inside their bodies. The anglerfish, for example, has a glowing lure on top of its head that attracts prey in the darkness. Other creatures, like certain species of jellyfish, flash bright blue light to confuse predators.
+
+      At even greater depths, the pressure is immense. At the bottom of the Mariana Trench, 11 kilometres down, the pressure is over 1,000 times that at the surface. Despite this, scientists have discovered snailfish, shrimp-like amphipods, and even single-celled organisms thriving there. These creatures have special proteins in their cells that prevent their bodies from being crushed.
+
+      Food is scarce in the deep ocean because there is no sunlight for photosynthesis. As a result, many deep-sea animals depend on "marine snow" — tiny particles of dead organisms and waste that slowly drift down from the surface. Some communities, however, have found a completely different food source: hydrothermal vents. These underwater volcanoes release superheated water rich in minerals, supporting entire ecosystems without any sunlight at all.
+
+      Perhaps the strangest deep-sea creature is the giant squid. Growing up to 13 metres long, it has the largest eyes in the animal kingdom — each one the size of a dinner plate. Such enormous eyes help it detect the faintest flickers of bioluminescent light in the total darkness of the deep ocean.
+    passageZh: |
+      超过80%的海洋仍未被探索。最深的部分如此黑暗、寒冷和高压，以至于它们看起来像另一个星球。然而，数千种非凡的生物在这种极端环境中安家。
+
+      在1,000米以下的午夜区，没有阳光到达。许多深海动物进化出了一种叫做生物发光的惊人能力——它们利用体内的化学反应产生自己的光。例如，鮟鱇鱼头顶上有一个发光的诱饵，在黑暗中吸引猎物。其他生物，如某些种类的水母，闪烁明亮的蓝光来迷惑捕食者。
+
+      在更深的地方，压力是巨大的。在马里亚纳海沟底部，11公里深处，压力是水面的1,000倍以上。尽管如此，科学家们发现了蜗牛鱼、类似虾的端足类动物，甚至单细胞生物在那里繁荣生长。这些生物的细胞中有特殊的蛋白质，防止它们的身体被压碎。
+
+      深海中食物稀缺，因为没有阳光进行光合作用。因此，许多深海动物依赖"海洋雪"——从水面慢慢飘落的死亡生物体和废物的微小颗粒。然而，一些群落找到了完全不同的食物来源：热液喷口。这些水下火山释放出富含矿物质的过热水，在完全没有阳光的情况下支持着整个生态系统。
+
+      也许最奇怪的深海生物是巨型乌贼。它可以长到13米长，拥有动物界最大的眼睛——每只有一个餐盘那么大。如此巨大的眼睛帮助它在深海完全的黑暗中探测到最微弱的生物发光闪烁。
+    vocabHighlights:
+      - word: organism
+        ref: V0766
+      - word: predator
+        ref: V0767
+      - word: depth
+        ref: V0803
+    questions:
+      - id: R090-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'How to explore the ocean using submarines'
+          B: 'The remarkable life forms in the deepest parts of the ocean'
+          C: 'Why the ocean is important for human food supply'
+          D: 'The history of deep-sea diving equipment'
+        answer: 'B'
+        explanation: 'The passage describes various deep-sea creatures and how they survive in extreme conditions.'
+        explanationZh: '文章描述了各种深海生物以及它们如何在极端条件下生存。'
+      - id: R090-Q2
+        type: detail
+        question: 'What is bioluminescence?'
+        questionZh: '什么是生物发光？'
+        options:
+          A: 'The ability to see in complete darkness'
+          B: 'The ability to produce light using chemical reactions inside the body'
+          C: 'The ability to change colour like an octopus'
+          D: 'The ability to survive extreme pressure'
+        answer: 'B'
+        explanation: 'The passage defines it: "they produce their own light using chemical reactions inside their bodies."'
+        explanationZh: '文章定义了它："它们利用体内的化学反应产生自己的光。"'
+      - id: R090-Q3
+        type: detail
+        question: 'What is "marine snow"?'
+        questionZh: '"海洋雪"是什么？'
+        options:
+          A: 'Frozen seawater that falls like snowflakes'
+          B: 'Tiny particles of dead organisms drifting down from the surface'
+          C: 'White sand found on the deep ocean floor'
+          D: 'Salt crystals that form in cold water'
+        answer: 'B'
+        explanation: 'The passage explains marine snow as "tiny particles of dead organisms and waste that slowly drift down from the surface."'
+        explanationZh: '文章解释海洋雪是"从水面慢慢飘落的死亡生物体和废物的微小颗粒"。'
+      - id: R090-Q4
+        type: vocabulary-in-context
+        question: 'What does "scarce" mean in the passage?'
+        questionZh: '文中的"scarce"是什么意思？'
+        options:
+          A: 'Very plentiful and easy to find'
+          B: 'Dangerous and poisonous'
+          C: 'In short supply; difficult to find'
+          D: 'Colourful and attractive'
+        answer: 'C'
+        explanation: 'Food is "scarce" because there is no sunlight for photosynthesis — it is hard to find food in the deep ocean.'
+        explanationZh: '食物"稀缺"因为没有阳光进行光合作用——在深海中很难找到食物。'
+
+  # ============================================================
+  # R091-R100: Abbreviated entries (10 more readings)
+  # ============================================================
+
+  - id: R091
+    title: 'The Colourful World of Coral Reefs'
+    titleZh: '珊瑚礁的多彩世界'
+    level: 3
+    wordCount: 310
+    topic: coral reefs
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic Kids: Coral Reefs'
+      author: 'National Geographic'
+      note: 'Original passage about coral reef ecosystems for young readers'
+    passage: |
+      Coral reefs are sometimes called the "rainforests of the sea" because they support an astonishing variety of life. Although they cover less than 1% of the ocean floor, they are home to approximately 25% of all marine species. How can such a small area support so much life?
+
+      The answer lies in the relationship between coral and a type of tiny algae called zooxanthellae. These microscopic organisms live inside the coral's tissue and produce food through photosynthesis. In return, the coral provides the algae with a safe home and the nutrients they need to grow. This partnership is so efficient that it allows coral reefs to thrive in waters that are otherwise low in nutrients.
+
+      However, this delicate balance is under threat. When ocean temperatures rise even slightly — by just 1 or 2 degrees Celsius — the coral becomes stressed and expels the algae. Without the colourful algae, the coral turns white, a process known as bleaching. If temperatures return to normal quickly, the algae can return and the coral can recover. Nevertheless, if the heat lasts too long, the coral starves and dies.
+
+      Furthermore, coral reefs face other dangers. Ocean acidification, caused by the absorption of carbon dioxide, makes it harder for coral to build their calcium carbonate skeletons. Pollution from land — including fertilizers, sewage, and plastic waste — smothers coral and blocks sunlight.
+
+      Despite these challenges, there is hope. Scientists are breeding heat-resistant coral varieties in laboratories and transplanting them onto damaged reefs. Community groups around the world are creating marine protected areas where fishing and pollution are banned. Moreover, some reefs have shown remarkable resilience, recovering naturally when given enough time and protection.
+
+      The fight to save coral reefs is a race against time. If global temperatures continue to rise, scientists estimate that up to 90% of the world's reefs could be lost by 2050. For the millions of species that depend on them — including humans — this would be a catastrophe.
+    passageZh: |
+      珊瑚礁有时被称为"海洋的雨林"，因为它们支持着惊人的生命多样性。尽管它们只覆盖了不到1%的海底面积，却是约25%海洋物种的家园。如此小的区域怎么能支持如此多的生命？
+
+      答案在于珊瑚和一种叫做虫黄藻的微小藻类之间的关系。这些微观生物生活在珊瑚的组织内，通过光合作用产生食物。作为回报，珊瑚为藻类提供安全的家和它们生长所需的营养。这种伙伴关系如此高效，使珊瑚礁能在原本缺乏营养的水域中繁荣生长。
+
+      然而，这种脆弱的平衡正受到威胁。当海洋温度即使只是轻微上升——仅1到2摄氏度——珊瑚就会受到压力并排出藻类。没有了彩色藻类，珊瑚变白，这个过程被称为白化。如果温度迅速恢复正常，藻类可以回来，珊瑚可以恢复。然而，如果高温持续太久，珊瑚就会饿死。
+
+      此外，珊瑚礁还面临其他危险。由吸收二氧化碳引起的海洋酸化使珊瑚更难建造碳酸钙骨骼。来自陆地的污染——包括化肥、污水和塑料垃圾——窒息珊瑚并阻挡阳光。
+
+      尽管面临这些挑战，仍有希望。科学家们正在实验室中培育耐热珊瑚品种并将它们移植到受损的珊瑚礁上。世界各地的社区团体正在创建禁止捕鱼和污染的海洋保护区。此外，一些珊瑚礁在获得足够的时间和保护后，表现出了显著的恢复力。
+
+      拯救珊瑚礁是一场与时间的赛跑。如果全球温度继续上升，科学家估计到2050年世界上多达90%的珊瑚礁可能消失。对于依赖珊瑚礁的数百万物种——包括人类——来说，这将是一场灾难。
+    vocabHighlights:
+      - word: coral
+        ref: V0771
+      - word: ecosystem
+        ref: V0751
+      - word: conservation
+        ref: V0755
+    questions:
+      - id: R091-Q1
+        type: main-idea
+        question: 'What is the main message of this passage?'
+        questionZh: '这篇文章的主要信息是什么？'
+        options:
+          A: 'Coral reefs are beautiful but not very important'
+          B: 'Coral reefs are vital ecosystems facing serious threats, but there is hope if we act'
+          C: 'Scientists have already solved the problem of coral bleaching'
+          D: 'Coral reefs are only found near Australia'
+        answer: 'B'
+        explanation: 'The passage describes the importance of reefs, the threats they face, and the conservation efforts to save them.'
+        explanationZh: '文章描述了珊瑚礁的重要性、面临的威胁以及拯救它们的保护工作。'
+      - id: R091-Q2
+        type: detail
+        question: 'What causes coral bleaching?'
+        questionZh: '什么导致珊瑚白化？'
+        options:
+          A: 'Too much sunlight reaching the coral'
+          B: 'Rising ocean temperatures causing coral to expel algae'
+          C: 'Fish eating the colourful parts of the coral'
+          D: 'Strong ocean currents breaking the coral'
+        answer: 'B'
+        explanation: 'The passage explains that rising temperatures stress the coral, which then expels its algae and turns white.'
+        explanationZh: '文章解释温度上升使珊瑚受到压力，然后排出藻类变白。'
+      - id: R091-Q3
+        type: inference
+        question: 'Why are coral reefs important to humans?'
+        questionZh: '为什么珊瑚礁对人类很重要？'
+        options:
+          A: 'They provide building materials for coastal cities'
+          B: 'They support marine species that humans depend on for food and more'
+          C: 'They produce most of the world''s drinking water'
+          D: 'They block dangerous asteroids from hitting Earth'
+        answer: 'B'
+        explanation: 'The passage says "millions of species that depend on them — including humans" would face catastrophe if reefs were lost.'
+        explanationZh: '文章说"依赖珊瑚礁的数百万物种——包括人类"如果珊瑚礁消失将面临灾难。'
+      - id: R091-Q4
+        type: vocabulary-in-context
+        question: 'What does "resilience" mean in the passage?'
+        questionZh: '文中的"resilience"是什么意思？'
+        options:
+          A: 'The ability to grow very large'
+          B: 'The ability to recover from damage'
+          C: 'The ability to change colour'
+          D: 'The ability to move to a new location'
+        answer: 'B'
+        explanation: 'Reefs "recovering naturally when given enough time" shows resilience — the ability to bounce back from harm.'
+        explanationZh: '珊瑚礁"在获得足够时间后自然恢复"展示了韧性——从伤害中恢复的能力。'
+
+  - id: R092
+    title: 'Climate Change Explained for Kids'
+    titleZh: '给孩子的气候变化科普'
+    level: 3
+    wordCount: 320
+    topic: climate change
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'NASA Climate Kids'
+      author: 'NASA'
+      note: 'Original passage explaining climate change for young readers'
+    passage: |
+      Imagine wrapping Earth in a warm blanket. That is essentially what greenhouse gases do. They trap heat from the sun inside our atmosphere, keeping the planet warm enough for life. Without this natural "greenhouse effect," Earth would be a frozen wasteland about 33 degrees colder than it is today.
+
+      The problem is that humans are making the blanket too thick. Since the Industrial Revolution in the 1800s, we have been burning enormous quantities of fossil fuels — coal, oil, and natural gas — for energy. This releases carbon dioxide and other greenhouse gases into the atmosphere. As a result, the blanket is trapping more heat than before, and global temperatures are rising.
+
+      The effects are already visible. Arctic ice is melting at an alarming rate. Sea levels have risen by about 20 centimetres since 1900. Extreme weather events — floods, droughts, and heatwaves — are becoming more frequent and more severe. Furthermore, many animal species are being forced to migrate to cooler areas or face extinction.
+
+      However, it is not all bad news. People around the world are working on solutions. Renewable energy sources like solar panels and wind turbines are becoming cheaper every year. Electric cars are replacing petrol vehicles. Countries are planting billions of trees to absorb carbon dioxide from the air.
+
+      Young people are also making a difference. Millions of students have joined climate marches to demand action from world leaders. Schools are teaching children to reduce, reuse, and recycle. Even small daily choices — like walking instead of driving or eating less meat — can help reduce your carbon footprint.
+
+      Scientists agree that we still have time to prevent the worst effects of climate change. Nevertheless, they warn that we must act quickly. The decisions made in the next ten years will determine the future of our planet for centuries to come.
+    passageZh: |
+      想象给地球裹上一条温暖的毯子。这基本上就是温室气体所做的。它们将太阳的热量困在大气层中，使地球保持足够温暖以维持生命。没有这种自然的"温室效应"，地球将是一个比现在冷约33度的冰冻荒地。
+
+      问题是人类使毯子变得太厚了。自1800年代工业革命以来，我们一直在燃烧大量化石燃料——煤、石油和天然气——来获取能源。这将二氧化碳和其他温室气体释放到大气中。结果，毯子困住的热量比以前更多，全球温度正在上升。
+
+      影响已经可见。北极冰正在以惊人的速度融化。自1900年以来海平面上升了约20厘米。极端天气事件——洪水、干旱和热浪——变得更加频繁和严重。此外，许多动物物种被迫迁移到更凉爽的地区或面临灭绝。
+
+      然而，并非全是坏消息。世界各地的人们正在努力寻找解决方案。太阳能板和风力涡轮机等可再生能源每年都在变得更便宜。电动汽车正在取代汽油车。各国正在种植数十亿棵树来吸收空气中的二氧化碳。
+
+      年轻人也在做出改变。数百万学生参加了气候游行，要求世界领导人采取行动。学校正在教孩子们减少、重复使用和回收。即使是小小的日常选择——比如步行而不是开车、少吃肉——都能帮助减少你的碳足迹。
+
+      科学家们一致认为我们仍有时间防止气候变化的最严重影响。然而，他们警告说我们必须迅速行动。未来十年做出的决定将决定我们星球未来几个世纪的命运。
+    vocabHighlights:
+      - word: climate
+        ref: V0791
+      - word: renewable
+        ref: V0760
+      - word: emission
+        ref: V0823
+    questions:
+      - id: R092-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'The history of the Industrial Revolution'
+          B: 'What climate change is, its effects, and what we can do about it'
+          C: 'How to build solar panels at home'
+          D: 'Why the Earth is colder than other planets'
+        answer: 'B'
+        explanation: 'The passage explains the greenhouse effect, the effects of climate change, and solutions people are working on.'
+        explanationZh: '文章解释了温室效应、气候变化的影响以及人们正在努力的解决方案。'
+      - id: R092-Q2
+        type: detail
+        question: 'How much have sea levels risen since 1900?'
+        questionZh: '自1900年以来海平面上升了多少？'
+        options:
+          A: 'About 2 centimetres'
+          B: 'About 20 centimetres'
+          C: 'About 2 metres'
+          D: 'About 20 metres'
+        answer: 'B'
+        explanation: 'The passage states "Sea levels have risen by about 20 centimetres since 1900."'
+        explanationZh: '文章指出"自1900年以来海平面上升了约20厘米"。'
+      - id: R092-Q3
+        type: inference
+        question: 'Why does the author mention young people joining climate marches?'
+        questionZh: '作者为什么提到年轻人参加气候游行？'
+        options:
+          A: 'To show that climate change only affects young people'
+          B: 'To show that everyone, including children, can help fight climate change'
+          C: 'To criticize young people for not studying enough'
+          D: 'To explain how marches reduce carbon dioxide'
+        answer: 'B'
+        explanation: 'The section about young people shows that everyone can make a difference, from marching to making daily choices.'
+        explanationZh: '关于年轻人的部分表明每个人都能做出改变，从游行到日常选择。'
+      - id: R092-Q4
+        type: vocabulary-in-context
+        question: 'What does "carbon footprint" mean?'
+        questionZh: '"carbon footprint"是什么意思？'
+        options:
+          A: 'A footprint made of coal on the ground'
+          B: 'The total amount of carbon dioxide produced by a person''s daily activities'
+          C: 'A type of fossil found in ancient rocks'
+          D: 'A measurement of how far a person walks each day'
+        answer: 'B'
+        explanation: 'The passage says choices like walking or eating less meat can "reduce your carbon footprint" — meaning the CO2 your lifestyle produces.'
+        explanationZh: '文章说步行或少吃肉等选择可以"减少你的碳足迹"——意思是你的生活方式产生的二氧化碳。'
+
+  - id: R093
+    title: 'The Great Animal Migration'
+    titleZh: '动物大迁徙'
+    level: 3
+    wordCount: 300
+    topic: animal behaviour
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Earth: The Great Migration'
+      author: 'BBC'
+      note: 'Original passage about animal migration for young readers'
+    passage: |
+      Every year, billions of animals undertake incredible journeys across the planet. From tiny monarch butterflies to massive humpback whales, these migrations are among the most spectacular events in nature.
+
+      The wildebeest migration in East Africa is perhaps the most famous. Over 1.5 million wildebeest, along with hundreds of thousands of zebras and gazelles, travel in a huge circle across the Serengeti. They follow the rains, searching for fresh grass. The journey covers approximately 3,000 kilometres and takes a full year to complete.
+
+      However, not all migrations happen on land. Arctic terns make the longest migration of any animal, flying from the Arctic to the Antarctic and back again — a round trip of about 70,000 kilometres every year. This small bird sees more daylight than any other creature on Earth because it follows the summer from pole to pole.
+
+      What triggers migration? Scientists believe it is a combination of factors. Changing day length, temperature shifts, and food availability all play a role. Furthermore, many animals appear to have a built-in compass. Salmon use the Earth's magnetic field to navigate thousands of kilometres back to the exact river where they were born. Sea turtles use a similar system to return to the same beach where they hatched, even after 30 years of ocean travel.
+
+      Climate change is disrupting these ancient patterns. As temperatures shift, the timing of food availability changes, but migration schedules cannot always keep up. As a result, some birds arrive at their breeding grounds only to find that the insects they depend on have already peaked weeks earlier. Scientists call this a "mismatch," and it threatens the survival of species that have migrated successfully for millions of years.
+    passageZh: |
+      每年，数十亿动物在地球上进行令人难以置信的旅程。从微小的帝王蝶到巨大的座头鲸，这些迁徙是自然界中最壮观的事件之一。
+
+      东非的角马迁徙也许是最著名的。超过150万头角马，以及数十万头斑马和瞪羚，在塞伦盖蒂上以巨大的圆圈旅行。它们追随雨水，寻找新鲜的草地。旅程约3,000公里，需要整整一年才能完成。
+
+      然而，并非所有迁徙都发生在陆地上。北极燕鸥进行所有动物中最长的迁徙，从北极飞到南极再返回——每年往返约70,000公里。这种小鸟看到的日光比地球上任何其他生物都多，因为它从一个极到另一个极追随夏天。
+
+      什么触发了迁徙？科学家们认为这是多种因素的组合。日照时间的变化、温度的转变和食物的可用性都起着作用。此外，许多动物似乎有内置的指南针。鲑鱼利用地球磁场导航数千公里回到它们出生的确切河流。海龟使用类似的系统在30年的海洋旅行后回到它们孵化的同一个海滩。
+
+      气候变化正在打乱这些古老的模式。随着温度变化，食物可用性的时间也在改变，但迁徙时间表并不能总是跟上。因此，一些鸟类到达繁殖地时发现它们依赖的昆虫已经在几周前达到高峰。科学家们称之为"不匹配"，它威胁着已经成功迁徙了数百万年的物种的生存。
+    vocabHighlights:
+      - word: migrate
+        ref: V0763
+      - word: instinct
+        ref: V0800
+      - word: climate
+        ref: V0791
+    questions:
+      - id: R093-Q1
+        type: main-idea
+        question: 'What is the main topic of this passage?'
+        questionZh: '这篇文章的主要话题是什么？'
+        options:
+          A: 'The different types of African animals'
+          B: 'Animal migration patterns, how they work, and threats from climate change'
+          C: 'How to protect endangered birds'
+          D: 'The history of the Serengeti National Park'
+        answer: 'B'
+        explanation: 'The passage covers migration examples, navigation methods, and the impact of climate change on migration.'
+        explanationZh: '文章涵盖了迁徙的例子、导航方法以及气候变化对迁徙的影响。'
+      - id: R093-Q2
+        type: detail
+        question: 'How far do Arctic terns fly in a round trip each year?'
+        questionZh: '北极燕鸥每年往返飞行多远？'
+        options:
+          A: 'About 7,000 kilometres'
+          B: 'About 70,000 kilometres'
+          C: 'About 3,000 kilometres'
+          D: 'About 30,000 kilometres'
+        answer: 'B'
+        explanation: 'The passage states "a round trip of about 70,000 kilometres every year."'
+        explanationZh: '文章指出"每年往返约70,000公里"。'
+      - id: R093-Q3
+        type: inference
+        question: 'What is a "mismatch" in the context of migration?'
+        questionZh: '在迁徙的语境中，"mismatch"（不匹配）是什么？'
+        options:
+          A: 'When two different species compete for the same food'
+          B: 'When animals arrive at a place but the food they need is no longer available'
+          C: 'When baby animals cannot keep up with adult migration speed'
+          D: 'When males and females of the same species migrate to different places'
+        answer: 'B'
+        explanation: 'The passage explains mismatch as birds arriving "only to find that the insects they depend on have already peaked weeks earlier."'
+        explanationZh: '文章解释不匹配是鸟类到达时"发现它们依赖的昆虫已经在几周前达到高峰"。'
+      - id: R093-Q4
+        type: vocabulary-in-context
+        question: 'What does "undertake" mean in the passage?'
+        questionZh: '文中的"undertake"是什么意思？'
+        options:
+          A: 'To avoid or escape from'
+          B: 'To begin or carry out a task or journey'
+          C: 'To destroy or damage'
+          D: 'To forget about something'
+        answer: 'B'
+        explanation: 'Animals "undertake incredible journeys" — they carry out or embark on these long trips.'
+        explanationZh: '动物"进行令人难以置信的旅程"——它们开始或执行这些长途旅行。'
+
+  - id: R094
+    title: 'The Rainforest Pharmacy'
+    titleZh: '雨林药房'
+    level: 3
+    wordCount: 300
+    topic: rainforest ecology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic Kids: Rainforests'
+      author: 'National Geographic'
+      note: 'Original passage about rainforest medicinal plants for young readers'
+    passage: |
+      Deep inside tropical rainforests, some of the most powerful medicines on Earth grow on ordinary-looking trees and plants. Scientists estimate that about 25% of all modern medicines originally come from rainforest plants — yet only 1% of tropical plants have been studied for their medical potential.
+
+      One of the most famous examples is the rosy periwinkle, a small pink flower from Madagascar. Chemicals from this plant are used to treat childhood leukaemia, increasing the survival rate from 20% to over 80%. Similarly, quinine — extracted from the bark of the cinchona tree in South American rainforests — has been used to treat malaria for hundreds of years.
+
+      Indigenous communities have known about these natural remedies for generations. They have used plants to heal wounds, reduce fevers, and fight infections long before modern scientists arrived. Today, many pharmaceutical companies work with indigenous healers to identify plants that might lead to new medicines.
+
+      However, deforestation threatens to destroy these natural resources before they can be discovered. An area of rainforest the size of a football pitch is cut down every six seconds. As a result, plant species are going extinct before scientists can even study them. Some researchers call this "burning the library before reading the books."
+
+      Conservation organizations argue that protecting rainforests is not just an environmental issue — it is a medical one. The cure for diseases that currently have no treatment might be growing in a rainforest right now. For this reason, many countries are creating protected reserves and supporting sustainable forestry practices.
+
+      The rainforest is truly a pharmacy waiting to be explored. Every time a new plant compound is tested, it could lead to a breakthrough that saves thousands of lives.
+    passageZh: |
+      在热带雨林深处，地球上一些最强效的药物生长在看似普通的树木和植物上。科学家估计约25%的现代药物最初来自雨林植物——然而只有1%的热带植物被研究过其医学潜力。
+
+      最著名的例子之一是长春花，一种来自马达加斯加的小粉花。这种植物中的化学物质用于治疗儿童白血病，使存活率从20%提高到超过80%。类似地，奎宁——从南美雨林中的金鸡纳树树皮中提取——已经被用于治疗疟疾数百年。
+
+      原住民社区世代相传这些天然疗法。早在现代科学家到来之前，他们就已经使用植物来治疗伤口、退烧和对抗感染。今天，许多制药公司与原住民治疗师合作，识别可能产生新药的植物。
+
+      然而，森林砍伐威胁着在这些天然资源被发现之前就将其摧毁。每六秒就有一片足球场大小的雨林被砍伐。因此，植物物种在科学家能够研究它们之前就已灭绝。一些研究人员称之为"在读书之前烧掉图书馆"。
+
+      保护组织认为保护雨林不仅仅是环境问题——它还是医学问题。目前无法治疗的疾病的治愈方法可能正在某个雨林中生长。因此，许多国家正在建立保护区并支持可持续林业实践。
+
+      雨林真正是一个等待探索的药房。每次测试一种新的植物化合物，都可能带来拯救数千人生命的突破。
+    vocabHighlights:
+      - word: deforestation
+        ref: V0770
+      - word: conservation
+        ref: V0755
+      - word: sustainable
+        ref: V0759
+    questions:
+      - id: R094-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'How to grow tropical plants at home'
+          B: 'The medicinal value of rainforest plants and why we must protect them'
+          C: 'The history of medicine in ancient civilizations'
+          D: 'Why indigenous communities do not trust modern medicine'
+        answer: 'B'
+        explanation: 'The passage describes medicinal plants from rainforests and argues for protecting them from deforestation.'
+        explanationZh: '文章描述了雨林中的药用植物，并主张保护它们免受森林砍伐。'
+      - id: R094-Q2
+        type: detail
+        question: 'What percentage of modern medicines come from rainforest plants?'
+        questionZh: '多大比例的现代药物来自雨林植物？'
+        options:
+          A: 'About 1%'
+          B: 'About 10%'
+          C: 'About 25%'
+          D: 'About 80%'
+        answer: 'C'
+        explanation: 'The passage states "about 25% of all modern medicines originally come from rainforest plants."'
+        explanationZh: '文章指出"约25%的现代药物最初来自雨林植物"。'
+      - id: R094-Q3
+        type: inference
+        question: 'What does "burning the library before reading the books" mean?'
+        questionZh: '"在读书之前烧掉图书馆"是什么意思？'
+        options:
+          A: 'Libraries in rainforest areas are often damaged by wildfires'
+          B: 'We are destroying rainforest plants before discovering their potential uses'
+          C: 'Indigenous people prefer oral history to written books'
+          D: 'Scientists need to read more books about rainforest plants'
+        answer: 'B'
+        explanation: 'The metaphor compares destroying the rainforest to burning a library — both destroy valuable knowledge before it can be used.'
+        explanationZh: '这个比喻把摧毁雨林比作烧掉图书馆——两者都在知识被利用之前就将其摧毁。'
+      - id: R094-Q4
+        type: vocabulary-in-context
+        question: 'What does "breakthrough" mean in the last paragraph?'
+        questionZh: '最后一段中的"breakthrough"是什么意思？'
+        options:
+          A: 'A wall that collapses during construction'
+          B: 'An important discovery that solves a difficult problem'
+          C: 'A disease that spreads very quickly'
+          D: 'A plant that grows through cracks in rocks'
+        answer: 'B'
+        explanation: 'A "breakthrough that saves thousands of lives" means an important medical discovery.'
+        explanationZh: '"拯救数千人生命的突破"意味着一项重要的医学发现。'
+
+  - id: R095
+    title: 'Why Renewable Energy Matters'
+    titleZh: '为什么可再生能源很重要'
+    level: 3
+    wordCount: 310
+    topic: renewable energy
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'TED-Ed: Renewable Energy Explained'
+      author: 'TED-Ed'
+      note: 'Original passage about renewable energy sources for young readers'
+    passage: |
+      Every time you turn on a light, charge your phone, or ride in a car, you are using energy. For over 200 years, most of this energy has come from burning fossil fuels — coal, oil, and natural gas. However, these fuels create serious problems: they release carbon dioxide that warms the planet, they cause air pollution that harms our health, and they will eventually run out.
+
+      Renewable energy offers a cleaner alternative. Unlike fossil fuels, renewable sources — such as sunlight, wind, and water — will never be used up. The sun will continue shining for another five billion years, the wind will keep blowing, and rivers will keep flowing. Furthermore, these sources produce little or no carbon dioxide, making them far better for the climate.
+
+      Solar energy is growing the fastest. Modern solar panels can convert about 20% of sunlight into electricity. In sunny countries like China, India, and Australia, massive solar farms now generate enough power for millions of homes. Moreover, the cost of solar panels has dropped by over 90% since 2010, making them affordable for ordinary families.
+
+      Wind power is equally promising. Countries like Denmark already generate over 50% of their electricity from wind turbines. Offshore wind farms — built in the sea where winds are stronger and more constant — are becoming increasingly popular in Europe and Asia.
+
+      Nevertheless, renewable energy is not perfect. The sun does not always shine, and the wind does not always blow. This creates a storage problem: how do you save excess energy for cloudy or calm days? Scientists are working on better batteries and other storage solutions to solve this challenge.
+
+      Despite these obstacles, the transition to renewable energy is accelerating. In 2023, renewable sources generated over 30% of global electricity for the first time. Experts predict this will reach 50% by 2030. The age of fossil fuels is slowly coming to an end.
+    passageZh: |
+      每次你开灯、给手机充电或坐车时，你都在使用能量。200多年来，大部分能量来自燃烧化石燃料——煤、石油和天然气。然而，这些燃料造成了严重的问题：它们释放的二氧化碳使地球变暖，造成危害健康的空气污染，而且最终会耗尽。
+
+      可再生能源提供了更清洁的替代方案。与化石燃料不同，可再生能源——如阳光、风和水——永远不会被用完。太阳还将继续发光五十亿年，风将继续吹，河流将继续流淌。此外，这些能源几乎不产生二氧化碳，对气候好得多。
+
+      太阳能增长最快。现代太阳能板可以将约20%的阳光转化为电力。在中国、印度和澳大利亚等阳光充足的国家，大型太阳能农场现在能为数百万家庭供电。而且，自2010年以来太阳能板的成本下降了90%以上，普通家庭也能负担得起。
+
+      风能同样前景光明。丹麦等国家已经从风力涡轮机中产生了超过50%的电力。海上风电场——建在海上，那里风力更强更稳定——在欧洲和亚洲越来越受欢迎。
+
+      然而，可再生能源并不完美。太阳并不总是照耀，风也不总是吹。这造成了储能问题：如何为阴天或无风天储存多余的能量？科学家们正在开发更好的电池和其他储能方案来解决这个挑战。
+
+      尽管存在这些障碍，向可再生能源的过渡正在加速。2023年，可再生能源首次产生了全球30%以上的电力。专家预测到2030年将达到50%。化石燃料时代正在慢慢走向终结。
+    vocabHighlights:
+      - word: renewable
+        ref: V0760
+      - word: generate
+        ref: V0821
+      - word: solar
+        ref: V0822
+    questions:
+      - id: R095-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'Why fossil fuels are the best energy source'
+          B: 'The benefits and challenges of renewable energy'
+          C: 'How to build a wind turbine at home'
+          D: 'The history of electricity generation'
+        answer: 'B'
+        explanation: 'The passage discusses the advantages of renewable energy over fossil fuels and acknowledges the storage challenge.'
+        explanationZh: '文章讨论了可再生能源相对于化石燃料的优势，并承认了储能挑战。'
+      - id: R095-Q2
+        type: detail
+        question: 'What is the main challenge with renewable energy according to the passage?'
+        questionZh: '根据文章，可再生能源的主要挑战是什么？'
+        options:
+          A: 'It is too expensive for most countries'
+          B: 'It produces too much carbon dioxide'
+          C: 'Energy storage for times when the sun or wind is not available'
+          D: 'It can only work in tropical countries'
+        answer: 'C'
+        explanation: 'The passage identifies the storage problem: "how do you save excess energy for cloudy or calm days?"'
+        explanationZh: '文章指出了储能问题："如何为阴天或无风天储存多余的能量？"'
+      - id: R095-Q3
+        type: detail
+        question: 'By how much has the cost of solar panels dropped since 2010?'
+        questionZh: '自2010年以来太阳能板的成本下降了多少？'
+        options:
+          A: 'By about 20%'
+          B: 'By about 50%'
+          C: 'By over 90%'
+          D: 'By about 30%'
+        answer: 'C'
+        explanation: 'The passage states "the cost of solar panels has dropped by over 90% since 2010."'
+        explanationZh: '文章指出"自2010年以来太阳能板的成本下降了90%以上"。'
+      - id: R095-Q4
+        type: vocabulary-in-context
+        question: 'What does "transition" mean in the last paragraph?'
+        questionZh: '最后一段中的"transition"是什么意思？'
+        options:
+          A: 'A sudden stop or pause'
+          B: 'A gradual change from one thing to another'
+          C: 'A way of transporting goods'
+          D: 'A problem that has no solution'
+        answer: 'B'
+        explanation: 'The "transition to renewable energy" means the gradual change from fossil fuels to cleaner energy sources.'
+        explanationZh: '"向可再生能源的过渡"意味着从化石燃料到更清洁能源的渐进变化。'
+
+  - id: R096
+    title: 'How Trees Talk to Each Other'
+    titleZh: '树木如何互相交流'
+    level: 3
+    wordCount: 300
+    topic: ecology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'TED Talk: Suzanne Simard — How Trees Talk'
+      author: 'Suzanne Simard'
+      note: 'Original passage inspired by Simard research on fungal networks'
+    passage: |
+      For centuries, people imagined forests as places where trees compete silently for sunlight and water. However, ground-breaking research by Canadian scientist Suzanne Simard has revealed a very different picture: trees actually cooperate and communicate through a hidden underground network.
+
+      Beneath the forest floor, tree roots connect with a vast web of fungal threads called mycorrhizal networks. Scientists have nicknamed this system the "wood wide web." Through these networks, trees can share sugar, water, and even warning signals with their neighbours.
+
+      Simard discovered that older trees — which she calls "mother trees" — actively support younger trees growing in the shade. A mother tree can recognize her own seedlings and send them extra nutrients through the fungal network. Furthermore, when a mother tree is dying, she transfers her stored carbon to nearby trees, ensuring the forest remains healthy after she is gone.
+
+      Perhaps the most remarkable finding is that trees can warn each other about danger. When a tree is attacked by insects, it releases chemical signals through the fungal network. Neighbouring trees receive these signals and begin producing defensive chemicals before the insects even reach them. As a result, an entire forest can prepare for an attack within hours.
+
+      These discoveries have changed the way scientists think about forests. Instead of viewing trees as individual competitors, they now see forests as cooperative communities where trees of different species support each other. This understanding has important implications for forest management — cutting down the largest, oldest trees may damage the entire network and weaken the forest as a whole.
+    passageZh: |
+      几个世纪以来，人们想象森林是树木默默竞争阳光和水的地方。然而，加拿大科学家 Suzanne Simard 的突破性研究揭示了一个非常不同的画面：树木实际上通过一个隐藏的地下网络合作和交流。
+
+      在森林地面之下，树根与一个巨大的真菌丝网络相连，称为菌根网络。科学家们给这个系统取了个绰号"木联网"。通过这些网络，树木可以与邻居分享糖分、水分，甚至警告信号。
+
+      Simard 发现年长的树——她称之为"母树"——积极支持在阴影中生长的年幼树木。母树可以识别自己的幼苗并通过真菌网络向它们输送额外的营养。此外，当母树临近死亡时，她会将储存的碳转移给附近的树木，确保森林在她离开后仍然健康。
+
+      也许最了不起的发现是树木可以互相警告危险。当一棵树被昆虫攻击时，它会通过真菌网络释放化学信号。邻近的树木接收到这些信号后会在昆虫到达之前就开始产生防御化学物质。因此，整个森林可以在几小时内为攻击做好准备。
+
+      这些发现改变了科学家对森林的看法。他们不再把树木视为个体竞争者，而是将森林视为合作社区，不同物种的树木互相支持。这种理解对森林管理有重要启示——砍伐最大最古老的树可能会损害整个网络并削弱整片森林。
+    vocabHighlights:
+      - word: ecosystem
+        ref: V0751
+      - word: nutrient
+        ref: V0810
+      - word: root
+        ref: V0807
+    questions:
+      - id: R096-Q1
+        type: main-idea
+        question: 'What is the main discovery described in this passage?'
+        questionZh: '这篇文章描述的主要发现是什么？'
+        options:
+          A: 'Trees compete fiercely for water and sunlight'
+          B: 'Trees communicate and cooperate through underground fungal networks'
+          C: 'Forests are being destroyed by insect attacks'
+          D: 'Scientists have found a way to make trees grow faster'
+        answer: 'B'
+        explanation: 'The passage describes Simard''s research showing trees share resources and warnings through the "wood wide web."'
+        explanationZh: '文章描述了 Simard 的研究，表明树木通过"木联网"共享资源和警告。'
+      - id: R096-Q2
+        type: detail
+        question: 'What do mother trees do when they are dying?'
+        questionZh: '母树在临近死亡时做什么？'
+        options:
+          A: 'They release poisonous chemicals to kill nearby trees'
+          B: 'They transfer their stored carbon to nearby trees'
+          C: 'They produce extra seeds to replace themselves'
+          D: 'They stop sharing nutrients with other trees'
+        answer: 'B'
+        explanation: 'The passage states "when a mother tree is dying, she transfers her stored carbon to nearby trees."'
+        explanationZh: '文章指出"当母树临近死亡时，她会将储存的碳转移给附近的树木"。'
+      - id: R096-Q3
+        type: inference
+        question: 'Why might cutting down the largest trees be harmful to the whole forest?'
+        questionZh: '为什么砍伐最大的树可能对整片森林有害？'
+        options:
+          A: 'Because they provide shade for animals'
+          B: 'Because they are the central hubs of the underground network that supports other trees'
+          C: 'Because their wood is the most valuable'
+          D: 'Because they attract the most tourists'
+        answer: 'B'
+        explanation: 'Mother trees are key network hubs. Removing them "may damage the entire network and weaken the forest as a whole."'
+        explanationZh: '母树是关键的网络枢纽。移除它们"可能会损害整个网络并削弱整片森林"。'
+      - id: R096-Q4
+        type: vocabulary-in-context
+        question: 'What does "ground-breaking" mean?'
+        questionZh: '"ground-breaking"是什么意思？'
+        options:
+          A: 'Related to digging in the ground'
+          B: 'Completely new and important'
+          C: 'Dangerous and risky'
+          D: 'Easy to understand'
+        answer: 'B'
+        explanation: '"Ground-breaking research" means research that is revolutionary and changes how people think about a topic.'
+        explanationZh: '"Ground-breaking research"意思是革命性的研究，改变了人们对一个话题的看法。'
+
+  - id: R097
+    title: 'The Incredible Tardigrade'
+    titleZh: '不可思议的水熊虫'
+    level: 3
+    wordCount: 290
+    topic: biology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Earth: Tardigrades'
+      author: 'BBC'
+      note: 'Original passage about tardigrade survival for young readers'
+    passage: |
+      If you could choose any animal's superpower, you might want the abilities of the tardigrade. Also known as "water bears" because of their round, bear-like shape, these microscopic creatures are the toughest animals on Earth.
+
+      Tardigrades are tiny — most species are less than 0.5 millimetres long, smaller than a grain of sand. You would need a microscope to see one. Despite their small size, they can survive conditions that would instantly kill any other animal.
+
+      They can withstand temperatures from minus 272 degrees Celsius — just above absolute zero — to 150 degrees Celsius. They can survive pressures six times greater than the deepest part of the ocean. They can tolerate radiation doses hundreds of times higher than what would kill a human. Moreover, they have survived being sent into the vacuum of outer space on a European Space Agency mission in 2007.
+
+      How do they do it? When conditions become extreme, tardigrades enter a state called cryptobiosis. They curl into a tiny ball called a "tun," losing up to 97% of their water. In this dried-out state, their metabolism slows to nearly zero. They can remain in this state for decades and spring back to life when water returns.
+
+      Scientists are fascinated by tardigrades because understanding their survival mechanisms could have practical applications. Their proteins might help develop better vaccines that do not need refrigeration or create materials that protect astronauts from radiation during long space missions.
+
+      There are over 1,300 known species of tardigrade, found in every environment on Earth — from the peaks of the Himalayas to the bottom of the ocean, from tropical rainforests to Antarctic ice sheets. Such remarkable adaptability explains why they have survived all five mass extinction events in Earth's history.
+    passageZh: |
+      如果你可以选择任何动物的超能力，你可能想要水熊虫的能力。也被称为"水熊"因为它们圆圆的、像熊一样的形状，这些微观生物是地球上最坚韧的动物。
+
+      水熊虫非常小——大多数物种不到0.5毫米长，比一粒沙子还小。你需要显微镜才能看到一只。尽管体型小，它们可以在会立即杀死其他任何动物的条件下生存。
+
+      它们可以承受从零下272摄氏度——仅比绝对零度高一点——到150摄氏度的温度。它们可以承受比海洋最深处大六倍的压力。它们可以忍受比杀死人类剂量高数百倍的辐射。此外，它们在2007年欧洲航天局的任务中成功在外太空真空中存活。
+
+      它们是怎么做到的？当条件变得极端时，水熊虫进入一种叫做隐生的状态。它们蜷缩成一个叫做"桶"的小球，失去高达97%的水分。在这种脱水状态下，它们的新陈代谢几乎降到零。它们可以在这种状态下保持数十年，当水回来时重新复活。
+
+      科学家们对水熊虫着迷，因为了解它们的生存机制可能有实际应用。它们的蛋白质可能有助于开发不需要冷藏的更好的疫苗，或创造在长期太空任务中保护宇航员免受辐射的材料。
+
+      目前已知有超过1,300种水熊虫，在地球上的每个环境中都能找到——从喜马拉雅山顶到海底，从热带雨林到南极冰盖。如此非凡的适应能力解释了为什么它们在地球历史上的所有五次大灭绝中都存活了下来。
+    vocabHighlights:
+      - word: survive
+        ref: V0830
+      - word: adapt
+        ref: V0764
+      - word: microscope
+        ref: V0841
+    questions:
+      - id: R097-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'How to find tardigrades in your garden'
+          B: 'The extraordinary survival abilities of tardigrades'
+          C: 'Why tardigrades are dangerous to humans'
+          D: 'The history of microscope technology'
+        answer: 'B'
+        explanation: 'The passage describes the incredible conditions tardigrades can survive and explains how they do it.'
+        explanationZh: '文章描述了水熊虫能够在令人难以置信的条件下生存，并解释了它们是如何做到的。'
+      - id: R097-Q2
+        type: detail
+        question: 'What is cryptobiosis?'
+        questionZh: '什么是隐生？'
+        options:
+          A: 'A disease that affects tardigrades'
+          B: 'A state where tardigrades lose most of their water and slow their metabolism to nearly zero'
+          C: 'A type of movement tardigrades use to escape predators'
+          D: 'A chemical reaction that produces light inside their bodies'
+        answer: 'B'
+        explanation: 'The passage describes cryptobiosis as losing "up to 97% of their water" with metabolism slowing "to nearly zero."'
+        explanationZh: '文章描述隐生是失去"高达97%的水分"，新陈代谢"几乎降到零"。'
+      - id: R097-Q3
+        type: inference
+        question: 'Why are scientists interested in tardigrade proteins?'
+        questionZh: '为什么科学家对水熊虫的蛋白质感兴趣？'
+        options:
+          A: 'To create a new type of food'
+          B: 'To help develop vaccines and radiation protection for astronauts'
+          C: 'To make bigger tardigrades for pet shops'
+          D: 'To cure tardigrade diseases'
+        answer: 'B'
+        explanation: 'The passage mentions potential applications: "vaccines that do not need refrigeration" and "materials that protect astronauts from radiation."'
+        explanationZh: '文章提到了潜在应用："不需要冷藏的疫苗"和"在太空任务中保护宇航员免受辐射的材料"。'
+      - id: R097-Q4
+        type: vocabulary-in-context
+        question: 'What does "spring back to life" mean?'
+        questionZh: '"spring back to life"是什么意思？'
+        options:
+          A: 'To jump very high like a spring'
+          B: 'To become active and alive again after being dormant'
+          C: 'To move to a new location in springtime'
+          D: 'To grow new legs or body parts'
+        answer: 'B'
+        explanation: 'Tardigrades "spring back to life when water returns" — they become active again after their dormant tun state.'
+        explanationZh: '水熊虫"当水回来时重新复活"——它们在休眠的桶状态后重新变得活跃。'
+
+  - id: R098
+    title: 'The Language of Dolphins'
+    titleZh: '海豚的语言'
+    level: 3
+    wordCount: 300
+    topic: animal communication
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic: Dolphin Communication'
+      author: 'National Geographic'
+      note: 'Original passage about dolphin communication research'
+    passage: |
+      Dolphins are widely considered to be among the most intelligent animals on Earth. However, what truly sets them apart is their sophisticated communication system. Recent research suggests that dolphin communication may be far more complex than scientists previously imagined.
+
+      Each bottlenose dolphin develops a unique "signature whistle" within the first few months of life — essentially a name that other dolphins use to call them. When two dolphins that know each other meet, they exchange signature whistles as a greeting. Furthermore, dolphins can remember the signature whistles of individuals they have not seen for over 20 years.
+
+      Beyond individual names, dolphins use a wide variety of clicks, whistles, and body movements to share information. High-frequency clicks are used for echolocation — a sonar-like system that helps dolphins "see" underwater by bouncing sound off objects. Lower-frequency sounds appear to serve a social function, expressing emotions or coordinating group activities.
+
+      In 2016, researchers at the Karadag Nature Reserve in Ukraine made a breakthrough discovery. They recorded two dolphins — named Yasha and Yana — taking turns to produce sequences of clicks that the other listened to without interrupting. The researchers suggested that this pattern resembled human conversation, with each dolphin waiting for the other to finish before responding.
+
+      Nevertheless, translating dolphin language remains extremely difficult. Unlike human language, which uses words made of individual sounds, dolphin communication appears to be holistic — each sound conveys a complete idea rather than being built from smaller units. Consequently, creating a "dolphin dictionary" has proven to be far more challenging than scientists initially hoped.
+
+      What is clear is that dolphins have a level of social intelligence that rivals that of great apes. Such findings continue to raise important questions about animal consciousness and our responsibility to protect these remarkable creatures.
+    passageZh: |
+      海豚被普遍认为是地球上最聪明的动物之一。然而，真正使它们与众不同的是它们复杂的交流系统。最近的研究表明，海豚的交流可能比科学家之前想象的要复杂得多。
+
+      每只宽吻海豚在生命的最初几个月内都会发展出一种独特的"签名哨声"——本质上是其他海豚用来叫它们的名字。当两只认识的海豚相遇时，它们交换签名哨声作为问候。此外，海豚可以记住超过20年没见过的个体的签名哨声。
+
+      除了个人名字，海豚还使用各种各样的咔嗒声、哨声和身体动作来分享信息。高频咔嗒声用于回声定位——一种类似声纳的系统，帮助海豚通过将声音弹射到物体上来"看到"水下环境。较低频率的声音似乎具有社交功能，表达情感或协调群体活动。
+
+      2016年，乌克兰卡拉达格自然保护区的研究人员取得了突破性发现。他们录下了两只海豚——名叫 Yasha 和 Yana——轮流产生咔嗒声序列，另一只在不打断的情况下倾听。研究人员认为这种模式类似于人类对话，每只海豚等待对方说完再回应。
+
+      然而，翻译海豚语言仍然极其困难。与使用由单个声音组成的单词的人类语言不同，海豚的交流似乎是整体性的——每个声音传达一个完整的想法，而不是由更小的单元构建。因此，创建"海豚词典"被证明比科学家最初希望的要困难得多。
+
+      很明显的是，海豚拥有与类人猿相媲美的社会智能水平。这些发现继续提出关于动物意识和我们保护这些了不起生物的责任的重要问题。
+    vocabHighlights:
+      - word: frequency
+        ref: V0863
+      - word: detect
+        ref: V0831
+      - word: significant
+        ref: V0781
+    questions:
+      - id: R098-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'How dolphins hunt for fish in groups'
+          B: 'The complex communication systems of dolphins'
+          C: 'Why dolphins are kept in aquariums'
+          D: 'The physical characteristics of bottlenose dolphins'
+        answer: 'B'
+      - id: R098-Q2
+        type: detail
+        question: 'What is a "signature whistle"?'
+        questionZh: '什么是"签名哨声"？'
+        options:
+          A: 'A warning sound used when predators are near'
+          B: 'A unique sound that acts like a dolphin''s name'
+          C: 'A sound used for echolocation'
+          D: 'A mating call produced once a year'
+        answer: 'B'
+      - id: R098-Q3
+        type: detail
+        question: 'Why is creating a "dolphin dictionary" so difficult?'
+        questionZh: '为什么创建"海豚词典"如此困难？'
+        options:
+          A: 'Because dolphins refuse to communicate in captivity'
+          B: 'Because dolphin sounds are too quiet to record'
+          C: 'Because each sound conveys a complete idea rather than being built from smaller units'
+          D: 'Because dolphins speak too many different languages'
+        answer: 'C'
+      - id: R098-Q4
+        type: vocabulary-in-context
+        question: 'What does "rivals" mean in the last paragraph?'
+        questionZh: '最后一段中的"rivals"是什么意思？'
+        options:
+          A: 'Is much lower than'
+          B: 'Is equal to or as good as'
+          C: 'Is completely different from'
+          D: 'Is dangerous to'
+        answer: 'B'
+
+  - id: R099
+    title: 'Saving the Snow Leopard'
+    titleZh: '拯救雪豹'
+    level: 3
+    wordCount: 290
+    topic: conservation
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'WWF: Snow Leopard Conservation'
+      author: 'WWF'
+      note: 'Original passage about snow leopard conservation efforts'
+    passage: |
+      High in the mountains of Central Asia, one of the world's most beautiful cats lives in almost total secrecy. The snow leopard is so rarely seen by humans that local people call it the "ghost of the mountains." With fewer than 7,000 left in the wild, this magnificent creature is fighting for survival.
+
+      Snow leopards live at altitudes between 3,000 and 5,500 metres, in some of the harshest conditions on Earth. Their thick fur — covered in grey and black rosette patterns — provides excellent camouflage against the rocky terrain. Their extraordinarily long tails, nearly as long as their bodies, help them balance on steep cliffs and keep warm when wrapped around their faces during snowstorms.
+
+      However, several factors threaten their existence. Climate change is pushing their prey — mountain goats and sheep — to higher elevations where food is scarcer. Poachers hunt them for their beautiful fur, which can sell for thousands of dollars on the black market. Furthermore, as human settlements expand into mountain areas, snow leopards sometimes kill livestock, leading herders to hunt them in retaliation.
+
+      Conservation groups are fighting back. The Snow Leopard Trust works with local communities to create "insurance programmes" — when a snow leopard kills a goat, the farmer is compensated financially. This removes the motivation for revenge killing. Moreover, camera traps placed across mountain ranges help scientists track snow leopard populations and movements.
+
+      Perhaps the most innovative solution is "predator-proof corrals" — strong enclosures that protect livestock at night. Since these corrals were introduced in several villages, snow leopard killings by farmers have dropped by over 90%.
+
+      The road to recovery is long, but these efforts offer genuine hope. As one conservationist said, "We don't just save snow leopards — we save the entire mountain ecosystem they help maintain."
+    passageZh: |
+      在中亚的高山上，世界上最美丽的猫科动物之一几乎在完全的隐秘中生活。雪豹很少被人类看到，当地人称它为"山上的幽灵"。野外仅剩不到7,000只，这种壮丽的生物正在为生存而战。
+
+      雪豹生活在海拔3,000到5,500米之间，在地球上最严酷的条件下。它们厚厚的毛——覆盖着灰色和黑色的玫瑰花纹——在岩石地形中提供了出色的伪装。它们异常长的尾巴——几乎和身体一样长——帮助它们在陡峭的悬崖上保持平衡，在暴风雪中缠绕在脸上保暖。
+
+      然而，几个因素威胁着它们的生存。气候变化正在把它们的猎物——山羊和山羊——推向更高的海拔，那里食物更稀缺。偷猎者猎杀它们是为了美丽的毛皮，在黑市上可以卖到数千美元。此外，随着人类定居点扩展到山区，雪豹有时会杀死牲畜，导致牧民进行报复性猎杀。
+
+      保护团体正在反击。雪豹信托与当地社区合作创建"保险计划"——当雪豹杀死一只山羊时，农民得到经济补偿。这消除了报复性杀戮的动机。此外，放置在山脉各处的相机陷阱帮助科学家追踪雪豹的种群和活动。
+
+      也许最创新的解决方案是"防捕食者围栏"——在夜间保护牲畜的坚固围栏。自从这些围栏被引入几个村庄以来，农民杀害雪豹的数量下降了90%以上。
+
+      恢复之路漫长，但这些努力提供了真正的希望。正如一位保护主义者所说，"我们不仅仅是在拯救雪豹——我们在拯救它们帮助维持的整个山地生态系统。"
+    vocabHighlights:
+      - word: endangered
+        ref: V0756
+      - word: conservation
+        ref: V0755
+      - word: habitat
+        ref: V0752
+    questions:
+      - id: R099-Q1
+        type: main-idea
+        question: 'What is the passage mainly about?'
+        questionZh: '这篇文章主要讲什么？'
+        options:
+          A: 'The physical features of snow leopards and how they hunt'
+          B: 'The threats facing snow leopards and the conservation efforts to save them'
+          C: 'Why snow leopards are dangerous to humans'
+          D: 'How climate change affects all big cats'
+        answer: 'B'
+      - id: R099-Q2
+        type: detail
+        question: 'What are "predator-proof corrals"?'
+        questionZh: '"防捕食者围栏"是什么？'
+        options:
+          A: 'Traps designed to catch snow leopards'
+          B: 'Strong enclosures that protect livestock from snow leopard attacks at night'
+          C: 'Camera systems that photograph snow leopards'
+          D: 'Areas where snow leopards are not allowed to enter'
+        answer: 'B'
+      - id: R099-Q3
+        type: inference
+        question: 'Why is compensating farmers for livestock losses important?'
+        questionZh: '为什么补偿农民的牲畜损失很重要？'
+        options:
+          A: 'Because farmers cannot afford to buy new animals'
+          B: 'Because it removes the motivation for farmers to kill snow leopards in revenge'
+          C: 'Because snow leopards prefer farm animals to wild prey'
+          D: 'Because the government requires farmers to receive payment'
+        answer: 'B'
+      - id: R099-Q4
+        type: vocabulary-in-context
+        question: 'What does "retaliation" mean?'
+        questionZh: '"retaliation"是什么意思？'
+        options:
+          A: 'A type of mountain climbing'
+          B: 'Action taken in revenge after being harmed'
+          C: 'A celebration of local customs'
+          D: 'A method of protecting animals'
+        answer: 'B'
+
+  - id: R100
+    title: 'The Ocean''s Invisible Forest'
+    titleZh: '海洋的隐形森林'
+    level: 3
+    wordCount: 310
+    topic: marine ecology
+    tags: [Q06, month-6]
+    source:
+      type: 'inspired-by'
+      title: 'TED-Ed: Phytoplankton'
+      author: 'TED-Ed'
+      note: 'Original passage about the importance of phytoplankton'
+    passage: |
+      When people think about the oxygen they breathe, they usually thank trees and forests. However, the truth is that over half of the world's oxygen comes from a source most people have never seen — tiny organisms called phytoplankton floating in the ocean.
+
+      Phytoplankton are microscopic plant-like organisms that live near the surface of the ocean where sunlight can reach. Like trees, they use photosynthesis to convert carbon dioxide and sunlight into food, releasing oxygen as a by-product. Although each individual phytoplankton is invisible to the naked eye, together they form a vast "invisible forest" that produces more oxygen than all the world's trees combined.
+
+      Furthermore, phytoplankton play a crucial role in the global carbon cycle. They absorb billions of tonnes of carbon dioxide from the atmosphere each year. When they die, many sink to the ocean floor, taking the carbon with them and locking it away for thousands of years. Scientists call this process the "biological pump" because it effectively pumps carbon from the atmosphere into the deep ocean.
+
+      Despite their importance, phytoplankton populations have been declining. Studies suggest that warming ocean temperatures have reduced phytoplankton numbers by approximately 40% since 1950. As waters warm, the surface layer becomes more stable and stops mixing with the nutrient-rich deeper water. Consequently, phytoplankton near the surface cannot get the nutrients they need to grow.
+
+      This decline has alarming consequences. Phytoplankton are the foundation of the entire marine food chain. Small fish eat phytoplankton, larger fish eat the small fish, and so on. If phytoplankton disappear, the effects would cascade through every level of ocean life.
+
+      Scientists are now monitoring phytoplankton populations from space using satellites that detect the green colour of chlorophyll in the water. Such technology allows them to track changes across the entire ocean in real time and sound the alarm if populations drop too quickly.
+    passageZh: |
+      当人们想到呼吸的氧气时，通常会感谢树木和森林。然而，事实是世界上超过一半的氧气来自一个大多数人从未见过的来源——漂浮在海洋中被称为浮游植物的微小生物。
+
+      浮游植物是微观的类植物生物，生活在阳光能到达的海洋表面附近。像树木一样，它们利用光合作用将二氧化碳和阳光转化为食物，释放氧气作为副产品。虽然每个浮游植物对肉眼来说是看不见的，但它们共同形成了一个巨大的"隐形森林"，产生的氧气比世界上所有树木加在一起还多。
+
+      此外，浮游植物在全球碳循环中扮演着关键角色。它们每年从大气中吸收数十亿吨二氧化碳。当它们死亡时，许多沉到海底，带着碳一起沉下并将其封存数千年。科学家称这个过程为"生物泵"，因为它有效地将碳从大气泵入深海。
+
+      尽管它们很重要，浮游植物的数量一直在下降。研究表明，自1950年以来，海洋温度升高已使浮游植物数量减少了约40%。随着水温升高，表层变得更稳定，停止与富含营养的深层水混合。因此，表层附近的浮游植物无法获得生长所需的营养。
+
+      这种下降有令人担忧的后果。浮游植物是整个海洋食物链的基础。小鱼吃浮游植物，大鱼吃小鱼，以此类推。如果浮游植物消失，影响将级联传递到海洋生命的每一个层级。
+
+      科学家们现在正在从太空用卫星监测浮游植物种群，这些卫星可以检测水中叶绿素的绿色。这种技术使他们能够实时追踪整个海洋的变化，如果种群下降过快就发出警报。
+    vocabHighlights:
+      - word: photosynthesis
+        ref: V0769
+      - word: oxygen
+        ref: V0804
+      - word: decline
+        ref: V0785
+    questions:
+      - id: R100-Q1
+        type: main-idea
+        question: 'What is the main message of this passage?'
+        questionZh: '这篇文章的主要信息是什么？'
+        options:
+          A: 'Trees are the most important source of oxygen on Earth'
+          B: 'Phytoplankton are essential for life on Earth but their populations are declining'
+          C: 'Satellites can photograph every fish in the ocean'
+          D: 'The ocean is too polluted for anything to survive'
+        answer: 'B'
+      - id: R100-Q2
+        type: detail
+        question: 'How much of the world''s oxygen comes from phytoplankton?'
+        questionZh: '世界上有多少氧气来自浮游植物？'
+        options:
+          A: 'About 10%'
+          B: 'About 25%'
+          C: 'Over 50%'
+          D: 'About 90%'
+        answer: 'C'
+      - id: R100-Q3
+        type: inference
+        question: 'Why might the decline of phytoplankton affect humans?'
+        questionZh: '为什么浮游植物的减少可能影响人类？'
+        options:
+          A: 'Because phytoplankton are an important human food source'
+          B: 'Because they produce oxygen and support the marine food chain that humans depend on'
+          C: 'Because they prevent tsunamis and hurricanes'
+          D: 'Because they produce fresh drinking water'
+        answer: 'B'
+      - id: R100-Q4
+        type: vocabulary-in-context
+        question: 'What does "cascade" mean in the passage?'
+        questionZh: '文中的"cascade"是什么意思？'
+        options:
+          A: 'To stay in one place without moving'
+          B: 'To spread or pass through many levels, one after another'
+          C: 'To float slowly to the surface'
+          D: 'To freeze solid in cold temperatures'
+        answer: 'B'

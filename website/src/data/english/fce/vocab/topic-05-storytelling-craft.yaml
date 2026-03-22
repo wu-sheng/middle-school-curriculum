@@ -1,0 +1,3363 @@
+# Topic 05: Storytelling & Narrative Craft (Month 5)
+# V0601-V0750 — B2 level vocabulary
+# Story Forge theme: storytelling, narrative craft, descriptive language, emotions, settings
+
+topic: "Storytelling & Narrative Craft"
+topicZh: "叙事与写作技巧"
+vocab:
+  # ============================================
+  # D121: V0601-V0605 — Core Storytelling Words
+  # ============================================
+
+  - id: V0601
+    word: narrative
+    phonetic: '/ˈnærətɪv/'
+    partOfSpeech: noun
+    definition: 'A spoken or written account of connected events; a story'
+    definitionZh: '叙事，故事'
+    exampleSentence: 'The author created a gripping narrative about a young girl lost in an enchanted forest.'
+    exampleSentenceZh: '作者创作了一个关于一个迷失在魔法森林中的女孩的扣人心弦的故事。'
+    wordFamily:
+      - form: narrator
+        partOfSpeech: noun
+      - form: narrate
+        partOfSpeech: verb
+      - form: narration
+        partOfSpeech: noun
+    collocations:
+      - 'narrative voice'
+      - 'first-person narrative'
+      - 'compelling narrative'
+    synonyms: [story, account, tale]
+    antonyms: []
+    level: 2
+    firstAppear: D121
+    reviewSchedule: [D122, D124, D128, D135, D151]
+
+  - id: V0602
+    word: protagonist
+    phonetic: '/prəˈtæɡənɪst/'
+    partOfSpeech: noun
+    definition: 'The main character in a story, play, or film'
+    definitionZh: '主角，主人公'
+    exampleSentence: 'The protagonist of the adventure was a brave twelve-year-old who discovered a hidden kingdom.'
+    exampleSentenceZh: '这个冒险故事的主角是一个勇敢的十二岁孩子，他发现了一个隐藏的王国。'
+    wordFamily: []
+    collocations:
+      - 'the story''s protagonist'
+      - 'unlikely protagonist'
+      - 'young protagonist'
+    synonyms: [hero, heroine, main character]
+    antonyms: [antagonist, villain]
+    level: 3
+    firstAppear: D121
+    reviewSchedule: [D122, D124, D128, D135, D151]
+
+  - id: V0603
+    word: antagonist
+    phonetic: '/ænˈtæɡənɪst/'
+    partOfSpeech: noun
+    definition: 'A character who opposes the protagonist; a villain'
+    definitionZh: '反派角色，对手'
+    exampleSentence: 'The antagonist was a cunning sorcerer who wanted to steal the kingdom''s magic.'
+    exampleSentenceZh: '反派是一个狡猾的巫师，想要偷走王国的魔法。'
+    wordFamily:
+      - form: antagonise
+        partOfSpeech: verb
+      - form: antagonism
+        partOfSpeech: noun
+      - form: antagonistic
+        partOfSpeech: adjective
+    collocations:
+      - 'main antagonist'
+      - 'powerful antagonist'
+      - 'defeat the antagonist'
+    synonyms: [villain, opponent, adversary]
+    antonyms: [protagonist, hero, ally]
+    level: 3
+    firstAppear: D121
+    reviewSchedule: [D122, D124, D128, D135, D151]
+
+  - id: V0604
+    word: plot
+    phonetic: '/plɒt/'
+    partOfSpeech: noun
+    definition: 'The main events of a story, devised and presented as an interconnected sequence'
+    definitionZh: '情节，故事线'
+    exampleSentence: 'The plot thickened when the detective found a mysterious letter hidden inside the old clock.'
+    exampleSentenceZh: '当侦探发现藏在旧钟里的神秘信件时，情节变得更加复杂了。'
+    wordFamily: []
+    collocations:
+      - 'plot twist'
+      - 'the plot thickens'
+      - 'follow the plot'
+    synonyms: [storyline, scenario, plan]
+    antonyms: []
+    level: 2
+    firstAppear: D121
+    reviewSchedule: [D122, D124, D128, D135, D151]
+
+  - id: V0605
+    word: tension
+    phonetic: '/ˈtenʃn/'
+    partOfSpeech: noun
+    definition: 'A feeling of nervousness, excitement, or fear about something that is about to happen'
+    definitionZh: '紧张，紧张感'
+    exampleSentence: 'The tension built as the hero crept through the dark cave, not knowing what lay ahead.'
+    exampleSentenceZh: '当英雄悄悄穿过黑暗的洞穴，不知道前方有什么时，紧张感不断增强。'
+    wordFamily:
+      - form: tense
+        partOfSpeech: adjective
+    collocations:
+      - 'build tension'
+      - 'rising tension'
+      - 'ease the tension'
+    synonyms: [suspense, strain, anxiety]
+    antonyms: [relaxation, calm, ease]
+    level: 2
+    firstAppear: D121
+    reviewSchedule: [D122, D124, D128, D135, D151]
+
+  # ============================================
+  # D122: V0606-V0610 — Suspense & Mystery
+  # ============================================
+
+  - id: V0606
+    word: suspense
+    phonetic: '/səˈspens/'
+    partOfSpeech: noun
+    definition: 'A feeling of excited or anxious uncertainty about what will happen'
+    definitionZh: '悬念，悬疑'
+    exampleSentence: 'The writer kept readers in suspense by ending each chapter with an unanswered question.'
+    exampleSentenceZh: '作者在每章结尾留下一个未解答的问题，让读者充满悬念。'
+    wordFamily:
+      - form: suspenseful
+        partOfSpeech: adjective
+    collocations:
+      - 'keep in suspense'
+      - 'full of suspense'
+      - 'build suspense'
+    synonyms: [anticipation, tension, uncertainty]
+    antonyms: [certainty, predictability]
+    level: 2
+    firstAppear: D122
+    reviewSchedule: [D123, D125, D129, D136, D152]
+
+  - id: V0607
+    word: foreshadow
+    phonetic: '/fɔːˈʃædəʊ/'
+    partOfSpeech: verb
+    definition: 'To give a hint or warning of something that will happen later in the story'
+    definitionZh: '预示，伏笔'
+    exampleSentence: 'The dark clouds at the beginning of the story foreshadowed the trouble that was coming.'
+    exampleSentenceZh: '故事开头的乌云预示了即将到来的麻烦。'
+    wordFamily:
+      - form: foreshadowing
+        partOfSpeech: noun
+    collocations:
+      - 'foreshadow events'
+      - 'foreshadow danger'
+      - 'foreshadow a twist'
+    synonyms: [hint, predict, suggest]
+    antonyms: []
+    level: 3
+    firstAppear: D122
+    reviewSchedule: [D123, D125, D129, D136, D152]
+
+  - id: V0608
+    word: cliffhanger
+    phonetic: '/ˈklɪfhæŋə/'
+    partOfSpeech: noun
+    definition: 'An ending to a chapter or episode that leaves the audience in suspense'
+    definitionZh: '悬念式结尾'
+    exampleSentence: 'The book ended on a cliffhanger — the hero was trapped and we had to wait for the sequel!'
+    exampleSentenceZh: '这本书以悬念结尾——英雄被困住了，我们不得不等续集！'
+    wordFamily: []
+    collocations:
+      - 'end on a cliffhanger'
+      - 'dramatic cliffhanger'
+      - 'chapter cliffhanger'
+    synonyms: [suspenseful ending, hook]
+    antonyms: [resolution, conclusion]
+    level: 2
+    firstAppear: D122
+    reviewSchedule: [D123, D125, D129, D136, D152]
+
+  - id: V0609
+    word: intriguing
+    phonetic: '/ɪnˈtriːɡɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Very interesting because of being unusual or mysterious'
+    definitionZh: '引人入胜的，神秘的'
+    exampleSentence: 'The detective received an intriguing letter written in invisible ink.'
+    exampleSentenceZh: '侦探收到了一封用隐形墨水写的引人入胜的信。'
+    wordFamily:
+      - form: intrigue
+        partOfSpeech: verb
+      - form: intrigue
+        partOfSpeech: noun
+    collocations:
+      - 'intriguing mystery'
+      - 'intriguing character'
+      - 'find something intriguing'
+    synonyms: [fascinating, captivating, compelling]
+    antonyms: [boring, dull, uninteresting]
+    level: 2
+    firstAppear: D122
+    reviewSchedule: [D123, D125, D129, D136, D152]
+
+  - id: V0610
+    word: captivating
+    phonetic: '/ˈkæptɪveɪtɪŋ/'
+    partOfSpeech: adjective
+    definition: 'So interesting or attractive that you cannot stop watching or reading'
+    definitionZh: '迷人的，吸引人的'
+    exampleSentence: 'The storyteller told a captivating tale about a mermaid who saved a sinking ship.'
+    exampleSentenceZh: '讲故事的人讲述了一个关于美人鱼拯救沉船的迷人故事。'
+    wordFamily:
+      - form: captivate
+        partOfSpeech: verb
+      - form: captivated
+        partOfSpeech: adjective
+    collocations:
+      - 'captivating story'
+      - 'captivating performance'
+      - 'absolutely captivating'
+    synonyms: [enchanting, fascinating, gripping]
+    antonyms: [tedious, boring, repulsive]
+    level: 2
+    firstAppear: D122
+    reviewSchedule: [D123, D125, D129, D136, D152]
+
+  # ============================================
+  # D123: V0611-V0615 — Story Structure Words
+  # ============================================
+
+  - id: V0611
+    word: gripping
+    phonetic: '/ˈɡrɪpɪŋ/'
+    partOfSpeech: adjective
+    definition: 'So exciting or interesting that it holds your attention completely'
+    definitionZh: '扣人心弦的'
+    exampleSentence: 'The mystery novel was so gripping that I finished it in one sitting.'
+    exampleSentenceZh: '这部悬疑小说扣人心弦，我一口气读完了。'
+    wordFamily:
+      - form: grip
+        partOfSpeech: verb
+    collocations:
+      - 'gripping tale'
+      - 'gripping thriller'
+      - 'absolutely gripping'
+    synonyms: [riveting, compelling, thrilling]
+    antonyms: [boring, dull, tedious]
+    level: 2
+    firstAppear: D123
+    reviewSchedule: [D124, D126, D130, D137, D153]
+
+  - id: V0612
+    word: climax
+    phonetic: '/ˈklaɪmæks/'
+    partOfSpeech: noun
+    definition: 'The most exciting or important point in a story, usually near the end'
+    definitionZh: '高潮，顶点'
+    exampleSentence: 'The climax of the story came when the dragon finally faced the evil sorcerer.'
+    exampleSentenceZh: '故事的高潮是龙终于面对邪恶巫师的时候。'
+    wordFamily:
+      - form: climactic
+        partOfSpeech: adjective
+    collocations:
+      - 'reach a climax'
+      - 'dramatic climax'
+      - 'build to a climax'
+    synonyms: [peak, pinnacle, turning point]
+    antonyms: [anticlimax]
+    level: 2
+    firstAppear: D123
+    reviewSchedule: [D124, D126, D130, D137, D153]
+
+  - id: V0613
+    word: resolution
+    phonetic: '/ˌrezəˈluːʃn/'
+    partOfSpeech: noun
+    definition: 'The part of a story where problems are solved and the story comes to an end'
+    definitionZh: '结局，解决'
+    exampleSentence: 'The resolution of the fairy tale was happy — the prince and the fox became lifelong friends.'
+    exampleSentenceZh: '童话的结局是美好的——王子和狐狸成为了终身的朋友。'
+    wordFamily:
+      - form: resolve
+        partOfSpeech: verb
+    collocations:
+      - 'satisfying resolution'
+      - 'unexpected resolution'
+      - 'reach a resolution'
+    synonyms: [conclusion, ending, outcome]
+    antonyms: [complication, conflict]
+    level: 2
+    firstAppear: D123
+    reviewSchedule: [D124, D126, D130, D137, D153]
+
+  - id: V0614
+    word: twist
+    phonetic: '/twɪst/'
+    partOfSpeech: noun
+    definition: 'An unexpected change or development in a story'
+    definitionZh: '转折，反转'
+    exampleSentence: 'Nobody expected the twist — the kind old woman was actually the villain all along!'
+    exampleSentenceZh: '没有人预料到这个反转——那个和蔼的老太太其实一直是反派！'
+    wordFamily: []
+    collocations:
+      - 'plot twist'
+      - 'unexpected twist'
+      - 'dramatic twist'
+    synonyms: [turn, surprise, reversal]
+    antonyms: []
+    level: 2
+    firstAppear: D123
+    reviewSchedule: [D124, D126, D130, D137, D153]
+
+  - id: V0615
+    word: vivid
+    phonetic: '/ˈvɪvɪd/'
+    partOfSpeech: adjective
+    definition: 'Producing strong, clear images in the mind; very bright or detailed'
+    definitionZh: '生动的，鲜明的'
+    exampleSentence: 'The author used vivid descriptions of the enchanted forest — you could almost smell the flowers.'
+    exampleSentenceZh: '作者对魔法森林的描述非常生动——你几乎能闻到花香。'
+    wordFamily:
+      - form: vividly
+        partOfSpeech: adverb
+      - form: vividness
+        partOfSpeech: noun
+    collocations:
+      - 'vivid description'
+      - 'vivid imagination'
+      - 'vivid colours'
+    synonyms: [graphic, striking, lifelike]
+    antonyms: [vague, dull, faint]
+    level: 2
+    firstAppear: D123
+    reviewSchedule: [D124, D126, D130, D137, D153]
+
+  # ============================================
+  # D124: V0616-V0620 — Atmosphere & Setting
+  # ============================================
+
+  - id: V0616
+    word: atmospheric
+    phonetic: '/ˌætməsˈferɪk/'
+    partOfSpeech: adjective
+    definition: 'Creating a special mood or feeling, especially of mystery or romance'
+    definitionZh: '有氛围的，充满气氛的'
+    exampleSentence: 'The old castle was atmospheric — misty corridors, flickering candles, and creaking doors.'
+    exampleSentenceZh: '古老的城堡很有氛围——雾蒙蒙的走廊、闪烁的蜡烛和吱呀作响的门。'
+    wordFamily:
+      - form: atmosphere
+        partOfSpeech: noun
+    collocations:
+      - 'atmospheric setting'
+      - 'atmospheric writing'
+      - 'highly atmospheric'
+    synonyms: [evocative, moody, suggestive]
+    antonyms: [bland, uninspiring]
+    level: 3
+    firstAppear: D124
+    reviewSchedule: [D125, D127, D131, D138, D154]
+
+  - id: V0617
+    word: eerie
+    phonetic: '/ˈɪəri/'
+    partOfSpeech: adjective
+    definition: 'Strange and frightening in a mysterious way'
+    definitionZh: '怪异的，阴森的'
+    exampleSentence: 'An eerie silence fell over the forest, as if every creature was holding its breath.'
+    exampleSentenceZh: '一种怪异的寂静笼罩了森林，仿佛每个生物都在屏住呼吸。'
+    wordFamily:
+      - form: eerily
+        partOfSpeech: adverb
+      - form: eeriness
+        partOfSpeech: noun
+    collocations:
+      - 'eerie silence'
+      - 'eerie glow'
+      - 'eerie feeling'
+    synonyms: [uncanny, spooky, creepy]
+    antonyms: [comforting, welcoming, normal]
+    level: 2
+    firstAppear: D124
+    reviewSchedule: [D125, D127, D131, D138, D154]
+
+  - id: V0618
+    word: gloomy
+    phonetic: '/ˈɡluːmi/'
+    partOfSpeech: adjective
+    definition: 'Dark and depressing; causing sadness or a sense of hopelessness'
+    definitionZh: '阴暗的，忧郁的'
+    exampleSentence: 'The gloomy dungeon was lit only by a single torch on the stone wall.'
+    exampleSentenceZh: '阴暗的地牢只有石墙上的一支火把照亮。'
+    wordFamily:
+      - form: gloom
+        partOfSpeech: noun
+      - form: gloomily
+        partOfSpeech: adverb
+    collocations:
+      - 'gloomy atmosphere'
+      - 'gloomy sky'
+      - 'gloomy expression'
+    synonyms: [dark, dismal, dreary]
+    antonyms: [bright, cheerful, sunny]
+    level: 2
+    firstAppear: D124
+    reviewSchedule: [D125, D127, D131, D138, D154]
+
+  - id: V0619
+    word: serene
+    phonetic: '/sɪˈriːn/'
+    partOfSpeech: adjective
+    definition: 'Calm, peaceful, and untroubled'
+    definitionZh: '宁静的，安详的'
+    exampleSentence: 'The lake was serene, its surface like a perfect mirror reflecting the mountains.'
+    exampleSentenceZh: '湖面宁静，如同一面完美的镜子，倒映着群山。'
+    wordFamily:
+      - form: serenity
+        partOfSpeech: noun
+      - form: serenely
+        partOfSpeech: adverb
+    collocations:
+      - 'serene landscape'
+      - 'serene expression'
+      - 'perfectly serene'
+    synonyms: [peaceful, tranquil, calm]
+    antonyms: [turbulent, chaotic, stormy]
+    level: 2
+    firstAppear: D124
+    reviewSchedule: [D125, D127, D131, D138, D154]
+
+  - id: V0620
+    word: ominous
+    phonetic: '/ˈɒmɪnəs/'
+    partOfSpeech: adjective
+    definition: 'Giving the impression that something bad is about to happen'
+    definitionZh: '不祥的，预兆的'
+    exampleSentence: 'An ominous rumble of thunder echoed across the dark sky as the travellers entered the forest.'
+    exampleSentenceZh: '当旅行者们进入森林时，一阵不祥的雷声在暗沉的天空中回响。'
+    wordFamily:
+      - form: ominously
+        partOfSpeech: adverb
+      - form: omen
+        partOfSpeech: noun
+    collocations:
+      - 'ominous sign'
+      - 'ominous warning'
+      - 'ominous clouds'
+    synonyms: [threatening, sinister, foreboding]
+    antonyms: [promising, reassuring, encouraging]
+    level: 3
+    firstAppear: D124
+    reviewSchedule: [D125, D127, D131, D138, D154]
+
+  # ============================================
+  # D125: V0621-V0625 — Adverbs of Manner (Emotions)
+  # ============================================
+
+  - id: V0621
+    word: reluctantly
+    phonetic: '/rɪˈlʌktəntli/'
+    partOfSpeech: adverb
+    definition: 'In an unwilling way; doing something you do not really want to do'
+    definitionZh: '不情愿地，勉强地'
+    exampleSentence: 'The knight reluctantly opened the forbidden door, knowing there was no other way.'
+    exampleSentenceZh: '骑士不情愿地打开了那扇禁门，知道别无他法。'
+    wordFamily:
+      - form: reluctant
+        partOfSpeech: adjective
+      - form: reluctance
+        partOfSpeech: noun
+    collocations:
+      - 'reluctantly agree'
+      - 'reluctantly accept'
+      - 'reluctantly admit'
+    synonyms: [unwillingly, hesitantly, grudgingly]
+    antonyms: [eagerly, willingly, enthusiastically]
+    level: 2
+    firstAppear: D125
+    reviewSchedule: [D126, D128, D132, D139, D155]
+
+  - id: V0622
+    word: hesitantly
+    phonetic: '/ˈhezɪtəntli/'
+    partOfSpeech: adverb
+    definition: 'In an uncertain or slow way because of nervousness or doubt'
+    definitionZh: '犹豫地，迟疑地'
+    exampleSentence: 'She hesitantly reached for the glowing crystal, not sure if it was safe to touch.'
+    exampleSentenceZh: '她犹豫地伸手去碰发光的水晶，不确定碰它是否安全。'
+    wordFamily:
+      - form: hesitant
+        partOfSpeech: adjective
+      - form: hesitation
+        partOfSpeech: noun
+      - form: hesitate
+        partOfSpeech: verb
+    collocations:
+      - 'speak hesitantly'
+      - 'step forward hesitantly'
+      - 'hesitantly ask'
+    synonyms: [uncertainly, tentatively, nervously]
+    antonyms: [confidently, boldly, decisively]
+    level: 2
+    firstAppear: D125
+    reviewSchedule: [D126, D128, D132, D139, D155]
+
+  - id: V0623
+    word: anxiously
+    phonetic: '/ˈæŋkʃəsli/'
+    partOfSpeech: adverb
+    definition: 'In a way that shows worry or nervousness'
+    definitionZh: '焦虑地，不安地'
+    exampleSentence: 'The children waited anxiously outside the headmaster''s office.'
+    exampleSentenceZh: '孩子们焦虑地在校长办公室外面等着。'
+    wordFamily:
+      - form: anxious
+        partOfSpeech: adjective
+      - form: anxiety
+        partOfSpeech: noun
+    collocations:
+      - 'wait anxiously'
+      - 'look anxiously'
+      - 'anxiously await'
+    synonyms: [nervously, worriedly, fearfully]
+    antonyms: [calmly, peacefully, confidently]
+    level: 2
+    firstAppear: D125
+    reviewSchedule: [D126, D128, D132, D139, D155]
+
+  - id: V0624
+    word: triumphantly
+    phonetic: '/traɪˈʌmfəntli/'
+    partOfSpeech: adverb
+    definition: 'In a way that shows great happiness after a victory or success'
+    definitionZh: '得意洋洋地，胜利地'
+    exampleSentence: 'She raised the golden sword triumphantly after defeating the shadow monster.'
+    exampleSentenceZh: '击败影子怪物后，她得意洋洋地举起了金色宝剑。'
+    wordFamily:
+      - form: triumphant
+        partOfSpeech: adjective
+      - form: triumph
+        partOfSpeech: noun
+    collocations:
+      - 'smile triumphantly'
+      - 'shout triumphantly'
+      - 'hold up triumphantly'
+    synonyms: [victoriously, proudly, gloriously]
+    antonyms: [defeatedly, sadly, miserably]
+    level: 2
+    firstAppear: D125
+    reviewSchedule: [D126, D128, D132, D139, D155]
+
+  - id: V0625
+    word: desperately
+    phonetic: '/ˈdespərətli/'
+    partOfSpeech: adverb
+    definition: 'In a way that shows you have little hope or are in a very serious situation'
+    definitionZh: '拼命地，绝望地'
+    exampleSentence: 'The hero desperately searched for a way out as the cave began to collapse around him.'
+    exampleSentenceZh: '当洞穴开始坍塌时，英雄拼命寻找出路。'
+    wordFamily:
+      - form: desperate
+        partOfSpeech: adjective
+      - form: desperation
+        partOfSpeech: noun
+    collocations:
+      - 'desperately need'
+      - 'desperately try'
+      - 'desperately search'
+    synonyms: [frantically, urgently, hopelessly]
+    antonyms: [calmly, casually, leisurely]
+    level: 2
+    firstAppear: D125
+    reviewSchedule: [D126, D128, D132, D139, D155]
+
+  # ============================================
+  # D126: V0626-V0630 — Descriptive Verbs (Sight)
+  # ============================================
+
+  - id: V0626
+    word: glimpse
+    phonetic: '/ɡlɪmps/'
+    partOfSpeech: verb
+    definition: 'To see something briefly or partially'
+    definitionZh: '瞥见，匆匆一看'
+    exampleSentence: 'She glimpsed a silver tail disappearing behind the waterfall.'
+    exampleSentenceZh: '她瞥见一条银色的尾巴消失在瀑布后面。'
+    wordFamily:
+      - form: glimpse
+        partOfSpeech: noun
+    collocations:
+      - 'catch a glimpse of'
+      - 'glimpse something briefly'
+      - 'rare glimpse'
+    synonyms: [spot, notice briefly, catch sight of]
+    antonyms: [stare, gaze, study]
+    level: 2
+    firstAppear: D126
+    reviewSchedule: [D127, D129, D133, D140, D156]
+
+  - id: V0627
+    word: loom
+    phonetic: '/luːm/'
+    partOfSpeech: verb
+    definition: 'To appear large and threatening; to seem about to happen'
+    definitionZh: '隐约出现，逼近'
+    exampleSentence: 'A huge shadow loomed over the village as the storm clouds gathered.'
+    exampleSentenceZh: '当乌云聚集时，一个巨大的阴影笼罩了整个村庄。'
+    wordFamily:
+      - form: looming
+        partOfSpeech: adjective
+    collocations:
+      - 'loom over'
+      - 'loom ahead'
+      - 'a looming threat'
+    synonyms: [tower, overshadow, threaten]
+    antonyms: [shrink, recede, retreat]
+    level: 3
+    firstAppear: D126
+    reviewSchedule: [D127, D129, D133, D140, D156]
+
+  - id: V0628
+    word: shimmer
+    phonetic: '/ˈʃɪmə/'
+    partOfSpeech: verb
+    definition: 'To shine with a soft, slightly wavering light'
+    definitionZh: '闪烁，微光'
+    exampleSentence: 'The fairy wings shimmered like diamonds under the moonlight.'
+    exampleSentenceZh: '仙女的翅膀在月光下闪烁着，像钻石一样。'
+    wordFamily:
+      - form: shimmer
+        partOfSpeech: noun
+      - form: shimmering
+        partOfSpeech: adjective
+    collocations:
+      - 'shimmer in the light'
+      - 'shimmer with colour'
+      - 'shimmering surface'
+    synonyms: [glitter, sparkle, gleam]
+    antonyms: [dull, fade]
+    level: 2
+    firstAppear: D126
+    reviewSchedule: [D127, D129, D133, D140, D156]
+
+  - id: V0629
+    word: peer
+    phonetic: '/pɪə/'
+    partOfSpeech: verb
+    definition: 'To look closely or with difficulty at something'
+    definitionZh: '仔细看，凝视'
+    exampleSentence: 'He peered through the dusty window, trying to see what was inside the abandoned house.'
+    exampleSentenceZh: '他透过布满灰尘的窗户仔细看，试图看清废弃房子里面有什么。'
+    wordFamily: []
+    collocations:
+      - 'peer through'
+      - 'peer into'
+      - 'peer at'
+    synonyms: [squint, gaze, stare]
+    antonyms: [glance, look away]
+    level: 2
+    firstAppear: D126
+    reviewSchedule: [D127, D129, D133, D140, D156]
+
+  - id: V0630
+    word: glare
+    phonetic: '/ɡleə/'
+    partOfSpeech: verb
+    definition: 'To stare angrily at someone or something'
+    definitionZh: '怒视，瞪'
+    exampleSentence: 'The dragon glared at the intruder with burning red eyes.'
+    exampleSentenceZh: '龙用燃烧的红眼睛怒视着入侵者。'
+    wordFamily:
+      - form: glare
+        partOfSpeech: noun
+    collocations:
+      - 'glare at someone'
+      - 'angry glare'
+      - 'icy glare'
+    synonyms: [scowl, frown, stare fiercely]
+    antonyms: [smile, grin, beam]
+    level: 2
+    firstAppear: D126
+    reviewSchedule: [D127, D129, D133, D140, D156]
+
+  # ============================================
+  # D127: V0631-V0635 — Descriptive Verbs (Sound)
+  # ============================================
+
+  - id: V0631
+    word: whisper
+    phonetic: '/ˈwɪspə/'
+    partOfSpeech: verb
+    definition: 'To speak very softly, using your breath rather than your voice'
+    definitionZh: '低语，耳语'
+    exampleSentence: '"Follow me," the fairy whispered, barely loud enough to hear.'
+    exampleSentenceZh: '"跟我来，"仙女低声说，声音几乎听不见。'
+    wordFamily:
+      - form: whisper
+        partOfSpeech: noun
+    collocations:
+      - 'whisper softly'
+      - 'whisper a secret'
+      - 'barely whisper'
+    synonyms: [murmur, mutter, breathe]
+    antonyms: [shout, yell, scream]
+    level: 2
+    firstAppear: D127
+    reviewSchedule: [D128, D130, D134, D141, D157]
+
+  - id: V0632
+    word: murmur
+    phonetic: '/ˈmɜːmə/'
+    partOfSpeech: verb
+    definition: 'To speak in a quiet, soft voice that is hard to hear clearly'
+    definitionZh: '低声说，喃喃'
+    exampleSentence: 'The old wizard murmured the spell under his breath and the door slowly opened.'
+    exampleSentenceZh: '老巫师低声念出咒语，门慢慢地打开了。'
+    wordFamily:
+      - form: murmur
+        partOfSpeech: noun
+    collocations:
+      - 'murmur an apology'
+      - 'murmur in agreement'
+      - 'murmur softly'
+    synonyms: [whisper, mumble, mutter]
+    antonyms: [shout, bellow, roar]
+    level: 2
+    firstAppear: D127
+    reviewSchedule: [D128, D130, D134, D141, D157]
+
+  - id: V0633
+    word: gasp
+    phonetic: '/ɡɑːsp/'
+    partOfSpeech: verb
+    definition: 'To take a quick, short breath through your mouth because of surprise, pain, or shock'
+    definitionZh: '倒吸一口气，喘气'
+    exampleSentence: 'The audience gasped when the magician pulled a live rabbit from the empty hat.'
+    exampleSentenceZh: '当魔术师从空帽子里拉出一只活兔子时，观众们倒吸了一口气。'
+    wordFamily:
+      - form: gasp
+        partOfSpeech: noun
+    collocations:
+      - 'gasp in surprise'
+      - 'gasp for air'
+      - 'a sharp gasp'
+    synonyms: [exclaim, pant, wheeze]
+    antonyms: [sigh]
+    level: 2
+    firstAppear: D127
+    reviewSchedule: [D128, D130, D134, D141, D157]
+
+  - id: V0634
+    word: stammer
+    phonetic: '/ˈstæmə/'
+    partOfSpeech: verb
+    definition: 'To speak with sudden pauses and repeated sounds because of nervousness or fear'
+    definitionZh: '结结巴巴地说'
+    exampleSentence: '"I... I did not mean to enter your cave," the boy stammered, backing away from the dragon.'
+    exampleSentenceZh: '"我……我不是故意进你的洞穴的，"男孩结结巴巴地说，一边从龙身边退开。'
+    wordFamily:
+      - form: stammer
+        partOfSpeech: noun
+    collocations:
+      - 'stammer nervously'
+      - 'stammer an excuse'
+      - 'stammer with fear'
+    synonyms: [stutter, falter, stumble over words]
+    antonyms: [speak fluently, articulate clearly]
+    level: 2
+    firstAppear: D127
+    reviewSchedule: [D128, D130, D134, D141, D157]
+
+  - id: V0635
+    word: shriek
+    phonetic: '/ʃriːk/'
+    partOfSpeech: verb
+    definition: 'To make a loud, high-pitched cry, usually from fear or excitement'
+    definitionZh: '尖叫'
+    exampleSentence: 'The children shrieked with delight as the friendly ghost appeared on stage.'
+    exampleSentenceZh: '当友好的幽灵出现在舞台上时，孩子们高兴地尖叫起来。'
+    wordFamily:
+      - form: shriek
+        partOfSpeech: noun
+    collocations:
+      - 'shriek with laughter'
+      - 'shriek in terror'
+      - 'a piercing shriek'
+    synonyms: [scream, screech, squeal]
+    antonyms: [whisper, murmur]
+    level: 2
+    firstAppear: D127
+    reviewSchedule: [D128, D130, D134, D141, D157]
+
+  # ============================================
+  # D128: V0636-V0640 — Descriptive Verbs (Movement)
+  # ============================================
+
+  - id: V0636
+    word: tremble
+    phonetic: '/ˈtrembl/'
+    partOfSpeech: verb
+    definition: 'To shake slightly because of fear, cold, or strong emotion'
+    definitionZh: '颤抖，发抖'
+    exampleSentence: 'Her hands trembled as she reached for the ancient map hidden behind the painting.'
+    exampleSentenceZh: '当她伸手去拿藏在画后面的古老地图时，她的手颤抖着。'
+    wordFamily:
+      - form: tremble
+        partOfSpeech: noun
+      - form: trembling
+        partOfSpeech: adjective
+    collocations:
+      - 'tremble with fear'
+      - 'tremble with excitement'
+      - 'lips tremble'
+    synonyms: [shake, shiver, quiver]
+    antonyms: [steady, stabilise]
+    level: 2
+    firstAppear: D128
+    reviewSchedule: [D129, D131, D135, D142, D158]
+
+  - id: V0637
+    word: stumble
+    phonetic: '/ˈstʌmbl/'
+    partOfSpeech: verb
+    definition: 'To trip or lose your balance while walking; to move unsteadily'
+    definitionZh: '绊倒，蹒跚'
+    exampleSentence: 'The explorer stumbled over a tree root and fell into an underground chamber.'
+    exampleSentenceZh: '探险家被树根绊倒，跌进了一个地下密室。'
+    wordFamily: []
+    collocations:
+      - 'stumble upon'
+      - 'stumble across'
+      - 'stumble in the dark'
+    synonyms: [trip, stagger, falter]
+    antonyms: [stride, march, walk steadily]
+    level: 2
+    firstAppear: D128
+    reviewSchedule: [D129, D131, D135, D142, D158]
+
+  - id: V0638
+    word: creep
+    phonetic: '/kriːp/'
+    partOfSpeech: verb
+    definition: 'To move slowly, quietly, and carefully, trying not to be noticed'
+    definitionZh: '悄悄移动，蹑手蹑脚'
+    exampleSentence: 'The thief crept along the dark corridor, careful not to make a sound.'
+    exampleSentenceZh: '小偷沿着黑暗的走廊悄悄移动，小心翼翼地不发出声音。'
+    wordFamily:
+      - form: creepy
+        partOfSpeech: adjective
+    collocations:
+      - 'creep along'
+      - 'creep towards'
+      - 'creep up on'
+    synonyms: [sneak, tiptoe, slink]
+    antonyms: [stomp, march, stride]
+    level: 2
+    firstAppear: D128
+    reviewSchedule: [D129, D131, D135, D142, D158]
+
+  - id: V0639
+    word: dash
+    phonetic: '/dæʃ/'
+    partOfSpeech: verb
+    definition: 'To run somewhere very quickly and suddenly'
+    definitionZh: '猛冲，飞奔'
+    exampleSentence: 'The boy dashed across the bridge just before it collapsed into the river below.'
+    exampleSentenceZh: '男孩在桥坍塌到下面的河流之前飞奔过了桥。'
+    wordFamily:
+      - form: dash
+        partOfSpeech: noun
+    collocations:
+      - 'dash across'
+      - 'dash towards'
+      - 'make a dash for'
+    synonyms: [sprint, rush, bolt]
+    antonyms: [crawl, dawdle, stroll]
+    level: 2
+    firstAppear: D128
+    reviewSchedule: [D129, D131, D135, D142, D158]
+
+  - id: V0640
+    word: plunge
+    phonetic: '/plʌndʒ/'
+    partOfSpeech: verb
+    definition: 'To fall or move suddenly and quickly downward; to jump or dive into something'
+    definitionZh: '跳入，猛冲，骤降'
+    exampleSentence: 'Without thinking, the hero plunged into the icy lake to rescue the drowning fox.'
+    exampleSentenceZh: '英雄不假思索地跳入冰冷的湖中去救溺水的狐狸。'
+    wordFamily:
+      - form: plunge
+        partOfSpeech: noun
+    collocations:
+      - 'plunge into'
+      - 'plunge down'
+      - 'take the plunge'
+    synonyms: [dive, leap, throw oneself]
+    antonyms: [climb, ascend, rise]
+    level: 2
+    firstAppear: D128
+    reviewSchedule: [D129, D131, D135, D142, D158]
+
+  # ============================================
+  # D129: V0641-V0645 — Strong Emotions
+  # ============================================
+
+  - id: V0641
+    word: astonish
+    phonetic: '/əˈstɒnɪʃ/'
+    partOfSpeech: verb
+    definition: 'To surprise someone very much; to amaze'
+    definitionZh: '使惊讶，使震惊'
+    exampleSentence: 'The magician astonished the crowd by making an entire castle disappear.'
+    exampleSentenceZh: '魔术师让一整座城堡消失，令人群震惊不已。'
+    wordFamily:
+      - form: astonished
+        partOfSpeech: adjective
+      - form: astonishing
+        partOfSpeech: adjective
+      - form: astonishment
+        partOfSpeech: noun
+    collocations:
+      - 'astonish the audience'
+      - 'astonished to find'
+      - 'astonishing discovery'
+    synonyms: [amaze, astound, stun]
+    antonyms: [bore, expect]
+    level: 2
+    firstAppear: D129
+    reviewSchedule: [D130, D132, D136, D143, D159]
+
+  - id: V0642
+    word: overwhelm
+    phonetic: '/ˌəʊvəˈwelm/'
+    partOfSpeech: verb
+    definition: 'To have such a strong effect on someone that they find it difficult to deal with'
+    definitionZh: '使不知所措，压倒'
+    exampleSentence: 'Joy overwhelmed her when she finally found her lost puppy safe and sound.'
+    exampleSentenceZh: '当她终于找到了安然无恙的走失小狗时，喜悦使她不知所措。'
+    wordFamily:
+      - form: overwhelmed
+        partOfSpeech: adjective
+      - form: overwhelming
+        partOfSpeech: adjective
+      - form: overwhelmingly
+        partOfSpeech: adverb
+    collocations:
+      - 'overwhelmed with joy'
+      - 'overwhelmed by emotion'
+      - 'overwhelming feeling'
+    synonyms: [overpower, overcome, swamp]
+    antonyms: [underwhelm]
+    level: 2
+    firstAppear: D129
+    reviewSchedule: [D130, D132, D136, D143, D159]
+
+  - id: V0643
+    word: terrify
+    phonetic: '/ˈterɪfaɪ/'
+    partOfSpeech: verb
+    definition: 'To make someone feel extremely frightened'
+    definitionZh: '使恐惧，使害怕'
+    exampleSentence: 'The roar of the enormous bear terrified the travellers.'
+    exampleSentenceZh: '巨熊的吼叫声使旅行者们感到恐惧。'
+    wordFamily:
+      - form: terrified
+        partOfSpeech: adjective
+      - form: terrifying
+        partOfSpeech: adjective
+      - form: terror
+        partOfSpeech: noun
+    collocations:
+      - 'terrified of'
+      - 'terrifying experience'
+      - 'absolutely terrifying'
+    synonyms: [frighten, scare, petrify]
+    antonyms: [reassure, comfort, calm]
+    level: 2
+    firstAppear: D129
+    reviewSchedule: [D130, D132, D136, D143, D159]
+
+  - id: V0644
+    word: devastate
+    phonetic: '/ˈdevəsteɪt/'
+    partOfSpeech: verb
+    definition: 'To destroy completely; to cause great emotional shock or sadness'
+    definitionZh: '毁灭；使震惊悲痛'
+    exampleSentence: 'The fire devastated the old library, destroying thousands of irreplaceable books.'
+    exampleSentenceZh: '大火毁灭了旧图书馆，烧毁了成千上万本无可替代的书。'
+    wordFamily:
+      - form: devastated
+        partOfSpeech: adjective
+      - form: devastating
+        partOfSpeech: adjective
+      - form: devastation
+        partOfSpeech: noun
+    collocations:
+      - 'devastated by the news'
+      - 'devastating blow'
+      - 'devastating loss'
+    synonyms: [destroy, ruin, wreck]
+    antonyms: [build, restore, repair]
+    level: 3
+    firstAppear: D129
+    reviewSchedule: [D130, D132, D136, D143, D159]
+
+  - id: V0645
+    word: relief
+    phonetic: '/rɪˈliːf/'
+    partOfSpeech: noun
+    definition: 'A feeling of comfort when something frightening or worrying has ended'
+    definitionZh: '如释重负，宽慰'
+    exampleSentence: 'She breathed a sigh of relief when she saw that her friends had escaped safely.'
+    exampleSentenceZh: '当她看到朋友们安全逃出时，她如释重负地松了一口气。'
+    wordFamily:
+      - form: relieve
+        partOfSpeech: verb
+      - form: relieved
+        partOfSpeech: adjective
+    collocations:
+      - 'sigh of relief'
+      - 'feel relief'
+      - 'what a relief'
+    synonyms: [comfort, reassurance, ease]
+    antonyms: [worry, anxiety, distress]
+    level: 2
+    firstAppear: D129
+    reviewSchedule: [D130, D132, D136, D143, D159]
+
+  # ============================================
+  # D130: V0646-V0650 — Physical Actions (Dramatic)
+  # ============================================
+
+  - id: V0646
+    word: shatter
+    phonetic: '/ˈʃætə/'
+    partOfSpeech: verb
+    definition: 'To break suddenly into small pieces; to destroy completely'
+    definitionZh: '打碎，粉碎'
+    exampleSentence: 'The magic mirror shattered into a thousand pieces when the curse was broken.'
+    exampleSentenceZh: '当诅咒被打破时，魔镜碎成了一千片。'
+    wordFamily:
+      - form: shattered
+        partOfSpeech: adjective
+      - form: shattering
+        partOfSpeech: adjective
+    collocations:
+      - 'shatter into pieces'
+      - 'shatter a dream'
+      - 'shatter the silence'
+    synonyms: [smash, break, destroy]
+    antonyms: [repair, mend, fix]
+    level: 2
+    firstAppear: D130
+    reviewSchedule: [D131, D133, D137, D144, D160]
+
+  - id: V0647
+    word: clutch
+    phonetic: '/klʌtʃ/'
+    partOfSpeech: verb
+    definition: 'To hold something tightly, especially because you are afraid or worried'
+    definitionZh: '紧抓，紧握'
+    exampleSentence: 'The child clutched her mother''s hand tightly as they walked through the dark tunnel.'
+    exampleSentenceZh: '当他们走过黑暗的隧道时，孩子紧紧抓着妈妈的手。'
+    wordFamily: []
+    collocations:
+      - 'clutch tightly'
+      - 'clutch at something'
+      - 'clutch to one''s chest'
+    synonyms: [grip, grasp, hold tightly]
+    antonyms: [release, let go, drop]
+    level: 2
+    firstAppear: D130
+    reviewSchedule: [D131, D133, D137, D144, D160]
+
+  - id: V0648
+    word: collapse
+    phonetic: '/kəˈlæps/'
+    partOfSpeech: verb
+    definition: 'To fall down suddenly because of weakness or damage; to fail completely'
+    definitionZh: '倒塌，崩溃'
+    exampleSentence: 'The ancient bridge collapsed just seconds after the last traveller crossed it.'
+    exampleSentenceZh: '古桥在最后一个旅行者过去几秒钟后就坍塌了。'
+    wordFamily:
+      - form: collapse
+        partOfSpeech: noun
+    collocations:
+      - 'collapse to the ground'
+      - 'collapse in exhaustion'
+      - 'on the verge of collapse'
+    synonyms: [crumble, fall down, give way]
+    antonyms: [stand, rise, hold firm]
+    level: 2
+    firstAppear: D130
+    reviewSchedule: [D131, D133, D137, D144, D160]
+
+  - id: V0649
+    word: snatch
+    phonetic: '/snætʃ/'
+    partOfSpeech: verb
+    definition: 'To take something quickly and roughly'
+    definitionZh: '抢夺，一把抓住'
+    exampleSentence: 'The eagle snatched the golden key from the table and soared into the sky.'
+    exampleSentenceZh: '老鹰从桌子上一把抓起金钥匙，飞向了天空。'
+    wordFamily: []
+    collocations:
+      - 'snatch away'
+      - 'snatch from'
+      - 'snatch a glance'
+    synonyms: [grab, seize, take quickly]
+    antonyms: [give, return, hand over]
+    level: 2
+    firstAppear: D130
+    reviewSchedule: [D131, D133, D137, D144, D160]
+
+  - id: V0650
+    word: flinch
+    phonetic: '/flɪntʃ/'
+    partOfSpeech: verb
+    definition: 'To make a quick, nervous movement away from something painful or frightening'
+    definitionZh: '退缩，畏缩'
+    exampleSentence: 'The warrior did not flinch, even when the dragon breathed fire directly at her shield.'
+    exampleSentenceZh: '即使龙直接朝她的盾牌喷火，战士也没有退缩。'
+    wordFamily: []
+    collocations:
+      - 'flinch at'
+      - 'without flinching'
+      - 'flinch away from'
+    synonyms: [wince, recoil, shrink back]
+    antonyms: [face, confront, stand firm]
+    level: 2
+    firstAppear: D130
+    reviewSchedule: [D131, D133, D137, D144, D160]
+
+  # ============================================
+  # D131: V0651-V0655 — Narrative Connectors 1
+  # ============================================
+
+  - id: V0651
+    word: meanwhile
+    phonetic: '/ˈmiːnwaɪl/'
+    partOfSpeech: adverb
+    definition: 'During the same time; at the same time as something else is happening'
+    definitionZh: '与此同时'
+    exampleSentence: 'The princess was escaping through the secret tunnel. Meanwhile, the guards were searching every room in the castle.'
+    exampleSentenceZh: '公主正通过秘密隧道逃跑。与此同时，守卫们在搜查城堡的每个房间。'
+    wordFamily: []
+    collocations:
+      - 'meanwhile, back at'
+      - 'in the meanwhile'
+      - 'meanwhile, elsewhere'
+    synonyms: [at the same time, in the meantime, simultaneously]
+    antonyms: [afterwards, later]
+    level: 2
+    firstAppear: D131
+    reviewSchedule: [D132, D134, D138, D145, D161]
+
+  - id: V0652
+    word: eventually
+    phonetic: '/ɪˈventʃuəli/'
+    partOfSpeech: adverb
+    definition: 'In the end, after a long time or a lot of effort'
+    definitionZh: '最终，终于'
+    exampleSentence: 'After searching for three long days, the explorers eventually found the hidden temple.'
+    exampleSentenceZh: '经过三天漫长的搜寻，探险家们终于找到了隐藏的神庙。'
+    wordFamily:
+      - form: eventual
+        partOfSpeech: adjective
+    collocations:
+      - 'eventually succeed'
+      - 'eventually realise'
+      - 'eventually lead to'
+    synonyms: [finally, ultimately, in the end]
+    antonyms: [immediately, instantly, never]
+    level: 2
+    firstAppear: D131
+    reviewSchedule: [D132, D134, D138, D145, D161]
+
+  - id: V0653
+    word: gradually
+    phonetic: '/ˈɡrædʒuəli/'
+    partOfSpeech: adverb
+    definition: 'Slowly and by small steps over a period of time'
+    definitionZh: '逐渐地，渐渐地'
+    exampleSentence: 'The sky gradually changed from deep blue to fiery orange as the sun rose over the mountains.'
+    exampleSentenceZh: '随着太阳从山后升起，天空渐渐地从深蓝色变成了火红的橘色。'
+    wordFamily:
+      - form: gradual
+        partOfSpeech: adjective
+    collocations:
+      - 'gradually increase'
+      - 'gradually improve'
+      - 'gradually fade'
+    synonyms: [slowly, bit by bit, little by little]
+    antonyms: [suddenly, abruptly, instantly]
+    level: 2
+    firstAppear: D131
+    reviewSchedule: [D132, D134, D138, D145, D161]
+
+  - id: V0654
+    word: simultaneously
+    phonetic: '/ˌsɪmlˈteɪniəsli/'
+    partOfSpeech: adverb
+    definition: 'At the same time; happening together'
+    definitionZh: '同时地'
+    exampleSentence: 'The three wizards raised their wands simultaneously and cast the spell together.'
+    exampleSentenceZh: '三个巫师同时举起魔杖，一起施放了咒语。'
+    wordFamily:
+      - form: simultaneous
+        partOfSpeech: adjective
+    collocations:
+      - 'occur simultaneously'
+      - 'work simultaneously'
+      - 'simultaneously, both'
+    synonyms: [at the same time, concurrently, together]
+    antonyms: [separately, one after another, sequentially]
+    level: 3
+    firstAppear: D131
+    reviewSchedule: [D132, D134, D138, D145, D161]
+
+  - id: V0655
+    word: abruptly
+    phonetic: '/əˈbrʌptli/'
+    partOfSpeech: adverb
+    definition: 'Suddenly and unexpectedly'
+    definitionZh: '突然地，出其不意地'
+    exampleSentence: 'The music stopped abruptly and a strange voice echoed through the hall.'
+    exampleSentenceZh: '音乐突然停止了，一个奇怪的声音在大厅里回荡。'
+    wordFamily:
+      - form: abrupt
+        partOfSpeech: adjective
+    collocations:
+      - 'stop abruptly'
+      - 'change abruptly'
+      - 'abruptly end'
+    synonyms: [suddenly, sharply, unexpectedly]
+    antonyms: [gradually, slowly, gently]
+    level: 2
+    firstAppear: D131
+    reviewSchedule: [D132, D134, D138, D145, D161]
+
+  # ============================================
+  # D132: V0656-V0660 — Narrative Connectors 2
+  # ============================================
+
+  - id: V0656
+    word: apparently
+    phonetic: '/əˈpærəntli/'
+    partOfSpeech: adverb
+    definition: 'As it seems; from what you have heard or read'
+    definitionZh: '显然，据说'
+    exampleSentence: 'Apparently, the treasure map had been hidden in the library for over two hundred years.'
+    exampleSentenceZh: '据说，这张藏宝图已经在图书馆里藏了两百多年了。'
+    wordFamily:
+      - form: apparent
+        partOfSpeech: adjective
+    collocations:
+      - 'apparently, the reason'
+      - 'quite apparently'
+      - 'apparently unaware'
+    synonyms: [seemingly, evidently, it seems]
+    antonyms: [certainly, definitely]
+    level: 2
+    firstAppear: D132
+    reviewSchedule: [D133, D135, D139, D146, D162]
+
+  - id: V0657
+    word: furthermore
+    phonetic: '/ˌfɜːðəˈmɔː/'
+    partOfSpeech: adverb
+    definition: 'In addition; also; besides (used when adding another important point)'
+    definitionZh: '此外，而且'
+    exampleSentence: 'The cave was dark and cold. Furthermore, strange noises echoed from deep within.'
+    exampleSentenceZh: '洞穴又黑又冷。此外，从深处传来奇怪的声响。'
+    wordFamily: []
+    collocations:
+      - 'furthermore, it is worth noting'
+      - 'and furthermore'
+      - 'furthermore, the evidence'
+    synonyms: [moreover, in addition, besides]
+    antonyms: [however, on the other hand]
+    level: 2
+    firstAppear: D132
+    reviewSchedule: [D133, D135, D139, D146, D162]
+
+  - id: V0658
+    word: consequently
+    phonetic: '/ˈkɒnsɪkwəntli/'
+    partOfSpeech: adverb
+    definition: 'As a result; therefore'
+    definitionZh: '因此，所以'
+    exampleSentence: 'The bridge had been destroyed by the storm. Consequently, the villagers had to find another way across the river.'
+    exampleSentenceZh: '桥被暴风雨摧毁了。因此，村民们不得不找另一条路过河。'
+    wordFamily:
+      - form: consequence
+        partOfSpeech: noun
+      - form: consequent
+        partOfSpeech: adjective
+    collocations:
+      - 'and consequently'
+      - 'consequently, the result'
+      - 'face the consequences'
+    synonyms: [therefore, as a result, thus]
+    antonyms: []
+    level: 2
+    firstAppear: D132
+    reviewSchedule: [D133, D135, D139, D146, D162]
+
+  - id: V0659
+    word: nevertheless
+    phonetic: '/ˌnevəðəˈles/'
+    partOfSpeech: adverb
+    definition: 'Despite what has just been said or done; however'
+    definitionZh: '然而，尽管如此'
+    exampleSentence: 'The quest seemed impossible. Nevertheless, the young hero refused to give up.'
+    exampleSentenceZh: '任务看起来不可能完成。然而，年轻的英雄拒绝放弃。'
+    wordFamily: []
+    collocations:
+      - 'but nevertheless'
+      - 'nevertheless, she persisted'
+      - 'nevertheless, it is important'
+    synonyms: [however, even so, despite this]
+    antonyms: [therefore, consequently]
+    level: 2
+    firstAppear: D132
+    reviewSchedule: [D133, D135, D139, D146, D162]
+
+  - id: V0660
+    word: whereas
+    phonetic: '/weərˈæz/'
+    partOfSpeech: conjunction
+    definition: 'Used to compare or contrast two facts or situations'
+    definitionZh: '然而，而'
+    exampleSentence: 'The protagonist was brave and honest, whereas the antagonist was sneaky and cruel.'
+    exampleSentenceZh: '主角勇敢而诚实，而反派则狡诈而残忍。'
+    wordFamily: []
+    collocations:
+      - 'whereas in fact'
+      - 'whereas, on the other hand'
+      - 'whereas some people'
+    synonyms: [while, although, but]
+    antonyms: [similarly, likewise]
+    level: 2
+    firstAppear: D132
+    reviewSchedule: [D133, D135, D139, D146, D162]
+
+  # ============================================
+  # D133: V0661-V0665 — Dialogue & Speech
+  # ============================================
+
+  - id: V0661
+    word: exclaim
+    phonetic: '/ɪkˈskleɪm/'
+    partOfSpeech: verb
+    definition: 'To cry out suddenly because of surprise, anger, or excitement'
+    definitionZh: '惊呼，大声说'
+    exampleSentence: '"Look at that rainbow dragon!" exclaimed the little girl, pointing at the sky.'
+    exampleSentenceZh: '"快看那条彩虹龙！"小女孩惊呼着指向天空。'
+    wordFamily:
+      - form: exclamation
+        partOfSpeech: noun
+    collocations:
+      - 'exclaim in surprise'
+      - 'exclaim with delight'
+      - 'exclaim loudly'
+    synonyms: [cry out, shout, declare]
+    antonyms: [whisper, murmur]
+    level: 2
+    firstAppear: D133
+    reviewSchedule: [D134, D136, D140, D147, D163]
+
+  - id: V0662
+    word: insist
+    phonetic: '/ɪnˈsɪst/'
+    partOfSpeech: verb
+    definition: 'To say something firmly and refuse to change your mind'
+    definitionZh: '坚持说，坚决要求'
+    exampleSentence: '"I saw a unicorn in the garden!" the boy insisted, even though nobody believed him.'
+    exampleSentenceZh: '"我在花园里看到了独角兽！"男孩坚持说，尽管没有人相信他。'
+    wordFamily:
+      - form: insistence
+        partOfSpeech: noun
+      - form: insistent
+        partOfSpeech: adjective
+    collocations:
+      - 'insist on'
+      - 'insist that'
+      - 'firmly insist'
+    synonyms: [demand, maintain, assert]
+    antonyms: [yield, give in, agree]
+    level: 2
+    firstAppear: D133
+    reviewSchedule: [D134, D136, D140, D147, D163]
+
+  - id: V0663
+    word: confess
+    phonetic: '/kənˈfes/'
+    partOfSpeech: verb
+    definition: 'To admit something that you are ashamed of or have been hiding'
+    definitionZh: '承认，坦白'
+    exampleSentence: 'The boy confessed that he had accidentally broken the enchanted vase.'
+    exampleSentenceZh: '男孩坦白说他不小心打碎了那个魔法花瓶。'
+    wordFamily:
+      - form: confession
+        partOfSpeech: noun
+    collocations:
+      - 'confess to'
+      - 'confess the truth'
+      - 'confess a secret'
+    synonyms: [admit, acknowledge, own up]
+    antonyms: [deny, hide, conceal]
+    level: 2
+    firstAppear: D133
+    reviewSchedule: [D134, D136, D140, D147, D163]
+
+  - id: V0664
+    word: plead
+    phonetic: '/pliːd/'
+    partOfSpeech: verb
+    definition: 'To ask for something in a very emotional and urgent way'
+    definitionZh: '恳求，哀求'
+    exampleSentence: '"Please do not destroy the village!" the elder pleaded with the dragon.'
+    exampleSentenceZh: '"请不要毁灭这个村庄！"长老恳求龙。'
+    wordFamily:
+      - form: plea
+        partOfSpeech: noun
+    collocations:
+      - 'plead with someone'
+      - 'plead for mercy'
+      - 'plead innocence'
+    synonyms: [beg, implore, entreat]
+    antonyms: [demand, command, order]
+    level: 2
+    firstAppear: D133
+    reviewSchedule: [D134, D136, D140, D147, D163]
+
+  - id: V0665
+    word: reassure
+    phonetic: '/ˌriːəˈʃʊə/'
+    partOfSpeech: verb
+    definition: 'To say or do something to make someone feel less worried or afraid'
+    definitionZh: '使放心，安慰'
+    exampleSentence: '"Everything will be all right," she reassured her little brother with a warm smile.'
+    exampleSentenceZh: '"一切都会好起来的，"她用温暖的微笑安慰弟弟。'
+    wordFamily:
+      - form: reassurance
+        partOfSpeech: noun
+      - form: reassuring
+        partOfSpeech: adjective
+    collocations:
+      - 'reassure someone that'
+      - 'reassuring smile'
+      - 'need reassurance'
+    synonyms: [comfort, calm, encourage]
+    antonyms: [frighten, alarm, worry]
+    level: 2
+    firstAppear: D133
+    reviewSchedule: [D134, D136, D140, D147, D163]
+
+  # ============================================
+  # D134: V0666-V0670 — Five Senses (Touch & Smell)
+  # ============================================
+
+  - id: V0666
+    word: rough
+    phonetic: '/rʌf/'
+    partOfSpeech: adjective
+    definition: 'Having an uneven or irregular surface; not smooth'
+    definitionZh: '粗糙的'
+    exampleSentence: 'The bark of the ancient tree was rough beneath her fingertips.'
+    exampleSentenceZh: '古树的树皮在她的指尖下感觉很粗糙。'
+    wordFamily:
+      - form: roughly
+        partOfSpeech: adverb
+      - form: roughness
+        partOfSpeech: noun
+    collocations:
+      - 'rough surface'
+      - 'rough texture'
+      - 'rough to the touch'
+    synonyms: [coarse, uneven, rugged]
+    antonyms: [smooth, soft, polished]
+    level: 2
+    firstAppear: D134
+    reviewSchedule: [D135, D137, D141, D148, D164]
+
+  - id: V0667
+    word: velvety
+    phonetic: '/ˈvelvɪti/'
+    partOfSpeech: adjective
+    definition: 'Soft, smooth, and pleasant to touch, like velvet fabric'
+    definitionZh: '天鹅绒般的，柔软光滑的'
+    exampleSentence: 'The dragon''s baby scales were surprisingly velvety, like the petals of a rose.'
+    exampleSentenceZh: '小龙的鳞片出人意料地柔软光滑，像玫瑰的花瓣一样。'
+    wordFamily:
+      - form: velvet
+        partOfSpeech: noun
+    collocations:
+      - 'velvety smooth'
+      - 'velvety texture'
+      - 'velvety petals'
+    synonyms: [silky, smooth, soft]
+    antonyms: [rough, coarse, scratchy]
+    level: 2
+    firstAppear: D134
+    reviewSchedule: [D135, D137, D141, D148, D164]
+
+  - id: V0668
+    word: fragrant
+    phonetic: '/ˈfreɪɡrənt/'
+    partOfSpeech: adjective
+    definition: 'Having a pleasant, sweet smell'
+    definitionZh: '芬芳的，香的'
+    exampleSentence: 'The garden was filled with fragrant flowers that attracted butterflies from far away.'
+    exampleSentenceZh: '花园里开满了芬芳的花朵，吸引了远方的蝴蝶。'
+    wordFamily:
+      - form: fragrance
+        partOfSpeech: noun
+    collocations:
+      - 'fragrant flowers'
+      - 'fragrant herbs'
+      - 'sweet and fragrant'
+    synonyms: [aromatic, sweet-smelling, perfumed]
+    antonyms: [smelly, foul, stinking]
+    level: 2
+    firstAppear: D134
+    reviewSchedule: [D135, D137, D141, D148, D164]
+
+  - id: V0669
+    word: damp
+    phonetic: '/dæmp/'
+    partOfSpeech: adjective
+    definition: 'Slightly wet, usually in a way that is unpleasant'
+    definitionZh: '潮湿的'
+    exampleSentence: 'The cave walls were damp and covered in green moss.'
+    exampleSentenceZh: '洞穴的墙壁潮湿，长满了绿色的苔藓。'
+    wordFamily:
+      - form: dampen
+        partOfSpeech: verb
+      - form: dampness
+        partOfSpeech: noun
+    collocations:
+      - 'damp air'
+      - 'cold and damp'
+      - 'damp cloth'
+    synonyms: [moist, wet, humid]
+    antonyms: [dry, arid]
+    level: 2
+    firstAppear: D134
+    reviewSchedule: [D135, D137, D141, D148, D164]
+
+  - id: V0670
+    word: piercing
+    phonetic: '/ˈpɪəsɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Very sharp or intense (of cold, a sound, or a look)'
+    definitionZh: '刺骨的，刺耳的，锐利的'
+    exampleSentence: 'A piercing wind blew across the mountaintop, making the climbers shiver.'
+    exampleSentenceZh: '一阵刺骨的风吹过山顶，让攀登者们颤抖不已。'
+    wordFamily:
+      - form: pierce
+        partOfSpeech: verb
+    collocations:
+      - 'piercing cold'
+      - 'piercing scream'
+      - 'piercing eyes'
+    synonyms: [sharp, biting, penetrating]
+    antonyms: [gentle, mild, soft]
+    level: 2
+    firstAppear: D134
+    reviewSchedule: [D135, D137, D141, D148, D164]
+
+  # ============================================
+  # D135: V0671-V0675 — Character Traits
+  # ============================================
+
+  - id: V0671
+    word: courageous
+    phonetic: '/kəˈreɪdʒəs/'
+    partOfSpeech: adjective
+    definition: 'Brave; showing courage in the face of danger'
+    definitionZh: '勇敢的'
+    exampleSentence: 'The courageous knight stepped forward to face the fire-breathing dragon alone.'
+    exampleSentenceZh: '勇敢的骑士独自上前面对喷火的龙。'
+    wordFamily:
+      - form: courage
+        partOfSpeech: noun
+      - form: courageously
+        partOfSpeech: adverb
+    collocations:
+      - 'courageous act'
+      - 'courageous decision'
+      - 'incredibly courageous'
+    synonyms: [brave, fearless, bold]
+    antonyms: [cowardly, timid, fearful]
+    level: 2
+    firstAppear: D135
+    reviewSchedule: [D136, D138, D142, D149, D165]
+
+  - id: V0672
+    word: cunning
+    phonetic: '/ˈkʌnɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Clever at achieving goals through tricky or dishonest methods'
+    definitionZh: '狡猾的，诡计多端的'
+    exampleSentence: 'The cunning fox tricked the crow into dropping the cheese.'
+    exampleSentenceZh: '狡猾的狐狸骗乌鸦掉了嘴里的奶酪。'
+    wordFamily: []
+    collocations:
+      - 'cunning plan'
+      - 'cunning trick'
+      - 'a cunning fox'
+    synonyms: [sly, crafty, devious]
+    antonyms: [honest, straightforward, naive]
+    level: 2
+    firstAppear: D135
+    reviewSchedule: [D136, D138, D142, D149, D165]
+
+  - id: V0673
+    word: determined
+    phonetic: '/dɪˈtɜːmɪnd/'
+    partOfSpeech: adjective
+    definition: 'Having a strong will to do something and not letting anything stop you'
+    definitionZh: '坚定的，有决心的'
+    exampleSentence: 'Despite the many obstacles, the determined girl kept walking towards the mountain.'
+    exampleSentenceZh: '尽管有很多障碍，这个坚定的女孩继续向山走去。'
+    wordFamily:
+      - form: determination
+        partOfSpeech: noun
+      - form: determine
+        partOfSpeech: verb
+    collocations:
+      - 'determined to succeed'
+      - 'fiercely determined'
+      - 'determined expression'
+    synonyms: [resolute, persistent, single-minded]
+    antonyms: [indecisive, hesitant, uncommitted]
+    level: 2
+    firstAppear: D135
+    reviewSchedule: [D136, D138, D142, D149, D165]
+
+  - id: V0674
+    word: compassionate
+    phonetic: '/kəmˈpæʃənət/'
+    partOfSpeech: adjective
+    definition: 'Feeling or showing sympathy and concern for others who are suffering'
+    definitionZh: '富有同情心的'
+    exampleSentence: 'The compassionate healer treated every injured creature, no matter how small.'
+    exampleSentenceZh: '富有同情心的治愈师治疗每一个受伤的生物，无论多小。'
+    wordFamily:
+      - form: compassion
+        partOfSpeech: noun
+      - form: compassionately
+        partOfSpeech: adverb
+    collocations:
+      - 'compassionate person'
+      - 'show compassion'
+      - 'compassionate heart'
+    synonyms: [caring, sympathetic, kind-hearted]
+    antonyms: [cruel, heartless, cold]
+    level: 2
+    firstAppear: D135
+    reviewSchedule: [D136, D138, D142, D149, D165]
+
+  - id: V0675
+    word: arrogant
+    phonetic: '/ˈærəɡənt/'
+    partOfSpeech: adjective
+    definition: 'Thinking you are better or more important than other people'
+    definitionZh: '傲慢的，自大的'
+    exampleSentence: 'The arrogant prince refused to listen to the wise old woman''s warning.'
+    exampleSentenceZh: '傲慢的王子拒绝听老妇人的警告。'
+    wordFamily:
+      - form: arrogance
+        partOfSpeech: noun
+      - form: arrogantly
+        partOfSpeech: adverb
+    collocations:
+      - 'arrogant attitude'
+      - 'arrogant tone'
+      - 'terribly arrogant'
+    synonyms: [proud, haughty, conceited]
+    antonyms: [humble, modest, unassuming]
+    level: 2
+    firstAppear: D135
+    reviewSchedule: [D136, D138, D142, D149, D165]
+
+  # ============================================
+  # D136: V0676-V0680 — Writing Craft Words
+  # ============================================
+
+  - id: V0676
+    word: portray
+    phonetic: '/pɔːˈtreɪ/'
+    partOfSpeech: verb
+    definition: 'To describe or show someone or something in a particular way'
+    definitionZh: '描绘，刻画'
+    exampleSentence: 'The author portrayed the villain as a lonely person who had never been shown kindness.'
+    exampleSentenceZh: '作者将反派刻画为一个从未被善待过的孤独的人。'
+    wordFamily:
+      - form: portrayal
+        partOfSpeech: noun
+    collocations:
+      - 'portray a character'
+      - 'accurately portray'
+      - 'vividly portray'
+    synonyms: [depict, describe, represent]
+    antonyms: [conceal, misrepresent]
+    level: 3
+    firstAppear: D136
+    reviewSchedule: [D137, D139, D143, D150, D166]
+
+  - id: V0677
+    word: convey
+    phonetic: '/kənˈveɪ/'
+    partOfSpeech: verb
+    definition: 'To communicate a message, idea, or feeling without stating it directly'
+    definitionZh: '传达，表达'
+    exampleSentence: 'The dark colours in the illustration convey a sense of danger and mystery.'
+    exampleSentenceZh: '插图中的深色调传达出一种危险和神秘的感觉。'
+    wordFamily: []
+    collocations:
+      - 'convey a message'
+      - 'convey emotions'
+      - 'convey meaning'
+    synonyms: [communicate, express, impart]
+    antonyms: [conceal, hide, withhold]
+    level: 3
+    firstAppear: D136
+    reviewSchedule: [D137, D139, D143, D150, D166]
+
+  - id: V0678
+    word: evoke
+    phonetic: '/ɪˈvəʊk/'
+    partOfSpeech: verb
+    definition: 'To bring a feeling, memory, or image to mind'
+    definitionZh: '唤起，引起'
+    exampleSentence: 'The opening paragraph evoked memories of long summer days spent by the sea.'
+    exampleSentenceZh: '开头的段落唤起了在海边度过漫长夏日的回忆。'
+    wordFamily:
+      - form: evocation
+        partOfSpeech: noun
+      - form: evocative
+        partOfSpeech: adjective
+    collocations:
+      - 'evoke memories'
+      - 'evoke emotions'
+      - 'evoke a response'
+    synonyms: [arouse, provoke, stir up]
+    antonyms: [suppress, stifle]
+    level: 3
+    firstAppear: D136
+    reviewSchedule: [D137, D139, D143, D150, D166]
+
+  - id: V0679
+    word: draft
+    phonetic: '/drɑːft/'
+    partOfSpeech: noun
+    definition: 'A first version of a piece of writing that you plan to improve later'
+    definitionZh: '草稿'
+    exampleSentence: 'The author wrote three drafts before she was happy with the opening chapter.'
+    exampleSentenceZh: '作者写了三遍草稿才对开头的章节感到满意。'
+    wordFamily:
+      - form: draft
+        partOfSpeech: verb
+    collocations:
+      - 'first draft'
+      - 'rough draft'
+      - 'final draft'
+    synonyms: [outline, sketch, version]
+    antonyms: [final copy, finished work]
+    level: 2
+    firstAppear: D136
+    reviewSchedule: [D137, D139, D143, D150, D166]
+
+  - id: V0680
+    word: revise
+    phonetic: '/rɪˈvaɪz/'
+    partOfSpeech: verb
+    definition: 'To change or improve a piece of writing'
+    definitionZh: '修改，修订'
+    exampleSentence: 'Good writers always revise their work to make the story clearer and more exciting.'
+    exampleSentenceZh: '好的作家总是修改自己的作品，使故事更清晰、更精彩。'
+    wordFamily:
+      - form: revision
+        partOfSpeech: noun
+    collocations:
+      - 'revise a draft'
+      - 'revise and edit'
+      - 'thoroughly revise'
+    synonyms: [edit, rewrite, improve]
+    antonyms: [leave unchanged]
+    level: 2
+    firstAppear: D136
+    reviewSchedule: [D137, D139, D143, D150, D166]
+
+  # ============================================
+  # D137: V0681-V0685 — Weather & Nature (Setting)
+  # ============================================
+
+  - id: V0681
+    word: howl
+    phonetic: '/haʊl/'
+    partOfSpeech: verb
+    definition: 'To make a long, loud crying sound (like the wind or a wolf)'
+    definitionZh: '嚎叫，呼啸'
+    exampleSentence: 'The wind howled through the cracks in the old wooden door.'
+    exampleSentenceZh: '风从旧木门的缝隙中呼啸而过。'
+    wordFamily:
+      - form: howl
+        partOfSpeech: noun
+      - form: howling
+        partOfSpeech: adjective
+    collocations:
+      - 'howling wind'
+      - 'howl with laughter'
+      - 'howl in pain'
+    synonyms: [wail, roar, cry]
+    antonyms: [whisper, hush]
+    level: 2
+    firstAppear: D137
+    reviewSchedule: [D138, D140, D144, D151, D167]
+
+  - id: V0682
+    word: drizzle
+    phonetic: '/ˈdrɪzl/'
+    partOfSpeech: noun
+    definition: 'Very light rain made up of tiny drops'
+    definitionZh: '毛毛雨'
+    exampleSentence: 'A gentle drizzle began to fall as they walked through the misty village.'
+    exampleSentenceZh: '当他们走过雾蒙蒙的村庄时，开始下起了毛毛雨。'
+    wordFamily:
+      - form: drizzle
+        partOfSpeech: verb
+      - form: drizzly
+        partOfSpeech: adjective
+    collocations:
+      - 'light drizzle'
+      - 'steady drizzle'
+      - 'a fine drizzle'
+    synonyms: [light rain, mist, sprinkle]
+    antonyms: [downpour, torrent, deluge]
+    level: 2
+    firstAppear: D137
+    reviewSchedule: [D138, D140, D144, D151, D167]
+
+  - id: V0683
+    word: dusk
+    phonetic: '/dʌsk/'
+    partOfSpeech: noun
+    definition: 'The time of day just before it becomes completely dark'
+    definitionZh: '黄昏，傍晚'
+    exampleSentence: 'At dusk, the fireflies began to appear, making the meadow glow with tiny lights.'
+    exampleSentenceZh: '黄昏时分，萤火虫开始出现，使草地上闪烁着微小的光芒。'
+    wordFamily: []
+    collocations:
+      - 'at dusk'
+      - 'from dawn to dusk'
+      - 'approaching dusk'
+    synonyms: [twilight, sunset, nightfall]
+    antonyms: [dawn, sunrise, daybreak]
+    level: 2
+    firstAppear: D137
+    reviewSchedule: [D138, D140, D144, D151, D167]
+
+  - id: V0684
+    word: dawn
+    phonetic: '/dɔːn/'
+    partOfSpeech: noun
+    definition: 'The first light of day; the beginning of the morning'
+    definitionZh: '黎明，拂晓'
+    exampleSentence: 'The travellers set off at dawn, hoping to reach the castle before nightfall.'
+    exampleSentenceZh: '旅行者们在黎明出发，希望在天黑前到达城堡。'
+    wordFamily:
+      - form: dawn
+        partOfSpeech: verb
+    collocations:
+      - 'at dawn'
+      - 'the crack of dawn'
+      - 'dawn breaks'
+    synonyms: [daybreak, sunrise, first light]
+    antonyms: [dusk, sunset, nightfall]
+    level: 2
+    firstAppear: D137
+    reviewSchedule: [D138, D140, D144, D151, D167]
+
+  - id: V0685
+    word: blizzard
+    phonetic: '/ˈblɪzəd/'
+    partOfSpeech: noun
+    definition: 'A severe snowstorm with strong winds'
+    definitionZh: '暴风雪'
+    exampleSentence: 'A fierce blizzard trapped the climbers in their tent for three whole days.'
+    exampleSentenceZh: '一场猛烈的暴风雪把登山者们困在帐篷里整整三天。'
+    wordFamily: []
+    collocations:
+      - 'fierce blizzard'
+      - 'blizzard conditions'
+      - 'caught in a blizzard'
+    synonyms: [snowstorm, whiteout]
+    antonyms: [calm, clear skies]
+    level: 2
+    firstAppear: D137
+    reviewSchedule: [D138, D140, D144, D151, D167]
+
+  # ============================================
+  # D138: V0686-V0690 — Expressions & Phrases
+  # ============================================
+
+  - id: V0686
+    word: all of a sudden
+    phonetic: '/ɔːl əv ə ˈsʌdn/'
+    partOfSpeech: phrase
+    definition: 'Happening quickly and unexpectedly'
+    definitionZh: '突然间'
+    exampleSentence: 'All of a sudden, the ground shook and a hidden door appeared in the stone wall.'
+    exampleSentenceZh: '突然间，地面震动了，石墙上出现了一扇隐藏的门。'
+    wordFamily: []
+    collocations:
+      - 'all of a sudden, everything changed'
+      - 'then, all of a sudden'
+    synonyms: [suddenly, out of nowhere, without warning]
+    antonyms: [gradually, slowly]
+    level: 2
+    firstAppear: D138
+    reviewSchedule: [D139, D141, D145, D152, D168]
+
+  - id: V0687
+    word: to her surprise
+    phonetic: '/tə hɜː səˈpraɪz/'
+    partOfSpeech: phrase
+    definition: 'A phrase used to introduce an unexpected event or discovery'
+    definitionZh: '令她惊讶的是'
+    exampleSentence: 'To her surprise, the fierce dragon lowered its head gently and let her climb onto its back.'
+    exampleSentenceZh: '令她惊讶的是，凶猛的龙温柔地低下了头，让她爬上了它的背。'
+    wordFamily: []
+    collocations:
+      - 'to his/her/their surprise'
+      - 'much to her surprise'
+      - 'to everyone''s surprise'
+    synonyms: [unexpectedly, surprisingly]
+    antonyms: [as expected, predictably]
+    level: 2
+    firstAppear: D138
+    reviewSchedule: [D139, D141, D145, D152, D168]
+
+  - id: V0688
+    word: without hesitation
+    phonetic: '/wɪˈðaʊt ˌhezɪˈteɪʃn/'
+    partOfSpeech: phrase
+    definition: 'Immediately, without pausing to think'
+    definitionZh: '毫不犹豫地'
+    exampleSentence: 'Without hesitation, the brave girl jumped across the gap to save her friend.'
+    exampleSentenceZh: '勇敢的女孩毫不犹豫地跳过缝隙去救她的朋友。'
+    wordFamily: []
+    collocations:
+      - 'without a moment''s hesitation'
+      - 'answered without hesitation'
+    synonyms: [immediately, instantly, at once]
+    antonyms: [reluctantly, hesitantly]
+    level: 2
+    firstAppear: D138
+    reviewSchedule: [D139, D141, D145, D152, D168]
+
+  - id: V0689
+    word: at the crack of dawn
+    phonetic: '/æt ðə kræk əv dɔːn/'
+    partOfSpeech: phrase
+    definition: 'Very early in the morning, as soon as the sun rises'
+    definitionZh: '天刚亮的时候'
+    exampleSentence: 'The adventurers woke up at the crack of dawn to begin their long journey.'
+    exampleSentenceZh: '冒险者们在天刚亮时就起床，开始了漫长的旅程。'
+    wordFamily: []
+    collocations:
+      - 'wake up at the crack of dawn'
+      - 'set off at the crack of dawn'
+    synonyms: [at first light, at daybreak]
+    antonyms: [at nightfall, at dusk]
+    level: 2
+    firstAppear: D138
+    reviewSchedule: [D139, D141, D145, D152, D168]
+
+  - id: V0690
+    word: on the verge of
+    phonetic: '/ɒn ðə vɜːdʒ ɒv/'
+    partOfSpeech: phrase
+    definition: 'Very close to doing or experiencing something'
+    definitionZh: '濒临，即将'
+    exampleSentence: 'The explorers were on the verge of giving up when they spotted the treasure chest.'
+    exampleSentenceZh: '探险者们即将放弃时，他们发现了宝箱。'
+    wordFamily: []
+    collocations:
+      - 'on the verge of tears'
+      - 'on the verge of discovery'
+      - 'on the verge of collapse'
+    synonyms: [about to, on the brink of, close to]
+    antonyms: [far from, nowhere near]
+    level: 2
+    firstAppear: D138
+    reviewSchedule: [D139, D141, D145, D152, D168]
+
+  # ============================================
+  # D139: V0691-V0695 — Showing vs Telling
+  # ============================================
+
+  - id: V0691
+    word: beam
+    phonetic: '/biːm/'
+    partOfSpeech: verb
+    definition: 'To smile very widely and happily'
+    definitionZh: '眉开眼笑，喜笑颜开'
+    exampleSentence: 'The little girl beamed with pride when she finished reading her story to the class.'
+    exampleSentenceZh: '小女孩给全班读完她的故事后，骄傲地眉开眼笑。'
+    wordFamily: []
+    collocations:
+      - 'beam with pride'
+      - 'beam with happiness'
+      - 'beaming smile'
+    synonyms: [grin, smile brightly, radiate joy]
+    antonyms: [frown, scowl, grimace]
+    level: 2
+    firstAppear: D139
+    reviewSchedule: [D140, D142, D146, D153, D169]
+
+  - id: V0692
+    word: scowl
+    phonetic: '/skaʊl/'
+    partOfSpeech: verb
+    definition: 'To frown angrily or in a bad-tempered way'
+    definitionZh: '怒视，板着脸'
+    exampleSentence: 'The old gatekeeper scowled at the children and told them to go away.'
+    exampleSentenceZh: '老守门人怒视着孩子们，叫他们走开。'
+    wordFamily:
+      - form: scowl
+        partOfSpeech: noun
+    collocations:
+      - 'scowl at someone'
+      - 'deep scowl'
+      - 'scowl angrily'
+    synonyms: [frown, glower, glare]
+    antonyms: [smile, beam, grin]
+    level: 2
+    firstAppear: D139
+    reviewSchedule: [D140, D142, D146, D153, D169]
+
+  - id: V0693
+    word: pace
+    phonetic: '/peɪs/'
+    partOfSpeech: verb
+    definition: 'To walk back and forth in an area, usually because of nervousness or impatience'
+    definitionZh: '踱步，来回走'
+    exampleSentence: 'The father paced nervously outside the room, waiting for news.'
+    exampleSentenceZh: '父亲在房间外面紧张地踱步，等待消息。'
+    wordFamily:
+      - form: pace
+        partOfSpeech: noun
+    collocations:
+      - 'pace back and forth'
+      - 'pace the room'
+      - 'pace nervously'
+    synonyms: [walk, stride, march]
+    antonyms: [sit still, remain still]
+    level: 2
+    firstAppear: D139
+    reviewSchedule: [D140, D142, D146, D153, D169]
+
+  - id: V0694
+    word: clench
+    phonetic: '/klentʃ/'
+    partOfSpeech: verb
+    definition: 'To close your hands, teeth, or muscles tightly, usually because of anger or determination'
+    definitionZh: '握紧，咬紧'
+    exampleSentence: 'He clenched his fists in anger when he heard the unfair accusation.'
+    exampleSentenceZh: '听到不公正的指控时，他愤怒地握紧了拳头。'
+    wordFamily: []
+    collocations:
+      - 'clench one''s fists'
+      - 'clench one''s teeth'
+      - 'clench one''s jaw'
+    synonyms: [grip, tighten, squeeze]
+    antonyms: [relax, loosen, open]
+    level: 2
+    firstAppear: D139
+    reviewSchedule: [D140, D142, D146, D153, D169]
+
+  - id: V0695
+    word: slouch
+    phonetic: '/slaʊtʃ/'
+    partOfSpeech: verb
+    definition: 'To sit, stand, or walk with your shoulders bent forward, looking tired or lazy'
+    definitionZh: '懒散地坐/站/走'
+    exampleSentence: 'The defeated knight slouched back to the castle, dragging his sword behind him.'
+    exampleSentenceZh: '战败的骑士懒散地走回城堡，拖着他的剑。'
+    wordFamily:
+      - form: slouch
+        partOfSpeech: noun
+    collocations:
+      - 'slouch in a chair'
+      - 'slouch against the wall'
+      - 'stop slouching'
+    synonyms: [slump, droop, hunch]
+    antonyms: [stand tall, sit upright]
+    level: 2
+    firstAppear: D139
+    reviewSchedule: [D140, D142, D146, D153, D169]
+
+  # ============================================
+  # D140: V0696-V0700 — Genre Words
+  # ============================================
+
+  - id: V0696
+    word: genre
+    phonetic: '/ˈʒɒnrə/'
+    partOfSpeech: noun
+    definition: 'A particular type or category of literature, film, or music'
+    definitionZh: '体裁，类型'
+    exampleSentence: 'Fantasy is my favourite genre because I love stories with magic and mythical creatures.'
+    exampleSentenceZh: '奇幻是我最喜欢的体裁，因为我喜欢有魔法和神话生物的故事。'
+    wordFamily: []
+    collocations:
+      - 'literary genre'
+      - 'popular genre'
+      - 'genre fiction'
+    synonyms: [type, category, style]
+    antonyms: []
+    level: 2
+    firstAppear: D140
+    reviewSchedule: [D141, D143, D147, D154, D170]
+
+  - id: V0697
+    word: fiction
+    phonetic: '/ˈfɪkʃn/'
+    partOfSpeech: noun
+    definition: 'Literature that describes imaginary people and events'
+    definitionZh: '小说，虚构作品'
+    exampleSentence: 'The library has a huge section for fiction, including fantasy, mystery, and adventure.'
+    exampleSentenceZh: '图书馆有一个很大的小说区，包括奇幻、悬疑和冒险类。'
+    wordFamily:
+      - form: fictional
+        partOfSpeech: adjective
+      - form: fictitious
+        partOfSpeech: adjective
+    collocations:
+      - 'science fiction'
+      - 'historical fiction'
+      - 'work of fiction'
+    synonyms: [stories, novels, tales]
+    antonyms: [non-fiction, fact]
+    level: 2
+    firstAppear: D140
+    reviewSchedule: [D141, D143, D147, D154, D170]
+
+  - id: V0698
+    word: myth
+    phonetic: '/mɪθ/'
+    partOfSpeech: noun
+    definition: 'A traditional story, especially one explaining natural events or the history of a people'
+    definitionZh: '神话'
+    exampleSentence: 'The Greek myth of Icarus teaches us not to fly too close to the sun.'
+    exampleSentenceZh: '伊卡洛斯的希腊神话教导我们不要飞得离太阳太近。'
+    wordFamily:
+      - form: mythical
+        partOfSpeech: adjective
+      - form: mythology
+        partOfSpeech: noun
+    collocations:
+      - 'ancient myth'
+      - 'Greek myth'
+      - 'myth and legend'
+    synonyms: [legend, fable, folklore]
+    antonyms: [fact, reality, truth]
+    level: 2
+    firstAppear: D140
+    reviewSchedule: [D141, D143, D147, D154, D170]
+
+  - id: V0699
+    word: legend
+    phonetic: '/ˈledʒənd/'
+    partOfSpeech: noun
+    definition: 'A very old story that may or may not be true, often about heroes and adventure'
+    definitionZh: '传说，传奇'
+    exampleSentence: 'According to legend, the sword was placed in the stone by a powerful wizard.'
+    exampleSentenceZh: '据传说，这把剑是由一位强大的巫师插入石头中的。'
+    wordFamily:
+      - form: legendary
+        partOfSpeech: adjective
+    collocations:
+      - 'according to legend'
+      - 'local legend'
+      - 'legendary hero'
+    synonyms: [tale, myth, fable]
+    antonyms: [fact, history, truth]
+    level: 2
+    firstAppear: D140
+    reviewSchedule: [D141, D143, D147, D154, D170]
+
+  - id: V0700
+    word: sequel
+    phonetic: '/ˈsiːkwəl/'
+    partOfSpeech: noun
+    definition: 'A book, film, or play that continues the story of an earlier one'
+    definitionZh: '续集'
+    exampleSentence: 'The sequel to the fantasy novel was even more exciting than the first book.'
+    exampleSentenceZh: '这部奇幻小说的续集比第一本还要精彩。'
+    wordFamily: []
+    collocations:
+      - 'write a sequel'
+      - 'eagerly awaited sequel'
+      - 'sequel to'
+    synonyms: [follow-up, continuation]
+    antonyms: [prequel, original]
+    level: 2
+    firstAppear: D140
+    reviewSchedule: [D141, D143, D147, D154, D170]
+
+  # ============================================
+  # D141: V0701-V0705 — Descriptive Adjectives (People)
+  # ============================================
+
+  - id: V0701
+    word: weary
+    phonetic: '/ˈwɪəri/'
+    partOfSpeech: adjective
+    definition: 'Very tired, especially after a long journey or hard work'
+    definitionZh: '疲惫的'
+    exampleSentence: 'The weary travellers finally reached the inn after walking for twelve hours.'
+    exampleSentenceZh: '疲惫的旅行者们走了十二个小时后终于到达了客栈。'
+    wordFamily:
+      - form: wearily
+        partOfSpeech: adverb
+      - form: weariness
+        partOfSpeech: noun
+    collocations:
+      - 'weary traveller'
+      - 'weary of'
+      - 'grow weary'
+    synonyms: [tired, exhausted, fatigued]
+    antonyms: [energetic, refreshed, lively]
+    level: 2
+    firstAppear: D141
+    reviewSchedule: [D142, D144, D148, D155, D171]
+
+  - id: V0702
+    word: frail
+    phonetic: '/freɪl/'
+    partOfSpeech: adjective
+    definition: 'Weak and thin; easily damaged or broken'
+    definitionZh: '虚弱的，脆弱的'
+    exampleSentence: 'The frail old woman turned out to be a powerful enchantress in disguise.'
+    exampleSentenceZh: '那个虚弱的老妇人原来是一个伪装的强大女巫。'
+    wordFamily:
+      - form: frailty
+        partOfSpeech: noun
+    collocations:
+      - 'frail and elderly'
+      - 'frail appearance'
+      - 'physically frail'
+    synonyms: [delicate, fragile, feeble]
+    antonyms: [strong, sturdy, robust]
+    level: 2
+    firstAppear: D141
+    reviewSchedule: [D142, D144, D148, D155, D171]
+
+  - id: V0703
+    word: stern
+    phonetic: '/stɜːn/'
+    partOfSpeech: adjective
+    definition: 'Serious and strict; not smiling or friendly'
+    definitionZh: '严厉的，严肃的'
+    exampleSentence: 'The stern headmistress gave the students a warning look that silenced the entire room.'
+    exampleSentenceZh: '严厉的女校长给了学生们一个警告的眼神，让整个房间安静了下来。'
+    wordFamily:
+      - form: sternly
+        partOfSpeech: adverb
+    collocations:
+      - 'stern expression'
+      - 'stern voice'
+      - 'stern warning'
+    synonyms: [strict, severe, harsh]
+    antonyms: [gentle, kind, lenient]
+    level: 2
+    firstAppear: D141
+    reviewSchedule: [D142, D144, D148, D155, D171]
+
+  - id: V0704
+    word: radiant
+    phonetic: '/ˈreɪdiənt/'
+    partOfSpeech: adjective
+    definition: 'Shining brightly; showing great happiness'
+    definitionZh: '光芒四射的，容光焕发的'
+    exampleSentence: 'A radiant smile spread across her face when she saw her long-lost friend.'
+    exampleSentenceZh: '当她看到失散已久的朋友时，脸上绽放出灿烂的笑容。'
+    wordFamily:
+      - form: radiance
+        partOfSpeech: noun
+      - form: radiantly
+        partOfSpeech: adverb
+    collocations:
+      - 'radiant smile'
+      - 'radiant beauty'
+      - 'radiant with joy'
+    synonyms: [glowing, beaming, bright]
+    antonyms: [dull, gloomy, pale]
+    level: 2
+    firstAppear: D141
+    reviewSchedule: [D142, D144, D148, D155, D171]
+
+  - id: V0705
+    word: menacing
+    phonetic: '/ˈmenəsɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Threatening; suggesting that something unpleasant or dangerous will happen'
+    definitionZh: '威胁的，有威胁性的'
+    exampleSentence: 'The menacing shadow moved closer and closer to the children hiding behind the tree.'
+    exampleSentenceZh: '那个威胁性的影子越来越靠近躲在树后面的孩子们。'
+    wordFamily:
+      - form: menace
+        partOfSpeech: noun
+      - form: menace
+        partOfSpeech: verb
+      - form: menacingly
+        partOfSpeech: adverb
+    collocations:
+      - 'menacing look'
+      - 'menacing presence'
+      - 'menacing tone'
+    synonyms: [threatening, intimidating, sinister]
+    antonyms: [friendly, welcoming, harmless]
+    level: 2
+    firstAppear: D141
+    reviewSchedule: [D142, D144, D148, D155, D171]
+
+  # ============================================
+  # D142: V0706-V0710 — Descriptive Adjectives (Places)
+  # ============================================
+
+  - id: V0706
+    word: desolate
+    phonetic: '/ˈdesələt/'
+    partOfSpeech: adjective
+    definition: 'Empty and without people; making you feel sad or lonely'
+    definitionZh: '荒凉的，荒芜的'
+    exampleSentence: 'They crossed a desolate wasteland where nothing grew and no birds sang.'
+    exampleSentenceZh: '他们穿过一片荒凉的废墟，那里寸草不生，也没有鸟鸣。'
+    wordFamily:
+      - form: desolation
+        partOfSpeech: noun
+    collocations:
+      - 'desolate landscape'
+      - 'desolate place'
+      - 'bleak and desolate'
+    synonyms: [barren, deserted, bleak]
+    antonyms: [lush, populated, thriving]
+    level: 3
+    firstAppear: D142
+    reviewSchedule: [D143, D145, D149, D156, D172]
+
+  - id: V0707
+    word: enchanted
+    phonetic: '/ɪnˈtʃɑːntɪd/'
+    partOfSpeech: adjective
+    definition: 'Under a magical spell; wonderfully charming'
+    definitionZh: '被施了魔法的，令人陶醉的'
+    exampleSentence: 'The enchanted garden bloomed with flowers that changed colour with every breeze.'
+    exampleSentenceZh: '魔法花园里开满了随风变色的花朵。'
+    wordFamily:
+      - form: enchant
+        partOfSpeech: verb
+      - form: enchantment
+        partOfSpeech: noun
+      - form: enchanting
+        partOfSpeech: adjective
+    collocations:
+      - 'enchanted forest'
+      - 'enchanted castle'
+      - 'enchanted object'
+    synonyms: [magical, bewitched, spellbound]
+    antonyms: [ordinary, mundane]
+    level: 2
+    firstAppear: D142
+    reviewSchedule: [D143, D145, D149, D156, D172]
+
+  - id: V0708
+    word: towering
+    phonetic: '/ˈtaʊərɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Extremely tall and impressive'
+    definitionZh: '高耸的，巍峨的'
+    exampleSentence: 'Towering cliffs rose on either side of the narrow valley.'
+    exampleSentenceZh: '高耸的悬崖在狭窄的山谷两侧拔地而起。'
+    wordFamily:
+      - form: tower
+        partOfSpeech: noun
+      - form: tower
+        partOfSpeech: verb
+    collocations:
+      - 'towering mountains'
+      - 'towering trees'
+      - 'towering figure'
+    synonyms: [soaring, lofty, immense]
+    antonyms: [tiny, low, small]
+    level: 2
+    firstAppear: D142
+    reviewSchedule: [D143, D145, D149, D156, D172]
+
+  - id: V0709
+    word: bustling
+    phonetic: '/ˈbʌslɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Full of energetic and noisy activity'
+    definitionZh: '繁忙的，热闹的'
+    exampleSentence: 'The bustling marketplace was full of merchants shouting and children laughing.'
+    exampleSentenceZh: '繁忙的市场里到处是商人的叫卖声和孩子们的笑声。'
+    wordFamily:
+      - form: bustle
+        partOfSpeech: verb
+      - form: bustle
+        partOfSpeech: noun
+    collocations:
+      - 'bustling city'
+      - 'bustling marketplace'
+      - 'bustling with activity'
+    synonyms: [busy, lively, vibrant]
+    antonyms: [quiet, deserted, peaceful]
+    level: 2
+    firstAppear: D142
+    reviewSchedule: [D143, D145, D149, D156, D172]
+
+  - id: V0710
+    word: crumbling
+    phonetic: '/ˈkrʌmblɪŋ/'
+    partOfSpeech: adjective
+    definition: 'Falling apart; in a state of decay'
+    definitionZh: '摇摇欲坠的，破败的'
+    exampleSentence: 'The explorers carefully entered the crumbling ruins of the ancient temple.'
+    exampleSentenceZh: '探险者们小心翼翼地进入了古老神庙摇摇欲坠的废墟。'
+    wordFamily:
+      - form: crumble
+        partOfSpeech: verb
+    collocations:
+      - 'crumbling walls'
+      - 'crumbling castle'
+      - 'crumbling ruins'
+    synonyms: [decaying, deteriorating, falling apart]
+    antonyms: [solid, new, well-maintained]
+    level: 2
+    firstAppear: D142
+    reviewSchedule: [D143, D145, D149, D156, D172]
+
+  # ============================================
+  # D143: V0711-V0715 — Literary Devices
+  # ============================================
+
+  - id: V0711
+    word: metaphor
+    phonetic: '/ˈmetəfɔː/'
+    partOfSpeech: noun
+    definition: 'A way of describing something by comparing it to something else without using "like" or "as"'
+    definitionZh: '隐喻，暗喻'
+    exampleSentence: '"Time is a thief" is a metaphor — it compares time to a thief without using "like."'
+    exampleSentenceZh: '"时间是个小偷"是一个隐喻——它不用"像"就把时间比作小偷。'
+    wordFamily:
+      - form: metaphorical
+        partOfSpeech: adjective
+      - form: metaphorically
+        partOfSpeech: adverb
+    collocations:
+      - 'extended metaphor'
+      - 'use a metaphor'
+      - 'powerful metaphor'
+    synonyms: [figure of speech, comparison, analogy]
+    antonyms: [literal description]
+    level: 3
+    firstAppear: D143
+    reviewSchedule: [D144, D146, D150, D157, D173]
+
+  - id: V0712
+    word: simile
+    phonetic: '/ˈsɪməli/'
+    partOfSpeech: noun
+    definition: 'A way of describing something by comparing it using "like" or "as"'
+    definitionZh: '明喻，直喻'
+    exampleSentence: '"She swam like a dolphin" is a simile using the word "like."'
+    exampleSentenceZh: '"她游起泳来像海豚"是一个使用"像"的明喻。'
+    wordFamily: []
+    collocations:
+      - 'use a simile'
+      - 'as...as simile'
+      - 'like...simile'
+    synonyms: [comparison, figure of speech]
+    antonyms: []
+    level: 3
+    firstAppear: D143
+    reviewSchedule: [D144, D146, D150, D157, D173]
+
+  - id: V0713
+    word: imagery
+    phonetic: '/ˈɪmɪdʒri/'
+    partOfSpeech: noun
+    definition: 'Descriptive language that creates pictures in the reader''s mind'
+    definitionZh: '意象，形象化描写'
+    exampleSentence: 'The poet used vivid imagery of fire and ice to describe the battle.'
+    exampleSentenceZh: '诗人用火与冰的生动意象来描述这场战斗。'
+    wordFamily:
+      - form: image
+        partOfSpeech: noun
+    collocations:
+      - 'vivid imagery'
+      - 'sensory imagery'
+      - 'rich imagery'
+    synonyms: [word pictures, descriptions, visualisation]
+    antonyms: []
+    level: 3
+    firstAppear: D143
+    reviewSchedule: [D144, D146, D150, D157, D173]
+
+  - id: V0714
+    word: personification
+    phonetic: '/pəˌsɒnɪfɪˈkeɪʃn/'
+    partOfSpeech: noun
+    definition: 'Giving human qualities to non-human things (e.g., "the wind whispered")'
+    definitionZh: '拟人'
+    exampleSentence: '"The trees danced in the wind" is an example of personification.'
+    exampleSentenceZh: '"树在风中起舞"是拟人的一个例子。'
+    wordFamily:
+      - form: personify
+        partOfSpeech: verb
+    collocations:
+      - 'use personification'
+      - 'example of personification'
+      - 'personification of nature'
+    synonyms: [humanising]
+    antonyms: []
+    level: 3
+    firstAppear: D143
+    reviewSchedule: [D144, D146, D150, D157, D173]
+
+  - id: V0715
+    word: symbolise
+    phonetic: '/ˈsɪmbəlaɪz/'
+    partOfSpeech: verb
+    definition: 'To represent or stand for something else, especially an idea or quality'
+    definitionZh: '象征'
+    exampleSentence: 'In the story, the golden key symbolised hope and new beginnings.'
+    exampleSentenceZh: '在故事中，金钥匙象征着希望和新的开始。'
+    wordFamily:
+      - form: symbol
+        partOfSpeech: noun
+      - form: symbolic
+        partOfSpeech: adjective
+      - form: symbolism
+        partOfSpeech: noun
+    collocations:
+      - 'symbolise freedom'
+      - 'symbolise hope'
+      - 'symbolic meaning'
+    synonyms: [represent, stand for, signify]
+    antonyms: []
+    level: 3
+    firstAppear: D143
+    reviewSchedule: [D144, D146, D150, D157, D173]
+
+  # ============================================
+  # D144: V0716-V0720 — Adventure Actions
+  # ============================================
+
+  - id: V0716
+    word: embark
+    phonetic: '/ɪmˈbɑːk/'
+    partOfSpeech: verb
+    definition: 'To start a journey or begin a new project'
+    definitionZh: '启程，开始'
+    exampleSentence: 'The young heroes embarked on a dangerous quest to find the lost crown.'
+    exampleSentenceZh: '年轻的英雄们踏上了寻找失落王冠的危险旅程。'
+    wordFamily: []
+    collocations:
+      - 'embark on a journey'
+      - 'embark on an adventure'
+      - 'embark upon'
+    synonyms: [set out, begin, start]
+    antonyms: [finish, conclude, return]
+    level: 2
+    firstAppear: D144
+    reviewSchedule: [D145, D147, D151, D158, D174]
+
+  - id: V0717
+    word: encounter
+    phonetic: '/ɪnˈkaʊntə/'
+    partOfSpeech: verb
+    definition: 'To meet someone or something unexpectedly, especially a difficulty or problem'
+    definitionZh: '遭遇，遇到'
+    exampleSentence: 'On their journey, they encountered a fierce storm that lasted three whole days.'
+    exampleSentenceZh: '在旅途中，他们遭遇了一场持续三天的猛烈风暴。'
+    wordFamily:
+      - form: encounter
+        partOfSpeech: noun
+    collocations:
+      - 'encounter difficulties'
+      - 'encounter a problem'
+      - 'first encounter'
+    synonyms: [meet, face, come across]
+    antonyms: [avoid, miss]
+    level: 2
+    firstAppear: D144
+    reviewSchedule: [D145, D147, D151, D158, D174]
+
+  - id: V0718
+    word: conquer
+    phonetic: '/ˈkɒŋkə/'
+    partOfSpeech: verb
+    definition: 'To defeat or overcome something difficult'
+    definitionZh: '征服，克服'
+    exampleSentence: 'After many attempts, she finally conquered her fear of heights and climbed the tower.'
+    exampleSentenceZh: '经过多次尝试，她终于克服了恐高症，爬上了塔楼。'
+    wordFamily:
+      - form: conqueror
+        partOfSpeech: noun
+      - form: conquest
+        partOfSpeech: noun
+    collocations:
+      - 'conquer fear'
+      - 'conquer challenges'
+      - 'conquer the enemy'
+    synonyms: [defeat, overcome, vanquish]
+    antonyms: [surrender, yield, lose]
+    level: 2
+    firstAppear: D144
+    reviewSchedule: [D145, D147, D151, D158, D174]
+
+  - id: V0719
+    word: pursue
+    phonetic: '/pəˈsjuː/'
+    partOfSpeech: verb
+    definition: 'To follow or chase someone or something; to try to achieve something'
+    definitionZh: '追赶，追求'
+    exampleSentence: 'The detective pursued the thief through the narrow streets of the old town.'
+    exampleSentenceZh: '侦探在老城狭窄的街道上追赶小偷。'
+    wordFamily:
+      - form: pursuit
+        partOfSpeech: noun
+    collocations:
+      - 'pursue a goal'
+      - 'pursue a dream'
+      - 'in pursuit of'
+    synonyms: [chase, follow, seek]
+    antonyms: [flee, avoid, abandon]
+    level: 2
+    firstAppear: D144
+    reviewSchedule: [D145, D147, D151, D158, D174]
+
+  - id: V0720
+    word: retreat
+    phonetic: '/rɪˈtriːt/'
+    partOfSpeech: verb
+    definition: 'To move back or away from a dangerous or difficult situation'
+    definitionZh: '撤退，退却'
+    exampleSentence: 'The soldiers retreated to the safety of the castle when the dragon attacked.'
+    exampleSentenceZh: '当龙发起攻击时，士兵们撤退到了城堡的安全区域。'
+    wordFamily:
+      - form: retreat
+        partOfSpeech: noun
+    collocations:
+      - 'retreat from'
+      - 'beat a retreat'
+      - 'hasty retreat'
+    synonyms: [withdraw, fall back, pull back]
+    antonyms: [advance, attack, charge]
+    level: 2
+    firstAppear: D144
+    reviewSchedule: [D145, D147, D151, D158, D174]
+
+  # ============================================
+  # D145: V0721-V0725 — Said-Alternatives
+  # ============================================
+
+  - id: V0721
+    word: mutter
+    phonetic: '/ˈmʌtə/'
+    partOfSpeech: verb
+    definition: 'To speak in a low voice that is hard to hear, often when you are annoyed'
+    definitionZh: '嘟囔，低声抱怨'
+    exampleSentence: '"This is not fair," the boy muttered under his breath as he walked away.'
+    exampleSentenceZh: '"这不公平，"男孩小声嘟囔着走开了。'
+    wordFamily: []
+    collocations:
+      - 'mutter under one''s breath'
+      - 'mutter angrily'
+      - 'mutter a complaint'
+    synonyms: [mumble, grumble, murmur]
+    antonyms: [shout, announce clearly]
+    level: 2
+    firstAppear: D145
+    reviewSchedule: [D146, D148, D152, D159, D175]
+
+  - id: V0722
+    word: declare
+    phonetic: '/dɪˈkleə/'
+    partOfSpeech: verb
+    definition: 'To say something in a firm, confident, official way'
+    definitionZh: '宣布，声明'
+    exampleSentence: '"I will find the treasure, no matter what it takes!" the captain declared.'
+    exampleSentenceZh: '"不管付出什么代价，我都要找到宝藏！"船长宣布道。'
+    wordFamily:
+      - form: declaration
+        partOfSpeech: noun
+    collocations:
+      - 'declare war'
+      - 'proudly declare'
+      - 'declare independence'
+    synonyms: [announce, proclaim, state]
+    antonyms: [whisper, conceal, deny]
+    level: 2
+    firstAppear: D145
+    reviewSchedule: [D146, D148, D152, D159, D175]
+
+  - id: V0723
+    word: boast
+    phonetic: '/bəʊst/'
+    partOfSpeech: verb
+    definition: 'To talk with too much pride about what you have or can do'
+    definitionZh: '吹嘘，夸耀'
+    exampleSentence: '"I can defeat any dragon single-handedly!" the warrior boasted to the crowd.'
+    exampleSentenceZh: '"我能单枪匹马打败任何龙！"战士向人群夸耀道。'
+    wordFamily:
+      - form: boast
+        partOfSpeech: noun
+      - form: boastful
+        partOfSpeech: adjective
+    collocations:
+      - 'boast about'
+      - 'boast proudly'
+      - 'empty boast'
+    synonyms: [brag, show off, crow]
+    antonyms: [be modest, understate]
+    level: 2
+    firstAppear: D145
+    reviewSchedule: [D146, D148, D152, D159, D175]
+
+  - id: V0724
+    word: sigh
+    phonetic: '/saɪ/'
+    partOfSpeech: verb
+    definition: 'To breathe out slowly and noisily to express sadness, tiredness, or relief'
+    definitionZh: '叹息，叹气'
+    exampleSentence: '"I wish I could go on an adventure too," she sighed, looking out of the window.'
+    exampleSentenceZh: '"我也希望能去冒险，"她叹了口气，望向窗外。'
+    wordFamily:
+      - form: sigh
+        partOfSpeech: noun
+    collocations:
+      - 'sigh with relief'
+      - 'sigh deeply'
+      - 'sigh of contentment'
+    synonyms: [exhale, breathe heavily]
+    antonyms: [gasp, cheer]
+    level: 2
+    firstAppear: D145
+    reviewSchedule: [D146, D148, D152, D159, D175]
+
+  - id: V0725
+    word: snap
+    phonetic: '/snæp/'
+    partOfSpeech: verb
+    definition: 'To say something quickly and angrily'
+    definitionZh: '厉声说，呵斥'
+    exampleSentence: '"Be quiet!" the librarian snapped when the children started giggling.'
+    exampleSentenceZh: '"安静！"当孩子们开始咯咯笑时，图书管理员厉声说道。'
+    wordFamily: []
+    collocations:
+      - 'snap at someone'
+      - 'snap back'
+      - 'snap angrily'
+    synonyms: [bark, retort sharply, snarl]
+    antonyms: [say gently, whisper kindly]
+    level: 2
+    firstAppear: D145
+    reviewSchedule: [D146, D148, D152, D159, D175]
+
+  # ============================================
+  # D146: V0726-V0730 — Emotions (Complex)
+  # ============================================
+
+  - id: V0726
+    word: bewildered
+    phonetic: '/bɪˈwɪldəd/'
+    partOfSpeech: adjective
+    definition: 'Very confused and not sure what to do'
+    definitionZh: '困惑的，不知所措的'
+    exampleSentence: 'The bewildered boy stood at the crossroads, not knowing which path to take.'
+    exampleSentenceZh: '困惑的男孩站在十字路口，不知道该走哪条路。'
+    wordFamily:
+      - form: bewilder
+        partOfSpeech: verb
+      - form: bewilderment
+        partOfSpeech: noun
+      - form: bewildering
+        partOfSpeech: adjective
+    collocations:
+      - 'look bewildered'
+      - 'completely bewildered'
+      - 'bewildered expression'
+    synonyms: [confused, puzzled, perplexed]
+    antonyms: [certain, clear-headed, confident]
+    level: 2
+    firstAppear: D146
+    reviewSchedule: [D147, D149, D153, D160, D176]
+
+  - id: V0727
+    word: envious
+    phonetic: '/ˈenviəs/'
+    partOfSpeech: adjective
+    definition: 'Wanting something that someone else has'
+    definitionZh: '嫉妒的，羡慕的'
+    exampleSentence: 'The younger sister was envious of the older one''s beautiful singing voice.'
+    exampleSentenceZh: '妹妹嫉妒姐姐优美的歌喉。'
+    wordFamily:
+      - form: envy
+        partOfSpeech: noun
+      - form: envy
+        partOfSpeech: verb
+    collocations:
+      - 'envious of'
+      - 'envious glance'
+      - 'feel envious'
+    synonyms: [jealous, covetous, resentful]
+    antonyms: [content, satisfied, generous]
+    level: 2
+    firstAppear: D146
+    reviewSchedule: [D147, D149, D153, D160, D176]
+
+  - id: V0728
+    word: nostalgic
+    phonetic: '/nɒˈstældʒɪk/'
+    partOfSpeech: adjective
+    definition: 'Feeling a mixture of happiness and sadness when remembering the past'
+    definitionZh: '怀旧的'
+    exampleSentence: 'Reading her grandmother''s old diary made her feel nostalgic for simpler times.'
+    exampleSentenceZh: '读着祖母的旧日记，她对更简单的时光感到怀念。'
+    wordFamily:
+      - form: nostalgia
+        partOfSpeech: noun
+      - form: nostalgically
+        partOfSpeech: adverb
+    collocations:
+      - 'feel nostalgic'
+      - 'nostalgic memory'
+      - 'nostalgic feeling'
+    synonyms: [sentimental, wistful, longing]
+    antonyms: [forward-looking]
+    level: 3
+    firstAppear: D146
+    reviewSchedule: [D147, D149, D153, D160, D176]
+
+  - id: V0729
+    word: grateful
+    phonetic: '/ˈɡreɪtfl/'
+    partOfSpeech: adjective
+    definition: 'Feeling or showing thanks'
+    definitionZh: '感激的，感谢的'
+    exampleSentence: 'The rescued traveller was deeply grateful to the kind stranger who had saved his life.'
+    exampleSentenceZh: '获救的旅行者对救了他一命的善良陌生人深表感激。'
+    wordFamily:
+      - form: gratitude
+        partOfSpeech: noun
+      - form: gratefully
+        partOfSpeech: adverb
+    collocations:
+      - 'deeply grateful'
+      - 'grateful for'
+      - 'grateful smile'
+    synonyms: [thankful, appreciative, indebted]
+    antonyms: [ungrateful, thankless]
+    level: 2
+    firstAppear: D146
+    reviewSchedule: [D147, D149, D153, D160, D176]
+
+  - id: V0730
+    word: furious
+    phonetic: '/ˈfjʊəriəs/'
+    partOfSpeech: adjective
+    definition: 'Extremely angry'
+    definitionZh: '狂怒的，暴怒的'
+    exampleSentence: 'The king was furious when he discovered that the crown jewels had been stolen.'
+    exampleSentenceZh: '当国王发现王冠珠宝被盗时，他暴怒不已。'
+    wordFamily:
+      - form: fury
+        partOfSpeech: noun
+      - form: furiously
+        partOfSpeech: adverb
+    collocations:
+      - 'absolutely furious'
+      - 'furious with'
+      - 'furious debate'
+    synonyms: [enraged, livid, infuriated]
+    antonyms: [calm, peaceful, pleased]
+    level: 2
+    firstAppear: D146
+    reviewSchedule: [D147, D149, D153, D160, D176]
+
+  # ============================================
+  # D147: V0731-V0735 — Descriptive Verbs (Light & Colour)
+  # ============================================
+
+  - id: V0731
+    word: flicker
+    phonetic: '/ˈflɪkə/'
+    partOfSpeech: verb
+    definition: 'To shine with an unsteady light that goes on and off quickly'
+    definitionZh: '闪烁，摇曳'
+    exampleSentence: 'The candles flickered in the breeze, casting dancing shadows on the walls.'
+    exampleSentenceZh: '蜡烛在微风中闪烁，在墙上投下舞动的影子。'
+    wordFamily:
+      - form: flicker
+        partOfSpeech: noun
+    collocations:
+      - 'candles flicker'
+      - 'a flicker of hope'
+      - 'flicker and die'
+    synonyms: [twinkle, glimmer, waver]
+    antonyms: [glow steadily, blaze]
+    level: 2
+    firstAppear: D147
+    reviewSchedule: [D148, D150, D154, D161, D177]
+
+  - id: V0732
+    word: glow
+    phonetic: '/ɡləʊ/'
+    partOfSpeech: verb
+    definition: 'To produce a soft, steady light without flames'
+    definitionZh: '发光，发亮'
+    exampleSentence: 'The magic stone began to glow as soon as she held it in her hand.'
+    exampleSentenceZh: '她一把魔法石握在手中，它就开始发光了。'
+    wordFamily:
+      - form: glow
+        partOfSpeech: noun
+      - form: glowing
+        partOfSpeech: adjective
+    collocations:
+      - 'glow brightly'
+      - 'warm glow'
+      - 'faint glow'
+    synonyms: [shine, radiate, gleam]
+    antonyms: [dim, darken, fade]
+    level: 2
+    firstAppear: D147
+    reviewSchedule: [D148, D150, D154, D161, D177]
+
+  - id: V0733
+    word: fade
+    phonetic: '/feɪd/'
+    partOfSpeech: verb
+    definition: 'To gradually become weaker, less bright, or less clear'
+    definitionZh: '褪色，消退'
+    exampleSentence: 'The dragon''s roar faded into the distance as it flew away over the mountains.'
+    exampleSentenceZh: '龙飞越群山远去，它的吼声渐渐消失在远方。'
+    wordFamily: []
+    collocations:
+      - 'fade away'
+      - 'fade into the distance'
+      - 'colours fade'
+    synonyms: [diminish, disappear, weaken]
+    antonyms: [brighten, intensify, strengthen]
+    level: 2
+    firstAppear: D147
+    reviewSchedule: [D148, D150, D154, D161, D177]
+
+  - id: V0734
+    word: dazzle
+    phonetic: '/ˈdæzl/'
+    partOfSpeech: verb
+    definition: 'To impress someone greatly; to make someone unable to see briefly with a very bright light'
+    definitionZh: '使目眩，使惊叹'
+    exampleSentence: 'The treasure room dazzled them — gold, jewels, and diamonds covered every surface.'
+    exampleSentenceZh: '宝藏室让他们目眩——每个表面都铺满了黄金、宝石和钻石。'
+    wordFamily:
+      - form: dazzling
+        partOfSpeech: adjective
+    collocations:
+      - 'dazzling display'
+      - 'dazzling beauty'
+      - 'dazzling light'
+    synonyms: [blind, amaze, impress]
+    antonyms: [bore, disappoint]
+    level: 2
+    firstAppear: D147
+    reviewSchedule: [D148, D150, D154, D161, D177]
+
+  - id: V0735
+    word: cast
+    phonetic: '/kɑːst/'
+    partOfSpeech: verb
+    definition: 'To send light, a shadow, or a look in a particular direction'
+    definitionZh: '投射（光、影、目光）'
+    exampleSentence: 'The setting sun cast long shadows across the village square.'
+    exampleSentenceZh: '落日在村庄广场上投下了长长的影子。'
+    wordFamily: []
+    collocations:
+      - 'cast a shadow'
+      - 'cast a spell'
+      - 'cast a glance'
+    synonyms: [throw, project, direct]
+    antonyms: []
+    level: 2
+    firstAppear: D147
+    reviewSchedule: [D148, D150, D154, D161, D177]
+
+  # ============================================
+  # D148: V0736-V0740 — Feelings in Narratives
+  # ============================================
+
+  - id: V0736
+    word: dread
+    phonetic: '/dred/'
+    partOfSpeech: noun
+    definition: 'A strong feeling of fear about something that might happen'
+    definitionZh: '恐惧，畏惧'
+    exampleSentence: 'A sense of dread filled the room as the clock struck midnight.'
+    exampleSentenceZh: '当钟敲响午夜时，恐惧感弥漫了整个房间。'
+    wordFamily:
+      - form: dread
+        partOfSpeech: verb
+      - form: dreadful
+        partOfSpeech: adjective
+      - form: dreaded
+        partOfSpeech: adjective
+    collocations:
+      - 'a sense of dread'
+      - 'fill with dread'
+      - 'dread the thought'
+    synonyms: [fear, terror, horror]
+    antonyms: [excitement, anticipation, hope]
+    level: 2
+    firstAppear: D148
+    reviewSchedule: [D149, D151, D155, D162, D178]
+
+  - id: V0737
+    word: anticipation
+    phonetic: '/ænˌtɪsɪˈpeɪʃn/'
+    partOfSpeech: noun
+    definition: 'A feeling of excitement about something that is going to happen'
+    definitionZh: '期待，期盼'
+    exampleSentence: 'The children could barely sleep the night before the adventure, full of anticipation.'
+    exampleSentenceZh: '冒险前一晚，孩子们满怀期待，几乎无法入睡。'
+    wordFamily:
+      - form: anticipate
+        partOfSpeech: verb
+    collocations:
+      - 'in anticipation of'
+      - 'build anticipation'
+      - 'eager anticipation'
+    synonyms: [expectation, excitement, eagerness]
+    antonyms: [dread, indifference]
+    level: 2
+    firstAppear: D148
+    reviewSchedule: [D149, D151, D155, D162, D178]
+
+  - id: V0738
+    word: regret
+    phonetic: '/rɪˈɡret/'
+    partOfSpeech: noun
+    definition: 'A feeling of sadness about something you did or did not do'
+    definitionZh: '遗憾，后悔'
+    exampleSentence: 'The old king was filled with regret for not listening to the wise woman''s advice.'
+    exampleSentenceZh: '老国王为没有听从智者的建议而充满了遗憾。'
+    wordFamily:
+      - form: regret
+        partOfSpeech: verb
+      - form: regretful
+        partOfSpeech: adjective
+      - form: regrettable
+        partOfSpeech: adjective
+    collocations:
+      - 'feel regret'
+      - 'express regret'
+      - 'deep regret'
+    synonyms: [remorse, sorrow, repentance]
+    antonyms: [satisfaction, pride]
+    level: 2
+    firstAppear: D148
+    reviewSchedule: [D149, D151, D155, D162, D178]
+
+  - id: V0739
+    word: awe
+    phonetic: '/ɔː/'
+    partOfSpeech: noun
+    definition: 'A feeling of great respect mixed with fear or wonder'
+    definitionZh: '敬畏'
+    exampleSentence: 'The children stared in awe at the enormous dragon sleeping in the cave.'
+    exampleSentenceZh: '孩子们敬畏地盯着洞穴里睡着的巨龙。'
+    wordFamily:
+      - form: awe-inspiring
+        partOfSpeech: adjective
+      - form: awesome
+        partOfSpeech: adjective
+      - form: awed
+        partOfSpeech: adjective
+    collocations:
+      - 'in awe'
+      - 'stare in awe'
+      - 'awe-inspiring'
+    synonyms: [wonder, amazement, reverence]
+    antonyms: [contempt, indifference]
+    level: 2
+    firstAppear: D148
+    reviewSchedule: [D149, D151, D155, D162, D178]
+
+  - id: V0740
+    word: determination
+    phonetic: '/dɪˌtɜːmɪˈneɪʃn/'
+    partOfSpeech: noun
+    definition: 'A strong will to achieve something despite difficulties'
+    definitionZh: '决心，毅力'
+    exampleSentence: 'With fierce determination, the young girl climbed the mountain even as the storm raged.'
+    exampleSentenceZh: '凭借强烈的决心，年轻女孩即使在暴风雨中也爬上了山。'
+    wordFamily:
+      - form: determine
+        partOfSpeech: verb
+      - form: determined
+        partOfSpeech: adjective
+    collocations:
+      - 'fierce determination'
+      - 'show determination'
+      - 'with determination'
+    synonyms: [resolve, willpower, persistence]
+    antonyms: [indecision, hesitation, weakness]
+    level: 2
+    firstAppear: D148
+    reviewSchedule: [D149, D151, D155, D162, D178]
+
+  # ============================================
+  # D149: V0741-V0745 — Storytelling Verbs
+  # ============================================
+
+  - id: V0741
+    word: unfold
+    phonetic: '/ʌnˈfəʊld/'
+    partOfSpeech: verb
+    definition: 'To happen or develop, especially a story or series of events'
+    definitionZh: '展开，逐渐呈现'
+    exampleSentence: 'The mystery unfolded slowly as the detective gathered more clues.'
+    exampleSentenceZh: '随着侦探收集更多线索，谜团慢慢展开了。'
+    wordFamily: []
+    collocations:
+      - 'events unfold'
+      - 'story unfolds'
+      - 'watch events unfold'
+    synonyms: [develop, evolve, progress]
+    antonyms: [conclude, end]
+    level: 2
+    firstAppear: D149
+    reviewSchedule: [D150, D152, D156, D163, D179]
+
+  - id: V0742
+    word: reveal
+    phonetic: '/rɪˈviːl/'
+    partOfSpeech: verb
+    definition: 'To make something known that was previously secret or hidden'
+    definitionZh: '揭示，揭露'
+    exampleSentence: 'The final chapter revealed that the kind old man was actually the missing prince.'
+    exampleSentenceZh: '最后一章揭示了那个善良的老人其实是失踪的王子。'
+    wordFamily:
+      - form: revelation
+        partOfSpeech: noun
+      - form: revealing
+        partOfSpeech: adjective
+    collocations:
+      - 'reveal a secret'
+      - 'reveal the truth'
+      - 'shocking revelation'
+    synonyms: [disclose, uncover, expose]
+    antonyms: [hide, conceal, cover up]
+    level: 2
+    firstAppear: D149
+    reviewSchedule: [D150, D152, D156, D163, D179]
+
+  - id: V0743
+    word: conceal
+    phonetic: '/kənˈsiːl/'
+    partOfSpeech: verb
+    definition: 'To hide something carefully'
+    definitionZh: '隐藏，隐瞒'
+    exampleSentence: 'The smuggler concealed the treasure map inside a hollow walking stick.'
+    exampleSentenceZh: '走私犯把藏宝图藏在了一根空心手杖里。'
+    wordFamily:
+      - form: concealment
+        partOfSpeech: noun
+      - form: concealed
+        partOfSpeech: adjective
+    collocations:
+      - 'conceal the truth'
+      - 'conceal from'
+      - 'carefully concealed'
+    synonyms: [hide, disguise, cover]
+    antonyms: [reveal, expose, show]
+    level: 2
+    firstAppear: D149
+    reviewSchedule: [D150, D152, D156, D163, D179]
+
+  - id: V0744
+    word: persuade
+    phonetic: '/pəˈsweɪd/'
+    partOfSpeech: verb
+    definition: 'To make someone agree to do something by giving them good reasons'
+    definitionZh: '说服，劝说'
+    exampleSentence: 'After a long discussion, she managed to persuade her friends to join the rescue mission.'
+    exampleSentenceZh: '经过长时间的讨论，她终于说服了朋友们加入了救援任务。'
+    wordFamily:
+      - form: persuasion
+        partOfSpeech: noun
+      - form: persuasive
+        partOfSpeech: adjective
+    collocations:
+      - 'persuade someone to'
+      - 'persuade someone that'
+      - 'hard to persuade'
+    synonyms: [convince, influence, talk into]
+    antonyms: [discourage, dissuade, deter]
+    level: 2
+    firstAppear: D149
+    reviewSchedule: [D150, D152, D156, D163, D179]
+
+  - id: V0745
+    word: betray
+    phonetic: '/bɪˈtreɪ/'
+    partOfSpeech: verb
+    definition: 'To be disloyal to someone who trusts you; to give away a secret'
+    definitionZh: '背叛，泄露'
+    exampleSentence: 'The trusted advisor betrayed the queen by sharing her plans with the enemy.'
+    exampleSentenceZh: '可信赖的顾问把女王的计划告诉了敌人，背叛了她。'
+    wordFamily:
+      - form: betrayal
+        partOfSpeech: noun
+      - form: betrayer
+        partOfSpeech: noun
+    collocations:
+      - 'betray a friend'
+      - 'betray trust'
+      - 'feel betrayed'
+    synonyms: [deceive, double-cross, turn against]
+    antonyms: [be loyal, support, protect]
+    level: 2
+    firstAppear: D149
+    reviewSchedule: [D150, D152, D156, D163, D179]
+
+  # ============================================
+  # D150: V0746-V0750 — Review & Summary Words
+  # ============================================
+
+  - id: V0746
+    word: extraordinary
+    phonetic: '/ɪkˈstrɔːdnri/'
+    partOfSpeech: adjective
+    definition: 'Very unusual or remarkable; beyond what is ordinary'
+    definitionZh: '非凡的，卓越的'
+    exampleSentence: 'It was an extraordinary adventure — nothing like it had ever happened before.'
+    exampleSentenceZh: '这是一次非凡的冒险——以前从未发生过这样的事。'
+    wordFamily:
+      - form: extraordinarily
+        partOfSpeech: adverb
+    collocations:
+      - 'quite extraordinary'
+      - 'extraordinary talent'
+      - 'extraordinary journey'
+    synonyms: [remarkable, exceptional, incredible]
+    antonyms: [ordinary, normal, common]
+    level: 2
+    firstAppear: D150
+    reviewSchedule: [D151, D153, D157, D164, D180]
+
+  - id: V0747
+    word: memorable
+    phonetic: '/ˈmemərəbl/'
+    partOfSpeech: adjective
+    definition: 'Worth remembering; special and difficult to forget'
+    definitionZh: '难忘的，值得纪念的'
+    exampleSentence: 'The sunset over the enchanted lake was the most memorable moment of the whole journey.'
+    exampleSentenceZh: '魔法湖上的日落是整个旅程中最难忘的时刻。'
+    wordFamily:
+      - form: memorably
+        partOfSpeech: adverb
+    collocations:
+      - 'memorable experience'
+      - 'memorable moment'
+      - 'truly memorable'
+    synonyms: [unforgettable, remarkable, notable]
+    antonyms: [forgettable, ordinary, unremarkable]
+    level: 2
+    firstAppear: D150
+    reviewSchedule: [D151, D153, D157, D164, D180]
+
+  - id: V0748
+    word: captivate
+    phonetic: '/ˈkæptɪveɪt/'
+    partOfSpeech: verb
+    definition: 'To hold someone''s attention completely because something is very interesting'
+    definitionZh: '吸引，使入迷'
+    exampleSentence: 'The storyteller captivated the audience from the very first sentence.'
+    exampleSentenceZh: '讲故事的人从第一句话就吸引了所有观众。'
+    wordFamily:
+      - form: captivating
+        partOfSpeech: adjective
+      - form: captivated
+        partOfSpeech: adjective
+    collocations:
+      - 'captivate the audience'
+      - 'completely captivated'
+      - 'captivate readers'
+    synonyms: [fascinate, enchant, mesmerise]
+    antonyms: [bore, repel]
+    level: 2
+    firstAppear: D150
+    reviewSchedule: [D151, D153, D157, D164, D180]
+
+  - id: V0749
+    word: inspire
+    phonetic: '/ɪnˈspaɪə/'
+    partOfSpeech: verb
+    definition: 'To give someone the desire, confidence, or enthusiasm to do something'
+    definitionZh: '激励，启发'
+    exampleSentence: 'The brave heroine''s story inspired many young readers to write their own adventures.'
+    exampleSentenceZh: '这位勇敢女主角的故事激励了许多年轻读者去写自己的冒险故事。'
+    wordFamily:
+      - form: inspiration
+        partOfSpeech: noun
+      - form: inspiring
+        partOfSpeech: adjective
+      - form: inspired
+        partOfSpeech: adjective
+    collocations:
+      - 'inspire someone to'
+      - 'inspire confidence'
+      - 'source of inspiration'
+    synonyms: [motivate, encourage, stimulate]
+    antonyms: [discourage, demotivate]
+    level: 2
+    firstAppear: D150
+    reviewSchedule: [D151, D153, D157, D164, D180]
+
+  - id: V0750
+    word: transform
+    phonetic: '/trænsˈfɔːm/'
+    partOfSpeech: verb
+    definition: 'To change something completely in form, appearance, or nature'
+    definitionZh: '转变，改变'
+    exampleSentence: 'By the end of the story, the shy girl had transformed into a confident, brave leader.'
+    exampleSentenceZh: '到故事结尾时，害羞的女孩已经转变成了一个自信勇敢的领导者。'
+    wordFamily:
+      - form: transformation
+        partOfSpeech: noun
+      - form: transformative
+        partOfSpeech: adjective
+    collocations:
+      - 'transform into'
+      - 'completely transform'
+      - 'transform one''s life'
+    synonyms: [change, convert, alter]
+    antonyms: [preserve, maintain]
+    level: 2
+    firstAppear: D150
+    reviewSchedule: [D151, D153, D157, D164, D180]

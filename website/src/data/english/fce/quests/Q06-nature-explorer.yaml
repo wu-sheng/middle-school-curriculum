@@ -1,0 +1,693 @@
+id: Q06
+title: 'Nature Explorer'
+titleZh: '自然探索家'
+subtitle: 'Master the art of scientific reading!'
+subtitleZh: '掌握科学阅读的艺术！'
+month: 6
+fceMapping: 'Reading Part 6 (Gapped Text)'
+
+theme:
+  setting: 'A Nature Research Station deep in the rainforest where young explorers learn to read scientific texts'
+  settingZh: '雨林深处的自然研究站，年轻探险家在这里学习阅读科学文本'
+  mascot: 'Dr. Fern, a wise botanist who teaches through nature observation journals'
+  mascotZh: 'Fern 博士，一位睿智的植物学家，通过自然观察日记来教学'
+
+objectives:
+  - 'Recognise paragraph coherence signals (However, Furthermore, As a result)'
+  - 'Track reference words across paragraphs (this, these, such, the former/latter)'
+  - 'Identify information flow patterns (general to specific, chronological, cause and effect)'
+  - 'Apply gapped text strategies for FCE Reading Part 6'
+  - 'Understand scientific vocabulary in context without a dictionary'
+  - 'Summarize and take notes from longer scientific texts'
+
+objectivesZh:
+  - '识别段落衔接信号词（However, Furthermore, As a result）'
+  - '跨段落追踪指代词（this, these, such, the former/latter）'
+  - '辨别信息流模式（由总到分、按时间顺序、因果关系）'
+  - '应用 FCE 阅读 Part 6 的填空策略'
+  - '在语境中理解科学词汇，无需查词典'
+  - '从较长的科学文本中提炼摘要和做笔记'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Paragraph Coherence Signals
+  # ─────────────────────────────────────────────
+  - id: Q06-L01
+    title: 'Paragraph Coherence Signals'
+    titleZh: '段落衔接信号词'
+
+    introduction: |
+      Welcome to the Nature Research Station! Dr. Fern leads you through a greenhouse
+      filled with exotic plants from every continent.
+
+      "In science," says Dr. Fern, "we need to explain how ideas connect to each other.
+      We use special SIGNAL WORDS — like signposts on a trail — to show the reader whether
+      we are ADDING information, CONTRASTING ideas, or showing a RESULT."
+
+      She picks up two leaves. "Look at these two leaves. One is from a desert cactus,
+      the other from a tropical fern. They look completely different. HOWEVER, both use
+      photosynthesis to make food from sunlight. See? The word 'however' told you that
+      a CONTRAST was coming."
+
+      "When you read scientific texts — or take the FCE exam — these signal words are
+      your best friends. They tell you what the next sentence will do BEFORE you read it."
+    introductionZh: |
+      欢迎来到自然研究站！Fern 博士带你穿过一个种满来自各大洲奇异植物的温室。
+
+      "在科学中，"Fern 博士说，"我们需要解释不同想法之间是如何联系的。
+      我们使用特殊的信号词——就像小路上的路标——来告诉读者我们是在
+      补充信息、对比观点，还是展示结果。"
+
+      她拿起两片叶子。"看看这两片叶子。一片来自沙漠仙人掌，
+      另一片来自热带蕨类植物。它们看起来完全不同。然而（HOWEVER），
+      两者都利用光合作用从阳光中制造食物。看到了吗？'however'这个词告诉你
+      一个对比即将到来。"
+
+      "当你阅读科学文本——或参加 FCE 考试时——这些信号词是你最好的朋友。
+      它们在你读下一句之前就告诉你下一句要做什么。"
+
+    rules:
+      - pattern: 'Addition Connectors'
+        meaning: 'Add more information to support or extend a point: Furthermore, Moreover, In addition, What is more'
+        meaningZh: '补充更多信息来支持或扩展一个观点：Furthermore, Moreover, In addition, What is more'
+        examples:
+          - base: 'Coral reefs support thousands of fish species.'
+            transformed: 'Furthermore, they protect coastlines from powerful storms.'
+            sentence: '"Furthermore" tells the reader that another supporting point is coming.'
+            sentenceZh: '"Furthermore"告诉读者另一个支持性观点即将出现。'
+          - base: 'Bees pollinate over 80% of flowering plants.'
+            transformed: 'Moreover, they produce honey, wax, and royal jelly that humans have used for thousands of years.'
+            sentence: '"Moreover" adds a second important fact about bees.'
+            sentenceZh: '"Moreover"补充了关于蜜蜂的第二个重要事实。'
+
+      - pattern: 'Contrast Connectors'
+        meaning: 'Show an unexpected difference or opposing idea: However, Nevertheless, On the other hand, In contrast'
+        meaningZh: '展示意外的差异或相反的观点：However, Nevertheless, On the other hand, In contrast'
+        examples:
+          - base: 'Many people think octopuses are simple creatures.'
+            transformed: 'However, research has shown that they can solve puzzles, use tools, and even escape from locked tanks.'
+            sentence: '"However" signals that the next idea will CONTRAST with what came before.'
+            sentenceZh: '"However"表示下一个观点将与前面的内容形成对比。'
+          - base: 'Deforestation destroys animal habitats.'
+            transformed: 'Nevertheless, some species have adapted to living in smaller forest fragments.'
+            sentence: '"Nevertheless" means "despite this" — the contrast is softer, acknowledging both sides.'
+            sentenceZh: '"Nevertheless"意思是"尽管如此"——对比更温和，承认了两方面。'
+
+      - pattern: 'Result Connectors'
+        meaning: 'Show what happened because of something: As a result, Consequently, Therefore, For this reason'
+        meaningZh: '展示因某事而发生的结果：As a result, Consequently, Therefore, For this reason'
+        examples:
+          - base: 'The ice caps are melting due to rising temperatures.'
+            transformed: 'As a result, sea levels have risen by approximately 20 centimetres in the last century.'
+            sentence: '"As a result" tells you that the next sentence describes what happened BECAUSE of the previous fact.'
+            sentenceZh: '"As a result"告诉你下一句描述的是前一个事实导致的结果。'
+
+    tips:
+      - 'In FCE Reading Part 6, the removed paragraph often begins with a connector. Check which connector fits the logic of the gap.'
+      - 'Addition connectors (Furthermore, Moreover) follow a paragraph that makes a POSITIVE point about the same topic.'
+      - 'Contrast connectors (However, Nevertheless) follow a paragraph that says the OPPOSITE.'
+      - 'Result connectors (As a result, Therefore) follow a paragraph that describes a CAUSE.'
+      - 'Read the paragraph BEFORE and AFTER the gap to decide which type of connector is needed.'
+    tipsZh:
+      - '在 FCE 阅读 Part 6 中，被移除的段落通常以连接词开头。检查哪个连接词符合空缺处的逻辑。'
+      - '补充连接词（Furthermore, Moreover）跟在对同一话题发表正面观点的段落后面。'
+      - '对比连接词（However, Nevertheless）跟在表达相反意思的段落后面。'
+      - '结果连接词（As a result, Therefore）跟在描述原因的段落后面。'
+      - '阅读空缺前后的段落来决定需要哪种类型的连接词。'
+
+    practicePreview:
+      - id: Q06-L01-P01
+        question: |
+          Choose the best connector to fill the gap:
+
+          Rainforests cover only 6% of the Earth's surface. _____, they contain more than half of all plant and animal species on the planet.
+        questionZh: |
+          选择最佳连接词填空：
+
+          雨林只覆盖了地球表面的6%。_____ 它们包含了地球上一半以上的动植物物种。
+        options:
+          A: 'As a result'
+          B: 'However'
+          C: 'For this reason'
+          D: 'In contrast'
+        answer: 'B'
+        explanation: 'The first sentence suggests rainforests are small (6%), but the second says they contain most species. This is a surprising contrast, so "However" is correct.'
+        explanationZh: '第一句说雨林面积小（6%），但第二句说它们包含大部分物种。这是一个令人惊讶的对比，所以"However"是正确的。'
+
+      - id: Q06-L01-P02
+        question: |
+          Choose the best connector to fill the gap:
+
+          Polar bears depend on sea ice for hunting seals. The Arctic ice is shrinking every year. _____, polar bear populations are declining rapidly.
+        questionZh: |
+          选择最佳连接词填空：
+
+          北极熊依靠海冰来捕猎海豹。北极冰每年都在缩小。_____ 北极熊的数量正在急剧下降。
+        options:
+          A: 'Furthermore'
+          B: 'On the other hand'
+          C: 'Consequently'
+          D: 'Nevertheless'
+        answer: 'C'
+        explanation: 'The shrinking ice CAUSES the population decline. "Consequently" shows a cause-result relationship.'
+        explanationZh: '冰的缩小导致了数量下降。"Consequently"表示因果关系。'
+
+      - id: Q06-L01-P03
+        question: |
+          Choose the best connector to fill the gap:
+
+          Whales use sound to communicate across vast ocean distances. _____, dolphins use a complex system of clicks and whistles to identify each other.
+        questionZh: |
+          选择最佳连接词填空：
+
+          鲸鱼用声音在广阔的海洋距离上进行交流。_____ 海豚使用复杂的咔嗒声和哨声系统来识别彼此。
+        options:
+          A: 'As a result'
+          B: 'However'
+          C: 'Similarly'
+          D: 'Nevertheless'
+        answer: 'C'
+        explanation: 'Both sentences describe marine animals using sound to communicate. "Similarly" connects two parallel examples.'
+        explanationZh: '两个句子都描述了海洋动物使用声音交流。"Similarly"连接两个平行的例子。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Reference Tracking
+  # ─────────────────────────────────────────────
+  - id: Q06-L02
+    title: 'Reference Tracking — Follow the Clues'
+    titleZh: '指代追踪 — 跟随线索'
+
+    introduction: |
+      Dr. Fern takes you to the observation deck overlooking the forest canopy.
+
+      "A good scientific text is like a trail through the forest," she says. "Each sentence
+      connects to the one before it. But instead of repeating the same words, writers use
+      REFERENCE WORDS — words like 'this', 'these', 'such', and 'it' — to point back to
+      something already mentioned."
+
+      She points at a family of monkeys swinging through the trees. "See those monkeys?
+      I could keep saying 'the monkeys' in every sentence. But it sounds much better to say:
+      'The monkeys live in the canopy. THESE CREATURES rarely come down to the ground.
+      SUCH BEHAVIOUR helps them avoid predators.'"
+
+      "In the FCE gapped text exercise, reference words are your BEST CLUE for matching
+      paragraphs. If a removed paragraph starts with 'This discovery...' you need to find
+      which gap comes right after a paragraph that describes a discovery."
+    introductionZh: |
+      Fern 博士带你来到俯瞰森林树冠的观察台。
+
+      "一篇好的科学文本就像穿过森林的小径，"她说。"每个句子都与前一个句子相连。
+      但作者不会重复相同的词，而是使用指代词——如'this'、'these'、'such'和'it'——
+      来指代已经提到的内容。"
+
+      她指着一群在树间荡来荡去的猴子。"看到那些猴子了吗？我可以在每句话中都说
+      '猴子们'。但这样说好多了：'猴子们生活在树冠层。这些生物很少下到地面。
+      这种行为帮助它们避开捕食者。'"
+
+      "在 FCE 填空练习中，指代词是你匹配段落的最佳线索。如果一个被移除的段落
+      以'This discovery...'（这个发现……）开头，你需要找到紧跟在描述一个发现的
+      段落后面的空缺。"
+
+    rules:
+      - pattern: 'This/These + noun'
+        meaning: 'Points back to a specific thing or group just mentioned in the previous sentence or paragraph'
+        meaningZh: '指代前一句或前一段刚刚提到的特定事物或群体'
+        examples:
+          - base: 'Scientists discovered that octopuses can change their skin colour in milliseconds.'
+            transformed: 'This ability helps them hide from predators and communicate with other octopuses.'
+            sentence: '"This ability" refers back to "changing skin colour in milliseconds."'
+            sentenceZh: '"This ability"（这种能力）指代"在毫秒内改变皮肤颜色"。'
+          - base: 'Coral reefs are home to over 4,000 species of fish.'
+            transformed: 'These underwater ecosystems are often called the rainforests of the sea.'
+            sentence: '"These underwater ecosystems" refers to "coral reefs."'
+            sentenceZh: '"These underwater ecosystems"（这些水下生态系统）指代"珊瑚礁"。'
+
+      - pattern: 'Such + noun'
+        meaning: 'Refers to a TYPE of thing mentioned before — often used to generalize'
+        meaningZh: '指代之前提到的某种类型的事物——常用于概括'
+        examples:
+          - base: 'Elephants mourn their dead, dolphins call each other by name, and crows make tools.'
+            transformed: 'Such behaviour was once thought to be unique to humans.'
+            sentence: '"Such behaviour" refers to the whole list of complex animal behaviours.'
+            sentenceZh: '"Such behaviour"（这类行为）指代整个复杂动物行为的列表。'
+
+      - pattern: 'The former / The latter'
+        meaning: '"The former" refers to the FIRST of two things mentioned; "the latter" refers to the SECOND'
+        meaningZh: '"The former"指代提到的两件事中的第一件；"the latter"指代第二件'
+        examples:
+          - base: 'Both pandas and polar bears face threats from habitat loss.'
+            transformed: 'The former lives in Chinese bamboo forests, while the latter depends on Arctic sea ice.'
+            sentence: '"The former" = pandas; "the latter" = polar bears.'
+            sentenceZh: '"The former" = 熊猫；"the latter" = 北极熊。'
+
+    tips:
+      - 'When you see "this + noun" at the start of a paragraph option, look for a gap AFTER a paragraph that introduces that concept.'
+      - '"These" is PLURAL — check that the previous paragraph mentions multiple items.'
+      - '"Such" generalizes — it works after a paragraph that gives specific EXAMPLES.'
+      - '"It" is dangerous — make sure you know which noun "it" replaces. If unclear, it is probably the wrong gap.'
+      - 'Draw arrows from reference words back to what they refer to. This helps visualize text flow.'
+    tipsZh:
+      - '当你看到段落选项以"this + 名词"开头时，找在介绍该概念的段落后面的空缺。'
+      - '"These"是复数——检查前一段是否提到了多个事物。'
+      - '"Such"表示概括——它适用于给出具体例子的段落之后。'
+      - '"It"很危险——确保你知道"it"替代的是哪个名词。如果不清楚，可能是错误的空缺。'
+      - '从指代词画箭头到它们所指的内容。这有助于直观地看到文本流向。'
+
+    practicePreview:
+      - id: Q06-L02-P01
+        question: |
+          What does "This discovery" refer to in the following text?
+
+          In 2016, scientists found a new species of frog that is completely transparent — you can see its heart beating through its skin. This discovery excited biologists around the world.
+        questionZh: |
+          在以下文本中，"This discovery"指的是什么？
+
+          2016年，科学家发现了一种全新的透明蛙类——你可以透过它的皮肤看到心脏跳动。这一发现令全世界的生物学家兴奋不已。
+        options:
+          A: 'The fact that frogs have skin'
+          B: 'Finding a transparent frog species'
+          C: 'That biologists study frogs'
+          D: 'The year 2016'
+        answer: 'B'
+        explanation: '"This discovery" refers to the main new finding — a transparent frog species.'
+        explanationZh: '"This discovery"指代主要的新发现——一种透明蛙类物种。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Information Flow Patterns
+  # ─────────────────────────────────────────────
+  - id: Q06-L03
+    title: 'Information Flow — Reading the Map of Ideas'
+    titleZh: '信息流 — 阅读思维导图'
+
+    introduction: |
+      Dr. Fern unfolds a large map of the research station on the table.
+
+      "Every scientific text follows a MAP — a pattern of how ideas are organized.
+      If you can recognize the pattern, you can predict what comes next. This is incredibly
+      powerful for FCE Part 6, where you need to figure out where removed paragraphs belong."
+
+      She draws four trails on the map:
+
+      "Trail 1: GENERAL TO SPECIFIC. The text starts with a big idea, then zooms in to details.
+      Like saying 'Many animals migrate' → 'Arctic terns fly from pole to pole' → 'They travel
+      over 70,000 km per year.'"
+
+      "Trail 2: CHRONOLOGICAL. Events are told in time order. Look for words like 'first',
+      'then', 'after that', 'finally'. Science articles about discoveries often use this pattern."
+
+      "Trail 3: CAUSE AND EFFECT. Something happens, then the text explains what it caused.
+      'Temperatures rose' → 'Ice melted' → 'Sea levels increased.'"
+
+      "Trail 4: COMPARE AND CONTRAST. Two things are described side by side.
+      'Reptiles are cold-blooded. In contrast, mammals maintain a constant body temperature.'"
+    introductionZh: |
+      Fern 博士在桌上展开了一张研究站的大地图。
+
+      "每篇科学文本都遵循一张地图——一种组织想法的模式。如果你能识别这种模式，
+      就能预测接下来的内容。这对 FCE Part 6 非常有用，你需要在那里找出被移除的
+      段落属于哪个位置。"
+
+      她在地图上画了四条路线：
+
+      "路线1：由总到分。文本从一个大概念开始，然后聚焦到细节。比如说'许多动物迁徙'
+      → '北极燕鸥从一个极地飞到另一个极地' → '它们每年飞行超过70,000公里'。"
+
+      "路线2：按时间顺序。事件按时间顺序叙述。注意'first'、'then'、'after that'、
+      'finally'等词。关于发现的科学文章经常使用这种模式。"
+
+      "路线3：因果关系。某件事发生了，然后文本解释它导致了什么。'温度上升' →
+      '冰融化' → '海平面升高'。"
+
+      "路线4：对比比较。两件事并排描述。'爬行动物是冷血的。相比之下，哺乳动物
+      维持恒定的体温。'"
+
+    rules:
+      - pattern: 'General → Specific'
+        meaning: 'Starts with a broad claim, then narrows down with examples and details'
+        meaningZh: '从一个宽泛的主张开始，然后用例子和细节缩小范围'
+        examples:
+          - base: 'The ocean is home to an incredible variety of life.'
+            transformed: 'For example, a single coral reef can support over 1,500 species of fish, 400 types of coral, and countless invertebrates.'
+            sentence: 'The general statement about "incredible variety" is followed by specific numbers.'
+            sentenceZh: '关于"难以置信的多样性"的概括性陈述之后是具体的数字。'
+
+      - pattern: 'Chronological (Time Order)'
+        meaning: 'Events are presented in the order they happened, using time markers'
+        meaningZh: '事件按照发生的顺序呈现，使用时间标记词'
+        examples:
+          - base: 'Initially, scientists believed dinosaurs were cold-blooded reptiles.'
+            transformed: 'Subsequently, fossil evidence suggested that many species were actually warm-blooded. Eventually, this view became widely accepted.'
+            sentence: 'The time words "Initially → Subsequently → Eventually" create a clear timeline.'
+            sentenceZh: '时间词"Initially → Subsequently → Eventually"创建了清晰的时间线。'
+
+      - pattern: 'Cause → Effect'
+        meaning: 'A cause is described first, then its consequences follow'
+        meaningZh: '先描述原因，然后跟随其结果'
+        examples:
+          - base: 'Farmers cleared large areas of Amazon rainforest to grow crops.'
+            transformed: 'As a result, many animal species lost their habitats. Consequently, some became endangered.'
+            sentence: 'The chain: cause (clearing) → effect 1 (habitat loss) → effect 2 (endangered species).'
+            sentenceZh: '因果链：原因（砍伐）→ 结果1（栖息地丧失）→ 结果2（濒危物种）。'
+
+      - pattern: 'Compare and Contrast'
+        meaning: 'Two subjects are examined side by side, showing similarities and/or differences'
+        meaningZh: '两个主题并排审视，展示相似点和/或不同点'
+        examples:
+          - base: 'African elephants have large, fan-shaped ears that help them cool down in the hot savanna.'
+            transformed: 'In contrast, Asian elephants have smaller, rounded ears because they live in cooler forest environments.'
+            sentence: '"In contrast" signals a shift from one subject to a different but related subject.'
+            sentenceZh: '"In contrast"标志着从一个主题转向另一个不同但相关的主题。'
+
+    tips:
+      - 'Before reading the paragraph options in FCE Part 6, identify the OVERALL pattern of the passage.'
+      - 'If the passage is chronological, look for time markers in both the passage and the removed paragraphs.'
+      - 'General-to-specific passages often have topic sentences (general) followed by supporting sentences (specific).'
+      - 'In cause-effect passages, removed paragraphs might be either the cause or the effect — check which is missing at each gap.'
+    tipsZh:
+      - '在 FCE Part 6 中阅读段落选项之前，先识别文章的整体模式。'
+      - '如果文章是按时间顺序的，在文章和被移除的段落中都找时间标记词。'
+      - '由总到分的文章通常有主题句（概括）后跟支撑句（具体）。'
+      - '在因果关系文章中，被移除的段落可能是原因或结果——检查每个空缺处缺少的是哪个。'
+
+    practicePreview:
+      - id: Q06-L03-P01
+        question: |
+          What information flow pattern does this passage follow?
+
+          The dodo was first seen by Dutch sailors in 1598. Over the next century, hunters and invasive species reduced their numbers. By 1681, the last dodo had disappeared forever.
+        questionZh: |
+          这段文字遵循什么信息流模式？
+
+          渡渡鸟于1598年被荷兰水手首次发现。在接下来的一个世纪里，猎人和入侵物种减少了它们的数量。到1681年，最后一只渡渡鸟永远消失了。
+        options:
+          A: 'Compare and contrast'
+          B: 'General to specific'
+          C: 'Chronological'
+          D: 'Cause and effect'
+        answer: 'C'
+        explanation: 'The passage moves through time: 1598 → "over the next century" → 1681. This is chronological order.'
+        explanationZh: '文章按时间推进：1598年 → "在接下来的世纪" → 1681年。这是时间顺序。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Gapped Text Strategy (FCE Part 6)
+  # ─────────────────────────────────────────────
+  - id: Q06-L04
+    title: 'Gapped Text Strategy — The Puzzle Master'
+    titleZh: '填空策略 — 拼图大师'
+
+    introduction: |
+      Dr. Fern shows you a wall covered in photographs of different ecosystems — but some
+      photos are missing, leaving gaps on the wall.
+
+      "This is exactly like FCE Reading Part 6!" she says. "You have a text with paragraphs
+      removed, and you need to figure out WHERE each paragraph belongs. Let me teach you
+      my four-step strategy."
+
+      "Step 1: READ THE WHOLE TEXT FIRST. Do not look at the options yet. Read the text
+      with the gaps and understand the overall topic and flow."
+
+      "Step 2: STUDY THE GAPS. For each gap, read the paragraph BEFORE it and the paragraph
+      AFTER it carefully. Ask: What topic does the paragraph before discuss? What topic does
+      the paragraph after discuss? The missing paragraph must BRIDGE these two."
+
+      "Step 3: CHECK THE OPTIONS. Now look at the removed paragraphs. For each one, check:
+      Does it start with a reference word (This, These, Such)? Does it start with a connector
+      (However, Furthermore)? Does it match the topic of a specific gap?"
+
+      "Step 4: VERIFY YOUR ANSWERS. After placing all paragraphs, read the complete text
+      from start to finish. It should flow smoothly with no sudden topic jumps."
+    introductionZh: |
+      Fern 博士给你看一面贴满不同生态系统照片的墙——但有些照片不见了，墙上留下了空缺。
+
+      "这和 FCE 阅读 Part 6 完全一样！"她说。"你有一篇被移除了段落的文章，
+      你需要弄清楚每个段落属于哪里。让我教你我的四步策略。"
+
+      "第一步：先通读全文。不要先看选项。带着空缺阅读文本，理解整体主题和脉络。"
+
+      "第二步：研究空缺。对于每个空缺，仔细阅读它前面和后面的段落。
+      问自己：前面的段落讨论什么主题？后面的段落讨论什么主题？
+      缺失的段落必须衔接这两段。"
+
+      "第三步：检查选项。现在看被移除的段落。对于每一个，检查：
+      它是否以指代词开头（This, These, Such）？是否以连接词开头
+      （However, Furthermore）？是否与某个特定空缺的主题匹配？"
+
+      "第四步：验证答案。放好所有段落后，从头到尾通读完整文本。
+      文本应该流畅自然，没有突然的主题跳跃。"
+
+    rules:
+      - pattern: 'Step 1: Read for Overall Flow'
+        meaning: 'Understand the main topic and how the text progresses before looking at options'
+        meaningZh: '在看选项之前，先理解主题和文本的推进方式'
+        examples:
+          - base: 'A passage about coral reef decline'
+            transformed: 'After first reading, you know: Introduction → What reefs are → Threats → [gap] → Solutions → [gap] → Conclusion'
+            sentence: 'Mapping the text structure helps you predict what each gap needs.'
+            sentenceZh: '勾画文本结构帮助你预测每个空缺需要什么内容。'
+
+      - pattern: 'Step 2: Bridge the Gap'
+        meaning: 'The missing paragraph must connect logically to both the paragraph before AND after the gap'
+        meaningZh: '缺失的段落必须在逻辑上与空缺前后的段落都衔接'
+        examples:
+          - base: 'Before gap: "Pollution from factories flows into rivers." After gap: "Scientists are now developing new filtration systems."'
+            transformed: 'The missing paragraph should describe the EFFECT of pollution (bridging cause → solution).'
+            sentence: 'The gap needs something about the consequences of pollution, which then motivates the scientific response.'
+            sentenceZh: '空缺处需要描述污染的后果，从而引出科学应对措施。'
+
+      - pattern: 'Step 3: Match Clues'
+        meaning: 'Use connectors, reference words, and topic vocabulary to match options to gaps'
+        meaningZh: '使用连接词、指代词和主题词汇来将选项与空缺匹配'
+        examples:
+          - base: 'Option starts with: "These findings surprised the research team."'
+            transformed: 'This option must follow a paragraph that presents research findings or data.'
+            sentence: '"These findings" is a reference clue — look for a gap after a paragraph describing findings.'
+            sentenceZh: '"These findings"是指代线索——在描述研究发现的段落后面寻找空缺。'
+
+    tips:
+      - 'There is always ONE EXTRA option that does not fit anywhere. Do not force it into a gap.'
+      - 'If two options seem to fit the same gap, focus on the paragraph AFTER the gap — usually one option matches better.'
+      - 'Proper nouns (names of scientists, places) are strong clues. If a paragraph mentions "Dr. Chen" and the gap is after a paragraph about Dr. Chen, it probably fits.'
+      - 'Do the easiest gaps first, then use elimination for the harder ones.'
+    tipsZh:
+      - '总有一个多余的选项不属于任何空缺。不要强行塞进去。'
+      - '如果两个选项似乎都适合同一个空缺，关注空缺后面的段落——通常有一个选项更匹配。'
+      - '专有名词（科学家、地点的名字）是很强的线索。如果段落提到了"陈博士"，而空缺在一个关于陈博士的段落之后，它很可能就属于那里。'
+      - '先做最简单的空缺，然后用排除法处理较难的。'
+
+    practicePreview:
+      - id: Q06-L04-P01
+        question: |
+          Read the text below. One paragraph has been removed. Choose the correct paragraph (A, B, or C) to fill the gap.
+
+          Honeybees are vital to agriculture because they pollinate crops as they collect nectar. Without bee pollination, many fruits and vegetables would not grow.
+
+          [GAP]
+
+          For this reason, governments around the world are now investing in programmes to protect bee populations and ban harmful pesticides.
+        questionZh: |
+          阅读下面的文本。一个段落被移除了。选择正确的段落（A、B或C）填入空缺。
+
+          蜜蜂对农业至关重要，因为它们在采蜜的同时为农作物授粉。没有蜜蜂授粉，许多水果和蔬菜就无法生长。
+
+          [空缺]
+
+          因此，世界各国政府现在都在投资保护蜜蜂种群和禁止有害杀虫剂的项目。
+        options:
+          A: 'However, in recent years, bee populations have been declining sharply due to pesticides, habitat loss, and disease.'
+          B: 'Bees live in colonies of up to 60,000 individuals, each with a specific role.'
+          C: 'Honey has been used as a natural sweetener for thousands of years.'
+        answer: 'A'
+        explanation: 'The paragraph after the gap says "For this reason" — it needs a CAUSE. Option A describes the cause (declining bee populations) that leads to the government response.'
+        explanationZh: '空缺后的段落说"因此"——它需要一个原因。选项A描述了导致政府采取行动的原因（蜜蜂数量下降）。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Scientific Vocabulary in Context
+  # ─────────────────────────────────────────────
+  - id: Q06-L05
+    title: 'Scientific Vocabulary — Word Detective'
+    titleZh: '科学词汇 — 词语侦探'
+
+    introduction: |
+      Dr. Fern leads you into the research station library, which is filled with books
+      about every branch of science.
+
+      "You do not need to memorize a dictionary to understand scientific texts," she says.
+      "Most scientific words give you CLUES about their meaning — if you know where to look."
+
+      She opens a book to a random page. "Look at the word 'photosynthesis.' You might not
+      know it, but let us break it down: 'photo' means LIGHT (like 'photograph'), and
+      'synthesis' means PUTTING TOGETHER. So photosynthesis is 'putting together with light' —
+      which is exactly what plants do: they use light to put together sugar from water and carbon
+      dioxide!"
+
+      "There are four strategies for figuring out scientific words without a dictionary:
+      1. WORD PARTS: Break the word into prefix, root, and suffix.
+      2. CONTEXT CLUES: The surrounding sentences often explain the word.
+      3. EXAMPLES: If the text gives examples, they show what the word means.
+      4. CONTRAST: If the text says 'unlike X, Y is...', you can figure out X from Y."
+    introductionZh: |
+      Fern 博士带你走进研究站图书馆，那里摆满了关于各个科学分支的书籍。
+
+      "你不需要背字典来理解科学文本，"她说。"大多数科学词汇都给你关于其含义的线索——
+      如果你知道去哪里找的话。"
+
+      她随意翻开一本书的一页。"看看'photosynthesis'这个词。你可能不认识它，
+      但让我们分解一下：'photo'意思是光（像'photograph'照片），
+      'synthesis'意思是合成、组合。所以 photosynthesis 就是'用光来组合'——
+      这正是植物所做的：它们利用光从水和二氧化碳中合成糖分！"
+
+      "有四个策略可以在不查字典的情况下弄清科学词汇：
+      1. 词素拆分：把单词拆成前缀、词根和后缀。
+      2. 上下文线索：周围的句子通常会解释这个词。
+      3. 举例：如果文本给出了例子，它们会展示这个词的意思。
+      4. 对比：如果文本说'不像X，Y是……'，你可以从Y推断出X。"
+
+    rules:
+      - pattern: 'Word Parts Strategy'
+        meaning: 'Break scientific words into Greek/Latin roots, prefixes, and suffixes to guess meaning'
+        meaningZh: '把科学词汇拆分成希腊/拉丁词根、前缀和后缀来猜测含义'
+        examples:
+          - base: 'biodiversity'
+            transformed: 'bio (life) + diversity (variety) = variety of life'
+            sentence: '"Bio-" appears in biology, biography, biome — all related to life.'
+            sentenceZh: '"Bio-"出现在 biology（生物学）、biography（传记）、biome（生物群落）中——都与生命有关。'
+          - base: 'ecosystem'
+            transformed: 'eco (home/environment) + system = a system of living things in their environment'
+            sentence: '"Eco-" comes from Greek "oikos" (home). An ecosystem is the "home system" of organisms.'
+            sentenceZh: '"Eco-"来自希腊语"oikos"（家）。生态系统是生物体的"家庭系统"。'
+          - base: 'deforestation'
+            transformed: 'de (remove) + forest + ation (process) = the process of removing forests'
+            sentence: '"De-" means remove or reverse: deforestation, decompose, decline.'
+            sentenceZh: '"De-"意思是去除或逆转：deforestation（去森林化）、decompose（分解）、decline（下降）。'
+
+      - pattern: 'Context Clues Strategy'
+        meaning: 'Use the words around an unknown word to figure out its meaning'
+        meaningZh: '利用未知词周围的词来推断它的意思'
+        examples:
+          - base: 'Coral reefs are among the most biodiverse ecosystems on Earth. They are home to thousands of species of fish, invertebrates, and algae.'
+            transformed: 'From context, "biodiverse" means having many different species of living things.'
+            sentence: 'The second sentence EXPLAINS what biodiverse means by listing examples.'
+            sentenceZh: '第二句通过列举例子解释了 biodiverse 的意思。'
+
+    tips:
+      - 'Common science prefixes: bio- (life), eco- (environment), geo- (earth), hydro- (water), thermo- (heat), micro- (small), macro- (large)'
+      - 'Common science suffixes: -ology (study of), -tion (process), -ment (result), -ous (full of), -ive (tending to)'
+      - 'In FCE reading, you do NOT need to know every word. Focus on understanding the MAIN IDEA of each paragraph.'
+      - 'If you see a difficult word followed by a dash or comma and then simpler words, those simpler words explain it.'
+    tipsZh:
+      - '常见科学前缀：bio-（生命）、eco-（环境）、geo-（地球）、hydro-（水）、thermo-（热）、micro-（小）、macro-（大）'
+      - '常见科学后缀：-ology（研究）、-tion（过程）、-ment（结果）、-ous（充满）、-ive（倾向于）'
+      - '在 FCE 阅读中，你不需要认识每一个词。重点理解每个段落的主旨。'
+      - '如果你看到一个难词后面跟着破折号或逗号，然后是更简单的词，那些简单的词就在解释它。'
+
+    practicePreview:
+      - id: Q06-L05-P01
+        question: |
+          Read the sentence and guess the meaning of "endangered":
+
+          The giant panda is an endangered species — there are fewer than 2,000 left in the wild, and their numbers are still falling.
+        questionZh: |
+          阅读句子并猜测"endangered"的含义：
+
+          大熊猫是一种濒危物种——野外仅剩不到2,000只，数量仍在下降。
+        options:
+          A: 'Very large and strong'
+          B: 'At risk of disappearing completely'
+          C: 'Living in groups'
+          D: 'Found only in one country'
+        answer: 'B'
+        explanation: 'The context clue is "fewer than 2,000 left" and "numbers still falling" — this shows the species is at risk of dying out.'
+        explanationZh: '上下文线索是"仅剩不到2,000只"和"数量仍在下降"——这表明该物种有灭绝的风险。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Summarizing and Note-Taking
+  # ─────────────────────────────────────────────
+  - id: Q06-L06
+    title: 'Summarizing and Note-Taking from Long Texts'
+    titleZh: '从长文本中摘要和做笔记'
+
+    introduction: |
+      Dr. Fern sits you down at a research desk with a thick stack of science journals.
+
+      "In real science — and in the FCE exam — you often need to read long texts quickly
+      and remember the KEY information. The secret is good NOTE-TAKING."
+
+      She shows you her own research notebook. "I use a system called the THREE-COLUMN METHOD:
+      Column 1: PARAGRAPH NUMBER. Column 2: MAIN IDEA (one sentence).
+      Column 3: KEY DETAILS (names, numbers, dates)."
+
+      "For example, if I read a passage about whale migration:
+      Para 1: Main idea = whales migrate thousands of km. Details = up to 20,000 km/year.
+      Para 2: Main idea = they follow warm currents. Details = Gulf Stream, Pacific warm belt.
+      Para 3: Main idea = mothers and babies migrate together. Details = calves born in warm water."
+
+      "When you summarize, you turn a LONG text into a SHORT version using YOUR OWN words.
+      The rule is: keep the MAIN IDEAS, drop the DETAILS. A good summary is about 25% of
+      the original length."
+    introductionZh: |
+      Fern 博士让你在研究桌前坐下，桌上有一大叠科学期刊。
+
+      "在真正的科学研究中——以及 FCE 考试中——你经常需要快速阅读长文本并记住
+      关键信息。秘诀就是好的笔记方法。"
+
+      她展示了自己的研究笔记本。"我使用一种叫做三栏法的系统：
+      第1栏：段落编号。第2栏：主旨（一句话）。第3栏：关键细节（名字、数字、日期）。"
+
+      "比如，如果我读一篇关于鲸鱼迁徙的文章：
+      第1段：主旨 = 鲸鱼迁徙数千公里。细节 = 每年最多20,000公里。
+      第2段：主旨 = 它们跟随暖流。细节 = 墨西哥湾流、太平洋暖带。
+      第3段：主旨 = 母鲸和幼鲸一起迁徙。细节 = 幼鲸在温暖水域出生。"
+
+      "当你写摘要时，你用自己的话把长文本变成短版本。规则是：保留主旨，去掉细节。
+      一个好的摘要大约是原文长度的25%。"
+
+    rules:
+      - pattern: 'Three-Column Notes'
+        meaning: 'Organize notes into paragraph number, main idea, and key details'
+        meaningZh: '将笔记组织成段落编号、主旨和关键细节'
+        examples:
+          - base: 'Read a passage about octopus intelligence'
+            transformed: 'P1: Octopuses have large brains | 500 million neurons. P2: They can solve mazes | learned in 2 tries. P3: They use tools | coconut shell shelter.'
+            sentence: 'Each paragraph gets ONE main idea and the most important number or name.'
+            sentenceZh: '每个段落得到一个主旨和最重要的数字或名称。'
+
+      - pattern: 'Summary Writing'
+        meaning: 'Combine main ideas into a short paragraph using your own words'
+        meaningZh: '用自己的话把主旨合并成一个短段落'
+        examples:
+          - base: 'Original (3 paragraphs about octopus intelligence, ~200 words)'
+            transformed: 'Summary: Octopuses are surprisingly intelligent creatures. With 500 million neurons, they can solve puzzles quickly and even use objects like coconut shells as tools. (~25 words)'
+            sentence: 'The summary keeps the THREE main ideas but drops all supporting details.'
+            sentenceZh: '摘要保留了三个主旨但去掉了所有支撑细节。'
+
+    tips:
+      - 'When taking notes, use ABBREVIATIONS: w/ (with), b/c (because), → (leads to), ↑ (increase), ↓ (decrease)'
+      - 'Underline or highlight the FIRST SENTENCE of each paragraph — it often contains the main idea.'
+      - 'Numbers, dates, and proper nouns are almost always important. Write them in Column 3.'
+      - 'For summaries, start with "This text is about..." to force yourself to state the main topic.'
+      - 'Never copy sentences word-for-word. Rephrase using simpler vocabulary.'
+    tipsZh:
+      - '做笔记时使用缩写：w/（和/带有）、b/c（因为）、→（导致）、↑（增加）、↓（减少）'
+      - '划线或高亮每个段落的第一句——它通常包含主旨。'
+      - '数字、日期和专有名词几乎总是重要的。写在第3栏。'
+      - '写摘要时，以"这篇文章是关于……"开头，迫使自己说明主题。'
+      - '永远不要逐字抄写句子。用更简单的词汇重新表述。'
+
+    practicePreview:
+      - id: Q06-L06-P01
+        question: |
+          Read the paragraph and choose the best one-sentence summary:
+
+          Coral bleaching occurs when ocean temperatures rise above normal levels. The heat causes corals to expel the colourful algae living inside them. Without these algae, corals turn white and slowly starve because the algae provide up to 90% of their food through photosynthesis. If temperatures return to normal quickly, corals can recover. However, if the heat continues for several weeks, the corals die.
+        questionZh: |
+          阅读段落并选择最佳的一句话摘要：
+
+          当海洋温度高于正常水平时，珊瑚白化就会发生。高温导致珊瑚排出体内生活的彩色藻类。没有这些藻类，珊瑚变白并慢慢饿死，因为藻类通过光合作用提供了它们高达90%的食物。如果温度迅速恢复正常，珊瑚可以恢复。然而，如果高温持续数周，珊瑚就会死亡。
+        options:
+          A: 'Coral bleaching happens when algae change colour due to cold temperatures.'
+          B: 'Rising ocean temperatures cause corals to lose their algae and potentially die if the heat lasts too long.'
+          C: 'Algae provide 90% of coral food through photosynthesis.'
+          D: 'Corals are white sea creatures that live in warm water.'
+        answer: 'B'
+        explanation: 'B captures the CAUSE (rising temperatures), the EFFECT (losing algae), and the CONSEQUENCE (potential death). C is only a detail, not the main idea.'
+        explanationZh: 'B 抓住了原因（温度上升）、影响（失去藻类）和后果（可能死亡）。C只是一个细节，不是主旨。'

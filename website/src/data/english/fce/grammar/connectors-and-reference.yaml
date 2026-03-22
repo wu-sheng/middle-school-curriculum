@@ -1,0 +1,1652 @@
+category: 'Connectors & Reference Words'
+categoryZh: '连接词与指代词'
+questions:
+  # ============================================================
+  # G0501–G0520: Addition/Contrast connectors
+  # However, Furthermore, Moreover, Nevertheless, On the other hand
+  # Nature/Science theme
+  # ============================================================
+  - id: G0501
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'Dolphins are highly intelligent. _____, they can learn new tricks and solve complex puzzles.'
+    questionZh: '海豚非常聪明。_____ 它们能学习新技巧并解决复杂的谜题。'
+    options:
+      A: 'However'
+      B: 'Furthermore'
+      C: 'Nevertheless'
+      D: 'On the other hand'
+    answer: 'B'
+    explanation: 'The second sentence ADDS more evidence of dolphin intelligence. "Furthermore" introduces additional supporting information.'
+    explanationZh: '第二句补充了更多海豚聪明的证据。"Furthermore"引入额外的支持信息。'
+    grammarPoint: 'Addition connector: Furthermore'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0502
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'Many people think spiders are dangerous. _____, most spider species are completely harmless to humans.'
+    questionZh: '许多人认为蜘蛛很危险。_____ 大多数蜘蛛物种对人类完全无害。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'However'
+      D: 'In addition'
+    answer: 'C'
+    explanation: 'The second sentence CONTRASTS with the first (dangerous vs. harmless). "However" signals an unexpected contrast.'
+    explanationZh: '第二句与第一句形成对比（危险 vs. 无害）。"However"表示意外的对比。'
+    grammarPoint: 'Contrast connector: However'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0503
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'Rainforests produce a huge amount of oxygen. _____, they absorb large quantities of carbon dioxide.'
+    questionZh: '雨林产生大量氧气。_____ 它们还吸收大量二氧化碳。'
+    answer: 'Moreover'
+    acceptableAnswers: ['Moreover', 'Furthermore', 'In addition']
+    explanation: 'Both sentences describe POSITIVE things about rainforests. "Moreover" or "Furthermore" add extra supporting points.'
+    explanationZh: '两个句子都描述了雨林的好处。"Moreover"或"Furthermore"补充额外的支持性观点。'
+    grammarPoint: 'Addition connector: Moreover'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0504
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'Pandas eat almost nothing but bamboo. _____, bamboo has very little nutrition, so pandas must eat up to 38 kilograms every day.'
+    questionZh: '熊猫几乎只吃竹子。_____ 竹子的营养价值很低，所以熊猫每天必须吃多达38公斤。'
+    options:
+      A: 'Furthermore'
+      B: 'However'
+      C: 'On the other hand'
+      D: 'Nevertheless'
+    answer: 'B'
+    explanation: 'There is a surprising contrast: pandas depend on bamboo, BUT bamboo has little nutrition. "However" signals this unexpected problem.'
+    explanationZh: '存在令人惊讶的对比：熊猫依赖竹子，但竹子营养很少。"However"表示这个意外的问题。'
+    grammarPoint: 'Contrast connector: However'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0505
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'The experiment failed three times. _____, the scientists did not give up and tried again.'
+    questionZh: '实验失败了三次。_____ 科学家们没有放弃，又试了一次。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'Nevertheless'
+      D: 'In addition'
+    answer: 'C'
+    explanation: '"Nevertheless" means "despite that" — the scientists continued despite the failures. It shows persistence against difficulty.'
+    explanationZh: '"Nevertheless"意思是"尽管如此"——科学家们不顾失败继续研究。它表示面对困难的坚持。'
+    grammarPoint: 'Contrast connector: Nevertheless'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0506
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-1]
+    context: nature
+    question: 'Some people want to build a new road through the forest. _____, environmentalists argue that this would destroy rare animal habitats.'
+    questionZh: '有人想在森林中修建一条新公路。_____ 环保人士认为这会破坏稀有动物的栖息地。'
+    answer: 'On the other hand'
+    acceptableAnswers: ['On the other hand', 'However']
+    explanation: '"On the other hand" introduces an opposing viewpoint. It signals a shift from one perspective to another.'
+    explanationZh: '"On the other hand"引入一个相反的观点。它标志着从一个角度转向另一个角度。'
+    grammarPoint: 'Contrast connector: On the other hand'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0507
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Electric cars produce no exhaust fumes. _____, they are much quieter than petrol cars, which reduces noise pollution.'
+    questionZh: '电动汽车不产生尾气。_____ 它们比汽油车安静得多，减少了噪音污染。'
+    options:
+      A: 'However'
+      B: 'Nevertheless'
+      C: 'What is more'
+      D: 'On the other hand'
+    answer: 'C'
+    explanation: '"What is more" adds another advantage of electric cars. Both sentences describe positive features, so we need an addition connector.'
+    explanationZh: '"What is more"补充了电动汽车的另一个优点。两个句子都描述了正面特征，所以需要补充连接词。'
+    grammarPoint: 'Addition connector: What is more'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0508
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Whales can hold their breath for up to 90 minutes. _____, they must eventually return to the surface to breathe air.'
+    questionZh: '鲸鱼可以屏住呼吸长达90分钟。_____ 它们最终必须回到水面呼吸空气。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'Nevertheless'
+      D: 'In addition'
+    answer: 'C'
+    explanation: 'Despite the impressive breath-holding, they still MUST breathe. "Nevertheless" shows the limitation despite the ability.'
+    explanationZh: '尽管屏息能力令人印象深刻，它们仍然必须呼吸。"Nevertheless"表示尽管有能力但仍有限制。'
+    grammarPoint: 'Contrast connector: Nevertheless'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0509
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Coral reefs protect coastlines from storms. _____, they provide food and income for millions of people worldwide.'
+    questionZh: '珊瑚礁保护海岸线免受风暴侵袭。_____ 它们为全世界数百万人提供食物和收入。'
+    answer: 'In addition'
+    acceptableAnswers: ['In addition', 'Furthermore', 'Moreover']
+    explanation: 'The second sentence adds another benefit of coral reefs. Any addition connector works here.'
+    explanationZh: '第二句补充了珊瑚礁的另一个好处。任何补充连接词都适用。'
+    grammarPoint: 'Addition connector: In addition'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0510
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Solar energy is clean and renewable. _____, solar panels are becoming cheaper every year, making them accessible to more families.'
+    questionZh: '太阳能是清洁和可再生的。_____ 太阳能板每年都在变便宜，让更多家庭能负担得起。'
+    options:
+      A: 'However'
+      B: 'On the other hand'
+      C: 'Furthermore'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: 'Both sentences are positive points about solar energy. "Furthermore" adds another supporting argument.'
+    explanationZh: '两个句子都是关于太阳能的正面观点。"Furthermore"补充了另一个支持论点。'
+    grammarPoint: 'Addition connector: Furthermore'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0511
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Plastic bags are cheap to produce. _____, they take up to 500 years to decompose and cause terrible damage to ocean life.'
+    questionZh: '塑料袋生产成本低。_____ 它们需要长达500年才能分解，并对海洋生物造成可怕的损害。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'However'
+      D: 'In addition'
+    answer: 'C'
+    explanation: 'Cheap to produce is positive, but slow decomposition is very negative. "However" marks this strong contrast.'
+    explanationZh: '生产成本低是正面的，但分解缓慢是非常负面的。"However"标记了这种强烈的对比。'
+    grammarPoint: 'Contrast connector: However'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0512
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Cheetahs are the fastest land animals, reaching speeds of 112 km/h. _____, they can only maintain this speed for about 30 seconds before they overheat.'
+    questionZh: '猎豹是最快的陆地动物，速度可达112公里/小时。_____ 它们只能维持这个速度约30秒就会过热。'
+    answer: 'However'
+    acceptableAnswers: ['However', 'Nevertheless']
+    explanation: 'The speed is impressive, but the limitation is unexpected. "However" or "Nevertheless" signal this contrast.'
+    explanationZh: '速度令人印象深刻，但限制是意外的。"However"或"Nevertheless"表示这种对比。'
+    grammarPoint: 'Contrast connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0513
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Tigers are solitary animals that hunt alone. Wolves, _____, hunt together in packs and share their food.'
+    questionZh: '老虎是独居动物，独自捕猎。另一方面，狼 _____ 成群结队一起捕猎并分享食物。'
+    options:
+      A: 'furthermore'
+      B: 'on the other hand'
+      C: 'moreover'
+      D: 'in addition'
+    answer: 'B'
+    explanation: 'The text compares two different hunting strategies: solitary (tigers) vs. pack (wolves). "On the other hand" shows this comparison.'
+    explanationZh: '文本比较了两种不同的狩猎策略：独居（老虎）vs. 群体（狼）。"On the other hand"表示这种比较。'
+    grammarPoint: 'Contrast connector: On the other hand'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0514
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Octopuses have no bones at all. _____, they can squeeze through tiny gaps no bigger than a coin.'
+    questionZh: '章鱼完全没有骨骼。_____ 它们可以挤过不比硬币大的小缝隙。'
+    options:
+      A: 'However'
+      B: 'As a result'
+      C: 'Nevertheless'
+      D: 'On the other hand'
+    answer: 'B'
+    explanation: 'Having no bones is the CAUSE; squeezing through gaps is the RESULT. "As a result" shows cause and effect, not contrast.'
+    explanationZh: '没有骨骼是原因；能挤过缝隙是结果。"As a result"表示因果关系，不是对比。'
+    grammarPoint: 'Result connector: As a result'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0515
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Bees are essential for pollinating crops. _____, they produce honey, which humans have used as food and medicine for thousands of years.'
+    questionZh: '蜜蜂对于给农作物授粉至关重要。_____ 它们还生产蜂蜜，人类数千年来一直将其用作食物和药物。'
+    answer: 'Moreover'
+    acceptableAnswers: ['Moreover', 'Furthermore', 'In addition', 'What is more']
+    explanation: 'Both sentences describe benefits of bees. Any addition connector works here.'
+    explanationZh: '两个句子都描述了蜜蜂的好处。任何补充连接词都适用。'
+    grammarPoint: 'Addition connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0516
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-2]
+    context: nature
+    question: 'Wind energy is completely renewable. _____, wind turbines can be noisy and some people think they spoil the view.'
+    questionZh: '风能是完全可再生的。_____ 风力涡轮机可能很吵，有些人认为它们破坏了景观。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'However'
+      D: 'What is more'
+    answer: 'C'
+    explanation: 'The first sentence is positive about wind energy, but the second presents disadvantages. "However" connects this contrast.'
+    explanationZh: '第一句对风能持正面态度，但第二句提出了缺点。"However"连接这种对比。'
+    grammarPoint: 'Contrast connector: However'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0517
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-3]
+    context: nature
+    question: 'The Great Barrier Reef has suffered severe bleaching events in recent years. _____, scientists remain hopeful that parts of the reef can recover if ocean temperatures stabilise.'
+    questionZh: '大堡礁近年来遭受了严重的白化事件。_____ 科学家们仍然希望如果海洋温度稳定，珊瑚礁的部分区域可以恢复。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'Nevertheless'
+      D: 'In addition'
+    answer: 'C'
+    explanation: 'Despite the bad news (bleaching), there is hope. "Nevertheless" means "despite this" and introduces a more positive counterpoint.'
+    explanationZh: '尽管有坏消息（白化），但仍有希望。"Nevertheless"意为"尽管如此"，引入了一个更积极的反面观点。'
+    grammarPoint: 'Contrast connector: Nevertheless'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0518
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-3]
+    context: nature
+    question: 'Elephants have an amazing memory. _____, research has shown they can remember the locations of water sources even after twenty years.'
+    questionZh: '大象有惊人的记忆力。_____ 研究表明它们即使过了二十年也能记住水源的位置。'
+    answer: 'In fact'
+    acceptableAnswers: ['In fact', 'Indeed', 'Furthermore']
+    explanation: '"In fact" strengthens and supports the first claim with specific evidence. "Furthermore" would also add information.'
+    explanationZh: '"In fact"用具体证据加强和支持第一个主张。"Furthermore"也可以补充信息。'
+    grammarPoint: 'Reinforcement connector: In fact'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0519
+    type: multiple-choice
+    tags: [addition-contrast, Q06, difficulty-3]
+    context: nature
+    question: 'Crocodiles are sometimes called "living fossils" because they have barely changed in 200 million years. _____, their brains have actually evolved significantly over time.'
+    questionZh: '鳄鱼有时被称为"活化石"因为它们在2亿年中几乎没有变化。_____ 它们的大脑实际上随时间发生了显著进化。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'However'
+      D: 'In addition'
+    answer: 'C'
+    explanation: '"Barely changed" vs "actually evolved significantly" is a clear contrast. "However" signals this unexpected difference.'
+    explanationZh: '"几乎没有变化"vs"实际上显著进化"是明显的对比。"However"表示这个意外的差异。'
+    grammarPoint: 'Contrast connector: However'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0520
+    type: fill-blank
+    tags: [addition-contrast, Q06, difficulty-3]
+    context: nature
+    question: 'Recycling plastic is important. _____, reducing the amount of plastic we use in the first place is even more effective.'
+    questionZh: '回收塑料很重要。_____ 首先减少我们使用的塑料量更为有效。'
+    answer: 'However'
+    acceptableAnswers: ['However', 'Nevertheless']
+    explanation: 'Recycling is good, BUT reducing is better. "However" introduces the stronger point that contrasts with (and outweighs) recycling.'
+    explanationZh: '回收很好，但减少使用更好。"However"引入了一个更强的观点，与回收形成对比（并优于它）。'
+    grammarPoint: 'Contrast connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # ============================================================
+  # G0521–G0540: Cause/Result connectors
+  # As a result, Consequently, Therefore, Due to, Owing to
+  # ============================================================
+  - id: G0521
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-1]
+    context: nature
+    question: 'The river was heavily polluted with chemicals. _____, all the fish in that section died within a week.'
+    questionZh: '这条河被化学物质严重污染了。_____ 该河段的所有鱼在一周内死亡。'
+    options:
+      A: 'Furthermore'
+      B: 'As a result'
+      C: 'However'
+      D: 'Nevertheless'
+    answer: 'B'
+    explanation: 'The pollution CAUSED the fish to die. "As a result" shows that the second event happened BECAUSE of the first.'
+    explanationZh: '污染导致了鱼的死亡。"As a result"表明第二个事件是因为第一个事件而发生的。'
+    grammarPoint: 'Result connector: As a result'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0522
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-1]
+    context: nature
+    question: 'Arctic ice is melting at a record rate. _____, polar bears are struggling to find enough food.'
+    questionZh: '北极冰以创纪录的速度融化。_____ 北极熊正在挣扎着寻找足够的食物。'
+    options:
+      A: 'Moreover'
+      B: 'However'
+      C: 'Consequently'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: 'Melting ice CAUSES food shortage for bears. "Consequently" shows a cause-result connection.'
+    explanationZh: '冰的融化导致了熊的食物短缺。"Consequently"表示因果关系。'
+    grammarPoint: 'Result connector: Consequently'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0523
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-1]
+    context: nature
+    question: 'The forest fire destroyed thousands of hectares of woodland. _____, many animals lost their homes.'
+    questionZh: '森林火灾烧毁了数千公顷的林地。_____ 许多动物失去了家园。'
+    answer: 'As a result'
+    acceptableAnswers: ['As a result', 'Consequently', 'Therefore']
+    explanation: 'The fire is the CAUSE; animals losing homes is the EFFECT. Any result connector works here.'
+    explanationZh: '火灾是原因；动物失去家园是结果。任何结果连接词都适用。'
+    grammarPoint: 'Result connector'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0524
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-1]
+    context: nature
+    question: '_____ the heavy rain, the school trip to the nature reserve was cancelled.'
+    questionZh: '_____ 大雨，去自然保护区的学校旅行被取消了。'
+    options:
+      A: 'As a result'
+      B: 'Furthermore'
+      C: 'Due to'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: '"Due to" + noun/gerund states the CAUSE at the beginning of the sentence. It means "because of."'
+    explanationZh: '"Due to" + 名词/动名词在句子开头说明原因。意思是"由于"。'
+    grammarPoint: 'Cause connector: Due to'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0525
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'Trees absorb carbon dioxide from the atmosphere. _____, planting more trees is one of the best ways to fight climate change.'
+    questionZh: '树木从大气中吸收二氧化碳。_____ 种更多的树是对抗气候变化的最佳方式之一。'
+    options:
+      A: 'However'
+      B: 'Nevertheless'
+      C: 'Therefore'
+      D: 'On the other hand'
+    answer: 'C'
+    explanation: 'The fact that trees absorb CO2 leads to the CONCLUSION that planting trees fights climate change. "Therefore" shows this logical reasoning.'
+    explanationZh: '树木吸收二氧化碳的事实导致种植树木可以对抗气候变化的结论。"Therefore"表示这种逻辑推理。'
+    grammarPoint: 'Result connector: Therefore'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0526
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: '_____ the drought, farmers in the region lost nearly 80% of their crops last summer.'
+    questionZh: '_____ 干旱，该地区的农民去年夏天损失了近80%的庄稼。'
+    answer: 'Owing to'
+    acceptableAnswers: ['Owing to', 'Due to', 'Because of']
+    explanation: '"Owing to" + noun works like "Due to" — it introduces the cause. "Owing to the drought" = "Because of the drought."'
+    explanationZh: '"Owing to" + 名词的用法类似于"Due to"——引入原因。"Owing to the drought" = "Because of the drought"。'
+    grammarPoint: 'Cause connector: Owing to'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0527
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'The new wildlife reserve banned all hunting and fishing. _____, bird populations in the area doubled within just three years.'
+    questionZh: '新的野生动物保护区禁止了所有狩猎和捕鱼。_____ 该地区的鸟类数量在短短三年内翻了一倍。'
+    options:
+      A: 'However'
+      B: 'As a result'
+      C: 'Nevertheless'
+      D: 'On the other hand'
+    answer: 'B'
+    explanation: 'The ban on hunting CAUSED bird populations to increase. "As a result" connects this cause and effect.'
+    explanationZh: '禁止狩猎导致鸟类数量增加。"As a result"连接这个因果关系。'
+    grammarPoint: 'Result connector: As a result'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0528
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'Coral bleaching occurs when ocean temperatures rise too high. _____, the colourful algae inside the coral are expelled, turning the reef white.'
+    questionZh: '当海洋温度过高时，珊瑚白化就会发生。_____ 珊瑚体内的彩色藻类被排出，使珊瑚礁变白。'
+    options:
+      A: 'Furthermore'
+      B: 'Consequently'
+      C: 'Nevertheless'
+      D: 'On the other hand'
+    answer: 'B'
+    explanation: 'High temperatures CAUSE algae expulsion. "Consequently" shows the result of the temperature rise.'
+    explanationZh: '高温导致藻类被排出。"Consequently"展示了温度上升的结果。'
+    grammarPoint: 'Result connector: Consequently'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0529
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'Bees are dying in large numbers. _____, scientists are warning that our food supply could be seriously affected.'
+    questionZh: '蜜蜂正在大量死亡。_____ 科学家们警告说我们的食物供应可能会受到严重影响。'
+    answer: 'For this reason'
+    acceptableAnswers: ['For this reason', 'As a result', 'Consequently', 'Therefore']
+    explanation: 'Bee deaths could CAUSE food supply problems. "For this reason" explains WHY scientists are worried.'
+    explanationZh: '蜜蜂死亡可能导致食物供应问题。"For this reason"解释了为什么科学家们担忧。'
+    grammarPoint: 'Result connector: For this reason'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0530
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: '_____ their excellent camouflage, leaf-tailed geckos are almost impossible to spot in the wild.'
+    questionZh: '_____ 出色的伪装能力，叶尾壁虎在野外几乎不可能被发现。'
+    options:
+      A: 'As a result'
+      B: 'Consequently'
+      C: 'Due to'
+      D: 'Therefore'
+    answer: 'C'
+    explanation: '"Due to" + noun phrase states the reason. "Due to their excellent camouflage" = "Because of their excellent camouflage."'
+    explanationZh: '"Due to" + 名词短语说明原因。"Due to their excellent camouflage" = "因为它们出色的伪装"。'
+    grammarPoint: 'Cause connector: Due to'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0531
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'The volcanic eruption released a huge cloud of ash into the atmosphere. _____, flights were cancelled across the entire continent.'
+    questionZh: '火山喷发释放了大量灰烬到大气中。_____ 整个大洲的航班都被取消了。'
+    options:
+      A: 'Furthermore'
+      B: 'However'
+      C: 'As a result'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: 'Ash in the atmosphere CAUSED flight cancellations. "As a result" connects cause and effect.'
+    explanationZh: '大气中的灰烬导致了航班取消。"As a result"连接因果关系。'
+    grammarPoint: 'Result connector: As a result'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0532
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-2]
+    context: nature
+    question: 'Amphibians absorb water through their skin. _____, they are extremely sensitive to water pollution.'
+    questionZh: '两栖动物通过皮肤吸收水分。_____ 它们对水污染极其敏感。'
+    answer: 'Therefore'
+    acceptableAnswers: ['Therefore', 'Consequently', 'As a result', 'For this reason']
+    explanation: 'Because amphibians absorb through skin (cause), pollution affects them easily (result). "Therefore" shows this logical conclusion.'
+    explanationZh: '因为两栖动物通过皮肤吸收（原因），污染很容易影响它们（结果）。"Therefore"表示这个逻辑结论。'
+    grammarPoint: 'Result connector: Therefore'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0533
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: '_____ a lack of rainfall in the region, the lake has shrunk to half its normal size.'
+    questionZh: '_____ 该地区缺乏降雨，湖泊已缩小到正常大小的一半。'
+    options:
+      A: 'Consequently'
+      B: 'Owing to'
+      C: 'Therefore'
+      D: 'As a result'
+    answer: 'B'
+    explanation: '"Owing to" + noun introduces the cause at the START. It is followed by a noun phrase ("a lack of rainfall"), not a clause.'
+    explanationZh: '"Owing to" + 名词在句首引入原因。后面跟名词短语（"a lack of rainfall"），不是从句。'
+    grammarPoint: 'Cause connector: Owing to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0534
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'Microplastics have been found in the stomachs of deep-sea fish living 7 km below the surface. _____, no part of the ocean is free from human pollution.'
+    questionZh: '在生活在水下7公里的深海鱼的胃中发现了微塑料。_____ 海洋的任何部分都无法免受人类污染。'
+    answer: 'Consequently'
+    acceptableAnswers: ['Consequently', 'As a result', 'Therefore']
+    explanation: 'Finding microplastics even at extreme depths LEADS TO the conclusion that all oceans are polluted.'
+    explanationZh: '即使在极端深度也发现微塑料，由此得出所有海洋都被污染的结论。'
+    grammarPoint: 'Result connector: Consequently'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0535
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'The introduction of wolves to Yellowstone changed the behaviour of deer. _____ the presence of predators, deer stopped overgrazing near rivers.'
+    questionZh: '向黄石公园引入狼改变了鹿的行为。_____ 捕食者的存在，鹿不再在河流附近过度吃草。'
+    options:
+      A: 'As a result'
+      B: 'Due to'
+      C: 'Therefore'
+      D: 'Consequently'
+    answer: 'B'
+    explanation: '"Due to the presence of predators" explains WHY deer stopped overgrazing. It introduces the cause as a noun phrase.'
+    explanationZh: '"Due to the presence of predators"解释了为什么鹿停止过度放牧。它以名词短语引入原因。'
+    grammarPoint: 'Cause connector: Due to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0536
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'Global temperatures have risen by 1.1 degrees since 1900. _____, sea levels have increased by approximately 20 centimetres.'
+    questionZh: '自1900年以来，全球温度上升了1.1度。_____ 海平面上升了大约20厘米。'
+    answer: 'As a result'
+    acceptableAnswers: ['As a result', 'Consequently', 'Therefore']
+    explanation: 'Rising temperatures CAUSE rising sea levels. Any result connector works to show this chain.'
+    explanationZh: '温度上升导致海平面上升。任何结果连接词都可以表示这个因果链。'
+    grammarPoint: 'Result connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0537
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'Deforestation releases stored carbon into the atmosphere. _____, protecting existing forests is just as important as planting new ones.'
+    questionZh: '砍伐森林会将储存的碳释放到大气中。_____ 保护现有森林与种植新树同样重要。'
+    options:
+      A: 'However'
+      B: 'For this reason'
+      C: 'Nevertheless'
+      D: 'Furthermore'
+    answer: 'B'
+    explanation: 'Because deforestation releases carbon (cause), we must protect forests (logical conclusion). "For this reason" connects cause to recommendation.'
+    explanationZh: '因为森林砍伐释放碳（原因），所以我们必须保护森林（逻辑结论）。"For this reason"将原因与建议连接。'
+    grammarPoint: 'Result connector: For this reason'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0538
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: '_____ the warming oceans, many fish species are migrating to cooler waters further north.'
+    questionZh: '_____ 海洋变暖，许多鱼类物种正在向更北方的凉爽水域迁移。'
+    answer: 'Due to'
+    acceptableAnswers: ['Due to', 'Owing to', 'Because of']
+    explanation: '"Due to the warming oceans" introduces the CAUSE at the beginning. It is followed by a noun phrase.'
+    explanationZh: '"Due to the warming oceans"在开头引入原因。后面跟名词短语。'
+    grammarPoint: 'Cause connector: Due to'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0539
+    type: multiple-choice
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'Honeybees pollinate approximately 75% of fruit crops. _____, the decline in bee populations poses a serious threat to global food production.'
+    questionZh: '蜜蜂为大约75%的果树授粉。_____ 蜜蜂数量的下降对全球食物生产构成了严重威胁。'
+    options:
+      A: 'Furthermore'
+      B: 'However'
+      C: 'Consequently'
+      D: 'On the other hand'
+    answer: 'C'
+    explanation: 'Bees pollinate most crops (fact) → bee decline threatens food (consequence). "Consequently" shows this causal chain.'
+    explanationZh: '蜜蜂为大部分作物授粉（事实）→ 蜜蜂减少威胁食物（后果）。"Consequently"表示这个因果链。'
+    grammarPoint: 'Result connector: Consequently'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0540
+    type: fill-blank
+    tags: [cause-result, Q06, difficulty-3]
+    context: nature
+    question: 'Light pollution from cities confuses baby sea turtles. _____, conservation groups now organize beach cleanups and turn off streetlights during hatching season.'
+    questionZh: '城市的光污染使小海龟感到困惑。_____ 保护团体现在组织海滩清理活动，并在孵化季节关闭路灯。'
+    answer: 'For this reason'
+    acceptableAnswers: ['For this reason', 'As a result', 'Consequently', 'Therefore']
+    explanation: 'Light pollution harms turtles (cause) → conservation action is taken (result). Any result connector works.'
+    explanationZh: '光污染伤害海龟（原因）→ 采取保护行动（结果）。任何结果连接词都适用。'
+    grammarPoint: 'Result connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # ============================================================
+  # G0541–G0560: Reference words
+  # this, these, such, the former/latter, the above, it
+  # ============================================================
+  - id: G0541
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-1]
+    context: nature
+    question: 'Scientists discovered a new species of frog in the Amazon. _____ species has bright blue skin and is only 2 cm long.'
+    questionZh: '科学家在亚马逊发现了一种新的蛙类。_____ 物种有明亮的蓝色皮肤，只有2厘米长。'
+    options:
+      A: 'This'
+      B: 'These'
+      C: 'Such'
+      D: 'Those'
+    answer: 'A'
+    explanation: '"This species" refers back to the single "new species of frog" mentioned in the first sentence. "This" is singular.'
+    explanationZh: '"This species"指代第一句提到的单一"新蛙类物种"。"This"是单数。'
+    grammarPoint: 'Reference word: This + noun'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0542
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-1]
+    context: nature
+    question: 'Elephants mourn their dead, dolphins call each other by name, and crows use tools. _____ behaviours were once thought to be unique to humans.'
+    questionZh: '大象哀悼死者，海豚互相叫名字，乌鸦使用工具。_____ 行为曾被认为是人类独有的。'
+    options:
+      A: 'This'
+      B: 'It'
+      C: 'Such'
+      D: 'The'
+    answer: 'C'
+    explanation: '"Such behaviours" refers to the WHOLE LIST of complex animal actions. "Such" generalizes multiple examples.'
+    explanationZh: '"Such behaviours"指代整个复杂动物行为的列表。"Such"概括多个例子。'
+    grammarPoint: 'Reference word: Such'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0543
+    type: fill-blank
+    tags: [reference, Q06, difficulty-1]
+    context: nature
+    question: 'Whales and dolphins are both marine mammals. _____ creatures breathe air and nurse their young with milk.'
+    questionZh: '鲸鱼和海豚都是海洋哺乳动物。_____ 生物呼吸空气，用乳汁哺育幼崽。'
+    answer: 'These'
+    explanation: '"These creatures" refers back to "whales and dolphins" (plural). "These" is plural, matching the two animals mentioned.'
+    explanationZh: '"These creatures"指代"鲸鱼和海豚"（复数）。"These"是复数，与提到的两种动物匹配。'
+    grammarPoint: 'Reference word: These'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0544
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'Both wind energy and solar energy are growing rapidly. _____ requires large open spaces for wind farms, while _____ can be installed on rooftops.'
+    questionZh: '风能和太阳能都在快速增长。_____ 需要大面积空地建设风电场，而 _____ 可以安装在屋顶上。'
+    options:
+      A: 'This / that'
+      B: 'The former / the latter'
+      C: 'These / those'
+      D: 'Such / it'
+    answer: 'B'
+    explanation: '"The former" = wind energy (mentioned first); "the latter" = solar energy (mentioned second). This pair refers to TWO things in order.'
+    explanationZh: '"The former" = 风能（先提到的）；"the latter" = 太阳能（后提到的）。这对词按顺序指代两件事。'
+    grammarPoint: 'Reference words: The former / the latter'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0545
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'Researchers found that planting native trees attracted more birds than planting non-native species. _____ discovery led to changes in the city''s tree-planting policy.'
+    questionZh: '研究人员发现种植本地树木比种植外来物种吸引更多鸟类。_____ 发现导致了城市植树政策的改变。'
+    options:
+      A: 'Such'
+      B: 'These'
+      C: 'This'
+      D: 'It'
+    answer: 'C'
+    explanation: '"This discovery" refers to the single finding described in the first sentence. "This" + noun is used for one specific thing.'
+    explanationZh: '"This discovery"指代第一句描述的单一发现。"This" + 名词用于一个具体的事物。'
+    grammarPoint: 'Reference word: This + noun'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0546
+    type: fill-blank
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'Some birds fly thousands of kilometres to reach their winter homes. _____ journeys are among the most remarkable feats in the animal kingdom.'
+    questionZh: '有些鸟类飞行数千公里到达它们的越冬地。_____ 旅程是动物王国中最了不起的壮举之一。'
+    answer: 'Such'
+    acceptableAnswers: ['Such', 'These']
+    explanation: '"Such journeys" generalizes the long-distance flights described. "These journeys" would also work, referring back to the specific flights.'
+    explanationZh: '"Such journeys"概括了所描述的长途飞行。"These journeys"也可以，指代具体的飞行。'
+    grammarPoint: 'Reference word: Such'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0547
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'The ocean absorbs about 30% of carbon dioxide produced by humans. Without _____, global warming would be far worse.'
+    questionZh: '海洋吸收了人类产生的约30%的二氧化碳。没有 _____ ，全球变暖会严重得多。'
+    options:
+      A: 'these'
+      B: 'it'
+      C: 'this'
+      D: 'such'
+    answer: 'C'
+    explanation: '"Without this" refers to the entire process of ocean absorption. "This" replaces the whole concept described in the previous sentence.'
+    explanationZh: '"Without this"指代海洋吸收的整个过程。"This"替代了前一句描述的整个概念。'
+    grammarPoint: 'Reference word: this (referring to a whole concept)'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0548
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'Octopuses can change colour, squeeze through tiny gaps, and solve complex puzzles. _____ abilities make them one of the most intelligent creatures in the ocean.'
+    questionZh: '章鱼能变色、挤过小缝隙和解决复杂谜题。_____ 能力使它们成为海洋中最聪明的生物之一。'
+    options:
+      A: 'This'
+      B: 'It'
+      C: 'Such'
+      D: 'These'
+    answer: 'D'
+    explanation: '"These abilities" refers to the list of three abilities (change colour, squeeze, solve puzzles). "These" is plural for multiple items.'
+    explanationZh: '"These abilities"指代三种能力的列表。"These"是复数，用于多个项目。'
+    grammarPoint: 'Reference word: These'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0549
+    type: fill-blank
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'The team studied both African elephants and Asian elephants. _____ have larger ears for cooling, while _____ have smaller, rounded ears.'
+    questionZh: '团队研究了非洲象和亚洲象。_____ 有较大的耳朵用于散热，而 _____ 有较小的圆形耳朵。'
+    answer: 'The former / the latter'
+    explanation: '"The former" = African elephants (first mentioned); "the latter" = Asian elephants (second mentioned).'
+    explanationZh: '"The former" = 非洲象（先提到的）；"the latter" = 亚洲象（后提到的）。'
+    grammarPoint: 'Reference words: The former / the latter'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0550
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'Coral reefs support 25% of all marine life despite covering less than 1% of the ocean floor. _____ makes them one of the most important ecosystems on Earth.'
+    questionZh: '珊瑚礁支持着25%的海洋生物，尽管只覆盖了不到1%的海底。_____ 使它们成为地球上最重要的生态系统之一。'
+    options:
+      A: 'These'
+      B: 'Such'
+      C: 'This'
+      D: 'It'
+    answer: 'C'
+    explanation: '"This" refers to the entire fact stated in the first sentence (supporting 25% of marine life while covering <1%). It replaces the whole idea.'
+    explanationZh: '"This"指代第一句陈述的整个事实。它替代了整个概念。'
+    grammarPoint: 'Reference word: This (whole concept)'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0551
+    type: fill-blank
+    tags: [reference, Q06, difficulty-2]
+    context: nature
+    question: 'The Arctic fox changes colour with the seasons — white in winter and brown in summer. _____ adaptation helps it stay hidden from both predators and prey.'
+    questionZh: '北极狐随季节变色——冬天白色，夏天棕色。_____ 适应帮助它对捕食者和猎物都保持隐蔽。'
+    answer: 'This'
+    acceptableAnswers: ['This', 'Such an']
+    explanation: '"This adaptation" refers to the colour-changing ability just described. "This" + noun points back to a specific item.'
+    explanationZh: '"This adaptation"指代刚才描述的变色能力。"This" + 名词指回一个具体事物。'
+    grammarPoint: 'Reference word: This + noun'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0552
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Mangrove forests filter pollutants, prevent coastal erosion, and serve as nurseries for young fish. _____ functions make mangroves some of the most valuable ecosystems in the world.'
+    questionZh: '红树林过滤污染物、防止海岸侵蚀，并作为幼鱼的孵化场。_____ 功能使红树林成为世界上最有价值的生态系统之一。'
+    options:
+      A: 'This'
+      B: 'It'
+      C: 'Such'
+      D: 'These'
+    answer: 'D'
+    explanation: '"These functions" refers to the three functions listed (filter, prevent, serve). "These" matches the plural reference.'
+    explanationZh: '"These functions"指代列举的三个功能。"These"与复数引用匹配。'
+    grammarPoint: 'Reference word: These'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0553
+    type: fill-blank
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Birds sing to attract mates and defend territories. Scientists once believed these were the only reasons for birdsong. Recent research, however, suggests that birds may also sing simply because they enjoy _____.'
+    questionZh: '鸟类唱歌来吸引配偶和保卫领地。科学家曾认为这些是鸟鸣的唯一原因。然而，最近的研究表明，鸟类也可能仅仅因为享受 _____ 而唱歌。'
+    answer: 'it'
+    explanation: '"It" refers back to the activity of singing. In this context, "enjoy it" = "enjoy singing."'
+    explanationZh: '"It"指代唱歌这个活动。在这个语境中，"enjoy it" = "enjoy singing"。'
+    grammarPoint: 'Reference word: it'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0554
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Overfishing, plastic pollution, and rising temperatures are all threatening ocean health. If _____ problems are not addressed soon, marine ecosystems could collapse.'
+    questionZh: '过度捕捞、塑料污染和温度上升都在威胁海洋健康。如果 _____ 问题不尽快解决，海洋生态系统可能会崩溃。'
+    options:
+      A: 'this'
+      B: 'such'
+      C: 'these'
+      D: 'it'
+    answer: 'C'
+    explanation: '"These problems" refers back to the three specific problems listed. "These" is plural and specific.'
+    explanationZh: '"These problems"指代列举的三个具体问题。"These"是复数且具体的。'
+    grammarPoint: 'Reference word: these'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0555
+    type: fill-blank
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Cuttlefish can produce rapid colour changes across their entire body, create moving patterns, and even mimic the texture of nearby objects. No other animal possesses _____ an extraordinary range of visual abilities.'
+    questionZh: '乌贼可以在整个身体上产生快速的颜色变化、创造移动图案，甚至模仿附近物体的纹理。没有其他动物拥有 _____ 非凡的视觉能力范围。'
+    answer: 'such'
+    explanation: '"Such" before "an extraordinary range" generalizes the abilities listed. "Such" + noun = "this type/level of."'
+    explanationZh: '"Such"在"an extraordinary range"前概括了列举的能力。"Such" + 名词 = "这种类型/水平的"。'
+    grammarPoint: 'Reference word: such'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0556
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Both renewable and non-renewable energy sources have advantages. _____ includes solar, wind, and hydro power. _____ includes coal, oil, and natural gas.'
+    questionZh: '可再生能源和不可再生能源都有优势。_____ 包括太阳能、风能和水力发电。_____ 包括煤、石油和天然气。'
+    options:
+      A: 'This / That'
+      B: 'These / Those'
+      C: 'The former / The latter'
+      D: 'Such / It'
+    answer: 'C'
+    explanation: '"The former" = renewable energy (first); "the latter" = non-renewable energy (second). This pair handles two-item references neatly.'
+    explanationZh: '"The former" = 可再生能源（第一个）；"the latter" = 不可再生能源（第二个）。'
+    grammarPoint: 'Reference words: the former / the latter'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0557
+    type: fill-blank
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'A team of marine biologists spent five years studying octopus behaviour. _____ research revealed that octopuses are capable of planning ahead and using tools.'
+    questionZh: '一组海洋生物学家花了五年时间研究章鱼行为。_____ 研究揭示了章鱼能够提前计划和使用工具。'
+    answer: 'Their'
+    acceptableAnswers: ['Their', 'This']
+    explanation: '"Their research" or "This research" both work — "their" refers to the biologists, "this" refers to the study just described.'
+    explanationZh: '"Their research"或"This research"都可以——"their"指代生物学家，"this"指代刚描述的研究。'
+    grammarPoint: 'Reference word: Their / This'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0558
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'The Amazon rainforest produces about 20% of the world''s oxygen. For _____ reason, it is often called "the lungs of the Earth."'
+    questionZh: '亚马逊雨林产生了世界约20%的氧气。由于 _____ 原因，它经常被称为"地球之肺"。'
+    options:
+      A: 'such'
+      B: 'these'
+      C: 'this'
+      D: 'those'
+    answer: 'C'
+    explanation: '"For this reason" refers to the single fact just stated (producing 20% of oxygen). "This" refers back to one specific concept.'
+    explanationZh: '"For this reason"指代刚才陈述的单一事实（产生20%的氧气）。"This"指回一个具体概念。'
+    grammarPoint: 'Reference word: this (in fixed phrase)'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0559
+    type: fill-blank
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'The deep ocean is completely dark, freezing cold, and has crushing pressure. Despite _____ extreme conditions, thousands of species thrive there.'
+    questionZh: '深海完全黑暗、极度寒冷，并有巨大的压力。尽管 _____ 极端条件，数千个物种在那里繁荣生长。'
+    answer: 'these'
+    acceptableAnswers: ['these', 'such']
+    explanation: '"These extreme conditions" refers to the three conditions listed (dark, cold, pressure). "Such" would also generalize them.'
+    explanationZh: '"These extreme conditions"指代列举的三种条件。"Such"也可以概括它们。'
+    grammarPoint: 'Reference word: these / such'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0560
+    type: multiple-choice
+    tags: [reference, Q06, difficulty-3]
+    context: nature
+    question: 'Scientists tagged twenty sea turtles and tracked their movements over two years. The data from _____ study showed that turtles follow the same migration routes as their parents.'
+    questionZh: '科学家标记了二十只海龟并在两年内追踪了它们的活动。_____ 研究的数据表明海龟遵循与它们父母相同的迁徙路线。'
+    options:
+      A: 'such'
+      B: 'these'
+      C: 'it'
+      D: 'this'
+    answer: 'D'
+    explanation: '"This study" refers to the specific study described in the first sentence. "This" + noun points to one particular thing.'
+    explanationZh: '"This study"指代第一句描述的具体研究。"This" + 名词指向一个特定的事物。'
+    grammarPoint: 'Reference word: this + noun'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # ============================================================
+  # G0561–G0580: Sequence/Time connectors
+  # Initially, Subsequently, Meanwhile, Eventually, In the meantime
+  # ============================================================
+  - id: G0561
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-1]
+    context: nature
+    question: '_____, scientists believed that the Earth was the centre of the universe.'
+    questionZh: '_____ 科学家们相信地球是宇宙的中心。'
+    options:
+      A: 'Eventually'
+      B: 'Subsequently'
+      C: 'Initially'
+      D: 'Meanwhile'
+    answer: 'C'
+    explanation: '"Initially" means "at the beginning" or "at first." It introduces the starting point of a timeline.'
+    explanationZh: '"Initially"意思是"最初"或"起初"。它引入时间线的起点。'
+    grammarPoint: 'Sequence connector: Initially'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0562
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-1]
+    context: nature
+    question: 'The baby bird fell from the nest. _____, its mother flew down and carried it back to safety.'
+    questionZh: '小鸟从巢里掉了下来。_____ 它的妈妈飞下来把它带回安全的地方。'
+    options:
+      A: 'Initially'
+      B: 'Meanwhile'
+      C: 'Immediately'
+      D: 'Eventually'
+    answer: 'C'
+    explanation: '"Immediately" means "right away, without any delay." The mother acted instantly.'
+    explanationZh: '"Immediately"意思是"立即，毫不迟延"。母鸟立刻采取了行动。'
+    grammarPoint: 'Time connector: Immediately'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0563
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-1]
+    context: nature
+    question: 'First, the caterpillar builds a cocoon. _____, it transforms into a butterfly.'
+    questionZh: '首先，毛毛虫结茧。_____ 它变成了蝴蝶。'
+    answer: 'Eventually'
+    acceptableAnswers: ['Eventually', 'Then', 'Finally']
+    explanation: '"Eventually" means "after a period of time." The transformation happens over time, not instantly.'
+    explanationZh: '"Eventually"意思是"经过一段时间后"。变态是在一段时间内发生的，不是瞬间的。'
+    grammarPoint: 'Sequence connector: Eventually'
+    relatedQuest: Q06
+    difficulty: 1
+
+  - id: G0564
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: 'The volcano began rumbling in January. _____, scientists set up monitoring equipment around the mountain.'
+    questionZh: '火山在一月份开始隆隆作响。_____ 科学家们在山周围安装了监测设备。'
+    options:
+      A: 'Initially'
+      B: 'Subsequently'
+      C: 'Meanwhile'
+      D: 'Eventually'
+    answer: 'B'
+    explanation: '"Subsequently" means "after that" or "following this." Scientists responded AFTER the volcano started rumbling.'
+    explanationZh: '"Subsequently"意思是"之后"或"随后"。科学家们在火山开始隆隆作响之后做出了回应。'
+    grammarPoint: 'Sequence connector: Subsequently'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0565
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: 'The researchers were studying whale songs in the Pacific Ocean. _____, a different team in the Atlantic was making a similar discovery.'
+    questionZh: '研究人员正在太平洋研究鲸歌。_____ 大西洋的另一个团队正在做出类似的发现。'
+    options:
+      A: 'Subsequently'
+      B: 'Initially'
+      C: 'Meanwhile'
+      D: 'Eventually'
+    answer: 'C'
+    explanation: '"Meanwhile" means "at the same time." Two events are happening simultaneously in different places.'
+    explanationZh: '"Meanwhile"意思是"与此同时"。两件事在不同地方同时发生。'
+    grammarPoint: 'Time connector: Meanwhile'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0566
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: '_____, the dinosaurs dominated the Earth. _____, a massive asteroid hit the planet and caused their extinction.'
+    questionZh: '_____ 恐龙统治着地球。_____ 一颗巨大的小行星撞击地球，导致了它们的灭绝。'
+    answer: 'Initially / Eventually'
+    acceptableAnswers: ['Initially / Eventually', 'At first / Eventually']
+    explanation: '"Initially" sets up the starting situation; "Eventually" signals the change that came after a long time.'
+    explanationZh: '"Initially"建立初始情况；"Eventually"表示经过很长时间后发生的变化。'
+    grammarPoint: 'Sequence connectors: Initially / Eventually'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0567
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: 'The conservation programme started in 2005. _____, the panda population has grown from 1,600 to over 1,800.'
+    questionZh: '保护计划始于2005年。_____ 熊猫种群已从1,600只增长到超过1,800只。'
+    options:
+      A: 'Initially'
+      B: 'Meanwhile'
+      C: 'Since then'
+      D: 'At first'
+    answer: 'C'
+    explanation: '"Since then" connects a past starting point (2005) to the present result. It shows change over time from a specific moment.'
+    explanationZh: '"Since then"将过去的起点（2005年）与当前结果联系起来。它展示了从特定时刻开始的随时间变化。'
+    grammarPoint: 'Time connector: Since then'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0568
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: 'The scientist planted the seeds in March. _____, she watered them every day. The first tiny shoots appeared in April.'
+    questionZh: '科学家在三月份种下了种子。_____ 她每天浇水。四月份第一批小嫩芽出现了。'
+    answer: 'In the meantime'
+    acceptableAnswers: ['In the meantime', 'Meanwhile', 'During that time']
+    explanation: '"In the meantime" describes what happened DURING the waiting period between planting and sprouting.'
+    explanationZh: '"In the meantime"描述在播种和发芽之间的等待期间发生了什么。'
+    grammarPoint: 'Time connector: In the meantime'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0569
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: '_____, people thought the dodo was just a myth. _____, fossil evidence proved that this bird really existed on the island of Mauritius.'
+    questionZh: '_____ 人们认为渡渡鸟只是一个传说。_____ 化石证据证明这种鸟确实存在于毛里求斯岛上。'
+    options:
+      A: 'Eventually / Initially'
+      B: 'Initially / Subsequently'
+      C: 'Meanwhile / Finally'
+      D: 'Subsequently / Initially'
+    answer: 'B'
+    explanation: '"Initially" = at first (people thought it was myth); "Subsequently" = later (evidence proved it was real).'
+    explanationZh: '"Initially" = 起初（人们以为是传说）；"Subsequently" = 后来（证据证明是真实的）。'
+    grammarPoint: 'Sequence connectors: Initially / Subsequently'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0570
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-2]
+    context: nature
+    question: 'The wildfire burned for three weeks before rain finally came. _____, firefighters had managed to save two villages and a wildlife sanctuary.'
+    questionZh: '野火烧了三周才终于下雨。_____ 消防员已经成功保住了两个村庄和一个野生动物保护区。'
+    answer: 'In the meantime'
+    acceptableAnswers: ['In the meantime', 'Meanwhile', 'During that time']
+    explanation: '"In the meantime" describes what happened DURING the three-week period before rain came.'
+    explanationZh: '"In the meantime"描述了下雨前三周期间发生了什么。'
+    grammarPoint: 'Time connector: In the meantime'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0571
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: '_____, the scientist tried to grow coral in a laboratory tank. The experiment failed several times. _____, after two years of adjustments, she succeeded in growing healthy coral.'
+    questionZh: '_____ 科学家试图在实验室水箱中培养珊瑚。实验失败了好几次。_____ 经过两年的调整，她成功培育出了健康的珊瑚。'
+    options:
+      A: 'Eventually / Initially'
+      B: 'Meanwhile / Subsequently'
+      C: 'Initially / Eventually'
+      D: 'Subsequently / Meanwhile'
+    answer: 'C'
+    explanation: '"Initially" = at the beginning (first attempts); "Eventually" = after a long time (success after two years).'
+    explanationZh: '"Initially" = 最初（第一次尝试）；"Eventually" = 最终（两年后成功）。'
+    grammarPoint: 'Sequence connectors: Initially / Eventually'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0572
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The research team arrived at the Antarctic base in November. _____, they set up their equipment and began collecting ice core samples.'
+    questionZh: '研究团队在十一月到达南极基地。_____ 他们架设了设备并开始收集冰芯样本。'
+    answer: 'Subsequently'
+    acceptableAnswers: ['Subsequently', 'After that', 'Then']
+    explanation: '"Subsequently" means "after that." It connects the arrival to the next action in the timeline.'
+    explanationZh: '"Subsequently"意思是"之后"。它将到达与时间线中的下一个行动连接起来。'
+    grammarPoint: 'Sequence connector: Subsequently'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0573
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'One team tracked whale migration by satellite. _____, another team recorded whale songs using underwater microphones.'
+    questionZh: '一个团队通过卫星追踪鲸鱼迁徙。_____ 另一个团队使用水下麦克风录制鲸歌。'
+    options:
+      A: 'Subsequently'
+      B: 'Eventually'
+      C: 'Initially'
+      D: 'Meanwhile'
+    answer: 'D'
+    explanation: 'Two different teams are doing different things AT THE SAME TIME. "Meanwhile" signals simultaneous events.'
+    explanationZh: '两个不同的团队在同一时间做不同的事情。"Meanwhile"表示同时发生的事件。'
+    grammarPoint: 'Time connector: Meanwhile'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0574
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The island was first colonized by plants. _____, insects arrived, carried by the wind. _____, birds came, attracted by the insects. _____, a complete ecosystem had formed.'
+    questionZh: '岛屿最初被植物殖民。_____ 昆虫随风到达。_____ 鸟类被昆虫吸引而来。_____ 一个完整的生态系统形成了。'
+    answer: 'Subsequently / Then / Eventually'
+    acceptableAnswers: ['Subsequently / Then / Eventually', 'Then / Subsequently / Eventually']
+    explanation: 'The three connectors create a clear chronological sequence: plants first → insects next → birds later → complete ecosystem finally.'
+    explanationZh: '三个连接词创建了清晰的时间顺序：先是植物 → 然后是昆虫 → 之后是鸟类 → 最终完整的生态系统。'
+    grammarPoint: 'Sequence connectors: timeline'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0575
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The caterpillar ate leaves for two weeks. It then spun a cocoon. _____, inside the cocoon, something amazing was happening: the caterpillar was transforming into a butterfly.'
+    questionZh: '毛毛虫吃了两周的叶子。然后它结了一个茧。_____ 在茧里，惊人的事情正在发生：毛毛虫正在变成蝴蝶。'
+    options:
+      A: 'Subsequently'
+      B: 'Eventually'
+      C: 'Meanwhile'
+      D: 'Initially'
+    answer: 'C'
+    explanation: 'While the cocoon sits still on the outside, INSIDE something is happening at the same time. "Meanwhile" shows simultaneous events.'
+    explanationZh: '当茧在外面静止不动时，里面的事情正在同时发生。"Meanwhile"表示同时发生的事件。'
+    grammarPoint: 'Time connector: Meanwhile'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0576
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'After years of decline, the eagle population _____ began to recover thanks to the new conservation programme.'
+    questionZh: '经过多年的下降，由于新的保护计划，鹰的种群 _____ 开始恢复。'
+    answer: 'eventually'
+    acceptableAnswers: ['eventually', 'finally', 'gradually']
+    explanation: '"Eventually" means "after a long time." The recovery came after years of waiting.'
+    explanationZh: '"Eventually"意思是"经过很长时间后"。恢复是在等待多年之后到来的。'
+    grammarPoint: 'Time connector: eventually'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0577
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: '_____, the scientists assumed the cave was empty. _____, they discovered that it was home to an entirely new species of blind fish.'
+    questionZh: '_____ 科学家们以为洞穴是空的。_____ 他们发现洞穴是一种全新的盲鱼物种的家。'
+    options:
+      A: 'Eventually / Initially'
+      B: 'Initially / Subsequently'
+      C: 'Meanwhile / Eventually'
+      D: 'Subsequently / Initially'
+    answer: 'B'
+    explanation: '"Initially" = their first assumption; "Subsequently" = what they found out later. Correct time order.'
+    explanationZh: '"Initially" = 他们最初的假设；"Subsequently" = 他们后来发现的。正确的时间顺序。'
+    grammarPoint: 'Sequence connectors: Initially / Subsequently'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0578
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The flood destroyed the village in minutes. _____, rescue teams worked around the clock to find survivors and deliver food and water.'
+    questionZh: '洪水在几分钟内摧毁了村庄。_____ 救援队夜以继日地寻找幸存者并运送食物和水。'
+    answer: 'In the days that followed'
+    acceptableAnswers: ['In the days that followed', 'Subsequently', 'In the meantime', 'Afterwards']
+    explanation: 'Any time expression showing the period AFTER the flood works. "Subsequently" or "In the days that followed" connect the disaster to the rescue.'
+    explanationZh: '任何表示洪水之后时期的时间表达都可以。"Subsequently"或"In the days that followed"将灾难与救援连接。'
+    grammarPoint: 'Time connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0579
+    type: multiple-choice
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The seeds lay dormant in the soil for months. Then, when spring rain finally arrived, they _____ began to sprout.'
+    questionZh: '种子在土壤中休眠了数月。然后，当春雨终于到来时，它们 _____ 开始发芽。'
+    options:
+      A: 'initially'
+      B: 'meanwhile'
+      C: 'at last'
+      D: 'subsequently'
+    answer: 'C'
+    explanation: '"At last" = "finally, after waiting." It shows that the sprouting was long awaited.'
+    explanationZh: '"At last" = "终于，在等待之后"。它表明发芽是期待已久的。'
+    grammarPoint: 'Time connector: at last'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0580
+    type: fill-blank
+    tags: [sequence-time, Q06, difficulty-3]
+    context: nature
+    question: 'The expedition team set out in January. _____, they crossed a frozen river. _____, they climbed a mountain pass. _____, after six months, they reached the unexplored valley.'
+    questionZh: '探险队在一月出发。_____ 他们穿越了一条结冰的河流。_____ 他们翻过了一个山口。_____ 经过六个月，他们到达了未被探索的山谷。'
+    answer: 'First / Then / Finally'
+    acceptableAnswers: ['First / Then / Finally', 'Initially / Subsequently / Eventually', 'First / Next / Eventually']
+    explanation: 'Three time connectors create a clear sequence: start → middle → end of the journey.'
+    explanationZh: '三个时间连接词创建了清晰的序列：旅程的开始 → 中间 → 结束。'
+    grammarPoint: 'Sequence connectors: First / Then / Finally'
+    relatedQuest: Q06
+    difficulty: 3
+
+  # ============================================================
+  # G0581–G0600: Mixed connectors review in scientific passages
+  # ============================================================
+  - id: G0581
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-2]
+    context: nature
+    question: 'The Arctic is warming twice as fast as the rest of the planet. _____, many Arctic animals are struggling to survive.'
+    questionZh: '北极变暖的速度是其他地区的两倍。_____ 许多北极动物正在挣扎求生。'
+    options:
+      A: 'Furthermore'
+      B: 'As a result'
+      C: 'Initially'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: 'Warming (cause) → animals struggling (result). "As a result" connects cause and effect.'
+    explanationZh: '变暖（原因）→ 动物挣扎（结果）。"As a result"连接因果关系。'
+    grammarPoint: 'Mixed: result connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0582
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-2]
+    context: nature
+    question: 'Octopuses are incredibly intelligent. _____, they have three hearts and blue blood.'
+    questionZh: '章鱼非常聪明。_____ 它们有三颗心脏和蓝色的血液。'
+    options:
+      A: 'As a result'
+      B: 'However'
+      C: 'What is more'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: 'Both sentences state interesting facts about octopuses. "What is more" adds another surprising fact.'
+    explanationZh: '两个句子都陈述了关于章鱼的有趣事实。"What is more"补充了另一个令人惊讶的事实。'
+    grammarPoint: 'Mixed: addition connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0583
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-2]
+    context: nature
+    question: 'The Amazon rainforest is home to 10% of all known species. _____, it is being destroyed at an alarming rate.'
+    questionZh: '亚马逊雨林是所有已知物种10%的家园。_____ 它正在以惊人的速度被破坏。'
+    answer: 'However'
+    acceptableAnswers: ['However', 'Unfortunately', 'Nevertheless']
+    explanation: 'Amazing biodiversity vs. destruction is a contrast. "However" or "Unfortunately" signal the negative turn.'
+    explanationZh: '惊人的生物多样性与破坏形成对比。"However"或"Unfortunately"表示负面转折。'
+    grammarPoint: 'Mixed: contrast connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0584
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-2]
+    context: nature
+    question: '_____ careful observation, Jane Goodall discovered that chimpanzees use tools — something scientists had not expected.'
+    questionZh: '通过仔细 _____ ，Jane Goodall 发现黑猩猩会使用工具——这是科学家们没有预料到的。'
+    options:
+      A: 'Due to'
+      B: 'As a result of'
+      C: 'Through'
+      D: 'Consequently'
+    answer: 'C'
+    explanation: '"Through careful observation" means "by means of observation." It describes the METHOD, not just cause.'
+    explanationZh: '"Through careful observation"意思是"通过观察的方式"。它描述了方法，不仅仅是原因。'
+    grammarPoint: 'Mixed: method/means connector'
+    relatedQuest: Q06
+    difficulty: 2
+
+  - id: G0585
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Scientists first studied the deep ocean using simple nets and dredges. _____, they developed submarines that could dive to extreme depths. Today, remotely operated vehicles explore the deepest parts of the ocean.'
+    questionZh: '科学家最初使用简单的网和挖泥船研究深海。_____ 他们开发了能潜入极端深度的潜水艇。如今，遥控潜水器探索着海洋最深处。'
+    answer: 'Subsequently'
+    acceptableAnswers: ['Subsequently', 'Later', 'Over time']
+    explanation: 'The passage follows a chronological pattern: past → later development → present. "Subsequently" bridges the first and second stages.'
+    explanationZh: '文章遵循时间顺序模式：过去 → 后来的发展 → 现在。"Subsequently"衔接第一和第二阶段。'
+    grammarPoint: 'Mixed: sequence connector in scientific context'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0586
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Coral reefs are being damaged by warming oceans. _____ this alarming trend, scientists have developed a technique to grow heat-resistant coral in laboratories.'
+    questionZh: '珊瑚礁正在被变暖的海洋破坏。_____ 这一令人担忧的趋势，科学家们已开发了在实验室中培育耐热珊瑚的技术。'
+    options:
+      A: 'Due to'
+      B: 'In response to'
+      C: 'As a result of'
+      D: 'Owing to'
+    answer: 'B'
+    explanation: '"In response to" means scientists took action BECAUSE of the problem. It shows a reaction to a situation, not just a cause.'
+    explanationZh: '"In response to"意思是科学家们因为这个问题而采取了行动。它表示对情况的反应，不仅仅是原因。'
+    grammarPoint: 'Mixed: response connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0587
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'The experiment showed that plants grow 30% faster with classical music. _____ finding was unexpected, as most scientists had predicted no effect.'
+    questionZh: '实验表明植物在古典音乐下生长快30%。_____ 发现出乎意料，因为大多数科学家预测没有效果。'
+    answer: 'This'
+    explanation: '"This finding" refers to the specific result just described. "This" + noun points back to a particular item.'
+    explanationZh: '"This finding"指代刚才描述的具体结果。"This" + 名词指回一个特定项目。'
+    grammarPoint: 'Mixed: reference word + connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0588
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Elephants can communicate using low-frequency sounds that travel through the ground. _____, they stamp their feet to send vibrations that other elephants can feel up to 32 kilometres away.'
+    questionZh: '大象可以用通过地面传播的低频声音进行交流。_____ 它们跺脚发送振动，其他大象在32公里外都能感受到。'
+    options:
+      A: 'However'
+      B: 'Moreover'
+      C: 'Nevertheless'
+      D: 'On the other hand'
+    answer: 'B'
+    explanation: 'Both sentences describe ways elephants communicate over long distances. "Moreover" adds another fascinating method.'
+    explanationZh: '两个句子都描述了大象远距离交流的方式。"Moreover"补充了另一种引人入胜的方法。'
+    grammarPoint: 'Mixed: addition connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0589
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: '_____, scientists thought the coelacanth fish went extinct 66 million years ago. _____, in 1938, a living coelacanth was caught off the coast of South Africa. _____ discovery shocked the scientific world.'
+    questionZh: '_____ 科学家认为腔棘鱼在6600万年前就灭绝了。_____ 1938年，一条活的腔棘鱼在南非海岸被捕获。_____ 发现震惊了科学界。'
+    answer: 'Initially / However / This'
+    acceptableAnswers: ['Initially / However / This']
+    explanation: '"Initially" = what was believed first; "However" = the surprising contrast; "This" = reference to the discovery.'
+    explanationZh: '"Initially" = 最初的信念；"However" = 令人惊讶的对比；"This" = 指代这一发现。'
+    grammarPoint: 'Mixed: sequence + contrast + reference'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0590
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Wolves were reintroduced to Yellowstone National Park in 1995. _____, the entire ecosystem began to change in remarkable ways.'
+    questionZh: '1995年狼被重新引入黄石国家公园。_____ 整个生态系统开始以非凡的方式发生变化。'
+    options:
+      A: 'However'
+      B: 'Nevertheless'
+      C: 'Subsequently'
+      D: 'Meanwhile'
+    answer: 'C'
+    explanation: 'The ecosystem change happened AFTER wolf reintroduction. "Subsequently" shows the time sequence.'
+    explanationZh: '生态系统变化发生在狼重新引入之后。"Subsequently"表示时间顺序。'
+    grammarPoint: 'Mixed: sequence connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0591
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Trees communicate through underground fungal networks. _____ networks, sometimes called the "wood wide web", allow trees to share nutrients and warn each other about insect attacks.'
+    questionZh: '树木通过地下真菌网络进行交流。_____ 网络有时被称为"木联网"，使树木能够分享营养和互相警告虫害。'
+    answer: 'These'
+    acceptableAnswers: ['These', 'Such']
+    explanation: '"These networks" or "Such networks" refer back to "underground fungal networks" from the previous sentence.'
+    explanationZh: '"These networks"或"Such networks"指代前一句的"地下真菌网络"。'
+    grammarPoint: 'Mixed: reference word'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0592
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Plastic takes up to 500 years to decompose. _____, every piece of plastic ever made still exists somewhere on Earth.'
+    questionZh: '塑料需要长达500年才能分解。_____ 每一件被制造出来的塑料仍然存在于地球的某个地方。'
+    options:
+      A: 'Furthermore'
+      B: 'Consequently'
+      C: 'Nevertheless'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: 'Slow decomposition (cause) → all plastic still exists (consequence). "Consequently" shows this logical result.'
+    explanationZh: '分解缓慢（原因）→ 所有塑料仍然存在（后果）。"Consequently"表示这个逻辑结果。'
+    grammarPoint: 'Mixed: result connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0593
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'The blue whale is the largest animal ever to have lived on Earth. _____, its heart is the size of a small car and can be heard beating from over 3 kilometres away.'
+    questionZh: '蓝鲸是有史以来地球上最大的动物。_____ 它的心脏有一辆小汽车那么大，在3公里外都能听到心跳声。'
+    answer: 'In fact'
+    acceptableAnswers: ['In fact', 'Indeed', 'To give you an idea']
+    explanation: '"In fact" reinforces the claim about size by providing a specific, impressive example.'
+    explanationZh: '"In fact"通过提供一个具体的、令人印象深刻的例子来加强关于体型的主张。'
+    grammarPoint: 'Mixed: reinforcement connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0594
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: '_____ the danger of extinction, many local communities are now working hard to protect the snow leopard and its mountain habitat.'
+    questionZh: '_____ 灭绝的危险，许多当地社区现在正在努力保护雪豹及其山地栖息地。'
+    options:
+      A: 'As a result'
+      B: 'In response to'
+      C: 'Subsequently'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: '"In response to" shows that communities are REACTING to the extinction threat. It combines cause and action.'
+    explanationZh: '"In response to"表明社区正在对灭绝威胁做出反应。它结合了原因和行动。'
+    grammarPoint: 'Mixed: response connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0595
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'The team tested two methods of water purification: chemical treatment and UV light. _____ was effective but left an unpleasant taste; _____ was slower but produced better-tasting water.'
+    questionZh: '团队测试了两种水净化方法：化学处理和紫外线照射。_____ 有效但留下了难闻的味道；_____ 较慢但产生了口感更好的水。'
+    answer: 'The former / the latter'
+    explanation: '"The former" = chemical treatment (mentioned first); "the latter" = UV light (mentioned second).'
+    explanationZh: '"The former" = 化学处理（先提到的）；"the latter" = 紫外线（后提到的）。'
+    grammarPoint: 'Mixed: reference words the former/latter'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0596
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Venus flytraps can snap shut in less than half a second. _____ speed allows them to catch insects before the prey can escape.'
+    questionZh: '捕蝇草可以在不到半秒内合拢。_____ 速度使它们能在猎物逃跑之前捕获昆虫。'
+    options:
+      A: 'Such'
+      B: 'These'
+      C: 'This'
+      D: 'It'
+    answer: 'A'
+    explanation: '"Such speed" = "speed of this kind/level." "Such" emphasizes how remarkable the speed is.'
+    explanationZh: '"Such speed" = "这种/这个水平的速度"。"Such"强调速度多么惊人。'
+    grammarPoint: 'Mixed: reference word such'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0597
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Global fish stocks have declined by 50% since 1970. _____, many marine scientists are calling for larger protected areas in the ocean.'
+    questionZh: '自1970年以来，全球鱼类资源已减少了50%。_____ 许多海洋科学家呼吁在海洋中设立更大的保护区。'
+    answer: 'For this reason'
+    acceptableAnswers: ['For this reason', 'As a result', 'Consequently', 'Therefore']
+    explanation: 'Fish decline (cause) → call for protection (response/result). Any result connector works.'
+    explanationZh: '鱼类减少（原因）→ 呼吁保护（回应/结果）。任何结果连接词都适用。'
+    grammarPoint: 'Mixed: result connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0598
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'The experiment was designed to test whether music affects plant growth. _____, the team played different types of music to three groups of identical plants over six weeks.'
+    questionZh: '实验旨在测试音乐是否影响植物生长。_____ 团队在六周内给三组相同的植物播放了不同类型的音乐。'
+    options:
+      A: 'However'
+      B: 'To do this'
+      C: 'Nevertheless'
+      D: 'Meanwhile'
+    answer: 'B'
+    explanation: '"To do this" means "in order to achieve this goal." It connects the purpose (testing music effects) to the method (playing music to plants).'
+    explanationZh: '"To do this"意思是"为了实现这个目标"。它将目的（测试音乐效果）与方法（给植物播放音乐）联系起来。'
+    grammarPoint: 'Mixed: purpose connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0599
+    type: fill-blank
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'Monarch butterflies migrate from Canada to Mexico every autumn. _____, no single butterfly completes the entire round trip — it takes four generations to make the full journey.'
+    questionZh: '帝王蝶每年秋天从加拿大迁徙到墨西哥。_____ 没有一只蝴蝶能完成整个往返行程——完成全程需要四代蝴蝶。'
+    answer: 'Remarkably'
+    acceptableAnswers: ['Remarkably', 'Interestingly', 'However']
+    explanation: '"Remarkably" or "Interestingly" emphasize the surprising nature of the fact. "However" would also work as a contrast to what we might expect.'
+    explanationZh: '"Remarkably"或"Interestingly"强调这一事实的令人惊讶的本质。"However"也可以作为与我们预期的对比。'
+    grammarPoint: 'Mixed: emphasis/surprise connector'
+    relatedQuest: Q06
+    difficulty: 3
+
+  - id: G0600
+    type: multiple-choice
+    tags: [mixed-review, Q06, difficulty-3]
+    context: nature
+    question: 'The rainforest canopy blocks most sunlight. _____, plants on the forest floor have evolved enormous leaves to capture every bit of available light. _____ adaptation is a perfect example of natural selection at work.'
+    questionZh: '雨林树冠层挡住了大部分阳光。_____ 森林地面的植物进化出了巨大的叶子来捕捉每一点可用的光线。_____ 适应是自然选择作用的完美例子。'
+    options:
+      A: 'Consequently / This'
+      B: 'However / Such'
+      C: 'Furthermore / These'
+      D: 'Meanwhile / It'
+    answer: 'A'
+    explanation: 'Canopy blocks light (cause) → plants evolved big leaves (consequence) → "This adaptation" refers to the big leaves. Cause-result + reference.'
+    explanationZh: '树冠层挡住光线（原因）→ 植物进化出大叶子（结果）→ "This adaptation"指代大叶子。因果 + 指代。'
+    grammarPoint: 'Mixed: result + reference combination'
+    relatedQuest: Q06
+    difficulty: 3

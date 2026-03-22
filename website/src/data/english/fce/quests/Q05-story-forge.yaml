@@ -1,0 +1,652 @@
+id: Q05
+title: 'Story Forge'
+titleZh: '故事锻造坊'
+subtitle: 'Master the craft of narrative writing!'
+subtitleZh: '掌握叙事写作的技巧！'
+month: 5
+fceMapping: 'Writing Part 2 (Story)'
+
+theme:
+  setting: 'A magical Story Forge where young writers craft narratives on an enchanted anvil'
+  settingZh: '一个神奇的故事锻造坊，小作家们在魔法铁砧上锻造故事'
+  mascot: 'Master Inkwell, an old storyteller owl who has written a thousand tales'
+  mascotZh: 'Inkwell 大师，一只写过一千个故事的讲故事的老猫头鹰'
+
+objectives:
+  - 'Understand story structure: Hook, Rising Action, Climax, and Resolution'
+  - 'Create compelling characters using showing-not-telling techniques'
+  - 'Build vivid settings using the five senses'
+  - 'Write realistic dialogue with correct punctuation and said-alternatives'
+  - 'Build tension and suspense using short sentences, cliffhangers, and foreshadowing'
+  - 'Use B2 narrative connectors to link events smoothly'
+
+objectivesZh:
+  - '理解故事结构：开头吸引→情节发展→高潮→结局'
+  - '使用"展示而非叙述"的技巧创造生动的角色'
+  - '使用五感描写构建逼真的场景'
+  - '书写真实的对话，掌握正确的标点和"said"替代词'
+  - '使用短句、悬念和伏笔来制造紧张感'
+  - '使用B2级叙事连接词流畅地连接事件'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Story Structure — The Forge Blueprint
+  # ─────────────────────────────────────────────
+  - id: Q05-L01
+    title: 'Story Structure — The Forge Blueprint'
+    titleZh: '故事结构 — 锻造蓝图'
+
+    introduction: |
+      Welcome to the Story Forge! Master Inkwell adjusts his spectacles and unrolls an enormous
+      parchment across the enchanted anvil.
+
+      "Every great story," he hoots, "follows a blueprint — just like a blacksmith follows a plan
+      before hammering metal into a sword. Without a blueprint, you get a shapeless lump. With one,
+      you get a masterpiece."
+
+      He taps the parchment with his feathered wing. Four sections glow in sequence:
+
+      1. THE HOOK — Your opening must grab the reader instantly. Start with action, a question,
+         or something unusual. Never begin with "One day..." if you can help it!
+      2. RISING ACTION — Build the story. Add problems, obstacles, and tension. Each event should
+         make the reader want to know what happens next.
+      3. THE CLIMAX — The most exciting moment! The biggest problem reaches its peak. This is
+         where the hero must act.
+      4. THE RESOLUTION — The problem is solved. The character has changed or learned something.
+         Leave the reader satisfied.
+
+      "In the FCE exam, you get a story prompt with an opening sentence. Your job is to forge
+      the rest using this blueprint. Let us practise!"
+    introductionZh: |
+      欢迎来到故事锻造坊！Inkwell 大师调整了一下眼镜，在魔法铁砧上展开了一张巨大的羊皮纸。
+
+      "每个伟大的故事，"他咕咕叫道，"都遵循一份蓝图——就像铁匠在把金属锤成剑之前要遵循一个
+      计划一样。没有蓝图，你只会得到一堆无形的铁块。有了蓝图，你就能打造出杰作。"
+
+      他用羽翼轻拍羊皮纸。四个部分依次发光：
+
+      1. 开头钩子 — 你的开头必须立刻抓住读者。用动作、问题或不寻常的事物开头。
+         尽量不要用"有一天……"开始！
+      2. 情节发展 — 构建故事。添加问题、障碍和紧张感。每个事件都应该让读者想知道接下来会发生什么。
+      3. 高潮 — 最激动人心的时刻！最大的问题达到顶点。英雄必须在此刻行动。
+      4. 结局 — 问题得到解决。角色发生了变化或学到了什么。让读者感到满足。
+
+      "在FCE考试中，你会得到一个带有开头句子的故事提示。你的任务就是用这份蓝图锻造出故事的其余部分。
+      让我们来练习吧！"
+
+    rules:
+      - pattern: 'Hook Types'
+        meaning: 'Start with action ("I was running..."), a sound ("CRASH!"), dialogue, or a mystery ("Something was wrong.")'
+        meaningZh: '用动作开头（"我正在跑……"）、声音（"砰！"）、对话或悬疑（"有什么不对劲。"）'
+        examples:
+          - base: 'One day I went to the park and saw something strange.'
+            transformed: 'The moment I stepped into the park, I knew something was wrong — the swings were moving, but there was nobody there.'
+            sentence: 'The transformed version creates mystery and tension immediately.'
+            sentenceZh: '改写后的版本立即制造了悬疑和紧张感。'
+      - pattern: 'Rising Action'
+        meaning: 'Add at least two problems or complications before the climax'
+        meaningZh: '在高潮之前至少添加两个问题或波折'
+        examples:
+          - base: 'Simple: I found a key and opened the door.'
+            transformed: 'Better: I found a rusty key, but the lock was jammed. I pushed harder. The door creaked open, revealing a staircase spiralling down into darkness.'
+            sentence: 'Adding obstacles (jammed lock) and sensory details (creaked, spiralling, darkness) builds tension.'
+            sentenceZh: '添加障碍（锁卡住了）和感官细节（吱呀声、螺旋、黑暗）来制造紧张感。'
+      - pattern: 'Climax + Resolution'
+        meaning: 'The climax is the peak of action; the resolution shows what changed'
+        meaningZh: '高潮是行动的顶峰；结局展示了什么改变了'
+        examples:
+          - base: 'Climax: The dragon charged. I raised my shield just in time.'
+            transformed: 'Resolution: As the dust settled, I realised the dragon had not been attacking — it had been trying to warn me about the crumbling cliff behind me.'
+            sentence: 'A good resolution often includes a surprise or a lesson learned.'
+            sentenceZh: '好的结局通常包含一个惊喜或一个教训。'
+
+    tips:
+      - 'FCE stories are 140-190 words. Plan your four sections BEFORE writing.'
+      - 'Spend about 25% on hook, 40% on rising action, 20% on climax, 15% on resolution.'
+      - 'Your ending should connect back to the beginning for a satisfying story.'
+      - 'Never rush the ending. A weak ending ruins a good story.'
+    tipsZh:
+      - 'FCE故事要求140-190字。写之前先规划你的四个部分。'
+      - '大约花25%在开头，40%在情节发展，20%在高潮，15%在结局。'
+      - '结局应该与开头呼应，使故事令人满足。'
+      - '不要匆忙结尾。薄弱的结局会毁掉一个好故事。'
+
+    practicePreview:
+      - id: Q05-L01-P01
+        question: |
+          Read this opening sentence and plan a story using the four-part blueprint:
+          "The letter arrived on a Tuesday, and from that moment, nothing was the same."
+          Write the HOOK (2-3 sentences expanding on the opening).
+        questionZh: |
+          阅读这个开头句，用四部分蓝图计划一个故事：
+          "那封信在一个星期二到了，从那一刻起，一切都不一样了。"
+          写出开头钩子（2-3句话，扩展开头句）。
+        answer: 'Example: The letter arrived on a Tuesday, and from that moment, nothing was the same. It was written in shimmering gold ink on paper that felt warm to the touch. There was no stamp, no return address — just my name, written in handwriting I had never seen before.'
+        explanation: 'This hook expands the opening with sensory details (gold ink, warm paper) and mystery (no stamp, unknown handwriting) to pull the reader in.'
+        explanationZh: '这个开头用感官细节（金色墨水、温暖的纸张）和悬疑（没有邮票、陌生的笔迹）来吸引读者。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Character Creation — Showing vs Telling
+  # ─────────────────────────────────────────────
+  - id: Q05-L02
+    title: 'Character Creation — Showing vs Telling'
+    titleZh: '角色创造 — 展示而非叙述'
+
+    introduction: |
+      Master Inkwell leads you to a gallery of character portraits on the Forge wall.
+
+      "A story without good characters," he says, "is like a sword without a blade. The
+      CHARACTERS are what make readers care. But here is the secret — do not TELL me your
+      character is brave. SHOW me."
+
+      He points to two portraits:
+
+      TELLING: "Tom was very brave."
+      SHOWING: "Tom's hands trembled, but he stepped forward, placing himself between the
+      dragon and his little sister."
+
+      "See the difference? In the second version, we SEE Tom's bravery through his ACTIONS
+      and BODY LANGUAGE. This is called 'show, don't tell' — the golden rule of good writing."
+
+      He reveals a character-building toolkit:
+      - ACTIONS: What does the character DO? (clutched, dashed, hesitated)
+      - BODY LANGUAGE: How do they move? (slouched, paced, clenched fists)
+      - DIALOGUE: What do they SAY and HOW? (whispered, snapped, stammered)
+      - REACTIONS: How do they respond to events? (gasped, flinched, beamed)
+
+      "Great writers create PROTAGONISTS we cheer for and ANTAGONISTS we love to hate.
+      Both need to feel real. Even villains should have understandable reasons for what they do."
+    introductionZh: |
+      Inkwell 大师带你来到锻造坊墙上的角色肖像画廊。
+
+      "一个没有好角色的故事，"他说，"就像一把没有刀刃的剑。角色是让读者产生关心的关键。
+      但秘诀在于——不要告诉我你的角色很勇敢。展示给我看。"
+
+      他指向两幅肖像：
+
+      叙述：Tom 非常勇敢。
+      展示：Tom 的手在颤抖，但他向前迈了一步，挡在了龙和他妹妹之间。
+
+      "看到区别了吗？第二个版本中，我们通过他的行动和肢体语言看到了Tom的勇敢。
+      这叫做'展示而非叙述'——好文章的黄金法则。"
+
+      他展示了一个角色构建工具包：
+      - 行动：角色做了什么？（紧抓、飞奔、犹豫）
+      - 肢体语言：他们怎么移动？（懒散地坐、踱步、握紧拳头）
+      - 对话：他们说了什么，怎么说的？（低声说、厉声说、结巴地说）
+      - 反应：他们如何回应事件？（倒吸一口气、退缩、眉开眼笑）
+
+      "伟大的作家创造我们为之欢呼的主角和我们又爱又恨的反派。
+      两者都需要感觉真实。即使是反派也应该有可以理解的行动理由。"
+
+    rules:
+      - pattern: 'Show vs Tell — Emotions'
+        meaning: 'Replace emotion adjectives with physical actions and body language'
+        meaningZh: '用身体动作和肢体语言替代情感形容词'
+        examples:
+          - base: 'She was scared.'
+            transformed: 'Her hands trembled as she pressed her back against the cold stone wall, barely daring to breathe.'
+            sentence: 'Physical details (trembling hands, pressing back, barely breathing) show fear without saying the word.'
+            sentenceZh: '身体细节（颤抖的手、后背紧贴墙壁、几乎不敢呼吸）展示了恐惧，而不用说出这个词。'
+          - base: 'He was happy.'
+            transformed: 'A grin spread across his face and he punched the air, letting out a whoop of delight.'
+            sentence: 'Actions (grin, punching the air, whooping) show happiness vividly.'
+            sentenceZh: '动作（咧嘴笑、挥拳、欢呼）生动地展示了快乐。'
+      - pattern: 'Show vs Tell — Character Traits'
+        meaning: 'Reveal personality through actions and dialogue, not labels'
+        meaningZh: '通过行动和对话揭示个性，而不是贴标签'
+        examples:
+          - base: 'The girl was kind.'
+            transformed: 'The girl knelt beside the injured bird, gently wrapping its wing in a strip of her own scarf.'
+            sentence: 'Her actions (kneeling, gentle wrapping, sacrificing her scarf) show kindness.'
+            sentenceZh: '她的行为（跪下、轻柔包扎、牺牲自己的围巾）展示了善良。'
+
+    tips:
+      - 'In FCE stories, you have limited words. One well-chosen action is worth more than five adjectives.'
+      - 'Use "said-alternatives" sparingly — whispered, muttered, exclaimed, snapped — but do not overdo it.'
+      - 'Give your protagonist a clear WANT (goal) and an OBSTACLE (what prevents them).'
+      - 'Even in short stories, show how the character CHANGES by the end.'
+    tipsZh:
+      - '在FCE故事中，字数有限。一个精心选择的动作比五个形容词更有价值。'
+      - '适度使用"said替代词"——whispered, muttered, exclaimed, snapped——但不要过度使用。'
+      - '给你的主角一个明确的目标（想要的东西）和一个障碍（阻止他们的东西）。'
+      - '即使在短篇故事中，也要展示角色在结尾时如何发生了变化。'
+
+    practicePreview:
+      - id: Q05-L02-P01
+        question: |
+          Rewrite this sentence using "show, don't tell":
+          "The old man was very lonely."
+        questionZh: |
+          使用"展示而非叙述"改写这个句子：
+          "那个老人非常孤独。"
+        answer: 'The old man sat at the kitchen table, staring at the empty chair opposite. He had set two cups of tea again, out of habit, before remembering that nobody was coming.'
+        explanation: 'Instead of telling us he is lonely, we see it through his actions: setting two cups, the empty chair, the habit of expecting someone. This is far more powerful.'
+        explanationZh: '我们不是被告知他孤独，而是通过他的行为看到了：放两个茶杯、空椅子、期待某人到来的习惯。这样更有力量。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Setting and Atmosphere — The Five Senses
+  # ─────────────────────────────────────────────
+  - id: Q05-L03
+    title: 'Setting and Atmosphere — The Five Senses'
+    titleZh: '场景与氛围 — 五感描写'
+
+    introduction: |
+      Master Inkwell opens five magical jars, each glowing a different colour.
+
+      "A great setting is not just a PLACE," he says. "It is an EXPERIENCE. Your reader should
+      feel like they are INSIDE the story. The secret? Use all FIVE SENSES."
+
+      He opens the jars one by one:
+
+      1. SIGHT (blue jar): What can you SEE? Colours, shapes, light, shadows.
+         "The moonlight painted silver stripes across the wooden floor."
+      2. SOUND (green jar): What can you HEAR? Silence counts too!
+         "The only sound was the drip, drip, drip of water from the ceiling."
+      3. TOUCH (red jar): What do things FEEL like? Temperature, texture.
+         "The stone wall was rough and ice-cold beneath her fingertips."
+      4. SMELL (gold jar): What can you SMELL? Familiar smells trigger memories.
+         "The air smelled of damp earth and old books."
+      5. TASTE (purple jar): What can you TASTE? (Use sparingly but powerfully.)
+         "She tasted salt on her lips from the sea spray."
+
+      "Atmosphere is the MOOD of your setting. Is it eerie? Serene? Ominous?
+      Choose details that all point in the same direction. For a scary scene, use dark
+      colours, strange sounds, cold temperatures. For a peaceful scene, use warm light,
+      gentle sounds, pleasant smells."
+    introductionZh: |
+      Inkwell 大师打开了五个发着不同颜色光芒的魔法罐子。
+
+      "好的场景不仅仅是一个地方，"他说。"它是一种体验。你的读者应该感觉自己就在故事里面。
+      秘诀是什么？使用全部五种感官。"
+
+      他逐个打开罐子：
+
+      1. 视觉（蓝色罐）：你能看到什么？颜色、形状、光线、阴影。
+         "月光在木地板上画出了银色的条纹。"
+      2. 听觉（绿色罐）：你能听到什么？寂静也算！
+         "唯一的声音是天花板上水滴的嘀嗒声。"
+      3. 触觉（红色罐）：事物摸起来怎么样？温度、质感。
+         "石墙在她的指尖下又粗糙又冰冷。"
+      4. 嗅觉（金色罐）：你能闻到什么？熟悉的气味会唤起回忆。
+         "空气中弥漫着潮湿泥土和旧书的味道。"
+      5. 味觉（紫色罐）：你能尝到什么？（少用但有力。）
+         "她尝到了嘴唇上海浪溅起的咸味。"
+
+      "氛围是场景的情绪。是阴森的？宁静的？不祥的？选择指向同一方向的细节。
+      恐怖场景用暗色、怪声、冷温度。平和场景用暖光、柔声、宜人的气味。"
+
+    rules:
+      - pattern: 'Five-Sense Descriptions'
+        meaning: 'Include at least 3 of the 5 senses in every setting description'
+        meaningZh: '在每个场景描写中至少包含五感中的三种'
+        examples:
+          - base: 'Setting: An old library at night'
+            transformed: 'The library was dark except for the glow of a single lamp (sight). The pages of ancient books whispered as a draught slipped through the gap under the door (sound/touch). The air was thick with the smell of leather and dust (smell).'
+            sentence: 'This uses sight, sound, touch, and smell to create an atmospheric setting.'
+            sentenceZh: '这里使用了视觉、听觉、触觉和嗅觉来创造一个有氛围的场景。'
+      - pattern: 'Weather and Time of Day'
+        meaning: 'Use weather and time to set the mood without stating it directly'
+        meaningZh: '使用天气和时间来营造氛围，不用直接说出来'
+        examples:
+          - base: 'The scene was scary.'
+            transformed: 'Thick fog rolled in from the marshes as dusk fell. The trees stood like dark figures watching from the edges of the path.'
+            sentence: 'Fog, dusk, and tree personification create fear without the word "scary."'
+            sentenceZh: '雾、黄昏和树的拟人化制造了恐惧感，而不用说"恐怖"这个词。'
+
+    tips:
+      - 'Start a new scene with a SETTING SENTENCE that grounds the reader in time and place.'
+      - 'Use weather as a storytelling tool: storms for conflict, sunshine for hope, fog for mystery.'
+      - 'Personification makes settings come alive: "The wind howled," "The shadows crept closer."'
+      - 'Avoid listing senses mechanically. Weave them naturally into the action.'
+    tipsZh:
+      - '用一个场景句开始新的场景，让读者知道时间和地点。'
+      - '把天气当作叙事工具：暴风雨=冲突，阳光=希望，雾=神秘。'
+      - '拟人化让场景活起来："风在呼啸"、"影子悄悄靠近"。'
+      - '不要机械地列出感官。把它们自然地编织到行动中。'
+
+    practicePreview:
+      - id: Q05-L03-P01
+        question: |
+          Write a 3-4 sentence setting description for "a forest at midnight" using at least 3 senses.
+          Try to create an eerie atmosphere.
+        questionZh: |
+          用至少3种感官为"午夜的森林"写一段3-4句的场景描写。
+          试着营造一种阴森的氛围。
+        answer: 'The forest was utterly dark — not a single star could be seen through the thick canopy of branches above (sight). An owl hooted somewhere in the distance, and twigs cracked under invisible feet (sound). The air was damp and bitterly cold, and it carried the earthy smell of rotting leaves (touch/smell).'
+        explanation: 'This uses sight (darkness), sound (owl, twigs), touch (damp, cold), and smell (rotting leaves) to build eerie atmosphere.'
+        explanationZh: '这里使用了视觉（黑暗）、听觉（猫头鹰、树枝断裂声）、触觉（潮湿、寒冷）和嗅觉（腐烂的树叶）来营造阴森的氛围。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Dialogue Writing — Punctuation and Character Voice
+  # ─────────────────────────────────────────────
+  - id: Q05-L04
+    title: 'Dialogue Writing — Punctuation and Character Voice'
+    titleZh: '对话写作 — 标点和角色声音'
+
+    introduction: |
+      Master Inkwell pulls out a pair of enchanted quills — one gold, one silver.
+
+      "Dialogue," he says, "is the fastest way to bring a character to life. When characters
+      SPEAK, readers can hear their personality, mood, and intentions."
+
+      He writes two versions on the board:
+
+      WEAK: "Let's go," she said. "OK," he said. "Follow me," she said.
+      STRONG: "Let's go," she whispered urgently, glancing over her shoulder.
+      He hesitated. "Are you sure about this?"
+      "Just follow me — and do NOT look back."
+
+      "See how dialogue can show emotions, create tension, and reveal character? But first,
+      you must learn the RULES of dialogue punctuation in English."
+
+      PUNCTUATION RULES:
+      1. Speech marks go around the spoken words: "Hello," she said.
+      2. Comma INSIDE the speech marks before the reporting verb: "Hello," she said. (NOT "Hello", she said.)
+      3. New speaker = new paragraph.
+      4. Question marks and exclamation marks replace the comma: "Where are you going?" he asked.
+      5. If the reporting verb comes first: She said, "Follow me."
+
+      SAID-ALTERNATIVES (use sparingly):
+      whispered, muttered, exclaimed, snapped, pleaded, declared, sighed, stammered, boasted
+    introductionZh: |
+      Inkwell 大师拿出一对魔法羽毛笔——一支金色，一支银色。
+
+      "对话，"他说，"是让角色鲜活起来最快的方式。当角色说话时，
+      读者能听到他们的个性、情绪和意图。"
+
+      他在黑板上写了两个版本：
+
+      弱："我们走吧，"她说。"好的，"他说。"跟我来，"她说。
+      强："我们走吧，"她急切地低声说，回头看了一眼。
+      他犹豫了。"你确定吗？"
+      "跟着我就是——千万不要回头。"
+
+      "看到对话如何展示情感、制造紧张感和揭示角色了吗？但首先，你必须学习英语对话标点的规则。"
+
+      标点规则：
+      1. 引号包围说的话："Hello," she said.
+      2. 逗号在引号内，在引述动词前："Hello," she said.（不是 "Hello", she said.）
+      3. 新说话人 = 新段落。
+      4. 问号和感叹号替代逗号："Where are you going?" he asked.
+      5. 如果引述动词在前：She said, "Follow me."
+
+      "said"替代词（适度使用）：
+      whispered, muttered, exclaimed, snapped, pleaded, declared, sighed, stammered, boasted
+
+    rules:
+      - pattern: 'Dialogue Punctuation'
+        meaning: 'Comma/question mark/exclamation mark inside speech marks; new speaker = new line'
+        meaningZh: '逗号/问号/感叹号在引号内；新说话人换行'
+        examples:
+          - base: '"I found the key" she said "Let us open the door"'
+            transformed: '"I found the key," she said. "Let us open the door."'
+            sentence: 'Comma after "key" inside the speech marks. Full stop after "said" because the next sentence is a separate statement.'
+            sentenceZh: '"key"后面的逗号在引号内。"said"后面用句号，因为下一句是另一个独立陈述。'
+      - pattern: 'Character Voice through Dialogue'
+        meaning: 'Each character should sound different — word choice, sentence length, attitude'
+        meaningZh: '每个角色的说话方式应该不同——用词选择、句子长度、态度'
+        examples:
+          - base: 'A nervous child and a confident adult'
+            transformed: |
+              "Um... do we really have to go in there?" the boy stammered, clutching his bag.
+              The guide smiled calmly. "Trust me. I have done this a hundred times."
+            sentence: 'The boy uses "um", stammers, and asks a question (nervousness). The guide speaks in short, confident statements.'
+            sentenceZh: '男孩用"嗯"、结巴、问问题（紧张）。向导用短促自信的陈述句说话。'
+
+    tips:
+      - 'Do not use "said" alternatives for every line — "said" is invisible to readers and that is good.'
+      - 'Add actions between dialogue lines to show what characters are doing while they speak.'
+      - 'Keep dialogue short and natural. Real people speak in fragments, not in paragraphs.'
+      - 'Use dialogue to ADVANCE the plot, not just to chat.'
+    tipsZh:
+      - '不要每句对话都用"said"替代词——"said"对读者来说是隐形的，这是好事。'
+      - '在对话之间添加动作描写，展示角色说话时在做什么。'
+      - '保持对话简短自然。真人说话用短句，不是用长段落。'
+      - '用对话推动情节发展，而不仅仅是闲聊。'
+
+    practicePreview:
+      - id: Q05-L04-P01
+        question: |
+          Fix the punctuation in this dialogue and add a said-alternative and an action:
+          "We need to leave now" she said "The storm is coming" "But what about the treasure" he said
+        questionZh: |
+          修正这段对话的标点，添加一个 said 替代词和一个动作描写：
+          "We need to leave now" she said "The storm is coming" "But what about the treasure" he said
+        answer: |
+          "We need to leave now," she urged, pulling him towards the door. "The storm is coming."
+          "But what about the treasure?" he protested, glancing back at the glittering chest.
+        explanation: 'Commas and question marks are correctly placed inside speech marks. "Urged" and "protested" replace "said." Actions (pulling, glancing) are added between the dialogue.'
+        explanationZh: '逗号和问号正确放在引号内。"Urged"和"protested"替代了"said"。动作（拉、回头看）被添加在对话之间。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Tension and Suspense — The Art of Making Readers Worry
+  # ─────────────────────────────────────────────
+  - id: Q05-L05
+    title: 'Tension and Suspense — The Art of Making Readers Worry'
+    titleZh: '紧张与悬念 — 让读者担心的艺术'
+
+    introduction: |
+      Master Inkwell dims the lights in the Forge. The shadows grow longer.
+
+      "The most powerful tool in a storyteller's kit," he whispers, "is TENSION. Tension is
+      what makes readers turn pages. It is the feeling that something important — or dangerous
+      — is about to happen."
+
+      He reveals five techniques on the Forge wall:
+
+      1. SHORT SENTENCES: "She ran. The door was locked. Footsteps behind her. Closer. Closer."
+         Short sentences speed up the pace and create urgency.
+
+      2. FORESHADOWING: Drop hints early that something will happen later.
+         "If only I had listened to the warning..." (The reader thinks: what warning?)
+
+      3. CLIFFHANGERS: End a section at a moment of maximum uncertainty.
+         "She opened the box and gasped. Inside was something she never expected to see."
+
+      4. THE TICKING CLOCK: Give characters a deadline.
+         "They had exactly ten minutes before the bridge would collapse."
+
+      5. WITHHOLDING INFORMATION: Do not reveal everything at once.
+         "There was something wrong with the portrait, but she could not figure out what."
+
+      "Combine these techniques and your reader will not be able to put your story down!"
+    introductionZh: |
+      Inkwell 大师把锻造坊的灯光调暗了。影子变得更长了。
+
+      "讲故事者工具箱中最强大的工具，"他低声说，"是紧张感。紧张感是让读者翻页的力量。
+      它是某些重要的——或危险的——事情即将发生的感觉。"
+
+      他在锻造坊的墙上展示了五种技巧：
+
+      1. 短句："她跑了。门锁着。身后有脚步声。越来越近。越来越近。"
+         短句加快节奏，制造紧迫感。
+
+      2. 伏笔：提早留下暗示，某件事将在后面发生。
+         "要是我当初听了那个警告就好了……"（读者想：什么警告？）
+
+      3. 悬念式结尾：在最大不确定性的时刻结束一个段落。
+         "她打开盒子，倒吸一口气。里面是她从没想过会看到的东西。"
+
+      4. 倒计时：给角色一个截止时间。
+         "他们只有十分钟，桥就要坍塌了。"
+
+      5. 隐藏信息：不要一次揭示所有东西。
+         "那幅画有什么不对劲，但她想不出是什么。"
+
+      "把这些技巧结合起来，你的读者就会放不下你的故事！"
+
+    rules:
+      - pattern: 'Short Sentences for Pace'
+        meaning: 'Use fragments and short sentences during action and danger scenes'
+        meaningZh: '在动作和危险场景中使用短句和片段句'
+        examples:
+          - base: 'She was running through the forest and she could hear the wolf behind her and she was very scared and the trees were everywhere.'
+            transformed: 'She ran. Branches scraped her arms. Behind her, the wolf howled. Closer now. She had to keep going.'
+            sentence: 'Short sentences create a breathless, urgent pace. Each sentence is one beat of action.'
+            sentenceZh: '短句创造出喘不过气来的紧迫节奏。每个句子都是一个动作节拍。'
+      - pattern: 'Foreshadowing'
+        meaning: 'Plant a hint early that pays off later in the story'
+        meaningZh: '提前埋下一个暗示，在故事后面回收'
+        examples:
+          - base: 'Early in story: The old bridge creaked under their weight, but they crossed safely.'
+            transformed: 'Later in story: As the villain chased them back to the bridge, the wooden planks splintered and the bridge collapsed — just as the old man had warned it would.'
+            sentence: 'The early detail (bridge creaking) becomes important later. This is satisfying for readers.'
+            sentenceZh: '早期的细节（桥的吱呀声）在后面变得重要。这让读者感到满足。'
+
+    tips:
+      - 'Vary your sentence length. Long sentences for calm scenes, short for tense ones.'
+      - 'Use "almost" and "nearly" to create near-misses: "The arrow nearly hit him."'
+      - 'End paragraphs with unanswered questions to keep readers reading.'
+      - 'The five senses create tension too: eerie sounds, strange smells, cold touches.'
+    tipsZh:
+      - '变化句子长度。平静场景用长句，紧张场景用短句。'
+      - '使用"几乎"来创造惊险时刻："箭差一点就射中他了。"'
+      - '在段落结尾留下未解答的问题，让读者继续读下去。'
+      - '五感也能制造紧张感：怪异的声音、奇怪的气味、冰冷的触感。'
+
+    practicePreview:
+      - id: Q05-L05-P01
+        question: |
+          Rewrite this passage to create more tension. Use at least two techniques
+          (short sentences, foreshadowing, a cliffhanger, a ticking clock, or withholding information):
+
+          "The children went into the cave. It was dark. They heard a noise. They were scared."
+        questionZh: |
+          改写这段话以制造更多紧张感。使用至少两种技巧
+          （短句、伏笔、悬念式结尾、倒计时或隐藏信息）：
+
+          "孩子们走进了洞穴。很黑。他们听到了一个声音。他们很害怕。"
+        answer: 'The cave swallowed them. Darkness. Total, complete darkness. Then — a sound. A low, rumbling growl that seemed to come from everywhere at once. Nobody moved. Nobody breathed. And then, from deep inside the cave, two yellow eyes opened.'
+        explanation: 'This uses short sentences (Darkness. Total, complete darkness.), sensory details (low rumbling growl), withholding information (we do not know what the creature is), and ends with a cliffhanger (two yellow eyes).'
+        explanationZh: '这里使用了短句（黑暗。完全的、彻底的黑暗。）、感官细节（低沉的咆哮声）、隐藏信息（我们不知道那个生物是什么）和悬念式结尾（两只黄色的眼睛）。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: B2 Narrative Connectors — Linking Your Story Smoothly
+  # ─────────────────────────────────────────────
+  - id: Q05-L06
+    title: 'B2 Narrative Connectors — Linking Your Story Smoothly'
+    titleZh: 'B2叙事连接词 — 流畅地连接你的故事'
+
+    introduction: |
+      Master Inkwell places a row of golden chains on the anvil.
+
+      "These," he says, "are NARRATIVE CONNECTORS — the chains that link one event to the
+      next. Without them, your story reads like a list of things that happened. With them,
+      it flows like a river."
+
+      He sorts the chains into groups:
+
+      TIME CONNECTORS (when things happen):
+      - Meanwhile — two things happening at the same time
+      - Eventually — after a long time
+      - All of a sudden / Suddenly — something unexpected
+      - Gradually — slowly, step by step
+      - By the time — linking two past events
+      - At that moment — pinpointing an exact time
+      - Before long — soon after
+      - No sooner had... than — immediately after
+
+      CONTRAST CONNECTORS (unexpected results):
+      - Nevertheless / Even so — despite something
+      - To her surprise — something unexpected
+      - Although / Even though — contrast within a sentence
+
+      CONSEQUENCE CONNECTORS (cause and result):
+      - Consequently — as a result
+      - As a result — because of this
+
+      ADDITION CONNECTORS (adding information):
+      - Furthermore / Moreover — adding an important point
+      - What is more — and also
+
+      "B2 writers use these to sound sophisticated. Start using them in your stories and
+      your writing will jump to the next level!"
+    introductionZh: |
+      Inkwell 大师在铁砧上放了一排金色链条。
+
+      "这些，"他说，"是叙事连接词——把一个事件和下一个事件连接起来的链条。
+      没有它们，你的故事读起来就像一个事件清单。有了它们，它就像河流一样流畅。"
+
+      他把链条分成几组：
+
+      时间连接词（事情何时发生）：
+      - Meanwhile（与此同时）——两件事同时发生
+      - Eventually（最终）——经过很长时间
+      - All of a sudden / Suddenly（突然）——意想不到的事
+      - Gradually（渐渐地）——慢慢地，一步一步
+      - By the time（到……的时候）——连接两个过去事件
+      - At that moment（在那一刻）——精确定位时间
+      - Before long（不久之后）——很快就
+      - No sooner had... than（一……就）——紧接着
+
+      对比连接词（意想不到的结果）：
+      - Nevertheless / Even so（尽管如此）——尽管……
+      - To her surprise（令她惊讶的是）——意料之外
+      - Although / Even though（虽然/即使）——句内对比
+
+      因果连接词（原因和结果）：
+      - Consequently（因此）——结果
+      - As a result（因此）——因为这个
+
+      补充连接词（添加信息）：
+      - Furthermore / Moreover（此外）——添加重要信息
+      - What is more（而且）——并且
+
+      "B2级的作家使用这些来让自己听起来更有水平。在你的故事中开始使用它们，
+      你的写作将跃升到下一个层次！"
+
+    rules:
+      - pattern: 'Time Connectors in Narratives'
+        meaning: 'Use time connectors to show the order and pace of events'
+        meaningZh: '使用时间连接词展示事件的顺序和节奏'
+        examples:
+          - base: 'She searched the room. She found the key under the bed.'
+            transformed: 'She searched every corner of the room. Eventually, she found the key hidden under the bed.'
+            sentence: '"Eventually" shows that the searching took a long time, adding to the suspense.'
+            sentenceZh: '"Eventually"表明搜索花了很长时间，增加了悬念。'
+          - base: 'He was running. The bridge fell.'
+            transformed: 'No sooner had he reached the other side than the bridge collapsed into the river below.'
+            sentence: '"No sooner had...than" emphasises how narrowly he escaped.'
+            sentenceZh: '"No sooner had...than"强调了他多么惊险地逃脱了。'
+      - pattern: 'Contrast and Surprise Connectors'
+        meaning: 'Use contrast connectors for unexpected turns in the story'
+        meaningZh: '使用对比连接词表现故事中意想不到的转折'
+        examples:
+          - base: 'The dragon looked fierce. It was actually gentle.'
+            transformed: 'The dragon bared its enormous teeth and roared. Nevertheless, when the girl reached out her hand, it lowered its head gently and let her stroke its scales.'
+            sentence: '"Nevertheless" signals the surprise contrast between the dragon''s fierce appearance and gentle behaviour.'
+            sentenceZh: '"Nevertheless"标志着龙凶猛外表和温柔行为之间的惊人反差。'
+
+    tips:
+      - 'Use "Meanwhile" to switch between two storylines happening at the same time.'
+      - '"All of a sudden" is more dramatic than "suddenly" — save it for your biggest moment.'
+      - '"To his surprise" is perfect for story twists and unexpected discoveries.'
+      - 'Do not start every sentence with a connector. Mix them with regular sentences.'
+    tipsZh:
+      - '使用"Meanwhile"在同时发生的两条故事线之间切换。'
+      - '"All of a sudden"比"suddenly"更有戏剧性——留给最重大的时刻。'
+      - '"To his surprise"非常适合故事转折和意想不到的发现。'
+      - '不要每个句子都用连接词开头。把它们和普通句子混合使用。'
+
+    practicePreview:
+      - id: Q05-L06-P01
+        question: |
+          Fill in the blanks with appropriate narrative connectors:
+          (Meanwhile / Eventually / All of a sudden / To her surprise / Nevertheless)
+
+          Lily searched the house for hours. (1) _____, she found a trapdoor under the kitchen rug.
+          She climbed down the ladder into a dark tunnel. (2) _____, a torch on the wall burst into flame.
+          (3) _____, the tunnel was cold and damp. (4) _____, she kept walking.
+          (5) _____, her brother was still outside, completely unaware of what she had discovered.
+        questionZh: |
+          用恰当的叙事连接词填空：
+          (Meanwhile / Eventually / All of a sudden / To her surprise / Nevertheless)
+
+          Lily 找了几个小时。(1) _____, 她在厨房地毯下发现了一个活板门。
+          她顺着梯子爬进了一条黑暗的隧道。(2) _____, 墙上的火把突然燃烧起来。
+          (3) _____, 隧道又冷又潮。(4) _____, 她继续走着。
+          (5) _____, 她哥哥还在外面，完全不知道她发现了什么。
+        answer: '(1) Eventually (2) All of a sudden / To her surprise (3) Nevertheless (4) Nevertheless (5) Meanwhile'
+        explanation: '"Eventually" shows the long search. "All of a sudden" or "To her surprise" marks the unexpected torch. "Nevertheless" contrasts the unpleasant conditions with her determination. "Meanwhile" switches to the brother''s parallel storyline.'
+        explanationZh: '"Eventually"表示漫长的搜索。"All of a sudden"或"To her surprise"标记了意想不到的火把。"Nevertheless"对比了不愉快的环境和她的决心。"Meanwhile"切换到哥哥的平行故事线。'
