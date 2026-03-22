@@ -1,0 +1,1266 @@
+readings:
+  # ============================================================
+  # R101 – The Idiom Jungle (Level 3, ~320 words)
+  # ============================================================
+  - id: R101
+    title: 'The Idiom Jungle'
+    titleZh: '成语丛林'
+    level: 3
+    wordCount: 320
+    topic: idiom origins
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'Oxford Learner Dictionary: Idiom Origins'
+      author: 'Oxford University Press'
+      note: 'Original passage inspired by research on English idiom histories'
+    passage: |
+      Every language has its own collection of strange phrases that do not mean what the individual words suggest. In English, we call these "idioms," and learning them is like exploring a jungle full of surprises.
+
+      [1]
+
+      Take the idiom "break the ice," for example. Today, it means to make people feel more comfortable in an awkward social situation. But where did it come from? In the past, when trade ships could not pass through frozen waterways, smaller boats were sent ahead to break the ice and create a path. This act of clearing the way became a metaphor for making social situations easier.
+
+      [2]
+
+      Another fascinating idiom is "let the cat out of the bag." Hundreds of years ago, dishonest market sellers would sometimes put a cat in a bag and pretend it was a more expensive piglet. If someone opened the bag and the cat jumped out, the trick was revealed. Today, the phrase simply means to accidentally tell a secret.
+
+      [3]
+
+      Some idioms travel across languages. The Chinese expression "add legs to a snake" (画蛇添足) has a similar idea to the English phrase "too many cooks spoil the broth" — both warn against doing too much. Learning the stories behind idioms not only helps you remember them but also opens a window into how different cultures think.
+
+      Understanding idioms is essential for the FCE exam, where they often appear in reading passages and Use of English exercises. The best way to learn them is through reading and conversation — the more you encounter them in real contexts, the more naturally you will use them yourself.
+    passageZh: |
+      每种语言都有自己独特的奇怪短语——这些短语的意思和字面上的意思不一样。在英语中，我们称之为"idioms"（习语/成语），学习它们就像探索一片充满惊喜的丛林。
+
+      [1]
+
+      以"break the ice"（打破僵局）这个习语为例。今天，它的意思是让人们在尴尬的社交场合中感到更自在。但它是怎么来的呢？在过去，当贸易船无法通过结冰的水道时，会派小船先去破冰开路。这种清除障碍的行为后来成了让社交场合更轻松的比喻。
+
+      [2]
+
+      另一个有趣的习语是"let the cat out of the bag"（泄露秘密）。几百年前，不诚实的市场商贩有时会把一只猫装在袋子里，假装是一只更贵的小猪仔。如果有人打开袋子，猫跳了出来，骗局就被揭穿了。今天，这个短语只是表示不小心说出了一个秘密。
+
+      [3]
+
+      有些习语可以跨语言传播。中国的成语"画蛇添足"和英语短语"too many cooks spoil the broth"（厨子多了烧坏汤）有类似的含义——两者都告诫不要做得太多。了解习语背后的故事不仅能帮助你记住它们，还能打开一扇了解不同文化思维方式的窗户。
+
+      理解习语对 FCE 考试至关重要，它们经常出现在阅读文章和 Use of English 练习中。学习它们最好的方法是通过阅读和对话——你在真实语境中遇到它们越多，就越能自然地使用它们。
+    vocabHighlights:
+      - word: metaphor
+        ref: V1003
+      - word: essential
+        ref: V1015
+      - word: encounter
+        ref: V0919
+    questions:
+      - id: R101-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'Many English idioms have surprising historical origins that date back hundreds of years.'
+          B: 'English grammar rules are different from Chinese grammar rules.'
+          C: 'The FCE exam tests vocabulary, grammar, reading, and listening skills.'
+        answer: 'A'
+        explanation: 'Gap [1] comes after the introduction about idioms and before examples of specific idiom origins. "Surprising historical origins" bridges to the examples that follow.'
+        explanationZh: '空缺[1]在关于习语的介绍之后，在具体习语来源的例子之前。"令人惊讶的历史起源"衔接到后面的例子。'
+      - id: R101-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Ships in the 18th century were built from oak wood and could carry hundreds of passengers.'
+          B: 'Similarly, many other everyday English expressions have roots in historical events and old customs.'
+          C: 'The weather in England is often cold and rainy during the winter months.'
+        answer: 'B'
+        explanation: '"Similarly" connects the "break the ice" example to the next example ("let the cat out of the bag"), showing they both have historical roots.'
+        explanationZh: '"Similarly"将"break the ice"的例子与下一个例子"let the cat out of the bag"连接起来，显示它们都有历史渊源。'
+      - id: R101-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Cats have been popular pets in England since the Roman period.'
+          B: 'These examples show that idioms are not just random phrases — they carry the wisdom and humour of past generations.'
+          C: 'Market sellers today use electronic payment systems instead of cash.'
+        answer: 'B'
+        explanation: '"These examples" refers back to both idiom stories, and "wisdom and humour of past generations" bridges to the next paragraph about idioms crossing cultures.'
+        explanationZh: '"These examples"指代前面两个习语故事，"过去几代人的智慧和幽默"衔接到下一段关于习语跨文化传播的内容。'
+      - id: R101-Q4
+        type: vocabulary-in-context
+        question: 'What does "metaphor" mean in the passage?'
+        questionZh: '文中的"metaphor"是什么意思？'
+        options:
+          A: 'A type of ship used for trade'
+          B: 'A word or phrase used to describe something by comparing it to something else'
+          C: 'A historical event that changed the English language'
+          D: 'A type of puzzle or riddle'
+        answer: 'B'
+        explanation: 'The passage explains that the real act of breaking ice "became a metaphor" — i.e., was used as a comparison — for making social situations easier.'
+        explanationZh: '文章解释说破冰的真实行为"成为了一个比喻"——即被用作一种对比——来形容让社交场合更轻松。'
+
+  # ============================================================
+  # R102 – Why Do Languages Change? (Level 3, ~330 words)
+  # ============================================================
+  - id: R102
+    title: 'Why Do Languages Change?'
+    titleZh: '语言为什么会变化？'
+    level: 3
+    wordCount: 330
+    topic: language evolution
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Bitesize: History of the English Language'
+      author: 'BBC'
+      note: 'Original passage inspired by language evolution research'
+    passage: |
+      If you could travel back in time to England in the year 1000, you would not understand a single word anyone said. Old English sounds so different from Modern English that it might as well be a foreign language. So how did English change so dramatically?
+
+      Languages change for several reasons. Firstly, when different groups of people meet, their languages mix. English, for instance, borrowed thousands of words from French after the Norman Conquest in 1066. Words like "beef," "justice," and "adventure" all came from French.
+
+      [1]
+
+      Secondly, new inventions and ideas need new words. A hundred years ago, nobody used words like "internet," "selfie," or "emoji." As technology develops, language must keep up. Young people are especially creative with language — they invent slang that sometimes becomes part of standard English.
+
+      [2]
+
+      Thirdly, pronunciation changes naturally over time. The way people in London spoke in Shakespeare's time was quite different from how they speak today. Vowel sounds, in particular, shifted dramatically during a period that linguists call the "Great Vowel Shift."
+
+      [3]
+
+      Today, English continues to evolve faster than ever. Social media, global travel, and the internet connect people from different cultures, and new words and phrases spread around the world in hours rather than centuries. Some language experts worry that many smaller languages will disappear as English becomes more dominant. Nevertheless, history shows that languages are remarkably tough — they bend, borrow, and blend, but they rarely break completely.
+
+      Understanding how language changes helps us appreciate why English has so many irregular spellings and unusual phrases. It also reminds us that every word we use has a story behind it.
+    passageZh: |
+      如果你能穿越时空回到公元1000年的英国，你一个字都听不懂。古英语听起来和现代英语如此不同，简直像一门外语。那么英语是怎样发生如此巨大的变化的呢？
+
+      语言变化有几个原因。首先，当不同的人群相遇时，他们的语言会混合。例如，1066年诺曼征服之后，英语从法语中借用了数千个词汇。"beef"（牛肉）、"justice"（正义）和"adventure"（冒险）等词都来自法语。
+
+      [1]
+
+      其次，新的发明和想法需要新的词汇。一百年前，没有人使用"internet"（互联网）、"selfie"（自拍）或"emoji"（表情符号）这样的词。随着科技发展，语言必须跟上。年轻人在语言方面特别有创造力——他们发明的俚语有时会成为标准英语的一部分。
+
+      [2]
+
+      第三，发音会随时间自然变化。莎士比亚时代伦敦人的说话方式与今天大不相同。特别是元音发生了巨大的变化，语言学家称之为"元音大转移"。
+
+      [3]
+
+      今天，英语继续以前所未有的速度演变。社交媒体、全球旅行和互联网将不同文化的人们联系在一起，新词新语在几小时内就能传遍世界，而不是几个世纪。一些语言专家担心，随着英语变得更加主导，许多小语种将会消失。然而，历史表明语言是非常顽强的——它们弯曲、借用、融合，但很少完全断裂。
+
+      了解语言如何变化有助于我们理解为什么英语有这么多不规则拼写和不寻常的短语。它也提醒我们，我们使用的每个词背后都有一个故事。
+    vocabHighlights:
+      - word: dramatically
+        ref: V0997
+      - word: evolve
+        ref: V0998
+      - word: dominant
+        ref: V1014
+    questions:
+      - id: R102-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'As a result, nearly 30% of modern English words have French origins, making English one of the most blended languages in the world.'
+          B: 'The Norman Conquest was a battle that took place near Hastings in southern England.'
+          C: 'French cuisine is famous around the world for its delicate flavours.'
+        answer: 'A'
+        explanation: '"As a result" shows the consequence of borrowing French words — 30% of English has French origins. This extends the point before moving to the next reason.'
+        explanationZh: '"As a result"展示了借用法语词的结果——30%的英语有法语起源。这扩展了前面的观点，再过渡到下一个原因。'
+      - id: R102-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'For example, the word "cool" originally meant low temperature, but young people gave it a new meaning — "impressive" or "good."'
+          B: 'The internet was invented in the 1990s by Tim Berners-Lee.'
+          C: 'Learning vocabulary is one of the most important parts of studying English.'
+        answer: 'A'
+        explanation: 'This gives a concrete example of young people changing language (slang "cool"), directly supporting the previous sentence about youth creativity.'
+        explanationZh: '这给出了一个年轻人改变语言的具体例子（俚语"cool"），直接支持前一句关于年轻人创造力的内容。'
+      - id: R102-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Shakespeare wrote 37 plays and 154 sonnets during his lifetime.'
+          B: 'Such changes explain why English spelling often does not match pronunciation — many spellings were fixed before sounds finished changing.'
+          C: 'London is the capital city of England and has a population of about nine million.'
+        answer: 'B'
+        explanation: '"Such changes" refers to the pronunciation shifts just described. The explanation about spelling vs. pronunciation bridges naturally to the conclusion about modern English.'
+        explanationZh: '"Such changes"指代刚描述的发音变化。关于拼写与发音不匹配的解释自然过渡到关于现代英语的结论。'
+      - id: R102-Q4
+        type: vocabulary-in-context
+        question: 'What does "dominant" mean in the passage?'
+        questionZh: '文中的"dominant"是什么意思？'
+        options:
+          A: 'Quiet and unimportant'
+          B: 'Old and traditional'
+          C: 'More powerful and influential than others'
+          D: 'Difficult to learn'
+        answer: 'C'
+        explanation: 'The passage says smaller languages may disappear as English becomes "more dominant" — meaning more powerful and widely used.'
+        explanationZh: '文章说随着英语变得"more dominant"——即更强大和更广泛使用——许多小语种可能消失。'
+
+  # ============================================================
+  # R103 – Lost in Translation (Level 3, ~340 words)
+  # ============================================================
+  - id: R103
+    title: 'Lost in Translation'
+    titleZh: '翻译中丢失的意思'
+    level: 3
+    wordCount: 340
+    topic: lost in translation
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'Mental Floss: Untranslatable Words'
+      author: 'Mental Floss'
+      note: 'Original passage inspired by cross-language translation challenges'
+    passage: |
+      Have you ever tried to translate a joke from Chinese to English, only to find that it is not funny any more? This common experience reveals one of the biggest challenges in language: some ideas simply do not translate well.
+
+      Every language has words that have no exact equivalent in other languages. In Japanese, "komorebi" describes the way sunlight filters through the leaves of trees, creating dancing patterns of light and shadow. English has no single word for this beautiful image. Similarly, the German word "Schadenfreude" means the secret pleasure you feel when someone else fails — a concept that English speakers recognise but cannot express in one word.
+
+      [1]
+
+      Idioms are particularly tricky to translate. The English expression "it is raining cats and dogs" makes perfect sense to English speakers, but if you translate it word by word into Chinese, people would be very confused. Likewise, the Chinese idiom "对牛弹琴" (playing the lute to a cow) has a clear meaning in Chinese, but its literal translation sounds strange in English.
+
+      [2]
+
+      Professional translators must be creative problem-solvers. When they encounter an untranslatable word, they have several strategies. They can explain the concept using several words, find the closest equivalent, or sometimes simply borrow the original word. That is why English has adopted words like "kung fu," "tofu," and "typhoon" from Chinese.
+
+      [3]
+
+      Technology has made translation easier than ever — you can translate entire paragraphs with a single click. However, machine translation still struggles with idioms, humour, and cultural references. A computer might translate "break a leg" (meaning "good luck") as a literal instruction about bones. This is why human translators remain essential, especially for literature, poetry, and any text where meaning goes beyond the surface of words.
+    passageZh: |
+      你有没有试过把一个中文笑话翻译成英文，结果发现一点都不好笑了？这种常见的经历揭示了语言中最大的挑战之一：有些想法就是翻译不好。
+
+      每种语言都有在其他语言中没有确切对应词的词汇。在日语中，"木漏れ日"（komorebi）描述的是阳光透过树叶洒下来，创造出光影舞动的图案。英语中没有一个词能表达这个美丽的画面。同样，德语词"Schadenfreude"意思是当别人失败时你感到的那种隐秘的快感——英语使用者能理解这个概念，但无法用一个词来表达。
+
+      [1]
+
+      习语翻译尤其棘手。英语表达"it is raining cats and dogs"（下猫下狗，意为倾盆大雨）对英语使用者来说完全能理解，但如果逐字翻译成中文，人们会非常困惑。同样，中文成语"对牛弹琴"在中文中意思很清楚，但其直译在英语中听起来很奇怪。
+
+      [2]
+
+      专业翻译人员必须是有创造力的问题解决者。当他们遇到无法翻译的词时，有几种策略。他们可以用几个词来解释这个概念，找到最接近的对应词，或者有时直接借用原词。这就是为什么英语从中文中引入了"kung fu"（功夫）、"tofu"（豆腐）和"typhoon"（台风）等词。
+
+      [3]
+
+      科技让翻译变得前所未有的简单——你可以一键翻译整段文字。然而，机器翻译在处理习语、幽默和文化参考时仍然很困难。电脑可能会把"break a leg"（意为"祝好运"）翻译成关于骨头的字面指令。这就是为什么人工翻译仍然至关重要，特别是对于文学、诗歌以及任何含义超越字面的文本。
+    vocabHighlights:
+      - word: equivalent
+        ref: V1000
+      - word: encounter
+        ref: V0919
+      - word: essential
+        ref: V1015
+    questions:
+      - id: R103-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'Chinese has many similar untranslatable treasures, such as "缘分" (yuánfèn), which describes the fate or destiny that brings people together.'
+          B: 'Japanese is one of the most widely spoken languages in Asia.'
+          C: 'Many students find learning German grammar particularly difficult.'
+        answer: 'A'
+        explanation: 'Gap [1] follows examples from Japanese and German. A Chinese example continues the pattern of showing untranslatable words from different languages.'
+        explanationZh: '空缺[1]在日语和德语的例子之后。一个中文例子延续了展示不同语言中不可翻译词汇的模式。'
+      - id: R103-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'The best way to learn idioms is to read as many English books as possible.'
+          B: 'These differences show that translation is not just about swapping words — it is about understanding the culture behind the language.'
+          C: 'Chinese students study English from primary school all the way through university.'
+        answer: 'B'
+        explanation: '"These differences" refers to the idiom translation examples. The sentence bridges from idiom problems to the next paragraph about translator strategies.'
+        explanationZh: '"These differences"指代习语翻译的例子。这句话从习语问题过渡到下一段关于翻译策略的内容。'
+      - id: R103-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Such borrowing has enriched English with flavours from nearly every language on Earth.'
+          B: 'China has a population of over 1.4 billion people.'
+          C: 'Translators usually work from home using a computer.'
+        answer: 'A'
+        explanation: '"Such borrowing" refers to the strategy of borrowing words from other languages. It extends the point before the technology paragraph.'
+        explanationZh: '"Such borrowing"指代从其他语言借用词汇的策略。它在科技段落之前扩展了这个观点。'
+      - id: R103-Q4
+        type: vocabulary-in-context
+        question: 'What does "equivalent" mean in the passage?'
+        questionZh: '文中的"equivalent"是什么意思？'
+        options:
+          A: 'A word that sounds similar in another language'
+          B: 'A word or expression with the same meaning in another language'
+          C: 'A word that is difficult to pronounce'
+          D: 'A word that has multiple meanings'
+        answer: 'B'
+        explanation: 'The passage says some words have "no exact equivalent" — meaning no word with exactly the same meaning — in other languages.'
+        explanationZh: '文章说有些词在其他语言中"没有确切的对应词"——即没有意思完全相同的词。'
+
+  # ============================================================
+  # R104 – The Jungle Explorer's Phrasebook (Level 3, ~310 words)
+  # ============================================================
+  - id: R104
+    title: 'The Jungle Explorer''s Phrasebook'
+    titleZh: '丛林探险家的常用语手册'
+    level: 3
+    wordCount: 310
+    topic: phrasal verbs
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage teaching phrasal verbs through adventure narrative'
+    passage: |
+      Maya was excited to set off on her first jungle expedition with Dr. Torres, a famous botanist. She had taken up photography last year, and this trip was a golden opportunity to photograph rare orchids deep in the rainforest.
+
+      On the first morning, they set off before sunrise. Maya had to keep up with Dr. Torres, who walked incredibly fast. "Do not fall behind!" he called. "The monkeys get curious if you stand still for too long."
+
+      By midday, they had run out of water. Dr. Torres pointed out a small stream nearby. "We can fill in our bottles here," he said. "But first, let me figure out if this water is safe to drink." He checked the water carefully and gave the thumbs up.
+
+      As they went through a particularly dense section of the jungle, Maya came across something astonishing — a flower she had never seen before. "Dr. Torres, come and look at this!" she whispered excitedly.
+
+      He turned up moments later, his eyes wide with surprise. "Do you know what this is?" he asked. "It is a Ghost Orchid — one of the rarest flowers in the world! Scientists have been looking for this species in this jungle for years, but nobody has come up with proof that it grows here."
+
+      Maya carefully took a photograph. She could not get over how beautiful the white petals looked against the dark green leaves.
+
+      "Well," Dr. Torres said, smiling, "your photograph will make a real difference. It will help us set up a conservation area to protect this species."
+
+      As they headed back to camp, Maya thought about the day's events. She had almost given up photography last year when she felt she was not improving. Now she was glad she had carried on. Sometimes you just need to hold on a little longer, and amazing things turn out to happen.
+    passageZh: |
+      Maya 很兴奋能和著名植物学家 Torres 博士一起踏上她的第一次丛林探险。她去年开始学摄影，这次旅行是拍摄雨林深处稀有兰花的绝佳机会。
+
+      第一天早上，他们在日出前就出发了。Maya 必须跟上 Torres 博士，他走得非常快。"别落后！"他喊道。"如果你站着不动太久，猴子们会好奇的。"
+
+      到中午，他们的水喝完了。Torres 博士指出附近有一条小溪。"我们可以在这里把水壶灌满，"他说。"不过先让我看看这水能不能喝。"他仔细检查了水质，然后竖起了大拇指。
+
+      当他们穿过一段特别茂密的丛林时，Maya 偶然发现了一个令人惊叹的东西——一朵她从未见过的花。"Torres 博士，快来看这个！"她兴奋地低声说。
+
+      他很快出现了，眼睛因惊讶而睁大。"你知道这是什么吗？"他问。"这是一朵幽灵兰花——世界上最稀有的花之一！科学家们多年来一直在这片丛林里寻找这个物种，但没有人能证明它生长在这里。"
+
+      Maya 小心翼翼地拍了一张照片。她无法相信白色的花瓣映衬着深绿色的叶子是如此美丽。
+
+      "嗯，"Torres 博士微笑着说，"你的照片将会产生真正的影响。它将帮助我们建立一个保护区来保护这个物种。"
+
+      在回营地的路上，Maya 想着这一天发生的事。她去年几乎放弃了摄影，因为觉得自己没有进步。现在她很高兴自己坚持了下来。有时候你只需要再坚持一会儿，美好的事情就会发生。
+    vocabHighlights:
+      - word: set off
+        ref: V0925
+      - word: come across
+        ref: V0919
+      - word: carry on
+        ref: V0929
+    questions:
+      - id: R104-Q1
+        type: multiple-choice
+        question: 'What was the main purpose of Maya''s jungle trip?'
+        questionZh: 'Maya丛林之旅的主要目的是什么？'
+        options:
+          A: 'To study monkey behaviour'
+          B: 'To photograph rare orchids in the rainforest'
+          C: 'To learn how to survive in the wild'
+          D: 'To find safe drinking water'
+        answer: 'B'
+        explanation: 'The first paragraph states Maya "took up photography" and the trip was "a golden opportunity to photograph rare orchids."'
+        explanationZh: '第一段说Maya"开始学摄影"，这次旅行是"拍摄稀有兰花的绝佳机会"。'
+      - id: R104-Q2
+        type: multiple-choice
+        question: 'Why was the Ghost Orchid discovery so important?'
+        questionZh: '为什么发现幽灵兰花如此重要？'
+        options:
+          A: 'Nobody knew what a Ghost Orchid looked like'
+          B: 'It was proof that the species grows in that jungle'
+          C: 'Dr. Torres had planted it there years ago'
+          D: 'It could be used to make medicine'
+        answer: 'B'
+        explanation: 'Dr. Torres says "nobody has come up with proof that it grows here" — Maya''s photograph provides that proof.'
+        explanationZh: 'Torres 博士说"没有人能证明它生长在这里"——Maya的照片提供了证据。'
+      - id: R104-Q3
+        type: vocabulary-in-context
+        question: 'In the passage, "carried on" means:'
+        questionZh: '文中的"carried on"意思是：'
+        options:
+          A: 'Picked something up and moved it'
+          B: 'Continued doing something'
+          C: 'Complained about something'
+          D: 'Started something new'
+        answer: 'B'
+        explanation: 'Maya "had almost given up" but "was glad she had carried on" — she continued with photography despite difficulties.'
+        explanationZh: 'Maya"几乎放弃了"但"很高兴自己坚持了下来"——尽管困难重重她还是继续了摄影。'
+      - id: R104-Q4
+        type: multiple-choice
+        question: 'How many phrasal verbs are used in the passage?'
+        questionZh: '文章中使用了多少个短语动词？'
+        options:
+          A: 'Five or fewer'
+          B: 'Between six and ten'
+          C: 'More than ten'
+          D: 'Exactly three'
+        answer: 'C'
+        explanation: 'The passage contains at least 12 phrasal verbs: set off (x2), taken up, keep up, fall behind, run out of, pointed out, fill in, figure out, went through, came across, turned up, come up with, get over, set up, given up, carried on, hold on, turn out.'
+        explanationZh: '文章包含至少12个短语动词：set off（x2）、taken up、keep up、fall behind、run out of、pointed out、fill in、figure out、went through、came across、turned up、come up with、get over、set up、given up、carried on、hold on、turn out。'
+
+  # ============================================================
+  # R105 – How Animals Communicate (Level 3, ~350 words)
+  # ============================================================
+  - id: R105
+    title: 'How Animals Communicate'
+    titleZh: '动物如何交流'
+    level: 3
+    wordCount: 350
+    topic: communication styles
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic Kids: Animal Communication'
+      author: 'National Geographic'
+      note: 'Original passage inspired by animal communication research'
+    passage: |
+      When we think about communication, we tend to focus on human language — words, sentences, and grammar. However, the animal kingdom has developed an astonishing variety of ways to share information, and some of them are remarkably sophisticated.
+
+      Honeybees are perhaps the most famous animal communicators. When a bee discovers a good source of food, it returns to the hive and performs a special movement known as the "waggle dance." By changing the angle and duration of the dance, the bee tells the other bees exactly where the food is, how far away it is, and even how much there is. Scientists have studied this dance for decades and are still amazed by its precision.
+
+      [1]
+
+      Dolphins use a complex system of clicks, whistles, and body movements to communicate. Each dolphin has its own unique "signature whistle" — essentially a name that other dolphins use to call it. Researchers have found that dolphins can remember these signature whistles for over twenty years, even after being separated from each other.
+
+      [2]
+
+      Even plants communicate, though not with sounds. When a caterpillar starts eating a plant's leaves, the plant releases chemical signals into the air. Nearby plants pick up these signals and start producing chemicals that make their leaves taste bitter, so the caterpillar moves on. In other words, the damaged plant warns its neighbours about the danger.
+
+      [3]
+
+      What makes animal communication different from human language? Linguists point out that animal communication is primarily about immediate needs — food, danger, mating. Human language, on the other hand, can discuss the past, imagine the future, and even talk about things that do not exist. We can tell jokes, write poetry, and argue about abstract ideas like justice and freedom. This ability to use language creatively is, as far as we know, uniquely human.
+    passageZh: |
+      当我们想到交流时，往往会关注人类的语言——词汇、句子和语法。然而，动物王国已经发展出了种类惊人的信息共享方式，其中一些非常复杂。
+
+      蜜蜂也许是最著名的动物交流者。当一只蜜蜂发现了良好的食物来源时，它会回到蜂巢并表演一种被称为"摇摆舞"的特殊动作。通过改变舞蹈的角度和持续时间，蜜蜂可以告诉其他蜜蜂食物在哪里、有多远，甚至有多少。科学家们研究这种舞蹈已经几十年了，仍然对其精确性感到惊叹。
+
+      [1]
+
+      海豚使用复杂的咔嗒声、哨声和身体动作系统来交流。每只海豚都有自己独特的"签名哨声"——本质上就是其他海豚用来呼唤它的名字。研究人员发现，海豚可以记住这些签名哨声超过二十年，即使在彼此分开之后。
+
+      [2]
+
+      就连植物也会交流，尽管不是通过声音。当毛毛虫开始吃一棵植物的叶子时，植物会向空气中释放化学信号。附近的植物接收到这些信号后，开始产生使叶子味道变苦的化学物质，这样毛毛虫就会离开。换句话说，受损的植物警告了邻居们关于危险的消息。
+
+      [3]
+
+      动物交流和人类语言有什么不同？语言学家指出，动物交流主要涉及即时需求——食物、危险、交配。而人类语言可以讨论过去、想象未来，甚至谈论不存在的事物。我们可以讲笑话、写诗、争论正义和自由等抽象概念。据我们所知，这种创造性地使用语言的能力是人类独有的。
+    vocabHighlights:
+      - word: sophisticated
+        ref: V1049
+      - word: primarily
+        ref: V0999
+      - word: tend to
+        ref: V1012
+    questions:
+      - id: R105-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'Bees are not the only creatures with impressive communication skills, though.'
+          B: 'Honey is produced by bees and has been used in cooking for thousands of years.'
+          C: 'Many people are afraid of bees because they can sting.'
+        answer: 'A'
+        explanation: '"Not the only creatures" transitions from bees to the next example (dolphins), maintaining the structure of listing animal communicators.'
+        explanationZh: '"不是唯一拥有出色交流技能的生物"从蜜蜂过渡到下一个例子（海豚），保持了列举动物交流者的结构。'
+      - id: R105-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Dolphins live in groups called pods and can swim at speeds of up to 60 kilometres per hour.'
+          B: 'Such long-lasting social bonds are rare in the animal world and suggest a level of emotional intelligence.'
+          C: 'Whale watching is a popular tourist activity in many coastal areas.'
+        answer: 'B'
+        explanation: '"Such long-lasting social bonds" refers to the 20-year whistle memory. It bridges to the next example (plants) by hinting at intelligence.'
+        explanationZh: '"如此持久的社交纽带"指代20年的哨声记忆。通过暗示智慧过渡到下一个例子（植物）。'
+      - id: R105-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Gardens require regular watering, especially during the hot summer months.'
+          B: 'This invisible network of chemical messages has led scientists to call it the "wood wide web."'
+          C: 'Caterpillars eventually transform into butterflies through a process called metamorphosis.'
+        answer: 'B'
+        explanation: '"This invisible network of chemical messages" refers to the plant communication just described. "Wood wide web" is a vivid bridge to the concluding paragraph.'
+        explanationZh: '"这个无形的化学信息网络"指代刚描述的植物交流。"Wood wide web"生动地过渡到结论段。'
+      - id: R105-Q4
+        type: vocabulary-in-context
+        question: 'What does "precision" mean in the passage?'
+        questionZh: '文中的"precision"是什么意思？'
+        options:
+          A: 'The speed of something'
+          B: 'The quality of being exact and accurate'
+          C: 'The ability to learn new things'
+          D: 'The strength of something'
+        answer: 'B'
+        explanation: 'Scientists are "amazed by the precision" of the waggle dance — it accurately communicates direction, distance, and quantity.'
+        explanationZh: '科学家对摇摆舞的"精确性"感到惊叹——它准确地传达了方向、距离和数量。'
+
+  # ============================================================
+  # R106 – The Body Language Code (Level 3, ~320 words)
+  # ============================================================
+  - id: R106
+    title: 'The Body Language Code'
+    titleZh: '身体语言密码'
+    level: 3
+    wordCount: 320
+    topic: communication styles
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage about non-verbal communication across cultures'
+    passage: |
+      Words make up only a small part of how we communicate. Research suggests that up to 93% of communication is non-verbal — through facial expressions, gestures, posture, and tone of voice. Understanding body language is like learning a secret code that everyone uses but few people study.
+
+      A genuine smile, for instance, is not just about the mouth. Scientists have found that a real smile involves muscles around the eyes, creating small wrinkles called "crow's feet." A fake smile only uses the mouth muscles. This difference is so reliable that researchers named the real smile the "Duchenne smile" after the French doctor who first described it.
+
+      However, body language is not universal. The same gesture can have completely different meanings in different cultures. In many Western countries, nodding your head means "yes" and shaking it means "no." In Bulgaria, it is the opposite — nodding means "no" and shaking means "yes." Imagine the confusion this could cause!
+
+      Eye contact is another area where cultures differ significantly. In British and American culture, making eye contact shows confidence and honesty. In contrast, in some East Asian cultures, looking directly at an older person can be seen as disrespectful. Neither approach is right or wrong — they are simply different cultural codes.
+
+      Gestures can also be misleading. The "thumbs up" sign is positive in most countries, but in some parts of the Middle East, it is considered rude. The "OK" hand sign means "everything is fine" in America, but it can be offensive in Brazil.
+
+      For the FCE exam, understanding body language vocabulary is useful in the Listening and Speaking sections. More importantly, being aware of body language helps you communicate more effectively in real life. As the saying goes, "Actions speak louder than words" — and that is one idiom that is true in every language.
+    passageZh: |
+      言语只占我们交流方式的一小部分。研究表明，高达93%的交流是非语言的——通过面部表情、手势、姿态和语调。理解身体语言就像学习一种所有人都在使用但很少有人研究的密码。
+
+      例如，一个真诚的微笑不仅仅是嘴巴的事。科学家发现，真正的微笑涉及眼周的肌肉，形成被称为"鱼尾纹"的小皱纹。假笑只使用嘴部肌肉。这种差异非常可靠，研究人员以首先描述它的法国医生的名字将真笑命名为"杜兴微笑"。
+
+      然而，身体语言并不是通用的。同一个手势在不同文化中可能有完全不同的含义。在许多西方国家，点头表示"是"，摇头表示"不是"。在保加利亚正好相反——点头表示"不"，摇头表示"是"。想象一下这可能造成的困惑！
+
+      眼神交流是另一个文化差异显著的领域。在英国和美国文化中，保持眼神交流表示自信和诚实。相比之下，在一些东亚文化中，直视年长者可能被视为不尊重。两种方式没有对错之分——它们只是不同的文化密码。
+
+      手势也可能造成误解。"竖大拇指"在大多数国家是积极的，但在中东一些地区被认为是粗鲁的。"OK"手势在美国表示"一切都好"，但在巴西可能是冒犯性的。
+
+      对于 FCE 考试，理解身体语言词汇在听力和口语部分很有用。更重要的是，意识到身体语言有助于你在现实生活中更有效地交流。俗话说，"行动胜于言辞"——这是一个在每种语言中都成立的成语。
+    vocabHighlights:
+      - word: significantly
+        ref: V0997
+      - word: in contrast
+        ref: V1000
+      - word: nevertheless
+        ref: V1009
+    questions:
+      - id: R106-Q1
+        type: multiple-choice
+        question: 'According to the passage, what percentage of communication is non-verbal?'
+        questionZh: '根据文章，非语言交流占多大比例？'
+        options:
+          A: 'About 50%'
+          B: 'Up to 93%'
+          C: 'Exactly 75%'
+          D: 'Less than 30%'
+        answer: 'B'
+        explanation: 'The passage states "up to 93% of communication is non-verbal."'
+        explanationZh: '文章说"高达93%的交流是非语言的"。'
+      - id: R106-Q2
+        type: multiple-choice
+        question: 'What is special about a Duchenne smile?'
+        questionZh: '杜兴微笑有什么特别的？'
+        options:
+          A: 'It only involves the mouth muscles'
+          B: 'It involves both mouth and eye muscles, making it genuine'
+          C: 'It is a type of smile only found in French culture'
+          D: 'It is a fake smile that looks very convincing'
+        answer: 'B'
+        explanation: 'A Duchenne smile involves "muscles around the eyes" in addition to the mouth — it is a genuine smile.'
+        explanationZh: '杜兴微笑除了嘴部外还涉及"眼周肌肉"——这是一个真诚的微笑。'
+      - id: R106-Q3
+        type: multiple-choice
+        question: 'What is the main message of the passage?'
+        questionZh: '文章的主要信息是什么？'
+        options:
+          A: 'Body language is the same all over the world'
+          B: 'Body language is more important than words and varies between cultures'
+          C: 'People should only communicate using words'
+          D: 'The FCE exam tests body language skills'
+        answer: 'B'
+        explanation: 'The passage emphasises that body language is a huge part of communication (93%) and varies significantly between cultures.'
+        explanationZh: '文章强调身体语言是交流的很大一部分（93%），并且在不同文化之间差异显著。'
+
+  # ============================================================
+  # R107 – The Phrase That Saved a Life (Level 3-4, ~360 words)
+  # ============================================================
+  - id: R107
+    title: 'The Phrase That Saved a Life'
+    titleZh: '救了一条命的短语'
+    level: 4
+    wordCount: 360
+    topic: jungle adventures
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original adventure story featuring phrasal verbs in context'
+    passage: |
+      When twelve-year-old Kai signed up for a jungle survival course in Borneo, he expected to learn how to build shelters and identify edible plants. He did not expect that a simple English phrase would save his life.
+
+      On the third day of the course, the group set off on a long hike through the rainforest. Kai had fallen behind the others because he stopped to take photographs of a bright blue butterfly. When he looked up, the trail had disappeared. He was completely alone.
+
+      At first, Kai tried to work out which direction the group had gone. He looked for broken branches and footprints, but the dense jungle floor gave away nothing. As the hours passed, he began to feel frightened. He had already run out of water, and the light was fading.
+
+      Then Kai remembered something the instructor had told them on the first day: "If you get lost, do not go through the jungle trying to find your way back. Stay where you are, make noise, and wait." The instructor had called this the STOP rule — Sit, Think, Observe, Plan.
+
+      Kai sat down on a fallen tree trunk. He thought carefully. He observed his surroundings — there was a small clearing nearby. He came up with a plan: he would blow his emergency whistle every thirty seconds and pile bright leaves in the clearing so a search party could spot him from above.
+
+      Forty minutes later, Kai heard voices. "Hold on! We are coming!" someone shouted. The instructor and two guides turned up, looking relieved. They had retraced the path and figured out where Kai had taken a wrong turn.
+
+      "You did exactly the right thing," the instructor said. "Most people who get lost in a jungle panic and try to find their own way out. That is how they get into even more trouble."
+
+      Back at camp, Kai looked up the word "resilience" in his dictionary. It meant "the ability to recover from difficulties." He smiled. That was exactly what today had taught him — along with a new appreciation for phrasal verbs.
+    passageZh: |
+      当十二岁的 Kai 报名参加婆罗洲的丛林生存课程时，他以为自己会学到如何搭建庇护所和辨认可食用的植物。他没想到一个简单的英语短语会救了他的命。
+
+      课程第三天，小组出发进行了一次穿越雨林的长途徒步。Kai 因为停下来拍一只亮蓝色蝴蝶的照片而落在了其他人后面。当他抬头时，小路消失了。他完全孤身一人。
+
+      起初，Kai 试图判断小组走的方向。他寻找折断的树枝和脚印，但茂密的丛林地面没有透露任何线索。随着时间的流逝，他开始感到害怕。水已经喝完了，光线也在变暗。
+
+      然后 Kai 想起了教练第一天告诉他们的话："如果你迷路了，不要穿过丛林试图找回去的路。待在原地，制造声响，等待。"教练把这叫做 STOP 法则——坐下、思考、观察、计划。
+
+      Kai 坐在一棵倒下的树干上。他仔细思考。他观察周围——附近有一小片空地。他想出了一个计划：每三十秒吹一次应急哨子，在空地上堆放颜色鲜艳的树叶，这样搜救队从上方就能发现他。
+
+      四十分钟后，Kai 听到了声音。"坚持住！我们来了！"有人喊道。教练和两名向导出现了，看起来松了一口气。他们循着原路找到了 Kai 走错的地方。
+
+      "你做得完全正确，"教练说。"大多数在丛林中迷路的人会惊慌失措，试图自己找到出路。那样反而会陷入更大的麻烦。"
+
+      回到营地后，Kai 在字典里查了"resilience"这个词。意思是"从困难中恢复的能力"。他笑了。这正是今天教给他的——以及对短语动词的全新认识。
+    vocabHighlights:
+      - word: set off
+        ref: V0925
+      - word: run out of
+        ref: V0931
+      - word: figure out
+        ref: V0937
+    questions:
+      - id: R107-Q1
+        type: multiple-choice
+        question: 'Why did Kai get separated from the group?'
+        questionZh: '为什么Kai和小组走散了？'
+        options:
+          A: 'He was feeling unwell and needed to rest'
+          B: 'He stopped to photograph a butterfly and lost the trail'
+          C: 'The instructor sent him on a different path'
+          D: 'He wanted to explore the jungle alone'
+        answer: 'B'
+        explanation: 'Kai "fell behind the others because he stopped to take photographs of a bright blue butterfly."'
+        explanationZh: 'Kai"因为停下来拍一只亮蓝色蝴蝶的照片而落在了其他人后面"。'
+      - id: R107-Q2
+        type: multiple-choice
+        question: 'What does STOP stand for in the survival rule?'
+        questionZh: 'STOP 生存法则代表什么？'
+        options:
+          A: 'Stay, Think, Organise, Panic'
+          B: 'Sit, Think, Observe, Plan'
+          C: 'Search, Track, Observe, Proceed'
+          D: 'Shout, Try, Open, Push'
+        answer: 'B'
+        explanation: 'The instructor called it the STOP rule — "Sit, Think, Observe, Plan."'
+        explanationZh: '教练称之为STOP法则——"坐下、思考、观察、计划"。'
+      - id: R107-Q3
+        type: vocabulary-in-context
+        question: 'In the passage, "gave away nothing" means:'
+        questionZh: '文中"gave away nothing"的意思是：'
+        options:
+          A: 'Was very generous'
+          B: 'Revealed no useful information'
+          C: 'Was completely empty'
+          D: 'Lost everything'
+        answer: 'B'
+        explanation: 'The jungle floor "gave away nothing" means it did not reveal any clues (footprints, broken branches) about which direction to go.'
+        explanationZh: '丛林地面"没有透露任何信息"意味着它没有显示任何关于走哪个方向的线索（脚印、折断的树枝）。'
+
+  # ============================================================
+  # R108 – Make or Do? The Great Collocation Challenge (Level 3, ~300 words)
+  # ============================================================
+  - id: R108
+    title: 'Make or Do? The Great Collocation Challenge'
+    titleZh: 'Make 还是 Do？搭配大挑战'
+    level: 3
+    wordCount: 300
+    topic: collocations
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage explaining make vs do collocations'
+    passage: |
+      If you have ever been confused about whether to say "make homework" or "do homework," you are not alone. The difference between "make" and "do" is one of the trickiest collocation puzzles in English — and even advanced learners sometimes get it wrong.
+
+      The general rule is simple but imperfect. We use "do" for tasks, jobs, and activities that do not produce a physical thing: do homework, do research, do the washing up, do your best. We use "make" when we create or produce something: make a cake, make a decision, make a speech, make friends.
+
+      However, there are many exceptions. We say "make a mistake" even though a mistake is not something we create on purpose. We say "do someone a favour" even though a favour could be seen as something you produce. The truth is, these combinations simply need to be memorised — they are fixed collocations that developed over centuries.
+
+      Here is a useful trick: think of "do" as performing an action (like a robot following instructions) and "make" as being creative (like an artist creating something new). This works for most cases. You "do" the dishes because washing is a routine task. You "make" a plan because planning requires creativity.
+
+      Other tricky pairs include "say" versus "tell" (we say something TO someone, but tell someone something), and "take" versus "have" (we take a break, take a photo, but have a shower, have a rest). In each case, the verb and noun form a partnership — like dance partners who always dance together.
+
+      The best way to learn collocations is not by memorising rules, but by reading widely and noticing which words appear together. When you come across a new collocation, write it down as a whole phrase, not as separate words. Your brain will remember the partnership more easily that way.
+    passageZh: |
+      如果你曾经困惑过该说"make homework"还是"do homework"，那你不是一个人。"Make"和"do"的区别是英语中最棘手的搭配难题之一——即使是高级学习者有时也会搞错。
+
+      总体规则很简单但并不完美。我们用"do"来表示任务、工作和不产生实物的活动：do homework（做作业）、do research（做研究）、do the washing up（洗碗）、do your best（尽力而为）。我们用"make"来表示创造或产生某物：make a cake（做蛋糕）、make a decision（做决定）、make a speech（发表演讲）、make friends（交朋友）。
+
+      然而，有很多例外。我们说"make a mistake"（犯错误），即使错误不是我们故意创造的。我们说"do someone a favour"（帮某人一个忙），即使帮忙可以被看作是你产生的东西。事实是，这些组合就是需要记忆的——它们是经过几个世纪发展而来的固定搭配。
+
+      这里有一个有用的技巧：把"do"想成执行一个动作（像机器人按照指令行事），把"make"想成有创造力（像艺术家创造新东西）。这在大多数情况下都适用。你"do"碗碟因为洗碗是日常任务。你"make"计划因为制定计划需要创造力。
+
+      其他棘手的搭配对包括"say"和"tell"（我们 say something TO someone，但 tell someone something），以及"take"和"have"（我们 take a break、take a photo，但 have a shower、have a rest）。在每种情况下，动词和名词形成搭配——就像总是在一起跳舞的舞伴。
+
+      学习搭配最好的方法不是死记硬背规则，而是广泛阅读并注意哪些词经常一起出现。当你遇到一个新搭配时，把它作为一个完整的短语写下来，而不是单独的词。这样你的大脑会更容易记住这个搭配组合。
+    vocabHighlights:
+      - word: come across
+        ref: V0919
+      - word: make a decision
+        ref: V0941
+      - word: do research
+        ref: V0949
+    questions:
+      - id: R108-Q1
+        type: multiple-choice
+        question: 'According to the passage, when do we generally use "make"?'
+        questionZh: '根据文章，我们一般什么时候用"make"？'
+        options:
+          A: 'For routine tasks and jobs'
+          B: 'When we create or produce something'
+          C: 'For all daily activities'
+          D: 'Only for cooking'
+        answer: 'B'
+        explanation: 'The passage states "We use make when we create or produce something."'
+        explanationZh: '文章说"我们用make来表示创造或产生某物"。'
+      - id: R108-Q2
+        type: multiple-choice
+        question: 'What is the author''s recommended way to learn collocations?'
+        questionZh: '作者推荐的学习搭配方法是什么？'
+        options:
+          A: 'Memorise grammar rules for every collocation'
+          B: 'Read widely and write down whole phrases when you find new collocations'
+          C: 'Only study "make" and "do" collocations'
+          D: 'Translate collocations directly from Chinese'
+        answer: 'B'
+        explanation: 'The last paragraph advises "reading widely and noticing which words appear together" and writing "a whole phrase, not separate words."'
+        explanationZh: '最后一段建议"广泛阅读并注意哪些词一起出现"，并写下"完整短语，而不是单独的词"。'
+
+  # ============================================================
+  # R109 – The Emoji Revolution (Level 3, ~330 words)
+  # ============================================================
+  - id: R109
+    title: 'The Emoji Revolution'
+    titleZh: '表情符号革命'
+    level: 3
+    wordCount: 330
+    topic: language evolution
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'The Guardian: How Emojis Changed Communication'
+      author: 'The Guardian'
+      note: 'Original passage inspired by the cultural impact of emojis'
+    passage: |
+      In 1999, a Japanese artist named Shigetaka Kurita designed 176 tiny pictures to help people express emotions in text messages. He called them "emoji" — a Japanese word meaning "picture character." Nobody expected these simple drawings to become a global language used by billions of people every day.
+
+      Today, there are over 3,600 different emojis, and new ones are added every year. They range from facial expressions and hand gestures to animals, food, flags, and even mythical creatures. In 2015, the "Face with Tears of Joy" emoji was named Word of the Year by Oxford Dictionaries — the first time a picture had ever received this honour.
+
+      Emojis have changed the way we communicate in several important ways. Firstly, they add emotional context to text messages. The sentence "I got your message" can feel cold or unfriendly in a text. Add a smiley face, and it immediately feels warm and positive. In other words, emojis do the job that tone of voice and facial expressions do in face-to-face conversation.
+
+      Secondly, emojis can communicate across language barriers. A heart emoji means love in every country. A thumbs-up means approval everywhere. This universal quality makes emojis a kind of modern pictographic language — similar to how ancient Egyptians used hieroglyphics thousands of years ago.
+
+      However, emojis are not without problems. The same emoji can be interpreted differently by different people. Research shows that the "slightly smiling face" emoji is seen as friendly by some people but sarcastic by others. Cultural differences also play a role — in China, the simple smiley face is sometimes used to express disapproval or awkwardness rather than happiness.
+
+      Despite these challenges, emojis are here to stay. They have become an essential part of digital communication, particularly among young people. Whether you love them or find them annoying, there is no denying that emojis have made our messages more colourful — quite literally.
+    passageZh: |
+      1999年，一位名叫栗田穣崇的日本艺术家设计了176个小图片，帮助人们在短信中表达情感。他称它们为"emoji"——一个日语词，意为"图画文字"。没有人预料到这些简单的图画会成为每天数十亿人使用的全球语言。
+
+      今天，有超过3600种不同的表情符号，每年还在增加新的。从面部表情和手势到动物、食物、旗帜，甚至神话生物。2015年，"笑哭"表情符号被牛津词典评为年度词汇——这是一张图片首次获得这一荣誉。
+
+      表情符号在几个重要方面改变了我们的交流方式。首先，它们为短信添加了情感背景。"我收到你的消息了"这句话在短信中可能感觉冷淡或不友好。加上一个笑脸，马上就感觉温暖和积极了。换句话说，表情符号承担了面对面交谈中语调和面部表情的功能。
+
+      其次，表情符号可以跨越语言障碍进行交流。一个爱心表情在每个国家都代表爱。一个竖大拇指在任何地方都表示赞同。这种通用性使表情符号成为一种现代象形文字语言——类似于古埃及人几千年前使用象形文字的方式。
+
+      然而，表情符号也不是没有问题。同一个表情符号可能被不同的人有不同的理解。研究表明，"微微笑脸"表情符号被一些人视为友好的，但被另一些人视为讽刺的。文化差异也起着作用——在中国，简单的笑脸有时用来表达不满或尴尬，而不是快乐。
+
+      尽管存在这些挑战，表情符号已经成为数字通信的重要组成部分，尤其是在年轻人中。无论你喜欢它们还是觉得它们烦人，不可否认的是，表情符号确实让我们的信息更加多彩——真的是字面意义上的。
+    vocabHighlights:
+      - word: in other words
+        ref: V1001
+      - word: despite
+        ref: V0994
+      - word: particularly
+        ref: V1011
+    questions:
+      - id: R109-Q1
+        type: multiple-choice
+        question: 'When were emojis first created?'
+        questionZh: '表情符号最早是什么时候创造的？'
+        options:
+          A: '1989'
+          B: '1999'
+          C: '2005'
+          D: '2015'
+        answer: 'B'
+        explanation: 'The passage states "In 1999, a Japanese artist named Shigetaka Kurita designed 176 tiny pictures."'
+        explanationZh: '文章说"1999年，一位名叫栗田穣崇的日本艺术家设计了176个小图片"。'
+      - id: R109-Q2
+        type: multiple-choice
+        question: 'Why does the author compare emojis to hieroglyphics?'
+        questionZh: '作者为什么把表情符号和象形文字相比较？'
+        options:
+          A: 'Both are difficult to understand'
+          B: 'Both use pictures to communicate meaning'
+          C: 'Both were invented in Egypt'
+          D: 'Both are used only by young people'
+        answer: 'B'
+        explanation: 'The passage calls emojis "a kind of modern pictographic language — similar to how ancient Egyptians used hieroglyphics."'
+        explanationZh: '文章称表情符号是"一种现代象形文字语言——类似于古埃及人使用象形文字"。'
+
+  # ============================================================
+  # R110 – When Gestures Go Wrong (Level 3, ~310 words)
+  # ============================================================
+  - id: R110
+    title: 'When Gestures Go Wrong'
+    titleZh: '当手势闹笑话'
+    level: 3
+    wordCount: 310
+    topic: lost in translation
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage about cross-cultural gesture misunderstandings'
+    passage: |
+      When Lisa, a British exchange student, arrived in Greece for the first time, she made an embarrassing mistake within the first hour. As her host family's car pulled up at the airport, she smiled and held up her open palm to wave hello. Her host mother looked shocked and turned away.
+
+      Lisa had no idea what she had done wrong. In Britain, showing an open palm is a friendly wave. However, in Greece, this gesture — called the "moutza" — is one of the rudest things you can do. It is similar to showing someone a rude finger in other cultures.
+
+      This kind of cross-cultural misunderstanding happens more often than you might think. Here are some other gestures that can get you into trouble abroad:
+
+      The head nod: As mentioned earlier, in Bulgaria, nodding means "no." Several travellers have accidentally ordered food they did not want because they nodded to be polite!
+
+      Crossing your fingers: In Britain, crossing your fingers means "good luck." In Vietnam, it is an offensive gesture.
+
+      Pointing with your index finger: In Malaysia and Indonesia, pointing at someone with your finger is considered very rude. Instead, people point with their thumb or their whole hand.
+
+      The lesson from these stories is clear: when you travel to a new country, do some research about local customs before you go. Even a small amount of preparation can save you from embarrassing situations.
+
+      For language learners, understanding gestures is just as important as learning vocabulary and grammar. Communication is not only about the words we use — it is about the whole package of signals we send, from our facial expressions to the way we move our hands. Being aware of these differences makes us better communicators and more respectful travellers.
+    passageZh: |
+      当英国交换生 Lisa 第一次到达希腊时，她在第一个小时内就犯了一个尴尬的错误。当寄宿家庭的车在机场停下来时，她微笑着举起张开的手掌挥手打招呼。她的寄宿妈妈看起来很震惊，转过身去了。
+
+      Lisa 完全不知道自己做错了什么。在英国，展示张开的手掌是友好的挥手。然而在希腊，这个手势——被称为"moutza"——是你能做的最粗鲁的事情之一。它类似于在其他文化中向别人竖中指。
+
+      这种跨文化误解比你想象的更常发生。以下是一些可能在国外惹麻烦的手势：
+
+      点头：如前所述，在保加利亚，点头表示"不"。好几个旅行者因为礼貌地点头而意外点了不想要的食物！
+
+      交叉手指：在英国，交叉手指表示"好运"。在越南，这是一个冒犯性的手势。
+
+      用食指指人：在马来西亚和印度尼西亚，用手指指人被认为非常粗鲁。人们会用拇指或整只手来指。
+
+      这些故事的教训很明确：当你去一个新的国家旅行时，出发前了解一下当地的习俗。即使是少量的准备也能让你避免尴尬的情况。
+
+      对于语言学习者来说，理解手势和学习词汇语法一样重要。交流不仅仅是关于我们使用的词汇——而是关于我们发送的全部信号，从面部表情到手部动作。意识到这些差异能让我们成为更好的沟通者和更尊重人的旅行者。
+    vocabHighlights:
+      - word: do research
+        ref: V0949
+      - word: as a result
+        ref: V1002
+    questions:
+      - id: R110-Q1
+        type: multiple-choice
+        question: 'Why was Lisa''s host mother shocked?'
+        questionZh: '为什么Lisa的寄宿妈妈很震惊？'
+        options:
+          A: 'Lisa was wearing inappropriate clothing'
+          B: 'Lisa''s friendly wave was a rude gesture in Greece'
+          C: 'Lisa arrived at the wrong airport'
+          D: 'Lisa did not speak any Greek'
+        answer: 'B'
+        explanation: 'Lisa showed her open palm as a wave, but in Greece this "moutza" gesture is very rude.'
+        explanationZh: 'Lisa张开手掌挥手，但在希腊这个"moutza"手势是非常粗鲁的。'
+      - id: R110-Q2
+        type: multiple-choice
+        question: 'What is the main advice the passage gives to travellers?'
+        questionZh: '文章给旅行者的主要建议是什么？'
+        options:
+          A: 'Never use gestures in foreign countries'
+          B: 'Learn the local language before travelling'
+          C: 'Research local customs and gestures before visiting a new country'
+          D: 'Only communicate using words, not body language'
+        answer: 'C'
+        explanation: 'The passage says "do some research about local customs before you go."'
+        explanationZh: '文章说"出发前了解一下当地的习俗"。'
+
+  # ============================================================
+  # R111 – The Secret Language of Flowers (Level 3, ~320 words)
+  # ============================================================
+  - id: R111
+    title: 'The Secret Language of Flowers'
+    titleZh: '花的秘密语言'
+    level: 3
+    wordCount: 320
+    topic: idiom origins
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'Smithsonian: The Language of Flowers'
+      author: 'Smithsonian Magazine'
+      note: 'Original passage inspired by the history of floriography'
+    passage: |
+      Before text messages, emails, and even telephones existed, people in Victorian England found a creative way to express feelings they could not say out loud — they sent flowers. Each type of flower had a specific meaning, and sending someone a carefully chosen bouquet was like writing a coded letter.
+
+      Red roses, as most people know, stand for romantic love. But did you know that yellow roses originally meant jealousy? A single daisy represented innocence, while a bunch of forget-me-nots meant "remember me forever." Sending someone marigolds was not a compliment — they stood for grief and despair.
+
+      This system was known as "floriography," and it became incredibly popular in the 1800s. People even published special dictionaries that listed the meaning of every flower. A young man might send a woman a bouquet of red tulips (a declaration of love), and she might reply with a sprig of laurel (meaning "I return your affection") or a yellow carnation (meaning "I am not interested").
+
+      The language of flowers gave rise to several English idioms that we still use today. "Pushing up daisies" is a humorous way to say someone has died. "Coming up roses" means everything is going well. "A shrinking violet" describes a very shy person.
+
+      Interestingly, flower meanings differ between cultures. In China, chrysanthemums are associated with good luck and happiness, which is why they are popular during festivals. In many European countries, however, chrysanthemums are linked to funerals and mourning. This cultural difference has led to several awkward situations when well-meaning visitors bring the wrong flowers to someone's home.
+
+      Although floriography has largely fallen out of everyday use, its legacy lives on in our language. The next time someone gives you flowers, you might want to look up what they really mean — the message could be more than just "happy birthday"!
+    passageZh: |
+      在短信、电子邮件甚至电话出现之前，维多利亚时代的英国人找到了一种创造性的方式来表达他们无法说出口的感情——他们送花。每种花都有特定的含义，送人一束精心挑选的花束就像写一封密码信。
+
+      红玫瑰，大多数人都知道，代表浪漫的爱情。但你知道黄玫瑰最初表示嫉妒吗？一朵雏菊代表纯真，而一束勿忘我意味着"永远记住我"。送人万寿菊可不是恭维——它们代表悲伤和绝望。
+
+      这个系统被称为"花语学"（floriography），在19世纪变得非常流行。人们甚至出版了列出每种花含义的特殊词典。一个年轻人可能会送一个女人一束红色郁金香（爱的告白），而她可能回以一枝月桂（意为"我回应你的爱意"）或一朵黄色康乃馨（意为"我不感兴趣"）。
+
+      花的语言催生了几个我们今天仍在使用的英语习语。"Pushing up daisies"是说某人已经去世的幽默说法。"Coming up roses"意味着一切都很顺利。"A shrinking violet"形容一个非常害羞的人。
+
+      有趣的是，花的含义在不同文化之间有所不同。在中国，菊花与好运和幸福相关，这就是为什么它们在节日期间很受欢迎。然而在许多欧洲国家，菊花与葬礼和哀悼有关。这种文化差异导致了好意的访客给别人送错花的尴尬情况。
+
+      虽然花语学在日常使用中已经大部分被淘汰了，但它的遗产在我们的语言中延续着。下次有人送你花时，你可能想查查它们真正的含义——消息可能不仅仅是"生日快乐"！
+    vocabHighlights:
+      - word: stand for
+        ref: V0938
+      - word: look up
+        ref: V0918
+    questions:
+      - id: R111-Q1
+        type: multiple-choice
+        question: 'What was floriography used for?'
+        questionZh: '花语学是用来做什么的？'
+        options:
+          A: 'Growing flowers in a garden'
+          B: 'Communicating feelings through the meanings of different flowers'
+          C: 'Studying the science of how flowers grow'
+          D: 'Painting pictures of flowers'
+        answer: 'B'
+        explanation: 'Floriography was a system where "each type of flower had a specific meaning" used to communicate feelings.'
+        explanationZh: '花语学是一个"每种花都有特定含义"的系统，用来表达感情。'
+      - id: R111-Q2
+        type: vocabulary-in-context
+        question: 'What does "stand for" mean in the passage?'
+        questionZh: '文中的"stand for"是什么意思？'
+        options:
+          A: 'To be tall'
+          B: 'To represent or symbolize'
+          C: 'To tolerate'
+          D: 'To wait patiently'
+        answer: 'B'
+        explanation: 'Red roses "stand for romantic love" — they represent or symbolize love.'
+        explanationZh: '红玫瑰"stand for romantic love"——它们代表或象征爱情。'
+
+  # ============================================================
+  # R112 – The Art of Persuasion (Level 4, ~350 words)
+  # ============================================================
+  - id: R112
+    title: 'The Art of Persuasion'
+    titleZh: '说服的艺术'
+    level: 4
+    wordCount: 350
+    topic: communication styles
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'TED-Ed: The Art of Rhetoric'
+      author: 'TED-Ed'
+      note: 'Original passage inspired by Aristotle rhetoric for young learners'
+    passage: |
+      Over two thousand years ago, the Greek philosopher Aristotle identified three powerful tools that speakers use to persuade their audience. He called them ethos, pathos, and logos. Today, these same three tools are used in everything from advertising to political speeches — and understanding them can help you write better FCE essays.
+
+      Ethos is about trust. When a doctor tells you to eat more vegetables, you are more likely to listen than if a stranger on the street says the same thing. The doctor has ethos — credibility and authority. In your writing, you build ethos by showing that you know what you are talking about. Using relevant facts and examples makes your argument more trustworthy.
+
+      Pathos is about emotion. Advertisers use pathos constantly — think of the charity adverts that show sad animals or hungry children. These images make you feel something, and that emotion pushes you to act. In essay writing, you can use pathos by including personal stories or vivid descriptions that help the reader connect emotionally with your argument. However, be careful — too much emotion without logic can make your writing seem unreliable.
+
+      Logos is about logic. This is the backbone of any good argument. Logos involves using facts, statistics, and clear reasoning. If you claim that homework is harmful, you need evidence to support that claim — for instance, a study showing that too much homework causes stress. Without logos, your argument is just an opinion.
+
+      The most persuasive writing combines all three. Imagine you are writing an essay about protecting the environment. You might start with a shocking statistic (logos), follow it with a vivid description of a polluted beach (pathos), and then reference a respected scientist's recommendation (ethos).
+
+      In the FCE Writing exam, essays that use all three elements tend to score higher because they show mature thinking and effective communication. The next time you write an argument, ask yourself: "Am I using ethos, pathos, AND logos?" If the answer is yes, you are on your way to writing like a true persuader.
+    passageZh: |
+      两千多年前，希腊哲学家亚里士多德确定了演讲者用来说服听众的三个强大工具。他称它们为 ethos（品格可信度）、pathos（情感诉求）和 logos（逻辑论证）。今天，从广告到政治演讲，到处都在使用这三个工具——理解它们可以帮助你写出更好的 FCE 作文。
+
+      Ethos 关乎信任。当医生告诉你多吃蔬菜时，你比街上陌生人说同样的话更可能听从。医生拥有 ethos——可信度和权威性。在写作中，你通过展示自己了解所谈论的内容来建立 ethos。使用相关的事实和例子使你的论点更可信。
+
+      Pathos 关乎情感。广告商不断使用 pathos——想想那些展示悲伤动物或饥饿儿童的慈善广告。这些画面让你产生感受，而这种情感推动你采取行动。在作文写作中，你可以通过加入个人故事或生动的描述来使用 pathos，帮助读者在情感上与你的论点产生联系。不过要小心——没有逻辑支撑的过多情感会让你的写作看起来不可靠。
+
+      Logos 关乎逻辑。这是任何好论点的支柱。Logos 涉及使用事实、统计数据和清晰的推理。如果你声称作业有害，你需要证据来支持这个说法——例如，一项研究表明过多的作业会导致压力。没有 logos，你的论点只是一个观点。
+
+      最有说服力的写作将三者结合在一起。想象你正在写一篇关于保护环境的文章。你可以从一个令人震惊的统计数据开始（logos），然后用一段对被污染海滩的生动描述跟进（pathos），再引用一位受人尊敬的科学家的建议（ethos）。
+
+      在 FCE 写作考试中，使用所有三个要素的文章往往得分更高，因为它们展示了成熟的思维和有效的沟通。下次你写论述文时，问问自己："我是否同时使用了 ethos、pathos 和 logos？"如果答案是肯定的，你就在通往真正说服者的路上了。
+    vocabHighlights:
+      - word: persuade
+        ref: V1047
+      - word: relevant
+        ref: V1015
+      - word: contribute
+        ref: V1048
+    questions:
+      - id: R112-Q1
+        type: multiple-choice
+        question: 'What are the three tools of persuasion according to Aristotle?'
+        questionZh: '根据亚里士多德，说服的三个工具是什么？'
+        options:
+          A: 'Reading, Writing, and Speaking'
+          B: 'Ethos, Pathos, and Logos'
+          C: 'Facts, Opinions, and Emotions'
+          D: 'Introduction, Body, and Conclusion'
+        answer: 'B'
+        explanation: 'Aristotle identified "three powerful tools... He called them ethos, pathos, and logos."'
+        explanationZh: '亚里士多德确定了"三个强大的工具……他称它们为 ethos、pathos 和 logos"。'
+      - id: R112-Q2
+        type: multiple-choice
+        question: 'Why does the author warn about using too much pathos?'
+        questionZh: '作者为什么警告不要过度使用 pathos？'
+        options:
+          A: 'It makes writing too long'
+          B: 'It is not allowed in FCE essays'
+          C: 'Too much emotion without logic can seem unreliable'
+          D: 'Pathos is less effective than ethos'
+        answer: 'C'
+        explanation: 'The passage states "too much emotion without logic can make your writing seem unreliable."'
+        explanationZh: '文章说"没有逻辑支撑的过多情感会让你的写作看起来不可靠"。'
+
+  # ============================================================
+  # R113 – Tongue Twisters and Word Play (Level 3, ~300 words)
+  # ============================================================
+  - id: R113
+    title: 'Tongue Twisters and Word Play'
+    titleZh: '绕口令与文字游戏'
+    level: 3
+    wordCount: 300
+    topic: language play
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage about linguistic wordplay and tongue twisters'
+    passage: |
+      "She sells seashells by the seashore." Try saying that five times fast! Tongue twisters are phrases that are difficult to say quickly because they contain similar sounds. Every language has them, and they serve a surprising number of purposes.
+
+      Actors and news presenters use tongue twisters as warm-up exercises before performances. Repeating "red lorry, yellow lorry" or "unique New York" helps their mouths get ready for clear speech. Speech therapists also use tongue twisters to help children overcome pronunciation difficulties.
+
+      Beyond tongue twisters, English is full of playful language tricks. Puns — jokes that use words with double meanings — have been popular since Shakespeare's time. When someone says "I used to be a banker, but I lost interest," the word "interest" works in two ways: losing interest in a job AND losing bank interest.
+
+      Palindromes are words or phrases that read the same forwards and backwards. "Racecar," "madam," and "level" are all palindromes. Even whole sentences can be palindromes: "Was it a rat I saw?"
+
+      Spoonerisms occur when a speaker accidentally swaps the first sounds of two words. Instead of saying "a well-boiled icicle," someone might say "a well-oiled bicycle." These are named after William Archibald Spooner, an Oxford professor who was famous for making such slips.
+
+      Understanding word play is valuable for language learners because it deepens your understanding of how English sounds and meanings work. Many FCE reading passages include puns, idioms, and play on words. If you can recognise these tricks, you will find it much easier to understand the writer's tone and intention.
+
+      The next time you come across a play on words, do not just read past it — stop and figure out why it is clever. Your vocabulary and reading skills will thank you!
+    passageZh: |
+      "She sells seashells by the seashore。"试着快速说五遍！绕口令是因为包含相似的发音而很难快速说出的短语。每种语言都有，而且它们的用途出奇地多。
+
+      演员和新闻主播在表演前使用绕口令作为热身练习。重复说"red lorry, yellow lorry"或"unique New York"帮助他们的嘴巴为清晰发音做好准备。语言治疗师也用绕口令来帮助儿童克服发音困难。
+
+      除了绕口令，英语中充满了有趣的语言技巧。双关语——使用具有双重含义的词的笑话——自莎士比亚时代以来就很流行。当有人说"I used to be a banker, but I lost interest"（我以前是银行家，但我失去了兴趣/利息），"interest"这个词有两层含义：对工作失去兴趣和失去银行利息。
+
+      回文是正读和反读都一样的词或短语。"Racecar"（赛车）、"madam"（女士）和"level"（水平）都是回文。甚至整个句子也可以是回文："Was it a rat I saw?"（我看到的是一只老鼠吗？）
+
+      首音误换（Spoonerisms）发生在说话者不小心交换了两个词的首音时。不说"a well-boiled icicle"，有人可能说成"a well-oiled bicycle"。这种现象以牛津教授 William Archibald Spooner 命名，他因经常犯这种口误而闻名。
+
+      理解文字游戏对语言学习者很有价值，因为它能加深你对英语发音和意义运作方式的理解。许多 FCE 阅读文章包含双关语、习语和文字游戏。如果你能识别这些技巧，就会更容易理解作者的语气和意图。
+
+      下次你遇到文字游戏时，不要只是读过去——停下来想想它为什么巧妙。你的词汇和阅读能力会感谢你的！
+    vocabHighlights:
+      - word: come across
+        ref: V0919
+      - word: figure out
+        ref: V0937
+    questions:
+      - id: R113-Q1
+        type: multiple-choice
+        question: 'Who uses tongue twisters as warm-up exercises?'
+        questionZh: '谁用绕口令做热身练习？'
+        options:
+          A: 'Only children learning to speak'
+          B: 'Actors and news presenters'
+          C: 'Only speech therapists'
+          D: 'FCE exam candidates'
+        answer: 'B'
+        explanation: 'The passage states "Actors and news presenters use tongue twisters as warm-up exercises before performances."'
+        explanationZh: '文章说"演员和新闻主播在表演前使用绕口令作为热身练习"。'
+      - id: R113-Q2
+        type: vocabulary-in-context
+        question: 'What is a "pun" according to the passage?'
+        questionZh: '根据文章，"pun"是什么？'
+        options:
+          A: 'A word that is difficult to pronounce'
+          B: 'A joke that uses words with double meanings'
+          C: 'A word that reads the same backwards'
+          D: 'A common spelling mistake'
+        answer: 'B'
+        explanation: 'The passage defines puns as "jokes that use words with double meanings."'
+        explanationZh: '文章将双关语定义为"使用具有双重含义的词的笑话"。'
+
+  # ============================================================
+  # R114 – The Power of "Please" and "Thank You" (Level 3, ~310 words)
+  # ============================================================
+  - id: R114
+    title: 'The Power of "Please" and "Thank You"'
+    titleZh: '"请"和"谢谢"的力量'
+    level: 3
+    wordCount: 310
+    topic: communication styles
+    tags: [Q07, month-7]
+    source:
+      type: original
+      note: 'Original passage about politeness conventions across cultures'
+    passage: |
+      In English-speaking countries, the words "please," "thank you," and "sorry" are used far more frequently than many visitors expect. A British person might say "sorry" when someone else bumps into them, "thank you" to the bus driver when getting off, and "please" even when ordering food at a fast-food restaurant. To speakers of other languages, this can seem excessive.
+
+      The reason lies in what linguists call "politeness strategies." Different cultures have different rules about how direct you can be. In many English-speaking cultures, being too direct is considered rude, even if the words themselves are perfectly polite. For instance, saying "Give me the salt" is grammatically correct, but most British people would say "Could you pass the salt, please?" instead.
+
+      This indirectness extends to how English speakers make requests and give criticism. Rather than saying "Your essay is bad," a teacher might say "There are some areas where your essay could be improved." Rather than saying "No," someone might say "I am afraid that might be a bit difficult." Understanding these softening techniques is important for the FCE Speaking and Writing exams.
+
+      In contrast, some cultures value directness. In Dutch culture, for example, being straightforward is seen as honest and respectful. Saying "No, I do not want to come" is perfectly acceptable, whereas in British culture, the same sentence might sound blunt or impolite.
+
+      Neither approach is better — they are simply different communication styles. However, being aware of these differences is essential for anyone learning a new language. The words you choose, the way you ask questions, and even the number of times you say "thank you" all send messages about who you are and how you relate to others.
+
+      As the old saying goes, "Manners maketh man" — and in English, those manners often come wrapped in the magic words "please" and "thank you."
+    passageZh: |
+      在英语国家，"please""thank you"和"sorry"的使用频率远比许多外国访客预期的要高。一个英国人可能在别人撞到他们时说"sorry"，下公交车时对司机说"thank you"，甚至在快餐店点餐时也说"please"。对于说其他语言的人来说，这可能看起来太夸张了。
+
+      原因在于语言学家所说的"礼貌策略"。不同文化对于你可以多直接有不同的规则。在许多英语文化中，太直接被认为是粗鲁的，即使用词本身完全没问题。例如，说"Give me the salt"（把盐给我）语法上是正确的，但大多数英国人会说"Could you pass the salt, please?"（你能把盐递过来吗？）
+
+      这种间接性延伸到英语使用者提出请求和给出批评的方式。与其说"Your essay is bad"（你的作文不好），老师可能会说"There are some areas where your essay could be improved"（你的作文有一些可以改进的地方）。与其说"No"（不），有人可能会说"I am afraid that might be a bit difficult"（恐怕那可能有点困难）。理解这些缓和技巧对 FCE 口语和写作考试很重要。
+
+      相比之下，一些文化重视直接性。例如在荷兰文化中，直截了当被视为诚实和尊重。说"No, I do not want to come"（不，我不想来）完全可以接受，而在英国文化中，同样的话可能听起来太生硬或不礼貌。
+
+      两种方式都没有更好之分——它们只是不同的交流方式。然而，了解这些差异对任何学习新语言的人都至关重要。你选择的词汇、提问的方式，甚至说"thank you"的次数，都在传递关于你是谁以及你如何与他人相处的信息。
+
+      正如那句老话说的，"Manners maketh man"（礼仪造就人）——在英语中，那些礼仪往往包裹在"please"和"thank you"这两个魔法词中。
+    vocabHighlights:
+      - word: in contrast
+        ref: V1000
+      - word: essential
+        ref: V1015
+    questions:
+      - id: R114-Q1
+        type: multiple-choice
+        question: 'According to the passage, why do British people use "please" and "thank you" so often?'
+        questionZh: '根据文章，为什么英国人这么常用"please"和"thank you"？'
+        options:
+          A: 'Because it is a legal requirement'
+          B: 'Because their culture values indirect politeness over directness'
+          C: 'Because they are afraid of strangers'
+          D: 'Because they do not have other polite words'
+        answer: 'B'
+        explanation: 'The passage explains that "being too direct is considered rude" in English-speaking cultures, so politeness markers are used frequently.'
+        explanationZh: '文章解释说在英语文化中"太直接被认为是粗鲁的"，所以礼貌标记被频繁使用。'
+      - id: R114-Q2
+        type: multiple-choice
+        question: 'How might a British teacher give criticism?'
+        questionZh: '英国老师可能怎么给出批评？'
+        options:
+          A: '"Your essay is terrible and you must rewrite it"'
+          B: '"There are some areas where your essay could be improved"'
+          C: '"I refuse to read this essay"'
+          D: '"Do not write essays like this again"'
+        answer: 'B'
+        explanation: 'The passage gives this as an example of indirect criticism: "There are some areas where your essay could be improved."'
+        explanationZh: '文章举这个例子说明间接批评："你的作文有一些可以改进的地方"。'
+
+  # ============================================================
+  # R115 – How a Dictionary Is Made (Level 4, ~340 words)
+  # ============================================================
+  - id: R115
+    title: 'How a Dictionary Is Made'
+    titleZh: '词典是怎么编出来的'
+    level: 4
+    wordCount: 340
+    topic: language evolution
+    tags: [Q07, month-7]
+    source:
+      type: 'inspired-by'
+      title: 'Oxford English Dictionary Blog'
+      author: 'OED'
+      note: 'Original passage inspired by the OED editorial process'
+    passage: |
+      Most people use dictionaries every day without ever wondering how the words got there in the first place. Making a dictionary is one of the most complex and time-consuming projects in the world of language.
+
+      The Oxford English Dictionary (OED), one of the most famous dictionaries in the world, took over seventy years to complete its first edition. The project began in 1857, and the final volume was not published until 1928. During that time, thousands of volunteers read books, newspapers, and letters, writing down examples of how each word was used. These examples, written on small slips of paper, were sent to the editors in Oxford, who used them to write definitions.
+
+      Today, the process is far more efficient thanks to technology. Dictionary makers use enormous computer databases that contain billions of words from books, websites, newspapers, and social media. These databases — called "corpora" — allow editors to see exactly how a word is used, how its meaning has changed over time, and which collocations it typically appears in.
+
+      But how does a new word get into the dictionary? Dictionary editors follow strict rules. A new word must appear in a wide range of sources over a sustained period of time. It is not enough for a word to appear in a single article or go viral on social media for one week. The editors need evidence that the word has become a permanent part of the language.
+
+      Some recent additions to major dictionaries include "selfie" (2013), "emoji" (2015), and "doomscrolling" (2020). Each of these words had to prove itself by appearing consistently in newspapers, books, and everyday conversation before the editors approved them.
+
+      Surprisingly, words are rarely removed from dictionaries. Even words that nobody uses any more — like "snollygoster" (a dishonest politician) — remain in the dictionary with a note that they are archaic. In this way, dictionaries serve as a museum of language, preserving words from every era of English history.
+    passageZh: |
+      大多数人每天使用词典，却从未想过这些词最初是怎么进入词典的。编写词典是语言世界中最复杂、最耗时的项目之一。
+
+      《牛津英语词典》（OED）是世界上最著名的词典之一，其第一版花了七十多年才完成。该项目始于1857年，最后一卷直到1928年才出版。在此期间，数千名志愿者阅读书籍、报纸和信件，记录每个词的使用方式。这些写在小纸条上的例子被寄到牛津的编辑那里，编辑们用它们来撰写定义。
+
+      今天，由于科技的进步，这个过程高效多了。词典编纂者使用包含数十亿词汇的巨大计算机数据库，这些词汇来自书籍、网站、报纸和社交媒体。这些数据库——被称为"语料库"——让编辑能够准确地看到一个词是如何使用的，它的含义随时间如何变化，以及它通常出现在哪些搭配中。
+
+      但是一个新词怎么才能进入词典呢？词典编辑遵循严格的规则。新词必须在持续的时间段内出现在广泛的来源中。一个词仅在一篇文章中出现或在社交媒体上火了一周是不够的。编辑需要证据证明这个词已成为语言的永久部分。
+
+      一些近期被收入主要词典的词包括"selfie"（2013年）、"emoji"（2015年）和"doomscrolling"（2020年）。每一个词都必须通过在报纸、书籍和日常对话中持续出现来证明自己，才能得到编辑的批准。
+
+      令人惊讶的是，词很少从词典中被删除。即使是没人再使用的词——比如"snollygoster"（不诚实的政客）——也保留在词典中，并附有注释说明它们已经过时。这样，词典就像一座语言博物馆，保存着英语历史每个时期的词汇。
+    vocabHighlights:
+      - word: efficient
+        ref: V1049
+      - word: significantly
+        ref: V0997
+      - word: establish
+        ref: V1050
+    questions:
+      - id: R115-Q1
+        type: multiple-choice
+        question: 'How long did it take to complete the first edition of the OED?'
+        questionZh: '完成 OED 第一版花了多长时间？'
+        options:
+          A: 'About 10 years'
+          B: 'Over 70 years'
+          C: 'Exactly 50 years'
+          D: 'Less than 30 years'
+        answer: 'B'
+        explanation: 'The passage states the project "began in 1857" and "the final volume was not published until 1928" — over 70 years.'
+        explanationZh: '文章说项目"始于1857年"而"最后一卷直到1928年才出版"——超过70年。'
+      - id: R115-Q2
+        type: multiple-choice
+        question: 'What must a new word do before it can be added to the dictionary?'
+        questionZh: '新词在被收入词典之前必须做什么？'
+        options:
+          A: 'Be approved by the government'
+          B: 'Appear in a wide range of sources over a sustained period'
+          C: 'Be used by at least one million people'
+          D: 'Appear in a famous novel'
+        answer: 'B'
+        explanation: 'The passage states "A new word must appear in a wide range of sources over a sustained period of time."'
+        explanationZh: '文章说"新词必须在持续的时间段内出现在广泛的来源中"。'
+      - id: R115-Q3
+        type: vocabulary-in-context
+        question: 'What does "archaic" mean in the passage?'
+        questionZh: '文中的"archaic"是什么意思？'
+        options:
+          A: 'Very popular and widely used'
+          B: 'New and modern'
+          C: 'Old-fashioned and no longer in common use'
+          D: 'Difficult to spell'
+        answer: 'C'
+        explanation: 'Words "nobody uses any more" are kept with a note that they are "archaic" — meaning old-fashioned and no longer in common use.'
+        explanationZh: '"没人再使用的"词保留在词典中并注明"archaic"——意为过时的、不再常用的。'

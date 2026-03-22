@@ -1,0 +1,677 @@
+id: Q08
+title: 'World Builder'
+titleZh: '世界构建师'
+subtitle: 'Master complex sentences and build sophisticated writing!'
+subtitleZh: '掌握复合句，构建精妙写作！'
+month: 8
+fceMapping: 'Use of English Part 4 (Key Word Transformation) & Writing Part 1 (Essay)'
+
+theme:
+  setting: 'A World Builder Academy where young architects learn to construct complex ideas using powerful sentence structures'
+  settingZh: '世界构建学院，年轻建筑师在这里学习使用强大的句子结构来构建复杂的想法'
+  mascot: 'Master Blueprint, a wise city planner who shows how simple ideas become magnificent structures through combining and connecting'
+  mascotZh: 'Blueprint 大师，一位睿智的城市规划师，展示如何通过组合和连接将简单想法变成宏伟的结构'
+
+objectives:
+  - 'Distinguish defining from non-defining relative clauses and use correct punctuation'
+  - 'Use adverbial clauses for time, reason, condition, concession, purpose, and result'
+  - 'Construct noun clauses with what, that, whether, and indirect questions'
+  - 'Transform sentences using participle phrases (-ing and -ed modifiers)'
+  - 'Combine simple sentences into complex ones with multiple clause types'
+  - 'Upgrade writing from simple to sophisticated using varied sentence structures'
+
+objectivesZh:
+  - '区分限定性和非限定性定语从句，使用正确的标点符号'
+  - '使用状语从句表达时间、原因、条件、让步、目的和结果'
+  - '用what、that、whether和间接疑问句构建名词从句'
+  - '使用分词短语（-ing 和 -ed 修饰语）转换句子'
+  - '将简单句组合成包含多种从句类型的复合句'
+  - '使用多样的句子结构将写作从简单提升到精妙'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Defining vs Non-defining Relative Clauses
+  # ─────────────────────────────────────────────
+  - id: Q08-L01
+    title: 'Defining vs Non-defining Relative Clauses'
+    titleZh: '限定性与非限定性定语从句'
+
+    introduction: |
+      Welcome to the World Builder Academy! Master Blueprint stands before an enormous
+      table covered with city plans and blueprints.
+
+      "Building a great city," he says, "is like building a great sentence. You start with
+      a simple foundation — a main clause — and then you ADD DETAILS to make it richer
+      and more precise."
+
+      He picks up two blueprints. "Look at these two sentences:
+
+      1. The architect WHO DESIGNED THE LIBRARY won a prize.
+      2. Le Corbusier, WHO DESIGNED MANY FAMOUS BUILDINGS, was born in Switzerland.
+
+      In sentence 1, 'who designed the library' is ESSENTIAL — without it, we don't know
+      WHICH architect. This is a DEFINING relative clause. No commas.
+
+      In sentence 2, we already know who Le Corbusier is. 'Who designed many famous
+      buildings' is EXTRA information — nice to know, but not essential. This is a
+      NON-DEFINING relative clause. It needs COMMAS."
+
+      "One more crucial rule: in non-defining clauses, you CANNOT use 'that.'
+      Say 'which' for things and 'who' for people. Always."
+    introductionZh: |
+      欢迎来到世界构建学院！Blueprint 大师站在一张铺满城市规划图和蓝图的巨大桌子前。
+
+      "建造一座伟大的城市，"他说，"就像构建一个伟大的句子。你从一个简单的基础——
+      主句——开始，然后添加细节使其更丰富、更精确。"
+
+      他拿起两张蓝图。"看看这两个句子：
+
+      1. The architect WHO DESIGNED THE LIBRARY won a prize.（设计了图书馆的建筑师获了奖。）
+      2. Le Corbusier, WHO DESIGNED MANY FAMOUS BUILDINGS, was born in Switzerland.
+      （柯布西耶，设计了许多著名建筑，出生在瑞士。）
+
+      在句子1中，'who designed the library' 是必要的——没有它，我们不知道是哪位建筑师。
+      这是限定性定语从句。没有逗号。
+
+      在句子2中，我们已经知道柯布西耶是谁。'who designed many famous buildings'
+      是额外信息——知道了挺好，但不是必需的。这是非限定性定语从句。它需要逗号。"
+
+      "还有一个关键规则：在非限定性从句中，不能用'that'。
+      指物用'which'，指人用'who'。始终如此。"
+
+    rules:
+      - pattern: 'Defining Relative Clause'
+        meaning: 'Identifies WHICH person/thing we mean. No commas. Can use who/which/that/where/whose/when.'
+        meaningZh: '确定我们指的是哪个人/物。没有逗号。可以用 who/which/that/where/whose/when。'
+        examples:
+          - base: 'The city has many parks.'
+            transformed: 'The city that has many parks is a great place to live.'
+            sentence: '"That has many parks" tells us WHICH city. Essential information — no commas.'
+            sentenceZh: '"That has many parks"告诉我们是哪座城市。必要信息——没有逗号。'
+          - base: 'I met an architect. She designs museums.'
+            transformed: 'I met an architect who designs museums.'
+            sentence: '"Who designs museums" tells us which architect. Defining — no commas.'
+            sentenceZh: '"Who designs museums"告诉我们是哪位建筑师。限定性——没有逗号。'
+
+      - pattern: 'Non-defining Relative Clause'
+        meaning: 'Adds EXTRA information about something already identified. Needs commas. Uses who/which/whose/where (NEVER that).'
+        meaningZh: '为已经被识别的事物添加额外信息。需要逗号。用 who/which/whose/where（绝不用 that）。'
+        examples:
+          - base: 'Beijing is the capital of China. It has over 21 million people.'
+            transformed: 'Beijing, which is the capital of China, has over 21 million people.'
+            sentence: 'We already know which city — "Beijing." The clause adds extra info. Commas + "which" (not "that").'
+            sentenceZh: '我们已经知道是哪座城市——"北京"。从句补充额外信息。逗号+"which"（不用"that"）。'
+
+    tips:
+      - 'If the clause is ESSENTIAL to identify the noun → no commas → defining (who/which/that)'
+      - 'If the noun is already identified (a proper name or unique thing) → commas → non-defining (who/which, NOT that)'
+      - 'Test: remove the clause. If the sentence still makes sense and identifies the right thing → non-defining'
+      - 'In FCE Key Word Transformation, you often need to change between defining and non-defining clauses'
+    tipsZh:
+      - '如果从句对于识别名词是必要的 → 没有逗号 → 限定性（who/which/that）'
+      - '如果名词已经被识别（专有名词或独特事物） → 逗号 → 非限定性（who/which，不用 that）'
+      - '测试：删除从句。如果句子仍然有意义并且识别了正确的事物 → 非限定性'
+      - '在 FCE 关键词转换中，你经常需要在限定性和非限定性从句之间转换'
+
+    practicePreview:
+      - id: Q08-L01-P01
+        question: |
+          Add commas if needed:
+
+          The Great Wall which stretches over 21000 km is one of the Seven Wonders of the World.
+        questionZh: |
+          如果需要，添加逗号：
+
+          The Great Wall which stretches over 21000 km is one of the Seven Wonders of the World.
+        options:
+          A: 'No commas needed — it is a defining clause'
+          B: 'The Great Wall, which stretches over 21,000 km, is one of the Seven Wonders of the World.'
+          C: 'The Great Wall, that stretches over 21,000 km, is one of the Seven Wonders of the World.'
+        answer: 'B'
+        explanation: '"The Great Wall" is already identified (unique/proper noun). The clause is non-defining → needs commas + "which" (not "that").'
+        explanationZh: '"The Great Wall"已经被识别（独特/专有名词）。从句是非限定性的 → 需要逗号+"which"（不用"that"）。'
+
+      - id: Q08-L01-P02
+        question: |
+          Choose the correct sentence:
+        questionZh: |
+          选择正确的句子：
+        options:
+          A: 'The bridge, that was built last year, connects two islands.'
+          B: 'The bridge that was built last year connects two islands.'
+          C: 'The bridge, which was built last year connects two islands.'
+        answer: 'B'
+        explanation: 'If there are multiple bridges, we need to specify WHICH one → defining clause → no commas, "that" is fine. (If there is only one bridge, we would use non-defining with commas + "which".)'
+        explanationZh: '如果有多座桥，我们需要指明是哪一座 → 限定性从句 → 没有逗号，"that"可以。（如果只有一座桥，我们会用非限定性+逗号+"which"。）'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Adverbial Clauses
+  # ─────────────────────────────────────────────
+  - id: Q08-L02
+    title: 'Adverbial Clauses: Time, Reason, Condition & More'
+    titleZh: '状语从句：时间、原因、条件等'
+
+    introduction: |
+      Master Blueprint takes you to the city planning room, where a giant map shows the
+      connections between different parts of the city.
+
+      "In a city, roads connect different areas. In writing, ADVERBIAL CLAUSES connect
+      ideas by showing the RELATIONSHIP between them — WHY something happens, WHEN it
+      happens, WHAT CONDITION is needed, or WHAT RESULT it produces."
+
+      He points to different coloured roads on the map:
+
+      "TIME (blue roads): when, while, before, after, until, as soon as, once
+      REASON (green roads): because, since, as
+      CONDITION (yellow roads): if, unless, provided that, as long as
+      CONCESSION (red roads): although, even though, while, whereas
+      PURPOSE (purple roads): so that, in order that
+      RESULT (orange roads): so... that, such... that"
+
+      "Each type of clause answers a different question about the main action.
+      Master these, and your writing will become a well-connected city of ideas!"
+    introductionZh: |
+      Blueprint 大师带你来到城市规划室，一张巨大的地图显示了城市不同部分之间的连接。
+
+      "在城市中，道路连接不同区域。在写作中，状语从句通过展示想法之间的关系来连接
+      它们——为什么某事发生、何时发生、需要什么条件，或产生什么结果。"
+
+      他指着地图上不同颜色的道路：
+
+      "时间（蓝色道路）：when, while, before, after, until, as soon as, once
+      原因（绿色道路）：because, since, as
+      条件（黄色道路）：if, unless, provided that, as long as
+      让步（红色道路）：although, even though, while, whereas
+      目的（紫色道路）：so that, in order that
+      结果（橙色道路）：so... that, such... that"
+
+      "每种类型的从句回答关于主要动作的不同问题。
+      掌握这些，你的写作将成为一个连接良好的想法之城！"
+
+    rules:
+      - pattern: 'Time Clauses'
+        meaning: 'Answer WHEN something happens: when, while, before, after, until, as soon as, once'
+        meaningZh: '回答某事何时发生：when, while, before, after, until, as soon as, once'
+        examples:
+          - base: 'The bridge opened. Traffic decreased immediately.'
+            transformed: 'As soon as the bridge opened, traffic decreased.'
+            sentence: '"As soon as" shows the result happened immediately after the bridge opened.'
+            sentenceZh: '"As soon as"表示结果在桥开通后立即发生。'
+
+      - pattern: 'Reason Clauses'
+        meaning: 'Answer WHY something happens: because, since, as'
+        meaningZh: '回答某事为什么发生：because, since, as'
+        examples:
+          - base: 'The road was closed. Workers needed to repair it.'
+            transformed: 'The road was closed because workers needed to repair it.'
+            sentence: '"Because" explains the reason for the road closure.'
+            sentenceZh: '"Because"解释了道路关闭的原因。'
+
+      - pattern: 'Condition Clauses'
+        meaning: 'Answer UNDER WHAT CONDITION: if, unless, provided that, as long as'
+        meaningZh: '回答在什么条件下：if, unless, provided that, as long as'
+        examples:
+          - base: 'Cities invest in public transport. Pollution will decrease.'
+            transformed: 'If cities invest in public transport, pollution will decrease.'
+            sentence: '"If" shows the condition that must be met for the result to happen.'
+            sentenceZh: '"If"表示结果发生所需满足的条件。'
+
+      - pattern: 'Concession Clauses'
+        meaning: 'Show UNEXPECTED CONTRAST: although, even though, despite the fact that'
+        meaningZh: '表示意外对比：although, even though, despite the fact that'
+        examples:
+          - base: 'The building is 100 years old. It is still very strong.'
+            transformed: 'Although the building is 100 years old, it is still very strong.'
+            sentence: '"Although" shows that being old AND being strong is unexpected.'
+            sentenceZh: '"Although"表示又老又坚固是出人意料的。'
+
+    tips:
+      - 'Time clauses with future meaning use PRESENT tense: "When the bridge OPENS (not will open), we will celebrate."'
+      - 'Reason clauses: "because" is the strongest; "since/as" are softer and often start the sentence.'
+      - 'Condition: "unless" = "if...not": "Unless we act now..." = "If we do not act now..."'
+      - 'Concession is powerful in essays for showing you have considered both sides of an argument.'
+    tipsZh:
+      - '表达将来含义的时间从句用一般现在时："When the bridge OPENS（不是will open），we will celebrate."'
+      - '原因从句："because"最强；"since/as"更温和，常放在句首。'
+      - '条件："unless" = "if...not"："Unless we act now..." = "If we do not act now..."'
+      - '让步从句在议论文中很有力，表明你考虑了论点的两面。'
+
+    practicePreview:
+      - id: Q08-L02-P01
+        question: |
+          Choose the best word to fill the gap:
+
+          _____ the earthquake destroyed many buildings, the ancient temple survived because it was built on flexible foundations.
+        questionZh: |
+          选择最佳词填空：
+
+          _____ 地震摧毁了许多建筑，古寺因为建在柔性基础上而幸存。
+        options:
+          A: 'Because'
+          B: 'Although'
+          C: 'If'
+          D: 'Until'
+        answer: 'B'
+        explanation: '"Although" shows an unexpected contrast — you would expect the temple to be destroyed too, but it survived.'
+        explanationZh: '"Although"表示意外对比——你会期望寺庙也被摧毁，但它幸存了。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Noun Clauses
+  # ─────────────────────────────────────────────
+  - id: Q08-L03
+    title: 'Noun Clauses: What-clauses and That-clauses'
+    titleZh: '名词从句：What从句和That从句'
+
+    introduction: |
+      Master Blueprint leads you to the Foundation Room — a place where every building begins.
+
+      "Before you can build anything," he says, "you need a FOUNDATION. In grammar,
+      NOUN CLAUSES are the foundations of complex sentences. They can be the SUBJECT of
+      a sentence, the OBJECT of a verb, or come after certain expressions."
+
+      He writes on the board:
+
+      "WHAT-clauses: 'What the architect designed was brilliant.'
+      Here, 'what the architect designed' = 'the thing that the architect designed.'
+      It acts as the SUBJECT.
+
+      THAT-clauses: 'I believe that every city needs parks.'
+      Here, 'that every city needs parks' is the OBJECT of 'believe.'
+
+      WHETHER-clauses: 'I wonder whether the bridge will be finished on time.'
+      This is an indirect yes/no question.
+
+      INDIRECT QUESTIONS: 'Can you explain how the water system works?'
+      Note: the word order is NOT question order! It is 'how the water system works'
+      (not 'how does the water system work')."
+    introductionZh: |
+      Blueprint 大师带你来到基础室——每栋建筑开始的地方。
+
+      "在你能建造任何东西之前，"他说，"你需要一个基础。在语法中，
+      名词从句是复合句的基础。它们可以是句子的主语、动词的宾语，
+      或跟在某些表达之后。"
+
+      他在黑板上写道：
+
+      "WHAT从句：'What the architect designed was brilliant.'
+      这里，'what the architect designed' = '建筑师设计的东西'。
+      它充当主语。
+
+      THAT从句：'I believe that every city needs parks.'
+      这里，'that every city needs parks' 是 'believe' 的宾语。
+
+      WHETHER从句：'I wonder whether the bridge will be finished on time.'
+      这是一个间接是/否问题。
+
+      间接疑问句：'Can you explain how the water system works?'
+      注意：语序不是疑问句语序！是 'how the water system works'
+      （不是 'how does the water system work'）。"
+
+    rules:
+      - pattern: 'What-clause as Subject'
+        meaning: '"What..." = "The thing that..." and acts as the subject of the sentence'
+        meaningZh: '"What..." = "……的东西"，充当句子的主语'
+        examples:
+          - base: 'Something amazed the visitors. It was the size of the pyramid.'
+            transformed: 'What amazed the visitors was the size of the pyramid.'
+            sentence: '"What amazed the visitors" replaces "something" as the subject.'
+            sentenceZh: '"What amazed the visitors"替代"something"作为主语。'
+
+      - pattern: 'That-clause as Object'
+        meaning: '"That..." introduces the content of what someone thinks, says, or believes'
+        meaningZh: '"That..."引导某人想、说或相信的内容'
+        examples:
+          - base: 'Scientists discovered something. Ancient Romans used concrete.'
+            transformed: 'Scientists discovered that ancient Romans used concrete.'
+            sentence: '"That ancient Romans used concrete" is the object of "discovered."'
+            sentenceZh: '"That ancient Romans used concrete"是"discovered"的宾语。'
+
+      - pattern: 'It is + adjective + that'
+        meaning: '"It" acts as a formal subject, and the that-clause is the real subject'
+        meaningZh: '"It"作形式主语，that从句是真正的主语'
+        examples:
+          - base: 'Cities need green spaces. This is important.'
+            transformed: 'It is important that cities have green spaces.'
+            sentence: '"It" is a placeholder. The real subject is the that-clause.'
+            sentenceZh: '"It"是占位符。真正的主语是that从句。'
+
+    tips:
+      - '"What" = "the thing(s) that." Use it when the thing is unknown or general.'
+      - '"That" after verbs of thinking/saying (believe, think, know, say, show) introduces the content.'
+      - 'In indirect questions, keep STATEMENT word order: "I asked where the museum WAS" (not "where was the museum").'
+      - 'FCE Part 4 often tests transformation between direct and indirect questions.'
+    tipsZh:
+      - '"What" = "……的东西"。当事物未知或泛指时使用。'
+      - '"That"跟在思考/说话的动词后（believe, think, know, say, show），引导内容。'
+      - '在间接疑问句中，保持陈述句语序："I asked where the museum WAS"（不是"where was the museum"）。'
+      - 'FCE Part 4 经常考查直接疑问句和间接疑问句之间的转换。'
+
+    practicePreview:
+      - id: Q08-L03-P01
+        question: |
+          Choose the correct option:
+
+          _____ the ancient city was built on a hill gave it a natural defence against enemies.
+        questionZh: |
+          选择正确选项：
+
+          _____ 古城建在山上给了它天然的防御优势。
+        options:
+          A: 'That'
+          B: 'What'
+          C: 'Which'
+          D: 'Where'
+        answer: 'A'
+        explanation: '"That the ancient city was built on a hill" is a noun clause acting as the subject. "That" introduces the FACT.'
+        explanationZh: '"That the ancient city was built on a hill"是名词从句充当主语。"That"引导一个事实。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Participle Phrases
+  # ─────────────────────────────────────────────
+  - id: Q08-L04
+    title: 'Participle Phrases: -ing and -ed Modifiers'
+    titleZh: '分词短语：-ing 和 -ed 修饰语'
+
+    introduction: |
+      Master Blueprint takes you to the Renovation Workshop, where old buildings are
+      being transformed into modern structures.
+
+      "Sometimes," he says, "a sentence is like an old building — it works, but it could
+      be more elegant. PARTICIPLE PHRASES help you renovate your sentences, making them
+      shorter and more sophisticated."
+
+      He shows two versions of the same idea:
+
+      "VERSION 1: The bridge, which was built by the Romans, is still standing.
+      VERSION 2: The bridge, built by the Romans, is still standing.
+
+      VERSION 1: Because she knew the area well, the architect chose the perfect spot.
+      VERSION 2: Knowing the area well, the architect chose the perfect spot.
+
+      See? By using participles (-ing or -ed forms), we remove 'which was' or 'because she'
+      and make the sentence shorter without losing any meaning."
+
+      "KEY RULE: -ing participles have ACTIVE meaning (the subject DOES the action).
+      -ed participles have PASSIVE meaning (the subject RECEIVES the action)."
+    introductionZh: |
+      Blueprint 大师带你来到翻新工作室，在这里旧建筑正在被改造成现代结构。
+
+      "有时候，"他说，"一个句子就像一栋旧建筑——它能用，但可以更优雅。
+      分词短语帮你翻新你的句子，使它们更短、更精妙。"
+
+      他展示了同一个想法的两个版本：
+
+      "版本1：The bridge, which was built by the Romans, is still standing.
+      版本2：The bridge, built by the Romans, is still standing.
+
+      版本1：Because she knew the area well, the architect chose the perfect spot.
+      版本2：Knowing the area well, the architect chose the perfect spot.
+
+      看到了吗？通过使用分词（-ing 或 -ed 形式），我们去掉了 'which was' 或 'because she'，
+      使句子更短但不丢失任何意思。"
+
+      "关键规则：-ing 分词有主动含义（主语做动作）。
+      -ed 分词有被动含义（主语接受动作）。"
+
+    rules:
+      - pattern: '-ing Participle (Active)'
+        meaning: 'The subject of the sentence DOES the action. Used to replace "who is/was doing" or "because he/she does"'
+        meaningZh: '句子的主语做动作。用于替代"who is/was doing"或"because he/she does"'
+        examples:
+          - base: 'The children were playing in the park. They looked very happy.'
+            transformed: 'Playing in the park, the children looked very happy.'
+            sentence: 'The children were playing (active) → "Playing" replaces the clause.'
+            sentenceZh: '孩子们在玩耍（主动）→ "Playing"替代了从句。'
+
+      - pattern: '-ed Participle (Passive)'
+        meaning: 'The subject RECEIVES the action. Used to replace "which was/were done" or "because it was done"'
+        meaningZh: '主语接受动作。用于替代"which was/were done"或"because it was done"'
+        examples:
+          - base: 'The city was founded in 1420. It is now a UNESCO World Heritage Site.'
+            transformed: 'Founded in 1420, the city is now a UNESCO World Heritage Site.'
+            sentence: 'The city was founded (passive) → "Founded" replaces the passive clause.'
+            sentenceZh: '城市被建立（被动）→ "Founded"替代了被动从句。'
+
+    tips:
+      - 'The subject of the participle phrase MUST be the same as the subject of the main clause.'
+      - '"Having done" (perfect participle) shows an action completed BEFORE the main action.'
+      - '-ing adjectives describe the CAUSE of feeling (the view was amazing). -ed adjectives describe the EXPERIENCER (I was amazed).'
+      - 'In FCE essays, using participle phrases makes your writing sound more mature and sophisticated.'
+    tipsZh:
+      - '分词短语的主语必须与主句的主语相同。'
+      - '"Having done"（完成分词）表示在主要动作之前完成的动作。'
+      - '-ing 形容词描述引起感觉的原因（景色令人惊叹）。-ed 形容词描述感受者（我感到惊叹）。'
+      - '在 FCE 议论文中，使用分词短语使你的写作听起来更成熟、更精妙。'
+
+    practicePreview:
+      - id: Q08-L04-P01
+        question: |
+          Rewrite using a participle phrase:
+
+          The museum, which was designed by a famous architect, opened last month.
+        questionZh: |
+          用分词短语改写：
+
+          The museum, which was designed by a famous architect, opened last month.
+        options:
+          A: 'Designing by a famous architect, the museum opened last month.'
+          B: 'Designed by a famous architect, the museum opened last month.'
+          C: 'Having designing by a famous architect, the museum opened last month.'
+        answer: 'B'
+        explanation: 'The museum was DESIGNED (passive). Use the past participle "designed" to replace "which was designed."'
+        explanationZh: '博物馆被设计（被动）。用过去分词"designed"替代"which was designed"。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Sentence Combining Workshop
+  # ─────────────────────────────────────────────
+  - id: Q08-L05
+    title: 'Sentence Combining Workshop'
+    titleZh: '句子组合工作坊'
+
+    introduction: |
+      Master Blueprint leads you to the Assembly Hall, where builders bring separate
+      parts together to create complete structures.
+
+      "Now that you have learned all the building blocks — relative clauses, adverbial
+      clauses, noun clauses, and participle phrases — it is time to put them together!
+
+      A great writer, like a great builder, knows how to COMBINE simple pieces into
+      something magnificent. Watch this transformation:"
+
+      BEFORE (4 simple sentences):
+      "The Great Wall is very long. It was built over many centuries. Workers used
+      local stone and earth. The wall protected China from invaders."
+
+      AFTER (1 complex sentence):
+      "The Great Wall, which was built over many centuries using local stone and earth,
+      protected China from invaders."
+
+      "We went from FOUR simple sentences to ONE elegant complex sentence using a
+      non-defining relative clause and a participle phrase. This is the power of
+      sentence combining!"
+    introductionZh: |
+      Blueprint 大师带你来到装配大厅，建造者们在这里将各个部分组装成完整的结构。
+
+      "现在你已经学会了所有的积木——定语从句、状语从句、名词从句和分词短语——
+      是时候把它们组合在一起了！
+
+      一个优秀的作家，就像一个优秀的建造者，知道如何将简单的部件组合成宏伟的作品。
+      看看这个转变："
+
+      之前（4个简单句）：
+      "长城很长。它建了许多个世纪。工人们使用当地的石头和泥土。城墙保护中国免受入侵者侵害。"
+
+      之后（1个复合句）：
+      "The Great Wall, which was built over many centuries using local stone and earth,
+      protected China from invaders."
+
+      "我们从四个简单句变成了一个优雅的复合句，使用了非限定性定语从句和分词短语。
+      这就是句子组合的力量！"
+
+    rules:
+      - pattern: 'Combining with Relative Clauses'
+        meaning: 'Merge two sentences that share a common noun by turning one into a relative clause'
+        meaningZh: '通过将一个句子变成定语从句来合并共有名词的两个句子'
+        examples:
+          - base: 'The architect won an award. She designed the new museum.'
+            transformed: 'The architect who designed the new museum won an award.'
+            sentence: 'The shared noun is "the architect." One sentence becomes a relative clause with "who."'
+            sentenceZh: '共有名词是"建筑师"。一个句子变成了用"who"引导的定语从句。'
+
+      - pattern: 'Combining with Adverbial Clauses'
+        meaning: 'Connect two sentences by showing the relationship (time, reason, condition, contrast)'
+        meaningZh: '通过展示关系（时间、原因、条件、对比）来连接两个句子'
+        examples:
+          - base: 'The city invested in parks. Air quality improved.'
+            transformed: 'After the city invested in parks, air quality improved.'
+            sentence: '"After" shows the time relationship between the two events.'
+            sentenceZh: '"After"展示了两个事件之间的时间关系。'
+
+      - pattern: 'Combining with Participle Phrases'
+        meaning: 'Replace a clause with a participle to make the sentence shorter and more elegant'
+        meaningZh: '用分词替代从句，使句子更短、更优雅'
+        examples:
+          - base: 'The temple was carved from rock. It has survived for over 2,000 years.'
+            transformed: 'Carved from rock, the temple has survived for over 2,000 years.'
+            sentence: '"Which was carved" becomes "carved" — shorter and more sophisticated.'
+            sentenceZh: '"Which was carved"变成"carved"——更短、更精妙。'
+
+    tips:
+      - 'Start by identifying the RELATIONSHIP between the two sentences (time? reason? contrast? shared noun?).'
+      - 'Choose the right connecting tool (relative pronoun, conjunction, or participle).'
+      - 'Read the combined sentence aloud — does it sound natural? Is the meaning clear?'
+      - 'Vary your sentence structures — do not use the same type of clause every time.'
+    tipsZh:
+      - '首先确定两个句子之间的关系（时间？原因？对比？共有名词？）。'
+      - '选择正确的连接工具（关系代词、连词或分词）。'
+      - '大声朗读合并后的句子——听起来自然吗？意思清楚吗？'
+      - '变化你的句子结构——不要每次都用同一种类型的从句。'
+
+    practicePreview:
+      - id: Q08-L05-P01
+        question: |
+          Combine into one sentence:
+
+          "The park was built on an old factory site. It has become the most popular place in the neighbourhood."
+        questionZh: |
+          合并成一个句子：
+
+          "公园建在旧工厂的地方。它成了社区最受欢迎的地方。"
+        options:
+          A: 'The park was built on an old factory site and it has become the most popular place in the neighbourhood.'
+          B: 'Built on an old factory site, the park has become the most popular place in the neighbourhood.'
+          C: 'The park, which was built, on an old factory site has become the most popular place.'
+        answer: 'B'
+        explanation: '"Built on an old factory site" is a participle phrase (passive). It is the most concise and elegant option.'
+        explanationZh: '"Built on an old factory site"是分词短语（被动）。它是最简洁优雅的选项。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Complex Sentences in Writing
+  # ─────────────────────────────────────────────
+  - id: Q08-L06
+    title: 'Complex Sentences in Writing: From Simple to Sophisticated'
+    titleZh: '写作中的复合句：从简单到精妙'
+
+    introduction: |
+      Master Blueprint takes you to the Exhibition Hall, where the best city designs are
+      displayed for the world to see.
+
+      "You have learned all the tools," he says. "Now let us see how to use them in REAL
+      WRITING — especially in FCE essays and reviews."
+
+      He shows you two paragraphs about the same topic:
+
+      "BASIC VERSION:
+      Cities should have more parks. Parks are good for health. People exercise in parks.
+      Parks reduce air pollution. Some people think parks waste money. I disagree.
+
+      UPGRADED VERSION:
+      In my opinion, cities should invest in more parks because they significantly benefit
+      public health. People who live near parks tend to exercise more regularly, which reduces
+      the risk of heart disease. Furthermore, trees in parks absorb carbon dioxide, thereby
+      improving air quality. Although some argue that parks are an unnecessary expense,
+      research clearly shows that the health benefits far outweigh the costs."
+
+      "The information is the SAME — but the second version uses relative clauses (who, which),
+      adverbial clauses (because, although), a participle (thereby improving), and connectors
+      (furthermore). THIS is what examiners look for in FCE writing."
+    introductionZh: |
+      Blueprint 大师带你来到展览大厅，最好的城市设计在这里展示给世界。
+
+      "你已经学会了所有的工具，"他说。"现在让我们看看如何在真正的写作中使用它们——
+      尤其是在 FCE 议论文和评论中。"
+
+      他给你看了关于同一话题的两段文字：
+
+      "基础版本：
+      城市应该有更多公园。公园对健康有益。人们在公园锻炼。
+      公园减少空气污染。有些人认为公园浪费钱。我不同意。
+
+      升级版本：
+      In my opinion, cities should invest in more parks because they significantly benefit
+      public health. People who live near parks tend to exercise more regularly, which reduces
+      the risk of heart disease. Furthermore, trees in parks absorb carbon dioxide, thereby
+      improving air quality. Although some argue that parks are an unnecessary expense,
+      research clearly shows that the health benefits far outweigh the costs."
+
+      "信息是一样的——但第二个版本使用了定语从句（who, which）、状语从句（because, although）、
+      分词（thereby improving）和连接词（furthermore）。这就是 FCE 写作考官要找的。"
+
+    rules:
+      - pattern: 'Upgrade Simple → Complex'
+        meaning: 'Replace short, choppy sentences with complex ones using relative clauses, adverbial clauses, and participle phrases'
+        meaningZh: '用定语从句、状语从句和分词短语替代短促的简单句'
+        examples:
+          - base: 'The building is old. It is still beautiful.'
+            transformed: 'Although the building is old, it is still beautiful.'
+            sentence: 'An adverbial clause of concession (although) replaces two sentences with one complex one.'
+            sentenceZh: '让步状语从句（although）用一个复合句替代了两个简单句。'
+
+      - pattern: 'Add Detail with Non-defining Clauses'
+        meaning: 'Insert extra information between commas to enrich your sentences'
+        meaningZh: '在逗号之间插入额外信息来丰富你的句子'
+        examples:
+          - base: 'Singapore is a small country. It has excellent public transport.'
+            transformed: 'Singapore, which is a small country, has excellent public transport.'
+            sentence: 'The non-defining clause adds context without starting a new sentence.'
+            sentenceZh: '非限定性从句添加背景信息而不需要开始新句子。'
+
+      - pattern: 'Show Cause and Effect Elegantly'
+        meaning: 'Use participle phrases and result clauses instead of simple "because" + "so"'
+        meaningZh: '使用分词短语和结果从句，而不是简单的"because"+"so"'
+        examples:
+          - base: 'The city invested in cycling lanes. More people ride bicycles now.'
+            transformed: 'Having invested in cycling lanes, the city now sees more people riding bicycles.'
+            sentence: '"Having invested" (perfect participle) elegantly shows the cause before the result.'
+            sentenceZh: '"Having invested"（完成分词）优雅地展示了结果之前的原因。'
+
+    tips:
+      - 'In FCE Writing, aim for a mix of sentence types: some simple, some complex, some compound.'
+      - 'Use at least one relative clause, one adverbial clause, and one participle phrase per essay.'
+      - 'Start paragraphs with topic sentences, then add detail using complex structures.'
+      - 'Read your essay aloud — if every sentence starts with "I think" or "It is," vary the structure.'
+      - 'A strong conclusion often uses a concession clause: "Although... , I believe..."'
+    tipsZh:
+      - '在 FCE 写作中，目标是混合使用不同的句子类型：一些简单句、一些复合句、一些并列句。'
+      - '每篇议论文至少使用一个定语从句、一个状语从句和一个分词短语。'
+      - '用主题句开始段落，然后用复合结构添加细节。'
+      - '大声朗读你的议论文——如果每个句子都以"I think"或"It is"开头，要变化结构。'
+      - '有力的结论通常使用让步从句："Although... , I believe..."'
+
+    practicePreview:
+      - id: Q08-L06-P01
+        question: |
+          Upgrade this basic paragraph into a single complex sentence:
+
+          "Ancient Rome had good roads. The roads connected the whole empire. This helped trade."
+        questionZh: |
+          将这段基础文字升级成一个复合句：
+
+          "古罗马有好的道路。道路连接了整个帝国。这帮助了贸易。"
+        options:
+          A: 'Ancient Rome had good roads and they connected the whole empire and this helped trade.'
+          B: 'Ancient Rome had good roads which connected the whole empire, thereby facilitating trade.'
+          C: 'Ancient Rome had good roads. The roads connected the whole empire. This helped trade.'
+        answer: 'B'
+        explanation: 'Option B uses a defining relative clause ("which connected") and a participle phrase ("thereby facilitating") — much more sophisticated!'
+        explanationZh: '选项B使用了限定性定语从句（"which connected"）和分词短语（"thereby facilitating"）——精妙得多！'

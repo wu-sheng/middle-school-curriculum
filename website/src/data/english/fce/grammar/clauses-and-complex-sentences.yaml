@@ -1,0 +1,1598 @@
+category: 'Clauses & Complex Sentences'
+categoryZh: '从句与复合句'
+questions:
+  # ============================================================
+  # G0701–G0720: Defining relative clauses (who/which/that/where/whose)
+  # World-building theme
+  # ============================================================
+  - id: G0701
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The architect _____ designed the new library won an international prize.'
+    questionZh: '设计新图书馆的建筑师获得了国际大奖。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'where'
+      D: 'whose'
+    answer: 'A'
+    explanation: '"Who" refers to a person — the architect. "Who designed the new library" is a defining relative clause telling us WHICH architect.'
+    explanationZh: '"Who"指人——建筑师。"Who designed the new library"是一个限定性定语从句，告诉我们是哪位建筑师。'
+    grammarPoint: 'Defining relative clause with who (subject)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0702
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The bridge _____ connects the two islands was built in 2015.'
+    questionZh: '连接两个岛屿的桥建于2015年。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'where'
+      D: 'whose'
+    answer: 'B'
+    explanation: '"Which" refers to a thing — the bridge. "Which connects the two islands" tells us WHICH bridge.'
+    explanationZh: '"Which"指物——桥。"Which connects the two islands"告诉我们是哪座桥。'
+    grammarPoint: 'Defining relative clause with which (subject)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0703
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'This is the park _____ children can play safely after school.'
+    questionZh: '这是孩子们放学后可以安全玩耍的公园。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'where'
+      D: 'whose'
+    answer: 'C'
+    explanation: '"Where" refers to a place — the park. "Where children can play" tells us about the place.'
+    explanationZh: '"Where"指地点——公园。"Where children can play"告诉我们关于这个地方的信息。'
+    grammarPoint: 'Defining relative clause with where (place)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0704
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The city planner _____ ideas changed the neighbourhood is very famous.'
+    questionZh: '那位想法改变了社区的城市规划师非常有名。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'where'
+      D: 'whose'
+    answer: 'D'
+    explanation: '"Whose" shows possession — the planner''s ideas. "Whose ideas changed the neighbourhood" tells us about the planner.'
+    explanationZh: '"Whose"表示所有关系——规划师的想法。"Whose ideas changed the neighbourhood"告诉我们关于这位规划师的信息。'
+    grammarPoint: 'Defining relative clause with whose (possession)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0705
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The material _____ they used to build the wall was very strong.'
+    questionZh: '他们用来建墙的材料非常坚固。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"That" or "which" can be used for things. Here it refers to the material. In defining clauses, "that" is very common.'
+    explanationZh: '"That"或"which"都可以用于指物。这里指材料。在限定性从句中，"that"非常常用。'
+    grammarPoint: 'Defining relative clause with that/which (object)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0706
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The workers _____ built the Great Wall worked incredibly hard.'
+    questionZh: '建造长城的工人们工作非常努力。'
+    options:
+      A: 'which'
+      B: 'where'
+      C: 'who'
+      D: 'whose'
+    answer: 'C'
+    explanation: '"Who" refers to people — the workers. It introduces a defining clause identifying which workers.'
+    explanationZh: '"Who"指人——工人们。它引导一个限定性从句，说明是哪些工人。'
+    grammarPoint: 'Defining relative clause with who (subject)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0707
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-1]
+    context: world-building
+    question: 'The tower _____ stands in the centre of the city is over 300 metres tall.'
+    questionZh: '矗立在市中心的塔楼超过300米高。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"That" or "which" refers to the tower. The relative clause defines which tower we are talking about.'
+    explanationZh: '"That"或"which"指塔楼。定语从句限定了我们在谈论哪座塔楼。'
+    grammarPoint: 'Defining relative clause with that/which (subject)'
+    relatedQuest: Q08
+    difficulty: 1
+
+  - id: G0708
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'I met the engineer _____ company designed the new metro system.'
+    questionZh: '我见到了公司设计了新地铁系统的那位工程师。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'whose'
+    answer: 'D'
+    explanation: '"Whose" shows the engineer OWNS or is connected to the company. "Whose company" = the engineer''s company.'
+    explanationZh: '"Whose"表示工程师拥有或与公司相关。"Whose company" = 工程师的公司。'
+    grammarPoint: 'Defining relative clause with whose (possession)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0709
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The year _____ the city was founded is celebrated every spring.'
+    questionZh: '城市建立的那一年每年春天都会庆祝。'
+    answer: 'when'
+    acceptableAnswers: ['when', 'in which']
+    explanation: '"When" refers to time — the year. "When the city was founded" is a defining relative clause about the time.'
+    explanationZh: '"When"指时间——那一年。"When the city was founded"是关于时间的限定性定语从句。'
+    grammarPoint: 'Defining relative clause with when (time)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0710
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The reason _____ the ancient city was abandoned is still a mystery.'
+    questionZh: '古城被遗弃的原因仍然是个谜。'
+    options:
+      A: 'which'
+      B: 'why'
+      C: 'where'
+      D: 'whose'
+    answer: 'B'
+    explanation: '"Why" refers to a reason. "The reason why the city was abandoned" tells us about the cause.'
+    explanationZh: '"Why"指原因。"The reason why the city was abandoned"告诉我们关于原因的信息。'
+    grammarPoint: 'Defining relative clause with why (reason)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0711
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The museum _____ I visited last weekend has a wonderful collection of ancient pottery.'
+    questionZh: '我上周末参观的博物馆有一个精彩的古代陶器收藏。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: 'The relative pronoun is the OBJECT of "visited." In defining clauses, we can use "that" or "which" — or even omit it.'
+    explanationZh: '关系代词是"visited"的宾语。在限定性从句中，可以用"that"或"which"——甚至可以省略。'
+    grammarPoint: 'Defining relative clause — object pronoun (omission possible)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0712
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The neighbourhood _____ my grandparents grew up has completely changed.'
+    questionZh: '我祖父母长大的社区已经完全变了。'
+    options:
+      A: 'which'
+      B: 'who'
+      C: 'where'
+      D: 'that'
+    answer: 'C'
+    explanation: '"Where" refers to the place — the neighbourhood. "Where my grandparents grew up" defines the neighbourhood.'
+    explanationZh: '"Where"指地点——社区。"Where my grandparents grew up"限定了哪个社区。'
+    grammarPoint: 'Defining relative clause with where (place)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0713
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The people _____ live near the river must evacuate during floods.'
+    questionZh: '住在河边的人在洪水期间必须撤离。'
+    answer: 'who'
+    acceptableAnswers: ['who', 'that']
+    explanation: '"Who" or "that" refers to people. "Who live near the river" is a defining clause — it tells us WHICH people.'
+    explanationZh: '"Who"或"that"指人。"Who live near the river"是限定性从句——告诉我们哪些人。'
+    grammarPoint: 'Defining relative clause with who/that (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0714
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The building _____ roof collapsed was over a hundred years old.'
+    questionZh: '屋顶坍塌的那栋建筑有一百多年的历史。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'whose'
+    answer: 'D'
+    explanation: '"Whose" shows possession — the building''s roof. "Whose roof collapsed" identifies which building.'
+    explanationZh: '"Whose"表示所属关系——建筑的屋顶。"Whose roof collapsed"说明是哪栋建筑。'
+    grammarPoint: 'Defining relative clause with whose (thing + possession)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0715
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Is this the school _____ your sister studies architecture?'
+    questionZh: '这是你姐姐学习建筑的学校吗？'
+    answer: 'where'
+    acceptableAnswers: ['where', 'at which']
+    explanation: '"Where" refers to a place — the school. "Where your sister studies" tells us about the school.'
+    explanationZh: '"Where"指地点——学校。"Where your sister studies"告诉我们关于这所学校的信息。'
+    grammarPoint: 'Defining relative clause with where (place)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0716
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Everything _____ the ancient builders created was done by hand.'
+    questionZh: '古代建造者创造的一切都是手工完成的。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'whose'
+    answer: 'C'
+    explanation: 'After "everything," "anything," "nothing," and "all," we use "that" (not "which") in defining clauses.'
+    explanationZh: '在"everything"、"anything"、"nothing"和"all"之后，限定性从句中用"that"（不用"which"）。'
+    grammarPoint: 'Defining relative clause — that after everything/anything'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0717
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The city _____ has the best public transport system in the world is Tokyo.'
+    questionZh: '拥有世界上最好的公共交通系统的城市是东京。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"That" or "which" refers to the city. The clause defines which city has the best transport.'
+    explanationZh: '"That"或"which"指城市。从句限定了哪座城市有最好的交通。'
+    grammarPoint: 'Defining relative clause with that/which (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0718
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The family _____ house was destroyed by the earthquake received help from the community.'
+    questionZh: '房屋被地震摧毁的那个家庭得到了社区的帮助。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'whose'
+    answer: 'D'
+    explanation: '"Whose" shows possession — the family''s house. "Whose house was destroyed" tells us which family.'
+    explanationZh: '"Whose"表示所属——家庭的房子。"Whose house was destroyed"告诉我们是哪个家庭。'
+    grammarPoint: 'Defining relative clause with whose (possession)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0719
+    type: fill-blank
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The streets _____ are closed to cars on weekends become pedestrian zones.'
+    questionZh: '周末禁止汽车通行的街道变成了步行区。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"That" or "which" refers to the streets. The relative clause identifies which streets.'
+    explanationZh: '"That"或"which"指街道。定语从句说明是哪些街道。'
+    grammarPoint: 'Defining relative clause with that/which (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0720
+    type: multiple-choice
+    tags: [defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The day _____ the new park opened was the happiest day in the neighbourhood.'
+    questionZh: '新公园开放的那天是社区最开心的一天。'
+    options:
+      A: 'where'
+      B: 'which'
+      C: 'when'
+      D: 'whose'
+    answer: 'C'
+    explanation: '"When" refers to time — the day. "When the new park opened" identifies which day.'
+    explanationZh: '"When"指时间——那天。"When the new park opened"说明是哪一天。'
+    grammarPoint: 'Defining relative clause with when (time)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  # ============================================================
+  # G0721–G0740: Non-defining relative clauses (commas!)
+  # ============================================================
+  - id: G0721
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Choose the correct sentence with commas:'
+    questionZh: '选择逗号使用正确的句子：'
+    options:
+      A: 'The Eiffel Tower which is in Paris was built in 1889.'
+      B: 'The Eiffel Tower, which is in Paris, was built in 1889.'
+      C: 'The Eiffel Tower, that is in Paris, was built in 1889.'
+      D: 'The Eiffel Tower which is in Paris, was built in 1889.'
+    answer: 'B'
+    explanation: 'Non-defining clauses need COMMAS and use "which" (not "that"). "Which is in Paris" adds extra info — we already know which tower.'
+    explanationZh: '非限定性从句需要逗号，用"which"（不用"that"）。"Which is in Paris"是补充信息——我们已经知道是哪座塔。'
+    grammarPoint: 'Non-defining relative clause — commas + which (not that)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0722
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'My grandfather, _____ built houses for forty years, taught me about architecture.'
+    questionZh: '我祖父——建了四十年房子——教我有关建筑的知识。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'C'
+    explanation: '"Who" refers to a person (grandfather) in a non-defining clause. Note: "that" CANNOT be used in non-defining clauses.'
+    explanationZh: '"Who"在非限定性从句中指人（祖父）。注意："that"不能用于非限定性从句。'
+    grammarPoint: 'Non-defining relative clause with who (person)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0723
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Beijing, _____ is the capital of China, has a population of over 21 million.'
+    questionZh: '北京——中国的首都——有超过2100万人口。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: 'In non-defining clauses, we use "which" for things (not "that"). The clause adds extra information about Beijing.'
+    explanationZh: '在非限定性从句中，我们用"which"指物（不用"that"）。从句是关于北京的补充信息。'
+    grammarPoint: 'Non-defining relative clause with which (thing)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0724
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The Great Wall, _____ is over 21,000 km long, can be seen from space.'
+    questionZh: '长城——全长超过21,000公里——从太空可以看到。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'whose'
+    answer: 'B'
+    explanation: '"Which" is used for things in non-defining clauses. Remember: never use "that" in non-defining clauses.'
+    explanationZh: '非限定性从句中用"which"指物。记住：非限定性从句中绝对不用"that"。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0725
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Jane Jacobs, _____ book changed urban planning, believed cities should be built for people.'
+    questionZh: 'Jane Jacobs——她的书改变了城市规划——认为城市应该为人而建。'
+    answer: 'whose'
+    acceptableAnswers: ['whose']
+    explanation: '"Whose" shows possession — Jane Jacobs''s book. It works in both defining and non-defining clauses.'
+    explanationZh: '"Whose"表示所属——Jane Jacobs 的书。它在限定性和非限定性从句中都可以使用。'
+    grammarPoint: 'Non-defining relative clause with whose (possession)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0726
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Which sentence is WRONG?'
+    questionZh: '哪个句子是错误的？'
+    options:
+      A: 'Paris, which is famous for its architecture, attracts millions of tourists.'
+      B: 'Paris, who is famous for its architecture, attracts millions of tourists.'
+      C: 'My uncle, who is an architect, designed our house.'
+      D: 'The Louvre, which was once a palace, is now a museum.'
+    answer: 'B'
+    explanation: '"Who" is for people only. Paris is a city (a thing), so we must use "which," not "who."'
+    explanationZh: '"Who"只用于人。巴黎是一个城市（物），所以必须用"which"而不是"who"。'
+    grammarPoint: 'Non-defining relative clause — who vs. which'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0727
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'The Forbidden City, _____ was built in the 15th century, contains 9,999 rooms.'
+    questionZh: '紫禁城——建于15世纪——有9,999个房间。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: '"Which" refers to the Forbidden City (a thing). The clause is non-defining — we already know which building.'
+    explanationZh: '"Which"指紫禁城（物）。从句是非限定性的——我们已经知道是哪栋建筑。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0728
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-2]
+    context: world-building
+    question: 'Leonardo da Vinci, _____ designed many inventions, also planned an ideal city.'
+    questionZh: '达芬奇——设计了许多发明——还规划了一座理想城市。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'C'
+    explanation: '"Who" refers to a person — Leonardo da Vinci. Non-defining clause adds extra information about him.'
+    explanationZh: '"Who"指人——达芬奇。非限定性从句补充了关于他的信息。'
+    grammarPoint: 'Non-defining relative clause with who'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0729
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The new park, _____ cost $5 million to build, opened last Saturday.'
+    questionZh: '耗资500万美元建造的新公园上周六开放了。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'B'
+    explanation: '"Which" is used for things in non-defining clauses (with commas). "That" is never used in non-defining clauses.'
+    explanationZh: '非限定性从句中用"which"指物（有逗号）。"That"绝不用于非限定性从句。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0730
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Singapore, _____ population is about 5.7 million, is one of the most densely populated countries.'
+    questionZh: '新加坡——人口约570万——是人口最密集的国家之一。'
+    answer: 'whose'
+    acceptableAnswers: ['whose']
+    explanation: '"Whose" shows possession — Singapore''s population. It works for both people and places.'
+    explanationZh: '"Whose"表示所属——新加坡的人口。它可以用于人和地方。'
+    grammarPoint: 'Non-defining relative clause with whose (place)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0731
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Which sentence correctly uses a non-defining relative clause?'
+    questionZh: '哪个句子正确使用了非限定性定语从句？'
+    options:
+      A: 'The Burj Khalifa that is in Dubai is the tallest building in the world.'
+      B: 'The Burj Khalifa, that is in Dubai, is the tallest building in the world.'
+      C: 'The Burj Khalifa, which is in Dubai, is the tallest building in the world.'
+      D: 'The Burj Khalifa which is in Dubai, is the tallest building in the world.'
+    answer: 'C'
+    explanation: 'Non-defining clauses use "which" (not "that") and are surrounded by commas on BOTH sides.'
+    explanationZh: '非限定性从句用"which"（不用"that"），两边都要有逗号。'
+    grammarPoint: 'Non-defining relative clause — commas + which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0732
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The ancient Romans, _____ built roads across Europe, were brilliant engineers.'
+    questionZh: '古罗马人——在欧洲各地修建道路——是杰出的工程师。'
+    answer: 'who'
+    acceptableAnswers: ['who']
+    explanation: '"Who" refers to people (the Romans) in a non-defining clause. The clause adds extra information.'
+    explanationZh: '"Who"在非限定性从句中指人（罗马人）。从句补充了额外信息。'
+    grammarPoint: 'Non-defining relative clause with who'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0733
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The Sydney Opera House, _____ took 16 years to build, is now a World Heritage Site.'
+    questionZh: '悉尼歌剧院——建造了16年——现在是世界遗产。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'B'
+    explanation: '"Which" is correct for a thing (the Opera House) in a non-defining clause. Never "that" with commas.'
+    explanationZh: '非限定性从句中用"which"指物（歌剧院）。有逗号时绝不用"that"。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0734
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Minecraft, _____ has sold over 238 million copies, is used in schools worldwide.'
+    questionZh: '我的世界——已售出超过2.38亿份——在全球学校中使用。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: 'Non-defining clause about a thing (Minecraft). Use "which" with commas.'
+    explanationZh: '关于事物（我的世界）的非限定性从句。用"which"加逗号。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0735
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The architect Zaha Hadid, _____ was born in Iraq, designed buildings all over the world.'
+    questionZh: '建筑师扎哈·哈迪德——出生于伊拉克——在世界各地设计建筑。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'whose'
+      D: 'who'
+    answer: 'D'
+    explanation: '"Who" refers to a person (Zaha Hadid) in a non-defining clause. The clause adds biographical information.'
+    explanationZh: '"Who"在非限定性从句中指人（扎哈·哈迪德）。从句补充了传记信息。'
+    grammarPoint: 'Non-defining relative clause with who'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0736
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The Silk Road, _____ connected China to Europe, was used for over 1,500 years.'
+    questionZh: '丝绸之路——连接中国和欧洲——使用了1,500多年。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: '"Which" refers to the Silk Road in a non-defining clause. The clause provides additional information.'
+    explanationZh: '"Which"在非限定性从句中指丝绸之路。从句提供了额外信息。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0737
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Choose the sentence where removing the relative clause CHANGES the meaning:'
+    questionZh: '选择删除定语从句会改变意思的句子：'
+    options:
+      A: 'The Great Wall, which is in China, is very long.'
+      B: 'The students who passed the exam got certificates.'
+      C: 'My teacher, who is from Canada, speaks three languages.'
+      D: 'Tokyo, which is the capital of Japan, has excellent public transport.'
+    answer: 'B'
+    explanation: 'In B, "who passed the exam" is a DEFINING clause — it specifies WHICH students. Removing it changes which students we mean. A, C, D are non-defining (extra info).'
+    explanationZh: 'B中"who passed the exam"是限定性从句——它指明了哪些学生。删除它会改变我们指的是哪些学生。A、C、D是非限定性的（额外信息）。'
+    grammarPoint: 'Defining vs. non-defining relative clauses'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0738
+    type: fill-blank
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'The Taj Mahal, _____ beauty attracts millions of visitors, was built as a monument to love.'
+    questionZh: '泰姬陵——其美丽吸引了数百万游客——是作为爱情的纪念碑而建造的。'
+    answer: 'whose'
+    acceptableAnswers: ['whose']
+    explanation: '"Whose" shows possession — the Taj Mahal''s beauty. It is used in a non-defining clause.'
+    explanationZh: '"Whose"表示所属——泰姬陵的美丽。用于非限定性从句中。'
+    grammarPoint: 'Non-defining relative clause with whose'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0739
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Our school, _____ was renovated last summer, now has a beautiful new library.'
+    questionZh: '我们学校——去年夏天翻新了——现在有一个漂亮的新图书馆。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'B'
+    explanation: '"Which" for things in non-defining clauses. "Our school" is already identified, so extra info needs commas + which.'
+    explanationZh: '非限定性从句中"which"指物。"Our school"已经被确定，所以额外信息需要逗号+which。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0740
+    type: multiple-choice
+    tags: [non-defining-relative, Q08, difficulty-3]
+    context: world-building
+    question: 'Which sentence is punctuated correctly?'
+    questionZh: '哪个句子的标点符号正确？'
+    options:
+      A: 'Dubai which has many skyscrapers is a modern city.'
+      B: 'Dubai, which has many skyscrapers is a modern city.'
+      C: 'Dubai, which has many skyscrapers, is a modern city.'
+      D: 'Dubai, that has many skyscrapers, is a modern city.'
+    answer: 'C'
+    explanation: 'Non-defining clauses need commas on BOTH sides and use "which" (not "that"). Only C is correct.'
+    explanationZh: '非限定性从句两边都需要逗号，用"which"（不用"that"）。只有C是正确的。'
+    grammarPoint: 'Non-defining relative clause — correct punctuation'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # ============================================================
+  # G0741–G0760: Noun clauses (what/that-clauses as subject/object)
+  # ============================================================
+  - id: G0741
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: '_____ the architect designed surprised everyone.'
+    questionZh: '建筑师设计的东西让所有人都惊讶了。'
+    options:
+      A: 'That'
+      B: 'What'
+      C: 'Which'
+      D: 'Who'
+    answer: 'B'
+    explanation: '"What" = "the thing that." "What the architect designed" is a noun clause acting as the SUBJECT of the sentence.'
+    explanationZh: '"What" = "the thing that"。"What the architect designed"是一个名词从句，充当句子的主语。'
+    grammarPoint: 'Noun clause with what (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0742
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: 'I believe _____ every city needs more green spaces.'
+    questionZh: '我相信每个城市都需要更多的绿色空间。'
+    answer: 'that'
+    acceptableAnswers: ['that']
+    explanation: '"That" introduces a noun clause after "believe." "That every city needs more green spaces" is the OBJECT of "believe."'
+    explanationZh: '"That"在"believe"之后引导名词从句。"That every city needs more green spaces"是"believe"的宾语。'
+    grammarPoint: 'Noun clause with that (object after believe)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0743
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: '_____ we need is a better public transport system.'
+    questionZh: '我们需要的是一个更好的公共交通系统。'
+    options:
+      A: 'That'
+      B: 'What'
+      C: 'Which'
+      D: 'Where'
+    answer: 'B'
+    explanation: '"What we need" = "the thing that we need." It acts as the subject of the sentence.'
+    explanationZh: '"What we need" = "我们需要的东西"。它充当句子的主语。'
+    grammarPoint: 'Noun clause with what (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0744
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: 'The report shows _____ pollution levels have decreased by 20%.'
+    questionZh: '报告显示污染水平下降了20%。'
+    answer: 'that'
+    acceptableAnswers: ['that']
+    explanation: '"That" introduces a noun clause as the object of "shows." It can sometimes be omitted in informal speech.'
+    explanationZh: '"That"引导名词从句作为"shows"的宾语。在非正式口语中有时可以省略。'
+    grammarPoint: 'Noun clause with that (object after shows)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0745
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: 'Nobody knows _____ the ancient city was abandoned.'
+    questionZh: '没有人知道古城为什么被遗弃。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'why'
+      D: 'which'
+    answer: 'C'
+    explanation: '"Why" introduces a noun clause about a reason. "Why the ancient city was abandoned" is the object of "knows."'
+    explanationZh: '"Why"引导关于原因的名词从句。"Why the ancient city was abandoned"是"knows"的宾语。'
+    grammarPoint: 'Noun clause with why (indirect question)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0746
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-2]
+    context: world-building
+    question: '_____ makes a great neighbourhood is walkability and green spaces.'
+    questionZh: '造就一个好社区的是步行性和绿色空间。'
+    answer: 'What'
+    acceptableAnswers: ['What']
+    explanation: '"What makes a great neighbourhood" = "the thing that makes a great neighbourhood." It is the subject.'
+    explanationZh: '"What makes a great neighbourhood" = "造就好社区的东西"。它是主语。'
+    grammarPoint: 'Noun clause with what (subject)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0747
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'It is essential _____ cities invest in renewable energy.'
+    questionZh: '城市投资可再生能源是必要的。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'which'
+      D: 'where'
+    answer: 'B'
+    explanation: '"It is essential that..." uses a that-clause with "it" as a formal subject. The real subject is the that-clause.'
+    explanationZh: '"It is essential that..."用"it"作形式主语，that从句是真正的主语。'
+    grammarPoint: 'Noun clause with that (formal subject it)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0748
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'The question is _____ we should demolish the old factory or renovate it.'
+    questionZh: '问题是我们应该拆除旧工厂还是翻新它。'
+    answer: 'whether'
+    acceptableAnswers: ['whether']
+    explanation: '"Whether" introduces a noun clause expressing a choice between two options.'
+    explanationZh: '"Whether"引导名词从句，表达两个选项之间的选择。'
+    grammarPoint: 'Noun clause with whether (choice)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0749
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'Can you explain _____ this building was designed to withstand earthquakes?'
+    questionZh: '你能解释一下这栋建筑是如何设计来抵抗地震的吗？'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'how'
+      D: 'which'
+    answer: 'C'
+    explanation: '"How" introduces a noun clause about the method or way something was done. It is the object of "explain."'
+    explanationZh: '"How"引导关于方法或方式的名词从句。它是"explain"的宾语。'
+    grammarPoint: 'Noun clause with how (indirect question)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0750
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: '_____ amazed the archaeologists was the excellent condition of the ancient pottery.'
+    questionZh: '令考古学家惊讶的是古代陶器的出色状况。'
+    answer: 'What'
+    acceptableAnswers: ['What']
+    explanation: '"What amazed the archaeologists" = "the thing that amazed them." It acts as the subject of the whole sentence.'
+    explanationZh: '"What amazed the archaeologists" = "让他们惊讶的东西"。它充当整个句子的主语。'
+    grammarPoint: 'Noun clause with what (subject)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0751
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'I wonder _____ the new bridge will be finished on time.'
+    questionZh: '我想知道新桥是否会按时完工。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'whether'
+      D: 'which'
+    answer: 'C'
+    explanation: '"Whether" introduces a yes/no indirect question. "I wonder whether..." = "I want to know if..."'
+    explanationZh: '"Whether"引导是/否间接疑问句。"I wonder whether..." = "我想知道是否..."'
+    grammarPoint: 'Noun clause with whether (indirect question)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0752
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'It is clear _____ more trees make cities healthier and happier places.'
+    questionZh: '很明显，更多的树让城市成为更健康、更快乐的地方。'
+    answer: 'that'
+    acceptableAnswers: ['that']
+    explanation: '"It is clear that..." uses a that-clause. The real subject is the information in the that-clause.'
+    explanationZh: '"It is clear that..."使用that从句。真正的主语是that从句中的信息。'
+    grammarPoint: 'Noun clause with that (formal subject it)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0753
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'Scientists are studying _____ ancient cities managed their water supply.'
+    questionZh: '科学家正在研究古代城市如何管理水资源。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'how'
+      D: 'which'
+    answer: 'C'
+    explanation: '"How" introduces a noun clause about method. "How ancient cities managed their water supply" is the object of "studying."'
+    explanationZh: '"How"引导关于方法的名词从句。"How ancient cities managed their water supply"是"studying"的宾语。'
+    grammarPoint: 'Noun clause with how'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0754
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: '_____ the mayor said about the new park was very exciting.'
+    questionZh: '市长关于新公园说的话非常令人兴奋。'
+    answer: 'What'
+    acceptableAnswers: ['What']
+    explanation: '"What the mayor said" = "the things that the mayor said." It is the subject of "was very exciting."'
+    explanationZh: '"What the mayor said" = "市长说的话"。它是"was very exciting"的主语。'
+    grammarPoint: 'Noun clause with what (subject)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0755
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'The fact _____ the building survived the earthquake proves the design was strong.'
+    questionZh: '这栋建筑在地震中幸存的事实证明了设计很坚固。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'which'
+      D: 'how'
+    answer: 'B'
+    explanation: '"The fact that..." is a common pattern. "That" introduces a noun clause explaining what the fact is.'
+    explanationZh: '"The fact that..."是常见句型。"That"引导名词从句，解释事实是什么。'
+    grammarPoint: 'Noun clause with that (appositive to "the fact")'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0756
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'Do you know _____ many people live in Tokyo?'
+    questionZh: '你知道东京有多少人吗？'
+    answer: 'how'
+    acceptableAnswers: ['how']
+    explanation: '"How many" introduces a noun clause as an indirect question. Note: the word order is NOT question order.'
+    explanationZh: '"How many"引导名词从句作为间接疑问句。注意：语序不是疑问句语序。'
+    grammarPoint: 'Noun clause with how many (indirect question)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0757
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'Everyone agrees _____ the new park has improved the neighbourhood.'
+    questionZh: '每个人都同意新公园改善了社区。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'which'
+      D: 'how'
+    answer: 'B'
+    explanation: '"That" introduces a noun clause as the object of "agrees." In formal writing, "that" should be kept.'
+    explanationZh: '"That"引导名词从句作为"agrees"的宾语。在正式写作中，"that"应该保留。'
+    grammarPoint: 'Noun clause with that (object)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0758
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: '_____ you choose to build your city in a game depends on the resources available.'
+    questionZh: '你在游戏中选择在哪里建造城市取决于可用的资源。'
+    answer: 'Where'
+    acceptableAnswers: ['Where']
+    explanation: '"Where you choose to build" is a noun clause acting as the SUBJECT. It tells us about the location choice.'
+    explanationZh: '"Where you choose to build"是名词从句充当主语。它告诉我们关于位置选择。'
+    grammarPoint: 'Noun clause with where (subject)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0759
+    type: multiple-choice
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'It surprised me _____ the ancient bridge was still standing after two thousand years.'
+    questionZh: '这座古桥在两千年后仍然屹立让我吃惊。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'which'
+      D: 'how'
+    answer: 'B'
+    explanation: '"It surprised me that..." uses "it" as a formal subject. The that-clause is the real subject.'
+    explanationZh: '"It surprised me that..."用"it"作形式主语。that从句是真正的主语。'
+    grammarPoint: 'Noun clause with that (formal subject it)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0760
+    type: fill-blank
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    question: 'The children discussed _____ they should build a castle or a space station in Minecraft.'
+    questionZh: '孩子们讨论了他们应该在我的世界中建造城堡还是太空站。'
+    answer: 'whether'
+    acceptableAnswers: ['whether']
+    explanation: '"Whether" introduces a choice between two options in a noun clause. "Whether... or..." is the standard pattern.'
+    explanationZh: '"Whether"在名词从句中引导两个选项之间的选择。"Whether... or..."是标准句型。'
+    grammarPoint: 'Noun clause with whether...or'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # ============================================================
+  # G0761–G0780: Participle phrases (-ing/-ed as adjective/adverb)
+  # ============================================================
+  - id: G0761
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: 'The city, _____ by mountains on three sides, was easy to defend.'
+    questionZh: '这座城市三面环山，易于防守。'
+    options:
+      A: 'surrounding'
+      B: 'surrounded'
+      C: 'surround'
+      D: 'to surround'
+    answer: 'B'
+    explanation: '"Surrounded" (past participle) is correct because the city IS surrounded (passive meaning). The mountains surround the city.'
+    explanationZh: '"Surrounded"（过去分词）是正确的，因为城市被环绕（被动含义）。山环绕着城市。'
+    grammarPoint: 'Past participle phrase (passive meaning)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0762
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: '_____ across the valley, we could see the ancient ruins in the distance.'
+    questionZh: '眺望山谷对面，我们可以看到远处的古代废墟。'
+    options:
+      A: 'Looked'
+      B: 'Looking'
+      C: 'To looked'
+      D: 'Being looked'
+    answer: 'B'
+    explanation: '"Looking" (present participle) shows an action happening at the same time. WE were looking, so -ing is correct (active meaning).'
+    explanationZh: '"Looking"（现在分词）表示同时发生的动作。我们在看，所以用-ing（主动含义）。'
+    grammarPoint: 'Present participle phrase (active meaning)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0763
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: 'The house, _____ over a hundred years ago, needs major renovation.'
+    questionZh: '这栋建于一百多年前的房子需要大规模翻新。'
+    answer: 'built'
+    acceptableAnswers: ['built']
+    explanation: '"Built" (past participle) = "which was built." The house was built (passive), so past participle is correct.'
+    explanationZh: '"Built"（过去分词）= "which was built"。房子被建造（被动），所以用过去分词。'
+    grammarPoint: 'Past participle phrase (reduced relative clause)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0764
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: 'The children, _____ in the new playground, looked very happy.'
+    questionZh: '在新游乐场玩耍的孩子们看起来非常开心。'
+    options:
+      A: 'played'
+      B: 'playing'
+      C: 'to play'
+      D: 'play'
+    answer: 'B'
+    explanation: '"Playing" (present participle) = "who were playing." The children were actively playing (active meaning).'
+    explanationZh: '"Playing"（现在分词）= "who were playing"。孩子们正在玩耍（主动含义）。'
+    grammarPoint: 'Present participle phrase (active meaning)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0765
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: '_____ from recycled materials, the new school building is both eco-friendly and beautiful.'
+    questionZh: '用回收材料建造的新学校建筑既环保又美观。'
+    answer: 'Made'
+    acceptableAnswers: ['Made', 'Built', 'Constructed']
+    explanation: '"Made" (past participle) = "Because it was made." The building was made from materials (passive), so past participle is correct.'
+    explanationZh: '"Made"（过去分词）= "Because it was made"。建筑由材料制成（被动），所以用过去分词。'
+    grammarPoint: 'Past participle phrase (reason, passive meaning)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0766
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-2]
+    context: world-building
+    question: '_____ that the bridge was unsafe, the mayor ordered it to be closed immediately.'
+    questionZh: '意识到桥不安全后，市长下令立即关闭它。'
+    options:
+      A: 'Realised'
+      B: 'Realising'
+      C: 'To realise'
+      D: 'Being realised'
+    answer: 'B'
+    explanation: '"Realising" (present participle) = "When/Because the mayor realised." The mayor realised (active), so -ing is correct.'
+    explanationZh: '"Realising"（现在分词）= "当/因为市长意识到"。市长意识到（主动），所以用-ing。'
+    grammarPoint: 'Present participle phrase (reason, active)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0767
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The temple, _____ entirely of marble, has stood for over two thousand years.'
+    questionZh: '这座完全由大理石建造的寺庙已经屹立了两千多年。'
+    answer: 'constructed'
+    acceptableAnswers: ['constructed', 'built', 'made']
+    explanation: '"Constructed" (past participle) = "which was constructed." Passive meaning — the temple was constructed.'
+    explanationZh: '"Constructed"（过去分词）= "which was constructed"。被动含义——寺庙被建造。'
+    grammarPoint: 'Past participle phrase (passive meaning)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0768
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ no trees or parks, the neighbourhood felt grey and unwelcoming.'
+    questionZh: '没有树木和公园，这个社区感觉灰暗且不友好。'
+    options:
+      A: 'Had'
+      B: 'Having'
+      C: 'To have'
+      D: 'Been having'
+    answer: 'B'
+    explanation: '"Having" (present participle) = "Because it had." The neighbourhood had no trees (active, possessive meaning).'
+    explanationZh: '"Having"（现在分词）= "因为它没有"。社区没有树（主动，所有含义）。'
+    grammarPoint: 'Present participle phrase (reason with "having")'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0769
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The road, _____ during the Roman period, is still used by cars today.'
+    questionZh: '罗马时期建造的道路今天仍被汽车使用。'
+    answer: 'built'
+    acceptableAnswers: ['built', 'constructed', 'paved']
+    explanation: '"Built" (past participle) = "which was built." The road was built (passive), so past participle is correct.'
+    explanationZh: '"Built"（过去分词）= "which was built"。道路被建造（被动），所以用过去分词。'
+    grammarPoint: 'Past participle phrase (passive, reduced relative clause)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0770
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ finished with the plans, the architect presented them to the city council.'
+    questionZh: '完成计划后，建筑师将其提交给市议会。'
+    options:
+      A: 'Having'
+      B: 'Had'
+      C: 'Have'
+      D: 'Has'
+    answer: 'A'
+    explanation: '"Having finished" (perfect participle) shows an action completed BEFORE the main action. First finished, then presented.'
+    explanationZh: '"Having finished"（完成分词）表示在主要动作之前完成的动作。先完成，然后展示。'
+    grammarPoint: 'Perfect participle phrase (completed before main action)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0771
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The tourists, _____ by the beauty of the ancient temple, took hundreds of photographs.'
+    questionZh: '被古寺的美丽所惊叹的游客们拍了数百张照片。'
+    answer: 'amazed'
+    acceptableAnswers: ['amazed', 'impressed', 'fascinated']
+    explanation: '"Amazed" (past participle) = "who were amazed." The tourists were amazed (passive emotion), so past participle is correct.'
+    explanationZh: '"Amazed"（过去分词）= "who were amazed"。游客们被惊叹（被动情感），所以用过去分词。'
+    grammarPoint: 'Past participle phrase (emotion, passive)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0772
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ along the river, you can see beautiful old houses on both sides.'
+    questionZh: '沿着河边走，你可以看到两边漂亮的老房子。'
+    options:
+      A: 'Walked'
+      B: 'Walking'
+      C: 'To walk'
+      D: 'Being walked'
+    answer: 'B'
+    explanation: '"Walking" (present participle) = "If/When you walk." You are walking (active), so -ing is correct.'
+    explanationZh: '"Walking"（现在分词）= "如果/当你走"。你在走（主动），所以用-ing。'
+    grammarPoint: 'Present participle phrase (condition/time, active)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0773
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ in volcanic ash for centuries, the city of Pompeii was remarkably well preserved.'
+    questionZh: '被火山灰掩埋了几个世纪，庞贝城保存得非常好。'
+    answer: 'Buried'
+    acceptableAnswers: ['Buried', 'Covered']
+    explanation: '"Buried" (past participle) = "Because it had been buried." Passive meaning — the city was buried.'
+    explanationZh: '"Buried"（过去分词）= "因为它被埋了"。被动含义——城市被掩埋。'
+    grammarPoint: 'Past participle phrase (reason, passive)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0774
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The engineer, _____ carefully at the cracks in the wall, decided the building was unsafe.'
+    questionZh: '工程师仔细看着墙上的裂缝，决定这栋建筑不安全。'
+    options:
+      A: 'looked'
+      B: 'looking'
+      C: 'to look'
+      D: 'having looked'
+    answer: 'B'
+    explanation: '"Looking" shows an action happening at the same time as the main verb. The engineer looked AND decided.'
+    explanationZh: '"Looking"表示与主要动词同时发生的动作。工程师看了并且决定。'
+    grammarPoint: 'Present participle phrase (simultaneous action)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0775
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ been damaged by the earthquake, the bridge needed urgent repairs.'
+    questionZh: '被地震损坏后，桥梁需要紧急修理。'
+    answer: 'Having'
+    acceptableAnswers: ['Having']
+    explanation: '"Having been damaged" (perfect passive participle) shows a completed passive action before the main action.'
+    explanationZh: '"Having been damaged"（完成被动分词）表示在主要动作之前完成的被动动作。'
+    grammarPoint: 'Perfect passive participle phrase'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0776
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The view from the tower was _____.'
+    questionZh: '从塔楼看到的景色是 _____。'
+    options:
+      A: 'amazed'
+      B: 'amazing'
+      C: 'amaze'
+      D: 'to amaze'
+    answer: 'B'
+    explanation: '"Amazing" (-ing) describes the THING that causes the feeling. The view IS amazing. "Amazed" (-ed) describes the person who FEELS the emotion.'
+    explanationZh: '"Amazing"（-ing）描述引起感觉的事物。景色很令人惊叹。"Amazed"（-ed）描述感受到情感的人。'
+    grammarPoint: '-ing vs -ed adjectives (cause vs. experiencer)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0777
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The tourists were _____ by the size of the ancient pyramid.'
+    questionZh: '游客们对古代金字塔的大小感到 _____。'
+    answer: 'amazed'
+    acceptableAnswers: ['amazed', 'impressed', 'astonished']
+    explanation: '"Amazed" (-ed) describes the PEOPLE who feel the emotion. The pyramid amazes them; they are amazed.'
+    explanationZh: '"Amazed"（-ed）描述感受到情感的人。金字塔让他们惊叹；他们感到惊叹。'
+    grammarPoint: '-ed adjective (experiencer of emotion)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0778
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: 'The documentary about ancient Rome was really _____.'
+    questionZh: '关于古罗马的纪录片真的很 _____。'
+    options:
+      A: 'interested'
+      B: 'interesting'
+      C: 'interest'
+      D: 'to interest'
+    answer: 'B'
+    explanation: '"Interesting" (-ing) describes the documentary (the thing that causes interest). "Interested" would describe the VIEWER.'
+    explanationZh: '"Interesting"（-ing）描述纪录片（引起兴趣的事物）。"Interested"描述观众。'
+    grammarPoint: '-ing adjective (cause of emotion)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0779
+    type: fill-blank
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ to the top of the skyscraper, we admired the spectacular view of the city.'
+    questionZh: '到达摩天大楼顶部后，我们欣赏了城市的壮丽景色。'
+    answer: 'Having climbed'
+    acceptableAnswers: ['Having climbed', 'Climbing']
+    explanation: '"Having climbed" shows the climbing was completed BEFORE admiring the view. "Climbing" is also possible (simultaneous).'
+    explanationZh: '"Having climbed"表示攀登在欣赏景色之前完成。"Climbing"也可以（同时发生）。'
+    grammarPoint: 'Perfect participle phrase (sequence of events)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0780
+    type: multiple-choice
+    tags: [participle-phrase, Q08, difficulty-3]
+    context: world-building
+    question: '_____ with modern solar panels, the old factory building now produces its own electricity.'
+    questionZh: '配备了现代太阳能板后，旧工厂建筑现在自己发电。'
+    options:
+      A: 'Fitting'
+      B: 'Fitted'
+      C: 'To fit'
+      D: 'Fit'
+    answer: 'B'
+    explanation: '"Fitted" (past participle) = "Because it has been fitted." The building was fitted (passive), so past participle is correct.'
+    explanationZh: '"Fitted"（过去分词）= "因为它被安装了"。建筑被安装（被动），所以用过去分词。'
+    grammarPoint: 'Past participle phrase (reason, passive)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # ============================================================
+  # G0781–G0800: Sentence combining (2 simple → 1 complex)
+  # ============================================================
+  - id: G0781
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-2]
+    context: world-building
+    question: 'Combine: "The city has clean parks. People enjoy walking there." → The city has clean parks _____ people enjoy walking.'
+    questionZh: '合并："城市有干净的公园。人们喜欢在那里散步。" → 城市有干净的公园 _____ 人们喜欢散步。'
+    answer: 'where'
+    acceptableAnswers: ['where', 'in which']
+    explanation: '"Where" connects the two sentences by referring to the place (parks) in a relative clause.'
+    explanationZh: '"Where"通过在定语从句中指代地点（公园）来连接两个句子。'
+    grammarPoint: 'Combining with relative clause (where)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0782
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-2]
+    context: world-building
+    question: 'Combine: "The architect designed the museum. She is from Japan." → The architect _____ designed the museum is from Japan.'
+    questionZh: '合并："建筑师设计了博物馆。她来自日本。" → _____ 设计博物馆的建筑师来自日本。'
+    answer: 'who'
+    acceptableAnswers: ['who', 'that']
+    explanation: '"Who" connects the two ideas by creating a defining relative clause about the architect.'
+    explanationZh: '"Who"通过创建关于建筑师的限定性定语从句来连接两个想法。'
+    grammarPoint: 'Combining with relative clause (who)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0783
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-2]
+    context: world-building
+    question: 'Combine: "The bridge was damaged. It was repaired within a month." → The bridge, _____ was damaged, was repaired within a month.'
+    questionZh: '合并："桥被损坏了。它在一个月内被修好了。" → 被损坏的桥在一个月内被修好了。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: '"Which" connects the two ideas in a non-defining relative clause (the bridge is already identified).'
+    explanationZh: '"Which"在非限定性定语从句中连接两个想法（桥已经被确定了）。'
+    grammarPoint: 'Combining with non-defining relative clause (which)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0784
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-2]
+    context: world-building
+    question: 'Combine: "It was raining heavily. We decided to stay inside." → _____ it was raining heavily, we decided to stay inside.'
+    questionZh: '合并："下大雨了。我们决定待在室内。" → _____ 下大雨，我们决定待在室内。'
+    answer: 'Because'
+    acceptableAnswers: ['Because', 'Since', 'As']
+    explanation: '"Because" shows the reason. The rain caused the decision to stay inside.'
+    explanationZh: '"Because"表示原因。下雨导致了待在室内的决定。'
+    grammarPoint: 'Combining with adverbial clause (reason)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0785
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-2]
+    context: world-building
+    question: 'Combine: "The city grew rapidly. The infrastructure could not keep up." → _____ the city grew rapidly, the infrastructure could not keep up.'
+    questionZh: '合并："城市快速增长。基础设施跟不上。" → _____ 城市快速增长，基础设施跟不上。'
+    answer: 'Although'
+    acceptableAnswers: ['Although', 'While', 'As']
+    explanation: '"Although" can show concession (unexpected contrast). However, "As" showing time is also valid. Context determines the best choice.'
+    explanationZh: '"Although"可以表示让步（意外对比）。不过"As"表示时间也可以。上下文决定最佳选择。'
+    grammarPoint: 'Combining with adverbial clause'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: G0786
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "You build more parks. The city becomes healthier." → The more parks you build, _____ the city becomes.'
+    questionZh: '合并："你建更多公园。城市变得更健康。" → 你建的公园越多，城市 _____ 。'
+    answer: 'the healthier'
+    acceptableAnswers: ['the healthier']
+    explanation: '"The more... the more..." is a correlative comparative pattern. "The more parks you build, the healthier the city becomes."'
+    explanationZh: '"The more... the more..."是关联比较级句型。"你建的公园越多，城市越健康。"'
+    grammarPoint: 'The more... the more... (correlative comparatives)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0787
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The mayor wanted to build a new park. The budget was limited." → The mayor wanted to build a new park _____ the budget was limited.'
+    questionZh: '合并："市长想建一个新公园。预算有限。" → 市长想建新公园 _____ 预算有限。'
+    answer: 'even though'
+    acceptableAnswers: ['even though', 'although', 'despite the fact that']
+    explanation: '"Even though" shows concession — the mayor wanted to build DESPITE the budget problem.'
+    explanationZh: '"Even though"表示让步——尽管预算有问题，市长仍想建造。'
+    grammarPoint: 'Combining with concession clause (even though)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0788
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The building collapsed. It had not been maintained for decades." → The building collapsed _____ it had not been maintained for decades.'
+    questionZh: '合并："建筑倒塌了。它几十年没有维护了。" → 建筑倒塌了 _____ 它几十年没有维护了。'
+    answer: 'because'
+    acceptableAnswers: ['because', 'since', 'as']
+    explanation: '"Because" shows the reason for the collapse — lack of maintenance caused it.'
+    explanationZh: '"Because"表示倒塌的原因——缺乏维护导致了倒塌。'
+    grammarPoint: 'Combining with reason clause (because)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0789
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The city banned cars. Air quality improved dramatically." → _____ the city banned cars, air quality improved dramatically.'
+    questionZh: '合并："城市禁止了汽车。空气质量显著改善。" → _____ 城市禁止了汽车，空气质量显著改善。'
+    answer: 'After'
+    acceptableAnswers: ['After', 'When', 'Once']
+    explanation: '"After" shows time sequence — the improvement came AFTER the ban. "When" and "Once" are also valid.'
+    explanationZh: '"After"表示时间顺序——改善在禁令之后。"When"和"Once"也有效。'
+    grammarPoint: 'Combining with time clause (after)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0790
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "We reduce carbon emissions. We will protect the environment." → _____ we reduce carbon emissions, we will protect the environment.'
+    questionZh: '合并："我们减少碳排放。我们将保护环境。" → _____ 我们减少碳排放，我们将保护环境。'
+    answer: 'If'
+    acceptableAnswers: ['If', 'Provided that', 'As long as']
+    explanation: '"If" introduces a condition. The protection depends on reducing emissions.'
+    explanationZh: '"If"引导条件。保护取决于减少排放。'
+    grammarPoint: 'Combining with condition clause (if)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0791
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The architect won many awards. She continued to design simple, practical buildings." → _____ winning many awards, the architect continued to design simple, practical buildings.'
+    questionZh: '合并："建筑师获得了许多奖项。她继续设计简单实用的建筑。" → _____ 获得许多奖项，建筑师继续设计简单实用的建筑。'
+    answer: 'Despite'
+    acceptableAnswers: ['Despite', 'In spite of']
+    explanation: '"Despite" + -ing shows contrast. You would expect fame to change her style, but it did not.'
+    explanationZh: '"Despite" + -ing 表示对比。你会期望名气改变她的风格，但没有。'
+    grammarPoint: 'Combining with despite + -ing'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0792
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The road was closed. Workers could repair the bridge safely." → The road was closed _____ workers could repair the bridge safely.'
+    questionZh: '合并："道路被关闭了。工人们可以安全地修理桥梁。" → 道路被关闭了 _____ 工人们可以安全地修理桥梁。'
+    answer: 'so that'
+    acceptableAnswers: ['so that', 'in order that']
+    explanation: '"So that" shows purpose — the road was closed FOR THE PURPOSE OF safe bridge repair.'
+    explanationZh: '"So that"表示目的——关闭道路是为了安全修理桥梁。'
+    grammarPoint: 'Combining with purpose clause (so that)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0793
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The population grew so fast. The city ran out of housing." → The population grew so fast _____ the city ran out of housing.'
+    questionZh: '合并："人口增长如此之快。城市的住房不够了。" → 人口增长如此之快 _____ 城市的住房不够了。'
+    answer: 'that'
+    acceptableAnswers: ['that']
+    explanation: '"So... that..." shows result. The growth was so fast that housing ran out.'
+    explanationZh: '"So... that..."表示结果。增长如此之快以至于住房不够了。'
+    grammarPoint: 'Combining with result clause (so...that)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0794
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "Ancient Rome fell. Its roads continued to be used for centuries." → _____ ancient Rome fell, its roads continued to be used for centuries.'
+    questionZh: '合并："古罗马灭亡了。它的道路继续使用了几个世纪。" → _____ 古罗马灭亡了，它的道路继续使用了几个世纪。'
+    answer: 'Even after'
+    acceptableAnswers: ['Even after', 'After', 'Although']
+    explanation: '"Even after" shows that the roads'' use continued despite the fall of Rome.'
+    explanationZh: '"Even after"表示尽管罗马灭亡，道路的使用仍然继续。'
+    grammarPoint: 'Combining with time/concession clause'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0795
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The earthquake struck at night. Most people were sleeping." → The earthquake struck _____ most people were sleeping.'
+    questionZh: '合并："地震在夜间发生了。大多数人都在睡觉。" → 地震在大多数人都在睡觉 _____ 发生了。'
+    answer: 'while'
+    acceptableAnswers: ['while', 'when']
+    explanation: '"While" or "when" shows simultaneous time — the earthquake happened at the same time as sleeping.'
+    explanationZh: '"While"或"when"表示同时——地震发生在睡觉的同时。'
+    grammarPoint: 'Combining with time clause (while/when)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0796
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "Parks are important for health. They should be included in every neighbourhood." → Parks, _____ are important for health, should be included in every neighbourhood.'
+    questionZh: '合并："公园对健康很重要。它们应该被纳入每个社区。" → 公园——对健康很重要——应该被纳入每个社区。'
+    answer: 'which'
+    acceptableAnswers: ['which']
+    explanation: '"Which" creates a non-defining relative clause adding extra information about parks.'
+    explanationZh: '"Which"创建非限定性定语从句，补充关于公园的额外信息。'
+    grammarPoint: 'Combining with non-defining relative clause'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0797
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The new bridge opened. Traffic congestion decreased by 40%." → _____ the new bridge opened, traffic congestion decreased by 40%.'
+    questionZh: '合并："新桥开通了。交通拥堵减少了40%。" → _____ 新桥开通，交通拥堵减少了40%。'
+    answer: 'Once'
+    acceptableAnswers: ['Once', 'After', 'When']
+    explanation: '"Once" = "as soon as" — once the bridge opened, congestion dropped. Shows time and result.'
+    explanationZh: '"Once" = "一旦"——一旦桥开通，拥堵就减少了。表示时间和结果。'
+    grammarPoint: 'Combining with time clause (once)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0798
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The building is very old. It is still structurally sound." → _____ the building is very old, it is still structurally sound.'
+    questionZh: '合并："这栋建筑很老了。它在结构上仍然很牢固。" → _____ 建筑很老了，它在结构上仍然牢固。'
+    answer: 'Although'
+    acceptableAnswers: ['Although', 'Even though', 'Though']
+    explanation: '"Although" shows concession — it is surprising that the old building is still sound.'
+    explanationZh: '"Although"表示让步——老建筑仍然牢固令人惊讶。'
+    grammarPoint: 'Combining with concession clause (although)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0799
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "The architect used recycled materials. She wanted to reduce waste." → The architect used recycled materials _____ reduce waste.'
+    questionZh: '合并："建筑师使用了回收材料。她想减少浪费。" → 建筑师使用回收材料 _____ 减少浪费。'
+    answer: 'in order to'
+    acceptableAnswers: ['in order to', 'to', 'so as to']
+    explanation: '"In order to" or "to" shows purpose. She used recycled materials FOR THE PURPOSE OF reducing waste.'
+    explanationZh: '"In order to"或"to"表示目的。她使用回收材料是为了减少浪费。'
+    grammarPoint: 'Combining with purpose infinitive (in order to)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: G0800
+    type: fill-blank
+    tags: [sentence-combining, Q08, difficulty-3]
+    context: world-building
+    question: 'Combine: "Cities invest in public transport. People use fewer cars. Pollution decreases." → _____ cities invest in public transport, people use fewer cars, _____ leads to less pollution.'
+    questionZh: '合并："城市投资公共交通。人们少用汽车。污染减少。" → _____ 城市投资公共交通，人们少用汽车，_____ 导致更少的污染。'
+    answer: 'When'
+    acceptableAnswers: ['When']
+    explanation: '"When" introduces the condition, and "which" introduces a non-defining relative clause referring to the whole previous idea. Full answer: "When... which leads to..."'
+    explanationZh: '"When"引导条件，"which"引导非限定性定语从句指代前面整个想法。完整答案："When... which leads to..."'
+    grammarPoint: 'Complex sentence combining multiple clauses'
+    relatedQuest: Q08
+    difficulty: 3

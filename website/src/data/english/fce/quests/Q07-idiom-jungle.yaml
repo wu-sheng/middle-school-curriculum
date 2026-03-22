@@ -1,0 +1,672 @@
+id: Q07
+title: 'Idiom Jungle'
+titleZh: '成语丛林'
+subtitle: 'Navigate the wild world of phrasal verbs, collocations, and idioms!'
+subtitleZh: '探索短语动词、搭配和习语的奇妙世界！'
+month: 7
+fceMapping: 'Use of English Part 1 & Part 2 (Cloze Tests)'
+
+theme:
+  setting: 'A magical jungle where every tree, vine, and creature represents a different English expression'
+  settingZh: '一片神奇的丛林，每棵树、每条藤蔓和每个生物都代表一个不同的英语表达'
+  mascot: 'Momo, a parrot who speaks in idioms and phrasal verbs — your guide through the Idiom Jungle'
+  mascotZh: 'Momo，一只用习语和短语动词说话的鹦鹉——你的成语丛林向导'
+
+objectives:
+  - 'Master 60 common phrasal verbs with take/get/give/put/look/come/turn/set'
+  - 'Learn the difference between make/do, take/have, say/tell collocations'
+  - 'Use dependent prepositions correctly (depend on, consist of, result in)'
+  - 'Understand and use fixed expressions (in spite of, by means of, on behalf of)'
+  - 'Recognise and use common English idioms in context'
+  - 'Apply cloze test strategies for FCE Use of English Part 1 & Part 2'
+
+objectivesZh:
+  - '掌握60个常见的短语动词（take/get/give/put/look/come/turn/set系列）'
+  - '学会 make/do、take/have、say/tell 搭配的区别'
+  - '正确使用介词搭配（depend on, consist of, result in）'
+  - '理解并使用固定表达（in spite of, by means of, on behalf of）'
+  - '在语境中识别和使用常见英语习语'
+  - '应用 FCE Use of English Part 1 和 Part 2 的完形填空策略'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Phrasal Verbs (Particle Meaning Patterns)
+  # ─────────────────────────────────────────────
+  - id: Q07-L01
+    title: 'Phrasal Verbs — The Vine Code'
+    titleZh: '短语动词 — 藤蔓密码'
+
+    introduction: |
+      Welcome to the Idiom Jungle! Momo the parrot swoops down from a giant banyan tree.
+
+      "Ahoy, young explorer!" he squawks. "In this jungle, every vine has a special power.
+      The SHORT vines — we call them PARTICLES — change the meaning of the verbs they
+      attach to. Watch this!"
+
+      He flies to a vine labelled "TAKE" and wraps different small vines around it.
+
+      "TAKE + UP = start a new hobby. TAKE + OFF = leave the ground. TAKE + OVER =
+      assume control. TAKE + ON = accept a challenge. See? Same verb, different particle,
+      completely different meaning!"
+
+      "Here's the secret code: UP often means completing or increasing. DOWN often means
+      reducing or refusing. OFF often means departing or removing. ON often means continuing
+      or accepting. OUT often means discovering or thoroughly."
+
+      "Once you crack this code, you can GUESS the meaning of phrasal verbs you've
+      never seen before!"
+    introductionZh: |
+      欢迎来到成语丛林！鹦鹉 Momo 从一棵巨大的榕树上俯冲下来。
+
+      "嗨，年轻的探险家！"他嘎嘎叫着。"在这片丛林里，每条藤蔓都有特殊的力量。
+      那些短藤蔓——我们称之为小品词——会改变它们所连接的动词的含义。看好了！"
+
+      他飞到一条标着"TAKE"的藤蔓上，用不同的小藤蔓缠绕它。
+
+      "TAKE + UP = 开始新爱好。TAKE + OFF = 离开地面。TAKE + OVER = 接管控制。
+      TAKE + ON = 接受挑战。看到了吗？同一个动词，不同的小品词，意思完全不同！"
+
+      "这是秘密密码：UP 通常表示完成或增加。DOWN 通常表示减少或拒绝。OFF 通常
+      表示离开或移除。ON 通常表示继续或接受。OUT 通常表示发现或彻底地。"
+
+      "一旦你破解了这个密码，你就能猜出从未见过的短语动词的含义！"
+
+    rules:
+      - pattern: 'UP = Complete / Increase / Start'
+        meaning: 'UP often suggests completion, increase, or starting: take up, give up, set up, turn up, bring up, pick up'
+        meaningZh: 'UP 通常表示完成、增加或开始：take up, give up, set up, turn up, bring up, pick up'
+        examples:
+          - base: 'She took up painting last year.'
+            transformed: 'She started painting as a new hobby.'
+            sentence: '"Took up" = started (a new activity)'
+            sentenceZh: '"Took up" = 开始（一项新活动）'
+          - base: 'He gave up smoking.'
+            transformed: 'He stopped the habit of smoking completely.'
+            sentence: '"Gave up" = stopped completely (UP = finished doing it)'
+            sentenceZh: '"Gave up" = 完全停止（UP = 做完了）'
+
+      - pattern: 'DOWN = Decrease / Refuse / Record'
+        meaning: 'DOWN often suggests decreasing, refusing, or recording: turn down, break down, calm down, write down'
+        meaningZh: 'DOWN 通常表示减少、拒绝或记录：turn down, break down, calm down, write down'
+        examples:
+          - base: 'She turned down the job offer.'
+            transformed: 'She refused the job offer.'
+            sentence: '"Turned down" = refused (DOWN = lowering/rejecting)'
+            sentenceZh: '"Turned down" = 拒绝了（DOWN = 降低/拒绝）'
+
+      - pattern: 'OFF = Depart / Remove / Trigger'
+        meaning: 'OFF often suggests departing, removing, or triggering: take off, set off, put off, show off'
+        meaningZh: 'OFF 通常表示出发、移除或触发：take off, set off, put off, show off'
+        examples:
+          - base: 'We set off at sunrise.'
+            transformed: 'We departed / began our journey at sunrise.'
+            sentence: '"Set off" = departed (OFF = leaving)'
+            sentenceZh: '"Set off" = 出发了（OFF = 离开）'
+
+      - pattern: 'OUT = Discover / Thoroughly / Distribute'
+        meaning: 'OUT often suggests discovering, doing thoroughly, or distributing: find out, figure out, work out, run out, point out'
+        meaningZh: 'OUT 通常表示发现、彻底地做或分发：find out, figure out, work out, run out, point out'
+        examples:
+          - base: 'I figured out the answer.'
+            transformed: 'I discovered the answer by thinking carefully.'
+            sentence: '"Figured out" = discovered through thinking (OUT = fully/thoroughly)'
+            sentenceZh: '"Figured out" = 通过思考发现了（OUT = 完全地/彻底地）'
+
+    tips:
+      - 'When you see a new phrasal verb, check the particle first. UP/DOWN/OFF/OUT each have typical meanings.'
+      - 'Some phrasal verbs have multiple meanings (take off = remove clothes / leave the ground / become successful). Context tells you which.'
+      - 'Phrasal verbs are VERY common in everyday English. You cannot avoid them!'
+      - 'In FCE Part 1, phrasal verbs are tested frequently. Learn the most common 60.'
+    tipsZh:
+      - '当你看到新的短语动词时，先看小品词。UP/DOWN/OFF/OUT 各有典型含义。'
+      - '有些短语动词有多重含义（take off = 脱衣服/起飞/突然成功）。语境告诉你是哪个。'
+      - '短语动词在日常英语中非常常见。你无法避开它们！'
+      - '在 FCE Part 1 中，短语动词经常被考查。学会最常见的60个。'
+
+    practicePreview:
+      - id: Q07-L01-P01
+        question: |
+          Choose the correct particle:
+          My grandmother took _____ painting when she retired.
+        questionZh: |
+          选择正确的小品词：
+          My grandmother took _____ painting when she retired.
+        options:
+          A: 'off'
+          B: 'up'
+          C: 'on'
+          D: 'over'
+        answer: 'B'
+        explanation: '"Took up" means started a new hobby. UP = starting/beginning.'
+        explanationZh: '"Took up"意思是开始新爱好。UP = 开始。'
+
+      - id: Q07-L01-P02
+        question: |
+          Choose the correct particle:
+          The plane took _____ ten minutes late.
+        questionZh: |
+          选择正确的小品词：
+          The plane took _____ ten minutes late.
+        options:
+          A: 'up'
+          B: 'on'
+          C: 'off'
+          D: 'over'
+        answer: 'C'
+        explanation: '"Took off" means left the ground. OFF = departing.'
+        explanationZh: '"Took off"意思是起飞。OFF = 离开。'
+
+      - id: Q07-L01-P03
+        question: |
+          Choose the correct particle:
+          I could not work _____ the answer to the puzzle.
+        questionZh: |
+          选择正确的小品词：
+          I could not work _____ the answer to the puzzle.
+        options:
+          A: 'up'
+          B: 'off'
+          C: 'in'
+          D: 'out'
+        answer: 'D'
+        explanation: '"Work out" means find the answer by thinking. OUT = discover thoroughly.'
+        explanationZh: '"Work out"意思是通过思考找到答案。OUT = 彻底发现。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Verb + Preposition Collocations
+  # ─────────────────────────────────────────────
+  - id: Q07-L02
+    title: 'Verb + Preposition — The Jungle Bridges'
+    titleZh: '动词+介词 — 丛林之桥'
+
+    introduction: |
+      Momo leads you to a network of bridges crossing a wide river. Each bridge connects
+      a VERB island to a PREPOSITION island.
+
+      "In this jungle," Momo explains, "certain verbs MUST cross on certain bridges.
+      'Depend' always crosses on the 'ON' bridge. 'Consist' always crosses on the 'OF' bridge.
+      'Result' always crosses on the 'IN' bridge. If a verb tries to use the wrong bridge,
+      it falls into the river!"
+
+      "These are called DEPENDENT PREPOSITIONS. The verb DEPENDS on a specific preposition —
+      they are partners that always travel together. You cannot say 'depend in' or 'consist at.'
+      The combination is fixed."
+
+      "The tricky part is that different languages use different prepositions. In Chinese,
+      you might say something 'depends at' a situation, but in English, it is always 'depends ON.'
+      There is no logical reason — you just need to memorise the pairs."
+    introductionZh: |
+      Momo 带你来到一片横跨宽阔河流的桥梁网络。每座桥都连接着一个动词岛和一个介词岛。
+
+      "在这片丛林里，"Momo 解释说，"某些动词必须走某些桥。'Depend'总是走'ON'桥。
+      'Consist'总是走'OF'桥。'Result'总是走'IN'桥。如果一个动词试图走错误的桥，
+      它就会掉进河里！"
+
+      "这些叫做'从属介词'。动词依赖于特定的介词——它们是始终一起旅行的搭档。
+      你不能说'depend in'或'consist at'。组合是固定的。"
+
+      "棘手的是不同语言使用不同的介词。在中文里，你可能说某事'取决在'某个情况，
+      但在英语中，总是'depends ON'。没有逻辑原因——你只需要记住这些搭配对。"
+
+    rules:
+      - pattern: 'Verb + ON'
+        meaning: 'depend on, concentrate on, insist on, rely on, comment on'
+        meaningZh: 'depend on（依赖）, concentrate on（集中于）, insist on（坚持）, rely on（依靠）, comment on（评论）'
+        examples:
+          - base: 'Whether we go depends on the weather.'
+            transformed: 'The weather determines if we go.'
+            sentence: '"Depend on" — ON is the only correct preposition.'
+            sentenceZh: '"Depend on"——ON 是唯一正确的介词。'
+      - pattern: 'Verb + OF'
+        meaning: 'consist of, approve of, accuse of, remind of'
+        meaningZh: 'consist of（由……组成）, approve of（赞成）, accuse of（指控）, remind of（使想起）'
+        examples:
+          - base: 'The team consists of twelve players.'
+            transformed: 'The team is made up of twelve players.'
+            sentence: '"Consist of" — OF is the only correct preposition.'
+            sentenceZh: '"Consist of"——OF 是唯一正确的介词。'
+      - pattern: 'Verb + IN'
+        meaning: 'result in, succeed in, believe in, participate in'
+        meaningZh: 'result in（导致）, succeed in（成功）, believe in（相信）, participate in（参加）'
+        examples:
+          - base: 'Not sleeping can result in poor grades.'
+            transformed: 'Not sleeping causes poor grades.'
+            sentence: '"Result in" means to cause. Note: "result from" = to be caused by.'
+            sentenceZh: '"Result in"意思是导致。注意："result from" = 由……引起。'
+      - pattern: 'Verb + FOR'
+        meaning: 'apologise for, blame for, apply for, search for, prepare for'
+        meaningZh: 'apologise for（为……道歉）, blame for（因……责怪）, apply for（申请）, search for（搜索）, prepare for（为……准备）'
+        examples:
+          - base: 'He apologised for being late.'
+            transformed: 'He said sorry because he was late.'
+            sentence: '"Apologise for" — FOR is the only correct preposition.'
+            sentenceZh: '"Apologise for"——FOR 是唯一正确的介词。'
+
+    tips:
+      - 'In FCE Part 2 (open cloze), you often need to write ONE preposition. Knowing dependent prepositions is key.'
+      - 'Learn verb + preposition pairs as whole phrases: "depend ON," not "depend + ?"'
+      - 'When reading, highlight verb + preposition combinations. The more you see them, the more natural they become.'
+      - 'Be careful: "result IN" (cause) vs "result FROM" (be caused by) — the direction is opposite!'
+    tipsZh:
+      - '在 FCE Part 2（开放完形）中，你经常需要写一个介词。掌握从属介词是关键。'
+      - '把动词+介词作为整体短语来学："depend ON"，而不是"depend + ？"'
+      - '阅读时标出动词+介词组合。你看得越多，它们就越自然。'
+      - '注意："result IN"（导致）vs "result FROM"（由……引起）——方向是相反的！'
+
+    practicePreview:
+      - id: Q07-L02-P01
+        question: 'Fill in the preposition: The success of the project depends _____ teamwork.'
+        questionZh: '填入介词：The success of the project depends _____ teamwork.'
+        options:
+          A: 'in'
+          B: 'at'
+          C: 'on'
+          D: 'for'
+        answer: 'C'
+        explanation: '"Depend on" — the preposition is always ON.'
+        explanationZh: '"Depend on"——介词总是 ON。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Make vs Do, Take vs Have, Say vs Tell
+  # ─────────────────────────────────────────────
+  - id: Q07-L03
+    title: 'The Collocation Twins'
+    titleZh: '搭配双胞胎'
+
+    introduction: |
+      Deep in the jungle, you discover two twin parrots sitting on opposite branches.
+
+      "I am MAKE!" says the one on the left, who is bright blue.
+      "And I am DO!" says the one on the right, who is bright green.
+
+      Momo flies between them. "These twins look similar, but they have VERY different
+      personalities. MAKE is the creative twin — he creates new things. DO is the worker
+      twin — he performs tasks and actions."
+
+      "MAKE creates: make a decision, make a mistake, make friends, make progress, make sense.
+      DO performs: do homework, do research, do your best, do someone a favour, do well."
+
+      "And there are more twins! TAKE and HAVE both work with activities, but they split
+      them differently. TAKE takes: take a break, take a photo, take place, take part.
+      HAVE has: have a shower, have a rest, have a go, have an effect."
+
+      "Finally, SAY and TELL are the communication twins. SAY says words:
+      say hello, say sorry, say a prayer. TELL tells people: tell the truth,
+      tell a joke, tell someone a story."
+    introductionZh: |
+      在丛林深处，你发现两只双胞胎鹦鹉坐在对面的树枝上。
+
+      "我是 MAKE！"左边那只亮蓝色的说。
+      "我是 DO！"右边那只亮绿色的说。
+
+      Momo 在它们之间飞来飞去。"这对双胞胎看起来很像，但它们有非常不同的性格。
+      MAKE 是有创造力的那个——它创造新事物。DO 是工作者——它执行任务和行动。"
+
+      "MAKE 创造：make a decision, make a mistake, make friends, make progress, make sense。
+      DO 执行：do homework, do research, do your best, do someone a favour, do well。"
+
+      "还有更多双胞胎！TAKE 和 HAVE 都和活动搭配，但分法不同。
+      TAKE 拿：take a break, take a photo, take place, take part。
+      HAVE 有：have a shower, have a rest, have a go, have an effect。"
+
+      "最后，SAY 和 TELL 是交流双胞胎。SAY 说话语：say hello, say sorry, say a prayer。
+      TELL 告诉人：tell the truth, tell a joke, tell someone a story。"
+
+    rules:
+      - pattern: 'MAKE = Create something new'
+        meaning: 'make a decision, make a mistake, make friends, make progress, make an effort, make sense, make sure'
+        meaningZh: 'make a decision（做决定）, make a mistake（犯错误）, make friends（交朋友）, make progress（取得进步）, make an effort（努力）, make sense（有道理）, make sure（确保）'
+        examples:
+          - base: 'You need to make a decision.'
+            transformed: 'A decision is something you CREATE — it did not exist before you decided.'
+            sentence: 'MAKE = creating something new (decisions, friends, progress)'
+            sentenceZh: 'MAKE = 创造新的东西（决定、朋友、进步）'
+      - pattern: 'DO = Perform a task'
+        meaning: 'do homework, do research, do your best, do a favour, do well, do the washing up'
+        meaningZh: 'do homework（做作业）, do research（做研究）, do your best（尽力而为）, do a favour（帮忙）, do well（做得好）, do the washing up（洗碗）'
+        examples:
+          - base: 'I always do my homework after school.'
+            transformed: 'Homework is a task you PERFORM — you do not create it.'
+            sentence: 'DO = performing a task or routine activity'
+            sentenceZh: 'DO = 执行任务或日常活动'
+      - pattern: 'SAY vs TELL'
+        meaning: 'SAY + words/sentences: say hello, say goodbye, say sorry. TELL + person: tell someone, tell the truth, tell a joke, tell a story'
+        meaningZh: 'SAY + 话语/句子：say hello, say goodbye, say sorry。TELL + 人：tell someone, tell the truth, tell a joke, tell a story'
+        examples:
+          - base: 'She said hello. She told me a joke.'
+            transformed: 'SAY focuses on the WORDS. TELL focuses on the PERSON you are speaking to.'
+            sentence: 'Key rule: TELL needs a person (tell ME/HIM/HER). SAY does not.'
+            sentenceZh: '关键规则：TELL 需要一个人（tell ME/HIM/HER）。SAY 不需要。'
+
+    tips:
+      - 'MAKE = creative output (make a plan, make a speech, make a difference)'
+      - 'DO = routine action (do exercise, do the dishes, do your duty)'
+      - 'Exception alert: "make a bed" and "do a test" break the usual patterns!'
+      - 'For FCE: these collocations are tested in Part 1 and Part 2 every time.'
+    tipsZh:
+      - 'MAKE = 创造性输出（make a plan, make a speech, make a difference）'
+      - 'DO = 日常行动（do exercise, do the dishes, do your duty）'
+      - '例外警报："make a bed"（整理床铺）和"do a test"（做测试）打破了通常的规律！'
+      - '对于 FCE：这些搭配在每次 Part 1 和 Part 2 中都会被考查。'
+
+    practicePreview:
+      - id: Q07-L03-P01
+        question: 'Choose the correct verb: You need to _____ a decision soon.'
+        questionZh: '选择正确的动词：You need to _____ a decision soon.'
+        options:
+          A: 'do'
+          B: 'make'
+          C: 'take'
+          D: 'have'
+        answer: 'B'
+        explanation: '"Make a decision" — a decision is something you create.'
+        explanationZh: '"Make a decision"——决定是你创造的东西。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Linking Adverbs and Discourse Markers
+  # ─────────────────────────────────────────────
+  - id: Q07-L04
+    title: 'The Trail Markers — Linking Your Ideas'
+    titleZh: '路标 — 连接你的想法'
+
+    introduction: |
+      Momo leads you to a fork in the jungle trail. There are signs pointing in different
+      directions, each with a different word on it.
+
+      "These are TRAIL MARKERS," Momo explains. "Just like real signs help hikers know
+      which direction to walk, LINKING WORDS help readers know which direction your
+      argument is going."
+
+      "FURTHERMORE and MOREOVER point FORWARD — they add more information in the same
+      direction. HOWEVER and NEVERTHELESS point SIDEWAYS — they show a contrast or
+      unexpected change. CONSEQUENTLY and THEREFORE point AHEAD — they show what
+      happened as a result."
+
+      "There are also POSITION markers: FIRSTLY, SECONDLY, and FINALLY help readers
+      follow a numbered list of points. TO SUM UP and IN CONCLUSION tell readers
+      you are about to finish."
+
+      "For the FCE exam, using these markers in your essays and speaking shows the
+      examiner that you can organise your ideas like a real English speaker."
+    introductionZh: |
+      Momo 带你来到丛林小径的一个岔路口。有些标牌指向不同的方向，每个上面都有不同的词。
+
+      "这些是路标，"Momo 解释说。"就像真正的标牌帮助徒步者知道该往哪个方向走，
+      连接词帮助读者知道你的论点走向何方。"
+
+      "FURTHERMORE 和 MOREOVER 指向前方——它们在同一方向上补充更多信息。
+      HOWEVER 和 NEVERTHELESS 指向侧方——它们表示对比或意外转折。
+      CONSEQUENTLY 和 THEREFORE 指向前方——它们表示结果。"
+
+      "还有位置标记：FIRSTLY, SECONDLY 和 FINALLY 帮助读者跟随编号的观点列表。
+      TO SUM UP 和 IN CONCLUSION 告诉读者你即将结束。"
+
+      "对于 FCE 考试，在作文和口语中使用这些标记向考官展示你能像真正的英语使用者
+      一样组织想法。"
+
+    rules:
+      - pattern: 'Addition: Furthermore, Moreover, In addition, What is more'
+        meaning: 'These ADD more supporting information in the same direction as the previous point.'
+        meaningZh: '这些词在与前一个观点相同的方向上补充更多支持信息。'
+        examples:
+          - base: 'Learning idioms helps you understand films.'
+            transformed: 'Furthermore, it makes your own English sound more natural and confident.'
+            sentence: '"Furthermore" adds a second supporting reason.'
+            sentenceZh: '"Furthermore"补充了第二个支持理由。'
+      - pattern: 'Contrast: However, Nevertheless, On the other hand, Whereas'
+        meaning: 'These show an UNEXPECTED difference or opposing viewpoint.'
+        meaningZh: '这些词展示一个意外的差异或对立的观点。'
+        examples:
+          - base: 'Many idioms are useful for everyday conversation.'
+            transformed: 'However, some are outdated and rarely used in modern English.'
+            sentence: '"However" introduces a contrasting point.'
+            sentenceZh: '"However"引出一个对比的观点。'
+      - pattern: 'Result: Consequently, Therefore, As a result, For this reason'
+        meaning: 'These show what HAPPENED BECAUSE of the previous point.'
+        meaningZh: '这些词展示由于前一个观点而发生的结果。'
+        examples:
+          - base: 'She did not study for the test.'
+            transformed: 'Consequently, she failed and had to retake it.'
+            sentence: '"Consequently" shows the result of not studying.'
+            sentenceZh: '"Consequently"展示了不学习的结果。'
+      - pattern: 'Concession: Admittedly, Although, Despite, In spite of'
+        meaning: 'These ACKNOWLEDGE a point before presenting an opposing view.'
+        meaningZh: '这些词在提出对立观点之前先承认一个事实。'
+        examples:
+          - base: 'Admittedly, learning idioms takes extra time.'
+            transformed: 'Nevertheless, the benefits are well worth the effort.'
+            sentence: '"Admittedly" + "Nevertheless" = acknowledge then contrast.'
+            sentenceZh: '"Admittedly" + "Nevertheless" = 先承认再转折。'
+
+    tips:
+      - 'Use at least 3-4 different linking words in each FCE essay.'
+      - 'Do not use the same connector twice — show variety (However / Nevertheless / On the other hand).'
+      - 'In FCE Speaking, linking words show fluency: "Furthermore... However... As a result..."'
+      - 'Practice: After writing any paragraph, check — did I connect it to the one before?'
+    tipsZh:
+      - '在每篇 FCE 作文中至少使用 3-4 个不同的连接词。'
+      - '不要重复使用同一个连接词——展示多样性（However / Nevertheless / On the other hand）。'
+      - '在 FCE 口语中，连接词展示流利度："Furthermore... However... As a result..."'
+      - '练习：写完任何段落后检查——我是否把它和前一段连接起来了？'
+
+    practicePreview:
+      - id: Q07-L04-P01
+        question: |
+          Choose the best linking word:
+          The test was very difficult. _____, most students passed.
+        questionZh: |
+          选择最佳连接词：
+          The test was very difficult. _____, most students passed.
+        options:
+          A: 'Furthermore'
+          B: 'Consequently'
+          C: 'Nevertheless'
+          D: 'Moreover'
+        answer: 'C'
+        explanation: 'The test was hard (negative) BUT students passed (positive). "Nevertheless" shows this contrast.'
+        explanationZh: '考试很难（消极）但学生通过了（积极）。"Nevertheless"表示这种对比。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Fixed Expressions and Idioms
+  # ─────────────────────────────────────────────
+  - id: Q07-L05
+    title: 'The Ancient Trees — Idioms and Fixed Expressions'
+    titleZh: '古老的树 — 习语和固定表达'
+
+    introduction: |
+      Momo flies to the oldest part of the jungle, where enormous ancient trees tower
+      above everything else.
+
+      "These ancient trees represent IDIOMS and FIXED EXPRESSIONS," Momo says reverently.
+      "They have been part of the English language for hundreds of years. You cannot change
+      a single word — if you do, the meaning breaks!"
+
+      "'Break the ice' works. 'Break the snow' does not. 'A piece of cake' works.
+      'A piece of pie' does not. These expressions are FROZEN — they must stay exactly
+      as they are."
+
+      "Some fixed expressions are formal: 'in spite of,' 'by means of,' 'on behalf of.'
+      Others are informal idioms: 'under the weather,' 'out of the blue,' 'a piece of cake.'
+      Both types appear in the FCE exam."
+
+      "The best way to learn them? Read stories! Idioms come alive in context. When you
+      read that a character is 'over the moon,' the story helps you understand they are
+      incredibly happy. That is much better than memorising from a list."
+    introductionZh: |
+      Momo 飞到丛林最古老的部分，那里巨大的古树高耸入云。
+
+      "这些古树代表习语和固定表达，"Momo 恭敬地说。"它们已经是英语的一部分几百年了。
+      你不能改变任何一个词——如果你改了，意思就断了！"
+
+      "'Break the ice'可以。'Break the snow'不行。'A piece of cake'可以。
+      'A piece of pie'不行。这些表达是'冻结的'——它们必须保持原样。"
+
+      "有些固定表达很正式：'in spite of,' 'by means of,' 'on behalf of。'
+      其他是非正式的习语：'under the weather,' 'out of the blue,' 'a piece of cake。'
+      两种类型都会出现在 FCE 考试中。"
+
+      "学习它们最好的方法？读故事！习语在语境中才能活起来。当你读到一个角色
+      'over the moon'时，故事帮助你理解他们非常开心。这比从列表中死记硬背好得多。"
+
+    rules:
+      - pattern: 'Formal Fixed Expressions'
+        meaning: 'Phrases with a fixed structure used in academic and formal writing.'
+        meaningZh: '在学术和正式写作中使用的结构固定的短语。'
+        examples:
+          - base: 'In spite of the rain, the match continued.'
+            transformed: 'Despite the rain, the match continued.'
+            sentence: '"In spite of" = "despite" — both mean "even though."'
+            sentenceZh: '"In spite of" = "despite"——都意味着"尽管"。'
+          - base: 'On behalf of the team, I want to thank our coach.'
+            transformed: 'Representing the team, I want to thank our coach.'
+            sentence: '"On behalf of" = representing someone.'
+            sentenceZh: '"On behalf of" = 代表某人。'
+      - pattern: 'Common Idioms'
+        meaning: 'Colourful expressions whose meaning is different from the literal words.'
+        meaningZh: '含义与字面意思不同的生动表达。'
+        examples:
+          - base: 'The test was a piece of cake.'
+            transformed: 'The test was very easy.'
+            sentence: 'Literal: a slice of cake. Idiom: something very easy.'
+            sentenceZh: '字面意思：一块蛋糕。习语意思：非常容易的事。'
+          - base: 'She called me out of the blue.'
+            transformed: 'She called me unexpectedly, without any warning.'
+            sentence: 'Literal: from the blue sky. Idiom: unexpectedly.'
+            sentenceZh: '字面意思：从蓝天中来。习语意思：出乎意料地。'
+
+    tips:
+      - 'Idioms are tested in FCE Reading and Use of English. You MUST know the most common 30-40.'
+      - 'Fixed expressions like "in spite of" and "as a result" are tested in FCE Part 1 and Part 2.'
+      - 'When you encounter a new idiom, write it in your notebook WITH the context you found it in.'
+      - 'Try to use one new idiom per week in conversation. This makes them stick!'
+    tipsZh:
+      - '习语在 FCE 阅读和 Use of English 中会被考查。你必须知道最常见的30-40个。'
+      - '固定表达如"in spite of"和"as a result"在 FCE Part 1 和 Part 2 中被考查。'
+      - '遇到新习语时，把它和发现它的语境一起写在笔记本上。'
+      - '尝试每周在对话中使用一个新习语。这能让它们记得更牢！'
+
+    practicePreview:
+      - id: Q07-L05-P01
+        question: 'What does "under the weather" mean?'
+        questionZh: '"Under the weather"是什么意思？'
+        options:
+          A: 'Standing in the rain'
+          B: 'Feeling slightly ill'
+          C: 'Checking the weather forecast'
+          D: 'Being very cold'
+        answer: 'B'
+        explanation: '"Under the weather" is an idiom meaning feeling slightly unwell or sick.'
+        explanationZh: '"Under the weather"是习语，意思是感觉有点不舒服。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Cloze Test Strategy (FCE Part 1 & 2)
+  # ─────────────────────────────────────────────
+  - id: Q07-L06
+    title: 'The Jungle Exit — Cloze Test Mastery'
+    titleZh: '丛林出口 — 完形填空精通'
+
+    introduction: |
+      You have reached the edge of the jungle. The only way out is through the Cloze Gate —
+      a magical door covered in gaps that you must fill with the correct words.
+
+      "This is it," Momo says. "The Cloze Gate tests EVERYTHING you have learned in this
+      jungle — phrasal verbs, collocations, dependent prepositions, linking words, idioms,
+      and fixed expressions."
+
+      "FCE has TWO types of cloze test. Part 1 gives you four options for each gap —
+      your job is to choose the best one. Part 2 gives you NO options — you must think of
+      the word yourself."
+
+      "Here is my strategy for Part 1 (Multiple Choice):
+      Step 1: Read the WHOLE text first. Understand the topic and flow.
+      Step 2: For each gap, read the sentence carefully. Look at the words BEFORE and AFTER.
+      Step 3: Check if it is a collocation, phrasal verb, preposition, or linking word.
+      Step 4: Eliminate wrong options. Choose the best answer."
+
+      "And for Part 2 (Open Cloze):
+      Step 1: Read the whole text first.
+      Step 2: For each gap, ask: Is this a preposition? A particle? An article? A pronoun?
+      Step 3: Think about collocations (depend _____ = on) and fixed phrases (in spite _____ = of).
+      Step 4: Write ONE word only. Check it makes sense in the sentence."
+    introductionZh: |
+      你已经到达了丛林的边缘。唯一的出路是通过完形大门——一扇覆盖着空格的魔法门，
+      你必须用正确的词填满它。
+
+      "就是这里，"Momo 说。"完形大门测试你在这片丛林里学到的一切——短语动词、
+      搭配、从属介词、连接词、习语和固定表达。"
+
+      "FCE 有两种完形填空。Part 1 每个空格给你四个选项——你的任务是选最佳答案。
+      Part 2 不给选项——你必须自己想出那个词。"
+
+      "这是我的 Part 1（选择题）策略：
+      第1步：先通读全文。理解主题和思路。
+      第2步：对每个空格，仔细阅读句子。看空格前后的词。
+      第3步：判断这是搭配、短语动词、介词还是连接词。
+      第4步：排除错误选项。选择最佳答案。"
+
+      "Part 2（开放完形）策略：
+      第1步：先通读全文。
+      第2步：对每个空格，问：这是介词？小品词？冠词？代词？
+      第3步：想搭配（depend _____ = on）和固定短语（in spite _____ = of）。
+      第4步：只写一个词。检查它在句子中是否说得通。"
+
+    rules:
+      - pattern: 'Part 1 Strategy: Read → Context → Identify → Eliminate'
+        meaning: 'Read the full text, understand context, identify what type of word is tested, then eliminate wrong options.'
+        meaningZh: '通读全文，理解语境，确定考查的词汇类型，然后排除错误选项。'
+        examples:
+          - base: 'Gap: "She made a _____ to study harder." Options: A-choice B-plan C-decision D-thought'
+            transformed: 'The collocation is "make a decision." Choice C is correct.'
+            sentence: 'Identify the collocation pattern (make + ?), then choose the word that fits.'
+            sentenceZh: '确定搭配模式（make + ？），然后选择合适的词。'
+      - pattern: 'Part 2 Strategy: Read → Ask → Recall → Check'
+        meaning: 'Read the text, ask what type of word is missing, recall collocations/prepositions, check the sentence.'
+        meaningZh: '通读文章，问缺什么类型的词，回忆搭配/介词，检查句子。'
+        examples:
+          - base: 'Gap: "The exam consists _____ four parts."'
+            transformed: 'The combination is "consist of" — write "of."'
+            sentence: 'Recall the dependent preposition: consist + OF.'
+            sentenceZh: '回忆从属介词：consist + OF。'
+
+    tips:
+      - 'Part 1 TIP: If two options seem correct, look at the FULL sentence. Context usually eliminates one.'
+      - 'Part 2 TIP: The missing word is almost always a small function word — preposition, article, pronoun, auxiliary verb.'
+      - 'Common Part 2 answers: on, of, in, for, to, the, a, it, which, who, that, been, had, would, as.'
+      - 'ALWAYS read the completed text through once more at the end to check everything sounds natural.'
+    tipsZh:
+      - 'Part 1 技巧：如果两个选项看起来都对，看完整句子。语境通常能排除一个。'
+      - 'Part 2 技巧：缺失的词几乎总是小的功能词——介词、冠词、代词、助动词。'
+      - '常见 Part 2 答案：on, of, in, for, to, the, a, it, which, who, that, been, had, would, as。'
+      - '最后一定要把填完的文章再通读一遍，检查一切是否自然。'
+
+    practicePreview:
+      - id: Q07-L06-P01
+        question: |
+          Part 1 style: Choose the best word.
+          "She finally succeeded _____ passing the exam."
+        questionZh: |
+          Part 1 风格：选择最佳的词。
+          "She finally succeeded _____ passing the exam."
+        options:
+          A: 'on'
+          B: 'in'
+          C: 'at'
+          D: 'for'
+        answer: 'B'
+        explanation: '"Succeed in" is the correct dependent preposition. She succeeded IN passing.'
+        explanationZh: '"Succeed in"是正确的从属介词。她成功IN通过了考试。'
+      - id: Q07-L06-P02
+        question: |
+          Part 2 style: Write ONE word.
+          "Whether we go depends _____ the weather."
+        questionZh: |
+          Part 2 风格：写一个词。
+          "Whether we go depends _____ the weather."
+        options:
+          A: 'on'
+          B: 'in'
+          C: 'at'
+          D: 'for'
+        answer: 'A'
+        explanation: '"Depend on" — the preposition is always ON.'
+        explanationZh: '"Depend on"——介词总是 ON。'

@@ -1,0 +1,664 @@
+id: Q09
+title: 'Review Master'
+titleZh: '书评大师'
+subtitle: 'Master the art of writing reviews!'
+subtitleZh: '掌握评论写作的艺术！'
+month: 9
+fceMapping: 'Writing Part 2 (Review)'
+
+theme:
+  setting: 'A cosy Review Café where young critics gather to share opinions about books, movies, games, and more'
+  settingZh: '一间温馨的评论咖啡馆，年轻评论家们聚集在这里分享对书籍、电影、游戏等的看法'
+  mascot: 'Rex the Reviewer, a friendly fox who reads three books a week and always has an opinion'
+  mascotZh: 'Rex 评论家，一只友好的狐狸，每周读三本书，总是有自己的见解'
+
+objectives:
+  - 'Structure a review with four clear sections: Introduction, Summary, Opinion, Recommendation'
+  - 'Use opinion language to express views persuasively (I would highly recommend / rather predictable)'
+  - 'Balance description and evaluation without giving away spoilers'
+  - 'Consider the target audience when writing (Who are you writing for?)'
+  - 'Compare and contrast different works effectively (This is better than... / Unlike...)'
+  - 'Polish reviews with varied sentence structures and strong openings and closings'
+
+objectivesZh:
+  - '用四个清晰的部分来组织评论：引言、概要、评价、推荐'
+  - '使用观点性语言有说服力地表达看法（我强烈推荐/相当可预测）'
+  - '在描述和评价之间取得平衡，不剧透'
+  - '写作时考虑目标读者（你在为谁写？）'
+  - '有效地比较和对比不同作品（这比……更好/不同于……）'
+  - '用多样的句式和有力的开头结尾来润色评论'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Review Structure
+  # ─────────────────────────────────────────────
+  - id: Q09-L01
+    title: 'Review Structure — The Four-Part Blueprint'
+    titleZh: '评论结构 — 四段式蓝图'
+
+    introduction: |
+      Welcome to the Review Café! Rex the Reviewer adjusts his reading glasses and spreads
+      four coloured cards across the table.
+
+      "Every great review," he says, "follows the same four-part blueprint. Think of it like
+      building a sandwich: the bread on top is your INTRODUCTION — you grab the reader's
+      attention and name what you are reviewing. The first filling is the SUMMARY — a brief
+      description of what happens, without spoilers! The second filling is your OPINION — what
+      you liked and what could be better. And the bottom slice of bread is the RECOMMENDATION —
+      who should read, watch, or play this, and why."
+
+      He holds up a review from a magazine. "See? Introduction, Summary, Opinion, Recommendation.
+      Every professional critic uses this structure. In the FCE exam, the examiner checks that
+      your review has ALL FOUR parts. Miss one, and you lose marks."
+
+      "Today, we will practise building this sandwich — one layer at a time."
+    introductionZh: |
+      欢迎来到评论咖啡馆！评论家 Rex 调整了一下他的阅读眼镜，在桌上摊开四张彩色卡片。
+
+      "每篇优秀的评论，"他说，"都遵循同样的四段式蓝图。把它想象成做三明治：
+      顶部的面包是你的引言——抓住读者的注意力，说出你在评论什么。第一层馅料是概要——
+      简要描述发生了什么，不要剧透！第二层馅料是你的评价——你喜欢什么，什么可以更好。
+      底部的面包片是推荐——谁应该阅读、观看或玩这个，以及为什么。"
+
+      他举起一篇杂志上的评论。"看到了吗？引言、概要、评价、推荐。
+      每个专业评论家都使用这个结构。在 FCE 考试中，考官会检查你的评论是否包含
+      所有四个部分。漏掉一个就会扣分。"
+
+      "今天，我们将练习一层一层地搭建这个三明治。"
+
+    rules:
+      - pattern: 'Introduction'
+        meaning: 'Name the book/movie/game, the author/director, and give a one-sentence overall opinion to hook the reader'
+        meaningZh: '说出书/电影/游戏的名称、作者/导演，并用一句总体评价吸引读者'
+        examples:
+          - base: 'I want to review the Harry Potter series.'
+            transformed: 'I recently finished reading the entire Harry Potter series by J.K. Rowling, and I can honestly say it is the most magical adventure I have ever experienced.'
+            sentence: 'The introduction names the work, the author, and hooks the reader with a strong opinion.'
+            sentenceZh: '引言说出了作品名、作者，并用一个有力的观点吸引读者。'
+
+      - pattern: 'Summary'
+        meaning: 'Describe what the work is about in 2-3 sentences — NO SPOILERS! Focus on the setup, not the ending.'
+        meaningZh: '用2-3句话描述作品的内容——不要剧透！重点说设定，不要说结局。'
+        examples:
+          - base: 'Harry Potter is about a wizard.'
+            transformed: 'The story follows Harry Potter, an orphan who discovers on his eleventh birthday that he is a wizard. He is invited to attend Hogwarts School of Witchcraft and Wizardry, where he makes lifelong friends and faces a dark enemy who threatens the entire magical world.'
+            sentence: 'This summary gives enough detail to interest the reader without revealing the ending.'
+            sentenceZh: '这个概要给出了足够的细节来吸引读者，但没有透露结局。'
+
+      - pattern: 'Opinion'
+        meaning: 'Say what you liked and what could be improved. Give SPECIFIC examples to support your views.'
+        meaningZh: '说你喜欢什么以及什么可以改进。用具体的例子来支持你的观点。'
+        examples:
+          - base: 'I liked the characters.'
+            transformed: 'What I enjoyed most was how each character grows throughout the series. Neville Longbottom, for example, starts as a shy, forgetful boy but becomes one of the bravest heroes by the final book. However, I felt that some chapters in the middle books were rather slow and could have been shorter.'
+            sentence: 'Good opinions are SPECIFIC (naming Neville) and BALANCED (positive + mild criticism).'
+            sentenceZh: '好的评价是具体的（点名 Neville）且平衡的（正面评价+温和批评）。'
+
+      - pattern: 'Recommendation'
+        meaning: 'Say who would enjoy this work, what age group it suits, and end with a memorable final sentence.'
+        meaningZh: '说谁会喜欢这部作品、适合什么年龄段，并以一个令人难忘的结尾句收束。'
+        examples:
+          - base: 'I recommend it.'
+            transformed: 'I would highly recommend the Harry Potter series to anyone aged 8 and above who loves adventure and fantasy. Whether you are new to the wizarding world or returning for a re-read, these books will cast a spell on you that never fades.'
+            sentence: 'The recommendation specifies the audience (age 8+, adventure lovers) and ends with a strong image.'
+            sentenceZh: '推荐部分指定了受众（8岁以上、爱冒险的人）并以一个有力的画面结尾。'
+
+    tips:
+      - 'In the FCE exam, you have about 40 minutes for the review. Spend 5 minutes planning, 30 minutes writing, and 5 minutes checking.'
+      - 'Your introduction should make the reader want to keep reading. Start with something interesting!'
+      - 'Never reveal the ending in your summary. Use phrases like "I will not spoil what happens next, but..."'
+      - 'In your opinion section, always give at least one positive AND one less positive point for a balanced review.'
+      - 'End your recommendation with a strong, memorable sentence that the reader will remember.'
+    tipsZh:
+      - '在 FCE 考试中，你有大约40分钟写评论。用5分钟规划、30分钟写作、5分钟检查。'
+      - '你的引言应该让读者想继续读下去。以有趣的内容开头！'
+      - '永远不要在概要中透露结局。使用"我不会剧透接下来发生了什么，但……"这样的句式。'
+      - '在评价部分，始终至少给出一个正面和一个不太正面的观点，以保持平衡。'
+      - '以一个有力的、读者会记住的句子来结束你的推荐。'
+
+    practicePreview:
+      - id: Q09-L01-P01
+        question: |
+          Which section of a review does this sentence belong to?
+
+          "I would strongly recommend this book to anyone who enjoys mystery stories and unexpected plot twists."
+        questionZh: |
+          这个句子属于评论的哪个部分？
+
+          "I would strongly recommend this book to anyone who enjoys mystery stories and unexpected plot twists."
+        options:
+          A: 'Introduction'
+          B: 'Summary'
+          C: 'Opinion'
+          D: 'Recommendation'
+        answer: 'D'
+        explanation: 'The phrase "I would strongly recommend" and the mention of who would enjoy it clearly marks this as the Recommendation section.'
+        explanationZh: '"I would strongly recommend"这个短语以及提到谁会喜欢，明确标志着这是推荐部分。'
+
+      - id: Q09-L01-P02
+        question: |
+          Which of these summaries avoids spoilers best?
+
+          A) "In the end, the detective discovers that the butler was the murderer all along."
+          B) "The story follows a young detective who must solve a series of mysterious thefts at a boarding school."
+          C) "The main character dies in chapter 12, which was really sad."
+        questionZh: |
+          以下哪个概要最好地避免了剧透？
+
+          A) "最后，侦探发现管家一直就是凶手。"
+          B) "故事讲述了一个年轻侦探必须在寄宿学校破解一系列神秘盗窃案。"
+          C) "主角在第12章死了，这真的很悲伤。"
+        options:
+          A: 'Summary A'
+          B: 'Summary B'
+          C: 'Summary C'
+        answer: 'B'
+        explanation: 'Summary B describes the setup without revealing any outcomes. A reveals the murderer and C reveals a death — both are spoilers.'
+        explanationZh: 'B描述了故事设定而没有透露任何结果。A透露了凶手，C透露了角色死亡——都是剧透。'
+
+      - id: Q09-L01-P03
+        question: |
+          Reorder these four parts into the correct review structure:
+
+          1. I would recommend this film to anyone who loves animation.
+          2. The film tells the story of a young girl who moves to a new city.
+          3. What I enjoyed most was the creative way emotions were shown as characters.
+          4. I recently watched "Inside Out 2" at the cinema, and it was absolutely brilliant.
+        questionZh: |
+          将这四个部分按正确的评论结构排序：
+
+          1. 我会推荐这部电影给所有喜欢动画的人。
+          2. 这部电影讲述了一个搬到新城市的女孩的故事。
+          3. 我最喜欢的是把情绪创造性地表现为角色。
+          4. 我最近在电影院看了《头脑特工队2》，它绝对精彩。
+        options:
+          A: '4, 2, 3, 1'
+          B: '2, 4, 1, 3'
+          C: '1, 3, 2, 4'
+          D: '3, 4, 2, 1'
+        answer: 'A'
+        explanation: '4 is the Introduction (names the film + overall opinion), 2 is the Summary, 3 is the Opinion (what I enjoyed most), 1 is the Recommendation.'
+        explanationZh: '4是引言（说出电影名+总体评价），2是概要，3是评价（我最喜欢的），1是推荐。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Opinion Language
+  # ─────────────────────────────────────────────
+  - id: Q09-L02
+    title: 'Opinion Language — Say What You Really Think'
+    titleZh: '观点性语言 — 说出你的真实想法'
+
+    introduction: |
+      Rex pulls out a wall chart covered in colourful phrases. "A good review is not just
+      'I liked it' or 'I did not like it'," he says. "That is BORING. A great reviewer has
+      a rich vocabulary of opinion words — from gentle praise to strong criticism."
+
+      He draws a scale on the whiteboard, from 😍 to 😞:
+
+      STRONG POSITIVE: outstanding, masterpiece, captivating, unforgettable, breathtaking
+      MILD POSITIVE: enjoyable, entertaining, well-crafted, appealing, satisfying
+      NEUTRAL: acceptable, average, ordinary, reasonable, adequate
+      MILD NEGATIVE: disappointing, predictable, unoriginal, rather dull, somewhat boring
+      STRONG NEGATIVE: terrible, dreadful, a complete waste of time, utterly forgettable
+
+      "Notice something?" Rex asks. "In the FCE exam, you should almost NEVER use the
+      strong negative words. A balanced review with mild criticism sounds much more
+      professional than an angry rant. Even if you hated something, say it politely!"
+    introductionZh: |
+      Rex 拿出一张贴满彩色短语的墙壁图表。"好的评论不仅仅是'我喜欢它'或'我不喜欢它'，"
+      他说。"那太无聊了。优秀的评论家有丰富的评价词汇——从温和的赞美到严厉的批评。"
+
+      他在白板上画了一个从 😍 到 😞 的量表：
+
+      强烈正面：杰出的、杰作、引人入胜的、难忘的、令人叹为观止的
+      温和正面：令人愉快的、有趣的、制作精良的、吸引人的、令人满意的
+      中性：可以接受的、普通的、一般的、合理的、足够的
+      温和负面：令人失望的、可预测的、缺乏创意的、相当乏味的、有点无聊的
+      强烈负面：糟糕的、可怕的、完全浪费时间、完全无法记住的
+
+      "注意到什么了吗？"Rex问。"在FCE考试中，你几乎永远不应该使用强烈的负面词汇。
+      带有温和批评的平衡评论听起来比愤怒的吐槽专业得多。即使你讨厌某样东西，也要礼貌地说！"
+
+    rules:
+      - pattern: 'Recommending (positive)'
+        meaning: 'Use phrases that express enthusiasm: I would highly recommend / It is well worth reading / I cannot recommend it enough'
+        meaningZh: '使用表达热情的短语：我强烈推荐/非常值得阅读/我怎么推荐都不够'
+        examples:
+          - base: 'The book is good.'
+            transformed: 'I would highly recommend this book — it is one of the most captivating stories I have read this year.'
+            sentence: '"I would highly recommend" is a formal, enthusiastic way to express a positive opinion.'
+            sentenceZh: '"I would highly recommend"是一种正式、热情地表达正面观点的方式。'
+          - base: 'The movie is fun.'
+            transformed: 'This film is well worth watching, especially if you enjoy stories about friendship and adventure.'
+            sentence: '"Well worth watching" is a polished alternative to "it is good."'
+            sentenceZh: '"Well worth watching"是"它很好看"的精炼替代说法。'
+
+      - pattern: 'Mild criticism (balanced)'
+        meaning: 'Use hedging language: rather, somewhat, a little, could have been. Always pair criticism with a positive point.'
+        meaningZh: '使用缓和语言：相当、有些、有点、本可以更好。始终将批评与正面观点配对。'
+        examples:
+          - base: 'The ending was bad.'
+            transformed: 'Although the ending was rather predictable, the rest of the story more than makes up for it.'
+            sentence: '"Rather predictable" is gentle criticism. "More than makes up for it" balances with a positive.'
+            sentenceZh: '"Rather predictable"是温和的批评。"More than makes up for it"用正面评价来平衡。'
+          - base: 'The game is slow.'
+            transformed: 'The gameplay can be somewhat repetitive at times. However, the stunning graphics and original soundtrack keep you engaged.'
+            sentence: '"Somewhat repetitive" + "However" + positive = professional balanced review.'
+            sentenceZh: '"Somewhat repetitive"+"However"+正面评价 = 专业的平衡评论。'
+
+      - pattern: 'Strong opinions (use sparingly)'
+        meaning: 'Reserve words like "outstanding", "masterpiece", "unforgettable" for things that truly deserve them'
+        meaningZh: '把"杰出的"、"杰作"、"难忘的"这样的词留给真正配得上的作品'
+        examples:
+          - base: 'The music was really good.'
+            transformed: 'The soundtrack is nothing short of outstanding — every melody stays with you long after the film ends.'
+            sentence: '"Nothing short of outstanding" is a powerful phrase for genuine praise.'
+            sentenceZh: '"Nothing short of outstanding"是表达真心赞美的有力短语。'
+
+    tips:
+      - 'Keep a "Review Phrase Bank" in your notebook: 5 positive, 5 mild negative, and 5 recommendation phrases.'
+      - 'In the FCE exam, avoid slang like "awesome" or "cool." Use formal alternatives like "outstanding" or "impressive."'
+      - 'The best reviews combine positive and negative: "Although X was disappointing, Y was absolutely captivating."'
+      - 'Use "I would recommend" (conditional) rather than "I recommend" — it sounds more polite and formal.'
+      - 'Avoid "I think" at the start of every sentence. Vary your opinion phrases.'
+    tipsZh:
+      - '在笔记本中保存一个"评论短语库"：5个正面、5个温和负面、5个推荐短语。'
+      - '在FCE考试中，避免使用"awesome"或"cool"等俚语。使用"outstanding"或"impressive"等正式替代词。'
+      - '最好的评论结合正面和负面："尽管X令人失望，Y绝对引人入胜。"'
+      - '使用"I would recommend"（条件式）而非"I recommend"——听起来更礼貌和正式。'
+      - '避免每句话都以"I think"开头。变换你的观点表达方式。'
+
+    practicePreview:
+      - id: Q09-L02-P01
+        question: |
+          Which phrase expresses a MILD NEGATIVE opinion most appropriately for an FCE review?
+        questionZh: |
+          哪个短语最适合在FCE评论中表达温和的负面意见？
+        options:
+          A: 'The plot was absolutely terrible and a waste of my time.'
+          B: 'The plot was rather predictable, although the characters were well-developed.'
+          C: 'The plot was okay I guess.'
+          D: 'The plot sucked.'
+        answer: 'B'
+        explanation: '"Rather predictable" is gentle criticism, and the sentence balances it with a positive point about characters. A is too harsh, C is too informal, D is slang.'
+        explanationZh: '"Rather predictable"是温和的批评，句子用关于角色的正面评价来平衡。A太严厉，C太随意，D是俚语。'
+
+      - id: Q09-L02-P02
+        question: |
+          Rewrite this sentence using more formal review language:
+
+          "The movie was really cool and I liked it a lot."
+        questionZh: |
+          用更正式的评论语言改写这个句子：
+
+          "The movie was really cool and I liked it a lot."
+        options:
+          A: 'The movie was super amazing and the best ever.'
+          B: 'The film was thoroughly entertaining and I would highly recommend it.'
+          C: 'I thought the movie was nice.'
+          D: 'The movie was not bad at all.'
+        answer: 'B'
+        explanation: '"Thoroughly entertaining" replaces "really cool" and "I would highly recommend it" replaces "I liked it a lot" — both are more formal and precise.'
+        explanationZh: '"Thoroughly entertaining"替代了"really cool"，"I would highly recommend it"替代了"I liked it a lot"——两者都更正式和精确。'
+
+      - id: Q09-L02-P03
+        question: |
+          Which word best completes this review sentence?
+
+          "The special effects were _____, but the storyline was somewhat disappointing."
+        questionZh: |
+          哪个词最适合完成这个评论句子？
+
+          "The special effects were _____, but the storyline was somewhat disappointing."
+        options:
+          A: 'cool'
+          B: 'breathtaking'
+          C: 'okay'
+          D: 'fine'
+        answer: 'B'
+        explanation: '"Breathtaking" is a strong positive that contrasts well with "somewhat disappointing." The contrast creates a balanced, professional review.'
+        explanationZh: '"Breathtaking"是一个强烈的正面词，与"somewhat disappointing"形成良好对比。这种对比创造了一篇平衡、专业的评论。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Balancing Description and Evaluation
+  # ─────────────────────────────────────────────
+  - id: Q09-L03
+    title: 'Balancing Description and Evaluation'
+    titleZh: '平衡描述与评价'
+
+    introduction: |
+      Rex places two books on a scale. "One of the biggest mistakes young reviewers make,"
+      he says, "is writing TOO MUCH description and TOO LITTLE evaluation — or the opposite."
+
+      He tips the scale to one side. "If your review is 90% summary and 10% opinion, it is
+      not a review — it is a book report. The reader wants to know what YOU think, not just
+      what happens in the story."
+
+      He tips it the other way. "But if your review is 90% opinion and 10% summary, the
+      reader has no idea what you are talking about. They need enough context to understand
+      your opinions."
+
+      He balances the scale perfectly. "The golden rule: about 30% description, 70% evaluation.
+      Every time you describe something, immediately follow it with your reaction or opinion.
+      This is called the DESCRIBE-THEN-EVALUATE pattern."
+    introductionZh: |
+      Rex 把两本书放在天平上。"年轻评论家最大的错误之一，"他说，"是写了太多描述而太少评价——
+      或者相反。"
+
+      他把天平倾向一边。"如果你的评论90%是概要10%是观点，它就不是评论——而是读书报告。
+      读者想知道你的看法，而不仅仅是故事里发生了什么。"
+
+      他把天平倾向另一边。"但如果你的评论90%是观点10%是概要，读者不知道你在说什么。
+      他们需要足够的背景信息来理解你的观点。"
+
+      他完美地平衡了天平。"黄金法则：大约30%描述，70%评价。每次你描述什么，
+      立即跟上你的反应或评价。这叫做'先描述后评价'模式。"
+
+    rules:
+      - pattern: 'Describe-then-Evaluate'
+        meaning: 'After each descriptive sentence, add your opinion or reaction immediately'
+        meaningZh: '在每个描述性句子之后，立即加上你的看法或反应'
+        examples:
+          - base: 'The movie has amazing special effects. The story is set in space. There are aliens.'
+            transformed: 'The movie features breathtaking special effects that make you feel as if you are floating in space. The alien creatures are so realistic that I found myself holding my breath during the chase scenes.'
+            sentence: 'Each description ("special effects", "alien creatures") is immediately followed by the reviewer''s reaction ("feel as if", "found myself holding my breath").'
+            sentenceZh: '每个描述（"特效"、"外星生物"）后面立即跟着评论者的反应（"感觉就像"、"发现自己屏住了呼吸"）。'
+
+      - pattern: 'Avoid pure summary'
+        meaning: 'Do not retell the entire plot. Select 2-3 key details that support your opinion.'
+        meaningZh: '不要复述整个情节。选择2-3个支持你观点的关键细节。'
+        examples:
+          - base: 'First, Harry goes to school. Then he plays Quidditch. Then he finds a mirror. Then he fights Voldemort.'
+            transformed: 'One of the most memorable moments is when Harry discovers the Mirror of Erised, which shows him the family he never knew. This scene perfectly captures the theme of longing and belonging that runs throughout the entire series.'
+            sentence: 'Instead of listing every event, the reviewer picks ONE key moment and explains WHY it matters.'
+            sentenceZh: '评论者没有列出每个事件，而是选择了一个关键时刻并解释了它为什么重要。'
+
+    tips:
+      - 'After writing your review, highlight every DESCRIPTIVE sentence in blue and every EVALUATIVE sentence in red. You should have more red than blue.'
+      - 'Use phrases like "What makes this special is..." or "The most memorable part is..." to transition from description to evaluation.'
+      - 'If you catch yourself writing "And then... and then... and then..." — STOP. You are summarising, not reviewing.'
+      - 'A great trick: for every fact you state, add "which means that..." or "and this made me feel..."'
+    tipsZh:
+      - '写完评论后，用蓝色标记每个描述性句子，用红色标记每个评价性句子。红色应该比蓝色多。'
+      - '使用"让这个特别的是……"或"最难忘的部分是……"来从描述过渡到评价。'
+      - '如果你发现自己在写"然后……然后……然后……"——停下来。你在总结，不是在评论。'
+      - '一个好技巧：对于你陈述的每个事实，加上"这意味着……"或"这让我感到……"'
+
+    practicePreview:
+      - id: Q09-L03-P01
+        question: |
+          Which sentence best demonstrates the "describe-then-evaluate" pattern?
+        questionZh: |
+          哪个句子最好地展示了"先描述后评价"模式？
+        options:
+          A: 'The book has 300 pages and 20 chapters.'
+          B: 'The book''s 300 pages fly by so quickly that you will not want to put it down.'
+          C: 'I really liked the book because it was good.'
+          D: 'The characters go on an adventure and find treasure.'
+        answer: 'B'
+        explanation: 'B describes a fact (300 pages) and immediately evaluates it (fly by so quickly, will not want to put it down). A is pure description, C is pure opinion without detail, D is pure summary.'
+        explanationZh: 'B描述了一个事实（300页）并立即评价（读得飞快，不想放下）。A是纯描述，C是没有细节的纯观点，D是纯概要。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Target Audience Awareness
+  # ─────────────────────────────────────────────
+  - id: Q09-L04
+    title: 'Target Audience Awareness — Who Are You Writing For?'
+    titleZh: '目标读者意识 — 你在为谁而写？'
+
+    introduction: |
+      Rex holds up three different magazines. "A review in a children's magazine sounds
+      different from a review on a teen blog, which sounds different from a review in
+      a newspaper. WHY? Because each one is written for a different AUDIENCE."
+
+      "In the FCE exam, the prompt always tells you WHERE your review will appear:
+      a school magazine, an English-language website, a class newsletter. This is your
+      clue about WHO will read it."
+
+      He writes on the board:
+      - School magazine → students your age → informal but polite, use 'you' directly
+      - English-language website → general readers → semi-formal, explain context
+      - Class newsletter → your classmates → friendly, conversational, shared references
+
+      "The key question is: WHAT DOES YOUR READER ALREADY KNOW? If you are writing for
+      a kids' magazine, you do not need to explain what Minecraft is. But if you are writing
+      for adults, you might need to."
+    introductionZh: |
+      Rex 举起三本不同的杂志。"儿童杂志上的评论和青少年博客上的评论听起来不同，
+      而这又和报纸上的评论不同。为什么？因为每篇都是为不同的读者写的。"
+
+      "在FCE考试中，题目总是告诉你你的评论会出现在哪里：校刊、英语网站、班级通讯。
+      这是关于谁会读它的线索。"
+
+      他在黑板上写道：
+      - 校刊 → 你同龄的学生 → 非正式但礼貌，直接使用"你"
+      - 英语网站 → 普通读者 → 半正式，解释背景
+      - 班级通讯 → 你的同学 → 友好、对话式、共同的参考
+
+      "关键问题是：你的读者已经知道什么？如果你在为儿童杂志写作，你不需要解释Minecraft是什么。
+      但如果你在为成年人写作，你可能需要。"
+
+    rules:
+      - pattern: 'Adjusting formality'
+        meaning: 'Match your tone to the publication: school magazine = friendly, website = semi-formal'
+        meaningZh: '让你的语气与出版物匹配：校刊=友好，网站=半正式'
+        examples:
+          - base: 'Writing for a school magazine.'
+            transformed: 'If you are looking for a brilliant book to read over the holidays, look no further! I have just finished reading Percy Jackson and I am dying to tell you about it.'
+            sentence: 'Friendly, enthusiastic tone with "you" — perfect for a school magazine aimed at students.'
+            sentenceZh: '友好、热情的语气加上"你"——非常适合面向学生的校刊。'
+          - base: 'Writing for an English-language website.'
+            transformed: 'Percy Jackson and the Lightning Thief by Rick Riordan is a fantasy novel aimed at readers aged 9-14. It combines Greek mythology with modern-day adventure in a way that is both educational and thoroughly entertaining.'
+            sentence: 'More formal, provides context (author, genre, age range) for readers who may not know the book.'
+            sentenceZh: '更正式，提供背景信息（作者、体裁、年龄段），因为读者可能不了解这本书。'
+
+    tips:
+      - 'Always re-read the FCE prompt to check WHERE your review will be published.'
+      - 'For school magazines: use "you" and "we", ask questions, show enthusiasm.'
+      - 'For websites: be slightly more formal, give background information, avoid inside jokes.'
+      - 'Think: "If my reader has never heard of this, what do they need to know?"'
+    tipsZh:
+      - '始终重新阅读FCE题目来确认你的评论会发表在哪里。'
+      - '校刊：使用"你"和"我们"，提问，表现热情。'
+      - '网站：稍微正式一些，提供背景信息，避免内部笑话。'
+      - '想一想："如果我的读者从未听说过这个，他们需要知道什么？"'
+
+    practicePreview:
+      - id: Q09-L04-P01
+        question: |
+          Which opening is most suitable for a school magazine review?
+        questionZh: |
+          哪个开头最适合校刊评论？
+        options:
+          A: 'This paper will analyse the narrative structure of the novel in question.'
+          B: 'Hey everyone! You NEED to read this book — trust me, it is incredible!'
+          C: 'Are you looking for your next great read? I have just discovered a book that I cannot stop thinking about.'
+          D: 'The aforementioned publication merits consideration by the discerning reader.'
+        answer: 'C'
+        explanation: 'C is friendly and engaging (uses "you", asks a question) but still polite — perfect for a school magazine. B is too informal (Hey everyone!), A and D are too academic.'
+        explanationZh: 'C友好且引人入胜（使用"你"，提问）但仍然礼貌——非常适合校刊。B太随意（Hey everyone!），A和D太学术化。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Comparing and Contrasting
+  # ─────────────────────────────────────────────
+  - id: Q09-L05
+    title: 'Comparing and Contrasting'
+    titleZh: '比较与对比'
+
+    introduction: |
+      Rex lines up three books on the table — a novel, a sequel, and a film adaptation.
+      "Reviews often involve COMPARISON," he says. "Is the sequel as good as the original?
+      Is the movie better than the book? Is this game more fun than the last one?"
+
+      "Comparison makes your review more interesting because it gives the reader a REFERENCE
+      POINT. Instead of just saying 'this book is good,' you can say 'this book is even better
+      than the first one' — and suddenly the reader understands exactly how good you mean."
+
+      He writes three types of comparison on the board:
+      1. COMPARATIVE: better than / more exciting than / not as good as
+      2. SUPERLATIVE: the best / the most thrilling / the least interesting
+      3. CONTRAST PHRASES: Unlike X, Y... / While X is..., Y is... / Compared to X, Y...
+    introductionZh: |
+      Rex 在桌上排列了三本书——一本小说、一部续集和一部电影改编。
+      "评论经常涉及比较，"他说。"续集和原作一样好吗？电影比书好吗？这个游戏比上一个更有趣吗？"
+
+      "比较使你的评论更有趣，因为它给读者一个参照点。与其只说'这本书很好'，
+      你可以说'这本书比第一部还好'——读者立刻就明白你说的好到什么程度。"
+
+      他在黑板上写了三种比较方式：
+      1. 比较级：better than / more exciting than / not as good as
+      2. 最高级：the best / the most thrilling / the least interesting
+      3. 对比短语：Unlike X, Y... / While X is..., Y is... / Compared to X, Y...
+
+    rules:
+      - pattern: 'Comparative structures'
+        meaning: 'Use "more...than", "less...than", "as...as", "not as...as" to compare two things'
+        meaningZh: '使用"more...than"、"less...than"、"as...as"、"not as...as"来比较两个事物'
+        examples:
+          - base: 'The first book is good. The second book is good too.'
+            transformed: 'The sequel is even more gripping than the original, with faster-paced action and deeper character development.'
+            sentence: '"Even more gripping than" makes a clear, specific comparison that helps the reader.'
+            sentenceZh: '"Even more gripping than"做出了清晰、具体的比较，帮助读者理解。'
+          - base: 'The movie is different from the book.'
+            transformed: 'The film adaptation is not as detailed as the book, but the visual effects bring the magical world to life in a way that words alone cannot.'
+            sentence: '"Not as detailed as" is a gentle way to say the movie lacks something, balanced by a positive.'
+            sentenceZh: '"Not as detailed as"是温和地说电影缺少某些东西的方式，并用正面评价来平衡。'
+
+      - pattern: 'Contrast phrases'
+        meaning: 'Use "Unlike", "While/Whereas", "Compared to" to highlight differences between works'
+        meaningZh: '使用"Unlike"、"While/Whereas"、"Compared to"来突出作品之间的差异'
+        examples:
+          - base: 'Frozen 1 focuses on family. Frozen 2 focuses on adventure.'
+            transformed: 'While the first Frozen film focused on the bond between two sisters, the sequel takes Elsa on a solo adventure to discover her origins. Both are excellent, but in very different ways.'
+            sentence: '"While X focused on..., Y takes..." clearly shows how the two films differ.'
+            sentenceZh: '"While X focused on..., Y takes..."清楚地展示了两部电影的不同之处。'
+
+    tips:
+      - 'Comparisons are especially useful in sequels and adaptations — the reader wants to know how the new version compares.'
+      - 'Use "even more" or "far better" to strengthen comparisons, or "slightly less" to soften them.'
+      - 'Always explain WHY something is better or worse, not just that it is.'
+      - '"Compared to" is useful for opening a comparison paragraph.'
+      - 'You can compare to a well-known work: "If you enjoyed Harry Potter, you will love this because..."'
+    tipsZh:
+      - '比较在续集和改编作品中特别有用——读者想知道新版本与旧版本相比如何。'
+      - '使用"even more"或"far better"来加强比较，或"slightly less"来缓和。'
+      - '始终解释为什么某样东西更好或更差，而不仅仅是说它是。'
+      - '"Compared to"对于开始比较段落很有用。'
+      - '你可以与知名作品比较："如果你喜欢哈利·波特，你会喜欢这个，因为……"'
+
+    practicePreview:
+      - id: Q09-L05-P01
+        question: |
+          Which sentence uses comparison most effectively in a review?
+        questionZh: |
+          哪个句子在评论中最有效地使用了比较？
+        options:
+          A: 'This book is good and the other book is also good.'
+          B: 'Unlike the slow-paced first novel, the sequel races along with non-stop action from the very first chapter.'
+          C: 'I liked both books the same amount.'
+          D: 'The second book is different from the first one.'
+        answer: 'B'
+        explanation: 'B uses "Unlike" to create a clear, specific contrast and explains HOW the sequel differs (slow-paced vs. races along). The other options are vague.'
+        explanationZh: 'B使用"Unlike"创建了清晰、具体的对比，并解释了续集如何不同（节奏慢 vs. 飞速推进）。其他选项都很模糊。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Polishing Your Review
+  # ─────────────────────────────────────────────
+  - id: Q09-L06
+    title: 'Polishing Your Review — The Final Touches'
+    titleZh: '润色你的评论 — 最终修饰'
+
+    introduction: |
+      Rex picks up a rough stone and a polished gemstone. "See the difference? Both are the
+      same mineral, but one has been cut and polished. Your first draft is the rough stone.
+      Polishing is what turns a good review into a GREAT one."
+
+      "There are three polishing techniques every reviewer should know:
+      1. VARIED SENTENCE STRUCTURE — mix short punchy sentences with longer complex ones.
+      2. STRONG OPENING — your first sentence should make the reader curious.
+      3. MEMORABLE CLOSING — your last sentence should stick in the reader's mind."
+
+      He reads aloud: "'I watched a movie. It was good. I liked it.' — BORING.
+      Now listen: 'From the moment the lights dimmed, I knew this film was going to be
+      something special.' — that makes you want to keep reading, does it not?"
+    introductionZh: |
+      Rex 拿起一块粗糙的石头和一颗打磨过的宝石。"看到区别了吗？两者是同一种矿物，
+      但一个经过了切割和打磨。你的初稿就是粗糙的石头。打磨是将好评论变成优秀评论的关键。"
+
+      "每个评论家都应该知道三种润色技巧：
+      1. 多样的句式——将简短有力的句子与较长的复杂句混合使用。
+      2. 有力的开头——你的第一句话应该让读者好奇。
+      3. 令人难忘的结尾——你的最后一句话应该留在读者的记忆中。"
+
+      他大声朗读："'我看了一部电影。它很好。我喜欢它。'——无聊。
+      现在听这个：'从灯光暗下来的那一刻，我就知道这部电影将会很特别。'
+      ——这让你想继续读下去，不是吗？"
+
+    rules:
+      - pattern: 'Varied sentence structure'
+        meaning: 'Alternate between short (5-8 words) and long (15-25 words) sentences for rhythm'
+        meaningZh: '在短句（5-8个词）和长句（15-25个词）之间交替使用，创造节奏感'
+        examples:
+          - base: 'The film was amazing. The acting was amazing. The music was amazing.'
+            transformed: 'The acting is superb. Every emotion feels raw and genuine, drawing you into the characters'' lives so deeply that you forget you are watching a film. And the music? Unforgettable.'
+            sentence: 'Short ("The acting is superb."), long (the middle sentence), then short again ("Unforgettable.") — this creates engaging rhythm.'
+            sentenceZh: '短句（"The acting is superb."），长句（中间的句子），然后又是短句（"Unforgettable."）——这创造了引人入胜的节奏。'
+
+      - pattern: 'Strong openings'
+        meaning: 'Start with a question, a surprising fact, or a vivid scene — NOT "I am going to review..."'
+        meaningZh: '以问题、令人惊讶的事实或生动的场景开头——不要用"我要评论……"'
+        examples:
+          - base: 'I am going to write a review of Minecraft.'
+            transformed: 'What if you could build anything you imagined — a castle, an underground city, or even a working computer — using nothing but blocks? Welcome to the world of Minecraft.'
+            sentence: 'A question opening immediately engages the reader and sparks curiosity.'
+            sentenceZh: '以问题开头立即吸引读者并激发好奇心。'
+
+      - pattern: 'Memorable closings'
+        meaning: 'End with a strong image, a call to action, or a thought-provoking statement'
+        meaningZh: '以有力的画面、行动号召或发人深省的陈述结尾'
+        examples:
+          - base: 'In conclusion, I liked the book.'
+            transformed: 'Close this review and open the book — you will not regret it.'
+            sentence: 'A direct, punchy call to action leaves a lasting impression.'
+            sentenceZh: '直接、有力的行动号召留下持久印象。'
+
+    tips:
+      - 'Read your review aloud. If it sounds monotonous, add some short sentences or questions.'
+      - 'Never start a review with "I am going to review..." or "This review is about..." — be creative!'
+      - 'Your last sentence is what the reader remembers most. Make it count!'
+      - 'Try starting with: a question, a quote from the work, a surprising statistic, or a vivid description.'
+      - 'In the FCE exam, a polished opening and closing can lift your mark from good to excellent.'
+    tipsZh:
+      - '大声朗读你的评论。如果听起来单调，添加一些短句或问句。'
+      - '永远不要以"我要评论……"或"这篇评论是关于……"开头——要有创意！'
+      - '你的最后一句话是读者最记得的。让它有意义！'
+      - '尝试以以下方式开头：一个问题、作品中的引用、一个令人惊讶的统计数据或生动的描述。'
+      - '在FCE考试中，经过润色的开头和结尾可以将你的分数从"好"提升到"优秀"。'
+
+    practicePreview:
+      - id: Q09-L06-P01
+        question: |
+          Which is the strongest opening for a book review?
+        questionZh: |
+          哪个是书评最有力的开头？
+        options:
+          A: 'I am going to review a book called "Wonder" by R.J. Palacio.'
+          B: 'This review is about a book I read recently.'
+          C: 'Imagine starting a new school where everyone stares at you because your face looks different from theirs. This is the world of "Wonder" by R.J. Palacio.'
+          D: 'Wonder is a book. It has 320 pages.'
+        answer: 'C'
+        explanation: 'C uses "Imagine..." to put the reader in the character''s shoes, creating empathy and curiosity. It is vivid, engaging, and makes you want to read more.'
+        explanationZh: 'C使用"Imagine..."让读者置身于角色的处境中，创造共鸣和好奇心。它生动、引人入胜，让你想继续阅读。'
+
+      - id: Q09-L06-P02
+        question: |
+          Which closing sentence is most memorable for a review of a mystery novel?
+        questionZh: |
+          对于一本推理小说的评论，哪个结尾句最令人难忘？
+        options:
+          A: 'In conclusion, I liked the book.'
+          B: 'That is the end of my review. Thank you for reading.'
+          C: 'I give it 4 out of 5 stars.'
+          D: 'Trust me — the final chapter will leave you staring at the ceiling, questioning everything you thought you knew.'
+        answer: 'D'
+        explanation: 'D creates a vivid image (staring at the ceiling) and builds intrigue without spoiling anything. It makes the reader desperate to pick up the book.'
+        explanationZh: 'D创造了一个生动的画面（盯着天花板）并在不剧透的情况下制造悬念。它让读者迫不及待地想拿起这本书。'

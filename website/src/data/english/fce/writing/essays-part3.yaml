@@ -1,0 +1,520 @@
+category: 'Essay & Review Writing (Month 8)'
+categoryZh: '议论文与评论写作（第八月）'
+tasks:
+  - id: W054
+    type: essay
+    title: 'My Ideal City'
+    titleZh: '我理想中的城市'
+    prompt: 'Imagine you could design a perfect city. What features would it have? Write an essay describing your ideal city and explaining why you chose those features.'
+    promptZh: '想象你可以设计一座完美的城市。它会有什么特征？写一篇议论文描述你理想中的城市并解释你为什么选择这些特征。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      brainstorming:
+        topicZh: '你的理想城市是什么样的？'
+        topic: 'What would your ideal city look like?'
+        forPoints:
+          - 'Green spaces everywhere — rooftop gardens, parks within walking distance'
+          - 'Excellent public transport — no need for private cars'
+          - 'Clean energy from solar panels and wind turbines'
+        forPointsZh:
+          - '到处都是绿色空间——屋顶花园，步行可达的公园'
+          - '优秀的公共交通——不需要私家车'
+          - '来自太阳能板和风力涡轮机的清洁能源'
+        againstPoints:
+          - 'Perfect cities are expensive to build and maintain'
+          - 'Different people want different things — one design cannot please everyone'
+          - 'Technology needed for some ideas does not exist yet'
+        againstPointsZh:
+          - '完美城市建造和维护费用高昂'
+          - '不同的人想要不同的东西——一个设计不能让所有人满意'
+          - '一些想法所需的技术还不存在'
+      connectors:
+        - 'First and foremost...'
+        - 'In addition to this...'
+        - 'While it is true that...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'Although'
+        - 'sustainable'
+      mustUseStructure:
+        - 'At least one non-defining relative clause (with commas + which/who)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个非限定性定语从句（逗号+which/who）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I describe at least three features of my ideal city?'
+      - 'Did I explain WHY I chose each feature?'
+      - 'Did I use at least one non-defining relative clause?'
+      - 'Did I use varied sentence structures (simple + complex)?'
+    selfCheckListZh:
+      - '我是否描述了至少三个理想城市的特征？'
+      - '我是否解释了为什么选择每个特征？'
+      - '我是否使用了至少一个非限定性定语从句？'
+      - '我是否使用了多样的句子结构（简单句+复合句）？'
+    modelAnswer: |
+      If I could design a perfect city, it would be a place where nature and technology exist side by side. In my opinion, the most important features would be green spaces, clean transport, and accessible public services.
+
+      First and foremost, my ideal city would have parks and gardens everywhere. Every neighbourhood would include trees, flower beds, and playgrounds within a five-minute walk. Furthermore, all buildings would have rooftop gardens, which not only look beautiful but also help to absorb rainwater and reduce air pollution. Research shows that people who live near green spaces are happier and healthier.
+
+      In addition to this, the city would rely entirely on sustainable energy. Solar panels and wind turbines would provide all the electricity, while an efficient metro system would connect every district. Although some people argue that such a system would be too expensive, I believe the long-term savings from reduced pollution and healthcare costs would be worth the investment.
+
+      In conclusion, my ideal city would be green, clean, and designed for people rather than cars. While no city can be truly perfect, aiming for these goals would create a much better place to live.
+    modelAnswerZh: |
+      如果我可以设计一座完美的城市，它将是一个自然与科技并存的地方。在我看来，最重要的特征是绿色空间、清洁交通和便利的公共服务。
+
+      首先，我理想中的城市到处都有公园和花园。每个社区都包括步行五分钟内可达的树木、花坛和游乐场。此外，所有建筑都会有屋顶花园，它们不仅看起来美丽，还有助于吸收雨水和减少空气污染。研究表明，住在绿色空间附近的人更快乐、更健康。
+
+      除此之外，城市将完全依靠可持续能源。太阳能板和风力涡轮机将提供所有电力，而高效的地铁系统将连接每个区域。虽然有些人认为这样的系统太昂贵了，但我相信从减少污染和医疗成本中获得的长期节省值得这项投资。
+
+      总之，我理想中的城市将是绿色的、清洁的，为人而非汽车设计的。虽然没有城市能够真正完美，但以这些目标为方向会创造一个好得多的居住地。
+
+  - id: W055
+    type: essay
+    title: 'Technology in Education: Help or Hindrance?'
+    titleZh: '教育中的技术：帮助还是阻碍？'
+    prompt: 'Some people think technology is improving education. Others worry it is making students lazy. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为技术正在改善教育。也有人担心它让学生变懒。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      brainstorming:
+        topicZh: '技术对教育利大于弊还是弊大于利？'
+        topic: 'Does technology help education more than it hinders it?'
+        forPoints:
+          - 'Online resources give access to learning anytime, anywhere'
+          - 'Interactive tools like Minecraft Education make learning fun'
+          - 'Students can learn at their own pace with personalised apps'
+        forPointsZh:
+          - '在线资源让学习随时随地可以进行'
+          - '像我的世界教育版这样的互动工具让学习变有趣'
+          - '学生可以用个性化应用按自己的节奏学习'
+        againstPoints:
+          - 'Too much screen time is bad for eyesight and sleep'
+          - 'Students may copy answers from the internet instead of thinking'
+          - 'Not all families can afford devices and internet access'
+        againstPointsZh:
+          - '太多屏幕时间对视力和睡眠不好'
+          - '学生可能从网上抄答案而不是思考'
+          - '不是所有家庭都能负担得起设备和网络'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'What is more...'
+        - 'Taking everything into account...'
+      mustUseWords:
+        - 'What is more'
+        - 'Although'
+        - 'benefit'
+      mustUseStructure:
+        - 'At least one noun clause (e.g., "I believe that..." or "What matters most is...")'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个名词从句（如 "I believe that..." 或 "What matters most is..."）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give specific examples of technology in education?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use at least one noun clause?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了技术在教育中的具体例子？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了至少一个名词从句？'
+    modelAnswer: |
+      Technology has transformed many parts of our lives, and education is no exception. I believe that technology is mostly helpful for students, although it must be used wisely.
+
+      On the one hand, technology gives students access to incredible learning resources. Students in remote villages can now watch the same lectures as those in top city schools. What is more, interactive tools like educational games make difficult subjects more engaging. For example, Minecraft Education Edition helps students learn geometry and architecture by building virtual structures.
+
+      On the other hand, there are valid concerns about too much screen time. Some students spend hours watching videos or playing games instead of reading books. Although technology can provide answers instantly, this convenience sometimes stops students from developing critical thinking skills. What matters most is finding the right balance between digital and traditional learning.
+
+      Taking everything into account, I believe technology is a powerful tool that benefits education when used properly. Schools should teach students how to use technology responsibly, combining online resources with hands-on activities and face-to-face discussion.
+    modelAnswerZh: |
+      技术已经改变了我们生活的许多方面，教育也不例外。我相信技术对学生来说大多是有帮助的，虽然必须明智地使用。
+
+      一方面，技术给学生提供了令人难以置信的学习资源。偏远村庄的学生现在可以观看与顶尖城市学校相同的讲座。更重要的是，像教育游戏这样的互动工具使困难的科目更有吸引力。例如，我的世界教育版通过建造虚拟结构帮助学生学习几何和建筑。
+
+      另一方面，对于太多屏幕时间有合理的担忧。一些学生花几个小时看视频或玩游戏而不是读书。虽然技术可以即时提供答案，但这种便利有时会阻止学生发展批判性思维能力。最重要的是在数字和传统学习之间找到适当的平衡。
+
+      综合考虑，我相信技术是一个强大的工具，在正确使用时有益于教育。学校应该教学生如何负责任地使用技术，将在线资源与动手活动和面对面讨论相结合。
+
+  - id: W056
+    type: review
+    title: 'A Game About Building Cities'
+    titleZh: '一款关于建造城市的游戏'
+    prompt: 'You recently played a game about building or managing cities (such as Minecraft, SimCity, or a similar game). Write a review for a gaming website. Say what the game is about, what you liked most, and who would enjoy it.'
+    promptZh: '你最近玩了一款关于建造或管理城市的游戏（如我的世界、模拟城市或类似游戏）。为一个游戏网站写一篇评论。说说游戏是关于什么的、你最喜欢什么、以及谁会喜欢它。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      structure:
+        introduction: 'Name the game and give your overall opinion in one sentence.'
+        introductionZh: '游戏名称和一句话总体评价。'
+        summary: 'What is the game about? How do you play it? (2-3 sentences)'
+        summaryZh: '游戏是关于什么的？怎么玩？（2-3句）'
+        opinion: 'What did you like most? Give a specific example of something you built or experienced.'
+        opinionZh: '你最喜欢什么？举一个你建造或体验过的具体例子。'
+        recommendation: 'Who would enjoy this game? What age is it suitable for? Final recommendation.'
+        recommendationZh: '谁会喜欢这款游戏？适合什么年龄？最终推荐。'
+      mustUseWords:
+        - 'recommend'
+        - 'creative'
+        - 'although'
+      mustUseStructure:
+        - 'At least one defining relative clause (who/which/that)'
+        - 'Four clear paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个限定性定语从句（who/which/that）'
+        - '四个清晰的段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I name the game clearly?'
+      - 'Did I explain what makes it special?'
+      - 'Did I give a specific example from my experience?'
+      - 'Did I say who would enjoy it?'
+    selfCheckListZh:
+      - '我是否清楚地提到了游戏名称？'
+      - '我是否解释了它的特别之处？'
+      - '我是否从我的经历中给出了具体例子？'
+      - '我是否说了谁会喜欢它？'
+    modelAnswer: |
+      I recently spent a whole weekend playing Minecraft, and I can honestly say it is one of the most creative games I have ever played.
+
+      Minecraft is a game that lets you build almost anything using blocks of different materials — stone, wood, glass, and even diamonds. You can play in Survival Mode, where you must gather resources and fight monsters, or in Creative Mode, where you have unlimited materials and can focus entirely on building. There are no rules about what you must create.
+
+      What I liked most was building a small village with my friends. We designed houses, a marketplace, and even a working railway that connected everything together. Although the graphics are simple — everything is made of blocks — this actually makes the game more creative because you have to use your imagination to make buildings look realistic.
+
+      I would strongly recommend Minecraft to anyone who enjoys building things and solving problems. It is suitable for players aged 7 and above, and it is especially good for people who like working as a team. Whether you want to build a castle, a city, or even a copy of the Eiffel Tower, Minecraft gives you the tools to make it happen.
+    modelAnswerZh: |
+      我最近花了整个周末玩我的世界，我可以老实说它是我玩过的最有创造力的游戏之一。
+
+      我的世界是一款让你使用不同材料的方块——石头、木头、玻璃甚至钻石——建造几乎任何东西的游戏。你可以在生存模式中玩，需要收集资源和战斗怪物，或者在创造模式中玩，拥有无限的材料，可以完全专注于建造。对你必须创造什么没有规则。
+
+      我最喜欢的是和朋友一起建造一个小村庄。我们设计了房屋、一个市场，甚至一条连接一切的可运行铁路。虽然画面很简单——一切都是方块做的——但这实际上使游戏更有创造力，因为你必须用想象力来让建筑看起来逼真。
+
+      我强烈推荐我的世界给任何喜欢建造东西和解决问题的人。它适合7岁及以上的玩家，特别适合喜欢团队合作的人。无论你想建一座城堡、一座城市，还是埃菲尔铁塔的复制品，我的世界都给你工具来实现它。
+
+  - id: W057
+    type: essay
+    title: 'Should We Build More or Protect Nature?'
+    titleZh: '我们应该多建设还是保护自然？'
+    prompt: 'Some people think cities should keep expanding to provide more homes and jobs. Others think we should protect green areas and limit building. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为城市应该继续扩张以提供更多住房和工作。也有人认为应该保护绿色区域并限制建设。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      brainstorming:
+        topicZh: '城市扩张和自然保护，哪个更重要？'
+        topic: 'Which is more important — urban expansion or nature protection?'
+        forPoints:
+          - 'Growing populations need more housing, schools, and hospitals'
+          - 'New buildings create jobs and boost the economy'
+          - 'Modern construction can be eco-friendly (green buildings, solar roofs)'
+        forPointsZh:
+          - '不断增长的人口需要更多住房、学校和医院'
+          - '新建筑创造就业机会并促进经济'
+          - '现代建设可以是环保的（绿色建筑、太阳能屋顶）'
+        againstPoints:
+          - 'Cutting down forests harms wildlife and increases pollution'
+          - 'Green spaces are essential for physical and mental health'
+          - 'Once nature is destroyed, it cannot be easily replaced'
+        againstPointsZh:
+          - '砍伐森林损害野生动物并增加污染'
+          - '绿色空间对身心健康至关重要'
+          - '一旦自然被破坏，就不容易恢复'
+      connectors:
+        - 'It is often argued that...'
+        - 'Nevertheless...'
+        - 'All things considered...'
+      mustUseWords:
+        - 'Nevertheless'
+        - 'essential'
+        - 'environment'
+      mustUseStructure:
+        - 'At least one participle phrase (-ing or -ed modifier)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个分词短语（-ing 或 -ed 修饰语）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly?'
+      - 'Did I consider both sides?'
+      - 'Did I use at least one participle phrase?'
+      - 'Did I use connectors to link my ideas?'
+    selfCheckListZh:
+      - '我是否清楚地表明了观点？'
+      - '我是否考虑了两方面？'
+      - '我是否使用了至少一个分词短语？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      As cities grow larger, the debate between building more and protecting nature becomes increasingly important. I believe we need to find a balance between the two, although protecting the environment should be the priority.
+
+      It is often argued that cities must expand to house growing populations. This is true — people need homes, schools, and hospitals. Nevertheless, expanding into green areas has serious consequences. Destroying forests increases air pollution and removes the habitats of countless animals. Furthermore, research shows that people living in areas surrounded by concrete suffer more from stress and anxiety than those with access to nature.
+
+      Fortunately, modern architecture offers solutions. Designed with sustainability in mind, new buildings can include rooftop gardens, solar panels, and rainwater collection systems. Cities can also build upwards rather than outwards, creating taller buildings on existing land instead of spreading into the countryside. Singapore, often called a "city in a garden," demonstrates that urban development and nature protection can coexist successfully.
+
+      All things considered, I believe protecting green spaces is essential for our health and the planet's future. Cities should grow smarter, not just bigger, ensuring that nature remains an integral part of urban life.
+    modelAnswerZh: |
+      随着城市越来越大，建设更多与保护自然之间的争论变得越来越重要。我认为我们需要在两者之间找到平衡，虽然保护环境应该是优先事项。
+
+      人们常说城市必须扩张以容纳不断增长的人口。这是真的——人们需要住房、学校和医院。然而，向绿色区域扩张有严重的后果。摧毁森林增加空气污染并消除无数动物的栖息地。此外，研究表明，生活在被混凝土包围的地区的人比能接触自然的人遭受更多的压力和焦虑。
+
+      幸运的是，现代建筑提供了解决方案。以可持续性为设计理念的新建筑可以包括屋顶花园、太阳能板和雨水收集系统。城市也可以向上而不是向外建设，在现有土地上建造更高的建筑而不是向乡村蔓延。新加坡，常被称为"花园中的城市"，证明了城市发展和自然保护可以成功共存。
+
+      综合考虑，我相信保护绿色空间对我们的健康和地球的未来至关重要。城市应该更聪明地增长，而不仅仅是更大，确保自然仍然是城市生活的重要组成部分。
+
+  - id: W058
+    type: review
+    title: 'A Documentary About Ancient Civilizations'
+    titleZh: '一部关于古代文明的纪录片'
+    prompt: 'You recently watched a documentary about an ancient civilization (such as Ancient Egypt, Rome, or China). Write a review for your school magazine. Describe what it was about, what you found most interesting, and whether you would recommend it.'
+    promptZh: '你最近看了一部关于古代文明（如古埃及、古罗马或古代中国）的纪录片。为校刊写一篇评论。描述它的内容、你觉得最有趣的部分，以及你是否推荐它。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      structure:
+        introduction: 'Name the documentary. Where/when did you watch it? One-sentence overall impression.'
+        introductionZh: '纪录片名称。你在哪里/什么时候看的？一句话总体印象。'
+        summary: 'What civilization does it cover? What period? What aspects of life does it show?'
+        summaryZh: '涵盖什么文明？什么时期？展示了生活的哪些方面？'
+        opinion: 'What was the most fascinating part? Describe one specific scene or fact.'
+        opinionZh: '最迷人的部分是什么？描述一个具体的场景或事实。'
+        recommendation: 'Who should watch this? What age group? Final recommendation.'
+        recommendationZh: '谁应该看？什么年龄段？最终推荐。'
+      mustUseWords:
+        - 'fascinating'
+        - 'recommend'
+        - 'furthermore'
+      mustUseStructure:
+        - 'At least one non-defining relative clause'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个非限定性定语从句'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I name the documentary and say where I watched it?'
+      - 'Did I describe a specific scene I found interesting?'
+      - 'Did I say who should watch it and why?'
+      - 'Did I use a non-defining relative clause?'
+    selfCheckListZh:
+      - '我是否提到了纪录片名称和观看地点？'
+      - '我是否描述了一个我觉得有趣的具体场景？'
+      - '我是否说了谁应该看以及为什么？'
+      - '我是否使用了非限定性定语从句？'
+    modelAnswer: |
+      I recently watched a documentary called "Engineering an Empire: Rome" on a streaming platform, and I found it absolutely fascinating.
+
+      The documentary explores how the ancient Romans built one of the most powerful civilizations in history. It covers their incredible engineering achievements, including roads, aqueducts, and the famous Colosseum. The programme uses computer-generated images to show what these structures looked like when they were new, which helps viewers imagine the grandeur of ancient Rome.
+
+      The most interesting part, in my opinion, was the section about Roman concrete. Furthermore, I was amazed to learn that Roman concrete, which was made from volcanic ash mixed with seawater, is actually stronger than modern concrete. Scientists are still studying it today to understand why it has lasted for over two thousand years.
+
+      I would strongly recommend this documentary to anyone who is interested in history, architecture, or engineering. It is suitable for viewers aged 8 and above, and each episode is only 45 minutes long, making it perfect for a family movie night. If you have ever wondered how ancient people built such enormous structures without modern tools, this documentary will give you the answer.
+    modelAnswerZh: |
+      我最近在一个流媒体平台上看了一部名为"帝国工程：罗马"的纪录片，我觉得它非常迷人。
+
+      这部纪录片探索了古罗马人如何建立了历史上最强大的文明之一。它涵盖了他们令人难以置信的工程成就，包括道路、水渠和著名的罗马斗兽场。节目使用计算机生成的图像来展示这些建筑在新建时的样子，帮助观众想象古罗马的壮丽。
+
+      在我看来，最有趣的部分是关于罗马混凝土的章节。此外，我惊讶地了解到，罗马混凝土——由火山灰和海水混合而成——实际上比现代混凝土更坚固。科学家们今天仍在研究它，以了解为什么它能持续两千多年。
+
+      我强烈推荐这部纪录片给任何对历史、建筑或工程感兴趣的人。它适合8岁及以上的观众，每集只有45分钟，非常适合家庭电影之夜。如果你曾经想知道古人是如何在没有现代工具的情况下建造如此巨大的建筑，这部纪录片会给你答案。
+
+  - id: W059
+    type: essay
+    title: 'Virtual Worlds vs Real Worlds'
+    titleZh: '虚拟世界 vs 真实世界'
+    prompt: 'Some young people spend a lot of time building worlds in video games. Others prefer to explore the real world outdoors. Which do you think is more valuable? Write an essay giving your opinion.'
+    promptZh: '一些年轻人花大量时间在电子游戏中建造世界。另一些人更喜欢在户外探索真实世界。你认为哪个更有价值？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      brainstorming:
+        topicZh: '虚拟世界和真实世界，哪个更有价值？'
+        topic: 'Are virtual worlds or real-world experiences more valuable?'
+        forPoints:
+          - 'Virtual worlds teach creativity, problem-solving, and teamwork'
+          - 'Games like Minecraft can teach real skills (architecture, engineering, coding)'
+          - 'Virtual worlds are accessible to everyone, including those with disabilities'
+        forPointsZh:
+          - '虚拟世界教授创造力、问题解决和团队合作'
+          - '像我的世界这样的游戏可以教授真实技能（建筑、工程、编程）'
+          - '虚拟世界对每个人都可及，包括残障人士'
+        againstPoints:
+          - 'Real-world experiences build physical health and social skills'
+          - 'Nothing can replace the feeling of exploring real nature'
+          - 'Too much screen time can harm eyesight and sleep'
+        againstPointsZh:
+          - '真实世界的体验培养身体健康和社交技能'
+          - '没有什么能替代探索真实自然的感觉'
+          - '太多屏幕时间会损害视力和睡眠'
+      connectors:
+        - 'While both have value...'
+        - 'What is more...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'valuable'
+        - 'whereas'
+        - 'Nevertheless'
+      mustUseStructure:
+        - 'At least one sentence beginning with a participle phrase'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个以分词短语开头的句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I discuss both virtual and real experiences?'
+      - 'Did I give specific examples?'
+      - 'Did I use "whereas" to compare the two?'
+      - 'Did I state my final opinion clearly?'
+    selfCheckListZh:
+      - '我是否讨论了虚拟和真实体验？'
+      - '我是否给出了具体例子？'
+      - '我是否用"whereas"来比较两者？'
+      - '我是否清楚地表明了最终观点？'
+    modelAnswer: |
+      In today's digital world, many young people enjoy building virtual cities and exploring imaginary landscapes. While both virtual and real-world experiences have value, I believe a balance between the two is most beneficial.
+
+      Virtual worlds offer unique opportunities for learning. Playing simulation games, students develop skills in planning, design, and problem-solving. Minecraft, for example, has been used in schools worldwide to teach mathematics and architecture. What is more, virtual worlds allow people to experiment without real-world consequences — if your building collapses in a game, you simply start again. Nevertheless, spending too much time in virtual environments can lead to a lack of physical exercise and social isolation.
+
+      Real-world exploration, on the other hand, provides irreplaceable experiences. Walking through an ancient city, climbing a mountain, or simply playing in a park offers physical exercise and genuine human connection, whereas virtual experiences take place in front of a screen. Surrounded by nature, children develop a deeper appreciation for the environment that no computer simulation can fully replicate.
+
+      In conclusion, both virtual and real worlds have valuable lessons to offer. The key is to enjoy the creativity of virtual building while never forgetting to step outside, breathe fresh air, and experience the real world around us.
+    modelAnswerZh: |
+      在当今数字世界中，许多年轻人喜欢建造虚拟城市和探索想象中的风景。虽然虚拟和真实世界的体验都有价值，但我认为两者之间的平衡最有益。
+
+      虚拟世界提供了独特的学习机会。通过玩模拟游戏，学生在规划、设计和解决问题方面培养技能。例如，我的世界已在全球学校中用于教授数学和建筑。更重要的是，虚拟世界允许人们在没有真实后果的情况下实验——如果你的建筑在游戏中倒塌，你只需重新开始。然而，花太多时间在虚拟环境中可能导致缺乏体育锻炼和社交孤立。
+
+      另一方面，真实世界的探索提供了不可替代的体验。走过一座古城、爬山，或只是在公园里玩耍，提供了体育锻炼和真正的人际联系，而虚拟体验则在屏幕前进行。被自然包围，孩子们对环境产生更深的欣赏，这是任何计算机模拟无法完全复制的。
+
+      总之，虚拟世界和真实世界都有宝贵的教训。关键是享受虚拟建造的创造力，同时永远不忘走出去，呼吸新鲜空气，体验我们周围的真实世界。
+
+  - id: W060
+    type: review
+    title: 'A Book About Building or Architecture'
+    titleZh: '一本关于建造或建筑的书'
+    prompt: 'You recently read a book about building, architecture, or city design that you enjoyed. Write a review for your school library blog. Include what the book is about, what you liked, and who should read it.'
+    promptZh: '你最近读了一本关于建造、建筑或城市设计的书，你很喜欢。为学校图书馆博客写一篇评论。包括书的内容、你喜欢什么、谁应该读它。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      structure:
+        introduction: 'Book title, author, and one-sentence overall impression.'
+        introductionZh: '书名、作者和一句话总体印象。'
+        summary: 'What is the book about? Is it fiction or non-fiction?'
+        summaryZh: '这本书是关于什么的？是小说还是非小说？'
+        opinion: 'What did you enjoy most? Quote or describe one specific part.'
+        opinionZh: '你最喜欢什么？引用或描述一个具体部分。'
+        recommendation: 'Who should read it? What age group? Would you recommend it?'
+        recommendationZh: '谁应该读？什么年龄段？你会推荐吗？'
+      mustUseWords:
+        - 'recommend'
+        - 'despite'
+        - 'particularly'
+      mustUseStructure:
+        - 'At least one defining relative clause'
+        - 'Four clear paragraphs'
+      mustUseStructureZh:
+        - '至少一个限定性定语从句'
+        - '四个清晰的段落'
+    selfCheckList:
+      - 'Did I name the book and author?'
+      - 'Did I describe a specific part I enjoyed?'
+      - 'Did I say who should read it?'
+      - 'Did I use a relative clause?'
+    selfCheckListZh:
+      - '我是否提到了书名和作者？'
+      - '我是否描述了一个我喜欢的具体部分？'
+      - '我是否说了谁应该读它？'
+      - '我是否使用了定语从句？'
+    modelAnswer: |
+      I recently read "Iggy Peck, Architect" by Andrea Beaty, and I think it is one of the most inspiring picture books about building and creativity that I have ever come across.
+
+      The book tells the story of Iggy Peck, a boy who has loved building things since he was very young. He builds towers from fruit, bridges from mud, and even a full-size church from chalk and apples. Despite his obvious talent, his teacher Miss Lila Greer hates buildings and bans Iggy from building anything in class.
+
+      What I particularly enjoyed was the turning point of the story. When the class goes on a field trip and a bridge collapses, it is Iggy who saves the day by building a new bridge from the materials around him. The illustrations that show Iggy creating structures from everyday objects are absolutely wonderful and full of detail.
+
+      I would recommend this book to anyone aged 5 to 10 who loves making things. It sends a powerful message: never give up on what you are passionate about, because the world needs people who can build, create, and imagine. It would also make an excellent gift for any child who enjoys LEGO, Minecraft, or drawing buildings.
+    modelAnswerZh: |
+      我最近读了 Andrea Beaty 的《建筑师伊吉·佩克》，我觉得它是我见过的关于建造和创造力的最鼓舞人心的绘本之一。
+
+      这本书讲述了伊吉·佩克的故事，一个从小就热爱建造东西的男孩。他用水果建塔，用泥巴搭桥，甚至用粉笔和苹果建了一座教堂。尽管他天赋明显，他的老师 Lila Greer 女士讨厌建筑物，禁止伊吉在课堂上建造任何东西。
+
+      我特别喜欢的是故事的转折点。当班级去实地考察时一座桥塌了，是伊吉用周围的材料建造了一座新桥拯救了大家。展示伊吉用日常物品创造建筑的插图绝对精彩，充满细节。
+
+      我推荐这本书给任何5到10岁喜欢制作东西的人。它传达了一个强有力的信息：永远不要放弃你热衷的事情，因为世界需要能够建造、创造和想象的人。对于任何喜欢乐高、我的世界或画建筑的孩子来说，它也是一份很好的礼物。
+
+  - id: W061
+    type: essay
+    title: 'Should Old Buildings Be Preserved or Replaced?'
+    titleZh: '旧建筑应该保存还是替换？'
+    prompt: 'Some people think old buildings should be preserved because they are part of history. Others think they should be replaced with modern buildings. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为旧建筑应该保存因为它们是历史的一部分。也有人认为应该用现代建筑替换。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q08
+    scaffold:
+      brainstorming:
+        topicZh: '旧建筑应该保存还是被现代建筑替代？'
+        topic: 'Should old buildings be preserved or replaced with modern ones?'
+        forPoints:
+          - 'Old buildings tell the story of a city''s history and identity'
+          - 'Historic buildings attract tourists and boost the local economy'
+          - 'Renovation can make old buildings useful again (museums, cafes, libraries)'
+        forPointsZh:
+          - '旧建筑讲述城市的历史和身份'
+          - '历史建筑吸引游客，促进当地经济'
+          - '翻新可以让旧建筑重新有用（博物馆、咖啡馆、图书馆）'
+        againstPoints:
+          - 'Old buildings may be unsafe and expensive to maintain'
+          - 'Modern buildings are more energy-efficient and comfortable'
+          - 'Growing cities need more space for housing and offices'
+        againstPointsZh:
+          - '旧建筑可能不安全且维护成本高'
+          - '现代建筑更节能、更舒适'
+          - '不断增长的城市需要更多空间建住房和办公室'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Having said that...'
+        - 'In my view...'
+      mustUseWords:
+        - 'heritage'
+        - 'whereas'
+        - 'Having said that'
+      mustUseStructure:
+        - 'At least one adverbial clause of concession (Although... / Even though...)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个让步状语从句（Although... / Even though...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I clearly state whether I support preserving or replacing old buildings?'
+      - 'Did I give specific examples?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use an adverbial clause of concession?'
+    selfCheckListZh:
+      - '我是否清楚地表明了支持保存还是替换旧建筑？'
+      - '我是否给出了具体例子？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了让步状语从句？'
+    modelAnswer: |
+      Cities around the world face a difficult question: should they preserve old buildings or replace them with new ones? In my view, preserving our architectural heritage is extremely important, although there are times when replacement may be necessary.
+
+      On the one hand, old buildings are irreplaceable pieces of history. They tell the story of how people lived, worked, and celebrated in the past. The Forbidden City in Beijing, for example, teaches us about Chinese imperial culture, whereas a modern glass tower cannot convey the same sense of history. Furthermore, historic buildings attract tourists, which boosts the local economy and creates jobs.
+
+      On the other hand, some old buildings are genuinely unsafe or too expensive to maintain. Even though we may wish to keep every historic structure, this is not always practical. Having said that, renovation often provides a better solution than demolition. Many cities have transformed old factories into art galleries, abandoned churches into community centres, and disused railway stations into beautiful public spaces.
+
+      In conclusion, I believe that preserving old buildings should always be the first choice. Although some buildings cannot be saved, we should make every effort to protect our heritage, because once a historic building is demolished, its story is lost forever.
+    modelAnswerZh: |
+      世界各地的城市面临一个困难的问题：应该保存旧建筑还是用新建筑替换？在我看来，保存我们的建筑遗产非常重要，尽管有时替换可能是必要的。
+
+      一方面，旧建筑是不可替代的历史片段。它们讲述了人们过去如何生活、工作和庆祝的故事。例如，北京的紫禁城教我们了解中国的皇家文化，而一座现代玻璃塔无法传达相同的历史感。此外，历史建筑吸引游客，促进当地经济并创造就业机会。
+
+      另一方面，一些旧建筑确实不安全或维护成本太高。即使我们希望保留每座历史建筑，这并不总是切实可行的。话虽如此，翻新通常比拆除提供了更好的解决方案。许多城市已经将旧工厂改造成艺术画廊，废弃的教堂改造成社区中心，废弃的火车站改造成美丽的公共空间。
+
+      总之，我认为保存旧建筑应该始终是首选。虽然有些建筑无法挽救，但我们应该尽一切努力保护我们的遗产，因为一旦历史建筑被拆除，它的故事就永远消失了。

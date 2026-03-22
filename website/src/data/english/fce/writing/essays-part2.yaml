@@ -1,0 +1,562 @@
+category: 'Essay Writing (Part 2)'
+categoryZh: '议论文写作（第二部分）'
+tasks:
+  - id: W046
+    type: essay
+    title: 'Should Schools Teach More Languages?'
+    titleZh: '学校应该教更多语言吗？'
+    prompt: 'Some people think schools should teach at least two foreign languages. Others think one is enough. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为学校应该至少教两门外语，也有人认为一门就够了。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '学校应该教授两门或以上外语吗？'
+        topic: 'Should schools teach two or more foreign languages?'
+        forPoints:
+          - 'Learning multiple languages improves brain flexibility and problem-solving skills'
+          - 'In a globalised world, speaking several languages opens more career opportunities'
+          - 'Understanding other languages helps you appreciate different cultures and ways of thinking'
+        forPointsZh:
+          - '学多门语言能提高大脑灵活性和解决问题的能力'
+          - '在全球化的世界里，会多种语言能带来更多职业机会'
+          - '理解其他语言有助于欣赏不同的文化和思维方式'
+        againstPoints:
+          - 'Students already have too many subjects — adding another language increases pressure'
+          - 'It is better to master one foreign language well than to learn two poorly'
+          - 'English is enough for international communication in most situations'
+        againstPointsZh:
+          - '学生已经有太多科目了——再加一门语言会增加压力'
+          - '精通一门外语比两门都学不好要强'
+          - '英语在大多数情况下足以应对国际交流'
+      connectors:
+        - 'Furthermore...'
+        - 'On the other hand...'
+        - 'To sum up...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'On the other hand'
+        - 'beneficial'
+      mustUseStructure:
+        - 'At least one conditional sentence (If...)'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个条件句（If...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      In many countries, students learn only one foreign language at school — usually English. However, I believe that schools should offer at least two foreign languages, because the benefits go far beyond just communication.
+
+      Firstly, learning multiple languages is beneficial for the brain. Research shows that bilingual and multilingual people are better at solving problems and switching between tasks. Furthermore, understanding another language gives you a window into a different culture and way of thinking. If students learned Chinese and Spanish, for example, they would gain insights into two of the world's largest cultures.
+
+      On the other hand, some people argue that students already have too many subjects and adding another language would create unnecessary pressure. They say it is better to master one language well than to learn two poorly. This is a fair point, and schools should make the second language optional rather than compulsory.
+
+      To sum up, I think offering two foreign languages at school is a wonderful idea, as long as students can choose. Learning languages opens doors to new friendships, careers, and ways of understanding the world.
+    modelAnswerZh: |
+      在许多国家，学生在学校只学一门外语——通常是英语。然而，我认为学校应该至少提供两门外语，因为好处远不止于交流。
+
+      首先，学习多门语言对大脑有益。研究表明，双语和多语使用者更擅长解决问题和切换任务。此外，理解另一种语言让你能窥见一种不同的文化和思维方式。例如，如果学生学习中文和西班牙语，他们就能了解世界上两个最大的文化。
+
+      另一方面，有些人认为学生已经有太多科目了，再加一门语言会造成不必要的压力。他们说精通一门语言比两门都学不好要强。这是有道理的，学校应该让第二门语言成为选修而非必修。
+
+      总之，我认为在学校提供两门外语是个好主意，只要学生可以自己选择。学习语言为新的友谊、职业和理解世界的方式打开了大门。
+
+  - id: W047
+    type: essay
+    title: 'Is Social Media Good for Communication?'
+    titleZh: '社交媒体对交流有好处吗？'
+    prompt: 'Some people believe social media helps people communicate better. Others think it damages real communication. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为社交媒体帮助人们更好地交流，也有人认为它损害了真正的交流。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '社交媒体对人际交流的影响是正面还是负面？'
+        topic: 'Is the impact of social media on communication positive or negative?'
+        forPoints:
+          - 'Keeps people in touch with friends and family who live far away'
+          - 'Allows shy people to express themselves more easily through writing'
+          - 'Emojis and photos add emotional richness to messages'
+        forPointsZh:
+          - '帮助人们与远方的朋友和家人保持联系'
+          - '让害羞的人更容易通过文字表达自己'
+          - '表情符号和照片为消息增添了情感丰富度'
+        againstPoints:
+          - 'People spend more time looking at screens than talking face to face'
+          - 'Online conversations are often shallow compared to real ones'
+          - 'Cyberbullying and misunderstandings happen more easily online'
+        againstPointsZh:
+          - '人们花更多时间看屏幕而不是面对面交谈'
+          - '网上对话往往比现实对话肤浅'
+          - '网络欺凌和误解更容易在网上发生'
+      connectors:
+        - 'Admittedly...'
+        - 'Nevertheless...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'Nevertheless'
+        - 'communication'
+        - 'despite'
+      mustUseStructure:
+        - 'At least one concession clause (Although... / Despite...)'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个让步从句（Although... / Despite...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Social media has changed the way we communicate forever. Although it has many benefits, I believe it has both positive and negative effects on communication, and we need to use it wisely.
+
+      On the positive side, social media helps people keep in touch across long distances. My cousin moved to Canada last year, but we still chat every day through video calls and messages. Despite being thousands of kilometres apart, we feel close. Social media also helps shy people express their thoughts through writing, which they might find difficult to do face to face.
+
+      Nevertheless, social media can also damage communication. Many people spend hours scrolling through posts instead of having real conversations with the people sitting next to them. Online messages can easily be misunderstood because they lack tone of voice and facial expressions. Cyberbullying is another serious problem that would not exist without social media.
+
+      In conclusion, social media is a powerful tool for communication, but it should not replace real human connection. The key is balance — use social media to stay in touch, but make sure you also spend time talking to people in person.
+    modelAnswerZh: |
+      社交媒体永远改变了我们的交流方式。虽然它有很多好处，但我认为它对交流既有积极也有消极的影响，我们需要明智地使用它。
+
+      从积极的方面来看，社交媒体帮助人们跨越长距离保持联系。我表妹去年搬到了加拿大，但我们每天仍然通过视频通话和消息聊天。尽管相隔数千公里，我们感觉很亲近。社交媒体还帮助害羞的人通过文字表达想法，面对面时他们可能觉得很难做到。
+
+      然而，社交媒体也可能损害交流。许多人花几个小时刷帖子，而不是和身边的人进行真正的对话。网上消息很容易被误解，因为缺少语调和面部表情。网络欺凌是另一个没有社交媒体就不会存在的严重问题。
+
+      总之，社交媒体是一个强大的交流工具，但不应该取代真正的人际联系。关键是平衡——用社交媒体保持联系，但也要确保花时间和人面对面交流。
+
+  - id: W048
+    type: essay
+    title: 'Are Idioms Important to Learn?'
+    titleZh: '学习习语重要吗？'
+    prompt: 'Some students think learning idioms is a waste of time. Others think understanding idioms is essential for good English. What do you think? Write an essay giving your opinion.'
+    promptZh: '有些学生认为学习习语是浪费时间，也有人认为理解习语对学好英语至关重要。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '学习英语习语值得花时间吗？'
+        topic: 'Is it worth spending time learning English idioms?'
+        forPoints:
+          - 'Idioms appear frequently in books, films, and everyday conversation'
+          - 'Understanding idioms helps you sound more natural and fluent'
+          - 'Idioms are tested in exams like FCE (Use of English and Reading)'
+        forPointsZh:
+          - '习语经常出现在书籍、电影和日常对话中'
+          - '理解习语能让你听起来更自然流利'
+          - '习语在FCE等考试中会被考查（Use of English和阅读）'
+        againstPoints:
+          - 'Grammar and vocabulary are more useful for basic communication'
+          - 'There are thousands of idioms — impossible to learn them all'
+          - 'Some idioms are outdated and rarely used in modern English'
+        againstPointsZh:
+          - '语法和词汇对基本交流更有用'
+          - '有成千上万个习语——不可能全部学会'
+          - '一些习语已经过时，在现代英语中很少使用'
+      connectors:
+        - 'For instance...'
+        - 'However...'
+        - 'All things considered...'
+      mustUseWords:
+        - 'For instance'
+        - 'essential'
+        - 'However'
+      mustUseStructure:
+        - 'At least one example using an actual idiom'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少使用一个真实的习语作为例子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Learning English involves many different skills — grammar, vocabulary, pronunciation, and more. I believe that learning idioms is an essential part of this process, even though it takes extra time and effort.
+
+      Firstly, idioms are everywhere in real English. For instance, if you watch an English film or read a novel, you will come across phrases like "break the ice" or "a piece of cake" very quickly. Without understanding these expressions, you might miss the meaning of important conversations. Furthermore, using idioms in your own speech makes you sound more natural and confident — like a real English speaker rather than a textbook reader.
+
+      However, I agree that learners should not try to memorise every idiom in the dictionary. There are thousands of them, and many are outdated. Instead, students should focus on the most common ones — perhaps fifty to a hundred — and learn them through reading and conversation rather than lists.
+
+      All things considered, I think learning idioms is definitely worth the effort. They add colour to your English and help you understand the culture behind the language. As the saying goes, "knowledge is power" — and that includes the knowledge of idioms!
+    modelAnswerZh: |
+      学英语涉及许多不同的技能——语法、词汇、发音等。我认为学习习语是这个过程中必不可少的一部分，尽管它需要额外的时间和精力。
+
+      首先，习语在真实英语中无处不在。例如，如果你看一部英文电影或读一本小说，你很快就会遇到"break the ice"或"a piece of cake"这样的短语。如果不理解这些表达，你可能会错过重要对话的意思。此外，在自己的讲话中使用习语会让你听起来更自然、更自信——像一个真正的英语使用者而不是教科书朗读者。
+
+      然而，我同意学习者不应该试图背诵字典中的每一个习语。有成千上万个，而且许多已经过时。相反，学生应该关注最常见的——大概五十到一百个——并通过阅读和对话来学习，而不是背列表。
+
+      综合考虑，我认为学习习语绝对值得付出努力。它们为你的英语增添了色彩，帮助你理解语言背后的文化。正如那句话所说，"知识就是力量"——这包括习语的知识！
+
+  - id: W049
+    type: essay
+    title: 'Is Reading Books Better Than Watching Films?'
+    titleZh: '读书比看电影好吗？'
+    prompt: 'Some people prefer reading books, while others prefer watching films. Which do you think is better for learning? Write an essay giving your opinion.'
+    promptZh: '有些人喜欢读书，另一些人喜欢看电影。你觉得哪个对学习更好？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '读书和看电影，哪个对学习更有帮助？'
+        topic: 'Which is more beneficial for learning — reading books or watching films?'
+        forPoints:
+          - 'Books develop vocabulary and imagination more than films do'
+          - 'Reading improves concentration and critical thinking'
+          - 'You can read at your own pace and re-read difficult parts'
+        forPointsZh:
+          - '书籍比电影更能提高词汇量和想象力'
+          - '阅读能提高专注力和批判性思维'
+          - '可以按自己的节奏阅读，遇到难的部分可以反复看'
+        againstPoints:
+          - 'Films bring stories to life with visual and audio elements'
+          - 'Watching films in English improves listening and pronunciation'
+          - 'Films are more accessible and engaging for young learners'
+        againstPointsZh:
+          - '电影通过视觉和音频元素让故事栩栩如生'
+          - '看英语电影能提高听力和发音'
+          - '电影对年幼的学习者更容易接触、更有吸引力'
+      connectors:
+        - 'Whereas...'
+        - 'Moreover...'
+        - 'In my opinion...'
+      mustUseWords:
+        - 'Whereas'
+        - 'Moreover'
+        - 'imagination'
+      mustUseStructure:
+        - 'At least one comparative sentence'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个比较级句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Both books and films tell stories and teach us about the world. In my opinion, reading books is slightly better for learning, although films also have important benefits.
+
+      Reading books is more effective for building vocabulary and imagination. When you read, your brain creates its own pictures, sounds, and emotions. This exercises your imagination far more than watching a film, where everything is shown to you. Moreover, books expose you to a much wider range of vocabulary than films do. A single novel might contain thousands of words you have never seen before.
+
+      Whereas books are better for vocabulary, films are better for developing listening skills and pronunciation. Watching English films with subtitles helps you connect written words with their spoken forms. Films are also more engaging for some learners — the combination of pictures, music, and dialogue makes the story easier to follow.
+
+      In my opinion, the ideal approach is to do both. Read books to build your vocabulary and imagination, and watch films to improve your listening and pronunciation. Together, they make a powerful team for language learning.
+    modelAnswerZh: |
+      书籍和电影都能讲故事，教我们认识世界。在我看来，读书对学习稍微好一些，尽管电影也有重要的好处。
+
+      读书对积累词汇和培养想象力更有效。当你阅读时，你的大脑会自己创造画面、声音和情感。这比看电影更能锻炼你的想象力，因为电影把一切都展示给你了。此外，书籍让你接触到比电影更广泛的词汇。一本小说可能包含数千个你从未见过的词。
+
+      然而，书籍更适合词汇积累，电影则更适合提高听力和发音。带字幕看英文电影帮助你将书面文字与口语形式联系起来。电影对某些学习者也更有吸引力——图片、音乐和对话的结合使故事更容易理解。
+
+      在我看来，最理想的方法是两者都做。通过读书积累词汇和想象力，通过看电影提高听力和发音。两者结合是语言学习的强大组合。
+
+  - id: W050
+    type: essay
+    title: 'Should Everyone Learn to Code?'
+    titleZh: '每个人都应该学编程吗？'
+    prompt: 'Some people think coding should be taught in all schools. Others think it is only important for people who want to work with computers. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为编程应该在所有学校教授，也有人认为它只对想从事计算机工作的人重要。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '编程应该成为所有学生的必修课吗？'
+        topic: 'Should coding be a compulsory subject for all students?'
+        forPoints:
+          - 'Coding teaches logical thinking and problem-solving skills useful in any career'
+          - 'Technology is everywhere — understanding how it works gives you an advantage'
+          - 'Coding is the "language of the future" — as important as reading and writing'
+        forPointsZh:
+          - '编程教会逻辑思维和解决问题的能力，对任何职业都有用'
+          - '科技无处不在——理解它如何运作会给你带来优势'
+          - '编程是"未来的语言"——和阅读写作一样重要'
+        againstPoints:
+          - 'Not everyone needs to write code — most people just need to use technology'
+          - 'Time spent on coding could be used for arts, sports, or other important subjects'
+          - 'Coding can be frustrating for students who are not interested in technology'
+        againstPointsZh:
+          - '不是每个人都需要写代码——大多数人只需要使用科技'
+          - '花在编程上的时间可以用于艺术、体育或其他重要科目'
+          - '对不感兴趣的学生来说编程可能很令人沮丧'
+      connectors:
+        - 'Consequently...'
+        - 'Admittedly...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'Consequently'
+        - 'essential'
+        - 'Admittedly'
+      mustUseStructure:
+        - 'At least one present perfect sentence'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个现在完成时句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Technology has become an essential part of modern life. I believe all students should learn the basics of coding, even if they do not plan to become programmers.
+
+      Coding teaches valuable skills that go beyond computers. When you write code, you learn to break big problems into smaller steps, think logically, and find creative solutions. These skills are useful in every career — from medicine to music. Many countries have already added coding to their school curriculum. Consequently, students in those countries are developing problem-solving skills earlier than ever.
+
+      Admittedly, not every student will enjoy coding or want to use it in their future career. Forcing students to spend hours on something they dislike is not productive. However, learning the basics — how algorithms work and how apps are built — takes only a few lessons and gives students a much better understanding of the technology they use every day.
+
+      In conclusion, coding should be taught in schools as an introduction, not a specialist subject. Every student deserves the chance to understand the digital world they live in, even if they decide not to pursue it further.
+    modelAnswerZh: |
+      科技已经成为现代生活中不可或缺的一部分。我认为所有学生都应该学习编程基础知识，即使他们不打算成为程序员。
+
+      编程教授的有价值的技能远不止于计算机。当你写代码时，你学会将大问题分解成小步骤、逻辑思考和寻找创造性解决方案。这些技能在每个职业中都有用——从医学到音乐。许多国家已经将编程纳入学校课程。因此，这些国家的学生比以往更早地培养了解决问题的能力。
+
+      诚然，不是每个学生都会喜欢编程或想在未来的职业中使用它。强迫学生花几个小时在他们不喜欢的事情上是没有意义的。然而，学习基础知识——算法如何工作、应用是如何构建的——只需几节课，就能让学生更好地理解他们每天使用的技术。
+
+      总之，编程应该作为入门课在学校教授，而不是专业课。每个学生都有权了解他们所生活的数字世界，即使他们决定不深入学习。
+
+  - id: W051
+    type: essay
+    title: 'Is Handwriting Still Important?'
+    titleZh: '手写字还重要吗？'
+    prompt: 'Some people think handwriting is no longer important because of computers and phones. Others think it is still a valuable skill. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为因为有电脑和手机，手写字不再重要。也有人认为这仍是一项有价值的技能。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '在数字时代，手写字还有价值吗？'
+        topic: 'Is handwriting still valuable in the digital age?'
+        forPoints:
+          - 'Writing by hand helps memory — studies show you remember notes better when handwritten'
+          - 'Handwriting is a personal skill — everyone has a unique style'
+          - 'Some exams (like FCE) still require handwriting'
+        forPointsZh:
+          - '手写有助于记忆——研究表明手写笔记记得更牢'
+          - '书法是个人技能——每个人都有独特的风格'
+          - '一些考试（如FCE）仍然需要手写'
+        againstPoints:
+          - 'Almost all modern communication is digital — typing is faster and more practical'
+          - 'Poor handwriting can make notes impossible to read'
+          - 'Time spent on handwriting practice could be used for other important skills'
+        againstPointsZh:
+          - '几乎所有现代交流都是数字化的——打字更快更实用'
+          - '字迹潦草可能导致笔记无法阅读'
+          - '花在练字上的时间可以用于其他重要技能'
+      connectors:
+        - 'While it is true that...'
+        - 'Furthermore...'
+        - 'On balance...'
+      mustUseWords:
+        - 'While'
+        - 'Furthermore'
+        - 'valuable'
+      mustUseStructure:
+        - 'At least one contrast using while/whereas'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个使用while/whereas的对比'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      In a world of keyboards and touchscreens, many people wonder if handwriting is still necessary. While it is true that most communication is now digital, I believe handwriting remains a valuable skill that should not be forgotten.
+
+      The most important reason is that handwriting helps your brain learn and remember. Studies show that students who take notes by hand remember more than those who type on a laptop. This is because writing by hand forces you to think about what you are writing and process the information more deeply. Furthermore, handwriting is a form of personal expression — like a fingerprint, everyone's handwriting is unique.
+
+      While some argue that handwriting is outdated, the reality is that many situations still require it. Exams, personal letters, and quick notes all depend on the ability to write clearly by hand. Even in the digital age, a handwritten thank-you card feels more personal and meaningful than a text message.
+
+      On balance, I think schools should continue to teach handwriting alongside typing skills. Both are important tools, and having both gives students the flexibility to communicate in any situation.
+    modelAnswerZh: |
+      在键盘和触摸屏的世界里，许多人想知道手写字是否还有必要。虽然大部分交流现在确实是数字化的，但我认为手写仍然是一项不应被遗忘的有价值的技能。
+
+      最重要的原因是手写有助于大脑学习和记忆。研究表明，手写笔记的学生比用笔记本电脑打字的学生记得更多。这是因为手写迫使你思考正在写的内容，更深入地处理信息。此外，书法是一种个人表达方式——像指纹一样，每个人的字迹都是独一无二的。
+
+      虽然有些人认为手写已经过时了，但现实是许多情况仍然需要它。考试、个人信件和快速笔记都依赖于清楚书写的能力。即使在数字时代，手写的感谢卡也比短信感觉更个人化、更有意义。
+
+      总的来看，我认为学校应该继续教授手写和打字技能。两者都是重要的工具，兼具两者使学生在任何情况下都能灵活交流。
+
+  - id: W052
+    type: essay
+    title: 'Should Children Travel Abroad?'
+    titleZh: '孩子应该出国旅行吗？'
+    prompt: 'Some people think travelling abroad is important for children. Others think it is too expensive and not necessary. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为出国旅行对孩子很重要，也有人觉得太贵了而且没必要。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 2
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '出国旅行对孩子的成长有多重要？'
+        topic: 'How important is travelling abroad for children?'
+        forPoints:
+          - 'Travelling broadens children''s understanding of different cultures'
+          - 'Using a foreign language in real life builds confidence and fluency'
+          - 'Experiencing new food, customs, and landscapes develops open-mindedness'
+        forPointsZh:
+          - '旅行拓宽了孩子对不同文化的理解'
+          - '在现实生活中使用外语能增强自信和流利度'
+          - '体验新的食物、习俗和风景能培养开放心态'
+        againstPoints:
+          - 'Travelling abroad is expensive and not all families can afford it'
+          - 'Children can learn about other cultures through books, films, and the internet'
+          - 'Young children may not remember or appreciate the experience'
+        againstPointsZh:
+          - '出国旅行很贵，不是所有家庭都负担得起'
+          - '孩子可以通过书籍、电影和网络了解其他文化'
+          - '幼小的孩子可能不记得或不能欣赏这段经历'
+      connectors:
+        - 'Firstly... Secondly...'
+        - 'Nevertheless...'
+        - 'To sum up...'
+      mustUseWords:
+        - 'Firstly'
+        - 'Nevertheless'
+        - 'experience'
+      mustUseStructure:
+        - 'At least one comparative or superlative sentence'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个比较级或最高级句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Travelling abroad is a wonderful experience, but is it necessary for children? I believe that if families can afford it, travelling is one of the best ways to help children grow, although it is not the only way.
+
+      Firstly, travelling teaches children things that no classroom can. Walking through a rainforest, tasting food in a local market, or trying to communicate in a foreign language are experiences that make learning come alive. Secondly, meeting people from different backgrounds helps children become more open-minded and understanding. These are among the most important qualities a person can develop.
+
+      Nevertheless, I understand that travelling abroad is expensive and not possible for every family. Fortunately, there are other ways to learn about the world — reading books about other countries, watching documentaries, cooking food from different cultures, and making friends online with people from around the world. These activities may not be as exciting as travelling, but they are still very valuable.
+
+      To sum up, I think travelling abroad is a wonderful experience for children, but it is not the only path to understanding the world. What matters most is curiosity — as long as children are curious, they will learn wherever they are.
+    modelAnswerZh: |
+      出国旅行是一次美好的经历，但对孩子来说有必要吗？我认为如果家庭负担得起，旅行是帮助孩子成长的最好方式之一，尽管不是唯一的方式。
+
+      首先，旅行教给孩子的东西是课堂无法提供的。穿行在雨林中、在当地市场品尝食物、或试着用外语交流，这些经历让学习变得鲜活。其次，与来自不同背景的人交往帮助孩子变得更加开放和善解人意。这些是一个人能培养的最重要的品质。
+
+      然而，我理解出国旅行很贵，不是每个家庭都能做到。幸运的是，还有其他方式来了解世界——阅读关于其他国家的书籍、看纪录片、烹饪不同文化的食物、在网上和世界各地的人交朋友。这些活动可能没有旅行那么令人兴奋，但仍然很有价值。
+
+      总之，我认为出国旅行对孩子来说是一次美好的经历，但不是理解世界的唯一途径。最重要的是好奇心——只要孩子们有好奇心，无论在哪里他们都会学习。
+
+  - id: W053
+    type: essay
+    title: 'Is It Better to Learn from Mistakes or from Success?'
+    titleZh: '从错误中学习好还是从成功中学习好？'
+    prompt: 'Some people say we learn more from our mistakes than from our successes. Do you agree? Write an essay giving your opinion.'
+    promptZh: '有人说我们从错误中学到的比从成功中学到的多。你同意吗？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q07
+    scaffold:
+      brainstorming:
+        topicZh: '失败真的是更好的老师吗？'
+        topic: 'Is failure really a better teacher than success?'
+        forPoints:
+          - 'Mistakes force us to think about what went wrong and find better solutions'
+          - 'Failure builds resilience — the ability to try again after disappointment'
+          - 'Many great inventions came from mistakes (penicillin, Post-it notes)'
+        forPointsZh:
+          - '错误迫使我们思考哪里出了问题并找到更好的解决方案'
+          - '失败培养韧性——在失望后再次尝试的能力'
+          - '许多伟大的发明来自于错误（青霉素、便利贴）'
+        againstPoints:
+          - 'Too many failures can destroy confidence and motivation'
+          - 'Success shows us what works, giving us a model to follow'
+          - 'Some mistakes have serious consequences that cannot be undone'
+        againstPointsZh:
+          - '太多失败会摧毁信心和动力'
+          - '成功告诉我们什么有效，给我们一个可以效仿的模式'
+          - '有些错误的后果很严重，无法挽回'
+      connectors:
+        - 'For example...'
+        - 'Although...'
+        - 'All in all...'
+      mustUseWords:
+        - 'Although'
+        - 'resilience'
+        - 'consequently'
+      mustUseStructure:
+        - 'At least one real-life example'
+        - 'Introduction paragraph + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个真实生活中的例子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give reasons to support my opinion?'
+      - 'Did I consider the opposite view?'
+      - 'Did I use linking words to connect my ideas?'
+    selfCheckListZh:
+      - '我是否在开头段清楚地表明了观点？'
+      - '我是否给出了支持观点的理由？'
+      - '我是否考虑了对立观点？'
+      - '我是否使用了连接词来衔接想法？'
+    modelAnswer: |
+      Everyone makes mistakes, and everyone experiences success. I believe we actually learn from both, but mistakes often teach us deeper and more lasting lessons.
+
+      When something goes wrong, we are forced to stop and think about why. This process of reflection helps us understand our weaknesses and find better approaches. For example, when I failed a maths test last year, I realised I had been rushing through problems without checking my work. Consequently, I developed a habit of always checking answers, which has helped me in every subject since. Mistakes also build resilience — the ability to get back up after falling down. This is one of life's most important skills.
+
+      Although mistakes are valuable teachers, we should not ignore the lessons of success. Success shows us what works well and gives us confidence to keep going. A student who receives praise for a well-written essay is motivated to write even better next time.
+
+      All in all, I think both mistakes and successes are important for learning. The key is to treat mistakes as stepping stones rather than roadblocks. As the saying goes, "fall seven times, stand up eight."
+    modelAnswerZh: |
+      每个人都会犯错，每个人都会经历成功。我认为我们其实从两者中都有学习，但错误往往教给我们更深刻、更持久的教训。
+
+      当事情出错时，我们被迫停下来思考原因。这个反思过程帮助我们理解自己的弱点并找到更好的方法。例如，去年我数学考试不及格时，我意识到自己一直在赶题而没有检查答案。因此，我养成了总是检查答案的习惯，这在此后的每个科目中都帮助了我。错误还培养了韧性——摔倒后重新站起来的能力。这是生活中最重要的技能之一。
+
+      虽然错误是有价值的老师，但我们不应该忽视成功的教训。成功告诉我们什么做法有效，给我们继续前进的信心。一个因写了一篇好文章而受到表扬的学生会有动力下次写得更好。
+
+      总之，我认为错误和成功对学习都很重要。关键是把错误当作踏脚石而不是绊脚石。正如那句话所说，"跌倒七次，站起来八次。"

@@ -1,0 +1,455 @@
+category: 'Review Writing (Advanced)'
+categoryZh: '评论写作（进阶）'
+tasks:
+  - id: W062
+    type: review
+    title: 'A Fantasy Novel'
+    titleZh: '一部奇幻小说'
+    prompt: 'You have just finished reading a fantasy novel that you loved. Write a review for your school magazine. Say what the book is about, what you liked most, whether there were any weak points, and who you would recommend it to.'
+    promptZh: '你刚读完一本非常喜欢的奇幻小说。为你的校刊写一篇书评。说说书的内容、你最喜欢什么、有没有不足之处，以及你会推荐给谁。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the book, the author, and your overall opinion. Hook the reader with an interesting first sentence.'
+        introductionZh: '书名、作者和你的总体评价。用一句有趣的话吸引读者。'
+        summary: 'Describe the world and the main character''s challenge. Do NOT reveal the ending.'
+        summaryZh: '描述书中的世界和主角面临的挑战。不要透露结局。'
+        opinion: 'What made this book special? Use specific examples. Mention one mild criticism.'
+        opinionZh: '这本书的特别之处是什么？用具体例子。提到一个温和的批评。'
+        recommendation: 'Who is the ideal reader? Compare to a well-known book if possible.'
+        recommendationZh: '理想读者是谁？如果可以，与一本知名书籍比较。'
+      mustUseWords:
+        - 'captivating'
+        - 'although'
+        - 'highly recommend'
+      mustUseStructure:
+        - 'At least one comparison using "even more...than" or "not as...as"'
+        - 'Four clear paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个使用"even more...than"或"not as...as"的比较句'
+        - '四个清晰的段落：引言、概要、评价、推荐'
+      rubric:
+        content: 'All four sections are present. The review gives enough information to decide whether to read the book without spoiling the plot.'
+        contentZh: '所有四个部分都齐全。评论提供了足够的信息让读者决定是否阅读这本书，且不剧透。'
+        language: 'Uses varied opinion language, comparisons, and a strong opening and closing.'
+        languageZh: '使用多样的评价语言、比较，以及有力的开头和结尾。'
+    selfCheckList:
+      - 'Did I hook the reader with my opening sentence?'
+      - 'Did I describe the story without spoiling the ending?'
+      - 'Did I balance positive comments with at least one mild criticism?'
+      - 'Did I suggest who would enjoy this book and why?'
+    selfCheckListZh:
+      - '我的开头句是否吸引了读者？'
+      - '我是否在不剧透的情况下描述了故事？'
+      - '我是否用至少一个温和的批评来平衡正面评价？'
+      - '我是否建议了谁会喜欢这本书以及为什么？'
+    modelAnswer: |
+      Imagine discovering that the Greek gods are real — and that your maths teacher might secretly be one of them. This is the world of "Percy Jackson and the Lightning Thief" by Rick Riordan, and it is one of the most captivating books I have ever read.
+
+      The story follows twelve-year-old Percy, who learns that he is the son of Poseidon, the god of the sea. When Zeus's master lightning bolt is stolen, Percy is blamed. He must travel across America with his friends to find the bolt and prevent a war among the gods — all within two weeks.
+
+      What I loved most was how Rick Riordan weaves Greek mythology into modern life. The Underworld is beneath Los Angeles, and Mount Olympus sits on top of the Empire State Building. These creative twists make ancient myths feel fresh and exciting. Although the middle section is slightly predictable — you can guess who the real thief is before Percy does — the final plot twist is even more surprising than anything I expected.
+
+      I would highly recommend this book to readers aged 9 and above who enjoy adventure and mythology. If you loved Harry Potter, you will love Percy Jackson — it has the same blend of humour, friendship, and danger. Pick it up today and prepare for the ride of your life.
+    modelAnswerZh: |
+      想象一下发现希腊诸神是真实的——而你的数学老师可能秘密地就是其中之一。这就是 Rick Riordan 的《珀西·杰克逊与神火之盗》的世界，这是我读过的最引人入胜的书之一。
+
+      故事讲述了十二岁的珀西，他发现自己是海神波塞冬的儿子。当宙斯的闪电火被偷走时，珀西被指责。他必须和朋友们横穿美国找到闪电火并阻止诸神之间的战争——而且只有两周时间。
+
+      我最喜欢的是 Rick Riordan 将希腊神话融入现代生活的方式。冥界在洛杉矶地下，奥林匹斯山在帝国大厦顶上。这些创意让古老的神话感觉新鲜而激动人心。虽然中间部分有些可预测——你可以在珀西之前猜到谁是真正的小偷——但最终的情节转折比我预想的还要令人惊讶。
+
+      我强烈推荐这本书给9岁及以上喜欢冒险和神话的读者。如果你喜欢哈利·波特，你会喜欢珀西·杰克逊——它有同样的幽默、友谊和危险的融合。今天就拿起来，准备好人生中最刺激的旅程。
+
+  - id: W063
+    type: review
+    title: 'An Animated Movie'
+    titleZh: '一部动画电影'
+    prompt: 'You recently watched an animated movie that impressed you. Write a review for an English-language website aimed at families. Include what the film is about, what made it special, and whether you would recommend it.'
+    promptZh: '你最近看了一部让你印象深刻的动画电影。为一个面向家庭的英语网站写一篇评论。包括电影讲什么、它的特别之处，以及你是否推荐它。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the film, the studio, and give a one-sentence verdict.'
+        introductionZh: '电影名、制作公司，用一句话给出评价。'
+        summary: 'Describe the main character and the central conflict. Keep it spoiler-free.'
+        summaryZh: '描述主角和核心冲突。不要剧透。'
+        opinion: 'Discuss animation quality, storytelling, music, and humour. Use the describe-then-evaluate pattern.'
+        opinionZh: '讨论动画质量、叙事、音乐和幽默。使用"先描述后评价"模式。'
+        recommendation: 'Suitable age range? Any content warnings? Compare to another animated film.'
+        recommendationZh: '适合的年龄段？有内容提醒吗？与另一部动画电影比较。'
+      mustUseWords:
+        - 'stunning'
+        - 'furthermore'
+        - 'well worth watching'
+      mustUseStructure:
+        - 'At least one sentence using "While/Whereas" for comparison'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个使用"While/Whereas"的比较句'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I name the film and studio clearly?'
+      - 'Did I describe the plot without giving away the ending?'
+      - 'Did I comment on at least two aspects (e.g., animation, music, story)?'
+      - 'Did I say who the film is suitable for?'
+    selfCheckListZh:
+      - '我是否清楚地提到了电影名和制作公司？'
+      - '我是否在不透露结局的情况下描述了情节？'
+      - '我是否至少评价了两个方面（如动画、音乐、故事）？'
+      - '我是否说了这部电影适合谁？'
+    modelAnswer: |
+      From the very first frame, "Frozen 2" grabs your attention and refuses to let go. This Disney sequel is a stunning visual masterpiece that takes everything you loved about the original and makes it even better.
+
+      The story picks up three years after the first film. Elsa begins hearing a mysterious voice calling her from the enchanted forest to the north. Together with Anna, Kristoff, Sven, and Olaf, she sets off on a dangerous journey to discover the truth about her powers and her family's past.
+
+      While the first Frozen was primarily about sisterly love, this sequel dives deeper into themes of identity and courage. The animation is breathtaking — the water and ice effects are so realistic that you almost feel cold watching them. Furthermore, the soundtrack features powerful songs that are arguably even better than "Let It Go." My personal favourite, "Show Yourself," gave me goosebumps.
+
+      I believe this film is well worth watching for families with children aged 5 and above. Younger viewers may find one or two scenes slightly intense, but the overall message of bravery and self-discovery is truly inspiring. If you enjoyed the first Frozen, this sequel will not disappoint.
+    modelAnswerZh: |
+      从第一帧画面开始，《冰雪奇缘2》就抓住了你的注意力并且不放手。这部迪士尼续集是一部视觉上令人惊叹的杰作，把你喜欢原作的一切都做得更好了。
+
+      故事发生在第一部三年之后。艾尔莎开始听到一个神秘的声音从北方的魔法森林召唤她。她和安娜、克里斯托夫、斯文和雪宝一起，踏上了一段危险的旅程，去发现关于她的力量和家族过去的真相。
+
+      虽然第一部冰雪奇缘主要讲述姐妹之爱，但续集更深入地探讨了身份认同和勇气的主题。动画令人叹为观止——水和冰的效果如此逼真，你几乎会觉得看的时候很冷。此外，原声带中有力量感十足的歌曲，可以说比"Let It Go"更好。我个人最喜欢的"Show Yourself"让我起了鸡皮疙瘩。
+
+      我相信这部电影非常值得有5岁及以上孩子的家庭观看。年幼的观众可能会觉得一两个场景有点紧张，但勇敢和自我发现的整体信息真的很鼓舞人心。如果你喜欢第一部冰雪奇缘，这部续集不会让你失望。
+
+  - id: W064
+    type: review
+    title: 'A Video Game'
+    titleZh: '一款电子游戏'
+    prompt: 'You have been playing a video game that you want to tell other kids about. Write a review for a children''s technology website. Describe the gameplay, say what you liked and disliked, and recommend who should play it.'
+    promptZh: '你一直在玩一款想要告诉其他孩子的电子游戏。为一个儿童科技网站写一篇评论。描述游戏玩法、说你喜欢和不喜欢什么，并推荐谁应该玩。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the game, platform, and price. Start with a hook that shows why this game stands out.'
+        introductionZh: '游戏名、平台和价格。以一个展示这款游戏为何与众不同的引子开头。'
+        summary: 'Explain what you do in the game. What is the goal? What makes it unique?'
+        summaryZh: '解释你在游戏中做什么。目标是什么？什么使它独特？'
+        opinion: 'Discuss graphics, gameplay, difficulty. Balance praise with constructive criticism.'
+        opinionZh: '讨论画面、游戏性、难度。用建设性的批评来平衡赞美。'
+        recommendation: 'Age range? Skill level needed? Compare to a similar game.'
+        recommendationZh: '年龄段？需要什么技能水平？与类似游戏比较。'
+      mustUseWords:
+        - 'innovative'
+        - 'however'
+        - 'would definitely recommend'
+      mustUseStructure:
+        - 'At least one sentence using "not only...but also"'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个使用"not only...but also"的句子'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I explain the gameplay clearly enough for someone who has never played?'
+      - 'Did I mention both strengths and weaknesses?'
+      - 'Did I include practical information (platform, price)?'
+      - 'Did I say what skill level or age group it suits?'
+    selfCheckListZh:
+      - '我是否把游戏玩法解释得足够清楚，让没玩过的人也能理解？'
+      - '我是否提到了优点和不足？'
+      - '我是否包含了实用信息（平台、价格）？'
+      - '我是否说了适合什么技能水平或年龄段？'
+    modelAnswer: |
+      What if you could build anything you imagined — a medieval castle, an underground city, or even a working rollercoaster — using nothing but blocks? Welcome to "Minecraft," the game that has captured the imagination of over 200 million players worldwide. It is available on almost every platform and costs around 20 dollars.
+
+      In Minecraft, you explore a randomly generated world made of blocks. You mine resources, craft tools, build structures, and survive against creatures that come out at night. There is no single goal — the game is whatever you make of it. You can play alone or with friends in multiplayer mode.
+
+      What makes Minecraft truly innovative is that it is not only a game but also a creative tool. Players have built replicas of real cities, working computers, and even entire adventure stories inside the game. However, I should mention that the graphics may look outdated compared to modern games, and new players might feel overwhelmed by the lack of instructions at first.
+
+      I would definitely recommend Minecraft to anyone aged 7 and above who enjoys building and exploring. Compared to similar games like Roblox, Minecraft offers more creative freedom and a calmer experience. Whether you are an experienced gamer or a complete beginner, this game has something for everyone.
+    modelAnswerZh: |
+      如果你可以用方块建造任何想象中的东西——中世纪城堡、地下城市，甚至一个能运转的过山车——会怎样？欢迎来到"我的世界"，这款游戏已经吸引了全球超过2亿玩家的想象力。它在几乎所有平台上都可以玩，价格大约20美元。
+
+      在我的世界中，你探索一个随机生成的方块世界。你挖掘资源、制作工具、建造建筑，并在夜晚出没的生物中生存。没有单一的目标——游戏由你来定义。你可以单独玩或在多人模式中与朋友一起玩。
+
+      让我的世界真正创新的是它不仅是一个游戏，而且是一个创意工具。玩家在游戏中建造了真实城市的复制品、能运转的电脑，甚至完整的冒险故事。不过，我应该提一下，与现代游戏相比，画面可能看起来有点过时，新玩家一开始可能会因为缺少指引而感到不知所措。
+
+      我绝对推荐我的世界给7岁及以上喜欢建造和探索的人。与Roblox等类似游戏相比，我的世界提供了更多的创作自由和更平静的体验。无论你是经验丰富的玩家还是完全的初学者，这款游戏都能找到适合你的内容。
+
+  - id: W065
+    type: review
+    title: 'A Mobile App'
+    titleZh: '一款手机应用'
+    prompt: 'You have been using a mobile app that helps you learn something new. Write a review for your class newsletter telling other students about it. Explain what the app does, what is good about it, and whether you think it is worth downloading.'
+    promptZh: '你一直在使用一款帮助你学习新东西的手机应用。为你的班级通讯写一篇评论，告诉其他同学。解释应用做什么、有什么好处，以及你觉得是否值得下载。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the app, say what it does, and whether it is free.'
+        introductionZh: '应用名称、功能，以及是否免费。'
+        summary: 'Describe the main features and how you use it.'
+        summaryZh: '描述主要功能和你如何使用它。'
+        opinion: 'What works well? What could be improved? Use describe-then-evaluate pattern.'
+        opinionZh: '什么做得好？什么可以改进？使用"先描述后评价"模式。'
+        recommendation: 'Who would benefit from this app? Any alternatives?'
+        recommendationZh: '谁会从这个应用中受益？有替代品吗？'
+      mustUseWords:
+        - 'user-friendly'
+        - 'on the other hand'
+        - 'worth downloading'
+      mustUseStructure:
+        - 'At least one sentence with "despite" or "in spite of"'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个使用"despite"或"in spite of"的句子'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I clearly explain what the app does?'
+      - 'Did I include practical details (free/paid, platform)?'
+      - 'Did I give balanced feedback (strengths and weaknesses)?'
+      - 'Did I match my tone to the class newsletter audience?'
+    selfCheckListZh:
+      - '我是否清楚地解释了应用做什么？'
+      - '我是否包含了实用细节（免费/付费、平台）？'
+      - '我是否给出了平衡的反馈（优点和不足）？'
+      - '我的语气是否与班级通讯的读者匹配？'
+    modelAnswer: |
+      Have you ever wished you had a science lab in your pocket? "MEL Chemistry" is a free app available on both iOS and Android that lets you do exactly that. I have been using it for about three months, and I want to share why I think every student should try it.
+
+      The app contains hundreds of virtual chemistry experiments that you can perform by tapping and swiping on your screen. You mix chemicals, heat solutions, and observe reactions — all without any real danger. It also has AR mode, where you can see 3D models of molecules floating above your desk using your phone's camera.
+
+      The interface is incredibly user-friendly, with clear instructions and colourful animations that make even complex reactions easy to understand. Despite being a free app, the quality of the content is impressive. On the other hand, some advanced experiments require a paid subscription, and the AR mode can be slow on older phones.
+
+      I believe MEL Chemistry is definitely worth downloading for anyone who is curious about science. It is perfect for students aged 8-14 who want to explore chemistry before studying it in school. Give it a try — you might just discover a new passion!
+    modelAnswerZh: |
+      你有没有想过口袋里有一个科学实验室？"MEL Chemistry"是一款免费应用，iOS和Android都可以使用，让你真正做到这一点。我已经用了大约三个月，想分享为什么我觉得每个学生都应该试试。
+
+      这款应用包含数百个虚拟化学实验，你可以通过点击和滑动屏幕来操作。你可以混合化学品、加热溶液并观察反应——完全没有真正的危险。它还有AR模式，你可以用手机摄像头看到3D分子模型漂浮在你的桌子上方。
+
+      界面非常友好，有清晰的说明和多彩的动画，使即使复杂的反应也易于理解。尽管是一款免费应用，内容质量却令人印象深刻。另一方面，一些高级实验需要付费订阅，而且AR模式在旧手机上可能比较慢。
+
+      我相信MEL Chemistry绝对值得所有对科学好奇的人下载。它非常适合8-14岁想在学校学习化学之前探索化学的学生。试试吧——你可能会发现一个新的热情！
+
+  - id: W066
+    type: review
+    title: 'A Book Series You Have Been Reading'
+    titleZh: '你一直在读的一套丛书'
+    prompt: 'You have recently been reading a book series and want to encourage others to start it. Write a review for an English-language website explaining what the series is about, why it is special, and which book is the best starting point.'
+    promptZh: '你最近一直在读一套丛书，想鼓励其他人也开始读。为一个英语网站写一篇评论，解释这套丛书讲什么、为什么特别，以及哪本书是最好的起点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the series, the author, and how many books there are. Give your overall verdict.'
+        introductionZh: '丛书名、作者和有多少本书。给出你的总体评价。'
+        summary: 'Describe the world and the main characters without spoiling key twists.'
+        summaryZh: '描述书中的世界和主角，不要剧透关键转折。'
+        opinion: 'Discuss how the series develops. Which book is strongest? Any weaker entries?'
+        opinionZh: '讨论丛书如何发展。哪本书最好？有较弱的吗？'
+        recommendation: 'Where should a new reader start? Who is the target audience?'
+        recommendationZh: '新读者应该从哪里开始？目标读者是谁？'
+      mustUseWords:
+        - 'compelling'
+        - 'whereas'
+        - 'strongly recommend'
+      mustUseStructure:
+        - 'At least one superlative sentence (the best/most/least)'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个最高级句子（最好的/最……的/最不……的）'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I explain the overall premise of the series?'
+      - 'Did I discuss how the series evolves across books?'
+      - 'Did I recommend a starting point for new readers?'
+      - 'Did I avoid spoiling major plot twists?'
+    selfCheckListZh:
+      - '我是否解释了丛书的整体前提？'
+      - '我是否讨论了丛书在各本书之间的发展？'
+      - '我是否为新读者推荐了一个起点？'
+      - '我是否避免了剧透重大情节转折？'
+    modelAnswer: |
+      If you have never heard of "Diary of a Wimpy Kid" by Jeff Kinney, you are missing out on one of the funniest book series ever written. With over 17 books and counting, this series has been making children laugh since 2007 — and I can see why.
+
+      The books follow Greg Heffley, a middle school student who records his daily life in a journal filled with hilarious drawings. Greg is not a hero — he is lazy, makes terrible decisions, and constantly embarrasses himself. But that is exactly what makes him so relatable and entertaining. Each book covers a different adventure, from family road trips to talent shows gone wrong.
+
+      What makes this series so compelling is Jeff Kinney's brilliant combination of text and cartoon illustrations. Whereas most novels rely entirely on words, these books use pictures to deliver many of the funniest jokes. The earlier books, especially "Rodrick Rules," are the strongest in the series. Some of the more recent entries feel slightly repetitive, but they still deliver plenty of laughs.
+
+      I would strongly recommend starting with the very first book, "Diary of a Wimpy Kid," as it introduces all the main characters. This series is the most enjoyable read for ages 8-13, perfect for reluctant readers who prefer short chapters and lots of pictures.
+    modelAnswerZh: |
+      如果你还没听说过 Jeff Kinney 的《小屁孩日记》，你错过了有史以来最有趣的丛书之一。这套丛书已有超过17本书，自2007年以来一直让孩子们开怀大笑——我能理解原因。
+
+      这些书记录了中学生 Greg Heffley 的日常生活，他用充满搞笑插图的日记本记录一切。Greg 不是英雄——他懒惰、做出糟糕的决定、不断让自己出丑。但这正是他如此让人共鸣和有趣的原因。每本书讲述一个不同的冒险，从家庭公路旅行到搞砸的才艺表演。
+
+      让这套丛书如此引人入胜的是 Jeff Kinney 对文字和卡通插图的精妙结合。大多数小说完全依赖文字，而这些书用图片来传递许多最有趣的笑话。早期的书，特别是《Rodrick Rules》，是系列中最强的。一些较近的作品感觉有点重复，但仍然带来了很多笑声。
+
+      我强烈推荐从第一本《小屁孩日记》开始，因为它介绍了所有主要角色。这套丛书是8-13岁最有趣的读物，非常适合喜欢短章节和大量图片的不爱读书的孩子。
+
+  - id: W067
+    type: review
+    title: 'A Movie Sequel or Remake'
+    titleZh: '一部电影续集或翻拍'
+    prompt: 'You recently watched a movie sequel or remake. Write a review for your school magazine comparing it to the original. Explain whether it was as good as, better than, or worse than the original, and support your opinion with examples.'
+    promptZh: '你最近看了一部电影续集或翻拍版。为校刊写一篇评论，将其与原作进行比较。解释它是否和原作一样好、更好还是更差，并用例子支持你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the film and say whether it is a sequel or remake. Give your overall comparison.'
+        introductionZh: '电影名并说明是续集还是翻拍。给出你的总体比较。'
+        summary: 'Briefly describe what the sequel/remake is about. How does it continue or change the story?'
+        summaryZh: '简要描述续集/翻拍的内容。它如何延续或改变了故事？'
+        opinion: 'Compare at least two aspects (acting, story, effects, music). Use comparison language.'
+        opinionZh: '比较至少两个方面（演技、故事、特效、音乐）。使用比较语言。'
+        recommendation: 'Should viewers watch the original first? Who would enjoy this version?'
+        recommendationZh: '观众是否应该先看原作？谁会喜欢这个版本？'
+      mustUseWords:
+        - 'outstanding'
+        - 'compared to'
+        - 'recommend'
+      mustUseStructure:
+        - 'At least two comparison sentences (comparative + superlative)'
+        - 'Use "Unlike" or "While" at least once'
+      mustUseStructureZh:
+        - '至少两个比较句（比较级+最高级）'
+        - '至少使用一次"Unlike"或"While"'
+    selfCheckList:
+      - 'Did I clearly compare the new film to the original?'
+      - 'Did I use specific examples to support my comparisons?'
+      - 'Did I avoid just listing similarities and differences?'
+      - 'Did I say whether viewers need to see the original first?'
+    selfCheckListZh:
+      - '我是否清楚地将新电影与原作进行了比较？'
+      - '我是否用具体例子支持我的比较？'
+      - '我是否避免了只是列举相似和不同之处？'
+      - '我是否说了观众是否需要先看原作？'
+    modelAnswer: |
+      Can a sequel ever surpass the original? In the case of "Toy Story 2," the answer is a resounding yes. This Pixar classic takes the magic of the first film and elevates it to new heights, proving that sometimes the best stories come second.
+
+      While the first Toy Story focused on the rivalry between Woody and Buzz, the sequel explores a deeper theme: what happens when a toy is no longer played with? Woody is stolen by a toy collector who plans to sell him to a museum in Japan. Buzz and the gang must rescue him — but the real conflict is inside Woody's heart.
+
+      Compared to the original, "Toy Story 2" features more emotional depth and outstanding character development. The scene where Jessie remembers being abandoned by her owner is the most moving moment in the entire Pixar collection. Unlike the first film, which is primarily a buddy comedy, this sequel makes you laugh AND cry. The animation is also noticeably sharper, with richer textures and more detailed backgrounds.
+
+      I would recommend watching the original first to understand the characters, but "Toy Story 2" works well on its own too. This is a must-watch for anyone who has ever loved a toy — which is everyone.
+    modelAnswerZh: |
+      续集能超越原作吗？在《玩具总动员2》的情况下，答案是响亮的"是"。这部皮克斯经典将第一部的魔力提升到新的高度，证明有时最好的故事排在第二位。
+
+      第一部玩具总动员聚焦于胡迪和巴斯光年之间的竞争，而续集探索了一个更深的主题：当一个玩具不再被玩耍时会怎样？胡迪被一个玩具收藏家偷走，他计划把胡迪卖到日本的博物馆。巴斯和伙伴们必须去救他——但真正的冲突在胡迪的内心。
+
+      与原作相比，《玩具总动员2》具有更多的情感深度和出色的角色发展。翠丝回忆被主人抛弃的场景是整个皮克斯系列中最感人的时刻。与主要是伙伴喜剧的第一部不同，这部续集让你又笑又哭。动画也明显更加精致，纹理更丰富，背景更细致。
+
+      我建议先看原作来了解角色，但《玩具总动员2》独立观看也很好。这是每个曾经爱过一个玩具的人的必看之作——也就是每个人。
+
+  - id: W068
+    type: review
+    title: 'A Board Game or Card Game'
+    titleZh: '一款桌游或纸牌游戏'
+    prompt: 'You have been playing a board game or card game with your family or friends. Write a review for a children''s gaming website. Describe the rules briefly, say what makes it fun, and recommend who should try it.'
+    promptZh: '你一直在和家人或朋友玩一款桌游或纸牌游戏。为一个儿童游戏网站写一篇评论。简要描述规则、说什么让它有趣，并推荐谁应该试试。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the game, number of players, and playing time. Start with an engaging hook.'
+        introductionZh: '游戏名、人数和游戏时间。以一个引人入胜的开头。'
+        summary: 'Explain the basic rules and objective. Keep it simple and clear.'
+        summaryZh: '解释基本规则和目标。保持简洁明了。'
+        opinion: 'What makes this game special? Any drawbacks? Balance praise and criticism.'
+        opinionZh: '什么让这款游戏特别？有什么不足吗？平衡赞美和批评。'
+        recommendation: 'Best for what age group? Good for families, friends, or both?'
+        recommendationZh: '最适合什么年龄段？适合家庭、朋友，还是两者都适合？'
+      mustUseWords:
+        - 'entertaining'
+        - 'despite'
+        - 'thoroughly recommend'
+      mustUseStructure:
+        - 'At least one conditional sentence (If you enjoy..., you will love...)'
+        - 'Four paragraphs: Introduction, Summary, Opinion, Recommendation'
+      mustUseStructureZh:
+        - '至少一个条件句（如果你喜欢……，你会喜欢……）'
+        - '四个段落：引言、概要、评价、推荐'
+    selfCheckList:
+      - 'Did I explain the rules clearly enough for someone who has never played?'
+      - 'Did I say what makes the game fun and unique?'
+      - 'Did I mention the number of players and how long a game takes?'
+      - 'Did I include at least one constructive criticism?'
+    selfCheckListZh:
+      - '我是否把规则解释得足够清楚，让没玩过的人也能理解？'
+      - '我是否说了是什么让游戏有趣和独特？'
+      - '我是否提到了人数和一局游戏需要多长时间？'
+      - '我是否包含了至少一个建设性的批评？'
+    modelAnswer: |
+      Picture this: you are a detective trying to solve a mystery, but every clue you find creates two more questions. That is exactly what playing "Cluedo" feels like — and it is one of the most entertaining board games I have ever played.
+
+      Cluedo is a classic mystery game for 3-6 players that takes about 45 minutes to complete. A murder has taken place in a mansion, and each player must work out WHO committed the crime, WHAT weapon was used, and WHERE it happened. You move around the board, enter different rooms, and make guesses. Other players secretly show you cards to eliminate possibilities.
+
+      What makes Cluedo special is the thrill of deduction — that wonderful moment when you suddenly realise you have figured out the answer before everyone else. Despite being invented in 1949, the game still feels fresh and exciting today. My only criticism is that with only three players, there are fewer clues to work with, which can make the game feel slightly less strategic.
+
+      I would thoroughly recommend Cluedo for families with children aged 8 and above. If you enjoy mystery stories and detective work, you will love this game. It is also brilliant for rainy afternoons when you need something fun to do indoors.
+    modelAnswerZh: |
+      想象一下：你是一名侦探，试图解开一个谜团，但你找到的每条线索都会产生两个新问题。这正是玩"妙探寻凶"的感觉——它是我玩过的最有趣的桌游之一。
+
+      妙探寻凶是一款经典的推理游戏，3-6人玩，大约需要45分钟。一栋豪宅里发生了一起谋杀案，每个玩家必须找出谁犯了罪、用了什么武器、在哪里发生的。你在棋盘上移动、进入不同的房间并做出猜测。其他玩家秘密地给你看牌来排除可能性。
+
+      让妙探寻凶特别的是推理的刺激——当你突然意识到你在所有人之前就找到了答案的那个美妙时刻。尽管这款游戏发明于1949年，今天玩起来仍然感觉新鲜和刺激。我唯一的批评是只有三个玩家时，可以使用的线索较少，这可能使游戏感觉策略性略弱。
+
+      我会全力推荐妙探寻凶给有8岁及以上孩子的家庭。如果你喜欢推理故事和侦探工作，你会喜欢这款游戏。它也非常适合下雨天需要在室内找些有趣事情做的时候。
+
+  - id: W069
+    type: review
+    title: 'A TV Series for Young Viewers'
+    titleZh: '一部青少年电视剧'
+    prompt: 'You have been watching a TV series aimed at young viewers that you think is excellent. Write a review for an English-language entertainment website. Describe what the show is about, explain what makes it worth watching, and say who the ideal audience is.'
+    promptZh: '你一直在看一部面向青少年的电视剧，你觉得它很棒。为一个英语娱乐网站写一篇评论。描述节目讲什么、解释为什么值得看，并说谁是理想的观众。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q09
+    scaffold:
+      structure:
+        introduction: 'Name the show, the platform, and give your one-sentence verdict.'
+        introductionZh: '节目名、平台，用一句话给出评价。'
+        summary: 'Describe the premise and main characters. What genre is it?'
+        summaryZh: '描述前提和主要角色。什么类型？'
+        opinion: 'Discuss acting, plot, and pacing. What is the strongest element? Any weak episodes?'
+        opinionZh: '讨论演技、情节和节奏。最强的元素是什么？有较弱的集数吗？'
+        recommendation: 'Age suitability? Number of episodes? Binge-worthy or watch one at a time?'
+        recommendationZh: '适合年龄？集数？适合连看还是一集一集看？'
+      mustUseWords:
+        - 'gripping'
+        - 'nevertheless'
+        - 'well worth watching'
+      mustUseStructure:
+        - 'A strong opening that does not begin with "I am going to review..."'
+        - 'A memorable closing sentence'
+      mustUseStructureZh:
+        - '一个不以"我要评论……"开头的有力开头'
+        - '一个令人难忘的结尾句'
+    selfCheckList:
+      - 'Did I start with an engaging opening?'
+      - 'Did I describe the show clearly for someone who has never seen it?'
+      - 'Did I discuss specific elements (acting, plot, music)?'
+      - 'Did I end with a memorable sentence?'
+    selfCheckListZh:
+      - '我是否以引人入胜的开头开始？'
+      - '我是否为没看过的人清楚地描述了这个节目？'
+      - '我是否讨论了具体的元素（演技、情节、音乐）？'
+      - '我是否以令人难忘的句子结尾？'
+    modelAnswer: |
+      Have you ever wondered what it would be like to attend a school for witches? "The Worst Witch" on Netflix answers that question in the most delightful way possible. Based on the beloved books by Jill Murphy, this British series is a hidden gem that deserves far more attention.
+
+      The show follows Mildred Hubble, an ordinary girl who accidentally lands at Miss Cackle's Academy for Witches. Mildred is enthusiastic but clumsy, and her spells almost always go wrong. Each episode combines magical adventures with relatable school problems — friendship drama, strict teachers, and the pressure to fit in.
+
+      What makes the series so gripping is the warmth and humour of its characters. The young actors are excellent, especially Bella Ramsey as Mildred. The magical effects are impressive for a children's show, and the plots cleverly mix comedy with genuine emotion. Nevertheless, a few episodes in the second series feel slightly rushed, with storylines that could have been developed further.
+
+      The show has five series with about 12 episodes each, making it well worth watching over a few weekends. It is suitable for viewers aged 6-12. Start watching tonight — and do not blame me when you cannot stop.
+    modelAnswerZh: |
+      你有没有想过上一所女巫学校会是什么样？Netflix上的《最差女巫》以最令人愉快的方式回答了这个问题。根据 Jill Murphy 的经典儿童书改编，这部英国系列是一颗值得更多关注的隐藏宝石。
+
+      节目跟随 Mildred Hubble，一个普通女孩意外降落在 Cackle 小姐的女巫学院。Mildred 热情但笨手笨脚，她的咒语几乎总是出错。每一集将魔法冒险与让人感同身受的学校问题结合——友谊纠纷、严厉的老师和融入集体的压力。
+
+      让这个系列如此引人入胜的是角色的温暖和幽默。年轻演员们很出色，特别是扮演 Mildred 的 Bella Ramsey。对于儿童节目来说，魔法效果令人印象深刻，情节巧妙地将喜剧与真挚的情感融合在一起。然而，第二季中有几集感觉有些仓促，故事线本可以进一步发展。
+
+      这个节目有五季，每季约12集，非常值得用几个周末来观看。适合6-12岁的观众。今晚就开始看吧——如果你停不下来，可别怪我。

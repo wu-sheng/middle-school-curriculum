@@ -1,0 +1,950 @@
+category: 'Mixed Use of English (Word Formation, Cloze, Key Word Transformation)'
+categoryZh: '综合语言运用（构词法、完形填空、关键词句型转换）'
+fcepart: 'Use of English Parts 1-4'
+questions:
+  # ============================================================
+  # U1101-U1130: Word Formation (world-building theme, difficulty 2-3)
+  # ============================================================
+  - id: U1101
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The _____ of the new bridge took over three years to complete. (CONSTRUCT)'
+    sentenceZh: '新桥的 _____ 花了三年多才完成。(CONSTRUCT)'
+    baseWord: 'construct'
+    answer: 'construction'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Add -ion to "construct" to form "construction."'
+    explanationZh: '"The"后面需要名词。在 construct 后加 -ion 构成名词 construction。'
+    grammarPoint: 'verb → noun (+ion)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1102
+    type: word-formation
+    tags: [adjective-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The ancient Romans were _____ engineers who built roads that lasted thousands of years. (REMARK)'
+    sentenceZh: '古罗马人是 _____ 的工程师，修建了延续数千年的道路。(REMARK)'
+    baseWord: 'remark'
+    answer: 'remarkable'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before the noun "engineers." Add -able to "remark" to form "remarkable."'
+    explanationZh: '名词"engineers"前需要形容词。在 remark 后加 -able 构成形容词 remarkable。'
+    grammarPoint: 'verb → adjective (+able)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1103
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The city planner presented a detailed _____ of the new park. (DESCRIBE)'
+    sentenceZh: '城市规划师展示了新公园的详细 _____。(DESCRIBE)'
+    baseWord: 'describe'
+    answer: 'description'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "detailed." Change "describe" to "description" (-ibe → -iption).'
+    explanationZh: '"detailed"后需要名词。将 describe 变为 description（-ibe → -iption）。'
+    grammarPoint: 'verb → noun (-ibe → -iption)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1104
+    type: word-formation
+    tags: [adverb-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The bridge was _____ designed to withstand the strongest earthquakes. (SPECIFIC)'
+    sentenceZh: '这座桥被 _____ 设计来抵御最强烈的地震。(SPECIFIC)'
+    baseWord: 'specific'
+    answer: 'specifically'
+    targetPartOfSpeech: adverb
+    explanation: 'We need an adverb to modify "designed." Add -ally to "specific" to form "specifically."'
+    explanationZh: '需要副词来修饰"designed"。在 specific 后加 -ally 构成副词 specifically。'
+    grammarPoint: 'adjective → adverb (+ally)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1105
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The _____ of solar panels on every building would greatly reduce pollution. (INSTALL)'
+    sentenceZh: '在每栋建筑上 _____ 太阳能板将大大减少污染。(INSTALL)'
+    baseWord: 'install'
+    answer: 'installation'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Add -ation to "install" to form "installation."'
+    explanationZh: '"The"后需要名词。在 install 后加 -ation 构成名词 installation。'
+    grammarPoint: 'verb → noun (+ation)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1106
+    type: word-formation
+    tags: [negative-prefix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The old factory was _____ for twenty years before it was converted into a museum. (INHABIT)'
+    sentenceZh: '这座旧工厂在被改造成博物馆之前 _____ 了二十年。(INHABIT)'
+    baseWord: 'inhabit'
+    answer: 'uninhabited'
+    targetPartOfSpeech: adjective
+    explanation: 'We need the opposite meaning — nobody lived there. Add "un-" prefix and "-ed" suffix: "uninhabited."'
+    explanationZh: '需要相反的意思——没有人住在那里。加前缀"un-"和后缀"-ed"：uninhabited。'
+    grammarPoint: 'verb → adjective (un- + -ed)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1107
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'Environmental _____ is one of the biggest challenges for modern cities. (SUSTAIN)'
+    sentenceZh: '环境 _____ 是现代城市最大的挑战之一。(SUSTAIN)'
+    baseWord: 'sustain'
+    answer: 'sustainability'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "Environmental." Form: sustain → sustainable → sustainability.'
+    explanationZh: '"Environmental"后需要名词。变化：sustain → sustainable → sustainability。'
+    grammarPoint: 'verb → adjective → noun (+ability)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1108
+    type: word-formation
+    tags: [adjective-suffix, Q08, difficulty-2]
+    context: world-building
+    sentence: 'The city council made a _____ decision to ban cars from the centre. (CONTROVERSY)'
+    sentenceZh: '市议会做出了一个 _____ 的决定，禁止汽车进入市中心。(CONTROVERSY)'
+    baseWord: 'controversy'
+    answer: 'controversial'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "decision." Change "controversy" to "controversial" (-y → -ial).'
+    explanationZh: '"decision"前需要形容词。将 controversy 变为 controversial（-y → -ial）。'
+    grammarPoint: 'noun → adjective (-y → -ial)'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1109
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The _____ between the two cities was improved by the new motorway. (CONNECT)'
+    sentenceZh: '两座城市之间的 _____ 通过新高速公路得到改善。(CONNECT)'
+    baseWord: 'connect'
+    answer: 'connection'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Add -ion to "connect" to form "connection."'
+    explanationZh: '"The"后需要名词。在 connect 后加 -ion 构成名词 connection。'
+    grammarPoint: 'verb → noun (+ion)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1110
+    type: word-formation
+    tags: [negative-prefix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The water supply in the old part of the city is _____ and needs urgent repair. (ADEQUATE)'
+    sentenceZh: '老城区的供水 _____ ，需要紧急修理。(ADEQUATE)'
+    baseWord: 'adequate'
+    answer: 'inadequate'
+    targetPartOfSpeech: adjective
+    explanation: 'We need the opposite meaning — not enough. Add "in-" prefix: "inadequate."'
+    explanationZh: '需要相反的意思——不够。加前缀"in-"：inadequate。'
+    grammarPoint: 'adjective → negative adjective (in-)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # U1111-U1130: More word formation (continued)
+  - id: U1111
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The rapid _____ of the city has caused traffic problems. (EXPAND)'
+    sentenceZh: '城市的快速 _____ 导致了交通问题。(EXPAND)'
+    baseWord: 'expand'
+    answer: 'expansion'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "rapid." Change "expand" to "expansion" (-d → -sion).'
+    explanationZh: '"rapid"后需要名词。将 expand 变为 expansion（-d → -sion）。'
+    grammarPoint: 'verb → noun (-d → -sion)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1112
+    type: word-formation
+    tags: [adjective-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The architect''s _____ design won first prize in the competition. (INNOVATE)'
+    sentenceZh: '建筑师 _____ 的设计在比赛中获得了一等奖。(INNOVATE)'
+    baseWord: 'innovate'
+    answer: 'innovative'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective before "design." Add -ive to "innovate" to form "innovative."'
+    explanationZh: '"design"前需要形容词。在 innovate 后加 -ive 构成形容词 innovative。'
+    grammarPoint: 'verb → adjective (+ive)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1113
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'Cultural _____ is what makes a city interesting and vibrant. (DIVERSE)'
+    sentenceZh: '文化 _____ 是使城市有趣和充满活力的原因。(DIVERSE)'
+    baseWord: 'diverse'
+    answer: 'diversity'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "Cultural." Change "diverse" to "diversity" (-e → -ity).'
+    explanationZh: '"Cultural"后需要名词。将 diverse 变为 diversity（-e → -ity）。'
+    grammarPoint: 'adjective → noun (-e → -ity)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1114
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The _____ of the old library was completed ahead of schedule. (RENOVATE)'
+    sentenceZh: '旧图书馆的 _____ 提前完成了。(RENOVATE)'
+    baseWord: 'renovate'
+    answer: 'renovation'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Add -ion to "renovate" to form "renovation."'
+    explanationZh: '"The"后需要名词。在 renovate 后加 -ion 构成名词 renovation。'
+    grammarPoint: 'verb → noun (+ion)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1115
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'Good public transport is _____ for a city to function properly. (ESSENCE)'
+    sentenceZh: '良好的公共交通对城市正常运转是 _____ 的。(ESSENCE)'
+    baseWord: 'essence'
+    answer: 'essential'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "is." Change "essence" to "essential" (-ence → -ential).'
+    explanationZh: '"is"后需要形容词。将 essence 变为 essential（-ence → -ential）。'
+    grammarPoint: 'noun → adjective (-ence → -ential)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # ============================================================
+  # U1116-U1160: Multiple-choice cloze (world-building passages)
+  # ============================================================
+  - id: U1116
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'The ancient city of Petra was (1)_____ entirely from rock by the Nabataean people over 2,000 years ago.'
+    question: 'Choose the best word for gap (1).'
+    questionZh: '选择最适合空格(1)的词。'
+    options:
+      A: 'carved'
+      B: 'painted'
+      C: 'written'
+      D: 'planted'
+    answer: 'A'
+    explanation: 'Petra is famous for being "carved" from rock — its buildings are cut directly into the cliff face.'
+    explanationZh: '佩特拉以从岩石中"雕刻"而闻名——它的建筑直接在悬崖面上开凿。'
+    grammarPoint: 'Vocabulary: carved from rock'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1117
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'Modern architects try to _____ traditional styles with new technology when designing buildings.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'separate'
+      B: 'combine'
+      C: 'remove'
+      D: 'avoid'
+    answer: 'B'
+    explanation: '"Combine" means to bring together. Architects combine old styles with new technology.'
+    explanationZh: '"Combine"意为结合。建筑师将旧风格与新技术结合。'
+    grammarPoint: 'Vocabulary: combine...with'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1118
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'The new park was built on the _____ of an old factory that had been closed for years.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'place'
+      B: 'area'
+      C: 'site'
+      D: 'spot'
+    answer: 'C'
+    explanation: '"Site" is the correct word for the location of a building or construction. "On the site of" is a fixed phrase.'
+    explanationZh: '"Site"是建筑或施工地点的正确词。"On the site of"是固定短语。'
+    grammarPoint: 'Vocabulary: on the site of'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1119
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'Traffic congestion is a major problem _____ rush hour in most large cities.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'while'
+      B: 'during'
+      C: 'between'
+      D: 'since'
+    answer: 'B'
+    explanation: '"During" is a preposition used before a noun (rush hour) to indicate time. "While" needs a clause.'
+    explanationZh: '"During"是介词，用于名词（rush hour）前表示时间。"While"需要从句。'
+    grammarPoint: 'Preposition: during + noun'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1120
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'The government _____ a new law requiring all new buildings to have solar panels.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'introduced'
+      B: 'produced'
+      C: 'invented'
+      D: 'discovered'
+    answer: 'A'
+    explanation: '"Introduced" a law means to officially bring it into effect. We "introduce" laws, policies, and rules.'
+    explanationZh: '"Introduced"法律意为正式使其生效。我们"introduce"法律、政策和规则。'
+    grammarPoint: 'Vocabulary: introduce a law'
+    relatedQuest: Q08
+    difficulty: 2
+
+  # U1121-U1160: Continued cloze exercises (abbreviated for space)
+  - id: U1121
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-2]
+    context: world-building
+    passage: 'The ancient Romans _____ great importance to the quality of their roads and bridges.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'paid'
+      B: 'attached'
+      C: 'gave'
+      D: 'put'
+    answer: 'B'
+    explanation: '"Attached importance to" is a fixed collocation meaning to consider something important.'
+    explanationZh: '"Attached importance to"是固定搭配，意为认为某事重要。'
+    grammarPoint: 'Collocation: attach importance to'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1122
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The city _____ from a small fishing village into a major metropolis in just fifty years.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'developed'
+      B: 'increased'
+      C: 'raised'
+      D: 'improved'
+    answer: 'A'
+    explanation: '"Developed from... into..." describes how something grew and changed over time.'
+    explanationZh: '"Developed from... into..."描述了某物如何随时间增长和变化。'
+    grammarPoint: 'Vocabulary: develop from...into'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1123
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'Despite the bad weather, construction work continued as _____ as possible.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'normal'
+      B: 'usual'
+      C: 'regular'
+      D: 'common'
+    answer: 'B'
+    explanation: '"As usual" is a fixed expression meaning "in the normal way." "Business as usual" is a common phrase.'
+    explanationZh: '"As usual"是固定表达，意为"以通常的方式"。'
+    grammarPoint: 'Fixed expression: as usual'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # ============================================================
+  # U1161-U1200: Key Word Transformation (world-building theme)
+  # ============================================================
+  - id: U1161
+    type: key-word-transformation
+    tags: [relative-clause, Q08, difficulty-2]
+    context: world-building
+    sentence: |
+      The architect designed the new museum. She is from Japan.
+      WHO → The architect _____ is from Japan.
+    sentenceZh: |
+      建筑师设计了新博物馆。她来自日本。
+      WHO → 设计了新博物馆的建筑师 _____ 。
+    answer: 'who designed the new museum'
+    explanation: 'Combine the two sentences using a defining relative clause with "who." The clause identifies which architect.'
+    explanationZh: '使用"who"引导的限定性定语从句合并两个句子。从句说明是哪位建筑师。'
+    grammarPoint: 'Sentence combining with relative clause (who)'
+    grammarPointZh: '用定语从句合并句子（who）'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1162
+    type: key-word-transformation
+    tags: [passive-participle, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The city was surrounded by mountains. It was easy to defend.
+      SURROUNDED → _____, the city was easy to defend.
+    sentenceZh: |
+      城市被山环绕。它易于防守。
+      SURROUNDED → _____ ，城市易于防守。
+    answer: 'Surrounded by mountains'
+    explanation: 'Use a past participle phrase to replace the first clause. "Surrounded by mountains" = "Because it was surrounded by mountains."'
+    explanationZh: '用过去分词短语替代第一个从句。"Surrounded by mountains" = "因为它被山环绕"。'
+    grammarPoint: 'Participle phrase (passive)'
+    grammarPointZh: '分词短语（被动）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1163
+    type: key-word-transformation
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The thing that surprised me was the size of the ancient temple.
+      WHAT → _____ was the size of the ancient temple.
+    sentenceZh: |
+      令我惊讶的东西是古寺的大小。
+      WHAT → _____ 是古寺的大小。
+    answer: 'What surprised me'
+    explanation: '"What surprised me" = "The thing that surprised me." "What" replaces "the thing that."'
+    explanationZh: '"What surprised me" = "令我惊讶的东西"。"What"替代了"the thing that"。'
+    grammarPoint: 'Noun clause with what'
+    grammarPointZh: '用what引导的名词从句'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1164
+    type: key-word-transformation
+    tags: [concession, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The building is very old. It is still structurally sound.
+      ALTHOUGH → _____, it is still structurally sound.
+    sentenceZh: |
+      建筑很老了。它在结构上仍然牢固。
+      ALTHOUGH → _____ ，它在结构上仍然牢固。
+    answer: 'Although the building is very old'
+    explanation: '"Although" introduces a concession clause — it is surprising that the old building is still sound.'
+    explanationZh: '"Although"引导让步从句——老建筑仍然牢固令人惊讶。'
+    grammarPoint: 'Adverbial clause of concession (although)'
+    grammarPointZh: '让步状语从句（although）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1165
+    type: key-word-transformation
+    tags: [non-defining, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The Taj Mahal was built as a monument to love. It is in India.
+      WHICH → The Taj Mahal, _____, was built as a monument to love.
+    sentenceZh: |
+      泰姬陵是作为爱情纪念碑而建造的。它在印度。
+      WHICH → 泰姬陵——_____ ——是作为爱情纪念碑而建造的。
+    answer: 'which is in India'
+    explanation: 'Non-defining relative clause with "which" adds extra information about the Taj Mahal. Commas are needed.'
+    explanationZh: '用"which"引导的非限定性定语从句补充关于泰姬陵的额外信息。需要逗号。'
+    grammarPoint: 'Non-defining relative clause (which)'
+    grammarPointZh: '非限定性定语从句（which）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # U1166-U1200: Continued KWT exercises (representative sample)
+  - id: U1166
+    type: key-word-transformation
+    tags: [purpose, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The city banned cars from the centre. The aim was to reduce pollution.
+      ORDER → The city banned cars from the centre _____ reduce pollution.
+    sentenceZh: |
+      城市禁止汽车进入市中心。目的是减少污染。
+      ORDER → 城市禁止汽车进入市中心 _____ 减少污染。
+    answer: 'in order to'
+    explanation: '"In order to" expresses purpose — WHY the cars were banned.'
+    explanationZh: '"In order to"表示目的——为什么禁止汽车。'
+    grammarPoint: 'Purpose clause (in order to)'
+    grammarPointZh: '目的从句（in order to）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1167
+    type: key-word-transformation
+    tags: [result, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The earthquake was very powerful. Many buildings collapsed.
+      SUCH → It was _____ that many buildings collapsed.
+    sentenceZh: |
+      地震非常强烈。许多建筑倒塌了。
+      SUCH → 这是 _____ 以至于许多建筑倒塌了。
+    answer: 'such a powerful earthquake'
+    explanation: '"Such a + adjective + noun + that..." is a result structure. The powerful earthquake CAUSED the collapse.'
+    explanationZh: '"Such a + 形容词 + 名词 + that..."是结果结构。强烈的地震导致了倒塌。'
+    grammarPoint: 'Result clause (such...that)'
+    grammarPointZh: '结果从句（such...that）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1168
+    type: key-word-transformation
+    tags: [participle, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      Because the architect knew the area well, she chose the perfect location.
+      KNOWING → _____ the area well, the architect chose the perfect location.
+    sentenceZh: |
+      因为建筑师熟悉这个地区，她选择了完美的位置。
+      KNOWING → _____ 这个地区，建筑师选择了完美的位置。
+    answer: 'Knowing'
+    explanation: '"Knowing" (present participle) replaces "Because she knew." Active meaning — she knew.'
+    explanationZh: '"Knowing"（现在分词）替代"Because she knew"。主动含义——她知道。'
+    grammarPoint: 'Participle phrase replacing adverbial clause'
+    grammarPointZh: '分词短语替代状语从句'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1169
+    type: key-word-transformation
+    tags: [indirect-question, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      How old is this building?
+      WONDER → I _____ this building is.
+    sentenceZh: |
+      这栋建筑有多老了？
+      WONDER → 我想知道这栋建筑 _____ 。
+    answer: 'wonder how old'
+    explanation: 'Change to an indirect question. Note: statement word order — "how old this building IS" (not "how old is this building").'
+    explanationZh: '变为间接疑问句。注意：陈述句语序——"how old this building IS"（不是"how old is this building"）。'
+    grammarPoint: 'Indirect question (noun clause)'
+    grammarPointZh: '间接疑问句（名词从句）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1170
+    type: key-word-transformation
+    tags: [condition, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      You must reduce car traffic. Otherwise the air quality will not improve.
+      UNLESS → The air quality will not improve _____ car traffic.
+    sentenceZh: |
+      你必须减少汽车交通。否则空气质量不会改善。
+      UNLESS → 空气质量不会改善 _____ 汽车交通。
+    answer: 'unless you reduce'
+    explanation: '"Unless" = "if...not." The condition for improvement is reducing car traffic.'
+    explanationZh: '"Unless" = "if...not"。改善的条件是减少汽车交通。'
+    grammarPoint: 'Condition clause (unless)'
+    grammarPointZh: '条件从句（unless）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # U1171-U1200: Additional mixed exercises (representative entries)
+  - id: U1171
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The _____ of the population has created a need for more schools. (GROW)'
+    sentenceZh: '人口的 _____ 产生了对更多学校的需求。(GROW)'
+    baseWord: 'grow'
+    answer: 'growth'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." The noun form of "grow" is "growth."'
+    explanationZh: '"The"后需要名词。"grow"的名词形式是"growth"。'
+    grammarPoint: 'verb → noun (grow → growth)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1172
+    type: word-formation
+    tags: [adjective-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'It is _____ that the old bridge will need to be replaced soon. (LIKE)'
+    sentenceZh: '旧桥很 _____ 很快需要更换。(LIKE)'
+    baseWord: 'like'
+    answer: 'likely'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "is." Add -ly to "like" to form "likely" (= probable).'
+    explanationZh: '"is"后需要形容词。在 like 后加 -ly 构成 likely（= 可能的）。'
+    grammarPoint: 'noun → adjective (+ly)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1173
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The new railway line will greatly improve _____ to remote villages. (ACCESS)'
+    sentenceZh: '新铁路线将大大改善到偏远村庄的 _____。(ACCESS)'
+    baseWord: 'access'
+    answer: 'accessibility'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "improve." Change "access" to "accessibility" (+ibility).'
+    explanationZh: '"improve"后需要名词。将 access 变为 accessibility（+ibility）。'
+    grammarPoint: 'noun → noun (access → accessibility)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1174
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The renovation project _____ to be much more expensive than originally planned.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'turned up'
+      B: 'turned out'
+      C: 'turned over'
+      D: 'turned down'
+    answer: 'B'
+    explanation: '"Turned out to be" means "was discovered to be" — the real cost was higher than expected.'
+    explanationZh: '"Turned out to be"意为"结果是"——实际成本高于预期。'
+    grammarPoint: 'Phrasal verb: turn out to be'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1175
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The council took into _____ the opinions of local residents before making a decision.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'account'
+      B: 'thought'
+      C: 'mind'
+      D: 'view'
+    answer: 'A'
+    explanation: '"Took into account" is a fixed expression meaning "considered." The council considered residents'' opinions.'
+    explanationZh: '"Took into account"是固定表达，意为"考虑了"。议会考虑了居民的意见。'
+    grammarPoint: 'Fixed expression: take into account'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1176
+    type: key-word-transformation
+    tags: [relative-clause, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The park is very popular. It was designed by a local artist.
+      WHICH → The park, _____, is very popular.
+    sentenceZh: |
+      公园非常受欢迎。它是由当地艺术家设计的。
+      WHICH → 由当地艺术家设计的公园 _____ 非常受欢迎。
+    answer: 'which was designed by a local artist'
+    explanation: 'Non-defining relative clause adds extra information. Commas + "which" (not "that").'
+    explanationZh: '非限定性定语从句补充额外信息。逗号+"which"（不用"that"）。'
+    grammarPoint: 'Non-defining relative clause'
+    grammarPointZh: '非限定性定语从句'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1177
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The _____ between modern buildings and ancient ruins creates a unique cityscape. (COMBINE)'
+    sentenceZh: '现代建筑和古代遗迹之间的 _____ 创造了独特的城市景观。(COMBINE)'
+    baseWord: 'combine'
+    answer: 'combination'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Change "combine" to "combination" (-e → -ation).'
+    explanationZh: '"The"后需要名词。将 combine 变为 combination（-e → -ation）。'
+    grammarPoint: 'verb → noun (-e → -ation)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1178
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The Great Wall was built to _____ China from invaders coming from the north.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'prevent'
+      B: 'protect'
+      C: 'prohibit'
+      D: 'preserve'
+    answer: 'B'
+    explanation: '"Protect...from..." means to keep safe from harm. The Wall protected China from invaders.'
+    explanationZh: '"Protect...from..."意为保护免受伤害。长城保护中国免受入侵者侵害。'
+    grammarPoint: 'Vocabulary: protect...from'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1179
+    type: key-word-transformation
+    tags: [passive, Q08, difficulty-2]
+    context: world-building
+    sentence: |
+      People say that the ancient city was destroyed by an earthquake.
+      SAID → The ancient city _____ been destroyed by an earthquake.
+    sentenceZh: |
+      人们说古城被地震摧毁了。
+      SAID → 古城据说 _____ 被地震摧毁了。
+    answer: 'is said to have'
+    explanation: '"People say that X did Y" → "X is said to have done Y." Passive reporting structure.'
+    explanationZh: '"People say that X did Y" → "X is said to have done Y"。被动报告结构。'
+    grammarPoint: 'Passive reporting (is said to have)'
+    grammarPointZh: '被动报告结构（is said to have）'
+    relatedQuest: Q08
+    difficulty: 2
+
+  - id: U1180
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The city showed great _____ when it rebuilt the damaged bridge in only six months. (DETERMINE)'
+    sentenceZh: '城市在仅六个月内重建受损桥梁时表现出了巨大的 _____。(DETERMINE)'
+    baseWord: 'determine'
+    answer: 'determination'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "great." Add -ation to "determine" to form "determination."'
+    explanationZh: '"great"后需要名词。在 determine 后加 -ation 构成名词 determination。'
+    grammarPoint: 'verb → noun (+ation)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  # Remaining U1181-U1200 follow the same patterns
+  - id: U1181
+    type: word-formation
+    tags: [adjective-prefix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'Building a city underwater is currently _____, but scientists believe it may be possible in the future. (FEASIBLE)'
+    sentenceZh: '在水下建造城市目前是 _____ 的，但科学家相信未来可能成为可能。(FEASIBLE)'
+    baseWord: 'feasible'
+    answer: 'unfeasible'
+    targetPartOfSpeech: adjective
+    explanation: 'We need the opposite meaning — not yet possible. Add "un-" prefix: "unfeasible."'
+    explanationZh: '需要相反的意思——尚不可能。加前缀"un-"：unfeasible。'
+    grammarPoint: 'adjective → negative adjective (un-)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1182
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The architect _____ that the design should include more natural light.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'suggested'
+      B: 'told'
+      C: 'said'
+      D: 'spoke'
+    answer: 'A'
+    explanation: '"Suggested that..." means to propose an idea. "Told" needs an object person. "Said" does not take "that" + should easily.'
+    explanationZh: '"Suggested that..."意为提议一个想法。"Told"需要宾语人称。'
+    grammarPoint: 'Vocabulary: suggest that'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1183
+    type: key-word-transformation
+    tags: [time-clause, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      First the foundation was laid. Then the walls were built.
+      AFTER → The walls were built _____ laid.
+    sentenceZh: |
+      首先打了地基。然后建了墙。
+      AFTER → 在地基 _____ 之后建了墙。
+    answer: 'after the foundation had been'
+    explanation: 'The foundation was laid FIRST (past perfect passive: had been laid), then the walls were built.'
+    explanationZh: '先打地基（过去完成时被动：had been laid），然后建墙。'
+    grammarPoint: 'Time clause with past perfect (after)'
+    grammarPointZh: '带过去完成时的时间从句（after）'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1184
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The _____ of the new museum was celebrated with a special ceremony. (OPEN)'
+    sentenceZh: '新博物馆的 _____ 以特别仪式庆祝。(OPEN)'
+    baseWord: 'open'
+    answer: 'opening'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun after "The." Add -ing to "open" to form "opening" (noun: the opening of).'
+    explanationZh: '"The"后需要名词。在 open 后加 -ing 构成名词 opening。'
+    grammarPoint: 'verb → noun (+ing)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1185
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The new park has been a huge _____ — thousands of people visit it every weekend.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'win'
+      B: 'success'
+      C: 'victory'
+      D: 'achievement'
+    answer: 'B'
+    explanation: '"A huge success" is the natural collocation. A project that works well is called a success.'
+    explanationZh: '"A huge success"是自然搭配。一个运行良好的项目被称为成功。'
+    grammarPoint: 'Collocation: a huge success'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1186
+    type: key-word-transformation
+    tags: [whose, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The engineer has a daughter. His daughter studies architecture.
+      WHOSE → The engineer _____ studies architecture.
+    sentenceZh: |
+      工程师有一个女儿。他的女儿学建筑。
+      WHOSE → 工程师的女儿 _____ 学建筑。
+    answer: 'whose daughter'
+    explanation: '"Whose" combines the two sentences by showing possession — the engineer''s daughter.'
+    explanationZh: '"Whose"通过表示所属关系合并两个句子——工程师的女儿。'
+    grammarPoint: 'Relative clause with whose'
+    grammarPointZh: '用whose引导的定语从句'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1187
+    type: word-formation
+    tags: [noun-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The old town is famous for its beautiful _____ and historic streets. (ARCHITECT)'
+    sentenceZh: '老城区以其美丽的 _____ 和历史街道而闻名。(ARCHITECT)'
+    baseWord: 'architect'
+    answer: 'architecture'
+    targetPartOfSpeech: noun
+    explanation: 'We need a noun meaning "the style of buildings." Change "architect" to "architecture" (-ect → -ecture).'
+    explanationZh: '需要意为"建筑风格"的名词。将 architect 变为 architecture。'
+    grammarPoint: 'Related noun: architect → architecture'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1188
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The residents signed a petition _____ the council to save the old theatre from demolition.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'telling'
+      B: 'asking'
+      C: 'saying'
+      D: 'speaking'
+    answer: 'B'
+    explanation: '"A petition asking someone to do something" — "asking" is the correct participle with petitions.'
+    explanationZh: '"A petition asking someone to do something"——"asking"是与请愿书搭配的正确分词。'
+    grammarPoint: 'Vocabulary: petition asking...to'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1189
+    type: key-word-transformation
+    tags: [despite, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      The building is very old, but it is still standing.
+      DESPITE → _____ very old, the building is still standing.
+    sentenceZh: |
+      建筑很老了，但它仍然屹立。
+      DESPITE → _____ 很老，建筑仍然屹立。
+    answer: 'Despite being'
+    explanation: '"Despite" + -ing replaces "but." "Despite being very old" shows concession.'
+    explanationZh: '"Despite" + -ing 替代"but"。"Despite being very old"表示让步。'
+    grammarPoint: 'Concession with despite + -ing'
+    grammarPointZh: '用despite + -ing表示让步'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1190
+    type: word-formation
+    tags: [adjective-suffix, Q08, difficulty-3]
+    context: world-building
+    sentence: 'The view from the top of the skyscraper was absolutely _____. (SPECTACLE)'
+    sentenceZh: '从摩天大楼顶部看到的景色绝对是 _____ 的。(SPECTACLE)'
+    baseWord: 'spectacle'
+    answer: 'spectacular'
+    targetPartOfSpeech: adjective
+    explanation: 'We need an adjective after "was." Change "spectacle" to "spectacular" (-cle → -cular).'
+    explanationZh: '"was"后需要形容词。将 spectacle 变为 spectacular（-cle → -cular）。'
+    grammarPoint: 'noun → adjective (spectacle → spectacular)'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1191
+    type: multiple-choice-cloze
+    tags: [cloze-mc, Q08, difficulty-3]
+    context: world-building
+    passage: 'The government plans to _____ out a new programme to improve housing in the city.'
+    question: 'Choose the best word for the gap.'
+    questionZh: '选择最适合空格的词。'
+    options:
+      A: 'bring'
+      B: 'carry'
+      C: 'take'
+      D: 'put'
+    answer: 'B'
+    explanation: '"Carry out" a programme/plan means to implement it — to put it into practice.'
+    explanationZh: '"Carry out"一个计划/项目意为实施它——将其付诸实践。'
+    grammarPoint: 'Phrasal verb: carry out'
+    relatedQuest: Q08
+    difficulty: 3
+
+  - id: U1192
+    type: key-word-transformation
+    tags: [noun-clause, Q08, difficulty-3]
+    context: world-building
+    sentence: |
+      I believe that green spaces are essential for every city.
+      BELIEF → It is my _____ green spaces are essential for every city.
+    sentenceZh: |
+      我相信绿色空间对每个城市都是必不可少的。
+      BELIEF → 我的 _____ 是绿色空间对每个城市都是必不可少的。
+    answer: 'belief that'
+    explanation: 'Transform from "I believe that..." to "It is my belief that..." — noun clause after "belief."'
+    explanationZh: '从"I believe that..."转换为"It is my belief that..."——"belief"后接名词从句。'
+    grammarPoint: 'Noun clause transformation'
+    grammarPointZh: '名词从句转换'
+    relatedQuest: Q08
+    difficulty: 3

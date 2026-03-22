@@ -1,0 +1,1646 @@
+category: 'Advanced Structures'
+categoryZh: '高级句型结构'
+questions:
+  # ============================================================
+  # G0801–G0820: Emphasis structures (cleft sentences)
+  # It is/was...that/who, What...is/was
+  # Arts & Entertainment theme
+  # ============================================================
+  - id: G0801
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It _____ J.K. Rowling who created the world of Harry Potter.'
+    questionZh: '_____ J.K. Rowling 创造了哈利·波特的世界。'
+    options:
+      A: 'is'
+      B: 'was'
+      C: 'were'
+      D: 'has'
+    answer: 'B'
+    explanation: 'We use "It was...who" to emphasise the person. Since the creation happened in the past, we use "was."'
+    explanationZh: '我们用"It was...who"来强调人物。由于创作发生在过去，所以用"was"。'
+    grammarPoint: 'Cleft sentence: It was...who'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0802
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It was the _____ that made the movie truly unforgettable.'
+    questionZh: '是 _____ 让这部电影真正难忘。'
+    options:
+      A: 'soundtrack'
+      B: 'soundtracks'
+      C: 'soundtracking'
+      D: 'soundtracked'
+    answer: 'A'
+    explanation: '"It was...that" emphasises a specific element. "The soundtrack" (singular noun) is the thing being emphasised.'
+    explanationZh: '"It was...that"强调一个具体的元素。"The soundtrack"（单数名词）是被强调的事物。'
+    grammarPoint: 'Cleft sentence: It was...that'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0803
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It was in 2001 _____ the first Harry Potter film was released.'
+    questionZh: '_____ 2001年第一部哈利·波特电影上映了。'
+    answer: 'that'
+    acceptableAnswers: ['that']
+    explanation: '"It was in 2001 THAT..." emphasises the time. When we emphasise a time or place, we use "that" (not "when" or "where" in cleft sentences).'
+    explanationZh: '"It was in 2001 THAT..."强调时间。在强调句中强调时间或地点时，我们用"that"（不是"when"或"where"）。'
+    grammarPoint: 'Cleft sentence: It was...that (time emphasis)'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0804
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: '_____ I love most about this book is the way the author creates suspense.'
+    questionZh: '我最喜欢这本书的是作者制造悬念的方式。'
+    options:
+      A: 'That'
+      B: 'Which'
+      C: 'What'
+      D: 'How'
+    answer: 'C'
+    explanation: '"What I love most...is..." is a cleft sentence using "what" to mean "the thing that." It emphasises the specific element you love.'
+    explanationZh: '"What I love most...is..."是使用"what"（意为"那件事"）的强调句。它强调了你喜欢的具体元素。'
+    grammarPoint: 'Cleft sentence: What...is/was'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0805
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'What _____ the film special was its incredible visual effects.'
+    questionZh: '让这部电影特别的是它令人难以置信的视觉效果。'
+    answer: 'made'
+    acceptableAnswers: ['made', 'makes']
+    explanation: '"What made the film special was..." — we need a past tense verb because we are describing an already-released film.'
+    explanationZh: '"What made the film special was..."——我们需要过去时动词，因为我们在描述一部已经上映的电影。'
+    grammarPoint: 'Cleft sentence: What + verb...was'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0806
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It is the plot twist at the end _____ everyone keeps talking about.'
+    questionZh: '大家一直在讨论的是结尾的情节转折。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'what'
+    answer: 'C'
+    explanation: 'In the structure "It is...that...", we use "that" to connect the emphasised element. "That" is used for things; "who" would be for people.'
+    explanationZh: '在"It is...that..."结构中，我们用"that"来连接被强调的元素。"That"用于事物；"who"用于人。'
+    grammarPoint: 'Cleft sentence: It is...that'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0807
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'What surprised me _____ was how young the lead actor was.'
+    questionZh: '让我惊讶的是主演有多年轻。'
+    options:
+      A: 'more'
+      B: 'most'
+      C: 'much'
+      D: 'very'
+    answer: 'B'
+    explanation: '"What surprised me most was..." uses the superlative "most" to emphasise the biggest surprise.'
+    explanationZh: '"What surprised me most was..."使用最高级"most"来强调最大的惊讶。'
+    grammarPoint: 'Cleft sentence: What...most...was'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0808
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It was not the acting but the _____ that disappointed me. (DIRECT)'
+    questionZh: '让我失望的不是演技而是 _____。(DIRECT)'
+    answer: 'direction'
+    acceptableAnswers: ['direction', 'directing']
+    explanation: '"It was not X but Y that..." creates emphasis by contrasting two elements. We need a noun to match "acting," so "direction" (noun form of DIRECT).'
+    explanationZh: '"It was not X but Y that..."通过对比两个元素来创造强调。我们需要一个名词来与"acting"匹配，所以用"direction"（DIRECT的名词形式）。'
+    grammarPoint: 'Cleft sentence with contrast'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0809
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'What the audience _____ was a gripping story with unexpected twists.'
+    questionZh: '观众想要的是一个有意外转折的扣人心弦的故事。'
+    options:
+      A: 'want'
+      B: 'wants'
+      C: 'wanted'
+      D: 'wanting'
+    answer: 'C'
+    explanation: '"What the audience wanted was..." — past tense because we are describing what they expected before watching.'
+    explanationZh: '"What the audience wanted was..."——过去时，因为我们在描述他们观看前的期望。'
+    grammarPoint: 'Cleft sentence: What + subject + verb'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0810
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: 'It was the author''s vivid descriptions _____ brought the fantasy world to life.'
+    questionZh: '是作者生动的描写让奇幻世界栩栩如生。'
+    options:
+      A: 'who'
+      B: 'what'
+      C: 'which'
+      D: 'that'
+    answer: 'D'
+    explanation: '"It was...that..." — "that" connects the emphasised element (vivid descriptions) with what it did (brought the world to life).'
+    explanationZh: '"It was...that..."——"that"连接被强调的元素（生动的描写）和它的作用（让世界栩栩如生）。'
+    grammarPoint: 'Cleft sentence: It was...that'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0811
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-2]
+    context: entertainment
+    question: '_____ I enjoyed most about the concert was the energy of the live performance.'
+    questionZh: '我最喜欢这场音乐会的是现场表演的能量。'
+    answer: 'What'
+    acceptableAnswers: ['What']
+    explanation: '"What I enjoyed most...was..." uses "What" to mean "the thing that." It creates a cleft sentence emphasising the specific element.'
+    explanationZh: '"What I enjoyed most...was..."使用"What"来表示"那件事"。它创造了一个强调具体元素的强调句。'
+    grammarPoint: 'Cleft sentence: What...was'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0812
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'It was only after reading the final chapter _____ I understood the true meaning of the story.'
+    questionZh: '只有在读完最后一章之后，我才理解了故事的真正含义。'
+    options:
+      A: 'when'
+      B: 'that'
+      C: 'which'
+      D: 'where'
+    answer: 'B'
+    explanation: '"It was only after...that..." is an emphasis structure. Even though it involves time, cleft sentences always use "that."'
+    explanationZh: '"It was only after...that..."是强调结构。即使涉及时间，强调句总是用"that"。'
+    grammarPoint: 'Cleft sentence: It was only after...that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0813
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'It _____ not until the second half that the story became truly exciting.'
+    questionZh: '直到下半部分，故事才真正变得令人兴奋。'
+    answer: 'was'
+    acceptableAnswers: ['was']
+    explanation: '"It was not until...that..." is a fixed emphasis pattern meaning "only when X happened did Y happen."'
+    explanationZh: '"It was not until...that..."是固定的强调句式，意思是"只有当X发生时Y才发生"。'
+    grammarPoint: 'Cleft sentence: It was not until...that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0814
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'What _____ the book apart from others in the genre is its unique narrative voice.'
+    questionZh: '让这本书在同类作品中脱颖而出的是它独特的叙事声音。'
+    options:
+      A: 'puts'
+      B: 'sets'
+      C: 'takes'
+      D: 'makes'
+    answer: 'B'
+    explanation: '"Set apart" is a phrasal verb meaning "make different from others." "What sets X apart is..." is a common review phrase.'
+    explanationZh: '"Set apart"是短语动词，意思是"使与其他不同"。"What sets X apart is..."是常见的评论短语。'
+    grammarPoint: 'Cleft sentence with phrasal verb'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0815
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'It is the young readers _____ this book was written for.'
+    questionZh: '这本书是为年轻读者写的。'
+    options:
+      A: 'that'
+      B: 'who'
+      C: 'whom'
+      D: 'which'
+    answer: 'A'
+    explanation: 'In formal cleft sentences, "that" is standard for both people and things. While "who" is possible for people, "that" is the most common choice in cleft structures.'
+    explanationZh: '在正式的强调句中，"that"对人和事物都适用。虽然"who"也可以用于人，但"that"在强调句中是最常见的选择。'
+    grammarPoint: 'Cleft sentence: It is...that (people)'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0816
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'What _____ me most was the way the director handled the emotional scenes. (IMPRESS)'
+    questionZh: '最让我印象深刻的是导演处理情感戏的方式。(IMPRESS)'
+    answer: 'impressed'
+    acceptableAnswers: ['impressed']
+    explanation: '"What impressed me most was..." needs past tense. The base word IMPRESS becomes "impressed" in the past tense.'
+    explanationZh: '"What impressed me most was..."需要过去时。基础词IMPRESS变成过去时"impressed"。'
+    grammarPoint: 'Cleft sentence with word formation'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0817
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'All _____ I wanted was a good ending, and the author delivered beautifully.'
+    questionZh: '我想要的只是一个好结局，而作者做到了。'
+    options:
+      A: 'what'
+      B: 'that'
+      C: 'which'
+      D: 'who'
+    answer: 'B'
+    explanation: '"All that I wanted..." uses "that" as a relative pronoun after "all." This is a common emphasis structure meaning "the only thing."'
+    explanationZh: '"All that I wanted..."使用"that"作为"all"后面的关系代词。这是一个常见的强调结构，意思是"唯一的事情"。'
+    grammarPoint: 'Emphasis: All that...'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0818
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'It is the combination of humour and heart _____ makes this series so popular with families.'
+    questionZh: '正是幽默和真情的结合使这个系列在家庭中如此受欢迎。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"It is...that..." is a standard cleft sentence. "That" links the emphasised element to the rest of the sentence.'
+    explanationZh: '"It is...that..."是标准的强调句。"That"将被强调的元素与句子的其余部分连接起来。'
+    grammarPoint: 'Cleft sentence: It is...that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0819
+    type: multiple-choice
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'What the critics failed to _____ was that the film was made for children, not adults.'
+    questionZh: '评论家们未能认识到的是这部电影是为儿童而非成人制作的。'
+    options:
+      A: 'recognise'
+      B: 'recognised'
+      C: 'recognising'
+      D: 'recognition'
+    answer: 'A'
+    explanation: 'After "failed to," we need the base form of the verb (bare infinitive). "Failed to recognise" means "did not manage to understand."'
+    explanationZh: '在"failed to"之后，我们需要动词原形。"Failed to recognise"意思是"未能理解"。'
+    grammarPoint: 'Cleft sentence + infinitive'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0820
+    type: fill-blank
+    tags: [emphasis, Q09, difficulty-3]
+    context: entertainment
+    question: 'It was the unexpected plot _____ at the end that left the entire audience speechless.'
+    questionZh: '是结尾意想不到的情节 _____ 让全场观众目瞪口呆。'
+    answer: 'twist'
+    acceptableAnswers: ['twist']
+    explanation: '"Plot twist" is a compound noun meaning a surprising turn in the story. "It was the plot twist...that..." emphasises this element.'
+    explanationZh: '"Plot twist"是复合名词，意思是故事中令人惊讶的转折。"It was the plot twist...that..."强调了这个元素。'
+    grammarPoint: 'Cleft sentence with compound noun'
+    relatedQuest: Q09
+    difficulty: 3
+
+  # ============================================================
+  # G0821–G0840: Inversion structures
+  # Not only...but also, Hardly...when, No sooner...than
+  # Arts & Entertainment theme
+  # ============================================================
+  - id: G0821
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-2]
+    context: entertainment
+    question: 'Not only _____ the film entertaining, but it was also deeply moving.'
+    questionZh: '这部电影不仅有趣，而且非常感人。'
+    options:
+      A: 'is'
+      B: 'was'
+      C: 'were'
+      D: 'has'
+    answer: 'B'
+    explanation: '"Not only was...but also..." requires inversion (verb before subject). Past tense "was" matches the context.'
+    explanationZh: '"Not only was...but also..."需要倒装（动词在主语前面）。过去时"was"与语境匹配。'
+    grammarPoint: 'Inversion: Not only...but also'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0822
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-2]
+    context: entertainment
+    question: 'Not only _____ the book win an award, but it also became a bestseller overnight.'
+    questionZh: '这本书不仅赢得了奖项，而且一夜之间成为畅销书。'
+    answer: 'did'
+    acceptableAnswers: ['did']
+    explanation: 'When "Not only" starts a sentence, we need inversion. For past simple, we use "did" + base verb: "Not only did the book win..."'
+    explanationZh: '当"Not only"开始一个句子时，我们需要倒装。对于一般过去时，我们用"did"+动词原形："Not only did the book win..."'
+    grammarPoint: 'Inversion: Not only + did'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0823
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-2]
+    context: entertainment
+    question: 'Not only is the animation stunning, _____ the storyline is original and creative.'
+    questionZh: '动画不仅令人惊叹，_____ 故事情节也新颖有创意。'
+    options:
+      A: 'and'
+      B: 'but'
+      C: 'so'
+      D: 'or'
+    answer: 'B'
+    explanation: '"Not only...but (also)" is a fixed correlative conjunction pair. "But" introduces the second element.'
+    explanationZh: '"Not only...but (also)"是固定的关联连词对。"But"引入第二个元素。'
+    grammarPoint: 'Correlative conjunction: Not only...but'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0824
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Hardly _____ the concert begun when the power went out.'
+    questionZh: '音乐会刚刚开始，电力就中断了。'
+    options:
+      A: 'has'
+      B: 'had'
+      C: 'have'
+      D: 'did'
+    answer: 'B'
+    explanation: '"Hardly had...when..." requires past perfect with inversion. "Hardly had the concert begun when..." means it began just before the power went out.'
+    explanationZh: '"Hardly had...when..."需要过去完成时倒装。"Hardly had the concert begun when..."意思是音乐会在停电前刚刚开始。'
+    grammarPoint: 'Inversion: Hardly...when'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0825
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Hardly had I opened the book _____ I was completely absorbed in the story.'
+    questionZh: '我一翻开书就完全沉浸在故事中了。'
+    answer: 'when'
+    acceptableAnswers: ['when']
+    explanation: '"Hardly had...WHEN..." — "when" is the correct conjunction with "hardly." It means "almost immediately after."'
+    explanationZh: '"Hardly had...WHEN..."——"when"是与"hardly"搭配的正确连词。它的意思是"几乎紧接着"。'
+    grammarPoint: 'Inversion: Hardly...when'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0826
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'No sooner had the film started _____ the audience fell silent.'
+    questionZh: '电影一开始，观众就安静了下来。'
+    options:
+      A: 'when'
+      B: 'that'
+      C: 'than'
+      D: 'as'
+    answer: 'C'
+    explanation: '"No sooner...THAN..." — "than" is the correct conjunction with "No sooner." (Contrast with "Hardly...when")'
+    explanationZh: '"No sooner...THAN..."——"than"是与"No sooner"搭配的正确连词。（对比"Hardly...when"）'
+    grammarPoint: 'Inversion: No sooner...than'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0827
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'No sooner _____ the singer appeared on stage than the crowd erupted in cheers.'
+    questionZh: '歌手一出现在舞台上，人群就爆发出欢呼声。'
+    answer: 'had'
+    acceptableAnswers: ['had']
+    explanation: '"No sooner had...than..." requires past perfect with inversion. The verb before the subject shows inversion.'
+    explanationZh: '"No sooner had...than..."需要过去完成时倒装。动词在主语前面表示倒装。'
+    grammarPoint: 'Inversion: No sooner + had'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0828
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Never _____ I seen such a breathtaking performance in a school play.'
+    questionZh: '我从未在校园剧中见过如此令人叹为观止的表演。'
+    options:
+      A: 'has'
+      B: 'have'
+      C: 'had'
+      D: 'did'
+    answer: 'B'
+    explanation: '"Never have I seen..." uses present perfect with inversion. "I" takes "have" (not "has"). Inversion happens because "Never" is at the start.'
+    explanationZh: '"Never have I seen..."使用现在完成时倒装。"I"搭配"have"（不是"has"）。因为"Never"在句首所以需要倒装。'
+    grammarPoint: 'Inversion: Never + have I'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0829
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Rarely _____ a debut novel received such universal praise from critics.'
+    questionZh: '很少有处女作获得评论家如此一致的好评。'
+    answer: 'has'
+    acceptableAnswers: ['has']
+    explanation: '"Rarely has..." requires inversion. "A debut novel" is singular, so we use "has" (present perfect).'
+    explanationZh: '"Rarely has..."需要倒装。"A debut novel"是单数，所以用"has"（现在完成时）。'
+    grammarPoint: 'Inversion: Rarely + has'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0830
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Only after watching it three times _____ I fully understand the film''s hidden message.'
+    questionZh: '只有在看了三遍之后，我才完全理解了电影的隐藏信息。'
+    options:
+      A: 'do'
+      B: 'did'
+      C: 'have'
+      D: 'was'
+    answer: 'B'
+    explanation: '"Only after...did I..." requires inversion with "did" for past simple. The structure emphasises how many viewings it took.'
+    explanationZh: '"Only after...did I..."需要用"did"进行一般过去时的倒装。这个结构强调了需要看多少遍。'
+    grammarPoint: 'Inversion: Only after...did'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0831
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Not only did the book win a prize, but it _____ inspired a major Hollywood film.'
+    questionZh: '这本书不仅赢得了奖项，而且还启发了一部好莱坞大片。'
+    options:
+      A: 'too'
+      B: 'also'
+      C: 'as well'
+      D: 'either'
+    answer: 'B'
+    explanation: '"Not only...but (it) also..." — "also" comes after the subject in the second clause. "Also" is the standard partner for "not only...but."'
+    explanationZh: '"Not only...but (it) also..."——"also"在第二个分句中的主语之后。"Also"是"not only...but"的标准搭配。'
+    grammarPoint: 'Correlative: Not only...but also'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0832
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Seldom _____ a children''s film dealt with such complex themes as friendship and loss.'
+    questionZh: '很少有儿童电影处理过友谊和失去这样复杂的主题。'
+    answer: 'has'
+    acceptableAnswers: ['has']
+    explanation: '"Seldom has..." requires inversion with present perfect. "A children''s film" is singular, so "has" is correct.'
+    explanationZh: '"Seldom has..."需要现在完成时倒装。"A children''s film"是单数，所以用"has"。'
+    grammarPoint: 'Inversion: Seldom + has'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0833
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Little _____ the author know that her first novel would become a worldwide phenomenon.'
+    questionZh: '作者几乎不知道她的第一部小说会成为世界级的现象。'
+    options:
+      A: 'do'
+      B: 'did'
+      C: 'has'
+      D: 'was'
+    answer: 'B'
+    explanation: '"Little did...know" is a fixed inversion pattern meaning "X did not realise." Past tense "did" because the action is in the past.'
+    explanationZh: '"Little did...know"是固定的倒装句式，意思是"X没有意识到"。用过去时"did"因为动作在过去。'
+    grammarPoint: 'Inversion: Little did...know'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0834
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Not until I read the last page _____ I realise who the real villain was.'
+    questionZh: '直到我读完最后一页，我才意识到谁是真正的反派。'
+    answer: 'did'
+    acceptableAnswers: ['did']
+    explanation: '"Not until...did I..." requires inversion with "did" (past simple). This structure emphasises the late realisation.'
+    explanationZh: '"Not until...did I..."需要用"did"（一般过去时）进行倒装。这个结构强调了很晚才意识到。'
+    grammarPoint: 'Inversion: Not until...did'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0835
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Under no circumstances _____ you reveal the ending of the book to someone who has not read it.'
+    questionZh: '在任何情况下你都不应该向没有读过这本书的人透露结局。'
+    options:
+      A: 'can'
+      B: 'should'
+      C: 'must'
+      D: 'would'
+    answer: 'B'
+    explanation: '"Under no circumstances should you..." is a strong prohibition using inversion. "Should" expresses advice/duty and sounds appropriate for the context.'
+    explanationZh: '"Under no circumstances should you..."是使用倒装的强烈禁止语。"Should"表达建议/义务，适合这个语境。'
+    grammarPoint: 'Inversion: Under no circumstances + should'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0836
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Hardly had the curtain _____ when the audience burst into applause.'
+    questionZh: '幕布刚一落下，观众就爆发出掌声。'
+    options:
+      A: 'fall'
+      B: 'fell'
+      C: 'fallen'
+      D: 'falling'
+    answer: 'C'
+    explanation: '"Hardly had...PAST PARTICIPLE...when..." — after "had," we need the past participle. "Fallen" is the past participle of "fall."'
+    explanationZh: '"Hardly had...过去分词...when..."——"had"后面需要过去分词。"Fallen"是"fall"的过去分词。'
+    grammarPoint: 'Inversion: Hardly had + past participle'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0837
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Only when you listen carefully to the lyrics _____ you appreciate the true beauty of the song.'
+    questionZh: '只有当你仔细聆听歌词时，你才能欣赏到这首歌的真正之美。'
+    answer: 'can'
+    acceptableAnswers: ['can', 'do', 'will']
+    explanation: '"Only when...can/do/will you..." requires inversion in the main clause. "Can" emphasises ability to appreciate.'
+    explanationZh: '"Only when...can/do/will you..."需要在主句中倒装。"Can"强调欣赏的能力。'
+    grammarPoint: 'Inversion: Only when...can'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0838
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'No sooner had I finished one chapter _____ I could not wait to start the next.'
+    questionZh: '我一读完一章就迫不及待地要开始下一章。'
+    options:
+      A: 'when'
+      B: 'than'
+      C: 'that'
+      D: 'before'
+    answer: 'B'
+    explanation: '"No sooner...than" — always use "than" with "no sooner." (Remember: "Hardly...when" but "No sooner...than")'
+    explanationZh: '"No sooner...than"——总是用"than"搭配"no sooner"。（记住："Hardly...when"但"No sooner...than"）'
+    grammarPoint: 'No sooner...than'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0839
+    type: fill-blank
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'At no point during the movie _____ I feel bored or tempted to check my phone.'
+    questionZh: '在电影的任何时刻，我都没有感到无聊或想看手机。'
+    answer: 'did'
+    acceptableAnswers: ['did']
+    explanation: '"At no point...did I..." requires inversion because "at no point" is a negative adverbial at the start.'
+    explanationZh: '"At no point...did I..."需要倒装，因为"at no point"是句首的否定副词短语。'
+    grammarPoint: 'Inversion: At no point + did'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0840
+    type: multiple-choice
+    tags: [inversion, Q09, difficulty-3]
+    context: entertainment
+    question: 'Not only _____ the game innovative, but it also set a new standard for the entire industry.'
+    questionZh: '这款游戏不仅创新，而且为整个行业树立了新标准。'
+    options:
+      A: 'is'
+      B: 'was'
+      C: 'were'
+      D: 'been'
+    answer: 'B'
+    explanation: '"Not only was...but it also..." — inversion with past tense "was" because we are describing a game that already came out.'
+    explanationZh: '"Not only was...but it also..."——用过去时"was"进行倒装，因为我们在描述一款已经发布的游戏。'
+    grammarPoint: 'Inversion: Not only was...but also'
+    relatedQuest: Q09
+    difficulty: 3
+
+  # ============================================================
+  # G0841–G0860: Advanced passive structures
+  # Have something done, be said/thought/believed to
+  # Arts & Entertainment theme
+  # ============================================================
+  - id: G0841
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-2]
+    context: entertainment
+    question: 'The director had the script _____ three times before filming began.'
+    questionZh: '导演在开拍前让剧本被改写了三次。'
+    options:
+      A: 'rewrite'
+      B: 'rewritten'
+      C: 'rewrote'
+      D: 'rewriting'
+    answer: 'B'
+    explanation: '"Had something done" (causative) uses past participle. "Had the script rewritten" means someone else rewrote it for the director.'
+    explanationZh: '"Had something done"（使役结构）使用过去分词。"Had the script rewritten"意思是别人为导演改写了剧本。'
+    grammarPoint: 'Causative: have something done'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0842
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-2]
+    context: entertainment
+    question: 'The singer is having her new album _____ at a famous studio in London. (RECORD)'
+    questionZh: '这位歌手正在伦敦一家著名录音室录制她的新专辑。(RECORD)'
+    answer: 'recorded'
+    acceptableAnswers: ['recorded']
+    explanation: '"Is having something done" (present continuous causative). We need the past participle "recorded."'
+    explanationZh: '"Is having something done"（现在进行时使役结构）。我们需要过去分词"recorded"。'
+    grammarPoint: 'Causative: is having something done'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0843
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-2]
+    context: entertainment
+    question: 'We had our costumes _____ by a professional designer for the school play.'
+    questionZh: '我们请了一位专业设计师为校园剧设计了我们的服装。'
+    options:
+      A: 'make'
+      B: 'made'
+      C: 'making'
+      D: 'to make'
+    answer: 'B'
+    explanation: '"Had our costumes made" — causative structure with past participle. Someone else made the costumes for us.'
+    explanationZh: '"Had our costumes made"——使役结构加过去分词。别人为我们做了服装。'
+    grammarPoint: 'Causative: had something done'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0844
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-2]
+    context: entertainment
+    question: 'The author wants to get her book _____ into six languages.'
+    questionZh: '作者想让她的书被翻译成六种语言。'
+    options:
+      A: 'translate'
+      B: 'translating'
+      C: 'translated'
+      D: 'to translate'
+    answer: 'C'
+    explanation: '"Get something done" is an informal version of "have something done." We need the past participle "translated."'
+    explanationZh: '"Get something done"是"have something done"的非正式版本。我们需要过去分词"translated"。'
+    grammarPoint: 'Causative: get something done'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0845
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-2]
+    context: entertainment
+    question: 'The theatre is having the stage _____ for the upcoming musical. (REPAIR)'
+    questionZh: '剧院正在为即将到来的音乐剧修缮舞台。(REPAIR)'
+    answer: 'repaired'
+    acceptableAnswers: ['repaired']
+    explanation: '"Is having the stage repaired" — present continuous causative with past participle.'
+    explanationZh: '"Is having the stage repaired"——现在进行时使役结构加过去分词。'
+    grammarPoint: 'Causative: is having something done'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0846
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The novel is said _____ one of the greatest works of the 21st century.'
+    questionZh: '这部小说据说是21世纪最伟大的作品之一。'
+    options:
+      A: 'being'
+      B: 'to be'
+      C: 'is'
+      D: 'was'
+    answer: 'B'
+    explanation: '"Is said to be" is a reporting passive structure. "To be" follows the passive reporting verb.'
+    explanationZh: '"Is said to be"是报告被动结构。"To be"跟在被动报告动词之后。'
+    grammarPoint: 'Reporting passive: is said to be'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0847
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The director is believed _____ have spent over five years making this film.'
+    questionZh: '据信这位导演花了五年多的时间制作这部电影。'
+    answer: 'to'
+    acceptableAnswers: ['to']
+    explanation: '"Is believed to have spent..." — the reporting passive uses "to + perfect infinitive" for actions before the reporting time.'
+    explanationZh: '"Is believed to have spent..."——报告被动用"to+完成不定式"表示在报告时间之前的动作。'
+    grammarPoint: 'Reporting passive: is believed to have + past participle'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0848
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The painting is thought _____ worth over ten million dollars.'
+    questionZh: '这幅画被认为价值超过一千万美元。'
+    options:
+      A: 'being'
+      B: 'to be'
+      C: 'is'
+      D: 'be'
+    answer: 'B'
+    explanation: '"Is thought to be" — reporting passive with "to be" for current states. "People think the painting is worth..." → "The painting is thought to be worth..."'
+    explanationZh: '"Is thought to be"——报告被动用"to be"表示当前状态。"人们认为这幅画价值……"→"这幅画被认为价值……"'
+    grammarPoint: 'Reporting passive: is thought to be'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0849
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'Shakespeare is _____ to have written 37 plays during his lifetime. (KNOW)'
+    questionZh: '众所周知，莎士比亚一生写了37部戏剧。(KNOW)'
+    answer: 'known'
+    acceptableAnswers: ['known']
+    explanation: '"Is known to have written" — reporting passive. "Known" is the past participle of "know."'
+    explanationZh: '"Is known to have written"——报告被动。"Known"是"know"的过去分词。'
+    grammarPoint: 'Reporting passive: is known to have'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0850
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The sequel was expected _____ as successful as the original, but it disappointed fans.'
+    questionZh: '续集被期望和原作一样成功，但它让粉丝失望了。'
+    options:
+      A: 'being'
+      B: 'to be'
+      C: 'be'
+      D: 'been'
+    answer: 'B'
+    explanation: '"Was expected to be" — passive of "People expected the sequel to be." "To be" is the infinitive after the reporting passive.'
+    explanationZh: '"Was expected to be"——"人们期望续集是……"的被动形式。"To be"是报告被动之后的不定式。'
+    grammarPoint: 'Reporting passive: was expected to be'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0851
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The band is reported to _____ working on a new album in secret. (BE)'
+    questionZh: '据报道这支乐队一直在秘密制作新专辑。(BE)'
+    answer: 'be'
+    acceptableAnswers: ['be']
+    explanation: '"Is reported to be working" — reporting passive with continuous infinitive. "To be working" shows an ongoing action.'
+    explanationZh: '"Is reported to be working"——报告被动加进行不定式。"To be working"表示正在进行的动作。'
+    grammarPoint: 'Reporting passive: is reported to be doing'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0852
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The artist had her portrait _____ by a famous photographer before the exhibition.'
+    questionZh: '这位艺术家在展览前请一位著名摄影师拍了肖像照。'
+    options:
+      A: 'take'
+      B: 'took'
+      C: 'taken'
+      D: 'taking'
+    answer: 'C'
+    explanation: '"Had her portrait taken" — causative with past participle. The photographer took the portrait for the artist.'
+    explanationZh: '"Had her portrait taken"——使役结构加过去分词。摄影师为艺术家拍了肖像照。'
+    grammarPoint: 'Causative: had something done'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0853
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'It _____ widely believed that this author will win the Nobel Prize in Literature soon. (BE)'
+    questionZh: '人们普遍相信这位作者很快会获得诺贝尔文学奖。(BE)'
+    answer: 'is'
+    acceptableAnswers: ['is']
+    explanation: '"It is widely believed that..." is an impersonal passive construction used for general opinions.'
+    explanationZh: '"It is widely believed that..."是非人称被动结构，用于表达普遍观点。'
+    grammarPoint: 'Impersonal passive: It is believed that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0854
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The film is considered _____ a masterpiece by critics around the world.'
+    questionZh: '这部电影被世界各地的评论家认为是一部杰作。'
+    options:
+      A: 'being'
+      B: 'to be'
+      C: 'as'
+      D: 'for'
+    answer: 'B'
+    explanation: '"Is considered to be" is the standard reporting passive. "To be" follows the passive form of "consider."'
+    explanationZh: '"Is considered to be"是标准的报告被动形式。"To be"跟在"consider"的被动形式之后。'
+    grammarPoint: 'Reporting passive: is considered to be'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0855
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The young musician is _____ to be the most talented pianist of her generation. (SAY)'
+    questionZh: '这位年轻音乐家据说是她这一代最有才华的钢琴家。(SAY)'
+    answer: 'said'
+    acceptableAnswers: ['said']
+    explanation: '"Is said to be" — the past participle "said" forms the reporting passive.'
+    explanationZh: '"Is said to be"——过去分词"said"构成报告被动。'
+    grammarPoint: 'Reporting passive: is said to be'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0856
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'I need to get my violin _____ before the concert next week.'
+    questionZh: '我需要在下周音乐会之前把我的小提琴修好。'
+    options:
+      A: 'fix'
+      B: 'fixed'
+      C: 'fixing'
+      D: 'to fix'
+    answer: 'B'
+    explanation: '"Get something done" (causative) — "get my violin fixed" means have someone repair it for me. Past participle "fixed" is needed.'
+    explanationZh: '"Get something done"（使役结构）——"get my violin fixed"意思是让别人帮我修。需要过去分词"fixed"。'
+    grammarPoint: 'Causative: get something done'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0857
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The museum is _____ to attract over two million visitors this year. (EXPECT)'
+    questionZh: '预计这座博物馆今年将吸引超过两百万游客。(EXPECT)'
+    answer: 'expected'
+    acceptableAnswers: ['expected']
+    explanation: '"Is expected to attract" — reporting passive with future meaning. "Expected" is the past participle.'
+    explanationZh: '"Is expected to attract"——带有将来含义的报告被动。"Expected"是过去分词。'
+    grammarPoint: 'Reporting passive: is expected to'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0858
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The play is understood to _____ been inspired by a true story.'
+    questionZh: '据了解，这部戏剧的灵感来自一个真实故事。'
+    options:
+      A: 'has'
+      B: 'had'
+      C: 'have'
+      D: 'having'
+    answer: 'C'
+    explanation: '"Is understood to have been inspired" — perfect infinitive after reporting passive. "To have" (not "to has") is the correct infinitive.'
+    explanationZh: '"Is understood to have been inspired"——报告被动之后的完成不定式。"To have"（不是"to has"）是正确的不定式。'
+    grammarPoint: 'Reporting passive: is understood to have been'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0859
+    type: fill-blank
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'The actress had her hair _____ and styled for the movie premiere. (DYE)'
+    questionZh: '这位女演员为电影首映让人给她染了头发并做了造型。(DYE)'
+    answer: 'dyed'
+    acceptableAnswers: ['dyed']
+    explanation: '"Had her hair dyed" — causative with past participle. A hairstylist dyed the hair for the actress.'
+    explanationZh: '"Had her hair dyed"——使役结构加过去分词。发型师为女演员染了头发。'
+    grammarPoint: 'Causative: had something done'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0860
+    type: multiple-choice
+    tags: [advanced-passive, Q09, difficulty-3]
+    context: entertainment
+    question: 'It is widely _____ that video games can improve problem-solving skills.'
+    questionZh: '人们普遍认为电子游戏可以提高解决问题的能力。'
+    options:
+      A: 'accept'
+      B: 'accepted'
+      C: 'accepting'
+      D: 'acceptance'
+    answer: 'B'
+    explanation: '"It is widely accepted that..." — impersonal passive. "Accepted" (past participle) follows "is" in the passive construction.'
+    explanationZh: '"It is widely accepted that..."——非人称被动。"Accepted"（过去分词）在被动结构中跟在"is"之后。'
+    grammarPoint: 'Impersonal passive: It is accepted that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  # ============================================================
+  # G0861–G0880: Linking complex arguments
+  # On the one hand/other hand, While/Whereas, Despite
+  # Review-themed
+  # ============================================================
+  - id: G0861
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: 'On the one hand, the movie has stunning visuals. On the _____ hand, the plot is weak.'
+    questionZh: '一方面，电影有令人惊叹的视觉效果。_____ 方面，情节很弱。'
+    options:
+      A: 'other'
+      B: 'second'
+      C: 'next'
+      D: 'opposite'
+    answer: 'A'
+    explanation: '"On the one hand...on the other hand" is a fixed expression for presenting two contrasting viewpoints.'
+    explanationZh: '"On the one hand...on the other hand"是固定表达，用于呈现两个对比的观点。'
+    grammarPoint: 'Linking: On the one hand...on the other hand'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0862
+    type: fill-blank
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: '_____ the acting was excellent, the dialogue felt unnatural and forced.'
+    questionZh: '_____ 演技很出色，对话却感觉不自然且做作。'
+    answer: 'While'
+    acceptableAnswers: ['While', 'Although', 'Whereas']
+    explanation: '"While" introduces a contrast between two ideas in the same sentence. It means "even though" or "at the same time as."'
+    explanationZh: '"While"在同一个句子中引入两个想法之间的对比。它的意思是"尽管"或"与此同时"。'
+    grammarPoint: 'Linking: While (contrast)'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0863
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: '_____ its flaws, the book remains one of the best adventure stories I have ever read.'
+    questionZh: '_____ 它的缺点，这本书仍然是我读过的最好的冒险故事之一。'
+    options:
+      A: 'Despite'
+      B: 'Although'
+      C: 'However'
+      D: 'Nevertheless'
+    answer: 'A'
+    explanation: '"Despite" is followed by a noun/noun phrase (its flaws), not a clause. "Although" would need a clause (although it has flaws).'
+    explanationZh: '"Despite"后面跟名词/名词短语（its flaws），不跟从句。"Although"需要从句（although it has flaws）。'
+    grammarPoint: 'Linking: Despite + noun'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0864
+    type: fill-blank
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: 'The first book was a thriller, _____ the sequel is more of a romance.'
+    questionZh: '第一本书是惊悚小说，_____ 续集更像是浪漫故事。'
+    answer: 'whereas'
+    acceptableAnswers: ['whereas', 'while', 'but']
+    explanation: '"Whereas" connects two contrasting facts. It is more formal than "but" and is excellent for reviews.'
+    explanationZh: '"Whereas"连接两个对比的事实。它比"but"更正式，非常适合评论。'
+    grammarPoint: 'Linking: Whereas'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0865
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: 'The graphics are excellent. _____, the soundtrack leaves much to be desired.'
+    questionZh: '画面很出色。_____ 配乐有很多不足之处。'
+    options:
+      A: 'Furthermore'
+      B: 'Moreover'
+      C: 'However'
+      D: 'In addition'
+    answer: 'C'
+    explanation: '"However" signals a contrast between the positive (graphics) and the negative (soundtrack).'
+    explanationZh: '"However"表示正面（画面）和负面（配乐）之间的对比。'
+    grammarPoint: 'Linking: However (contrast)'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0866
+    type: fill-blank
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: '_____ of the slow start, the movie picks up pace after the first thirty minutes.'
+    questionZh: '_____ 开头节奏慢，电影在前三十分钟后加快了节奏。'
+    answer: 'In spite'
+    acceptableAnswers: ['In spite']
+    explanation: '"In spite of" is followed by a noun phrase. It has the same meaning as "Despite." "In spite of the slow start..."'
+    explanationZh: '"In spite of"后面跟名词短语。它和"Despite"意思相同。"In spite of the slow start..."'
+    grammarPoint: 'Linking: In spite of + noun'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0867
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: 'The special effects were impressive. _____, the film''s real strength lies in its emotional depth.'
+    questionZh: '特效令人印象深刻。_____ 这部电影真正的力量在于它的情感深度。'
+    options:
+      A: 'However'
+      B: 'Nevertheless'
+      C: 'Yet'
+      D: 'Nonetheless'
+    answer: 'B'
+    explanation: '"Nevertheless" means "despite what was just said." It acknowledges the effects are good, then redirects to the main point.'
+    explanationZh: '"Nevertheless"意思是"尽管如此"。它承认特效很好，然后转向主要观点。'
+    grammarPoint: 'Linking: Nevertheless'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0868
+    type: fill-blank
+    tags: [linking, Q09, difficulty-2]
+    context: review
+    question: 'The game has beautiful graphics. _____, the controls are smooth and responsive.'
+    questionZh: '这款游戏有漂亮的画面。_____ 操控也流畅且灵敏。'
+    answer: 'Furthermore'
+    acceptableAnswers: ['Furthermore', 'Moreover', 'In addition', 'What is more']
+    explanation: '"Furthermore" adds another positive point. Since both sentences are positive, an addition connector is needed.'
+    explanationZh: '"Furthermore"补充另一个正面观点。由于两个句子都是正面的，需要补充连接词。'
+    grammarPoint: 'Linking: Furthermore (addition)'
+    relatedQuest: Q09
+    difficulty: 2
+
+  - id: G0869
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'Despite _____ critically acclaimed, the film was a box office failure.'
+    questionZh: '尽管受到评论界的好评，这部电影在票房上是失败的。'
+    options:
+      A: 'be'
+      B: 'been'
+      C: 'being'
+      D: 'was'
+    answer: 'C'
+    explanation: '"Despite" can be followed by a gerund (-ing form). "Despite being critically acclaimed" = "Despite the fact that it was critically acclaimed."'
+    explanationZh: '"Despite"后面可以跟动名词（-ing形式）。"Despite being critically acclaimed"="尽管事实上它受到了评论界的好评。"'
+    grammarPoint: 'Despite + gerund'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0870
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: '_____ the book has received mixed reviews, I personally found it fascinating.'
+    questionZh: '_____ 这本书收到了褒贬不一的评论，我个人觉得它非常引人入胜。'
+    answer: 'Although'
+    acceptableAnswers: ['Although', 'While', 'Even though']
+    explanation: '"Although" introduces a clause (subject + verb). "Despite" would need a noun phrase instead.'
+    explanationZh: '"Although"引入从句（主语+动词）。"Despite"则需要名词短语。'
+    grammarPoint: 'Linking: Although + clause'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0871
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'While some critics praised the film for its originality, _____ dismissed it as confusing.'
+    questionZh: '虽然一些评论家称赞这部电影的原创性，_____ 却认为它令人困惑。'
+    options:
+      A: 'other'
+      B: 'others'
+      C: 'the other'
+      D: 'another'
+    answer: 'B'
+    explanation: '"Some...others" is a fixed pair for contrasting groups. "Others" (without "the") means "some other people."'
+    explanationZh: '"Some...others"是固定搭配，用于对比不同的群体。"Others"（不加"the"）意思是"另一些人"。'
+    grammarPoint: 'Contrast: Some...others'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0872
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The plot was predictable. _____, the characters were so well-developed that I still enjoyed the story.'
+    questionZh: '情节是可预测的。_____ 角色塑造得如此好，我仍然很享受这个故事。'
+    answer: 'Nonetheless'
+    acceptableAnswers: ['Nonetheless', 'Nevertheless', 'However', 'Even so']
+    explanation: '"Nonetheless" (= "nevertheless") shows that something positive happened despite the negative point.'
+    explanationZh: '"Nonetheless"（="nevertheless"）表示尽管有负面的方面，仍然发生了正面的事情。'
+    grammarPoint: 'Linking: Nonetheless'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0873
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The author writes with clarity and humour, _____ making complex scientific ideas accessible to young readers.'
+    questionZh: '作者用清晰和幽默的方式写作，_____ 使复杂的科学概念让年轻读者也能理解。'
+    options:
+      A: 'thereby'
+      B: 'however'
+      C: 'despite'
+      D: 'whereas'
+    answer: 'A'
+    explanation: '"Thereby" means "by doing this" and shows a result. The clarity and humour RESULT in making ideas accessible.'
+    explanationZh: '"Thereby"意思是"因此"并表示结果。清晰和幽默的结果是使概念易于理解。'
+    grammarPoint: 'Linking: Thereby + gerund'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0874
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The film has its flaws — the pacing is uneven and the ending is rushed. _____, the stunning performances make it well worth watching.'
+    questionZh: '这部电影有它的缺点——节奏不均匀，结尾很仓促。_____ 令人惊叹的表演使它非常值得观看。'
+    answer: 'That said'
+    acceptableAnswers: ['That said', 'Having said that', 'Nevertheless', 'However']
+    explanation: '"That said" or "Having said that" acknowledges the criticism and transitions to a positive point. It is common in reviews.'
+    explanationZh: '"That said"或"Having said that"承认了批评并过渡到正面观点。这在评论中很常见。'
+    grammarPoint: 'Linking: That said / Having said that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0875
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: '_____ of whether you are a fan of the original, this adaptation is worth seeing on its own merits.'
+    questionZh: '_____ 你是否是原作的粉丝，这个改编都值得凭借它自身的优点去看。'
+    options:
+      A: 'Despite'
+      B: 'Although'
+      C: 'Regardless'
+      D: 'Nevertheless'
+    answer: 'C'
+    explanation: '"Regardless of" means "it does not matter whether." It dismisses a potential concern before making a positive statement.'
+    explanationZh: '"Regardless of"意思是"不管是否"。它在做出正面陈述之前消除了一个潜在的顾虑。'
+    grammarPoint: 'Linking: Regardless of'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0876
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The film succeeds _____ the fact that it was made on a very small budget.'
+    questionZh: '这部电影成功了，_____ 它的预算非常小。'
+    answer: 'despite'
+    acceptableAnswers: ['despite', 'in spite of']
+    explanation: '"Despite the fact that..." combines "despite" with a full clause through "the fact that."'
+    explanationZh: '"Despite the fact that..."通过"the fact that"将"despite"与完整的从句结合。'
+    grammarPoint: 'Linking: Despite the fact that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0877
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The book has been praised for its vivid characters. _____, it has been criticised for its slow pace.'
+    questionZh: '这本书因其生动的角色而受到赞扬。_____ 它因节奏缓慢而受到批评。'
+    options:
+      A: 'On the other hand'
+      B: 'Furthermore'
+      C: 'In addition'
+      D: 'Moreover'
+    answer: 'A'
+    explanation: '"On the other hand" presents the opposing viewpoint. It transitions from praise to criticism, which is typical in a balanced review.'
+    explanationZh: '"On the other hand"呈现相反的观点。它从赞美过渡到批评，这在平衡的评论中很典型。'
+    grammarPoint: 'Linking: On the other hand'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0878
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'Whereas the original film relied heavily on practical effects, the remake _____ almost entirely on CGI.'
+    questionZh: '原版电影大量依赖实际特效，而翻拍版几乎完全依赖CGI。'
+    answer: 'relies'
+    acceptableAnswers: ['relies', 'relied']
+    explanation: '"Whereas X relied on..., Y relies on..." creates a clear contrast between two approaches.'
+    explanationZh: '"Whereas X relied on..., Y relies on..."在两种方法之间创造了清晰的对比。'
+    grammarPoint: 'Linking: Whereas + contrast'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0879
+    type: multiple-choice
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'The ending was _____ disappointing. Having said that, the journey to get there was thoroughly enjoyable.'
+    questionZh: '结局 _____ 令人失望。话虽如此，到达那里的旅程是完全令人愉快的。'
+    options:
+      A: 'rather'
+      B: 'very'
+      C: 'so'
+      D: 'too'
+    answer: 'A'
+    explanation: '"Rather" is a hedging word that softens criticism. "Rather disappointing" sounds more professional than "very disappointing" in a review.'
+    explanationZh: '"Rather"是一个缓和词，软化批评。在评论中，"rather disappointing"听起来比"very disappointing"更专业。'
+    grammarPoint: 'Hedging: rather + adjective'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0880
+    type: fill-blank
+    tags: [linking, Q09, difficulty-3]
+    context: review
+    question: 'All _____ all, this is a solid film that most families will enjoy.'
+    questionZh: '_____ 来说，这是一部大多数家庭都会喜欢的扎实电影。'
+    answer: 'in'
+    acceptableAnswers: ['in']
+    explanation: '"All in all" is a fixed phrase meaning "considering everything." It is useful for the recommendation/conclusion section of a review.'
+    explanationZh: '"All in all"是固定短语，意思是"综合考虑"。它在评论的推荐/总结部分很有用。'
+    grammarPoint: 'Conclusion: All in all'
+    relatedQuest: Q09
+    difficulty: 3
+
+  # ============================================================
+  # G0881–G0900: Mixed advanced grammar review
+  # All types combined, review-themed
+  # ============================================================
+  - id: G0881
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'It was the unexpected ending _____ made the whole audience gasp.'
+    questionZh: '正是出人意料的结局让全场观众倒抽一口气。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'that'
+      D: 'what'
+    answer: 'C'
+    explanation: '"It was...that..." — cleft sentence emphasising "the unexpected ending." Always "that" in this structure.'
+    explanationZh: '"It was...that..."——强调句强调"出人意料的结局"。在这个结构中总是用"that"。'
+    grammarPoint: 'Cleft sentence review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0882
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'Not only _____ the author create memorable characters, but she also built an entirely new world.'
+    questionZh: '作者不仅创造了令人难忘的角色，还构建了一个全新的世界。'
+    answer: 'did'
+    acceptableAnswers: ['did']
+    explanation: '"Not only did...but also..." — inversion with "did" + base verb. Standard structure for emphasis.'
+    explanationZh: '"Not only did...but also..."——用"did"+动词原形进行倒装。标准的强调结构。'
+    grammarPoint: 'Inversion review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0883
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'The band had their latest album _____ by a Grammy-winning producer.'
+    questionZh: '这支乐队让一位获得格莱美奖的制作人制作了他们的最新专辑。'
+    options:
+      A: 'produce'
+      B: 'produced'
+      C: 'producing'
+      D: 'to produce'
+    answer: 'B'
+    explanation: '"Had something done" — causative with past participle "produced." Someone else produced the album for them.'
+    explanationZh: '"Had something done"——使役结构加过去分词"produced"。别人为他们制作了专辑。'
+    grammarPoint: 'Causative review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0884
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: '_____ having received negative reviews, the film became a huge commercial success.'
+    questionZh: '_____ 收到了负面评论，这部电影仍然取得了巨大的商业成功。'
+    answer: 'Despite'
+    acceptableAnswers: ['Despite', 'In spite of']
+    explanation: '"Despite having received..." — "despite" + perfect gerund shows contrast with an earlier action.'
+    explanationZh: '"Despite having received..."——"despite"+完成动名词表示与之前行为的对比。'
+    grammarPoint: 'Linking review: Despite + gerund'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0885
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'What _____ this game stand out from all the others is its unique art style.'
+    questionZh: '让这款游戏从所有其他游戏中脱颖而出的是它独特的艺术风格。'
+    options:
+      A: 'does'
+      B: 'makes'
+      C: 'has'
+      D: 'gets'
+    answer: 'B'
+    explanation: '"What makes X stand out is..." — cleft sentence with "makes." "Stand out" means to be noticeably different.'
+    explanationZh: '"What makes X stand out is..."——使用"makes"的强调句。"Stand out"意思是明显不同。'
+    grammarPoint: 'Cleft sentence + phrasal verb'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0886
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'The artist is believed to _____ painted over 900 works during her lifetime. (HAVE)'
+    questionZh: '据信这位艺术家一生中画了超过900幅作品。(HAVE)'
+    answer: 'have'
+    acceptableAnswers: ['have']
+    explanation: '"Is believed to have painted" — reporting passive with perfect infinitive for a completed past action.'
+    explanationZh: '"Is believed to have painted"——报告被动加完成不定式，表示已完成的过去行为。'
+    grammarPoint: 'Reporting passive review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0887
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'Hardly had the credits started rolling _____ half the audience was already leaving the cinema.'
+    questionZh: '字幕刚开始滚动，半数观众就已经在离开电影院了。'
+    options:
+      A: 'than'
+      B: 'when'
+      C: 'that'
+      D: 'before'
+    answer: 'B'
+    explanation: '"Hardly had...WHEN..." — "when" is the correct conjunction pair with "hardly." (Not "than" — that goes with "no sooner.")'
+    explanationZh: '"Hardly had...WHEN..."——"when"是与"hardly"搭配的正确连词。（不是"than"——那是和"no sooner"搭配的。）'
+    grammarPoint: 'Inversion review: Hardly...when'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0888
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'The film is _____ to be the director''s finest work to date. (CONSIDER)'
+    questionZh: '这部电影被认为是这位导演迄今为止最好的作品。(CONSIDER)'
+    answer: 'considered'
+    acceptableAnswers: ['considered']
+    explanation: '"Is considered to be" — reporting passive. "Considered" is the past participle of "consider."'
+    explanationZh: '"Is considered to be"——报告被动。"Considered"是"consider"的过去分词。'
+    grammarPoint: 'Reporting passive review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0889
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: '_____ the special effects were groundbreaking, the storyline was disappointingly predictable.'
+    questionZh: '_____ 特效是开创性的，故事线却令人失望地可预测。'
+    options:
+      A: 'Despite'
+      B: 'While'
+      C: 'However'
+      D: 'Nevertheless'
+    answer: 'B'
+    explanation: '"While" introduces a concessive clause (with subject + verb). "Despite" would need a noun phrase, not a clause.'
+    explanationZh: '"While"引入让步从句（有主语+动词）。"Despite"需要名词短语，不是从句。'
+    grammarPoint: 'Linking review: While + clause'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0890
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'Never _____ I read a book that made me laugh and cry so much in the same chapter.'
+    questionZh: '我从来没有读过一本让我在同一章中又笑又哭这么多的书。'
+    answer: 'have'
+    acceptableAnswers: ['have']
+    explanation: '"Never have I read..." — inversion with present perfect. "Never" at the start triggers inversion.'
+    explanationZh: '"Never have I read..."——现在完成时倒装。"Never"在句首触发倒装。'
+    grammarPoint: 'Inversion review: Never have I'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0891
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'I had my favourite scene from the book _____ as a poster for my bedroom wall.'
+    questionZh: '我把书中我最喜欢的场景做成了一张海报贴在卧室墙上。'
+    options:
+      A: 'print'
+      B: 'printed'
+      C: 'printing'
+      D: 'to print'
+    answer: 'B'
+    explanation: '"Had something done" — causative. "Had my favourite scene printed" means a printing service made it for me.'
+    explanationZh: '"Had something done"——使役结构。"Had my favourite scene printed"意思是打印服务为我打印了它。'
+    grammarPoint: 'Causative review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0892
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'No sooner had the song started _____ everyone in the audience began singing along.'
+    questionZh: '歌曲一开始，观众中的每个人就开始跟着唱。'
+    answer: 'than'
+    acceptableAnswers: ['than']
+    explanation: '"No sooner had...THAN..." — "than" is the correct pair for "no sooner."'
+    explanationZh: '"No sooner had...THAN..."——"than"是与"no sooner"搭配的正确连词。'
+    grammarPoint: 'Inversion review: No sooner...than'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0893
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'It was _____ the third chapter that the story really started to get exciting.'
+    questionZh: '直到第三章故事才真正开始变得令人兴奋。'
+    options:
+      A: 'not until'
+      B: 'only in'
+      C: 'just at'
+      D: 'not since'
+    answer: 'A'
+    explanation: '"It was not until...that..." — emphasis structure meaning "the story did not get exciting before chapter 3."'
+    explanationZh: '"It was not until...that..."——强调结构，意思是"故事在第三章之前都不令人兴奋"。'
+    grammarPoint: 'Cleft sentence: It was not until...that'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0894
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'The series is thought _____ the best television drama of the decade. (BE)'
+    questionZh: '这部剧集被认为是十年来最好的电视剧。(BE)'
+    answer: 'to be'
+    acceptableAnswers: ['to be']
+    explanation: '"Is thought to be" — reporting passive. "To be" is the infinitive needed after the passive reporting structure.'
+    explanationZh: '"Is thought to be"——报告被动。"To be"是被动报告结构之后需要的不定式。'
+    grammarPoint: 'Reporting passive review'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0895
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: '_____ its simple graphics, the game offers incredibly deep and strategic gameplay.'
+    questionZh: '_____ 画面简单，这款游戏提供了非常深入和有策略性的游戏体验。'
+    options:
+      A: 'Although'
+      B: 'Despite'
+      C: 'However'
+      D: 'While'
+    answer: 'B'
+    explanation: '"Despite" is followed by a noun phrase (its simple graphics). "Although" and "While" would need a clause (its graphics are simple).'
+    explanationZh: '"Despite"后面跟名词短语（its simple graphics）。"Although"和"While"需要从句（its graphics are simple）。'
+    grammarPoint: 'Linking review: Despite + noun phrase'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0896
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'What I found most _____ about the exhibition was the interactive installations. (APPEAL)'
+    questionZh: '我觉得展览中最有 _____ 的是互动装置。(APPEAL)'
+    answer: 'appealing'
+    acceptableAnswers: ['appealing']
+    explanation: '"Most appealing" — we need an adjective after "most." "Appealing" is the adjective form of APPEAL.'
+    explanationZh: '"Most appealing"——"most"后面需要形容词。"Appealing"是APPEAL的形容词形式。'
+    grammarPoint: 'Cleft sentence + word formation'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0897
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'Only by reading the book carefully _____ you notice the clever foreshadowing in every chapter.'
+    questionZh: '只有仔细阅读这本书，你才能注意到每章中巧妙的伏笔。'
+    options:
+      A: 'do'
+      B: 'can'
+      C: 'will'
+      D: 'are'
+    answer: 'B'
+    explanation: '"Only by...can you..." — inversion after "only by." "Can" emphasises ability that comes from careful reading.'
+    explanationZh: '"Only by...can you..."——"only by"之后的倒装。"Can"强调通过仔细阅读获得的能力。'
+    grammarPoint: 'Inversion: Only by...can'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0898
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'All in _____, this is one of the finest films of the year and I cannot recommend it highly enough.'
+    questionZh: '总的来说，这是今年最好的电影之一，我怎么推荐都不够。'
+    answer: 'all'
+    acceptableAnswers: ['all']
+    explanation: '"All in all" is a fixed conclusion phrase meaning "considering everything." Perfect for review conclusions.'
+    explanationZh: '"All in all"是固定的总结短语，意思是"综合考虑"。非常适合评论的结论。'
+    grammarPoint: 'Conclusion phrase: All in all'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0899
+    type: multiple-choice
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'Rarely _____ a children''s book tackled such important themes with both sensitivity and humour.'
+    questionZh: '很少有儿童读物以如此敏感和幽默的方式处理如此重要的主题。'
+    options:
+      A: 'have'
+      B: 'has'
+      C: 'had'
+      D: 'did'
+    answer: 'B'
+    explanation: '"Rarely has...tackled" — inversion with present perfect. "A children''s book" is singular, so "has."'
+    explanationZh: '"Rarely has...tackled"——现在完成时倒装。"A children''s book"是单数，所以用"has"。'
+    grammarPoint: 'Inversion review: Rarely has'
+    relatedQuest: Q09
+    difficulty: 3
+
+  - id: G0900
+    type: fill-blank
+    tags: [mixed-review, Q09, difficulty-3]
+    context: review
+    question: 'It is the perfect balance of action and emotion _____ makes this sequel even better than the original.'
+    questionZh: '正是动作和情感的完美平衡使这部续集比原作更好。'
+    answer: 'that'
+    acceptableAnswers: ['that', 'which']
+    explanation: '"It is...that..." — cleft sentence. "That" connects the emphasised subject to the verb phrase.'
+    explanationZh: '"It is...that..."——强调句。"That"将被强调的主语与动词短语连接。'
+    grammarPoint: 'Cleft sentence final review'
+    relatedQuest: Q09
+    difficulty: 3

@@ -1,0 +1,1123 @@
+readings:
+  # ============================================================
+  # R116 – The City That Never Stops Growing (Level 3, ~340 words)
+  # ============================================================
+  - id: R116
+    title: 'The City That Never Stops Growing'
+    titleZh: '永不停歇的城市'
+    level: 3
+    wordCount: 340
+    topic: city planning
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic: Megacities'
+      author: 'National Geographic'
+      note: 'Original passage inspired by research on global urbanization trends'
+    passage: |
+      In 1950, only two cities in the world had more than ten million people: New York and Tokyo. Today, there are over thirty such megacities, and the number is still growing. By 2050, experts predict that nearly 70% of the world's population will live in urban areas.
+
+      [1]
+
+      One of the biggest challenges facing megacities is providing enough housing for everyone. In many rapidly growing cities, people arrive faster than new homes can be built. As a result, informal settlements — sometimes called slums — appear on the edges of cities, where families build shelters from whatever materials they can find.
+
+      [2]
+
+      However, some cities have found creative solutions to the housing problem. Singapore, for example, built thousands of high-rise apartment blocks that house over 80% of its population. These buildings include shops, schools, and parks on different levels, creating complete neighbourhoods in the sky.
+
+      [3]
+
+      Transportation is another major challenge. When millions of people need to travel to work every day, roads become impossibly crowded. Cities like Bogota in Colombia have solved this by building dedicated bus lanes that carry passengers quickly across the city, while Copenhagen in Denmark has built so many cycling paths that more people now cycle to work than drive.
+
+      Clean water, waste management, and air quality are also fundamental concerns. A city that cannot provide clean drinking water or remove waste safely will eventually face serious health problems. Tokyo, often ranked as the world's best-managed megacity, processes its waste so efficiently that it recycles over 40% of all rubbish.
+
+      The future of our planet depends on how well we design and manage our cities. As more people move to urban areas, the decisions we make today about infrastructure, housing, and transport will shape the world for generations to come.
+    passageZh: |
+      1950年，世界上只有两座城市拥有超过一千万人口：纽约和东京。如今，这样的超大城市已经超过三十座，数字仍在增长。到2050年，专家预测世界上近70%的人口将生活在城市地区。
+
+      [1]
+
+      超大城市面临的最大挑战之一是为每个人提供足够的住房。在许多快速增长的城市中，人口涌入的速度超过了新房建设的速度。因此，非正式定居点——有时称为贫民窟——出现在城市边缘，家庭用他们能找到的任何材料搭建避难所。
+
+      [2]
+
+      然而，一些城市找到了解决住房问题的创造性方案。例如，新加坡建造了数千栋高层公寓楼，容纳了超过80%的人口。这些建筑在不同楼层设有商店、学校和公园，在空中创造了完整的社区。
+
+      [3]
+
+      交通是另一个主要挑战。当数百万人每天需要上班时，道路变得拥挤不堪。哥伦比亚的波哥大通过建设专用公交车道来快速运送乘客穿越城市，而丹麦的哥本哈根建造了如此多的自行车道，以至于现在骑自行车上班的人比开车的还多。
+
+      清洁饮水、废物管理和空气质量也是基本关注点。一个无法提供清洁饮用水或安全清除废物的城市最终将面临严重的健康问题。东京常被评为世界上管理最好的超大城市，其废物处理效率如此之高，回收了超过40%的垃圾。
+
+      我们星球的未来取决于我们如何设计和管理城市。随着越来越多的人搬到城市地区，我们今天关于基础设施、住房和交通的决策将影响未来几代人的世界。
+    vocabHighlights:
+      - word: infrastructure
+        ref: V1142
+      - word: urban
+        ref: V1141
+      - word: fundamental
+        ref: V1105
+    questions:
+      - id: R116-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'This rapid urbanization creates both opportunities and problems that city planners must address.'
+          B: 'Many people prefer living in the countryside because it is quieter and less polluted.'
+          C: 'The first skyscrapers were built in Chicago in the late 1800s.'
+        answer: 'A'
+        explanation: 'Gap [1] follows statistics about growing megacities. "This rapid urbanization" refers to the population growth described, and it transitions to the challenges discussed next.'
+        explanationZh: '空缺[1]在关于超大城市增长的统计数据之后。"This rapid urbanization"指代所描述的人口增长，过渡到接下来讨论的挑战。'
+      - id: R116-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'These communities often lack basic services like clean water, electricity, and schools.'
+          B: 'New York City was founded by Dutch settlers in the 17th century.'
+          C: 'Solar panels are becoming cheaper and more efficient every year.'
+        answer: 'A'
+        explanation: '"These communities" refers to the informal settlements described in the previous paragraph. It adds detail about the problems they face, before the contrast with Singapore.'
+        explanationZh: '"These communities"指代前一段描述的非正式定居点。它补充了关于这些社区面临问题的细节，在与新加坡形成对比之前。'
+      - id: R116-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Singapore is a small island nation in Southeast Asia with a tropical climate.'
+          B: 'Such innovative approaches show that with good planning, even the densest cities can offer comfortable living.'
+          C: 'Electric cars are expected to replace petrol vehicles within the next two decades.'
+        answer: 'B'
+        explanation: '"Such innovative approaches" refers to Singapore''s high-rise solution. This bridges to the next topic (transportation) by concluding the housing discussion.'
+        explanationZh: '"Such innovative approaches"指代新加坡的高层解决方案。通过总结住房讨论，过渡到下一个话题（交通）。'
+      - id: R116-Q4
+        type: vocabulary-in-context
+        question: 'What does "dedicated" mean in "dedicated bus lanes"?'
+        questionZh: '在"dedicated bus lanes"中，"dedicated"是什么意思？'
+        options:
+          A: 'Very enthusiastic and hardworking'
+          B: 'Reserved for one particular purpose only'
+          C: 'Extremely expensive to build'
+          D: 'Recently opened to the public'
+        answer: 'B'
+        explanation: '"Dedicated bus lanes" are lanes reserved only for buses — no other vehicles can use them. This helps buses move faster.'
+        explanationZh: '"Dedicated bus lanes"是仅供公交车使用的车道——其他车辆不能使用。这有助于公交车更快地行驶。'
+
+  # ============================================================
+  # R117 – The Rise and Fall of Pompeii (Level 3, ~350 words)
+  # ============================================================
+  - id: R117
+    title: 'The Rise and Fall of Pompeii'
+    titleZh: '庞贝城的兴衰'
+    level: 3
+    wordCount: 350
+    topic: ancient civilizations
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'BBC History: Pompeii'
+      author: 'BBC'
+      note: 'Original passage based on historical accounts of Pompeii'
+    passage: |
+      In 79 AD, the Roman city of Pompeii was one of the most prosperous towns in the empire. Located near the Bay of Naples in southern Italy, it had a population of about 11,000 people, with elegant houses, busy markets, a large amphitheatre, and even a complex water system.
+
+      Life in Pompeii was comfortable and exciting. Citizens could watch gladiator fights at the amphitheatre, relax at the public baths, or shop for goods from across the Roman Empire. The streets were paved with stone, and stepping stones helped pedestrians cross without getting their feet muddy.
+
+      However, Pompeii was built in the shadow of Mount Vesuvius, a volcano that had been quiet for centuries. On the morning of 24 August 79 AD, Vesuvius suddenly erupted. A massive cloud of ash, rock, and gas shot twenty kilometres into the sky. Within hours, day turned to night as ash blocked out the sun.
+
+      Most residents fled immediately, but some stayed behind to protect their homes or collect their valuables. By the next morning, the city was buried under six metres of volcanic ash. Everything — buildings, streets, gardens, and sadly, many people — was frozen in time.
+
+      Pompeii remained hidden for nearly 1,700 years until workers digging a canal accidentally discovered the ruins in 1748. Since then, archaeologists have carefully excavated the city, revealing an extraordinary snapshot of ancient Roman life. They found preserved loaves of bread, wall paintings still showing their original colours, and even graffiti scratched into walls by ordinary citizens.
+
+      Today, Pompeii is one of the most visited archaeological sites in the world. Walking through its ancient streets, you can see bakeries, temples, homes, and the forum where people gathered to discuss politics. The ruins serve as both a fascinating window into the past and a powerful reminder of nature's unstoppable force.
+    passageZh: |
+      公元79年，罗马城市庞贝是帝国中最繁荣的城镇之一。它位于意大利南部那不勒斯湾附近，人口约11,000人，拥有优雅的房屋、繁忙的市场、大型露天剧场，甚至还有复杂的供水系统。
+
+      庞贝的生活舒适而令人兴奋。市民可以在露天剧场观看角斗士比赛，在公共浴室放松，或购买来自罗马帝国各地的商品。街道铺着石头，踏脚石帮助行人过马路时不会弄脏脚。
+
+      然而，庞贝建在维苏威火山的阴影下，这座火山已经沉寂了几个世纪。公元79年8月24日早晨，维苏威火山突然喷发。巨大的灰烬、岩石和气体云柱射向二十公里的高空。几个小时内，白天变成了黑夜，因为灰烬遮住了太阳。
+
+      大多数居民立即逃离，但有些人留下来保护家园或收集贵重物品。到第二天早上，这座城市被埋在六米深的火山灰下。一切——建筑、街道、花园，以及遗憾的是许多人——都被冻结在时间中。
+
+      庞贝被隐藏了近1,700年，直到1748年挖掘运河的工人偶然发现了废墟。从那以后，考古学家仔细地发掘了这座城市，揭示了古罗马生活的非凡快照。他们发现了保存完好的面包、仍然显示着原始颜色的壁画，甚至还有普通市民刻在墙上的涂鸦。
+
+      今天，庞贝是世界上访问量最大的考古遗址之一。走在它古老的街道上，你可以看到面包店、寺庙、住宅和人们聚集讨论政治的广场。废墟既是一扇迷人的回望过去的窗口，也是对大自然不可阻挡力量的有力提醒。
+    vocabHighlights:
+      - word: civilization
+        ref: V1131
+      - word: excavate
+        ref: V1239
+      - word: preserve
+        ref: V1154
+    questions:
+      - id: R117-Q1
+        type: multiple-choice
+        question: 'Why was Pompeii considered a prosperous city?'
+        questionZh: '为什么庞贝被认为是一座繁荣的城市？'
+        options:
+          A: 'It was the capital of the Roman Empire.'
+          B: 'It had elegant houses, markets, an amphitheatre, and a water system.'
+          C: 'It was the largest city in the world at that time.'
+          D: 'It had more than one million inhabitants.'
+        answer: 'B'
+        explanation: 'The passage lists elegant houses, busy markets, a large amphitheatre, and a complex water system as evidence of prosperity.'
+        explanationZh: '文章列举了优雅的房屋、繁忙的市场、大型露天剧场和复杂的供水系统作为繁荣的证据。'
+      - id: R117-Q2
+        type: multiple-choice
+        question: 'What happened to Pompeii on 24 August 79 AD?'
+        questionZh: '公元79年8月24日庞贝发生了什么？'
+        options:
+          A: 'An earthquake destroyed most of the buildings.'
+          B: 'Enemy soldiers invaded and burned the city.'
+          C: 'Mount Vesuvius erupted and buried the city in ash.'
+          D: 'A flood from the sea swept through the streets.'
+        answer: 'C'
+        explanation: 'Mount Vesuvius erupted and the city was buried under six metres of volcanic ash.'
+        explanationZh: '维苏威火山喷发，城市被埋在六米深的火山灰下。'
+      - id: R117-Q3
+        type: vocabulary-in-context
+        question: 'What does "snapshot" mean in "an extraordinary snapshot of ancient Roman life"?'
+        questionZh: '"an extraordinary snapshot of ancient Roman life"中的"snapshot"是什么意思？'
+        options:
+          A: 'A photograph taken quickly'
+          B: 'A preserved picture of how life was at one moment in time'
+          C: 'A painting by an ancient artist'
+          D: 'A detailed history book'
+        answer: 'B'
+        explanation: 'Here "snapshot" is used figuratively — Pompeii gives us a frozen-in-time picture of daily life in ancient Rome.'
+        explanationZh: '这里"snapshot"是比喻用法——庞贝给了我们一幅古罗马日常生活的定格画面。'
+      - id: R117-Q4
+        type: multiple-choice
+        question: 'When was Pompeii rediscovered?'
+        questionZh: '庞贝是什么时候被重新发现的？'
+        options:
+          A: 'In 79 AD, shortly after the eruption'
+          B: 'During the Middle Ages, around 1200 AD'
+          C: 'In 1748, by workers digging a canal'
+          D: 'In 1900, by a team of archaeologists'
+        answer: 'C'
+        explanation: 'The passage states that workers digging a canal accidentally discovered the ruins in 1748.'
+        explanationZh: '文章指出挖掘运河的工人在1748年偶然发现了废墟。'
+
+  # ============================================================
+  # R118 – Building Worlds in Minecraft (Level 3, ~320 words)
+  # ============================================================
+  - id: R118
+    title: 'Building Worlds in Minecraft'
+    titleZh: '在我的世界中建造世界'
+    level: 3
+    wordCount: 320
+    topic: virtual worlds
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Wired: How Minecraft Changed Gaming'
+      author: 'Wired Magazine'
+      note: 'Original passage about Minecraft as a creative platform'
+    passage: |
+      When Markus Persson released the first version of Minecraft in 2009, he could never have imagined what it would become. What started as a simple game about placing blocks has grown into one of the most popular creative platforms in history, with over 238 million copies sold.
+
+      In Minecraft, players explore a world made entirely of blocks — cubes of stone, wood, dirt, water, and dozens of other materials. There are no rules about what you must build. Some players construct simple houses, while others create entire cities, complete with roads, railways, and working traffic lights.
+
+      What makes Minecraft special is that it combines creativity with engineering. To build a functioning door, you need to understand how redstone circuits work — Minecraft's version of electrical wiring. To design a beautiful cathedral, you need to think about symmetry, proportion, and perspective. In this way, players learn real-world skills without realizing it.
+
+      Schools around the world now use Minecraft: Education Edition in their classrooms. Students in Denmark recreated the entire country in Minecraft to study geography. In Japan, students built models of historical buildings to learn about architecture and history. A group of students in the UK even designed a sustainable city of the future as a school project.
+
+      Perhaps most impressively, a team of volunteers called Build the Earth is trying to recreate the entire planet in Minecraft at a 1:1 scale. They have already completed detailed models of famous landmarks including the Eiffel Tower, the Great Wall of China, and the Sydney Opera House.
+
+      Minecraft proves that when you give people the freedom to create, the results can be extraordinary. It is not just a game — it is a tool for imagination, collaboration, and learning that continues to inspire millions of young builders around the world.
+    passageZh: |
+      当 Markus Persson 在2009年发布第一版我的世界时，他从未想象过它会变成什么样子。从一个简单的放置方块的游戏开始，它已经发展成为历史上最受欢迎的创意平台之一，销售量超过2.38亿份。
+
+      在我的世界中，玩家探索一个完全由方块组成的世界——石头、木头、泥土、水以及数十种其他材料的立方体。对于你必须建造什么没有规则。有些玩家建造简单的房屋，而另一些人则创造整座城市，配有道路、铁路和可用的交通灯。
+
+      让我的世界特别的是它将创造力与工程学结合在一起。要建造一扇能用的门，你需要了解红石电路的工作原理——我的世界版本的电线。要设计一座美丽的大教堂，你需要考虑对称、比例和透视。通过这种方式，玩家在不知不觉中学习了现实世界的技能。
+
+      世界各地的学校现在在课堂上使用我的世界：教育版。丹麦的学生在我的世界中重建了整个国家来学习地理。在日本，学生建造了历史建筑的模型来学习建筑和历史。英国的一群学生甚至设计了一座未来可持续发展的城市作为学校项目。
+
+      也许最令人印象深刻的是，一个名为"建造地球"的志愿者团队正试图以1:1的比例在我的世界中重建整个地球。他们已经完成了包括埃菲尔铁塔、中国长城和悉尼歌剧院在内的著名地标的详细模型。
+
+      我的世界证明，当你给人们创造的自由时，结果可以是非凡的。它不仅仅是一个游戏——它是一个激发想象力、协作和学习的工具，继续激励着全世界数百万年轻建造者。
+    vocabHighlights:
+      - word: creative
+        ref: V1158
+      - word: symmetry
+        ref: V1240
+      - word: collaborate
+        ref: V1201
+    questions:
+      - id: R118-Q1
+        type: multiple-choice
+        question: 'What makes Minecraft different from most other games?'
+        questionZh: '是什么让我的世界与大多数其他游戏不同？'
+        options:
+          A: 'It has the best graphics of any game.'
+          B: 'It combines creativity with engineering and has no fixed rules.'
+          C: 'It can only be played by one person at a time.'
+          D: 'It was designed specifically for schools.'
+        answer: 'B'
+        explanation: 'The passage emphasizes that Minecraft combines creativity with engineering and has no rules about what to build.'
+        explanationZh: '文章强调我的世界将创造力与工程学结合，并且对建造什么没有规则。'
+      - id: R118-Q2
+        type: multiple-choice
+        question: 'What is the "Build the Earth" project trying to do?'
+        questionZh: '"建造地球"项目试图做什么？'
+        options:
+          A: 'Build new cities in the real world.'
+          B: 'Recreate the entire planet in Minecraft at actual size.'
+          C: 'Design a new version of the Minecraft game.'
+          D: 'Teach every child in the world to code.'
+        answer: 'B'
+        explanation: 'The project aims to recreate the entire planet in Minecraft at a 1:1 scale.'
+        explanationZh: '该项目旨在以1:1的比例在我的世界中重建整个地球。'
+      - id: R118-Q3
+        type: vocabulary-in-context
+        question: 'What does "platform" mean in "one of the most popular creative platforms"?'
+        questionZh: '"one of the most popular creative platforms"中的"platform"是什么意思？'
+        options:
+          A: 'A raised flat surface you stand on'
+          B: 'A computer system or environment for creating things'
+          C: 'A type of shoe with a thick sole'
+          D: 'A train station where passengers wait'
+        answer: 'B'
+        explanation: 'Here "platform" means a digital system or environment that people use to create and share content.'
+        explanationZh: '这里"platform"指的是人们用来创建和分享内容的数字系统或环境。'
+
+  # ============================================================
+  # R119 – How Ancient Rome Built Its Roads (Level 3, ~330 words)
+  # ============================================================
+  - id: R119
+    title: 'How Ancient Rome Built Its Roads'
+    titleZh: '古罗马如何修建道路'
+    level: 3
+    wordCount: 330
+    topic: ancient civilizations
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Smithsonian Magazine: Roman Roads'
+      author: 'Smithsonian'
+      note: 'Original passage based on Roman engineering history'
+    passage: |
+      The Roman Empire built over 80,000 kilometres of roads — enough to circle the Earth twice. These roads were so well constructed that some of them are still used today, nearly two thousand years after they were built. How did the Romans achieve this remarkable feat of engineering?
+
+      First, Roman engineers surveyed the land carefully. They preferred straight routes because they were shorter and allowed soldiers to march faster. When a hill was in the way, they sometimes cut through it rather than going around. When they reached a river, they built bridges from stone arches — a technique so effective that many Roman bridges still stand.
+
+      The construction process itself was brilliantly designed. Workers began by digging a deep trench, about one metre down. They filled the bottom layer with large stones for drainage, so rainwater would not collect and weaken the road. Above this, they placed a layer of crushed stone mixed with cement. Finally, they laid flat paving stones on top, with a slight curve from centre to edge so that water would run off to the sides.
+
+      The result was a road surface that could support heavy carts, thousands of marching soldiers, and centuries of use. The phrase "All roads lead to Rome" comes from the fact that the network was designed with Rome at its centre, connecting the capital to every corner of the empire.
+
+      Roman roads did more than just move soldiers. They facilitated trade between distant provinces, carried messages from the emperor to local governors, and allowed ideas, languages, and cultures to spread across Europe, North Africa, and the Middle East. In many ways, Roman roads were the internet of the ancient world — a network that connected people and transformed society.
+
+      Today, many modern European highways follow the exact routes that Roman engineers mapped out two thousand years ago. Their legacy is literally built into the ground beneath our feet.
+    passageZh: |
+      罗马帝国修建了超过80,000公里的道路——足以绕地球两圈。这些道路建造得如此之好，以至于其中一些在建成近两千年后仍在使用。罗马人是如何实现这一非凡的工程壮举的？
+
+      首先，罗马工程师仔细勘测了地形。他们偏好直线路线，因为更短，让士兵行军更快。当山丘挡道时，他们有时会直接穿过而不是绕行。当到达河流时，他们用石拱建造桥梁——这种技术如此有效，许多罗马桥梁至今仍然屹立。
+
+      建造过程本身设计精妙。工人们首先挖一条深约一米的沟渠。底层填充大石头用于排水，这样雨水不会积聚并削弱道路。在此之上，放置一层碎石与水泥的混合物。最后，在顶部铺设平整的铺路石，从中心到边缘有轻微的弧度，使水流向两侧。
+
+      结果是一个可以承受重型马车、数千名行军士兵和数百年使用的路面。"条条大路通罗马"这句话来自这样一个事实：路网以罗马为中心设计，将首都与帝国的每个角落连接起来。
+
+      罗马道路的作用不仅仅是运送士兵。它们促进了遥远省份之间的贸易，将皇帝的信息传递给地方总督，并使思想、语言和文化在欧洲、北非和中东传播。在许多方面，罗马道路是古代世界的互联网——一个连接人们并改变社会的网络。
+
+      今天，许多现代欧洲高速公路沿着罗马工程师两千年前规划的完全相同的路线。他们的遗产确确实实地建在我们脚下的土地中。
+    vocabHighlights:
+      - word: facilitate
+        ref: V1120
+      - word: construct
+        ref: V1129
+      - word: legacy
+        ref: V1300
+    questions:
+      - id: R119-Q1
+        type: multiple-choice
+        question: 'Why did Roman engineers prefer straight roads?'
+        questionZh: '为什么罗马工程师偏好直路？'
+        options:
+          A: 'Straight roads were cheaper to build.'
+          B: 'Straight roads were shorter and allowed faster marching.'
+          C: 'The emperor ordered all roads to be straight.'
+          D: 'Curved roads were impossible to build at that time.'
+        answer: 'B'
+        explanation: 'The passage says they preferred straight routes because they were shorter and allowed soldiers to march faster.'
+        explanationZh: '文章说他们偏好直线路线因为更短，让士兵行军更快。'
+      - id: R119-Q2
+        type: multiple-choice
+        question: 'What was the purpose of the curved road surface?'
+        questionZh: '弧形路面的目的是什么？'
+        options:
+          A: 'To make the road look more attractive'
+          B: 'To help carts travel faster'
+          C: 'To allow rainwater to run off to the sides'
+          D: 'To make it easier for horses to walk'
+        answer: 'C'
+        explanation: 'The flat stones had a slight curve from centre to edge so water would run off to the sides.'
+        explanationZh: '铺路石从中心到边缘有轻微的弧度，使水流向两侧。'
+      - id: R119-Q3
+        type: vocabulary-in-context
+        question: 'What does "feat" mean in "remarkable feat of engineering"?'
+        questionZh: '"remarkable feat of engineering"中的"feat"是什么意思？'
+        options:
+          A: 'A part of the body used for walking'
+          B: 'An impressive achievement that requires great skill'
+          C: 'A celebration or festival'
+          D: 'A type of ancient Roman tool'
+        answer: 'B'
+        explanation: '"Feat" means an impressive achievement. Building 80,000 km of durable roads was a remarkable accomplishment.'
+        explanationZh: '"Feat"意思是令人印象深刻的成就。建造80,000公里耐用道路是非凡的成就。'
+
+  # ============================================================
+  # R120 – The Dream of Utopia (Level 4, ~360 words)
+  # ============================================================
+  - id: R120
+    title: 'The Dream of Utopia'
+    titleZh: '乌托邦之梦'
+    level: 4
+    wordCount: 360
+    topic: utopian societies
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Philosophy for Kids: Imaginary Worlds'
+      author: 'Various'
+      note: 'Original passage about the concept of utopia through history'
+    passage: |
+      In 1516, an English writer named Thomas More published a book called "Utopia." In it, he described an imaginary island where everyone lived in peace, shared their wealth equally, and worked only six hours a day. The word "utopia" comes from Greek, meaning "no place" — because More knew that such a perfect society could never truly exist.
+
+      Nevertheless, the dream of utopia has fascinated people for thousands of years. The ancient Greek philosopher Plato imagined an ideal city called Kallipolis, governed by wise philosophers rather than politicians. In ancient China, the poet Tao Yuanming wrote about Peach Blossom Spring, a hidden valley where people lived in harmony, completely cut off from the troubles of the outside world.
+
+      In the 19th century, some people tried to turn utopian dreams into reality. Robert Owen, a factory owner from Wales, built a model community called New Harmony in the United States, where workers shared profits and children received free education. Although New Harmony eventually failed, Owen's ideas influenced modern laws about workers' rights and education.
+
+      Today, architects and urban planners continue to envision ideal cities. Some propose "garden cities" surrounded by green belts of farmland, where nature and technology exist side by side. Others imagine "smart cities" managed by artificial intelligence, where traffic flows automatically, energy is generated from renewable sources, and waste is recycled with zero pollution.
+
+      However, critics point out that one person's utopia can be another person's nightmare. A society where everything is perfectly controlled might feel more like a prison than a paradise. Freedom, creativity, and even a certain amount of chaos are essential parts of human life that no perfect system can entirely replace.
+
+      Perhaps the real value of utopian thinking is not in reaching perfection, but in giving us something to aim for. Every time we build a new park, improve a school, or design a more accessible building, we take one small step closer to making our world a better place — even if true utopia remains forever just out of reach.
+    passageZh: |
+      1516年，一位名叫托马斯·莫尔的英国作家出版了一本名为《乌托邦》的书。在书中，他描述了一个想象中的岛屿，人人和平相处，平等分享财富，每天只工作六个小时。"utopia"这个词来自希腊语，意思是"不存在的地方"——因为莫尔知道这样完美的社会永远不可能真正存在。
+
+      尽管如此，乌托邦之梦已经吸引了人们数千年。古希腊哲学家柏拉图想象了一座名为"美丽城"的理想城市，由智慧的哲学家而非政治家治理。在古代中国，诗人陶渊明写了《桃花源记》，描述了一个隐藏的山谷，人们和谐地生活，完全与外界的烦恼隔绝。
+
+      19世纪，一些人试图将乌托邦梦想变为现实。来自威尔士的工厂主罗伯特·欧文在美国建立了一个名为"新和谐"的模范社区，工人分享利润，孩子接受免费教育。虽然新和谐最终失败了，但欧文的思想影响了现代关于工人权利和教育的法律。
+
+      今天，建筑师和城市规划者继续设想理想城市。有人提出被农田绿化带包围的"田园城市"，自然与技术并存。另一些人想象由人工智能管理的"智慧城市"，交通自动流通，能源来自可再生资源，废物零污染回收。
+
+      然而，批评者指出，一个人的乌托邦可能是另一个人的噩梦。一个一切都被完美控制的社会可能感觉更像监狱而非天堂。自由、创造力，甚至一定程度的混乱，都是人类生活的重要组成部分，任何完美的制度都无法完全替代。
+
+      也许乌托邦思维的真正价值不在于达到完美，而在于给我们一个奋斗的目标。每当我们建造一个新公园、改善一所学校或设计一栋更无障碍的建筑时，我们都向让世界变得更美好迈出了一小步——即使真正的乌托邦永远遥不可及。
+    vocabHighlights:
+      - word: utopia
+        ref: V1196
+      - word: vision
+        ref: V1197
+      - word: establish
+        ref: V1104
+    questions:
+      - id: R120-Q1
+        type: multiple-choice
+        question: 'Why did Thomas More call his imaginary island "Utopia"?'
+        questionZh: '托马斯·莫尔为什么把他想象中的岛屿叫做"乌托邦"？'
+        options:
+          A: 'It was named after a real place in Greece.'
+          B: 'The word means "perfect place" in Latin.'
+          C: 'He knew such a perfect society could never truly exist.'
+          D: 'He wanted to honour a famous Greek philosopher.'
+        answer: 'C'
+        explanation: 'The word comes from Greek meaning "no place" — More knew such a perfect society could never truly exist.'
+        explanationZh: '这个词来自希腊语，意思是"不存在的地方"——莫尔知道这样完美的社会永远不可能真正存在。'
+      - id: R120-Q2
+        type: multiple-choice
+        question: 'What is the main argument of the critics mentioned in the passage?'
+        questionZh: '文中提到的批评者的主要论点是什么？'
+        options:
+          A: 'Utopian cities would be too expensive to build.'
+          B: 'A perfectly controlled society could feel like a prison.'
+          C: 'Technology will never be advanced enough for smart cities.'
+          D: 'People should focus on the present, not the future.'
+        answer: 'B'
+        explanation: 'Critics say a society where everything is perfectly controlled might feel more like a prison than a paradise.'
+        explanationZh: '批评者说一个一切都被完美控制的社会可能感觉更像监狱而非天堂。'
+
+  # ============================================================
+  # R121 – SimCity: Managing a Virtual Metropolis (Level 3, ~330 words)
+  # ============================================================
+  - id: R121
+    title: 'SimCity: Managing a Virtual Metropolis'
+    titleZh: 'SimCity：管理虚拟大都市'
+    level: 3
+    wordCount: 330
+    topic: virtual worlds
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'The History of SimCity'
+      author: 'Various gaming publications'
+      note: 'Original passage about SimCity and urban planning concepts'
+    passage: |
+      Long before Minecraft, there was SimCity. Created by Will Wright in 1989, SimCity gave players the power to design, build, and manage an entire city from scratch. Unlike most games at the time, which were about fighting enemies or scoring points, SimCity was about solving problems — and the problems were surprisingly real.
+
+      As mayor of your virtual city, you had to make difficult decisions. Where should you build homes? Where should factories go? How many police stations and fire stations did the city need? If you built too many factories near residential areas, citizens would complain about pollution. If you raised taxes too high, people would leave. If you did not invest in roads and public transport, traffic jams would paralyse the city.
+
+      The genius of SimCity was that it taught players about cause and effect without them realising they were learning. Every decision had consequences. Building a nuclear power plant generated cheap electricity but carried the risk of a meltdown. Ignoring crime led to abandoned neighbourhoods. Spending too much money led to bankruptcy.
+
+      Will Wright later explained that he was inspired by a book called "The Death and Life of Great American Cities" by Jane Jacobs, a famous urban planner. Jacobs argued that the best cities are messy, diverse, and built for people rather than cars. Many of her ideas are reflected in SimCity's scoring system, which rewards cities that balance housing, green space, public services, and economic activity.
+
+      SimCity was not just entertainment. Universities used it to teach urban planning. The United States military used a version to practise managing cities after conflicts. Even real city planners admitted that the game had given them useful insights about how complex systems interact.
+
+      Today, SimCity's legacy lives on in hundreds of city-building games. More importantly, it proved that games can be powerful tools for understanding the real world.
+    passageZh: |
+      在我的世界之前很久，就有了模拟城市。由 Will Wright 于1989年创作，模拟城市赋予玩家从零开始设计、建造和管理整座城市的权力。与当时大多数关于打败敌人或得分的游戏不同，模拟城市是关于解决问题的——而这些问题出奇地真实。
+
+      作为虚拟城市的市长，你必须做出困难的决定。应该在哪里建造房屋？工厂应该放在哪里？城市需要多少警察局和消防站？如果你在住宅区附近建太多工厂，市民会抱怨污染。如果你把税率提得太高，人们会离开。如果你不投资道路和公共交通，交通堵塞会瘫痪城市。
+
+      模拟城市的天才之处在于它在玩家不知不觉中教会了他们因果关系。每个决定都有后果。建造核电站产生廉价电力，但有熔毁的风险。忽视犯罪导致社区被遗弃。花太多钱导致破产。
+
+      Will Wright 后来解释说，他受到了著名城市规划师简·雅各布斯的书《美国大城市的死与生》的启发。雅各布斯认为最好的城市是杂乱的、多样的，为人而非为汽车建造的。她的许多想法都反映在模拟城市的评分系统中，该系统奖励平衡住房、绿色空间、公共服务和经济活动的城市。
+
+      模拟城市不仅仅是娱乐。大学用它来教授城市规划。美国军方使用一个版本来练习在冲突后管理城市。甚至真正的城市规划者也承认这款游戏给了他们关于复杂系统如何互动的有用洞见。
+
+      今天，模拟城市的遗产延续在数百款城市建设游戏中。更重要的是，它证明了游戏可以是理解现实世界的强大工具。
+    vocabHighlights:
+      - word: consequence
+        ref: V1101
+      - word: generate
+        ref: V1106
+      - word: infrastructure
+        ref: V1142
+    questions:
+      - id: R121-Q1
+        type: multiple-choice
+        question: 'What was different about SimCity compared to other games in 1989?'
+        questionZh: '与1989年的其他游戏相比，模拟城市有什么不同？'
+        options:
+          A: 'It had better graphics than any other game.'
+          B: 'It was about solving real-world problems, not fighting enemies.'
+          C: 'It could only be played by adults.'
+          D: 'It was the first multiplayer game ever made.'
+        answer: 'B'
+        explanation: 'Unlike most games about fighting or scoring points, SimCity was about solving real urban planning problems.'
+        explanationZh: '与大多数关于战斗或得分的游戏不同，模拟城市是关于解决真实的城市规划问题。'
+      - id: R121-Q2
+        type: vocabulary-in-context
+        question: 'What does "paralyse" mean in "traffic jams would paralyse the city"?'
+        questionZh: '"traffic jams would paralyse the city"中的"paralyse"是什么意思？'
+        options:
+          A: 'Make the city more beautiful'
+          B: 'Cause the city to stop working properly'
+          C: 'Reduce the population of the city'
+          D: 'Make the city more expensive to live in'
+        answer: 'B'
+        explanation: '"Paralyse" means to make something unable to function or move. Traffic jams stop the city from working properly.'
+        explanationZh: '"Paralyse"意思是使某物无法运转或移动。交通堵塞使城市无法正常运转。'
+
+  # ============================================================
+  # R122 – Building Communities, Not Just Houses (Level 3, ~340 words)
+  # ============================================================
+  - id: R122
+    title: 'Building Communities, Not Just Houses'
+    titleZh: '建设社区，而不仅仅是房子'
+    level: 3
+    wordCount: 340
+    topic: building communities
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Habitat for Humanity: Community Building'
+      author: 'Various'
+      note: 'Original passage about community-focused urban planning'
+    passage: |
+      Imagine two neighbourhoods. In the first, all the houses look exactly the same. There are no parks, no shops within walking distance, and no places for neighbours to meet. People drive everywhere, and most residents do not know each other's names. In the second neighbourhood, houses surround a shared garden. There is a small market, a playground, and benches where elderly people sit and chat. Children play safely in the streets, and everyone knows their neighbours.
+
+      Which neighbourhood would you rather live in? Most people choose the second — and yet, for decades, many cities built neighbourhoods that looked more like the first. The reason was efficiency. It was cheaper and faster to build identical houses in rows, with wide roads designed for cars rather than people.
+
+      However, urban planners have learned that a good neighbourhood needs more than just houses. It needs what they call "third places" — spaces that are neither home nor work, where people can gather naturally. Coffee shops, libraries, parks, and community centres all serve as third places.
+
+      Research shows that people who live in neighbourhoods with strong communities are happier, healthier, and safer. When neighbours know each other, they look out for each other. Children have more adults watching over them. Elderly people feel less lonely. Crime decreases because strangers stand out in a close-knit community.
+
+      Some modern architects are now designing neighbourhoods specifically to encourage interaction. They place front porches close to the pavement so that people can easily chat with passers-by. They build shared gardens and communal kitchens. They design walking paths that naturally bring people together at central gathering points.
+
+      Building a community takes more than bricks and concrete. It requires thoughtful design that puts human connection at the centre. After all, a house is just a building — but a community is where people truly feel at home.
+    passageZh: |
+      想象两个社区。在第一个社区中，所有房子看起来一模一样。没有公园，步行距离内没有商店，也没有邻居见面的地方。人们到处开车，大多数居民不知道彼此的名字。在第二个社区，房子围绕着一个共享花园。有一个小市场、一个游乐场，还有老人坐着聊天的长椅。孩子们在街上安全地玩耍，每个人都认识他们的邻居。
+
+      你更愿意住在哪个社区？大多数人选择第二个——然而，几十年来，许多城市建造的社区看起来更像第一个。原因是效率。成排建造相同的房子更便宜更快，宽阔的道路是为汽车而非行人设计的。
+
+      然而，城市规划者已经认识到，一个好的社区需要的不仅仅是房子。它需要他们所说的"第三空间"——既不是家也不是工作场所的空间，人们可以在这里自然地聚集。咖啡店、图书馆、公园和社区中心都充当第三空间。
+
+      研究表明，生活在社区关系牢固的社区中的人更快乐、更健康、更安全。当邻居互相认识时，他们会互相照看。孩子有更多的成年人看护他们。老年人不那么孤独。犯罪率下降，因为陌生人在一个紧密的社区中很引人注目。
+
+      一些现代建筑师现在专门设计鼓励互动的社区。他们把前廊靠近人行道，方便人们与路人聊天。他们建造共享花园和公共厨房。他们设计的步行道自然地将人们引向中心聚集点。
+
+      建设一个社区需要的不仅仅是砖头和混凝土。它需要将人际联系放在中心位置的深思熟虑的设计。毕竟，房子只是一栋建筑——但社区才是人们真正感到家的地方。
+    vocabHighlights:
+      - word: community
+        ref: V1132
+      - word: interact
+        ref: V1159
+      - word: design
+        ref: V1130
+    questions:
+      - id: R122-Q1
+        type: multiple-choice
+        question: 'What are "third places" according to the passage?'
+        questionZh: '根据文章，什么是"第三空间"？'
+        options:
+          A: 'The third house you live in during your life'
+          B: 'Places that are neither home nor work, where people can gather'
+          C: 'The third floor of a building'
+          D: 'Underground spaces used for storage'
+        answer: 'B'
+        explanation: 'Third places are spaces that are neither home nor work, where people can gather naturally.'
+        explanationZh: '第三空间是既不是家也不是工作场所的空间，人们可以在这里自然地聚集。'
+      - id: R122-Q2
+        type: multiple-choice
+        question: 'Why were many neighbourhoods built to look like the first example?'
+        questionZh: '为什么许多社区被建成第一个例子的样子？'
+        options:
+          A: 'People asked for identical houses.'
+          B: 'It was cheaper and faster to build them that way.'
+          C: 'There was a law requiring all houses to look the same.'
+          D: 'Architects did not know how to design different houses.'
+        answer: 'B'
+        explanation: 'The reason was efficiency — it was cheaper and faster to build identical houses in rows.'
+        explanationZh: '原因是效率——成排建造相同的房子更便宜更快。'
+
+  # ============================================================
+  # R123 – The Hanging Gardens: Real or Legend? (Level 4, ~370 words)
+  # ============================================================
+  - id: R123
+    title: 'The Hanging Gardens: Real or Legend?'
+    titleZh: '空中花园：真实还是传说？'
+    level: 4
+    wordCount: 370
+    topic: ancient civilizations
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'History Channel: Seven Wonders of the Ancient World'
+      author: 'Various historians'
+      note: 'Original passage about the Hanging Gardens of Babylon mystery'
+    passage: |
+      The Hanging Gardens of Babylon are one of the Seven Wonders of the Ancient World — and the only one that may never have existed at all. Ancient writers described them as a magnificent structure of terraced gardens, rising high above the city of Babylon in modern-day Iraq. Trees, flowers, and waterfalls cascaded down the levels, creating a green paradise in the middle of the desert.
+
+      According to legend, King Nebuchadnezzar II built the gardens around 600 BC as a gift for his wife, Amytis, who missed the green hills of her homeland in Media. The structure was said to be about 23 metres tall — roughly the height of a seven-storey building — with an ingenious water system that pumped river water from the Euphrates up to the highest level.
+
+      However, there is a significant problem with this story. No archaeological evidence of the gardens has ever been found in Babylon, despite extensive excavations. Furthermore, Babylonian records from that period — which carefully documented the king's other building projects — make no mention of any hanging gardens.
+
+      This mystery has led scholars to propose several theories. Some believe the gardens existed but were destroyed by earthquakes and floods long before modern archaeology began. Others suggest that the gardens were actually located in the Assyrian city of Nineveh, about 500 kilometres north of Babylon, where archaeologists have found evidence of elaborate garden structures and aqueducts.
+
+      A third theory is that the gardens were entirely fictional — a story invented by Greek writers who had never visited Babylon but wanted to impress their readers with tales of exotic Eastern wonders.
+
+      Whatever the truth, the Hanging Gardens remain one of history's most fascinating mysteries. They represent the human desire to create beauty and bring nature into our built environment — an ambition that city planners and architects share to this day. Every rooftop garden, indoor park, and green building in a modern city carries a little of the spirit of those legendary gardens of ancient Babylon.
+    passageZh: |
+      巴比伦空中花园是古代世界七大奇迹之一——也是唯一一个可能从未存在过的。古代作家将它们描述为壮丽的阶梯式花园结构，高高耸立在今天伊拉克境内的巴比伦城上方。树木、花卉和瀑布层层叠叠倾泻而下，在沙漠中央创造了一个绿色天堂。
+
+      据传说，尼布甲尼撒二世国王在大约公元前600年建造了花园，作为送给妻子阿米提斯的礼物，她思念故乡米底亚的绿色山丘。据说这个结构约23米高——大约相当于七层楼——配有巧妙的供水系统，将幼发拉底河的水泵送到最高层。
+
+      然而，这个故事有一个重大问题。尽管进行了大量挖掘，但从未在巴比伦发现过花园的考古证据。此外，那个时期的巴比伦记录——详细记载了国王的其他建筑项目——没有提到任何空中花园。
+
+      这个谜团促使学者们提出了几种理论。一些人认为花园确实存在，但在现代考古学开始之前就被地震和洪水摧毁了。另一些人认为花园实际上位于巴比伦以北约500公里的亚述城市尼尼微，考古学家在那里发现了精心设计的花园结构和水渠的证据。
+
+      第三种理论是花园完全是虚构的——由从未到过巴比伦的希腊作家编造的故事，他们想用异域东方奇迹的故事来打动读者。
+
+      不管真相如何，空中花园仍然是历史上最引人入胜的谜团之一。它们代表了人类创造美丽并将自然带入建筑环境的愿望——这种雄心至今仍为城市规划者和建筑师所共有。现代城市中的每一个屋顶花园、室内公园和绿色建筑都承载着古巴比伦传奇花园的一点精神。
+    vocabHighlights:
+      - word: significant
+        ref: V1113
+      - word: theory
+        ref: V1115
+      - word: evidence
+        ref: V0776
+    questions:
+      - id: R123-Q1
+        type: multiple-choice
+        question: 'Why are the Hanging Gardens considered the most mysterious of the Seven Wonders?'
+        questionZh: '为什么空中花园被认为是七大奇迹中最神秘的？'
+        options:
+          A: 'They were the oldest of all the wonders.'
+          B: 'No archaeological evidence has been found to prove they existed.'
+          C: 'Nobody knows who designed them.'
+          D: 'They were built underground where nobody could see them.'
+        answer: 'B'
+        explanation: 'No archaeological evidence of the gardens has ever been found, making their existence uncertain.'
+        explanationZh: '从未发现过花园的考古证据，使其存在变得不确定。'
+      - id: R123-Q2
+        type: multiple-choice
+        question: 'What is the third theory mentioned in the passage?'
+        questionZh: '文中提到的第三种理论是什么？'
+        options:
+          A: 'The gardens were built in a different city.'
+          B: 'The gardens were destroyed by an earthquake.'
+          C: 'The gardens were entirely fictional, invented by Greek writers.'
+          D: 'The gardens were actually underwater.'
+        answer: 'C'
+        explanation: 'The third theory is that the gardens were entirely fictional — a story invented by Greek writers.'
+        explanationZh: '第三种理论是花园完全是虚构的——由希腊作家编造的故事。'
+
+  # ============================================================
+  # R124 – Green Cities of the Future (Level 3, ~340 words)
+  # ============================================================
+  - id: R124
+    title: 'Green Cities of the Future'
+    titleZh: '未来的绿色城市'
+    level: 3
+    wordCount: 340
+    topic: city planning
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'BBC Future: Eco-Cities'
+      author: 'BBC'
+      note: 'Original passage about sustainable city design concepts'
+    passage: |
+      What will cities look like in fifty years? Many urban planners believe that the cities of the future will be greener, cleaner, and more connected to nature than anything we see today.
+
+      One of the most exciting ideas is the "sponge city." In a traditional city, rain falls on concrete and asphalt, which cannot absorb water. As a result, heavy rain causes flooding. A sponge city solves this problem by incorporating green roofs, parks, and permeable pavements that soak up rainwater like a sponge. China has already started building sponge cities in over thirty locations.
+
+      Another concept is the "15-minute city," where everything residents need — shops, schools, parks, hospitals, and workplaces — is within a fifteen-minute walk or bicycle ride from their home. Paris has adopted this idea, closing some streets to cars and adding bicycle lanes to encourage people to walk and cycle instead of drive.
+
+      Vertical farming is also changing how cities think about food. Instead of transporting vegetables hundreds of kilometres from rural farms, some cities are growing food inside tall buildings using artificial light and recycled water. A single vertical farm can produce as much food as a traditional farm ten times its size.
+
+      Energy is perhaps the biggest challenge. Currently, cities consume over 75% of the world's energy and produce more than 70% of carbon emissions. However, new technologies like solar windows, which generate electricity from sunlight while still being transparent, could transform every building into a small power station.
+
+      Singapore is leading the way with its "City in a Garden" vision. The Gardens by the Bay feature enormous artificial trees called Supertrees, which collect solar energy, harvest rainwater, and act as vertical gardens — all while looking spectacular at night when they light up.
+
+      The green city of the future is not just a dream. Piece by piece, city by city, it is already being built.
+    passageZh: |
+      五十年后城市会是什么样子？许多城市规划者认为，未来的城市将比我们今天看到的任何城市都更绿色、更清洁、与自然更紧密相连。
+
+      最令人兴奋的概念之一是"海绵城市"。在传统城市中，雨水落在不能吸水的混凝土和沥青上。因此，暴雨会导致洪水。海绵城市通过结合绿色屋顶、公园和可渗透路面来解决这个问题，它们像海绵一样吸收雨水。中国已经在三十多个地点开始建设海绵城市。
+
+      另一个概念是"15分钟城市"，居民需要的一切——商店、学校、公园、医院和工作场所——都在步行或骑自行车十五分钟内可达。巴黎已经采用了这个理念，关闭了一些街道的汽车通行，并增加了自行车道，鼓励人们步行和骑自行车而不是开车。
+
+      垂直农业也在改变城市对食物的思考方式。一些城市不再从数百公里外的农村农场运输蔬菜，而是在高层建筑内利用人工光照和循环水种植食物。一个垂直农场可以生产出传统农场十倍面积的食物量。
+
+      能源也许是最大的挑战。目前，城市消耗了世界上超过75%的能源，产生了超过70%的碳排放。然而，像太阳能窗户这样的新技术——在透明的同时从阳光中产生电力——可以将每栋建筑变成一个小型发电站。
+
+      新加坡以其"花园中的城市"愿景引领潮流。滨海湾花园拥有名为"超级树"的巨大人工树，它们收集太阳能、收集雨水并充当垂直花园——所有这些在夜晚灯光亮起时看起来都十分壮观。
+
+      未来的绿色城市不仅仅是梦想。一点一点，一个城市一个城市，它已经在建设中了。
+    vocabHighlights:
+      - word: sustainable
+        ref: V1254
+      - word: renewable
+        ref: V1148
+      - word: emission
+        ref: V1150
+    questions:
+      - id: R124-Q1
+        type: multiple-choice
+        question: 'What is the main idea behind a "sponge city"?'
+        questionZh: '"海绵城市"背后的主要理念是什么？'
+        options:
+          A: 'Building cities entirely out of soft materials'
+          B: 'Using green roofs and permeable surfaces to absorb rainwater'
+          C: 'Making cities float on water like a sponge'
+          D: 'Replacing all concrete with natural stone'
+        answer: 'B'
+        explanation: 'Sponge cities incorporate green roofs, parks, and permeable pavements that soak up rainwater.'
+        explanationZh: '海绵城市结合了绿色屋顶、公园和可渗透路面来吸收雨水。'
+      - id: R124-Q2
+        type: vocabulary-in-context
+        question: 'What does "transparent" mean in "still being transparent"?'
+        questionZh: '"still being transparent"中的"transparent"是什么意思？'
+        options:
+          A: 'Very expensive'
+          B: 'Allowing light to pass through so you can see through it'
+          C: 'Easy to understand'
+          D: 'Made of metal'
+        answer: 'B'
+        explanation: 'Solar windows are transparent — you can see through them like normal glass, but they also generate electricity.'
+        explanationZh: '太阳能窗户是透明的——你可以像普通玻璃一样看穿它们，但它们也能产生电力。'
+
+  # ============================================================
+  # R125-R130: Abbreviated entries (same format)
+  # ============================================================
+
+  - id: R125
+    title: 'The Forbidden City: A City Within a City'
+    titleZh: '紫禁城：城中之城'
+    level: 4
+    wordCount: 380
+    topic: ancient civilizations
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'National Geographic: The Forbidden City'
+      author: 'National Geographic'
+      note: 'Original passage about the architecture and history of the Forbidden City'
+    passage: |
+      In the heart of Beijing stands a palace complex so vast that it contains 9,999 rooms. The Forbidden City, also known as the Palace Museum, was home to Chinese emperors for nearly 500 years, from 1420 to 1912. It is one of the best-preserved examples of ancient palace architecture in the world.
+
+      The construction of the Forbidden City began in 1406 under Emperor Yongle of the Ming Dynasty. Over one million workers spent fourteen years building it. The complex covers 720,000 square metres — roughly the size of 100 football pitches — and is surrounded by a 52-metre-wide moat and thick walls standing over seven metres tall.
+
+      Every detail of the Forbidden City was designed with symbolic meaning. The colour red, which dominates the walls and gates, represents good fortune and joy. The golden-yellow tiles on the roofs were reserved exclusively for the emperor, as yellow symbolised supreme power. The number nine, considered the luckiest number in Chinese culture, appears repeatedly — in the rows of roof decorations, the number of door studs, and even in the layout of the buildings.
+
+      The complex is divided into two main sections. The Outer Court was used for state ceremonies and official business. It contains three enormous halls, the largest of which — the Hall of Supreme Harmony — was where the emperor held court and made important announcements. The Inner Court was the emperor's private residence, where he lived with his family and servants.
+
+      One of the most remarkable features is the drainage system. The entire complex slopes gently from north to south, and over a thousand carved stone dragon heads along the edges of terraces act as water spouts during rain, channelling water away from the buildings efficiently.
+
+      Today, the Forbidden City receives over 19 million visitors each year, making it the most visited palace in the world. Walking through its ancient halls and courtyards, visitors can still feel the grandeur and precision of the architects who designed this extraordinary city within a city five centuries ago.
+    passageZh: |
+      在北京的中心矗立着一座宫殿建筑群，如此庞大以至于包含9,999个房间。紫禁城，也被称为故宫博物院，是中国皇帝近500年的居所，从1420年到1912年。它是世界上保存最好的古代宫殿建筑范例之一。
+
+      紫禁城的建造始于1406年，由明朝永乐皇帝下令。超过一百万名工人花了十四年时间建造。建筑群占地720,000平方米——大约相当于100个足球场——周围环绕着52米宽的护城河和超过七米高的厚城墙。
+
+      紫禁城的每一个细节都具有象征意义。主导墙壁和大门的红色代表好运和喜悦。屋顶上的金黄色琉璃瓦专属于皇帝，因为黄色象征最高权力。数字九，在中国文化中被认为是最吉利的数字，反复出现——在屋顶装饰的排列中、门钉的数量中，甚至在建筑的布局中。
+
+      建筑群分为两个主要部分。外朝用于国家典礼和公务。它包含三个巨大的殿堂，其中最大的——太和殿——是皇帝举行朝会和发布重要公告的地方。内廷是皇帝的私人住所，他与家人和仆人住在那里。
+
+      最引人注目的特征之一是排水系统。整个建筑群从北向南缓缓倾斜，台阶边缘有超过一千个雕刻的石龙头在下雨时充当出水口，有效地将水从建筑物中引走。
+
+      今天，紫禁城每年接待超过1900万游客，是世界上参观人数最多的宫殿。走过它古老的大殿和庭院，游客仍然能感受到五百年前设计这座非凡"城中之城"的建筑师们的宏伟和精确。
+    vocabHighlights:
+      - word: architecture
+        ref: V1126
+      - word: construct
+        ref: V1129
+      - word: heritage
+        ref: V1152
+    questions:
+      - id: R125-Q1
+        type: multiple-choice
+        question: 'Why is the number nine important in the Forbidden City?'
+        questionZh: '为什么数字九在紫禁城中很重要？'
+        options:
+          A: 'Nine was the emperor''s favourite number.'
+          B: 'Nine is considered the luckiest number in Chinese culture.'
+          C: 'There were nine emperors who lived there.'
+          D: 'The city took nine years to build.'
+        answer: 'B'
+        explanation: 'Nine is considered the luckiest number in Chinese culture and appears repeatedly in the design.'
+        explanationZh: '九在中国文化中被认为是最吉利的数字，在设计中反复出现。'
+      - id: R125-Q2
+        type: vocabulary-in-context
+        question: 'What does "grandeur" mean in the last paragraph?'
+        questionZh: '最后一段中的"grandeur"是什么意思？'
+        options:
+          A: 'The size of the rooms'
+          B: 'Impressive beauty and magnificence'
+          C: 'The age of the buildings'
+          D: 'The number of visitors'
+        answer: 'B'
+        explanation: '"Grandeur" means impressive beauty, magnificence, and splendour.'
+        explanationZh: '"Grandeur"意思是令人印象深刻的美丽、壮丽和辉煌。'
+
+  - id: R126
+    title: 'How Bridges Connect Communities'
+    titleZh: '桥梁如何连接社区'
+    level: 3
+    wordCount: 330
+    topic: city planning
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Engineering for Kids: Bridges'
+      author: 'Various'
+      note: 'Original passage about bridge engineering and community connection'
+    passage: |
+      Bridges are more than just structures that cross water or valleys. They connect communities, enable trade, and transform the way people live. Without bridges, many cities simply could not exist.
+
+      The earliest bridges were probably fallen trees placed across streams. Ancient Romans improved on this by building stone arch bridges that distributed weight evenly across a curved surface. This design was so effective that some Roman bridges are still carrying traffic two thousand years later.
+
+      During the Industrial Revolution, engineers developed new materials and techniques. Iron and steel allowed bridges to span much greater distances than stone. The Brooklyn Bridge in New York, completed in 1883, was one of the first suspension bridges to use steel cables. When it opened, it connected Manhattan and Brooklyn for the first time, transforming two separate cities into one.
+
+      Today's engineers face even greater challenges. The Hong Kong-Zhuhai-Macau Bridge, opened in 2018, stretches 55 kilometres across the Pearl River Delta, making it the longest sea-crossing bridge in the world. It includes an underwater tunnel to allow large ships to pass and was designed to withstand typhoons and earthquakes.
+
+      But not all bridges are grand engineering projects. Some of the most important bridges are small and simple. In rural areas of developing countries, a basic footbridge over a river can mean the difference between children walking to school safely and having to swim through dangerous water. The Bridges to Prosperity charity has built over 350 footbridges in poor communities, connecting over one million people to schools, hospitals, and markets.
+
+      Whether enormous or modest, bridges represent one of humanity's most fundamental instincts: the desire to reach the other side, to connect with others, and to overcome the obstacles that nature places in our path. Every bridge tells the story of a community that refused to be divided.
+    passageZh: |
+      桥梁不仅仅是跨越水面或山谷的结构。它们连接社区、促进贸易，并改变人们的生活方式。没有桥梁，许多城市根本无法存在。
+
+      最早的桥梁可能是放在溪流上的倒下的树木。古罗马人通过建造石拱桥加以改进，这种桥将重量均匀分布在弧形表面上。这种设计如此有效，以至于一些罗马桥梁在两千年后仍在承载交通。
+
+      工业革命期间，工程师们开发了新材料和新技术。铁和钢使桥梁能够跨越比石头大得多的距离。1883年建成的纽约布鲁克林大桥是首批使用钢缆的吊桥之一。它开通时首次连接了曼哈顿和布鲁克林，将两个独立的城市变成了一个。
+
+      今天的工程师面临着更大的挑战。2018年通车的港珠澳大桥横跨珠江三角洲55公里，是世界上最长的跨海大桥。它包括一条海底隧道以允许大型船舶通过，并被设计为能抵御台风和地震。
+
+      但并非所有桥梁都是宏大的工程项目。一些最重要的桥梁小而简单。在发展中国家的农村地区，河上的一座基本人行桥可能意味着孩子们安全步行上学和不得不游过危险水域之间的区别。"通向繁荣的桥梁"慈善机构已经在贫困社区建造了350多座人行桥，将超过一百万人与学校、医院和市场连接起来。
+
+      无论巨大还是简朴，桥梁代表了人类最基本的本能之一：到达另一边的渴望，与他人联系的渴望，以及克服自然在我们前进道路上设置的障碍的渴望。每座桥梁都讲述了一个拒绝被分割的社区的故事。
+    vocabHighlights:
+      - word: structure
+        ref: V1127
+      - word: facilitate
+        ref: V1120
+      - word: obstacle
+        ref: V1250
+    questions:
+      - id: R126-Q1
+        type: multiple-choice
+        question: 'Why were Roman arch bridges so successful?'
+        questionZh: '为什么罗马拱桥如此成功？'
+        options:
+          A: 'They were painted bright colours to attract attention.'
+          B: 'They distributed weight evenly across a curved surface.'
+          C: 'They were built using iron and steel.'
+          D: 'They could only carry pedestrians, not vehicles.'
+        answer: 'B'
+        explanation: 'Stone arch bridges distributed weight evenly across a curved surface, making them extremely durable.'
+        explanationZh: '石拱桥将重量均匀分布在弧形表面上，使其极其耐用。'
+      - id: R126-Q2
+        type: vocabulary-in-context
+        question: 'What does "span" mean in "bridges to span much greater distances"?'
+        questionZh: '"bridges to span much greater distances"中的"span"是什么意思？'
+        options:
+          A: 'To decorate something'
+          B: 'To cross or extend across a distance'
+          C: 'To measure the height of something'
+          D: 'To build something quickly'
+        answer: 'B'
+        explanation: '"Span" means to extend across or bridge a distance. Steel bridges could span greater distances than stone.'
+        explanationZh: '"Span"意思是跨越或延伸过一段距离。钢桥能跨越比石桥更大的距离。'
+
+  - id: R127
+    title: 'What Makes a Good Neighbourhood?'
+    titleZh: '什么造就了好社区？'
+    level: 3
+    wordCount: 320
+    topic: building communities
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Happy City by Charles Montgomery'
+      author: 'Charles Montgomery'
+      note: 'Original passage inspired by urban happiness research'
+    passage: |
+      What makes some neighbourhoods wonderful places to live while others feel unfriendly and lonely? Researchers have spent years trying to answer this question, and their findings might surprise you.
+
+      A good neighbourhood does not need expensive houses or fancy restaurants. What matters most is walkability — the ability to walk easily from place to place. Studies show that people who live in walkable neighbourhoods are healthier because they exercise more, happier because they meet more neighbours, and wealthier because they spend less money on petrol and car repairs.
+
+      Trees also make a huge difference. Research from Toronto found that having ten or more trees on a city block improved residents' health as much as being seven years younger or earning $10,000 more per year. Trees clean the air, reduce stress, provide shade in summer, and make streets feel safer and more welcoming.
+
+      The speed of traffic matters too. On streets where cars drive slowly, children play outside, neighbours chat on the pavement, and local shops thrive. On fast, busy roads, people stay indoors, and communities become fragmented. The famous urban planner Donald Appleyard discovered that residents on quiet streets had three times as many friends as those living on busy roads.
+
+      Mixed-use development — where homes, shops, offices, and parks are all in the same area — also creates better neighbourhoods. When you can buy bread, post a letter, and sit in a park without driving anywhere, life becomes more convenient, social, and enjoyable.
+
+      Finally, good neighbourhoods feel safe. This does not necessarily mean more police or security cameras. Jane Jacobs argued that the best security comes from "eyes on the street" — ordinary people going about their daily lives, naturally watching over their community.
+
+      The recipe for a great neighbourhood, then, is surprisingly simple: trees, walkable streets, mixed-use buildings, slow traffic, and neighbours who know each other.
+    passageZh: |
+      是什么让一些社区成为美好的居住地，而另一些却让人感到不友好和孤独？研究人员花了数年时间试图回答这个问题，他们的发现可能会让你惊讶。
+
+      一个好社区不需要昂贵的房子或高档餐厅。最重要的是步行性——从一个地方轻松步行到另一个地方的能力。研究表明，居住在步行友好社区的人更健康，因为他们锻炼更多；更快乐，因为他们遇到更多邻居；更富有，因为他们在汽油和汽车维修上花费更少。
+
+      树木也有巨大的影响。多伦多的研究发现，一个城市街区有十棵或更多的树能改善居民的健康，效果相当于年轻七岁或每年多赚10,000美元。树木净化空气、减少压力、在夏天提供阴凉，使街道感觉更安全、更温馨。
+
+      交通速度也很重要。在汽车缓慢行驶的街道上，孩子们在外面玩耍，邻居们在人行道上聊天，当地商店蓬勃发展。在快速繁忙的道路上，人们待在室内，社区变得支离破碎。著名的城市规划师唐纳德·阿普尔亚德发现，安静街道上的居民拥有的朋友数量是繁忙道路上居民的三倍。
+
+      混合用途开发——住宅、商店、办公室和公园都在同一区域——也创造了更好的社区。当你不用开车就能买面包、寄信和坐在公园里时，生活变得更方便、更有社交性和更愉快。
+
+      最后，好的社区让人感到安全。这不一定意味着更多的警察或安全摄像头。简·雅各布斯认为，最好的安全来自"街道上的眼睛"——普通人在进行日常生活时自然地守护他们的社区。
+
+      那么，一个好社区的配方出奇地简单：树木、步行友好的街道、混合用途建筑、缓慢的交通和互相认识的邻居。
+    vocabHighlights:
+      - word: community
+        ref: V1132
+      - word: pedestrian
+        ref: V1182
+      - word: thrive
+        ref: V1290
+    questions:
+      - id: R127-Q1
+        type: multiple-choice
+        question: 'According to the passage, what is the most important quality of a good neighbourhood?'
+        questionZh: '根据文章，好社区最重要的品质是什么？'
+        options:
+          A: 'Having expensive houses and fancy restaurants'
+          B: 'Walkability — the ability to walk easily from place to place'
+          C: 'Having a large police force'
+          D: 'Being located in a major city'
+        answer: 'B'
+        explanation: 'The passage says what matters most is walkability — the ability to walk easily from place to place.'
+        explanationZh: '文章说最重要的是步行性——从一个地方轻松步行到另一个地方的能力。'
+
+  - id: R128
+    title: 'Underwater Cities: Science Fiction or Future Reality?'
+    titleZh: '水下城市：科幻还是未来现实？'
+    level: 4
+    wordCount: 350
+    topic: city planning
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'Popular Science: Living Under the Sea'
+      author: 'Various'
+      note: 'Original passage about underwater habitat concepts'
+    passage: |
+      As the world's population grows and sea levels rise, some architects are asking a bold question: could humans live underwater? While it sounds like science fiction, several serious projects are already exploring this possibility.
+
+      The concept is not entirely new. In the 1960s, the famous ocean explorer Jacques Cousteau built Conshelf, an underwater habitat where researchers lived and worked on the seabed for up to a month. Although the experiment was successful, the technology at the time was too expensive and limited for large-scale underwater living.
+
+      Today, advances in engineering have made the idea more feasible. Japanese construction company Shimizu Corporation has designed Ocean Spiral, a concept for an underwater city that would house 5,000 people. The design features a massive sphere floating just below the ocean surface, connected by a spiral pathway to the seabed three kilometres below. Energy would come from ocean thermal differences, and food would be grown using deep-sea nutrients.
+
+      However, building cities underwater presents enormous challenges. Water pressure increases with depth, requiring incredibly strong materials for construction. Supplying fresh air, removing waste, and maintaining comfortable temperatures all require sophisticated engineering. Furthermore, the psychological effects of living without natural sunlight could be significant — research shows that humans need daylight to maintain healthy sleep patterns and mood.
+
+      Despite these difficulties, some experts believe underwater habitats could become necessary rather than optional. With climate change threatening coastal cities worldwide, parts of cities like Miami, Shanghai, and Jakarta could be underwater by 2100. Learning to build in and on the ocean may become an essential survival skill for future generations.
+
+      For now, underwater cities remain in the design phase. But as one architect noted, "Every building that exists today was once impossible. The only question is not whether we can build underwater, but when we will choose to."
+    passageZh: |
+      随着世界人口增长和海平面上升，一些建筑师提出了一个大胆的问题：人类能生活在水下吗？虽然听起来像科幻小说，但已经有几个严肃的项目在探索这种可能性。
+
+      这个概念并不完全是新的。在1960年代，著名的海洋探险家雅克·库斯托建造了大陆架，这是一个水下栖息地，研究人员在海底生活和工作长达一个月。虽然实验很成功，但当时的技术对于大规模水下生活来说太昂贵且有限。
+
+      今天，工程学的进步使这个想法更加可行。日本建筑公司清水建设设计了"海洋螺旋"，一个可容纳5,000人的水下城市概念。设计特点是一个漂浮在海面下方的巨大球体，通过螺旋通道连接到三公里以下的海底。能源来自海洋温差，食物利用深海营养物质种植。
+
+      然而，在水下建造城市面临巨大的挑战。水压随深度增加，需要极其坚固的建筑材料。供应新鲜空气、清除废物和保持舒适温度都需要复杂的工程。此外，没有自然阳光生活的心理影响可能很大——研究表明人类需要日光来维持健康的睡眠模式和情绪。
+
+      尽管存在这些困难，一些专家认为水下栖息地可能变成必需品而非可选项。随着气候变化威胁着全球沿海城市，到2100年，迈阿密、上海和雅加达等城市的部分地区可能会在水下。学习在海洋中和海洋上建造可能成为未来几代人的基本生存技能。
+
+      目前，水下城市仍处于设计阶段。但正如一位建筑师所说："今天存在的每栋建筑都曾经是不可能的。唯一的问题不是我们能否在水下建造，而是我们何时选择这样做。"
+    vocabHighlights:
+      - word: feasible
+        ref: V1225
+      - word: significant
+        ref: V1113
+      - word: construct
+        ref: V1129
+    questions:
+      - id: R128-Q1
+        type: multiple-choice
+        question: 'What was Conshelf?'
+        questionZh: '大陆架是什么？'
+        options:
+          A: 'A company that builds underwater bridges'
+          B: 'An underwater habitat where researchers lived on the seabed'
+          C: 'A submarine used for ocean exploration'
+          D: 'A city built on a floating platform'
+        answer: 'B'
+        explanation: 'Conshelf was an underwater habitat built by Jacques Cousteau where researchers lived and worked on the seabed.'
+        explanationZh: '大陆架是雅克·库斯托建造的水下栖息地，研究人员在海底生活和工作。'
+
+  - id: R129
+    title: 'The Silk Road: A Highway of Ideas'
+    titleZh: '丝绸之路：思想的高速公路'
+    level: 3
+    wordCount: 340
+    topic: ancient civilizations
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'BBC History: The Silk Road'
+      author: 'BBC'
+      note: 'Original passage about the cultural impact of the Silk Road'
+    passage: |
+      When most people think of the Silk Road, they imagine camel caravans carrying silk and spices across desert sands. But the Silk Road was much more than a trade route — it was one of history's greatest highways of ideas, religions, and inventions.
+
+      The Silk Road was not a single road but a network of routes stretching over 6,400 kilometres from China to the Mediterranean Sea. Merchants, monks, soldiers, and scholars travelled these paths for over 1,500 years, from around 130 BC to 1453 AD. Along the way, they carried not only goods but also knowledge, languages, and beliefs.
+
+      Paper and printing, two of China's greatest inventions, spread westward along the Silk Road and eventually transformed European society. Gunpowder followed the same route, changing warfare forever. In the other direction, mathematics and astronomical knowledge from the Islamic world travelled eastward to China.
+
+      The exchange was not limited to technology. Buddhism spread from India to China through Silk Road merchants and monks, becoming one of China's major religions. Islam spread along the same routes to Central Asia. Christianity reached as far as China, where a seventh-century stone monument in Xi'an records the arrival of Christian missionaries.
+
+      Cities along the Silk Road flourished as centres of trade and learning. Samarkand, in modern Uzbekistan, became famous for its stunning blue-tiled mosques and libraries. Dunhuang, in western China, housed the Mogao Caves — over 700 caves filled with Buddhist paintings and manuscripts, preserved in the dry desert air for over a thousand years.
+
+      Today, China's Belt and Road Initiative is sometimes called the "New Silk Road." Like its ancient predecessor, it aims to connect countries through trade, infrastructure, and cultural exchange. The Silk Road may have closed, but the human desire to connect, share, and learn from distant cultures remains as strong as ever.
+    passageZh: |
+      当大多数人想到丝绸之路时，他们想象的是骆驼商队穿越沙漠运送丝绸和香料。但丝绸之路远不止是一条贸易路线——它是历史上最伟大的思想、宗教和发明的高速公路之一。
+
+      丝绸之路不是一条单一的道路，而是一个从中国延伸到地中海超过6,400公里的路线网络。商人、僧侣、士兵和学者在这些道路上行走了1,500多年，从大约公元前130年到公元1453年。一路上，他们不仅携带货物，还携带知识、语言和信仰。
+
+      纸和印刷术，中国最伟大的两项发明，沿丝绸之路向西传播，最终改变了欧洲社会。火药沿同一路线传播，永远改变了战争。反方向，来自伊斯兰世界的数学和天文知识向东传播到中国。
+
+      交流不仅限于技术。佛教通过丝绸之路的商人和僧侣从印度传播到中国，成为中国的主要宗教之一。伊斯兰教沿同一路线传播到中亚。基督教远达中国，西安的一块七世纪石碑记录了基督教传教士的到来。
+
+      丝绸之路沿线的城市作为贸易和学习中心蓬勃发展。现代乌兹别克斯坦的撒马尔罕以其令人惊叹的蓝色瓷砖清真寺和图书馆而闻名。中国西部的敦煌拥有莫高窟——超过700个洞窟，充满佛教绘画和手稿，在干燥的沙漠空气中保存了一千多年。
+
+      今天，中国的"一带一路"倡议有时被称为"新丝绸之路"。像它的古老前身一样，它旨在通过贸易、基础设施和文化交流来连接国家。丝绸之路可能已经关闭，但人类与远方文化联系、分享和学习的愿望仍然一如既往地强烈。
+    vocabHighlights:
+      - word: trade
+        ref: V1161
+      - word: flourish
+        ref: V1241
+      - word: heritage
+        ref: V1152
+    questions:
+      - id: R129-Q1
+        type: multiple-choice
+        question: 'According to the passage, what was the Silk Road''s most important function?'
+        questionZh: '根据文章，丝绸之路最重要的功能是什么？'
+        options:
+          A: 'Transporting silk from China to Europe'
+          B: 'Spreading ideas, religions, and inventions between civilizations'
+          C: 'Providing a route for military campaigns'
+          D: 'Connecting different animal habitats'
+        answer: 'B'
+        explanation: 'The passage emphasizes that the Silk Road was a highway of ideas, religions, and inventions, not just trade goods.'
+        explanationZh: '文章强调丝绸之路是思想、宗教和发明的高速公路，不仅仅是贸易商品。'
+
+  - id: R130
+    title: 'From Huts to Skyscrapers: How Buildings Evolved'
+    titleZh: '从茅屋到摩天大楼：建筑如何演变'
+    level: 3
+    wordCount: 350
+    topic: architecture
+    tags: [Q08, month-8]
+    source:
+      type: 'inspired-by'
+      title: 'A Short History of Buildings'
+      author: 'Various'
+      note: 'Original passage tracing the history of building design'
+    passage: |
+      The story of human buildings is the story of human ambition. From the earliest shelters to the tallest skyscrapers, every advance in architecture reflects a new challenge that humans needed to overcome.
+
+      The first human dwellings were simple shelters made from animal skins, branches, and leaves. Around 12,000 years ago, when people began farming and settling in one place, they started building more permanent structures from mud bricks dried in the sun. These were the first houses as we know them.
+
+      The ancient Egyptians took building to a new level with their pyramids. The Great Pyramid of Giza, built around 2560 BC, stood 146 metres tall and remained the tallest structure in the world for over 3,800 years. Engineers still debate exactly how it was constructed without modern machinery.
+
+      Roman architects revolutionized building with two key innovations: the arch and concrete. Arches allowed them to build enormous structures like the Colosseum, while Roman concrete — a mixture of volcanic ash, lime, and seawater — was so durable that many Roman buildings still stand today.
+
+      The Gothic cathedrals of medieval Europe pushed architecture skyward with pointed arches and flying buttresses — external supports that allowed walls to be thinner and windows to be larger. The result was buildings filled with coloured light from enormous stained-glass windows.
+
+      The real revolution came in the 1880s when engineers in Chicago discovered that a steel frame could support an entire building, removing the need for thick walls. This made skyscrapers possible. The Home Insurance Building, completed in 1885 with ten storeys, is considered the world's first skyscraper.
+
+      Today, the Burj Khalifa in Dubai reaches 828 metres — nearly six times the height of the Great Pyramid. But height is no longer the only goal. Modern architects are designing buildings that generate their own electricity, clean the air around them, and adapt their shape to changing weather conditions. The story of architecture is far from over.
+    passageZh: |
+      人类建筑的故事就是人类雄心的故事。从最早的避难所到最高的摩天大楼，建筑的每一次进步都反映了人类需要克服的新挑战。
+
+      最早的人类住所是用兽皮、树枝和树叶制成的简单避难所。大约12,000年前，当人们开始耕种并定居时，他们开始用在阳光下晒干的泥砖建造更持久的结构。这些就是我们所知道的最早的房子。
+
+      古埃及人用金字塔将建筑提升到了新的水平。大约公元前2560年建造的吉萨大金字塔高146米，在超过3,800年间一直是世界上最高的建筑。工程师们至今仍在争论它是如何在没有现代机械的情况下建造的。
+
+      罗马建筑师用两项关键创新革命了建筑：拱门和混凝土。拱门使他们能够建造像罗马斗兽场这样的巨大建筑，而罗马混凝土——火山灰、石灰和海水的混合物——如此耐用，以至于许多罗马建筑至今仍然屹立。
+
+      中世纪欧洲的哥特式大教堂用尖拱和飞扶壁——外部支撑，使墙壁可以更薄、窗户可以更大——将建筑推向天空。结果是充满了巨大彩色玻璃窗投射的彩色光线的建筑。
+
+      真正的革命发生在1880年代，芝加哥的工程师发现钢框架可以支撑整栋建筑，不再需要厚墙。这使摩天大楼成为可能。1885年竣工的家庭保险大楼有十层，被认为是世界上第一座摩天大楼。
+
+      今天，迪拜的哈利法塔高828米——几乎是大金字塔高度的六倍。但高度不再是唯一的目标。现代建筑师正在设计能自己发电、净化周围空气、并根据天气变化调整形状的建筑。建筑的故事远未结束。
+    vocabHighlights:
+      - word: architecture
+        ref: V1126
+      - word: construct
+        ref: V1129
+      - word: revolution
+        ref: V1178
+    questions:
+      - id: R130-Q1
+        type: multiple-choice
+        question: 'What two Roman innovations revolutionized architecture?'
+        questionZh: '哪两项罗马创新革命了建筑？'
+        options:
+          A: 'Glass windows and wooden frames'
+          B: 'The arch and concrete'
+          C: 'Steel beams and elevators'
+          D: 'Flying buttresses and stained glass'
+        answer: 'B'
+        explanation: 'Roman architects revolutionized building with the arch and concrete.'
+        explanationZh: '罗马建筑师用拱门和混凝土革新了建筑。'
+      - id: R130-Q2
+        type: multiple-choice
+        question: 'What made skyscrapers possible in the 1880s?'
+        questionZh: '1880年代是什么使摩天大楼成为可能？'
+        options:
+          A: 'The invention of elevators'
+          B: 'New types of glass'
+          C: 'The discovery that steel frames could support entire buildings'
+          D: 'The development of air conditioning'
+        answer: 'C'
+        explanation: 'Engineers discovered that a steel frame could support an entire building, removing the need for thick walls.'
+        explanationZh: '工程师发现钢框架可以支撑整栋建筑，不再需要厚墙。'
