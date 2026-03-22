@@ -1,0 +1,1693 @@
+# FCE Grammar — Comprehensive Exam Review (Month 11)
+# G1001-G1100: All tenses, conditionals, clause types, modals, passive, reported speech
+# Mixed difficulty (2-4), Code Breaker theme
+
+category: 'Comprehensive Exam Grammar Review'
+categoryZh: '综合考试语法复习'
+questions:
+  # ============================================================
+  # G1001–G1020: Tense Review (all tenses mixed)
+  # ============================================================
+  - id: G1001
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'By the time we arrived at the cinema, the film _____.'
+    questionZh: '当我们到达电影院时，电影已经开始了。'
+    options:
+      A: 'already started'
+      B: 'has already started'
+      C: 'had already started'
+      D: 'was already starting'
+    answer: 'C'
+    explanation: 'Past perfect "had already started" is needed because the film started BEFORE we arrived — two past events, earlier one uses past perfect.'
+    explanationZh: '需要过去完成时"had already started"，因为电影在我们到达之前就开始了——两个过去事件，较早的用过去完成时。'
+    grammarPoint: 'Past perfect for earlier of two past events'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1002
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'She _____ English for three years before she took the FCE exam.'
+    questionZh: '她在参加FCE考试之前已经学了三年英语。'
+    options:
+      A: 'studied'
+      B: 'has studied'
+      C: 'had been studying'
+      D: 'was studying'
+    answer: 'C'
+    explanation: 'Past perfect continuous "had been studying" emphasises the duration of an activity that continued up to a past event (taking the exam).'
+    explanationZh: '过去完成进行时"had been studying"强调一个持续到过去某个事件（参加考试）的活动的持续时间。'
+    grammarPoint: 'Past perfect continuous for duration before past event'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1003
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'I _____ (not/see) this film before. Let''s watch it!'
+    questionZh: '我以前没看过这部电影。我们看吧！'
+    answer: "haven't seen"
+    acceptableAnswers: ["haven't seen", "have not seen", "have never seen"]
+    explanation: 'Present perfect "haven''t seen" for an experience up to the present. "Before" is a key signal word.'
+    explanationZh: '现在完成时"haven''t seen"表示到目前为止的经历。"Before"是关键信号词。'
+    grammarPoint: 'Present perfect for experience'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1004
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'This time next week, I _____ my final exam.'
+    questionZh: '下周这个时候，我将正在参加期末考试。'
+    options:
+      A: 'will take'
+      B: 'will be taking'
+      C: 'will have taken'
+      D: 'take'
+    answer: 'B'
+    explanation: 'Future continuous "will be taking" describes an action in progress at a specific future time.'
+    explanationZh: '将来进行时"will be taking"描述在未来特定时间正在进行的动作。'
+    grammarPoint: 'Future continuous for action in progress at future time'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1005
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'By December, she _____ all twelve months of the course.'
+    questionZh: '到十二月，她将已经完成了课程的所有十二个月。'
+    options:
+      A: 'completes'
+      B: 'will complete'
+      C: 'will have completed'
+      D: 'is completing'
+    answer: 'C'
+    explanation: 'Future perfect "will have completed" describes an action that will be finished before a specific future time ("by December").'
+    explanationZh: '将来完成时"will have completed"描述在特定未来时间（"到十二月"）之前将完成的动作。'
+    grammarPoint: 'Future perfect for completion before future time'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1006
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'Look at those dark clouds! It _____ (rain) soon.'
+    questionZh: '看那些乌云！很快就要下雨了。'
+    answer: 'is going to rain'
+    acceptableAnswers: ['is going to rain']
+    explanation: '"Is going to rain" — we use "going to" for predictions based on current evidence (dark clouds).'
+    explanationZh: '"Is going to rain"——我们用"going to"根据当前证据（乌云）进行预测。'
+    grammarPoint: 'Going to for evidence-based predictions'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1007
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The teacher _____ us the results as soon as they are ready.'
+    questionZh: '一旦结果准备好，老师就会告诉我们。'
+    options:
+      A: 'tells'
+      B: 'will tell'
+      C: 'told'
+      D: 'is telling'
+    answer: 'B'
+    explanation: '"Will tell" in the main clause + present simple in the time clause ("as soon as they are ready"). We do NOT use "will" in the time clause.'
+    explanationZh: '主句用"will tell"+时间从句用一般现在时（"as soon as they are ready"）。时间从句中不用"will"。'
+    grammarPoint: 'Future time clauses: will + present simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1008
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'While I _____ for the bus, it started to rain heavily.'
+    questionZh: '当我在等公交车时，开始下大雨。'
+    options:
+      A: 'waited'
+      B: 'was waiting'
+      C: 'have waited'
+      D: 'am waiting'
+    answer: 'B'
+    explanation: 'Past continuous "was waiting" for the longer background action; past simple "started" for the shorter interrupting action.'
+    explanationZh: '过去进行时"was waiting"表示较长的背景动作；一般过去时"started"表示较短的打断动作。'
+    grammarPoint: 'Past continuous + past simple for interrupted action'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1009
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She usually _____ (walk) to school, but today she _____ (take) the bus.'
+    questionZh: '她通常步行去学校，但今天她坐公交车。'
+    answer: 'walks / is taking'
+    acceptableAnswers: ['walks / is taking', 'walks, is taking']
+    explanation: 'Present simple "walks" for habits; present continuous "is taking" for a temporary action happening today.'
+    explanationZh: '一般现在时"walks"表示习惯；现在进行时"is taking"表示今天正在发生的临时动作。'
+    grammarPoint: 'Present simple vs. present continuous'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1010
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I promise I _____ my best in the exam tomorrow.'
+    questionZh: '我保证明天考试我会尽全力。'
+    options:
+      A: 'do'
+      B: 'am doing'
+      C: 'will do'
+      D: 'am going to do'
+    answer: 'C'
+    explanation: '"Will" is used for promises and spontaneous decisions. "I promise I will do" — a promise made at the moment of speaking.'
+    explanationZh: '"Will"用于承诺和即时决定。"I promise I will do"——在说话时做出的承诺。'
+    grammarPoint: 'Will for promises'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1011
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The number of electric cars on the road _____ dramatically since 2015.'
+    questionZh: '自2015年以来，道路上的电动汽车数量急剧增加。'
+    options:
+      A: 'increased'
+      B: 'has increased'
+      C: 'is increasing'
+      D: 'was increasing'
+    answer: 'B'
+    explanation: 'Present perfect "has increased" with "since 2015" — an action that started in the past and has relevance to the present.'
+    explanationZh: '现在完成时"has increased"搭配"since 2015"——从过去开始且与现在有关的动作。'
+    grammarPoint: 'Present perfect with since'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1012
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'Water _____ (boil) at 100 degrees Celsius.'
+    questionZh: '水在100摄氏度时沸腾。'
+    answer: 'boils'
+    acceptableAnswers: ['boils']
+    explanation: 'Present simple for scientific facts and general truths.'
+    explanationZh: '一般现在时用于科学事实和一般真理。'
+    grammarPoint: 'Present simple for facts'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1013
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I _____ this book for two hours and I still have not finished it.'
+    questionZh: '我已经读了两个小时的书，还没读完。'
+    options:
+      A: 'read'
+      B: 'am reading'
+      C: 'have been reading'
+      D: 'was reading'
+    answer: 'C'
+    explanation: 'Present perfect continuous "have been reading" for an action that started in the past and is still continuing now (for two hours).'
+    explanationZh: '现在完成进行时"have been reading"表示从过去开始并一直持续到现在的动作（两个小时了）。'
+    grammarPoint: 'Present perfect continuous for ongoing action'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1014
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'The ancient Romans _____ roads that are still used today.'
+    questionZh: '古罗马人建造了至今仍在使用的道路。'
+    options:
+      A: 'build'
+      B: 'built'
+      C: 'have built'
+      D: 'were building'
+    answer: 'B'
+    explanation: 'Past simple "built" for a completed action in the past (the Romans built them — finished historical action).'
+    explanationZh: '一般过去时"built"表示过去完成的动作（罗马人建造了它们——已完成的历史动作）。'
+    grammarPoint: 'Past simple for completed past actions'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1015
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'By the time you read this, I _____ (already/leave) the country.'
+    questionZh: '当你读到这个的时候，我已经离开这个国家了。'
+    answer: 'will have already left'
+    acceptableAnswers: ['will have already left', 'will already have left']
+    explanation: 'Future perfect "will have already left" — the leaving will be complete before the reading happens.'
+    explanationZh: '将来完成时"will have already left"——离开会在阅读之前完成。'
+    grammarPoint: 'Future perfect'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1016
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She said she _____ the book the previous week.'
+    questionZh: '她说她前一周已经读完了那本书。'
+    options:
+      A: 'finished'
+      B: 'had finished'
+      C: 'has finished'
+      D: 'finishes'
+    answer: 'B'
+    explanation: 'Reported speech with backshift: "I finished" → "she had finished." Past simple becomes past perfect.'
+    explanationZh: '转述语中时态后移：原来的"I finished"变成"she had finished"。一般过去时变过去完成时。'
+    grammarPoint: 'Reported speech: tense backshift'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1017
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-2]
+    context: exam-skills
+    question: 'I _____ to Paris twice, but I have never been to Rome.'
+    questionZh: '我去过巴黎两次，但从未去过罗马。'
+    options:
+      A: 'went'
+      B: 'have been'
+      C: 'had been'
+      D: 'go'
+    answer: 'B'
+    explanation: 'Present perfect "have been" for life experiences up to now. "Twice" and "never" are typical present perfect markers.'
+    explanationZh: '现在完成时"have been"表示到目前为止的人生经历。"Twice"和"never"是典型的现在完成时标志。'
+    grammarPoint: 'Present perfect for life experiences'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1018
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'They _____ (live) in London for ten years when they decided to move.'
+    questionZh: '他们在伦敦住了十年后决定搬家。'
+    answer: 'had been living'
+    acceptableAnswers: ['had been living', 'had lived']
+    explanation: 'Past perfect continuous "had been living" emphasises the duration of living before the decision to move (both past events).'
+    explanationZh: '过去完成进行时"had been living"强调在决定搬家之前居住的持续时间（两个过去事件）。'
+    grammarPoint: 'Past perfect continuous for duration before past event'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1019
+    type: multiple-choice
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The flight _____ at 9:30 tomorrow morning.'
+    questionZh: '航班明天早上9:30起飞。'
+    options:
+      A: 'leaves'
+      B: 'will leave'
+      C: 'is leaving'
+      D: 'left'
+    answer: 'A'
+    explanation: 'Present simple "leaves" for fixed schedules and timetables. Flights, trains, and buses use present simple for scheduled departures.'
+    explanationZh: '一般现在时"leaves"用于固定时刻表。航班、火车和公交车的计划出发时间用一般现在时。'
+    grammarPoint: 'Present simple for timetables'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1020
+    type: fill-blank
+    tags: [tense-review, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I wish I _____ (study) harder last term. Now I am struggling.'
+    questionZh: '我希望上学期学习更努力。现在我很吃力。'
+    answer: 'had studied'
+    acceptableAnswers: ['had studied']
+    explanation: '"I wish + past perfect" for regrets about the past. "Had studied" shows a past action you wish had been different.'
+    explanationZh: '"I wish+过去完成时"用于对过去的遗憾。"Had studied"表示你希望曾经不同的过去动作。'
+    grammarPoint: 'Wish + past perfect for past regrets'
+    relatedQuest: Q11
+    difficulty: 3
+
+  # ============================================================
+  # G1021–G1040: Conditionals (0, 1, 2, 3, mixed)
+  # ============================================================
+  - id: G1021
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-2]
+    context: exam-skills
+    question: 'If you heat water to 100 degrees, it _____.'
+    questionZh: '如果你把水加热到100度，它会沸腾。'
+    options:
+      A: 'boils'
+      B: 'will boil'
+      C: 'would boil'
+      D: 'boiled'
+    answer: 'A'
+    explanation: 'Zero conditional (if + present, present) for scientific facts that are always true.'
+    explanationZh: '零条件句（if+一般现在时，一般现在时）用于始终为真的科学事实。'
+    grammarPoint: 'Zero conditional'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1022
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-2]
+    context: exam-skills
+    question: 'If you study every day, you _____ the exam easily.'
+    questionZh: '如果你每天学习，你会轻松通过考试。'
+    options:
+      A: 'pass'
+      B: 'will pass'
+      C: 'would pass'
+      D: 'passed'
+    answer: 'B'
+    explanation: 'First conditional (if + present, will + base) for real, possible future situations.'
+    explanationZh: '第一条件句（if+一般现在时，will+动词原形）用于真实、可能的未来情况。'
+    grammarPoint: 'First conditional'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1023
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If I _____ more time, I would read more books.'
+    questionZh: '如果我有更多时间，我会读更多的书。'
+    options:
+      A: 'have'
+      B: 'had'
+      C: 'would have'
+      D: 'will have'
+    answer: 'B'
+    explanation: 'Second conditional (if + past simple, would + base) for unreal/hypothetical present situations.'
+    explanationZh: '第二条件句（if+一般过去时，would+动词原形）用于非真实/假设的现在情况。'
+    grammarPoint: 'Second conditional'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1024
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If she had practised more, she _____ a higher score.'
+    questionZh: '如果她练习更多，她就会得到更高的分数。'
+    options:
+      A: 'will get'
+      B: 'would get'
+      C: 'would have got'
+      D: 'got'
+    answer: 'C'
+    explanation: 'Third conditional (if + past perfect, would have + past participle) for unreal past situations — things that did NOT happen.'
+    explanationZh: '第三条件句（if+过去完成时，would have+过去分词）用于非真实的过去情况——没有发生的事情。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1025
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If I _____ (be) you, I would start revising now.'
+    questionZh: '如果我是你，我现在就会开始复习。'
+    answer: 'were'
+    acceptableAnswers: ['were']
+    explanation: 'Second conditional uses "were" for all persons (formal). "If I were you" is a fixed expression for giving advice.'
+    explanationZh: '第二条件句所有人称用"were"（正式）。"If I were you"是给建议的固定表达。'
+    grammarPoint: 'Second conditional: if I were you'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1026
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'Unless you _____ harder, you will not pass the exam.'
+    questionZh: '除非你更努力学习，否则你不会通过考试。'
+    options:
+      A: 'study'
+      B: 'studied'
+      C: 'will study'
+      D: 'would study'
+    answer: 'A'
+    explanation: '"Unless" means "if not." Present simple after "unless" in a first conditional structure.'
+    explanationZh: '"Unless"意思是"如果不"。在第一条件句中"unless"后用一般现在时。'
+    grammarPoint: 'Unless + present simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1027
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If he had set his alarm, he _____ late for the exam.'
+    questionZh: '如果他设了闹钟，他就不会考试迟到了。'
+    options:
+      A: 'would not be'
+      B: 'will not be'
+      C: 'would not have been'
+      D: 'is not'
+    answer: 'C'
+    explanation: 'Third conditional: "If he had set (past perfect), he would not have been (would have + past participle)" — unreal past.'
+    explanationZh: '第三条件句："If he had set（过去完成时），he would not have been（would have+过去分词）"——非真实的过去。'
+    grammarPoint: 'Third conditional negative'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1028
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'Provided that you _____ (arrive) on time, you will be allowed to take the test.'
+    questionZh: '只要你准时到达，你就可以参加考试。'
+    answer: 'arrive'
+    acceptableAnswers: ['arrive']
+    explanation: '"Provided that" works like "if" — present simple in the condition clause, will in the result clause.'
+    explanationZh: '"Provided that"的用法像"if"——条件从句用一般现在时，结果从句用will。'
+    grammarPoint: 'Provided that + present simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1029
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-4]
+    context: exam-skills
+    question: 'If she had studied harder last year, she _____ in a higher class now.'
+    questionZh: '如果她去年学习更努力，她现在就会在更高的班级里。'
+    options:
+      A: 'will be'
+      B: 'would be'
+      C: 'would have been'
+      D: 'is'
+    answer: 'B'
+    explanation: 'Mixed conditional: past condition (if + past perfect) + present result (would + base). The studying was in the past, but the class is NOW.'
+    explanationZh: '混合条件句：过去条件（if+过去完成时）+现在结果（would+动词原形）。学习在过去，但班级是现在。'
+    grammarPoint: 'Mixed conditional: past → present'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1030
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-4]
+    context: exam-skills
+    question: 'If I were better at maths, I _____ that problem yesterday.'
+    questionZh: '如果我数学更好，我昨天就解决那个问题了。'
+    options:
+      A: 'will solve'
+      B: 'would solve'
+      C: 'would have solved'
+      D: 'solved'
+    answer: 'C'
+    explanation: 'Mixed conditional: present condition (if I were) + past result (would have solved). My maths ability is a permanent state, the problem was yesterday.'
+    explanationZh: '混合条件句：现在条件（if I were）+过去结果（would have solved）。数学能力是永久状态，问题是在昨天。'
+    grammarPoint: 'Mixed conditional: present → past'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1031
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I wish I _____ (can) speak five languages fluently.'
+    questionZh: '我希望我能流利地说五种语言。'
+    answer: 'could'
+    acceptableAnswers: ['could']
+    explanation: '"Wish + past simple" for unreal present wishes. "Can" becomes "could" after "wish."'
+    explanationZh: '"Wish+一般过去时"用于非真实的现在愿望。"Can"在"wish"后变成"could"。'
+    grammarPoint: 'Wish + could for present wishes'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1032
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'As long as you _____ the instructions carefully, you should do well.'
+    questionZh: '只要你仔细阅读说明，你应该会做得很好。'
+    options:
+      A: 'read'
+      B: 'will read'
+      C: 'reading'
+      D: 'would read'
+    answer: 'A'
+    explanation: '"As long as" functions like "if" — present simple in the condition clause.'
+    explanationZh: '"As long as"的功能像"if"——条件从句中用一般现在时。'
+    grammarPoint: 'As long as + present simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1033
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If only I _____ about the test earlier, I would have studied more.'
+    questionZh: '要是我早点知道考试就好了，我就会学更多。'
+    options:
+      A: 'know'
+      B: 'knew'
+      C: 'had known'
+      D: 'have known'
+    answer: 'C'
+    explanation: '"If only + past perfect" for past regrets, same pattern as third conditional with "if only" adding emotional emphasis.'
+    explanationZh: '"If only+过去完成时"用于过去的遗憾，与第三条件句相同的模式，"if only"增加了情感强调。'
+    grammarPoint: 'If only + past perfect for regrets'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1034
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If the weather _____ (be) better, we would go to the park.'
+    questionZh: '如果天气好一些，我们就去公园了。'
+    answer: 'were'
+    acceptableAnswers: ['were', 'was']
+    explanation: 'Second conditional: "If the weather were/was better." Formally, "were" is preferred for all persons in second conditionals.'
+    explanationZh: '第二条件句："If the weather were/was better"。正式情况下，第二条件句所有人称都用"were"。'
+    grammarPoint: 'Second conditional with were'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1035
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'Supposing you _____ a million pounds, what would you do with it?'
+    questionZh: '假设你赢了一百万英镑，你会怎么处理？'
+    options:
+      A: 'win'
+      B: 'won'
+      C: 'will win'
+      D: 'had won'
+    answer: 'B'
+    explanation: '"Supposing" works like "if" in a second conditional. Past simple "won" for a hypothetical present/future situation.'
+    explanationZh: '"Supposing"在第二条件句中的用法像"if"。一般过去时"won"用于假设的现在/未来情况。'
+    grammarPoint: 'Supposing + past simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1036
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-2]
+    context: exam-skills
+    question: 'If you mix red and blue paint, you _____ purple.'
+    questionZh: '如果你混合红色和蓝色颜料，你会得到紫色。'
+    options:
+      A: 'get'
+      B: 'will get'
+      C: 'would get'
+      D: 'got'
+    answer: 'A'
+    explanation: 'Zero conditional for a fact that is always true. If + present simple, present simple.'
+    explanationZh: '零条件句用于始终为真的事实。If+一般现在时，一般现在时。'
+    grammarPoint: 'Zero conditional for facts'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1037
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'If I _____ (not/break) my leg, I would have played in the match.'
+    questionZh: '如果我没有摔断腿，我就参加比赛了。'
+    answer: "hadn't broken"
+    acceptableAnswers: ["hadn't broken", "had not broken"]
+    explanation: 'Third conditional negative: "If I hadn''t broken" (past perfect negative) + "would have played."'
+    explanationZh: '第三条件句否定形式："If I hadn''t broken"（过去完成时否定）+"would have played"。'
+    grammarPoint: 'Third conditional negative'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1038
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I would rather you _____ me the truth.'
+    questionZh: '我宁愿你告诉我真相。'
+    options:
+      A: 'tell'
+      B: 'told'
+      C: 'will tell'
+      D: 'have told'
+    answer: 'B'
+    explanation: '"Would rather + subject + past simple" for wishes about what other people do. It follows the same pattern as second conditional.'
+    explanationZh: '"Would rather+主语+一般过去时"表示希望别人做什么。它遵循与第二条件句相同的模式。'
+    grammarPoint: 'Would rather + subject + past simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1039
+    type: multiple-choice
+    tags: [conditionals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'It is high time we _____ about our exam strategy.'
+    questionZh: '该是我们讨论考试策略的时候了。'
+    options:
+      A: 'think'
+      B: 'thought'
+      C: 'will think'
+      D: 'are thinking'
+    answer: 'B'
+    explanation: '"It is high time + past simple" — an expression meaning something should have happened already. Despite past simple form, it refers to now.'
+    explanationZh: '"It is high time+一般过去时"——一个表达，意思是某事早该发生了。尽管用了过去时形式，但指的是现在。'
+    grammarPoint: 'It is high time + past simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1040
+    type: fill-blank
+    tags: [conditionals, Q11, difficulty-4]
+    context: exam-skills
+    question: 'But for your help, I _____ (not/pass) the exam.'
+    questionZh: '要不是你的帮助，我就不会通过考试了。'
+    answer: 'would not have passed'
+    acceptableAnswers: ["would not have passed", "wouldn't have passed"]
+    explanation: '"But for" means "if it were not for" / "if it had not been for." Here it refers to a past situation, so third conditional result: "would not have passed."'
+    explanationZh: '"But for"意思是"如果不是因为"。这里指过去的情况，所以第三条件句结果："would not have passed"。'
+    grammarPoint: 'But for + third conditional'
+    relatedQuest: Q11
+    difficulty: 4
+
+  # ============================================================
+  # G1041–G1060: Passive voice & Reported speech
+  # ============================================================
+  - id: G1041
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-2]
+    context: exam-skills
+    question: 'The exam results _____ next Monday.'
+    questionZh: '考试结果将在下周一公布。'
+    options:
+      A: 'will announce'
+      B: 'will be announced'
+      C: 'are announcing'
+      D: 'have announced'
+    answer: 'B'
+    explanation: 'Passive voice: "will be announced" — the results are receiving the action, not doing it. Future passive = will be + past participle.'
+    explanationZh: '被动语态："will be announced"——结果是接受动作的，不是执行动作的。将来被动=will be+过去分词。'
+    grammarPoint: 'Future passive'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1042
+    type: fill-blank
+    tags: [passive, Q11, difficulty-2]
+    context: exam-skills
+    question: 'English _____ (speak) in over 50 countries around the world.'
+    questionZh: '英语在世界上50多个国家被使用。'
+    answer: 'is spoken'
+    acceptableAnswers: ['is spoken']
+    explanation: 'Present simple passive: "is spoken." English receives the action of being spoken.'
+    explanationZh: '一般现在时被动："is spoken"。英语接受被说的动作。'
+    grammarPoint: 'Present simple passive'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1043
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The suspect is believed _____ the country last night.'
+    questionZh: '嫌疑人被认为昨晚离开了这个国家。'
+    options:
+      A: 'to leave'
+      B: 'to have left'
+      C: 'leaving'
+      D: 'left'
+    answer: 'B'
+    explanation: '"Is believed to have left" — passive report structure with perfect infinitive for a past action. The leaving happened before the believing.'
+    explanationZh: '"Is believed to have left"——用完成不定式的被动报告结构，表示过去的动作。离开发生在相信之前。'
+    grammarPoint: 'Passive report: believed to have + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1044
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The new library _____ by a famous architect.'
+    questionZh: '新图书馆是由一位著名建筑师设计的。'
+    options:
+      A: 'designed'
+      B: 'was designed'
+      C: 'has designed'
+      D: 'is designing'
+    answer: 'B'
+    explanation: 'Past simple passive "was designed" — the library received the action of being designed. "By a famous architect" is the agent.'
+    explanationZh: '一般过去时被动"was designed"——图书馆接受了被设计的动作。"By a famous architect"是施动者。'
+    grammarPoint: 'Past simple passive with agent'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1045
+    type: fill-blank
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The homework must _____ (complete) by Friday.'
+    questionZh: '作业必须在周五之前完成。'
+    answer: 'be completed'
+    acceptableAnswers: ['be completed']
+    explanation: 'Modal passive: "must be completed" = must + be + past participle.'
+    explanationZh: '情态动词被动："must be completed"=must+be+过去分词。'
+    grammarPoint: 'Modal passive: must be + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1046
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The house _____ when we arrived — the builders were still working.'
+    questionZh: '我们到达时房子正在建造——建筑工人还在工作。'
+    options:
+      A: 'was built'
+      B: 'was being built'
+      C: 'has been built'
+      D: 'had been built'
+    answer: 'B'
+    explanation: 'Past continuous passive "was being built" — the action was in progress at the time we arrived.'
+    explanationZh: '过去进行时被动"was being built"——动作在我们到达时正在进行。'
+    grammarPoint: 'Past continuous passive'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1047
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-2]
+    context: exam-skills
+    question: '"I am studying for my exam," she said. → She said she _____ for her exam.'
+    questionZh: '"我正在为考试学习，"她说。→ 她说她正在为考试学习。'
+    options:
+      A: 'is studying'
+      B: 'was studying'
+      C: 'studied'
+      D: 'has studied'
+    answer: 'B'
+    explanation: 'Reported speech backshift: present continuous "am studying" → past continuous "was studying."'
+    explanationZh: '转述语时态后移：现在进行时"am studying"→过去进行时"was studying"。'
+    grammarPoint: 'Reported speech: present continuous → past continuous'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1048
+    type: fill-blank
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"Will you help me?" she asked. → She asked me _____ I would help her.'
+    questionZh: '"你能帮我吗？"她问。→ 她问我是否愿意帮她。'
+    answer: 'if'
+    acceptableAnswers: ['if', 'whether']
+    explanation: 'Reported yes/no questions use "if" or "whether" + subject + verb (no question word order).'
+    explanationZh: '转述是非疑问句用"if"或"whether"+主语+动词（没有疑问语序）。'
+    grammarPoint: 'Reported yes/no questions: if/whether'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1049
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"Don''t forget your pencil case," Mum said. → Mum _____ me not to forget my pencil case.'
+    questionZh: '"别忘了你的铅笔盒，"妈妈说。→ 妈妈提醒我不要忘记铅笔盒。'
+    options:
+      A: 'said'
+      B: 'told'
+      C: 'reminded'
+      D: 'asked'
+    answer: 'C'
+    explanation: '"Reminded me not to forget" — an imperative (don''t forget) becomes "reminded + object + not to + base verb" in reported speech.'
+    explanationZh: '"Reminded me not to forget"——祈使句（don''t forget）在转述语中变成"reminded+宾语+not to+动词原形"。'
+    grammarPoint: 'Reported imperatives with remind'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1050
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"Where did you buy that book?" he asked. → He asked me where I _____ that book.'
+    questionZh: '"你在哪里买的那本书？"他问。→ 他问我在哪里买的那本书。'
+    options:
+      A: 'bought'
+      B: 'had bought'
+      C: 'have bought'
+      D: 'buy'
+    answer: 'B'
+    explanation: 'Reported wh-question with backshift: "did you buy" (past simple) → "I had bought" (past perfect). Normal word order in reported questions.'
+    explanationZh: '转述特殊疑问句时态后移："did you buy"（一般过去时）→"I had bought"（过去完成时）。转述疑问句用正常语序。'
+    grammarPoint: 'Reported wh-questions with backshift'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1051
+    type: fill-blank
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'It is said that this painting _____ (steal) during the war.'
+    questionZh: '据说这幅画在战争期间被盗了。'
+    answer: 'was stolen'
+    acceptableAnswers: ['was stolen']
+    explanation: '"It is said that" + past simple passive. The stealing happened in the past, so "was stolen."'
+    explanationZh: '"It is said that"+一般过去时被动。偷盗发生在过去，所以用"was stolen"。'
+    grammarPoint: 'It is said that + passive'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1052
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"I have never been to Japan," she said. → She said she _____ to Japan.'
+    questionZh: '"我从没去过日本，"她说。→ 她说她从没去过日本。'
+    options:
+      A: 'has never been'
+      B: 'had never been'
+      C: 'never was'
+      D: 'would never be'
+    answer: 'B'
+    explanation: 'Reported speech: present perfect "have never been" → past perfect "had never been."'
+    explanationZh: '转述语：现在完成时"have never been"→过去完成时"had never been"。'
+    grammarPoint: 'Reported speech: present perfect → past perfect'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1053
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The students were made _____ the entire chapter again.'
+    questionZh: '学生们被要求再读一遍整章。'
+    options:
+      A: 'read'
+      B: 'to read'
+      C: 'reading'
+      D: 'reads'
+    answer: 'B'
+    explanation: '"Were made to read" — in passive, "make" requires "to + infinitive" (unlike active: "The teacher made them read" without "to").'
+    explanationZh: '"Were made to read"——在被动中，"make"需要"to+不定式"（不同于主动："The teacher made them read"不需要"to"）。'
+    grammarPoint: 'Passive with make: made to + infinitive'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1054
+    type: fill-blank
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"I will call you tomorrow," he promised. → He promised that he _____ call me the _____ day.'
+    questionZh: '"我明天会打电话给你，"他承诺。→ 他承诺他第二天会打电话给我。'
+    answer: 'would / following'
+    acceptableAnswers: ['would / following', 'would / next']
+    explanation: 'Reported speech: "will" → "would"; "tomorrow" → "the following/next day."'
+    explanationZh: '转述语："will"→"would"；"tomorrow"→"the following/next day"。'
+    grammarPoint: 'Reported speech: time word changes'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1055
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The bridge is expected _____ by next summer.'
+    questionZh: '大桥预计到明年夏天完工。'
+    options:
+      A: 'to complete'
+      B: 'to be completed'
+      C: 'completing'
+      D: 'completed'
+    answer: 'B'
+    explanation: '"Is expected to be completed" — double passive: expected (passive) + to be completed (passive infinitive).'
+    explanationZh: '"Is expected to be completed"——双重被动：expected（被动）+to be completed（被动不定式）。'
+    grammarPoint: 'Passive with expect: to be + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1056
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-2]
+    context: exam-skills
+    question: '"Please close the door," she said. → She asked me _____ the door.'
+    questionZh: '"请关门，"她说。→ 她让我关门。'
+    options:
+      A: 'close'
+      B: 'to close'
+      C: 'closing'
+      D: 'closed'
+    answer: 'B'
+    explanation: 'Reported requests: "asked me to close" — ask + object + to infinitive.'
+    explanationZh: '转述请求："asked me to close"——ask+宾语+to不定式。'
+    grammarPoint: 'Reported requests: ask + to infinitive'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1057
+    type: fill-blank
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'This song _____ (download) over a billion times since it was released.'
+    questionZh: '这首歌自发布以来已被下载超过十亿次。'
+    answer: 'has been downloaded'
+    acceptableAnswers: ['has been downloaded']
+    explanation: 'Present perfect passive: "has been downloaded" — since + time reference requires present perfect.'
+    explanationZh: '现在完成时被动："has been downloaded"——since+时间要求现在完成时。'
+    grammarPoint: 'Present perfect passive'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1058
+    type: multiple-choice
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The teacher suggested that we _____ the past papers for extra practice.'
+    questionZh: '老师建议我们做往年试卷作为额外练习。'
+    options:
+      A: 'do'
+      B: 'did'
+      C: 'should do'
+      D: 'Both A and C'
+    answer: 'D'
+    explanation: '"Suggest that" can be followed by subjunctive "do" or "should do." Both are grammatically correct.'
+    explanationZh: '"Suggest that"后可以跟虚拟语气"do"或"should do"。两者在语法上都是正确的。'
+    grammarPoint: 'Suggest that + subjunctive or should'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1059
+    type: multiple-choice
+    tags: [passive, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I do not like _____ what to do.'
+    questionZh: '我不喜欢被告诉该做什么。'
+    options:
+      A: 'to tell'
+      B: 'being told'
+      C: 'telling'
+      D: 'been told'
+    answer: 'B'
+    explanation: '"Being told" — passive gerund after "like." "I do not like being told" = I do not like it when people tell me.'
+    explanationZh: '"Being told"——"like"后的被动动名词。"I do not like being told"=我不喜欢别人告诉我。'
+    grammarPoint: 'Passive gerund: being + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1060
+    type: fill-blank
+    tags: [reported-speech, Q11, difficulty-3]
+    context: exam-skills
+    question: '"How long have you been waiting?" she asked. → She asked me how long I _____ waiting.'
+    questionZh: '"你等了多久？"她问。→ 她问我等了多久。'
+    answer: 'had been'
+    acceptableAnswers: ['had been']
+    explanation: 'Reported speech: present perfect continuous "have been waiting" → past perfect continuous "had been waiting."'
+    explanationZh: '转述语：现在完成进行时"have been waiting"→过去完成进行时"had been waiting"。'
+    grammarPoint: 'Reported speech: present perfect continuous → past perfect continuous'
+    relatedQuest: Q11
+    difficulty: 3
+
+  # ============================================================
+  # G1061–G1080: Modals & Relative clauses
+  # ============================================================
+  - id: G1061
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-2]
+    context: exam-skills
+    question: 'You _____ bring a dictionary into the exam — it is not allowed.'
+    questionZh: '你不能把字典带进考场——这是不允许的。'
+    options:
+      A: 'must not'
+      B: 'do not have to'
+      C: 'should not'
+      D: 'need not'
+    answer: 'A'
+    explanation: '"Must not" expresses prohibition — it is forbidden. "Do not have to" means there is no obligation (different meaning).'
+    explanationZh: '"Must not"表示禁止——是被禁止的。"Do not have to"意味着没有义务（不同的含义）。'
+    grammarPoint: 'Must not for prohibition'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1062
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She _____ have left already — her coat is still here.'
+    questionZh: '她不可能已经离开了——她的外套还在这里。'
+    options:
+      A: 'must'
+      B: 'might'
+      C: 'can not'
+      D: 'cannot'
+    answer: 'D'
+    explanation: '"Cannot have left" — strong deduction that something is impossible based on evidence (the coat is here).'
+    explanationZh: '"Cannot have left"——基于证据（外套在这里）的强推断，认为某事不可能。'
+    grammarPoint: 'Cannot have + past participle for impossibility'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1063
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'He _____ have studied all night — he looks exhausted.'
+    questionZh: '他一定学习了一整夜——他看起来筋疲力尽。'
+    options:
+      A: 'could'
+      B: 'might'
+      C: 'must'
+      D: 'should'
+    answer: 'C'
+    explanation: '"Must have studied" — strong deduction based on evidence (he looks exhausted). We are almost certain this happened.'
+    explanationZh: '"Must have studied"——基于证据（他看起来筋疲力尽）的强推断。我们几乎确定这发生了。'
+    grammarPoint: 'Must have + past participle for deduction'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1064
+    type: fill-blank
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'You _____ (not/need) to bring lunch — food will be provided.'
+    questionZh: '你不需要带午餐——会提供食物。'
+    answer: "don't need"
+    acceptableAnswers: ["don't need", "do not need", "needn't"]
+    explanation: '"Don''t need to" / "needn''t" means there is no necessity. Different from "must not" (prohibition).'
+    explanationZh: '"Don''t need to"/"needn''t"意思是没有必要。不同于"must not"（禁止）。'
+    grammarPoint: 'No necessity: don''t need to / needn''t'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1065
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'You _____ told me about the test — I had no idea!'
+    questionZh: '你应该告诉我关于考试的事——我一点也不知道！'
+    options:
+      A: 'should'
+      B: 'should have'
+      C: 'must have'
+      D: 'could'
+    answer: 'B'
+    explanation: '"Should have told" — criticism about something that did NOT happen in the past. You were supposed to tell me but you didn''t.'
+    explanationZh: '"Should have told"——对过去没有发生的事情的批评。你本应该告诉我但你没有。'
+    grammarPoint: 'Should have + past participle for criticism'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1066
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She _____ be at the library — she said she was going there.'
+    questionZh: '她可能在图书馆——她说她要去那里。'
+    options:
+      A: 'must'
+      B: 'might'
+      C: 'can'
+      D: 'should'
+    answer: 'B'
+    explanation: '"Might be" — possibility (less certain than "must be"). We are not sure, but it is possible.'
+    explanationZh: '"Might be"——可能性（不如"must be"确定）。我们不确定，但有可能。'
+    grammarPoint: 'Might for possibility'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1067
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The exam, _____ lasted three hours, was extremely challenging.'
+    questionZh: '这场持续了三小时的考试极具挑战性。'
+    options:
+      A: 'that'
+      B: 'which'
+      C: 'who'
+      D: 'where'
+    answer: 'B'
+    explanation: 'Non-defining relative clause (with commas) referring to a thing — use "which." "That" cannot be used in non-defining clauses.'
+    explanationZh: '非限定性定语从句（有逗号）指物——用"which"。"That"不能用于非限定性从句。'
+    grammarPoint: 'Non-defining relative clause with which'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1068
+    type: fill-blank
+    tags: [relative-clauses, Q11, difficulty-2]
+    context: exam-skills
+    question: 'The teacher _____ helped me prepare for the exam was very patient.'
+    questionZh: '帮助我备考的老师非常有耐心。'
+    answer: 'who'
+    acceptableAnswers: ['who', 'that']
+    explanation: 'Defining relative clause referring to a person — "who" or "that."'
+    explanationZh: '限定性定语从句指人——用"who"或"that"。'
+    grammarPoint: 'Defining relative clause with who/that'
+    relatedQuest: Q11
+    difficulty: 2
+
+  - id: G1069
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'My sister, _____ lives in London, is a doctor.'
+    questionZh: '我住在伦敦的姐姐是一名医生。'
+    options:
+      A: 'that'
+      B: 'who'
+      C: 'which'
+      D: 'where'
+    answer: 'B'
+    explanation: 'Non-defining relative clause (with commas) referring to a person — use "who." NOT "that" in non-defining clauses.'
+    explanationZh: '非限定性定语从句（有逗号）指人——用"who"。非限定性从句不用"that"。'
+    grammarPoint: 'Non-defining relative clause with who'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1070
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The school _____ I studied is now closed.'
+    questionZh: '我曾就读的学校现在关闭了。'
+    options:
+      A: 'which'
+      B: 'that'
+      C: 'where'
+      D: 'who'
+    answer: 'C'
+    explanation: '"Where" for a place — "the school where I studied." You could also say "the school at which I studied."'
+    explanationZh: '"Where"用于地点——"the school where I studied"。也可以说"the school at which I studied"。'
+    grammarPoint: 'Relative clause with where for place'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1071
+    type: fill-blank
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She _____ (not/need) have worried — the exam was easy.'
+    questionZh: '她本不必担心——考试很简单。'
+    answer: "needn't"
+    acceptableAnswers: ["needn't", "need not"]
+    explanation: '"Needn''t have worried" — she worried, but it was unnecessary (past). This is different from "didn''t need to worry" (we don''t know if she worried).'
+    explanationZh: '"Needn''t have worried"——她担心了，但没有必要（过去）。这不同于"didn''t need to worry"（我们不知道她是否担心了）。'
+    grammarPoint: 'Needn''t have + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1072
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The homework is due tomorrow, so you _____ to finish it tonight.'
+    questionZh: '作业明天交，所以你今晚需要完成。'
+    options:
+      A: 'must'
+      B: 'should'
+      C: 'ought'
+      D: 'had better'
+    answer: 'C'
+    explanation: '"Ought to finish" — obligation/strong advice. "Ought to" is followed by infinitive.'
+    explanationZh: '"Ought to finish"——义务/强烈建议。"Ought to"后接不定式。'
+    grammarPoint: 'Ought to for obligation/advice'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1073
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The reason _____ he failed the exam was lack of preparation.'
+    questionZh: '他考试不及格的原因是准备不足。'
+    options:
+      A: 'which'
+      B: 'that'
+      C: 'why'
+      D: 'where'
+    answer: 'C'
+    explanation: '"The reason why" — use "why" for relative clauses explaining a reason.'
+    explanationZh: '"The reason why"——用"why"引导解释原因的定语从句。'
+    grammarPoint: 'Relative clause with why for reason'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1074
+    type: fill-blank
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'You had _____ start revising now, or you will run out of time.'
+    questionZh: '你最好现在开始复习，否则你会没有时间的。'
+    answer: 'better'
+    acceptableAnswers: ['better']
+    explanation: '"Had better" for strong advice with a warning. "Had better + base verb."'
+    explanationZh: '"Had better"用于带有警告的强烈建议。"Had better+动词原形"。'
+    grammarPoint: 'Had better for strong advice'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1075
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She is the author _____ books have been translated into over 50 languages.'
+    questionZh: '她是那位作品被翻译成50多种语言的作者。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'whose'
+      D: 'that'
+    answer: 'C'
+    explanation: '"Whose" shows possession — the author''s books. "Whose books" = the books belonging to her.'
+    explanationZh: '"Whose"表示所有关系——作者的书。"Whose books"=属于她的书。'
+    grammarPoint: 'Relative clause with whose for possession'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1076
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She _____ have left already — I just saw her five minutes ago.'
+    questionZh: '她可能已经走了——我五分钟前刚看到她。'
+    options:
+      A: 'must'
+      B: 'could'
+      C: 'should'
+      D: 'would'
+    answer: 'B'
+    explanation: '"Could have left" — it is possible but not certain. Weaker than "must have" (deduction) and stronger than "might have."'
+    explanationZh: '"Could have left"——可能但不确定。比"must have"（推断）弱，比"might have"强。'
+    grammarPoint: 'Could have + past participle for possibility'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1077
+    type: fill-blank
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The moment _____ I opened the exam paper, I felt confident.'
+    questionZh: '我打开试卷的那一刻，我感到很自信。'
+    answer: 'when'
+    acceptableAnswers: ['when', 'that']
+    explanation: '"The moment when" — use "when" for relative clauses about time. "That" is also acceptable.'
+    explanationZh: '"The moment when"——用"when"引导关于时间的定语从句。"That"也可以。'
+    grammarPoint: 'Relative clause with when for time'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1078
+    type: multiple-choice
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: '_____ I ask you a question about the exam?'
+    questionZh: '我可以问你一个关于考试的问题吗？'
+    options:
+      A: 'Must'
+      B: 'Should'
+      C: 'May'
+      D: 'Need'
+    answer: 'C'
+    explanation: '"May I" is the polite way to ask permission. More formal than "Can I."'
+    explanationZh: '"May I"是请求许可的礼貌方式。比"Can I"更正式。'
+    grammarPoint: 'May for polite requests'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1079
+    type: multiple-choice
+    tags: [relative-clauses, Q11, difficulty-3]
+    context: exam-skills
+    question: 'Everything _____ she said made perfect sense.'
+    questionZh: '她说的一切都非常有道理。'
+    options:
+      A: 'which'
+      B: 'that'
+      C: 'what'
+      D: 'who'
+    answer: 'B'
+    explanation: 'After "everything," "anything," "nothing," use "that" (not "which") in defining relative clauses.'
+    explanationZh: '在"everything"、"anything"、"nothing"之后，限定性定语从句中用"that"（不用"which"）。'
+    grammarPoint: 'That after everything/anything/nothing'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1080
+    type: fill-blank
+    tags: [modals, Q11, difficulty-3]
+    context: exam-skills
+    question: 'He _____ (be able to) solve the problem if he had read the textbook.'
+    questionZh: '如果他读了课本，他就能解决这个问题了。'
+    answer: 'would have been able to'
+    acceptableAnswers: ['would have been able to']
+    explanation: 'Third conditional with "be able to": "would have been able to solve" — he didn''t read and couldn''t solve.'
+    explanationZh: '第三条件句搭配"be able to"："would have been able to solve"——他没读也没能解决。'
+    grammarPoint: 'Third conditional with be able to'
+    relatedQuest: Q11
+    difficulty: 3
+
+  # ============================================================
+  # G1081–G1100: Mixed advanced structures
+  # ============================================================
+  - id: G1081
+    type: multiple-choice
+    tags: [inversion, Q11, difficulty-4]
+    context: exam-skills
+    question: 'Never _____ such a difficult exam.'
+    questionZh: '我从来没有参加过如此困难的考试。'
+    options:
+      A: 'I have taken'
+      B: 'have I taken'
+      C: 'I took'
+      D: 'did I take'
+    answer: 'B'
+    explanation: 'Inversion after negative adverbs: "Never have I taken" — subject and auxiliary swap after "never" at the start of a sentence.'
+    explanationZh: '否定副词后倒装："Never have I taken"——"never"在句首时，主语和助动词互换位置。'
+    grammarPoint: 'Inversion after never'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1082
+    type: multiple-choice
+    tags: [inversion, Q11, difficulty-4]
+    context: exam-skills
+    question: 'Not only _____ the exam, but she also got the highest score.'
+    questionZh: '她不仅通过了考试，还获得了最高分。'
+    options:
+      A: 'she passed'
+      B: 'did she pass'
+      C: 'has she passed'
+      D: 'she did pass'
+    answer: 'B'
+    explanation: '"Not only did she pass" — inversion after "not only" at the start of a sentence. Past simple inversion uses "did + subject + base."'
+    explanationZh: '"Not only did she pass"——"not only"在句首时倒装。一般过去时倒装用"did+主语+动词原形"。'
+    grammarPoint: 'Inversion after not only'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1083
+    type: fill-blank
+    tags: [cleft-sentence, Q11, difficulty-4]
+    context: exam-skills
+    question: '_____ I really need is more time to practise.'
+    questionZh: '我真正需要的是更多练习的时间。'
+    answer: 'What'
+    acceptableAnswers: ['What']
+    explanation: '"What I really need is..." — a cleft sentence using "what" to emphasise what follows. "What" = "the thing that."'
+    explanationZh: '"What I really need is..."——用"what"强调后面的内容的强调句。"What"="the thing that"。'
+    grammarPoint: 'Cleft sentence with what'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1084
+    type: multiple-choice
+    tags: [cleft-sentence, Q11, difficulty-4]
+    context: exam-skills
+    question: 'It _____ her determination that helped her pass the exam.'
+    questionZh: '正是她的决心帮助她通过了考试。'
+    options:
+      A: 'is'
+      B: 'was'
+      C: 'has been'
+      D: 'were'
+    answer: 'B'
+    explanation: '"It was her determination that..." — a cleft sentence using "it was...that" to emphasise "her determination." Past tense matches "helped."'
+    explanationZh: '"It was her determination that..."——用"it was...that"强调"her determination"的强调句。过去时与"helped"一致。'
+    grammarPoint: 'Cleft sentence: it was...that'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1085
+    type: multiple-choice
+    tags: [participle-clause, Q11, difficulty-3]
+    context: exam-skills
+    question: '_____ carefully, she noticed a grammar mistake in her essay.'
+    questionZh: '仔细检查后，她注意到作文中有一个语法错误。'
+    options:
+      A: 'Check'
+      B: 'Checking'
+      C: 'Checked'
+      D: 'To check'
+    answer: 'B'
+    explanation: '"Checking carefully" — present participle clause. The subject "she" does both actions (checking and noticing).'
+    explanationZh: '"Checking carefully"——现在分词从句。主语"she"做两个动作（检查和注意到）。'
+    grammarPoint: 'Present participle clause'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1086
+    type: fill-blank
+    tags: [participle-clause, Q11, difficulty-3]
+    context: exam-skills
+    question: '_____ (write) in 1605, Don Quixote is considered one of the greatest novels.'
+    questionZh: '写于1605年，《堂吉诃德》被认为是最伟大的小说之一。'
+    answer: 'Written'
+    acceptableAnswers: ['Written']
+    explanation: '"Written in 1605" — past participle clause for passive meaning. Don Quixote WAS written (by someone).'
+    explanationZh: '"Written in 1605"——过去分词从句表示被动含义。《堂吉诃德》被（某人）写。'
+    grammarPoint: 'Past participle clause for passive'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1087
+    type: multiple-choice
+    tags: [causative, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I need to get my essay _____ before the deadline.'
+    questionZh: '我需要在截止日期前把论文检查完。'
+    options:
+      A: 'check'
+      B: 'checking'
+      C: 'checked'
+      D: 'to check'
+    answer: 'C'
+    explanation: '"Get something done" (causative) — "get my essay checked" means arrange for someone to check it.'
+    explanationZh: '"Get something done"（使役结构）——"get my essay checked"意思是安排某人检查它。'
+    grammarPoint: 'Causative: get + object + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1088
+    type: multiple-choice
+    tags: [causative, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She had her bicycle _____ at the repair shop.'
+    questionZh: '她在修理店修了自行车。'
+    options:
+      A: 'fix'
+      B: 'fixed'
+      C: 'fixing'
+      D: 'to fix'
+    answer: 'B'
+    explanation: '"Have something done" (causative) — "had her bicycle fixed" means she arranged for someone else to fix it.'
+    explanationZh: '"Have something done"（使役结构）——"had her bicycle fixed"意思是她安排别人修理了它。'
+    grammarPoint: 'Causative: have + object + past participle'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1089
+    type: fill-blank
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'The sooner you start, the _____ (good) your results will be.'
+    questionZh: '你开始得越早，结果就会越好。'
+    answer: 'better'
+    acceptableAnswers: ['better']
+    explanation: '"The sooner... the better" — double comparative structure. "The + comparative, the + comparative."'
+    explanationZh: '"The sooner... the better"——双重比较结构。"The+比较级，the+比较级"。'
+    grammarPoint: 'The + comparative, the + comparative'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1090
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'Difficult _____ it may seem, this grammar point is actually quite logical.'
+    questionZh: '尽管看起来很难，这个语法点实际上相当有逻辑。'
+    options:
+      A: 'as'
+      B: 'although'
+      C: 'despite'
+      D: 'however'
+    answer: 'A'
+    explanation: '"Adjective + as + subject + verb" is a formal concessive structure. "Difficult as it may seem" = "although it may seem difficult."'
+    explanationZh: '"形容词+as+主语+动词"是正式的让步结构。"Difficult as it may seem"="although it may seem difficult"。'
+    grammarPoint: 'Concessive: adjective + as'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1091
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She speaks English _____ well that many people think she is a native speaker.'
+    questionZh: '她英语说得如此之好，以至于很多人以为她是母语者。'
+    options:
+      A: 'very'
+      B: 'too'
+      C: 'so'
+      D: 'such'
+    answer: 'C'
+    explanation: '"So + adverb + that" — "so well that people think..." "So" modifies the adverb "well."'
+    explanationZh: '"So+副词+that"——"so well that people think..." "So"修饰副词"well"。'
+    grammarPoint: 'So...that for result clauses'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1092
+    type: fill-blank
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'It was _____ an interesting book that I read it in one day.'
+    questionZh: '这是一本如此有趣的书，我一天就读完了。'
+    answer: 'such'
+    acceptableAnswers: ['such']
+    explanation: '"Such + a/an + adjective + noun + that" — "such an interesting book that..." "Such" comes before the noun phrase.'
+    explanationZh: '"Such+a/an+形容词+名词+that"——"such an interesting book that..." "Such"放在名词短语前。'
+    grammarPoint: 'Such...that for result clauses'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1093
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-4]
+    context: exam-skills
+    question: 'Hardly _____ the exam when the fire alarm went off.'
+    questionZh: '我们几乎还没开始考试，火警就响了。'
+    options:
+      A: 'had we started'
+      B: 'we had started'
+      C: 'we started'
+      D: 'did we start'
+    answer: 'A'
+    explanation: '"Hardly had we started when..." — inversion after "hardly." Past perfect because the starting happened just before the alarm.'
+    explanationZh: '"Hardly had we started when..."——"hardly"后倒装。过去完成时因为开始刚好发生在警报之前。'
+    grammarPoint: 'Inversion: hardly...when'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1094
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I would prefer you _____ me before changing the plan.'
+    questionZh: '我宁愿你在改变计划之前告诉我。'
+    options:
+      A: 'tell'
+      B: 'told'
+      C: 'to tell'
+      D: 'telling'
+    answer: 'B'
+    explanation: '"Would prefer + subject + past simple" (like "would rather"). "I would prefer you told me" = I want you to tell me but use past simple for the wish.'
+    explanationZh: '"Would prefer+主语+一般过去时"（类似"would rather"）。"I would prefer you told me"=我想要你告诉我，但用过去时表示愿望。'
+    grammarPoint: 'Would prefer + subject + past simple'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1095
+    type: fill-blank
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'I look forward to _____ (hear) from you soon.'
+    questionZh: '我期待很快收到你的来信。'
+    answer: 'hearing'
+    acceptableAnswers: ['hearing']
+    explanation: '"Look forward to + -ing" — "to" is a preposition here, not part of the infinitive. Therefore, use the gerund "hearing."'
+    explanationZh: '"Look forward to+-ing"——这里的"to"是介词，不是不定式的一部分。因此，用动名词"hearing"。'
+    grammarPoint: 'Look forward to + gerund'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1096
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'They insisted _____ paying for the meal.'
+    questionZh: '他们坚持要付饭钱。'
+    options:
+      A: 'on'
+      B: 'in'
+      C: 'for'
+      D: 'to'
+    answer: 'A'
+    explanation: '"Insist on + -ing" — fixed preposition. "Insisted on paying" = they firmly wanted to pay.'
+    explanationZh: '"Insist on+-ing"——固定介词搭配。"Insisted on paying"=他们坚持要付款。'
+    grammarPoint: 'Insist on + gerund'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1097
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-4]
+    context: exam-skills
+    question: 'Only after finishing the exam _____ how tired I was.'
+    questionZh: '直到考完试我才意识到自己有多累。'
+    options:
+      A: 'I realised'
+      B: 'did I realise'
+      C: 'I did realise'
+      D: 'realised I'
+    answer: 'B'
+    explanation: '"Only after..." at the start of a sentence triggers inversion: "did I realise." Past simple inversion = did + subject + base verb.'
+    explanationZh: '"Only after..."在句首触发倒装："did I realise"。一般过去时倒装=did+主语+动词原形。'
+    grammarPoint: 'Inversion after only after'
+    relatedQuest: Q11
+    difficulty: 4
+
+  - id: G1098
+    type: fill-blank
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'She apologised for _____ (be) late to the meeting.'
+    questionZh: '她为开会迟到道歉。'
+    answer: 'being'
+    acceptableAnswers: ['being']
+    explanation: '"Apologise for + -ing" — "for" is a preposition, so use the gerund. "Apologised for being late."'
+    explanationZh: '"Apologise for+-ing"——"for"是介词，所以用动名词。"Apologised for being late"。'
+    grammarPoint: 'Apologise for + gerund'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1099
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-3]
+    context: exam-skills
+    question: 'There is no point _____ about the exam now — just do your best.'
+    questionZh: '现在担心考试没有用——尽力就好。'
+    options:
+      A: 'worry'
+      B: 'to worry'
+      C: 'in worrying'
+      D: 'worried'
+    answer: 'C'
+    explanation: '"There is no point in + -ing" — fixed expression meaning there is no benefit or reason to do something.'
+    explanationZh: '"There is no point in+-ing"——固定表达，意思是做某事没有好处或理由。'
+    grammarPoint: 'There is no point in + gerund'
+    relatedQuest: Q11
+    difficulty: 3
+
+  - id: G1100
+    type: multiple-choice
+    tags: [advanced, Q11, difficulty-4]
+    context: exam-skills
+    question: 'Little _____ that this exam would change her life forever.'
+    questionZh: '她几乎不知道这次考试会永远改变她的生活。'
+    options:
+      A: 'she knew'
+      B: 'did she know'
+      C: 'she did know'
+      D: 'knew she'
+    answer: 'B'
+    explanation: '"Little did she know" — inversion after negative/restrictive adverb "little" at the start of a sentence. Past simple inversion.'
+    explanationZh: '"Little did she know"——"little"在句首时倒装。一般过去时倒装。'
+    grammarPoint: 'Inversion after little'
+    relatedQuest: Q11
+    difficulty: 4

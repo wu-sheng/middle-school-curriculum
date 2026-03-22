@@ -1,0 +1,525 @@
+id: Q11
+title: 'Code Breaker'
+titleZh: '密码破译者'
+subtitle: 'Crack the code of the Use of English paper!'
+subtitleZh: '破解语言运用试卷的密码！'
+month: 11
+fceMapping: 'Use of English (All Parts) — Comprehensive Training'
+
+theme:
+  setting: 'A secret Code Room hidden beneath an old library, filled with cipher machines, puzzle boards, and word-transformation stations'
+  settingZh: '一间隐藏在古老图书馆下方的秘密密码室，充满了密码机、谜题板和词汇转换站'
+  mascot: 'Cipher the Chameleon, a colour-changing lizard who sees patterns everywhere and loves cracking language puzzles'
+  mascotZh: 'Cipher 变色龙，一只能变色的蜥蜴，能在任何地方看到模式，热爱破解语言谜题'
+
+objectives:
+  - 'Master Part 1 (multiple-choice cloze): recognise collocations, phrasal verbs, and confusable words'
+  - 'Master Part 2 (open cloze): identify missing structural words (prepositions, articles, conjunctions, pronouns)'
+  - 'Master Part 3 (word formation): apply prefixes, suffixes, and word family transformations accurately'
+  - 'Master Part 4 (key word transformation): recognise and apply the 10 most common transformation patterns'
+  - 'Develop time management strategies for the 75-minute Use of English paper'
+  - 'Build an error analysis system to identify and eliminate recurring mistakes'
+
+objectivesZh:
+  - '掌握第1部分（多项选择完形填空）：识别搭配、短语动词和易混词'
+  - '掌握第2部分（开放式完形填空）：识别缺失的结构词（介词、冠词、连词、代词）'
+  - '掌握第3部分（构词法）：准确应用前缀、后缀和词族转换'
+  - '掌握第4部分（关键词转换）：识别并应用10种最常见的转换模式'
+  - '开发75分钟语言运用试卷的时间管理策略'
+  - '建立错误分析系统以识别和消除反复出现的错误'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Part 1 Cloze Tactics
+  # ─────────────────────────────────────────────
+  - id: Q11-L01
+    title: 'Cloze Tactics — Cracking the Multiple-Choice Code'
+    titleZh: '完形填空策略 — 破解多项选择密码'
+
+    introduction: |
+      Welcome to the Code Room! Cipher the Chameleon adjusts his magnifying glass and examines
+      a wall covered in sentences with missing words.
+
+      "Part 1 of the Use of English," he explains, "is all about recognising patterns in English.
+      The examiners test three things: COLLOCATIONS (words that naturally go together, like
+      'make a decision' not 'do a decision'), PHRASAL VERBS (like 'give up' or 'come across'),
+      and CONFUSABLE WORDS (words that look similar but mean different things, like 'effect'
+      and 'affect')."
+
+      "The trick is to read the whole sentence — not just the gap — because the words AROUND
+      the gap tell you which answer fits. Think of it like a jigsaw puzzle: the shape of the
+      gap tells you which piece belongs there."
+
+      "Today, we will learn to spot these three types of code."
+    introductionZh: |
+      欢迎来到密码室！Cipher变色龙调整了他的放大镜，检查着一面布满有缺失词的句子的墙。
+
+      "语言运用第1部分，"他解释道，"完全是关于识别英语中的模式。考官测试三件事：
+      搭配（自然搭配在一起的词，如'make a decision'而不是'do a decision'），
+      短语动词（如'give up'或'come across'），和易混词（看起来相似但意思不同的词，
+      如'effect'和'affect'）。"
+
+      "诀窍是阅读整个句子——不仅仅是空格——因为空格周围的词告诉你哪个答案适合。
+      把它想成拼图：空格的形状告诉你哪块属于那里。"
+
+      "今天，我们将学习识别这三种密码。"
+
+    rules:
+      - pattern: 'Collocations'
+        meaning: 'Fixed word partnerships that sound natural to native speakers'
+        meaningZh: '对母语者来说听起来自然的固定词汇搭配'
+        examples:
+          - base: 'She _____ a decision to study harder.'
+            transformed: 'She MADE a decision to study harder. (Not "did" or "took")'
+            sentence: 'Make + decision is a fixed collocation. Learn these as complete phrases.'
+            sentenceZh: 'Make+decision是固定搭配。把它们作为完整短语来学。'
+      - pattern: 'Phrasal Verbs'
+        meaning: 'Verb + particle combinations where the meaning changes'
+        meaningZh: '动词+小品词的组合，含义会改变'
+        examples:
+          - base: 'She _____ up with a brilliant idea.'
+            transformed: 'She CAME up with a brilliant idea. (Not "thought up with" or "made up with")'
+            sentence: '"Come up with" means to think of or produce an idea. The particle changes the meaning.'
+            sentenceZh: '"Come up with"意思是想出一个想法。小品词改变了含义。'
+      - pattern: 'Confusable Words'
+        meaning: 'Words that look or sound similar but have different meanings or uses'
+        meaningZh: '看起来或听起来相似但含义或用法不同的词'
+        examples:
+          - base: 'The rain had a significant _____ on the match.'
+            transformed: 'The rain had a significant EFFECT on the match. (Not "affect" — that is a verb)'
+            sentence: '"Effect" is a noun; "affect" is a verb. "Have an effect" is the correct collocation.'
+            sentenceZh: '"Effect"是名词；"affect"是动词。"Have an effect"是正确搭配。'
+
+    tips:
+      - 'Always read the WHOLE sentence before looking at the options.'
+      - 'Look at the words BEFORE and AFTER the gap — they often form a phrase with the answer.'
+      - 'If two options seem possible, read the sentence aloud with each one — the natural-sounding choice is usually correct.'
+      - 'Keep a collocation notebook: when you learn a new verb, learn what nouns it goes with.'
+      - 'In the exam, spend about 12 minutes on Part 1 (that is about 45 seconds per question).'
+    tipsZh:
+      - '在看选项之前始终阅读整个句子。'
+      - '看空格前后的词——它们经常与答案构成一个短语。'
+      - '如果两个选项似乎都可以，大声朗读每个选项的句子——听起来自然的选择通常是正确的。'
+      - '保持一个搭配笔记本：学新动词时，学它搭配什么名词。'
+      - '考试中，在第1部分花大约12分钟（每题约45秒）。'
+
+    practicePreview:
+      - id: Q11-L01-P01
+        question: 'The scientist made a significant _____ in her research.'
+        questionZh: '这位科学家在研究中取得了重大 _____。'
+        options:
+          A: 'breakthrough'
+          B: 'breakout'
+          C: 'breakdown'
+          D: 'breakaway'
+        answer: 'A'
+        explanation: '"Make a breakthrough" is a fixed collocation meaning "achieve a major discovery."'
+        explanationZh: '"Make a breakthrough"是固定搭配，意思是"取得重大发现"。'
+      - id: Q11-L01-P02
+        question: 'The teacher placed great _____ on the importance of reading.'
+        questionZh: '老师非常 _____ 阅读的重要性。'
+        options:
+          A: 'weight'
+          B: 'emphasis'
+          C: 'focus'
+          D: 'value'
+        answer: 'B'
+        explanation: '"Place emphasis on" is the correct collocation. You "place/put emphasis" but not "place weight/focus/value on" in this pattern.'
+        explanationZh: '"Place emphasis on"是正确搭配。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Part 2 Open Cloze Strategy
+  # ─────────────────────────────────────────────
+  - id: Q11-L02
+    title: 'The Missing Piece — Open Cloze Strategy'
+    titleZh: '缺失的一块 — 开放式完形填空策略'
+
+    introduction: |
+      Cipher slides a new puzzle board across the table. This one has sentences with blank
+      spaces but NO options to choose from.
+
+      "Part 2 is called the open cloze," he says. "You must find the missing word yourself.
+      But here is the secret: the answer is ALWAYS a small structural word — a preposition,
+      an article, a conjunction, a pronoun, an auxiliary verb, or part of a fixed expression.
+      It is NEVER a long content word like 'beautiful' or 'investigation.'"
+
+      "Think of these words as the glue that holds English sentences together. Without them,
+      the sentence falls apart. Your job is to figure out which piece of glue is missing."
+    introductionZh: |
+      Cipher在桌上滑过一块新的谜题板。这块有空格的句子但没有选项可选。
+
+      "第2部分叫做开放式完形填空，"他说。"你必须自己找到缺失的词。但这里有个秘密：
+      答案总是一个小的结构词——介词、冠词、连词、代词、助动词或固定表达的一部分。
+      它永远不会是像'beautiful'或'investigation'这样的长内容词。"
+
+      "把这些词想成把英语句子粘合在一起的胶水。没有它们，句子就散架了。
+      你的工作是找出哪块胶水缺失了。"
+
+    rules:
+      - pattern: 'Prepositions'
+        meaning: 'Small words that show relationships: in, on, at, for, to, by, with, of, about'
+        meaningZh: '表示关系的小词：in, on, at, for, to, by, with, of, about'
+        examples:
+          - base: 'She is interested _____ learning languages.'
+            transformed: 'She is interested IN learning languages.'
+            sentence: '"Interested in" is a fixed preposition combination. Learn adjective + preposition pairs.'
+            sentenceZh: '"Interested in"是固定介词搭配。学习形容词+介词对。'
+      - pattern: 'Conjunctions & Linking Words'
+        meaning: 'Words that connect ideas: although, however, despite, unless, whether, while'
+        meaningZh: '连接想法的词：although, however, despite, unless, whether, while'
+        examples:
+          - base: '_____ the rain, the match continued.'
+            transformed: 'DESPITE the rain, the match continued.'
+            sentence: '"Despite" is followed by a noun phrase (not a clause). Contrast with "although" + clause.'
+            sentenceZh: '"Despite"后跟名词短语（不是从句）。与"although"+从句对比。'
+      - pattern: 'Auxiliary & Modal Verbs'
+        meaning: 'Helper verbs that complete tenses or add meaning: have, been, being, would, could'
+        meaningZh: '完成时态或添加含义的助动词：have, been, being, would, could'
+        examples:
+          - base: 'The house has _____ built by local workers.'
+            transformed: 'The house has BEEN built by local workers.'
+            sentence: 'Present perfect passive needs "has been + past participle." The missing word is "been."'
+            sentenceZh: '现在完成时被动需要"has been+过去分词"。缺失的词是"been"。'
+
+    tips:
+      - 'The answer is always ONE word. If you write two words, it is wrong.'
+      - 'Read the words before and after the gap carefully — they form a pattern with the answer.'
+      - 'Check if the gap is part of a passive construction (been/being), a perfect tense (have/has/had), or a fixed expression.'
+      - 'Common answers include: the, a, an, in, on, at, for, to, by, of, with, been, being, which, who, that, if, whether, such, so.'
+      - 'Spelling must be correct — even a small error means zero marks for that question.'
+    tipsZh:
+      - '答案总是一个词。如果你写了两个词，就是错的。'
+      - '仔细阅读空格前后的词——它们与答案形成一个模式。'
+      - '检查空格是否是被动构造（been/being）、完成时态（have/has/had）或固定表达的一部分。'
+      - '常见答案包括：the, a, an, in, on, at, for, to, by, of, with, been, being, which, who, that, if, whether, such, so。'
+      - '拼写必须正确——即使一个小错误也意味着该题零分。'
+
+    practicePreview:
+      - id: Q11-L02-P01
+        question: 'She has been living here _____ she was ten years old.'
+        questionZh: '她从十岁就住在这里了。填空：_____'
+        options:
+          A: 'since'
+          B: 'for'
+          C: 'during'
+          D: 'from'
+        answer: 'A'
+        explanation: '"Since" marks the starting point of an ongoing action. "For" would need a duration (e.g., "for five years").'
+        explanationZh: '"Since"标记持续动作的起始点。"For"需要一个时间段（如"for five years"）。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Part 3 Word Formation Mastery
+  # ─────────────────────────────────────────────
+  - id: Q11-L03
+    title: 'The Word Factory — Word Formation Mastery'
+    titleZh: '词汇工厂 — 构词法精通'
+
+    introduction: |
+      Cipher leads you into the Word Factory — a room filled with conveyor belts carrying
+      root words through machines that add prefixes and suffixes.
+
+      "Part 3 is my favourite puzzle," Cipher says, turning a dial on the first machine.
+      "You get a root word and you must transform it to fit the sentence. The key is knowing
+      your PREFIXES (un-, dis-, re-, mis-, over-, im-) and SUFFIXES (-tion, -ment, -ness,
+      -able, -ive, -ful, -less, -ous, -ly)."
+
+      "But watch out! Some transformations are tricky. You might need to add BOTH a prefix
+      AND a suffix (like 'un-' + 'satisfy' + '-ing' = 'unsatisfying'). Or you might need
+      to change the spelling (like 'beauty' → 'beautiful', not 'beautyful')."
+    introductionZh: |
+      Cipher带你进入词汇工厂——一间充满传送带的房间，传送带上的词根通过添加前缀和后缀的机器。
+
+      "第3部分是我最喜欢的谜题，"Cipher说着转动第一台机器上的拨盘。"你得到一个词根，
+      必须把它转换成适合句子的形式。关键是了解你的前缀（un-, dis-, re-, mis-, over-, im-）
+      和后缀（-tion, -ment, -ness, -able, -ive, -ful, -less, -ous, -ly）。"
+
+      "但要注意！有些转换很棘手。你可能需要同时添加前缀和后缀
+      （如'un-'+'satisfy'+'-ing'='unsatisfying'）。或者你可能需要改变拼写
+      （如'beauty'→'beautiful'，不是'beautyful'）。"
+
+    rules:
+      - pattern: 'Noun Suffixes'
+        meaning: '-tion, -sion, -ment, -ness, -ity, -ence, -ance, -er, -or, -ist'
+        meaningZh: '-tion, -sion, -ment, -ness, -ity, -ence, -ance, -er, -or, -ist'
+        examples:
+          - base: 'achieve → ?'
+            transformed: 'achieve → ACHIEVEMENT (noun: -ment)'
+            sentence: 'Add -ment to verbs ending in "e" — keep the "e" and add "-ment."'
+            sentenceZh: '在以"e"结尾的动词后加-ment——保留"e"然后加"-ment"。'
+      - pattern: 'Adjective Suffixes'
+        meaning: '-able, -ible, -ful, -less, -ive, -ous, -al, -ent, -ant, -ic'
+        meaningZh: '-able, -ible, -ful, -less, -ive, -ous, -al, -ent, -ant, -ic'
+        examples:
+          - base: 'remark → ?'
+            transformed: 'remark → REMARKABLE (adjective: -able)'
+            sentence: '"Remarkable" means worthy of attention. Remark + able.'
+            sentenceZh: '"Remarkable"意思是值得关注的。Remark+able。'
+      - pattern: 'Negative Prefixes'
+        meaning: 'un-, dis-, in-/im-/il-/ir-, mis-, non-'
+        meaningZh: 'un-, dis-, in-/im-/il-/ir-, mis-, non-'
+        examples:
+          - base: 'His _____ to cooperate caused problems. (WILLING)'
+            transformed: 'His UNWILLINGNESS to cooperate caused problems.'
+            sentence: 'Double transformation: un- (prefix) + willing + -ness (suffix) → unwillingness.'
+            sentenceZh: '双重转换：un-（前缀）+willing+-ness（后缀）→unwillingness。'
+
+    tips:
+      - 'First decide what PART OF SPEECH you need (noun, verb, adjective, or adverb).'
+      - 'Look at the words around the gap: articles (a, the) suggest a noun; very/extremely suggest an adjective; verbs suggest an adverb.'
+      - 'Check if the meaning should be POSITIVE or NEGATIVE — you may need a negative prefix.'
+      - 'Check if a noun should be SINGULAR or PLURAL.'
+      - 'Write the word clearly — messy handwriting can cost you marks.'
+    tipsZh:
+      - '首先决定你需要什么词性（名词、动词、形容词或副词）。'
+      - '看空格周围的词：冠词（a, the）暗示名词；very/extremely暗示形容词；动词暗示副词。'
+      - '检查含义应该是正面还是负面——你可能需要否定前缀。'
+      - '检查名词应该是单数还是复数。'
+      - '字迹要清晰——潦草的字迹可能让你丢分。'
+
+    practicePreview:
+      - id: Q11-L03-P01
+        question: 'The ending was somewhat _____ and left many questions unanswered. (SATISFY)'
+        questionZh: '结局有些 _____，留下了许多未回答的问题。(SATISFY)'
+        options:
+          A: 'unsatisfying'
+          B: 'satisfying'
+          C: 'satisfaction'
+          D: 'dissatisfied'
+        answer: 'A'
+        explanation: 'We need a negative adjective. "Unsatisfying" = un- + satisfy + -ing. The ending was NOT satisfying.'
+        explanationZh: '我们需要一个否定形容词。"Unsatisfying"=un-+satisfy+-ing。结局不令人满意。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Part 4 Transformation Tricks
+  # ─────────────────────────────────────────────
+  - id: Q11-L04
+    title: 'Shape-Shifter — Key Word Transformation Tricks'
+    titleZh: '变形师 — 关键词转换技巧'
+
+    introduction: |
+      Cipher pulls out a pair of magic mirrors. "Part 4 is about saying the SAME thing in a
+      DIFFERENT way," he says, holding up two sentences that mean the same but look completely
+      different.
+
+      "There are about ten common transformation patterns that cover 70% of the questions.
+      Learn these ten, and you will crack most of Part 4."
+    introductionZh: |
+      Cipher拿出一对魔法镜子。"第4部分是关于用不同的方式说同样的事情，"他说着举起
+      两个意思相同但看起来完全不同的句子。
+
+      "大约有十种常见的转换模式覆盖了70%的题目。学会这十种，你就能破解第4部分的大部分。"
+
+    rules:
+      - pattern: 'Active ↔ Passive'
+        meaning: '"They built the bridge" ↔ "The bridge was built"'
+        meaningZh: '"他们建了桥" ↔ "桥被建了"'
+        examples:
+          - base: 'They built the bridge in 2010.'
+            transformed: 'The bridge was built in 2010.'
+            sentence: 'Move the object to subject position + was/were + past participle.'
+            sentenceZh: '将宾语移到主语位置+was/were+过去分词。'
+      - pattern: 'Direct ↔ Reported Speech'
+        meaning: '"I will help" → She said she would help'
+        meaningZh: '"我会帮忙" → 她说她会帮忙'
+        examples:
+          - base: '"I will help you," she said.'
+            transformed: 'She said she would help me.'
+            sentence: 'Change pronouns, backshift tenses, change time references.'
+            sentenceZh: '改变代词、时态后移、改变时间参照。'
+      - pattern: 'So/Such...that ↔ Too/Enough'
+        meaning: '"So tired that..." ↔ "Too tired to..."'
+        meaningZh: '"如此疲惫以至于..." ↔ "太疲惫以至于不能..."'
+        examples:
+          - base: 'The box was so heavy that I could not lift it.'
+            transformed: 'The box was too heavy for me to lift.'
+            sentence: '"So heavy that I could not" → "too heavy for me to." Same meaning, different structure.'
+            sentenceZh: '"So heavy that I could not"→"too heavy for me to"。相同含义，不同结构。'
+
+    tips:
+      - 'The key word must stay EXACTLY as it is — do not change its form.'
+      - 'You must use between 2 and 5 words including the key word.'
+      - 'Always check: does your new sentence mean EXACTLY the same as the original?'
+      - 'Practise the 10 most common patterns until they become automatic.'
+      - 'If stuck, try working backwards from the key word — what structures use this word?'
+    tipsZh:
+      - '关键词必须保持完全不变——不要改变它的形式。'
+      - '你必须使用2到5个词，包括关键词。'
+      - '始终检查：你的新句子与原句意思完全一样吗？'
+      - '练习10种最常见的模式直到它们变成自动化。'
+      - '如果卡住了，试着从关键词倒推——什么结构使用这个词？'
+
+    practicePreview:
+      - id: Q11-L04-P01
+        question: |
+          I have never taken such a difficult exam.
+          MOST → This is the _____ I have ever taken.
+        questionZh: |
+          我从来没有参加过如此困难的考试。
+          MOST → 这是我参加过的 _____ 。
+        options:
+          A: 'most difficult exam'
+          B: 'most hard exam'
+          C: 'more difficult exam'
+          D: 'hardest exam that'
+        answer: 'A'
+        explanation: '"Never...such a difficult" → "the most difficult...ever." Superlative transformation.'
+        explanationZh: '"Never...such a difficult"→"the most difficult...ever"。最高级转换。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Time Management & Exam Strategy
+  # ─────────────────────────────────────────────
+  - id: Q11-L05
+    title: 'Clock Master — Time Management for UoE'
+    titleZh: '时间大师 — 语言运用的时间管理'
+
+    introduction: |
+      Cipher taps a large clock on the wall. "You have 75 minutes for four parts," he says.
+      "That sounds generous, but without a plan, time disappears fast."
+
+      "Here is the Code Breaker's time plan:
+      Part 1 (multiple-choice cloze): 12 minutes
+      Part 2 (open cloze): 12 minutes
+      Part 3 (word formation): 12 minutes
+      Part 4 (key word transformation): 15 minutes
+      Checking time: 24 minutes
+
+      Part 4 gets extra time because transformations need more thinking. And ALWAYS keep
+      time for checking — that is where you catch silly mistakes."
+    introductionZh: |
+      Cipher敲了敲墙上的大钟。"你有75分钟完成四个部分，"他说。
+      "这听起来很充裕，但没有计划，时间很快就消失了。"
+
+      "这是密码破译者的时间计划：
+      第1部分（多项选择完形填空）：12分钟
+      第2部分（开放式完形填空）：12分钟
+      第3部分（构词法）：12分钟
+      第4部分（关键词转换）：15分钟
+      检查时间：24分钟
+
+      第4部分额外给时间因为转换需要更多思考。而且一定要留检查时间——那是你抓住粗心错误的地方。"
+
+    rules:
+      - pattern: 'The 2-Minute Rule'
+        meaning: 'Never spend more than 2 minutes on any single question. If stuck, mark it and move on.'
+        meaningZh: '任何单个问题不要超过2分钟。如果卡住了，标记它然后继续。'
+        examples:
+          - base: 'I have been stuck on question 5 for three minutes.'
+            transformed: 'Mark question 5, move to question 6, and come back later with fresh eyes.'
+            sentence: 'Moving on prevents panic and often the answer comes to you later.'
+            sentenceZh: '继续前进防止恐慌，答案往往会稍后出现在你脑中。'
+      - pattern: 'The Double Check'
+        meaning: 'Always check that your answer makes grammatical AND logical sense in the sentence.'
+        meaningZh: '始终检查你的答案在句子中语法上和逻辑上都说得通。'
+        examples:
+          - base: 'Read the complete sentence with your answer inserted.'
+            transformed: 'Does it sound natural? Does it make sense? Is the spelling correct?'
+            sentence: 'Three checks: grammar, meaning, spelling.'
+            sentenceZh: '三项检查：语法、含义、拼写。'
+
+    tips:
+      - 'Wear a watch in the exam so you can track time without looking at the wall clock.'
+      - 'Do the parts you find easiest FIRST to build confidence and secure marks.'
+      - 'If you change an answer, make sure your final choice is clear to the examiner.'
+      - 'Never leave a question blank — even a guess has a chance of being correct.'
+      - 'In the last 5 minutes, focus on checking Parts 2 and 3 where spelling errors cost marks.'
+    tipsZh:
+      - '考试时戴表，这样你可以追踪时间而不用看墙上的钟。'
+      - '先做你觉得最容易的部分以建立信心和确保分数。'
+      - '如果你改了答案，确保你最终的选择对考官来说是清晰的。'
+      - '永远不要留空——即使猜测也有可能正确。'
+      - '在最后5分钟，专注检查第2和第3部分，那里拼写错误会丢分。'
+
+    practicePreview:
+      - id: Q11-L05-P01
+        question: |
+          You have been working on one question for 3 minutes and you are still not sure of the answer. What should you do?
+        questionZh: |
+          你在一道题上工作了3分钟还不确定答案。你应该怎么做？
+        options:
+          A: 'Keep trying until you get the answer — never give up.'
+          B: 'Mark it, make your best guess, and move on. Come back later if you have time.'
+          C: 'Skip it completely and leave it blank.'
+          D: 'Ask the examiner for a hint.'
+        answer: 'B'
+        explanation: 'The 2-minute rule: mark it, make your best guess, and move on. You can come back later with fresh eyes.'
+        explanationZh: '2分钟规则：标记它，做出最佳猜测，然后继续。你可以稍后带着新鲜的眼光回来。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Error Analysis & Consolidation
+  # ─────────────────────────────────────────────
+  - id: Q11-L06
+    title: 'The Error Detective — Analyse, Learn, Improve'
+    titleZh: '错误侦探 — 分析、学习、提高'
+
+    introduction: |
+      Cipher puts on his detective hat and opens a file labelled "Error Analysis."
+
+      "The most powerful study technique in the world," he says, "is not practising more
+      questions. It is analysing the questions you got WRONG. Every mistake contains a lesson.
+      Your job is to find that lesson, learn it, and make sure you never make the same mistake
+      again."
+
+      "Today, I will teach you how to build your own Error Analysis System — a personalised
+      study tool that gets smarter every time you use it."
+    introductionZh: |
+      Cipher戴上他的侦探帽，打开一个标有"错误分析"的文件。
+
+      "世界上最有力的学习技巧，"他说，"不是练习更多的题目。而是分析你做错的题目。
+      每个错误都包含一个教训。你的工作是找到那个教训，学习它，并确保你永远不会再犯
+      同样的错误。"
+
+      "今天，我将教你如何建立自己的错误分析系统——一个每次使用都会变得更聪明的个性化学习工具。"
+
+    rules:
+      - pattern: 'Step 1: Record'
+        meaning: 'Write down every wrong answer with the question, your wrong answer, and the correct answer.'
+        meaningZh: '写下每个错误答案，包括题目、你的错误答案和正确答案。'
+        examples:
+          - base: 'Q: She placed great _____ on reading. I wrote: focus. Correct: emphasis.'
+            transformed: 'Error type: COLLOCATION. I did not know "place emphasis on" is a fixed phrase.'
+            sentence: 'Recording the error precisely helps you see what went wrong.'
+            sentenceZh: '精确记录错误帮助你看到哪里出了问题。'
+      - pattern: 'Step 2: Classify'
+        meaning: 'Sort errors into categories: collocation, preposition, word formation, tense, spelling, meaning.'
+        meaningZh: '将错误分类：搭配、介词、构词法、时态、拼写、含义。'
+        examples:
+          - base: 'After 20 practice questions, count how many errors are in each category.'
+            transformed: 'If 8 out of 12 errors are preposition mistakes, that is your priority for revision.'
+            sentence: 'Pattern recognition turns random mistakes into a clear study plan.'
+            sentenceZh: '模式识别将随机错误变成清晰的学习计划。'
+      - pattern: 'Step 3: Correct & Prevent'
+        meaning: 'For each error, write a rule or memory trick that will prevent the same mistake in future.'
+        meaningZh: '对于每个错误，写一条规则或记忆技巧，以防止将来犯同样的错误。'
+        examples:
+          - base: 'Error: I wrote "depended of" instead of "depended on."'
+            transformed: 'Prevention rule: DEPEND always takes ON. Write it 5 times: depend on, depend on, depend on...'
+            sentence: 'Creating a prevention strategy makes the learning stick.'
+            sentenceZh: '创建预防策略使学习更持久。'
+
+    tips:
+      - 'Review your error log EVERY WEEK — not just before the exam.'
+      - 'After two weeks, you will see clear patterns. Focus 80% of your revision on your weakest areas.'
+      - 'Celebrate when you stop making a particular type of error — it means the system is working!'
+      - 'Share your error log with a study partner — they might spot patterns you missed.'
+      - 'The goal is not zero errors — it is fewer errors each time. Progress, not perfection.'
+    tipsZh:
+      - '每周复习你的错误日志——不仅仅是在考试前。'
+      - '两周后，你会看到清晰的模式。将80%的复习集中在你最薄弱的领域。'
+      - '当你不再犯某种特定类型的错误时庆祝——这意味着系统正在起作用！'
+      - '与学习伙伴分享你的错误日志——他们可能发现你遗漏的模式。'
+      - '目标不是零错误——而是每次更少的错误。进步，而非完美。'
+
+    practicePreview:
+      - id: Q11-L06-P01
+        question: |
+          After analysing your last three practice tests, you discover that 70% of your errors in Part 2 are preposition mistakes. What is the most effective next step?
+        questionZh: |
+          分析了最近三套模拟测试后，你发现第2部分70%的错误是介词错误。最有效的下一步是什么？
+        options:
+          A: 'Do more complete practice tests.'
+          B: 'Focus specifically on learning fixed preposition phrases.'
+          C: 'Read more English books to improve general knowledge.'
+          D: 'Ask your teacher to explain prepositions again.'
+        answer: 'B'
+        explanation: 'Targeted practice on your specific weakness (preposition phrases) is far more effective than general practice.'
+        explanationZh: '针对你特定弱点（介词短语）的定向练习比一般性练习有效得多。'

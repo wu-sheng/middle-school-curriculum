@@ -1,0 +1,1640 @@
+category: 'Essay Grammar'
+categoryZh: '议论文语法'
+questions:
+  # ============================================================
+  # G0901–G0920: Impersonal structures (It is widely believed...)
+  # ============================================================
+  - id: G0901
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It _____ widely believed that homework helps students learn.'
+    questionZh: '人们普遍认为作业帮助学生学习。'
+    options:
+      A: 'is'
+      B: 'has'
+      C: 'does'
+      D: 'are'
+    answer: 'A'
+    explanation: '"It is widely believed that..." is an impersonal structure used in essays. We use "is" (singular) because "it" is the formal subject.'
+    explanationZh: '"It is widely believed that..."是议论文中使用的非人称结构。我们用"is"（单数），因为"it"是形式主语。'
+    grammarPoint: 'Impersonal: It is + adverb + past participle + that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0902
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It is generally _____ that children need at least eight hours of sleep.'
+    questionZh: '人们普遍 _____ 孩子至少需要八小时的睡眠。'
+    answer: 'accepted'
+    acceptableAnswers: ['accepted', 'agreed']
+    explanation: '"It is generally accepted/agreed that..." is a common impersonal essay structure. The past participle shows that many people hold this view.'
+    explanationZh: '"It is generally accepted/agreed that..."是常见的非人称议论文结构。过去分词表示许多人持有这一观点。'
+    grammarPoint: 'Impersonal: It is generally accepted/agreed that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0903
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It has been _____ that screen time affects sleep quality.'
+    questionZh: '已有研究 _____ 屏幕时间影响睡眠质量。'
+    options:
+      A: 'suggest'
+      B: 'suggested'
+      C: 'suggesting'
+      D: 'suggests'
+    answer: 'B'
+    explanation: '"It has been suggested that..." uses the present perfect passive. "Suggested" is the past participle needed after "has been."'
+    explanationZh: '"It has been suggested that..."使用现在完成时被动语态。"has been"后面需要过去分词"suggested"。'
+    grammarPoint: 'Impersonal: It has been + past participle + that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0904
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It is often _____ that school uniforms reduce bullying.'
+    questionZh: '人们常常 _____ 校服减少欺凌。'
+    answer: 'argued'
+    acceptableAnswers: ['argued', 'claimed', 'said']
+    explanation: '"It is often argued/claimed/said that..." introduces a common opinion in a formal, impersonal way.'
+    explanationZh: '"It is often argued/claimed/said that..."以正式、非人称的方式引入一个常见观点。'
+    grammarPoint: 'Impersonal: It is often argued/claimed that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0905
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It _____ be argued that technology has transformed education.'
+    questionZh: '可以说技术已经改变了教育。'
+    options:
+      A: 'can'
+      B: 'must'
+      C: 'should'
+      D: 'will'
+    answer: 'A'
+    explanation: '"It can/could be argued that..." is a hedged impersonal structure. "Can" introduces a possible argument without committing fully to it.'
+    explanationZh: '"It can/could be argued that..."是一种委婉的非人称结构。"Can"引入一个可能的论点，而不完全承诺。'
+    grammarPoint: 'Impersonal: It can/could be argued that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0906
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It is worth _____ that not all homework is equally useful.'
+    questionZh: '值得 _____ 的是，并非所有作业都同样有用。'
+    options:
+      A: 'note'
+      B: 'noted'
+      C: 'noting'
+      D: 'to note'
+    answer: 'C'
+    explanation: '"It is worth + -ing" is a fixed pattern. "It is worth noting that..." means "it is important to notice that..."'
+    explanationZh: '"It is worth + -ing"是固定句型。"It is worth noting that..."意思是"值得注意的是……"'
+    grammarPoint: 'It is worth + -ing'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0907
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It cannot be _____ that technology plays a major role in modern education.'
+    questionZh: '不可 _____ 技术在现代教育中发挥着重要作用。'
+    answer: 'denied'
+    acceptableAnswers: ['denied']
+    explanation: '"It cannot be denied that..." is a strong impersonal structure meaning something is undeniably true.'
+    explanationZh: '"It cannot be denied that..."是一个强有力的非人称结构，表示某事不可否认是真实的。'
+    grammarPoint: 'Impersonal: It cannot be denied that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0908
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'It _____ seem that most students prefer shorter school days.'
+    questionZh: '似乎大多数学生更喜欢更短的在校时间。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'can'
+      D: 'has'
+    answer: 'B'
+    explanation: '"It would seem that..." is a polite, hedged way to present an observation. "Would" makes it less certain than "does."'
+    explanationZh: '"It would seem that..."是一种礼貌委婉的方式来呈现观察结果。"Would"使其比"does"更不确定。'
+    grammarPoint: 'Hedging: It would seem/appear that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0909
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It is _____ acknowledged that exercise benefits mental health.'
+    questionZh: '人们 _____ 承认运动有益心理健康。'
+    answer: 'widely'
+    acceptableAnswers: ['widely', 'generally', 'universally']
+    explanation: '"It is widely/generally acknowledged that..." is a formal impersonal structure. The adverb shows how many people accept this view.'
+    explanationZh: '"It is widely/generally acknowledged that..."是正式的非人称结构。副词表示有多少人接受这一观点。'
+    grammarPoint: 'Impersonal: adverb choice (widely/generally/universally)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0910
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It _____ without saying that all children deserve a good education.'
+    questionZh: '不言而喻，所有孩子都值得接受良好的教育。'
+    options:
+      A: 'goes'
+      B: 'says'
+      C: 'runs'
+      D: 'takes'
+    answer: 'A'
+    explanation: '"It goes without saying that..." is a fixed expression meaning something is so obvious it does not need to be stated.'
+    explanationZh: '"It goes without saying that..."是固定表达，意思是某事如此明显以至于不需要说出来。'
+    grammarPoint: 'Fixed expression: It goes without saying that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # G0911-G0920: More impersonal structures
+  - id: G0911
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'There _____ growing evidence that reading improves vocabulary.'
+    questionZh: '有越来越多的证据表明阅读提高词汇量。'
+    options:
+      A: 'are'
+      B: 'is'
+      C: 'has'
+      D: 'have'
+    answer: 'B'
+    explanation: '"There is" agrees with the uncountable noun "evidence." Use "There is growing evidence that..." to introduce research findings.'
+    explanationZh: '"There is"与不可数名词"evidence"一致。用"There is growing evidence that..."来引入研究发现。'
+    grammarPoint: 'There is + uncountable noun + that clause'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0912
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'There is no _____ that social media has changed communication.'
+    questionZh: '毫无 _____ 社交媒体改变了交流方式。'
+    answer: 'doubt'
+    acceptableAnswers: ['doubt', 'question']
+    explanation: '"There is no doubt/question that..." is an impersonal way to state something is certainly true.'
+    explanationZh: '"There is no doubt/question that..."是一种非人称方式来陈述某事肯定是真的。'
+    grammarPoint: 'There is no doubt/question that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0913
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'Research _____ that children learn better when they enjoy the subject.'
+    questionZh: '研究 _____ 孩子在喜欢某学科时学得更好。'
+    options:
+      A: 'suggest'
+      B: 'suggests'
+      C: 'suggested'
+      D: 'are suggesting'
+    answer: 'B'
+    explanation: '"Research" is an uncountable noun in English, so it takes the singular verb "suggests." This is a common essay structure.'
+    explanationZh: '"Research"在英语中是不可数名词，所以用单数动词"suggests"。这是常见的议论文结构。'
+    grammarPoint: 'Research + singular verb'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0914
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'A recent _____ found that 70% of students support coding education.'
+    questionZh: '最近一项 _____ 发现70%的学生支持编程教育。'
+    answer: 'study'
+    acceptableAnswers: ['study', 'survey', 'report']
+    explanation: '"A recent study/survey/report found that..." introduces evidence formally. Choose the noun that best fits the type of research.'
+    explanationZh: '"A recent study/survey/report found that..."正式地引入证据。选择最适合研究类型的名词。'
+    grammarPoint: 'Introducing evidence: A recent study/survey found that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0915
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: '_____ to recent statistics, one in four children is affected by cyberbullying.'
+    questionZh: '_____ 最近的统计数据，四分之一的孩子受到网络欺凌的影响。'
+    options:
+      A: 'According'
+      B: 'Referred'
+      C: 'Relating'
+      D: 'Attached'
+    answer: 'A'
+    explanation: '"According to + source" is the correct way to cite evidence in an essay. It means "as stated by" or "based on."'
+    explanationZh: '"According to + 来源"是在议论文中引用证据的正确方式。意思是"据……所述"或"根据"。'
+    grammarPoint: 'Citing sources: According to'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0916
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'The evidence _____ suggest that both sides have valid points.'
+    questionZh: '证据似乎 _____ 双方都有合理的观点。'
+    options:
+      A: 'will'
+      B: 'would'
+      C: 'might'
+      D: 'can'
+    answer: 'B'
+    explanation: '"The evidence would suggest that..." is a hedged way to present conclusions. "Would" softens the claim compared to "does suggest."'
+    explanationZh: '"The evidence would suggest that..."是一种委婉地呈现结论的方式。与"does suggest"相比，"would"软化了论断。'
+    grammarPoint: 'Hedging: would + suggest/indicate/imply'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0917
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-2]
+    context: debate
+    question: 'Many people _____ that coding should be a compulsory subject.'
+    questionZh: '许多人 _____ 编程应该是必修课。'
+    answer: 'believe'
+    acceptableAnswers: ['believe', 'argue', 'feel', 'think']
+    explanation: '"Many people believe/argue/feel that..." is a common way to introduce a widespread opinion in an essay.'
+    explanationZh: '"Many people believe/argue/feel that..."是在议论文中引入广泛意见的常见方式。'
+    grammarPoint: 'Introducing opinions: Many people + reporting verb'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0918
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'Some _____ claim that homework is unnecessary, while others disagree.'
+    questionZh: '一些 _____ 声称作业没有必要，而另一些人不同意。'
+    options:
+      A: 'expert'
+      B: 'expertise'
+      C: 'experts'
+      D: 'expertly'
+    answer: 'C'
+    explanation: '"Some experts claim that..." needs the plural noun "experts" after "some." This introduces an expert opinion formally.'
+    explanationZh: '"Some experts claim that..."中"some"后面需要复数名词"experts"。这正式地引入专家意见。'
+    grammarPoint: 'Introducing expert opinion'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0919
+    type: fill-blank
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It is _____ that schools will use more technology in the future.'
+    questionZh: '学校未来将使用更多技术是 _____ 的。'
+    answer: 'likely'
+    acceptableAnswers: ['likely', 'probable', 'inevitable']
+    explanation: '"It is likely/probable/inevitable that..." makes predictions using impersonal structures. The adjective controls the degree of certainty.'
+    explanationZh: '"It is likely/probable/inevitable that..."用非人称结构做预测。形容词控制确定性的程度。'
+    grammarPoint: 'Predictions: It is likely/probable that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0920
+    type: multiple-choice
+    tags: [impersonal, Q10, difficulty-3]
+    context: debate
+    question: 'It remains to be _____ whether online learning will replace classrooms.'
+    questionZh: '在线学习是否会取代课堂还有待 _____ 。'
+    options:
+      A: 'see'
+      B: 'saw'
+      C: 'seen'
+      D: 'seeing'
+    answer: 'C'
+    explanation: '"It remains to be seen whether..." is a fixed expression meaning "we do not yet know." The past participle "seen" follows "to be."'
+    explanationZh: '"It remains to be seen whether..."是固定表达，意思是"我们还不知道"。过去分词"seen"接在"to be"之后。'
+    grammarPoint: 'Fixed: It remains to be seen whether'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # ============================================================
+  # G0921–G0940: Hedging language (tend to, seem to, appear to)
+  # ============================================================
+  - id: G0921
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-2]
+    context: debate
+    question: 'Children who read regularly _____ to perform better in school.'
+    questionZh: '经常阅读的孩子 _____ 在学校表现更好。'
+    options:
+      A: 'tend'
+      B: 'have'
+      C: 'make'
+      D: 'get'
+    answer: 'A'
+    explanation: '"Tend to" means "usually" or "are likely to." It avoids making an absolute claim — a key essay skill called hedging.'
+    explanationZh: '"Tend to"意思是"通常"或"往往"。它避免了做出绝对的断言——这是一种叫做"委婉表达"的关键议论文技巧。'
+    grammarPoint: 'Hedging: tend to + infinitive'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0922
+    type: fill-blank
+    tags: [hedging, Q10, difficulty-2]
+    context: debate
+    question: 'Students _____ to enjoy subjects that involve creative thinking.'
+    questionZh: '学生们 _____ 喜欢涉及创造性思维的科目。'
+    answer: 'tend'
+    acceptableAnswers: ['tend', 'seem', 'appear']
+    explanation: '"Tend to / seem to / appear to" all work as hedging language. They make statements less absolute and more academic.'
+    explanationZh: '"Tend to / seem to / appear to"都用作委婉表达。它们使陈述不那么绝对，更加学术。'
+    grammarPoint: 'Hedging: tend/seem/appear + to'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0923
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-3]
+    context: debate
+    question: 'Homework _____ to be more effective when it is short and focused.'
+    questionZh: '作业 _____ 在简短且有针对性时更有效。'
+    options:
+      A: 'seems'
+      B: 'seem'
+      C: 'is seeming'
+      D: 'seemed'
+    answer: 'A'
+    explanation: '"Homework" is uncountable, so it takes the singular "seems." "Seems to be" is a hedging expression for a tentative observation.'
+    explanationZh: '"Homework"是不可数名词，所以用单数"seems"。"Seems to be"是对试探性观察的委婉表达。'
+    grammarPoint: 'Hedging: seem to + infinitive (subject-verb agreement)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0924
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-2]
+    context: debate
+    question: 'The results _____ to indicate that school pets improve attendance.'
+    questionZh: '结果 _____ 表明学校宠物能提高出勤率。'
+    options:
+      A: 'appear'
+      B: 'appears'
+      C: 'appearing'
+      D: 'appeared'
+    answer: 'A'
+    explanation: '"The results" is plural, so we use "appear" (not "appears"). "Appear to indicate" is a formal hedging structure.'
+    explanationZh: '"The results"是复数，所以用"appear"（不是"appears"）。"Appear to indicate"是正式的委婉结构。'
+    grammarPoint: 'Hedging: appear to + infinitive'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0925
+    type: fill-blank
+    tags: [hedging, Q10, difficulty-3]
+    context: debate
+    question: 'This _____ suggest that the policy has been successful.'
+    questionZh: '这 _____ 表明该政策取得了成功。'
+    answer: 'would'
+    acceptableAnswers: ['would', 'might', 'may']
+    explanation: '"This would/might/may suggest that..." uses a modal verb for hedging. It presents a conclusion without stating it as certain fact.'
+    explanationZh: '"This would/might/may suggest that..."使用情态动词进行委婉表达。它提出结论而不将其作为确定的事实。'
+    grammarPoint: 'Hedging: modal + suggest/indicate'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0926
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-2]
+    context: debate
+    question: 'Video games are _____ always harmful — some can be educational.'
+    questionZh: '电子游戏 _____ 总是有害的——有些可以是有教育意义的。'
+    options:
+      A: 'not necessarily'
+      B: 'not never'
+      C: 'not possible'
+      D: 'not usually'
+    answer: 'A'
+    explanation: '"Not necessarily" means "not always" or "not in every case." It hedges an overgeneralised claim.'
+    explanationZh: '"Not necessarily"意思是"不一定"或"并非在所有情况下"。它对过度概括的论断进行了委婉处理。'
+    grammarPoint: 'Hedging: not necessarily'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0927
+    type: fill-blank
+    tags: [hedging, Q10, difficulty-3]
+    context: debate
+    question: 'It could _____ argued that both approaches have their merits.'
+    questionZh: '可以说两种方法都有其优点。'
+    answer: 'be'
+    acceptableAnswers: ['be']
+    explanation: '"It could be argued that..." is the passive form of hedged argument. "Be" links "could" to the past participle "argued."'
+    explanationZh: '"It could be argued that..."是委婉论证的被动语态形式。"Be"连接"could"和过去分词"argued"。'
+    grammarPoint: 'Hedging: It could be argued that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0928
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-3]
+    context: debate
+    question: 'Some people _____ to believe that all screen time is harmful.'
+    questionZh: '一些人 _____ 相信所有屏幕时间都是有害的。'
+    options:
+      A: 'appear'
+      B: 'appearing'
+      C: 'appeared'
+      D: 'appears'
+    answer: 'A'
+    explanation: '"Some people" is plural, so we use "appear" (base form). "Appear to believe" distances the writer from the claim.'
+    explanationZh: '"Some people"是复数，所以用"appear"（原形）。"Appear to believe"使作者与该论断保持距离。'
+    grammarPoint: 'Hedging: appear to + verb (distancing)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0929
+    type: fill-blank
+    tags: [hedging, Q10, difficulty-2]
+    context: debate
+    question: 'There is a _____ that online learning may become more popular.'
+    questionZh: '在线学习可能变得更受欢迎的 _____ 是存在的。'
+    answer: 'possibility'
+    acceptableAnswers: ['possibility', 'chance', 'likelihood']
+    explanation: '"There is a possibility/chance/likelihood that..." introduces an uncertain outcome formally.'
+    explanationZh: '"There is a possibility/chance/likelihood that..."正式地引入一个不确定的结果。'
+    grammarPoint: 'Hedging: There is a possibility/likelihood that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0930
+    type: multiple-choice
+    tags: [hedging, Q10, difficulty-3]
+    context: debate
+    question: 'The data _____ suggest a link between homework and stress.'
+    questionZh: '数据 _____ 表明作业与压力之间存在联系。'
+    options:
+      A: 'does'
+      B: 'do'
+      C: 'are'
+      D: 'is'
+    answer: 'A'
+    explanation: '"Data" can be treated as singular in modern English. "The data does suggest..." is acceptable, especially in informal academic writing.'
+    explanationZh: '在现代英语中"data"可以作为单数处理。"The data does suggest..."是可以接受的，尤其在非正式学术写作中。'
+    grammarPoint: 'Data as singular noun'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # ============================================================
+  # G0931–G0950: Generalisation vs specific claims
+  # ============================================================
+  - id: G0931
+    type: multiple-choice
+    tags: [generalisation, Q10, difficulty-2]
+    context: debate
+    question: '_____ speaking, children learn languages faster than adults.'
+    questionZh: '_____ 来说，孩子比大人学语言更快。'
+    options:
+      A: 'General'
+      B: 'Generally'
+      C: 'Generalise'
+      D: 'Generals'
+    answer: 'B'
+    explanation: '"Generally speaking" is a fixed phrase that introduces a generalisation. The adverb form "generally" is needed.'
+    explanationZh: '"Generally speaking"是引入概括的固定短语。需要副词形式"generally"。'
+    grammarPoint: 'Generalisation: Generally speaking'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0932
+    type: fill-blank
+    tags: [generalisation, Q10, difficulty-2]
+    context: debate
+    question: 'On the _____, most students enjoy creative homework more than worksheets.'
+    questionZh: '总的来说，大多数学生更喜欢创造性作业而不是练习卷。'
+    answer: 'whole'
+    acceptableAnswers: ['whole']
+    explanation: '"On the whole" means "in general" or "taking everything into account." It introduces a balanced generalisation.'
+    explanationZh: '"On the whole"意思是"总的来说"或"综合考虑"。它引入一个平衡的概括。'
+    grammarPoint: 'Generalisation: on the whole'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0933
+    type: multiple-choice
+    tags: [generalisation, Q10, difficulty-3]
+    context: debate
+    question: 'It would be an _____ to say that all video games are harmful.'
+    questionZh: '说所有电子游戏都有害是一种 _____ 。'
+    options:
+      A: 'exaggeration'
+      B: 'exaggerate'
+      C: 'exaggerating'
+      D: 'exaggerated'
+    answer: 'A'
+    explanation: '"It would be an exaggeration to say..." warns against overgeneralisation. We need the noun "exaggeration" after "an."'
+    explanationZh: '"It would be an exaggeration to say..."提醒避免过度概括。"an"后面需要名词"exaggeration"。'
+    grammarPoint: 'Avoiding overgeneralisation: It would be an exaggeration'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0934
+    type: fill-blank
+    tags: [generalisation, Q10, difficulty-2]
+    context: debate
+    question: 'Not _____ students dislike homework — some find it helpful and enjoyable.'
+    questionZh: '并非 _____ 学生都不喜欢作业——有些人觉得它有帮助且令人愉快。'
+    answer: 'all'
+    acceptableAnswers: ['all', 'every']
+    explanation: '"Not all/every" qualifies an absolute statement. It prevents overgeneralisation by acknowledging exceptions.'
+    explanationZh: '"Not all/every"限定了一个绝对陈述。它通过承认例外来防止过度概括。'
+    grammarPoint: 'Qualifying: Not all/every'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0935
+    type: multiple-choice
+    tags: [generalisation, Q10, difficulty-3]
+    context: debate
+    question: 'While it is true that some homework is boring, this does not _____ that all homework is useless.'
+    questionZh: '虽然有些作业确实很无聊，但这并不 _____ 所有作业都没用。'
+    options:
+      A: 'prove'
+      B: 'meaning'
+      C: 'mean'
+      D: 'show'
+    answer: 'C'
+    explanation: '"This does not mean that..." is used to prevent readers from drawing a wrong conclusion. "Mean" follows "does not."'
+    explanationZh: '"This does not mean that..."用来防止读者得出错误的结论。"mean"接在"does not"之后。'
+    grammarPoint: 'Qualifying: This does not mean that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0936
+    type: fill-blank
+    tags: [generalisation, Q10, difficulty-3]
+    context: debate
+    question: 'In _____ cases, school pets have improved student behaviour.'
+    questionZh: '在 _____ 情况下，学校宠物改善了学生行为。'
+    answer: 'many'
+    acceptableAnswers: ['many', 'most', 'some', 'numerous']
+    explanation: 'Using "many/most/some cases" instead of "all cases" shows you are making a qualified claim, not an absolute one.'
+    explanationZh: '使用"many/most/some cases"而不是"all cases"表明你在做一个有限定的论断，而非绝对的。'
+    grammarPoint: 'Qualified generalisation: in many/most/some cases'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0937
+    type: multiple-choice
+    tags: [generalisation, Q10, difficulty-2]
+    context: debate
+    question: 'By and _____, students who read widely perform better in exams.'
+    questionZh: '总的来说，广泛阅读的学生在考试中表现更好。'
+    options:
+      A: 'wide'
+      B: 'big'
+      C: 'large'
+      D: 'far'
+    answer: 'C'
+    explanation: '"By and large" is a fixed phrase meaning "on the whole" or "generally." It introduces a broad generalisation.'
+    explanationZh: '"By and large"是固定短语，意思是"总的来说"或"一般而言"。它引入一个广泛的概括。'
+    grammarPoint: 'Fixed phrase: by and large'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0938
+    type: fill-blank
+    tags: [generalisation, Q10, difficulty-3]
+    context: debate
+    question: 'To a certain _____, homework helps students revise and remember.'
+    questionZh: '在某种 _____ 上，作业帮助学生复习和记忆。'
+    answer: 'extent'
+    acceptableAnswers: ['extent', 'degree']
+    explanation: '"To a certain extent/degree" hedges a generalisation by acknowledging it is only partly true.'
+    explanationZh: '"To a certain extent/degree"通过承认仅部分正确来对概括进行限定。'
+    grammarPoint: 'Hedging generalisation: to a certain extent/degree'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0939
+    type: multiple-choice
+    tags: [generalisation, Q10, difficulty-2]
+    context: debate
+    question: 'For the most _____, schools try to balance academic work with creative activities.'
+    questionZh: '在大多数情况下，学校努力平衡学术工作和创意活动。'
+    options:
+      A: 'time'
+      B: 'part'
+      C: 'way'
+      D: 'side'
+    answer: 'B'
+    explanation: '"For the most part" is a fixed phrase meaning "mostly" or "usually." It hedges a generalisation.'
+    explanationZh: '"For the most part"是固定短语，意思是"大多数情况下"或"通常"。它对概括进行了限定。'
+    grammarPoint: 'Fixed phrase: for the most part'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0940
+    type: fill-blank
+    tags: [generalisation, Q10, difficulty-3]
+    context: debate
+    question: 'The _____ of students surveyed supported the idea of shorter school days.'
+    questionZh: '接受调查的 _____ 学生支持缩短在校时间的想法。'
+    answer: 'majority'
+    acceptableAnswers: ['majority']
+    explanation: '"The majority of" is more precise than "most" or "many." It means more than 50% and adds formality to an essay.'
+    explanationZh: '"The majority of"比"most"或"many"更精确。它意味着超过50%，并为议论文增加正式性。'
+    grammarPoint: 'Precise language: the majority of'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # ============================================================
+  # G0941–G0960: Formal register — contrast connectors
+  # ============================================================
+  - id: G0941
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: 'Homework can be useful. _____, too much of it causes stress.'
+    questionZh: '作业可能有用。_____，太多的作业会导致压力。'
+    options:
+      A: 'But'
+      B: 'However'
+      C: 'Although'
+      D: 'Despite'
+    answer: 'B'
+    explanation: '"However" is the formal way to introduce a contrast at the start of a new sentence. "But" is less formal. "Although" and "Despite" cannot start a new sentence this way.'
+    explanationZh: '"However"是在新句子开头引入对比的正式方式。"But"不那么正式。"Although"和"Despite"不能这样开始新句子。'
+    grammarPoint: 'Formal contrast: However'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0942
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: '_____ the fact that uniforms are expensive, they save money on other clothes.'
+    questionZh: '_____ 校服很贵这个事实，它们节省了买其他衣服的钱。'
+    answer: 'Despite'
+    acceptableAnswers: ['Despite', 'Notwithstanding']
+    explanation: '"Despite + noun/the fact that" introduces a contrast. It is more formal than "although" and is followed by a noun phrase or "the fact that."'
+    explanationZh: '"Despite + 名词/the fact that"引入对比。它比"although"更正式，后面接名词短语或"the fact that"。'
+    grammarPoint: 'Formal contrast: Despite + noun phrase'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0943
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'Online learning is flexible. _____, it lacks social interaction.'
+    questionZh: '在线学习很灵活。_____，它缺乏社交互动。'
+    options:
+      A: 'On the other hand'
+      B: 'Furthermore'
+      C: 'Moreover'
+      D: 'In addition'
+    answer: 'A'
+    explanation: '"On the other hand" introduces the opposing view. "Furthermore/Moreover/In addition" all add supporting points, not contrasts.'
+    explanationZh: '"On the other hand"引入对立观点。"Furthermore/Moreover/In addition"都是添加支持论点，不是对比。'
+    grammarPoint: 'Contrast: On the other hand'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0944
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'While some argue homework is essential, _____ believe it should be optional.'
+    questionZh: '虽然有些人认为作业是必要的，_____ 认为它应该是可选的。'
+    answer: 'others'
+    acceptableAnswers: ['others']
+    explanation: '"While some..., others..." is a balanced structure presenting two sides. "Others" refers to the second group with the opposing view.'
+    explanationZh: '"While some..., others..."是呈现两方观点的平衡结构。"Others"指持有对立观点的第二组。'
+    grammarPoint: 'Balanced structure: While some..., others...'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0945
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: '_____ of the drawbacks, many schools have introduced coding successfully.'
+    questionZh: '_____ 存在不足，许多学校已成功引入编程。'
+    options:
+      A: 'In spite'
+      B: 'Although'
+      C: 'However'
+      D: 'Despite'
+    answer: 'A'
+    explanation: '"In spite of + noun" is equivalent to "despite." Note that "in spite" must be followed by "of" — "In spite of the drawbacks."'
+    explanationZh: '"In spite of + 名词"等同于"despite"。注意"in spite"后面必须接"of"——"In spite of the drawbacks"。'
+    grammarPoint: 'Formal contrast: In spite of'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0946
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'Classroom learning is interactive, _____ online learning offers flexibility.'
+    questionZh: '课堂学习是互动的，_____ 在线学习提供灵活性。'
+    answer: 'whereas'
+    acceptableAnswers: ['whereas', 'while', 'whilst']
+    explanation: '"Whereas/while" contrasts two facts in a single sentence. It is more formal and precise than "but."'
+    explanationZh: '"Whereas/while"在一个句子中对比两个事实。它比"but"更正式、更精确。'
+    grammarPoint: 'Formal contrast: whereas/while'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0947
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: 'Homework develops self-discipline. _____, it teaches time management.'
+    questionZh: '作业培养自律。_____，它教授时间管理。'
+    options:
+      A: 'However'
+      B: 'Nevertheless'
+      C: 'Furthermore'
+      D: 'On the contrary'
+    answer: 'C'
+    explanation: '"Furthermore" adds another supporting point (not a contrast). Since both sentences support homework, we need an addition connector.'
+    explanationZh: '"Furthermore"添加另一个支持论点（不是对比）。因为两个句子都支持作业，我们需要一个递进连接词。'
+    grammarPoint: 'Addition: Furthermore/Moreover/In addition'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0948
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'I _____ that online learning is useful. Nevertheless, classroom teaching is irreplaceable.'
+    questionZh: '我 _____ 在线学习是有用的。尽管如此，课堂教学是不可替代的。'
+    answer: 'concede'
+    acceptableAnswers: ['concede', 'acknowledge', 'admit', 'accept']
+    explanation: '"I concede/acknowledge that..." + "Nevertheless" is a concession + contrast structure. You admit a point, then argue against it.'
+    explanationZh: '"I concede/acknowledge that..." + "Nevertheless"是让步+对比结构。你承认一个观点，然后反驳它。'
+    grammarPoint: 'Concession: concede/acknowledge + Nevertheless'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0949
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: '_____ it is true that some games are violent, this does not apply to all games.'
+    questionZh: '_____ 一些游戏确实含有暴力，这并不适用于所有游戏。'
+    options:
+      A: 'Because'
+      B: 'While'
+      C: 'Since'
+      D: 'If'
+    answer: 'B'
+    explanation: '"While it is true that..." introduces a concession. You acknowledge the opposing point before countering it. "While" here means "although."'
+    explanationZh: '"While it is true that..."引入一个让步。你在反驳之前承认对方的观点。这里的"While"意思是"虽然"。'
+    grammarPoint: 'Concession: While it is true that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0950
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: 'In _____, the benefits of school pets outweigh the drawbacks.'
+    questionZh: '总之，学校宠物的好处大于缺点。'
+    answer: 'conclusion'
+    acceptableAnswers: ['conclusion', 'summary']
+    explanation: '"In conclusion/summary" signals the end of an essay. It is followed by your final opinion or main message.'
+    explanationZh: '"In conclusion/summary"标志着议论文的结尾。后面跟你的最终观点或主要信息。'
+    grammarPoint: 'Conclusion: In conclusion/summary'
+    relatedQuest: Q10
+    difficulty: 2
+
+  # ============================================================
+  # G0951–G0970: Formal register — advanced structures
+  # ============================================================
+  - id: G0951
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'Not only does homework help students revise, _____ it also teaches responsibility.'
+    questionZh: '作业不仅帮助学生复习，_____ 教授责任感。'
+    options:
+      A: 'and'
+      B: 'but'
+      C: 'or'
+      D: 'so'
+    answer: 'B'
+    explanation: '"Not only...but (also)" is a formal way to add emphasis. After "Not only" at the start, we invert the subject and auxiliary verb.'
+    explanationZh: '"Not only...but (also)"是正式的强调方式。当"Not only"在句首时，主语和助动词要倒装。'
+    grammarPoint: 'Emphasis: Not only...but also (with inversion)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0952
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'The question _____ whether homework is necessary is still hotly debated.'
+    questionZh: '关于作业是否必要的问题仍然争论激烈。'
+    answer: 'of'
+    acceptableAnswers: ['of']
+    explanation: '"The question of whether..." is a formal structure for introducing a debated issue. "Of" connects "question" to the whether-clause.'
+    explanationZh: '"The question of whether..."是引入争议议题的正式结构。"Of"连接"question"和whether-从句。'
+    grammarPoint: 'Formal: The question of whether'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0953
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'This essay _____ to examine the arguments for and against school uniforms.'
+    questionZh: '这篇议论文 _____ 审视支持和反对校服的论点。'
+    options:
+      A: 'aims'
+      B: 'aim'
+      C: 'aiming'
+      D: 'aimed'
+    answer: 'A'
+    explanation: '"This essay aims to..." is a formal way to state the purpose. The subject "essay" (singular) takes the singular verb "aims."'
+    explanationZh: '"This essay aims to..."是陈述目的的正式方式。主语"essay"（单数）用单数动词"aims"。'
+    grammarPoint: 'Essay purpose: This essay aims to'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0954
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'Having _____ both sides of the argument, I believe homework should be reformed.'
+    questionZh: '_____ 了论点的双方后，我认为作业应该被改革。'
+    answer: 'considered'
+    acceptableAnswers: ['considered', 'examined', 'weighed']
+    explanation: '"Having + past participle" is a formal participle clause meaning "after considering." It shows the writer has thought carefully before concluding.'
+    explanationZh: '"Having + 过去分词"是正式的分词从句，意思是"考虑之后"。它表明作者在得出结论前经过了认真思考。'
+    grammarPoint: 'Participle clause: Having considered/examined'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0955
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: '_____ we acknowledge the challenges, we should not ignore the benefits.'
+    questionZh: '_____ 我们承认挑战，我们不应该忽视好处。'
+    options:
+      A: 'While'
+      B: 'Because'
+      C: 'Since'
+      D: 'If'
+    answer: 'A'
+    explanation: '"While we acknowledge..." is a concession clause. It admits one point (challenges) before the main argument (benefits).'
+    explanationZh: '"While we acknowledge..."是一个让步从句。它在主要论点（好处）之前承认一个观点（挑战）。'
+    grammarPoint: 'Concession clause: While + acknowledging'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0956
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: 'To sum _____, I believe the advantages of coding education outweigh the disadvantages.'
+    questionZh: '总结一下，我认为编程教育的优点大于缺点。'
+    answer: 'up'
+    acceptableAnswers: ['up']
+    explanation: '"To sum up" is a slightly less formal alternative to "In conclusion." Both signal the final paragraph of an essay.'
+    explanationZh: '"To sum up"是"In conclusion"的略微不那么正式的替代说法。两者都标志着议论文的最后一段。'
+    grammarPoint: 'Conclusion: To sum up'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0957
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'All things _____, I believe both approaches have value.'
+    questionZh: '综合考虑所有因素，我认为两种方法都有价值。'
+    options:
+      A: 'consider'
+      B: 'considered'
+      C: 'considering'
+      D: 'considers'
+    answer: 'B'
+    explanation: '"All things considered" is a fixed expression meaning "taking everything into account." "Considered" is a past participle in an absolute phrase.'
+    explanationZh: '"All things considered"是固定表达，意思是"综合考虑所有因素"。"Considered"是绝对短语中的过去分词。'
+    grammarPoint: 'Fixed expression: all things considered'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0958
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'One _____ argue that school uniforms limit creativity.'
+    questionZh: '有人 _____ 认为校服限制创造力。'
+    answer: 'could'
+    acceptableAnswers: ['could', 'might', 'may']
+    explanation: '"One could/might argue that..." uses the impersonal "one" and a modal verb. This is very formal and distanced.'
+    explanationZh: '"One could/might argue that..."使用非人称"one"和情态动词。这是非常正式和保持距离的。'
+    grammarPoint: 'Formal impersonal: One could/might + verb'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0959
+    type: multiple-choice
+    tags: [formal-register, Q10, difficulty-2]
+    context: debate
+    question: 'Taking _____ into account, I support the introduction of school pets.'
+    questionZh: '_____ 考虑在内，我支持引入学校宠物。'
+    options:
+      A: 'everything'
+      B: 'nothing'
+      C: 'something'
+      D: 'anything'
+    answer: 'A'
+    explanation: '"Taking everything into account" means "considering all the factors." It is an alternative to "All things considered."'
+    explanationZh: '"Taking everything into account"意思是"考虑所有因素"。它是"All things considered"的替代说法。'
+    grammarPoint: 'Taking everything into account'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0960
+    type: fill-blank
+    tags: [formal-register, Q10, difficulty-3]
+    context: debate
+    question: 'On _____, the evidence supports moderate use of technology in schools.'
+    questionZh: '总的来说，证据支持在学校适度使用技术。'
+    answer: 'balance'
+    acceptableAnswers: ['balance']
+    explanation: '"On balance" means "after considering all the arguments." It is a concise way to introduce a final judgement.'
+    explanationZh: '"On balance"意思是"权衡所有论点之后"。它是引入最终判断的简洁方式。'
+    grammarPoint: 'Conclusion: On balance'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # ============================================================
+  # G0961–G0980: Cause/effect and condition structures
+  # ============================================================
+  - id: G0961
+    type: multiple-choice
+    tags: [cause-effect, Q10, difficulty-2]
+    context: debate
+    question: 'Too much homework can _____ to stress and sleep problems.'
+    questionZh: '太多作业可以 _____ 压力和睡眠问题。'
+    options:
+      A: 'lead'
+      B: 'cause'
+      C: 'make'
+      D: 'bring'
+    answer: 'A'
+    explanation: '"Lead to" means "cause" or "result in." "Lead to + noun" is a common cause-and-effect structure in essays.'
+    explanationZh: '"Lead to"意思是"导致"或"造成"。"Lead to + 名词"是议论文中常见的因果结构。'
+    grammarPoint: 'Cause-effect: lead to'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0962
+    type: fill-blank
+    tags: [cause-effect, Q10, difficulty-2]
+    context: debate
+    question: 'School pets can _____ in improved student behaviour and attendance.'
+    questionZh: '学校宠物可以 _____ 改善学生行为和出勤率。'
+    answer: 'result'
+    acceptableAnswers: ['result']
+    explanation: '"Result in" is the formal way to express "cause" or "lead to." "Result in + noun" describes the consequence.'
+    explanationZh: '"Result in"是表达"导致"的正式方式。"Result in + 名词"描述后果。'
+    grammarPoint: 'Cause-effect: result in'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0963
+    type: multiple-choice
+    tags: [cause-effect, Q10, difficulty-3]
+    context: debate
+    question: 'The lack of exercise _____ rise to health problems among children.'
+    questionZh: '缺乏运动 _____ 儿童的健康问题。'
+    options:
+      A: 'gives'
+      B: 'makes'
+      C: 'takes'
+      D: 'does'
+    answer: 'A'
+    explanation: '"Give rise to" is a formal phrase meaning "cause" or "lead to." It is commonly used in academic essays.'
+    explanationZh: '"Give rise to"是正式短语，意思是"引起"或"导致"。它常用于学术议论文。'
+    grammarPoint: 'Formal cause-effect: give rise to'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0964
+    type: fill-blank
+    tags: [cause-effect, Q10, difficulty-2]
+    context: debate
+    question: 'Students perform better _____ they are interested in the subject.'
+    questionZh: '当学生对科目感兴趣 _____ ，他们表现更好。'
+    answer: 'when'
+    acceptableAnswers: ['when', 'if', 'whenever']
+    explanation: '"When/if/whenever" introduces a condition. "Students perform better when..." shows a cause-effect relationship.'
+    explanationZh: '"When/if/whenever"引入条件。"Students perform better when..."展示因果关系。'
+    grammarPoint: 'Conditional cause: when/if'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0965
+    type: multiple-choice
+    tags: [cause-effect, Q10, difficulty-3]
+    context: debate
+    question: '_____ homework is made more creative, students may become more motivated.'
+    questionZh: '_____ 作业变得更有创造性，学生可能会变得更有动力。'
+    options:
+      A: 'Unless'
+      B: 'Provided'
+      C: 'Although'
+      D: 'Despite'
+    answer: 'B'
+    explanation: '"Provided (that)" means "if" or "on the condition that." It introduces a condition that must be met for the result to happen.'
+    explanationZh: '"Provided (that)"意思是"如果"或"在……的条件下"。它引入一个必须满足才能产生结果的条件。'
+    grammarPoint: 'Formal condition: Provided (that)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0966
+    type: fill-blank
+    tags: [cause-effect, Q10, difficulty-3]
+    context: debate
+    question: 'Banning homework would _____ have negative consequences for exam preparation.'
+    questionZh: '禁止作业 _____ 对考试准备产生负面影响。'
+    answer: 'inevitably'
+    acceptableAnswers: ['inevitably', 'likely', 'probably', 'undoubtedly']
+    explanation: 'Adverbs of certainty (inevitably/likely/probably) modify the verb to show how sure the writer is about the consequence.'
+    explanationZh: '确定性副词（inevitably/likely/probably）修饰动词，表示作者对后果的确信程度。'
+    grammarPoint: 'Certainty adverbs in cause-effect'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0967
+    type: multiple-choice
+    tags: [cause-effect, Q10, difficulty-2]
+    context: debate
+    question: 'As a _____ of introducing school pets, student well-being improved significantly.'
+    questionZh: '由于引入学校宠物的 _____ ，学生的幸福感显著提高。'
+    options:
+      A: 'cause'
+      B: 'reason'
+      C: 'result'
+      D: 'purpose'
+    answer: 'C'
+    explanation: '"As a result of + noun" means "because of." It formally links a cause to its effect in an essay.'
+    explanationZh: '"As a result of + 名词"意思是"由于"。它在议论文中正式地将原因与结果联系起来。'
+    grammarPoint: 'Cause-effect: as a result of'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0968
+    type: fill-blank
+    tags: [cause-effect, Q10, difficulty-3]
+    context: debate
+    question: '_____ to limited budgets, some schools cannot afford new technology.'
+    questionZh: '_____ 预算有限，一些学校负担不起新技术。'
+    answer: 'Due'
+    acceptableAnswers: ['Due', 'Owing']
+    explanation: '"Due to / Owing to + noun" gives the reason formally. They are more academic than "because of."'
+    explanationZh: '"Due to / Owing to + 名词"正式地给出原因。它们比"because of"更学术化。'
+    grammarPoint: 'Formal reason: Due to / Owing to'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0969
+    type: multiple-choice
+    tags: [cause-effect, Q10, difficulty-2]
+    context: debate
+    question: 'Children need exercise. _____, schools should allocate time for PE.'
+    questionZh: '孩子需要运动。_____ ，学校应该为体育课分配时间。'
+    options:
+      A: 'However'
+      B: 'Therefore'
+      C: 'Nevertheless'
+      D: 'Although'
+    answer: 'B'
+    explanation: '"Therefore" introduces a logical conclusion or result. It means "for this reason" and connects cause to effect.'
+    explanationZh: '"Therefore"引入逻辑结论或结果。它意思是"因此"，连接原因和结果。'
+    grammarPoint: 'Conclusion connector: Therefore'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0970
+    type: fill-blank
+    tags: [cause-effect, Q10, difficulty-3]
+    context: debate
+    question: 'The introduction of coding classes, _____ with adequate teacher training, could transform education.'
+    questionZh: '编程课的引入，_____ 充分的教师培训，可以改变教育。'
+    answer: 'combined'
+    acceptableAnswers: ['combined', 'coupled', 'together']
+    explanation: '"Combined/coupled with" adds a second condition. "X combined with Y could..." shows that both factors together produce the result.'
+    explanationZh: '"Combined/coupled with"添加第二个条件。"X combined with Y could..."表示两个因素共同产生结果。'
+    grammarPoint: 'Combined conditions: combined/coupled with'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # ============================================================
+  # G0971–G0990: Expressing opinion formally
+  # ============================================================
+  - id: G0971
+    type: multiple-choice
+    tags: [opinion, Q10, difficulty-2]
+    context: debate
+    question: 'In my _____, homework should be made more creative and less repetitive.'
+    questionZh: '在我 _____ ，作业应该变得更有创造性、更少重复。'
+    options:
+      A: 'view'
+      B: 'views'
+      C: 'viewing'
+      D: 'viewed'
+    answer: 'A'
+    explanation: '"In my view/opinion" is a formal way to state your position. Use the singular noun "view" after "my."'
+    explanationZh: '"In my view/opinion"是正式表达立场的方式。"my"后面用单数名词"view"。'
+    grammarPoint: 'Opinion: In my view/opinion'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0972
+    type: fill-blank
+    tags: [opinion, Q10, difficulty-2]
+    context: debate
+    question: 'I _____ believe that every child should learn to code.'
+    questionZh: '我 _____ 相信每个孩子都应该学编程。'
+    answer: 'firmly'
+    acceptableAnswers: ['firmly', 'strongly', 'truly']
+    explanation: '"I firmly/strongly believe that..." adds emphasis to your opinion. Choose an adverb that shows your level of conviction.'
+    explanationZh: '"I firmly/strongly believe that..."为你的观点增加强调。选择一个体现你确信程度的副词。'
+    grammarPoint: 'Emphatic opinion: I firmly/strongly believe'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0973
+    type: multiple-choice
+    tags: [opinion, Q10, difficulty-3]
+    context: debate
+    question: 'From my point _____ view, online learning cannot fully replace classrooms.'
+    questionZh: '从我的观 _____ 来看，在线学习无法完全取代课堂。'
+    options:
+      A: 'in'
+      B: 'of'
+      C: 'at'
+      D: 'on'
+    answer: 'B'
+    explanation: '"From my point of view" is a fixed expression. "Of" is the required preposition connecting "point" and "view."'
+    explanationZh: '"From my point of view"是固定表达。"Of"是连接"point"和"view"的必要介词。'
+    grammarPoint: 'Fixed: from my point of view'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0974
+    type: fill-blank
+    tags: [opinion, Q10, difficulty-3]
+    context: debate
+    question: 'As _____ as I am concerned, the benefits of school pets far outweigh the costs.'
+    questionZh: '就我 _____ ，学校宠物的好处远远超过成本。'
+    answer: 'far'
+    acceptableAnswers: ['far']
+    explanation: '"As far as I am concerned" means "in my opinion." It is a fixed expression used to introduce a personal view formally.'
+    explanationZh: '"As far as I am concerned"意思是"在我看来"。这是正式引入个人观点的固定表达。'
+    grammarPoint: 'Fixed: as far as I am concerned'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0975
+    type: multiple-choice
+    tags: [opinion, Q10, difficulty-2]
+    context: debate
+    question: 'I would _____ that a balanced approach to screen time is best.'
+    questionZh: '我 _____ 对屏幕时间采取平衡方法是最好的。'
+    options:
+      A: 'argue'
+      B: 'arguing'
+      C: 'argued'
+      D: 'argues'
+    answer: 'A'
+    explanation: '"I would argue that..." is a slightly hedged way to state your opinion. "Would" makes it more polite and academic than "I argue."'
+    explanationZh: '"I would argue that..."是稍微委婉地陈述观点的方式。"Would"使其比"I argue"更礼貌、更学术。'
+    grammarPoint: 'Hedged opinion: I would argue that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0976
+    type: fill-blank
+    tags: [opinion, Q10, difficulty-3]
+    context: debate
+    question: 'It _____ my view that homework should be optional, not compulsory.'
+    questionZh: '我 _____ 作业应该是可选的，而不是强制性的。'
+    answer: 'is'
+    acceptableAnswers: ['is']
+    explanation: '"It is my view that..." is a formal structure equivalent to "I believe that..." The impersonal "It is" adds formality.'
+    explanationZh: '"It is my view that..."是等同于"I believe that..."的正式结构。非人称的"It is"增加了正式性。'
+    grammarPoint: 'Formal opinion: It is my view that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0977
+    type: multiple-choice
+    tags: [opinion, Q10, difficulty-3]
+    context: debate
+    question: 'I am _____ the opinion that moderate screen time is acceptable.'
+    questionZh: '我 _____ 适度屏幕时间是可以接受的观点。'
+    options:
+      A: 'in'
+      B: 'at'
+      C: 'of'
+      D: 'on'
+    answer: 'C'
+    explanation: '"I am of the opinion that..." is a very formal expression meaning "I believe that..." "Of" is the correct preposition.'
+    explanationZh: '"I am of the opinion that..."是非常正式的表达，意思是"我认为"。"Of"是正确的介词。'
+    grammarPoint: 'Very formal: I am of the opinion that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0978
+    type: fill-blank
+    tags: [opinion, Q10, difficulty-2]
+    context: debate
+    question: 'Personally, I _____ that schools should offer more creative subjects.'
+    questionZh: '就我个人而言，我 _____ 学校应该提供更多的创意科目。'
+    answer: 'believe'
+    acceptableAnswers: ['believe', 'think', 'feel']
+    explanation: '"Personally, I believe/think/feel that..." combines a personal marker ("Personally") with a reporting verb to introduce your view.'
+    explanationZh: '"Personally, I believe/think/feel that..."结合个人标记（"Personally"）和报告动词来引入你的观点。'
+    grammarPoint: 'Personal opinion: Personally, I believe'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0979
+    type: multiple-choice
+    tags: [opinion, Q10, difficulty-3]
+    context: debate
+    question: 'There is a strong _____ to be made for teaching debating in schools.'
+    questionZh: '有充分的 _____ 支持在学校教授辩论。'
+    options:
+      A: 'point'
+      B: 'case'
+      C: 'way'
+      D: 'thing'
+    answer: 'B'
+    explanation: '"There is a strong case to be made for..." is a formal way to introduce an argument you want to support. "Case" means "set of arguments."'
+    explanationZh: '"There is a strong case to be made for..."是正式引入你想支持的论点的方式。"Case"意思是"一组论据"。'
+    grammarPoint: 'Formal: There is a strong case for'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0980
+    type: fill-blank
+    tags: [opinion, Q10, difficulty-2]
+    context: debate
+    question: 'I am _____ convinced that paper books will disappear entirely.'
+    questionZh: '我对纸质书会完全消失 _____ 不太确信。'
+    answer: 'not'
+    acceptableAnswers: ['not', 'not entirely', 'hardly']
+    explanation: '"I am not (entirely) convinced that..." politely expresses doubt or disagreement. It is a hedged way to say "I disagree."'
+    explanationZh: '"I am not (entirely) convinced that..."礼貌地表达怀疑或不同意。这是表达"我不同意"的委婉方式。'
+    grammarPoint: 'Polite disagreement: I am not convinced that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  # ============================================================
+  # G0981–G1000: Mixed essay grammar review
+  # ============================================================
+  - id: G0981
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: '_____ it may seem, homework is not always about academics — it also builds character.'
+    questionZh: '_____ 看起来可能如此，作业并不总是关于学业——它还培养品格。'
+    options:
+      A: 'Surprising as'
+      B: 'Surprised as'
+      C: 'Surprisingly as'
+      D: 'Surprise as'
+    answer: 'A'
+    explanation: '"Surprising as it may seem" is an inverted concession structure. The adjective "surprising" comes first for emphasis.'
+    explanationZh: '"Surprising as it may seem"是倒装让步结构。形容词"surprising"放在首位以强调。'
+    grammarPoint: 'Inverted concession: Adjective + as + it may seem'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0982
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'Were schools to abolish homework, students _____ have more free time.'
+    questionZh: '如果学校废除作业，学生 _____ 有更多的自由时间。'
+    answer: 'would'
+    acceptableAnswers: ['would']
+    explanation: '"Were schools to..." is a formal conditional without "if." It means "If schools were to..." The result clause uses "would."'
+    explanationZh: '"Were schools to..."是没有"if"的正式条件句。它的意思是"If schools were to..."结果从句用"would"。'
+    grammarPoint: 'Formal conditional: Were + subject + to + infinitive'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0983
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Only by listening to both sides _____ we reach a fair conclusion.'
+    questionZh: '只有倾听双方的意见 _____ 我们达成公平的结论。'
+    options:
+      A: 'we can'
+      B: 'can we'
+      C: 'we do'
+      D: 'do we'
+    answer: 'B'
+    explanation: '"Only by..." at the start requires inversion: "can we" (not "we can"). This is a formal emphasis structure.'
+    explanationZh: '"Only by..."在句首时需要倒装："can we"（不是"we can"）。这是正式的强调结构。'
+    grammarPoint: 'Inversion after "Only by..."'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0984
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'The more students read, the _____ their vocabulary becomes.'
+    questionZh: '学生读得越多，词汇量就变得越 _____ 。'
+    answer: 'better'
+    acceptableAnswers: ['better', 'richer', 'larger', 'wider']
+    explanation: '"The more..., the better/richer..." is a comparative correlation structure. Both halves use "the + comparative."'
+    explanationZh: '"The more..., the better/richer..."是比较关联结构。两个部分都使用"the + 比较级"。'
+    grammarPoint: 'Comparative correlation: The more..., the more...'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0985
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Had the school introduced coding earlier, students _____ been better prepared.'
+    questionZh: '如果学校更早引入编程，学生 _____ 准备得更好。'
+    options:
+      A: 'would have'
+      B: 'will have'
+      C: 'have'
+      D: 'had'
+    answer: 'A'
+    explanation: '"Had + subject + past participle" is a formal third conditional without "if." The result uses "would have + past participle."'
+    explanationZh: '"Had + 主语 + 过去分词"是没有"if"的正式第三条件句。结果用"would have + 过去分词"。'
+    grammarPoint: 'Formal third conditional: Had + subject + pp'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0986
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'What is _____ is that children need both screen time limits and freedom to explore.'
+    questionZh: '_____ 的是孩子们既需要屏幕时间限制，也需要探索的自由。'
+    answer: 'clear'
+    acceptableAnswers: ['clear', 'certain', 'evident', 'obvious']
+    explanation: '"What is clear/certain is that..." is a cleft sentence that emphasises the conclusion. The adjective states how obvious the point is.'
+    explanationZh: '"What is clear/certain is that..."是强调结论的分裂句。形容词说明这一点有多明显。'
+    grammarPoint: 'Emphasis: What is clear/certain is that'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0987
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Under no circumstances _____ personal attacks be used in a debate.'
+    questionZh: '在任何情况下 _____ 在辩论中使用人身攻击。'
+    options:
+      A: 'should'
+      B: 'they should'
+      C: 'should they'
+      D: 'they'
+    answer: 'A'
+    explanation: '"Under no circumstances should..." is a negative inversion. The auxiliary "should" comes before the implied subject.'
+    explanationZh: '"Under no circumstances should..."是否定倒装。助动词"should"出现在隐含主语之前。'
+    grammarPoint: 'Negative inversion: Under no circumstances'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0988
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'Whether homework is useful or not _____ on how it is designed.'
+    questionZh: '作业是否有用 _____ 它如何设计。'
+    answer: 'depends'
+    acceptableAnswers: ['depends']
+    explanation: '"Whether...or not depends on..." is a common essay structure. "Depends" (singular) agrees with the subject "whether...or not" (a single question).'
+    explanationZh: '"Whether...or not depends on..."是常见的议论文结构。"Depends"（单数）与主语"whether...or not"（一个单一问题）一致。'
+    grammarPoint: 'Whether...depends on'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0989
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'The extent _____ which technology helps education varies from school to school.'
+    questionZh: '技术帮助教育的程度因学校而异。'
+    options:
+      A: 'at'
+      B: 'in'
+      C: 'to'
+      D: 'for'
+    answer: 'C'
+    explanation: '"The extent to which..." is a fixed formal phrase meaning "how much." "To" is the required preposition before "which."'
+    explanationZh: '"The extent to which..."是固定的正式短语，意思是"多大程度上"。"To"是"which"前所需的介词。'
+    grammarPoint: 'Fixed: the extent to which'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0990
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'It is high time schools _____ debating as a regular activity.'
+    questionZh: '学校早就该 _____ 辩论作为常规活动了。'
+    answer: 'introduced'
+    acceptableAnswers: ['introduced', 'adopted']
+    explanation: '"It is high time + past simple" expresses that something should have happened already. Despite the past tense, it refers to the present/future.'
+    explanationZh: '"It is high time + 过去式"表达某事本应已经发生。尽管使用过去时态，它指的是现在/未来。'
+    grammarPoint: 'It is high time + past simple'
+    relatedQuest: Q10
+    difficulty: 3
+
+  # G0991-G1000: Final mixed review
+  - id: G0991
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'The advantages of coding education _____ numerous.'
+    questionZh: '编程教育的优势是 _____ 的。'
+    options:
+      A: 'is'
+      B: 'are'
+      C: 'was'
+      D: 'has'
+    answer: 'B'
+    explanation: '"The advantages" is plural, so we use "are." Subject-verb agreement is essential in formal essay writing.'
+    explanationZh: '"The advantages"是复数，所以用"are"。主谓一致在正式议论文写作中至关重要。'
+    grammarPoint: 'Subject-verb agreement (plural subject)'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0992
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Neither side has managed to _____ the other that their view is correct.'
+    questionZh: '双方都没有能够 _____ 对方他们的观点是正确的。'
+    answer: 'convince'
+    acceptableAnswers: ['convince', 'persuade']
+    explanation: '"Convince/persuade someone that..." follows "managed to + infinitive." This shows neither side has won the argument.'
+    explanationZh: '"Convince/persuade someone that..."接在"managed to + 不定式"之后。这表明双方都没有赢得争论。'
+    grammarPoint: 'convince/persuade + object + that clause'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0993
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'Each student _____ their own opinion on the topic of homework.'
+    questionZh: '每个学生对作业话题都有自己的看法。'
+    options:
+      A: 'have'
+      B: 'has'
+      C: 'are having'
+      D: 'were having'
+    answer: 'B'
+    explanation: '"Each student" is singular, so it takes "has." "Each" always refers to individuals, requiring a singular verb.'
+    explanationZh: '"Each student"是单数，所以用"has"。"Each"总是指个体，需要单数动词。'
+    grammarPoint: 'Subject-verb agreement: each + singular verb'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0994
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'The question of whether to ban homework _____ complex and multifaceted.'
+    questionZh: '是否禁止作业的问题是 _____ 和多方面的。'
+    answer: 'is'
+    acceptableAnswers: ['is', 'remains']
+    explanation: '"The question of whether..." takes a singular verb because "the question" is the subject (singular), not "homework."'
+    explanationZh: '"The question of whether..."用单数动词，因为主语是"the question"（单数），不是"homework"。'
+    grammarPoint: 'Subject-verb agreement: The question...is'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0995
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Were I _____ write this essay again, I would include more examples.'
+    questionZh: '如果我重新写这篇议论文，我会包含更多的例子。'
+    options:
+      A: 'for'
+      B: 'to'
+      C: 'will'
+      D: 'going'
+    answer: 'B'
+    explanation: '"Were I to write..." is the formal conditional without "if." "To" links to the infinitive "write."'
+    explanationZh: '"Were I to write..."是没有"if"的正式条件句。"To"连接到不定式"write"。'
+    grammarPoint: 'Formal conditional: Were I to + infinitive'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0996
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'In _____ of the above arguments, I believe a balanced approach is best.'
+    questionZh: '鉴于以上论点，我认为平衡的方法是最好的。'
+    answer: 'light'
+    acceptableAnswers: ['light', 'view']
+    explanation: '"In light of / In view of" means "considering" or "because of." It introduces a conclusion based on what has been discussed.'
+    explanationZh: '"In light of / In view of"意思是"鉴于"或"考虑到"。它基于已讨论的内容引入结论。'
+    grammarPoint: 'Conclusion: In light of / In view of'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0997
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Much _____ been written about the homework debate, but no consensus has been reached.'
+    questionZh: '关于作业辩论已经写了 _____ ，但没有达成共识。'
+    options:
+      A: 'have'
+      B: 'has'
+      C: 'are'
+      D: 'were'
+    answer: 'B'
+    explanation: '"Much" is treated as singular, so "has" is correct. "Much has been written about..." is a formal academic opening.'
+    explanationZh: '"Much"被视为单数，所以用"has"。"Much has been written about..."是正式的学术开头。'
+    grammarPoint: 'Much + singular verb (academic register)'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G0998
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-2]
+    context: debate
+    question: 'Above _____, schools should prioritise the well-being of their students.'
+    questionZh: '最重要的是，学校应该优先考虑学生的幸福。'
+    answer: 'all'
+    acceptableAnswers: ['all']
+    explanation: '"Above all" means "most importantly." It introduces the most important point in a list of arguments.'
+    explanationZh: '"Above all"意思是"最重要的是"。它在一系列论点中引入最重要的观点。'
+    grammarPoint: 'Emphasis: above all'
+    relatedQuest: Q10
+    difficulty: 2
+
+  - id: G0999
+    type: multiple-choice
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'It is _____ that schools consider the opinions of both students and parents.'
+    questionZh: '学校考虑学生和家长的意见是 _____ 的。'
+    options:
+      A: 'vital'
+      B: 'vitally'
+      C: 'vitalise'
+      D: 'vitalised'
+    answer: 'A'
+    explanation: '"It is vital that..." uses the adjective "vital" after "it is." This is followed by the subjunctive (base form) or indicative.'
+    explanationZh: '"It is vital that..."在"it is"后面使用形容词"vital"。后面跟虚拟语气（原形）或陈述语气。'
+    grammarPoint: 'It is vital/essential/important that'
+    relatedQuest: Q10
+    difficulty: 3
+
+  - id: G1000
+    type: fill-blank
+    tags: [mixed, Q10, difficulty-3]
+    context: debate
+    question: 'Last but not _____, we must remember that education should be enjoyable.'
+    questionZh: '最后但同样重要的是，我们必须记住教育应该是有趣的。'
+    answer: 'least'
+    acceptableAnswers: ['least']
+    explanation: '"Last but not least" is a fixed expression used to introduce the final point in a list while emphasising it is still important.'
+    explanationZh: '"Last but not least"是固定表达，用于引入列表中的最后一点，同时强调它仍然很重要。'
+    grammarPoint: 'Fixed: last but not least'
+    relatedQuest: Q10
+    difficulty: 3

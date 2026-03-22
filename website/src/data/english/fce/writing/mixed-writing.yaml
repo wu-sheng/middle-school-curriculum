@@ -1,0 +1,548 @@
+# FCE Writing — Mixed Writing Practice (Month 11)
+# W078-W085: Mix of all writing types
+# 2 stories, 2 essays, 2 reviews, 2 letters
+# Exam-level prompts
+
+category: 'Mixed Writing Practice (Exam Level)'
+categoryZh: '混合写作练习（考试水平）'
+tasks:
+  # ============================================================
+  # W078 — Story
+  # ============================================================
+  - id: W078
+    type: story
+    title: 'The Code'
+    titleZh: '密码'
+    prompt: 'Your story must begin with this sentence: ''When I finally cracked the code, I realised that everything I thought I knew was wrong.'''
+    promptZh: '你的故事必须以这句话开头：''当我终于破解了密码时，我意识到我以为知道的一切都是错的。'''
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      storyMap:
+        opening: 'What was the code? Where did you find it? Use sensory details to set the scene.'
+        openingZh: '密码是什么？你在哪里找到的？用感官细节来设定场景。'
+        development: 'How long had you been trying to crack it? What did you try? Build tension with short sentences.'
+        developmentZh: '你花了多长时间试图破解？你尝试了什么？用短句制造紧张感。'
+        climax: 'The moment of realisation — what did the decoded message reveal? Make it surprising.'
+        climaxZh: '意识到的那一刻——解码后的信息揭示了什么？让它出人意料。'
+        resolution: 'How did this discovery change you? End with a reflective or thought-provoking sentence.'
+        resolutionZh: '这个发现如何改变了你？以一个反思性或发人深省的句子结尾。'
+      mustUseWords:
+        - 'decipher'
+        - 'astonished'
+        - 'reveal'
+        - 'gradually'
+      mustUseStructure:
+        - 'At least one past perfect sentence for backstory'
+        - 'At least two short sentences in a row for tension'
+      mustUseStructureZh:
+        - '至少一个过去完成时句子用于背景'
+        - '至少两个连续短句制造紧张感'
+    selfCheckList:
+      - 'Did I use the opening sentence exactly as given?'
+      - 'Is the decoded message surprising but believable?'
+      - 'Did I build tension before the climax?'
+      - 'Did I end with a strong final sentence?'
+    selfCheckListZh:
+      - '我是否完全使用了给定的开头句？'
+      - '解码后的信息是否令人惊讶但可信？'
+      - '我是否在高潮前制造了紧张感？'
+      - '我是否以一个有力的最后一句结尾？'
+    modelAnswer: |
+      When I finally cracked the code, I realised that everything I thought I knew was wrong.
+
+      For three weeks, I had been trying to decipher the strange symbols scratched into the back of my grandfather's old pocket watch. I had assumed they were decorative, but one rainy afternoon I noticed that each symbol matched a letter of the alphabet. My hands trembled. My heart raced. I grabbed a pencil.
+
+      Gradually, the message took shape. It was not what I expected. Instead of a treasure map or a secret fortune, the decoded message read: "Dear future grandchild — the greatest treasure is not gold. It is the hours you spend with the people you love. Do not waste them looking for things that do not matter."
+
+      I sat in silence, astonished. My grandfather had died before I was born, yet here he was, speaking directly to me across the years. I had spent weeks hunting for hidden treasure, and the real message was that I should have been spending that time with my family.
+
+      I closed the watch, slipped it into my pocket, and went downstairs to find my mum. "Want to play a board game?" I asked. She looked surprised, then smiled. "I would love to," she said.
+
+      Some codes, I realised, reveal truths that were there all along.
+    modelAnswerZh: |
+      当我终于破解了密码时，我意识到我以为知道的一切都是错的。
+
+      三个星期以来，我一直试图解读刻在祖父旧怀表背面的奇怪符号。我以为它们是装饰性的，但在一个雨天的下午，我注意到每个符号都对应一个字母。我的手在颤抖。我的心跳加速。我抓起一支铅笔。
+
+      渐渐地，信息显现出来。它不是我所期望的。解码后的信息不是藏宝图或秘密财富，而是："亲爱的未来孙辈——最大的宝藏不是黄金。而是你与所爱的人共度的时光。不要浪费它们去寻找不重要的东西。"
+
+      我静静地坐着，惊讶不已。我的祖父在我出生前就去世了，但他在这里，跨越岁月直接对我说话。我花了几个星期寻找隐藏的宝藏，而真正的信息是我应该把时间花在家人身上。
+
+      我合上怀表，把它滑进口袋，下楼找到妈妈。"想玩桌游吗？"我问。她看起来很惊讶，然后笑了。"我很想，"她说。
+
+      有些密码，我意识到，揭示的是一直就在那里的真理。
+
+  # ============================================================
+  # W079 — Essay
+  # ============================================================
+  - id: W079
+    type: essay
+    title: 'Is Technology Making Us Smarter or Lazier?'
+    titleZh: '技术让我们更聪明还是更懒惰？'
+    prompt: 'Some people believe that modern technology is making humans more intelligent. Others argue that it is making us lazy and dependent. What is your opinion? Write an essay giving reasons for your view.'
+    promptZh: '一些人认为现代技术正在使人类更聪明。另一些人则认为它让我们变懒和依赖。你的观点是什么？写一篇论文说明你的理由。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      brainstorming:
+        topicZh: '技术让我们更聪明还是更懒惰？'
+        topic: 'Is technology making us smarter or lazier?'
+        forPoints:
+          - 'Access to unlimited information anytime — we can learn anything'
+          - 'AI tools help us solve complex problems faster'
+          - 'Online courses allow learning from the world''s best teachers'
+        forPointsZh:
+          - '随时获取无限信息——我们可以学任何东西'
+          - 'AI工具帮助我们更快解决复杂问题'
+          - '在线课程允许向世界最好的老师学习'
+        againstPoints:
+          - 'We rely on GPS instead of learning to navigate'
+          - 'Spell-checkers mean we never learn to spell properly'
+          - 'Social media reduces attention span and deep thinking'
+        againstPointsZh:
+          - '我们依赖GPS而不是学习导航'
+          - '拼写检查意味着我们从来不好好学拼写'
+          - '社交媒体减少注意力持续时间和深度思考'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Nevertheless...'
+        - 'Taking everything into consideration...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'Nevertheless'
+        - 'significant'
+      mustUseStructure:
+        - 'At least one conditional sentence (If...)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个条件句（If...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly?'
+      - 'Did I give specific examples to support both sides?'
+      - 'Did I use at least one conditional sentence?'
+      - 'Did I write a balanced conclusion?'
+    selfCheckListZh:
+      - '我是否清楚地表达了我的观点？'
+      - '我是否给出了支持双方的具体例子？'
+      - '我是否使用了至少一个条件句？'
+      - '我是否写了一个平衡的结论？'
+    modelAnswer: |
+      In today's world, technology is everywhere — from the smartphones in our pockets to the AI assistants that answer our questions. But is this technology making us smarter, or is it making us dependent and lazy? In my opinion, the answer depends on how we choose to use it.
+
+      On the one hand, technology has given us access to more information than any generation in history. If a student wants to learn about ancient Egyptian civilisation, they can watch documentaries, read academic papers, and even take virtual tours of the pyramids — all from their bedroom. Furthermore, tools like language-learning apps and online courses allow people to acquire new skills at their own pace. These are significant advantages that were simply not available twenty years ago.
+
+      On the other hand, there is evidence that technology is reducing our ability to think deeply. Social media encourages us to scroll through short posts rather than read long articles. Spell-checkers mean many young people never learn to spell correctly. Nevertheless, I believe these are problems of behaviour, not technology itself. A calculator does not make you bad at maths — but choosing to use it instead of practising mental arithmetic does.
+
+      Taking everything into consideration, technology is a powerful tool that can make us either smarter or lazier. The key is to use it actively — for learning and creating — rather than passively consuming content. If we make that choice, technology will be our greatest teacher.
+    modelAnswerZh: |
+      在当今世界，技术无处不在——从我们口袋里的智能手机到回答我们问题的AI助手。但这种技术是让我们更聪明，还是让我们依赖和懒惰？在我看来，答案取决于我们选择如何使用它。
+
+      一方面，技术让我们获得了比历史上任何一代人都多的信息。如果一个学生想了解古埃及文明，他们可以看纪录片、读学术论文，甚至可以虚拟参观金字塔——所有这些都在他们的卧室里。此外，语言学习应用和在线课程等工具允许人们按自己的节奏习得新技能。这些是二十年前根本不存在的显著优势。
+
+      另一方面，有证据表明技术正在降低我们深度思考的能力。社交媒体鼓励我们翻阅短帖子而不是阅读长文章。拼写检查器意味着许多年轻人从来不学会正确拼写。然而，我认为这些是行为问题，不是技术本身的问题。计算器不会让你数学差——但选择用它来代替心算练习会。
+
+      综合考虑所有因素，技术是一个强大的工具，可以让我们变得更聪明或更懒惰。关键是积极使用它——用于学习和创造——而不是被动地消费内容。如果我们做出这样的选择，技术将是我们最好的老师。
+
+  # ============================================================
+  # W080 — Review
+  # ============================================================
+  - id: W080
+    type: review
+    title: 'A Documentary You Learned From'
+    titleZh: '一部让你学到东西的纪录片'
+    prompt: 'You recently watched a documentary that taught you something surprising. Write a review for an English-language website aimed at young learners. Include what the documentary is about, what surprised you most, and whether you would recommend it.'
+    promptZh: '你最近看了一部教你一些令人惊讶的东西的纪录片。为一个面向年轻学习者的英语网站写一篇评论。包括纪录片讲什么、什么最让你惊讶，以及你是否推荐它。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      structure:
+        introduction: 'Name the documentary, the topic, and your overall impression.'
+        introductionZh: '纪录片名称、主题和你的总体印象。'
+        summary: 'What is it about? What key facts does it present?'
+        summaryZh: '它讲什么？它呈现了什么关键事实？'
+        opinion: 'What surprised you? What was the best part? Any weaknesses?'
+        opinionZh: '什么让你惊讶？最好的部分是什么？有什么不足？'
+        recommendation: 'Who would enjoy this? What age group?'
+        recommendationZh: '谁会喜欢这个？什么年龄段？'
+      mustUseWords:
+        - 'fascinating'
+        - 'although'
+        - 'highly recommend'
+      mustUseStructure:
+        - 'Four clear paragraphs: Introduction, Summary, Opinion, Recommendation'
+        - 'At least one passive voice sentence'
+      mustUseStructureZh:
+        - '四个清晰的段落：引言、概要、评价、推荐'
+        - '至少一个被动语态句'
+    selfCheckList:
+      - 'Did I name the documentary and describe what it is about?'
+      - 'Did I explain what surprised me with specific details?'
+      - 'Did I include at least one mild criticism for balance?'
+      - 'Did I say who I would recommend it to?'
+    selfCheckListZh:
+      - '我是否说了纪录片名称并描述了它讲什么？'
+      - '我是否用具体细节解释了什么让我惊讶？'
+      - '我是否为了平衡加入了至少一个温和的批评？'
+      - '我是否说了我会推荐给谁？'
+    modelAnswer: |
+      I recently watched a fascinating documentary called "The Secret Life of Soil," and it completely changed the way I think about the ground beneath our feet.
+
+      The documentary, which was produced by the BBC Natural History Unit, explores the hidden ecosystem living in soil. It reveals that a single teaspoon of healthy soil contains more bacteria than there are people on Earth. Using microscopic cameras, the filmmakers show the incredible underground networks created by fungi, which allow trees to share nutrients and even send chemical warning signals to each other.
+
+      What surprised me most was learning that soil stores more carbon than all the world's forests combined. I had no idea that protecting soil could be one of the most effective ways to fight climate change. The animations showing how carbon moves between soil, plants, and the atmosphere were the highlight of the programme. Although some sections were quite technical and moved a little quickly for younger viewers, the visually stunning footage made even the complex science easy to follow.
+
+      I would highly recommend this documentary to anyone aged 10 and above who is interested in nature or the environment. It is the kind of programme that makes you look at the world differently — and you will never walk on grass the same way again.
+    modelAnswerZh: |
+      我最近看了一部名叫《土壤的秘密生命》的迷人纪录片，它完全改变了我对脚下土地的看法。
+
+      这部纪录片由BBC自然历史部制作，探索了生活在土壤中的隐藏生态系统。它揭示了一茶匙健康土壤含有的细菌比地球上的人口还多。使用微观摄像机，制片人展示了真菌创造的令人难以置信的地下网络，这允许树木共享养分，甚至互相发送化学警告信号。
+
+      最让我惊讶的是得知土壤储存的碳比世界上所有森林加起来还多。我不知道保护土壤可能是对抗气候变化最有效的方式之一。展示碳如何在土壤、植物和大气之间移动的动画是节目的亮点。虽然有些部分相当技术性，对较年轻的观众来说推进有点快，但视觉上令人惊叹的画面使即使是复杂的科学也容易理解。
+
+      我强烈推荐这部纪录片给所有10岁及以上对自然或环境感兴趣的人。这是那种让你以不同方式看世界的节目——你再也不会以同样的方式走在草地上了。
+
+  # ============================================================
+  # W081 — Letter
+  # ============================================================
+  - id: W081
+    type: letter
+    title: 'A Letter to Your Future Self'
+    titleZh: '给未来自己的一封信'
+    prompt: 'Write a letter to yourself that you will open on the day you receive your FCE exam results. Include what you are feeling right now, what you have learned during your preparation, and advice for your future self.'
+    promptZh: '写一封信给你自己，你将在收到FCE考试结果那天打开。包括你现在的感受、你在备考期间学到了什么，以及给未来自己的建议。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q11
+    scaffold:
+      structure:
+        opening: 'Address your future self warmly. State when you are writing and why.'
+        openingZh: '温暖地称呼你的未来自己。说明你什么时候写的以及为什么。'
+        body1: 'How are you feeling right now? What has the preparation journey been like?'
+        body1Zh: '你现在感觉如何？备考之旅是什么样的？'
+        body2: 'What have you learned — not just about English, but about yourself?'
+        body2Zh: '你学到了什么——不仅是关于英语，还有关于你自己？'
+        closing: 'Advice for your future self, regardless of the result. End warmly.'
+        closingZh: '无论结果如何，给未来自己的建议。温暖地结束。'
+      mustUseWords:
+        - 'regardless'
+        - 'achieve'
+        - 'determination'
+      mustUseStructure:
+        - 'Informal letter format with appropriate greeting and sign-off'
+        - 'At least one conditional sentence'
+      mustUseStructureZh:
+        - '使用适当问候和落款的非正式信件格式'
+        - '至少一个条件句'
+    selfCheckList:
+      - 'Did I write in an appropriate informal letter format?'
+      - 'Did I describe my current feelings honestly?'
+      - 'Did I reflect on what I have learned from the experience?'
+      - 'Did I give encouraging advice for my future self?'
+    selfCheckListZh:
+      - '我是否使用了适当的非正式信件格式？'
+      - '我是否诚实地描述了我现在的感受？'
+      - '我是否反思了我从这段经历中学到了什么？'
+      - '我是否给了未来自己鼓励性的建议？'
+    modelAnswer: |
+      Dear Future Me,
+
+      I am writing this letter the night before your FCE exam, and I want you to read it on the day you get your results — regardless of what those results are.
+
+      Right now, I feel a mixture of nervousness and excitement. I have spent eleven months preparing for this exam, and there have been moments when I wanted to give up. The grammar exercises felt endless, the vocabulary lists seemed impossible, and I honestly wondered if I would ever be ready. But I kept going, and that determination surprised me.
+
+      What I have learned goes far beyond English. I have learned that consistency matters more than talent — studying a little every day is more powerful than cramming once a week. I have learned that mistakes are not failures; they are lessons. And I have learned that if you believe you can improve, you actually do.
+
+      So here is my advice: if you passed, celebrate! You earned it through months of hard work. If you did not pass, do not be discouraged. You are so much better at English now than you were eleven months ago, and that progress does not disappear because of one exam. You can try again, and next time you will achieve an even higher score.
+
+      Be proud of yourself. I am proud of you already.
+
+      With love,
+      Past Me
+    modelAnswerZh: |
+      亲爱的未来的我，
+
+      我在你FCE考试前一天晚上写这封信，我希望你在收到结果那天读——不管结果是什么。
+
+      现在，我感到紧张和兴奋交织。我花了十一个月准备这次考试，有些时候我想放弃。语法练习似乎没有尽头，词汇表似乎不可能，我真的怀疑自己是否能准备好。但我坚持下来了，这种决心让我自己都惊讶。
+
+      我学到的远不止英语。我学到了坚持比天赋更重要——每天学一点比每周集中学一次更有力。我学到了错误不是失败；它们是课程。我学到了如果你相信自己可以进步，你就真的会进步。
+
+      所以这是我的建议：如果你通过了，庆祝吧！你通过几个月的努力赢得了它。如果你没有通过，不要灰心。你现在的英语比十一个月前好太多了，这种进步不会因为一次考试而消失。你可以再试，下次你会取得更高的分数。
+
+      为自己骄傲。我已经为你骄傲了。
+
+      带着爱，
+      过去的我
+
+  # ============================================================
+  # W082 — Story
+  # ============================================================
+  - id: W082
+    type: story
+    title: 'The Last Question'
+    titleZh: '最后一个问题'
+    prompt: 'Your story must begin with this sentence: ''There was only one question left on the exam paper, and I had no idea how to answer it.'''
+    promptZh: '你的故事必须以这句话开头：''试卷上只剩最后一个问题了，我完全不知道怎么回答。'''
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      storyMap:
+        opening: 'Describe the exam room — the pressure, the clock ticking, the silence.'
+        openingZh: '描述考场——压力、时钟滴答声、寂静。'
+        development: 'What is the question? Why is it so difficult? Show the character thinking.'
+        developmentZh: '问题是什么？为什么如此困难？展示人物在思考。'
+        climax: 'An unexpected moment of inspiration — where does the answer come from?'
+        climaxZh: '意想不到的灵感时刻——答案从何而来？'
+        resolution: 'After the exam — what does the character learn about themselves?'
+        resolutionZh: '考试之后——人物对自己有了什么了解？'
+      mustUseWords:
+        - 'determination'
+        - 'relief'
+        - 'concentrate'
+      mustUseStructure:
+        - 'At least one past perfect sentence'
+        - 'At least one simile or metaphor'
+      mustUseStructureZh:
+        - '至少一个过去完成时句子'
+        - '至少一个明喻或暗喻'
+    selfCheckList:
+      - 'Did I use the opening sentence exactly as given?'
+      - 'Did I build tension effectively before the climax?'
+      - 'Is the resolution satisfying and meaningful?'
+      - 'Did I use varied sentence lengths for effect?'
+    selfCheckListZh:
+      - '我是否完全使用了给定的开头句？'
+      - '我是否在高潮前有效地制造了紧张感？'
+      - '结局是否令人满意且有意义？'
+      - '我是否使用了不同长度的句子来产生效果？'
+    modelAnswer: |
+      There was only one question left on the exam paper, and I had no idea how to answer it.
+
+      The clock on the wall showed fifteen minutes remaining. Around me, pens scratched across paper like mice running through walls. I stared at the question. It asked me to explain why mistakes are important for learning. I had studied grammar, vocabulary, and reading techniques for months — but nobody had prepared me for this.
+
+      My mind was a blank page. I tried to concentrate, but panic was creeping in like fog. Then I remembered something my grandmother had told me the night before: "You have already made a thousand mistakes to get here. Every single one made you stronger."
+
+      Suddenly, I knew exactly what to write. I had not prepared an answer, but I had lived one. I wrote about the grammar test where I confused "their" and "there" — and how the embarrassment made me never forget the difference. I wrote about the essay I had to rewrite three times — and how the final version was the best thing I had ever written. I wrote about the determination it took to keep studying when I wanted to quit.
+
+      When I put my pen down, I felt a wave of relief. The exam was over. But more importantly, I had discovered something about myself: I was not afraid of mistakes any more. They were my secret teachers, and they had brought me here.
+    modelAnswerZh: |
+      试卷上只剩最后一个问题了，我完全不知道怎么回答。
+
+      墙上的时钟显示还有十五分钟。我周围，笔在纸上沙沙作响，像老鼠在墙里跑。我盯着这个问题。它让我解释为什么错误对学习很重要。我学了几个月的语法、词汇和阅读技巧——但没有人为我准备好这个。
+
+      我的脑子像白纸一样。我试图集中注意力，但恐慌像雾一样悄悄逼近。然后我想起了前一天晚上祖母告诉我的话："你已经犯了一千个错误才走到这里。每一个都让你更强大。"
+
+      突然，我确切地知道该写什么了。我没有准备答案，但我经历了一个。我写了那次语法测试，我搞混了"their"和"there"——以及尴尬如何让我再也不会忘记区别。我写了那篇不得不重写三遍的作文——以及最终版本如何是我写过的最好的东西。我写了当我想放弃时继续学习所需的决心。
+
+      当我放下笔时，我感到一阵如释重负。考试结束了。但更重要的是，我发现了关于自己的一些东西：我不再害怕犯错了。它们是我的秘密老师，它们带我来到了这里。
+
+  # ============================================================
+  # W083 — Essay
+  # ============================================================
+  - id: W083
+    type: essay
+    title: 'Should Schools Teach Exam Skills or Life Skills?'
+    titleZh: '学校应该教考试技巧还是生活技能？'
+    prompt: 'Some people believe schools should focus on teaching students how to pass exams. Others think schools should teach practical life skills like cooking, managing money, and communication. What do you think? Write an essay giving your opinion.'
+    promptZh: '一些人认为学校应该专注于教学生如何通过考试。另一些人认为学校应该教实用的生活技能，如烹饪、理财和沟通。你怎么看？写一篇论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      brainstorming:
+        topicZh: '学校应该更注重考试技巧还是生活技能？'
+        topic: 'Should schools prioritise exam skills or life skills?'
+        forPoints:
+          - 'Exams open doors to universities and careers'
+          - 'Academic knowledge builds critical thinking'
+          - 'Students can learn life skills at home'
+        forPointsZh:
+          - '考试打开通往大学和职业的大门'
+          - '学术知识培养批判性思维'
+          - '学生可以在家学习生活技能'
+        againstPoints:
+          - 'Many people leave school unable to cook, budget, or do basic repairs'
+          - 'Exam grades do not predict success in real life'
+          - 'Skills like communication and teamwork are needed in every job'
+        againstPointsZh:
+          - '许多人离开学校时不会做饭、理财或进行基本修理'
+          - '考试成绩不能预测现实生活中的成功'
+          - '沟通和团队合作等技能在每份工作中都需要'
+      connectors:
+        - 'While it is true that...'
+        - 'In addition...'
+        - 'On balance...'
+      mustUseWords:
+        - 'essential'
+        - 'In addition'
+        - 'whereas'
+      mustUseStructure:
+        - 'Introduction + 2 body paragraphs + conclusion'
+        - 'At least one concession phrase (While it is true that...)'
+      mustUseStructureZh:
+        - '开头段 + 2个正文段 + 结尾段'
+        - '至少一个让步短语（While it is true that...）'
+    selfCheckList:
+      - 'Did I present both sides of the argument?'
+      - 'Did I give specific examples?'
+      - 'Did I make my own opinion clear?'
+      - 'Did I write a conclusion that summarises my view?'
+    selfCheckListZh:
+      - '我是否呈现了论点的双方？'
+      - '我是否给出了具体的例子？'
+      - '我是否清楚表明了自己的观点？'
+      - '我是否写了一个总结我观点的结论？'
+    modelAnswer: |
+      Should schools teach students how to pass exams, or should they focus on practical life skills? This is a question that many parents and educators disagree about. In my opinion, the best schools do both — but if I had to choose, I believe life skills are more essential.
+
+      While it is true that exam results open doors to good universities and careers, academic knowledge alone is not enough to succeed in life. Many highly qualified graduates struggle with basic tasks like managing their finances, cooking nutritious meals, or communicating effectively in job interviews. These are skills that are needed every day, whereas exam knowledge is often forgotten within months of passing the test.
+
+      In addition, life skills such as teamwork, problem-solving, and time management are valued by employers even more than academic grades. A survey of over 500 companies found that 90 per cent ranked communication skills as their top priority when hiring new employees. Schools that teach these skills alongside traditional subjects prepare students not just for exams, but for the real world.
+
+      On balance, I believe schools should find a way to include both academic and practical learning. Exams matter, but so does the ability to live independently and work well with others. Education should prepare you for life, not just for the next test.
+    modelAnswerZh: |
+      学校应该教学生如何通过考试，还是应该专注于实用的生活技能？这是许多家长和教育者不同意的问题。在我看来，最好的学校两者都做——但如果我必须选择，我认为生活技能更必要。
+
+      虽然考试成绩确实能打开通往好大学和职业的大门，但仅有学术知识不足以在生活中成功。许多高学历的毕业生在理财、做营养餐或在面试中有效沟通等基本任务上都有困难。这些是每天都需要的技能，而考试知识往往在通过测试后几个月内就被遗忘。
+
+      此外，团队合作、解决问题和时间管理等生活技能被雇主看重的程度甚至超过学术成绩。一项对500多家公司的调查发现，90%的公司在招聘新员工时将沟通能力列为首要优先事项。教授这些技能的学校不仅为学生准备考试，还为现实世界做准备。
+
+      总的来说，我认为学校应该找到一种方式同时包含学术和实践学习。考试很重要，但独立生活和与他人良好合作的能力也很重要。教育应该为生活做准备，而不仅仅是为下一次考试。
+
+  # ============================================================
+  # W084 — Review
+  # ============================================================
+  - id: W084
+    type: review
+    title: 'A Mobile App That Helped You Learn'
+    titleZh: '一个帮助你学习的手机应用'
+    prompt: 'You have been using a mobile app that has helped you improve your English. Write a review for an English-language technology website aimed at students. Describe what the app does, what you like and dislike about it, and whether you would recommend it.'
+    promptZh: '你一直在使用一个帮助你提高英语的手机应用。为一个面向学生的英语科技网站写一篇评论。描述这个应用做什么、你喜欢和不喜欢什么，以及你是否推荐它。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      structure:
+        introduction: 'Name the app and give a one-sentence verdict.'
+        introductionZh: '应用名称和一句话评价。'
+        summary: 'What does the app do? What features does it have?'
+        summaryZh: '应用做什么？有什么功能？'
+        opinion: 'What works well? What could be improved?'
+        opinionZh: '什么做得好？什么可以改进？'
+        recommendation: 'Who is the ideal user? What level is it best for?'
+        recommendationZh: '理想用户是谁？最适合什么水平？'
+      mustUseWords:
+        - 'effective'
+        - 'despite'
+        - 'highly recommend'
+      mustUseStructure:
+        - 'Four paragraphs: Introduction, Description, Opinion, Recommendation'
+        - 'At least one comparison (more...than / not as...as)'
+      mustUseStructureZh:
+        - '四个段落：引言、描述、评价、推荐'
+        - '至少一个比较（more...than / not as...as）'
+    selfCheckList:
+      - 'Did I name the app and describe what it does?'
+      - 'Did I give both positive and negative feedback?'
+      - 'Did I specify who would benefit from this app?'
+      - 'Did I use comparison structures?'
+    selfCheckListZh:
+      - '我是否说了应用名称并描述了它做什么？'
+      - '我是否给出了正面和负面的反馈？'
+      - '我是否指出了谁会从这个应用中受益？'
+      - '我是否使用了比较结构？'
+    modelAnswer: |
+      If you are looking for an effective way to build your vocabulary, let me introduce you to WordMaster — the app that transformed my English preparation.
+
+      WordMaster teaches vocabulary through spaced repetition. You learn five new words each day, complete with definitions, example sentences, pronunciation recordings, and word family information. The app tracks which words you find difficult and shows them more frequently, while words you have mastered appear less often. It also includes short quizzes that test your knowledge in different ways — matching, fill-the-blank, and multiple choice.
+
+      What I like most is the "word family" feature, which shows you all the forms of each word — noun, verb, adjective, and adverb. This is incredibly useful for Part 3 of the Use of English paper. Despite being a free app, the quality of the content is more professional than many paid alternatives. However, the app is not as good for grammar practice — it focuses almost entirely on vocabulary, so you would need a separate resource for grammar review.
+
+      I would highly recommend WordMaster to any student preparing for the FCE exam, particularly those at B1-B2 level. It takes just ten minutes a day, and the results are genuinely impressive. Download it today — your future self will thank you.
+    modelAnswerZh: |
+      如果你正在寻找一种有效的方式来建立词汇量，让我向你介绍WordMaster——这个改变了我英语备考的应用。
+
+      WordMaster通过间隔重复来教词汇。你每天学五个新词，包括定义、例句、发音录音和词族信息。应用追踪你觉得困难的词并更频繁地显示它们，而你已经掌握的词出现得更少。它还包括短测验，以不同的方式测试你的知识——配对、填空和选择题。
+
+      我最喜欢的是"词族"功能，它向你展示每个词的所有形式——名词、动词、形容词和副词。这对语言运用第3部分非常有用。尽管是免费应用，内容质量比许多付费替代品更专业。然而，这个应用在语法练习方面不如词汇——它几乎完全专注于词汇，所以你需要一个单独的资源来复习语法。
+
+      我强烈推荐WordMaster给任何准备FCE考试的学生，特别是B1-B2水平的学生。每天只需十分钟，结果真的令人印象深刻。今天就下载它——你未来的自己会感谢你。
+
+  # ============================================================
+  # W085 — Letter
+  # ============================================================
+  - id: W085
+    type: letter
+    title: 'A Formal Letter Requesting Information'
+    titleZh: '请求信息的正式信件'
+    prompt: 'You have seen an advertisement for a two-week English language summer course in London. Write a formal letter to the course organisers asking for more information. Ask about the course schedule, accommodation options, and what level of English is required.'
+    promptZh: '你看到了一个在伦敦为期两周的暑期英语课程的广告。给课程组织者写一封正式信件，询问更多信息。询问课程安排、住宿选择和所需的英语水平。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q11
+    scaffold:
+      structure:
+        opening: 'State why you are writing and where you saw the advertisement.'
+        openingZh: '说明你为什么写信以及你在哪里看到了广告。'
+        body1: 'Ask about the course schedule — hours per day, subjects covered, class sizes.'
+        body1Zh: '询问课程安排——每天几小时、涵盖的科目、班级大小。'
+        body2: 'Ask about accommodation and English level requirements.'
+        body2Zh: '询问住宿和英语水平要求。'
+        closing: 'Thank them and request a prompt response. Formal sign-off.'
+        closingZh: '感谢他们并请求及时回复。正式落款。'
+      mustUseWords:
+        - 'I am writing to enquire'
+        - 'I would be grateful if'
+        - 'I look forward to hearing from you'
+      mustUseStructure:
+        - 'Formal letter format with Dear Sir/Madam and Yours faithfully'
+        - 'At least two polite questions using indirect question forms'
+      mustUseStructureZh:
+        - '使用Dear Sir/Madam和Yours faithfully的正式信件格式'
+        - '至少两个使用间接疑问句的礼貌问题'
+    selfCheckList:
+      - 'Did I use formal letter conventions (greeting, sign-off)?'
+      - 'Did I ask all three required questions (schedule, accommodation, level)?'
+      - 'Did I use polite, formal language throughout?'
+      - 'Did I use indirect question forms?'
+    selfCheckListZh:
+      - '我是否使用了正式信件惯例（问候、落款）？'
+      - '我是否问了所有三个要求的问题（安排、住宿、水平）？'
+      - '我是否全文使用了礼貌、正式的语言？'
+      - '我是否使用了间接疑问句形式？'
+    modelAnswer: |
+      Dear Sir/Madam,
+
+      I am writing to enquire about the two-week English language summer course in London that was advertised on your website. I am a 9-year-old student from Beijing, and I am very interested in attending the course this July.
+
+      Firstly, I would be grateful if you could provide more details about the course schedule. Could you tell me how many hours of classes there are per day and what subjects are covered? I am particularly interested in whether the course includes preparation for the FCE exam. I would also like to know how large the classes are, as I learn best in small groups.
+
+      Secondly, could you let me know what accommodation options are available for students? I would like to know whether it is possible to stay with a host family, as I believe this would give me more opportunities to practise my English outside the classroom.
+
+      Finally, I would appreciate it if you could tell me what level of English is required to join the course. I have passed PET and I am currently preparing for the FCE exam.
+
+      I look forward to hearing from you at your earliest convenience.
+
+      Yours faithfully,
+      [Name]
+    modelAnswerZh: |
+      尊敬的先生/女士，
+
+      我写信是为了询问您网站上刊登的伦敦为期两周的暑期英语课程。我是来自北京的9岁学生，我非常有兴趣在今年七月参加这门课程。
+
+      首先，如果您能提供更多关于课程安排的细节，我将不胜感激。您能告诉我每天有多少小时的课程以及涵盖哪些科目吗？我特别感兴趣的是课程是否包括FCE考试准备。我还想知道班级有多大，因为我在小班中学习效果最好。
+
+      其次，您能告诉我学生有哪些住宿选择吗？我想知道是否可以住在寄宿家庭，因为我相信这会给我更多在课堂外练习英语的机会。
+
+      最后，如果您能告诉我参加课程需要什么英语水平，我将不胜感激。我已经通过了PET，目前正在准备FCE考试。
+
+      期待您尽早回复。
+
+      此致敬礼，
+      [姓名]

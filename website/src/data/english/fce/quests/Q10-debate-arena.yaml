@@ -1,0 +1,553 @@
+id: Q10
+title: 'Debate Arena'
+titleZh: '辩论竞技场'
+subtitle: 'Master the art of persuasive essay writing!'
+subtitleZh: '掌握说服性议论文写作的艺术！'
+month: 10
+fceMapping: 'Writing Part 1 (Essay)'
+
+theme:
+  setting: 'A grand Debate Arena where young writers learn to build powerful arguments, consider opposing views, and write essays that change minds'
+  settingZh: '一个宏伟的辩论竞技场，年轻作家在这里学习构建有力的论点、考虑对立观点、写出改变人心的议论文'
+  mascot: 'Aria the Arguer, a wise owl who always considers both sides before forming an opinion'
+  mascotZh: 'Aria 辩论家，一只聪慧的猫头鹰，总是在形成观点之前考虑双方'
+
+objectives:
+  - 'Write a well-structured FCE Part 1 essay with introduction, two body paragraphs, and conclusion'
+  - 'Use impersonal structures (It is widely believed, Research suggests) for a formal academic tone'
+  - 'Master hedging language (tend to, seem to, not necessarily) to avoid overgeneralisation'
+  - 'Write effective concessions that acknowledge opposing views before countering them'
+  - 'Use formal contrast connectors (However, Nevertheless, Despite, Whereas) correctly'
+  - 'End essays with strong, memorable conclusions that leave the reader thinking'
+
+objectivesZh:
+  - '写出结构良好的FCE第1部分议论文，包括引言、两个正文段和结论'
+  - '使用非人称结构（It is widely believed, Research suggests）营造正式学术语气'
+  - '掌握委婉语言（tend to, seem to, not necessarily）以避免过度概括'
+  - '写出有效的让步，在反驳前承认对立观点'
+  - '正确使用正式对比连接词（However, Nevertheless, Despite, Whereas）'
+  - '以有力、令人难忘的结论结束议论文，让读者思考'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Essay Structure — The Four-Paragraph Blueprint
+  # ─────────────────────────────────────────────
+  - id: Q10-L01
+    title: 'Essay Structure — The Four-Paragraph Blueprint'
+    titleZh: '议论文结构 — 四段式蓝图'
+
+    introduction: |
+      Welcome to the Debate Arena! Aria the Owl adjusts her glasses and unfolds a large scroll
+      across the table.
+
+      "Every great essay," she says, "follows a four-paragraph structure. Think of it like
+      building a house: the introduction is the front door — it welcomes the reader and shows
+      them what the essay is about. The first body paragraph is the living room — your
+      strongest arguments with evidence. The second body paragraph is the guest room — you
+      invite the opposing view in and then politely explain why you disagree. And the
+      conclusion is the balcony — you step back and see the whole picture."
+
+      She taps the scroll with her wing. "In the FCE exam, the examiner checks that your
+      essay has ALL FOUR parts. Miss one, and you lose marks. Get the structure right, and
+      you are already halfway to a great score."
+
+      "Today, we build the house — one room at a time."
+    introductionZh: |
+      欢迎来到辩论竞技场！猫头鹰Aria调整了一下眼镜，在桌上展开一张大卷轴。
+
+      "每篇优秀的议论文，"她说，"都遵循四段式结构。把它想象成建房子：引言是大门——
+      它欢迎读者并展示文章的内容。第一个正文段是客厅——你最有力的论点和证据。
+      第二个正文段是客房——你邀请对立观点进来，然后礼貌地解释为什么你不同意。
+      而结论是阳台——你退后一步，看到整体画面。"
+
+      她用翅膀敲了敲卷轴。"在FCE考试中，考官会检查你的议论文是否包含所有四个部分。
+      漏掉一个就会扣分。结构正确，你就已经走了一半的好分之路。"
+
+      "今天，我们一间一间地建房子。"
+
+    rules:
+      - pattern: 'Introduction'
+        meaning: 'State the topic clearly and give your overall opinion in 2-3 sentences. Hook the reader!'
+        meaningZh: '用2-3个句子清楚地陈述话题并给出你的总体观点。吸引读者！'
+        examples:
+          - base: 'I want to write about homework.'
+            transformed: 'Every evening, millions of children sit at their desks doing homework. But is this daily ritual actually helping them learn, or is it doing more harm than good? In my opinion, homework should be reformed, not abolished.'
+            sentence: 'The introduction hooks with a vivid image, asks a question, and states the opinion clearly.'
+            sentenceZh: '引言用生动的画面吸引读者，提出问题，并清楚地陈述观点。'
+
+      - pattern: 'Body Paragraph 1 (Your arguments)'
+        meaning: 'Present 2-3 arguments that support your opinion, each with evidence or examples.'
+        meaningZh: '提出2-3个支持你观点的论点，每个都有证据或例子。'
+        examples:
+          - base: 'Homework is useful because it helps revision.'
+            transformed: 'First and foremost, homework helps students consolidate what they have learned in class. Research from the University of Oxford suggests that regular revision improves long-term memory by up to 30%. Furthermore, homework teaches self-discipline and time management — skills that are essential for future success.'
+            sentence: 'Each argument is supported by evidence (Oxford research) and uses formal connectors.'
+            sentenceZh: '每个论点都有证据支持（牛津研究）并使用正式连接词。'
+
+      - pattern: 'Body Paragraph 2 (Concession + Counter)'
+        meaning: 'Acknowledge the opposing view, then explain why your position is still stronger.'
+        meaningZh: '承认对立观点，然后解释为什么你的立场仍然更强。'
+        examples:
+          - base: 'Some people think homework is bad.'
+            transformed: 'Admittedly, excessive homework can lead to stress and take away time for play and creativity. However, this does not mean homework should be abolished entirely. The solution is not less homework, but better homework — short, focused tasks that genuinely help students learn.'
+            sentence: '"Admittedly" concedes a point. "However" counters it. The balance shows maturity.'
+            sentenceZh: '"Admittedly"让步一个观点。"However"反驳它。这种平衡展现了成熟度。'
+
+      - pattern: 'Conclusion'
+        meaning: 'Summarise your position in 2-3 sentences. End with a strong, memorable final sentence.'
+        meaningZh: '用2-3个句子总结你的立场。以一个有力的、令人难忘的最终句子结束。'
+        examples:
+          - base: 'In conclusion, homework is good.'
+            transformed: 'In conclusion, homework remains a valuable part of education when it is meaningful and manageable. The goal should not be to fill children''s evenings with busywork, but to inspire a love of learning that lasts a lifetime.'
+            sentence: 'The conclusion restates the opinion and ends with a memorable image (love of learning).'
+            sentenceZh: '结论重申了观点，以一个令人难忘的画面（对学习的热爱）结束。'
+
+    tips:
+      - 'In the FCE exam, spend 5 minutes planning, 30 minutes writing, and 5 minutes checking your essay.'
+      - 'Your introduction should make the examiner curious. Start with a question, a surprising fact, or a vivid image.'
+      - 'Each body paragraph should have ONE main idea. Do not try to cover everything in one paragraph.'
+      - 'The examiner is not looking for the "right" opinion — they are testing your ability to argue well.'
+      - 'Always end with a sentence the reader will remember. Make it strong and thought-provoking.'
+    tipsZh:
+      - '在FCE考试中，用5分钟规划、30分钟写作、5分钟检查你的议论文。'
+      - '你的引言应该让考官好奇。以问题、令人惊讶的事实或生动的画面开头。'
+      - '每个正文段应该有一个主要想法。不要试图在一个段落中涵盖所有内容。'
+      - '考官不是在寻找"正确"的观点——他们是在测试你论证的能力。'
+      - '始终以读者会记住的句子结束。让它有力且发人深省。'
+
+    practicePreview:
+      - id: Q10-L01-P01
+        question: 'Which of these is the best essay introduction?'
+        questionZh: '以下哪个是最好的议论文引言？'
+        options:
+          A: 'In this essay I will discuss homework.'
+          B: 'Homework is bad and should be banned immediately.'
+          C: 'Every evening, millions of children sit doing homework. But is it truly helping them learn? In my opinion, homework should be reformed, not abolished.'
+        answer: 'C'
+        explanation: 'C hooks the reader (vivid image), asks a question, and clearly states the opinion. A is boring, B is one-sided with no balance.'
+        explanationZh: 'C吸引读者（生动画面），提出问题，清楚地陈述观点。A太无聊，B片面没有平衡。'
+
+      - id: Q10-L01-P02
+        question: 'Put these essay sections in the correct order: 1) Concession + counter 2) Introduction 3) Conclusion 4) Your main arguments'
+        questionZh: '将这些议论文部分按正确顺序排列：1) 让步+反驳 2) 引言 3) 结论 4) 你的主要论点'
+        options:
+          A: '2, 4, 1, 3'
+          B: '4, 2, 3, 1'
+          C: '2, 1, 4, 3'
+        answer: 'A'
+        explanation: 'Introduction (2) → Your arguments (4) → Concession + counter (1) → Conclusion (3). Always present your side first, then address the opposition.'
+        explanationZh: '引言（2）→ 你的论点（4）→ 让步+反驳（1）→ 结论（3）。总是先展示你的一方，然后再回应对方。'
+
+      - id: Q10-L01-P03
+        question: 'Which conclusion technique makes the strongest impression on the reader?'
+        questionZh: '哪种结论技巧给读者留下最强烈的印象？'
+        options:
+          A: 'Simply repeating your introduction word for word'
+          B: 'Adding three new arguments you forgot to mention'
+          C: 'Summarising your position and ending with a thought-provoking sentence'
+        answer: 'C'
+        explanation: 'C follows the best practice: brief summary + memorable final sentence. A is lazy repetition, B introduces ideas too late.'
+        explanationZh: 'C遵循最佳实践：简短总结+令人难忘的最终句子。A是懒惰的重复，B在太晚的时候引入想法。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Formal Language & Impersonal Structures
+  # ─────────────────────────────────────────────
+  - id: Q10-L02
+    title: 'Formal Language — Write Like an Expert'
+    titleZh: '正式语言 — 像专家一样写作'
+
+    introduction: |
+      Aria holds up two essays side by side. "Read these two openings," she says.
+
+      Opening A: "I think homework is bad cos kids are tired and it's boring."
+      Opening B: "It is widely believed that homework helps students learn. However, a growing
+      body of research suggests that excessive homework may actually be detrimental to children's
+      well-being."
+
+      "Which one would get a higher mark in the FCE exam?" Aria asks. Everyone points to B.
+
+      "Exactly! Opening B uses FORMAL language. No contractions (it's → it is). No slang
+      (cos → because, kids → children). And it uses impersonal structures — 'It is widely
+      believed' instead of 'Everyone thinks.' These structures make your writing sound
+      academic and professional."
+
+      "Today, we learn to upgrade your everyday language to exam-level formal writing."
+    introductionZh: |
+      Aria举起两篇议论文放在一起。"读一下这两个开头，"她说。
+
+      开头A："I think homework is bad cos kids are tired and it's boring."
+      开头B："It is widely believed that homework helps students learn. However, a growing
+      body of research suggests that excessive homework may actually be detrimental to children's
+      well-being."
+
+      "哪一个在FCE考试中会得到更高的分数？"Aria问。所有人都指向B。
+
+      "没错！开头B使用正式语言。没有缩写（it's → it is）。没有俚语（cos → because，
+      kids → children）。而且它使用非人称结构——'It is widely believed'而不是'Everyone thinks'。
+      这些结构使你的写作听起来学术和专业。"
+
+      "今天，我们学习将你的日常语言升级到考试级别的正式写作。"
+
+    rules:
+      - pattern: 'Impersonal passive'
+        meaning: 'Use "It is widely believed/accepted/argued that..." instead of "People think..."'
+        meaningZh: '使用"It is widely believed/accepted/argued that..."而不是"People think..."'
+        examples:
+          - base: 'Everyone thinks homework is important.'
+            transformed: 'It is widely believed that homework plays an important role in education.'
+            sentence: 'The impersonal passive removes "everyone" and sounds more academic.'
+            sentenceZh: '非人称被动语态去掉了"everyone"，听起来更学术。'
+          - base: 'People say screen time is bad.'
+            transformed: 'It has been suggested that excessive screen time may have negative effects on children.'
+            sentence: '"It has been suggested" is more cautious and formal than "People say."'
+            sentenceZh: '"It has been suggested"比"People say"更谨慎和正式。'
+
+      - pattern: 'Research language'
+        meaning: 'Introduce evidence with "Research suggests/demonstrates that..." or "According to recent studies..."'
+        meaningZh: '用"Research suggests/demonstrates that..."或"According to recent studies..."引入证据'
+        examples:
+          - base: 'Scientists found that reading helps memory.'
+            transformed: 'Research from the University of Toronto demonstrates that regular reading significantly improves long-term memory.'
+            sentence: 'Naming the source (University of Toronto) adds credibility to your argument.'
+            sentenceZh: '点名来源（多伦多大学）为你的论点增加可信度。'
+
+      - pattern: 'No contractions'
+        meaning: 'Always write full forms in essays: do not (not don''t), it is (not it''s), cannot (not can''t)'
+        meaningZh: '在议论文中始终写完整形式：do not（不是don''t），it is（不是it''s），cannot（不是can''t）'
+        examples:
+          - base: 'Kids shouldn''t spend too much time on games cos it''s bad for them.'
+            transformed: 'Children should not spend excessive time on video games because it can be detrimental to their health and academic performance.'
+            sentence: 'Every informal word has been replaced with a formal alternative.'
+            sentenceZh: '每个非正式词都被替换为正式的替代词。'
+
+    tips:
+      - 'Keep a "formal upgrade" list: kids→children, get→obtain/receive, bad→detrimental/harmful, good→beneficial/advantageous, lots of→numerous/considerable'
+      - 'In the FCE exam, using impersonal structures earns you marks for "range of language."'
+      - 'Do not overdo it — your essay should sound natural, not robotic. Mix formal structures with clear, simple sentences.'
+    tipsZh:
+      - '保持一个"正式升级"列表：kids→children，get→obtain/receive，bad→detrimental/harmful，good→beneficial/advantageous，lots of→numerous/considerable'
+      - '在FCE考试中，使用非人称结构会为你在"语言范围"方面加分。'
+      - '不要过度——你的议论文应该听起来自然，不是机器人。将正式结构与清晰简单的句子混合。'
+
+    practicePreview:
+      - id: Q10-L02-P01
+        question: 'Which sentence is the most formal?'
+        questionZh: '哪个句子最正式？'
+        options:
+          A: 'Lots of people think school uniforms are good.'
+          B: 'It is generally accepted that school uniforms promote equality.'
+          C: 'Everyone knows uniforms are the best thing ever.'
+        answer: 'B'
+        explanation: 'B uses an impersonal passive ("It is generally accepted") and formal vocabulary. A uses "lots of" (informal) and C uses "everyone knows" and exaggeration.'
+        explanationZh: 'B使用非人称被动语态（"It is generally accepted"）和正式词汇。A使用"lots of"（非正式），C使用"everyone knows"和夸张。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Hedging — The Art of Not Overgeneralising
+  # ─────────────────────────────────────────────
+  - id: Q10-L03
+    title: 'Hedging — Avoid Absolute Claims'
+    titleZh: '委婉表达 — 避免绝对论断'
+
+    introduction: |
+      Aria writes two sentences on the board:
+
+      Sentence A: "Homework is ALWAYS harmful and EVERY student hates it."
+      Sentence B: "Homework TENDS TO be less effective when it is repetitive, and MANY students
+      report feeling stressed by excessive assignments."
+
+      "Which one would a university professor write?" she asks. "B, of course! Sentence A uses
+      absolute words — always, every, never. These are almost always wrong in academic writing
+      because there are ALWAYS exceptions."
+
+      "Hedging means softening your claims so they are accurate and fair. Instead of 'all
+      students hate homework,' say 'many students find homework frustrating.' Instead of
+      'screen time always causes harm,' say 'excessive screen time TENDS TO have negative
+      effects.' This small change makes your writing much more credible."
+    introductionZh: |
+      Aria在白板上写了两个句子：
+
+      句子A："Homework is ALWAYS harmful and EVERY student hates it."
+      句子B："Homework TENDS TO be less effective when it is repetitive, and MANY students
+      report feeling stressed by excessive assignments."
+
+      "哪个是大学教授会写的？"她问。"当然是B！句子A使用了绝对词——always、every、never。
+      在学术写作中这些几乎总是错误的，因为总有例外。"
+
+      "委婉表达意味着软化你的论断，使它们准确和公平。与其说'所有学生都讨厌作业'，
+      不如说'许多学生觉得作业令人沮丧'。与其说'屏幕时间总是造成伤害'，不如说
+      '过多的屏幕时间往往有负面影响'。这个小改变使你的写作更加可信。"
+
+    rules:
+      - pattern: 'Tend to / Seem to / Appear to'
+        meaning: 'Replace "always" with hedging verbs that show a general pattern without claiming it is universal'
+        meaningZh: '用委婉动词替换"always"，表示一般模式而不声称它是普遍的'
+        examples:
+          - base: 'Children always learn better when they enjoy the subject.'
+            transformed: 'Children tend to learn better when they enjoy the subject.'
+            sentence: '"Tend to" shows a general pattern — not every child, but most.'
+            sentenceZh: '"Tend to"显示一般模式——不是每个孩子，但大多数。'
+
+      - pattern: 'Qualifiers (many, most, some, in many cases)'
+        meaning: 'Replace "all" and "every" with quantifiers that allow for exceptions'
+        meaningZh: '用允许例外的量词替换"all"和"every"'
+        examples:
+          - base: 'All parents support homework.'
+            transformed: 'The majority of parents support some form of homework.'
+            sentence: '"The majority of" is more precise than "all" and allows for exceptions.'
+            sentenceZh: '"The majority of"比"all"更精确，允许有例外。'
+
+      - pattern: 'Modal hedging (may, might, could, can)'
+        meaning: 'Use modal verbs to show possibility rather than certainty'
+        meaningZh: '使用情态动词表示可能性而非确定性'
+        examples:
+          - base: 'Screen time causes sleep problems.'
+            transformed: 'Excessive screen time may contribute to sleep difficulties.'
+            sentence: '"May contribute to" is hedged. "Causes" is too absolute.'
+            sentenceZh: '"May contribute to"是委婉的。"Causes"太绝对了。'
+
+    tips:
+      - 'Words to AVOID in essays: always, never, every, all, none, everyone, nobody'
+      - 'Words to USE instead: tend to, generally, in many cases, the majority of, not necessarily'
+      - 'Hedging does NOT mean you have no opinion. You still state your view clearly — but you avoid making claims that are too broad.'
+    tipsZh:
+      - '议论文中要避免的词：always、never、every、all、none、everyone、nobody'
+      - '替代词：tend to、generally、in many cases、the majority of、not necessarily'
+      - '委婉表达不意味着你没有观点。你仍然清楚地陈述你的观点——但你避免做出过于宽泛的论断。'
+
+    practicePreview:
+      - id: Q10-L03-P01
+        question: 'Which sentence is correctly hedged?'
+        questionZh: '哪个句子正确使用了委婉表达？'
+        options:
+          A: 'Every child who plays video games becomes violent.'
+          B: 'Some research suggests that excessive gaming may be linked to aggressive behaviour in certain cases.'
+          C: 'Video games never have any negative effects.'
+        answer: 'B'
+        explanation: 'B uses "some research suggests," "may be linked," and "in certain cases" — all hedging devices. A and C make absolute claims.'
+        explanationZh: 'B使用了"some research suggests"、"may be linked"和"in certain cases"——都是委婉手法。A和C做出了绝对论断。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: The Art of Concession
+  # ─────────────────────────────────────────────
+  - id: Q10-L04
+    title: 'Concession — Acknowledge, Then Counter'
+    titleZh: '让步 — 先承认，后反驳'
+
+    introduction: |
+      Aria draws a seesaw on the board. "A concession is like a seesaw," she explains. "You
+      let the other side go up for a moment — you admit they have a point. Then you push your
+      side back up — you explain why your argument is still stronger."
+
+      "Why bother admitting the other side has a point? Because it shows the examiner THREE
+      things: 1) You have thought deeply about the topic, 2) You are fair and honest,
+      3) You are confident enough in your own argument to acknowledge the opposition without
+      feeling threatened."
+
+      "The magic phrases are: 'Admittedly,' 'While it is true that,' 'I concede that,' and
+      'Although.' Each one introduces the opposing point before you counter it with 'However,'
+      'Nevertheless,' or 'Despite this.'"
+    introductionZh: |
+      Aria在白板上画了一个跷跷板。"让步就像跷跷板，"她解释道。"你让对方暂时上升——
+      你承认他们有道理。然后你把你的一方推回去——你解释为什么你的论点仍然更强。"
+
+      "为什么要承认对方有道理？因为它向考官展示了三件事：1）你对这个话题有深入的思考，
+      2）你是公平和诚实的，3）你对自己的论点足够自信，承认反对意见而不感到威胁。"
+
+      "魔法短语是：'Admittedly，''While it is true that，''I concede that，'和'Although。'
+      每一个都在你用'However，''Nevertheless，'或'Despite this'反驳之前引入对立观点。"
+
+    rules:
+      - pattern: 'Admittedly + However'
+        meaning: 'Use "Admittedly" to concede a point, then "However" to counter it'
+        meaningZh: '用"Admittedly"让步一个观点，然后用"However"反驳它'
+        examples:
+          - base: 'Homework is boring but necessary.'
+            transformed: 'Admittedly, some homework can be repetitive and uninspiring. However, this does not mean homework itself is without value — the solution is to make it more creative and meaningful.'
+            sentence: '"Admittedly" concedes, "However" counters, and the writer offers a solution.'
+            sentenceZh: '"Admittedly"让步，"However"反驳，作者还提供了解决方案。'
+
+      - pattern: 'While it is true that + main clause'
+        meaning: 'Acknowledge the opposing point in a subordinate clause, then present your argument as the main clause'
+        meaningZh: '在从句中承认对立观点，然后将你的论点作为主句呈现'
+        examples:
+          - base: 'Coding is hard to teach but worth it.'
+            transformed: 'While it is true that not all schools have the resources to teach coding effectively, the long-term benefits for students far outweigh the initial costs.'
+            sentence: '"While it is true that..." gives the opposing side its due before the main argument.'
+            sentenceZh: '"While it is true that..."在主要论点之前给予对方应有的认可。'
+
+    tips:
+      - 'Use at least ONE concession in every essay. It is one of the easiest ways to improve your score.'
+      - 'Place your concession in the second body paragraph, just before you counter it.'
+      - 'The concession should be the OTHER SIDE''S STRONGEST point. Addressing a weak point is not impressive.'
+    tipsZh:
+      - '在每篇议论文中至少使用一个让步。这是提高分数最简单的方法之一。'
+      - '将让步放在第二个正文段，就在你反驳之前。'
+      - '让步应该是对方最强的观点。回应一个弱点并不令人印象深刻。'
+
+    practicePreview:
+      - id: Q10-L04-P01
+        question: 'Which sentence contains the best concession?'
+        questionZh: '哪个句子包含最好的让步？'
+        options:
+          A: 'People who disagree with me are completely wrong.'
+          B: 'Admittedly, there are valid concerns about the cost of school pets. However, these can be addressed through fundraising and choosing low-maintenance animals.'
+          C: 'Some people think differently, but I do not care.'
+        answer: 'B'
+        explanation: 'B acknowledges a "valid concern" (cost), concedes it, and then counters with a practical solution. A and C dismiss the opposing view entirely.'
+        explanationZh: 'B承认了一个"合理的担忧"（费用），让步了它，然后用实际的解决方案反驳。A和C完全否定了对立观点。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Connectors — The Glue of Great Writing
+  # ─────────────────────────────────────────────
+  - id: Q10-L05
+    title: 'Connectors — Link Your Ideas Smoothly'
+    titleZh: '连接词 — 流畅地衔接你的想法'
+
+    introduction: |
+      Aria lays out three coloured cards: green for ADDITION, red for CONTRAST, and blue
+      for CONCLUSION.
+
+      "Connectors are the glue that holds your essay together," she says. "Without them, your
+      ideas sit in separate boxes. With them, your essay flows like a river."
+
+      GREEN (Addition): Furthermore, Moreover, In addition, What is more
+      RED (Contrast): However, Nevertheless, On the other hand, Despite, Whereas
+      BLUE (Conclusion): In conclusion, To sum up, On balance, All things considered
+
+      "The most common mistake? Using the WRONG type. 'Furthermore' adds a point — never
+      use it to introduce a contrast. 'However' introduces a contrast — never use it to add
+      a supporting point. Get this right, and your essay will read beautifully."
+    introductionZh: |
+      Aria摆出三张彩色卡片：绿色代表递进，红色代表转折，蓝色代表结论。
+
+      "连接词是把你的议论文粘合在一起的胶水，"她说。"没有它们，你的想法各在各的盒子里。
+      有了它们，你的议论文像河流一样流畅。"
+
+      绿色（递进）：Furthermore, Moreover, In addition, What is more
+      红色（转折）：However, Nevertheless, On the other hand, Despite, Whereas
+      蓝色（结论）：In conclusion, To sum up, On balance, All things considered
+
+      "最常见的错误？使用错误的类型。'Furthermore'添加观点——永远不要用它来引入转折。
+      'However'引入转折——永远不要用它来添加支持性观点。掌握这一点，你的议论文会读起来非常优美。"
+
+    rules:
+      - pattern: 'Addition connectors'
+        meaning: 'Use Furthermore/Moreover/In addition to add a NEW supporting point to the same side of the argument'
+        meaningZh: '使用Furthermore/Moreover/In addition为论证的同一方添加一个新的支持观点'
+        examples:
+          - base: 'Uniforms save time. They also save money.'
+            transformed: 'Uniforms save families time each morning. Furthermore, they can reduce clothing costs by approximately 30% per year.'
+            sentence: '"Furthermore" connects two supporting points on the same side.'
+            sentenceZh: '"Furthermore"连接同一方的两个支持观点。'
+
+      - pattern: 'Contrast connectors'
+        meaning: 'Use However/Nevertheless/On the other hand to introduce the OPPOSING view or a contrasting point'
+        meaningZh: '使用However/Nevertheless/On the other hand来引入对立观点或对比性观点'
+        examples:
+          - base: 'Homework helps revision. But it causes stress.'
+            transformed: 'Homework undoubtedly helps students consolidate their learning. However, excessive homework can lead to stress and reduced well-being.'
+            sentence: '"However" clearly signals that the next point CONTRASTS with the previous one.'
+            sentenceZh: '"However"明确标示下一个观点与上一个形成对比。'
+
+      - pattern: 'Conclusion connectors'
+        meaning: 'Use In conclusion/To sum up/On balance to signal the final paragraph of your essay'
+        meaningZh: '使用In conclusion/To sum up/On balance来标示议论文的最后一段'
+        examples:
+          - base: 'So that is why I think...'
+            transformed: 'On balance, the evidence suggests that a moderate approach to screen time is the wisest path forward.'
+            sentence: '"On balance" is a sophisticated conclusion connector meaning "after considering everything."'
+            sentenceZh: '"On balance"是一个精致的结论连接词，意思是"综合考虑之后。"'
+
+    tips:
+      - 'Use 2-3 connectors per paragraph — no more. Overusing them makes your essay feel mechanical.'
+      - 'Vary your connectors. Do not use "Furthermore" three times. Try "Moreover" or "In addition."'
+      - '"Despite" is followed by a NOUN, not a clause. "Despite the problems" ✓ "Despite there are problems" ✗'
+    tipsZh:
+      - '每段使用2-3个连接词——不要更多。过度使用会让你的议论文感觉机械。'
+      - '变换你的连接词。不要用三次"Furthermore"。试试"Moreover"或"In addition"。'
+      - '"Despite"后面接名词，不接从句。"Despite the problems" ✓ "Despite there are problems" ✗'
+
+    practicePreview:
+      - id: Q10-L05-P01
+        question: 'Which connector is used INCORRECTLY?'
+        questionZh: '哪个连接词使用不正确？'
+        options:
+          A: 'Homework teaches discipline. Furthermore, it helps with revision.'
+          B: 'Homework teaches discipline. However, it helps with revision.'
+          C: 'Homework teaches discipline. In conclusion, it is a valuable tool.'
+        answer: 'B'
+        explanation: '"However" introduces a CONTRAST, but both points support homework. "Furthermore" (addition) is correct here, as in option A.'
+        explanationZh: '"However"引入转折，但两个观点都支持作业。"Furthermore"（递进）在这里是正确的，如选项A。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: The Power of a Strong Conclusion
+  # ─────────────────────────────────────────────
+  - id: Q10-L06
+    title: 'Conclusions — End with Impact'
+    titleZh: '结论 — 以影响力结束'
+
+    introduction: |
+      Aria stands at the edge of the Arena and looks out over the audience. "Your conclusion
+      is the last thing the examiner reads," she says. "It is your final chance to leave a
+      lasting impression."
+
+      "A weak conclusion just repeats the introduction. A STRONG conclusion does three things:
+      1) It briefly summarises your position — one sentence is enough. 2) It shows you have
+      considered both sides — perhaps suggesting a compromise. 3) It ends with a MEMORABLE
+      sentence — a rhetorical question, a thought-provoking statement, or a vivid image."
+
+      She writes on the board: "The examiner reads 200 essays. Make yours the one they
+      remember at the end of the day."
+    introductionZh: |
+      Aria站在竞技场边缘，俯瞰观众。"你的结论是考官读到的最后一部分，"她说。
+      "这是你留下持久印象的最后机会。"
+
+      "弱的结论只是重复引言。强的结论做三件事：1）简要总结你的立场——一句话就够了。
+      2）表明你考虑了双方——也许提出一个妥协方案。3）以一个令人难忘的句子结束——
+      一个反问句、一个发人深省的陈述或一个生动的画面。"
+
+      她在白板上写道："考官要读200篇议论文。让你的议论文成为他们在一天结束时记住的那一篇。"
+
+    rules:
+      - pattern: 'Summary + Position'
+        meaning: 'Briefly restate your opinion without repeating the exact words from the introduction'
+        meaningZh: '简要重述你的观点，不要重复引言中的确切用词'
+        examples:
+          - base: 'In conclusion, I think homework is important.'
+            transformed: 'On balance, the evidence clearly supports the view that homework, when designed thoughtfully, remains a valuable part of education.'
+            sentence: '"On balance" + "the evidence supports" + rephrased opinion = strong summary.'
+            sentenceZh: '"On balance" + "the evidence supports" + 重新措辞的观点 = 强有力的总结。'
+
+      - pattern: 'Memorable final sentence'
+        meaning: 'End with a rhetorical question, a thought-provoking statement, or a call to action'
+        meaningZh: '以反问句、发人深省的陈述或行动号召结束'
+        examples:
+          - base: 'That is why homework should exist.'
+            transformed: 'The question is not whether children should learn at home, but how we can make that learning joyful, meaningful, and fair.'
+            sentence: 'The rhetorical "question" technique reframes the debate and leaves the reader thinking.'
+            sentenceZh: '反问"问题"技巧重新定义了辩论，让读者思考。'
+          - base: 'So schools should have pets.'
+            transformed: 'Perhaps the greatest lesson a classroom pet can teach is one that no textbook contains: how to care for something other than yourself.'
+            sentence: 'This ending creates a vivid image and elevates the argument to a deeper level.'
+            sentenceZh: '这个结尾创造了一个生动的画面，将论点提升到更深层次。'
+
+    tips:
+      - 'Never introduce NEW arguments in the conclusion. It should only summarise and close.'
+      - 'Try three ending techniques: 1) Rhetorical question 2) Thought-provoking statement 3) Compromise suggestion'
+      - 'Your final sentence should be something the reader can still hear in their mind after they stop reading.'
+    tipsZh:
+      - '永远不要在结论中引入新论点。它应该只是总结和结束。'
+      - '尝试三种结尾技巧：1）反问句 2）发人深省的陈述 3）妥协建议'
+      - '你的最终句子应该是读者停止阅读后仍能在脑海中回响的。'
+
+    practicePreview:
+      - id: Q10-L06-P01
+        question: 'Which is the best conclusion for an essay about screen time?'
+        questionZh: '以下哪个是关于屏幕时间的议论文最好的结论？'
+        options:
+          A: 'In conclusion, screen time is bad. That is my opinion.'
+          B: 'In conclusion, screens are tools. Like any tool, they can be used well or badly. The responsibility lies not with the technology itself, but with the adults who teach children to use it wisely.'
+          C: 'In conclusion, I forgot to mention that video games can also improve hand-eye coordination.'
+        answer: 'B'
+        explanation: 'B summarises (tools), offers a thoughtful metaphor, and ends with a memorable final sentence. A is too simple, C introduces a new point (forbidden in conclusions).'
+        explanationZh: 'B总结了（工具），提供了一个深思熟虑的隐喻，以令人难忘的最终句子结束。A太简单，C引入了新观点（在结论中不允许）。'

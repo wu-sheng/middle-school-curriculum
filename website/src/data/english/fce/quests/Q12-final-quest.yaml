@@ -1,0 +1,628 @@
+id: Q12
+title: 'Final Quest'
+titleZh: '终极冒险'
+subtitle: 'Prepare for the real FCE exam with confidence!'
+subtitleZh: '满怀信心地为真正的FCE考试做准备！'
+month: 12
+fceMapping: 'Full FCE Exam Strategy'
+
+theme:
+  setting: 'The Grand Exam Arena — a magical stadium where young champions prepare for the ultimate challenge'
+  settingZh: '考试大竞技场——一个神奇的体育场，年轻的冠军们在这里为终极挑战做准备'
+  mascot: 'Captain Quill, a wise owl who has coached hundreds of students through their exams'
+  mascotZh: 'Quill 队长，一只智慧的猫头鹰，已经指导数百名学生通过考试'
+
+objectives:
+  - 'Master time management across all exam papers'
+  - 'Apply strategic reading techniques to find answers efficiently'
+  - 'Use listening strategies to catch key information on the first play'
+  - 'Plan and structure writing tasks under timed conditions'
+  - 'Develop a systematic error-checking routine'
+  - 'Build confidence and manage exam-day nerves'
+
+objectivesZh:
+  - '掌握所有考试试卷的时间管理'
+  - '运用策略性阅读技巧高效找到答案'
+  - '使用听力策略在第一次播放时抓住关键信息'
+  - '在限时条件下规划和组织写作任务'
+  - '建立系统化的错误检查流程'
+  - '建立信心并管理考试当天的紧张情绪'
+
+lessons:
+  # ─────────────────────────────────────────────
+  # Lesson 1: Time Management
+  # ─────────────────────────────────────────────
+  - id: Q12-L01
+    title: 'Time Management — Beat the Clock'
+    titleZh: '时间管理 — 战胜时钟'
+
+    introduction: |
+      Captain Quill taps the giant clock on the arena wall. "The FCE exam has four papers,"
+      he announces, "and each one has a strict time limit. The biggest mistake students
+      make is spending too long on difficult questions and running out of time for
+      easy ones. Today, I will teach you how to beat the clock."
+
+      He writes on the board:
+
+      READING & USE OF ENGLISH: 1 hour 15 minutes (52 questions)
+      WRITING: 1 hour 20 minutes (2 tasks)
+      LISTENING: about 40 minutes (30 questions)
+      SPEAKING: 14 minutes (4 parts)
+
+      "The secret," he says, "is to know BEFORE the exam exactly how many minutes
+      you will spend on each part. If you have a plan, you will never panic."
+
+      He holds up a stopwatch. "Let us create your personal time plan."
+    introductionZh: |
+      Quill 队长敲了敲竞技场墙上的巨大时钟。"FCE考试有四份试卷，"他宣布说，
+      "每一份都有严格的时间限制。学生犯的最大错误是在困难的题目上花太长时间，
+      然后在简单的题目上却没有时间了。今天，我将教你如何战胜时钟。"
+
+      他在黑板上写道：
+
+      阅读与语言运用：1小时15分钟（52道题）
+      写作：1小时20分钟（2项任务）
+      听力：大约40分钟（30道题）
+      口语：14分钟（4个部分）
+
+      "秘诀是，"他说，"在考试前就确切地知道你将在每个部分花多少分钟。
+      如果你有计划，你就永远不会恐慌。"
+
+      他举起一个秒表。"让我们制定你的个人时间计划。"
+
+    rules:
+      - pattern: 'Reading & UoE Time Split'
+        meaning: 'Parts 1-4 (UoE): ~30 min. Parts 5-7 (Reading): ~45 min. Roughly 1.5 min per UoE question, 2 min per reading question.'
+        meaningZh: '第1-4部分（语言运用）：约30分钟。第5-7部分（阅读）：约45分钟。每道语言运用题约1.5分钟，每道阅读题约2分钟。'
+        examples:
+          - base: 'I spent 20 minutes on one reading text.'
+            transformed: 'I spent about 15 minutes on the reading text (Part 5) and moved on, even though I was unsure about one question.'
+            sentence: 'Setting a time limit per section prevents you from getting stuck.'
+            sentenceZh: '为每个部分设定时间限制可以防止你卡在某处。'
+
+      - pattern: 'Writing Time Split'
+        meaning: 'Task 1 (essay): ~40 min. Task 2 (choice): ~40 min. Each task: 5 min planning + 30 min writing + 5 min checking.'
+        meaningZh: '任务1（议论文）：约40分钟。任务2（选做）：约40分钟。每项任务：5分钟规划+30分钟写作+5分钟检查。'
+        examples:
+          - base: 'I started writing immediately.'
+            transformed: 'I spent 5 minutes planning my essay outline before writing a single word.'
+            sentence: 'Planning saves time because you know what each paragraph will say.'
+            sentenceZh: '规划节省时间，因为你知道每段要写什么。'
+
+      - pattern: 'The Skip-and-Return Rule'
+        meaning: 'If a question takes more than 2 minutes, mark it and move on. Return to it AFTER finishing the easier questions.'
+        meaningZh: '如果一道题超过2分钟，标记它然后继续。在完成较简单的题目后再回来。'
+        examples:
+          - base: 'I was stuck on question 15 for 5 minutes.'
+            transformed: 'I circled question 15 and moved on to question 16. I came back to it at the end with fresh eyes — and the answer came to me!'
+            sentence: 'Fresh eyes often solve problems that seemed impossible before.'
+            sentenceZh: '重新审视往往能解决之前看似不可能的问题。'
+
+    tips:
+      - 'Wear a watch to the exam — you cannot always see the clock on the wall.'
+      - 'Write your time targets at the top of each section: "Part 5: finish by 10:30."'
+      - 'Never leave a multiple-choice question blank — an educated guess is better than no answer.'
+      - 'If you finish early, use the extra time to CHECK, not to change answers randomly.'
+    tipsZh:
+      - '戴手表去考试——你不总能看到墙上的时钟。'
+      - '在每个部分的顶部写下你的时间目标："第5部分：10:30前完成。"'
+      - '永远不要留空选择题——有根据的猜测比不作答好。'
+      - '如果你提前完成，用多余的时间检查，而不是随机更改答案。'
+
+    practicePreview:
+      - id: Q12-L01-P01
+        question: |
+          You have 75 minutes for Reading & Use of English. How should you split your time?
+        questionZh: |
+          你有75分钟做阅读与语言运用。你应该如何分配时间？
+        options:
+          A: 'Spend 75 minutes on reading and skip Use of English'
+          B: 'About 30 minutes on Parts 1-4 (UoE) and 45 minutes on Parts 5-7 (Reading)'
+          C: 'Spend equal time on every question regardless of difficulty'
+          D: 'Start with Part 7 and work backwards'
+        answer: 'B'
+        explanation: 'Parts 1-4 (Use of English) should take about 30 minutes, leaving 45 minutes for the three longer reading texts in Parts 5-7.'
+        explanationZh: '第1-4部分（语言运用）应该花约30分钟，留下45分钟给第5-7部分的三篇较长阅读文章。'
+
+      - id: Q12-L01-P02
+        question: |
+          You have been stuck on a reading question for 3 minutes. What should you do?
+        questionZh: |
+          你在一道阅读题上卡了3分钟。你应该怎么做？
+        options:
+          A: 'Keep trying until you find the answer'
+          B: 'Leave it blank and never come back'
+          C: 'Mark it, make your best guess, and move on — return later if time allows'
+          D: 'Ask the examiner for a hint'
+        answer: 'C'
+        explanation: 'The skip-and-return strategy ensures you do not waste time on one question while missing easier ones later.'
+        explanationZh: '跳过并回来的策略确保你不会在一道题上浪费时间，而错过后面更简单的题目。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 2: Reading Strategy
+  # ─────────────────────────────────────────────
+  - id: Q12-L02
+    title: 'Reading Strategy — Read Smart, Not Slow'
+    titleZh: '阅读策略 — 聪明地读，而非慢慢读'
+
+    introduction: |
+      Captain Quill opens a thick book. "Many students read every word of every passage
+      carefully from start to finish," he says. "But that is NOT how you should tackle
+      the FCE reading paper. You need to read SMART."
+
+      He draws three reading modes on the board:
+
+      1. SKIMMING — Read quickly to get the general idea (30 seconds per text)
+      2. SCANNING — Search for specific information (look for names, numbers, key words)
+      3. CLOSE READING — Read carefully for detail (only the relevant paragraph)
+
+      "For each question, first decide WHICH mode you need. Part 5 (multiple choice)
+      needs close reading. Part 6 (gapped text) needs understanding of text structure.
+      Part 7 (multiple matching) needs scanning."
+
+      "The golden rule: ALWAYS read the questions BEFORE the passage. Then you know
+      what to look for."
+    introductionZh: |
+      Quill 队长打开一本厚书。"许多学生从头到尾仔细阅读每篇文章的每个词，"
+      他说。"但这不是你应该对付FCE阅读试卷的方式。你需要聪明地读。"
+
+      他在黑板上画了三种阅读模式：
+
+      1. 略读——快速阅读以获取大意（每篇30秒）
+      2. 扫读——搜索特定信息（寻找名字、数字、关键词）
+      3. 精读——仔细阅读以获取细节（只读相关段落）
+
+      "对于每道题，首先决定你需要哪种模式。第5部分（选择题）需要精读。
+      第6部分（补全文章）需要理解文章结构。第7部分（多项匹配）需要扫读。"
+
+      "黄金法则：在阅读文章之前，一定先读题目。这样你就知道要找什么了。"
+
+    rules:
+      - pattern: 'Read Questions First'
+        meaning: 'Before reading the passage, read ALL the questions. Underline key words in each question so you know what information to look for.'
+        meaningZh: '在阅读文章之前，先读所有题目。在每道题中划出关键词，这样你就知道要寻找什么信息。'
+        examples:
+          - base: 'I read the whole passage first, then looked at the questions.'
+            transformed: 'I read the questions first, underlined "reason why the author changed schools," then scanned the passage for that information.'
+            sentence: 'Reading questions first turns passive reading into active searching.'
+            sentenceZh: '先读题目可以把被动阅读变成主动搜索。'
+
+      - pattern: 'Part 6 Strategy: Gapped Text'
+        meaning: 'Look at the sentences before and after each gap. Find linking words, pronouns, and topic connections that show which removed paragraph fits.'
+        meaningZh: '看每个空缺前后的句子。找到连接词、代词和主题联系，来判断哪个被移除的段落适合。'
+        examples:
+          - base: 'I guessed which paragraph goes in each gap.'
+            transformed: 'The sentence before the gap mentioned "this new discovery." I looked for a removed paragraph that started by explaining what the discovery was.'
+            sentence: 'Linking words and pronouns are your best clues for gapped text questions.'
+            sentenceZh: '连接词和代词是补全文章题最好的线索。'
+
+      - pattern: 'Part 7 Strategy: Multiple Matching'
+        meaning: 'For each question, identify the KEY PHRASE, then scan ALL texts quickly for paraphrases of that phrase. The answer will use different words with the same meaning.'
+        meaningZh: '对于每道题，找出关键短语，然后快速扫描所有文章寻找该短语的改述。答案会使用不同的词表达相同的意思。'
+        examples:
+          - base: 'The question asks "which person felt nervous." I looked for the word "nervous."'
+            transformed: 'The question asks "which person felt nervous." I looked for words like "anxious," "worried," "butterflies in my stomach" — the answer used "my hands were trembling."'
+            sentence: 'FCE answers almost NEVER use the exact same words as the question — look for paraphrases.'
+            sentenceZh: 'FCE答案几乎从不使用与题目完全相同的词——寻找改述。'
+
+    tips:
+      - 'For Part 5, the questions follow the order of the text — Q1 is answered near the beginning, Q6 near the end.'
+      - 'For Part 6, do the easiest gaps first. Once you place a paragraph, cross it out.'
+      - 'For Part 7, highlight key words in EVERY question before scanning the texts.'
+      - 'If two options seem correct, look for the one that is supported by SPECIFIC words in the text, not just general meaning.'
+    tipsZh:
+      - '第5部分的题目按文章顺序排列——第1题的答案在开头附近，第6题在结尾附近。'
+      - '第6部分，先做最简单的空缺。一旦放入一个段落，就划掉它。'
+      - '第7部分，在扫描文章前先在每道题中高亮关键词。'
+      - '如果两个选项似乎都正确，寻找有文中具体词语支持的那个，而不仅仅是大意。'
+
+    practicePreview:
+      - id: Q12-L02-P01
+        question: |
+          In Part 7 (multiple matching), the question says "Which person was disappointed by the result?"
+          Which of these phrases from the texts would be the most likely answer?
+        questionZh: |
+          在第7部分（多项匹配）中，题目说"哪个人对结果感到失望？"
+          以下哪个文本中的短语最可能是答案？
+        options:
+          A: '"I was thrilled when I heard the news."'
+          B: '"The outcome was not at all what I had hoped for."'
+          C: '"Everyone congratulated me afterwards."'
+          D: '"I had always expected it to be easy."'
+        answer: 'B'
+        explanation: '"The outcome was not at all what I had hoped for" is a paraphrase of "disappointed by the result." The exam uses different words to express the same meaning.'
+        explanationZh: '"The outcome was not at all what I had hoped for"是"对结果感到失望"的改述。考试用不同的词来表达相同的意思。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 3: Listening Strategy
+  # ─────────────────────────────────────────────
+  - id: Q12-L03
+    title: 'Listening Strategy — First Play Counts'
+    titleZh: '听力策略 — 第一遍至关重要'
+
+    introduction: |
+      Captain Quill puts on headphones. "In the listening paper," he explains, "you hear
+      each recording TWICE. But here is the thing — good candidates get most of their
+      answers on the FIRST play. The second play is just for checking."
+
+      He holds up five fingers. "My five rules for listening success:"
+
+      "ONE: Read the questions during the pause BEFORE the recording starts. Predict
+      what kind of answer you need — a name? a number? a reason?
+
+      TWO: Listen for PARAPHRASES. The recording will say the same thing as the
+      correct answer, but using different words.
+
+      THREE: Watch out for DISTRACTORS — the recording will mention ALL the answer
+      options, but only one is correct. Listen for words like 'actually,' 'in fact,'
+      'but,' 'however' — they signal the real answer.
+
+      FOUR: Write something for EVERY question on the first play, even if you
+      are not sure. You can change it on the second play.
+
+      FIVE: For Part 2 (sentence completion), write the EXACT words you hear.
+      Spelling must be correct."
+    introductionZh: |
+      Quill 队长戴上耳机。"在听力试卷中，"他解释说，"你会听到每段录音两遍。
+      但关键是——好的考生在第一遍就能得到大部分答案。第二遍只是为了检查。"
+
+      他举起五根手指。"我的听力成功五条规则："
+
+      "第一：在录音开始前的停顿时间阅读题目。预测你需要什么类型的答案——
+      一个名字？一个数字？一个原因？
+
+      第二：注意改述。录音会说和正确答案相同的事，但使用不同的词。
+
+      第三：小心干扰项——录音会提到所有的答案选项，但只有一个是正确的。
+      注意'actually''in fact''but''however'等词——它们标志着真正的答案。
+
+      第四：第一遍播放时为每道题写点什么，即使你不确定。
+      你可以在第二遍时更改。
+
+      第五：第2部分（句子填空），写下你听到的确切词语。拼写必须正确。"
+
+    rules:
+      - pattern: 'Pre-listening Prediction'
+        meaning: 'Use the pause time to read questions, underline key words, and predict what type of answer is needed (number, name, adjective, reason).'
+        meaningZh: '利用停顿时间阅读题目，划出关键词，预测需要什么类型的答案（数字、名字、形容词、原因）。'
+        examples:
+          - base: 'I waited for the recording to start without reading the questions.'
+            transformed: 'During the 45-second pause, I read all 8 questions for Part 2 and predicted that Q11 needs a type of animal and Q12 needs a number.'
+            sentence: 'Prediction turns listening from passive to active.'
+            sentenceZh: '预测把听力从被动变为主动。'
+
+      - pattern: 'Distractor Awareness'
+        meaning: 'The recording often mentions wrong answers before correcting itself. Listen for signal words: "actually," "in fact," "but," "however," "well, no," "on second thought."'
+        meaningZh: '录音经常先提到错误答案然后纠正自己。注意信号词："actually""in fact""but""however""well, no""on second thought"。'
+        examples:
+          - base: 'I heard "Tuesday" and chose B.'
+            transformed: 'I heard "I thought it was Tuesday, but actually it turned out to be Wednesday." The signal word "actually" told me the real answer is Wednesday, not Tuesday.'
+            sentence: 'Distractors test whether you listen to the WHOLE sentence, not just the first word you recognise.'
+            sentenceZh: '干扰项测试你是否听了整个句子，而不仅仅是你认出的第一个词。'
+
+    tips:
+      - 'Part 1: Each extract is played twice. Use the first play to choose your answer and the second to confirm.'
+      - 'Part 2: Write 1-3 words maximum. Do not write whole sentences.'
+      - 'Part 3: The speakers express opinions — listen for HOW they feel, not just WHAT they say.'
+      - 'Part 4: The seven questions relate to seven short extracts. Stay focused during transitions.'
+    tipsZh:
+      - '第1部分：每段录音播放两遍。用第一遍选择答案，第二遍确认。'
+      - '第2部分：最多写1-3个词。不要写整个句子。'
+      - '第3部分：说话者表达观点——听他们的感受，而不仅仅是他们说了什么。'
+      - '第4部分：七道题对应七段短录音。在过渡时保持注意力。'
+
+    practicePreview:
+      - id: Q12-L03-P01
+        question: |
+          You hear: "I was going to take the bus, but in the end I decided to walk because the weather was so nice."
+          How did the speaker travel?
+        questionZh: |
+          你听到："I was going to take the bus, but in the end I decided to walk because the weather was so nice."
+          说话者是怎么出行的？
+        options:
+          A: 'By bus'
+          B: 'On foot'
+          C: 'By car'
+        answer: 'B'
+        explanation: '"Was going to take the bus" is the distractor. "But in the end I decided to walk" gives the real answer. "But" is the signal word.'
+        explanationZh: '"Was going to take the bus"是干扰项。"But in the end I decided to walk"给出了真正的答案。"But"是信号词。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 4: Writing Planning
+  # ─────────────────────────────────────────────
+  - id: Q12-L04
+    title: 'Writing Planning — The 5-Minute Outline'
+    titleZh: '写作规划 — 5分钟大纲'
+
+    introduction: |
+      Captain Quill holds up two essays. "Both of these students had the same amount of
+      time," he says. "Student A started writing immediately and ran out of ideas in
+      paragraph two. Student B spent five minutes making an outline, then wrote
+      smoothly from start to finish. Guess who scored higher?"
+
+      He taps the outline. "FIVE MINUTES of planning saves you TEN MINUTES of
+      struggling later. Here is my planning template:"
+
+      "Step 1: Read the task carefully. Underline what you MUST include.
+      Step 2: Brainstorm 3-4 main points (30 seconds).
+      Step 3: Organise them into paragraphs:
+        - Introduction: State your opinion or introduce the topic
+        - Body 1: First main point + example
+        - Body 2: Second main point + example (or opposing view)
+        - Conclusion: Summarise and give final thought
+      Step 4: Note 2-3 advanced structures you want to use
+        (conditional, passive, cleft sentence, relative clause).
+      Step 5: Start writing!"
+
+      "This works for essays, reviews, stories, AND articles."
+    introductionZh: |
+      Quill 队长举起两篇作文。"这两个学生有相同的时间，"他说。
+      "学生A立即开始写，在第二段就没有想法了。学生B花了五分钟做大纲，
+      然后从头到尾写得很流畅。猜猜谁得分更高？"
+
+      他敲了敲大纲。"5分钟的规划能为你节省10分钟的挣扎。这是我的规划模板："
+
+      "第1步：仔细阅读任务。划出你必须包含的内容。
+      第2步：头脑风暴3-4个要点（30秒）。
+      第3步：将它们组织成段落：
+        - 引言：陈述你的观点或介绍话题
+        - 正文1：第一个要点+例子
+        - 正文2：第二个要点+例子（或对立观点）
+        - 结论：总结并给出最终想法
+      第4步：记下你想使用的2-3个高级结构
+        （条件句、被动语态、强调句、定语从句）。
+      第5步：开始写！"
+
+      "这对议论文、评论、故事和文章都适用。"
+
+    rules:
+      - pattern: 'The Must-Include Check'
+        meaning: 'Every FCE writing task tells you what to include. Read the task TWICE and underline all requirements. Check you have covered EVERY point before submitting.'
+        meaningZh: '每个FCE写作任务都告诉你要包含什么。读任务两遍并划出所有要求。提交前检查你是否涵盖了每个要点。'
+        examples:
+          - base: 'Write an essay about technology.'
+            transformed: 'The task says: "In your essay, you should (1) discuss the advantages of technology, (2) discuss the disadvantages, and (3) give your own opinion." I must include ALL THREE points.'
+            sentence: 'Missing a required point is one of the fastest ways to lose marks in FCE writing.'
+            sentenceZh: '遗漏一个必需的要点是FCE写作中失分最快的方式之一。'
+
+      - pattern: 'Word Count Awareness'
+        meaning: 'FCE Writing asks for 140-190 words. Under 120 loses marks. Over 220 means you are writing too much and wasting time. Aim for 160-180.'
+        meaningZh: 'FCE写作要求140-190词。少于120会扣分。超过220意味着你写太多浪费时间。目标160-180词。'
+        examples:
+          - base: 'I wrote 250 words because I had a lot to say.'
+            transformed: 'I planned 4 paragraphs of about 40-45 words each, totalling approximately 170 words — right in the target range.'
+            sentence: 'Quality matters more than quantity. A well-structured 170-word essay scores higher than a rambling 250-word one.'
+            sentenceZh: '质量比数量更重要。一篇结构良好的170词文章比一篇啰嗦的250词文章得分更高。'
+
+    tips:
+      - 'For essays: always acknowledge the opposing view ("While some people argue...") — it shows maturity.'
+      - 'For stories: plan your ending FIRST, then write towards it. Stories with surprise endings score well.'
+      - 'For reviews: use the four-part structure (Introduction, Summary, Opinion, Recommendation).'
+      - 'Count your words roughly every two paragraphs so you stay on track.'
+    tipsZh:
+      - '议论文：总是承认对立观点（"虽然有些人认为……"）——这显示成熟。'
+      - '故事：先规划你的结局，然后朝着它写。有出人意料结局的故事得分好。'
+      - '评论：使用四段式结构（引言、概要、评价、推荐）。'
+      - '大约每两段数一次字数，这样你能保持在目标范围内。'
+
+    practicePreview:
+      - id: Q12-L04-P01
+        question: |
+          A student writes this plan for an essay about school uniforms:
+          - Para 1: I think uniforms are good
+          - Para 2: Uniforms save money
+          - Para 3: In conclusion, uniforms are good
+
+          What is missing from this plan?
+        questionZh: |
+          一个学生为关于校服的作文写了这个计划：
+          - 第1段：我觉得校服好
+          - 第2段：校服省钱
+          - 第3段：总之，校服好
+
+          这个计划缺少什么？
+        options:
+          A: 'A title'
+          B: 'An opposing viewpoint and a second supporting point'
+          C: 'More than 190 words'
+          D: 'A list of vocabulary to use'
+        answer: 'B'
+        explanation: 'A good essay plan needs at least TWO supporting points and should acknowledge the opposing view. This plan only has one point and no opposing view.'
+        explanationZh: '好的作文计划需要至少两个支持要点，并应承认对立观点。这个计划只有一个要点，没有对立观点。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 5: Error Checking
+  # ─────────────────────────────────────────────
+  - id: Q12-L05
+    title: 'Error Checking — The Final Five Minutes'
+    titleZh: '错误检查 — 最后五分钟'
+
+    introduction: |
+      Captain Quill waves a red pen. "The last five minutes of every paper should be
+      spent CHECKING," he insists. "I have seen students improve their score by 5-10%
+      just by catching silly mistakes in the final check."
+
+      He writes a checklist on the board:
+
+      "CHECK LIST FOR WRITING:"
+      "1. SPELLING — especially double letters (recommend, necessary, occurred)"
+      "2. ARTICLES — a/an/the. Did you forget any? Did you use one incorrectly?"
+      "3. SUBJECT-VERB AGREEMENT — 'She go' → 'She goes'"
+      "4. TENSE CONSISTENCY — Did you switch tenses without a reason?"
+      "5. WORD COUNT — Are you within 140-190 words?"
+
+      "CHECK LIST FOR READING & UoE:"
+      "1. Did you answer EVERY question?"
+      "2. For fill-in-the-blank, does your answer fit GRAMMATICALLY?"
+      "3. For word formation, did you check for negative prefixes (un-, in-, dis-)?"
+
+      "Five minutes of checking can be worth more than five minutes of writing."
+    introductionZh: |
+      Quill 队长挥动一支红笔。"每份试卷的最后五分钟应该用来检查，"
+      他坚持说。"我见过学生仅仅通过在最后检查中发现低级错误就提高了5-10%的分数。"
+
+      他在黑板上写了一份检查清单：
+
+      "写作检查清单："
+      "1. 拼写——特别是双写字母（recommend, necessary, occurred）"
+      "2. 冠词——a/an/the。你有没有忘记？有没有用错？"
+      "3. 主谓一致——'She go' → 'She goes'"
+      "4. 时态一致性——你是否无故切换了时态？"
+      "5. 字数——你在140-190词范围内吗？"
+
+      "阅读与语言运用检查清单："
+      "1. 你回答了每道题吗？"
+      "2. 填空题，你的答案在语法上适合吗？"
+      "3. 词形变换题，你检查了否定前缀（un-, in-, dis-）吗？"
+
+      "五分钟的检查可能比五分钟的写作更有价值。"
+
+    rules:
+      - pattern: 'The Top 10 FCE Spelling Traps'
+        meaning: 'These words are misspelled most often: necessary, separate, definitely, environment, accommodation, immediately, recommend, argument, government, independent.'
+        meaningZh: '这些词最常被拼错：necessary, separate, definitely, environment, accommodation, immediately, recommend, argument, government, independent。'
+        examples:
+          - base: 'I wrote "definately."'
+            transformed: 'I checked my spelling and corrected "definately" to "definitely" — remembering the rule: "It is FINITE-ly definite."'
+            sentence: 'Create memory tricks for words you always misspell.'
+            sentenceZh: '为你总是拼错的词创造记忆技巧。'
+
+      - pattern: 'Grammar Quick Scan'
+        meaning: 'Read each sentence and check: (1) Does the verb match the subject? (2) Is the tense correct? (3) Is the article right? These three checks catch 80% of errors.'
+        meaningZh: '读每个句子并检查：（1）动词和主语一致吗？（2）时态正确吗？（3）冠词对吗？这三项检查能发现80%的错误。'
+        examples:
+          - base: 'The students was very happy about the result.'
+            transformed: 'The students WERE very happy about the result. (Subject "students" is plural → verb must be "were")'
+            sentence: 'Subject-verb agreement errors are the most common mistake in FCE writing.'
+            sentenceZh: '主谓一致错误是FCE写作中最常见的错误。'
+
+    tips:
+      - 'Read your writing BACKWARDS (last sentence first) to spot spelling errors — it forces you to focus on individual words rather than meaning.'
+      - 'Check that every "it" and "they" has a clear reference — ambiguous pronouns lose marks.'
+      - 'For Use of English Part 3 (word formation), always check if the word needs to be NEGATIVE (un-, im-, dis-, in-).'
+      - 'For Part 4 (key word transformation), count the words — you must use 2-5 words including the given word.'
+    tipsZh:
+      - '倒着读你的写作（从最后一句开始）来发现拼写错误——这迫使你关注单个词而不是意思。'
+      - '检查每个"it"和"they"是否有明确的指代——模糊的代词会扣分。'
+      - '语言运用第3部分（词形变换），始终检查是否需要否定形式（un-, im-, dis-, in-）。'
+      - '第4部分（关键词转换），数词数——你必须使用2-5个词，包括给定的词。'
+
+    practicePreview:
+      - id: Q12-L05-P01
+        question: |
+          Find the error in this sentence:
+          "The informations in this article is very useful for students."
+        questionZh: |
+          找出这个句子中的错误：
+          "The informations in this article is very useful for students."
+        options:
+          A: '"informations" should be "information" (uncountable noun)'
+          B: '"is" should be "are"'
+          C: '"useful" should be "usefull"'
+          D: '"for students" should be "to students"'
+        answer: 'A'
+        explanation: '"Information" is an uncountable noun — it has no plural form. "The information in this article IS very useful" is correct.'
+        explanationZh: '"Information"是不可数名词——没有复数形式。"The information in this article IS very useful"才是正确的。'
+
+  # ─────────────────────────────────────────────
+  # Lesson 6: Confidence Building
+  # ─────────────────────────────────────────────
+  - id: Q12-L06
+    title: 'Confidence Building — You Are Ready!'
+    titleZh: '建立信心 — 你准备好了！'
+
+    introduction: |
+      Captain Quill removes his coaching hat and speaks from the heart.
+
+      "We have been on an incredible journey together. Twelve months ago, you started
+      with the basics of word formation. Today, you can read B2-level texts, write
+      structured essays and reviews, understand natural spoken English, and use grammar
+      that many adults struggle with."
+
+      "Before the exam, I want you to remember three things:"
+
+      "ONE: You have already done the hardest part — the preparation. The exam is just
+      a chance to show what you know."
+
+      "TWO: Feeling nervous is NORMAL. A little nervousness actually helps you focus.
+      But if you feel panicked, take three slow breaths: in for 4 seconds, hold for
+      4 seconds, out for 4 seconds."
+
+      "THREE: Even if one question seems impossible, move on. One hard question does
+      not define your whole exam. You have 2,100 words of vocabulary, 1,200 grammar
+      exercises, and months of reading practice behind you."
+
+      "I am so proud of how far you have come. Go into that exam room and show them
+      what you can do. You ARE ready."
+    introductionZh: |
+      Quill 队长摘下教练帽，真诚地说。
+
+      "我们一起经历了一段不可思议的旅程。十二个月前，你从词汇构成的基础开始。
+      今天，你可以阅读B2级别的文章，写出有结构的议论文和评论，理解自然的英语口语，
+      并使用许多成年人都觉得困难的语法。"
+
+      "在考试之前，我希望你记住三件事："
+
+      "第一：你已经完成了最难的部分——准备。考试只是展示你所知道的东西的机会。"
+
+      "第二：感到紧张是正常的。一点紧张实际上有助于集中注意力。
+      但如果你感到恐慌，做三次慢呼吸：吸气4秒，屏住4秒，呼气4秒。"
+
+      "第三：即使有一道题看似不可能，继续前进。一道难题不能定义你整场考试。
+      你有2100个词汇、1200道语法练习和数月的阅读练习作为后盾。"
+
+      "我为你走了这么远而骄傲。走进考场，向他们展示你的能力。你准备好了。"
+
+    rules:
+      - pattern: 'The Night Before'
+        meaning: 'Do NOT cram the night before. Instead: (1) Pack your bag (ID, pencils, watch, water). (2) Review your key vocabulary list briefly. (3) Go to bed early. (4) Tell yourself: "I have prepared well."'
+        meaningZh: '考试前一晚不要临时抱佛脚。而是：（1）收拾好书包（身份证、铅笔、手表、水）。（2）简要复习关键词汇表。（3）早点睡觉。（4）告诉自己："我已经准备好了。"'
+        examples:
+          - base: 'I stayed up until midnight memorising vocabulary.'
+            transformed: 'I reviewed my vocabulary list for 15 minutes, packed my bag, and went to bed at 9 PM feeling calm and ready.'
+            sentence: 'A rested brain performs 30% better than a tired brain — sleep is your secret weapon.'
+            sentenceZh: '休息好的大脑比疲惫的大脑表现好30%——睡眠是你的秘密武器。'
+
+      - pattern: 'The 4-4-4 Breathing Technique'
+        meaning: 'If you feel anxious during the exam: breathe in for 4 seconds, hold for 4 seconds, breathe out for 4 seconds. Repeat 3 times. This activates your calming nervous system.'
+        meaningZh: '如果你在考试中感到焦虑：吸气4秒，屏住4秒，呼气4秒。重复3次。这会激活你的镇静神经系统。'
+        examples:
+          - base: 'I panicked when I saw a hard question and could not think.'
+            transformed: 'I saw a hard question, took three 4-4-4 breaths, then calmly re-read the question and found I could answer it after all.'
+            sentence: 'Panic blocks your thinking. Breathing resets your brain.'
+            sentenceZh: '恐慌会阻塞你的思维。呼吸可以重置你的大脑。'
+
+      - pattern: 'Growth Mindset'
+        meaning: 'Whatever happens in the exam, remember: your English has improved enormously. A score on a test does not define you — the skills you have built will stay with you forever.'
+        meaningZh: '无论考试发生什么，记住：你的英语已经有了巨大的进步。考试分数不能定义你——你建立的技能将永远跟随你。'
+        examples:
+          - base: 'I am worried I will fail.'
+            transformed: 'Even if the exam is harder than expected, I know I have learned so much. I will do my best and be proud of my effort.'
+            sentence: 'The real success is not the certificate — it is the journey of learning.'
+            sentenceZh: '真正的成功不是证书——而是学习的旅程。'
+
+    tips:
+      - 'On exam day, arrive 15 minutes early so you are not rushing.'
+      - 'Bring a bottle of water and a small snack for the break between papers.'
+      - 'If you do not know an answer, use the process of elimination and make an educated guess.'
+      - 'After the exam, celebrate! You have completed an incredible achievement.'
+    tipsZh:
+      - '考试当天提前15分钟到达，这样你不会匆忙。'
+      - '带一瓶水和一小份零食，在试卷之间的休息时间用。'
+      - '如果你不知道答案，用排除法做一个有根据的猜测。'
+      - '考试结束后，庆祝！你完成了一项了不起的成就。'
+
+    practicePreview:
+      - id: Q12-L06-P01
+        question: |
+          What is the best thing to do the night before the exam?
+        questionZh: |
+          考试前一晚最好做什么？
+        options:
+          A: 'Stay up all night memorising vocabulary'
+          B: 'Review briefly, pack your bag, and go to bed early'
+          C: 'Watch TV to relax and forget about the exam'
+          D: 'Read through every grammar rule you have ever learned'
+        answer: 'B'
+        explanation: 'Brief review + preparation + good sleep is the winning formula. Cramming and staying up late will make you tired and less able to concentrate.'
+        explanationZh: '简短复习+准备+充足睡眠是制胜公式。临时抱佛脚和熬夜会让你疲惫，无法集中注意力。'

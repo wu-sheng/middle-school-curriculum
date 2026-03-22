@@ -1,0 +1,4367 @@
+# Topic 11: Exam Skills & Academic Vocabulary (Month 11)
+# V1701-V1900 — B2 level vocabulary
+# Code Breaker theme: exam vocabulary, formal language, mixed academic topics
+# High-frequency FCE words that appear across all papers
+
+topic: "Exam Skills & Academic Vocabulary"
+topicZh: "考试技巧与学术词汇"
+vocab:
+  # ============================================
+  # D301: V1701-V1705 — Core Exam Vocabulary
+  # ============================================
+
+  - id: V1701
+    word: attempt
+    phonetic: '/əˈtempt/'
+    partOfSpeech: verb
+    definition: 'To try to do something, especially something difficult'
+    definitionZh: '尝试做某事，尤其是困难的事情'
+    exampleSentence: 'You should attempt every question on the exam paper, even if you are not sure of the answer.'
+    exampleSentenceZh: '你应该尝试试卷上的每道题，即使你不确定答案。'
+    wordFamily:
+      - form: attempt
+        partOfSpeech: noun
+      - form: attempted
+        partOfSpeech: adjective
+    collocations:
+      - 'attempt to do'
+      - 'make an attempt'
+      - 'first attempt'
+    synonyms: [try, endeavour, strive]
+    antonyms: [abandon, give up, quit]
+    level: 3
+    firstAppear: D301
+    reviewSchedule: [D302, D304, D308, D315, D331]
+
+  - id: V1702
+    word: significant
+    phonetic: '/sɪɡˈnɪfɪkənt/'
+    partOfSpeech: adjective
+    definition: 'Important or large enough to have an effect or be noticed'
+    definitionZh: '重要的，大到足以产生影响或被注意到的'
+    exampleSentence: 'There has been a significant increase in the number of students taking the FCE exam.'
+    exampleSentenceZh: '参加FCE考试的学生人数有了显著增加。'
+    wordFamily:
+      - form: significance
+        partOfSpeech: noun
+      - form: significantly
+        partOfSpeech: adverb
+      - form: insignificant
+        partOfSpeech: adjective
+    collocations:
+      - 'significant increase'
+      - 'significant difference'
+      - 'significant impact'
+    synonyms: [important, considerable, notable]
+    antonyms: [insignificant, trivial, minor]
+    level: 4
+    firstAppear: D301
+    reviewSchedule: [D302, D304, D308, D315, D331]
+
+  - id: V1703
+    word: indicate
+    phonetic: '/ˈɪndɪkeɪt/'
+    partOfSpeech: verb
+    definition: 'To show or point out something; to be a sign of'
+    definitionZh: '表明，指出；是……的迹象'
+    exampleSentence: 'Research indicates that regular reading significantly improves vocabulary.'
+    exampleSentenceZh: '研究表明，经常阅读能显著提高词汇量。'
+    wordFamily:
+      - form: indication
+        partOfSpeech: noun
+      - form: indicator
+        partOfSpeech: noun
+      - form: indicative
+        partOfSpeech: adjective
+    collocations:
+      - 'clearly indicate'
+      - 'indicate that'
+      - 'as indicated'
+    synonyms: [show, suggest, demonstrate]
+    antonyms: [conceal, hide, obscure]
+    level: 4
+    firstAppear: D301
+    reviewSchedule: [D302, D304, D308, D315, D331]
+
+  - id: V1704
+    word: appropriate
+    phonetic: '/əˈprəʊpriət/'
+    partOfSpeech: adjective
+    definition: 'Suitable or right for a particular situation or purpose'
+    definitionZh: '适当的，适合特定情况或目的的'
+    exampleSentence: 'Make sure you use appropriate language when writing a formal letter.'
+    exampleSentenceZh: '写正式信件时一定要使用适当的语言。'
+    wordFamily:
+      - form: appropriately
+        partOfSpeech: adverb
+      - form: inappropriate
+        partOfSpeech: adjective
+      - form: inappropriately
+        partOfSpeech: adverb
+    collocations:
+      - 'appropriate behaviour'
+      - 'appropriate language'
+      - 'entirely appropriate'
+    synonyms: [suitable, proper, fitting]
+    antonyms: [inappropriate, unsuitable, improper]
+    level: 3
+    firstAppear: D301
+    reviewSchedule: [D302, D304, D308, D315, D331]
+
+  - id: V1705
+    word: consequence
+    phonetic: '/ˈkɒnsɪkwəns/'
+    partOfSpeech: noun
+    definition: 'A result or effect of an action or situation'
+    definitionZh: '结果，后果，某个行为或情况的影响'
+    exampleSentence: 'One consequence of climate change is that some animals are losing their natural habitats.'
+    exampleSentenceZh: '气候变化的一个后果是一些动物正在失去它们的自然栖息地。'
+    wordFamily:
+      - form: consequent
+        partOfSpeech: adjective
+      - form: consequently
+        partOfSpeech: adverb
+    collocations:
+      - 'as a consequence'
+      - 'face the consequences'
+      - 'serious consequences'
+    synonyms: [result, outcome, effect]
+    antonyms: [cause, origin, source]
+    level: 4
+    firstAppear: D301
+    reviewSchedule: [D302, D304, D308, D315, D331]
+
+  # ============================================
+  # D302: V1706-V1710 — Formal Connectors
+  # ============================================
+
+  - id: V1706
+    word: nevertheless
+    phonetic: '/ˌnevəðəˈles/'
+    partOfSpeech: adverb
+    definition: 'Despite what has just been said; however'
+    definitionZh: '尽管如此，然而'
+    exampleSentence: 'The exam was extremely difficult. Nevertheless, most students managed to pass.'
+    exampleSentenceZh: '考试极其困难。然而，大多数学生都设法通过了。'
+    wordFamily: []
+    collocations:
+      - 'but nevertheless'
+      - 'nevertheless, it is'
+    synonyms: [however, nonetheless, still]
+    antonyms: [therefore, consequently]
+    level: 4
+    firstAppear: D302
+    reviewSchedule: [D303, D305, D309, D316, D332]
+
+  - id: V1707
+    word: furthermore
+    phonetic: '/ˌfɜːðəˈmɔːr/'
+    partOfSpeech: adverb
+    definition: 'In addition to what has already been said; what is more'
+    definitionZh: '此外，而且'
+    exampleSentence: 'The book is well-written. Furthermore, it covers topics that are rarely discussed.'
+    exampleSentenceZh: '这本书写得很好。此外，它涵盖了很少被讨论的话题。'
+    wordFamily: []
+    collocations:
+      - 'furthermore, it should be noted'
+      - 'and furthermore'
+    synonyms: [moreover, additionally, besides]
+    antonyms: []
+    level: 4
+    firstAppear: D302
+    reviewSchedule: [D303, D305, D309, D316, D332]
+
+  - id: V1708
+    word: whereas
+    phonetic: '/weərˈæz/'
+    partOfSpeech: conjunction
+    definition: 'Used to compare or contrast two facts or situations'
+    definitionZh: '而，然而，用于比较或对比两个事实或情况'
+    exampleSentence: 'Reading Part 1 tests understanding of detail, whereas Part 2 tests understanding of structure.'
+    exampleSentenceZh: '阅读第1部分测试对细节的理解，而第2部分测试对结构的理解。'
+    wordFamily: []
+    collocations:
+      - 'whereas in fact'
+      - 'whereas the other'
+    synonyms: [while, although, but]
+    antonyms: [similarly, likewise]
+    level: 4
+    firstAppear: D302
+    reviewSchedule: [D303, D305, D309, D316, D332]
+
+  - id: V1709
+    word: despite
+    phonetic: '/dɪˈspaɪt/'
+    partOfSpeech: preposition
+    definition: 'Without being affected by; in spite of'
+    definitionZh: '尽管，不顾'
+    exampleSentence: 'Despite the heavy rain, the outdoor concert went ahead as planned.'
+    exampleSentenceZh: '尽管下着大雨，户外音乐会还是按计划进行了。'
+    wordFamily: []
+    collocations:
+      - 'despite the fact that'
+      - 'despite this'
+      - 'despite being'
+    synonyms: [in spite of, regardless of, notwithstanding]
+    antonyms: [because of, due to, owing to]
+    level: 3
+    firstAppear: D302
+    reviewSchedule: [D303, D305, D309, D316, D332]
+
+  - id: V1710
+    word: therefore
+    phonetic: '/ˈðeəfɔːr/'
+    partOfSpeech: adverb
+    definition: 'For that reason; as a result'
+    definitionZh: '因此，所以'
+    exampleSentence: 'She practised every day; therefore, her writing improved dramatically.'
+    exampleSentenceZh: '她每天练习；因此，她的写作水平有了很大的提高。'
+    wordFamily: []
+    collocations:
+      - 'and therefore'
+      - 'it is therefore'
+      - 'therefore, we can conclude'
+    synonyms: [consequently, hence, thus]
+    antonyms: [nevertheless, however]
+    level: 3
+    firstAppear: D302
+    reviewSchedule: [D303, D305, D309, D316, D332]
+
+  # ============================================
+  # D303: V1711-V1715 — Analysis & Reasoning
+  # ============================================
+
+  - id: V1711
+    word: analyse
+    phonetic: '/ˈænəlaɪz/'
+    partOfSpeech: verb
+    definition: 'To examine something carefully in order to understand it or explain it'
+    definitionZh: '分析，仔细检查某事以理解或解释它'
+    exampleSentence: 'Before writing your essay, you need to analyse the question carefully.'
+    exampleSentenceZh: '在写作文之前，你需要仔细分析问题。'
+    wordFamily:
+      - form: analysis
+        partOfSpeech: noun
+      - form: analyst
+        partOfSpeech: noun
+      - form: analytical
+        partOfSpeech: adjective
+    collocations:
+      - 'carefully analyse'
+      - 'analyse data'
+      - 'analyse the results'
+    synonyms: [examine, study, investigate]
+    antonyms: [ignore, overlook, neglect]
+    level: 4
+    firstAppear: D303
+    reviewSchedule: [D304, D306, D310, D317, D333]
+
+  - id: V1712
+    word: conclude
+    phonetic: '/kənˈkluːd/'
+    partOfSpeech: verb
+    definition: 'To decide or believe something as a result of thinking about it; to bring to an end'
+    definitionZh: '得出结论；结束'
+    exampleSentence: 'We can conclude from the evidence that recycling does make a difference.'
+    exampleSentenceZh: '我们可以从证据中得出结论，回收利用确实有用。'
+    wordFamily:
+      - form: conclusion
+        partOfSpeech: noun
+      - form: conclusive
+        partOfSpeech: adjective
+      - form: conclusively
+        partOfSpeech: adverb
+    collocations:
+      - 'conclude that'
+      - 'in conclusion'
+      - 'to conclude'
+    synonyms: [deduce, determine, finish]
+    antonyms: [begin, start, commence]
+    level: 4
+    firstAppear: D303
+    reviewSchedule: [D304, D306, D310, D317, D333]
+
+  - id: V1713
+    word: evidence
+    phonetic: '/ˈevɪdəns/'
+    partOfSpeech: noun
+    definition: 'Facts or signs that show clearly that something exists or is true'
+    definitionZh: '证据，清楚表明某事存在或属实的事实或迹象'
+    exampleSentence: 'There is strong evidence that exercise improves concentration and memory.'
+    exampleSentenceZh: '有充分的证据表明运动能提高注意力和记忆力。'
+    wordFamily:
+      - form: evident
+        partOfSpeech: adjective
+      - form: evidently
+        partOfSpeech: adverb
+    collocations:
+      - 'strong evidence'
+      - 'evidence suggests'
+      - 'provide evidence'
+    synonyms: [proof, confirmation, indication]
+    antonyms: [disproof, contradiction]
+    level: 3
+    firstAppear: D303
+    reviewSchedule: [D304, D306, D310, D317, D333]
+
+  - id: V1714
+    word: assume
+    phonetic: '/əˈsjuːm/'
+    partOfSpeech: verb
+    definition: 'To accept something as true without proof; to take for granted'
+    definitionZh: '假设，未经证实就接受某事为真'
+    exampleSentence: 'Do not assume the answer is obvious — read the question carefully first.'
+    exampleSentenceZh: '不要假设答案是显而易见的——先仔细阅读问题。'
+    wordFamily:
+      - form: assumption
+        partOfSpeech: noun
+      - form: assumed
+        partOfSpeech: adjective
+    collocations:
+      - 'assume that'
+      - 'widely assumed'
+      - 'safe to assume'
+    synonyms: [suppose, presume, guess]
+    antonyms: [prove, verify, confirm]
+    level: 4
+    firstAppear: D303
+    reviewSchedule: [D304, D306, D310, D317, D333]
+
+  - id: V1715
+    word: relevant
+    phonetic: '/ˈreləvənt/'
+    partOfSpeech: adjective
+    definition: 'Closely connected to the topic or situation being discussed'
+    definitionZh: '相关的，与讨论的话题或情况密切相关的'
+    exampleSentence: 'Only include information that is relevant to the essay question.'
+    exampleSentenceZh: '只包含与论文问题相关的信息。'
+    wordFamily:
+      - form: relevance
+        partOfSpeech: noun
+      - form: irrelevant
+        partOfSpeech: adjective
+    collocations:
+      - 'highly relevant'
+      - 'relevant information'
+      - 'relevant to'
+    synonyms: [pertinent, applicable, related]
+    antonyms: [irrelevant, unrelated, immaterial]
+    level: 3
+    firstAppear: D303
+    reviewSchedule: [D304, D306, D310, D317, D333]
+
+  # ============================================
+  # D304: V1716-V1720 — Opinion & Persuasion
+  # ============================================
+
+  - id: V1716
+    word: persuade
+    phonetic: '/pəˈsweɪd/'
+    partOfSpeech: verb
+    definition: 'To cause someone to believe or do something through reasoning or argument'
+    definitionZh: '说服，通过推理或论证使某人相信或做某事'
+    exampleSentence: 'A well-written essay should persuade the reader to consider your point of view.'
+    exampleSentenceZh: '一篇好的论文应该说服读者考虑你的观点。'
+    wordFamily:
+      - form: persuasion
+        partOfSpeech: noun
+      - form: persuasive
+        partOfSpeech: adjective
+      - form: persuasively
+        partOfSpeech: adverb
+    collocations:
+      - 'persuade someone to'
+      - 'try to persuade'
+      - 'difficult to persuade'
+    synonyms: [convince, influence, encourage]
+    antonyms: [discourage, dissuade, deter]
+    level: 3
+    firstAppear: D304
+    reviewSchedule: [D305, D307, D311, D318, D334]
+
+  - id: V1717
+    word: valid
+    phonetic: '/ˈvælɪd/'
+    partOfSpeech: adjective
+    definition: 'Based on truth or reason; acceptable and logical'
+    definitionZh: '有效的，基于事实或理由的；可接受且合乎逻辑的'
+    exampleSentence: 'Both sides of the argument make valid points.'
+    exampleSentenceZh: '争论的双方都提出了有效的观点。'
+    wordFamily:
+      - form: validity
+        partOfSpeech: noun
+      - form: validate
+        partOfSpeech: verb
+      - form: invalid
+        partOfSpeech: adjective
+    collocations:
+      - 'valid point'
+      - 'valid argument'
+      - 'perfectly valid'
+    synonyms: [sound, legitimate, reasonable]
+    antonyms: [invalid, unfounded, baseless]
+    level: 4
+    firstAppear: D304
+    reviewSchedule: [D305, D307, D311, D318, D334]
+
+  - id: V1718
+    word: claim
+    phonetic: '/kleɪm/'
+    partOfSpeech: verb
+    definition: 'To state that something is true, even though it has not been proved'
+    definitionZh: '声称，断言某事是真的，尽管尚未被证实'
+    exampleSentence: 'Some people claim that video games are harmful, but the evidence is mixed.'
+    exampleSentenceZh: '一些人声称电子游戏有害，但证据参差不齐。'
+    wordFamily:
+      - form: claim
+        partOfSpeech: noun
+      - form: claimant
+        partOfSpeech: noun
+    collocations:
+      - 'claim that'
+      - 'claim to be'
+      - 'make a claim'
+    synonyms: [assert, maintain, state]
+    antonyms: [deny, retract, withdraw]
+    level: 3
+    firstAppear: D304
+    reviewSchedule: [D305, D307, D311, D318, D334]
+
+  - id: V1719
+    word: emphasis
+    phonetic: '/ˈemfəsɪs/'
+    partOfSpeech: noun
+    definition: 'Special importance or attention given to something'
+    definitionZh: '强调，给予某事特别的重要性或关注'
+    exampleSentence: 'The course places great emphasis on developing writing skills.'
+    exampleSentenceZh: '该课程非常重视培养写作技能。'
+    wordFamily:
+      - form: emphasise
+        partOfSpeech: verb
+      - form: emphatic
+        partOfSpeech: adjective
+      - form: emphatically
+        partOfSpeech: adverb
+    collocations:
+      - 'place emphasis on'
+      - 'with emphasis'
+      - 'great emphasis'
+    synonyms: [stress, focus, importance]
+    antonyms: [understatement, neglect]
+    level: 4
+    firstAppear: D304
+    reviewSchedule: [D305, D307, D311, D318, D334]
+
+  - id: V1720
+    word: contradict
+    phonetic: '/ˌkɒntrəˈdɪkt/'
+    partOfSpeech: verb
+    definition: 'To say the opposite of what someone else has said; to go against'
+    definitionZh: '反驳，与某人所说的相反；违反'
+    exampleSentence: 'The new findings contradict what scientists believed for decades.'
+    exampleSentenceZh: '新发现反驳了科学家们几十年来的看法。'
+    wordFamily:
+      - form: contradiction
+        partOfSpeech: noun
+      - form: contradictory
+        partOfSpeech: adjective
+    collocations:
+      - 'directly contradict'
+      - 'contradict oneself'
+      - 'appear to contradict'
+    synonyms: [oppose, deny, challenge]
+    antonyms: [confirm, support, agree]
+    level: 4
+    firstAppear: D304
+    reviewSchedule: [D305, D307, D311, D318, D334]
+
+  # ============================================
+  # D305: V1721-V1725 — Describing Change
+  # ============================================
+
+  - id: V1721
+    word: gradually
+    phonetic: '/ˈɡrædʒuəli/'
+    partOfSpeech: adverb
+    definition: 'Slowly, over a period of time; not suddenly'
+    definitionZh: '逐渐地，在一段时间内慢慢地；不是突然的'
+    exampleSentence: 'Her English has gradually improved since she started reading novels every day.'
+    exampleSentenceZh: '自从她开始每天读小说以来，她的英语逐渐提高了。'
+    wordFamily:
+      - form: gradual
+        partOfSpeech: adjective
+    collocations:
+      - 'gradually increase'
+      - 'gradually improve'
+      - 'gradually become'
+    synonyms: [slowly, steadily, progressively]
+    antonyms: [suddenly, abruptly, immediately]
+    level: 3
+    firstAppear: D305
+    reviewSchedule: [D306, D308, D312, D319, D335]
+
+  - id: V1722
+    word: decline
+    phonetic: '/dɪˈklaɪn/'
+    partOfSpeech: verb
+    definition: 'To become smaller, weaker, or less in amount or quality; to politely refuse'
+    definitionZh: '下降，减少；礼貌地拒绝'
+    exampleSentence: 'The number of people writing letters by hand has declined sharply in recent years.'
+    exampleSentenceZh: '近年来手写信件的人数急剧下降了。'
+    wordFamily:
+      - form: decline
+        partOfSpeech: noun
+    collocations:
+      - 'decline sharply'
+      - 'steady decline'
+      - 'decline in'
+    synonyms: [decrease, diminish, drop]
+    antonyms: [increase, rise, grow]
+    level: 3
+    firstAppear: D305
+    reviewSchedule: [D306, D308, D312, D319, D335]
+
+  - id: V1723
+    word: transform
+    phonetic: '/trænsˈfɔːm/'
+    partOfSpeech: verb
+    definition: 'To change completely in form, appearance, or character'
+    definitionZh: '转变，完全改变形式、外观或性质'
+    exampleSentence: 'Technology has transformed the way people communicate with each other.'
+    exampleSentenceZh: '技术已经改变了人们彼此交流的方式。'
+    wordFamily:
+      - form: transformation
+        partOfSpeech: noun
+      - form: transformative
+        partOfSpeech: adjective
+    collocations:
+      - 'completely transform'
+      - 'transform into'
+      - 'transform the way'
+    synonyms: [change, convert, alter]
+    antonyms: [preserve, maintain, keep]
+    level: 3
+    firstAppear: D305
+    reviewSchedule: [D306, D308, D312, D319, D335]
+
+  - id: V1724
+    word: trend
+    phonetic: '/trend/'
+    partOfSpeech: noun
+    definition: 'A general direction in which something is developing or changing'
+    definitionZh: '趋势，某事发展或变化的总体方向'
+    exampleSentence: 'There is a growing trend towards using renewable energy sources.'
+    exampleSentenceZh: '使用可再生能源的趋势越来越明显。'
+    wordFamily:
+      - form: trendy
+        partOfSpeech: adjective
+      - form: trending
+        partOfSpeech: adjective
+    collocations:
+      - 'growing trend'
+      - 'current trend'
+      - 'follow a trend'
+    synonyms: [tendency, direction, movement]
+    antonyms: []
+    level: 3
+    firstAppear: D305
+    reviewSchedule: [D306, D308, D312, D319, D335]
+
+  - id: V1725
+    word: contribute
+    phonetic: '/kənˈtrɪbjuːt/'
+    partOfSpeech: verb
+    definition: 'To give something, especially money or time, to help achieve something or to add to a result'
+    definitionZh: '贡献，捐助，有助于'
+    exampleSentence: 'Many factors contribute to success in language learning.'
+    exampleSentenceZh: '许多因素有助于语言学习的成功。'
+    wordFamily:
+      - form: contribution
+        partOfSpeech: noun
+      - form: contributor
+        partOfSpeech: noun
+    collocations:
+      - 'contribute to'
+      - 'make a contribution'
+      - 'significantly contribute'
+    synonyms: [add, provide, donate]
+    antonyms: [withhold, take away, detract]
+    level: 3
+    firstAppear: D305
+    reviewSchedule: [D306, D308, D312, D319, D335]
+
+  # ============================================
+  # D306: V1726-V1730 — Describing Processes
+  # ============================================
+
+  - id: V1726
+    word: involve
+    phonetic: '/ɪnˈvɒlv/'
+    partOfSpeech: verb
+    definition: 'To include or require something as a part or step'
+    definitionZh: '涉及，包含，需要'
+    exampleSentence: 'The experiment involved testing the memory of over 500 volunteers.'
+    exampleSentenceZh: '这项实验涉及测试500多名志愿者的记忆力。'
+    wordFamily:
+      - form: involvement
+        partOfSpeech: noun
+      - form: involved
+        partOfSpeech: adjective
+    collocations:
+      - 'involve doing'
+      - 'be involved in'
+      - 'actively involved'
+    synonyms: [include, require, entail]
+    antonyms: [exclude, omit, eliminate]
+    level: 3
+    firstAppear: D306
+    reviewSchedule: [D307, D309, D313, D320, D336]
+
+  - id: V1727
+    word: conduct
+    phonetic: '/kənˈdʌkt/'
+    partOfSpeech: verb
+    definition: 'To organise and carry out an activity or process'
+    definitionZh: '进行，实施，组织并执行某项活动或过程'
+    exampleSentence: 'Scientists conducted a study to find out how sleep affects exam performance.'
+    exampleSentenceZh: '科学家们进行了一项研究，以了解睡眠如何影响考试表现。'
+    wordFamily:
+      - form: conduct
+        partOfSpeech: noun
+    collocations:
+      - 'conduct research'
+      - 'conduct a survey'
+      - 'conduct an experiment'
+    synonyms: [carry out, perform, execute]
+    antonyms: [abandon, halt, cease]
+    level: 4
+    firstAppear: D306
+    reviewSchedule: [D307, D309, D313, D320, D336]
+
+  - id: V1728
+    word: obtain
+    phonetic: '/əbˈteɪn/'
+    partOfSpeech: verb
+    definition: 'To get something, especially by effort or planning'
+    definitionZh: '获得，取得，尤其通过努力或计划'
+    exampleSentence: 'You can obtain a certificate if you pass all four parts of the exam.'
+    exampleSentenceZh: '如果你通过考试的所有四部分，你就可以获得证书。'
+    wordFamily:
+      - form: obtainable
+        partOfSpeech: adjective
+    collocations:
+      - 'obtain permission'
+      - 'obtain results'
+      - 'obtain information'
+    synonyms: [acquire, gain, secure]
+    antonyms: [lose, forfeit, surrender]
+    level: 4
+    firstAppear: D306
+    reviewSchedule: [D307, D309, D313, D320, D336]
+
+  - id: V1729
+    word: establish
+    phonetic: '/ɪˈstæblɪʃ/'
+    partOfSpeech: verb
+    definition: 'To set up or create something permanent; to show something to be true'
+    definitionZh: '建立，创建永久性事物；证明某事为真'
+    exampleSentence: 'The school was established in 1952 and has been educating students for over seventy years.'
+    exampleSentenceZh: '这所学校成立于1952年，已经教育学生超过七十年了。'
+    wordFamily:
+      - form: establishment
+        partOfSpeech: noun
+      - form: established
+        partOfSpeech: adjective
+    collocations:
+      - 'well-established'
+      - 'establish a connection'
+      - 'establish the facts'
+    synonyms: [found, create, set up]
+    antonyms: [abolish, dismantle, destroy]
+    level: 4
+    firstAppear: D306
+    reviewSchedule: [D307, D309, D313, D320, D336]
+
+  - id: V1730
+    word: approach
+    phonetic: '/əˈprəʊtʃ/'
+    partOfSpeech: noun
+    definition: 'A way of dealing with a situation or problem; a method'
+    definitionZh: '方法，处理情况或问题的方式'
+    exampleSentence: 'Different students have different approaches to preparing for exams.'
+    exampleSentenceZh: '不同的学生准备考试有不同的方法。'
+    wordFamily:
+      - form: approach
+        partOfSpeech: verb
+      - form: approachable
+        partOfSpeech: adjective
+    collocations:
+      - 'take an approach'
+      - 'different approach'
+      - 'practical approach'
+    synonyms: [method, strategy, technique]
+    antonyms: []
+    level: 3
+    firstAppear: D306
+    reviewSchedule: [D307, D309, D313, D320, D336]
+
+  # ============================================
+  # D307: V1731-V1735 — Academic Adjectives
+  # ============================================
+
+  - id: V1731
+    word: complex
+    phonetic: '/ˈkɒmpleks/'
+    partOfSpeech: adjective
+    definition: 'Consisting of many different parts; difficult to understand'
+    definitionZh: '复杂的，由许多不同部分组成的；难以理解的'
+    exampleSentence: 'The grammar of English is less complex than many people think.'
+    exampleSentenceZh: '英语的语法没有许多人想的那么复杂。'
+    wordFamily:
+      - form: complexity
+        partOfSpeech: noun
+    collocations:
+      - 'highly complex'
+      - 'complex issue'
+      - 'complex structure'
+    synonyms: [complicated, intricate, elaborate]
+    antonyms: [simple, straightforward, basic]
+    level: 3
+    firstAppear: D307
+    reviewSchedule: [D308, D310, D314, D321, D337]
+
+  - id: V1732
+    word: crucial
+    phonetic: '/ˈkruːʃəl/'
+    partOfSpeech: adjective
+    definition: 'Extremely important because everything depends on it'
+    definitionZh: '至关重要的，因为一切都取决于它'
+    exampleSentence: 'Time management is crucial when you only have forty minutes to write an essay.'
+    exampleSentenceZh: '当你只有四十分钟写作文时，时间管理至关重要。'
+    wordFamily:
+      - form: crucially
+        partOfSpeech: adverb
+    collocations:
+      - 'crucially important'
+      - 'play a crucial role'
+      - 'crucial factor'
+    synonyms: [vital, essential, critical]
+    antonyms: [unimportant, trivial, insignificant]
+    level: 4
+    firstAppear: D307
+    reviewSchedule: [D308, D310, D314, D321, D337]
+
+  - id: V1733
+    word: precise
+    phonetic: '/prɪˈsaɪs/'
+    partOfSpeech: adjective
+    definition: 'Exact and accurate in every detail'
+    definitionZh: '精确的，每个细节都准确的'
+    exampleSentence: 'In the Use of English paper, you need to use the precise word that fits the gap.'
+    exampleSentenceZh: '在语言运用试卷中，你需要使用精确适合空格的词。'
+    wordFamily:
+      - form: precisely
+        partOfSpeech: adverb
+      - form: precision
+        partOfSpeech: noun
+    collocations:
+      - 'to be precise'
+      - 'precise details'
+      - 'precise meaning'
+    synonyms: [exact, accurate, specific]
+    antonyms: [vague, imprecise, approximate]
+    level: 4
+    firstAppear: D307
+    reviewSchedule: [D308, D310, D314, D321, D337]
+
+  - id: V1734
+    word: effective
+    phonetic: '/ɪˈfektɪv/'
+    partOfSpeech: adjective
+    definition: 'Successful in producing a desired or intended result'
+    definitionZh: '有效的，成功产生所期望结果的'
+    exampleSentence: 'Using flashcards is an effective way to memorise new vocabulary.'
+    exampleSentenceZh: '使用闪卡是记忆新词汇的有效方法。'
+    wordFamily:
+      - form: effectively
+        partOfSpeech: adverb
+      - form: effectiveness
+        partOfSpeech: noun
+      - form: ineffective
+        partOfSpeech: adjective
+    collocations:
+      - 'highly effective'
+      - 'effective method'
+      - 'cost-effective'
+    synonyms: [efficient, productive, successful]
+    antonyms: [ineffective, useless, unsuccessful]
+    level: 3
+    firstAppear: D307
+    reviewSchedule: [D308, D310, D314, D321, D337]
+
+  - id: V1735
+    word: essential
+    phonetic: '/ɪˈsenʃəl/'
+    partOfSpeech: adjective
+    definition: 'Absolutely necessary and extremely important'
+    definitionZh: '必要的，绝对需要且极其重要的'
+    exampleSentence: 'It is essential that you read the instructions before starting the exam.'
+    exampleSentenceZh: '在开始考试之前阅读说明是必要的。'
+    wordFamily:
+      - form: essentially
+        partOfSpeech: adverb
+      - form: non-essential
+        partOfSpeech: adjective
+    collocations:
+      - 'absolutely essential'
+      - 'essential skill'
+      - 'essential for'
+    synonyms: [vital, crucial, fundamental]
+    antonyms: [unnecessary, optional, dispensable]
+    level: 3
+    firstAppear: D307
+    reviewSchedule: [D308, D310, D314, D321, D337]
+
+  # ============================================
+  # D308: V1736-V1740 — Technology & Science
+  # ============================================
+
+  - id: V1736
+    word: device
+    phonetic: '/dɪˈvaɪs/'
+    partOfSpeech: noun
+    definition: 'A piece of equipment made for a particular purpose, especially electronic'
+    definitionZh: '设备，装置，为特定目的制造的器材，尤其是电子的'
+    exampleSentence: 'Most teenagers use some kind of electronic device for at least three hours a day.'
+    exampleSentenceZh: '大多数青少年每天至少使用某种电子设备三小时。'
+    wordFamily: []
+    collocations:
+      - 'electronic device'
+      - 'mobile device'
+      - 'safety device'
+    synonyms: [gadget, instrument, tool]
+    antonyms: []
+    level: 3
+    firstAppear: D308
+    reviewSchedule: [D309, D311, D315, D322, D338]
+
+  - id: V1737
+    word: innovation
+    phonetic: '/ˌɪnəˈveɪʃən/'
+    partOfSpeech: noun
+    definition: 'A new idea, method, or invention; the introduction of something new'
+    definitionZh: '创新，新想法、新方法或新发明'
+    exampleSentence: 'The smartphone was one of the greatest innovations of the 21st century.'
+    exampleSentenceZh: '智能手机是21世纪最伟大的创新之一。'
+    wordFamily:
+      - form: innovate
+        partOfSpeech: verb
+      - form: innovative
+        partOfSpeech: adjective
+      - form: innovator
+        partOfSpeech: noun
+    collocations:
+      - 'technological innovation'
+      - 'drive innovation'
+      - 'innovative approach'
+    synonyms: [invention, breakthrough, advance]
+    antonyms: [tradition, convention]
+    level: 4
+    firstAppear: D308
+    reviewSchedule: [D309, D311, D315, D322, D338]
+
+  - id: V1738
+    word: artificial
+    phonetic: '/ˌɑːtɪˈfɪʃəl/'
+    partOfSpeech: adjective
+    definition: 'Made by humans rather than occurring naturally; not genuine'
+    definitionZh: '人造的，人工的；不真实的'
+    exampleSentence: 'Artificial intelligence is changing how we search for information online.'
+    exampleSentenceZh: '人工智能正在改变我们在线搜索信息的方式。'
+    wordFamily:
+      - form: artificially
+        partOfSpeech: adverb
+    collocations:
+      - 'artificial intelligence'
+      - 'artificial light'
+      - 'artificial flavours'
+    synonyms: [synthetic, man-made, manufactured]
+    antonyms: [natural, genuine, organic]
+    level: 3
+    firstAppear: D308
+    reviewSchedule: [D309, D311, D315, D322, D338]
+
+  - id: V1739
+    word: renewable
+    phonetic: '/rɪˈnjuːəbl/'
+    partOfSpeech: adjective
+    definition: 'Able to be replaced naturally and therefore not used up completely'
+    definitionZh: '可再生的，能自然替代因此不会完全用尽的'
+    exampleSentence: 'Solar and wind power are examples of renewable energy sources.'
+    exampleSentenceZh: '太阳能和风能是可再生能源的例子。'
+    wordFamily:
+      - form: renew
+        partOfSpeech: verb
+      - form: renewal
+        partOfSpeech: noun
+      - form: non-renewable
+        partOfSpeech: adjective
+    collocations:
+      - 'renewable energy'
+      - 'renewable resources'
+      - 'renewable sources'
+    synonyms: [sustainable, replenishable]
+    antonyms: [non-renewable, finite, exhaustible]
+    level: 3
+    firstAppear: D308
+    reviewSchedule: [D309, D311, D315, D322, D338]
+
+  - id: V1740
+    word: generate
+    phonetic: '/ˈdʒenəreɪt/'
+    partOfSpeech: verb
+    definition: 'To produce or create something'
+    definitionZh: '产生，创造'
+    exampleSentence: 'Wind turbines generate electricity without producing any pollution.'
+    exampleSentenceZh: '风力涡轮机在不产生任何污染的情况下发电。'
+    wordFamily:
+      - form: generation
+        partOfSpeech: noun
+      - form: generator
+        partOfSpeech: noun
+    collocations:
+      - 'generate electricity'
+      - 'generate income'
+      - 'generate interest'
+    synonyms: [produce, create, yield]
+    antonyms: [consume, destroy, deplete]
+    level: 4
+    firstAppear: D308
+    reviewSchedule: [D309, D311, D315, D322, D338]
+
+  # ============================================
+  # D309: V1741-V1745 — Environment & Nature
+  # ============================================
+
+  - id: V1741
+    word: species
+    phonetic: '/ˈspiːʃiːz/'
+    partOfSpeech: noun
+    definition: 'A group of animals or plants that are similar and can breed together'
+    definitionZh: '物种，一组相似且能繁殖后代的动物或植物'
+    exampleSentence: 'Over one million species are currently at risk of extinction.'
+    exampleSentenceZh: '目前有超过一百万个物种面临灭绝的危险。'
+    wordFamily: []
+    collocations:
+      - 'endangered species'
+      - 'different species'
+      - 'native species'
+    synonyms: [type, kind, breed]
+    antonyms: []
+    level: 3
+    firstAppear: D309
+    reviewSchedule: [D310, D312, D316, D323, D339]
+
+  - id: V1742
+    word: conservation
+    phonetic: '/ˌkɒnsəˈveɪʃən/'
+    partOfSpeech: noun
+    definition: 'The protection of plants, animals, and natural areas; preventing waste'
+    definitionZh: '保护，对植物、动物和自然区域的保护；防止浪费'
+    exampleSentence: 'Conservation efforts have helped the panda population to increase.'
+    exampleSentenceZh: '保护工作帮助大熊猫数量增加了。'
+    wordFamily:
+      - form: conserve
+        partOfSpeech: verb
+      - form: conservationist
+        partOfSpeech: noun
+    collocations:
+      - 'conservation efforts'
+      - 'wildlife conservation'
+      - 'energy conservation'
+    synonyms: [preservation, protection, safeguarding]
+    antonyms: [destruction, exploitation, waste]
+    level: 4
+    firstAppear: D309
+    reviewSchedule: [D310, D312, D316, D323, D339]
+
+  - id: V1743
+    word: habitat
+    phonetic: '/ˈhæbɪtæt/'
+    partOfSpeech: noun
+    definition: 'The natural environment in which an animal or plant normally lives'
+    definitionZh: '栖息地，动物或植物通常生活的自然环境'
+    exampleSentence: 'Deforestation is destroying the natural habitat of many animals.'
+    exampleSentenceZh: '森林砍伐正在破坏许多动物的自然栖息地。'
+    wordFamily: []
+    collocations:
+      - 'natural habitat'
+      - 'habitat loss'
+      - 'wildlife habitat'
+    synonyms: [environment, home, territory]
+    antonyms: []
+    level: 3
+    firstAppear: D309
+    reviewSchedule: [D310, D312, D316, D323, D339]
+
+  - id: V1744
+    word: sustainable
+    phonetic: '/səˈsteɪnəbl/'
+    partOfSpeech: adjective
+    definition: 'Able to continue without causing damage to the environment'
+    definitionZh: '可持续的，能在不对环境造成损害的情况下持续的'
+    exampleSentence: 'We need to find sustainable ways to produce food for a growing population.'
+    exampleSentenceZh: '我们需要找到可持续的方法来为不断增长的人口生产食物。'
+    wordFamily:
+      - form: sustain
+        partOfSpeech: verb
+      - form: sustainability
+        partOfSpeech: noun
+      - form: unsustainable
+        partOfSpeech: adjective
+    collocations:
+      - 'sustainable development'
+      - 'sustainable energy'
+      - 'environmentally sustainable'
+    synonyms: [viable, maintainable, eco-friendly]
+    antonyms: [unsustainable, harmful, destructive]
+    level: 4
+    firstAppear: D309
+    reviewSchedule: [D310, D312, D316, D323, D339]
+
+  - id: V1745
+    word: pollution
+    phonetic: '/pəˈluːʃən/'
+    partOfSpeech: noun
+    definition: 'Damage caused to water, air, or land by harmful substances'
+    definitionZh: '污染，有害物质对水、空气或土地造成的损害'
+    exampleSentence: 'Air pollution from factories and cars is a serious problem in many cities.'
+    exampleSentenceZh: '工厂和汽车造成的空气污染是许多城市的严重问题。'
+    wordFamily:
+      - form: pollute
+        partOfSpeech: verb
+      - form: pollutant
+        partOfSpeech: noun
+      - form: polluted
+        partOfSpeech: adjective
+    collocations:
+      - 'air pollution'
+      - 'reduce pollution'
+      - 'noise pollution'
+    synonyms: [contamination, degradation]
+    antonyms: [purification, cleanliness]
+    level: 3
+    firstAppear: D309
+    reviewSchedule: [D310, D312, D316, D323, D339]
+
+  # ============================================
+  # D310: V1746-V1750 — History & Culture
+  # ============================================
+
+  - id: V1746
+    word: ancient
+    phonetic: '/ˈeɪnʃənt/'
+    partOfSpeech: adjective
+    definition: 'Belonging to a period of history that is thousands of years in the past'
+    definitionZh: '古代的，属于数千年前的历史时期的'
+    exampleSentence: 'The ancient Egyptians built the pyramids over 4,000 years ago.'
+    exampleSentenceZh: '古埃及人在4000多年前建造了金字塔。'
+    wordFamily: []
+    collocations:
+      - 'ancient history'
+      - 'ancient civilisation'
+      - 'ancient ruins'
+    synonyms: [old, historic, antique]
+    antonyms: [modern, contemporary, recent]
+    level: 3
+    firstAppear: D310
+    reviewSchedule: [D311, D313, D317, D324, D340]
+
+  - id: V1747
+    word: civilisation
+    phonetic: '/ˌsɪvəlaɪˈzeɪʃən/'
+    partOfSpeech: noun
+    definition: 'A society with its own culture, way of life, and organisation'
+    definitionZh: '文明，有自己文化、生活方式和组织的社会'
+    exampleSentence: 'The Roman civilisation had a huge influence on European languages and law.'
+    exampleSentenceZh: '罗马文明对欧洲语言和法律有巨大的影响。'
+    wordFamily:
+      - form: civilise
+        partOfSpeech: verb
+      - form: civilised
+        partOfSpeech: adjective
+    collocations:
+      - 'ancient civilisation'
+      - 'Western civilisation'
+      - 'human civilisation'
+    synonyms: [culture, society]
+    antonyms: []
+    level: 4
+    firstAppear: D310
+    reviewSchedule: [D311, D313, D317, D324, D340]
+
+  - id: V1748
+    word: influence
+    phonetic: '/ˈɪnfluəns/'
+    partOfSpeech: noun
+    definition: 'The power to have an effect on people or things; someone or something that has this power'
+    definitionZh: '影响，对人或事物产生影响的力量'
+    exampleSentence: 'Social media has a strong influence on young people today.'
+    exampleSentenceZh: '社交媒体对当今年轻人有很大的影响。'
+    wordFamily:
+      - form: influence
+        partOfSpeech: verb
+      - form: influential
+        partOfSpeech: adjective
+    collocations:
+      - 'have an influence on'
+      - 'under the influence'
+      - 'strong influence'
+    synonyms: [impact, effect, sway]
+    antonyms: []
+    level: 3
+    firstAppear: D310
+    reviewSchedule: [D311, D313, D317, D324, D340]
+
+  - id: V1749
+    word: heritage
+    phonetic: '/ˈherɪtɪdʒ/'
+    partOfSpeech: noun
+    definition: 'The traditions, history, and buildings that are part of a culture or country'
+    definitionZh: '遗产，文化或国家的传统、历史和建筑'
+    exampleSentence: 'The Great Wall of China is a UNESCO World Heritage Site.'
+    exampleSentenceZh: '中国长城是联合国教科文组织世界遗产。'
+    wordFamily: []
+    collocations:
+      - 'cultural heritage'
+      - 'World Heritage Site'
+      - 'heritage building'
+    synonyms: [tradition, legacy, inheritance]
+    antonyms: []
+    level: 4
+    firstAppear: D310
+    reviewSchedule: [D311, D313, D317, D324, D340]
+
+  - id: V1750
+    word: era
+    phonetic: '/ˈɪərə/'
+    partOfSpeech: noun
+    definition: 'A long period of time that is marked by a special feature or event'
+    definitionZh: '时代，以特殊特征或事件为标志的长时期'
+    exampleSentence: 'We are living in the era of digital technology.'
+    exampleSentenceZh: '我们正生活在数字技术时代。'
+    wordFamily: []
+    collocations:
+      - 'modern era'
+      - 'new era'
+      - 'golden era'
+    synonyms: [age, period, epoch]
+    antonyms: []
+    level: 3
+    firstAppear: D310
+    reviewSchedule: [D311, D313, D317, D324, D340]
+
+  # ============================================
+  # D311: V1751-V1755 — Education & Learning
+  # ============================================
+
+  - id: V1751
+    word: acquire
+    phonetic: '/əˈkwaɪər/'
+    partOfSpeech: verb
+    definition: 'To gain knowledge or a skill through study, practice, or experience'
+    definitionZh: '获取，通过学习、练习或经验获得知识或技能'
+    exampleSentence: 'Children acquire language naturally by listening to the people around them.'
+    exampleSentenceZh: '孩子们通过听周围人说话自然地习得语言。'
+    wordFamily:
+      - form: acquisition
+        partOfSpeech: noun
+    collocations:
+      - 'acquire skills'
+      - 'acquire knowledge'
+      - 'language acquisition'
+    synonyms: [gain, obtain, develop]
+    antonyms: [lose, forfeit]
+    level: 4
+    firstAppear: D311
+    reviewSchedule: [D312, D314, D318, D325, D341]
+
+  - id: V1752
+    word: curriculum
+    phonetic: '/kəˈrɪkjələm/'
+    partOfSpeech: noun
+    definition: 'The subjects that are taught in a school or the things studied in a particular course'
+    definitionZh: '课程，学校教授的科目或特定课程中学习的内容'
+    exampleSentence: 'The school curriculum includes science, languages, and physical education.'
+    exampleSentenceZh: '学校课程包括科学、语言和体育。'
+    wordFamily: []
+    collocations:
+      - 'school curriculum'
+      - 'national curriculum'
+      - 'curriculum design'
+    synonyms: [syllabus, programme, course]
+    antonyms: []
+    level: 4
+    firstAppear: D311
+    reviewSchedule: [D312, D314, D318, D325, D341]
+
+  - id: V1753
+    word: assess
+    phonetic: '/əˈses/'
+    partOfSpeech: verb
+    definition: 'To judge or decide the amount, value, quality, or importance of something'
+    definitionZh: '评估，判断某事物的数量、价值、质量或重要性'
+    exampleSentence: 'The writing paper is assessed on content, language, and organisation.'
+    exampleSentenceZh: '写作试卷根据内容、语言和组织进行评估。'
+    wordFamily:
+      - form: assessment
+        partOfSpeech: noun
+      - form: assessor
+        partOfSpeech: noun
+    collocations:
+      - 'assess performance'
+      - 'continuous assessment'
+      - 'assess the situation'
+    synonyms: [evaluate, judge, measure]
+    antonyms: [ignore, overlook]
+    level: 4
+    firstAppear: D311
+    reviewSchedule: [D312, D314, D318, D325, D341]
+
+  - id: V1754
+    word: motivation
+    phonetic: '/ˌməʊtɪˈveɪʃən/'
+    partOfSpeech: noun
+    definition: 'The reason or enthusiasm for doing something'
+    definitionZh: '动机，做某事的理由或热情'
+    exampleSentence: 'Finding the right motivation is the key to successful language learning.'
+    exampleSentenceZh: '找到正确的动机是成功学习语言的关键。'
+    wordFamily:
+      - form: motivate
+        partOfSpeech: verb
+      - form: motivated
+        partOfSpeech: adjective
+      - form: motivational
+        partOfSpeech: adjective
+    collocations:
+      - 'lack of motivation'
+      - 'strong motivation'
+      - 'source of motivation'
+    synonyms: [drive, incentive, inspiration]
+    antonyms: [discouragement, apathy]
+    level: 3
+    firstAppear: D311
+    reviewSchedule: [D312, D314, D318, D325, D341]
+
+  - id: V1755
+    word: achievement
+    phonetic: '/əˈtʃiːvmənt/'
+    partOfSpeech: noun
+    definition: 'Something that has been accomplished successfully through effort or skill'
+    definitionZh: '成就，通过努力或技能成功完成的事情'
+    exampleSentence: 'Passing the FCE exam is a great achievement for any young learner.'
+    exampleSentenceZh: '通过FCE考试对任何年轻学习者来说都是一项了不起的成就。'
+    wordFamily:
+      - form: achieve
+        partOfSpeech: verb
+      - form: achievable
+        partOfSpeech: adjective
+      - form: achiever
+        partOfSpeech: noun
+    collocations:
+      - 'great achievement'
+      - 'sense of achievement'
+      - 'academic achievement'
+    synonyms: [accomplishment, success, attainment]
+    antonyms: [failure, defeat]
+    level: 3
+    firstAppear: D311
+    reviewSchedule: [D312, D314, D318, D325, D341]
+
+  # ============================================
+  # D312: V1756-V1760 — Communication & Media
+  # ============================================
+
+  - id: V1756
+    word: broadcast
+    phonetic: '/ˈbrɔːdkɑːst/'
+    partOfSpeech: verb
+    definition: 'To send out programmes on television or radio'
+    definitionZh: '广播，播出，在电视或广播中播送节目'
+    exampleSentence: 'The documentary was broadcast on BBC One last Sunday evening.'
+    exampleSentenceZh: '这部纪录片上周日晚上在BBC One播出了。'
+    wordFamily:
+      - form: broadcast
+        partOfSpeech: noun
+      - form: broadcaster
+        partOfSpeech: noun
+      - form: broadcasting
+        partOfSpeech: noun
+    collocations:
+      - 'broadcast live'
+      - 'broadcast a programme'
+      - 'national broadcast'
+    synonyms: [transmit, air, televise]
+    antonyms: []
+    level: 3
+    firstAppear: D312
+    reviewSchedule: [D313, D315, D319, D326, D342]
+
+  - id: V1757
+    word: audience
+    phonetic: '/ˈɔːdiəns/'
+    partOfSpeech: noun
+    definition: 'The group of people who watch, listen to, or read something'
+    definitionZh: '观众，听众，读者'
+    exampleSentence: 'The film attracted an audience of over ten million people worldwide.'
+    exampleSentenceZh: '这部电影在全球吸引了超过一千万的观众。'
+    wordFamily: []
+    collocations:
+      - 'target audience'
+      - 'wide audience'
+      - 'live audience'
+    synonyms: [viewers, spectators, listeners]
+    antonyms: [performer]
+    level: 3
+    firstAppear: D312
+    reviewSchedule: [D313, D315, D319, D326, D342]
+
+  - id: V1758
+    word: documentary
+    phonetic: '/ˌdɒkjʊˈmentəri/'
+    partOfSpeech: noun
+    definition: 'A film or television programme about real events and real people'
+    definitionZh: '纪录片，关于真实事件和真实人物的电影或电视节目'
+    exampleSentence: 'I watched a fascinating documentary about how coral reefs are being protected.'
+    exampleSentenceZh: '我看了一部关于珊瑚礁如何被保护的迷人纪录片。'
+    wordFamily:
+      - form: document
+        partOfSpeech: verb
+      - form: documentation
+        partOfSpeech: noun
+    collocations:
+      - 'wildlife documentary'
+      - 'make a documentary'
+      - 'documentary film'
+    synonyms: [programme, film, feature]
+    antonyms: [fiction]
+    level: 3
+    firstAppear: D312
+    reviewSchedule: [D313, D315, D319, D326, D342]
+
+  - id: V1759
+    word: journal
+    phonetic: '/ˈdʒɜːnəl/'
+    partOfSpeech: noun
+    definition: 'A newspaper or magazine about a particular subject; a personal diary'
+    definitionZh: '杂志，期刊；日记'
+    exampleSentence: 'Scientists published their findings in a leading medical journal.'
+    exampleSentenceZh: '科学家们在一本领先的医学杂志上发表了他们的发现。'
+    wordFamily:
+      - form: journalism
+        partOfSpeech: noun
+      - form: journalist
+        partOfSpeech: noun
+    collocations:
+      - 'academic journal'
+      - 'keep a journal'
+      - 'medical journal'
+    synonyms: [magazine, publication, diary]
+    antonyms: []
+    level: 3
+    firstAppear: D312
+    reviewSchedule: [D313, D315, D319, D326, D342]
+
+  - id: V1760
+    word: publish
+    phonetic: '/ˈpʌblɪʃ/'
+    partOfSpeech: verb
+    definition: 'To make a book, magazine, or article available for people to buy or read'
+    definitionZh: '出版，发表，使书籍、杂志或文章可供人们购买或阅读'
+    exampleSentence: 'The author published her first novel when she was only sixteen years old.'
+    exampleSentenceZh: '这位作者在年仅十六岁时出版了她的第一部小说。'
+    wordFamily:
+      - form: publication
+        partOfSpeech: noun
+      - form: publisher
+        partOfSpeech: noun
+      - form: publishing
+        partOfSpeech: noun
+    collocations:
+      - 'publish a book'
+      - 'publish an article'
+      - 'widely published'
+    synonyms: [print, release, issue]
+    antonyms: [suppress, withhold, censor]
+    level: 3
+    firstAppear: D312
+    reviewSchedule: [D313, D315, D319, D326, D342]
+
+  # ============================================
+  # D313: V1761-V1765 — Health & Wellbeing
+  # ============================================
+
+  - id: V1761
+    word: benefit
+    phonetic: '/ˈbenɪfɪt/'
+    partOfSpeech: noun
+    definition: 'An advantage or positive result that comes from something'
+    definitionZh: '好处，益处，来自某事的优势或积极结果'
+    exampleSentence: 'One of the main benefits of learning a second language is improved memory.'
+    exampleSentenceZh: '学习第二语言的主要好处之一是记忆力的提高。'
+    wordFamily:
+      - form: benefit
+        partOfSpeech: verb
+      - form: beneficial
+        partOfSpeech: adjective
+    collocations:
+      - 'great benefit'
+      - 'benefit from'
+      - 'health benefits'
+    synonyms: [advantage, gain, asset]
+    antonyms: [drawback, disadvantage, harm]
+    level: 3
+    firstAppear: D313
+    reviewSchedule: [D314, D316, D320, D327, D343]
+
+  - id: V1762
+    word: concentration
+    phonetic: '/ˌkɒnsənˈtreɪʃən/'
+    partOfSpeech: noun
+    definition: 'The ability to focus your mind on one thing; the act of giving all your attention'
+    definitionZh: '集中注意力，专心致志的能力'
+    exampleSentence: 'Reading requires a high level of concentration, especially for exam-length passages.'
+    exampleSentenceZh: '阅读需要高度集中注意力，尤其是考试长度的文章。'
+    wordFamily:
+      - form: concentrate
+        partOfSpeech: verb
+      - form: concentrated
+        partOfSpeech: adjective
+    collocations:
+      - 'lack of concentration'
+      - 'require concentration'
+      - 'lose concentration'
+    synonyms: [focus, attention, absorption]
+    antonyms: [distraction, inattention]
+    level: 3
+    firstAppear: D313
+    reviewSchedule: [D314, D316, D320, D327, D343]
+
+  - id: V1763
+    word: anxiety
+    phonetic: '/æŋˈzaɪəti/'
+    partOfSpeech: noun
+    definition: 'A feeling of worry, nervousness, or unease about something uncertain'
+    definitionZh: '焦虑，对不确定事物的担心、紧张或不安感'
+    exampleSentence: 'Many students experience anxiety before taking important exams.'
+    exampleSentenceZh: '许多学生在参加重要考试前会感到焦虑。'
+    wordFamily:
+      - form: anxious
+        partOfSpeech: adjective
+      - form: anxiously
+        partOfSpeech: adverb
+    collocations:
+      - 'exam anxiety'
+      - 'feel anxiety'
+      - 'reduce anxiety'
+    synonyms: [worry, stress, nervousness]
+    antonyms: [calmness, confidence, relaxation]
+    level: 3
+    firstAppear: D313
+    reviewSchedule: [D314, D316, D320, D327, D343]
+
+  - id: V1764
+    word: adequate
+    phonetic: '/ˈædɪkwət/'
+    partOfSpeech: adjective
+    definition: 'Enough in quantity or good enough in quality for a particular purpose'
+    definitionZh: '足够的，充足的，在数量或质量上满足特定目的的'
+    exampleSentence: 'Make sure you get adequate sleep before your exam day.'
+    exampleSentenceZh: '确保你在考试日之前获得充足的睡眠。'
+    wordFamily:
+      - form: adequately
+        partOfSpeech: adverb
+      - form: inadequate
+        partOfSpeech: adjective
+    collocations:
+      - 'adequate preparation'
+      - 'adequate sleep'
+      - 'adequate resources'
+    synonyms: [sufficient, enough, satisfactory]
+    antonyms: [inadequate, insufficient, lacking]
+    level: 4
+    firstAppear: D313
+    reviewSchedule: [D314, D316, D320, D327, D343]
+
+  - id: V1765
+    word: leisure
+    phonetic: '/ˈleʒər/'
+    partOfSpeech: noun
+    definition: 'Free time when you are not working or studying and can relax and enjoy yourself'
+    definitionZh: '休闲，不工作或学习时可以放松和享受的自由时间'
+    exampleSentence: 'How people spend their leisure time has changed dramatically in the digital age.'
+    exampleSentenceZh: '在数字时代，人们如何度过休闲时间发生了巨大变化。'
+    wordFamily:
+      - form: leisurely
+        partOfSpeech: adjective
+    collocations:
+      - 'leisure time'
+      - 'leisure activities'
+      - 'at leisure'
+    synonyms: [free time, spare time, recreation]
+    antonyms: [work, labour, toil]
+    level: 3
+    firstAppear: D313
+    reviewSchedule: [D314, D316, D320, D327, D343]
+
+  # ============================================
+  # D314: V1766-V1770 — Society & Relationships
+  # ============================================
+
+  - id: V1766
+    word: community
+    phonetic: '/kəˈmjuːnəti/'
+    partOfSpeech: noun
+    definition: 'A group of people living in the same area or sharing common interests'
+    definitionZh: '社区，共同体，住在同一地区或有共同兴趣的一群人'
+    exampleSentence: 'The local community organised a festival to celebrate cultural diversity.'
+    exampleSentenceZh: '当地社区组织了一个节日来庆祝文化多样性。'
+    wordFamily:
+      - form: communal
+        partOfSpeech: adjective
+    collocations:
+      - 'local community'
+      - 'online community'
+      - 'sense of community'
+    synonyms: [neighbourhood, group, society]
+    antonyms: [individual, isolation]
+    level: 3
+    firstAppear: D314
+    reviewSchedule: [D315, D317, D321, D328, D344]
+
+  - id: V1767
+    word: diverse
+    phonetic: '/daɪˈvɜːs/'
+    partOfSpeech: adjective
+    definition: 'Including many different types of people or things'
+    definitionZh: '多样的，包含许多不同类型的人或事物的'
+    exampleSentence: 'London is one of the most ethnically diverse cities in the world.'
+    exampleSentenceZh: '伦敦是世界上民族最多样化的城市之一。'
+    wordFamily:
+      - form: diversity
+        partOfSpeech: noun
+      - form: diversify
+        partOfSpeech: verb
+    collocations:
+      - 'culturally diverse'
+      - 'diverse range'
+      - 'diverse opinions'
+    synonyms: [varied, varied, mixed]
+    antonyms: [uniform, homogeneous, identical]
+    level: 4
+    firstAppear: D314
+    reviewSchedule: [D315, D317, D321, D328, D344]
+
+  - id: V1768
+    word: volunteer
+    phonetic: '/ˌvɒlənˈtɪər/'
+    partOfSpeech: noun
+    definition: 'A person who offers to do something without being paid'
+    definitionZh: '志愿者，自愿做某事而不要求报酬的人'
+    exampleSentence: 'Over 200 volunteers helped to clean up the beach after the storm.'
+    exampleSentenceZh: '超过200名志愿者在暴风雨后帮助清理海滩。'
+    wordFamily:
+      - form: volunteer
+        partOfSpeech: verb
+      - form: voluntary
+        partOfSpeech: adjective
+    collocations:
+      - 'volunteer work'
+      - 'volunteer to help'
+      - 'dedicated volunteer'
+    synonyms: [helper, supporter]
+    antonyms: [professional, paid worker]
+    level: 3
+    firstAppear: D314
+    reviewSchedule: [D315, D317, D321, D328, D344]
+
+  - id: V1769
+    word: cooperate
+    phonetic: '/kəʊˈɒpəreɪt/'
+    partOfSpeech: verb
+    definition: 'To work together with someone in order to achieve a shared goal'
+    definitionZh: '合作，与某人一起工作以实现共同目标'
+    exampleSentence: 'The two countries agreed to cooperate on solving the pollution problem.'
+    exampleSentenceZh: '两国同意在解决污染问题上进行合作。'
+    wordFamily:
+      - form: cooperation
+        partOfSpeech: noun
+      - form: cooperative
+        partOfSpeech: adjective
+    collocations:
+      - 'cooperate with'
+      - 'cooperate closely'
+      - 'willing to cooperate'
+    synonyms: [collaborate, work together, team up]
+    antonyms: [compete, oppose, resist]
+    level: 3
+    firstAppear: D314
+    reviewSchedule: [D315, D317, D321, D328, D344]
+
+  - id: V1770
+    word: minority
+    phonetic: '/maɪˈnɒrəti/'
+    partOfSpeech: noun
+    definition: 'A smaller number or part; a group that is different from the larger group'
+    definitionZh: '少数，较小的数量或部分；与较大群体不同的群体'
+    exampleSentence: 'Only a small minority of students failed the exam.'
+    exampleSentenceZh: '只有少数学生没有通过考试。'
+    wordFamily: []
+    collocations:
+      - 'small minority'
+      - 'ethnic minority'
+      - 'minority opinion'
+    synonyms: [few, handful]
+    antonyms: [majority, most]
+    level: 4
+    firstAppear: D314
+    reviewSchedule: [D315, D317, D321, D328, D344]
+
+  # ============================================
+  # D315: V1771-V1775 — Verbs for Arguments
+  # ============================================
+
+  - id: V1771
+    word: argue
+    phonetic: '/ˈɑːɡjuː/'
+    partOfSpeech: verb
+    definition: 'To give reasons for or against something; to express disagreement'
+    definitionZh: '论证，争论，给出支持或反对的理由'
+    exampleSentence: 'Some experts argue that homework does more harm than good.'
+    exampleSentenceZh: '一些专家认为家庭作业弊大于利。'
+    wordFamily:
+      - form: argument
+        partOfSpeech: noun
+      - form: arguably
+        partOfSpeech: adverb
+      - form: argumentative
+        partOfSpeech: adjective
+    collocations:
+      - 'argue that'
+      - 'argue for/against'
+      - 'it could be argued'
+    synonyms: [contend, maintain, assert]
+    antonyms: [agree, concede]
+    level: 3
+    firstAppear: D315
+    reviewSchedule: [D316, D318, D322, D329, D345]
+
+  - id: V1772
+    word: acknowledge
+    phonetic: '/əkˈnɒlɪdʒ/'
+    partOfSpeech: verb
+    definition: 'To accept or admit that something is true or exists'
+    definitionZh: '承认，接受某事是真的或存在的'
+    exampleSentence: 'We must acknowledge that there are both advantages and disadvantages to this plan.'
+    exampleSentenceZh: '我们必须承认这个计划既有优点也有缺点。'
+    wordFamily:
+      - form: acknowledgement
+        partOfSpeech: noun
+    collocations:
+      - 'acknowledge that'
+      - 'widely acknowledged'
+      - 'fail to acknowledge'
+    synonyms: [recognise, admit, accept]
+    antonyms: [deny, ignore, reject]
+    level: 4
+    firstAppear: D315
+    reviewSchedule: [D316, D318, D322, D329, D345]
+
+  - id: V1773
+    word: justify
+    phonetic: '/ˈdʒʌstɪfaɪ/'
+    partOfSpeech: verb
+    definition: 'To give a good reason for something; to show that something is right or reasonable'
+    definitionZh: '证明……正当，为某事提供充分理由'
+    exampleSentence: 'You need to justify your opinion with clear examples from the text.'
+    exampleSentenceZh: '你需要用文本中的清晰例子来证明你的观点。'
+    wordFamily:
+      - form: justification
+        partOfSpeech: noun
+      - form: justified
+        partOfSpeech: adjective
+      - form: unjustified
+        partOfSpeech: adjective
+    collocations:
+      - 'justify a decision'
+      - 'fully justified'
+      - 'hard to justify'
+    synonyms: [defend, support, validate]
+    antonyms: [condemn, criticise]
+    level: 4
+    firstAppear: D315
+    reviewSchedule: [D316, D318, D322, D329, D345]
+
+  - id: V1774
+    word: imply
+    phonetic: '/ɪmˈplaɪ/'
+    partOfSpeech: verb
+    definition: 'To suggest something without saying it directly'
+    definitionZh: '暗示，不直接说但表达某事'
+    exampleSentence: 'The author implies that technology is not always a positive force.'
+    exampleSentenceZh: '作者暗示技术并不总是积极的力量。'
+    wordFamily:
+      - form: implication
+        partOfSpeech: noun
+      - form: implied
+        partOfSpeech: adjective
+    collocations:
+      - 'strongly imply'
+      - 'seem to imply'
+      - 'the implication is'
+    synonyms: [suggest, hint, insinuate]
+    antonyms: [state, declare, specify]
+    level: 4
+    firstAppear: D315
+    reviewSchedule: [D316, D318, D322, D329, D345]
+
+  - id: V1775
+    word: recommend
+    phonetic: '/ˌrekəˈmend/'
+    partOfSpeech: verb
+    definition: 'To suggest that something is good and worth trying or doing'
+    definitionZh: '推荐，建议某事好且值得尝试或做'
+    exampleSentence: 'I would strongly recommend practising past papers before the exam.'
+    exampleSentenceZh: '我强烈建议在考试前练习往年试卷。'
+    wordFamily:
+      - form: recommendation
+        partOfSpeech: noun
+    collocations:
+      - 'strongly recommend'
+      - 'highly recommend'
+      - 'recommend that'
+    synonyms: [suggest, advise, propose]
+    antonyms: [discourage, warn against]
+    level: 3
+    firstAppear: D315
+    reviewSchedule: [D316, D318, D322, D329, D345]
+
+  # ============================================
+  # D316: V1776-V1780 — Abstract Nouns
+  # ============================================
+
+  - id: V1776
+    word: perspective
+    phonetic: '/pəˈspektɪv/'
+    partOfSpeech: noun
+    definition: 'A particular way of thinking about or looking at something'
+    definitionZh: '视角，观点，思考或看待事物的特定方式'
+    exampleSentence: 'Travelling gives you a different perspective on your own culture.'
+    exampleSentenceZh: '旅行让你从不同的视角看待自己的文化。'
+    wordFamily: []
+    collocations:
+      - 'from my perspective'
+      - 'different perspective'
+      - 'keep things in perspective'
+    synonyms: [viewpoint, outlook, standpoint]
+    antonyms: []
+    level: 4
+    firstAppear: D316
+    reviewSchedule: [D317, D319, D323, D330, D346]
+
+  - id: V1777
+    word: phenomenon
+    phonetic: '/fɪˈnɒmɪnən/'
+    partOfSpeech: noun
+    definition: 'Something that exists and can be observed, especially something unusual'
+    definitionZh: '现象，存在且可以被观察到的事物，尤其是不寻常的'
+    exampleSentence: 'The Northern Lights are a natural phenomenon that attracts tourists from around the world.'
+    exampleSentenceZh: '北极光是一种自然现象，吸引着来自世界各地的游客。'
+    wordFamily:
+      - form: phenomena
+        partOfSpeech: noun
+      - form: phenomenal
+        partOfSpeech: adjective
+    collocations:
+      - 'natural phenomenon'
+      - 'social phenomenon'
+      - 'strange phenomenon'
+    synonyms: [event, occurrence, marvel]
+    antonyms: []
+    level: 4
+    firstAppear: D316
+    reviewSchedule: [D317, D319, D323, D330, D346]
+
+  - id: V1778
+    word: principle
+    phonetic: '/ˈprɪnsɪpəl/'
+    partOfSpeech: noun
+    definition: 'A basic truth, law, or belief that explains how something works or guides behaviour'
+    definitionZh: '原则，原理，解释事物运作方式或指导行为的基本真理、法则或信念'
+    exampleSentence: 'The basic principle of good writing is to keep your ideas clear and organised.'
+    exampleSentenceZh: '好的写作的基本原则是保持你的想法清晰有条理。'
+    wordFamily: []
+    collocations:
+      - 'basic principle'
+      - 'guiding principle'
+      - 'in principle'
+    synonyms: [rule, standard, guideline]
+    antonyms: []
+    level: 4
+    firstAppear: D316
+    reviewSchedule: [D317, D319, D323, D330, D346]
+
+  - id: V1779
+    word: strategy
+    phonetic: '/ˈstrætədʒi/'
+    partOfSpeech: noun
+    definition: 'A plan or method for achieving a particular goal, especially over a period of time'
+    definitionZh: '策略，为实现特定目标而制定的计划或方法'
+    exampleSentence: 'Having a clear exam strategy will help you manage your time effectively.'
+    exampleSentenceZh: '有一个清晰的考试策略会帮助你有效地管理时间。'
+    wordFamily:
+      - form: strategic
+        partOfSpeech: adjective
+      - form: strategically
+        partOfSpeech: adverb
+    collocations:
+      - 'exam strategy'
+      - 'effective strategy'
+      - 'develop a strategy'
+    synonyms: [plan, approach, tactic]
+    antonyms: []
+    level: 3
+    firstAppear: D316
+    reviewSchedule: [D317, D319, D323, D330, D346]
+
+  - id: V1780
+    word: awareness
+    phonetic: '/əˈweənəs/'
+    partOfSpeech: noun
+    definition: 'Knowledge or understanding of a situation, fact, or subject'
+    definitionZh: '意识，认识，对情况、事实或主题的了解'
+    exampleSentence: 'Environmental awareness among young people has increased significantly.'
+    exampleSentenceZh: '年轻人的环保意识显著提高了。'
+    wordFamily:
+      - form: aware
+        partOfSpeech: adjective
+      - form: unaware
+        partOfSpeech: adjective
+    collocations:
+      - 'raise awareness'
+      - 'environmental awareness'
+      - 'cultural awareness'
+    synonyms: [consciousness, understanding, knowledge]
+    antonyms: [ignorance, unawareness]
+    level: 3
+    firstAppear: D316
+    reviewSchedule: [D317, D319, D323, D330, D346]
+
+  # ============================================
+  # D317: V1781-V1785 — Problem-Solving Verbs
+  # ============================================
+
+  - id: V1781
+    word: investigate
+    phonetic: '/ɪnˈvestɪɡeɪt/'
+    partOfSpeech: verb
+    definition: 'To try to find out the truth about something by examining the facts carefully'
+    definitionZh: '调查，通过仔细检查事实来试图找出真相'
+    exampleSentence: 'Scientists investigated why certain birds are disappearing from the area.'
+    exampleSentenceZh: '科学家们调查了为什么某些鸟类正在从该地区消失。'
+    wordFamily:
+      - form: investigation
+        partOfSpeech: noun
+      - form: investigator
+        partOfSpeech: noun
+    collocations:
+      - 'investigate a case'
+      - 'investigate the cause'
+      - 'thoroughly investigate'
+    synonyms: [examine, explore, research]
+    antonyms: [ignore, overlook]
+    level: 3
+    firstAppear: D317
+    reviewSchedule: [D318, D320, D324, D331, D347]
+
+  - id: V1782
+    word: determine
+    phonetic: '/dɪˈtɜːmɪn/'
+    partOfSpeech: verb
+    definition: 'To find out the facts about something; to make a firm decision about something'
+    definitionZh: '确定，查明某事的事实；下定决心'
+    exampleSentence: 'Researchers are trying to determine whether diet affects exam performance.'
+    exampleSentenceZh: '研究人员正试图确定饮食是否影响考试表现。'
+    wordFamily:
+      - form: determination
+        partOfSpeech: noun
+      - form: determined
+        partOfSpeech: adjective
+    collocations:
+      - 'determine the cause'
+      - 'determine whether'
+      - 'be determined to'
+    synonyms: [establish, ascertain, discover]
+    antonyms: [guess, estimate]
+    level: 4
+    firstAppear: D317
+    reviewSchedule: [D318, D320, D324, D331, D347]
+
+  - id: V1783
+    word: resolve
+    phonetic: '/rɪˈzɒlv/'
+    partOfSpeech: verb
+    definition: 'To find a solution to a problem or difficulty'
+    definitionZh: '解决，找到问题或困难的解决方案'
+    exampleSentence: 'The two sides met to try to resolve their disagreement peacefully.'
+    exampleSentenceZh: '双方会面试图和平解决分歧。'
+    wordFamily:
+      - form: resolution
+        partOfSpeech: noun
+    collocations:
+      - 'resolve a conflict'
+      - 'resolve a problem'
+      - 'resolve to do'
+    synonyms: [solve, settle, sort out]
+    antonyms: [complicate, worsen]
+    level: 4
+    firstAppear: D317
+    reviewSchedule: [D318, D320, D324, D331, D347]
+
+  - id: V1784
+    word: eliminate
+    phonetic: '/ɪˈlɪmɪneɪt/'
+    partOfSpeech: verb
+    definition: 'To completely remove or get rid of something'
+    definitionZh: '消除，完全移除或去掉某物'
+    exampleSentence: 'In multiple-choice questions, try to eliminate the wrong answers first.'
+    exampleSentenceZh: '在选择题中，先试着排除错误答案。'
+    wordFamily:
+      - form: elimination
+        partOfSpeech: noun
+    collocations:
+      - 'eliminate the possibility'
+      - 'eliminate waste'
+      - 'process of elimination'
+    synonyms: [remove, eradicate, exclude]
+    antonyms: [include, add, introduce]
+    level: 4
+    firstAppear: D317
+    reviewSchedule: [D318, D320, D324, D331, D347]
+
+  - id: V1785
+    word: predict
+    phonetic: '/prɪˈdɪkt/'
+    partOfSpeech: verb
+    definition: 'To say what you think will happen in the future based on evidence'
+    definitionZh: '预测，根据证据说出你认为未来会发生什么'
+    exampleSentence: 'It is difficult to predict exactly which topics will appear on the exam.'
+    exampleSentenceZh: '很难准确预测考试会出现哪些话题。'
+    wordFamily:
+      - form: prediction
+        partOfSpeech: noun
+      - form: predictable
+        partOfSpeech: adjective
+      - form: unpredictable
+        partOfSpeech: adjective
+    collocations:
+      - 'predict the outcome'
+      - 'difficult to predict'
+      - 'accurately predict'
+    synonyms: [forecast, foresee, anticipate]
+    antonyms: []
+    level: 3
+    firstAppear: D317
+    reviewSchedule: [D318, D320, D324, D331, D347]
+
+  # ============================================
+  # D318: V1786-V1790 — Describing Quantity & Degree
+  # ============================================
+
+  - id: V1786
+    word: majority
+    phonetic: '/məˈdʒɒrəti/'
+    partOfSpeech: noun
+    definition: 'More than half of a group of people or things; the greater number'
+    definitionZh: '多数，超过一半的人或事物'
+    exampleSentence: 'The vast majority of students said they preferred studying in the morning.'
+    exampleSentenceZh: '绝大多数学生说他们更喜欢早上学习。'
+    wordFamily:
+      - form: major
+        partOfSpeech: adjective
+    collocations:
+      - 'vast majority'
+      - 'majority of'
+      - 'majority opinion'
+    synonyms: [most, bulk, greater part]
+    antonyms: [minority, few]
+    level: 3
+    firstAppear: D318
+    reviewSchedule: [D319, D321, D325, D332, D348]
+
+  - id: V1787
+    word: approximately
+    phonetic: '/əˈprɒksɪmətli/'
+    partOfSpeech: adverb
+    definition: 'Close to an exact amount or number but not completely exact'
+    definitionZh: '大约，接近精确数量但不完全准确'
+    exampleSentence: 'Approximately 250,000 people take the FCE exam every year.'
+    exampleSentenceZh: '每年大约有250,000人参加FCE考试。'
+    wordFamily:
+      - form: approximate
+        partOfSpeech: adjective
+      - form: approximation
+        partOfSpeech: noun
+    collocations:
+      - 'approximately equal'
+      - 'approximately half'
+    synonyms: [roughly, about, around]
+    antonyms: [exactly, precisely]
+    level: 3
+    firstAppear: D318
+    reviewSchedule: [D319, D321, D325, D332, D348]
+
+  - id: V1788
+    word: extensive
+    phonetic: '/ɪkˈstensɪv/'
+    partOfSpeech: adjective
+    definition: 'Covering a large area; having a great range or amount'
+    definitionZh: '广泛的，覆盖大面积的；范围或数量很大的'
+    exampleSentence: 'Extensive research has been done on the benefits of reading for children.'
+    exampleSentenceZh: '关于阅读对儿童益处已经做了广泛的研究。'
+    wordFamily:
+      - form: extensively
+        partOfSpeech: adverb
+      - form: extent
+        partOfSpeech: noun
+    collocations:
+      - 'extensive research'
+      - 'extensive knowledge'
+      - 'extensive experience'
+    synonyms: [wide-ranging, comprehensive, thorough]
+    antonyms: [limited, narrow, restricted]
+    level: 4
+    firstAppear: D318
+    reviewSchedule: [D319, D321, D325, D332, D348]
+
+  - id: V1789
+    word: substantial
+    phonetic: '/səbˈstænʃəl/'
+    partOfSpeech: adjective
+    definition: 'Large in size, value, or importance'
+    definitionZh: '大量的，重大的，在大小、价值或重要性上很大的'
+    exampleSentence: 'The school made a substantial investment in new library books.'
+    exampleSentenceZh: '学校在新图书馆书籍上进行了大量投资。'
+    wordFamily:
+      - form: substantially
+        partOfSpeech: adverb
+    collocations:
+      - 'substantial amount'
+      - 'substantial improvement'
+      - 'substantial evidence'
+    synonyms: [considerable, significant, sizeable]
+    antonyms: [negligible, minor, trivial]
+    level: 4
+    firstAppear: D318
+    reviewSchedule: [D319, D321, D325, D332, D348]
+
+  - id: V1790
+    word: remarkable
+    phonetic: '/rɪˈmɑːkəbl/'
+    partOfSpeech: adjective
+    definition: 'Unusual or surprising in a way that causes people to take notice'
+    definitionZh: '非凡的，以令人注目的方式不同寻常或令人惊讶的'
+    exampleSentence: 'She made remarkable progress in just three months of English study.'
+    exampleSentenceZh: '她在短短三个月的英语学习中取得了非凡的进步。'
+    wordFamily:
+      - form: remarkably
+        partOfSpeech: adverb
+      - form: remark
+        partOfSpeech: noun
+    collocations:
+      - 'remarkable achievement'
+      - 'truly remarkable'
+      - 'remarkable progress'
+    synonyms: [extraordinary, outstanding, exceptional]
+    antonyms: [ordinary, unremarkable, average]
+    level: 3
+    firstAppear: D318
+    reviewSchedule: [D319, D321, D325, D332, D348]
+
+  # ============================================
+  # D319: V1791-V1795 — Exam Technique Words
+  # ============================================
+
+  - id: V1791
+    word: distinguish
+    phonetic: '/dɪˈstɪŋɡwɪʃ/'
+    partOfSpeech: verb
+    definition: 'To recognise the difference between two things or people'
+    definitionZh: '区分，识别两个事物或人之间的区别'
+    exampleSentence: 'It is important to distinguish between facts and opinions in a reading passage.'
+    exampleSentenceZh: '在阅读文章中区分事实和观点很重要。'
+    wordFamily:
+      - form: distinction
+        partOfSpeech: noun
+      - form: distinguishable
+        partOfSpeech: adjective
+    collocations:
+      - 'distinguish between'
+      - 'clearly distinguish'
+      - 'hard to distinguish'
+    synonyms: [differentiate, tell apart, discern]
+    antonyms: [confuse, mix up]
+    level: 4
+    firstAppear: D319
+    reviewSchedule: [D320, D322, D326, D333, D349]
+
+  - id: V1792
+    word: interpret
+    phonetic: '/ɪnˈtɜːprɪt/'
+    partOfSpeech: verb
+    definition: 'To explain the meaning of something; to understand in a particular way'
+    definitionZh: '解释，说明意义；以特定方式理解'
+    exampleSentence: 'Different readers may interpret the same poem in completely different ways.'
+    exampleSentenceZh: '不同的读者可能以完全不同的方式解读同一首诗。'
+    wordFamily:
+      - form: interpretation
+        partOfSpeech: noun
+      - form: interpreter
+        partOfSpeech: noun
+    collocations:
+      - 'interpret the data'
+      - 'open to interpretation'
+      - 'interpret as'
+    synonyms: [explain, understand, construe]
+    antonyms: [misinterpret, misunderstand]
+    level: 4
+    firstAppear: D319
+    reviewSchedule: [D320, D322, D326, D333, D349]
+
+  - id: V1793
+    word: paraphrase
+    phonetic: '/ˈpærəfreɪz/'
+    partOfSpeech: verb
+    definition: 'To express what someone has written or said using different words'
+    definitionZh: '改述，用不同的词语表达某人写的或说的内容'
+    exampleSentence: 'In the exam, the correct answer often paraphrases information from the text.'
+    exampleSentenceZh: '在考试中，正确答案通常改述文本中的信息。'
+    wordFamily:
+      - form: paraphrase
+        partOfSpeech: noun
+    collocations:
+      - 'paraphrase the text'
+      - 'paraphrase a sentence'
+    synonyms: [rephrase, reword, restate]
+    antonyms: [quote, copy]
+    level: 4
+    firstAppear: D319
+    reviewSchedule: [D320, D322, D326, D333, D349]
+
+  - id: V1794
+    word: context
+    phonetic: '/ˈkɒntekst/'
+    partOfSpeech: noun
+    definition: 'The situation or text surrounding a word or event that helps explain its meaning'
+    definitionZh: '上下文，语境，围绕一个词或事件的情况或文本'
+    exampleSentence: 'You can often guess the meaning of an unknown word from its context.'
+    exampleSentenceZh: '你通常可以从上下文猜测一个未知词的意思。'
+    wordFamily:
+      - form: contextual
+        partOfSpeech: adjective
+    collocations:
+      - 'in context'
+      - 'out of context'
+      - 'social context'
+    synonyms: [setting, circumstances, background]
+    antonyms: []
+    level: 3
+    firstAppear: D319
+    reviewSchedule: [D320, D322, D326, D333, D349]
+
+  - id: V1795
+    word: infer
+    phonetic: '/ɪnˈfɜːr/'
+    partOfSpeech: verb
+    definition: 'To form an opinion based on evidence rather than direct statement'
+    definitionZh: '推断，根据证据而非直接陈述形成观点'
+    exampleSentence: 'From the passage, we can infer that the writer supports renewable energy.'
+    exampleSentenceZh: '从文章中，我们可以推断作者支持可再生能源。'
+    wordFamily:
+      - form: inference
+        partOfSpeech: noun
+    collocations:
+      - 'infer from'
+      - 'it can be inferred'
+      - 'reasonable to infer'
+    synonyms: [deduce, conclude, gather]
+    antonyms: [state, declare]
+    level: 4
+    firstAppear: D319
+    reviewSchedule: [D320, D322, D326, D333, D349]
+
+  # ============================================
+  # D320: V1796-V1800 — Formal Report Language
+  # ============================================
+
+  - id: V1796
+    word: survey
+    phonetic: '/ˈsɜːveɪ/'
+    partOfSpeech: noun
+    definition: 'A study of the opinions or experiences of a group of people, done by asking questions'
+    definitionZh: '调查，通过提问了解一群人的意见或经历'
+    exampleSentence: 'A recent survey found that 80% of young people use social media daily.'
+    exampleSentenceZh: '最近一项调查发现80%的年轻人每天使用社交媒体。'
+    wordFamily:
+      - form: survey
+        partOfSpeech: verb
+      - form: surveyor
+        partOfSpeech: noun
+    collocations:
+      - 'conduct a survey'
+      - 'recent survey'
+      - 'survey results'
+    synonyms: [poll, questionnaire, study]
+    antonyms: []
+    level: 3
+    firstAppear: D320
+    reviewSchedule: [D321, D323, D327, D334, D350]
+
+  - id: V1797
+    word: proportion
+    phonetic: '/prəˈpɔːʃən/'
+    partOfSpeech: noun
+    definition: 'A part or share of a whole; the relationship between amounts'
+    definitionZh: '比例，整体的一部分；数量之间的关系'
+    exampleSentence: 'A large proportion of exam questions test your vocabulary knowledge.'
+    exampleSentenceZh: '很大一部分考试题目测试你的词汇知识。'
+    wordFamily:
+      - form: proportional
+        partOfSpeech: adjective
+      - form: disproportionate
+        partOfSpeech: adjective
+    collocations:
+      - 'large proportion'
+      - 'in proportion to'
+      - 'proportion of'
+    synonyms: [percentage, share, fraction]
+    antonyms: []
+    level: 4
+    firstAppear: D320
+    reviewSchedule: [D321, D323, D327, D334, D350]
+
+  - id: V1798
+    word: occur
+    phonetic: '/əˈkɜːr/'
+    partOfSpeech: verb
+    definition: 'To happen; to exist or be found somewhere'
+    definitionZh: '发生；存在于某处'
+    exampleSentence: 'Mistakes often occur when students rush through questions without reading carefully.'
+    exampleSentenceZh: '当学生匆忙做题而不仔细阅读时，错误经常发生。'
+    wordFamily:
+      - form: occurrence
+        partOfSpeech: noun
+    collocations:
+      - 'commonly occur'
+      - 'occur naturally'
+      - 'it occurred to me'
+    synonyms: [happen, take place, arise]
+    antonyms: []
+    level: 3
+    firstAppear: D320
+    reviewSchedule: [D321, D323, D327, D334, D350]
+
+  - id: V1799
+    word: tendency
+    phonetic: '/ˈtendənsi/'
+    partOfSpeech: noun
+    definition: 'A likelihood to behave or happen in a particular way'
+    definitionZh: '倾向，以特定方式行事或发生的可能性'
+    exampleSentence: 'There is a tendency for students to spend too long on the first question.'
+    exampleSentenceZh: '学生们有在第一道题上花太长时间的倾向。'
+    wordFamily:
+      - form: tend
+        partOfSpeech: verb
+    collocations:
+      - 'tendency to'
+      - 'general tendency'
+      - 'growing tendency'
+    synonyms: [inclination, propensity, habit]
+    antonyms: [aversion, reluctance]
+    level: 4
+    firstAppear: D320
+    reviewSchedule: [D321, D323, D327, D334, D350]
+
+  - id: V1800
+    word: illustrate
+    phonetic: '/ˈɪləstreɪt/'
+    partOfSpeech: verb
+    definition: 'To make something clear by giving examples or using pictures'
+    definitionZh: '说明，阐释，通过举例或使用图片使某事清楚'
+    exampleSentence: 'The teacher used a diagram to illustrate how the water cycle works.'
+    exampleSentenceZh: '老师用图表来说明水循环是如何运作的。'
+    wordFamily:
+      - form: illustration
+        partOfSpeech: noun
+      - form: illustrative
+        partOfSpeech: adjective
+    collocations:
+      - 'illustrate a point'
+      - 'clearly illustrate'
+      - 'as illustrated by'
+    synonyms: [demonstrate, show, exemplify]
+    antonyms: [obscure, confuse]
+    level: 3
+    firstAppear: D320
+    reviewSchedule: [D321, D323, D327, D334, D350]
+
+  # ============================================
+  # D321-D330: V1801-V1900 — Advanced Mixed Review
+  # ============================================
+
+  - id: V1801
+    word: outcome
+    phonetic: '/ˈaʊtkʌm/'
+    partOfSpeech: noun
+    definition: 'The final result of a process, meeting, or event'
+    definitionZh: '结果，过程、会议或事件的最终结果'
+    exampleSentence: 'The outcome of the experiment surprised everyone in the class.'
+    exampleSentenceZh: '实验的结果让全班都感到惊讶。'
+    wordFamily: []
+    collocations:
+      - 'possible outcome'
+      - 'positive outcome'
+      - 'determine the outcome'
+    synonyms: [result, consequence, conclusion]
+    antonyms: [cause, origin]
+    level: 3
+    firstAppear: D321
+    reviewSchedule: [D322, D324, D328, D335, D351]
+
+  - id: V1802
+    word: authority
+    phonetic: '/ɔːˈθɒrəti/'
+    partOfSpeech: noun
+    definition: 'The power or right to give orders, make decisions, or control people'
+    definitionZh: '权力，权威，发号施令、做决定或控制他人的权力或权利'
+    exampleSentence: 'The local authority decided to build a new park for the community.'
+    exampleSentenceZh: '地方当局决定为社区建造一个新公园。'
+    wordFamily:
+      - form: authoritative
+        partOfSpeech: adjective
+      - form: authorise
+        partOfSpeech: verb
+    collocations:
+      - 'local authority'
+      - 'authority on'
+      - 'position of authority'
+    synonyms: [power, control, jurisdiction]
+    antonyms: [powerlessness, submission]
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D322, D324, D328, D335, D351]
+
+  - id: V1803
+    word: restrict
+    phonetic: '/rɪˈstrɪkt/'
+    partOfSpeech: verb
+    definition: 'To limit or control the size, amount, or range of something'
+    definitionZh: '限制，控制某物的大小、数量或范围'
+    exampleSentence: 'Some schools restrict the use of mobile phones during lessons.'
+    exampleSentenceZh: '一些学校限制课堂上使用手机。'
+    wordFamily:
+      - form: restriction
+        partOfSpeech: noun
+      - form: restricted
+        partOfSpeech: adjective
+      - form: restrictive
+        partOfSpeech: adjective
+    collocations:
+      - 'restrict access'
+      - 'strictly restricted'
+      - 'restrict to'
+    synonyms: [limit, control, confine]
+    antonyms: [allow, permit, expand]
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D322, D324, D328, D335, D351]
+
+  - id: V1804
+    word: capable
+    phonetic: '/ˈkeɪpəbl/'
+    partOfSpeech: adjective
+    definition: 'Having the ability or qualities necessary to do something'
+    definitionZh: '有能力的，具有做某事所需的能力或素质的'
+    exampleSentence: 'With enough practice, anyone is capable of passing the FCE exam.'
+    exampleSentenceZh: '只要有足够的练习，任何人都有能力通过FCE考试。'
+    wordFamily:
+      - form: capability
+        partOfSpeech: noun
+      - form: incapable
+        partOfSpeech: adjective
+    collocations:
+      - 'capable of'
+      - 'highly capable'
+      - 'perfectly capable'
+    synonyms: [able, competent, skilled]
+    antonyms: [incapable, unable, incompetent]
+    level: 3
+    firstAppear: D321
+    reviewSchedule: [D322, D324, D328, D335, D351]
+
+  - id: V1805
+    word: merely
+    phonetic: '/ˈmɪəli/'
+    partOfSpeech: adverb
+    definition: 'Only; nothing more than'
+    definitionZh: '仅仅，只不过'
+    exampleSentence: 'The article is not merely informative — it is also very entertaining.'
+    exampleSentenceZh: '这篇文章不仅仅是提供信息的——它也非常有趣。'
+    wordFamily:
+      - form: mere
+        partOfSpeech: adjective
+    collocations:
+      - 'merely a'
+      - 'not merely'
+      - 'merely suggest'
+    synonyms: [only, simply, just]
+    antonyms: [significantly, substantially]
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D322, D324, D328, D335, D351]
+
+  - id: V1806
+    word: occupy
+    phonetic: '/ˈɒkjupaɪ/'
+    partOfSpeech: verb
+    definition: 'To fill or use a space or period of time; to live in a place'
+    definitionZh: '占据，使用空间或时间；居住在某处'
+    exampleSentence: 'Sports and hobbies occupy most of my free time after school.'
+    exampleSentenceZh: '体育运动和爱好占据了我放学后大部分的空闲时间。'
+    wordFamily:
+      - form: occupation
+        partOfSpeech: noun
+      - form: occupied
+        partOfSpeech: adjective
+    collocations:
+      - 'occupy time'
+      - 'occupy space'
+      - 'fully occupied'
+    synonyms: [fill, use, inhabit]
+    antonyms: [vacate, empty, leave]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D323, D325, D329, D336, D352]
+
+  - id: V1807
+    word: reluctant
+    phonetic: '/rɪˈlʌktənt/'
+    partOfSpeech: adjective
+    definition: 'Not willing or not eager to do something'
+    definitionZh: '不情愿的，不愿做某事的'
+    exampleSentence: 'Some students are reluctant to speak English in front of the whole class.'
+    exampleSentenceZh: '一些学生不愿在全班面前说英语。'
+    wordFamily:
+      - form: reluctance
+        partOfSpeech: noun
+      - form: reluctantly
+        partOfSpeech: adverb
+    collocations:
+      - 'reluctant to'
+      - 'somewhat reluctant'
+      - 'reluctant participant'
+    synonyms: [unwilling, hesitant, unenthusiastic]
+    antonyms: [eager, willing, enthusiastic]
+    level: 3
+    firstAppear: D322
+    reviewSchedule: [D323, D325, D329, D336, D352]
+
+  - id: V1808
+    word: initiative
+    phonetic: '/ɪˈnɪʃətɪv/'
+    partOfSpeech: noun
+    definition: 'A new plan or action to solve a problem or improve a situation; the ability to act independently'
+    definitionZh: '倡议，主动性，解决问题或改善情况的新计划或行动'
+    exampleSentence: 'The school launched a new initiative to encourage more reading.'
+    exampleSentenceZh: '学校推出了一项新的倡议来鼓励更多阅读。'
+    wordFamily:
+      - form: initiate
+        partOfSpeech: verb
+      - form: initial
+        partOfSpeech: adjective
+    collocations:
+      - 'take the initiative'
+      - 'new initiative'
+      - 'government initiative'
+    synonyms: [scheme, project, plan]
+    antonyms: [passivity, inaction]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D323, D325, D329, D336, D352]
+
+  - id: V1809
+    word: ensure
+    phonetic: '/ɪnˈʃʊər/'
+    partOfSpeech: verb
+    definition: 'To make certain that something happens or is done'
+    definitionZh: '确保，使某事确定发生或完成'
+    exampleSentence: 'Please check your work carefully to ensure there are no spelling mistakes.'
+    exampleSentenceZh: '请仔细检查你的作品以确保没有拼写错误。'
+    wordFamily: []
+    collocations:
+      - 'ensure that'
+      - 'ensure safety'
+      - 'ensure quality'
+    synonyms: [guarantee, make sure, secure]
+    antonyms: [endanger, risk, jeopardise]
+    level: 3
+    firstAppear: D322
+    reviewSchedule: [D323, D325, D329, D336, D352]
+
+  - id: V1810
+    word: supplement
+    phonetic: '/ˈsʌplɪmənt/'
+    partOfSpeech: verb
+    definition: 'To add something extra to improve or complete it'
+    definitionZh: '补充，添加额外的东西来改善或完善'
+    exampleSentence: 'You can supplement your classroom learning by reading English magazines.'
+    exampleSentenceZh: '你可以通过阅读英语杂志来补充课堂学习。'
+    wordFamily:
+      - form: supplement
+        partOfSpeech: noun
+      - form: supplementary
+        partOfSpeech: adjective
+    collocations:
+      - 'supplement with'
+      - 'supplement income'
+      - 'dietary supplement'
+    synonyms: [add to, complement, enhance]
+    antonyms: [reduce, diminish]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D323, D325, D329, D336, D352]
+
+  - id: V1811
+    word: conventional
+    phonetic: '/kənˈvenʃənəl/'
+    partOfSpeech: adjective
+    definition: 'Following traditional methods or behaviour; not unusual or innovative'
+    definitionZh: '传统的，遵循传统方法或行为的；不特别或创新的'
+    exampleSentence: 'Online learning is challenging conventional ideas about education.'
+    exampleSentenceZh: '在线学习正在挑战关于教育的传统观念。'
+    wordFamily:
+      - form: convention
+        partOfSpeech: noun
+      - form: conventionally
+        partOfSpeech: adverb
+      - form: unconventional
+        partOfSpeech: adjective
+    collocations:
+      - 'conventional method'
+      - 'conventional wisdom'
+      - 'conventional approach'
+    synonyms: [traditional, standard, typical]
+    antonyms: [unconventional, innovative, radical]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D324, D326, D330, D337, D353]
+
+  - id: V1812
+    word: exploit
+    phonetic: '/ɪkˈsplɔɪt/'
+    partOfSpeech: verb
+    definition: 'To use something well in order to gain the most from it; to use unfairly for benefit'
+    definitionZh: '利用，充分使用某物以获取最大利益；不公平地利用'
+    exampleSentence: 'Good exam candidates exploit their knowledge of word formation patterns.'
+    exampleSentenceZh: '好的考生充分利用他们对构词法模式的知识。'
+    wordFamily:
+      - form: exploitation
+        partOfSpeech: noun
+      - form: exploit
+        partOfSpeech: noun
+    collocations:
+      - 'exploit an opportunity'
+      - 'exploit resources'
+      - 'fully exploit'
+    synonyms: [utilise, take advantage of, make use of]
+    antonyms: [waste, neglect, squander]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D324, D326, D330, D337, D353]
+
+  - id: V1813
+    word: genuine
+    phonetic: '/ˈdʒenjuɪn/'
+    partOfSpeech: adjective
+    definition: 'Real and exactly what it appears to be; sincere and honest'
+    definitionZh: '真正的，真实的；真诚的'
+    exampleSentence: 'Her genuine enthusiasm for reading inspired the whole class.'
+    exampleSentenceZh: '她对阅读的真诚热情激励了全班。'
+    wordFamily:
+      - form: genuinely
+        partOfSpeech: adverb
+    collocations:
+      - 'genuine interest'
+      - 'genuine concern'
+      - 'genuinely believe'
+    synonyms: [authentic, real, sincere]
+    antonyms: [fake, false, insincere]
+    level: 3
+    firstAppear: D323
+    reviewSchedule: [D324, D326, D330, D337, D353]
+
+  - id: V1814
+    word: negotiate
+    phonetic: '/nɪˈɡəʊʃieɪt/'
+    partOfSpeech: verb
+    definition: 'To try to reach an agreement by discussing something formally'
+    definitionZh: '谈判，协商，通过正式讨论尝试达成协议'
+    exampleSentence: 'The two countries negotiated a deal to reduce carbon emissions.'
+    exampleSentenceZh: '两国谈判了一项减少碳排放的协议。'
+    wordFamily:
+      - form: negotiation
+        partOfSpeech: noun
+      - form: negotiator
+        partOfSpeech: noun
+    collocations:
+      - 'negotiate a deal'
+      - 'negotiate terms'
+      - 'negotiate with'
+    synonyms: [discuss, bargain, mediate]
+    antonyms: [demand, dictate, impose]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D324, D326, D330, D337, D353]
+
+  - id: V1815
+    word: prominent
+    phonetic: '/ˈprɒmɪnənt/'
+    partOfSpeech: adjective
+    definition: 'Important and well-known; easy to see or notice'
+    definitionZh: '著名的，突出的；重要且知名的；容易看到或注意到的'
+    exampleSentence: 'Several prominent scientists have spoken about the dangers of climate change.'
+    exampleSentenceZh: '几位著名科学家谈到了气候变化的危险。'
+    wordFamily:
+      - form: prominently
+        partOfSpeech: adverb
+      - form: prominence
+        partOfSpeech: noun
+    collocations:
+      - 'prominent figure'
+      - 'prominent role'
+      - 'most prominent'
+    synonyms: [famous, notable, distinguished]
+    antonyms: [obscure, unknown, insignificant]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D324, D326, D330, D337, D353]
+
+  - id: V1816
+    word: accumulate
+    phonetic: '/əˈkjuːmjʊleɪt/'
+    partOfSpeech: verb
+    definition: 'To gradually collect or increase over time'
+    definitionZh: '积累，随时间逐渐收集或增加'
+    exampleSentence: 'By reading every day, you will gradually accumulate a wide vocabulary.'
+    exampleSentenceZh: '通过每天阅读，你会逐渐积累广泛的词汇。'
+    wordFamily:
+      - form: accumulation
+        partOfSpeech: noun
+    collocations:
+      - 'accumulate knowledge'
+      - 'accumulate wealth'
+      - 'gradually accumulate'
+    synonyms: [gather, collect, amass]
+    antonyms: [deplete, disperse, scatter]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D325, D327, D331, D338, D354]
+
+  - id: V1817
+    word: anticipate
+    phonetic: '/ænˈtɪsɪpeɪt/'
+    partOfSpeech: verb
+    definition: 'To expect that something will happen and prepare for it'
+    definitionZh: '预料，期待某事将发生并为之准备'
+    exampleSentence: 'Good readers anticipate what will come next in a text.'
+    exampleSentenceZh: '好的读者会预料文本中接下来会出现什么。'
+    wordFamily:
+      - form: anticipation
+        partOfSpeech: noun
+    collocations:
+      - 'anticipate problems'
+      - 'widely anticipated'
+      - 'in anticipation of'
+    synonyms: [expect, foresee, predict]
+    antonyms: []
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D325, D327, D331, D338, D354]
+
+  - id: V1818
+    word: compensate
+    phonetic: '/ˈkɒmpenseɪt/'
+    partOfSpeech: verb
+    definition: 'To provide something good to balance or reduce the effect of something bad'
+    definitionZh: '补偿，弥补，提供好的东西来平衡或减少坏事的影响'
+    exampleSentence: 'Strong vocabulary knowledge can compensate for weaknesses in grammar.'
+    exampleSentenceZh: '强大的词汇知识可以弥补语法方面的弱点。'
+    wordFamily:
+      - form: compensation
+        partOfSpeech: noun
+    collocations:
+      - 'compensate for'
+      - 'to compensate'
+      - 'financial compensation'
+    synonyms: [offset, make up for, balance]
+    antonyms: [worsen, aggravate]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D325, D327, D331, D338, D354]
+
+  - id: V1819
+    word: emphasise
+    phonetic: '/ˈemfəsaɪz/'
+    partOfSpeech: verb
+    definition: 'To give special importance or attention to something'
+    definitionZh: '强调，给予某事特别的重要性或关注'
+    exampleSentence: 'The examiner emphasised the importance of answering all parts of the question.'
+    exampleSentenceZh: '考官强调了回答问题所有部分的重要性。'
+    wordFamily:
+      - form: emphasis
+        partOfSpeech: noun
+      - form: emphatic
+        partOfSpeech: adjective
+    collocations:
+      - 'strongly emphasise'
+      - 'emphasise the importance'
+      - 'emphasise that'
+    synonyms: [stress, highlight, underline]
+    antonyms: [understate, downplay, minimise]
+    level: 3
+    firstAppear: D324
+    reviewSchedule: [D325, D327, D331, D338, D354]
+
+  - id: V1820
+    word: specify
+    phonetic: '/ˈspesɪfaɪ/'
+    partOfSpeech: verb
+    definition: 'To state something clearly and in detail'
+    definitionZh: '明确指出，详细说明'
+    exampleSentence: 'The question specifies that you must write between 140 and 190 words.'
+    exampleSentenceZh: '题目明确指出你必须写140到190个字。'
+    wordFamily:
+      - form: specific
+        partOfSpeech: adjective
+      - form: specifically
+        partOfSpeech: adverb
+      - form: specification
+        partOfSpeech: noun
+    collocations:
+      - 'clearly specify'
+      - 'specify the requirements'
+      - 'as specified'
+    synonyms: [state, detail, define]
+    antonyms: [generalise, vague]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D325, D327, D331, D338, D354]
+
+  - id: V1821
+    word: correspond
+    phonetic: '/ˌkɒrɪˈspɒnd/'
+    partOfSpeech: verb
+    definition: 'To match or be connected with something; to communicate by writing'
+    definitionZh: '对应，相符；通信'
+    exampleSentence: 'Each letter in the answer corresponds to a specific paragraph in the text.'
+    exampleSentenceZh: '答案中的每个字母对应文本中的特定段落。'
+    wordFamily:
+      - form: correspondence
+        partOfSpeech: noun
+      - form: corresponding
+        partOfSpeech: adjective
+    collocations:
+      - 'correspond to'
+      - 'correspond with'
+      - 'corresponding section'
+    synonyms: [match, relate, agree]
+    antonyms: [differ, contradict]
+    level: 4
+    firstAppear: D325
+    reviewSchedule: [D326, D328, D332, D339, D355]
+
+  - id: V1822
+    word: devote
+    phonetic: '/dɪˈvəʊt/'
+    partOfSpeech: verb
+    definition: 'To give a lot of time, energy, or attention to something'
+    definitionZh: '奉献，投入大量时间、精力或注意力'
+    exampleSentence: 'You should devote at least thirty minutes a day to practising English.'
+    exampleSentenceZh: '你应该每天至少花三十分钟练习英语。'
+    wordFamily:
+      - form: devotion
+        partOfSpeech: noun
+      - form: devoted
+        partOfSpeech: adjective
+    collocations:
+      - 'devote time to'
+      - 'devote attention to'
+      - 'devoted to'
+    synonyms: [dedicate, commit, allocate]
+    antonyms: [neglect, ignore]
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D326, D328, D332, D339, D355]
+
+  - id: V1823
+    word: exaggerate
+    phonetic: '/ɪɡˈzædʒəreɪt/'
+    partOfSpeech: verb
+    definition: 'To make something seem larger, better, worse, or more important than it really is'
+    definitionZh: '夸大，夸张，使某事看起来比实际更大、更好、更差或更重要'
+    exampleSentence: 'Be careful not to exaggerate your claims in an essay — stick to facts.'
+    exampleSentenceZh: '注意不要在论文中夸大你的主张——坚持事实。'
+    wordFamily:
+      - form: exaggeration
+        partOfSpeech: noun
+      - form: exaggerated
+        partOfSpeech: adjective
+    collocations:
+      - 'greatly exaggerated'
+      - 'tend to exaggerate'
+      - 'slight exaggeration'
+    synonyms: [overstate, inflate, embellish]
+    antonyms: [understate, minimise, downplay]
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D326, D328, D332, D339, D355]
+
+  - id: V1824
+    word: fundamental
+    phonetic: '/ˌfʌndəˈmentəl/'
+    partOfSpeech: adjective
+    definition: 'Forming the base or core of something; very important and essential'
+    definitionZh: '基本的，根本的，构成基础的；非常重要且必不可少的'
+    exampleSentence: 'Understanding word formation is fundamental to scoring well in Part 3.'
+    exampleSentenceZh: '理解构词法是在第3部分取得好成绩的基础。'
+    wordFamily:
+      - form: fundamentally
+        partOfSpeech: adverb
+      - form: fundamentals
+        partOfSpeech: noun
+    collocations:
+      - 'fundamental principle'
+      - 'fundamental change'
+      - 'fundamentally different'
+    synonyms: [basic, essential, core]
+    antonyms: [secondary, peripheral, minor]
+    level: 4
+    firstAppear: D325
+    reviewSchedule: [D326, D328, D332, D339, D355]
+
+  - id: V1825
+    word: impact
+    phonetic: '/ˈɪmpækt/'
+    partOfSpeech: noun
+    definition: 'The powerful effect that something has on someone or something'
+    definitionZh: '影响，冲击，某事对某人或某物产生的强大影响'
+    exampleSentence: 'Social media has had a huge impact on the way young people communicate.'
+    exampleSentenceZh: '社交媒体对年轻人的沟通方式产生了巨大影响。'
+    wordFamily:
+      - form: impact
+        partOfSpeech: verb
+    collocations:
+      - 'have an impact on'
+      - 'huge impact'
+      - 'environmental impact'
+    synonyms: [effect, influence, impression]
+    antonyms: []
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D326, D328, D332, D339, D355]
+
+  - id: V1826
+    word: potential
+    phonetic: '/pəˈtenʃəl/'
+    partOfSpeech: adjective
+    definition: 'Possible when the right conditions exist; capable of becoming real'
+    definitionZh: '潜在的，可能的，在适当条件下可能成为现实的'
+    exampleSentence: 'Every student has the potential to achieve great things with the right support.'
+    exampleSentenceZh: '在正确的支持下，每个学生都有潜力取得伟大的成就。'
+    wordFamily:
+      - form: potential
+        partOfSpeech: noun
+      - form: potentially
+        partOfSpeech: adverb
+    collocations:
+      - 'potential risk'
+      - 'reach your potential'
+      - 'potential benefit'
+    synonyms: [possible, prospective, likely]
+    antonyms: [actual, certain, definite]
+    level: 3
+    firstAppear: D326
+    reviewSchedule: [D327, D329, D333, D340, D356]
+
+  - id: V1827
+    word: perceive
+    phonetic: '/pəˈsiːv/'
+    partOfSpeech: verb
+    definition: 'To become aware of something through the senses; to understand or think of in a particular way'
+    definitionZh: '感知，察觉；以特定方式理解或看待'
+    exampleSentence: 'People from different cultures may perceive the same event differently.'
+    exampleSentenceZh: '来自不同文化的人可能以不同方式感知同一事件。'
+    wordFamily:
+      - form: perception
+        partOfSpeech: noun
+      - form: perceptive
+        partOfSpeech: adjective
+    collocations:
+      - 'perceive as'
+      - 'widely perceived'
+      - 'fail to perceive'
+    synonyms: [notice, observe, recognise]
+    antonyms: [overlook, miss, ignore]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D327, D329, D333, D340, D356]
+
+  - id: V1828
+    word: preserve
+    phonetic: '/prɪˈzɜːv/'
+    partOfSpeech: verb
+    definition: 'To keep something in its original state or in good condition'
+    definitionZh: '保护，保存，使某物保持原始状态或良好状况'
+    exampleSentence: 'It is important to preserve historical buildings for future generations.'
+    exampleSentenceZh: '为后代保护历史建筑很重要。'
+    wordFamily:
+      - form: preservation
+        partOfSpeech: noun
+    collocations:
+      - 'preserve wildlife'
+      - 'preserve tradition'
+      - 'well-preserved'
+    synonyms: [protect, conserve, maintain]
+    antonyms: [destroy, damage, ruin]
+    level: 3
+    firstAppear: D326
+    reviewSchedule: [D327, D329, D333, D340, D356]
+
+  - id: V1829
+    word: reluctance
+    phonetic: '/rɪˈlʌktəns/'
+    partOfSpeech: noun
+    definition: 'Unwillingness or hesitation to do something'
+    definitionZh: '不情愿，犹豫，不愿做某事'
+    exampleSentence: 'She overcame her reluctance to speak and gave a brilliant presentation.'
+    exampleSentenceZh: '她克服了不愿发言的心理，做了一次精彩的演讲。'
+    wordFamily:
+      - form: reluctant
+        partOfSpeech: adjective
+      - form: reluctantly
+        partOfSpeech: adverb
+    collocations:
+      - 'show reluctance'
+      - 'overcome reluctance'
+      - 'initial reluctance'
+    synonyms: [unwillingness, hesitation, resistance]
+    antonyms: [eagerness, willingness, enthusiasm]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D327, D329, D333, D340, D356]
+
+  - id: V1830
+    word: stimulate
+    phonetic: '/ˈstɪmjʊleɪt/'
+    partOfSpeech: verb
+    definition: 'To encourage or cause an activity or process to develop or become more active'
+    definitionZh: '刺激，激发，鼓励或促使活动或过程发展或变得更加活跃'
+    exampleSentence: 'Reading widely stimulates your imagination and improves your vocabulary.'
+    exampleSentenceZh: '广泛阅读激发你的想象力并提高你的词汇量。'
+    wordFamily:
+      - form: stimulation
+        partOfSpeech: noun
+      - form: stimulating
+        partOfSpeech: adjective
+      - form: stimulus
+        partOfSpeech: noun
+    collocations:
+      - 'stimulate interest'
+      - 'stimulate growth'
+      - 'intellectually stimulating'
+    synonyms: [encourage, inspire, motivate]
+    antonyms: [discourage, stifle, suppress]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D327, D329, D333, D340, D356]
+
+  # D327-D330: Final review batch (V1831-V1900)
+
+  - id: V1831
+    word: abandon
+    phonetic: '/əˈbændən/'
+    partOfSpeech: verb
+    definition: 'To leave someone or something permanently; to give up on something'
+    definitionZh: '放弃，抛弃，永久离开某人或某物'
+    exampleSentence: 'Never abandon a question completely — even a partial answer can earn marks.'
+    exampleSentenceZh: '永远不要完全放弃一道题——即使部分回答也能得分。'
+    wordFamily:
+      - form: abandonment
+        partOfSpeech: noun
+      - form: abandoned
+        partOfSpeech: adjective
+    collocations:
+      - 'abandon hope'
+      - 'abandon a plan'
+      - 'abandoned building'
+    synonyms: [leave, desert, forsake]
+    antonyms: [keep, maintain, continue]
+    level: 3
+    firstAppear: D327
+    reviewSchedule: [D328, D330, D334, D341, D357]
+
+  - id: V1832
+    word: accommodate
+    phonetic: '/əˈkɒmədeɪt/'
+    partOfSpeech: verb
+    definition: 'To provide someone with a place to stay; to make room for or adapt to'
+    definitionZh: '容纳，适应，为某人提供住处；为……腾出空间'
+    exampleSentence: 'The new library can accommodate up to 500 students at a time.'
+    exampleSentenceZh: '新图书馆一次可以容纳多达500名学生。'
+    wordFamily:
+      - form: accommodation
+        partOfSpeech: noun
+    collocations:
+      - 'accommodate needs'
+      - 'accommodate guests'
+      - 'easily accommodate'
+    synonyms: [house, hold, fit]
+    antonyms: [exclude, reject]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D328, D330, D334, D341, D357]
+
+  - id: V1833
+    word: circumstances
+    phonetic: '/ˈsɜːkəmstænsɪz/'
+    partOfSpeech: noun
+    definition: 'The conditions or facts connected with a situation or event'
+    definitionZh: '情况，与某个情况或事件相关的条件或事实'
+    exampleSentence: 'Under no circumstances should you copy another student''s work.'
+    exampleSentenceZh: '在任何情况下都不应该抄袭其他学生的作业。'
+    wordFamily: []
+    collocations:
+      - 'under the circumstances'
+      - 'in certain circumstances'
+      - 'difficult circumstances'
+    synonyms: [conditions, situation, factors]
+    antonyms: []
+    level: 3
+    firstAppear: D327
+    reviewSchedule: [D328, D330, D334, D341, D357]
+
+  - id: V1834
+    word: contradiction
+    phonetic: '/ˌkɒntrəˈdɪkʃən/'
+    partOfSpeech: noun
+    definition: 'A situation where two things are opposite or do not agree with each other'
+    definitionZh: '矛盾，两件事相反或不一致的情况'
+    exampleSentence: 'There is a contradiction between what the author says in paragraph 2 and paragraph 5.'
+    exampleSentenceZh: '作者在第2段和第5段所说的之间存在矛盾。'
+    wordFamily:
+      - form: contradict
+        partOfSpeech: verb
+      - form: contradictory
+        partOfSpeech: adjective
+    collocations:
+      - 'in contradiction to'
+      - 'apparent contradiction'
+      - 'direct contradiction'
+    synonyms: [inconsistency, conflict, discrepancy]
+    antonyms: [agreement, consistency, harmony]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D328, D330, D334, D341, D357]
+
+  - id: V1835
+    word: demonstrate
+    phonetic: '/ˈdemənstreɪt/'
+    partOfSpeech: verb
+    definition: 'To show clearly that something exists or is true; to show how to do something'
+    definitionZh: '展示，证明，清楚地表明某事存在或属实'
+    exampleSentence: 'Your essay should demonstrate a wide range of vocabulary and grammar.'
+    exampleSentenceZh: '你的作文应该展示广泛的词汇和语法。'
+    wordFamily:
+      - form: demonstration
+        partOfSpeech: noun
+    collocations:
+      - 'clearly demonstrate'
+      - 'demonstrate ability'
+      - 'demonstrate knowledge'
+    synonyms: [show, prove, display]
+    antonyms: [conceal, hide]
+    level: 3
+    firstAppear: D327
+    reviewSchedule: [D328, D330, D334, D341, D357]
+
+  - id: V1836
+    word: aspect
+    phonetic: '/ˈæspekt/'
+    partOfSpeech: noun
+    definition: 'A particular part, feature, or way of thinking about something'
+    definitionZh: '方面，某事的特定部分、特征或思考方式'
+    exampleSentence: 'The most challenging aspect of the exam is the time pressure.'
+    exampleSentenceZh: '考试最具挑战性的方面是时间压力。'
+    wordFamily: []
+    collocations:
+      - 'important aspect'
+      - 'every aspect'
+      - 'various aspects'
+    synonyms: [element, feature, facet]
+    antonyms: []
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D329, D331, D335, D342, D358]
+
+  - id: V1837
+    word: alternative
+    phonetic: '/ɔːlˈtɜːnətɪv/'
+    partOfSpeech: noun
+    definition: 'One of two or more things that you can choose between'
+    definitionZh: '替代方案，可以选择的两个或更多事物之一'
+    exampleSentence: 'If you cannot think of the answer, consider the alternatives carefully.'
+    exampleSentenceZh: '如果你想不出答案，仔细考虑替代选项。'
+    wordFamily:
+      - form: alternative
+        partOfSpeech: adjective
+      - form: alternatively
+        partOfSpeech: adverb
+    collocations:
+      - 'viable alternative'
+      - 'offer an alternative'
+      - 'alternative method'
+    synonyms: [option, choice, substitute]
+    antonyms: []
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D329, D331, D335, D342, D358]
+
+  - id: V1838
+    word: controversy
+    phonetic: '/ˈkɒntrəvɜːsi/'
+    partOfSpeech: noun
+    definition: 'Public disagreement or debate about something important'
+    definitionZh: '争议，关于重要事情的公众分歧或辩论'
+    exampleSentence: 'The decision to close the library caused controversy in the community.'
+    exampleSentenceZh: '关闭图书馆的决定在社区引起了争议。'
+    wordFamily:
+      - form: controversial
+        partOfSpeech: adjective
+      - form: controversially
+        partOfSpeech: adverb
+    collocations:
+      - 'cause controversy'
+      - 'surrounded by controversy'
+      - 'controversial topic'
+    synonyms: [debate, dispute, argument]
+    antonyms: [agreement, consensus, harmony]
+    level: 4
+    firstAppear: D328
+    reviewSchedule: [D329, D331, D335, D342, D358]
+
+  - id: V1839
+    word: efficiently
+    phonetic: '/ɪˈfɪʃəntli/'
+    partOfSpeech: adverb
+    definition: 'In a way that achieves maximum results with minimum wasted effort or expense'
+    definitionZh: '高效地，以最少的浪费获得最大结果的方式'
+    exampleSentence: 'Learning to work efficiently under time pressure is a key exam skill.'
+    exampleSentenceZh: '学会在时间压力下高效工作是一项关键的考试技能。'
+    wordFamily:
+      - form: efficient
+        partOfSpeech: adjective
+      - form: efficiency
+        partOfSpeech: noun
+      - form: inefficient
+        partOfSpeech: adjective
+    collocations:
+      - 'work efficiently'
+      - 'use time efficiently'
+      - 'highly efficient'
+    synonyms: [effectively, productively, competently]
+    antonyms: [inefficiently, wastefully]
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D329, D331, D335, D342, D358]
+
+  - id: V1840
+    word: widespread
+    phonetic: '/ˈwaɪdspred/'
+    partOfSpeech: adjective
+    definition: 'Existing or happening in many places or among many people'
+    definitionZh: '广泛的，存在于许多地方或许多人中的'
+    exampleSentence: 'There is widespread agreement that reading is one of the best ways to learn vocabulary.'
+    exampleSentenceZh: '人们普遍认为阅读是学习词汇的最佳方式之一。'
+    wordFamily: []
+    collocations:
+      - 'widespread belief'
+      - 'widespread use'
+      - 'widespread concern'
+    synonyms: [common, prevalent, general]
+    antonyms: [rare, limited, localised]
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D329, D331, D335, D342, D358]
+
+  - id: V1841
+    word: enhance
+    phonetic: '/ɪnˈhɑːns/'
+    partOfSpeech: verb
+    definition: 'To improve the quality, amount, or value of something'
+    definitionZh: '增强，提高，改善某物的质量、数量或价值'
+    exampleSentence: 'Using a range of vocabulary enhances the quality of your writing.'
+    exampleSentenceZh: '使用多样的词汇提高了你写作的质量。'
+    wordFamily:
+      - form: enhancement
+        partOfSpeech: noun
+      - form: enhanced
+        partOfSpeech: adjective
+    collocations:
+      - 'enhance performance'
+      - 'greatly enhance'
+      - 'enhance the experience'
+    synonyms: [improve, boost, strengthen]
+    antonyms: [diminish, reduce, weaken]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D330, D332, D336, D343, D359]
+
+  - id: V1842
+    word: sufficient
+    phonetic: '/səˈfɪʃənt/'
+    partOfSpeech: adjective
+    definition: 'Enough for a particular purpose or need'
+    definitionZh: '足够的，满足特定目的或需要的'
+    exampleSentence: 'Make sure you allow sufficient time to check your answers at the end.'
+    exampleSentenceZh: '确保你留出足够的时间在最后检查答案。'
+    wordFamily:
+      - form: sufficiently
+        partOfSpeech: adverb
+      - form: insufficient
+        partOfSpeech: adjective
+    collocations:
+      - 'sufficient evidence'
+      - 'sufficient time'
+      - 'more than sufficient'
+    synonyms: [enough, adequate, ample]
+    antonyms: [insufficient, inadequate, lacking]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D330, D332, D336, D343, D359]
+
+  - id: V1843
+    word: inevitable
+    phonetic: '/ɪnˈevɪtəbl/'
+    partOfSpeech: adjective
+    definition: 'Certain to happen and impossible to avoid'
+    definitionZh: '不可避免的，一定会发生且无法避免的'
+    exampleSentence: 'It is inevitable that you will make some mistakes during the exam — do not panic.'
+    exampleSentenceZh: '在考试中犯一些错误是不可避免的——不要惊慌。'
+    wordFamily:
+      - form: inevitably
+        partOfSpeech: adverb
+      - form: inevitability
+        partOfSpeech: noun
+    collocations:
+      - 'almost inevitable'
+      - 'inevitable consequence'
+      - 'seem inevitable'
+    synonyms: [unavoidable, certain, inescapable]
+    antonyms: [avoidable, preventable, unlikely]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D330, D332, D336, D343, D359]
+
+  - id: V1844
+    word: precise
+    phonetic: '/prɪˈsaɪs/'
+    partOfSpeech: adjective
+    definition: 'Exact and clear; not vague'
+    definitionZh: '精确的，确切的；不含糊的'
+    exampleSentence: 'In the key word transformation, you need to express the precise meaning using different words.'
+    exampleSentenceZh: '在关键词转换中，你需要用不同的词表达精确的意思。'
+    wordFamily:
+      - form: precisely
+        partOfSpeech: adverb
+      - form: precision
+        partOfSpeech: noun
+    collocations:
+      - 'precise meaning'
+      - 'to be precise'
+      - 'precise instructions'
+    synonyms: [exact, accurate, specific]
+    antonyms: [vague, imprecise, rough]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D330, D332, D336, D343, D359]
+
+  - id: V1845
+    word: outcome
+    phonetic: '/ˈaʊtkʌm/'
+    partOfSpeech: noun
+    definition: 'The result or effect of an action or situation'
+    definitionZh: '结果，成果'
+    exampleSentence: 'Consistent daily practice leads to the best possible outcome on exam day.'
+    exampleSentenceZh: '坚持每日练习会在考试日带来最好的结果。'
+    wordFamily: []
+    collocations:
+      - 'desired outcome'
+      - 'likely outcome'
+      - 'final outcome'
+    synonyms: [result, consequence, product]
+    antonyms: [cause]
+    level: 3
+    firstAppear: D329
+    reviewSchedule: [D330, D332, D336, D343, D359]
+
+  - id: V1846
+    word: allocate
+    phonetic: '/ˈæləkeɪt/'
+    partOfSpeech: verb
+    definition: 'To give a share of something for a particular purpose'
+    definitionZh: '分配，为特定目的给予一定份额'
+    exampleSentence: 'Allocate ten minutes to plan your essay before you start writing.'
+    exampleSentenceZh: '在开始写作之前，分配十分钟来规划你的作文。'
+    wordFamily:
+      - form: allocation
+        partOfSpeech: noun
+    collocations:
+      - 'allocate time'
+      - 'allocate resources'
+      - 'allocate funds'
+    synonyms: [assign, distribute, apportion]
+    antonyms: [withhold, retain]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D331, D333, D337, D344, D360]
+
+  - id: V1847
+    word: evaluate
+    phonetic: '/ɪˈvæljueɪt/'
+    partOfSpeech: verb
+    definition: 'To judge or determine the significance, worth, or quality of something'
+    definitionZh: '评价，判断某物的重要性、价值或质量'
+    exampleSentence: 'After each practice test, evaluate your performance and identify weak areas.'
+    exampleSentenceZh: '每次模拟测试后，评估你的表现并找出薄弱环节。'
+    wordFamily:
+      - form: evaluation
+        partOfSpeech: noun
+    collocations:
+      - 'evaluate performance'
+      - 'carefully evaluate'
+      - 'evaluate the results'
+    synonyms: [assess, appraise, judge]
+    antonyms: [ignore, overlook]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D331, D333, D337, D344, D360]
+
+  - id: V1848
+    word: abstract
+    phonetic: '/ˈæbstrækt/'
+    partOfSpeech: adjective
+    definition: 'Existing as an idea, feeling, or quality rather than a physical object'
+    definitionZh: '抽象的，作为想法、感觉或品质存在而非物理对象的'
+    exampleSentence: 'Words like "freedom" and "justice" are abstract nouns.'
+    exampleSentenceZh: '像"自由"和"正义"这样的词是抽象名词。'
+    wordFamily:
+      - form: abstraction
+        partOfSpeech: noun
+      - form: abstractly
+        partOfSpeech: adverb
+    collocations:
+      - 'abstract idea'
+      - 'abstract noun'
+      - 'abstract concept'
+    synonyms: [theoretical, conceptual, intangible]
+    antonyms: [concrete, tangible, physical]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D331, D333, D337, D344, D360]
+
+  - id: V1849
+    word: contemporary
+    phonetic: '/kənˈtempərəri/'
+    partOfSpeech: adjective
+    definition: 'Belonging to or occurring in the present time; modern'
+    definitionZh: '当代的，属于或发生在当前时代的；现代的'
+    exampleSentence: 'The exam may include passages about contemporary issues like climate change.'
+    exampleSentenceZh: '考试可能包含关于当代问题如气候变化的文章。'
+    wordFamily: []
+    collocations:
+      - 'contemporary art'
+      - 'contemporary issues'
+      - 'contemporary society'
+    synonyms: [modern, current, present-day]
+    antonyms: [ancient, old-fashioned, historic]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D331, D333, D337, D344, D360]
+
+  - id: V1850
+    word: substitute
+    phonetic: '/ˈsʌbstɪtjuːt/'
+    partOfSpeech: verb
+    definition: 'To use or put something new in the place of something else'
+    definitionZh: '替代，用新的东西代替其他东西'
+    exampleSentence: 'In the key word transformation, you must substitute one structure for another.'
+    exampleSentenceZh: '在关键词转换中，你必须用一种结构替代另一种结构。'
+    wordFamily:
+      - form: substitute
+        partOfSpeech: noun
+      - form: substitution
+        partOfSpeech: noun
+    collocations:
+      - 'substitute for'
+      - 'substitute A with B'
+      - 'no substitute for'
+    synonyms: [replace, swap, exchange]
+    antonyms: [keep, retain, maintain]
+    level: 3
+    firstAppear: D330
+    reviewSchedule: [D331, D333, D337, D344, D360]
+
+  # Remaining V1851-V1900 are review-cycle words (re-tested from earlier months)
+  # These fill out the D321-D330 new+review slots
+
+  - id: V1851
+    word: perspective
+    phonetic: '/pəˈspektɪv/'
+    partOfSpeech: noun
+    definition: 'A way of thinking about and understanding something'
+    definitionZh: '视角，看待和理解事物的方式'
+    exampleSentence: 'Reading books from other countries gives you a new perspective on life.'
+    exampleSentenceZh: '阅读其他国家的书籍让你对生活有了新的视角。'
+    wordFamily: []
+    collocations: ['from a different perspective', 'gain perspective', 'wider perspective']
+    synonyms: [viewpoint, outlook, angle]
+    antonyms: []
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D323, D326, D330, D337]
+
+  - id: V1852
+    word: undergo
+    phonetic: '/ˌʌndəˈɡəʊ/'
+    partOfSpeech: verb
+    definition: 'To experience something, especially a change or something unpleasant'
+    definitionZh: '经历，经受，尤其是变化或不愉快的事情'
+    exampleSentence: 'The city has undergone a dramatic transformation in recent years.'
+    exampleSentenceZh: '这座城市近年来经历了巨大的转变。'
+    wordFamily: []
+    collocations: ['undergo a change', 'undergo surgery', 'undergo training']
+    synonyms: [experience, endure, go through]
+    antonyms: [avoid, escape]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D324, D327, D331, D338]
+
+  - id: V1853
+    word: comprehensive
+    phonetic: '/ˌkɒmprɪˈhensɪv/'
+    partOfSpeech: adjective
+    definition: 'Including all or nearly all elements or aspects of something'
+    definitionZh: '全面的，综合的，包含某事所有或几乎所有方面的'
+    exampleSentence: 'This month provides a comprehensive review of all the skills you have learned.'
+    exampleSentenceZh: '这个月提供了你所学所有技能的全面复习。'
+    wordFamily:
+      - form: comprehensively
+        partOfSpeech: adverb
+    collocations: ['comprehensive review', 'comprehensive guide', 'comprehensive plan']
+    synonyms: [thorough, complete, all-inclusive]
+    antonyms: [partial, incomplete, limited]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D325, D328, D332, D339]
+
+  - id: V1854
+    word: prior
+    phonetic: '/ˈpraɪər/'
+    partOfSpeech: adjective
+    definition: 'Existing or happening before something else'
+    definitionZh: '先前的，在其他事情之前存在或发生的'
+    exampleSentence: 'Prior knowledge of the topic helps you understand the reading passage more quickly.'
+    exampleSentenceZh: '对话题的先前了解帮助你更快理解阅读文章。'
+    wordFamily:
+      - form: priority
+        partOfSpeech: noun
+    collocations: ['prior knowledge', 'prior experience', 'prior to']
+    synonyms: [previous, earlier, preceding]
+    antonyms: [subsequent, following, later]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D326, D329, D333, D340]
+
+  - id: V1855
+    word: accumulate
+    phonetic: '/əˈkjuːmjʊleɪt/'
+    partOfSpeech: verb
+    definition: 'To gather or build up over time'
+    definitionZh: '积累，随时间收集或增加'
+    exampleSentence: 'Errors tend to accumulate when you rush through a paper without checking.'
+    exampleSentenceZh: '当你匆忙做完试卷而不检查时，错误往往会积累。'
+    wordFamily:
+      - form: accumulation
+        partOfSpeech: noun
+    collocations: ['accumulate experience', 'accumulate data', 'accumulate over time']
+    synonyms: [gather, collect, build up]
+    antonyms: [deplete, lose, scatter]
+    level: 4
+    firstAppear: D325
+    reviewSchedule: [D327, D330, D334, D341]
+
+  - id: V1856
+    word: obligation
+    phonetic: '/ˌɒblɪˈɡeɪʃən/'
+    partOfSpeech: noun
+    definition: 'Something that you must do because it is your duty or because you have agreed to do it'
+    definitionZh: '义务，责任，因为是你的职责或已经同意做而必须做的事情'
+    exampleSentence: 'Students have an obligation to complete all sections of the exam.'
+    exampleSentenceZh: '学生有义务完成考试的所有部分。'
+    wordFamily:
+      - form: oblige
+        partOfSpeech: verb
+      - form: obligatory
+        partOfSpeech: adjective
+    collocations: ['moral obligation', 'legal obligation', 'sense of obligation']
+    synonyms: [duty, responsibility, commitment]
+    antonyms: [choice, option, freedom]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D328, D331, D335, D342]
+
+  - id: V1857
+    word: anticipation
+    phonetic: '/ænˌtɪsɪˈpeɪʃən/'
+    partOfSpeech: noun
+    definition: 'A feeling of excitement about something that is going to happen'
+    definitionZh: '期待，对即将发生的事情的兴奋感'
+    exampleSentence: 'There was a sense of anticipation in the room as the exam results were announced.'
+    exampleSentenceZh: '当考试结果公布时，教室里充满了期待。'
+    wordFamily:
+      - form: anticipate
+        partOfSpeech: verb
+    collocations: ['in anticipation', 'sense of anticipation', 'eager anticipation']
+    synonyms: [expectation, excitement, eagerness]
+    antonyms: [dread, surprise]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D329, D332, D336, D343]
+
+  - id: V1858
+    word: diminish
+    phonetic: '/dɪˈmɪnɪʃ/'
+    partOfSpeech: verb
+    definition: 'To become or make something smaller, weaker, or less important'
+    definitionZh: '减少，使变小、变弱或变得不那么重要'
+    exampleSentence: 'Exam anxiety often diminishes once you have a clear preparation strategy.'
+    exampleSentenceZh: '一旦你有了清晰的备考策略，考试焦虑往往会减少。'
+    wordFamily:
+      - form: diminished
+        partOfSpeech: adjective
+    collocations: ['gradually diminish', 'diminish in importance', 'diminish over time']
+    synonyms: [decrease, reduce, lessen]
+    antonyms: [increase, grow, intensify]
+    level: 4
+    firstAppear: D328
+    reviewSchedule: [D330, D333, D337, D344]
+
+  - id: V1859
+    word: implement
+    phonetic: '/ˈɪmplɪment/'
+    partOfSpeech: verb
+    definition: 'To put a plan or system into action; to carry out'
+    definitionZh: '实施，执行，将计划或系统付诸行动'
+    exampleSentence: 'Once you learn a new exam strategy, you need to implement it in practice tests.'
+    exampleSentenceZh: '一旦你学到新的考试策略，就需要在模拟测试中实施它。'
+    wordFamily:
+      - form: implementation
+        partOfSpeech: noun
+    collocations: ['implement a plan', 'implement changes', 'implement a strategy']
+    synonyms: [execute, carry out, apply]
+    antonyms: [abandon, neglect, ignore]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D331, D334, D338, D345]
+
+  - id: V1860
+    word: inevitable
+    phonetic: '/ɪnˈevɪtəbl/'
+    partOfSpeech: adjective
+    definition: 'Impossible to avoid or prevent; certain to happen'
+    definitionZh: '不可避免的，无法避免或阻止的'
+    exampleSentence: 'Making mistakes is an inevitable part of the learning process.'
+    exampleSentenceZh: '犯错是学习过程中不可避免的一部分。'
+    wordFamily:
+      - form: inevitably
+        partOfSpeech: adverb
+    collocations: ['almost inevitable', 'inevitable result', 'inevitable change']
+    synonyms: [unavoidable, inescapable, certain]
+    antonyms: [avoidable, preventable, uncertain]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D332, D335, D339, D346]
+
+  # V1861-V1900: Additional high-frequency FCE words for review cycles
+
+  - id: V1861
+    word: abundant
+    phonetic: '/əˈbʌndənt/'
+    partOfSpeech: adjective
+    definition: 'Existing in very large quantities; more than enough'
+    definitionZh: '丰富的，大量存在的；绰绰有余的'
+    exampleSentence: 'The internet provides abundant resources for learning English.'
+    exampleSentenceZh: '互联网提供了丰富的英语学习资源。'
+    wordFamily:
+      - form: abundance
+        partOfSpeech: noun
+      - form: abundantly
+        partOfSpeech: adverb
+    collocations: ['abundant supply', 'abundant evidence', 'abundant resources']
+    synonyms: [plentiful, ample, copious]
+    antonyms: [scarce, rare, limited]
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D324, D328, D335]
+
+  - id: V1862
+    word: concrete
+    phonetic: '/ˈkɒnkriːt/'
+    partOfSpeech: adjective
+    definition: 'Based on facts rather than ideas; real and physical rather than abstract'
+    definitionZh: '具体的，基于事实而非想法的；真实的而非抽象的'
+    exampleSentence: 'Support your opinions with concrete examples from your own experience.'
+    exampleSentenceZh: '用你自己经历中的具体例子来支持你的观点。'
+    wordFamily:
+      - form: concretely
+        partOfSpeech: adverb
+    collocations: ['concrete example', 'concrete evidence', 'concrete plan']
+    synonyms: [specific, tangible, definite]
+    antonyms: [abstract, vague, theoretical]
+    level: 3
+    firstAppear: D322
+    reviewSchedule: [D325, D329, D336]
+
+  - id: V1863
+    word: ambiguous
+    phonetic: '/æmˈbɪɡjuəs/'
+    partOfSpeech: adjective
+    definition: 'Having more than one possible meaning; not clear'
+    definitionZh: '模棱两可的，有多种可能含义的；不清楚的'
+    exampleSentence: 'Avoid ambiguous language in your writing — be clear and direct.'
+    exampleSentenceZh: '在写作中避免模棱两可的语言——要清晰直接。'
+    wordFamily:
+      - form: ambiguity
+        partOfSpeech: noun
+      - form: ambiguously
+        partOfSpeech: adverb
+    collocations: ['deliberately ambiguous', 'ambiguous statement', 'somewhat ambiguous']
+    synonyms: [unclear, vague, equivocal]
+    antonyms: [clear, unambiguous, explicit]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D326, D330, D337]
+
+  - id: V1864
+    word: inevitable
+    phonetic: '/ɪnˈevɪtəbl/'
+    partOfSpeech: adjective
+    definition: 'Certain to happen; unavoidable'
+    definitionZh: '不可避免的'
+    exampleSentence: 'Progress is inevitable when you practise consistently.'
+    exampleSentenceZh: '当你坚持练习时，进步是不可避免的。'
+    wordFamily:
+      - form: inevitably
+        partOfSpeech: adverb
+    collocations: ['inevitable conclusion', 'seem inevitable']
+    synonyms: [unavoidable, certain]
+    antonyms: [avoidable, uncertain]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D327, D331, D338]
+
+  - id: V1865
+    word: tremendous
+    phonetic: '/trɪˈmendəs/'
+    partOfSpeech: adjective
+    definition: 'Very great in amount, size, or degree'
+    definitionZh: '巨大的，在数量、大小或程度上非常大的'
+    exampleSentence: 'She has made tremendous progress since she started her exam preparation.'
+    exampleSentenceZh: '自从她开始备考以来，她取得了巨大的进步。'
+    wordFamily:
+      - form: tremendously
+        partOfSpeech: adverb
+    collocations: ['tremendous amount', 'tremendous effort', 'tremendous success']
+    synonyms: [enormous, immense, huge]
+    antonyms: [tiny, minor, negligible]
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D328, D332, D339]
+
+  - id: V1866
+    word: coherent
+    phonetic: '/kəʊˈhɪərənt/'
+    partOfSpeech: adjective
+    definition: 'Logical and well-organised; easy to understand'
+    definitionZh: '连贯的，有逻辑且组织良好的；容易理解的'
+    exampleSentence: 'A good essay must be coherent — each paragraph should link to the next.'
+    exampleSentenceZh: '一篇好的文章必须连贯——每段应该与下一段相连。'
+    wordFamily:
+      - form: coherence
+        partOfSpeech: noun
+      - form: coherently
+        partOfSpeech: adverb
+      - form: incoherent
+        partOfSpeech: adjective
+    collocations: ['coherent argument', 'coherent structure', 'coherent plan']
+    synonyms: [logical, consistent, clear]
+    antonyms: [incoherent, confused, disjointed]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D329, D333, D340]
+
+  - id: V1867
+    word: eliminate
+    phonetic: '/ɪˈlɪmɪneɪt/'
+    partOfSpeech: verb
+    definition: 'To remove or get rid of'
+    definitionZh: '消除，去除'
+    exampleSentence: 'Eliminate obviously wrong answers before guessing on multiple-choice questions.'
+    exampleSentenceZh: '在猜选择题之前先排除明显错误的答案。'
+    wordFamily:
+      - form: elimination
+        partOfSpeech: noun
+    collocations: ['eliminate errors', 'eliminate options', 'process of elimination']
+    synonyms: [remove, exclude, eradicate]
+    antonyms: [include, add, keep]
+    level: 3
+    firstAppear: D327
+    reviewSchedule: [D330, D334, D341]
+
+  - id: V1868
+    word: revision
+    phonetic: '/rɪˈvɪʒən/'
+    partOfSpeech: noun
+    definition: 'The process of studying previously learned material again; changes made to improve something'
+    definitionZh: '复习；修订，重新学习以前学过的材料；为改善而做的更改'
+    exampleSentence: 'Regular revision is more effective than last-minute cramming.'
+    exampleSentenceZh: '定期复习比临时抱佛脚更有效。'
+    wordFamily:
+      - form: revise
+        partOfSpeech: verb
+    collocations: ['revision notes', 'revision plan', 'under revision']
+    synonyms: [review, study, amendment]
+    antonyms: []
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D331, D335, D342]
+
+  - id: V1869
+    word: prioritise
+    phonetic: '/praɪˈɒrɪtaɪz/'
+    partOfSpeech: verb
+    definition: 'To decide which of a group of things are the most important so that you can deal with them first'
+    definitionZh: '优先处理，决定一组事情中哪些最重要以便先处理'
+    exampleSentence: 'Learn to prioritise the questions you can answer confidently.'
+    exampleSentenceZh: '学会优先处理你能自信回答的题目。'
+    wordFamily:
+      - form: priority
+        partOfSpeech: noun
+    collocations: ['prioritise tasks', 'learn to prioritise', 'prioritise the most important']
+    synonyms: [rank, order, focus on]
+    antonyms: [neglect, postpone]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D332, D336, D343]
+
+  - id: V1870
+    word: systematic
+    phonetic: '/ˌsɪstəˈmætɪk/'
+    partOfSpeech: adjective
+    definition: 'Done using a fixed plan or method; methodical and organised'
+    definitionZh: '系统的，使用固定计划或方法的；有条理和有组织的'
+    exampleSentence: 'A systematic approach to exam preparation will give you the best results.'
+    exampleSentenceZh: '系统的备考方法会给你最好的结果。'
+    wordFamily:
+      - form: systematically
+        partOfSpeech: adverb
+      - form: system
+        partOfSpeech: noun
+    collocations: ['systematic approach', 'systematic review', 'systematic way']
+    synonyms: [methodical, organised, structured]
+    antonyms: [random, haphazard, unsystematic]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D333, D337, D344]
+
+  # V1871-V1900: Additional review-cycle words
+
+  - id: V1871
+    word: adapt
+    phonetic: '/əˈdæpt/'
+    partOfSpeech: verb
+    definition: 'To change something to make it suitable for a new situation'
+    definitionZh: '适应，改编，改变某物使其适合新情况'
+    exampleSentence: 'You need to adapt your writing style depending on who you are writing for.'
+    exampleSentenceZh: '你需要根据写作对象调整你的写作风格。'
+    wordFamily:
+      - form: adaptation
+        partOfSpeech: noun
+      - form: adaptable
+        partOfSpeech: adjective
+    collocations: ['adapt to', 'adapt quickly', 'well adapted']
+    synonyms: [adjust, modify, alter]
+    antonyms: [resist, maintain]
+    level: 3
+    firstAppear: D321
+    reviewSchedule: [D325, D330]
+
+  - id: V1872
+    word: elaborate
+    phonetic: '/ɪˈlæbərət/'
+    partOfSpeech: adjective
+    definition: 'Very detailed and complicated; containing a lot of careful work'
+    definitionZh: '精心制作的，详尽的，包含大量细致工作的'
+    exampleSentence: 'Your plan does not need to be elaborate — a few key points will do.'
+    exampleSentenceZh: '你的计划不需要很精细——几个要点就够了。'
+    wordFamily:
+      - form: elaborately
+        partOfSpeech: adverb
+      - form: elaborate
+        partOfSpeech: verb
+    collocations: ['elaborate plan', 'elaborate design', 'elaborate on']
+    synonyms: [detailed, complex, intricate]
+    antonyms: [simple, basic, plain]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D326, D331]
+
+  - id: V1873
+    word: straightforward
+    phonetic: '/ˌstreɪtˈfɔːwəd/'
+    partOfSpeech: adjective
+    definition: 'Easy to understand or do; not complicated'
+    definitionZh: '简单的，直截了当的；不复杂的'
+    exampleSentence: 'The first questions are usually straightforward to build your confidence.'
+    exampleSentenceZh: '第一批题目通常很简单，以建立你的信心。'
+    wordFamily: []
+    collocations: ['fairly straightforward', 'straightforward question', 'straightforward answer']
+    synonyms: [simple, easy, uncomplicated]
+    antonyms: [complicated, complex, tricky]
+    level: 3
+    firstAppear: D323
+    reviewSchedule: [D327, D332]
+
+  - id: V1874
+    word: distract
+    phonetic: '/dɪˈstrækt/'
+    partOfSpeech: verb
+    definition: 'To take someone''s attention away from what they are doing'
+    definitionZh: '分散注意力，使某人的注意力从正在做的事情上移开'
+    exampleSentence: 'Do not let difficult questions distract you from completing the easier ones first.'
+    exampleSentenceZh: '不要让难题分散你先完成简单题的注意力。'
+    wordFamily:
+      - form: distraction
+        partOfSpeech: noun
+      - form: distracted
+        partOfSpeech: adjective
+    collocations: ['easily distracted', 'distract from', 'distract attention']
+    synonyms: [divert, sidetrack, disturb]
+    antonyms: [focus, concentrate, attract]
+    level: 3
+    firstAppear: D324
+    reviewSchedule: [D328, D333]
+
+  - id: V1875
+    word: revise
+    phonetic: '/rɪˈvaɪz/'
+    partOfSpeech: verb
+    definition: 'To study again material you have already learned; to make changes to improve something'
+    definitionZh: '复习；修改，重新学习已学材料；做出改进'
+    exampleSentence: 'Always revise your writing before submitting it — small changes can make a big difference.'
+    exampleSentenceZh: '提交前一定要修改你的写作——小的改变可以产生很大的差异。'
+    wordFamily:
+      - form: revision
+        partOfSpeech: noun
+    collocations: ['revise for an exam', 'revise your work', 'thoroughly revise']
+    synonyms: [review, edit, amend]
+    antonyms: []
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D329, D334]
+
+  - id: V1876
+    word: competent
+    phonetic: '/ˈkɒmpɪtənt/'
+    partOfSpeech: adjective
+    definition: 'Having the necessary ability, knowledge, or skill to do something successfully'
+    definitionZh: '有能力的，有必要的能力、知识或技能来成功做某事'
+    exampleSentence: 'After months of preparation, she felt competent to take the FCE exam.'
+    exampleSentenceZh: '经过几个月的准备，她觉得有能力参加FCE考试了。'
+    wordFamily:
+      - form: competence
+        partOfSpeech: noun
+      - form: incompetent
+        partOfSpeech: adjective
+    collocations: ['highly competent', 'competent speaker', 'competent in']
+    synonyms: [capable, skilled, proficient]
+    antonyms: [incompetent, incapable, unskilled]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D330, D335]
+
+  - id: V1877
+    word: convey
+    phonetic: '/kənˈveɪ/'
+    partOfSpeech: verb
+    definition: 'To communicate or express a feeling, idea, or meaning'
+    definitionZh: '传达，传递感觉、想法或含义'
+    exampleSentence: 'Good writing conveys your ideas clearly and effectively.'
+    exampleSentenceZh: '好的写作清晰有效地传达你的想法。'
+    wordFamily: []
+    collocations: ['convey a message', 'convey meaning', 'convey feelings']
+    synonyms: [communicate, express, transmit]
+    antonyms: [conceal, withhold, suppress]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D331, D336]
+
+  - id: V1878
+    word: grasp
+    phonetic: '/ɡrɑːsp/'
+    partOfSpeech: verb
+    definition: 'To understand something completely; to take hold of firmly'
+    definitionZh: '理解，掌握；紧紧抓住'
+    exampleSentence: 'Once you grasp the basic patterns of word formation, Part 3 becomes much easier.'
+    exampleSentenceZh: '一旦你掌握了构词法的基本模式，第3部分就变得容易多了。'
+    wordFamily:
+      - form: grasp
+        partOfSpeech: noun
+    collocations: ['grasp the concept', 'firm grasp', 'grasp the meaning']
+    synonyms: [understand, comprehend, grip]
+    antonyms: [misunderstand, release, let go]
+    level: 3
+    firstAppear: D328
+    reviewSchedule: [D332, D337]
+
+  - id: V1879
+    word: rigorous
+    phonetic: '/ˈrɪɡərəs/'
+    partOfSpeech: adjective
+    definition: 'Very thorough and careful; strict and demanding'
+    definitionZh: '严格的，严谨的，非常彻底和仔细的'
+    exampleSentence: 'Rigorous practice under timed conditions is the best way to prepare for exams.'
+    exampleSentenceZh: '在限时条件下进行严格的练习是备考的最佳方式。'
+    wordFamily:
+      - form: rigorously
+        partOfSpeech: adverb
+      - form: rigour
+        partOfSpeech: noun
+    collocations: ['rigorous training', 'rigorous analysis', 'rigorous standards']
+    synonyms: [strict, thorough, demanding]
+    antonyms: [lenient, relaxed, easy-going]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D333, D338]
+
+  - id: V1880
+    word: consolidate
+    phonetic: '/kənˈsɒlɪdeɪt/'
+    partOfSpeech: verb
+    definition: 'To make a position of power or success stronger; to combine things'
+    definitionZh: '巩固，加强权力或成功的地位；合并'
+    exampleSentence: 'This month we will consolidate everything you have learned in the previous ten months.'
+    exampleSentenceZh: '这个月我们将巩固你在前十个月所学的一切。'
+    wordFamily:
+      - form: consolidation
+        partOfSpeech: noun
+    collocations: ['consolidate knowledge', 'consolidate gains', 'consolidate power']
+    synonyms: [strengthen, reinforce, solidify]
+    antonyms: [weaken, undermine, fragment]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D334, D339]
+
+  # V1881-V1900: Final batch of high-frequency exam words
+
+  - id: V1881
+    word: criterion
+    phonetic: '/kraɪˈtɪəriən/'
+    partOfSpeech: noun
+    definition: 'A standard by which something is judged (plural: criteria)'
+    definitionZh: '标准，判断某事物的准则（复数：criteria）'
+    exampleSentence: 'The main criterion for marking is how well you answer the question.'
+    exampleSentenceZh: '评分的主要标准是你回答问题的好坏程度。'
+    wordFamily:
+      - form: criteria
+        partOfSpeech: noun
+    collocations: ['meet the criteria', 'selection criteria', 'main criterion']
+    synonyms: [standard, benchmark, measure]
+    antonyms: []
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D326, D332]
+
+  - id: V1882
+    word: implication
+    phonetic: '/ˌɪmplɪˈkeɪʃən/'
+    partOfSpeech: noun
+    definition: 'Something that is suggested or hinted at but not stated directly'
+    definitionZh: '暗示，含义，被暗示但没有直接说明的事情'
+    exampleSentence: 'What are the implications of this new policy for students?'
+    exampleSentenceZh: '这项新政策对学生的含义是什么？'
+    wordFamily:
+      - form: imply
+        partOfSpeech: verb
+      - form: implicit
+        partOfSpeech: adjective
+    collocations: ['wider implications', 'practical implications', 'far-reaching implications']
+    synonyms: [suggestion, consequence, significance]
+    antonyms: [statement, declaration]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D327, D333]
+
+  - id: V1883
+    word: obstacle
+    phonetic: '/ˈɒbstəkəl/'
+    partOfSpeech: noun
+    definition: 'Something that blocks your way or prevents progress'
+    definitionZh: '障碍，阻挡你前进或妨碍进步的东西'
+    exampleSentence: 'Time pressure is the biggest obstacle for many FCE candidates.'
+    exampleSentenceZh: '时间压力是许多FCE考生最大的障碍。'
+    wordFamily: []
+    collocations: ['overcome an obstacle', 'major obstacle', 'face an obstacle']
+    synonyms: [barrier, hurdle, difficulty]
+    antonyms: [aid, help, advantage]
+    level: 3
+    firstAppear: D323
+    reviewSchedule: [D328, D334]
+
+  - id: V1884
+    word: attain
+    phonetic: '/əˈteɪn/'
+    partOfSpeech: verb
+    definition: 'To succeed in achieving something after effort'
+    definitionZh: '达到，获得，经过努力成功实现某事'
+    exampleSentence: 'With dedication and practice, you can attain a B2 level in English.'
+    exampleSentenceZh: '凭借努力和练习，你可以达到英语B2水平。'
+    wordFamily:
+      - form: attainment
+        partOfSpeech: noun
+      - form: attainable
+        partOfSpeech: adjective
+    collocations: ['attain a goal', 'attain a level', 'attain success']
+    synonyms: [achieve, reach, accomplish]
+    antonyms: [fail, miss, lose]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D329, D335]
+
+  - id: V1885
+    word: phase
+    phonetic: '/feɪz/'
+    partOfSpeech: noun
+    definition: 'A stage in a process of change or development'
+    definitionZh: '阶段，变化或发展过程中的一个时期'
+    exampleSentence: 'Learning a language goes through several phases, from beginner to advanced.'
+    exampleSentenceZh: '学习语言经历几个阶段，从初级到高级。'
+    wordFamily: []
+    collocations: ['initial phase', 'final phase', 'transition phase']
+    synonyms: [stage, step, period]
+    antonyms: []
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D330, D336]
+
+  - id: V1886
+    word: bias
+    phonetic: '/ˈbaɪəs/'
+    partOfSpeech: noun
+    definition: 'An unfair preference for or against something; prejudice'
+    definitionZh: '偏见，对某事不公平的偏好或反对'
+    exampleSentence: 'A good essay considers both sides of an argument without showing bias.'
+    exampleSentenceZh: '好的论文考虑争论的双方而不表现出偏见。'
+    wordFamily:
+      - form: biased
+        partOfSpeech: adjective
+      - form: unbiased
+        partOfSpeech: adjective
+    collocations: ['cultural bias', 'personal bias', 'show bias']
+    synonyms: [prejudice, partiality, favouritism]
+    antonyms: [fairness, impartiality, objectivity]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D331, D337]
+
+  - id: V1887
+    word: inevitable
+    phonetic: '/ɪnˈevɪtəbl/'
+    partOfSpeech: adjective
+    definition: 'Certain to happen and unavoidable'
+    definitionZh: '不可避免的'
+    exampleSentence: 'Change is inevitable — the key is how you respond to it.'
+    exampleSentenceZh: '变化是不可避免的——关键是你如何回应它。'
+    wordFamily:
+      - form: inevitably
+        partOfSpeech: adverb
+    collocations: ['inevitable outcome', 'inevitable change']
+    synonyms: [unavoidable, certain]
+    antonyms: [avoidable, unlikely]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D332, D338]
+
+  - id: V1888
+    word: coherent
+    phonetic: '/kəʊˈhɪərənt/'
+    partOfSpeech: adjective
+    definition: 'Clear, logical, and consistent'
+    definitionZh: '连贯的，清晰、逻辑和一致的'
+    exampleSentence: 'Make sure your argument is coherent from beginning to end.'
+    exampleSentenceZh: '确保你的论证从头到尾都是连贯的。'
+    wordFamily:
+      - form: coherence
+        partOfSpeech: noun
+    collocations: ['coherent essay', 'coherent response']
+    synonyms: [logical, clear, organised]
+    antonyms: [incoherent, confused]
+    level: 4
+    firstAppear: D328
+    reviewSchedule: [D333, D339]
+
+  - id: V1889
+    word: valid
+    phonetic: '/ˈvælɪd/'
+    partOfSpeech: adjective
+    definition: 'Reasonable and acceptable; legally effective'
+    definitionZh: '有效的，合理且可接受的'
+    exampleSentence: 'That is a valid concern — many students worry about time management.'
+    exampleSentenceZh: '那是一个合理的担忧——许多学生担心时间管理。'
+    wordFamily:
+      - form: validity
+        partOfSpeech: noun
+    collocations: ['valid reason', 'valid concern', 'valid for']
+    synonyms: [legitimate, sound, reasonable]
+    antonyms: [invalid, unfounded]
+    level: 3
+    firstAppear: D329
+    reviewSchedule: [D334, D340]
+
+  - id: V1890
+    word: thorough
+    phonetic: '/ˈθʌrə/'
+    partOfSpeech: adjective
+    definition: 'Done completely with great attention to detail'
+    definitionZh: '彻底的，完全的，非常注重细节的'
+    exampleSentence: 'A thorough understanding of grammar is essential for the Use of English paper.'
+    exampleSentenceZh: '对语法的透彻理解对语言运用试卷至关重要。'
+    wordFamily:
+      - form: thoroughly
+        partOfSpeech: adverb
+      - form: thoroughness
+        partOfSpeech: noun
+    collocations: ['thorough review', 'thorough preparation', 'thorough understanding']
+    synonyms: [comprehensive, detailed, complete]
+    antonyms: [superficial, hasty, incomplete]
+    level: 3
+    firstAppear: D330
+    reviewSchedule: [D335, D341]
+
+  - id: V1891
+    word: versatile
+    phonetic: '/ˈvɜːsətaɪl/'
+    partOfSpeech: adjective
+    definition: 'Able to adapt or be used for many different purposes'
+    definitionZh: '多才多艺的，多功能的，能适应或用于多种目的的'
+    exampleSentence: 'The word "get" is one of the most versatile verbs in English.'
+    exampleSentenceZh: '"Get"是英语中最多功能的动词之一。'
+    wordFamily:
+      - form: versatility
+        partOfSpeech: noun
+    collocations: ['versatile player', 'highly versatile', 'versatile tool']
+    synonyms: [flexible, adaptable, multi-purpose]
+    antonyms: [limited, inflexible, narrow]
+    level: 4
+    firstAppear: D321
+    reviewSchedule: [D327, D334]
+
+  - id: V1892
+    word: precise
+    phonetic: '/prɪˈsaɪs/'
+    partOfSpeech: adjective
+    definition: 'Exact, clear, and correct'
+    definitionZh: '精确的，准确的'
+    exampleSentence: 'Use precise vocabulary rather than vague words like "nice" or "good."'
+    exampleSentenceZh: '使用精确的词汇而不是像"nice"或"good"这样模糊的词。'
+    wordFamily:
+      - form: precision
+        partOfSpeech: noun
+    collocations: ['precise language', 'precise measurement']
+    synonyms: [exact, accurate]
+    antonyms: [vague, approximate]
+    level: 4
+    firstAppear: D322
+    reviewSchedule: [D328, D335]
+
+  - id: V1893
+    word: diminish
+    phonetic: '/dɪˈmɪnɪʃ/'
+    partOfSpeech: verb
+    definition: 'To become less or to make something less'
+    definitionZh: '减少，使变少'
+    exampleSentence: 'Your nervousness will diminish as you gain more exam experience.'
+    exampleSentenceZh: '随着你获得更多考试经验，紧张感会减少。'
+    wordFamily:
+      - form: diminished
+        partOfSpeech: adjective
+    collocations: ['diminish over time', 'diminish in size']
+    synonyms: [decrease, lessen, reduce]
+    antonyms: [increase, grow]
+    level: 4
+    firstAppear: D323
+    reviewSchedule: [D329, D336]
+
+  - id: V1894
+    word: feasible
+    phonetic: '/ˈfiːzəbl/'
+    partOfSpeech: adjective
+    definition: 'Possible and practical to do or achieve'
+    definitionZh: '可行的，可能且实际可做或可实现的'
+    exampleSentence: 'Is it feasible to answer all the questions in the time allowed?'
+    exampleSentenceZh: '在规定时间内回答所有问题可行吗？'
+    wordFamily:
+      - form: feasibility
+        partOfSpeech: noun
+    collocations: ['feasible plan', 'technically feasible', 'economically feasible']
+    synonyms: [possible, achievable, workable]
+    antonyms: [impossible, impractical, unfeasible]
+    level: 4
+    firstAppear: D324
+    reviewSchedule: [D330, D337]
+
+  - id: V1895
+    word: consistent
+    phonetic: '/kənˈsɪstənt/'
+    partOfSpeech: adjective
+    definition: 'Always behaving or happening in a similar way; not changing'
+    definitionZh: '一致的，持续的，始终以相似方式行事或发生的'
+    exampleSentence: 'Consistent daily practice is more effective than studying for hours once a week.'
+    exampleSentenceZh: '每天持续练习比一周学习一次数小时更有效。'
+    wordFamily:
+      - form: consistency
+        partOfSpeech: noun
+      - form: consistently
+        partOfSpeech: adverb
+      - form: inconsistent
+        partOfSpeech: adjective
+    collocations: ['consistent effort', 'consistent results', 'consistent with']
+    synonyms: [steady, regular, constant]
+    antonyms: [inconsistent, irregular, erratic]
+    level: 3
+    firstAppear: D325
+    reviewSchedule: [D331, D338]
+
+  - id: V1896
+    word: adjacent
+    phonetic: '/əˈdʒeɪsənt/'
+    partOfSpeech: adjective
+    definition: 'Next to or near something'
+    definitionZh: '邻近的，在旁边的'
+    exampleSentence: 'Look at the words adjacent to the gap — they give you clues about the answer.'
+    exampleSentenceZh: '看看空格旁边的词——它们给你关于答案的线索。'
+    wordFamily: []
+    collocations: ['adjacent to', 'adjacent room', 'adjacent area']
+    synonyms: [neighbouring, next to, adjoining]
+    antonyms: [distant, remote, far]
+    level: 4
+    firstAppear: D326
+    reviewSchedule: [D332, D339]
+
+  - id: V1897
+    word: retain
+    phonetic: '/rɪˈteɪn/'
+    partOfSpeech: verb
+    definition: 'To keep or continue to have something'
+    definitionZh: '保留，保持，继续拥有某物'
+    exampleSentence: 'Spaced repetition helps you retain vocabulary over the long term.'
+    exampleSentenceZh: '间隔重复帮助你长期保留词汇。'
+    wordFamily:
+      - form: retention
+        partOfSpeech: noun
+    collocations: ['retain information', 'retain control', 'retain knowledge']
+    synonyms: [keep, maintain, preserve]
+    antonyms: [lose, release, discard]
+    level: 4
+    firstAppear: D327
+    reviewSchedule: [D333, D340]
+
+  - id: V1898
+    word: crucial
+    phonetic: '/ˈkruːʃəl/'
+    partOfSpeech: adjective
+    definition: 'Extremely important; decisive'
+    definitionZh: '至关重要的，决定性的'
+    exampleSentence: 'The last five minutes of the exam are crucial for checking your work.'
+    exampleSentenceZh: '考试的最后五分钟对检查工作至关重要。'
+    wordFamily:
+      - form: crucially
+        partOfSpeech: adverb
+    collocations: ['crucial moment', 'crucial decision', 'crucial role']
+    synonyms: [vital, essential, critical]
+    antonyms: [unimportant, trivial]
+    level: 4
+    firstAppear: D328
+    reviewSchedule: [D334, D341]
+
+  - id: V1899
+    word: exceed
+    phonetic: '/ɪkˈsiːd/'
+    partOfSpeech: verb
+    definition: 'To go beyond what is allowed or expected; to be greater than'
+    definitionZh: '超过，超越，超出允许或预期的范围'
+    exampleSentence: 'Do not exceed the word limit — it shows poor planning.'
+    exampleSentenceZh: '不要超过字数限制——这表明规划不佳。'
+    wordFamily:
+      - form: excess
+        partOfSpeech: noun
+      - form: excessive
+        partOfSpeech: adjective
+      - form: excessively
+        partOfSpeech: adverb
+    collocations: ['exceed expectations', 'exceed the limit', 'far exceed']
+    synonyms: [surpass, go beyond, outdo]
+    antonyms: [fall short, underperform]
+    level: 4
+    firstAppear: D329
+    reviewSchedule: [D335, D342]
+
+  - id: V1900
+    word: proficient
+    phonetic: '/prəˈfɪʃənt/'
+    partOfSpeech: adjective
+    definition: 'Having a high level of skill or knowledge in something'
+    definitionZh: '精通的，在某方面具有高水平技能或知识的'
+    exampleSentence: 'By the end of this course, you will be proficient in all areas tested in the FCE exam.'
+    exampleSentenceZh: '到本课程结束时，你将精通FCE考试测试的所有方面。'
+    wordFamily:
+      - form: proficiency
+        partOfSpeech: noun
+      - form: proficiently
+        partOfSpeech: adverb
+    collocations: ['proficient in', 'highly proficient', 'become proficient']
+    synonyms: [skilled, expert, accomplished]
+    antonyms: [inexperienced, incompetent, unskilled]
+    level: 4
+    firstAppear: D330
+    reviewSchedule: [D336, D343]

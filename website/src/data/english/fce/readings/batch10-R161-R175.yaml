@@ -1,0 +1,1461 @@
+# FCE Daily Reading Practice — Month 11, Batch 10
+# 15 readings (R161–R175), Level 4, 350-450 words
+# Mixed topics: technology, environment, culture, history, science
+# Simulates real FCE difficulty
+
+readings:
+  # ============================================================
+  # R161 – The Rise of Electric Cars (Level 4, ~380 words)
+  # ============================================================
+  - id: R161
+    title: 'The Rise of Electric Cars'
+    titleZh: '电动汽车的崛起'
+    level: 4
+    wordCount: 380
+    topic: technology
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about the growth of electric vehicles'
+    passage: |
+      For over a century, petrol and diesel engines have dominated the world's roads. However, a significant transformation is now taking place. Electric vehicles, or EVs, are rapidly becoming a viable alternative to traditional cars, and some experts predict that by 2040, the majority of new cars sold will be electric.
+
+      [1]
+
+      The technology behind electric cars has improved dramatically in the last decade. Early EVs could only travel about 100 kilometres on a single charge, which made them impractical for long journeys. Modern electric cars, however, can travel over 500 kilometres before needing to be recharged. Furthermore, charging stations are being installed at an increasing rate across Europe, Asia, and North America, making it easier than ever to own an EV.
+
+      [2]
+
+      One of the main advantages of electric cars is their environmental impact — or rather, their lack of it. Unlike petrol cars, EVs produce zero emissions while driving. This is particularly significant in cities, where air pollution from vehicles contributes to serious health problems. Studies indicate that switching to electric transport could reduce urban air pollution by up to 40 per cent.
+
+      [3]
+
+      Nevertheless, electric cars are not without their challenges. The batteries required to power them contain rare minerals such as lithium and cobalt, which must be mined from the earth. This mining process can itself cause environmental damage. Additionally, if the electricity used to charge EVs comes from coal-fired power stations, the overall carbon benefit is reduced.
+
+      Despite these concerns, the trend towards electric vehicles appears to be irreversible. Governments around the world are offering financial incentives to encourage people to switch, and several countries have announced plans to ban the sale of new petrol and diesel cars within the next two decades. The automotive industry is investing billions in developing better batteries, and each year brings new innovations.
+
+      The question is no longer whether electric cars will replace petrol vehicles, but how quickly this transition will happen. For the planet's sake, many scientists argue that it cannot happen fast enough.
+    passageZh: |
+      一个多世纪以来，汽油和柴油发动机主导着世界的道路。然而，一场重大转变正在发生。电动汽车（EV）正迅速成为传统汽车的可行替代品，一些专家预测到2040年，销售的大多数新车将是电动的。
+
+      [1]
+
+      在过去十年中，电动汽车背后的技术有了显著改善。早期的电动汽车单次充电只能行驶约100公里，这使得长途旅行不切实际。然而，现代电动汽车在需要充电之前可以行驶超过500公里。此外，充电站正在欧洲、亚洲和北美以越来越快的速度安装，使拥有电动汽车比以往更容易。
+
+      [2]
+
+      电动汽车的主要优势之一是它们的环境影响——或者说，缺乏环境影响。与汽油车不同，电动汽车在行驶时零排放。这在城市中特别重要，那里的车辆空气污染导致严重的健康问题。研究表明，转向电动交通可以将城市空气污染减少多达40%。
+
+      [3]
+
+      然而，电动汽车并非没有挑战。为它们提供动力的电池含有锂和钴等稀有矿物，必须从地球上开采。这种开采过程本身可能造成环境损害。此外，如果用于给电动汽车充电的电力来自燃煤电站，整体碳效益就会降低。
+
+      尽管有这些担忧，电动汽车的趋势似乎不可逆转。世界各国政府正在提供财政激励来鼓励人们转换，几个国家已经宣布计划在未来二十年内禁止销售新的汽油和柴油汽车。汽车行业正在投资数十亿开发更好的电池，每年都带来新的创新。
+
+      问题不再是电动汽车是否会取代汽油车，而是这种转变会多快发生。为了地球的利益，许多科学家认为它不可能发生得太快。
+    vocabHighlights:
+      - word: significant
+        ref: V1702
+      - word: transformation
+        ref: V1723
+      - word: innovation
+        ref: V1737
+    questions:
+      - id: R161-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'The first commercially successful electric car was actually built in the 1890s, long before petrol cars became popular. However, cheap oil made petrol engines the preferred choice for most of the twentieth century.'
+          B: 'Many people worry that electric cars are too expensive for ordinary families.'
+          C: 'Self-driving cars are another technology that is developing rapidly alongside electric vehicles.'
+        answer: 'A'
+        explanation: 'Gap [1] follows the prediction about EVs. A provides historical context (EVs existed before petrol cars dominated), linking the past to the current transformation.'
+        explanationZh: '空缺[1]在关于电动汽车预测之后。A提供了历史背景（电动汽车在汽油车主导之前就存在了），将过去与当前的转变联系起来。'
+      - id: R161-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'The cost of electric vehicles has also fallen considerably. In 2015, an average EV cost nearly twice as much as a comparable petrol car. Today, the price gap has narrowed to around 10 per cent, and some models are already cheaper.'
+          B: 'Electric buses are also becoming common in many Chinese cities.'
+          C: 'Solar-powered cars are still in the experimental stage and cannot yet be bought commercially.'
+        answer: 'A'
+        explanation: 'Gap [2] comes after discussing improved range and charging infrastructure. A continues with another improvement — falling costs — maintaining the paragraph''s theme of progress.'
+        explanationZh: '空缺[2]在讨论续航里程和充电基础设施改善之后。A继续另一项改善——成本下降——保持了段落关于进步的主题。'
+      - id: R161-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Electric cars are also much quieter than petrol cars, which could reduce noise pollution in busy city centres.'
+          B: 'Many hospitals in polluted cities report high numbers of patients with breathing difficulties during rush hour.'
+          C: 'The first electric bus in London began operating in 2013.'
+        answer: 'A'
+        explanation: 'Gap [3] follows the environmental benefits of EVs. A adds another advantage (noise reduction) that fits naturally before the paragraph about challenges.'
+        explanationZh: '空缺[3]在电动汽车环境优势之后。A添加了另一个优势（降低噪音），自然衔接到关于挑战的段落。'
+      - id: R161-Q4
+        type: vocabulary-in-context
+        question: 'What does "viable" mean in the passage?'
+        questionZh: '文中的"viable"是什么意思？'
+        options:
+          A: 'Extremely expensive and luxurious'
+          B: 'Practical and capable of working successfully'
+          C: 'Popular and fashionable among young people'
+          D: 'Dangerous and difficult to control'
+        answer: 'B'
+        explanation: '"A viable alternative" means a practical and realistic option that could work. EVs are becoming a workable choice.'
+        explanationZh: '"A viable alternative"意思是一个实际且可行的选择。电动汽车正成为一个可行的选择。'
+
+  # ============================================================
+  # R162 – The Secret Life of Soil (Level 4, ~400 words)
+  # ============================================================
+  - id: R162
+    title: 'The Secret Life of Soil'
+    titleZh: '土壤的秘密生命'
+    level: 4
+    wordCount: 400
+    topic: science
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about the hidden ecosystem in soil'
+    passage: |
+      Beneath our feet lies one of the most complex ecosystems on Earth, yet most people walk over it every day without giving it a second thought. A single teaspoon of healthy soil contains more living organisms than there are people on the entire planet — approximately eight billion bacteria, along with thousands of species of fungi, protozoa, and tiny invertebrates.
+
+      [1]
+
+      Soil is far more than just dirt. It is a living, breathing system that performs several functions essential to life on Earth. First and foremost, soil provides the nutrients that plants need to grow. Without soil, there would be no crops, no forests, and no grasslands. Consequently, every animal that depends on plants for food — including humans — ultimately depends on soil.
+
+      [2]
+
+      Furthermore, soil plays a crucial role in regulating the Earth's climate. Healthy soil stores enormous quantities of carbon — more than all the world's forests combined. When soil is damaged by intensive farming or deforestation, this carbon is released into the atmosphere as carbon dioxide, contributing to global warming. Scientists estimate that protecting and restoring soil could reduce global greenhouse gas emissions by up to 25 per cent.
+
+      [3]
+
+      Despite its importance, soil is under serious threat. The United Nations has warned that one-third of the world's topsoil has already been degraded. It takes nature approximately 500 years to produce just two centimetres of topsoil, yet poor farming practices can destroy it in a matter of decades. Erosion, pollution, and the overuse of chemical fertilisers are all contributing to this crisis.
+
+      There is, however, growing awareness of the problem. Farmers around the world are adopting regenerative agriculture techniques, such as crop rotation, composting, and reduced tillage, which help to rebuild soil health. Schools and universities are including soil science in their curricula for the first time.
+
+      Perhaps the most important step is simply to change how we think about soil. It is not an inexhaustible resource to be exploited — it is a living ecosystem that needs protection. As one scientist put it: "We are standing on the solution to many of the world's biggest problems. We just need to look down."
+    passageZh: |
+      在我们脚下存在着地球上最复杂的生态系统之一，但大多数人每天走过它却没有给予它第二个想法。一茶匙健康的土壤含有的活的有机体比整个星球上的人口还多——大约八十亿细菌，以及数千种真菌、原生动物和微小的无脊椎动物。
+
+      [1]
+
+      土壤远不只是泥土。它是一个活的、会呼吸的系统，执行着对地球上的生命至关重要的几项功能。首先，土壤提供植物生长所需的养分。没有土壤，就不会有庄稼、森林和草原。因此，每种依赖植物作为食物的动物——包括人类——最终都依赖土壤。
+
+      [2]
+
+      此外，土壤在调节地球气候方面发挥着至关重要的作用。健康的土壤储存着大量的碳——比世界上所有的森林加在一起还多。当土壤因集约化农业或森林砍伐而受损时，这些碳以二氧化碳的形式释放到大气中，导致全球变暖。科学家估计，保护和恢复土壤可以减少全球温室气体排放高达25%。
+
+      [3]
+
+      尽管土壤很重要，但它正面临严重威胁。联合国警告说，世界上三分之一的表土已经退化。大自然大约需要500年才能产生仅仅两厘米的表土，但不良的耕作方式可以在几十年内将其摧毁。侵蚀、污染和化肥的过度使用都在加剧这一危机。
+
+      然而，人们对这个问题的意识正在增长。世界各地的农民正在采用再生农业技术，如轮作、堆肥和减少耕作，这有助于重建土壤健康。学校和大学首次将土壤科学纳入课程。
+
+      也许最重要的一步是简单地改变我们对土壤的看法。它不是一种可以利用的取之不尽的资源——它是一个需要保护的活的生态系统。正如一位科学家所说："我们正站在世界上许多最大问题的解决方案上。我们只需要向下看。"
+    vocabHighlights:
+      - word: consequence
+        ref: V1705
+      - word: crucial
+        ref: V1732
+      - word: sustainable
+        ref: V1744
+    questions:
+      - id: R162-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'These organisms form an incredibly sophisticated underground network. Fungi, for example, create tiny threads called mycelium that connect plant roots together, allowing trees to share nutrients and even send chemical warning signals when they are under attack by insects.'
+          B: 'Soil comes in many different colours, from dark brown to red to grey.'
+          C: 'Farmers have been growing crops in soil for over 10,000 years.'
+        answer: 'A'
+        explanation: 'Gap [1] follows the astonishing statistics about soil organisms. A elaborates on what these organisms actually do, providing fascinating detail about underground networks.'
+        explanationZh: '空缺[1]在关于土壤有机体惊人统计数据之后。A详细说明了这些有机体实际做什么，提供了关于地下网络的迷人细节。'
+      - id: R162-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Soil also acts as a natural water filter. As rainwater passes through layers of soil, harmful chemicals and bacteria are removed, making the water safe to drink.'
+          B: 'The deepest soils in the world are found in river deltas.'
+          C: 'Sandy soil drains quickly but does not hold nutrients well.'
+        answer: 'A'
+        explanation: 'Gap [2] is between two paragraphs describing soil functions. A adds another function (water filtering), maintaining the structure of listing essential roles.'
+        explanationZh: '空缺[2]在描述土壤功能的两段之间。A添加了另一项功能（过滤水），保持了列举重要角色的结构。'
+      - id: R162-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'Composting at home is a simple way to help improve local soil quality.'
+          B: 'In other words, taking care of our soil is not just an environmental issue — it is a matter of survival for human civilisation.'
+          C: 'The world population is expected to reach 10 billion by 2050.'
+        answer: 'B'
+        explanation: 'Gap [3] follows the statistics about soil and climate. B summarises the significance of soil care before the paragraph shifts to discussing threats.'
+        explanationZh: '空缺[3]在关于土壤和气候的统计数据之后。B总结了土壤保护的重要性，然后段落转向讨论威胁。'
+      - id: R162-Q4
+        type: vocabulary-in-context
+        question: 'What does "degraded" mean in the passage?'
+        questionZh: '文中的"degraded"是什么意思？'
+        options:
+          A: 'Made more fertile and productive'
+          B: 'Reduced in quality and condition'
+          C: 'Moved to a different location'
+          D: 'Tested and analysed in a laboratory'
+        answer: 'B'
+        explanation: '"Degraded" means reduced in quality. The topsoil has been damaged and is in worse condition than before.'
+        explanationZh: '"Degraded"意思是质量下降。表土已被损坏，状况比以前更差。'
+
+  # ============================================================
+  # R163 – The History of Board Games (Level 4, ~370 words)
+  # ============================================================
+  - id: R163
+    title: 'The History of Board Games'
+    titleZh: '桌游的历史'
+    level: 4
+    wordCount: 370
+    topic: culture
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about the fascinating history of board games'
+    passage: |
+      Long before video games and smartphones, people entertained themselves with board games. Archaeological evidence suggests that board games are among the oldest forms of human entertainment, dating back at least 5,000 years. The Royal Game of Ur, discovered in a tomb in modern-day Iraq, is believed to be one of the earliest known examples.
+
+      [1]
+
+      In ancient Egypt, a game called Senet was so popular that boards have been found in the tombs of pharaohs, including Tutankhamun. Historians believe the Egyptians thought the game had a spiritual significance — winning at Senet was believed to bring good fortune in the afterlife. Meanwhile, in ancient China, the strategy game Go was being played as early as 2,500 years ago and remains one of the most complex games ever invented.
+
+      [2]
+
+      The modern board game industry began in the nineteenth century, when printing technology made it possible to produce games cheaply. Monopoly, one of the world's best-selling games, was first marketed in 1935 during the Great Depression. It is perhaps ironic that a game about making money became wildly popular at a time when millions of people had very little.
+
+      [3]
+
+      Today, board games are experiencing an unexpected revival. Despite the dominance of digital entertainment, sales of board games have been growing steadily for over a decade. Experts suggest several reasons for this trend. Board games bring people together face-to-face in an age when most social interaction happens through screens. They require no electricity, no internet connection, and no expensive equipment.
+
+      Furthermore, modern board games have become increasingly sophisticated. Games like Settlers of Catan and Ticket to Ride combine strategy with storytelling in ways that appeal to both children and adults. Board game cafes, where customers can choose from hundreds of games while enjoying food and drinks, have opened in cities around the world.
+
+      Perhaps what makes board games so enduring is their fundamental simplicity. At their core, they are about sitting around a table with people you enjoy spending time with, thinking, laughing, and having fun together. No technology can truly replace that experience.
+    passageZh: |
+      在电子游戏和智能手机出现很久之前，人们就通过桌游来娱乐自己。考古证据表明桌游是人类最古老的娱乐形式之一，至少可以追溯到5000年前。在现代伊拉克一座墓葬中发现的乌尔王室游戏被认为是已知最早的例子之一。
+
+      [1]
+
+      在古埃及，一种叫做塞尼特的游戏非常流行，以至于在法老的墓葬中都发现了游戏板，包括图坦卡蒙的墓葬。历史学家认为埃及人觉得这个游戏具有精神意义——在塞尼特中获胜被认为能在来世带来好运。与此同时，在古代中国，围棋早在2500年前就已被下，至今仍然是有史以来最复杂的游戏之一。
+
+      [2]
+
+      现代桌游产业始于19世纪，当时印刷技术使廉价生产游戏成为可能。大富翁（Monopoly），世界上最畅销的游戏之一，于1935年大萧条期间首次上市。一个关于赚钱的游戏在数百万人几乎一无所有的时候变得极其流行，这也许是讽刺的。
+
+      [3]
+
+      如今，桌游正在经历一场意想不到的复兴。尽管数字娱乐占主导地位，桌游的销售额已经稳步增长了十多年。专家提出了这一趋势的几个原因。在一个大多数社交互动通过屏幕进行的时代，桌游让人们面对面地聚在一起。它们不需要电力、不需要互联网连接，也不需要昂贵的设备。
+
+      此外，现代桌游变得越来越复杂。像卡坦岛和车票之旅这样的游戏以吸引儿童和成人的方式将策略与故事结合起来。桌游咖啡馆——顾客可以在享用食物和饮料的同时从数百种游戏中选择——已经在世界各地的城市开设。
+
+      也许使桌游如此持久的是它们根本的简单性。从本质上说，它们是关于和你喜欢共度时光的人坐在桌旁，一起思考、笑和玩乐。没有技术能真正替代这种体验。
+    vocabHighlights:
+      - word: evidence
+        ref: V1713
+      - word: trend
+        ref: V1724
+      - word: fundamental
+        ref: V1824
+    questions:
+      - id: R163-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'The rules of this game were reconstructed from cuneiform tablets found nearby. Two players raced their pieces across a beautifully decorated board, guided by the throw of pyramid-shaped dice.'
+          B: 'Board games are now available as apps on smartphones and tablets.'
+          C: 'Chess was invented in India during the sixth century.'
+        answer: 'A'
+        explanation: 'Gap [1] follows the mention of the Royal Game of Ur. A provides fascinating details about how the game was played, naturally leading to the discussion of other ancient games.'
+        explanationZh: '空缺[1]在提到乌尔王室游戏之后。A提供了关于游戏如何进行的迷人细节，自然引向其他古代游戏的讨论。'
+      - id: R163-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Chess evolved from an Indian game called Chaturanga and spread through Persia to the Arab world before reaching Europe in the medieval period. It became known as "the game of kings" because of its popularity among royalty and nobility.'
+          B: 'Video games first appeared in the 1970s with games like Pong.'
+          C: 'The most expensive board game ever made costs over a million dollars.'
+        answer: 'A'
+        explanation: 'Gap [2] connects ancient games to the modern era. A bridges this by discussing chess, which evolved from an ancient game and remains popular today.'
+        explanationZh: '空缺[2]连接古代游戏和现代。A通过讨论国际象棋来搭建桥梁，它从古代游戏演变而来，至今仍然流行。'
+      - id: R163-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'The average board game takes about 45 minutes to play.'
+          B: 'Over the following decades, classics like Scrabble, Clue, and Risk established board games as a staple of family entertainment in homes around the world.'
+          C: 'Some board games can be played solo, without any other players.'
+        answer: 'B'
+        explanation: 'Gap [3] follows Monopoly in 1935. B continues the timeline of classic games becoming family staples, before the passage shifts to the modern revival.'
+        explanationZh: '空缺[3]在1935年大富翁之后。B继续了经典游戏成为家庭娱乐主要活动的时间线，然后文章转向现代复兴。'
+      - id: R163-Q4
+        type: vocabulary-in-context
+        question: 'What does "enduring" mean in the last paragraph?'
+        questionZh: '最后一段中的"enduring"是什么意思？'
+        options:
+          A: 'Extremely difficult and tiring'
+          B: 'Lasting for a very long time'
+          C: 'Expensive and hard to find'
+          D: 'Simple and easy to learn'
+        answer: 'B'
+        explanation: '"Enduring" means lasting over a long period of time. Board games have endured for thousands of years.'
+        explanationZh: '"Enduring"意思是持续很长时间。桌游已经持续了数千年。'
+
+  # ============================================================
+  # R164 – How Languages Die (Level 4, ~410 words)
+  # ============================================================
+  - id: R164
+    title: 'How Languages Die'
+    titleZh: '语言如何消亡'
+    level: 4
+    wordCount: 410
+    topic: culture
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about endangered languages'
+    passage: |
+      There are currently approximately 7,000 languages spoken around the world. By the end of this century, linguists predict that nearly half of them will have disappeared. A language dies when its last native speaker passes away, and this is happening at an alarming rate — roughly one language is lost every two weeks.
+
+      [1]
+
+      The process of language death typically follows a predictable pattern. First, a dominant language — often English, Spanish, Mandarin, or another major world language — becomes associated with economic opportunity and social status. Parents begin to speak this dominant language to their children, believing it will give them better prospects. The children grow up bilingual but gradually use their ancestral language less and less.
+
+      [2]
+
+      Within two or three generations, the original language may only be spoken by elderly members of the community. When they die, the language dies with them. This is not merely a cultural loss — each language represents a unique way of understanding and describing the world. Languages contain knowledge about local plants, animals, weather patterns, and medicinal remedies that may not exist in any other form.
+
+      [3]
+
+      Efforts to save endangered languages are increasing. In New Zealand, the Maori language has been revived through immersion schools where children learn entirely in Maori. Wales has successfully promoted the Welsh language through bilingual education and Welsh-language television. In Australia, indigenous communities are using technology to record and teach their languages before the last speakers are gone.
+
+      Nevertheless, linguists acknowledge that it is impossible to save every endangered language. The key, they argue, is to document as many as possible — recording vocabulary, grammar, stories, and songs — so that even if a language ceases to be spoken, its knowledge is preserved for future generations.
+
+      The death of a language is not simply a matter of people choosing to speak something else. It is the disappearance of an entire world view — a unique lens through which humanity has understood the universe. Every language lost represents a library burning down, its books never to be read again.
+    passageZh: |
+      目前世界上大约有7000种语言。到本世纪末，语言学家预测其中近一半将消失。当一种语言的最后一位母语使用者去世时，这种语言就死了，而这正以惊人的速度发生——大约每两周就有一种语言消失。
+
+      [1]
+
+      语言消亡的过程通常遵循可预测的模式。首先，一种主导语言——通常是英语、西班牙语、普通话或其他主要世界语言——与经济机会和社会地位联系在一起。父母开始对孩子说这种主导语言，相信这会给他们更好的前景。孩子们长大后会说两种语言，但逐渐越来越少地使用他们的祖先语言。
+
+      [2]
+
+      在两三代人之内，原始语言可能只有社区的年长成员才说。当他们去世时，语言也随之消亡。这不仅仅是文化损失——每种语言代表着理解和描述世界的独特方式。语言包含着关于当地植物、动物、天气模式和药用配方的知识，这些知识可能不以任何其他形式存在。
+
+      [3]
+
+      拯救濒危语言的努力正在增加。在新西兰，毛利语通过全浸入式学校得到了复兴，孩子们完全用毛利语学习。威尔士通过双语教育和威尔士语电视节目成功推广了威尔士语。在澳大利亚，原住民社区正在使用技术录制和教授他们的语言，趁最后的使用者还在。
+
+      然而，语言学家承认，拯救每一种濒危语言是不可能的。他们认为，关键是尽可能多地记录——记录词汇、语法、故事和歌曲——这样即使一种语言不再被使用，它的知识也为后代保存下来。
+
+      一种语言的消亡不仅仅是人们选择说其他语言的问题。它是整个世界观的消失——人类理解宇宙的独特镜头。每一种消失的语言都代表着一座图书馆被烧毁，它的书再也不能被阅读。
+    vocabHighlights:
+      - word: approximately
+        ref: V1787
+      - word: merely
+        ref: V1805
+      - word: preserve
+        ref: V1828
+    questions:
+      - id: R164-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'Many endangered languages are found in remote areas of South America, Africa, and Asia, where small communities have maintained their traditional ways of life for centuries.'
+          B: 'English is the most widely studied foreign language in the world.'
+          C: 'Artificial languages like Esperanto were created to promote international communication.'
+        answer: 'A'
+        explanation: 'Gap [1] follows alarming statistics about language loss. A provides context about WHERE these endangered languages exist, leading naturally into the discussion of how languages die.'
+        explanationZh: '空缺[1]在关于语言消失的惊人统计之后。A提供了关于这些濒危语言存在于何处的背景，自然引向语言如何消亡的讨论。'
+      - id: R164-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'By the second generation, the ancestral language becomes a "heritage language" — understood but rarely spoken. Children may recognise words and phrases their grandparents use but feel unable to hold a conversation.'
+          B: 'Some languages have only one or two native speakers left.'
+          C: 'Translation apps can now translate between hundreds of languages instantly.'
+        answer: 'A'
+        explanation: 'Gap [2] follows the first generation becoming bilingual. A continues the timeline, showing the next stage — the second generation understanding but not speaking the ancestral language.'
+        explanationZh: '空缺[2]在第一代人变成双语之后。A继续时间线，显示下一阶段——第二代人理解但不说祖先语言。'
+      - id: R164-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'The Rosetta Stone helped scholars decipher ancient Egyptian hieroglyphics.'
+          B: 'For instance, the Inuit people of the Arctic have over fifty words for different types of snow and ice — knowledge that is essential for survival in their environment but does not translate easily into other languages.'
+          C: 'Grammar is the structure that holds a language together.'
+        answer: 'B'
+        explanation: 'Gap [3] follows the claim that languages contain unique knowledge. B provides a specific, vivid example (Inuit words for snow), supporting this point before the revival paragraph.'
+        explanationZh: '空缺[3]在语言包含独特知识的论述之后。B提供了一个具体、生动的例子（因纽特人关于雪的词汇），支持这一观点。'
+      - id: R164-Q4
+        type: vocabulary-in-context
+        question: 'What does "immersion" mean in the phrase "immersion schools"?'
+        questionZh: '在"immersion schools"中"immersion"是什么意思？'
+        options:
+          A: 'Schools that are located near water'
+          B: 'Schools where students are completely surrounded by a particular language'
+          C: 'Schools that are very expensive to attend'
+          D: 'Schools that teach only science subjects'
+        answer: 'B'
+        explanation: '"Immersion schools" are schools where children learn entirely in the target language. They are "immersed" — completely surrounded by — the language.'
+        explanationZh: '"Immersion schools"是孩子们完全用目标语言学习的学校。他们被语言"沉浸"——完全包围。'
+
+  # ============================================================
+  # R165 – The Science of Sleep (Level 4, ~390 words)
+  # ============================================================
+  - id: R165
+    title: 'The Science of Sleep'
+    titleZh: '睡眠的科学'
+    level: 4
+    wordCount: 390
+    topic: science
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about why sleep is essential for learning'
+    passage: |
+      Most students know that sleep is important, but few realise just how essential it is for learning and memory. Research conducted over the past two decades has revealed that sleep is not simply a period of rest — it is an active process during which the brain consolidates memories, solves problems, and prepares for the next day's learning.
+
+      [1]
+
+      During sleep, the brain cycles through several stages, each with a specific function. In the deep sleep stages, the brain replays and strengthens the neural pathways formed during the day. This means that the vocabulary words you studied before bed are literally being reinforced while you sleep. Scientists have shown that students who sleep well after studying remember significantly more than those who stay awake.
+
+      [2]
+
+      The rapid eye movement (REM) stage of sleep, during which most dreaming occurs, appears to play a particularly important role in creative thinking and problem-solving. A famous study found that people were 33 per cent more likely to solve a difficult puzzle after a period of REM sleep than after the same amount of time spent awake. This may explain why some of history's greatest ideas came to people in their dreams.
+
+      [3]
+
+      Unfortunately, teenagers are among the most sleep-deprived groups in society. The combination of early school start times, homework, and screen use means that many teenagers get far less than the recommended eight to ten hours per night. The consequences for learning are significant: studies show that sleep-deprived students perform worse in exams, have poorer concentration, and are more likely to experience anxiety.
+
+      What can students do to improve their sleep? Experts recommend establishing a regular bedtime routine, avoiding screens for at least an hour before bed, and keeping the bedroom cool and dark. Exercise during the day helps, but intense exercise too close to bedtime can actually make it harder to fall asleep.
+
+      The message from sleep science is clear: if you want to perform your best in an exam, getting enough sleep is just as important as revising the material. In fact, a good night's sleep may be the most effective study technique of all.
+    passageZh: |
+      大多数学生知道睡眠很重要，但很少有人意识到它对学习和记忆究竟有多重要。过去二十年的研究揭示，睡眠不仅仅是一段休息时间——它是大脑巩固记忆、解决问题和为第二天的学习做准备的积极过程。
+
+      [1]
+
+      在睡眠期间，大脑在几个阶段之间循环，每个阶段都有特定的功能。在深度睡眠阶段，大脑重播并加强白天形成的神经通路。这意味着你睡前学习的词汇在你睡觉时确实在被加强。科学家已经证明，学习后睡得好的学生比保持清醒的学生记住的明显更多。
+
+      [2]
+
+      快速眼动（REM）睡眠阶段，大部分做梦发生在此期间，似乎在创造性思维和问题解决中发挥着特别重要的作用。一项著名的研究发现，人们经过一段REM睡眠后解决困难谜题的可能性比清醒相同时间后高33%。这也许解释了为什么历史上一些最伟大的想法是人们在梦中想到的。
+
+      [3]
+
+      不幸的是，青少年是社会中最缺乏睡眠的群体之一。早期的上学时间、家庭作业和屏幕使用的结合意味着许多青少年每晚远远不到推荐的八到十小时。对学习的后果是显著的：研究表明，睡眠不足的学生在考试中表现更差，注意力更差，更有可能感到焦虑。
+
+      学生可以做什么来改善睡眠？专家建议建立规律的就寝程序，睡前至少一小时避免使用屏幕，保持卧室凉爽和黑暗。白天锻炼有帮助，但太接近就寝时间的剧烈锻炼实际上会使入睡更难。
+
+      睡眠科学的信息很清楚：如果你想在考试中发挥最好的水平，获得充足的睡眠和复习材料一样重要。事实上，一个好的夜间睡眠可能是最有效的学习技巧。
+    vocabHighlights:
+      - word: essential
+        ref: V1735
+      - word: concentration
+        ref: V1762
+      - word: anxiety
+        ref: V1763
+    questions:
+      - id: R165-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'During sleep, the brain also clears out waste products that build up during the day. One of these is a protein called beta-amyloid, which is linked to Alzheimer''s disease. Getting enough sleep literally cleans your brain.'
+          B: 'Most adults need between seven and nine hours of sleep per night.'
+          C: 'Some animals, such as dolphins, can sleep with one eye open.'
+        answer: 'A'
+        explanation: 'Gap [1] follows the introduction about sleep being an active process. A gives a fascinating example of what the brain does during sleep (clearing waste), supporting the active process idea.'
+        explanationZh: '空缺[1]在关于睡眠是积极过程的介绍之后。A给出了大脑在睡眠期间做什么（清除废物）的迷人例子，支持积极过程的观点。'
+      - id: R165-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Interestingly, the order in which you study different subjects matters. The brain is better at consolidating similar information together, so studying related topics in sequence before sleeping may produce better results.'
+          B: 'Light affects your ability to fall asleep.'
+          C: 'Babies sleep for up to sixteen hours a day.'
+        answer: 'A'
+        explanation: 'Gap [2] follows the explanation of deep sleep strengthening memories. A adds practical detail about how study order affects sleep-based memory consolidation.'
+        explanationZh: '空缺[2]在深度睡眠强化记忆的解释之后。A添加了关于学习顺序如何影响基于睡眠的记忆巩固的实用细节。'
+      - id: R165-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'The German chemist August Kekule discovered the ring structure of benzene after dreaming of a snake biting its own tail, and Paul McCartney has said that the melody for "Yesterday" came to him in a dream.'
+          B: 'Coffee contains caffeine, which can keep you awake for hours.'
+          C: 'REM sleep was first discovered by scientists in 1953.'
+        answer: 'A'
+        explanation: 'Gap [3] follows the claim about great ideas coming in dreams. A provides two specific famous examples, supporting this point engagingly.'
+        explanationZh: '空缺[3]在伟大想法在梦中产生的论述之后。A提供了两个具体的著名例子，引人入胜地支持了这一观点。'
+      - id: R165-Q4
+        type: vocabulary-in-context
+        question: 'What does "consolidates" mean in the passage?'
+        questionZh: '文中的"consolidates"是什么意思？'
+        options:
+          A: 'Removes or deletes from the brain'
+          B: 'Makes stronger and more secure'
+          C: 'Creates for the first time'
+          D: 'Ignores or forgets completely'
+        answer: 'B'
+        explanation: '"Consolidates memories" means makes memories stronger and more permanent. Sleep helps to firm up what you have learned.'
+        explanationZh: '"Consolidates memories"意思是使记忆更强更持久。睡眠帮助巩固你所学的内容。'
+
+  # ============================================================
+  # R166 – Underwater Museums (Level 4, ~370 words)
+  # ============================================================
+  - id: R166
+    title: 'Underwater Museums'
+    titleZh: '水下博物馆'
+    level: 4
+    wordCount: 370
+    topic: culture
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about underwater sculpture museums'
+    passage: |
+      In the clear blue waters off the coast of Cancun, Mexico, something extraordinary lies beneath the surface. Over 500 life-sized sculptures rest on the seabed, forming the world's largest underwater museum — MUSA, the Museo Subacuatico de Arte. Visitors must either dive or take a glass-bottomed boat to see this remarkable collection.
+
+      The museum was created by British sculptor Jason deCaires Taylor in 2009. His original intention was not merely to create art — it was to save a dying coral reef. The nearby Mesoamerican Reef, the second-largest reef system in the world, was being damaged by millions of tourists who visited each year. The underwater museum was designed to draw visitors away from the fragile reef and towards a new artificial attraction.
+
+      The sculptures themselves are made from a special pH-neutral cement that encourages coral and marine life to grow on their surfaces. Over time, the grey statues become colourful living structures covered in coral, sponges, and algae. Fish make their homes in the hollows, and rays and turtles swim among the figures. In this way, the art does not just occupy space on the seabed — it actively creates new habitat for marine creatures.
+
+      The project has been remarkably successful. Since MUSA opened, tourism to the natural reef has decreased by approximately 30 per cent, giving it time to recover. Meanwhile, the artificial reef created by the sculptures has developed its own thriving ecosystem. Scientists studying the site have recorded over 200 species of fish and coral living on and around the statues.
+
+      Taylor has since created similar underwater museums in the Bahamas, the Canary Islands, and Australia's Great Barrier Reef. Each installation is designed to address a specific local environmental issue while creating a unique artistic experience.
+
+      The concept of underwater museums illustrates an important principle: art and science do not have to be separate. When creativity and environmental awareness work together, the results can be both beautiful and beneficial. As Taylor himself has said: "The ocean does not need us. We need the ocean. These sculptures are a reminder of that."
+    passageZh: |
+      在墨西哥坎昆海岸清澈的蓝色水域中，水面之下有着非凡的东西。超过500座真人大小的雕塑安放在海底，构成了世界上最大的水下博物馆——MUSA，即水下艺术博物馆。游客必须潜水或乘坐玻璃底船才能看到这个非凡的收藏。
+
+      该博物馆由英国雕塑家Jason deCaires Taylor于2009年创建。他最初的意图不仅仅是创造艺术——而是拯救一个正在死去的珊瑚礁。附近的中美洲礁石，世界第二大礁石系统，正被每年数百万游客所损害。水下博物馆旨在将游客从脆弱的礁石引向一个新的人工景点。
+
+      雕塑本身由一种特殊的pH中性水泥制成，鼓励珊瑚和海洋生物在其表面生长。随着时间推移，灰色的雕像变成了被珊瑚、海绵和藻类覆盖的色彩缤纷的活结构。鱼在空洞中安家，鳐鱼和海龟在人物之间游泳。这样，艺术不只是占据海底空间——它积极地为海洋生物创造新的栖息地。
+
+      这个项目非常成功。自MUSA开放以来，到自然礁石的旅游减少了约30%，给了它恢复的时间。与此同时，雕塑创造的人工礁石发展了自己繁荣的生态系统。研究该地点的科学家记录了超过200种鱼类和珊瑚在雕像上和周围生活。
+
+      Taylor后来在巴哈马、加那利群岛和澳大利亚大堡礁创建了类似的水下博物馆。每个装置都旨在解决特定的当地环境问题，同时创造独特的艺术体验。
+
+      水下博物馆的概念说明了一个重要原则：艺术和科学不必是分开的。当创造力和环保意识结合在一起时，结果可以既美丽又有益。正如Taylor本人所说："海洋不需要我们。我们需要海洋。这些雕塑是对此的提醒。"
+    vocabHighlights:
+      - word: habitat
+        ref: V1743
+      - word: approximately
+        ref: V1787
+      - word: remarkable
+        ref: V1790
+    questions:
+      - id: R166-Q1
+        type: multiple-choice
+        question: 'What was the main purpose of creating the underwater museum?'
+        questionZh: '创建水下博物馆的主要目的是什么？'
+        options:
+          A: 'To display sculptures that could not fit in a regular museum'
+          B: 'To protect a natural reef by diverting tourists to an alternative site'
+          C: 'To make money from charging visitors to see the art'
+          D: 'To teach tourists how to scuba dive'
+        answer: 'B'
+        explanation: 'The museum was designed "to draw visitors away from the fragile reef and towards a new artificial attraction" — its primary purpose was reef protection.'
+        explanationZh: '博物馆旨在"将游客从脆弱的礁石引向新的人工景点"——其主要目的是保护礁石。'
+      - id: R166-Q2
+        type: multiple-choice
+        question: 'What happens to the sculptures over time?'
+        questionZh: '随着时间推移，雕塑会发生什么？'
+        options:
+          A: 'They dissolve in the salt water and disappear.'
+          B: 'They become covered with coral and marine life, creating living structures.'
+          C: 'They need to be replaced every few years.'
+          D: 'They move to different positions on the seabed.'
+        answer: 'B'
+        explanation: '"The grey statues become colourful living structures covered in coral, sponges, and algae."'
+        explanationZh: '"灰色的雕像变成了被珊瑚、海绵和藻类覆盖的色彩缤纷的活结构。"'
+      - id: R166-Q3
+        type: multiple-choice
+        question: 'How successful has the MUSA project been?'
+        questionZh: 'MUSA项目有多成功？'
+        options:
+          A: 'It has failed because tourists still visit the natural reef.'
+          B: 'It reduced reef tourism by 30% and the artificial reef now supports over 200 species.'
+          C: 'It was too expensive and had to close after five years.'
+          D: 'It only attracted a few hundred visitors per year.'
+        answer: 'B'
+        explanation: '"Tourism to the natural reef has decreased by approximately 30 per cent" and "over 200 species of fish and coral" now live on the sculptures.'
+        explanationZh: '"到自然礁石的旅游减少了约30%"且"超过200种鱼类和珊瑚"现在生活在雕塑上。'
+      - id: R166-Q4
+        type: vocabulary-in-context
+        question: 'What does "thriving" mean in the passage?'
+        questionZh: '文中的"thriving"是什么意思？'
+        options:
+          A: 'Growing and developing well; prosperous'
+          B: 'Struggling to survive in difficult conditions'
+          C: 'Completely artificial and man-made'
+          D: 'Small and insignificant'
+        answer: 'A'
+        explanation: '"A thriving ecosystem" means one that is growing healthily and doing well. The artificial reef is successful.'
+        explanationZh: '"A thriving ecosystem"意思是一个健康成长、发展良好的生态系统。人工礁石很成功。'
+
+  # ============================================================
+  # R167 – The Power of Mistakes (Level 4, ~380 words)
+  # ============================================================
+  - id: R167
+    title: 'The Power of Mistakes'
+    titleZh: '错误的力量'
+    level: 4
+    wordCount: 380
+    topic: science
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about growth mindset and learning from errors'
+    passage: |
+      Most students dread making mistakes. A wrong answer on a test, a spelling error in an essay, or a grammar slip in conversation can feel embarrassing and discouraging. However, a growing body of scientific research suggests that mistakes are not just unavoidable — they are actually essential for learning.
+
+      Neuroscientists have discovered that the brain responds to errors in a surprisingly productive way. When you make a mistake, your brain generates a specific electrical signal called an error-related negativity, or ERN. This signal triggers increased attention and deeper processing of the information. In other words, your brain works harder when you get something wrong than when you get it right.
+
+      A landmark study at Michigan State University divided students into two groups based on their attitudes towards mistakes. The "growth mindset" group believed that intelligence could be developed through effort, while the "fixed mindset" group believed intelligence was a permanent trait. When both groups were given a challenging test, the growth mindset students showed stronger ERN signals after making mistakes — their brains were actively learning from the errors. The fixed mindset students, however, showed weaker responses, suggesting their brains were essentially ignoring the mistakes.
+
+      The implications for exam preparation are significant. Students who review their errors carefully — understanding not just what the correct answer is, but why they got it wrong — learn more effectively than those who simply move on. Error analysis, where you categorise and study your mistakes, is one of the most powerful learning strategies available.
+
+      This principle applies across all areas of the FCE exam. In Use of English, analysing why you chose the wrong word helps you recognise patterns and avoid similar mistakes in future. In writing, understanding examiner feedback on grammar errors leads to more accurate essays next time. In reading, working out why you misunderstood a passage improves your comprehension skills.
+
+      The next time you make a mistake, try not to feel frustrated. Instead, think of it as your brain receiving a valuable upgrade. Every error is a lesson in disguise — and the students who learn from their mistakes are the ones who ultimately succeed.
+    passageZh: |
+      大多数学生害怕犯错。测试中的一个错误答案、作文中的一个拼写错误，或对话中的一个语法失误都会让人感到尴尬和沮丧。然而，越来越多的科学研究表明，错误不仅仅是不可避免的——它们实际上对学习至关重要。
+
+      神经科学家发现大脑以一种令人惊讶的有成效方式应对错误。当你犯错时，你的大脑会产生一种叫做错误相关负波（ERN）的特定电信号。这个信号触发了对信息的更多关注和更深层处理。换句话说，当你做错时，你的大脑比做对时工作更努力。
+
+      密歇根州立大学的一项里程碑式研究根据学生对错误的态度将他们分为两组。"成长型思维"组相信智力可以通过努力发展，而"固定型思维"组相信智力是永久的特质。当两组都接受一项具有挑战性的测试时，成长型思维的学生在犯错后显示出更强的ERN信号——他们的大脑正在积极从错误中学习。而固定型思维的学生显示出较弱的反应，表明他们的大脑基本上忽略了错误。
+
+      这对考试准备的意义是显著的。仔细审查错误的学生——不仅理解正确答案是什么，还理解为什么做错了——比那些简单跳过的学生学得更有效。错误分析，即分类和研究你的错误，是最有力的学习策略之一。
+
+      这一原则适用于FCE考试的所有方面。在语言运用中，分析为什么选错了词帮助你识别模式并在将来避免类似错误。在写作中，理解考官对语法错误的反馈使下次的作文更准确。在阅读中，弄清楚为什么误解了文章能提高你的理解能力。
+
+      下次犯错时，尽量不要感到沮丧。相反，把它想成你的大脑正在接受宝贵的升级。每个错误都是伪装的课程——而那些从错误中学习的学生最终会成功。
+    vocabHighlights:
+      - word: essential
+        ref: V1735
+      - word: significant
+        ref: V1702
+      - word: strategy
+        ref: V1779
+    questions:
+      - id: R167-Q1
+        type: multiple-choice
+        question: 'What does the brain do when you make a mistake?'
+        questionZh: '当你犯错时，大脑会做什么？'
+        options:
+          A: 'It shuts down and stops processing information.'
+          B: 'It generates an electrical signal that increases attention and deeper processing.'
+          C: 'It immediately forgets the wrong answer.'
+          D: 'It decreases in activity to protect itself from stress.'
+        answer: 'B'
+        explanation: 'The brain generates "an error-related negativity, or ERN. This signal triggers increased attention and deeper processing."'
+        explanationZh: '大脑产生"错误相关负波（ERN）。这个信号触发了更多关注和更深层处理。"'
+      - id: R167-Q2
+        type: multiple-choice
+        question: 'What was the key finding of the Michigan State University study?'
+        questionZh: '密歇根州立大学研究的关键发现是什么？'
+        options:
+          A: 'All students learn equally well from mistakes.'
+          B: 'Growth mindset students'' brains learned more from errors than fixed mindset students'' brains.'
+          C: 'Fixed mindset students made fewer mistakes overall.'
+          D: 'The test was too difficult for both groups.'
+        answer: 'B'
+        explanation: 'Growth mindset students showed "stronger ERN signals after making mistakes — their brains were actively learning." Fixed mindset students showed "weaker responses."'
+        explanationZh: '成长型思维学生显示出"犯错后更强的ERN信号——他们的大脑在积极学习。"固定型思维学生显示出"较弱的反应"。'
+      - id: R167-Q3
+        type: multiple-choice
+        question: 'What does the author recommend students do with their mistakes?'
+        questionZh: '作者建议学生如何对待他们的错误？'
+        options:
+          A: 'Forget about them and focus only on correct answers.'
+          B: 'Analyse them carefully to understand why they went wrong.'
+          C: 'Ask someone else to correct them without looking at them yourself.'
+          D: 'Avoid difficult tasks so mistakes are less likely.'
+        answer: 'B'
+        explanation: '"Students who review their errors carefully — understanding not just what the correct answer is, but why they got it wrong — learn more effectively."'
+        explanationZh: '"仔细审查错误的学生——不仅理解正确答案是什么，还理解为什么做错了——学得更有效。"'
+      - id: R167-Q4
+        type: vocabulary-in-context
+        question: 'What does "in disguise" mean in the final paragraph?'
+        questionZh: '最后一段中的"in disguise"是什么意思？'
+        options:
+          A: 'Hidden or not immediately obvious'
+          B: 'Very large and impressive'
+          C: 'Extremely dangerous and harmful'
+          D: 'Completely useless and worthless'
+        answer: 'A'
+        explanation: '"A lesson in disguise" means a lesson that is hidden — it does not look like a lesson at first because it appears as a mistake.'
+        explanationZh: '"A lesson in disguise"意思是隐藏的课程——起初它看起来不像课程，因为它以错误的形式出现。'
+
+  # ============================================================
+  # R168–R175: Remaining 8 readings (abbreviated for space)
+  # ============================================================
+
+  - id: R168
+    title: 'The World''s Oldest Trees'
+    titleZh: '世界上最古老的树'
+    level: 4
+    wordCount: 370
+    topic: environment
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about ancient trees and what they teach us'
+    passage: |
+      High in the White Mountains of California, far from any road or trail, stands a bristlecone pine tree named Methuselah. At over 4,850 years old, it is one of the oldest known living organisms on Earth. When this tree was a sapling, the pyramids of Egypt had not yet been built.
+
+      [1]
+
+      Bristlecone pines survive in conditions that would kill most other trees. They grow at altitudes above 3,000 metres where the soil is thin, the air is dry, and winter temperatures plunge far below freezing. Paradoxically, it is precisely these harsh conditions that help them live so long. Growing slowly in poor soil means they develop extremely dense wood that is highly resistant to insects, fungi, and rot.
+
+      [2]
+
+      Scientists study ancient trees for several important reasons. Tree rings — the concentric circles visible when a tree is cut — provide a precise record of climate conditions going back thousands of years. Each ring represents one year of growth: wide rings indicate favourable conditions with plenty of rain, while narrow rings reveal years of drought or extreme cold.
+
+      [3]
+
+      By studying bristlecone pine rings, researchers have been able to reconstruct a detailed climate history of the region stretching back over 9,000 years. This data has proven invaluable for understanding long-term climate patterns and predicting future changes. Furthermore, the chemical composition of each ring can reveal information about volcanic eruptions, forest fires, and even the levels of carbon dioxide in the ancient atmosphere.
+
+      Sadly, many ancient trees face threats from climate change, logging, and disease. Conservation organisations are working to protect these irreplaceable living records. The exact location of Methuselah, for instance, is kept secret to prevent vandalism.
+
+      These ancient trees remind us that the natural world operates on timescales far beyond our own brief lives. A single bristlecone pine has witnessed the rise and fall of civilisations, survived ice ages and droughts, and continues to grow, one tiny ring at a time.
+    passageZh: |
+      在加利福尼亚白山高处，远离任何道路或小径，矗立着一棵名叫玛土撒拉的刺果松。它有超过4850年的历史，是地球上已知最古老的活有机体之一。当这棵树还是幼苗时，埃及的金字塔还没有建造。
+
+      [1]
+
+      刺果松在大多数其他树木会死亡的条件下存活。它们生长在海拔3000米以上的地方，那里土壤稀薄、空气干燥、冬季气温远低于零度。矛盾的是，正是这些严酷的条件帮助它们活得如此之长。在贫瘠的土壤中缓慢生长意味着它们发展出极其致密的木材，对昆虫、真菌和腐烂具有高度抵抗力。
+
+      [2]
+
+      科学家研究古树有几个重要原因。年轮——当树被砍伐时可见的同心圆——提供了追溯数千年的气候条件的精确记录。每个环代表一年的生长：宽环表示有利条件和充足的雨水，而窄环揭示了干旱或极端寒冷的年份。
+
+      [3]
+
+      通过研究刺果松的年轮，研究人员已经能够重建追溯9000多年的该地区详细气候历史。这些数据对理解长期气候模式和预测未来变化非常宝贵。此外，每个环的化学成分可以揭示关于火山喷发、森林火灾，甚至古代大气中二氧化碳水平的信息。
+
+      遗憾的是，许多古树面临气候变化、伐木和疾病的威胁。保护组织正在努力保护这些不可替代的活记录。例如，玛土撒拉的确切位置是保密的，以防止破坏行为。
+
+      这些古树提醒我们，自然界在远超我们短暂生命的时间尺度上运作。一棵刺果松见证了文明的兴衰，经历了冰河时期和干旱，并继续生长，一次一个微小的年轮。
+    vocabHighlights:
+      - word: conservation
+        ref: V1742
+      - word: species
+        ref: V1741
+      - word: evidence
+        ref: V1713
+    questions:
+      - id: R168-Q1
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [1]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[1]？'
+        options:
+          A: 'Methuselah is not the only ancient tree. In Sweden, a spruce tree called Old Tjikko has roots that are nearly 10,000 years old, although its trunk is much younger. In Wales, a yew tree in a churchyard may be over 5,000 years old.'
+          B: 'Trees produce oxygen through photosynthesis.'
+          C: 'The tallest trees in the world are coastal redwoods in California.'
+        answer: 'A'
+        explanation: 'Gap [1] follows Methuselah. A provides other examples of ancient trees, expanding the topic before the passage explains why bristlecone pines live so long.'
+        explanationZh: '空缺[1]在玛土撒拉之后。A提供了其他古树的例子，在文章解释刺果松为什么活这么长之前扩展了话题。'
+      - id: R168-Q2
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [2]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[2]？'
+        options:
+          A: 'Their gnarled, twisted shapes — sculpted by centuries of wind and ice — give them an almost otherworldly appearance. Photographers travel from around the globe to capture their haunting beauty.'
+          B: 'Pine trees belong to the conifer family.'
+          C: 'Some trees can grow to over 100 metres tall.'
+        answer: 'A'
+        explanation: 'Gap [2] follows the explanation of dense wood. A describes the visual result — their twisted shapes — adding descriptive detail before the scientific discussion.'
+        explanationZh: '空缺[2]在致密木材的解释之后。A描述了视觉结果——它们扭曲的形状——在科学讨论之前添加了描述性细节。'
+      - id: R168-Q3
+        type: gapped-text
+        question: 'Which paragraph (A, B, or C) best fits gap [3]?'
+        questionZh: '哪个段落（A、B或C）最适合填入空缺[3]？'
+        options:
+          A: 'This technique is called dendrochronology — literally "tree time study" — and it has become one of the most important tools in climate science.'
+          B: 'Trees also absorb carbon dioxide from the atmosphere.'
+          C: 'The rings of a tree are easiest to count after it has been cut down.'
+        answer: 'A'
+        explanation: 'Gap [3] follows the explanation of what tree rings show. A names the scientific discipline (dendrochronology) and its importance, linking to the detailed research findings that follow.'
+        explanationZh: '空缺[3]在年轮显示什么的解释之后。A命名了这一科学学科（树木年代学）及其重要性，连接到后面的详细研究发现。'
+      - id: R168-Q4
+        type: vocabulary-in-context
+        question: 'What does "paradoxically" mean in the passage?'
+        questionZh: '文中的"paradoxically"是什么意思？'
+        options:
+          A: 'Obviously and clearly'
+          B: 'In a way that seems contradictory but is actually true'
+          C: 'Unfortunately and sadly'
+          D: 'Randomly and without pattern'
+        answer: 'B'
+        explanation: '"Paradoxically" means in a seemingly contradictory way. It seems contradictory that harsh conditions help the trees, but it is true.'
+        explanationZh: '"Paradoxically"意思是以看似矛盾的方式。严酷条件帮助树木似乎矛盾，但事实确实如此。'
+
+  - id: R169
+    title: 'Why Do We Forget?'
+    titleZh: '为什么我们会遗忘？'
+    level: 4
+    wordCount: 400
+    topic: science
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about the science of forgetting and memory'
+    passage: |
+      Within one hour of learning something new, you will have forgotten approximately 50 per cent of it. Within 24 hours, you will have forgotten around 70 per cent. After a week, the figure rises to nearly 90 per cent. This alarming pattern, first described by German psychologist Hermann Ebbinghaus in 1885, is known as the "forgetting curve."
+
+      Understanding why we forget is crucial for effective exam preparation. The brain does not store memories like a computer stores files. Instead, memories are formed through connections between neurons — brain cells that communicate through electrical and chemical signals. When you learn something new, these connections are initially weak and fragile. Without reinforcement, they gradually fade.
+
+      The good news is that each time you review information, the neural connections become stronger and more durable. The key insight from memory science is that the most effective time to review is just before you are about to forget. This principle forms the basis of "spaced repetition" — a learning technique where you review material at gradually increasing intervals.
+
+      For vocabulary learning, spaced repetition is particularly effective. If you learn a new word today, you should review it tomorrow, then three days later, then a week later, then two weeks later. Each successful review pushes the memory further into long-term storage. This is far more efficient than cramming — studying the same word twenty times in one evening and then never looking at it again.
+
+      Another factor that affects memory is the way information is encoded in the first place. Simply reading a word and its definition is what psychologists call "shallow processing." If you use the word in a sentence, connect it to a personal experience, or visualise an image related to it, you engage in "deep processing," which creates stronger, longer-lasting memories.
+
+      The message for FCE candidates is encouraging: you do not need a perfect memory to succeed. You need a systematic approach to reviewing material and a willingness to engage deeply with new words and structures rather than passively reading them. The forgetting curve is real, but with the right strategies, it can be overcome.
+    passageZh: |
+      在学习新东西的一小时内，你将忘记大约50%。在24小时内，你将忘记大约70%。一周后，这个数字上升到近90%。这种令人震惊的模式由德国心理学家赫尔曼·艾宾浩斯于1885年首次描述，被称为"遗忘曲线"。
+
+      理解为什么我们会遗忘对有效的备考至关重要。大脑不像计算机存储文件那样存储记忆。相反，记忆是通过神经元之间的连接形成的——神经元是通过电信号和化学信号进行通信的大脑细胞。当你学习新东西时，这些连接最初是脆弱的。没有强化，它们会逐渐消退。
+
+      好消息是每次复习信息时，神经连接变得更强更持久。记忆科学的关键洞见是，最有效的复习时间是在你即将遗忘之前。这一原则构成了"间隔重复"的基础——一种以逐渐增加的间隔复习材料的学习技巧。
+
+      对于词汇学习，间隔重复特别有效。如果你今天学了一个新词，你应该明天复习，然后三天后，然后一周后，然后两周后。每次成功的复习都会将记忆推入长期存储。这比死记硬背要高效得多——在一个晚上学同一个词二十次然后再也不看它。
+
+      影响记忆的另一个因素是信息最初编码的方式。仅仅阅读一个词和它的定义是心理学家所说的"浅层处理"。如果你在句子中使用这个词，将它与个人经历联系起来，或可视化与之相关的图像，你就进行了"深层处理"，这创造了更强、更持久的记忆。
+
+      给FCE考生的信息是令人鼓舞的：你不需要完美的记忆力才能成功。你需要一个系统的复习方法，以及愿意深入参与新词汇和结构而不是被动阅读它们。遗忘曲线是真实的，但用正确的策略，它可以被克服。
+    vocabHighlights:
+      - word: crucial
+        ref: V1732
+      - word: effective
+        ref: V1734
+      - word: systematic
+        ref: V1870
+    questions:
+      - id: R169-Q1
+        type: multiple-choice
+        question: 'According to the forgetting curve, how much do you forget within 24 hours?'
+        questionZh: '根据遗忘曲线，24小时内你会遗忘多少？'
+        options:
+          A: 'About 30 per cent'
+          B: 'About 50 per cent'
+          C: 'About 70 per cent'
+          D: 'About 90 per cent'
+        answer: 'C'
+        explanation: '"Within 24 hours, you will have forgotten around 70 per cent."'
+        explanationZh: '"在24小时内，你将忘记大约70%。"'
+      - id: R169-Q2
+        type: multiple-choice
+        question: 'What is the most effective time to review information?'
+        questionZh: '复习信息最有效的时间是什么时候？'
+        options:
+          A: 'Immediately after learning it'
+          B: 'Just before you are about to forget it'
+          C: 'The night before an exam'
+          D: 'Only when you have completely forgotten it'
+        answer: 'B'
+        explanation: '"The most effective time to review is just before you are about to forget."'
+        explanationZh: '"最有效的复习时间是在你即将遗忘之前。"'
+      - id: R169-Q3
+        type: multiple-choice
+        question: 'What is the difference between "shallow" and "deep" processing?'
+        questionZh: '"浅层"和"深层"处理有什么区别？'
+        options:
+          A: 'Shallow processing involves reading quickly, deep processing involves reading slowly.'
+          B: 'Shallow processing is just reading definitions; deep processing involves using words actively and making personal connections.'
+          C: 'Shallow processing is for easy words; deep processing is for difficult words.'
+          D: 'There is no real difference between them.'
+        answer: 'B'
+        explanation: 'Shallow processing is "reading a word and its definition"; deep processing involves using it in sentences, connecting to experience, or visualising.'
+        explanationZh: '浅层处理是"阅读一个词和它的定义"；深层处理涉及在句子中使用它、与经验联系或可视化。'
+      - id: R169-Q4
+        type: vocabulary-in-context
+        question: 'What does "cramming" mean in the passage?'
+        questionZh: '文中的"cramming"是什么意思？'
+        options:
+          A: 'Studying a small amount each day over a long period'
+          B: 'Studying intensively in a short time just before a deadline'
+          C: 'Studying only the easiest topics first'
+          D: 'Studying with a group of friends'
+        answer: 'B'
+        explanation: '"Cramming — studying the same word twenty times in one evening" describes intense last-minute studying concentrated in a short period.'
+        explanationZh: '"死记硬背——在一个晚上学同一个词二十次"描述了集中在短时间内的高强度临时学习。'
+
+  - id: R170
+    title: 'The Hidden World of Caves'
+    titleZh: '洞穴的隐秘世界'
+    level: 4
+    wordCount: 390
+    topic: environment
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about cave ecosystems and exploration'
+    passage: |
+      Deep beneath the surface of the Earth, in total darkness and silence, lies a world that few humans have ever seen. Caves are some of the most mysterious environments on our planet, home to extraordinary creatures and geological formations that have taken millions of years to develop.
+
+      The most familiar cave formations are stalactites and stalagmites. Stalactites hang from the ceiling like stone icicles, formed drop by drop over thousands of years as mineral-rich water seeps through the rock above. Stalagmites grow upwards from the floor where the dripping water lands. When a stalactite and stalagmite meet, they form a column that can be several metres tall.
+
+      Perhaps even more remarkable are the creatures that have adapted to live in complete darkness. Cave-dwelling species, known as troglobites, have evolved in extraordinary ways. Many have lost their eyes entirely, as sight is useless in the dark. Instead, they have developed enhanced senses of touch and smell to navigate their environment. Some cave fish have transparent skin, and certain cave insects have developed elongated legs and antennae to feel their way through the darkness.
+
+      Caves also provide valuable scientific information. Like tree rings, the mineral layers in cave formations record climate conditions over thousands of years. Scientists have used cave data to reconstruct temperature and rainfall patterns going back hundreds of thousands of years — information that is essential for understanding how our climate is changing.
+
+      Furthermore, caves have played a significant role in human history. Some of the world's oldest art — cave paintings in France and Spain dating back over 30,000 years — was created deep underground. These paintings of animals, handprints, and geometric shapes offer a window into the minds of our ancient ancestors.
+
+      Today, caves face threats from pollution, tourism, and climate change. Even the presence of tourists can alter the delicate environment inside a cave — the heat from human bodies, the carbon dioxide from breathing, and artificial lighting can all damage formations and disturb cave ecosystems. Many famous caves now limit visitor numbers or have closed certain sections to protect them.
+
+      The world beneath our feet remains largely unexplored. Scientists estimate that we have discovered less than half of the Earth's cave systems. Who knows what wonders still await in the darkness below?
+    passageZh: |
+      在地球表面之下深处，在完全的黑暗和寂静中，存在着一个很少有人见过的世界。洞穴是我们星球上最神秘的环境之一，是非凡生物和经过数百万年形成的地质构造的家园。
+
+      最常见的洞穴形成物是钟乳石和石笋。钟乳石像石冰柱一样悬挂在天花板上，随着富含矿物质的水渗透上方的岩石，经过数千年一滴一滴形成。石笋从地面向上生长，在滴水着陆的地方。当钟乳石和石笋相遇时，它们形成一根可以有几米高的柱子。
+
+      也许更值得注意的是适应在完全黑暗中生活的生物。被称为洞穴居民的洞穴栖息物种以非凡的方式进化。许多已经完全失去了眼睛，因为在黑暗中视觉是无用的。相反，它们发展了增强的触觉和嗅觉来导航环境。一些洞穴鱼有透明的皮肤，某些洞穴昆虫发展了细长的腿和触角来在黑暗中摸索。
+
+      洞穴还提供了有价值的科学信息。像年轮一样，洞穴形成物中的矿物层记录了数千年的气候条件。科学家已经利用洞穴数据重建了追溯数十万年的温度和降雨模式——这些信息对于理解我们的气候如何变化至关重要。
+
+      此外，洞穴在人类历史中扮演了重要角色。世界上一些最古老的艺术——法国和西班牙的洞穴壁画，可追溯到30000多年前——是在地下深处创作的。这些动物、手印和几何形状的画作提供了了解我们古代祖先心灵的窗口。
+
+      今天，洞穴面临着污染、旅游和气候变化的威胁。即使是游客的存在也能改变洞穴内的微妙环境——人体的热量、呼吸产生的二氧化碳和人工照明都能破坏形成物和干扰洞穴生态系统。许多著名的洞穴现在限制游客人数或关闭了某些区域以保护它们。
+
+      我们脚下的世界在很大程度上仍未被探索。科学家估计我们发现了不到地球洞穴系统的一半。谁知道在下面的黑暗中还有什么奇迹在等待？
+    vocabHighlights:
+      - word: species
+        ref: V1741
+      - word: habitat
+        ref: V1743
+      - word: significant
+        ref: V1702
+    questions:
+      - id: R170-Q1
+        type: multiple-choice
+        question: 'How have troglobites adapted to cave life?'
+        questionZh: '洞穴生物是如何适应洞穴生活的？'
+        options:
+          A: 'They have developed better eyesight to see in the dark.'
+          B: 'They have lost their eyes and developed enhanced senses of touch and smell.'
+          C: 'They produce their own light like deep-sea fish.'
+          D: 'They only come out of the cave at night to find food.'
+        answer: 'B'
+        explanation: '"Many have lost their eyes entirely" and "developed enhanced senses of touch and smell to navigate their environment."'
+        explanationZh: '"许多已经完全失去了眼睛"并"发展了增强的触觉和嗅觉来导航环境。"'
+      - id: R170-Q2
+        type: multiple-choice
+        question: 'Why do some famous caves limit visitor numbers?'
+        questionZh: '为什么一些著名的洞穴限制游客人数？'
+        options:
+          A: 'Because the caves are too small for many people.'
+          B: 'Because tourists'' body heat, CO2, and lighting damage the cave environment.'
+          C: 'Because visitors might steal the cave formations.'
+          D: 'Because there are dangerous animals inside.'
+        answer: 'B'
+        explanation: '"The heat from human bodies, the carbon dioxide from breathing, and artificial lighting can all damage formations and disturb cave ecosystems."'
+        explanationZh: '"人体的热量、呼吸产生的二氧化碳和人工照明都能破坏形成物和干扰洞穴生态系统。"'
+      - id: R170-Q3
+        type: multiple-choice
+        question: 'What is the writer''s overall purpose in this passage?'
+        questionZh: '作者在这篇文章中的总体目的是什么？'
+        options:
+          A: 'To persuade readers to visit caves on holiday'
+          B: 'To inform readers about the scientific, historical, and environmental importance of caves'
+          C: 'To warn readers about the dangers of cave exploration'
+          D: 'To compare caves in different countries'
+        answer: 'B'
+        explanation: 'The passage covers cave biology, climate science, human history, and conservation — informing the reader about caves'' importance from multiple angles.'
+        explanationZh: '文章涵盖了洞穴生物学、气候科学、人类历史和保护——从多个角度告知读者洞穴的重要性。'
+      - id: R170-Q4
+        type: vocabulary-in-context
+        question: 'What does "delicate" mean in the phrase "delicate environment"?'
+        questionZh: '在"delicate environment"中"delicate"是什么意思？'
+        options:
+          A: 'Beautiful and attractive'
+          B: 'Easily damaged or disturbed'
+          C: 'Large and impressive'
+          D: 'Completely dark and silent'
+        answer: 'B'
+        explanation: '"Delicate" here means easily damaged or harmed. The cave environment is fragile and sensitive to human activity.'
+        explanationZh: '这里的"delicate"意思是容易被损坏或伤害。洞穴环境脆弱且对人类活动敏感。'
+
+  - id: R171
+    title: 'The Future of Food'
+    titleZh: '食物的未来'
+    level: 4
+    wordCount: 380
+    topic: technology
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about innovative food technologies'
+    passage: |
+      By 2050, the world's population is expected to reach nearly 10 billion people. Feeding everyone will require producing approximately 60 per cent more food than we do today — a challenge that cannot be met by simply expanding existing farmland. Scientists and entrepreneurs are therefore exploring radical new approaches to food production.
+
+      One of the most promising innovations is vertical farming — growing crops in stacked layers inside climate-controlled buildings. Vertical farms use LED lights instead of sunlight, recycled water instead of rainfall, and precisely controlled nutrients instead of soil. They can operate in any location, from deserts to city centres, and produce crops year-round regardless of weather conditions.
+
+      Another approach involves laboratory-grown meat, also known as cultured meat. Scientists extract a small number of cells from a living animal and grow them in a nutrient-rich environment, producing real meat without the need to raise and slaughter animals. While currently expensive, the cost of producing cultured meat has fallen by over 99 per cent since the first lab-grown burger was created in 2013.
+
+      Insect farming is perhaps the most controversial food innovation, at least in Western countries. However, over two billion people worldwide already eat insects as part of their regular diet. Crickets, for example, contain more protein per kilogram than beef and require a fraction of the land, water, and feed. Several companies are now producing insect-based protein powders and snack bars.
+
+      Not all food innovation involves high technology. There is a growing movement to rediscover ancient, forgotten crops that are naturally resistant to drought and disease. Crops like teff, quinoa, and amaranth, which sustained civilisations for thousands of years, are being promoted as sustainable alternatives to the small number of crops that currently dominate global agriculture.
+
+      The future of food will almost certainly involve a combination of these approaches. No single solution can feed the world, but together they offer genuine hope that we can meet the challenge of feeding ten billion people without destroying the planet in the process.
+    passageZh: |
+      到2050年，世界人口预计将达到近100亿。养活所有人将需要生产比今天多约60%的食物——这一挑战不能仅通过扩大现有农田来应对。因此，科学家和企业家正在探索食物生产的全新方法。
+
+      最有前途的创新之一是垂直农业——在气候控制的建筑物内用堆叠层种植作物。垂直农场使用LED灯代替阳光，循环水代替降雨，精确控制的营养物代替土壤。它们可以在任何地方运营，从沙漠到市中心，并且全年不受天气条件影响地生产作物。
+
+      另一种方法涉及实验室培育的肉类，也称为培养肉。科学家从活体动物中提取少量细胞，在营养丰富的环境中培养它们，无需饲养和屠宰动物就能生产真正的肉。虽然目前很昂贵，但自2013年第一个实验室培育的汉堡问世以来，培养肉的生产成本已下降了99%以上。
+
+      昆虫养殖可能是最具争议的食品创新，至少在西方国家是这样。然而，全世界已有超过20亿人将昆虫作为日常饮食的一部分。例如，蟋蟀每公斤含有的蛋白质比牛肉更多，所需的土地、水和饲料只是一小部分。几家公司现在正在生产基于昆虫的蛋白质粉和零食棒。
+
+      并非所有食品创新都涉及高科技。有一个不断增长的运动在重新发现天然抗旱抗病的古老被遗忘作物。苔麸、藜麦和苋菜等作物维持了数千年的文明，正在被推广为目前主导全球农业的少数作物的可持续替代品。
+
+      食物的未来几乎肯定会涉及这些方法的组合。没有单一的解决方案可以养活世界，但它们一起提供了真正的希望——我们可以在不破坏地球的情况下应对养活100亿人的挑战。
+    vocabHighlights:
+      - word: innovation
+        ref: V1737
+      - word: sustainable
+        ref: V1744
+      - word: alternative
+        ref: V1837
+    questions:
+      - id: R171-Q1
+        type: multiple-choice
+        question: 'What is the main advantage of vertical farming?'
+        questionZh: '垂直农业的主要优势是什么？'
+        options:
+          A: 'It is the cheapest form of farming.'
+          B: 'It can operate anywhere, year-round, regardless of weather.'
+          C: 'It produces tastier food than traditional farming.'
+          D: 'It requires no water or nutrients at all.'
+        answer: 'B'
+        explanation: 'Vertical farms "can operate in any location" and "produce crops year-round regardless of weather conditions."'
+        explanationZh: '垂直农场"可以在任何地方运营"并且"全年不受天气条件影响地生产作物"。'
+      - id: R171-Q2
+        type: multiple-choice
+        question: 'Why does the author mention crickets?'
+        questionZh: '作者为什么提到蟋蟀？'
+        options:
+          A: 'To show that insects are dangerous pests'
+          B: 'To demonstrate that insects are a highly efficient protein source'
+          C: 'To suggest everyone should keep crickets as pets'
+          D: 'To compare the taste of cricket protein to beef'
+        answer: 'B'
+        explanation: 'Crickets "contain more protein per kilogram than beef and require a fraction of the land, water, and feed" — demonstrating efficiency.'
+        explanationZh: '蟋蟀"每公斤含有的蛋白质比牛肉更多，所需的土地、水和饲料只是一小部分"——展示了效率。'
+      - id: R171-Q3
+        type: multiple-choice
+        question: 'What is the author''s conclusion about the future of food?'
+        questionZh: '作者关于食物未来的结论是什么？'
+        options:
+          A: 'One single solution will solve all food problems.'
+          B: 'A combination of different innovative approaches will be needed.'
+          C: 'Traditional farming will always be the best method.'
+          D: 'It is impossible to feed the growing population.'
+        answer: 'B'
+        explanation: '"The future of food will almost certainly involve a combination of these approaches."'
+        explanationZh: '"食物的未来几乎肯定会涉及这些方法的组合。"'
+      - id: R171-Q4
+        type: vocabulary-in-context
+        question: 'What does "radical" mean in the phrase "radical new approaches"?'
+        questionZh: '在"radical new approaches"中"radical"是什么意思？'
+        options:
+          A: 'Slightly different from current methods'
+          B: 'Completely new and very different from what exists'
+          C: 'Old-fashioned and traditional'
+          D: 'Cheap and easy to implement'
+        answer: 'B'
+        explanation: '"Radical" means fundamentally new and different — a major departure from existing methods.'
+        explanationZh: '"Radical"意思是根本上新的和不同的——与现有方法的重大偏离。'
+
+  - id: R172
+    title: 'The Psychology of Colour'
+    titleZh: '色彩心理学'
+    level: 4
+    wordCount: 370
+    topic: science
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about how colours affect emotions and behaviour'
+    passage: |
+      Why do fast-food restaurants often use red and yellow in their branding? Why are hospitals painted in calming shades of blue and green? The answer lies in colour psychology — the study of how colours influence human emotions and behaviour.
+
+      Research has shown that colours can have a measurable effect on our mood, concentration, and even physical responses. Red, for instance, has been found to increase heart rate and create a sense of urgency, which is why it is commonly used in sale signs and warning labels. Blue, on the other hand, has a calming effect that can lower blood pressure and reduce anxiety.
+
+      In education, colour psychology has practical applications. Studies suggest that writing notes in blue ink can improve memory retention, while reading text highlighted in yellow makes key information easier to recall. Some research even indicates that the colour of a room can affect exam performance — students in blue rooms tend to be more creative, while those in red rooms show better attention to detail.
+
+      Companies spend millions on choosing the right colours for their brands. Green is associated with nature and health, which is why it is favoured by organic food companies and environmental organisations. Purple suggests luxury and creativity, making it popular with premium beauty brands. Orange conveys energy and enthusiasm, often appearing in children's products and sports brands.
+
+      However, it is important to note that colour associations are not universal. While white represents purity and cleanliness in Western cultures, it is associated with mourning in many Asian cultures. Red symbolises danger in some countries but luck and prosperity in China. Cultural context significantly influences how people perceive and respond to colours.
+
+      Understanding colour psychology can be surprisingly useful in everyday life. Choosing the right colours for your study space, your presentation slides, or even your exam-day outfit might give you a small but meaningful advantage. The world is full of colour — and it is influencing you more than you probably realise.
+    passageZh: |
+      为什么快餐店经常在品牌中使用红色和黄色？为什么医院被涂成令人平静的蓝色和绿色？答案在于色彩心理学——研究颜色如何影响人类情感和行为的学科。
+
+      研究表明颜色可以对我们的情绪、注意力甚至身体反应产生可测量的影响。例如，红色被发现可以增加心率并产生紧迫感，这就是为什么它通常用于促销标志和警告标签。另一方面，蓝色具有镇静效果，可以降低血压并减少焦虑。
+
+      在教育中，色彩心理学有实际应用。研究表明，用蓝色墨水写笔记可以提高记忆保持，而阅读用黄色突出显示的文本使关键信息更容易回忆。一些研究甚至表明，房间的颜色可以影响考试表现——蓝色房间中的学生往往更有创造力，而红色房间中的学生在注意细节方面表现更好。
+
+      公司花费数百万选择适合品牌的颜色。绿色与自然和健康相关联，这就是为什么它受到有机食品公司和环保组织的青睐。紫色暗示奢华和创意，使其在高端美容品牌中很受欢迎。橙色传达活力和热情，经常出现在儿童产品和运动品牌中。
+
+      然而，重要的是要注意颜色联想并不是普遍的。虽然白色在西方文化中代表纯洁和清洁，但在许多亚洲文化中它与哀悼相关。红色在一些国家象征危险，但在中国象征好运和繁荣。文化背景显著影响人们如何感知和回应颜色。
+
+      理解色彩心理学在日常生活中可能出奇地有用。为你的学习空间、演示幻灯片甚至考试日的服装选择正确的颜色可能给你一个小但有意义的优势。世界充满了色彩——它影响你的程度可能比你意识到的要大。
+    vocabHighlights:
+      - word: concentration
+        ref: V1762
+      - word: perceive
+        ref: V1827
+      - word: context
+        ref: V1794
+    questions:
+      - id: R172-Q1
+        type: multiple-choice
+        question: 'According to the passage, what effect does the colour red have?'
+        questionZh: '根据文章，红色有什么效果？'
+        options:
+          A: 'It makes people feel sleepy and relaxed.'
+          B: 'It increases heart rate and creates urgency.'
+          C: 'It improves memory and concentration.'
+          D: 'It makes people more creative.'
+        answer: 'B'
+        explanation: '"Red has been found to increase heart rate and create a sense of urgency."'
+        explanationZh: '"红色被发现可以增加心率并产生紧迫感。"'
+      - id: R172-Q2
+        type: multiple-choice
+        question: 'Why does the author mention white in Asian cultures?'
+        questionZh: '作者为什么提到白色在亚洲文化中的含义？'
+        options:
+          A: 'To show that white is the most popular colour worldwide'
+          B: 'To demonstrate that colour associations vary between cultures'
+          C: 'To suggest Asian cultures use more white than Western cultures'
+          D: 'To explain why hospitals should not be painted white'
+        answer: 'B'
+        explanation: 'The author uses this example to show "colour associations are not universal" — they vary across cultures.'
+        explanationZh: '作者用这个例子来说明"颜色联想不是普遍的"——它们因文化而异。'
+      - id: R172-Q3
+        type: multiple-choice
+        question: 'What is the writer''s tone in this passage?'
+        questionZh: '作者在这篇文章中的语气是什么？'
+        options:
+          A: 'Worried and alarmed'
+          B: 'Informative and practical'
+          C: 'Humorous and light-hearted'
+          D: 'Critical and disapproving'
+        answer: 'B'
+        explanation: 'The passage informs readers about colour psychology and offers practical tips — it is informative with a practical application focus.'
+        explanationZh: '文章告知读者色彩心理学并提供实用建议——它是以实际应用为重点的信息性文章。'
+      - id: R172-Q4
+        type: vocabulary-in-context
+        question: 'What does "conveys" mean in the passage?'
+        questionZh: '文中的"conveys"是什么意思？'
+        options:
+          A: 'Hides or conceals'
+          B: 'Communicates or expresses'
+          C: 'Destroys or damages'
+          D: 'Creates or invents'
+        answer: 'B'
+        explanation: '"Orange conveys energy and enthusiasm" — it communicates or expresses a feeling of energy to people who see it.'
+        explanationZh: '"橙色传达活力和热情"——它向看到它的人传达或表达一种活力的感觉。'
+
+  - id: R173
+    title: 'The Great Barrier Reef: A Fight for Survival'
+    titleZh: '大堡礁：生存之战'
+    level: 4
+    wordCount: 400
+    topic: environment
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about threats to the Great Barrier Reef'
+    passage: |
+      Stretching over 2,300 kilometres along the northeast coast of Australia, the Great Barrier Reef is the largest living structure on Earth — so vast that it is visible from space. Home to over 1,500 species of fish, 400 types of coral, and countless other marine organisms, it is one of the most biodiverse ecosystems in the world. Yet this natural wonder is fighting for its survival.
+
+      The greatest threat to the reef is coral bleaching, caused by rising ocean temperatures. When water becomes too warm, corals expel the tiny algae that live inside them and provide their vibrant colours. Without these algae, the corals turn white and, if conditions do not improve, eventually die. Since 2016, the Great Barrier Reef has experienced four mass bleaching events — more than in the entire previous century.
+
+      Ocean acidification poses an additional challenge. As the ocean absorbs increasing amounts of carbon dioxide from the atmosphere, the water becomes more acidic. This makes it harder for corals to build their calcium carbonate skeletons, weakening the very structure of the reef.
+
+      Human activity adds further pressure. Agricultural runoff carries fertilisers and pesticides into the ocean, encouraging the growth of harmful algae that smother coral. Coastal development destroys the mangrove forests that filter sediment before it reaches the reef. And although commercial fishing is regulated, illegal fishing continues to damage certain areas.
+
+      Conservation efforts are substantial. The Australian government has invested billions of dollars in reef protection, and scientists are developing innovative solutions such as breeding heat-resistant coral varieties and using underwater robots to plant coral larvae. Marine protected areas restrict harmful activities, and community education programmes raise awareness among tourists and locals.
+
+      The future of the Great Barrier Reef ultimately depends on global action to reduce greenhouse gas emissions. Even the most effective local conservation measures cannot protect the reef if ocean temperatures continue to rise. As marine biologist David Attenborough has warned, the reef is a canary in the coal mine — its fate signals what the rest of the natural world can expect.
+
+      Losing the Great Barrier Reef would not only be an ecological catastrophe but also an economic one. Reef tourism contributes approximately six billion dollars to the Australian economy annually and supports over 60,000 jobs.
+    passageZh: |
+      沿着澳大利亚东北海岸延伸超过2300公里，大堡礁是地球上最大的活结构——如此庞大以至于从太空都能看到。这里是超过1500种鱼类、400种珊瑚和无数其他海洋生物的家园，是世界上最具生物多样性的生态系统之一。然而，这个自然奇观正在为生存而战。
+
+      对礁石最大的威胁是由海洋温度升高引起的珊瑚白化。当水变得太暖时，珊瑚会排出生活在其内部并提供鲜艳颜色的微小藻类。没有这些藻类，珊瑚变白，如果条件不改善，最终会死亡。自2016年以来，大堡礁已经经历了四次大规模白化事件——比之前整个世纪都多。
+
+      海洋酸化构成了额外的挑战。随着海洋从大气中吸收越来越多的二氧化碳，水变得更酸。这使珊瑚更难建造它们的碳酸钙骨架，削弱了礁石的结构本身。
+
+      人类活动增加了进一步的压力。农业径流将肥料和杀虫剂带入海洋，促进有害藻类的生长，这些藻类窒息珊瑚。沿海开发破坏了在沉积物到达礁石之前过滤它们的红树林。虽然商业捕鱼受到监管，但非法捕鱼继续损害某些地区。
+
+      保护工作是大规模的。澳大利亚政府已投资数十亿美元用于礁石保护，科学家们正在开发创新解决方案，如培育耐热珊瑚品种和使用水下机器人种植珊瑚幼虫。海洋保护区限制有害活动，社区教育项目提高游客和当地人的意识。
+
+      大堡礁的未来最终取决于全球减少温室气体排放的行动。即使最有效的当地保护措施也不能在海洋温度继续上升时保护礁石。正如海洋生物学家大卫·阿滕伯勒警告的，礁石是煤矿中的金丝雀——它的命运预示着自然界其他部分可以预期的未来。
+
+      失去大堡礁不仅是一场生态灾难，也是经济灾难。礁石旅游每年为澳大利亚经济贡献约60亿美元，支持超过60000个工作岗位。
+    vocabHighlights:
+      - word: species
+        ref: V1741
+      - word: conservation
+        ref: V1742
+      - word: pollution
+        ref: V1745
+    questions:
+      - id: R173-Q1
+        type: multiple-choice
+        question: 'What causes coral bleaching?'
+        questionZh: '什么导致珊瑚白化？'
+        options:
+          A: 'Chemical pollution from factories'
+          B: 'Rising ocean temperatures that cause corals to expel their algae'
+          C: 'Too many fish eating the coral'
+          D: 'Damage from tourist boats'
+        answer: 'B'
+        explanation: '"When water becomes too warm, corals expel the tiny algae that live inside them."'
+        explanationZh: '"当水变得太暖时，珊瑚会排出生活在其内部的微小藻类。"'
+      - id: R173-Q2
+        type: multiple-choice
+        question: 'What does the phrase "canary in the coal mine" mean?'
+        questionZh: '"canary in the coal mine（煤矿中的金丝雀）"这个短语是什么意思？'
+        options:
+          A: 'A beautiful but fragile bird'
+          B: 'An early warning sign of a larger problem'
+          C: 'Something that is old-fashioned and outdated'
+          D: 'A popular tourist attraction'
+        answer: 'B'
+        explanation: 'Canaries were used in mines to detect dangerous gas — they would die first, warning miners. The reef''s decline is an early warning about wider environmental damage.'
+        explanationZh: '金丝雀被用于矿井中检测危险气体——它们会先死，警告矿工。礁石的衰退是更广泛环境破坏的早期警告。'
+      - id: R173-Q3
+        type: multiple-choice
+        question: 'According to the passage, what is the ultimate solution to saving the reef?'
+        questionZh: '根据文章，拯救礁石的最终解决方案是什么？'
+        options:
+          A: 'Building more artificial reefs nearby'
+          B: 'Closing the reef to all tourists permanently'
+          C: 'Reducing global greenhouse gas emissions'
+          D: 'Moving the coral to cooler waters'
+        answer: 'C'
+        explanation: '"The future of the Great Barrier Reef ultimately depends on global action to reduce greenhouse gas emissions."'
+        explanationZh: '"大堡礁的未来最终取决于全球减少温室气体排放的行动。"'
+      - id: R173-Q4
+        type: vocabulary-in-context
+        question: 'What does "smother" mean in the context of harmful algae?'
+        questionZh: '在有害藻类的背景下，"smother"是什么意思？'
+        options:
+          A: 'Gently clean and polish'
+          B: 'Cover completely, preventing breathing or growth'
+          C: 'Attract and encourage to grow'
+          D: 'Colour and decorate beautifully'
+        answer: 'B'
+        explanation: '"Smother coral" means to cover it so completely that the coral cannot breathe or get light, eventually killing it.'
+        explanationZh: '"Smother coral"意思是完全覆盖珊瑚使其无法呼吸或获得光线，最终杀死它。'
+
+  - id: R174
+    title: 'The Art of Public Speaking'
+    titleZh: '公共演讲的艺术'
+    level: 4
+    wordCount: 380
+    topic: culture
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about overcoming fear of public speaking'
+    passage: |
+      According to numerous surveys, public speaking is one of the most common fears in the world — some studies suggest people fear it even more than death. Yet the ability to communicate ideas clearly to an audience is one of the most valuable skills anyone can develop, both in education and in professional life.
+
+      The physical symptoms of stage fright — sweating palms, a racing heart, a trembling voice — are caused by the body's "fight or flight" response. Your brain perceives standing in front of an audience as a threat, triggering the release of adrenaline. Understanding this is the first step towards overcoming the fear: your body is not malfunctioning — it is trying to protect you.
+
+      The most effective technique for managing nervousness is thorough preparation. Research shows that speakers who have practised their presentation at least five times experience significantly less anxiety than those who wing it. Practising out loud is crucial — reading notes silently does not prepare your voice and body for the real experience.
+
+      Structure is equally important. The most memorable speeches follow a clear pattern: a strong opening that grabs attention, a logical middle section with two or three key points supported by evidence or stories, and a powerful conclusion that leaves a lasting impression. The ancient Greek philosopher Aristotle identified this structure over 2,000 years ago, and it remains as effective today as it was then.
+
+      Body language accounts for a surprising proportion of how your message is received. Making eye contact with different parts of the audience creates a sense of connection. Standing still rather than pacing shows confidence. Using natural hand gestures emphasises your points. And smiling — even when you feel nervous — actually triggers the release of chemicals that genuinely make you feel calmer.
+
+      Perhaps the most important insight about public speaking is this: the audience wants you to succeed. They have not come to judge or criticise you — they have come because they are interested in what you have to say. Keeping this in mind can transform nervousness into excitement, because physiologically the two emotions are almost identical.
+
+      The next time you have to speak in front of others, remember: courage is not the absence of fear. It is speaking despite the fear.
+    passageZh: |
+      根据许多调查，公共演讲是世界上最常见的恐惧之一——一些研究表明人们甚至比死亡更害怕它。然而，向观众清晰地传达想法的能力是任何人都可以发展的最有价值的技能之一，无论是在教育还是职业生活中。
+
+      怯场的身体症状——出汗的手掌、加速的心跳、颤抖的声音——是由身体的"战斗或逃跑"反应引起的。你的大脑将站在观众面前视为威胁，触发肾上腺素的释放。理解这一点是克服恐惧的第一步：你的身体没有出故障——它在试图保护你。
+
+      管理紧张最有效的技巧是充分准备。研究表明，至少练习了五次演讲的演讲者比那些即兴发挥的人焦虑明显减少。大声练习很关键——默读笔记不能为真实体验准备你的声音和身体。
+
+      结构同样重要。最令人难忘的演讲遵循清晰的模式：一个抓住注意力的强有力开头、一个有两三个关键点且有证据或故事支持的逻辑中间部分，以及一个留下持久印象的有力结论。古希腊哲学家亚里士多德在2000多年前就确定了这个结构，它今天仍然和当时一样有效。
+
+      肢体语言在你的信息如何被接收方面占了令人惊讶的比例。与观众不同部分进行眼神接触创造了联系感。站着不动而不是来回踱步显示自信。使用自然的手势强调你的观点。而微笑——即使你感到紧张——实际上会触发让你真正感到更平静的化学物质的释放。
+
+      关于公共演讲，也许最重要的见解是：观众希望你成功。他们不是来评判或批评你的——他们来是因为他们对你要说的感兴趣。牢记这一点可以将紧张转化为兴奋，因为在生理上这两种情感几乎是一样的。
+
+      下次你必须在他人面前发言时，记住：勇气不是没有恐惧。它是尽管恐惧也要发言。
+    vocabHighlights:
+      - word: effective
+        ref: V1734
+      - word: evidence
+        ref: V1713
+      - word: perceive
+        ref: V1827
+    questions:
+      - id: R174-Q1
+        type: multiple-choice
+        question: 'According to the passage, why do we experience stage fright?'
+        questionZh: '根据文章，我们为什么会怯场？'
+        options:
+          A: 'Because we have not studied enough'
+          B: 'Because our brain sees the audience as a threat, triggering adrenaline'
+          C: 'Because the room is usually too hot'
+          D: 'Because we are naturally bad at speaking'
+        answer: 'B'
+        explanation: '"Your brain perceives standing in front of an audience as a threat, triggering the release of adrenaline."'
+        explanationZh: '"你的大脑将站在观众面前视为威胁，触发肾上腺素的释放。"'
+      - id: R174-Q2
+        type: multiple-choice
+        question: 'What does the passage say about smiling during a speech?'
+        questionZh: '文章对演讲中微笑怎么说？'
+        options:
+          A: 'It makes you look unprofessional.'
+          B: 'It triggers chemicals that actually make you feel calmer.'
+          C: 'It confuses the audience.'
+          D: 'It only helps if you are naturally confident.'
+        answer: 'B'
+        explanation: '"Smiling — even when you feel nervous — actually triggers the release of chemicals that genuinely make you feel calmer."'
+        explanationZh: '"微笑——即使你感到紧张——实际上会触发让你真正感到更平静的化学物质的释放。"'
+      - id: R174-Q3
+        type: multiple-choice
+        question: 'What is the author''s main message about courage?'
+        questionZh: '作者关于勇气的主要信息是什么？'
+        options:
+          A: 'Truly brave people never feel afraid.'
+          B: 'Courage means acting despite feeling fear.'
+          C: 'Fear is a sign that you should not give the speech.'
+          D: 'Only experienced speakers can feel courageous.'
+        answer: 'B'
+        explanation: '"Courage is not the absence of fear. It is speaking despite the fear."'
+        explanationZh: '"勇气不是没有恐惧。它是尽管恐惧也要发言。"'
+      - id: R174-Q4
+        type: vocabulary-in-context
+        question: 'What does "wing it" mean in the passage?'
+        questionZh: '文中的"wing it"是什么意思？'
+        options:
+          A: 'Fly to a different location for the speech'
+          B: 'Give a presentation without proper preparation'
+          C: 'Use visual aids like slides and videos'
+          D: 'Speak very quickly to save time'
+        answer: 'B'
+        explanation: '"Wing it" is an informal expression meaning to do something without preparation, relying on improvisation.'
+        explanationZh: '"Wing it"是一个非正式表达，意思是不经准备就做某事，依靠即兴发挥。'
+
+  - id: R175
+    title: 'The Invention of Writing'
+    titleZh: '文字的发明'
+    level: 4
+    wordCount: 390
+    topic: history
+    tags: [Q11, month-11]
+    source:
+      type: 'original'
+      note: 'Original passage about the history and significance of writing'
+    passage: |
+      Of all the inventions in human history, writing may be the most transformative. Before writing existed, knowledge could only be passed from one generation to the next through spoken word. Memories faded, stories changed with each retelling, and complex information could easily be lost. The invention of writing changed everything.
+
+      The earliest known writing system, cuneiform, developed in Mesopotamia around 3,400 BCE. Initially, it was used for a surprisingly practical purpose — keeping records of grain and livestock. Traders needed a reliable way to track what they owned and what they owed. Over time, however, this simple accounting system evolved into something far more powerful: a tool for recording history, laws, literature, and scientific knowledge.
+
+      Around the same time, the ancient Egyptians developed hieroglyphics — a beautiful but complex system using pictures and symbols. Unlike cuneiform, hieroglyphics were used extensively for religious texts and monumental inscriptions. The ability to write was restricted to a small class of highly trained scribes, making literacy a mark of power and status.
+
+      The development of alphabets revolutionised writing by dramatically reducing the number of symbols needed. The Phoenician alphabet, created around 1,050 BCE, used just 22 letters to represent all the sounds of their language. This simplicity made writing much easier to learn, and the Phoenician system became the ancestor of almost every alphabet used in the world today, including Greek, Latin, Arabic, and Hebrew.
+
+      The invention of the printing press by Johannes Gutenberg in around 1440 was the next great leap. Before printing, every book had to be copied by hand — a process that could take months. Gutenberg's press made books affordable and widely available for the first time, leading to an explosion of literacy, education, and the spread of ideas across Europe.
+
+      Today, we are living through another revolution in writing — the digital age. More text is produced in a single day on the internet than was written in the entire first millennium. Yet the fundamental purpose of writing remains unchanged: to preserve human knowledge and allow ideas to travel across time and space.
+    passageZh: |
+      在人类历史上所有的发明中，文字可能是最具变革性的。在文字存在之前，知识只能通过口头语言从一代传给下一代。记忆会消退，故事每次重述都会改变，复杂的信息很容易丢失。文字的发明改变了一切。
+
+      最早已知的书写系统，楔形文字，大约在公元前3400年在美索不达米亚发展起来。最初，它被用于一个令人惊讶的实际目的——记录谷物和牲畜。商人需要一种可靠的方式来追踪他们拥有什么和欠什么。然而，随着时间推移，这种简单的会计系统演变成了更强大的东西：一种记录历史、法律、文学和科学知识的工具。
+
+      大约在同一时间，古埃及人发展了象形文字——一种美丽但复杂的使用图片和符号的系统。与楔形文字不同，象形文字被广泛用于宗教文本和纪念碑铭文。写作能力仅限于一小类经过高度训练的抄写员，使识字成为权力和地位的标志。
+
+      字母表的发展通过大幅减少所需的符号数量革命性地改变了书写。腓尼基字母表，大约在公元前1050年创建，只用22个字母来表示他们语言的所有声音。这种简洁使写作更容易学习，腓尼基系统成为今天世界上使用的几乎所有字母表的祖先，包括希腊语、拉丁语、阿拉伯语和希伯来语。
+
+      约翰内斯·古腾堡在大约1440年发明的印刷机是下一个伟大的飞跃。在印刷之前，每本书都必须手工抄写——这个过程可能需要数月。古腾堡的印刷机首次使书籍变得便宜且广泛可得，导致了识字率、教育和思想在欧洲传播的爆炸式增长。
+
+      今天，我们正在经历另一场写作革命——数字时代。互联网上一天产生的文本比整个第一千年写的都多。然而，写作的基本目的保持不变：保存人类知识并允许思想跨越时间和空间旅行。
+    vocabHighlights:
+      - word: transform
+        ref: V1723
+      - word: establish
+        ref: V1729
+      - word: era
+        ref: V1750
+    questions:
+      - id: R175-Q1
+        type: multiple-choice
+        question: 'What was the original purpose of cuneiform writing?'
+        questionZh: '楔形文字最初的用途是什么？'
+        options:
+          A: 'Writing poetry and stories'
+          B: 'Recording religious prayers'
+          C: 'Keeping records of grain and livestock for trade'
+          D: 'Sending messages between cities'
+        answer: 'C'
+        explanation: 'Cuneiform was "used for a surprisingly practical purpose — keeping records of grain and livestock."'
+        explanationZh: '楔形文字被"用于一个令人惊讶的实际目的——记录谷物和牲畜"。'
+      - id: R175-Q2
+        type: multiple-choice
+        question: 'Why was the Phoenician alphabet so important?'
+        questionZh: '为什么腓尼基字母表如此重要？'
+        options:
+          A: 'It was the most beautiful writing system ever created.'
+          B: 'Its simplicity made writing easier to learn and became the ancestor of most modern alphabets.'
+          C: 'It was the first writing system to use pictures.'
+          D: 'It was used by the largest empire in the ancient world.'
+        answer: 'B'
+        explanation: 'The Phoenician alphabet "used just 22 letters," making "writing much easier to learn," and "became the ancestor of almost every alphabet used in the world today."'
+        explanationZh: '腓尼基字母表"只用22个字母"，使"写作更容易学习"，并"成为今天世界上使用的几乎所有字母表的祖先"。'
+      - id: R175-Q3
+        type: multiple-choice
+        question: 'What is the main idea of the passage?'
+        questionZh: '文章的主旨是什么？'
+        options:
+          A: 'Ancient civilisations were more intelligent than modern ones.'
+          B: 'Writing is the most transformative invention in history, evolving through several revolutionary stages.'
+          C: 'Digital technology has made traditional writing unnecessary.'
+          D: 'The Egyptians had the best writing system in history.'
+        answer: 'B'
+        explanation: 'The passage traces writing from cuneiform to digital text, arguing it is "the most transformative" invention and showing its evolution through key stages.'
+        explanationZh: '文章追溯了从楔形文字到数字文本的书写历史，认为它是"最具变革性的"发明，并展示了它通过关键阶段的演变。'
+      - id: R175-Q4
+        type: vocabulary-in-context
+        question: 'What does "monumental" mean in the phrase "monumental inscriptions"?'
+        questionZh: '在"monumental inscriptions"中"monumental"是什么意思？'
+        options:
+          A: 'Very small and difficult to read'
+          B: 'Carved on large public buildings or monuments'
+          C: 'Written in a secret code'
+          D: 'Extremely old and faded'
+        answer: 'B'
+        explanation: '"Monumental inscriptions" are inscriptions carved on monuments — large public buildings, temples, or tombs.'
+        explanationZh: '"Monumental inscriptions"是刻在纪念碑上的铭文——大型公共建筑、寺庙或墓葬。'

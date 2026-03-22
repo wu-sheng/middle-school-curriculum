@@ -1,0 +1,1613 @@
+category: 'Final Grammar Review'
+categoryZh: '语法终极复习'
+questions:
+  # ============================================================
+  # G1101–G1120: Tenses review — most common exam errors
+  # ============================================================
+  - id: G1101
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'By the time we arrived at the cinema, the film _____.'
+    questionZh: '当我们到达电影院时，电影 _____。'
+    options:
+      A: 'already started'
+      B: 'has already started'
+      C: 'had already started'
+      D: 'was already starting'
+    answer: 'C'
+    explanation: 'Past perfect is needed because the film started BEFORE we arrived — two past events, the earlier one uses past perfect.'
+    explanationZh: '需要过去完成时，因为电影在我们到达之前就开始了——两个过去事件，较早的用过去完成时。'
+    grammarPoint: 'Past perfect for earlier past event'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1102
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'She _____ English for three years before she took the FCE exam.'
+    questionZh: '她在参加FCE考试之前已经学了三年英语。'
+    options:
+      A: 'studied'
+      B: 'has studied'
+      C: 'had been studying'
+      D: 'was studying'
+    answer: 'C'
+    explanation: 'Past perfect continuous is used for an action that continued for a period BEFORE another past event. "For three years" shows duration.'
+    explanationZh: '过去完成进行时用于在另一个过去事件之前持续了一段时间的动作。"For three years"表示持续。'
+    grammarPoint: 'Past perfect continuous for duration before past event'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1103
+    type: fill-blank
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'I _____ (not/see) this film before. Let us watch it tonight!'
+    questionZh: '我以前 _____ 看过这部电影。今晚我们一起看吧！'
+    answer: "have not seen"
+    acceptableAnswers: ["have not seen", "haven't seen"]
+    explanation: 'Present perfect with "before" — the experience is connected to the present (we can still watch it now).'
+    explanationZh: '现在完成时与"before"搭配——这个经历与现在有关（我们现在还可以看）。'
+    grammarPoint: 'Present perfect for experience'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1104
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'This time next week, I _____ my FCE exam.'
+    questionZh: '下周这个时候，我 _____ FCE考试。'
+    options:
+      A: 'will take'
+      B: 'will be taking'
+      C: 'am taking'
+      D: 'take'
+    answer: 'B'
+    explanation: 'Future continuous is used for an action that will be in progress at a specific future time. "This time next week" = a specific point in the future.'
+    explanationZh: '将来进行时用于在将来某个特定时间正在进行的动作。"下周这个时候"=将来的一个特定时间点。'
+    grammarPoint: 'Future continuous for actions in progress at a future time'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1105
+    type: fill-blank
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'By the end of this course, you _____ (learn) over 2,000 new words.'
+    questionZh: '到这门课程结束时，你 _____ 超过2000个新词。'
+    answer: 'will have learned'
+    acceptableAnswers: ['will have learned', 'will have learnt']
+    explanation: 'Future perfect is used for an action that will be completed BEFORE a future point. "By the end of this course" = the future deadline.'
+    explanationZh: '将来完成时用于在将来某个时间点之前完成的动作。"到这门课程结束时"=将来的截止时间。'
+    grammarPoint: 'Future perfect for completed actions before a future point'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1106
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-2]
+    context: exam-review
+    question: 'She _____ to school every day, but today she is walking.'
+    questionZh: '她每天 _____ 上学，但今天她在走路。'
+    options:
+      A: 'drives'
+      B: 'is driving'
+      C: 'drove'
+      D: 'has driven'
+    answer: 'A'
+    explanation: 'Present simple for habitual actions. "Every day" signals a routine. "But today" contrasts with the present continuous for the temporary action.'
+    explanationZh: '一般现在时用于习惯性动作。"每天"表示日常。"但今天"与现在进行时的临时动作形成对比。'
+    grammarPoint: 'Present simple vs present continuous'
+    relatedQuest: Q12
+    difficulty: 2
+
+  - id: G1107
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'I wish I _____ harder for the exam last month.'
+    questionZh: '我希望上个月我 _____ 更努力准备考试。'
+    options:
+      A: 'studied'
+      B: 'had studied'
+      C: 'have studied'
+      D: 'would study'
+    answer: 'B'
+    explanation: '"I wish + past perfect" is used to express regret about a past situation. "Last month" confirms it is about the past.'
+    explanationZh: '"I wish + 过去完成时"用于表达对过去情况的遗憾。"上个月"确认这是关于过去的。'
+    grammarPoint: 'Wish + past perfect for past regrets'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1108
+    type: fill-blank
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'If I _____ (know) the answer, I would have put my hand up.'
+    questionZh: '如果我 _____ 答案，我就会举手了。'
+    answer: 'had known'
+    acceptableAnswers: ['had known']
+    explanation: 'Third conditional: If + past perfect, would have + past participle. Used for unreal past situations.'
+    explanationZh: '第三条件句：If + 过去完成时, would have + 过去分词。用于不真实的过去情况。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1109
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'The teacher said she _____ the results the following week.'
+    questionZh: '老师说她 _____ 在下周公布成绩。'
+    options:
+      A: 'will announce'
+      B: 'would announce'
+      C: 'announces'
+      D: 'is announcing'
+    answer: 'B'
+    explanation: 'Reported speech: "will" becomes "would" when the reporting verb is past tense. "The following week" = reported form of "next week."'
+    explanationZh: '间接引语："will"在引述动词为过去时时变为"would"。"The following week"是"next week"的间接引语形式。'
+    grammarPoint: 'Reported speech tense shift'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1110
+    type: multiple-choice
+    tags: [tenses, Q12, difficulty-3]
+    context: exam-review
+    question: 'The book _____ into over 50 languages since it was published.'
+    questionZh: '这本书自出版以来 _____ 被翻译成50多种语言。'
+    options:
+      A: 'has been translated'
+      B: 'was translated'
+      C: 'is translated'
+      D: 'had been translated'
+    answer: 'A'
+    explanation: 'Present perfect passive: "has been translated." The action started in the past and continues to the present ("since it was published").'
+    explanationZh: '现在完成时被动语态："has been translated." 动作从过去开始持续到现在（"since it was published"）。'
+    grammarPoint: 'Present perfect passive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1111–G1130: Conditionals & wishes — exam traps
+  # ============================================================
+  - id: G1111
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'If you _____ the questions carefully, you will avoid mistakes.'
+    questionZh: '如果你仔细 _____ 题目，你就会避免错误。'
+    options:
+      A: 'read'
+      B: 'will read'
+      C: 'would read'
+      D: 'had read'
+    answer: 'A'
+    explanation: 'First conditional: If + present simple, will + base form. The "if" clause uses present simple, NOT "will."'
+    explanationZh: '第一条件句：If + 一般现在时, will + 动词原形。"if"从句用一般现在时，不用"will"。'
+    grammarPoint: 'First conditional — no "will" in if-clause'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1112
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'If I _____ you, I would start revising today.'
+    questionZh: '如果我 _____ 你，我今天就开始复习。'
+    options:
+      A: 'am'
+      B: 'was'
+      C: 'were'
+      D: 'would be'
+    answer: 'C'
+    explanation: 'Second conditional: If + past simple. For "be," we use "were" for all subjects in formal/exam English: "If I were you."'
+    explanationZh: '第二条件句：If + 一般过去时。对于"be"，在正式/考试英语中所有主语都用"were"："If I were you."'
+    grammarPoint: 'Second conditional — "were" for all subjects'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1113
+    type: fill-blank
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'I would have passed the exam if I _____ (not/forget) to check my answers.'
+    questionZh: '如果我 _____ 忘记检查答案，我就会通过考试了。'
+    answer: "had not forgotten"
+    acceptableAnswers: ["had not forgotten", "hadn't forgotten"]
+    explanation: 'Third conditional: If + past perfect, would have + past participle. Expresses regret about an unreal past situation.'
+    explanationZh: '第三条件句：If + 过去完成时, would have + 过去分词。表达对不真实的过去情况的遗憾。'
+    grammarPoint: 'Third conditional'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1114
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-4]
+    context: exam-review
+    question: 'If she _____ more last year, she would be more confident now.'
+    questionZh: '如果她去年 _____ 更多，她现在会更自信。'
+    options:
+      A: 'practised'
+      B: 'had practised'
+      C: 'has practised'
+      D: 'would practise'
+    answer: 'B'
+    explanation: 'Mixed conditional: If + past perfect (past condition), would + base form (present result). Past cause → present result.'
+    explanationZh: '混合条件句：If + 过去完成时（过去条件），would + 动词原形（现在结果）。过去原因→现在结果。'
+    grammarPoint: 'Mixed conditional: past condition → present result'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1115
+    type: multiple-choice
+    tags: [wishes, Q12, difficulty-3]
+    context: exam-review
+    question: 'I wish the exam _____ so early in the morning.'
+    questionZh: '我希望考试不 _____ 这么早。'
+    options:
+      A: 'is not'
+      B: 'was not'
+      C: 'were not'
+      D: 'will not be'
+    answer: 'C'
+    explanation: '"I wish + past simple/subjunctive" for present wishes. Formal English uses "were" after "wish" for all subjects.'
+    explanationZh: '"I wish + 一般过去时/虚拟语气"用于表达现在的愿望。正式英语在"wish"后对所有主语用"were"。'
+    grammarPoint: 'Wish + were (present wishes)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1116
+    type: fill-blank
+    tags: [wishes, Q12, difficulty-3]
+    context: exam-review
+    question: 'If only I _____ (bring) my dictionary to the exam!'
+    questionZh: '要是我 _____ 把字典带到考场就好了！'
+    answer: 'had brought'
+    acceptableAnswers: ['had brought']
+    explanation: '"If only + past perfect" expresses a strong wish about an unreal past situation. Similar to "I wish I had brought..."'
+    explanationZh: '"If only + 过去完成时"表达对不真实的过去情况的强烈愿望。类似于"I wish I had brought..."'
+    grammarPoint: 'If only + past perfect for past regrets'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1117
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'Unless you _____ hard, you will not pass the exam.'
+    questionZh: '除非你努力 _____，否则你不会通过考试。'
+    options:
+      A: 'study'
+      B: 'will study'
+      C: 'studied'
+      D: 'would study'
+    answer: 'A'
+    explanation: '"Unless" means "if not." It follows the same rule as first conditional: unless + present simple, will + base form.'
+    explanationZh: '"Unless"意思是"如果不"。它遵循与第一条件句相同的规则：unless + 一般现在时, will + 动词原形。'
+    grammarPoint: 'Unless + present simple'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1118
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'Provided that you _____ carefully, you should do well in the exam.'
+    questionZh: '只要你仔细 _____，你应该在考试中表现良好。'
+    options:
+      A: 'prepare'
+      B: 'will prepare'
+      C: 'prepared'
+      D: 'would prepare'
+    answer: 'A'
+    explanation: '"Provided that" works like "if" in first conditional — followed by present simple. Other similar phrases: as long as, on condition that.'
+    explanationZh: '"Provided that"在第一条件句中类似"if"——后接一般现在时。类似短语：as long as, on condition that。'
+    grammarPoint: 'Provided that + present simple'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1119
+    type: fill-blank
+    tags: [conditionals, Q12, difficulty-4]
+    context: exam-review
+    question: 'It is high time you _____ (start) preparing for the exam.'
+    questionZh: '是你 _____ 开始准备考试的时候了。'
+    answer: 'started'
+    acceptableAnswers: ['started']
+    explanation: '"It is (high) time + past simple" is a fixed structure expressing that something should happen now but has not yet.'
+    explanationZh: '"It is (high) time + 一般过去时"是一个固定结构，表示某事现在应该发生但还没有。'
+    grammarPoint: 'It is time + past simple'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1120
+    type: multiple-choice
+    tags: [conditionals, Q12, difficulty-3]
+    context: exam-review
+    question: 'I would rather you _____ me help with your homework.'
+    questionZh: '我宁愿你 _____ 我帮你做作业。'
+    options:
+      A: 'let'
+      B: 'would let'
+      C: 'had let'
+      D: 'letting'
+    answer: 'A'
+    explanation: '"Would rather + someone + past simple" is used when you want someone else to do (or not do) something. "Let" is past simple here.'
+    explanationZh: '"Would rather + 某人 + 一般过去时"用于你想让别人做（或不做）某事时。"Let"在这里是一般过去时。'
+    grammarPoint: 'Would rather + person + past simple'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1121–G1140: Passive voice & reported speech
+  # ============================================================
+  - id: G1121
+    type: multiple-choice
+    tags: [passive, Q12, difficulty-3]
+    context: exam-review
+    question: 'The exam results _____ next Friday.'
+    questionZh: '考试成绩 _____ 下周五公布。'
+    options:
+      A: 'will announce'
+      B: 'will be announced'
+      C: 'are announcing'
+      D: 'have announced'
+    answer: 'B'
+    explanation: 'Future passive: will be + past participle. The results do not announce themselves — they ARE announced.'
+    explanationZh: '将来被动语态：will be + 过去分词。成绩不会自己宣布——它们被宣布。'
+    grammarPoint: 'Future passive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1122
+    type: fill-blank
+    tags: [passive, Q12, difficulty-3]
+    context: exam-review
+    question: 'The questions _____ (design) to test a range of skills.'
+    questionZh: '这些题目 _____ 用来测试一系列技能。'
+    answer: 'are designed'
+    acceptableAnswers: ['are designed', 'were designed', 'have been designed']
+    explanation: 'Passive voice: subject + be + past participle. "The questions" receive the action (someone designed them).'
+    explanationZh: '被动语态：主语 + be + 过去分词。"题目"接受动作（有人设计了它们）。'
+    grammarPoint: 'Passive voice formation'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1123
+    type: multiple-choice
+    tags: [reported-speech, Q12, difficulty-3]
+    context: exam-review
+    question: 'The teacher told us that we _____ bring a dictionary into the exam.'
+    questionZh: '老师告诉我们我们 _____ 把字典带进考场。'
+    options:
+      A: 'cannot'
+      B: 'could not'
+      C: 'may not'
+      D: 'will not'
+    answer: 'B'
+    explanation: 'Reported speech: "cannot" becomes "could not" when the reporting verb is past tense ("told").'
+    explanationZh: '间接引语：当引述动词是过去时（"told"）时，"cannot"变为"could not"。'
+    grammarPoint: 'Reported speech: modal shift'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1124
+    type: fill-blank
+    tags: [reported-speech, Q12, difficulty-3]
+    context: exam-review
+    question: 'She asked me where I _____ (study) English.'
+    questionZh: '她问我在哪里 _____ 英语。'
+    answer: 'studied'
+    acceptableAnswers: ['studied', 'had studied']
+    explanation: 'Reported question: the word order is statement order (subject + verb), not question order. The tense shifts back.'
+    explanationZh: '间接疑问句：语序是陈述句语序（主语+动词），不是疑问句语序。时态后退。'
+    grammarPoint: 'Reported questions — word order'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1125
+    type: multiple-choice
+    tags: [passive, Q12, difficulty-3]
+    context: exam-review
+    question: 'The school is believed _____ the best in the city.'
+    questionZh: '这所学校被认为 _____ 城市里最好的。'
+    options:
+      A: 'being'
+      B: 'to be'
+      C: 'is'
+      D: 'that it is'
+    answer: 'B'
+    explanation: 'Impersonal passive: Subject + is believed/said/thought + to be/to have. "The school is believed to be the best."'
+    explanationZh: '非人称被动：主语 + is believed/said/thought + to be/to have。"The school is believed to be the best."'
+    grammarPoint: 'Impersonal passive with infinitive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1126
+    type: multiple-choice
+    tags: [reported-speech, Q12, difficulty-3]
+    context: exam-review
+    question: 'She suggested that we _____ the library for quiet study.'
+    questionZh: '她建议我们 _____ 图书馆安静学习。'
+    options:
+      A: 'use'
+      B: 'used'
+      C: 'would use'
+      D: 'to use'
+    answer: 'A'
+    explanation: '"Suggest that someone + base form (subjunctive)" is the formal structure. Also acceptable: "suggest + gerund" (She suggested using).'
+    explanationZh: '"Suggest that someone + 动词原形（虚拟语气）"是正式结构。也可以接受："suggest + 动名词"（She suggested using）。'
+    grammarPoint: 'Suggest + subjunctive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1127
+    type: fill-blank
+    tags: [passive, Q12, difficulty-3]
+    context: exam-review
+    question: 'I do not like _____ (tell) what to do.'
+    questionZh: '我不喜欢 _____ 别人告诉我做什么。'
+    answer: 'being told'
+    acceptableAnswers: ['being told']
+    explanation: 'Passive gerund: being + past participle. After "like/enjoy/hate" + passive meaning, we use "being + past participle."'
+    explanationZh: '被动动名词：being + 过去分词。在"like/enjoy/hate"+ 被动含义后，我们用"being + 过去分词"。'
+    grammarPoint: 'Passive gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1128
+    type: multiple-choice
+    tags: [reported-speech, Q12, difficulty-3]
+    context: exam-review
+    question: 'He denied _____ the answers from his classmate.'
+    questionZh: '他否认 _____ 同学的答案。'
+    options:
+      A: 'to copy'
+      B: 'copying'
+      C: 'copy'
+      D: 'copied'
+    answer: 'B'
+    explanation: '"Deny + gerund" is the correct pattern. "Deny + to-infinitive" is WRONG. This is a classic FCE trap.'
+    explanationZh: '"Deny + 动名词"是正确的搭配。"Deny + 不定式"是错误的。这是一个经典的FCE陷阱。'
+    grammarPoint: 'Deny + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1129
+    type: multiple-choice
+    tags: [passive, Q12, difficulty-4]
+    context: exam-review
+    question: 'The exam is reported _____ more difficult this year.'
+    questionZh: '据报道今年的考试 _____ 更难。'
+    options:
+      A: 'being'
+      B: 'to have been'
+      C: 'that it was'
+      D: 'is'
+    answer: 'B'
+    explanation: 'Impersonal passive + perfect infinitive: "is reported to have been" when the reported event is in the past.'
+    explanationZh: '非人称被动 + 完成不定式："is reported to have been"当报告的事件在过去时使用。'
+    grammarPoint: 'Impersonal passive with perfect infinitive'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1130
+    type: fill-blank
+    tags: [reported-speech, Q12, difficulty-3]
+    context: exam-review
+    question: 'The teacher warned us _____ (not/leave) any answers blank.'
+    questionZh: '老师警告我们 _____ 留空任何答案。'
+    answer: 'not to leave'
+    acceptableAnswers: ['not to leave']
+    explanation: '"Warn someone + not to + infinitive" is the correct pattern for reported commands with "warn."'
+    explanationZh: '"Warn someone + not to + 不定式"是"warn"引述命令的正确搭配。'
+    grammarPoint: 'Reported commands with warn'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1131–G1150: Articles, determiners & quantifiers
+  # ============================================================
+  - id: G1131
+    type: multiple-choice
+    tags: [articles, Q12, difficulty-3]
+    context: exam-review
+    question: 'She gave me _____ useful piece of advice about the exam.'
+    questionZh: '她给了我 _____ 关于考试的有用建议。'
+    options:
+      A: 'a'
+      B: 'an'
+      C: 'the'
+      D: '-'
+    answer: 'A'
+    explanation: '"A piece of advice" — we use "a" before consonant sounds. "Useful" starts with /j/ (consonant sound), so "a useful" not "an useful."'
+    explanationZh: '"A piece of advice"——我们在辅音音素前用"a"。"Useful"以/j/（辅音音素）开头，所以是"a useful"不是"an useful"。'
+    grammarPoint: 'A vs an depends on SOUND, not spelling'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1132
+    type: fill-blank
+    tags: [articles, Q12, difficulty-3]
+    context: exam-review
+    question: 'I need to buy _____ new pencil for the exam.'
+    questionZh: '我需要为考试买 _____ 新铅笔。'
+    answer: 'a'
+    acceptableAnswers: ['a']
+    explanation: '"A" is used for singular countable nouns mentioned for the first time. We do not know which specific pencil.'
+    explanationZh: '"A"用于第一次提到的可数名词单数。我们不知道具体是哪支铅笔。'
+    grammarPoint: 'Indefinite article for first mention'
+    relatedQuest: Q12
+    difficulty: 2
+
+  - id: G1133
+    type: multiple-choice
+    tags: [articles, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ information in this booklet is essential for all candidates.'
+    questionZh: '这本手册中的 _____ 信息对所有考生都是必不可少的。'
+    options:
+      A: 'A'
+      B: 'An'
+      C: 'The'
+      D: '-'
+    answer: 'C'
+    explanation: '"The information" — we use "the" because it is SPECIFIC information (in this booklet). "Information" is uncountable but can still take "the."'
+    explanationZh: '"The information"——我们用"the"因为是特定的信息（在这本手册中）。"Information"虽然不可数，但仍可以用"the"。'
+    grammarPoint: 'Definite article for specific reference'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1134
+    type: multiple-choice
+    tags: [quantifiers, Q12, difficulty-3]
+    context: exam-review
+    question: 'There is very _____ time left, so work quickly.'
+    questionZh: '剩下的时间很 _____，所以快点做。'
+    options:
+      A: 'few'
+      B: 'little'
+      C: 'less'
+      D: 'a few'
+    answer: 'B'
+    explanation: '"Little" is used with uncountable nouns (time). "Few" is for countable nouns. "Very little" = almost none.'
+    explanationZh: '"Little"与不可数名词（time）连用。"Few"用于可数名词。"Very little"=几乎没有。'
+    grammarPoint: 'Little (uncountable) vs few (countable)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1135
+    type: multiple-choice
+    tags: [quantifiers, Q12, difficulty-3]
+    context: exam-review
+    question: 'There are _____ questions I need to go back to.'
+    questionZh: '有 _____ 题目我需要回去看看。'
+    options:
+      A: 'a little'
+      B: 'a few'
+      C: 'much'
+      D: 'a lot'
+    answer: 'B'
+    explanation: '"A few" is used with countable plural nouns (questions). "A little" is for uncountable nouns. "A few" = some, but not many.'
+    explanationZh: '"A few"与可数名词复数（questions）连用。"A little"用于不可数名词。"A few"=一些，但不多。'
+    grammarPoint: 'A few (countable) vs a little (uncountable)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1136
+    type: fill-blank
+    tags: [quantifiers, Q12, difficulty-3]
+    context: exam-review
+    question: 'She has _____ experience of taking exams, so she is not nervous.'
+    questionZh: '她有 _____ 考试经验，所以她不紧张。'
+    answer: 'a lot of'
+    acceptableAnswers: ['a lot of', 'lots of', 'plenty of', 'considerable']
+    explanation: 'We need a quantifier meaning "much/many" that works with uncountable "experience." "A lot of" works with both countable and uncountable nouns.'
+    explanationZh: '我们需要一个表示"much/many"的量词，能与不可数的"experience"搭配。"A lot of"可以与可数和不可数名词都搭配。'
+    grammarPoint: 'Quantifiers with uncountable nouns'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1137
+    type: multiple-choice
+    tags: [articles, Q12, difficulty-3]
+    context: exam-review
+    question: 'I play _____ piano every evening to relax after studying.'
+    questionZh: '我每天晚上弹 _____ 钢琴来放松学习后的压力。'
+    options:
+      A: 'a'
+      B: 'an'
+      C: 'the'
+      D: '-'
+    answer: 'C'
+    explanation: 'We use "the" before musical instruments when talking about playing them: "play the piano/guitar/violin."'
+    explanationZh: '谈论演奏乐器时，我们在乐器前用"the"："play the piano/guitar/violin."'
+    grammarPoint: 'The + musical instruments'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1138
+    type: multiple-choice
+    tags: [articles, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ English is spoken in many countries around the world.'
+    questionZh: '_____ 英语在世界许多国家使用。'
+    options:
+      A: 'A'
+      B: 'An'
+      C: 'The'
+      D: '-'
+    answer: 'D'
+    explanation: 'No article before language names used in general: "English is spoken..." But: "The English spoken in Australia is different."'
+    explanationZh: '泛指语言名称前不加冠词："English is spoken..."但："The English spoken in Australia is different."'
+    grammarPoint: 'Zero article with languages (general)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1139
+    type: multiple-choice
+    tags: [quantifiers, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ of the students passed the exam. Only three failed.'
+    questionZh: '_____ 学生通过了考试。只有三个没通过。'
+    options:
+      A: 'Most'
+      B: 'All'
+      C: 'Every'
+      D: 'Each'
+    answer: 'A'
+    explanation: '"Most of the students" means the majority but not all. "Only three failed" tells us some did not pass, so "all" is wrong.'
+    explanationZh: '"Most of the students"意思是大多数但不是全部。"只有三个没通过"告诉我们有些没通过，所以"all"是错的。'
+    grammarPoint: 'Most vs all'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1140
+    type: fill-blank
+    tags: [quantifiers, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ single question on the exam counts towards your final score.'
+    questionZh: '考试上 _____ 一道题都算入你的最终分数。'
+    answer: 'Every'
+    acceptableAnswers: ['Every']
+    explanation: '"Every single" is a common emphatic expression meaning "each and every one without exception."'
+    explanationZh: '"Every single"是一个常见的强调表达，意思是"每一个，无一例外"。'
+    grammarPoint: 'Every single = emphatic every'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1141–G1160: Relative clauses & connectors
+  # ============================================================
+  - id: G1141
+    type: multiple-choice
+    tags: [relative-clauses, Q12, difficulty-3]
+    context: exam-review
+    question: 'The student _____ scored the highest was only nine years old.'
+    questionZh: '得分最高的学生 _____ 只有九岁。'
+    options:
+      A: 'which'
+      B: 'who'
+      C: 'whom'
+      D: 'whose'
+    answer: 'B'
+    explanation: '"Who" is used for people as the subject of a relative clause. The student scored (subject), so "who" is correct.'
+    explanationZh: '"Who"用于人作为定语从句的主语。学生得分（主语），所以"who"是正确的。'
+    grammarPoint: 'Who for people (subject)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1142
+    type: multiple-choice
+    tags: [relative-clauses, Q12, difficulty-3]
+    context: exam-review
+    question: 'The book _____ I borrowed from the library was really helpful.'
+    questionZh: '我从图书馆借的那本书 _____ 真的很有帮助。'
+    options:
+      A: 'who'
+      B: 'which'
+      C: 'whose'
+      D: 'where'
+    answer: 'B'
+    explanation: '"Which" is used for things. Here "which" is the object of "borrowed" (I borrowed the book), so "that" would also be correct.'
+    explanationZh: '"Which"用于事物。这里"which"是"borrowed"的宾语（我借了书），所以"that"也可以。'
+    grammarPoint: 'Which for things'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1143
+    type: fill-blank
+    tags: [relative-clauses, Q12, difficulty-3]
+    context: exam-review
+    question: 'The teacher, _____ class I enjoy the most, is retiring next year.'
+    questionZh: '那位老师，我最喜欢她的课，明年就退休了。'
+    answer: 'whose'
+    acceptableAnswers: ['whose']
+    explanation: '"Whose" shows possession. "Whose class" = the class belonging to the teacher. This is a non-defining relative clause (with commas).'
+    explanationZh: '"Whose"表示所有关系。"Whose class"=属于这位老师的课。这是非限定性定语从句（有逗号）。'
+    grammarPoint: 'Whose for possession'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1144
+    type: multiple-choice
+    tags: [connectors, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ the exam was difficult, I managed to answer every question.'
+    questionZh: '_____ 考试很难，我还是设法回答了每道题。'
+    options:
+      A: 'Despite'
+      B: 'Although'
+      C: 'However'
+      D: 'In spite'
+    answer: 'B'
+    explanation: '"Although" is a conjunction followed by a full clause (subject + verb). "Despite" needs a noun/gerund. "However" needs a new sentence.'
+    explanationZh: '"Although"是连词，后接完整从句（主语+动词）。"Despite"需要名词/动名词。"However"需要新句子。'
+    grammarPoint: 'Although + clause vs despite + noun'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1145
+    type: fill-blank
+    tags: [connectors, Q12, difficulty-3]
+    context: exam-review
+    question: '_____ the heavy rain, the exam took place as planned.'
+    questionZh: '_____ 大雨，考试按计划进行了。'
+    answer: 'Despite'
+    acceptableAnswers: ['Despite', 'In spite of']
+    explanation: '"Despite" is a preposition followed by a noun phrase ("the heavy rain"). NOT "Despite of" — "in spite of" yes, but "despite of" is WRONG.'
+    explanationZh: '"Despite"是介词，后接名词短语（"the heavy rain"）。不是"Despite of"——"in spite of"可以，但"despite of"是错误的。'
+    grammarPoint: 'Despite + noun (no "of")'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1146
+    type: multiple-choice
+    tags: [connectors, Q12, difficulty-3]
+    context: exam-review
+    question: 'The essay was well-written. _____, it lacked a clear conclusion.'
+    questionZh: '这篇文章写得很好。_____，它缺少一个明确的结论。'
+    options:
+      A: 'Although'
+      B: 'Despite'
+      C: 'However'
+      D: 'But'
+    answer: 'C'
+    explanation: '"However" is an adverb that starts a NEW sentence with a comma. It connects two separate sentences with a contrasting idea.'
+    explanationZh: '"However"是副词，在新句子开头加逗号。它用对比的方式连接两个独立的句子。'
+    grammarPoint: 'However as a sentence connector'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1147
+    type: multiple-choice
+    tags: [relative-clauses, Q12, difficulty-3]
+    context: exam-review
+    question: 'This is the library _____ I come to study every weekend.'
+    questionZh: '这就是我每个周末 _____ 来学习的图书馆。'
+    options:
+      A: 'which'
+      B: 'where'
+      C: 'that'
+      D: 'what'
+    answer: 'B'
+    explanation: '"Where" is used for places in relative clauses. "The library where I study" = "the library in which I study."'
+    explanationZh: '"Where"在定语从句中用于地点。"The library where I study"="the library in which I study."'
+    grammarPoint: 'Where for places in relative clauses'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1148
+    type: fill-blank
+    tags: [connectors, Q12, difficulty-3]
+    context: exam-review
+    question: 'I revised every topic. _____, I felt confident going into the exam.'
+    questionZh: '我复习了每个主题。_____，我对进入考场感到自信。'
+    answer: 'Therefore'
+    acceptableAnswers: ['Therefore', 'As a result', 'Consequently']
+    explanation: '"Therefore" shows a logical result. Because I revised everything, the RESULT was that I felt confident.'
+    explanationZh: '"Therefore"表示逻辑结果。因为我复习了所有内容，结果是我感到自信。'
+    grammarPoint: 'Therefore for logical consequence'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1149
+    type: multiple-choice
+    tags: [connectors, Q12, difficulty-3]
+    context: exam-review
+    question: 'She not only passed the exam _____ also achieved the highest score in her class.'
+    questionZh: '她不仅通过了考试 _____ 还取得了班上最高分。'
+    options:
+      A: 'and'
+      B: 'but'
+      C: 'or'
+      D: 'yet'
+    answer: 'B'
+    explanation: '"Not only...but also" is a correlative conjunction pair. It emphasises two positive facts.'
+    explanationZh: '"Not only...but also"是关联连词对。它强调两个积极的事实。'
+    grammarPoint: 'Not only...but also'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1150
+    type: fill-blank
+    tags: [relative-clauses, Q12, difficulty-4]
+    context: exam-review
+    question: 'The reason _____ she scored so well was her thorough preparation.'
+    questionZh: '她得分如此高的原因 _____ 是她的充分准备。'
+    answer: 'why'
+    acceptableAnswers: ['why']
+    explanation: '"The reason why..." introduces a relative clause explaining the reason. "Why" can be omitted: "The reason she scored so well..."'
+    explanationZh: '"The reason why..."引入解释原因的定语从句。"Why"可以省略："The reason she scored so well..."'
+    grammarPoint: 'The reason why'
+    relatedQuest: Q12
+    difficulty: 4
+
+  # ============================================================
+  # G1151–G1170: Verb patterns — gerund vs infinitive
+  # ============================================================
+  - id: G1151
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'I enjoy _____ English because every lesson teaches me something new.'
+    questionZh: '我喜欢 _____ 英语，因为每节课都教我新东西。'
+    options:
+      A: 'to learn'
+      B: 'learning'
+      C: 'learn'
+      D: 'learned'
+    answer: 'B'
+    explanation: '"Enjoy + gerund" is the correct pattern. "Enjoy + to-infinitive" is ALWAYS wrong.'
+    explanationZh: '"Enjoy + 动名词"是正确的搭配。"Enjoy + 不定式"总是错误的。'
+    grammarPoint: 'Enjoy + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1152
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'I decided _____ the exam next month instead of waiting until December.'
+    questionZh: '我决定下个月 _____ 考试，而不是等到十二月。'
+    options:
+      A: 'taking'
+      B: 'to take'
+      C: 'take'
+      D: 'took'
+    answer: 'B'
+    explanation: '"Decide + to-infinitive" is the correct pattern. "Decide + gerund" is WRONG.'
+    explanationZh: '"Decide + 不定式"是正确的搭配。"Decide + 动名词"是错误的。'
+    grammarPoint: 'Decide + to-infinitive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1153
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'She stopped _____ a break because she was feeling tired.'
+    questionZh: '她停下来 _____ 休息一下，因为她感到累了。'
+    options:
+      A: 'to take'
+      B: 'taking'
+      C: 'take'
+      D: 'taken'
+    answer: 'A'
+    explanation: '"Stop + to-infinitive" = stop in order to do something. "Stop + gerund" = stop an ongoing action. She stopped (what she was doing) IN ORDER TO take a break.'
+    explanationZh: '"Stop + 不定式"=停下来去做某事。"Stop + 动名词"=停止一个正在进行的动作。她停下来（她正在做的事）为了休息。'
+    grammarPoint: 'Stop + to-infinitive vs stop + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1154
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'I remember _____ the answer, but I cannot remember what it was.'
+    questionZh: '我记得 _____ 了答案，但我不记得答案是什么。'
+    options:
+      A: 'to write'
+      B: 'writing'
+      C: 'write'
+      D: 'written'
+    answer: 'B'
+    explanation: '"Remember + gerund" = remember a past action (I remember that I wrote it). "Remember + to-infinitive" = remember to do a future action.'
+    explanationZh: '"Remember + 动名词"=记得过去的动作（我记得我写了）。"Remember + 不定式"=记得去做将来的动作。'
+    grammarPoint: 'Remember + gerund (past) vs to-infinitive (future)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1155
+    type: fill-blank
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'Please remember _____ (bring) your ID card to the exam centre.'
+    questionZh: '请记得 _____ 把身份证带到考试中心。'
+    answer: 'to bring'
+    acceptableAnswers: ['to bring']
+    explanation: '"Remember + to-infinitive" = do not forget to do something in the future. You need to bring it (future action).'
+    explanationZh: '"Remember + 不定式"=不要忘记将来做某事。你需要带它（将来的动作）。'
+    grammarPoint: 'Remember + to-infinitive (future action)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1156
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'She suggested _____ the vocabulary list one more time before the exam.'
+    questionZh: '她建议在考试前 _____ 再看一遍词汇表。'
+    options:
+      A: 'to review'
+      B: 'reviewing'
+      C: 'review'
+      D: 'reviewed'
+    answer: 'B'
+    explanation: '"Suggest + gerund" is the correct pattern. NOT "suggest to review." This is one of the most common FCE errors.'
+    explanationZh: '"Suggest + 动名词"是正确的搭配。不是"suggest to review"。这是最常见的FCE错误之一。'
+    grammarPoint: 'Suggest + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1157
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'He admitted _____ nervous about the speaking test.'
+    questionZh: '他承认对口试 _____ 紧张。'
+    options:
+      A: 'to feel'
+      B: 'feeling'
+      C: 'feel'
+      D: 'felt'
+    answer: 'B'
+    explanation: '"Admit + gerund" is the correct pattern. Like "deny," "admit" takes a gerund, not an infinitive.'
+    explanationZh: '"Admit + 动名词"是正确的搭配。和"deny"一样，"admit"接动名词，不接不定式。'
+    grammarPoint: 'Admit + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1158
+    type: fill-blank
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'She managed _____ (finish) the essay with two minutes to spare.'
+    questionZh: '她设法在还剩两分钟时 _____ 了文章。'
+    answer: 'to finish'
+    acceptableAnswers: ['to finish']
+    explanation: '"Manage + to-infinitive" is the correct pattern. "Manage + gerund" is WRONG.'
+    explanationZh: '"Manage + 不定式"是正确的搭配。"Manage + 动名词"是错误的。'
+    grammarPoint: 'Manage + to-infinitive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1159
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-4]
+    context: exam-review
+    question: 'I regret _____ you that you did not pass the exam.'
+    questionZh: '我遗憾地 _____ 你没有通过考试。'
+    options:
+      A: 'telling'
+      B: 'to tell'
+      C: 'tell'
+      D: 'told'
+    answer: 'B'
+    explanation: '"Regret + to-infinitive" = be sorry to give bad news NOW. "Regret + gerund" = feel sorry about a PAST action. Here, the person is delivering bad news now.'
+    explanationZh: '"Regret + 不定式"=很抱歉现在告诉你坏消息。"Regret + 动名词"=对过去的行为感到遗憾。这里说话者现在在传达坏消息。'
+    grammarPoint: 'Regret + to-infinitive (present) vs gerund (past)'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1160
+    type: multiple-choice
+    tags: [verb-patterns, Q12, difficulty-3]
+    context: exam-review
+    question: 'You should avoid _____ the same word more than twice in your essay.'
+    questionZh: '你应该避免在作文中 _____ 同一个词超过两次。'
+    options:
+      A: 'to use'
+      B: 'using'
+      C: 'use'
+      D: 'used'
+    answer: 'B'
+    explanation: '"Avoid + gerund" is the correct pattern. "Avoid + to-infinitive" is ALWAYS wrong.'
+    explanationZh: '"Avoid + 动名词"是正确的搭配。"Avoid + 不定式"总是错误的。'
+    grammarPoint: 'Avoid + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1161–G1180: Prepositions & phrasal verbs
+  # ============================================================
+  - id: G1161
+    type: fill-blank
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'She is very good _____ remembering vocabulary.'
+    questionZh: '她很擅长 _____ 记忆词汇。'
+    answer: 'at'
+    acceptableAnswers: ['at']
+    explanation: '"Good at + gerund/noun" is the correct preposition. NOT "good in" or "good for" in this context.'
+    explanationZh: '"Good at + 动名词/名词"是正确的介词搭配。在此语境中不是"good in"或"good for"。'
+    grammarPoint: 'Good at + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1162
+    type: multiple-choice
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'I apologised _____ arriving late to the exam.'
+    questionZh: '我为考试迟到 _____ 道歉了。'
+    options:
+      A: 'about'
+      B: 'for'
+      C: 'of'
+      D: 'to'
+    answer: 'B'
+    explanation: '"Apologise for + gerund/noun" is the correct pattern. "For" introduces the reason for the apology.'
+    explanationZh: '"Apologise for + 动名词/名词"是正确的搭配。"For"引出道歉的原因。'
+    grammarPoint: 'Apologise for + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1163
+    type: fill-blank
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'He insisted _____ checking every answer before submitting.'
+    questionZh: '他坚持 _____ 提交前检查每个答案。'
+    answer: 'on'
+    acceptableAnswers: ['on']
+    explanation: '"Insist on + gerund" is the correct pattern. NOT "insist to" or "insist in."'
+    explanationZh: '"Insist on + 动名词"是正确的搭配。不是"insist to"或"insist in"。'
+    grammarPoint: 'Insist on + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1164
+    type: multiple-choice
+    tags: [phrasal-verbs, Q12, difficulty-3]
+    context: exam-review
+    question: 'I need to look _____ some words in the dictionary.'
+    questionZh: '我需要在字典里查 _____ 一些词。'
+    options:
+      A: 'for'
+      B: 'up'
+      C: 'at'
+      D: 'after'
+    answer: 'B'
+    explanation: '"Look up" = find information in a reference book. "Look for" = search for something lost. "Look after" = take care of.'
+    explanationZh: '"Look up"=在参考书中查找信息。"Look for"=寻找丢失的东西。"Look after"=照顾。'
+    grammarPoint: 'Look up (find information)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1165
+    type: multiple-choice
+    tags: [phrasal-verbs, Q12, difficulty-3]
+    context: exam-review
+    question: 'Do not give _____ if you find a question difficult — try your best.'
+    questionZh: '如果你发现一道题很难，不要 _____——尽你最大的努力。'
+    options:
+      A: 'up'
+      B: 'in'
+      C: 'away'
+      D: 'out'
+    answer: 'A'
+    explanation: '"Give up" = stop trying. "Give in" = surrender/accept defeat. "Give away" = reveal a secret or donate.'
+    explanationZh: '"Give up"=放弃尝试。"Give in"=投降/认输。"Give away"=泄露秘密或捐赠。'
+    grammarPoint: 'Give up (stop trying)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1166
+    type: fill-blank
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'She succeeded _____ passing the exam on her first attempt.'
+    questionZh: '她成功 _____ 第一次尝试就通过了考试。'
+    answer: 'in'
+    acceptableAnswers: ['in']
+    explanation: '"Succeed in + gerund" is the correct pattern. NOT "succeed to pass."'
+    explanationZh: '"Succeed in + 动名词"是正确的搭配。不是"succeed to pass"。'
+    grammarPoint: 'Succeed in + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1167
+    type: multiple-choice
+    tags: [phrasal-verbs, Q12, difficulty-3]
+    context: exam-review
+    question: 'I could not work _____ the meaning of that word from context.'
+    questionZh: '我无法从上下文中 _____ 那个词的意思。'
+    options:
+      A: 'up'
+      B: 'out'
+      C: 'on'
+      D: 'off'
+    answer: 'B'
+    explanation: '"Work out" = figure out, find the answer through thinking. "Work on" = continue working at something.'
+    explanationZh: '"Work out"=弄清楚，通过思考找到答案。"Work on"=继续做某事。'
+    grammarPoint: 'Work out (figure out)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1168
+    type: fill-blank
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'The exam consists _____ four papers.'
+    questionZh: '这个考试由四份试卷 _____ 组成。'
+    answer: 'of'
+    acceptableAnswers: ['of']
+    explanation: '"Consist of" = be made up of. NOT "consist in" (which has a different meaning: "the difficulty consists in...").'
+    explanationZh: '"Consist of"=由...组成。不是"consist in"（这有不同的意思："困难在于..."）。'
+    grammarPoint: 'Consist of'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1169
+    type: multiple-choice
+    tags: [phrasal-verbs, Q12, difficulty-3]
+    context: exam-review
+    question: 'We need to go _____ our notes one more time before the exam.'
+    questionZh: '我们需要在考试前再 _____ 一遍笔记。'
+    options:
+      A: 'through'
+      B: 'up'
+      C: 'away'
+      D: 'down'
+    answer: 'A'
+    explanation: '"Go through" = review, examine carefully. "Go through your notes" = review your notes.'
+    explanationZh: '"Go through"=审查，仔细检查。"Go through your notes"=复习你的笔记。'
+    grammarPoint: 'Go through (review)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1170
+    type: fill-blank
+    tags: [prepositions, Q12, difficulty-3]
+    context: exam-review
+    question: 'She is interested _____ studying languages at university.'
+    questionZh: '她对 _____ 大学学习语言感兴趣。'
+    answer: 'in'
+    acceptableAnswers: ['in']
+    explanation: '"Interested in + gerund/noun" is the correct pattern. NOT "interested about" or "interested for."'
+    explanationZh: '"Interested in + 动名词/名词"是正确的搭配。不是"interested about"或"interested for"。'
+    grammarPoint: 'Interested in + gerund'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1171–G1185: Word formation patterns
+  # ============================================================
+  - id: G1171
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'His _____ (prepare) for the exam was excellent.'
+    questionZh: '他对考试的 _____ 非常出色。'
+    answer: 'preparation'
+    acceptableAnswers: ['preparation']
+    explanation: 'Verb → noun: prepare → preparation. The noun form is needed after "His" (possessive + noun).'
+    explanationZh: '动词→名词：prepare→preparation。所有格后面需要名词形式。'
+    grammarPoint: 'Word formation: -ation suffix'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1172
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'It would be _____ (sense) to arrive early for the exam.'
+    questionZh: '早点到考场是 _____ 的。'
+    answer: 'sensible'
+    acceptableAnswers: ['sensible']
+    explanation: 'Noun → adjective: sense → sensible (= wise, practical). NOT "sensitive" (= easily hurt).'
+    explanationZh: '名词→形容词：sense→sensible（=明智的）。不是"sensitive"（=敏感的）。'
+    grammarPoint: 'Word formation: sensible vs sensitive'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1173
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'The exam results were very _____ (disappoint).'
+    questionZh: '考试成绩非常 _____。'
+    answer: 'disappointing'
+    acceptableAnswers: ['disappointing']
+    explanation: '-ing adjective describes the thing that CAUSES the feeling. The results cause disappointment, so "disappointing."'
+    explanationZh: '-ing形容词描述引起感受的事物。成绩引起失望，所以用"disappointing"。'
+    grammarPoint: 'Word formation: -ing adjective (cause)'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1174
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'She was _____ (extreme) pleased with her listening score.'
+    questionZh: '她对自己的听力分数 _____ 高兴。'
+    answer: 'extremely'
+    acceptableAnswers: ['extremely']
+    explanation: 'Adjective → adverb: extreme → extremely. Adverbs modify adjectives ("extremely pleased").'
+    explanationZh: '形容词→副词：extreme→extremely。副词修饰形容词（"extremely pleased"）。'
+    grammarPoint: 'Word formation: -ly adverb'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1175
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'It is _____ (possible) to pass the exam without studying.'
+    questionZh: '不学习就通过考试是 _____ 的。'
+    answer: 'impossible'
+    acceptableAnswers: ['impossible']
+    explanation: 'Negative prefix im- before p/b/m: possible → impossible. Check for negative meaning in context!'
+    explanationZh: '否定前缀im-用在p/b/m之前：possible→impossible。注意上下文中的否定含义！'
+    grammarPoint: 'Word formation: im- negative prefix'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1176
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'There has been a _____ (consider) improvement in her writing.'
+    questionZh: '她的写作有了 _____ 的进步。'
+    answer: 'considerable'
+    acceptableAnswers: ['considerable']
+    explanation: 'Verb → adjective: consider → considerable (= large, significant). NOT "considerate" (= kind/thoughtful).'
+    explanationZh: '动词→形容词：consider→considerable（=相当大的）。不是"considerate"（=体贴的）。'
+    grammarPoint: 'Word formation: considerable vs considerate'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1177
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'His _____ (achieve) in the exam was remarkable.'
+    questionZh: '他在考试中的 _____ 非常出色。'
+    answer: 'achievement'
+    acceptableAnswers: ['achievement']
+    explanation: 'Verb → noun: achieve → achievement. The -ment suffix creates nouns from verbs.'
+    explanationZh: '动词→名词：achieve→achievement。-ment后缀从动词变为名词。'
+    grammarPoint: 'Word formation: -ment suffix'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1178
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-4]
+    context: exam-review
+    question: 'The teacher gave us some very _____ (help) advice.'
+    questionZh: '老师给了我们一些非常 _____ 的建议。'
+    answer: 'helpful'
+    acceptableAnswers: ['helpful']
+    explanation: 'Verb/noun → adjective: help → helpful. The -ful suffix means "full of."'
+    explanationZh: '动词/名词→形容词：help→helpful。-ful后缀意思是"充满"。'
+    grammarPoint: 'Word formation: -ful suffix'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1179
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'She showed great _____ (determine) to pass the exam.'
+    questionZh: '她展现了通过考试的巨大 _____。'
+    answer: 'determination'
+    acceptableAnswers: ['determination']
+    explanation: 'Verb → noun: determine → determination. The -ation suffix creates abstract nouns.'
+    explanationZh: '动词→名词：determine→determination。-ation后缀创造抽象名词。'
+    grammarPoint: 'Word formation: -ation suffix'
+    relatedQuest: Q12
+    difficulty: 3
+
+  - id: G1180
+    type: fill-blank
+    tags: [word-formation, Q12, difficulty-3]
+    context: exam-review
+    question: 'It is _____ (necessary) to memorise every word — focus on the most common ones.'
+    questionZh: '_____ 记住每个词——集中精力在最常见的词上。'
+    answer: 'unnecessary'
+    acceptableAnswers: ['unnecessary']
+    explanation: 'Negative prefix un-: necessary → unnecessary. The context tells us memorising every word is NOT needed.'
+    explanationZh: '否定前缀un-：necessary→unnecessary。上下文告诉我们记住每个词是不需要的。'
+    grammarPoint: 'Word formation: un- negative prefix'
+    relatedQuest: Q12
+    difficulty: 3
+
+  # ============================================================
+  # G1181–G1200: Key word transformations practice
+  # ============================================================
+  - id: G1181
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"I am sorry I did not study harder." She regretted _____ harder.'
+    questionZh: '"我很抱歉没有更努力学习。"她后悔 _____ 更努力。'
+    answer: 'not having studied'
+    acceptableAnswers: ['not having studied', 'not studying']
+    explanation: '"Regret + gerund" for past actions. "She regretted not having studied harder" = she was sorry about a past action.'
+    explanationZh: '"Regret + 动名词"用于过去的行为。"她后悔没有更努力学习"=她对过去的行为感到遗憾。'
+    grammarPoint: 'Transformation: regret + gerund'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1182
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"It is possible that she passed the exam." She may _____ the exam.'
+    questionZh: '"她可能通过了考试。"She may _____ the exam.'
+    answer: 'have passed'
+    acceptableAnswers: ['have passed']
+    explanation: '"May have + past participle" expresses possibility about a past event. "It is possible that she passed" = "She may have passed."'
+    explanationZh: '"May have + 过去分词"表达对过去事件的可能性。"她可能通过了"="She may have passed."'
+    grammarPoint: 'Transformation: may have + past participle'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1183
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"Someone stole my pencil case." My pencil case _____.'
+    questionZh: '"有人偷了我的笔袋。"我的笔袋 _____。'
+    answer: 'was stolen'
+    acceptableAnswers: ['was stolen', 'has been stolen']
+    explanation: 'Active → passive transformation. "Someone stole" → "was stolen." The agent ("someone") is removed because it is unknown.'
+    explanationZh: '主动→被动转换。"Someone stole"→"was stolen"。施事者（"someone"）被省略因为不明确。'
+    grammarPoint: 'Transformation: active to passive'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1184
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"I last took an exam two years ago." I have not taken an exam _____ two years.'
+    questionZh: '"我上次参加考试是两年前。"I have not taken an exam _____ two years.'
+    answer: 'for'
+    acceptableAnswers: ['for']
+    explanation: '"I last did X (time) ago" = "I have not done X FOR (time)." "For" shows duration with present perfect.'
+    explanationZh: '"我上次做X是（时间）前"="I have not done X FOR（时间）。""For"与现在完成时表示持续时间。'
+    grammarPoint: 'Transformation: ago → for + present perfect'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1185
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"She is too young to take the FCE exam." She is not _____ to take the FCE exam.'
+    questionZh: '"她太小了，不能参加FCE考试。"She is not _____ to take the FCE exam.'
+    answer: 'old enough'
+    acceptableAnswers: ['old enough']
+    explanation: '"Too young to" = "not old enough to." The meaning reverses: too + negative adj → not + positive adj + enough.'
+    explanationZh: '"Too young to"="not old enough to." 意思反转：too + 否定形容词 → not + 肯定形容词 + enough。'
+    grammarPoint: 'Transformation: too...to → not...enough to'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1186
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"You must not use a dictionary in the exam." You are not _____ use a dictionary in the exam.'
+    questionZh: '"你不能在考试中使用字典。"You are not _____ use a dictionary in the exam.'
+    answer: 'allowed to'
+    acceptableAnswers: ['allowed to', 'permitted to']
+    explanation: '"Must not" (prohibition) = "not allowed to." Active obligation → passive permission.'
+    explanationZh: '"Must not"（禁止）="not allowed to." 主动义务→被动允许。'
+    grammarPoint: 'Transformation: must not → not allowed to'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1187
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"The exam was so difficult that nobody finished on time." The exam was too _____ on time.'
+    questionZh: '"考试如此困难以至于没有人按时完成。"The exam was too _____ on time.'
+    answer: 'difficult for anybody to finish'
+    acceptableAnswers: ['difficult for anybody to finish', 'difficult for anyone to finish']
+    explanation: '"So...that nobody" = "too...for anybody to." This is a key transformation pattern.'
+    explanationZh: '"So...that nobody"="too...for anybody to." 这是一个关键的转换模式。'
+    grammarPoint: 'Transformation: so...that → too...for...to'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1188
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"I prefer reading to watching TV." I would _____ read than watch TV.'
+    questionZh: '"我更喜欢阅读而不是看电视。"I would _____ read than watch TV.'
+    answer: 'rather'
+    acceptableAnswers: ['rather']
+    explanation: '"Prefer X to Y" = "would rather X than Y." Both express a preference.'
+    explanationZh: '"Prefer X to Y"="would rather X than Y." 两者都表达偏好。'
+    grammarPoint: 'Transformation: prefer to → would rather...than'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1189
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"People say she is the best student." She is said _____ the best student.'
+    questionZh: '"人们说她是最好的学生。"She is said _____ the best student.'
+    answer: 'to be'
+    acceptableAnswers: ['to be']
+    explanation: 'Impersonal passive: "People say + clause" → "Subject + is said + to-infinitive."'
+    explanationZh: '非人称被动："People say + 从句" → "主语 + is said + 不定式。"'
+    grammarPoint: 'Transformation: impersonal passive'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1190
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"She started learning English when she was five." She has been learning English _____ she was five.'
+    questionZh: '"她五岁开始学英语。"She has been learning English _____ she was five.'
+    answer: 'since'
+    acceptableAnswers: ['since']
+    explanation: '"Started (time)" = "has been doing since (time)." "Since" marks the starting point with present perfect continuous.'
+    explanationZh: '"Started（时间）"="has been doing since（时间）。""Since"标记现在完成进行时的起始点。'
+    grammarPoint: 'Transformation: started → has been...since'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1191
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"It is not necessary to bring a calculator." You do not _____ bring a calculator.'
+    questionZh: '"不必带计算器。"You do not _____ bring a calculator.'
+    answer: 'need to'
+    acceptableAnswers: ['need to', 'have to']
+    explanation: '"It is not necessary to" = "You do not need to" / "You do not have to." Both express lack of obligation.'
+    explanationZh: '"没有必要"="You do not need to"/"You do not have to." 两者都表示没有义务。'
+    grammarPoint: 'Transformation: not necessary → do not need to'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1192
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"I have never taken such a difficult exam." This is the _____ exam I have ever taken.'
+    questionZh: '"我从未参加过如此困难的考试。"This is the _____ exam I have ever taken.'
+    answer: 'most difficult'
+    acceptableAnswers: ['most difficult', 'hardest']
+    explanation: '"Never...such a (adjective) noun" = "the most (adjective) noun...ever." Superlative transformation.'
+    explanationZh: '"从未如此（形容词）的名词"="有史以来最（形容词）的名词。"最高级转换。'
+    grammarPoint: 'Transformation: never such → superlative + ever'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1193
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"We could not go outside because of the heavy rain." The heavy rain prevented us _____ going outside.'
+    questionZh: '"因为大雨我们不能出去。"The heavy rain prevented us _____ going outside.'
+    answer: 'from'
+    acceptableAnswers: ['from']
+    explanation: '"Because of X, we could not do Y" = "X prevented us FROM doing Y." "Prevent + object + from + gerund."'
+    explanationZh: '"因为X，我们不能做Y"="X prevented us FROM doing Y." "Prevent + 宾语 + from + 动名词。"'
+    grammarPoint: 'Transformation: because of → prevent from'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1194
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"How long have you been studying English?" She asked me how long I _____ studying English.'
+    questionZh: '"你学英语多长时间了？"She asked me how long I _____ studying English.'
+    answer: 'had been'
+    acceptableAnswers: ['had been']
+    explanation: 'Reported question: present perfect continuous → past perfect continuous. Word order changes to statement order.'
+    explanationZh: '间接疑问句：现在完成进行时→过去完成进行时。语序变为陈述句语序。'
+    grammarPoint: 'Transformation: reported question with tense shift'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1195
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"Although he studied hard, he failed the exam." Despite _____ hard, he failed the exam.'
+    questionZh: '"尽管他努力学习，他还是没通过考试。"Despite _____ hard, he failed the exam.'
+    answer: 'studying'
+    acceptableAnswers: ['studying', 'having studied']
+    explanation: '"Although + clause" → "Despite + gerund/noun." "Although he studied" → "Despite studying."'
+    explanationZh: '"Although + 从句" → "Despite + 动名词/名词。""Although he studied" → "Despite studying."'
+    grammarPoint: 'Transformation: although → despite + gerund'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1196
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"She can speak French fluently." She is _____ speaking French fluently.'
+    questionZh: '"她能流利地说法语。"She is _____ speaking French fluently.'
+    answer: 'capable of'
+    acceptableAnswers: ['capable of']
+    explanation: '"Can do X" = "is capable of doing X." "Capable of + gerund" replaces "can + infinitive."'
+    explanationZh: '"Can do X"="is capable of doing X." "Capable of + 动名词"替换"can + 不定式。"'
+    grammarPoint: 'Transformation: can → capable of + gerund'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1197
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"No other student scored as high as Emma." Emma scored the _____ of all the students.'
+    questionZh: '"没有其他学生和Emma得分一样高。"Emma scored the _____ of all the students.'
+    answer: 'highest'
+    acceptableAnswers: ['highest']
+    explanation: '"No other...as...as" = superlative. "No other student scored as high as Emma" = "Emma scored the highest."'
+    explanationZh: '"No other...as...as"=最高级。"没有其他学生和Emma得分一样高"="Emma scored the highest."'
+    grammarPoint: 'Transformation: no other...as...as → superlative'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1198
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"I am sure she passed the exam." She must _____ the exam.'
+    questionZh: '"我确定她通过了考试。"She must _____ the exam.'
+    answer: 'have passed'
+    acceptableAnswers: ['have passed']
+    explanation: '"I am sure she did X" = "She must have done X." "Must have + past participle" = strong certainty about the past.'
+    explanationZh: '"我确定她做了X"="She must have done X." "Must have + 过去分词"=对过去的强烈确信。'
+    grammarPoint: 'Transformation: sure → must have + past participle'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1199
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"It was wrong of you not to check your answers." You should _____ your answers.'
+    questionZh: '"你不检查答案是不对的。"You should _____ your answers.'
+    answer: 'have checked'
+    acceptableAnswers: ['have checked']
+    explanation: '"It was wrong of you not to do X" = "You should have done X." "Should have + past participle" = past obligation not fulfilled.'
+    explanationZh: '"你不做X是不对的"="You should have done X." "Should have + 过去分词"=未履行的过去义务。'
+    grammarPoint: 'Transformation: should have + past participle'
+    relatedQuest: Q12
+    difficulty: 4
+
+  - id: G1200
+    type: fill-blank
+    tags: [transformation, Q12, difficulty-4]
+    context: exam-review
+    question: '"The teacher made us check our work twice." We were _____ our work twice.'
+    questionZh: '"老师让我们检查了两遍作业。"We were _____ our work twice.'
+    answer: 'made to check'
+    acceptableAnswers: ['made to check']
+    explanation: 'Active "made us check" (no "to") → Passive "we were made TO check" (with "to"). The passive form of "make" adds "to."'
+    explanationZh: '主动"made us check"（无"to"）→被动"we were made TO check"（有"to"）。"make"的被动形式加"to"。'
+    grammarPoint: 'Transformation: active make → passive be made to'
+    relatedQuest: Q12
+    difficulty: 4

@@ -1,0 +1,1201 @@
+# FCE Daily Listening Practice — Month 11, Batch 10
+# 65 exercises (L656–L720)
+# L656–L675: Part 1 short extracts (20 exercises, difficulty 3)
+# L676–L690: Part 2 sentence completion (15 exercises, difficulty 3)
+# L691–L705: Part 3 multiple matching (15 exercises, difficulty 3-4)
+# L706–L720: Part 4 long conversation (15 exercises, difficulty 3-4)
+# Theme: Mixed exam topics for 8-9 year old learners
+
+extracts:
+  # ============================================================
+  # L656–L675: Part 1 — Short Extracts (Mixed Exam Topics)
+  # ============================================================
+
+  - id: L656
+    type: short-extract
+    title: 'The Exam Preparation Expert'
+    titleZh: '考试准备专家'
+    scene: 'You will hear an education expert giving advice about exam preparation.'
+    sceneZh: '你将听到一位教育专家给出关于考试准备的建议。'
+    difficulty: 3
+    audioFile: 'L656.mp3'
+    script:
+      - speaker: expert
+        voice: nova
+        text: 'The biggest mistake students make is leaving everything to the last minute. Research clearly shows that spaced practice — studying a little bit every day — is far more effective than cramming the night before. Your brain needs time to process and store information, and that happens during sleep.'
+      - speaker: expert
+        voice: nova
+        text: 'My advice? Start revising at least four weeks before the exam. Break the material into small chunks and review each chunk three or four times before exam day.'
+    question:
+      text: 'What does the expert say is the biggest mistake students make?'
+      textZh: '专家说学生犯的最大错误是什么？'
+      options:
+        A: 'Studying too many subjects at once.'
+        B: 'Leaving revision until the last minute.'
+        C: 'Not getting enough help from teachers.'
+      answer: 'B'
+      explanation: '"The biggest mistake students make is leaving everything to the last minute."'
+      explanationZh: '"学生犯的最大错误是把一切都留到最后一分钟。"'
+
+  - id: L657
+    type: short-extract
+    title: 'The Science of Memory'
+    titleZh: '记忆的科学'
+    scene: 'You will hear a scientist explaining how memory works.'
+    sceneZh: '你将听到一位科学家解释记忆是如何运作的。'
+    difficulty: 3
+    audioFile: 'L657.mp3'
+    script:
+      - speaker: scientist
+        voice: echo
+        text: 'Your brain does not store memories like a filing cabinet. Instead, it creates connections between neurons — brain cells that communicate through tiny electrical signals. When you learn something new, these connections are weak and fragile. But every time you review the information, the connections get stronger.'
+      - speaker: scientist
+        voice: echo
+        text: 'This is why repetition works. It is not about memorising something perfectly the first time — it is about strengthening the neural pathways through repeated exposure.'
+    question:
+      text: 'According to the scientist, what happens when you review information?'
+      textZh: '根据科学家的说法，当你复习信息时会发生什么？'
+      options:
+        A: 'New brain cells are created.'
+        B: 'The neural connections become stronger.'
+        C: 'Old memories are deleted to make room.'
+      answer: 'B'
+      explanation: '"Every time you review the information, the connections get stronger."'
+      explanationZh: '"每次你复习信息，连接就会变得更强。"'
+
+  - id: L658
+    type: short-extract
+    title: 'The Endangered Language'
+    titleZh: '濒危语言'
+    scene: 'You will hear a linguist talking about a dying language.'
+    sceneZh: '你将听到一位语言学家谈论一种正在消亡的语言。'
+    difficulty: 3
+    audioFile: 'L658.mp3'
+    script:
+      - speaker: linguist
+        voice: shimmer
+        text: 'When I arrived in the village, only three elderly women still spoke the language fluently. Their children understood some words but could not hold a conversation. Their grandchildren spoke only the national language and had no interest in learning their grandmothers'' tongue.'
+      - speaker: linguist
+        voice: shimmer
+        text: 'I spent two years recording everything — stories, songs, even recipes. When the last speaker dies, the language will die with her. But at least we will have a record of what was lost.'
+    question:
+      text: 'What did the linguist do to help preserve the language?'
+      textZh: '语言学家做了什么来帮助保存这种语言？'
+      options:
+        A: 'She taught the language to children in the village school.'
+        B: 'She recorded stories, songs, and other material from the last speakers.'
+        C: 'She wrote a textbook for tourists visiting the village.'
+      answer: 'B'
+      explanation: '"I spent two years recording everything — stories, songs, even recipes."'
+      explanationZh: '"我花了两年时间录制一切——故事、歌曲，甚至食谱。"'
+
+  - id: L659
+    type: short-extract
+    title: 'The Coral Reef Researcher'
+    titleZh: '珊瑚礁研究员'
+    scene: 'You will hear a marine biologist describing her work.'
+    sceneZh: '你将听到一位海洋生物学家描述她的工作。'
+    difficulty: 3
+    audioFile: 'L659.mp3'
+    script:
+      - speaker: biologist
+        voice: shimmer
+        text: 'Every morning, I dive down to the reef at 6 am, before the water gets too warm. I photograph the same sections of coral week after week, tracking how they change. Over the last three years, I have watched healthy, colourful coral gradually turn white and lifeless. It is heartbreaking to see with your own eyes.'
+      - speaker: biologist
+        voice: shimmer
+        text: 'But there are also moments of hope. We recently discovered a coral species that seems to be resistant to higher temperatures. If we can understand why, we might be able to help other corals survive.'
+    question:
+      text: 'What gives the biologist hope?'
+      textZh: '什么给了生物学家希望？'
+      options:
+        A: 'The water temperature has started to decrease.'
+        B: 'They found a coral species that can resist higher temperatures.'
+        C: 'A new law has been passed to protect the reef.'
+      answer: 'B'
+      explanation: '"We recently discovered a coral species that seems to be resistant to higher temperatures."'
+      explanationZh: '"我们最近发现了一种似乎能抵抗更高温度的珊瑚物种。"'
+
+  - id: L660
+    type: short-extract
+    title: 'The Electric Car Engineer'
+    titleZh: '电动汽车工程师'
+    scene: 'You will hear an engineer discussing electric car batteries.'
+    sceneZh: '你将听到一位工程师讨论电动汽车电池。'
+    difficulty: 3
+    audioFile: 'L660.mp3'
+    script:
+      - speaker: engineer
+        voice: echo
+        text: 'The biggest challenge for electric cars right now is not the motor or the software — it is the battery. Current lithium-ion batteries take too long to charge, they lose capacity in cold weather, and the minerals needed to make them are difficult to mine sustainably.'
+      - speaker: engineer
+        voice: echo
+        text: 'Our team is working on a solid-state battery that could charge in just fifteen minutes and last twice as long. If we succeed, it could make petrol cars obsolete within a decade.'
+    question:
+      text: 'What is the main problem with current electric car batteries?'
+      textZh: '当前电动汽车电池的主要问题是什么？'
+      options:
+        A: 'They are too heavy for most cars.'
+        B: 'They charge slowly, lose capacity in cold weather, and use unsustainable minerals.'
+        C: 'They are more dangerous than petrol engines.'
+      answer: 'B'
+      explanation: 'The engineer lists three problems: slow charging, capacity loss in cold weather, and unsustainable mining of minerals.'
+      explanationZh: '工程师列出了三个问题：充电慢、寒冷天气下容量损失，以及不可持续的矿物开采。'
+
+  - id: L661
+    type: short-extract
+    title: 'The Sleep Scientist'
+    titleZh: '睡眠科学家'
+    scene: 'You will hear a researcher explaining why teenagers need more sleep.'
+    sceneZh: '你将听到一位研究员解释为什么青少年需要更多睡眠。'
+    difficulty: 3
+    audioFile: 'L661.mp3'
+    script:
+      - speaker: researcher
+        voice: nova
+        text: 'During adolescence, the body''s internal clock shifts by about two hours. This means that a teenager naturally falls asleep later and wakes up later than an adult or a younger child. It is not laziness — it is biology. When we force teenagers to start school at eight o''clock, we are essentially asking them to learn while their brains are still asleep.'
+    question:
+      text: 'Why do teenagers naturally go to sleep later?'
+      textZh: '为什么青少年自然而然地晚睡？'
+      options:
+        A: 'Because they spend too much time on their phones.'
+        B: 'Because their body clock shifts during adolescence.'
+        C: 'Because they drink too much caffeine.'
+      answer: 'B'
+      explanation: '"The body''s internal clock shifts by about two hours" during adolescence — a biological change.'
+      explanationZh: '青春期"身体的内部时钟移动了大约两小时"——一个生物变化。'
+
+  - id: L662
+    type: short-extract
+    title: 'The Board Game Designer'
+    titleZh: '桌游设计师'
+    scene: 'You will hear a game designer explaining what makes a great board game.'
+    sceneZh: '你将听到一位游戏设计师解释什么构成一个好的桌游。'
+    difficulty: 3
+    audioFile: 'L662.mp3'
+    script:
+      - speaker: designer
+        voice: fable
+        text: 'A great board game needs three things. First, it must be easy to learn but difficult to master — if people cannot understand the rules in five minutes, they will give up. Second, every decision must matter. Players need to feel that their choices affect the outcome. Third, there must be enough randomness to keep things exciting, but not so much that skill becomes irrelevant.'
+    question:
+      text: 'According to the designer, what makes a great board game?'
+      textZh: '根据设计师的说法，什么构成一个好的桌游？'
+      options:
+        A: 'It should have complicated rules that take a long time to learn.'
+        B: 'It needs to be easy to learn, have meaningful choices, and balance skill with luck.'
+        C: 'It must be based on a popular film or television show.'
+      answer: 'B'
+      explanation: 'Three elements: easy to learn, decisions that matter, and a balance of randomness and skill.'
+      explanationZh: '三个要素：容易学习、有意义的决定，以及随机性和技巧的平衡。'
+
+  - id: L663
+    type: short-extract
+    title: 'The Food Scientist'
+    titleZh: '食品科学家'
+    scene: 'You will hear a scientist discussing vertical farming.'
+    sceneZh: '你将听到一位科学家讨论垂直农业。'
+    difficulty: 3
+    audioFile: 'L663.mp3'
+    script:
+      - speaker: scientist
+        voice: shimmer
+        text: 'Vertical farms grow food in stacked layers inside buildings, using LED lights instead of sunlight. They use 95 per cent less water than traditional farming because the water is recycled. And because they can be built anywhere — even in city centres — the food travels a shorter distance to reach your plate, which reduces carbon emissions from transport.'
+    question:
+      text: 'How much less water do vertical farms use compared to traditional farming?'
+      textZh: '与传统农业相比，垂直农场少用多少水？'
+      options:
+        A: '50 per cent less'
+        B: '75 per cent less'
+        C: '95 per cent less'
+      answer: 'C'
+      explanation: '"They use 95 per cent less water than traditional farming."'
+      explanationZh: '"它们比传统农业少用95%的水。"'
+
+  - id: L664
+    type: short-extract
+    title: 'The Public Speaking Coach'
+    titleZh: '公共演讲教练'
+    scene: 'You will hear a speaking coach giving tips for managing stage fright.'
+    sceneZh: '你将听到一位演讲教练给出克服怯场的技巧。'
+    difficulty: 3
+    audioFile: 'L664.mp3'
+    script:
+      - speaker: coach
+        voice: nova
+        text: 'The number one trick for managing stage fright is to reframe your nervousness. When you feel your heart racing and your palms sweating, do not think "I am scared." Instead, tell yourself "I am excited." Research shows that labelling your feelings as excitement rather than fear actually improves your performance. The physical symptoms are identical — the only difference is how you interpret them.'
+    question:
+      text: 'What technique does the coach suggest for managing nervousness?'
+      textZh: '教练建议用什么技巧来管理紧张？'
+      options:
+        A: 'Take deep breaths and count to ten slowly.'
+        B: 'Tell yourself you are excited rather than scared.'
+        C: 'Imagine the audience in funny costumes.'
+      answer: 'B'
+      explanation: '"Tell yourself I am excited" — reframing nervousness as excitement improves performance.'
+      explanationZh: '"告诉自己我很兴奋"——将紧张重新定义为兴奋可以提高表现。'
+
+  - id: L665
+    type: short-extract
+    title: 'The Cave Explorer'
+    titleZh: '洞穴探险家'
+    scene: 'You will hear a cave explorer describing an underground discovery.'
+    sceneZh: '你将听到一位洞穴探险家描述一个地下发现。'
+    difficulty: 3
+    audioFile: 'L665.mp3'
+    script:
+      - speaker: explorer
+        voice: echo
+        text: 'We had been crawling through a narrow tunnel for about two hours when suddenly it opened into the most incredible chamber I have ever seen. The ceiling was covered in crystals that sparkled like stars when our headlamps hit them. Stalactites hung down like chandeliers, some of them three metres long. It felt like stepping into a cathedral made entirely of stone and ice.'
+    question:
+      text: 'What was the explorer most impressed by?'
+      textZh: '探险家对什么印象最深？'
+      options:
+        A: 'The length of the tunnel they crawled through.'
+        B: 'The incredible crystal-covered chamber they discovered.'
+        C: 'The temperature inside the cave.'
+      answer: 'B'
+      explanation: 'The explorer describes "the most incredible chamber" with crystals, stalactites, and a cathedral-like feeling.'
+      explanationZh: '探险家描述了有水晶、钟乳石和像大教堂一样感觉的"最令人难以置信的洞室"。'
+
+  - id: L666
+    type: short-extract
+    title: 'The Colour Psychologist'
+    titleZh: '色彩心理学家'
+    scene: 'You will hear a psychologist explaining how colour affects learning.'
+    sceneZh: '你将听到一位心理学家解释颜色如何影响学习。'
+    difficulty: 3
+    audioFile: 'L666.mp3'
+    script:
+      - speaker: psychologist
+        voice: shimmer
+        text: 'Blue rooms have been shown to boost creative thinking, while red rooms improve attention to detail. If you are brainstorming ideas for an essay, a blue environment may help. If you are checking your work for grammar mistakes, red is better. Interestingly, green has been linked to improved reading speed and comprehension, which is why many reading apps now offer a green-tinted background option.'
+    question:
+      text: 'Which colour is linked to improved reading comprehension?'
+      textZh: '哪种颜色与提高阅读理解有关？'
+      options:
+        A: 'Blue'
+        B: 'Red'
+        C: 'Green'
+      answer: 'C'
+      explanation: '"Green has been linked to improved reading speed and comprehension."'
+      explanationZh: '"绿色与提高阅读速度和理解力有关。"'
+
+  - id: L667
+    type: short-extract
+    title: 'The Writing Teacher'
+    titleZh: '写作老师'
+    scene: 'You will hear a teacher explaining how to write a good essay introduction.'
+    sceneZh: '你将听到一位老师解释如何写好论文引言。'
+    difficulty: 3
+    audioFile: 'L667.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'The introduction is the most important paragraph of your essay because it is the first thing the examiner reads. You need to hook the reader immediately. Start with a surprising fact, a thought-provoking question, or a bold statement. Then clearly state your thesis — what your essay will argue. Never start with "In this essay I will talk about..." — that is the most boring opening imaginable.'
+    question:
+      text: 'What opening does the teacher tell students to avoid?'
+      textZh: '老师告诉学生避免什么样的开头？'
+      options:
+        A: 'Starting with a surprising fact.'
+        B: 'Starting with "In this essay I will talk about..."'
+        C: 'Starting with a question.'
+      answer: 'B'
+      explanation: '"Never start with ''In this essay I will talk about...'' — that is the most boring opening imaginable."'
+      explanationZh: '永远不要以 In this essay I will talk about 开头——那是想象得到的最无聊的开头。'
+
+  - id: L668
+    type: short-extract
+    title: 'The Ancient Tree Scientist'
+    titleZh: '古树科学家'
+    scene: 'You will hear a scientist talking about bristlecone pine trees.'
+    sceneZh: '你将听到一位科学家谈论刺果松。'
+    difficulty: 3
+    audioFile: 'L668.mp3'
+    script:
+      - speaker: scientist
+        voice: echo
+        text: 'Bristlecone pines are the oldest known living organisms on Earth. The oldest, named Methuselah, is over 4,850 years old. What is remarkable is that these trees survive in terrible conditions — thin soil, freezing temperatures, almost no water. Paradoxically, it is these harsh conditions that help them live so long. They grow so slowly that their wood becomes incredibly dense, making them resistant to insects and disease.'
+    question:
+      text: 'Why do bristlecone pines live so long?'
+      textZh: '为什么刺果松活得这么久？'
+      options:
+        A: 'They grow in perfect conditions with plenty of water.'
+        B: 'Harsh conditions cause slow growth, creating dense, resistant wood.'
+        C: 'Scientists have been protecting them for centuries.'
+      answer: 'B'
+      explanation: '"These harsh conditions help them live so long. They grow so slowly that their wood becomes incredibly dense."'
+      explanationZh: '"这些严酷的条件帮助它们活得这么长。它们生长如此缓慢，木材变得极其致密。"'
+
+  - id: L669
+    type: short-extract
+    title: 'The Exam Strategy Expert'
+    titleZh: '考试策略专家'
+    scene: 'You will hear an expert explaining the process of elimination in multiple-choice questions.'
+    sceneZh: '你将听到一位专家解释选择题中的排除法。'
+    difficulty: 3
+    audioFile: 'L669.mp3'
+    script:
+      - speaker: expert
+        voice: nova
+        text: 'When you face a multiple-choice question and you are not sure of the answer, use the process of elimination. Read all four options and cross out the ones you are certain are wrong. Often, you can eliminate two options immediately. Then you have a fifty-fifty chance between the remaining two, which is much better than a one-in-four guess. Never leave a question blank — there is no penalty for wrong answers in FCE.'
+    question:
+      text: 'Why should you never leave a multiple-choice question blank?'
+      textZh: '为什么不应该留空选择题？'
+      options:
+        A: 'Because the examiner will give you partial credit.'
+        B: 'Because there is no penalty for wrong answers, so you should always guess.'
+        C: 'Because blank answers are counted as two wrong answers.'
+      answer: 'B'
+      explanation: '"Never leave a question blank — there is no penalty for wrong answers in FCE."'
+      explanationZh: '"永远不要留空——FCE中错误答案没有扣分。"'
+
+  - id: L670
+    type: short-extract
+    title: 'The Underwater Museum Visitor'
+    titleZh: '水下博物馆访客'
+    scene: 'You will hear a tourist describing her visit to an underwater museum.'
+    sceneZh: '你将听到一位游客描述她参观水下博物馆的经历。'
+    difficulty: 3
+    audioFile: 'L670.mp3'
+    script:
+      - speaker: tourist
+        voice: shimmer
+        text: 'Swimming among the sculptures was the most surreal experience of my life. They were covered in coral and sea plants, so they looked like they had been there for centuries rather than just a few years. Fish swam through the hollow figures as if they were playing hide and seek. The most moving sculpture was a circle of children holding hands — underwater, it looked like they were dancing in slow motion.'
+    question:
+      text: 'What did the tourist find most moving about the underwater museum?'
+      textZh: '游客觉得水下博物馆中最感人的是什么？'
+      options:
+        A: 'The variety of fish swimming around the sculptures.'
+        B: 'A sculpture of children holding hands that looked like they were dancing.'
+        C: 'The way the coral had changed the colour of the statues.'
+      answer: 'B'
+      explanation: '"The most moving sculpture was a circle of children holding hands — underwater, it looked like they were dancing in slow motion."'
+      explanationZh: '"最感人的雕塑是一圈手牵手的孩子——在水下，看起来像他们在慢动作跳舞。"'
+
+  - id: L671
+    type: short-extract
+    title: 'The Word Formation Expert'
+    titleZh: '构词法专家'
+    scene: 'You will hear a teacher explaining word formation patterns.'
+    sceneZh: '你将听到一位老师解释构词法模式。'
+    difficulty: 3
+    audioFile: 'L671.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'The secret to Part 3 of the Use of English paper is knowing your prefixes and suffixes. If you know that adding un- or dis- makes a word negative, that -tion or -ment turns a verb into a noun, and that -able or -ible makes an adjective, you can transform almost any word. But watch out for tricky changes — like "succeed" becoming "success" as a noun and "successful" as an adjective, not "succeedment" or "succeedable."'
+    question:
+      text: 'What does the teacher warn students about?'
+      textZh: '老师警告学生注意什么？'
+      options:
+        A: 'Some words have irregular formation patterns that do not follow standard rules.'
+        B: 'Prefixes are more important than suffixes in the exam.'
+        C: 'Part 3 is the easiest part of the Use of English paper.'
+      answer: 'A'
+      explanation: 'The teacher warns about "tricky changes" where words do not follow standard suffix patterns (e.g., succeed → success, not "succeedment").'
+      explanationZh: '老师警告"棘手的变化"，即词不遵循标准后缀模式（如succeed→success，不是"succeedment"）。'
+
+  - id: L672
+    type: short-extract
+    title: 'The History of Writing'
+    titleZh: '文字的历史'
+    scene: 'You will hear a historian talking about the invention of the alphabet.'
+    sceneZh: '你将听到一位历史学家谈论字母表的发明。'
+    difficulty: 3
+    audioFile: 'L672.mp3'
+    script:
+      - speaker: historian
+        voice: echo
+        text: 'Before alphabets, writing systems like Egyptian hieroglyphics used hundreds or even thousands of symbols. Learning to write took years, and only a tiny elite could do it. The Phoenician alphabet changed everything by reducing writing to just 22 letters. Suddenly, writing was something ordinary people could learn. This simple innovation may have had a bigger impact on human civilisation than any other invention in history.'
+    question:
+      text: 'Why was the Phoenician alphabet so revolutionary?'
+      textZh: '为什么腓尼基字母表如此具有革命性？'
+      options:
+        A: 'It was the most beautiful writing system ever created.'
+        B: 'It reduced writing to 22 letters, making it accessible to ordinary people.'
+        C: 'It was the first writing system to use pictures.'
+      answer: 'B'
+      explanation: '"Reducing writing to just 22 letters. Suddenly, writing was something ordinary people could learn."'
+      explanationZh: '"将书写减少到仅22个字母。突然，书写成了普通人都能学的东西。"'
+
+  - id: L673
+    type: short-extract
+    title: 'The Key Word Transformation Coach'
+    titleZh: '关键词转换教练'
+    scene: 'You will hear a tutor explaining how to approach Part 4 of the Use of English paper.'
+    sceneZh: '你将听到一位导师解释如何应对语言运用第4部分。'
+    difficulty: 3
+    audioFile: 'L673.mp3'
+    script:
+      - speaker: tutor
+        voice: shimmer
+        text: 'Part 4 is all about knowing alternative ways to say the same thing. The key word must stay EXACTLY as it is — you cannot change its form. So if the key word is BEEN, you cannot write "being" or "be." Always check three things: does your sentence mean the same as the original? Have you used the key word unchanged? Is your grammar correct? Many students lose marks because they change the meaning slightly without realising it.'
+    question:
+      text: 'What three things should you check in Part 4?'
+      textZh: '在第4部分你应该检查哪三件事？'
+      options:
+        A: 'Spelling, punctuation, and handwriting.'
+        B: 'Same meaning, unchanged key word, and correct grammar.'
+        C: 'Word count, paragraph structure, and vocabulary range.'
+      answer: 'B'
+      explanation: 'Three checks: "does your sentence mean the same?" + "key word unchanged?" + "grammar correct?"'
+      explanationZh: '三项检查："你的句子意思一样吗？"+"关键词不变？"+"语法正确？"'
+
+  - id: L674
+    type: short-extract
+    title: 'The Mistake Analyst'
+    titleZh: '错误分析师'
+    scene: 'You will hear a learning coach explaining how to learn from mistakes.'
+    sceneZh: '你将听到一位学习教练解释如何从错误中学习。'
+    difficulty: 3
+    audioFile: 'L674.mp3'
+    script:
+      - speaker: coach
+        voice: echo
+        text: 'After every practice test, I want you to create an error log. Write down every question you got wrong, then classify the error. Was it a vocabulary mistake? A grammar mistake? Did you misunderstand the question? Or did you simply run out of time? Once you see patterns in your errors, you know exactly what to focus on in your revision. Most students find that 80 per cent of their mistakes come from just two or three areas.'
+    question:
+      text: 'What does the coach suggest students create after each practice test?'
+      textZh: '教练建议学生在每次练习测试后创建什么？'
+      options:
+        A: 'A study timetable for the week ahead.'
+        B: 'An error log that classifies each mistake by type.'
+        C: 'A list of vocabulary words to memorise.'
+      answer: 'B'
+      explanation: '"Create an error log. Write down every question you got wrong, then classify the error."'
+      explanationZh: '"创建一个错误日志。写下你答错的每道题，然后分类错误。"'
+
+  - id: L675
+    type: short-extract
+    title: 'The Time Management Expert'
+    titleZh: '时间管理专家'
+    scene: 'You will hear an exam tutor discussing time management during the FCE exam.'
+    sceneZh: '你将听到一位考试导师讨论FCE考试中的时间管理。'
+    difficulty: 3
+    audioFile: 'L675.mp3'
+    script:
+      - speaker: tutor
+        voice: nova
+        text: 'In the Use of English paper, you have 75 minutes for four parts. That sounds like a lot, but it goes quickly. My rule of thumb is: spend about 12 minutes on Part 1, 12 minutes on Part 2, 12 minutes on Part 3, and 15 minutes on Part 4 because the transformations require more thinking. That leaves you with about 24 minutes to go back and check your answers. Never spend more than two minutes on any single question — if you are stuck, mark it and move on.'
+    question:
+      text: 'Which part of the Use of English paper does the tutor say takes the most time?'
+      textZh: '导师说语言运用试卷的哪个部分花费最多时间？'
+      options:
+        A: 'Part 1 — multiple-choice cloze.'
+        B: 'Part 3 — word formation.'
+        C: 'Part 4 — key word transformation.'
+      answer: 'C'
+      explanation: '"15 minutes on Part 4 because the transformations require more thinking."'
+      explanationZh: '"第4部分15分钟，因为转换需要更多思考。"'
+
+  # ============================================================
+  # L676–L690: Part 2 — Sentence Completion (15 exercises)
+  # ============================================================
+
+  - id: L676
+    type: sentence-completion
+    title: 'Exam Preparation Tips'
+    titleZh: '考试准备技巧'
+    scene: 'You will hear a teacher talking about effective revision strategies.'
+    sceneZh: '你将听到一位老师谈论有效的复习策略。'
+    difficulty: 3
+    audioFile: 'L676.mp3'
+    script:
+      - speaker: teacher
+        voice: nova
+        text: 'The most effective revision technique is called active recall. Instead of simply re-reading your notes, you close the book and try to remember what you have just read. Studies show that this method is three times more effective than passive reading. The effort of trying to remember actually strengthens the memory.'
+    question:
+      text: 'Active recall is _____ times more effective than passive reading.'
+      textZh: '主动回忆比被动阅读有效 _____ 倍。'
+      answer: 'three'
+      acceptableAnswers: ['three', '3']
+      explanation: '"This method is three times more effective than passive reading."'
+      explanationZh: '"这种方法比被动阅读有效三倍。"'
+
+  - id: L677
+    type: sentence-completion
+    title: 'The Forgetting Curve'
+    titleZh: '遗忘曲线'
+    scene: 'You will hear a psychologist explaining the forgetting curve.'
+    sceneZh: '你将听到一位心理学家解释遗忘曲线。'
+    difficulty: 3
+    audioFile: 'L677.mp3'
+    script:
+      - speaker: psychologist
+        voice: echo
+        text: 'The forgetting curve was first described by German psychologist Hermann Ebbinghaus in 1885. He discovered that within one hour of learning something new, we forget approximately fifty per cent of it. Within twenty-four hours, we forget about seventy per cent. The curve shows that memory decays rapidly at first, then levels off.'
+    question:
+      text: 'Within one hour of learning something new, we forget approximately _____ per cent.'
+      textZh: '学习新东西后一小时内，我们会遗忘大约 _____ %。'
+      answer: 'fifty'
+      acceptableAnswers: ['fifty', '50']
+      explanation: '"Within one hour of learning something new, we forget approximately fifty per cent."'
+      explanationZh: '"学习新东西后一小时内，我们遗忘大约50%。"'
+
+  - id: L678
+    type: sentence-completion
+    title: 'Spaced Repetition'
+    titleZh: '间隔重复'
+    scene: 'You will hear a learning scientist explaining spaced repetition.'
+    sceneZh: '你将听到一位学习科学家解释间隔重复。'
+    difficulty: 3
+    audioFile: 'L678.mp3'
+    script:
+      - speaker: scientist
+        voice: shimmer
+        text: 'The principle behind spaced repetition is simple: review information just before you are about to forget it. If you learn a new word today, review it tomorrow, then three days later, then a week later, then two weeks later. Each successful review doubles the time until the next review is needed. Eventually, the word moves into your permanent long-term memory.'
+    question:
+      text: 'Each successful review _____ the time until the next review is needed.'
+      textZh: '每次成功的复习 _____ 下次复习所需的时间。'
+      answer: 'doubles'
+      acceptableAnswers: ['doubles']
+      explanation: '"Each successful review doubles the time until the next review is needed."'
+      explanationZh: '"每次成功的复习将下次复习所需的时间加倍。"'
+
+  - id: L679
+    type: sentence-completion
+    title: 'The Great Barrier Reef'
+    titleZh: '大堡礁'
+    scene: 'You will hear a marine biologist presenting facts about the Great Barrier Reef.'
+    sceneZh: '你将听到一位海洋生物学家介绍关于大堡礁的事实。'
+    difficulty: 3
+    audioFile: 'L679.mp3'
+    script:
+      - speaker: biologist
+        voice: echo
+        text: 'The Great Barrier Reef stretches over 2,300 kilometres along the northeast coast of Australia. It is home to over 1,500 species of fish and 400 types of coral. Since 2016, the reef has experienced four mass bleaching events caused by rising ocean temperatures. Coral bleaching occurs when the water becomes too warm and the coral expels the algae that give it colour.'
+    question:
+      text: 'Since 2016, the reef has experienced _____ mass bleaching events.'
+      textZh: '自2016年以来，礁石经历了 _____ 次大规模白化事件。'
+      answer: 'four'
+      acceptableAnswers: ['four', '4']
+      explanation: '"Since 2016, the reef has experienced four mass bleaching events."'
+      explanationZh: '"自2016年以来，礁石经历了四次大规模白化事件。"'
+
+  - id: L680
+    type: sentence-completion
+    title: 'The Phoenician Alphabet'
+    titleZh: '腓尼基字母表'
+    scene: 'You will hear a historian discussing the importance of the Phoenician alphabet.'
+    sceneZh: '你将听到一位历史学家讨论腓尼基字母表的重要性。'
+    difficulty: 3
+    audioFile: 'L680.mp3'
+    script:
+      - speaker: historian
+        voice: nova
+        text: 'The Phoenician alphabet was created around 1,050 BCE and used just twenty-two letters to represent all the sounds of their language. This simplicity was revolutionary because it made writing accessible to ordinary people for the first time. The Phoenician system became the ancestor of almost every alphabet used in the world today, including Greek, Latin, Arabic, and Hebrew.'
+    question:
+      text: 'The Phoenician alphabet used just _____ letters.'
+      textZh: '腓尼基字母表只使用了 _____ 个字母。'
+      answer: 'twenty-two'
+      acceptableAnswers: ['twenty-two', '22']
+      explanation: '"Used just twenty-two letters to represent all the sounds of their language."'
+      explanationZh: '"只用二十二个字母来代表他们语言的所有声音。"'
+
+  - id: L681
+    type: sentence-completion
+    title: 'Vertical Farming Benefits'
+    titleZh: '垂直农业的好处'
+    scene: 'You will hear a food scientist describing vertical farming.'
+    sceneZh: '你将听到一位食品科学家描述垂直农业。'
+    difficulty: 3
+    audioFile: 'L681.mp3'
+    script:
+      - speaker: scientist
+        voice: shimmer
+        text: 'One major advantage of vertical farming is that it can produce crops all year round, regardless of weather conditions. A vertical farm in Singapore produces thirty tonnes of vegetables every month using LED lights and recycled water. The vegetables travel just five kilometres from farm to supermarket, compared to thousands of kilometres for imported produce.'
+    question:
+      text: 'The vegetables from the vertical farm travel just _____ kilometres to the supermarket.'
+      textZh: '垂直农场的蔬菜只需运输 _____ 公里到超市。'
+      answer: 'five'
+      acceptableAnswers: ['five', '5']
+      explanation: '"The vegetables travel just five kilometres from farm to supermarket."'
+      explanationZh: '"蔬菜从农场到超市只需运输五公里。"'
+
+  - id: L682
+    type: sentence-completion
+    title: 'The Psychology of Colour'
+    titleZh: '色彩心理学'
+    scene: 'You will hear a designer explaining how companies use colour.'
+    sceneZh: '你将听到一位设计师解释公司如何使用颜色。'
+    difficulty: 3
+    audioFile: 'L682.mp3'
+    script:
+      - speaker: designer
+        voice: echo
+        text: 'Companies spend millions choosing the right colours for their brands. Red creates a sense of urgency, which is why it appears on sale signs. Blue builds trust, which is why most banks and technology companies use it. Green suggests health and nature, making it popular with organic food brands. And purple is associated with luxury and creativity, which explains its use by premium beauty companies.'
+    question:
+      text: 'Blue is commonly used by banks because it builds _____.'
+      textZh: '蓝色常被银行使用因为它建立 _____。'
+      answer: 'trust'
+      acceptableAnswers: ['trust']
+      explanation: '"Blue builds trust, which is why most banks and technology companies use it."'
+      explanationZh: '"蓝色建立信任，这就是为什么大多数银行和科技公司使用它。"'
+
+  - id: L683
+    type: sentence-completion
+    title: 'Ancient Board Games'
+    titleZh: '古代桌游'
+    scene: 'You will hear a museum guide talking about the history of board games.'
+    sceneZh: '你将听到一位博物馆导游谈论桌游的历史。'
+    difficulty: 3
+    audioFile: 'L683.mp3'
+    script:
+      - speaker: guide
+        voice: nova
+        text: 'The ancient Chinese game of Go is believed to be about 2,500 years old, making it one of the oldest strategy games still played today. Despite having very simple rules — players take turns placing black and white stones on a grid — the number of possible positions is greater than the number of atoms in the observable universe. Even modern artificial intelligence found Go one of the hardest games to master.'
+    question:
+      text: 'The game of Go is believed to be approximately _____ years old.'
+      textZh: '围棋被认为大约有 _____ 年的历史。'
+      answer: '2,500'
+      acceptableAnswers: ['2,500', '2500', 'two thousand five hundred']
+      explanation: '"The ancient Chinese game of Go is believed to be about 2,500 years old."'
+      explanationZh: '"中国古代围棋游戏被认为大约有2500年的历史。"'
+
+  - id: L684
+    type: sentence-completion
+    title: 'Electric Car Progress'
+    titleZh: '电动汽车的进步'
+    scene: 'You will hear a journalist reporting on electric vehicle developments.'
+    sceneZh: '你将听到一位记者报道电动汽车的发展。'
+    difficulty: 3
+    audioFile: 'L684.mp3'
+    script:
+      - speaker: journalist
+        voice: echo
+        text: 'The cost of electric vehicle batteries has fallen by an astonishing 97 per cent since 2010. A battery pack that cost $1,100 per kilowatt hour thirteen years ago now costs just $139. This dramatic price drop is the main reason why electric cars are becoming affordable for ordinary families. Industry experts predict that EVs will reach price parity with petrol cars by 2026.'
+    question:
+      text: 'Electric vehicle battery costs have fallen by _____ per cent since 2010.'
+      textZh: '自2010年以来，电动汽车电池成本下降了 _____ %。'
+      answer: '97'
+      acceptableAnswers: ['97', 'ninety-seven']
+      explanation: '"The cost of electric vehicle batteries has fallen by an astonishing 97 per cent since 2010."'
+      explanationZh: '"自2010年以来，电动汽车电池成本令人惊讶地下降了97%。"'
+
+  - id: L685
+    type: sentence-completion
+    title: 'Sleep and Learning'
+    titleZh: '睡眠与学习'
+    scene: 'You will hear a neuroscientist explaining the link between sleep and exam performance.'
+    sceneZh: '你将听到一位神经科学家解释睡眠与考试表现之间的联系。'
+    difficulty: 3
+    audioFile: 'L685.mp3'
+    script:
+      - speaker: neuroscientist
+        voice: shimmer
+        text: 'During deep sleep, your brain replays and strengthens the neural pathways formed during the day. This is called memory consolidation. Students who get eight hours of sleep after studying remember 40 per cent more than students who only sleep for four hours. The message is clear: sleep is not wasted time — it is essential study time.'
+    question:
+      text: 'Students who sleep eight hours remember _____ per cent more than those who sleep four hours.'
+      textZh: '睡八小时的学生比只睡四小时的学生多记住 _____ %。'
+      answer: '40'
+      acceptableAnswers: ['40', 'forty']
+      explanation: '"Students who get eight hours of sleep after studying remember 40 per cent more."'
+      explanationZh: '"学习后睡八小时的学生多记住40%。"'
+
+  - id: L686
+    type: sentence-completion
+    title: 'Endangered Languages'
+    titleZh: '濒危语言'
+    scene: 'You will hear a researcher discussing endangered languages.'
+    sceneZh: '你将听到一位研究员讨论濒危语言。'
+    difficulty: 3
+    audioFile: 'L686.mp3'
+    script:
+      - speaker: researcher
+        voice: echo
+        text: 'There are approximately 7,000 languages spoken in the world today. Linguists estimate that one language dies every two weeks. At this rate, by the end of this century, nearly half of the world''s languages will have disappeared forever. Each language lost is like a library burning down — centuries of knowledge, stories, and unique ways of understanding the world are gone.'
+    question:
+      text: 'One language dies approximately every _____ weeks.'
+      textZh: '大约每 _____ 周就有一种语言消亡。'
+      answer: 'two'
+      acceptableAnswers: ['two', '2']
+      explanation: '"One language dies every two weeks."'
+      explanationZh: '"每两周就有一种语言消亡。"'
+
+  - id: L687
+    type: sentence-completion
+    title: 'Cave Science'
+    titleZh: '洞穴科学'
+    scene: 'You will hear a geologist explaining how stalactites form.'
+    sceneZh: '你将听到一位地质学家解释钟乳石是如何形成的。'
+    difficulty: 3
+    audioFile: 'L687.mp3'
+    script:
+      - speaker: geologist
+        voice: nova
+        text: 'Stalactites form when mineral-rich water drips from the ceiling of a cave. As each drop hangs from the ceiling, a tiny amount of mineral is deposited. Over thousands of years, these deposits build up into the long, pointed structures we see today. The largest known stalactite is in a cave in Ireland and measures over six metres long. It probably took over a hundred thousand years to form.'
+    question:
+      text: 'The largest known stalactite measures over _____ metres long.'
+      textZh: '已知最大的钟乳石长度超过 _____ 米。'
+      answer: 'six'
+      acceptableAnswers: ['six', '6']
+      explanation: '"The largest known stalactite is in a cave in Ireland and measures over six metres long."'
+      explanationZh: '"已知最大的钟乳石在爱尔兰的一个洞穴中，长度超过六米。"'
+
+  - id: L688
+    type: sentence-completion
+    title: 'The Future of Food'
+    titleZh: '食物的未来'
+    scene: 'You will hear a nutritionist talking about insect protein.'
+    sceneZh: '你将听到一位营养学家谈论昆虫蛋白质。'
+    difficulty: 3
+    audioFile: 'L688.mp3'
+    script:
+      - speaker: nutritionist
+        voice: shimmer
+        text: 'Crickets contain more protein per kilogram than beef and require just a fraction of the land, water, and feed. Over two billion people worldwide already eat insects as part of their regular diet. In Western countries, companies are now producing cricket flour that can be added to smoothies, energy bars, and even pasta. It tastes surprisingly mild — most people cannot tell the difference.'
+    question:
+      text: 'Over _____ billion people worldwide already eat insects as part of their diet.'
+      textZh: '全世界已有超过 _____ 十亿人将昆虫作为饮食的一部分。'
+      answer: 'two'
+      acceptableAnswers: ['two', '2']
+      explanation: '"Over two billion people worldwide already eat insects as part of their regular diet."'
+      explanationZh: '"全世界已有超过20亿人将昆虫作为日常饮食的一部分。"'
+
+  - id: L689
+    type: sentence-completion
+    title: 'The Printing Press Revolution'
+    titleZh: '印刷机革命'
+    scene: 'You will hear a historian discussing the impact of Gutenberg''s printing press.'
+    sceneZh: '你将听到一位历史学家讨论古腾堡印刷机的影响。'
+    difficulty: 3
+    audioFile: 'L689.mp3'
+    script:
+      - speaker: historian
+        voice: echo
+        text: 'Before Gutenberg invented the printing press around 1440, every book had to be copied by hand — a process that could take a skilled monk up to a year for a single book. Gutenberg''s press could produce about 3,600 pages per day. Within fifty years of the press''s invention, an estimated twenty million books had been printed in Europe. This explosion of knowledge led directly to the Renaissance and the Scientific Revolution.'
+    question:
+      text: 'Gutenberg''s press could produce about _____ pages per day.'
+      textZh: '古腾堡的印刷机每天可以生产约 _____ 页。'
+      answer: '3,600'
+      acceptableAnswers: ['3,600', '3600', 'three thousand six hundred']
+      explanation: '"Gutenberg''s press could produce about 3,600 pages per day."'
+      explanationZh: '"古腾堡的印刷机每天可以生产约3600页。"'
+
+  - id: L690
+    type: sentence-completion
+    title: 'Growth Mindset Research'
+    titleZh: '成长型思维研究'
+    scene: 'You will hear a psychologist discussing growth mindset in students.'
+    sceneZh: '你将听到一位心理学家讨论学生的成长型思维。'
+    difficulty: 3
+    audioFile: 'L690.mp3'
+    script:
+      - speaker: psychologist
+        voice: nova
+        text: 'A landmark study at Michigan State University found that students with a growth mindset showed stronger brain responses after making mistakes. Their brains were actively learning from errors. Students with a fixed mindset showed weaker brain responses, suggesting their brains were essentially ignoring the mistakes. The take-home message is clear: believing that you can improve through effort actually changes how your brain processes information.'
+    question:
+      text: 'Students with a _____ mindset showed stronger brain responses after making mistakes.'
+      textZh: '拥有 _____ 思维的学生在犯错后显示出更强的大脑反应。'
+      answer: 'growth'
+      acceptableAnswers: ['growth']
+      explanation: '"Students with a growth mindset showed stronger brain responses after making mistakes."'
+      explanationZh: '"拥有成长型思维的学生在犯错后显示出更强的大脑反应。"'
+
+  # ============================================================
+  # L691–L705: Part 3 — Multiple Matching (15 exercises, 3 sets of 5)
+  # ============================================================
+
+  - id: L691
+    type: multiple-matching
+    title: 'Five Students Share Their Exam Tips'
+    titleZh: '五个学生分享他们的考试技巧'
+    scene: 'You will hear five students each sharing their most useful exam tip.'
+    sceneZh: '你将听到五个学生各自分享他们最有用的考试技巧。'
+    difficulty: 3
+    audioFile: 'L691.mp3'
+    speakers:
+      - id: Speaker1
+        text: 'My best tip is to read the question twice before looking at the options. So many of my mistakes came from misunderstanding what the question was actually asking. Now I underline the key words in the question first, and my accuracy has improved enormously.'
+      - id: Speaker2
+        text: 'I used to panic when I came across a word I did not know. Now I skip it and come back to it later. Usually, the answer becomes clearer once I have read the rest of the passage. Context is your best friend.'
+      - id: Speaker3
+        text: 'I keep an error journal. After every practice test, I write down every mistake and categorise it. After two months, I could see that most of my errors were preposition mistakes. Once I focused on prepositions specifically, my score jumped by twenty per cent.'
+      - id: Speaker4
+        text: 'Time management changed everything for me. I used to spend too long on the first questions and then rush the last ones. Now I set a timer for each section and move on even if I have not finished. I can always come back at the end.'
+      - id: Speaker5
+        text: 'The night before the exam, I stop studying completely. I watch a funny film, eat a good dinner, and go to bed early. I used to cram until midnight, but I always performed worse the next day. A rested brain is a better brain.'
+    questions:
+      - text: 'Which speaker improved by identifying a specific weakness through error tracking?'
+        textZh: '哪位说话者通过错误追踪识别特定弱点来提高的？'
+        answer: 'Speaker 3'
+        explanation: 'Speaker 3 keeps an "error journal" and discovered most mistakes were preposition errors.'
+        explanationZh: '说话者3保持"错误日志"并发现大多数错误是介词错误。'
+      - text: 'Which speaker emphasises the importance of reading questions carefully?'
+        textZh: '哪位说话者强调仔细阅读问题的重要性？'
+        answer: 'Speaker 1'
+        explanation: 'Speaker 1 reads the question twice and underlines key words before looking at options.'
+        explanationZh: '说话者1在看选项之前读两遍问题并划出关键词。'
+      - text: 'Which speaker uses time limits for each section?'
+        textZh: '哪位说话者为每个部分设置时间限制？'
+        answer: 'Speaker 4'
+        explanation: 'Speaker 4 sets "a timer for each section" to manage time effectively.'
+        explanationZh: '说话者4为"每个部分设置计时器"来有效管理时间。'
+      - text: 'Which speaker recommends resting the night before the exam?'
+        textZh: '哪位说话者建议考试前一晚休息？'
+        answer: 'Speaker 5'
+        explanation: 'Speaker 5 stops studying the night before, watches a film, and goes to bed early.'
+        explanationZh: '说话者5在考试前一晚停止学习，看电影并早早上床。'
+      - text: 'Which speaker uses context clues to understand unknown words?'
+        textZh: '哪位说话者使用上下文线索来理解不认识的词？'
+        answer: 'Speaker 2'
+        explanation: 'Speaker 2 skips unknown words and uses context from the rest of the passage.'
+        explanationZh: '说话者2跳过不认识的词并使用文章其余部分的上下文。'
+
+  - id: L696
+    type: multiple-matching
+    title: 'Five People Talk About How They Learned English'
+    titleZh: '五个人谈论他们如何学英语'
+    scene: 'You will hear five people each describing how they improved their English.'
+    sceneZh: '你将听到五个人各自描述他们如何提高英语。'
+    difficulty: 3
+    audioFile: 'L696.mp3'
+    speakers:
+      - id: Speaker1
+        text: 'I learned most of my English from watching films with English subtitles. At first I needed both English audio and subtitles, but gradually I started understanding without reading the text. Now I watch everything in English and only turn on subtitles for very difficult shows.'
+      - id: Speaker2
+        text: 'Reading was the key for me. I started with simple graded readers and worked my way up to full novels. The vocabulary I learned from books was much more varied and sophisticated than what I learned in textbooks. I also noticed that my writing improved because I was absorbing sentence structures naturally.'
+      - id: Speaker3
+        text: 'I had an online language exchange partner in Australia. We would video call twice a week — half the time speaking English, half speaking Mandarin. Having a real person to talk to made me much more confident than just practising in class.'
+      - id: Speaker4
+        text: 'Music was my secret weapon. I would listen to English songs, look up the lyrics, and learn them by heart. The rhythm and melody helped me remember the words, and singing along improved my pronunciation. I still remember vocabulary from songs I learned years ago.'
+      - id: Speaker5
+        text: 'I kept a vocabulary notebook where I wrote every new word I encountered, along with an example sentence and a drawing. The act of writing and illustrating helped me remember words much better than just reading a list. I still have the notebook and look through it sometimes.'
+    questions:
+      - text: 'Which speaker improved through watching films?'
+        textZh: '哪位说话者通过看电影提高的？'
+        answer: 'Speaker 1'
+        explanation: 'Speaker 1 learned "from watching films with English subtitles."'
+        explanationZh: '说话者1通过"看带英文字幕的电影"学习。'
+      - text: 'Which speaker learned vocabulary through music?'
+        textZh: '哪位说话者通过音乐学习词汇？'
+        answer: 'Speaker 4'
+        explanation: 'Speaker 4 says "music was my secret weapon" and learned vocabulary from song lyrics.'
+        explanationZh: '说话者4说"音乐是我的秘密武器"并从歌词中学习词汇。'
+      - text: 'Which speaker used a creative notebook with drawings?'
+        textZh: '哪位说话者使用有绘画的创意笔记本？'
+        answer: 'Speaker 5'
+        explanation: 'Speaker 5 kept "a vocabulary notebook" with "an example sentence and a drawing."'
+        explanationZh: '说话者5保持"一个词汇笔记本"，有"例句和绘画"。'
+      - text: 'Which speaker practised speaking with an international partner?'
+        textZh: '哪位说话者与国际伙伴练习口语？'
+        answer: 'Speaker 3'
+        explanation: 'Speaker 3 had "an online language exchange partner in Australia" with video calls.'
+        explanationZh: '说话者3有"一位在澳大利亚的在线语言交换伙伴"，通过视频通话。'
+      - text: 'Which speaker found that reading improved their writing?'
+        textZh: '哪位说话者发现阅读提高了他们的写作？'
+        answer: 'Speaker 2'
+        explanation: 'Speaker 2 says "my writing improved because I was absorbing sentence structures naturally" from reading.'
+        explanationZh: '说话者2说通过阅读"我的写作提高了，因为我在自然地吸收句子结构"。'
+
+  - id: L701
+    type: multiple-matching
+    title: 'Five Teachers Describe Their Favourite Teaching Methods'
+    titleZh: '五位老师描述他们最喜欢的教学方法'
+    scene: 'You will hear five teachers each describing their favourite way to teach English.'
+    sceneZh: '你将听到五位老师各自描述他们最喜欢的教授英语的方式。'
+    difficulty: 3
+    audioFile: 'L701.mp3'
+    speakers:
+      - id: Speaker1
+        text: 'I use stories to teach grammar. Instead of explaining rules in isolation, I give students a short story with target structures highlighted. They read the story, notice the patterns, and then try to work out the rules themselves. They remember grammar much better when they discover it rather than being told it.'
+      - id: Speaker2
+        text: 'I play games in every lesson. My students love vocabulary bingo, grammar relay races, and spelling competitions. Some people say games waste time, but my students'' results have improved significantly since I started using them. Engagement is the key to learning.'
+      - id: Speaker3
+        text: 'I get my students to teach each other. Every week, one student prepares a mini-lesson on a topic they have mastered. Teaching something to someone else is the deepest form of learning because you have to understand it completely before you can explain it clearly.'
+      - id: Speaker4
+        text: 'I use real-world materials — newspaper articles, restaurant menus, train timetables, social media posts. My students are much more motivated when they can see how English is used in real life rather than in artificial textbook dialogues.'
+      - id: Speaker5
+        text: 'I focus heavily on error correction. After every piece of writing, I highlight errors with colour codes — red for grammar, blue for vocabulary, green for spelling. Students then correct their own mistakes. This self-correction process teaches them to spot their own errors during the exam.'
+    questions:
+      - text: 'Which teacher uses game-based learning?'
+        textZh: '哪位老师使用基于游戏的学习？'
+        answer: 'Speaker 2'
+        explanation: 'Speaker 2 uses "vocabulary bingo, grammar relay races, and spelling competitions."'
+        explanationZh: '说话者2使用"词汇宾果、语法接力赛和拼写比赛"。'
+      - text: 'Which teacher gets students to discover grammar rules from stories?'
+        textZh: '哪位老师让学生从故事中发现语法规则？'
+        answer: 'Speaker 1'
+        explanation: 'Speaker 1 uses "stories to teach grammar" where students "notice the patterns and work out the rules themselves."'
+        explanationZh: '说话者1使用"故事来教语法"，学生"注意模式并自己找出规则"。'
+      - text: 'Which teacher uses a colour-coded error correction system?'
+        textZh: '哪位老师使用颜色编码的错误纠正系统？'
+        answer: 'Speaker 5'
+        explanation: 'Speaker 5 uses "colour codes — red for grammar, blue for vocabulary, green for spelling."'
+        explanationZh: '说话者5使用"颜色代码——红色代表语法，蓝色代表词汇，绿色代表拼写。"'
+      - text: 'Which teacher has students teach each other?'
+        textZh: '哪位老师让学生互相教？'
+        answer: 'Speaker 3'
+        explanation: 'Speaker 3 says "I get my students to teach each other" through weekly mini-lessons.'
+        explanationZh: '说话者3说"我让学生互相教"，通过每周的迷你课程。'
+      - text: 'Which teacher uses authentic real-world materials?'
+        textZh: '哪位老师使用真实世界的材料？'
+        answer: 'Speaker 4'
+        explanation: 'Speaker 4 uses "real-world materials — newspaper articles, restaurant menus, train timetables."'
+        explanationZh: '说话者4使用"真实世界的材料——报纸文章、餐厅菜单、火车时刻表。"'
+
+  # ============================================================
+  # L706–L720: Part 4 — Long Conversation (15 exercises, 3 conversations x 5 questions)
+  # ============================================================
+
+  - id: L706
+    type: long-conversation
+    title: 'Two Students Discuss Their Exam Preparation'
+    titleZh: '两个学生讨论他们的考试准备'
+    scene: 'You will hear two friends, Mia and Jake, discussing how they are preparing for their FCE exam.'
+    sceneZh: '你将听到两个朋友Mia和Jake讨论他们如何准备FCE考试。'
+    difficulty: 3
+    audioFile: 'L706.mp3'
+    script:
+      - speaker: Mia
+        voice: shimmer
+        text: 'I have been using flashcards for vocabulary, but I feel like I am forgetting words almost as fast as I learn them. Do you have the same problem?'
+      - speaker: Jake
+        voice: fable
+        text: 'I did at first, but then I started using spaced repetition. Instead of reviewing all my cards every day, I only review the ones I am about to forget. The app tracks which words I find difficult and shows them more often. It has made a huge difference.'
+      - speaker: Mia
+        voice: shimmer
+        text: 'That sounds clever. What about grammar? I keep making the same mistakes with conditionals.'
+      - speaker: Jake
+        voice: fable
+        text: 'Me too! My trick is to create example sentences about my own life. Instead of memorising "If I had studied, I would have passed," I write "If I had woken up earlier, I would have caught the bus." Personal examples stick in my memory much better.'
+      - speaker: Mia
+        voice: shimmer
+        text: 'That is a great idea. The part I find hardest is the Use of English — especially word formation. I never know which suffix to add.'
+      - speaker: Jake
+        voice: fable
+        text: 'I made a chart of the most common suffixes — like -tion for nouns, -able for adjectives, -ly for adverbs — and I practise by transforming ten random words every morning before breakfast. It only takes five minutes, but it has really helped.'
+      - speaker: Mia
+        voice: shimmer
+        text: 'Do you think we are doing enough practice tests? I have only done three so far.'
+      - speaker: Jake
+        voice: fable
+        text: 'I have done about eight. But it is not just about doing the tests — it is about analysing your mistakes afterwards. I spend as long reviewing a test as I do taking it. That is where the real learning happens.'
+    questions:
+      - id: L706-Q1
+        text: 'What technique has helped Jake remember vocabulary more effectively?'
+        textZh: '什么技巧帮助Jake更有效地记忆词汇？'
+        options:
+          A: 'Writing words out ten times each.'
+          B: 'Using spaced repetition with an app.'
+          C: 'Reading a vocabulary book every night.'
+          D: 'Making vocabulary posters for his bedroom wall.'
+        answer: 'B'
+        explanation: 'Jake uses "spaced repetition" where an app "tracks which words I find difficult and shows them more often."'
+        explanationZh: 'Jake使用"间隔重复"，应用程序"追踪我觉得困难的词并更频繁地显示它们"。'
+      - id: L706-Q2
+        text: 'How does Jake practise conditionals?'
+        textZh: 'Jake如何练习条件句？'
+        options:
+          A: 'By reading grammar textbooks.'
+          B: 'By creating personal example sentences about his own life.'
+          C: 'By doing online grammar quizzes.'
+          D: 'By asking his teacher for extra worksheets.'
+        answer: 'B'
+        explanation: '"I write sentences about my own life. Personal examples stick in my memory much better."'
+        explanationZh: '"我写关于自己生活的句子。个人例子在我的记忆中更容易留下。"'
+      - id: L706-Q3
+        text: 'Which part of the exam does Mia find hardest?'
+        textZh: 'Mia觉得考试的哪个部分最难？'
+        options:
+          A: 'Reading'
+          B: 'Writing'
+          C: 'Use of English, especially word formation'
+          D: 'Listening'
+        answer: 'C'
+        explanation: '"The part I find hardest is the Use of English — especially word formation."'
+        explanationZh: '"我觉得最难的部分是语言运用——尤其是构词法。"'
+      - id: L706-Q4
+        text: 'How many practice tests has Jake completed?'
+        textZh: 'Jake完成了多少套模拟测试？'
+        options:
+          A: 'Three'
+          B: 'Five'
+          C: 'Eight'
+          D: 'Twelve'
+        answer: 'C'
+        explanation: '"I have done about eight."'
+        explanationZh: '"我做了大约八套。"'
+      - id: L706-Q5
+        text: 'What does Jake say is more important than just doing practice tests?'
+        textZh: 'Jake说比仅仅做模拟测试更重要的是什么？'
+        options:
+          A: 'Getting a high score.'
+          B: 'Finishing within the time limit.'
+          C: 'Analysing your mistakes afterwards.'
+          D: 'Doing the tests under exam conditions.'
+        answer: 'C'
+        explanation: '"It is not just about doing the tests — it is about analysing your mistakes afterwards."'
+        explanationZh: '"不仅仅是做测试——而是之后分析你的错误。"'
+
+  - id: L711
+    type: long-conversation
+    title: 'A Teacher and Student Discuss Exam Strategy'
+    titleZh: '老师和学生讨论考试策略'
+    scene: 'You will hear a teacher, Mrs Chen, giving exam advice to a student, Leo.'
+    sceneZh: '你将听到陈老师给学生Leo考试建议。'
+    difficulty: 4
+    audioFile: 'L711.mp3'
+    script:
+      - speaker: Mrs Chen
+        voice: nova
+        text: 'Leo, your practice test scores are improving, but I have noticed you lose marks in the same areas every time. Let us look at your error analysis. Your biggest weakness is preposition errors in the open cloze.'
+      - speaker: Leo
+        voice: fable
+        text: 'I know — I always mix up "in," "on," and "at." Is there a trick to remembering which one to use?'
+      - speaker: Mrs Chen
+        voice: nova
+        text: 'Unfortunately, prepositions in English are mostly about learning fixed phrases rather than rules. My advice is to learn the whole phrase as a unit: "interested IN," "depend ON," "good AT." Keep a preposition diary and add two new phrases every day.'
+      - speaker: Leo
+        voice: fable
+        text: 'What about the key word transformations? I understand the original sentence, but I cannot always find the right structure.'
+      - speaker: Mrs Chen
+        voice: nova
+        text: 'Part 4 tests your knowledge of alternative structures. The key is to recognise patterns. About seventy per cent of the transformations test just ten common patterns: active to passive, direct to reported speech, conditionals, so/such...that, too/enough, and comparative structures. If you master these ten patterns, you will score well.'
+      - speaker: Leo
+        voice: fable
+        text: 'That makes it feel more manageable. One more question — I always run out of time on the writing paper. Any advice?'
+      - speaker: Mrs Chen
+        voice: nova
+        text: 'Spend the first five minutes planning. Students who plan actually write faster because they know what each paragraph will contain before they start. Use a simple structure: introduction, two body paragraphs, conclusion. And always leave five minutes at the end to check your work for grammar and spelling errors.'
+    questions:
+      - id: L711-Q1
+        text: 'What is Leo''s biggest weakness according to Mrs Chen?'
+        textZh: '根据陈老师的说法，Leo最大的弱点是什么？'
+        options:
+          A: 'Vocabulary in the reading section.'
+          B: 'Preposition errors in the open cloze.'
+          C: 'Grammar errors in the writing section.'
+          D: 'Poor time management in listening.'
+        answer: 'B'
+        explanation: '"Your biggest weakness is preposition errors in the open cloze."'
+        explanationZh: '"你最大的弱点是完形填空中的介词错误。"'
+      - id: L711-Q2
+        text: 'What does Mrs Chen suggest for learning prepositions?'
+        textZh: '陈老师建议怎样学习介词？'
+        options:
+          A: 'Memorise a list of grammar rules.'
+          B: 'Learn whole phrases as units and keep a preposition diary.'
+          C: 'Do as many practice tests as possible.'
+          D: 'Read English newspapers every day.'
+        answer: 'B'
+        explanation: '"Learn the whole phrase as a unit" and "keep a preposition diary."'
+        explanationZh: '"把整个短语作为一个单位来学"并"保持一个介词日记"。'
+      - id: L711-Q3
+        text: 'What percentage of key word transformations test common patterns?'
+        textZh: '关键词转换中有多大比例测试常见模式？'
+        options:
+          A: 'About 50 per cent'
+          B: 'About 60 per cent'
+          C: 'About 70 per cent'
+          D: 'About 80 per cent'
+        answer: 'C'
+        explanation: '"About seventy per cent of the transformations test just ten common patterns."'
+        explanationZh: '"大约70%的转换只测试十种常见模式。"'
+      - id: L711-Q4
+        text: 'How long does Mrs Chen suggest spending on planning in the writing paper?'
+        textZh: '陈老师建议在写作试卷中花多长时间规划？'
+        options:
+          A: 'Two minutes'
+          B: 'Five minutes'
+          C: 'Ten minutes'
+          D: 'Fifteen minutes'
+        answer: 'B'
+        explanation: '"Spend the first five minutes planning."'
+        explanationZh: '"前五分钟用于规划。"'
+      - id: L711-Q5
+        text: 'What is Leo''s problem with the writing paper?'
+        textZh: 'Leo在写作试卷上有什么问题？'
+        options:
+          A: 'He does not know what to write about.'
+          B: 'His handwriting is too messy.'
+          C: 'He always runs out of time.'
+          D: 'He forgets to write a conclusion.'
+        answer: 'C'
+        explanation: '"I always run out of time on the writing paper."'
+        explanationZh: '"我在写作试卷上总是时间不够。"'
+
+  - id: L716
+    type: long-conversation
+    title: 'Two Friends Compare Their Study Methods'
+    titleZh: '两个朋友比较他们的学习方法'
+    scene: 'You will hear two friends, Emma and Ryan, comparing their approaches to exam preparation.'
+    sceneZh: '你将听到两个朋友Emma和Ryan比较他们的备考方法。'
+    difficulty: 4
+    audioFile: 'L716.mp3'
+    script:
+      - speaker: Emma
+        voice: shimmer
+        text: 'I read somewhere that the best time to review new vocabulary is just before you go to sleep. Apparently, your brain consolidates memories during sleep, so the last thing you study gets the strongest reinforcement.'
+      - speaker: Ryan
+        voice: fable
+        text: 'That is interesting. I prefer studying in the morning when my brain is fresh. I find it much harder to concentrate in the evening. But I do keep a notebook beside my bed to write down any words that come to me during the night.'
+      - speaker: Emma
+        voice: shimmer
+        text: 'Have you tried colour-coding your notes? I use blue for grammar rules, pink for vocabulary, and green for exam tips. It makes it much easier to find information quickly, and the colours seem to help me remember.'
+      - speaker: Ryan
+        voice: fable
+        text: 'I use mind maps instead. I put the topic in the centre and draw branches for related ideas. It helps me see connections between concepts that I might miss with linear notes. For example, I can see how conditionals, wish sentences, and reported speech all involve tense shifts.'
+      - speaker: Emma
+        voice: shimmer
+        text: 'That is clever. What do you find most stressful about the exam?'
+      - speaker: Ryan
+        voice: fable
+        text: 'Honestly? The listening paper. You only hear each recording twice, and if you miss something, it is gone. I have been practising by listening to podcasts at 1.5 times normal speed. When I go back to normal speed, it sounds slow and clear.'
+      - speaker: Emma
+        voice: shimmer
+        text: 'I struggle most with the writing paper. I know what I want to say but I cannot always find the right words. My teacher says I need to build a bank of useful phrases for each type of writing — essays, reviews, stories, letters.'
+    questions:
+      - id: L716-Q1
+        text: 'When does Emma prefer to study vocabulary?'
+        textZh: 'Emma更喜欢什么时候学词汇？'
+        options:
+          A: 'Early in the morning'
+          B: 'During lunch break'
+          C: 'Just before going to sleep'
+          D: 'On the bus to school'
+        answer: 'C'
+        explanation: '"The best time to review new vocabulary is just before you go to sleep."'
+        explanationZh: '"复习新词汇的最佳时间是在睡前。"'
+      - id: L716-Q2
+        text: 'What study technique does Ryan use instead of colour-coding?'
+        textZh: 'Ryan使用什么学习技巧代替颜色编码？'
+        options:
+          A: 'Flashcards'
+          B: 'Mind maps'
+          C: 'Audio recordings'
+          D: 'Practice tests'
+        answer: 'B'
+        explanation: '"I use mind maps instead. I put the topic in the centre and draw branches."'
+        explanationZh: '"我改用思维导图。我把主题放在中心画分支。"'
+      - id: L716-Q3
+        text: 'Which paper does Ryan find most stressful?'
+        textZh: 'Ryan觉得哪张试卷最有压力？'
+        options:
+          A: 'Reading'
+          B: 'Writing'
+          C: 'Listening'
+          D: 'Use of English'
+        answer: 'C'
+        explanation: '"Honestly? The listening paper. You only hear each recording twice."'
+        explanationZh: '"说实话？听力试卷。每段录音你只能听两遍。"'
+      - id: L716-Q4
+        text: 'How has Ryan been practising for the listening paper?'
+        textZh: 'Ryan一直在如何练习听力？'
+        options:
+          A: 'Watching English films without subtitles.'
+          B: 'Listening to podcasts at 1.5 times normal speed.'
+          C: 'Practising with past exam recordings only.'
+          D: 'Having conversations with native speakers.'
+        answer: 'B'
+        explanation: '"I have been practising by listening to podcasts at 1.5 times normal speed."'
+        explanationZh: '"我一直在通过以1.5倍正常速度听播客来练习。"'
+      - id: L716-Q5
+        text: 'What advice did Emma''s teacher give her about writing?'
+        textZh: 'Emma的老师给了她什么关于写作的建议？'
+        options:
+          A: 'Write longer paragraphs to impress the examiner.'
+          B: 'Build a bank of useful phrases for each type of writing.'
+          C: 'Focus on spelling rather than vocabulary range.'
+          D: 'Always write a story because it is the easiest option.'
+        answer: 'B'
+        explanation: '"My teacher says I need to build a bank of useful phrases for each type of writing."'
+        explanationZh: '"我的老师说我需要为每种写作类型建立一个有用短语库。"'

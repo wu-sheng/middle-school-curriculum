@@ -1,0 +1,565 @@
+category: 'Essay Writing — Debate Arena (Month 10)'
+categoryZh: '议论文写作 — 辩论竞技场（第十月）'
+tasks:
+  - id: W070
+    type: essay
+    title: 'Should Schools Have Pets?'
+    titleZh: '学校应该养宠物吗？'
+    prompt: 'Some people believe that having a pet in the classroom is good for students. Others think school pets cause too many problems. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为教室里养宠物对学生有益。也有人认为学校宠物会带来太多问题。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '学校教室里应该养宠物吗？'
+        topic: 'Should classrooms have pets?'
+        forPoints:
+          - 'Pets teach children responsibility — they must remember to feed and care for a living creature'
+          - 'Research shows animals reduce stress and anxiety in the classroom'
+          - 'Shy students become more confident when they can talk about the class pet'
+        forPointsZh:
+          - '宠物教会孩子责任感——他们必须记住喂养和照顾一个活的生物'
+          - '研究表明动物能减少教室里的压力和焦虑'
+          - '害羞的学生在能谈论班级宠物时变得更自信'
+        againstPoints:
+          - 'Some children are allergic to animal fur, which could cause health problems'
+          - 'Caring for a pet costs money — food, equipment, and vet bills'
+          - 'Who looks after the pet during school holidays?'
+        againstPointsZh:
+          - '有些孩子对动物毛发过敏，可能导致健康问题'
+          - '照顾宠物需要花钱——食物、设备和兽医费用'
+          - '学校放假期间谁来照顾宠物？'
+      connectors:
+        - 'First and foremost...'
+        - 'Furthermore...'
+        - 'However, critics argue that...'
+        - 'Despite these concerns...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'Despite'
+        - 'responsibility'
+      mustUseStructure:
+        - 'At least one concession (Admittedly / While it is true that)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个让步（Admittedly / While it is true that）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I state my opinion clearly in the introduction?'
+      - 'Did I give at least two reasons with evidence?'
+      - 'Did I acknowledge the opposing view (concession)?'
+      - 'Did I use formal language (no contractions)?'
+      - 'Does my conclusion end with a strong final sentence?'
+    selfCheckListZh:
+      - '我是否在引言中清楚地陈述了观点？'
+      - '我是否给出了至少两个有证据支持的理由？'
+      - '我是否承认了对立观点（让步）？'
+      - '我是否使用了正式语言（没有缩写）？'
+      - '我的结论是否以一个有力的最终句子结尾？'
+    modelAnswer: |
+      Every child loves animals, but is the classroom the right place for a pet? In my opinion, having a school pet brings significant benefits that far outweigh the potential problems.
+
+      First and foremost, school pets teach children responsibility. When students take turns feeding the class rabbit or cleaning the fish tank, they learn that other living things depend on them. Furthermore, research from the American Humane Association shows that classrooms with pets have improved attendance and fewer behavioural problems. Children who are normally shy often become more confident when they can talk about the class animal.
+
+      Admittedly, there are valid concerns. Some children are allergic to animal fur, and caring for a pet costs money. Despite these challenges, practical solutions exist. Schools can choose allergy-friendly pets such as fish or reptiles, and fundraising activities can cover the costs.
+
+      In conclusion, I believe every school should consider getting a classroom pet. The lessons in empathy, responsibility, and care that animals provide are ones that no textbook can teach.
+    modelAnswerZh: |
+      每个孩子都喜欢动物，但教室是养宠物的合适地方吗？在我看来，养学校宠物带来的显著好处远远超过潜在的问题。
+
+      首先，学校宠物教会孩子责任感。当学生轮流喂班级兔子或清洁鱼缸时，他们了解到其他生物依赖他们。此外，美国人道协会的研究表明，有宠物的教室出勤率提高，行为问题减少。通常害羞的孩子在能谈论班级动物时往往变得更自信。
+
+      诚然，存在合理的担忧。有些孩子对动物毛发过敏，而且照顾宠物需要花钱。尽管存在这些挑战，但有实际的解决方案。学校可以选择不会导致过敏的宠物，如鱼类或爬行动物，筹款活动可以覆盖费用。
+
+      总之，我认为每所学校都应该考虑养一只教室宠物。动物提供的同理心、责任感和关爱的课程是任何教科书都无法教授的。
+
+  - id: W071
+    type: essay
+    title: 'Paper Books vs Digital Books'
+    titleZh: '纸质书vs电子书'
+    prompt: 'Some people think paper books are better for learning, while others prefer digital books. Which do you think is better? Write an essay giving your opinion.'
+    promptZh: '有人认为纸质书更有利于学习，也有人更喜欢电子书。你认为哪个更好？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '纸质书和电子书哪个更适合学习？'
+        topic: 'Are paper books or digital books better for learning?'
+        forPoints:
+          - 'Studies show better memory and comprehension when reading on paper'
+          - 'No distractions from apps or notifications'
+          - 'The physical feel of turning pages creates a "mental map" of the text'
+        forPointsZh:
+          - '研究表明在纸上阅读时记忆和理解更好'
+          - '没有来自应用或通知的干扰'
+          - '翻页的物理感觉创造了文本的"心理地图"'
+        againstPoints:
+          - 'E-readers can hold thousands of books — extremely portable'
+          - 'Built-in dictionaries and adjustable font sizes help struggling readers'
+          - 'Digital books are often cheaper and instantly available'
+        againstPointsZh:
+          - '电子阅读器可以容纳数千本书——极其便携'
+          - '内置词典和可调字体大小帮助阅读困难的读者'
+          - '电子书通常更便宜且即时可用'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Moreover...'
+        - 'Nevertheless...'
+      mustUseWords:
+        - 'Moreover'
+        - 'Nevertheless'
+        - 'whereas'
+      mustUseStructure:
+        - 'At least one comparison using "whereas" or "while"'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个使用"whereas"或"while"的比较'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I compare both formats fairly?'
+      - 'Did I state which I think is better and why?'
+      - 'Did I use at least one comparison connector (whereas/while)?'
+      - 'Did I include evidence or examples?'
+    selfCheckListZh:
+      - '我是否公平地比较了两种格式？'
+      - '我是否说明了我认为哪个更好以及为什么？'
+      - '我是否使用了至少一个比较连接词（whereas/while）？'
+      - '我是否包含了证据或例子？'
+    modelAnswer: |
+      In an age of smartphones and tablets, many people wonder whether paper books still have a place. While digital books offer clear advantages in convenience, I believe paper books remain the better choice for deep learning.
+
+      On the one hand, paper books have been shown to improve comprehension and memory. Research suggests that the physical act of turning pages helps readers create a mental map of the text, making it easier to remember where key information appeared. Moreover, paper books come with no distracting notifications or tempting apps — your full attention stays on the page.
+
+      On the other hand, digital books are incredibly convenient. An e-reader can hold thousands of titles in a device lighter than a single paperback. Built-in dictionaries and adjustable font sizes are genuinely helpful for younger or struggling readers. Nevertheless, these practical advantages do not outweigh the learning benefits of paper.
+
+      In conclusion, whereas digital books win on convenience, paper books win on learning. The wisest approach may be to use both — digital for light reading on the go, and paper for serious study at home.
+    modelAnswerZh: |
+      在智能手机和平板电脑的时代，许多人想知道纸质书是否还有一席之地。虽然电子书在便利性方面有明显优势，但我认为纸质书仍然是深度学习的更好选择。
+
+      一方面，纸质书已被证明能提高理解力和记忆力。研究表明，翻页的物理行为帮助读者创建文本的心理地图，使人更容易记住关键信息出现的位置。而且，纸质书没有干扰的通知或诱人的应用——你的全部注意力都停留在书页上。
+
+      另一方面，电子书非常方便。一个电子阅读器可以在一个比单本平装书更轻的设备中容纳数千个书名。内置词典和可调字体大小对年幼或阅读困难的读者确实有帮助。尽管如此，这些实际优势并不超过纸质阅读的学习好处。
+
+      总之，虽然电子书在便利性上胜出，但纸质书在学习上胜出。最明智的方法可能是两者都用——旅途中轻松阅读用电子书，在家认真学习用纸质书。
+
+  - id: W072
+    type: essay
+    title: 'Are Video Games Good or Bad for Children?'
+    titleZh: '电子游戏对孩子是好是坏？'
+    prompt: 'Some people think video games are harmful for children. Others believe they can be educational and fun. What is your opinion? Write an essay.'
+    promptZh: '有人认为电子游戏对孩子有害。也有人认为它们可以是有教育意义且有趣的。你的看法是什么？写一篇议论文。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '电子游戏对孩子利大于弊还是弊大于利？'
+        topic: 'Do video games do more good or more harm for children?'
+        forPoints:
+          - 'Strategy games develop problem-solving and planning skills'
+          - 'Multiplayer games teach teamwork and communication'
+          - 'Educational games make learning subjects like maths more engaging'
+        forPointsZh:
+          - '策略游戏培养解决问题和规划能力'
+          - '多人游戏教授团队合作和沟通'
+          - '教育游戏使数学等学科的学习更有吸引力'
+        againstPoints:
+          - 'Excessive gaming can lead to addiction and poor sleep'
+          - 'Some games contain violence and inappropriate content'
+          - 'Too much screen time reduces physical activity'
+        againstPointsZh:
+          - '过度游戏可能导致上瘾和睡眠不佳'
+          - '一些游戏包含暴力和不适当的内容'
+          - '过多的屏幕时间减少体育活动'
+      connectors:
+        - 'It is undeniably true that...'
+        - 'However, a growing body of research suggests...'
+        - 'In moderation...'
+      mustUseWords:
+        - 'However'
+        - 'moderation'
+        - 'beneficial'
+      mustUseStructure:
+        - 'At least one impersonal structure (It is widely believed / Research suggests)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个非人称结构（It is widely believed / Research suggests）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I present both positive and negative aspects?'
+      - 'Did I use at least one impersonal structure?'
+      - 'Did I avoid overgeneralisation (not all games are the same)?'
+      - 'Does my conclusion suggest a balanced approach?'
+    selfCheckListZh:
+      - '我是否呈现了积极和消极两方面？'
+      - '我是否使用了至少一个非人称结构？'
+      - '我是否避免了过度概括（并非所有游戏都一样）？'
+      - '我的结论是否建议了一种平衡的方法？'
+    modelAnswer: |
+      When most adults hear "video games," they think of wasted time. However, the truth is far more nuanced. In my opinion, video games are neither entirely good nor entirely bad — what matters is how they are used.
+
+      It is widely believed that all gaming is harmful, but research suggests otherwise. Strategy games like Minecraft develop problem-solving skills, while multiplayer games teach teamwork and communication. Educational gaming platforms have even been shown to improve maths scores. These benefits cannot be dismissed.
+
+      However, there are legitimate concerns. Excessive gaming can lead to addiction, poor sleep, and reduced physical activity. Some games contain violence that may not be suitable for young children. Parents should always check age ratings and set clear time limits.
+
+      In conclusion, video games are beneficial when enjoyed in moderation and with appropriate guidance. Like any tool, they can be used well or badly. The key is balance — ensuring that gaming is one part of a healthy, active life, not the whole of it.
+    modelAnswerZh: |
+      当大多数成年人听到"电子游戏"时，他们想到的是浪费时间。然而，真相要微妙得多。在我看来，电子游戏既不完全好也不完全坏——重要的是如何使用它们。
+
+      人们普遍认为所有游戏都是有害的，但研究表明并非如此。像Minecraft这样的策略游戏培养解决问题的能力，而多人游戏教授团队合作和沟通。教育游戏平台甚至被证明能提高数学成绩。这些好处不能被忽视。
+
+      然而，存在合理的担忧。过度游戏可能导致上瘾、睡眠不佳和减少体育活动。一些游戏包含可能不适合幼儿的暴力内容。家长应该检查年龄分级并设定明确的时间限制。
+
+      总之，电子游戏在适度享受和适当指导下是有益的。像任何工具一样，它们可以被善用或被滥用。关键是平衡——确保游戏是健康、积极生活的一部分，而不是全部。
+
+  - id: W073
+    type: essay
+    title: 'Should All Students Wear School Uniforms?'
+    titleZh: '所有学生都应该穿校服吗？'
+    prompt: 'In some countries, students wear uniforms. In others, they wear their own clothes. Which system do you think is better? Write an essay giving your opinion.'
+    promptZh: '在一些国家，学生穿校服。在其他国家，他们穿自己的衣服。你认为哪种制度更好？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '学生应该穿校服还是自己选择衣服？'
+        topic: 'Should students wear uniforms or choose their own clothes?'
+        forPoints:
+          - 'Uniforms create equality — nobody is judged by clothing brands'
+          - 'Save time in the morning and money for families'
+          - 'Create a sense of belonging and school pride'
+        forPointsZh:
+          - '校服创造平等——没有人因为服装品牌被评判'
+          - '为家庭节省早晨的时间和金钱'
+          - '创造归属感和学校自豪感'
+        againstPoints:
+          - 'Uniforms limit self-expression and individuality'
+          - 'Can be uncomfortable — cheap fabric, stiff shoes'
+          - 'Real equality comes from respect, not matching clothes'
+        againstPointsZh:
+          - '校服限制自我表达和个性'
+          - '可能不舒服——廉价面料，僵硬的鞋子'
+          - '真正的平等来自尊重，而不是穿一样的衣服'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Furthermore...'
+        - 'While it is true that...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'While'
+        - 'equality'
+      mustUseStructure:
+        - 'At least one "While it is true that..." concession'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个"While it is true that..."让步'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I present arguments for both sides?'
+      - 'Did I use at least one concession?'
+      - 'Did I include a clear opinion?'
+      - 'Is my language formal throughout?'
+    selfCheckListZh:
+      - '我是否呈现了双方的论点？'
+      - '我是否使用了至少一个让步？'
+      - '我是否包含了一个清晰的观点？'
+      - '我的语言全篇是否正式？'
+    modelAnswer: |
+      Walk into any school in the UK or Japan and you will see rows of students in matching uniforms. But is this really the best system? In my opinion, school uniforms do more good than harm.
+
+      On the one hand, uniforms promote equality. When everyone wears the same clothes, students are judged by their character, not their wardrobe. Furthermore, uniforms save families both time and money — parents spend approximately 30% less on children's clothing each year, and mornings become simpler.
+
+      While it is true that uniforms limit self-expression, I believe there are many other ways to show your personality — through hobbies, ideas, and actions. Clothes are less important than character. Schools could also allow small personal touches, such as colourful bags or badges, to give students a sense of individuality.
+
+      In conclusion, uniforms create a fairer, simpler school environment where the focus is on learning rather than fashion. They may not be perfect, but the benefits of equality and belonging make them worthwhile.
+    modelAnswerZh: |
+      走进英国或日本的任何一所学校，你会看到穿着统一校服的学生。但这真的是最好的制度吗？在我看来，校服利大于弊。
+
+      一方面，校服促进平等。当每个人穿一样的衣服时，学生是以品格而非衣柜来评判的。此外，校服为家庭节省时间和金钱——家长每年在孩子衣服上的花费大约少了30%，早晨也变得更简单。
+
+      虽然校服确实限制了自我表达，但我认为还有很多其他方式可以展示个性——通过爱好、想法和行动。衣服不如品格重要。学校也可以允许小的个人点缀，如彩色书包或徽章，给学生一些个性感。
+
+      总之，校服创造了一个更公平、更简单的学校环境，让焦点放在学习而非时尚上。它们可能不完美，但平等和归属感的好处使它们值得拥有。
+
+  - id: W074
+    type: essay
+    title: 'Should Coding Be Taught in Every School?'
+    titleZh: '每所学校都应该教编程吗？'
+    prompt: 'Some people think coding should be a compulsory subject in all schools. Others think it should remain optional. What do you think? Write an essay.'
+    promptZh: '有人认为编程应该是所有学校的必修课。也有人认为它应该保持为选修课。你怎么看？写一篇议论文。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '编程应该成为所有学校的必修课吗？'
+        topic: 'Should coding be compulsory in all schools?'
+        forPoints:
+          - 'Coding develops logical thinking and problem-solving — useful in all subjects'
+          - 'Future jobs will increasingly require technology skills'
+          - 'Coding is a universal language that connects children globally'
+        forPointsZh:
+          - '编程培养逻辑思维和解决问题的能力——对所有学科都有用'
+          - '未来的工作将越来越需要技术技能'
+          - '编程是一种连接全球孩子的通用语言'
+        againstPoints:
+          - 'Not all schools have enough computers or trained teachers'
+          - 'Adding another subject puts more pressure on students'
+          - 'Not every child needs to be a programmer'
+        againstPointsZh:
+          - '并非所有学校都有足够的电脑或受过培训的教师'
+          - '增加另一门学科给学生更多压力'
+          - '并非每个孩子都需要成为程序员'
+      connectors:
+        - 'First and foremost...'
+        - 'Admittedly...'
+        - 'Nevertheless...'
+      mustUseWords:
+        - 'Nevertheless'
+        - 'Admittedly'
+        - 'compulsory'
+      mustUseStructure:
+        - 'At least one formal reason (Due to / As a result of)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个正式原因（Due to / As a result of）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I explain why coding is or is not important?'
+      - 'Did I acknowledge the challenges (concession)?'
+      - 'Did I use formal academic language?'
+      - 'Does my conclusion clearly state my position?'
+    selfCheckListZh:
+      - '我是否解释了编程为什么重要或不重要？'
+      - '我是否承认了挑战（让步）？'
+      - '我是否使用了正式的学术语言？'
+      - '我的结论是否清楚地表明了我的立场？'
+    modelAnswer: |
+      In a world where computers are everywhere, most children leave school without understanding how they work. I strongly believe coding should be made compulsory in every school.
+
+      First and foremost, coding develops logical thinking that benefits every subject. When children write a program, they learn to break complex problems into small steps — a skill that helps with maths, science, and even essay writing. Due to the rapid pace of technological change, many future careers will require at least basic coding knowledge.
+
+      Admittedly, there are practical challenges. Not all schools have enough computers, and few teachers have been trained in coding. Nevertheless, free platforms like Scratch and Code.org make it possible to start teaching coding even without expensive equipment. Countries like Estonia and the UK have already made coding compulsory, and the results are encouraging.
+
+      In conclusion, while the challenges are real, the benefits of teaching coding are too important to ignore. The question is no longer whether to teach it, but how to do it effectively and inclusively.
+    modelAnswerZh: |
+      在一个电脑无处不在的世界里，大多数孩子离开学校时并不理解它们是如何工作的。我坚信编程应该成为每所学校的必修课。
+
+      首先，编程培养的逻辑思维对每个学科都有益。当孩子编写程序时，他们学会将复杂问题分解成小步骤——这种能力对数学、科学甚至议论文写作都有帮助。由于技术变化的快速步伐，许多未来的职业将至少需要基本的编程知识。
+
+      诚然，存在实际挑战。并非所有学校都有足够的电脑，很少有教师接受过编程培训。尽管如此，像Scratch和Code.org这样的免费平台使得即使没有昂贵的设备也能开始教授编程。爱沙尼亚和英国等国家已经将编程列为必修课，结果令人鼓舞。
+
+      总之，虽然挑战确实存在，但教授编程的好处太重要了，不容忽视。问题不再是是否教，而是如何有效地、包容地教。
+
+  - id: W075
+    type: essay
+    title: 'Should Homework Be Abolished?'
+    titleZh: '应该废除作业吗？'
+    prompt: 'Some people believe homework should be abolished. Others think it is an essential part of learning. What is your view? Write an essay.'
+    promptZh: '有人认为应该废除作业。也有人认为作业是学习的重要组成部分。你的看法是什么？写一篇议论文。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '作业应该被废除还是保留？'
+        topic: 'Should homework be abolished or kept?'
+        forPoints:
+          - 'Children already spend 6-7 hours at school — they need time to play and relax'
+          - 'Homework creates inequality between children from different backgrounds'
+          - 'Finland gives very little homework and has excellent education results'
+        forPointsZh:
+          - '孩子已经在学校待了6-7小时——他们需要时间玩耍和放松'
+          - '作业在不同背景的孩子之间造成不平等'
+          - '芬兰布置很少的作业但教育成绩优秀'
+        againstPoints:
+          - 'Regular practice is essential for subjects like maths and languages'
+          - 'Homework teaches self-discipline and time management'
+          - 'Parents use homework to understand what children are learning'
+        againstPointsZh:
+          - '定期练习对数学和语言等学科至关重要'
+          - '作业教授自律和时间管理'
+          - '家长通过作业了解孩子在学什么'
+      connectors:
+        - 'Those who support homework argue that...'
+        - 'On the other hand...'
+        - 'Perhaps the solution lies somewhere in the middle...'
+      mustUseWords:
+        - 'On the other hand'
+        - 'Although'
+        - 'compromise'
+      mustUseStructure:
+        - 'Suggest a compromise in the conclusion'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '在结论中提出妥协方案'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I consider both sides of the homework debate?'
+      - 'Did I suggest a practical compromise?'
+      - 'Did I support my points with evidence or examples?'
+      - 'Is my essay well-structured with clear paragraphs?'
+    selfCheckListZh:
+      - '我是否考虑了作业辩论的双方？'
+      - '我是否提出了一个实际的妥协方案？'
+      - '我是否用证据或例子支持了我的观点？'
+      - '我的议论文是否结构良好，段落清晰？'
+    modelAnswer: |
+      Should schools give homework, or should learning stop when the bell rings? This is one of the most debated questions in education, and both sides have strong arguments.
+
+      Those who support homework argue that regular practice is essential, especially for subjects like maths and languages. Although you can learn new concepts in class, mastering them requires repetition at home. Homework also teaches self-discipline and helps parents stay informed about what their children are learning.
+
+      On the other hand, children already spend six or seven hours at school each day. Adding more work at home takes away precious time for play, creativity, and family life. Research from Finland — where students receive minimal homework — proves that excellent results are possible without it.
+
+      Perhaps the best solution is a compromise: short, meaningful homework three days a week, with students choosing how they practise. This would keep the benefits of revision while respecting children's need for rest and play. After all, the goal of education is to develop a love of learning — not to exhaust young minds.
+    modelAnswerZh: |
+      学校应该布置作业，还是学习应该在放学铃响时停止？这是教育界争论最多的问题之一，双方都有有力的论据。
+
+      支持作业的人认为定期练习是必要的，尤其是数学和语言等学科。虽然你可以在课堂上学习新概念，但掌握它们需要在家反复练习。作业还教授自律，帮助家长了解孩子在学什么。
+
+      另一方面，孩子每天已经在学校待了六七个小时。在家增加更多工作会占用宝贵的玩耍、创造和家庭生活时间。来自芬兰的研究——那里的学生几乎没有作业——证明没有作业也能取得优秀成绩。
+
+      也许最好的解决方案是折中：每周三天简短、有意义的作业，让学生自己选择如何练习。这将保持复习的好处，同时尊重孩子休息和玩耍的需要。毕竟，教育的目标是培养对学习的热爱——而不是耗尽年轻的心灵。
+
+  - id: W076
+    type: essay
+    title: 'Social Media: Good or Bad for Young People?'
+    titleZh: '社交媒体：对年轻人好还是坏？'
+    prompt: 'Some people think social media is harmful for young people. Others believe it has many benefits. What do you think? Write an essay giving your opinion.'
+    promptZh: '有人认为社交媒体对年轻人有害。也有人认为它有很多好处。你怎么看？写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '社交媒体对年轻人利大于弊还是弊大于利？'
+        topic: 'Does social media do more good or harm for young people?'
+        forPoints:
+          - 'Gives young people a voice — they can share creativity and opinions'
+          - 'Connects people with shared interests across the world'
+          - 'Can be a powerful educational tool (YouTube tutorials, etc.)'
+        forPointsZh:
+          - '给年轻人一个声音——他们可以分享创意和观点'
+          - '连接世界各地有共同兴趣的人'
+          - '可以是强大的教育工具（YouTube教程等）'
+        againstPoints:
+          - 'Cyberbullying follows children everywhere, even into their bedrooms'
+          - 'Platforms are designed to be addictive (likes, notifications, infinite scrolling)'
+          - 'Unrealistic body images damage self-esteem'
+        againstPointsZh:
+          - '网络欺凌跟随孩子到任何地方，甚至到卧室'
+          - '平台被设计成令人上瘾的（点赞、通知、无限滚动）'
+          - '不切实际的身体形象损害自尊心'
+      connectors:
+        - 'On the positive side...'
+        - 'However, the negative effects are well documented...'
+        - 'Despite these concerns...'
+      mustUseWords:
+        - 'Despite'
+        - 'increasingly'
+        - 'detrimental'
+      mustUseStructure:
+        - 'Use "It is widely believed that..." at least once'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少使用一次"It is widely believed that..."'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I present both benefits and risks?'
+      - 'Did I use formal impersonal structures?'
+      - 'Did I suggest a solution (education, not banning)?'
+      - 'Does my conclusion leave the reader thinking?'
+    selfCheckListZh:
+      - '我是否呈现了好处和风险？'
+      - '我是否使用了正式的非人称结构？'
+      - '我是否提出了解决方案（教育而非禁止）？'
+      - '我的结论是否让读者思考？'
+    modelAnswer: |
+      Social media has become a normal part of life for millions of young people. But is it helping them or harming them? It is widely believed that social media is entirely negative, but the reality is more complex.
+
+      On the positive side, social media gives young people a voice. A teenager who cares about the environment can create content that reaches thousands. Online communities connect children with shared interests, and platforms increasingly serve as educational tools. These benefits are real and significant.
+
+      However, the risks cannot be ignored. Cyberbullying is a growing problem that follows children everywhere, even into their bedrooms. Platforms are deliberately designed to be addictive, and unrealistic body images can be detrimental to young people's self-esteem. Despite these concerns, banning social media entirely is not the answer.
+
+      In conclusion, I believe the solution is education, not prohibition. Schools should teach "digital citizenship" — helping children use social media safely, critically, and responsibly. Social media, like fire, is a powerful tool that must be handled with care.
+    modelAnswerZh: |
+      社交媒体已经成为数百万年轻人生活中正常的一部分。但它是在帮助他们还是伤害他们？人们普遍认为社交媒体完全是消极的，但现实更加复杂。
+
+      从积极面来说，社交媒体给年轻人一个声音。一个关心环境的青少年可以创作触达数千人的内容。在线社区连接有共同兴趣的孩子，平台越来越多地作为教育工具。这些好处是真实而重要的。
+
+      然而，风险不容忽视。网络欺凌是一个日益严重的问题，跟随孩子到任何地方，甚至到他们的卧室。平台被故意设计成令人上瘾的，不切实际的身体形象可能对年轻人的自尊心有害。尽管存在这些担忧，完全禁止社交媒体不是答案。
+
+      总之，我认为解决方案是教育，而不是禁止。学校应该教授"数字公民"——帮助孩子安全、批判性地、负责任地使用社交媒体。社交媒体像火一样，是一种必须小心使用的强大工具。
+
+  - id: W077
+    type: essay
+    title: 'Online Learning vs Classroom Learning'
+    titleZh: '在线学习vs课堂学习'
+    prompt: 'Some people think online learning is better than traditional classroom learning. Others disagree. Which do you prefer and why? Write an essay.'
+    promptZh: '有人认为在线学习比传统课堂学习更好。也有人不同意。你更喜欢哪种，为什么？写一篇议论文。'
+    targetWords: '140-190'
+    difficulty: 3
+    relatedQuest: Q10
+    scaffold:
+      brainstorming:
+        topicZh: '在线学习和课堂学习哪种更好？'
+        topic: 'Is online learning or classroom learning better?'
+        forPoints:
+          - 'Online learning offers flexibility — learn at your own pace'
+          - 'Access to a wider variety of courses from anywhere'
+          - 'Useful accessibility features for students with disabilities'
+        forPointsZh:
+          - '在线学习提供灵活性——按自己的节奏学习'
+          - '从任何地方获得更广泛的课程'
+          - '对残疾学生有用的可访问功能'
+        againstPoints:
+          - 'Lack of face-to-face interaction leads to loneliness'
+          - 'Younger children find it hard to concentrate without structure'
+          - 'The achievement gap between students widened during online learning'
+        againstPointsZh:
+          - '缺乏面对面互动导致孤独'
+          - '年幼的孩子没有结构很难集中注意力'
+          - '在线学习期间学生之间的差距扩大了'
+      connectors:
+        - 'Supporters of online learning highlight...'
+        - 'However, many argue that...'
+        - 'The future likely involves a blend of both...'
+      mustUseWords:
+        - 'However'
+        - 'enhance'
+        - 'interaction'
+      mustUseStructure:
+        - 'Suggest a blended approach in the conclusion'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '在结论中提出混合方法'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I compare both types of learning fairly?'
+      - 'Did I explain my preference with reasons?'
+      - 'Did I acknowledge the strengths of the other approach?'
+      - 'Does my conclusion suggest a practical solution?'
+    selfCheckListZh:
+      - '我是否公平地比较了两种学习方式？'
+      - '我是否用理由解释了我的偏好？'
+      - '我是否承认了另一种方法的优势？'
+      - '我的结论是否提出了实际的解决方案？'
+    modelAnswer: |
+      The COVID-19 pandemic forced millions of students to learn from home. This experience sparked an important debate: is online learning better, worse, or simply different from traditional classroom learning?
+
+      Online learning offers undeniable advantages. Students can learn at their own pace, rewinding video lessons when needed. It also makes education more accessible — a student in a remote village can access the same courses as one in a major city. However, flexibility alone does not guarantee good learning.
+
+      The classroom offers something screens cannot easily replicate: human interaction. The energy of a group discussion, a teacher noticing a struggling student, and the friendships formed during break time are all crucial for children's development. Research shows that students who learned entirely online during the pandemic felt lonelier and less motivated than those in physical classrooms.
+
+      In conclusion, the future of education should involve a blend of both approaches. Technology should enhance teaching — with recorded lessons for revision and interactive platforms for practice — while preserving what makes classrooms special: the irreplaceable human connection.
+    modelAnswerZh: |
+      COVID-19大流行迫使数百万学生在家学习。这段经历引发了一场重要的辩论：在线学习比传统课堂学习更好、更差还是仅仅不同？
+
+      在线学习有不可否认的优势。学生可以按自己的节奏学习，需要时回放视频课程。它还使教育更容易获得——偏远村庄的学生可以获得与大城市学生同样的课程。然而，仅有灵活性并不能保证好的学习效果。
+
+      教室提供了屏幕无法轻易复制的东西：人际互动。小组讨论的活力、教师注意到有困难的学生、课间形成的友谊，对孩子的发展都至关重要。研究表明，大流行期间完全在线学习的学生比在实体教室中的学生感到更孤独、更缺乏动力。
+
+      总之，教育的未来应该融合两种方法。技术应该增强教学——用录制课程进行复习和用互动平台进行练习——同时保留课堂的特殊之处：不可替代的人际联系。

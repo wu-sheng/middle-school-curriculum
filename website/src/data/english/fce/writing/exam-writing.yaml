@@ -1,0 +1,454 @@
+category: 'Exam Writing Practice (Month 12)'
+categoryZh: '考试写作练习（第十二月）'
+tasks:
+  - id: W086
+    type: essay
+    title: 'The Importance of Learning Languages'
+    titleZh: '学习语言的重要性'
+    prompt: 'Some people say that everyone should learn at least one foreign language. Others say it is a waste of time because translation technology is improving so fast. Write an essay giving your opinion.'
+    promptZh: '有人说每个人都应该学习至少一门外语。也有人说这是浪费时间，因为翻译技术进步太快了。写一篇议论文表达你的观点。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '学习外语是否值得？'
+        topic: 'Is it worth learning a foreign language?'
+        forPoints:
+          - 'Language learning trains the brain — improves memory, problem-solving, and multitasking'
+          - 'Understanding a language means understanding a culture — deeper connections with people'
+          - 'Career advantages — employers value multilingual candidates'
+        forPointsZh:
+          - '语言学习训练大脑——提高记忆力、解决问题能力和多任务处理能力'
+          - '理解一种语言意味着理解一种文化——与人建立更深的联系'
+          - '职业优势——雇主重视多语言候选人'
+        againstPoints:
+          - 'Translation apps are becoming very accurate and are free to use'
+          - 'Learning a language takes years of effort — time could be spent on other skills'
+          - 'English is becoming a global language, so other languages may be less necessary'
+        againstPointsZh:
+          - '翻译应用变得非常准确且免费使用'
+          - '学习语言需要多年的努力——时间可以花在其他技能上'
+          - '英语正在成为全球语言，所以其他语言可能不那么必要'
+      connectors:
+        - 'On the one hand... On the other hand...'
+        - 'Furthermore...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'Furthermore'
+        - 'Although'
+        - 'beneficial'
+      mustUseStructure:
+        - 'At least one conditional sentence (If people only relied on...)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个条件句（如果人们只依赖……）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I clearly state my opinion in the introduction?'
+      - 'Did I give specific examples for each point?'
+      - 'Did I acknowledge the opposing view?'
+      - 'Is my word count between 140 and 190?'
+    selfCheckListZh:
+      - '我是否在引言中清楚陈述了自己的观点？'
+      - '我是否为每个要点提供了具体例子？'
+      - '我是否承认了对立观点？'
+      - '我的字数在140到190之间吗？'
+    modelAnswer: |
+      Many people believe that learning a foreign language is no longer necessary because technology can translate for us. However, I strongly disagree. In my opinion, learning languages is one of the most beneficial things a young person can do.
+
+      First and foremost, language learning trains the brain in ways that technology cannot replace. Research has shown that bilingual people have better memory, stronger problem-solving skills, and greater mental flexibility. Furthermore, when you learn a language, you also learn about another culture. If people only relied on translation apps, they would miss the deeper understanding that comes from knowing a language — the humour, the idioms, the way people think.
+
+      Although it is true that translation technology is improving rapidly, it still cannot capture the subtle meaning behind words. A translation app can tell you what someone said, but it cannot help you understand how they feel. Real communication requires understanding context, tone, and cultural background — things that only language learning can provide.
+
+      In conclusion, while technology is a useful tool, it cannot replace the personal and intellectual benefits of learning a foreign language. I believe every student should have the opportunity to learn at least one.
+    modelAnswerZh: |
+      许多人认为学习外语不再必要，因为技术可以为我们翻译。然而，我强烈不同意。在我看来，学习语言是年轻人能做的最有益的事情之一。
+
+      首先，语言学习以技术无法替代的方式训练大脑。研究表明，双语者有更好的记忆力、更强的问题解决能力和更大的心理灵活性。此外，当你学习一种语言时，你也在了解另一种文化。如果人们只依赖翻译应用，他们会错过了解语言所带来的更深理解——幽默、习语、人们思考的方式。
+
+      虽然翻译技术确实在快速进步，但它仍然无法捕捉词语背后的微妙含义。翻译应用可以告诉你某人说了什么，但它不能帮助你理解他们的感受。真正的沟通需要理解语境、语气和文化背景——这些只有语言学习才能提供。
+
+      总之，虽然技术是一个有用的工具，但它不能取代学习外语的个人和智力益处。我认为每个学生都应该有学习至少一门外语的机会。
+
+  - id: W087
+    type: essay
+    title: 'Should Exams Be Replaced by Continuous Assessment?'
+    titleZh: '考试应该被持续评估取代吗？'
+    prompt: 'Some people think exams are the best way to test knowledge. Others believe continuous assessment throughout the year is fairer. Write an essay discussing both views and giving your opinion.'
+    promptZh: '有人认为考试是测试知识的最佳方式。也有人认为全年的持续评估更公平。写一篇议论文讨论两种观点并给出你的意见。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '考试还是持续评估？'
+        topic: 'Exams or continuous assessment?'
+        forPoints:
+          - 'Exams test knowledge under pressure — a useful life skill'
+          - 'Exams are the same for everyone — fair and standardised'
+          - 'Exams motivate students to revise and consolidate learning'
+        forPointsZh:
+          - '考试在压力下测试知识——一项有用的生活技能'
+          - '考试对每个人都一样——公平且标准化'
+          - '考试激励学生复习和巩固学习'
+        againstPoints:
+          - 'Some students perform poorly under exam pressure despite knowing the material'
+          - 'Continuous assessment shows consistent effort over time'
+          - 'One bad day should not determine your entire grade'
+        againstPointsZh:
+          - '一些学生尽管知道内容但在考试压力下表现不佳'
+          - '持续评估显示长期的持续努力'
+          - '一天的糟糕表现不应该决定你的整个成绩'
+      connectors:
+        - 'While some people argue that...'
+        - 'On the other hand...'
+        - 'Taking everything into account...'
+      mustUseWords:
+        - 'Nevertheless'
+        - 'While'
+        - 'argue'
+      mustUseStructure:
+        - 'At least one cleft sentence (What matters most is... / It is...that...)'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个强调句（What matters most is... / It is...that...）'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I discuss BOTH views before giving my opinion?'
+      - 'Did I use at least one cleft sentence?'
+      - 'Did I give specific examples?'
+      - 'Did I write a clear conclusion?'
+    selfCheckListZh:
+      - '我是否在给出自己的观点之前讨论了两种观点？'
+      - '我是否使用了至少一个强调句？'
+      - '我是否给出了具体例子？'
+      - '我是否写了一个清楚的结论？'
+    modelAnswer: |
+      The question of whether exams should be replaced by continuous assessment is one that divides opinion among students, teachers, and parents alike. Both methods have clear advantages and disadvantages.
+
+      While some people argue that exams are unfair because they depend on how a student performs on one particular day, others point out that exams provide a level playing field. Every student takes the same test under the same conditions, which makes the results easy to compare. Nevertheless, it is true that some excellent students freeze under pressure and perform below their true ability.
+
+      On the other hand, continuous assessment rewards consistent effort throughout the year. What matters most is that it gives students multiple opportunities to demonstrate their knowledge, rather than relying on a single performance. However, continuous assessment can also be stressful, as students feel they are always being tested.
+
+      Taking everything into account, I believe the ideal solution is a combination of both methods. A system where exams count for perhaps 60% and continuous assessment for 40% would reward both exam skills and long-term effort.
+    modelAnswerZh: |
+      考试是否应该被持续评估取代这一问题在学生、老师和家长之间引起了分歧。两种方法都有明显的优缺点。
+
+      虽然有人认为考试不公平，因为它取决于学生在某一天的表现，但其他人指出考试提供了一个公平的竞争环境。每个学生在相同条件下参加同一考试，这使结果易于比较。然而，确实有一些优秀的学生在压力下紧张并表现低于其真实水平。
+
+      另一方面，持续评估奖励全年的持续努力。最重要的是，它给学生多次展示知识的机会，而不是依赖一次表现。然而，持续评估也可能带来压力，因为学生觉得自己总是在被测试。
+
+      综合考虑，我认为理想的解决方案是两种方法的结合。一个考试占60%、持续评估占40%的体系将同时奖励考试技能和长期努力。
+
+  - id: W088
+    type: story
+    title: 'The Unexpected Discovery'
+    titleZh: '意外的发现'
+    prompt: 'Your story must begin with this sentence: "When I opened the envelope, I could not believe what was inside."'
+    promptZh: '你的故事必须以这句话开头："当我打开信封时，我不敢相信里面的东西。"'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '信封里是什么？是好消息还是坏消息？发生了什么？'
+        topic: 'What was in the envelope? Good news or bad news? What happened next?'
+        forPoints:
+          - 'Exam results that were much better than expected'
+          - 'A mysterious letter from an unknown person'
+          - 'A treasure map or old photograph that leads to an adventure'
+        forPointsZh:
+          - '比预期好得多的考试成绩'
+          - '一封来自陌生人的神秘信件'
+          - '一张宝藏地图或旧照片引发了一次冒险'
+      connectors:
+        - 'At first...'
+        - 'Suddenly...'
+        - 'In the end...'
+      mustUseWords:
+        - 'astonished'
+        - 'eventually'
+      mustUseStructure:
+        - 'At least one example of direct speech ("...," she said.)'
+        - 'Past narrative tenses (past simple, past continuous, past perfect)'
+      mustUseStructureZh:
+        - '至少一个直接引语的例子（"……，"她说。）'
+        - '过去叙事时态（一般过去时、过去进行时、过去完成时）'
+    selfCheckList:
+      - 'Does my story have a clear beginning, middle, and end?'
+      - 'Did I use descriptive language to create atmosphere?'
+      - 'Did I include at least one line of direct speech?'
+      - 'Is my ending satisfying and not rushed?'
+    selfCheckListZh:
+      - '我的故事有清楚的开头、中间和结尾吗？'
+      - '我是否使用了描述性语言来营造气氛？'
+      - '我是否包含了至少一句直接引语？'
+      - '我的结局令人满意且不匆忙吗？'
+    modelAnswer: |
+      When I opened the envelope, I could not believe what was inside. Instead of the exam results I had been expecting, there was a handwritten letter and an old, yellowed photograph.
+
+      At first, I was confused. The photograph showed a girl about my age, standing in front of a school that looked exactly like mine — but the girl was wearing clothes from the 1950s. The letter, written in beautiful cursive handwriting, read: "Dear student, if you are reading this, you have found my time capsule. I buried it under the old oak tree in 1958."
+
+      "Mum, come and look at this!" I shouted, astonished by what I was holding. Together, we went to the school grounds and found the oak tree. After digging carefully for twenty minutes, we eventually discovered a small metal box containing the girl's school report, a friendship bracelet, and a note that said: "I hope the future is wonderful."
+
+      Standing there with that box in my hands, I realised something important. Whether the future is wonderful depends on what we do today. I smiled, put the bracelet on my wrist, and walked into school feeling ready for anything.
+    modelAnswerZh: |
+      当我打开信封时，我不敢相信里面的东西。里面不是我一直在期待的考试成绩，而是一封手写信和一张泛黄的旧照片。
+
+      起初，我很困惑。照片上是一个和我差不多大的女孩，站在一所看起来和我的学校完全一样的学校前——但女孩穿着1950年代的衣服。信用漂亮的花体字写道："亲爱的学生，如果你正在读这封信，你找到了我的时间胶囊。我在1958年把它埋在老橡树下。"
+
+      "妈妈，来看这个！"我喊道，对手中拿着的东西感到惊讶。我们一起去了校园，找到了橡树。仔细挖了二十分钟后，我们终于发现了一个小金属盒，里面有女孩的成绩单、一条友谊手链和一张写着"我希望未来是美好的"的纸条。
+
+      站在那里手里拿着那个盒子，我意识到了一些重要的事。未来是否美好取决于我们今天做什么。我微笑着，把手链戴在手腕上，走进学校，感觉做好了面对一切的准备。
+
+  - id: W089
+    type: review
+    title: 'Review of Your Favourite Book'
+    titleZh: '你最喜欢的书的评论'
+    prompt: 'Write a review of a book you have read recently. Include what the book is about, what you liked and did not like, and whether you would recommend it.'
+    promptZh: '写一篇你最近读过的一本书的评论。包括这本书是关于什么的、你喜欢什么和不喜欢什么、以及你是否会推荐它。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '你最近读了什么书？为什么选这本？'
+        topic: 'What book did you read recently? Why did you choose it?'
+        forPoints:
+          - 'Captivating characters that feel like real people'
+          - 'An unexpected plot twist that kept you reading'
+          - 'Beautiful or powerful language/writing style'
+        forPointsZh:
+          - '让人觉得像真人的迷人角色'
+          - '让你继续阅读的意外情节转折'
+          - '美丽或有力的语言/写作风格'
+      connectors:
+        - 'What I enjoyed most was...'
+        - 'However, I felt that...'
+        - 'I would highly recommend...'
+      mustUseWords:
+        - 'captivating'
+        - 'recommend'
+      mustUseStructure:
+        - 'Four-part review structure (Introduction, Summary, Opinion, Recommendation)'
+        - 'At least one opinion phrase (What I enjoyed most / I was particularly impressed by)'
+      mustUseStructureZh:
+        - '四段式评论结构（引言、概要、评价、推荐）'
+        - '至少一个观点短语（我最喜欢的是/我特别印象深刻的是）'
+    selfCheckList:
+      - 'Did I name the book and author in the introduction?'
+      - 'Did I avoid giving away the ending?'
+      - 'Did I include both positive and mild negative points?'
+      - 'Did I say who the book is suitable for?'
+    selfCheckListZh:
+      - '我是否在引言中说了书名和作者？'
+      - '我是否避免了透露结局？'
+      - '我是否包含了正面和温和的负面观点？'
+      - '我是否说了这本书适合谁？'
+    modelAnswer: |
+      I recently finished reading "Wonder" by R.J. Palacio, and it is one of the most captivating books I have ever read. It tells a story that will stay with you long after you turn the last page.
+
+      The book follows Auggie Pullman, a ten-year-old boy with a facial difference, as he starts attending a mainstream school for the first time. Each chapter is told from a different character's perspective, which gives you a deep understanding of how Auggie's condition affects not just him but everyone around him.
+
+      What I enjoyed most was the way Palacio writes from multiple viewpoints. You see the same events through the eyes of Auggie's sister, his best friend, and even a bully. However, I felt that some of the secondary characters' sections were slightly less engaging than Auggie's own chapters.
+
+      I would highly recommend "Wonder" to anyone aged eight and above, especially those who enjoy stories about friendship, courage, and kindness. It is a book that teaches you to "choose kind" — and that is a lesson worth learning at any age.
+    modelAnswerZh: |
+      我最近读完了R.J. Palacio的《奇迹男孩》，它是我读过的最引人入胜的书之一。它讲述了一个在你翻完最后一页后很久还会留在心中的故事。
+
+      这本书讲述了Auggie Pullman，一个面部有差异的十岁男孩，第一次开始上主流学校。每一章从不同角色的视角讲述，这让你深入了解Auggie的情况如何不仅影响他自己，还影响他周围的每个人。
+
+      我最喜欢的是Palacio从多个视角写作的方式。你通过Auggie姐姐、他最好的朋友、甚至一个欺负者的眼睛看到同样的事件。然而，我觉得一些次要角色的部分不如Auggie自己的章节那么引人入胜。
+
+      我强烈推荐《奇迹男孩》给所有八岁以上的人，特别是喜欢关于友谊、勇气和善良故事的人。它是一本教你"选择善良"的书——这是在任何年龄都值得学习的一课。
+
+  - id: W090
+    type: essay
+    title: 'The Benefits of Reading'
+    titleZh: '阅读的好处'
+    prompt: 'Your teacher has asked you to write an essay about why reading is important. Discuss the benefits of reading and explain why young people should read more.'
+    promptZh: '你的老师要求你写一篇关于为什么阅读重要的作文。讨论阅读的好处并解释为什么年轻人应该多读书。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '阅读有哪些好处？'
+        topic: 'What are the benefits of reading?'
+        forPoints:
+          - 'Improves vocabulary and writing skills naturally'
+          - 'Develops empathy by letting you experience different perspectives'
+          - 'Reduces stress and improves concentration'
+        forPointsZh:
+          - '自然地提高词汇量和写作技能'
+          - '通过让你体验不同的视角来培养同理心'
+          - '减少压力并提高注意力'
+      connectors:
+        - 'First and foremost...'
+        - 'What is more...'
+        - 'In conclusion...'
+      mustUseWords:
+        - 'What is more'
+        - 'significantly'
+        - 'beneficial'
+      mustUseStructure:
+        - 'At least one passive voice sentence'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个被动语态句子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I give at least three benefits of reading?'
+      - 'Did I use specific examples?'
+      - 'Did I include a passive voice sentence?'
+      - 'Does my conclusion summarise my main points?'
+    selfCheckListZh:
+      - '我是否给出了至少三个阅读的好处？'
+      - '我是否使用了具体例子？'
+      - '我是否包含了一个被动语态句子？'
+      - '我的结论是否总结了我的主要观点？'
+
+  - id: W091
+    type: story
+    title: 'The Day Everything Changed'
+    titleZh: '一切改变的那天'
+    prompt: 'Your story must include this sentence: "At that moment, she knew nothing would ever be the same again."'
+    promptZh: '你的故事必须包含这句话："在那一刻，她知道一切都不会再一样了。"'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '什么事件改变了一切？角色的感受如何？'
+        topic: 'What event changed everything? How did the character feel?'
+        forPoints:
+          - 'Moving to a new country or school'
+          - 'Discovering a hidden talent or passion'
+          - 'A chance encounter that led to an unexpected friendship'
+        forPointsZh:
+          - '搬到一个新国家或学校'
+          - '发现隐藏的才能或热情'
+          - '一次偶然的相遇导致了意想不到的友谊'
+      connectors:
+        - 'Until that day...'
+        - 'Without warning...'
+        - 'From that moment on...'
+      mustUseWords:
+        - 'astonished'
+        - 'gradually'
+      mustUseStructure:
+        - 'Past perfect for background events (She had never imagined...)'
+        - 'Descriptive language for setting and emotions'
+      mustUseStructureZh:
+        - '用过去完成时描述背景事件（She had never imagined...）'
+        - '用描述性语言描写环境和情感'
+    selfCheckList:
+      - 'Did I include the required sentence naturally in the story?'
+      - 'Did I use past perfect for events before the main story?'
+      - 'Is my ending satisfying?'
+      - 'Did I create atmosphere with descriptive language?'
+    selfCheckListZh:
+      - '我是否自然地在故事中包含了要求的句子？'
+      - '我是否使用了过去完成时描述主要故事之前的事件？'
+      - '我的结局令人满意吗？'
+      - '我是否用描述性语言营造了气氛？'
+
+  - id: W092
+    type: review
+    title: 'Review of a Film or TV Show'
+    titleZh: '电影或电视节目评论'
+    prompt: 'Write a review of a film or TV show you have watched recently. Would you recommend it to other people your age?'
+    promptZh: '写一篇你最近看过的电影或电视节目的评论。你会把它推荐给你同龄的人吗？'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '你最近看了什么电影或节目？'
+        topic: 'What film or show did you watch recently?'
+        forPoints:
+          - 'Amazing special effects or cinematography'
+          - 'A storyline that kept you guessing until the end'
+          - 'Outstanding performances by the actors'
+        forPointsZh:
+          - '惊人的特效或摄影'
+          - '让你一直猜到最后的情节'
+          - '演员出色的表演'
+      connectors:
+        - 'I was particularly impressed by...'
+        - 'On the downside...'
+        - 'All in all...'
+      mustUseWords:
+        - 'entertaining'
+        - 'recommend'
+      mustUseStructure:
+        - 'Four-part review structure'
+        - 'At least one comparison (better than / not as good as)'
+      mustUseStructureZh:
+        - '四段式评论结构'
+        - '至少一个比较（better than / not as good as）'
+    selfCheckList:
+      - 'Did I follow the four-part review structure?'
+      - 'Did I balance positive and negative points?'
+      - 'Did I avoid spoilers?'
+      - 'Did I specify who the film/show is suitable for?'
+    selfCheckListZh:
+      - '我是否遵循了四段式评论结构？'
+      - '我是否平衡了正面和负面观点？'
+      - '我是否避免了剧透？'
+      - '我是否说明了电影/节目适合谁？'
+
+  - id: W093
+    type: essay
+    title: 'What Makes a Good Student?'
+    titleZh: '什么造就了好学生？'
+    prompt: 'Write an essay discussing what qualities make a good student. Give examples from your own experience.'
+    promptZh: '写一篇议论文讨论什么品质造就了好学生。从你自己的经历中举例。'
+    targetWords: '140-190'
+    difficulty: 4
+    relatedQuest: Q12
+    timeLimit: '40 minutes'
+    scaffold:
+      brainstorming:
+        topicZh: '好学生有哪些品质？'
+        topic: 'What qualities make someone a good student?'
+        forPoints:
+          - 'Curiosity — asking questions and wanting to understand why'
+          - 'Perseverance — not giving up when things are difficult'
+          - 'Organisation — managing time and keeping good notes'
+        forPointsZh:
+          - '好奇心——提问并想了解为什么'
+          - '坚持——在困难时不放弃'
+          - '组织能力——管理时间和做好笔记'
+      connectors:
+        - 'In my experience...'
+        - 'Equally important is...'
+        - 'To sum up...'
+      mustUseWords:
+        - 'Equally'
+        - 'perseverance'
+        - 'essential'
+      mustUseStructure:
+        - 'At least one example from personal experience'
+        - 'Introduction + 2 body paragraphs + conclusion'
+      mustUseStructureZh:
+        - '至少一个个人经历的例子'
+        - '开头段 + 2个正文段 + 结尾段'
+    selfCheckList:
+      - 'Did I discuss at least three qualities?'
+      - 'Did I include a personal example?'
+      - 'Did I use varied vocabulary (not repeating "good" or "important")?'
+      - 'Is my conclusion memorable?'
+    selfCheckListZh:
+      - '我是否讨论了至少三种品质？'
+      - '我是否包含了个人经历的例子？'
+      - '我是否使用了多样的词汇（不重复"good"或"important"）？'
+      - '我的结论令人印象深刻吗？'
